@@ -19,6 +19,16 @@
     <div id="output"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uglify-js/3.14.0/uglify.min.js"></script>
-    <script src="minifier.js"></script>
+    <script>function minifyJavaScript() {
+        var jsCode = document.getElementById('jsCode').value;
+    
+        try {
+            var minifiedCode = UglifyJS.minify(jsCode).code;
+            document.getElementById('output').innerText = minifiedCode;
+        } catch (error) {
+            document.getElementById('output').innerText = "Error: " + error.message;
+        }
+    }
+    /script>
 </body>
 </html>
