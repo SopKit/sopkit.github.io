@@ -17,7 +17,7 @@ p {
     margin: 0 auto;
     padding: 0 20px;
 }
-a {
+.tool-list a {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
@@ -27,7 +27,7 @@ a {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-a:hover {
+.tool-list a:hover {
     background-color: #0056b3;
 }
 ul {
@@ -37,3 +37,4 @@ list-style-type: none;
 li {
 display : inline;
 }
+
