@@ -22,7 +22,6 @@ bottom: 1%;
 left: 50%;
 transform: translate(-50%, -50%);
 background-image: linear-gradient(to left top, #977dfe, #6878ff);
-position: absolute;
 width: 180px;
 height: 60px;
 padding: 10px;
