@@ -16,7 +16,7 @@ let tool_html = `
 <style>
 .sopkit_toolbar {
 font-size: small;
-position: absolute;
+position: fixed;
 color: aliceblue;
 bottom: 1%;
 left: 50%;
