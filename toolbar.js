@@ -8,7 +8,7 @@ let tool_html = `
 
 <div class="search">
     <a href="http://sopkit.github.io/SopKit" target="_blank"> 
-        <img height="30" src="search-outline.svg" alt="" srcset="">
+        <img height="30" src="https://cdn.jsdelivr.net/gh/SopKit/svg-pack@main/svg/search-outline.svg" alt="" srcset="">
     </a>
 </div>
 <div class="toolbar"></div>
