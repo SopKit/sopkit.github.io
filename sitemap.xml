@@ -1,582 +1,559 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://sopkit.github.io/</loc>
-  <lastmod>2024-02-28T18:28:14+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://sopkit.github.io/</loc>
+	<lastmod>2024-04-15T06:40:30+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/SopKit/</loc>
-  <lastmod>2024-02-28T09:09:59+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/CodeTidy/</loc>
+	<lastmod>2024-04-15T06:40:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/CodeTidy/</loc>
-  <lastmod>2024-02-13T17:13:04+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/json-prettier/</loc>
+	<lastmod>2024-04-15T06:40:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/json-prettier/</loc>
-  <lastmod>2024-02-13T16:18:16+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/codes/js-minifier.html</loc>
+	<lastmod>2024-04-15T06:40:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/codes/js-minifier.html</loc>
-  <lastmod>2024-02-28T18:28:14+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/DataFormat/</loc>
+	<lastmod>2024-04-15T06:40:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/DataFormat/</loc>
-  <lastmod>2024-02-28T18:28:14+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/random-generator/random-number-generator.html</loc>
+	<lastmod>2024-04-15T06:40:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/random-generator/random-number-generator.html</loc>
-  <lastmod>2024-02-14T02:54:11+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/</loc>
+	<lastmod>2024-04-15T06:40:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/random-generator/</loc>
-  <lastmod>2024-02-14T02:54:11+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/crc16.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/crc16_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/unquoted-attributes/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/crc32.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/ampersands/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/crc32_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/custom-element-name/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/md2.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/css-escapes/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/md2_file_hash.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/font-family/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/md4.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/js-escapes/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/md4_file_hash.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/operator-precedence/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/md5.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/js-variables/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/md5_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/js-properties/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha1.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/punycode/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha1_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/html-entities/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha224.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/url/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha224_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/bgcolor/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha256.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/base64/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha256_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/utf-8/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/double_sha256.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/wtf-8/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha384.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/quoted-printable/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha384_file_hash.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/q/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha512.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/binary-ascii/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha512_file_hash.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/bacon/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha512_224.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/regexpu/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha512_224_file_hash.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/reverse-string/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha512_256.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/byte-counter/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha512_256_file_hash.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/lua-minifier/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha3_224.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/brainfuck-minifier/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha3_224_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/tools/twitalics/</loc>
-  <lastmod>2024-02-13T16:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sopkit.github.io/Encoding/sha3_256.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/random-generator/strong-password-generator.html</loc>
-  <lastmod>2024-02-14T02:54:11+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/sha3_256_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/crc16.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/sha3_384.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/crc16_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/sha3_384_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/crc32.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/sha3_512.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/crc32_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/sha3_512_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/md2.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/keccak_224.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/md2_file_hash.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/keccak_224_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/md4.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/keccak_256.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/md4_file_hash.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/keccak_256_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/md5.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/keccak_384.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/md5_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/keccak_384_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha1.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/keccak_512.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha1_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/keccak_512_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha224.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/shake_128.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha224_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/shake_128_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha256.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/shake_256.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha256_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/shake_256_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/double_sha256.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/cshake128.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha384.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/cshake128_file_hash.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha384_file_hash.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/cshake256.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha512.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/cshake256_file_hash.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha512_file_hash.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/kmac128.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha512_224.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/kmac128_file_hash.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha512_224_file_hash.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/kmac256.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha512_256.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/kmac256_file_hash.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha512_256_file_hash.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/ripemd_128.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha3_224.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/ripemd_128_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha3_224_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/ripemd_160.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha3_256.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/ripemd_160_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha3_256_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/ripemd_256.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha3_384.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/ripemd_256_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha3_384_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/ripemd_320.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha3_512.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/ripemd_320_checksum.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/sha3_512_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base32_encode.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/keccak_224.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base32_decode.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/keccak_224_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base32_encode_file.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/keccak_256.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base32_decode_file.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/keccak_256_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base58_encode.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/keccak_384.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base58_decode.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/keccak_384_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base58_encode_file.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/keccak_512.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base58_decode_file.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/keccak_512_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base64_encode.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/shake_128.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base64_decode.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/shake_128_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base64_encode_file.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/shake_256.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/base64_decode_file.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/shake_256_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/html_encode.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/cshake128.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/html_decode.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/cshake128_file_hash.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/url_encode.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/cshake256.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/url_decode.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/cshake256_file_hash.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/Encoding/syntax_highlight.html</loc>
+	<lastmod>2024-04-15T06:40:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/kmac128.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/unquoted-attributes/</loc>
+	<lastmod>2024-04-15T06:40:34+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/kmac128_file_hash.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/custom-element-name/</loc>
+	<lastmod>2024-04-15T06:40:34+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/kmac256.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/css-escapes/</loc>
+	<lastmod>2024-04-15T06:40:34+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/kmac256_file_hash.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/font-family/</loc>
+	<lastmod>2024-04-15T06:40:34+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/ripemd_128.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/js-escapes/</loc>
+	<lastmod>2024-04-15T06:40:35+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/ripemd_128_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/operator-precedence/</loc>
+	<lastmod>2024-04-15T06:40:35+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/ripemd_160.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/ampersands/</loc>
+	<lastmod>2024-04-15T06:40:35+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/ripemd_160_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/js-variables/</loc>
+	<lastmod>2024-04-15T06:40:35+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/ripemd_256.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/js-properties/</loc>
+	<lastmod>2024-04-15T06:40:35+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/ripemd_256_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/punycode/</loc>
+	<lastmod>2024-04-15T06:40:35+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/ripemd_320.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/html-entities/</loc>
+	<lastmod>2024-04-15T06:40:35+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/ripemd_320_checksum.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/url/</loc>
+	<lastmod>2024-04-15T06:40:36+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base32_encode.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/bgcolor/</loc>
+	<lastmod>2024-04-15T06:40:36+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base32_decode.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/base64/</loc>
+	<lastmod>2024-04-15T06:40:36+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base32_encode_file.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/utf-8/</loc>
+	<lastmod>2024-04-15T06:40:36+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base32_decode_file.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/wtf-8/</loc>
+	<lastmod>2024-04-15T06:40:36+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base58_encode.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/quoted-printable/</loc>
+	<lastmod>2024-04-15T06:40:36+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base58_decode.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/q/</loc>
+	<lastmod>2024-04-15T06:40:36+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base58_encode_file.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/binary-ascii/</loc>
+	<lastmod>2024-04-15T06:40:36+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base58_decode_file.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/bacon/</loc>
+	<lastmod>2024-04-15T06:40:36+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base64_encode.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/regexpu/</loc>
+	<lastmod>2024-04-15T06:40:37+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base64_decode.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/reverse-string/</loc>
+	<lastmod>2024-04-15T06:40:37+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base64_encode_file.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/byte-counter/</loc>
+	<lastmod>2024-04-15T06:40:37+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/base64_decode_file.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/lua-minifier/</loc>
+	<lastmod>2024-04-15T06:40:37+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/html_encode.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/twitalics/</loc>
+	<lastmod>2024-04-15T06:40:37+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://sopkit.github.io/Encoding/html_decode.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sopkit.github.io/tools/brainfuck-minifier/</loc>
+	<lastmod>2024-04-15T06:40:38+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
-<url>
-  <loc>https://sopkit.github.io/Encoding/url_encode.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sopkit.github.io/Encoding/url_decode.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sopkit.github.io/Encoding/syntax_highlight.html</loc>
-  <lastmod>2024-02-27T13:44:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
 </urlset>
