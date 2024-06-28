@@ -38,8 +38,8 @@ export default function Header() {
             Contact
           </Link>
         </nav>
-        <Link href={"https://github.com/sopkit"}>
-        <Button variant="outline">Sign In</Button>
+        <Link href={"https://github.com/SopKit/suggest/issues/new"}>
+        <Button variant="outline">Suggest</Button>
         </Link>
       </header>
     </>
