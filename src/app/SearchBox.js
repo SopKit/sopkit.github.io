@@ -46,7 +46,11 @@ export async function Search() {
 
   const data = csvToJSON(csvData);
 
-  let tools = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vS7EF_2Yz5C_RbVKsSmOjWWTt2aDWmkb3A1PMbzqQwp8G-FbfxIKEfldhMcMBbdVzhljMSpGHuR7zHV/pub?gid=160311338&single=true&output=csv")
+  let tools = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vS7EF_2Yz5C_RbVKsSmOjWWTt2aDWmkb3A1PMbzqQwp8G-FbfxIKEfldhMcMBbdVzhljMSpGHuR7zHV/pub?gid=160311338&single=true&output=csv",{
+    next : {
+      revalidate : 3000
+    }
+  })
   tools = await tools.text()
   tools = csvToJSON(tools)
   return (
@@ -85,3 +89,13 @@ export async function Search() {
     </Command>
   );
 }
+
+
+export const revalidate = 3600 // revalidate at most every hour
+export const unstable_getStaticProps = async () => {
+  return {
+    props: {
+      revalidate,
+    },
+  };
+};
