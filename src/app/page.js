@@ -29,7 +29,6 @@ export default function Home() {
               Explore our suite of free online tools and utilities to streamline your JavaScript development workflow.
             </p>
 
-
           </div>
 
           <div id="searchfield" className=" w-full md:w-2/4 ">
