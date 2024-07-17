@@ -59,6 +59,8 @@ export default function RootLayout({ children }) {
         <meta name="msvalidate.01" content />
         {/* Google Analytics */}
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1828915420581549"
+     crossOrigin="anonymous"></script>
       </head>
 
       <body className={inter.className}>{children}</body>
