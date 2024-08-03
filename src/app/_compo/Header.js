@@ -40,6 +40,12 @@ export default function Header() {
           <Link href={"/dmca"}>
           DMCA
           </Link>
+          <Link href={"/privacy"}>
+          Privacy
+          </Link>
+          <Link href={"/tos"}>
+          TOS
+          </Link>
         </nav>
         <Link href={"https://github.com/SopKit/suggest/issues/new"}>
         <Button variant="outline">Suggest</Button>
