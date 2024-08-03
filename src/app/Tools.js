@@ -88,6 +88,13 @@ export default function Tools() {
           "Create custom scrollbars using CSS. Generate your own scrollbar style with this online tool.",
         url: "https://sopkit.github.io/css-custom-scrollbar-maker/",
         image: "",
+    },
+    {
+        //https://github.com/SopKit/youtube-tags-generator
+        name: "YouTube Tags Generator",
+        description:
+          "YouTube Tags Generator is a free online tool that helps you to generate tags for your YouTube videos.",
+        url: "https://sopkit.github.io/youtube-tags-generator/",
     }
     ];
 
