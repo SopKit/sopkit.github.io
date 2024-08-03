@@ -37,6 +37,9 @@ export default function Header() {
             prefetch={false}>
             Contact
           </Link>
+          <Link href={"/dmca"}>
+          DMCA
+          </Link>
         </nav>
         <Link href={"https://github.com/SopKit/suggest/issues/new"}>
         <Button variant="outline">Suggest</Button>

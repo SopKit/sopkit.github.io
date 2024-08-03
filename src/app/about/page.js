@@ -62,7 +62,10 @@ export default function Page() {
           ideas for new tools, please feel free to contact us through our{" "}
           <a href="https://github.com/sopkit/sopkit.github.io/issues">
             Contact Page
-          </a>
+          </a> or by emailing us at{" "}
+            <a href="mailto:sh20raj@gmail.com">
+                sh20raj@gmail.com 
+            </a>
           .
         </p>
         <p>
