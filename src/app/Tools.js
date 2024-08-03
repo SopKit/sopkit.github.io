@@ -33,6 +33,17 @@ export default function Tools() {
           description: "Play Piano on Web",
           url: "https://sopkit.github.io/playable-piano/",
           image: "",
+        },
+        {
+            name: "Daily Todo App",
+            description: "Daily Todo App",
+            url: "https://sopkit.github.io/daily-todo-app/",
+            url2:"https://daily-todo-app.pages.dev/",
+            image: "",
+        },{
+            name: "Audio Recorder",
+            description: "An Audio Recorder with Pause and Download Functionality Using JavaScript",
+            url: "https://sopkit.github.io/audio-recorder/",
         }
     ];
 
