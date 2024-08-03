@@ -13,80 +13,26 @@ export default function Tools() {
         {
           name: "HTML to Markdown",
           description: "Convert HTML to markdown",
-          url: "https://sopkit.github.io/html-to-markdown/",
+          url: "https://sopkit.github.io/markdown-to-html/",
           image: "",
         },
         {
-          name: "JSON to CSV",
-          description: "Convert JSON to CSV",
-          url: "https://sopkit.github.io/json-to-csv/",
+          name: "HTML to JSX",
+          description: "Convert HTML to JSX",
+          url: "https://sopkit.github.io/html-to-jsx-converter/",
           image: "",
         },
         {
-          name: "CSV to JSON",
-          description: "Convert CSV to JSON",
-          url: "https://sopkit.github.io/csv-to-json/",
+          name: "Toss a Coin",
+          description: "Toss a coin",
+          url: "https://sopkit.github.io/toss-a-coin/",
           image: "",
         },
         {
-          name: "JSON to YAML",
-          description: "Convert JSON to YAML",
-          url: "https://sopkit.github.io/json-to-yaml/",
+          name: "Play Piano",
+          description: "Play Piano on Web",
+          url: "https://sopkit.github.io/playable-piano/",
           image: "",
-        },
-        {
-          name: "YAML to JSON",
-          description: "Convert YAML to JSON",
-          url: "https://sopkit.github.io/yaml-to-json/",
-          image: "",
-        },
-        {
-          name: "JSON to XML",
-          description: "Convert JSON to XML",
-          url: "https://sopkit.github.io/json-to-xml/",
-          image: "",
-        },
-        {
-          name: "XML to JSON",
-          description: "Convert XML to JSON",
-          url: "https://sopkit.github.io/xml-to-json/",
-          image: "",
-        },
-        {
-          name: "JSON to URL",
-          description: "Convert JSON to URL",
-          url: "https://sopkit.github.io/json-to-url/",
-          image: "",
-        },
-        {
-          name: "URL to JSON",
-          description: "Convert URL to JSON",
-          url: "https://sopkit.github.io/url-to-json/",
-          image: "",
-        },
-        {
-          name: "JSON to Query String",
-          description: "Convert JSON to Query String",
-          url: "https://sopkit.github.io/json-to-query-string/",
-          image: "",
-        },
-        {
-          name: "Query String to JSON",
-          description: "Convert Query String to JSON",
-          url: "https://sopkit.github.io/query-string-to-json/",
-          image: "",
-        },
-        {
-          name: "JSON to Base64",
-          description: "Convert JSON to Base64",
-          url: "https://sopkit.github.io/json-to-base64/",
-          image: "",
-        },
-        {
-          name: "Base64 to JSON",
-          description: "Convert Base64 to JSON",
-          url: "https://sopkit.github.io/base64-to-json/",
-          image:"",
         }
     ];
 
@@ -100,8 +46,10 @@ export default function Tools() {
                         <CardDescription>{tool.description}</CardDescription>
                     </CardContent>
                     <CardFooter>
-                        <Button as="a" href={tool.url} target="_blank">
+                        <Button  target="_blank">
+                            <a href={tool.url} >
                             Visit
+                            </a>
                         </Button>
                     </CardFooter>
                 </Card>
