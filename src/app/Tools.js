@@ -44,6 +44,20 @@ export default function Tools() {
             name: "Audio Recorder",
             description: "An Audio Recorder with Pause and Download Functionality Using JavaScript",
             url: "https://sopkit.github.io/audio-recorder/",
+        },
+        {
+            
+            name: "Live Markdown Editor",
+            description: "Live Markdown Editor",
+            url: "https://sopkit.github.io/markdown-editor/",
+            image: "",
+        },
+        {
+            //https://sopkit.github.io/file-converter/
+            name: "File Converter",
+            description: "The ultimate online tool for unlimited and free multimedia conversion. Transform images, audio, and videos effortlessly, without restrictions.",
+            url: "https://sopkit.github.io/file-converter/",
+            image: "",
         }
     ];
 

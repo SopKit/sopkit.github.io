@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <>
       {/* Create a search box in middle of the page  */}
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="flex flex-col items-center w-full">
-          <div className="flex flex-col align-middle justify-center cover -mt-10 mb-10 text-center">
+      <div className="flex justify-center items-center ">
+        <div className="flex flex-col items-center w-full  ">
+          <div className="flex flex-col align-middle justify-center cover  mb-10 text-center">
             <img
               src="https://github.com/sopkit.png"
               alt="Search"
@@ -35,7 +35,7 @@ export default function Home() {
           <div id="searchfield" className=" w-full md:w-2/4 ">
             <Search />
           </div>
-          <div className=" w-full mt-40  ">
+          <div className=" w-full my-40   ">
             <h1 className=" text-2xl ">Top Tools</h1>
             <Tools />
           </div>
