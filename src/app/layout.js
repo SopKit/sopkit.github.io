@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "./_compo/Header";
+import Footer from "./_compo/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,11 +61,20 @@ export default function RootLayout({ children }) {
         <meta name="msvalidate.01" content />
         {/* Google Analytics */}
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1828915420581549"
-     crossOrigin="anonymous"></script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1828915420581549"
+          crossOrigin="anonymous"
+        ></script>
       </head>
 
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        <main className=" mt-20">
+          <div className="container mx-auto">{children}</div>
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }

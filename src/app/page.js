@@ -1,12 +1,9 @@
 import { Search } from "./SearchBox";
-import Footer from "./_compo/Footer";
-import Header from "./_compo/Header";
 
 export default function Home() {
   return (
     <>
       {/* Create a search box in middle of the page  */}
-          <Header />
       <div className="flex justify-center items-center h-screen">
         <div className="flex flex-col items-center w-full">
           <div className="flex flex-col align-middle justify-center cover -mt-10 mb-10 text-center">
@@ -36,7 +33,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer/>
     </>
   );
 }

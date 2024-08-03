@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <header
-        className="container fixed mx-auto flex h-20 w-full #max-w-7xl items-center justify-between px-4 md:px-6  bg-400 backdrop:blur-3xl">
+        className="container fixed mx-auto flex top-0 h-20 w-full #max-w-7xl items-center justify-between px-4 md:px-6  bg-400 backdrop:blur-3xl">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <MountainIcon className="h-6 w-6" />
           <span className="text-lg font-bold">SopKit</span>
@@ -26,7 +26,7 @@ export default function Header() {
             Pricing
           </Link> */}
           <Link
-            href="https://github.com/sopkit"
+            href="/about"
             className="text-muted-foreground hover:text-foreground"
             prefetch={false}>
             About
