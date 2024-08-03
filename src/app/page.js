@@ -25,6 +25,9 @@ export default function Home() {
             <p className="text-muted-foreground md:text-xl">
               Explore our suite of free online tools and utilities to streamline your JavaScript development workflow.
             </p>
+            <p>
+              <Link href="https://www.google.com/search?q=site%3Ahttps%3A%2F%2Fsopkit.github.io+markdown+to+html">Search SopKit Tools on Google</Link>
+            </p>
 
           </div>
 
