@@ -11,6 +11,14 @@ export const metadata = {
   image: "/logo.png",
 };
 
+let script = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E9Q2600LW2');
+`;
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -66,6 +74,10 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1828915420581549"
           crossOrigin="anonymous"
         ></script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9Q2600LW2"></script>
+        <script dangerouslySetInnerHTML={{ __html: script }}></script>
+      
       </head>
 
       <body className={inter.className}>
