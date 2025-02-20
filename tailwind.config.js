@@ -66,10 +66,20 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        gradient: {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
+        "gradient-text": {
+          "0%, 100%": { backgroundSize: "200% 200%", backgroundPosition: "left center" },
+          "50%": { backgroundSize: "200% 200%", backgroundPosition: "right center" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        gradient: "gradient 15s ease infinite",
+        "gradient-text": "gradient-text 5s ease infinite",
       },
     },
   },

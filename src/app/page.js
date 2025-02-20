@@ -1,41 +1,42 @@
-import { Search } from "./SearchBox";
+import { Search } from "@/components/search/SearchBox";
 import Link from "next/link";
 import Tools from "./Tools";
 import { ArrowRight, Sparkles, Code2, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-export default function Home() {
+import Tracker from "@/components/Tracker";
+ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="flex justify-center mb-8">
+       <section className="py-32 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 animate-gradient"></div>
+        <div className="max-w-6xl mx-auto text-center relative">
+          <div className="flex justify-center mb-12 transform hover:scale-105 transition-transform duration-300">
             <img
               src="https://github.com/sopkit.png"
               alt="SopKit - Your Web Development Toolkit"
-              width={120}
-              height={120}
-              className="rounded-full shadow-lg"
+              width={160}
+              height={160}
+              className="rounded-2xl shadow-2xl ring-4 ring-primary/10"
             />
           </div>
-          <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">
+          <h1 className="text-6xl font-bold tracking-tight sm:text-7xl md:text-8xl mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary animate-gradient-text">
             Developer Tools,
             <br />
-            Reimagined
+            <span className="text-foreground">Reimagined</span>
           </h1>
-          <p className="text-xl text-muted-foreground md:text-2xl max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-muted-foreground md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed">
             Powerful, free, and open-source development tools to streamline your workflow and boost productivity.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link href="#searchfield">
-              <Button size="lg" className="gap-2">
-                Explore Tools <ArrowRight className="w-4 h-4" />
+              <Button size="lg" className="gap-3 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 bg-primary hover:bg-primary/90">
+                Explore Tools <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
             <Link href="https://github.com/SopKit/suggest/issues/new">
-              <Button variant="outline" size="lg" className="gap-2">
-                Suggest a Tool <Sparkles className="w-4 h-4" />
+              <Button variant="outline" size="lg" className="gap-3 text-lg px-8 py-6 hover:bg-secondary/10 transition-all duration-300">
+                Suggest a Tool <Sparkles className="w-5 h-5" />
               </Button>
             </Link>
           </div>
@@ -66,22 +67,34 @@ export default function Home() {
       </section>
 
       {/* Search Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8">Find the Perfect Tool</h2>
-          <div id="searchfield" className="w-full">
+      <section className="py-24 px-4 bg-gradient-to-t from-secondary/5 to-background">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-6">Find the Perfect Tool</h2>
+          <p className="text-lg text-muted-foreground text-center mb-12">Search through our collection of developer tools and utilities</p>
+          <div id="searchfield" className="w-full transform hover:scale-[1.01] transition-transform duration-300">
             <Search />
           </div>
         </div>
       </section>
 
-      {/* Popular Tools Section */}
-      <section className="py-16 px-4 bg-gray-50 dark:bg-gray-900/50">
+      <section className="py-24 px-4 bg-gradient-to-b from-background to-secondary/5">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Popular Tools</h2>
-          <Tools />
+          <div className="flex justify-between items-center mb-12">
+            <h2 className="text-4xl font-bold">Popular Tools</h2>
+            <Link href="/tools">
+              <Button variant="outline" className="gap-2">
+                View All <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+          <div className="relative">
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+            <Tools />
+            <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+          </div>
         </div>
       </section>
+      <Tracker/>
     </div>
   );
 }

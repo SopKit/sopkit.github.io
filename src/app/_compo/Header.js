@@ -1,56 +1,108 @@
+'use client'
+
+
 import { Button } from '@/components/ui/button'
-import { MountainIcon } from 'lucide-react'
+import { MountainIcon, Menu } from 'lucide-react'
 import Link from 'next/link'
-import React from 'react'
+import { useState } from 'react'
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
-    <>
-      <header
-        className="container fixed mx-auto flex top-0 h-20 w-full #max-w-7xl items-center justify-between px-4 md:px-6  bg-400 backdrop:blur-3xl">
-        <Link href="/" className="flex items-center gap-2" prefetch={false}>
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 transition-colors hover:text-primary" prefetch={false}>
           <MountainIcon className="h-6 w-6" />
           <span className="text-lg font-bold">SopKit</span>
         </Link>
-        <nav className="hidden space-x-4 md:flex">
+
+        {/* Mobile menu button */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden p-2 text-muted-foreground hover:text-foreground"
+        >
+          <Menu className="h-6 w-6" />
+        </button>
+
+        {/* Desktop navigation */}
+        <nav className="hidden md:flex items-center space-x-6">
           <Link
             href="https://github.com/orgs/SopKit/repositories"
-            className="text-muted-foreground hover:text-foreground"
-            prefetch={false}>
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            prefetch={false}
+          >
             Tools
           </Link>
-          {/* <Link
-            href="#"
-            className="text-muted-foreground hover:text-foreground"
-            prefetch={false}>
-            Pricing
-          </Link> */}
           <Link
             href="/about"
-            className="text-muted-foreground hover:text-foreground"
-            prefetch={false}>
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            prefetch={false}
+          >
             About
           </Link>
           <Link
             href="https://github.com/sopkit"
-            className="text-muted-foreground hover:text-foreground"
-            prefetch={false}>
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            prefetch={false}
+          >
             Contact
           </Link>
-          <Link href={"/dmca"}>
-          DMCA
+          <Link href="/dmca" className="text-muted-foreground hover:text-foreground transition-colors">
+            DMCA
           </Link>
-          <Link href={"/privacy"}>
-          Privacy
+          <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
+            Privacy
           </Link>
-          <Link href={"/tos"}>
-          TOS
+          <Link href="/tos" className="text-muted-foreground hover:text-foreground transition-colors">
+            TOS
+          </Link>
+          <Link href="https://github.com/SopKit/suggest/issues/new">
+            <Button variant="outline" className="ml-4">Suggest</Button>
           </Link>
         </nav>
-        <Link href={"https://github.com/SopKit/suggest/issues/new"}>
-        <Button variant="outline">Suggest</Button>
-        </Link>
-      </header>
-    </>
+
+        {/* Mobile navigation */}
+        {isMenuOpen && (
+          <div className="absolute top-16 left-0 right-0 bg-background border-b md:hidden">
+            <nav className="container py-4 flex flex-col space-y-4">
+              <Link
+                href="https://github.com/orgs/SopKit/repositories"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                prefetch={false}
+              >
+                Tools
+              </Link>
+              <Link
+                href="/about"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                prefetch={false}
+              >
+                About
+              </Link>
+              <Link
+                href="https://github.com/sopkit"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                prefetch={false}
+              >
+                Contact
+              </Link>
+              <Link href="/dmca" className="text-muted-foreground hover:text-foreground transition-colors">
+                DMCA
+              </Link>
+              <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
+                Privacy
+              </Link>
+              <Link href="/tos" className="text-muted-foreground hover:text-foreground transition-colors">
+                TOS
+              </Link>
+              <Link href="https://github.com/SopKit/suggest/issues/new">
+                <Button variant="outline" className="w-full">Suggest</Button>
+              </Link>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
   )
 }

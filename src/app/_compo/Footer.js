@@ -7,7 +7,7 @@ export default function Footer() {
       <footer className="border-t">
         <div
           className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
-          <p className="text-sm text-muted-foreground">&copy; 2024 SopKit. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">&copy; 2025 SopKit. All rights reserved.</p>
           <p>If any tool is not working then <a href="https://github.com/sopkit/sopkit.github.io/issues/new">Report</a></p>
           <div className="flex items-center space-x-4">
             <Link
