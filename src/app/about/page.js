@@ -1,3 +1,26 @@
+// Enhanced metadata for About page
+export const metadata = {
+  title: 'About SopKit - Professional Web Development Tools & Utilities',
+  description: 'Learn about SopKit\'s mission to provide free, open-source web development tools. Discover our story, team, and commitment to helping developers worldwide boost their productivity.',
+  keywords: 'about sopkit, web development tools, developer utilities, open source, free tools, programming utilities, development workflow',
+  openGraph: {
+    title: 'About SopKit - Professional Web Development Tools & Utilities',
+    description: 'Learn about SopKit\'s mission to provide free, open-source web development tools for developers worldwide.',
+    images: ['/og.png'],
+    type: 'website',
+    url: 'https://sopkit.github.io/about',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About SopKit - Professional Web Development Tools & Utilities',
+    description: 'Learn about SopKit\'s mission to provide free, open-source web development tools for developers worldwide.',
+    images: ['/og.png'],
+  },
+  alternates: {
+    canonical: 'https://sopkit.github.io/about',
+  },
+};
+
 export default function Page() {
   return (
     <>

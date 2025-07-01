@@ -1,5 +1,6 @@
 import { Search } from "@/components/search/SearchBox";
 import Link from "next/link";
+import Image from "next/image";
 import Tools from "./Tools";
 import { ArrowRight, Sparkles, Code2, Zap, Shield, Globe, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -36,14 +37,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 animate-gradient"></div>
         <div className="max-w-6xl mx-auto text-center relative">
           <div className="flex justify-center mb-12 transform hover:scale-105 transition-transform duration-300">
-            <img
+            <Image
               src="https://github.com/sopkit.png"
               alt="SopKit - Your Web Development Toolkit"
               width={160}
               height={160}
               className="rounded-2xl shadow-2xl ring-4 ring-primary/10"
-              loading="eager"
-              fetchPriority="high"
+              priority={true}
+              quality={90}
             />
           </div>
           <header>
