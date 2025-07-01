@@ -1,13 +1,37 @@
 {
   "name": "sopkit.github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Professional web development tools and utilities suite - free, open-source, and modern",
+  "author": "SopKit Team <sh20raj@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://sopkit.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sopkit/sopkit.github.io.git"
+  },
+  "keywords": [
+    "web development tools",
+    "developer utilities",
+    "json formatter",
+    "html to jsx",
+    "markdown converter",
+    "encoding tools",
+    "online tools",
+    "programming utilities",
+    "open source",
+    "next.js"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "lint:fix": "next lint --fix",
+    "export": "next export",
+    "analyze": "cross-env ANALYZE=true next build",
+    "sitemap": "next-sitemap",
+    "optimize": "npm run lint:fix && npm run build && npm run analyze"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",
@@ -24,9 +48,16 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^15.1.7",
+    "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "next-sitemap": "^4.2.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   }
 }

@@ -1,76 +1,221 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
-  @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 224 71.4% 4.1%;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
 
-      --card: 0 0% 100%;
-      --card-foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
 
-      --primary: 220.9 39.3% 11%;
-      --primary-foreground: 210 20% 98%;
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
 
-      --secondary: 220 14.3% 95.9%;
-      --secondary-foreground: 220.9 39.3% 11%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
 
-      --muted: 220 14.3% 95.9%;
-      --muted-foreground: 220 8.9% 46.1%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
 
-      --accent: 220 14.3% 95.9%;
-      --accent-foreground: 220.9 39.3% 11%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
 
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 20% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
 
-      --border: 220 13% 91%;
-      --input: 220 13% 91%;
-      --ring: 224 71.4% 4.1%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
 
-      --radius: 0.5rem;
-    }
-
-    .dark {
-      --background: 224 71.4% 4.1%;
-      --foreground: 210 20% 98%;
-
-      --card: 224 71.4% 4.1%;
-      --card-foreground: 210 20% 98%;
-
-      --popover: 224 71.4% 4.1%;
-      --popover-foreground: 210 20% 98%;
-
-      --primary: 210 20% 98%;
-      --primary-foreground: 220.9 39.3% 11%;
-
-      --secondary: 215 27.9% 16.9%;
-      --secondary-foreground: 210 20% 98%;
-
-      --muted: 215 27.9% 16.9%;
-      --muted-foreground: 217.9 10.6% 64.9%;
-
-      --accent: 215 27.9% 16.9%;
-      --accent-foreground: 210 20% 98%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 210 20% 98%;
-
-      --border: 215 27.9% 16.9%;
-      --input: 215 27.9% 16.9%;
-      --ring: 216 12.2% 83.9%;
-    }
+    --radius: 0.5rem;
   }
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
   }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variation-settings: 'opsz' 32;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Focus management for accessibility */
+  *:focus {
+    @apply outline-none ring-2 ring-ring ring-offset-2;
+  }
+  
+  /* Remove focus outline for mouse users but keep for keyboard users */
+  .js-focus-visible *:focus:not(.focus-visible) {
+    outline: none;
+  }
+}
+
+@layer components {
+  /* Custom animations for better performance */
+  .animate-gradient {
+    animation: gradient 8s ease infinite;
+    background-size: 200% 200%;
+  }
+  
+  .animate-gradient-text {
+    animation: gradient-text 3s ease-in-out infinite alternate;
+  }
+  
+  /* Loading states */
+  .loading-skeleton {
+    @apply animate-pulse bg-muted rounded;
+  }
+  
+  /* Improved button hover states */
+  .btn-hover-lift {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .btn-hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@layer utilities {
+  /* Content area utilities */
+  .container-safe {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Typography utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  
+  /* Performance utilities */
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  .will-change-scroll {
+    will-change: scroll-position;
+  }
+  
+  /* Accessibility utilities */
+  .sr-only {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+    clip: rect(0, 0, 0, 0);
+  }
+  
+  .not-sr-only {
+    @apply static w-auto h-auto p-0 m-0 overflow-visible whitespace-normal;
+    clip: auto;
+  }
+}
+
+/* Custom keyframes */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-text {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    color: black !important;
+    background: white !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --border: hsl(0 0% 20%);
+    --ring: hsl(0 0% 20%);
+  }
+  
+  .dark {
+    --border: hsl(0 0% 80%);
+    --ring: hsl(0 0% 80%);
+  }
+}

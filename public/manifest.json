@@ -1,0 +1,65 @@
+{
+  "name": "SopKit - Professional Web Development Tools & Utilities",
+  "short_name": "SopKit",
+  "description": "Discover SopKit's powerful suite of free, open-source web development tools. Boost your productivity with our modern, efficient, and user-friendly development utilities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0070f3",
+  "orientation": "portrait-primary",
+  "categories": ["developer", "productivity", "tools", "utilities"],
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "SopKit Homepage"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "JSON Formatter",
+      "short_name": "JSON",
+      "description": "Format and validate JSON",
+      "url": "/json-formatter",
+      "icons": [{ "src": "/logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "HTML to JSX",
+      "short_name": "JSX",
+      "description": "Convert HTML to JSX",
+      "url": "/html-to-jsx",
+      "icons": [{ "src": "/logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Markdown to HTML",
+      "short_name": "Markdown",
+      "description": "Convert Markdown to HTML",
+      "url": "/markdown-to-html",
+      "icons": [{ "src": "/logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Encoding Tools",
+      "short_name": "Encode",
+      "description": "Various encoding tools",
+      "url": "/encoding",
+      "icons": [{ "src": "/logo.png", "sizes": "96x96" }]
+    }
+  ]
+}
