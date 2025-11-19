@@ -2,7 +2,7 @@
 export const metadata = {
   title: 'About SopKit - Professional Web Development Tools & Utilities',
   description: 'Learn about SopKit\'s mission to provide free, open-source web development tools. Discover our story, team, and commitment to helping developers worldwide boost their productivity.',
-  keywords: 'about sopkit, web development tools, developer utilities, open source, free tools, programming utilities, development workflow',
+  keywords: 'about sopkit, web development tools, developer utilities, open source, free tools, programming utilities, development workflow, sopkit team, mission statement, developer community',
   openGraph: {
     title: 'About SopKit - Professional Web Development Tools & Utilities',
     description: 'Learn about SopKit\'s mission to provide free, open-source web development tools for developers worldwide.',
@@ -21,7 +21,86 @@ export const metadata = {
   },
 };
 
+// FAQ Structured Data
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is SopKit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SopKit is a comprehensive suite of free, open-source web development tools and utilities designed to streamline your JavaScript development workflow and enhance productivity. We provide tools for encoding, data conversion, validation, and more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are SopKit tools free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all SopKit tools are completely free to use. We believe in making powerful development utilities accessible to everyone without any cost barriers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SopKit open source?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, SopKit is fully open source. You can contribute to the project, customize tools for your needs, and help improve the platform for the entire developer community."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of tools does SopKit offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SopKit offers encoding tools (Base64, URL encoding), hash generators (MD5, SHA1, SHA256), converters (HTML to JSX, Markdown to HTML), generators (random numbers, gradients), validators, and many other developer utilities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I contribute to SopKit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can contribute to SopKit by reporting bugs, suggesting new tools, submitting pull requests on GitHub, or helping improve documentation. Visit our GitHub repository to get started."
+      }
+    }
+  ]
+};
+
+// Breadcrumb Structured Data
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://sopkit.github.io"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://sopkit.github.io/about"
+    }
+  ]
+};
+
 export default function Page() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <div>
   return (
     <>
       <div>

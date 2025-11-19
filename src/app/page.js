@@ -10,7 +10,7 @@ import Tracker from "@/components/Tracker";
 export const metadata = {
   title: 'SopKit - Professional Web Development Tools & Utilities',
   description: 'Discover SopKit\'s powerful suite of free, open-source web development tools. Boost your productivity with our modern, efficient, and user-friendly development utilities including JSON formatters, converters, validators, and more.',
-  keywords: 'web development tools, developer utilities, JSON formatter, HTML to JSX, markdown converter, encoding tools, free developer tools, online tools, programming utilities',
+  keywords: 'web development tools, developer utilities, JSON formatter, HTML to JSX, markdown converter, encoding tools, free developer tools, online tools, programming utilities, code formatter, base64 encoder, URL encoder, hash generator, password generator, color picker, regex tester, minifier, beautifier, validator, development productivity, web utilities, coding tools',
   openGraph: {
     title: 'SopKit - Professional Web Development Tools & Utilities',
     description: 'Discover SopKit\'s powerful suite of free, open-source web development tools. Boost your productivity with modern development utilities.',
@@ -29,9 +29,169 @@ export const metadata = {
   },
 };
 
+// FAQ Structured Data for Homepage
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is SopKit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SopKit is a comprehensive collection of free, open-source web development tools designed to boost developer productivity. We offer utilities for JSON formatting, HTML conversion, encoding/decoding, and many other development tasks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are all SopKit tools free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, every tool on SopKit is completely free to use. We believe in providing high-quality development utilities without any cost barriers to help developers worldwide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to create an account to use the tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, you can use all SopKit tools without creating an account. Simply visit the tool you need and start using it immediately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the tools secure and private?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, SopKit tools run entirely in your browser. Your data never leaves your device, ensuring complete privacy and security. No server-side processing means your sensitive code and data stay private."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I contribute to SopKit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! SopKit is open source. You can contribute by suggesting new tools, reporting bugs, or submitting code improvements through our GitHub repository."
+      }
+    }
+  ]
+};
+
+// Software Application Structured Data for Tools
+const toolsJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "JSON Formatter",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "url": "https://sopkit.github.io/json-formatter",
+    "description": "Format and validate JSON data with our professional JSON formatter tool."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "HTML to JSX Converter",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "url": "https://sopkit.github.io/html-to-jsx",
+    "description": "Convert HTML code to React JSX components instantly."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Markdown to HTML Converter",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "url": "https://sopkit.github.io/markdown-to-html",
+    "description": "Transform markdown content into clean HTML with our converter."
+  }
+];
+
+// HowTo Structured Data for JSON Formatter
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Format JSON Online",
+  "description": "Learn how to format and validate JSON data using SopKit's free online JSON formatter tool.",
+  "image": "https://sopkit.github.io/og.png",
+  "totalTime": "PT1M",
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "JSON data"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Web browser"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Access the JSON Formatter",
+      "text": "Navigate to SopKit's JSON Formatter tool in your web browser.",
+      "url": "https://sopkit.github.io/json-formatter",
+      "position": 1
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Paste your JSON",
+      "text": "Copy and paste your unformatted JSON data into the input field.",
+      "position": 2
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Format the JSON",
+      "text": "Click the format button to beautify your JSON with proper indentation and structure.",
+      "position": 3
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Validate and Copy",
+      "text": "Review the formatted JSON and copy it to your clipboard for use in your project.",
+      "position": 4
+    }
+  ]
+};
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      {/* Structured Data Scripts */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+      />
+      {toolsJsonLd.map((tool, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(tool) }}
+        />
+      ))}
+
       {/* Enhanced Hero Section with better semantic markup */}
       <section className="py-32 px-4 relative overflow-hidden" role="banner">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 animate-gradient"></div>
@@ -45,6 +205,7 @@ export default function Home() {
               className="rounded-2xl shadow-2xl ring-4 ring-primary/10"
               priority={true}
               quality={90}
+              loading="eager"
             />
           </div>
           <header>
@@ -64,9 +225,9 @@ export default function Home() {
                 Explore Tools <ArrowRight className="w-5 h-5" aria-hidden="true" />
               </Button>
             </Link>
-            <Link href="https://github.com/SopKit/suggest/issues/new" aria-label="Suggest a new tool">
+            <Link href="/about" aria-label="Learn more about SopKit">
               <Button variant="outline" size="lg" className="gap-3 text-lg px-8 py-6 hover:bg-secondary/10 transition-all duration-300">
-                Suggest a Tool <Sparkles className="w-5 h-5" aria-hidden="true" />
+                Learn More <Sparkles className="w-5 h-5" aria-hidden="true" />
               </Button>
             </Link>
           </div>

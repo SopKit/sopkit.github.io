@@ -92,6 +92,8 @@ export const metadata = {
         type: 'image/png',
       }
     ],
+    countryName: 'United States',
+    emails: ['sh20raj@gmail.com'],
   },
   twitter: {
     card: 'summary_large_image',
@@ -100,6 +102,7 @@ export const metadata = {
     title: 'SopKit - Professional Web Development Tools & Utilities',
     description: 'Discover SopKit\'s powerful suite of free, open-source web development tools. Boost your productivity with our modern, efficient, and user-friendly development utilities.',
     images: ['/og.png'],
+    domain: 'sopkit.github.io',
   },
   icons: {
     icon: [
@@ -117,7 +120,15 @@ export const metadata = {
     google: 'your-google-verification-code',
     yandex: 'your-yandex-verification-code',
     bing: 'your-bing-verification-code',
+    baidu: 'your-baidu-verification-code',
   },
+  category: 'Technology',
+  classification: 'Web Development Tools',
+  author: 'SopKit Team',
+  publisher: 'SopKit',
+  distribution: 'global',
+  rating: 'general',
+  revisitAfter: '1 days',
   other: {
     'msapplication-TileColor': '#0070f3',
     'msapplication-config': '/browserconfig.xml',
@@ -327,15 +338,24 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.clarity.ms" />
+        <link rel="preconnect" href="https://docs.google.com" />
         
         {/* DNS prefetch for performance optimization */}
         <link rel="dns-prefetch" href="https://github.com" />
         <link rel="dns-prefetch" href="https://vercel.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
         
-        {/* Preload critical resources */}
-        <link rel="preload" href="/logo.png" as="image" type="image/png" />
-        <link rel="preload" href="/og.png" as="image" type="image/png" />
+        {/* Additional meta tags for SEO */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="theme-color" content="#0070f3" />
+        <meta name="msapplication-navbutton-color" content="#0070f3" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         
         {/* Enhanced Structured Data */}
         <script
