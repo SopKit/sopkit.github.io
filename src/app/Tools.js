@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, FileText, Code2, Hash, Piano, ListTodo, Mic2, FileCode2, FileConvert } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowRight, FileText, Code2, Hash, Piano, ListTodo, Mic2, FileCode2, ArrowRightLeft } from "lucide-react";
 import { IconJarLogoIcon } from "@radix-ui/react-icons";
 
 export default function Tools() {
@@ -64,7 +63,7 @@ export default function Tools() {
     {
       name: "File Converter",
       description: "Convert any file format instantly. Support for images, audio, video, and documents.",
-      icon: FileConvert,
+      icon: ArrowRightLeft,
       link: "/file-converter",
       stats: "5M+ files converted"
     },
