@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SopKit - Developer Tools</title>
+  <link href="https://sopkit.github.io" />
+  <updated>2026-01-22T18:20:05.084Z</updated>
+  <id>https://sopkit.github.io</id>
+  
+    <entry>
+      <title>Ambiguous ampersand checker for HTML</title>
+      <link href="https://sopkit.github.io./tools/ampersands" />
+      <id>https://sopkit.github.io./tools/ampersands</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>ASCII Tools</title>
+      <link href="https://sopkit.github.io./tools/ascii-tools" />
+      <id>https://sopkit.github.io./tools/ascii-tools</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Bacon’s cipher encoder/decoder</title>
+      <link href="https://sopkit.github.io./tools/bacon" />
+      <id>https://sopkit.github.io./tools/bacon</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Base64 encoder/decoder</title>
+      <link href="https://sopkit.github.io./tools/base64" />
+      <id>https://sopkit.github.io./tools/base64</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Base64 Tools</title>
+      <link href="https://sopkit.github.io./tools/base64-tools" />
+      <id>https://sopkit.github.io./tools/base64-tools</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Binary ↔ ASCII converter</title>
+      <link href="https://sopkit.github.io./tools/binary-ascii" />
+      <id>https://sopkit.github.io./tools/binary-ascii</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Brainfuck minifier</title>
+      <link href="https://sopkit.github.io./tools/brainfuck-minifier" />
+      <id>https://sopkit.github.io./tools/brainfuck-minifier</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Cheat Sheets</title>
+      <link href="https://sopkit.github.io./tools/cheat-sheets" />
+      <id>https://sopkit.github.io./tools/cheat-sheets</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Code Editor</title>
+      <link href="https://sopkit.github.io./tools/code-editor" />
+      <id>https://sopkit.github.io./tools/code-editor</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Create To-Do List</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/create-todo-list/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/create-todo-list/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>CSS escaper</title>
+      <link href="https://sopkit.github.io./tools/css-escapes" />
+      <id>https://sopkit.github.io./tools/css-escapes</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Custom HTML element name validator</title>
+      <link href="https://sopkit.github.io./tools/custom-element-name" />
+      <id>https://sopkit.github.io./tools/custom-element-name</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Easy Drawing Online</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/easy-drawing-online/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/easy-drawing-online/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Encoding</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/encoding/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/encoding/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Gradient Color Generator</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/gradient-color-generator/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/gradient-color-generator/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>HTML entity encoder/decoder</title>
+      <link href="https://sopkit.github.io./tools/html-entities" />
+      <id>https://sopkit.github.io./tools/html-entities</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>HTML to JSX Converter</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/html-to-jsx-converter/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/html-to-jsx-converter/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>HTML/CSS/JS unquoted attribute value validator</title>
+      <link href="https://sopkit.github.io./tools/unquoted-attributes" />
+      <id>https://sopkit.github.io./tools/unquoted-attributes</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Image Resizer</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/resize-and-compress-images-online/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/resize-and-compress-images-online/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>JavaScript escaper</title>
+      <link href="https://sopkit.github.io./tools/js-escapes" />
+      <id>https://sopkit.github.io./tools/js-escapes</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>JavaScript Minifier</title>
+      <link href="https://sopkit.github.io./tools/js-minifier" />
+      <id>https://sopkit.github.io./tools/js-minifier</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>JavaScript Obfuscator</title>
+      <link href="https://sopkit.github.io./tools/js-obfuscator" />
+      <id>https://sopkit.github.io./tools/js-obfuscator</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>JavaScript operator precedence</title>
+      <link href="https://sopkit.github.io./tools/operator-precedence" />
+      <id>https://sopkit.github.io./tools/operator-precedence</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>JavaScript property name validator</title>
+      <link href="https://sopkit.github.io./tools/js-properties" />
+      <id>https://sopkit.github.io./tools/js-properties</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>JavaScript regular expression transpiler</title>
+      <link href="https://sopkit.github.io./tools/regexpu" />
+      <id>https://sopkit.github.io./tools/regexpu</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>JavaScript variable name validator</title>
+      <link href="https://sopkit.github.io./tools/js-variables" />
+      <id>https://sopkit.github.io./tools/js-variables</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>JPG to PNG Convertor</title>
+      <link href="https://sopkit.github.io./tools/jpg-to-png" />
+      <id>https://sopkit.github.io./tools/jpg-to-png</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>JS Image Editor</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/js-image-editor/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/js-image-editor/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>JSX to HTML Converter</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/html-to-jsx-converter/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/html-to-jsx-converter/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Legacy HTML color value previewer</title>
+      <link href="https://sopkit.github.io./tools/bgcolor" />
+      <id>https://sopkit.github.io./tools/bgcolor</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Lua minifier</title>
+      <link href="https://sopkit.github.io./tools/lua-minifier" />
+      <id>https://sopkit.github.io./tools/lua-minifier</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Markdown Editor</title>
+      <link href="https://sopkit.github.io./markdown-editor" />
+      <id>https://sopkit.github.io./markdown-editor</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Markdown to HTML Convertor</title>
+      <link href="https://sopkit.github.io./markdown-to-html-converter" />
+      <id>https://sopkit.github.io./markdown-to-html-converter</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Meta Tags Generator</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/meta-tags-generator/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/meta-tags-generator/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Playable Piano</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/playable-piano/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/playable-piano/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Punycode IDN domain name converter</title>
+      <link href="https://sopkit.github.io./tools/punycode" />
+      <id>https://sopkit.github.io./tools/punycode</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Q encoder/decoder</title>
+      <link href="https://sopkit.github.io./tools/q" />
+      <id>https://sopkit.github.io./tools/q</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Quoted-Printable encoder/decoder</title>
+      <link href="https://sopkit.github.io./tools/quoted-printable" />
+      <id>https://sopkit.github.io./tools/quoted-printable</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Random Color Palette Generator</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/random-color-palette-generator/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/random-color-palette-generator/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Random Password Generator</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/random-password-generator/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/random-password-generator/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Save Notes</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/save-notes/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/save-notes/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>String length & UTF-8 byte counter</title>
+      <link href="https://sopkit.github.io./tools/byte-counter" />
+      <id>https://sopkit.github.io./tools/byte-counter</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>String reverser</title>
+      <link href="https://sopkit.github.io./tools/reverse-string" />
+      <id>https://sopkit.github.io./tools/reverse-string</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>String reverser</title>
+      <link href="https://sopkit.github.io./tools/reverse-string" />
+      <id>https://sopkit.github.io./tools/reverse-string</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Text to Speech Converter</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/text-to-speech-converter/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/text-to-speech-converter/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Toss A Coin</title>
+      <link href="https://sopkit.github.io./toss-a-coin/" />
+      <id>https://sopkit.github.io./toss-a-coin/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Twitalics</title>
+      <link href="https://sopkit.github.io./tools/twitalics" />
+      <id>https://sopkit.github.io./tools/twitalics</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Twitalics</title>
+      <link href="https://sopkit.github.io./tools/twitalics" />
+      <id>https://sopkit.github.io./tools/twitalics</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Unquoted CSS font family name validator</title>
+      <link href="https://sopkit.github.io./tools/font-family" />
+      <id>https://sopkit.github.io./tools/font-family</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>URL encoder/decoder</title>
+      <link href="https://sopkit.github.io./tools/url" />
+      <id>https://sopkit.github.io./tools/url</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>UTF-8 encoder/decoder</title>
+      <link href="https://sopkit.github.io./tools/utf-8" />
+      <id>https://sopkit.github.io./tools/utf-8</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>WTF-8 encoder/decoder</title>
+      <link href="https://sopkit.github.io./tools/wtf-8" />
+      <id>https://sopkit.github.io./tools/wtf-8</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+    <entry>
+      <title>Audio Recorder</title>
+      <link href="https://sopkit.github.iohttps://sopkit.github.io/audio-recorder/" />
+      <id>https://sopkit.github.iohttps://sopkit.github.io/audio-recorder/</id>
+      <updated>2026-01-22T18:20:05.084Z</updated>
+      <summary></summary>
+    </entry>
+  
+</feed>

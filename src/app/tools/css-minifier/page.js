@@ -57,7 +57,7 @@ export default function Page() {
         </ul>
         <p>
           Minified CSS is valid code that can be parsed by browsers without any issues, but it is very difficult 
-          for humans to read. That's why we also provide a "Beautify" option!
+          for humans to read. That&apos;s why we also provide a &quot;Beautify&quot; option!
         </p>
       </div>
     </div>

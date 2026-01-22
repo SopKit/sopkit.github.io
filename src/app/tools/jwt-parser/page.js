@@ -63,7 +63,7 @@ export default function Page() {
         <ul>
             <li><strong>Header:</strong> Typically consists of two parts: the type of the token (JWT) and the signing algorithm being used (e.g., HMAC SHA256 or RSA).</li>
             <li><strong>Payload:</strong> Contains the claims. Claims are statements about an entity (typically, the user) and additional data.</li>
-            <li><strong>Signature:</strong> Used to verify that the message wasn't changed along the way, and, in the case of tokens signed with a private key, it can also verify that the sender of the JWT is who it says it is.</li>
+            <li><strong>Signature:</strong> Used to verify that the message wasn&apos;t changed along the way, and, in the case of tokens signed with a private key, it can also verify that the sender of the JWT is who it says it is.</li>
         </ul>
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Copy, RefreshCw, Check, Code, FileJs } from "lucide-react";
+import { Copy, RefreshCw, Check, Code, FileCode } from "lucide-react";
 // We'll use a simple regex-based minifier for client-side speed without heavy libs like Terser
 // unless absolutely requested. For a lightweight tool, regex is often sufficient for "compressing" whitespace.
 
@@ -45,7 +45,7 @@ export default function JsMinifier() {
       <div className="grid lg:grid-cols-2 gap-6">
         <div className="space-y-4">
           <label className="text-sm font-medium text-foreground/80 flex items-center gap-2">
-            <FileJs className="w-4 h-4" /> Input JavaScript
+            <FileCode className="w-4 h-4" /> Input JavaScript
           </label>
           <textarea
             value={input}

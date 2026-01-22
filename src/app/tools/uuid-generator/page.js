@@ -59,7 +59,7 @@ export default function Page() {
         <h3>Why use Version 4?</h3>
         <p>
           Version 4 UUIDs are generated using random or pseudo-random numbers. 
-          Unlike other versions (like v1 which uses MAC address and timestamp), v4 doesn't reveal any information 
+          Unlike other versions (like v1 which uses MAC address and timestamp), v4 doesn&apos;t reveal any information 
           about the host that generated it and provides a very high degree of uniqueness.
         </p>
 
