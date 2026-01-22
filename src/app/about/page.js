@@ -101,9 +101,6 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <div>
-  return (
-    <>
-      <div>
         <h2 id="aboutsopkit">About SopKit</h2>
         <p>
           Welcome to SopKit, your ultimate toolkit for web development. At

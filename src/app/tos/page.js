@@ -1,5 +1,13 @@
 import React from 'react'
 
+export const metadata = {
+  title: 'Terms of Service - SopKit',
+  description: 'Read SopKit\'s Terms of Service. Understand the rules, guidelines, and agreements for using our professional web development tools.',
+  alternates: {
+    canonical: 'https://sopkit.github.io/tos',
+  },
+};
+
 export default function page() {
   return (
     <div>

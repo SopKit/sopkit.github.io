@@ -1,5 +1,13 @@
 import React from "react";
 
+export const metadata = {
+  title: 'DMCA Policy - SopKit',
+  description: 'Review SopKit\'s DMCA Policy. Understand our copyright infringement reporting process and how we handle intellectual property rights.',
+  alternates: {
+    canonical: 'https://sopkit.github.io/dmca',
+  },
+};
+
 export default function page() {
   return (
    <div>
