@@ -417,10 +417,90 @@
   },
   {
     "name": "Audio Recorder",
-    "description": "",
-    "link": "https://sopkit.github.io/audio-recorder/",
-    "icon": "Box",
-    "category": "Utilities",
+    "description": "Record voice notes and audio directly in your browser.",
+    "link": "audio-recorder",
+    "icon": "Mic2",
+    "category": "Multimedia",
+    "featured": true
+  },
+  {
+    "name": "YouTube Downloader",
+    "description": "Download YouTube videos and audio in high quality (MP4/MP3).",
+    "link": "tools/youtube-downloader",
+    "icon": "Youtube",
+    "category": "Downloaders",
+    "featured": true
+  },
+  {
+    "name": "Reddit Downloader",
+    "description": "Save Reddit videos with audio and GIFs instantly.",
+    "link": "tools/reddit-downloader",
+    "icon": "Share2",
+    "category": "Downloaders",
+    "featured": false
+  },
+  {
+    "name": "Facebook Downloader",
+    "description": "Download Facebook videos, reels, and stories in HD.",
+    "link": "tools/facebook-downloader",
+    "icon": "Facebook",
+    "category": "Downloaders",
+    "featured": false
+  },
+  {
+    "name": "TikTok Downloader",
+    "description": "Download TikTok videos without watermark in HD.",
+    "link": "tools/tiktok-downloader",
+    "icon": "Music2",
+    "category": "Downloaders",
+    "featured": true
+  },
+  {
+    "name": "Instagram Downloader",
+    "description": "Save Instagram Reels, Stories, and Photos.",
+    "link": "tools/instagram-downloader",
+    "icon": "Camera",
+    "category": "Downloaders",
+    "featured": true
+  },
+  {
+    "name": "Twitter / X Downloader",
+    "description": "Download videos and GIFs from Twitter (X).",
+    "link": "tools/twitter-downloader",
+    "icon": "Twitter",
+    "category": "Downloaders",
+    "featured": false
+  },
+  {
+    "name": "Instagram DP Viewer",
+    "description": "View and download Instagram profile pictures in full size.",
+    "link": "tools/instagram-dp-viewer",
+    "icon": "UserCircle",
+    "category": "Downloaders",
+    "featured": false
+  },
+  {
+    "name": "Pinterest Downloader",
+    "description": "Download Pinterest videos, images, and GIFs.",
+    "link": "tools/pinterest-downloader",
+    "icon": "Pin",
+    "category": "Downloaders",
+    "featured": false
+  },
+  {
+    "name": "LinkedIn Downloader",
+    "description": "Save professional videos from LinkedIn posts.",
+    "link": "tools/linkedin-downloader",
+    "icon": "Linkedin",
+    "category": "Downloaders",
+    "featured": false
+  },
+  {
+    "name": "SoundCloud Downloader",
+    "description": "Convert SoundCloud tracks to MP3 format.",
+    "link": "tools/soundcloud-downloader",
+    "icon": "CloudRain",
+    "category": "Downloaders",
     "featured": false
   }
 ]

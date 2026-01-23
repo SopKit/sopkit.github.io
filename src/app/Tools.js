@@ -3,7 +3,8 @@ import {
   ArrowRight, FileText, Code2, Hash, Piano, ListTodo, 
   Mic2, FileCode2, ArrowRightLeft, Box, Upload, 
   Clock, Calendar, Image as LucideImage, Scissors, 
-  Database, FileJson, Lock, Type
+  Database, FileJson, Lock, Type, Youtube, Share2, 
+  Facebook, Camera, Twitter, UserCircle, Pin, Linkedin, CloudRain, Music2
 } from "lucide-react";
 import { IconJarLogoIcon } from "@radix-ui/react-icons";
 import toolsData from '@/data/tools.json';
@@ -26,7 +27,17 @@ const iconMap = {
   "Database": Database,
   "FileJson": FileJson,
   "Lock": Lock,
-  "Type": Type
+  "Type": Type,
+  "Youtube": Youtube,
+  "Share2": Share2,
+  "Facebook": Facebook,
+  "Camera": Camera,
+  "Twitter": Twitter,
+  "UserCircle": UserCircle,
+  "Pin": Pin,
+  "Linkedin": Linkedin,
+  "CloudRain": CloudRain,
+  "Music2": Music2
 };
 
 export default function Tools() {
