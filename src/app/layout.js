@@ -13,7 +13,9 @@ export const metadata = {
   description: 'Boost your productivity with specific, high-performance web development tools. Free, open-source, and privacy-focused.',
   keywords: [
     'SopKit', 'web tools', 'developer utilities', 'json formatter', 'markdown converter',
-    'base64 encoder', 'url encoder', 'color picker', 'regex tester'
+    'base64 encoder', 'url encoder', 'color picker', 'regex tester', 'youtube downloader',
+    'instagram downloader', 'tiktok downloader', 'social media downloader', 'sql formatter',
+    'uuid generator', 'cron parser', 'image tools', 'seo tools'
   ],
   authors: [{ name: 'SopKit Team', url: 'https://sopkit.github.io' }],
   creator: 'SopKit',

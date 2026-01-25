@@ -1,326 +1,41 @@
 import { Search } from "@/components/search/SearchBox";
-import Link from "next/link";
-import Image from "next/image";
 import Tools from "./Tools";
-import { ArrowRight, Sparkles, Code2, Zap, Shield, Globe, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import Tracker from "@/components/Tracker";
 
 // Enhanced metadata for homepage
 export const metadata = {
-  title: 'SopKit - Professional Web Development Tools & Utilities',
-  description: 'Discover SopKit\'s powerful suite of free, open-source web development tools. Boost your productivity with our modern, efficient, and user-friendly development utilities including JSON formatters, converters, validators, and more.',
-  keywords: 'web development tools, developer utilities, JSON formatter, HTML to JSX, markdown converter, encoding tools, free developer tools, online tools, programming utilities, code formatter, base64 encoder, URL encoder, hash generator, password generator, color picker, regex tester, minifier, beautifier, validator, development productivity, web utilities, coding tools',
-  openGraph: {
-    title: 'SopKit - Professional Web Development Tools & Utilities',
-    description: 'Discover SopKit\'s powerful suite of free, open-source web development tools. Boost your productivity with modern development utilities.',
-    images: ['/og.png'],
-    type: 'website',
-    url: 'https://sopkit.github.io',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'SopKit - Professional Web Development Tools & Utilities',
-    description: 'Discover SopKit\'s powerful suite of free, open-source web development tools.',
-    images: ['/og.png'],
-  },
+  title: 'SopKit - Free Developer Tools & Social Media Downloaders',
+  description: 'A comprehensive suite of free developer utilities and social media downloaders. Format JSON, convert files, download videos from YouTube/Instagram/TikTok, and more.',
+  keywords: ['web development tools', 'social media downloader', 'youtube downloader', 'json formatter', 'developer utilities', 'free online tools', 'sopkit'],
   alternates: {
     canonical: 'https://sopkit.github.io',
   },
 };
 
-// FAQ Structured Data for Homepage
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is SopKit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SopKit is a comprehensive collection of free, open-source web development tools designed to boost developer productivity. We offer utilities for JSON formatting, HTML conversion, encoding/decoding, and many other development tasks."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are all SopKit tools free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, every tool on SopKit is completely free to use. We believe in providing high-quality development utilities without any cost barriers to help developers worldwide."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to create an account to use the tools?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No, you can use all SopKit tools without creating an account. Simply visit the tool you need and start using it immediately."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are the tools secure and private?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, SopKit tools run entirely in your browser. Your data never leaves your device, ensuring complete privacy and security. No server-side processing means your sensitive code and data stay private."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I contribute to SopKit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely! SopKit is open source. You can contribute by suggesting new tools, reporting bugs, or submitting code improvements through our GitHub repository."
-      }
-    }
-  ]
-};
-
-// Software Application Structured Data for Tools
-const toolsJsonLd = [
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "JSON Formatter",
-    "applicationCategory": "DeveloperApplication",
-    "operatingSystem": "Web Browser",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "url": "https://sopkit.github.io/json-formatter",
-    "description": "Format and validate JSON data with our professional JSON formatter tool."
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "HTML to JSX Converter",
-    "applicationCategory": "DeveloperApplication",
-    "operatingSystem": "Web Browser",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "url": "https://sopkit.github.io/html-to-jsx",
-    "description": "Convert HTML code to React JSX components instantly."
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Markdown to HTML Converter",
-    "applicationCategory": "DeveloperApplication",
-    "operatingSystem": "Web Browser",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "url": "https://sopkit.github.io/markdown-to-html",
-    "description": "Transform markdown content into clean HTML with our converter."
-  }
-];
-
-// HowTo Structured Data for JSON Formatter
-const howToJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Format JSON Online",
-  "description": "Learn how to format and validate JSON data using SopKit's free online JSON formatter tool.",
-  "image": "https://sopkit.github.io/og.png",
-  "totalTime": "PT1M",
-  "supply": [
-    {
-      "@type": "HowToSupply",
-      "name": "JSON data"
-    }
-  ],
-  "tool": [
-    {
-      "@type": "HowToTool",
-      "name": "Web browser"
-    }
-  ],
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "Access the JSON Formatter",
-      "text": "Navigate to SopKit's JSON Formatter tool in your web browser.",
-      "url": "https://sopkit.github.io/json-formatter",
-      "position": 1
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Paste your JSON",
-      "text": "Copy and paste your unformatted JSON data into the input field.",
-      "position": 2
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Format the JSON",
-      "text": "Click the format button to beautify your JSON with proper indentation and structure.",
-      "position": 3
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Validate and Copy",
-      "text": "Review the formatted JSON and copy it to your clipboard for use in your project.",
-      "position": 4
-    }
-  ]
-};
-
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Structured Data Scripts */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
-      />
-      {toolsJsonLd.map((tool, index) => (
-        <script
-          key={index}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(tool) }}
-        />
-      ))}
-
-      {/* Enhanced Hero Section with better semantic markup */}
-      <section className="py-32 px-4 relative overflow-hidden" role="banner">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 animate-gradient"></div>
-        <div className="max-w-6xl mx-auto text-center relative">
-          <div className="flex justify-center mb-12 transform hover:scale-105 transition-transform duration-300">
-            <Image
-              src="https://github.com/sopkit.png"
-              alt="SopKit - Your Web Development Toolkit"
-              width={160}
-              height={160}
-              className="rounded-2xl shadow-2xl ring-4 ring-primary/10"
-              priority={true}
-              quality={90}
-              loading="eager"
-            />
-          </div>
-          <header>
-            <h1 className="text-6xl font-bold tracking-tight sm:text-7xl md:text-8xl mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary animate-gradient-text">
-              Developer Tools,
-              <br />
-              <span className="text-foreground">Reimagined</span>
-            </h1>
-            <p className="text-xl text-muted-foreground md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed">
-              Powerful, free, and open-source development tools to streamline your workflow and boost productivity. 
-              Used by over 100,000+ developers worldwide.
-            </p>
-          </header>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Link href="#searchfield" aria-label="Explore our development tools">
-              <Button size="lg" className="gap-3 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 bg-primary hover:bg-primary/90">
-                Explore Tools <ArrowRight className="w-5 h-5" aria-hidden="true" />
-              </Button>
-            </Link>
-            <Link href="/about" aria-label="Learn more about SopKit">
-              <Button variant="outline" size="lg" className="gap-3 text-lg px-8 py-6 hover:bg-secondary/10 transition-all duration-300">
-                Learn More <Sparkles className="w-5 h-5" aria-hidden="true" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Enhanced Features Section with better accessibility */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-900/50" role="region" aria-labelledby="features-heading">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 id="features-heading" className="text-3xl font-bold text-center mb-12 sr-only">Why Choose SopKit</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <article className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-              <Code2 className="w-12 h-12 mb-4 text-primary" aria-hidden="true" />
-              <h3 className="text-xl font-semibold mb-2">Open Source</h3>
-              <p className="text-muted-foreground">100% free and open source. Contribute, customize, and make it your own. Join our community of developers.</p>
-            </article>
-            <article className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-              <Zap className="w-12 h-12 mb-4 text-primary" aria-hidden="true" />
-              <h3 className="text-xl font-semibold mb-2">Lightning Fast</h3>
-              <p className="text-muted-foreground">Built with performance in mind. Get instant results with no delays. Optimized for speed and efficiency.</p>
-            </article>
-            <article className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-              <Sparkles className="w-12 h-12 mb-4 text-primary" aria-hidden="true" />
-              <h3 className="text-xl font-semibold mb-2">Modern Tools</h3>
-              <p className="text-muted-foreground">Cutting-edge tools designed for modern web development workflows. Always up-to-date with the latest standards.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* Trust Indicators Section */}
-      <section className="py-16 px-4" role="region" aria-labelledby="trust-heading">
-        <div className="max-w-6xl mx-auto">
-          <h2 id="trust-heading" className="text-3xl font-bold text-center mb-12">Trusted by Developers Worldwide</h2>
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <Users className="w-12 h-12 mx-auto mb-4 text-primary" aria-hidden="true" />
-              <h3 className="text-2xl font-bold mb-2">100,000+</h3>
-              <p className="text-muted-foreground">Active Users</p>
-            </div>
-            <div>
-              <Globe className="w-12 h-12 mx-auto mb-4 text-primary" aria-hidden="true" />
-              <h3 className="text-2xl font-bold mb-2">150+</h3>
-              <p className="text-muted-foreground">Countries</p>
-            </div>
-            <div>
-              <Shield className="w-12 h-12 mx-auto mb-4 text-primary" aria-hidden="true" />
-              <h3 className="text-2xl font-bold mb-2">99.9%</h3>
-              <p className="text-muted-foreground">Uptime</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Enhanced Search Section */}
-      <section 
-        className="py-24 px-4 bg-gradient-to-t from-secondary/5 to-background" 
-        role="search" 
-        aria-labelledby="search-heading"
-      >
-        <div className="max-w-4xl mx-auto">
-          <h2 id="search-heading" className="text-4xl font-bold text-center mb-6">Find the Perfect Tool</h2>
-          <p className="text-lg text-muted-foreground text-center mb-12">
-            Search through our collection of 25+ developer tools and utilities
+    <div className="flex flex-col min-h-[calc(100vh-4rem)]">
+      <main className="flex-1 flex flex-col items-center pt-20 pb-12 px-4 sm:px-6 lg:px-8">
+        
+        {/* Minimalist Header / Search Section */}
+        <div className="w-full max-w-3xl text-center space-y-8 mb-16">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
+            SopKit
+          </h1>
+          <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+            Essential developer tools, efficient and free.
           </p>
-          <div id="searchfield" className="w-full transform hover:scale-[1.01] transition-transform duration-300">
+          
+          <div className="w-full transform hover:scale-[1.01] transition-transform duration-200">
             <Search />
           </div>
         </div>
-      </section>
 
-      {/* Enhanced Popular Tools Section */}
-      <section 
-        className="py-24 px-4 bg-gradient-to-b from-background to-secondary/5" 
-        role="region" 
-        aria-labelledby="tools-heading"
-      >
-        <div className="max-w-6xl mx-auto">
-          <div className="flex justify-between items-center mb-12">
-            <h2 id="tools-heading" className="text-4xl font-bold">Popular Tools</h2>
-            <Link href="/tools" aria-label="View all tools">
-              <Button variant="outline" className="gap-2">
-                View All <ArrowRight className="w-4 h-4" aria-hidden="true" />
-              </Button>
-            </Link>
-          </div>
-          <div className="relative">
-            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+        {/* Tools Grid */}
+        <div className="w-full max-w-7xl">
             <Tools />
-            <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
-          </div>
         </div>
-      </section>
+      </main>
       
       <Tracker/>
     </div>

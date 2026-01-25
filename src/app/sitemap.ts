@@ -9,7 +9,7 @@ export default async function sitemap() {
   const routes = [
     '',
     '/about',
-    '/tools',
+    '/tool',
     '/privacy',
     '/terms',
   ].map((route) => ({

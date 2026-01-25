@@ -6,7 +6,6 @@ import {
   Database, FileJson, Lock, Type, Youtube, Share2, 
   Facebook, Camera, Twitter, UserCircle, Pin, Linkedin, CloudRain, Music2
 } from "lucide-react";
-import { IconJarLogoIcon } from "@radix-ui/react-icons";
 import toolsData from '@/data/tools.json';
 
 const iconMap = {
