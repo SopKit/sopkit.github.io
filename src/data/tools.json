@@ -2,7 +2,7 @@
   {
     "name": "Ambiguous ampersand checker for HTML",
     "description": "",
-    "link": "/tools/ampersands",
+    "link": "/tool/ampersands",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -10,7 +10,7 @@
   {
     "name": "ASCII Tools",
     "description": "",
-    "link": "/tools/ascii-tools",
+    "link": "/tool/ascii-tools",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -18,7 +18,7 @@
   {
     "name": "Bacon’s cipher encoder/decoder",
     "description": "",
-    "link": "/tools/bacon",
+    "link": "/tool/bacon",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -26,7 +26,7 @@
   {
     "name": "Base64 encoder/decoder",
     "description": "",
-    "link": "/tools/base64",
+    "link": "/tool/base64",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -34,7 +34,7 @@
   {
     "name": "Base64 Tools",
     "description": "",
-    "link": "/tools/base64-tools",
+    "link": "/tool/base64-tools",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -42,7 +42,7 @@
   {
     "name": "Binary ↔ ASCII converter",
     "description": "",
-    "link": "/tools/binary-ascii",
+    "link": "/tool/binary-ascii",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -50,7 +50,7 @@
   {
     "name": "Brainfuck minifier",
     "description": "",
-    "link": "/tools/brainfuck-minifier",
+    "link": "/tool/brainfuck-minifier",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -58,7 +58,7 @@
   {
     "name": "Cheat Sheets",
     "description": "",
-    "link": "/tools/cheat-sheets",
+    "link": "/tool/cheat-sheets",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -66,7 +66,7 @@
   {
     "name": "Code Editor",
     "description": "",
-    "link": "/tools/code-editor",
+    "link": "/tool/code-editor",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -82,7 +82,7 @@
   {
     "name": "CSS escaper",
     "description": "",
-    "link": "/tools/css-escapes",
+    "link": "/tool/css-escapes",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -90,7 +90,7 @@
   {
     "name": "Custom HTML element name validator",
     "description": "",
-    "link": "/tools/custom-element-name",
+    "link": "/tool/custom-element-name",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -122,7 +122,7 @@
   {
     "name": "HTML entity encoder/decoder",
     "description": "",
-    "link": "/tools/html-entities",
+    "link": "/tool/html-entities",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -138,7 +138,7 @@
   {
     "name": "HTML/CSS/JS unquoted attribute value validator",
     "description": "",
-    "link": "/tools/unquoted-attributes",
+    "link": "/tool/unquoted-attributes",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -154,7 +154,7 @@
   {
     "name": "JavaScript escaper",
     "description": "",
-    "link": "/tools/js-escapes",
+    "link": "/tool/js-escapes",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -162,7 +162,7 @@
   {
     "name": "JavaScript Minifier",
     "description": "",
-    "link": "/tools/js-minifier",
+    "link": "/tool/js-minifier",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -170,7 +170,7 @@
   {
     "name": "JavaScript Obfuscator",
     "description": "",
-    "link": "/tools/js-obfuscator",
+    "link": "/tool/js-obfuscator",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -178,7 +178,7 @@
   {
     "name": "JavaScript operator precedence",
     "description": "",
-    "link": "/tools/operator-precedence",
+    "link": "/tool/operator-precedence",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -186,7 +186,7 @@
   {
     "name": "JavaScript property name validator",
     "description": "",
-    "link": "/tools/js-properties",
+    "link": "/tool/js-properties",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -194,7 +194,7 @@
   {
     "name": "JavaScript regular expression transpiler",
     "description": "",
-    "link": "/tools/regexpu",
+    "link": "/tool/regexpu",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -202,7 +202,7 @@
   {
     "name": "JavaScript variable name validator",
     "description": "",
-    "link": "/tools/js-variables",
+    "link": "/tool/js-variables",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -210,7 +210,7 @@
   {
     "name": "JPG to PNG Convertor",
     "description": "",
-    "link": "/tools/jpg-to-png",
+    "link": "/tool/jpg-to-png",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -234,7 +234,7 @@
   {
     "name": "Legacy HTML color value previewer",
     "description": "",
-    "link": "/tools/bgcolor",
+    "link": "/tool/bgcolor",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -242,7 +242,7 @@
   {
     "name": "Lua minifier",
     "description": "",
-    "link": "/tools/lua-minifier",
+    "link": "/tool/lua-minifier",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -282,7 +282,7 @@
   {
     "name": "Punycode IDN domain name converter",
     "description": "",
-    "link": "/tools/punycode",
+    "link": "/tool/punycode",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -290,7 +290,7 @@
   {
     "name": "Q encoder/decoder",
     "description": "",
-    "link": "/tools/q",
+    "link": "/tool/q",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -298,7 +298,7 @@
   {
     "name": "Quoted-Printable encoder/decoder",
     "description": "",
-    "link": "/tools/quoted-printable",
+    "link": "/tool/quoted-printable",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -330,7 +330,7 @@
   {
     "name": "String length & UTF-8 byte counter",
     "description": "",
-    "link": "/tools/byte-counter",
+    "link": "/tool/byte-counter",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -338,7 +338,7 @@
   {
     "name": "String reverser",
     "description": "",
-    "link": "/tools/reverse-string",
+    "link": "/tool/reverse-string",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -346,7 +346,7 @@
   {
     "name": "String reverser",
     "description": "",
-    "link": "/tools/reverse-string",
+    "link": "/tool/reverse-string",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -370,7 +370,7 @@
   {
     "name": "Twitalics",
     "description": "",
-    "link": "/tools/twitalics",
+    "link": "/tool/twitalics",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -378,7 +378,7 @@
   {
     "name": "Twitalics",
     "description": "",
-    "link": "/tools/twitalics",
+    "link": "/tool/twitalics",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -386,7 +386,7 @@
   {
     "name": "Unquoted CSS font family name validator",
     "description": "",
-    "link": "/tools/font-family",
+    "link": "/tool/font-family",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -394,7 +394,7 @@
   {
     "name": "URL encoder/decoder",
     "description": "",
-    "link": "/tools/url",
+    "link": "/tool/url",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -402,7 +402,7 @@
   {
     "name": "UTF-8 encoder/decoder",
     "description": "",
-    "link": "/tools/utf-8",
+    "link": "/tool/utf-8",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
@@ -410,7 +410,7 @@
   {
     "name": "WTF-8 encoder/decoder",
     "description": "",
-    "link": "/tools/wtf-8",
+    "link": "/tool/wtf-8",
     "icon": "Box",
     "category": "Utilities",
     "featured": false
