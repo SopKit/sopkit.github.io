@@ -1,5 +1,4 @@
-"use server";
-
+// "use server"
 import toolsData from "@/constants/tools.json";
 import { type Tool, type Category } from "@/lib/tools";
 

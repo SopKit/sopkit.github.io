@@ -19,13 +19,9 @@ interface ToolCategory {
 	tools: any[];
 }
 
-interface LandingPageProps {
-	searchParams: Promise<{ lang?: string }>;
-}
-
 import { generateMetadata as baseGenerateMetadata } from "@/lib/seo";
 
-export async function generateMetadata({ searchParams }: LandingPageProps): Promise<any> {
+export async function generateMetadata(): Promise<any> {
 	return baseGenerateMetadata({
 		title: "30tools - The Premium Free Online Toolkit (No Signup)",
 		description: `Access ${SITE_CONFIG.toolCountString} pro-grade online tools for Image, PDF, Video, Audio, and SEO. Secure, private, and 100% free with no registration required.`,
@@ -33,11 +29,10 @@ export async function generateMetadata({ searchParams }: LandingPageProps): Prom
 	});
 }
 
-export default async function LandingPage({ searchParams }: LandingPageProps) {
-	const params = await searchParams;
-	const lang = params.lang || "en";
+export default async function LandingPage() {
+	const lang = "en";
 
-	const isEnglish = lang === "en" || lang === "default";
+	const isEnglish = true;
 
 	const [heroTitle, heroSubtitle] = isEnglish 
 		? ["A Comprehensive Toolkit for Your Digital Life.", `Access ${SITE_CONFIG.toolCountString} professional tools for image, video, PDF, and developer workflows. No subscriptions. No signups. Just high-performance utilities.`]

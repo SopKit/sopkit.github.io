@@ -49,6 +49,13 @@ export default async function ToolPage({ params }) {
 		.split("-")
 		.map((w) => w.charAt(0).toUpperCase() + w.slice(1))
 		.join(" ");
+
+	const parts = slug.split("-to-");
+	const conversion = {
+		from: parts[0] || "png",
+		to: parts[1] || "jpeg",
+	};
+
 	const tool = {
 		id: slug,
 		name: name,
@@ -284,4 +291,15 @@ export default async function ToolPage({ params }) {
 			</ToolLayout>
 		</>
 	);
+}
+
+export async function generateStaticParams() {
+	return [
+		{ slug: "png-to-jpg" },
+		{ slug: "jpg-to-png" },
+		{ slug: "webp-to-jpg" },
+		{ slug: "jpg-to-webp" },
+		{ slug: "png-to-webp" },
+		{ slug: "webp-to-png" },
+	];
 }

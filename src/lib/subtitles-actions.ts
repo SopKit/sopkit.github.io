@@ -1,5 +1,4 @@
-"use server";
-
+// "use server"
 // Server actions for YouTube Subtitles Downloader
 // Using multiple APIs for reliability and comprehensive subtitle fetching
 

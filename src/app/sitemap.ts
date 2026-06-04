@@ -4,6 +4,8 @@ import { blogs } from "@/constants/blog-data";
 import { SITE_CONFIG } from "@/constants/config";
 import { getStandaloneSeoOpportunities } from "@/data/seo-opportunities";
 
+export const dynamic = 'force-static';
+
 const BASE_URL = SITE_CONFIG.siteUrl;
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -20,7 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${BASE_URL}/terms`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${BASE_URL}/dmca`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.6 },
 		{ url: `${BASE_URL}/pro`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.8 },
-		{ url: `${BASE_URL}/api`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.8 },
 		{ url: `${BASE_URL}/advertise`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${BASE_URL}/services`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.75 },
 		// Category hub pages (priority 0.8-0.9)
@@ -37,7 +38,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${BASE_URL}/small-business-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.86 },
 		{ url: `${BASE_URL}/other-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.75 },
 		{ url: `${BASE_URL}/generators`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
-		{ url: `${BASE_URL}/downloaders`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
 		{ url: `${BASE_URL}/calculators`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.75 },
 		{ url: `${BASE_URL}/student-calculators`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${BASE_URL}/student-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.84 },

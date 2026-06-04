@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getToolByRoute, getRelatedTools } from "@/lib/tools";
+import { getToolByRoute, getRelatedTools, getAllTools } from "@/lib/tools";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import ApiKeyTester from "@/components/tools/developer/ApiKeyTester";
 
@@ -84,4 +84,12 @@ export default async function ApiKeyTesterPage({ params }) {
 			</ToolLayout>
 		</>
 	);
+}
+
+export async function generateStaticParams() {
+	return getAllTools()
+		.filter((t) => t.route && t.route.startsWith("/api-key-tester/"))
+		.map((t) => ({
+			slug: t.route.split("/").pop(),
+		}));
 }

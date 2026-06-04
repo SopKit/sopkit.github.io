@@ -55,8 +55,9 @@ function SearchResults({ initialTools, initialCategories }: SearchContentProps) 
 	const hasQuery = query.trim().length > 0;
 	const noResults = hasQuery && !loading && results.length === 0;
 
-	const performSearch = useCallback(async (q: string, cat: string) => {
-		if (!q.trim()) {
+	const performSearch = useCallback((q: string, cat: string) => {
+		const cleanQuery = q.toLowerCase().trim();
+		if (!cleanQuery) {
 			setResults(
 				cat === "all"
 					? initialTools
@@ -67,17 +68,18 @@ function SearchResults({ initialTools, initialCategories }: SearchContentProps) 
 		}
 
 		setLoading(true);
-		try {
-			const res = await fetch(
-				`/api/search?q=${encodeURIComponent(q)}&category=${cat}`,
+		const filtered = initialTools.filter((tool) => {
+			const matchesCategory = cat === "all" || tool.category === cat;
+			if (!matchesCategory) return false;
+
+			return (
+				tool.name.toLowerCase().includes(cleanQuery) ||
+				tool.description.toLowerCase().includes(cleanQuery) ||
+				tool.id.toLowerCase().includes(cleanQuery)
 			);
-			const data = await res.json();
-			setResults(data.results || []);
-		} catch (error) {
-			console.error("Search failed:", error);
-		} finally {
-			setLoading(false);
-		}
+		});
+		setResults(filtered);
+		setLoading(false);
 	}, [initialTools]);
 
 	// If there's an initial query from URL, run the search once on mount

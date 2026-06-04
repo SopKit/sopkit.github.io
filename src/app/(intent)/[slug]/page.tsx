@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
-import { getIntentBySlug } from "@/lib/intent-data";
+import { getIntentBySlug, intentData } from "@/lib/intent-data";
 import { getAllTools, getToolById, type Tool } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import SeoOpportunityTool from "@/components/seo/SeoOpportunityTool";
 import {
     getSeoOpportunityBySlug,
+    seoOpportunities,
     type SeoOpportunity,
 } from "@/data/seo-opportunities";
 
@@ -176,4 +177,17 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
             <IntentToolDispatcher toolId={parentTool.id} />
         </ToolLayout>
     );
+}
+
+export async function generateStaticParams() {
+    const slugs = new Set<string>();
+    seoOpportunities.forEach((opportunity) => {
+        if (opportunity.slug) {
+            slugs.add(opportunity.slug);
+        }
+    });
+    Object.keys(intentData).forEach((slug) => {
+        slugs.add(slug);
+    });
+    return Array.from(slugs).map((slug) => ({ slug }));
 }

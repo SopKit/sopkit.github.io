@@ -1,5 +1,4 @@
-"use server";
-
+// "use server"
 import { generateText, handleAIError } from "./openrouter-service";
 
 interface ScriptData {

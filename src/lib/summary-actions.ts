@@ -1,5 +1,4 @@
-"use server";
-
+// "use server"
 import { generateText } from "./ai-services/openrouter-service.js";
 import { downloadYouTubeSubtitles } from "./subtitles-actions.js";
 

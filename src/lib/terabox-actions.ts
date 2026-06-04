@@ -1,5 +1,4 @@
-"use server";
-
+// "use server"
 interface TeraboxOGData {
 	title: string;
 	description: string;

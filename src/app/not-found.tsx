@@ -10,14 +10,7 @@ import {
 } from "@/components/ui/card";
 import { getAllTools, getRouteById, STATIC_ROUTES } from "@/lib/tools";
 
-interface NotFoundPageProps {
-	searchParams?: Promise<any> | any;
-}
-
-export default async function NotFoundPage({ searchParams }: NotFoundPageProps) {
-	// Root component doesn't receive searchParams by default, but error pages might.
-	// We handle searchParams safely to avoid crashes in Edge Runtime.
-	const _params = searchParams ? await searchParams : {};
+export default async function NotFoundPage() {
 
 	const popularTools = getAllTools()
 		.filter((t) => t.popular)

@@ -58,26 +58,6 @@ We use advanced OCR and layout analysis to ensure that your Word document looks 
             { question: "Is it really free without an email?", answer: "Yes, 30tools provides professional-grade conversion tools completely free of charge with no signup or email barriers." },
             { question: "What file formats are supported?", answer: "We support all standard PDF files and convert them to the latest .docx format compatible with Microsoft Word and Google Docs." }
         ]
-    },
-    "youtube-to-mp3-320kbps": {
-        parentToolId: "youtube-downloader",
-        title: "YouTube to MP3 320kbps - High Quality Audio Downloader",
-        description: "Download YouTube videos as high-quality 320kbps MP3 audio files. Free, fast, and secure online converter with no signup required.",
-        keywords: "youtube to mp3 320kbps, high quality youtube mp3 downloader, yt to mp3 converter free",
-        article: `
-## Download YouTube Music in High Fidelity (320kbps)
-When you convert YouTube videos to audio, quality matters. Most converters limit you to 128kbps, which sounds flat and compressed. Our tool supports the maximum possible bitrate for crystal clear sound.
-
-### Why choose 320kbps?
-320kbps is the "Gold Standard" for MP3 files. It provides the best balance between file size and audio fidelity, making it indistinguishable from CD quality for most listeners.
-
-### Fast and Secure
-Simply paste your YouTube link, select the MP3 320kbps option, and your download will start instantly. No software installation needed.
-        `,
-        faqs: [
-            { question: "Is 320kbps better than 128kbps?", answer: "Yes, 320kbps contains much more audio data, resulting in better bass, clearer highs, and a richer soundstage." },
-            { question: "Can I download entire playlists in 320kbps?", answer: "Our downloader currently supports individual video conversions to maintain the highest quality standards." }
-        ]
     }
 };
 

@@ -17,3 +17,12 @@ export default async function ToolsSlugPage({ params }: PageProps) {
 	// Redirect to the canonical tool route (e.g., /image-compressor)
 	permanentRedirect(tool.route);
 }
+
+export async function generateStaticParams() {
+	const slugs = new Set<string>();
+	getAllTools().forEach((t) => {
+		if (t.id) slugs.add(t.id);
+		if (t.route) slugs.add(t.route.replace(/^\//, ""));
+	});
+	return Array.from(slugs).map((slug) => ({ slug }));
+}

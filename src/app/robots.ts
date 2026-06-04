@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { SITE_CONFIG } from "@/constants/config";
 
+export const dynamic = 'force-static';
+
 // Shared disallow paths for all crawlers
 const BASE_DISALLOW = [
 	"/api/",

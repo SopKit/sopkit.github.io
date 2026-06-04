@@ -1,5 +1,4 @@
-"use server";
-
+// "use server"
 // Core OpenRouter AI service for all text generation tasks
 const OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1";
 const DEFAULT_MODEL = "deepseek/deepseek-chat-v3-0324"; // Latest DeepSeek V3 model
