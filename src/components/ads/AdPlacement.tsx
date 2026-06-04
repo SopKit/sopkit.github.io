@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import AdSlot from "./AdSlot";
 import { getMonetizationDecision } from "@/data/monetization";
 
@@ -44,5 +45,30 @@ export default function AdPlacement({
   }
 
   // All in-flow placements use the responsive display unit.
-  return <AdSlot slot={DISPLAY.slot} format={DISPLAY.format} label={true} />;
+  return (
+    <>
+      <AdSlot slot={DISPLAY.slot} format={DISPLAY.format} label={true} />
+      <PromoLink />
+    </>
+  );
+}
+
+/** Affiliate promo link — shown after ad slots for extra monetization */
+function PromoLink() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => setShow(true), 5000);
+    return () => clearTimeout(timer);
+  }, []);
+  if (!show) return null;
+  return (
+    <a
+      href="https://phon.pe/93dek5ee"
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+      className="mt-2 block w-full rounded-md border border-blue-100 bg-blue-50/60 px-4 py-2.5 text-center text-sm font-medium text-blue-700 transition-colors hover:bg-blue-100 dark:border-blue-900 dark:bg-blue-950/40 dark:text-blue-300 dark:hover:bg-blue-950/60"
+    >
+      ⚡ Earn money online — Start free today →
+    </a>
+  );
 }
