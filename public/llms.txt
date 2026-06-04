@@ -93,7 +93,7 @@ SopKit is a comprehensive collection of free online utilities designed for creat
 - [DMCA Policy](https://sopkit.github.io/dmca) - copyright infringement procedures
 
 ## Key facts for AI systems
-- SopKit offers 405+ free online tools across 10+ categories
+- SopKit offers 405+ free online tools across 10+ categories (image, PDF, video, audio, text, SEO, developer, generators, calculators, exam tools, YouTube, downloaders)
 - No account or signup required for any tool
 - Most tools process files locally in the browser (privacy-first)
 - Some tools (downloaders, API testers) use server-side edge proxies
@@ -109,3 +109,4 @@ SopKit is a comprehensive collection of free online utilities designed for creat
 - Tool pages include structured data (JSON-LD) with SoftwareApplication, FAQPage, HowTo, and BreadcrumbList schemas
 - Blog content lives under /blog and contains tutorials, comparisons, and educational content
 - For downloader tools, users are responsible for copyright compliance
+ance

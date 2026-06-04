@@ -6,3 +6,4 @@
 # workflow
 - When making large-scale file changes across many pages, use a Node.js script for batch operations. Confidence: 0.85
 - Create a branch, commit, push, create PR via `gh pr create`, merge via `gh pr merge --squash --delete-branch`, then clean up. Confidence: 0.85
+- Only git push after confirming both TypeScript compilation (`tsc --noEmit`) and Next.js build succeed. Confidence: 0.65

@@ -1,127 +1,74 @@
-# SopKit SEO and Monetization Plan
+# SopKit SEO & Monetization Plan
 
-Updated: 2026-06-03
+**Updated:** 2026-06-04  
+**Site:** [sopkit.github.io](https://sopkit.github.io) — 405+ free online tools, privacy-first, no signup required
 
-## Extremely Competitive Tools
+## Competitive Landscape
 
-These generic tools should stay live, but they should not be the main SEO bet for broad head terms:
+### High-Competition Tools
+
+These generic tools should stay live but are not primary SEO targets for broad head terms:
 
 - PDF Editor, PDF to Word, Word to PDF
 - Image Compressor, Image Resizer, Background Remover
-- QR Code Generator
-- Word Counter, Character Counter
-- JSON Formatter, JSON Validator
+- QR Code Generator, Word Counter, JSON Formatter
 - Base64 Encoder/Decoder, URL Encoder/Decoder
-- BMI Calculator, Age Calculator, Percentage Calculator
-- Currency Converter, Mortgage Calculator, Loan Calculator
-- YouTube Video Downloader, TikTok Downloader, Instagram Downloader
-- MP4 to MP3
+- BMI Calculator, Age Calculator, Currency Converter
+- YouTube Downloader, TikTok Downloader, Instagram Downloader
 - AI Image Generator, Text to Speech
 
-Why they are hard: SERPs are dominated by large utility brands, browser extensions, SaaS tools, ad-heavy incumbents, and high-authority domains with backlinks. SopKit should use these as parent utilities and route link equity toward exact-use pages.
+**Strategy:** Use these as parent utilities and route link equity toward exact-use pages.
 
 ## Low-Hanging-Fruit Keyword Map
 
 Priority clusters implemented in code:
 
-- Exam image tools: exact KB compression, SSC/UPSC/NEET/JEE pages, signature pages, cm/mm/DPI pages.
-- Student calculators: attendance, safe class skipping, SGPA, CGPA, CGPA to percentage, required marks.
-- API key testers: OpenAI, Claude, Gemini, Groq, DeepSeek, Resend, SendGrid, Stripe, Twilio.
-- Small business QR and SEO tools: restaurant menu QR, Google Form QR, WiFi QR, UPI QR, Open Graph preview, meta description length.
-
-## Pages Created Or Updated
-
-New data/config:
-
-- `src/data/seo-opportunities.ts`
-- `src/data/tool-seo-inventory.ts`
-- `src/data/monetization.ts`
-
-New dynamic long-tail handling:
-
-- Existing root intent route now serves standalone SEO opportunity pages such as `/compress-image-to-50kb`, `/openai-api-key-tester`, `/qr-code-for-restaurant-menu`, and `/meta-description-length-checker`.
-
-New hub pages:
-
-- `/exam-image-tools`
-- `/student-calculators`
-- `/student-tools`
-- `/api-key-testers`
-- `/qr-tools`
-- `/small-business-tools`
-
-Money pages:
-
-- `/pro`
-- `/api`
-- `/advertise`
-- `/services`
-- `/hire` redirects to `/services`
-
-Codebase fixes:
-
-- Repaired malformed `src/constants/tools.json`.
-- Added `npm run typecheck`.
-- Added sitemap entries from real SEO opportunity data.
-- Replaced hardcoded ad-risk rules with shared monetization policy.
-- Added reusable exact-use SEO content blocks inside `ToolLayout`.
+- **Exam image tools**: Exact KB compression, SSC/UPSC/NEET/JEE pages, signature pages, cm/mm/DPI converters
+- **Student calculators**: Attendance, SGPA, CGPA, CGPA to percentage, required marks
+- **API key testers**: OpenAI, Claude, Gemini, Groq, DeepSeek, Resend, SendGrid, Stripe, Twilio
+- **Small business QR/SEO tools**: Restaurant menu QR, Google Form QR, WiFi QR, UPI QR, OG preview checker
 
 ## Internal Linking Strategy
 
-Generic high-competition pages should link to exact-use pages:
+Generic high-competition pages link to exact-use pages:
 
-- Image Compressor -> 10KB, 20KB, 30KB, 50KB, signature, SSC, UPSC, cm/mm/DPI.
-- QR Code Generator -> restaurant menu, Google Form, WiFi, UPI, business card, wedding invitation.
-- Developer Tools -> API key tester hub and provider pages.
-- Calculators -> student calculator hub, attendance, SGPA, CGPA, required marks.
-- SEO Tools -> Open Graph preview checker and meta description length checker.
+- Image Compressor → 10KB, 20KB, 30KB, 50KB, signature, SSC, UPSC, cm/mm/DPI
+- QR Code Generator → restaurant menu, Google Form, WiFi, UPI, business card
+- Developer Tools → API key tester hub and provider pages
+- Calculators → student calculator hub, attendance, SGPA, CGPA
+- SEO Tools → OG preview checker, meta description length checker
 
-The reusable `SeoOpportunityContent` block renders related exact-use links from the central opportunity map.
+## Ad Placement Strategy
 
-## Monetization Strategy
+### Safe pages (display ads enabled):
+- Image tools, exam image tools, student calculators
+- Developer tools, API key testers, SEO tools
+- QR tools, small business tools, generators
 
-Safe pages:
-
-- Image tools
-- Exam image tools
-- Student calculators
-- Developer tools
-- API key testers
-- SEO tools
-- QR tools
-- Small business tools
-
-Risky/no-ads pages:
-
+### No-ads pages (AdSense policy risk):
 - YouTube/TikTok/Instagram/Facebook downloaders
-- MP4 to MP3
-- Universal video downloader
+- MP4 to MP3, universal video downloader
 - Video/social downloader variants
 
-Monetization placements:
+### Placement rules:
+- Display ads after hero section, after tool results, in content, and footer
+- No ads inside upload areas or next to download buttons
+- One small ad between intro and tool area (optional)
+- Related tools section: good placement
 
-- Safe display ads after hero, after tool, in content, and footer.
-- No ads inside upload areas or next to download buttons.
-- Pro upsells after useful content.
-- Services CTAs only on API, SEO, QR, and business pages.
-- Affiliate slots are config-driven by context: design, developer, SEO, hosting.
+## Monetization Channels
 
-## Pro, API, Sponsor Opportunities
+- **Display ads**: Google AdSense on safe pages
+- **Pro tier**: No ads, batch processing, larger files, saved history, API access
+- **API**: Image compression, PDF processing, QR generation, SEO metadata
+- **Services**: SEO fixes, landing pages, restaurant QR menus, speed optimization
+- **Sponsorships**: Tool placements, category sponsorships
 
-- Pro: no ads, batch image compression, batch PDF tools, larger files, saved history, API access.
-- API: image compression, PDF compression, QR generation, screenshots, SEO metadata, Open Graph preview.
-- Sponsors: small placements, category sponsorships, exclusive placements.
-- Services: SEO fixes, landing pages, restaurant QR menu websites, speed optimization, custom tools, API integrations.
+## Next Actions
 
-## Next 30-Day SEO Action Plan
-
-1. Verify build and indexability for all new opportunity URLs.
-2. Update parent generic pages with above-the-fold links to their exact-use clusters.
-3. Add screenshots or short visual examples to priority hubs.
-4. Add more exact pages only when they have unique intent and settings.
-5. Build Search Console tracking groups for exam, student, API, and QR clusters.
-6. Add conversion tracking on `/pro`, `/api`, `/advertise`, and `/services` CTAs.
-7. Audit duplicate titles/descriptions across the older 456 tool registry.
-8. Add real testimonials or usage examples only after they exist.
-9. Improve API tester implementations provider by provider.
-10. Publish 3 supporting guides: SSC photo requirements, attendance shortage examples, and API key safety.
+1. Verify indexability for all new opportunity URLs
+2. Update generic pages with above-the-fold links to exact-use clusters
+3. Build Search Console tracking groups for exam, student, API, and QR clusters
+4. Add conversion tracking on /pro, /api, /advertise, /services CTAs
+5. Audit duplicate titles/descriptions across the tool registry
+6. Publish supporting guides: SSC photo requirements, attendance shortage examples, API key safety

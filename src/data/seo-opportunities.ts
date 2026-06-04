@@ -2995,8 +2995,12 @@ export const seoOpportunities: SeoOpportunity[] = [
 	}
 ];
 
-export const seoOpportunityMap = new Map(seoOpportunities.map((item) => [item.slug, item]));
-export const seoOpportunityRouteMap = new Map(seoOpportunities.map((item) => [item.route, item]));
+export const seoOpportunityMap = new Map(
+	seoOpportunities.filter((item): item is SeoOpportunity => item != null).map((item) => [item.slug, item]),
+);
+export const seoOpportunityRouteMap = new Map(
+	seoOpportunities.filter((item): item is SeoOpportunity => item != null).map((item) => [item.route, item]),
+);
 
 export function getSeoOpportunityBySlug(slug: string) {
 	return seoOpportunityMap.get(slug);
