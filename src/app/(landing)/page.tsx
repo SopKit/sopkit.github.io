@@ -1,0 +1,150 @@
+import { PremiumHero } from "@/components/landing/PremiumHero";
+import { ToolDirectory } from "@/components/landing/ToolDirectory";
+import { TrustSection } from "@/components/landing/TrustSection";
+import { HomeSEOContent } from "@/components/landing/HomeSEOContent";
+import { HomeFAQ } from "@/components/landing/HomeFAQ";
+import toolsData from "@/constants/tools.json";
+import translateEngine from "@/lib/translate";
+import Link from "next/link";
+import { STATIC_ROUTES } from "@/lib/tools";
+import StructuredData from "@/components/shared/StructuredData";
+import { SITE_CONFIG } from "@/constants/config";
+import AdPlacement from "@/components/ads/AdPlacement";
+
+interface ToolCategory {
+	key: string;
+	iconKey: string;
+	name: string;
+	description: string;
+	tools: any[];
+}
+
+interface LandingPageProps {
+	searchParams: Promise<{ lang?: string }>;
+}
+
+import { generateMetadata as baseGenerateMetadata } from "@/lib/seo";
+
+export async function generateMetadata({ searchParams }: LandingPageProps): Promise<any> {
+	return baseGenerateMetadata({
+		title: "30tools - The Premium Free Online Toolkit (No Signup)",
+		description: `Access ${SITE_CONFIG.toolCountString} pro-grade online tools for Image, PDF, Video, Audio, and SEO. Secure, private, and 100% free with no registration required.`,
+		path: "/",
+	});
+}
+
+export default async function LandingPage({ searchParams }: LandingPageProps) {
+	const params = await searchParams;
+	const lang = params.lang || "en";
+
+	const isEnglish = lang === "en" || lang === "default";
+
+	const [heroTitle, heroSubtitle] = isEnglish 
+		? ["A Comprehensive Toolkit for Your Digital Life.", `Access ${SITE_CONFIG.toolCountString} professional tools for image, video, PDF, and developer workflows. No subscriptions. No signups. Just high-performance utilities.`]
+		: await Promise.all([
+			translateEngine.translate("The Unlimited Toolkit for Your Digital Life.", lang),
+			translateEngine.translate(
+				`Access ${SITE_CONFIG.toolCountString} professional tools for image, video, PDF, and developer workflows. No subscriptions. No signups. Just high-performance utilities.`,
+				lang,
+			),
+		]);
+
+	const priorityOrder = [
+		"exam-tools",
+		"calculators",
+		"image",
+		"developer",
+		"seo",
+		"pdf",
+		"text",
+		"generators",
+		"utilities",
+		"audio",
+		"video",
+		"youtube",
+		"downloaders",
+	];
+
+	const toolCategories = isEnglish
+		? priorityOrder.map((key) => {
+			const cat = (toolsData.categories as any)[key];
+			if (!cat) return null;
+			return {
+				key,
+				iconKey: cat.icon || key,
+				name: cat.name,
+				description: cat.description,
+				tools: cat.tools || [],
+			} as ToolCategory;
+		})
+		: await Promise.all(
+			priorityOrder.map(async (key) => {
+				const cat = (toolsData.categories as any)[key];
+				if (!cat) return null;
+
+				const [translatedName, translatedDesc] = await Promise.all([
+					translateEngine.translate(cat.name, lang),
+					translateEngine.translate(cat.description, lang),
+				]);
+
+				return {
+					key,
+					iconKey: cat.icon || key,
+					name: translatedName,
+					description: translatedDesc,
+					tools: cat.tools || [],
+				} as ToolCategory;
+			}),
+		);
+
+	const filteredCategories = toolCategories.filter((c): c is ToolCategory => c !== null);
+
+	return (
+		<main className="bg-background min-h-screen relative overflow-hidden">
+			<StructuredData isHome={true} />
+			{/* Global Decorative Gradients */}
+			<div className="absolute top-0 left-0 w-full h-[1000px] bg-gradient-cute opacity-20 -z-10" />
+
+			<div className="container mx-auto px-4 max-w-7xl">
+				{/* Hero Section */}
+				<PremiumHero title={heroTitle} />
+
+				<div className="py-8 max-w-4xl mx-auto">
+					<AdPlacement placement="after-hero" pageType="home" />
+				</div>
+
+				{/* Social Trust Marks */}
+				<TrustSection />
+
+				{/* Core Discovery Directory */}
+				<div className="py-24">
+					<ToolDirectory categories={filteredCategories} lang={lang} />
+				</div>
+
+				{/* High-Value SEO Content Section */}
+				<div className="py-12 max-w-4xl mx-auto">
+					<AdPlacement placement="in-content" pageType="home" />
+				</div>
+				<HomeSEOContent />
+
+				{/* Conversational SEO (FAQs) */}
+				<HomeFAQ />
+
+				{/* Final CTA */}
+				<section className="text-center">
+					<div className="max-w-2xl mx-auto px-4 py-16 rounded-none bg-foreground text-background relative overflow-hidden group">
+						<div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-10 transition-opacity" />
+						<h2 className="text-4xl md:text-5xl font-bold mb-6 text-background">Ready to work faster?</h2>
+						<p className="text-xl opacity-80 mb-10 text-background/90">Start using any of our {SITE_CONFIG.toolCountString} tools today. No accounts, no hassle.</p>
+						<Link 
+							href={STATIC_ROUTES.SEARCH} 
+							className="inline-flex h-14 items-center justify-center rounded-none bg-background text-foreground px-10 text-lg font-bold hover:scale-105 transition-transform"
+						>
+							Browse All Tools
+						</Link>
+					</div>
+				</section>
+			</div>
+		</main>
+	);
+}

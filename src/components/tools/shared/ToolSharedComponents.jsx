@@ -1,0 +1,154 @@
+import { Check, Download, Shield, Zap, Globe, Lock } from "lucide-react";
+import { SITE_CONFIG } from "@/constants/config";
+
+export const ToolTrust = () => {
+	return (
+		<section
+			aria-label="Trust indicators"
+			className="grid grid-cols-1 sm:grid-cols-3 gap-8 p-12 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 border border-primary/10"
+		>
+			<div className="text-center space-y-4 group">
+				<div className="w-16 h-16 rounded-2xl bg-primary/10 inline-flex items-center justify-center mx-auto text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 shadow-sm">
+					<Zap className="w-8 h-8" />
+				</div>
+				<h3 className="font-bold text-xl tracking-tight">
+					Instant Browser Processing
+				</h3>
+				<p className="text-sm text-muted-foreground leading-relaxed">
+					Results appear the moment you act — no server queues, no loading
+					spinners. All processing runs locally for zero-latency professional
+					output.
+				</p>
+			</div>
+			<div className="text-center space-y-4 group">
+				<div className="w-16 h-16 rounded-2xl bg-primary/10 inline-flex items-center justify-center mx-auto text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 shadow-sm">
+					<Lock className="w-8 h-8" />
+				</div>
+				<h3 className="font-bold text-xl tracking-tight">
+					Privacy-First by Design
+				</h3>
+				<p className="text-sm text-muted-foreground leading-relaxed">
+					Many tools process data locally in your browser. Some tools use server-side
+					APIs or proxy requests. Check each tool page and our Privacy Policy for
+					exact data flow details.
+				</p>
+			</div>
+			<div className="text-center space-y-4 group">
+				<div className="w-16 h-16 rounded-2xl bg-primary/10 inline-flex items-center justify-center mx-auto text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 shadow-sm">
+					<Globe className="w-8 h-8" />
+				</div>
+				<h3 className="font-bold text-xl tracking-tight">
+					Free Forever, No Signup
+				</h3>
+				<p className="text-sm text-muted-foreground leading-relaxed">
+					No registration required for core usage. {SITE_CONFIG.toolCountString} tools
+					are available across image, PDF, video, audio, text, SEO, and developer
+					workflows.
+				</p>
+			</div>
+		</section>
+	);
+};
+
+export const ToolFeatures = ({ features }) => {
+	if (!features || features.length === 0) return null;
+	return (
+		<section className="scroll-mt-24" aria-label="Features and benefits">
+			<h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
+				Key Features & Benefits
+			</h2>
+			<p className="text-muted-foreground mb-12 max-w-3xl">
+				Every feature is designed to deliver professional results with maximum
+				speed and minimum friction. No compromises on quality, privacy, or
+				accessibility.
+			</p>
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+				{features.map((feature, idx) => (
+					<div
+						key={idx}
+						className="flex items-start gap-5 p-6 bg-card border border-border/60 space-y-1 hover:shadow-xl hover:border-primary/30 transition-all duration-300 group"
+					>
+						<div className="mt-1 w-8 h-8 rounded-lg inline-flex items-center justify-center text-green-600 group-hover:bg-green-500 group-hover:text-white transition-colors">
+							<Check className="w-5 h-4" />
+						</div>
+						<span className="text-lg font-semibold tracking-tight">
+							{feature}
+						</span>
+					</div>
+				))}
+			</div>
+		</section>
+	);
+};
+
+export const ToolSteps = ({ steps, toolName }) => {
+	if (!steps || steps.length === 0) return null;
+	return (
+		<section
+			className="scroll-mt-24"
+			aria-label={`How to use ${toolName} step by step`}
+		>
+			<h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
+				How to Use {toolName} — Step by Step
+			</h2>
+			<p className="text-muted-foreground mb-12 max-w-3xl">
+				Follow these simple steps to get your result in under 30 seconds. No
+				signup, no install, no learning curve — just paste, process, and
+				download.
+			</p>
+			<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+				{steps.map((step, idx) => (
+					<div
+						key={idx}
+						className="relative p-8 bg-muted/30 shadow-lg transition-all duration-300"
+					>
+						<div className="absolute -top-5 -left-5 w-12 h-12 rounded-xl bg-primary text-primary-foreground inline-flex items-center justify-center font-black text-xl shadow-xl shadow-primary/20 transform -rotate-12 group-hover:rotate-0 transition-transform">
+							{idx + 1}
+						</div>
+						<h3 className="text-2xl font-bold mb-4 mt-2 tracking-tight">
+							{step.name}
+						</h3>
+						<p className="text-muted-foreground leading-relaxed">{step.text}</p>
+					</div>
+				))}
+			</div>
+		</section>
+	);
+};
+
+export const ToolFAQ = ({ faqs, toolName }) => {
+	if (!faqs || faqs.length === 0) return null;
+	return (
+		<section
+			className="scroll-mt-24"
+			aria-label={`Frequently asked questions about ${toolName}`}
+		>
+			<h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 flex items-center gap-4">
+				<div className="w-10 h-10 rounded-lg bg-primary/10 inline-flex items-center justify-center">
+					<Check className="w-6 h-6 text-primary" />
+				</div>
+				{toolName} — Frequently Asked Questions
+			</h2>
+			<p className="text-muted-foreground mb-12 max-w-3xl">
+				Got questions about {toolName}? Here are clear, honest answers to the
+				most common questions about pricing, privacy, compatibility, and
+				features.
+			</p>
+			<div className="space-y-6">
+				{faqs.map((faq, idx) => (
+					<div
+						key={idx}
+						className="p-10 bg-card border border-border/60 shadow-md transition-all duration-300"
+					>
+						<h3 className="text-2xl font-bold mb-6 tracking-tight">
+							{faq.question}
+						</h3>
+						<p className="text-muted-foreground leading-relaxed text-lg">
+							{faq.answer}
+						</p>
+					</div>
+				))}
+			</div>
+		</section>
+	);
+};

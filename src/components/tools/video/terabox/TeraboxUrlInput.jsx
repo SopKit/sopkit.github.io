@@ -1,0 +1,119 @@
+"use client";
+
+import { LinkIcon, LoaderIcon, RefreshCwIcon, WandIcon } from "lucide-react";
+import { useRef } from "react";
+import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+
+export default function TeraboxUrlInput({
+	teraboxUrl,
+	onUrlChange,
+	onLoadVideo,
+	isLoading,
+}) {
+	const debounceRef = useRef(null);
+
+	const sampleUrl = "https://teraboxshare.com/s/1Qx3vtX3rpRcI6poGaRe5wA";
+
+	const handleUrlChange = (value) => {
+		onUrlChange(value);
+
+		// Clear previous debounce
+		if (debounceRef.current) {
+			clearTimeout(debounceRef.current);
+		}
+
+		// Auto-load video when URL is pasted (support both teraboxapp.com and teraboxshare.com)
+		if (
+			value &&
+			(value.includes("teraboxapp.com") || value.includes("teraboxshare.com"))
+		) {
+			debounceRef.current = setTimeout(() => {
+				onLoadVideo(value);
+			}, 1000); // Wait 1 second after user stops typing
+		}
+	};
+
+	const loadSampleData = () => {
+		onUrlChange(sampleUrl);
+		onLoadVideo(sampleUrl);
+		toast.success("Sample video loaded!");
+	};
+
+	const clearForm = () => {
+		onUrlChange("");
+		toast.success("Form cleared!");
+	};
+
+	return (
+		<Card>
+			<CardHeader>
+				<CardTitle className="flex items-center">
+					<LinkIcon className="h-5 w-5 mr-2" />
+					Terabox URL
+				</CardTitle>
+				<CardDescription>
+					Paste your Terabox video link - video will load automatically
+				</CardDescription>
+			</CardHeader>
+			<CardContent className="space-y-4">
+				<div className="space-y-2">
+					<Label htmlFor="terabox-url">Video URL</Label>
+					<div className="relative">
+						<Input
+							id="terabox-url"
+							placeholder="https://teraboxapp.com/s/... or https://teraboxshare.com/s/..."
+							value={teraboxUrl}
+							onChange={(e) => handleUrlChange(e.target.value)}
+							disabled={isLoading}
+						/>
+						{isLoading && (
+							<div className="absolute right-3 top-1/2 transform -transpace-y-1/2">
+								<LoaderIcon className="h-4 w-4 animate-spin text-primary" />
+							</div>
+						)}
+					</div>
+				</div>
+
+				<div className="flex gap-2">
+					<Button
+						variant="outline"
+						size="sm"
+						onClick={loadSampleData}
+						disabled={isLoading}
+					>
+						<WandIcon className="h-4 w-4 mr-2" />
+						Load Sample
+					</Button>
+					<Button
+						variant="outline"
+						size="sm"
+						onClick={clearForm}
+						disabled={isLoading}
+					>
+						<RefreshCwIcon className="h-4 w-4 mr-2" />
+						Clear
+					</Button>
+				</div>
+
+				{teraboxUrl &&
+					!teraboxUrl.includes("teraboxapp.com") &&
+					!teraboxUrl.includes("teraboxshare.com") && (
+						<div className="text-sm text-primary dark:text-primary">
+							Please enter a valid Terabox URL (teraboxapp.com or
+							teraboxshare.com)
+						</div>
+					)}
+			</CardContent>
+		</Card>
+	);
+}
