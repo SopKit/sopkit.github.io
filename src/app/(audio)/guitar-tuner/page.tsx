@@ -4,23 +4,23 @@ import GuitarTunerTool from "@/components/tools/audio/GuitarTunerTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Guitar Tuner Online - No Signup | 30tools",
+	title: "Free Guitar Tuner Online - No Signup | SopKit",
 	description: "Process, edit, and convert audio files with our free Guitar Tuner online. High-quality output and private browser-based tools with no signup. Try it free now.",
-	keywords: "guitar tuner, free online tool, no signup, guitar-tuner, free guitar-tuner, Guitar Tuner online, audio tool, sound editor, music utility, audio converter, 30tools",
+	keywords: "guitar tuner, free online tool, no signup, guitar-tuner, free guitar-tuner, Guitar Tuner online, audio tool, sound editor, music utility, audio converter, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/guitar-tuner",
+		canonical: "https://sopkit.github.io/guitar-tuner",
 	},
 	openGraph: {
-		title: "Free Guitar Tuner Online - No Signup | 30tools",
+		title: "Free Guitar Tuner Online - No Signup | SopKit",
 		description: "Process, edit, and convert audio files with our free Guitar Tuner online. High-quality output and private browser-based tools with no signup. Try it free now.",
-		url: "https://30tools.com/guitar-tuner",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/guitar-tuner",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Guitar Tuner Online - No Signup | 30tools",
+		title: "Free Guitar Tuner Online - No Signup | SopKit",
 		description: "Process, edit, and convert audio files with our free Guitar Tuner online. High-quality output and private browser-based tools with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},

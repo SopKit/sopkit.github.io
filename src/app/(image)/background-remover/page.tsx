@@ -4,23 +4,23 @@ import BackgroundRemoverTool from "@/components/tools/image/BackgroundRemoverToo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Background Remover Online - No Signup | 30tools",
+	title: "Free Background Remover Online - No Signup | SopKit",
 	description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based...",
-	keywords: "background-remover, Background Remover, free background-remover, Background Remover online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "background-remover, Background Remover, free background-remover, Background Remover online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/background-remover",
+		canonical: "https://sopkit.github.io/background-remover",
 	},
 	openGraph: {
-		title: "Free Background Remover Online - No Signup | 30tools",
+		title: "Free Background Remover Online - No Signup | SopKit",
 		description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based...",
-		url: "https://30tools.com/background-remover",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/background-remover",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Background Remover Online - No Signup | 30tools",
+		title: "Free Background Remover Online - No Signup | SopKit",
 		description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based...",
 		images: ["/og-image.jpg"],
 	},

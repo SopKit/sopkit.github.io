@@ -4,23 +4,23 @@ import RedditDownloader from "@/components/tools/downloaders/RedditDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Reddit Media Saver Online - No Signup | 30tools",
+	title: "Free Reddit Media Saver Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Reddit Media Saver online. High-speed downloading with no signup needed. No signup required.",
-	keywords: "reddit media saver, free online tool, no signup, reddit-media-saver, free reddit-media-saver, Reddit Media Saver online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "reddit media saver, free online tool, no signup, reddit-media-saver, free reddit-media-saver, Reddit Media Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/reddit-media-saver",
+		canonical: "https://sopkit.github.io/reddit-media-saver",
 	},
 	openGraph: {
-		title: "Free Reddit Media Saver Online - No Signup | 30tools",
+		title: "Free Reddit Media Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Reddit Media Saver online. High-speed downloading with no signup needed. No signup required.",
-		url: "https://30tools.com/reddit-media-saver",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/reddit-media-saver",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Reddit Media Saver Online - No Signup | 30tools",
+		title: "Free Reddit Media Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Reddit Media Saver online. High-speed downloading with no signup needed. No signup required.",
 		images: ["/og-image.jpg"],
 	},

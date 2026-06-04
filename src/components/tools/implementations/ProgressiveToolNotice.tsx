@@ -27,7 +27,7 @@ export default function ProgressiveToolNotice({ toolId }: { toolId: string }) {
 				<span className="text-muted-foreground">·</span>
 				<a
 					className="text-primary underline-offset-4 hover:underline"
-					href="https://github.com/sh20raj/30tools/issues"
+					href="https://github.com/SopKit/sopkit.github.io/issues"
 					target="_blank"
 					rel="noreferrer"
 				>

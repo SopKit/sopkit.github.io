@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "30tools",
+	"name": "SopKit",
 	"main": ".open-next/worker.js",
 	"compatibility_date": "2024-12-01",
 	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],

@@ -13,10 +13,10 @@ const templates = {
   // Generate title variations
   generateTitle: (toolName, category) => {
     const patterns = [
-      `Free ${toolName} Online - No Signup | 30tools`,
-      `${toolName} - Free Online Tool | 30tools`,
-      `Online ${toolName} - 100% Free | 30tools`,
-      `${toolName} Tool - No Registration Required | 30tools`,
+      `Free ${toolName} Online - No Signup | SopKit`,
+      `${toolName} - Free Online Tool | SopKit`,
+      `Online ${toolName} - 100% Free | SopKit`,
+      `${toolName} Tool - No Registration Required | SopKit`,
     ];
     return patterns[0]; // Use first pattern as default
   },
@@ -109,7 +109,7 @@ const templates = {
     const baseSteps = [
       {
         title: `Open ${toolName}`,
-        description: `Navigate to the ${toolName} page on 30tools. No signup or download required - the tool loads instantly in your browser.`
+        description: `Navigate to the ${toolName} page on SopKit. No signup or download required - the tool loads instantly in your browser.`
       },
       {
         title: 'Upload Your File',

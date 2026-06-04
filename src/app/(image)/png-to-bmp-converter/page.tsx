@@ -4,23 +4,23 @@ import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free PNG to BMP Converter Online - No Signup | 30tools",
+	title: "Free PNG to BMP Converter Online - No Signup | SopKit",
 	description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast...",
-	keywords: "png to bmp converter, free online tool, no signup, png-to-bmp-converter, free png-to-bmp-converter, Png To Bmp Converter online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "png to bmp converter, free online tool, no signup, png-to-bmp-converter, free png-to-bmp-converter, Png To Bmp Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/png-to-bmp-converter",
+		canonical: "https://sopkit.github.io/png-to-bmp-converter",
 	},
 	openGraph: {
-		title: "Free PNG to BMP Converter Online - No Signup | 30tools",
+		title: "Free PNG to BMP Converter Online - No Signup | SopKit",
 		description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast...",
-		url: "https://30tools.com/png-to-bmp-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/png-to-bmp-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PNG to BMP Converter Online - No Signup | 30tools",
+		title: "Free PNG to BMP Converter Online - No Signup | SopKit",
 		description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast...",
 		images: ["/og-image.jpg"],
 	},

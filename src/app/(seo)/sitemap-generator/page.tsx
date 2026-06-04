@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Advanced Sitemap Generator Online - No Signup | 30tools",
+	title: "Free Advanced Sitemap Generator Online - No Signup | SopKit",
 	description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Sitemap Generator online. Optimize search presence with no signup.",
-	keywords: "sitemap generator, xml sitemap, create sitemap, seo sitemap, website crawler, free tool, 30tools, sitemap-generator, free sitemap-generator, sitemap generator online, seo tool, website analyzer",
+	keywords: "sitemap generator, xml sitemap, create sitemap, seo sitemap, website crawler, free tool, SopKit, sitemap-generator, free sitemap-generator, sitemap generator online, seo tool, website analyzer",
 	alternates: {
-		canonical: "https://30tools.com/sitemap-generator",
+		canonical: "https://sopkit.github.io/sitemap-generator",
 	},
 	openGraph: {
-		title: "Free Advanced Sitemap Generator Online - No Signup | 30tools",
+		title: "Free Advanced Sitemap Generator Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Sitemap Generator online. Optimize search presence with no signup.",
-		url: "https://30tools.com/sitemap-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/sitemap-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Advanced Sitemap Generator Online - No Signup | 30tools",
+		title: "Free Advanced Sitemap Generator Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Sitemap Generator online. Optimize search presence with no signup.",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import HindiTypingTool from "@/components/tools/text/HindiTypingTool";
 
 export const metadata = {
-	title: "Free Hindi Typing Tool Online - No Signup | 30tools",
+	title: "Free Hindi Typing Tool Online - No Signup | SopKit",
 	description: "Format, clean, sort, and analyze text files instantly with our free Hindi Typing Tool online. Fast and private browser utility with no signup. Try it free now.",
 	keywords: "hindi-typing-tool, Hindi Typing Tool",
 	alternates: {
-		canonical: "https://30tools.com/hindi-typing-tool",
+		canonical: "https://sopkit.github.io/hindi-typing-tool",
 	},
 	openGraph: {
-		title: "Free Hindi Typing Tool Online - No Signup | 30tools",
+		title: "Free Hindi Typing Tool Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Hindi Typing Tool online. Fast and private browser utility with no signup. Try it free now.",
-		url: "https://30tools.com/hindi-typing-tool",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/hindi-typing-tool",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Hindi Typing Tool Online - No Signup | 30tools",
+		title: "Free Hindi Typing Tool Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Hindi Typing Tool online. Fast and private browser utility with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},

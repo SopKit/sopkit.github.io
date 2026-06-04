@@ -4,23 +4,23 @@ import FacebookDownloader from "@/components/tools/downloaders/FacebookDownloade
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Fb Video Saver Online - No Signup | 30tools",
+	title: "Free Fb Video Saver Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Fb Video Saver online. High-speed downloading with no signup needed. No registration needed.",
-	keywords: "fb video saver, facebook video saver, save facebook videos, fb video downloader, free tool, 30tools, fb-video-saver, free fb-video-saver, fb video saver online, online downloader, free media saver, video downloader",
+	keywords: "fb video saver, facebook video saver, save facebook videos, fb video downloader, free tool, SopKit, fb-video-saver, free fb-video-saver, fb video saver online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://30tools.com/fb-video-saver",
+		canonical: "https://sopkit.github.io/fb-video-saver",
 	},
 	openGraph: {
-		title: "Free Fb Video Saver Online - No Signup | 30tools",
+		title: "Free Fb Video Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Fb Video Saver online. High-speed downloading with no signup needed. No registration needed.",
-		url: "https://30tools.com/fb-video-saver",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/fb-video-saver",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Fb Video Saver Online - No Signup | 30tools",
+		title: "Free Fb Video Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Fb Video Saver online. High-speed downloading with no signup needed. No registration needed.",
 		images: ["/og-image.jpg"],
 	},

@@ -48,7 +48,7 @@ ${opportunity.intro}
 ${opportunity.intent}
 
 ## Parent tool
-This page uses the same core workflow as ${parentTool?.name || "the related 30tools utility"}, with settings and guidance focused on "${opportunity.keyword}".
+This page uses the same core workflow as ${parentTool?.name || "the related SopKit utility"}, with settings and guidance focused on "${opportunity.keyword}".
 `,
     };
 }
@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const opportunity = getSeoOpportunityBySlug(slug);
 
     if (opportunity?.standalone) {
-        const canonicalUrl = `https://30tools.com${opportunity.route}`;
+        const canonicalUrl = `https://sopkit.github.io${opportunity.route}`;
 
         return {
             title: opportunity.title,
@@ -82,7 +82,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: opportunity.title,
                 description: opportunity.metaDescription,
                 url: canonicalUrl,
-                siteName: "30tools",
+                siteName: "SopKit",
                 images: [{ url: "/og-image.jpg" }],
                 type: "website",
             },
@@ -103,8 +103,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const parentTool = getToolById(intent.parentToolId);
     if (!parentTool) return {};
 
-    const canonicalUrl = `https://30tools.com/${slug}`;
-    const brandedTitle = `${intent.title} | 30tools`;
+    const canonicalUrl = `https://sopkit.github.io/${slug}`;
+    const brandedTitle = `${intent.title} | SopKit`;
 
     return {
         title: brandedTitle,
@@ -117,7 +117,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             title: brandedTitle,
             description: intent.description,
             url: canonicalUrl,
-            siteName: "30tools",
+            siteName: "SopKit",
             images: [{ url: "/og-image.jpg" }],
             type: "website",
         },

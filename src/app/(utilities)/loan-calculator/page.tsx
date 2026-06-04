@@ -4,23 +4,23 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Loan Calculator Online - No Signup | 30tools",
+	title: "Free Loan Calculator Online - No Signup | SopKit",
 	description: "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "loan calculator, free online tool, no signup, loan-calculator, free loan-calculator, Loan Calculator online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "loan calculator, free online tool, no signup, loan-calculator, free loan-calculator, Loan Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/loan-calculator",
+		canonical: "https://sopkit.github.io/loan-calculator",
 	},
 	openGraph: {
-		title: "Free Loan Calculator Online - No Signup | 30tools",
+		title: "Free Loan Calculator Online - No Signup | SopKit",
 		description: "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/loan-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/loan-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Loan Calculator Online - No Signup | 30tools",
+		title: "Free Loan Calculator Online - No Signup | SopKit",
 		description: "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

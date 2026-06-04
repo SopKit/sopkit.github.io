@@ -4,23 +4,23 @@ import OdnoklassnikiDownloader from "@/components/tools/downloaders/Odnoklassnik
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Odnoklassniki Video Downloader Online - No Signup | 30tools",
+	title: "Free Odnoklassniki Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Odnoklassniki Video Downloader online. High-speed downloading with no signup needed.",
-	keywords: "odnoklassniki video downloader, free online tool, no signup, odnoklassniki-video-downloader, free odnoklassniki-video-downloader, Odnoklassniki Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "odnoklassniki video downloader, free online tool, no signup, odnoklassniki-video-downloader, free odnoklassniki-video-downloader, Odnoklassniki Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/odnoklassniki-video-downloader",
+		canonical: "https://sopkit.github.io/odnoklassniki-video-downloader",
 	},
 	openGraph: {
-		title: "Free Odnoklassniki Video Downloader Online - No Signup | 30tools",
+		title: "Free Odnoklassniki Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Odnoklassniki Video Downloader online. High-speed downloading with no signup needed.",
-		url: "https://30tools.com/odnoklassniki-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/odnoklassniki-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Odnoklassniki Video Downloader Online - No Signup | 30tools",
+		title: "Free Odnoklassniki Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Odnoklassniki Video Downloader online. High-speed downloading with no signup needed.",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free CPM Calculator Online - No Signup | 30tools",
+	title: "Free CPM Calculator Online - No Signup | SopKit",
 	description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and...",
-	keywords: "cpm calculator, free online tool, no signup, cpm-calculator, free cpm-calculator, Cpm Calculator online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "cpm calculator, free online tool, no signup, cpm-calculator, free cpm-calculator, Cpm Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/cpm-calculator",
+		canonical: "https://sopkit.github.io/cpm-calculator",
 	},
 	openGraph: {
-		title: "Free CPM Calculator Online - No Signup | 30tools",
+		title: "Free CPM Calculator Online - No Signup | SopKit",
 		description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and...",
-		url: "https://30tools.com/cpm-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/cpm-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free CPM Calculator Online - No Signup | 30tools",
+		title: "Free CPM Calculator Online - No Signup | SopKit",
 		description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and...",
 		images: ["/og-image.jpg"],
 	},

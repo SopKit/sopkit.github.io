@@ -137,10 +137,10 @@ export async function GET(request) {
 function generateSearchSEOTitle(query, category, resultCount) {
 	if (!query) {
 		return category === "all"
-			? "Free Online Tools - 30tools Toolkit"
-			: `Free ${category.charAt(0).toUpperCase() + category.slice(1)} Tools Online | 30tools`;
+			? "Free Online Tools - SopKit Toolkit"
+			: `Free ${category.charAt(0).toUpperCase() + category.slice(1)} Tools Online | SopKit`;
 	}
-	return `${query.charAt(0).toUpperCase() + query.slice(1)} Tools (${resultCount} found) | 30tools`;
+	return `${query.charAt(0).toUpperCase() + query.slice(1)} Tools (${resultCount} found) | SopKit`;
 }
 
 function generateSearchSEODescription(query, category, resultCount) {

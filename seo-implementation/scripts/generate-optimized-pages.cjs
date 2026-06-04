@@ -35,9 +35,9 @@ function generatePageTemplate(tool) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://30tools.com" },
-      { "@type": "ListItem", position: 2, name: `${tool.categoryKey} Tools`, item: `https://30tools.com/${tool.categoryKey}-tools` },
-      { "@type": "ListItem", position: 3, name: tool.name, item: `https://30tools.com${tool.route}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://sopkit.github.io" },
+      { "@type": "ListItem", position: 2, name: `${tool.categoryKey} Tools`, item: `https://sopkit.github.io/${tool.categoryKey}-tools` },
+      { "@type": "ListItem", position: 3, name: tool.name, item: `https://sopkit.github.io${tool.route}` },
     ]
   };
   
@@ -76,7 +76,7 @@ function generatePageTemplate(tool) {
     "@type": "SoftwareApplication",
     name: tool.name,
     description: tool.description,
-    url: `https://30tools.com${tool.route}`,
+    url: `https://sopkit.github.io${tool.route}`,
     applicationCategory: "UtilitiesApplication",
     operatingSystem: "Any",
     offers: {
@@ -92,23 +92,23 @@ import { getToolByRoute } from "@/lib/tools";
 import ${componentName} from "${componentPath}";
 
 export const metadata = {
-\ttitle: "Free ${tool.name} Online - No Signup | 30tools",
+\ttitle: "Free ${tool.name} Online - No Signup | SopKit",
 \tdescription: "${tool.description.slice(0, 155)}...",
-\tkeywords: "${tool.name.toLowerCase()}, free online tool, no signup, ${tool.categoryKey} tool, 30tools",
+\tkeywords: "${tool.name.toLowerCase()}, free online tool, no signup, ${tool.categoryKey} tool, SopKit",
 \talternates: {
-\t\tcanonical: "https://30tools.com${tool.route}",
+\t\tcanonical: "https://sopkit.github.io${tool.route}",
 \t},
 \topenGraph: {
-\t\ttitle: "Free ${tool.name} Online - No Signup | 30tools",
+\t\ttitle: "Free ${tool.name} Online - No Signup | SopKit",
 \t\tdescription: "${tool.description.slice(0, 155)}...",
-\t\turl: "https://30tools.com${tool.route}",
-\t\tsiteName: "30tools",
+\t\turl: "https://sopkit.github.io${tool.route}",
+\t\tsiteName: "SopKit",
 \t\timages: [{ url: "/og-image.jpg" }],
 \t\ttype: "website",
 \t},
 \ttwitter: {
 \t\tcard: "summary_large_image",
-\t\ttitle: "Free ${tool.name} Online - No Signup | 30tools",
+\t\ttitle: "Free ${tool.name} Online - No Signup | SopKit",
 \t\tdescription: "${tool.description.slice(0, 155)}...",
 \t\timages: ["/og-image.jpg"],
 \t},

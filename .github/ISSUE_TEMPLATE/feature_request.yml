@@ -1,5 +1,5 @@
 name: Feature Request / New Tool Proposal
-description: Suggest an idea for 30tools or a new tool to add
+description: Suggest an idea for SopKit or a new tool to add
 labels: ["enhancement", "new tool"]
 body:
   - type: textarea

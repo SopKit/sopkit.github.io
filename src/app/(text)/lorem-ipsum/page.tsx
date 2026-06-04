@@ -4,23 +4,23 @@ import LoremIpsumGeneratorTool from "@/components/tools/generators/LoremIpsumGen
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Lorem Ipsum Generator Online - No Signup | 30tools",
+	title: "Free Lorem Ipsum Generator Online - No Signup | SopKit",
 	description: "Format, clean, sort, and analyze text files instantly with our free Lorem Ipsum Generator online. Fast and private browser utility with no signup. Easy to use.",
-	keywords: "lorem ipsum generator, free online tool, no signup, lorem-ipsum, Lorem Ipsum, free lorem-ipsum, Lorem Ipsum online, text tool, text editor online, content formatter, writing utility, 30tools",
+	keywords: "lorem ipsum generator, free online tool, no signup, lorem-ipsum, Lorem Ipsum, free lorem-ipsum, Lorem Ipsum online, text tool, text editor online, content formatter, writing utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/lorem-ipsum",
+		canonical: "https://sopkit.github.io/lorem-ipsum",
 	},
 	openGraph: {
-		title: "Free Lorem Ipsum Generator Online - No Signup | 30tools",
+		title: "Free Lorem Ipsum Generator Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Lorem Ipsum Generator online. Fast and private browser utility with no signup. Easy to use.",
-		url: "https://30tools.com/lorem-ipsum",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/lorem-ipsum",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Lorem Ipsum Generator Online - No Signup | 30tools",
+		title: "Free Lorem Ipsum Generator Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Lorem Ipsum Generator online. Fast and private browser utility with no signup. Easy to use.",
 		images: ["/og-image.jpg"],
 	},

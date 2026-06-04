@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Region Restriction Checker Online - No Signup | 30tools",
+	title: "Free YouTube Region Restriction Checker Online - No Signup | SopKit",
 	description: "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your...",
-	keywords: "youtube region restriction checker, free online tool, no signup, youtube-region-restriction-checker, free youtube-region-restriction-checker, Youtube Region Restriction Checker online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube region restriction checker, free online tool, no signup, youtube-region-restriction-checker, free youtube-region-restriction-checker, Youtube Region Restriction Checker online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-region-restriction-checker",
+		canonical: "https://sopkit.github.io/youtube-region-restriction-checker",
 	},
 	openGraph: {
-		title: "Free YouTube Region Restriction Checker Online - No Signup | 30tools",
+		title: "Free YouTube Region Restriction Checker Online - No Signup | SopKit",
 		description: "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your...",
-		url: "https://30tools.com/youtube-region-restriction-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-region-restriction-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Region Restriction Checker Online - No Signup | 30tools",
+		title: "Free YouTube Region Restriction Checker Online - No Signup | SopKit",
 		description: "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your...",
 		images: ["/og-image.jpg"],
 	},

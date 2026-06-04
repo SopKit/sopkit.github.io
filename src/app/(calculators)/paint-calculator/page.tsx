@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import ConstructionCalculator from "@/components/tools/calculators/ConstructionCalculator";
 
 export const metadata = {
-	title: "Free Paint Calculator Online - No Signup | 30tools",
+	title: "Free Paint Calculator Online - No Signup | SopKit",
 	description: "Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.",
-	keywords: "paint-calculator, Paint Calculator, how much paint do I need, wall paint calculator, paint room estimator, 30tools",
+	keywords: "paint-calculator, Paint Calculator, how much paint do I need, wall paint calculator, paint room estimator, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/paint-calculator",
+		canonical: "https://sopkit.github.io/paint-calculator",
 	},
 	openGraph: {
-		title: "Free Paint Calculator Online - No Signup | 30tools",
+		title: "Free Paint Calculator Online - No Signup | SopKit",
 		description: "Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.",
-		url: "https://30tools.com/paint-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/paint-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Paint Calculator Online - No Signup | 30tools",
+		title: "Free Paint Calculator Online - No Signup | SopKit",
 		description: "Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.",
 		images: ["/og-image.jpg"],
 	},

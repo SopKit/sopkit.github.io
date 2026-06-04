@@ -4,23 +4,23 @@ import UrlCodecTool from "@/components/tools/built-ins/UrlCodecTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free URL Encode Online - No Signup | 30tools",
+	title: "Free URL Encode Online - No Signup | SopKit",
 	description: "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "url encode, free online tool, no signup, url-encode, free url-encode, Url Encode online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "url encode, free online tool, no signup, url-encode, free url-encode, Url Encode online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/url-encode",
+		canonical: "https://sopkit.github.io/url-encode",
 	},
 	openGraph: {
-		title: "Free URL Encode Online - No Signup | 30tools",
+		title: "Free URL Encode Online - No Signup | SopKit",
 		description: "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/url-encode",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/url-encode",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free URL Encode Online - No Signup | 30tools",
+		title: "Free URL Encode Online - No Signup | SopKit",
 		description: "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

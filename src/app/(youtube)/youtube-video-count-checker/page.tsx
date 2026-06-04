@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Video Count Checker Online - No Signup | 30tools",
+	title: "Free YouTube Video Count Checker Online - No Signup | SopKit",
 	description: "Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel...",
-	keywords: "youtube video count checker, free online tool, no signup, youtube-video-count-checker, free youtube-video-count-checker, Youtube Video Count Checker online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube video count checker, free online tool, no signup, youtube-video-count-checker, free youtube-video-count-checker, Youtube Video Count Checker online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-video-count-checker",
+		canonical: "https://sopkit.github.io/youtube-video-count-checker",
 	},
 	openGraph: {
-		title: "Free YouTube Video Count Checker Online - No Signup | 30tools",
+		title: "Free YouTube Video Count Checker Online - No Signup | SopKit",
 		description: "Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel...",
-		url: "https://30tools.com/youtube-video-count-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-video-count-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Video Count Checker Online - No Signup | 30tools",
+		title: "Free YouTube Video Count Checker Online - No Signup | SopKit",
 		description: "Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel...",
 		images: ["/og-image.jpg"],
 	},

@@ -23,7 +23,7 @@ import { generateMetadata as baseGenerateMetadata } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<any> {
 	return baseGenerateMetadata({
-		title: "30tools - The Premium Free Online Toolkit (No Signup)",
+		title: "SopKit - The Premium Free Online Toolkit (No Signup)",
 		description: `Access ${SITE_CONFIG.toolCountString} pro-grade online tools for Image, PDF, Video, Audio, and SEO. Secure, private, and 100% free with no registration required.`,
 		path: "/",
 	});

@@ -4,23 +4,23 @@ import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free PNG to GIF Converter Online - No Signup | 30tools",
+	title: "Free PNG to GIF Converter Online - No Signup | SopKit",
 	description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file...",
-	keywords: "png to gif converter, free online tool, no signup, png-to-gif-converter, free png-to-gif-converter, Png To Gif Converter online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "png to gif converter, free online tool, no signup, png-to-gif-converter, free png-to-gif-converter, Png To Gif Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/png-to-gif-converter",
+		canonical: "https://sopkit.github.io/png-to-gif-converter",
 	},
 	openGraph: {
-		title: "Free PNG to GIF Converter Online - No Signup | 30tools",
+		title: "Free PNG to GIF Converter Online - No Signup | SopKit",
 		description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file...",
-		url: "https://30tools.com/png-to-gif-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/png-to-gif-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PNG to GIF Converter Online - No Signup | 30tools",
+		title: "Free PNG to GIF Converter Online - No Signup | SopKit",
 		description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file...",
 		images: ["/og-image.jpg"],
 	},

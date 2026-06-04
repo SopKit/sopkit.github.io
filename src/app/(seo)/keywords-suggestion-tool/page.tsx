@@ -4,23 +4,23 @@ import KeywordTool from "@/components/tools/seo/KeywordTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Keywords Suggestion Tool Online - No Signup | 30tools",
+	title: "Free Keywords Suggestion Tool Online - No Signup | SopKit",
 	description: "Audit websites, analyze search rankings, and generate schemas with our free Keywords Suggestion Tool online. Optimize search presence with no signup. 100% free.",
-	keywords: "keywords suggestion tool, free online tool, no signup, keywords-suggestion-tool, free keywords-suggestion-tool, Keywords Suggestion Tool online, SEO tool, search optimizer, website analyzer, free SEO utility, 30tools",
+	keywords: "keywords suggestion tool, free online tool, no signup, keywords-suggestion-tool, free keywords-suggestion-tool, Keywords Suggestion Tool online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/keywords-suggestion-tool",
+		canonical: "https://sopkit.github.io/keywords-suggestion-tool",
 	},
 	openGraph: {
-		title: "Free Keywords Suggestion Tool Online - No Signup | 30tools",
+		title: "Free Keywords Suggestion Tool Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Keywords Suggestion Tool online. Optimize search presence with no signup. 100% free.",
-		url: "https://30tools.com/keywords-suggestion-tool",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/keywords-suggestion-tool",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Keywords Suggestion Tool Online - No Signup | 30tools",
+		title: "Free Keywords Suggestion Tool Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Keywords Suggestion Tool online. Optimize search presence with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},

@@ -1,21 +1,21 @@
 <div align="center">
 
-# 🛠️ 30tools: The Ultimate Utility Engine
+# 🛠️ SopKit: The Ultimate Utility Engine
 
 ### **Free Online Tools • Privacy-First • No Signup Required**
 
-[![GitHub stars](https://img.shields.io/github/stars/sh20raj/30tools?style=for-the-badge&color=ffd700)](https://github.com/sh20raj/30tools/stargazers)
-[![GitHub license](https://img.shields.io/github/license/sh20raj/30tools?style=for-the-badge&color=2ecc71)](https://github.com/sh20raj/30tools/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/sh20raj/30tools?style=for-the-badge&color=e74c3c)](https://github.com/sh20raj/30tools/issues)
+[![GitHub stars](https://img.shields.io/github/stars/SopKit/sopkit.github.io?style=for-the-badge&color=ffd700)](https://github.com/SopKit/sopkit.github.io/stargazers)
+[![GitHub license](https://img.shields.io/github/license/SopKit/sopkit.github.io?style=for-the-badge&color=2ecc71)](https://github.com/SopKit/sopkit.github.io/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/SopKit/sopkit.github.io?style=for-the-badge&color=e74c3c)](https://github.com/SopKit/sopkit.github.io/issues)
 [![Deploy to Cloudflare](https://img.shields.io/badge/Deploy%20to-Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/:account/pages/new)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://cloudflare.com)
 
-**[30tools.com](https://30tools.com)** is a high-performance, developer-first tool ecosystem designed to dominate search results and provide professional utility at scale.
+**[sopkit.github.io](https://sopkit.github.io)** is a high-performance, developer-first tool ecosystem designed to dominate search results and provide professional utility at scale.
 
-[Explore all tools →](https://30tools.com/search)
+[Explore all tools →](https://sopkit.github.io/search)
 
-![30tools](https://30tools.com/og-image.jpg)
+![SopKit](https://sopkit.github.io/og-image.jpg)
 
 ---
 
@@ -23,20 +23,20 @@
 
 ## 💎 Cinematic Design. Massive Scale.
 
-30tools isn't just a repository of scripts; it's a **Utility Operating System**. Built with Next.js 16 and a premium Glassmorphism design system, it delivers a high-fidelity experience that converts traffic into users.
+SopKit isn't just a repository of scripts; it's a **Utility Operating System**. Built with Next.js 16 and a premium Glassmorphism design system, it delivers a high-fidelity experience that converts traffic into users.
 
 - **Free Online Tools**: A growing collection of utility tools for image processing, PDF workflows, social media, and more.
 - **Privacy-First**: Most tool logic runs directly in your browser.
 - **✨ Premium UI/UX**: Cinematic workspaces featuring backdrop-blur aesthetics, ambient glows, and high-fidelity micro-interactions.
 - **🛡️ Privacy First**: 95% of tool logic runs directly in your browser. No files are uploaded to our servers unless absolutely necessary.
 - **⚡ Performance Powered by Bun**: Optimized for ultra-fast build times and low-latency deployments on Cloudflare Workers/Pages.
-- **🪄 YouTube Magic Redirect**: Replace `youtube.com` with `30tools.com` in any video URL to open it instantly in our downloader (e.g., `youtube.com/watch?v=...` → `30tools.com/watch?v=...`).
+- **🪄 YouTube Magic Redirect**: Replace `youtube.com` with `sopkit.github.io` in any video URL to open it instantly in our downloader (e.g., `youtube.com/watch?v=...` → `sopkit.github.io/watch?v=...`).
 
 ---
 
 ## 🏗️ Architecture
 
-30tools uses a **Data-Driven Architecture** where `tools.json` acts as the single source of truth for the entire platform.
+SopKit uses a **Data-Driven Architecture** where `tools.json` acts as the single source of truth for the entire platform.
 
 ```mermaid
 graph TD
@@ -64,8 +64,8 @@ graph TD
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/sh20raj/30tools.git
-cd 30tools
+git clone https://github.com/SopKit/sopkit.github.io.git
+cd SopKit
 bun install
 ```
 
@@ -101,9 +101,9 @@ bun run deploy
 
 ## 🤝 Open Source & Contributions
 
-30tools is built by the community, for the community. We believe in high-quality, free software that respects user privacy.
+SopKit is built by the community, for the community. We believe in high-quality, free software that respects user privacy.
 
-- **Found a bug?** Open an [Issue](https://github.com/sh20raj/30tools/issues).
+- **Found a bug?** Open an [Issue](https://github.com/SopKit/sopkit.github.io/issues).
 - **Have a new tool idea?** Check out [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md).
 - **Want to help scale?** See [.github/OPEN_SOURCE.md](.github/OPEN_SOURCE.md) for our long-term vision.
 
@@ -122,7 +122,7 @@ For deeper dives into the architecture and design:
 
 If you find this project valuable, please give it a star! It helps us grow the ecosystem and add more tools for everyone.
 
-[![Stargazers repo roster for @sh20raj/30tools](https://reporoster.com/stars/sh20raj/30tools)](https://github.com/sh20raj/30tools/stargazers)
+[![Stargazers repo roster for @SopKit/sopkit.github.io](https://reporoster.com/stars/SopKit/sopkit.github.io)](https://github.com/SopKit/sopkit.github.io/stargazers)
 
 <br/>
 

@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Server Status Checker Online - No Signup | 30tools",
+	title: "Free Server Status Checker Online - No Signup | SopKit",
 	description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "server status checker, free online tool, no signup, server-status-checker, free server-status-checker, Server Status Checker online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "server status checker, free online tool, no signup, server-status-checker, free server-status-checker, Server Status Checker online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/server-status-checker",
+		canonical: "https://sopkit.github.io/server-status-checker",
 	},
 	openGraph: {
-		title: "Free Server Status Checker Online - No Signup | 30tools",
+		title: "Free Server Status Checker Online - No Signup | SopKit",
 		description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/server-status-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/server-status-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Server Status Checker Online - No Signup | 30tools",
+		title: "Free Server Status Checker Online - No Signup | SopKit",
 		description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

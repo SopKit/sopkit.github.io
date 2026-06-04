@@ -128,7 +128,7 @@ Below we list **100+ tool ideas** by cluster (Table 1), then highlight the **20 
 |  | Email Bounce/Error Codes | `email-bounce-fix` | *email bounce error fix* | 
 |  | Gmail OTP/2FA Delay Fix | `gmail-otp-fix` | *gmail otp fix* | 
 
-*Table 1.* **100+ free tool ideas** for 30tools.com, grouped by cluster. Each tool will have its own page (slug) with SEO-friendly content. Clusters are chosen for demand in India (e.g. exam forms, education, local languages) and relatively low competition. 
+*Table 1.* **100+ free tool ideas** for sopkit.github.io, grouped by cluster. Each tool will have its own page (slug) with SEO-friendly content. Clusters are chosen for demand in India (e.g. exam forms, education, local languages) and relatively low competition. 
 
 ## 2. Top 20 Priority Tools (SEO & Revenue)  
 
@@ -172,7 +172,7 @@ We will roll out the tools in phases, ~3–6 pages per day, with QA and SEO upda
 
 ```mermaid
 gantt
-    title 90-Day 30tools Launch Roadmap
+    title 90-Day SopKit Launch Roadmap
     dateFormat  YYYY-MM-DD
     axisFormat  %d-%b
 
@@ -213,14 +213,14 @@ gantt
 
 ## 4. Sample `tools.json` Entries  
 
-Below are example JSON entries (for `src/constants/tools.json`) for five tools. Each object includes slug, name, description/SEO metadata, and any extra keywords. (In practice you’d add more fields as per 30tools schema, like `icon`, `category`, etc.)
+Below are example JSON entries (for `src/constants/tools.json`) for five tools. Each object includes slug, name, description/SEO metadata, and any extra keywords. (In practice you’d add more fields as per SopKit schema, like `icon`, `category`, etc.)
 
 ```json
 [
   {
     "slug": "ssc-photo-resizer",
     "name": "SSC Photo Resizer",
-    "title": "SSC Photo Resizer Online – Resize SSC Form Photo to 3.5x4.5cm | 30tools",
+    "title": "SSC Photo Resizer Online – Resize SSC Form Photo to 3.5x4.5cm | SopKit",
     "description": "Resize and compress your SSC exam form photo (3.5x4.5 cm, 200 DPI, <100KB) instantly in-browser. Set exact dimensions and KB target, preview & download.",
     "keywords": ["ssc photo resizer", "resize photo for ssc form", "ssc image size", "compress ssc photo", "exam form photo resize"],
     "extraSlugs": ["ssc-exam-photo-resizer", "ssc-image-compressor"]
@@ -228,7 +228,7 @@ Below are example JSON entries (for `src/constants/tools.json`) for five tools. 
   {
     "slug": "pan-card-photo-resizer",
     "name": "PAN Card Photo Resizer",
-    "title": "PAN Card Photo Resizer – 3.5x2.5cm Photo for PAN Card (≤50KB) | 30tools",
+    "title": "PAN Card Photo Resizer – 3.5x2.5cm Photo for PAN Card (≤50KB) | SopKit",
     "description": "Prepare your PAN card photo with exact dimensions 3.5x2.5 cm at 200 DPI and under 50KB. Choose NSDL/UTI format, compress, and download instantly.",
     "keywords": ["pan card photo resizer", "resize pan photo 3.5x2.5cm", "pan card image compressor", "nsdl pan photo tool", "uti pan photo size"],
     "extraSlugs": ["nsdl-pan-photo-resizer", "pan-card-image-resize"]
@@ -236,7 +236,7 @@ Below are example JSON entries (for `src/constants/tools.json`) for five tools. 
   {
     "slug": "compress-image-to-20kb",
     "name": "Compress Image to 20KB",
-    "title": "Compress Image to 20KB Online – JPG/PNG Optimizer | 30tools",
+    "title": "Compress Image to 20KB Online – JPG/PNG Optimizer | SopKit",
     "description": "Reduce any JPG/PNG image to exactly 20KB with minimal quality loss, right in your browser. Drag & drop to compress and download in seconds.",
     "keywords": ["compress image to 20kb", "reduce jpg size to 20kb", "png to 20kb online", "image optimizer 20kb", "photo compressor 20kb"],
     "extraSlugs": ["image-compressor-20kb", "20kb-jpeg-compressor"]
@@ -244,7 +244,7 @@ Below are example JSON entries (for `src/constants/tools.json`) for five tools. 
   {
     "slug": "75-attendance-calculator",
     "name": "75% Attendance Calculator",
-    "title": "75% Attendance Calculator – How Many Classes to Attend? | 30tools",
+    "title": "75% Attendance Calculator – How Many Classes to Attend? | SopKit",
     "description": "Calculate the number of classes you must attend to maintain 75% attendance. Input total classes & attended classes; instantly get required classes remaining.",
     "keywords": ["75% attendance calculator", "college attendance calculator", "attendance percentage calculator", "classes needed 75%", "required attendance tool"],
     "extraSlugs": ["attendance-percentage-calculator", "attendance-calculator-75"]
@@ -252,7 +252,7 @@ Below are example JSON entries (for `src/constants/tools.json`) for five tools. 
   {
     "slug": "brick-calculator",
     "name": "Brick Calculator",
-    "title": "Brick Calculator – Estimate Bricks Needed (per sq ft) | 30tools",
+    "title": "Brick Calculator – Estimate Bricks Needed (per sq ft) | SopKit",
     "description": "Compute how many bricks are needed for a wall. Enter wall area and brick size; get quantity including mortar gap. Handy for builders and DIY projects.",
     "keywords": ["brick calculator", "bricks needed for wall", "wall brick estimator", "construction brick calc", "number of bricks calculator"],
     "extraSlugs": ["brick-quantity-calculator", "estimate-bricks-wall"]
@@ -270,5 +270,5 @@ Below are example JSON entries (for `src/constants/tools.json`) for five tools. 
 - Govt Photo Resizer (competitor): emphasizes *“Images never leave your device – 100% private”* (no server upload)【20†L85-L93】.  
 - Google AdSense policies and common SEO guides inform our content strategy (tools must be original, helpful, and not violate copyright or illicit-use rules).  
 
-These data and guidelines shaped our keyword selection, content outlines, and risk assessment. The tables and roadmap above combine SEO best practices with AdSense revenue planning to help 30tools.com achieve sustainable ~$20–$40 per-tool earnings over time.  
+These data and guidelines shaped our keyword selection, content outlines, and risk assessment. The tables and roadmap above combine SEO best practices with AdSense revenue planning to help sopkit.github.io achieve sustainable ~$20–$40 per-tool earnings over time.  
 

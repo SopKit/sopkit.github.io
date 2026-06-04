@@ -4,23 +4,23 @@ import TedDownloader from "@/components/tools/downloaders/TedDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Ted Video Downloader Online - No Signup | 30tools",
+	title: "Free Ted Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Ted Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
-	keywords: "ted video downloader, free online tool, no signup, ted-video-downloader, free ted-video-downloader, Ted Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "ted video downloader, free online tool, no signup, ted-video-downloader, free ted-video-downloader, Ted Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/ted-video-downloader",
+		canonical: "https://sopkit.github.io/ted-video-downloader",
 	},
 	openGraph: {
-		title: "Free Ted Video Downloader Online - No Signup | 30tools",
+		title: "Free Ted Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Ted Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
-		url: "https://30tools.com/ted-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/ted-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Ted Video Downloader Online - No Signup | 30tools",
+		title: "Free Ted Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Ted Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
 		images: ["/og-image.jpg"],
 	},

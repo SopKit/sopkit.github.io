@@ -4,23 +4,23 @@ import MxTakaTakDownloader from "@/components/tools/downloaders/MxTakaTakDownloa
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free MxTakatak Video Downloader Online - No Signup | 30tools",
+	title: "Free MxTakatak Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free MxTakatak Video Downloader online. High-speed downloading with no signup needed. 100% free.",
-	keywords: "mxtakatak video downloader, free online tool, no signup, mxtakatak-video-downloader, free mxtakatak-video-downloader, Mxtakatak Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "mxtakatak video downloader, free online tool, no signup, mxtakatak-video-downloader, free mxtakatak-video-downloader, Mxtakatak Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/mxtakatak-video-downloader",
+		canonical: "https://sopkit.github.io/mxtakatak-video-downloader",
 	},
 	openGraph: {
-		title: "Free MxTakatak Video Downloader Online - No Signup | 30tools",
+		title: "Free MxTakatak Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free MxTakatak Video Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://30tools.com/mxtakatak-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/mxtakatak-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free MxTakatak Video Downloader Online - No Signup | 30tools",
+		title: "Free MxTakatak Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free MxTakatak Video Downloader online. High-speed downloading with no signup needed. 100% free.",
 		images: ["/og-image.jpg"],
 	},

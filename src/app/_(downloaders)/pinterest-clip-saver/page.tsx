@@ -4,23 +4,23 @@ import PinterestDownloader from "@/components/tools/downloaders/PinterestDownloa
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Pinterest Clip Saver Online - No Signup | 30tools",
+	title: "Free Pinterest Clip Saver Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Pinterest Clip Saver online. High-speed downloading with no signup needed. Try it free now.",
-	keywords: "pinterest clip saver, free online tool, no signup, pinterest-clip-saver, free pinterest-clip-saver, Pinterest Clip Saver online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "pinterest clip saver, free online tool, no signup, pinterest-clip-saver, free pinterest-clip-saver, Pinterest Clip Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/pinterest-clip-saver",
+		canonical: "https://sopkit.github.io/pinterest-clip-saver",
 	},
 	openGraph: {
-		title: "Free Pinterest Clip Saver Online - No Signup | 30tools",
+		title: "Free Pinterest Clip Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Pinterest Clip Saver online. High-speed downloading with no signup needed. Try it free now.",
-		url: "https://30tools.com/pinterest-clip-saver",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/pinterest-clip-saver",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Pinterest Clip Saver Online - No Signup | 30tools",
+		title: "Free Pinterest Clip Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Pinterest Clip Saver online. High-speed downloading with no signup needed. Try it free now.",
 		images: ["/og-image.jpg"],
 	},

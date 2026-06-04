@@ -41,8 +41,8 @@ import { Textarea } from "@/components/ui/textarea";
 export default function QRCodeGeneratorTool() {
 	const [qrType, setQrType] = useState("url");
 	const [qrData, setQrData] = useState({
-		url: "https://30tools.com",
-		text: "Hello World! Generate QR codes instantly with 30tools.com",
+		url: "https://sopkit.github.io",
+		text: "Hello World! Generate QR codes instantly with sopkit.github.io",
 		wifi: { ssid: "", password: "", security: "WPA", hidden: false },
 		vcard: {
 			firstName: "",

@@ -4,23 +4,23 @@ import ChingariDownloader from "@/components/tools/downloaders/ChingariDownloade
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Chingari Video Downloader Online - No Signup | 30tools",
+	title: "Free Chingari Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Chingari Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-	keywords: "chingari video downloader, free online tool, no signup, chingari-video-downloader, free chingari-video-downloader, Chingari Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "chingari video downloader, free online tool, no signup, chingari-video-downloader, free chingari-video-downloader, Chingari Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/chingari-video-downloader",
+		canonical: "https://sopkit.github.io/chingari-video-downloader",
 	},
 	openGraph: {
-		title: "Free Chingari Video Downloader Online - No Signup | 30tools",
+		title: "Free Chingari Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Chingari Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://30tools.com/chingari-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/chingari-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Chingari Video Downloader Online - No Signup | 30tools",
+		title: "Free Chingari Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Chingari Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 		images: ["/og-image.jpg"],
 	},

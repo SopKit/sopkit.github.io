@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Get HTTP Headers Online - No Signup | 30tools",
+	title: "Free Get HTTP Headers Online - No Signup | SopKit",
 	description: "Free get http headers tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "get http headers, free online tool, no signup, get-http-headers, free get-http-headers, Get Http Headers online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "get http headers, free online tool, no signup, get-http-headers, free get-http-headers, Get Http Headers online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/get-http-headers",
+		canonical: "https://sopkit.github.io/get-http-headers",
 	},
 	openGraph: {
-		title: "Free Get HTTP Headers Online - No Signup | 30tools",
+		title: "Free Get HTTP Headers Online - No Signup | SopKit",
 		description: "Free get http headers tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/get-http-headers",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/get-http-headers",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Get HTTP Headers Online - No Signup | 30tools",
+		title: "Free Get HTTP Headers Online - No Signup | SopKit",
 		description: "Free get http headers tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

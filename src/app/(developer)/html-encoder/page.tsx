@@ -4,23 +4,23 @@ import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free HTML Encoder Online - No Signup | 30tools",
+	title: "Free HTML Encoder Online - No Signup | SopKit",
 	description: "Format, minify, validate, and convert code snippets with our free HTML Encoder online. Secure, local developer utility with no registration. No signup required.",
-	keywords: "html encoder, free online tool, no signup, html-encoder, free html-encoder, Html Encoder online, developer tool, web dev utility, code formatter, online developer, 30tools",
+	keywords: "html encoder, free online tool, no signup, html-encoder, free html-encoder, Html Encoder online, developer tool, web dev utility, code formatter, online developer, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/html-encoder",
+		canonical: "https://sopkit.github.io/html-encoder",
 	},
 	openGraph: {
-		title: "Free HTML Encoder Online - No Signup | 30tools",
+		title: "Free HTML Encoder Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free HTML Encoder online. Secure, local developer utility with no registration. No signup required.",
-		url: "https://30tools.com/html-encoder",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/html-encoder",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free HTML Encoder Online - No Signup | 30tools",
+		title: "Free HTML Encoder Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free HTML Encoder online. Secure, local developer utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},

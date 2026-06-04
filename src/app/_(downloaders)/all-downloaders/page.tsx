@@ -2,23 +2,23 @@ import AllDownloaders from "@/components/tools/downloaders/AllDownloaders";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Free All Downloaders Online - No Signup | 30tools",
+	title: "Free All Downloaders Online - No Signup | SopKit",
 	description: "All Downloaders - Coming Soon",
-	keywords: "all downloaders, free online tool, no signup, others, all downloaders online, 30tools",
+	keywords: "all downloaders, free online tool, no signup, others, all downloaders online, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/all-downloaders",
+		canonical: "https://sopkit.github.io/all-downloaders",
 	},
 	openGraph: {
-		title: "Free All Downloaders Online - No Signup | 30tools",
+		title: "Free All Downloaders Online - No Signup | SopKit",
 		description: "All Downloaders - Coming Soon",
-		url: "https://30tools.com/all-downloaders",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/all-downloaders",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free All Downloaders Online - No Signup | 30tools",
+		title: "Free All Downloaders Online - No Signup | SopKit",
 		description: "All Downloaders - Coming Soon",
 		images: ["/og-image.jpg"],
 	},
@@ -93,7 +93,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: "All Downloaders",
 						description: "All Downloaders",
-						url: "https://30tools.com/all-downloaders",
+						url: "https://sopkit.github.io/all-downloaders",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

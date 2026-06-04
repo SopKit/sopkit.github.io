@@ -4,23 +4,23 @@ import RedditDownloader from "@/components/tools/downloaders/RedditDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Reddit Video Downloader HD - Save Reddit Videos & GIFs | 30tools",
+	title: "Reddit Video Downloader HD - Save Reddit Videos & GIFs | SopKit",
 	description: "Download Reddit videos and GIFs in HD quality for free. Fast online Reddit video saver with audio, no registration or watermark. Private browser-based tool.",
-	keywords: "reddit video downloader, download reddit videos, reddit video saver, reddit to mp4, free tool, 30tools, reddit-video-downloader, free reddit-video-downloader, reddit video downloader online, online downloader, free media saver, video downloader",
+	keywords: "reddit video downloader, download reddit videos, reddit video saver, reddit to mp4, free tool, SopKit, reddit-video-downloader, free reddit-video-downloader, reddit video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://30tools.com/reddit-video-downloader",
+		canonical: "https://sopkit.github.io/reddit-video-downloader",
 	},
 	openGraph: {
-		title: "Reddit Video Downloader HD - Save Reddit Videos & GIFs | 30tools",
+		title: "Reddit Video Downloader HD - Save Reddit Videos & GIFs | SopKit",
 		description: "Download Reddit videos and GIFs in HD quality for free. Fast online Reddit video saver with audio, no registration or watermark. Private browser-based tool.",
-		url: "https://30tools.com/reddit-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/reddit-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Reddit Video Downloader HD - Save Reddit Videos & GIFs | 30tools",
+		title: "Reddit Video Downloader HD - Save Reddit Videos & GIFs | SopKit",
 		description: "Download Reddit videos and GIFs in HD quality for free. Fast online Reddit video saver with audio, no registration or watermark. Private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},

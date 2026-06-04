@@ -4,23 +4,23 @@ import YouTubeDownloader from "@/components/tools/downloaders/YouTubeDownloader"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Channel ID Extractor Online - No Signup | 30tools",
+	title: "Free YouTube Channel ID Extractor Online - No Signup | SopKit",
 	description: "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations...",
-	keywords: "youtube channel id extractor, free online tool, no signup, youtube-channel-id-extractor, free youtube-channel-id-extractor, Youtube Channel Id Extractor online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube channel id extractor, free online tool, no signup, youtube-channel-id-extractor, free youtube-channel-id-extractor, Youtube Channel Id Extractor online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-channel-id-extractor",
+		canonical: "https://sopkit.github.io/youtube-channel-id-extractor",
 	},
 	openGraph: {
-		title: "Free YouTube Channel ID Extractor Online - No Signup | 30tools",
+		title: "Free YouTube Channel ID Extractor Online - No Signup | SopKit",
 		description: "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations...",
-		url: "https://30tools.com/youtube-channel-id-extractor",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-channel-id-extractor",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Channel ID Extractor Online - No Signup | 30tools",
+		title: "Free YouTube Channel ID Extractor Online - No Signup | SopKit",
 		description: "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations...",
 		images: ["/og-image.jpg"],
 	},

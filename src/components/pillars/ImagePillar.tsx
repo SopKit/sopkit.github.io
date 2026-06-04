@@ -101,7 +101,7 @@ export default function ImagePillar() {
                                 High-quality images shouldn't slow down your workflow or your website. Our suite of free online image tools is designed for creators, developers, and social media managers who need professional results without the bloat of traditional photo editing software. From background removal to advanced WebP compression, we handle it all.
                             </p>
                             <p>
-                                **Privacy is our Core Feature.** Most online editors upload your personal photos to their servers. 30tools processes your images **locally in your browser**. Your data never leaves your device, ensuring that sensitive documents, personal photos, and proprietary designs remain 100% private.
+                                **Privacy is our Core Feature.** Most online editors upload your personal photos to their servers. SopKit processes your images **locally in your browser**. Your data never leaves your device, ensuring that sensitive documents, personal photos, and proprietary designs remain 100% private.
                             </p>
                         </div>
                         <div className="space-y-6 text-lg leading-relaxed">

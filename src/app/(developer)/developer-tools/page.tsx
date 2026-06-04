@@ -8,23 +8,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Terminal, ArrowRight } from "lucide-react";
 
 export const metadata = {
-	title: "Free Developer Tools Online - No Signup | 30tools",
+	title: "Free Developer Tools Online - No Signup | SopKit",
 	description: "Format JSON, generate hashes, and developer utilities",
-	keywords: "developer tools, json formatter, base64 encoder, api tester, online dev tools, 30tools, developer-tools, free developer-tools, developer tools online, developer tool, online code utility, free developer tool",
+	keywords: "developer tools, json formatter, base64 encoder, api tester, online dev tools, SopKit, developer-tools, free developer-tools, developer tools online, developer tool, online code utility, free developer tool",
 	alternates: {
-		canonical: "https://30tools.com/developer-tools",
+		canonical: "https://sopkit.github.io/developer-tools",
 	},
 	openGraph: {
-		title: "Free Developer Tools Online - No Signup | 30tools",
+		title: "Free Developer Tools Online - No Signup | SopKit",
 		description: "Format JSON, generate hashes, and developer utilities",
-		url: "https://30tools.com/developer-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/developer-tools",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Developer Tools Online - No Signup | 30tools",
+		title: "Free Developer Tools Online - No Signup | SopKit",
 		description: "Format JSON, generate hashes, and developer utilities",
 		images: ["/og-image.jpg"],
 	},

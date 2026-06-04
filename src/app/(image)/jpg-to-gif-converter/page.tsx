@@ -4,23 +4,23 @@ import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free JPG to GIF Converter Online - No Signup | 30tools",
+	title: "Free JPG to GIF Converter Online - No Signup | SopKit",
 	description: "Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online...",
-	keywords: "jpg to gif converter, free online tool, no signup, jpg-to-gif-converter, free jpg-to-gif-converter, Jpg To Gif Converter online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "jpg to gif converter, free online tool, no signup, jpg-to-gif-converter, free jpg-to-gif-converter, Jpg To Gif Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/jpg-to-gif-converter",
+		canonical: "https://sopkit.github.io/jpg-to-gif-converter",
 	},
 	openGraph: {
-		title: "Free JPG to GIF Converter Online - No Signup | 30tools",
+		title: "Free JPG to GIF Converter Online - No Signup | SopKit",
 		description: "Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online...",
-		url: "https://30tools.com/jpg-to-gif-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/jpg-to-gif-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JPG to GIF Converter Online - No Signup | 30tools",
+		title: "Free JPG to GIF Converter Online - No Signup | SopKit",
 		description: "Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online...",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import UuidGeneratorTool from "@/components/tools/built-ins/UuidGeneratorTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Random UUID Generator Online - No Signup | 30tools",
+	title: "Free Random UUID Generator Online - No Signup | SopKit",
 	description: "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "random uuid generator, free online tool, no signup, random-uuid-generator, free random-uuid-generator, Random Uuid Generator online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "random uuid generator, free online tool, no signup, random-uuid-generator, free random-uuid-generator, Random Uuid Generator online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/random-uuid-generator",
+		canonical: "https://sopkit.github.io/random-uuid-generator",
 	},
 	openGraph: {
-		title: "Free Random UUID Generator Online - No Signup | 30tools",
+		title: "Free Random UUID Generator Online - No Signup | SopKit",
 		description: "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/random-uuid-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/random-uuid-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Random UUID Generator Online - No Signup | 30tools",
+		title: "Free Random UUID Generator Online - No Signup | SopKit",
 		description: "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

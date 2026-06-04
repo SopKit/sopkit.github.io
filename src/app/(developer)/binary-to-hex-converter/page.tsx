@@ -4,23 +4,23 @@ import BaseConverter from "@/components/tools/shared/BaseConverter";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Binary to HEX Converter Online - No Signup | 30tools",
+	title: "Free Binary to HEX Converter Online - No Signup | SopKit",
 	description: "Format, minify, validate, and convert code snippets with our free Binary to HEX Converter online. Secure, local developer utility with no registration.",
-	keywords: "binary to hex converter, free online tool, no signup, binary-to-hex-converter, free binary-to-hex-converter, Binary To Hex Converter online, developer tool, web dev utility, code formatter, online developer, 30tools",
+	keywords: "binary to hex converter, free online tool, no signup, binary-to-hex-converter, free binary-to-hex-converter, Binary To Hex Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/binary-to-hex-converter",
+		canonical: "https://sopkit.github.io/binary-to-hex-converter",
 	},
 	openGraph: {
-		title: "Free Binary to HEX Converter Online - No Signup | 30tools",
+		title: "Free Binary to HEX Converter Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free Binary to HEX Converter online. Secure, local developer utility with no registration.",
-		url: "https://30tools.com/binary-to-hex-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/binary-to-hex-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Binary to HEX Converter Online - No Signup | 30tools",
+		title: "Free Binary to HEX Converter Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free Binary to HEX Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},

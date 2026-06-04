@@ -9,8 +9,8 @@ import { SITE_CONFIG } from "@/constants/config";
 export function HomeFAQ() {
 	const faqs = [
 		{
-			question: "Is 30tools really free to use?",
-			answer: `Yes, 30tools is 100% free. We provide over ${SITE_CONFIG.toolCountString} professional-grade tools with no subscription fees, registration, or paywalls. Our mission is to democratize access to high-quality productivity software.`
+			question: "Is SopKit really free to use?",
+			answer: `Yes, SopKit is 100% free. We provide over ${SITE_CONFIG.toolCountString} professional-grade tools with no subscription fees, registration, or paywalls. Our mission is to democratize access to high-quality productivity software.`
 		},
 		{
 			question: "Do I need to create an account or sign up?",
@@ -21,8 +21,8 @@ export function HomeFAQ() {
 			answer: "Privacy is our top priority. Most of our tools (like image compressors, PDF editors, and generators) process files directly in your browser using Client-Side JS. This means your files never leave your computer. For tools that require server-side processing, files are deleted automatically after use."
 		},
 		{
-			question: "Does 30tools work on mobile devices?",
-			answer: "Absolutely. 30tools is built with a responsive, mobile-first design. All tools are fully functional on smartphones and tablets, providing a seamless experience across all your devices."
+			question: "Does SopKit work on mobile devices?",
+			answer: "Absolutely. SopKit is built with a responsive, mobile-first design. All tools are fully functional on smartphones and tablets, providing a seamless experience across all your devices."
 		},
 		{
 			question: "How many tools are available on the platform?",

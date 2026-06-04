@@ -1,6 +1,6 @@
 # 📈 SEO Improvement Documentation
 
-This directory contains comprehensive SEO improvement plans and tools for 30tools.
+This directory contains comprehensive SEO improvement plans and tools for SopKit.
 
 ---
 
@@ -222,7 +222,7 @@ open SEO-IMPROVEMENT-PLAN.md
 **Q: The audit script isn't working**
 ```bash
 # Make sure you're in the project root
-cd /Users/shaswatraj/Desktop/earn/30tools
+cd /Users/shaswatraj/Desktop/earn/SopKit
 
 # Check if tools.json exists
 ls -la src/constants/tools.json

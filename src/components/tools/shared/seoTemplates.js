@@ -1,5 +1,5 @@
 /**
- * SEO Templates for 30tools Dynamic Content Engine
+ * SEO Templates for SopKit Dynamic Content Engine
  * Category-specific templates providing high-quality fallback content
  * for tools missing features, FAQs, howTo steps, and long-form articles.
  */
@@ -396,7 +396,7 @@ Despite our strict security protocols, you should **never paste root AWS credent
 Merging sensitive documents like legal contracts, medical records, or academic transcripts requires a tool that respects both formatting and privacy. Our PDF Merger is built to handle complex multi-file combinations without ever touching a server.
 
 ### Maintain Original Formatting & Fonts
-Many online mergers strip out embedded fonts or mess up the page order. 30tools ensures that every layer, hyperlink, and vector element remains exactly as it was in the original file.
+Many online mergers strip out embedded fonts or mess up the page order. SopKit ensures that every layer, hyperlink, and vector element remains exactly as it was in the original file.
 
 ### Unlimited Files, Zero Signup
 While other platforms limit you to 2 files or 10MB, our browser-side engine lets you merge dozens of documents into a single, high-fidelity PDF without ever creating an account.
@@ -489,7 +489,7 @@ Upload your entire asset folder and compress them all at once. Download the resu
 				},
 				{
 					question: `Does ${name} work on mobile phones?`,
-					answer: `Yes, every tool on 30tools is fully responsive and works on Android, iOS (iPhone/iPad), and desktop browsers alike. No app installation needed.`,
+					answer: `Yes, every tool on SopKit is fully responsive and works on Android, iOS (iPhone/iPad), and desktop browsers alike. No app installation needed.`,
 				},
 				{
 					question: `Will downloaded videos have a watermark?`,
@@ -557,7 +557,7 @@ Upload your entire asset folder and compress them all at once. Download the resu
 				},
 				{
 					question: `Does ${name} work on smartphones?`,
-					answer: `Absolutely. Every image tool on 30tools is fully responsive and optimized for mobile browsers on iOS (iPhone/iPad) and Android devices.`,
+					answer: `Absolutely. Every image tool on SopKit is fully responsive and optimized for mobile browsers on iOS (iPhone/iPad) and Android devices.`,
 				},
 				{
 					question: `Will my image quality decrease?`,
@@ -576,7 +576,7 @@ Upload your entire asset folder and compress them all at once. Download the resu
 					answer: `Many of our tools support multi-file selection, allowing you to apply the same transformation to a collection of images simultaneously to save time.`,
 				},
 				{
-					question: `How does 30tools handle transparency?`,
+					question: `How does SopKit handle transparency?`,
 					answer: `Our PNG and WebP tools fully preserve alpha channels and transparency layers during resizing, conversion, and compression.`,
 				},
 				{
@@ -621,7 +621,7 @@ Upload your entire asset folder and compress them all at once. Download the resu
 			faqs: [
 				{
 					question: `Is it safe to process sensitive documents with ${name}?`,
-					answer: `Yes. Unlike many online PDF editors that upload your files to a cloud server, 30tools performs most operations locally in your browser. This ensures your private data never leaves your computer.`,
+					answer: `Yes. Unlike many online PDF editors that upload your files to a cloud server, SopKit performs most operations locally in your browser. This ensures your private data never leaves your computer.`,
 				},
 				{
 					question: `Are there any file size limits?`,
@@ -648,8 +648,8 @@ Upload your entire asset folder and compress them all at once. Download the resu
 					answer: `We offer specialized PDF signing and annotation tools within the PDF category to help you finalize your documents without printing.`,
 				},
 				{
-					question: `Why choose 30tools over Adobe Acrobat?`,
-					answer: `30tools is a fast, web-based, and completely free alternative that requires no installation and no subscription, making it ideal for quick daily document tasks.`,
+					question: `Why choose SopKit over Adobe Acrobat?`,
+					answer: `SopKit is a fast, web-based, and completely free alternative that requires no installation and no subscription, making it ideal for quick daily document tasks.`,
 				},
 			],
 		},
@@ -757,7 +757,7 @@ Upload your entire asset folder and compress them all at once. Download the resu
 			faqs: [
 				{
 					question: `Is it safe to paste API keys or JWT tokens into ${name}?`,
-					answer: `Yes. Unlike other developer tools that send data to a central server for processing, 30tools executes all logic locally in your browser. Your sensitive tokens are never sent over the internet.`,
+					answer: `Yes. Unlike other developer tools that send data to a central server for processing, SopKit executes all logic locally in your browser. Your sensitive tokens are never sent over the internet.`,
 				},
 				{
 					question: `Does ${name} support large JSON files?`,
@@ -833,11 +833,11 @@ Upload your entire asset folder and compress them all at once. Download the resu
 				},
 				{
 					question: `Can I use these tools for commercial projects?`,
-					answer: `Absolutely. Every utility on 30tools is free for both personal and commercial use with no attribution required.`,
+					answer: `Absolutely. Every utility on SopKit is free for both personal and commercial use with no attribution required.`,
 				},
 				{
-					question: `Why choose 30tools over a mobile app?`,
-					answer: `30tools requires no installation, uses zero storage on your device, and is accessible from any platform with a browser — making it faster and safer than many ad-ridden utility apps.`,
+					question: `Why choose SopKit over a mobile app?`,
+					answer: `SopKit requires no installation, uses zero storage on your device, and is accessible from any platform with a browser — making it faster and safer than many ad-ridden utility apps.`,
 				},
 				{
 					question: `Does ${name} store my input data?`,
@@ -967,7 +967,7 @@ Upload your entire asset folder and compress them all at once. Download the resu
 				},
 				{
 					question: `Will my converted video have a watermark?`,
-					answer: `Never. All 30tools video utilities produce clean, watermark-free output. No branding is added to your files.`,
+					answer: `Never. All SopKit video utilities produce clean, watermark-free output. No branding is added to your files.`,
 				},
 			],
 		},
@@ -1093,7 +1093,7 @@ Upload your entire asset folder and compress them all at once. Download the resu
 			faqs: [
 				{
 					question: `Is ${name} free to use?`,
-					answer: `Yes. Every generator on 30tools is 100% free with no usage caps. Generate as many outputs as you need without signing up or paying.`,
+					answer: `Yes. Every generator on SopKit is 100% free with no usage caps. Generate as many outputs as you need without signing up or paying.`,
 				},
 				{
 					question: `Can I customize the output of ${name}?`,
@@ -1101,7 +1101,7 @@ Upload your entire asset folder and compress them all at once. Download the resu
 				},
 				{
 					question: `Are generated files watermarked?`,
-					answer: `No. All outputs from 30tools generators are clean and watermark-free. You own the generated content and can use it for personal or commercial purposes.`,
+					answer: `No. All outputs from SopKit generators are clean and watermark-free. You own the generated content and can use it for personal or commercial purposes.`,
 				},
 				{
 					question: `Does ${name} require an internet connection?`,
@@ -1335,7 +1335,7 @@ Our \${name} gives you a fast, reliable, and private way to save online content 
 - **Data Saving**: Avoid re-streaming the same content multiple times and save on your mobile data plan.
 
 ### How \${name} Compares to Alternatives
-Unlike many downloader sites that bombard you with intrusive pop-ups, require expensive monthly subscriptions for HD access, or inject annoying watermarks into your files, 30tools keeps the experience clean, honest, and fast. We believe that basic digital tools should be accessible to everyone without a paywall or data harvesting.
+Unlike many downloader sites that bombard you with intrusive pop-ups, require expensive monthly subscriptions for HD access, or inject annoying watermarks into your files, SopKit keeps the experience clean, honest, and fast. We believe that basic digital tools should be accessible to everyone without a paywall or data harvesting.
 
 ### Supported Platforms & Media Types
 \${name} is part of a broad ecosystem that supports 30+ social media and content platforms. Whether you are looking for MP4 videos, MP3 audio, high-res thumbnails, or multi-slide carousels, our engine handles the heavy lifting of link resolution and file delivery. We continuously update our scrapers to ensure compatibility with the latest platform changes.
@@ -1512,10 +1512,10 @@ const GENERATOR_ARTICLE = `
 Need a QR code, a secure password, placeholder text, or AI-generated content? \${name} produces instant, customizable output without the bloat of traditional software or the privacy risks of cloud services.
 
 ### Customizable to Your Needs
-Every generator on 30tools comes with dedicated settings — colors, sizes, formats, character sets, and more. \${name} gives you full control over the output so it fits your exact requirements on the first try.
+Every generator on SopKit comes with dedicated settings — colors, sizes, formats, character sets, and more. \${name} gives you full control over the output so it fits your exact requirements on the first try.
 
 ### Clean, Watermark-Free Output
-All generated files are yours to use without any 30tools branding. QR codes, passwords, images, and text are produced clean and ready for personal or commercial use.
+All generated files are yours to use without any SopKit branding. QR codes, passwords, images, and text are produced clean and ready for personal or commercial use.
 
 ### Instant Results, No Queues
 \${name} works in real time. No waiting for a server to process your request, no email-gated downloads. Click generate, see the result, download or copy it. The entire cycle takes under 3 seconds.

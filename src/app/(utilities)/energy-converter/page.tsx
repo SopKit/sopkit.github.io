@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Energy Converter Online - No Signup | 30tools",
+	title: "Free Energy Converter Online - No Signup | SopKit",
 	description: "Free energy converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "energy converter, free online tool, no signup, energy-converter, free energy-converter, Energy Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "energy converter, free online tool, no signup, energy-converter, free energy-converter, Energy Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/energy-converter",
+		canonical: "https://sopkit.github.io/energy-converter",
 	},
 	openGraph: {
-		title: "Free Energy Converter Online - No Signup | 30tools",
+		title: "Free Energy Converter Online - No Signup | SopKit",
 		description: "Free energy converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/energy-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/energy-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Energy Converter Online - No Signup | 30tools",
+		title: "Free Energy Converter Online - No Signup | SopKit",
 		description: "Free energy converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

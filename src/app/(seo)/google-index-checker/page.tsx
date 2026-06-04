@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Google Index Checker Online - No Signup | 30tools",
+	title: "Free Google Index Checker Online - No Signup | SopKit",
 	description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
-	keywords: "google index checker, free online tool, no signup, google-index-checker, free google-index-checker, Google Index Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, 30tools",
+	keywords: "google index checker, free online tool, no signup, google-index-checker, free google-index-checker, Google Index Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/google-index-checker",
+		canonical: "https://sopkit.github.io/google-index-checker",
 	},
 	openGraph: {
-		title: "Free Google Index Checker Online - No Signup | 30tools",
+		title: "Free Google Index Checker Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
-		url: "https://30tools.com/google-index-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/google-index-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Google Index Checker Online - No Signup | 30tools",
+		title: "Free Google Index Checker Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},

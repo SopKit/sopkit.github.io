@@ -4,23 +4,23 @@ import PasswordGeneratorTool from "@/components/tools/utilities/PasswordGenerato
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Password Generator Online - No Signup | 30tools",
+	title: "Free Password Generator Online - No Signup | SopKit",
 	description: "Create strong, secure passwords instantly with customizable settings.",
-	keywords: "password generator, strong password maker, secure password generator, random password, free tool, 30tools, password-generator, free password-generator, password generator online, online utility, free converter, browser tool",
+	keywords: "password generator, strong password maker, secure password generator, random password, free tool, SopKit, password-generator, free password-generator, password generator online, online utility, free converter, browser tool",
 	alternates: {
-		canonical: "https://30tools.com/password-generator",
+		canonical: "https://sopkit.github.io/password-generator",
 	},
 	openGraph: {
-		title: "Free Password Generator Online - No Signup | 30tools",
+		title: "Free Password Generator Online - No Signup | SopKit",
 		description: "Create strong, secure passwords instantly with customizable settings.",
-		url: "https://30tools.com/password-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/password-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Password Generator Online - No Signup | 30tools",
+		title: "Free Password Generator Online - No Signup | SopKit",
 		description: "Create strong, secure passwords instantly with customizable settings.",
 		images: ["/og-image.jpg"],
 	},

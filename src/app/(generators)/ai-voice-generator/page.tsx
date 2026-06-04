@@ -4,23 +4,23 @@ import AIVoiceGeneratorTool from "@/components/tools/generators/AIVoiceGenerator
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free AI Voice Generator Online - No Signup | 30tools",
+	title: "Free AI Voice Generator Online - No Signup | SopKit",
 	description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers...",
-	keywords: "ai voice generator, free online tool, no signup, ai-voice-generator, free ai-voice-generator, Ai Voice Generator online, online generator, content creator, free maker, creative tool, 30tools",
+	keywords: "ai voice generator, free online tool, no signup, ai-voice-generator, free ai-voice-generator, Ai Voice Generator online, online generator, content creator, free maker, creative tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/ai-voice-generator",
+		canonical: "https://sopkit.github.io/ai-voice-generator",
 	},
 	openGraph: {
-		title: "Free AI Voice Generator Online - No Signup | 30tools",
+		title: "Free AI Voice Generator Online - No Signup | SopKit",
 		description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers...",
-		url: "https://30tools.com/ai-voice-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/ai-voice-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free AI Voice Generator Online - No Signup | 30tools",
+		title: "Free AI Voice Generator Online - No Signup | SopKit",
 		description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers...",
 		images: ["/og-image.jpg"],
 	},

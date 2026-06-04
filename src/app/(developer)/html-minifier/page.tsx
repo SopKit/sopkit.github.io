@@ -4,23 +4,23 @@ import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free HTML Minifier Online - No Signup | 30tools",
+	title: "Free HTML Minifier Online - No Signup | SopKit",
 	description: "Format, minify, validate, and convert code snippets with our free HTML Minifier online. Secure, local developer utility with no registration. Try it free now.",
-	keywords: "html minifier, free online tool, no signup, html-minifier, free html-minifier, Html Minifier online, developer tool, web dev utility, code formatter, online developer, 30tools",
+	keywords: "html minifier, free online tool, no signup, html-minifier, free html-minifier, Html Minifier online, developer tool, web dev utility, code formatter, online developer, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/html-minifier",
+		canonical: "https://sopkit.github.io/html-minifier",
 	},
 	openGraph: {
-		title: "Free HTML Minifier Online - No Signup | 30tools",
+		title: "Free HTML Minifier Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free HTML Minifier online. Secure, local developer utility with no registration. Try it free now.",
-		url: "https://30tools.com/html-minifier",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/html-minifier",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free HTML Minifier Online - No Signup | 30tools",
+		title: "Free HTML Minifier Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free HTML Minifier online. Secure, local developer utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},

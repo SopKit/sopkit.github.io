@@ -1,6 +1,6 @@
 import { getAllCategories, getAllTools, type Tool, type Category } from "@/lib/tools";
 
-const BASE_URL = "https://30tools.com";
+const BASE_URL = "https://sopkit.github.io";
 const allCategories = getAllCategories();
 const allTools = getAllTools();
 const TOOL_COUNT = allTools.length;
@@ -69,7 +69,7 @@ export default function StructuredData({
 			},
 			provider: {
 				"@type": "Organization",
-				name: "30tools",
+				name: "SopKit",
 				url: BASE_URL,
 			},
 			featureList: tool.features
@@ -130,12 +130,12 @@ export default function StructuredData({
 					description: tool.description,
 					author: {
 						"@type": "Organization",
-						name: "30tools",
+						name: "SopKit",
 						url: BASE_URL,
 					},
 					publisher: {
 						"@type": "Organization",
-						name: "30tools",
+						name: "SopKit",
 						logo: {
 							"@type": "ImageObject",
 							url: `${BASE_URL}/icons/icon-512x512.png`,
@@ -220,13 +220,13 @@ export default function StructuredData({
 	const websiteStructuredData = {
 		"@context": "https://schema.org",
 		"@type": "WebSite",
-		name: "30tools",
-		alternateName: "30tools - Free Online Toolkit",
+		name: "SopKit",
+		alternateName: "SopKit - Free Online Toolkit",
 		url: BASE_URL,
 		description: `Fast, free, and privacy-focused tools for image, video, audio, PDF, SEO, and developer workflows. Explore ${TOOL_COUNT}+ tools with no sign-up required.`,
 		publisher: {
 			"@type": "Organization",
-			name: "30tools",
+			name: "SopKit",
 			url: BASE_URL,
 			logo: {
 				"@type": "ImageObject",
@@ -240,7 +240,7 @@ export default function StructuredData({
 	const organizationStructuredData = {
 		"@context": "https://schema.org",
 		"@type": "Organization",
-		name: "30tools",
+		name: "SopKit",
 		url: BASE_URL,
 		logo: `${BASE_URL}/icons/icon-512x512.png`,
 		description: `Free online toolkit with ${TOOL_COUNT}+ tools for image, video, audio, PDF, SEO, and developer workflows.`,
@@ -272,10 +272,10 @@ export default function StructuredData({
 			mainEntity: [
 				{
 					"@type": "Question",
-					name: "Are the tools on 30tools really free?",
+					name: "Are the tools on SopKit really free?",
 					acceptedAnswer: {
 						"@type": "Answer",
-						text: "Yes, all tools on 30tools are free to use. Most tools run directly in the browser and do not require registration.",
+						text: "Yes, all tools on SopKit are free to use. Most tools run directly in the browser and do not require registration.",
 					},
 				},
 				{
@@ -288,7 +288,7 @@ export default function StructuredData({
 				},
 				{
 					"@type": "Question",
-					name: "Are my files safe when using 30tools?",
+					name: "Are my files safe when using SopKit?",
 					acceptedAnswer: {
 						"@type": "Answer",
 						text: "Privacy is a core focus. Many tools process files directly in the browser, which reduces the need to upload personal files to a server.",
@@ -296,10 +296,10 @@ export default function StructuredData({
 				},
 				{
 					"@type": "Question",
-					name: "What types of tools are available on 30tools?",
+					name: "What types of tools are available on SopKit?",
 					acceptedAnswer: {
 						"@type": "Answer",
-						text: `30tools offers ${TOOL_COUNT}+ tools across ${CATEGORY_COUNT} categories, including image processing, PDF workflows, video tools, text tools, audio tools, SEO utilities, and developer tools.`,
+						text: `SopKit offers ${TOOL_COUNT}+ tools across ${CATEGORY_COUNT} categories, including image processing, PDF workflows, video tools, text tools, audio tools, SEO utilities, and developer tools.`,
 					},
 				},
 			],

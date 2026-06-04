@@ -2,9 +2,9 @@ Master Promotion Prompt: GitHub Awesome List Integration
 Objective: Promote the following 5 projects by submitting high-quality Pull Requests to relevant "Awesome" lists and curated resource repositories on GitHub.
 
 1. Project Portfolio Metadata
-Project A: 30tools
+Project A: SopKit
 
-Repo: SH20RAJ/30tools
+Repo: SH20RAJ/SopKit
 Description: 660+ free browser-based online tools (PDF, Image, Video, SEO, Developer). 100% client-side.
 Tech: Next.js 15, App Router, Tailwind CSS.
 Categories: awesome-nextjs, awesome-react, awesome-free-online-tools, awesome-devtools, awesome-seo.

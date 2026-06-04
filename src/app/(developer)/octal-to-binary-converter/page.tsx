@@ -4,23 +4,23 @@ import BaseConverter from "@/components/tools/shared/BaseConverter";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Octal to Binary Converter Online - No Signup | 30tools",
+	title: "Free Octal to Binary Converter Online - No Signup | SopKit",
 	description: "Format, minify, validate, and convert code snippets with our free Octal to Binary Converter online. Secure, local developer utility with no registration.",
-	keywords: "octal to binary converter, free online tool, no signup, octal-to-binary-converter, free octal-to-binary-converter, Octal To Binary Converter online, developer tool, web dev utility, code formatter, online developer, 30tools",
+	keywords: "octal to binary converter, free online tool, no signup, octal-to-binary-converter, free octal-to-binary-converter, Octal To Binary Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/octal-to-binary-converter",
+		canonical: "https://sopkit.github.io/octal-to-binary-converter",
 	},
 	openGraph: {
-		title: "Free Octal to Binary Converter Online - No Signup | 30tools",
+		title: "Free Octal to Binary Converter Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free Octal to Binary Converter online. Secure, local developer utility with no registration.",
-		url: "https://30tools.com/octal-to-binary-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/octal-to-binary-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Octal to Binary Converter Online - No Signup | 30tools",
+		title: "Free Octal to Binary Converter Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free Octal to Binary Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},

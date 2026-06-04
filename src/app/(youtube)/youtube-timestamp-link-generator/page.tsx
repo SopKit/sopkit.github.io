@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Timestamp Link Generator Online - No Signup | 30tools",
+	title: "Free YouTube Timestamp Link Generator Online - No Signup | SopKit",
 	description: "Create direct links to specific parts of any YouTube video instantly. Our free online tool helps you share precise moments with friends, students, or your...",
-	keywords: "youtube timestamp link generator, free online tool, no signup, youtube-timestamp-link-generator, free youtube-timestamp-link-generator, Youtube Timestamp Link Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube timestamp link generator, free online tool, no signup, youtube-timestamp-link-generator, free youtube-timestamp-link-generator, Youtube Timestamp Link Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-timestamp-link-generator",
+		canonical: "https://sopkit.github.io/youtube-timestamp-link-generator",
 	},
 	openGraph: {
-		title: "Free YouTube Timestamp Link Generator Online - No Signup | 30tools",
+		title: "Free YouTube Timestamp Link Generator Online - No Signup | SopKit",
 		description: "Create direct links to specific parts of any YouTube video instantly. Our free online tool helps you share precise moments with friends, students, or your...",
-		url: "https://30tools.com/youtube-timestamp-link-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-timestamp-link-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Timestamp Link Generator Online - No Signup | 30tools",
+		title: "Free YouTube Timestamp Link Generator Online - No Signup | SopKit",
 		description: "Create direct links to specific parts of any YouTube video instantly. Our free online tool helps you share precise moments with friends, students, or your...",
 		images: ["/og-image.jpg"],
 	},

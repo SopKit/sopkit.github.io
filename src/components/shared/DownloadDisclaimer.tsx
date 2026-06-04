@@ -19,7 +19,7 @@ export default function DownloadDisclaimer({ platformName = "this platform" }: D
 					</p>
 					<p className="text-sm text-amber-700 dark:text-amber-400 leading-relaxed">
 						This tool is intended for downloading non-copyrighted, personal, or openly licensed content only.
-						30tools does not host copyrighted media. Users are solely responsible for ensuring they have the
+						SopKit does not host copyrighted media. Users are solely responsible for ensuring they have the
 						right to download content from {platformName}. Please respect copyright and only download content
 						you own or have permission to use. See our{" "}
 						<a href="/dmca" className="underline font-medium">DMCA Policy</a> and{" "}

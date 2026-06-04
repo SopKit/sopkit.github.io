@@ -4,23 +4,23 @@ import PDFUnlock from "@/components/tools/pdf/PDFUnlock";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free PDF Unlocker Online - No Signup | 30tools",
+	title: "Free PDF Unlocker Online - No Signup | SopKit",
 	description: "Manage, convert, edit, and secure PDF documents with our free PDF Unlocker online. Safe and private browser-based tool with no registration. No signup required.",
-	keywords: "pdf unlocker, unlock pdf, remove pdf password, free pdf tool, online pdf unlock, 30tools, pdf-unlocker, free pdf-unlocker, pdf unlocker online, pdf utility, document editor, online pdf tool",
+	keywords: "pdf unlocker, unlock pdf, remove pdf password, free pdf tool, online pdf unlock, SopKit, pdf-unlocker, free pdf-unlocker, pdf unlocker online, pdf utility, document editor, online pdf tool",
 	alternates: {
-		canonical: "https://30tools.com/pdf-unlocker",
+		canonical: "https://sopkit.github.io/pdf-unlocker",
 	},
 	openGraph: {
-		title: "Free PDF Unlocker Online - No Signup | 30tools",
+		title: "Free PDF Unlocker Online - No Signup | SopKit",
 		description: "Manage, convert, edit, and secure PDF documents with our free PDF Unlocker online. Safe and private browser-based tool with no registration. No signup required.",
-		url: "https://30tools.com/pdf-unlocker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/pdf-unlocker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PDF Unlocker Online - No Signup | 30tools",
+		title: "Free PDF Unlocker Online - No Signup | SopKit",
 		description: "Manage, convert, edit, and secure PDF documents with our free PDF Unlocker online. Safe and private browser-based tool with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},

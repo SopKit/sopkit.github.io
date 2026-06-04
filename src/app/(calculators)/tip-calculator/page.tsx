@@ -4,23 +4,23 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Tip Calculator - Split the Bill | 30tools",
+	title: "Tip Calculator - Split the Bill | SopKit",
 	description: "Calculate the tip, total, and amount per person for any bill. Quick gratuity and bill-splitting calculator, free and no signup.",
 	keywords: "tip calculator, gratuity calculator, bill split calculator, restaurant tip calculator, split the bill",
 	alternates: {
-		canonical: "https://30tools.com/tip-calculator",
+		canonical: "https://sopkit.github.io/tip-calculator",
 	},
 	openGraph: {
-		title: "Tip Calculator - Split the Bill | 30tools",
+		title: "Tip Calculator - Split the Bill | SopKit",
 		description: "Calculate the tip, total, and amount per person for any bill. Quick gratuity and bill-splitting calculator, free and no signup.",
-		url: "https://30tools.com/tip-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/tip-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Tip Calculator - Split the Bill | 30tools",
+		title: "Tip Calculator - Split the Bill | SopKit",
 		description: "Calculate the tip, total, and amount per person for any bill. Quick gratuity and bill-splitting calculator, free and no signup.",
 		images: ["/og-image.jpg"],
 	},

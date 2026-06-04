@@ -4,23 +4,23 @@ import YouTubeDownloader from "@/components/tools/downloaders/YouTubeDownloader"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Title Extractor Online - No Signup | 30tools",
+	title: "Free YouTube Title Extractor Online - No Signup | SopKit",
 	description: "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool.",
-	keywords: "youtube title extractor, free online tool, no signup, youtube-title-extractor, free youtube-title-extractor, Youtube Title Extractor online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube title extractor, free online tool, no signup, youtube-title-extractor, free youtube-title-extractor, Youtube Title Extractor online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-title-extractor",
+		canonical: "https://sopkit.github.io/youtube-title-extractor",
 	},
 	openGraph: {
-		title: "Free YouTube Title Extractor Online - No Signup | 30tools",
+		title: "Free YouTube Title Extractor Online - No Signup | SopKit",
 		description: "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool.",
-		url: "https://30tools.com/youtube-title-extractor",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-title-extractor",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Title Extractor Online - No Signup | 30tools",
+		title: "Free YouTube Title Extractor Online - No Signup | SopKit",
 		description: "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool.",
 		images: ["/og-image.jpg"],
 	},

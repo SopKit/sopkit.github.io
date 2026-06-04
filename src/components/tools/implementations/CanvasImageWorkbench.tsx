@@ -121,7 +121,7 @@ export default function CanvasImageWorkbench({
 			if (!blob) return;
 			const a = document.createElement("a");
 			a.href = URL.createObjectURL(blob);
-			a.download = "30tools-image.png";
+			a.download = "SopKit-image.png";
 			a.click();
 			URL.revokeObjectURL(a.href);
 		});

@@ -4,23 +4,23 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Fuel Cost Calculator - Trip Fuel Estimator | 30tools",
+	title: "Fuel Cost Calculator - Trip Fuel Estimator | SopKit",
 	description: "Estimate the fuel needed and total cost for a trip from distance, fuel economy, and price per litre. Free trip fuel cost calculator.",
 	keywords: "fuel cost calculator, trip fuel calculator, gas cost calculator, fuel consumption calculator, travel fuel cost",
 	alternates: {
-		canonical: "https://30tools.com/fuel-cost-calculator",
+		canonical: "https://sopkit.github.io/fuel-cost-calculator",
 	},
 	openGraph: {
-		title: "Fuel Cost Calculator - Trip Fuel Estimator | 30tools",
+		title: "Fuel Cost Calculator - Trip Fuel Estimator | SopKit",
 		description: "Estimate the fuel needed and total cost for a trip from distance, fuel economy, and price per litre. Free trip fuel cost calculator.",
-		url: "https://30tools.com/fuel-cost-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/fuel-cost-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Fuel Cost Calculator - Trip Fuel Estimator | 30tools",
+		title: "Fuel Cost Calculator - Trip Fuel Estimator | SopKit",
 		description: "Estimate the fuel needed and total cost for a trip from distance, fuel economy, and price per litre. Free trip fuel cost calculator.",
 		images: ["/og-image.jpg"],
 	},

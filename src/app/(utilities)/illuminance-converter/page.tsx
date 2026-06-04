@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Illuminance Converter Online - No Signup | 30tools",
+	title: "Free Illuminance Converter Online - No Signup | SopKit",
 	description: "Free illuminance converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "illuminance converter, free online tool, no signup, illuminance-converter, free illuminance-converter, Illuminance Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "illuminance converter, free online tool, no signup, illuminance-converter, free illuminance-converter, Illuminance Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/illuminance-converter",
+		canonical: "https://sopkit.github.io/illuminance-converter",
 	},
 	openGraph: {
-		title: "Free Illuminance Converter Online - No Signup | 30tools",
+		title: "Free Illuminance Converter Online - No Signup | SopKit",
 		description: "Free illuminance converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/illuminance-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/illuminance-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Illuminance Converter Online - No Signup | 30tools",
+		title: "Free Illuminance Converter Online - No Signup | SopKit",
 		description: "Free illuminance converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

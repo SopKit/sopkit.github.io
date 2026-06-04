@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Bulk Keyword Rank Checker Online - No Signup | 30tools",
+	title: "Free Bulk Keyword Rank Checker Online - No Signup | SopKit",
 	description: "Audit websites, analyze search rankings, and generate schemas with our free Bulk Keyword Rank Checker online. Optimize search presence with no signup.",
-	keywords: "bulk keyword rank checker, free online tool, no signup, bulk-keyword-rank-checker, free bulk-keyword-rank-checker, Bulk Keyword Rank Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, 30tools",
+	keywords: "bulk keyword rank checker, free online tool, no signup, bulk-keyword-rank-checker, free bulk-keyword-rank-checker, Bulk Keyword Rank Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/bulk-keyword-rank-checker",
+		canonical: "https://sopkit.github.io/bulk-keyword-rank-checker",
 	},
 	openGraph: {
-		title: "Free Bulk Keyword Rank Checker Online - No Signup | 30tools",
+		title: "Free Bulk Keyword Rank Checker Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Bulk Keyword Rank Checker online. Optimize search presence with no signup.",
-		url: "https://30tools.com/bulk-keyword-rank-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/bulk-keyword-rank-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Bulk Keyword Rank Checker Online - No Signup | 30tools",
+		title: "Free Bulk Keyword Rank Checker Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Bulk Keyword Rank Checker online. Optimize search presence with no signup.",
 		images: ["/og-image.jpg"],
 	},

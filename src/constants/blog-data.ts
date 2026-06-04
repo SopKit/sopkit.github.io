@@ -141,7 +141,7 @@ export const blogs: BlogArticle[] = [
 		slug: "hermes-agent-review-956k-stars-self-improving-ai-agent-april-2026-11le",
 		title: "Hermes Agent Review: 956K Stars & Self-Improving AI (April 2026)",
 		description:
-			"A deep dive into the Hermes Agent framework, its rapid growth, self-evolving skills, and how it integrates with 30tools.",
+			"A deep dive into the Hermes Agent framework, its rapid growth, self-evolving skills, and how it integrates with SopKit.",
 		date: "2026-04-28",
 		readTimeMinutes: 8,
 		intro: "Hermes Agent, developed by Nous Research, has taken the AI world by storm. It is a self-evolving AI framework that learns as it works, making it one of the most powerful autonomous assistants available today.",
@@ -154,9 +154,9 @@ export const blogs: BlogArticle[] = [
 				],
 			},
 			{
-				heading: "Integration with 30tools",
+				heading: "Integration with SopKit",
 				paragraphs: [
-					"Hermes thrives when paired with the 30tools suite. It can use terminal operations, browser automation, and call the 190+ web utilities on 30tools.com to process data efficiently.",
+					"Hermes thrives when paired with the SopKit suite. It can use terminal operations, browser automation, and call the 190+ web utilities on sopkit.github.io to process data efficiently.",
 					"Many users use Hermes to automate repetitive tasks like JSON formatting, image conversion, and SEO audits using our privacy-first tools.",
 				],
 			},
@@ -198,7 +198,7 @@ export const blogs: BlogArticle[] = [
 				heading: "Understanding Prompt Engineering in 2026",
 				paragraphs: [
 					"Prompt engineering is no longer about guessing keywords; it's about structural descriptions. By providing context, lighting, and composition details, you can steer the AI toward your specific vision.",
-					"Modern models respond best to 'multi-modal' inputs where you combine descriptive text with style references. Using tools like the AI Image Generator on 30tools allows you to experiment with these parameters instantly."
+					"Modern models respond best to 'multi-modal' inputs where you combine descriptive text with style references. Using tools like the AI Image Generator on SopKit allows you to experiment with these parameters instantly."
 				],
 				toolRoutes: ["/ai-image-generator"]
 			},
@@ -206,13 +206,13 @@ export const blogs: BlogArticle[] = [
 				heading: "The Rise of No-Signup, Browser-Based Tools",
 				paragraphs: [
 					"Privacy is the biggest trend of 2026. Creators are shifting away from centralized platforms that harvest data and toward local, browser-based tools.",
-					"Our 30tools suite is built on this principle. You generate images directly in your browser, ensuring that your creative concepts and prompts remain entirely private."
+					"Our SopKit suite is built on this principle. You generate images directly in your browser, ensuring that your creative concepts and prompts remain entirely private."
 				]
 			}
 		],
 		faqs: [
 			{
-				question: "Is AI image generation free on 30tools?",
+				question: "Is AI image generation free on SopKit?",
 				answer: "Yes, our AI image generator is 100% free to use with no signup required and no daily limits for standard usage."
 			},
 			{
@@ -233,7 +233,7 @@ export const blogs: BlogArticle[] = [
 				heading: "How AI Music Generation Works",
 				paragraphs: [
 					"Modern AI music models analyze millions of patterns to understand melody, rhythm, and harmony. When you provide a prompt, the AI synthesizes a completely new audio file from scratch.",
-					"Tools like the AI Music Generator on 30tools use advanced models like MiniMax Music 2.6 to produce 44.1kHz studio-grade audio that is virtually indistinguishable from human compositions."
+					"Tools like the AI Music Generator on SopKit use advanced models like MiniMax Music 2.6 to produce 44.1kHz studio-grade audio that is virtually indistinguishable from human compositions."
 				],
 				toolRoutes: ["/ai-music-generator"]
 			},
@@ -268,7 +268,7 @@ export const blogs: BlogArticle[] = [
 				heading: "Formatting and Validating JSON Data",
 				paragraphs: [
 					"A single missing comma can break an entire application. Using a robust JSON Formatter helps you visualize nested structures and catch syntax errors immediately.",
-					"30tools provides a suite of JSON utilities that run entirely in your browser, ensuring your sensitive data never leaves your machine during the debugging process."
+					"SopKit provides a suite of JSON utilities that run entirely in your browser, ensuring your sensitive data never leaves your machine during the debugging process."
 				],
 				toolRoutes: ["/json-formatter", "/json-validator"]
 			},
@@ -283,7 +283,7 @@ export const blogs: BlogArticle[] = [
 		],
 		faqs: [
 			{
-				question: "Is my JSON data safe on 30tools?",
+				question: "Is my JSON data safe on SopKit?",
 				answer: "Yes. All our JSON tools process data locally in your browser. No data is sent to our servers, making it safe for processing API keys or sensitive user info."
 			},
 			{
@@ -324,7 +324,7 @@ export const blogs: BlogArticle[] = [
 			},
 			{
 				question: "Do I need paid tools for a professional SEO audit?",
-				answer: "While paid tools offer more data, you can conduct a very effective audit using free tools like GSC and the utilities on 30tools."
+				answer: "While paid tools offer more data, you can conduct a very effective audit using free tools like GSC and the utilities on SopKit."
 			}
 		]
 	},
@@ -348,7 +348,7 @@ export const blogs: BlogArticle[] = [
 				heading: "Converting PDFs for Better Accessibility",
 				paragraphs: [
 					"Sometimes a PDF isn't the best format for editing. Converting PDF to Word or Excel allows you to manipulate data more freely, while PDF to Image conversion is great for social media sharing.",
-					"Our 30tools suite offers a full range of conversion options that prioritize formatting accuracy and document security."
+					"Our SopKit suite offers a full range of conversion options that prioritize formatting accuracy and document security."
 				]
 			}
 		],
@@ -383,7 +383,7 @@ export const blogs: BlogArticle[] = [
 				heading: "Utilities for Web Development",
 				paragraphs: [
 					"If you're building websites, tools for URL encoding, Base64 conversion, and color picking will become your best friends.",
-					"The 30tools 'Developer Tools' category is specifically curated to include these essentials, all available without a login or subscription."
+					"The SopKit 'Developer Tools' category is specifically curated to include these essentials, all available without a login or subscription."
 				],
 				toolRoutes: ["/url-encode", "/rgb-to-hex-converter"]
 			}
@@ -481,7 +481,7 @@ export const blogs: BlogArticle[] = [
 				heading: "The Importance of SI Unit Standardization",
 				paragraphs: [
 					"Working between metric and imperial systems requires absolute precision. Using a verified Unit Converter is essential for ensuring that calculations remain consistent throughout the project lifecycle.",
-					"Our 30tools unit conversion engine is built on standard scientific constants, providing the reliability needed for professional technical work."
+					"Our SopKit unit conversion engine is built on standard scientific constants, providing the reliability needed for professional technical work."
 				],
 				toolRoutes: ["/calculators"]
 			},
@@ -552,7 +552,7 @@ export const blogs: BlogArticle[] = [
 				heading: "What is Browser-Based Processing?",
 				paragraphs: [
 					"Modern browsers are powerful enough to run high-level code using technologies like WebAssembly and WebGL. This means your data never has to leave your device to be processed.",
-					"Our 30tools suite is built on this 'Local-First' philosophy. Whether you're formatting JSON or resizing images, the work is done on your machine, not our servers."
+					"Our SopKit suite is built on this 'Local-First' philosophy. Whether you're formatting JSON or resizing images, the work is done on your machine, not our servers."
 				]
 			},
 			{

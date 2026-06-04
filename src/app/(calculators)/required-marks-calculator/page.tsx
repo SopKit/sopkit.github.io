@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import AcademicGradesCalculator from "@/components/tools/calculators/AcademicGradesCalculator";
 
 export const metadata = {
-	title: "Free Required Marks Calculator Online - No Signup | 30tools",
+	title: "Free Required Marks Calculator Online - No Signup | SopKit",
 	description: "Find out exactly how many marks you need to score in your final exam to achieve your target grade or pass.",
-	keywords: "required-marks-calculator, Required Marks Calculator, target grade calculator, marks needed in final, 30tools",
+	keywords: "required-marks-calculator, Required Marks Calculator, target grade calculator, marks needed in final, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/required-marks-calculator",
+		canonical: "https://sopkit.github.io/required-marks-calculator",
 	},
 	openGraph: {
-		title: "Free Required Marks Calculator Online - No Signup | 30tools",
+		title: "Free Required Marks Calculator Online - No Signup | SopKit",
 		description: "Find out exactly how many marks you need to score in your final exam to achieve your target grade or pass.",
-		url: "https://30tools.com/required-marks-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/required-marks-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Required Marks Calculator Online - No Signup | 30tools",
+		title: "Free Required Marks Calculator Online - No Signup | SopKit",
 		description: "Find out exactly how many marks you need to score in your final exam to achieve your target grade or pass.",
 		images: ["/og-image.jpg"],
 	},

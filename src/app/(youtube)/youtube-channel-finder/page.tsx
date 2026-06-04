@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Channel Finder Online - No Signup | 30tools",
+	title: "Free YouTube Channel Finder Online - No Signup | SopKit",
 	description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for...",
-	keywords: "youtube channel finder, free online tool, no signup, youtube-channel-finder, free youtube-channel-finder, Youtube Channel Finder online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube channel finder, free online tool, no signup, youtube-channel-finder, free youtube-channel-finder, Youtube Channel Finder online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-channel-finder",
+		canonical: "https://sopkit.github.io/youtube-channel-finder",
 	},
 	openGraph: {
-		title: "Free YouTube Channel Finder Online - No Signup | 30tools",
+		title: "Free YouTube Channel Finder Online - No Signup | SopKit",
 		description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for...",
-		url: "https://30tools.com/youtube-channel-finder",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-channel-finder",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Channel Finder Online - No Signup | 30tools",
+		title: "Free YouTube Channel Finder Online - No Signup | SopKit",
 		description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for...",
 		images: ["/og-image.jpg"],
 	},

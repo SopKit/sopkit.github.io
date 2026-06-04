@@ -1,4 +1,4 @@
-# 30tools Design System
+# SopKit Design System
 
 This project now uses a centralized design system powered by tokenized CSS variables and shared utility classes.
 

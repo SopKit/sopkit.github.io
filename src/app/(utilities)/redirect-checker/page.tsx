@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Redirect Checker Online - No Signup | 30tools",
+	title: "Free Redirect Checker Online - No Signup | SopKit",
 	description: "Free redirect checker tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "redirect checker, free online tool, no signup, redirect-checker, free redirect-checker, Redirect Checker online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "redirect checker, free online tool, no signup, redirect-checker, free redirect-checker, Redirect Checker online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/redirect-checker",
+		canonical: "https://sopkit.github.io/redirect-checker",
 	},
 	openGraph: {
-		title: "Free Redirect Checker Online - No Signup | 30tools",
+		title: "Free Redirect Checker Online - No Signup | SopKit",
 		description: "Free redirect checker tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/redirect-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/redirect-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Redirect Checker Online - No Signup | 30tools",
+		title: "Free Redirect Checker Online - No Signup | SopKit",
 		description: "Free redirect checker tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

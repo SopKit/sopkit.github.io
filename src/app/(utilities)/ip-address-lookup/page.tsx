@@ -4,23 +4,23 @@ import IPLocationFinderTool from "@/components/tools/utilities/IPLocationFinderT
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free IP Address Lookup Online - No Signup | 30tools",
+	title: "Free IP Address Lookup Online - No Signup | SopKit",
 	description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "ip address lookup, free online tool, no signup, ip-address-lookup, free ip-address-lookup, Ip Address Lookup online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "ip address lookup, free online tool, no signup, ip-address-lookup, free ip-address-lookup, Ip Address Lookup online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/ip-address-lookup",
+		canonical: "https://sopkit.github.io/ip-address-lookup",
 	},
 	openGraph: {
-		title: "Free IP Address Lookup Online - No Signup | 30tools",
+		title: "Free IP Address Lookup Online - No Signup | SopKit",
 		description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/ip-address-lookup",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/ip-address-lookup",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free IP Address Lookup Online - No Signup | 30tools",
+		title: "Free IP Address Lookup Online - No Signup | SopKit",
 		description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

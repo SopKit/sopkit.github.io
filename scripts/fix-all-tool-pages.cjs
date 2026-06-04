@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Tool: Fix all 30tools.com tool pages
+ * Tool: Fix all sopkit.github.io tool pages
  * Purpose: Replace generic RegisteredToolMount with dedicated component imports
  *          and ensure each tool has a dedicated page file with proper SEO.
  */
@@ -312,9 +312,9 @@ function generatePageContent(tool) {
   }
 
   // Generate unique metadata using tool name and category
-  const title = `${tool.name} Online – Free & No Signup | 30tools`;
+  const title = `${tool.name} Online – Free & No Signup | SopKit`;
   const description = tool.description || `Use our free ${tool.name} tool to process your data instantly. Privacy-friendly, browser-based, no signup required.`;
-  const canonical = `https://30tools.com${tool.route}`;
+  const canonical = `https://sopkit.github.io${tool.route}`;
 
   // Component import statement
   const importLine = `import ${info.component} from "${info.import}";`;
@@ -338,7 +338,7 @@ export const metadata = {
 		title: "${tool.name} – Free Online Tool",
 		description: "${description.replace(/"/g, '').substring(0, 160)}",
 		url: "${canonical}",
-		siteName: "30tools",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},

@@ -4,23 +4,23 @@ import RumbleDownloader from "@/components/tools/downloaders/RumbleDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Rumble Video Downloader Online - No Signup | 30tools",
+	title: "Free Rumble Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Rumble Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-	keywords: "rumble video downloader, free online tool, no signup, rumble-video-downloader, free rumble-video-downloader, Rumble Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "rumble video downloader, free online tool, no signup, rumble-video-downloader, free rumble-video-downloader, Rumble Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/rumble-video-downloader",
+		canonical: "https://sopkit.github.io/rumble-video-downloader",
 	},
 	openGraph: {
-		title: "Free Rumble Video Downloader Online - No Signup | 30tools",
+		title: "Free Rumble Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Rumble Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://30tools.com/rumble-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/rumble-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Rumble Video Downloader Online - No Signup | 30tools",
+		title: "Free Rumble Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Rumble Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 		images: ["/og-image.jpg"],
 	},

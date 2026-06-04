@@ -44,7 +44,7 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-8 mb-12">
 					<div className="col-span-2 lg:col-span-1">
 						<Link href={STATIC_ROUTES.HOME} className="text-lg font-semibold tracking-tight mb-4 block">
-							30tools
+							SopKit
 						</Link>
 						<p className="text-[12px] leading-relaxed opacity-90 max-w-xs">
 							{SITE_CONFIG.toolCountString} free tools for creators, developers, and professionals. 
@@ -82,17 +82,17 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 						<h4 className="text-[12px] font-semibold mb-4 text-primary">Open Source</h4>
 						<ul className="space-y-2">
 							<li>
-								<a href="https://github.com/sh20raj/30tools" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex items-center gap-1 group">
+								<a href="https://github.com/SopKit/sopkit.github.io" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex items-center gap-1 group">
 									<Github className="h-3 w-3 group-hover:text-primary" /> GitHub Repository <ArrowUpRight className="h-3 w-3 opacity-50" />
 								</a>
 							</li>
 							<li>
-								<a href="https://github.com/sh20raj/30tools/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex items-center gap-1">
+								<a href="https://github.com/SopKit/sopkit.github.io/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex items-center gap-1">
 									Contribute & Build <ArrowUpRight className="h-3 w-3 opacity-50" />
 								</a>
 							</li>
 							<li>
-								<a href="https://github.com/sh20raj/30tools/issues" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex items-center gap-1">
+								<a href="https://github.com/SopKit/sopkit.github.io/issues" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex items-center gap-1">
 									Report an Issue <ArrowUpRight className="h-3 w-3 opacity-50" />
 								</a>
 							</li>
@@ -119,7 +119,7 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 
 				<div className="pt-8 border-t border-black/5 dark:border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
 					<p className="text-[12px] opacity-80">
-						Copyright © 2026 30tools Inc. All rights reserved.
+						Copyright © 2026 SopKit Inc. All rights reserved.
 					</p>
 					<div className="flex flex-col md:flex-row items-center gap-6">
 						<div className="flex gap-6 opacity-90">

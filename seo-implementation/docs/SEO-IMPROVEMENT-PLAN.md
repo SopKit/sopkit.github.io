@@ -1,4 +1,4 @@
-# 🚀 SEO Improvement Plan for 30tools
+# 🚀 SEO Improvement Plan for SopKit
 
 **Created:** May 27, 2026  
 **Current Status:** 376 tools, production-ready  
@@ -64,7 +64,7 @@ Establish domain authority and backlink profile
 **Template Example:**
 ```typescript
 // Good metadata structure
-title: "Free [Tool Name] Online - [Key Benefit] | 30tools"
+title: "Free [Tool Name] Online - [Key Benefit] | SopKit"
 description: "[Action verb] [what it does] instantly. [Key features]. No signup, 100% free, privacy-first. [CTA]"
 ```
 
@@ -259,7 +259,7 @@ alt="[Tool Name] interface showing [specific feature] - Free online tool"
 **Problem:** No video content for visual learners and YouTube traffic
 
 **Action Items:**
-- [ ] Create **YouTube channel** for 30tools
+- [ ] Create **YouTube channel** for SopKit
 - [ ] Produce **tool tutorial videos** (1-3 minutes each)
 - [ ] Create **"How to Use [Tool]"** series (target: 50 videos)
 - [ ] Make **comparison videos** ("Best Free [Category] Tools")
@@ -496,10 +496,10 @@ export function generateReviewSchema(reviews: Review[]) {
 
 **Hreflang Implementation:**
 ```html
-<link rel="alternate" hreflang="en" href="https://30tools.com/image-compressor" />
-<link rel="alternate" hreflang="es" href="https://30tools.com/es/compresor-de-imagenes" />
-<link rel="alternate" hreflang="fr" href="https://30tools.com/fr/compresseur-image" />
-<link rel="alternate" hreflang="x-default" href="https://30tools.com/image-compressor" />
+<link rel="alternate" hreflang="en" href="https://sopkit.github.io/image-compressor" />
+<link rel="alternate" hreflang="es" href="https://sopkit.github.io/es/compresor-de-imagenes" />
+<link rel="alternate" hreflang="fr" href="https://sopkit.github.io/fr/compresseur-image" />
+<link rel="alternate" hreflang="x-default" href="https://sopkit.github.io/image-compressor" />
 ```
 
 ---

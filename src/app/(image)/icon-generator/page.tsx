@@ -4,23 +4,23 @@ import FaviconGeneratorTool from "@/components/tools/image/FaviconGeneratorTool"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Icon Generator Online - No Signup | 30tools",
+	title: "Free Icon Generator Online - No Signup | SopKit",
 	description: "Generate app icons and favicons for Android, iOS, and web applications.",
-	keywords: "icon, generator, free icon generator, online icon generator, 30tools, icon-generator, icon generator, free icon-generator, icon generator online, image editing, photo editor, browser image tool",
+	keywords: "icon, generator, free icon generator, online icon generator, SopKit, icon-generator, icon generator, free icon-generator, icon generator online, image editing, photo editor, browser image tool",
 	alternates: {
-		canonical: "https://30tools.com/icon-generator",
+		canonical: "https://sopkit.github.io/icon-generator",
 	},
 	openGraph: {
-		title: "Free Icon Generator Online - No Signup | 30tools",
+		title: "Free Icon Generator Online - No Signup | SopKit",
 		description: "Generate app icons and favicons for Android, iOS, and web applications.",
-		url: "https://30tools.com/icon-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/icon-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Icon Generator Online - No Signup | 30tools",
+		title: "Free Icon Generator Online - No Signup | SopKit",
 		description: "Generate app icons and favicons for Android, iOS, and web applications.",
 		images: ["/og-image.jpg"],
 	},

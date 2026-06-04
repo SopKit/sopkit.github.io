@@ -4,23 +4,23 @@ import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Rotate Image Online - No Signup | 30tools",
+	title: "Free Rotate Image Online - No Signup | SopKit",
 	description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and...",
-	keywords: "rotate image, free online tool, no signup, rotate-image, free rotate-image, Rotate Image online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "rotate image, free online tool, no signup, rotate-image, free rotate-image, Rotate Image online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/rotate-image",
+		canonical: "https://sopkit.github.io/rotate-image",
 	},
 	openGraph: {
-		title: "Free Rotate Image Online - No Signup | 30tools",
+		title: "Free Rotate Image Online - No Signup | SopKit",
 		description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and...",
-		url: "https://30tools.com/rotate-image",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/rotate-image",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Rotate Image Online - No Signup | 30tools",
+		title: "Free Rotate Image Online - No Signup | SopKit",
 		description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and...",
 		images: ["/og-image.jpg"],
 	},

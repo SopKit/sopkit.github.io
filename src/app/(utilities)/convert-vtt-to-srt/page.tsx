@@ -4,23 +4,23 @@ import VttToSrtTool from "@/components/tools/text/VttToSrtTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Convert VTT to SRT Online - No Signup | 30tools",
+	title: "Free Convert VTT to SRT Online - No Signup | SopKit",
 	description: "Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players.",
-	keywords: "convert vtt to srt, free online tool, no signup, convert-vtt-to-srt, free convert-vtt-to-srt, Convert Vtt To Srt online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "convert vtt to srt, free online tool, no signup, convert-vtt-to-srt, free convert-vtt-to-srt, Convert Vtt To Srt online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/convert-vtt-to-srt",
+		canonical: "https://sopkit.github.io/convert-vtt-to-srt",
 	},
 	openGraph: {
-		title: "Free Convert VTT to SRT Online - No Signup | 30tools",
+		title: "Free Convert VTT to SRT Online - No Signup | SopKit",
 		description: "Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players.",
-		url: "https://30tools.com/convert-vtt-to-srt",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/convert-vtt-to-srt",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Convert VTT to SRT Online - No Signup | 30tools",
+		title: "Free Convert VTT to SRT Online - No Signup | SopKit",
 		description: "Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players.",
 		images: ["/og-image.jpg"],
 	},

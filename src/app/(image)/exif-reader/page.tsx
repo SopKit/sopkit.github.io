@@ -4,23 +4,23 @@ import ExifReaderTool from "@/components/tools/image/ExifReaderTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free EXIF Reader Online - No Signup | 30tools",
+	title: "Free EXIF Reader Online - No Signup | SopKit",
 	description: "Extract metadata and EXIF data from images including camera settings and GPS location",
-	keywords: "exif reader, free online tool, no signup, exif-reader, free exif-reader, Exif Reader online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "exif reader, free online tool, no signup, exif-reader, free exif-reader, Exif Reader online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/exif-reader",
+		canonical: "https://sopkit.github.io/exif-reader",
 	},
 	openGraph: {
-		title: "Free EXIF Reader Online - No Signup | 30tools",
+		title: "Free EXIF Reader Online - No Signup | SopKit",
 		description: "Extract metadata and EXIF data from images including camera settings and GPS location",
-		url: "https://30tools.com/exif-reader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/exif-reader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free EXIF Reader Online - No Signup | 30tools",
+		title: "Free EXIF Reader Online - No Signup | SopKit",
 		description: "Extract metadata and EXIF data from images including camera settings and GPS location",
 		images: ["/og-image.jpg"],
 	},

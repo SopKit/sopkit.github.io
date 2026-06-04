@@ -4,23 +4,23 @@ import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free JPG Converter Online - No Signup | 30tools",
+	title: "Free JPG Converter Online - No Signup | SopKit",
 	description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use...",
-	keywords: "jpg converter, free online tool, no signup, jpg-converter, free jpg-converter, Jpg Converter online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "jpg converter, free online tool, no signup, jpg-converter, free jpg-converter, Jpg Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/jpg-converter",
+		canonical: "https://sopkit.github.io/jpg-converter",
 	},
 	openGraph: {
-		title: "Free JPG Converter Online - No Signup | 30tools",
+		title: "Free JPG Converter Online - No Signup | SopKit",
 		description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use...",
-		url: "https://30tools.com/jpg-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/jpg-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JPG Converter Online - No Signup | 30tools",
+		title: "Free JPG Converter Online - No Signup | SopKit",
 		description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use...",
 		images: ["/og-image.jpg"],
 	},

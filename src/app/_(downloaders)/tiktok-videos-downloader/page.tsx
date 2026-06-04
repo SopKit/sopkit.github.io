@@ -4,23 +4,23 @@ import TikTokDownloader from "@/components/tools/downloaders/TikTokDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Tiktok Videos Downloader Online - No Signup | 30tools",
+	title: "Free Tiktok Videos Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Tiktok Videos Downloader online. High-speed downloading with no signup needed. Easy to use.",
-	keywords: "tiktok videos downloader, free online tool, no signup, tiktok-videos-downloader, free tiktok-videos-downloader, Tiktok Videos Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "tiktok videos downloader, free online tool, no signup, tiktok-videos-downloader, free tiktok-videos-downloader, Tiktok Videos Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/tiktok-videos-downloader",
+		canonical: "https://sopkit.github.io/tiktok-videos-downloader",
 	},
 	openGraph: {
-		title: "Free Tiktok Videos Downloader Online - No Signup | 30tools",
+		title: "Free Tiktok Videos Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Tiktok Videos Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://30tools.com/tiktok-videos-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/tiktok-videos-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Tiktok Videos Downloader Online - No Signup | 30tools",
+		title: "Free Tiktok Videos Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Tiktok Videos Downloader online. High-speed downloading with no signup needed. Easy to use.",
 		images: ["/og-image.jpg"],
 	},

@@ -53,7 +53,7 @@ function generateBlogPost(template) {
 title: "${template.title}"
 description: "${template.description}"
 date: "${date}"
-author: "30tools Team"
+author: "SopKit Team"
 category: "${template.category}"
 keywords: ${JSON.stringify(template.keywords)}
 image: "/og-images/${template.slug}.jpg"
@@ -147,7 +147,7 @@ function main() {
   console.log(`\n💡 Next steps:`);
   console.log(`   1. Fill in the content sections with detailed information`);
   console.log(`   2. Add relevant images and screenshots`);
-  console.log(`   3. Link to related tools from 30tools`);
+  console.log(`   3. Link to related tools from SopKit`);
   console.log(`   4. Publish and promote on social media\n`);
 }
 

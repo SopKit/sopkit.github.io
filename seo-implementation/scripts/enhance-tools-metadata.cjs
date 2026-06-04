@@ -68,7 +68,7 @@ function generateDefaultHowTo(toolName) {
   return [
     {
       title: `Open ${toolName}`,
-      description: `Navigate to the ${toolName} page on 30tools. No signup or download required - the tool loads instantly in your browser.`
+      description: `Navigate to the ${toolName} page on SopKit. No signup or download required - the tool loads instantly in your browser.`
     },
     {
       title: 'Upload Your File',

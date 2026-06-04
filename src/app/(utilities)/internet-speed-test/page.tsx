@@ -4,23 +4,23 @@ import InternetSpeedTestTool from "@/components/tools/utilities/InternetSpeedTes
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Internet Speed Test Online - No Signup | 30tools",
+	title: "Free Internet Speed Test Online - No Signup | SopKit",
 	description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.",
-	keywords: "internet speed test, check internet speed, broadband speed test, wifi speed test, free tool, 30tools, internet-speed-test, free internet-speed-test, internet speed test online, online utility, free converter, browser tool",
+	keywords: "internet speed test, check internet speed, broadband speed test, wifi speed test, free tool, SopKit, internet-speed-test, free internet-speed-test, internet speed test online, online utility, free converter, browser tool",
 	alternates: {
-		canonical: "https://30tools.com/internet-speed-test",
+		canonical: "https://sopkit.github.io/internet-speed-test",
 	},
 	openGraph: {
-		title: "Free Internet Speed Test Online - No Signup | 30tools",
+		title: "Free Internet Speed Test Online - No Signup | SopKit",
 		description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.",
-		url: "https://30tools.com/internet-speed-test",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/internet-speed-test",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Internet Speed Test Online - No Signup | 30tools",
+		title: "Free Internet Speed Test Online - No Signup | SopKit",
 		description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.",
 		images: ["/og-image.jpg"],
 	},

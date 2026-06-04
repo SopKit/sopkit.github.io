@@ -1,17 +1,17 @@
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
-	title: "Free Audio Tools Online - No Signup | 30tools",
+	title: "Free Audio Tools Online - No Signup | SopKit",
 	description:
 		"Free online audio tools including AI text-to-speech, audio format conversion, and audio compression. Generate natural voiceovers, convert between MP3/WAV/OGG, and optimize audio files instantly. No signup, 100% browser-based processing.",
 	keywords:
 		"audio tools, text to speech, tts, ai voice generator, audio compressor, audio converter, mp3 converter, wav to mp3, free audio tools online, text to speech free, audio format converter, online audio processing",
 	openGraph: {
-		title: "Free Audio Tools Online - No Signup | 30tools",
+		title: "Free Audio Tools Online - No Signup | SopKit",
 		description:
 			"Free AI text-to-speech, audio conversion, and compression tools. Generate voiceovers and process audio files instantly in your browser.",
-		url: "https://30tools.com/audio-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/audio-tools",
+		siteName: "SopKit",
 		images: [
 			{
 				url: "/og-image.jpg",
@@ -24,7 +24,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Audio Tools Online - No Signup | 30tools",
+		title: "Free Audio Tools Online - No Signup | SopKit",
 		description:
 			"Free AI text-to-speech, audio conversion, and compression tools. Generate voiceovers and process audio files instantly in your browser.",
 		images: ["/og-image.jpg"],

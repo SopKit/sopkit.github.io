@@ -2,23 +2,23 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 import ImagePillar from "@/components/pillars/ImagePillar";
 
 export const metadata = {
-	title: "Free Free Image Tools Online Online - No Signup | 30tools",
+	title: "Free Free Image Tools Online Online - No Signup | SopKit",
 	description: "Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.",
-	keywords: "image tools, free image tools online, image compressor free, remove background online, resize image for instagram, photo enhancer free, convert heic to jpg, 30tools image",
+	keywords: "image tools, free image tools online, image compressor free, remove background online, resize image for instagram, photo enhancer free, convert heic to jpg, SopKit image",
 	alternates: {
-		canonical: "https://30tools.com/image-tools",
+		canonical: "https://sopkit.github.io/image-tools",
 	},
 	openGraph: {
-		title: "Free Free Image Tools Online Online - No Signup | 30tools",
+		title: "Free Free Image Tools Online Online - No Signup | SopKit",
 		description: "Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.",
-		url: "https://30tools.com/image-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/image-tools",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Free Image Tools Online Online - No Signup | 30tools",
+		title: "Free Free Image Tools Online Online - No Signup | SopKit",
 		description: "Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.",
 		images: ["/og-image.jpg"],
 	},
@@ -34,7 +34,7 @@ export default async function ToolPage() {
         "category": "image",
         "article": `
 ## Professional Photo Editing and Optimization Online
-30tools brings the power of desktop photo editors directly to your browser. Our Image Suite is optimized for speed, precision, and privacy, making it the perfect choice for professional workflows.
+SopKit brings the power of desktop photo editors directly to your browser. Our Image Suite is optimized for speed, precision, and privacy, making it the perfect choice for professional workflows.
 
 ### AI Subject Isolation & Background Removal
 Leverage cutting-edge machine learning models to remove backgrounds from your photos instantly. Perfect for e-commerce product listings and professional profile pictures.

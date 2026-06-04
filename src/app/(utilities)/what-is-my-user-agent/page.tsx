@@ -4,23 +4,23 @@ import UserAgentTool from "@/components/tools/built-ins/UserAgentTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free What Is My User Agent Online - No Signup | 30tools",
+	title: "Free What Is My User Agent Online - No Signup | SopKit",
 	description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "what is my user agent, free online tool, no signup, what-is-my-user-agent, free what-is-my-user-agent, What Is My User Agent online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "what is my user agent, free online tool, no signup, what-is-my-user-agent, free what-is-my-user-agent, What Is My User Agent online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/what-is-my-user-agent",
+		canonical: "https://sopkit.github.io/what-is-my-user-agent",
 	},
 	openGraph: {
-		title: "Free What Is My User Agent Online - No Signup | 30tools",
+		title: "Free What Is My User Agent Online - No Signup | SopKit",
 		description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/what-is-my-user-agent",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/what-is-my-user-agent",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free What Is My User Agent Online - No Signup | 30tools",
+		title: "Free What Is My User Agent Online - No Signup | SopKit",
 		description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

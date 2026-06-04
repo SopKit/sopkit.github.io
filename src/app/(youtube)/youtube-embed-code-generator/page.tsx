@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Embed Code Generator Online - No Signup | 30tools",
+	title: "Free YouTube Embed Code Generator Online - No Signup | SopKit",
 	description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls...",
-	keywords: "youtube embed code generator, free online tool, no signup, youtube-embed-code-generator, free youtube-embed-code-generator, Youtube Embed Code Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube embed code generator, free online tool, no signup, youtube-embed-code-generator, free youtube-embed-code-generator, Youtube Embed Code Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-embed-code-generator",
+		canonical: "https://sopkit.github.io/youtube-embed-code-generator",
 	},
 	openGraph: {
-		title: "Free YouTube Embed Code Generator Online - No Signup | 30tools",
+		title: "Free YouTube Embed Code Generator Online - No Signup | SopKit",
 		description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls...",
-		url: "https://30tools.com/youtube-embed-code-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-embed-code-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Embed Code Generator Online - No Signup | 30tools",
+		title: "Free YouTube Embed Code Generator Online - No Signup | SopKit",
 		description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls...",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import JpgToPdfExam from "@/components/tools/exam/JpgToPdfExam";
 
 export const metadata = {
-	title: "Free JPG to PDF for Exam Forms Online - No Signup | 30tools",
+	title: "Free JPG to PDF for Exam Forms Online - No Signup | SopKit",
 	description: "Resize and compress files with our free JPG to PDF for Exam Forms online. Safe and private browser utility for government exam portal applications. Easy to use.",
-	keywords: "jpg-to-pdf-exam-forms, JPG to PDF for Exam Forms, convert jpg to pdf for exam, image to pdf exam forms, pdf creator, 30tools",
+	keywords: "jpg-to-pdf-exam-forms, JPG to PDF for Exam Forms, convert jpg to pdf for exam, image to pdf exam forms, pdf creator, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/jpg-to-pdf-exam-forms",
+		canonical: "https://sopkit.github.io/jpg-to-pdf-exam-forms",
 	},
 	openGraph: {
-		title: "Free JPG to PDF for Exam Forms Online - No Signup | 30tools",
+		title: "Free JPG to PDF for Exam Forms Online - No Signup | SopKit",
 		description: "Resize and compress files with our free JPG to PDF for Exam Forms online. Safe and private browser utility for government exam portal applications. Easy to use.",
-		url: "https://30tools.com/jpg-to-pdf-exam-forms",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/jpg-to-pdf-exam-forms",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JPG to PDF for Exam Forms Online - No Signup | 30tools",
+		title: "Free JPG to PDF for Exam Forms Online - No Signup | SopKit",
 		description: "Resize and compress files with our free JPG to PDF for Exam Forms online. Safe and private browser utility for government exam portal applications. Easy to use.",
 		images: ["/og-image.jpg"],
 	},

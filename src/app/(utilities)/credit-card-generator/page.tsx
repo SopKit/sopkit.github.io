@@ -4,23 +4,23 @@ import CreditCardGeneratorTool from "@/components/tools/security/CreditCardGener
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Credit Card Generator Online - No Signup | 30tools",
+	title: "Free Credit Card Generator Online - No Signup | SopKit",
 	description: "Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks...",
-	keywords: "credit card generator, free online tool, no signup, credit-card-generator, free credit-card-generator, Credit Card Generator online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "credit card generator, free online tool, no signup, credit-card-generator, free credit-card-generator, Credit Card Generator online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/credit-card-generator",
+		canonical: "https://sopkit.github.io/credit-card-generator",
 	},
 	openGraph: {
-		title: "Free Credit Card Generator Online - No Signup | 30tools",
+		title: "Free Credit Card Generator Online - No Signup | SopKit",
 		description: "Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks...",
-		url: "https://30tools.com/credit-card-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/credit-card-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Credit Card Generator Online - No Signup | 30tools",
+		title: "Free Credit Card Generator Online - No Signup | SopKit",
 		description: "Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks...",
 		images: ["/og-image.jpg"],
 	},

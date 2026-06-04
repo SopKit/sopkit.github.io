@@ -4,23 +4,23 @@ import InstagramDPDownloader from "@/components/tools/downloaders/InstagramDPDow
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Instagram Image Downloader Online - No Signup | 30tools",
+	title: "Free Instagram Image Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Instagram Image Downloader online. High-speed downloading with no signup needed. 100% free.",
-	keywords: "instagram image downloader, free online tool, no signup, instagram-image-downloader, free instagram-image-downloader, Instagram Image Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "instagram image downloader, free online tool, no signup, instagram-image-downloader, free instagram-image-downloader, Instagram Image Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/instagram-image-downloader",
+		canonical: "https://sopkit.github.io/instagram-image-downloader",
 	},
 	openGraph: {
-		title: "Free Instagram Image Downloader Online - No Signup | 30tools",
+		title: "Free Instagram Image Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Instagram Image Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://30tools.com/instagram-image-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/instagram-image-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Instagram Image Downloader Online - No Signup | 30tools",
+		title: "Free Instagram Image Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Instagram Image Downloader online. High-speed downloading with no signup needed. 100% free.",
 		images: ["/og-image.jpg"],
 	},

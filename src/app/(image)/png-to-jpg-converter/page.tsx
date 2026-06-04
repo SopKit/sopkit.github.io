@@ -4,23 +4,23 @@ import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free PNG to JPG Converter Online - No Signup | 30tools",
+	title: "Free PNG to JPG Converter Online - No Signup | SopKit",
 	description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in...",
-	keywords: "png to jpg converter, convert png to jpg, image format converter, online image converter, free tool, 30tools, png-to-jpg-converter, free png-to-jpg-converter, png to jpg converter online, image editing, photo editor, browser image tool",
+	keywords: "png to jpg converter, convert png to jpg, image format converter, online image converter, free tool, SopKit, png-to-jpg-converter, free png-to-jpg-converter, png to jpg converter online, image editing, photo editor, browser image tool",
 	alternates: {
-		canonical: "https://30tools.com/png-to-jpg-converter",
+		canonical: "https://sopkit.github.io/png-to-jpg-converter",
 	},
 	openGraph: {
-		title: "Free PNG to JPG Converter Online - No Signup | 30tools",
+		title: "Free PNG to JPG Converter Online - No Signup | SopKit",
 		description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in...",
-		url: "https://30tools.com/png-to-jpg-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/png-to-jpg-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PNG to JPG Converter Online - No Signup | 30tools",
+		title: "Free PNG to JPG Converter Online - No Signup | SopKit",
 		description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in...",
 		images: ["/og-image.jpg"],
 	},

@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-	title: "Text Tools - Free Online Text Utilities | 30tools",
+	title: "Text Tools - Free Online Text Utilities | SopKit",
 	description:
 		"Free online text tools: word counter, case converter, line sorter, find & replace with regex, duplicate remover, text reverser, and Markdown converter. Unicode-aware, privacy-first, browser-based. No signup required.",
 	keywords:
 		"text tools, line sorter, case converter, word counter, text reverser, markdown to text, free online text utilities, text case changer, remove duplicate lines, find and replace online, text formatter, character counter, reading time calculator, uppercase converter, lowercase converter",
 	openGraph: {
-		title: "Text Tools - Free Online Text Utilities | 30tools",
+		title: "Text Tools - Free Online Text Utilities | SopKit",
 		description:
 			"Count words, convert case, sort lines, and clean text instantly with free browser-based tools. No signup required.",
-		url: "https://30tools.com/text-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/text-tools",
+		siteName: "SopKit",
 		type: "website",
 	},
 	twitter: {

@@ -21,7 +21,7 @@ export function HomeSEOContent() {
 		{
 			icon: <Zap className="h-6 w-6 text-primary" />,
 			title: "YouTube Magic Redirect",
-			description: "Instantly download any video by replacing 'youtube.com' with '30tools.com' in the URL. It's the fastest way to get your content."
+			description: "Instantly download any video by replacing 'youtube.com' with 'sopkit.github.io' in the URL. It's the fastest way to get your content."
 		}
 	];
 
@@ -33,7 +33,7 @@ export function HomeSEOContent() {
 						The All-in-One Toolkit for <span className="text-primary">Modern Creators</span>
 					</h2>
 					<p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-						At 30tools, we believe that powerful software should be accessible to everyone. We've built a massive ecosystem of specialized utilities to help you solve everyday digital problems—whether you're a developer, designer, student, or content creator.
+						At SopKit, we believe that powerful software should be accessible to everyone. We've built a massive ecosystem of specialized utilities to help you solve everyday digital problems—whether you're a developer, designer, student, or content creator.
 					</p>
 
 					<div className="space-y-6">

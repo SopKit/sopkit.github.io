@@ -4,23 +4,23 @@ import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Image Resizer Online - No Signup | 30tools",
+	title: "Free Image Resizer Online - No Signup | SopKit",
 	description: "Resize images with custom dimensions and aspect ratios",
-	keywords: "image resizer, resize image online, photo resizer, image dimension converter, free online tool, 30tools, image-resizer, free image-resizer, image resizer online, image editing, photo editor, browser image tool",
+	keywords: "image resizer, resize image online, photo resizer, image dimension converter, free online tool, SopKit, image-resizer, free image-resizer, image resizer online, image editing, photo editor, browser image tool",
 	alternates: {
-		canonical: "https://30tools.com/image-resizer",
+		canonical: "https://sopkit.github.io/image-resizer",
 	},
 	openGraph: {
-		title: "Free Image Resizer Online - No Signup | 30tools",
+		title: "Free Image Resizer Online - No Signup | SopKit",
 		description: "Resize images with custom dimensions and aspect ratios",
-		url: "https://30tools.com/image-resizer",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/image-resizer",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Image Resizer Online - No Signup | 30tools",
+		title: "Free Image Resizer Online - No Signup | SopKit",
 		description: "Resize images with custom dimensions and aspect ratios",
 		images: ["/og-image.jpg"],
 	},

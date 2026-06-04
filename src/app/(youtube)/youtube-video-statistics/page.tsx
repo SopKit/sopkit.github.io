@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Video Statistics Online - No Signup | 30tools",
+	title: "Free YouTube Video Statistics Online - No Signup | SopKit",
 	description: "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool.",
-	keywords: "youtube video statistics, free online tool, no signup, youtube-video-statistics, free youtube-video-statistics, Youtube Video Statistics online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube video statistics, free online tool, no signup, youtube-video-statistics, free youtube-video-statistics, Youtube Video Statistics online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-video-statistics",
+		canonical: "https://sopkit.github.io/youtube-video-statistics",
 	},
 	openGraph: {
-		title: "Free YouTube Video Statistics Online - No Signup | 30tools",
+		title: "Free YouTube Video Statistics Online - No Signup | SopKit",
 		description: "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool.",
-		url: "https://30tools.com/youtube-video-statistics",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-video-statistics",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Video Statistics Online - No Signup | 30tools",
+		title: "Free YouTube Video Statistics Online - No Signup | SopKit",
 		description: "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool.",
 		images: ["/og-image.jpg"],
 	},

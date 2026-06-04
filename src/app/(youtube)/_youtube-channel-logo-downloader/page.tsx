@@ -4,23 +4,23 @@ import YouTubeDownloader from "@/components/tools/downloaders/YouTubeDownloader"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Channel Logo Downloader Online - No Signup | 30tools",
+	title: "Free YouTube Channel Logo Downloader Online - No Signup | SopKit",
 	description: "Download high-quality YouTube channel logos and profile pictures instantly. Perfect for brand audits and design research. Free, fast, and secure online...",
-	keywords: "youtube channel logo downloader, free online tool, no signup, youtube-channel-logo-downloader, free youtube-channel-logo-downloader, Youtube Channel Logo Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube channel logo downloader, free online tool, no signup, youtube-channel-logo-downloader, free youtube-channel-logo-downloader, Youtube Channel Logo Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-channel-logo-downloader",
+		canonical: "https://sopkit.github.io/youtube-channel-logo-downloader",
 	},
 	openGraph: {
-		title: "Free YouTube Channel Logo Downloader Online - No Signup | 30tools",
+		title: "Free YouTube Channel Logo Downloader Online - No Signup | SopKit",
 		description: "Download high-quality YouTube channel logos and profile pictures instantly. Perfect for brand audits and design research. Free, fast, and secure online...",
-		url: "https://30tools.com/youtube-channel-logo-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-channel-logo-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Channel Logo Downloader Online - No Signup | 30tools",
+		title: "Free YouTube Channel Logo Downloader Online - No Signup | SopKit",
 		description: "Download high-quality YouTube channel logos and profile pictures instantly. Perfect for brand audits and design research. Free, fast, and secure online...",
 		images: ["/og-image.jpg"],
 	},

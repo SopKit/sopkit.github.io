@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free WordPress Theme Detector Online - No Signup | 30tools",
+	title: "Free WordPress Theme Detector Online - No Signup | SopKit",
 	description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "wordpress theme detector, free online tool, no signup, wordpress-theme-detector, free wordpress-theme-detector, Wordpress Theme Detector online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "wordpress theme detector, free online tool, no signup, wordpress-theme-detector, free wordpress-theme-detector, Wordpress Theme Detector online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/wordpress-theme-detector",
+		canonical: "https://sopkit.github.io/wordpress-theme-detector",
 	},
 	openGraph: {
-		title: "Free WordPress Theme Detector Online - No Signup | 30tools",
+		title: "Free WordPress Theme Detector Online - No Signup | SopKit",
 		description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/wordpress-theme-detector",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/wordpress-theme-detector",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free WordPress Theme Detector Online - No Signup | 30tools",
+		title: "Free WordPress Theme Detector Online - No Signup | SopKit",
 		description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

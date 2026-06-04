@@ -92,7 +92,7 @@ export function AppleNavbar() {
 						className="flex items-center gap-2 group"
 					>
 						<span className="text-xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/75 group-hover:to-primary transition-all duration-300">
-							30tools
+							SopKit
 						</span>
 					</Link>
 
@@ -121,7 +121,7 @@ export function AppleNavbar() {
 						<ThemeToggle />
 
 						<a
-							href="https://github.com/sh20raj/30tools"
+							href="https://github.com/SopKit/sopkit.github.io"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="p-2 text-muted-foreground hover:text-foreground hover:bg-muted/40 rounded-none transition-all flex items-center gap-2 border border-transparent hover:border-border/30"
@@ -192,7 +192,7 @@ export function AppleNavbar() {
 						<div className="flex items-center justify-between gap-4 py-2 border-t border-border/40 mt-2 pt-4">
 							<div className="flex items-center gap-3">
 								<ThemeToggle />
-								<a href="https://github.com/sh20raj/30tools" className="text-sm text-muted-foreground hover:text-foreground">GitHub</a>
+								<a href="https://github.com/SopKit/sopkit.github.io" className="text-sm text-muted-foreground hover:text-foreground">GitHub</a>
 							</div>
 							<Suspense fallback={<div className="h-9 w-20 bg-muted/40 rounded-none" />}>
 								<AuthButton />

@@ -4,23 +4,23 @@ import OpenGraphGenerator from "@/components/tools/built-ins/OpenGraphGenerator"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Open Graph Generator Online - No Signup | 30tools",
+	title: "Free Open Graph Generator Online - No Signup | SopKit",
 	description: "Audit websites, analyze search rankings, and generate schemas with our free Open Graph Generator online. Optimize search presence with no signup. Free & secure.",
-	keywords: "open graph generator, free online tool, no signup, open-graph-generator, free open-graph-generator, Open Graph Generator online, SEO tool, search optimizer, website analyzer, free SEO utility, 30tools",
+	keywords: "open graph generator, free online tool, no signup, open-graph-generator, free open-graph-generator, Open Graph Generator online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/open-graph-generator",
+		canonical: "https://sopkit.github.io/open-graph-generator",
 	},
 	openGraph: {
-		title: "Free Open Graph Generator Online - No Signup | 30tools",
+		title: "Free Open Graph Generator Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Open Graph Generator online. Optimize search presence with no signup. Free & secure.",
-		url: "https://30tools.com/open-graph-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/open-graph-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Open Graph Generator Online - No Signup | 30tools",
+		title: "Free Open Graph Generator Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Open Graph Generator online. Optimize search presence with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},

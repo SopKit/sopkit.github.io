@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import ResizeImageCm from "@/components/tools/image/ResizeImageCm";
 
 export const metadata = {
-	title: "Free Resize Image in MM Online - No Signup | 30tools",
+	title: "Free Resize Image in MM Online - No Signup | SopKit",
 	description: "Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents.",
 	keywords: "resize-image-in-mm, Resize Image in MM",
 	alternates: {
-		canonical: "https://30tools.com/resize-image-in-mm",
+		canonical: "https://sopkit.github.io/resize-image-in-mm",
 	},
 	openGraph: {
-		title: "Free Resize Image in MM Online - No Signup | 30tools",
+		title: "Free Resize Image in MM Online - No Signup | SopKit",
 		description: "Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents.",
-		url: "https://30tools.com/resize-image-in-mm",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/resize-image-in-mm",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Resize Image in MM Online - No Signup | 30tools",
+		title: "Free Resize Image in MM Online - No Signup | SopKit",
 		description: "Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents.",
 		images: ["/og-image.jpg"],
 	},

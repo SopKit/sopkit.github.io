@@ -4,23 +4,23 @@ import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free JavaScript Beautifier Online - No Signup | 30tools",
+	title: "Free JavaScript Beautifier Online - No Signup | SopKit",
 	description: "Format, minify, validate, and convert code snippets with our free JavaScript Beautifier online. Secure, local developer utility with no registration. 100% free.",
-	keywords: "javascript beautifier, free online tool, no signup, javascript-beautifier, free javascript-beautifier, Javascript Beautifier online, developer tool, web dev utility, code formatter, online developer, 30tools",
+	keywords: "javascript beautifier, free online tool, no signup, javascript-beautifier, free javascript-beautifier, Javascript Beautifier online, developer tool, web dev utility, code formatter, online developer, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/javascript-beautifier",
+		canonical: "https://sopkit.github.io/javascript-beautifier",
 	},
 	openGraph: {
-		title: "Free JavaScript Beautifier Online - No Signup | 30tools",
+		title: "Free JavaScript Beautifier Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free JavaScript Beautifier online. Secure, local developer utility with no registration. 100% free.",
-		url: "https://30tools.com/javascript-beautifier",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/javascript-beautifier",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JavaScript Beautifier Online - No Signup | 30tools",
+		title: "Free JavaScript Beautifier Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free JavaScript Beautifier online. Secure, local developer utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},

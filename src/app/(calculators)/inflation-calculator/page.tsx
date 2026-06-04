@@ -4,23 +4,23 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Inflation Calculator - Buying Power Over Time | 30tools",
+	title: "Inflation Calculator - Buying Power Over Time | SopKit",
 	description: "See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.",
 	keywords: "inflation calculator, buying power calculator, future value of money, purchasing power calculator, inflation impact",
 	alternates: {
-		canonical: "https://30tools.com/inflation-calculator",
+		canonical: "https://sopkit.github.io/inflation-calculator",
 	},
 	openGraph: {
-		title: "Inflation Calculator - Buying Power Over Time | 30tools",
+		title: "Inflation Calculator - Buying Power Over Time | SopKit",
 		description: "See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.",
-		url: "https://30tools.com/inflation-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/inflation-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Inflation Calculator - Buying Power Over Time | 30tools",
+		title: "Inflation Calculator - Buying Power Over Time | SopKit",
 		description: "See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Views Ratio Calculator Online - No Signup | 30tools",
+	title: "Free YouTube Views Ratio Calculator Online - No Signup | SopKit",
 	description: "Calculate the view-to-engagement ratio for any YouTube video instantly. Our free online tool helps you understand audience interaction and video...",
-	keywords: "youtube views ratio calculator, free online tool, no signup, youtube-views-ratio-calculator, free youtube-views-ratio-calculator, Youtube Views Ratio Calculator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube views ratio calculator, free online tool, no signup, youtube-views-ratio-calculator, free youtube-views-ratio-calculator, Youtube Views Ratio Calculator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-views-ratio-calculator",
+		canonical: "https://sopkit.github.io/youtube-views-ratio-calculator",
 	},
 	openGraph: {
-		title: "Free YouTube Views Ratio Calculator Online - No Signup | 30tools",
+		title: "Free YouTube Views Ratio Calculator Online - No Signup | SopKit",
 		description: "Calculate the view-to-engagement ratio for any YouTube video instantly. Our free online tool helps you understand audience interaction and video...",
-		url: "https://30tools.com/youtube-views-ratio-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-views-ratio-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Views Ratio Calculator Online - No Signup | 30tools",
+		title: "Free YouTube Views Ratio Calculator Online - No Signup | SopKit",
 		description: "Calculate the view-to-engagement ratio for any YouTube video instantly. Our free online tool helps you understand audience interaction and video...",
 		images: ["/og-image.jpg"],
 	},

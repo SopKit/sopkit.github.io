@@ -4,23 +4,23 @@ import M3u8Downloader from "@/components/tools/downloaders/M3u8Downloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free M3U8 Downloader Online - No Signup | 30tools",
+	title: "Free M3U8 Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free M3U8 Downloader online. High-speed downloading with no signup needed. 100% free and secure.",
-	keywords: "m3u8 downloader, free online tool, no signup, m3u8-downloader, free m3u8-downloader, M3u8 Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "m3u8 downloader, free online tool, no signup, m3u8-downloader, free m3u8-downloader, M3u8 Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/m3u8-downloader",
+		canonical: "https://sopkit.github.io/m3u8-downloader",
 	},
 	openGraph: {
-		title: "Free M3U8 Downloader Online - No Signup | 30tools",
+		title: "Free M3U8 Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free M3U8 Downloader online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://30tools.com/m3u8-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/m3u8-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free M3U8 Downloader Online - No Signup | 30tools",
+		title: "Free M3U8 Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free M3U8 Downloader online. High-speed downloading with no signup needed. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Flip Image Online - No Signup | 30tools",
+	title: "Free Flip Image Online - No Signup | SopKit",
 	description: "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "flip image, free online tool, no signup, flip-image, free flip-image, Flip Image online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "flip image, free online tool, no signup, flip-image, free flip-image, Flip Image online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/flip-image",
+		canonical: "https://sopkit.github.io/flip-image",
 	},
 	openGraph: {
-		title: "Free Flip Image Online - No Signup | 30tools",
+		title: "Free Flip Image Online - No Signup | SopKit",
 		description: "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/flip-image",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/flip-image",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Flip Image Online - No Signup | 30tools",
+		title: "Free Flip Image Online - No Signup | SopKit",
 		description: "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

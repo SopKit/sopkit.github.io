@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Complete SEO Audit Tool Online - No Signup | 30tools",
+	title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
 	description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
-	keywords: "seo audit tool, website audit, seo checker, on-page seo analysis, site audit, free seo tool, 30tools, seo-audit-tool, free seo-audit-tool, seo audit tool online, seo tool, website analyzer",
+	keywords: "seo audit tool, website audit, seo checker, on-page seo analysis, site audit, free seo tool, SopKit, seo-audit-tool, free seo-audit-tool, seo audit tool online, seo tool, website analyzer",
 	alternates: {
-		canonical: "https://30tools.com/seo-audit-tool",
+		canonical: "https://sopkit.github.io/seo-audit-tool",
 	},
 	openGraph: {
-		title: "Free Complete SEO Audit Tool Online - No Signup | 30tools",
+		title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
-		url: "https://30tools.com/seo-audit-tool",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/seo-audit-tool",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Complete SEO Audit Tool Online - No Signup | 30tools",
+		title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},

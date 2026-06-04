@@ -4,23 +4,23 @@ import YouTubeDownloader from "@/components/tools/downloaders/YouTubeDownloader"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Description Extractor Online - No Signup | 30tools",
+	title: "Free YouTube Description Extractor Online - No Signup | SopKit",
 	description: "Extract the full description from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure...",
-	keywords: "youtube description extractor, free online tool, no signup, youtube-description-extractor, free youtube-description-extractor, Youtube Description Extractor online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube description extractor, free online tool, no signup, youtube-description-extractor, free youtube-description-extractor, Youtube Description Extractor online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-description-extractor",
+		canonical: "https://sopkit.github.io/youtube-description-extractor",
 	},
 	openGraph: {
-		title: "Free YouTube Description Extractor Online - No Signup | 30tools",
+		title: "Free YouTube Description Extractor Online - No Signup | SopKit",
 		description: "Extract the full description from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure...",
-		url: "https://30tools.com/youtube-description-extractor",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-description-extractor",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Description Extractor Online - No Signup | 30tools",
+		title: "Free YouTube Description Extractor Online - No Signup | SopKit",
 		description: "Extract the full description from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure...",
 		images: ["/og-image.jpg"],
 	},

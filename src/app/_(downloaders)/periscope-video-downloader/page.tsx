@@ -4,23 +4,23 @@ import PeriscopeDownloader from "@/components/tools/downloaders/PeriscopeDownloa
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Periscope Video Downloader Online - No Signup | 30tools",
+	title: "Free Periscope Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Periscope Video Downloader online. High-speed downloading with no signup needed. 100% free.",
-	keywords: "periscope video downloader, free online tool, no signup, periscope-video-downloader, free periscope-video-downloader, Periscope Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "periscope video downloader, free online tool, no signup, periscope-video-downloader, free periscope-video-downloader, Periscope Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/periscope-video-downloader",
+		canonical: "https://sopkit.github.io/periscope-video-downloader",
 	},
 	openGraph: {
-		title: "Free Periscope Video Downloader Online - No Signup | 30tools",
+		title: "Free Periscope Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Periscope Video Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://30tools.com/periscope-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/periscope-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Periscope Video Downloader Online - No Signup | 30tools",
+		title: "Free Periscope Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Periscope Video Downloader online. High-speed downloading with no signup needed. 100% free.",
 		images: ["/og-image.jpg"],
 	},

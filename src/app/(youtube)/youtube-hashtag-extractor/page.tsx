@@ -4,23 +4,23 @@ import YouTubeDownloader from "@/components/tools/downloaders/YouTubeDownloader"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Hashtag Extractor Online - No Signup | 30tools",
+	title: "Free YouTube Hashtag Extractor Online - No Signup | SopKit",
 	description: "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video...",
-	keywords: "youtube hashtag extractor, free online tool, no signup, youtube-hashtag-extractor, free youtube-hashtag-extractor, Youtube Hashtag Extractor online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube hashtag extractor, free online tool, no signup, youtube-hashtag-extractor, free youtube-hashtag-extractor, Youtube Hashtag Extractor online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-hashtag-extractor",
+		canonical: "https://sopkit.github.io/youtube-hashtag-extractor",
 	},
 	openGraph: {
-		title: "Free YouTube Hashtag Extractor Online - No Signup | 30tools",
+		title: "Free YouTube Hashtag Extractor Online - No Signup | SopKit",
 		description: "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video...",
-		url: "https://30tools.com/youtube-hashtag-extractor",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-hashtag-extractor",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Hashtag Extractor Online - No Signup | 30tools",
+		title: "Free YouTube Hashtag Extractor Online - No Signup | SopKit",
 		description: "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video...",
 		images: ["/og-image.jpg"],
 	},

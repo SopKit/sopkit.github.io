@@ -157,7 +157,7 @@ export default function ToolImplementation({ toolId }: { toolId: string }) {
 			<SafeHttpPanel
 				mode="redirect"
 				title="Redirect chain"
-				description="Follows redirects with HEAD requests via the 30tools safe HTTP proxy."
+				description="Follows redirects with HEAD requests via the SopKit safe HTTP proxy."
 			/>
 		);
 	}

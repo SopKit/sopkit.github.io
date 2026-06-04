@@ -11,23 +11,23 @@ export async function generateMetadata({ params }) {
 	if (!tool) return {};
 
 	return {
-		title: `${tool.seoTitle || tool.name} - API Test Utility | 30tools`,
+		title: `${tool.seoTitle || tool.name} - API Test Utility | SopKit`,
 		description: tool.seoDescription || tool.description,
-		keywords: `api tester, ${tool.name.toLowerCase()}, validate api key, debug api, 30tools`,
+		keywords: `api tester, ${tool.name.toLowerCase()}, validate api key, debug api, SopKit`,
 		alternates: {
-			canonical: `https://30tools.com/api-key-tester/${slug}`,
+			canonical: `https://sopkit.github.io/api-key-tester/${slug}`,
 		},
 		openGraph: {
-			title: `${tool.name} - API Test Utility | 30tools`,
+			title: `${tool.name} - API Test Utility | SopKit`,
 			description: tool.description,
-			url: `https://30tools.com/api-key-tester/${slug}`,
-			siteName: "30tools",
+			url: `https://sopkit.github.io/api-key-tester/${slug}`,
+			siteName: "SopKit",
 			images: [{ url: "/og-image.jpg" }],
 			type: "website",
 		},
 		twitter: {
 			card: "summary_large_image",
-			title: `${tool.name} - API Test Utility | 30tools`,
+			title: `${tool.name} - API Test Utility | SopKit`,
 			description: tool.description,
 			images: ["/og-image.jpg"],
 		},
@@ -67,7 +67,7 @@ export default async function ApiKeyTesterPage({ params }) {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: `https://30tools.com/api-key-tester/${slug}`,
+						url: `https://sopkit.github.io/api-key-tester/${slug}`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

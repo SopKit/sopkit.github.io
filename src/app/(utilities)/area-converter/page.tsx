@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Area Converter Online - No Signup | 30tools",
+	title: "Free Area Converter Online - No Signup | SopKit",
 	description: "Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design...",
-	keywords: "area converter, free online tool, no signup, area-converter, free area-converter, Area Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "area converter, free online tool, no signup, area-converter, free area-converter, Area Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/area-converter",
+		canonical: "https://sopkit.github.io/area-converter",
 	},
 	openGraph: {
-		title: "Free Area Converter Online - No Signup | 30tools",
+		title: "Free Area Converter Online - No Signup | SopKit",
 		description: "Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design...",
-		url: "https://30tools.com/area-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/area-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Area Converter Online - No Signup | 30tools",
+		title: "Free Area Converter Online - No Signup | SopKit",
 		description: "Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design...",
 		images: ["/og-image.jpg"],
 	},

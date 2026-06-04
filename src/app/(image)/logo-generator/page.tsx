@@ -4,23 +4,23 @@ import LogoGeneratorTool from "@/components/tools/image/LogoGeneratorTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Logo Generator Online - No Signup | 30tools",
+	title: "Free Logo Generator Online - No Signup | SopKit",
 	description: "Create professional logos with text, fonts, and custom colors",
-	keywords: "logo generator, free online tool, no signup, logo-generator, free logo-generator, Logo Generator online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "logo generator, free online tool, no signup, logo-generator, free logo-generator, Logo Generator online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/logo-generator",
+		canonical: "https://sopkit.github.io/logo-generator",
 	},
 	openGraph: {
-		title: "Free Logo Generator Online - No Signup | 30tools",
+		title: "Free Logo Generator Online - No Signup | SopKit",
 		description: "Create professional logos with text, fonts, and custom colors",
-		url: "https://30tools.com/logo-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/logo-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Logo Generator Online - No Signup | 30tools",
+		title: "Free Logo Generator Online - No Signup | SopKit",
 		description: "Create professional logos with text, fonts, and custom colors",
 		images: ["/og-image.jpg"],
 	},

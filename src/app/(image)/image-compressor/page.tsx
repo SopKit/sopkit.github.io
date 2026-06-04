@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageCompressorTool from "@/components/tools/image/ImageCompressorTool";
 
 export const metadata = {
-	title: "Free Image Compressor Online - No Signup | 30tools",
+	title: "Free Image Compressor Online - No Signup | SopKit",
 	description: "Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing.",
-	keywords: "image-compressor, Image Compressor, free image-compressor, Image Compressor online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "image-compressor, Image Compressor, free image-compressor, Image Compressor online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/image-compressor",
+		canonical: "https://sopkit.github.io/image-compressor",
 	},
 	openGraph: {
-		title: "Free Image Compressor Online - No Signup | 30tools",
+		title: "Free Image Compressor Online - No Signup | SopKit",
 		description: "Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing.",
-		url: "https://30tools.com/image-compressor",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/image-compressor",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Image Compressor Online - No Signup | 30tools",
+		title: "Free Image Compressor Online - No Signup | SopKit",
 		description: "Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing.",
 		images: ["/og-image.jpg"],
 	},

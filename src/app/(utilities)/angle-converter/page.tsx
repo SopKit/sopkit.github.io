@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Angle Converter Online - No Signup | 30tools",
+	title: "Free Angle Converter Online - No Signup | SopKit",
 	description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians...",
-	keywords: "angle converter, free online tool, no signup, angle-converter, free angle-converter, Angle Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "angle converter, free online tool, no signup, angle-converter, free angle-converter, Angle Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/angle-converter",
+		canonical: "https://sopkit.github.io/angle-converter",
 	},
 	openGraph: {
-		title: "Free Angle Converter Online - No Signup | 30tools",
+		title: "Free Angle Converter Online - No Signup | SopKit",
 		description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians...",
-		url: "https://30tools.com/angle-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/angle-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Angle Converter Online - No Signup | 30tools",
+		title: "Free Angle Converter Online - No Signup | SopKit",
 		description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians...",
 		images: ["/og-image.jpg"],
 	},

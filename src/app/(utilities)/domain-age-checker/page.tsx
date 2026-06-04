@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Domain Age Checker Online - No Signup | 30tools",
+	title: "Free Domain Age Checker Online - No Signup | SopKit",
 	description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis.",
-	keywords: "domain age checker, free online tool, no signup, domain-age-checker, free domain-age-checker, Domain Age Checker online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "domain age checker, free online tool, no signup, domain-age-checker, free domain-age-checker, Domain Age Checker online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/domain-age-checker",
+		canonical: "https://sopkit.github.io/domain-age-checker",
 	},
 	openGraph: {
-		title: "Free Domain Age Checker Online - No Signup | 30tools",
+		title: "Free Domain Age Checker Online - No Signup | SopKit",
 		description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis.",
-		url: "https://30tools.com/domain-age-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/domain-age-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Domain Age Checker Online - No Signup | 30tools",
+		title: "Free Domain Age Checker Online - No Signup | SopKit",
 		description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis.",
 		images: ["/og-image.jpg"],
 	},

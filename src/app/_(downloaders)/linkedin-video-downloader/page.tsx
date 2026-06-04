@@ -4,23 +4,23 @@ import LinkedinDownloader from "@/components/tools/downloaders/LinkedinDownloade
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Linkedin Video Downloader Online - No Signup | 30tools",
+	title: "Free Linkedin Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Linkedin Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-	keywords: "linkedin video downloader, download linkedin videos, linkedin video saver, linkedin to mp4, free tool, 30tools, linkedin-video-downloader, free linkedin-video-downloader, linkedin video downloader online, online downloader, free media saver, video downloader",
+	keywords: "linkedin video downloader, download linkedin videos, linkedin video saver, linkedin to mp4, free tool, SopKit, linkedin-video-downloader, free linkedin-video-downloader, linkedin video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://30tools.com/linkedin-video-downloader",
+		canonical: "https://sopkit.github.io/linkedin-video-downloader",
 	},
 	openGraph: {
-		title: "Free Linkedin Video Downloader Online - No Signup | 30tools",
+		title: "Free Linkedin Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Linkedin Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://30tools.com/linkedin-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/linkedin-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Linkedin Video Downloader Online - No Signup | 30tools",
+		title: "Free Linkedin Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Linkedin Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 		images: ["/og-image.jpg"],
 	},

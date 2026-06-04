@@ -4,23 +4,23 @@ import ImdbDownloader from "@/components/tools/downloaders/ImdbDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Imdb Video Downloader Online - No Signup | 30tools",
+	title: "Free Imdb Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Imdb Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
-	keywords: "imdb video downloader, free online tool, no signup, imdb-video-downloader, free imdb-video-downloader, Imdb Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "imdb video downloader, free online tool, no signup, imdb-video-downloader, free imdb-video-downloader, Imdb Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/imdb-video-downloader",
+		canonical: "https://sopkit.github.io/imdb-video-downloader",
 	},
 	openGraph: {
-		title: "Free Imdb Video Downloader Online - No Signup | 30tools",
+		title: "Free Imdb Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Imdb Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
-		url: "https://30tools.com/imdb-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/imdb-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Imdb Video Downloader Online - No Signup | 30tools",
+		title: "Free Imdb Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Imdb Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
 		images: ["/og-image.jpg"],
 	},

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const INDEXNOW_KEY = "634a2c77198a45429967eb9dc1252278";
-const SITE_URL = "https://30tools.com";
+const SITE_URL = "https://sopkit.github.io";
 
 // All downloader URLs
 const DOWNLOADER_URLS = [
@@ -89,7 +89,7 @@ export async function POST(_request) {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
-				host: "30tools.com",
+				host: "sopkit.github.io",
 				key: INDEXNOW_KEY,
 				keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
 				urlList: allUrls.slice(0, 10000), // IndexNow supports up to 10K URLs per batch
@@ -101,7 +101,7 @@ export async function POST(_request) {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
-				host: "30tools.com",
+				host: "sopkit.github.io",
 				key: INDEXNOW_KEY,
 				keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
 				urlList: allUrls.slice(0, 10000),
@@ -115,7 +115,7 @@ export async function POST(_request) {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({
-					host: "30tools.com",
+					host: "sopkit.github.io",
 					key: INDEXNOW_KEY,
 					keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
 					urlList: allUrls.slice(0, 10000),

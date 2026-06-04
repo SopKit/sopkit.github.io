@@ -1,26 +1,26 @@
 import Link from "next/link";
 import { getAllCategories } from "@/lib/tools";	export const metadata = {
-		title: "Free Tool Guides by Category | 30tools",
+		title: "Free Tool Guides by Category | SopKit",
 		description:
-			"Browse free tool guides for every category on 30tools. Find the best image, PDF, SEO, developer, downloader, and utility tools online.",
+			"Browse free tool guides for every category on SopKit. Find the best image, PDF, SEO, developer, downloader, and utility tools online.",
 		keywords:
-			"free tool guides, online tool categories, 30tools guide, best online tools, tool category pages",
+			"free tool guides, online tool categories, SopKit guide, best online tools, tool category pages",
 		alternates: {
-			canonical: "https://30tools.com/tool-guides",
+			canonical: "https://sopkit.github.io/tool-guides",
 		},
 		openGraph: {
-			title: "Free Tool Guides by Category | 30tools",
+			title: "Free Tool Guides by Category | SopKit",
 			description:
-				"Browse free tool guides for every category on 30tools. Find the best image, PDF, SEO, developer, downloader, and utility tools online.",
-			url: "https://30tools.com/tool-guides",
+				"Browse free tool guides for every category on SopKit. Find the best image, PDF, SEO, developer, downloader, and utility tools online.",
+			url: "https://sopkit.github.io/tool-guides",
 			type: "website",
 			images: [{ url: "/og-image.jpg" }],
 		},
 		twitter: {
 			card: "summary_large_image",
-			title: "Free Tool Guides by Category | 30tools",
+			title: "Free Tool Guides by Category | SopKit",
 			description:
-				"Browse free tool guides for every category on 30tools. Find the best image, PDF, SEO, developer, downloader, and utility tools online.",
+				"Browse free tool guides for every category on SopKit. Find the best image, PDF, SEO, developer, downloader, and utility tools online.",
 			images: ["/og-image.jpg"],
 		},
 		robots: { index: true, follow: true },
@@ -41,7 +41,7 @@ export default function ToolGuidesIndexPage() {
 							Free Tool Guides by Category
 						</h1>
 						<p className="mt-6 text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
-							Explore every category of tools on 30tools with quick category guides and direct links to the best free online workflows.
+							Explore every category of tools on SopKit with quick category guides and direct links to the best free online workflows.
 						</p>
 					</div>
 				</section>

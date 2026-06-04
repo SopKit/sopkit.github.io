@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Final fix for 30tools.com tool pages.
+ * Final fix for sopkit.github.io tool pages.
  * 1. Updates all pages using RegisteredToolMount to directly import and render specific components.
  * 2. Creates missing page files for tools that don't have them.
  * 3. Deletes the generic RegisteredToolMount component file.
@@ -416,9 +416,9 @@ for (const tool of tools) {
     fs.mkdirSync(pageDir, { recursive: true });
   }
   // Generate basic metadata using tool data
-  const title = `${tool.name} Online – Free & No Signup | 30tools`;
+  const title = `${tool.name} Online – Free & No Signup | SopKit`;
   const description = tool.description || `Use our free ${tool.name} tool. Privacy-friendly, browser-based, no signup required.`;
-  const canonical = `https://30tools.com${tool.route}`;
+  const canonical = `https://sopkit.github.io${tool.route}`;
   const robots = tool.id === 'pdf-editor' ? '{ index: false, follow: true }' : '{ index: true, follow: true }';
   // Component usage
   const propUsage = info.prop ? `<${info.component} ${info.prop} />` : `<${info.component} />`;
@@ -436,7 +436,7 @@ export const metadata = {
 		title: "${tool.name} – Free Online Tool",
 		description: "${description.replace(/"/g, '').substring(0, 160)}",
 		url: "${canonical}",
-		siteName: "30tools",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},

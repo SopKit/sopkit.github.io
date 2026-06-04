@@ -59,7 +59,7 @@ const siteVerification = {
 
 export const metadata: Metadata = {
 	title: {
-		default: "Free Online Tools - No Signup | 30tools",
+		default: "Free Online Tools - No Signup | SopKit",
 		template: "%s",
 	},
 	description: `Professional online toolkit with ${TOOL_COUNT_STRING} free tools for image compression, PDF editing, video conversion, SEO analysis, developer utilities, text processing, and more. Free to use with no signup required.`,
@@ -107,12 +107,12 @@ export const metadata: Metadata = {
 		"professional web tools",
 		"instant online tools",
 	].join(", "),
-	authors: [{ name: "30tools Team", url: "https://30tools.com" }],
-	creator: "30tools",
-	publisher: "30tools",
+	authors: [{ name: "SopKit Team", url: "https://sopkit.github.io" }],
+	creator: "SopKit",
+	publisher: "SopKit",
 	category: "Technology",
 	classification: "Online Tools and Utilities",
-	applicationName: "30tools",
+	applicationName: "SopKit",
 	referrer: "origin-when-cross-origin",
 	formatDetection: {
 		email: false,
@@ -122,31 +122,31 @@ export const metadata: Metadata = {
 	metadataBase: new URL(SITE_URL),
 	alternates: {
 		types: {
-			"application/rss+xml": [{ url: "/feed.xml", title: "30tools RSS Feed" }],
+			"application/rss+xml": [{ url: "/feed.xml", title: "SopKit RSS Feed" }],
 		},
 	},
 	openGraph: {
 		type: "website",
 		locale: "en_US",
 		url: SITE_URL,
-		siteName: "30tools",
-		title: `30tools - ${TOOL_COUNT_STRING} Free Online Tools | Professional Toolkit for Everyone`,
+		siteName: "SopKit",
+		title: `SopKit - ${TOOL_COUNT_STRING} Free Online Tools | Professional Toolkit for Everyone`,
 		description: DEFAULT_DESCRIPTION,
 		images: [
 			{
 				url: "/og-image.jpg",
 				width: 1200,
 				height: 630,
-				alt: `30tools - Professional Free Online Toolkit with ${TOOL_COUNT_STRING} Tools`,
+				alt: `SopKit - Professional Free Online Toolkit with ${TOOL_COUNT_STRING} Tools`,
 				type: "image/jpeg",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		site: "@30tools",
-		creator: "@30tools",
-		title: `30tools - ${TOOL_COUNT_STRING} Free Online Tools | Professional Toolkit`,
+		site: "@sopkit",
+		creator: "@sopkit",
+		title: `SopKit - ${TOOL_COUNT_STRING} Free Online Tools | Professional Toolkit`,
 		description: DEFAULT_DESCRIPTION,
 		images: ["/og-image.jpg"],
 	},
@@ -190,7 +190,7 @@ export const metadata: Metadata = {
 	appleWebApp: {
 		capable: true,
 		statusBarStyle: "default",
-		title: "30tools",
+		title: "SopKit",
 	},
 };
 
@@ -247,8 +247,8 @@ export default function RootLayout({
 				<meta httpEquiv="Content-Language" content="en" />
 
 				{/* Enhanced SEO Meta Tags */}
-				<meta name="application-name" content="30tools" />
-				<meta name="apple-mobile-web-app-title" content="30tools" />
+				<meta name="application-name" content="SopKit" />
+				<meta name="apple-mobile-web-app-title" content="SopKit" />
 				<meta name="mobile-web-app-capable" content="yes" />
 				<meta name="msapplication-config" content="/browserconfig.xml" />
 				<meta name="msapplication-TileColor" content="#000000" />
@@ -264,13 +264,13 @@ export default function RootLayout({
 				<link
 					rel="search"
 					type="application/opensearchdescription+xml"
-					title="30tools Search"
+					title="SopKit Search"
 					href="/opensearch.xml"
 				/>
 				<link
 					rel="alternate"
 					type="text/plain"
-					title="30tools LLM Index"
+					title="SopKit LLM Index"
 					href="/llms.txt"
 				/>
 
@@ -278,7 +278,7 @@ export default function RootLayout({
 				<link
 					rel="alternate"
 					type="application/rss+xml"
-					title="30tools RSS Feed"
+					title="SopKit RSS Feed"
 					href="/feed.xml"
 				/>
 
@@ -289,13 +289,13 @@ export default function RootLayout({
 						__html: JSON.stringify({
 							"@context": "https://schema.org",
 							"@type": "WebSite",
-							name: "30tools",
-							alternateName: "30tools - Free Online Toolkit",
+							name: "SopKit",
+							alternateName: "SopKit - Free Online Toolkit",
 							url: SITE_URL,
 							description: `Fast, free, and privacy-focused tools for image, video, audio, PDF, SEO, and developer workflows. Explore ${TOOL_COUNT}+ tools with no sign-up required.`,
 							publisher: {
 								"@type": "Organization",
-								name: "30tools",
+								name: "SopKit",
 								url: SITE_URL,
 								logo: {
 									"@type": "ImageObject",
@@ -321,7 +321,7 @@ export default function RootLayout({
 						__html: JSON.stringify({
 							"@context": "https://schema.org",
 							"@type": "Organization",
-							name: "30tools",
+							name: "SopKit",
 							url: SITE_URL,
 							logo: `${SITE_URL}/icons/icon-512x512.png`,
 							description: `Free online toolkit with ${TOOL_COUNT}+ tools for image, video, audio, PDF, SEO, and developer workflows.`,
@@ -332,7 +332,7 @@ export default function RootLayout({
 								url: `${SITE_URL}/contact`,
 							},
 							sameAs: [
-								"https://github.com/sh20raj/30tools",
+								"https://github.com/SopKit/sopkit.github.io",
 							],
 						}),
 					}}

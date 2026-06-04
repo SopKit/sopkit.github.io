@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 # Paths
-BASE_DIR = Path("/Users/shaswatraj/Desktop/earn/30tools")
+BASE_DIR = Path("/Users/shaswatraj/Desktop/earn/SopKit")
 APP_DIR = BASE_DIR / "src" / "app"
 TOOLS_JSON_PATH = BASE_DIR / "src" / "constants" / "tools.json"
 
@@ -137,18 +137,18 @@ for root, dirs, files in os.walk(APP_DIR):
             if kw_match:
                 keywords = kw_match.group(1).strip()
             else:
-                keywords = f"{tool['name'].lower()}, free online tool, no signup, {tool['name'].lower()} online, {tool['category_key']}, 30tools"
+                keywords = f"{tool['name'].lower()}, free online tool, no signup, {tool['name'].lower()} online, {tool['category_key']}, SopKit"
                 
             # Generate title and description
             category = tool["category_key"]
             if category == "company":
                 # For company pages, keep their original layout/title format or generic
-                title = f"{tool['name']} - 30tools"
+                title = f"{tool['name']} - SopKit"
                 # Keep their original description if possible or generate one
                 desc_match = re.search(r"description:\s*[\"`']([\s\S]*?)[\"`']", metadata_block)
                 description = desc_match.group(1).strip() if desc_match else tool["description"]
             else:
-                title = f"Free {tool['name']} Online - No Signup | 30tools"
+                title = f"Free {tool['name']} Online - No Signup | SopKit"
                 description = generate_unique_description(tool["name"], category)
                 
             # Escape strings to avoid JS syntax errors
@@ -162,13 +162,13 @@ for root, dirs, files in os.walk(APP_DIR):
 	description: "{description_escaped}",
 	keywords: "{keywords_escaped}",
 	alternates: {{
-		canonical: "https://30tools.com{clean_route}",
+		canonical: "https://sopkit.github.io{clean_route}",
 	}},
 	openGraph: {{
 		title: "{title_escaped}",
 		description: "{description_escaped}",
-		url: "https://30tools.com{clean_route}",
-		siteName: "30tools",
+		url: "https://sopkit.github.io{clean_route}",
+		siteName: "SopKit",
 		images: [{{ url: "/og-image.jpg" }}],
 		type: "website",
 	}},

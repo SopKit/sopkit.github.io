@@ -1,4 +1,4 @@
-the title of page like https://30tools.com/image-resizer is geting using generateToolMetadata func. that is not good its showing title = "Image Resizer - Free Image Tool | 30tools | 30Tools" which is very high competion 
+the title of page like https://sopkit.github.io/image-resizer is geting using generateToolMetadata func. that is not good its showing title = "Image Resizer - Free Image Tool | SopKit | SopKit" which is very high competion 
 so edit titles of all the page.js files in the codebase with low hanging fruit strategy and delete seo-helper.ts and export metadata from the page.js itself add it as a rule in Agents.md also
 from tools.json remove all everything except imp things like 
 

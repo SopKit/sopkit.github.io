@@ -5,23 +5,23 @@ import { Code, Globe, Lock, Zap, Users, Star } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
-	title: "Free About Online - No Signup | 30tools",
+	title: "Free About Online - No Signup | SopKit",
 	description: "Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.",
-	keywords: "about 30tools, free online tools, browser-based tools, privacy-conscious tools, about, free about, about online, 30tools, browser tools, no signup tools, privacy tools",
+	keywords: "about SopKit, free online tools, browser-based tools, privacy-conscious tools, about, free about, about online, SopKit, browser tools, no signup tools, privacy tools",
 	alternates: {
-		canonical: "https://30tools.com/about",
+		canonical: "https://sopkit.github.io/about",
 	},
 	openGraph: {
-		title: "Free About Online - No Signup | 30tools",
+		title: "Free About Online - No Signup | SopKit",
 		description: "Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.",
-		url: "https://30tools.com/about",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/about",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free About Online - No Signup | 30tools",
+		title: "Free About Online - No Signup | SopKit",
 		description: "Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.",
 		images: ["/og-image.jpg"],
 	},
@@ -31,8 +31,8 @@ export const metadata = {
 export default async function AboutPage() {
 	const tool = {
 		id: "about",
-		name: "About 30tools",
-		description: `Learn about 30tools — ${SITE_CONFIG.toolCountString} free browser-based tools for PDF, image, video, text, SEO, and more. No signup, no uploads, 100% private.`,
+		name: "About SopKit",
+		description: `Learn about SopKit — ${SITE_CONFIG.toolCountString} free browser-based tools for PDF, image, video, text, SEO, and more. No signup, no uploads, 100% private.`,
 		route: "/about",
 		category: "company",
 	};
@@ -45,10 +45,10 @@ export default async function AboutPage() {
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
 						"@type": "Organization",
-						name: "30tools",
-						url: "https://30tools.com",
+						name: "SopKit",
+						url: "https://sopkit.github.io",
 						description: tool.description,
-						sameAs: ["https://github.com/SH20RAJ/30tools"],
+						sameAs: ["https://github.com/SH20RAJ/SopKit"],
 					}),
 				}}
 			/>
@@ -78,12 +78,12 @@ export default async function AboutPage() {
 							<section className="space-y-3">
 								<h2 className="text-xl font-semibold">Our Mission</h2>
 								<p className="text-sm leading-relaxed">
-									30tools was built with a simple mission: make every useful utility tool available for free and accessible. Most tools run directly in your browser for privacy; some use secure server-side or third-party API processing when necessary. No signups for core features, no paywalls, and transparent about how each tool processes your data — just tools that work.
+									SopKit was built with a simple mission: make every useful utility tool available for free and accessible. Most tools run directly in your browser for privacy; some use secure server-side or third-party API processing when necessary. No signups for core features, no paywalls, and transparent about how each tool processes your data — just tools that work.
 								</p>
 							</section>
 
 							<section className="space-y-3">
-								<h2 className="text-xl font-semibold">Why 30tools?</h2>
+								<h2 className="text-xl font-semibold">Why SopKit?</h2>
 								<div className="grid md:grid-cols-2 gap-4">
 									<div className="flex gap-3 p-4 bg-muted/20 rounded-lg">
 										<Lock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
@@ -131,11 +131,11 @@ export default async function AboutPage() {
 							<section className="space-y-3">
 								<h2 className="text-xl font-semibold">Open Source</h2>
 								<p className="text-sm leading-relaxed">
-									30tools is open source and welcomes contributions from everyone. Whether you&apos;re participating in Hacktoberfest, GSoC, or just want to build your portfolio — we have issues for every skill level.
+									SopKit is open source and welcomes contributions from everyone. Whether you&apos;re participating in Hacktoberfest, GSoC, or just want to build your portfolio — we have issues for every skill level.
 								</p>
 								<div className="flex gap-3">
 									<a
-										href="https://github.com/SH20RAJ/30tools"
+										href="https://github.com/SH20RAJ/SopKit"
 										target="_blank"
 										rel="noreferrer"
 										className="inline-flex items-center gap-2 px-4 py-2 bg-foreground text-background rounded-md text-sm font-medium hover:opacity-90 transition-opacity"

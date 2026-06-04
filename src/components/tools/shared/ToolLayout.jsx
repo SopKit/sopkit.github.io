@@ -222,7 +222,7 @@ export default function ToolLayout({
 								<h2 className="text-2xl font-bold tracking-tight">Legal Notice</h2>
 								<p className="text-muted-foreground leading-relaxed">
 									This tool is intended for downloading non-copyrighted, personal, or openly licensed content only.
-									30tools does not host, store, or distribute copyrighted media. Users are solely responsible for
+									SopKit does not host, store, or distribute copyrighted media. Users are solely responsible for
 									ensuring they have the legal right to download any content. By using this tool, you agree to our{" "}
 									<Link href="/terms" className="text-primary underline">Terms of Use</Link> and{" "}
 									<Link href="/dmca" className="text-primary underline">DMCA Policy</Link>.
@@ -239,14 +239,14 @@ export default function ToolLayout({
 							</p>
 							<div className="flex flex-wrap items-center justify-center gap-4">
 								<Button variant="outline" size="sm" asChild className="gap-2">
-									<a href="https://github.com/sh20raj/30tools" target="_blank" rel="noreferrer">
+									<a href="https://github.com/SopKit/sopkit.github.io" target="_blank" rel="noreferrer">
 										<Github className="h-4 w-4" />
 										Contribute on GitHub
 									</a>
 								</Button>
 								<Button variant="ghost" size="sm" asChild className="gap-2">
-									<a href="mailto:mail@30tools.com">
-										mail@30tools.com
+									<a href="mailto:mail@sopkit.github.io">
+										mail@sopkit.github.io
 									</a>
 								</Button>
 							</div>
@@ -281,12 +281,12 @@ export default function ToolLayout({
 
 						<div className="h-16" >
 							<p className="text-base text-muted-foreground/70 max-w-xl mx-auto">
-								Part of 30tools — {SITE_CONFIG.toolCountString} free online tools for image, PDF, video,
+								Part of SopKit — {SITE_CONFIG.toolCountString} free online tools for image, PDF, video,
 								audio, text, SEO, and developer workflows. No registration required.
 							</p>
 							<div className="flex items-center justify-center gap-2 pt-2">
 								<a
-									href="https://github.com/sh20raj/30tools"
+									href="https://github.com/SopKit/sopkit.github.io"
 									target="_blank"
 									rel="noreferrer"
 									className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-[10px] font-bold uppercase tracking-widest text-primary/60 hover:bg-primary/10 transition-colors"

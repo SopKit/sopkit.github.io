@@ -1,7 +1,7 @@
 import { ShieldCheck, UserCheck } from "lucide-react";
 
 const AuthorBio = ({
-	author = "30Tools Engineering Team",
+	author = "SopKit Engineering Team",
 	expertVerify = true,
 }) => {
 	return (

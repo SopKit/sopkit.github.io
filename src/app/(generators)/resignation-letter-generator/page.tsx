@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import ResignationLetterGenerator from "@/components/tools/generators/ResignationLetterGenerator";
 
 export const metadata = {
-	title: "Free Resignation Letter Generator Online - No Signup | 30tools",
+	title: "Free Resignation Letter Generator Online - No Signup | SopKit",
 	description: "Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.",
 	keywords: "resignation-letter-generator, Resignation Letter Generator",
 	alternates: {
-		canonical: "https://30tools.com/resignation-letter-generator",
+		canonical: "https://sopkit.github.io/resignation-letter-generator",
 	},
 	openGraph: {
-		title: "Free Resignation Letter Generator Online - No Signup | 30tools",
+		title: "Free Resignation Letter Generator Online - No Signup | SopKit",
 		description: "Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.",
-		url: "https://30tools.com/resignation-letter-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/resignation-letter-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Resignation Letter Generator Online - No Signup | 30tools",
+		title: "Free Resignation Letter Generator Online - No Signup | SopKit",
 		description: "Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.",
 		images: ["/og-image.jpg"],
 	},

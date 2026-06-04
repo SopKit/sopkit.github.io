@@ -4,23 +4,23 @@ import InstagramReelDownloader from "@/components/tools/downloaders/InstagramRee
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Ig Reels Downloader Hd Online - No Signup | 30tools",
+	title: "Free Ig Reels Downloader Hd Online - No Signup | SopKit",
 	description: "Download Instagram Reels in high-definition quality instantly. Our free online downloader is optimized for speed and works on all devices. Save your...",
-	keywords: "ig reels downloader hd, free online tool, no signup, ig-reels-downloader-hd, free ig-reels-downloader-hd, Ig Reels Downloader Hd online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "ig reels downloader hd, free online tool, no signup, ig-reels-downloader-hd, free ig-reels-downloader-hd, Ig Reels Downloader Hd online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/ig-reels-downloader-hd",
+		canonical: "https://sopkit.github.io/ig-reels-downloader-hd",
 	},
 	openGraph: {
-		title: "Free Ig Reels Downloader Hd Online - No Signup | 30tools",
+		title: "Free Ig Reels Downloader Hd Online - No Signup | SopKit",
 		description: "Download Instagram Reels in high-definition quality instantly. Our free online downloader is optimized for speed and works on all devices. Save your...",
-		url: "https://30tools.com/ig-reels-downloader-hd",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/ig-reels-downloader-hd",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Ig Reels Downloader Hd Online - No Signup | 30tools",
+		title: "Free Ig Reels Downloader Hd Online - No Signup | SopKit",
 		description: "Download Instagram Reels in high-definition quality instantly. Our free online downloader is optimized for speed and works on all devices. Save your...",
 		images: ["/og-image.jpg"],
 	},

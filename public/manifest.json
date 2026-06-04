@@ -1,6 +1,6 @@
 {
-	"name": "30tools - Free Online Toolkit",
-	"short_name": "30tools",
+	"name": "SopKit - Free Online Toolkit",
+	"short_name": "SopKit",
 	"description": "Fast, free, and privacy-focused tools for image, video, audio, PDF, and text processing.",
 	"start_url": "/",
 	"display": "standalone",

@@ -4,23 +4,23 @@ import SnapchatDownloader from "@/components/tools/downloaders/SnapchatDownloade
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Snapchat Saver Online Online - No Signup | 30tools",
+	title: "Free Snapchat Saver Online Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Snapchat Saver Online online. High-speed downloading with no signup needed. Try it free now.",
-	keywords: "snapchat saver online, free online tool, no signup, snapchat-saver-online, free snapchat-saver-online, Snapchat Saver Online online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "snapchat saver online, free online tool, no signup, snapchat-saver-online, free snapchat-saver-online, Snapchat Saver Online online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/snapchat-saver-online",
+		canonical: "https://sopkit.github.io/snapchat-saver-online",
 	},
 	openGraph: {
-		title: "Free Snapchat Saver Online Online - No Signup | 30tools",
+		title: "Free Snapchat Saver Online Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Snapchat Saver Online online. High-speed downloading with no signup needed. Try it free now.",
-		url: "https://30tools.com/snapchat-saver-online",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/snapchat-saver-online",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Snapchat Saver Online Online - No Signup | 30tools",
+		title: "Free Snapchat Saver Online Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Snapchat Saver Online online. High-speed downloading with no signup needed. Try it free now.",
 		images: ["/og-image.jpg"],
 	},

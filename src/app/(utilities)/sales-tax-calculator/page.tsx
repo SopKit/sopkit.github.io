@@ -4,23 +4,23 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Sales Tax Calculator Online - No Signup | 30tools",
+	title: "Free Sales Tax Calculator Online - No Signup | SopKit",
 	description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "sales tax calculator, free online tool, no signup, sales-tax-calculator, free sales-tax-calculator, Sales Tax Calculator online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "sales tax calculator, free online tool, no signup, sales-tax-calculator, free sales-tax-calculator, Sales Tax Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/sales-tax-calculator",
+		canonical: "https://sopkit.github.io/sales-tax-calculator",
 	},
 	openGraph: {
-		title: "Free Sales Tax Calculator Online - No Signup | 30tools",
+		title: "Free Sales Tax Calculator Online - No Signup | SopKit",
 		description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/sales-tax-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/sales-tax-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Sales Tax Calculator Online - No Signup | 30tools",
+		title: "Free Sales Tax Calculator Online - No Signup | SopKit",
 		description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

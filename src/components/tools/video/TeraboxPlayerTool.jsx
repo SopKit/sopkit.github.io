@@ -348,22 +348,22 @@ export default function TeraboxPlayerTool() {
 						<CardContent className="p-8">
 							<div className="max-w-4xl mx-auto">
 								<h2 className="text-3xl font-bold mb-6 text-center">
-									Watch Terabox Videos Online Without App - Use 30Tools.com!
+									Watch Terabox Videos Online Without App - Use SopKit.com!
 								</h2>
 
 								<p className="text-lg leading-relaxed mb-6">
 									Are you tired of downloading the Terabox app just to watch a
 									video someone shared with you? Good news - now you don't have
-									to! With <strong>30Tools.com</strong>, you can open Terabox
+									to! With <strong>SopKit.com</strong>, you can open Terabox
 									links, play videos online, and enjoy smooth streaming directly
 									from your browser - no downloads, no signup, no app needed.
 								</p>
 
 								<h3 className="text-2xl font-semibold mb-4">
-									What Is 30Tools Terabox Player?
+									What Is SopKit Terabox Player?
 								</h3>
 								<p className="mb-4">
-									30Tools.com is a free online Terabox video player that lets
+									SopKit.com is a free online Terabox video player that lets
 									you:
 								</p>
 								<ul className="list-disc pl-6 mb-6 space-y-2">
@@ -378,14 +378,14 @@ export default function TeraboxPlayerTool() {
 								</p>
 
 								<h3 className="text-2xl font-semibold mb-4">
-									How to Use Terabox Link Opener on 30Tools.com
+									How to Use Terabox Link Opener on SopKit.com
 								</h3>
 								<ol className="list-decimal pl-6 mb-6 space-y-2">
 									<li>
 										Get your Terabox video link (example:
 										https://teraboxapp.com/s/xyz...)
 									</li>
-									<li>Go to 30Tools.com/terabox-downloader</li>
+									<li>Go to SopKit.com/terabox-downloader</li>
 									<li>Paste your link in the box</li>
 									<li>Wait for automatic loading</li>
 									<li>Sit back and watch your video online for free</li>
@@ -395,9 +395,9 @@ export default function TeraboxPlayerTool() {
 								</p>
 
 								<h3 className="text-2xl font-semibold mb-4">
-									Why Use 30Tools as Your Terabox Player?
+									Why Use SopKit as Your Terabox Player?
 								</h3>
-								<p className="mb-4">People use 30Tools.com for many reasons:</p>
+								<p className="mb-4">People use SopKit.com for many reasons:</p>
 								<ul className="list-disc pl-6 mb-6 space-y-2">
 									<li>
 										<strong>Terabox Link Opener</strong> - instantly access
@@ -426,7 +426,7 @@ export default function TeraboxPlayerTool() {
 								<p className="mb-6">
 									Whether you're looking to watch Terabox video online, open a
 									Terabox movie, or preview large files without downloading -
-									30Tools.com is the tool you need.
+									SopKit.com is the tool you need.
 								</p>
 							</div>
 						</CardContent>
@@ -436,7 +436,7 @@ export default function TeraboxPlayerTool() {
 					<Card>
 						<CardContent className="p-8">
 							<h2 className="text-2xl font-bold mb-6 text-center">
-								Features of 30Tools Terabox Player
+								Features of SopKit Terabox Player
 							</h2>
 							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 								<div className="text-center p-4 border ">
@@ -576,7 +576,7 @@ export default function TeraboxPlayerTool() {
 									<p className="text-muted-foreground">
 										A Terabox Player is an online tool that allows you to watch
 										Terabox videos directly in your web browser without
-										downloading the Terabox app. 30Tools.com provides a free
+										downloading the Terabox app. SopKit.com provides a free
 										Terabox player that supports instant streaming, full-screen
 										viewing, and download options.
 									</p>
@@ -588,7 +588,7 @@ export default function TeraboxPlayerTool() {
 									</h3>
 									<p className="text-muted-foreground">
 										Simply paste your Terabox link into the URL field on
-										30Tools.com. The video will automatically load and start
+										SopKit.com. The video will automatically load and start
 										playing in your browser. No registration, no app download,
 										and no complicated setup required.
 									</p>
@@ -599,7 +599,7 @@ export default function TeraboxPlayerTool() {
 										Can I watch Terabox videos online without the app?
 									</h3>
 									<p className="text-muted-foreground">
-										Yes! 30Tools.com lets you watch any Terabox video online
+										Yes! SopKit.com lets you watch any Terabox video online
 										without installing the Terabox app. Our online player works
 										on all devices including phones, tablets, and computers.
 									</p>
@@ -610,7 +610,7 @@ export default function TeraboxPlayerTool() {
 										Is the Terabox Player free to use?
 									</h3>
 									<p className="text-muted-foreground">
-										Absolutely! 30Tools.com offers a completely free Terabox
+										Absolutely! SopKit.com offers a completely free Terabox
 										video player. There are no hidden fees, no premium
 										subscriptions, and no limits on how many videos you can
 										watch.
@@ -634,7 +634,7 @@ export default function TeraboxPlayerTool() {
 										Are there any ads or popups in the Terabox Player?
 									</h3>
 									<p className="text-muted-foreground">
-										No, 30Tools.com offers an ad-free Terabox video player
+										No, SopKit.com offers an ad-free Terabox video player
 										experience. Enjoy smooth, uninterrupted streaming of your
 										Terabox videos online without annoying advertisements.
 									</p>
@@ -656,7 +656,7 @@ export default function TeraboxPlayerTool() {
 							</p>
 							<div className="bg-muted/50 dark:bg-primary/20 p-6 ">
 								<p className="text-xl font-semibold text-primary dark:text-primary">
-									Go to 30Tools.com and start watching instantly!
+									Go to SopKit.com and start watching instantly!
 								</p>
 							</div>
 							<p className="text-muted-foreground">

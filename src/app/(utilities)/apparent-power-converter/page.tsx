@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Apparent Power Converter Online - No Signup | 30tools",
+	title: "Free Apparent Power Converter Online - No Signup | SopKit",
 	description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.",
-	keywords: "apparent power converter, free online tool, no signup, apparent-power-converter, free apparent-power-converter, Apparent Power Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "apparent power converter, free online tool, no signup, apparent-power-converter, free apparent-power-converter, Apparent Power Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/apparent-power-converter",
+		canonical: "https://sopkit.github.io/apparent-power-converter",
 	},
 	openGraph: {
-		title: "Free Apparent Power Converter Online - No Signup | 30tools",
+		title: "Free Apparent Power Converter Online - No Signup | SopKit",
 		description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.",
-		url: "https://30tools.com/apparent-power-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/apparent-power-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Apparent Power Converter Online - No Signup | 30tools",
+		title: "Free Apparent Power Converter Online - No Signup | SopKit",
 		description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.",
 		images: ["/og-image.jpg"],
 	},

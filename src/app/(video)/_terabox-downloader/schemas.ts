@@ -2,10 +2,10 @@ export const jsonLdSchemas = {
 	webApp: {
 		"@context": "https://schema.org",
 		"@type": "WebApplication",
-		name: "Terabox Downloader Online Free - 30Tools",
+		name: "Terabox Downloader Online Free - SopKit",
 		description:
 			"Best free online terabox downloader for downloading videos from tera box links and mdiskplay.",
-		url: "https://30tools.com/terabox-downloader",
+		url: "https://sopkit.github.io/terabox-downloader",
 		applicationCategory: "MultimediaApplication",
 		operatingSystem: "Any",
 		offers: {
@@ -30,7 +30,7 @@ export const jsonLdSchemas = {
 				name: "What is the best terabox downloader online free in 2026?",
 				acceptedAnswer: {
 					"@type": "Answer",
-					text: "30Tools is the best terabox downloader online free and tera box video player, providing high-speed terabox video download and mdisk player support directly in your browser.",
+					text: "SopKit is the best terabox downloader online free and tera box video player, providing high-speed terabox video download and mdisk player support directly in your browser.",
 				},
 			},
 			{

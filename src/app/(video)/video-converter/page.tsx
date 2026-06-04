@@ -4,23 +4,23 @@ import VideoConverterTool from "@/components/tools/video/VideoConverterTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Video Converter Online - No Signup | 30tools",
+	title: "Free Video Converter Online - No Signup | SopKit",
 	description: "Download, convert, and edit video files instantly with our free Video Converter online. Fast, secure, and private processing with no signup. No signup required.",
-	keywords: "video converter, convert video, mp4 converter, video format converter, free video tool, 30tools, video-converter, free video-converter, video converter online, browser video tool, online video editor, free video utility",
+	keywords: "video converter, convert video, mp4 converter, video format converter, free video tool, SopKit, video-converter, free video-converter, video converter online, browser video tool, online video editor, free video utility",
 	alternates: {
-		canonical: "https://30tools.com/video-converter",
+		canonical: "https://sopkit.github.io/video-converter",
 	},
 	openGraph: {
-		title: "Free Video Converter Online - No Signup | 30tools",
+		title: "Free Video Converter Online - No Signup | SopKit",
 		description: "Download, convert, and edit video files instantly with our free Video Converter online. Fast, secure, and private processing with no signup. No signup required.",
-		url: "https://30tools.com/video-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/video-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Video Converter Online - No Signup | 30tools",
+		title: "Free Video Converter Online - No Signup | SopKit",
 		description: "Download, convert, and edit video files instantly with our free Video Converter online. Fast, secure, and private processing with no signup. No signup required.",
 		images: ["/og-image.jpg"],
 	},

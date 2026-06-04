@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Youtube Video Title Capitalizer Online - No Signup | 30tools",
+	title: "Free Youtube Video Title Capitalizer Online - No Signup | SopKit",
 	description: "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your...",
-	keywords: "youtube video title capitalizer, free online tool, no signup, youtube-title-capitalizer, Youtube Title Capitalizer, free youtube-title-capitalizer, Youtube Title Capitalizer online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube video title capitalizer, free online tool, no signup, youtube-title-capitalizer, Youtube Title Capitalizer, free youtube-title-capitalizer, Youtube Title Capitalizer online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-title-capitalizer",
+		canonical: "https://sopkit.github.io/youtube-title-capitalizer",
 	},
 	openGraph: {
-		title: "Free Youtube Video Title Capitalizer Online - No Signup | 30tools",
+		title: "Free Youtube Video Title Capitalizer Online - No Signup | SopKit",
 		description: "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your...",
-		url: "https://30tools.com/youtube-title-capitalizer",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-title-capitalizer",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Youtube Video Title Capitalizer Online - No Signup | 30tools",
+		title: "Free Youtube Video Title Capitalizer Online - No Signup | SopKit",
 		description: "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your...",
 		images: ["/og-image.jpg"],
 	},

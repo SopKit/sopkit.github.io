@@ -4,23 +4,23 @@ import TwitterDownloader from "@/components/tools/downloaders/TwitterDownloader"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Twitter/X Video Downloader Online - No Signup | 30tools",
+	title: "Free Twitter/X Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Twitter/X Video Downloader online. High-speed downloading with no signup needed. 100% free.",
-	keywords: "twitter video downloader, download twitter videos, x video downloader, twitter media downloader, free tool, 30tools, twitter-video-downloader, free twitter-video-downloader, twitter video downloader online, online downloader, free media saver, video downloader",
+	keywords: "twitter video downloader, download twitter videos, x video downloader, twitter media downloader, free tool, SopKit, twitter-video-downloader, free twitter-video-downloader, twitter video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://30tools.com/twitter-video-downloader",
+		canonical: "https://sopkit.github.io/twitter-video-downloader",
 	},
 	openGraph: {
-		title: "Free Twitter/X Video Downloader Online - No Signup | 30tools",
+		title: "Free Twitter/X Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Twitter/X Video Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://30tools.com/twitter-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/twitter-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Twitter/X Video Downloader Online - No Signup | 30tools",
+		title: "Free Twitter/X Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Twitter/X Video Downloader online. High-speed downloading with no signup needed. 100% free.",
 		images: ["/og-image.jpg"],
 	},

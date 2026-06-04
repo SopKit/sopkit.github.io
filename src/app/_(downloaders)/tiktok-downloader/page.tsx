@@ -4,23 +4,23 @@ import TikTokDownloader from "@/components/tools/downloaders/TikTokDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free TikTok Video Downloader Online - No Signup | 30tools",
+	title: "Free TikTok Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free TikTok Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-	keywords: "tiktok downloader, download tiktok videos, tiktok video downloader, tiktok mp4, tiktok no watermark, 30tools, tiktok-downloader, free tiktok-downloader, tiktok downloader online, online downloader, free media saver, video downloader",
+	keywords: "tiktok downloader, download tiktok videos, tiktok video downloader, tiktok mp4, tiktok no watermark, SopKit, tiktok-downloader, free tiktok-downloader, tiktok downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://30tools.com/tiktok-downloader",
+		canonical: "https://sopkit.github.io/tiktok-downloader",
 	},
 	openGraph: {
-		title: "Free TikTok Video Downloader Online - No Signup | 30tools",
+		title: "Free TikTok Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free TikTok Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://30tools.com/tiktok-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/tiktok-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free TikTok Video Downloader Online - No Signup | 30tools",
+		title: "Free TikTok Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free TikTok Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 		images: ["/og-image.jpg"],
 	},

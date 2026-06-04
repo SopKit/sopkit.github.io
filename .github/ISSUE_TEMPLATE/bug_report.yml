@@ -1,5 +1,5 @@
 name: Bug Report
-description: Create a report to help us improve 30tools
+description: Create a report to help us improve SopKit
 labels: ["bug"]
 body:
   - type: markdown
@@ -19,7 +19,7 @@ body:
     attributes:
       label: Tool URL
       description: If the bug is on a specific tool page, please provide the URL.
-      placeholder: https://30tools.com/your-tool-here
+      placeholder: https://sopkit.github.io/your-tool-here
   - type: textarea
     id: reproduction-steps
     attributes:

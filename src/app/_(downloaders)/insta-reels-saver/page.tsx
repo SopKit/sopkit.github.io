@@ -4,23 +4,23 @@ import InstagramReelDownloader from "@/components/tools/downloaders/InstagramRee
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Insta Reels Saver Online - No Signup | 30tools",
+	title: "Free Insta Reels Saver Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Insta Reels Saver online. High-speed downloading with no signup needed. No signup required.",
-	keywords: "insta reels saver, free online tool, no signup, insta-reels-saver, free insta-reels-saver, Insta Reels Saver online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "insta reels saver, free online tool, no signup, insta-reels-saver, free insta-reels-saver, Insta Reels Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/insta-reels-saver",
+		canonical: "https://sopkit.github.io/insta-reels-saver",
 	},
 	openGraph: {
-		title: "Free Insta Reels Saver Online - No Signup | 30tools",
+		title: "Free Insta Reels Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Insta Reels Saver online. High-speed downloading with no signup needed. No signup required.",
-		url: "https://30tools.com/insta-reels-saver",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/insta-reels-saver",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Insta Reels Saver Online - No Signup | 30tools",
+		title: "Free Insta Reels Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Insta Reels Saver online. High-speed downloading with no signup needed. No signup required.",
 		images: ["/og-image.jpg"],
 	},

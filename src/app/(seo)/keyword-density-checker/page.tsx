@@ -4,23 +4,23 @@ import KeywordTool from "@/components/tools/seo/KeywordTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Keyword Density Checker Online - No Signup | 30tools",
+	title: "Free Keyword Density Checker Online - No Signup | SopKit",
 	description: "Audit websites, analyze search rankings, and generate schemas with our free Keyword Density Checker online. Optimize search presence with no signup. 100% free.",
-	keywords: "keyword density checker, free online tool, no signup, keyword-density-checker, free keyword-density-checker, Keyword Density Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, 30tools",
+	keywords: "keyword density checker, free online tool, no signup, keyword-density-checker, free keyword-density-checker, Keyword Density Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/keyword-density-checker",
+		canonical: "https://sopkit.github.io/keyword-density-checker",
 	},
 	openGraph: {
-		title: "Free Keyword Density Checker Online - No Signup | 30tools",
+		title: "Free Keyword Density Checker Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Keyword Density Checker online. Optimize search presence with no signup. 100% free.",
-		url: "https://30tools.com/keyword-density-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/keyword-density-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Keyword Density Checker Online - No Signup | 30tools",
+		title: "Free Keyword Density Checker Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Keyword Density Checker online. Optimize search presence with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},

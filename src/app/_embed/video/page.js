@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import EmbedVideoPlayer from "./EmbedVideoPlayer";
 
 export const metadata = {
-	title: "Free Video Player Online - No Signup | 30tools",
+	title: "Free Video Player Online - No Signup | SopKit",
 	description:
 		"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
 	keywords: [
@@ -23,17 +23,17 @@ export const metadata = {
 	robots: "noindex, nofollow",
 
 	openGraph: {
-		title: "Free Video Player Online - No Signup | 30tools",
+		title: "Free Video Player Online - No Signup | SopKit",
 		description:
 			"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
-		url: "https://30tools.com/embed/video",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/embed/video",
+		siteName: "SopKit",
 		images: [
 			{
 				url: "/og-image.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Free Video Player Online - No Signup | 30tools",
+				alt: "Free Video Player Online - No Signup | SopKit",
 			},
 		],
 		type: "website",
@@ -41,15 +41,15 @@ export const metadata = {
 
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Video Player Online - No Signup | 30tools",
+		title: "Free Video Player Online - No Signup | SopKit",
 		description:
 			"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
 		images: ["/og-image.jpg"],
-		creator: "@30tools",
+		creator: "@sopkit",
 	},
 
 	alternates: {
-		canonical: "https://30tools.com/embed/video",
+		canonical: "https://sopkit.github.io/embed/video",
 	},
 };
 
@@ -59,7 +59,7 @@ const jsonLd = {
 	name: "Video",
 	description:
 		"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
-	url: "https://30tools.com/embed/video",
+	url: "https://sopkit.github.io/embed/video",
 	applicationCategory: "UtilityApplication",
 	operatingSystem: "Any",
 	permissions: "browser",
@@ -70,8 +70,8 @@ const jsonLd = {
 	},
 	author: {
 		"@type": "Organization",
-		name: "30tools",
-		url: "https://30tools.com",
+		name: "SopKit",
+		url: "https://sopkit.github.io",
 	},
 };
 

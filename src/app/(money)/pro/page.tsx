@@ -4,9 +4,9 @@ import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-	title: "30tools Pro - Batch Tools, No Ads and API Access",
-	description: "30tools Pro is a planned upgrade for batch image compression, batch PDF tools, no ads, larger files, saved history, team features, and API access.",
-	alternates: { canonical: "https://30tools.com/pro" },
+	title: "SopKit Pro - Batch Tools, No Ads and API Access",
+	description: "SopKit Pro is a planned upgrade for batch image compression, batch PDF tools, no ads, larger files, saved history, team features, and API access.",
+	alternates: { canonical: "https://sopkit.github.io/pro" },
 };
 
 const plans = [
@@ -21,9 +21,9 @@ export default function ProPage() {
 		<main className="container mx-auto max-w-6xl px-4 py-16 space-y-12">
 			<section className="max-w-3xl space-y-5">
 				<p className="text-sm font-semibold uppercase tracking-wide text-primary">Coming Soon</p>
-				<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">30tools Pro</h1>
+				<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">SopKit Pro</h1>
 				<p className="text-lg leading-relaxed text-muted-foreground">
-					Batch tools, no ads, larger file support, saved history, API access, and team features for people who use 30tools every week.
+					Batch tools, no ads, larger file support, saved history, API access, and team features for people who use SopKit every week.
 				</p>
 				<div className="flex flex-wrap gap-3">
 					<Button asChild><Link href="/contact">Join Waitlist</Link></Button>

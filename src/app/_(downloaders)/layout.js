@@ -2,17 +2,17 @@ import { SITE_CONFIG } from "@/constants/config";
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
-	title: "Free Video Downloaders Online - No Signup | 30tools",
+	title: "Free Video Downloaders Online - No Signup | SopKit",
 	description:
 		`Free online video downloaders for ${SITE_CONFIG.popularToolCountString} platforms including TikTok (no watermark), Instagram Reels, Facebook, Twitter/X, Reddit, Pinterest, and YouTube. Save videos in HD and 4K MP4 format instantly. No registration, no watermarks, 100% free.`,
 	keywords:
 		"online video downloader, all video downloader, tiktok no watermark, instagram reels saver, facebook video download, twitter video saver, reddit downloader, pinterest video saver, youtube downloader online, 4k video downloader, hd video save, mp4 downloader free, social media downloader",
 	openGraph: {
-		title: "Free Video Downloaders Online - No Signup | 30tools",
+		title: "Free Video Downloaders Online - No Signup | SopKit",
 		description:
 			`Download videos from TikTok, Instagram, Facebook, Twitter, Reddit, and ${SITE_CONFIG.popularToolCountString} platforms in HD. No watermark, no signup, 100% free.`,
-		url: "https://30tools.com/all-downloaders",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/all-downloaders",
+		siteName: "SopKit",
 		images: [
 			{
 				url: "/og-image.jpg",
@@ -25,7 +25,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Video Downloaders Online - No Signup | 30tools",
+		title: "Free Video Downloaders Online - No Signup | SopKit",
 		description:
 			`Download videos from TikTok, Instagram, Facebook, Twitter, Reddit, and ${SITE_CONFIG.popularToolCountString} platforms in HD. No watermark, no signup, 100% free.`,
 		images: ["/og-image.jpg"],

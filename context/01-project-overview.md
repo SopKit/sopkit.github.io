@@ -2,21 +2,21 @@
 
 ## Product Summary
 
-**30tools** is a free, browser-based online toolkit platform providing 376+ tools across 15 categories. It's an SEO-first utility engine designed to dominate search results for online tool queries. Live at [30tools.com](https://30tools.com).
+**SopKit** is a free, browser-based online toolkit platform providing 376+ tools across 15 categories. It's an SEO-first utility engine designed to dominate search results for online tool queries. Live at [sopkit.github.io](https://sopkit.github.io).
 
 ## Goals
 
 1. **SEO Dominance** — Rank for thousands of tool-related keywords through programmatic SEO, structured data, and content marketing
 2. **Zero Friction** — No signup, no downloads, no paywalls. Every tool works instantly in the browser
 3. **Privacy First** — 95% of tool logic runs client-side. No user data collection beyond standard analytics
-4. **Open Source** — Community-driven development at `sh20raj/30tools`
+4. **Open Source** — Community-driven development at `SopKit/sopkit.github.io`
 5. **Monetization** — Google AdSense integration (non-intrusive)
 
 ## Core Flows
 
 1. **Tool Discovery** — Homepage → Search/Category → Tool Page
 2. **Tool Usage** — Tool Page → Interactive Tool → Result/Download
-3. **YouTube Magic** — Replace `youtube.com` with `30tools.com` in any YouTube URL → Opens downloader
+3. **YouTube Magic** — Replace `youtube.com` with `sopkit.github.io` in any YouTube URL → Opens downloader
 4. **Content Marketing** — Blog articles → Long-tail keyword targeting → Tool discovery
 5. **Internationalization** — 14 languages via `?lang=` query parameter
 

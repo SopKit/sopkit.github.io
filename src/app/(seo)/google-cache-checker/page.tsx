@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Google Cache Checker Online - No Signup | 30tools",
+	title: "Free Google Cache Checker Online - No Signup | SopKit",
 	description: "Audit websites, analyze search rankings, and generate schemas with our free Google Cache Checker online. Optimize search presence with no signup. Free & secure.",
-	keywords: "google cache checker, free online tool, no signup, google-cache-checker, free google-cache-checker, Google Cache Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, 30tools",
+	keywords: "google cache checker, free online tool, no signup, google-cache-checker, free google-cache-checker, Google Cache Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/google-cache-checker",
+		canonical: "https://sopkit.github.io/google-cache-checker",
 	},
 	openGraph: {
-		title: "Free Google Cache Checker Online - No Signup | 30tools",
+		title: "Free Google Cache Checker Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Cache Checker online. Optimize search presence with no signup. Free & secure.",
-		url: "https://30tools.com/google-cache-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/google-cache-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Google Cache Checker Online - No Signup | 30tools",
+		title: "Free Google Cache Checker Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Cache Checker online. Optimize search presence with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},

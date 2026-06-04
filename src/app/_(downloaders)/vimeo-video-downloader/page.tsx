@@ -4,23 +4,23 @@ import VimeoDownloader from "@/components/tools/downloaders/VimeoDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Vimeo Video Downloader Online - No Signup | 30tools",
+	title: "Free Vimeo Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Vimeo Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-	keywords: "vimeo downloader, download vimeo videos, vimeo video downloader, vimeo to mp4, free tool, 30tools, vimeo-video-downloader, free vimeo-video-downloader, vimeo video downloader online, online downloader, free media saver, video downloader",
+	keywords: "vimeo downloader, download vimeo videos, vimeo video downloader, vimeo to mp4, free tool, SopKit, vimeo-video-downloader, free vimeo-video-downloader, vimeo video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://30tools.com/vimeo-video-downloader",
+		canonical: "https://sopkit.github.io/vimeo-video-downloader",
 	},
 	openGraph: {
-		title: "Free Vimeo Video Downloader Online - No Signup | 30tools",
+		title: "Free Vimeo Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Vimeo Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://30tools.com/vimeo-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/vimeo-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Vimeo Video Downloader Online - No Signup | 30tools",
+		title: "Free Vimeo Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Vimeo Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 		images: ["/og-image.jpg"],
 	},

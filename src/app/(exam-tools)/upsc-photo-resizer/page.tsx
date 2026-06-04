@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
 
 export const metadata = {
-	title: "Free UPSC Photo Resizer Online - No Signup | 30tools",
+	title: "Free UPSC Photo Resizer Online - No Signup | SopKit",
 	description: "Resize and compress files with our free UPSC Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
-	keywords: "upsc-photo-resizer, UPSC Photo Resizer, upsc photo resizer online, upsc signature resizer, upsc image compressor, upsc exam resize, 30tools",
+	keywords: "upsc-photo-resizer, UPSC Photo Resizer, upsc photo resizer online, upsc signature resizer, upsc image compressor, upsc exam resize, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/upsc-photo-resizer",
+		canonical: "https://sopkit.github.io/upsc-photo-resizer",
 	},
 	openGraph: {
-		title: "Free UPSC Photo Resizer Online - No Signup | 30tools",
+		title: "Free UPSC Photo Resizer Online - No Signup | SopKit",
 		description: "Resize and compress files with our free UPSC Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
-		url: "https://30tools.com/upsc-photo-resizer",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/upsc-photo-resizer",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free UPSC Photo Resizer Online - No Signup | 30tools",
+		title: "Free UPSC Photo Resizer Online - No Signup | SopKit",
 		description: "Resize and compress files with our free UPSC Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
 		images: ["/og-image.jpg"],
 	},

@@ -8,23 +8,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Music, ArrowRight, Sparkles } from "lucide-react";
 
 export const metadata = {
-	title: "Free Audio Tools Online - No Signup | 30tools",
+	title: "Free Audio Tools Online - No Signup | SopKit",
 	description: "Process, edit, and convert audio files with our free Audio Tools online. High-quality output and private browser-based tools with no signup. No signup required.",
-	keywords: "audio tools, free online tool, no signup, audio-tools, free audio-tools, Audio Tools online, audio tool, sound editor, music utility, audio converter, 30tools",
+	keywords: "audio tools, free online tool, no signup, audio-tools, free audio-tools, Audio Tools online, audio tool, sound editor, music utility, audio converter, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/audio-tools",
+		canonical: "https://sopkit.github.io/audio-tools",
 	},
 	openGraph: {
-		title: "Free Audio Tools Online - No Signup | 30tools",
+		title: "Free Audio Tools Online - No Signup | SopKit",
 		description: "Process, edit, and convert audio files with our free Audio Tools online. High-quality output and private browser-based tools with no signup. No signup required.",
-		url: "https://30tools.com/audio-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/audio-tools",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Audio Tools Online - No Signup | 30tools",
+		title: "Free Audio Tools Online - No Signup | SopKit",
 		description: "Process, edit, and convert audio files with our free Audio Tools online. High-quality output and private browser-based tools with no signup. No signup required.",
 		images: ["/og-image.jpg"],
 	},

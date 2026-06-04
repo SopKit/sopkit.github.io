@@ -2,7 +2,7 @@
 title: "How to Compress Images Without Losing Quality: Complete Guide 2026"
 description: "Learn professional techniques to compress images while maintaining quality. Step-by-step guide with tips for web, print, and social media."
 date: "2026-05-27"
-author: "30tools Team"
+author: "SopKit Team"
 category: "image"
 keywords: ["compress images","image optimization","reduce file size","image quality"]
 image: "/og-images/how-to-compress-images-without-losing-quality.jpg"

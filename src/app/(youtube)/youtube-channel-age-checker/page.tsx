@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Channel Age Checker Online - No Signup | 30tools",
+	title: "Free YouTube Channel Age Checker Online - No Signup | SopKit",
 	description: "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive...",
-	keywords: "youtube channel age checker, free online tool, no signup, youtube-channel-age-checker, free youtube-channel-age-checker, Youtube Channel Age Checker online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube channel age checker, free online tool, no signup, youtube-channel-age-checker, free youtube-channel-age-checker, Youtube Channel Age Checker online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-channel-age-checker",
+		canonical: "https://sopkit.github.io/youtube-channel-age-checker",
 	},
 	openGraph: {
-		title: "Free YouTube Channel Age Checker Online - No Signup | 30tools",
+		title: "Free YouTube Channel Age Checker Online - No Signup | SopKit",
 		description: "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive...",
-		url: "https://30tools.com/youtube-channel-age-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-channel-age-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Channel Age Checker Online - No Signup | 30tools",
+		title: "Free YouTube Channel Age Checker Online - No Signup | SopKit",
 		description: "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive...",
 		images: ["/og-image.jpg"],
 	},

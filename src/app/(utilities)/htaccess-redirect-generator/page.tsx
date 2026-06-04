@@ -4,23 +4,23 @@ import HtaccessGenerator from "@/components/tools/built-ins/HtaccessGenerator";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Htaccess Redirect Generator Online - No Signup | 30tools",
+	title: "Free Htaccess Redirect Generator Online - No Signup | SopKit",
 	description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "htaccess redirect generator, free online tool, no signup, htaccess-redirect-generator, free htaccess-redirect-generator, Htaccess Redirect Generator online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "htaccess redirect generator, free online tool, no signup, htaccess-redirect-generator, free htaccess-redirect-generator, Htaccess Redirect Generator online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/htaccess-redirect-generator",
+		canonical: "https://sopkit.github.io/htaccess-redirect-generator",
 	},
 	openGraph: {
-		title: "Free Htaccess Redirect Generator Online - No Signup | 30tools",
+		title: "Free Htaccess Redirect Generator Online - No Signup | SopKit",
 		description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/htaccess-redirect-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/htaccess-redirect-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Htaccess Redirect Generator Online - No Signup | 30tools",
+		title: "Free Htaccess Redirect Generator Online - No Signup | SopKit",
 		description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

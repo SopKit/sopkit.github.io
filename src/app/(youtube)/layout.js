@@ -1,17 +1,17 @@
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
-	title: "Free YouTube Tools Online - No Signup | 30tools",
+	title: "Free YouTube Tools Online - No Signup | SopKit",
 	description:
 		"Free YouTube tools for creators and viewers: download videos & Shorts in HD/4K, extract thumbnails, generate transcripts, create scripts with AI, and optimize tags for discoverability. No signup, no watermarks, 100% free.",
 	keywords:
 		"youtube tools, youtube downloader, youtube shorts downloader, youtube thumbnail downloader, youtube transcript generator, youtube script generator, youtube tag generator, youtube video summarizer, ai youtube tools, content creator tools, youtube to mp3, youtube thumbnail grabber",
 	openGraph: {
-		title: "Free YouTube Tools Online - No Signup | 30tools",
+		title: "Free YouTube Tools Online - No Signup | SopKit",
 		description:
 			"Download YouTube videos & Shorts, extract thumbnails, generate transcripts and scripts — all free with no signup.",
-		url: "https://30tools.com/youtube-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-tools",
+		siteName: "SopKit",
 		images: [
 			{
 				url: "/og-image.jpg",
@@ -24,7 +24,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Tools Online - No Signup | 30tools",
+		title: "Free YouTube Tools Online - No Signup | SopKit",
 		description:
 			"Download YouTube videos & Shorts, extract thumbnails, generate transcripts and scripts — all free with no signup.",
 		images: ["/og-image.jpg"],

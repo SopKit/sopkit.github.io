@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * SEO Audit Script for 30tools
+ * SEO Audit Script for SopKit
  * Fetches live pages and checks for SEO requirements
  */
 
@@ -312,7 +312,7 @@ async function checkDownloaderPages() {
 }
 
 async function main() {
-	log("\n🛠️  30tools SEO Audit\n");
+	log("\n🛠️  SopKit SEO Audit\n");
 	log("═".repeat(50), colors.blue);
 
 	const startTime = Date.now();

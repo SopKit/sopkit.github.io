@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Parts Per Converter Online - No Signup | 30tools",
+	title: "Free Parts Per Converter Online - No Signup | SopKit",
 	description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "parts per converter, free online tool, no signup, parts-per-converter, free parts-per-converter, Parts Per Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "parts per converter, free online tool, no signup, parts-per-converter, free parts-per-converter, Parts Per Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/parts-per-converter",
+		canonical: "https://sopkit.github.io/parts-per-converter",
 	},
 	openGraph: {
-		title: "Free Parts Per Converter Online - No Signup | 30tools",
+		title: "Free Parts Per Converter Online - No Signup | SopKit",
 		description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/parts-per-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/parts-per-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Parts Per Converter Online - No Signup | 30tools",
+		title: "Free Parts Per Converter Online - No Signup | SopKit",
 		description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

@@ -8,23 +8,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Film, ArrowRight, Sparkles } from "lucide-react";
 
 export const metadata = {
-	title: "Free Video Tools Online - No Signup | 30tools",
+	title: "Free Video Tools Online - No Signup | SopKit",
 	description: "Download, convert, and edit video files instantly with our free Video Tools online. Fast, secure, and private processing with no signup. No registration needed.",
-	keywords: "video tools, free online tool, no signup, video-tools, free video-tools, Video Tools online, video tool, video editor, media converter, online video, 30tools",
+	keywords: "video tools, free online tool, no signup, video-tools, free video-tools, Video Tools online, video tool, video editor, media converter, online video, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/video-tools",
+		canonical: "https://sopkit.github.io/video-tools",
 	},
 	openGraph: {
-		title: "Free Video Tools Online - No Signup | 30tools",
+		title: "Free Video Tools Online - No Signup | SopKit",
 		description: "Download, convert, and edit video files instantly with our free Video Tools online. Fast, secure, and private processing with no signup. No registration needed.",
-		url: "https://30tools.com/video-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/video-tools",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Video Tools Online - No Signup | 30tools",
+		title: "Free Video Tools Online - No Signup | SopKit",
 		description: "Download, convert, and edit video files instantly with our free Video Tools online. Fast, secure, and private processing with no signup. No registration needed.",
 		images: ["/og-image.jpg"],
 	},

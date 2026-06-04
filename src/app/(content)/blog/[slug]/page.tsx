@@ -18,26 +18,26 @@ export async function generateMetadata({ params }: BlogArticlePageProps) {
 
 	if (!article) {
 		return {
-			title: "Blog Article Not Found | 30tools",
+			title: "Blog Article Not Found | SopKit",
 			description: "The requested article was not found.",
 		};
 	}
 
 	return {
-		title: `${article.title} | 30tools`,
+		title: `${article.title} | SopKit`,
 		description: article.description,
 		keywords: [
 			article.slug.split("-").join(" "),
 			"free online tools",
-			"30tools blog",
+			"SopKit blog",
 		].join(", "),
 		alternates: {
-			canonical: `https://30tools.com/blog/${article.slug}`,
+			canonical: `https://sopkit.github.io/blog/${article.slug}`,
 		},
 		openGraph: {
 			title: article.title,
 			description: article.description,
-			url: `https://30tools.com/blog/${article.slug}`,
+			url: `https://sopkit.github.io/blog/${article.slug}`,
 			type: "article",
 			images: [{ url: "/og-image.jpg" }],
 		},
@@ -64,20 +64,20 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 		dateModified: article.date,
 		author: {
 			"@type": "Organization",
-			name: "30tools",
-			url: "https://30tools.com",
+			name: "SopKit",
+			url: "https://sopkit.github.io",
 		},
 		publisher: {
 			"@type": "Organization",
-			name: "30tools",
-			url: "https://30tools.com",
+			name: "SopKit",
+			url: "https://sopkit.github.io",
 			logo: {
 				"@type": "ImageObject",
-				url: "https://30tools.com/icons/icon-512x512.png",
+				url: "https://sopkit.github.io/icons/icon-512x512.png",
 			},
 		},
-		mainEntityOfPage: `https://30tools.com/blog/${article.slug}`,
-		image: "https://30tools.com/og-image.jpg",
+		mainEntityOfPage: `https://sopkit.github.io/blog/${article.slug}`,
+		image: "https://sopkit.github.io/og-image.jpg",
 	};
 
 	const breadcrumbSchema = {
@@ -88,19 +88,19 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 				"@type": "ListItem",
 				position: 1,
 				name: "Home",
-				item: "https://30tools.com",
+				item: "https://sopkit.github.io",
 			},
 			{
 				"@type": "ListItem",
 				position: 2,
 				name: "Blog",
-				item: "https://30tools.com/blog",
+				item: "https://sopkit.github.io/blog",
 			},
 			{
 				"@type": "ListItem",
 				position: 3,
 				name: article.title,
-				item: `https://30tools.com/blog/${article.slug}`,
+				item: `https://sopkit.github.io/blog/${article.slug}`,
 			},
 		],
 	};

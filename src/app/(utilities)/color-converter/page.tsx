@@ -4,23 +4,23 @@ import RgbHexConverter from "@/components/tools/built-ins/RgbHexConverter";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Color Converter Online - No Signup | 30tools",
+	title: "Free Color Converter Online - No Signup | SopKit",
 	description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with...",
-	keywords: "color converter, free online tool, no signup, color-converter, free color-converter, Color Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "color converter, free online tool, no signup, color-converter, free color-converter, Color Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/color-converter",
+		canonical: "https://sopkit.github.io/color-converter",
 	},
 	openGraph: {
-		title: "Free Color Converter Online - No Signup | 30tools",
+		title: "Free Color Converter Online - No Signup | SopKit",
 		description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with...",
-		url: "https://30tools.com/color-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/color-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Color Converter Online - No Signup | 30tools",
+		title: "Free Color Converter Online - No Signup | SopKit",
 		description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with...",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Weight Converter Online - No Signup | 30tools",
+	title: "Free Weight Converter Online - No Signup | SopKit",
 	description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "weight converter, free online tool, no signup, weight-converter, free weight-converter, Weight Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "weight converter, free online tool, no signup, weight-converter, free weight-converter, Weight Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/weight-converter",
+		canonical: "https://sopkit.github.io/weight-converter",
 	},
 	openGraph: {
-		title: "Free Weight Converter Online - No Signup | 30tools",
+		title: "Free Weight Converter Online - No Signup | SopKit",
 		description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/weight-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/weight-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Weight Converter Online - No Signup | 30tools",
+		title: "Free Weight Converter Online - No Signup | SopKit",
 		description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

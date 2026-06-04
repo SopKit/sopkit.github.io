@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import RentReceiptGenerator from "@/components/tools/generators/RentReceiptGenerator";
 
 export const metadata = {
-	title: "Free Rent Receipt Generator Online - No Signup | 30tools",
+	title: "Free Rent Receipt Generator Online - No Signup | SopKit",
 	description: "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
-	keywords: "rent-receipt-generator, Rent Receipt Generator, print rent receipt, hra rent receipt, rent slip maker, 30tools",
+	keywords: "rent-receipt-generator, Rent Receipt Generator, print rent receipt, hra rent receipt, rent slip maker, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/rent-receipt-generator",
+		canonical: "https://sopkit.github.io/rent-receipt-generator",
 	},
 	openGraph: {
-		title: "Free Rent Receipt Generator Online - No Signup | 30tools",
+		title: "Free Rent Receipt Generator Online - No Signup | SopKit",
 		description: "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
-		url: "https://30tools.com/rent-receipt-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/rent-receipt-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Rent Receipt Generator Online - No Signup | 30tools",
+		title: "Free Rent Receipt Generator Online - No Signup | SopKit",
 		description: "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
 		images: ["/og-image.jpg"],
 	},

@@ -1,7 +1,7 @@
 import { getAllTools } from "@/lib/tools";
 
 export async function GET() {
-	const baseUrl = "https://30tools.com";
+	const baseUrl = "https://sopkit.github.io";
 	const currentDate = new Date().toUTCString();
 	const currentYear = new Date().getFullYear();
 	const allTools = getAllTools();
@@ -26,13 +26,13 @@ export async function GET() {
 	const rssFeed = `<?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
       <channel>
-        <title><![CDATA[30tools - Free Online Toolkit | Latest Tools & Updates]]></title>
-        <description><![CDATA[Stay updated with the latest free online tools from 30tools. Professional tools for image processing, PDF manipulation, video conversion, and more. No registration required.]]></description>
+        <title><![CDATA[SopKit - Free Online Toolkit | Latest Tools & Updates]]></title>
+        <description><![CDATA[Stay updated with the latest free online tools from SopKit. Professional tools for image processing, PDF manipulation, video conversion, and more. No registration required.]]></description>
         <link>${baseUrl}</link>
         <lastBuildDate>${currentDate}</lastBuildDate>
         <language>en-US</language>
-        <generator>30tools RSS Generator</generator>
-        <copyright>Copyright © ${currentYear} 30tools. All rights reserved.</copyright>
+        <generator>SopKit RSS Generator</generator>
+        <copyright>Copyright © ${currentYear} SopKit. All rights reserved.</copyright>
         ${rssItems}
       </channel>
     </rss>`;

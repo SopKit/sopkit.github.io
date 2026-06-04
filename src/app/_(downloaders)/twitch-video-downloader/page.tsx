@@ -4,23 +4,23 @@ import TwitchDownloader from "@/components/tools/downloaders/TwitchDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Twitch Video Downloader Online - No Signup | 30tools",
+	title: "Free Twitch Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Twitch Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-	keywords: "twitch video downloader, download twitch clips, twitch vod downloader, twitch to mp4, free tool, 30tools, twitch-video-downloader, free twitch-video-downloader, twitch video downloader online, online downloader, free media saver, video downloader",
+	keywords: "twitch video downloader, download twitch clips, twitch vod downloader, twitch to mp4, free tool, SopKit, twitch-video-downloader, free twitch-video-downloader, twitch video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://30tools.com/twitch-video-downloader",
+		canonical: "https://sopkit.github.io/twitch-video-downloader",
 	},
 	openGraph: {
-		title: "Free Twitch Video Downloader Online - No Signup | 30tools",
+		title: "Free Twitch Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Twitch Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://30tools.com/twitch-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/twitch-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Twitch Video Downloader Online - No Signup | 30tools",
+		title: "Free Twitch Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Twitch Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 		images: ["/og-image.jpg"],
 	},

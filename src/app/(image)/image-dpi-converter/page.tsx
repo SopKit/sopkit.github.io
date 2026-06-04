@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import ResizeImageCm from "@/components/tools/image/ResizeImageCm";
 
 export const metadata = {
-	title: "Free Image DPI Converter Online - No Signup | 30tools",
+	title: "Free Image DPI Converter Online - No Signup | SopKit",
 	description: "Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing.",
 	keywords: "image-dpi-converter, Image DPI Converter",
 	alternates: {
-		canonical: "https://30tools.com/image-dpi-converter",
+		canonical: "https://sopkit.github.io/image-dpi-converter",
 	},
 	openGraph: {
-		title: "Free Image DPI Converter Online - No Signup | 30tools",
+		title: "Free Image DPI Converter Online - No Signup | SopKit",
 		description: "Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing.",
-		url: "https://30tools.com/image-dpi-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/image-dpi-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Image DPI Converter Online - No Signup | 30tools",
+		title: "Free Image DPI Converter Online - No Signup | SopKit",
 		description: "Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing.",
 		images: ["/og-image.jpg"],
 	},

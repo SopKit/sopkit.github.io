@@ -64,7 +64,7 @@ export async function POST(req: NextRequest) {
 				method: "HEAD",
 				redirect: "follow",
 				headers: {
-					"User-Agent": "30tools-header-fetch/1.0",
+					"User-Agent": "SopKit-header-fetch/1.0",
 					Accept: "*/*",
 				},
 				signal: AbortSignal.timeout(12_000),
@@ -85,7 +85,7 @@ export async function POST(req: NextRequest) {
 				method: "GET",
 				redirect: "follow",
 				headers: {
-					"User-Agent": "30tools-meta-fetch/1.0",
+					"User-Agent": "SopKit-meta-fetch/1.0",
 					Accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
 				},
 				signal: AbortSignal.timeout(15_000),
@@ -134,7 +134,7 @@ export async function POST(req: NextRequest) {
 			const res = await fetch(current, {
 				method: "HEAD",
 				redirect: "manual",
-				headers: { "User-Agent": "30tools-head-check/1.0" },
+				headers: { "User-Agent": "SopKit-head-check/1.0" },
 				signal: AbortSignal.timeout(12_000),
 			});
 			const loc = res.headers.get("location") || undefined;

@@ -15,7 +15,7 @@ async function fetchDomainList(url: string): Promise<string[]> {
 	try {
 		const response = await fetch(url, {
 			headers: {
-				"User-Agent": "30tools-temp-email-checker",
+				"User-Agent": "SopKit-temp-email-checker",
 			},
 		});
 

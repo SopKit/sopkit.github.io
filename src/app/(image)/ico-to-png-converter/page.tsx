@@ -4,23 +4,23 @@ import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free ICO to PNG Converter Online - No Signup | 30tools",
+	title: "Free ICO to PNG Converter Online - No Signup | SopKit",
 	description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "ico to png converter, free online tool, no signup, ico-to-png-converter, free ico-to-png-converter, Ico To Png Converter online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "ico to png converter, free online tool, no signup, ico-to-png-converter, free ico-to-png-converter, Ico To Png Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/ico-to-png-converter",
+		canonical: "https://sopkit.github.io/ico-to-png-converter",
 	},
 	openGraph: {
-		title: "Free ICO to PNG Converter Online - No Signup | 30tools",
+		title: "Free ICO to PNG Converter Online - No Signup | SopKit",
 		description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/ico-to-png-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/ico-to-png-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free ICO to PNG Converter Online - No Signup | 30tools",
+		title: "Free ICO to PNG Converter Online - No Signup | SopKit",
 		description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

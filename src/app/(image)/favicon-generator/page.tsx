@@ -4,23 +4,23 @@ import FaviconGeneratorTool from "@/components/tools/image/FaviconGeneratorTool"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Favicon Generator Online - No Signup | 30tools",
+	title: "Free Favicon Generator Online - No Signup | SopKit",
 	description: "Generate favicons from text, images, or emojis for websites",
-	keywords: "favicon generator, free online tool, no signup, favicon-generator, free favicon-generator, Favicon Generator online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "favicon generator, free online tool, no signup, favicon-generator, free favicon-generator, Favicon Generator online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/favicon-generator",
+		canonical: "https://sopkit.github.io/favicon-generator",
 	},
 	openGraph: {
-		title: "Free Favicon Generator Online - No Signup | 30tools",
+		title: "Free Favicon Generator Online - No Signup | SopKit",
 		description: "Generate favicons from text, images, or emojis for websites",
-		url: "https://30tools.com/favicon-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/favicon-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Favicon Generator Online - No Signup | 30tools",
+		title: "Free Favicon Generator Online - No Signup | SopKit",
 		description: "Generate favicons from text, images, or emojis for websites",
 		images: ["/og-image.jpg"],
 	},

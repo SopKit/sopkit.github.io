@@ -4,23 +4,23 @@ import YouTubeShortsDownloader from "@/components/tools/downloaders/YouTubeShort
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Shorts Downloader Online - No Signup | 30tools",
+	title: "Free YouTube Shorts Downloader Online - No Signup | SopKit",
 	description: "Download YouTube Shorts videos in high quality for offline viewing",
-	keywords: "youtube shorts downloader, free online tool, no signup, youtube-shorts-downloader, free youtube-shorts-downloader, Youtube Shorts Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube shorts downloader, free online tool, no signup, youtube-shorts-downloader, free youtube-shorts-downloader, Youtube Shorts Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-shorts-downloader",
+		canonical: "https://sopkit.github.io/youtube-shorts-downloader",
 	},
 	openGraph: {
-		title: "Free YouTube Shorts Downloader Online - No Signup | 30tools",
+		title: "Free YouTube Shorts Downloader Online - No Signup | SopKit",
 		description: "Download YouTube Shorts videos in high quality for offline viewing",
-		url: "https://30tools.com/youtube-shorts-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-shorts-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Shorts Downloader Online - No Signup | 30tools",
+		title: "Free YouTube Shorts Downloader Online - No Signup | SopKit",
 		description: "Download YouTube Shorts videos in high quality for offline viewing",
 		images: ["/og-image.jpg"],
 	},

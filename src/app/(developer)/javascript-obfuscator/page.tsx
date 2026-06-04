@@ -4,23 +4,23 @@ import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free JavaScript Obfuscator Online - No Signup | 30tools",
+	title: "Free JavaScript Obfuscator Online - No Signup | SopKit",
 	description: "Format, minify, validate, and convert code snippets with our free JavaScript Obfuscator online. Secure, local developer utility with no registration. 100% free.",
-	keywords: "javascript obfuscator, free online tool, no signup, javascript-obfuscator, free javascript-obfuscator, Javascript Obfuscator online, developer tool, web dev utility, code formatter, online developer, 30tools",
+	keywords: "javascript obfuscator, free online tool, no signup, javascript-obfuscator, free javascript-obfuscator, Javascript Obfuscator online, developer tool, web dev utility, code formatter, online developer, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/javascript-obfuscator",
+		canonical: "https://sopkit.github.io/javascript-obfuscator",
 	},
 	openGraph: {
-		title: "Free JavaScript Obfuscator Online - No Signup | 30tools",
+		title: "Free JavaScript Obfuscator Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free JavaScript Obfuscator online. Secure, local developer utility with no registration. 100% free.",
-		url: "https://30tools.com/javascript-obfuscator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/javascript-obfuscator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JavaScript Obfuscator Online - No Signup | 30tools",
+		title: "Free JavaScript Obfuscator Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free JavaScript Obfuscator online. Secure, local developer utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},

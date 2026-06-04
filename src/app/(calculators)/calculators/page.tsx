@@ -8,21 +8,21 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calculator, ArrowRight } from "lucide-react";
 
 export const metadata = {
-	title: "Free Online Calculators - Smart Financial & Math Tools | 30tools",
+	title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
 	description: "Free online calculators for every need. BMI calculators, loan estimators, percentage tools, and scientific math tools. Get instant, accurate results for free.",
-	keywords: "online calculators, bmi calculator, loan calculator, math tools, free calculators, 30tools, calculators, calculators online, online calculator, free math tool, converter, number tool",
-	alternates: { canonical: "https://30tools.com/calculators" },
+	keywords: "online calculators, bmi calculator, loan calculator, math tools, free calculators, SopKit, calculators, calculators online, online calculator, free math tool, converter, number tool",
+	alternates: { canonical: "https://sopkit.github.io/calculators" },
 	openGraph: {
-		title: "Free Online Calculators - Smart Financial & Math Tools | 30tools",
+		title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
 		description: "Free online calculators for every need. BMI calculators, loan estimators, percentage tools, and scientific math tools. Get instant, accurate results for free.",
-		url: "https://30tools.com/calculators",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/calculators",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Online Calculators - Smart Financial & Math Tools | 30tools",
+		title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
 		description: "Free online calculators for every need. BMI calculators, loan estimators, percentage tools, and scientific math tools.",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import FlickrDownloader from "@/components/tools/downloaders/FlickrDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Flickr Video Downloader Online - No Signup | 30tools",
+	title: "Free Flickr Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Flickr Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-	keywords: "flickr video downloader, free online tool, no signup, flickr-video-downloader, free flickr-video-downloader, Flickr Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "flickr video downloader, free online tool, no signup, flickr-video-downloader, free flickr-video-downloader, Flickr Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/flickr-video-downloader",
+		canonical: "https://sopkit.github.io/flickr-video-downloader",
 	},
 	openGraph: {
-		title: "Free Flickr Video Downloader Online - No Signup | 30tools",
+		title: "Free Flickr Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Flickr Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://30tools.com/flickr-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/flickr-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Flickr Video Downloader Online - No Signup | 30tools",
+		title: "Free Flickr Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Flickr Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 		images: ["/og-image.jpg"],
 	},

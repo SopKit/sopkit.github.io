@@ -1,7 +1,7 @@
-# SEO & Design Fix Checklist — 30tools.com
+# SEO & Design Fix Checklist — sopkit.github.io
 
 **Generated:** 2026-05-16  
-**Site:** https://30tools.com  
+**Site:** https://sopkit.github.io  
 **Platform:** Next.js 16 on Cloudflare Pages
 
 ---
@@ -26,7 +26,7 @@
 - [x] **Status:** No more broken hreflang tags pointing to same URL
 
 ### 5. www-to-non-www Redirect
-- [x] **File:** `next.config.mjs` — Added redirect: `www.30tools.com` → `30tools.com`
+- [x] **File:** `next.config.mjs` — Added redirect: `www.sopkit.github.io` → `sopkit.github.io`
 - [x] **Status:** www subdomain properly redirects
 
 ### 6. Sitemap Deduplication
@@ -150,8 +150,8 @@
 - [ ] All tool pages render correctly
 
 ### SEO Verification
-- [ ] Test: `curl -s -o /dev/null -w "%{http_code}" "https://30tools.com/nonexistent-page"` → Should return 404
-- [ ] Test: `curl -s -o /dev/null -w "%{http_code}" "https://www.30tools.com"` → Should return 301
+- [ ] Test: `curl -s -o /dev/null -w "%{http_code}" "https://sopkit.github.io/nonexistent-page"` → Should return 404
+- [ ] Test: `curl -s -o /dev/null -w "%{http_code}" "https://www.sopkit.github.io"` → Should return 301
 - [ ] Check: `/sitemap.xml` has no duplicate URLs
 - [ ] Check: `/robots.txt` allows GPTBot
 - [ ] Check: No duplicate `<meta name="robots">` in page source

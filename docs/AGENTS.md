@@ -1,7 +1,7 @@
-# 30tools Codebase Documentation
+# SopKit Codebase Documentation
 
 ## Overview
-30tools is a high-performance, developer-first API and utility ecosystem built with Next.js (App Router) and Tailwind CSS. It is designed for maximum SEO visibility and conversion, with over 600+ tools integrated.
+SopKit is a high-performance, developer-first API and utility ecosystem built with Next.js (App Router) and Tailwind CSS. It is designed for maximum SEO visibility and conversion, with over 600+ tools integrated.
 
 ## Core Architecture
 
@@ -38,7 +38,7 @@
 - **No Dynamic Helpers:** Do NOT use `generateToolMetadata` or any other dynamic metadata generation library. All metadata (titles, descriptions, keywords) must be hardcoded in the file for maximum performance and SEO predictability.
 - **Server Components ONLY:** All `page.js` and `layout.js` files MUST remain Server Components. NEVER add `'use client'` to these files. If interactivity is needed, encapsulate it in a separate Client Component and import it into the server page.
 - **SEO Title Strategy:** Always use the "Low-Hanging-Fruit" strategy for titles. 
-  - Pattern: `Free [Tool Name] Online - No Signup | 30tools`
+  - Pattern: `Free [Tool Name] Online - No Signup | SopKit`
 
 ## Graphify
 - **graphify** (`../.agents/skills/graphify/SKILL.md`) - any input (code, docs, papers, images) to knowledge graph. Trigger: `/graphify`

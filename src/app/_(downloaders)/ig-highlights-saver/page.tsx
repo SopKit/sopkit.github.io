@@ -4,23 +4,23 @@ import InstagramStoryDownloader from "@/components/tools/downloaders/InstagramSt
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Ig Highlights Saver Online - No Signup | 30tools",
+	title: "Free Ig Highlights Saver Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Ig Highlights Saver online. High-speed downloading with no signup needed. Try it free now.",
-	keywords: "ig highlights saver, free online tool, no signup, ig-highlights-saver, free ig-highlights-saver, Ig Highlights Saver online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "ig highlights saver, free online tool, no signup, ig-highlights-saver, free ig-highlights-saver, Ig Highlights Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/ig-highlights-saver",
+		canonical: "https://sopkit.github.io/ig-highlights-saver",
 	},
 	openGraph: {
-		title: "Free Ig Highlights Saver Online - No Signup | 30tools",
+		title: "Free Ig Highlights Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Ig Highlights Saver online. High-speed downloading with no signup needed. Try it free now.",
-		url: "https://30tools.com/ig-highlights-saver",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/ig-highlights-saver",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Ig Highlights Saver Online - No Signup | 30tools",
+		title: "Free Ig Highlights Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Ig Highlights Saver online. High-speed downloading with no signup needed. Try it free now.",
 		images: ["/og-image.jpg"],
 	},

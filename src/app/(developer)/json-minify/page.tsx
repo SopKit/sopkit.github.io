@@ -4,23 +4,23 @@ import JSONMinifierTool from "@/components/tools/developer/JSONMinifierTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free JSON Minify Online - No Signup | 30tools",
+	title: "Free JSON Minify Online - No Signup | SopKit",
 	description: "Format, minify, validate, and convert code snippets with our free JSON Minify online. Secure, local developer utility with no registration. No signup required.",
-	keywords: "json minify, free online tool, no signup, json-minify, free json-minify, Json Minify online, developer tool, web dev utility, code formatter, online developer, 30tools",
+	keywords: "json minify, free online tool, no signup, json-minify, free json-minify, Json Minify online, developer tool, web dev utility, code formatter, online developer, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/json-minify",
+		canonical: "https://sopkit.github.io/json-minify",
 	},
 	openGraph: {
-		title: "Free JSON Minify Online - No Signup | 30tools",
+		title: "Free JSON Minify Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free JSON Minify online. Secure, local developer utility with no registration. No signup required.",
-		url: "https://30tools.com/json-minify",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/json-minify",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JSON Minify Online - No Signup | 30tools",
+		title: "Free JSON Minify Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free JSON Minify online. Secure, local developer utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},

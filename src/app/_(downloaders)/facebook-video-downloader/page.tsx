@@ -4,23 +4,23 @@ import FacebookDownloader from "@/components/tools/downloaders/FacebookDownloade
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Facebook Video Downloader Online - No Signup | 30tools",
+	title: "Free Facebook Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Facebook Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-	keywords: "facebook video downloader, download fb videos, facebook reels downloader, free video downloader, 30tools, facebook-video-downloader, free facebook-video-downloader, facebook video downloader online, online downloader, free media saver, video downloader, url downloader",
+	keywords: "facebook video downloader, download fb videos, facebook reels downloader, free video downloader, SopKit, facebook-video-downloader, free facebook-video-downloader, facebook video downloader online, online downloader, free media saver, video downloader, url downloader",
 	alternates: {
-		canonical: "https://30tools.com/facebook-video-downloader",
+		canonical: "https://sopkit.github.io/facebook-video-downloader",
 	},
 	openGraph: {
-		title: "Free Facebook Video Downloader Online - No Signup | 30tools",
+		title: "Free Facebook Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Facebook Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://30tools.com/facebook-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/facebook-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Facebook Video Downloader Online - No Signup | 30tools",
+		title: "Free Facebook Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Facebook Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 		images: ["/og-image.jpg"],
 	},

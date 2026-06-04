@@ -4,23 +4,23 @@ import DailymotionDownloader from "@/components/tools/downloaders/DailymotionDow
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Dailymotion Video Downloader Online - No Signup | 30tools",
+	title: "Free Dailymotion Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Dailymotion Video Downloader online. High-speed downloading with no signup needed.",
-	keywords: "dailymotion downloader, download dailymotion videos, dailymotion to mp4, free video tool, 30tools, dailymotion-video-downloader, dailymotion video downloader, free dailymotion-video-downloader, dailymotion video downloader online, online downloader, free media saver, video downloader",
+	keywords: "dailymotion downloader, download dailymotion videos, dailymotion to mp4, free video tool, SopKit, dailymotion-video-downloader, dailymotion video downloader, free dailymotion-video-downloader, dailymotion video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://30tools.com/dailymotion-video-downloader",
+		canonical: "https://sopkit.github.io/dailymotion-video-downloader",
 	},
 	openGraph: {
-		title: "Free Dailymotion Video Downloader Online - No Signup | 30tools",
+		title: "Free Dailymotion Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Dailymotion Video Downloader online. High-speed downloading with no signup needed.",
-		url: "https://30tools.com/dailymotion-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/dailymotion-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Dailymotion Video Downloader Online - No Signup | 30tools",
+		title: "Free Dailymotion Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Dailymotion Video Downloader online. High-speed downloading with no signup needed.",
 		images: ["/og-image.jpg"],
 	},

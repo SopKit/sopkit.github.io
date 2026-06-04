@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import AcademicGradesCalculator from "@/components/tools/calculators/AcademicGradesCalculator";
 
 export const metadata = {
-	title: "Free SGPA Calculator Online - No Signup | 30tools",
+	title: "Free SGPA Calculator Online - No Signup | SopKit",
 	description: "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.",
-	keywords: "sgpa-calculator, SGPA Calculator, calculate sgpa, credit point calculator, semester grade calculator, 30tools",
+	keywords: "sgpa-calculator, SGPA Calculator, calculate sgpa, credit point calculator, semester grade calculator, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/sgpa-calculator",
+		canonical: "https://sopkit.github.io/sgpa-calculator",
 	},
 	openGraph: {
-		title: "Free SGPA Calculator Online - No Signup | 30tools",
+		title: "Free SGPA Calculator Online - No Signup | SopKit",
 		description: "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.",
-		url: "https://30tools.com/sgpa-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/sgpa-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free SGPA Calculator Online - No Signup | 30tools",
+		title: "Free SGPA Calculator Online - No Signup | SopKit",
 		description: "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.",
 		images: ["/og-image.jpg"],
 	},

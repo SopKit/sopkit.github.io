@@ -4,23 +4,23 @@ import PDFProtect from "@/components/tools/pdf/PDFProtect";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free PDF Password Protect Online - No Signup | 30tools",
+	title: "Free PDF Password Protect Online - No Signup | SopKit",
 	description: "Manage, convert, edit, and secure PDF documents with our free PDF Password Protect online. Safe and private browser-based tool with no registration. 100% free.",
-	keywords: "pdf-protect, Pdf Protect, free pdf-protect, Pdf Protect online, PDF utility, document editor, online PDF tool, free PDF converter, 30tools",
+	keywords: "pdf-protect, Pdf Protect, free pdf-protect, Pdf Protect online, PDF utility, document editor, online PDF tool, free PDF converter, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/pdf-protect",
+		canonical: "https://sopkit.github.io/pdf-protect",
 	},
 	openGraph: {
-		title: "Free PDF Password Protect Online - No Signup | 30tools",
+		title: "Free PDF Password Protect Online - No Signup | SopKit",
 		description: "Manage, convert, edit, and secure PDF documents with our free PDF Password Protect online. Safe and private browser-based tool with no registration. 100% free.",
-		url: "https://30tools.com/pdf-protect",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/pdf-protect",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PDF Password Protect Online - No Signup | 30tools",
+		title: "Free PDF Password Protect Online - No Signup | SopKit",
 		description: "Manage, convert, edit, and secure PDF documents with our free PDF Password Protect online. Safe and private browser-based tool with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},

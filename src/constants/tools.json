@@ -53,7 +53,7 @@
             },
             {
               "question": "Is the AI image generator free to use?",
-              "answer": "Yes, 30tools AI Image Generator is completely free. There are no limits on the number of images you can generate, no signup is required, and all downloaded images have no watermarks."
+              "answer": "Yes, SopKit AI Image Generator is completely free. There are no limits on the number of images you can generate, no signup is required, and all downloaded images have no watermarks."
             },
             {
               "question": "Can I use AI-generated images commercially?",
@@ -137,11 +137,11 @@
             },
             {
               "question": "Can I use the generated voice for commercial projects?",
-              "answer": "Yes, audio generated with 30tools AI Voice Generator can be used for personal and commercial projects including videos, podcasts, presentations, and accessibility features."
+              "answer": "Yes, audio generated with SopKit AI Voice Generator can be used for personal and commercial projects including videos, podcasts, presentations, and accessibility features."
             },
             {
               "question": "Is this text-to-speech tool free?",
-              "answer": "Yes, 30tools AI Voice Generator is completely free with no registration required. Convert unlimited text to speech with no daily limits or watermarks."
+              "answer": "Yes, SopKit AI Voice Generator is completely free with no registration required. Convert unlimited text to speech with no daily limits or watermarks."
             },
             {
               "question": "How do I make the AI voice sound more natural?",
@@ -730,7 +730,7 @@
             },
             {
               "question": "Is this EXIF reader free?",
-              "answer": "Yes, 30tools EXIF Reader is completely free with no registration required. Read metadata from unlimited images with no restrictions."
+              "answer": "Yes, SopKit EXIF Reader is completely free with no registration required. Read metadata from unlimited images with no restrictions."
             }
           ],
           "howTo": [
@@ -1173,7 +1173,7 @@
             },
             {
               "question": "Can I use the logo for my business?",
-              "answer": "Yes, logos created with 30tools Logo Generator can be used for personal and commercial purposes including business branding, social media profiles, and websites."
+              "answer": "Yes, logos created with SopKit Logo Generator can be used for personal and commercial purposes including business branding, social media profiles, and websites."
             },
             {
               "question": "What file format are logos downloaded in?",
@@ -1181,7 +1181,7 @@
             },
             {
               "question": "Is this logo maker really free?",
-              "answer": "Yes, 30tools Logo Generator is completely free with no hidden charges. Create and download unlimited logos without registration or payment."
+              "answer": "Yes, SopKit Logo Generator is completely free with no hidden charges. Create and download unlimited logos without registration or payment."
             },
             {
               "question": "Can I customize the logo colors and fonts?",
@@ -1265,7 +1265,7 @@
             },
             {
               "question": "Is this photo enhancer free?",
-              "answer": "Yes, 30tools Photo Enhancer is completely free with no registration required. Enhance unlimited photos with no watermarks or quality restrictions."
+              "answer": "Yes, SopKit Photo Enhancer is completely free with no registration required. Enhance unlimited photos with no watermarks or quality restrictions."
             }
           ],
           "howTo": [
@@ -3302,7 +3302,7 @@
           ],
           "popular": false,
           "category": "audio",
-          "seoTitle": "Free Guitar Tuner Online - No Signup | 30tools",
+          "seoTitle": "Free Guitar Tuner Online - No Signup | SopKit",
           "seoDescription": "Tune your guitar online for free with our accurate microphone-based guitar tuner. No signup required. Works for acoustic, electric, and bass guitars with standard and drop tunings."
         }
       ]
@@ -6574,7 +6574,7 @@
             },
             {
               "question": "Is this speed test free?",
-              "answer": "Yes, 30tools Internet Speed Test is completely free with no registration required. Run unlimited tests to monitor your connection quality."
+              "answer": "Yes, SopKit Internet Speed Test is completely free with no registration required. Run unlimited tests to monitor your connection quality."
             }
           ],
           "howTo": [
@@ -6904,7 +6904,7 @@
             },
             {
               "question": "Is this password generator free?",
-              "answer": "Yes, 30tools Password Generator is completely free with no registration required. Generate unlimited strong passwords with no restrictions."
+              "answer": "Yes, SopKit Password Generator is completely free with no registration required. Generate unlimited strong passwords with no restrictions."
             }
           ],
           "howTo": [
@@ -8016,7 +8016,7 @@
             },
             {
               "question": "Is this keyword research tool free?",
-              "answer": "Yes, 30tools Advanced Keyword Research is completely free with no registration required. Research unlimited keywords with no daily limits or data restrictions."
+              "answer": "Yes, SopKit Advanced Keyword Research is completely free with no registration required. Research unlimited keywords with no daily limits or data restrictions."
             }
           ],
           "howTo": [
@@ -8117,7 +8117,7 @@
             },
             {
               "question": "Is this SEO audit tool free?",
-              "answer": "Yes, 30tools Complete SEO Audit Tool is completely free with no registration required. Run unlimited audits on any website without restrictions."
+              "answer": "Yes, SopKit Complete SEO Audit Tool is completely free with no registration required. Run unlimited audits on any website without restrictions."
             },
             {
               "question": "Can I audit competitor websites?",
@@ -8201,7 +8201,7 @@
             },
             {
               "question": "Is this backlink checker free?",
-              "answer": "Yes, 30tools Backlink Checker is completely free with no registration required. Check backlinks for unlimited domains with no restrictions."
+              "answer": "Yes, SopKit Backlink Checker is completely free with no registration required. Check backlinks for unlimited domains with no restrictions."
             }
           ],
           "howTo": [
@@ -8281,7 +8281,7 @@
             },
             {
               "question": "Is the bulk rank checker free?",
-              "answer": "Yes, 30tools Bulk Keyword Rank Checker is completely free with no signup required. Check as many keyword batches as you need with no daily limits."
+              "answer": "Yes, SopKit Bulk Keyword Rank Checker is completely free with no signup required. Check as many keyword batches as you need with no daily limits."
             }
           ],
           "howTo": [
@@ -8768,7 +8768,7 @@
         {
           "id": "privacy",
           "name": "Free Privacy Policy Online",
-          "description": "Read the 30tools Privacy Policy. We explain what data we collect, how we protect it, and how our privacy-first browser-based tools work. No signup required.",
+          "description": "Read the SopKit Privacy Policy. We explain what data we collect, how we protect it, and how our privacy-first browser-based tools work. No signup required.",
           "route": "/privacy",
           "category": "company",
           "extraSlugs": [
@@ -8792,7 +8792,7 @@
         {
           "id": "terms",
           "name": "Free Terms of Use Online",
-          "description": "Read the 30tools Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
+          "description": "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
           "route": "/terms",
           "category": "company",
           "extraSlugs": [

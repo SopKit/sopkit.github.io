@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Each Converter Online - No Signup | 30tools",
+	title: "Free Each Converter Online - No Signup | SopKit",
 	description: "Free each converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "each converter, free online tool, no signup, each-converter, free each-converter, Each Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "each converter, free online tool, no signup, each-converter, free each-converter, Each Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/each-converter",
+		canonical: "https://sopkit.github.io/each-converter",
 	},
 	openGraph: {
-		title: "Free Each Converter Online - No Signup | 30tools",
+		title: "Free Each Converter Online - No Signup | SopKit",
 		description: "Free each converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/each-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/each-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Each Converter Online - No Signup | 30tools",
+		title: "Free Each Converter Online - No Signup | SopKit",
 		description: "Free each converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

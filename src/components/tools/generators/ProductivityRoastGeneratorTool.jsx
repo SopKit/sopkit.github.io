@@ -225,7 +225,7 @@ Style: ${roastIntensity === "motivational" ? "Tough love coach" : roastIntensity
 	};
 
 	const shareToSocial = () => {
-		const text = `My productivity roast: "${roast}" 😅 Get yours at 30tools.com!`;
+		const text = `My productivity roast: "${roast}" 😅 Get yours at sopkit.github.io!`;
 		const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
 		window.open(url, "_blank");
 	};
@@ -588,7 +588,7 @@ Style: ${roastIntensity === "motivational" ? "Tough love coach" : roastIntensity
 					<SocialShareButtons
 						toolName="Productivity Roast Generator"
 						toolDescription="Get the honest feedback about your work habits you need to hear! 🔥"
-						toolUrl="https://30tools.com/productivity-roast-generator"
+						toolUrl="https://sopkit.github.io/productivity-roast-generator"
 						category="generators"
 					/>
 				</div>

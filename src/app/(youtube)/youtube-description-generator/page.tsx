@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Description Generator Online - No Signup | 30tools",
+	title: "Free YouTube Description Generator Online - No Signup | SopKit",
 	description: "Create SEO-optimized YouTube video descriptions instantly. Our free online generator helps you include keywords, links, and timestamps to boost your video...",
-	keywords: "youtube description generator, free online tool, no signup, youtube-description-generator, free youtube-description-generator, Youtube Description Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube description generator, free online tool, no signup, youtube-description-generator, free youtube-description-generator, Youtube Description Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-description-generator",
+		canonical: "https://sopkit.github.io/youtube-description-generator",
 	},
 	openGraph: {
-		title: "Free YouTube Description Generator Online - No Signup | 30tools",
+		title: "Free YouTube Description Generator Online - No Signup | SopKit",
 		description: "Create SEO-optimized YouTube video descriptions instantly. Our free online generator helps you include keywords, links, and timestamps to boost your video...",
-		url: "https://30tools.com/youtube-description-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-description-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Description Generator Online - No Signup | 30tools",
+		title: "Free YouTube Description Generator Online - No Signup | SopKit",
 		description: "Create SEO-optimized YouTube video descriptions instantly. Our free online generator helps you include keywords, links, and timestamps to boost your video...",
 		images: ["/og-image.jpg"],
 	},

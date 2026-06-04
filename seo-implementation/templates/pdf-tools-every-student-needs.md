@@ -2,7 +2,7 @@
 title: "PDF Tools Every Student Needs in 2026 - Free & Easy to Use"
 description: "Essential PDF tools for students: merge, split, compress, convert, and edit PDFs online for free. Perfect for assignments and research."
 date: "2026-05-27"
-author: "30tools Team"
+author: "SopKit Team"
 category: "pdf"
 keywords: ["pdf tools for students","free pdf editor","pdf converter","merge pdf"]
 image: "/og-images/pdf-tools-every-student-needs.jpg"

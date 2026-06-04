@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Frequency Converter Online - No Signup | 30tools",
+	title: "Free Frequency Converter Online - No Signup | SopKit",
 	description: "Free frequency converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "frequency converter, free online tool, no signup, frequency-converter, free frequency-converter, Frequency Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "frequency converter, free online tool, no signup, frequency-converter, free frequency-converter, Frequency Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/frequency-converter",
+		canonical: "https://sopkit.github.io/frequency-converter",
 	},
 	openGraph: {
-		title: "Free Frequency Converter Online - No Signup | 30tools",
+		title: "Free Frequency Converter Online - No Signup | SopKit",
 		description: "Free frequency converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/frequency-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/frequency-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Frequency Converter Online - No Signup | 30tools",
+		title: "Free Frequency Converter Online - No Signup | SopKit",
 		description: "Free frequency converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

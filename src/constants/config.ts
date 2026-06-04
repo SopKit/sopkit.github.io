@@ -1,9 +1,9 @@
 import toolsData from "@/constants/tools.json";
 
-export const SITE_NAME = "30tools";
+export const SITE_NAME = "SopKit";
 export const SITE_URL = "https://sopkit.github.io";
-export const CONTACT_EMAIL = "mail@30tools.com";
-export const COMPANY_OR_OWNER_NAME = "30tools";
+export const CONTACT_EMAIL = "mail@sopkit.github.io";
+export const COMPANY_OR_OWNER_NAME = "SopKit";
 export const LAST_UPDATED = "2026-05-09";
 
 const allTools = Object.values(toolsData.categories || {}).flatMap(

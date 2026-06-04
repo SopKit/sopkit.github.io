@@ -4,23 +4,23 @@ import AIImageGeneratorTool from "@/components/tools/generators/AIImageGenerator
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free AI Image Generator Online - No Signup | 30tools",
+	title: "Free AI Image Generator Online - No Signup | SopKit",
 	description: "Generate stunning AI images from text prompts instantly. Create photorealistic photos, digital art, anime, and illustrations for free. No signup required...",
-	keywords: "ai image generator, free online tool, no signup, ai-image-generator, free ai-image-generator, Ai Image Generator online, online generator, content creator, free maker, creative tool, 30tools",
+	keywords: "ai image generator, free online tool, no signup, ai-image-generator, free ai-image-generator, Ai Image Generator online, online generator, content creator, free maker, creative tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/ai-image-generator",
+		canonical: "https://sopkit.github.io/ai-image-generator",
 	},
 	openGraph: {
-		title: "Free AI Image Generator Online - No Signup | 30tools",
+		title: "Free AI Image Generator Online - No Signup | SopKit",
 		description: "Generate stunning AI images from text prompts instantly. Create photorealistic photos, digital art, anime, and illustrations for free. No signup required...",
-		url: "https://30tools.com/ai-image-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/ai-image-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free AI Image Generator Online - No Signup | 30tools",
+		title: "Free AI Image Generator Online - No Signup | SopKit",
 		description: "Generate stunning AI images from text prompts instantly. Create photorealistic photos, digital art, anime, and illustrations for free. No signup required...",
 		images: ["/og-image.jpg"],
 	},

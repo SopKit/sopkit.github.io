@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { getAllTools, getAllCategories } from "./tools";
 
 /**
- * Centralized SEO utility for 30tools
+ * Centralized SEO utility for SopKit
  */
 
-const BASE_URL = "https://30tools.com";
+const BASE_URL = "https://sopkit.github.io";
 
 interface MetadataProps {
 	title: string;
@@ -38,7 +38,7 @@ export function generateMetadata({
 			title,
 			description,
 			url: canonicalUrl,
-			siteName: "30tools",
+			siteName: "SopKit",
 			locale: "en_US",
 			type: "website",
 			images: [
@@ -55,7 +55,7 @@ export function generateMetadata({
 			title,
 			description,
 			images: [image.startsWith("http") ? image : `${BASE_URL}${image}`],
-			creator: "@30tools",
+			creator: "@sopkit",
 		},
 		robots: {
 			index: !noIndex,
@@ -102,7 +102,7 @@ export function generateWebAppSchema({
 		},
 		author: {
 			"@type": "Organization",
-			name: "30tools",
+			name: "SopKit",
 			url: BASE_URL,
 		},
 	};

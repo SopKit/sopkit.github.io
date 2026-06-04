@@ -2,7 +2,7 @@
 title: "25 Best Free Developer Tools Online - Boost Your Productivity"
 description: "Essential online developer tools for JSON formatting, code minification, API testing, and more. All free with no signup required."
 date: "2026-05-27"
-author: "30tools Team"
+author: "SopKit Team"
 category: "developer"
 keywords: ["developer tools","json formatter","code minifier","api tester"]
 image: "/og-images/best-developer-tools-online-free.jpg"

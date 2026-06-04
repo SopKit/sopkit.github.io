@@ -4,23 +4,23 @@ import TikTokAudioDownloader from "@/components/tools/downloaders/TikTokAudioDow
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Free Mp3 Extractor Online - No Signup | 30tools",
+	title: "Free Free Mp3 Extractor Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Free Mp3 Extractor online. High-speed downloading with no signup needed. No signup required.",
-	keywords: "free mp3 extractor, free online tool, no signup, free-mp3-extractor, free free-mp3-extractor, Free Mp3 Extractor online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "free mp3 extractor, free online tool, no signup, free-mp3-extractor, free free-mp3-extractor, Free Mp3 Extractor online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/free-mp3-extractor",
+		canonical: "https://sopkit.github.io/free-mp3-extractor",
 	},
 	openGraph: {
-		title: "Free Free Mp3 Extractor Online - No Signup | 30tools",
+		title: "Free Free Mp3 Extractor Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Free Mp3 Extractor online. High-speed downloading with no signup needed. No signup required.",
-		url: "https://30tools.com/free-mp3-extractor",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/free-mp3-extractor",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Free Mp3 Extractor Online - No Signup | 30tools",
+		title: "Free Free Mp3 Extractor Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Free Mp3 Extractor online. High-speed downloading with no signup needed. No signup required.",
 		images: ["/og-image.jpg"],
 	},

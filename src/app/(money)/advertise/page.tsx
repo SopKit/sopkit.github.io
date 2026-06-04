@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-	title: "Advertise on 30tools - Sponsor Tools and Categories",
-	description: "Sponsor a 30tools category, tool page, newsletter placement, or contextual sponsored slot for software, education, design, and developer audiences.",
-	alternates: { canonical: "https://30tools.com/advertise" },
+	title: "Advertise on SopKit - Sponsor Tools and Categories",
+	description: "Sponsor a SopKit category, tool page, newsletter placement, or contextual sponsored slot for software, education, design, and developer audiences.",
+	alternates: { canonical: "https://sopkit.github.io/advertise" },
 };
 
 const placements = [
@@ -18,7 +18,7 @@ export default function AdvertisePage() {
 	return (
 		<main className="container mx-auto max-w-5xl px-4 py-16 space-y-12">
 			<section className="max-w-3xl space-y-5">
-				<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">Advertise on 30tools</h1>
+				<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">Advertise on SopKit</h1>
 				<p className="text-lg leading-relaxed text-muted-foreground">
 					Sponsor a category, tool, or newsletter placement without popups, deceptive buttons, or interruptive ads.
 				</p>

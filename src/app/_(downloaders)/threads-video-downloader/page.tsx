@@ -4,23 +4,23 @@ import ThreadsDownloader from "@/components/tools/downloaders/ThreadsDownloader"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Threads Video Downloader Online - No Signup | 30tools",
+	title: "Free Threads Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Threads Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-	keywords: "threads video downloader, free online tool, no signup, threads-video-downloader, free threads-video-downloader, Threads Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "threads video downloader, free online tool, no signup, threads-video-downloader, free threads-video-downloader, Threads Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/threads-video-downloader",
+		canonical: "https://sopkit.github.io/threads-video-downloader",
 	},
 	openGraph: {
-		title: "Free Threads Video Downloader Online - No Signup | 30tools",
+		title: "Free Threads Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Threads Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://30tools.com/threads-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/threads-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Threads Video Downloader Online - No Signup | 30tools",
+		title: "Free Threads Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Threads Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 		images: ["/og-image.jpg"],
 	},

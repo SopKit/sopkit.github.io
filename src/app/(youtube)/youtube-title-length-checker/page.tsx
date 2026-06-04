@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Title Length Checker Online - No Signup | 30tools",
+	title: "Free YouTube Title Length Checker Online - No Signup | SopKit",
 	description: "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full...",
-	keywords: "youtube title length checker, free online tool, no signup, youtube-title-length-checker, free youtube-title-length-checker, Youtube Title Length Checker online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube title length checker, free online tool, no signup, youtube-title-length-checker, free youtube-title-length-checker, Youtube Title Length Checker online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-title-length-checker",
+		canonical: "https://sopkit.github.io/youtube-title-length-checker",
 	},
 	openGraph: {
-		title: "Free YouTube Title Length Checker Online - No Signup | 30tools",
+		title: "Free YouTube Title Length Checker Online - No Signup | SopKit",
 		description: "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full...",
-		url: "https://30tools.com/youtube-title-length-checker",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-title-length-checker",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Title Length Checker Online - No Signup | 30tools",
+		title: "Free YouTube Title Length Checker Online - No Signup | SopKit",
 		description: "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full...",
 		images: ["/og-image.jpg"],
 	},

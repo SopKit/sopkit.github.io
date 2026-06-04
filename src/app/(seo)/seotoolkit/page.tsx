@@ -4,23 +4,23 @@ import SeoToolkit from "@/components/tools/seo/SeoToolkit";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free SEO Toolkit Online - No Signup | 30tools",
+	title: "Free SEO Toolkit Online - No Signup | SopKit",
 	description: "Audit websites, analyze search rankings, and generate schemas with our free SEO Toolkit online. Optimize search presence with no signup. No registration needed.",
-	keywords: "seo toolkit, free online tool, no signup, seotoolkit, free seotoolkit, Seotoolkit online, SEO tool, search optimizer, website analyzer, free SEO utility, 30tools",
+	keywords: "seo toolkit, free online tool, no signup, seotoolkit, free seotoolkit, Seotoolkit online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/seotoolkit",
+		canonical: "https://sopkit.github.io/seotoolkit",
 	},
 	openGraph: {
-		title: "Free SEO Toolkit Online - No Signup | 30tools",
+		title: "Free SEO Toolkit Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free SEO Toolkit online. Optimize search presence with no signup. No registration needed.",
-		url: "https://30tools.com/seotoolkit",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/seotoolkit",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free SEO Toolkit Online - No Signup | 30tools",
+		title: "Free SEO Toolkit Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free SEO Toolkit online. Optimize search presence with no signup. No registration needed.",
 		images: ["/og-image.jpg"],
 	},

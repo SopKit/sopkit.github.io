@@ -1,17 +1,17 @@
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
-	title: "Free Developer Tools Online - No Signup | 30tools",
+	title: "Free Developer Tools Online - No Signup | SopKit",
 	description:
 		"Free developer tools for JSON formatting, Base64 encoding/decoding, JWT decoding, hash generation, regex testing, and more. Secure client-side processing — your code never leaves the browser. No signup required.",
 	keywords:
 		"developer tools, json formatter, jwt decoder, base64 encoder, base64 decoder, hash generator, regex tester, css minifier, html validator, free developer utilities, online coding tools, debug jwt, validate json, url encoder, developer toolkit",
 	openGraph: {
-		title: "Free Developer Tools Online - No Signup | 30tools",
+		title: "Free Developer Tools Online - No Signup | SopKit",
 		description:
 			"Essential developer tools for JSON, JWT, Base64, hashing, and more. Secure client-side processing with no signup.",
-		url: "https://30tools.com/developer-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/developer-tools",
+		siteName: "SopKit",
 		images: [
 			{
 				url: "/og-image.jpg",
@@ -24,7 +24,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Developer Tools Online - No Signup | 30tools",
+		title: "Free Developer Tools Online - No Signup | SopKit",
 		description:
 			"Essential developer tools for JSON, JWT, Base64, hashing, and more. Secure client-side processing with no signup.",
 		images: ["/og-image.jpg"],

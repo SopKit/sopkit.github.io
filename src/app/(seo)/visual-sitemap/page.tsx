@@ -4,23 +4,23 @@ import VisualSitemapTool from "@/components/tools/seo/VisualSitemapTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Visual Sitemap Generator Online - No Signup | 30tools",
+	title: "Free Visual Sitemap Generator Online - No Signup | SopKit",
 	description: "Audit websites, analyze search rankings, and generate schemas with our free Visual Sitemap Generator online. Optimize search presence with no signup. 100% free.",
-	keywords: "visual sitemap generator, free online tool, no signup, visual-sitemap, Visual Sitemap, free visual-sitemap, Visual Sitemap online, SEO tool, search optimizer, website analyzer, free SEO utility, 30tools",
+	keywords: "visual sitemap generator, free online tool, no signup, visual-sitemap, Visual Sitemap, free visual-sitemap, Visual Sitemap online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/visual-sitemap",
+		canonical: "https://sopkit.github.io/visual-sitemap",
 	},
 	openGraph: {
-		title: "Free Visual Sitemap Generator Online - No Signup | 30tools",
+		title: "Free Visual Sitemap Generator Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Visual Sitemap Generator online. Optimize search presence with no signup. 100% free.",
-		url: "https://30tools.com/visual-sitemap",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/visual-sitemap",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Visual Sitemap Generator Online - No Signup | 30tools",
+		title: "Free Visual Sitemap Generator Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Visual Sitemap Generator online. Optimize search presence with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import Base64Tool from "@/components/tools/developer/Base64Tool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Base64 Encode Online - No Signup | 30tools",
+	title: "Free Base64 Encode Online - No Signup | SopKit",
 	description: "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in...",
-	keywords: "base64 encode, free online tool, no signup, base64-encode, free base64-encode, Base64 Encode online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "base64 encode, free online tool, no signup, base64-encode, free base64-encode, Base64 Encode online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/base64-encode",
+		canonical: "https://sopkit.github.io/base64-encode",
 	},
 	openGraph: {
-		title: "Free Base64 Encode Online - No Signup | 30tools",
+		title: "Free Base64 Encode Online - No Signup | SopKit",
 		description: "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in...",
-		url: "https://30tools.com/base64-encode",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/base64-encode",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Base64 Encode Online - No Signup | 30tools",
+		title: "Free Base64 Encode Online - No Signup | SopKit",
 		description: "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in...",
 		images: ["/og-image.jpg"],
 	},

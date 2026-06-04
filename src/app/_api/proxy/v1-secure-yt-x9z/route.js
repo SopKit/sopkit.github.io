@@ -7,7 +7,7 @@ export async function POST(req) {
 
 		// Validate request origin
 		const origin = req.headers.get("origin") || req.headers.get("referer");
-		const allowedHosts = ["30tools.com", "www.30tools.com", "localhost:3000"];
+		const allowedHosts = ["sopkit.github.io", "www.sopkit.github.io", "localhost:3000"];
 
 		let isAllowed = false;
 		if (origin) {

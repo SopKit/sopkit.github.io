@@ -2,24 +2,24 @@ import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata: Metadata = {
-	title: "Company | 30tools",
+	title: "Company | SopKit",
 	description:
-		`Learn about 30tools — our mission to provide ${SITE_CONFIG.toolCountString} free browser-based tools, contact information, privacy policy, and terms of service. Privacy-first, no registration required.`,
+		`Learn about SopKit — our mission to provide ${SITE_CONFIG.toolCountString} free browser-based tools, contact information, privacy policy, and terms of service. Privacy-first, no registration required.`,
 	keywords:
-		"30tools company, about 30tools, contact 30tools, privacy policy, terms of service, free online tools company, privacy focused tools, no signup tools",
+		"SopKit company, about SopKit, contact SopKit, privacy policy, terms of service, free online tools company, privacy focused tools, no signup tools",
 	openGraph: {
-		title: "Company | 30tools",
+		title: "Company | SopKit",
 		description:
-			"Learn about 30tools — our mission, contact details, privacy policy, and terms of service.",
-		url: "https://30tools.com/about",
-		siteName: "30tools",
+			"Learn about SopKit — our mission, contact details, privacy policy, and terms of service.",
+		url: "https://sopkit.github.io/about",
+		siteName: "SopKit",
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Company | 30tools",
+		title: "Company | SopKit",
 		description:
-			"Learn about 30tools — our mission, contact details, privacy policy, and terms of service.",
+			"Learn about SopKit — our mission, contact details, privacy policy, and terms of service.",
 	},
 };
 

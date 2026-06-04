@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Pressure Converter Online - No Signup | 30tools",
+	title: "Free Pressure Converter Online - No Signup | SopKit",
 	description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "pressure converter, free online tool, no signup, pressure-converter, free pressure-converter, Pressure Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "pressure converter, free online tool, no signup, pressure-converter, free pressure-converter, Pressure Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/pressure-converter",
+		canonical: "https://sopkit.github.io/pressure-converter",
 	},
 	openGraph: {
-		title: "Free Pressure Converter Online - No Signup | 30tools",
+		title: "Free Pressure Converter Online - No Signup | SopKit",
 		description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/pressure-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/pressure-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Pressure Converter Online - No Signup | 30tools",
+		title: "Free Pressure Converter Online - No Signup | SopKit",
 		description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

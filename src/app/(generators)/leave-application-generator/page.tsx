@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import LeaveLetterGenerator from "@/components/tools/generators/LeaveLetterGenerator";
 
 export const metadata = {
-	title: "Free Leave Application Generator Online - No Signup | 30tools",
+	title: "Free Leave Application Generator Online - No Signup | SopKit",
 	description: "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.",
 	keywords: "leave-application-generator, Leave Application Generator",
 	alternates: {
-		canonical: "https://30tools.com/leave-application-generator",
+		canonical: "https://sopkit.github.io/leave-application-generator",
 	},
 	openGraph: {
-		title: "Free Leave Application Generator Online - No Signup | 30tools",
+		title: "Free Leave Application Generator Online - No Signup | SopKit",
 		description: "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.",
-		url: "https://30tools.com/leave-application-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/leave-application-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Leave Application Generator Online - No Signup | 30tools",
+		title: "Free Leave Application Generator Online - No Signup | SopKit",
 		description: "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.",
 		images: ["/og-image.jpg"],
 	},

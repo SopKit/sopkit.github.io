@@ -4,23 +4,23 @@ import MashableDownloader from "@/components/tools/downloaders/MashableDownloade
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Mashable Video Downloader Online - No Signup | 30tools",
+	title: "Free Mashable Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Mashable Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-	keywords: "mashable video downloader, free online tool, no signup, mashable-video-downloader, free mashable-video-downloader, Mashable Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "mashable video downloader, free online tool, no signup, mashable-video-downloader, free mashable-video-downloader, Mashable Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/mashable-video-downloader",
+		canonical: "https://sopkit.github.io/mashable-video-downloader",
 	},
 	openGraph: {
-		title: "Free Mashable Video Downloader Online - No Signup | 30tools",
+		title: "Free Mashable Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Mashable Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://30tools.com/mashable-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/mashable-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Mashable Video Downloader Online - No Signup | 30tools",
+		title: "Free Mashable Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Mashable Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 		images: ["/og-image.jpg"],
 	},

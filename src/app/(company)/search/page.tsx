@@ -3,23 +3,23 @@ import { SITE_CONFIG } from "@/constants/config";
 import toolsData from "@/constants/tools.json";
 
 export const metadata = {
-	title: "Free Search All Tools Online - No Signup | 30tools",
+	title: "Free Search All Tools Online - No Signup | SopKit",
 	description: "Search and browse our collection of 300+ free online tools. 100% free, no signup required.",
-	keywords: "search online tools, free online tools, 30tools search, image tool search, pdf tool search, seo tools directory, developer utilities, search, free search, search online, 30tools, browser tools",
+	keywords: "search online tools, free online tools, SopKit search, image tool search, pdf tool search, seo tools directory, developer utilities, search, free search, search online, SopKit, browser tools",
 	alternates: {
-		canonical: "https://30tools.com/search",
+		canonical: "https://sopkit.github.io/search",
 	},
 	openGraph: {
-		title: "Free Search All Tools Online - No Signup | 30tools",
+		title: "Free Search All Tools Online - No Signup | SopKit",
 		description: "Search and browse our collection of 300+ free online tools. 100% free, no signup required.",
-		url: "https://30tools.com/search",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/search",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Search All Tools Online - No Signup | 30tools",
+		title: "Free Search All Tools Online - No Signup | SopKit",
 		description: "Search and browse our collection of 300+ free online tools. 100% free, no signup required.",
 		images: ["/og-image.jpg"],
 	},
@@ -65,7 +65,7 @@ export default async function SearchPage() {
 					{/* Search header — server-rendered, visible to crawlers */}
 					<div className="space-y-6 text-center max-w-3xl mx-auto">
 						<h1 className="text-4xl md:text-6xl font-black tracking-tighter">
-							Search <span className="text-primary">30tools</span>
+							Search <span className="text-primary">SopKit</span>
 						</h1>
 						<p className="text-xl text-muted-foreground">
 							Find exactly what you need among our {SITE_CONFIG.toolCountString} professional tools.

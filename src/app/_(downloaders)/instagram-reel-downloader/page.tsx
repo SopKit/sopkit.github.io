@@ -4,23 +4,23 @@ import InstagramReelDownloader from "@/components/tools/downloaders/InstagramRee
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Instagram Reel Downloader Online - No Signup | 30tools",
+	title: "Free Instagram Reel Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Instagram Reel Downloader online. High-speed downloading with no signup needed. Easy to use.",
-	keywords: "instagram reel downloader, download reels, instagram reels saver, reel video downloader, free tool, 30tools, instagram-reel-downloader, free instagram-reel-downloader, instagram reel downloader online, online downloader, free media saver, video downloader",
+	keywords: "instagram reel downloader, download reels, instagram reels saver, reel video downloader, free tool, SopKit, instagram-reel-downloader, free instagram-reel-downloader, instagram reel downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://30tools.com/instagram-reel-downloader",
+		canonical: "https://sopkit.github.io/instagram-reel-downloader",
 	},
 	openGraph: {
-		title: "Free Instagram Reel Downloader Online - No Signup | 30tools",
+		title: "Free Instagram Reel Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Instagram Reel Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://30tools.com/instagram-reel-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/instagram-reel-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Instagram Reel Downloader Online - No Signup | 30tools",
+		title: "Free Instagram Reel Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Instagram Reel Downloader online. High-speed downloading with no signup needed. Easy to use.",
 		images: ["/og-image.jpg"],
 	},

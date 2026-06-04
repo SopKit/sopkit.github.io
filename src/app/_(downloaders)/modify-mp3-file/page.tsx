@@ -4,23 +4,23 @@ import TikTokMP3Converter from "@/components/tools/downloaders/TikTokMP3Converte
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Modify Mp3 File Online - No Signup | 30tools",
+	title: "Free Modify Mp3 File Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Modify Mp3 File online. High-speed downloading with no signup needed. 100% free and secure.",
-	keywords: "modify mp3 file, free online tool, no signup, modify-mp3-file, free modify-mp3-file, Modify Mp3 File online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "modify mp3 file, free online tool, no signup, modify-mp3-file, free modify-mp3-file, Modify Mp3 File online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/modify-mp3-file",
+		canonical: "https://sopkit.github.io/modify-mp3-file",
 	},
 	openGraph: {
-		title: "Free Modify Mp3 File Online - No Signup | 30tools",
+		title: "Free Modify Mp3 File Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Modify Mp3 File online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://30tools.com/modify-mp3-file",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/modify-mp3-file",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Modify Mp3 File Online - No Signup | 30tools",
+		title: "Free Modify Mp3 File Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Modify Mp3 File online. High-speed downloading with no signup needed. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},

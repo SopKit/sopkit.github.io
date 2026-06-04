@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Tag Generator Online - No Signup | 30tools",
+	title: "Free YouTube Tag Generator Online - No Signup | SopKit",
 	description: "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank...",
-	keywords: "youtube tag generator, free online tool, no signup, youtube-tag-generator, free youtube-tag-generator, Youtube Tag Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube tag generator, free online tool, no signup, youtube-tag-generator, free youtube-tag-generator, Youtube Tag Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-tag-generator",
+		canonical: "https://sopkit.github.io/youtube-tag-generator",
 	},
 	openGraph: {
-		title: "Free YouTube Tag Generator Online - No Signup | 30tools",
+		title: "Free YouTube Tag Generator Online - No Signup | SopKit",
 		description: "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank...",
-		url: "https://30tools.com/youtube-tag-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-tag-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Tag Generator Online - No Signup | 30tools",
+		title: "Free YouTube Tag Generator Online - No Signup | SopKit",
 		description: "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank...",
 		images: ["/og-image.jpg"],
 	},

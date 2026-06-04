@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-	title: "Hire 30tools - SEO Fixes, Landing Pages and Custom Tools",
-	description: "Hire the team behind 30tools for SEO fixes, landing pages, restaurant QR menu websites, speed optimization, custom tools, and API integrations.",
-	alternates: { canonical: "https://30tools.com/services" },
+	title: "Hire SopKit - SEO Fixes, Landing Pages and Custom Tools",
+	description: "Hire the team behind SopKit for SEO fixes, landing pages, restaurant QR menu websites, speed optimization, custom tools, and API integrations.",
+	alternates: { canonical: "https://sopkit.github.io/services" },
 };
 
 const services = [
@@ -21,7 +21,7 @@ export default function ServicesPage() {
 	return (
 		<main className="container mx-auto max-w-5xl px-4 py-16 space-y-12">
 			<section className="max-w-3xl space-y-5">
-				<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">Hire 30tools</h1>
+				<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">Hire SopKit</h1>
 				<p className="text-lg leading-relaxed text-muted-foreground">
 					Need a clean SEO tool, small business landing page, speed fix, or API integration? We build practical web utilities and growth pages.
 				</p>

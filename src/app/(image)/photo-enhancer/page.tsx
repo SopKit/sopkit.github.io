@@ -4,23 +4,23 @@ import PhotoEnhancerTool from "@/components/tools/image/PhotoEnhancerTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Photo Enhancer Online - No Signup | 30tools",
+	title: "Free Photo Enhancer Online - No Signup | SopKit",
 	description: "Enhance photo quality with AI-powered image enhancement",
-	keywords: "photo enhancer, free online tool, no signup, photo-enhancer, free photo-enhancer, Photo Enhancer online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "photo enhancer, free online tool, no signup, photo-enhancer, free photo-enhancer, Photo Enhancer online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/photo-enhancer",
+		canonical: "https://sopkit.github.io/photo-enhancer",
 	},
 	openGraph: {
-		title: "Free Photo Enhancer Online - No Signup | 30tools",
+		title: "Free Photo Enhancer Online - No Signup | SopKit",
 		description: "Enhance photo quality with AI-powered image enhancement",
-		url: "https://30tools.com/photo-enhancer",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/photo-enhancer",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Photo Enhancer Online - No Signup | 30tools",
+		title: "Free Photo Enhancer Online - No Signup | SopKit",
 		description: "Enhance photo quality with AI-powered image enhancement",
 		images: ["/og-image.jpg"],
 	},

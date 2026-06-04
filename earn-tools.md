@@ -1,4 +1,4 @@
-Below is a **50+ low-competition, higher-AdSense-potential tool list** for 30tools. I’m choosing tools that match your codebase style: browser-first utilities, Next.js tool pages, SEO metadata, FAQ/HowTo schema, and cluster-based internal linking. Your uploaded 30tools audit/codebase already shows the site is data-driven around `tools.json`, SEO routes, and tool pages, but it also warned about duplicate/thin/tool-shell pages, so these ideas should be built as **real working tools + unique content**, not mass duplicate pages. 
+Below is a **50+ low-competition, higher-AdSense-potential tool list** for SopKit. I’m choosing tools that match your codebase style: browser-first utilities, Next.js tool pages, SEO metadata, FAQ/HowTo schema, and cluster-based internal linking. Your uploaded SopKit audit/codebase already shows the site is data-driven around `tools.json`, SEO routes, and tool pages, but it also warned about duplicate/thin/tool-shell pages, so these ideas should be built as **real working tools + unique content**, not mass duplicate pages. 
 
 Important: AdSense Page RPM is calculated from estimated earnings per 1,000 views, so “high earning” means you need both traffic and decent RPM, not just CPC dreams. Google’s own example shows RPM as earnings divided by views, multiplied by 1,000. ([Google Support][1]) Also, don’t create hundreds of thin pages just for rankings because Google defines scaled content abuse as creating many pages mainly to manipulate rankings without helping users. ([Google for Developers][2])
 
@@ -27,7 +27,7 @@ These are very strong for India/Bharat traffic. SERP sampling shows many small s
 | 15 | Photo With Name and Date Editor | `/photo-name-date-editor` | photo with name and date editor | add name date on photo, exam photo date editor, govt form photo editor            |
 
 **Title tag pattern:**
-`SSC Photo Resizer Online - Resize Photo for SSC Form | 30tools`
+`SSC Photo Resizer Online - Resize Photo for SSC Form | SopKit`
 
 **Meta description pattern:**
 `Resize and compress your SSC form photo in your browser. Set exam-ready dimensions, target KB size, preview, and download instantly.`
@@ -205,7 +205,7 @@ Secondary keywords:
 [tool name] PDF/download
 
 Title:
-[Primary Keyword] Online - Free [Use Case] Tool | 30tools
+[Primary Keyword] Online - Free [Use Case] Tool | SopKit
 
 Meta description:
 Use [Primary Keyword] to [specific outcome]. Works in your browser, no signup, preview and download instantly.
@@ -251,7 +251,7 @@ Google’s AdSense policy guidance warns against ads around copyrighted content 
 
 ## My recommended domain/site strategy
 
-For 30tools.com, keep broad tools. Then launch smaller niche sites later:
+For sopkit.github.io, keep broad tools. Then launch smaller niche sites later:
 
 | Site                 | Focus                                   |
 | -------------------- | --------------------------------------- |

@@ -2,7 +2,7 @@
 
 ## Current Phase: Production — SEO & Growth Optimization
 
-The platform is live at 30tools.com with 376 tools across 15 categories. The focus is on SEO growth, content marketing, and tool quality improvements.
+The platform is live at sopkit.github.io with 376 tools across 15 categories. The focus is on SEO growth, content marketing, and tool quality improvements.
 
 ## Completed Milestones
 
@@ -39,7 +39,7 @@ The platform is live at 30tools.com with 376 tools across 15 categories. The foc
 - [x] PWA manifest (currently disabled for Cloudflare stability)
 
 ### Features (Done)
-- [x] YouTube magic redirect (youtube.com → 30tools.com)
+- [x] YouTube magic redirect (youtube.com → sopkit.github.io)
 - [x] 14-language internationalization via ?lang= query
 - [x] Stack Auth integration (optional, gracefully degrades)
 - [x] 16 API routes for backend operations

@@ -4,24 +4,24 @@ import { FileText } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
-	title: "Free Terms of Use Online - 30tools",
-	description: "Read the 30tools Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
-	keywords: "terms of use, 30tools terms, terms of service, free online tools terms, terms, free terms, terms online, 30tools, free online tools, browser tools, no signup tools, privacy tools",
+	title: "Free Terms of Use Online - SopKit",
+	description: "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
+	keywords: "terms of use, SopKit terms, terms of service, free online tools terms, terms, free terms, terms online, SopKit, free online tools, browser tools, no signup tools, privacy tools",
 	alternates: {
-		canonical: "https://30tools.com/terms",
+		canonical: "https://sopkit.github.io/terms",
 	},
 	openGraph: {
-		title: "Free Terms of Use Online - 30tools",
-		description: "Read the 30tools Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
-		url: "https://30tools.com/terms",
-		siteName: "30tools",
+		title: "Free Terms of Use Online - SopKit",
+		description: "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
+		url: "https://sopkit.github.io/terms",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Terms of Use Online - 30tools",
-		description: "Read the 30tools Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
+		title: "Free Terms of Use Online - SopKit",
+		description: "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -31,7 +31,7 @@ export default async function TermsPage() {
 	const tool = {
 		id: "terms",
 		name: "Terms of Use",
-		description: "Read the 30tools Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
+		description: "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
 		route: "/terms",
 		category: "company",
 	};
@@ -46,8 +46,8 @@ export default async function TermsPage() {
 						"@type": "WebPage",
 						name: "Terms of Use",
 						description: tool.description,
-						url: "https://30tools.com/terms",
-						publisher: { "@type": "Organization", name: "30tools" },
+						url: "https://sopkit.github.io/terms",
+						publisher: { "@type": "Organization", name: "SopKit" },
 					}),
 				}}
 			/>
@@ -64,14 +64,14 @@ export default async function TermsPage() {
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">1. Acceptance of Terms</h2>
 								<p className="text-sm leading-relaxed">
-									By accessing and using 30tools.com (&quot;the Service&quot;), you accept and agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the Service.
+									By accessing and using sopkit.github.io (&quot;the Service&quot;), you accept and agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the Service.
 								</p>
 							</section>
 
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">2. Description of Service</h2>
 								<p className="text-sm leading-relaxed">
-									30tools provides free, browser-based utility tools for file conversion, image processing, text manipulation, SEO analysis, media downloading, and more. Processing primarily happens locally in your browser, though some features (such as downloaders or API tests) utilize our edge network for proxying.
+									SopKit provides free, browser-based utility tools for file conversion, image processing, text manipulation, SEO analysis, media downloading, and more. Processing primarily happens locally in your browser, though some features (such as downloaders or API tests) utilize our edge network for proxying.
 								</p>
 							</section>
 
@@ -100,7 +100,7 @@ export default async function TermsPage() {
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">5. Intellectual Property</h2>
 								<p className="text-sm leading-relaxed">
-									The Service, including its design, code, and content, is owned by 30tools and protected by applicable intellectual property laws. Our source code is available under the license specified in our <a href="https://github.com/SH20RAJ/30tools" target="_blank" rel="noreferrer" className="text-primary underline">GitHub repository</a>.
+									The Service, including its design, code, and content, is owned by SopKit and protected by applicable intellectual property laws. Our source code is available under the license specified in our <a href="https://github.com/SH20RAJ/SopKit" target="_blank" rel="noreferrer" className="text-primary underline">GitHub repository</a>.
 								</p>
 								<p className="text-sm leading-relaxed">
 									You retain all rights to files and content you process using our tools. We do not claim any ownership over your data.
@@ -117,7 +117,7 @@ export default async function TermsPage() {
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">7. Limitation of Liability</h2>
 								<p className="text-sm leading-relaxed">
-									In no event shall 30tools be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Service. We have no access to your files and cannot be responsible for data loss, corruption, or legal repercussions of your downloaded media.
+									In no event shall SopKit be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Service. We have no access to your files and cannot be responsible for data loss, corruption, or legal repercussions of your downloaded media.
 								</p>
 							</section>
 

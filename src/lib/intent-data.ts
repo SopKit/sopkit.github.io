@@ -46,7 +46,7 @@ Classic square posts work best at 1080x1080 pixels. Our resizer handles the padd
         keywords: "pdf to word no email, free pdf to word converter without registration, convert pdf to docx no signup",
         article: `
 ## Convert PDF to Word Without Giving Your Email
-Most online PDF converters ask for your email address to send you the converted file. This often leads to unwanted marketing emails and spam. 30tools is different.
+Most online PDF converters ask for your email address to send you the converted file. This often leads to unwanted marketing emails and spam. SopKit is different.
 
 ### 100% Private Conversion
 Our PDF to Word converter works directly in your browser or on our secure servers without storing your personal data. You download the file directly from the interface—no email inbox required.
@@ -55,7 +55,7 @@ Our PDF to Word converter works directly in your browser or on our secure server
 We use advanced OCR and layout analysis to ensure that your Word document looks exactly like your original PDF, preserving fonts, tables, and images.
         `,
         faqs: [
-            { question: "Is it really free without an email?", answer: "Yes, 30tools provides professional-grade conversion tools completely free of charge with no signup or email barriers." },
+            { question: "Is it really free without an email?", answer: "Yes, SopKit provides professional-grade conversion tools completely free of charge with no signup or email barriers." },
             { question: "What file formats are supported?", answer: "We support all standard PDF files and convert them to the latest .docx format compatible with Microsoft Word and Google Docs." }
         ]
     }

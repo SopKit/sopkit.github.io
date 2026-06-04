@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Reactive Power Converter Online - No Signup | 30tools",
+	title: "Free Reactive Power Converter Online - No Signup | SopKit",
 	description: "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "reactive power converter, free online tool, no signup, reactive-power-converter, free reactive-power-converter, Reactive Power Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "reactive power converter, free online tool, no signup, reactive-power-converter, free reactive-power-converter, Reactive Power Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/reactive-power-converter",
+		canonical: "https://sopkit.github.io/reactive-power-converter",
 	},
 	openGraph: {
-		title: "Free Reactive Power Converter Online - No Signup | 30tools",
+		title: "Free Reactive Power Converter Online - No Signup | SopKit",
 		description: "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/reactive-power-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/reactive-power-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Reactive Power Converter Online - No Signup | 30tools",
+		title: "Free Reactive Power Converter Online - No Signup | SopKit",
 		description: "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

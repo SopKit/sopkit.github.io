@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Facebook ID Finder Online - No Signup | 30tools",
+	title: "Free Facebook ID Finder Online - No Signup | SopKit",
 	description: "Free facebook id finder tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "facebook id finder, free online tool, no signup, facebook-id-finder, free facebook-id-finder, Facebook Id Finder online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "facebook id finder, free online tool, no signup, facebook-id-finder, free facebook-id-finder, Facebook Id Finder online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/facebook-id-finder",
+		canonical: "https://sopkit.github.io/facebook-id-finder",
 	},
 	openGraph: {
-		title: "Free Facebook ID Finder Online - No Signup | 30tools",
+		title: "Free Facebook ID Finder Online - No Signup | SopKit",
 		description: "Free facebook id finder tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/facebook-id-finder",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/facebook-id-finder",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Facebook ID Finder Online - No Signup | 30tools",
+		title: "Free Facebook ID Finder Online - No Signup | SopKit",
 		description: "Free facebook id finder tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

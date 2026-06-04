@@ -4,23 +4,23 @@ import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Image Cropper Online - No Signup | 30tools",
+	title: "Free Image Cropper Online - No Signup | SopKit",
 	description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "image cropper, free online tool, no signup, image-cropper, free image-cropper, Image Cropper online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "image cropper, free online tool, no signup, image-cropper, free image-cropper, Image Cropper online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/image-cropper",
+		canonical: "https://sopkit.github.io/image-cropper",
 	},
 	openGraph: {
-		title: "Free Image Cropper Online - No Signup | 30tools",
+		title: "Free Image Cropper Online - No Signup | SopKit",
 		description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/image-cropper",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/image-cropper",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Image Cropper Online - No Signup | 30tools",
+		title: "Free Image Cropper Online - No Signup | SopKit",
 		description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

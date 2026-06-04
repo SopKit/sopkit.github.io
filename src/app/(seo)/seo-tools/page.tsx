@@ -8,21 +8,21 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, ArrowRight } from "lucide-react";
 
 export const metadata = {
-	title: "Free SEO Tools Online - Optimize Your Website | 30tools",
+	title: "Free SEO Tools Online - Optimize Your Website | SopKit",
 	description: "Professional suite of free SEO tools. Keyword generators, meta tag analyzers, sitemap makers, and SERP checkers. Improve your search rankings for free.",
-	keywords: "seo tools, keyword generator, meta tag analyzer, sitemap maker, online seo tools, 30tools, seo-tools, free seo-tools, seo tools online, seo tool, website analyzer, online seo checker",
-	alternates: { canonical: "https://30tools.com/seo-tools" },
+	keywords: "seo tools, keyword generator, meta tag analyzer, sitemap maker, online seo tools, SopKit, seo-tools, free seo-tools, seo tools online, seo tool, website analyzer, online seo checker",
+	alternates: { canonical: "https://sopkit.github.io/seo-tools" },
 	openGraph: {
-		title: "Free SEO Tools Online - Optimize Your Website | 30tools",
+		title: "Free SEO Tools Online - Optimize Your Website | SopKit",
 		description: "Professional suite of free SEO tools. Keyword generators, meta tag analyzers, sitemap makers, and SERP checkers. Improve your search rankings for free.",
-		url: "https://30tools.com/seo-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/seo-tools",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free SEO Tools Online - Optimize Your Website | 30tools",
+		title: "Free SEO Tools Online - Optimize Your Website | SopKit",
 		description: "Professional suite of free SEO tools. Keyword generators, meta tag analyzers, sitemap makers, and SERP checkers.",
 		images: ["/og-image.jpg"],
 	},

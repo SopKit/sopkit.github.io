@@ -1,4 +1,4 @@
-# 30tools SEO and Monetization Plan
+# SopKit SEO and Monetization Plan
 
 Updated: 2026-06-03
 
@@ -18,7 +18,7 @@ These generic tools should stay live, but they should not be the main SEO bet fo
 - MP4 to MP3
 - AI Image Generator, Text to Speech
 
-Why they are hard: SERPs are dominated by large utility brands, browser extensions, SaaS tools, ad-heavy incumbents, and high-authority domains with backlinks. 30tools should use these as parent utilities and route link equity toward exact-use pages.
+Why they are hard: SERPs are dominated by large utility brands, browser extensions, SaaS tools, ad-heavy incumbents, and high-authority domains with backlinks. SopKit should use these as parent utilities and route link equity toward exact-use pages.
 
 ## Low-Hanging-Fruit Keyword Map
 

@@ -30,7 +30,7 @@
 import { ToolLayout } from '@/components/tools/shared/ToolLayout';
 
 export const metadata = {
-  title: 'Free JSON Formatter Online - No Signup | 30tools',
+  title: 'Free JSON Formatter Online - No Signup | SopKit',
   description: 'Format and validate JSON instantly...',
 };
 
@@ -112,7 +112,7 @@ Key enforced rules from `biome.json`:
 
 ## SEO Conventions
 
-- **Title pattern**: `Free [Tool Name] Online - No Signup | 30tools`
+- **Title pattern**: `Free [Tool Name] Online - No Signup | SopKit`
 - **Meta description**: 150-160 chars, include primary keyword, compelling CTA
 - **JSON-LD**: Every tool page gets SoftwareApplication, FAQPage, HowTo, BreadcrumbList
 - **Canonical URLs**: Explicitly set on every page

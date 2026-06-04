@@ -4,23 +4,23 @@ import LineSorterTool from "@/components/tools/text/LineSorterTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Text Sorter Online - No Signup | 30tools",
+	title: "Free Text Sorter Online - No Signup | SopKit",
 	description: "Format, clean, sort, and analyze text files instantly with our free Text Sorter online. Fast and private browser utility with no signup. No registration needed.",
-	keywords: "text sorter, free online tool, no signup, text tool, text editor online, content formatter, writing utility, 30tools",
+	keywords: "text sorter, free online tool, no signup, text tool, text editor online, content formatter, writing utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/text-sorter",
+		canonical: "https://sopkit.github.io/text-sorter",
 	},
 	openGraph: {
-		title: "Free Text Sorter Online - No Signup | 30tools",
+		title: "Free Text Sorter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Text Sorter online. Fast and private browser utility with no signup. No registration needed.",
-		url: "https://30tools.com/text-sorter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/text-sorter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Text Sorter Online - No Signup | 30tools",
+		title: "Free Text Sorter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Text Sorter online. Fast and private browser utility with no signup. No registration needed.",
 		images: ["/og-image.jpg"],
 	},

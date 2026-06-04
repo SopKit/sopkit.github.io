@@ -4,23 +4,23 @@ import RgbHexConverter from "@/components/tools/built-ins/RgbHexConverter";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free HEX to RGB Converter Online - No Signup | 30tools",
+	title: "Free HEX to RGB Converter Online - No Signup | SopKit",
 	description: "Free hex to rgb converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "hex to rgb converter, free online tool, no signup, hex-to-rgb-converter, free hex-to-rgb-converter, Hex To Rgb Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "hex to rgb converter, free online tool, no signup, hex-to-rgb-converter, free hex-to-rgb-converter, Hex To Rgb Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/hex-to-rgb-converter",
+		canonical: "https://sopkit.github.io/hex-to-rgb-converter",
 	},
 	openGraph: {
-		title: "Free HEX to RGB Converter Online - No Signup | 30tools",
+		title: "Free HEX to RGB Converter Online - No Signup | SopKit",
 		description: "Free hex to rgb converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/hex-to-rgb-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/hex-to-rgb-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free HEX to RGB Converter Online - No Signup | 30tools",
+		title: "Free HEX to RGB Converter Online - No Signup | SopKit",
 		description: "Free hex to rgb converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

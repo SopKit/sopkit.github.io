@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Temperature Converter Online - No Signup | 30tools",
+	title: "Free Temperature Converter Online - No Signup | SopKit",
 	description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "temperature converter, free online tool, no signup, temperature-converter, free temperature-converter, Temperature Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "temperature converter, free online tool, no signup, temperature-converter, free temperature-converter, Temperature Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/temperature-converter",
+		canonical: "https://sopkit.github.io/temperature-converter",
 	},
 	openGraph: {
-		title: "Free Temperature Converter Online - No Signup | 30tools",
+		title: "Free Temperature Converter Online - No Signup | SopKit",
 		description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/temperature-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/temperature-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Temperature Converter Online - No Signup | 30tools",
+		title: "Free Temperature Converter Online - No Signup | SopKit",
 		description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

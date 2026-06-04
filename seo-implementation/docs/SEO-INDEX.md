@@ -1,6 +1,6 @@
 # 📚 SEO Implementation - Complete File Index
 
-**Project:** 30tools.com  
+**Project:** sopkit.github.io  
 **Date:** May 27, 2026  
 **Status:** ✅ Phase 1 Complete
 

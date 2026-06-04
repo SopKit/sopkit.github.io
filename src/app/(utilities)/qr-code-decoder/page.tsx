@@ -4,23 +4,23 @@ import QrGeneratorPremium from "@/components/tools/utilities/QrGeneratorPremium"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free QR Code Decoder Online - No Signup | 30tools",
+	title: "Free QR Code Decoder Online - No Signup | SopKit",
 	description: "Free qr code decoder tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "qr code decoder, free online tool, no signup, qr-code-decoder, free qr-code-decoder, Qr Code Decoder online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "qr code decoder, free online tool, no signup, qr-code-decoder, free qr-code-decoder, Qr Code Decoder online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/qr-code-decoder",
+		canonical: "https://sopkit.github.io/qr-code-decoder",
 	},
 	openGraph: {
-		title: "Free QR Code Decoder Online - No Signup | 30tools",
+		title: "Free QR Code Decoder Online - No Signup | SopKit",
 		description: "Free qr code decoder tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/qr-code-decoder",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/qr-code-decoder",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free QR Code Decoder Online - No Signup | 30tools",
+		title: "Free QR Code Decoder Online - No Signup | SopKit",
 		description: "Free qr code decoder tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

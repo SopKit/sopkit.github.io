@@ -4,23 +4,23 @@ import ImageToBase64Tool from "@/components/tools/image/ImageToBase64Tool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Image to Base64 Converter Online - No Signup | 30tools",
+	title: "Free Image to Base64 Converter Online - No Signup | SopKit",
 	description: "Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "image to base64 converter, free online tool, no signup, image-to-base64-converter, free image-to-base64-converter, Image To Base64 Converter online, image editing, photo editor, browser image tool, free photo utility, 30tools",
+	keywords: "image to base64 converter, free online tool, no signup, image-to-base64-converter, free image-to-base64-converter, Image To Base64 Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/image-to-base64-converter",
+		canonical: "https://sopkit.github.io/image-to-base64-converter",
 	},
 	openGraph: {
-		title: "Free Image to Base64 Converter Online - No Signup | 30tools",
+		title: "Free Image to Base64 Converter Online - No Signup | SopKit",
 		description: "Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/image-to-base64-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/image-to-base64-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Image to Base64 Converter Online - No Signup | 30tools",
+		title: "Free Image to Base64 Converter Online - No Signup | SopKit",
 		description: "Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

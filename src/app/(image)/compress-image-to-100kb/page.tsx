@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
 
 export const metadata = {
-	title: "Free Compress Image to 100KB Online - No Signup | 30tools",
+	title: "Free Compress Image to 100KB Online - No Signup | SopKit",
 	description: "Compress any image file (JPG, PNG, WebP) to fit strictly under 100KB while maintaining the best possible visual clarity.",
 	keywords: "compress-image-to-100kb, Compress Image to 100KB",
 	alternates: {
-		canonical: "https://30tools.com/compress-image-to-100kb",
+		canonical: "https://sopkit.github.io/compress-image-to-100kb",
 	},
 	openGraph: {
-		title: "Free Compress Image to 100KB Online - No Signup | 30tools",
+		title: "Free Compress Image to 100KB Online - No Signup | SopKit",
 		description: "Compress any image file (JPG, PNG, WebP) to fit strictly under 100KB while maintaining the best possible visual clarity.",
-		url: "https://30tools.com/compress-image-to-100kb",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/compress-image-to-100kb",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Compress Image to 100KB Online - No Signup | 30tools",
+		title: "Free Compress Image to 100KB Online - No Signup | SopKit",
 		description: "Compress any image file (JPG, PNG, WebP) to fit strictly under 100KB while maintaining the best possible visual clarity.",
 		images: ["/og-image.jpg"],
 	},

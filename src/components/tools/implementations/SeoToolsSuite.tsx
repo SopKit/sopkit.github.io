@@ -179,7 +179,7 @@ export default function SeoToolsSuite({ toolId }: { toolId: string }) {
 					<CardDescription>
 						{toolId === "keywords-suggestion-tool"
 							? "Paste article copy to extract repeated meaningful tokens."
-							: "Uses the 30tools safe HTTP proxy for public pages."}
+							: "Uses the SopKit safe HTTP proxy for public pages."}
 					</CardDescription>
 				</CardHeader>
 				<CardContent className="space-y-4">

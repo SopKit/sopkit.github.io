@@ -4,23 +4,23 @@ import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free IndexNow Submitter Online - No Signup | 30tools",
+	title: "Free IndexNow Submitter Online - No Signup | SopKit",
 	description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol.",
-	keywords: "indexnow submitter, free online tool, no signup, indexnow, free indexnow, Indexnow online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "indexnow submitter, free online tool, no signup, indexnow, free indexnow, Indexnow online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/indexnow",
+		canonical: "https://sopkit.github.io/indexnow",
 	},
 	openGraph: {
-		title: "Free IndexNow Submitter Online - No Signup | 30tools",
+		title: "Free IndexNow Submitter Online - No Signup | SopKit",
 		description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol.",
-		url: "https://30tools.com/indexnow",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/indexnow",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free IndexNow Submitter Online - No Signup | 30tools",
+		title: "Free IndexNow Submitter Online - No Signup | SopKit",
 		description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol.",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import FaqSchemaGenerator from "@/components/tools/built-ins/FaqSchemaGenerator"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free FAQ Schema Generator Online - No Signup | 30tools",
+	title: "Free FAQ Schema Generator Online - No Signup | SopKit",
 	description: "Free faq schema generator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "faq schema generator, free online tool, no signup, faq-schema-generator, free faq-schema-generator, Faq Schema Generator online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "faq schema generator, free online tool, no signup, faq-schema-generator, free faq-schema-generator, Faq Schema Generator online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/faq-schema-generator",
+		canonical: "https://sopkit.github.io/faq-schema-generator",
 	},
 	openGraph: {
-		title: "Free FAQ Schema Generator Online - No Signup | 30tools",
+		title: "Free FAQ Schema Generator Online - No Signup | SopKit",
 		description: "Free faq schema generator tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/faq-schema-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/faq-schema-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free FAQ Schema Generator Online - No Signup | 30tools",
+		title: "Free FAQ Schema Generator Online - No Signup | SopKit",
 		description: "Free faq schema generator tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

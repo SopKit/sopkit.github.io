@@ -4,23 +4,23 @@ import FacebookDownloader from "@/components/tools/downloaders/FacebookDownloade
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Fb Clip Downloader Online - No Signup | 30tools",
+	title: "Free Fb Clip Downloader Online - No Signup | SopKit",
 	description: "Download Facebook video clips and highlights in high resolution instantly. Our free online downloader is fast, secure, and easy to use. No signup required...",
-	keywords: "fb clip downloader, free online tool, no signup, fb-clip-downloader, free fb-clip-downloader, Fb Clip Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "fb clip downloader, free online tool, no signup, fb-clip-downloader, free fb-clip-downloader, Fb Clip Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/fb-clip-downloader",
+		canonical: "https://sopkit.github.io/fb-clip-downloader",
 	},
 	openGraph: {
-		title: "Free Fb Clip Downloader Online - No Signup | 30tools",
+		title: "Free Fb Clip Downloader Online - No Signup | SopKit",
 		description: "Download Facebook video clips and highlights in high resolution instantly. Our free online downloader is fast, secure, and easy to use. No signup required...",
-		url: "https://30tools.com/fb-clip-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/fb-clip-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Fb Clip Downloader Online - No Signup | 30tools",
+		title: "Free Fb Clip Downloader Online - No Signup | SopKit",
 		description: "Download Facebook video clips and highlights in high resolution instantly. Our free online downloader is fast, secure, and easy to use. No signup required...",
 		images: ["/og-image.jpg"],
 	},

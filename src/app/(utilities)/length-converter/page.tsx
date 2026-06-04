@@ -4,23 +4,23 @@ import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitCo
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Length Converter Online - No Signup | 30tools",
+	title: "Free Length Converter Online - No Signup | SopKit",
 	description: "Free length converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "length converter, free online tool, no signup, length-converter, free length-converter, Length Converter online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "length converter, free online tool, no signup, length-converter, free length-converter, Length Converter online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/length-converter",
+		canonical: "https://sopkit.github.io/length-converter",
 	},
 	openGraph: {
-		title: "Free Length Converter Online - No Signup | 30tools",
+		title: "Free Length Converter Online - No Signup | SopKit",
 		description: "Free length converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-		url: "https://30tools.com/length-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/length-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Length Converter Online - No Signup | 30tools",
+		title: "Free Length Converter Online - No Signup | SopKit",
 		description: "Free length converter tool to process your data instantly with privacy-friendly browser-based workflows.",
 		images: ["/og-image.jpg"],
 	},

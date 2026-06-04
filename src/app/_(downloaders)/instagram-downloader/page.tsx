@@ -4,23 +4,23 @@ import InstagramDownloader from "@/components/tools/downloaders/InstagramDownloa
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Instagram Downloader Online - No Signup | 30tools",
+	title: "Free Instagram Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Instagram Downloader online. High-speed downloading with no signup needed. Try it free now.",
-	keywords: "instagram downloader, download instagram videos, instagram reels downloader, instagram photo downloader, free online tool, 30tools, instagram-downloader, free instagram-downloader, instagram downloader online, online downloader, free media saver, video downloader",
+	keywords: "instagram downloader, download instagram videos, instagram reels downloader, instagram photo downloader, free online tool, SopKit, instagram-downloader, free instagram-downloader, instagram downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://30tools.com/instagram-downloader",
+		canonical: "https://sopkit.github.io/instagram-downloader",
 	},
 	openGraph: {
-		title: "Free Instagram Downloader Online - No Signup | 30tools",
+		title: "Free Instagram Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Instagram Downloader online. High-speed downloading with no signup needed. Try it free now.",
-		url: "https://30tools.com/instagram-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/instagram-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Instagram Downloader Online - No Signup | 30tools",
+		title: "Free Instagram Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Instagram Downloader online. High-speed downloading with no signup needed. Try it free now.",
 		images: ["/og-image.jpg"],
 	},

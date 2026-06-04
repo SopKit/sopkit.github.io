@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import SeoHubPage from "@/components/seo/SeoHubPage";
 
 export const metadata: Metadata = {
-	title: "API Key Testers - OpenAI, Claude, Gemini, Stripe and More | 30tools",
+	title: "API Key Testers - OpenAI, Claude, Gemini, Stripe and More | SopKit",
 	description: "Safe API key tester pages for OpenAI, Claude, Gemini, Groq, DeepSeek, Resend, SendGrid, Stripe, Twilio, and developer credentials.",
-	alternates: { canonical: "https://30tools.com/api-key-testers" },
+	alternates: { canonical: "https://sopkit.github.io/api-key-testers" },
 };
 
 export default function ApiKeyTestersHub() {
@@ -22,7 +22,7 @@ export default function ApiKeyTestersHub() {
 				"Rotate credentials immediately if a key may have been exposed.",
 			]}
 			faqs={[
-				{ question: "Does 30tools store API keys?", answer: "No. API key tester pages state that keys are used only for the current test flow and are not stored." },
+				{ question: "Does SopKit store API keys?", answer: "No. API key tester pages state that keys are used only for the current test flow and are not stored." },
 				{ question: "Why are API key pages good SEO targets?", answer: "They are specific, problem-driven searches with lower competition than broad developer tool keywords." },
 				{ question: "Can I hire help for an API integration?", answer: "Yes. Developer tester pages link to services for custom internal tools and API integrations." },
 			]}

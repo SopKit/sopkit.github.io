@@ -1,7 +1,7 @@
-# SEO Audit Report: 30tools.com
+# SEO Audit Report: sopkit.github.io
 
 **Date:** 2026-05-16
-**Site:** https://30tools.com
+**Site:** https://sopkit.github.io
 **Platform:** Next.js 16 on Cloudflare Pages
 **Business Type:** Online Tool Aggregator (SaaS-Free Utility Platform)
 **Pages Crawled:** 380 tool pages + 1,686 extra slug pages + blog + static pages
@@ -27,9 +27,9 @@
 
 1. **1,686 extra slug pages serve indexable duplicate content** -- The `(intent)/[slug]` route catches all extra slugs (e.g., `/compress-image-online`, `/reduce-image-size`) and renders the parent tool in an iframe with self-referencing canonicals. Google treats these as doorway pages. **This is the single most damaging issue on the site.**
 2. **Soft 404 -- not-found page returns HTTP 200** -- The 404 page serves a 200 status code, causing search engines to index non-existent pages.
-3. **Hreflang tags all point to same URL** -- 14 language alternates all link to `https://30tools.com` with no translated URLs. Google penalty signal.
+3. **Hreflang tags all point to same URL** -- 14 language alternates all link to `https://sopkit.github.io` with no translated URLs. Google penalty signal.
 4. **Duplicate robots meta tags** -- Layout hardcodes `<meta name="robots">` in `<head>`, then pages add their own via Next.js metadata API, creating conflicting directives.
-5. **www subdomain serves 200 instead of redirecting** -- `www.30tools.com` returns HTTP 200, creating a complete duplicate of the site.
+5. **www subdomain serves 200 instead of redirecting** -- `www.sopkit.github.io` returns HTTP 200, creating a complete duplicate of the site.
 
 ### Top 5 Quick Wins
 
@@ -75,7 +75,7 @@ These pages:
 The not-found page returns HTTP 200 instead of 404. While it includes `<meta name="robots" content="noindex"/>`, the HTTP 200 status means search engines may treat it as a valid page and waste crawl budget.
 
 ```
-$ curl -s -o /dev/null -w "%{http_code}" "https://30tools.com/this-page-does-not-exist"
+$ curl -s -o /dev/null -w "%{http_code}" "https://sopkit.github.io/this-page-does-not-exist"
 200
 ```
 
@@ -97,11 +97,11 @@ On the 404 page:
 
 ### Hreflang Tags (All Same URL)
 
-14 hreflang tags all point to `https://30tools.com`:
+14 hreflang tags all point to `https://sopkit.github.io`:
 ```html
-<link rel="alternate" hrefLang="en" href="https://30tools.com"/>
-<link rel="alternate" hrefLang="es" href="https://30tools.com"/>
-<link rel="alternate" hrefLang="fr" href="https://30tools.com"/>
+<link rel="alternate" hrefLang="en" href="https://sopkit.github.io"/>
+<link rel="alternate" hrefLang="es" href="https://sopkit.github.io"/>
+<link rel="alternate" hrefLang="fr" href="https://sopkit.github.io"/>
 <!-- ... all identical -->
 ```
 
@@ -109,12 +109,12 @@ On the 404 page:
 
 ### www Subdomain Not Redirecting
 
-`www.30tools.com` serves HTTP 200 instead of redirecting to `30tools.com`. Creates a complete duplicate site.
+`www.sopkit.github.io` serves HTTP 200 instead of redirecting to `sopkit.github.io`. Creates a complete duplicate site.
 
 **Fix:** Add redirect in Cloudflare or next.config.mjs:
 ```js
-{ source: "/:path*", has: [{ type: "host", value: "www.30tools.com" }],
-  destination: "https://30tools.com/:path*", permanent: true }
+{ source: "/:path*", has: [{ type: "host", value: "www.sopkit.github.io" }],
+  destination: "https://sopkit.github.io/:path*", permanent: true }
 ```
 
 ### Homepage Cache-Control
@@ -203,8 +203,8 @@ Both `/indexnow.txt` and `/indexnow.key` return HTML instead of actual keys. Cau
 ## 3. On-Page SEO (Score: 58/100)
 
 ### Title Tags
-- Homepage: `"Free Online Tools - No Signup | 30tools"` ✅ (58 chars)
-- Template: `%s | 30tools` ✅
+- Homepage: `"Free Online Tools - No Signup | SopKit"` ✅ (58 chars)
+- Template: `%s | SopKit` ✅
 - Tool pages: Generally well-optimized
 
 ### Meta Descriptions
@@ -324,7 +324,7 @@ Both `/indexnow.txt` and `/indexnow.key` return HTML instead of actual keys. Cau
 
 | Crawler | Status | Impact |
 |---------|--------|--------|
-| GPTBot | BLOCKED | ChatGPT Search cannot index 30tools |
+| GPTBot | BLOCKED | ChatGPT Search cannot index SopKit |
 | ClaudeBot | BLOCKED | Claude cannot reference in base knowledge |
 | ChatGPT-User | ALLOWED | Reactive fetching only |
 | PerplexityBot | ALLOWED | Can index for citations |
@@ -350,7 +350,7 @@ Both `/indexnow.txt` and `/indexnow.key` return HTML instead of actual keys. Cau
 1. **Allow GPTBot** for search indexing (distinct from training)
 2. **Create llms-full.txt** with all 405+ tools and descriptions
 3. **Rewrite tool descriptions** to be unique and citable (134-167 words each)
-4. **Add comparison content** (30tools vs competitors)
+4. **Add comparison content** (SopKit vs competitors)
 
 ---
 
@@ -420,7 +420,7 @@ Both `/indexnow.txt` and `/indexnow.key` return HTML instead of actual keys. Cau
 
 ## Appendix: Data Sources
 
-- Live site fetch: https://30tools.com, /robots.txt, /sitemap.xml, /llms.txt
+- Live site fetch: https://sopkit.github.io, /robots.txt, /sitemap.xml, /llms.txt
 - Tool pages analyzed: /image-compressor, /youtube-downloader, /pdf-merger
 - Static pages analyzed: /about, /blog, /privacy, /terms
 - Code analysis: layout.tsx, robots.ts, sitemap.ts, StructuredData.tsx, next.config.mjs, intent-data.ts, seo.ts, tools.json

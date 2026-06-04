@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import KrutiDevConverter from "@/components/tools/text/KrutiDevConverter";
 
 export const metadata = {
-	title: "Free Unicode to Kruti Dev Converter Online - No Signup | 30tools",
+	title: "Free Unicode to Kruti Dev Converter Online - No Signup | SopKit",
 	description: "Format, clean, sort, and analyze text files instantly with our free Unicode to Kruti Dev Converter online. Fast and private browser utility with no signup.",
 	keywords: "unicode-to-kruti-dev, Unicode to Kruti Dev Converter",
 	alternates: {
-		canonical: "https://30tools.com/unicode-to-kruti-dev",
+		canonical: "https://sopkit.github.io/unicode-to-kruti-dev",
 	},
 	openGraph: {
-		title: "Free Unicode to Kruti Dev Converter Online - No Signup | 30tools",
+		title: "Free Unicode to Kruti Dev Converter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Unicode to Kruti Dev Converter online. Fast and private browser utility with no signup.",
-		url: "https://30tools.com/unicode-to-kruti-dev",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/unicode-to-kruti-dev",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Unicode to Kruti Dev Converter Online - No Signup | 30tools",
+		title: "Free Unicode to Kruti Dev Converter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Unicode to Kruti Dev Converter online. Fast and private browser utility with no signup.",
 		images: ["/og-image.jpg"],
 	},

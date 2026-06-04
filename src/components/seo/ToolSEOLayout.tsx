@@ -39,7 +39,7 @@ export default function ToolSEOLayout({
 		features: features || tool.features || [],
 		reviews: reviews || tool.reviews || [],
 		howTo: howTo || tool.howTo,
-		author: tool.author || "30Tools Engineering Team"
+		author: tool.author || "SopKit Engineering Team"
 	};
 
 	return (

@@ -14,7 +14,7 @@ import {
 
 function getPrivacyNote(opportunity: SeoOpportunity) {
 	if (opportunity.toolPreset.type === "api-key") {
-		return "Your API key is used only for this test flow and is not stored by 30tools. Use restricted or test keys whenever possible.";
+		return "Your API key is used only for this test flow and is not stored by SopKit. Use restricted or test keys whenever possible.";
 	}
 	if (opportunity.toolPreset.type === "exam-image") {
 		return "Your image is processed in your browser when possible. We do not store your original file or compressed output.";

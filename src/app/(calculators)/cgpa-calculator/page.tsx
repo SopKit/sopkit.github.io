@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import AcademicGradesCalculator from "@/components/tools/calculators/AcademicGradesCalculator";
 
 export const metadata = {
-	title: "Free CGPA Calculator Online - No Signup | 30tools",
+	title: "Free CGPA Calculator Online - No Signup | SopKit",
 	description: "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.",
-	keywords: "cgpa-calculator, CGPA Calculator, calculate cgpa, semester cgpa calculator, cumulative grade point average, 30tools",
+	keywords: "cgpa-calculator, CGPA Calculator, calculate cgpa, semester cgpa calculator, cumulative grade point average, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/cgpa-calculator",
+		canonical: "https://sopkit.github.io/cgpa-calculator",
 	},
 	openGraph: {
-		title: "Free CGPA Calculator Online - No Signup | 30tools",
+		title: "Free CGPA Calculator Online - No Signup | SopKit",
 		description: "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.",
-		url: "https://30tools.com/cgpa-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/cgpa-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free CGPA Calculator Online - No Signup | 30tools",
+		title: "Free CGPA Calculator Online - No Signup | SopKit",
 		description: "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.",
 		images: ["/og-image.jpg"],
 	},

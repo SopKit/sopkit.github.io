@@ -4,23 +4,23 @@ import TextCompareTool from "@/components/tools/text/TextCompareTool";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Text Compare Online - No Signup | 30tools",
+	title: "Free Text Compare Online - No Signup | SopKit",
 	description: "Format, clean, sort, and analyze text files instantly with our free Text Compare online. Fast and private browser utility with no signup. 100% free and secure.",
-	keywords: "text compare, free online tool, no signup, text-compare, free text-compare, Text Compare online, text tool, text editor online, content formatter, writing utility, 30tools",
+	keywords: "text compare, free online tool, no signup, text-compare, free text-compare, Text Compare online, text tool, text editor online, content formatter, writing utility, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/text-compare",
+		canonical: "https://sopkit.github.io/text-compare",
 	},
 	openGraph: {
-		title: "Free Text Compare Online - No Signup | 30tools",
+		title: "Free Text Compare Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Text Compare online. Fast and private browser utility with no signup. 100% free and secure.",
-		url: "https://30tools.com/text-compare",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/text-compare",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Text Compare Online - No Signup | 30tools",
+		title: "Free Text Compare Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Text Compare online. Fast and private browser utility with no signup. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},

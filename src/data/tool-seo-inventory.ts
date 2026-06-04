@@ -156,7 +156,7 @@ export function getCompleteToolSeoInventory(): ToolSeoInventoryItem[] {
 			toolSlug: tool.id,
 			toolName: tool.name,
 			category: tool.category,
-			currentTitle: tool.seoTitle || `${tool.name} - Free Online Tool | 30tools`,
+			currentTitle: tool.seoTitle || `${tool.name} - Free Online Tool | SopKit`,
 			currentMetaDescription: tool.seoDescription || tool.description,
 			currentH1: opportunity?.h1 || tool.name,
 			currentRoute: tool.route,

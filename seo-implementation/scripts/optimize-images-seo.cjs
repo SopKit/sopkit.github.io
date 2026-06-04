@@ -17,7 +17,7 @@ function generateAltText(imageName, context = 'tool interface') {
     .trim()
     .toLowerCase();
   
-  return `${readable} ${context} - Free online tool by 30tools`;
+  return `${readable} ${context} - Free online tool by SopKit`;
 }
 
 function generateImageOptimizationReport() {
@@ -93,7 +93,7 @@ function generateImageOptimizationReport() {
   console.log(`   [ ] Optimize image file names (descriptive, lowercase, hyphens)`);
   
   console.log(`\n💡 Alt Text Pattern:`);
-  console.log(`   "[Tool Name] interface showing [specific feature] - Free online tool by 30tools"`);
+  console.log(`   "[Tool Name] interface showing [specific feature] - Free online tool by SopKit"`);
   
   console.log(`\n📝 Example Alt Text Suggestions:\n`);
   report.recommendations.slice(0, 10).forEach((rec, i) => {

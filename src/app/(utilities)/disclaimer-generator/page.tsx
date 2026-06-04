@@ -4,23 +4,23 @@ import LegalTemplateGenerator from "@/components/tools/built-ins/LegalTemplateGe
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Disclaimer Generator Online - No Signup | 30tools",
+	title: "Free Disclaimer Generator Online - No Signup | SopKit",
 	description: "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal...",
-	keywords: "disclaimer generator, free online tool, no signup, disclaimer-generator, free disclaimer-generator, Disclaimer Generator online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "disclaimer generator, free online tool, no signup, disclaimer-generator, free disclaimer-generator, Disclaimer Generator online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/disclaimer-generator",
+		canonical: "https://sopkit.github.io/disclaimer-generator",
 	},
 	openGraph: {
-		title: "Free Disclaimer Generator Online - No Signup | 30tools",
+		title: "Free Disclaimer Generator Online - No Signup | SopKit",
 		description: "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal...",
-		url: "https://30tools.com/disclaimer-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/disclaimer-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Disclaimer Generator Online - No Signup | 30tools",
+		title: "Free Disclaimer Generator Online - No Signup | SopKit",
 		description: "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal...",
 		images: ["/og-image.jpg"],
 	},

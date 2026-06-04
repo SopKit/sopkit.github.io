@@ -8,23 +8,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Wrench, ArrowRight, Sparkles } from "lucide-react";
 
 export const metadata = {
-	title: "Free Other Tools Online - No Signup | 30tools",
+	title: "Free Other Tools Online - No Signup | SopKit",
 	description: "Free Other Tools online tool. Fast and secure.",
-	keywords: "utility tools, free online tool, no signup, other-tools, Other Tools, free other-tools, Other Tools online, online utility, web calculator, free converter, browser tool, 30tools",
+	keywords: "utility tools, free online tool, no signup, other-tools, Other Tools, free other-tools, Other Tools online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/other-tools",
+		canonical: "https://sopkit.github.io/other-tools",
 	},
 	openGraph: {
-		title: "Free Other Tools Online - No Signup | 30tools",
+		title: "Free Other Tools Online - No Signup | SopKit",
 		description: "Free Other Tools online tool. Fast and secure.",
-		url: "https://30tools.com/other-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/other-tools",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Other Tools Online - No Signup | 30tools",
+		title: "Free Other Tools Online - No Signup | SopKit",
 		description: "Free Other Tools online tool. Fast and secure.",
 		images: ["/og-image.jpg"],
 	},

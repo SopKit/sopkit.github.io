@@ -4,23 +4,23 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Car Loan Calculator - Auto Payment Estimator | 30tools",
+	title: "Car Loan Calculator - Auto Payment Estimator | SopKit",
 	description: "Work out your monthly car payment and total interest from vehicle price, down payment, trade-in, APR, and term. Free auto loan calculator.",
 	keywords: "car loan calculator, auto loan calculator, car payment calculator, vehicle finance calculator, monthly car payment",
 	alternates: {
-		canonical: "https://30tools.com/car-loan-calculator",
+		canonical: "https://sopkit.github.io/car-loan-calculator",
 	},
 	openGraph: {
-		title: "Car Loan Calculator - Auto Payment Estimator | 30tools",
+		title: "Car Loan Calculator - Auto Payment Estimator | SopKit",
 		description: "Work out your monthly car payment and total interest from vehicle price, down payment, trade-in, APR, and term. Free auto loan calculator.",
-		url: "https://30tools.com/car-loan-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/car-loan-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Car Loan Calculator - Auto Payment Estimator | 30tools",
+		title: "Car Loan Calculator - Auto Payment Estimator | SopKit",
 		description: "Work out your monthly car payment and total interest from vehicle price, down payment, trade-in, APR, and term. Free auto loan calculator.",
 		images: ["/og-image.jpg"],
 	},

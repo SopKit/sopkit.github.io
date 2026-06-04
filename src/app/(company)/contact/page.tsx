@@ -4,23 +4,23 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
-	title: "Free Contact Online - No Signup | 30tools",
+	title: "Free Contact Online - No Signup | SopKit",
 	description: "Free Contact online. Contact allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your...",
-	keywords: "contact 30tools, support, feedback, help, contact, free contact, contact online, 30tools, free online tools, browser tools, no signup tools, privacy tools",
+	keywords: "contact SopKit, support, feedback, help, contact, free contact, contact online, SopKit, free online tools, browser tools, no signup tools, privacy tools",
 	alternates: {
-		canonical: "https://30tools.com/contact",
+		canonical: "https://sopkit.github.io/contact",
 	},
 	openGraph: {
-		title: "Free Contact Online - No Signup | 30tools",
+		title: "Free Contact Online - No Signup | SopKit",
 		description: "Free Contact online. Contact allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your...",
-		url: "https://30tools.com/contact",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/contact",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Contact Online - No Signup | 30tools",
+		title: "Free Contact Online - No Signup | SopKit",
 		description: "Free Contact online. Contact allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your...",
 		images: ["/og-image.jpg"],
 	},
@@ -44,9 +44,9 @@ export default async function ToolPage() {
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
 						"@type": "ContactPage",
-						name: "Contact 30tools",
+						name: "Contact SopKit",
 						description: tool.description,
-						url: "https://30tools.com/contact",
+						url: "https://sopkit.github.io/contact",
 						mainEntity: {
 							"@type": "ContactPoint",
 							email: SITE_CONFIG.contactEmail,
@@ -86,7 +86,7 @@ export default async function ToolPage() {
 							<p className="text-sm font-semibold text-primary/80">Expected Response Time: Within 24 Hours</p>
 							<div className="flex flex-col gap-3 pt-4">
 								<a 
-									href="https://github.com/sh20raj/30tools/issues/new/choose" 
+									href="https://github.com/SopKit/sopkit.github.io/issues/new/choose" 
 									target="_blank" 
 									rel="noreferrer"
 									className="flex items-center gap-2 font-bold hover:text-primary transition-colors"
@@ -94,7 +94,7 @@ export default async function ToolPage() {
 									Report an Issue on GitHub <ArrowUpRight className="h-4 w-4" />
 								</a>
 								<a 
-									href="https://github.com/sh20raj/30tools" 
+									href="https://github.com/SopKit/sopkit.github.io" 
 									target="_blank" 
 									rel="noreferrer"
 									className="flex items-center gap-2 font-bold hover:text-primary transition-colors"

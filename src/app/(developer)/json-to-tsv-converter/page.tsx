@@ -4,23 +4,23 @@ import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerializat
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free JSON to TSV Converter Online - No Signup | 30tools",
+	title: "Free JSON to TSV Converter Online - No Signup | SopKit",
 	description: "Format, minify, validate, and convert code snippets with our free JSON to TSV Converter online. Secure, local developer utility with no registration. 100% free.",
-	keywords: "json to tsv converter, free online tool, no signup, json-to-tsv-converter, free json-to-tsv-converter, Json To Tsv Converter online, developer tool, web dev utility, code formatter, online developer, 30tools",
+	keywords: "json to tsv converter, free online tool, no signup, json-to-tsv-converter, free json-to-tsv-converter, Json To Tsv Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/json-to-tsv-converter",
+		canonical: "https://sopkit.github.io/json-to-tsv-converter",
 	},
 	openGraph: {
-		title: "Free JSON to TSV Converter Online - No Signup | 30tools",
+		title: "Free JSON to TSV Converter Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free JSON to TSV Converter online. Secure, local developer utility with no registration. 100% free.",
-		url: "https://30tools.com/json-to-tsv-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/json-to-tsv-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JSON to TSV Converter Online - No Signup | 30tools",
+		title: "Free JSON to TSV Converter Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free JSON to TSV Converter online. Secure, local developer utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},

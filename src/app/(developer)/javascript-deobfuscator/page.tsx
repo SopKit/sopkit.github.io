@@ -4,23 +4,23 @@ import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free JavaScript DeObfuscator Online - No Signup | 30tools",
+	title: "Free JavaScript DeObfuscator Online - No Signup | SopKit",
 	description: "Format, minify, validate, and convert code snippets with our free JavaScript DeObfuscator online. Secure, local developer utility with no registration.",
-	keywords: "javascript deobfuscator, free online tool, no signup, javascript-deobfuscator, free javascript-deobfuscator, Javascript Deobfuscator online, developer tool, web dev utility, code formatter, online developer, 30tools",
+	keywords: "javascript deobfuscator, free online tool, no signup, javascript-deobfuscator, free javascript-deobfuscator, Javascript Deobfuscator online, developer tool, web dev utility, code formatter, online developer, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/javascript-deobfuscator",
+		canonical: "https://sopkit.github.io/javascript-deobfuscator",
 	},
 	openGraph: {
-		title: "Free JavaScript DeObfuscator Online - No Signup | 30tools",
+		title: "Free JavaScript DeObfuscator Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free JavaScript DeObfuscator online. Secure, local developer utility with no registration.",
-		url: "https://30tools.com/javascript-deobfuscator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/javascript-deobfuscator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JavaScript DeObfuscator Online - No Signup | 30tools",
+		title: "Free JavaScript DeObfuscator Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free JavaScript DeObfuscator online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},

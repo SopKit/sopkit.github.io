@@ -2,23 +2,23 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 import AIMusicGeneratorTool from "@/components/tools/generators/AIMusicGeneratorTool";
 
 export const metadata = {
-	title: "Free AI Music Generator Online - No Signup | 30tools",
+	title: "Free AI Music Generator Online - No Signup | SopKit",
 	description: "Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation...",
 	keywords: "ai music generator, free ai music generator, minimax music 2.6, cloudflare ai music, text to song ai, ai song maker, royalty free ai music, free music generator online, ai vocal generator, instrumental ai music, free this week",
 	alternates: {
-		canonical: "https://30tools.com/ai-music-generator",
+		canonical: "https://sopkit.github.io/ai-music-generator",
 	},
 	openGraph: {
-		title: "Free AI Music Generator Online - No Signup | 30tools",
+		title: "Free AI Music Generator Online - No Signup | SopKit",
 		description: "Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation...",
-		url: "https://30tools.com/ai-music-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/ai-music-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free AI Music Generator Online - No Signup | 30tools",
+		title: "Free AI Music Generator Online - No Signup | SopKit",
 		description: "Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation...",
 		images: ["/og-image.jpg"],
 	},
@@ -117,7 +117,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://30tools.com/ai-music-generator",
+						url: "https://sopkit.github.io/ai-music-generator",
 						applicationCategory: "MultimediaApplication",
 						operatingSystem: "Any",
 						offers: {

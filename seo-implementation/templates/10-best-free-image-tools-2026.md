@@ -2,7 +2,7 @@
 title: "10 Best Free Image Tools in 2026 - No Signup Required"
 description: "Discover the best free online image tools for compression, conversion, editing, and optimization. All tools work in your browser with no signup required."
 date: "2026-05-27"
-author: "30tools Team"
+author: "SopKit Team"
 category: "image"
 keywords: ["best free image tools","image compressor","image converter","online image editor"]
 image: "/og-images/10-best-free-image-tools-2026.jpg"

@@ -4,23 +4,23 @@ import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChanne
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Subscribe Link Generator Online - No Signup | 30tools",
+	title: "Free YouTube Subscribe Link Generator Online - No Signup | SopKit",
 	description: "Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for...",
-	keywords: "youtube subscribe link generator, free online tool, no signup, youtube-subscribe-link-generator, free youtube-subscribe-link-generator, Youtube Subscribe Link Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, 30tools",
+	keywords: "youtube subscribe link generator, free online tool, no signup, youtube-subscribe-link-generator, free youtube-subscribe-link-generator, Youtube Subscribe Link Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/youtube-subscribe-link-generator",
+		canonical: "https://sopkit.github.io/youtube-subscribe-link-generator",
 	},
 	openGraph: {
-		title: "Free YouTube Subscribe Link Generator Online - No Signup | 30tools",
+		title: "Free YouTube Subscribe Link Generator Online - No Signup | SopKit",
 		description: "Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for...",
-		url: "https://30tools.com/youtube-subscribe-link-generator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/youtube-subscribe-link-generator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Subscribe Link Generator Online - No Signup | 30tools",
+		title: "Free YouTube Subscribe Link Generator Online - No Signup | SopKit",
 		description: "Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for...",
 		images: ["/og-image.jpg"],
 	},

@@ -71,9 +71,9 @@ function generateSitemapReport() {
   console.log(`   5. Create separate sitemaps for images and videos`);
   
   console.log(`\n📝 Sitemap URLs:\n`);
-  console.log(`   Main: https://30tools.com/sitemap.xml`);
-  console.log(`   Index: https://30tools.com/sitemap-index.xml (redirects to main)`);
-  console.log(`   Robots: https://30tools.com/robots.txt`);
+  console.log(`   Main: https://sopkit.github.io/sitemap.xml`);
+  console.log(`   Index: https://sopkit.github.io/sitemap-index.xml (redirects to main)`);
+  console.log(`   Robots: https://sopkit.github.io/robots.txt`);
   
   console.log(`\n${'═'.repeat(80)}\n`);
   
@@ -83,7 +83,7 @@ function generateSitemapReport() {
   const sampleTools = tools.slice(0, 5);
   for (const tool of sampleTools) {
     console.log(`<url>`);
-    console.log(`  <loc>https://30tools.com${tool.route}</loc>`);
+    console.log(`  <loc>https://sopkit.github.io${tool.route}</loc>`);
     console.log(`  <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>`);
     console.log(`  <changefreq>${tool.popular ? 'weekly' : 'weekly'}</changefreq>`);
     console.log(`  <priority>${tool.popular ? '0.9' : '0.75'}</priority>`);

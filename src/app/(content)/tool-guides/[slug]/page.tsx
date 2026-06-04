@@ -16,22 +16,22 @@ export async function generateMetadata({ params }: ToolCategoryPageProps): Promi
 	const category = getCategoryBySlug(slug);
 	if (!category) {
 		return {
-			title: "Category Not Found | 30tools",
+			title: "Category Not Found | SopKit",
 			description: "The requested tool category does not exist.",
 		};
 	}
 
 	return {
-		title: `Best Free ${category.name} Tools Online | 30tools`,
+		title: `Best Free ${category.name} Tools Online | SopKit`,
 		description: category.description,
-		keywords: [`${category.name} tools`, "free online tools", "30tools"].join(", "),
+		keywords: [`${category.name} tools`, "free online tools", "SopKit"].join(", "),
 		alternates: {
-			canonical: `https://30tools.com/tool-guides/${category.slug}`,
+			canonical: `https://sopkit.github.io/tool-guides/${category.slug}`,
 		},
 		openGraph: {
-			title: `Best Free ${category.name} Tools Online | 30tools`,
+			title: `Best Free ${category.name} Tools Online | SopKit`,
 			description: category.description,
-			url: `https://30tools.com/tool-guides/${category.slug}`,
+			url: `https://sopkit.github.io/tool-guides/${category.slug}`,
 			type: "website",
 			images: [{ url: "/og-image.jpg" }],
 		},

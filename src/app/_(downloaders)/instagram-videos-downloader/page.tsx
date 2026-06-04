@@ -4,23 +4,23 @@ import InstagramDownloader from "@/components/tools/downloaders/InstagramDownloa
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Instagram Videos Downloader Online - No Signup | 30tools",
+	title: "Free Instagram Videos Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Instagram Videos Downloader online. High-speed downloading with no signup needed. 100% free.",
-	keywords: "instagram videos downloader, free online tool, no signup, instagram-videos-downloader, free instagram-videos-downloader, Instagram Videos Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "instagram videos downloader, free online tool, no signup, instagram-videos-downloader, free instagram-videos-downloader, Instagram Videos Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/instagram-videos-downloader",
+		canonical: "https://sopkit.github.io/instagram-videos-downloader",
 	},
 	openGraph: {
-		title: "Free Instagram Videos Downloader Online - No Signup | 30tools",
+		title: "Free Instagram Videos Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Instagram Videos Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://30tools.com/instagram-videos-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/instagram-videos-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Instagram Videos Downloader Online - No Signup | 30tools",
+		title: "Free Instagram Videos Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Instagram Videos Downloader online. High-speed downloading with no signup needed. 100% free.",
 		images: ["/og-image.jpg"],
 	},

@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "User Area | 30tools",
+	title: "User Area | SopKit",
 	description:
-		"Manage your 30tools account, saved preferences, and dashboard settings.",
+		"Manage your SopKit account, saved preferences, and dashboard settings.",
 	keywords:
-		"30tools account, user dashboard, profile settings, creator dashboard, saved tools, tool preferences",
+		"SopKit account, user dashboard, profile settings, creator dashboard, saved tools, tool preferences",
 	openGraph: {
-		title: "User Area | 30tools",
-		description: "Manage your 30tools account, preferences, and dashboard.",
-		url: "https://30tools.com/account",
-		siteName: "30tools",
+		title: "User Area | SopKit",
+		description: "Manage your SopKit account, preferences, and dashboard.",
+		url: "https://sopkit.github.io/account",
+		siteName: "SopKit",
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "User Area | 30tools",
-		description: "Manage your 30tools account, preferences, and dashboard.",
+		title: "User Area | SopKit",
+		description: "Manage your SopKit account, preferences, and dashboard.",
 	},
 };
 

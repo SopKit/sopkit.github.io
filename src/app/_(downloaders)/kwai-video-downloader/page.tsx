@@ -4,23 +4,23 @@ import KwaiDownloader from "@/components/tools/downloaders/KwaiDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Kwai Video Downloader Online - No Signup | 30tools",
+	title: "Free Kwai Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Kwai Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
-	keywords: "kwai video downloader, free online tool, no signup, kwai-video-downloader, free kwai-video-downloader, Kwai Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "kwai video downloader, free online tool, no signup, kwai-video-downloader, free kwai-video-downloader, Kwai Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/kwai-video-downloader",
+		canonical: "https://sopkit.github.io/kwai-video-downloader",
 	},
 	openGraph: {
-		title: "Free Kwai Video Downloader Online - No Signup | 30tools",
+		title: "Free Kwai Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Kwai Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
-		url: "https://30tools.com/kwai-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/kwai-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Kwai Video Downloader Online - No Signup | 30tools",
+		title: "Free Kwai Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Kwai Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
 		images: ["/og-image.jpg"],
 	},

@@ -4,23 +4,23 @@ import PinterestDownloader from "@/components/tools/downloaders/PinterestDownloa
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Pinterest Image Downloader Online - No Signup | 30tools",
+	title: "Free Pinterest Image Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Pinterest Image Downloader online. High-speed downloading with no signup needed. 100% free.",
-	keywords: "pinterest image downloader, free online tool, no signup, pinterest-image-downloader, free pinterest-image-downloader, Pinterest Image Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "pinterest image downloader, free online tool, no signup, pinterest-image-downloader, free pinterest-image-downloader, Pinterest Image Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/pinterest-image-downloader",
+		canonical: "https://sopkit.github.io/pinterest-image-downloader",
 	},
 	openGraph: {
-		title: "Free Pinterest Image Downloader Online - No Signup | 30tools",
+		title: "Free Pinterest Image Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Pinterest Image Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://30tools.com/pinterest-image-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/pinterest-image-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Pinterest Image Downloader Online - No Signup | 30tools",
+		title: "Free Pinterest Image Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Pinterest Image Downloader online. High-speed downloading with no signup needed. 100% free.",
 		images: ["/og-image.jpg"],
 	},

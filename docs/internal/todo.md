@@ -134,7 +134,7 @@ Each article → links to your tools.
 
 Let people embed your tools:
 
-<iframe src="30tools.com/json-formatter"></iframe>
+<iframe src="sopkit.github.io/json-formatter"></iframe>
 
 👉 Every embed = backlink + traffic
 
@@ -181,8 +181,8 @@ get apis from = https://www.urwatools.com/en/pinterest-video-downloader
 
 ---
 
-https://30tools.com/png-to-pdf, https://30tools.com/jpg-to-pdf and there are so many 404 pages either remove them or create them from the website contents 
+https://sopkit.github.io/png-to-pdf, https://sopkit.github.io/jpg-to-pdf and there are so many 404 pages either remove them or create them from the website contents 
 
 https://www.urwatools.com/downloaders
 
-completely delete https://30tools.com/blogs/ -->
+completely delete https://sopkit.github.io/blogs/ -->

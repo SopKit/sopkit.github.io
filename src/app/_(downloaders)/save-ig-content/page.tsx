@@ -4,23 +4,23 @@ import InstagramDownloader from "@/components/tools/downloaders/InstagramDownloa
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Save Ig Content Online - No Signup | 30tools",
+	title: "Free Save Ig Content Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Save Ig Content online. High-speed downloading with no signup needed. 100% free and secure.",
-	keywords: "save ig content, free online tool, no signup, save-ig-content, free save-ig-content, Save Ig Content online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "save ig content, free online tool, no signup, save-ig-content, free save-ig-content, Save Ig Content online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/save-ig-content",
+		canonical: "https://sopkit.github.io/save-ig-content",
 	},
 	openGraph: {
-		title: "Free Save Ig Content Online - No Signup | 30tools",
+		title: "Free Save Ig Content Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Save Ig Content online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://30tools.com/save-ig-content",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/save-ig-content",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Save Ig Content Online - No Signup | 30tools",
+		title: "Free Save Ig Content Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Save Ig Content online. High-speed downloading with no signup needed. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},

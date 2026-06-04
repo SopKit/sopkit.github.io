@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import ConstructionCalculator from "@/components/tools/calculators/ConstructionCalculator";
 
 export const metadata = {
-	title: "Free Tile Calculator Online - No Signup | 30tools",
+	title: "Free Tile Calculator Online - No Signup | SopKit",
 	description: "Calculate the total number of floor or wall tiles needed for a room, including waste margins and cost estimates.",
-	keywords: "tile-calculator, Tile Calculator, flooring tiles estimator, tiles needed for room, floor area calculator, 30tools",
+	keywords: "tile-calculator, Tile Calculator, flooring tiles estimator, tiles needed for room, floor area calculator, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/tile-calculator",
+		canonical: "https://sopkit.github.io/tile-calculator",
 	},
 	openGraph: {
-		title: "Free Tile Calculator Online - No Signup | 30tools",
+		title: "Free Tile Calculator Online - No Signup | SopKit",
 		description: "Calculate the total number of floor or wall tiles needed for a room, including waste margins and cost estimates.",
-		url: "https://30tools.com/tile-calculator",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/tile-calculator",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Tile Calculator Online - No Signup | 30tools",
+		title: "Free Tile Calculator Online - No Signup | SopKit",
 		description: "Calculate the total number of floor or wall tiles needed for a room, including waste margins and cost estimates.",
 		images: ["/og-image.jpg"],
 	},

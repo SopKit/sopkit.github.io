@@ -4,23 +4,23 @@ import { getToolByRoute } from "@/lib/tools";
 import ResizeImageCm from "@/components/tools/image/ResizeImageCm";
 
 export const metadata = {
-	title: "Free Resize Image in CM Online - No Signup | 30tools",
+	title: "Free Resize Image in CM Online - No Signup | SopKit",
 	description: "Resize your images by specifying width and height in centimeters (cm), millimeters (mm), or inches for printing and forms.",
-	keywords: "resize-image-in-cm, Resize Image in CM, resize image cm, resize image mm, resize image inches, 30tools",
+	keywords: "resize-image-in-cm, Resize Image in CM, resize image cm, resize image mm, resize image inches, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/resize-image-in-cm",
+		canonical: "https://sopkit.github.io/resize-image-in-cm",
 	},
 	openGraph: {
-		title: "Free Resize Image in CM Online - No Signup | 30tools",
+		title: "Free Resize Image in CM Online - No Signup | SopKit",
 		description: "Resize your images by specifying width and height in centimeters (cm), millimeters (mm), or inches for printing and forms.",
-		url: "https://30tools.com/resize-image-in-cm",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/resize-image-in-cm",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Resize Image in CM Online - No Signup | 30tools",
+		title: "Free Resize Image in CM Online - No Signup | SopKit",
 		description: "Resize your images by specifying width and height in centimeters (cm), millimeters (mm), or inches for printing and forms.",
 		images: ["/og-image.jpg"],
 	},

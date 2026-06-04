@@ -4,23 +4,23 @@ import BaseConverter from "@/components/tools/shared/BaseConverter";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Text to Octal Converter Online - No Signup | 30tools",
+	title: "Free Text to Octal Converter Online - No Signup | SopKit",
 	description: "Format, minify, validate, and convert code snippets with our free Text to Octal Converter online. Secure, local developer utility with no registration.",
-	keywords: "text to octal converter, free online tool, no signup, text-to-octal-converter, free text-to-octal-converter, Text To Octal Converter online, developer tool, web dev utility, code formatter, online developer, 30tools",
+	keywords: "text to octal converter, free online tool, no signup, text-to-octal-converter, free text-to-octal-converter, Text To Octal Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/text-to-octal-converter",
+		canonical: "https://sopkit.github.io/text-to-octal-converter",
 	},
 	openGraph: {
-		title: "Free Text to Octal Converter Online - No Signup | 30tools",
+		title: "Free Text to Octal Converter Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free Text to Octal Converter online. Secure, local developer utility with no registration.",
-		url: "https://30tools.com/text-to-octal-converter",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/text-to-octal-converter",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Text to Octal Converter Online - No Signup | 30tools",
+		title: "Free Text to Octal Converter Online - No Signup | SopKit",
 		description: "Format, minify, validate, and convert code snippets with our free Text to Octal Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},

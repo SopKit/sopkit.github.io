@@ -8,23 +8,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sparkles, ArrowRight } from "lucide-react";
 
 export const metadata = {
-	title: "Free Fun Generators Online - No Signup | 30tools",
+	title: "Free Fun Generators Online - No Signup | SopKit",
 	description: "Create viral content with AI-powered fun generators",
-	keywords: "ai generators, bio generator, name generator, fun tools, free online generators, 30tools, generators, free generators, generators online, online generator, free creator, content generator",
+	keywords: "ai generators, bio generator, name generator, fun tools, free online generators, SopKit, generators, free generators, generators online, online generator, free creator, content generator",
 	alternates: {
-		canonical: "https://30tools.com/generators",
+		canonical: "https://sopkit.github.io/generators",
 	},
 	openGraph: {
-		title: "Free Fun Generators Online - No Signup | 30tools",
+		title: "Free Fun Generators Online - No Signup | SopKit",
 		description: "Create viral content with AI-powered fun generators",
-		url: "https://30tools.com/generators",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/generators",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Fun Generators Online - No Signup | 30tools",
+		title: "Free Fun Generators Online - No Signup | SopKit",
 		description: "Create viral content with AI-powered fun generators",
 		images: ["/og-image.jpg"],
 	},

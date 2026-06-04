@@ -8,23 +8,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Type, ArrowRight } from "lucide-react";
 
 export const metadata = {
-	title: "Free Text Tools Online - No Signup | 30tools",
+	title: "Free Text Tools Online - No Signup | SopKit",
 	description: "Format, convert, and manipulate text content",
-	keywords: "text tools, word counter, case converter, text cleaner, online text tools, 30tools, text-tools, free text-tools, text tools online, text tool, online text utility, free text converter",
+	keywords: "text tools, word counter, case converter, text cleaner, online text tools, SopKit, text-tools, free text-tools, text tools online, text tool, online text utility, free text converter",
 	alternates: {
-		canonical: "https://30tools.com/text-tools",
+		canonical: "https://sopkit.github.io/text-tools",
 	},
 	openGraph: {
-		title: "Free Text Tools Online - No Signup | 30tools",
+		title: "Free Text Tools Online - No Signup | SopKit",
 		description: "Format, convert, and manipulate text content",
-		url: "https://30tools.com/text-tools",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/text-tools",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Text Tools Online - No Signup | 30tools",
+		title: "Free Text Tools Online - No Signup | SopKit",
 		description: "Format, convert, and manipulate text content",
 		images: ["/og-image.jpg"],
 	},

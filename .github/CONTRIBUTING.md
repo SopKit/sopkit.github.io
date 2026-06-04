@@ -1,8 +1,8 @@
-# Contributing to 30tools
+# Contributing to SopKit
 
-![30tools](https://30tools.com/og-image.jpg)
+![SopKit](https://sopkit.github.io/og-image.jpg)
 
-First off, thank you for considering contributing to **30tools**! With over **733+ tools** and a massive SEO ecosystem, your help is vital in making this the premier open-source utility engine.
+First off, thank you for considering contributing to **SopKit**! With over **733+ tools** and a massive SEO ecosystem, your help is vital in making this the premier open-source utility engine.
 
 ---
 
@@ -14,8 +14,8 @@ First off, thank you for considering contributing to **30tools**! With over **73
 
 ### 1. Fork and Clone
 ```bash
-git clone https://github.com/sh20raj/30tools.git
-cd 30tools
+git clone https://github.com/SopKit/sopkit.github.io.git
+cd SopKit
 ```
 
 ### 2. Install Dependencies
@@ -56,7 +56,7 @@ Open [http://localhost:3000](http://localhost:3000) to see your workspace.
 
 ## 💎 Design Guidelines: The "Premium Workspace"
 
-We believe that free tools should feel like premium products. When contributing UI changes, follow these 30tools standards:
+We believe that free tools should feel like premium products. When contributing UI changes, follow these SopKit standards:
 
 ### 1. Glassmorphism & Depth
 - Use `GlassCard` from `@/components/tools/shared/WorkspaceComponents` for main tool containers.

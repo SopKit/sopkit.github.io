@@ -56,7 +56,7 @@ import UnstoryOpenmindCTACompact from "@/components/shared/UnstoryOpenmindCTACom
 - **Glassmorphism effects** with backdrop blur
 - **Floating decorative elements** (hearts, stars, sparkles)
 - **Smooth animations** and transitions
-- **Consistent with 30tools** design system
+- **Consistent with SopKit** design system
 
 ### User Experience
 

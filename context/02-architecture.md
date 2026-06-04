@@ -56,7 +56,7 @@
 2. **All page.js/layout.js are Server Components** — Never add `'use client'` to page or layout files. Interactivity goes in separate Client Components
 3. **Every page exports metadata directly** — No dynamic metadata generation helpers. Hardcoded `metadata` object export only
 4. **ToolLayout wraps every tool page** — Provides JSON-LD, breadcrumbs, hero, tool area, SEO content, related tools (minimum 10)
-5. **SEO title pattern** — `Free [Tool Name] Online - No Signup | 30tools`
+5. **SEO title pattern** — `Free [Tool Name] Online - No Signup | SopKit`
 6. **extraSlugs are SEO variants** — Each tool can have 10-20+ extra slugs. The system handles 301 redirects from extra slug URLs to canonical routes
 7. **Client-side first** — 95% of tool logic runs in the browser. Server actions only for YouTube downloads, AI features, and proxy endpoints
 8. **No database** — The project is entirely data-driven via JSON files. No ORM, no SQL, no D1/KV

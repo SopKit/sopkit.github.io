@@ -1,4 +1,4 @@
-# SEO Action Plan: 30tools.com
+# SEO Action Plan: sopkit.github.io
 
 **Prioritized by Impact x Effort**
 **Generated:** 2026-05-16
@@ -56,13 +56,13 @@ The metadata API in each page already handles this correctly.
 
 ### 5. Add www-to-www Redirect [15 min]
 **File:** `next.config.mjs` redirects()
-**Problem:** `www.30tools.com` serves HTTP 200 (duplicate site)
+**Problem:** `www.sopkit.github.io` serves HTTP 200 (duplicate site)
 **Fix:** Add to redirects array:
 ```js
 {
   source: "/:path*",
-  has: [{ type: "host", value: "www.30tools.com" }],
-  destination: "https://30tools.com/:path*",
+  has: [{ type: "host", value: "www.sopkit.github.io" }],
+  destination: "https://sopkit.github.io/:path*",
   permanent: true,
 }
 ```

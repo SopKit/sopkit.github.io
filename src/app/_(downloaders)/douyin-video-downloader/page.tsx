@@ -4,23 +4,23 @@ import DouyinDownloader from "@/components/tools/downloaders/DouyinDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Douyin Video Downloader Online - No Signup | 30tools",
+	title: "Free Douyin Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free Douyin Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-	keywords: "douyin video downloader, free online tool, no signup, douyin-video-downloader, free douyin-video-downloader, Douyin Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "douyin video downloader, free online tool, no signup, douyin-video-downloader, free douyin-video-downloader, Douyin Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/douyin-video-downloader",
+		canonical: "https://sopkit.github.io/douyin-video-downloader",
 	},
 	openGraph: {
-		title: "Free Douyin Video Downloader Online - No Signup | 30tools",
+		title: "Free Douyin Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Douyin Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://30tools.com/douyin-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/douyin-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Douyin Video Downloader Online - No Signup | 30tools",
+		title: "Free Douyin Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Douyin Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 		images: ["/og-image.jpg"],
 	},

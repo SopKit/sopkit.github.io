@@ -98,15 +98,15 @@ export default function PDFPillar() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-muted-foreground">
                         <div className="space-y-6 text-lg leading-relaxed">
                             <p>
-                                Managing PDF files shouldn't require expensive subscriptions or heavy software installations. At 30tools, we've built a comprehensive suite of PDF utilities that bring enterprise-grade functionality directly to your browser. Whether you need to merge legal documents, compress portfolios for email, or secure sensitive reports, our tools deliver precision results in seconds.
+                                Managing PDF files shouldn't require expensive subscriptions or heavy software installations. At SopKit, we've built a comprehensive suite of PDF utilities that bring enterprise-grade functionality directly to your browser. Whether you need to merge legal documents, compress portfolios for email, or secure sensitive reports, our tools deliver precision results in seconds.
                             </p>
                             <p>
-                                Our architecture is built on the principle of **Local-First Processing**. Unlike traditional online PDF editors that upload your private documents to a remote server, 30tools uses advanced JavaScript libraries to process your files right on your computer. This means your data never leaves your device, providing the highest possible level of security and privacy.
+                                Our architecture is built on the principle of **Local-First Processing**. Unlike traditional online PDF editors that upload your private documents to a remote server, SopKit uses advanced JavaScript libraries to process your files right on your computer. This means your data never leaves your device, providing the highest possible level of security and privacy.
                             </p>
                         </div>
                         <div className="space-y-6 text-lg leading-relaxed">
                             <p>
-                                Why choose 30tools over SmallPDF or iLovePDF? The answer is simple: **Zero Friction**. We have eliminated signups, daily usage limits, and watermarks. Our mission is to provide professional-grade tools that are genuinely free, fast, and accessible to everyone — from students and researchers to developers and business owners.
+                                Why choose SopKit over SmallPDF or iLovePDF? The answer is simple: **Zero Friction**. We have eliminated signups, daily usage limits, and watermarks. Our mission is to provide professional-grade tools that are genuinely free, fast, and accessible to everyone — from students and researchers to developers and business owners.
                             </p>
                             <ul className="space-y-4 pt-4">
                                 <li className="flex items-start gap-3">

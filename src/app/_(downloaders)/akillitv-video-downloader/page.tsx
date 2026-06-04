@@ -4,23 +4,23 @@ import AkillitvDownloader from "@/components/tools/downloaders/AkillitvDownloade
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free AkilliTv Video Downloader Online - No Signup | 30tools",
+	title: "Free AkilliTv Video Downloader Online - No Signup | SopKit",
 	description: "Save and download media files from multiple platforms with our free AkilliTv Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-	keywords: "akillitv video downloader, free online tool, no signup, akillitv-video-downloader, free akillitv-video-downloader, Akillitv Video Downloader online, video downloader, free download tool, online media saver, no signup download, 30tools",
+	keywords: "akillitv video downloader, free online tool, no signup, akillitv-video-downloader, free akillitv-video-downloader, Akillitv Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://30tools.com/akillitv-video-downloader",
+		canonical: "https://sopkit.github.io/akillitv-video-downloader",
 	},
 	openGraph: {
-		title: "Free AkilliTv Video Downloader Online - No Signup | 30tools",
+		title: "Free AkilliTv Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free AkilliTv Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://30tools.com/akillitv-video-downloader",
-		siteName: "30tools",
+		url: "https://sopkit.github.io/akillitv-video-downloader",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free AkilliTv Video Downloader Online - No Signup | 30tools",
+		title: "Free AkilliTv Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free AkilliTv Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 		images: ["/og-image.jpg"],
 	},

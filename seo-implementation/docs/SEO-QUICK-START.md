@@ -28,11 +28,11 @@ For each tool page:
 **Template:**
 ```typescript
 export const metadata = {
-  title: "Free [Tool Name] Online - [Key Benefit] | 30tools",
+  title: "Free [Tool Name] Online - [Key Benefit] | SopKit",
   description: "[Action verb] [what it does] instantly. [Key features]. No signup, 100% free, privacy-first. Try now!",
-  keywords: "[primary keyword], [secondary], [tertiary], free online tool, no signup, 30tools",
+  keywords: "[primary keyword], [secondary], [tertiary], free online tool, no signup, SopKit",
   alternates: {
-    canonical: "https://30tools.com/[tool-route]",
+    canonical: "https://sopkit.github.io/[tool-route]",
   },
   // ... rest of metadata
 };
@@ -91,7 +91,7 @@ Add to all tool pages:
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://30tools.com" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sopkit.github.io" },
         { "@type": "ListItem", position: 2, name: categoryName, item: categoryUrl },
         { "@type": "ListItem", position: 3, name: tool.name, item: toolUrl },
       ],
@@ -155,7 +155,7 @@ For each tool:
 
 **Alt Text Pattern:**
 ```typescript
-alt="[Tool Name] interface showing [specific feature] - Free online tool by 30tools"
+alt="[Tool Name] interface showing [specific feature] - Free online tool by SopKit"
 ```
 
 ### Day 13-14: Technical SEO
@@ -175,11 +175,11 @@ node scripts/seo-audit-metadata.cjs
 
 # Check for broken links
 npm install -g broken-link-checker
-blc https://30tools.com -ro
+blc https://sopkit.github.io -ro
 
 # Test page speed
 npm install -g lighthouse
-lighthouse https://30tools.com --view
+lighthouse https://sopkit.github.io --view
 
 # Build and deploy
 bun run build
