@@ -339,7 +339,7 @@ export default function RootLayout({
 				/>
 
 				<Script
-					src="https://www.googletagmanager.com/gtag/js?id=G-0LV8F646TM"
+					src="https://www.googletagmanager.com/gtag/js?id=G-HKX99R92SE"
 					strategy="lazyOnload"
 				/>
 				<Script id="google-analytics" strategy="lazyOnload">
@@ -347,12 +347,12 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-0LV8F646TM');
+              gtag('config', 'G-HKX99R92SE');
             `}
 				</Script>
 				<Script
 					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1828915420581549"
-					strategy="lazyOnload"
+					strategy="afterInteractive"
 					crossOrigin="anonymous"
 				/>
 				{/* Clarity Tracking Code */}
