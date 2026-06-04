@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 import { getToolByRoute } from "@/lib/tools";
+import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Free Reactive Power Converter Online - No Signup | SopKit",
-	description: "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "reactive power converter, free online tool, no signup, reactive-power-converter, free reactive-power-converter, Reactive Power Converter online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Reactive Power Converter Online Free - No Signup | SopKit",
+	description: "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/reactive-power-converter",
 	},
 	openGraph: {
-		title: "Free Reactive Power Converter Online - No Signup | SopKit",
-		description: "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Reactive Power Converter Online Free - No Signup",
+		description: "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
 		url: "https://sopkit.github.io/reactive-power-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Reactive Power Converter Online - No Signup | SopKit",
-		description: "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Reactive Power Converter Online Free - Fast & Secure",
+		description: "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

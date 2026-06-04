@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BaseConverter from "@/components/tools/shared/BaseConverter";
 import { getToolByRoute } from "@/lib/tools";
+import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Free Decimal to Octal Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free Decimal to Octal Converter online. Secure, local developer utility with no registration.",
-	keywords: "decimal to octal converter, free online tool, no signup, decimal-to-octal-converter, free decimal-to-octal-converter, Decimal To Octal Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "Decimal to Octal Converter Online Free - Developer Tools | SopKit",
+	description: "Convert decimal numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for computer science and technical tasks. No signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/decimal-to-octal-converter",
 	},
 	openGraph: {
-		title: "Free Decimal to Octal Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Decimal to Octal Converter online. Secure, local developer utility with no registration.",
+		title: "Decimal to Octal Converter Online Free - No Signup",
+		description: "Convert decimal numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for computer science and technical",
 		url: "https://sopkit.github.io/decimal-to-octal-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Decimal to Octal Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Decimal to Octal Converter online. Secure, local developer utility with no registration.",
+		title: "Decimal to Octal Converter Online Free - Fast & Secure",
+		description: "Convert decimal numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for computer science and technical",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

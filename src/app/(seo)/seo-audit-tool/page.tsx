@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
-	keywords: "seo audit tool, website audit, seo checker, on-page seo analysis, site audit, free seo tool, SopKit, seo-audit-tool, free seo-audit-tool, seo audit tool online, seo tool, website analyzer",
+	title: "Complete SEO Audit Tool Online Free - No Signup | SopKit",
+	description: "Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/seo-audit-tool",
 	},
 	openGraph: {
-		title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
+		title: "Complete SEO Audit Tool Online Free - No Signup",
+		description: "Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations. No signup, no uploads,",
 		url: "https://sopkit.github.io/seo-audit-tool",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
+		title: "Complete SEO Audit Tool Online Free - Fast & Secure",
+		description: "Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations. No signup, no uploads,",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

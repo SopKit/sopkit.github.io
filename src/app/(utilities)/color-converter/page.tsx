@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import RgbHexConverter from "@/components/tools/built-ins/RgbHexConverter";
 import { getToolByRoute } from "@/lib/tools";
+import RgbHexConverter from "@/components/tools/built-ins/RgbHexConverter";
 
 export const metadata = {
-	title: "Free Color Converter Online - No Signup | SopKit",
-	description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with...",
-	keywords: "color converter, free online tool, no signup, color-converter, free color-converter, Color Converter online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Color Converter Online Free - No Signup | SopKit",
+	description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/color-converter",
 	},
 	openGraph: {
-		title: "Free Color Converter Online - No Signup | SopKit",
-		description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with...",
+		title: "Color Converter Online Free - No Signup",
+		description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision",
 		url: "https://sopkit.github.io/color-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Color Converter Online - No Signup | SopKit",
-		description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with...",
+		title: "Color Converter Online Free - Fast & Secure",
+		description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

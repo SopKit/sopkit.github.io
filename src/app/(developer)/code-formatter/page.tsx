@@ -1,16 +1,17 @@
+import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import { getToolByRoute } from "@/lib/tools";
 import JSONFormatterTool from "@/components/tools/developer/JSONFormatterTool";
 
 export const metadata = {
-	title: "Free Code Formatter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free Code Formatter online. Secure, local developer utility with no registration. Try it free now.",
-	keywords: "code, formatter, free code formatter, online code formatter, SopKit, code-formatter, code formatter, free code-formatter, code formatter online, developer tool, online code utility, free developer tool",
+	title: "Code Formatter Online Free - Developer Tools | SopKit",
+	description: "Format and beautify HTML, CSS, JavaScript, and SQL code. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/code-formatter",
 	},
 	openGraph: {
-		title: "Free Code Formatter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Code Formatter online. Secure, local developer utility with no registration. Try it free now.",
+		title: "Code Formatter Online Free - No Signup",
+		description: "Format and beautify HTML, CSS, JavaScript, and SQL code. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/code-formatter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -18,19 +19,23 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Code Formatter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Code Formatter online. Secure, local developer utility with no registration. Try it free now.",
+		title: "Code Formatter Online Free - Fast & Secure",
+		description: "Format and beautify HTML, CSS, JavaScript, and SQL code. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
-	const tool = { id: "code-formatter", name: "Code Formatter", description: "Format and beautify JavaScript, HTML, CSS, and other code instantly. Our free Code Formatter improves readability with proper indentation and syntax highlighting.", route: "/code-formatter", category: "developer" };
+	const tool = getToolByRoute("/code-formatter");
+
+	if (!tool) {
+		return notFound();
+	}
+
 	return (
-		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: tool.name, description: tool.description, url: "https://sopkit.github.io/code-formatter", applicationCategory: "UtilitiesApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }) }} />
-			<ToolLayout tool={tool}><JSONFormatterTool /></ToolLayout>
-		</>
+		<ToolLayout tool={tool}>
+			<JSONFormatterTool />
+		</ToolLayout>
 	);
 }

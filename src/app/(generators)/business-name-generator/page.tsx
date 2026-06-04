@@ -1,16 +1,17 @@
+import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import { getToolByRoute } from "@/lib/tools";
 import TextGeneratorTool from "@/components/tools/generators/TextGeneratorTool";
 
 export const metadata = {
-	title: "Free Business Name Generator Online - No Signup | SopKit",
-	description: "Generate creative and catchy names for your brand or startup.",
-	keywords: "business, name, generator, free business name generator, online business name generator, SopKit, business-name-generator, business name generator, free business-name-generator, business name generator online, online generator, free creator",
+	title: "Business Name Generator Online Free - No Signup | SopKit",
+	description: "Generate creative and catchy names for your brand or startup. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/business-name-generator",
 	},
 	openGraph: {
-		title: "Free Business Name Generator Online - No Signup | SopKit",
-		description: "Generate creative and catchy names for your brand or startup.",
+		title: "Business Name Generator Online Free - No Signup",
+		description: "Generate creative and catchy names for your brand or startup. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/business-name-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -18,19 +19,23 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Business Name Generator Online - No Signup | SopKit",
-		description: "Generate creative and catchy names for your brand or startup.",
+		title: "Business Name Generator Online Free - Fast & Secure",
+		description: "Generate creative and catchy names for your brand or startup. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
-	const tool = { id: "business-name-generator", name: "Business Name Generator", description: "Generate unique, creative business name ideas instantly. Our free Business Name Generator helps entrepreneurs find the perfect brand name with AI-powered suggestions.", route: "/business-name-generator", category: "generators" };
+	const tool = getToolByRoute("/business-name-generator");
+
+	if (!tool) {
+		return notFound();
+	}
+
 	return (
-		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: tool.name, description: tool.description, url: "https://sopkit.github.io/business-name-generator", applicationCategory: "UtilitiesApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }) }} />
-			<ToolLayout tool={tool}><TextGeneratorTool /></ToolLayout>
-		</>
+		<ToolLayout tool={tool}>
+			<TextGeneratorTool />
+		</ToolLayout>
 	);
 }

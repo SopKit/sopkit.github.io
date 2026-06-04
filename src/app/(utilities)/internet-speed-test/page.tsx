@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import InternetSpeedTestTool from "@/components/tools/utilities/InternetSpeedTestTool";
 import { getToolByRoute } from "@/lib/tools";
+import InternetSpeedTestTool from "@/components/tools/utilities/InternetSpeedTestTool";
 
 export const metadata = {
-	title: "Free Internet Speed Test Online - No Signup | SopKit",
-	description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.",
-	keywords: "internet speed test, check internet speed, broadband speed test, wifi speed test, free tool, SopKit, internet-speed-test, free internet-speed-test, internet speed test online, online utility, free converter, browser tool",
+	title: "Internet Speed Test Online Free - No Signup | SopKit",
+	description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/internet-speed-test",
 	},
 	openGraph: {
-		title: "Free Internet Speed Test Online - No Signup | SopKit",
-		description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.",
+		title: "Internet Speed Test Online Free - No Signup",
+		description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly. No signup, no uploads, 100% private browser-bas",
 		url: "https://sopkit.github.io/internet-speed-test",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Internet Speed Test Online - No Signup | SopKit",
-		description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.",
+		title: "Internet Speed Test Online Free - Fast & Secure",
+		description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly. No signup, no uploads, 100% private browser-bas",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import PDFEditor from "@/components/tools/pdf/PDFEditor";
 import { getToolByRoute } from "@/lib/tools";
+import PDFEditor from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free PDF Editor Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free PDF Editor online. Safe and private browser-based tool with no registration. 100% free and secure.",
-	keywords: "pdf editor, edit pdf online, free pdf editor, pdf text editor, online pdf tool, SopKit, pdf-editor, free pdf-editor, pdf editor online, pdf utility, document editor, free pdf converter",
+	title: "PDF Editor Online Free - Edit, Merge & Convert PDF | SopKit",
+	description: "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/pdf-editor",
 	},
 	openGraph: {
-		title: "Free PDF Editor Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Editor online. Safe and private browser-based tool with no registration. 100% free and secure.",
+		title: "PDF Editor Online Free - No Signup",
+		description: "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup. No signup",
 		url: "https://sopkit.github.io/pdf-editor",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,11 +19,11 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PDF Editor Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Editor online. Safe and private browser-based tool with no registration. 100% free and secure.",
+		title: "PDF Editor Online Free - Fast & Secure",
+		description: "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup. No signup",
 		images: ["/og-image.jpg"],
 	},
-	robots: { index: true, follow: true },
+	robots: { index: false, follow: true },
 };
 
 export default async function ToolPage() {

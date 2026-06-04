@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UrlParserTool from "@/components/tools/built-ins/UrlParserTool";
 import { getToolByRoute } from "@/lib/tools";
+import UrlParserTool from "@/components/tools/built-ins/UrlParserTool";
 
 export const metadata = {
-	title: "Free URL Opener Online - No Signup | SopKit",
-	description: "Free url opener tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "url opener, free online tool, no signup, url-opener, free url-opener, Url Opener online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "URL Opener Online Free - No Signup | SopKit",
+	description: "Free url opener tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/url-opener",
 	},
 	openGraph: {
-		title: "Free URL Opener Online - No Signup | SopKit",
-		description: "Free url opener tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "URL Opener Online Free - No Signup",
+		description: "Free url opener tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/url-opener",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free URL Opener Online - No Signup | SopKit",
-		description: "Free url opener tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "URL Opener Online Free - Fast & Secure",
+		description: "Free url opener tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

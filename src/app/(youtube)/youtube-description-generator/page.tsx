@@ -1,18 +1,18 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
+import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Description Generator Online - No Signup | SopKit",
-	description: "Create SEO-optimized YouTube video descriptions instantly. Our free online generator helps you include keywords, links, and timestamps to boost your video...",
-	keywords: "youtube description generator, free online tool, no signup, youtube-description-generator, free youtube-description-generator, Youtube Description Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
+	title: "YouTube Description Generator - Free Online Tool | SopKit",
+	description: "Generate optimized youtube description generator details. Instantly copy or share customized outputs.",
+	keywords: "youtube description generator, youtube-description-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
 		canonical: "https://sopkit.github.io/youtube-description-generator",
 	},
 	openGraph: {
-		title: "Free YouTube Description Generator Online - No Signup | SopKit",
-		description: "Create SEO-optimized YouTube video descriptions instantly. Our free online generator helps you include keywords, links, and timestamps to boost your video...",
+		title: "YouTube Description Generator - Free Online Tool | SopKit",
+		description: "Generate optimized youtube description generator details. Instantly copy or share customized outputs.",
 		url: "https://sopkit.github.io/youtube-description-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +20,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Description Generator Online - No Signup | SopKit",
-		description: "Create SEO-optimized YouTube video descriptions instantly. Our free online generator helps you include keywords, links, and timestamps to boost your video...",
+		title: "YouTube Description Generator - Free Online Tool | SopKit",
+		description: "Generate optimized youtube description generator details. Instantly copy or share customized outputs.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -35,8 +35,29 @@ export default async function ToolPage() {
 	}
 
 	return (
-		<ToolLayout tool={tool}>
-			<YouTubeChannelIDFinderTool />
-		</ToolLayout>
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "SoftwareApplication",
+						name: tool.name,
+						description: tool.description,
+						url: "https://sopkit.github.io/youtube-description-generator",
+						applicationCategory: "UtilitiesApplication",
+						operatingSystem: "Any",
+						offers: {
+							"@type": "Offer",
+							price: "0",
+							priceCurrency: "USD"
+						}
+					})
+				}}
+			/>
+			<ToolLayout tool={tool} showHireMe={true}>
+				<IntentToolDispatcher toolId={tool.id} />
+			</ToolLayout>
+		</>
 	);
 }

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { RelatedTools } from "@/components/seo/SocialEngagement";
 import SeoOpportunityContent from "@/components/seo/SeoOpportunityContent";
@@ -92,6 +93,7 @@ function ToolArticle({ content }) {
  * @param {React.ReactNode} props.children
  * @param {Object[]} [props.breadcrumbs]
  * @param {Tool[]} [props.relatedTools]
+ * @param {boolean} [props.showHireMe]
  */
 export default function ToolLayout({
 	tool,
@@ -174,10 +176,12 @@ export default function ToolLayout({
 		<div className="min-h-screen bg-background text-foreground selection:bg-primary/20 ambient-glow">
 			<StructuredData tool={enrichedTool} />
 			<div className="container mx-auto px-4 pt-8">
-				<BreadcrumbsEnhanced
-					customBreadcrumbs={breadcrumbs}
-					suppressSchema={true}
-				/>
+				<Suspense fallback={<div className="h-6 w-64 bg-muted/20 animate-pulse rounded" />}>
+					<BreadcrumbsEnhanced
+						customBreadcrumbs={breadcrumbs}
+						suppressSchema={true}
+					/>
+				</Suspense>
 			</div>
 
 			<main className="container mx-auto px-4 py-10 md:py-14 max-w-6xl space-y-16">

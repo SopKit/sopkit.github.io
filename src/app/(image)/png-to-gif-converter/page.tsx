@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Free PNG to GIF Converter Online - No Signup | SopKit",
-	description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file...",
-	keywords: "png to gif converter, free online tool, no signup, png-to-gif-converter, free png-to-gif-converter, Png To Gif Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "PNG to GIF Converter Online Free - Compress & Convert Images | SopKit",
+	description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file uploads. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/png-to-gif-converter",
 	},
 	openGraph: {
-		title: "Free PNG to GIF Converter Online - No Signup | SopKit",
-		description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file...",
+		title: "PNG to GIF Converter Online Free - No Signup",
+		description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file upload",
 		url: "https://sopkit.github.io/png-to-gif-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PNG to GIF Converter Online - No Signup | SopKit",
-		description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file...",
+		title: "PNG to GIF Converter Online Free - Fast & Secure",
+		description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file upload",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<ImageConverterTool />
+			<ImageConverterTool defaultOutputFormat="png" />
 		</ToolLayout>
 	);
 }

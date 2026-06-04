@@ -1,16 +1,17 @@
+import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import QrReaderPremium from "@/components/tools/utilities/QrReaderPremium";
+import { getToolByRoute } from "@/lib/tools";
+import QrReaderPremium from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free QR Code Reader Online - No Signup | SopKit",
-	description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage.",
-	keywords: "qr code reader, scan qr code online, decode qr code, free qr scanner, SopKit, qr-code-reader, free qr-code-reader, qr code reader online, online generator, free creator, content generator, design tool",
+	title: "QR Code Reader Online Free - No Signup | SopKit",
+	description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/qr-code-reader",
 	},
 	openGraph: {
-		title: "Free QR Code Reader Online - No Signup | SopKit",
-		description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage.",
+		title: "QR Code Reader Online Free - No Signup",
+		description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage. No signup, ",
 		url: "https://sopkit.github.io/qr-code-reader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -18,42 +19,23 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free QR Code Reader Online - No Signup | SopKit",
-		description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage.",
+		title: "QR Code Reader Online Free - Fast & Secure",
+		description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage. No signup, ",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
-	const tool = {
-		id: "qr-code-reader",
-		name: "QR Code Reader",
-		description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage.",
-		route: "/qr-code-reader",
-		category: "generators",
-	};
+	const tool = getToolByRoute("/qr-code-reader");
+
+	if (!tool) {
+		return notFound();
+	}
 
 	return (
-		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "SoftwareApplication",
-						name: tool.name,
-						description: tool.description,
-						url: "https://sopkit.github.io/qr-code-reader",
-						applicationCategory: "UtilitiesApplication",
-						operatingSystem: "Any",
-						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-					}),
-				}}
-			/>
-			<ToolLayout tool={tool}>
-				<QrReaderPremium />
-			</ToolLayout>
-		</>
+		<ToolLayout tool={tool}>
+			<QrReaderPremium />
+		</ToolLayout>
 	);
 }

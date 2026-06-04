@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 
 export const metadata = {
-	title: "Free Image Cropper Online - No Signup | SopKit",
-	description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "image cropper, free online tool, no signup, image-cropper, free image-cropper, Image Cropper online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "Image Cropper Online Free - Compress & Convert Images | SopKit",
+	description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/image-cropper",
 	},
 	openGraph: {
-		title: "Free Image Cropper Online - No Signup | SopKit",
-		description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Image Cropper Online Free - No Signup",
+		description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/image-cropper",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Image Cropper Online - No Signup | SopKit",
-		description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Image Cropper Online Free - Fast & Secure",
+		description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

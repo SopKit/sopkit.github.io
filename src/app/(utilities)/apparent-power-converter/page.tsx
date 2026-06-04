@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 import { getToolByRoute } from "@/lib/tools";
+import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Free Apparent Power Converter Online - No Signup | SopKit",
-	description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.",
-	keywords: "apparent power converter, free online tool, no signup, apparent-power-converter, free apparent-power-converter, Apparent Power Converter online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Apparent Power Converter Online Free - No Signup | SopKit",
+	description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/apparent-power-converter",
 	},
 	openGraph: {
-		title: "Free Apparent Power Converter Online - No Signup | SopKit",
-		description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.",
+		title: "Apparent Power Converter Online Free - No Signup",
+		description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians. No signup, n",
 		url: "https://sopkit.github.io/apparent-power-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Apparent Power Converter Online - No Signup | SopKit",
-		description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.",
+		title: "Apparent Power Converter Online Free - Fast & Secure",
+		description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians. No signup, n",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

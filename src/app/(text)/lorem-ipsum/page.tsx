@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import LoremIpsumGeneratorTool from "@/components/tools/generators/LoremIpsumGeneratorTool";
 import { getToolByRoute } from "@/lib/tools";
+import LoremIpsumGeneratorTool from "@/components/tools/generators/LoremIpsumGeneratorTool";
 
 export const metadata = {
-	title: "Free Lorem Ipsum Generator Online - No Signup | SopKit",
-	description: "Format, clean, sort, and analyze text files instantly with our free Lorem Ipsum Generator online. Fast and private browser utility with no signup. Easy to use.",
-	keywords: "lorem ipsum generator, free online tool, no signup, lorem-ipsum, Lorem Ipsum, free lorem-ipsum, Lorem Ipsum online, text tool, text editor online, content formatter, writing utility, SopKit",
+	title: "Lorem Ipsum Generator Online Free - No Signup | SopKit",
+	description: "Generate custom Lorem Ipsum text for your designs. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/lorem-ipsum",
 	},
 	openGraph: {
-		title: "Free Lorem Ipsum Generator Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Lorem Ipsum Generator online. Fast and private browser utility with no signup. Easy to use.",
+		title: "Lorem Ipsum Generator Online Free - No Signup",
+		description: "Generate custom Lorem Ipsum text for your designs. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/lorem-ipsum",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Lorem Ipsum Generator Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Lorem Ipsum Generator online. Fast and private browser utility with no signup. Easy to use.",
+		title: "Lorem Ipsum Generator Online Free - Fast & Secure",
+		description: "Generate custom Lorem Ipsum text for your designs. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

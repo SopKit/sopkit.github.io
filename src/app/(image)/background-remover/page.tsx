@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BackgroundRemoverTool from "@/components/tools/image/BackgroundRemoverTool";
 import { getToolByRoute } from "@/lib/tools";
+import BackgroundRemoverTool from "@/components/tools/image/BackgroundRemoverTool";
 
 export const metadata = {
-	title: "Free Background Remover Online - No Signup | SopKit",
-	description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based...",
-	keywords: "background-remover, Background Remover, free background-remover, Background Remover online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "Background Remover Online Free - Compress & Convert Images | SopKit",
+	description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no signup needed. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/background-remover",
 	},
 	openGraph: {
-		title: "Free Background Remover Online - No Signup | SopKit",
-		description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based...",
+		title: "Background Remover Online Free - No Signup",
+		description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no s",
 		url: "https://sopkit.github.io/background-remover",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Background Remover Online - No Signup | SopKit",
-		description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based...",
+		title: "Background Remover Online Free - Fast & Secure",
+		description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no s",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

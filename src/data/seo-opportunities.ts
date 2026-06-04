@@ -26,7 +26,7 @@ export type SeoOpportunity = {
 	relatedSlugs: string[];
 	recommendedCTA: string;
 	canonicalStrategy: string;
-	toolPreset:
+	toolPreset?:
 		| {
 				type: "exam-image";
 				examName: string;
@@ -51,7 +51,7 @@ export type SeoOpportunity = {
 	};
 };
 
-const imageFaqs = (target: string) => [
+export const imageFaqs = (target: string) => [
 	{
 		question: `How do I compress an image to ${target}?`,
 		answer: `Upload a JPG, PNG, or WebP image, keep the target size set to ${target}, process it, and download the compressed JPEG output.`,
@@ -66,7 +66,7 @@ const imageFaqs = (target: string) => [
 	},
 ];
 
-const apiFaqs = (provider: string, keyLocation: string) => [
+export const apiFaqs = (provider: string, keyLocation: string) => [
 	{
 		question: `Where do I find my ${provider} API key?`,
 		answer: `Create or copy a key from ${keyLocation}. Use a restricted or test key whenever possible.`,
@@ -2096,7 +2096,6 @@ export const seoOpportunities: SeoOpportunity[] = [
 		toolPreset: {"type":"seo-check","mode":"meta-tags"},
 		monetization: {"adsAllowed":true,"affiliateAllowed":true,"serviceCTA":true,"proUpsell":"Perform bulk technical SEO checks with Pro.","affiliateSlot":"seo"}
 	},
-,
 	{
 		slug: "compress-image-to-60kb",
 		route: "/compress-image-to-60kb",

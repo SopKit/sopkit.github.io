@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 
 export const metadata = {
-	title: "Free Flip Image Online - No Signup | SopKit",
-	description: "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "flip image, free online tool, no signup, flip-image, free flip-image, Flip Image online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "Flip Image Online Free - Compress & Convert Images | SopKit",
+	description: "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/flip-image",
 	},
 	openGraph: {
-		title: "Free Flip Image Online - No Signup | SopKit",
-		description: "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Flip Image Online Free - No Signup",
+		description: "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/flip-image",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Flip Image Online - No Signup | SopKit",
-		description: "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Flip Image Online Free - Fast & Secure",
+		description: "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

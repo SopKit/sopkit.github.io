@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UserAgentTool from "@/components/tools/built-ins/UserAgentTool";
 import { getToolByRoute } from "@/lib/tools";
+import UserAgentTool from "@/components/tools/built-ins/UserAgentTool";
 
 export const metadata = {
-	title: "Free What Is My User Agent Online - No Signup | SopKit",
-	description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "what is my user agent, free online tool, no signup, what-is-my-user-agent, free what-is-my-user-agent, What Is My User Agent online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "What Is My User Agent Online Free - No Signup | SopKit",
+	description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/what-is-my-user-agent",
 	},
 	openGraph: {
-		title: "Free What Is My User Agent Online - No Signup | SopKit",
-		description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "What Is My User Agent Online Free - No Signup",
+		description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
 		url: "https://sopkit.github.io/what-is-my-user-agent",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free What Is My User Agent Online - No Signup | SopKit",
-		description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "What Is My User Agent Online Free - Fast & Secure",
+		description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Free PNG to ICO Converter Online - No Signup | SopKit",
-	description: "Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first...",
-	keywords: "png to ico converter, free online tool, no signup, png-to-ico-converter, free png-to-ico-converter, Png To Ico Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "PNG to ICO Converter Online Free - Compress & Convert Images | SopKit",
+	description: "Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first browser-based conversion. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/png-to-ico-converter",
 	},
 	openGraph: {
-		title: "Free PNG to ICO Converter Online - No Signup | SopKit",
-		description: "Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first...",
+		title: "PNG to ICO Converter Online Free - No Signup",
+		description: "Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first browser-bas",
 		url: "https://sopkit.github.io/png-to-ico-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PNG to ICO Converter Online - No Signup | SopKit",
-		description: "Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first...",
+		title: "PNG to ICO Converter Online Free - Fast & Secure",
+		description: "Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first browser-bas",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<ImageConverterTool />
+			<ImageConverterTool defaultOutputFormat="png" />
 		</ToolLayout>
 	);
 }

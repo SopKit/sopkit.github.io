@@ -69,10 +69,10 @@ export function AppleNavbar() {
 	}, [router]);
 
 	const categories = [
-		{ name: "Image", href: `${STATIC_ROUTES.SEARCH}?category=image` },
-		{ name: "PDF", href: `${STATIC_ROUTES.SEARCH}?category=pdf` },
-		{ name: "Video", href: `${STATIC_ROUTES.SEARCH}?category=video` },
-		{ name: "Developer", href: `${STATIC_ROUTES.SEARCH}?category=developer` },
+		{ name: "Image", href: "/image-tools/" },
+		{ name: "PDF", href: "/pdf-tools/" },
+		{ name: "Video", href: "/video-tools/" },
+		{ name: "Developer", href: "/developer-tools/" },
 	];
 
 	return (

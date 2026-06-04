@@ -279,7 +279,6 @@
           "route": "/bio-generator",
           "extraSlugs": [
             "aesthetic-bio-generator",
-            "instagram-bio-generator",
             "stylish-bio-generator",
             "tiktok-bio-generator",
             "free-social-media-bio-maker",
@@ -593,6 +592,510 @@
             "bio-data-maker-instant-online",
             "bio-data-maker-privacy-focused"
           ]
+        },
+        {
+          "id": "instagram-bio-generator",
+          "name": "Instagram Bio Generator",
+          "description": "Generate optimized instagram bio generator details. Instantly copy or share customized outputs.",
+          "route": "/instagram-bio-generator",
+          "popular": true,
+          "category": "generators",
+          "features": [
+            "Instant online instagram bio generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Instagram Bio Generator free to use?",
+              "answer": "Yes, SopKit's Instagram Bio Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Instagram Bio Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Instagram Bio Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Instagram Bio Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "instagram-caption-generator",
+          "name": "Instagram Caption Generator",
+          "description": "Generate optimized instagram caption generator details. Instantly copy or share customized outputs.",
+          "route": "/instagram-caption-generator",
+          "popular": false,
+          "category": "generators",
+          "features": [
+            "Instant online instagram caption generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Instagram Caption Generator free to use?",
+              "answer": "Yes, SopKit's Instagram Caption Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Instagram Caption Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Instagram Caption Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Instagram Caption Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "hashtag-generator",
+          "name": "Hashtag Generator",
+          "description": "Generate optimized hashtag generator details. Instantly copy or share customized outputs.",
+          "route": "/hashtag-generator",
+          "popular": false,
+          "category": "generators",
+          "features": [
+            "Instant online hashtag generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Hashtag Generator free to use?",
+              "answer": "Yes, SopKit's Hashtag Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Hashtag Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Hashtag Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Hashtag Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "slogan-generator",
+          "name": "Slogan Generator",
+          "description": "Generate optimized slogan generator details. Instantly copy or share customized outputs.",
+          "route": "/slogan-generator",
+          "popular": false,
+          "category": "generators",
+          "features": [
+            "Instant online slogan generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Slogan Generator free to use?",
+              "answer": "Yes, SopKit's Slogan Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Slogan Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Slogan Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Slogan Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "logo-idea-generator",
+          "name": "Logo Idea Generator",
+          "description": "Generate optimized logo idea generator details. Instantly copy or share customized outputs.",
+          "route": "/logo-idea-generator",
+          "popular": false,
+          "category": "generators",
+          "features": [
+            "Instant online logo idea generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Logo Idea Generator free to use?",
+              "answer": "Yes, SopKit's Logo Idea Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Logo Idea Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Logo Idea Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Logo Idea Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "google-business-profile-description-generator",
+          "name": "GBP Description Generator",
+          "description": "Generate optimized gbp description generator details. Instantly copy or share customized outputs.",
+          "route": "/google-business-profile-description-generator",
+          "popular": true,
+          "category": "generators",
+          "features": [
+            "Instant online gbp description generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the GBP Description Generator free to use?",
+              "answer": "Yes, SopKit's GBP Description Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does GBP Description Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use GBP Description Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the GBP Description Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "review-reply-generator",
+          "name": "Review Reply Generator",
+          "description": "Generate optimized review reply generator details. Instantly copy or share customized outputs.",
+          "route": "/review-reply-generator",
+          "popular": true,
+          "category": "generators",
+          "features": [
+            "Instant online review reply generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Review Reply Generator free to use?",
+              "answer": "Yes, SopKit's Review Reply Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Review Reply Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Review Reply Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Review Reply Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "restaurant-menu-description-generator",
+          "name": "Menu Description Generator",
+          "description": "Generate optimized menu description generator details. Instantly copy or share customized outputs.",
+          "route": "/restaurant-menu-description-generator",
+          "popular": false,
+          "category": "generators",
+          "features": [
+            "Instant online menu description generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Menu Description Generator free to use?",
+              "answer": "Yes, SopKit's Menu Description Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Menu Description Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Menu Description Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Menu Description Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "client-proposal-generator",
+          "name": "Client Proposal Generator",
+          "description": "Generate optimized client proposal generator details. Instantly copy or share customized outputs.",
+          "route": "/client-proposal-generator",
+          "popular": true,
+          "category": "generators",
+          "features": [
+            "Instant online client proposal generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Client Proposal Generator free to use?",
+              "answer": "Yes, SopKit's Client Proposal Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Client Proposal Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Client Proposal Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Client Proposal Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "payment-reminder-generator",
+          "name": "Payment Reminder Generator",
+          "description": "Generate optimized payment reminder generator details. Instantly copy or share customized outputs.",
+          "route": "/payment-reminder-generator",
+          "popular": false,
+          "category": "generators",
+          "features": [
+            "Instant online payment reminder generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Payment Reminder Generator free to use?",
+              "answer": "Yes, SopKit's Payment Reminder Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Payment Reminder Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Payment Reminder Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Payment Reminder Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "product-description-generator",
+          "name": "Product Description Generator",
+          "description": "Generate optimized product description generator details. Instantly copy or share customized outputs.",
+          "route": "/product-description-generator",
+          "popular": true,
+          "category": "generators",
+          "features": [
+            "Instant online product description generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Product Description Generator free to use?",
+              "answer": "Yes, SopKit's Product Description Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Product Description Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Product Description Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Product Description Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "refund-policy-generator",
+          "name": "Refund Policy Generator",
+          "description": "Generate optimized refund policy generator details. Instantly copy or share customized outputs.",
+          "route": "/refund-policy-generator",
+          "popular": false,
+          "category": "generators",
+          "features": [
+            "Instant online refund policy generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Refund Policy Generator free to use?",
+              "answer": "Yes, SopKit's Refund Policy Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Refund Policy Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Refund Policy Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Refund Policy Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
         }
       ]
     },
@@ -602,6 +1105,38 @@
       "icon": "ImageIcon",
       "description": "Compress, convert, resize, and edit images online",
       "tools": [
+        {
+          "id": "compress-image-to-exact-kb",
+          "name": "Compress Image to Exact KB",
+          "description": "Compress JPG, PNG, or WebP images to exact KB sizes like 10KB, 20KB, 50KB, 100KB, and 200KB online for free.",
+          "route": "/compress-image-to-exact-kb",
+          "popular": true,
+          "category": "image"
+        },
+        {
+          "id": "resize-image-cm-mm-inch",
+          "name": "Resize Image in CM, MM, Inches",
+          "description": "Resize photos by centimeters, millimeters, inches, pixels, and DPI for official forms, printing, and documents.",
+          "route": "/resize-image-cm-mm-inch",
+          "popular": false,
+          "category": "image"
+        },
+        {
+          "id": "passport-photo-maker-india",
+          "name": "Passport Photo Maker India",
+          "description": "Create passport-size photos for Indian forms with crop, background, size, and print layout options online for free.",
+          "route": "/passport-photo-maker-india",
+          "popular": true,
+          "category": "image"
+        },
+        {
+          "id": "aadhaar-pan-photo-resizer",
+          "name": "Aadhaar and PAN Card Photo Resizer",
+          "description": "Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online document forms.",
+          "route": "/aadhaar-pan-photo-resizer",
+          "popular": false,
+          "category": "image"
+        },
         {
           "id": "background-remover",
           "name": "Background Remover",
@@ -1800,6 +2335,96 @@
       "description": "Format, convert, and manipulate text content",
       "tools": [
         {
+          "id": "resume-ats-score-checker",
+          "name": "Resume ATS Score Checker",
+          "description": "Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professionals.",
+          "route": "/resume-ats-score-checker",
+          "popular": true,
+          "category": "text",
+          "features": [
+            "Calculate overall ATS compatibility score",
+            "Identify missing keywords from job description",
+            "Check for formatting and section issues",
+            "Get improvement suggestions for impact",
+            "100% private - processed in your browser",
+            "No signup or credit card required"
+          ],
+          "faqs": [
+            {
+              "question": "What is a good ATS score?",
+              "answer": "A score above 75-80% is generally considered strong for most Applicant Tracking Systems. However, the higher the score, the better your chances of getting shortlisted."
+            },
+            {
+              "question": "Can ATS read PDF resumes?",
+              "answer": "Yes, modern ATS can read standard PDF resumes. However, simple text-based PDFs work best. Avoid complex layouts, tables, and images inside the PDF."
+            },
+            {
+              "question": "Should I use tables in my resume?",
+              "answer": "No, it's safer to avoid tables as some ATS might struggle to parse the content correctly, potentially leading to jumbled data."
+            },
+            {
+              "question": "How do I match my resume to a job description?",
+              "answer": "Use our tool to paste both your resume and the job description. We'll highlight the key skills and keywords you're missing so you can add them naturally."
+            }
+          ]
+        },
+        {
+          "id": "resume-keyword-matcher",
+          "name": "Resume Keyword Matcher",
+          "description": "Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS.",
+          "route": "/resume-keyword-matcher",
+          "popular": false,
+          "category": "text",
+          "features": [
+             "Extract keywords from job descriptions",
+             "Highlight missing skills in your resume",
+             "Optimize your resume for specific job roles",
+             "Improve job-fit percentage"
+          ]
+        },
+        {
+          "id": "cover-letter-generator",
+          "name": "Cover Letter Generator",
+          "description": "Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit.",
+          "route": "/cover-letter-generator",
+          "popular": true,
+          "category": "text",
+          "features": [
+            "Quickly generate tailored cover letters",
+            "Options for internships and fresher roles",
+            "Edit and copy the result instantly",
+            "Clean and professional tone"
+          ]
+        },
+        {
+          "id": "linkedin-headline-generator",
+          "name": "LinkedIn Headline Generator",
+          "description": "Create professional LinkedIn headlines that stand out. Generate multiple variations for developers, students, freelancers, and marketers.",
+          "route": "/linkedin-headline-generator",
+          "popular": false,
+          "category": "text",
+          "features": [
+            "Generate catchy and professional headlines",
+            "Optimized for LinkedIn search algorithms",
+            "Multiple variations to choose from",
+            "Keyword-rich suggestions"
+          ]
+        },
+        {
+          "id": "internship-message-generator",
+          "name": "Internship Application Message Generator",
+          "description": "Generate short, human internship messages for LinkedIn, email, and founder outreach. Perfect for students and freshers.",
+          "route": "/internship-message-generator",
+          "popular": false,
+          "category": "text",
+          "features": [
+            "Personalized outreach messages",
+            "Short and natural-sounding templates",
+            "Easy to copy and send",
+            "Specifically designed for internships"
+          ]
+        },
+        {
           "id": "article-rewriter",
           "name": "Article Rewriter",
           "description": "Paraphrase and rewrite articles instantly with our free online Article Rewriter. Improve readability, change tone, and create unique content variations for blogs and SEO. 100% free and secure.",
@@ -2308,6 +2933,38 @@
       "description": "Merge, split, compress, and manipulate PDF documents",
       "tools": [
         {
+          "id": "compress-pdf-to-exact-kb",
+          "name": "Compress PDF to Exact KB",
+          "description": "Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online.",
+          "route": "/compress-pdf-to-exact-kb",
+          "popular": true,
+          "category": "pdf"
+        },
+        {
+          "id": "remove-pages-from-pdf",
+          "name": "Remove Pages from PDF",
+          "description": "Delete unwanted pages from a PDF file online. Select pages, remove them, and download a clean PDF for free.",
+          "route": "/remove-pages-from-pdf",
+          "popular": false,
+          "category": "pdf"
+        },
+        {
+          "id": "pdf-to-jpg-converter",
+          "name": "PDF to JPG Converter",
+          "description": "Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file.",
+          "route": "/pdf-to-jpg-converter",
+          "popular": true,
+          "category": "pdf"
+        },
+        {
+          "id": "merge-pdf-online",
+          "name": "Merge PDF Online",
+          "description": "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly.",
+          "route": "/merge-pdf-online",
+          "popular": true,
+          "category": "pdf"
+        },
+        {
           "id": "image-to-pdf",
           "name": "Image to PDF",
           "description": "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required.",
@@ -2797,31 +3454,6 @@
           "category": "youtube"
         },
         {
-          "id": "youtube-description-generator",
-          "name": "YouTube Description Generator",
-          "description": "Create SEO-optimized YouTube video descriptions instantly. Our free online generator helps you include keywords, links, and timestamps to boost your video visibility and engagement.",
-          "route": "/youtube-description-generator",
-          "extraSlugs": [
-            "free-youtube-description-generator-online",
-            "youtube-description-generator-tool",
-            "youtube-seo-description-maker",
-            "youtube-description-generator-online-free",
-            "free-youtube-description-generator-no-signup",
-            "youtube-description-generator-tool-online",
-            "best-free-youtube-description-generator",
-            "youtube-description-generator-without-registration",
-            "online-youtube-description-generator-free",
-            "youtube-description-generator-browser-based",
-            "youtube-description-generator-no-download",
-            "youtube-description-generator-instant-online",
-            "youtube-description-generator-privacy-focused",
-            "youtube-description-generator-web-based",
-            "youtube-description-generator-no-install"
-          ],
-          "popular": false,
-          "category": "youtube"
-        },
-        {
           "id": "youtube-embed-code-generator",
           "name": "YouTube Embed Code Generator",
           "description": "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and privacy settings for your website.",
@@ -3072,31 +3704,6 @@
           "category": "youtube"
         },
         {
-          "id": "youtube-title-generator",
-          "name": "YouTube Title Generator",
-          "description": "Generate catchy and SEO-friendly titles for your YouTube videos instantly. Our free online tool suggests high-CTR titles based on your topic and keywords to help you get more views.",
-          "route": "/youtube-title-generator",
-          "extraSlugs": [
-            "free-youtube-title-generator-online",
-            "youtube-title-generator-tool",
-            "viral-youtube-title-maker",
-            "youtube-title-generator-online-free",
-            "free-youtube-title-generator-no-signup",
-            "youtube-title-generator-tool-online",
-            "best-free-youtube-title-generator",
-            "youtube-title-generator-without-registration",
-            "online-youtube-title-generator-free",
-            "youtube-title-generator-browser-based",
-            "youtube-title-generator-no-download",
-            "youtube-title-generator-instant-online",
-            "youtube-title-generator-privacy-focused",
-            "youtube-title-generator-web-based",
-            "youtube-title-generator-no-install"
-          ],
-          "popular": false,
-          "category": "youtube"
-        },
-        {
           "id": "youtube-title-length-checker",
           "name": "YouTube Title Length Checker",
           "description": "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is visible in search results.",
@@ -3220,6 +3827,132 @@
           ],
           "popular": false,
           "category": "youtube"
+        },
+        {
+          "id": "youtube-title-generator",
+          "name": "YouTube Title Generator",
+          "description": "Generate optimized youtube title generator details. Instantly copy or share customized outputs.",
+          "route": "/youtube-title-generator",
+          "popular": false,
+          "category": "youtube",
+          "features": [
+            "Instant online youtube title generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the YouTube Title Generator free to use?",
+              "answer": "Yes, SopKit's YouTube Title Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does YouTube Title Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use YouTube Title Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the YouTube Title Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "youtube-description-generator",
+          "name": "YouTube Description Generator",
+          "description": "Generate optimized youtube description generator details. Instantly copy or share customized outputs.",
+          "route": "/youtube-description-generator",
+          "popular": false,
+          "category": "youtube",
+          "features": [
+            "Instant online youtube description generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the YouTube Description Generator free to use?",
+              "answer": "Yes, SopKit's YouTube Description Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does YouTube Description Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use YouTube Description Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the YouTube Description Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "youtube-thumbnail-text-generator",
+          "name": "YouTube Thumbnail Text Generator",
+          "description": "Generate optimized youtube thumbnail text generator details. Instantly copy or share customized outputs.",
+          "route": "/youtube-thumbnail-text-generator",
+          "popular": false,
+          "category": "youtube",
+          "features": [
+            "Instant online youtube thumbnail text generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the YouTube Thumbnail Text Generator free to use?",
+              "answer": "Yes, SopKit's YouTube Thumbnail Text Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does YouTube Thumbnail Text Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use YouTube Thumbnail Text Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the YouTube Thumbnail Text Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
         }
       ]
     },
@@ -7407,31 +8140,6 @@
           "category": "utilities"
         },
         {
-          "id": "terms-and-condition-generator",
-          "name": "Terms And Condition Generator",
-          "description": "Free terms and condition generator tool to process your data instantly with privacy-friendly browser-based workflows.",
-          "route": "/terms-and-condition-generator",
-          "extraSlugs": [
-            "free-terms-and-condition-generator-online",
-            "terms-and-condition-generator-tool",
-            "terms-and-condition-generator-online-free",
-            "free-terms-and-condition-generator-no-signup",
-            "terms-and-condition-generator-tool-online",
-            "best-free-terms-and-condition-generator",
-            "terms-and-condition-generator-without-registration",
-            "online-terms-and-condition-generator-free",
-            "terms-and-condition-generator-browser-based",
-            "terms-and-condition-generator-no-download",
-            "terms-and-condition-generator-instant-online",
-            "terms-and-condition-generator-privacy-focused",
-            "terms-and-condition-generator-web-based",
-            "terms-and-condition-generator-no-install",
-            "free-online-terms-and-condition-generator"
-          ],
-          "popular": false,
-          "category": "utilities"
-        },
-        {
           "id": "time-converter",
           "name": "Time Converter",
           "description": "Free time converter tool to process your data instantly with privacy-friendly browser-based workflows.",
@@ -7954,6 +8662,131 @@
             "text-tools-secure-online",
             "text-tools-fast-processing"
           ]
+        },
+        {
+          "id": "whatsapp-link-generator",
+          "name": "WhatsApp Link Generator",
+          "description": "Generate optimized whatsapp link generator details. Instantly copy or share customized outputs.",
+          "route": "/whatsapp-link-generator",
+          "popular": true,
+          "category": "utilities",
+          "features": [
+            "Instant online whatsapp link generator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the WhatsApp Link Generator free to use?",
+              "answer": "Yes, SopKit's WhatsApp Link Generator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does WhatsApp Link Generator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use WhatsApp Link Generator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the WhatsApp Link Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "qr-code-generator-business",
+          "name": "QR Code Generator for Business",
+          "description": "Generate optimized qr code generator for business details. Instantly copy or share customized outputs.",
+          "route": "/qr-code-generator-business",
+          "popular": true,
+          "category": "utilities",
+          "features": [
+            "Instant online qr code generator for business output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the QR Code Generator for Business free to use?",
+              "answer": "Yes, SopKit's QR Code Generator for Business is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does QR Code Generator for Business store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use QR Code Generator for Business",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the QR Code Generator for Business?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "terms-and-conditions-generator",
+          "name": "Terms and Conditions Generator",
+          "description": "Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability.",
+          "route": "/terms-and-conditions-generator",
+          "popular": true,
+          "category": "utilities",
+          "extraSlugs": [
+            "terms-and-condition-generator"
+          ],
+          "features": [
+            "Generates terms covering usage license, disclaimer, and governing law",
+            "Inputs for site name, URL, and contact email",
+            "One-click copy to clipboard",
+            "100% browser-based processing"
+          ],
+          "faqs": [
+            {
+              "question": "Is a Terms and Conditions page legally required?",
+              "answer": "While not universally required by privacy laws like a Privacy Policy, having Terms and Conditions is crucial for limiting liability, setting usage rules, and protecting your IP."
+            }
+          ],
+          "howTo": {
+            "name": "How to generate Terms and Conditions",
+            "steps": [
+              {
+                "name": "Enter website URL",
+                "text": "Type your site address."
+              },
+              {
+                "name": "Enter contact details",
+                "text": "Provide support email."
+              },
+              {
+                "name": "Copy",
+                "text": "Generate the policy, review it, and copy it to your website."
+              }
+            ]
+          },
+          "article": "\\n## Limit Your Legal Liability\\n\\nA Terms and Conditions page sets the contract between your site and visitors. It defines rules for user behavior, terms for online shop purchases, and intellectual property limits."
         }
       ]
     },
@@ -9053,6 +9886,45 @@
       "description": "Calculate academic grades, attendance shortage, and construction materials with ease.",
       "tools": [
         {
+          "id": "cgpa-to-percentage-calculator-india",
+          "name": "CGPA to Percentage Calculator for Indian Universities",
+          "description": "Convert your CGPA into percentage using common Indian university formulas like CBSE 9.5x, VTU, Mumbai University, DU, AKTU, and Anna University.",
+          "route": "/cgpa-to-percentage-calculator-india",
+          "popular": true,
+          "category": "calculators",
+          "features": [
+            "CBSE 9.5x formula support",
+            "VTU, Mumbai University, DU formulas",
+            "Custom multiplier option",
+            "Instant conversion with zero errors",
+            "Useful for job and government forms"
+          ]
+        },
+        {
+          "id": "sgpa-to-cgpa-calculator",
+          "name": "SGPA to CGPA Calculator",
+          "description": "Calculate your cumulative GPA (CGPA) from semester-wise SGPA values. Supports credit-weighted and simple average methods.",
+          "route": "/sgpa-to-cgpa-calculator",
+          "popular": false,
+          "category": "calculators"
+        },
+        {
+          "id": "attendance-shortage-calculator",
+          "name": "Attendance Shortage Calculator",
+          "description": "Calculate how many classes you need to attend to reach 75% attendance or how many classes you can safely miss.",
+          "route": "/attendance-shortage-calculator",
+          "popular": true,
+          "category": "calculators"
+        },
+        {
+          "id": "marks-needed-calculator",
+          "name": "Exam Marks Needed Calculator",
+          "description": "Find out exactly how many marks you need in your final exam to pass or reach your target grade based on internal scores.",
+          "route": "/marks-needed-calculator",
+          "popular": false,
+          "category": "calculators"
+        },
+        {
           "id": "75-attendance-calculator",
           "name": "75% Attendance Calculator",
           "description": "Calculate how many classes you need to attend or can safely skip to maintain a minimum 75% attendance rate.",
@@ -9331,6 +10203,426 @@
           "route": "/break-even-calculator",
           "popular": false,
           "category": "calculators"
+        },
+        {
+          "id": "food-cost-calculator",
+          "name": "Food Cost Calculator",
+          "description": "Calculate your food cost calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "route": "/food-cost-calculator",
+          "popular": false,
+          "category": "calculators",
+          "features": [
+            "Instant online food cost calculator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Food Cost Calculator free to use?",
+              "answer": "Yes, SopKit's Food Cost Calculator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Food Cost Calculator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Food Cost Calculator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Food Cost Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "freelance-rate-calculator",
+          "name": "Freelance Rate Calculator",
+          "description": "Calculate your freelance rate calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "route": "/freelance-rate-calculator",
+          "popular": true,
+          "category": "calculators",
+          "features": [
+            "Instant online freelance rate calculator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Freelance Rate Calculator free to use?",
+              "answer": "Yes, SopKit's Freelance Rate Calculator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Freelance Rate Calculator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Freelance Rate Calculator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Freelance Rate Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "rent-affordability-calculator",
+          "name": "Rent Affordability Calculator",
+          "description": "Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "route": "/rent-affordability-calculator",
+          "popular": false,
+          "category": "calculators",
+          "features": [
+            "Instant online rent affordability calculator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Rent Affordability Calculator free to use?",
+              "answer": "Yes, SopKit's Rent Affordability Calculator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Rent Affordability Calculator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Rent Affordability Calculator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Rent Affordability Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "home-loan-eligibility-calculator",
+          "name": "Home Loan Eligibility Calculator",
+          "description": "Calculate your home loan eligibility calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "route": "/home-loan-eligibility-calculator",
+          "popular": false,
+          "category": "calculators",
+          "features": [
+            "Instant online home loan eligibility calculator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Home Loan Eligibility Calculator free to use?",
+              "answer": "Yes, SopKit's Home Loan Eligibility Calculator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Home Loan Eligibility Calculator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Home Loan Eligibility Calculator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Home Loan Eligibility Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "property-roi-calculator",
+          "name": "Property ROI Calculator",
+          "description": "Calculate your property roi calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "route": "/property-roi-calculator",
+          "popular": false,
+          "category": "calculators",
+          "features": [
+            "Instant online property roi calculator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Property ROI Calculator free to use?",
+              "answer": "Yes, SopKit's Property ROI Calculator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Property ROI Calculator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Property ROI Calculator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Property ROI Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "calorie-deficit-calculator",
+          "name": "Calorie Deficit Calculator",
+          "description": "Calculate your calorie deficit calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "route": "/calorie-deficit-calculator",
+          "popular": false,
+          "category": "calculators",
+          "features": [
+            "Instant online calorie deficit calculator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Calorie Deficit Calculator free to use?",
+              "answer": "Yes, SopKit's Calorie Deficit Calculator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Calorie Deficit Calculator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Calorie Deficit Calculator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Calorie Deficit Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "protein-intake-calculator",
+          "name": "Protein Intake Calculator",
+          "description": "Calculate your protein intake calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "route": "/protein-intake-calculator",
+          "popular": false,
+          "category": "calculators",
+          "features": [
+            "Instant online protein intake calculator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Protein Intake Calculator free to use?",
+              "answer": "Yes, SopKit's Protein Intake Calculator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Protein Intake Calculator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Protein Intake Calculator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Protein Intake Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "bmi-ideal-weight-calculator",
+          "name": "BMI + Ideal Weight Calculator",
+          "description": "Calculate your bmi + ideal weight calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "route": "/bmi-ideal-weight-calculator",
+          "popular": false,
+          "category": "calculators",
+          "features": [
+            "Instant online bmi + ideal weight calculator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the BMI + Ideal Weight Calculator free to use?",
+              "answer": "Yes, SopKit's BMI + Ideal Weight Calculator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does BMI + Ideal Weight Calculator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use BMI + Ideal Weight Calculator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the BMI + Ideal Weight Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "water-intake-calculator",
+          "name": "Daily Water Intake Calculator",
+          "description": "Calculate your daily water intake calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "route": "/water-intake-calculator",
+          "popular": false,
+          "category": "calculators",
+          "features": [
+            "Instant online daily water intake calculator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Daily Water Intake Calculator free to use?",
+              "answer": "Yes, SopKit's Daily Water Intake Calculator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Daily Water Intake Calculator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Daily Water Intake Calculator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Daily Water Intake Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "profit-margin-calculator",
+          "name": "Profit Margin Calculator",
+          "description": "Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "route": "/profit-margin-calculator",
+          "popular": true,
+          "category": "calculators",
+          "features": [
+            "Instant online profit margin calculator output",
+            "100% browser-based calculations without sending data to servers",
+            "One-click copy to clipboard",
+            "Optimized design for all screen resolutions"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Profit Margin Calculator free to use?",
+              "answer": "Yes, SopKit's Profit Margin Calculator is completely free. No subscription or sign-up is required."
+            },
+            {
+              "question": "Does Profit Margin Calculator store my input details?",
+              "answer": "No, all inputs are processed locally in your browser. We do not store or transmit your private data."
+            }
+          ],
+          "howTo": {
+            "name": "How to use Profit Margin Calculator",
+            "steps": [
+              {
+                "name": "Fill details",
+                "text": "Enter the required parameters in the form input fields."
+              },
+              {
+                "name": "Run utility",
+                "text": "Click the action button to process the results."
+              },
+              {
+                "name": "Copy or Download",
+                "text": "Use the copy buttons to clipboard or download files as needed."
+              }
+            ]
+          },
+          "article": "\\n## What is the Profit Margin Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
         }
       ]
     },
@@ -9340,6 +10632,30 @@
       "icon": "FileImage",
       "description": "Resize and compress photos, signatures, and PDFs to fit exact official requirements for UPSC, SSC, NEET, JEE, and other major exams.",
       "tools": [
+        {
+          "id": "ssc-photo-signature-resizer",
+          "name": "SSC Photo and Signature Resizer",
+          "description": "Resize and compress SSC photo (20-50KB) and signature (10-20KB) online for government exam forms. 100% compliant with SSC requirements.",
+          "route": "/ssc-photo-signature-resizer",
+          "popular": true,
+          "category": "exam-tools"
+        },
+        {
+          "id": "upsc-photo-resizer-350x350",
+          "name": "UPSC Photo Resizer 350x350",
+          "description": "Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms.",
+          "route": "/upsc-photo-resizer-350x350",
+          "popular": true,
+          "category": "exam-tools"
+        },
+        {
+          "id": "neet-photo-signature-resizer",
+          "name": "NEET Photo & Signature Resizer",
+          "description": "Resize and compress NEET photo and signature for application forms. Adjust size, dimensions, format, and file limit online.",
+          "route": "/neet-photo-signature-resizer",
+          "popular": true,
+          "category": "exam-tools"
+        },
         {
           "id": "upsc-photo-resizer",
           "name": "UPSC Photo Resizer",

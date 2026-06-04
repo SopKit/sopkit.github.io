@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Free CPM Calculator Online - No Signup | SopKit",
-	description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and...",
-	keywords: "cpm calculator, free online tool, no signup, cpm-calculator, free cpm-calculator, Cpm Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "CPM Calculator Online Free - No Signup | SopKit",
+	description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach efficiency. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/cpm-calculator",
 	},
 	openGraph: {
-		title: "Free CPM Calculator Online - No Signup | SopKit",
-		description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and...",
+		title: "CPM Calculator Online Free - No Signup",
+		description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach e",
 		url: "https://sopkit.github.io/cpm-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free CPM Calculator Online - No Signup | SopKit",
-		description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and...",
+		title: "CPM Calculator Online Free - Fast & Secure",
+		description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach e",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

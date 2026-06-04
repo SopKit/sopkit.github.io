@@ -179,7 +179,60 @@ const YouTubeDownloader = dynamic(() => import("@/components/tools/downloaders/Y
 const YouTubeShortsDownloader = dynamic(() => import("@/components/tools/downloaders/YouTubeShortsDownloader"), { ssr: false });
 
 // Registry of tool ID to dynamic component and preset props
+
+const FoodCostCalculatorTool = dynamic(() => import("@/components/tools/calculators/FoodCostCalculatorTool"), { ssr: false });
+const FreelanceRateCalculatorTool = dynamic(() => import("@/components/tools/calculators/FreelanceRateCalculatorTool"), { ssr: false });
+const RentAffordabilityCalculatorTool = dynamic(() => import("@/components/tools/calculators/RentAffordabilityCalculatorTool"), { ssr: false });
+const HomeLoanEligibilityCalculatorTool = dynamic(() => import("@/components/tools/calculators/HomeLoanEligibilityCalculatorTool"), { ssr: false });
+const PropertyRoiCalculatorTool = dynamic(() => import("@/components/tools/calculators/PropertyRoiCalculatorTool"), { ssr: false });
+const CalorieDeficitCalculatorTool = dynamic(() => import("@/components/tools/calculators/CalorieDeficitCalculatorTool"), { ssr: false });
+const ProteinIntakeCalculatorTool = dynamic(() => import("@/components/tools/calculators/ProteinIntakeCalculatorTool"), { ssr: false });
+const BmiIdealWeightCalculatorTool = dynamic(() => import("@/components/tools/calculators/BmiIdealWeightCalculatorTool"), { ssr: false });
+const WaterIntakeCalculatorTool = dynamic(() => import("@/components/tools/calculators/WaterIntakeCalculatorTool"), { ssr: false });
+const ProfitMarginCalculatorTool = dynamic(() => import("@/components/tools/calculators/ProfitMarginCalculatorTool"), { ssr: false });
+const InstagramBioGeneratorTool = dynamic(() => import("@/components/tools/generators/InstagramBioGeneratorTool"), { ssr: false });
+const InstagramCaptionGeneratorTool = dynamic(() => import("@/components/tools/generators/InstagramCaptionGeneratorTool"), { ssr: false });
+const HashtagGeneratorTool = dynamic(() => import("@/components/tools/generators/HashtagGeneratorTool"), { ssr: false });
+const YoutubeTitleGeneratorTool = dynamic(() => import("@/components/tools/generators/YoutubeTitleGeneratorTool"), { ssr: false });
+const YoutubeDescriptionGeneratorTool = dynamic(() => import("@/components/tools/generators/YoutubeDescriptionGeneratorTool"), { ssr: false });
+const YoutubeThumbnailTextGeneratorTool = dynamic(() => import("@/components/tools/generators/YoutubeThumbnailTextGeneratorTool"), { ssr: false });
+const SloganGeneratorTool = dynamic(() => import("@/components/tools/generators/SloganGeneratorTool"), { ssr: false });
+const LogoIdeaGeneratorTool = dynamic(() => import("@/components/tools/generators/LogoIdeaGeneratorTool"), { ssr: false });
+const GoogleBusinessProfileDescriptionGeneratorTool = dynamic(() => import("@/components/tools/generators/GoogleBusinessProfileDescriptionGeneratorTool"), { ssr: false });
+const ReviewReplyGeneratorTool = dynamic(() => import("@/components/tools/generators/ReviewReplyGeneratorTool"), { ssr: false });
+const RestaurantMenuDescriptionGeneratorTool = dynamic(() => import("@/components/tools/generators/RestaurantMenuDescriptionGeneratorTool"), { ssr: false });
+const ClientProposalGeneratorTool = dynamic(() => import("@/components/tools/generators/ClientProposalGeneratorTool"), { ssr: false });
+const PaymentReminderGeneratorTool = dynamic(() => import("@/components/tools/generators/PaymentReminderGeneratorTool"), { ssr: false });
+const ProductDescriptionGeneratorTool = dynamic(() => import("@/components/tools/generators/ProductDescriptionGeneratorTool"), { ssr: false });
+const RefundPolicyGeneratorTool = dynamic(() => import("@/components/tools/generators/RefundPolicyGeneratorTool"), { ssr: false });
+const WhatsappLinkGeneratorTool = dynamic(() => import("@/components/tools/generators/WhatsAppLinkGeneratorTool"), { ssr: false });
+const QrCodeGeneratorBusinessTool = dynamic(() => import("@/components/tools/generators/QrCodeGeneratorBusinessTool"), { ssr: false });
+const TermsAndConditionsGeneratorTool = dynamic(() => import("@/components/tools/built-ins/LegalTemplateGenerator"), { ssr: false });
+const ResumeATSChecker = dynamic(() => import("@/components/tools/impl/ResumeATSChecker"), { ssr: false });
+const JobMessageGenerator = dynamic(() => import("@/components/tools/impl/JobMessageGenerator"), { ssr: false });
+
+const PDFMerger = dynamic(() => import("@/components/tools/pdf/PDFMerger"), { ssr: false });
+const PDFPageDelete = dynamic(() => import("@/components/tools/pdf/PDFPageDelete"), { ssr: false });
+const PDFCompressor = dynamic(() => import("@/components/tools/pdf/PDFCompressor"), { ssr: false });
+
+const FinanceCalculators = dynamic(() => import("@/components/tools/impl/FinanceCalculators"), { ssr: false });
+const SimpleInvoiceGenerator = dynamic(() => import("@/components/tools/money/SimpleInvoiceGenerator"), { ssr: false });
+
 export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentType<any>; props: any }> = {
+    "emi-calculator": { component: BuiltInCalculators, props: { kind: "loan-calculator" } },
+    "sip-calculator": { component: FinanceCalculators, props: { defaultTab: "sip" } },
+    "fd-calculator-india": { component: FinanceCalculators, props: { defaultTab: "fd" } },
+    "salary-calculator-india": { component: FinanceCalculators, props: { defaultTab: "salary" } },
+    "gst-calculator-india": { component: BuiltInCalculators, props: { kind: "gst-calculator" } },
+    "invoice-generator-india": { component: SimpleInvoiceGenerator, props: {} },
+    "compress-image-to-exact-kb": { component: ImageCompressorTool, props: {} },
+    "resize-image-cm-mm-inch": { component: ResizeImageCm, props: {} },
+    "passport-photo-maker-india": { component: PassportPhotoMaker, props: {} },
+    "aadhaar-pan-photo-resizer": { component: PanCardResizer, props: {} },
+    "compress-pdf-to-exact-kb": { component: PDFCompressor, props: {} },
+    "remove-pages-from-pdf": { component: PDFPageDelete, props: {} },
+    "pdf-to-jpg-converter": { component: PDFToImage, props: {} },
+    "merge-pdf-online": { component: PDFMerger, props: {} },
     "75-attendance-calculator": { component: AttendanceCalculator, props: {} },
     "adsense-calculator": { component: BuiltInCalculators, props: {"kind": "adsense-calculator"} },
     "age-calculator": { component: BuiltInCalculators, props: {"kind": "age-calculator"} },
@@ -544,7 +597,6 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "youtube-channel-statistics": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-comment-picker": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-description-extractor": { component: YouTubeDownloader, props: {} },
-    "youtube-description-generator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-downloader": { component: YouTubeDownloader, props: {} },
     "youtube-hashtag-extractor": { component: YouTubeDownloader, props: {} },
     "youtube-hashtag-generator": { component: YouTubeChannelIDFinderTool, props: {} },
@@ -557,12 +609,52 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "youtube-thumbnail-downloader": { component: YouTubeDownloader, props: {} },
     "youtube-timestamp-link-generator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-title-extractor": { component: YouTubeDownloader, props: {} },
-    "youtube-title-generator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-title-length-checker": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-video-count-checker": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-video-downloader": { component: YouTubeDownloader, props: {} },
     "youtube-video-statistics": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-views-ratio-calculator": { component: YouTubeChannelIDFinderTool, props: {} },
+
+    "food-cost-calculator": { component: FoodCostCalculatorTool, props: {} },
+    "freelance-rate-calculator": { component: FreelanceRateCalculatorTool, props: {} },
+    "rent-affordability-calculator": { component: RentAffordabilityCalculatorTool, props: {} },
+    "home-loan-eligibility-calculator": { component: HomeLoanEligibilityCalculatorTool, props: {} },
+    "property-roi-calculator": { component: PropertyRoiCalculatorTool, props: {} },
+    "calorie-deficit-calculator": { component: CalorieDeficitCalculatorTool, props: {} },
+    "protein-intake-calculator": { component: ProteinIntakeCalculatorTool, props: {} },
+    "bmi-ideal-weight-calculator": { component: BmiIdealWeightCalculatorTool, props: {} },
+    "water-intake-calculator": { component: WaterIntakeCalculatorTool, props: {} },
+    "profit-margin-calculator": { component: ProfitMarginCalculatorTool, props: {} },
+    "instagram-bio-generator": { component: InstagramBioGeneratorTool, props: {} },
+    "instagram-caption-generator": { component: InstagramCaptionGeneratorTool, props: {} },
+    "hashtag-generator": { component: HashtagGeneratorTool, props: {} },
+    "youtube-title-generator": { component: YoutubeTitleGeneratorTool, props: {} },
+    "youtube-description-generator": { component: YoutubeDescriptionGeneratorTool, props: {} },
+    "youtube-thumbnail-text-generator": { component: YoutubeThumbnailTextGeneratorTool, props: {} },
+    "slogan-generator": { component: SloganGeneratorTool, props: {} },
+    "logo-idea-generator": { component: LogoIdeaGeneratorTool, props: {} },
+    "google-business-profile-description-generator": { component: GoogleBusinessProfileDescriptionGeneratorTool, props: {} },
+    "review-reply-generator": { component: ReviewReplyGeneratorTool, props: {} },
+    "restaurant-menu-description-generator": { component: RestaurantMenuDescriptionGeneratorTool, props: {} },
+    "client-proposal-generator": { component: ClientProposalGeneratorTool, props: {} },
+    "payment-reminder-generator": { component: PaymentReminderGeneratorTool, props: {} },
+    "product-description-generator": { component: ProductDescriptionGeneratorTool, props: {} },
+    "refund-policy-generator": { component: RefundPolicyGeneratorTool, props: {} },
+    "whatsapp-link-generator": { component: WhatsappLinkGeneratorTool, props: {} },
+    "attendance-shortage-calculator": { component: AttendanceCalculator, props: {} },
+    "cgpa-to-percentage-calculator-india": { component: AcademicGradesCalculator, props: { defaultTab: "cgpa-pct" } },
+    "sgpa-to-cgpa-calculator": { component: AcademicGradesCalculator, props: { defaultTab: "cgpa" } },
+    "marks-needed-calculator": { component: AcademicGradesCalculator, props: { defaultTab: "req-marks" } },
+    "ssc-photo-signature-resizer": { component: ExamPhotoResizer, props: { examName: "SSC" } },
+    "upsc-photo-resizer-350x350": { component: ExamPhotoResizer, props: { examName: "UPSC" } },
+    "neet-photo-signature-resizer": { component: ExamPhotoResizer, props: { examName: "NEET" } },
+    "qr-code-generator-business": { component: QrCodeGeneratorBusinessTool, props: {} },
+    "resume-ats-score-checker": { component: ResumeATSChecker, props: {} },
+    "resume-keyword-matcher": { component: ResumeATSChecker, props: {} },
+    "cover-letter-generator": { component: JobMessageGenerator, props: { defaultTab: "cover-letter" } },
+    "linkedin-headline-generator": { component: JobMessageGenerator, props: { defaultTab: "linkedin-headline" } },
+    "internship-message-generator": { component: JobMessageGenerator, props: { defaultTab: "internship-message" } },
+    "terms-and-conditions-generator": { component: TermsAndConditionsGeneratorTool, props: { kind: "terms" } },
 };
 
 interface IntentToolDispatcherProps {

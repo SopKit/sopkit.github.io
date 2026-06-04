@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UrlCodecTool from "@/components/tools/built-ins/UrlCodecTool";
 import { getToolByRoute } from "@/lib/tools";
+import UrlCodecTool from "@/components/tools/built-ins/UrlCodecTool";
 
 export const metadata = {
-	title: "Free URL Encode Online - No Signup | SopKit",
-	description: "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "url encode, free online tool, no signup, url-encode, free url-encode, Url Encode online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "URL Encode Online Free - No Signup | SopKit",
+	description: "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/url-encode",
 	},
 	openGraph: {
-		title: "Free URL Encode Online - No Signup | SopKit",
-		description: "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "URL Encode Online Free - No Signup",
+		description: "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/url-encode",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free URL Encode Online - No Signup | SopKit",
-		description: "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "URL Encode Online Free - Fast & Secure",
+		description: "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<UrlCodecTool mode="enc" />
+			<UrlCodecTool mode="encode" />
 		</ToolLayout>
 	);
 }

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 import { getToolByRoute } from "@/lib/tools";
+import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "Free YouTube Embed Code Generator Online - No Signup | SopKit",
-	description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls...",
-	keywords: "youtube embed code generator, free online tool, no signup, youtube-embed-code-generator, free youtube-embed-code-generator, Youtube Embed Code Generator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
+	title: "YouTube Embed Code Generator Online Free - No Signup | SopKit",
+	description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and privacy settings for your website. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/youtube-embed-code-generator",
 	},
 	openGraph: {
-		title: "Free YouTube Embed Code Generator Online - No Signup | SopKit",
-		description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls...",
+		title: "YouTube Embed Code Generator Online Free - No Signup",
+		description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and pr",
 		url: "https://sopkit.github.io/youtube-embed-code-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Embed Code Generator Online - No Signup | SopKit",
-		description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls...",
+		title: "YouTube Embed Code Generator Online Free - Fast & Secure",
+		description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and pr",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

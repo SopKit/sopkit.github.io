@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import RomanNumeralTool from "@/components/tools/built-ins/RomanNumeralTool";
 import { getToolByRoute } from "@/lib/tools";
+import RomanNumeralTool from "@/components/tools/built-ins/RomanNumeralTool";
 
 export const metadata = {
-	title: "Free Roman Numerals to Number Online - No Signup | SopKit",
-	description: "Free roman numerals to number tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "roman numerals to number, free online tool, no signup, roman-numerals-to-number, free roman-numerals-to-number, Roman Numerals To Number online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Roman Numerals to Number Online Free - No Signup | SopKit",
+	description: "Free roman numerals to number tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/roman-numerals-to-number",
 	},
 	openGraph: {
-		title: "Free Roman Numerals to Number Online - No Signup | SopKit",
-		description: "Free roman numerals to number tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Roman Numerals to Number Online Free - No Signup",
+		description: "Free roman numerals to number tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
 		url: "https://sopkit.github.io/roman-numerals-to-number",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Roman Numerals to Number Online - No Signup | SopKit",
-		description: "Free roman numerals to number tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Roman Numerals to Number Online Free - Fast & Secure",
+		description: "Free roman numerals to number tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

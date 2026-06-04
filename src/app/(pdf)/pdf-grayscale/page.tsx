@@ -1,16 +1,17 @@
+import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import PDFGrayscale from "@/components/tools/pdf/PDFGrayscale";
+import { getToolByRoute } from "@/lib/tools";
+import PDFGrayscale from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free PDF Grayscale Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free PDF Grayscale online. Safe and private browser-based tool with no registration. Try it free now.",
-	keywords: "pdf to grayscale, convert pdf to black and white, color to grayscale pdf, free pdf tool, SopKit, pdf-grayscale, pdf grayscale, free pdf-grayscale, pdf grayscale online, pdf utility, document editor, online pdf tool",
+	title: "PDF Grayscale Online Free - Edit, Merge & Convert PDF | SopKit",
+	description: "Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/pdf-grayscale",
 	},
 	openGraph: {
-		title: "Free PDF Grayscale Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Grayscale online. Safe and private browser-based tool with no registration. Try it free now.",
+		title: "PDF Grayscale Online Free - No Signup",
+		description: "Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signu",
 		url: "https://sopkit.github.io/pdf-grayscale",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -18,42 +19,23 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PDF Grayscale Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Grayscale online. Safe and private browser-based tool with no registration. Try it free now.",
+		title: "PDF Grayscale Online Free - Fast & Secure",
+		description: "Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signu",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
-	const tool = {
-		id: "pdf-grayscale",
-		name: "PDF Grayscale",
-		description: "Convert color PDF documents to grayscale online for free. Optimize your PDF for B&W printing and reduce file size instantly in your browser.",
-		route: "/pdf-grayscale",
-		category: "pdf",
-	};
+	const tool = getToolByRoute("/pdf-grayscale");
+
+	if (!tool) {
+		return notFound();
+	}
 
 	return (
-		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "SoftwareApplication",
-						name: tool.name,
-						description: tool.description,
-						url: "https://sopkit.github.io/pdf-grayscale",
-						applicationCategory: "UtilitiesApplication",
-						operatingSystem: "Any",
-						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-					}),
-				}}
-			/>
-			<ToolLayout tool={tool}>
-				<PDFGrayscale />
-			</ToolLayout>
-		</>
+		<ToolLayout tool={tool}>
+			<PDFGrayscale />
+		</ToolLayout>
 	);
 }

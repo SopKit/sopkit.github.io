@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import AIVoiceGeneratorTool from "@/components/tools/generators/AIVoiceGeneratorTool";
 import { getToolByRoute } from "@/lib/tools";
+import AIVoiceGeneratorTool from "@/components/tools/generators/AIVoiceGeneratorTool";
 
 export const metadata = {
-	title: "Free AI Voice Generator Online - No Signup | SopKit",
-	description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers...",
-	keywords: "ai voice generator, free online tool, no signup, ai-voice-generator, free ai-voice-generator, Ai Voice Generator online, online generator, content creator, free maker, creative tool, SopKit",
+	title: "AI Voice Generator Online Free - No Signup | SopKit",
+	description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibility, and creative projects. No signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/ai-voice-generator",
 	},
 	openGraph: {
-		title: "Free AI Voice Generator Online - No Signup | SopKit",
-		description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers...",
+		title: "AI Voice Generator Online Free - No Signup",
+		description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibil",
 		url: "https://sopkit.github.io/ai-voice-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free AI Voice Generator Online - No Signup | SopKit",
-		description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers...",
+		title: "AI Voice Generator Online Free - Fast & Secure",
+		description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibil",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

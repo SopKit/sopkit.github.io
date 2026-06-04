@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free WordPress Theme Detector Online - No Signup | SopKit",
-	description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "wordpress theme detector, free online tool, no signup, wordpress-theme-detector, free wordpress-theme-detector, Wordpress Theme Detector online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "WordPress Theme Detector Online Free - No Signup | SopKit",
+	description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/wordpress-theme-detector",
 	},
 	openGraph: {
-		title: "Free WordPress Theme Detector Online - No Signup | SopKit",
-		description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "WordPress Theme Detector Online Free - No Signup",
+		description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
 		url: "https://sopkit.github.io/wordpress-theme-detector",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free WordPress Theme Detector Online - No Signup | SopKit",
-		description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "WordPress Theme Detector Online Free - Fast & Secure",
+		description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

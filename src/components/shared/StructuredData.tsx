@@ -54,7 +54,7 @@ export default function StructuredData({
 
 		const toolStructuredData: Record<string, any> = {
 			"@context": "https://schema.org",
-			"@type": "SoftwareApplication",
+			"@type": "WebApplication",
 			name: tool.name,
 			description: tool.description,
 			applicationCategory: toolCategoryName,

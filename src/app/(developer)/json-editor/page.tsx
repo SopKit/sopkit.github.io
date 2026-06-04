@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import JsonFormatterTool from "@/components/tools/code/JsonFormatterTool";
 import { getToolByRoute } from "@/lib/tools";
+import JsonFormatterTool from "@/components/tools/code/JsonFormatterTool";
 
 export const metadata = {
-	title: "Free JSON Editor Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free JSON Editor online. Secure, local developer utility with no registration. No signup required.",
-	keywords: "json editor, free online tool, no signup, json-editor, free json-editor, Json Editor online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "JSON Editor Online Free - Developer Tools | SopKit",
+	description: "Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data perfectly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/json-editor",
 	},
 	openGraph: {
-		title: "Free JSON Editor Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JSON Editor online. Secure, local developer utility with no registration. No signup required.",
+		title: "JSON Editor Online Free - No Signup",
+		description: "Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data per",
 		url: "https://sopkit.github.io/json-editor",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JSON Editor Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JSON Editor online. Secure, local developer utility with no registration. No signup required.",
+		title: "JSON Editor Online Free - Fast & Secure",
+		description: "Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data per",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

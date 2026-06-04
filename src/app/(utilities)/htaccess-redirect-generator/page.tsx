@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import HtaccessGenerator from "@/components/tools/built-ins/HtaccessGenerator";
 import { getToolByRoute } from "@/lib/tools";
+import HtaccessGenerator from "@/components/tools/built-ins/HtaccessGenerator";
 
 export const metadata = {
-	title: "Free Htaccess Redirect Generator Online - No Signup | SopKit",
-	description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "htaccess redirect generator, free online tool, no signup, htaccess-redirect-generator, free htaccess-redirect-generator, Htaccess Redirect Generator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Htaccess Redirect Generator Online Free - No Signup | SopKit",
+	description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/htaccess-redirect-generator",
 	},
 	openGraph: {
-		title: "Free Htaccess Redirect Generator Online - No Signup | SopKit",
-		description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Htaccess Redirect Generator Online Free - No Signup",
+		description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-",
 		url: "https://sopkit.github.io/htaccess-redirect-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Htaccess Redirect Generator Online - No Signup | SopKit",
-		description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Htaccess Redirect Generator Online Free - Fast & Secure",
+		description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

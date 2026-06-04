@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Free Adsense Calculator Online - No Signup | SopKit",
-	description: "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "adsense calculator, free online tool, no signup, adsense-calculator, free adsense-calculator, Adsense Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Adsense Calculator Online Free - No Signup | SopKit",
+	description: "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/adsense-calculator",
 	},
 	openGraph: {
-		title: "Free Adsense Calculator Online - No Signup | SopKit",
-		description: "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Adsense Calculator Online Free - No Signup",
+		description: "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
 		url: "https://sopkit.github.io/adsense-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Adsense Calculator Online - No Signup | SopKit",
-		description: "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Adsense Calculator Online Free - Fast & Secure",
+		description: "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

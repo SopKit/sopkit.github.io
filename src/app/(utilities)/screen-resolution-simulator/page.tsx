@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ScreenResolutionTool from "@/components/tools/built-ins/ScreenResolutionTool";
 import { getToolByRoute } from "@/lib/tools";
+import ScreenResolutionTool from "@/components/tools/built-ins/ScreenResolutionTool";
 
 export const metadata = {
-	title: "Free Screen Resolution Simulator Online - No Signup | SopKit",
-	description: "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "screen resolution simulator, free online tool, no signup, screen-resolution-simulator, free screen-resolution-simulator, Screen Resolution Simulator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Screen Resolution Simulator Online Free - No Signup | SopKit",
+	description: "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/screen-resolution-simulator",
 	},
 	openGraph: {
-		title: "Free Screen Resolution Simulator Online - No Signup | SopKit",
-		description: "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Screen Resolution Simulator Online Free - No Signup",
+		description: "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-",
 		url: "https://sopkit.github.io/screen-resolution-simulator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Screen Resolution Simulator Online - No Signup | SopKit",
-		description: "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Screen Resolution Simulator Online Free - Fast & Secure",
+		description: "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

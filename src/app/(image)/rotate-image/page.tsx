@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 
 export const metadata = {
-	title: "Free Rotate Image Online - No Signup | SopKit",
-	description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and...",
-	keywords: "rotate image, free online tool, no signup, rotate-image, free rotate-image, Rotate Image online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "Rotate Image Online Free - Compress & Convert Images | SopKit",
+	description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure. No signup needed. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/rotate-image",
 	},
 	openGraph: {
-		title: "Free Rotate Image Online - No Signup | SopKit",
-		description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and...",
+		title: "Rotate Image Online Free - No Signup",
+		description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure.",
 		url: "https://sopkit.github.io/rotate-image",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Rotate Image Online - No Signup | SopKit",
-		description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and...",
+		title: "Rotate Image Online Free - Fast & Secure",
+		description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import MetaTagGenerator from "@/components/tools/built-ins/MetaTagGenerator";
 import { getToolByRoute } from "@/lib/tools";
+import MetaTagGenerator from "@/components/tools/built-ins/MetaTagGenerator";
 
 export const metadata = {
-	title: "Free Meta Tag Generator Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Meta Tag Generator online. Optimize search presence with no signup. Try it free now.",
-	keywords: "meta tag generator, seo meta tags, html meta tags, meta description, title tag generator, free tool, SopKit, meta-tag-generator, free meta-tag-generator, meta tag generator online, seo tool, website analyzer",
+	title: "Meta Tag Generator Online Free - No Signup | SopKit",
+	description: "Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/meta-tag-generator",
 	},
 	openGraph: {
-		title: "Free Meta Tag Generator Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Meta Tag Generator online. Optimize search presence with no signup. Try it free now.",
+		title: "Meta Tag Generator Online Free - No Signup",
+		description: "Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
 		url: "https://sopkit.github.io/meta-tag-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Meta Tag Generator Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Meta Tag Generator online. Optimize search presence with no signup. Try it free now.",
+		title: "Meta Tag Generator Online Free - Fast & Secure",
+		description: "Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

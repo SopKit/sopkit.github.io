@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 
 export const metadata = {
-	title: "Free JSON to Text Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free JSON to Text Converter online. Secure, local developer utility with no registration.",
-	keywords: "json to text converter, free online tool, no signup, json-to-text-converter, free json-to-text-converter, Json To Text Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "JSON to Text Converter Online Free - Developer Tools | SopKit",
+	description: "Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw data. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/json-to-text-converter",
 	},
 	openGraph: {
-		title: "Free JSON to Text Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JSON to Text Converter online. Secure, local developer utility with no registration.",
+		title: "JSON to Text Converter Online Free - No Signup",
+		description: "Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw d",
 		url: "https://sopkit.github.io/json-to-text-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JSON to Text Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JSON to Text Converter online. Secure, local developer utility with no registration.",
+		title: "JSON to Text Converter Online Free - Fast & Secure",
+		description: "Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw d",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

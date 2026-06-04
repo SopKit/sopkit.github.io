@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Free JPG Converter Online - No Signup | SopKit",
-	description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use...",
-	keywords: "jpg converter, free online tool, no signup, jpg-converter, free jpg-converter, Jpg Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "JPG Converter Online Free - Compress & Convert Images | SopKit",
+	description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-focused and works entirely in your browser. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/jpg-converter",
 	},
 	openGraph: {
-		title: "Free JPG Converter Online - No Signup | SopKit",
-		description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use...",
+		title: "JPG Converter Online Free - No Signup",
+		description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-f",
 		url: "https://sopkit.github.io/jpg-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JPG Converter Online - No Signup | SopKit",
-		description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use...",
+		title: "JPG Converter Online Free - Fast & Secure",
+		description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-f",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<ImageConverterTool />
+			<ImageConverterTool defaultOutputFormat="jpeg" />
 		</ToolLayout>
 	);
 }

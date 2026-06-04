@@ -1,16 +1,17 @@
+import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import { getToolByRoute } from "@/lib/tools";
 import FontGeneratorTool from "@/components/tools/generators/FontGeneratorTool";
 
 export const metadata = {
-	title: "Free Font Generator Online - No Signup | SopKit",
-	description: "Professional Font Generator tool for free online use.",
-	keywords: "font, generator, free font generator, online font generator, SopKit, font-generator, font generator, free font-generator, font generator online, online generator, free creator, content generator",
+	title: "Font Generator Online Free - No Signup | SopKit",
+	description: "Professional Font Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/font-generator",
 	},
 	openGraph: {
-		title: "Free Font Generator Online - No Signup | SopKit",
-		description: "Professional Font Generator tool for free online use.",
+		title: "Font Generator Online Free - No Signup",
+		description: "Professional Font Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/font-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -18,19 +19,23 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Font Generator Online - No Signup | SopKit",
-		description: "Professional Font Generator tool for free online use.",
+		title: "Font Generator Online Free - Fast & Secure",
+		description: "Professional Font Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
-	const tool = { id: "font-generator", name: "Font Generator", description: "Transform your text into 15+ fancy Unicode font styles instantly. Copy stylish text for Instagram, Twitter, Discord, and more with our free Font Generator.", route: "/font-generator", category: "generators" };
+	const tool = getToolByRoute("/font-generator");
+
+	if (!tool) {
+		return notFound();
+	}
+
 	return (
-		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: tool.name, description: tool.description, url: "https://sopkit.github.io/font-generator", applicationCategory: "UtilitiesApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }) }} />
-			<ToolLayout tool={tool}><FontGeneratorTool /></ToolLayout>
-		</>
+		<ToolLayout tool={tool}>
+			<FontGeneratorTool />
+		</ToolLayout>
 	);
 }

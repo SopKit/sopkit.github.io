@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free Bulk Keyword Rank Checker Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Bulk Keyword Rank Checker online. Optimize search presence with no signup.",
-	keywords: "bulk keyword rank checker, free online tool, no signup, bulk-keyword-rank-checker, free bulk-keyword-rank-checker, Bulk Keyword Rank Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
+	title: "Bulk Keyword Rank Checker Online Free - No Signup | SopKit",
+	description: "Check Google rankings for multiple keywords instantly with our free bulk keyword rank checker. Track keyword positions, monitor competitors, and get accurate SERP data. No signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/bulk-keyword-rank-checker",
 	},
 	openGraph: {
-		title: "Free Bulk Keyword Rank Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Bulk Keyword Rank Checker online. Optimize search presence with no signup.",
+		title: "Bulk Keyword Rank Checker Online Free - No Signup",
+		description: "Check Google rankings for multiple keywords instantly with our free bulk keyword rank checker. Track keyword positions, monitor competitors, and get accurate SE",
 		url: "https://sopkit.github.io/bulk-keyword-rank-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Bulk Keyword Rank Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Bulk Keyword Rank Checker online. Optimize search presence with no signup.",
+		title: "Bulk Keyword Rank Checker Online Free - Fast & Secure",
+		description: "Check Google rankings for multiple keywords instantly with our free bulk keyword rank checker. Track keyword positions, monitor competitors, and get accurate SE",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

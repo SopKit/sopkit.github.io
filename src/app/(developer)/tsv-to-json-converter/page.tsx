@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 
 export const metadata = {
-	title: "Free TSV to JSON Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free TSV to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
-	keywords: "tsv to json converter, free online tool, no signup, tsv-to-json-converter, free tsv-to-json-converter, Tsv To Json Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "TSV to JSON Converter Online Free - Developer Tools | SopKit",
+	description: "Convert Tab-Separated Values (TSV) into JSON format instantly. Our free online tool makes it easy to transform structured data for web applications and API development. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/tsv-to-json-converter",
 	},
 	openGraph: {
-		title: "Free TSV to JSON Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free TSV to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
+		title: "TSV to JSON Converter Online Free - No Signup",
+		description: "Convert Tab-Separated Values (TSV) into JSON format instantly. Our free online tool makes it easy to transform structured data for web applications and API deve",
 		url: "https://sopkit.github.io/tsv-to-json-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free TSV to JSON Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free TSV to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
+		title: "TSV to JSON Converter Online Free - Fast & Secure",
+		description: "Convert Tab-Separated Values (TSV) into JSON format instantly. Our free online tool makes it easy to transform structured data for web applications and API deve",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

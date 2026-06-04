@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BaseConverter from "@/components/tools/shared/BaseConverter";
 import { getToolByRoute } from "@/lib/tools";
+import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Free Text to Binary Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free Text to Binary Converter online. Secure, local developer utility with no registration.",
-	keywords: "text to binary converter, free online tool, no signup, text-to-binary-converter, free text-to-binary-converter, Text To Binary Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "Text to Binary Converter Online Free - Developer Tools | SopKit",
+	description: "Translate text into binary code (0s and 1s) instantly. Our free online converter is perfect for learning how computers represent data and creating secret binary messages. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/text-to-binary-converter",
 	},
 	openGraph: {
-		title: "Free Text to Binary Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Text to Binary Converter online. Secure, local developer utility with no registration.",
+		title: "Text to Binary Converter Online Free - No Signup",
+		description: "Translate text into binary code (0s and 1s) instantly. Our free online converter is perfect for learning how computers represent data and creating secret binary",
 		url: "https://sopkit.github.io/text-to-binary-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Text to Binary Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Text to Binary Converter online. Secure, local developer utility with no registration.",
+		title: "Text to Binary Converter Online Free - Fast & Secure",
+		description: "Translate text into binary code (0s and 1s) instantly. Our free online converter is perfect for learning how computers represent data and creating secret binary",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

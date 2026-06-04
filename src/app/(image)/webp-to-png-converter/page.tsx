@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Free WebP to PNG Converter Online - No Signup | SopKit",
-	description: "Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.",
-	keywords: "webp to png converter, convert webp to png, image format converter, online image converter, free tool, SopKit, webp-to-png-converter, free webp-to-png-converter, webp to png converter online, image editing, photo editor, browser image tool",
+	title: "WebP to PNG Converter Online Free - Compress & Convert Images | SopKit",
+	description: "Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/webp-to-png-converter",
 	},
 	openGraph: {
-		title: "Free WebP to PNG Converter Online - No Signup | SopKit",
-		description: "Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.",
+		title: "WebP to PNG Converter Online Free - No Signup",
+		description: "Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool. No signup,",
 		url: "https://sopkit.github.io/webp-to-png-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free WebP to PNG Converter Online - No Signup | SopKit",
-		description: "Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.",
+		title: "WebP to PNG Converter Online Free - Fast & Secure",
+		description: "Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool. No signup,",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<ImageConverterTool />
+			<ImageConverterTool defaultOutputFormat="png" />
 		</ToolLayout>
 	);
 }

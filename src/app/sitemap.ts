@@ -42,6 +42,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${BASE_URL}/student-calculators`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${BASE_URL}/student-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.84 },
 		{ url: `${BASE_URL}/exam-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
+		{ url: `${BASE_URL}/business-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
+		{ url: `${BASE_URL}/social-media-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
+		{ url: `${BASE_URL}/finance-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
+		{ url: `${BASE_URL}/calculator-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
+		{ url: `${BASE_URL}/converter-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
+		{ url: `${BASE_URL}/ai-writing-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
+		{ url: `${BASE_URL}/local-business-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		// Blog
 		{ url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
 		// Content hub / SEO landing pages

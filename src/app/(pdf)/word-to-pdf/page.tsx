@@ -1,19 +1,17 @@
-import ToolLayout from "@/components/tools/shared/ToolLayout";
-import WordToPDF from "@/components/tools/pdf/WordToPDF";
-import { getToolById } from "@/lib/tools";
 import { notFound } from "next/navigation";
-
+import ToolLayout from "@/components/tools/shared/ToolLayout";
+import { getToolByRoute } from "@/lib/tools";
+import WordToPDF from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free Word to PDF Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free Word to PDF online. Safe and private browser-based tool with no registration. No signup required.",
-	keywords: "word to pdf, convert word to pdf, docx to pdf, free word converter, online pdf tool, SopKit, word-to-pdf, free word-to-pdf, word to pdf online, pdf utility, document editor, free pdf converter",
+	title: "Word to PDF Online Free - Edit, Merge & Convert PDF | SopKit",
+	description: "Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/word-to-pdf",
 	},
 	openGraph: {
-		title: "Free Word to PDF Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free Word to PDF online. Safe and private browser-based tool with no registration. No signup required.",
+		title: "Word to PDF Online Free - No Signup",
+		description: "Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required. No signup, no uploads",
 		url: "https://sopkit.github.io/word-to-pdf",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -21,26 +19,23 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Word to PDF Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free Word to PDF online. Safe and private browser-based tool with no registration. No signup required.",
+		title: "Word to PDF Online Free - Fast & Secure",
+		description: "Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required. No signup, no uploads",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
-	const tool = getToolById("word-to-pdf");
+	const tool = getToolByRoute("/word-to-pdf");
 
 	if (!tool) {
 		return notFound();
 	}
 
 	return (
-		<>
-			<ToolLayout tool={tool}>
-				<WordToPDF />
-			</ToolLayout>
-		</>
+		<ToolLayout tool={tool}>
+			<WordToPDF />
+		</ToolLayout>
 	);
 }
-

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Free Confidence Interval Calculator Online - No Signup | SopKit",
-	description: "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in...",
-	keywords: "confidence interval calculator, free online tool, no signup, confidence-interval-calculator, free confidence-interval-calculator, Confidence Interval Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Confidence Interval Calculator Online Free - No Signup | SopKit",
+	description: "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your research. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/confidence-interval-calculator",
 	},
 	openGraph: {
-		title: "Free Confidence Interval Calculator Online - No Signup | SopKit",
-		description: "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in...",
+		title: "Confidence Interval Calculator Online Free - No Signup",
+		description: "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your rese",
 		url: "https://sopkit.github.io/confidence-interval-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Confidence Interval Calculator Online - No Signup | SopKit",
-		description: "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in...",
+		title: "Confidence Interval Calculator Online Free - Fast & Secure",
+		description: "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your rese",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

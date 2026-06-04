@@ -8,26 +8,28 @@ import {
 	seoOpportunities,
 	type SeoOpportunity,
 } from "@/data/seo-opportunities";
+import { getAllTools } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
 
 export type SeoHubPageProps = {
 	title: string;
 	description: string;
 	route: string;
-	categoryNames: string[];
+	categoryNames?: string[];
+	mainCategorySlugs?: string[];
 	guideTitle: string;
 	guidePoints: string[];
 	faqs: { question: string; answer: string }[];
 };
 
-function itemListSchema(route: string, items: SeoOpportunity[]) {
+function itemListSchema(route: string, items: any[]) {
 	return {
 		"@context": "https://schema.org",
 		"@type": "ItemList",
 		itemListElement: items.map((item, index) => ({
 			"@type": "ListItem",
 			position: index + 1,
-			name: item.h1,
+			name: item.h1 || item.name,
 			url: `${SITE_CONFIG.siteUrl}${item.route}`,
 		})),
 		url: `${SITE_CONFIG.siteUrl}${route}`,
@@ -38,13 +40,24 @@ export default function SeoHubPage({
 	title,
 	description,
 	route,
-	categoryNames,
+	categoryNames = [],
+	mainCategorySlugs = [],
 	guideTitle,
 	guidePoints,
 	faqs,
 }: SeoHubPageProps) {
-	const items = seoOpportunities.filter((item) => categoryNames.includes(item.category));
-	const topItems = [...items].sort((a, b) => a.priority - b.priority).slice(0, 18);
+	const oppItems = seoOpportunities.filter((item) => categoryNames.includes(item.category));
+	const mainTools = getAllTools().filter((tool) => mainCategorySlugs.includes(tool.category));
+	const mappedMain = mainTools.map((tool) => ({
+		slug: tool.id,
+		route: tool.route,
+		h1: tool.name,
+		difficulty: "low",
+		metaDescription: tool.description,
+		priority: 3,
+	}));
+	const items = [...oppItems, ...mappedMain];
+	const topItems = [...items].sort((a, b) => a.priority - b.priority).slice(0, 50);
 	const schema = itemListSchema(route, topItems);
 
 	return (

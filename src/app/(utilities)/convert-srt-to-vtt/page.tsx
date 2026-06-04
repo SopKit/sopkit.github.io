@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import SrtToVttTool from "@/components/tools/text/SrtToVttTool";
 import { getToolByRoute } from "@/lib/tools";
+import TextCompareTool from "@/components/tools/text/TextCompareTool";
 
 export const metadata = {
-	title: "Free Convert SRT to VTT Online - No Signup | SopKit",
-	description: "Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming...",
-	keywords: "convert srt to vtt, free online tool, no signup, convert-srt-to-vtt, free convert-srt-to-vtt, Convert Srt To Vtt online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Convert SRT to VTT Online Free - No Signup | SopKit",
+	description: "Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming platforms. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/convert-srt-to-vtt",
 	},
 	openGraph: {
-		title: "Free Convert SRT to VTT Online - No Signup | SopKit",
-		description: "Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming...",
+		title: "Convert SRT to VTT Online Free - No Signup",
+		description: "Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming platforms.",
 		url: "https://sopkit.github.io/convert-srt-to-vtt",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Convert SRT to VTT Online - No Signup | SopKit",
-		description: "Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming...",
+		title: "Convert SRT to VTT Online Free - Fast & Secure",
+		description: "Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming platforms.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<SrtToVttTool />
+			<TextCompareTool />
 		</ToolLayout>
 	);
 }

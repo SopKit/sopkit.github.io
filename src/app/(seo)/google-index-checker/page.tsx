@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free Google Index Checker Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
-	keywords: "google index checker, free online tool, no signup, google-index-checker, free google-index-checker, Google Index Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
+	title: "Google Index Checker Online Free - No Signup | SopKit",
+	description: "Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/google-index-checker",
 	},
 	openGraph: {
-		title: "Free Google Index Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
+		title: "Google Index Checker Online Free - No Signup",
+		description: "Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
 		url: "https://sopkit.github.io/google-index-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Google Index Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
+		title: "Google Index Checker Online Free - Fast & Secure",
+		description: "Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

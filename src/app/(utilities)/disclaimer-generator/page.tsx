@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import LegalTemplateGenerator from "@/components/tools/built-ins/LegalTemplateGenerator";
 import { getToolByRoute } from "@/lib/tools";
+import LegalTemplateGenerator from "@/components/tools/built-ins/LegalTemplateGenerator";
 
 export const metadata = {
-	title: "Free Disclaimer Generator Online - No Signup | SopKit",
-	description: "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal...",
-	keywords: "disclaimer generator, free online tool, no signup, disclaimer-generator, free disclaimer-generator, Disclaimer Generator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Disclaimer Generator Online Free - No Signup | SopKit",
+	description: "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal requirements. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/disclaimer-generator",
 	},
 	openGraph: {
-		title: "Free Disclaimer Generator Online - No Signup | SopKit",
-		description: "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal...",
+		title: "Disclaimer Generator Online Free - No Signup",
+		description: "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal requirements.",
 		url: "https://sopkit.github.io/disclaimer-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Disclaimer Generator Online - No Signup | SopKit",
-		description: "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal...",
+		title: "Disclaimer Generator Online Free - Fast & Secure",
+		description: "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal requirements.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

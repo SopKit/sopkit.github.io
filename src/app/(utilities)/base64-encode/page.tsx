@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import Base64Tool from "@/components/tools/developer/Base64Tool";
 import { getToolByRoute } from "@/lib/tools";
+import Base64Tool from "@/components/tools/developer/Base64Tool";
 
 export const metadata = {
-	title: "Free Base64 Encode Online - No Signup | SopKit",
-	description: "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in...",
-	keywords: "base64 encode, free online tool, no signup, base64-encode, free base64-encode, Base64 Encode online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Base64 Encode Online Free - No Signup | SopKit",
+	description: "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in web URLs. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/base64-encode",
 	},
 	openGraph: {
-		title: "Free Base64 Encode Online - No Signup | SopKit",
-		description: "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in...",
+		title: "Base64 Encode Online Free - No Signup",
+		description: "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in web UR",
 		url: "https://sopkit.github.io/base64-encode",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Base64 Encode Online - No Signup | SopKit",
-		description: "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in...",
+		title: "Base64 Encode Online Free - Fast & Secure",
+		description: "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in web UR",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<Base64Tool initialMode="encode" />
+			<Base64Tool />
 		</ToolLayout>
 	);
 }

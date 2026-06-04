@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BaseConverter from "@/components/tools/shared/BaseConverter";
 import { getToolByRoute } from "@/lib/tools";
+import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Free Octal to Text Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free Octal to Text Converter online. Secure, local developer utility with no registration.",
-	keywords: "octal to text converter, free online tool, no signup, octal-to-text-converter, free octal-to-text-converter, Octal To Text Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "Octal to Text Converter Online Free - Developer Tools | SopKit",
+	description: "Convert octal character codes back to readable text instantly. Our free online tool helps you decode data streams and debug text processing tasks in your browser. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/octal-to-text-converter",
 	},
 	openGraph: {
-		title: "Free Octal to Text Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Octal to Text Converter online. Secure, local developer utility with no registration.",
+		title: "Octal to Text Converter Online Free - No Signup",
+		description: "Convert octal character codes back to readable text instantly. Our free online tool helps you decode data streams and debug text processing tasks in your browse",
 		url: "https://sopkit.github.io/octal-to-text-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Octal to Text Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Octal to Text Converter online. Secure, local developer utility with no registration.",
+		title: "Octal to Text Converter Online Free - Fast & Secure",
+		description: "Convert octal character codes back to readable text instantly. Our free online tool helps you decode data streams and debug text processing tasks in your browse",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

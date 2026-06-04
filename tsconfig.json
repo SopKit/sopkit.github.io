@@ -38,6 +38,9 @@
   ],
   "exclude": [
     "node_modules",
-    "ecc"
+    "ecc",
+    ".next",
+    ".open-next",
+    "out"
   ]
 }

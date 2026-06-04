@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free Backlink Checker Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Backlink Checker online. Optimize search presence with no signup. Try it free now.",
-	keywords: "backlink checker, check backlinks, domain backlinks, link analysis, seo backlinks, free tool, SopKit, backlink-checker, free backlink-checker, backlink checker online, seo tool, website analyzer",
+	title: "Backlink Checker Online Free - No Signup | SopKit",
+	description: "Analyze backlinks for any website with our free backlink checker. Discover referring domains, anchor texts, and link quality metrics instantly. No signup required, unlimited checks, SEO-grade data. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/backlink-checker",
 	},
 	openGraph: {
-		title: "Free Backlink Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Backlink Checker online. Optimize search presence with no signup. Try it free now.",
+		title: "Backlink Checker Online Free - No Signup",
+		description: "Analyze backlinks for any website with our free backlink checker. Discover referring domains, anchor texts, and link quality metrics instantly. No signup requir",
 		url: "https://sopkit.github.io/backlink-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Backlink Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Backlink Checker online. Optimize search presence with no signup. Try it free now.",
+		title: "Backlink Checker Online Free - Fast & Secure",
+		description: "Analyze backlinks for any website with our free backlink checker. Discover referring domains, anchor texts, and link quality metrics instantly. No signup requir",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

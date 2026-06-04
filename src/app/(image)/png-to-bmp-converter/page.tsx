@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Free PNG to BMP Converter Online - No Signup | SopKit",
-	description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast...",
-	keywords: "png to bmp converter, free online tool, no signup, png-to-bmp-converter, free png-to-bmp-converter, Png To Bmp Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "PNG to BMP Converter Online Free - Compress & Convert Images | SopKit",
+	description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast, secure, and privacy-focused. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/png-to-bmp-converter",
 	},
 	openGraph: {
-		title: "Free PNG to BMP Converter Online - No Signup | SopKit",
-		description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast...",
+		title: "PNG to BMP Converter Online Free - No Signup",
+		description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast, secure",
 		url: "https://sopkit.github.io/png-to-bmp-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PNG to BMP Converter Online - No Signup | SopKit",
-		description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast...",
+		title: "PNG to BMP Converter Online Free - Fast & Secure",
+		description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast, secure",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<ImageConverterTool />
+			<ImageConverterTool defaultOutputFormat="png" />
 		</ToolLayout>
 	);
 }

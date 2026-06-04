@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free Whois Domain Lookup Online - No Signup | SopKit",
-	description: "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "whois lookup, domain lookup, check domain, domain availability, whois search, free tool, SopKit, whois-domain-lookup, whois domain lookup, free whois-domain-lookup, whois domain lookup online, online utility",
+	title: "Whois Domain Lookup Online Free - No Signup | SopKit",
+	description: "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/whois-domain-lookup",
 	},
 	openGraph: {
-		title: "Free Whois Domain Lookup Online - No Signup | SopKit",
-		description: "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Whois Domain Lookup Online Free - No Signup",
+		description: "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
 		url: "https://sopkit.github.io/whois-domain-lookup",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Whois Domain Lookup Online - No Signup | SopKit",
-		description: "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Whois Domain Lookup Online Free - Fast & Secure",
+		description: "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

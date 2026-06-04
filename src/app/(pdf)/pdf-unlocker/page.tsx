@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import PDFUnlock from "@/components/tools/pdf/PDFUnlock";
 import { getToolByRoute } from "@/lib/tools";
+import PDFUnlock from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free PDF Unlocker Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free PDF Unlocker online. Safe and private browser-based tool with no registration. No signup required.",
-	keywords: "pdf unlocker, unlock pdf, remove pdf password, free pdf tool, online pdf unlock, SopKit, pdf-unlocker, free pdf-unlocker, pdf unlocker online, pdf utility, document editor, online pdf tool",
+	title: "PDF Unlocker Online Free - Edit, Merge & Convert PDF | SopKit",
+	description: "Remove password protection from PDF files No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/pdf-unlocker",
 	},
 	openGraph: {
-		title: "Free PDF Unlocker Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Unlocker online. Safe and private browser-based tool with no registration. No signup required.",
+		title: "PDF Unlocker Online Free - No Signup",
+		description: "Remove password protection from PDF files No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/pdf-unlocker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PDF Unlocker Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Unlocker online. Safe and private browser-based tool with no registration. No signup required.",
+		title: "PDF Unlocker Online Free - Fast & Secure",
+		description: "Remove password protection from PDF files No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import IPLocationFinderTool from "@/components/tools/utilities/IPLocationFinderTool";
 import { getToolByRoute } from "@/lib/tools";
+import IPLocationFinderTool from "@/components/tools/utilities/IPLocationFinderTool";
 
 export const metadata = {
-	title: "Free IP Address Lookup Online - No Signup | SopKit",
-	description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "ip address lookup, free online tool, no signup, ip-address-lookup, free ip-address-lookup, Ip Address Lookup online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "IP Address Lookup Online Free - No Signup | SopKit",
+	description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/ip-address-lookup",
 	},
 	openGraph: {
-		title: "Free IP Address Lookup Online - No Signup | SopKit",
-		description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "IP Address Lookup Online Free - No Signup",
+		description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
 		url: "https://sopkit.github.io/ip-address-lookup",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free IP Address Lookup Online - No Signup | SopKit",
-		description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "IP Address Lookup Online Free - Fast & Secure",
+		description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

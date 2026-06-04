@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UuidGeneratorTool from "@/components/tools/built-ins/UuidGeneratorTool";
 import { getToolByRoute } from "@/lib/tools";
+import UuidGenerator from "@/components/tools/built-ins/UuidGeneratorTool";
 
 export const metadata = {
-	title: "Free Random UUID Generator Online - No Signup | SopKit",
-	description: "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "random uuid generator, free online tool, no signup, random-uuid-generator, free random-uuid-generator, Random Uuid Generator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Random UUID Generator Online Free - No Signup | SopKit",
+	description: "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/random-uuid-generator",
 	},
 	openGraph: {
-		title: "Free Random UUID Generator Online - No Signup | SopKit",
-		description: "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Random UUID Generator Online Free - No Signup",
+		description: "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
 		url: "https://sopkit.github.io/random-uuid-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Random UUID Generator Online - No Signup | SopKit",
-		description: "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Random UUID Generator Online Free - Fast & Secure",
+		description: "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<UuidGeneratorTool />
+			<UuidGenerator />
 		</ToolLayout>
 	);
 }

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free Server Status Checker Online - No Signup | SopKit",
-	description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "server status checker, free online tool, no signup, server-status-checker, free server-status-checker, Server Status Checker online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Server Status Checker Online Free - No Signup | SopKit",
+	description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/server-status-checker",
 	},
 	openGraph: {
-		title: "Free Server Status Checker Online - No Signup | SopKit",
-		description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Server Status Checker Online Free - No Signup",
+		description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
 		url: "https://sopkit.github.io/server-status-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Server Status Checker Online - No Signup | SopKit",
-		description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Server Status Checker Online Free - Fast & Secure",
+		description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import LineSorterTool from "@/components/tools/text/LineSorterTool";
 import { getToolByRoute } from "@/lib/tools";
+import LineSorterTool from "@/components/tools/text/LineSorterTool";
 
 export const metadata = {
-	title: "Free Text Sorter Online - No Signup | SopKit",
-	description: "Format, clean, sort, and analyze text files instantly with our free Text Sorter online. Fast and private browser utility with no signup. No registration needed.",
-	keywords: "text sorter, free online tool, no signup, text tool, text editor online, content formatter, writing utility, SopKit",
+	title: "Text Sorter Online Free - No Signup | SopKit",
+	description: "Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for researchers and developers. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/text-sorter",
 	},
 	openGraph: {
-		title: "Free Text Sorter Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Text Sorter online. Fast and private browser utility with no signup. No registration needed.",
+		title: "Text Sorter Online Free - No Signup",
+		description: "Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for resear",
 		url: "https://sopkit.github.io/text-sorter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Text Sorter Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Text Sorter online. Fast and private browser utility with no signup. No registration needed.",
+		title: "Text Sorter Online Free - Fast & Secure",
+		description: "Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for resear",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

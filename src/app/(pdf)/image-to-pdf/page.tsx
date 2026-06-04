@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageToPDFTool from "@/components/tools/pdf/ImageToPDF";
 import { getToolByRoute } from "@/lib/tools";
+import ImageToPDF from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free Image to PDF Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free Image to PDF online. Safe and private browser-based tool with no registration. No signup required.",
-	keywords: "image-to-pdf, Image To Pdf, free image-to-pdf, Image To Pdf online, PDF utility, document editor, online PDF tool, free PDF converter, SopKit",
+	title: "Image to PDF Online Free - Edit, Merge & Convert PDF | SopKit",
+	description: "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/image-to-pdf",
 	},
 	openGraph: {
-		title: "Free Image to PDF Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free Image to PDF online. Safe and private browser-based tool with no registration. No signup required.",
+		title: "Image to PDF Online Free - No Signup",
+		description: "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required. No signup,",
 		url: "https://sopkit.github.io/image-to-pdf",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Image to PDF Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free Image to PDF online. Safe and private browser-based tool with no registration. No signup required.",
+		title: "Image to PDF Online Free - Fast & Secure",
+		description: "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required. No signup,",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<ImageToPDFTool />
+			<ImageToPDF />
 		</ToolLayout>
 	);
 }

@@ -1,16 +1,17 @@
+import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import { getToolByRoute } from "@/lib/tools";
 import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 
 export const metadata = {
-	title: "Free Image Editor Online - No Signup | SopKit",
-	description: "Edit, crop, and enhance your photos online with our free image editing tools.",
-	keywords: "image, editor, free image editor, online image editor, SopKit, image-editor, image editor, free image-editor, image editor online, image editing, photo editor, browser image tool",
+	title: "Image Editor Online Free - Compress & Convert Images | SopKit",
+	description: "Edit, crop, and enhance your photos online with our free image editing tools. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/image-editor",
 	},
 	openGraph: {
-		title: "Free Image Editor Online - No Signup | SopKit",
-		description: "Edit, crop, and enhance your photos online with our free image editing tools.",
+		title: "Image Editor Online Free - No Signup",
+		description: "Edit, crop, and enhance your photos online with our free image editing tools. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/image-editor",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -18,19 +19,23 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Image Editor Online - No Signup | SopKit",
-		description: "Edit, crop, and enhance your photos online with our free image editing tools.",
+		title: "Image Editor Online Free - Fast & Secure",
+		description: "Edit, crop, and enhance your photos online with our free image editing tools. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
-	const tool = { id: "image-editor", name: "Image Editor", description: "Edit, resize, crop, and transform images directly in your browser. Our free Image Editor provides professional-grade tools with zero uploads required.", route: "/image-editor", category: "image" };
+	const tool = getToolByRoute("/image-editor");
+
+	if (!tool) {
+		return notFound();
+	}
+
 	return (
-		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: tool.name, description: tool.description, url: "https://sopkit.github.io/image-editor", applicationCategory: "UtilitiesApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }) }} />
-			<ToolLayout tool={tool}><ImageResizerTool /></ToolLayout>
-		</>
+		<ToolLayout tool={tool}>
+			<ImageResizerTool />
+		</ToolLayout>
 	);
 }

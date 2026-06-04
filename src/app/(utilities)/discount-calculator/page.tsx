@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Free Discount Calculator Online - No Signup | SopKit",
-	description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping.",
-	keywords: "discount calculator, free online tool, no signup, discount-calculator, free discount-calculator, Discount Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Discount Calculator Online Free - No Signup | SopKit",
+	description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/discount-calculator",
 	},
 	openGraph: {
-		title: "Free Discount Calculator Online - No Signup | SopKit",
-		description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping.",
+		title: "Discount Calculator Online Free - No Signup",
+		description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping. No signup, no uplo",
 		url: "https://sopkit.github.io/discount-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Discount Calculator Online - No Signup | SopKit",
-		description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping.",
+		title: "Discount Calculator Online Free - Fast & Secure",
+		description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping. No signup, no uplo",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free Page Size Checker Online - No Signup | SopKit",
-	description: "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "page size checker, free online tool, no signup, page-size-checker, free page-size-checker, Page Size Checker online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Page Size Checker Online Free - No Signup | SopKit",
+	description: "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/page-size-checker",
 	},
 	openGraph: {
-		title: "Free Page Size Checker Online - No Signup | SopKit",
-		description: "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Page Size Checker Online Free - No Signup",
+		description: "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
 		url: "https://sopkit.github.io/page-size-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Page Size Checker Online - No Signup | SopKit",
-		description: "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Page Size Checker Online Free - Fast & Secure",
+		description: "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

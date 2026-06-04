@@ -13,13 +13,13 @@ import {
 } from "@/data/seo-opportunities";
 
 function getPrivacyNote(opportunity: SeoOpportunity) {
-	if (opportunity.toolPreset.type === "api-key") {
+	if (opportunity.toolPreset?.type === "api-key") {
 		return "Your API key is used only for this test flow and is not stored by SopKit. Use restricted or test keys whenever possible.";
 	}
-	if (opportunity.toolPreset.type === "exam-image") {
+	if (opportunity.toolPreset?.type === "exam-image") {
 		return "Your image is processed in your browser when possible. We do not store your original file or compressed output.";
 	}
-	if (opportunity.toolPreset.type === "qr") {
+	if (opportunity.toolPreset?.type === "qr") {
 		return "QR content is generated in your browser. Avoid printing private credentials unless you are using a guest or limited-access setup.";
 	}
 	return "Inputs are used only for the current tool session. Avoid pasting private data into public or shared devices.";

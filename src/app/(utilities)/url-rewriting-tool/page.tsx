@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UrlParserTool from "@/components/tools/built-ins/UrlParserTool";
 import { getToolByRoute } from "@/lib/tools";
+import UrlParserTool from "@/components/tools/built-ins/UrlParserTool";
 
 export const metadata = {
-	title: "Free URL Rewriting Tool Online - No Signup | SopKit",
-	description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "url rewriting tool, free online tool, no signup, url-rewriting-tool, free url-rewriting-tool, Url Rewriting Tool online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "URL Rewriting Tool Online Free - No Signup | SopKit",
+	description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/url-rewriting-tool",
 	},
 	openGraph: {
-		title: "Free URL Rewriting Tool Online - No Signup | SopKit",
-		description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "URL Rewriting Tool Online Free - No Signup",
+		description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
 		url: "https://sopkit.github.io/url-rewriting-tool",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free URL Rewriting Tool Online - No Signup | SopKit",
-		description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "URL Rewriting Tool Online Free - Fast & Secure",
+		description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

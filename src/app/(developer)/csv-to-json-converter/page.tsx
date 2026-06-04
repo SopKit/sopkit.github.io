@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 
 export const metadata = {
-	title: "Free CSV to JSON Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free CSV to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
-	keywords: "csv to json converter, free online tool, no signup, csv-to-json-converter, free csv-to-json-converter, Csv To Json Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "CSV to JSON Converter Online Free - Developer Tools | SopKit",
+	description: "Convert CSV files to JSON format instantly. Our free online converter makes it easy to transform spreadsheet data into developer-friendly JSON code for web applications and APIs. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/csv-to-json-converter",
 	},
 	openGraph: {
-		title: "Free CSV to JSON Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free CSV to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
+		title: "CSV to JSON Converter Online Free - No Signup",
+		description: "Convert CSV files to JSON format instantly. Our free online converter makes it easy to transform spreadsheet data into developer-friendly JSON code for web appl",
 		url: "https://sopkit.github.io/csv-to-json-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free CSV to JSON Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free CSV to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
+		title: "CSV to JSON Converter Online Free - Fast & Secure",
+		description: "Convert CSV files to JSON format instantly. Our free online converter makes it easy to transform spreadsheet data into developer-friendly JSON code for web appl",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

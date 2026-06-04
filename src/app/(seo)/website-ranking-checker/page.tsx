@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import WebsiteRankingCheckerTool from "@/components/tools/seo/WebsiteRankingCheckerTool";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free Website Ranking Checker Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Website Ranking Checker online. Optimize search presence with no signup. 100% free.",
-	keywords: "website ranking checker, free online tool, no signup, website-ranking-checker, free website-ranking-checker, Website Ranking Checker online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
+	title: "Website Ranking Checker Online Free - No Signup | SopKit",
+	description: "Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/website-ranking-checker",
 	},
 	openGraph: {
-		title: "Free Website Ranking Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Website Ranking Checker online. Optimize search presence with no signup. 100% free.",
+		title: "Website Ranking Checker Online Free - No Signup",
+		description: "Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-base",
 		url: "https://sopkit.github.io/website-ranking-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Website Ranking Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Website Ranking Checker online. Optimize search presence with no signup. 100% free.",
+		title: "Website Ranking Checker Online Free - Fast & Secure",
+		description: "Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-base",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<WebsiteRankingCheckerTool />
+			<BuiltInSafeHttp toolId="website-ranking-checker" />
 		</ToolLayout>
 	);
 }

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 import { getToolByRoute } from "@/lib/tools";
+import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Free Weight Converter Online - No Signup | SopKit",
-	description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "weight converter, free online tool, no signup, weight-converter, free weight-converter, Weight Converter online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Weight Converter Online Free - No Signup | SopKit",
+	description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/weight-converter",
 	},
 	openGraph: {
-		title: "Free Weight Converter Online - No Signup | SopKit",
-		description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Weight Converter Online Free - No Signup",
+		description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/weight-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Weight Converter Online - No Signup | SopKit",
-		description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Weight Converter Online Free - Fast & Secure",
+		description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

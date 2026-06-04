@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Free GST Calculator Online - No Signup | SopKit",
-	description: "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "gst calculator, free online tool, no signup, gst-calculator, free gst-calculator, Gst Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "GST Calculator Online Free - No Signup | SopKit",
+	description: "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/gst-calculator",
 	},
 	openGraph: {
-		title: "Free GST Calculator Online - No Signup | SopKit",
-		description: "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "GST Calculator Online Free - No Signup",
+		description: "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/gst-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free GST Calculator Online - No Signup | SopKit",
-		description: "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "GST Calculator Online Free - Fast & Secure",
+		description: "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 import { getToolByRoute } from "@/lib/tools";
+import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "Free Youtube Video Title Capitalizer Online - No Signup | SopKit",
-	description: "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your...",
-	keywords: "youtube video title capitalizer, free online tool, no signup, youtube-title-capitalizer, Youtube Title Capitalizer, free youtube-title-capitalizer, Youtube Title Capitalizer online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
+	title: "Youtube Video Title Capitalizer Online Free - No Signup | SopKit",
+	description: "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles stand out. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/youtube-title-capitalizer",
 	},
 	openGraph: {
-		title: "Free Youtube Video Title Capitalizer Online - No Signup | SopKit",
-		description: "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your...",
+		title: "Youtube Video Title Capitalizer Online Free - No Signup",
+		description: "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles ",
 		url: "https://sopkit.github.io/youtube-title-capitalizer",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Youtube Video Title Capitalizer Online - No Signup | SopKit",
-		description: "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your...",
+		title: "Youtube Video Title Capitalizer Online Free - Fast & Secure",
+		description: "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles ",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Free Probability Calculator Online - No Signup | SopKit",
-	description: "Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "probability calculator, free online tool, no signup, probability-calculator, free probability-calculator, Probability Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Probability Calculator Online Free - No Signup | SopKit",
+	description: "Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/probability-calculator",
 	},
 	openGraph: {
-		title: "Free Probability Calculator Online - No Signup | SopKit",
-		description: "Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Probability Calculator Online Free - No Signup",
+		description: "Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based",
 		url: "https://sopkit.github.io/probability-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Probability Calculator Online - No Signup | SopKit",
-		description: "Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Probability Calculator Online Free - Fast & Secure",
+		description: "Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

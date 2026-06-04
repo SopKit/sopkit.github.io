@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import JsonFormatterTool from "@/components/tools/code/JsonFormatterTool";
 import { getToolByRoute } from "@/lib/tools";
+import JsonFormatterTool from "@/components/tools/code/JsonFormatterTool";
 
 export const metadata = {
-	title: "Free JSON Validator Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free JSON Validator online. Secure, local developer utility with no registration. Try it free now.",
-	keywords: "json validator, validate json, json syntax checker, json lint, online json validator, free tool, SopKit, json-validator, free json-validator, json validator online, developer tool, online code utility",
+	title: "JSON Validator Online Free - Developer Tools | SopKit",
+	description: "Validate your JSON data for syntax errors and structural integrity instantly. Our free online tool helps you catch bugs and ensure your JSON is RFC-compliant. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/json-validator",
 	},
 	openGraph: {
-		title: "Free JSON Validator Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JSON Validator online. Secure, local developer utility with no registration. Try it free now.",
+		title: "JSON Validator Online Free - No Signup",
+		description: "Validate your JSON data for syntax errors and structural integrity instantly. Our free online tool helps you catch bugs and ensure your JSON is RFC-compliant. N",
 		url: "https://sopkit.github.io/json-validator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JSON Validator Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JSON Validator online. Secure, local developer utility with no registration. Try it free now.",
+		title: "JSON Validator Online Free - Fast & Secure",
+		description: "Validate your JSON data for syntax errors and structural integrity instantly. Our free online tool helps you catch bugs and ensure your JSON is RFC-compliant. N",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

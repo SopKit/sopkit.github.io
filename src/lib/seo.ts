@@ -205,7 +205,7 @@ export function generateToolSchema({
 }: SchemaProps) {
 	return {
 		"@context": "https://schema.org",
-		"@type": "SoftwareApplication",
+		"@type": "WebApplication",
 		name,
 		description,
 		url: `${BASE_URL}${path.startsWith("/") ? path : `/${path}`}`,

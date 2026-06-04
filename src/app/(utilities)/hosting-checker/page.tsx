@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free Hosting Checker Online - No Signup | SopKit",
-	description: "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "hosting checker, free online tool, no signup, hosting-checker, free hosting-checker, Hosting Checker online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Hosting Checker Online Free - No Signup | SopKit",
+	description: "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/hosting-checker",
 	},
 	openGraph: {
-		title: "Free Hosting Checker Online - No Signup | SopKit",
-		description: "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Hosting Checker Online Free - No Signup",
+		description: "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/hosting-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Hosting Checker Online - No Signup | SopKit",
-		description: "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Hosting Checker Online Free - Fast & Secure",
+		description: "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

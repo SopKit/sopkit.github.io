@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import JSONMinifierTool from "@/components/tools/developer/JSONMinifierTool";
 import { getToolByRoute } from "@/lib/tools";
+import JSONMinifierTool from "@/components/tools/developer/JSONMinifierTool";
 
 export const metadata = {
-	title: "Free JSON Minify Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free JSON Minify online. Secure, local developer utility with no registration. No signup required.",
-	keywords: "json minify, free online tool, no signup, json-minify, free json-minify, Json Minify online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "JSON Minify Online Free - Developer Tools | SopKit",
+	description: "Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/json-minify",
 	},
 	openGraph: {
-		title: "Free JSON Minify Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JSON Minify online. Secure, local developer utility with no registration. No signup required.",
+		title: "JSON Minify Online Free - No Signup",
+		description: "Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly. No s",
 		url: "https://sopkit.github.io/json-minify",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JSON Minify Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JSON Minify online. Secure, local developer utility with no registration. No signup required.",
+		title: "JSON Minify Online Free - Fast & Secure",
+		description: "Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly. No s",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import QrGeneratorPremium from "@/components/tools/utilities/QrGeneratorPremium";
 import { getToolByRoute } from "@/lib/tools";
+import QrGeneratorPremium from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free QR Code Generator Online - No Signup | SopKit",
-	description: "Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "qr code generator, create qr code, custom qr code, qr code maker, free qr generator, SopKit, qr-code-generator, free qr-code-generator, qr code generator online, online utility, free converter, browser tool",
+	title: "QR Code Generator Online Free - No Signup | SopKit",
+	description: "Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/qr-code-generator",
 	},
 	openGraph: {
-		title: "Free QR Code Generator Online - No Signup | SopKit",
-		description: "Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "QR Code Generator Online Free - No Signup",
+		description: "Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
 		url: "https://sopkit.github.io/qr-code-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free QR Code Generator Online - No Signup | SopKit",
-		description: "Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "QR Code Generator Online Free - Fast & Secure",
+		description: "Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

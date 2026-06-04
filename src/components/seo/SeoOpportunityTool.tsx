@@ -14,6 +14,10 @@ export default function SeoOpportunityTool({
 }) {
 	const preset = opportunity.toolPreset;
 
+	if (!preset) {
+		return <MetaTagGenerator />;
+	}
+
 	if (preset.type === "exam-image") {
 		return (
 			<ExamPhotoResizer

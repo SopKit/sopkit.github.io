@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 
 export const metadata = {
-	title: "Free CSS Beautifier Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free CSS Beautifier online. Secure, local developer utility with no registration. Try it free now.",
-	keywords: "css beautifier, free online tool, no signup, css-beautifier, free css-beautifier, Css Beautifier online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "CSS Beautifier Online Free - Developer Tools | SopKit",
+	description: "Format and prettify your CSS code instantly with our free online CSS Beautifier. Improve code readability, fix indentation, and organize your stylesheets for better maintenance. Fast and secure. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/css-beautifier",
 	},
 	openGraph: {
-		title: "Free CSS Beautifier Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free CSS Beautifier online. Secure, local developer utility with no registration. Try it free now.",
+		title: "CSS Beautifier Online Free - No Signup",
+		description: "Format and prettify your CSS code instantly with our free online CSS Beautifier. Improve code readability, fix indentation, and organize your stylesheets for be",
 		url: "https://sopkit.github.io/css-beautifier",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free CSS Beautifier Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free CSS Beautifier online. Secure, local developer utility with no registration. Try it free now.",
+		title: "CSS Beautifier Online Free - Fast & Secure",
+		description: "Format and prettify your CSS code instantly with our free online CSS Beautifier. Improve code readability, fix indentation, and organize your stylesheets for be",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

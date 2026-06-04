@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import LogoGeneratorTool from "@/components/tools/image/LogoGeneratorTool";
 import { getToolByRoute } from "@/lib/tools";
+import LogoGeneratorTool from "@/components/tools/image/LogoGeneratorTool";
 
 export const metadata = {
-	title: "Free Logo Generator Online - No Signup | SopKit",
-	description: "Create professional logos with text, fonts, and custom colors",
-	keywords: "logo generator, free online tool, no signup, logo-generator, free logo-generator, Logo Generator online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "Logo Generator Online Free - Compress & Convert Images | SopKit",
+	description: "Create professional logos with text, fonts, and custom colors No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/logo-generator",
 	},
 	openGraph: {
-		title: "Free Logo Generator Online - No Signup | SopKit",
-		description: "Create professional logos with text, fonts, and custom colors",
+		title: "Logo Generator Online Free - No Signup",
+		description: "Create professional logos with text, fonts, and custom colors No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/logo-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Logo Generator Online - No Signup | SopKit",
-		description: "Create professional logos with text, fonts, and custom colors",
+		title: "Logo Generator Online Free - Fast & Secure",
+		description: "Create professional logos with text, fonts, and custom colors No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Free ICO to PNG Converter Online - No Signup | SopKit",
-	description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "ico to png converter, free online tool, no signup, ico-to-png-converter, free ico-to-png-converter, Ico To Png Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "ICO to PNG Converter Online Free - Compress & Convert Images | SopKit",
+	description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/ico-to-png-converter",
 	},
 	openGraph: {
-		title: "Free ICO to PNG Converter Online - No Signup | SopKit",
-		description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "ICO to PNG Converter Online Free - No Signup",
+		description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
 		url: "https://sopkit.github.io/ico-to-png-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free ICO to PNG Converter Online - No Signup | SopKit",
-		description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "ICO to PNG Converter Online Free - Fast & Secure",
+		description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<ImageConverterTool />
+			<ImageConverterTool defaultOutputFormat="png" />
 		</ToolLayout>
 	);
 }

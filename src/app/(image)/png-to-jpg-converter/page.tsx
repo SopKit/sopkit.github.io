@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Free PNG to JPG Converter Online - No Signup | SopKit",
-	description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in...",
-	keywords: "png to jpg converter, convert png to jpg, image format converter, online image converter, free tool, SopKit, png-to-jpg-converter, free png-to-jpg-converter, png to jpg converter online, image editing, photo editor, browser image tool",
+	title: "PNG to JPG Converter Online Free - Compress & Convert Images | SopKit",
+	description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/png-to-jpg-converter",
 	},
 	openGraph: {
-		title: "Free PNG to JPG Converter Online - No Signup | SopKit",
-		description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in...",
+		title: "PNG to JPG Converter Online Free - No Signup",
+		description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your br",
 		url: "https://sopkit.github.io/png-to-jpg-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PNG to JPG Converter Online - No Signup | SopKit",
-		description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in...",
+		title: "PNG to JPG Converter Online Free - Fast & Secure",
+		description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your br",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<ImageConverterTool />
+			<ImageConverterTool defaultOutputFormat="png" />
 		</ToolLayout>
 	);
 }

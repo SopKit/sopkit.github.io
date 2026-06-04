@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 import { getToolByRoute } from "@/lib/tools";
+import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "Free YouTube Channel Finder Online - No Signup | SopKit",
-	description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for...",
-	keywords: "youtube channel finder, free online tool, no signup, youtube-channel-finder, free youtube-channel-finder, Youtube Channel Finder online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
+	title: "YouTube Channel Finder Online Free - No Signup | SopKit",
+	description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your next video project. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/youtube-channel-finder",
 	},
 	openGraph: {
-		title: "Free YouTube Channel Finder Online - No Signup | SopKit",
-		description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for...",
+		title: "YouTube Channel Finder Online Free - No Signup",
+		description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your ",
 		url: "https://sopkit.github.io/youtube-channel-finder",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Channel Finder Online - No Signup | SopKit",
-		description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for...",
+		title: "YouTube Channel Finder Online Free - Fast & Secure",
+		description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your ",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

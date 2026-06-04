@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free IndexNow Submitter Online - No Signup | SopKit",
-	description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol.",
-	keywords: "indexnow submitter, free online tool, no signup, indexnow, free indexnow, Indexnow online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "IndexNow Submitter Online Free - No Signup | SopKit",
+	description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/indexnow",
 	},
 	openGraph: {
-		title: "Free IndexNow Submitter Online - No Signup | SopKit",
-		description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol.",
+		title: "IndexNow Submitter Online Free - No Signup",
+		description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/indexnow",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free IndexNow Submitter Online - No Signup | SopKit",
-		description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol.",
+		title: "IndexNow Submitter Online Free - Fast & Secure",
+		description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<BuiltInSafeHttp toolId="indexnow" />
+			<BuiltInSafeHttp toolId="indexnow-submitter" />
 		</ToolLayout>
 	);
 }

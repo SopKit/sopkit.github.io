@@ -1,16 +1,17 @@
+import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import { getToolByRoute } from "@/lib/tools";
 import TextGeneratorTool from "@/components/tools/generators/TextGeneratorTool";
 
 export const metadata = {
-	title: "Free Bio Generator Online - No Signup | SopKit",
-	description: "Create professional and aesthetic bios for social media profiles.",
-	keywords: "bio generator, instagram bio generator, twitter bio, free bio maker, social media bio, SopKit, bio-generator, free bio-generator, bio generator online, online generator, free creator, content generator",
+	title: "Bio Generator Online Free - No Signup | SopKit",
+	description: "Create professional and aesthetic bios for social media profiles. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/bio-generator",
 	},
 	openGraph: {
-		title: "Free Bio Generator Online - No Signup | SopKit",
-		description: "Create professional and aesthetic bios for social media profiles.",
+		title: "Bio Generator Online Free - No Signup",
+		description: "Create professional and aesthetic bios for social media profiles. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/bio-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -18,19 +19,23 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Bio Generator Online - No Signup | SopKit",
-		description: "Create professional and aesthetic bios for social media profiles.",
+		title: "Bio Generator Online Free - Fast & Secure",
+		description: "Create professional and aesthetic bios for social media profiles. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
-	const tool = { id: "bio-generator", name: "Bio Generator", description: "Generate creative, engaging bios for Instagram, Twitter, LinkedIn, and more. Our free Bio Generator creates professional and catchy bios instantly in your browser.", route: "/bio-generator", category: "generators" };
+	const tool = getToolByRoute("/bio-generator");
+
+	if (!tool) {
+		return notFound();
+	}
+
 	return (
-		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: tool.name, description: tool.description, url: "https://sopkit.github.io/bio-generator", applicationCategory: "UtilitiesApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }) }} />
-			<ToolLayout tool={tool}><TextGeneratorTool /></ToolLayout>
-		</>
+		<ToolLayout tool={tool}>
+			<TextGeneratorTool />
+		</ToolLayout>
 	);
 }

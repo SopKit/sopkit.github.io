@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import PDFToImage from "@/components/tools/pdf/PDFToImage";
 import { getToolByRoute } from "@/lib/tools";
+import PDFToImage from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free PDF to Image Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free PDF to Image online. Safe and private browser-based tool with no registration. No signup required.",
-	keywords: "pdf to image, convert pdf to jpg, pdf to png, pdf page to image, free online tool, SopKit, pdf-to-image, free pdf-to-image, pdf to image online, pdf utility, document editor, online pdf tool",
+	title: "PDF to Image Online Free - Edit, Merge & Convert PDF | SopKit",
+	description: "Convert PDF pages to high-quality JPG, PNG images No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/pdf-to-image",
 	},
 	openGraph: {
-		title: "Free PDF to Image Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF to Image online. Safe and private browser-based tool with no registration. No signup required.",
+		title: "PDF to Image Online Free - No Signup",
+		description: "Convert PDF pages to high-quality JPG, PNG images No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/pdf-to-image",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PDF to Image Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF to Image online. Safe and private browser-based tool with no registration. No signup required.",
+		title: "PDF to Image Online Free - Fast & Secure",
+		description: "Convert PDF pages to high-quality JPG, PNG images No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

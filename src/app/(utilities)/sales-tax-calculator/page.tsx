@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Free Sales Tax Calculator Online - No Signup | SopKit",
-	description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "sales tax calculator, free online tool, no signup, sales-tax-calculator, free sales-tax-calculator, Sales Tax Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Sales Tax Calculator Online Free - No Signup | SopKit",
+	description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/sales-tax-calculator",
 	},
 	openGraph: {
-		title: "Free Sales Tax Calculator Online - No Signup | SopKit",
-		description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Sales Tax Calculator Online Free - No Signup",
+		description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
 		url: "https://sopkit.github.io/sales-tax-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Sales Tax Calculator Online - No Signup | SopKit",
-		description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Sales Tax Calculator Online Free - Fast & Secure",
+		description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

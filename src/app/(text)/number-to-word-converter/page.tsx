@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import NumberToWordTool from "@/components/tools/text/NumberToWordTool";
 import { getToolByRoute } from "@/lib/tools";
+import WordCounterTool from "@/components/tools/text/WordCounterTool";
 
 export const metadata = {
-	title: "Free Number to Word Converter Online - No Signup | SopKit",
-	description: "Format, clean, sort, and analyze text files instantly with our free Number to Word Converter online. Fast and private browser utility with no signup. 100% free.",
-	keywords: "number to word converter, free online tool, no signup, number-to-word-converter, free number-to-word-converter, Number To Word Converter online, text tool, text editor online, content formatter, writing utility, SopKit",
+	title: "Number to Word Converter Online Free - No Signup | SopKit",
+	description: "Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple formats and large numbers. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/number-to-word-converter",
 	},
 	openGraph: {
-		title: "Free Number to Word Converter Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Number to Word Converter online. Fast and private browser utility with no signup. 100% free.",
+		title: "Number to Word Converter Online Free - No Signup",
+		description: "Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple forma",
 		url: "https://sopkit.github.io/number-to-word-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Number to Word Converter Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Number to Word Converter online. Fast and private browser utility with no signup. 100% free.",
+		title: "Number to Word Converter Online Free - Fast & Secure",
+		description: "Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple forma",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<NumberToWordTool />
+			<WordCounterTool />
 		</ToolLayout>
 	);
 }

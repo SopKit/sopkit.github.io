@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 import { getToolByRoute } from "@/lib/tools";
+import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Free Parts Per Converter Online - No Signup | SopKit",
-	description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "parts per converter, free online tool, no signup, parts-per-converter, free parts-per-converter, Parts Per Converter online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Parts Per Converter Online Free - No Signup | SopKit",
+	description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/parts-per-converter",
 	},
 	openGraph: {
-		title: "Free Parts Per Converter Online - No Signup | SopKit",
-		description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Parts Per Converter Online Free - No Signup",
+		description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
 		url: "https://sopkit.github.io/parts-per-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Parts Per Converter Online - No Signup | SopKit",
-		description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Parts Per Converter Online Free - Fast & Secure",
+		description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

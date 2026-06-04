@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BaseConverter from "@/components/tools/shared/BaseConverter";
 import { getToolByRoute } from "@/lib/tools";
+import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Free Binary to Octal Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free Binary to Octal Converter online. Secure, local developer utility with no registration.",
-	keywords: "binary to octal converter, free online tool, no signup, binary-to-octal-converter, free binary-to-octal-converter, Binary To Octal Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "Binary to Octal Converter Online Free - Developer Tools | SopKit",
+	description: "Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical students. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/binary-to-octal-converter",
 	},
 	openGraph: {
-		title: "Free Binary to Octal Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Binary to Octal Converter online. Secure, local developer utility with no registration.",
+		title: "Binary to Octal Converter Online Free - No Signup",
+		description: "Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical studen",
 		url: "https://sopkit.github.io/binary-to-octal-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Binary to Octal Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Binary to Octal Converter online. Secure, local developer utility with no registration.",
+		title: "Binary to Octal Converter Online Free - Fast & Secure",
+		description: "Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical studen",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

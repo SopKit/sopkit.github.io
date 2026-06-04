@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 
 export const metadata = {
-	title: "Free XML to JSON Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free XML to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
-	keywords: "xml to json converter, free online tool, no signup, xml-to-json-converter, free xml-to-json-converter, Xml To Json Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "XML to JSON Converter Online Free - Developer Tools | SopKit",
+	description: "Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for web apps. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/xml-to-json-converter",
 	},
 	openGraph: {
-		title: "Free XML to JSON Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free XML to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
+		title: "XML to JSON Converter Online Free - No Signup",
+		description: "Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for w",
 		url: "https://sopkit.github.io/xml-to-json-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free XML to JSON Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free XML to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
+		title: "XML to JSON Converter Online Free - Fast & Secure",
+		description: "Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for w",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 import { getToolByRoute } from "@/lib/tools";
+import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Free Angle Converter Online - No Signup | SopKit",
-	description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians...",
-	keywords: "angle converter, free online tool, no signup, angle-converter, free angle-converter, Angle Converter online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Angle Converter Online Free - No Signup | SopKit",
+	description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and accurate. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/angle-converter",
 	},
 	openGraph: {
-		title: "Free Angle Converter Online - No Signup | SopKit",
-		description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians...",
+		title: "Angle Converter Online Free - No Signup",
+		description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and",
 		url: "https://sopkit.github.io/angle-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Angle Converter Online - No Signup | SopKit",
-		description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians...",
+		title: "Angle Converter Online Free - Fast & Secure",
+		description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

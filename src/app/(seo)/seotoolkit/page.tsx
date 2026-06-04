@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import SeoToolkit from "@/components/tools/seo/SeoToolkit";
 import { getToolByRoute } from "@/lib/tools";
+import SeoToolkit from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free SEO Toolkit Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free SEO Toolkit online. Optimize search presence with no signup. No registration needed.",
-	keywords: "seo toolkit, free online tool, no signup, seotoolkit, free seotoolkit, Seotoolkit online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
+	title: "SEO Toolkit Online Free - No Signup | SopKit",
+	description: "All-in-one SEO audit and analysis tool. 27+ checks. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/seotoolkit",
 	},
 	openGraph: {
-		title: "Free SEO Toolkit Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free SEO Toolkit online. Optimize search presence with no signup. No registration needed.",
+		title: "SEO Toolkit Online Free - No Signup",
+		description: "All-in-one SEO audit and analysis tool. 27+ checks. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/seotoolkit",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free SEO Toolkit Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free SEO Toolkit online. Optimize search presence with no signup. No registration needed.",
+		title: "SEO Toolkit Online Free - Fast & Secure",
+		description: "All-in-one SEO audit and analysis tool. 27+ checks. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

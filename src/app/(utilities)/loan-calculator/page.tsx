@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Free Loan Calculator Online - No Signup | SopKit",
-	description: "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "loan calculator, free online tool, no signup, loan-calculator, free loan-calculator, Loan Calculator online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Loan Calculator Online Free - No Signup | SopKit",
+	description: "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/loan-calculator",
 	},
 	openGraph: {
-		title: "Free Loan Calculator Online - No Signup | SopKit",
-		description: "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Loan Calculator Online Free - No Signup",
+		description: "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/loan-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Loan Calculator Online - No Signup | SopKit",
-		description: "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Loan Calculator Online Free - Fast & Secure",
+		description: "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

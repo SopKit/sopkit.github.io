@@ -5,15 +5,15 @@ import { Code, Globe, Lock, Zap, Users, Star } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
-	title: "Free About Online - No Signup | SopKit",
-	description: "Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.",
+	title: "About SopKit - 365+ Free Online Tools for PDF, Image, Video & More",
+	description: "Learn about SopKit, your privacy-first toolkit with 365+ free online tools. We offer browser-based PDF, image, video, SEO, and developer utilities with no signup required.",
 	keywords: "about SopKit, free online tools, browser-based tools, privacy-conscious tools, about, free about, about online, SopKit, browser tools, no signup tools, privacy tools",
 	alternates: {
 		canonical: "https://sopkit.github.io/about",
 	},
 	openGraph: {
-		title: "Free About Online - No Signup | SopKit",
-		description: "Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.",
+		title: "About SopKit - 365+ Free Online Tools for PDF, Image, Video & More",
+		description: "Learn about SopKit, your privacy-first toolkit with 365+ free online tools. We offer browser-based PDF, image, video, SEO, and developer utilities with no signup required.",
 		url: "https://sopkit.github.io/about",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -21,8 +21,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free About Online - No Signup | SopKit",
-		description: "Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.",
+		title: "About SopKit - 365+ Free Online Tools for PDF, Image, Video & More",
+		description: "Learn about SopKit, your privacy-first toolkit with 365+ free online tools. We offer browser-based PDF, image, video, SEO, and developer utilities with no signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

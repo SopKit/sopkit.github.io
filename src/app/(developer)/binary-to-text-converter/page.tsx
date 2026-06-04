@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BaseConverter from "@/components/tools/shared/BaseConverter";
 import { getToolByRoute } from "@/lib/tools";
+import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Free Binary to Text Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free Binary to Text Converter online. Secure, local developer utility with no registration.",
-	keywords: "binary to text converter, free online tool, no signup, binary-to-text-converter, free binary-to-text-converter, Binary To Text Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "Binary to Text Converter Online Free - Developer Tools | SopKit",
+	description: "Decode binary strings into readable text instantly. Our free online tool is perfect for discovering hidden messages or debugging data streams. 100% free and secure. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/binary-to-text-converter",
 	},
 	openGraph: {
-		title: "Free Binary to Text Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Binary to Text Converter online. Secure, local developer utility with no registration.",
+		title: "Binary to Text Converter Online Free - No Signup",
+		description: "Decode binary strings into readable text instantly. Our free online tool is perfect for discovering hidden messages or debugging data streams. 100% free and sec",
 		url: "https://sopkit.github.io/binary-to-text-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Binary to Text Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Binary to Text Converter online. Secure, local developer utility with no registration.",
+		title: "Binary to Text Converter Online Free - Fast & Secure",
+		description: "Decode binary strings into readable text instantly. Our free online tool is perfect for discovering hidden messages or debugging data streams. 100% free and sec",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 
 export const metadata = {
-	title: "Free CSS Minifier Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free CSS Minifier online. Secure, local developer utility with no registration. No signup required.",
-	keywords: "css minifier, free online tool, no signup, css-minifier, free css-minifier, Css Minifier online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "CSS Minifier Online Free - Developer Tools | SopKit",
+	description: "Compress and minify your CSS files to reduce page load times and improve website performance. Our free online tool removes unnecessary whitespace and comments instantly. Privacy-focused. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/css-minifier",
 	},
 	openGraph: {
-		title: "Free CSS Minifier Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free CSS Minifier online. Secure, local developer utility with no registration. No signup required.",
+		title: "CSS Minifier Online Free - No Signup",
+		description: "Compress and minify your CSS files to reduce page load times and improve website performance. Our free online tool removes unnecessary whitespace and comments i",
 		url: "https://sopkit.github.io/css-minifier",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free CSS Minifier Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free CSS Minifier online. Secure, local developer utility with no registration. No signup required.",
+		title: "CSS Minifier Online Free - Fast & Secure",
+		description: "Compress and minify your CSS files to reduce page load times and improve website performance. Our free online tool removes unnecessary whitespace and comments i",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

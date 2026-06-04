@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BaseConverter from "@/components/tools/shared/BaseConverter";
 import { getToolByRoute } from "@/lib/tools";
+import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Free HEX to Decimal Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free HEX to Decimal Converter online. Secure, local developer utility with no registration.",
-	keywords: "hex to decimal converter, free online tool, no signup, hex-to-decimal-converter, free hex-to-decimal-converter, Hex To Decimal Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "HEX to Decimal Converter Online Free - Developer Tools | SopKit",
+	description: "Convert hexadecimal numbers to decimal (Base-10) instantly. Our free online tool provides quick and accurate base conversions for programming and memory address analysis. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/hex-to-decimal-converter",
 	},
 	openGraph: {
-		title: "Free HEX to Decimal Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free HEX to Decimal Converter online. Secure, local developer utility with no registration.",
+		title: "HEX to Decimal Converter Online Free - No Signup",
+		description: "Convert hexadecimal numbers to decimal (Base-10) instantly. Our free online tool provides quick and accurate base conversions for programming and memory address",
 		url: "https://sopkit.github.io/hex-to-decimal-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free HEX to Decimal Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free HEX to Decimal Converter online. Secure, local developer utility with no registration.",
+		title: "HEX to Decimal Converter Online Free - Fast & Secure",
+		description: "Convert hexadecimal numbers to decimal (Base-10) instantly. Our free online tool provides quick and accurate base conversions for programming and memory address",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

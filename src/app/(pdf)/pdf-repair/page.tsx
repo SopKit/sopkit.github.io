@@ -1,16 +1,17 @@
+import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import PDFRepair from "@/components/tools/pdf/PDFRepair";
+import { getToolByRoute } from "@/lib/tools";
+import PDFRepair from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free PDF Repair Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free PDF Repair online. Safe and private browser-based tool with no registration. 100% free and secure.",
-	keywords: "pdf repair, fix corrupted pdf, repair broken pdf, online pdf fixer, free pdf repair, SopKit, pdf-repair, free pdf-repair, pdf repair online, pdf utility, document editor, online pdf tool",
+	title: "PDF Repair Online Free - Edit, Merge & Convert PDF | SopKit",
+	description: "Fix corrupted or broken PDF files online for free. Our secure repair tool rebuilds document headers and cross-reference tables to restore access to your PDF documents instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/pdf-repair",
 	},
 	openGraph: {
-		title: "Free PDF Repair Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Repair online. Safe and private browser-based tool with no registration. 100% free and secure.",
+		title: "PDF Repair Online Free - No Signup",
+		description: "Fix corrupted or broken PDF files online for free. Our secure repair tool rebuilds document headers and cross-reference tables to restore access to your PDF doc",
 		url: "https://sopkit.github.io/pdf-repair",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -18,42 +19,23 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PDF Repair Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Repair online. Safe and private browser-based tool with no registration. 100% free and secure.",
+		title: "PDF Repair Online Free - Fast & Secure",
+		description: "Fix corrupted or broken PDF files online for free. Our secure repair tool rebuilds document headers and cross-reference tables to restore access to your PDF doc",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
-	const tool = {
-		id: "pdf-repair",
-		name: "PDF Repair",
-		description: "Repair corrupted or broken PDF files online for free. Fix PDF headers, cross-reference tables, and document structures instantly in your browser.",
-		route: "/pdf-repair",
-		category: "pdf",
-	};
+	const tool = getToolByRoute("/pdf-repair");
+
+	if (!tool) {
+		return notFound();
+	}
 
 	return (
-		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "SoftwareApplication",
-						name: tool.name,
-						description: tool.description,
-						url: "https://sopkit.github.io/pdf-repair",
-						applicationCategory: "UtilitiesApplication",
-						operatingSystem: "Any",
-						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-					}),
-				}}
-			/>
-			<ToolLayout tool={tool}>
-				<PDFRepair />
-			</ToolLayout>
-		</>
+		<ToolLayout tool={tool}>
+			<PDFRepair />
+		</ToolLayout>
 	);
 }

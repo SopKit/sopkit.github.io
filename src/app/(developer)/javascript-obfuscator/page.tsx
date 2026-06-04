@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 
 export const metadata = {
-	title: "Free JavaScript Obfuscator Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free JavaScript Obfuscator online. Secure, local developer utility with no registration. 100% free.",
-	keywords: "javascript obfuscator, free online tool, no signup, javascript-obfuscator, free javascript-obfuscator, Javascript Obfuscator online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "JavaScript Obfuscator Online Free - Developer Tools | SopKit",
+	description: "Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent unauthorized script modification. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/javascript-obfuscator",
 	},
 	openGraph: {
-		title: "Free JavaScript Obfuscator Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JavaScript Obfuscator online. Secure, local developer utility with no registration. 100% free.",
+		title: "JavaScript Obfuscator Online Free - No Signup",
+		description: "Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent",
 		url: "https://sopkit.github.io/javascript-obfuscator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JavaScript Obfuscator Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JavaScript Obfuscator online. Secure, local developer utility with no registration. 100% free.",
+		title: "JavaScript Obfuscator Online Free - Fast & Secure",
+		description: "Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

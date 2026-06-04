@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import SitemapUrlDownloader from "@/components/tools/downloaders/SitemapUrlDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import DownloaderEngine from "@/components/tools/downloaders/DownloaderEngine";
 
 export const metadata = {
-	title: "Free Sitemap Url Downloader Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Sitemap Url Downloader online. Optimize search presence with no signup. Easy to use.",
-	keywords: "sitemap url downloader, free online tool, no signup, sitemap-url-downloader, free sitemap-url-downloader, Sitemap Url Downloader online, SEO tool, search optimizer, website analyzer, free SEO utility, SopKit",
+	title: "Sitemap Url Downloader Online Free - No Signup | SopKit",
+	description: "Free Sitemap Url Downloader online. Sitemap Url Downloader allows you to optimize your website quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/sitemap-url-downloader",
 	},
 	openGraph: {
-		title: "Free Sitemap Url Downloader Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Sitemap Url Downloader online. Optimize search presence with no signup. Easy to use.",
+		title: "Sitemap Url Downloader Online Free - No Signup",
+		description: "Free Sitemap Url Downloader online. Sitemap Url Downloader allows you to optimize your website quickly and easily. 100% free, no signup required, and privacy-fo",
 		url: "https://sopkit.github.io/sitemap-url-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Sitemap Url Downloader Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Sitemap Url Downloader online. Optimize search presence with no signup. Easy to use.",
+		title: "Sitemap Url Downloader Online Free - Fast & Secure",
+		description: "Free Sitemap Url Downloader online. Sitemap Url Downloader allows you to optimize your website quickly and easily. 100% free, no signup required, and privacy-fo",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<SitemapUrlDownloader />
+			<DownloaderEngine />
 		</ToolLayout>
 	);
 }

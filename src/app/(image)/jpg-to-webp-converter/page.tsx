@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Free JPG to WebP Converter Online - No Signup | SopKit",
-	description: "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up...",
-	keywords: "jpg to webp converter, convert jpg to webp, image optimizer, webp converter, free online tool, SopKit, jpg-to-webp-converter, free jpg-to-webp-converter, jpg to webp converter online, image editing, photo editor, browser image tool",
+	title: "JPG to WebP Converter Online Free - Compress & Convert Images | SopKit",
+	description: "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your website instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/jpg-to-webp-converter",
 	},
 	openGraph: {
-		title: "Free JPG to WebP Converter Online - No Signup | SopKit",
-		description: "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up...",
+		title: "JPG to WebP Converter Online Free - No Signup",
+		description: "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your webs",
 		url: "https://sopkit.github.io/jpg-to-webp-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JPG to WebP Converter Online - No Signup | SopKit",
-		description: "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up...",
+		title: "JPG to WebP Converter Online Free - Fast & Secure",
+		description: "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your webs",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<ImageConverterTool />
+			<ImageConverterTool defaultOutputFormat="jpeg" />
 		</ToolLayout>
 	);
 }

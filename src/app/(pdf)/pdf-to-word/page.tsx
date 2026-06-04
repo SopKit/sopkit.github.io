@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import PDFToWord from "@/components/tools/pdf/PDFToWord";
 import { getToolByRoute } from "@/lib/tools";
+import PDFToWord from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "Free PDF to Word Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free PDF to Word online. Safe and private browser-based tool with no registration. No signup required.",
-	keywords: "pdf to word, convert pdf to word, pdf to docx, free pdf converter, online pdf tool, SopKit, pdf-to-word, free pdf-to-word, pdf to word online, pdf utility, document editor, secure document processing",
+	title: "PDF to Word Online Free - Edit, Merge & Convert PDF | SopKit",
+	description: "Convert PDF files to editable Word documents No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/pdf-to-word",
 	},
 	openGraph: {
-		title: "Free PDF to Word Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF to Word online. Safe and private browser-based tool with no registration. No signup required.",
+		title: "PDF to Word Online Free - No Signup",
+		description: "Convert PDF files to editable Word documents No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/pdf-to-word",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PDF to Word Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF to Word online. Safe and private browser-based tool with no registration. No signup required.",
+		title: "PDF to Word Online Free - Fast & Secure",
+		description: "Convert PDF files to editable Word documents No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

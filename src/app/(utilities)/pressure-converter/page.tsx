@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 import { getToolByRoute } from "@/lib/tools";
+import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Free Pressure Converter Online - No Signup | SopKit",
-	description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "pressure converter, free online tool, no signup, pressure-converter, free pressure-converter, Pressure Converter online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Pressure Converter Online Free - No Signup | SopKit",
+	description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/pressure-converter",
 	},
 	openGraph: {
-		title: "Free Pressure Converter Online - No Signup | SopKit",
-		description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Pressure Converter Online Free - No Signup",
+		description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
 		url: "https://sopkit.github.io/pressure-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Pressure Converter Online - No Signup | SopKit",
-		description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Pressure Converter Online Free - Fast & Secure",
+		description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

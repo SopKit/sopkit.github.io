@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 import { getToolByRoute } from "@/lib/tools";
+import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "Free YouTube Money Calculator Online - No Signup | SopKit",
-	description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement...",
-	keywords: "youtube money calculator, free online tool, no signup, youtube-money-calculator, free youtube-money-calculator, Youtube Money Calculator online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
+	title: "YouTube Money Calculator Online Free - No Signup | SopKit",
+	description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metrics. Perfect for creators. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/youtube-money-calculator",
 	},
 	openGraph: {
-		title: "Free YouTube Money Calculator Online - No Signup | SopKit",
-		description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement...",
+		title: "YouTube Money Calculator Online Free - No Signup",
+		description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metri",
 		url: "https://sopkit.github.io/youtube-money-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Money Calculator Online - No Signup | SopKit",
-		description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement...",
+		title: "YouTube Money Calculator Online Free - Fast & Secure",
+		description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metri",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

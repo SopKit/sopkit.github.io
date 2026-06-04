@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Free JPG to ICO Converter Online - No Signup | SopKit",
-	description: "Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No...",
-	keywords: "jpg to ico converter, free online tool, no signup, jpg-to-ico-converter, free jpg-to-ico-converter, Jpg To Ico Converter online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "JPG to ICO Converter Online Free - Compress & Convert Images | SopKit",
+	description: "Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/jpg-to-ico-converter",
 	},
 	openGraph: {
-		title: "Free JPG to ICO Converter Online - No Signup | SopKit",
-		description: "Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No...",
+		title: "JPG to ICO Converter Online Free - No Signup",
+		description: "Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signu",
 		url: "https://sopkit.github.io/jpg-to-ico-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JPG to ICO Converter Online - No Signup | SopKit",
-		description: "Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No...",
+		title: "JPG to ICO Converter Online Free - Fast & Secure",
+		description: "Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signu",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<ImageConverterTool />
+			<ImageConverterTool defaultOutputFormat="jpeg" />
 		</ToolLayout>
 	);
 }

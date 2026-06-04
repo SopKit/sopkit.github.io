@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BaseConverter from "@/components/tools/shared/BaseConverter";
 import { getToolByRoute } from "@/lib/tools";
+import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Free Binary to Decimal Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free Binary to Decimal Converter online. Secure, local developer utility with no registration.",
-	keywords: "binary to decimal converter, free online tool, no signup, binary-to-decimal-converter, free binary-to-decimal-converter, Binary To Decimal Converter online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "Binary to Decimal Converter Online Free - Developer Tools | SopKit",
+	description: "Convert binary numbers to decimal (Base-10) instantly. Our free online converter helps you with computer science calculations and binary data analysis in seconds. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/binary-to-decimal-converter",
 	},
 	openGraph: {
-		title: "Free Binary to Decimal Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Binary to Decimal Converter online. Secure, local developer utility with no registration.",
+		title: "Binary to Decimal Converter Online Free - No Signup",
+		description: "Convert binary numbers to decimal (Base-10) instantly. Our free online converter helps you with computer science calculations and binary data analysis in second",
 		url: "https://sopkit.github.io/binary-to-decimal-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Binary to Decimal Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Binary to Decimal Converter online. Secure, local developer utility with no registration.",
+		title: "Binary to Decimal Converter Online Free - Fast & Secure",
+		description: "Convert binary numbers to decimal (Base-10) instantly. Our free online converter helps you with computer science calculations and binary data analysis in second",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

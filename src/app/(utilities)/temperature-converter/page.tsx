@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 import { getToolByRoute } from "@/lib/tools";
+import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Free Temperature Converter Online - No Signup | SopKit",
-	description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "temperature converter, free online tool, no signup, temperature-converter, free temperature-converter, Temperature Converter online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Temperature Converter Online Free - No Signup | SopKit",
+	description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/temperature-converter",
 	},
 	openGraph: {
-		title: "Free Temperature Converter Online - No Signup | SopKit",
-		description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Temperature Converter Online Free - No Signup",
+		description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
 		url: "https://sopkit.github.io/temperature-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Temperature Converter Online - No Signup | SopKit",
-		description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Temperature Converter Online Free - Fast & Secure",
+		description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

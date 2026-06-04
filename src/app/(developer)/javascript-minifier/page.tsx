@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 
 export const metadata = {
-	title: "Free JavaScript Minifier Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free JavaScript Minifier online. Secure, local developer utility with no registration. Easy to use.",
-	keywords: "javascript minifier, minify js, js compressor, javascript minification, online tool, SopKit, javascript-minifier, free javascript-minifier, javascript minifier online, developer tool, online code utility, free developer tool",
+	title: "JavaScript Minifier Online Free - Developer Tools | SopKit",
+	description: "Compress and minify your JavaScript files to reduce payload size and speed up your website. Our free online tool removes unnecessary code while preserving functionality. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/javascript-minifier",
 	},
 	openGraph: {
-		title: "Free JavaScript Minifier Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JavaScript Minifier online. Secure, local developer utility with no registration. Easy to use.",
+		title: "JavaScript Minifier Online Free - No Signup",
+		description: "Compress and minify your JavaScript files to reduce payload size and speed up your website. Our free online tool removes unnecessary code while preserving funct",
 		url: "https://sopkit.github.io/javascript-minifier",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JavaScript Minifier Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JavaScript Minifier online. Secure, local developer utility with no registration. Easy to use.",
+		title: "JavaScript Minifier Online Free - Fast & Secure",
+		description: "Compress and minify your JavaScript files to reduce payload size and speed up your website. Our free online tool removes unnecessary code while preserving funct",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import LineSorterTool from "@/components/tools/text/LineSorterTool";
 import { getToolByRoute } from "@/lib/tools";
+import LineSorterTool from "@/components/tools/text/LineSorterTool";
 
 export const metadata = {
-	title: "Free Line Sorter Online - No Signup | SopKit",
-	description: "Format, clean, sort, and analyze text files instantly with our free Line Sorter online. Fast and private browser utility with no signup. No registration needed.",
-	keywords: "line sorter, free online tool, no signup, line-sorter, free line-sorter, Line Sorter online, text tool, text editor online, content formatter, writing utility, SopKit",
+	title: "Line Sorter Online Free - No Signup | SopKit",
+	description: "Sort lists, names, or lines alphabetically or by length instantly. Our free online Line Sorter helps you organize data for cleaner documentation and code. Privacy-friendly and fast. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/line-sorter",
 	},
 	openGraph: {
-		title: "Free Line Sorter Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Line Sorter online. Fast and private browser utility with no signup. No registration needed.",
+		title: "Line Sorter Online Free - No Signup",
+		description: "Sort lists, names, or lines alphabetically or by length instantly. Our free online Line Sorter helps you organize data for cleaner documentation and code. Priva",
 		url: "https://sopkit.github.io/line-sorter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Line Sorter Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Line Sorter online. Fast and private browser utility with no signup. No registration needed.",
+		title: "Line Sorter Online Free - Fast & Secure",
+		description: "Sort lists, names, or lines alphabetically or by length instantly. Our free online Line Sorter helps you organize data for cleaner documentation and code. Priva",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

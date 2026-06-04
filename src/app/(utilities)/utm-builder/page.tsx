@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UTMBuilderTool from "@/components/tools/utilities/UTMBuilderTool";
 import { getToolByRoute } from "@/lib/tools";
+import UTMBuilderTool from "@/components/tools/utilities/UTMBuilderTool";
 
 export const metadata = {
-	title: "Free UTM Builder Online - No Signup | SopKit",
-	description: "Easily build campaign URLs with UTM parameters for Google Analytics tracking.",
-	keywords: "utm builder, free online tool, no signup, utm-builder, free utm-builder, Utm Builder online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "UTM Builder Online Free - No Signup | SopKit",
+	description: "Easily build campaign URLs with UTM parameters for Google Analytics tracking. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/utm-builder",
 	},
 	openGraph: {
-		title: "Free UTM Builder Online - No Signup | SopKit",
-		description: "Easily build campaign URLs with UTM parameters for Google Analytics tracking.",
+		title: "UTM Builder Online Free - No Signup",
+		description: "Easily build campaign URLs with UTM parameters for Google Analytics tracking. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/utm-builder",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free UTM Builder Online - No Signup | SopKit",
-		description: "Easily build campaign URLs with UTM parameters for Google Analytics tracking.",
+		title: "UTM Builder Online Free - Fast & Secure",
+		description: "Easily build campaign URLs with UTM parameters for Google Analytics tracking. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

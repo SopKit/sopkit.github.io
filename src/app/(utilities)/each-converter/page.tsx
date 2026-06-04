@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 import { getToolByRoute } from "@/lib/tools";
+import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Free Each Converter Online - No Signup | SopKit",
-	description: "Free each converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "each converter, free online tool, no signup, each-converter, free each-converter, Each Converter online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Each Converter Online Free - No Signup | SopKit",
+	description: "Free each converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/each-converter",
 	},
 	openGraph: {
-		title: "Free Each Converter Online - No Signup | SopKit",
-		description: "Free each converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Each Converter Online Free - No Signup",
+		description: "Free each converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/each-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Each Converter Online - No Signup | SopKit",
-		description: "Free each converter tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Each Converter Online Free - Fast & Secure",
+		description: "Free each converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -36,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<UniversalUnitConverter preset="dimensionless" />
+			<UniversalUnitConverter preset="typography" />
 		</ToolLayout>
 	);
 }

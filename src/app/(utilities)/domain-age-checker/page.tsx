@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Free Domain Age Checker Online - No Signup | SopKit",
-	description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis.",
-	keywords: "domain age checker, free online tool, no signup, domain-age-checker, free domain-age-checker, Domain Age Checker online, online utility, web calculator, free converter, browser tool, SopKit",
+	title: "Domain Age Checker Online Free - No Signup | SopKit",
+	description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/domain-age-checker",
 	},
 	openGraph: {
-		title: "Free Domain Age Checker Online - No Signup | SopKit",
-		description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis.",
+		title: "Domain Age Checker Online Free - No Signup",
+		description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis. No signup, no uploads",
 		url: "https://sopkit.github.io/domain-age-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Domain Age Checker Online - No Signup | SopKit",
-		description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis.",
+		title: "Domain Age Checker Online Free - Fast & Secure",
+		description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis. No signup, no uploads",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 import { getToolByRoute } from "@/lib/tools";
+import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 
 export const metadata = {
-	title: "Free Image Enlarger Online - No Signup | SopKit",
-	description: "Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows.",
-	keywords: "image enlarger, free online tool, no signup, image-enlarger, free image-enlarger, Image Enlarger online, image editing, photo editor, browser image tool, free photo utility, SopKit",
+	title: "Image Enlarger Online Free - Compress & Convert Images | SopKit",
+	description: "Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/image-enlarger",
 	},
 	openGraph: {
-		title: "Free Image Enlarger Online - No Signup | SopKit",
-		description: "Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Image Enlarger Online Free - No Signup",
+		description: "Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/image-enlarger",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Image Enlarger Online - No Signup | SopKit",
-		description: "Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows.",
+		title: "Image Enlarger Online Free - Fast & Secure",
+		description: "Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

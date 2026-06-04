@@ -1,16 +1,17 @@
+import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import { getToolByRoute } from "@/lib/tools";
 import NumberGeneratorTool from "@/components/tools/generators/NumberGeneratorTool";
 
 export const metadata = {
-	title: "Free Number Generator Online - No Signup | SopKit",
-	description: "Professional Number Generator tool for free online use.",
-	keywords: "number, generator, free number generator, online number generator, SopKit, number-generator, number generator, free number-generator, number generator online, online generator, free creator, content generator",
+	title: "Number Generator Online Free - No Signup | SopKit",
+	description: "Professional Number Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/number-generator",
 	},
 	openGraph: {
-		title: "Free Number Generator Online - No Signup | SopKit",
-		description: "Professional Number Generator tool for free online use.",
+		title: "Number Generator Online Free - No Signup",
+		description: "Professional Number Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/number-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -18,19 +19,23 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Number Generator Online - No Signup | SopKit",
-		description: "Professional Number Generator tool for free online use.",
+		title: "Number Generator Online Free - Fast & Secure",
+		description: "Professional Number Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
-	const tool = { id: "number-generator", name: "Random Number Generator", description: "Generate random numbers with configurable ranges, counts, and unique options. Our free Random Number Generator is perfect for lotteries, games, and statistics.", route: "/number-generator", category: "generators" };
+	const tool = getToolByRoute("/number-generator");
+
+	if (!tool) {
+		return notFound();
+	}
+
 	return (
-		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: tool.name, description: tool.description, url: "https://sopkit.github.io/number-generator", applicationCategory: "UtilitiesApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }) }} />
-			<ToolLayout tool={tool}><NumberGeneratorTool /></ToolLayout>
-		</>
+		<ToolLayout tool={tool}>
+			<NumberGeneratorTool />
+		</ToolLayout>
 	);
 }

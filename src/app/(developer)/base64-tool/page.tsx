@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import Base64Tool from "@/components/tools/developer/Base64Tool";
 import { getToolByRoute } from "@/lib/tools";
+import Base64Tool from "@/components/tools/developer/Base64Tool";
 
 export const metadata = {
-	title: "Free Base64 Tool Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free Base64 Tool online. Secure, local developer utility with no registration. No signup required.",
-	keywords: "base64 tool, base64 encoder decoder, encode decode base64, base64 converter, free tool, SopKit, base64-tool, free base64-tool, base64 tool online, developer tool, online code utility, free developer tool",
+	title: "Base64 Tool Online Free - Developer Tools | SopKit",
+	description: "Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text format. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/base64-tool",
 	},
 	openGraph: {
-		title: "Free Base64 Tool Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Base64 Tool online. Secure, local developer utility with no registration. No signup required.",
+		title: "Base64 Tool Online Free - No Signup",
+		description: "Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text forma",
 		url: "https://sopkit.github.io/base64-tool",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Base64 Tool Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free Base64 Tool online. Secure, local developer utility with no registration. No signup required.",
+		title: "Base64 Tool Online Free - Fast & Secure",
+		description: "Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text forma",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

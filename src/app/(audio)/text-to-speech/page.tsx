@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import TextToSpeechTool from "@/components/tools/audio/TextToSpeechTool";
 import { getToolByRoute } from "@/lib/tools";
+import TextToSpeechTool from "@/components/tools/audio/TextToSpeechTool";
 
 export const metadata = {
-	title: "Free Text to Speech Online - No Signup | SopKit",
-	description: "Process, edit, and convert audio files with our free Text to Speech online. High-quality output and private browser-based tools with no signup. Try it free now.",
-	keywords: "text to speech, tts, text to audio, voice generator, ai voice, free online tool, SopKit, text-to-speech, free text-to-speech, text to speech online, audio converter, online audio tool",
+	title: "Text to Speech Online Free - No Signup | SopKit",
+	description: "Convert text to natural sounding speech audio No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/text-to-speech",
 	},
 	openGraph: {
-		title: "Free Text to Speech Online - No Signup | SopKit",
-		description: "Process, edit, and convert audio files with our free Text to Speech online. High-quality output and private browser-based tools with no signup. Try it free now.",
+		title: "Text to Speech Online Free - No Signup",
+		description: "Convert text to natural sounding speech audio No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/text-to-speech",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Text to Speech Online - No Signup | SopKit",
-		description: "Process, edit, and convert audio files with our free Text to Speech online. High-quality output and private browser-based tools with no signup. Try it free now.",
+		title: "Text to Speech Online Free - Fast & Secure",
+		description: "Convert text to natural sounding speech audio No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

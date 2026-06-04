@@ -312,8 +312,16 @@ function generatePageContent(tool) {
   }
 
   // Generate unique metadata using tool name and category
-  const title = `${tool.name} Online – Free & No Signup | SopKit`;
-  const description = tool.description || `Use our free ${tool.name} tool to process your data instantly. Privacy-friendly, browser-based, no signup required.`;
+  let titleSuffix = "Online Free - No Signup | SopKit";
+  if (tool.category === 'pdf') titleSuffix = "Online Free - Edit, Merge & Convert PDF | SopKit";
+  if (tool.category === 'image') titleSuffix = "Online Free - Compress & Convert Images | SopKit";
+  if (tool.category === 'video') titleSuffix = "Online Free - Convert & Download Videos | SopKit";
+  if (tool.category === 'developer') titleSuffix = "Online Free - Developer Tools | SopKit";
+  
+  const title = `${tool.name} ${titleSuffix}`;
+  
+  const genericDesc = `Use our free ${tool.name} tool to process your data instantly. Privacy-friendly, browser-based, no signup required. 100% free and secure.`;
+  const description = tool.description ? `${tool.description} No signup, no uploads, 100% private browser-based tool.` : genericDesc;
   const canonical = `https://sopkit.github.io${tool.route}`;
 
   // Component import statement
@@ -335,7 +343,7 @@ export const metadata = {
 		canonical: "${canonical}",
 	},
 	openGraph: {
-		title: "${tool.name} – Free Online Tool",
+		title: "${tool.name} Online Free - No Signup",
 		description: "${description.replace(/"/g, '').substring(0, 160)}",
 		url: "${canonical}",
 		siteName: "SopKit",
@@ -344,7 +352,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "${tool.name} – Fast & Secure",
+		title: "${tool.name} Online Free - Fast & Secure",
 		description: "${description.replace(/"/g, '').substring(0, 160)}",
 		images: ["/og-image.jpg"],
 	},
@@ -386,22 +394,10 @@ for (const tool of tools) {
   const pageDir = path.join(APP_DIR, groupFolder, routePath);
   const pagePath = path.join(pageDir, 'page.tsx');
 
-  // Determine if page exists and whether it uses RegisteredToolMount
+  // Determine if page exists
   let existingContent = '';
-  let needsUpdate = false;
   if (fs.existsSync(pagePath)) {
     existingContent = fs.readFileSync(pagePath, 'utf8');
-    if (existingContent.includes('RegisteredToolMount') || existingContent.includes('ToolPageContent')) {
-      needsUpdate = true;
-    } else {
-      // Already using direct component? Skip for now if it doesn't use generic mount
-      // But still may need to ensure imports are correct.
-      // For safety, we'll skip for now; but we could still update metadata.
-      skipped++;
-      continue;
-    }
-  } else {
-    needsUpdate = true; // need to create
   }
 
   const newContent = generatePageContent(tool);
@@ -411,7 +407,8 @@ for (const tool of tools) {
     continue;
   }
 
-  if (existingContent && !needsUpdate) {
+  // If content is already same, skip
+  if (existingContent === newContent) {
     skipped++;
     continue;
   }

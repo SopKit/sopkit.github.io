@@ -1,18 +1,17 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 import { getToolByRoute } from "@/lib/tools";
+import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 
 export const metadata = {
-	title: "Free HTML Minifier Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free HTML Minifier online. Secure, local developer utility with no registration. Try it free now.",
-	keywords: "html minifier, free online tool, no signup, html-minifier, free html-minifier, Html Minifier online, developer tool, web dev utility, code formatter, online developer, SopKit",
+	title: "HTML Minifier Online Free - Developer Tools | SopKit",
+	description: "Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/html-minifier",
 	},
 	openGraph: {
-		title: "Free HTML Minifier Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free HTML Minifier online. Secure, local developer utility with no registration. Try it free now.",
+		title: "HTML Minifier Online Free - No Signup",
+		description: "Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load",
 		url: "https://sopkit.github.io/html-minifier",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free HTML Minifier Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free HTML Minifier online. Secure, local developer utility with no registration. Try it free now.",
+		title: "HTML Minifier Online Free - Fast & Secure",
+		description: "Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
