@@ -375,6 +375,12 @@ export default function RootLayout({
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 						<AppleNavbar />
 						{children}
+						<div className="mx-auto max-w-7xl px-4 py-6 text-center text-sm text-muted-foreground">
+							SopKit is free.
+							<a href="https://phon.pe/93dek5ee" target="_blank" rel="noopener noreferrer sponsored" className="mx-1 font-medium text-blue-600 hover:underline dark:text-blue-400">Use our referral</a>,
+							<a href="https://sopkit.github.io/advertise" className="mx-1 font-medium text-blue-600 hover:underline dark:text-blue-400">sponsor the project</a>,
+							or <a href="https://sh20raj.github.io" target="_blank" rel="noopener noreferrer" className="mx-1 font-medium text-blue-600 hover:underline dark:text-blue-400">hire me for web development</a> ❤️
+						</div>
 						<AppleFooter categories={categories} />
 						<Toaster />
 					</ThemeProvider>
