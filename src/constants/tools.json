@@ -8797,6 +8797,38 @@
       "description": "Professional SEO tools for keyword research, rank tracking, technical SEO, and website optimization. Boost your search rankings with our comprehensive SEO toolkit.",
       "tools": [
         {
+          "id": "domain-name-generator",
+          "name": "Domain Name Generator",
+          "description": "Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free.",
+          "route": "/domain-name-generator",
+          "popular": false,
+          "category": "seo"
+        },
+        {
+          "id": "website-cost-calculator",
+          "name": "Website Cost Calculator",
+          "description": "Estimate how much a website may cost based on pages, design quality, and features like ecommerce.",
+          "route": "/website-cost-calculator",
+          "popular": false,
+          "category": "seo"
+        },
+        {
+          "id": "seo-title-meta-description-generator",
+          "name": "SEO Title & Meta Description Generator",
+          "description": "Generate SEO-friendly page titles and meta descriptions for blogs, tools, and landing pages.",
+          "route": "/seo-title-meta-description-generator",
+          "popular": true,
+          "category": "seo"
+        },
+        {
+          "id": "robots-txt-sitemap-generator",
+          "name": "Robots.txt and Sitemap Generator",
+          "description": "Generate robots.txt and sitemap.xml files for your website to improve crawling and indexing.",
+          "route": "/robots-txt-sitemap-generator",
+          "popular": false,
+          "category": "seo"
+        },
+        {
           "id": "keyword-research-tool",
           "name": "Advanced Keyword Research",
           "description": "Comprehensive keyword research tool with search volume, difficulty, CPC data, and keyword suggestions. Find profitable keywords for SEO.",
@@ -9885,6 +9917,54 @@
       "icon": "CalculatorIcon",
       "description": "Calculate academic grades, attendance shortage, and construction materials with ease.",
       "tools": [
+        {
+          "id": "invoice-generator-india",
+          "name": "Invoice Generator India with GST",
+          "description": "Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free.",
+          "route": "/invoice-generator-india",
+          "popular": true,
+          "category": "calculators"
+        },
+        {
+          "id": "gst-calculator-india",
+          "name": "GST Calculator India",
+          "description": "Calculate GST amount, inclusive/exclusive price, CGST, SGST, and IGST for Indian invoices instantly.",
+          "route": "/gst-calculator-india",
+          "popular": true,
+          "category": "calculators"
+        },
+        {
+          "id": "emi-calculator",
+          "name": "EMI Calculator for Loans",
+          "description": "Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans.",
+          "route": "/emi-calculator",
+          "popular": true,
+          "category": "calculators"
+        },
+        {
+          "id": "sip-calculator",
+          "name": "SIP Calculator India",
+          "description": "Calculate estimated SIP returns and wealth growth for mutual fund investments online for free.",
+          "route": "/sip-calculator",
+          "popular": true,
+          "category": "calculators"
+        },
+        {
+          "id": "fd-calculator-india",
+          "name": "FD Calculator India",
+          "description": "Calculate fixed deposit maturity amount and interest with quarterly compounding for Indian banks.",
+          "route": "/fd-calculator-india",
+          "popular": false,
+          "category": "calculators"
+        },
+        {
+          "id": "salary-calculator-india",
+          "name": "Salary Calculator India (CTC to In-Hand)",
+          "description": "Calculate your monthly in-hand salary from annual CTC with PF, professional tax, and income tax deductions.",
+          "route": "/salary-calculator-india",
+          "popular": true,
+          "category": "calculators"
+        },
         {
           "id": "cgpa-to-percentage-calculator-india",
           "name": "CGPA to Percentage Calculator for Indian Universities",

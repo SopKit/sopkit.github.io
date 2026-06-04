@@ -7,7 +7,7 @@ import { SITE_CONFIG } from "@/constants/config";
 export const metadata = {
 	title: "About SopKit - 365+ Free Online Tools for PDF, Image, Video & More",
 	description: "Learn about SopKit, your privacy-first toolkit with 365+ free online tools. We offer browser-based PDF, image, video, SEO, and developer utilities with no signup required.",
-	keywords: "about SopKit, free online tools, browser-based tools, privacy-conscious tools, about, free about, about online, SopKit, browser tools, no signup tools, privacy tools",
+	keywords: "about SopKit, free online tools, browser-based tools, privacy-conscious tools, SopKit tools list, no signup utilities, browser-based file tools",
 	alternates: {
 		canonical: "https://sopkit.github.io/about",
 	},

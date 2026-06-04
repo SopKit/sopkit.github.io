@@ -216,9 +216,16 @@ const PDFPageDelete = dynamic(() => import("@/components/tools/pdf/PDFPageDelete
 const PDFCompressor = dynamic(() => import("@/components/tools/pdf/PDFCompressor"), { ssr: false });
 
 const FinanceCalculators = dynamic(() => import("@/components/tools/impl/FinanceCalculators"), { ssr: false });
-const SimpleInvoiceGenerator = dynamic(() => import("@/components/tools/money/SimpleInvoiceGenerator"), { ssr: false });
+const SimpleInvoiceGenerator = dynamic(() => import("@/components/tools/generators/InvoiceGenerator"), { ssr: false });
+
+const WebTools = dynamic(() => import("@/components/tools/impl/WebTools"), { ssr: false });
+const SitemapGeneratorTool = dynamic(() => import("@/components/tools/seo/SitemapGeneratorTool"), { ssr: false });
 
 export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentType<any>; props: any }> = {
+    "domain-name-generator": { component: WebTools, props: { defaultTab: "domain" } },
+    "website-cost-calculator": { component: WebTools, props: { defaultTab: "cost" } },
+    "seo-title-meta-description-generator": { component: WebTools, props: { defaultTab: "seo" } },
+    "robots-txt-sitemap-generator": { component: SitemapGeneratorTool, props: {} },
     "emi-calculator": { component: BuiltInCalculators, props: { kind: "loan-calculator" } },
     "sip-calculator": { component: FinanceCalculators, props: { defaultTab: "sip" } },
     "fd-calculator-india": { component: FinanceCalculators, props: { defaultTab: "fd" } },

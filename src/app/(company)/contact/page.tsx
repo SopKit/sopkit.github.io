@@ -4,15 +4,15 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
-	title: "Free Contact Online - No Signup | SopKit",
-	description: "Free Contact online. Contact allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your...",
-	keywords: "contact SopKit, support, feedback, help, contact, free contact, contact online, SopKit, free online tools, browser tools, no signup tools, privacy tools",
+	title: "Contact SopKit - Tool Requests, Support & Feedback",
+	description: "Have a question, feedback, or a tool request for SopKit? Reach out to our open-source team via email or report bugs directly on our GitHub repository.",
+	keywords: "contact SopKit, support, feedback, help, contact, request tool, SopKit support, report bug",
 	alternates: {
 		canonical: "https://sopkit.github.io/contact",
 	},
 	openGraph: {
-		title: "Free Contact Online - No Signup | SopKit",
-		description: "Free Contact online. Contact allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your...",
+		title: "Contact SopKit - Tool Requests, Support & Feedback",
+		description: "Have a question, feedback, or a tool request for SopKit? Reach out to our open-source team via email or report bugs directly on our GitHub repository.",
 		url: "https://sopkit.github.io/contact",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +20,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Contact Online - No Signup | SopKit",
-		description: "Free Contact online. Contact allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your...",
+		title: "Contact SopKit - Tool Requests & Support",
+		description: "Have a question, feedback, or a tool request for SopKit? Reach out to our open-source team via email or report bugs directly on our GitHub repository.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

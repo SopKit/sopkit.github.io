@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import DownloaderEngine from "@/components/tools/downloaders/DownloaderEngine";
+import SitemapUrlDownloader from "@/components/tools/downloaders/SitemapUrlDownloader";
 
 export const metadata = {
 	title: "Sitemap Url Downloader Online Free - No Signup | SopKit",
@@ -35,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout tool={tool}>
-			<DownloaderEngine />
+			<SitemapUrlDownloader />
 		</ToolLayout>
 	);
 }

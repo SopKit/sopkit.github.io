@@ -20,6 +20,7 @@
 		"generate-icons": "node scripts/generate-icons.cjs",
 		"generate-feed": "node scripts/generate-feed.cjs",
 		"seo:audit": "node scripts/seo-audit-local.mjs",
+		"seo:check": "node scripts/seo-check.cjs",
 		"submit-urls": "node submit-urls.js"
 	},
 	"dependencies": {
