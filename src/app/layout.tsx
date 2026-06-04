@@ -381,6 +381,11 @@ export default function RootLayout({
 							<a href="https://sopkit.github.io/advertise" className="mx-1 font-medium text-blue-600 hover:underline dark:text-blue-400">sponsor the project</a>,
 							or <a href="https://sh20raj.github.io" target="_blank" rel="noopener noreferrer" className="mx-1 font-medium text-blue-600 hover:underline dark:text-blue-400">hire me for web development</a> ❤️
 						</div>
+						<div className="flex justify-center pb-4">
+							<a href="https://www.digitalocean.com/?refcode=3d51c5a60ef3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank" rel="noopener noreferrer sponsored">
+								<img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" className="h-11" />
+							</a>
+						</div>
 						<AppleFooter categories={categories} />
 						<Toaster />
 					</ThemeProvider>
