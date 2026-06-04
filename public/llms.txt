@@ -98,7 +98,7 @@ SopKit is a comprehensive collection of free online utilities designed for creat
 - Most tools process files locally in the browser (privacy-first)
 - Some tools (downloaders, API testers) use server-side edge proxies
 - The platform is open source: https://github.com/SopKit/sopkit.github.io
-- Contact: mail@sopkit.github.io
+- Contact: shaswatraj3@gmail.com
 - All tools are free with no hidden fees or premium tiers
 - Optimized for mobile, tablet, and desktop browsers
 - Tools are regularly updated and new tools are added frequently

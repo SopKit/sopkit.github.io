@@ -94,11 +94,11 @@ function ToolArticle({ content }) {
  * @param {Tool[]} [props.relatedTools]
  */
 export default function ToolLayout({
-  tool,
-  children,
-  breadcrumbs,
-  relatedTools = [],
-  showHireMe = false,
+	tool,
+	children,
+	breadcrumbs,
+	relatedTools = [],
+	showHireMe = false,
 }) {
 	const opportunity = getSeoOpportunityByRoute(tool.route);
 
@@ -191,7 +191,7 @@ export default function ToolLayout({
 							? defaultSuffix
 							: ""}
 					</p>
-					
+
 				</section>
 
 				<div className="max-w-4xl mx-auto">
@@ -245,8 +245,8 @@ export default function ToolLayout({
 									</a>
 								</Button>
 								<Button variant="ghost" size="sm" asChild className="gap-2">
-									<a href="mailto:mail@sopkit.github.io">
-										mail@sopkit.github.io
+									<a href="mailto:shaswatraj3@gmail.com">
+										shaswatraj3@gmail.com
 									</a>
 								</Button>
 							</div>
@@ -262,7 +262,7 @@ export default function ToolLayout({
 							<div className="max-w-4xl mx-auto">
 								<AdPlacement placement="in-content" category={tool.category} slug={tool.id} />
 							</div>
-							
+
 							<ToolArticle content={enrichedTool.article} />
 
 							{opportunity && (
@@ -297,36 +297,36 @@ export default function ToolLayout({
 							</div>
 						</div>
 
-{showHireMe && (
-  <section className="max-w-3xl mx-auto">
-    <div className="rounded-2xl border border-border/60 bg-card/40 p-6 md:p-8 space-y-4">
-      <h3 className="text-xl md:text-2xl font-bold">Need a custom tool like this?</h3>
-      <p className="text-muted-foreground">
-        I build fast SEO tools, calculators, PDF utilities, automations, and landing pages for startups and businesses.
-      </p>
-      <Button asChild>
-        <Link href="https://sh20raj.github.io/" rel="noopener noreferrer" className="inline-flex items-center gap-2">
-          Hire me
-          <ExternalLink className="h-4 w-4" />
-        </Link>
-      </Button>
-    </div>
-  </section>
-)}
-<div className="max-w-4xl mx-auto">
-  <AdPlacement placement="footer" category={tool.category} slug={tool.id} />
-</div>
+						{showHireMe && (
+							<section className="max-w-3xl mx-auto">
+								<div className="rounded-2xl border border-border/60 bg-card/40 p-6 md:p-8 space-y-4">
+									<h3 className="text-xl md:text-2xl font-bold">Need a custom tool like this?</h3>
+									<p className="text-muted-foreground">
+										I build fast SEO tools, calculators, PDF utilities, automations, and landing pages for startups and businesses.
+									</p>
+									<Button asChild>
+										<Link href="https://sh20raj.github.io/" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+											Hire me
+											<ExternalLink className="h-4 w-4" />
+										</Link>
+									</Button>
+								</div>
+							</section>
+						)}
+						<div className="max-w-4xl mx-auto">
+							<AdPlacement placement="footer" category={tool.category} slug={tool.id} />
+						</div>
 
-{finalRelatedTools.length > 0 && (
-  <div style={{ contentVisibility: "auto", containIntrinsicSize: "auto 800px" }}>
-    <RelatedTools
-      currentTool={tool.id}
-      category={tool.category}
-      tools={finalRelatedTools}
-    />
-  </div>
-)}
-</>
+						{finalRelatedTools.length > 0 && (
+							<div style={{ contentVisibility: "auto", containIntrinsicSize: "auto 800px" }}>
+								<RelatedTools
+									currentTool={tool.id}
+									category={tool.category}
+									tools={finalRelatedTools}
+								/>
+							</div>
+						)}
+					</>
 				)}
 			</main>
 		</div>
