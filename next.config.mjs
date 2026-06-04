@@ -59,7 +59,7 @@ const nextConfig = {
 	generateEtags: false,
 
 	// SEO and crawling optimizations
-	trailingSlash: false,
+	trailingSlash: true,
 
 	// Turbopack configuration (empty to silence Next.js 16 warning)
 	turbopack: {},

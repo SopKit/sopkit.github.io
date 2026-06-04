@@ -41,9 +41,13 @@
 	--color-chart-4: var(--chart-4);
 	--color-chart-5: var(--chart-5);
 
-	--radius-lg: var(--radius);
-	--radius-md: calc(var(--radius) - 2px);
-	--radius-sm: calc(var(--radius) - 4px);
+	--radius-sm: 0px;
+	--radius-md: 0px;
+	--radius-lg: 0px;
+	--radius-xl: 0px;
+	--radius-2xl: 0px;
+	--radius-3xl: 0px;
+	--radius-full: 0px;
 
 	--animate-accordion-down: accordion-down 0.2s ease-out;
 	--animate-accordion-up: accordion-up 0.2s ease-out;
@@ -99,7 +103,7 @@
 		--border: 240 3% 12% / 0.1;
 		--input: 240 3% 12% / 0.1;
 		--ring: 210 100% 45%;
-		--radius: 12px;
+		--radius: 0px;
 
 		--chart-1: 12 76% 61%;
 		--chart-2: 173 58% 39%;
@@ -198,7 +202,7 @@
 	}
 
 	.apple-pill {
-		border-radius: 9999px;
+		border-radius: 0px;
 	}
 
 	.bg-gradient-cute {
@@ -243,7 +247,7 @@
 
 ::-webkit-scrollbar-thumb {
 	background: hsl(var(--foreground) / 0.15);
-	border-radius: 9999px;
+	border-radius: 0px;
 	border: 2px solid transparent;
 	background-clip: padding-box;
 }
