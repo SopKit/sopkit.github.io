@@ -69,6 +69,7 @@ export default function ImageConverterTool({ defaultOutputFormat = "png" }) {
 			"image/heif": { ext: ".heif", name: "HEIF", icon: "📱" },
 			"image/x-icon": { ext: ".ico", name: "ICO", icon: "🔲" },
 			"image/vnd.microsoft.icon": { ext: ".ico", name: "ICO", icon: "🔲" },
+			"image/svg+xml": { ext: ".svg", name: "SVG", icon: "📐" },
 		},
 		output: {
 			jpeg: {

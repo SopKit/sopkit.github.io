@@ -437,7 +437,188 @@ Upload your entire asset folder and compress them all at once. Download the resu
 				{ question: "How much file size can I save?", answer: "On average, our users save 60-80% on file size for JPEGs and 50-70% for PNGs with no noticeable difference in quality." },
 				{ question: "Do you support WebP compression?", answer: "Yes, we support and recommend WebP for the best web performance. You can even convert and compress in one step." }
 			]
-		}
+		},
+		"signature-resizer-under-20kb": {
+			article: `
+## Signature Resizer Under 20KB — Perfect for NTA & UPSC
+Official portals like NEET (NTA), JEE, and UPSC have very strict requirements for signatures, often capping the file size at 20KB. This Signature Resizer is built to hit that target precisely, ensuring your application is not rejected due to file size errors.
+
+### Why 20KB?
+Portals use low file size limits to save storage and ensure fast loading during verification. However, reducing a signature to under 20KB manually often makes it blurry. Our tool uses smart compression to keep the pen strokes sharp even at this tiny size.
+
+### Targeted for Indian Exams
+Whether you are applying for SSC, IBPS, or State PSC exams, this tool uses the standard 3.5cm x 1.5cm or 140x60 pixel dimensions commonly requested by Indian recruitment boards.
+			`,
+			faqs: [
+				{ question: "How do I resize my signature to 20KB?", answer: "Upload your signature, select the 20KB target, and the tool will automatically adjust the quality and dimensions to fit the NTA/UPSC requirements." },
+				{ question: "Is this signature resizer free?", answer: "Yes, it is 100% free and works entirely in your browser, so your signature is never uploaded to any server." },
+				{ question: "What are the standard signature dimensions for SSC?", answer: "SSC usually requires a signature of 4.0 cm width x 2.0 cm height, with a file size between 10KB and 20KB." },
+			],
+		},
+		"photo-compressor-under-50kb": {
+			article: `
+## Photo Compressor Under 50KB — Job & Exam Portal Ready
+Most Indian government portals, including those for Railway (RRB), Bank (IBPS), and Police recruitment, require a passport-sized photograph between 20KB and 50KB. Our Photo Compressor is optimized to hit this range without losing the clarity of your face.
+
+### Smart Compression Technology
+We use a specialized algorithm that preserves facial features while aggressively compressing the background and non-essential parts of the image. This ensures your photo meets the 'recognizable face' criteria of exam invigilators.
+
+### Accepted by Major Portals
+Use this tool for NTA, SSC, UPSC, IBPS, RRB, and various State-level recruitment portals (UPPSC, BPSC, MPSC) that mandate a 50KB limit.
+			`,
+			faqs: [
+				{ question: "How can I reduce my photo size to 50KB?", answer: "Upload your photo and our tool will intelligently compress it to fall between 20KB and 50KB, ensuring it's acceptable for most official portals." },
+				{ question: "Will my photo be clear enough for an ID card?", answer: "Yes, the tool prioritizes facial clarity while reducing file size, so it remains sharp enough for official identification." },
+				{ question: "Does it support JPG and PNG?", answer: "Yes, we support all common formats and convert them to the standard JPG format required by most portals." },
+			],
+		},
+		"compress-image-to-20kb": {
+			article: `
+## Compress Image to 20KB — Instant Tool for Documents
+From thumb impressions to identity proofs, many online forms require images to be under 20KB. This tool is designed to compress any document image to this specific limit with one click.
+
+### Ideal for Thumb Impressions
+The National Testing Agency (NTA) often requires left-hand thumb impressions to be between 10KB and 20KB. This tool ensures your impression stays clear and valid for biometric verification.
+
+### Privacy First
+Since document images often contain personal info, our tool works 100% offline in your browser. No one ever sees your documents.
+			`,
+			faqs: [
+				{ question: "How do I compress a thumb impression to 20KB?", answer: "Upload the scan of your thumb impression and our tool will compress it to the exact 10KB-20KB range required by NTA." },
+				{ question: "Is it safe to upload documents here?", answer: "Your documents are never uploaded. All processing happens on your local device for maximum security." },
+			],
+		},
+		"neet-photo-resizer": {
+			article: `
+## NEET Photo Resizer — NTA Latest Specifications 2025-26
+Applying for NEET requires two types of photos: Passport size and Postcard size (4x6). NTA has very specific rules about white backgrounds, names, and dates. Our NEET Photo Resizer handles all these technical details for you.
+
+### NTA Photo Guidelines
+- **Passport Photo**: 10KB to 200KB, 3.5 x 4.5 cm.
+- **Postcard Photo (4x6)**: 10KB to 200KB, 4 x 6 inches.
+- **Requirement**: White background, at least 80% face coverage, and ears clearly visible.
+
+### One-Click Compliance
+Select the 'NEET' preset to automatically set the correct dimensions and aspect ratio. We ensure your photo is high-resolution enough to avoid rejection while staying under the size cap.
+			`,
+			faqs: [
+				{ question: "What is the postcard photo size for NEET?", answer: "The postcard photo should be 4 inches by 6 inches (4x6) with a file size between 10KB and 200KB." },
+				{ question: "Do I need my name and date on the NEET photo?", answer: "As per latest NTA guidelines, the photo should have the candidate's name and the date of taking the photograph printed at the bottom." },
+				{ question: "Is a white background mandatory for NEET?", answer: "Yes, NTA strictly requires a white background for both passport and postcard size photos." },
+			],
+		},
+		"upsc-photo-resizer": {
+			article: `
+## UPSC Photo Resizer — IAS, IPS & NDA Application Ready
+UPSC has recently updated its photo requirements. The photograph must be recent (not older than 10 days) and must clearly show the candidate's name and the date on which it was taken. Our UPSC Photo Resizer is built to help you meet these new standards.
+
+### Latest UPSC Guidelines
+- **Dimensions**: 350 x 350 pixels (minimum) to 1000 x 1000 pixels (maximum).
+- **File Size**: 20KB to 300KB per file.
+- **Appearance**: 3/4th of the photo should be the face.
+
+### Professional Editing for UPSC
+Our tool ensures the aspect ratio is a perfect square (1:1) as required by the UPSC Online portal, avoiding the common 'stretched photo' error that leads to rejections.
+			`,
+			faqs: [
+				{ question: "What are the new UPSC photo rules?", answer: "The photo must be taken within 10 days of the application start, and must include the candidate's name and date of photo at the bottom." },
+				{ question: "What is the resolution for UPSC photos?", answer: "The minimum resolution is 350x350 pixels, and the maximum is 1000x1000 pixels, in JPG/JPEG format." },
+				{ question: "How much of the photo should show the face?", answer: "UPSC requires that at least 3/4th (75%) of the photograph should be occupied by the candidate's face." },
+			],
+		},
+		"ssc-photo-resizer": {
+			article: `
+## SSC Photo Resizer — CGL, CHSL, MTS & GD Specs
+Staff Selection Commission (SSC) applications are frequently rejected due to improper photo uploads. Our SSC Photo Resizer helps you get the exact 3.5 x 4.5 cm dimensions and the 20KB-50KB size range required for a successful submission.
+
+### Avoiding Rejection
+The most common reasons for SSC photo rejection are: wearing spectacles, wearing a cap, or not having a clear frontal view. Our tool helps you crop and resize correctly to highlight your face according to SSC norms.
+
+### SSC Signature Specs
+We also support the SSC signature requirement of 4.0 x 2.0 cm (10KB to 20KB). Use the dual-mode to prepare both your photo and signature in one go.
+			`,
+			faqs: [
+				{ question: "What is the photo size for SSC CGL?", answer: "The photo should be 3.5 cm (width) x 4.5 cm (height) and the file size must be between 20KB and 50KB." },
+				{ question: "Are spectacles allowed in SSC photos?", answer: "No, SSC guidelines strictly prohibit wearing spectacles, hats, or caps in the application photograph." },
+				{ question: "Does the SSC photo need a date?", answer: "While requirements change, it is generally advised to use a recent photo. Check the specific notification if a date is required for the current cycle." },
+			],
+		},
+		"pan-card-photo-resizer": {
+			article: `
+## PAN Card Photo Resizer — NSDL & UTIITSL Compliant
+Applying for a New PAN Card or a Correction requires specific photo and signature dimensions. This tool resizes your images to the exact 2.5 x 3.5 cm and 200 DPI standards used by NSDL and UTIITSL.
+
+### Standard Dimensions
+- **Photo**: 2.5 cm x 3.5 cm (File size < 50KB).
+- **Signature**: 2.0 cm x 4.5 cm (File size < 50KB).
+- **Resolution**: 200 DPI (dots per inch) for maximum print quality.
+
+### Print-Ready Quality
+Because PAN cards are physical IDs, the photo quality must be high. Our resizer ensures that even at small dimensions, the image remains sharp enough for laser printing on your permanent account number card.
+			`,
+			faqs: [
+				{ question: "What is the PAN card photo size in cm?", answer: "The standard size for a PAN card photo is 2.5 cm width by 3.5 cm height." },
+				{ question: "What is the DPI requirement for PAN card?", answer: "NSDL and UTIITSL require photos and signatures to be scanned at 200 DPI resolution." },
+				{ question: "Can I use a mobile photo for a PAN card?", answer: "Yes, as long as it has a plain background and is resized correctly using our tool to meet the official cm and KB requirements." },
+			],
+		},
+		"cgpa-to-percentage-calculator": {
+			article: `
+## CGPA to Percentage Calculator — University Specific Formulas
+Converting your CGPA (Cumulative Grade Point Average) to a percentage is essential for job applications and higher education in India. However, every university (CBSE, VTU, AKTU, Mumbai University) uses a different formula. This calculator supports them all.
+
+### Common Formulas
+- **CBSE/NCERT**: CGPA x 9.5
+- **VTU (Karnataka)**: (CGPA - 0.75) x 10
+- **AKTU (UP)**: (CGPA - 0.75) x 10
+- **Mumbai University**: Various factors based on the pointer system.
+
+### Why the 9.5 Factor?
+CBSE uses 9.5 because it represents the average of the last five years' board results. Our calculator allows you to select your specific board or university to ensure you get the 'official' percentage for your resume.
+			`,
+			faqs: [
+				{ question: "How do I convert CBSE CGPA to percentage?", answer: "Multiply your CGPA by 9.5. For example, a 9.0 CGPA equals 85.5% (9.0 x 9.5)." },
+				{ question: "Is the CGPA to % formula same for all universities?", answer: "No, universities like VTU and AKTU often use (CGPA - 0.75) x 10, while others use a direct multiplier." },
+				{ question: "How accurate is this calculator?", answer: "It uses the official conversion formulas published by the respective boards and universities." },
+			],
+		},
+		"75-attendance-calculator": {
+			article: `
+## 75% Attendance Calculator — Save Your Semester
+Struggling with the 75% attendance rule? This calculator helps Indian college students (Engineering, Medical, Commerce) figure out exactly how many more classes they must attend to hit the target, or how many they can safely 'bunk' without getting barred from exams.
+
+### How it Works
+1. **Total Classes**: Enter the total number of classes held so far.
+2. **Attended**: Enter how many you have attended.
+3. **Target**: Usually 75% or 80% (as per UGC or university norms).
+4. **Result**: The tool tells you the number of future classes you need to attend consecutively to reach your goal.
+
+### Pro-Tips for Attendance
+Many universities (like Anna University or JNTU) have strict condonation rules. Use this tool to plan your leaves and avoid last-minute 'Attendance Shortage' lists.
+			`,
+			faqs: [
+				{ question: "How many classes can I bunk to keep 75% attendance?", answer: "Enter your current attendance and the tool will calculate the maximum 'safe bunk' count while maintaining your 75% status." },
+				{ question: "What if my attendance is below 75%?", answer: "The calculator will tell you exactly how many consecutive future classes you must attend to reach the 75% threshold." },
+				{ question: "Does this include medical leave?", answer: "This tool calculates raw attendance. Medical leaves usually provide a 5-10% relaxation, so you can set your target to 65% or 70% in the tool to account for it." },
+			],
+		},
+		"pdf-compressor-under-200kb": {
+			article: `
+## PDF Compressor Under 200KB — Official Document Ready
+Need to upload your degree, mark sheet, or caste certificate to a government portal? Most Indian sites (like DigiLocker, SSC, or State Govt portals) cap PDF uploads at 200KB. This tool shrinks your documents while keeping the text readable for verification.
+
+### Professional Quality at 200KB
+Standard PDF compression often makes the text 'grainy'. Our tool uses advanced font preservation and grayscale optimization to ensure that your name, roll number, and marks remain perfectly legible even at a 200KB file size.
+
+### Secure for Personal Documents
+Since mark sheets and IDs are sensitive, we process everything in your browser. Your private documents are never sent to our servers, ensuring 100% data privacy.
+			`,
+			faqs: [
+				{ question: "How do I compress a PDF to 200KB for upload?", answer: "Upload your PDF and select the 'Under 200KB' preset. The tool will optimize images and fonts to hit the target size." },
+				{ question: "Will my certificate still be valid if it's compressed?", answer: "Yes, as long as the text is legible. Our compressor is designed specifically to maintain the readability of scanned documents." },
+				{ question: "Is it safe to compress my Aadhaar or PAN card PDF?", answer: "Yes, all processing is done locally on your device. Your sensitive IDs are never uploaded." },
+			],
+		},
 	};
 
 	const templates = {

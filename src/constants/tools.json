@@ -1106,6 +1106,86 @@
       "description": "Compress, convert, resize, and edit images online",
       "tools": [
         {
+          "id": "svg-to-png-converter",
+          "name": "SVG to PNG Converter",
+          "description": "Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds.",
+          "route": "/svg-to-png",
+          "popular": true,
+          "category": "image"
+        },
+        {
+          "id": "webp-to-png-converter",
+          "name": "WEBP to PNG Converter",
+          "description": "Convert modern WEBP images to widely supported PNG format without losing quality.",
+          "route": "/webp-to-png",
+          "popular": false,
+          "category": "image"
+        },
+        {
+          "id": "ico-to-png-converter",
+          "name": "ICO to PNG Converter",
+          "description": "Extract PNG images from ICO icon files. Perfect for web developers and designers.",
+          "route": "/ico-to-png",
+          "popular": false,
+          "category": "image"
+        },
+        {
+          "id": "jpg-to-png-converter",
+          "name": "JPG to PNG Converter",
+          "description": "Convert JPG photos to PNG format to support transparency and lossless compression.",
+          "route": "/jpg-to-png",
+          "popular": false,
+          "category": "image"
+        },
+        {
+          "id": "png-to-jpg-converter",
+          "name": "PNG to JPG Converter",
+          "description": "Convert PNG images to JPG format for smaller file sizes and web optimization.",
+          "route": "/png-to-jpg",
+          "popular": false,
+          "category": "image"
+        },
+        {
+          "id": "svg-to-jpg-converter",
+          "name": "SVG to JPG Converter",
+          "description": "Convert SVG vector files into standard JPG images with custom background colors.",
+          "route": "/svg-to-jpg",
+          "popular": false,
+          "category": "image"
+        },
+        {
+          "id": "webp-to-jpg-converter",
+          "name": "WEBP to JPG Converter",
+          "description": "Convert WEBP files to JPG format for compatibility with all devices and platforms.",
+          "route": "/webp-to-jpg",
+          "popular": false,
+          "category": "image"
+        },
+        {
+          "id": "favicon-generator-pro",
+          "name": "Advanced Favicon Generator",
+          "description": "Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image.",
+          "route": "/favicon-generator-pro",
+          "popular": true,
+          "category": "image"
+        },
+        {
+          "id": "image-metadata-remover",
+          "name": "Image Metadata (EXIF) Remover",
+          "description": "Remove sensitive GPS, camera, and author metadata from your images before sharing online.",
+          "route": "/remove-image-metadata",
+          "popular": false,
+          "category": "image"
+        },
+        {
+          "id": "image-color-picker-pro",
+          "name": "Pro Image Color Picker",
+          "description": "Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-perfect picker.",
+          "route": "/image-color-picker",
+          "popular": true,
+          "category": "image"
+        },
+        {
           "id": "compress-image-to-exact-kb",
           "name": "Compress Image to Exact KB",
           "description": "Compress JPG, PNG, or WebP images to exact KB sizes like 10KB, 20KB, 50KB, 100KB, and 200KB online for free.",
@@ -2334,6 +2414,54 @@
       "icon": "TypeIcon",
       "description": "Format, convert, and manipulate text content",
       "tools": [
+        {
+          "id": "text-reverser",
+          "name": "Text Reverser",
+          "description": "Flip your text backwards or reverse the order of words instantly for creative projects and coding.",
+          "route": "/text-reverser",
+          "popular": false,
+          "category": "text"
+        },
+        {
+          "id": "remove-duplicate-lines",
+          "name": "Remove Duplicate Lines",
+          "description": "Clean up your lists and data by automatically removing identical lines of text. Fast and private.",
+          "route": "/remove-duplicate-lines",
+          "popular": false,
+          "category": "text"
+        },
+        {
+          "id": "markdown-to-html",
+          "name": "Markdown to HTML Converter",
+          "description": "Convert Markdown text into clean HTML code for your website, blog, or email newsletters.",
+          "route": "/markdown-to-html",
+          "popular": true,
+          "category": "text"
+        },
+        {
+          "id": "case-converter",
+          "name": "Case Converter (Sentence, Upper, Lower)",
+          "description": "Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly.",
+          "route": "/case-converter",
+          "popular": true,
+          "category": "text"
+        },
+        {
+          "id": "emoji-text-generator",
+          "name": "Emoji Text Generator",
+          "description": "Add fun emojis to your text or convert words into emoji-rich messages for social media.",
+          "route": "/emoji-text-generator",
+          "popular": false,
+          "category": "text"
+        },
+        {
+          "id": "random-word-generator",
+          "name": "Random Word Generator",
+          "description": "Generate random words for creative writing, brainstroming, or educational games.",
+          "route": "/random-word-generator",
+          "popular": false,
+          "category": "text"
+        },
         {
           "id": "resume-ats-score-checker",
           "name": "Resume ATS Score Checker",
@@ -4046,6 +4174,86 @@
       "icon": "CodeIcon",
       "description": "Format JSON, generate hashes, and developer utilities",
       "tools": [
+        {
+          "id": "uuid-generator",
+          "name": "UUID/GUID Generator",
+          "description": "Generate unique UUID v4 and GUID strings instantly for your applications and databases.",
+          "route": "/uuid-generator",
+          "popular": true,
+          "category": "developer"
+        },
+        {
+          "id": "slug-generator",
+          "name": "URL Slug Generator",
+          "description": "Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages.",
+          "route": "/slug-generator",
+          "popular": false,
+          "category": "developer"
+        },
+        {
+          "id": "json-to-typescript",
+          "name": "JSON to TypeScript Interface",
+          "description": "Convert JSON objects into clean TypeScript interfaces or type definitions automatically.",
+          "route": "/json-to-typescript",
+          "popular": true,
+          "category": "developer"
+        },
+        {
+          "id": "sql-formatter",
+          "name": "SQL Formatter & Beautifier",
+          "description": "Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more.",
+          "route": "/sql-formatter",
+          "popular": true,
+          "category": "developer"
+        },
+        {
+          "id": "crontab-generator",
+          "name": "Crontab Expression Generator",
+          "description": "Easily create and validate cron job expressions with our interactive visual generator.",
+          "route": "/crontab-generator",
+          "popular": false,
+          "category": "developer"
+        },
+        {
+          "id": "xml-formatter",
+          "name": "XML Formatter & Beautifier",
+          "description": "Clean and format messy XML data into a readable hierarchical structure.",
+          "route": "/xml-formatter",
+          "popular": false,
+          "category": "developer"
+        },
+        {
+          "id": "html-entity-encoder",
+          "name": "HTML Entity Encoder/Decoder",
+          "description": "Encode or decode HTML entities to prevent XSS or display special characters safely.",
+          "route": "/html-entity-encoder",
+          "popular": false,
+          "category": "developer"
+        },
+        {
+          "id": "random-name-generator",
+          "name": "Random Name Generator",
+          "description": "Generate random names for characters, personas, or test data with gender and niche options.",
+          "route": "/random-name-generator",
+          "popular": false,
+          "category": "developer"
+        },
+        {
+          "id": "binary-to-hex-converter",
+          "name": "Binary to Hex Converter",
+          "description": "Convert binary strings to hexadecimal values and vice versa instantly.",
+          "route": "/binary-to-hex-converter",
+          "popular": false,
+          "category": "developer"
+        },
+        {
+          "id": "jwt-decoder",
+          "name": "JWT Decoder & Debugger",
+          "description": "Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature.",
+          "route": "/jwt-decoder",
+          "popular": true,
+          "category": "developer"
+        },
         {
           "id": "amazon-ses-api-key-tester",
           "name": "Amazon SES API Key Tester",
@@ -9918,6 +10126,70 @@
       "description": "Calculate academic grades, attendance shortage, and construction materials with ease.",
       "tools": [
         {
+          "id": "roman-numerals-converter",
+          "name": "Roman Numerals Converter",
+          "description": "Convert numbers to Roman numerals and vice versa instantly. Supports large numbers and historical formats.",
+          "route": "/roman-numerals-converter",
+          "popular": false,
+          "category": "calculators"
+        },
+        {
+          "id": "number-to-words-converter",
+          "name": "Number to Words Converter",
+          "description": "Convert any number into words (English, Indian numbering system) for cheques, invoices, and documents.",
+          "route": "/number-to-words-converter",
+          "popular": false,
+          "category": "calculators"
+        },
+        {
+          "id": "date-difference-calculator",
+          "name": "Date Difference Calculator",
+          "description": "Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes.",
+          "route": "/date-difference-calculator",
+          "popular": true,
+          "category": "calculators"
+        },
+        {
+          "id": "working-days-calculator",
+          "name": "Working Days Calculator",
+          "description": "Calculate the number of working days or business days between two dates, excluding weekends and holidays.",
+          "route": "/working-days-calculator",
+          "popular": false,
+          "category": "calculators"
+        },
+        {
+          "id": "gpa-to-4-scale-converter",
+          "name": "GPA to 4.0 Scale Converter",
+          "description": "Convert your Indian percentage or 10-point CGPA into the standard US 4.0 GPA scale for study abroad.",
+          "route": "/gpa-to-4-scale-converter",
+          "popular": true,
+          "category": "calculators"
+        },
+        {
+          "id": "rd-calculator",
+          "name": "Recurring Deposit (RD) Calculator",
+          "description": "Calculate the maturity amount and interest earned on your monthly Recurring Deposit (RD) investments.",
+          "route": "/rd-calculator",
+          "popular": false,
+          "category": "calculators"
+        },
+        {
+          "id": "gratuity-calculator",
+          "name": "Gratuity Calculator (India)",
+          "description": "Estimate your gratuity amount based on your last drawn salary and years of service in India.",
+          "route": "/gratuity-calculator",
+          "popular": false,
+          "category": "calculators"
+        },
+        {
+          "id": "epf-calculator",
+          "name": "EPF Calculator (Employee Provident Fund)",
+          "description": "Calculate your EPF maturity amount based on your basic salary, monthly contribution, and current interest rate.",
+          "route": "/epf-calculator",
+          "popular": false,
+          "category": "calculators"
+        },
+        {
           "id": "invoice-generator-india",
           "name": "Invoice Generator India with GST",
           "description": "Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free.",
@@ -10962,6 +11234,62 @@
             "compress-pdf-to-200kb",
             "pdf-200kb-compressor"
           ]
+        }
+      ]
+    },
+    "health": {
+      "name": "Health & Fitness",
+      "slug": "health",
+      "icon": "HeartPulseIcon",
+      "description": "Calculate BMI, BMR, TDEE, and other health metrics to stay on track with your fitness goals.",
+      "tools": [
+        {
+          "id": "bmr-calculator",
+          "name": "BMR Calculator (Basal Metabolic Rate)",
+          "description": "Calculate your Basal Metabolic Rate (BMR) to understand how many calories your body burns at rest.",
+          "route": "/bmr-calculator",
+          "popular": true,
+          "category": "health"
+        },
+        {
+          "id": "tdee-calculator",
+          "name": "TDEE Calculator",
+          "description": "Calculate your Total Daily Energy Expenditure (TDEE) based on your activity level and fitness goals.",
+          "route": "/tdee-calculator",
+          "popular": true,
+          "category": "health"
+        },
+        {
+          "id": "macro-calculator",
+          "name": "Macro Calculator",
+          "description": "Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance.",
+          "route": "/macro-calculator",
+          "popular": false,
+          "category": "health"
+        },
+        {
+          "id": "water-intake-calculator",
+          "name": "Water Intake Calculator",
+          "description": "Find out exactly how much water you should drink daily based on your weight and exercise habits.",
+          "route": "/water-intake-calculator",
+          "popular": false,
+          "category": "health"
+        },
+        {
+          "id": "ideal-body-weight-calculator",
+          "name": "Ideal Body Weight Calculator",
+          "description": "Determine your healthy weight range based on your height, age, and gender using standard formulas.",
+          "route": "/ideal-body-weight-calculator",
+          "popular": false,
+          "category": "health"
+        },
+        {
+          "id": "body-fat-calculator",
+          "name": "Body Fat Percentage Calculator",
+          "description": "Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness.",
+          "route": "/body-fat-calculator",
+          "popular": false,
+          "category": "health"
         }
       ]
     }

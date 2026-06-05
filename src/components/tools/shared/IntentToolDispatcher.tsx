@@ -220,12 +220,79 @@ const SimpleInvoiceGenerator = dynamic(() => import("@/components/tools/generato
 
 const WebTools = dynamic(() => import("@/components/tools/impl/WebTools"), { ssr: false });
 const SitemapGeneratorTool = dynamic(() => import("@/components/tools/seo/SitemapGeneratorTool"), { ssr: false });
+const HealthCalculators = dynamic(() => import("@/components/tools/impl/HealthCalculators"), { ssr: false });
+const DeveloperUtilities = dynamic(() => import("@/components/tools/impl/DeveloperUtilities"), { ssr: false });
+const MathDateCalculators = dynamic(() => import("@/components/tools/impl/MathDateCalculators"), { ssr: false });
+const TextUtilities = dynamic(() => import("@/components/tools/impl/TextUtilities"), { ssr: false });
+const ImageConverters = dynamic(() => import("@/components/tools/impl/ImageConverters"), { ssr: false });
+
+// New Premium Standalone Components
+const BmrCalculatorTool = dynamic(() => import("@/components/tools/calculators/BmrCalculatorTool"), { ssr: false });
+const BodyFatCalculatorTool = dynamic(() => import("@/components/tools/calculators/BodyFatCalculatorTool"), { ssr: false });
+const DateDifferenceCalculatorTool = dynamic(() => import("@/components/tools/calculators/DateDifferenceCalculatorTool"), { ssr: false });
+const EpfCalculatorTool = dynamic(() => import("@/components/tools/calculators/EpfCalculatorTool"), { ssr: false });
+const GpaTo4ScaleConverterTool = dynamic(() => import("@/components/tools/calculators/GpaTo4ScaleConverterTool"), { ssr: false });
+const GratuityCalculatorTool = dynamic(() => import("@/components/tools/calculators/GratuityCalculatorTool"), { ssr: false });
+const MacroCalculatorTool = dynamic(() => import("@/components/tools/calculators/MacroCalculatorTool"), { ssr: false });
+const RdCalculatorTool = dynamic(() => import("@/components/tools/calculators/RdCalculatorTool"), { ssr: false });
+const TdeeCalculatorTool = dynamic(() => import("@/components/tools/calculators/TdeeCalculatorTool"), { ssr: false });
+const WorkingDaysCalculatorTool = dynamic(() => import("@/components/tools/calculators/WorkingDaysCalculatorTool"), { ssr: false });
+const CrontabGeneratorTool = dynamic(() => import("@/components/tools/developer/CrontabGeneratorTool"), { ssr: false });
+const HtmlEntityCodecTool = dynamic(() => import("@/components/tools/developer/HtmlEntityCodecTool"), { ssr: false });
+const JsonToTypeScriptTool = dynamic(() => import("@/components/tools/developer/JsonToTypeScriptTool"), { ssr: false });
+const RandomNameGeneratorTool = dynamic(() => import("@/components/tools/developer/RandomNameGeneratorTool"), { ssr: false });
+const XmlFormatterTool = dynamic(() => import("@/components/tools/developer/XmlFormatterTool"), { ssr: false });
+const FaviconGeneratorProTool = dynamic(() => import("@/components/tools/image/FaviconGeneratorProTool"), { ssr: false });
+const ImageMetadataRemoverTool = dynamic(() => import("@/components/tools/image/ImageMetadataRemoverTool"), { ssr: false });
+const ImageColorPicker = dynamic(() => import("@/components/tools/image/ImageColorPicker"), { ssr: false });
+const EmojiTextGeneratorTool = dynamic(() => import("@/components/tools/text/EmojiTextGeneratorTool"), { ssr: false });
+const MarkdownToHtmlTool = dynamic(() => import("@/components/tools/text/MarkdownToHtmlTool"), { ssr: false });
+const RandomWordGeneratorTool = dynamic(() => import("@/components/tools/text/RandomWordGeneratorTool"), { ssr: false });
+const RemoveDuplicatesTool = dynamic(() => import("@/components/tools/text/RemoveDuplicatesTool"), { ssr: false });
+const TextReverserTool = dynamic(() => import("@/components/tools/text/TextReverserTool"), { ssr: false });
+const JWTDecoderTool = dynamic(() => import("@/components/tools/developer/JWTDecoderTool"), { ssr: false });
+const CaseConverter = dynamic(() => import("@/components/tools/text/CaseConverter"), { ssr: false });
 
 export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentType<any>; props: any }> = {
     "domain-name-generator": { component: WebTools, props: { defaultTab: "domain" } },
     "website-cost-calculator": { component: WebTools, props: { defaultTab: "cost" } },
     "seo-title-meta-description-generator": { component: WebTools, props: { defaultTab: "seo" } },
     "robots-txt-sitemap-generator": { component: SitemapGeneratorTool, props: {} },
+    // Health & Fitness
+    "bmr-calculator": { component: BmrCalculatorTool, props: {} },
+    "tdee-calculator": { component: TdeeCalculatorTool, props: {} },
+    "macro-calculator": { component: MacroCalculatorTool, props: {} },
+    "ideal-body-weight-calculator": { component: BmiIdealWeightCalculatorTool, props: {} },
+    "body-fat-calculator": { component: BodyFatCalculatorTool, props: {} },
+    // Developer & Data
+    "uuid-generator": { component: UuidGeneratorTool, props: {} },
+    "slug-generator": { component: SlugTool, props: {} },
+    "html-entity-encoder": { component: HtmlEntityCodecTool, props: {} },
+    "json-to-typescript": { component: JsonToTypeScriptTool, props: {} },
+    "crontab-generator": { component: CrontabGeneratorTool, props: {} },
+    "xml-formatter": { component: XmlFormatterTool, props: {} },
+    "jwt-decoder": { component: JWTDecoderTool, props: {} },
+    "random-name-generator": { component: RandomNameGeneratorTool, props: {} },
+    // Math, Date & Calculators
+    "roman-numerals-converter": { component: RomanNumeralTool, props: {} },
+    "date-difference-calculator": { component: DateDifferenceCalculatorTool, props: {} },
+    "gpa-to-4-scale-converter": { component: GpaTo4ScaleConverterTool, props: {} },
+    "rd-calculator": { component: RdCalculatorTool, props: {} },
+    "gratuity-calculator": { component: GratuityCalculatorTool, props: {} },
+    "epf-calculator": { component: EpfCalculatorTool, props: {} },
+    "working-days-calculator": { component: WorkingDaysCalculatorTool, props: {} },
+    "number-to-words-converter": { component: NumberToWordTool, props: {} },
+    // Text Utilities
+    "text-reverser": { component: TextReverserTool, props: {} },
+    "remove-duplicate-lines": { component: RemoveDuplicatesTool, props: {} },
+    "markdown-to-html": { component: MarkdownToHtmlTool, props: {} },
+    "case-converter": { component: CaseConverter, props: {} },
+    "emoji-text-generator": { component: EmojiTextGeneratorTool, props: {} },
+    "random-word-generator": { component: RandomWordGeneratorTool, props: {} },
+    // Image & Format
+    "favicon-generator-pro": { component: FaviconGeneratorProTool, props: {} },
+    "image-metadata-remover": { component: ImageMetadataRemoverTool, props: {} },
+    "image-color-picker-pro": { component: ImageColorPicker, props: {} },
     "emi-calculator": { component: BuiltInCalculators, props: { kind: "loan-calculator" } },
     "sip-calculator": { component: FinanceCalculators, props: { defaultTab: "sip" } },
     "fd-calculator-india": { component: FinanceCalculators, props: { defaultTab: "fd" } },
@@ -492,7 +559,6 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "qr-code-reader": { component: QrReaderPremium, props: {} },
     "railway-exam-photo-resizer": { component: ExamPhotoResizer, props: {"examName": "Railway"} },
     "random-uuid-generator": { component: UuidGeneratorTool, props: {} },
-    "random-word-generator": { component: LineSorterTool, props: {} },
     "reactive-energy-converter": { component: UniversalUnitConverter, props: {"preset": "reactivePower"} },
     "reactive-power-converter": { component: UniversalUnitConverter, props: {"preset": "reactivePower"} },
     "reddit-downloader": { component: RedditDownloader, props: {"toolName": "Reddit Video Downloader"} },
@@ -584,6 +650,8 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "volumetric-flow-rate-converter": { component: UniversalUnitConverter, props: {"preset": "flowVolume"} },
     "webp-to-jpg-converter": { component: ImageConverterTool, props: {} },
     "webp-to-png-converter": { component: ImageConverterTool, props: {} },
+    "svg-to-jpg-converter": { component: ImageConverterTool, props: {} },
+    "svg-to-png-converter": { component: ImageConverterTool, props: {} },
     "website-ranking-checker": { component: WebsiteRankingCheckerTool, props: {} },
     "weight-converter": { component: UniversalUnitConverter, props: {"preset": "mass"} },
     "what-is-my-browser": { component: BrowserDetectTool, props: {} },

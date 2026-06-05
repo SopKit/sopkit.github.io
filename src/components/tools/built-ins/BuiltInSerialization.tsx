@@ -132,6 +132,18 @@ export default function BuiltInSerialization({ toolId }: { toolId: string }) {
 				case "json-to-xml-converter":
 					out = jsonToXml(input);
 					break;
+				case "json-to-typescript":
+					const parsed = JSON.parse(input);
+					out = "interface Root {\n" + Object.keys(parsed).map(k => `  ${k}: ${typeof parsed[k]};`).join("\n") + "\n}";
+					break;
+				case "sql-formatter":
+					out = input.replace(/\s+/g, ' ').replace(/\b(SELECT|FROM|WHERE|GROUP BY|ORDER BY|INSERT INTO|UPDATE|SET|DELETE|VALUES|JOIN|LEFT JOIN|RIGHT JOIN|ON|AND|OR)\b/gi, '\n$1').trim();
+					break;
+				case "xml-formatter":
+					const xmlDoc = new DOMParser().parseFromString(input, 'application/xml');
+					const serializer = new XMLSerializer();
+					out = serializer.serializeToString(xmlDoc).replace(/(>)(<)(\/*)/g, '$1\n$2$3');
+					break;
 				default:
 					out = "";
 			}
