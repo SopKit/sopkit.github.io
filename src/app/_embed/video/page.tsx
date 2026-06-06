@@ -1,0 +1,100 @@
+import { Suspense } from "react";
+import EmbedVideoPlayer from "./EmbedVideoPlayer";
+
+export const metadata = {
+	title: "Free Video Player Online - No Signup | SopKit",
+	description:
+		"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
+	keywords: [
+		"video",
+		"video online",
+		"free video",
+		"video tool",
+		"online video free",
+		"professional video",
+		"video online tool",
+		"best video free",
+		"video web app",
+		"video utility",
+		"online tool",
+		"free utility",
+		"web application",
+	].join(", "),
+	robots: "noindex, nofollow",
+
+	openGraph: {
+		title: "Free Video Player Online - No Signup | SopKit",
+		description:
+			"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
+		url: "https://sopkit.github.io/embed/video",
+		siteName: "SopKit",
+		images: [
+			{
+				url: "/og-image.jpg",
+				width: 1200,
+				height: 630,
+				alt: "Free Video Player Online - No Signup | SopKit",
+			},
+		],
+		type: "website",
+	},
+
+	twitter: {
+		card: "summary_large_image",
+		title: "Free Video Player Online - No Signup | SopKit",
+		description:
+			"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
+		images: ["/og-image.jpg"],
+		creator: "@sopkit",
+	},
+
+	alternates: {
+		canonical: "https://sopkit.github.io/embed/video",
+	},
+};
+
+const jsonLd = {
+	"@context": "https://schema.org",
+	"@type": "WebApplication",
+	name: "Video",
+	description:
+		"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
+	url: "https://sopkit.github.io/embed/video",
+	applicationCategory: "UtilityApplication",
+	operatingSystem: "Any",
+	permissions: "browser",
+	offers: {
+		"@type": "Offer",
+		price: "0",
+		priceCurrency: "USD",
+	},
+	author: {
+		"@type": "Organization",
+		name: "SopKit",
+		url: "https://sopkit.github.io",
+	},
+};
+
+export default async function EmbedVideoPage({ searchParams }: any) {
+	const params = await searchParams;
+	const _lang = params.lang || "en";
+	return (
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+			/>
+			<div className="min-h-screen bg-black">
+				<Suspense
+					fallback={
+						<div className="flex items-center justify-center min-h-screen">
+							<div className="text-white">Loading video...</div>
+						</div>
+					}
+				>
+					<EmbedVideoPlayer />
+				</Suspense>
+			</div>{" "}
+		</>
+	);
+}

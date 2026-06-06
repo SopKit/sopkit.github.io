@@ -1,0 +1,5 @@
+
+> SopKit@0.1.0 typecheck
+> tsc --noEmit
+
+src/components/seo/SocialEngagement.tsx(346,1): error TS1005: '}' expected.
