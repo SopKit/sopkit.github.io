@@ -11,7 +11,7 @@ const allTools = Object.values(toolsData.categories || {}).flatMap(
 );
 
 export const TOOL_COUNT = allTools.length;
-export const TOOL_COUNT_STRING = `${TOOL_COUNT}`;
+export const TOOL_COUNT_STRING = "400+";
 
 export const CATEGORY_COUNT = Object.keys(toolsData.categories || {}).length;
 export const POPULAR_TOOL_COUNT = allTools.filter((tool: any) => tool?.popular).length;

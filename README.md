@@ -2,7 +2,7 @@
 
 # SopKit: Free Online Tools - Privacy-First Utility Engine
 
-### **405+ Browser-Based Tools for Image, PDF, Video, SEO, Developer & More — No Signup Required**
+### **400+ Browser-Based Tools for Image, PDF, Video, SEO, Developer & More — No Signup Required**
 
 [![GitHub stars](https://img.shields.io/github/stars/SopKit/sopkit.github.io?style=for-the-badge&color=ffd700)](https://github.com/SopKit/sopkit.github.io/stargazers)
 [![GitHub license](https://img.shields.io/github/license/SopKit/sopkit.github.io?style=for-the-badge&color=2ecc71)](https://github.com/SopKit/sopkit.github.io/blob/main/LICENSE)
@@ -14,7 +14,7 @@
 
 **[sopkit.github.io](https://sopkit.github.io)** — A comprehensive free online toolkit designed for creators, developers, students, and professionals. Process images, edit PDFs, convert videos, analyze SEO, format code, generate passwords, and more — all directly in your browser with zero data uploads.
 
-[Explore all 405+ tools →](https://sopkit.github.io/search)
+[Explore all 400+ tools →](https://sopkit.github.io/search)
 [View sitemap →](https://sopkit.github.io/sitemap.xml)
 [AI-friendly index →](https://sopkit.github.io/llms.txt)
 
@@ -26,14 +26,14 @@
 
 ## What is SopKit?
 
-SopKit is a **free online tools** platform with **405+ browser-based utilities** across **12+ categories**. Every tool is designed to work instantly without registration, software installation, or file uploads to external servers. We prioritize **privacy-first processing** — most tools run entirely in your browser.
+SopKit is a **free online tools** platform with **400+ browser-based utilities** across **12+ categories**. Every tool is designed to work instantly without registration, software installation, or file uploads to external servers. We prioritize **privacy-first processing** — most tools run entirely in your browser.
 
 ### Why Choose SopKit?
 
 - **Completely Free** — No hidden fees, premium tiers, or usage limits
 - **Privacy-First** — 95% of tools process data locally; files never leave your device
 - **No Signup Required** — Start using any tool instantly with zero friction
-- **405+ Tools & Growing** — From image compression to SEO analysis, we cover every common workflow
+- **400+ Tools & Growing** — From image compression to SEO analysis, we cover every common workflow
 - **Fast & Modern** — Built on Next.js 16 with optimized Core Web Vitals
 - **Mobile-Friendly** — Fully responsive design works on all devices
 
@@ -82,7 +82,7 @@ SopKit is a **free online tools** platform with **405+ browser-based utilities**
 
 ## 🚀 Features
 
-- **405+ free online tools** across 12 categories
+- **400+ free online tools** across 12 categories
 - **Privacy-first architecture** — client-side processing for most tools
 - **Structured data (JSON-LD)** — SoftwareApplication, FAQPage, HowTo, BreadcrumbList schemas on every tool page
 - **Dynamic XML sitemap** with prioritized URLs

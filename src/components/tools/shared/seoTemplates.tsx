@@ -619,6 +619,119 @@ Since mark sheets and IDs are sensitive, we process everything in your browser. 
 				{ question: "Is it safe to compress my Aadhaar or PAN card PDF?", answer: "Yes, all processing is done locally on your device. Your sensitive IDs are never uploaded." },
 			],
 		},
+		"resume-ats-score-checker": {
+			article: `
+## Resume ATS Score Checker — Optimize for Modern Hiring Systems
+Most mid-to-large size companies use Applicant Tracking Systems (ATS) to filter resumes before a recruiter ever looks at them. If your resume isn't optimized for these parsers, it might be filtered out regardless of your qualifications. Our Resume ATS Checker is built to help you diagnose and fix these structural and content issues locally.
+
+### Job Description & Keyword Matching
+The core of ATS filtering is keyword relevance. The system compares your resume against the job description to find matching skills, technologies, and terms. Our tool highlights which critical keywords are present in the job description but missing from your resume, allowing you to add them contextually.
+
+### Section Detection & Formatting Compliance
+ATS parsers expect a logical layout with standard headings (e.g., "Education", "Experience", "Skills"). Complex layouts, multi-column templates, text boxes, tables, and custom graphics can cause the parsing engine to skip entire sections of your work history. This tool checks your text structure to identify parsing errors.
+
+### PDF vs. DOCX Parsing Limitations
+While modern ATS systems can parse both PDF and DOCX files, some older versions struggle with PDF font encoding or tables. Our guide provides insights into when to submit a DOCX file versus a standard PDF, and how to verify that your PDF contains highlightable, clean text rather than a flattened image.
+			`,
+			faqs: [
+				{ question: "How does the ATS Score Checker work?", answer: "It scans your resume text, analyzes the header structure for common formatting issues, and performs a keyword match against your target job description to compute a compatibility score." },
+				{ question: "What formatting elements are unsafe for ATS?", answer: "Avoid tables, text boxes, images, complex multi-column layouts, graphics, and non-standard fonts. Stick to a clean single-column format with basic headers like Experience, Education, and Skills." },
+				{ question: "Is my resume uploaded to a server?", answer: "No. All text extraction and scoring are done 100% in your browser. Your resume, job details, and private details are never uploaded or sent to any server." },
+				{ question: "What is a passing ATS score?", answer: "A score of 80% or higher is generally considered excellent and indicates your resume is well-matched for keyword density and formatting layout." },
+			],
+		},
+		"ssc-photo-signature-resizer": {
+			article: `
+## SSC Photo & Signature Resizer — 100% compliant with Staff Selection Commission
+Staff Selection Commission (SSC) applications for exams like CGL, CHSL, MTS, and GD require a passport-sized photograph and a handwritten signature that strictly comply with official file-size and dimension rules. Uploading files with incorrect specifications is one of the leading causes of form rejection.
+
+### Official SSC Requirements
+| Upload Type | Width x Height | File Size Limit | Key Rules |
+|---|---|---|---|
+| **Passport Photograph** | 3.5 cm x 4.5 cm (or 350x450 px) | 20 KB to 50 KB | No spectacles, no cap, plain background, white background preferred. |
+| **Signature** | 4.0 cm x 2.0 cm (or 140x60 px) | 10 KB to 20 KB | Black or blue ink, clean white background, must be legible and not blurry. |
+
+### Avoiding Rejection: Common SSC Rules
+SSC has strict guidelines: the photo must be clear, without any spectacles (even regular reading glasses must be removed for the photo), hats, or caps. Both ears must be clearly visible, and the face must occupy at least 80% of the image. The signature must be signed on clean white paper and not on ruled paper.
+
+### Local Browser Processing
+Since application photos and signatures are sensitive identity documents, our resizer does not upload your files to any remote server. The entire resizing, cropping, and compression process runs locally on your device in your web browser.
+			`,
+			faqs: [
+				{ question: "What is the photo size limit for SSC forms?", answer: "The photograph must be in JPEG/JPG format, between 20 KB and 50 KB, with dimensions of 3.5 cm width by 4.5 cm height (350x450 pixels)." },
+				{ question: "Are spectacles allowed in SSC photographs?", answer: "No, SSC guidelines strictly prohibit spectacles, hats, or caps in application photos. Photos showing glasses will be rejected." },
+				{ question: "What is the signature size for SSC?", answer: "The signature must be in JPEG/JPG format, between 10 KB and 20 KB, with dimensions of 4.0 cm width by 2.0 cm height (140x60 pixels)." },
+				{ question: "How can I fix 'signature too dark or blurry' errors?", answer: "Make sure you sign with a dark pen (black ink is highly recommended) on plain white paper. Use good lighting when capturing the photo, and crop it closely with our resizer." },
+			],
+		},
+		"compress-image-to-exact-kb": {
+			article: `
+## Compress Image to Exact KB — Perfect for Document Portals
+Many online application portals, especially government recruitment sites (UPSC, SSC, NEET, JEE, IBPS), have extremely strict requirements for image uploads. Instead of generic quality adjustments, they mandate that files fit within tight bounds (e.g. exactly under 20KB or 50KB). Our tool allows you to input your exact target size in kilobytes and performs the optimization automatically.
+
+### Why Exact Size Caps Exist
+Official portals process millions of applications and operate on legacy storage systems. By forcing exact size limits, they keep their server databases lean and load times fast. Our tool targets the requested size cap, adjusting JPEG quality and chroma subsampling to find the perfect balance.
+
+### Local, Secure Image Compression
+Identity cards, signatures, and thumb impressions are highly personal. To protect your data, our tool runs 100% in your browser. Your images are never sent to external servers, ensuring your private documents remain secure on your own machine.
+			`,
+			faqs: [
+				{ question: "How do I compress an image to a specific KB limit?", answer: "Simply upload your image, type your target size (e.g., 20, 50, 100) in the target KB input box, click compress, and download your optimized JPEG file." },
+				{ question: "Will compressing to an exact size make my photo blurry?", answer: "Our tool uses intelligent quantization that focuses on keeping facial features and text sharp while compressing flat background areas, minimizing visual blur." },
+				{ question: "What formats are supported?", answer: "You can upload JPG, JPEG, PNG, or WebP files. The optimized compressed file will be exported in standard JPG format, which is accepted by all portal systems." },
+			],
+		},
+		"hindi-typing-tool": {
+			article: `
+## Hindi Typing Tool — Easy English to Hindi Transliteration
+Writing in Hindi using a standard QWERTY keyboard can be difficult. Our Hindi Typing Tool makes it simple through phonetic English-to-Hindi transliteration (also known as Hinglish typing). You just type Hindi words in English letters, and the engine automatically converts them to Devanagari script.
+
+### How Phonetic Transliteration Works
+When you type "namaste" and press space, the tool automatically converts it to "नमस्ते". It translates the sound layout dynamically, providing standard Devanagari spelling suggestions as you type so you can write official documents, letters, or social posts in Hindi instantly.
+
+### Copy-Paste and Unicode Compatibility
+The text generated is standard Unicode Devanagari. This means you can copy and paste the Hindi text anywhere — Facebook, Twitter, WhatsApp, MS Word, or government portals — and it will display perfectly on any device without installing additional fonts.
+			`,
+			faqs: [
+				{ question: "How do I type in Hindi using an English keyboard?", answer: "Type the Hindi words phonetically using English alphabets (e.g. type 'aap kaise hain'). When you hit space, the text will turn into Devanagari script ('आप कैसे हैं')." },
+				{ question: "What is the difference between Unicode Hindi and legacy fonts?", answer: "Unicode Hindi is a global standard that displays correctly on all devices, phones, and websites. Legacy fonts (like Kruti Dev) require specific font files to be installed, otherwise they look like gibberish." },
+				{ question: "Does this tool support offline typing?", answer: "Yes. Once the page is loaded, the phonetic transliteration mapping operates entirely in your web browser. No text is sent to our servers, keeping your writing private." },
+			],
+		},
+		"kruti-dev-to-unicode": {
+			article: `
+## Kruti Dev to Unicode Converter — For Hindi Typing and Government Jobs
+Kruti Dev (specifically Kruti Dev 010) is a widely used legacy font layout for Hindi typing in government offices, courtrooms, and administrative departments across India (such as UP, MP, Bihar, Rajasthan, and Jharkhand). However, legacy fonts do not display on websites or mobile devices. This converter translates Kruti Dev text to standard Unicode (Mangal font) instantly.
+
+### Legacy Font vs. Unicode Mangal
+Kruti Dev uses a typewriter-style keyboard mapping where typing corresponds to English keyboard characters, but displays Hindi letters when the font is installed. Unicode Hindi (Mangal font) is the universal digital standard. Converting to Unicode is essential for sharing documents online, sending emails, or submitting web forms.
+
+### Reliable Typing Exam Verification
+Many state typing exams and stenography tests (like SSC, UPSSSC, High Court) are conducted in Kruti Dev layout but evaluated using Unicode. Use this tool to paste your typed Kruti Dev text and verify its accuracy and spelling in clean Devanagari script.
+			`,
+			faqs: [
+				{ question: "Why should I convert Kruti Dev to Unicode?", answer: "Kruti Dev text will look like garbled English letters (e.g., 'kyk' instead of 'क्या') if the font is not installed. Unicode displays correctly on all devices, websites, and emails." },
+				{ question: "What is Mangal font?", answer: "Mangal is the default Unicode Devanagari font designed by Microsoft. It is the official standard font used in government portals, online exams, and databases." },
+				{ question: "Is my text sent to a server for conversion?", answer: "No. The conversion logic runs entirely in client-side JavaScript. Your documents and typed text are processed locally inside your browser." },
+			],
+		},
+		"unicode-to-kruti-dev": {
+			article: `
+## Unicode to Kruti Dev Converter — Legacy Font Formatting
+Need to submit Hindi documents to government offices or publishing agencies that still rely on legacy Kruti Dev fonts? This tool converts standard Unicode Devanagari text (Mangal font) into Kruti Dev 010 layout characters, allowing you to format documents for print and official files.
+
+### Why Legacy Fonts Are Still Used
+Many printing presses, local courts, and government departments in states like Uttar Pradesh, Rajasthan, and Madhya Pradesh have used Kruti Dev layout for decades. Their typists and printing software require this typewriter font layout. Our tool translates Unicode back into legacy code blocks, ready to copy and paste.
+
+### Perfect for DTP and Print Layouts
+Desk Top Publishing (DTP) operators who use Adobe PageMaker, Photoshop, or CorelDraw often need Kruti Dev text for layout design. Copy the standard Unicode text from websites, convert it here, and paste it into your layout software with the Kruti Dev font selected.
+			`,
+			faqs: [
+				{ question: "How do I convert Unicode Hindi to Kruti Dev?", answer: "Paste your standard Devanagari Hindi text (e.g. from a website or Word file) into the Unicode input box, and the tool will instantly output the Kruti Dev code in the legacy box." },
+				{ question: "Why does the output look like garbled English text?", answer: "Kruti Dev text maps Hindi letters to English keystrokes. The output will look like random English characters until you paste it into a document and apply the Kruti Dev font." },
+				{ question: "Is the conversion accurate for complex Hindi characters?", answer: "Yes, our converter accurately handles Devanagari half-letters, conjunct consonants (sanyukt akshar), and vowel signs (matras)." },
+			],
+		},
 	};
 
 	const templates = {

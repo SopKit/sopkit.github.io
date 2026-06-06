@@ -236,7 +236,7 @@ export default function ReviewSnippets({
 // Trust indicators component
 export function TrustIndicators() {
 	const stats = [
-		{ label: "Tools Available", value: "405+", icon: User },
+		{ label: "Tools Available", value: "400+", icon: User },
 		{ label: "Categories", value: "10+", icon: Star },
 		{ label: "Price", value: "Free", icon: Heart },
 		{ label: "Signup Required", value: "No", icon: Award },

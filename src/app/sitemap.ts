@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${BASE_URL}/pro`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.8 },
 		{ url: `${BASE_URL}/advertise`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${BASE_URL}/services`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.75 },
+		{ url: `${BASE_URL}/tools`, lastModified: now, changeFrequency: "daily", priority: 0.95 },
 		// Category hub pages (priority 0.8-0.9)
 		{ url: `${BASE_URL}/image-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${BASE_URL}/exam-image-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.92 },
