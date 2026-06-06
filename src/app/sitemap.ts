@@ -2,7 +2,8 @@ import type { MetadataRoute } from "next";
 import { getAllTools } from "@/lib/tools";
 import { blogs } from "@/constants/blog-data";
 import { SITE_CONFIG } from "@/constants/config";
-import { getStandaloneSeoOpportunities } from "@/data/seo-opportunities";
+import { seoOpportunities } from "@/data/seo-opportunities";
+import { intentData } from "@/lib/intent-data";
 
 export const dynamic = 'force-static';
 
@@ -91,11 +92,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		})),
 	];
 
-	const seoOpportunityPages: MetadataRoute.Sitemap = getStandaloneSeoOpportunities().map((opportunity) => ({
+	const seoOpportunityPages: MetadataRoute.Sitemap = seoOpportunities.map((opportunity) => ({
 		url: `${BASE_URL}${opportunity.route}`,
 		lastModified: now,
 		changeFrequency: "weekly" as const,
 		priority: opportunity.priority === 1 ? 0.9 : opportunity.priority === 2 ? 0.86 : 0.84,
+	}));
+
+	const intentPages: MetadataRoute.Sitemap = Object.keys(intentData).map((slug) => ({
+		url: `${BASE_URL}/${slug}`,
+		lastModified: now,
+		changeFrequency: "weekly" as const,
+		priority: 0.85,
 	}));
 
 	try {
@@ -109,9 +117,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		
 		// Standalone SEO opportunities intentionally turn selected extra slugs into real pages.
 		seoOpportunityPages.forEach(page => extraSlugsSet.delete(page.url));
+		intentPages.forEach(page => extraSlugsSet.delete(page.url));
 
 		// Deduplicate by URL to avoid duplicate sitemap entries
-		const allPages = [...staticPages, ...toolPages, ...blogPages, ...seoOpportunityPages];
+		const allPages = [...staticPages, ...toolPages, ...blogPages, ...seoOpportunityPages, ...intentPages];
 		const seen = new Set<string>();
 		return allPages
 			.filter((page) => !extraSlugsSet.has(page.url))
