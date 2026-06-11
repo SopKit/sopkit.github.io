@@ -5,13 +5,13 @@ import PDFMerger from "@/components/tools/pdf/PDFMerger";
 
 
 export const metadata = {
-	title: "Merge PDF Online Online Free | SopKit",
+	title: "Merge PDF Online Free | SopKit",
 	description: "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
 		canonical: "https://sopkit.github.io/merge-pdf-online",
 	},
 	openGraph: {
-		title: "Merge PDF Online Online Free - No Signup | SopKit",
+		title: "Merge PDF Online Free - No Signup | SopKit",
 		description: "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly. No signup, no uploads, 100% private browser-based tool.",
 		url: "https://sopkit.github.io/merge-pdf-online",
 		siteName: "SopKit",
@@ -20,7 +20,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Merge PDF Online Online Free - Fast & Secure",
+		title: "Merge PDF Online Free - Fast & Secure",
 		description: "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},

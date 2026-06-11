@@ -5,7 +5,7 @@ import Fragment from "react";
 export const metadata = {
 	title: "Best Free SEO Tools Online - Top Ranked Picks (2026) | SopKit",
 	description: "Optimize your search ranking with the best free SEO tools online. Audit, generate metadata, plan keywords, and track indexing with zero signup required.",
-	keywords: "seo tools free online - ranked picks (2026), seo tools free online - ranked picks (2026) guide, SopKit, seo-tools-free-online, seo tools free online, free seo-tools-free-online, seo tools free online online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
+	keywords: "seo tools free online - ranked picks (2026), seo tools free online - ranked picks (2026) guide, SopKit, seo-tools-free-online, seo tools free online, free seo-tools-free-online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
 		canonical: "https://sopkit.github.io/seo-tools-free-online",
 	},
