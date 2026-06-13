@@ -51,7 +51,7 @@ export default async function PrivacyPage() {
 					}),
 				}}
 			/>
-			<ToolLayout tool={tool} relatedTools={[]}>
+			<ToolLayout breadcrumbs={[]} tool={tool} relatedTools={[]}>
 				<div className="space-y-6">
 					<Card>
 						<CardContent className="pt-6 space-y-6">

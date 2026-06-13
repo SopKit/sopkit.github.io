@@ -52,7 +52,7 @@ export default async function AboutPage() {
 					}),
 				}}
 			/>
-			<ToolLayout tool={tool}>
+			<ToolLayout breadcrumbs={[]} tool={tool}>
 				<div className="space-y-6">
 					<Card>
 						<CardContent className="pt-6 space-y-6">

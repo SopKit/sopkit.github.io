@@ -144,7 +144,7 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
         ];
 
         return (
-            <ToolLayout tool={tool} breadcrumbs={breadcrumbs} relatedTools={relatedTools}>
+            <ToolLayout breadcrumbs={[]} tool={tool} breadcrumbs={breadcrumbs} relatedTools={relatedTools}>
                 <SeoOpportunityTool opportunity={opportunity} />
             </ToolLayout>
         );
@@ -173,7 +173,7 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
     };
 
     return (
-        <ToolLayout tool={enrichedTool}>
+        <ToolLayout breadcrumbs={[]} tool={enrichedTool}>
             <IntentToolDispatcher toolId={parentTool.id} />
         </ToolLayout>
     );

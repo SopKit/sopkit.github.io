@@ -55,7 +55,7 @@ export default async function ToolPage() {
 				}}
 			/>
 
-			<ToolLayout tool={{ ...tool, category: "content" }}>
+			<ToolLayout breadcrumbs={[]} tool={{ ...tool, category: "content" }}>
 				<div className='min-h-[100px]'  />
 			</ToolLayout>
 		</>

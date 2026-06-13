@@ -34,7 +34,7 @@ export default async function ToolPage() {
 	}
 
 	return (
-		<ToolLayout tool={tool}>
+		<ToolLayout breadcrumbs={[]} tool={tool}>
 			<BuiltInSerialization toolId="xml-to-json-converter" />
 		</ToolLayout>
 	);

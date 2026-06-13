@@ -34,7 +34,7 @@ export default async function ToolPage() {
 	}
 
 	return (
-		<ToolLayout tool={tool}>
+		<ToolLayout breadcrumbs={[]} tool={tool}>
 			<BuiltInMarkup toolId="html-beautifier" />
 		</ToolLayout>
 	);

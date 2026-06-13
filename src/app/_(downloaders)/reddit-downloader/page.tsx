@@ -82,7 +82,7 @@ Video URLs are processed temporarily for retrieval. We do not store or log downl
 				}}
 			/>
 
-			<ToolLayout tool={tool}>
+			<ToolLayout breadcrumbs={[]} tool={tool}>
 				<RedditDownloader />
 			</ToolLayout>
 		</>

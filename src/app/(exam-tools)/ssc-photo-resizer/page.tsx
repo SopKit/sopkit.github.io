@@ -49,7 +49,7 @@ export default async function ToolPage() {
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
   return (
-    <ToolLayout tool={tool} relatedTools={relatedTools}>
+    <ToolLayout breadcrumbs={[]} tool={tool} relatedTools={relatedTools}>
       <ExamPhotoResizer examName="SSC" />
     </ToolLayout>
   );

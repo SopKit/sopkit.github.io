@@ -30,7 +30,7 @@ export default async function ToolPage() {
 	return (
 		<>
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: tool.name, description: tool.description, url: "https://sopkit.github.io/fake-chat-generator", applicationCategory: "UtilitiesApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }) }} />
-			<ToolLayout tool={tool}><FakeChatGeneratorTool /></ToolLayout>
+			<ToolLayout breadcrumbs={[]} tool={tool}><FakeChatGeneratorTool /></ToolLayout>
 		</>
 	);
 }

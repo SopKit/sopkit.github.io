@@ -48,7 +48,7 @@ We respect your privacy. No personal files are uploaded to our servers. All docu
 	};
 
 	return (
-		<ToolLayout tool={tool}>
+		<ToolLayout breadcrumbs={[]} tool={tool}>
 			<ExamPillar />
 		</ToolLayout>
 	);

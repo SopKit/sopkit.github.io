@@ -57,7 +57,7 @@ export default async function ToolPage() {
 				}}
 			/>
 
-			<ToolLayout tool={tool} relatedTools={[]}>
+			<ToolLayout breadcrumbs={[]} tool={tool} relatedTools={[]}>
 				<div className="max-w-3xl mx-auto space-y-12 py-12">
 					<div className="text-center space-y-4">
 						<h2 className="text-4xl font-bold">How can we help?</h2>

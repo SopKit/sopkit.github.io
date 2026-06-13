@@ -35,7 +35,7 @@ export default async function ToolPage() {
 	}
 
 	return (
-		<ToolLayout tool={tool}>
+		<ToolLayout breadcrumbs={[]} tool={tool}>
 			<BuiltInCalculators kind="mortgage-calculator" />
 		</ToolLayout>
 	);

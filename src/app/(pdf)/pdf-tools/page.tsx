@@ -45,7 +45,7 @@ Unlike competitors who gate productivity behind paywalls and account creation, S
 };
 
 	return (
-		<ToolLayout tool={tool}>
+		<ToolLayout breadcrumbs={[]} tool={tool}>
 			<PDFPillar />
 		</ToolLayout>
 	);

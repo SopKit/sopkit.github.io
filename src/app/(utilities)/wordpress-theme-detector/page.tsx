@@ -34,7 +34,7 @@ export default async function ToolPage() {
 	}
 
 	return (
-		<ToolLayout tool={tool}>
+		<ToolLayout breadcrumbs={[]} tool={tool}>
 			<BuiltInSafeHttp toolId="wordpress-theme-detector" />
 		</ToolLayout>
 	);

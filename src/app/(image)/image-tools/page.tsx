@@ -48,7 +48,7 @@ Unlike other online editors, we process your images on your own hardware. Your p
 };
 
 	return (
-		<ToolLayout tool={tool}>
+		<ToolLayout breadcrumbs={[]} tool={tool}>
 			<ImagePillar />
 		</ToolLayout>
 	);

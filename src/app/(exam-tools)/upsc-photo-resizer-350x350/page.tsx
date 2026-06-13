@@ -35,7 +35,7 @@ export default function ToolPage() {
 	}
 
 	return (
-		<ToolLayout tool={tool}>
+		<ToolLayout breadcrumbs={[]} tool={tool}>
 			<ExamPhotoResizer examName="UPSC" presetWidth={350} presetHeight={350} />
 		</ToolLayout>
 	);

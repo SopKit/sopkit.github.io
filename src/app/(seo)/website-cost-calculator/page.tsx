@@ -34,7 +34,7 @@ export default function ToolPage() {
 	}
 
 	return (
-		<ToolLayout tool={tool}>
+		<ToolLayout breadcrumbs={[]} tool={tool}>
 			<WebTools defaultTab="cost" />
 		</ToolLayout>
 	);

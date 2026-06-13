@@ -35,7 +35,7 @@ export default async function ToolPage() {
 	}
 
 	return (
-		<ToolLayout tool={tool}>
+		<ToolLayout breadcrumbs={[]} tool={tool}>
 			<ExamPhotoResizer
 				examName="20KB Limit"
 				presetWidth={350}

@@ -75,7 +75,7 @@ export default async function ApiKeyTesterPage({ params }: any) {
 				}}
 			/>
 
-			<ToolLayout
+			<ToolLayout breadcrumbs={[]}
 				tool={tool}
 				breadcrumbs={breadcrumbs}
 				relatedTools={relatedTools}
