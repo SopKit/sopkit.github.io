@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import { getAllTools } from "@/lib/tools";
 
 export async function GET() {

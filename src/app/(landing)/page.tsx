@@ -82,11 +82,11 @@ export default async function LandingPage() {
 
 	// Popular for Indian Forms
 	const indianFormToolIds = [
-		"ssc-photo-signature-resizer",
-		"upsc-photo-resizer",
-		"neet-photo-signature-resizer",
-		"pan-card-photo-resizer",
-		"signature-resizer-under-20kb"
+	        "ssc-photo-resizer",
+	        "upsc-photo-resizer",
+	        "neet-photo-resizer",
+	        "pan-card-photo-resizer",
+	        "signature-resizer-under-20kb"
 	];
 	const indianFormTools = indianFormToolIds.map(id => allTools.find(t => t.id === id)).filter(Boolean);
 
