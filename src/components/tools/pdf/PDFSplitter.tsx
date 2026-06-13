@@ -1,7 +1,6 @@
 "use client";
 
 import { Download, FileText, Loader2, Scissors } from "lucide-react";
-import { PDFDocument } from "pdf-lib";
 import { useState } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -23,6 +22,7 @@ export default function PdfSplitter() {
 			setDownloadUrl(null);
 			// Get page count
 			try {
+				const { PDFDocument } = await import("pdf-lib");
 				const buffer = await selectedFile.arrayBuffer();
 				const doc = await PDFDocument.load(buffer, { ignoreEncryption: true });
 				setPageCount(doc.getPageCount());
@@ -43,6 +43,7 @@ export default function PdfSplitter() {
 
 		setIsProcessing(true);
 		try {
+			const { PDFDocument } = await import("pdf-lib");
 			const fileBuffer = await file.arrayBuffer();
 			const pdfDoc = await PDFDocument.load(fileBuffer);
 			const newPdf = await PDFDocument.create();

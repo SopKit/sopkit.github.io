@@ -383,7 +383,14 @@ export default function RootLayout({
 						</div>
 						<div className="flex justify-center pb-4">
 							<a href="https://www.digitalocean.com/?refcode=3d51c5a60ef3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank" rel="noopener noreferrer sponsored">
-								<img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" className="h-11" />
+								<img 
+									src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" 
+									alt="DigitalOcean Referral Badge" 
+									className="h-11" 
+									width={200} 
+									height={44}
+									loading="lazy"
+								/>
 							</a>
 						</div>
 						<AppleFooter categories={categories} />

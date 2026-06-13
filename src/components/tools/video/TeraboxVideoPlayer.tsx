@@ -1,6 +1,5 @@
 "use client";
 
-import Hls from "hls.js";
 import {
 	AlertCircle,
 	Download,
@@ -49,17 +48,18 @@ export default function TeraboxVideoPlayer() {
 		try {
 			const data = await fetchTeraboxVideo(url);
 			setVideoData(data);
-		} catch (_err) {
+		} catch (err) {
 			setError(err.message || "Failed to load video");
 		} finally {
 			setIsLoading(false);
 		}
 	};
 
-	const handlePlay = () => {
+	const handlePlay = async () => {
 		if (!videoData || !videoRef.current) return;
 
 		// Initialize HLS.js for M3U8 streaming
+		const Hls = (await import("hls.js")).default;
 		if (Hls.isSupported()) {
 			if (hlsRef.current) {
 				hlsRef.current.destroy();

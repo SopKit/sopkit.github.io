@@ -69,10 +69,10 @@ export function AppleNavbar() {
 	}, [router]);
 
 	const categories = [
-		{ name: "Image", href: "/image-tools/" },
-		{ name: "PDF", href: "/pdf-tools/" },
-		{ name: "Video", href: "/video-tools/" },
-		{ name: "Developer", href: "/developer-tools/" },
+		{ name: "Features", href: STATIC_ROUTES.TOOLS },
+		{ name: "Pricing", href: STATIC_ROUTES.PRO },
+		{ name: "Resources", href: STATIC_ROUTES.TOOL_GUIDES },
+		{ name: "Blog", href: STATIC_ROUTES.BLOG },
 	];
 
 	return (

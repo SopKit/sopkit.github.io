@@ -41,7 +41,7 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 	return (
 		<footer className="bg-[#f5f5f7] dark:bg-[#161617] text-[#1d1d1f] dark:text-[#f5f5f7] pt-16 pb-8 border-t border-black/5 dark:border-white/5">
 			<div className="container mx-auto px-4 max-w-5xl">
-				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-8 mb-12">
+				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-8 mb-12">
 					<div className="col-span-2 lg:col-span-1">
 						<Link href={STATIC_ROUTES.HOME} className="text-lg font-semibold tracking-tight mb-4 block">
 							SopKit
@@ -62,6 +62,32 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 									</Link>
 								</li>
 							))}
+						</ul>
+					</div>
+
+					<div>
+						<h4 className="text-[12px] font-semibold mb-4 text-primary">Platform</h4>
+						<ul className="space-y-2">
+							<li>
+								<Link href={STATIC_ROUTES.TOOLS} className="text-[12px] opacity-90 hover:opacity-100 transition-opacity">
+									Features
+								</Link>
+							</li>
+							<li>
+								<Link href={STATIC_ROUTES.PRO} className="text-[12px] opacity-90 hover:opacity-100 transition-opacity">
+									Pricing
+								</Link>
+							</li>
+							<li>
+								<Link href={STATIC_ROUTES.TOOL_GUIDES} className="text-[12px] opacity-90 hover:opacity-100 transition-opacity">
+									Resources
+								</Link>
+							</li>
+							<li>
+								<Link href={STATIC_ROUTES.BLOG} className="text-[12px] opacity-90 hover:opacity-100 transition-opacity">
+									Blog
+								</Link>
+							</li>
 						</ul>
 					</div>
 

@@ -632,6 +632,8 @@ export default function ImageResizerTool() {
 														src={fileData.url}
 														alt={fileData.file.name}
 														className="w-16 h-16 object-cover rounded border"
+														width={64}
+														height={64}
 													/>
 													{fileData.status === "processing" && (
 														<div className="absolute inset-0 bg-black/50 flex items-center justify-center rounded">

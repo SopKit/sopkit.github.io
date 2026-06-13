@@ -60,18 +60,6 @@ export default function PDFRotation() {
         } else {
             setPdfjs(window.pdfjsLib);
         }
-
-        // Load PDF-Lib
-        if (!window.PDFLib) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-            script.async = true;
-            script.onload = () => setPdflib(window.PDFLib);
-            script.onerror = () => setLoadError("Failed to load PDF processing library. Please check your internet connection and refresh.");
-            document.head.appendChild(script);
-        } else {
-            setPdflib(window.PDFLib);
-        }
     }, []);
 
     const onFileChange = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -150,10 +138,10 @@ export default function PDFRotation() {
     };
 
     const savePDF = async () => {
-        if (!pdflib || !file) return;
+        if (!file) return;
         setIsProcessing(true);
         try {
-            const { PDFDocument, degrees } = pdflib;
+            const { PDFDocument, degrees } = await import("pdf-lib");
             const arrayBuffer = await file.arrayBuffer();
             const pdfDoc = await PDFDocument.load(arrayBuffer);
             const docPages = pdfDoc.getPages();
@@ -208,7 +196,7 @@ export default function PDFRotation() {
                         <Upload className="mr-2 h-4 w-4" /> {file ? "Change PDF" : "Select PDF"}
                     </Button>
                     <Button 
-                        disabled={pages.length === 0 || isProcessing || !pdflib}
+                        disabled={pages.length === 0 || isProcessing}
                         onClick={savePDF}
                         className="bg-primary hover:bg-primary/90"
                     >
@@ -295,6 +283,8 @@ export default function PDFRotation() {
                                                     src={page.dataUrl} 
                                                     alt={`Page ${page.pageNumber}`} 
                                                     className="max-w-full max-h-full object-contain bg-white"
+                                                    width={200}
+                                                    height={266}
                                                 />
                                             </div>
                                             

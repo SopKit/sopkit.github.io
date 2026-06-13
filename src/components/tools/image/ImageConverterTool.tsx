@@ -469,6 +469,8 @@ export default function ImageConverterTool({ defaultOutputFormat = "png" }) {
 														src={fileData.preview}
 														alt={fileData.name}
 														className="w-20 h-20 object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform"
+														width={80}
+														height={80}
 													/>
 												) : (
 													<div className="w-20 h-20 bg-muted/30 rounded-2xl flex items-center justify-center text-4xl">

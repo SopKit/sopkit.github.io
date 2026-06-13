@@ -133,7 +133,7 @@ export default async function LandingPage() {
 				</div>
 
 				{/* 6 Categories Grid */}
-				<section className="py-12">
+				<section className="py-12 [content-visibility:auto] [contain-intrinsic-size:1px_500px]">
 					<h2 className="text-3xl font-black tracking-tight text-foreground mb-8 text-center uppercase">
 						Browse by Category
 					</h2>
@@ -161,7 +161,7 @@ export default async function LandingPage() {
 				</section>
 
 				{/* 8 Featured Tools */}
-				<section className="py-12 border-t border-border/40">
+				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_600px]">
 					<h2 className="text-3xl font-black tracking-tight text-foreground mb-8 uppercase">
 						Featured Tools
 					</h2>
@@ -173,7 +173,7 @@ export default async function LandingPage() {
 				</section>
 
 				{/* Popular for Indian Forms */}
-				<section className="py-12 border-t border-border/40">
+				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_400px]">
 					<h2 className="text-3xl font-black tracking-tight text-foreground mb-2 uppercase">
 						Popular for Indian Forms
 					</h2>
@@ -188,7 +188,7 @@ export default async function LandingPage() {
 				</section>
 
 				{/* Developer Tools */}
-				<section className="py-12 border-t border-border/40">
+				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_400px]">
 					<h2 className="text-3xl font-black tracking-tight text-foreground mb-2 uppercase">
 						Developer Tools
 					</h2>
@@ -203,7 +203,7 @@ export default async function LandingPage() {
 				</section>
 
 				{/* PDF Tools */}
-				<section className="py-12 border-t border-border/40">
+				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_400px]">
 					<h2 className="text-3xl font-black tracking-tight text-foreground mb-2 uppercase">
 						PDF Tools
 					</h2>
@@ -218,7 +218,7 @@ export default async function LandingPage() {
 				</section>
 
 				{/* Final CTA - View All Tools */}
-				<section className="py-16 text-center border-t border-border/40">
+				<section className="py-16 text-center border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_300px]">
 					<div className="max-w-3xl mx-auto px-6 py-16 rounded-none bg-foreground text-background relative overflow-hidden group">
 						<div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-10 transition-opacity" />
 						<h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-background">Need another tool?</h2>
@@ -236,13 +236,17 @@ export default async function LandingPage() {
 				</section>
 
 				{/* High-Value SEO Content Section */}
-				<div className="py-12 max-w-4xl mx-auto">
+				<div className="py-12 max-w-4xl mx-auto [content-visibility:auto] [contain-intrinsic-size:1px_800px]">
 					<AdPlacement placement="in-content" pageType="home" />
 				</div>
-				<HomeSEOContent />
+				<div className="[content-visibility:auto] [contain-intrinsic-size:1px_1000px]">
+					<HomeSEOContent />
+				</div>
 
 				{/* Conversational SEO (FAQs) */}
-				<HomeFAQ />
+				<div className="[content-visibility:auto] [contain-intrinsic-size:1px_600px]">
+					<HomeFAQ />
+				</div>
 			</div>
 		</main>
 	);

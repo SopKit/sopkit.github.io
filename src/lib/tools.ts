@@ -8,6 +8,10 @@ export const STATIC_ROUTES = {
 	TERMS: "/terms",
 	ABOUT: "/about",
 	DMCA: "/dmca",
+	TOOLS: "/tools",
+	PRO: "/pro",
+	BLOG: "/blog",
+	TOOL_GUIDES: "/tool-guides",
 };
 
 export const SUPPORTED_LANGUAGES = [

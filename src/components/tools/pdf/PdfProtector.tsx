@@ -1,7 +1,6 @@
 "use client";
 
 import { Download, FileText, Loader2, Lock } from "lucide-react";
-import { PDFDocument } from "pdf-lib";
 import { useState } from "react";
 import { toast } from "sonner"; // Assuming sonner is available
 import { Button } from "@/components/ui/button";
@@ -33,6 +32,7 @@ export default function PdfProtector() {
 
 		setIsProcessing(true);
 		try {
+			const { PDFDocument } = await import("pdf-lib");
 			const fileBuffer = await file.arrayBuffer();
 			const pdfDoc = await PDFDocument.load(fileBuffer);
 

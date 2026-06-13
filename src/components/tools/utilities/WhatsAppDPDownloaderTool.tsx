@@ -160,6 +160,8 @@ export default function WhatsAppDPDownloaderTool() {
 										src={dpUrl}
 										alt="WhatsApp Profile Picture"
 										className="w-32 h-32 "
+										width={128}
+										height={128}
 										onError={() =>
 											toast.error("Could not load profile picture")
 										}

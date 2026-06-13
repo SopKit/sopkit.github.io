@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useCallback, useRef, useEffect } from "react";
-import JSZip from "jszip";
 import { 
     Upload, 
     FileImage as FileImageIcon, 
@@ -144,6 +143,7 @@ export default function PDFToImage() {
         setIsProcessing(true);
         setProgress(0);
         try {
+            const JSZip = (await import("jszip")).default;
             const arrayBuffer = await file!.arrayBuffer();
             const loadingTask = pdfjs.getDocument(arrayBuffer);
             const pdf = await loadingTask.promise;

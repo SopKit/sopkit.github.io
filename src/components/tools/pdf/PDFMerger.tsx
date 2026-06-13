@@ -9,7 +9,6 @@ import {
 	Plus,
 	X,
 } from "lucide-react";
-import { PDFDocument } from "pdf-lib";
 import { useState } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -71,6 +70,7 @@ export default function PdfMerger() {
 
 		setIsProcessing(true);
 		try {
+			const { PDFDocument } = await import("pdf-lib");
 			const mergedPdf = await PDFDocument.create();
 
 			for (const fileObj of files) {

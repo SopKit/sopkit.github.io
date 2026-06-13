@@ -187,6 +187,8 @@ export default function QrGeneratorTool() {
 										src={qrCodeUrl}
 										alt="Generated QR Code"
 										className="border shadow-lg max-w-full h-auto"
+										width={parseInt(size)}
+										height={parseInt(size)}
 									/>
 								</div>
 

@@ -465,6 +465,7 @@ export default function BackgroundRemoverTool() {
 														src={file.processedUrl}
 														alt="Background removed"
 														className="w-full h-48 object-contain"
+														height={192}
 													/>
 												</div>
 											</div>
