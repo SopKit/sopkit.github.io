@@ -28,3 +28,28 @@ export function extractYouTubeId(url: string | null | undefined): string | null 
 
 	return null;
 }
+
+export function extractYouTubePlaylistId(url: string | null | undefined): string | null {
+	if (!url || typeof url !== "string") return null;
+
+	const patterns = [
+		/https?:\/\/(?:www\.)?youtube\.com\/playlist\?list=([A-Za-z0-9_-]+)/i,
+		/https?:\/\/(?:www\.)?youtube\.com\/watch\?.*?list=([A-Za-z0-9_-]+)/i,
+		/^([A-Za-z0-9_-]{16,})$/,
+	];
+
+	for (const p of patterns) {
+		const m = url.match(p);
+		if (m?.[1]) return m[1];
+	}
+
+	try {
+		const u = new URL(url);
+		const list = u.searchParams.get("list");
+		if (list) return list;
+	} catch {
+		// ignore invalid URL parsing
+	}
+
+	return null;
+}

@@ -4247,6 +4247,84 @@
           "category": "youtube"
         },
         {
+          "id": "youtube-playlist-link-extractor",
+          "name": "YouTube Playlist Link Extractor",
+          "description": "Extract all video URLs, IDs, titles, and publish dates from any public YouTube playlist. Free online playlist extractor for creators, marketers, and researchers.",
+          "route": "/youtube-playlist-link-extractor",
+          "extraSlugs": [
+            "youtube-playlist-link-extractor-online",
+            "youtube-playlist-link-extractor-tool",
+            "extract-youtube-playlist-links",
+            "youtube-playlist-link-extractor-free",
+            "free-youtube-playlist-link-extractor",
+            "youtube-playlist-link-extractor-no-signup",
+            "youtube-playlist-links-extractor",
+            "youtube-playlist-link-extractor-tool-online",
+            "best-youtube-playlist-link-extractor",
+            "youtube-playlist-link-extractor-without-registration",
+            "online-youtube-playlist-link-extractor-free",
+            "youtube-playlist-link-extractor-browser-based",
+            "youtube-playlist-link-extractor-no-download",
+            "youtube-playlist-link-extractor-instant-online",
+            "youtube-playlist-link-extractor-privacy-focused",
+            "export-youtube-playlist-links-to-csv",
+            "youtube-playlist-urls-to-csv",
+            "youtube-playlist-url-extractor",
+            "youtube-playlist-video-links",
+            "youtube-playlist-link-exporter"
+          ],
+          "popular": false,
+          "category": "youtube",
+          "features": [
+            "Extract every video link from any public YouTube playlist in seconds",
+            "Export playlist video IDs, URLs, titles, and publish dates to CSV",
+            "See playlist contents in a clean table with one click",
+            "No YouTube API key required",
+            "Works with playlist URLs or playlist IDs",
+            "Fast and privacy-friendly browser experience"
+          ],
+          "howTo": {
+            "name": "How to use YouTube Playlist Link Extractor",
+            "steps": [
+              {
+                "name": "Paste a playlist URL or ID",
+                "text": "Enter a YouTube playlist link such as https://www.youtube.com/playlist?list=PL... or paste the playlist ID directly into the input field."
+              },
+              {
+                "name": "Click Extract",
+                "text": "Run the extractor to fetch all videos from the playlist using the external playlist API."
+              },
+              {
+                "name": "Review the extracted data",
+                "text": "See titles, video URLs, IDs, and publish dates in the results table."
+              },
+              {
+                "name": "Download CSV",
+                "text": "Export the playlist video list to CSV for spreadsheets, research, or content planning."
+              }
+            ]
+          },
+          "faqs": [
+            {
+              "question": "How do I use the YouTube Playlist Link Extractor?",
+              "answer": "Paste a public YouTube playlist URL or playlist ID, then click Extract. The tool returns every video link, title, ID, and published date in the playlist."
+            },
+            {
+              "question": "Does this tool need a YouTube API key?",
+              "answer": "No, this tool uses a public playlist extraction API so you can extract playlist links without providing an API key."
+            },
+            {
+              "question": "Can I extract links from any public playlist?",
+              "answer": "Yes, as long as the playlist is public and not private or restricted, the extractor can fetch the video links."
+            },
+            {
+              "question": "How can I save the extracted links?",
+              "answer": "Use the Download CSV button to save the playlist video list with video IDs, URLs, titles, and publish dates."
+            }
+          ],
+          "article": "\n## What is YouTube Playlist Link Extractor?\n\nYouTube Playlist Link Extractor is a fast, free tool for pulling every video link out of a public YouTube playlist. It returns titles, IDs, URLs, and publish dates in a clean format so you can save, analyze, or reuse playlist data.\n\n## Why use this tool?\n\nMany playlist users want to export all video links without copying them one by one. This tool automates the process and works without a YouTube API key or signup. You can use it for content planning, SEO research, playlist auditing, or building your own video lists.\n\n## How this tool helps creators and marketers\n\n- Quickly extract every video in a playlist for reference or sharing.\n- Save the results as a CSV file for publishing, influencer research, or project tracking.\n- Avoid manual playlist scraping and save time on bulk playlist tasks.\n\n## Use cases\n\n- Content marketers extracting playlist links for research.\n- Creators building video collections or playlists for tutorials.\n- Analysts compiling video URLs for SEO or competitor analysis.\n- Anyone needing a clean list of videos from a YouTube playlist."
+        },
+        {
           "id": "youtube-channel-statistics",
           "name": "YouTube Channel Statistics",
           "description": "Get detailed insights and statistics for any YouTube channel instantly. View subscriber counts, video totals, and engagement metrics with our free online analytics tool.",

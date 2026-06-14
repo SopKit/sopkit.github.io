@@ -114,7 +114,7 @@ export default function ExamPillar() {
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
-                                    <span><strong>Universal Compatibility:** Outputs are verified against the **JPE/JFIF standard** used by over 95% of Indian government portals.</span>
+                                    <span><strong>Universal Compatibility:</strong> Outputs are verified against the **JPE/JFIF standard** used by over 95% of Indian government portals.</span>
                                 </li>
                             </ul>
                         </div>
