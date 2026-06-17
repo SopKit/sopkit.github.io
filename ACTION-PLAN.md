@@ -1,5 +1,8 @@
 # SopKit SEO Action Plan
 
+> **⚠️ SUPERSEDED — historical snapshot from 2026-06-04.** Items have since been
+> worked on; priorities/numbers below are stale. Kept for history only.
+
 **Prioritized by Impact × Effort**  
 **Site:** [sopkit.github.io](https://sopkit.github.io) — 405+ free online tools  
 **Generated:** 2026-06-04

@@ -1,10 +1,9 @@
 "use client";
 
-import { useUser } from "@stackframe/stack";
-import { UserButton } from "@stackframe/stack";
 import { Button } from "@/components/ui/button";
 import { LogIn } from "lucide-react";
 import { ErrorBoundary } from "@/components/shared/ErrorBoundary";
+import dynamic from "next/dynamic";
 
 function LoginLink() {
 	return (
@@ -22,19 +21,17 @@ function LoginLink() {
 	);
 }
 
-function AuthedButton() {
-	const user = useUser({ or: "return-null" });
-
-	if (user) {
-		return (
-			<div className="flex items-center gap-2">
-				<UserButton />
-			</div>
-		);
-	}
-
-	return <LoginLink />;
-}
+// The Stack SDK is heavy (~640 KB). It lives in its own module so a real
+// separate chunk is produced; here we load that chunk lazily, client-only.
+// Anonymous visitors (the common case, and the entire build when Stack auth is
+// unconfigured) never download it.
+const LazyAuthedButton = dynamic(
+	() => import("./AuthedButton").then((m) => m.AuthedButton),
+	{
+		ssr: false,
+		loading: () => <LoginLink />,
+	},
+);
 
 export function AuthButton() {
 	const stackProjectId = process.env.NEXT_PUBLIC_STACK_PROJECT_ID;
@@ -49,7 +46,7 @@ export function AuthButton() {
 	// fell back to no-auth). Degrade to a plain login link instead of crashing.
 	return (
 		<ErrorBoundary fallback={<LoginLink />}>
-			<AuthedButton />
+			<LazyAuthedButton fallback={<LoginLink />} />
 		</ErrorBoundary>
 	);
 }

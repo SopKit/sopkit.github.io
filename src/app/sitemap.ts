@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
 	// Use actual blog dates where available, siteUpdated for static pages
 	const staticPages: MetadataRoute.Sitemap = [
-		{ url: BASE_URL, lastModified: now, changeFrequency: "daily", priority: 1.0 },
+		{ url: `${BASE_URL}/`, lastModified: now, changeFrequency: "daily", priority: 1.0 },
 		{ url: `${BASE_URL}/about`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${BASE_URL}/contact`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${BASE_URL}/privacy`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },

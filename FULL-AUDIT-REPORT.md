@@ -1,5 +1,11 @@
 # SopKit SEO Audit Report
 
+> **⚠️ SUPERSEDED — historical snapshot from 2026-06-04.**
+> Many items below have since been resolved; some figures (tool count, JS chunk
+> sizes, DOM element count) are now outdated. Kept for history only — do not
+> treat as a current statement of site health. Re-run `npm run seo:audit`
+> against the live site for an up-to-date picture.
+
 **Date:** 2026-06-04  
 **Site:** https://sopkit.github.io  
 **Platform:** Next.js 16 on Cloudflare Pages  

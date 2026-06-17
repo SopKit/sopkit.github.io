@@ -1,5 +1,9 @@
 # SopKit SEO Improvement Tracker
 
+> **⚠️ SUPERSEDED — historical snapshot from 2026-06-04.** The 405 tool count
+> and 13/392 split below are stale; many more tools now carry FAQ/HowTo content.
+> Kept for history only.
+
 **Total Tools:** 405 | **SEO-ready with FAQs/Features/HowTo:** 13 | **TODO:** 392
 
 ## Priority Tools (Popular + High ExtraSlugs)
