@@ -53,3 +53,10 @@ tera-player/
 .env.temp
 .env
 .claude/
+
+# Local scratch / one-off audit & analysis output (not part of the app)
+typecheck_output*.txt
+tool_analysis*.txt
+analyze_tools.*
+seo-audit-report.json
+/seo-implementation/reports/seo-audit-report.json
