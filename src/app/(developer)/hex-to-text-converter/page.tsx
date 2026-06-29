@@ -7,7 +7,7 @@ export const metadata = {
 	title: "HEX to Text Converter Online Free - Developer Tools | SopKit",
 	description: "Convert hexadecimal strings back to readable text instantly. Our free online HEX to Text tool is perfect for decoding data, debugging, and discovering hidden text streams. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/hex-to-text-converter",
+		canonical: "https://sopkit.github.io/hex-to-text-converter/",
 	},
 	openGraph: {
 		title: "HEX to Text Converter Online Free - No Signup",

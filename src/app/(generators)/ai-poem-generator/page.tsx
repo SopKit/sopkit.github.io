@@ -7,7 +7,7 @@ export const metadata = {
 	title: "AI Poem Generator Online Free - No Signup | SopKit",
 	description: "Create beautiful poems, haikus, and rhymes using artificial intelligence. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/ai-poem-generator",
+		canonical: "https://sopkit.github.io/ai-poem-generator/",
 	},
 	openGraph: {
 		title: "AI Poem Generator Online Free - No Signup",

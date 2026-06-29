@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JSON Minify Online Free - Developer Tools | SopKit",
 	description: "Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-minify",
+		canonical: "https://sopkit.github.io/json-minify/",
 	},
 	openGraph: {
 		title: "JSON Minify Online Free - No Signup",

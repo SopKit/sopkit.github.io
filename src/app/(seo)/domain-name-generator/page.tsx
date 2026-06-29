@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Domain Name Generator Online Free - No Signup | SopKit",
 	description: "Free online Domain Name Generator. Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free. 100% free, no signup required, and privacy-focused processing in your browser.",
 	alternates: {
-		canonical: "https://sopkit.github.io/domain-name-generator",
+		canonical: "https://sopkit.github.io/domain-name-generator/",
 	},
 	openGraph: {
 		title: "Domain Name Generator Online Free - No Signup",

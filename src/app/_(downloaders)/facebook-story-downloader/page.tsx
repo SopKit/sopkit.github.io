@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Facebook Story Downloader online. High-speed downloading with no signup needed. Easy to use.",
 	keywords: "facebook story downloader, save facebook stories, fb story saver, facebook story saver, free tool, SopKit, facebook-story-downloader, free facebook-story-downloader, facebook story downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/facebook-story-downloader",
+		canonical: "https://sopkit.github.io/facebook-story-downloader/",
 	},
 	openGraph: {
 		title: "Free Facebook Story Downloader Online - No Signup | SopKit",

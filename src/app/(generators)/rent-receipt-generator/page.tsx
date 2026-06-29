@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
 	keywords: "rent-receipt-generator, Rent Receipt Generator, print rent receipt, hra rent receipt, rent slip maker, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/rent-receipt-generator",
+		canonical: "https://sopkit.github.io/rent-receipt-generator/",
 	},
 	openGraph: {
 		title: "Free Rent Receipt Generator Online - No Signup | SopKit",

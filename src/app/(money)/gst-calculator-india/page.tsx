@@ -8,7 +8,7 @@ export const metadata = {
 	title: "GST Calculator India Online Free | SopKit",
 	description: "Calculate GST amount, inclusive/exclusive price, CGST, SGST, and IGST for Indian invoices instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/gst-calculator-india",
+		canonical: "https://sopkit.github.io/gst-calculator-india/",
 	},
 	openGraph: {
 		title: "GST Calculator India Online Free - No Signup | SopKit",

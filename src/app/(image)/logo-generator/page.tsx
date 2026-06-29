@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Logo Generator Online Free - Compress & Convert Images | SopKit",
 	description: "Create professional logos with text, fonts, and custom colors No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/logo-generator",
+		canonical: "https://sopkit.github.io/logo-generator/",
 	},
 	openGraph: {
 		title: "Logo Generator Online Free - No Signup",

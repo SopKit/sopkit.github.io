@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized youtube description generator details. Instantly copy or share customized outputs.",
 	keywords: "youtube description generator, youtube-description-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-description-generator",
+		canonical: "https://sopkit.github.io/youtube-description-generator/",
 	},
 	openGraph: {
 		title: "YouTube Description Generator - Free Online Tool | SopKit",

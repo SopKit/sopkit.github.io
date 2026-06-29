@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Convert to ICO Online Free - Compress & Convert Images | SopKit",
 	description: "Free convert to ico tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/convert-to-ico",
+		canonical: "https://sopkit.github.io/convert-to-ico/",
 	},
 	openGraph: {
 		title: "Convert to ICO Online Free - No Signup",

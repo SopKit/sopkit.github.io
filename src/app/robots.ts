@@ -12,6 +12,7 @@ const BASE_DISALLOW = [
 	"/embed/",
 	"/youtube-redirects/",
 	"/search",
+	"/search/",
 ];
 
 export default function robots(): MetadataRoute.Robots {

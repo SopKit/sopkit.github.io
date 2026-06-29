@@ -7,7 +7,7 @@ export const metadata = {
 	title: "HTML Beautifier Online Free - Developer Tools | SopKit",
 	description: "Format and prettify your HTML code instantly. Our free online HTML Beautifier fixes indentation, improves readability, and cleans up messy markup for better web development. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-beautifier",
+		canonical: "https://sopkit.github.io/html-beautifier/",
 	},
 	openGraph: {
 		title: "HTML Beautifier Online Free - No Signup",

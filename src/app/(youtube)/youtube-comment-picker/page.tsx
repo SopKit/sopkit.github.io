@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Comment Picker Online Free - No Signup | SopKit",
 	description: "Pick a random winner from your YouTube video comments instantly. Our free online Comment Picker is perfect for giveaways, contests, and audience engagement. Fast and fair. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-comment-picker",
+		canonical: "https://sopkit.github.io/youtube-comment-picker/",
 	},
 	openGraph: {
 		title: "YouTube Comment Picker Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Save Twitter Videos online. High-speed downloading with no signup needed. Try it free now.",
 	keywords: "save twitter videos, free online tool, no signup, save-twitter-videos, free save-twitter-videos, Save Twitter Videos online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/save-twitter-videos",
+		canonical: "https://sopkit.github.io/save-twitter-videos/",
 	},
 	openGraph: {
 		title: "Free Save Twitter Videos Online - No Signup | SopKit",

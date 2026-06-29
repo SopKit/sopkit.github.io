@@ -12,7 +12,7 @@ export const metadata = {
 	description: "Format, convert, and manipulate text content",
 	keywords: "text tools, word counter, case converter, text cleaner, online text tools, SopKit, text-tools, free text-tools, text tools online, text tool, online text utility, free text converter",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-tools",
+		canonical: "https://sopkit.github.io/text-tools/",
 	},
 	openGraph: {
 		title: "Free Text Tools Online - No Signup | SopKit",

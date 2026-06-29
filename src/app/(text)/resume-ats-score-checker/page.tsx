@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Resume ATS Score Checker Online Free | SopKit",
 	description: "Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professionals. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/resume-ats-score-checker",
+		canonical: "https://sopkit.github.io/resume-ats-score-checker/",
 	},
 	openGraph: {
 		title: "Resume ATS Score Checker Online Free - No Signup | SopKit",

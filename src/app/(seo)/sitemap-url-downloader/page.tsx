@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Sitemap Url Downloader Online Free - No Signup | SopKit",
 	description: "Free Sitemap Url Downloader online. Sitemap Url Downloader allows you to optimize your website quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/sitemap-url-downloader",
+		canonical: "https://sopkit.github.io/sitemap-url-downloader/",
 	},
 	openGraph: {
 		title: "Sitemap Url Downloader Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Save Insta Pfp online. High-speed downloading with no signup needed. No registration needed.",
 	keywords: "save insta pfp, free online tool, no signup, save-insta-pfp, free save-insta-pfp, Save Insta Pfp online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/save-insta-pfp",
+		canonical: "https://sopkit.github.io/save-insta-pfp/",
 	},
 	openGraph: {
 		title: "Free Save Insta Pfp Online - No Signup | SopKit",

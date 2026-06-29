@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Resize Image in CM, MM, Inches Online Free | SopKit",
 	description: "Resize photos by centimeters, millimeters, inches, pixels, and DPI for official forms, printing, and documents. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/resize-image-cm-mm-inch",
+		canonical: "https://sopkit.github.io/resize-image-cm-mm-inch/",
 	},
 	openGraph: {
 		title: "Resize Image in CM, MM, Inches Online Free - No Signup | SopKit",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Pinterest Image Downloader online. High-speed downloading with no signup needed. 100% free.",
 	keywords: "pinterest image downloader, free online tool, no signup, pinterest-image-downloader, free pinterest-image-downloader, Pinterest Image Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/pinterest-image-downloader",
+		canonical: "https://sopkit.github.io/pinterest-image-downloader/",
 	},
 	openGraph: {
 		title: "Free Pinterest Image Downloader Online - No Signup | SopKit",

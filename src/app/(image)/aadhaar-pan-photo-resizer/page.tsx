@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Aadhaar and PAN Card Photo Resizer Online Free | SopKit",
 	description: "Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online document forms. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/aadhaar-pan-photo-resizer",
+		canonical: "https://sopkit.github.io/aadhaar-pan-photo-resizer/",
 	},
 	openGraph: {
 		title: "Aadhaar and PAN Card Photo Resizer Online Free - No Signup | SopKit",

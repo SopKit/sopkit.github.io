@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized instagram bio generator details. Instantly copy or share customized outputs.",
 	keywords: "instagram bio generator, instagram-bio-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/instagram-bio-generator",
+		canonical: "https://sopkit.github.io/instagram-bio-generator/",
 	},
 	openGraph: {
 		title: "Instagram Bio Generator - Free Online Tool | SopKit",

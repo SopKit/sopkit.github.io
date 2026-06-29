@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Convert SRT to VTT Online Free - No Signup | SopKit",
 	description: "Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming platforms. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/convert-srt-to-vtt",
+		canonical: "https://sopkit.github.io/convert-srt-to-vtt/",
 	},
 	openGraph: {
 		title: "Convert SRT to VTT Online Free - No Signup",

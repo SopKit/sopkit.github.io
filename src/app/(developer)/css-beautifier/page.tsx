@@ -7,7 +7,7 @@ export const metadata = {
 	title: "CSS Beautifier Online Free - Developer Tools | SopKit",
 	description: "Format and prettify your CSS code instantly with our free online CSS Beautifier. Improve code readability, fix indentation, and organize your stylesheets for better maintenance. Fast and secure. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/css-beautifier",
+		canonical: "https://sopkit.github.io/css-beautifier/",
 	},
 	openGraph: {
 		title: "CSS Beautifier Online Free - No Signup",

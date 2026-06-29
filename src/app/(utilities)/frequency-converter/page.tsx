@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Frequency Converter Online Free - No Signup | SopKit",
 	description: "Free frequency converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/frequency-converter",
+		canonical: "https://sopkit.github.io/frequency-converter/",
 	},
 	openGraph: {
 		title: "Frequency Converter Online Free - No Signup",

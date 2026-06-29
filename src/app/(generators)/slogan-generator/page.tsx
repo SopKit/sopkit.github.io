@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized slogan generator details. Instantly copy or share customized outputs.",
 	keywords: "slogan generator, slogan-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/slogan-generator",
+		canonical: "https://sopkit.github.io/slogan-generator/",
 	},
 	openGraph: {
 		title: "Slogan Generator - Free Online Tool | SopKit",

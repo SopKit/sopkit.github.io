@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Line Sorter Online Free - No Signup | SopKit",
 	description: "Sort lists, names, or lines alphabetically or by length instantly. Our free online Line Sorter helps you organize data for cleaner documentation and code. Privacy-friendly and fast. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/line-sorter",
+		canonical: "https://sopkit.github.io/line-sorter/",
 	},
 	openGraph: {
 		title: "Line Sorter Online Free - No Signup",

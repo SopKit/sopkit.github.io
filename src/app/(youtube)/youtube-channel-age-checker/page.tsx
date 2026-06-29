@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Channel Age Checker Online Free - No Signup | SopKit",
 	description: "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive analysis. Fast and private. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-channel-age-checker",
+		canonical: "https://sopkit.github.io/youtube-channel-age-checker/",
 	},
 	openGraph: {
 		title: "YouTube Channel Age Checker Online Free - No Signup",

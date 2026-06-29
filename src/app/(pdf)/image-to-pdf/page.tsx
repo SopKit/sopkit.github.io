@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Image to PDF Online Free - Edit, Merge & Convert PDF | SopKit",
 	description: "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-to-pdf",
+		canonical: "https://sopkit.github.io/image-to-pdf/",
 	},
 	openGraph: {
 		title: "Image to PDF Online Free - No Signup",

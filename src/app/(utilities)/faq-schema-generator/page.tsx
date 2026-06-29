@@ -7,7 +7,7 @@ export const metadata = {
 	title: "FAQ Schema Generator Online Free - No Signup | SopKit",
 	description: "Free faq schema generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/faq-schema-generator",
+		canonical: "https://sopkit.github.io/faq-schema-generator/",
 	},
 	openGraph: {
 		title: "FAQ Schema Generator Online Free - No Signup",

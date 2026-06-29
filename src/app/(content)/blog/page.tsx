@@ -6,7 +6,7 @@ import { blogs } from "@/constants/blog-data";	export const metadata = {
 		keywords:
 			"SopKit blog, free online tools guides, seo tutorials, json guides, converter tutorials, no signup tools",
 		alternates: {
-			canonical: "https://sopkit.github.io/blog",
+			canonical: "https://sopkit.github.io/blog/",
 		},
 		openGraph: {
 			title: "Blog & Guides for Free Online Tools | SopKit",
@@ -26,6 +26,9 @@ import { blogs } from "@/constants/blog-data";	export const metadata = {
 		robots: { index: true, follow: true },
 	};
 
+import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
+import { Suspense } from "react";
+
 export default function BlogPage() {
 	const sortedArticles = [...blogs].sort((a, b) =>
 		new Date(b.date).getTime() - new Date(a.date).getTime(),
@@ -43,14 +46,14 @@ export default function BlogPage() {
 		"@type": "CollectionPage",
 		name: "Blog & Guides for Free Online Tools",
 		description: "Actionable guides, tool lists, and tutorials for SEO, developer workflows, and everyday online conversion tasks.",
-		url: "https://sopkit.github.io/blog",
+		url: "https://sopkit.github.io/blog/",
 		mainEntity: {
 			"@type": "ItemList",
 			itemListElement: sortedArticles.slice(0, 10).map((article, i) => ({
 				"@type": "ListItem",
 				position: i + 1,
 				name: article.title,
-				url: `https://sopkit.github.io/blog/${article.slug}`,
+				url: `https://sopkit.github.io/blog/${article.slug}/`,
 			})),
 		},
 	};
@@ -63,13 +66,13 @@ export default function BlogPage() {
 				"@type": "ListItem",
 				position: 1,
 				name: "Home",
-				item: "https://sopkit.github.io",
+				item: "https://sopkit.github.io/",
 			},
 			{
 				"@type": "ListItem",
 				position: 2,
 				name: "Blog",
-				item: "https://sopkit.github.io/blog",
+				item: "https://sopkit.github.io/blog/",
 			},
 		],
 	};
@@ -90,12 +93,17 @@ export default function BlogPage() {
 					}}
 				/>
 				<section className="border-b border-border/40 bg-gradient-to-b from-primary/5 to-transparent">
-					<div className="container mx-auto max-w-6xl px-4 py-14 md:py-20">
+					<div className="container mx-auto max-w-6xl px-4 pt-8 md:pt-12">
+						<Suspense fallback={<div className="h-6 w-64 bg-muted/20 animate-pulse rounded" />}>
+							<BreadcrumbsEnhanced suppressSchema={true} />
+						</Suspense>
+					</div>
+					<div className="container mx-auto max-w-6xl px-4 pb-14 md:pb-20 pt-4">
 						<p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-4">
 							Content Engine
 						</p>
 						<h1 className="text-3xl md:text-5xl font-bold tracking-tight max-w-4xl">
-							Blog Guides That Link Directly to Useful Tools
+							SopKit Blog — Guides & Tutorials for Free Online Tools
 						</h1>
 						<p className="mt-6 text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
 							Each guide is written for execution. Read the workflow, open the linked

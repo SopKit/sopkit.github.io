@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Resize and compress files with our free Passport Photo Maker online. Safe and private browser utility for government exam portal applications. Try it free now.",
 	keywords: "passport-photo-maker, Passport Photo Maker, free passport photo maker, passport size photo maker online, print passport photos, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/passport-photo-maker",
+		canonical: "https://sopkit.github.io/passport-photo-maker/",
 	},
 	openGraph: {
 		title: "Free Passport Photo Maker Online - No Signup | SopKit",

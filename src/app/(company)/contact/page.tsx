@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Have a question, feedback, or a tool request for SopKit? Reach out to our open-source team via email or report bugs directly on our GitHub repository.",
 	keywords: "contact SopKit, support, feedback, help, contact, request tool, SopKit support, report bug",
 	alternates: {
-		canonical: "https://sopkit.github.io/contact",
+		canonical: "https://sopkit.github.io/contact/",
 	},
 	openGraph: {
 		title: "Contact SopKit - Tool Requests, Support & Feedback",

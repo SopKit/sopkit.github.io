@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Merge PDF Online Free | SopKit",
 	description: "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/merge-pdf-online",
+		canonical: "https://sopkit.github.io/merge-pdf-online/",
 	},
 	openGraph: {
 		title: "Merge PDF Online Free - No Signup | SopKit",

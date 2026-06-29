@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Time Converter Online Free - No Signup | SopKit",
 	description: "Free time converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/time-converter",
+		canonical: "https://sopkit.github.io/time-converter/",
 	},
 	openGraph: {
 		title: "Time Converter Online Free - No Signup",

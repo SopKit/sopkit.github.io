@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Backlink Checker Online Free - No Signup | SopKit",
 	description: "Analyze backlinks for any website with our free backlink checker. Discover referring domains, anchor texts, and link quality metrics instantly. No signup required, unlimited checks, SEO-grade data. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/backlink-checker",
+		canonical: "https://sopkit.github.io/backlink-checker/",
 	},
 	openGraph: {
 		title: "Backlink Checker Online Free - No Signup",

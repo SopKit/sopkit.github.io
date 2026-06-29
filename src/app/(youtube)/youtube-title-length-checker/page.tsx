@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Title Length Checker Online Free - No Signup | SopKit",
 	description: "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is visible in search results. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-title-length-checker",
+		canonical: "https://sopkit.github.io/youtube-title-length-checker/",
 	},
 	openGraph: {
 		title: "YouTube Title Length Checker Online Free - No Signup",

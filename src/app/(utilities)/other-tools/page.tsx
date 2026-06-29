@@ -12,7 +12,7 @@ export const metadata = {
 	description: "Free Other Tools online tool. Fast and secure.",
 	keywords: "utility tools, free online tool, no signup, other-tools, Other Tools, free other-tools, Other Tools online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/other-tools",
+		canonical: "https://sopkit.github.io/other-tools/",
 	},
 	openGraph: {
 		title: "Free Other Tools Online - No Signup | SopKit",

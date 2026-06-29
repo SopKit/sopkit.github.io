@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized review reply generator details. Instantly copy or share customized outputs.",
 	keywords: "review reply generator, review-reply-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/review-reply-generator",
+		canonical: "https://sopkit.github.io/review-reply-generator/",
 	},
 	openGraph: {
 		title: "Review Reply Generator - Free Online Tool | SopKit",

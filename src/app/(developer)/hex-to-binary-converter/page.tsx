@@ -7,7 +7,7 @@ export const metadata = {
 	title: "HEX to Binary Converter Online Free - Developer Tools | SopKit",
 	description: "Transform hexadecimal values into binary code instantly. Our free online HEX to Binary converter is perfect for developers, hardware engineers, and technical students. Fast and secure. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/hex-to-binary-converter",
+		canonical: "https://sopkit.github.io/hex-to-binary-converter/",
 	},
 	openGraph: {
 		title: "HEX to Binary Converter Online Free - No Signup",

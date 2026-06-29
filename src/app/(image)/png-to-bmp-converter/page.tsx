@@ -7,7 +7,7 @@ export const metadata = {
 	title: "PNG to BMP Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast, secure, and privacy-focused. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/png-to-bmp-converter",
+		canonical: "https://sopkit.github.io/png-to-bmp-converter/",
 	},
 	openGraph: {
 		title: "PNG to BMP Converter Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Exam Marks Needed Calculator Online Free | SopKit",
 	description: "Find out exactly how many marks you need in your final exam to pass or reach your target grade based on internal scores. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/marks-needed-calculator",
+		canonical: "https://sopkit.github.io/marks-needed-calculator/",
 	},
 	openGraph: {
 		title: "Exam Marks Needed Calculator Online Free - No Signup | SopKit",

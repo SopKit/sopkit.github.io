@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Probability Calculator Online Free - No Signup | SopKit",
 	description: "Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/probability-calculator",
+		canonical: "https://sopkit.github.io/probability-calculator/",
 	},
 	openGraph: {
 		title: "Probability Calculator Online Free - No Signup",

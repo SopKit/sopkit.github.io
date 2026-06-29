@@ -4,7 +4,7 @@ import SeoHubPage from "@/components/seo/SeoHubPage";
 export const metadata: Metadata = {
 	title: "Finance Calculators - Loan, GST, Margin & Sales Tax Tools | SopKit",
 	description: "Free online finance calculators. Estimate loan EMIs, add or remove GST, check profit margins, calculate sales tax, and check PayPal fees instantly.",
-	alternates: { canonical: "https://sopkit.github.io/finance-tools" },
+	alternates: { canonical: "https://sopkit.github.io/finance-tools/" },
 };
 
 export default function FinanceToolsHub() {

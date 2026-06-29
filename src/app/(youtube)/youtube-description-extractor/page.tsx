@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Description Extractor Online Free - No Signup | SopKit",
 	description: "Extract the full description from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-description-extractor",
+		canonical: "https://sopkit.github.io/youtube-description-extractor/",
 	},
 	openGraph: {
 		title: "YouTube Description Extractor Online Free - No Signup",

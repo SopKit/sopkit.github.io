@@ -7,7 +7,7 @@ export const metadata = {
 	title: "AI Music Generator Online Free - No Signup | SopKit",
 	description: "Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation with studio-grade quality. Free this week! No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/ai-music-generator",
+		canonical: "https://sopkit.github.io/ai-music-generator/",
 	},
 	openGraph: {
 		title: "AI Music Generator Online Free - No Signup",

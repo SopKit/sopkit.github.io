@@ -7,7 +7,7 @@ export const metadata = {
 	title: "HTML Encoder Online Free - Developer Tools | SopKit",
 	description: "Encode text into HTML entities instantly for secure web display. Our free online tool protects your markup by converting special characters into safe HTML-encoded strings. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-encoder",
+		canonical: "https://sopkit.github.io/html-encoder/",
 	},
 	openGraph: {
 		title: "HTML Encoder Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Title Extractor Online Free - No Signup | SopKit",
 	description: "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-title-extractor",
+		canonical: "https://sopkit.github.io/youtube-title-extractor/",
 	},
 	openGraph: {
 		title: "YouTube Title Extractor Online Free - No Signup",

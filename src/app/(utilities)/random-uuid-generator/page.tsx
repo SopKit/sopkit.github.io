@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Random UUID Generator Online Free - No Signup | SopKit",
 	description: "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/random-uuid-generator",
+		canonical: "https://sopkit.github.io/random-uuid-generator/",
 	},
 	openGraph: {
 		title: "Random UUID Generator Online Free - No Signup",

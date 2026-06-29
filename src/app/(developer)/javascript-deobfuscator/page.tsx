@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JavaScript DeObfuscator Online Free - Developer Tools | SopKit",
 	description: "Make obfuscated JavaScript code readable again instantly. Our free online DeObfuscator reverses common obfuscation techniques to help with code analysis and debugging. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/javascript-deobfuscator",
+		canonical: "https://sopkit.github.io/javascript-deobfuscator/",
 	},
 	openGraph: {
 		title: "JavaScript DeObfuscator Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Twitch Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 	keywords: "twitch video downloader, download twitch clips, twitch vod downloader, twitch to mp4, free tool, SopKit, twitch-video-downloader, free twitch-video-downloader, twitch video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/twitch-video-downloader",
+		canonical: "https://sopkit.github.io/twitch-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Twitch Video Downloader Online - No Signup | SopKit",

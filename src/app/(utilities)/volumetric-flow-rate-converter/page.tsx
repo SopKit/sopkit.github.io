@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Volumetric Flow Rate Converter Online Free - No Signup | SopKit",
 	description: "Free volumetric flow rate converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/volumetric-flow-rate-converter",
+		canonical: "https://sopkit.github.io/volumetric-flow-rate-converter/",
 	},
 	openGraph: {
 		title: "Volumetric Flow Rate Converter Online Free - No Signup",

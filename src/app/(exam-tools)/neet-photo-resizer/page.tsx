@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Resize and compress files with our free NEET Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
 	keywords: "neet-photo-resizer, NEET Photo Resizer, neet photo resizer online, neet postcard resizer, neet signature size, nta neet photo, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/neet-photo-resizer",
+		canonical: "https://sopkit.github.io/neet-photo-resizer/",
 	},
 	openGraph: {
 		title: "Free NEET Photo Resizer Online - No Signup | SopKit",

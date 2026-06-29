@@ -6,7 +6,7 @@ import { getAllCategories } from "@/lib/tools";	export const metadata = {
 		keywords:
 			"free tool guides, online tool categories, SopKit guide, best online tools, tool category pages",
 		alternates: {
-			canonical: "https://sopkit.github.io/tool-guides",
+			canonical: "https://sopkit.github.io/tool-guides/",
 		},
 		openGraph: {
 			title: "Free Tool Guides by Category | SopKit",

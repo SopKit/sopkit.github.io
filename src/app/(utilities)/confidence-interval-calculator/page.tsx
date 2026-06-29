@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Confidence Interval Calculator Online Free - No Signup | SopKit",
 	description: "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your research. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/confidence-interval-calculator",
+		canonical: "https://sopkit.github.io/confidence-interval-calculator/",
 	},
 	openGraph: {
 		title: "Confidence Interval Calculator Online Free - No Signup",

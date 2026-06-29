@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Font Generator Online Free - No Signup | SopKit",
 	description: "Professional Font Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/font-generator",
+		canonical: "https://sopkit.github.io/font-generator/",
 	},
 	openGraph: {
 		title: "Font Generator Online Free - No Signup",

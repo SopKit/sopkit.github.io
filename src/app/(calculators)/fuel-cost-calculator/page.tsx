@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Estimate the fuel needed and total cost for a trip from distance, fuel economy, and price per litre. Free trip fuel cost calculator.",
 	keywords: "fuel cost calculator, trip fuel calculator, gas cost calculator, fuel consumption calculator, travel fuel cost",
 	alternates: {
-		canonical: "https://sopkit.github.io/fuel-cost-calculator",
+		canonical: "https://sopkit.github.io/fuel-cost-calculator/",
 	},
 	openGraph: {
 		title: "Fuel Cost Calculator - Trip Fuel Estimator | SopKit",

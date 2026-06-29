@@ -7,7 +7,7 @@ export const metadata = {
 	description: "A practical collection of free tools for developers: JSON utilities, encoding, text transformers, validators, and conversion helpers.",
 	keywords: "tools for developers - free online stack, tools for developers - free online stack guide, SopKit, tools-for-developers, tools for developers, free tools-for-developers, tools for developers online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/tools-for-developers",
+		canonical: "https://sopkit.github.io/tools-for-developers/",
 	},
 	openGraph: {
 		title: "Free Tools for Developers - Free Online Stack Online - No Signup | SopKit",

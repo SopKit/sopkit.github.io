@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate the total number of floor or wall tiles needed for a room, including waste margins and cost estimates.",
 	keywords: "tile-calculator, Tile Calculator, flooring tiles estimator, tiles needed for room, floor area calculator, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/tile-calculator",
+		canonical: "https://sopkit.github.io/tile-calculator/",
 	},
 	openGraph: {
 		title: "Free Tile Calculator Online - No Signup | SopKit",

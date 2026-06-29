@@ -6,7 +6,7 @@ export const metadata = {
 	description: "Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.",
 	keywords: "image tools, free image tools online, image compressor free, remove background online, resize image for instagram, photo enhancer free, convert heic to jpg, SopKit image",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-tools",
+		canonical: "https://sopkit.github.io/image-tools/",
 	},
 	openGraph: {
 		title: "Free Image Tools Online - No Signup | SopKit",

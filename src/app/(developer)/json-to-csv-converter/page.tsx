@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JSON to CSV Converter Online Free - Developer Tools | SopKit",
 	description: "Convert JSON data to CSV format instantly. Our free online converter makes it easy to transform complex JSON structures into simple spreadsheet-ready tables. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-to-csv-converter",
+		canonical: "https://sopkit.github.io/json-to-csv-converter/",
 	},
 	openGraph: {
 		title: "JSON to CSV Converter Online Free - No Signup",

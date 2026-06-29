@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Base64 Encode Online Free - No Signup | SopKit",
 	description: "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in web URLs. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/base64-encode",
+		canonical: "https://sopkit.github.io/base64-encode/",
 	},
 	openGraph: {
 		title: "Base64 Encode Online Free - No Signup",

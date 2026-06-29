@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Format, clean, sort, and analyze text files instantly with our free Word Counter online. Fast and private browser utility with no signup. 100% free and secure.",
 	keywords: "word counter, free online tool, no signup, word-counter, free word-counter, Word Counter online, text tool, text editor online, content formatter, writing utility, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/word-counter",
+		canonical: "https://sopkit.github.io/word-counter/",
 	},
 	openGraph: {
 		title: "Free Word Counter Online - No Signup | SopKit",

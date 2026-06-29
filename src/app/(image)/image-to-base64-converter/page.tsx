@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Image to Base64 Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-to-base64-converter",
+		canonical: "https://sopkit.github.io/image-to-base64-converter/",
 	},
 	openGraph: {
 		title: "Image to Base64 Converter Online Free - No Signup",

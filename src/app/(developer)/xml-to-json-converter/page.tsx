@@ -7,7 +7,7 @@ export const metadata = {
 	title: "XML to JSON Converter Online Free - Developer Tools | SopKit",
 	description: "Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for web apps. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/xml-to-json-converter",
+		canonical: "https://sopkit.github.io/xml-to-json-converter/",
 	},
 	openGraph: {
 		title: "XML to JSON Converter Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Server Status Checker Online Free - No Signup | SopKit",
 	description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/server-status-checker",
+		canonical: "https://sopkit.github.io/server-status-checker/",
 	},
 	openGraph: {
 		title: "Server Status Checker Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Mashable Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 	keywords: "mashable video downloader, free online tool, no signup, mashable-video-downloader, free mashable-video-downloader, Mashable Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/mashable-video-downloader",
+		canonical: "https://sopkit.github.io/mashable-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Mashable Video Downloader Online - No Signup | SopKit",

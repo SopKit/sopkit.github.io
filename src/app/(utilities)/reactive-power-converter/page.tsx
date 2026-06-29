@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Reactive Power Converter Online Free - No Signup | SopKit",
 	description: "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/reactive-power-converter",
+		canonical: "https://sopkit.github.io/reactive-power-converter/",
 	},
 	openGraph: {
 		title: "Reactive Power Converter Online Free - No Signup",

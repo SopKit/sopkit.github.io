@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
 	title: "SopKit Pro - Batch Tools, No Ads and API Access",
 	description: "SopKit Pro is a planned upgrade for batch image compression, batch PDF tools, no ads, larger files, saved history, team features, and API access.",
-	alternates: { canonical: "https://sopkit.github.io/pro" },
+	alternates: { canonical: "https://sopkit.github.io/pro/" },
 };
 
 const plans = [

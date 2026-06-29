@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Capcut Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 	keywords: "capcut video downloader, free online tool, no signup, capcut-video-downloader, free capcut-video-downloader, Capcut Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/capcut-video-downloader",
+		canonical: "https://sopkit.github.io/capcut-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Capcut Video Downloader Online - No Signup | SopKit",

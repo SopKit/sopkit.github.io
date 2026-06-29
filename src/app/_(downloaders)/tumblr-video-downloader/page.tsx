@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Tumblr Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 	keywords: "tumblr video downloader, free online tool, no signup, tumblr-video-downloader, free tumblr-video-downloader, Tumblr Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/tumblr-video-downloader",
+		canonical: "https://sopkit.github.io/tumblr-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Tumblr Video Downloader Online - No Signup | SopKit",

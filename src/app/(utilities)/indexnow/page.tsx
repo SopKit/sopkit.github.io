@@ -7,7 +7,7 @@ export const metadata = {
 	title: "IndexNow Submitter Online Free - No Signup | SopKit",
 	description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/indexnow",
+		canonical: "https://sopkit.github.io/indexnow/",
 	},
 	openGraph: {
 		title: "IndexNow Submitter Online Free - No Signup",

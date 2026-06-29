@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
 	keywords: "terms of use, SopKit terms, terms of service, free online tools terms, terms, free terms, terms online, SopKit, free online tools, browser tools, no signup tools, privacy tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/terms",
+		canonical: "https://sopkit.github.io/terms/",
 	},
 	openGraph: {
 		title: "Free Terms of Use Online - SopKit",

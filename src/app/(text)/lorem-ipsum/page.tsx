@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Lorem Ipsum Generator Online Free - No Signup | SopKit",
 	description: "Generate custom Lorem Ipsum text for your designs. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/lorem-ipsum",
+		canonical: "https://sopkit.github.io/lorem-ipsum/",
 	},
 	openGraph: {
 		title: "Lorem Ipsum Generator Online Free - No Signup",

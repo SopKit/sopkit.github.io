@@ -7,7 +7,7 @@ export const metadata = {
 	description: "Looking for a free ChatGPT alternative? Build a focused digital workflow for writing, coding, and image generation using our top free online tools.",
 	keywords: "best free alternative to chatgpt for daily tasks, best free alternative to chatgpt for daily tasks guide, SopKit, best-free-alternative-to-chatgpt, best free alternative to chatgpt, free best-free-alternative-to-chatgpt, best free alternative to chatgpt online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/best-free-alternative-to-chatgpt",
+		canonical: "https://sopkit.github.io/best-free-alternative-to-chatgpt/",
 	},
 	openGraph: {
 		title: "Best Free ChatGPT Alternatives for Daily Tasks | SopKit",

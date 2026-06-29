@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Image Cropper Online Free - Compress & Convert Images | SopKit",
 	description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-cropper",
+		canonical: "https://sopkit.github.io/image-cropper/",
 	},
 	openGraph: {
 		title: "Image Cropper Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JSON Editor Online Free - Developer Tools | SopKit",
 	description: "Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data perfectly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-editor",
+		canonical: "https://sopkit.github.io/json-editor/",
 	},
 	openGraph: {
 		title: "JSON Editor Online Free - No Signup",

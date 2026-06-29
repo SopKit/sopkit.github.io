@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Excuse Generator Online Free - No Signup | SopKit",
 	description: "Generate creative excuses for any situation. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/excuse-generator",
+		canonical: "https://sopkit.github.io/excuse-generator/",
 	},
 	openGraph: {
 		title: "Excuse Generator Online Free - No Signup",

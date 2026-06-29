@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Decimal to Binary Converter Online Free - Developer Tools | SopKit",
 	description: "Convert decimal numbers (Base-10) to binary code (Base-2) instantly. Our free online converter is perfect for students, developers, and data analysis tasks. Fast, secure, and accurate. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/decimal-to-binary-converter",
+		canonical: "https://sopkit.github.io/decimal-to-binary-converter/",
 	},
 	openGraph: {
 		title: "Decimal to Binary Converter Online Free - No Signup",

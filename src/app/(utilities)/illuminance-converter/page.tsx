@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Illuminance Converter Online Free - No Signup | SopKit",
 	description: "Free illuminance converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/illuminance-converter",
+		canonical: "https://sopkit.github.io/illuminance-converter/",
 	},
 	openGraph: {
 		title: "Illuminance Converter Online Free - No Signup",

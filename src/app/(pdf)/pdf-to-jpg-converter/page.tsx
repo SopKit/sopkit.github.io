@@ -8,7 +8,7 @@ export const metadata = {
 	title: "PDF to JPG Converter Online Free | SopKit",
 	description: "Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-to-jpg-converter",
+		canonical: "https://sopkit.github.io/pdf-to-jpg-converter/",
 	},
 	openGraph: {
 		title: "PDF to JPG Converter Online Free - No Signup | SopKit",

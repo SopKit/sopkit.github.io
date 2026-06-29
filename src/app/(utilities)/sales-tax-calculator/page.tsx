@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Sales Tax Calculator Online Free - No Signup | SopKit",
 	description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/sales-tax-calculator",
+		canonical: "https://sopkit.github.io/sales-tax-calculator/",
 	},
 	openGraph: {
 		title: "Sales Tax Calculator Online Free - No Signup",

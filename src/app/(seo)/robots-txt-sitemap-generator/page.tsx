@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Robots.txt and Sitemap Generator Free Online - No Signup | SopKit",
 	description: "Free Robots.txt and Sitemap Generator online. Generate search engine friendly robots.txt and sitemap.xml files for your website to improve crawling and indexing. 100% free, no signup required.",
 	alternates: {
-		canonical: "https://sopkit.github.io/robots-txt-sitemap-generator",
+		canonical: "https://sopkit.github.io/robots-txt-sitemap-generator/",
 	},
 	openGraph: {
 		title: "Robots.txt and Sitemap Generator Online Free - No Signup",

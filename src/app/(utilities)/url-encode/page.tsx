@@ -7,7 +7,7 @@ export const metadata = {
 	title: "URL Encode Online Free - No Signup | SopKit",
 	description: "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-encode",
+		canonical: "https://sopkit.github.io/url-encode/",
 	},
 	openGraph: {
 		title: "URL Encode Online Free - No Signup",

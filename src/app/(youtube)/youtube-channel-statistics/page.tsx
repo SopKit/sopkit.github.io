@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Channel Statistics Online Free - No Signup | SopKit",
 	description: "Get detailed insights and statistics for any YouTube channel instantly. View subscriber counts, video totals, and engagement metrics with our free online analytics tool. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-channel-statistics",
+		canonical: "https://sopkit.github.io/youtube-channel-statistics/",
 	},
 	openGraph: {
 		title: "YouTube Channel Statistics Online Free - No Signup",

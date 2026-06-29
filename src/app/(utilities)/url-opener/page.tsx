@@ -7,7 +7,7 @@ export const metadata = {
 	title: "URL Opener Online Free - No Signup | SopKit",
 	description: "Free url opener tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-opener",
+		canonical: "https://sopkit.github.io/url-opener/",
 	},
 	openGraph: {
 		title: "URL Opener Online Free - No Signup",

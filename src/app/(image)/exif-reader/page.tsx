@@ -7,7 +7,7 @@ export const metadata = {
 	title: "EXIF Reader Online Free - Compress & Convert Images | SopKit",
 	description: "Extract metadata and EXIF data from images including camera settings and GPS location No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/exif-reader",
+		canonical: "https://sopkit.github.io/exif-reader/",
 	},
 	openGraph: {
 		title: "EXIF Reader Online Free - No Signup",

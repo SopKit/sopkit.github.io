@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Paypal Fee Calculator Online Free - No Signup | SopKit",
 	description: "Free paypal fee calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/paypal-fee-calculator",
+		canonical: "https://sopkit.github.io/paypal-fee-calculator/",
 	},
 	openGraph: {
 		title: "Paypal Fee Calculator Online Free - No Signup",

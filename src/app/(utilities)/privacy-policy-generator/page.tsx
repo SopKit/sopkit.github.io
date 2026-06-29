@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Privacy Policy Generator Online Free - No Signup | SopKit",
 	description: "Free privacy policy generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/privacy-policy-generator",
+		canonical: "https://sopkit.github.io/privacy-policy-generator/",
 	},
 	openGraph: {
 		title: "Privacy Policy Generator Online Free - No Signup",

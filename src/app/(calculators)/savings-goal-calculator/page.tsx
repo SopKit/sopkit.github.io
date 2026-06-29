@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Find the monthly deposit needed to reach a savings goal by a target date, including interest. Free savings planning calculator.",
 	keywords: "savings goal calculator, monthly savings calculator, savings target planner, how much to save calculator, savings plan calculator",
 	alternates: {
-		canonical: "https://sopkit.github.io/savings-goal-calculator",
+		canonical: "https://sopkit.github.io/savings-goal-calculator/",
 	},
 	openGraph: {
 		title: "Savings Goal Calculator - Monthly Deposit Planner | SopKit",

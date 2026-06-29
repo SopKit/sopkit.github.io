@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Ifunny Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 	keywords: "ifunny video downloader, free online tool, no signup, ifunny-video-downloader, free ifunny-video-downloader, Ifunny Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ifunny-video-downloader",
+		canonical: "https://sopkit.github.io/ifunny-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Ifunny Video Downloader Online - No Signup | SopKit",

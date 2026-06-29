@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your protein intake calculator instantly. Free browser-based calculator with detailed breakdowns.",
 	keywords: "protein intake calculator, protein-intake-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/protein-intake-calculator",
+		canonical: "https://sopkit.github.io/protein-intake-calculator/",
 	},
 	openGraph: {
 		title: "Protein Intake Calculator - Free Online Tool | SopKit",

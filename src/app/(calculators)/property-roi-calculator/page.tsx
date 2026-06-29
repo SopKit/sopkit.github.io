@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your property roi calculator instantly. Free browser-based calculator with detailed breakdowns.",
 	keywords: "property roi calculator, property-roi-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/property-roi-calculator",
+		canonical: "https://sopkit.github.io/property-roi-calculator/",
 	},
 	openGraph: {
 		title: "Property ROI Calculator - Free Online Tool | SopKit",

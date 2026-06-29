@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Text Sorter Online Free - No Signup | SopKit",
 	description: "Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for researchers and developers. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-sorter",
+		canonical: "https://sopkit.github.io/text-sorter/",
 	},
 	openGraph: {
 		title: "Text Sorter Online Free - No Signup",

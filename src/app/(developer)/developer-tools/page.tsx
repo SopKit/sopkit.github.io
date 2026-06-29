@@ -12,7 +12,7 @@ export const metadata = {
 	description: "Format JSON, generate hashes, and developer utilities",
 	keywords: "developer tools, json formatter, base64 encoder, api tester, online dev tools, SopKit, developer-tools, free developer-tools, developer tools online, developer tool, online code utility, free developer tool",
 	alternates: {
-		canonical: "https://sopkit.github.io/developer-tools",
+		canonical: "https://sopkit.github.io/developer-tools/",
 	},
 	openGraph: {
 		title: "Free Developer Tools Online - No Signup | SopKit",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Format, clean, sort, and analyze text files instantly with our free Text to Slug Converter online. Fast and private browser utility with no signup. Easy to use.",
 	keywords: "text to slug converter, free online tool, no signup, text-to-slug-converter, free text-to-slug-converter, Text To Slug Converter online, text tool, text editor online, content formatter, writing utility, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-slug-converter",
+		canonical: "https://sopkit.github.io/text-to-slug-converter/",
 	},
 	openGraph: {
 		title: "Free Text to Slug Converter Online - No Signup | SopKit",

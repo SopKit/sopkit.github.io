@@ -7,7 +7,7 @@ export const metadata = {
 	description: "Learn how to format JSON correctly. Avoid syntax errors, clean up payloads, and use safe formatting practices for API requests and configuration files.",
 	keywords: "how to format json properly (without breaking data), how to format json properly (without breaking data) guide, SopKit, how-to-format-json-properly, how to format json properly, free how-to-format-json-properly, how to format json properly online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/how-to-format-json-properly",
+		canonical: "https://sopkit.github.io/how-to-format-json-properly/",
 	},
 	openGraph: {
 		title: "How to Format JSON Properly Without Breaking Data | SopKit",

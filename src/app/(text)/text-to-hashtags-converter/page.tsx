@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Format, clean, sort, and analyze text files instantly with our free Text to Hashtags Converter online. Fast and private browser utility with no signup.",
 	keywords: "text to hashtags converter, free online tool, no signup, text tool, text editor online, content formatter, writing utility, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-hashtags-converter",
+		canonical: "https://sopkit.github.io/text-to-hashtags-converter/",
 	},
 	openGraph: {
 		title: "Free Text to Hashtags Converter Online - No Signup | SopKit",

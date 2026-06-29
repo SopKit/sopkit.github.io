@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your food cost calculator instantly. Free browser-based calculator with detailed breakdowns.",
 	keywords: "food cost calculator, food-cost-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/food-cost-calculator",
+		canonical: "https://sopkit.github.io/food-cost-calculator/",
 	},
 	openGraph: {
 		title: "Food Cost Calculator - Free Online Tool | SopKit",

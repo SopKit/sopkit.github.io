@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Image Enlarger Online Free - Compress & Convert Images | SopKit",
 	description: "Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-enlarger",
+		canonical: "https://sopkit.github.io/image-enlarger/",
 	},
 	openGraph: {
 		title: "Image Enlarger Online Free - No Signup",

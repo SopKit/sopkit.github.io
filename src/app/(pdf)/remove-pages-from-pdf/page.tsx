@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Remove Pages from PDF Online Free | SopKit",
 	description: "Delete unwanted pages from a PDF file online. Select pages, remove them, and download a clean PDF for free. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/remove-pages-from-pdf",
+		canonical: "https://sopkit.github.io/remove-pages-from-pdf/",
 	},
 	openGraph: {
 		title: "Remove Pages from PDF Online Free - No Signup | SopKit",

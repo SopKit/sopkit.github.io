@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Find out exactly how many marks you need to score in your final exam to achieve your target grade or pass.",
 	keywords: "required-marks-calculator, Required Marks Calculator, target grade calculator, marks needed in final, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/required-marks-calculator",
+		canonical: "https://sopkit.github.io/required-marks-calculator/",
 	},
 	openGraph: {
 		title: "Free Required Marks Calculator Online - No Signup | SopKit",

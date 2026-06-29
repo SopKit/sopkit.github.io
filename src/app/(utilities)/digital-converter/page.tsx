@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Digital Converter Online Free - No Signup | SopKit",
 	description: "Convert between bytes, kilobytes, megabytes, and gigabytes instantly. Our free online tool helps you understand data storage and file sizes in seconds. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/digital-converter",
+		canonical: "https://sopkit.github.io/digital-converter/",
 	},
 	openGraph: {
 		title: "Digital Converter Online Free - No Signup",

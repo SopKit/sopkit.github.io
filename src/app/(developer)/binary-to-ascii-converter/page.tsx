@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Binary to ASCII Converter Online Free - Developer Tools | SopKit",
 	description: "Transform binary code (0s and 1s) into readable ASCII text instantly. Our free online converter is fast, accurate, and works entirely in your browser. No signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/binary-to-ascii-converter",
+		canonical: "https://sopkit.github.io/binary-to-ascii-converter/",
 	},
 	openGraph: {
 		title: "Binary to ASCII Converter Online Free - No Signup",

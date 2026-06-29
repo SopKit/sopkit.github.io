@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your bmi + ideal weight calculator instantly. Free browser-based calculator with detailed breakdowns.",
 	keywords: "bmi + ideal weight calculator, bmi-ideal-weight-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/bmi-ideal-weight-calculator",
+		canonical: "https://sopkit.github.io/bmi-ideal-weight-calculator/",
 	},
 	openGraph: {
 		title: "BMI + Ideal Weight Calculator - Free Online Tool | SopKit",

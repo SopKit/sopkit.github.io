@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JSON Formatter Online Free - Developer Tools | SopKit",
 	description: "Format and beautify your JSON data instantly for better readability. Our free online tool validates your JSON structure and provides a clean, indented view of your code. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-formatter",
+		canonical: "https://sopkit.github.io/json-formatter/",
 	},
 	openGraph: {
 		title: "JSON Formatter Online Free - No Signup",

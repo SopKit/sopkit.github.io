@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns.",
 	keywords: "profit margin calculator, profit-margin-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/profit-margin-calculator",
+		canonical: "https://sopkit.github.io/profit-margin-calculator/",
 	},
 	openGraph: {
 		title: "Profit Margin Calculator - Free Online Tool | SopKit",

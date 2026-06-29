@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized instagram caption generator details. Instantly copy or share customized outputs.",
 	keywords: "instagram caption generator, instagram-caption-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/instagram-caption-generator",
+		canonical: "https://sopkit.github.io/instagram-caption-generator/",
 	},
 	openGraph: {
 		title: "Instagram Caption Generator - Free Online Tool | SopKit",

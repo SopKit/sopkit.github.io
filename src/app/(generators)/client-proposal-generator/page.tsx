@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized client proposal generator details. Instantly copy or share customized outputs.",
 	keywords: "client proposal generator, client-proposal-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/client-proposal-generator",
+		canonical: "https://sopkit.github.io/client-proposal-generator/",
 	},
 	openGraph: {
 		title: "Client Proposal Generator - Free Online Tool | SopKit",

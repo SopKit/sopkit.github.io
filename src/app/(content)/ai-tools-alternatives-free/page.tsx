@@ -7,7 +7,7 @@ export const metadata = {
 	description: "Discover the best free AI tool alternatives for content creation, voice generation, and digital writing without paying for monthly subscriptions.",
 	keywords: "ai tools alternatives free - practical picks, ai tools alternatives free - practical picks guide, SopKit, ai-tools-alternatives-free, ai tools alternatives free, free ai-tools-alternatives-free, ai tools alternatives free online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/ai-tools-alternatives-free",
+		canonical: "https://sopkit.github.io/ai-tools-alternatives-free/",
 	},
 	openGraph: {
 		title: "Best Free AI Tool Alternatives (No Subscriptions) | SopKit",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Tag Generator Online Free - No Signup | SopKit",
 	description: "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank higher in search results. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-tag-generator",
+		canonical: "https://sopkit.github.io/youtube-tag-generator/",
 	},
 	openGraph: {
 		title: "YouTube Tag Generator Online Free - No Signup",

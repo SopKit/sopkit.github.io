@@ -7,7 +7,7 @@ export const metadata = {
 	title: "URL Shortener Online Free - No Signup | SopKit",
 	description: "Shorten long URLs for easier sharing No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-shortener",
+		canonical: "https://sopkit.github.io/url-shortener/",
 	},
 	openGraph: {
 		title: "URL Shortener Online Free - No Signup",

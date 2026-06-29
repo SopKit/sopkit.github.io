@@ -7,7 +7,7 @@ export const metadata = {
 	title: "PDF Grayscale Online Free - Edit, Merge & Convert PDF | SopKit",
 	description: "Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-grayscale",
+		canonical: "https://sopkit.github.io/pdf-grayscale/",
 	},
 	openGraph: {
 		title: "PDF Grayscale Online Free - No Signup",

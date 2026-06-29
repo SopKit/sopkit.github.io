@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Complete SEO Audit Tool Online Free - No Signup | SopKit",
 	description: "Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/seo-audit-tool",
+		canonical: "https://sopkit.github.io/seo-audit-tool/",
 	},
 	openGraph: {
 		title: "Complete SEO Audit Tool Online Free - No Signup",

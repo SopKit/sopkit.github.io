@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate how many classes you need to attend or can safely skip to maintain a minimum 75% attendance rate.",
 	keywords: "75-attendance-calculator, 75 Attendance Calculator, attendance calculator, college attendance calculator, skip class calculator, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/75-attendance-calculator",
+		canonical: "https://sopkit.github.io/75-attendance-calculator/",
 	},
 	openGraph: {
 		title: "Free 75% Attendance Calculator Online - No Signup | SopKit",

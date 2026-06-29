@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Text to Decimal Converter Online Free - Developer Tools | SopKit",
 	description: "Convert text characters into their decimal numeric equivalents instantly. Our free online tool is useful for debugging character encoding and understanding data representations. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-decimal-converter",
+		canonical: "https://sopkit.github.io/text-to-decimal-converter/",
 	},
 	openGraph: {
 		title: "Text to Decimal Converter Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Pressure Converter Online Free - No Signup | SopKit",
 	description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/pressure-converter",
+		canonical: "https://sopkit.github.io/pressure-converter/",
 	},
 	openGraph: {
 		title: "Pressure Converter Online Free - No Signup",

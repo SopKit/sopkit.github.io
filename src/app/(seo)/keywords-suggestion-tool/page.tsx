@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Keywords Suggestion Tool Online Free - No Signup | SopKit",
 	description: "Free keywords suggestion tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/keywords-suggestion-tool",
+		canonical: "https://sopkit.github.io/keywords-suggestion-tool/",
 	},
 	openGraph: {
 		title: "Keywords Suggestion Tool Online Free - No Signup",

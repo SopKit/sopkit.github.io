@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free YouTube Thumbnail Downloader online. High-speed downloading with no signup needed.",
 	keywords: "youtube thumbnail downloader, download youtube thumbnails, video thumbnail grabber, free tool, SopKit, youtube-thumbnail-downloader, free youtube-thumbnail-downloader, youtube thumbnail downloader online, online downloader, free media saver, video downloader, url downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-thumbnail-downloader",
+		canonical: "https://sopkit.github.io/youtube-thumbnail-downloader/",
 	},
 	openGraph: {
 		title: "Free YouTube Thumbnail Downloader Online - No Signup | SopKit",

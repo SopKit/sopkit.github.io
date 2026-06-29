@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Invoice Generator India with GST Online Free | SopKit",
 	description: "Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/invoice-generator-india",
+		canonical: "https://sopkit.github.io/invoice-generator-india/",
 	},
 	openGraph: {
 		title: "Invoice Generator India with GST Online Free - No Signup | SopKit",

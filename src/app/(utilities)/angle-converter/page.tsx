@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Angle Converter Online Free - No Signup | SopKit",
 	description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and accurate. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/angle-converter",
+		canonical: "https://sopkit.github.io/angle-converter/",
 	},
 	openGraph: {
 		title: "Angle Converter Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Weight Converter Online Free - No Signup | SopKit",
 	description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/weight-converter",
+		canonical: "https://sopkit.github.io/weight-converter/",
 	},
 	openGraph: {
 		title: "Weight Converter Online Free - No Signup",

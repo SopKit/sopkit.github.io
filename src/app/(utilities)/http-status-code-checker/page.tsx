@@ -7,7 +7,7 @@ export const metadata = {
 	title: "HTTP Status Code Checker Online Free - No Signup | SopKit",
 	description: "Free http status code checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/http-status-code-checker",
+		canonical: "https://sopkit.github.io/http-status-code-checker/",
 	},
 	openGraph: {
 		title: "HTTP Status Code Checker Online Free - No Signup",

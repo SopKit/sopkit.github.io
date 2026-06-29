@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Channel Finder Online Free - No Signup | SopKit",
 	description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your next video project. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-channel-finder",
+		canonical: "https://sopkit.github.io/youtube-channel-finder/",
 	},
 	openGraph: {
 		title: "YouTube Channel Finder Online Free - No Signup",

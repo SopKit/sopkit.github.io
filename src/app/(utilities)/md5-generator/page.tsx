@@ -7,7 +7,7 @@ export const metadata = {
 	title: "MD5 Generator Online Free - No Signup | SopKit",
 	description: "Free md5 generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/md5-generator",
+		canonical: "https://sopkit.github.io/md5-generator/",
 	},
 	openGraph: {
 		title: "MD5 Generator Online Free - No Signup",

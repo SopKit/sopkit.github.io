@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized youtube thumbnail text generator details. Instantly copy or share customized outputs.",
 	keywords: "youtube thumbnail text generator, youtube-thumbnail-text-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-thumbnail-text-generator",
+		canonical: "https://sopkit.github.io/youtube-thumbnail-text-generator/",
 	},
 	openGraph: {
 		title: "YouTube Thumbnail Text Generator - Free Online Tool | SopKit",

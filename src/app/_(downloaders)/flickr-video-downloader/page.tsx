@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Flickr Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 	keywords: "flickr video downloader, free online tool, no signup, flickr-video-downloader, free flickr-video-downloader, Flickr Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/flickr-video-downloader",
+		canonical: "https://sopkit.github.io/flickr-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Flickr Video Downloader Online - No Signup | SopKit",

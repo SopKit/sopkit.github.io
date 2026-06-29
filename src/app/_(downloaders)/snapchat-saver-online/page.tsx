@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from Snapchat with our free Snapchat Saver online. High-speed downloading with no signup needed.",
 	keywords: "snapchat saver online, free online tool, no signup, snapchat-saver-online, Snapchat Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/snapchat-saver-online",
+		canonical: "https://sopkit.github.io/snapchat-saver-online/",
 	},
 	openGraph: {
 		title: "Snapchat Saver Online - No Signup | SopKit",

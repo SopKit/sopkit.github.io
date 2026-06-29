@@ -7,7 +7,7 @@ export const metadata = {
 	title: "CSS Gradient Generator Online Free - Developer Tools | SopKit",
 	description: "Create beautiful CSS gradients for your web projects. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/css-gradient-generator",
+		canonical: "https://sopkit.github.io/css-gradient-generator/",
 	},
 	openGraph: {
 		title: "CSS Gradient Generator Online Free - No Signup",

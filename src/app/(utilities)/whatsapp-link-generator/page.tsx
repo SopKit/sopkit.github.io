@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized whatsapp link generator details. Instantly copy or share customized outputs.",
 	keywords: "whatsapp link generator, whatsapp-link-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/whatsapp-link-generator",
+		canonical: "https://sopkit.github.io/whatsapp-link-generator/",
 	},
 	openGraph: {
 		title: "WhatsApp Link Generator - Free Online Tool | SopKit",

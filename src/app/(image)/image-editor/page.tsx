@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Image Editor Online Free - Compress & Convert Images | SopKit",
 	description: "Edit, crop, and enhance your photos online with our free image editing tools. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-editor",
+		canonical: "https://sopkit.github.io/image-editor/",
 	},
 	openGraph: {
 		title: "Image Editor Online Free - No Signup",

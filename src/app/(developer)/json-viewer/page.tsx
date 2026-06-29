@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JSON Viewer Online Free - Developer Tools | SopKit",
 	description: "Free json viewer tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-viewer",
+		canonical: "https://sopkit.github.io/json-viewer/",
 	},
 	openGraph: {
 		title: "JSON Viewer Online Free - No Signup",

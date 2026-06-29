@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized payment reminder generator details. Instantly copy or share customized outputs.",
 	keywords: "payment reminder generator, payment-reminder-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/payment-reminder-generator",
+		canonical: "https://sopkit.github.io/payment-reminder-generator/",
 	},
 	openGraph: {
 		title: "Payment Reminder Generator - Free Online Tool | SopKit",

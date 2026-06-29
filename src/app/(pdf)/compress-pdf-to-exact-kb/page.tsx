@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Compress PDF to Exact KB Online Free | SopKit",
 	description: "Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/compress-pdf-to-exact-kb",
+		canonical: "https://sopkit.github.io/compress-pdf-to-exact-kb/",
 	},
 	openGraph: {
 		title: "Compress PDF to Exact KB Online Free - No Signup | SopKit",

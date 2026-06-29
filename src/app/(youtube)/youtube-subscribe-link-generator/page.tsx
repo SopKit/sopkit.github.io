@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Subscribe Link Generator Online Free - No Signup | SopKit",
 	description: "Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for social media and bios. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-subscribe-link-generator",
+		canonical: "https://sopkit.github.io/youtube-subscribe-link-generator/",
 	},
 	openGraph: {
 		title: "YouTube Subscribe Link Generator Online Free - No Signup",

@@ -6,7 +6,7 @@ export const metadata = {
 	description: "Download, convert, and edit video files instantly with our free Reddit Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
 	keywords: "reddit video downloader, free online tool, no signup, video, reddit video downloader online, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/reddit-downloader",
+		canonical: "https://sopkit.github.io/reddit-downloader/",
 	},
 	openGraph: {
 		title: "Free Reddit Video Downloader Online - No Signup | SopKit",

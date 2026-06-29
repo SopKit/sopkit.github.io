@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized logo idea generator details. Instantly copy or share customized outputs.",
 	keywords: "logo idea generator, logo-idea-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/logo-idea-generator",
+		canonical: "https://sopkit.github.io/logo-idea-generator/",
 	},
 	openGraph: {
 		title: "Logo Idea Generator - Free Online Tool | SopKit",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Markdown to Text Online Free - No Signup | SopKit",
 	description: "Convert Markdown formatted text to clean plain text instantly. Perfect for cleaning up content from ChatGPT, Claude, and GitHub. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/markdown-to-text",
+		canonical: "https://sopkit.github.io/markdown-to-text/",
 	},
 	openGraph: {
 		title: "Markdown to Text Online Free - No Signup",

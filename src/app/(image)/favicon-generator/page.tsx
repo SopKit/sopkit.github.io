@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Favicon Generator Online Free - Compress & Convert Images | SopKit",
 	description: "Generate favicons from text, images, or emojis for websites No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/favicon-generator",
+		canonical: "https://sopkit.github.io/favicon-generator/",
 	},
 	openGraph: {
 		title: "Favicon Generator Online Free - No Signup",

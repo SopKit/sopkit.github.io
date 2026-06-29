@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { blogs, getBlogArticleBySlug } from "@/constants/blog-data";
 import { getToolByRoute } from "@/lib/tools";
 import AdPlacement from "@/components/ads/AdPlacement";
+import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
+import { Suspense } from "react";
 
 interface BlogArticlePageProps {
 	params: Promise<{ slug: string }>;
@@ -32,7 +34,7 @@ export async function generateMetadata({ params }: BlogArticlePageProps) {
 			"SopKit blog",
 		].join(", "),
 		alternates: {
-			canonical: `https://sopkit.github.io/blog/${article.slug}`,
+			canonical: `https://sopkit.github.io/blog/${article.slug}/`,
 		},
 		openGraph: {
 			title: article.title,
@@ -88,19 +90,19 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 				"@type": "ListItem",
 				position: 1,
 				name: "Home",
-				item: "https://sopkit.github.io",
+				item: "https://sopkit.github.io/",
 			},
 			{
 				"@type": "ListItem",
 				position: 2,
 				name: "Blog",
-				item: "https://sopkit.github.io/blog",
+				item: "https://sopkit.github.io/blog/",
 			},
 			{
 				"@type": "ListItem",
 				position: 3,
 				name: article.title,
-				item: `https://sopkit.github.io/blog/${article.slug}`,
+				item: `https://sopkit.github.io/blog/${article.slug}/`,
 			},
 		],
 	};
@@ -109,6 +111,9 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 		<div className="min-h-screen bg-background text-foreground flex flex-col">
 			<main className="flex-1">
 				<article className="container mx-auto max-w-4xl px-4 py-14 md:py-20">
+					<Suspense fallback={<div className="h-6 w-64 bg-muted/20 animate-pulse rounded" />}>
+						<BreadcrumbsEnhanced suppressSchema={true} />
+					</Suspense>
 					<p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-4">
 						Blog Guide
 					</p>

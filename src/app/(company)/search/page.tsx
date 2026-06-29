@@ -7,7 +7,7 @@ export const metadata = {
 	description: "Search and browse our collection of 300+ free online tools. 100% free, no signup required.",
 	keywords: "search online tools, free online tools, SopKit search, image tool search, pdf tool search, seo tools directory, developer utilities, search, free search, search online, SopKit, browser tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/search",
+		canonical: "https://sopkit.github.io/search/",
 	},
 	openGraph: {
 		title: "Free Search All Tools Online - No Signup | SopKit",
@@ -23,7 +23,7 @@ export const metadata = {
 		description: "Search and browse our collection of 300+ free online tools. 100% free, no signup required.",
 		images: ["/og-image.jpg"],
 	},
-	robots: { index: true, follow: true },
+	robots: { index: false, follow: true },
 };
 
 export default async function SearchPage() {

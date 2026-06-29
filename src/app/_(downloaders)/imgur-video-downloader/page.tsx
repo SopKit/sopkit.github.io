@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Imgur Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 	keywords: "imgur video downloader, free online tool, no signup, imgur-video-downloader, free imgur-video-downloader, Imgur Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/imgur-video-downloader",
+		canonical: "https://sopkit.github.io/imgur-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Imgur Video Downloader Online - No Signup | SopKit",

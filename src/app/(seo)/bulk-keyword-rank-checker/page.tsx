@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Bulk Keyword Rank Checker Online Free - No Signup | SopKit",
 	description: "Check Google rankings for multiple keywords instantly with our free bulk keyword rank checker. Track keyword positions, monitor competitors, and get accurate SERP data. No signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/bulk-keyword-rank-checker",
+		canonical: "https://sopkit.github.io/bulk-keyword-rank-checker/",
 	},
 	openGraph: {
 		title: "Bulk Keyword Rank Checker Online Free - No Signup",

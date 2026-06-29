@@ -7,7 +7,7 @@ export const metadata = {
 	description: "Discover the best free tools for students in 2026. Improve writing, formatting, assignments, and study productivity with no-signup online tools.",
 	keywords: "best free tools for students (2026), best free tools for students (2026) guide, SopKit, best-free-tools-for-students, best free tools for students, free best-free-tools-for-students, best free tools for students online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/best-free-tools-for-students",
+		canonical: "https://sopkit.github.io/best-free-tools-for-students/",
 	},
 	openGraph: {
 		title: "Free Best Free Tools for Students (2026) Online - No Signup | SopKit",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Reddit Media Saver online. High-speed downloading with no signup needed. No signup required.",
 	keywords: "reddit media saver, free online tool, no signup, reddit-media-saver, free reddit-media-saver, Reddit Media Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/reddit-media-saver",
+		canonical: "https://sopkit.github.io/reddit-media-saver/",
 	},
 	openGraph: {
 		title: "Free Reddit Media Saver Online - No Signup | SopKit",

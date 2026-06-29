@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Bio Generator Online Free - No Signup | SopKit",
 	description: "Create professional and aesthetic bios for social media profiles. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/bio-generator",
+		canonical: "https://sopkit.github.io/bio-generator/",
 	},
 	openGraph: {
 		title: "Bio Generator Online Free - No Signup",

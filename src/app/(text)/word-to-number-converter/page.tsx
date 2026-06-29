@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Word to Number Converter Online Free - No Signup | SopKit",
 	description: "Convert words into digits instantly with our free online Word to Number converter. Perfect for data entry, educational exercises, and technical documentation cleanup. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/word-to-number-converter",
+		canonical: "https://sopkit.github.io/word-to-number-converter/",
 	},
 	openGraph: {
 		title: "Word to Number Converter Online Free - No Signup",

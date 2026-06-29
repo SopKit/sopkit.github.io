@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JPG to GIF Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online image converter. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/jpg-to-gif-converter",
+		canonical: "https://sopkit.github.io/jpg-to-gif-converter/",
 	},
 	openGraph: {
 		title: "JPG to GIF Converter Online Free - No Signup",

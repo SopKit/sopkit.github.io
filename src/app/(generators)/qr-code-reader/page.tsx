@@ -7,7 +7,7 @@ export const metadata = {
 	title: "QR Code Reader Online Free - No Signup | SopKit",
 	description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/qr-code-reader",
+		canonical: "https://sopkit.github.io/qr-code-reader/",
 	},
 	openGraph: {
 		title: "QR Code Reader Online Free - No Signup",

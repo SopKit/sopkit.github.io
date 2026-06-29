@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Text to Octal Converter Online Free - Developer Tools | SopKit",
 	description: "Convert text into octal numeric values instantly. Our free online converter provides base-8 representations for every character in your text for technical analysis. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-octal-converter",
+		canonical: "https://sopkit.github.io/text-to-octal-converter/",
 	},
 	openGraph: {
 		title: "Text to Octal Converter Online Free - No Signup",

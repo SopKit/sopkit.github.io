@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized refund policy generator details. Instantly copy or share customized outputs.",
 	keywords: "refund policy generator, refund-policy-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/refund-policy-generator",
+		canonical: "https://sopkit.github.io/refund-policy-generator/",
 	},
 	openGraph: {
 		title: "Refund Policy Generator - Free Online Tool | SopKit",

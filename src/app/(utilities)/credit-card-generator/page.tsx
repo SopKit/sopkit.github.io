@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Credit Card Generator Online Free - No Signup | SopKit",
 	description: "Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks without being real cards. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/credit-card-generator",
+		canonical: "https://sopkit.github.io/credit-card-generator/",
 	},
 	openGraph: {
 		title: "Credit Card Generator Online Free - No Signup",

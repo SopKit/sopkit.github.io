@@ -7,7 +7,7 @@ export const metadata = {
 	title: "URL Parser Online Free - No Signup | SopKit",
 	description: "Free url parser tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-parser",
+		canonical: "https://sopkit.github.io/url-parser/",
 	},
 	openGraph: {
 		title: "URL Parser Online Free - No Signup",

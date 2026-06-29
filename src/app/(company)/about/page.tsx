@@ -9,7 +9,7 @@ export const metadata = {
 	description: "Learn about SopKit, your privacy-first toolkit with 365+ free online tools. We offer browser-based PDF, image, video, SEO, and developer utilities with no signup required.",
 	keywords: "about SopKit, free online tools, browser-based tools, privacy-conscious tools, SopKit tools list, no signup utilities, browser-based file tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/about",
+		canonical: "https://sopkit.github.io/about/",
 	},
 	openGraph: {
 		title: "About SopKit - 365+ Free Online Tools for PDF, Image, Video & More",

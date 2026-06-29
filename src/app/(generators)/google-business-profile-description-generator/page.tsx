@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized gbp description generator details. Instantly copy or share customized outputs.",
 	keywords: "gbp description generator, google-business-profile-description-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/google-business-profile-description-generator",
+		canonical: "https://sopkit.github.io/google-business-profile-description-generator/",
 	},
 	openGraph: {
 		title: "GBP Description Generator - Free Online Tool | SopKit",

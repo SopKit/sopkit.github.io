@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Imdb Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
 	keywords: "imdb video downloader, free online tool, no signup, imdb-video-downloader, free imdb-video-downloader, Imdb Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/imdb-video-downloader",
+		canonical: "https://sopkit.github.io/imdb-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Imdb Video Downloader Online - No Signup | SopKit",

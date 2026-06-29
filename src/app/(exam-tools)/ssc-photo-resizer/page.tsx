@@ -20,7 +20,7 @@ export const metadata = {
   title: "SSC Photo Resizer - Resize Photo and Signature for SSC Forms | SopKit",
   description:
     "Resize and compress SSC photos to 350x450 pixels and 20KB-50KB, plus resize signature to 10KB-20KB directly in your browser. Free, private, no signup.",
-  alternates: { canonical: "https://sopkit.github.io/ssc-photo-resizer" },
+  alternates: { canonical: "https://sopkit.github.io/ssc-photo-resizer/" },
   openGraph: {
     title: "SSC Photo Resizer - Resize Photo and Signature for SSC Forms | SopKit",
     description:

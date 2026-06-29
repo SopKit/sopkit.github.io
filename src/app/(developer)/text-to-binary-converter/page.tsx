@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Text to Binary Converter Online Free - Developer Tools | SopKit",
 	description: "Translate text into binary code (0s and 1s) instantly. Our free online converter is perfect for learning how computers represent data and creating secret binary messages. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-binary-converter",
+		canonical: "https://sopkit.github.io/text-to-binary-converter/",
 	},
 	openGraph: {
 		title: "Text to Binary Converter Online Free - No Signup",

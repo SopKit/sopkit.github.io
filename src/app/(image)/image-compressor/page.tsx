@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Image Compressor Online Free - Compress & Convert Images | SopKit",
 	description: "Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-compressor",
+		canonical: "https://sopkit.github.io/image-compressor/",
 	},
 	openGraph: {
 		title: "Image Compressor Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Rotate Image Online Free - Compress & Convert Images | SopKit",
 	description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure. No signup needed. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/rotate-image",
+		canonical: "https://sopkit.github.io/rotate-image/",
 	},
 	openGraph: {
 		title: "Rotate Image Online Free - No Signup",

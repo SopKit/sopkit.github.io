@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Color Converter Online Free - No Signup | SopKit",
 	description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/color-converter",
+		canonical: "https://sopkit.github.io/color-converter/",
 	},
 	openGraph: {
 		title: "Color Converter Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Binary to Octal Converter Online Free - Developer Tools | SopKit",
 	description: "Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical students. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/binary-to-octal-converter",
+		canonical: "https://sopkit.github.io/binary-to-octal-converter/",
 	},
 	openGraph: {
 		title: "Binary to Octal Converter Online Free - No Signup",

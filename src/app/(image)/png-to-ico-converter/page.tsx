@@ -7,7 +7,7 @@ export const metadata = {
 	title: "PNG to ICO Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first browser-based conversion. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/png-to-ico-converter",
+		canonical: "https://sopkit.github.io/png-to-ico-converter/",
 	},
 	openGraph: {
 		title: "PNG to ICO Converter Online Free - No Signup",

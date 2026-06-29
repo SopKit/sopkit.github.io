@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate the tip, total, and amount per person for any bill. Quick gratuity and bill-splitting calculator, free and no signup.",
 	keywords: "tip calculator, gratuity calculator, bill split calculator, restaurant tip calculator, split the bill",
 	alternates: {
-		canonical: "https://sopkit.github.io/tip-calculator",
+		canonical: "https://sopkit.github.io/tip-calculator/",
 	},
 	openGraph: {
 		title: "Tip Calculator - Split the Bill | SopKit",

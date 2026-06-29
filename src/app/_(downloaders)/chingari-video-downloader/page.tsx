@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Chingari Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 	keywords: "chingari video downloader, free online tool, no signup, chingari-video-downloader, free chingari-video-downloader, Chingari Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/chingari-video-downloader",
+		canonical: "https://sopkit.github.io/chingari-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Chingari Video Downloader Online - No Signup | SopKit",

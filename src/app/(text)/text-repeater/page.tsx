@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Format, clean, sort, and analyze text files instantly with our free Text Repeater online. Fast and private browser utility with no signup. 100% free and secure.",
 	keywords: "text repeater, free online tool, no signup, text tool, text editor online, content formatter, writing utility, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-repeater",
+		canonical: "https://sopkit.github.io/text-repeater/",
 	},
 	openGraph: {
 		title: "Free Text Repeater Online - No Signup | SopKit",

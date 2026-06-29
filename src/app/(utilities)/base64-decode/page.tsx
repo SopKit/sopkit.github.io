@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Base64 Decode Online Free - No Signup | SopKit",
 	description: "Decode Base64 strings back to their original plain text instantly. Our privacy-first tool processes everything in your browser, ensuring your data never leaves your device. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/base64-decode",
+		canonical: "https://sopkit.github.io/base64-decode/",
 	},
 	openGraph: {
 		title: "Base64 Decode Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Resize and compress files with our free Photo With Name and Date Editor online. Safe and private browser utility for government exam portal applications.",
 	keywords: "photo-name-date-editor, Photo Name Date Editor, photo with name and date, name date photo maker, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/photo-name-date-editor",
+		canonical: "https://sopkit.github.io/photo-name-date-editor/",
 	},
 	openGraph: {
 		title: "Free Photo With Name and Date Editor Online - No Signup | SopKit",

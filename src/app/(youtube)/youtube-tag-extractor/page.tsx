@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Tag Extractor Online Free - No Signup | SopKit",
 	description: "Extract hidden tags from any YouTube video instantly. Our free online tool helps you discover the keywords used by top-performing creators to boost your own video SEO. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-tag-extractor",
+		canonical: "https://sopkit.github.io/youtube-tag-extractor/",
 	},
 	openGraph: {
 		title: "YouTube Tag Extractor Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JavaScript Obfuscator Online Free - Developer Tools | SopKit",
 	description: "Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent unauthorized script modification. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/javascript-obfuscator",
+		canonical: "https://sopkit.github.io/javascript-obfuscator/",
 	},
 	openGraph: {
 		title: "JavaScript Obfuscator Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "QR Code Decoder Online Free - No Signup | SopKit",
 	description: "Free qr code decoder tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/qr-code-decoder",
+		canonical: "https://sopkit.github.io/qr-code-decoder/",
 	},
 	openGraph: {
 		title: "QR Code Decoder Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "PNG to JPG Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/png-to-jpg-converter",
+		canonical: "https://sopkit.github.io/png-to-jpg-converter/",
 	},
 	openGraph: {
 		title: "PNG to JPG Converter Online Free - No Signup",

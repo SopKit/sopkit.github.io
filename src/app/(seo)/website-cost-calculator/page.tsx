@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Website Cost Calculator Online Free - No Signup | SopKit",
 	description: "Free Website Cost Calculator online. Estimate how much a website may cost based on pages, design quality, and features like ecommerce instantly for free.",
 	alternates: {
-		canonical: "https://sopkit.github.io/website-cost-calculator",
+		canonical: "https://sopkit.github.io/website-cost-calculator/",
 	},
 	openGraph: {
 		title: "Website Cost Calculator Online Free - No Signup",

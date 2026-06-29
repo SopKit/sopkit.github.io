@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Bandcamp Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 	keywords: "bandcamp video downloader, free online tool, no signup, bandcamp-video-downloader, free bandcamp-video-downloader, Bandcamp Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/bandcamp-video-downloader",
+		canonical: "https://sopkit.github.io/bandcamp-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Bandcamp Video Downloader Online - No Signup | SopKit",

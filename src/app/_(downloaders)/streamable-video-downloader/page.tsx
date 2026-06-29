@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Streamable Video Downloader online. High-speed downloading with no signup needed. 100% free.",
 	keywords: "streamable video downloader, free online tool, no signup, streamable-video-downloader, free streamable-video-downloader, Streamable Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/streamable-video-downloader",
+		canonical: "https://sopkit.github.io/streamable-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Streamable Video Downloader Online - No Signup | SopKit",

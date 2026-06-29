@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JSON to JSON Schema Online Free - Developer Tools | SopKit",
 	description: "Generate a JSON Schema from your JSON data automatically. Our free online tool helps you define validation rules and document your JSON structure for APIs. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-to-json-schema",
+		canonical: "https://sopkit.github.io/json-to-json-schema/",
 	},
 	openGraph: {
 		title: "JSON to JSON Schema Online Free - No Signup",

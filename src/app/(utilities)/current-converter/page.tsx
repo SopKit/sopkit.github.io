@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Current Converter Online Free - No Signup | SopKit",
 	description: "Convert between amperes, milliamperes, and other electrical current units instantly. Our free online tool is perfect for electronics and electrical engineering tasks. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/current-converter",
+		canonical: "https://sopkit.github.io/current-converter/",
 	},
 	openGraph: {
 		title: "Current Converter Online Free - No Signup",

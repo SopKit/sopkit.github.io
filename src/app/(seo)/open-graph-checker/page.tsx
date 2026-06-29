@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Open Graph Checker Online Free - No Signup | SopKit",
 	description: "Free open graph checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/open-graph-checker",
+		canonical: "https://sopkit.github.io/open-graph-checker/",
 	},
 	openGraph: {
 		title: "Open Graph Checker Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate return on investment, net gain, and annualized ROI from your initial and final values. Free investment return calculator.",
 	keywords: "roi calculator, return on investment calculator, annualized return calculator, investment return, profit percentage calculator",
 	alternates: {
-		canonical: "https://sopkit.github.io/roi-calculator",
+		canonical: "https://sopkit.github.io/roi-calculator/",
 	},
 	openGraph: {
 		title: "ROI Calculator - Return on Investment | SopKit",

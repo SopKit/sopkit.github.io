@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Resume Keyword Matcher Online Free | SopKit",
 	description: "Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/resume-keyword-matcher",
+		canonical: "https://sopkit.github.io/resume-keyword-matcher/",
 	},
 	openGraph: {
 		title: "Resume Keyword Matcher Online Free - No Signup | SopKit",

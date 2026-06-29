@@ -8,7 +8,7 @@ export const metadata = {
 	title: "FD Calculator India Online Free | SopKit",
 	description: "Calculate fixed deposit maturity amount and interest with quarterly compounding for Indian banks. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/fd-calculator-india",
+		canonical: "https://sopkit.github.io/fd-calculator-india/",
 	},
 	openGraph: {
 		title: "FD Calculator India Online Free - No Signup | SopKit",

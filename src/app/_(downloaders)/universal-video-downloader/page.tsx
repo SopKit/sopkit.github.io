@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Universal Video Downloader online. High-speed downloading with no signup needed. 100% free.",
 	keywords: "universal video downloader, free online tool, no signup, universal-video-downloader, free universal-video-downloader, Universal Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/universal-video-downloader",
+		canonical: "https://sopkit.github.io/universal-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Universal Video Downloader Online - No Signup | SopKit",

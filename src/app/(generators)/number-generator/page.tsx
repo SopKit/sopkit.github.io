@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Number Generator Online Free - No Signup | SopKit",
 	description: "Professional Number Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/number-generator",
+		canonical: "https://sopkit.github.io/number-generator/",
 	},
 	openGraph: {
 		title: "Number Generator Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Photo Enhancer Online Free - Compress & Convert Images | SopKit",
 	description: "Enhance photo quality with AI-powered image enhancement No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/photo-enhancer",
+		canonical: "https://sopkit.github.io/photo-enhancer/",
 	},
 	openGraph: {
 		title: "Photo Enhancer Online Free - No Signup",

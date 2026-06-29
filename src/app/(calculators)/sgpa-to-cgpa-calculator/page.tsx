@@ -8,7 +8,7 @@ export const metadata = {
 	title: "SGPA to CGPA Calculator Online Free | SopKit",
 	description: "Calculate your cumulative GPA (CGPA) from semester-wise SGPA values. Supports credit-weighted and simple average methods. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/sgpa-to-cgpa-calculator",
+		canonical: "https://sopkit.github.io/sgpa-to-cgpa-calculator/",
 	},
 	openGraph: {
 		title: "SGPA to CGPA Calculator Online Free - No Signup | SopKit",

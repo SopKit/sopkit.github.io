@@ -7,7 +7,7 @@ export const metadata = {
 	title: "HTML Decoder Online Free - Developer Tools | SopKit",
 	description: "Decode HTML entities back to their original characters instantly. Our free online tool converts &amp; and similar entities into readable text for easy debugging and content cleaning. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-decoder",
+		canonical: "https://sopkit.github.io/html-decoder/",
 	},
 	openGraph: {
 		title: "HTML Decoder Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Linkedin Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 	keywords: "linkedin video downloader, download linkedin videos, linkedin video saver, linkedin to mp4, free tool, SopKit, linkedin-video-downloader, free linkedin-video-downloader, linkedin video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/linkedin-video-downloader",
+		canonical: "https://sopkit.github.io/linkedin-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Linkedin Video Downloader Online - No Signup | SopKit",

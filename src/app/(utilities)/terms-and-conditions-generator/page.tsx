@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability.",
 	keywords: "terms and conditions generator, terms-and-conditions-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/terms-and-conditions-generator",
+		canonical: "https://sopkit.github.io/terms-and-conditions-generator/",
 	},
 	openGraph: {
 		title: "Terms and Conditions Generator - Free Online Tool | SopKit",

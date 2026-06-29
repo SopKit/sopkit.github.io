@@ -7,7 +7,7 @@ export const metadata = {
 	title: "ICO to PNG Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/ico-to-png-converter",
+		canonical: "https://sopkit.github.io/ico-to-png-converter/",
 	},
 	openGraph: {
 		title: "ICO to PNG Converter Online Free - No Signup",

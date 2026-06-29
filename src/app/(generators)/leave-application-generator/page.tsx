@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.",
 	keywords: "leave-application-generator, Leave Application Generator",
 	alternates: {
-		canonical: "https://sopkit.github.io/leave-application-generator",
+		canonical: "https://sopkit.github.io/leave-application-generator/",
 	},
 	openGraph: {
 		title: "Free Leave Application Generator Online - No Signup | SopKit",

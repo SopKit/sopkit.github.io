@@ -6,7 +6,7 @@ export const metadata = {
 	description: "Manage, convert, edit, and secure PDF documents with our free PDF Tools online. Safe and private browser-based tool with no registration. 100% free and secure.",
 	keywords: "pdf tools, free pdf tools online, merge pdf free, compress pdf online, split pdf online, secure pdf editor, convert pdf to word online, SopKit pdf",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-tools",
+		canonical: "https://sopkit.github.io/pdf-tools/",
 	},
 	openGraph: {
 		title: "Free PDF Tools Online - No Signup | SopKit",

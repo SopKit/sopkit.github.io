@@ -49,7 +49,7 @@ export const metadata = {
 	},
 
 	alternates: {
-		canonical: "https://sopkit.github.io/embed/video",
+		canonical: "https://sopkit.github.io/embed/video/",
 	},
 };
 

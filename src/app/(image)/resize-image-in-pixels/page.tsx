@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Resize your images by specifying exact width and height in pixels (px) for web, social media, and digital platforms.",
 	keywords: "resize-image-in-pixels, Resize Image in Pixels",
 	alternates: {
-		canonical: "https://sopkit.github.io/resize-image-in-pixels",
+		canonical: "https://sopkit.github.io/resize-image-in-pixels/",
 	},
 	openGraph: {
 		title: "Free Resize Image in Pixels Online - No Signup | SopKit",

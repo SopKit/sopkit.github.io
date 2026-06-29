@@ -7,7 +7,7 @@ export const metadata = {
 	description: "Convert any file, media format, or data payload instantly. Explore our ranked list of the best free online converter tools for 2026. No registration needed.",
 	keywords: "best free converters in 2026 (file, data, and media), and media) guide, SopKit, best-free-converters-in-2026, best free converters in 2026, free best-free-converters-in-2026, best free converters in 2026 online, SopKit guide, online tool guide, free tool category",
 	alternates: {
-		canonical: "https://sopkit.github.io/best-free-converters-in-2026",
+		canonical: "https://sopkit.github.io/best-free-converters-in-2026/",
 	},
 	openGraph: {
 		title: "Best Free File, Data, and Media Converters in 2026 | SopKit",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "URL Rewriting Tool Online Free - No Signup | SopKit",
 	description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-rewriting-tool",
+		canonical: "https://sopkit.github.io/url-rewriting-tool/",
 	},
 	openGraph: {
 		title: "URL Rewriting Tool Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Parts Per Converter Online Free - No Signup | SopKit",
 	description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/parts-per-converter",
+		canonical: "https://sopkit.github.io/parts-per-converter/",
 	},
 	openGraph: {
 		title: "Parts Per Converter Online Free - No Signup",

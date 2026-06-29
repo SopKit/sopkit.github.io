@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Insta Reels Saver online. High-speed downloading with no signup needed. No signup required.",
 	keywords: "insta reels saver, free online tool, no signup, insta-reels-saver, free insta-reels-saver, Insta Reels Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/insta-reels-saver",
+		canonical: "https://sopkit.github.io/insta-reels-saver/",
 	},
 	openGraph: {
 		title: "Free Insta Reels Saver Online - No Signup | SopKit",

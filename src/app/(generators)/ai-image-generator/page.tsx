@@ -7,7 +7,7 @@ export const metadata = {
 	title: "AI Image Generator Online Free - No Signup | SopKit",
 	description: "Generate stunning AI images from text prompts instantly. Create photorealistic photos, digital art, anime, and illustrations for free. No signup required, unlimited generations, and 100% private browser-based processing. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/ai-image-generator",
+		canonical: "https://sopkit.github.io/ai-image-generator/",
 	},
 	openGraph: {
 		title: "AI Image Generator Online Free - No Signup",

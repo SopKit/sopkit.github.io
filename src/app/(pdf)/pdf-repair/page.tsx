@@ -7,7 +7,7 @@ export const metadata = {
 	title: "PDF Repair Online Free - Edit, Merge & Convert PDF | SopKit",
 	description: "Fix corrupted or broken PDF files online for free. Our secure repair tool rebuilds document headers and cross-reference tables to restore access to your PDF documents instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-repair",
+		canonical: "https://sopkit.github.io/pdf-repair/",
 	},
 	openGraph: {
 		title: "PDF Repair Online Free - No Signup",

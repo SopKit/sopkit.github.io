@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns.",
 	keywords: "rent affordability calculator, rent-affordability-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/rent-affordability-calculator",
+		canonical: "https://sopkit.github.io/rent-affordability-calculator/",
 	},
 	openGraph: {
 		title: "Rent Affordability Calculator - Free Online Tool | SopKit",

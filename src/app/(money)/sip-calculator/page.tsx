@@ -8,7 +8,7 @@ export const metadata = {
 	title: "SIP Calculator India Online Free | SopKit",
 	description: "Calculate estimated SIP returns and wealth growth for mutual fund investments online for free. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/sip-calculator",
+		canonical: "https://sopkit.github.io/sip-calculator/",
 	},
 	openGraph: {
 		title: "SIP Calculator India Online Free - No Signup | SopKit",

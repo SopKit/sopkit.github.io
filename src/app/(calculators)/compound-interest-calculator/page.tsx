@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate compound interest and future value with regular contributions. See how your savings or investments grow over time, free and instant.",
 	keywords: "compound interest calculator, future value calculator, investment growth calculator, savings interest calculator, compound interest formula",
 	alternates: {
-		canonical: "https://sopkit.github.io/compound-interest-calculator",
+		canonical: "https://sopkit.github.io/compound-interest-calculator/",
 	},
 	openGraph: {
 		title: "Compound Interest Calculator - Free Online | SopKit",

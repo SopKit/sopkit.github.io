@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Dailymotion Video Downloader online. High-speed downloading with no signup needed.",
 	keywords: "dailymotion downloader, download dailymotion videos, dailymotion to mp4, free video tool, SopKit, dailymotion-video-downloader, dailymotion video downloader, free dailymotion-video-downloader, dailymotion video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/dailymotion-video-downloader",
+		canonical: "https://sopkit.github.io/dailymotion-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Dailymotion Video Downloader Online - No Signup | SopKit",

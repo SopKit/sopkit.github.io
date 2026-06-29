@@ -7,7 +7,7 @@ export const metadata = {
 	title: "ASCII Art Generator Online Free - No Signup | SopKit",
 	description: "Convert images into text-based ASCII art online. Customize resolution and contrast for the perfect text-based representation. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/ascii-art-generator",
+		canonical: "https://sopkit.github.io/ascii-art-generator/",
 	},
 	openGraph: {
 		title: "ASCII Art Generator Online Free - No Signup",

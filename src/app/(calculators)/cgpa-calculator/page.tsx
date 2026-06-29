@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.",
 	keywords: "cgpa-calculator, CGPA Calculator, calculate cgpa, semester cgpa calculator, cumulative grade point average, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/cgpa-calculator",
+		canonical: "https://sopkit.github.io/cgpa-calculator/",
 	},
 	openGraph: {
 		title: "Free CGPA Calculator Online - No Signup | SopKit",

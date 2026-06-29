@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your daily water intake calculator instantly. Free browser-based calculator with detailed breakdowns.",
 	keywords: "daily water intake calculator, water-intake-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/water-intake-calculator",
+		canonical: "https://sopkit.github.io/water-intake-calculator/",
 	},
 	openGraph: {
 		title: "Daily Water Intake Calculator - Free Online Tool | SopKit",

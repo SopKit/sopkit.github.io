@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Currency Converter Online Free - No Signup | SopKit",
 	description: "Convert currencies with real-time exchange rates instantly. Our free online tool supports all major global currencies for travel, business, and financial planning. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/currency-converter",
+		canonical: "https://sopkit.github.io/currency-converter/",
 	},
 	openGraph: {
 		title: "Currency Converter Online Free - No Signup",

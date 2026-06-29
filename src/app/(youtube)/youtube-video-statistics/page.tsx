@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Video Statistics Online Free - No Signup | SopKit",
 	description: "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-video-statistics",
+		canonical: "https://sopkit.github.io/youtube-video-statistics/",
 	},
 	openGraph: {
 		title: "YouTube Video Statistics Online Free - No Signup",

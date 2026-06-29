@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Base64 Tool Online Free - Developer Tools | SopKit",
 	description: "Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text format. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/base64-tool",
+		canonical: "https://sopkit.github.io/base64-tool/",
 	},
 	openGraph: {
 		title: "Base64 Tool Online Free - No Signup",

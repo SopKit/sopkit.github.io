@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JSON to Text Converter Online Free - Developer Tools | SopKit",
 	description: "Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw data. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-to-text-converter",
+		canonical: "https://sopkit.github.io/json-to-text-converter/",
 	},
 	openGraph: {
 		title: "JSON to Text Converter Online Free - No Signup",

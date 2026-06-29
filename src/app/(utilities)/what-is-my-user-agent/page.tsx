@@ -7,7 +7,7 @@ export const metadata = {
 	title: "What Is My User Agent Online Free - No Signup | SopKit",
 	description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/what-is-my-user-agent",
+		canonical: "https://sopkit.github.io/what-is-my-user-agent/",
 	},
 	openGraph: {
 		title: "What Is My User Agent Online Free - No Signup",

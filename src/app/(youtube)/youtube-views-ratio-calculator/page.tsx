@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Views Ratio Calculator Online Free - No Signup | SopKit",
 	description: "Calculate the view-to-engagement ratio for any YouTube video instantly. Our free online tool helps you understand audience interaction and video performance beyond just views. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-views-ratio-calculator",
+		canonical: "https://sopkit.github.io/youtube-views-ratio-calculator/",
 	},
 	openGraph: {
 		title: "YouTube Views Ratio Calculator Online Free - No Signup",

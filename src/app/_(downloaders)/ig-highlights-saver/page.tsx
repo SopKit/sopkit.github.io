@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Ig Highlights Saver online. High-speed downloading with no signup needed. Try it free now.",
 	keywords: "ig highlights saver, free online tool, no signup, ig-highlights-saver, free ig-highlights-saver, Ig Highlights Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ig-highlights-saver",
+		canonical: "https://sopkit.github.io/ig-highlights-saver/",
 	},
 	openGraph: {
 		title: "Free Ig Highlights Saver Online - No Signup | SopKit",

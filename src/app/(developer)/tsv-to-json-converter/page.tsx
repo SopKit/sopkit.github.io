@@ -7,7 +7,7 @@ export const metadata = {
 	title: "TSV to JSON Converter Online Free - Developer Tools | SopKit",
 	description: "Convert Tab-Separated Values (TSV) into JSON format instantly. Our free online tool makes it easy to transform structured data for web applications and API development. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/tsv-to-json-converter",
+		canonical: "https://sopkit.github.io/tsv-to-json-converter/",
 	},
 	openGraph: {
 		title: "TSV to JSON Converter Online Free - No Signup",

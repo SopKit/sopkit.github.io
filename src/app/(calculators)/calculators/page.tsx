@@ -11,7 +11,7 @@ export const metadata = {
 	title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
 	description: "Free online calculators for every need. BMI calculators, loan estimators, percentage tools, and scientific math tools. Get instant, accurate results for free.",
 	keywords: "online calculators, bmi calculator, loan calculator, math tools, free calculators, SopKit, calculators, calculators online, online calculator, free math tool, converter, number tool",
-	alternates: { canonical: "https://sopkit.github.io/calculators" },
+	alternates: { canonical: "https://sopkit.github.io/calculators/" },
 	openGraph: {
 		title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
 		description: "Free online calculators for every need. BMI calculators, loan estimators, percentage tools, and scientific math tools. Get instant, accurate results for free.",

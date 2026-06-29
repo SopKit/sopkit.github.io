@@ -7,7 +7,7 @@ export const metadata = {
 	description: "Top 10 free SEO tools for keyword research, audits, metadata, indexing checks, and sitemaps. Ranked for speed and daily SEO workflows.",
 	keywords: "top 10 free online tools for seo (2026), top 10 free online tools for seo (2026) guide, SopKit, top-10-free-online-tools-for-seo, top 10 free online tools for seo, free top-10-free-online-tools-for-seo, top 10 free online tools for seo online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/top-10-free-online-tools-for-seo",
+		canonical: "https://sopkit.github.io/top-10-free-online-tools-for-seo/",
 	},
 	openGraph: {
 		title: "Free Top 10 Free Online Tools for SEO (2026) Online - No Signup | SopKit",

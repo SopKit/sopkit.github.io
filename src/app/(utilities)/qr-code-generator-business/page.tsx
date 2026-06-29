@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized qr code generator for business details. Instantly copy or share customized outputs.",
 	keywords: "qr code generator for business, qr-code-generator-business, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/qr-code-generator-business",
+		canonical: "https://sopkit.github.io/qr-code-generator-business/",
 	},
 	openGraph: {
 		title: "QR Code Generator for Business - Free Online Tool | SopKit",

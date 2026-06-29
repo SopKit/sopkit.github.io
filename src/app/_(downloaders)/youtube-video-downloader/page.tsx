@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free YouTube Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 	keywords: "youtube video downloader, download youtube videos, youtube hd downloader, free video downloader, online tool, SopKit, youtube-video-downloader, free youtube-video-downloader, youtube video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-video-downloader",
+		canonical: "https://sopkit.github.io/youtube-video-downloader/",
 	},
 	openGraph: {
 		title: "Free YouTube Video Downloader Online - No Signup | SopKit",

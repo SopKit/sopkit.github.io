@@ -6,7 +6,7 @@ export const metadata = {
 	description: "All Downloaders - Coming Soon",
 	keywords: "all downloaders, free online tool, no signup, others, all downloaders online, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/all-downloaders",
+		canonical: "https://sopkit.github.io/all-downloaders/",
 	},
 	openGraph: {
 		title: "Free All Downloaders Online - No Signup | SopKit",

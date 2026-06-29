@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Audio Tools Online Free - No Signup | SopKit",
 	description: "Compress and convert audio files between formats No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/audio-tools",
+		canonical: "https://sopkit.github.io/audio-tools/",
 	},
 	openGraph: {
 		title: "Audio Tools Online Free - No Signup",

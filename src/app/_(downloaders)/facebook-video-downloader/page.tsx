@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Facebook Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 	keywords: "facebook video downloader, download fb videos, facebook reels downloader, free video downloader, SopKit, facebook-video-downloader, free facebook-video-downloader, facebook video downloader online, online downloader, free media saver, video downloader, url downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/facebook-video-downloader",
+		canonical: "https://sopkit.github.io/facebook-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Facebook Video Downloader Online - No Signup | SopKit",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JPG to WebP Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your website instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/jpg-to-webp-converter",
+		canonical: "https://sopkit.github.io/jpg-to-webp-converter/",
 	},
 	openGraph: {
 		title: "JPG to WebP Converter Online Free - No Signup",

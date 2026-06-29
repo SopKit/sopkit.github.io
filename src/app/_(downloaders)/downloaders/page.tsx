@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Downloaders online. High-speed downloading with no signup needed. 100% free and easy to use.",
 	keywords: "downloaders, free online tool, no signup, free downloaders, Downloaders online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/downloaders",
+		canonical: "https://sopkit.github.io/downloaders/",
 	},
 	openGraph: {
 		title: "Free Downloaders Online - No Signup | SopKit",

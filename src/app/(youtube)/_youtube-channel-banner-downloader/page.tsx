@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Download high-resolution YouTube channel banners and covers instantly. Our free tool helps you save channel branding for design reference or archiving...",
 	keywords: "youtube channel banner downloader, free online tool, no signup, youtube-channel-banner-downloader, free youtube-channel-banner-downloader, Youtube Channel Banner Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-channel-banner-downloader",
+		canonical: "https://sopkit.github.io/youtube-channel-banner-downloader/",
 	},
 	openGraph: {
 		title: "Free YouTube Channel Banner Downloader Online - No Signup | SopKit",

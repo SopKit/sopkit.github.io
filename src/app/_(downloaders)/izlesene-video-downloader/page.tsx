@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Izlesene Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
 	keywords: "izlesene video downloader, free online tool, no signup, izlesene-video-downloader, free izlesene-video-downloader, Izlesene Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/izlesene-video-downloader",
+		canonical: "https://sopkit.github.io/izlesene-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Izlesene Video Downloader Online - No Signup | SopKit",

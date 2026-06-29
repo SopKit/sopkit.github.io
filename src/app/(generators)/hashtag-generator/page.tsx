@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized hashtag generator details. Instantly copy or share customized outputs.",
 	keywords: "hashtag generator, hashtag-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/hashtag-generator",
+		canonical: "https://sopkit.github.io/hashtag-generator/",
 	},
 	openGraph: {
 		title: "Hashtag Generator - Free Online Tool | SopKit",

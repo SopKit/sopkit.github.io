@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized menu description generator details. Instantly copy or share customized outputs.",
 	keywords: "menu description generator, restaurant-menu-description-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/restaurant-menu-description-generator",
+		canonical: "https://sopkit.github.io/restaurant-menu-description-generator/",
 	},
 	openGraph: {
 		title: "Menu Description Generator - Free Online Tool | SopKit",

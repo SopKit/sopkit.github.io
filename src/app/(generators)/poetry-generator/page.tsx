@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Poetry Generator Online Free - No Signup | SopKit",
 	description: "Professional Poetry Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/poetry-generator",
+		canonical: "https://sopkit.github.io/poetry-generator/",
 	},
 	openGraph: {
 		title: "Poetry Generator Online Free - No Signup",

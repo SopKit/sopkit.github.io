@@ -6,7 +6,7 @@ export const metadata = {
 	description: "Prepare photos, signatures, and PDFs for online UPSC, SSC, NEET, and JEE forms. Crop, resize, and compress to exact KB limits securely in your browser.",
 	keywords: "exam tools, upsc photo resizer, ssc photo resizer, neet photo resizer, jee photo resizer, signature resizer 20kb, photo compressor 50kb, exam form resizer, SopKit exam",
 	alternates: {
-		canonical: "https://sopkit.github.io/exam-tools",
+		canonical: "https://sopkit.github.io/exam-tools/",
 	},
 	openGraph: {
 		title: "Free Exam Image & Form Tools Online - No Signup | SopKit",

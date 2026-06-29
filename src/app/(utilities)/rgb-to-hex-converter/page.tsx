@@ -7,7 +7,7 @@ export const metadata = {
 	title: "RGB to HEX Converter Online Free - No Signup | SopKit",
 	description: "Free rgb to hex converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/rgb-to-hex-converter",
+		canonical: "https://sopkit.github.io/rgb-to-hex-converter/",
 	},
 	openGraph: {
 		title: "RGB to HEX Converter Online Free - No Signup",

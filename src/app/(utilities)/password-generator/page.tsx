@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Password Generator Online Free - No Signup | SopKit",
 	description: "Create strong, secure passwords instantly with customizable settings. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/password-generator",
+		canonical: "https://sopkit.github.io/password-generator/",
 	},
 	openGraph: {
 		title: "Password Generator Online Free - No Signup",

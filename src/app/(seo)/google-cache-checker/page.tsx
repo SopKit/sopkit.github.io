@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Google Cache Checker Online Free - No Signup | SopKit",
 	description: "Free google cache checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/google-cache-checker",
+		canonical: "https://sopkit.github.io/google-cache-checker/",
 	},
 	openGraph: {
 		title: "Google Cache Checker Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Hosting Checker Online Free - No Signup | SopKit",
 	description: "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/hosting-checker",
+		canonical: "https://sopkit.github.io/hosting-checker/",
 	},
 	openGraph: {
 		title: "Hosting Checker Online Free - No Signup",

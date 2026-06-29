@@ -6,7 +6,7 @@ export const metadata = {
 	description: "Create realistic-looking fake chat screenshots for WhatsApp, Discord, and iMessage.",
 	keywords: "fake, chat, generator, free fake chat generator, online fake chat generator, SopKit, fake-chat-generator, fake chat generator, free fake-chat-generator, fake chat generator online, online generator, free creator",
 	alternates: {
-		canonical: "https://sopkit.github.io/fake-chat-generator",
+		canonical: "https://sopkit.github.io/fake-chat-generator/",
 	},
 	openGraph: {
 		title: "Free Fake Chat Generator Online - No Signup | SopKit",

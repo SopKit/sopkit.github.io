@@ -4,7 +4,7 @@ import SeoHubPage from "@/components/seo/SeoHubPage";
 export const metadata: Metadata = {
 	title: "Local Business Tools - Free QR Codes, SEO & Invoicing | SopKit",
 	description: "Free online tools for local shops and restaurants. Generate restaurant QR menus, WiFi QR codes, customer invoices, and local business SEO tags.",
-	alternates: { canonical: "https://sopkit.github.io/local-business-tools" },
+	alternates: { canonical: "https://sopkit.github.io/local-business-tools/" },
 };
 
 export default function LocalBusinessToolsHub() {

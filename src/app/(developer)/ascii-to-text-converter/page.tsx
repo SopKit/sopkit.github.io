@@ -7,7 +7,7 @@ export const metadata = {
 	title: "ASCII to Text Converter Online Free - Developer Tools | SopKit",
 	description: "Convert ASCII character codes back to readable text instantly. Our free online tool makes it easy to decode ASCII sequences for development and debugging tasks. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/ascii-to-text-converter",
+		canonical: "https://sopkit.github.io/ascii-to-text-converter/",
 	},
 	openGraph: {
 		title: "ASCII to Text Converter Online Free - No Signup",

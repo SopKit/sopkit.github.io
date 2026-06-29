@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Resize and compress files with our free CUET Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
 	keywords: "cuet-photo-resizer, CUET Photo Resizer, cuet photo resizer online, cuet photo compressor, cuet signature resize, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/cuet-photo-resizer",
+		canonical: "https://sopkit.github.io/cuet-photo-resizer/",
 	},
 	openGraph: {
 		title: "Free CUET Photo Resizer Online - No Signup | SopKit",

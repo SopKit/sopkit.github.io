@@ -11,7 +11,7 @@ export const metadata = {
 	title: "Free SEO Tools Online - Optimize Your Website | SopKit",
 	description: "Professional suite of free SEO tools. Keyword generators, meta tag analyzers, sitemap makers, and SERP checkers. Improve your search rankings for free.",
 	keywords: "seo tools, keyword generator, meta tag analyzer, sitemap maker, online seo tools, SopKit, seo-tools, free seo-tools, seo tools online, seo tool, website analyzer, online seo checker",
-	alternates: { canonical: "https://sopkit.github.io/seo-tools" },
+	alternates: { canonical: "https://sopkit.github.io/seo-tools/" },
 	openGraph: {
 		title: "Free SEO Tools Online - Optimize Your Website | SopKit",
 		description: "Professional suite of free SEO tools. Keyword generators, meta tag analyzers, sitemap makers, and SERP checkers. Improve your search rankings for free.",

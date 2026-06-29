@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Cover Letter Generator Online Free | SopKit",
 	description: "Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/cover-letter-generator",
+		canonical: "https://sopkit.github.io/cover-letter-generator/",
 	},
 	openGraph: {
 		title: "Cover Letter Generator Online Free - No Signup | SopKit",

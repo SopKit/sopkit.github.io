@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Website Ranking Checker Online Free - No Signup | SopKit",
 	description: "Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/website-ranking-checker",
+		canonical: "https://sopkit.github.io/website-ranking-checker/",
 	},
 	openGraph: {
 		title: "Website Ranking Checker Online Free - No Signup",

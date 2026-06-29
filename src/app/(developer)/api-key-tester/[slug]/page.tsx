@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
 		description: tool.seoDescription || tool.description,
 		keywords: `api tester, ${tool.name.toLowerCase()}, validate api key, debug api, SopKit`,
 		alternates: {
-			canonical: `https://sopkit.github.io/api-key-tester/${slug}`,
+			canonical: `https://sopkit.github.io/api-key-tester/${slug}/`,
 		},
 		openGraph: {
 			title: `${tool.name} - API Test Utility | SopKit`,

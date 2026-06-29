@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Format, clean, sort, and analyze text files instantly with our free Text Compare online. Fast and private browser utility with no signup. 100% free and secure.",
 	keywords: "text compare, free online tool, no signup, text-compare, free text-compare, Text Compare online, text tool, text editor online, content formatter, writing utility, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-compare",
+		canonical: "https://sopkit.github.io/text-compare/",
 	},
 	openGraph: {
 		title: "Free Text Compare Online - No Signup | SopKit",

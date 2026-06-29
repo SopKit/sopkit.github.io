@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Average Calculator Online Free - No Signup | SopKit",
 	description: "Calculate the mean, median, mode, and range of any dataset instantly. Our free online Average Calculator helps you analyze statistics and numeric data in seconds. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/average-calculator",
+		canonical: "https://sopkit.github.io/average-calculator/",
 	},
 	openGraph: {
 		title: "Average Calculator Online Free - No Signup",

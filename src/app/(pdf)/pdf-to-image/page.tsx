@@ -7,7 +7,7 @@ export const metadata = {
 	title: "PDF to Image Online Free - Edit, Merge & Convert PDF | SopKit",
 	description: "Convert PDF pages to high-quality JPG, PNG images No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-to-image",
+		canonical: "https://sopkit.github.io/pdf-to-image/",
 	},
 	openGraph: {
 		title: "PDF to Image Online Free - No Signup",

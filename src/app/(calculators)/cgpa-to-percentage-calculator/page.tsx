@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Convert your CGPA to equivalent percentage marks using standard university formulas (like CBSE 9.5x).",
 	keywords: "cgpa-to-percentage-calculator, CGPA to Percentage Calculator, convert cgpa to percentage, cgpa to percent CBSE, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/cgpa-to-percentage-calculator",
+		canonical: "https://sopkit.github.io/cgpa-to-percentage-calculator/",
 	},
 	openGraph: {
 		title: "Free CGPA to Percentage Calculator Online - No Signup | SopKit",

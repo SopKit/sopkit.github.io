@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Pinterest Video Downloader online. High-speed downloading with no signup needed. 100% free.",
 	keywords: "pinterest video downloader, download pinterest videos, pinterest video saver, pin video download, free tool, SopKit, pinterest-video-downloader, free pinterest-video-downloader, pinterest video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/pinterest-video-downloader",
+		canonical: "https://sopkit.github.io/pinterest-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Pinterest Video Downloader Online - No Signup | SopKit",

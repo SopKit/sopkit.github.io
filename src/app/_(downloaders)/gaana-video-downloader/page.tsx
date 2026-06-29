@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Gaana Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 	keywords: "gaana video downloader, free online tool, no signup, gaana-video-downloader, free gaana-video-downloader, Gaana Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/gaana-video-downloader",
+		canonical: "https://sopkit.github.io/gaana-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Gaana Video Downloader Online - No Signup | SopKit",

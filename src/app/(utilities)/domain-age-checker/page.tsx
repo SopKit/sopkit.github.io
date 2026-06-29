@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Domain Age Checker Online Free - No Signup | SopKit",
 	description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/domain-age-checker",
+		canonical: "https://sopkit.github.io/domain-age-checker/",
 	},
 	openGraph: {
 		title: "Domain Age Checker Online Free - No Signup",

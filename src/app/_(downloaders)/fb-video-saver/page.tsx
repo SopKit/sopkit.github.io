@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Fb Video Saver online. High-speed downloading with no signup needed. No registration needed.",
 	keywords: "fb video saver, facebook video saver, save facebook videos, fb video downloader, free tool, SopKit, fb-video-saver, free fb-video-saver, fb video saver online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/fb-video-saver",
+		canonical: "https://sopkit.github.io/fb-video-saver/",
 	},
 	openGraph: {
 		title: "Free Fb Video Saver Online - No Signup | SopKit",

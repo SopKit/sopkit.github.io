@@ -6,7 +6,7 @@ export const metadata = {
 	description: "Download, convert, and edit video files instantly with our free Video Editor online. Fast, secure, and private processing with no signup. 100% free and secure.",
 	keywords: "video, editor, free video editor, online video editor, SopKit, video-editor, video editor, free video-editor, video editor online, video converter, browser video tool, free video utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/video-editor",
+		canonical: "https://sopkit.github.io/video-editor/",
 	},
 	openGraph: {
 		title: "Free Video Editor Online - No Signup | SopKit",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "PDF Editor Online Free - Edit, Merge & Convert PDF | SopKit",
 	description: "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-editor",
+		canonical: "https://sopkit.github.io/pdf-editor/",
 	},
 	openGraph: {
 		title: "PDF Editor Online Free - No Signup",

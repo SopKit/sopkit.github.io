@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Background Remover Online Free - Compress & Convert Images | SopKit",
 	description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no signup needed. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/background-remover",
+		canonical: "https://sopkit.github.io/background-remover/",
 	},
 	openGraph: {
 		title: "Background Remover Online Free - No Signup",

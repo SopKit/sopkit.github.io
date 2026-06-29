@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Money Calculator Online Free - No Signup | SopKit",
 	description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metrics. Perfect for creators. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-money-calculator",
+		canonical: "https://sopkit.github.io/youtube-money-calculator/",
 	},
 	openGraph: {
 		title: "YouTube Money Calculator Online Free - No Signup",

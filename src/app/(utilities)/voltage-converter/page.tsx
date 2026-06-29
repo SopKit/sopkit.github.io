@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Voltage Converter Online Free - No Signup | SopKit",
 	description: "Free voltage converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/voltage-converter",
+		canonical: "https://sopkit.github.io/voltage-converter/",
 	},
 	openGraph: {
 		title: "Voltage Converter Online Free - No Signup",

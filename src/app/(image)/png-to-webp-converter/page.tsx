@@ -7,7 +7,7 @@ export const metadata = {
 	title: "PNG to WebP Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Convert PNG to WebP to optimize your website speed. Significantly reduce file sizes while maintaining image transparency and quality. Free, fast, and secure online tool. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/png-to-webp-converter",
+		canonical: "https://sopkit.github.io/png-to-webp-converter/",
 	},
 	openGraph: {
 		title: "PNG to WebP Converter Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Pace Converter Online Free - No Signup | SopKit",
 	description: "Free pace converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/pace-converter",
+		canonical: "https://sopkit.github.io/pace-converter/",
 	},
 	openGraph: {
 		title: "Pace Converter Online Free - No Signup",

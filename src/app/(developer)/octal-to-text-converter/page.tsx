@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Octal to Text Converter Online Free - Developer Tools | SopKit",
 	description: "Convert octal character codes back to readable text instantly. Our free online tool helps you decode data streams and debug text processing tasks in your browser. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/octal-to-text-converter",
+		canonical: "https://sopkit.github.io/octal-to-text-converter/",
 	},
 	openGraph: {
 		title: "Octal to Text Converter Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Word to PDF Online Free - Edit, Merge & Convert PDF | SopKit",
 	description: "Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/word-to-pdf",
+		canonical: "https://sopkit.github.io/word-to-pdf/",
 	},
 	openGraph: {
 		title: "Word to PDF Online Free - No Signup",

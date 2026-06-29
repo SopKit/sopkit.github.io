@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized youtube title generator details. Instantly copy or share customized outputs.",
 	keywords: "youtube title generator, youtube-title-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-title-generator",
+		canonical: "https://sopkit.github.io/youtube-title-generator/",
 	},
 	openGraph: {
 		title: "YouTube Title Generator - Free Online Tool | SopKit",

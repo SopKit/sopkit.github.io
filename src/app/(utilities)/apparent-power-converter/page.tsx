@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Apparent Power Converter Online Free - No Signup | SopKit",
 	description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/apparent-power-converter",
+		canonical: "https://sopkit.github.io/apparent-power-converter/",
 	},
 	openGraph: {
 		title: "Apparent Power Converter Online Free - No Signup",

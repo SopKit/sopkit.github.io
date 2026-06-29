@@ -7,7 +7,7 @@ export const metadata = {
 	title: "GST Calculator Online Free - No Signup | SopKit",
 	description: "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/gst-calculator",
+		canonical: "https://sopkit.github.io/gst-calculator/",
 	},
 	openGraph: {
 		title: "GST Calculator Online Free - No Signup",

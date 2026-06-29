@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Business Name Generator Online Free - No Signup | SopKit",
 	description: "Generate creative and catchy names for your brand or startup. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/business-name-generator",
+		canonical: "https://sopkit.github.io/business-name-generator/",
 	},
 	openGraph: {
 		title: "Business Name Generator Online Free - No Signup",

@@ -5,7 +5,7 @@ export const metadata = {
 	title: "Hire Online Free | SopKit",
 	description: "Free online Hire tool. Fast, secure, and privacy-focused browser utility. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/hire",
+		canonical: "https://sopkit.github.io/hire/",
 	},
 	openGraph: {
 		title: "Hire Online Free - No Signup | SopKit",

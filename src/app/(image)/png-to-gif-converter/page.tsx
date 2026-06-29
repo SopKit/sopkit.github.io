@@ -7,7 +7,7 @@ export const metadata = {
 	title: "PNG to GIF Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file uploads. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/png-to-gif-converter",
+		canonical: "https://sopkit.github.io/png-to-gif-converter/",
 	},
 	openGraph: {
 		title: "PNG to GIF Converter Online Free - No Signup",

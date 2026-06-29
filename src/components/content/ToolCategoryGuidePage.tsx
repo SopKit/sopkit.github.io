@@ -6,6 +6,59 @@ interface ToolCategoryGuidePageProps {
 	relatedCategories: Category[];
 }
 
+function getCategoryDescriptionJSX(slug: string, originalDesc: string) {
+	if (slug === "generators") {
+		return (
+			<>
+				Create viral content with AI-powered fun generators like our popular <Link href="/ai-image-generator/" className="text-primary hover:underline font-semibold">AI Image Generator</Link>, <Link href="/qr-code-generator/" className="text-primary hover:underline font-semibold">QR Code Generator</Link>, and <Link href="/secure-password-generator/" className="text-primary hover:underline font-semibold">Secure Password Generator</Link>.
+			</>
+		);
+	}
+	if (slug === "image") {
+		return (
+			<>
+				Edit, compress and convert graphics locally with tools like the fast <Link href="/image-compressor/" className="text-primary hover:underline font-semibold">Image Compressor</Link>, <Link href="/resize-image-in-pixels/" className="text-primary hover:underline font-semibold">Image Resizer</Link>, and <Link href="/webp-to-png/" className="text-primary hover:underline font-semibold">WebP to PNG Converter</Link>.
+			</>
+		);
+	}
+	if (slug === "pdf") {
+		return (
+			<>
+				Manage documents directly in your browser with our <Link href="/merge-pdf-files-online/" className="text-primary hover:underline font-semibold">PDF Merger</Link>, <Link href="/compress-pdf-to-100kb/" className="text-primary hover:underline font-semibold">PDF Compressor</Link>, and <Link href="/pdf-to-jpg-converter-free/" className="text-primary hover:underline font-semibold">PDF to JPG Converter</Link>.
+			</>
+		);
+	}
+	if (slug === "seo") {
+		return (
+			<>
+				Optimize your search visibility and indexation with our <Link href="/robots-txt-generator/" className="text-primary hover:underline font-semibold">Robots.txt Generator</Link>, <Link href="/sitemap-xml-generator/" className="text-primary hover:underline font-semibold">Sitemap XML Generator</Link>, and <Link href="/meta-tags-checker/" className="text-primary hover:underline font-semibold">Meta Tags Checker</Link>.
+			</>
+		);
+	}
+	if (slug === "calculators") {
+		return (
+			<>
+				Perform math, school, and finance calculations using the <Link href="/gst-calculator/" className="text-primary hover:underline font-semibold">GST Calculator</Link>, <Link href="/grade-calculator/" className="text-primary hover:underline font-semibold">Grade Calculator</Link>, and <Link href="/weighted-gpa-calculator/" className="text-primary hover:underline font-semibold">Weighted GPA Calculator</Link>.
+			</>
+		);
+	}
+	if (slug === "developer") {
+		return (
+			<>
+				Format code, convert variables, and encode strings with our online <Link href="/json-formatter/" className="text-primary hover:underline font-semibold">JSON Formatter</Link>, <Link href="/base64-encoder-decoder/" className="text-primary hover:underline font-semibold">Base64 Encoder Decoder</Link>, and <Link href="/html-beautifier/" className="text-primary hover:underline font-semibold">HTML Beautifier</Link>.
+			</>
+		);
+	}
+	if (slug === "text") {
+		return (
+			<>
+				Analyze, edit, and clean word documents and scripts using the <Link href="/character-counter-online-free/" className="text-primary hover:underline font-semibold">Character Counter</Link>, <Link href="/remove-duplicate-lines-online/" className="text-primary hover:underline font-semibold">Duplicate Line Remover</Link>, and <Link href="/word-count-analyzer-online/" className="text-primary hover:underline font-semibold">Word Count Analyzer</Link>.
+			</>
+		);
+	}
+	return <>{originalDesc}</>;
+}
+
 export default function ToolCategoryGuidePage({ category, relatedCategories }: ToolCategoryGuidePageProps) {
 	return (
 		<div className="min-h-screen bg-background text-foreground flex flex-col">
@@ -19,7 +72,7 @@ export default function ToolCategoryGuidePage({ category, relatedCategories }: T
 							Best Free {category.name} Online
 						</h1>
 						<p className="mt-6 text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
-							{category.description} Explore the most useful free tools in this category, from beginner workflows to pro-level productivity.
+							{getCategoryDescriptionJSX(category.slug, category.description)} Explore the most useful free tools in this category, from beginner workflows to pro-level productivity.
 						</p>
 						<div className="mt-8 flex flex-wrap gap-3">
 							{relatedCategories.slice(0, 4).map((related) => (

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Discount Calculator Online Free - No Signup | SopKit",
 	description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/discount-calculator",
+		canonical: "https://sopkit.github.io/discount-calculator/",
 	},
 	openGraph: {
 		title: "Discount Calculator Online Free - No Signup",

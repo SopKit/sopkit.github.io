@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JPG Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-focused and works entirely in your browser. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/jpg-converter",
+		canonical: "https://sopkit.github.io/jpg-converter/",
 	},
 	openGraph: {
 		title: "JPG Converter Online Free - No Signup",

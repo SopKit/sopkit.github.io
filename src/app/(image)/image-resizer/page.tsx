@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Image Resizer Online Free - Compress & Convert Images | SopKit",
 	description: "Resize images with custom dimensions and aspect ratios No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-resizer",
+		canonical: "https://sopkit.github.io/image-resizer/",
 	},
 	openGraph: {
 		title: "Image Resizer Online Free - No Signup",

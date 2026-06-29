@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your home loan eligibility calculator instantly. Free browser-based calculator with detailed breakdowns.",
 	keywords: "home loan eligibility calculator, home-loan-eligibility-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/home-loan-eligibility-calculator",
+		canonical: "https://sopkit.github.io/home-loan-eligibility-calculator/",
 	},
 	openGraph: {
 		title: "Home Loan Eligibility Calculator - Free Online Tool | SopKit",

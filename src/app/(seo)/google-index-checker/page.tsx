@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Google Index Checker Online Free - No Signup | SopKit",
 	description: "Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/google-index-checker",
+		canonical: "https://sopkit.github.io/google-index-checker/",
 	},
 	openGraph: {
 		title: "Google Index Checker Online Free - No Signup",

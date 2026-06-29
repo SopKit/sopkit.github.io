@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate the total number of bricks, cement bags, and sand volume required for building a wall.",
 	keywords: "brick-calculator, Brick Calculator, bricks needed for wall, cement sand calculator, construction calculator, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/brick-calculator",
+		canonical: "https://sopkit.github.io/brick-calculator/",
 	},
 	openGraph: {
 		title: "Free Brick Calculator Online - No Signup | SopKit",

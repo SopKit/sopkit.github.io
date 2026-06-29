@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Espn Video Downloader online. High-speed downloading with no signup needed. Try it free now.",
 	keywords: "espn video downloader, free online tool, no signup, espn-video-downloader, free espn-video-downloader, Espn Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/espn-video-downloader",
+		canonical: "https://sopkit.github.io/espn-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Espn Video Downloader Online - No Signup | SopKit",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Instagram Reel Downloader online. High-speed downloading with no signup needed. Easy to use.",
 	keywords: "instagram reel downloader, download reels, instagram reels saver, reel video downloader, free tool, SopKit, instagram-reel-downloader, free instagram-reel-downloader, instagram reel downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/instagram-reel-downloader",
+		canonical: "https://sopkit.github.io/instagram-reel-downloader/",
 	},
 	openGraph: {
 		title: "Free Instagram Reel Downloader Online - No Signup | SopKit",

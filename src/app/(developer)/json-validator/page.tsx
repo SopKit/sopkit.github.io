@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JSON Validator Online Free - Developer Tools | SopKit",
 	description: "Validate your JSON data for syntax errors and structural integrity instantly. Our free online tool helps you catch bugs and ensure your JSON is RFC-compliant. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-validator",
+		canonical: "https://sopkit.github.io/json-validator/",
 	},
 	openGraph: {
 		title: "JSON Validator Online Free - No Signup",

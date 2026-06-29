@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Energy Converter Online Free - No Signup | SopKit",
 	description: "Free energy converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/energy-converter",
+		canonical: "https://sopkit.github.io/energy-converter/",
 	},
 	openGraph: {
 		title: "Energy Converter Online Free - No Signup",

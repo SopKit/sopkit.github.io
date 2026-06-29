@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Region Restriction Checker Online Free - No Signup | SopKit",
 	description: "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your content. Fast and accurate. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-region-restriction-checker",
+		canonical: "https://sopkit.github.io/youtube-region-restriction-checker/",
 	},
 	openGraph: {
 		title: "YouTube Region Restriction Checker Online Free - No Signup",

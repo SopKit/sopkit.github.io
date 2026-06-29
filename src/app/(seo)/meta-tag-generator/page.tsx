@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Meta Tag Generator Online Free - No Signup | SopKit",
 	description: "Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/meta-tag-generator",
+		canonical: "https://sopkit.github.io/meta-tag-generator/",
 	},
 	openGraph: {
 		title: "Meta Tag Generator Online Free - No Signup",

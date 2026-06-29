@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Base64 to Image Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Convert Base64 strings to images (PNG, JPG, WebP) instantly. Our privacy-first tool processes data locally in your browser, ensuring your images stay secure. Free and fast Base64 decoder. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/base64-to-image-converter",
+		canonical: "https://sopkit.github.io/base64-to-image-converter/",
 	},
 	openGraph: {
 		title: "Base64 to Image Converter Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your calorie deficit calculator instantly. Free browser-based calculator with detailed breakdowns.",
 	keywords: "calorie deficit calculator, calorie-deficit-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/calorie-deficit-calculator",
+		canonical: "https://sopkit.github.io/calorie-deficit-calculator/",
 	},
 	openGraph: {
 		title: "Calorie Deficit Calculator - Free Online Tool | SopKit",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Binary to Text Converter Online Free - Developer Tools | SopKit",
 	description: "Decode binary strings into readable text instantly. Our free online tool is perfect for discovering hidden messages or debugging data streams. 100% free and secure. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/binary-to-text-converter",
+		canonical: "https://sopkit.github.io/binary-to-text-converter/",
 	},
 	openGraph: {
 		title: "Binary to Text Converter Online Free - No Signup",

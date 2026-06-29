@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Age Calculator Online Free - No Signup | SopKit",
 	description: "Free age calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/age-calculator",
+		canonical: "https://sopkit.github.io/age-calculator/",
 	},
 	openGraph: {
 		title: "Age Calculator Online Free - No Signup",

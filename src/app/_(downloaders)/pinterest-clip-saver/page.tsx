@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Pinterest Clip Saver online. High-speed downloading with no signup needed. Try it free now.",
 	keywords: "pinterest clip saver, free online tool, no signup, pinterest-clip-saver, free pinterest-clip-saver, Pinterest Clip Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/pinterest-clip-saver",
+		canonical: "https://sopkit.github.io/pinterest-clip-saver/",
 	},
 	openGraph: {
 		title: "Free Pinterest Clip Saver Online - No Signup | SopKit",

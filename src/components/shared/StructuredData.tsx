@@ -46,19 +46,25 @@ export default function StructuredData({
 	if (tool) {
 		const categoryDetails =
 			categoryLookup[tool.category] || categoryLookup[tool.categorySlug || ""] || null;
-		const toolUrl = `${BASE_URL}${tool.route}`;
+		
+		const cleanRoute = tool.route.endsWith("/") ? tool.route : `${tool.route}/`;
+		const toolUrl = `${BASE_URL}${cleanRoute}`;
+		
 		const toolCategoryName =
 			categoryDetails?.name || tool.categoryName || "Utilities";
 		const toolCategorySlug = categoryDetails?.slug || tool.category || "utilities";
-		const toolCategoryUrl = `${BASE_URL}${getCategoryHubUrl(toolCategorySlug)}`;
+		
+		const categoryHubRoute = getCategoryHubUrl(toolCategorySlug);
+		const cleanCategoryHubRoute = categoryHubRoute.endsWith("/") ? categoryHubRoute : `${categoryHubRoute}/`;
+		const toolCategoryUrl = `${BASE_URL}${cleanCategoryHubRoute}`;
 
 		const toolStructuredData: Record<string, any> = {
 			"@context": "https://schema.org",
-			"@type": "WebApplication",
+			"@type": "SoftwareApplication",
 			name: tool.name,
 			description: tool.description,
 			applicationCategory: toolCategoryName,
-			operatingSystem: "Web Browser",
+			operatingSystem: "All",
 			url: toolUrl,
 			isAccessibleForFree: true,
 			dateModified: new Date().toISOString().split("T")[0],
@@ -70,7 +76,7 @@ export default function StructuredData({
 			provider: {
 				"@type": "Organization",
 				name: "SopKit",
-				url: BASE_URL,
+				url: `${BASE_URL}/`,
 			},
 			featureList: tool.features
 				? tool.features.join(", ")
@@ -111,14 +117,17 @@ export default function StructuredData({
 					"@type": "HowTo",
 					name: tool.howTo.name || `How to use ${tool.name}`,
 					step: tool.howTo.steps
-						? tool.howTo.steps.map((step, index) => ({
-								"@type": "HowToStep",
-								position: index + 1,
-								name: step.name,
-								text: step.text,
-								url: step.url,
-							}))
-						: [],
+					  ? tool.howTo.steps.map((step, index) => {
+					      const stepUrl = step.url ? (step.url.endsWith('/') ? step.url : `${step.url}/`) : undefined;
+					      return {
+							"@type": "HowToStep",
+							position: index + 1,
+							name: step.name,
+							text: step.text,
+							...(stepUrl ? { url: stepUrl } : {})
+						  };
+						})
+					  : [],
 				}
 			: null;
 
@@ -131,14 +140,14 @@ export default function StructuredData({
 					author: {
 						"@type": "Organization",
 						name: "SopKit",
-						url: BASE_URL,
+						url: `${BASE_URL}/`,
 					},
 					publisher: {
 						"@type": "Organization",
 						name: "SopKit",
 						logo: {
 							"@type": "ImageObject",
-							url: `${BASE_URL}/icons/icon-512x512.png`,
+							url: `${BASE_URL}/favicon.ico`,
 						},
 					},
 					datePublished: "2024-01-01T08:00:00+08:00",
@@ -158,7 +167,7 @@ export default function StructuredData({
 					"@type": "ListItem",
 					position: 1,
 					name: "Home",
-					item: BASE_URL,
+					item: `${BASE_URL}/`,
 				},
 				{
 					"@type": "ListItem",
@@ -221,19 +230,15 @@ export default function StructuredData({
 		"@context": "https://schema.org",
 		"@type": "WebSite",
 		name: "SopKit",
-		alternateName: "SopKit - Free Online Toolkit",
-		url: BASE_URL,
-		description: `Fast, free, and privacy-focused tools for image, video, audio, PDF, SEO, and developer workflows. Explore ${TOOL_COUNT}+ tools with no sign-up required.`,
-		publisher: {
-			"@type": "Organization",
-			name: "SopKit",
-			url: BASE_URL,
-			logo: {
-				"@type": "ImageObject",
-				url: `${BASE_URL}/icons/icon-512x512.png`,
-				width: 512,
-				height: 512,
+		url: `${BASE_URL}/`,
+		description: "460+ free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
+		potentialAction: {
+			"@type": "SearchAction",
+			target: {
+				"@type": "EntryPoint",
+				urlTemplate: `${BASE_URL}/search/?q={search_term_string}`,
 			},
+			"query-input": "required name=search_term_string",
 		},
 	};
 
@@ -241,15 +246,12 @@ export default function StructuredData({
 		"@context": "https://schema.org",
 		"@type": "Organization",
 		name: "SopKit",
-		url: BASE_URL,
-		logo: `${BASE_URL}/icons/icon-512x512.png`,
-		description: `Free online toolkit with ${TOOL_COUNT}+ tools for image, video, audio, PDF, SEO, and developer workflows.`,
-		foundingDate: "2024",
-		contactPoint: {
-			"@type": "ContactPoint",
-			contactType: "customer support",
-			url: `${BASE_URL}/contact`,
-		},
+		url: `${BASE_URL}/`,
+		logo: `${BASE_URL}/favicon.ico`,
+		sameAs: [
+			"https://github.com/SopKit/sopkit.github.io",
+		],
+		description: "Privacy-first free online toolkit with 460+ browser-based tools.",
 	};
 
 	if (isHome) {

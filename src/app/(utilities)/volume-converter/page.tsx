@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Volume Converter Online Free - No Signup | SopKit",
 	description: "Free volume converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/volume-converter",
+		canonical: "https://sopkit.github.io/volume-converter/",
 	},
 	openGraph: {
 		title: "Volume Converter Online Free - No Signup",

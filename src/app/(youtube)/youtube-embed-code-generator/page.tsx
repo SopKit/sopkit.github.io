@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Embed Code Generator Online Free - No Signup | SopKit",
 	description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and privacy settings for your website. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-embed-code-generator",
+		canonical: "https://sopkit.github.io/youtube-embed-code-generator/",
 	},
 	openGraph: {
 		title: "YouTube Embed Code Generator Online Free - No Signup",

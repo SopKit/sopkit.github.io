@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Twitter Card Generator Online Free - No Signup | SopKit",
 	description: "Free twitter card generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/twitter-card-generator",
+		canonical: "https://sopkit.github.io/twitter-card-generator/",
 	},
 	openGraph: {
 		title: "Twitter Card Generator Online Free - No Signup",

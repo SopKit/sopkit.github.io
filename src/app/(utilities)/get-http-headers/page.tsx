@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Get HTTP Headers Online Free - No Signup | SopKit",
 	description: "Free get http headers tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/get-http-headers",
+		canonical: "https://sopkit.github.io/get-http-headers/",
 	},
 	openGraph: {
 		title: "Get HTTP Headers Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "PDF to Word Online Free - Edit, Merge & Convert PDF | SopKit",
 	description: "Convert PDF files to editable Word documents No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-to-word",
+		canonical: "https://sopkit.github.io/pdf-to-word/",
 	},
 	openGraph: {
 		title: "PDF to Word Online Free - No Signup",

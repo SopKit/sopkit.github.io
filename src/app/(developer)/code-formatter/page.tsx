@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Code Formatter Online Free - Developer Tools | SopKit",
 	description: "Format and beautify HTML, CSS, JavaScript, and SQL code. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/code-formatter",
+		canonical: "https://sopkit.github.io/code-formatter/",
 	},
 	openGraph: {
 		title: "Code Formatter Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Timestamp Link Generator Online Free - No Signup | SopKit",
 	description: "Create direct links to specific parts of any YouTube video instantly. Our free online tool helps you share precise moments with friends, students, or your audience. Fast and easy. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-timestamp-link-generator",
+		canonical: "https://sopkit.github.io/youtube-timestamp-link-generator/",
 	},
 	openGraph: {
 		title: "YouTube Timestamp Link Generator Online Free - No Signup",

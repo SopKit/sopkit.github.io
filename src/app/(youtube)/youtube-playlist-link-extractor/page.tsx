@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Use the YouTube Playlist Link Extractor to pull video URLs from public playlists and download a CSV in one click. Ideal for audits, planning, and reporting.",
   alternates: {
-    canonical: "https://sopkit.github.io/youtube-playlist-link-extractor",
+    canonical: "https://sopkit.github.io/youtube-playlist-link-extractor/",
   },
   openGraph: {
     title: "YouTube Playlist Link Extractor | Export Video Links to CSV",

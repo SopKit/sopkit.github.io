@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Vkontakte Video Downloader online. High-speed downloading with no signup needed. 100% free.",
 	keywords: "vkontakte video downloader, free online tool, no signup, vkontakte-video-downloader, free vkontakte-video-downloader, Vkontakte Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/vkontakte-video-downloader",
+		canonical: "https://sopkit.github.io/vkontakte-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Vkontakte Video Downloader Online - No Signup | SopKit",

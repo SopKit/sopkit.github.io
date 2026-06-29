@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Compress any image file (JPG, PNG, WebP) to fit strictly under 100KB while maintaining the best possible visual clarity.",
 	keywords: "compress-image-to-100kb, Compress Image to 100KB",
 	alternates: {
-		canonical: "https://sopkit.github.io/compress-image-to-100kb",
+		canonical: "https://sopkit.github.io/compress-image-to-100kb/",
 	},
 	openGraph: {
 		title: "Free Compress Image to 100KB Online - No Signup | SopKit",

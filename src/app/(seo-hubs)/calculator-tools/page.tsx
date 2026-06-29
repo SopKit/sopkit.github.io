@@ -4,7 +4,7 @@ import SeoHubPage from "@/components/seo/SeoHubPage";
 export const metadata: Metadata = {
 	title: "Free Online Calculators - Math, Finance, Academic & Student Tools | SopKit",
 	description: "Free online calculators for math, GPA, attendance, loan estimations, and business markup. Get instant calculations without signing up.",
-	alternates: { canonical: "https://sopkit.github.io/calculator-tools" },
+	alternates: { canonical: "https://sopkit.github.io/calculator-tools/" },
 };
 
 export default function CalculatorToolsHub() {

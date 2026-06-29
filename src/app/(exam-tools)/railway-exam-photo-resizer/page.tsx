@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Resize and compress files with our free Railway Exam Photo Resizer online. Safe and private browser utility for government exam portal applications. 100% free.",
 	keywords: "railway-exam-photo-resizer, Railway Exam Photo Resizer, rrb photo resizer, railway signature resizer, rrb photo size, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/railway-exam-photo-resizer",
+		canonical: "https://sopkit.github.io/railway-exam-photo-resizer/",
 	},
 	openGraph: {
 		title: "Free Railway Exam Photo Resizer Online - No Signup | SopKit",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.",
 	keywords: "paint-calculator, Paint Calculator, how much paint do I need, wall paint calculator, paint room estimator, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/paint-calculator",
+		canonical: "https://sopkit.github.io/paint-calculator/",
 	},
 	openGraph: {
 		title: "Free Paint Calculator Online - No Signup | SopKit",

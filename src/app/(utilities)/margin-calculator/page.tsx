@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Margin Calculator Online Free - No Signup | SopKit",
 	description: "Free margin calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/margin-calculator",
+		canonical: "https://sopkit.github.io/margin-calculator/",
 	},
 	openGraph: {
 		title: "Margin Calculator Online Free - No Signup",

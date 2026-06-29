@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JPG to ICO Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/jpg-to-ico-converter",
+		canonical: "https://sopkit.github.io/jpg-to-ico-converter/",
 	},
 	openGraph: {
 		title: "JPG to ICO Converter Online Free - No Signup",

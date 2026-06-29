@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Icon Generator Online Free - Compress & Convert Images | SopKit",
 	description: "Generate app icons and favicons for Android, iOS, and web applications. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/icon-generator",
+		canonical: "https://sopkit.github.io/icon-generator/",
 	},
 	openGraph: {
 		title: "Icon Generator Online Free - No Signup",

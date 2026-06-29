@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Image Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-converter",
+		canonical: "https://sopkit.github.io/image-converter/",
 	},
 	openGraph: {
 		title: "Image Converter Online Free - No Signup",

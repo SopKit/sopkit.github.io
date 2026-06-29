@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Create and print professional billing invoices online. Add custom line items, tax, discount details, and generate print-ready PDF layouts instantly.",
 	keywords: "simple-invoice-generator, Simple Invoice Generator",
 	alternates: {
-		canonical: "https://sopkit.github.io/simple-invoice-generator",
+		canonical: "https://sopkit.github.io/simple-invoice-generator/",
 	},
 	openGraph: {
 		title: "Free Simple Invoice Generator Online - No Signup | SopKit",

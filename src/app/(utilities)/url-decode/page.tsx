@@ -7,7 +7,7 @@ export const metadata = {
 	title: "URL Decode Online Free - No Signup | SopKit",
 	description: "Free url decode tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-decode",
+		canonical: "https://sopkit.github.io/url-decode/",
 	},
 	openGraph: {
 		title: "URL Decode Online Free - No Signup",

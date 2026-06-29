@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Facebook ID Finder Online Free - No Signup | SopKit",
 	description: "Free facebook id finder tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/facebook-id-finder",
+		canonical: "https://sopkit.github.io/facebook-id-finder/",
 	},
 	openGraph: {
 		title: "Facebook ID Finder Online Free - No Signup",

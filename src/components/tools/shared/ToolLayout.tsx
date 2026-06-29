@@ -85,6 +85,47 @@ export interface ToolLayoutProps {
 	showHireMe?: boolean;
 }
 
+const ROUTE_H1_OVERRIDES: Record<string, string> = {
+	"/image-tools": "Free Image Tools — Compress, Resize, Convert & Edit",
+	"/image-compressor": "Free Image Compressor — Reduce JPG, PNG & WebP File Size",
+	"/seo-tools": "Free SEO Tools — Audit, Analyze & Optimize Your Website",
+	"/pdf-tools": "Free PDF Tools — Merge, Split, Compress & Edit",
+	"/ai-image-generator": "Free AI Image Generator — Create Art from Text Prompts",
+	"/calculator-tools": "Free Online Calculators — Math, Finance, Academic & Business",
+};
+
+function generateToolH1(toolName: string, category: string): string {
+	const name = toolName.replace(/\s+(online|free)$/i, "");
+	let action = "Optimize & Process";
+	let subject = "Files";
+	
+	if (category === "image" || name.toLowerCase().includes("image") || name.toLowerCase().includes("photo") || name.toLowerCase().includes("picture")) {
+		action = name.toLowerCase().includes("compress") ? "Reduce File Size" :
+		         name.toLowerCase().includes("resize") ? "Resize & Crop" : "Convert & Edit";
+		subject = "Images";
+	} else if (category === "pdf" || name.toLowerCase().includes("pdf")) {
+		action = name.toLowerCase().includes("compress") ? "Reduce File Size" : "Merge, Split & Edit";
+		subject = "PDF Documents";
+	} else if (category === "video" || name.toLowerCase().includes("video")) {
+		action = "Convert & Edit";
+		subject = "Video Files";
+	} else if (category === "audio" || name.toLowerCase().includes("audio") || name.toLowerCase().includes("mp3")) {
+		action = "Process & Convert";
+		subject = "Audio Files";
+	} else if (category === "calculators" || name.toLowerCase().includes("calculator") || name.toLowerCase().includes("interest") || name.toLowerCase().includes("loan")) {
+		action = "Calculate Formula";
+		subject = "Instantly";
+	} else if (category === "developer" || name.toLowerCase().includes("json") || name.toLowerCase().includes("base64") || name.toLowerCase().includes("code")) {
+		action = "Format, Encode & Debug";
+		subject = "Code";
+	} else if (category === "text" || name.toLowerCase().includes("text") || name.toLowerCase().includes("word") || name.toLowerCase().includes("character")) {
+		action = "Format, Count & Analyze";
+		subject = "Text";
+	}
+	
+	return `Free ${name} Online — ${action} ${subject}`;
+}
+
 export default function ToolLayout({
 	tool,
 	children,
@@ -93,6 +134,7 @@ export default function ToolLayout({
 	showHireMe = false,
 }: ToolLayoutProps) {
 	const opportunity = getSeoOpportunityByRoute(tool.route);
+	const routeKey = tool.route.endsWith("/") ? tool.route.slice(0, -1) : tool.route;
 
 	// Dynamically enrich tool data if SEO content is missing
 	const enrichedTool: Tool = { ...tool };
@@ -109,7 +151,9 @@ export default function ToolLayout({
 		if (!enrichedTool.article) enrichedTool.article = dynamicContent.article;
 	}
 
-	if (opportunity) {
+	if (ROUTE_H1_OVERRIDES[routeKey]) {
+		enrichedTool.name = ROUTE_H1_OVERRIDES[routeKey];
+	} else if (opportunity) {
 		enrichedTool.name = opportunity.h1;
 		enrichedTool.description = opportunity.intro;
 		enrichedTool.faqs = opportunity.faqs;
@@ -120,6 +164,8 @@ export default function ToolLayout({
 				text,
 			})),
 		};
+	} else if (tool.category !== "company" && !tool.route.endsWith("-tools") && tool.route !== "/generators" && tool.route !== "/calculators") {
+		enrichedTool.name = generateToolH1(tool.name, tool.category);
 	}
 
 	// Replace ${name} placeholders in the enriched data

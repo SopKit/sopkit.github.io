@@ -7,7 +7,7 @@ export const metadata = {
 	title: "SEO Toolkit Online Free - No Signup | SopKit",
 	description: "All-in-one SEO audit and analysis tool. 27+ checks. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/seotoolkit",
+		canonical: "https://sopkit.github.io/seotoolkit/",
 	},
 	openGraph: {
 		title: "SEO Toolkit Online Free - No Signup",

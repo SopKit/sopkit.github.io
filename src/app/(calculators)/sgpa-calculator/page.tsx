@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.",
 	keywords: "sgpa-calculator, SGPA Calculator, calculate sgpa, credit point calculator, semester grade calculator, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/sgpa-calculator",
+		canonical: "https://sopkit.github.io/sgpa-calculator/",
 	},
 	openGraph: {
 		title: "Free SGPA Calculator Online - No Signup | SopKit",

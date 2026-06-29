@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free PuhuTv Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 	keywords: "puhutv video downloader, free online tool, no signup, puhutv-video-downloader, free puhutv-video-downloader, Puhutv Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/puhutv-video-downloader",
+		canonical: "https://sopkit.github.io/puhutv-video-downloader/",
 	},
 	openGraph: {
 		title: "Free PuhuTv Video Downloader Online - No Signup | SopKit",

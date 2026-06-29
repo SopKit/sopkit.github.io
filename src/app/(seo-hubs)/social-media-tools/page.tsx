@@ -4,7 +4,7 @@ import SeoHubPage from "@/components/seo/SeoHubPage";
 export const metadata: Metadata = {
 	title: "Social Media Tools - Instagram Bio, Caption & Hashtag Generators | SopKit",
 	description: "Free online social media tools for content creators. Generate aesthetic Instagram bios, creative captions, hashtags, and text styles to grow your accounts.",
-	alternates: { canonical: "https://sopkit.github.io/social-media-tools" },
+	alternates: { canonical: "https://sopkit.github.io/social-media-tools/" },
 };
 
 export default function SocialMediaToolsHub() {

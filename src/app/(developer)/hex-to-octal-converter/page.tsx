@@ -7,7 +7,7 @@ export const metadata = {
 	title: "HEX to Octal Converter Online Free - Developer Tools | SopKit",
 	description: "Convert hexadecimal values to octal format instantly. Our free online converter helps with computer science base transformations and data processing in your browser. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/hex-to-octal-converter",
+		canonical: "https://sopkit.github.io/hex-to-octal-converter/",
 	},
 	openGraph: {
 		title: "HEX to Octal Converter Online Free - No Signup",

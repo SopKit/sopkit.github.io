@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Vimeo Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 	keywords: "vimeo downloader, download vimeo videos, vimeo video downloader, vimeo to mp4, free tool, SopKit, vimeo-video-downloader, free vimeo-video-downloader, vimeo video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/vimeo-video-downloader",
+		canonical: "https://sopkit.github.io/vimeo-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Vimeo Video Downloader Online - No Signup | SopKit",

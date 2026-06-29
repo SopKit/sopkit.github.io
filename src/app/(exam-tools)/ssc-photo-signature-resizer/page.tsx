@@ -8,7 +8,7 @@ export const metadata = {
 	title: "SSC Photo and Signature Resizer Online Free | SopKit",
 	description: "Resize and compress SSC photo (20-50KB) and signature (10-20KB) online for government exam forms. 100% compliant with SSC requirements. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/ssc-photo-signature-resizer",
+		canonical: "https://sopkit.github.io/ssc-photo-signature-resizer/",
 	},
 	openGraph: {
 		title: "SSC Photo and Signature Resizer Online Free - No Signup | SopKit",

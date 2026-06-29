@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Download Reddit videos and GIFs in HD quality for free. Fast online Reddit video saver with audio, no registration or watermark. Private browser-based tool.",
 	keywords: "reddit video downloader, download reddit videos, reddit video saver, reddit to mp4, free tool, SopKit, reddit-video-downloader, free reddit-video-downloader, reddit video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/reddit-video-downloader",
+		canonical: "https://sopkit.github.io/reddit-video-downloader/",
 	},
 	openGraph: {
 		title: "Reddit Video Downloader HD - Save Reddit Videos & GIFs | SopKit",

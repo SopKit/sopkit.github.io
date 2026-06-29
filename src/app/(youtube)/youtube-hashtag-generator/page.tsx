@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Hashtag Generator Online Free - No Signup | SopKit",
 	description: "Generate viral hashtags for your YouTube videos instantly. Our free online tool suggests relevant, search-friendly tags to help you reach more viewers and boost engagement. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-hashtag-generator",
+		canonical: "https://sopkit.github.io/youtube-hashtag-generator/",
 	},
 	openGraph: {
 		title: "YouTube Hashtag Generator Online Free - No Signup",

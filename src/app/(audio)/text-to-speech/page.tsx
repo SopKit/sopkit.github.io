@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Text to Speech Online Free - No Signup | SopKit",
 	description: "Convert text to natural sounding speech audio No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-speech",
+		canonical: "https://sopkit.github.io/text-to-speech/",
 	},
 	openGraph: {
 		title: "Text to Speech Online Free - No Signup",

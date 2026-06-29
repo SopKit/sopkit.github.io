@@ -8,7 +8,7 @@ export const metadata = {
 	title: "EMI Calculator for Loans Online Free | SopKit",
 	description: "Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/emi-calculator",
+		canonical: "https://sopkit.github.io/emi-calculator/",
 	},
 	openGraph: {
 		title: "EMI Calculator for Loans Online Free - No Signup | SopKit",

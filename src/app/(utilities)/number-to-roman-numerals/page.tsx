@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Number to Roman Numerals Online Free - No Signup | SopKit",
 	description: "Free number to roman numerals tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/number-to-roman-numerals",
+		canonical: "https://sopkit.github.io/number-to-roman-numerals/",
 	},
 	openGraph: {
 		title: "Number to Roman Numerals Online Free - No Signup",

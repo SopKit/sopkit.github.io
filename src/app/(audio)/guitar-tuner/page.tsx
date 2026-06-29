@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Guitar Tuner Online Free - No Signup | SopKit",
 	description: "Free online guitar tuner. Uses your microphone to tune your guitar accurately. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/guitar-tuner",
+		canonical: "https://sopkit.github.io/guitar-tuner/",
 	},
 	openGraph: {
 		title: "Guitar Tuner Online Free - No Signup",

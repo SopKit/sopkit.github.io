@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
 		description,
 		keywords: `${slug}, free online tool, no signup, image, ${slug} online, SopKit`,
 		alternates: {
-			canonical: `https://sopkit.github.io/image-converter/${slug}`,
+			canonical: `https://sopkit.github.io/image-converter/${slug}/`,
 		},
 		openGraph: {
 			title,

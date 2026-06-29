@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Torque Converter Online Free - No Signup | SopKit",
 	description: "Free torque converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/torque-converter",
+		canonical: "https://sopkit.github.io/torque-converter/",
 	},
 	openGraph: {
 		title: "Torque Converter Online Free - No Signup",

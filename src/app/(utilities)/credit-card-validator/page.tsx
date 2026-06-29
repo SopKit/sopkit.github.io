@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Credit Card Validator Online Free - No Signup | SopKit",
 	description: "Check if a credit card number is valid using the Luhn algorithm instantly. Our free online tool helps you verify card formats and identify card types for testing purposes. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/credit-card-validator",
+		canonical: "https://sopkit.github.io/credit-card-validator/",
 	},
 	openGraph: {
 		title: "Credit Card Validator Online Free - No Signup",

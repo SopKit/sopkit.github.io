@@ -7,7 +7,7 @@ export const metadata = {
 	title: "IP Address Lookup Online Free - No Signup | SopKit",
 	description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/ip-address-lookup",
+		canonical: "https://sopkit.github.io/ip-address-lookup/",
 	},
 	openGraph: {
 		title: "IP Address Lookup Online Free - No Signup",

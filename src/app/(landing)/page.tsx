@@ -64,7 +64,7 @@ function ToolCard({ tool }: { tool: any }) {
 }
 
 export default async function LandingPage() {
-	const heroTitle = "A Comprehensive Toolkit for Your Digital Life.";
+	const heroTitle = "SopKit — 460+ Free Online Tools, No Signup Required";
 	const allTools = getAllTools();
 
 	// 8 Featured tools (highly popular)

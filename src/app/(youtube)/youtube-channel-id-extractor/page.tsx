@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Channel ID Extractor Online Free - No Signup | SopKit",
 	description: "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations. Free and fast online tool. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-channel-id-extractor",
+		canonical: "https://sopkit.github.io/youtube-channel-id-extractor/",
 	},
 	openGraph: {
 		title: "YouTube Channel ID Extractor Online Free - No Signup",

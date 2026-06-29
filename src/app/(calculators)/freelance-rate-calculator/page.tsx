@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Calculate your freelance rate calculator instantly. Free browser-based calculator with detailed breakdowns.",
 	keywords: "freelance rate calculator, freelance-rate-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/freelance-rate-calculator",
+		canonical: "https://sopkit.github.io/freelance-rate-calculator/",
 	},
 	openGraph: {
 		title: "Freelance Rate Calculator - Free Online Tool | SopKit",

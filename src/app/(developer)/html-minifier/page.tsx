@@ -7,7 +7,7 @@ export const metadata = {
 	title: "HTML Minifier Online Free - Developer Tools | SopKit",
 	description: "Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-minifier",
+		canonical: "https://sopkit.github.io/html-minifier/",
 	},
 	openGraph: {
 		title: "HTML Minifier Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Loan Calculator Online Free - No Signup | SopKit",
 	description: "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/loan-calculator",
+		canonical: "https://sopkit.github.io/loan-calculator/",
 	},
 	openGraph: {
 		title: "Loan Calculator Online Free - No Signup",

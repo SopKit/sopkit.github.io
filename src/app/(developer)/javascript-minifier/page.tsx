@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JavaScript Minifier Online Free - Developer Tools | SopKit",
 	description: "Compress and minify your JavaScript files to reduce payload size and speed up your website. Our free online tool removes unnecessary code while preserving functionality. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/javascript-minifier",
+		canonical: "https://sopkit.github.io/javascript-minifier/",
 	},
 	openGraph: {
 		title: "JavaScript Minifier Online Free - No Signup",

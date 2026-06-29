@@ -7,7 +7,7 @@ export const metadata = {
 	title: "DNS Records Checker Online Free - No Signup | SopKit",
 	description: "Retrieve all DNS records (A, MX, TXT, CNAME) for any domain instantly. Our free online tool helps you troubleshoot website hosting and email configuration issues. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/dns-records-checker",
+		canonical: "https://sopkit.github.io/dns-records-checker/",
 	},
 	openGraph: {
 		title: "DNS Records Checker Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Decimal to Octal Converter Online Free - Developer Tools | SopKit",
 	description: "Convert decimal numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for computer science and technical tasks. No signup required. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/decimal-to-octal-converter",
+		canonical: "https://sopkit.github.io/decimal-to-octal-converter/",
 	},
 	openGraph: {
 		title: "Decimal to Octal Converter Online Free - No Signup",

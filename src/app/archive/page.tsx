@@ -22,7 +22,7 @@ export const metadata = {
 	keywords:
 		"tools archive, online tools directory, free online tools, image editors, PDF converters, SEO tools, developer utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/archive",
+		canonical: "https://sopkit.github.io/archive/",
 	},
 	openGraph: {
 		title: "Tools Archive | SopKit - Complete Directory of 90+ Online Tools",

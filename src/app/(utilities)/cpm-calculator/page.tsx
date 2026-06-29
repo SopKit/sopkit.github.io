@@ -7,7 +7,7 @@ export const metadata = {
 	title: "CPM Calculator Online Free - No Signup | SopKit",
 	description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach efficiency. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/cpm-calculator",
+		canonical: "https://sopkit.github.io/cpm-calculator/",
 	},
 	openGraph: {
 		title: "CPM Calculator Online Free - No Signup",

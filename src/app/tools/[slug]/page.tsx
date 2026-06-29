@@ -10,7 +10,7 @@ export const metadata = {
 	title: "Tools/[Slug] Online Free | SopKit",
 	description: "Free online Tools/[Slug] tool. Fast, secure, and privacy-focused browser utility. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/tools/[slug]",
+		canonical: "https://sopkit.github.io/tools/[slug]/",
 	},
 	openGraph: {
 		title: "Tools/[Slug] Online Free - No Signup | SopKit",

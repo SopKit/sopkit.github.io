@@ -7,7 +7,7 @@ export const metadata = {
 	title: "JPG to BMP Converter Online Free - Compress & Convert Images | SopKit",
 	description: "Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading files to any server. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/jpg-to-bmp-converter",
+		canonical: "https://sopkit.github.io/jpg-to-bmp-converter/",
 	},
 	openGraph: {
 		title: "JPG to BMP Converter Online Free - No Signup",

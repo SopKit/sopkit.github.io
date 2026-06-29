@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Visual Sitemap Generator Online Free - No Signup | SopKit",
 	description: "Visualize your website's sitemap structure instantly. Enter your XML sitemap URL to generate a dynamic tree view of your site hierarchy. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/visual-sitemap",
+		canonical: "https://sopkit.github.io/visual-sitemap/",
 	},
 	openGraph: {
 		title: "Visual Sitemap Generator Online Free - No Signup",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "CSS Minifier Online Free - Developer Tools | SopKit",
 	description: "Compress and minify your CSS files to reduce page load times and improve website performance. Our free online tool removes unnecessary whitespace and comments instantly. Privacy-focused. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/css-minifier",
+		canonical: "https://sopkit.github.io/css-minifier/",
 	},
 	openGraph: {
 		title: "CSS Minifier Online Free - No Signup",

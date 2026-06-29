@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Page Size Checker Online Free - No Signup | SopKit",
 	description: "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/page-size-checker",
+		canonical: "https://sopkit.github.io/page-size-checker/",
 	},
 	openGraph: {
 		title: "Page Size Checker Online Free - No Signup",

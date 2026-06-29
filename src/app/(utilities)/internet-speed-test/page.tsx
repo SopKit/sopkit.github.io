@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Internet Speed Test Online Free - No Signup | SopKit",
 	description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/internet-speed-test",
+		canonical: "https://sopkit.github.io/internet-speed-test/",
 	},
 	openGraph: {
 		title: "Internet Speed Test Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Douyin Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
 	keywords: "douyin video downloader, free online tool, no signup, douyin-video-downloader, free douyin-video-downloader, Douyin Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/douyin-video-downloader",
+		canonical: "https://sopkit.github.io/douyin-video-downloader/",
 	},
 	openGraph: {
 		title: "Free Douyin Video Downloader Online - No Signup | SopKit",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Compress any image file (JPG, PNG, WebP) to fit strictly under 20KB while maintaining the best possible visual clarity.",
 	keywords: "compress-image-to-20kb, Compress Image to 20KB, compress image 20kb, photo size under 20kb, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/compress-image-to-20kb",
+		canonical: "https://sopkit.github.io/compress-image-to-20kb/",
 	},
 	openGraph: {
 		title: "Free Compress Image to 20KB Online - No Signup | SopKit",

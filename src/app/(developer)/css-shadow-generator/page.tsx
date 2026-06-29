@@ -7,7 +7,7 @@ export const metadata = {
 	title: "CSS Shadow Generator Online Free - Developer Tools | SopKit",
 	description: "Generate CSS box shadows and text shadows for modern web design. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/css-shadow-generator",
+		canonical: "https://sopkit.github.io/css-shadow-generator/",
 	},
 	openGraph: {
 		title: "CSS Shadow Generator Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.",
 	keywords: "resignation-letter-generator, Resignation Letter Generator",
 	alternates: {
-		canonical: "https://sopkit.github.io/resignation-letter-generator",
+		canonical: "https://sopkit.github.io/resignation-letter-generator/",
 	},
 	openGraph: {
 		title: "Free Resignation Letter Generator Online - No Signup | SopKit",

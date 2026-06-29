@@ -7,7 +7,7 @@ export const metadata = {
 	title: "YouTube Hashtag Extractor Online Free - No Signup | SopKit",
 	description: "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video SEO for better reach. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-hashtag-extractor",
+		canonical: "https://sopkit.github.io/youtube-hashtag-extractor/",
 	},
 	openGraph: {
 		title: "YouTube Hashtag Extractor Online Free - No Signup",

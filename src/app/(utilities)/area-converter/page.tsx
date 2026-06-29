@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Area Converter Online Free - No Signup | SopKit",
 	description: "Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design projects. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/area-converter",
+		canonical: "https://sopkit.github.io/area-converter/",
 	},
 	openGraph: {
 		title: "Area Converter Online Free - No Signup",

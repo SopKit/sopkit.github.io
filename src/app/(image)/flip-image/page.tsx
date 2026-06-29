@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Flip Image Online Free - Compress & Convert Images | SopKit",
 	description: "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/flip-image",
+		canonical: "https://sopkit.github.io/flip-image/",
 	},
 	openGraph: {
 		title: "Flip Image Online Free - No Signup",

@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Salary Calculator India (CTC to In-Hand) Free | SopKit",
 	description: "Calculate your monthly in-hand salary from annual CTC with PF, professional tax, and income tax deductions. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/salary-calculator-india",
+		canonical: "https://sopkit.github.io/salary-calculator-india/",
 	},
 	openGraph: {
 		title: "Salary Calculator India (CTC to In-Hand) Online Free - No Signup | SopKit",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Redirect Checker Online Free - No Signup | SopKit",
 	description: "Free redirect checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/redirect-checker",
+		canonical: "https://sopkit.github.io/redirect-checker/",
 	},
 	openGraph: {
 		title: "Redirect Checker Online Free - No Signup",

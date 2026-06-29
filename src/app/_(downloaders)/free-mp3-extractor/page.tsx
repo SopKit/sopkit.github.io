@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Mp3 Extractor online. High-speed downloading with no signup needed.",
 	keywords: "free mp3 extractor, free online tool, no signup, free-mp3-extractor, Free Mp3 Extractor online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/free-mp3-extractor",
+		canonical: "https://sopkit.github.io/free-mp3-extractor/",
 	},
 	openGraph: {
 		title: "Free Mp3 Extractor Online - No Signup | SopKit",

@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Htaccess Redirect Generator Online Free - No Signup | SopKit",
 	description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/htaccess-redirect-generator",
+		canonical: "https://sopkit.github.io/htaccess-redirect-generator/",
 	},
 	openGraph: {
 		title: "Htaccess Redirect Generator Online Free - No Signup",

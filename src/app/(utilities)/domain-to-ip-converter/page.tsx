@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Domain to IP Converter Online Free - No Signup | SopKit",
 	description: "Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/domain-to-ip-converter",
+		canonical: "https://sopkit.github.io/domain-to-ip-converter/",
 	},
 	openGraph: {
 		title: "Domain to IP Converter Online Free - No Signup",

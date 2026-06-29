@@ -7,7 +7,7 @@ export const metadata = {
 	title: "WordPress Theme Detector Online Free - No Signup | SopKit",
 	description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/wordpress-theme-detector",
+		canonical: "https://sopkit.github.io/wordpress-theme-detector/",
 	},
 	openGraph: {
 		title: "WordPress Theme Detector Online Free - No Signup",

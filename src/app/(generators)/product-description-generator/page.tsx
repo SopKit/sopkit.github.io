@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Generate optimized product description generator details. Instantly copy or share customized outputs.",
 	keywords: "product description generator, product-description-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/product-description-generator",
+		canonical: "https://sopkit.github.io/product-description-generator/",
 	},
 	openGraph: {
 		title: "Product Description Generator - Free Online Tool | SopKit",

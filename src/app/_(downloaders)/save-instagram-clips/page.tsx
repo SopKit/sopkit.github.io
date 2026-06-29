@@ -8,7 +8,7 @@ export const metadata = {
 	description: "Save and download media files from multiple platforms with our free Save Instagram Clips online. High-speed downloading with no signup needed. Try it free now.",
 	keywords: "save instagram clips, free online tool, no signup, save-instagram-clips, free save-instagram-clips, Save Instagram Clips online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/save-instagram-clips",
+		canonical: "https://sopkit.github.io/save-instagram-clips/",
 	},
 	openGraph: {
 		title: "Free Save Instagram Clips Online - No Signup | SopKit",

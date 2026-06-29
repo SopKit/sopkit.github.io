@@ -7,7 +7,7 @@ export const metadata = {
 	title: "Text to HEX Converter Online Free - Developer Tools | SopKit",
 	description: "Convert plain text into hexadecimal format instantly. Our free online tool provides a clean hex representation of your input string for development and data analysis. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-hex-converter",
+		canonical: "https://sopkit.github.io/text-to-hex-converter/",
 	},
 	openGraph: {
 		title: "Text to HEX Converter Online Free - No Signup",
