@@ -4,7 +4,7 @@ export default function FooterPartners() {
 			<a
 				href="https://linespedia.com/"
 				target="_blank"
-				rel=""
+				rel="noopener noreferrer"
 				className="hover:text-primary transition-colors"
 			>
 				Linespedia

@@ -134,6 +134,12 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 									<span className="text-[10px] opacity-70">Premium Story Platform with immersive swipe interface.</span>
 								</a>
 							</li>
+							<li>
+								<a href="https://linespedia.com/" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex flex-col gap-1 group">
+									<span className="font-bold flex items-center gap-1">Linespedia <ArrowUpRight className="h-3 w-3 opacity-50" /></span>
+									<span className="text-[10px] opacity-70">Find lines, word counts, and text formatting tools.</span>
+								</a>
+							</li>
 						</ul>
 					</div>
 
