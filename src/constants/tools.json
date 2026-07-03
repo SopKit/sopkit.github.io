@@ -2957,6 +2957,14 @@
           "category": "text"
         },
         {
+          "id": "markdown-to-pdf",
+          "name": "Markdown to PDF Converter",
+          "description": "Convert Markdown text into a clean, print-ready PDF document instantly.",
+          "route": "/markdown-to-pdf",
+          "popular": true,
+          "category": "text"
+        },
+        {
           "id": "case-converter",
           "name": "Case Converter (Sentence, Upper, Lower)",
           "description": "Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly.",

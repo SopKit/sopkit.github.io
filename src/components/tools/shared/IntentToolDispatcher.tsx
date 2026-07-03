@@ -247,6 +247,7 @@ const ImageMetadataRemoverTool = dynamic(() => import("@/components/tools/image/
 const ImageColorPicker = dynamic(() => import("@/components/tools/image/ImageColorPicker"), { ssr: false });
 const EmojiTextGeneratorTool = dynamic(() => import("@/components/tools/text/EmojiTextGeneratorTool"), { ssr: false });
 const MarkdownToHtmlTool = dynamic(() => import("@/components/tools/text/MarkdownToHtmlTool"), { ssr: false });
+const MarkdownToPdfTool = dynamic(() => import("@/components/tools/text/MarkdownToPdfTool"), { ssr: false });
 const RandomWordGeneratorTool = dynamic(() => import("@/components/tools/text/RandomWordGeneratorTool"), { ssr: false });
 const RemoveDuplicatesTool = dynamic(() => import("@/components/tools/text/RemoveDuplicatesTool"), { ssr: false });
 const TextReverserTool = dynamic(() => import("@/components/tools/text/TextReverserTool"), { ssr: false });
@@ -286,6 +287,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "text-reverser": { component: TextReverserTool, props: {} },
     "remove-duplicate-lines": { component: RemoveDuplicatesTool, props: {} },
     "markdown-to-html": { component: MarkdownToHtmlTool, props: {} },
+    "markdown-to-pdf": { component: MarkdownToPdfTool, props: {} },
     "case-converter": { component: CaseConverter, props: {} },
     "emoji-text-generator": { component: EmojiTextGeneratorTool, props: {} },
     "random-word-generator": { component: RandomWordGeneratorTool, props: {} },
