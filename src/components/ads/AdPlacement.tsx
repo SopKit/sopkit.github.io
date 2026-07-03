@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import AdSlot from "./AdSlot";
 import { getMonetizationDecision } from "@/data/monetization";
 import { ArrowRight, Sparkles } from "lucide-react";
 
@@ -83,45 +82,23 @@ export default function AdPlacement({
 }: AdPlacementProps) {
   const monetization = getMonetizationDecision({ slug, category });
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
-  const [adDecision, setAdDecision] = useState<"ad" | "empty" | "adsense">("ad");
+  const [adDecision, setAdDecision] = useState<"ad" | "empty">("ad");
 
   useEffect(() => {
-    // 70% chance to show a high-converting Scriptly Store ad
-    // 15% chance to hide the ad slot completely (remove slot)
-    // 15% chance to show standard Google Adsense
+    // 80% chance to show a high-converting Scriptly Store ad
+    // 20% chance to hide the ad slot completely (remove slot)
     const rand = Math.random();
-    if (rand < 0.70) {
+    if (rand < 0.80) {
       setAdDecision("ad");
       const productIndex = Math.floor(Math.random() * SCRIPTLY_PRODUCTS.length);
       setSelectedProduct(SCRIPTLY_PRODUCTS[productIndex]);
-    } else if (rand < 0.85) {
-      setAdDecision("empty");
     } else {
-      setAdDecision("adsense");
+      setAdDecision("empty");
     }
   }, []);
 
   if (!monetization.adsAllowed || adDecision === "empty") {
     return null;
-  }
-
-  if (adDecision === "adsense") {
-    const DISPLAY = { slot: "6845038159", format: "auto" as const };
-    const MULTIPLEX = {
-      home: { slot: "4669751596", format: "autorelaxed" as const },
-      blog: { slot: "9420953810", format: "autorelaxed" as const },
-      tool: { slot: "8187863815", format: "autorelaxed" as const },
-    };
-
-    if (placement === "sidebar" || placement === "footer") {
-      const unit =
-        pageType === "home" ? MULTIPLEX.home :
-        pageType === "blog" ? MULTIPLEX.blog :
-        MULTIPLEX.tool;
-      return <AdSlot slot={unit.slot} format={unit.format} label={true} />;
-    }
-
-    return <AdSlot slot={DISPLAY.slot} format={DISPLAY.format} label={true} />;
   }
 
   // Render a gorgeous high-converting Scriptly Store ad
