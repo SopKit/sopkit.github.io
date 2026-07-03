@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import PDFUnlock from "@/components/tools/utilities/QrGeneratorPremium";
+import PDFUnlock from "@/components/tools/pdf/PDFUnlock";
 
 export const metadata = {
 	title: "PDF Unlocker Online Free - Edit, Merge & Convert PDF | SopKit",

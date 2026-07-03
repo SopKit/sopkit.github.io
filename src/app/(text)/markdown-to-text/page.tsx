@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import MarkdownToText from "@/components/tools/utilities/QrGeneratorPremium";
+import MarkdownToText from "@/components/tools/text/MarkdownToText";
 
 export const metadata = {
 	title: "Markdown to Text Online Free - No Signup | SopKit",

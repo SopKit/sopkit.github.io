@@ -554,7 +554,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "privacy-policy-generator": { component: LegalTemplateGenerator, props: {} },
     "probability-calculator": { component: BuiltInCalculators, props: {"kind": "probability-calculator"} },
     "puhutv-video-downloader": { component: PuhutvDownloader, props: {} },
-    "qr-code-decoder": { component: QrGeneratorPremium, props: {} },
+    "qr-code-decoder": { component: QrReaderPremium, props: {} },
     "qr-code-generator": { component: QrGeneratorPremium, props: {} },
     "qr-code-reader": { component: QrReaderPremium, props: {} },
     "railway-exam-photo-resizer": { component: ExamPhotoResizer, props: {"examName": "Railway"} },

@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import QrReaderPremium from "@/components/tools/utilities/QrGeneratorPremium";
+import QrReaderPremium from "@/components/tools/utilities/QrReaderPremium";
 
 export const metadata = {
 	title: "QR Code Reader Online Free - No Signup | SopKit",

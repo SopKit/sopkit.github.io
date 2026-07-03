@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import PDFGrayscale from "@/components/tools/utilities/QrGeneratorPremium";
+import PDFGrayscale from "@/components/tools/pdf/PDFGrayscale";
 
 export const metadata = {
 	title: "PDF Grayscale Online Free - Edit, Merge & Convert PDF | SopKit",

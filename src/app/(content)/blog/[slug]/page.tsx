@@ -5,6 +5,7 @@ import { getToolByRoute } from "@/lib/tools";
 import AdPlacement from "@/components/ads/AdPlacement";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { Suspense } from "react";
+import { Calendar, Clock, ArrowLeft, ArrowRight, LayoutGrid } from "lucide-react";
 
 interface BlogArticlePageProps {
 	params: Promise<{ slug: string }>;
@@ -108,116 +109,7 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 	};
 
 	return (
-		<div className="min-h-screen bg-background text-foreground flex flex-col">
-			<main className="flex-1">
-				<article className="container mx-auto max-w-4xl px-4 py-14 md:py-20">
-					<Suspense fallback={<div className="h-6 w-64 bg-muted/20 animate-pulse rounded" />}>
-						<BreadcrumbsEnhanced suppressSchema={true} />
-					</Suspense>
-					<p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-4">
-						Blog Guide
-					</p>
-					<h1 className="text-3xl md:text-5xl font-bold tracking-tight">
-						{article.title}
-					</h1>
-					<p className="mt-4 text-sm text-muted-foreground">
-						Published {article.date} • {article.readTimeMinutes || 5} min read
-					</p>
-					<p className="mt-8 text-lg leading-relaxed text-muted-foreground">
-						{article.intro || article.description}
-					</p>
-
-					<div className="mt-10 max-w-3xl mx-auto">
-						<AdPlacement placement="after-hero" pageType="blog" />
-					</div>
-
-					<div className="mt-10 space-y-10">
-						{(article.sections || []).map((section: any) => {
-							const sectionTools = (section.toolRoutes || [])
-								.map((route: string) => getToolByRoute(route))
-								.filter(Boolean);
-
-							return (
-								<section key={section.heading}>
-									<h2 className="text-2xl font-semibold tracking-tight">
-										{section.heading}
-									</h2>
-									<div className="mt-4 space-y-4">
-										{(section.paragraphs || []).map((paragraph: string) => (
-											<p key={paragraph} className="text-muted-foreground leading-relaxed">
-												{paragraph}
-											</p>
-										))}
-									</div>
-
-									{sectionTools.length > 0 && (
-										<div className="mt-5 flex flex-wrap gap-3">
-											{sectionTools.map((tool: any) => (
-												<Link
-													key={tool!.route}
-													href={tool!.route}
-													className="rounded-full border border-border/70 px-4 py-2 text-sm font-medium hover:border-primary/50 hover:text-primary transition-colors"
-												>
-													{tool!.name}
-												</Link>
-											))}
-										</div>
-									)}
-								</section>
-							);
-						})}
-					</div>
-
-					{(article.faqs || []).length > 0 && (
-						<section className="mt-12 rounded-2xl border border-border/60 bg-card/50 p-6 md:p-8">
-							<div className="mb-10 max-w-3xl mx-auto">
-								<AdPlacement placement="in-content" pageType="blog" />
-							</div>
-							<h2 className="text-2xl font-semibold tracking-tight">FAQ</h2>
-							<div className="mt-6 space-y-5">
-								{(article.faqs || []).map((faq: any) => (
-									<div key={faq.question}>
-										<h3 className="font-medium">{faq.question}</h3>
-										<p className="text-muted-foreground mt-2">{faq.answer}</p>
-									</div>
-								))}
-							</div>
-						</section>
-					)}
-
-					<section className="mt-12 rounded-2xl border border-border/60 bg-card/50 p-6 md:p-8">
-						<h2 className="text-2xl font-semibold tracking-tight">Featured Tools</h2>
-						<div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-							{featuredTools.map((tool: any) => (
-								<Link
-									key={tool!.route}
-									href={tool!.route}
-									className="rounded-xl border border-border/70 bg-background p-4 hover:border-primary/40 transition-colors"
-								>
-									<p className="font-medium">{tool!.name}</p>
-									<p className="text-sm text-muted-foreground mt-2 line-clamp-2">
-										{tool!.description}
-									</p>
-								</Link>
-							))}
-						</div>
-
-						<div className="mt-6">
-							<Link
-								href="/blog"
-								className="text-sm font-medium text-primary hover:underline"
-							>
-								See all guides
-							</Link>
-						</div>
-					</section>
-
-					<div className="mt-12 max-w-3xl mx-auto">
-						<AdPlacement placement="footer" pageType="blog" />
-					</div>
-				</article>
-			</main>
-
+		<div className="min-h-screen bg-background text-foreground flex flex-col antialiased">
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{
@@ -230,6 +122,163 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 					__html: JSON.stringify(breadcrumbSchema),
 				}}
 			/>
+
+			<main className="flex-1">
+				<article className="container mx-auto max-w-3xl px-4 py-12 md:py-16">
+					{/* Breadcrumbs & Back Link */}
+					<div className="flex flex-col gap-6 border-b border-border/10 pb-6 mb-8">
+						<Suspense fallback={null}>
+							<BreadcrumbsEnhanced suppressSchema={true} />
+						</Suspense>
+						<Link
+							href="/blog"
+							className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors"
+						>
+							<ArrowLeft className="h-3.5 w-3.5" />
+							Back to all guides
+						</Link>
+					</div>
+
+					{/* Article Header */}
+					<header className="space-y-4">
+						<span className="text-[10px] font-bold uppercase tracking-widest text-primary bg-primary/5 px-2.5 py-1 rounded-full">
+							Technical Guide
+						</span>
+						<h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-foreground leading-tight">
+							{article.title}
+						</h1>
+						
+						<div className="flex items-center gap-4 text-xs font-semibold text-muted-foreground/80 pt-2">
+							<span className="flex items-center gap-1">
+								<Calendar className="h-3.5 w-3.5" />
+								{article.date}
+							</span>
+							<span>&bull;</span>
+							<span className="flex items-center gap-1">
+								<Clock className="h-3.5 w-3.5" />
+								{article.readTimeMinutes || 5} min read
+							</span>
+						</div>
+					</header>
+
+					{/* Intro paragraph with blockquote style */}
+					<div className="mt-8 border-l-2 border-primary/20 pl-4 py-1.5">
+						<p className="text-base sm:text-lg leading-relaxed text-muted-foreground italic font-normal">
+							{article.intro || article.description}
+						</p>
+					</div>
+
+					<div className="mt-8 max-w-full">
+						<AdPlacement placement="after-hero" pageType="blog" />
+					</div>
+
+					{/* Sections Content */}
+					<div className="mt-12 space-y-12">
+						{(article.sections || []).map((section: any) => {
+							const sectionTools = (section.toolRoutes || [])
+								.map((route: string) => getToolByRoute(route))
+								.filter(Boolean);
+
+							return (
+								<section key={section.heading} className="space-y-4">
+									<h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground mt-8">
+										{section.heading}
+									</h2>
+									<div className="space-y-4">
+										{(section.paragraphs || []).map((paragraph: string) => (
+											<p key={paragraph} className="text-base leading-relaxed text-muted-foreground/90">
+												{paragraph}
+											</p>
+										))}
+									</div>
+
+									{sectionTools.length > 0 && (
+										<div className="mt-4 pt-2 flex flex-wrap gap-2">
+											{sectionTools.map((tool: any) => (
+												<Link
+													key={tool!.route}
+													href={tool!.route}
+													className="inline-flex items-center gap-1.5 rounded-full border border-border px-3.5 py-1.5 text-xs font-bold text-muted-foreground hover:text-primary hover:border-primary/30 transition-all duration-200"
+												>
+													<LayoutGrid className="h-3.5 w-3.5" />
+													<span>Use {tool!.name}</span>
+												</Link>
+											))}
+										</div>
+									)}
+								</section>
+							);
+						})}
+					</div>
+
+					{/* FAQ Section */}
+					{(article.faqs || []).length > 0 && (
+						<section className="mt-16 border-t border-border/20 pt-12">
+							<h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground mb-6">
+								Frequently Asked Questions
+							</h2>
+							
+							<div className="space-y-6">
+								{(article.faqs || []).map((faq: any) => (
+									<div key={faq.question} className="bg-card/40 border border-border/40 p-5 rounded-2xl">
+										<h3 className="text-base font-bold text-foreground leading-snug">
+											{faq.question}
+										</h3>
+										<p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+											{faq.answer}
+										</p>
+									</div>
+								))}
+							</div>
+						</section>
+					)}
+
+					{/* Featured Tools Grid */}
+					{featuredTools.length > 0 && (
+						<section className="mt-16 border-t border-border/20 pt-12">
+							<h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground mb-6">
+								Recommended Tools
+							</h2>
+							
+							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+								{featuredTools.map((tool: any) => (
+									<Link
+										key={tool!.route}
+										href={tool!.route}
+										className="group p-5 rounded-2xl border border-border/40 hover:border-primary/30 bg-card/20 hover:bg-card/60 transition-all duration-200 flex flex-col justify-between"
+									>
+										<div>
+											<p className="font-bold text-foreground group-hover:text-primary transition-colors duration-200">
+												{tool!.name}
+											</p>
+											<p className="text-xs text-muted-foreground mt-2 line-clamp-2 leading-relaxed">
+												{tool!.description}
+											</p>
+										</div>
+										<div className="mt-4 flex items-center text-xs font-bold text-primary gap-1">
+											<span>Open tool</span>
+											<ArrowRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
+										</div>
+									</Link>
+								))}
+							</div>
+
+							<div className="mt-8 flex justify-center">
+								<Link
+									href="/blog"
+									className="text-xs font-bold text-primary hover:underline underline-offset-4"
+								>
+									See all guides and articles
+								</Link>
+							</div>
+						</section>
+					)}
+
+					<div className="mt-12 max-w-full">
+						<AdPlacement placement="footer" pageType="blog" />
+					</div>
+				</article>
+			</main>
 		</div>
 	);
 }

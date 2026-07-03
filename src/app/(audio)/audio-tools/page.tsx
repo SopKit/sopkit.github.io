@@ -1,17 +1,21 @@
-import { notFound } from "next/navigation";
-import ToolLayout from "@/components/tools/shared/ToolLayout";
-import { getToolByRoute } from "@/lib/tools";
-import AudioToolsHub from "@/components/tools/utilities/QrGeneratorPremium";
+import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
+import { PremiumHero } from "@/components/landing/PremiumHero";
+import { AppleFooter } from "@/components/footers/AppleFooter";
+import { AppleNavbar } from "@/components/navigation/AppleNavbar";
+import { GridPattern } from "@/components/shared/GridPattern";
+import Link from "next/link";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Music, ArrowRight, Sparkles } from "lucide-react";
 
 export const metadata = {
-	title: "Audio Tools Online Free - No Signup | SopKit",
-	description: "Compress and convert audio files between formats No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Audio Tools Online - No Signup | SopKit",
+	description: "Compress and convert audio files between formats. High-quality output and private browser-based tools with no signup.",
 	alternates: {
 		canonical: "https://sopkit.github.io/audio-tools/",
 	},
 	openGraph: {
-		title: "Audio Tools Online Free - No Signup",
-		description: "Compress and convert audio files between formats No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Audio Tools Online - No Signup | SopKit",
+		description: "Compress and convert audio files between formats. High-quality output and private browser-based tools with no signup.",
 		url: "https://sopkit.github.io/audio-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -19,23 +23,62 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Audio Tools Online Free - Fast & Secure",
-		description: "Compress and convert audio files between formats No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Audio Tools Online - Fast & Secure",
+		description: "Compress and convert audio files between formats. High-quality output and private browser-based tools with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };
 
-export default async function ToolPage() {
-	const tool = getToolByRoute("/audio-tools");
-
-	if (!tool) {
-		return notFound();
-	}
+export default function AudioHub() {
+	const tools = getAllToolsByCategory("audio");
+	const categories = getAllCategories().map(cat => ({ 
+		label: cat.name, 
+		href: cat.slug.startsWith("/") ? cat.slug : `/${cat.slug}` 
+	}));
 
 	return (
-		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<AudioToolsHub />
-		</ToolLayout>
+		<div className="min-h-screen bg-background">
+			<AppleNavbar />
+			<main>
+				<PremiumHero 
+					title="Audio Utilities" 
+					subtitle="Convert, compress, and edit audio files 100% free in your browser. No signup, no uploads to servers — everything stays private."
+				/>
+				
+				<div className="container mx-auto px-4 py-16 max-w-7xl relative">
+					<GridPattern className="opacity-10" />
+					
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+						{tools.map((tool: Tool) => (
+							<Link key={tool.id} href={tool.route}>
+								<Card className="h-full hover:shadow-2xl hover:border-primary/50 transition-all group overflow-hidden bg-card/50 backdrop-blur-sm">
+									<CardHeader className="pb-2">
+										<CardTitle className="flex items-center justify-between">
+											<span className="text-xl font-bold tracking-tight flex items-center gap-2">
+												<Music className="w-5 h-5 text-primary" />
+												{tool.name}
+											</span>
+											<ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+										</CardTitle>
+									</CardHeader>
+									<CardContent>
+										<p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
+											{tool.description}
+										</p>
+										{tool.popular && (
+											<div className="mt-4 inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider">
+												<Sparkles className="w-3 h-3" /> Popular
+											</div>
+										)}
+									</CardContent>
+								</Card>
+							</Link>
+						))}
+					</div>
+				</div>
+			</main>
+			<AppleFooter categories={categories} />
+		</div>
 	);
 }

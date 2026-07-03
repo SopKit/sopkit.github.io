@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import PDFRepair from "@/components/tools/utilities/QrGeneratorPremium";
+import PDFRepair from "@/components/tools/pdf/PDFRepair";
 
 export const metadata = {
 	title: "PDF Repair Online Free - Edit, Merge & Convert PDF | SopKit",

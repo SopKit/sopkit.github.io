@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import PDFEditor from "@/components/tools/utilities/QrGeneratorPremium";
+import PDFEditor from "@/components/tools/pdf/PDFEditor";
 
 export const metadata = {
 	title: "PDF Editor Online Free - Edit, Merge & Convert PDF | SopKit",

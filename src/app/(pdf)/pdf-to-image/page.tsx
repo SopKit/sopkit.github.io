@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import PDFToImage from "@/components/tools/utilities/QrGeneratorPremium";
+import PDFToImage from "@/components/tools/pdf/PDFToImage";
 
 export const metadata = {
 	title: "PDF to Image Online Free - Edit, Merge & Convert PDF | SopKit",

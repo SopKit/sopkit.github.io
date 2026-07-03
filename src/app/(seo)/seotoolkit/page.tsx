@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import SeoToolkit from "@/components/tools/utilities/QrGeneratorPremium";
+import SeoToolkit from "@/components/tools/seo/SeoToolkit";
 
 export const metadata = {
 	title: "SEO Toolkit Online Free - No Signup | SopKit",

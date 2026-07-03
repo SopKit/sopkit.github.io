@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import WordToPDF from "@/components/tools/utilities/QrGeneratorPremium";
+import WordToPDF from "@/components/tools/pdf/WordToPDF";
 
 export const metadata = {
 	title: "Word to PDF Online Free - Edit, Merge & Convert PDF | SopKit",
