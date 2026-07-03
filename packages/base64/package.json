@@ -1,0 +1,31 @@
+{
+  "name": "@sopkit/base64",
+  "version": "1.0.0",
+  "description": "Premium, lightweight Base64 utility for browser and Node.js with URL-safe encoding/decoding.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "sopkit",
+    "base64",
+    "encode",
+    "decode",
+    "url-safe",
+    "atob",
+    "btoa"
+  ],
+  "author": "SopKit",
+  "license": "MIT",
+  "homepage": "https://sopkit.github.io/base64-encode/"
+}
