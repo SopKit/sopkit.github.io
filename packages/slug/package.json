@@ -1,0 +1,30 @@
+{
+  "name": "@sopkit/slug",
+  "version": "1.0.0",
+  "description": "Premium, lightweight URL slug generator and text clean-up utility with full Unicode/diacritics support.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "sopkit",
+    "slug",
+    "slugify",
+    "url",
+    "clean-url",
+    "seo"
+  ],
+  "author": "SopKit",
+  "license": "MIT",
+  "homepage": "https://sopkit.github.io/slug-generator/"
+}
