@@ -7,12 +7,12 @@ export const metadata = {
 	title: "Markdown to PDF Converter Online Free | SopKit",
 	description: "Convert Markdown text into a clean, print-ready PDF document instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/markdown-to-pdf",
+		canonical: "https://sopkit.github.io/markdown-to-pdf/",
 	},
 	openGraph: {
 		title: "Markdown to PDF Converter Online Free - No Signup | SopKit",
 		description: "Convert Markdown text into a clean, print-ready PDF document instantly. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/markdown-to-pdf",
+		url: "https://sopkit.github.io/markdown-to-pdf/",
 		siteName: "SopKit",
 		images: [{ url: "/og-images/text-tools.png" }],
 		type: "website",

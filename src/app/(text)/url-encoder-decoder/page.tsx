@@ -7,12 +7,12 @@ export const metadata = {
 	title: "URL Encoder Decoder Online - Free URL Tool | SopKit",
 	description: "Encode or decode URLs and parameter query strings instantly. Safe, secure, and executed fully client-side in your browser. No registration required.",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-encoder-decoder",
+		canonical: "https://sopkit.github.io/url-encoder-decoder/",
 	},
 	openGraph: {
 		title: "URL Encoder Decoder Online - Free URL Tool | SopKit",
 		description: "Encode or decode URLs and parameter query strings instantly. Safe, secure, and executed fully client-side in your browser. No registration required.",
-		url: "https://sopkit.github.io/url-encoder-decoder",
+		url: "https://sopkit.github.io/url-encoder-decoder/",
 		siteName: "SopKit",
 		images: [{ url: "/og-images/text-tools.png" }],
 		type: "website",

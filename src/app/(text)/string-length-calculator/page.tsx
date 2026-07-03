@@ -7,12 +7,12 @@ export const metadata = {
 	title: "String Length Calculator - Free Character & Word Counter | SopKit",
 	description: "Calculate string character length, word count, total bytes size, lines count, whitespaces count, and paragraphs instantly. Fully private text utility.",
 	alternates: {
-		canonical: "https://sopkit.github.io/string-length-calculator",
+		canonical: "https://sopkit.github.io/string-length-calculator/",
 	},
 	openGraph: {
 		title: "String Length Calculator - Free Character & Word Counter | SopKit",
 		description: "Calculate string character length, word count, total bytes size, lines count, whitespaces count, and paragraphs instantly. Fully private text utility.",
-		url: "https://sopkit.github.io/string-length-calculator",
+		url: "https://sopkit.github.io/string-length-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-images/text-tools.png" }],
 		type: "website",

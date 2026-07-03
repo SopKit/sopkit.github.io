@@ -2981,6 +2981,30 @@
           "category": "text"
         },
         {
+          "id": "text-to-binary-hex-octal",
+          "name": "Text to Binary/Hex/Octal Converter",
+          "description": "Convert plain text strings to binary, hex, and octal formats simultaneously. 100% local.",
+          "route": "/text-to-binary-hex-octal",
+          "popular": true,
+          "category": "text"
+        },
+        {
+          "id": "slug-to-text-converter",
+          "name": "Slug to Text Converter",
+          "description": "Convert URL slugs with hyphens or underscores back into clean, readable text strings.",
+          "route": "/slug-to-text-converter",
+          "popular": true,
+          "category": "text"
+        },
+        {
+          "id": "word-frequency-counter",
+          "name": "Word Frequency Counter",
+          "description": "Calculate word density, occurrences, and text analytics with a sorted frequency table.",
+          "route": "/word-frequency-counter",
+          "popular": true,
+          "category": "text"
+        },
+        {
           "id": "case-converter",
           "name": "Case Converter (Sentence, Upper, Lower)",
           "description": "Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly.",
@@ -5065,10 +5089,34 @@
           "category": "developer"
         },
         {
-          "id": "ip-address-lookup",
-          "name": "IP Address Lookup",
-          "description": "Find your public IP address and get detailed local ISP, geolocation, and device metadata.",
-          "route": "/ip-address-lookup",
+          "id": "yaml-to-json-converter",
+          "name": "YAML to JSON Converter",
+          "description": "Convert YAML configurations to clean JSON structures instantly. Safe & secure.",
+          "route": "/yaml-to-json-converter",
+          "popular": true,
+          "category": "developer"
+        },
+        {
+          "id": "json-to-yaml-converter",
+          "name": "JSON to YAML Converter",
+          "description": "Convert JSON configurations to clean YAML structures instantly. Safe & secure.",
+          "route": "/json-to-yaml-converter",
+          "popular": true,
+          "category": "developer"
+        },
+        {
+          "id": "html-to-xml-entities",
+          "name": "HTML to XML Entities Converter",
+          "description": "Convert HTML special characters into safe XML entities and display tags securely online.",
+          "route": "/html-to-xml-entities",
+          "popular": true,
+          "category": "developer"
+        },
+        {
+          "id": "css-border-radius-generator",
+          "name": "CSS Border Radius Generator",
+          "description": "Generate CSS border-radius rules interactively with live shape previews and webkit/moz prefixes.",
+          "route": "/css-border-radius-generator",
           "popular": true,
           "category": "developer"
         },

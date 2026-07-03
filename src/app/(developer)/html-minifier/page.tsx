@@ -7,12 +7,12 @@ export const metadata = {
 	title: "Free HTML Minifier Online - Compress HTML Code | SopKit",
 	description: "Compress and minify your HTML code instantly. Remove comments, redundant whitespace, and reduce page size to improve SEO and load speeds. Private & secure.",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-minifier",
+		canonical: "https://sopkit.github.io/html-minifier/",
 	},
 	openGraph: {
 		title: "Free HTML Minifier Online - Compress HTML Code | SopKit",
 		description: "Compress and minify your HTML code instantly. Remove comments, redundant whitespace, and reduce page size to improve SEO and load speeds. Private & secure.",
-		url: "https://sopkit.github.io/html-minifier",
+		url: "https://sopkit.github.io/html-minifier/",
 		siteName: "SopKit",
 		images: [{ url: "/og-images/developer-tools.png" }],
 		type: "website",

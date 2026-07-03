@@ -7,12 +7,12 @@ export const metadata = {
 	title: "Free User Agent Parser Online - Detect OS & Browser | SopKit",
 	description: "Parse and analyze any User Agent string instantly. Detect the browser family, version, operating system, layout rendering engine, and platform details. Free and secure.",
 	alternates: {
-		canonical: "https://sopkit.github.io/user-agent-parser",
+		canonical: "https://sopkit.github.io/user-agent-parser/",
 	},
 	openGraph: {
 		title: "Free User Agent Parser Online - Detect OS & Browser | SopKit",
 		description: "Parse and analyze any User Agent string instantly. Detect the browser family, version, operating system, layout rendering engine, and platform details. Free and secure.",
-		url: "https://sopkit.github.io/user-agent-parser",
+		url: "https://sopkit.github.io/user-agent-parser/",
 		siteName: "SopKit",
 		images: [{ url: "/og-images/developer-tools.png" }],
 		type: "website",

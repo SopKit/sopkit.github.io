@@ -241,10 +241,13 @@ const CrontabGeneratorTool = dynamic(() => import("@/components/tools/developer/
 const HtmlEntityCodecTool = dynamic(() => import("@/components/tools/developer/HtmlEntityCodecTool"), { ssr: false });
 const HtmlMinifierTool = dynamic(() => import("@/components/tools/developer/HtmlMinifierTool"), { ssr: false });
 const JsonToTypeScriptTool = dynamic(() => import("@/components/tools/developer/JsonToTypeScriptTool"), { ssr: false });
+const YamlToJsonTool = dynamic(() => import("@/components/tools/developer/YamlToJsonTool"), { ssr: false });
+const JsonToYamlTool = dynamic(() => import("@/components/tools/developer/JsonToYamlTool"), { ssr: false });
 const RandomNameGeneratorTool = dynamic(() => import("@/components/tools/developer/RandomNameGeneratorTool"), { ssr: false });
 const XmlFormatterTool = dynamic(() => import("@/components/tools/developer/XmlFormatterTool"), { ssr: false });
 const UserAgentParserTool = dynamic(() => import("@/components/tools/developer/UserAgentParserTool"), { ssr: false });
-const IpAddressLookupTool = dynamic(() => import("@/components/tools/developer/IpAddressLookupTool"), { ssr: false });
+const HtmlToXmlEntitiesTool = dynamic(() => import("@/components/tools/developer/HtmlToXmlEntitiesTool"), { ssr: false });
+const CssBorderRadiusTool = dynamic(() => import("@/components/tools/developer/CssBorderRadiusTool"), { ssr: false });
 const FaviconGeneratorProTool = dynamic(() => import("@/components/tools/image/FaviconGeneratorProTool"), { ssr: false });
 const ImageMetadataRemoverTool = dynamic(() => import("@/components/tools/image/ImageMetadataRemoverTool"), { ssr: false });
 const ImageColorPicker = dynamic(() => import("@/components/tools/image/ImageColorPicker"), { ssr: false });
@@ -256,6 +259,9 @@ const RemoveDuplicatesTool = dynamic(() => import("@/components/tools/text/Remov
 const TextReverserTool = dynamic(() => import("@/components/tools/text/TextReverserTool"), { ssr: false });
 const UrlEncoderDecoderTool = dynamic(() => import("@/components/tools/text/UrlEncoderDecoderTool"), { ssr: false });
 const StringLengthCalculatorTool = dynamic(() => import("@/components/tools/text/StringLengthCalculatorTool"), { ssr: false });
+const TextToBinaryHexOctalTool = dynamic(() => import("@/components/tools/text/TextToBinaryHexOctalTool"), { ssr: false });
+const SlugToTextTool = dynamic(() => import("@/components/tools/text/SlugToTextTool"), { ssr: false });
+const WordFrequencyCounterTool = dynamic(() => import("@/components/tools/text/WordFrequencyCounterTool"), { ssr: false });
 const JWTDecoderTool = dynamic(() => import("@/components/tools/developer/JWTDecoderTool"), { ssr: false });
 const CaseConverter = dynamic(() => import("@/components/tools/text/CaseConverter"), { ssr: false });
 
@@ -281,7 +287,10 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "random-name-generator": { component: RandomNameGeneratorTool, props: {} },
     "html-minifier": { component: HtmlMinifierTool, props: {} },
     "user-agent-parser": { component: UserAgentParserTool, props: {} },
-    "ip-address-lookup": { component: IpAddressLookupTool, props: {} },
+    "yaml-to-json-converter": { component: YamlToJsonTool, props: {} },
+    "json-to-yaml-converter": { component: JsonToYamlTool, props: {} },
+    "html-to-xml-entities": { component: HtmlToXmlEntitiesTool, props: {} },
+    "css-border-radius-generator": { component: CssBorderRadiusTool, props: {} },
     // Math, Date & Calculators
     "roman-numerals-converter": { component: RomanNumeralTool, props: {} },
     "date-difference-calculator": { component: DateDifferenceCalculatorTool, props: {} },
@@ -298,6 +307,9 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "markdown-to-pdf": { component: MarkdownToPdfTool, props: {} },
     "url-encoder-decoder": { component: UrlEncoderDecoderTool, props: {} },
     "string-length-calculator": { component: StringLengthCalculatorTool, props: {} },
+    "text-to-binary-hex-octal": { component: TextToBinaryHexOctalTool, props: {} },
+    "slug-to-text-converter": { component: SlugToTextTool, props: {} },
+    "word-frequency-counter": { component: WordFrequencyCounterTool, props: {} },
     "case-converter": { component: CaseConverter, props: {} },
     "emoji-text-generator": { component: EmojiTextGeneratorTool, props: {} },
     "random-word-generator": { component: RandomWordGeneratorTool, props: {} },
