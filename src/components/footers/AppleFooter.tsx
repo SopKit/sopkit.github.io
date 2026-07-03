@@ -31,72 +31,62 @@ interface CategoryItem {
 
 export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }) {
 	const footerNav = [
-		{ name: "About", href: getRouteById("about") },
+		{ name: "About Us", href: getRouteById("about") },
+		{ name: "Contact Us", href: getRouteById("contact") },
 		{ name: "Privacy Policy", href: getRouteById("privacy") },
-		{ name: "Terms", href: getRouteById("terms") },
-		{ name: "DMCA", href: "/dmca" },
-		{ name: "Contact", href: getRouteById("contact") },
+		{ name: "Terms of Use", href: getRouteById("terms") },
+		{ name: "DMCA Notice", href: "/dmca" },
 	];
 
 	return (
-		<footer className="bg-[#f5f5f7] dark:bg-[#161617] text-[#1d1d1f] dark:text-[#f5f5f7] pt-16 pb-8 border-t border-black/5 dark:border-white/5">
-			<div className="container mx-auto px-4 max-w-5xl">
-				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-8 mb-12">
-					<div className="col-span-2 lg:col-span-1">
-						<Link href={STATIC_ROUTES.HOME} className="text-lg font-semibold tracking-tight mb-4 block">
+		<footer className="bg-background text-foreground border-t border-border/40 pt-12 pb-8">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+					{/* Brand column */}
+					<div className="space-y-4">
+						<Link href={STATIC_ROUTES.HOME} className="text-lg font-bold tracking-tight">
 							SopKit
 						</Link>
-						<p className="text-[12px] leading-relaxed opacity-90 max-w-xs">
+						<p className="text-xs leading-relaxed text-muted-foreground max-w-xs">
 							{SITE_CONFIG.toolCountString} free tools for creators, developers, and professionals. 
-							Fast, secure, and private.
+							Fast, browser-based, and private.
 						</p>
 					</div>
 
+					{/* Platform column */}
 					<div>
-						<h4 className="text-[12px] font-semibold mb-4">Categories</h4>
-						<ul className="space-y-2">
-							{categories.slice(0, 6).map((item) => (
-								<li key={item.label}>
-									<Link href={item.href} className="text-[12px] opacity-90 hover:opacity-100 transition-opacity">
-										{item.label}
-									</Link>
-								</li>
-							))}
-						</ul>
-					</div>
-
-					<div>
-						<h4 className="text-[12px] font-semibold mb-4 text-primary">Platform</h4>
-						<ul className="space-y-2">
+						<h4 className="text-xs font-semibold tracking-wider uppercase text-muted-foreground/80 mb-3">Platform</h4>
+						<ul className="space-y-2 text-xs">
 							<li>
-								<Link href={STATIC_ROUTES.TOOLS} className="text-[12px] opacity-90 hover:opacity-100 transition-opacity">
-									Features
+								<Link href={STATIC_ROUTES.TOOLS} className="text-muted-foreground hover:text-foreground transition-colors">
+									All Features
 								</Link>
 							</li>
 							<li>
-								<Link href={STATIC_ROUTES.PRO} className="text-[12px] opacity-90 hover:opacity-100 transition-opacity">
-									Pricing
+								<Link href={STATIC_ROUTES.PRO} className="text-muted-foreground hover:text-foreground transition-colors">
+									Pro Account
 								</Link>
 							</li>
 							<li>
-								<Link href={STATIC_ROUTES.TOOL_GUIDES} className="text-[12px] opacity-90 hover:opacity-100 transition-opacity">
+								<Link href={STATIC_ROUTES.TOOL_GUIDES} className="text-muted-foreground hover:text-foreground transition-colors">
 									Resources
 								</Link>
 							</li>
 							<li>
-								<Link href={STATIC_ROUTES.BLOG} className="text-[12px] opacity-90 hover:opacity-100 transition-opacity">
-									Blog
+								<Link href={STATIC_ROUTES.BLOG} className="text-muted-foreground hover:text-foreground transition-colors">
+									Official Blog
 								</Link>
 							</li>
 						</ul>
 					</div>
 
+					{/* Company column */}
 					<div>
-						<h4 className="text-[12px] font-semibold mb-4">Company</h4>
-						<ul className="space-y-2">
+						<h4 className="text-xs font-semibold tracking-wider uppercase text-muted-foreground/80 mb-3">Company</h4>
+						<ul className="space-y-2 text-xs">
 							{footerNav.map((item) => (
 								<li key={item.name}>
-									<Link href={item.href} className="text-[12px] opacity-90 hover:opacity-100 transition-opacity">
+									<Link href={item.href} className="text-muted-foreground hover:text-foreground transition-colors">
 										{item.name}
 									</Link>
 								</li>
@@ -104,62 +94,35 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 						</ul>
 					</div>
 
+					{/* Featured & Open Source */}
 					<div>
-						<h4 className="text-[12px] font-semibold mb-4 text-primary">Open Source</h4>
-						<ul className="space-y-2">
+						<h4 className="text-xs font-semibold tracking-wider uppercase text-muted-foreground/80 mb-3">Community</h4>
+						<ul className="space-y-2 text-xs">
 							<li>
-								<a href="https://github.com/SopKit/sopkit.github.io" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex items-center gap-1 group">
-									<Github className="h-3 w-3 group-hover:text-primary" /> GitHub Repository <ArrowUpRight className="h-3 w-3 opacity-50" />
+								<a href="https://github.com/SopKit/sopkit.github.io" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
+									GitHub Repository <ArrowUpRight className="h-3 w-3 opacity-60" />
 								</a>
 							</li>
 							<li>
-								<a href="https://github.com/SopKit/sopkit.github.io/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex items-center gap-1">
-									Contribute & Build <ArrowUpRight className="h-3 w-3 opacity-50" />
+								<a href="https://wify.my/" target="_blank" rel="noopener noreferrer nofollow" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
+									Wify.my <ArrowUpRight className="h-3 w-3 opacity-60" />
 								</a>
 							</li>
 							<li>
-								<a href="https://github.com/SopKit/sopkit.github.io/issues" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex items-center gap-1">
-									Report an Issue <ArrowUpRight className="h-3 w-3 opacity-50" />
+								<a href="https://linespedia.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
+									Linespedia <ArrowUpRight className="h-3 w-3 opacity-60" />
 								</a>
 							</li>
 						</ul>
-					</div>
-
-					<div>
-						<h4 className="text-[12px] font-semibold mb-4">Featured</h4>
-						<ul className="space-y-2">
-							<li>
-								<a href="https://wify.my/" target="_blank" rel="noopener noreferrer nofollow" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex flex-col gap-1 group">
-									<span className="font-bold flex items-center gap-1">Wify.my <ArrowUpRight className="h-3 w-3 opacity-50" /></span>
-									<span className="text-[10px] opacity-70">Premium Story Platform with immersive swipe interface.</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://linespedia.com/" target="_blank" rel="noopener noreferrer" className="text-[12px] opacity-90 hover:opacity-100 transition-opacity flex flex-col gap-1 group">
-									<span className="font-bold flex items-center gap-1">Linespedia <ArrowUpRight className="h-3 w-3 opacity-50" /></span>
-									<span className="text-[10px] opacity-70">Find lines, word counts, and text formatting tools.</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					<div className="hidden xl:block">
-						<h4 className="text-[12px] font-semibold mb-4">Language</h4>
-						<LanguageSelector languages={languages} />
 					</div>
 				</div>
 
-				<div className="pt-8 border-t border-black/5 dark:border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-					<p className="text-[12px] opacity-80">
-						Copyright © 2026 SopKit Inc. All rights reserved.
+				<div className="pt-6 border-t border-border/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+					<p className="text-xs text-muted-foreground">
+						&copy; 2026 SopKit Inc. All rights reserved.
 					</p>
-					<div className="flex flex-col md:flex-row items-center gap-6">
-						<div className="flex gap-6 opacity-90">
-							<Link href={getRouteById("privacy")} className="text-[12px] hover:underline underline-offset-4">Privacy Policy</Link>
-							<Link href={getRouteById("terms")} className="text-[12px] hover:underline underline-offset-4">Terms of Use</Link>
-							<Link href="/dmca" className="text-[12px] hover:underline underline-offset-4">DMCA</Link>
-							<Link href={getRouteById("contact")} className="text-[12px] hover:underline underline-offset-4">Contact</Link>
-						</div>
+					<div className="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-end">
+						<LanguageSelector languages={languages} />
 					</div>
 				</div>
 			</div>
