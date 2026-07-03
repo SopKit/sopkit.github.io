@@ -1,0 +1,31 @@
+{
+  "name": "@sopkit/uuid",
+  "version": "1.0.0",
+  "description": "Premium, lightweight UUID v4 and v1 generator and validator for browser and Node.js.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "sopkit",
+    "uuid",
+    "guid",
+    "uuidv4",
+    "uuidv1",
+    "generator",
+    "validator"
+  ],
+  "author": "SopKit",
+  "license": "MIT",
+  "homepage": "https://sopkit.github.io/uuid-generator/"
+}
