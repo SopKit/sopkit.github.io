@@ -1,0 +1,32 @@
+{
+  "name": "@sopkit/json",
+  "version": "1.0.0",
+  "description": "Premium, lightweight JSON utility for browser and Node.js supporting formatting, minification, and strict syntax validation.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "sopkit",
+    "json",
+    "format",
+    "beautify",
+    "minify",
+    "validate",
+    "parse",
+    "lint"
+  ],
+  "author": "SopKit",
+  "license": "MIT",
+  "homepage": "https://sopkit.github.io/json-formatter/"
+}
