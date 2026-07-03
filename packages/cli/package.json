@@ -1,0 +1,46 @@
+{
+  "name": "@sopkit/cli",
+  "version": "1.0.0",
+  "description": "Interactive command-line interface for the SopKit utility ecosystem.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "sopkit": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "dependencies": {
+    "@sopkit/base64": "file:../base64",
+    "@sopkit/color": "file:../color",
+    "@sopkit/json": "file:../json",
+    "@sopkit/slug": "file:../slug",
+    "@sopkit/uuid": "file:../uuid",
+    "prompts": "^2.4.2"
+  },
+  "keywords": [
+    "sopkit",
+    "cli",
+    "interactive",
+    "base64",
+    "uuid",
+    "slug",
+    "json",
+    "color"
+  ],
+  "author": "SopKit",
+  "license": "MIT",
+  "homepage": "https://sopkit.github.io/",
+  "devDependencies": {
+    "@types/prompts": "^2.4.9"
+  }
+}
