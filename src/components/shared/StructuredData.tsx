@@ -60,18 +60,27 @@ export default function StructuredData({
 
 		const toolStructuredData: Record<string, any> = {
 			"@context": "https://schema.org",
-			"@type": "SoftwareApplication",
+			"@type": ["SoftwareApplication", "WebApplication"],
 			name: tool.name,
 			description: tool.description,
 			applicationCategory: toolCategoryName,
 			operatingSystem: "All",
+			browserRequirements: "Requires any modern web browser with JavaScript enabled.",
 			url: toolUrl,
 			isAccessibleForFree: true,
+			inLanguage: "en",
+			screenshot: `${BASE_URL}/og-image.jpg`,
 			dateModified: new Date().toISOString().split("T")[0],
 			offers: {
 				"@type": "Offer",
 				price: "0",
 				priceCurrency: "USD",
+			},
+			creator: {
+				"@type": "Organization",
+				name: "SopKit",
+				url: `${BASE_URL}/`,
+				logo: `${BASE_URL}/favicon.ico`,
 			},
 			provider: {
 				"@type": "Organization",
@@ -96,20 +105,32 @@ export default function StructuredData({
 			};
 		}
 
-		const faqData = tool.faqs
-			? {
-					"@context": "https://schema.org",
-					"@type": "FAQPage",
-					mainEntity: tool.faqs.map((faq) => ({
-						"@type": "Question",
-						name: faq.question,
-						acceptedAnswer: {
-							"@type": "Answer",
-							text: faq.answer,
-						},
-					})),
-				}
-			: null;
+		// Fallback to high-quality default FAQs if tool has no FAQs defined
+		const faqsToUse = tool.faqs && tool.faqs.length > 0
+			? tool.faqs
+			: [
+					{
+						question: `Is the ${tool.name} free to use?`,
+						answer: `Yes, the ${tool.name} on SopKit is 100% free to use. There are no daily usage limits, and no registration or account creation is required.`
+					},
+					{
+						question: `Does this ${tool.name} store or upload my files?`,
+						answer: `No. All operations and file processing for the ${tool.name} are completed locally inside your web browser using JavaScript or WebAssembly. Your files are never uploaded to our servers, ensuring total privacy and security.`
+					}
+			  ];
+
+		const faqData = {
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			mainEntity: faqsToUse.map((faq) => ({
+				"@type": "Question",
+				name: faq.question,
+				acceptedAnswer: {
+					"@type": "Answer",
+					text: faq.answer,
+				},
+			})),
+		};
 
 		const howToData = tool.howTo
 			? {
