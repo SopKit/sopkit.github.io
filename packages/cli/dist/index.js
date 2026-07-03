@@ -7,6 +7,8 @@ import * as uuid from "@sopkit/uuid";
 import * as slug from "@sopkit/slug";
 import * as json from "@sopkit/json";
 import * as color from "@sopkit/color";
+import * as validator from "@sopkit/validator";
+import * as password from "@sopkit/password";
 async function main() {
   console.log("\n\u{1F680} Welcome to SopKit CLI \u2014 Interactive Developer Utilities");
   console.log("Website: https://sopkit.github.io/\n");
@@ -20,6 +22,8 @@ async function main() {
       { title: "URL Slug (Generate URL-safe Slug)", value: "slug" },
       { title: "JSON (Beautify / Minify / Validate)", value: "json" },
       { title: "Color (HEX / RGB / HSL Conversion)", value: "color" },
+      { title: "Validator (Email / URL / IP / Credit Card)", value: "validator" },
+      { title: "Password (Generate / Strength Analyzer)", value: "password" },
       { title: "Exit", value: "exit" }
     ]
   });
@@ -42,6 +46,12 @@ async function main() {
       break;
     case "color":
       await runColor();
+      break;
+    case "validator":
+      await runValidator();
+      break;
+    case "password":
+      await runPassword();
       break;
   }
 }
@@ -227,6 +237,94 @@ async function runColor() {
     } catch (err) {
       console.error(`\u274C Error: ${err.message}`);
     }
+  }
+}
+async function runValidator() {
+  const type = await prompts({
+    type: "select",
+    name: "field",
+    message: "Select validation type:",
+    choices: [
+      { title: "Email Address", value: "email" },
+      { title: "URL Link", value: "url" },
+      { title: "Domain Name", value: "domain" },
+      { title: "IP Address (IPv4 / IPv6)", value: "ip" },
+      { title: "MAC Address", value: "mac" },
+      { title: "Credit Card (Luhn check)", value: "creditCard" }
+    ]
+  });
+  if (!type.field) return;
+  const input = await prompts({
+    type: "text",
+    name: "value",
+    message: `Enter value to validate:`
+  });
+  if (!input.value) return;
+  let isValid = false;
+  if (type.field === "email") isValid = validator.isEmail(input.value);
+  else if (type.field === "url") isValid = validator.isUrl(input.value);
+  else if (type.field === "domain") isValid = validator.isDomain(input.value);
+  else if (type.field === "ip") isValid = validator.isIp(input.value);
+  else if (type.field === "mac") isValid = validator.isMacAddress(input.value);
+  else if (type.field === "creditCard") isValid = validator.isCreditCard(input.value);
+  if (isValid) {
+    console.log("\n\u2705 Valid Format!\n");
+  } else {
+    console.log("\n\u274C Invalid Format!\n");
+  }
+}
+async function runPassword() {
+  const action = await prompts({
+    type: "select",
+    name: "type",
+    message: "Select action:",
+    choices: [
+      { title: "Generate Secure Password", value: "generate" },
+      { title: "Analyze Password Strength", value: "analyze" }
+    ]
+  });
+  if (!action.type) return;
+  if (action.type === "generate") {
+    const len = await prompts({
+      type: "number",
+      name: "length",
+      message: "Password length:",
+      initial: 16,
+      min: 6,
+      max: 64
+    });
+    try {
+      const pass = password.generate({
+        length: len.length || 16,
+        uppercase: true,
+        lowercase: true,
+        numbers: true,
+        symbols: true
+      });
+      console.log(`
+\u2728 Generated Password:
+${pass}
+`);
+    } catch (err) {
+      console.error(`\u274C Error: ${err.message}`);
+    }
+  } else if (action.type === "analyze") {
+    const input = await prompts({
+      type: "text",
+      name: "value",
+      message: "Enter password to analyze:"
+    });
+    if (!input.value) return;
+    const res = password.analyze(input.value);
+    console.log(`
+\u2728 Strength Analysis:`);
+    console.log(`   Score: ${res.score}/4 (${res.label.toUpperCase()})`);
+    console.log(`   Entropy: ${res.entropy} bits`);
+    if (res.suggestions.length > 0) {
+      console.log("   Suggestions:");
+      res.suggestions.forEach((s) => console.log(`   - ${s}`));
+    }
+    console.log();
   }
 }
 main().catch((err) => {

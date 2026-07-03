@@ -1,0 +1,32 @@
+{
+  "name": "@sopkit/validator",
+  "version": "1.0.0",
+  "description": "Premium, ultra-fast validation library for email, URLs, domains, IP addresses, credit cards, phone numbers, and MAC addresses.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "sopkit",
+    "validator",
+    "email-validation",
+    "url-validation",
+    "ip-validator",
+    "regex",
+    "credit-card",
+    "validation"
+  ],
+  "author": "SopKit",
+  "license": "MIT",
+  "homepage": "https://sopkit.github.io/seotoolkit/"
+}

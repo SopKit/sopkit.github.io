@@ -24,6 +24,21 @@
 
 </div>
 
+## 📦 SopKit NPM Ecosystem
+
+SopKit's core utility logic is available as individual, zero-dependency, strictly-typed packages under the `@sopkit` scope:
+
+- **[`@sopkit/cli`](https://www.npmjs.com/package/@sopkit/cli)**: `npx @sopkit/cli` - Interactive prompt-driven CLI dashboard.
+- **[`@sopkit/base64`](https://www.npmjs.com/package/@sopkit/base64)**: `npm i @sopkit/base64` - Unicode & URL-Safe Base64 encoder/decoder.
+- **[`@sopkit/uuid`](https://www.npmjs.com/package/@sopkit/uuid)**: `npm i @sopkit/uuid` - Cryptographically secure UUID v4 & v1 generator.
+- **[`@sopkit/slug`](https://www.npmjs.com/package/@sopkit/slug)**: `npm i @sopkit/slug` - Accent-normalized, multilingual URL slug generator.
+- **[`@sopkit/json`](https://www.npmjs.com/package/@sopkit/json)**: `npm i @sopkit/json` - JSON formatter, minifier, and syntax validator.
+- **[`@sopkit/color`](https://www.npmjs.com/package/@sopkit/color)**: `npm i @sopkit/color` - HEX, RGB, and HSL colorspace converter.
+- **[`@sopkit/validator`](https://www.npmjs.com/package/@sopkit/validator)**: `npm i @sopkit/validator` - Email, URL, IP, credit card, and MAC address validation.
+- **[`@sopkit/password`](https://www.npmjs.com/package/@sopkit/password)**: `npm i @sopkit/password` - Password generator and information entropy analyzer.
+
+*Learn more and check out complete APIs at the live [SopKit Packages Directory](https://sopkit.github.io/packages).*
+
 ## What is SopKit?
 
 SopKit is a **free online tools** platform with **400+ browser-based utilities** across **12+ categories**. Every tool is designed to work instantly without registration, software installation, or file uploads to external servers. We prioritize **privacy-first processing** — most tools run entirely in your browser.

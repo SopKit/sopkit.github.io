@@ -77,6 +77,11 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 									Official Blog
 								</Link>
 							</li>
+							<li>
+								<Link href="/packages" className="text-muted-foreground hover:text-foreground transition-colors">
+									NPM Packages
+								</Link>
+							</li>
 						</ul>
 					</div>
 

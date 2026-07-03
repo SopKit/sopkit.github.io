@@ -11,6 +11,8 @@ const packages = [
   "slug",
   "json",
   "color",
+  "validator",
+  "password",
   "cli"
 ];
 

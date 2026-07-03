@@ -25,6 +25,8 @@
     "@sopkit/json": "file:../json",
     "@sopkit/slug": "file:../slug",
     "@sopkit/uuid": "file:../uuid",
+    "@sopkit/validator": "file:../validator",
+    "@sopkit/password": "file:../password",
     "prompts": "^2.4.2"
   },
   "keywords": [

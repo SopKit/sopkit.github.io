@@ -3,6 +3,30 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
+
+export const metadata = {
+	title: "WEBP to JPG Converter Online Free | SopKit",
+	description: "Convert WEBP files to JPG format for compatibility with all devices and platforms. No signup, no uploads, 100% private browser-based tool.",
+	alternates: {
+		canonical: "https://sopkit.github.io/webp-to-jpg",
+	},
+	openGraph: {
+		title: "WEBP to JPG Converter Online Free - No Signup | SopKit",
+		description: "Convert WEBP files to JPG format for compatibility with all devices and platforms. No signup, no uploads, 100% private browser-based tool.",
+		url: "https://sopkit.github.io/webp-to-jpg",
+		siteName: "SopKit",
+		images: [{ url: "/og-image.jpg" }],
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "WEBP to JPG Converter Online Free - Fast & Secure",
+		description: "Convert WEBP files to JPG format for compatibility with all devices and platforms. No signup, no uploads, 100% private browser-based tool.",
+		images: ["/og-image.jpg"],
+	},
+	robots: { index: true, follow: true },
+};
+
 export default function ToolPage() {
 	const tool = getToolByRoute("/webp-to-jpg");
 
