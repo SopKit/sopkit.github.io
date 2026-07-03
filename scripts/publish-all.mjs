@@ -1,4 +1,5 @@
 import { execSync } from "node:child_process";
+import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -33,6 +34,32 @@ async function main() {
     const pkgPath = path.resolve(__dirname, "../packages", pkg);
     console.log(`\n--- Processing Package: @sopkit/${pkg} ---`);
 
+    const pkgJsonPath = path.resolve(pkgPath, "package.json");
+    let pkgJson;
+    try {
+      pkgJson = JSON.parse(fs.readFileSync(pkgJsonPath, "utf8"));
+    } catch (err) {
+      console.error(`❌ Failed to read package.json for @sopkit/${pkg}: ${err.message}`);
+      process.exit(1);
+    }
+
+    const version = pkgJson.version;
+    const name = pkgJson.name;
+
+    // Check registry
+    let isAlreadyPublished = false;
+    try {
+      execSync(`npm view ${name}@${version} version`, { stdio: "pipe" });
+      isAlreadyPublished = true;
+    } catch (err) {
+      // 404/not found indicates it is not published yet
+    }
+
+    if (isAlreadyPublished) {
+      console.log(`⚠️  ${name}@${version} is already published. Skipping...`);
+      continue;
+    }
+
     // Run build
     console.log(`📦 Building @sopkit/${pkg}...`);
     try {
@@ -54,7 +81,7 @@ async function main() {
     }
   }
 
-  console.log("\n🎉 All packages published successfully to the NPM registry!");
+  console.log("\n🎉 All new/updated packages published successfully to the NPM registry!");
 }
 
 main().catch((err) => {

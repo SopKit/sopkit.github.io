@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 		title: "SopKit NPM Ecosystem — Reusable Developer Packages",
 		description: "High-performance, zero-dependency, and strictly typed TypeScript utilities for browser and Node.js.",
 		url: "https://sopkit.github.io/packages",
-		images: [{ url: "/og-image.jpg" }],
+		images: [{ url: "/og-images/packages.png" }],
 	},
 };
 
@@ -240,6 +240,13 @@ export default function PackagesPage() {
 
 									{/* External Links */}
 									<div className="flex flex-wrap gap-2 pt-2 md:pt-0">
+										<Link
+											href={`/packages/${pkg.id}`}
+											className="inline-flex items-center gap-1.5 rounded-full border border-border px-3.5 py-1.5 text-xs font-bold text-muted-foreground hover:text-primary hover:border-primary/30 transition-all duration-200"
+										>
+											<BookOpen className="h-3.5 w-3.5" />
+											Full Docs
+										</Link>
 										<a
 											href={pkg.npmLink}
 											target="_blank"
@@ -315,6 +322,62 @@ export default function PackagesPage() {
 								</div>
 							</div>
 						))}
+					</div>
+				</section>
+
+				{/* Comparison Section */}
+				<section className="container mx-auto max-w-6xl px-4 py-12 border-t border-border/10">
+					<div className="text-center max-w-2xl mx-auto mb-10">
+						<h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
+							Why Choose @sopkit Over Alternatives?
+						</h2>
+						<p className="mt-2 text-sm text-muted-foreground">
+							A side-by-side comparison of SopKit packages against legacy industry standards.
+						</p>
+					</div>
+
+					<div className="overflow-x-auto rounded-3xl border border-border/40 bg-card/10 backdrop-blur-sm">
+						<table className="w-full text-left border-collapse">
+							<thead>
+								<tr className="border-b border-border/10 bg-muted/20 text-xs font-bold uppercase tracking-wider text-foreground">
+									<th className="p-4 md:p-6">Feature</th>
+									<th className="p-4 md:p-6 text-primary">@sopkit Ecosystem</th>
+									<th className="p-4 md:p-6 text-muted-foreground">Legacy Standard Packages</th>
+								</tr>
+							</thead>
+							<tbody className="divide-y divide-border/10 text-xs md:text-sm">
+								<tr>
+									<td className="p-4 md:p-6 font-semibold">Dependencies</td>
+									<td className="p-4 md:p-6 text-primary font-bold">0 (Zero Bloat)</td>
+									<td className="p-4 md:p-6 text-muted-foreground">Varies (Often nests 3rd-party modules)</td>
+								</tr>
+								<tr>
+									<td className="p-4 md:p-6 font-semibold">Bundle Size</td>
+									<td className="p-4 md:p-6 text-primary font-bold">Ultra-lightweight (&lt; 2KB average)</td>
+									<td className="p-4 md:p-6 text-muted-foreground">Heavy (Often includes legacy Polyfills)</td>
+								</tr>
+								<tr>
+									<td className="p-4 md:p-6 font-semibold">Build Formats</td>
+									<td className="p-4 md:p-6 text-primary font-bold">ESM &amp; CommonJS (Dual-format native)</td>
+									<td className="p-4 md:p-6 text-muted-foreground">Often ESM-only or CJS-only</td>
+								</tr>
+								<tr>
+									<td className="p-4 md:p-6 font-semibold">TypeScript Integration</td>
+									<td className="p-4 md:p-6 text-primary font-bold">100% Strict types (.d.ts inline)</td>
+									<td className="p-4 md:p-6 text-muted-foreground">Requires separate @types/ install</td>
+								</tr>
+								<tr>
+									<td className="p-4 md:p-6 font-semibold">Unicode / Multilingual</td>
+									<td className="p-4 md:p-6 text-primary font-bold">Full standard UTF-8 support built-in</td>
+									<td className="p-4 md:p-6 text-muted-foreground">Often breaks on emojis/special characters</td>
+								</tr>
+								<tr>
+									<td className="p-4 md:p-6 font-semibold">Central CLI Control</td>
+									<td className="p-4 md:p-6 text-primary font-bold">Available via npx @sopkit/cli</td>
+									<td className="p-4 md:p-6 text-muted-foreground">Separate tools, inconsistent interfaces</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</section>
 			</main>
