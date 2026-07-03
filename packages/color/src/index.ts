@@ -1,0 +1,133 @@
+/**
+ * SopKit Color Utilities
+ * Premium, zero-dependency color converter supporting HEX, RGB, RGBA, and HSL formats.
+ * Link: https://sopkit.github.io/color-converter/
+ */
+
+export interface RGB {
+  r: number;
+  g: number;
+  b: number;
+}
+
+export interface RGBA extends RGB {
+  a: number;
+}
+
+export interface HSL {
+  h: number;
+  s: number;
+  l: number;
+}
+
+/**
+ * Converts a HEX color string to RGB.
+ * Supports 3-digit and 6-digit HEX inputs (with or without # prefix).
+ */
+export function hexToRgb(hex: string): RGB {
+  let cleanHex = hex.trim().replace(/^#/, "");
+  if (cleanHex.length === 3) {
+    cleanHex = cleanHex.split("").map(char => char + char).join("");
+  }
+  if (cleanHex.length !== 6) {
+    throw new Error(`Invalid HEX color format: ${hex}`);
+  }
+  const num = parseInt(cleanHex, 16);
+  if (isNaN(num)) {
+    throw new Error(`Invalid HEX color characters: ${hex}`);
+  }
+  return {
+    r: (num >> 16) & 255,
+    g: (num >> 8) & 255,
+    b: num & 255
+  };
+}
+
+/**
+ * Converts RGB components to a 6-digit HEX string prefixed with #.
+ */
+export function rgbToHex(r: number, g: number, b: number): string {
+  const clamp = (val: number) => Math.max(0, Math.min(255, Math.round(val)));
+  const componentToHex = (c: number) => {
+    const hex = clamp(c).toString(16);
+    return hex.length === 1 ? "0" + hex : hex;
+  };
+  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+/**
+ * Converts RGB components to HSL.
+ */
+export function rgbToHsl(r: number, g: number, b: number): HSL {
+  const normR = r / 255;
+  const normG = g / 255;
+  const normB = b / 255;
+  
+  const max = Math.max(normR, normG, normB);
+  const min = Math.min(normR, normG, normB);
+  
+  let h = 0;
+  let s = 0;
+  const l = (max + min) / 2;
+
+  if (max !== min) {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case normR:
+        h = (normG - normB) / d + (normG < normB ? 6 : 0);
+        break;
+      case normG:
+        h = (normB - normR) / d + 2;
+        break;
+      case normB:
+        h = (normR - normG) / d + 4;
+        break;
+    }
+    h /= 6;
+  }
+
+  return {
+    h: Math.round(h * 360),
+    s: Math.round(s * 100),
+    l: Math.round(l * 100)
+  };
+}
+
+/**
+ * Converts HSL components to RGB.
+ */
+export function hslToRgb(h: number, s: number, l: number): RGB {
+  const normH = h / 360;
+  const normS = s / 100;
+  const normL = l / 100;
+
+  let r = normL;
+  let g = normL;
+  let b = normL;
+
+  if (normS !== 0) {
+    const hue2rgb = (p: number, q: number, t: number) => {
+      let tempT = t;
+      if (tempT < 0) tempT += 1;
+      if (tempT > 1) tempT -= 1;
+      if (tempT < 1 / 6) return p + (q - p) * 6 * tempT;
+      if (tempT < 1 / 2) return q;
+      if (tempT < 2 / 3) return p + (q - p) * (2 / 3 - tempT) * 6;
+      return p;
+    };
+
+    const q = normL < 0.5 ? normL * (1 + normS) : normL + normS - normL * normS;
+    const p = 2 * normL - q;
+    
+    r = hue2rgb(p, q, normH + 1 / 3);
+    g = hue2rgb(p, q, normH);
+    b = hue2rgb(p, q, normH - 1 / 3);
+  }
+
+  return {
+    r: Math.round(r * 255),
+    g: Math.round(g * 255),
+    b: Math.round(b * 255)
+  };
+}
