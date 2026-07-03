@@ -239,9 +239,12 @@ const TdeeCalculatorTool = dynamic(() => import("@/components/tools/calculators/
 const WorkingDaysCalculatorTool = dynamic(() => import("@/components/tools/calculators/WorkingDaysCalculatorTool"), { ssr: false });
 const CrontabGeneratorTool = dynamic(() => import("@/components/tools/developer/CrontabGeneratorTool"), { ssr: false });
 const HtmlEntityCodecTool = dynamic(() => import("@/components/tools/developer/HtmlEntityCodecTool"), { ssr: false });
+const HtmlMinifierTool = dynamic(() => import("@/components/tools/developer/HtmlMinifierTool"), { ssr: false });
 const JsonToTypeScriptTool = dynamic(() => import("@/components/tools/developer/JsonToTypeScriptTool"), { ssr: false });
 const RandomNameGeneratorTool = dynamic(() => import("@/components/tools/developer/RandomNameGeneratorTool"), { ssr: false });
 const XmlFormatterTool = dynamic(() => import("@/components/tools/developer/XmlFormatterTool"), { ssr: false });
+const UserAgentParserTool = dynamic(() => import("@/components/tools/developer/UserAgentParserTool"), { ssr: false });
+const IpAddressLookupTool = dynamic(() => import("@/components/tools/developer/IpAddressLookupTool"), { ssr: false });
 const FaviconGeneratorProTool = dynamic(() => import("@/components/tools/image/FaviconGeneratorProTool"), { ssr: false });
 const ImageMetadataRemoverTool = dynamic(() => import("@/components/tools/image/ImageMetadataRemoverTool"), { ssr: false });
 const ImageColorPicker = dynamic(() => import("@/components/tools/image/ImageColorPicker"), { ssr: false });
@@ -251,6 +254,8 @@ const MarkdownToPdfTool = dynamic(() => import("@/components/tools/text/Markdown
 const RandomWordGeneratorTool = dynamic(() => import("@/components/tools/text/RandomWordGeneratorTool"), { ssr: false });
 const RemoveDuplicatesTool = dynamic(() => import("@/components/tools/text/RemoveDuplicatesTool"), { ssr: false });
 const TextReverserTool = dynamic(() => import("@/components/tools/text/TextReverserTool"), { ssr: false });
+const UrlEncoderDecoderTool = dynamic(() => import("@/components/tools/text/UrlEncoderDecoderTool"), { ssr: false });
+const StringLengthCalculatorTool = dynamic(() => import("@/components/tools/text/StringLengthCalculatorTool"), { ssr: false });
 const JWTDecoderTool = dynamic(() => import("@/components/tools/developer/JWTDecoderTool"), { ssr: false });
 const CaseConverter = dynamic(() => import("@/components/tools/text/CaseConverter"), { ssr: false });
 
@@ -274,6 +279,9 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "xml-formatter": { component: XmlFormatterTool, props: {} },
     "jwt-decoder": { component: JWTDecoderTool, props: {} },
     "random-name-generator": { component: RandomNameGeneratorTool, props: {} },
+    "html-minifier": { component: HtmlMinifierTool, props: {} },
+    "user-agent-parser": { component: UserAgentParserTool, props: {} },
+    "ip-address-lookup": { component: IpAddressLookupTool, props: {} },
     // Math, Date & Calculators
     "roman-numerals-converter": { component: RomanNumeralTool, props: {} },
     "date-difference-calculator": { component: DateDifferenceCalculatorTool, props: {} },
@@ -288,6 +296,8 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "remove-duplicate-lines": { component: RemoveDuplicatesTool, props: {} },
     "markdown-to-html": { component: MarkdownToHtmlTool, props: {} },
     "markdown-to-pdf": { component: MarkdownToPdfTool, props: {} },
+    "url-encoder-decoder": { component: UrlEncoderDecoderTool, props: {} },
+    "string-length-calculator": { component: StringLengthCalculatorTool, props: {} },
     "case-converter": { component: CaseConverter, props: {} },
     "emoji-text-generator": { component: EmojiTextGeneratorTool, props: {} },
     "random-word-generator": { component: RandomWordGeneratorTool, props: {} },

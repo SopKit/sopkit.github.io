@@ -77,33 +77,42 @@ async function main() {
 		const batchNum = idx + 1;
 		console.log(`\n--- Sending Batch ${batchNum}/${batches.length} (${batch.length} URLs) ---`);
 
-		// 1. Submit to IndexNow
-		console.log("🚀 Submitting to IndexNow...");
-		try {
-			const indexNowPayload = {
-				host: HOST,
-				key: INDEXNOW_KEY,
-				keyLocation: `${BASE_URL}/${INDEXNOW_KEY}.txt`,
-				urlList: batch
-			};
+		// 1. Submit to IndexNow endpoints
+		const indexNowEndpoints = [
+			"https://api.indexnow.org/indexnow",
+			"https://yandex.com/indexnow",
+			"https://www.bing.com/indexnow"
+		];
 
-			const response = await fetch("https://api.indexnow.org/indexnow", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json; charset=utf-8"
-				},
-				body: JSON.stringify(indexNowPayload)
-			});
+		for (const endpoint of indexNowEndpoints) {
+			const engineName = new URL(endpoint).hostname;
+			console.log(`🚀 Submitting to IndexNow endpoint: ${engineName}...`);
+			try {
+				const indexNowPayload = {
+					host: HOST,
+					key: INDEXNOW_KEY,
+					keyLocation: `${BASE_URL}/${INDEXNOW_KEY}.txt`,
+					urlList: batch
+				};
 
-			if (response.ok) {
-				console.log(`✅ IndexNow Batch ${batchNum} submitted successfully! (Status: ${response.status})`);
-			} else {
-				const errorText = await response.text();
-				console.error(`❌ IndexNow Batch ${batchNum} failed: ${response.status} ${response.statusText}`);
-				console.error(`Details: ${errorText}`);
+				const response = await fetch(endpoint, {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json; charset=utf-8"
+					},
+					body: JSON.stringify(indexNowPayload)
+				});
+
+				if (response.ok) {
+					console.log(`✅ IndexNow (${engineName}) Batch ${batchNum} submitted successfully! (Status: ${response.status})`);
+				} else {
+					const errorText = await response.text();
+					console.error(`❌ IndexNow (${engineName}) Batch ${batchNum} failed: ${response.status} ${response.statusText}`);
+					console.error(`Details: ${errorText}`);
+				}
+			} catch (error) {
+				console.error(`❌ IndexNow (${engineName}) Batch ${batchNum} error:`, error.message);
 			}
-		} catch (error) {
-			console.error(`❌ IndexNow Batch ${batchNum} error:`, error.message);
 		}
 
 		// 2. Submit to Bing Webmaster Tools API directly

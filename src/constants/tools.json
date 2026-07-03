@@ -2965,6 +2965,22 @@
           "category": "text"
         },
         {
+          "id": "url-encoder-decoder",
+          "name": "URL Encoder Decoder",
+          "description": "Encode or decode your URLs and URL query parameters instantly. 100% private.",
+          "route": "/url-encoder-decoder",
+          "popular": true,
+          "category": "text"
+        },
+        {
+          "id": "string-length-calculator",
+          "name": "String Length Calculator",
+          "description": "Get detailed string analytics including character, word, byte, and line counts instantly.",
+          "route": "/string-length-calculator",
+          "popular": true,
+          "category": "text"
+        },
+        {
           "id": "case-converter",
           "name": "Case Converter (Sentence, Upper, Lower)",
           "description": "Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly.",
@@ -5029,6 +5045,30 @@
           "name": "SQL Formatter & Beautifier",
           "description": "Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more.",
           "route": "/sql-formatter",
+          "popular": true,
+          "category": "developer"
+        },
+        {
+          "id": "html-minifier",
+          "name": "HTML Minifier",
+          "description": "Compress and minify your HTML code instantly by removing comments and extra whitespace.",
+          "route": "/html-minifier",
+          "popular": true,
+          "category": "developer"
+        },
+        {
+          "id": "user-agent-parser",
+          "name": "User Agent Parser",
+          "description": "Parse any User Agent string to detect Browser, OS, and Engine details instantly.",
+          "route": "/user-agent-parser",
+          "popular": true,
+          "category": "developer"
+        },
+        {
+          "id": "ip-address-lookup",
+          "name": "IP Address Lookup",
+          "description": "Find your public IP address and get detailed local ISP, geolocation, and device metadata.",
+          "route": "/ip-address-lookup",
           "popular": true,
           "category": "developer"
         },

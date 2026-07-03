@@ -1,32 +1,32 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
+import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "HTML Minifier Online Free - Developer Tools | SopKit",
-	description: "Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free HTML Minifier Online - Compress HTML Code | SopKit",
+	description: "Compress and minify your HTML code instantly. Remove comments, redundant whitespace, and reduce page size to improve SEO and load speeds. Private & secure.",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-minifier/",
+		canonical: "https://sopkit.github.io/html-minifier",
 	},
 	openGraph: {
-		title: "HTML Minifier Online Free - No Signup",
-		description: "Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load",
+		title: "Free HTML Minifier Online - Compress HTML Code | SopKit",
+		description: "Compress and minify your HTML code instantly. Remove comments, redundant whitespace, and reduce page size to improve SEO and load speeds. Private & secure.",
 		url: "https://sopkit.github.io/html-minifier",
 		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
+		images: [{ url: "/og-images/developer-tools.png" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "HTML Minifier Online Free - Fast & Secure",
-		description: "Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load",
-		images: ["/og-image.jpg"],
+		title: "Free HTML Minifier Online - Compress HTML Code | SopKit",
+		description: "Compress and minify your HTML code instantly. Remove comments, redundant whitespace, and reduce page size to improve SEO and load speeds. Private & secure.",
+		images: ["/og-images/developer-tools.png"],
 	},
 	robots: { index: true, follow: true },
 };
 
-export default async function ToolPage() {
+export default function ToolPage() {
 	const tool = getToolByRoute("/html-minifier");
 
 	if (!tool) {
@@ -35,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<BuiltInMarkup toolId="html-minifier" />
+			<IntentToolDispatcher toolId={tool.id} />
 		</ToolLayout>
 	);
 }
