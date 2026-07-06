@@ -11,8 +11,8 @@ export const metadata = {
 	},
 	openGraph: {
 		title: "JPG Converter Online Free - No Signup",
-		description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-f",
-		url: "https://sopkit.github.io/jpg-converter",
+		description: "Convert photos and images to JPG format instantly. Free online JPG converter that keeps high quality while shrinking file size. Private, browser-based, no signup.",
+		url: "https://sopkit.github.io/jpg-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -20,7 +20,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "JPG Converter Online Free - Fast & Secure",
-		description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-f",
+		description: "Convert photos and images to JPG format instantly. Free online JPG converter that keeps high quality while shrinking file size. Private, browser-based, no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

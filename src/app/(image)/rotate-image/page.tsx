@@ -11,8 +11,8 @@ export const metadata = {
 	},
 	openGraph: {
 		title: "Rotate Image Online Free - No Signup",
-		description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure.",
-		url: "https://sopkit.github.io/rotate-image",
+		description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Free online image rotator that works in your browser — no uploads, no signup, 100% private.",
+		url: "https://sopkit.github.io/rotate-image/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -20,7 +20,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Rotate Image Online Free - Fast & Secure",
-		description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure.",
+		description: "Rotate images clockwise, counter-clockwise, or flip them instantly. Free online image rotator that works in your browser — no uploads, no signup, 100% private.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

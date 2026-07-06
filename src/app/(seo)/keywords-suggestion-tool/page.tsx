@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import KeywordTool from "@/components/tools/seo/KeywordTool";
 
 export const metadata = {
-	title: "Keywords Suggestion Tool Online Free - No Signup | SopKit",
-	description: "Free keywords suggestion tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Keywords Suggestion Tool - Free Keyword Ideas Generator | SopKit",
+	description: "Generate hundreds of long-tail keyword suggestions for SEO and content in seconds. Free keyword research tool that runs in your browser — no signup, no login, 100% private.",
+	keywords: "keyword suggestion tool, keyword research, long-tail keywords, seo keywords, free keyword generator, keyword ideas",
 	alternates: {
 		canonical: "https://sopkit.github.io/keywords-suggestion-tool/",
 	},
 	openGraph: {
-		title: "Keywords Suggestion Tool Online Free - No Signup",
-		description: "Free keywords suggestion tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
-		url: "https://sopkit.github.io/keywords-suggestion-tool",
+		title: "Keywords Suggestion Tool - Free Keyword Ideas Generator",
+		description: "Generate hundreds of long-tail keyword suggestions for SEO and content in seconds. Free, browser-based, and private — no signup required.",
+		url: "https://sopkit.github.io/keywords-suggestion-tool/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Keywords Suggestion Tool Online Free - Fast & Secure",
-		description: "Free keywords suggestion tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
+		title: "Keywords Suggestion Tool - Free Keyword Ideas Generator",
+		description: "Generate hundreds of long-tail keyword suggestions for SEO and content in seconds. Free, browser-based, and private — no signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

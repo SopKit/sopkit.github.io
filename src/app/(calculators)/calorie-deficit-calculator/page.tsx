@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Calorie Deficit Calculator - Free Online Tool | SopKit",
-	description: "Calculate your calorie deficit calculator instantly. Free browser-based calculator with detailed breakdowns.",
-	keywords: "calorie deficit calculator, calorie-deficit-calculator, free online, no signup, SopKit, browser utility",
+	title: "Calorie Deficit Calculator - Daily Calories for Weight Loss | SopKit",
+	description: "Find the daily calorie deficit you need to lose weight. Free calculator estimates your maintenance calories (TDEE) and target intake for safe, steady fat loss. No signup, works in your browser.",
+	keywords: "calorie deficit calculator, weight loss calculator, tdee calculator, daily calorie intake, fat loss calculator, maintenance calories",
 	alternates: {
 		canonical: "https://sopkit.github.io/calorie-deficit-calculator/",
 	},
 	openGraph: {
-		title: "Calorie Deficit Calculator - Free Online Tool | SopKit",
-		description: "Calculate your calorie deficit calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/calorie-deficit-calculator",
+		title: "Calorie Deficit Calculator - Daily Calories for Weight Loss",
+		description: "Find the daily calorie deficit you need to lose weight. Estimate your TDEE and target intake for safe, steady fat loss. Free, no signup.",
+		url: "https://sopkit.github.io/calorie-deficit-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Calorie Deficit Calculator - Free Online Tool | SopKit",
-		description: "Calculate your calorie deficit calculator instantly. Free browser-based calculator with detailed breakdowns.",
+		title: "Calorie Deficit Calculator - Daily Calories for Weight Loss",
+		description: "Find the daily calorie deficit you need to lose weight. Estimate your TDEE and target intake for safe, steady fat loss. Free, no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -44,7 +44,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/calorie-deficit-calculator",
+						url: "https://sopkit.github.io/calorie-deficit-calculator/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {
