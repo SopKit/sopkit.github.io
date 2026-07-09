@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "SopKit NPM Ecosystem — Reusable Developer Packages",
 		description: "High-performance, zero-dependency, and strictly typed TypeScript utilities for browser and Node.js.",
-		url: "https://sopkit.github.io/packages",
+		url: "https://sopkit.github.io/packages/",
 		images: [{ url: "/og-images/packages.png" }],
 	},
 };
@@ -186,8 +186,31 @@ console.log(strength.label); // "strong" or "very-strong"`
 ];
 
 export default function PackagesPage() {
+	const packagesSchema = {
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "SopKit NPM Ecosystem — Reusable Developer Packages",
+		"description": "Access SopKit's core utility libraries. Zero-dependency, strictly typed TypeScript packages for Base64, UUID, URL Slug, JSON, Color space, and validation.",
+		"url": "https://sopkit.github.io/packages/",
+		"mainEntity": {
+			"@type": "ItemList",
+			"itemListElement": PACKAGES_DATA.map((pkg, i) => ({
+				"@type": "ListItem",
+				"position": i + 1,
+				"name": pkg.name,
+				"url": `https://sopkit.github.io/packages/${pkg.id}/`
+			}))
+		}
+	};
+
 	return (
 		<div className="min-h-screen bg-background text-foreground flex flex-col antialiased">
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify(packagesSchema),
+				}}
+			/>
 			<main className="flex-grow">
 				{/* Top Hero Header */}
 				<section className="relative overflow-hidden bg-gradient-to-b from-primary/[0.03] via-transparent to-transparent py-12 md:py-20 border-b border-border/10">

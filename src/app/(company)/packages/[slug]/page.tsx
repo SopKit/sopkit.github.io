@@ -263,7 +263,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 		openGraph: {
 			title: `${pkg.name} — Reusable TypeScript Utility`,
 			description: pkg.description,
-			url: `https://sopkit.github.io/packages/${slug}`,
+			url: `https://sopkit.github.io/packages/${slug}/`,
 			images: [{ url: "/og-images/packages.png" }],
 		},
 	};
@@ -277,8 +277,29 @@ export default async function PackageDetailPage({ params }: PageProps) {
 		notFound();
 	}
 
+	const packageSchema = {
+		"@context": "https://schema.org",
+		"@type": "SoftwareApplication",
+		"name": pkg.name,
+		"description": pkg.description,
+		"applicationCategory": "DeveloperApplication",
+		"operatingSystem": "All",
+		"releaseNotes": `v${pkg.version}`,
+		"offers": {
+			"@type": "Offer",
+			"price": "0",
+			"priceCurrency": "USD"
+		}
+	};
+
 	return (
 		<div className="min-h-screen bg-background text-foreground flex flex-col antialiased">
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify(packageSchema),
+				}}
+			/>
 			<main className="flex-grow">
 				{/* Top Header */}
 				<section className="relative overflow-hidden bg-gradient-to-b from-primary/[0.03] via-transparent to-transparent py-12 md:py-16 border-b border-border/10">

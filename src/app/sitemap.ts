@@ -130,9 +130,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
 				if (seen.has(page.url)) return false;
 				seen.add(page.url);
 				return true;
+			})
+			.map((page) => {
+				let url = page.url;
+				if (!url.endsWith("/")) {
+					url += "/";
+				}
+				return {
+					...page,
+					url
+				};
 			});
 	} catch (error) {
 		console.error("Sitemap generation error:", error);
-		return [...staticPages];
+		return staticPages.map((page) => {
+			let url = page.url;
+			if (!url.endsWith("/")) {
+				url += "/";
+			}
+			return {
+				...page,
+				url
+			};
+		});
 	}
 }
