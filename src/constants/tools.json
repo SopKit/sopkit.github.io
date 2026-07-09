@@ -1671,6 +1671,54 @@
           "category": "image"
         },
         {
+          "id": "circular-image-crop",
+          "name": "Circular Image Crop",
+          "description": "Crop images into perfect circular shapes online. Ideal for profile pictures and social media avatars.",
+          "route": "/circular-image-crop",
+          "popular": true,
+          "category": "image",
+          "seoDescription": "Crop images to circular shapes online for free. Create perfect round profile pictures for Twitter, LinkedIn, Discord, and Instagram. Processing is 100% private.",
+          "extraSlugs": [
+            "crop-image-circular",
+            "round-image-cropper",
+            "profile-picture-circle-crop",
+            "make-photo-circular",
+            "crop-image-to-circle"
+          ]
+        },
+        {
+          "id": "image-watermark",
+          "name": "Image Watermark Adder",
+          "description": "Add text or image logo watermarks to your pictures. Customize opacity, size, positioning, and rotation to protect your images online.",
+          "route": "/image-watermark",
+          "popular": true,
+          "category": "image",
+          "seoDescription": "Add watermarks to your images online. Protect photos with text or custom image logos. Adjust opacity, scale, rotation, and alignment locally in your browser.",
+          "extraSlugs": [
+            "add-watermark-to-photo",
+            "photo-watermark-adder",
+            "free-watermark-online",
+            "protect-images-online",
+            "watermark-creator-free"
+          ]
+        },
+        {
+          "id": "gif-generator",
+          "name": "GIF Generator",
+          "description": "Compile multiple images into an animated GIF client-side. Control delay/interval and image dimensions easily.",
+          "route": "/gif-generator",
+          "popular": true,
+          "category": "image",
+          "seoDescription": "Create animated GIFs from multiple PNG, JPG, or WebP images online for free. Adjust delay between frames, dimensions, and compile entirely client-side.",
+          "extraSlugs": [
+            "make-gif-from-images",
+            "online-gif-maker",
+            "free-animated-gif-generator",
+            "convert-images-to-gif",
+            "gif-generator-tool"
+          ]
+        },
+        {
           "id": "image-enlarger",
           "name": "Image Enlarger",
           "description": "Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows.",
@@ -1721,10 +1769,10 @@
           "category": "image"
         },
         {
-          "id": "image-to-base64-converter",
+          "id": "image-to-base64",
           "name": "Image to Base64 Converter",
           "description": "Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows.",
-          "route": "/image-to-base64-converter",
+          "route": "/image-to-base64",
           "extraSlugs": [
             "free-image-to-base64-converter-online",
             "image-to-base64-converter-tool",
@@ -3879,6 +3927,125 @@
           "route": "/merge-pdf-online",
           "popular": true,
           "category": "pdf"
+        },
+        {
+          "id": "html-to-pdf",
+          "name": "HTML to PDF Converter",
+          "description": "Convert HTML code or files to print-ready PDF documents client-side instantly.",
+          "route": "/html-to-pdf",
+          "popular": true,
+          "category": "pdf",
+          "seoDescription": "Convert HTML snippets or code files directly into printable PDF documents in your browser. Fully local and private processing, free of charge.",
+          "extraSlugs": [
+            "convert-html-to-pdf",
+            "html-to-pdf-converter",
+            "save-html-as-pdf",
+            "free-html-to-pdf-online"
+          ]
+        },
+        {
+          "id": "pdf-compressor",
+          "name": "PDF Compressor",
+          "description": "Compress PDF documents to reduce file size while maintaining original print quality.",
+          "route": "/pdf-compressor",
+          "popular": true,
+          "category": "pdf",
+          "seoDescription": "Compress and reduce the file size of your PDF documents instantly. Fast, browser-based local compression keeping your print quality intact.",
+          "extraSlugs": [
+            "reduce-pdf-size",
+            "compress-pdf-online",
+            "free-pdf-size-reducer",
+            "minify-pdf-document"
+          ]
+        },
+        {
+          "id": "pdf-page-numbers",
+          "name": "PDF Page Numbers Adder",
+          "description": "Add page numbers to your PDF documents easily. Customize positioning, font size, and start index.",
+          "route": "/pdf-page-numbers",
+          "popular": true,
+          "category": "pdf",
+          "seoDescription": "Add custom page numbers to your PDF headers or footers. Select from multiple layout alignments, start indexes, and font sizes securely.",
+          "extraSlugs": [
+            "add-page-numbers-to-pdf",
+            "pdf-pagination-tool",
+            "insert-pdf-page-numbers",
+            "paginate-pdf-online"
+          ]
+        },
+        {
+          "id": "pdf-watermark",
+          "name": "PDF Watermark Creator",
+          "description": "Add text or image logos as watermarks to all pages of your PDF document securely in your browser.",
+          "route": "/pdf-watermark",
+          "popular": true,
+          "category": "pdf",
+          "seoDescription": "Add text or image watermark logos to all pages of your PDF document in your browser. Customize alignment, opacity, rotation, and positioning.",
+          "extraSlugs": [
+            "watermark-pdf-online",
+            "add-logo-to-pdf",
+            "pdf-watermark-inserter",
+            "free-pdf-watermarker"
+          ]
+        },
+        {
+          "id": "pdf-metadata-editor",
+          "name": "PDF Metadata Editor",
+          "description": "Edit PDF document metadata including Title, Author, Subject, and Keywords online for free.",
+          "route": "/pdf-metadata-editor",
+          "popular": true,
+          "category": "pdf",
+          "seoDescription": "Edit PDF document properties and metadata fields like Title, Author, Subject, and Keywords. Client-side browser execution keeps your files private.",
+          "extraSlugs": [
+            "edit-pdf-properties",
+            "change-pdf-title-author",
+            "pdf-tag-editor-online"
+          ]
+        },
+        {
+          "id": "pdf-merger",
+          "name": "PDF Merger",
+          "description": "Combine multiple PDF documents into a single file quickly. Reorder files and merge instantly.",
+          "route": "/pdf-merger",
+          "popular": true,
+          "category": "pdf",
+          "seoDescription": "Combine multiple PDF files into a single document online. Drag to reorder pages and merge files securely in your browser.",
+          "extraSlugs": [
+            "combine-pdf-files",
+            "merge-multiple-pdfs",
+            "free-pdf-merger-online",
+            "pdf-joiner-tool"
+          ]
+        },
+        {
+          "id": "pdf-splitter",
+          "name": "PDF Splitter",
+          "description": "Split PDF documents by page ranges or extract individual pages into separate PDF files.",
+          "route": "/pdf-splitter",
+          "popular": true,
+          "category": "pdf",
+          "seoDescription": "Split PDF documents by custom page ranges or extract single pages into new PDF files instantly. 100% private client-side utility.",
+          "extraSlugs": [
+            "extract-pdf-pages",
+            "split-pdf-online",
+            "cut-pdf-pages",
+            "pdf-page-extractor-free"
+          ]
+        },
+        {
+          "id": "pdf-rotation",
+          "name": "PDF Rotation Tool",
+          "description": "Rotate single or all pages of a PDF document to landscape or portrait orientation instantly.",
+          "route": "/pdf-rotation",
+          "popular": true,
+          "category": "pdf",
+          "seoDescription": "Rotate single pages or all pages of a PDF document to landscape or portrait orientation instantly. Safe, free, and local browser execution.",
+          "extraSlugs": [
+            "rotate-pdf-pages",
+            "change-pdf-orientation",
+            "fix-pdf-page-angle",
+            "rotate-pdf-online-free"
+          ]
         },
         {
           "id": "image-to-pdf",
@@ -9185,6 +9352,21 @@
             "free-online-ascii-art-generator",
             "ascii-art-generator-secure-online",
             "ascii-art-generator-fast-processing"
+          ]
+        },
+        {
+          "id": "secure-password-generator",
+          "name": "Secure Password Generator",
+          "description": "Create cryptographically secure, random passwords online. Customize length, character sets, and verify strength locally.",
+          "route": "/secure-password-generator",
+          "popular": true,
+          "category": "utilities",
+          "seoDescription": "Create strong, cryptographically secure passwords locally in your browser. Fully customizable length, character sets (uppercase, lowercase, numbers, symbols), and strength checking.",
+          "extraSlugs": [
+            "generate-secure-password",
+            "strong-password-maker",
+            "random-password-generator-secure",
+            "wifi-password-generator-free"
           ]
         },
         {

@@ -214,6 +214,16 @@ const JobMessageGenerator = dynamic(() => import("@/components/tools/impl/JobMes
 const PDFMerger = dynamic(() => import("@/components/tools/pdf/PDFMerger"), { ssr: false });
 const PDFPageDelete = dynamic(() => import("@/components/tools/pdf/PDFPageDelete"), { ssr: false });
 const PDFCompressor = dynamic(() => import("@/components/tools/pdf/PDFCompressor"), { ssr: false });
+const HTMLToPDF = dynamic(() => import("@/components/tools/pdf/HTMLToPDF"), { ssr: false });
+const PDFPageNumbers = dynamic(() => import("@/components/tools/pdf/PDFPageNumbers"), { ssr: false });
+const PDFWatermark = dynamic(() => import("@/components/tools/pdf/PDFWatermark"), { ssr: false });
+const PDFMetadataEditor = dynamic(() => import("@/components/tools/pdf/PDFMetadataEditor"), { ssr: false });
+const PDFSplitter = dynamic(() => import("@/components/tools/pdf/PDFSplitter"), { ssr: false });
+const PDFRotation = dynamic(() => import("@/components/tools/pdf/PDFRotation"), { ssr: false });
+
+const CircularImageCropTool = dynamic(() => import("@/components/tools/image/CircularImageCropTool"), { ssr: false });
+const ImageWatermarkTool = dynamic(() => import("@/components/tools/image/ImageWatermarkTool"), { ssr: false });
+const GifGeneratorTool = dynamic(() => import("@/components/tools/image/GifGeneratorTool"), { ssr: false });
 
 const FinanceCalculators = dynamic(() => import("@/components/tools/impl/FinanceCalculators"), { ssr: false });
 const SimpleInvoiceGenerator = dynamic(() => import("@/components/tools/generators/InvoiceGenerator"), { ssr: false });
@@ -317,6 +327,19 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "favicon-generator-pro": { component: FaviconGeneratorProTool, props: {} },
     "image-metadata-remover": { component: ImageMetadataRemoverTool, props: {} },
     "image-color-picker-pro": { component: ImageColorPicker, props: {} },
+    "image-to-base64": { component: ImageToBase64Tool, props: {} },
+    "circular-image-crop": { component: CircularImageCropTool, props: {} },
+    "image-watermark": { component: ImageWatermarkTool, props: {} },
+    "gif-generator": { component: GifGeneratorTool, props: {} },
+    "html-to-pdf": { component: HTMLToPDF, props: {} },
+    "pdf-compressor": { component: PDFCompressor, props: {} },
+    "pdf-page-numbers": { component: PDFPageNumbers, props: {} },
+    "pdf-watermark": { component: PDFWatermark, props: {} },
+    "pdf-metadata-editor": { component: PDFMetadataEditor, props: {} },
+    "pdf-merger": { component: PDFMerger, props: {} },
+    "pdf-splitter": { component: PDFSplitter, props: {} },
+    "pdf-rotation": { component: PDFRotation, props: {} },
+    "secure-password-generator": { component: PasswordGeneratorTool, props: {} },
     "emi-calculator": { component: BuiltInCalculators, props: { kind: "loan-calculator" } },
     "sip-calculator": { component: FinanceCalculators, props: { defaultTab: "sip" } },
     "fd-calculator-india": { component: FinanceCalculators, props: { defaultTab: "fd" } },

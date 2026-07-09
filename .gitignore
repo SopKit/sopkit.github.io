@@ -9,6 +9,10 @@ node_modules
 # testing
 /coverage
 fix/
+
+# python bytecode
+__pycache__/
+*.pyc
 # next.js
 /.next/
 /out/
@@ -60,3 +64,5 @@ tool_analysis*.txt
 analyze_tools.*
 seo-audit-report.json
 /seo-implementation/reports/seo-audit-report.json
+pre-flight-report.json
+package-lock.json
