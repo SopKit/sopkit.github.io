@@ -108,11 +108,11 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 									GitHub Repository <ArrowUpRight className="h-3 w-3 opacity-60" />
 								</a>
 							</li>
-							<li>
+							{/* <li>
 								<a href="https://wify.my/" target="_blank" rel="noopener noreferrer nofollow" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
 									Wify.my <ArrowUpRight className="h-3 w-3 opacity-60" />
 								</a>
-							</li>
+							</li> */}
 							<li>
 								<a href="https://linespedia.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
 									Linespedia <ArrowUpRight className="h-3 w-3 opacity-60" />
