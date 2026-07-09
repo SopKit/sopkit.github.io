@@ -27,7 +27,7 @@ export default function EmbedVideoPlayer() {
 
 			setVideoConfig(decodedData);
 			setLoading(false);
-		} catch (_err) {
+		} catch (err) {
 			console.error("Error parsing video data:", err);
 			setError("Invalid video data format");
 			setLoading(false);

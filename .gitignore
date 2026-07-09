@@ -67,3 +67,4 @@ seo-audit-report.json
 pre-flight-report.json
 package-lock.json
 scripts/set-secrets.sh
+scripts/create-issues.sh
