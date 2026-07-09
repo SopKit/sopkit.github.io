@@ -37,9 +37,9 @@ export function AuthButton() {
 	const stackProjectId = process.env.NEXT_PUBLIC_STACK_PROJECT_ID;
 	const stackPublishableKey = process.env.NEXT_PUBLIC_STACK_PUBLISHABLE_CLIENT_KEY;
 
-	// If Stack is not configured, show a plain login link.
+	// If Stack is not configured, hide the login button.
 	if (!stackProjectId || !stackPublishableKey) {
-		return <LoginLink />;
+		return null;
 	}
 
 	// useUser throws if no StackProvider is above it (e.g. when the provider

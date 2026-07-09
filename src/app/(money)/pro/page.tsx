@@ -27,7 +27,7 @@ export default function ProPage() {
 				</p>
 				<div className="flex flex-wrap gap-3">
 					<Button asChild><Link href="/contact">Join Waitlist</Link></Button>
-					<Button asChild variant="outline"><Link href="/api">Explore API</Link></Button>
+					<Button asChild variant="outline"><Link href="/packages/">Explore API</Link></Button>
 				</div>
 			</section>
 

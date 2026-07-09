@@ -40,13 +40,25 @@ async function main() {
 		}
 	}
 
-	if (!sitemapPath) {
-		console.error("❌ Error: Sitemap file not found. Please run 'npm run build' first to generate 'out/sitemap.xml'.");
-		process.exit(1);
+	let sitemapContent = "";
+	if (sitemapPath) {
+		console.log(`📖 Reading sitemap from local file: ${sitemapPath}`);
+		sitemapContent = fs.readFileSync(sitemapPath, "utf8");
+	} else {
+		const remoteSitemapUrl = `${BASE_URL}/sitemap.xml`;
+		console.log(`🌐 Local sitemap not found. Fetching sitemap from production URL: ${remoteSitemapUrl}`);
+		try {
+			const response = await fetch(remoteSitemapUrl);
+			if (!response.ok) {
+				throw new Error(`Failed to fetch remote sitemap: ${response.status} ${response.statusText}`);
+			}
+			sitemapContent = await response.text();
+			console.log(`✅ Successfully fetched remote sitemap! (${sitemapContent.length} bytes)`);
+		} catch (err) {
+			console.error(`❌ Error fetching sitemap: ${err.message}`);
+			process.exit(1);
+		}
 	}
-
-	console.log(`📖 Reading sitemap from: ${sitemapPath}`);
-	const sitemapContent = fs.readFileSync(sitemapPath, "utf8");
 
 	// Regex to extract all URLs from <loc> tags in sitemap.xml
 	const locRegex = /<loc>(https?:\/\/[^<]+)<\/loc>/g;
