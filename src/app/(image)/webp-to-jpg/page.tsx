@@ -8,7 +8,7 @@ export const metadata = {
 	title: "WEBP to JPG Converter Online Free | SopKit",
 	description: "Convert WEBP files to JPG format for compatibility with all devices and platforms. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/webp-to-jpg",
+		canonical: "https://sopkit.github.io/webp-to-jpg/",
 	},
 	openGraph: {
 		title: "WEBP to JPG Converter Online Free - No Signup | SopKit",

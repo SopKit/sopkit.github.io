@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Date Difference Calculator Online Free | SopKit",
 	description: "Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/date-difference-calculator",
+		canonical: "https://sopkit.github.io/date-difference-calculator/",
 	},
 	openGraph: {
 		title: "Date Difference Calculator Online Free - No Signup | SopKit",

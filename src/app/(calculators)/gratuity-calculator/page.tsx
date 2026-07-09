@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Gratuity Calculator (India) Online Free | SopKit",
 	description: "Estimate your gratuity amount based on your last drawn salary and years of service in India. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/gratuity-calculator",
+		canonical: "https://sopkit.github.io/gratuity-calculator/",
 	},
 	openGraph: {
 		title: "Gratuity Calculator (India) Online Free - No Signup | SopKit",

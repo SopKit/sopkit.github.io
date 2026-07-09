@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Emoji Text Generator Online Free | SopKit",
 	description: "Add fun emojis to your text or convert words into emoji-rich messages for social media. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/emoji-text-generator",
+		canonical: "https://sopkit.github.io/emoji-text-generator/",
 	},
 	openGraph: {
 		title: "Emoji Text Generator Online Free - No Signup | SopKit",

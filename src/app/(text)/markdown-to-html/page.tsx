@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Markdown to HTML Converter Online Free | SopKit",
 	description: "Convert Markdown text into clean HTML code for your website, blog, or email newsletters. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/markdown-to-html",
+		canonical: "https://sopkit.github.io/markdown-to-html/",
 	},
 	openGraph: {
 		title: "Markdown to HTML Converter Online Free - No Signup | SopKit",

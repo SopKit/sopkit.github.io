@@ -5,17 +5,10 @@ export default function EmbedLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	// Minimal layout with no navigation or footer to make iframe-friendly pages
+	// Minimal layout wrapper without duplicate html/body tags
 	return (
-		<html>
-			<head>
-				<meta name="viewport" content="width=device-width,initial-scale=1" />
-			</head>
-			<body className="bg-black text-white">
-				<div className="min-h-screen flex items-center justify-center">
-					{children}
-				</div>
-			</body>
-		</html>
+		<div className="w-full min-h-screen bg-black text-white flex items-center justify-center p-0 m-0">
+			{children}
+		</div>
 	);
 }

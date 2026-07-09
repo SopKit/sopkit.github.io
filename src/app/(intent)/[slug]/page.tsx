@@ -1,6 +1,6 @@
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { getIntentBySlug, intentData } from "@/lib/intent-data";
-import { getAllTools, getToolById, type Tool } from "@/lib/tools";
+import { getAllTools, getToolById, getToolByExtraSlug, type Tool } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import SeoOpportunityTool from "@/components/seo/SeoOpportunityTool";
@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const opportunity = getSeoOpportunityBySlug(slug);
 
     if (opportunity?.standalone) {
-        const canonicalUrl = `https://sopkit.github.io${opportunity.route}`;
+        const canonicalUrl = `https://sopkit.github.io${opportunity.route}/`;
 
         return {
             title: opportunity.title,
@@ -103,7 +103,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const parentTool = getToolById(intent.parentToolId);
     if (!parentTool) return {};
 
-    const canonicalUrl = `https://sopkit.github.io/${slug}`;
+    const canonicalUrl = `https://sopkit.github.io/${slug}/`;
     const brandedTitle = `${intent.title} | SopKit`;
 
     return {
@@ -152,7 +152,13 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
 
     const intent = getIntentBySlug(slug);
 
+    // Long-tail extraSlugs (e.g. "ai-art-generator-online") have no dedicated
+    // page but should 301-consolidate to their parent tool instead of 404ing.
     if (!intent) {
+        const extraTool = getToolByExtraSlug(slug);
+        if (extraTool) {
+            permanentRedirect(`${extraTool.route}/`);
+        }
         notFound();
     }
 

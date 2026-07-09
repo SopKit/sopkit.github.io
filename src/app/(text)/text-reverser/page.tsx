@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Text Reverser Online Free | SopKit",
 	description: "Flip your text backwards or reverse the order of words instantly for creative projects and coding. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-reverser",
+		canonical: "https://sopkit.github.io/text-reverser/",
 	},
 	openGraph: {
 		title: "Text Reverser Online Free - No Signup | SopKit",

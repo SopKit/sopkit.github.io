@@ -8,7 +8,7 @@ export const metadata = {
 	title: "JSON to TypeScript Interface Online Free | SopKit",
 	description: "Convert JSON objects into clean TypeScript interfaces or type definitions automatically. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-to-typescript",
+		canonical: "https://sopkit.github.io/json-to-typescript/",
 	},
 	openGraph: {
 		title: "JSON to TypeScript Interface Online Free - No Signup | SopKit",

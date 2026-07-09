@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Body Fat Percentage Calculator Online Free | SopKit",
 	description: "Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/body-fat-calculator",
+		canonical: "https://sopkit.github.io/body-fat-calculator/",
 	},
 	openGraph: {
 		title: "Body Fat Percentage Calculator Online Free - No Signup | SopKit",

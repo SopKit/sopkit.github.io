@@ -8,7 +8,7 @@ export const metadata = {
 	title: "EPF Calculator (Employee Provident Fund) Free | SopKit",
 	description: "Calculate your EPF maturity amount based on your basic salary, monthly contribution, and current interest rate. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/epf-calculator",
+		canonical: "https://sopkit.github.io/epf-calculator/",
 	},
 	openGraph: {
 		title: "EPF Calculator (Employee Provident Fund) Online Free - No Signup | SopKit",

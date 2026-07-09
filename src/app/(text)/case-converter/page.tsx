@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Case Converter (Sentence, Upper, Lower) Online Free | SopKit",
 	description: "Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/case-converter",
+		canonical: "https://sopkit.github.io/case-converter/",
 	},
 	openGraph: {
 		title: "Case Converter (Sentence, Upper, Lower) Online Free - No Signup | SopKit",

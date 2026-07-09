@@ -1,18 +1,31 @@
 #!/usr/bin/env node
 /**
- * SEO Audit Script for SopKit
- * Fetches live pages and checks for SEO requirements
+ * SopKit SEO Audit — production crawler
+ *
+ * Fetches live pages from the deployed site and checks SEO requirements:
+ *   - robots.txt + sitemap.xml are reachable and reference each other
+ *   - every sitemap <loc> returns 200, has a self-referential canonical,
+ *     a single H1, title + meta description, enough body text, and parseable JSON-LD
+ *   - /search is noindex
+ *
+ * Usage:
+ *   node scripts/seo-audit-local.mjs
+ *   node scripts/seo-audit-local.mjs --all
+ *   node scripts/seo-audit-local.mjs --limit=50 --json
+ *   BASE_URL=https://sopkit.github.io node scripts/seo-audit-local.mjs
  */
 
-import { readFileSync, writeFileSync } from "fs";
+import { writeFileSync } from "fs";
 import { join } from "path";
 
-// Configuration
-const BASE_URL = process.env.BASE_URL || "http://localhost:3000";
+const BASE_URL = process.env.BASE_URL || "https://sopkit.github.io";
 const verbose = process.argv.includes("--verbose");
 const jsonOutput = process.argv.includes("--json");
+const all = process.argv.includes("--all");
+const limitArg = process.argv.find((a) => a.startsWith("--limit="));
+const limit = limitArg ? Number.parseInt(limitArg.split("=")[1], 10) : 60;
+const concurrency = 8;
 
-// ANSI colors
 const colors = {
 	red: "\x1b[31m",
 	green: "\x1b[32m",
@@ -25,347 +38,201 @@ let totalChecks = 0;
 let passedChecks = 0;
 let failedChecks = 0;
 let warnings = 0;
-
 const results = [];
 
 function log(msg, color = colors.reset) {
 	console.log(`${color}${msg}${colors.reset}`);
 }
-
-function info(msg) {
-	if (verbose) log(`  ℹ  ${msg}`, colors.blue);
-}
-
 function pass(msg) {
 	passedChecks++;
 	if (verbose) log(`  ✓  ${msg}`, colors.green);
 }
-
 function fail(msg, url = "") {
 	failedChecks++;
-	const entry = { status: "FAIL", message: msg, url };
-	results.push(entry);
+	results.push({ status: "FAIL", message: msg, url });
 	log(`  ✗  ${msg}${url ? ` (${url})` : ""}`, colors.red);
 }
-
 function warn(msg, url = "") {
 	warnings++;
-	const entry = { status: "WARN", message: msg, url };
-	results.push(entry);
+	results.push({ status: "WARN", message: msg, url });
 	log(`  ⚠  ${msg}`, colors.yellow);
 }
 
-async function fetchPage(url) {
+async function fetchPage(url, redirects = true) {
 	try {
 		const res = await fetch(url, {
-			headers: { "User-Agent": "SEO-Audit-Bot/1.0" },
+			redirect: redirects ? "follow" : "manual",
+			headers: { "User-Agent": "SopKit-SEO-Audit/2.0" },
 		});
 		const html = await res.text();
-		return { status: res.status, html, ok: res.ok };
+		return { status: res.status, html, ok: res.ok, url: res.url };
 	} catch (error) {
-		return { status: 0, html: "", ok: false, error: error.message };
+		return { status: 0, html: "", ok: false, error: error.message, url };
 	}
 }
 
 function parseHtml(html) {
+	const canonical =
+		html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i)?.[1] || "";
+	const title = html.match(/<title[^>]*>([^<]+)<\/title>/i)?.[1] || "";
+	const metaDesc =
+		html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i)?.[1] || "";
+	const h1Matches = html.match(/<h1[^>]*>/gi) || [];
+	const bodyText = html
+		.replace(/<script[\s\S]*?<\/script>/gi, " ")
+		.replace(/<style[\s\S]*?<\/style>/gi, " ")
+		.replace(/<[^>]+>/g, " ")
+		.replace(/\s+/g, " ")
+		.trim();
+	const ldScripts = [...html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)].map(
+		(m) => m[1],
+	);
+	let jsonLdValid = true;
+	let hasFaq = false;
+	try {
+		for (const s of ldScripts) {
+			const parsed = JSON.parse(s.replace(/<!\[CDATA\[|\]\]>/g, ""));
+			const objs = Array.isArray(parsed) ? parsed : [parsed];
+			if (objs.some((o) => o?.["@type"] === "FAQPage")) hasFaq = true;
+		}
+	} catch {
+		jsonLdValid = false;
+	}
 	return {
-		hasTitle: /<title[^>]*>([^<]+)<\/title>/i.test(html),
-		title: html.match(/<title[^>]*>([^<]+)<\/title>/i)?.[1] || "",
-		hasMetaDesc: /<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i.test(html),
-		metaDesc: html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i)?.[1] || "",
-		hasCanonical: /<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i.test(html),
-		canonical: html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i)?.[1] || "",
-		hasH1: /<h1[^>]*>([^<]+)<\/h1>/i.test(html),
-		h1Count: (html.match(/<h1[^>]*>/gi) || []).length,
-		h1: html.match(/<h1[^>]*>([^<]+)<\/h1>/i)?.[1] || "",
-		hasNoindex: /<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(html),
-		hasLoadingOnly:
-			html.includes("Loading") &&
-			!html.includes("<main") &&
-			html.length < 5000,
-		bodyText: html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim(),
-		bodyLength: html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().length,
-		hasShellOnly:
-			html.includes("<header") &&
-			html.includes("<footer") &&
-			html.replace(/<header[^>]*>[\s\S]*<\/header>/gi, "").replace(/<footer[^>]*>[\s\S]*<\/footer>/gi, "").length < 3000,
-		hasReviewSchema: /"@type":\s*"Review"/.test(html),
-		hasAggregateRating: /"@type":\s*"AggregateRating"/.test(html),
-		hasFaqSchema: /"@type":\s*"FAQPage"/.test(html),
-		hasVisibleFaq: /<h[23][^>]*>.*\?/.test(html),
+		canonical,
+		title,
+		metaDesc,
+		h1Count: h1Matches.length,
+		bodyLength: bodyText.length,
+		hasTitle: title.length > 0,
+		hasMetaDesc: metaDesc.length > 0,
+		hasCanonical: canonical.length > 0,
+		hasNoindex: /name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(html),
+		jsonLdValid,
+		hasFaq,
 	};
 }
 
-async function checkUrl(name, url, options = {}) {
+async function auditUrl(url) {
 	totalChecks++;
-	const { status, html, ok, error } = await fetchPage(url);
-
-	if (error) {
-		fail(`Failed to fetch ${name}`, url);
-		return null;
+	const res = await fetchPage(url);
+	if (!res.ok) {
+		fail(`returns ${res.status} instead of 200`, url);
+		return;
 	}
-
-	if (!ok && options.expectError) {
-		pass(`${name} correctly returns ${status}`);
-		return null;
+	const p = parseHtml(res.html);
+	if (!p.hasTitle) fail("missing <title>", url);
+	else pass(`has title (${p.title.length} chars)`);
+	if (!p.hasMetaDesc) fail("missing meta description", url);
+	else pass("has meta description");
+	if (!p.hasCanonical) fail("missing canonical", url);
+	else {
+		const norm = (u) => u.replace(/\/+$/, "").toLowerCase();
+		if (norm(p.canonical) === norm(url)) pass("canonical is self-referential");
+		else if (p.canonical.includes("sopkit.github.io")) warn(`canonical ${p.canonical} != ${url}`, url);
+		else fail(`canonical ${p.canonical} is off-domain`, url);
 	}
-
-	if (!ok && !options.expectError) {
-		fail(`${name} returns ${status} instead of 200`, url);
-		return null;
-	}
-
-	const parsed = parseHtml(html);
-
-	if (options.expectNoindex) {
-		if (parsed.hasNoindex) {
-			pass(`${name} is noindex`);
-		} else {
-			fail(`${name} should be noindex but is indexable`, url);
-		}
-		return null;
-	}
-
-	if (options.expectShell) {
-		return parsed;
-	}
-
-	if (parsed.hasTitle) {
-		pass(`${name} has title`);
-	} else {
-		fail(`${name} missing title`, url);
-	}
-
-	if (parsed.hasMetaDesc) {
-		pass(`${name} has meta description`);
-	} else {
-		fail(`${name} missing meta description`, url);
-	}
-
-	if (parsed.hasCanonical) {
-		pass(`${name} has canonical URL`);
-	} else {
-		fail(`${name} missing canonical URL`, url);
-	}
-
-	if (parsed.hasH1) {
-		if (parsed.h1Count === 1) {
-			pass(`${name} has exactly one H1`);
-		} else {
-			fail(`${name} has ${parsed.h1Count} H1s (should be 1)`, url);
-		}
-	} else {
-		fail(`${name} missing H1`, url);
-	}
-
-	if (parsed.bodyLength > 1000) {
-		pass(`${name} has meaningful body content (${parsed.bodyLength} chars)`);
-	} else {
-		fail(`${name} body content too thin (< 1000 chars)`, url);
-	}
-
-	if (!parsed.hasLoadingOnly) {
-		pass(`${name} not loading-only`);
-	} else {
-		fail(`${name} shows loading state only`, url);
-	}
-
-	return parsed;
+	if (p.h1Count === 1) pass("exactly one H1");
+	else fail(`has ${p.h1Count} H1s (expected 1)`, url);
+	if (p.bodyLength > 1000) pass(`meaningful body (${p.bodyLength} chars)`);
+	else fail(`body too thin (${p.bodyLength} chars)`, url);
+	if (p.jsonLdValid) pass("JSON-LD parses");
+	else warn("JSON-LD missing or invalid", url);
 }
 
 async function checkSitemap() {
-	totalChecks += 3;
-
+	totalChecks += 2;
 	const robots = await fetchPage(`${BASE_URL}/robots.txt`);
 	if (robots.status === 200) {
 		pass("robots.txt returns 200");
-		if (robots.html.includes("sitemap")) {
-			pass("robots.txt contains sitemap reference");
-		} else {
-			fail("robots.txt missing sitemap reference");
-		}
+		if (robots.html.includes("sitemap")) pass("robots.txt references sitemap");
+		else fail("robots.txt missing sitemap reference", "/robots.txt");
 	} else {
 		fail("robots.txt should return 200", "/robots.txt");
 	}
 
-	const sitemap = await fetchPage(`${BASE_URL}/sitemap.xml`);
-	if (sitemap.status === 200) {
-		pass("sitemap.xml returns 200");
-
-		if (/\?/.test(sitemap.html)) {
-			warn("sitemap.xml contains query URLs");
-		} else {
-			pass("sitemap.xml has no query URLs");
-		}
-
-		const urls = sitemap.html.match(/<loc>([^<]+)<\/loc>/g) || [];
-		let hasNoindex = false;
-		for (const loc of urls.slice(0, 20)) {
-			const url = loc.replace(/<\/?loc>/g, "");
-			if (url.includes("/search?")) {
-				hasNoindex = true;
-				break;
-			}
-		}
-		if (!hasNoindex) {
-			pass("sitemap.xml excludes search query URLs");
-		}
-	} else {
+	const sm = await fetchPage(`${BASE_URL}/sitemap.xml`);
+	if (sm.status !== 200) {
 		fail("sitemap.xml should return 200", "/sitemap.xml");
+		return [];
 	}
+	pass("sitemap.xml returns 200");
+	const urls = (sm.html.match(/<loc>([^<]+)<\/loc>/g) || []).map((l) =>
+		l.replace(/<\/?loc>/g, "").trim(),
+	);
+	log(`  ℹ  sitemap contains ${urls.length} URLs`, colors.blue);
+	if (urls.some((u) => u.includes("?"))) warn("sitemap contains query-string URLs");
+	return urls;
 }
 
-async function checkCriticalPages() {
-	const pages = [
-		{ name: "Homepage", url: "/" },
-		{ name: "About", url: "/about" },
-		{ name: "Contact", url: "/contact" },
-		{ name: "Privacy", url: "/privacy" },
-		{ name: "Terms", url: "/terms" },
-		{ name: "Image Tools", url: "/image-tools" },
-		{ name: "PDF Tools", url: "/pdf-tools" },
-		{ name: "Video Tools", url: "/video-tools" },
-		{ name: "Image Compressor", url: "/image-compressor" },
-		{ name: "PDF Editor", url: "/pdf-editor" },
-	];
-
-	for (const page of pages) {
-		await checkUrl(page.name, `${BASE_URL}${page.url}`);
-	}
-}
-
-async function checkSearchNoindex() {
-	totalChecks++;
-	const searchPage = await fetchPage(`${BASE_URL}/search`);
-	if (searchPage.status === 200) {
-		const parsed = parseHtml(searchPage.html);
-		if (parsed.hasNoindex) {
-			pass("/search is noindex");
-		} else {
-			warn("/search should be noindex");
-		}
-	} else {
-		fail("/search returned non-200 status", "/search");
-	}
-}
-
-async function checkApiTestersNoindex() {
-	totalChecks++;
-	const tester = await fetchPage(`${BASE_URL}/api-key-tester/amazon-ses`);
-	if (tester.status === 200) {
-		const parsed = parseHtml(tester.html);
-		if (parsed.hasNoindex) {
-			pass("API key tester pages are noindex");
-		} else {
-			fail("API key tester pages should be noindex", "/api-key-tester/[slug]");
-		}
-	} else {
-		info("API key tester page not accessible, skipping");
-	}
-}
-
-async function checkSchema() {
-	totalChecks++;
-	info("Checking structured data...");
-
-	const homepage = await fetchPage(`${BASE_URL}/`);
-	if (homepage.ok) {
-		const hasOrgSchema = /"@type":\s*"Organization"/.test(homepage.html);
-		const hasWebSiteSchema = /"@type":\s*"WebSite"/.test(homepage.html);
-
-		if (hasOrgSchema || hasWebSiteSchema) {
-			pass("Homepage has Organization or WebSite schema");
-		} else {
-			warn("Homepage missing Organization/WebSite schema");
-		}
-
-		const parsed = parseHtml(homepage.html);
-		if (parsed.hasAggregateRating) {
-			warn("AggregateRating schema detected - ensure reviews are real");
-		}
-	}
-}
-
-async function checkDownloaderPages() {
-	totalChecks++;
-	info("Checking downloader pages...");
-
-	const downloaders = [
-		{ name: "YouTube Downloader", url: "/youtube-downloader" },
-		{ name: "Reddit Downloader", url: "/reddit-downloader" },
-	];
-
-	for (const dl of downloaders) {
-		const page = await fetchPage(`${BASE_URL}${dl.url}`);
-		if (page.ok) {
-			const hasLawfulUse =
-				/copyright|intellectual property|permission|lawful/i.test(page.html) ||
-				/only download|respect|own or have permission/i.test(page.html);
-
-			if (hasLawfulUse) {
-				pass(`${dl.name} has lawful use notice`);
-			} else {
-				warn(`${dl.name} should have lawful use notice`, dl.url);
-			}
-		}
+async function pool(items, worker, size) {
+	for (let i = 0; i < items.length; i += size) {
+		const batch = items.slice(i, i + size);
+		await Promise.all(batch.map(worker));
 	}
 }
 
 async function main() {
 	log("\n🛠️  SopKit SEO Audit\n");
 	log("═".repeat(50), colors.blue);
+	log(`  Target: ${BASE_URL}`);
+	const start = Date.now();
 
-	const startTime = Date.now();
+	const sitemapUrls = await checkSitemap();
 
-	try {
-		await checkSitemap();
-		await checkCriticalPages();
-		await checkSearchNoindex();
-		await checkApiTestersNoindex();
-		await checkSchema();
-		await checkDownloaderPages();
-	} catch (error) {
-		fail(`Audit failed: ${error.message}`);
+	const search = await fetchPage(`${BASE_URL}/search`);
+	if (search.ok) {
+		totalChecks++;
+		const p = parseHtml(search.html);
+		if (p.hasNoindex) pass("/search is noindex");
+		else warn("/search should be noindex");
+	} else {
+		fail("/search returned non-200", "/search");
 	}
 
-	const duration = ((Date.now() - startTime) / 1000).toFixed(2);
+	if (sitemapUrls.length) {
+		const sample = all ? sitemapUrls : sitemapUrls.slice(0, limit);
+		log(
+			`\n  Auditing ${sample.length} sitemap URL(s)${all ? "" : ` (use --all for all ${sitemapUrls.length})`}...\n`,
+			colors.blue,
+		);
+		await pool(sample, (u) => auditUrl(u), concurrency);
+	}
 
+	const duration = ((Date.now() - start) / 1000).toFixed(2);
 	log("\n" + "═".repeat(50), colors.blue);
 	log(`\n📊 Audit Summary (${duration}s)`);
 	log("-".repeat(30));
-
 	const summary = {
 		total: totalChecks,
 		passed: passedChecks,
 		failed: failedChecks,
 		warnings: warnings,
+		sitemapUrls: sitemapUrls.length,
 		timestamp: new Date().toISOString(),
 		baseUrl: BASE_URL,
 	};
-
-	if (jsonOutput) {
-		console.log(JSON.stringify({ ...summary, results }, null, 2));
-	} else {
+	if (jsonOutput) console.log(JSON.stringify({ ...summary, results }, null, 2));
+	else {
 		log(`  Total checks: ${totalChecks}`);
 		log(`  ${colors.green}Passed: ${passedChecks}${colors.reset}`);
 		log(`  ${colors.red}Failed: ${failedChecks}${colors.reset}`);
 		log(`  ${colors.yellow}Warnings: ${warnings}${colors.reset}`);
 	}
-
 	const reportPath = join(process.cwd(), "seo-audit-report.json");
 	writeFileSync(reportPath, JSON.stringify({ ...summary, results }, null, 2));
-	info(`Report written to ${reportPath}`);
+	log(`\n  Report written to ${reportPath}`);
 
 	if (failedChecks > 0) {
 		log("\n✗ Audit completed with failures", colors.red);
 		process.exit(1);
-	} else if (warnings > 0) {
+	}
+	if (warnings > 0) {
 		log("\n⚠ Audit completed with warnings", colors.yellow);
 		process.exit(0);
-	} else {
-		log("\n✓ All checks passed!", colors.green);
-		process.exit(0);
 	}
+	log("\n✓ All checks passed!", colors.green);
+	process.exit(0);
 }
 
 main().catch((error) => {

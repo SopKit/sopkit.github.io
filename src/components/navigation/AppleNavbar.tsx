@@ -2,7 +2,7 @@
 
 import { Github, LayoutGrid, Search, Menu, X } from "lucide-react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import * as React from "react";
 import { useEffect, useState, Suspense } from "react";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
@@ -47,7 +47,12 @@ function SearchInput() {
 
 export function AppleNavbar() {
 	const router = useRouter();
+	const pathname = usePathname();
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+	if (pathname?.startsWith("/embed")) {
+		return null;
+	}
 
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {

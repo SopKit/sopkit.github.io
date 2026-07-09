@@ -8,7 +8,7 @@ export const metadata = {
 	title: "UUID/GUID Generator Online Free | SopKit",
 	description: "Generate unique UUID v4 and GUID strings instantly for your applications and databases. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/uuid-generator",
+		canonical: "https://sopkit.github.io/uuid-generator/",
 	},
 	openGraph: {
 		title: "UUID/GUID Generator Online Free - No Signup | SopKit",

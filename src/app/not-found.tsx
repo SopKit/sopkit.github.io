@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { ArrowRightIcon, HomeIcon, SearchIcon } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -10,11 +13,75 @@ import {
 } from "@/components/ui/card";
 import { getAllTools, getRouteById, STATIC_ROUTES } from "@/lib/tools";
 
-export default async function NotFoundPage() {
+export default function NotFoundPage() {
+	const [isRedirecting, setIsRedirecting] = useState(true);
+
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			const pathname = window.location.pathname;
+			const search = window.location.search;
+
+			// 1. /shorts/:id -> /youtube-downloader/?url=https://www.youtube.com/shorts/:id
+			const shortsMatch = pathname.match(/^\/shorts\/([^/]+)\/?$/);
+			if (shortsMatch) {
+				const id = shortsMatch[1];
+				const youtubeUrl = `https://www.youtube.com/shorts/${id}`;
+				window.location.replace(`/youtube-downloader/?url=${encodeURIComponent(youtubeUrl)}`);
+				return;
+			}
+
+			// 2. /v/:id -> /youtube-downloader/?url=https://www.youtube.com/v/:id
+			const vMatch = pathname.match(/^\/v\/([^/]+)\/?$/);
+			if (vMatch) {
+				const id = vMatch[1];
+				const youtubeUrl = `https://www.youtube.com/v/${id}`;
+				window.location.replace(`/youtube-downloader/?url=${encodeURIComponent(youtubeUrl)}`);
+				return;
+			}
+
+			// 3. /embed-redirect/:id -> /youtube-downloader/?url=https://www.youtube.com/embed/:id
+			const embedMatch = pathname.match(/^\/embed-redirect\/([^/]+)\/?$/);
+			if (embedMatch) {
+				const id = embedMatch[1];
+				const youtubeUrl = `https://www.youtube.com/embed/${id}`;
+				window.location.replace(`/youtube-downloader/?url=${encodeURIComponent(youtubeUrl)}`);
+				return;
+			}
+
+			// 4. /watch -> /youtube-downloader/?url=https://www.youtube.com/watch...
+			if (pathname.startsWith("/watch")) {
+				const youtubeUrl = `https://www.youtube.com/watch${search}`;
+				window.location.replace(`/youtube-downloader/?url=${encodeURIComponent(youtubeUrl)}`);
+				return;
+			}
+
+			// 5. /embed/:player/:videoId -> /embed/?player=:player&id=:videoId
+			const playerEmbedMatch = pathname.match(/^\/embed\/([^/]+)\/([^/]+)\/?$/);
+			if (playerEmbedMatch) {
+				const player = playerEmbedMatch[1];
+				const videoId = playerEmbedMatch[2];
+				window.location.replace(`/embed/?player=${player}&id=${videoId}`);
+				return;
+			}
+
+			setIsRedirecting(false);
+		}
+	}, []);
 
 	const popularTools = getAllTools()
 		.filter((t) => t.popular)
 		.slice(0, 4);
+
+	if (isRedirecting) {
+		return (
+			<div className="flex items-center justify-center min-h-screen bg-background text-foreground">
+				<div className="text-center space-y-2">
+					<div className="animate-spin h-6 w-6 border-2 border-primary border-t-transparent rounded-full mx-auto" />
+					<p className="text-xs text-muted-foreground">Redirecting...</p>
+				</div>
+			</div>
+		);
+	}
 
 	return (
 		<div className="container mx-auto px-4 py-16 max-w-4xl">

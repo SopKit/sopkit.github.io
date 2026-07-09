@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Remove Duplicate Lines Online Free | SopKit",
 	description: "Clean up your lists and data by automatically removing identical lines of text. Fast and private. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/remove-duplicate-lines",
+		canonical: "https://sopkit.github.io/remove-duplicate-lines/",
 	},
 	openGraph: {
 		title: "Remove Duplicate Lines Online Free - No Signup | SopKit",

@@ -7,6 +7,15 @@ import { getAllTools, getAllCategories } from "./tools";
 
 const BASE_URL = "https://sopkit.github.io";
 
+/**
+ * Normalize a URL to end with a single trailing slash. The site's canonical
+ * URLs use trailing slashes (matching sitemap.ts), so every emitted URL should
+ * be consistent to avoid duplicate-URL signals.
+ */
+function withSlash(url: string): string {
+	return url.endsWith("/") ? url : `${url}/`;
+}
+
 interface MetadataProps {
 	title: string;
 	description: string;
@@ -26,7 +35,7 @@ export function generateMetadata({
 	noIndex = false,
 }: MetadataProps): Metadata {
 	const cleanPath = path.startsWith("/") ? path : `/${path}`;
-	const canonicalUrl = `${BASE_URL}${cleanPath}`;
+	const canonicalUrl = withSlash(`${BASE_URL}${cleanPath}`);
 
 	return {
 		title,
@@ -92,7 +101,7 @@ export function generateWebAppSchema({
 		"@type": "WebApplication",
 		name,
 		description,
-		url: `${BASE_URL}${path.startsWith("/") ? path : `/${path}`}`,
+		url: withSlash(`${BASE_URL}${path.startsWith("/") ? path : `/${path}`}`),
 		applicationCategory: category,
 		operatingSystem: "Any",
 		offers: {
@@ -187,7 +196,7 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
 			"@type": "ListItem",
 			position: index + 1,
 			name: item.name,
-			item: `${BASE_URL}${item.path}`,
+			item: withSlash(`${BASE_URL}${item.path}`),
 		})),
 	};
 }
@@ -208,7 +217,7 @@ export function generateToolSchema({
 		"@type": "WebApplication",
 		name,
 		description,
-		url: `${BASE_URL}${path.startsWith("/") ? path : `/${path}`}`,
+		url: withSlash(`${BASE_URL}${path.startsWith("/") ? path : `/${path}`}`),
 		applicationCategory: category,
 		operatingSystem: "Any",
 		offers: {
@@ -282,14 +291,14 @@ export function generateCollectionPageSchema(
 		"@type": "CollectionPage",
 		name: categoryName,
 		description: categoryDescription,
-		url: hubUrl,
+		url: withSlash(hubUrl),
 		mainEntity: {
 			"@type": "ItemList",
 			numberOfItems: categoryTools.length,
 			itemListElement: categoryTools.slice(0, 50).map((tool, index) => ({
 				"@type": "ListItem",
 				position: index + 1,
-				url: `${BASE_URL}${tool.route}`,
+				url: withSlash(`${BASE_URL}${tool.route}`),
 				name: tool.name,
 			})),
 		},

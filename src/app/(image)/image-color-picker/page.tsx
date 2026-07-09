@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Pro Image Color Picker Online Free | SopKit",
 	description: "Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-perfect picker. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-color-picker",
+		canonical: "https://sopkit.github.io/image-color-picker/",
 	},
 	openGraph: {
 		title: "Pro Image Color Picker Online Free - No Signup | SopKit",

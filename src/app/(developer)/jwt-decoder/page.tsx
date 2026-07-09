@@ -8,7 +8,7 @@ export const metadata = {
 	title: "JWT Decoder & Debugger Online Free | SopKit",
 	description: "Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/jwt-decoder",
+		canonical: "https://sopkit.github.io/jwt-decoder/",
 	},
 	openGraph: {
 		title: "JWT Decoder & Debugger Online Free - No Signup | SopKit",

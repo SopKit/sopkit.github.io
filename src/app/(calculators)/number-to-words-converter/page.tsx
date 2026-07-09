@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Number to Words Converter Online Free | SopKit",
 	description: "Convert any number into words (English, Indian numbering system) for cheques, invoices, and documents. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/number-to-words-converter",
+		canonical: "https://sopkit.github.io/number-to-words-converter/",
 	},
 	openGraph: {
 		title: "Number to Words Converter Online Free - No Signup | SopKit",

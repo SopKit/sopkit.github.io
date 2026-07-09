@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Advanced Favicon Generator Online Free | SopKit",
 	description: "Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/favicon-generator-pro",
+		canonical: "https://sopkit.github.io/favicon-generator-pro/",
 	},
 	openGraph: {
 		title: "Advanced Favicon Generator Online Free - No Signup | SopKit",

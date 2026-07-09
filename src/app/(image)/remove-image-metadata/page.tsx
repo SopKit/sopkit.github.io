@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Image Metadata (EXIF) Remover Online Free | SopKit",
 	description: "Remove sensitive GPS, camera, and author metadata from your images before sharing online. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/remove-image-metadata",
+		canonical: "https://sopkit.github.io/remove-image-metadata/",
 	},
 	openGraph: {
 		title: "Image Metadata (EXIF) Remover Online Free - No Signup | SopKit",

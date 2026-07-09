@@ -8,7 +8,7 @@ export const metadata = {
 	title: "URL Slug Generator Online Free | SopKit",
 	description: "Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/slug-generator",
+		canonical: "https://sopkit.github.io/slug-generator/",
 	},
 	openGraph: {
 		title: "URL Slug Generator Online Free - No Signup | SopKit",

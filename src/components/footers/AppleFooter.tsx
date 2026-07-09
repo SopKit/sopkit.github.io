@@ -3,6 +3,7 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import Link from "next/link";
 import { LanguageSelector } from "@/components/shared/LanguageSelector";
+import { usePathname } from "next/navigation";
 import { getRouteById, STATIC_ROUTES } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
 
@@ -30,6 +31,11 @@ interface CategoryItem {
 }
 
 export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }) {
+	const pathname = usePathname();
+	if (pathname?.startsWith("/embed")) {
+		return null;
+	}
+
 	const footerNav = [
 		{ name: "About Us", href: getRouteById("about") },
 		{ name: "Contact Us", href: getRouteById("contact") },

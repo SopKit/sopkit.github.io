@@ -8,7 +8,7 @@ export const metadata = {
 	title: "TDEE Calculator Online Free | SopKit",
 	description: "Calculate your Total Daily Energy Expenditure (TDEE) based on your activity level and fitness goals. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/tdee-calculator",
+		canonical: "https://sopkit.github.io/tdee-calculator/",
 	},
 	openGraph: {
 		title: "TDEE Calculator Online Free - No Signup | SopKit",

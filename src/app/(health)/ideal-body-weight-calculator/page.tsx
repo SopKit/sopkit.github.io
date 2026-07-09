@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Ideal Body Weight Calculator Online Free | SopKit",
 	description: "Determine your healthy weight range based on your height, age, and gender using standard formulas. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/ideal-body-weight-calculator",
+		canonical: "https://sopkit.github.io/ideal-body-weight-calculator/",
 	},
 	openGraph: {
 		title: "Ideal Body Weight Calculator Online Free - No Signup | SopKit",

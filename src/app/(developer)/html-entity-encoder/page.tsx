@@ -8,7 +8,7 @@ export const metadata = {
 	title: "HTML Entity Encoder/Decoder Online Free | SopKit",
 	description: "Encode or decode HTML entities to prevent XSS or display special characters safely. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-entity-encoder",
+		canonical: "https://sopkit.github.io/html-entity-encoder/",
 	},
 	openGraph: {
 		title: "HTML Entity Encoder/Decoder Online Free - No Signup | SopKit",

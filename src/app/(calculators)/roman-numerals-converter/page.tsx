@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Roman Numerals Converter Online Free | SopKit",
 	description: "Convert numbers to Roman numerals and vice versa instantly. Supports large numbers and historical formats. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/roman-numerals-converter",
+		canonical: "https://sopkit.github.io/roman-numerals-converter/",
 	},
 	openGraph: {
 		title: "Roman Numerals Converter Online Free - No Signup | SopKit",

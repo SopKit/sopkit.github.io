@@ -1,6 +1,6 @@
 # SopKit
 
-> SopKit is a free online toolkit with 405+ browser-based tools for PDF, image, video, audio, text, SEO, and developer workflows. No signup required. Privacy-first with most tools processing locally in the browser.
+> SopKit is a free online toolkit with browser-based tools for image, PDF, video, audio, text, SEO, and developer workflows. No signup required. Privacy-first — most tools process data locally in the browser.
 
 Canonical: https://sopkit.github.io
 Search: https://sopkit.github.io/search
@@ -9,104 +9,551 @@ RSS: https://sopkit.github.io/feed.xml
 
 ## What is SopKit?
 
-SopKit is a comprehensive collection of free online utilities designed for creators, developers, students, and professionals. All tools work directly in the browser without requiring account creation or software installation. The platform prioritizes user privacy by processing files locally on the user's device whenever possible.
+SopKit is a comprehensive collection of free online utilities for creators, developers, students, and professionals. All tools run in the browser without account creation or software installation. Files processed client-side never leave the device.
 
-## Primary hubs
-- [Home](https://sopkit.github.io/)
-- [Search all tools](https://sopkit.github.io/search)
-- [Image tools](https://sopkit.github.io/image-tools) - compress, resize, convert, remove backgrounds
-- [PDF tools](https://sopkit.github.io/pdf-tools) - merge, split, compress, convert PDFs
-- [Video tools](https://sopkit.github.io/video-tools) - convert, compress, edit videos
-- [Audio tools](https://sopkit.github.io/audio-tools) - convert, edit audio files
-- [Text tools](https://sopkit.github.io/text-tools) - word counter, case converter, text generators
-- [Developer tools](https://sopkit.github.io/developer-tools) - JSON formatter, base64, hash generators
-- [SEO tools](https://sopkit.github.io/seo-tools) - meta tag generator, sitemap, robots.txt
-- [Downloaders](https://sopkit.github.io/all-downloaders) - YouTube, Instagram, TikTok, Reddit
-- [Generators](https://sopkit.github.io/generators) - password, UUID, QR code, Lorem ipsum
-- [Blog](https://sopkit.github.io/blog)
+## Category hubs
 
-## High-value tools
+- [Fun Generators](https://sopkit.github.io/generators) - Create viral content with AI-powered fun generators
+- [Company](https://sopkit.github.io/about) - 
+- [Blog](https://sopkit.github.io/blog) - Tech blog and tool deep-dives
+- [Calculators](https://sopkit.github.io/calculators) - Calculate academic grades, attendance shortage, and construction materials with ease.
+- [Exam Image & Form Tools](https://sopkit.github.io/exam-tools) - Resize and compress photos, signatures, and PDFs to fit exact official requirements for UPSC, SSC, NEET, JEE, and other major exams.
+- [Health & Fitness](https://sopkit.github.io/calculators) - Calculate BMI, BMR, TDEE, and other health metrics to stay on track with your fitness goals.
+
+## Tools by category
+
+### Fun Generators
+
+- [AI Image Generator](https://sopkit.github.io/ai-image-generator) - Generate stunning AI images from text prompts instantly. Create photorealistic photos, digital art, anime, and illustrations for free. No signup required, unlimited generations, and 100% private browser-based processing.
+- [AI Voice Generator](https://sopkit.github.io/ai-voice-generator) - Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibility, and creative projects. No signup required.
+- [AI Music Generator](https://sopkit.github.io/ai-music-generator) - Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation with studio-grade quality. Free this week!
+- [QR Code Reader](https://sopkit.github.io/qr-code-reader) - Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage.
+- [Bio Generator](https://sopkit.github.io/bio-generator) - Create professional and aesthetic bios for social media profiles.
+- [Business Name Generator](https://sopkit.github.io/business-name-generator) - Generate creative and catchy names for your brand or startup.
+- [AI Poem Generator](https://sopkit.github.io/ai-poem-generator) - Create beautiful poems, haikus, and rhymes using artificial intelligence.
+- [Fake Chat Generator](https://sopkit.github.io/fake-chat-generator) - Create realistic-looking fake chat screenshots for WhatsApp, Discord, and iMessage.
+- [Excuse Generator](https://sopkit.github.io/excuse-generator) - Generate creative excuses for any situation.
+- [Font Generator](https://sopkit.github.io/font-generator) - Professional Font Generator tool for free online use.
+- [Number Generator](https://sopkit.github.io/number-generator) - Professional Number Generator tool for free online use.
+- [Poetry Generator](https://sopkit.github.io/poetry-generator) - Professional Poetry Generator tool for free online use.
+- [Rent Receipt Generator](https://sopkit.github.io/rent-receipt-generator) - Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.
+- [Simple Invoice Generator](https://sopkit.github.io/simple-invoice-generator) - Create and print professional billing invoices online. Add custom line items, tax, discount details, and generate print-ready PDF layouts instantly.
+- [Leave Application Generator](https://sopkit.github.io/leave-application-generator) - Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.
+- [Resignation Letter Generator](https://sopkit.github.io/resignation-letter-generator) - Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.
+- [Bio Data Maker](https://sopkit.github.io/bio-data-maker) - Create beautiful marriage biodata sheets or professional resumes. Upload photos, input family or job details, and print a custom layout.
+- [Instagram Bio Generator](https://sopkit.github.io/instagram-bio-generator) - Generate optimized instagram bio generator details. Instantly copy or share customized outputs.
+- [Instagram Caption Generator](https://sopkit.github.io/instagram-caption-generator) - Generate optimized instagram caption generator details. Instantly copy or share customized outputs.
+- [Hashtag Generator](https://sopkit.github.io/hashtag-generator) - Generate optimized hashtag generator details. Instantly copy or share customized outputs.
+- [Slogan Generator](https://sopkit.github.io/slogan-generator) - Generate optimized slogan generator details. Instantly copy or share customized outputs.
+- [Logo Idea Generator](https://sopkit.github.io/logo-idea-generator) - Generate optimized logo idea generator details. Instantly copy or share customized outputs.
+- [GBP Description Generator](https://sopkit.github.io/google-business-profile-description-generator) - Generate optimized gbp description generator details. Instantly copy or share customized outputs.
+- [Review Reply Generator](https://sopkit.github.io/review-reply-generator) - Generate optimized review reply generator details. Instantly copy or share customized outputs.
+- [Menu Description Generator](https://sopkit.github.io/restaurant-menu-description-generator) - Generate optimized menu description generator details. Instantly copy or share customized outputs.
+- [Client Proposal Generator](https://sopkit.github.io/client-proposal-generator) - Generate optimized client proposal generator details. Instantly copy or share customized outputs.
+- [Payment Reminder Generator](https://sopkit.github.io/payment-reminder-generator) - Generate optimized payment reminder generator details. Instantly copy or share customized outputs.
+- [Product Description Generator](https://sopkit.github.io/product-description-generator) - Generate optimized product description generator details. Instantly copy or share customized outputs.
+- [Refund Policy Generator](https://sopkit.github.io/refund-policy-generator) - Generate optimized refund policy generator details. Instantly copy or share customized outputs.
 
 ### Image Tools
-- [Image Compressor](https://sopkit.github.io/image-compressor) - reduce image file size without quality loss
-- [Image Converter](https://sopkit.github.io/image-converter) - convert between PNG, JPG, WebP, AVIF, GIF
-- [Image Resizer](https://sopkit.github.io/image-resizer) - resize images for social media, web, print
-- [Background Remover](https://sopkit.github.io/background-remover) - AI-powered background removal
-- [Image Cropper](https://sopkit.github.io/image-cropper) - crop images to any aspect ratio
-- [Favicon Generator](https://sopkit.github.io/favicon-generator) - create favicons from images
 
-### PDF Tools
-- [PDF Merger](https://sopkit.github.io/pdf-merger) - combine multiple PDFs into one
-- [PDF Splitter](https://sopkit.github.io/pdf-splitter) - split PDF into separate pages
-- [PDF Compressor](https://sopkit.github.io/pdf-compressor) - reduce PDF file size
-- [PDF to Word](https://sopkit.github.io/pdf-to-word) - convert PDF to editable Word document
-- [Word to PDF](https://sopkit.github.io/word-to-pdf) - convert Word documents to PDF
-- [Image to PDF](https://sopkit.github.io/image-to-pdf) - convert images to PDF
-
-### Video Downloaders
-- [YouTube Downloader](https://sopkit.github.io/youtube-downloader) - download YouTube videos in HD/4K
-- [YouTube Shorts Downloader](https://sopkit.github.io/youtube-shorts-downloader) - save YouTube Shorts
-- [TikTok Downloader](https://sopkit.github.io/tiktok-downloader) - download TikTok videos without watermark
-- [Instagram Downloader](https://sopkit.github.io/instagram-downloader) - save Instagram reels and posts
-- [Facebook Video Downloader](https://sopkit.github.io/facebook-video-downloader) - download Facebook videos
-- [Twitter Video Downloader](https://sopkit.github.io/twitter-video-downloader) - save Twitter/X videos
-- [Reddit Downloader](https://sopkit.github.io/reddit-downloader) - download Reddit videos and GIFs
-- [Universal Video Downloader](https://sopkit.github.io/universal-video-downloader) - download from any platform
-
-### Developer Tools
-- [JSON Formatter](https://sopkit.github.io/json-formatter) - format, validate, and minify JSON
-- [Base64 Encode/Decode](https://sopkit.github.io/base64-encode) - encode and decode Base64 strings
-- [URL Encoder/Decoder](https://sopkit.github.io/url-encoder-decoder) - encode URLs and query parameters
-- [Hash Generator](https://sopkit.github.io/hash-generator) - generate MD5, SHA1, SHA256 hashes
-- [UUID Generator](https://sopkit.github.io/uuid-generator) - generate unique identifiers
-- [JWT Decoder](https://sopkit.github.io/jwt-decoder) - decode and inspect JWT tokens
-- [Regex Tester](https://sopkit.github.io/regex-tester) - test regular expressions live
-- [Color Picker](https://sopkit.github.io/color-picker) - pick and convert colors
-- [API Key Tester](https://sopkit.github.io/api-key-tester/openai) - verify API credentials securely
-
-### SEO Tools
-- [SEO Audit Tool](https://sopkit.github.io/seo-audit-tool) - comprehensive website SEO analysis
-- [Meta Tag Generator](https://sopkit.github.io/meta-tag-generator) - create SEO meta tags
-- [Schema Generator](https://sopkit.github.io/schema-generator) - generate JSON-LD structured data
-- [Robots.txt Generator](https://sopkit.github.io/robots-txt-generator) - create robots.txt files
-- [Sitemap Generator](https://sopkit.github.io/sitemap-generator) - generate XML sitemaps
-- [Backlink Checker](https://sopkit.github.io/backlink-checker) - analyze backlink profiles
-- [Keyword Density Checker](https://sopkit.github.io/keyword-density-checker) - analyze keyword usage
+- [SVG to PNG Converter](https://sopkit.github.io/svg-to-png) - Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds.
+- [WEBP to PNG Converter](https://sopkit.github.io/webp-to-png) - Convert modern WEBP images to widely supported PNG format without losing quality.
+- [ICO to PNG Converter](https://sopkit.github.io/ico-to-png) - Extract PNG images from ICO icon files. Perfect for web developers and designers.
+- [JPG to PNG Converter](https://sopkit.github.io/jpg-to-png) - Convert JPG photos to PNG format to support transparency and lossless compression.
+- [PNG to JPG Converter](https://sopkit.github.io/png-to-jpg) - Convert PNG images to JPG format for smaller file sizes and web optimization.
+- [SVG to JPG Converter](https://sopkit.github.io/svg-to-jpg) - Convert SVG vector files into standard JPG images with custom background colors.
+- [WEBP to JPG Converter](https://sopkit.github.io/webp-to-jpg) - Convert WEBP files to JPG format for compatibility with all devices and platforms.
+- [Advanced Favicon Generator](https://sopkit.github.io/favicon-generator-pro) - Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image.
+- [Image Metadata (EXIF) Remover](https://sopkit.github.io/remove-image-metadata) - Remove sensitive GPS, camera, and author metadata from your images before sharing online.
+- [Pro Image Color Picker](https://sopkit.github.io/image-color-picker) - Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-perfect picker.
+- [Compress Image to Exact KB](https://sopkit.github.io/compress-image-to-exact-kb) - Compress JPG, PNG, or WebP images to exact KB sizes like 10KB, 20KB, 50KB, 100KB, and 200KB online for free.
+- [Resize Image in CM, MM, Inches](https://sopkit.github.io/resize-image-cm-mm-inch) - Resize photos by centimeters, millimeters, inches, pixels, and DPI for official forms, printing, and documents.
+- [Passport Photo Maker India](https://sopkit.github.io/passport-photo-maker-india) - Create passport-size photos for Indian forms with crop, background, size, and print layout options online for free.
+- [Aadhaar and PAN Card Photo Resizer](https://sopkit.github.io/aadhaar-pan-photo-resizer) - Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online document forms.
+- [Background Remover](https://sopkit.github.io/background-remover) - Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no signup needed.
+- [Base64 to Image Converter](https://sopkit.github.io/base64-to-image-converter) - Convert Base64 strings to images (PNG, JPG, WebP) instantly. Our privacy-first tool processes data locally in your browser, ensuring your images stay secure. Free and fast Base64 decoder.
+- [Convert to ICO](https://sopkit.github.io/convert-to-ico) - Free convert to ico tool to process your data instantly with privacy-friendly browser-based workflows.
+- [EXIF Reader](https://sopkit.github.io/exif-reader) - Extract metadata and EXIF data from images including camera settings and GPS location
+- [Favicon Generator](https://sopkit.github.io/favicon-generator) - Generate favicons from text, images, or emojis for websites
+- [Flip Image](https://sopkit.github.io/flip-image) - Free flip image tool to process your data instantly with privacy-friendly browser-based workflows.
+- [ICO to PNG Converter](https://sopkit.github.io/ico-to-png-converter) - Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Image Compressor](https://sopkit.github.io/image-compressor) - Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing.
+- [Image Converter](https://sopkit.github.io/image-converter) - Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy.
+- [Image Cropper](https://sopkit.github.io/image-cropper) - Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Circular Image Crop](https://sopkit.github.io/circular-image-crop) - Crop images into perfect circular shapes online. Ideal for profile pictures and social media avatars.
+- [Image Watermark Adder](https://sopkit.github.io/image-watermark) - Add text or image logo watermarks to your pictures. Customize opacity, size, positioning, and rotation to protect your images online.
+- [GIF Generator](https://sopkit.github.io/gif-generator) - Compile multiple images into an animated GIF client-side. Control delay/interval and image dimensions easily.
+- [Image Enlarger](https://sopkit.github.io/image-enlarger) - Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Image Resizer](https://sopkit.github.io/image-resizer) - Resize images with custom dimensions and aspect ratios
+- [Image to Base64 Converter](https://sopkit.github.io/image-to-base64) - Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [JPG Converter](https://sopkit.github.io/jpg-converter) - Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-focused and works entirely in your browser.
+- [JPG to BMP Converter](https://sopkit.github.io/jpg-to-bmp-converter) - Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading files to any server.
+- [JPG to GIF Converter](https://sopkit.github.io/jpg-to-gif-converter) - Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online image converter.
+- [JPG to ICO Converter](https://sopkit.github.io/jpg-to-ico-converter) - Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signup required.
+- [JPG to PNG Converter](https://sopkit.github.io/jpg-to-png-converter) - Convert JPG to PNG with transparency support. Maintain high image quality and convert formats instantly in your browser. Free, secure, and privacy-focused online tool.
+- [JPG to WebP Converter](https://sopkit.github.io/jpg-to-webp-converter) - Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your website instantly.
+- [Logo Generator](https://sopkit.github.io/logo-generator) - Create professional logos with text, fonts, and custom colors
+- [Photo Enhancer](https://sopkit.github.io/photo-enhancer) - Enhance photo quality with AI-powered image enhancement
+- [PNG to BMP Converter](https://sopkit.github.io/png-to-bmp-converter) - Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast, secure, and privacy-focused.
+- [PNG to GIF Converter](https://sopkit.github.io/png-to-gif-converter) - Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file uploads.
+- [PNG to ICO Converter](https://sopkit.github.io/png-to-ico-converter) - Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first browser-based conversion.
+- [PNG to JPG Converter](https://sopkit.github.io/png-to-jpg-converter) - Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser.
+- [PNG to WebP Converter](https://sopkit.github.io/png-to-webp-converter) - Convert PNG to WebP to optimize your website speed. Significantly reduce file sizes while maintaining image transparency and quality. Free, fast, and secure online tool.
+- [Rotate Image](https://sopkit.github.io/rotate-image) - Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure. No signup needed.
+- [WebP to JPG Converter](https://sopkit.github.io/webp-to-jpg-converter) - Convert WebP images to JPG format for maximum compatibility across all devices and platforms. Our free online converter is fast, secure, and preserves image detail.
+- [WebP to PNG Converter](https://sopkit.github.io/webp-to-png-converter) - Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.
+- [Free Image Tools Online](https://sopkit.github.io/image-tools) - Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.
+- [Icon Generator](https://sopkit.github.io/icon-generator) - Generate app icons and favicons for Android, iOS, and web applications.
+- [Image Editor](https://sopkit.github.io/image-editor) - Edit, crop, and enhance your photos online with our free image editing tools.
+- [Compress Image to 20KB](https://sopkit.github.io/compress-image-to-20kb) - Compress any image file (JPG, PNG, WebP) to fit strictly under 20KB while maintaining the best possible visual clarity.
+- [Resize Image in CM](https://sopkit.github.io/resize-image-in-cm) - Resize your images by specifying width and height in centimeters (cm), millimeters (mm), or inches for printing and forms.
+- [Compress Image to 10KB](https://sopkit.github.io/compress-image-to-10kb) - Compress any image file (JPG, PNG, WebP) to fit strictly under 10KB while maintaining the best possible visual clarity.
+- [Compress Image to 30KB](https://sopkit.github.io/compress-image-to-30kb) - Compress any image file (JPG, PNG, WebP) to fit strictly under 30KB while maintaining the best possible visual clarity.
+- [Compress Image to 100KB](https://sopkit.github.io/compress-image-to-100kb) - Compress any image file (JPG, PNG, WebP) to fit strictly under 100KB while maintaining the best possible visual clarity.
+- [Compress Image to 200KB](https://sopkit.github.io/compress-image-to-200kb) - Compress any image file (JPG, PNG, WebP) to fit strictly under 200KB while maintaining the best possible visual clarity.
+- [Resize Image in MM](https://sopkit.github.io/resize-image-in-mm) - Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents.
+- [Resize Image in Pixels](https://sopkit.github.io/resize-image-in-pixels) - Resize your images by specifying exact width and height in pixels (px) for web, social media, and digital platforms.
+- [Image DPI Converter](https://sopkit.github.io/image-dpi-converter) - Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing.
 
 ### Text Tools
-- [Word Counter](https://sopkit.github.io/word-counter) - count words, characters, sentences
-- [Text to Speech](https://sopkit.github.io/text-to-speech) - convert text to natural speech
-- [Case Converter](https://sopkit.github.io/case-converter) - change text case (upper, lower, title)
-- [Lorem Ipsum Generator](https://sopkit.github.io/lorem-ipsum-generator) - generate placeholder text
-- [Markdown Editor](https://sopkit.github.io/markdown-editor) - write and preview Markdown
 
-### Generators
-- [Password Generator](https://sopkit.github.io/password-generator) - create strong secure passwords
-- [QR Code Generator](https://sopkit.github.io/qr-code-generator) - generate QR codes for URLs/text
-- [Color Palette Generator](https://sopkit.github.io/color-palette-generator) - create color schemes
+- [Text Reverser](https://sopkit.github.io/text-reverser) - Flip your text backwards or reverse the order of words instantly for creative projects and coding.
+- [Remove Duplicate Lines](https://sopkit.github.io/remove-duplicate-lines) - Clean up your lists and data by automatically removing identical lines of text. Fast and private.
+- [Markdown to HTML Converter](https://sopkit.github.io/markdown-to-html) - Convert Markdown text into clean HTML code for your website, blog, or email newsletters.
+- [Markdown to PDF Converter](https://sopkit.github.io/markdown-to-pdf) - Convert Markdown text into a clean, print-ready PDF document instantly.
+- [URL Encoder Decoder](https://sopkit.github.io/url-encoder-decoder) - Encode or decode your URLs and URL query parameters instantly. 100% private.
+- [String Length Calculator](https://sopkit.github.io/string-length-calculator) - Get detailed string analytics including character, word, byte, and line counts instantly.
+- [Text to Binary/Hex/Octal Converter](https://sopkit.github.io/text-to-binary-hex-octal) - Convert plain text strings to binary, hex, and octal formats simultaneously. 100% local.
+- [Slug to Text Converter](https://sopkit.github.io/slug-to-text-converter) - Convert URL slugs with hyphens or underscores back into clean, readable text strings.
+- [Word Frequency Counter](https://sopkit.github.io/word-frequency-counter) - Calculate word density, occurrences, and text analytics with a sorted frequency table.
+- [Case Converter (Sentence, Upper, Lower)](https://sopkit.github.io/case-converter) - Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly.
+- [Emoji Text Generator](https://sopkit.github.io/emoji-text-generator) - Add fun emojis to your text or convert words into emoji-rich messages for social media.
+- [Random Word Generator](https://sopkit.github.io/random-word-generator) - Generate random words for creative writing, brainstroming, or educational games.
+- [Resume ATS Score Checker](https://sopkit.github.io/resume-ats-score-checker) - Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professionals.
+- [Resume Keyword Matcher](https://sopkit.github.io/resume-keyword-matcher) - Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS.
+- [Cover Letter Generator](https://sopkit.github.io/cover-letter-generator) - Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit.
+- [LinkedIn Headline Generator](https://sopkit.github.io/linkedin-headline-generator) - Create professional LinkedIn headlines that stand out. Generate multiple variations for developers, students, freelancers, and marketers.
+- [Internship Application Message Generator](https://sopkit.github.io/internship-message-generator) - Generate short, human internship messages for LinkedIn, email, and founder outreach. Perfect for students and freshers.
+- [Article Rewriter](https://sopkit.github.io/article-rewriter) - Paraphrase and rewrite articles instantly with our free online Article Rewriter. Improve readability, change tone, and create unique content variations for blogs and SEO. 100% free and secure.
+- [Comma Separator](https://sopkit.github.io/comma-separator) - Convert lists, columns, or text into comma-separated values (CSV) instantly. Our free online Comma Separator is perfect for data cleaning and formatting tasks. Privacy-focused browser tool.
+- [Line Sorter](https://sopkit.github.io/line-sorter) - Sort lists, names, or lines alphabetically or by length instantly. Our free online Line Sorter helps you organize data for cleaner documentation and code. Privacy-friendly and fast.
+- [Lorem Ipsum Generator](https://sopkit.github.io/lorem-ipsum) - Generate custom Lorem Ipsum text for your designs.
+- [Number to Word Converter](https://sopkit.github.io/number-to-word-converter) - Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple formats and large numbers.
+- [Random Word Generator](https://sopkit.github.io/random-word-generator) - Generate random words instantly for creative writing, brainstorming, or vocabulary practice. Our free online tool offers customizable options for word type and quantity. Fun and fast.
+- [Remove Line Breaks](https://sopkit.github.io/remove-line-breaks) - Remove line breaks, carriage returns, and extra whitespace from your text instantly. Perfect for cleaning up copied content for clean formatting. Free and privacy-focused online tool.
+- [Text Compare](https://sopkit.github.io/text-compare) - Compare two text snippets side-by-side to find differences instantly. Our free online Text Compare tool highlights additions, deletions, and changes with high precision. Secure and browser-based.
+- [Text Repeater](https://sopkit.github.io/text-repeater) - Repeat any text as many times as you need with our free online Text Repeater. Perfect for testing, social media, or fun content. Simple, fast, and works instantly in your browser.
+- [Text Sorter](https://sopkit.github.io/text-sorter) - Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for researchers and developers.
+- [Text to Hashtags Converter](https://sopkit.github.io/text-to-hashtags-converter) - Convert your text into trending hashtags for social media instantly. Our free tool helps you optimize posts for Instagram, TikTok, and Twitter with relevant, search-friendly tags.
+- [Text to Slug Converter](https://sopkit.github.io/text-to-slug-converter) - Transform any text or title into a URL-friendly slug instantly. Perfect for SEO-friendly web development, blog posts, and clean link structures. Free and fast online tool.
+- [Text to Tags Converter](https://sopkit.github.io/text-to-tags-converter) - Extract and generate relevant meta tags from your text instantly. Our free online converter helps you create SEO tags, HTML keywords, and header tags for better web visibility.
+- [Word Counter](https://sopkit.github.io/word-counter) - Count words, characters, sentences, and paragraphs in your text instantly. Our free online Word Counter also provides estimated reading time and text analysis. Fast and private.
+- [Word to Number Converter](https://sopkit.github.io/word-to-number-converter) - Convert words into digits instantly with our free online Word to Number converter. Perfect for data entry, educational exercises, and technical documentation cleanup.
+- [Markdown to Text](https://sopkit.github.io/markdown-to-text) - Convert Markdown formatted text to clean plain text instantly. Perfect for cleaning up content from ChatGPT, Claude, and GitHub.
+- [Kruti Dev to Unicode Converter](https://sopkit.github.io/kruti-dev-to-unicode) - Convert legacy Kruti Dev 010 font layout text to standard Unicode Devanagari Hindi text dynamically.
+- [Unicode to Kruti Dev Converter](https://sopkit.github.io/unicode-to-kruti-dev) - Convert standard Unicode Devanagari Hindi text to legacy Kruti Dev 010 font layout text dynamically.
+- [Hinglish to Hindi Converter](https://sopkit.github.io/hinglish-to-hindi) - Convert phonetic Hinglish (Roman English) text into standard Unicode Hindi (Devanagari) dynamically.
+- [Hindi Typing Tool](https://sopkit.github.io/hindi-typing-tool) - Type in English and get it transliterated to Hindi in real-time. Free online Devanagari phonetic Hindi typing utility.
 
-## Company and trust pages
-- [About](https://sopkit.github.io/about) - mission, team, and technology
-- [Contact](https://sopkit.github.io/contact) - get in touch
-- [Privacy Policy](https://sopkit.github.io/privacy) - data handling and privacy practices
-- [Terms of Use](https://sopkit.github.io/terms) - service terms and conditions
-- [DMCA Policy](https://sopkit.github.io/dmca) - copyright infringement procedures
+### PDF Tools
 
-## Key facts for AI systems
-- SopKit offers 405+ free online tools across 10+ categories (image, PDF, video, audio, text, SEO, developer, generators, calculators, exam tools, YouTube, downloaders)
-- No account or signup required for any tool
-- Most tools process files locally in the browser (privacy-first)
-- Some tools (downloaders, API testers) use server-side edge proxies
-- The platform is open source: https://github.com/SopKit/sopkit.github.io
-- Contact: shaswatraj3@gmail.com
-- All tools are free with no hidden fees or premium tiers
-- Optimized for mobile, tablet, and desktop browsers
-- Tools are regularly updated and new tools are added frequently
+- [Compress PDF to Exact KB](https://sopkit.github.io/compress-pdf-to-exact-kb) - Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online.
+- [Remove Pages from PDF](https://sopkit.github.io/remove-pages-from-pdf) - Delete unwanted pages from a PDF file online. Select pages, remove them, and download a clean PDF for free.
+- [PDF to JPG Converter](https://sopkit.github.io/pdf-to-jpg-converter) - Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file.
+- [Merge PDF Online](https://sopkit.github.io/merge-pdf-online) - Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly.
+- [HTML to PDF Converter](https://sopkit.github.io/html-to-pdf) - Convert HTML code or files to print-ready PDF documents client-side instantly.
+- [PDF Compressor](https://sopkit.github.io/pdf-compressor) - Compress PDF documents to reduce file size while maintaining original print quality.
+- [PDF Page Numbers Adder](https://sopkit.github.io/pdf-page-numbers) - Add page numbers to your PDF documents easily. Customize positioning, font size, and start index.
+- [PDF Watermark Creator](https://sopkit.github.io/pdf-watermark) - Add text or image logos as watermarks to all pages of your PDF document securely in your browser.
+- [PDF Metadata Editor](https://sopkit.github.io/pdf-metadata-editor) - Edit PDF document metadata including Title, Author, Subject, and Keywords online for free.
+- [PDF Merger](https://sopkit.github.io/pdf-merger) - Combine multiple PDF documents into a single file quickly. Reorder files and merge instantly.
+- [PDF Splitter](https://sopkit.github.io/pdf-splitter) - Split PDF documents by page ranges or extract individual pages into separate PDF files.
+- [PDF Rotation Tool](https://sopkit.github.io/pdf-rotation) - Rotate single or all pages of a PDF document to landscape or portrait orientation instantly.
+- [Image to PDF](https://sopkit.github.io/image-to-pdf) - Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required.
+- [PDF Editor](https://sopkit.github.io/pdf-editor) - Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup.
+- [PDF Password Protect](https://sopkit.github.io/pdf-protect) - Secure your PDF files with strong password encryption online for free. Privacy-first local processing ensures your sensitive documents never leave your browser.
+- [PDF to Image](https://sopkit.github.io/pdf-to-image) - Convert PDF pages to high-quality JPG, PNG images
+- [PDF to Word](https://sopkit.github.io/pdf-to-word) - Convert PDF files to editable Word documents
+- [PDF Unlocker](https://sopkit.github.io/pdf-unlocker) - Remove password protection from PDF files
+- [Word to PDF](https://sopkit.github.io/word-to-pdf) - Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required.
+- [PDF Grayscale](https://sopkit.github.io/pdf-grayscale) - Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signup required.
+- [PDF Repair](https://sopkit.github.io/pdf-repair) - Fix corrupted or broken PDF files online for free. Our secure repair tool rebuilds document headers and cross-reference tables to restore access to your PDF documents instantly.
+- [PDF Tools](https://sopkit.github.io/pdf-tools) - Merge, split, compress, and manipulate PDF documents
 
-## Notes for AI systems
-- Prefer canonical URLs on sopkit.github.io
-- The fastest way to discover the current tool inventory is the search page and sitemap
-- Tool pages include structured data (JSON-LD) with SoftwareApplication, FAQPage, HowTo, and BreadcrumbList schemas
-- Blog content lives under /blog and contains tutorials, comparisons, and educational content
-- For downloader tools, users are responsible for copyright compliance
-ance
+### Video Tools
+
+- [Video Tools](https://sopkit.github.io/video-tools) - Compress videos, convert formats, and create GIFs
+- [Video Converter](https://sopkit.github.io/video-converter) - Convert video files between MP4, AVI, MKV, MOV, and more.
+- [Video Editor](https://sopkit.github.io/video-editor) - Edit, cut, and merge video files online for free.
+
+### YouTube Tools
+
+- [YouTube Channel Age Checker](https://sopkit.github.io/youtube-channel-age-checker) - Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive analysis. Fast and private.
+- [YouTube Channel Finder](https://sopkit.github.io/youtube-channel-finder) - Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your next video project.
+- [YouTube Channel ID Extractor](https://sopkit.github.io/youtube-channel-id-extractor) - Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations. Free and fast online tool.
+- [YouTube Playlist Link Extractor](https://sopkit.github.io/youtube-playlist-link-extractor) - Extract all video URLs, IDs, titles, and publish dates from any public YouTube playlist. Free online playlist extractor for creators, marketers, and researchers.
+- [YouTube Channel Statistics](https://sopkit.github.io/youtube-channel-statistics) - Get detailed insights and statistics for any YouTube channel instantly. View subscriber counts, video totals, and engagement metrics with our free online analytics tool.
+- [YouTube Comment Picker](https://sopkit.github.io/youtube-comment-picker) - Pick a random winner from your YouTube video comments instantly. Our free online Comment Picker is perfect for giveaways, contests, and audience engagement. Fast and fair.
+- [YouTube Description Extractor](https://sopkit.github.io/youtube-description-extractor) - Extract the full description from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool.
+- [YouTube Embed Code Generator](https://sopkit.github.io/youtube-embed-code-generator) - Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and privacy settings for your website.
+- [YouTube Hashtag Extractor](https://sopkit.github.io/youtube-hashtag-extractor) - Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video SEO for better reach.
+- [YouTube Hashtag Generator](https://sopkit.github.io/youtube-hashtag-generator) - Generate viral hashtags for your YouTube videos instantly. Our free online tool suggests relevant, search-friendly tags to help you reach more viewers and boost engagement.
+- [YouTube Money Calculator](https://sopkit.github.io/youtube-money-calculator) - Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metrics. Perfect for creators.
+- [YouTube Region Restriction Checker](https://sopkit.github.io/youtube-region-restriction-checker) - Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your content. Fast and accurate.
+- [YouTube Subscribe Link Generator](https://sopkit.github.io/youtube-subscribe-link-generator) - Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for social media and bios.
+- [YouTube Tag Extractor](https://sopkit.github.io/youtube-tag-extractor) - Extract hidden tags from any YouTube video instantly. Our free online tool helps you discover the keywords used by top-performing creators to boost your own video SEO.
+- [YouTube Tag Generator](https://sopkit.github.io/youtube-tag-generator) - Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank higher in search results.
+- [YouTube Timestamp Link Generator](https://sopkit.github.io/youtube-timestamp-link-generator) - Create direct links to specific parts of any YouTube video instantly. Our free online tool helps you share precise moments with friends, students, or your audience. Fast and easy.
+- [YouTube Title Extractor](https://sopkit.github.io/youtube-title-extractor) - Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool.
+- [YouTube Title Length Checker](https://sopkit.github.io/youtube-title-length-checker) - Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is visible in search results.
+- [YouTube Video Count Checker](https://sopkit.github.io/youtube-video-count-checker) - Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel auditing.
+- [YouTube Video Statistics](https://sopkit.github.io/youtube-video-statistics) - Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool.
+- [Youtube Video Title Capitalizer](https://sopkit.github.io/youtube-title-capitalizer) - Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles stand out.
+- [YouTube Views Ratio Calculator](https://sopkit.github.io/youtube-views-ratio-calculator) - Calculate the view-to-engagement ratio for any YouTube video instantly. Our free online tool helps you understand audience interaction and video performance beyond just views.
+- [YouTube Title Generator](https://sopkit.github.io/youtube-title-generator) - Generate optimized youtube title generator details. Instantly copy or share customized outputs.
+- [YouTube Description Generator](https://sopkit.github.io/youtube-description-generator) - Generate optimized youtube description generator details. Instantly copy or share customized outputs.
+- [YouTube Thumbnail Text Generator](https://sopkit.github.io/youtube-thumbnail-text-generator) - Generate optimized youtube thumbnail text generator details. Instantly copy or share customized outputs.
+
+### Audio Tools
+
+- [Text to Speech](https://sopkit.github.io/text-to-speech) - Convert text to natural sounding speech audio
+- [Audio Tools](https://sopkit.github.io/audio-tools) - Compress and convert audio files between formats
+- [Guitar Tuner](https://sopkit.github.io/guitar-tuner) - Free online guitar tuner. Uses your microphone to tune your guitar accurately.
+
+### Developer Tools
+
+- [UUID/GUID Generator](https://sopkit.github.io/uuid-generator) - Generate unique UUID v4 and GUID strings instantly for your applications and databases.
+- [URL Slug Generator](https://sopkit.github.io/slug-generator) - Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages.
+- [JSON to TypeScript Interface](https://sopkit.github.io/json-to-typescript) - Convert JSON objects into clean TypeScript interfaces or type definitions automatically.
+- [SQL Formatter & Beautifier](https://sopkit.github.io/sql-formatter) - Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more.
+- [HTML Minifier](https://sopkit.github.io/html-minifier) - Compress and minify your HTML code instantly by removing comments and extra whitespace.
+- [User Agent Parser](https://sopkit.github.io/user-agent-parser) - Parse any User Agent string to detect Browser, OS, and Engine details instantly.
+- [YAML to JSON Converter](https://sopkit.github.io/yaml-to-json-converter) - Convert YAML configurations to clean JSON structures instantly. Safe & secure.
+- [JSON to YAML Converter](https://sopkit.github.io/json-to-yaml-converter) - Convert JSON configurations to clean YAML structures instantly. Safe & secure.
+- [HTML to XML Entities Converter](https://sopkit.github.io/html-to-xml-entities) - Convert HTML special characters into safe XML entities and display tags securely online.
+- [CSS Border Radius Generator](https://sopkit.github.io/css-border-radius-generator) - Generate CSS border-radius rules interactively with live shape previews and webkit/moz prefixes.
+- [Crontab Expression Generator](https://sopkit.github.io/crontab-generator) - Easily create and validate cron job expressions with our interactive visual generator.
+- [XML Formatter & Beautifier](https://sopkit.github.io/xml-formatter) - Clean and format messy XML data into a readable hierarchical structure.
+- [HTML Entity Encoder/Decoder](https://sopkit.github.io/html-entity-encoder) - Encode or decode HTML entities to prevent XSS or display special characters safely.
+- [Random Name Generator](https://sopkit.github.io/random-name-generator) - Generate random names for characters, personas, or test data with gender and niche options.
+- [Binary to Hex Converter](https://sopkit.github.io/binary-to-hex-converter) - Convert binary strings to hexadecimal values and vice versa instantly.
+- [JWT Decoder & Debugger](https://sopkit.github.io/jwt-decoder) - Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature.
+- [Amazon SES API Key Tester](https://sopkit.github.io/api-key-tester/amazon-ses) - Test your Amazon SES credentials with the send email endpoint.
+- [Anthropic Claude API Key Tester](https://sopkit.github.io/api-key-tester/anthropic) - Test your Anthropic Claude API key with the messages endpoint.
+- [ASCII to Binary Converter](https://sopkit.github.io/ascii-to-binary-converter) - Convert ASCII text to binary code instantly. Our free online converter is perfect for computer science students, developers, and hobbyists. Fast, secure, and browser-based.
+- [ASCII to Text Converter](https://sopkit.github.io/ascii-to-text-converter) - Convert ASCII character codes back to readable text instantly. Our free online tool makes it easy to decode ASCII sequences for development and debugging tasks.
+- [Attio API Key Tester](https://sopkit.github.io/api-key-tester/attio) - Test your Attio API key with the records endpoint.
+- [Binary to ASCII Converter](https://sopkit.github.io/binary-to-ascii-converter) - Transform binary code (0s and 1s) into readable ASCII text instantly. Our free online converter is fast, accurate, and works entirely in your browser. No signup required.
+- [Binary to Decimal Converter](https://sopkit.github.io/binary-to-decimal-converter) - Convert binary numbers to decimal (Base-10) instantly. Our free online converter helps you with computer science calculations and binary data analysis in seconds.
+- [Binary to HEX Converter](https://sopkit.github.io/binary-to-hex-converter) - Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast and secure.
+- [Binary to Octal Converter](https://sopkit.github.io/binary-to-octal-converter) - Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical students.
+- [Binary to Text Converter](https://sopkit.github.io/binary-to-text-converter) - Decode binary strings into readable text instantly. Our free online tool is perfect for discovering hidden messages or debugging data streams. 100% free and secure.
+- [Brevo API Key Tester](https://sopkit.github.io/api-key-tester/brevo) - Test your Brevo (Sendinblue) API key with the send email endpoint.
+- [Clearbit API Key Tester](https://sopkit.github.io/api-key-tester/clearbit) - Test your Clearbit API key with the company enrichment endpoint.
+- [Cohere API Key Tester](https://sopkit.github.io/api-key-tester/cohere) - Test your Cohere API key with the generate endpoint.
+- [Coresignal API Key Tester](https://sopkit.github.io/api-key-tester/coresignal) - Test your Coresignal API key with the companies endpoint.
+- [Crunchbase API Key Tester](https://sopkit.github.io/api-key-tester/crunchbase) - Test your Crunchbase API key with the organizations endpoint.
+- [CSS Beautifier](https://sopkit.github.io/css-beautifier) - Format and prettify your CSS code instantly with our free online CSS Beautifier. Improve code readability, fix indentation, and organize your stylesheets for better maintenance. Fast and secure.
+- [CSS Minifier](https://sopkit.github.io/css-minifier) - Compress and minify your CSS files to reduce page load times and improve website performance. Our free online tool removes unnecessary whitespace and comments instantly. Privacy-focused.
+- [CSV to JSON Converter](https://sopkit.github.io/csv-to-json-converter) - Convert CSV files to JSON format instantly. Our free online converter makes it easy to transform spreadsheet data into developer-friendly JSON code for web applications and APIs.
+- [Data Axle API Key Tester](https://sopkit.github.io/api-key-tester/data-axle) - Test your Data Axle API key with the business lookup endpoint.
+- [Datanyze API Key Tester](https://sopkit.github.io/api-key-tester/datanyze) - Test your Datanyze API key with the companies endpoint.
+- [Decimal to Binary Converter](https://sopkit.github.io/decimal-to-binary-converter) - Convert decimal numbers (Base-10) to binary code (Base-2) instantly. Our free online converter is perfect for students, developers, and data analysis tasks. Fast, secure, and accurate.
+- [Decimal to HEX Converter](https://sopkit.github.io/decimal-to-hex-converter) - Transform decimal numbers into hexadecimal format instantly. Our free online tool is perfect for web development, low-level programming, and color code analysis. Fast and private.
+- [Decimal to Octal Converter](https://sopkit.github.io/decimal-to-octal-converter) - Convert decimal numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for computer science and technical tasks. No signup required.
+- [Decimal to Text Converter](https://sopkit.github.io/decimal-to-text-converter) - Convert decimal character codes back to readable text instantly. Our free online tool helps you decode numeric data streams and debug text processing tasks in your browser.
+- [DeepSeek API Key Tester](https://sopkit.github.io/api-key-tester/deepseek) - Test your DeepSeek API key with the chat completions endpoint.
+- [Demandbase API Key Tester](https://sopkit.github.io/api-key-tester/demandbase) - Test your Demandbase API key with the accounts endpoint.
+- [Enrich API Key Tester](https://sopkit.github.io/api-key-tester/enrich) - Test your Enrich API key with the person enrichment endpoint.
+- [Freshdesk API Key Tester](https://sopkit.github.io/api-key-tester/freshdesk) - Test your Freshdesk API key with the tickets endpoint.
+- [FullContact API Key Tester](https://sopkit.github.io/api-key-tester/fullcontact) - Test your FullContact API key with the person enrichment endpoint.
+- [Google Gemini API Key Tester](https://sopkit.github.io/api-key-tester/google-gemini) - Test your Google Gemini API key with the generateContent endpoint.
+- [Groq API Key Tester](https://sopkit.github.io/api-key-tester/groq) - Test your Groq API key with the chat completions endpoint.
+- [HEX to Binary Converter](https://sopkit.github.io/hex-to-binary-converter) - Transform hexadecimal values into binary code instantly. Our free online HEX to Binary converter is perfect for developers, hardware engineers, and technical students. Fast and secure.
+- [HEX to Decimal Converter](https://sopkit.github.io/hex-to-decimal-converter) - Convert hexadecimal numbers to decimal (Base-10) instantly. Our free online tool provides quick and accurate base conversions for programming and memory address analysis.
+- [HEX to Octal Converter](https://sopkit.github.io/hex-to-octal-converter) - Convert hexadecimal values to octal format instantly. Our free online converter helps with computer science base transformations and data processing in your browser.
+- [HEX to Text Converter](https://sopkit.github.io/hex-to-text-converter) - Convert hexadecimal strings back to readable text instantly. Our free online HEX to Text tool is perfect for decoding data, debugging, and discovering hidden text streams.
+- [HG Insights API Key Tester](https://sopkit.github.io/api-key-tester/hg-insights) - Test your HG Insights API key with the companies endpoint.
+- [HTML Beautifier](https://sopkit.github.io/html-beautifier) - Format and prettify your HTML code instantly. Our free online HTML Beautifier fixes indentation, improves readability, and cleans up messy markup for better web development.
+- [HTML Decoder](https://sopkit.github.io/html-decoder) - Decode HTML entities back to their original characters instantly. Our free online tool converts &amp; and similar entities into readable text for easy debugging and content cleaning.
+- [HTML Encoder](https://sopkit.github.io/html-encoder) - Encode text into HTML entities instantly for secure web display. Our free online tool protects your markup by converting special characters into safe HTML-encoded strings.
+- [HTML Minifier](https://sopkit.github.io/html-minifier) - Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times.
+- [HubSpot API Key Tester](https://sopkit.github.io/api-key-tester/hubspot) - Test your HubSpot API key with the contacts endpoint.
+- [Intercom API Key Tester](https://sopkit.github.io/api-key-tester/intercom) - Test your Intercom access token with the me endpoint.
+- [JavaScript Beautifier](https://sopkit.github.io/javascript-beautifier) - Format and prettify your JavaScript code instantly. Our free online JS Beautifier improves code readability, fixes indentation, and helps you understand complex scripts easily.
+- [JavaScript DeObfuscator](https://sopkit.github.io/javascript-deobfuscator) - Make obfuscated JavaScript code readable again instantly. Our free online DeObfuscator reverses common obfuscation techniques to help with code analysis and debugging.
+- [JavaScript Minifier](https://sopkit.github.io/javascript-minifier) - Compress and minify your JavaScript files to reduce payload size and speed up your website. Our free online tool removes unnecessary code while preserving functionality.
+- [JavaScript Obfuscator](https://sopkit.github.io/javascript-obfuscator) - Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent unauthorized script modification.
+- [JSON Editor](https://sopkit.github.io/json-editor) - Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data perfectly.
+- [JSON Formatter](https://sopkit.github.io/json-formatter) - Format and beautify your JSON data instantly for better readability. Our free online tool validates your JSON structure and provides a clean, indented view of your code.
+- [JSON Minify](https://sopkit.github.io/json-minify) - Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly.
+- [JSON to CSV Converter](https://sopkit.github.io/json-to-csv-converter) - Convert JSON data to CSV format instantly. Our free online converter makes it easy to transform complex JSON structures into simple spreadsheet-ready tables.
+- [JSON to JSON Schema](https://sopkit.github.io/json-to-json-schema) - Generate a JSON Schema from your JSON data automatically. Our free online tool helps you define validation rules and document your JSON structure for APIs.
+- [JSON to Text Converter](https://sopkit.github.io/json-to-text-converter) - Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw data.
+- [JSON to TSV Converter](https://sopkit.github.io/json-to-tsv-converter) - Convert JSON data to Tab-Separated Values (TSV) format instantly. Our free online converter helps you prepare data for Excel and other spreadsheet applications.
+- [JSON to XML Converter](https://sopkit.github.io/json-to-xml-converter) - Convert JSON data to XML format instantly. Our free online tool handles nesting and attributes to ensure a clean transformation for legacy system compatibility.
+- [JSON Validator](https://sopkit.github.io/json-validator) - Validate your JSON data for syntax errors and structural integrity instantly. Our free online tool helps you catch bugs and ensure your JSON is RFC-compliant.
+- [JSON Viewer](https://sopkit.github.io/json-viewer) - Free json viewer tool to process your data instantly with privacy-friendly browser-based workflows.
+- [LeadGenius API Key Tester](https://sopkit.github.io/api-key-tester/leadgenius) - Test your LeadGenius API key with the companies endpoint.
+- [Leadspace API Key Tester](https://sopkit.github.io/api-key-tester/leadspace) - Test your Leadspace API key with the contacts endpoint.
+- [Loops API Key Tester](https://sopkit.github.io/api-key-tester/loops) - Test your Loops API key with the contacts endpoint.
+- [Lusha API Key Tester](https://sopkit.github.io/api-key-tester/lusha) - Test your Lusha API key with the contacts endpoint.
+- [Mailgun API Key Tester](https://sopkit.github.io/api-key-tester/mailgun) - Test your Mailgun API key with the messages endpoint.
+- [Mattermark API Key Tester](https://sopkit.github.io/api-key-tester/mattermark) - Test your Mattermark API key with the companies endpoint.
+- [Melissa API Key Tester](https://sopkit.github.io/api-key-tester/melissa) - Test your Melissa API key with the address verification endpoint.
+- [Octal to Binary Converter](https://sopkit.github.io/octal-to-binary-converter) - Convert octal numbers to binary code instantly. Our free online converter provides fast and accurate base transformations for computer science students and developers.
+- [Octal to Decimal Converter](https://sopkit.github.io/octal-to-decimal-converter) - Convert octal numbers to decimal (Base-10) instantly. Our free online tool makes it easy to transform numeric bases for programming and mathematical calculations.
+- [Octal to HEX Converter](https://sopkit.github.io/octal-to-hex-converter) - Transform octal values into hexadecimal format instantly. Our free online converter is perfect for low-level programming and memory address transformations.
+- [Octal to Text Converter](https://sopkit.github.io/octal-to-text-converter) - Convert octal character codes back to readable text instantly. Our free online tool helps you decode data streams and debug text processing tasks in your browser.
+- [OpenAI API Key Tester](https://sopkit.github.io/api-key-tester/openai) - Test your OpenAI API key with the models endpoint.
+- [People Data Labs API Key Tester](https://sopkit.github.io/api-key-tester/people-data-labs) - Test your People Data Labs API key with the person enrichment endpoint.
+- [Pipedrive API Key Tester](https://sopkit.github.io/api-key-tester/pipedrive) - Test your Pipedrive API token with the deals endpoint.
+- [Pipl API Key Tester](https://sopkit.github.io/api-key-tester/pipl) - Test your Pipl API key with the search endpoint.
+- [Postmark Server Token Tester](https://sopkit.github.io/api-key-tester/postmark) - Test your Postmark Server Token with the email sending endpoint.
+- [Resend API Key Tester](https://sopkit.github.io/api-key-tester/resend) - Test your Resend API key with the emails endpoint.
+- [SendGrid API Key Tester](https://sopkit.github.io/api-key-tester/sendgrid) - Test your SendGrid API key with the mail send endpoint.
+- [Snov.io API Key Tester](https://sopkit.github.io/api-key-tester/snov-io) - Test your Snov.io API key with the leads endpoint.
+- [SparkPost API Key Tester](https://sopkit.github.io/api-key-tester/sparkpost) - Test your SparkPost API key with the transmissions endpoint.
+- [Stripe API Key Tester](https://sopkit.github.io/api-key-tester/stripe) - Test your Stripe API key with the charges endpoint.
+- [Text to ASCII Converter](https://sopkit.github.io/text-to-ascii-converter) - Convert plain text into ASCII character codes instantly. Our free online tool provides decimal ASCII values for every character in your input string. Fast and secure.
+- [Text to Binary Converter](https://sopkit.github.io/text-to-binary-converter) - Translate text into binary code (0s and 1s) instantly. Our free online converter is perfect for learning how computers represent data and creating secret binary messages.
+- [Text to Decimal Converter](https://sopkit.github.io/text-to-decimal-converter) - Convert text characters into their decimal numeric equivalents instantly. Our free online tool is useful for debugging character encoding and understanding data representations.
+- [Text to HEX Converter](https://sopkit.github.io/text-to-hex-converter) - Convert plain text into hexadecimal format instantly. Our free online tool provides a clean hex representation of your input string for development and data analysis.
+- [Text to Octal Converter](https://sopkit.github.io/text-to-octal-converter) - Convert text into octal numeric values instantly. Our free online converter provides base-8 representations for every character in your text for technical analysis.
+- [TSV to JSON Converter](https://sopkit.github.io/tsv-to-json-converter) - Convert Tab-Separated Values (TSV) into JSON format instantly. Our free online tool makes it easy to transform structured data for web applications and API development.
+- [Twilio API Key Tester](https://sopkit.github.io/api-key-tester/twilio) - Test your Twilio Account SID and Auth Token with the messages endpoint.
+- [XML to JSON Converter](https://sopkit.github.io/xml-to-json-converter) - Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for web apps.
+- [Zendesk API Key Tester](https://sopkit.github.io/api-key-tester/zendesk) - Test your Zendesk API token with the tickets endpoint.
+- [ZoomInfo API Key Tester](https://sopkit.github.io/api-key-tester/zoominfo) - Test your ZoomInfo API key with the contacts endpoint.
+- [Base64 Tool](https://sopkit.github.io/base64-tool) - Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text format.
+- [CSS Gradient Generator](https://sopkit.github.io/css-gradient-generator) - Create beautiful CSS gradients for your web projects.
+- [CSS Shadow Generator](https://sopkit.github.io/css-shadow-generator) - Generate CSS box shadows and text shadows for modern web design.
+- [Code Formatter](https://sopkit.github.io/code-formatter) - Format and beautify HTML, CSS, JavaScript, and SQL code.
+
+### Utility Tools
+
+- [Adsense Calculator](https://sopkit.github.io/adsense-calculator) - Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Age Calculator](https://sopkit.github.io/age-calculator) - Free age calculator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Angle Converter](https://sopkit.github.io/angle-converter) - Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and accurate.
+- [Apparent Power Converter](https://sopkit.github.io/apparent-power-converter) - Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.
+- [Area Converter](https://sopkit.github.io/area-converter) - Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design projects.
+- [Average Calculator](https://sopkit.github.io/average-calculator) - Calculate the mean, median, mode, and range of any dataset instantly. Our free online Average Calculator helps you analyze statistics and numeric data in seconds.
+- [Base64 Decode](https://sopkit.github.io/base64-decode) - Decode Base64 strings back to their original plain text instantly. Our privacy-first tool processes everything in your browser, ensuring your data never leaves your device.
+- [Base64 Encode](https://sopkit.github.io/base64-encode) - Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in web URLs.
+- [Charge Converter](https://sopkit.github.io/charge-converter) - Convert between coulombs, millicoulombs, and other electrical charge units instantly. Our free online tool provides quick and accurate physics base transformations.
+- [Color Converter](https://sopkit.github.io/color-converter) - Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision.
+- [Confidence Interval Calculator](https://sopkit.github.io/confidence-interval-calculator) - Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your research.
+- [Convert SRT to VTT](https://sopkit.github.io/convert-srt-to-vtt) - Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming platforms.
+- [Convert VTT to SRT](https://sopkit.github.io/convert-vtt-to-srt) - Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players.
+- [CPM Calculator](https://sopkit.github.io/cpm-calculator) - Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach efficiency.
+- [Credit Card Generator](https://sopkit.github.io/credit-card-generator) - Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks without being real cards.
+- [Credit Card Validator](https://sopkit.github.io/credit-card-validator) - Check if a credit card number is valid using the Luhn algorithm instantly. Our free online tool helps you verify card formats and identify card types for testing purposes.
+- [Currency Converter](https://sopkit.github.io/currency-converter) - Convert currencies with real-time exchange rates instantly. Our free online tool supports all major global currencies for travel, business, and financial planning.
+- [Current Converter](https://sopkit.github.io/current-converter) - Convert between amperes, milliamperes, and other electrical current units instantly. Our free online tool is perfect for electronics and electrical engineering tasks.
+- [Digital Converter](https://sopkit.github.io/digital-converter) - Convert between bytes, kilobytes, megabytes, and gigabytes instantly. Our free online tool helps you understand data storage and file sizes in seconds.
+- [Disclaimer Generator](https://sopkit.github.io/disclaimer-generator) - Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal requirements.
+- [Discount Calculator](https://sopkit.github.io/discount-calculator) - Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping.
+- [DNS Records Checker](https://sopkit.github.io/dns-records-checker) - Retrieve all DNS records (A, MX, TXT, CNAME) for any domain instantly. Our free online tool helps you troubleshoot website hosting and email configuration issues.
+- [Domain Age Checker](https://sopkit.github.io/domain-age-checker) - Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis.
+- [Domain to IP Converter](https://sopkit.github.io/domain-to-ip-converter) - Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues.
+- [Each Converter](https://sopkit.github.io/each-converter) - Free each converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Energy Converter](https://sopkit.github.io/energy-converter) - Free energy converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Facebook ID Finder](https://sopkit.github.io/facebook-id-finder) - Free facebook id finder tool to process your data instantly with privacy-friendly browser-based workflows.
+- [FAQ Schema Generator](https://sopkit.github.io/faq-schema-generator) - Free faq schema generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Frequency Converter](https://sopkit.github.io/frequency-converter) - Free frequency converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Get HTTP Headers](https://sopkit.github.io/get-http-headers) - Free get http headers tool to process your data instantly with privacy-friendly browser-based workflows.
+- [GST Calculator](https://sopkit.github.io/gst-calculator) - Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [HEX to RGB Converter](https://sopkit.github.io/hex-to-rgb-converter) - Free hex to rgb converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Hosting Checker](https://sopkit.github.io/hosting-checker) - Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Htaccess Redirect Generator](https://sopkit.github.io/htaccess-redirect-generator) - Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [HTTP Status Code Checker](https://sopkit.github.io/http-status-code-checker) - Free http status code checker tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Illuminance Converter](https://sopkit.github.io/illuminance-converter) - Free illuminance converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [IndexNow Submitter](https://sopkit.github.io/indexnow) - Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol.
+- [Internet Speed Test](https://sopkit.github.io/internet-speed-test) - Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.
+- [IP Address Lookup](https://sopkit.github.io/ip-address-lookup) - Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Length Converter](https://sopkit.github.io/length-converter) - Free length converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Loan Calculator](https://sopkit.github.io/loan-calculator) - Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Margin Calculator](https://sopkit.github.io/margin-calculator) - Free margin calculator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [MD5 Generator](https://sopkit.github.io/md5-generator) - Free md5 generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Number to Roman Numerals](https://sopkit.github.io/number-to-roman-numerals) - Free number to roman numerals tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Pace Converter](https://sopkit.github.io/pace-converter) - Free pace converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Page Size Checker](https://sopkit.github.io/page-size-checker) - Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Parts Per Converter](https://sopkit.github.io/parts-per-converter) - Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [ASCII Art Generator](https://sopkit.github.io/ascii-art-generator) - Convert images into text-based ASCII art online. Customize resolution and contrast for the perfect text-based representation.
+- [Secure Password Generator](https://sopkit.github.io/secure-password-generator) - Create cryptographically secure, random passwords online. Customize length, character sets, and verify strength locally.
+- [Password Generator](https://sopkit.github.io/password-generator) - Create strong, secure passwords instantly with customizable settings.
+- [Paypal Fee Calculator](https://sopkit.github.io/paypal-fee-calculator) - Free paypal fee calculator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Percentage Calculator](https://sopkit.github.io/percentage-calculator) - Free percentage calculator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Power Converter](https://sopkit.github.io/power-converter) - Free power converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Pressure Converter](https://sopkit.github.io/pressure-converter) - Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Privacy Policy Generator](https://sopkit.github.io/privacy-policy-generator) - Free privacy policy generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Probability Calculator](https://sopkit.github.io/probability-calculator) - Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [QR Code Decoder](https://sopkit.github.io/qr-code-decoder) - Free qr code decoder tool to process your data instantly with privacy-friendly browser-based workflows.
+- [QR Code Generator](https://sopkit.github.io/qr-code-generator) - Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Random UUID Generator](https://sopkit.github.io/random-uuid-generator) - Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Reactive Energy Converter](https://sopkit.github.io/reactive-energy-converter) - Free reactive energy converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Reactive Power Converter](https://sopkit.github.io/reactive-power-converter) - Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Redirect Checker](https://sopkit.github.io/redirect-checker) - Free redirect checker tool to process your data instantly with privacy-friendly browser-based workflows.
+- [RGB to HEX Converter](https://sopkit.github.io/rgb-to-hex-converter) - Free rgb to hex converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Roman Numerals to Number](https://sopkit.github.io/roman-numerals-to-number) - Free roman numerals to number tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Sales Tax Calculator](https://sopkit.github.io/sales-tax-calculator) - Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Screen Resolution Simulator](https://sopkit.github.io/screen-resolution-simulator) - Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Server Status Checker](https://sopkit.github.io/server-status-checker) - Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Speed Converter](https://sopkit.github.io/speed-converter) - Free speed converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Temperature Converter](https://sopkit.github.io/temperature-converter) - Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Time Converter](https://sopkit.github.io/time-converter) - Free time converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Torque Converter](https://sopkit.github.io/torque-converter) - Free torque converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [URL Decode](https://sopkit.github.io/url-decode) - Free url decode tool to process your data instantly with privacy-friendly browser-based workflows.
+- [URL Encode](https://sopkit.github.io/url-encode) - Free url encode tool to process your data instantly with privacy-friendly browser-based workflows.
+- [URL Opener](https://sopkit.github.io/url-opener) - Free url opener tool to process your data instantly with privacy-friendly browser-based workflows.
+- [URL Parser](https://sopkit.github.io/url-parser) - Free url parser tool to process your data instantly with privacy-friendly browser-based workflows.
+- [URL Rewriting Tool](https://sopkit.github.io/url-rewriting-tool) - Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows.
+- [URL Shortener](https://sopkit.github.io/url-shortener) - Shorten long URLs for easier sharing
+- [UTM Builder](https://sopkit.github.io/utm-builder) - Easily build campaign URLs with UTM parameters for Google Analytics tracking.
+- [Voltage Converter](https://sopkit.github.io/voltage-converter) - Free voltage converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Volume Converter](https://sopkit.github.io/volume-converter) - Free volume converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Volumetric Flow Rate Converter](https://sopkit.github.io/volumetric-flow-rate-converter) - Free volumetric flow rate converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Weight Converter](https://sopkit.github.io/weight-converter) - Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [What Is My Browser](https://sopkit.github.io/what-is-my-browser) - Free what is my browser tool to process your data instantly with privacy-friendly browser-based workflows.
+- [What Is My IP Address](https://sopkit.github.io/what-is-my-ip-address) - Free what is my ip address tool to process your data instantly with privacy-friendly browser-based workflows.
+- [What Is My Screen Resolution](https://sopkit.github.io/what-is-my-screen-resolution) - Free what is my screen resolution tool to process your data instantly with privacy-friendly browser-based workflows.
+- [What Is My User Agent](https://sopkit.github.io/what-is-my-user-agent) - Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Whois Domain Lookup](https://sopkit.github.io/whois-domain-lookup) - Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows.
+- [WordPress Theme Detector](https://sopkit.github.io/wordpress-theme-detector) - Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Other Tools](https://sopkit.github.io/other-tools) - Free Other Tools online tool. Fast and secure.
+- [Text Tools](https://sopkit.github.io/text-tools) - Format, convert, and manipulate text content
+- [WhatsApp Link Generator](https://sopkit.github.io/whatsapp-link-generator) - Generate optimized whatsapp link generator details. Instantly copy or share customized outputs.
+- [QR Code Generator for Business](https://sopkit.github.io/qr-code-generator-business) - Generate optimized qr code generator for business details. Instantly copy or share customized outputs.
+- [Terms and Conditions Generator](https://sopkit.github.io/terms-and-conditions-generator) - Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability.
+
+### SEO Tools
+
+- [Domain Name Generator](https://sopkit.github.io/domain-name-generator) - Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free.
+- [Website Cost Calculator](https://sopkit.github.io/website-cost-calculator) - Estimate how much a website may cost based on pages, design quality, and features like ecommerce.
+- [SEO Title & Meta Description Generator](https://sopkit.github.io/seo-title-meta-description-generator) - Generate SEO-friendly page titles and meta descriptions for blogs, tools, and landing pages.
+- [Robots.txt and Sitemap Generator](https://sopkit.github.io/robots-txt-sitemap-generator) - Generate robots.txt and sitemap.xml files for your website to improve crawling and indexing.
+- [Advanced Keyword Research](https://sopkit.github.io/keyword-research-tool) - Comprehensive keyword research tool with search volume, difficulty, CPC data, and keyword suggestions. Find profitable keywords for SEO.
+- [Advanced Sitemap Generator](https://sopkit.github.io/sitemap-generator) - Generate XML sitemaps for any website URL. Crawl websites and create comprehensive sitemaps with proper formatting and metadata.
+- [Complete SEO Audit Tool](https://sopkit.github.io/seo-audit-tool) - Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations.
+- [Backlink Checker](https://sopkit.github.io/backlink-checker) - Analyze backlinks for any website with our free backlink checker. Discover referring domains, anchor texts, and link quality metrics instantly. No signup required, unlimited checks, SEO-grade data.
+- [Bulk Keyword Rank Checker](https://sopkit.github.io/bulk-keyword-rank-checker) - Check Google rankings for multiple keywords instantly with our free bulk keyword rank checker. Track keyword positions, monitor competitors, and get accurate SERP data. No signup required.
+- [Google Cache Checker](https://sopkit.github.io/google-cache-checker) - Free google cache checker tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Google Index Checker](https://sopkit.github.io/google-index-checker) - Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Keyword Density Checker](https://sopkit.github.io/keyword-density-checker) - Free keyword density checker tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Keywords Suggestion Tool](https://sopkit.github.io/keywords-suggestion-tool) - Free keywords suggestion tool tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Meta Tag Generator](https://sopkit.github.io/meta-tag-generator) - Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Open Graph Checker](https://sopkit.github.io/open-graph-checker) - Free open graph checker tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Open Graph Generator](https://sopkit.github.io/open-graph-generator) - Free open graph generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [SEO Toolkit](https://sopkit.github.io/seotoolkit) - All-in-one SEO audit and analysis tool. 27+ checks.
+- [Twitter Card Generator](https://sopkit.github.io/twitter-card-generator) - Free twitter card generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Visual Sitemap Generator](https://sopkit.github.io/visual-sitemap) - Visualize your website's sitemap structure instantly. Enter your XML sitemap URL to generate a dynamic tree view of your site hierarchy.
+- [Website Ranking Checker](https://sopkit.github.io/website-ranking-checker) - Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Sitemap Url Downloader](https://sopkit.github.io/sitemap-url-downloader) - Free Sitemap Url Downloader online. Sitemap Url Downloader allows you to optimize your website quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
+
+### Other Tools
+
+- [About](https://sopkit.github.io/about) - Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
+- [Blog](https://sopkit.github.io/blog) - Free Blog online. Blog allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
+- [Contact](https://sopkit.github.io/contact) - Free Contact online. Contact allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
+- [Search All Tools](https://sopkit.github.io/search) - Search and browse our collection of 300+ free online tools. 100% free, no signup required.
+- [Fun Generators](https://sopkit.github.io/generators) - Create viral content with AI-powered fun generators
+- [Developer Tools](https://sopkit.github.io/developer-tools) - Format JSON, generate hashes, and developer utilities
+
+### Company
+
+- [Free Privacy Policy Online](https://sopkit.github.io/privacy) - Read the SopKit Privacy Policy. We explain what data we collect, how we protect it, and how our privacy-first browser-based tools work. No signup required.
+- [Free Terms of Use Online](https://sopkit.github.io/terms) - Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.
+
+### Guides & Comparisons
+
+- [Best Free Tools for Students (2026)](https://sopkit.github.io/best-free-tools-for-students) - Discover the best free tools for students in 2026. Improve writing, formatting, assignments, and study productivity with no-signup online tools.
+- [Tools for Developers - Free Online Stack](https://sopkit.github.io/tools-for-developers) - A practical collection of free tools for developers: JSON utilities, encoding, text transformers, validators, and conversion helpers.
+- [SEO Tools Free Online - Ranked Picks (2026)](https://sopkit.github.io/seo-tools-free-online) - Use free online SEO tools for audits, keyword planning, metadata generation, and indexing checks. Built for creators, agencies, and developers.
+- [AI Tools Alternatives Free - Practical Picks](https://sopkit.github.io/ai-tools-alternatives-free) - Explore free AI tool alternatives for writing, image creation, voice generation, and content ideation without subscriptions.
+- [Best Free Alternative to ChatGPT for Daily Tasks](https://sopkit.github.io/best-free-alternative-to-chatgpt) - Looking for a free ChatGPT alternative? Build a focused stack for writing, metadata, image generation, and voice tasks with free online tools.
+- [Top 10 Free Online Tools for SEO (2026)](https://sopkit.github.io/top-10-free-online-tools-for-seo) - Top 10 free SEO tools for keyword research, audits, metadata, indexing checks, and sitemaps. Ranked for speed and daily SEO workflows.
+- [Top 10 JSON Tools Online for Faster Developer Workflows](https://sopkit.github.io/top-10-json-tools-online) - A practical list of the top 10 JSON tools online for formatting, validation, conversion, and schema-ready payload workflows.
+- [How to Format JSON Properly (Without Breaking Data)](https://sopkit.github.io/how-to-format-json-properly) - Learn how to format JSON correctly with a simple workflow for validation, cleanup, and conversion-safe output.
+- [Best Free Converters in 2026 (File, Data, and Media)](https://sopkit.github.io/best-free-converters-in-2026) - The best free converters in 2026 for JSON, CSV, XML, images, and documents. No signup required.
+
+### Blog
+
+
+### Calculators
+
+- [Roman Numerals Converter](https://sopkit.github.io/roman-numerals-converter) - Convert numbers to Roman numerals and vice versa instantly. Supports large numbers and historical formats.
+- [Number to Words Converter](https://sopkit.github.io/number-to-words-converter) - Convert any number into words (English, Indian numbering system) for cheques, invoices, and documents.
+- [Date Difference Calculator](https://sopkit.github.io/date-difference-calculator) - Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes.
+- [Working Days Calculator](https://sopkit.github.io/working-days-calculator) - Calculate the number of working days or business days between two dates, excluding weekends and holidays.
+- [GPA to 4.0 Scale Converter](https://sopkit.github.io/gpa-to-4-scale-converter) - Convert your Indian percentage or 10-point CGPA into the standard US 4.0 GPA scale for study abroad.
+- [Recurring Deposit (RD) Calculator](https://sopkit.github.io/rd-calculator) - Calculate the maturity amount and interest earned on your monthly Recurring Deposit (RD) investments.
+- [Gratuity Calculator (India)](https://sopkit.github.io/gratuity-calculator) - Estimate your gratuity amount based on your last drawn salary and years of service in India.
+- [EPF Calculator (Employee Provident Fund)](https://sopkit.github.io/epf-calculator) - Calculate your EPF maturity amount based on your basic salary, monthly contribution, and current interest rate.
+- [Invoice Generator India with GST](https://sopkit.github.io/invoice-generator-india) - Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free.
+- [GST Calculator India](https://sopkit.github.io/gst-calculator-india) - Calculate GST amount, inclusive/exclusive price, CGST, SGST, and IGST for Indian invoices instantly.
+- [EMI Calculator for Loans](https://sopkit.github.io/emi-calculator) - Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans.
+- [SIP Calculator India](https://sopkit.github.io/sip-calculator) - Calculate estimated SIP returns and wealth growth for mutual fund investments online for free.
+- [FD Calculator India](https://sopkit.github.io/fd-calculator-india) - Calculate fixed deposit maturity amount and interest with quarterly compounding for Indian banks.
+- [Salary Calculator India (CTC to In-Hand)](https://sopkit.github.io/salary-calculator-india) - Calculate your monthly in-hand salary from annual CTC with PF, professional tax, and income tax deductions.
+- [CGPA to Percentage Calculator for Indian Universities](https://sopkit.github.io/cgpa-to-percentage-calculator-india) - Convert your CGPA into percentage using common Indian university formulas like CBSE 9.5x, VTU, Mumbai University, DU, AKTU, and Anna University.
+- [SGPA to CGPA Calculator](https://sopkit.github.io/sgpa-to-cgpa-calculator) - Calculate your cumulative GPA (CGPA) from semester-wise SGPA values. Supports credit-weighted and simple average methods.
+- [Attendance Shortage Calculator](https://sopkit.github.io/attendance-shortage-calculator) - Calculate how many classes you need to attend to reach 75% attendance or how many classes you can safely miss.
+- [Exam Marks Needed Calculator](https://sopkit.github.io/marks-needed-calculator) - Find out exactly how many marks you need in your final exam to pass or reach your target grade based on internal scores.
+- [75% Attendance Calculator](https://sopkit.github.io/75-attendance-calculator) - Calculate how many classes you need to attend or can safely skip to maintain a minimum 75% attendance rate.
+- [SGPA Calculator](https://sopkit.github.io/sgpa-calculator) - Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.
+- [CGPA Calculator](https://sopkit.github.io/cgpa-calculator) - Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.
+- [CGPA to Percentage Calculator](https://sopkit.github.io/cgpa-to-percentage-calculator) - Convert your CGPA to equivalent percentage marks using standard university formulas (like CBSE 9.5x).
+- [Required Marks Calculator](https://sopkit.github.io/required-marks-calculator) - Find out exactly how many marks you need to score in your final exam to achieve your target grade or pass.
+- [Brick Calculator](https://sopkit.github.io/brick-calculator) - Calculate the total number of bricks, cement bags, and sand volume required for building a wall.
+- [Paint Calculator](https://sopkit.github.io/paint-calculator) - Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.
+- [Tile Calculator](https://sopkit.github.io/tile-calculator) - Calculate the total number of floor or wall tiles needed for a room, including waste margins and cost estimates.
+- [Compound Interest Calculator](https://sopkit.github.io/compound-interest-calculator) - Calculate compound interest and future value with regular contributions. See how your savings or investments grow over time, free and instant.
+- [Mortgage Calculator](https://sopkit.github.io/mortgage-calculator) - Estimate your monthly mortgage payment, total interest, and total cost from home price, down payment, rate, and term. Free, no signup.
+- [Car Loan Calculator](https://sopkit.github.io/car-loan-calculator) - Work out your monthly car payment and total interest from vehicle price, down payment, trade-in, APR, and term. Free auto loan calculator.
+- [ROI Calculator](https://sopkit.github.io/roi-calculator) - Calculate return on investment, net gain, and annualized ROI from your initial and final values. Free investment return calculator.
+- [Savings Goal Calculator](https://sopkit.github.io/savings-goal-calculator) - Find the monthly deposit needed to reach a savings goal by a target date, including interest. Free savings planning calculator.
+- [Tip Calculator](https://sopkit.github.io/tip-calculator) - Calculate the tip, total, and amount per person for any bill. Quick gratuity and bill-splitting calculator, free and no signup.
+- [BMI Calculator](https://sopkit.github.io/bmi-calculator) - Calculate your Body Mass Index from height and weight and see your BMI category. Free, private BMI calculator that runs in your browser.
+- [Fuel Cost Calculator](https://sopkit.github.io/fuel-cost-calculator) - Estimate the fuel needed and total cost for a trip from distance, fuel economy, and price per litre. Free trip fuel cost calculator.
+- [Inflation Calculator](https://sopkit.github.io/inflation-calculator) - See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.
+- [Break-Even Calculator](https://sopkit.github.io/break-even-calculator) - Calculate the break-even point in units and revenue from fixed costs, variable cost per unit, and selling price. Free business calculator.
+- [Food Cost Calculator](https://sopkit.github.io/food-cost-calculator) - Calculate your food cost calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [Freelance Rate Calculator](https://sopkit.github.io/freelance-rate-calculator) - Calculate your freelance rate calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [Rent Affordability Calculator](https://sopkit.github.io/rent-affordability-calculator) - Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [Home Loan Eligibility Calculator](https://sopkit.github.io/home-loan-eligibility-calculator) - Calculate your home loan eligibility calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [Property ROI Calculator](https://sopkit.github.io/property-roi-calculator) - Calculate your property roi calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [Calorie Deficit Calculator](https://sopkit.github.io/calorie-deficit-calculator) - Calculate your calorie deficit calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [Protein Intake Calculator](https://sopkit.github.io/protein-intake-calculator) - Calculate your protein intake calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [BMI + Ideal Weight Calculator](https://sopkit.github.io/bmi-ideal-weight-calculator) - Calculate your bmi + ideal weight calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [Daily Water Intake Calculator](https://sopkit.github.io/water-intake-calculator) - Calculate your daily water intake calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [Profit Margin Calculator](https://sopkit.github.io/profit-margin-calculator) - Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns.
+
+### Exam Image & Form Tools
+
+- [SSC Photo and Signature Resizer](https://sopkit.github.io/ssc-photo-signature-resizer) - Resize and compress SSC photo (20-50KB) and signature (10-20KB) online for government exam forms. 100% compliant with SSC requirements.
+- [UPSC Photo Resizer 350x350](https://sopkit.github.io/upsc-photo-resizer-350x350) - Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms.
+- [NEET Photo & Signature Resizer](https://sopkit.github.io/neet-photo-signature-resizer) - Resize and compress NEET photo and signature for application forms. Adjust size, dimensions, format, and file limit online.
+- [UPSC Photo Resizer](https://sopkit.github.io/upsc-photo-resizer) - Resize your photo and signature to meet the exact dimensions (350x350 pixels) and file size (20KB - 300KB) specified for UPSC IAS/IFS application forms.
+- [SSC Photo Resizer](https://sopkit.github.io/ssc-photo-resizer) - Resize and compress SSC photos to 350x450 pixels and 20KB-50KB, plus resize signatures to 10KB-20KB. No signup required.
+- [Signature Resizer Under 20KB](https://sopkit.github.io/signature-resizer-under-20kb) - Resize and compress signatures under 20KB for exam forms, job applications, and government portals. Free browser-based signature compressor.
+- [NEET Photo Resizer](https://sopkit.github.io/neet-photo-resizer) - Resize and compress NEET application photos and signatures for online form uploads. Free, private, and no signup required.
+- [JEE Photo Resizer](https://sopkit.github.io/jee-photo-resizer) - Prepare JEE Main photo and signature images for online application forms with browser-based resize and compression.
+- [CUET Photo Resizer](https://sopkit.github.io/cuet-photo-resizer) - Resize CUET photos and signatures for application forms using a free browser-based image resizer and compressor.
+- [Railway Exam Photo Resizer](https://sopkit.github.io/railway-exam-photo-resizer) - Resize photos and signatures for railway exam forms, including RRB and recruitment portal uploads.
+- [Bank Exam Photo Resizer](https://sopkit.github.io/ibps-photo-resizer) - Resize and compress photos and signatures for IBPS, SBI, and bank exam application forms.
+- [PAN Card Photo Resizer](https://sopkit.github.io/pan-card-photo-resizer) - Resize PAN card photos and signatures for online application forms with safe browser processing.
+- [Passport Photo Maker India](https://sopkit.github.io/passport-photo-maker) - Create passport-style photos for Indian forms and documents with crop, resize, and compression controls.
+- [Photo Compressor Under 50KB](https://sopkit.github.io/photo-compressor-under-50kb) - Compress exam photos under 50KB for application forms while keeping face details readable.
+- [Form Image Size Checker](https://sopkit.github.io/form-image-size-checker) - Check image dimensions, file size, format, and DPI before uploading photos or signatures to online forms.
+- [Photo Name Date Editor](https://sopkit.github.io/photo-name-date-editor) - Add name and date text to exam photos when an application form requires it.
+- [JPG to PDF for Exam Forms](https://sopkit.github.io/jpg-to-pdf-exam-forms) - Convert photos and documents to PDF for online exam forms with file-size friendly output.
+- [PDF Compressor Under 200KB](https://sopkit.github.io/pdf-compressor-under-200kb) - Compress PDF files under 200KB for exam, job, and government form uploads.
+
+### Health & Fitness
+
+- [BMR Calculator (Basal Metabolic Rate)](https://sopkit.github.io/bmr-calculator) - Calculate your Basal Metabolic Rate (BMR) to understand how many calories your body burns at rest.
+- [TDEE Calculator](https://sopkit.github.io/tdee-calculator) - Calculate your Total Daily Energy Expenditure (TDEE) based on your activity level and fitness goals.
+- [Macro Calculator](https://sopkit.github.io/macro-calculator) - Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance.
+- [Water Intake Calculator](https://sopkit.github.io/water-intake-calculator) - Find out exactly how much water you should drink daily based on your weight and exercise habits.
+- [Ideal Body Weight Calculator](https://sopkit.github.io/ideal-body-weight-calculator) - Determine your healthy weight range based on your height, age, and gender using standard formulas.
+- [Body Fat Percentage Calculator](https://sopkit.github.io/body-fat-calculator) - Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness.

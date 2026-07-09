@@ -121,7 +121,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		seoOpportunityPages.forEach(page => extraSlugsSet.delete(page.url));
 		intentPages.forEach(page => extraSlugsSet.delete(page.url));
 
-		// Deduplicate by URL to avoid duplicate sitemap entries
+		// Deduplicate by URL to avoid duplicate sitemap entries.
+		// NOTE: URLs are emitted WITH a trailing slash to stay consistent with the
+		// canonical URLs declared in page metadata (the dominant form across the site).
 		const allPages = [...staticPages, ...toolPages, ...blogPages, ...seoOpportunityPages, ...intentPages];
 		const seen = new Set<string>();
 		return allPages
@@ -138,7 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 				}
 				return {
 					...page,
-					url
+					url,
 				};
 			});
 	} catch (error) {
@@ -150,7 +152,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			}
 			return {
 				...page,
-				url
+				url,
 			};
 		});
 	}

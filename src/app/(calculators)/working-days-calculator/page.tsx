@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Working Days Calculator Online Free | SopKit",
 	description: "Calculate the number of working days or business days between two dates, excluding weekends and holidays. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/working-days-calculator",
+		canonical: "https://sopkit.github.io/working-days-calculator/",
 	},
 	openGraph: {
 		title: "Working Days Calculator Online Free - No Signup | SopKit",

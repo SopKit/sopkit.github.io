@@ -8,7 +8,7 @@ export const metadata = {
 	title: "SQL Formatter & Beautifier Online Free | SopKit",
 	description: "Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/sql-formatter",
+		canonical: "https://sopkit.github.io/sql-formatter/",
 	},
 	openGraph: {
 		title: "SQL Formatter & Beautifier Online Free - No Signup | SopKit",

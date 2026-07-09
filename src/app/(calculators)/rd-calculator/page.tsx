@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Recurring Deposit (RD) Calculator Online Free | SopKit",
 	description: "Calculate the maturity amount and interest earned on your monthly Recurring Deposit (RD) investments. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/rd-calculator",
+		canonical: "https://sopkit.github.io/rd-calculator/",
 	},
 	openGraph: {
 		title: "Recurring Deposit (RD) Calculator Online Free - No Signup | SopKit",

@@ -8,7 +8,7 @@ export const metadata = {
 	title: "Crontab Expression Generator Online Free | SopKit",
 	description: "Easily create and validate cron job expressions with our interactive visual generator. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: "https://sopkit.github.io/crontab-generator",
+		canonical: "https://sopkit.github.io/crontab-generator/",
 	},
 	openGraph: {
 		title: "Crontab Expression Generator Online Free - No Signup | SopKit",
