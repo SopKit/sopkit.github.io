@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "WhatsApp Link Generator - Free Online Tool | SopKit",
 		description: "Generate optimized whatsapp link generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/whatsapp-link-generator",
+		url: "https://sopkit.github.io/whatsapp-link-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -44,7 +44,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/whatsapp-link-generator",
+						url: "https://sopkit.github.io/whatsapp-link-generator/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {

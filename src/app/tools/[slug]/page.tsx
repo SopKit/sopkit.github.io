@@ -15,7 +15,7 @@ export const metadata = {
 	openGraph: {
 		title: "Tools/[Slug] Online Free - No Signup | SopKit",
 		description: "Free online Tools/[Slug] tool. Fast, secure, and privacy-focused browser utility. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/tools/[slug]",
+		url: "https://sopkit.github.io/tools/[slug]/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -26,7 +26,7 @@ export const metadata = {
 		description: "Free online Tools/[Slug] tool. Fast, secure, and privacy-focused browser utility. No signup, no uploads, 100% private browser-based tool.",
 		images: ["/og-image.jpg"],
 	},
-	robots: { index: true, follow: true },
+	robots: { index: false, follow: true },
 };
 
 export default async function ToolsSlugPage({ params }: PageProps) {

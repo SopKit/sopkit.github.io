@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Sales Tax Calculator Online Free - No Signup",
 		description: "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/sales-tax-calculator",
+		url: "https://sopkit.github.io/sales-tax-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

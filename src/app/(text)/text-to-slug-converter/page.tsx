@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Text to Slug Converter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Text to Slug Converter online. Fast and private browser utility with no signup. Easy to use.",
-		url: "https://sopkit.github.io/text-to-slug-converter",
+		url: "https://sopkit.github.io/text-to-slug-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

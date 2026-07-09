@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Refund Policy Generator - Free Online Tool | SopKit",
 		description: "Generate optimized refund policy generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/refund-policy-generator",
+		url: "https://sopkit.github.io/refund-policy-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -44,7 +44,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/refund-policy-generator",
+						url: "https://sopkit.github.io/refund-policy-generator/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {

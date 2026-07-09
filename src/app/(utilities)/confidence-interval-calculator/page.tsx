@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Confidence Interval Calculator Online Free - No Signup",
 		description: "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your rese",
-		url: "https://sopkit.github.io/confidence-interval-calculator",
+		url: "https://sopkit.github.io/confidence-interval-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

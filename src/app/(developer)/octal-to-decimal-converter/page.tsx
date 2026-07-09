@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Octal to Decimal Converter Online Free - No Signup",
 		description: "Convert octal numbers to decimal (Base-10) instantly. Our free online tool makes it easy to transform numeric bases for programming and mathematical calculation",
-		url: "https://sopkit.github.io/octal-to-decimal-converter",
+		url: "https://sopkit.github.io/octal-to-decimal-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

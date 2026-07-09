@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Htaccess Redirect Generator Online Free - No Signup",
 		description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-",
-		url: "https://sopkit.github.io/htaccess-redirect-generator",
+		url: "https://sopkit.github.io/htaccess-redirect-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

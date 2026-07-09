@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
 		openGraph: {
 			title,
 			description,
-			url: `https://sopkit.github.io/image-converter/${slug}`,
+			url: `https://sopkit.github.io/image-converter/${slug}/`,
 			siteName: "SopKit",
 			images: [{ url: "/og-image.jpg" }],
 			type: "website",
@@ -274,7 +274,7 @@ export default async function ToolPage({ params }: any) {
 						"@type": "SoftwareApplication",
 						name: name,
 						description: `Free ${name} online tool. Fast and secure.`,
-						url: `https://sopkit.github.io/image-converter/${slug}`,
+						url: `https://sopkit.github.io/image-converter/${slug}/`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

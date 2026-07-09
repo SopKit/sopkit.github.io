@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Credit Card Validator Online Free - No Signup",
 		description: "Check if a credit card number is valid using the Luhn algorithm instantly. Our free online tool helps you verify card formats and identify card types for testin",
-		url: "https://sopkit.github.io/credit-card-validator",
+		url: "https://sopkit.github.io/credit-card-validator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

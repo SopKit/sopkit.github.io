@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Tip Calculator - Split the Bill | SopKit",
 		description: "Calculate the tip, total, and amount per person for any bill. Quick gratuity and bill-splitting calculator, free and no signup.",
-		url: "https://sopkit.github.io/tip-calculator",
+		url: "https://sopkit.github.io/tip-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

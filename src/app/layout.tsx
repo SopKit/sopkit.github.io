@@ -130,7 +130,7 @@ export const metadata: Metadata = {
 		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
 		url: "https://sopkit.github.io/",
 		siteName: "SopKit",
-		images: [{ url: "https://sopkit.github.io/og-image.png", width: 1200, height: 630 }],
+		images: [{ url: "https://sopkit.github.io/og-image.png/", width: 1200, height: 630 }],
 		locale: "en_US",
 		type: "website",
 	},

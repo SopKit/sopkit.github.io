@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Currency Converter Online Free - No Signup",
 		description: "Convert currencies with real-time exchange rates instantly. Our free online tool supports all major global currencies for travel, business, and financial planni",
-		url: "https://sopkit.github.io/currency-converter",
+		url: "https://sopkit.github.io/currency-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

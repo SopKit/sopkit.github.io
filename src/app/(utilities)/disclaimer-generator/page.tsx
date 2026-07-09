@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Disclaimer Generator Online Free - No Signup",
 		description: "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal requirements.",
-		url: "https://sopkit.github.io/disclaimer-generator",
+		url: "https://sopkit.github.io/disclaimer-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

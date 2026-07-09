@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "QR Code Decoder Online Free - No Signup",
 		description: "Free qr code decoder tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/qr-code-decoder",
+		url: "https://sopkit.github.io/qr-code-decoder/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

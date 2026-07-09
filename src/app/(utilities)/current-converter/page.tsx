@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Current Converter Online Free - No Signup",
 		description: "Convert between amperes, milliamperes, and other electrical current units instantly. Our free online tool is perfect for electronics and electrical engineering ",
-		url: "https://sopkit.github.io/current-converter",
+		url: "https://sopkit.github.io/current-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

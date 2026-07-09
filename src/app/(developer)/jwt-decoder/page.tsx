@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "JWT Decoder & Debugger Online Free - No Signup | SopKit",
 		description: "Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/jwt-decoder",
+		url: "https://sopkit.github.io/jwt-decoder/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Markdown to Text Online Free - No Signup",
 		description: "Convert Markdown formatted text to clean plain text instantly. Perfect for cleaning up content from ChatGPT, Claude, and GitHub. No signup, no uploads, 100% pri",
-		url: "https://sopkit.github.io/markdown-to-text",
+		url: "https://sopkit.github.io/markdown-to-text/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

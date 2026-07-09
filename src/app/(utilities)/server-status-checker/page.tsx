@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Server Status Checker Online Free - No Signup",
 		description: "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
-		url: "https://sopkit.github.io/server-status-checker",
+		url: "https://sopkit.github.io/server-status-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

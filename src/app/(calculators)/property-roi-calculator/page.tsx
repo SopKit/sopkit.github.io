@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Property ROI Calculator - Free Online Tool | SopKit",
 		description: "Calculate your property roi calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/property-roi-calculator",
+		url: "https://sopkit.github.io/property-roi-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -44,7 +44,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/property-roi-calculator",
+						url: "https://sopkit.github.io/property-roi-calculator/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {

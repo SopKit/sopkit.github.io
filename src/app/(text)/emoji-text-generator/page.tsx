@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Emoji Text Generator Online Free - No Signup | SopKit",
 		description: "Add fun emojis to your text or convert words into emoji-rich messages for social media. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/emoji-text-generator",
+		url: "https://sopkit.github.io/emoji-text-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

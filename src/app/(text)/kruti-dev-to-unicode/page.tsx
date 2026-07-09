@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Kruti Dev to Unicode Converter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Kruti Dev to Unicode Converter online. Fast and private browser utility with no signup.",
-		url: "https://sopkit.github.io/kruti-dev-to-unicode",
+		url: "https://sopkit.github.io/kruti-dev-to-unicode/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

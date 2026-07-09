@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Open Graph Checker Online Free - No Signup",
 		description: "Free open graph checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/open-graph-checker",
+		url: "https://sopkit.github.io/open-graph-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

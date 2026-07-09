@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Image Enlarger Online Free - No Signup",
 		description: "Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/image-enlarger",
+		url: "https://sopkit.github.io/image-enlarger/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Reactive Energy Converter Online Free - No Signup",
 		description: "Free reactive energy converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-ba",
-		url: "https://sopkit.github.io/reactive-energy-converter",
+		url: "https://sopkit.github.io/reactive-energy-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

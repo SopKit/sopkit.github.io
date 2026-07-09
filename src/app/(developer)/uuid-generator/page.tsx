@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "UUID/GUID Generator Online Free - No Signup | SopKit",
 		description: "Generate unique UUID v4 and GUID strings instantly for your applications and databases. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/uuid-generator",
+		url: "https://sopkit.github.io/uuid-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

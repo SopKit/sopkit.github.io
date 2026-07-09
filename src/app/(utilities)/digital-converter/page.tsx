@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Digital Converter Online Free - No Signup",
 		description: "Convert between bytes, kilobytes, megabytes, and gigabytes instantly. Our free online tool helps you understand data storage and file sizes in seconds. No signu",
-		url: "https://sopkit.github.io/digital-converter",
+		url: "https://sopkit.github.io/digital-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

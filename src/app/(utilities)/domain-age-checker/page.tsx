@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Domain Age Checker Online Free - No Signup",
 		description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis. No signup, no uploads",
-		url: "https://sopkit.github.io/domain-age-checker",
+		url: "https://sopkit.github.io/domain-age-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

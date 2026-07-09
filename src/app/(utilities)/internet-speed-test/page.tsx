@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Internet Speed Test Online Free - No Signup",
 		description: "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly. No signup, no uploads, 100% private browser-bas",
-		url: "https://sopkit.github.io/internet-speed-test",
+		url: "https://sopkit.github.io/internet-speed-test/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

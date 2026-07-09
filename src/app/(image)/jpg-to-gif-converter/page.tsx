@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JPG to GIF Converter Online Free - No Signup",
 		description: "Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online image",
-		url: "https://sopkit.github.io/jpg-to-gif-converter",
+		url: "https://sopkit.github.io/jpg-to-gif-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

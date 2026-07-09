@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Car Loan Calculator - Auto Payment Estimator | SopKit",
 		description: "Work out your monthly car payment and total interest from vehicle price, down payment, trade-in, APR, and term. Free auto loan calculator.",
-		url: "https://sopkit.github.io/car-loan-calculator",
+		url: "https://sopkit.github.io/car-loan-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "CSS Gradient Generator Online Free - No Signup",
 		description: "Create beautiful CSS gradients for your web projects. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/css-gradient-generator",
+		url: "https://sopkit.github.io/css-gradient-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

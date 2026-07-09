@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free YouTube Channel Banner Downloader Online - No Signup | SopKit",
 		description: "Download high-resolution YouTube channel banners and covers instantly. Our free tool helps you save channel branding for design reference or archiving...",
-		url: "https://sopkit.github.io/youtube-channel-banner-downloader",
+		url: "https://sopkit.github.io/youtube-channel-banner-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

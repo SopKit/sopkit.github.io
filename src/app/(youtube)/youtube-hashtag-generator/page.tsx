@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Hashtag Generator Online Free - No Signup",
 		description: "Generate viral hashtags for your YouTube videos instantly. Our free online tool suggests relevant, search-friendly tags to help you reach more viewers and boost",
-		url: "https://sopkit.github.io/youtube-hashtag-generator",
+		url: "https://sopkit.github.io/youtube-hashtag-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

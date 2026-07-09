@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Description Extractor Online Free - No Signup",
 		description: "Extract the full description from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool",
-		url: "https://sopkit.github.io/youtube-description-extractor",
+		url: "https://sopkit.github.io/youtube-description-extractor/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

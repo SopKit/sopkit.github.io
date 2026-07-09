@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "SVG to PNG Converter Online Free - No Signup | SopKit",
 		description: "Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/svg-to-png",
+		url: "https://sopkit.github.io/svg-to-png/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

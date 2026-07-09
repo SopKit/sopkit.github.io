@@ -14,7 +14,7 @@ export const metadata = {
 	openGraph: {
 		title: "About SopKit - 365+ Free Online Tools for PDF, Image, Video & More",
 		description: "Learn about SopKit, your privacy-first toolkit with 365+ free online tools. We offer browser-based PDF, image, video, SEO, and developer utilities with no signup required.",
-		url: "https://sopkit.github.io/about",
+		url: "https://sopkit.github.io/about/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

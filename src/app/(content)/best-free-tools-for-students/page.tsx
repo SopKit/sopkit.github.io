@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Best Free Tools for Students (2026) Online - No Signup | SopKit",
 		description: "Discover the best free tools for students in 2026. Improve writing, formatting, assignments, and study productivity with no-signup online tools.",
-		url: "https://sopkit.github.io/best-free-tools-for-students",
+		url: "https://sopkit.github.io/best-free-tools-for-students/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/best-free-tools-for-students",
+						url: "https://sopkit.github.io/best-free-tools-for-students/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

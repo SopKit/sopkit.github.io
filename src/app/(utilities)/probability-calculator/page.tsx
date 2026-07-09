@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Probability Calculator Online Free - No Signup",
 		description: "Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based",
-		url: "https://sopkit.github.io/probability-calculator",
+		url: "https://sopkit.github.io/probability-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

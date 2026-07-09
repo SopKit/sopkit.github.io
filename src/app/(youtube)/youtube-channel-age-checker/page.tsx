@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Channel Age Checker Online Free - No Signup",
 		description: "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive analys",
-		url: "https://sopkit.github.io/youtube-channel-age-checker",
+		url: "https://sopkit.github.io/youtube-channel-age-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

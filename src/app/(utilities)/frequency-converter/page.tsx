@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Frequency Converter Online Free - No Signup",
 		description: "Free frequency converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
-		url: "https://sopkit.github.io/frequency-converter",
+		url: "https://sopkit.github.io/frequency-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JavaScript Obfuscator Online Free - No Signup",
 		description: "Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent",
-		url: "https://sopkit.github.io/javascript-obfuscator",
+		url: "https://sopkit.github.io/javascript-obfuscator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

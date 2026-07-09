@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "EXIF Reader Online Free - No Signup",
 		description: "Extract metadata and EXIF data from images including camera settings and GPS location No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/exif-reader",
+		url: "https://sopkit.github.io/exif-reader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

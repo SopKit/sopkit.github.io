@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "XML Formatter & Beautifier Online Free - No Signup | SopKit",
 		description: "Clean and format messy XML data into a readable hierarchical structure. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/xml-formatter",
+		url: "https://sopkit.github.io/xml-formatter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

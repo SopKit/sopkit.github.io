@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Bio Data Maker Online - No Signup | SopKit",
 		description: "Create beautiful marriage biodata sheets or professional resumes. Upload photos, input family or job details, and print a custom layout.",
-		url: "https://sopkit.github.io/bio-data-maker",
+		url: "https://sopkit.github.io/bio-data-maker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

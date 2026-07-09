@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JavaScript Minifier Online Free - No Signup",
 		description: "Compress and minify your JavaScript files to reduce payload size and speed up your website. Our free online tool removes unnecessary code while preserving funct",
-		url: "https://sopkit.github.io/javascript-minifier",
+		url: "https://sopkit.github.io/javascript-minifier/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

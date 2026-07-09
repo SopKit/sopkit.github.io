@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Image DPI Converter Online - No Signup | SopKit",
 		description: "Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing.",
-		url: "https://sopkit.github.io/image-dpi-converter",
+		url: "https://sopkit.github.io/image-dpi-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

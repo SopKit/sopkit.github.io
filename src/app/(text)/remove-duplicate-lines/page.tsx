@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Remove Duplicate Lines Online Free - No Signup | SopKit",
 		description: "Clean up your lists and data by automatically removing identical lines of text. Fast and private. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/remove-duplicate-lines",
+		url: "https://sopkit.github.io/remove-duplicate-lines/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

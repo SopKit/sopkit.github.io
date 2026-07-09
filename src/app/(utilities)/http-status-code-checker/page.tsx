@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "HTTP Status Code Checker Online Free - No Signup",
 		description: "Free http status code checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
-		url: "https://sopkit.github.io/http-status-code-checker",
+		url: "https://sopkit.github.io/http-status-code-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

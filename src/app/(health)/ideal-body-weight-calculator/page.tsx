@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Ideal Body Weight Calculator Online Free - No Signup | SopKit",
 		description: "Determine your healthy weight range based on your height, age, and gender using standard formulas. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/ideal-body-weight-calculator",
+		url: "https://sopkit.github.io/ideal-body-weight-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

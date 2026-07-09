@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Complete SEO Audit Tool Online Free - No Signup",
 		description: "Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations. No signup, no uploads,",
-		url: "https://sopkit.github.io/seo-audit-tool",
+		url: "https://sopkit.github.io/seo-audit-tool/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

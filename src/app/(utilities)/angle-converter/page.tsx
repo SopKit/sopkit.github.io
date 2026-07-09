@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Angle Converter Online Free - No Signup",
 		description: "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and",
-		url: "https://sopkit.github.io/angle-converter",
+		url: "https://sopkit.github.io/angle-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

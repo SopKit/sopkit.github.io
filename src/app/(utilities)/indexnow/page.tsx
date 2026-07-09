@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "IndexNow Submitter Online Free - No Signup",
 		description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/indexnow",
+		url: "https://sopkit.github.io/indexnow/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

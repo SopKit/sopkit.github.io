@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Text to HEX Converter Online Free - No Signup",
 		description: "Convert plain text into hexadecimal format instantly. Our free online tool provides a clean hex representation of your input string for development and data ana",
-		url: "https://sopkit.github.io/text-to-hex-converter",
+		url: "https://sopkit.github.io/text-to-hex-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

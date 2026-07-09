@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Favicon Generator Online Free - No Signup",
 		description: "Generate favicons from text, images, or emojis for websites No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/favicon-generator",
+		url: "https://sopkit.github.io/favicon-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

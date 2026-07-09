@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Menu Description Generator - Free Online Tool | SopKit",
 		description: "Generate optimized menu description generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/restaurant-menu-description-generator",
+		url: "https://sopkit.github.io/restaurant-menu-description-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -44,7 +44,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/restaurant-menu-description-generator",
+						url: "https://sopkit.github.io/restaurant-menu-description-generator/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {

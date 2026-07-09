@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "TSV to JSON Converter Online Free - No Signup",
 		description: "Convert Tab-Separated Values (TSV) into JSON format instantly. Our free online tool makes it easy to transform structured data for web applications and API deve",
-		url: "https://sopkit.github.io/tsv-to-json-converter",
+		url: "https://sopkit.github.io/tsv-to-json-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

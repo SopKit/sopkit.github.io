@@ -10,7 +10,7 @@ export const metadata = {
 		title: "Free Utility Tools Online - No Signup | SopKit",
 		description:
 			"85+ free utility tools — speed test, password generator, QR codes, converters, and calculators. No signup required.",
-		url: "https://sopkit.github.io/other-tools",
+		url: "https://sopkit.github.io/other-tools/",
 		siteName: "SopKit",
 		images: [
 			{

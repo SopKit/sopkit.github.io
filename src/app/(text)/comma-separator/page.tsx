@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Comma Separator Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Comma Separator online. Fast and private browser utility with no signup. No signup required.",
-		url: "https://sopkit.github.io/comma-separator",
+		url: "https://sopkit.github.io/comma-separator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Inflation Calculator - Buying Power Over Time | SopKit",
 		description: "See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.",
-		url: "https://sopkit.github.io/inflation-calculator",
+		url: "https://sopkit.github.io/inflation-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -11,7 +11,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Video Editor Online - No Signup | SopKit",
 		description: "Download, convert, and edit video files instantly with our free Video Editor online. Fast, secure, and private processing with no signup. 100% free and secure.",
-		url: "https://sopkit.github.io/video-editor",
+		url: "https://sopkit.github.io/video-editor/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -29,7 +29,7 @@ export default async function ToolPage() {
 	const tool = { id: "video-editor", name: "Video Editor", description: "Trim, cut, and edit video clips directly in your browser. Our free Video Editor requires no software installation and supports all major formats.", route: "/video-editor", category: "video" };
 	return (
 		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: tool.name, description: tool.description, url: "https://sopkit.github.io/video-editor", applicationCategory: "UtilitiesApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }) }} />
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: tool.name, description: tool.description, url: "https://sopkit.github.io/video-editor/", applicationCategory: "UtilitiesApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }) }} />
 			<ToolLayout breadcrumbs={[]} tool={tool}><VideoEditorTool /></ToolLayout>
 		</>
 	);

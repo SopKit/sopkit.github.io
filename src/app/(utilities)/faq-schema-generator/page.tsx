@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "FAQ Schema Generator Online Free - No Signup",
 		description: "Free faq schema generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/faq-schema-generator",
+		url: "https://sopkit.github.io/faq-schema-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Logo Generator Online Free - No Signup",
 		description: "Create professional logos with text, fonts, and custom colors No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/logo-generator",
+		url: "https://sopkit.github.io/logo-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

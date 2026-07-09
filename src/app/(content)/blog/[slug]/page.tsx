@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: BlogArticlePageProps) {
 		openGraph: {
 			title: article.title,
 			description: article.description,
-			url: `https://sopkit.github.io/blog/${article.slug}`,
+			url: `https://sopkit.github.io/blog/${article.slug}/`,
 			type: "article",
 			images: [{ url: "/og-image.jpg" }],
 		},
@@ -76,7 +76,7 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 			url: "https://sopkit.github.io",
 			logo: {
 				"@type": "ImageObject",
-				url: "https://sopkit.github.io/icons/icon-512x512.png",
+				url: "https://sopkit.github.io/icons/icon-512x512.png/",
 			},
 		},
 		mainEntityOfPage: `https://sopkit.github.io/blog/${article.slug}`,

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "PNG to JPG Converter Online Free - No Signup",
 		description: "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your br",
-		url: "https://sopkit.github.io/png-to-jpg-converter",
+		url: "https://sopkit.github.io/png-to-jpg-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

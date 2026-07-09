@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "What Is My Screen Resolution Online Free - No Signup",
 		description: "Free what is my screen resolution tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser",
-		url: "https://sopkit.github.io/what-is-my-screen-resolution",
+		url: "https://sopkit.github.io/what-is-my-screen-resolution/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

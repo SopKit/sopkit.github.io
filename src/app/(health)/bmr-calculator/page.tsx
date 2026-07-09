@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "BMR Calculator (Basal Metabolic Rate) Online Free - No Signup | SopKit",
 		description: "Calculate your Basal Metabolic Rate (BMR) to understand how many calories your body burns at rest. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/bmr-calculator",
+		url: "https://sopkit.github.io/bmr-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

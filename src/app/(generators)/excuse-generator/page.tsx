@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Excuse Generator Online Free - No Signup",
 		description: "Generate creative excuses for any situation. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/excuse-generator",
+		url: "https://sopkit.github.io/excuse-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

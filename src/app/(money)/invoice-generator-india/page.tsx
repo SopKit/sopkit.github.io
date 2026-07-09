@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Invoice Generator India with GST Online Free - No Signup | SopKit",
 		description: "Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free. No signup, no uploads, 100% private browser-b",
-		url: "https://sopkit.github.io/invoice-generator-india",
+		url: "https://sopkit.github.io/invoice-generator-india/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

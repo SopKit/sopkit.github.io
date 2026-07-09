@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free 75% Attendance Calculator Online - No Signup | SopKit",
 		description: "Calculate how many classes you need to attend or can safely skip to maintain a minimum 75% attendance rate.",
-		url: "https://sopkit.github.io/75-attendance-calculator",
+		url: "https://sopkit.github.io/75-attendance-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

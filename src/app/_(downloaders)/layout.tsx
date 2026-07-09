@@ -11,7 +11,7 @@ export const metadata = {
 		title: "Free Video Downloaders Online - No Signup | SopKit",
 		description:
 			`Download videos from TikTok, Instagram, Facebook, Twitter, Reddit, and ${SITE_CONFIG.popularToolCountString} platforms in HD. No watermark, no signup, 100% free.`,
-		url: "https://sopkit.github.io/all-downloaders",
+		url: "https://sopkit.github.io/all-downloaders/",
 		siteName: "SopKit",
 		images: [
 			{

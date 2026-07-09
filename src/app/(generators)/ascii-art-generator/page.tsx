@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "ASCII Art Generator Online Free - No Signup",
 		description: "Convert images into text-based ASCII art online. Customize resolution and contrast for the perfect text-based representation. No signup, no uploads, 100% privat",
-		url: "https://sopkit.github.io/ascii-art-generator",
+		url: "https://sopkit.github.io/ascii-art-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

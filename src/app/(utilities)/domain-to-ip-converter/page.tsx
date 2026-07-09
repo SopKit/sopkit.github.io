@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Domain to IP Converter Online Free - No Signup",
 		description: "Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues. No signup, ",
-		url: "https://sopkit.github.io/domain-to-ip-converter",
+		url: "https://sopkit.github.io/domain-to-ip-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

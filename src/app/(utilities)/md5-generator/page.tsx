@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "MD5 Generator Online Free - No Signup",
 		description: "Free md5 generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/md5-generator",
+		url: "https://sopkit.github.io/md5-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

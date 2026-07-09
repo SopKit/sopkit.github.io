@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Best Free ChatGPT Alternatives for Daily Tasks | SopKit",
 		description: "Looking for a free ChatGPT alternative? Build a focused digital workflow for writing, coding, and image generation using our top free online tools.",
-		url: "https://sopkit.github.io/best-free-alternative-to-chatgpt",
+		url: "https://sopkit.github.io/best-free-alternative-to-chatgpt/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/best-free-alternative-to-chatgpt",
+						url: "https://sopkit.github.io/best-free-alternative-to-chatgpt/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

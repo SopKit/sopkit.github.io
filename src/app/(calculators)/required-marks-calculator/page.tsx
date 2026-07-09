@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Required Marks Calculator Online - No Signup | SopKit",
 		description: "Find out exactly how many marks you need to score in your final exam to achieve your target grade or pass.",
-		url: "https://sopkit.github.io/required-marks-calculator",
+		url: "https://sopkit.github.io/required-marks-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

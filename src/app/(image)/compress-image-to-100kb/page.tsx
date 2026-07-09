@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Compress Image to 100KB Online - No Signup | SopKit",
 		description: "Compress any image file (JPG, PNG, WebP) to fit strictly under 100KB while maintaining the best possible visual clarity.",
-		url: "https://sopkit.github.io/compress-image-to-100kb",
+		url: "https://sopkit.github.io/compress-image-to-100kb/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

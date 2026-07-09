@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Average Calculator Online Free - No Signup",
 		description: "Calculate the mean, median, mode, and range of any dataset instantly. Our free online Average Calculator helps you analyze statistics and numeric data in second",
-		url: "https://sopkit.github.io/average-calculator",
+		url: "https://sopkit.github.io/average-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Attendance Shortage Calculator Online Free - No Signup | SopKit",
 		description: "Calculate how many classes you need to attend to reach 75% attendance or how many classes you can safely miss. No signup, no uploads, 100% private browser-based",
-		url: "https://sopkit.github.io/attendance-shortage-calculator",
+		url: "https://sopkit.github.io/attendance-shortage-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

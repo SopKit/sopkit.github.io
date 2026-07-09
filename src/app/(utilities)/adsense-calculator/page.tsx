@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Adsense Calculator Online Free - No Signup",
 		description: "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/adsense-calculator",
+		url: "https://sopkit.github.io/adsense-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

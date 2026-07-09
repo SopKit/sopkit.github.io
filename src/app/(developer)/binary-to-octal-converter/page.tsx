@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Binary to Octal Converter Online Free - No Signup",
 		description: "Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical studen",
-		url: "https://sopkit.github.io/binary-to-octal-converter",
+		url: "https://sopkit.github.io/binary-to-octal-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

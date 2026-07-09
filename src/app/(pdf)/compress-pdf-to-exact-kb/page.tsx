@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Compress PDF to Exact KB Online Free - No Signup | SopKit",
 		description: "Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/compress-pdf-to-exact-kb",
+		url: "https://sopkit.github.io/compress-pdf-to-exact-kb/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

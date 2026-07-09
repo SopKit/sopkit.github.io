@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Random Word Generator Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Random Word Generator online. Fast and private browser utility with no signup. Easy to use.",
-		url: "https://sopkit.github.io/random-word-generator",
+		url: "https://sopkit.github.io/random-word-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "CGPA to Percentage Calculator for Indian Universities Online Free - No Signup | SopKit",
 		description: "Convert your CGPA into percentage using common Indian university formulas like CBSE 9.5x, VTU, Mumbai University, DU, AKTU, and Anna University. No signup, no u",
-		url: "https://sopkit.github.io/cgpa-to-percentage-calculator-india",
+		url: "https://sopkit.github.io/cgpa-to-percentage-calculator-india/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

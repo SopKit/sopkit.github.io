@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Guitar Tuner Online Free - No Signup",
 		description: "Free online guitar tuner. Uses your microphone to tune your guitar accurately. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/guitar-tuner",
+		url: "https://sopkit.github.io/guitar-tuner/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

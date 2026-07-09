@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Advanced Sitemap Generator Online Free - No Signup",
 		description: "Generate XML sitemaps for any website URL. Crawl websites and create comprehensive sitemaps with proper formatting and metadata. No signup, no uploads, 100% pri",
-		url: "https://sopkit.github.io/sitemap-generator",
+		url: "https://sopkit.github.io/sitemap-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

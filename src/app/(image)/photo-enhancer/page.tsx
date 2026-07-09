@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Photo Enhancer Online Free - No Signup",
 		description: "Enhance photo quality with AI-powered image enhancement No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/photo-enhancer",
+		url: "https://sopkit.github.io/photo-enhancer/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

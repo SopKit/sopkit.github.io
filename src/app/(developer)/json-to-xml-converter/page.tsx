@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JSON to XML Converter Online Free - No Signup",
 		description: "Convert JSON data to XML format instantly. Our free online tool handles nesting and attributes to ensure a clean transformation for legacy system compatibility.",
-		url: "https://sopkit.github.io/json-to-xml-converter",
+		url: "https://sopkit.github.io/json-to-xml-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Decimal to Binary Converter Online Free - No Signup",
 		description: "Convert decimal numbers (Base-10) to binary code (Base-2) instantly. Our free online converter is perfect for students, developers, and data analysis tasks. Fas",
-		url: "https://sopkit.github.io/decimal-to-binary-converter",
+		url: "https://sopkit.github.io/decimal-to-binary-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

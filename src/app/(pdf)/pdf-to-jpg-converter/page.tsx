@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "PDF to JPG Converter Online Free - No Signup | SopKit",
 		description: "Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/pdf-to-jpg-converter",
+		url: "https://sopkit.github.io/pdf-to-jpg-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

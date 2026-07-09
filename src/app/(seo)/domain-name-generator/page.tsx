@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Domain Name Generator Online Free - No Signup",
 		description: "Free online Domain Name Generator. Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free. 100% free, no signup required, and privacy-focused.",
-		url: "https://sopkit.github.io/domain-name-generator",
+		url: "https://sopkit.github.io/domain-name-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

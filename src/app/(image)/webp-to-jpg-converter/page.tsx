@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "WebP to JPG Converter Online Free - No Signup",
 		description: "Convert WebP images to JPG format for maximum compatibility across all devices and platforms. Our free online converter is fast, secure, and preserves image det",
-		url: "https://sopkit.github.io/webp-to-jpg-converter",
+		url: "https://sopkit.github.io/webp-to-jpg-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

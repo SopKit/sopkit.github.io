@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "AI Music Generator Online Free - No Signup",
 		description: "Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation with stu",
-		url: "https://sopkit.github.io/ai-music-generator",
+		url: "https://sopkit.github.io/ai-music-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Word Counter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Word Counter online. Fast and private browser utility with no signup. 100% free and secure.",
-		url: "https://sopkit.github.io/word-counter",
+		url: "https://sopkit.github.io/word-counter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

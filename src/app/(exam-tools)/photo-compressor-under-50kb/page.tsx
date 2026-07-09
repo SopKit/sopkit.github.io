@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Photo Compressor Under 50KB Online - No Signup | SopKit",
 		description: "Resize and compress files with our free Photo Compressor Under 50KB online. Safe and private browser utility for government exam portal applications. 100% free.",
-		url: "https://sopkit.github.io/photo-compressor-under-50kb",
+		url: "https://sopkit.github.io/photo-compressor-under-50kb/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

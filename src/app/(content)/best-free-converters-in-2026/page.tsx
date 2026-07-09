@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Best Free File, Data, and Media Converters in 2026 | SopKit",
 		description: "Convert any file, media format, or data payload instantly. Explore our ranked list of the best free online converter tools for 2026. No registration needed.",
-		url: "https://sopkit.github.io/best-free-converters-in-2026",
+		url: "https://sopkit.github.io/best-free-converters-in-2026/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/best-free-converters-in-2026",
+						url: "https://sopkit.github.io/best-free-converters-in-2026/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

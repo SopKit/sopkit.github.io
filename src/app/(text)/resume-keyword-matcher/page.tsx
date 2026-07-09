@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Resume Keyword Matcher Online Free - No Signup | SopKit",
 		description: "Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS. No signup, no uploads, 100% private ",
-		url: "https://sopkit.github.io/resume-keyword-matcher",
+		url: "https://sopkit.github.io/resume-keyword-matcher/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

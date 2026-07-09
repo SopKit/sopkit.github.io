@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "HEX to Text Converter Online Free - No Signup",
 		description: "Convert hexadecimal strings back to readable text instantly. Our free online HEX to Text tool is perfect for decoding data, debugging, and discovering hidden te",
-		url: "https://sopkit.github.io/hex-to-text-converter",
+		url: "https://sopkit.github.io/hex-to-text-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

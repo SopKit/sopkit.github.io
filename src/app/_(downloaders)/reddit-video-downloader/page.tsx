@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Reddit Video Downloader HD - Save Reddit Videos & GIFs | SopKit",
 		description: "Download Reddit videos and GIFs in HD quality for free. Fast online Reddit video saver with audio, no registration or watermark. Private browser-based tool.",
-		url: "https://sopkit.github.io/reddit-video-downloader",
+		url: "https://sopkit.github.io/reddit-video-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "PDF Unlocker Online Free - No Signup",
 		description: "Remove password protection from PDF files No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/pdf-unlocker",
+		url: "https://sopkit.github.io/pdf-unlocker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Vimeo Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Vimeo Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://sopkit.github.io/vimeo-video-downloader",
+		url: "https://sopkit.github.io/vimeo-video-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

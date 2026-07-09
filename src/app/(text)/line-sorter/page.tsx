@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Line Sorter Online Free - No Signup",
 		description: "Sort lists, names, or lines alphabetically or by length instantly. Our free online Line Sorter helps you organize data for cleaner documentation and code. Priva",
-		url: "https://sopkit.github.io/line-sorter",
+		url: "https://sopkit.github.io/line-sorter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

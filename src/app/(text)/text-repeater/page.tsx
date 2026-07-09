@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Text Repeater Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Text Repeater online. Fast and private browser utility with no signup. 100% free and secure.",
-		url: "https://sopkit.github.io/text-repeater",
+		url: "https://sopkit.github.io/text-repeater/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

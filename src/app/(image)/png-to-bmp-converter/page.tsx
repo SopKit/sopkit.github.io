@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "PNG to BMP Converter Online Free - No Signup",
 		description: "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast, secure",
-		url: "https://sopkit.github.io/png-to-bmp-converter",
+		url: "https://sopkit.github.io/png-to-bmp-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

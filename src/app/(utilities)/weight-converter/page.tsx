@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Weight Converter Online Free - No Signup",
 		description: "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/weight-converter",
+		url: "https://sopkit.github.io/weight-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

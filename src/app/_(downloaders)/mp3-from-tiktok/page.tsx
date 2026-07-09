@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Mp3 From Tiktok Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Mp3 From Tiktok online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://sopkit.github.io/mp3-from-tiktok",
+		url: "https://sopkit.github.io/mp3-from-tiktok/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

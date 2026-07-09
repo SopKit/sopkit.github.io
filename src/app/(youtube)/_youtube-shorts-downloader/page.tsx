@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free YouTube Shorts Downloader Online - No Signup | SopKit",
 		description: "Download YouTube Shorts videos in high quality for offline viewing",
-		url: "https://sopkit.github.io/youtube-shorts-downloader",
+		url: "https://sopkit.github.io/youtube-shorts-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

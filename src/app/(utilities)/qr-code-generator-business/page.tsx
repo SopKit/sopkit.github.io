@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "QR Code Generator for Business - Free Online Tool | SopKit",
 		description: "Generate optimized qr code generator for business details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/qr-code-generator-business",
+		url: "https://sopkit.github.io/qr-code-generator-business/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -44,7 +44,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/qr-code-generator-business",
+						url: "https://sopkit.github.io/qr-code-generator-business/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {

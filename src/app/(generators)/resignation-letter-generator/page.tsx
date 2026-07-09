@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Resignation Letter Generator Online - No Signup | SopKit",
 		description: "Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.",
-		url: "https://sopkit.github.io/resignation-letter-generator",
+		url: "https://sopkit.github.io/resignation-letter-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

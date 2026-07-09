@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Case Converter (Sentence, Upper, Lower) Online Free - No Signup | SopKit",
 		description: "Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/case-converter",
+		url: "https://sopkit.github.io/case-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

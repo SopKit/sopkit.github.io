@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Code Formatter Online Free - No Signup",
 		description: "Format and beautify HTML, CSS, JavaScript, and SQL code. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/code-formatter",
+		url: "https://sopkit.github.io/code-formatter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

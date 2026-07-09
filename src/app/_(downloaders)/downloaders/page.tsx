@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Downloaders Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Downloaders online. High-speed downloading with no signup needed. 100% free and easy to use.",
-		url: "https://sopkit.github.io/downloaders",
+		url: "https://sopkit.github.io/downloaders/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

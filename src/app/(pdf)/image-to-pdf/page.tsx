@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Image to PDF Online Free - No Signup",
 		description: "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required. No signup,",
-		url: "https://sopkit.github.io/image-to-pdf",
+		url: "https://sopkit.github.io/image-to-pdf/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

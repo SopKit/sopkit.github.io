@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JPG to BMP Converter Online Free - No Signup",
 		description: "Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading ",
-		url: "https://sopkit.github.io/jpg-to-bmp-converter",
+		url: "https://sopkit.github.io/jpg-to-bmp-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

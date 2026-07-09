@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "PNG to ICO Converter Online Free - No Signup",
 		description: "Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first browser-bas",
-		url: "https://sopkit.github.io/png-to-ico-converter",
+		url: "https://sopkit.github.io/png-to-ico-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

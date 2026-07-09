@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Save Fb Stories Anonymous Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Save Fb Stories Anonymous online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://sopkit.github.io/save-fb-stories-anonymous",
+		url: "https://sopkit.github.io/save-fb-stories-anonymous/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

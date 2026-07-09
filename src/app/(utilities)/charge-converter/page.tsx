@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Charge Converter Online Free - No Signup",
 		description: "Convert between coulombs, millicoulombs, and other electrical charge units instantly. Our free online tool provides quick and accurate physics base transformati",
-		url: "https://sopkit.github.io/charge-converter",
+		url: "https://sopkit.github.io/charge-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Text to Speech Online Free - No Signup",
 		description: "Convert text to natural sounding speech audio No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/text-to-speech",
+		url: "https://sopkit.github.io/text-to-speech/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

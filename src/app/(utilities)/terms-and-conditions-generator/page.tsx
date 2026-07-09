@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Terms and Conditions Generator - Free Online Tool | SopKit",
 		description: "Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability.",
-		url: "https://sopkit.github.io/terms-and-conditions-generator",
+		url: "https://sopkit.github.io/terms-and-conditions-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -44,7 +44,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/terms-and-conditions-generator",
+						url: "https://sopkit.github.io/terms-and-conditions-generator/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Facebook ID Finder Online Free - No Signup",
 		description: "Free facebook id finder tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/facebook-id-finder",
+		url: "https://sopkit.github.io/facebook-id-finder/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

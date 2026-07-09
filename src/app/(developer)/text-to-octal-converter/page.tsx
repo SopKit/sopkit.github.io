@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Text to Octal Converter Online Free - No Signup",
 		description: "Convert text into octal numeric values instantly. Our free online converter provides base-8 representations for every character in your text for technical analy",
-		url: "https://sopkit.github.io/text-to-octal-converter",
+		url: "https://sopkit.github.io/text-to-octal-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

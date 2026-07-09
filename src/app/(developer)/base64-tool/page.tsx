@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Base64 Tool Online Free - No Signup",
 		description: "Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text forma",
-		url: "https://sopkit.github.io/base64-tool",
+		url: "https://sopkit.github.io/base64-tool/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

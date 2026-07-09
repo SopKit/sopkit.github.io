@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Decimal to HEX Converter Online Free - No Signup",
 		description: "Transform decimal numbers into hexadecimal format instantly. Our free online tool is perfect for web development, low-level programming, and color code analysis",
-		url: "https://sopkit.github.io/decimal-to-hex-converter",
+		url: "https://sopkit.github.io/decimal-to-hex-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

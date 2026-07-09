@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "URL Rewriting Tool Online Free - No Signup",
 		description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/url-rewriting-tool",
+		url: "https://sopkit.github.io/url-rewriting-tool/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

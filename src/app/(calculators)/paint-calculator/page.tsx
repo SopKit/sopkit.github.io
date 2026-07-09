@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Paint Calculator Online - No Signup | SopKit",
 		description: "Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.",
-		url: "https://sopkit.github.io/paint-calculator",
+		url: "https://sopkit.github.io/paint-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

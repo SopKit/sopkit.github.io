@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Top 10 Free JSON Tools Online for Developer Workflows | SopKit",
 		description: "Speed up your developer workflow with our curated list of the top 10 free JSON tools. Format, validate, convert, and minify JSON payloads in your browser.",
-		url: "https://sopkit.github.io/top-10-json-tools-online",
+		url: "https://sopkit.github.io/top-10-json-tools-online/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/top-10-json-tools-online",
+						url: "https://sopkit.github.io/top-10-json-tools-online/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

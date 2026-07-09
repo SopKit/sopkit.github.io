@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "BMI Calculator - Body Mass Index | SopKit",
 		description: "Calculate your Body Mass Index from height and weight and see your BMI category. Free, private BMI calculator that runs in your browser.",
-		url: "https://sopkit.github.io/bmi-calculator",
+		url: "https://sopkit.github.io/bmi-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

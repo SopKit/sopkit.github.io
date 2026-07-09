@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Password Generator Online Free - No Signup",
 		description: "Create strong, secure passwords instantly with customizable settings. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/password-generator",
+		url: "https://sopkit.github.io/password-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Ig Reels Downloader Hd Online - No Signup | SopKit",
 		description: "Download Instagram Reels in high-definition quality instantly. Our free online downloader is optimized for speed and works on all devices. Save your...",
-		url: "https://sopkit.github.io/ig-reels-downloader-hd",
+		url: "https://sopkit.github.io/ig-reels-downloader-hd/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

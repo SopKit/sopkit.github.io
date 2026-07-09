@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free PDF Compressor Under 200KB Online - No Signup | SopKit",
 		description: "Resize and compress files with our free PDF Compressor Under 200KB online. Safe and private browser utility for government exam portal applications. 100% free.",
-		url: "https://sopkit.github.io/pdf-compressor-under-200kb",
+		url: "https://sopkit.github.io/pdf-compressor-under-200kb/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

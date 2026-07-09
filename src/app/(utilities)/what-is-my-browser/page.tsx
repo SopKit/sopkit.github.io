@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "What Is My Browser Online Free - No Signup",
 		description: "Free what is my browser tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/what-is-my-browser",
+		url: "https://sopkit.github.io/what-is-my-browser/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

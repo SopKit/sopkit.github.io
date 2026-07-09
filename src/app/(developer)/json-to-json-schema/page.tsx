@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JSON to JSON Schema Online Free - No Signup",
 		description: "Generate a JSON Schema from your JSON data automatically. Our free online tool helps you define validation rules and document your JSON structure for APIs. No s",
-		url: "https://sopkit.github.io/json-to-json-schema",
+		url: "https://sopkit.github.io/json-to-json-schema/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

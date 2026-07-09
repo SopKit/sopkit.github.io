@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Protein Intake Calculator - Free Online Tool | SopKit",
 		description: "Calculate your protein intake calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/protein-intake-calculator",
+		url: "https://sopkit.github.io/protein-intake-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -44,7 +44,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/protein-intake-calculator",
+						url: "https://sopkit.github.io/protein-intake-calculator/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {

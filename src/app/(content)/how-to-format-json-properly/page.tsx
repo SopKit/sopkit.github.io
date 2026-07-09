@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "How to Format JSON Properly Without Breaking Data | SopKit",
 		description: "Learn how to format JSON correctly. Avoid syntax errors, clean up payloads, and use safe formatting practices for API requests and configuration files.",
-		url: "https://sopkit.github.io/how-to-format-json-properly",
+		url: "https://sopkit.github.io/how-to-format-json-properly/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/how-to-format-json-properly",
+						url: "https://sopkit.github.io/how-to-format-json-properly/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

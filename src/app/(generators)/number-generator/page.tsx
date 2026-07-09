@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Number Generator Online Free - No Signup",
 		description: "Professional Number Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/number-generator",
+		url: "https://sopkit.github.io/number-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

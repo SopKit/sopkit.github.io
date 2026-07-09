@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JPG to ICO Converter Online Free - No Signup",
 		description: "Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signu",
-		url: "https://sopkit.github.io/jpg-to-ico-converter",
+		url: "https://sopkit.github.io/jpg-to-ico-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

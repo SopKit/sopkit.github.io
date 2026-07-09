@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Icon Generator Online Free - No Signup",
 		description: "Generate app icons and favicons for Android, iOS, and web applications. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/icon-generator",
+		url: "https://sopkit.github.io/icon-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

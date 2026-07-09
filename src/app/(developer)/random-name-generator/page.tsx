@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Random Name Generator Online Free - No Signup | SopKit",
 		description: "Generate random names for characters, personas, or test data with gender and niche options. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/random-name-generator",
+		url: "https://sopkit.github.io/random-name-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Number to Words Converter Online Free - No Signup | SopKit",
 		description: "Convert any number into words (English, Indian numbering system) for cheques, invoices, and documents. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/number-to-words-converter",
+		url: "https://sopkit.github.io/number-to-words-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

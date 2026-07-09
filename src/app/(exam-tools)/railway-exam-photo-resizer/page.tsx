@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Railway Exam Photo Resizer Online - No Signup | SopKit",
 		description: "Resize and compress files with our free Railway Exam Photo Resizer online. Safe and private browser utility for government exam portal applications. 100% free.",
-		url: "https://sopkit.github.io/railway-exam-photo-resizer",
+		url: "https://sopkit.github.io/railway-exam-photo-resizer/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

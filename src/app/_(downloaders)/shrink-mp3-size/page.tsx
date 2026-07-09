@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Shrink Mp3 Size Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Shrink Mp3 Size online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://sopkit.github.io/shrink-mp3-size",
+		url: "https://sopkit.github.io/shrink-mp3-size/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

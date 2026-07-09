@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Best Free AI Tool Alternatives (No Subscriptions) | SopKit",
 		description: "Discover the best free AI tool alternatives for content creation, voice generation, and digital writing without paying for monthly subscriptions.",
-		url: "https://sopkit.github.io/ai-tools-alternatives-free",
+		url: "https://sopkit.github.io/ai-tools-alternatives-free/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/ai-tools-alternatives-free",
+						url: "https://sopkit.github.io/ai-tools-alternatives-free/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

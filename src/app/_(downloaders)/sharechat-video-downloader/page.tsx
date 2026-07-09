@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free ShareChat Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free ShareChat Video Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://sopkit.github.io/sharechat-video-downloader",
+		url: "https://sopkit.github.io/sharechat-video-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

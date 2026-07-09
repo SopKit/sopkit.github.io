@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "AI Voice Generator Online Free - No Signup",
 		description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibil",
-		url: "https://sopkit.github.io/ai-voice-generator",
+		url: "https://sopkit.github.io/ai-voice-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

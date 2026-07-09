@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Redirect Checker Online Free - No Signup",
 		description: "Free redirect checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/redirect-checker",
+		url: "https://sopkit.github.io/redirect-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

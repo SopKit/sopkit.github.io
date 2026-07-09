@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Crontab Expression Generator Online Free - No Signup | SopKit",
 		description: "Easily create and validate cron job expressions with our interactive visual generator. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/crontab-generator",
+		url: "https://sopkit.github.io/crontab-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

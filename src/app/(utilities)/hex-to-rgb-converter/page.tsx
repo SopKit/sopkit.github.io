@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "HEX to RGB Converter Online Free - No Signup",
 		description: "Free hex to rgb converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/hex-to-rgb-converter",
+		url: "https://sopkit.github.io/hex-to-rgb-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

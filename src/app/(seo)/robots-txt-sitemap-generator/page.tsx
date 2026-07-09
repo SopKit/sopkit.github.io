@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Robots.txt and Sitemap Generator Online Free - No Signup",
 		description: "Free Robots.txt and Sitemap Generator online. Generate search-engine friendly robots.txt and sitemap.xml files for your website to improve crawling and indexing.",
-		url: "https://sopkit.github.io/robots-txt-sitemap-generator",
+		url: "https://sopkit.github.io/robots-txt-sitemap-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

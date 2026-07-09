@@ -25,7 +25,7 @@ export const metadata = {
     title: "SSC Photo Resizer - Resize Photo and Signature for SSC Forms | SopKit",
     description:
       "Resize SSC photos to 350x450 pixels and 20KB-50KB, and signatures to the required 10KB-20KB band for SSC CGL, CHSL, MTS and other SSC online forms.",
-    url: "https://sopkit.github.io/ssc-photo-resizer",
+    url: "https://sopkit.github.io/ssc-photo-resizer/",
     siteName: "SopKit",
     images: [{ url: "/og-image.jpg" }],
     type: "website",

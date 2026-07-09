@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Age Calculator Online Free - No Signup",
 		description: "Free age calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/age-calculator",
+		url: "https://sopkit.github.io/age-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

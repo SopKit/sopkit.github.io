@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "CSS Minifier Online Free - No Signup",
 		description: "Compress and minify your CSS files to reduce page load times and improve website performance. Our free online tool removes unnecessary whitespace and comments i",
-		url: "https://sopkit.github.io/css-minifier",
+		url: "https://sopkit.github.io/css-minifier/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

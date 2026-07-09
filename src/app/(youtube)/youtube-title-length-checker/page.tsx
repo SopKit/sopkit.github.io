@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Title Length Checker Online Free - No Signup",
 		description: "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is ",
-		url: "https://sopkit.github.io/youtube-title-length-checker",
+		url: "https://sopkit.github.io/youtube-title-length-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

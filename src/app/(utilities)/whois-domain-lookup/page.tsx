@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Whois Domain Lookup Online Free - No Signup",
 		description: "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
-		url: "https://sopkit.github.io/whois-domain-lookup",
+		url: "https://sopkit.github.io/whois-domain-lookup/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Number to Word Converter Online Free - No Signup",
 		description: "Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple forma",
-		url: "https://sopkit.github.io/number-to-word-converter",
+		url: "https://sopkit.github.io/number-to-word-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

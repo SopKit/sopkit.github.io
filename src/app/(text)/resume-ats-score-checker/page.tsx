@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Resume ATS Score Checker Online Free - No Signup | SopKit",
 		description: "Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professio",
-		url: "https://sopkit.github.io/resume-ats-score-checker",
+		url: "https://sopkit.github.io/resume-ats-score-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Merge PDF Online Free - No Signup | SopKit",
 		description: "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/merge-pdf-online",
+		url: "https://sopkit.github.io/merge-pdf-online/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

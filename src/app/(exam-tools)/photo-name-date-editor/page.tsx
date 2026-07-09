@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Photo With Name and Date Editor Online - No Signup | SopKit",
 		description: "Resize and compress files with our free Photo With Name and Date Editor online. Safe and private browser utility for government exam portal applications.",
-		url: "https://sopkit.github.io/photo-name-date-editor",
+		url: "https://sopkit.github.io/photo-name-date-editor/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

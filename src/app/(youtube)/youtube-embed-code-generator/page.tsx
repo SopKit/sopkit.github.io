@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Embed Code Generator Online Free - No Signup",
 		description: "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and pr",
-		url: "https://sopkit.github.io/youtube-embed-code-generator",
+		url: "https://sopkit.github.io/youtube-embed-code-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Advanced Keyword Research Online - No Signup | SopKit",
 		description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Keyword Research online. Optimize search presence with no signup.",
-		url: "https://sopkit.github.io/keyword-research-tool",
+		url: "https://sopkit.github.io/keyword-research-tool/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

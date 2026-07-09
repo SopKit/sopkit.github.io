@@ -11,7 +11,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free All Downloaders Online - No Signup | SopKit",
 		description: "All Downloaders - Coming Soon",
-		url: "https://sopkit.github.io/all-downloaders",
+		url: "https://sopkit.github.io/all-downloaders/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -93,7 +93,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: "All Downloaders",
 						description: "All Downloaders",
-						url: "https://sopkit.github.io/all-downloaders",
+						url: "https://sopkit.github.io/all-downloaders/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

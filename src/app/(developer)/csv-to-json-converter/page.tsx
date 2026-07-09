@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "CSV to JSON Converter Online Free - No Signup",
 		description: "Convert CSV files to JSON format instantly. Our free online converter makes it easy to transform spreadsheet data into developer-friendly JSON code for web appl",
-		url: "https://sopkit.github.io/csv-to-json-converter",
+		url: "https://sopkit.github.io/csv-to-json-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

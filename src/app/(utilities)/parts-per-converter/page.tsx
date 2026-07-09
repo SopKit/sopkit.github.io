@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Parts Per Converter Online Free - No Signup",
 		description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
-		url: "https://sopkit.github.io/parts-per-converter",
+		url: "https://sopkit.github.io/parts-per-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

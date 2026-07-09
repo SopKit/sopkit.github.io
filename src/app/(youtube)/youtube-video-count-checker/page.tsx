@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Video Count Checker Online Free - No Signup",
 		description: "Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel auditi",
-		url: "https://sopkit.github.io/youtube-video-count-checker",
+		url: "https://sopkit.github.io/youtube-video-count-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

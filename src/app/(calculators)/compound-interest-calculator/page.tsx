@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Compound Interest Calculator - Free Online | SopKit",
 		description: "Calculate compound interest and future value with regular contributions. See how your savings or investments grow over time, free and instant.",
-		url: "https://sopkit.github.io/compound-interest-calculator",
+		url: "https://sopkit.github.io/compound-interest-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

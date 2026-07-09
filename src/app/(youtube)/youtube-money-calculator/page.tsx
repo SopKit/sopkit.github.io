@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Money Calculator Online Free - No Signup",
 		description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metri",
-		url: "https://sopkit.github.io/youtube-money-calculator",
+		url: "https://sopkit.github.io/youtube-money-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

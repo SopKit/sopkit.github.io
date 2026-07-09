@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Pinterest Image Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Pinterest Image Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://sopkit.github.io/pinterest-image-downloader",
+		url: "https://sopkit.github.io/pinterest-image-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Sitemap Url Downloader Online Free - No Signup",
 		description: "Free Sitemap Url Downloader online. Sitemap Url Downloader allows you to optimize your website quickly and easily. 100% free, no signup required, and privacy-fo",
-		url: "https://sopkit.github.io/sitemap-url-downloader",
+		url: "https://sopkit.github.io/sitemap-url-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

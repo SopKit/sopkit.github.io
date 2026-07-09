@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Tools for Developers - Free Online Stack Online - No Signup | SopKit",
 		description: "A practical collection of free tools for developers: JSON utilities, encoding, text transformers, validators, and conversion helpers.",
-		url: "https://sopkit.github.io/tools-for-developers",
+		url: "https://sopkit.github.io/tools-for-developers/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/tools-for-developers",
+						url: "https://sopkit.github.io/tools-for-developers/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

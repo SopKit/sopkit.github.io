@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Number to Roman Numerals Online Free - No Signup",
 		description: "Free number to roman numerals tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
-		url: "https://sopkit.github.io/number-to-roman-numerals",
+		url: "https://sopkit.github.io/number-to-roman-numerals/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

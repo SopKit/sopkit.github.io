@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Privacy Policy Generator Online Free - No Signup",
 		description: "Free privacy policy generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
-		url: "https://sopkit.github.io/privacy-policy-generator",
+		url: "https://sopkit.github.io/privacy-policy-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

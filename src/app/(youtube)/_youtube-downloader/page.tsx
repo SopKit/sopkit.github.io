@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Video & Audio Downloader - Free Online | SopKit",
 		description: "Download YouTube videos and audio online for free in MP4 or MP3, no signup. For personal use of content you own or that is openly licensed.",
-		url: "https://sopkit.github.io/youtube-downloader",
+		url: "https://sopkit.github.io/youtube-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Kickstarter Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Kickstarter Video Downloader online. High-speed downloading with no signup needed.",
-		url: "https://sopkit.github.io/kickstarter-video-downloader",
+		url: "https://sopkit.github.io/kickstarter-video-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

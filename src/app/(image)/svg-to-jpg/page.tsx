@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "SVG to JPG Converter Online Free - No Signup | SopKit",
 		description: "Convert SVG vector files into standard JPG images with custom background colors. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/svg-to-jpg",
+		url: "https://sopkit.github.io/svg-to-jpg/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "ASCII to Text Converter Online Free - No Signup",
 		description: "Convert ASCII character codes back to readable text instantly. Our free online tool makes it easy to decode ASCII sequences for development and debugging tasks.",
-		url: "https://sopkit.github.io/ascii-to-text-converter",
+		url: "https://sopkit.github.io/ascii-to-text-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

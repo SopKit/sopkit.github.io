@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "PDF Editor Online Free - No Signup",
 		description: "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup. No signup",
-		url: "https://sopkit.github.io/pdf-editor",
+		url: "https://sopkit.github.io/pdf-editor/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

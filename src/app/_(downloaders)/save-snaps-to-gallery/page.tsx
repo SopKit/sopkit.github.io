@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Save Snaps To Gallery Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Save Snaps To Gallery online. High-speed downloading with no signup needed. Try it free now.",
-		url: "https://sopkit.github.io/save-snaps-to-gallery",
+		url: "https://sopkit.github.io/save-snaps-to-gallery/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

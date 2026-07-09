@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JSON Formatter Online Free - No Signup",
 		description: "Format and beautify your JSON data instantly for better readability. Our free online tool validates your JSON structure and provides a clean, indented view of y",
-		url: "https://sopkit.github.io/json-formatter",
+		url: "https://sopkit.github.io/json-formatter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

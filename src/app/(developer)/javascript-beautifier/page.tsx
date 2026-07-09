@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JavaScript Beautifier Online Free - No Signup",
 		description: "Format and prettify your JavaScript code instantly. Our free online JS Beautifier improves code readability, fixes indentation, and helps you understand complex",
-		url: "https://sopkit.github.io/javascript-beautifier",
+		url: "https://sopkit.github.io/javascript-beautifier/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

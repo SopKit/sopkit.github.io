@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Tile Calculator Online - No Signup | SopKit",
 		description: "Calculate the total number of floor or wall tiles needed for a room, including waste margins and cost estimates.",
-		url: "https://sopkit.github.io/tile-calculator",
+		url: "https://sopkit.github.io/tile-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

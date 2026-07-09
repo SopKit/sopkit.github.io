@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Fb Video Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Fb Video Saver online. High-speed downloading with no signup needed. No registration needed.",
-		url: "https://sopkit.github.io/fb-video-saver",
+		url: "https://sopkit.github.io/fb-video-saver/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

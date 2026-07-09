@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Binary to ASCII Converter Online Free - No Signup",
 		description: "Transform binary code (0s and 1s) into readable ASCII text instantly. Our free online converter is fast, accurate, and works entirely in your browser. No signup",
-		url: "https://sopkit.github.io/binary-to-ascii-converter",
+		url: "https://sopkit.github.io/binary-to-ascii-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

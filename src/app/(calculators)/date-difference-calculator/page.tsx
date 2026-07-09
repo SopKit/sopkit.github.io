@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Date Difference Calculator Online Free - No Signup | SopKit",
 		description: "Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/date-difference-calculator",
+		url: "https://sopkit.github.io/date-difference-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

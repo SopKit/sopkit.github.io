@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Visual Sitemap Generator Online Free - No Signup",
 		description: "Visualize your website's sitemap structure instantly. Enter your XML sitemap URL to generate a dynamic tree view of your site hierarchy. No signup, no uploads, ",
-		url: "https://sopkit.github.io/visual-sitemap",
+		url: "https://sopkit.github.io/visual-sitemap/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

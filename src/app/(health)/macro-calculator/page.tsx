@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Macro Calculator Online Free - No Signup | SopKit",
 		description: "Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/macro-calculator",
+		url: "https://sopkit.github.io/macro-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Title Extractor Online Free - No Signup",
 		description: "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool. No ",
-		url: "https://sopkit.github.io/youtube-title-extractor",
+		url: "https://sopkit.github.io/youtube-title-extractor/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "HTML Encoder Online Free - No Signup",
 		description: "Encode text into HTML entities instantly for secure web display. Our free online tool protects your markup by converting special characters into safe HTML-encod",
-		url: "https://sopkit.github.io/html-encoder",
+		url: "https://sopkit.github.io/html-encoder/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

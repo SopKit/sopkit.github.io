@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Word to PDF Online Free - No Signup",
 		description: "Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required. No signup, no uploads",
-		url: "https://sopkit.github.io/word-to-pdf",
+		url: "https://sopkit.github.io/word-to-pdf/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Channel ID Extractor Online Free - No Signup",
 		description: "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations. Free and",
-		url: "https://sopkit.github.io/youtube-channel-id-extractor",
+		url: "https://sopkit.github.io/youtube-channel-id-extractor/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

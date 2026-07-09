@@ -14,7 +14,7 @@ export const metadata = {
     title: "YouTube Playlist Link Extractor | Export Video Links to CSV",
     description:
       "Use the YouTube Playlist Link Extractor to pull video URLs from public playlists and download a CSV in one click. Ideal for audits, planning, and reporting.",
-    url: "https://sopkit.github.io/youtube-playlist-link-extractor",
+    url: "https://sopkit.github.io/youtube-playlist-link-extractor/",
     siteName: "SopKit",
     images: [{ url: "/og-image.jpg" }],
     type: "website",

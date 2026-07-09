@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Screen Resolution Simulator Online Free - No Signup",
 		description: "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-",
-		url: "https://sopkit.github.io/screen-resolution-simulator",
+		url: "https://sopkit.github.io/screen-resolution-simulator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

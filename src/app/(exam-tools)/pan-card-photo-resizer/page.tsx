@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free PAN Card Photo Resizer Online - No Signup | SopKit",
 		description: "Resize and compress files with our free PAN Card Photo Resizer online. Safe and private browser utility for government exam portal applications. Free & secure.",
-		url: "https://sopkit.github.io/pan-card-photo-resizer",
+		url: "https://sopkit.github.io/pan-card-photo-resizer/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

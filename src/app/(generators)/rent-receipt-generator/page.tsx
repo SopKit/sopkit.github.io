@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Rent Receipt Generator Online - No Signup | SopKit",
 		description: "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
-		url: "https://sopkit.github.io/rent-receipt-generator",
+		url: "https://sopkit.github.io/rent-receipt-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

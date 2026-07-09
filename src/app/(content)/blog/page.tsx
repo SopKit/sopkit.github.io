@@ -14,7 +14,7 @@ export const metadata = {
 	openGraph: {
 		title: "Blog & Guides for Free Online Tools | SopKit",
 		description: "Read practical guides that link directly to free tools you can use instantly.",
-		url: "https://sopkit.github.io/blog",
+		url: "https://sopkit.github.io/blog/",
 		type: "website",
 		images: [{ url: "/og-image.jpg" }],
 	},

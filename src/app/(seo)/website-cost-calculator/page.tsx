@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Website Cost Calculator Online Free - No Signup",
 		description: "Free Website Cost Calculator online. Estimate how much a website may cost based on pages, design quality, and features like ecommerce instantly for free.",
-		url: "https://sopkit.github.io/website-cost-calculator",
+		url: "https://sopkit.github.io/website-cost-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

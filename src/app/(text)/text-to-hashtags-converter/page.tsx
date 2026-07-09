@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Text to Hashtags Converter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Text to Hashtags Converter online. Fast and private browser utility with no signup.",
-		url: "https://sopkit.github.io/text-to-hashtags-converter",
+		url: "https://sopkit.github.io/text-to-hashtags-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

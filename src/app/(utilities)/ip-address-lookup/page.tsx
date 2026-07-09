@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "IP Address Lookup Online Free - No Signup",
 		description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
-		url: "https://sopkit.github.io/ip-address-lookup",
+		url: "https://sopkit.github.io/ip-address-lookup/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

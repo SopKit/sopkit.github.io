@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Keyword Density Checker Online Free - No Signup",
 		description: "Free keyword density checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-base",
-		url: "https://sopkit.github.io/keyword-density-checker",
+		url: "https://sopkit.github.io/keyword-density-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

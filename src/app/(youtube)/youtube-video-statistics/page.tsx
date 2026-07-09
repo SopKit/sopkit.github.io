@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Video Statistics Online Free - No Signup",
 		description: "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool. No ",
-		url: "https://sopkit.github.io/youtube-video-statistics",
+		url: "https://sopkit.github.io/youtube-video-statistics/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

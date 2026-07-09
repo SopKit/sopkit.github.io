@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Tag Generator Online Free - No Signup",
 		description: "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank higher ",
-		url: "https://sopkit.github.io/youtube-tag-generator",
+		url: "https://sopkit.github.io/youtube-tag-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

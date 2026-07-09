@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "LinkedIn Headline Generator Online Free - No Signup | SopKit",
 		description: "Create professional LinkedIn headlines that stand out. Generate multiple variations for developers, students, freelancers, and marketers. No signup, no uploads,",
-		url: "https://sopkit.github.io/linkedin-headline-generator",
+		url: "https://sopkit.github.io/linkedin-headline-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

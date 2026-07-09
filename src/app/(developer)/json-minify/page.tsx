@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JSON Minify Online Free - No Signup",
 		description: "Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly. No s",
-		url: "https://sopkit.github.io/json-minify",
+		url: "https://sopkit.github.io/json-minify/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

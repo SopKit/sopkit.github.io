@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JSON to Text Converter Online Free - No Signup",
 		description: "Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw d",
-		url: "https://sopkit.github.io/json-to-text-converter",
+		url: "https://sopkit.github.io/json-to-text-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

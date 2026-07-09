@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Comment Picker Online Free - No Signup",
 		description: "Pick a random winner from your YouTube video comments instantly. Our free online Comment Picker is perfect for giveaways, contests, and audience engagement. Fas",
-		url: "https://sopkit.github.io/youtube-comment-picker",
+		url: "https://sopkit.github.io/youtube-comment-picker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

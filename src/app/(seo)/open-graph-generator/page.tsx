@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Open Graph Generator Online Free - No Signup",
 		description: "Free open graph generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/open-graph-generator",
+		url: "https://sopkit.github.io/open-graph-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

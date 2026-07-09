@@ -17,7 +17,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Developer Tools Online - No Signup | SopKit",
 		description: "Format JSON, generate hashes, and developer utilities",
-		url: "https://sopkit.github.io/developer-tools",
+		url: "https://sopkit.github.io/developer-tools/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

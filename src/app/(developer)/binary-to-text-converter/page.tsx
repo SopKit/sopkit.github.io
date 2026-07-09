@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Binary to Text Converter Online Free - No Signup",
 		description: "Decode binary strings into readable text instantly. Our free online tool is perfect for discovering hidden messages or debugging data streams. 100% free and sec",
-		url: "https://sopkit.github.io/binary-to-text-converter",
+		url: "https://sopkit.github.io/binary-to-text-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

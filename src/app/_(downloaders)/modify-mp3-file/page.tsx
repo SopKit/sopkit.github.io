@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Modify Mp3 File Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Modify Mp3 File online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://sopkit.github.io/modify-mp3-file",
+		url: "https://sopkit.github.io/modify-mp3-file/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

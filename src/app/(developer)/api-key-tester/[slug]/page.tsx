@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
 		openGraph: {
 			title: `${tool.name} - API Test Utility | SopKit`,
 			description: tool.description,
-			url: `https://sopkit.github.io/api-key-tester/${slug}`,
+			url: `https://sopkit.github.io/api-key-tester/${slug}/`,
 			siteName: "SopKit",
 			images: [{ url: "/og-image.jpg" }],
 			type: "website",
@@ -67,7 +67,7 @@ export default async function ApiKeyTesterPage({ params }: any) {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: `https://sopkit.github.io/api-key-tester/${slug}`,
+						url: `https://sopkit.github.io/api-key-tester/${slug}/`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Cover Letter Generator Online Free - No Signup | SopKit",
 		description: "Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit. No signup, no upl",
-		url: "https://sopkit.github.io/cover-letter-generator",
+		url: "https://sopkit.github.io/cover-letter-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

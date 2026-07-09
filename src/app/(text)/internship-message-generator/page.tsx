@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Internship Application Message Generator Online Free - No Signup | SopKit",
 		description: "Generate short, human internship messages for LinkedIn, email, and founder outreach. Perfect for students and freshers. No signup, no uploads, 100% private brow",
-		url: "https://sopkit.github.io/internship-message-generator",
+		url: "https://sopkit.github.io/internship-message-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

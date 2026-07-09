@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Flickr Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Flickr Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://sopkit.github.io/flickr-video-downloader",
+		url: "https://sopkit.github.io/flickr-video-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

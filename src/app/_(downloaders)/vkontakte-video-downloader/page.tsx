@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Vkontakte Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Vkontakte Video Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://sopkit.github.io/vkontakte-video-downloader",
+		url: "https://sopkit.github.io/vkontakte-video-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

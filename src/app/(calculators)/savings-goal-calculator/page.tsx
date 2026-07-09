@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Savings Goal Calculator - Monthly Deposit Planner | SopKit",
 		description: "Find the monthly deposit needed to reach a savings goal by a target date, including interest. Free savings planning calculator.",
-		url: "https://sopkit.github.io/savings-goal-calculator",
+		url: "https://sopkit.github.io/savings-goal-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

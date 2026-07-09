@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JavaScript DeObfuscator Online Free - No Signup",
 		description: "Make obfuscated JavaScript code readable again instantly. Our free online DeObfuscator reverses common obfuscation techniques to help with code analysis and deb",
-		url: "https://sopkit.github.io/javascript-deobfuscator",
+		url: "https://sopkit.github.io/javascript-deobfuscator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

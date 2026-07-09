@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "CPM Calculator Online Free - No Signup",
 		description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach e",
-		url: "https://sopkit.github.io/cpm-calculator",
+		url: "https://sopkit.github.io/cpm-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

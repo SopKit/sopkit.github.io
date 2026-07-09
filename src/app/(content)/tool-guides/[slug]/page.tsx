@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: ToolCategoryPageProps): Promi
 		openGraph: {
 			title: `Best Free ${category.name} Tools Online | SopKit`,
 			description: category.description,
-			url: `https://sopkit.github.io/tool-guides/${category.slug}`,
+			url: `https://sopkit.github.io/tool-guides/${category.slug}/`,
 			type: "website",
 			images: [{ url: "/og-image.jpg" }],
 		},

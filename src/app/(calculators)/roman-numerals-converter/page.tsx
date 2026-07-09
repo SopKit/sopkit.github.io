@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Roman Numerals Converter Online Free - No Signup | SopKit",
 		description: "Convert numbers to Roman numerals and vice versa instantly. Supports large numbers and historical formats. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/roman-numerals-converter",
+		url: "https://sopkit.github.io/roman-numerals-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JSON Editor Online Free - No Signup",
 		description: "Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data per",
-		url: "https://sopkit.github.io/json-editor",
+		url: "https://sopkit.github.io/json-editor/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

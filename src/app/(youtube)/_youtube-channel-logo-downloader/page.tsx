@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free YouTube Channel Logo Downloader Online - No Signup | SopKit",
 		description: "Download high-quality YouTube channel logos and profile pictures instantly. Perfect for brand audits and design research. Free, fast, and secure online...",
-		url: "https://sopkit.github.io/youtube-channel-logo-downloader",
+		url: "https://sopkit.github.io/youtube-channel-logo-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Reddit Media Saver Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Reddit Media Saver online. High-speed downloading with no signup needed. No signup required.",
-		url: "https://sopkit.github.io/reddit-media-saver",
+		url: "https://sopkit.github.io/reddit-media-saver/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

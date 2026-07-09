@@ -11,7 +11,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Reddit Video Downloader Online - No Signup | SopKit",
 		description: "Download, convert, and edit video files instantly with our free Reddit Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
-		url: "https://sopkit.github.io/reddit-downloader",
+		url: "https://sopkit.github.io/reddit-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -74,7 +74,7 @@ Video URLs are processed temporarily for retrieval. We do not store or log downl
 						name: "Reddit Video Downloader",
 						description:
 							"Download Reddit videos with audio in HD quality",
-						url: "https://sopkit.github.io/reddit-downloader",
+						url: "https://sopkit.github.io/reddit-downloader/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

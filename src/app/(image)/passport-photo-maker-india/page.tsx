@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Passport Photo Maker India Online Free - No Signup | SopKit",
 		description: "Create passport-size photos for Indian forms with crop, background, size, and print layout options online for free. No signup, no uploads, 100% private browser-",
-		url: "https://sopkit.github.io/passport-photo-maker-india",
+		url: "https://sopkit.github.io/passport-photo-maker-india/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Remove Line Breaks Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Remove Line Breaks online. Fast and private browser utility with no signup. Try it free now.",
-		url: "https://sopkit.github.io/remove-line-breaks",
+		url: "https://sopkit.github.io/remove-line-breaks/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

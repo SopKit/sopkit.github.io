@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Credit Card Generator Online Free - No Signup",
 		description: "Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks without",
-		url: "https://sopkit.github.io/credit-card-generator",
+		url: "https://sopkit.github.io/credit-card-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

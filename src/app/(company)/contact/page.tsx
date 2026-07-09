@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Contact SopKit - Tool Requests, Support & Feedback",
 		description: "Have a question, feedback, or a tool request for SopKit? Reach out to our open-source team via email or report bugs directly on our GitHub repository.",
-		url: "https://sopkit.github.io/contact",
+		url: "https://sopkit.github.io/contact/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -46,7 +46,7 @@ export default async function ToolPage() {
 						"@type": "ContactPage",
 						name: "Contact SopKit",
 						description: tool.description,
-						url: "https://sopkit.github.io/contact",
+						url: "https://sopkit.github.io/contact/",
 						mainEntity: {
 							"@type": "ContactPoint",
 							email: SITE_CONFIG.contactEmail,

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Bio Generator Online Free - No Signup",
 		description: "Create professional and aesthetic bios for social media profiles. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/bio-generator",
+		url: "https://sopkit.github.io/bio-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

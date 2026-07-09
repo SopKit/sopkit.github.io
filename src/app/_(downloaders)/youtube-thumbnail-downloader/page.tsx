@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free YouTube Thumbnail Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free YouTube Thumbnail Downloader online. High-speed downloading with no signup needed.",
-		url: "https://sopkit.github.io/youtube-thumbnail-downloader",
+		url: "https://sopkit.github.io/youtube-thumbnail-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

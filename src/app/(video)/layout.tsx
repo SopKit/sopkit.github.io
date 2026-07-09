@@ -10,7 +10,7 @@ export const metadata = {
 		title: "Free Video Tools Online - No Signup | SopKit",
 		description:
 			"Play Terabox videos, compress, convert, and trim video files for free. Browser-based, no signup, no watermarks.",
-		url: "https://sopkit.github.io/video-tools",
+		url: "https://sopkit.github.io/video-tools/",
 		siteName: "SopKit",
 		images: [
 			{

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Privacy Policy Online - SopKit",
 		description: "Read the SopKit Privacy Policy. We explain how we handle data across our browser-based and server-side tools, and your privacy protections.",
-		url: "https://sopkit.github.io/privacy",
+		url: "https://sopkit.github.io/privacy/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -46,7 +46,7 @@ export default async function PrivacyPage() {
 						"@type": "WebPage",
 						name: "Privacy Policy",
 						description: tool.description,
-						url: "https://sopkit.github.io/privacy",
+						url: "https://sopkit.github.io/privacy/",
 						publisher: { "@type": "Organization", name: "SopKit" },
 					}),
 				}}

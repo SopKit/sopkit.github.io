@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Channel Finder Online Free - No Signup",
 		description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your ",
-		url: "https://sopkit.github.io/youtube-channel-finder",
+		url: "https://sopkit.github.io/youtube-channel-finder/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

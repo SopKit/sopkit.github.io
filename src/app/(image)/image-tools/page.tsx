@@ -11,7 +11,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Image Tools Online - No Signup | SopKit",
 		description: "Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.",
-		url: "https://sopkit.github.io/image-tools",
+		url: "https://sopkit.github.io/image-tools/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

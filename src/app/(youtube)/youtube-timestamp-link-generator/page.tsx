@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Timestamp Link Generator Online Free - No Signup",
 		description: "Create direct links to specific parts of any YouTube video instantly. Our free online tool helps you share precise moments with friends, students, or your audie",
-		url: "https://sopkit.github.io/youtube-timestamp-link-generator",
+		url: "https://sopkit.github.io/youtube-timestamp-link-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

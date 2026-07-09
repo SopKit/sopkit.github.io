@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "EMI Calculator for Loans Online Free - No Signup | SopKit",
 		description: "Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/emi-calculator",
+		url: "https://sopkit.github.io/emi-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

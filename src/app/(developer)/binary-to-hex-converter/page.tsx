@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Binary to HEX Converter Online Free - No Signup",
 		description: "Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast an",
-		url: "https://sopkit.github.io/binary-to-hex-converter",
+		url: "https://sopkit.github.io/binary-to-hex-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

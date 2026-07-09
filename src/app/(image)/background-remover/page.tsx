@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Background Remover Online Free - No Signup",
 		description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no s",
-		url: "https://sopkit.github.io/background-remover",
+		url: "https://sopkit.github.io/background-remover/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

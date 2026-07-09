@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Hashtag Extractor Online Free - No Signup",
 		description: "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video SEO for ",
-		url: "https://sopkit.github.io/youtube-hashtag-extractor",
+		url: "https://sopkit.github.io/youtube-hashtag-extractor/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

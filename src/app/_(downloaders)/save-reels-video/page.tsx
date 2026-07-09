@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Save Reels Video Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Save Reels Video online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://sopkit.github.io/save-reels-video",
+		url: "https://sopkit.github.io/save-reels-video/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

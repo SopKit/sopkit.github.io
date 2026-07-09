@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Channel Statistics Online Free - No Signup",
 		description: "Get detailed insights and statistics for any YouTube channel instantly. View subscriber counts, video totals, and engagement metrics with our free online analyt",
-		url: "https://sopkit.github.io/youtube-channel-statistics",
+		url: "https://sopkit.github.io/youtube-channel-statistics/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

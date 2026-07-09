@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "URL Slug Generator Online Free - No Signup | SopKit",
 		description: "Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/slug-generator",
+		url: "https://sopkit.github.io/slug-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

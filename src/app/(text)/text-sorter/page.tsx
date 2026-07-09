@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Text Sorter Online Free - No Signup",
 		description: "Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for resear",
-		url: "https://sopkit.github.io/text-sorter",
+		url: "https://sopkit.github.io/text-sorter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

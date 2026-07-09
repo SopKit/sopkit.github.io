@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Save Ig Content Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Save Ig Content online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://sopkit.github.io/save-ig-content",
+		url: "https://sopkit.github.io/save-ig-content/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

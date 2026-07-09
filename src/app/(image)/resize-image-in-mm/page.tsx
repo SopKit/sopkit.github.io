@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Resize Image in MM Online - No Signup | SopKit",
 		description: "Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents.",
-		url: "https://sopkit.github.io/resize-image-in-mm",
+		url: "https://sopkit.github.io/resize-image-in-mm/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

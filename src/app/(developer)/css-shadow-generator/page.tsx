@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "CSS Shadow Generator Online Free - No Signup",
 		description: "Generate CSS box shadows and text shadows for modern web design. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/css-shadow-generator",
+		url: "https://sopkit.github.io/css-shadow-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

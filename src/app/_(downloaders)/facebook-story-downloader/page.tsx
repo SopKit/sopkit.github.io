@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Facebook Story Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Facebook Story Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://sopkit.github.io/facebook-story-downloader",
+		url: "https://sopkit.github.io/facebook-story-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

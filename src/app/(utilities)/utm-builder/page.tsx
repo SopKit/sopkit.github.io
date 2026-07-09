@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "UTM Builder Online Free - No Signup",
 		description: "Easily build campaign URLs with UTM parameters for Google Analytics tracking. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/utm-builder",
+		url: "https://sopkit.github.io/utm-builder/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Hinglish to Hindi Converter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Hinglish to Hindi Converter online. Fast and private browser utility with no signup.",
-		url: "https://sopkit.github.io/hinglish-to-hindi",
+		url: "https://sopkit.github.io/hinglish-to-hindi/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

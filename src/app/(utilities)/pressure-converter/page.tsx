@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Pressure Converter Online Free - No Signup",
 		description: "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/pressure-converter",
+		url: "https://sopkit.github.io/pressure-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

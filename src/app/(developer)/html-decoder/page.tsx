@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "HTML Decoder Online Free - No Signup",
 		description: "Decode HTML entities back to their original characters instantly. Our free online tool converts &amp; and similar entities into readable text for easy debugging",
-		url: "https://sopkit.github.io/html-decoder",
+		url: "https://sopkit.github.io/html-decoder/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

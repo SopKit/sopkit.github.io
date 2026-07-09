@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Image Converter Online Free - No Signup",
 		description: "Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy. No signup,",
-		url: "https://sopkit.github.io/image-converter",
+		url: "https://sopkit.github.io/image-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

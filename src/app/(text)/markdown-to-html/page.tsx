@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Markdown to HTML Converter Online Free - No Signup | SopKit",
 		description: "Convert Markdown text into clean HTML code for your website, blog, or email newsletters. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/markdown-to-html",
+		url: "https://sopkit.github.io/markdown-to-html/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

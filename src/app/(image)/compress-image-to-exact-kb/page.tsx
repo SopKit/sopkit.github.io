@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Compress Image to Exact KB Online Free - No Signup | SopKit",
 		description: "Compress JPG, PNG, or WebP images to exact KB sizes like 10KB, 20KB, 50KB, 100KB, and 200KB online for free. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/compress-image-to-exact-kb",
+		url: "https://sopkit.github.io/compress-image-to-exact-kb/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

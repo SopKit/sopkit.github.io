@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Convert to ICO Online Free - No Signup",
 		description: "Free convert to ico tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/convert-to-ico",
+		url: "https://sopkit.github.io/convert-to-ico/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

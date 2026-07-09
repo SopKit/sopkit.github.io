@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Google Index Checker Online Free - No Signup",
 		description: "Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/google-index-checker",
+		url: "https://sopkit.github.io/google-index-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

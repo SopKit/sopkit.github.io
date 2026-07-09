@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "WordPress Theme Detector Online Free - No Signup",
 		description: "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
-		url: "https://sopkit.github.io/wordpress-theme-detector",
+		url: "https://sopkit.github.io/wordpress-theme-detector/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

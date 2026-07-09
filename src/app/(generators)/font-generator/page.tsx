@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Font Generator Online Free - No Signup",
 		description: "Professional Font Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/font-generator",
+		url: "https://sopkit.github.io/font-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

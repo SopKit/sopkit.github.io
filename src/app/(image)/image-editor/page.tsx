@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Image Editor Online Free - No Signup",
 		description: "Edit, crop, and enhance your photos online with our free image editing tools. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/image-editor",
+		url: "https://sopkit.github.io/image-editor/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

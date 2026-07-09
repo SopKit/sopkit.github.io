@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Review Reply Generator - Free Online Tool | SopKit",
 		description: "Generate optimized review reply generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/review-reply-generator",
+		url: "https://sopkit.github.io/review-reply-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -44,7 +44,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/review-reply-generator",
+						url: "https://sopkit.github.io/review-reply-generator/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {

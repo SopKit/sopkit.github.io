@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Pro Image Color Picker Online Free - No Signup | SopKit",
 		description: "Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-perfect picker. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/image-color-picker",
+		url: "https://sopkit.github.io/image-color-picker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

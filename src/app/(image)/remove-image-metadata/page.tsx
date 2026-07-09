@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Image Metadata (EXIF) Remover Online Free - No Signup | SopKit",
 		description: "Remove sensitive GPS, camera, and author metadata from your images before sharing online. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/remove-image-metadata",
+		url: "https://sopkit.github.io/remove-image-metadata/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

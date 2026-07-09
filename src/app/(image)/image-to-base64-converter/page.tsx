@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Image to Base64 Converter Online Free - No Signup",
 		description: "Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-ba",
-		url: "https://sopkit.github.io/image-to-base64-converter",
+		url: "https://sopkit.github.io/image-to-base64-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

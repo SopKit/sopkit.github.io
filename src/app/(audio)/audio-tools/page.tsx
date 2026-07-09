@@ -16,7 +16,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Audio Tools Online - No Signup | SopKit",
 		description: "Compress and convert audio files between formats. High-quality output and private browser-based tools with no signup.",
-		url: "https://sopkit.github.io/audio-tools",
+		url: "https://sopkit.github.io/audio-tools/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

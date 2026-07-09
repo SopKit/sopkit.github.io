@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Break-Even Calculator - Units & Revenue | SopKit",
 		description: "Calculate the break-even point in units and revenue from fixed costs, variable cost per unit, and selling price. Free business calculator.",
-		url: "https://sopkit.github.io/break-even-calculator",
+		url: "https://sopkit.github.io/break-even-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

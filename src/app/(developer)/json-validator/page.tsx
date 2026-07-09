@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JSON Validator Online Free - No Signup",
 		description: "Validate your JSON data for syntax errors and structural integrity instantly. Our free online tool helps you catch bugs and ensure your JSON is RFC-compliant. N",
-		url: "https://sopkit.github.io/json-validator",
+		url: "https://sopkit.github.io/json-validator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

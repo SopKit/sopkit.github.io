@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Passport Photo Maker Online - No Signup | SopKit",
 		description: "Resize and compress files with our free Passport Photo Maker online. Safe and private browser utility for government exam portal applications. Try it free now.",
-		url: "https://sopkit.github.io/passport-photo-maker",
+		url: "https://sopkit.github.io/passport-photo-maker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "ICO to PNG Converter Online Free - No Signup",
 		description: "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/ico-to-png-converter",
+		url: "https://sopkit.github.io/ico-to-png-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

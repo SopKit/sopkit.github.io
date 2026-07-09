@@ -15,7 +15,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
 		description: "Free online calculators for every need. BMI calculators, loan estimators, percentage tools, and scientific math tools. Get instant, accurate results for free.",
-		url: "https://sopkit.github.io/calculators",
+		url: "https://sopkit.github.io/calculators/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

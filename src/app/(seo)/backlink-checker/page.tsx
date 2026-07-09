@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Backlink Checker Online Free - No Signup",
 		description: "Analyze backlinks for any website with our free backlink checker. Discover referring domains, anchor texts, and link quality metrics instantly. No signup requir",
-		url: "https://sopkit.github.io/backlink-checker",
+		url: "https://sopkit.github.io/backlink-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

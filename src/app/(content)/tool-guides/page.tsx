@@ -12,7 +12,7 @@ import { getAllCategories } from "@/lib/tools";	export const metadata = {
 			title: "Free Tool Guides by Category | SopKit",
 			description:
 				"Browse free tool guides for every category on SopKit. Find the best image, PDF, SEO, developer, downloader, and utility tools online.",
-			url: "https://sopkit.github.io/tool-guides",
+			url: "https://sopkit.github.io/tool-guides/",
 			type: "website",
 			images: [{ url: "/og-image.jpg" }],
 		},

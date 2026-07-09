@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 		title: "Company | SopKit",
 		description:
 			"Learn about SopKit — our mission, contact details, privacy policy, and terms of service.",
-		url: "https://sopkit.github.io/about",
+		url: "https://sopkit.github.io/about/",
 		siteName: "SopKit",
 		type: "website",
 	},

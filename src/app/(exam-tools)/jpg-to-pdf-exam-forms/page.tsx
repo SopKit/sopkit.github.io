@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free JPG to PDF for Exam Forms Online - No Signup | SopKit",
 		description: "Resize and compress files with our free JPG to PDF for Exam Forms online. Safe and private browser utility for government exam portal applications. Easy to use.",
-		url: "https://sopkit.github.io/jpg-to-pdf-exam-forms",
+		url: "https://sopkit.github.io/jpg-to-pdf-exam-forms/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

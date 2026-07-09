@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "AI Image Generator Online Free - No Signup",
 		description: "Generate stunning AI images from text prompts instantly. Create photorealistic photos, digital art, anime, and illustrations for free. No signup required, unlim",
-		url: "https://sopkit.github.io/ai-image-generator",
+		url: "https://sopkit.github.io/ai-image-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

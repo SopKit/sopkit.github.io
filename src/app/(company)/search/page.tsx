@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Search All Tools Online - No Signup | SopKit",
 		description: "Search and browse our collection of 300+ free online tools. 100% free, no signup required.",
-		url: "https://sopkit.github.io/search",
+		url: "https://sopkit.github.io/search/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

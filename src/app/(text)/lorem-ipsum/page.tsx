@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Lorem Ipsum Generator Online Free - No Signup",
 		description: "Generate custom Lorem Ipsum text for your designs. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/lorem-ipsum",
+		url: "https://sopkit.github.io/lorem-ipsum/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Convert VTT to SRT Online Free - No Signup",
 		description: "Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players. No signu",
-		url: "https://sopkit.github.io/convert-vtt-to-srt",
+		url: "https://sopkit.github.io/convert-vtt-to-srt/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

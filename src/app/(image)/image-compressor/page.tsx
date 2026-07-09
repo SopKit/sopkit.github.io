@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Image Compressor Online Free - No Signup",
 		description: "Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing. No signup, no",
-		url: "https://sopkit.github.io/image-compressor",
+		url: "https://sopkit.github.io/image-compressor/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

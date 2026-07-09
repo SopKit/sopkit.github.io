@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "PDF Repair Online Free - No Signup",
 		description: "Fix corrupted or broken PDF files online for free. Our secure repair tool rebuilds document headers and cross-reference tables to restore access to your PDF doc",
-		url: "https://sopkit.github.io/pdf-repair",
+		url: "https://sopkit.github.io/pdf-repair/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Business Name Generator Online Free - No Signup",
 		description: "Generate creative and catchy names for your brand or startup. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/business-name-generator",
+		url: "https://sopkit.github.io/business-name-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

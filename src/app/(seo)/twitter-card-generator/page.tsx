@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Twitter Card Generator Online Free - No Signup",
 		description: "Free twitter card generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based",
-		url: "https://sopkit.github.io/twitter-card-generator",
+		url: "https://sopkit.github.io/twitter-card-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

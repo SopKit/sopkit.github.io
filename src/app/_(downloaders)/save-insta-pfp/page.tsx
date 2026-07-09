@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Save Insta Pfp Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Save Insta Pfp online. High-speed downloading with no signup needed. No registration needed.",
-		url: "https://sopkit.github.io/save-insta-pfp",
+		url: "https://sopkit.github.io/save-insta-pfp/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

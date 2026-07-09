@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Color Converter Online Free - No Signup",
 		description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision",
-		url: "https://sopkit.github.io/color-converter",
+		url: "https://sopkit.github.io/color-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

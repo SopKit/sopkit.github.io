@@ -15,7 +15,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free SEO Tools Online - Optimize Your Website | SopKit",
 		description: "Professional suite of free SEO tools. Keyword generators, meta tag analyzers, sitemap makers, and SERP checkers. Improve your search rankings for free.",
-		url: "https://sopkit.github.io/seo-tools",
+		url: "https://sopkit.github.io/seo-tools/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "ROI Calculator - Return on Investment | SopKit",
 		description: "Calculate return on investment, net gain, and annualized ROI from your initial and final values. Free investment return calculator.",
-		url: "https://sopkit.github.io/roi-calculator",
+		url: "https://sopkit.github.io/roi-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

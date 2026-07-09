@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "UPSC Photo Resizer 350x350 Online Free - No Signup | SopKit",
 		description: "Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/upsc-photo-resizer-350x350",
+		url: "https://sopkit.github.io/upsc-photo-resizer-350x350/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

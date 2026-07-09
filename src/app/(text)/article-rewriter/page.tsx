@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Article Rewriter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Article Rewriter online. Fast and private browser utility with no signup. Try it free now.",
-		url: "https://sopkit.github.io/article-rewriter",
+		url: "https://sopkit.github.io/article-rewriter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

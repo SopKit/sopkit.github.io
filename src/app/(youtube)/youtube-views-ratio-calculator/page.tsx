@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Views Ratio Calculator Online Free - No Signup",
 		description: "Calculate the view-to-engagement ratio for any YouTube video instantly. Our free online tool helps you understand audience interaction and video performance bey",
-		url: "https://sopkit.github.io/youtube-views-ratio-calculator",
+		url: "https://sopkit.github.io/youtube-views-ratio-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

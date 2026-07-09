@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Octal to HEX Converter Online Free - No Signup",
 		description: "Transform octal values into hexadecimal format instantly. Our free online converter is perfect for low-level programming and memory address transformations. No ",
-		url: "https://sopkit.github.io/octal-to-hex-converter",
+		url: "https://sopkit.github.io/octal-to-hex-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Discount Calculator Online Free - No Signup",
 		description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping. No signup, no uplo",
-		url: "https://sopkit.github.io/discount-calculator",
+		url: "https://sopkit.github.io/discount-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

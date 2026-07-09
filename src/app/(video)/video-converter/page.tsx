@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Video Converter Online - No Signup | SopKit",
 		description: "Download, convert, and edit video files instantly with our free Video Converter online. Fast, secure, and private processing with no signup. No signup required.",
-		url: "https://sopkit.github.io/video-converter",
+		url: "https://sopkit.github.io/video-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

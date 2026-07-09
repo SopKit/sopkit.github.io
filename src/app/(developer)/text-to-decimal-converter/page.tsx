@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Text to Decimal Converter Online Free - No Signup",
 		description: "Convert text characters into their decimal numeric equivalents instantly. Our free online tool is useful for debugging character encoding and understanding data",
-		url: "https://sopkit.github.io/text-to-decimal-converter",
+		url: "https://sopkit.github.io/text-to-decimal-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

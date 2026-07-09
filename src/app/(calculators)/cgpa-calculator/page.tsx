@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free CGPA Calculator Online - No Signup | SopKit",
 		description: "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.",
-		url: "https://sopkit.github.io/cgpa-calculator",
+		url: "https://sopkit.github.io/cgpa-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

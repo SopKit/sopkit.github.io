@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Fuel Cost Calculator - Trip Fuel Estimator | SopKit",
 		description: "Estimate the fuel needed and total cost for a trip from distance, fuel economy, and price per litre. Free trip fuel cost calculator.",
-		url: "https://sopkit.github.io/fuel-cost-calculator",
+		url: "https://sopkit.github.io/fuel-cost-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

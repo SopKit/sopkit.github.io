@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "NEET Photo & Signature Resizer Online Free - No Signup | SopKit",
 		description: "Resize and compress NEET photo and signature for application forms. Adjust size, dimensions, format, and file limit online. No signup, no uploads, 100% private ",
-		url: "https://sopkit.github.io/neet-photo-signature-resizer",
+		url: "https://sopkit.github.io/neet-photo-signature-resizer/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

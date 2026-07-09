@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Brick Calculator Online - No Signup | SopKit",
 		description: "Calculate the total number of bricks, cement bags, and sand volume required for building a wall.",
-		url: "https://sopkit.github.io/brick-calculator",
+		url: "https://sopkit.github.io/brick-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

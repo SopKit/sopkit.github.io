@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "AI Poem Generator Online Free - No Signup",
 		description: "Create beautiful poems, haikus, and rhymes using artificial intelligence. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/ai-poem-generator",
+		url: "https://sopkit.github.io/ai-poem-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

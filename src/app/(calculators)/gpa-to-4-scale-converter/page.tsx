@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "GPA to 4.0 Scale Converter Online Free - No Signup | SopKit",
 		description: "Convert your Indian percentage or 10-point CGPA into the standard US 4.0 GPA scale for study abroad. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/gpa-to-4-scale-converter",
+		url: "https://sopkit.github.io/gpa-to-4-scale-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

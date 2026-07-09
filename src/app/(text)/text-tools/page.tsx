@@ -17,7 +17,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Text Tools Online - No Signup | SopKit",
 		description: "Format, convert, and manipulate text content",
-		url: "https://sopkit.github.io/text-tools",
+		url: "https://sopkit.github.io/text-tools/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

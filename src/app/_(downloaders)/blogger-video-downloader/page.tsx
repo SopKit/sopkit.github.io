@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Blogger Video Downloader Online - No Signup | SopKit",
 		description: "Save and download media files from multiple platforms with our free Blogger Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://sopkit.github.io/blogger-video-downloader",
+		url: "https://sopkit.github.io/blogger-video-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

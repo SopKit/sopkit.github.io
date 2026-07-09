@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "YouTube Region Restriction Checker Online Free - No Signup",
 		description: "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your content. F",
-		url: "https://sopkit.github.io/youtube-region-restriction-checker",
+		url: "https://sopkit.github.io/youtube-region-restriction-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

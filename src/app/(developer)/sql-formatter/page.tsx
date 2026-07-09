@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "SQL Formatter & Beautifier Online Free - No Signup | SopKit",
 		description: "Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/sql-formatter",
+		url: "https://sopkit.github.io/sql-formatter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

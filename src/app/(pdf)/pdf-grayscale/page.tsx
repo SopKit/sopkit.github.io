@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "PDF Grayscale Online Free - No Signup",
 		description: "Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signu",
-		url: "https://sopkit.github.io/pdf-grayscale",
+		url: "https://sopkit.github.io/pdf-grayscale/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

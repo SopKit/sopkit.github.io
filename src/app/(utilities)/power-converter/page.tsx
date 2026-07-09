@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Power Converter Online Free - No Signup",
 		description: "Free power converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/power-converter",
+		url: "https://sopkit.github.io/power-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

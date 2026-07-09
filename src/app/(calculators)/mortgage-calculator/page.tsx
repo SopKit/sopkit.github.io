@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Mortgage Calculator - Monthly Payment & Interest | SopKit",
 		description: "Estimate your monthly mortgage payment, total interest, and total cost from home price, down payment, rate, and term. Free, no signup.",
-		url: "https://sopkit.github.io/mortgage-calculator",
+		url: "https://sopkit.github.io/mortgage-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

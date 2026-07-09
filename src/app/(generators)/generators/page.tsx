@@ -17,7 +17,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Fun Generators Online - No Signup | SopKit",
 		description: "Create viral content with AI-powered fun generators",
-		url: "https://sopkit.github.io/generators",
+		url: "https://sopkit.github.io/generators/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

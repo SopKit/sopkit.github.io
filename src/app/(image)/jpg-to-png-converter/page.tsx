@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JPG to PNG Converter Online Free - No Signup",
 		description: "Convert JPG to PNG with transparency support. Maintain high image quality and convert formats instantly in your browser. Free, secure, and privacy-focused onlin",
-		url: "https://sopkit.github.io/jpg-to-png-converter",
+		url: "https://sopkit.github.io/jpg-to-png-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Resize Image in Pixels Online - No Signup | SopKit",
 		description: "Resize your images by specifying exact width and height in pixels (px) for web, social media, and digital platforms.",
-		url: "https://sopkit.github.io/resize-image-in-pixels",
+		url: "https://sopkit.github.io/resize-image-in-pixels/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

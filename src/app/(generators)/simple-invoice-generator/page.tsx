@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Simple Invoice Generator Online - No Signup | SopKit",
 		description: "Create and print professional billing invoices online. Add custom line items, tax, discount details, and generate print-ready PDF layouts instantly.",
-		url: "https://sopkit.github.io/simple-invoice-generator",
+		url: "https://sopkit.github.io/simple-invoice-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

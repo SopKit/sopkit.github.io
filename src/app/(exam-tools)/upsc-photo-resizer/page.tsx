@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free UPSC Photo Resizer Online - No Signup | SopKit",
 		description: "Resize and compress files with our free UPSC Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
-		url: "https://sopkit.github.io/upsc-photo-resizer",
+		url: "https://sopkit.github.io/upsc-photo-resizer/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

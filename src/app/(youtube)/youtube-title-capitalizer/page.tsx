@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Youtube Video Title Capitalizer Online Free - No Signup",
 		description: "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles ",
-		url: "https://sopkit.github.io/youtube-title-capitalizer",
+		url: "https://sopkit.github.io/youtube-title-capitalizer/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

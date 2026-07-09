@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Temperature Converter Online Free - No Signup",
 		description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
-		url: "https://sopkit.github.io/temperature-converter",
+		url: "https://sopkit.github.io/temperature-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

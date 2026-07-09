@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "JSON Viewer Online Free - No Signup",
 		description: "Free json viewer tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/json-viewer",
+		url: "https://sopkit.github.io/json-viewer/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

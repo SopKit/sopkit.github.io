@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "User Area | SopKit",
 		description: "Manage your SopKit account, preferences, and dashboard.",
-		url: "https://sopkit.github.io/account",
+		url: "https://sopkit.github.io/account/",
 		siteName: "SopKit",
 		type: "website",
 	},

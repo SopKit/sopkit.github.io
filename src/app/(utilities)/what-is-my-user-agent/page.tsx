@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "What Is My User Agent Online Free - No Signup",
 		description: "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
-		url: "https://sopkit.github.io/what-is-my-user-agent",
+		url: "https://sopkit.github.io/what-is-my-user-agent/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

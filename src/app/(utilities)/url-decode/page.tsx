@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "URL Decode Online Free - No Signup",
 		description: "Free url decode tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/url-decode",
+		url: "https://sopkit.github.io/url-decode/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

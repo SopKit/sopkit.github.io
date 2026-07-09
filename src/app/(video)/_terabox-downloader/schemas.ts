@@ -5,7 +5,7 @@ export const jsonLdSchemas = {
 		name: "Terabox Downloader Online Free - SopKit",
 		description:
 			"Best free online terabox downloader for downloading videos from tera box links and mdiskplay.",
-		url: "https://sopkit.github.io/terabox-downloader",
+		url: "https://sopkit.github.io/terabox-downloader/",
 		applicationCategory: "MultimediaApplication",
 		operatingSystem: "Any",
 		offers: {

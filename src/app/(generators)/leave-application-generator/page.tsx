@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Leave Application Generator Online - No Signup | SopKit",
 		description: "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.",
-		url: "https://sopkit.github.io/leave-application-generator",
+		url: "https://sopkit.github.io/leave-application-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

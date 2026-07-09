@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free SGPA Calculator Online - No Signup | SopKit",
 		description: "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.",
-		url: "https://sopkit.github.io/sgpa-calculator",
+		url: "https://sopkit.github.io/sgpa-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

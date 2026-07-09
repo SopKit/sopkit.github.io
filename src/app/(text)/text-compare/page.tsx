@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Text Compare Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Text Compare online. Fast and private browser utility with no signup. 100% free and secure.",
-		url: "https://sopkit.github.io/text-compare",
+		url: "https://sopkit.github.io/text-compare/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

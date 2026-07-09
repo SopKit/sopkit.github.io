@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Image Resizer Online Free - No Signup",
 		description: "Resize images with custom dimensions and aspect ratios No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/image-resizer",
+		url: "https://sopkit.github.io/image-resizer/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

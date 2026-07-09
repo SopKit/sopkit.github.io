@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Meta Tag Generator Online Free - No Signup",
 		description: "Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/meta-tag-generator",
+		url: "https://sopkit.github.io/meta-tag-generator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

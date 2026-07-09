@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Rent Affordability Calculator - Free Online Tool | SopKit",
 		description: "Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/rent-affordability-calculator",
+		url: "https://sopkit.github.io/rent-affordability-calculator/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -44,7 +44,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/rent-affordability-calculator",
+						url: "https://sopkit.github.io/rent-affordability-calculator/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {

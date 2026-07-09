@@ -13,7 +13,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Terms of Use Online - SopKit",
 		description: "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
-		url: "https://sopkit.github.io/terms",
+		url: "https://sopkit.github.io/terms/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -46,7 +46,7 @@ export default async function TermsPage() {
 						"@type": "WebPage",
 						name: "Terms of Use",
 						description: tool.description,
-						url: "https://sopkit.github.io/terms",
+						url: "https://sopkit.github.io/terms/",
 						publisher: { "@type": "Organization", name: "SopKit" },
 					}),
 				}}

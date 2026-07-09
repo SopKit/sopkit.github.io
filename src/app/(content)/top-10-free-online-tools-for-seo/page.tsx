@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Free Top 10 Free Online Tools for SEO (2026) Online - No Signup | SopKit",
 		description: "Top 10 free SEO tools for keyword research, audits, metadata, indexing checks, and sitemaps. Ranked for speed and daily SEO workflows.",
-		url: "https://sopkit.github.io/top-10-free-online-tools-for-seo",
+		url: "https://sopkit.github.io/top-10-free-online-tools-for-seo/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/top-10-free-online-tools-for-seo",
+						url: "https://sopkit.github.io/top-10-free-online-tools-for-seo/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

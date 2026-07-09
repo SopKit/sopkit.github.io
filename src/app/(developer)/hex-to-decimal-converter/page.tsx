@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "HEX to Decimal Converter Online Free - No Signup",
 		description: "Convert hexadecimal numbers to decimal (Base-10) instantly. Our free online tool provides quick and accurate base conversions for programming and memory address",
-		url: "https://sopkit.github.io/hex-to-decimal-converter",
+		url: "https://sopkit.github.io/hex-to-decimal-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

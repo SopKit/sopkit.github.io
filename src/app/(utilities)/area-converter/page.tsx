@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Area Converter Online Free - No Signup",
 		description: "Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design proje",
-		url: "https://sopkit.github.io/area-converter",
+		url: "https://sopkit.github.io/area-converter/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

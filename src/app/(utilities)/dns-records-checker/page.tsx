@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "DNS Records Checker Online Free - No Signup",
 		description: "Retrieve all DNS records (A, MX, TXT, CNAME) for any domain instantly. Our free online tool helps you troubleshoot website hosting and email configuration issue",
-		url: "https://sopkit.github.io/dns-records-checker",
+		url: "https://sopkit.github.io/dns-records-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

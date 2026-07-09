@@ -28,7 +28,7 @@ export const metadata = {
 		title: "Tools Archive | SopKit - Complete Directory of 90+ Online Tools",
 		description:
 			"Browse our complete directory of free online tools. From image editing and PDF management to SEO audit and developer utilities.",
-		url: "https://sopkit.github.io/archive",
+		url: "https://sopkit.github.io/archive/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

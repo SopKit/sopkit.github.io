@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "Bulk Keyword Rank Checker Online Free - No Signup",
 		description: "Check Google rankings for multiple keywords instantly with our free bulk keyword rank checker. Track keyword positions, monitor competitors, and get accurate SE",
-		url: "https://sopkit.github.io/bulk-keyword-rank-checker",
+		url: "https://sopkit.github.io/bulk-keyword-rank-checker/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

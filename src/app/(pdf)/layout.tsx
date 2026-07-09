@@ -10,7 +10,7 @@ export const metadata = {
 		title: "Free PDF Tools Online - No Signup | SopKit",
 		description:
 			"Merge, split, compress, and convert PDFs for free. No signup, no watermarks, zero-storage security policy.",
-		url: "https://sopkit.github.io/pdf-tools",
+		url: "https://sopkit.github.io/pdf-tools/",
 		siteName: "SopKit",
 		images: [
 			{

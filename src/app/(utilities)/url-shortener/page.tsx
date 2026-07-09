@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "URL Shortener Online Free - No Signup",
 		description: "Shorten long URLs for easier sharing No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/url-shortener",
+		url: "https://sopkit.github.io/url-shortener/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
