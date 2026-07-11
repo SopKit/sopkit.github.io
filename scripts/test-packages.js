@@ -12,7 +12,9 @@ const packages = [
   "json",
   "color",
   "validator",
-  "password"
+  "password",
+  "xml",
+  "jwt"
 ];
 
 // Helper to run a command in a directory as a Promise

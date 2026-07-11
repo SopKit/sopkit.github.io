@@ -182,6 +182,47 @@ isCreditCard("49927398716"); // Luhn checksum check`
 const pass = generate({ length: 16 });
 const strength = analyze(pass);
 console.log(strength.label); // "strong" or "very-strong"`
+	},
+	{
+		id: "xml",
+		name: "@sopkit/xml",
+		description: "Premium XML formatter, validator, and minifier supporting nested tag validation and custom indent sizes.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/xml",
+		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/xml",
+		installCmd: "npm install @sopkit/xml",
+		toolLink: "/xml-formatter/",
+		badge: "Developer Tools",
+		api: [
+			{ name: "validate(xmlStr: string): ValidationResult", desc: "Checks XML syntax. Identifies mismatches, unclosed elements, or empty tags." },
+			{ name: "format(xmlStr: string, indentSize?: number): string", desc: "Formats (beautifies) an XML string with indentation structure." },
+			{ name: "minify(xmlStr: string): string", desc: "Minifies an XML string, stripping comments and extra whitespaces." }
+		],
+		usage: `import { format, minify, validate } from "@sopkit/xml";
+
+const raw = "<store><book>The Hobbit</book></store>";
+const pretty = format(raw, 2);
+console.log(pretty);`
+	},
+	{
+		id: "jwt",
+		name: "@sopkit/jwt",
+		description: "Unicode-safe JSON Web Token (JWT) decoder and format validator checking header and payload.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/jwt",
+		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/jwt",
+		installCmd: "npm install @sopkit/jwt",
+		toolLink: "/jwt-decoder/",
+		badge: "Security & Crypto",
+		api: [
+			{ name: "decode(token: string): DecodedJWT", desc: "Extracts and parses Token Header, Payload, and Signature values." },
+			{ name: "verifyFormat(token: string): boolean", desc: "Returns true if the string fits standard JWT structure layout." }
+		],
+		usage: `import { decode, verifyFormat } from "@sopkit/jwt";
+
+const token = "eyJhbGci...Signature";
+if (verifyFormat(token)) {
+  const result = decode(token);
+  console.log(result.payload.name); // "John Doe"
+}`
 	}
 ];
 

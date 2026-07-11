@@ -238,6 +238,65 @@ isCreditCard("49927398716");`
 
 const pass = generate({ length: 16 });
 const res = analyze(pass);`
+	},
+	xml: {
+		name: "@sopkit/xml",
+		badge: "Developer Tools",
+		version: "1.0.0",
+		description: "Premium XML formatter, validator, and minifier supporting nested tag validation and custom indent sizes.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/xml",
+		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/xml",
+		installCmd: "npm install @sopkit/xml",
+		toolLink: "/xml-formatter/",
+		detailedDesc: "Parse, format, minify, and strictly validate XML data structures on the client side with zero telemetry.",
+		rivals: {
+			title: "Rivals Comparison",
+			legacyName: "xml-beautifier / prettier-plugin-xml",
+			reasons: [
+				{ metric: "Bundle size", ours: "2.4 KB", legacy: "40 KB+" },
+				{ metric: "Browser Support", ours: "Native parser + fallback", legacy: "Requires polyfills" },
+				{ metric: "Dependencies", ours: "0", legacy: "Multiple" }
+			]
+		},
+		api: [
+			{ name: "validate(xmlStr: string): ValidationResult", desc: "Performs strict validation on tags and returns errors." },
+			{ name: "format(xmlStr: string, indentSize?: number): string", desc: "Formats raw XML into standard indented layouts." },
+			{ name: "minify(xmlStr: string): string", desc: "Compacts XML by removing extra whitespace." }
+		],
+		usage: `import { format, validate } from "@sopkit/xml";
+
+const result = validate("<tag>val</tag>");
+const clean = format("<tag>val</tag>", 2);`
+	},
+	jwt: {
+		name: "@sopkit/jwt",
+		badge: "Security & Crypto",
+		version: "1.0.0",
+		description: "Unicode-safe JSON Web Token (JWT) decoder and format validator checking header and payload.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/jwt",
+		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/jwt",
+		installCmd: "npm install @sopkit/jwt",
+		toolLink: "/jwt-decoder/",
+		detailedDesc: "Extract metadata and claims securely from JWT strings entirely client-side without sending tokens to any server.",
+		rivals: {
+			title: "Rivals Comparison",
+			legacyName: "jwt-decode",
+			reasons: [
+				{ metric: "Bundle size", ours: "1.2 KB", legacy: "4.8 KB" },
+				{ metric: "Unicode safety", ours: "Guaranteed (UTF-8 bytes safety check)", legacy: "Fails on emojis" },
+				{ metric: "Validation", ours: "Checks token parts structure", legacy: "Throws directly without safety checks" }
+			]
+		},
+		api: [
+			{ name: "decode(token: string): DecodedJWT", desc: "Splits and decodes token components." },
+			{ name: "verifyFormat(token: string): boolean", desc: "Checks for valid three-part Base64Url pattern format." }
+		],
+		usage: `import { decode, verifyFormat } from "@sopkit/jwt";
+
+if (verifyFormat(myToken)) {
+  const result = decode(myToken);
+  console.log(result.header.alg);
+}`
 	}
 };
 

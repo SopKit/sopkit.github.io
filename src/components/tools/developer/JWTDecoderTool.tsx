@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { decode } from "@sopkit/jwt";
 
 export default function JWTDecoder() {
 	const [jwtToken, setJwtToken] = useState("");
@@ -39,25 +40,11 @@ export default function JWTDecoder() {
 				return;
 			}
 
-			const parts = jwtToken.split(".");
-			if (parts.length !== 3) {
-				throw new Error("Invalid JWT format");
-			}
-
-			// Decode header
-			const decodedHeader = JSON.parse(
-				atob(parts[0].replace(/-/g, "+").replace(/_/g, "/")),
-			);
-			setHeader(JSON.stringify(decodedHeader, null, 2));
-
-			// Decode payload
-			const decodedPayload = JSON.parse(
-				atob(parts[1].replace(/-/g, "+").replace(/_/g, "/")),
-			);
-			setPayload(JSON.stringify(decodedPayload, null, 2));
-
-			// Set signature
-			setSignature(parts[2]);
+			// Decode using @sopkit/jwt
+			const result = decode(jwtToken);
+			setHeader(JSON.stringify(result.header, null, 2));
+			setPayload(JSON.stringify(result.payload, null, 2));
+			setSignature(result.signature);
 			setIsValid(true);
 
 			toast.success("JWT decoded successfully!");

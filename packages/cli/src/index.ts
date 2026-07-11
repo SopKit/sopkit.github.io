@@ -6,6 +6,8 @@ import * as json from "@sopkit/json";
 import * as color from "@sopkit/color";
 import * as validator from "@sopkit/validator";
 import * as password from "@sopkit/password";
+import * as xml from "@sopkit/xml";
+import * as jwt from "@sopkit/jwt";
 
 async function main() {
   console.log("\n🚀 Welcome to SopKit CLI — Interactive Developer Utilities");
@@ -20,6 +22,8 @@ async function main() {
       { title: "UUID (Generate v4 or v1)", value: "uuid" },
       { title: "URL Slug (Generate URL-safe Slug)", value: "slug" },
       { title: "JSON (Beautify / Minify / Validate)", value: "json" },
+      { title: "XML (Beautify / Minify / Validate)", value: "xml" },
+      { title: "JWT (Decode / Verify Format)", value: "jwt" },
       { title: "Color (HEX / RGB / HSL Conversion)", value: "color" },
       { title: "Validator (Email / URL / IP / Credit Card)", value: "validator" },
       { title: "Password (Generate / Strength Analyzer)", value: "password" },
@@ -44,6 +48,12 @@ async function main() {
       break;
     case "json":
       await runJson();
+      break;
+    case "xml":
+      await runXml();
+      break;
+    case "jwt":
+      await runJwt();
       break;
     case "color":
       await runColor();
@@ -341,6 +351,89 @@ async function runPassword() {
       res.suggestions.forEach(s => console.log(`   - ${s}`));
     }
     console.log();
+  }
+}
+
+async function runXml() {
+  const action = await prompts({
+    type: "select",
+    name: "type",
+    message: "Select XML action:",
+    choices: [
+      { title: "Beautify (Format)", value: "format" },
+      { title: "Minify", value: "minify" },
+      { title: "Validate Syntax", value: "validate" }
+    ]
+  });
+
+  if (!action.type) return;
+
+  const input = await prompts({
+    type: "text",
+    name: "value",
+    message: "Enter XML string:"
+  });
+
+  if (!input.value) return;
+
+  try {
+    if (action.type === "format") {
+      const formatted = xml.format(input.value);
+      console.log(`\n✨ Formatted XML:\n${formatted}\n`);
+    } else if (action.type === "minify") {
+      const minified = xml.minify(input.value);
+      console.log(`\n✨ Minified XML:\n${minified}\n`);
+    } else if (action.type === "validate") {
+      const res = xml.validate(input.value);
+      if (res.valid) {
+        console.log("\n✅ Valid XML!\n");
+      } else {
+        console.log(`\n❌ Invalid XML: ${res.error}\n`);
+      }
+    }
+  } catch (err: any) {
+    console.error(`\n❌ Error: ${err.message}\n`);
+  }
+}
+
+async function runJwt() {
+  const action = await prompts({
+    type: "select",
+    name: "type",
+    message: "Select JWT action:",
+    choices: [
+      { title: "Decode Token Payload", value: "decode" },
+      { title: "Verify Format", value: "verify" }
+    ]
+  });
+
+  if (!action.type) return;
+
+  const input = await prompts({
+    type: "text",
+    name: "value",
+    message: "Enter JWT token:"
+  });
+
+  if (!input.value) return;
+
+  try {
+    if (action.type === "decode") {
+      const res = jwt.decode(input.value);
+      console.log(`\n✨ Decoded JWT:`);
+      console.log(`   Header:`, res.header);
+      console.log(`   Payload:`, res.payload);
+      console.log(`   Signature Hash: ${res.signature}\n`);
+    } else if (action.type === "verify") {
+      const valid = jwt.verifyFormat(input.value);
+      if (valid) {
+        console.log("\n✅ Valid JWT Format!\n");
+      } else {
+        console.log("\n❌ Invalid JWT Format!\n");
+      }
+    }
+  } catch (err: any) {
+    console.error(`\n❌ Error: ${err.message}\n`);
   }
 }
 

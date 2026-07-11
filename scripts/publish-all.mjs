@@ -14,6 +14,8 @@ const packages = [
   "color",
   "validator",
   "password",
+  "xml",
+  "jwt",
   "cli"
 ];
 

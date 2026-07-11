@@ -1,0 +1,31 @@
+{
+  "name": "@sopkit/xml",
+  "version": "1.0.0",
+  "description": "Premium, lightweight XML formatter, validator, and minifier for browser and Node.js.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "sopkit",
+    "xml",
+    "format",
+    "beautify",
+    "minify",
+    "validate",
+    "parser"
+  ],
+  "author": "SopKit",
+  "license": "MIT",
+  "homepage": "https://sopkit.github.io/xml-formatter/"
+}

@@ -13,6 +13,7 @@ import { GlassCard } from "../shared/WorkspaceComponents";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
+import { validate, format, minify } from "@sopkit/xml";
 
 export default function XmlFormatterTool() {
 	const [xmlInput, setXmlInput] = useState(`<?xml version="1.0" encoding="UTF-8"?>
@@ -34,63 +35,23 @@ export default function XmlFormatterTool() {
 		}
 
 		try {
-			// Basic XML Validation using browser DOMParser
-			const parser = new DOMParser();
-			const xmlDoc = parser.parseFromString(xml, "application/xml");
-			const parserError = xmlDoc.querySelector("parsererror");
-			if (parserError) {
-				setError(parserError.textContent);
+			// Validate using @sopkit/xml
+			const validation = validate(xml);
+			if (!validation.valid) {
+				setError(validation.error || "Invalid XML string");
 				setXmlOutput("");
 				return;
 			}
 			setError("");
 
-			// Clean XML input by stripping existing spacing between tags
-			let cleanXml = xml.replace(/>\s*</g, "><").trim();
-
 			if (mode === "minify") {
-				setXmlOutput(cleanXml);
-				return;
+				const minified = minify(xml);
+				setXmlOutput(minified);
+			} else {
+				const formatted = format(xml, 2);
+				setXmlOutput(formatted);
 			}
-
-			// Custom Beautifier
-			let formatted = "";
-			let pad = 0;
-			const indent = "  ";
-			const reg = /(>)(<)(\/*)/g;
-			cleanXml = cleanXml.replace(reg, "$1\r\n$2$3");
-
-			const lines = cleanXml.split("\r\n");
-			for (let i = 0; i < lines.length; i++) {
-				const line = lines[i].trim();
-				if (!line) continue;
-
-				let indentLevel = 0;
-				if (line.match(/.+<\/\w[^>]*>$/)) {
-					// Self-contained tag: <foo>bar</foo>
-					indentLevel = 0;
-				} else if (line.match(/^<\/\w/)) {
-					// Closing tag: </foo>
-					if (pad !== 0) pad -= 1;
-				} else if (line.match(/^<\w[^>]*[^\/]>.*$/)) {
-					// Opening tag: <foo>
-					indentLevel = 1;
-				} else {
-					// Self-closing tags or header tags like <?xml ... ?>
-					indentLevel = 0;
-				}
-
-				let padding = "";
-				for (let p = 0; p < pad; p++) {
-					padding += indent;
-				}
-
-				formatted += padding + line + "\n";
-				pad += indentLevel;
-			}
-
-			setXmlOutput(formatted.trim());
-		} catch (err) {
+		} catch (err: any) {
 			setError(err.message);
 			setXmlOutput("");
 		}

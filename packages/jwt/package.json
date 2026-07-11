@@ -1,0 +1,30 @@
+{
+  "name": "@sopkit/jwt",
+  "version": "1.0.0",
+  "description": "Premium, lightweight JWT decoder and validator for Browser and Node.js.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "sopkit",
+    "jwt",
+    "decode",
+    "parse",
+    "validate",
+    "token"
+  ],
+  "author": "SopKit",
+  "license": "MIT",
+  "homepage": "https://sopkit.github.io/jwt-decoder/"
+}

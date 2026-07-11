@@ -60,7 +60,16 @@
 		"server-only": "^0.0.1",
 		"sonner": "^2.0.7",
 		"tailwind-merge": "^3.4.0",
-		"tailwindcss-animate": "^1.0.7"
+		"tailwindcss-animate": "^1.0.7",
+		"@sopkit/base64": "file:packages/base64",
+		"@sopkit/color": "file:packages/color",
+		"@sopkit/json": "file:packages/json",
+		"@sopkit/slug": "file:packages/slug",
+		"@sopkit/uuid": "file:packages/uuid",
+		"@sopkit/validator": "file:packages/validator",
+		"@sopkit/password": "file:packages/password",
+		"@sopkit/xml": "file:packages/xml",
+		"@sopkit/jwt": "file:packages/jwt"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",

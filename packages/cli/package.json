@@ -27,6 +27,8 @@
     "@sopkit/uuid": "file:../uuid",
     "@sopkit/validator": "file:../validator",
     "@sopkit/password": "file:../password",
+    "@sopkit/xml": "file:../xml",
+    "@sopkit/jwt": "file:../jwt",
     "prompts": "^2.4.2"
   },
   "keywords": [
