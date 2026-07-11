@@ -1,5 +1,8 @@
 # `@sopkit/slug`
 
+[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.github.io/slug-generator/)
+[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.github.io/slug-generator/)
+
 Premium, lightweight URL slug generator and text clean-up utility with full Unicode/diacritics support. Part of the SopKit utility ecosystem.
 
 ## Online Interactive Tool
