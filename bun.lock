@@ -22,6 +22,15 @@
         "@radix-ui/react-switch": "^1.2.5",
         "@radix-ui/react-tabs": "^1.1.12",
         "@radix-ui/react-tooltip": "^1.2.7",
+        "@sopkit/base64": "file:packages/base64",
+        "@sopkit/color": "file:packages/color",
+        "@sopkit/json": "file:packages/json",
+        "@sopkit/jwt": "file:packages/jwt",
+        "@sopkit/password": "file:packages/password",
+        "@sopkit/slug": "file:packages/slug",
+        "@sopkit/uuid": "file:packages/uuid",
+        "@sopkit/validator": "file:packages/validator",
+        "@sopkit/xml": "file:packages/xml",
         "@stackframe/stack": "^2.8.85",
         "caniuse-lite": "^1.0.30001788",
         "class-variance-authority": "^0.7.1",
@@ -725,6 +734,24 @@
     "@smithy/util-waiter": ["@smithy/util-waiter@4.4.4", "", { "dependencies": { "@smithy/core": "^3.24.4", "tslib": "^2.6.2" } }, "sha512-Qt+W1pLeV/gmsXXUKbcolZqSGwnEdcxM7tqZjtGazkJ4feMUX0Vy+mCZGyhCwLvO8qxsrhYlmRZ7FLGUxJ4Scg=="],
 
     "@smithy/uuid": ["@smithy/uuid@1.1.2", "", { "dependencies": { "tslib": "^2.6.2" } }, "sha512-O/IEdcCUKkubz60tFbGA7ceITTAJsty+lBjNoorP4Z6XRqaFb/OjQjZODophEcuq68nKm6/0r+6/lLQ+XVpk8g=="],
+
+    "@sopkit/base64": ["@sopkit/base64@file:packages/base64", {}],
+
+    "@sopkit/color": ["@sopkit/color@file:packages/color", {}],
+
+    "@sopkit/json": ["@sopkit/json@file:packages/json", {}],
+
+    "@sopkit/jwt": ["@sopkit/jwt@file:packages/jwt", {}],
+
+    "@sopkit/password": ["@sopkit/password@file:packages/password", {}],
+
+    "@sopkit/slug": ["@sopkit/slug@file:packages/slug", {}],
+
+    "@sopkit/uuid": ["@sopkit/uuid@file:packages/uuid", {}],
+
+    "@sopkit/validator": ["@sopkit/validator@file:packages/validator", {}],
+
+    "@sopkit/xml": ["@sopkit/xml@file:packages/xml", {}],
 
     "@speed-highlight/core": ["@speed-highlight/core@1.2.12", "", {}, "sha512-uilwrK0Ygyri5dToHYdZSjcvpS2ZwX0w5aSt3GCEN9hrjxWCoeV4Z2DTXuxjwbntaLQIEEAlCeNQss5SoHvAEA=="],
 
