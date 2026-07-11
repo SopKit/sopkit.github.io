@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { getMonetizationDecision } from "@/data/monetization";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { SHOW_SCRIPTLY_ADS } from "@/constants/config";
 
 interface AdPlacementProps {
   placement: "after-hero" | "before-tool" | "after-tool" | "in-content" | "sidebar" | "footer";
@@ -80,6 +81,10 @@ export default function AdPlacement({
   slug = "",
   category = "",
 }: AdPlacementProps) {
+  if (!SHOW_SCRIPTLY_ADS) {
+    return null;
+  }
+
   const monetization = getMonetizationDecision({ slug, category });
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
   const [adDecision, setAdDecision] = useState<"ad" | "empty">("ad");

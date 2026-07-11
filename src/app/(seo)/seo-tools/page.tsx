@@ -38,7 +38,6 @@ export default function SEOHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
-			<AppleNavbar />
 			<main>
 				<PremiumHero 
 					title="SEO Utilities" 
@@ -72,7 +71,6 @@ export default function SEOHub() {
 					</div>
 				</div>
 			</main>
-			<AppleFooter categories={categories} />
 		</div>
 	);
 }

@@ -86,7 +86,7 @@ export default async function ToolPage() {
 							<p className="text-sm font-semibold text-primary/80">Expected Response Time: Within 24 Hours</p>
 							<div className="flex flex-col gap-3 pt-4">
 								<a 
-									href="https://github.com/SopKit/sopkit.github.io/issues/new/choose" 
+									href={`${SITE_CONFIG.githubRepoUrl}/issues/new/choose`} 
 									target="_blank" 
 									rel="noreferrer"
 									className="flex items-center gap-2 font-bold hover:text-primary transition-colors"
@@ -94,7 +94,7 @@ export default async function ToolPage() {
 									Report an Issue on GitHub <ArrowUpRight className="h-4 w-4" />
 								</a>
 								<a 
-									href="https://github.com/SopKit/sopkit.github.io" 
+									href={SITE_CONFIG.githubRepoUrl} 
 									target="_blank" 
 									rel="noreferrer"
 									className="flex items-center gap-2 font-bold hover:text-primary transition-colors"

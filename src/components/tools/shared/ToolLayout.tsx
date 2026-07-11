@@ -19,6 +19,8 @@ import { SITE_CONFIG } from "@/constants/config";
 import AdPlacement from "@/components/ads/AdPlacement";
 import { getSeoOpportunityByRoute } from "@/data/seo-opportunities";
 
+import { EmbedWidgetGiver } from "./EmbedWidgetGiver";
+
 interface ToolArticleProps {
 	content?: string;
 }
@@ -280,6 +282,11 @@ export default function ToolLayout({
 							</section>
 						)}
 
+						{/* Embeddable Growth Widget */}
+						{!isCompanyPage && (
+							<EmbedWidgetGiver toolId={tool.id} toolName={tool.name} />
+						)}
+
 						{/* Contribution Notice - below fold */}
 						<section className="text-center space-y-4 max-w-2xl mx-auto p-8 border border-dashed rounded-2xl bg-primary/5" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 200px" }}>
 							<h3 className="text-lg font-bold">Tool not working or missing something?</h3>
@@ -289,7 +296,7 @@ export default function ToolLayout({
 							</p>
 							<div className="flex flex-wrap items-center justify-center gap-4">
 								<Button variant="outline" size="sm" asChild className="gap-2">
-									<a href="https://github.com/SopKit/sopkit.github.io" target="_blank" rel="noreferrer">
+									<a href={SITE_CONFIG.githubRepoUrl} target="_blank" rel="noreferrer">
 										<Github className="h-4 w-4" />
 										Contribute on GitHub
 									</a>
@@ -336,7 +343,7 @@ export default function ToolLayout({
 							</p>
 							<div className="flex items-center justify-center gap-2 pt-2">
 								<a
-									href="https://github.com/SopKit/sopkit.github.io"
+									href={SITE_CONFIG.githubRepoUrl}
 									target="_blank"
 									rel="noreferrer"
 									className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-[10px] font-bold uppercase tracking-widest text-primary/60 hover:bg-primary/10 transition-colors"

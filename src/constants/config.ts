@@ -16,6 +16,14 @@ export const TOOL_COUNT_STRING = `${Math.floor(TOOL_COUNT / 5) * 5}+`;
 export const CATEGORY_COUNT = Object.keys(toolsData.categories || {}).length;
 export const POPULAR_TOOL_COUNT = allTools.filter((tool: any) => tool?.popular).length;
 
+export const SHOW_SCRIPTLY_ADS = false;
+export const GITHUB_REPO_URL = "https://github.com/SopKit/sopkit.github.io";
+export const DEFAULT_META_TITLE = "SopKit - Free Online Toolkit (100% Client-Side)";
+export const DEFAULT_META_DESC = "SopKit is a free, privacy-first online utility suite. Compress images, merge PDFs, download videos, and format developer logs locally in your browser sandbox.";
+export const THEME_COLOR = "#10b981";
+export const FEED_URL = `${SITE_URL}/feed.xml`;
+export const SITEMAP_URL = `${SITE_URL}/sitemap.xml`;
+
 export const SITE_CONFIG = {
 	siteName: SITE_NAME,
 	siteUrl: SITE_URL,
@@ -30,4 +38,11 @@ export const SITE_CONFIG = {
 	supportedFileLimits: "Up to 50MB per file",
 	contactEmail: CONTACT_EMAIL,
 	companyOrOwnerName: COMPANY_OR_OWNER_NAME,
+	showScriptlyAds: SHOW_SCRIPTLY_ADS,
+	githubRepoUrl: GITHUB_REPO_URL,
+	defaultMetaTitle: DEFAULT_META_TITLE,
+	defaultMetaDesc: DEFAULT_META_DESC,
+	themeColor: THEME_COLOR,
+	feedUrl: FEED_URL,
+	sitemapUrl: SITEMAP_URL,
 };

@@ -8,6 +8,8 @@ import dynamic from "next/dynamic";
 import { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
+import { PWARegistration } from "@/components/shared/PWARegistration";
+
 // Dynamic import for Stack Auth - heavy client bundle, only loaded when configured
 const StackAuthProvider = dynamic(
 	() => import("@/components/shared/StackAuthProvider")
@@ -350,6 +352,7 @@ export default function RootLayout({
 
 						<AppleFooter categories={categories} />
 						<Toaster />
+						<PWARegistration />
 					</ThemeProvider>
 				</StackAuthProvider>
 

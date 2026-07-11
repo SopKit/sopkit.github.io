@@ -110,7 +110,7 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 						<h4 className="text-xs font-semibold tracking-wider uppercase text-muted-foreground/80 mb-3">Community</h4>
 						<ul className="space-y-2 text-xs">
 							<li>
-								<a href="https://github.com/SopKit/sopkit.github.io" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
+								<a href={SITE_CONFIG.githubRepoUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
 									GitHub Repository <ArrowUpRight className="h-3 w-3 opacity-60" />
 								</a>
 							</li>

@@ -10,6 +10,7 @@ import { AuthButton } from "./AuthButton";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { STATIC_ROUTES } from "@/lib/tools";
+import { GITHUB_REPO_URL } from "@/constants/config";
 
 function SearchInput() {
 	const router = useRouter();
@@ -114,7 +115,7 @@ export function AppleNavbar() {
 						<ThemeToggle />
 
 						<a
-							href="https://github.com/SopKit/sopkit.github.io"
+							href={GITHUB_REPO_URL}
 							target="_blank"
 							rel="noopener noreferrer"
 							className="p-1.5 text-muted-foreground hover:text-foreground rounded-md transition-colors"
@@ -185,7 +186,7 @@ export function AppleNavbar() {
 							<div className="flex items-center gap-4">
 								<ThemeToggle />
 								<a
-									href="https://github.com/SopKit/sopkit.github.io"
+									href={GITHUB_REPO_URL}
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-xs text-muted-foreground hover:text-foreground"

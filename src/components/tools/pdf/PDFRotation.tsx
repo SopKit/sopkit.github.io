@@ -368,7 +368,7 @@ export default function PDFRotation() {
                             <div className="pt-4 border-t border-border/40">
                                 <Button 
                                     className="w-full h-12 font-bold uppercase tracking-widest"
-                                    disabled={pages.length === 0 || isProcessing || !pdflib}
+                                    disabled={pages.length === 0 || isProcessing}
                                     onClick={savePDF}
                                 >
                                     {isProcessing ? "Processing..." : "Save Changes"}
