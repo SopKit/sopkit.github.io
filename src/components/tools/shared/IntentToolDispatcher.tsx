@@ -255,6 +255,8 @@ const YamlToJsonTool = dynamic(() => import("@/components/tools/developer/YamlTo
 const JsonToYamlTool = dynamic(() => import("@/components/tools/developer/JsonToYamlTool"), { ssr: false });
 const RandomNameGeneratorTool = dynamic(() => import("@/components/tools/developer/RandomNameGeneratorTool"), { ssr: false });
 const XmlFormatterTool = dynamic(() => import("@/components/tools/developer/XmlFormatterTool"), { ssr: false });
+const SQLFormatterTool = dynamic(() => import("@/components/tools/developer/SQLFormatterTool"), { ssr: false });
+const CodeFormatterTool = dynamic(() => import("@/components/tools/developer/CodeFormatterTool"), { ssr: false });
 const UserAgentParserTool = dynamic(() => import("@/components/tools/developer/UserAgentParserTool"), { ssr: false });
 const HtmlToXmlEntitiesTool = dynamic(() => import("@/components/tools/developer/HtmlToXmlEntitiesTool"), { ssr: false });
 const CssBorderRadiusTool = dynamic(() => import("@/components/tools/developer/CssBorderRadiusTool"), { ssr: false });
@@ -293,6 +295,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "json-to-typescript": { component: JsonToTypeScriptTool, props: {} },
     "crontab-generator": { component: CrontabGeneratorTool, props: {} },
     "xml-formatter": { component: XmlFormatterTool, props: {} },
+    "sql-formatter": { component: SQLFormatterTool, props: {} },
     "jwt-decoder": { component: JWTDecoderTool, props: {} },
     "random-name-generator": { component: RandomNameGeneratorTool, props: {} },
     "html-minifier": { component: HtmlMinifierTool, props: {} },
@@ -398,7 +401,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "cgpa-to-percentage-calculator": { component: AcademicGradesCalculator, props: {"defaultTab": "cgpa-pct"} },
     "charge-converter": { component: UniversalUnitConverter, props: {"preset": "charge"} },
     "chingari-video-downloader": { component: ChingariDownloader, props: {} },
-    "code-formatter": { component: JSONFormatterTool, props: {} },
+    "code-formatter": { component: CodeFormatterTool, props: {} },
     "color-converter": { component: RgbHexConverter, props: {"mode": "color"} },
     "comma-separator": { component: CommaSeparatorTool, props: {} },
     "compress-image-to-100kb": { component: ExamPhotoResizer, props: {"examName": "100KB Limit", "disclaimer": "Compress your images to exactly under 100KB for online form portals."} },

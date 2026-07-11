@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /**
- * Regenerate public/llms.txt from src/constants/tools.json.
- * Produces an AI-crawler-friendly index: site header + every tool grouped by
- * category with a one-line description and canonical link.
+ * Regenerate public/llms.txt and public/llms-full.txt from src/constants/tools.json.
+ * Produces AI-crawler-friendly indexes for Generative Engine Optimization (GEO).
  *
  * Usage: node scripts/generate-llms.mjs
  */
@@ -20,8 +19,6 @@ const clean = (s) =>
 		.replace(/[<>]/g, "")
 		.trim();
 
-// Verified canonical hub routes (kept in sync with src/lib/seo.ts CATEGORY_HUB_URLS
-// and the staticPages list in src/app/sitemap.ts).
 const HUB_MAP = {
 	image: "/image-tools",
 	pdf: "/pdf-tools",
@@ -43,48 +40,93 @@ const HUB_MAP = {
 	blog: "/blog",
 };
 
-const lines = [];
-lines.push("# SopKit");
-lines.push("");
-lines.push(
+// -----------------------------------------------------------------------------
+// 1. Generate public/llms.txt (Standard summary list)
+// -----------------------------------------------------------------------------
+const llmsSummaryLines = [];
+llmsSummaryLines.push("# SopKit");
+llmsSummaryLines.push("");
+llmsSummaryLines.push(
 	"> SopKit is a free online toolkit with browser-based tools for image, PDF, video, audio, text, SEO, and developer workflows. No signup required. Privacy-first — most tools process data locally in the browser.",
 );
-lines.push("");
-lines.push(`Canonical: ${BASE}`);
-lines.push(`Search: ${BASE}/search`);
-lines.push(`Sitemap: ${BASE}/sitemap.xml`);
-lines.push(`RSS: ${BASE}/feed.xml`);
-lines.push("");
-lines.push("## What is SopKit?");
-lines.push("");
-lines.push(
+llmsSummaryLines.push("");
+llmsSummaryLines.push(`Canonical: ${BASE}`);
+llmsSummaryLines.push(`Search: ${BASE}/search`);
+llmsSummaryLines.push(`Sitemap: ${BASE}/sitemap.xml`);
+llmsSummaryLines.push(`RSS: ${BASE}/feed.xml`);
+llmsSummaryLines.push("");
+llmsSummaryLines.push("## What is SopKit?");
+llmsSummaryLines.push("");
+llmsSummaryLines.push(
 	"SopKit is a comprehensive collection of free online utilities for creators, developers, students, and professionals. All tools run in the browser without account creation or software installation. Files processed client-side never leave the device.",
 );
-lines.push("");
-lines.push("## Category hubs");
-lines.push("");
+llmsSummaryLines.push("");
+llmsSummaryLines.push("## Category hubs");
+llmsSummaryLines.push("");
 for (const c of cats) {
 	const hub = HUB_MAP[c.slug] || HUB_MAP[c.key];
 	if (!hub) continue;
-	lines.push(`- [${c.name}](${BASE}${hub}) - ${clean(c.description || "")}`);
+	llmsSummaryLines.push(`- [${c.name}](${BASE}${hub}) - ${clean(c.description || "")}`);
 }
-lines.push("");
-lines.push("## Tools by category");
-lines.push("");
+llmsSummaryLines.push("");
+llmsSummaryLines.push("## Tools by category");
+llmsSummaryLines.push("");
 
 for (const c of cats) {
-	lines.push(`### ${c.name}`);
-	lines.push("");
+	llmsSummaryLines.push(`### ${c.name}`);
+	llmsSummaryLines.push("");
 	const tools = c.tools || [];
 	for (const t of tools) {
 		const route = t.route || "";
 		const url = `${BASE}${route}`;
 		const desc = clean(t.description || t.seoDescription || "");
-		lines.push(`- [${t.name}](${url}) - ${desc}`);
+		llmsSummaryLines.push(`- [${t.name}](${url}) - ${desc}`);
 	}
-	lines.push("");
+	llmsSummaryLines.push("");
 }
 
-const out = lines.join("\n");
-writeFileSync("public/llms.txt", out);
-console.log(`✓ Wrote public/llms.txt (${cats.reduce((n, c) => n + (c.tools?.length || 0), 0)} tools across ${cats.length} categories)`);
+writeFileSync("public/llms.txt", llmsSummaryLines.join("\n"));
+console.log(`✓ Wrote public/llms.txt`);
+
+// -----------------------------------------------------------------------------
+// 2. Generate public/llms-full.txt (Full detail for deep context reasoning)
+// -----------------------------------------------------------------------------
+const llmsFullLines = [];
+llmsFullLines.push("# SopKit — Detailed capabilities index");
+llmsFullLines.push("");
+llmsFullLines.push(
+	"> SopKit is a secure, zero-trust web utility platform. All operations (formatting, compression, conversions) occur client-side inside the user's browser sandbox using HTML5 APIs, Canvas, and WebAssembly. No user files are ever uploaded or saved to remote databases, preventing compliance leaks.",
+);
+llmsFullLines.push("");
+llmsFullLines.push(`Canonical Base URL: ${BASE}`);
+llmsFullLines.push("");
+llmsFullLines.push("## Core Architecture & Security Model");
+llmsFullLines.push("");
+llmsFullLines.push("- **100% Client-Side execution**: Utilizes WebAssembly binaries and standard browser canvas pipelines. Files remain on local disk.");
+llmsFullLines.push("- **Compliance friendly**: Meets strict GDPR, HIPAA, and corporate data leakage prevention (DLP) requirements since no server transit occurs.");
+llmsFullLines.push("- **Offline operational capacity**: Fully deployable inside local networks and corporate intranets.");
+llmsFullLines.push("");
+llmsFullLines.push("## Full Tools Catalog & Niche Search Intents");
+llmsFullLines.push("");
+
+for (const c of cats) {
+	llmsFullLines.push(`### ${c.name} Tools`);
+	llmsFullLines.push("");
+	const tools = c.tools || [];
+	for (const t of tools) {
+		const route = t.route || "";
+		const url = `${BASE}${route}`;
+		const desc = clean(t.description || t.seoDescription || "");
+		llmsFullLines.push(`#### [${t.name}](${url})`);
+		llmsFullLines.push(`- **Description**: ${desc}`);
+		if (t.extraSlugs && t.extraSlugs.length > 0) {
+			const slugsList = t.extraSlugs.map(s => `\`${s}\``).join(", ");
+			llmsFullLines.push(`- **Alternative Intents / Keywords**: ${slugsList}`);
+		}
+		llmsFullLines.push("");
+	}
+	llmsFullLines.push("");
+}
+
+writeFileSync("public/llms-full.txt", llmsFullLines.join("\n"));
+console.log(`✓ Wrote public/llms-full.txt`);

@@ -1,6 +1,6 @@
 # =============================================================================
 # Cloudflare Pages _redirects file (AUTO-GENERATED)
-# Generated on: 2026-07-09T17:28:38.824Z
+# Generated on: 2026-07-11T13:41:14.514Z
 # =============================================================================
 
 # Manual Redirects
@@ -2505,8 +2505,6 @@
 /json-editor-no-install /json-editor/ 301
 /beautify-json-for-email /json-formatter/ 301
 /json-validator-online /json-formatter/ 301
-/sql-formatter /json-formatter/ 301
-/xml-formatter /json-formatter/ 301
 /online-json-prettifier /json-formatter/ 301
 /json-formatter-online-free /json-formatter/ 301
 /free-json-formatter-no-signup /json-formatter/ 301

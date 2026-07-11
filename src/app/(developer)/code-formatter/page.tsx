@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import JSONFormatterTool from "@/components/tools/developer/JSONFormatterTool";
+import CodeFormatterTool from "@/components/tools/developer/CodeFormatterTool";
 
 export const metadata = {
 	title: "Code Formatter Online Free - Developer Tools | SopKit",
@@ -35,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<JSONFormatterTool />
+			<CodeFormatterTool />
 		</ToolLayout>
 	);
 }
