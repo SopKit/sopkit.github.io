@@ -263,6 +263,7 @@ const CssBorderRadiusTool = dynamic(() => import("@/components/tools/developer/C
 const FaviconGeneratorProTool = dynamic(() => import("@/components/tools/image/FaviconGeneratorProTool"), { ssr: false });
 const ImageMetadataRemoverTool = dynamic(() => import("@/components/tools/image/ImageMetadataRemoverTool"), { ssr: false });
 const ImageColorPicker = dynamic(() => import("@/components/tools/image/ImageColorPicker"), { ssr: false });
+const YouTubePlaylistLinkExtractorTool = dynamic(() => import("@/components/tools/youtube/YouTubePlaylistLinkExtractorTool"), { ssr: false });
 const EmojiTextGeneratorTool = dynamic(() => import("@/components/tools/text/EmojiTextGeneratorTool"), { ssr: false });
 const MarkdownToHtmlTool = dynamic(() => import("@/components/tools/text/MarkdownToHtmlTool"), { ssr: false });
 const MarkdownToPdfTool = dynamic(() => import("@/components/tools/text/MarkdownToPdfTool"), { ssr: false });
@@ -344,6 +345,16 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "pdf-rotation": { component: PDFRotation, props: {} },
     "secure-password-generator": { component: PasswordGeneratorTool, props: {} },
     "emi-calculator": { component: BuiltInCalculators, props: { kind: "loan-calculator" } },
+    "compound-interest-calculator": { component: BuiltInCalculators, props: { kind: "compound-interest-calculator" } },
+    "mortgage-calculator": { component: BuiltInCalculators, props: { kind: "mortgage-calculator" } },
+    "car-loan-calculator": { component: BuiltInCalculators, props: { kind: "car-loan-calculator" } },
+    "roi-calculator": { component: BuiltInCalculators, props: { kind: "roi-calculator" } },
+    "savings-goal-calculator": { component: BuiltInCalculators, props: { kind: "savings-goal-calculator" } },
+    "tip-calculator": { component: BuiltInCalculators, props: { kind: "tip-calculator" } },
+    "bmi-calculator": { component: BuiltInCalculators, props: { kind: "bmi-calculator" } },
+    "fuel-cost-calculator": { component: BuiltInCalculators, props: { kind: "fuel-cost-calculator" } },
+    "inflation-calculator": { component: BuiltInCalculators, props: { kind: "inflation-calculator" } },
+    "break-even-calculator": { component: BuiltInCalculators, props: { kind: "break-even-calculator" } },
     "sip-calculator": { component: FinanceCalculators, props: { defaultTab: "sip" } },
     "fd-calculator-india": { component: FinanceCalculators, props: { defaultTab: "fd" } },
     "salary-calculator-india": { component: FinanceCalculators, props: { defaultTab: "salary" } },
@@ -498,6 +509,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "imdb-video-downloader": { component: ImdbDownloader, props: {} },
     "imgur-video-downloader": { component: ImgurDownloader, props: {} },
     "indexnow": { component: BuiltInSafeHttp, props: {"toolId": "indexnow"} },
+    "indexnow-submitter": { component: BuiltInSafeHttp, props: {"toolId": "indexnow"} },
     "insta-reels-saver": { component: InstagramReelDownloader, props: {} },
     "instagram-downloader": { component: InstagramDownloader, props: {} },
     "instagram-image-downloader": { component: InstagramDPDownloader, props: {} },
@@ -543,6 +555,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "loan-calculator": { component: BuiltInCalculators, props: {"kind": "loan-calculator"} },
     "logo-generator": { component: LogoGeneratorTool, props: {} },
     "lorem-ipsum": { component: LoremIpsumGeneratorTool, props: {} },
+    "lorem-ipsum-generator": { component: LoremIpsumGeneratorTool, props: {} },
     "m3u8-downloader": { component: M3u8Downloader, props: {} },
     "margin-calculator": { component: BuiltInCalculators, props: {"kind": "margin-calculator"} },
     "markdown-to-text": { component: MarkdownToText, props: {} },
@@ -756,6 +769,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "youtube-title-generator": { component: YoutubeTitleGeneratorTool, props: {} },
     "youtube-description-generator": { component: YoutubeDescriptionGeneratorTool, props: {} },
     "youtube-thumbnail-text-generator": { component: YoutubeThumbnailTextGeneratorTool, props: {} },
+    "youtube-playlist-link-extractor": { component: YouTubePlaylistLinkExtractorTool, props: {} },
     "slogan-generator": { component: SloganGeneratorTool, props: {} },
     "logo-idea-generator": { component: LogoIdeaGeneratorTool, props: {} },
     "google-business-profile-description-generator": { component: GoogleBusinessProfileDescriptionGeneratorTool, props: {} },

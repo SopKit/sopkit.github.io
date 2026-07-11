@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
+import YouTubeTimestampLinkGeneratorTool from "@/components/tools/youtube/YouTubeTimestampLinkGeneratorTool";
 
 export const metadata = {
 	title: "YouTube Timestamp Link Generator Online Free - No Signup | SopKit",
@@ -35,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<YouTubeChannelIDFinderTool />
+			<YouTubeTimestampLinkGeneratorTool />
 		</ToolLayout>
 	);
 }

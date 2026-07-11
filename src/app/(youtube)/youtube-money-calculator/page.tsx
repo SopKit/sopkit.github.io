@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
+import YouTubeMoneyCalculatorTool from "@/components/tools/youtube/YouTubeMoneyCalculatorTool";
 
 export const metadata = {
 	title: "YouTube Money Calculator Online Free - No Signup | SopKit",
@@ -35,7 +35,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<YouTubeChannelIDFinderTool />
+			<YouTubeMoneyCalculatorTool />
 		</ToolLayout>
 	);
 }

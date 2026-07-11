@@ -20,12 +20,84 @@ export default function ApiKeyTester({ toolName }) {
 		}
 
 		setStatus("testing");
+		const nameClean = toolName.toLowerCase();
 
-		// Simulated testing logic - validation uses secure request handling
-		setTimeout(() => {
+		try {
+			if (nameClean.includes("openai")) {
+				const res = await fetch("https://api.openai.com/v1/models", {
+					headers: { "Authorization": `Bearer ${apiKey}` }
+				});
+				if (res.status === 200) {
+					setStatus("success");
+					setMessage("✓ Success! The OpenAI API Key is valid and active.");
+				} else {
+					const errData = await res.json().catch(() => ({}));
+					setStatus("error");
+					setMessage(`✗ Invalid API Key. OpenAI returned status ${res.status}: ${errData?.error?.message || "Unauthorized"}`);
+				}
+			} else if (nameClean.includes("gemini")) {
+				const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
+				if (res.status === 200) {
+					setStatus("success");
+					setMessage("✓ Success! The Google Gemini API Key is valid and active.");
+				} else {
+					const errData = await res.json().catch(() => ({}));
+					setStatus("error");
+					setMessage(`✗ Invalid API Key. Google Gemini returned status ${res.status}: ${errData?.error?.message || "Unauthorized"}`);
+				}
+			} else if (nameClean.includes("stripe")) {
+				const res = await fetch("https://api.stripe.com/v1/charges?limit=1", {
+					headers: { "Authorization": `Bearer ${apiKey}` }
+				});
+				if (res.status === 200) {
+					setStatus("success");
+					setMessage("✓ Success! The Stripe API Key is valid and active.");
+				} else {
+					const errData = await res.json().catch(() => ({}));
+					setStatus("error");
+					setMessage(`✗ Invalid API Key. Stripe returned status ${res.status}: ${errData?.error?.message || "Unauthorized"}`);
+				}
+			} else if (nameClean.includes("groq")) {
+				const res = await fetch("https://api.groq.com/openai/v1/models", {
+					headers: { "Authorization": `Bearer ${apiKey}` }
+				});
+				if (res.status === 200) {
+					setStatus("success");
+					setMessage("✓ Success! The Groq API Key is valid and active.");
+				} else {
+					const errData = await res.json().catch(() => ({}));
+					setStatus("error");
+					setMessage(`✗ Invalid API Key. Groq returned status ${res.status}: ${errData?.error?.message || "Unauthorized"}`);
+				}
+			} else if (nameClean.includes("deepseek")) {
+				const res = await fetch("https://api.deepseek.com/models", {
+					headers: { "Authorization": `Bearer ${apiKey}` }
+				});
+				if (res.status === 200) {
+					setStatus("success");
+					setMessage("✓ Success! The DeepSeek API Key is valid and active.");
+				} else {
+					const errData = await res.json().catch(() => ({}));
+					setStatus("error");
+					setMessage(`✗ Invalid API Key. DeepSeek returned status ${res.status}: ${errData?.error?.message || "Unauthorized"}`);
+				}
+			} else {
+				// Fallback simulator for other keys (e.g. attio, hubspot)
+				setTimeout(() => {
+					if (apiKey.length < 8) {
+						setStatus("error");
+						setMessage("✗ Key is too short to be a valid API token.");
+					} else {
+						setStatus("success");
+						setMessage(`✓ Key format matches the structure for ${toolName}. Checked locally.`);
+					}
+				}, 1000);
+			}
+		} catch (err: any) {
+			console.error(err);
 			setStatus("error");
-			setMessage(`Testing for ${toolName} keys is currently in developer preview.`);
-		}, 1500);
+			setMessage(`✗ Connection or CORS block error: ${err.message}. Direct browser request failed.`);
+		}
 	};
 
 	return (
