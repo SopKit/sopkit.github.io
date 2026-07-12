@@ -1391,6 +1391,611 @@ export const blogs: BlogArticle[] = [
     }
   ]
 }
+,
+{
+  "slug": "how-to-compress-image-without-losing-quality",
+  "title": "How to Compress an Image Without Losing Quality (2026)",
+  "description": "Learn how to compress JPEG, PNG, and WebP images online for free without losing image quality. Best compression techniques explained.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/image-compressor"
+  ],
+  "intro": "Image compression works by removing redundant metadata and encoding image pixels more efficiently. This guide teaches you how to shrink image files without introducing visible compression artifacts.",
+  "sections": [
+    {
+      "heading": "Lossless vs Lossy Compression",
+      "paragraphs": [
+        "Lossy Compression: Reduces file size by permanently discarding less critical color data, optimal for photographs.",
+        "Lossless Compression: Shrinks file size by reorganizing image data without throwing away any pixel information, ideal for screenshots and logos."
+      ],
+      "toolRoutes": [
+        "/image-compressor"
+      ]
+    },
+    {
+      "heading": "Best Image File Formats for Web",
+      "paragraphs": [
+        "WebP Format: Provides up to 30% higher compression efficiency than JPEG while retaining identical image quality.",
+        "AVIF Format: Next-generation image format with advanced compression algorithms, perfect for fast web performance."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does compressing an image lower its resolution?",
+      "answer": "No, compressing an image only optimizes pixel data and file size. The overall dimensions (width and height) remain unchanged."
+    }
+  ]
+},
+{
+  "slug": "how-to-compress-pdf-to-200kb",
+  "title": "How to Compress a PDF to Exactly 200KB",
+  "description": "Step-by-step guide to compress PDF files to under 200KB for government and school portal uploads.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 4,
+  "featuredToolRoutes": [
+    "/pdf-compressor-under-200kb"
+  ],
+  "intro": "Compressing a PDF to 200KB requires optimizing document pages, images, and embedded font resources. This guide shows how to meet strict government and educational upload limits easily.",
+  "sections": [
+    {
+      "heading": "How PDF Compression Works",
+      "paragraphs": [
+        "Image Optimization: Downscales high-resolution scans inside the PDF to 150 DPI.",
+        "Font Subsetting: Strips out unused font characters to save valuable document space."
+      ],
+      "toolRoutes": [
+        "/pdf-compressor-under-200kb"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Why do government portals enforce a 200KB PDF limit?",
+      "answer": "Small limits reduce server storage costs and ensure database systems upload and load pages quickly for thousands of applicants."
+    }
+  ]
+},
+{
+  "slug": "why-government-forms-reject-your-photo",
+  "title": "Why Government Forms Keep Rejecting Your Photo",
+  "description": "Common reasons why online application portals reject passport photos and signatures, and how to fix them.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/ssc-photo-resizer"
+  ],
+  "intro": "Government application forms reject photos primarily due to incorrect pixel dimensions, file size limits in KB, or poor lighting. Let's explore the primary rejection factors and how to fix them instantly.",
+  "sections": [
+    {
+      "heading": "Top Photo Rejection Factors",
+      "paragraphs": [
+        "Incorrect Dimensions: Dimensions must align exactly with the form rules (e.g. 3.5cm x 4.5cm).",
+        "Blurry Textures: Images captured in low light fail biometric facial scans.",
+        "Wrong Background: Most portals require a plain white or light blue background."
+      ],
+      "toolRoutes": [
+        "/ssc-photo-resizer"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I check if my photo matches exam guidelines?",
+      "answer": "Verify your photo file details using an inspector tool or use SopKit's pre-built exam templates to generate compliant sizes."
+    }
+  ]
+},
+{
+  "slug": "json-formatter-vs-validator-difference",
+  "title": "JSON Formatter vs Validator: What's the Difference",
+  "description": "Understand the differences between formatting JSON for readability and validating JSON for syntax correctness.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 4,
+  "featuredToolRoutes": [
+    "/json-formatter"
+  ],
+  "intro": "A JSON Formatter cleans up spacing and indentation, while a JSON Validator checks the syntax for structural errors. Knowing the difference helps developers debug integrations faster.",
+  "sections": [
+    {
+      "heading": "JSON Formatting Explained",
+      "paragraphs": [
+        "Indentation: Converts compact minified JSON into readable nested blocks.",
+        "Syntax Highlighting: Assigns distinct colors to keys, strings, and numbers."
+      ],
+      "toolRoutes": [
+        "/json-formatter"
+      ]
+    },
+    {
+      "heading": "JSON Validation Explained",
+      "paragraphs": [
+        "Syntax Auditing: Ensures trailing commas, quotation marks, and bracket nesting comply with RFC 8259.",
+        "Error Logs: Highlights the exact line and character where parsing failed."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can invalid JSON be formatted?",
+      "answer": "No, a JSON formatter must parse the document first. If the JSON is invalid, the formatter will report a validation syntax error."
+    }
+  ]
+},
+{
+  "slug": "base64-encoding-explained",
+  "title": "Base64 Encoding Explained (With Live Examples)",
+  "description": "What is Base64 encoding and why is it used? Learn how to convert text and binary data into safe ASCII strings.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/base64-tool"
+  ],
+  "intro": "Base64 encoding converts binary data into a set of 64 safe ASCII characters to prevent transmission corruption. It is widely used in email protocols, HTML embeds, and API requests.",
+  "sections": [
+    {
+      "heading": "How Base64 Encoding Works",
+      "paragraphs": [
+        "Bit Grouping: Maps groups of 24 bits (3 bytes) into four 6-bit values.",
+        "ASCII Mapping: Represents each 6-bit value with a unique alphanumeric character from the Base64 alphabet."
+      ],
+      "toolRoutes": [
+        "/base64-tool"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is Base64 encoding secure?",
+      "answer": "No, Base64 is not encryption. It is a data representation format that can be easily decoded by anyone."
+    }
+  ]
+},
+{
+  "slug": "uuid-v4-vs-v7-comparison",
+  "title": "UUID v4 vs v7: Which Should You Use in 2026?",
+  "description": "Compare UUID version 4 (random) and version 7 (time-ordered) to see which is best for database primary keys.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 6,
+  "featuredToolRoutes": [
+    "/uuid-generator"
+  ],
+  "intro": "UUID v7 is time-ordered and indexed efficiently by database engines, making it superior to random UUID v4 for primary keys. Learn the architectural advantages of time-sorted IDs.",
+  "sections": [
+    {
+      "heading": "UUID Version 4: Random Identifiers",
+      "paragraphs": [
+        "Random Generation: Uses cryptographically secure pseudo-random numbers to yield 122 bits of entropy.",
+        "Indexing Overhead: Causes severe database index fragmentation in clustered indexes due to random insertion paths."
+      ],
+      "toolRoutes": [
+        "/uuid-generator"
+      ]
+    },
+    {
+      "heading": "UUID Version 7: Time-Ordered Identifiers",
+      "paragraphs": [
+        "Unix Timestamp: Includes a 48-bit millisecond timestamp in the prefix.",
+        "Sequential Insertion: Enables databases to write values sequentially, boosting index lookup and write speeds."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is UUID v7 supported in modern databases?",
+      "answer": "Yes, UUID v7 fits perfectly into any standard 128-bit UUID database column, such as PostgreSQL's UUID type."
+    }
+  ]
+},
+{
+  "slug": "new-vs-old-tax-regime-fy-2026-27",
+  "title": "New vs Old Tax Regime: Which Saves You More in FY2026-27?",
+  "description": "Compare tax savings between the New Tax Regime and the Old Tax Regime for India FY 2026-27 (Assessment Year 2027-28).",
+  "date": "2026-07-12",
+  "readTimeMinutes": 6,
+  "featuredToolRoutes": [
+    "/tax-calculator"
+  ],
+  "intro": "The New Tax Regime offers lower tax slabs and a standard deduction of ₹75,000, while the Old Regime allows deductions like 80C. We break down the tipping points for salary earners.",
+  "sections": [
+    {
+      "heading": "Comparing the Regime Slabs",
+      "paragraphs": [
+        "New Regime: Tax-free income up to ₹7 Lakhs (plus rebate). Includes a flat standard deduction of ₹75,000.",
+        "Old Regime: Supports investments like 80C, 80D, and HRA exemptions, but features higher marginal tax rates."
+      ],
+      "toolRoutes": [
+        "/tax-calculator"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Which regime is better for zero-investment earners?",
+      "answer": "For individuals with zero tax-saving investments, the New Tax Regime is almost always more beneficial due to its lower slabs."
+    }
+  ]
+},
+{
+  "slug": "gst-calculator-how-to-calculate",
+  "title": "GST Calculator: How to Calculate GST in 30 Seconds",
+  "description": "Learn how to add or remove GST from product prices online using standard Indian GST rates.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 4,
+  "featuredToolRoutes": [
+    "/gst-calculator"
+  ],
+  "intro": "GST calculation adds a percentage (like 18%) to net prices, or extracts CGPA and SGST from gross prices. This guide makes tax calculations simple.",
+  "sections": [
+    {
+      "heading": "Formula for Adding GST",
+      "paragraphs": [
+        "GST Amount: Net Price multiplied by (GST Rate divided by 100).",
+        "Gross Price: Net Price plus GST Amount."
+      ],
+      "toolRoutes": [
+        "/gst-calculator"
+      ]
+    },
+    {
+      "heading": "Formula for Removing GST",
+      "paragraphs": [
+        "GST Amount: Gross Price minus (Gross Price multiplied by (100 divided by (100 plus GST Rate)))."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are the common GST slabs in India?",
+      "answer": "The primary GST slabs in India are 5%, 12%, 18%, and 28%."
+    }
+  ]
+},
+{
+  "slug": "cgpa-to-percentage-official-formula",
+  "title": "CGPA to Percentage: The Official University Formula",
+  "description": "How to convert CGPA to percentage using official board formulas (CBSE 9.5x, VTU, Mumbai University).",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/tools"
+  ],
+  "intro": "Converting CGPA to percentage is done by multiplying the CGPA score by a standard board coefficient (usually 9.5). We list the official formulas for major education boards.",
+  "sections": [
+    {
+      "heading": "CBSE Official Conversion Formula",
+      "paragraphs": [
+        "Conversion Factor: Multiply your CGPA by 9.5.",
+        "Example: A CGPA of 9.0 maps to 9.0 x 9.5 = 85.5%."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Why does CBSE use a 9.5 multiplier?",
+      "answer": "The 9.5 factor was derived statistically by comparing past board exam marks to evaluate score distributions."
+    }
+  ]
+},
+{
+  "slug": "attendance-shortage-calculator-guide",
+  "title": "Attendance Shortage Calculator: How Many Classes You Can Skip",
+  "description": "Find out how many classes you can skip while maintaining a target attendance percentage (like 75%).",
+  "date": "2026-07-12",
+  "readTimeMinutes": 4,
+  "featuredToolRoutes": [
+    "/tools"
+  ],
+  "intro": "An attendance shortage calculator evaluates skipped classes to ensure you stay above academic minimum requirements. Keep your college records safe from shortage limits.",
+  "sections": [
+    {
+      "heading": "How Attendance Thresholds Work",
+      "paragraphs": [
+        "Target Level: Most universities mandate a strict 75% attendance rate.",
+        "Safe Buffer: Calculate excess classes attended to find out your skipped classes allowance."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What happens if my attendance falls below 75%?",
+      "answer": "You may face exam registration blockades or require medical certificates depending on college rules."
+    }
+  ]
+},
+{
+  "slug": "instagram-bio-fancy-fonts-guide",
+  "title": "How to Make Your Instagram Bio Stand Out With Fancy Fonts",
+  "description": "Step-by-step guide to generate custom aesthetic fonts, cursive text, and symbols for Instagram bios and captions.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/fancy-text-generator"
+  ],
+  "intro": "Instagram bios support decorative fonts by utilizing special Unicode symbols instead of standard keyboard characters. Custom fonts elevate profile visual authority.",
+  "sections": [
+    {
+      "heading": "How to Copy-Paste Instagram Bio Fonts",
+      "paragraphs": [
+        "Input Text: Write your bio string inside the SopKit Fancy Text Generator.",
+        "Select Style: Browse 20+ styles, including script, bold, gothic, and double-struck.",
+        "Copy and Apply: Click copy and paste the formatted text directly into your profile bio edit input."
+      ],
+      "toolRoutes": [
+        "/fancy-text-generator"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do fancy fonts show up on all mobile devices?",
+      "answer": "Yes, since they are standard Unicode characters, they display consistently on modern iOS and Android systems."
+    }
+  ]
+},
+{
+  "slug": "love-calculator-how-it-works",
+  "title": "Love Calculator: Is It Based on Anything, or Just Fun?",
+  "description": "How name compatibility calculators work, and the numerology rules used to calculate love match percentages.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/love-calculator"
+  ],
+  "intro": "Love calculators use name numerology and character matching algorithms to calculate a fun match percentage. Let's look behind the algorithm.",
+  "sections": [
+    {
+      "heading": "The Numerology Algorithm",
+      "paragraphs": [
+        "Character Summing: Assigns numbers to letters based on Chaldian or Pythagorean values.",
+        "Percentage Math: Limits the output between 50% and 99% to ensure friendly and positive matching results."
+      ],
+      "toolRoutes": [
+        "/love-calculator"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is the Love Calculator accurate?",
+      "answer": "It is built strictly for entertainment and play. Name matching does not predict real relationship chemistry."
+    }
+  ]
+},
+{
+  "slug": "free-ai-prompts-linkedin-headshots",
+  "title": "Free AI Prompts for LinkedIn Headshots in 2026",
+  "description": "Get the best free AI prompts to generate high-quality corporate headshots for LinkedIn using AI image generators.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/ai-image-generator"
+  ],
+  "intro": "AI LinkedIn headshot generation is done by writing precise text prompts that specify corporate attire, background, and lighting. Get clean professional portraits for free.",
+  "sections": [
+    {
+      "heading": "Corporate Headshot Prompts",
+      "paragraphs": [
+        "Professional Male: Medium close-up portrait of a man wearing a charcoal suit and white shirt, studio background, soft key light, professional LinkedIn profile picture.",
+        "Professional Female: Close-up portrait of a woman in a navy blazer, neutral grey background, high detail skin textures, professional studio portrait, 8k."
+      ],
+      "toolRoutes": [
+        "/ai-image-generator"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the best background color for LinkedIn photos?",
+      "answer": "Solid neutral colors like grey, light blue, or off-white keep focus on the candidate's face."
+    }
+  ]
+},
+{
+  "slug": "resume-ats-score-explained",
+  "title": "Resume ATS Score Explained: What It Actually Checks",
+  "description": "Learn what an Applicant Tracking System (ATS) checks in your resume, including keywords, formatting, and sections.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/resume-ats-score-checker"
+  ],
+  "intro": "An Applicant Tracking System parses resume text, comparing job descriptions against candidate skills and headings. Learn what factors determine your rating.",
+  "sections": [
+    {
+      "heading": "Key ATS Audit Factors",
+      "paragraphs": [
+        "Keyword Matching: Evaluates the density of job-specific hard skills.",
+        "Format Parsing: Checks if resume headings use standard, crawlable titles."
+      ],
+      "toolRoutes": [
+        "/resume-ats-score-checker"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is a good ATS score to aim for?",
+      "answer": "Aim for a score of 80% or higher to ensure your resume passes initial machine screens."
+    }
+  ]
+},
+{
+  "slug": "7-resume-mistakes-ats-rejection",
+  "title": "7 Resume Mistakes That Get Auto-Rejected",
+  "description": "Top 7 resume writing mistakes that trigger ATS scanners to auto-reject your job application.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/resume-ats-score-checker"
+  ],
+  "intro": "Resume mistakes like multi-column layouts, graphics, and missing sections block ATS parsers, leading to auto-rejection. Here is the list of common pitfalls.",
+  "sections": [
+    {
+      "heading": "Avoid These Design Issues",
+      "paragraphs": [
+        "Multi-Column Forms: Parser engines read text horizontally, which scrambles multi-column layouts.",
+        "Tables and Icons: Embedded graphics appear as corrupt symbols to older ATS parsers."
+      ],
+      "toolRoutes": [
+        "/resume-ats-score-checker"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Should I submit my resume in PDF or Word?",
+      "answer": "Most modern ATS platforms parse PDF files perfectly, but text-based Word documents (.docx) are the safest for older systems."
+    }
+  ]
+},
+{
+  "slug": "what-is-robots-txt-guide",
+  "title": "What Is Robots.txt and Do You Need One in 2026?",
+  "description": "Learn the fundamentals of robots.txt files, why they are important for SEO, and how to structure crawl rules.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/seo-tools"
+  ],
+  "intro": "A robots.txt file instructs search engine crawler bots on which pages or directories of a site they should not visit. It is a critical file for crawler bandwidth management.",
+  "sections": [
+    {
+      "heading": "Key Robots.txt Directives",
+      "paragraphs": [
+        "User-Agent: Specifies which crawler bot the rule applies to.",
+        "Disallow: Lists path URLs blocked from crawling.",
+        "Allow: Overrides disallow paths for specific subfolders."
+      ],
+      "toolRoutes": [
+        "/seo-tools"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can robots.txt stop pages from indexing?",
+      "answer": "No, a robots.txt only stops bots from crawling. If a page has external links pointing to it, search engines may still index it."
+    }
+  ]
+},
+{
+  "slug": "core-web-vitals-explained-simply",
+  "title": "Core Web Vitals Explained for Non-Developers",
+  "description": "A simple guide to Google Core Web Vitals metrics: LCP, CLS, and INP, and why they matter for website speed.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/seo-tools"
+  ],
+  "intro": "Core Web Vitals are user-experience metrics Google uses to evaluate loading speed, layout stability, and responsiveness. Optimize your pages for Google search ranks.",
+  "sections": [
+    {
+      "heading": "The Three Core Metrics",
+      "paragraphs": [
+        "LCP: Largest Contentful Paint measures loading speed (aim for under 2.5 seconds).",
+        "CLS: Cumulative Layout Shift tracks unexpected visual movements (aim for under 0.1).",
+        "INP: Interaction to Next Paint measures page click responsiveness."
+      ],
+      "toolRoutes": [
+        "/seo-tools"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do Core Web Vitals impact SEO rankings?",
+      "answer": "Yes, they represent official Google page experience ranking factors."
+    }
+  ]
+},
+{
+  "slug": "devanagari-unicode-converter-guide",
+  "title": "Devanagari Unicode Converter: Fixing Broken Hindi Text",
+  "description": "How to convert legacy Kruti Dev or Chanakya Hindi fonts to Unicode format for government portals and online viewing.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/tools"
+  ],
+  "intro": "Devanagari Unicode converters translate legacy non-Unicode fonts into standard Unicode characters for web accessibility. This guide simplifies text conversion.",
+  "sections": [
+    {
+      "heading": "Legacy Hindi Fonts vs Unicode",
+      "paragraphs": [
+        "Legacy Fonts: Rely on English key maps to draw Hindi text shapes. They look broken if the font files aren't installed locally.",
+        "Unicode Standard: Assigns unique digital codepoints to characters, ensuring they render correctly on all devices."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Why does my Hindi text appear as English gibberish?",
+      "answer": "This happens when your text was typed using legacy fonts without converting it to standard Unicode format first."
+    }
+  ]
+},
+{
+  "slug": "text-to-handwriting-converter-guide",
+  "title": "Text to Handwriting: Turning Typed Notes Into Handwriting Fonts",
+  "description": "Learn how to convert typed text notes into realistic handwriting pages and download them as printable PNGs.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/text-to-handwriting"
+  ],
+  "intro": "Text-to-handwriting converters render text characters onto lined notebook backgrounds using handwritten SVG/TTF fonts. Skip manual note writing tasks.",
+  "sections": [
+    {
+      "heading": "How to Generate Handwritten Notes",
+      "paragraphs": [
+        "Write Text: Paste typed text paragraphs inside the editor sandbox.",
+        "Customize View: Select blue or black ink styles, and lined or blank margins.",
+        "Export Images: Click download to save your written assignments as clean PNG packages."
+      ],
+      "toolRoutes": [
+        "/text-to-handwriting"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I add realistic page margins?",
+      "answer": "Yes, the SopKit Handwriting tool includes options to enable red vertical page margin rules."
+    }
+  ]
+},
+{
+  "slug": "560-free-tools-sopkit-directory",
+  "title": "560+ Free Tools, Zero Signups: The Complete SopKit Directory",
+  "description": "Browse the complete directory of 560+ free online tools on SopKit. Access PDF, image, video, text, and developer tools.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 6,
+  "featuredToolRoutes": [
+    "/tools"
+  ],
+  "intro": "SopKit offers 560+ free browser-based tools across dozens of technical categories with no account registrations needed. Browse the index to find what you need.",
+  "sections": [
+    {
+      "heading": "Core Tool Categories",
+      "paragraphs": [
+        "Image Tools: Crop, compress, and resize pictures.",
+        "PDF Tools: Merge pages, split files, and edit documents.",
+        "Developer Tools: Format JSON files, encode base64 text, and generate keys."
+      ],
+      "toolRoutes": [
+        "/tools"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Why are the tools on SopKit free?",
+      "answer": "By executing all computations inside the user's browser sandbox, we reduce server hosting bills and pass the savings on to the community."
+    }
+  ]
+}
 ];
 
 export const getBlogArticleBySlug = (slug: string) => {
