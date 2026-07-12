@@ -44,7 +44,7 @@ export function HomeFAQ() {
 							<AccordionTrigger className="text-lg font-semibold py-6 hover:no-underline rounded-none">
 								{faq.question}
 							</AccordionTrigger>
-							<AccordionContent className="text-muted-foreground text-base pb-6 leading-relaxed">
+							<AccordionContent forceMount className="text-muted-foreground text-base pb-6 leading-relaxed">
 								{faq.answer}
 							</AccordionContent>
 						</AccordionItem>

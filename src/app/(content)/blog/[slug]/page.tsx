@@ -108,6 +108,21 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 		],
 	};
 
+	const faqSchema = article.faqs && article.faqs.length > 0
+		? {
+				"@context": "https://schema.org",
+				"@type": "FAQPage",
+				mainEntity: article.faqs.map((faq: any) => ({
+					"@type": "Question",
+					name: faq.question,
+					acceptedAnswer: {
+						"@type": "Answer",
+						text: faq.answer,
+					},
+				})),
+		  }
+		: null;
+
 	return (
 		<div className="min-h-screen bg-background text-foreground flex flex-col antialiased">
 			<script
@@ -122,6 +137,14 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 					__html: JSON.stringify(breadcrumbSchema),
 				}}
 			/>
+			{faqSchema && (
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(faqSchema),
+					}}
+				/>
+			)}
 
 			<main className="flex-1">
 				<article className="container mx-auto max-w-3xl px-4 py-12 md:py-16">
@@ -185,11 +208,29 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 										{section.heading}
 									</h2>
 									<div className="space-y-4">
-										{(section.paragraphs || []).map((paragraph: string) => (
-											<p key={paragraph} className="text-base leading-relaxed text-muted-foreground/90">
-												{paragraph}
-											</p>
-										))}
+										{(section.paragraphs || []).map((paragraph: string) => {
+											// Match "Term: Definition" glossary patterns, avoiding links
+											const hasDefinition = paragraph.includes(":") && 
+												paragraph.indexOf(":") < 45 && 
+												!paragraph.startsWith("http") && 
+												!paragraph.includes("://");
+											if (hasDefinition) {
+												const colonIdx = paragraph.indexOf(":");
+												const term = paragraph.substring(0, colonIdx).trim();
+												const definition = paragraph.substring(colonIdx + 1).trim();
+												return (
+													<dl key={paragraph} className="my-3 border-l-2 border-primary/20 pl-4 py-1.5 bg-muted/5">
+														<dt className="font-bold text-foreground text-sm tracking-tight">{term}</dt>
+														<dd className="text-muted-foreground text-xs mt-1 leading-relaxed">{definition}</dd>
+													</dl>
+												);
+											}
+											return (
+												<p key={paragraph} className="text-base leading-relaxed text-muted-foreground/90">
+													{paragraph}
+												</p>
+											);
+										})}
 									</div>
 
 									{sectionTools.length > 0 && (

@@ -126,7 +126,7 @@ export default function FAQSection({
 								{faq.question}
 							</AccordionTrigger>
 
-							<AccordionContent>
+							<AccordionContent forceMount>
 								{faq.answer}
 							</AccordionContent>
 						</AccordionItem>

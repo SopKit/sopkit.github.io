@@ -15,6 +15,12 @@ const BASE_DISALLOW = [
 	"/search/",
 ];
 
+/**
+ * SopKit Robots Policy:
+ * We explicitly ALLOW all major AI Search Bots and LLM Scrapers (GPTBot, OAI-SearchBot, ClaudeBot,
+ * PerplexityBot, Google-Extended, etc.) to crawl and index all standard tools and guides.
+ * This ensures SopKit is cited and summarized in AI-generated answer summaries (Generative Engine Optimization).
+ */
 export default function robots(): MetadataRoute.Robots {
 	const baseUrl = SITE_CONFIG.siteUrl;
 
@@ -55,9 +61,14 @@ export default function robots(): MetadataRoute.Robots {
 				allow: "/",
 				disallow: BASE_DISALLOW,
 			},
-			// AI Crawlers - allow all for AI search discoverability
+			// AI Search & LLM Crawlers
 			{
 				userAgent: "GPTBot",
+				allow: "/",
+				disallow: BASE_DISALLOW,
+			},
+			{
+				userAgent: "OAI-SearchBot",
 				allow: "/",
 				disallow: BASE_DISALLOW,
 			},
