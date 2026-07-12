@@ -9,7 +9,6 @@ export const STATIC_ROUTES = {
 	ABOUT: "/about",
 	DMCA: "/dmca",
 	TOOLS: "/tools",
-	PRO: "/pro",
 	BLOG: "/blog",
 	TOOL_GUIDES: "/tool-guides",
 	NEW_TOOLS: "/new-tools",

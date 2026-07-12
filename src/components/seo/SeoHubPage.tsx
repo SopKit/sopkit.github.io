@@ -145,7 +145,6 @@ export default function SeoHubPage({
 				<section className="rounded-md border border-border/60 bg-muted/20 p-6">
 					<h2 className="text-2xl font-bold">Useful Internal Links</h2>
 					<div className="mt-4 flex flex-wrap gap-3">
-						<Link className="rounded-md border px-3 py-2 text-sm hover:border-primary/40" href="/pro">SopKit Pro</Link>
 						<Link className="rounded-md border px-3 py-2 text-sm hover:border-primary/40" href="/api">SopKit API</Link>
 						<Link className="rounded-md border px-3 py-2 text-sm hover:border-primary/40" href="/advertise">Advertise</Link>
 						<Link className="rounded-md border px-3 py-2 text-sm hover:border-primary/40" href="/services">Hire Us</Link>

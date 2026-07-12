@@ -137,15 +137,20 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 					</div>
 				</div>
 			</div>
-			<div style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif', border: '1px solid rgb(224, 224, 224)', borderRadius: '12px', padding: '20px', maxWidth: '500px', background: 'rgb(255, 255, 255)', boxShadow: 'rgba(0, 0, 0, 0.05) 0px 2px 8px', margin: '32px auto 0' }} className="text-left dark:bg-zinc-950 dark:border-zinc-800/80">
-				<div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-					<img alt="SopKit" src="https://ph-files.imgix.net/47198f1e-0017-4cdc-85b9-c0b00a293f45.vnd.microsoft.icon?auto=compress,format&amp;codec=mozjpeg&amp;cs=strip&amp;fit=crop&amp;h=80&amp;w=80" style={{ width: '64px', height: '64px', borderRadius: '8px', objectFit: 'cover', flexShrink: 0 }} />
-					<div style={{ flex: '1 1 0%', minWidth: '0px' }}>
-						<h3 style={{ margin: '0px', fontSize: '18px', fontWeight: '600', color: 'rgb(26, 26, 26)', lineHeight: '1.3', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} className="dark:text-zinc-100">SopKit</h3>
-						<p style={{ margin: '4px 0px 0px', fontSize: '14px', color: 'rgb(102, 102, 102)', lineHeight: '1.4', overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }} className="dark:text-zinc-400">SopKit — 460+ Free Online Tools, No Signup Required</p>
-					</div>
-				</div>
-				<a href="https://www.producthunt.com/products/sopkit?embed=true&amp;utm_source=embed&amp;utm_medium=post_embed" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', marginTop: '12px', padding: '8px 16px', background: 'rgb(255, 97, 84)', color: 'rgb(255, 255, 255)', textDecoration: 'none', borderRadius: '8px', fontSize: '14px', fontWeight: '600' }}>Check it out on Product Hunt →</a>
+			<div className="flex justify-center mt-8">
+				<a
+					href="https://www.producthunt.com/products/sopkit?embed=true&amp;utm_source=embed&amp;utm_medium=post_embed"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="inline-flex items-center gap-2 px-4 py-2 border border-border/50 hover:border-primary/20 rounded-full bg-card/40 hover:bg-card/75 text-xs font-semibold text-muted-foreground hover:text-foreground transition-all duration-300 shadow-sm"
+				>
+					<svg viewBox="0 0 40 40" className="w-4 h-4 fill-[#FF6154]" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20 0C8.95 0 0 8.95 0 20s8.95 20 20 20 20-8.95 20-20S31.05 0 20 0zm4.27 21.67h-4.94v4.94h-3.41v-14.9h8.35c2.72 0 4.93 2.21 4.93 4.93 0 2.76-2.21 5.03-4.93 5.03zm0-6.55h-4.94v3.22h4.94c.89 0 1.61-.72 1.61-1.61s-.72-1.61-1.61-1.61z"/>
+					</svg>
+					<span>Product Hunt</span>
+					<span className="text-[10px] text-muted-foreground/60 font-normal">| Featured</span>
+					<span className="text-[10px] font-bold text-primary">→</span>
+				</a>
 			</div>
 		</footer>
 	);

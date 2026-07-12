@@ -97,15 +97,15 @@ export default function SeoOpportunityContent({
 					<CardHeader className="pb-2">
 						<CardTitle className="flex items-center gap-2 text-base">
 							<Sparkles className="h-4 w-4 text-primary" />
-							Upgrade Path
+							Custom Deployment
 						</CardTitle>
 					</CardHeader>
 					<CardContent>
 						<p className="text-sm leading-relaxed text-muted-foreground">
-							{opportunity.monetization.proUpsell}
+							Need a custom API integration, private server deployment, or custom features for this tool? Contact our team.
 						</p>
 						<Button asChild size="sm" variant="outline" className="mt-4 rounded-md">
-							<Link href="/pro">View Pro</Link>
+							<Link href="/services">Hire Us</Link>
 						</Button>
 					</CardContent>
 				</Card>
