@@ -12,8 +12,8 @@ Use this skill to safely register new tools, clean up the global registry, map c
 ## 1. Codebase Architecture
 
 SopKit is a data-driven toolkit built on Next.js 16 (App Router) and Tailwind CSS.
-*   **Single Source of Truth**: All tools are registered in **[tools.json](file:///Users/shaswatraj/Desktop/earn/sopkit.github.io/src/constants/tools.json)** under their respective categories.
-*   **Central Dispatcher**: Interactive tools must be mapped inside **[IntentToolDispatcher.tsx](file:///Users/shaswatraj/Desktop/earn/sopkit.github.io/src/components/tools/shared/IntentToolDispatcher.tsx)** to allow client-side dynamic loading and iframe embedding.
+*   **Single Source of Truth**: All tools are registered in **[tools.json](/sopkit.github.io/src/constants/tools.json)** under their respective categories.
+*   **Central Dispatcher**: Interactive tools must be mapped inside **[IntentToolDispatcher.tsx](/sopkit.github.io/src/components/tools/shared/IntentToolDispatcher.tsx)** to allow client-side dynamic loading and iframe embedding.
 
 ---
 
@@ -25,7 +25,7 @@ Follow this workflow to add a new tool to SopKit:
     *   Create a React component file in `src/components/tools/<category>/` (e.g., `src/components/tools/developer/NewCoolTool.tsx`).
     *   Ensure all components are responsive and style them using modern glassmorphism aesthetics.
 2.  **Map in Central Dispatcher**:
-    *   Add a dynamic import at the top of **[IntentToolDispatcher.tsx](file:///Users/shaswatraj/Desktop/earn/sopkit.github.io/src/components/tools/shared/IntentToolDispatcher.tsx)**:
+    *   Add a dynamic import at the top of **[IntentToolDispatcher.tsx](/sopkit.github.io/src/components/tools/shared/IntentToolDispatcher.tsx)**:
         ```typescript
         const NewCoolTool = dynamic(() => import("@/components/tools/developer/NewCoolTool"), { ssr: false });
         ```
@@ -34,7 +34,7 @@ Follow this workflow to add a new tool to SopKit:
         "new-cool-tool": { component: NewCoolTool, props: {} },
         ```
 3.  **Register in tools.json**:
-    *   Add the tool metadata to **[tools.json](file:///Users/shaswatraj/Desktop/earn/sopkit.github.io/src/constants/tools.json)** inside the correct category tools array:
+    *   Add the tool metadata to **[tools.json](/sopkit.github.io/src/constants/tools.json)** inside the correct category tools array:
         ```json
         {
           "id": "new-cool-tool",
