@@ -1200,6 +1200,197 @@ export const blogs: BlogArticle[] = [
 			}
 		]
 	}
+,
+{
+  "slug": "ssc-mts-photo-size-requirements",
+  "title": "SSC MTS 2026: Exact Photo & Signature Size Requirements",
+  "description": "Official guide to SSC MTS 2026 online form photo size, signature dimensions, file size in KB, and how to resize them.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/ssc-mts-photo-resizer"
+  ],
+  "intro": "Submitting the correct photo and signature size is critical for your SSC MTS 2026 online application. This guide outlines the exact measurements, file sizes in KB, and formatting rules to prevent form rejection.",
+  "sections": [
+    {
+      "heading": "SSC MTS Photo Size Specifications",
+      "paragraphs": [
+        "The official SSC MTS photo size requirement is 3.5 cm (width) by 4.5 cm (height), with a file size strictly between 20 KB and 50 KB. The photograph must be in JPEG or JPG format and taken against a light background.",
+        "Candidate Face: Face must cover 70% of the image.",
+        "Photo Recency: Must be taken within 3 months of the notification date.",
+        "Avoid Rejections: Wear no caps, spectacles, or goggles. Both ears must be clearly visible."
+      ],
+      "toolRoutes": [
+        "/ssc-mts-photo-resizer"
+      ]
+    },
+    {
+      "heading": "SSC MTS Signature Size Specifications",
+      "paragraphs": [
+        "The official SSC MTS signature size requirement is 4.0 cm (width) by 2.0 cm (height), with a file size strictly between 10 KB and 20 KB. The signature must be signed on a white paper using black or blue ink.",
+        "Signature Format: JPEG or JPG formats only.",
+        "Signature Style: Must be in running handwriting, not block capital letters."
+      ]
+    },
+    {
+      "heading": "How to Resize SSC MTS Photo and Signature",
+      "paragraphs": [
+        "To resize your images, use the free browser-based resizer tool on SopKit. Upload your image, select the photo or signature mode, and download the pre-configured JPEG."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the photo size limit in KB for SSC MTS?",
+      "answer": "The passport photo must be between 20 KB and 50 KB, and the signature file must be between 10 KB and 20 KB."
+    },
+    {
+      "question": "Can I upload a photo wearing glasses for SSC MTS?",
+      "answer": "No, spectacles or goggles are strictly prohibited in the SSC MTS application form photos to ensure clear facial recognition."
+    }
+  ]
+},
+{
+  "slug": "rrb-group-d-photo-size-guide",
+  "title": "RRB Group D 2026: Photo & Signature Guide",
+  "description": "Learn the official RRB Group D Railway Recruitment 2026 application form photo size, signature KB specifications, and how to format them.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 4,
+  "featuredToolRoutes": [
+    "/rrb-group-d-photo-resizer"
+  ],
+  "intro": "Preparing for the Indian Railways RRB Group D recruitment requires submitting compliant application forms. This guide details the photo and signature sizes and compression limits to ensure your form is approved.",
+  "sections": [
+    {
+      "heading": "RRB Group D Photo Size Specifications",
+      "paragraphs": [
+        "The official RRB Group D photo size requirement is 3.5 cm x 4.5 cm, with a file size between 20 KB and 50 KB in JPEG format. The photo must have a light-colored or white background.",
+        "Facial Coverage: The face must cover at least 70% of the photo area.",
+        "Photo Quality: Must be clear, not blurry, and without shadows."
+      ],
+      "toolRoutes": [
+        "/rrb-group-d-photo-resizer"
+      ]
+    },
+    {
+      "heading": "RRB Group D Signature Size Specifications",
+      "paragraphs": [
+        "The official RRB Group D signature size requirement is 4.0 cm x 2.0 cm, with a file size between 10 KB and 20 KB in JPEG format. Candidates must sign inside a box on white paper.",
+        "Signature Style: Must be signed in running handwriting. Do not sign in capital letters."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the file size limit for RRB Group D?",
+      "answer": "The passport photo size should be 20 KB to 50 KB, and the signature size should be 10 KB to 20 KB."
+    }
+  ]
+},
+{
+  "slug": "exam-photo-size-comparison-chart",
+  "title": "UPSC vs SSC vs NEET Photo Specs: One Comparison Chart",
+  "description": "Compare photo and signature size specifications for UPSC, SSC CGL/CHSL/MTS, NEET, JEE, and Indian Railways RRB Group D exams.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 6,
+  "featuredToolRoutes": [
+    "/ssc-photo-resizer"
+  ],
+  "intro": "Indian competitive exams like UPSC, SSC, NEET, and JEE each enforce different passport photo and signature dimensions and KB limits. Having a unified comparison saves time and prevents form rejects.",
+  "sections": [
+    {
+      "heading": "Unified Exam Photo Specs Chart",
+      "paragraphs": [
+        "UPSC Photo: 3.5 x 3.5 cm (350x350 px), 20KB to 300KB.",
+        "SSC CGL/CHSL/MTS: 3.5 x 4.5 cm (350x450 px), 20KB to 50KB.",
+        "NEET / JEE: 3.5 x 4.5 cm, 10KB to 200KB.",
+        "Railway RRB Group D: 3.5 x 4.5 cm, 20KB to 50KB."
+      ],
+      "toolRoutes": [
+        "/ssc-photo-resizer"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Why do exams require specific photo dimensions in pixels?",
+      "answer": "Specific dimensions ensure that candidate photo templates align properly on the official admit cards and online databases."
+    }
+  ]
+},
+{
+  "slug": "stylish-names-for-bgmi-free-fire",
+  "title": "1000+ Stylish Names for BGMI & Free Fire (Copy-Paste)",
+  "description": "Discover 1000+ stylish names, cool nickname styles, and fancy font templates for Free Fire and BGMI. Easy one-tap copy-paste font designs.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/fancy-text-generator"
+  ],
+  "intro": "A stylish gaming nickname is created by mapping standard text to decorative Unicode symbols and icons. It makes your profile stand out on the Free Fire, PUBG, or BGMI leaderboards.",
+  "sections": [
+    {
+      "heading": "How to Generate Your Own Custom Nickname",
+      "paragraphs": [
+        "To generate your own custom gamer tag, enter your name into the SopKit Fancy Text Generator and copy any of the 20+ decorative output styles.",
+        "Gamer Tag: Copy-paste symbols like ★, ꧁, ༺, and ꧂ to add wings or stars to your name."
+      ],
+      "toolRoutes": [
+        "/fancy-text-generator"
+      ]
+    },
+    {
+      "heading": "Popular BGMI Name Styles",
+      "paragraphs": [
+        "Killer Style: ★彡[KILLER]彡★",
+        "Nightmare Style: ░▒▓█[NIGHTMARE]█▓▒░",
+        "Legend Style: ꧁༺[LEGENd]༻꧂"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I change my nickname in Free Fire?",
+      "answer": "Use a Name Change Card in the game shop, paste your copied stylish name, and click confirm."
+    }
+  ]
+},
+{
+  "slug": "ai-saree-photo-trend-explained",
+  "title": "The AI Saree Photo Trend, Explained",
+  "description": "Learn how to generate viral AI Saree portraits, Bollywood traditional poster edits, and traditional Indian avatars for free with best prompts.",
+  "date": "2026-07-12",
+  "readTimeMinutes": 5,
+  "featuredToolRoutes": [
+    "/ai-image-generator"
+  ],
+  "intro": "The AI Saree Photo Trend is a viral social media movement where users generate highly realistic traditional Indian portraits wearing sarees or traditional attire. These images are created using advanced AI image generators.",
+  "sections": [
+    {
+      "heading": "How to Join the AI Saree Trend for Free",
+      "paragraphs": [
+        "You do not need paid applications to join the trend. You can write descriptive text prompts in our free AI Image Generator to render gorgeous traditional posters.",
+        "Local Processing: Our platform leverages local browser sandbox settings to ensure user privacy while exploring the trend."
+      ],
+      "toolRoutes": [
+        "/ai-image-generator"
+      ]
+    },
+    {
+      "heading": "Best AI Saree Prompts to Try",
+      "paragraphs": [
+        "Red Saree Prompt: Detailed portrait of a young Indian woman wearing a red silk banarasi saree with gold embroidery, traditional jewelry, soft cinematic lighting, photorealistic.",
+        "Green Saree Prompt: Full body shot of a woman in a green banarasi saree, standing in a decorated courtyard with diyas, warm lighting, high detail."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I download the generated AI Saree photos?",
+      "answer": "Yes, you can download all generated portraits in high definition with zero watermarks."
+    }
+  ]
+}
 ];
 
 export const getBlogArticleBySlug = (slug: string) => {
