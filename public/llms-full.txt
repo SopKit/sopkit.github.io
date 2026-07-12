@@ -1061,6 +1061,9 @@ Canonical Base URL: https://sopkit.github.io
 #### [JWT Decoder & Debugger](https://sopkit.github.io/jwt-decoder)
 - **Description**: Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature.
 
+#### [API Key Tester Suite](https://sopkit.github.io/api-key-tester)
+- **Description**: Secure, client-side, browser-based API credentials validators for developers. Verify your OpenAI, Gemini, DeepSeek, Stripe, and other API keys instantly.
+
 #### [Amazon SES API Key Tester](https://sopkit.github.io/api-key-tester/amazon-ses)
 - **Description**: Test your Amazon SES credentials with the send email endpoint.
 - **Alternative Intents / Keywords**: `api-docs`, `api-endpoint-tester`, `api-tester`, `debug-api-requests`, `test-rest-api-online`, `amazon-ses-api-key-tester-online-free`, `free-amazon-ses-api-key-tester-no-signup`, `amazon-ses-api-key-tester-tool-online`, `best-free-amazon-ses-api-key-tester`, `amazon-ses-api-key-tester-without-registration`, `online-amazon-ses-api-key-tester-free`, `amazon-ses-api-key-tester-browser-based`, `amazon-ses-api-key-tester-no-download`, `amazon-ses-api-key-tester-instant-online`, `amazon-ses-api-key-tester-privacy-focused`
@@ -1868,6 +1871,15 @@ Canonical Base URL: https://sopkit.github.io
 #### [Sitemap Url Downloader](https://sopkit.github.io/sitemap-url-downloader)
 - **Description**: Free Sitemap Url Downloader online. Sitemap Url Downloader allows you to optimize your website quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
 - **Alternative Intents / Keywords**: `sitemap-url-downloader-online-free`, `free-sitemap-url-downloader-no-signup`, `sitemap-url-downloader-tool-online`, `best-free-sitemap-url-downloader`, `sitemap-url-downloader-without-registration`, `online-sitemap-url-downloader-free`, `sitemap-url-downloader-browser-based`, `sitemap-url-downloader-no-download`, `sitemap-url-downloader-instant-online`, `sitemap-url-downloader-privacy-focused`, `sitemap-url-downloader-web-based`, `sitemap-url-downloader-no-install`, `free-online-sitemap-url-downloader`, `sitemap-url-downloader-secure-online`, `sitemap-url-downloader-fast-processing`
+
+
+### AI Prompt Tools Tools
+
+#### [Midjourney Prompt Builder](https://sopkit.github.io/midjourney-prompt-builder)
+- **Description**: Create high-quality Midjourney prompts with aspect ratio, style, camera angles, lighting, and version parameters instantly. Free online helper for AI artists.
+
+#### [AI Persona & System Prompt Generator](https://sopkit.github.io/ai-persona-prompt-generator)
+- **Description**: Generate optimized system prompts and expert personas for ChatGPT, Claude, and Gemini. Choose roles, tone, and formatting constraints for better AI replies.
 
 
 ### Other Tools Tools

@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${BASE_URL}/seo-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
 		{ url: `${BASE_URL}/developer-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${BASE_URL}/api-key-tester`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
+		{ url: `${BASE_URL}/ai-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${BASE_URL}/qr-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.88 },
 		{ url: `${BASE_URL}/small-business-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.86 },
 		{ url: `${BASE_URL}/other-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.75 },

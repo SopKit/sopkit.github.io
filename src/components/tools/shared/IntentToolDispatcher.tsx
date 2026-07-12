@@ -178,6 +178,8 @@ const YouTubeChannelIDFinderTool = dynamic(() => import("@/components/tools/yout
 const YouTubeDownloader = dynamic(() => import("@/components/tools/downloaders/YouTubeDownloader"), { ssr: false });
 const YouTubeShortsDownloader = dynamic(() => import("@/components/tools/downloaders/YouTubeShortsDownloader"), { ssr: false });
 const YoutubeThumbnailDownloader = dynamic(() => import("@/components/tools/downloaders/YoutubeThumbnailDownloader"), { ssr: false });
+const MidjourneyPromptBuilder = dynamic(() => import("@/components/tools/ai/MidjourneyPromptBuilder"), { ssr: false });
+const AiPersonaPromptGenerator = dynamic(() => import("@/components/tools/ai/AiPersonaPromptGenerator"), { ssr: false });
 
 // Registry of tool ID to dynamic component and preset props
 
@@ -380,6 +382,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "adsense-calculator": { component: BuiltInCalculators, props: {"kind": "adsense-calculator"} },
     "age-calculator": { component: BuiltInCalculators, props: {"kind": "age-calculator"} },
     "ai-image-generator": { component: AIImageGeneratorTool, props: {} },
+    "ai-persona-prompt-generator": { component: AiPersonaPromptGenerator, props: {} },
     "ai-music-generator": { component: AIMusicGeneratorTool, props: {} },
     "ai-poem-generator": { component: TextGeneratorTool, props: {} },
     "ai-voice-generator": { component: AIVoiceGeneratorTool, props: {} },
@@ -569,6 +572,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "markdown-to-text": { component: MarkdownToText, props: {} },
     "mashable-video-downloader": { component: MashableDownloader, props: {} },
     "md5-generator": { component: HashGeneratorTool, props: {} },
+    "midjourney-prompt-builder": { component: MidjourneyPromptBuilder, props: {} },
     "meta-tag-generator": { component: MetaTagGenerator, props: {} },
     "mixcloud-video-downloader": { component: MixcloudDownloader, props: {} },
     "modify-mp3-file": { component: TikTokMP3Converter, props: {} },

@@ -316,6 +316,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Random Name Generator](https://sopkit.github.io/random-name-generator) - Generate random names for characters, personas, or test data with gender and niche options.
 - [Binary to Hex Converter](https://sopkit.github.io/binary-to-hex-converter) - Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast and secure.
 - [JWT Decoder & Debugger](https://sopkit.github.io/jwt-decoder) - Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature.
+- [API Key Tester Suite](https://sopkit.github.io/api-key-tester) - Secure, client-side, browser-based API credentials validators for developers. Verify your OpenAI, Gemini, DeepSeek, Stripe, and other API keys instantly.
 - [Amazon SES API Key Tester](https://sopkit.github.io/api-key-tester/amazon-ses) - Test your Amazon SES credentials with the send email endpoint.
 - [Anthropic Claude API Key Tester](https://sopkit.github.io/api-key-tester/anthropic) - Test your Anthropic Claude API key with the messages endpoint.
 - [ASCII to Binary Converter](https://sopkit.github.io/ascii-to-binary-converter) - Convert ASCII text to binary code instantly. Our free online converter is perfect for computer science students, developers, and hobbyists. Fast, secure, and browser-based.
@@ -524,6 +525,11 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Visual Sitemap Generator](https://sopkit.github.io/visual-sitemap) - Visualize your website's sitemap structure instantly. Enter your XML sitemap URL to generate a dynamic tree view of your site hierarchy.
 - [Website Ranking Checker](https://sopkit.github.io/website-ranking-checker) - Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows.
 - [Sitemap Url Downloader](https://sopkit.github.io/sitemap-url-downloader) - Free Sitemap Url Downloader online. Sitemap Url Downloader allows you to optimize your website quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
+
+### AI Prompt Tools
+
+- [Midjourney Prompt Builder](https://sopkit.github.io/midjourney-prompt-builder) - Create high-quality Midjourney prompts with aspect ratio, style, camera angles, lighting, and version parameters instantly. Free online helper for AI artists.
+- [AI Persona & System Prompt Generator](https://sopkit.github.io/ai-persona-prompt-generator) - Generate optimized system prompts and expert personas for ChatGPT, Claude, and Gemini. Choose roles, tone, and formatting constraints for better AI replies.
 
 ### Other Tools
 

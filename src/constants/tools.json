@@ -15432,6 +15432,28 @@
         }
       ]
     },
+    "ai-tools": {
+      "name": "AI Prompt Tools",
+      "slug": "ai-tools",
+      "icon": "Brain",
+      "description": "Interactive builders and generators to write optimal AI prompts and personas",
+      "tools": [
+        {
+          "id": "midjourney-prompt-builder",
+          "name": "Midjourney Prompt Builder",
+          "description": "Create high-quality Midjourney prompts with aspect ratio, style, camera angles, lighting, and version parameters instantly. Free online helper for AI artists.",
+          "route": "/midjourney-prompt-builder",
+          "category": "ai-tools"
+        },
+        {
+          "id": "ai-persona-prompt-generator",
+          "name": "AI Persona & System Prompt Generator",
+          "description": "Generate optimized system prompts and expert personas for ChatGPT, Claude, and Gemini. Choose roles, tone, and formatting constraints for better AI replies.",
+          "route": "/ai-persona-prompt-generator",
+          "category": "ai-tools"
+        }
+      ]
+    },
     "others": {
       "name": "Other Tools",
       "slug": "other-tools",
