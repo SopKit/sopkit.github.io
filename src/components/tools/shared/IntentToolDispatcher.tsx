@@ -264,6 +264,12 @@ const FaviconGeneratorProTool = dynamic(() => import("@/components/tools/image/F
 const ImageMetadataRemoverTool = dynamic(() => import("@/components/tools/image/ImageMetadataRemoverTool"), { ssr: false });
 const ImageColorPicker = dynamic(() => import("@/components/tools/image/ImageColorPicker"), { ssr: false });
 const YouTubePlaylistLinkExtractorTool = dynamic(() => import("@/components/tools/youtube/YouTubePlaylistLinkExtractorTool"), { ssr: false });
+const YouTubeTitleCapitalizerTool = dynamic(() => import("@/components/tools/youtube/YouTubeTitleCapitalizerTool"), { ssr: false });
+const YouTubeEmbedGeneratorTool = dynamic(() => import("@/components/tools/youtube/YouTubeEmbedGeneratorTool"), { ssr: false });
+const YouTubeTimestampLinkGeneratorTool = dynamic(() => import("@/components/tools/youtube/YouTubeTimestampLinkGeneratorTool"), { ssr: false });
+const YouTubeSubscribeLinkGeneratorTool = dynamic(() => import("@/components/tools/youtube/YouTubeSubscribeLinkGeneratorTool"), { ssr: false });
+const YouTubeTitleLengthCheckerTool = dynamic(() => import("@/components/tools/youtube/YouTubeTitleLengthCheckerTool"), { ssr: false });
+const YouTubeMoneyCalculatorTool = dynamic(() => import("@/components/tools/youtube/YouTubeMoneyCalculatorTool"), { ssr: false });
 const EmojiTextGeneratorTool = dynamic(() => import("@/components/tools/text/EmojiTextGeneratorTool"), { ssr: false });
 const MarkdownToHtmlTool = dynamic(() => import("@/components/tools/text/MarkdownToHtmlTool"), { ssr: false });
 const MarkdownToPdfTool = dynamic(() => import("@/components/tools/text/MarkdownToPdfTool"), { ssr: false });
@@ -794,6 +800,12 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "linkedin-headline-generator": { component: JobMessageGenerator, props: { defaultTab: "linkedin-headline" } },
     "internship-message-generator": { component: JobMessageGenerator, props: { defaultTab: "internship-message" } },
     "terms-and-conditions-generator": { component: TermsAndConditionsGeneratorTool, props: { kind: "terms" } },
+    "youtube-title-capitalizer": { component: YouTubeTitleCapitalizerTool, props: {} },
+    "youtube-embed-code-generator": { component: YouTubeEmbedGeneratorTool, props: {} },
+    "youtube-timestamp-link-generator": { component: YouTubeTimestampLinkGeneratorTool, props: {} },
+    "youtube-subscribe-link-generator": { component: YouTubeSubscribeLinkGeneratorTool, props: {} },
+    "youtube-title-length-checker": { component: YouTubeTitleLengthCheckerTool, props: {} },
+    "youtube-money-calculator": { component: YouTubeMoneyCalculatorTool, props: {} },
 };
 
 interface IntentToolDispatcherProps {

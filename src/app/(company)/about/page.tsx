@@ -113,6 +113,13 @@ export default async function AboutPage() {
 											<p className="text-xs text-muted-foreground">Built with open-source contributions and community feedback.</p>
 										</div>
 									</div>
+									<div className="flex gap-3 p-4 bg-muted/20 rounded-lg md:col-span-2">
+										<Globe className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+										<div>
+											<h3 className="font-medium text-sm">100% Ad-Free Embeds</h3>
+											<p className="text-xs text-muted-foreground">Embed any of our tools directly onto your website. It runs completely client-side and is guaranteed to be 100% ad-free forever.</p>
+										</div>
+									</div>
 								</div>
 							</section>
 

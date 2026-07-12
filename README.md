@@ -48,6 +48,7 @@ SopKit is a **free online tools** platform with **400+ browser-based utilities**
 - **Completely Free** — No hidden fees, premium tiers, or usage limits
 - **Privacy-First** — 95% of tools process data locally; files never leave your device
 - **No Signup Required** — Start using any tool instantly with zero friction
+- **100% Ad-Free Embeds** — Embed any tool directly onto your site via iframe; guaranteed ad-free forever
 - **400+ Tools & Growing** — From image compression to SEO analysis, we cover every common workflow
 - **Fast & Modern** — Built on Next.js 16 with optimized Core Web Vitals
 - **Mobile-Friendly** — Fully responsive design works on all devices
@@ -105,6 +106,7 @@ SopKit is a **free online tools** platform with **400+ browser-based utilities**
 - **OpenSearch support** for browser search integration
 - **PWA-ready** with full manifest and service worker
 - **Responsive design** optimized for mobile, tablet, and desktop
+- **100% Ad-Free Iframe Embeds** — Integrate any utility directly onto your site (e.g. `/embed-tool/?id=pdf-editor`) with zero ads, fully sandboxed, forever.
 - **Google Analytics, Clarity, and AdSense** integrated
 
 ## 🏗️ Architecture

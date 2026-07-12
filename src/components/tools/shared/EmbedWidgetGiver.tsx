@@ -13,7 +13,7 @@ export function EmbedWidgetGiver({ toolId, toolName }: EmbedWidgetGiverProps) {
 	const [isOpen, setIsOpen] = useState(false);
 	const [copied, setCopied] = useState(false);
 
-	const embedCode = `<iframe src="https://sopkit.github.io/embed/?id=${toolId}" width="100%" height="550" style="border:1px solid #e2e8f0; border-radius:12px;" title="Free Local ${toolName} by SopKit"></iframe>`;
+	const embedCode = `<iframe src="https://sopkit.github.io/embed-tool/?id=${toolId}" width="100%" height="550" style="border:0; border-radius:12px; overflow:hidden;" title="Free Local ${toolName} by SopKit"></iframe>`;
 
 	const handleCopy = () => {
 		navigator.clipboard.writeText(embedCode);
@@ -27,7 +27,7 @@ export function EmbedWidgetGiver({ toolId, toolName }: EmbedWidgetGiverProps) {
 				<div className="space-y-1">
 					<h3 className="text-base font-bold flex items-center gap-2">
 						<Code className="h-4.5 w-4.5 text-primary" />
-						Embed this tool on your website
+						Embed this tool (100% Ad-Free)
 					</h3>
 					<p className="text-xs text-muted-foreground">
 						Add this utility directly to your blog posts, documentation, or dashboard.
@@ -45,7 +45,7 @@ export function EmbedWidgetGiver({ toolId, toolName }: EmbedWidgetGiverProps) {
 			{isOpen && (
 				<div className="space-y-3 pt-2 border-t border-border/20 animate-in">
 					<p className="text-xs text-muted-foreground leading-relaxed">
-						Copy the code snippet below and paste it into your site's HTML editor. The tool runs 100% client-side inside your visitor's browser, consuming none of your server bandwidth.
+						Copy the code snippet below and paste it into your site's HTML editor. The tool runs 100% client-side inside your visitor's browser, consuming none of your server bandwidth, and is guaranteed **100% ad-free forever**.
 					</p>
 					<div className="relative">
 						<textarea

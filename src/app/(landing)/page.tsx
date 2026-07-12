@@ -217,6 +217,31 @@ export default async function LandingPage() {
 					</div>
 				</section>
 
+				{/* Ad-Free Embed Feature Highlight */}
+				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_300px]">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-card border border-border/40 p-8 md:p-12">
+						<div className="space-y-4">
+							<Badge className="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-semibold px-3 py-1 rounded-full w-fit">
+								New Feature
+							</Badge>
+							<h2 className="text-3xl font-black tracking-tight text-foreground uppercase">
+								100% Ad-Free Tool Embeds
+							</h2>
+							<p className="text-sm text-muted-foreground leading-relaxed">
+								Integrate any of SopKit's {SITE_CONFIG.toolCountString} utilities directly onto your own website, blog, or documentation. Our embedded sandboxes run entirely in your visitor's browser, consuming zero server bandwidth and remaining **completely ad-free forever**.
+							</p>
+						</div>
+						<div className="p-6 bg-muted/30 border border-border/40 rounded-xl space-y-4 font-mono text-xs text-muted-foreground">
+							<span className="font-bold text-foreground block">HTML Embed Code Example:</span>
+							<textarea
+								readOnly
+								value={`<iframe src="https://sopkit.github.io/embed-tool/?id=pdf-editor" width="100%" height="550" style="border:0; border-radius:12px; overflow:hidden;" title="Free Local PDF Editor by SopKit"></iframe>`}
+								className="w-full h-24 p-3 bg-card border border-border/40 rounded-lg resize-none focus:outline-none text-[10px]"
+							/>
+						</div>
+					</div>
+				</section>
+
 				{/* Final CTA - View All Tools */}
 				<section className="py-16 text-center border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_300px]">
 					<div className="max-w-3xl mx-auto px-6 py-16 rounded-none bg-foreground text-background relative overflow-hidden group">
