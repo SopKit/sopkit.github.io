@@ -283,6 +283,7 @@ const SlugToTextTool = dynamic(() => import("@/components/tools/text/SlugToTextT
 const WordFrequencyCounterTool = dynamic(() => import("@/components/tools/text/WordFrequencyCounterTool"), { ssr: false });
 const JWTDecoderTool = dynamic(() => import("@/components/tools/developer/JWTDecoderTool"), { ssr: false });
 const CaseConverter = dynamic(() => import("@/components/tools/text/CaseConverter"), { ssr: false });
+const ApiKeyTester = dynamic(() => import("@/components/tools/developer/ApiKeyTester"), { ssr: false });
 
 export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentType<any>; props: any }> = {
     "domain-name-generator": { component: WebTools, props: { defaultTab: "domain" } },
@@ -806,6 +807,46 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "youtube-subscribe-link-generator": { component: YouTubeSubscribeLinkGeneratorTool, props: {} },
     "youtube-title-length-checker": { component: YouTubeTitleLengthCheckerTool, props: {} },
     "youtube-money-calculator": { component: YouTubeMoneyCalculatorTool, props: {} },
+    "amazon-ses-api-key-tester": { component: ApiKeyTester, props: { toolName: "Amazon SES API Key Tester" } },
+    "openai-api-key-tester": { component: ApiKeyTester, props: { toolName: "OpenAI API Key Tester" } },
+    "anthropic-api-key-tester": { component: ApiKeyTester, props: { toolName: "Anthropic Claude API Key Tester" } },
+    "attio-api-key-tester": { component: ApiKeyTester, props: { toolName: "Attio API Key Tester" } },
+    "brevo-api-key-tester": { component: ApiKeyTester, props: { toolName: "Brevo API Key Tester" } },
+    "clearbit-api-key-tester": { component: ApiKeyTester, props: { toolName: "Clearbit API Key Tester" } },
+    "cohere-api-key-tester": { component: ApiKeyTester, props: { toolName: "Cohere API Key Tester" } },
+    "coresignal-api-key-tester": { component: ApiKeyTester, props: { toolName: "Coresignal API Key Tester" } },
+    "crunchbase-api-key-tester": { component: ApiKeyTester, props: { toolName: "Crunchbase API Key Tester" } },
+    "data-axle-api-key-tester": { component: ApiKeyTester, props: { toolName: "Data Axle API Key Tester" } },
+    "datanyze-api-key-tester": { component: ApiKeyTester, props: { toolName: "Datanyze API Key Tester" } },
+    "deepseek-api-key-tester": { component: ApiKeyTester, props: { toolName: "DeepSeek API Key Tester" } },
+    "demandbase-api-key-tester": { component: ApiKeyTester, props: { toolName: "Demandbase API Key Tester" } },
+    "enrich-api-key-tester": { component: ApiKeyTester, props: { toolName: "Enrich API Key Tester" } },
+    "freshdesk-api-key-tester": { component: ApiKeyTester, props: { toolName: "Freshdesk API Key Tester" } },
+    "fullcontact-api-key-tester": { component: ApiKeyTester, props: { toolName: "FullContact API Key Tester" } },
+    "google-gemini-api-key-tester": { component: ApiKeyTester, props: { toolName: "Google Gemini API Key Tester" } },
+    "groq-api-key-tester": { component: ApiKeyTester, props: { toolName: "Groq API Key Tester" } },
+    "hg-insights-api-key-tester": { component: ApiKeyTester, props: { toolName: "HG Insights API Key Tester" } },
+    "hubspot-api-key-tester": { component: ApiKeyTester, props: { toolName: "HubSpot API Key Tester" } },
+    "intercom-api-key-tester": { component: ApiKeyTester, props: { toolName: "Intercom API Key Tester" } },
+    "leadgenius-api-key-tester": { component: ApiKeyTester, props: { toolName: "LeadGenius API Key Tester" } },
+    "leadspace-api-key-tester": { component: ApiKeyTester, props: { toolName: "Leadspace API Key Tester" } },
+    "loops-api-key-tester": { component: ApiKeyTester, props: { toolName: "Loops API Key Tester" } },
+    "lusha-api-key-tester": { component: ApiKeyTester, props: { toolName: "Lusha API Key Tester" } },
+    "mailgun-api-key-tester": { component: ApiKeyTester, props: { toolName: "Mailgun API Key Tester" } },
+    "mattermark-api-key-tester": { component: ApiKeyTester, props: { toolName: "Mattermark API Key Tester" } },
+    "melissa-api-key-tester": { component: ApiKeyTester, props: { toolName: "Melissa API Key Tester" } },
+    "people-data-labs-api-key-tester": { component: ApiKeyTester, props: { toolName: "People Data Labs API Key Tester" } },
+    "pipedrive-api-key-tester": { component: ApiKeyTester, props: { toolName: "Pipedrive API Key Tester" } },
+    "pipl-api-key-tester": { component: ApiKeyTester, props: { toolName: "Pipl API Key Tester" } },
+    "postmark-api-key-tester": { component: ApiKeyTester, props: { toolName: "Postmark Server Token Tester" } },
+    "resend-api-key-tester": { component: ApiKeyTester, props: { toolName: "Resend API Key Tester" } },
+    "sendgrid-api-key-tester": { component: ApiKeyTester, props: { toolName: "SendGrid API Key Tester" } },
+    "snov-io-api-key-tester": { component: ApiKeyTester, props: { toolName: "Snov.io API Key Tester" } },
+    "sparkpost-api-key-tester": { component: ApiKeyTester, props: { toolName: "SparkPost API Key Tester" } },
+    "stripe-api-key-tester": { component: ApiKeyTester, props: { toolName: "Stripe API Key Tester" } },
+    "twilio-api-key-tester": { component: ApiKeyTester, props: { toolName: "Twilio API Key Tester" } },
+    "zendesk-api-key-tester": { component: ApiKeyTester, props: { toolName: "Zendesk API Key Tester" } },
+    "zoominfo-api-key-tester": { component: ApiKeyTester, props: { toolName: "ZoomInfo API Key Tester" } },
 };
 
 interface IntentToolDispatcherProps {

@@ -125,22 +125,27 @@ Canonical Base URL: https://sopkit.github.io
 - **Description**: Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds.
 
 #### [WEBP to PNG Converter](https://sopkit.github.io/webp-to-png)
-- **Description**: Convert modern WEBP images to widely supported PNG format without losing quality.
+- **Description**: Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.
+- **Alternative Intents / Keywords**: `free-webp-to-png-converter-online`, `webp-to-png-converter-tool`, `webp-to-png-with-transparency`, `webp-to-png-converter-online-free`, `free-webp-to-png-converter-no-signup`, `webp-to-png-converter-tool-online`, `best-free-webp-to-png-converter`, `webp-to-png-converter-without-registration`, `online-webp-to-png-converter-free`, `webp-to-png-converter-browser-based`, `webp-to-png-converter-no-download`, `webp-to-png-converter-instant-online`, `webp-to-png-converter-privacy-focused`, `webp-to-png-converter-web-based`, `webp-to-png-converter-no-install`
 
 #### [ICO to PNG Converter](https://sopkit.github.io/ico-to-png)
-- **Description**: Extract PNG images from ICO icon files. Perfect for web developers and designers.
+- **Description**: Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- **Alternative Intents / Keywords**: `free-ico-to-png-converter-online`, `ico-to-png-converter-tool`, `ico-to-png-converter-online-free`, `free-ico-to-png-converter-no-signup`, `ico-to-png-converter-tool-online`, `best-free-ico-to-png-converter`, `ico-to-png-converter-without-registration`, `online-ico-to-png-converter-free`, `ico-to-png-converter-browser-based`, `ico-to-png-converter-no-download`, `ico-to-png-converter-instant-online`, `ico-to-png-converter-privacy-focused`, `ico-to-png-converter-web-based`, `ico-to-png-converter-no-install`, `free-online-ico-to-png-converter`
 
 #### [JPG to PNG Converter](https://sopkit.github.io/jpg-to-png)
-- **Description**: Convert JPG photos to PNG format to support transparency and lossless compression.
+- **Description**: Convert JPG to PNG with transparency support. Maintain high image quality and convert formats instantly in your browser. Free, secure, and privacy-focused online tool.
+- **Alternative Intents / Keywords**: `free-jpg-to-png-converter-online`, `jpg-png-to-pdf`, `jpg-to-png-converter-tool`, `jpeg-to-png-online-free`, `jpg-to-png-converter-online-free`, `free-jpg-to-png-converter-no-signup`, `jpg-to-png-converter-tool-online`, `best-free-jpg-to-png-converter`, `jpg-to-png-converter-without-registration`, `online-jpg-to-png-converter-free`, `jpg-to-png-converter-browser-based`, `jpg-to-png-converter-no-download`, `jpg-to-png-converter-instant-online`, `jpg-to-png-converter-privacy-focused`, `jpg-to-png-converter-web-based`
 
 #### [PNG to JPG Converter](https://sopkit.github.io/png-to-jpg)
-- **Description**: Convert PNG images to JPG format for smaller file sizes and web optimization.
+- **Description**: Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser.
+- **Alternative Intents / Keywords**: `free-png-to-jpg-converter-online`, `png-to-jpg-converter-tool`, `convert-png-to-jpeg-free`, `png-to-jpg-converter-online-free`, `free-png-to-jpg-converter-no-signup`, `png-to-jpg-converter-tool-online`, `best-free-png-to-jpg-converter`, `png-to-jpg-converter-without-registration`, `online-png-to-jpg-converter-free`, `png-to-jpg-converter-browser-based`, `png-to-jpg-converter-no-download`, `png-to-jpg-converter-instant-online`, `png-to-jpg-converter-privacy-focused`, `png-to-jpg-converter-web-based`, `png-to-jpg-converter-no-install`
 
 #### [SVG to JPG Converter](https://sopkit.github.io/svg-to-jpg)
 - **Description**: Convert SVG vector files into standard JPG images with custom background colors.
 
 #### [WEBP to JPG Converter](https://sopkit.github.io/webp-to-jpg)
-- **Description**: Convert WEBP files to JPG format for compatibility with all devices and platforms.
+- **Description**: Convert WebP images to JPG format for maximum compatibility across all devices and platforms. Our free online converter is fast, secure, and preserves image detail.
+- **Alternative Intents / Keywords**: `free-webp-to-jpg-converter-online`, `webp-to-jpg-converter-tool`, `webp-to-jpeg-online`, `webp-to-jpg-converter-online-free`, `free-webp-to-jpg-converter-no-signup`, `webp-to-jpg-converter-tool-online`, `best-free-webp-to-jpg-converter`, `webp-to-jpg-converter-without-registration`, `online-webp-to-jpg-converter-free`, `webp-to-jpg-converter-browser-based`, `webp-to-jpg-converter-no-download`, `webp-to-jpg-converter-instant-online`, `webp-to-jpg-converter-privacy-focused`, `webp-to-jpg-converter-web-based`, `webp-to-jpg-converter-no-install`
 
 #### [Advanced Favicon Generator](https://sopkit.github.io/favicon-generator-pro)
 - **Description**: Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image.
@@ -186,10 +191,6 @@ Canonical Base URL: https://sopkit.github.io
 #### [Flip Image](https://sopkit.github.io/flip-image)
 - **Description**: Free flip image tool to process your data instantly with privacy-friendly browser-based workflows.
 - **Alternative Intents / Keywords**: `free-flip-image-online`, `flip-image-tool`, `flip-pdf-pages`, `flip-image-online-free`, `free-flip-image-no-signup`, `flip-image-tool-online`, `best-free-flip-image`, `flip-image-without-registration`, `online-flip-image-free`, `flip-image-browser-based`, `flip-image-no-download`, `flip-image-instant-online`, `flip-image-privacy-focused`, `flip-image-web-based`, `flip-image-no-install`
-
-#### [ICO to PNG Converter](https://sopkit.github.io/ico-to-png-converter)
-- **Description**: Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- **Alternative Intents / Keywords**: `free-ico-to-png-converter-online`, `ico-to-png-converter-tool`, `ico-to-png-converter-online-free`, `free-ico-to-png-converter-no-signup`, `ico-to-png-converter-tool-online`, `best-free-ico-to-png-converter`, `ico-to-png-converter-without-registration`, `online-ico-to-png-converter-free`, `ico-to-png-converter-browser-based`, `ico-to-png-converter-no-download`, `ico-to-png-converter-instant-online`, `ico-to-png-converter-privacy-focused`, `ico-to-png-converter-web-based`, `ico-to-png-converter-no-install`, `free-online-ico-to-png-converter`
 
 #### [Image Compressor](https://sopkit.github.io/image-compressor)
 - **Description**: Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing.
@@ -243,10 +244,6 @@ Canonical Base URL: https://sopkit.github.io
 - **Description**: Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signup required.
 - **Alternative Intents / Keywords**: `free-jpg-to-ico-converter-online`, `jpg-to-ico-converter-tool`, `jpeg-to-favicon-converter`, `jpg-to-ico-converter-online-free`, `free-jpg-to-ico-converter-no-signup`, `jpg-to-ico-converter-tool-online`, `best-free-jpg-to-ico-converter`, `jpg-to-ico-converter-without-registration`, `online-jpg-to-ico-converter-free`, `jpg-to-ico-converter-browser-based`, `jpg-to-ico-converter-no-download`, `jpg-to-ico-converter-instant-online`, `jpg-to-ico-converter-privacy-focused`, `jpg-to-ico-converter-web-based`, `jpg-to-ico-converter-no-install`
 
-#### [JPG to PNG Converter](https://sopkit.github.io/jpg-to-png-converter)
-- **Description**: Convert JPG to PNG with transparency support. Maintain high image quality and convert formats instantly in your browser. Free, secure, and privacy-focused online tool.
-- **Alternative Intents / Keywords**: `free-jpg-to-png-converter-online`, `jpg-png-to-pdf`, `jpg-to-png-converter-tool`, `jpeg-to-png-online-free`, `jpg-to-png-converter-online-free`, `free-jpg-to-png-converter-no-signup`, `jpg-to-png-converter-tool-online`, `best-free-jpg-to-png-converter`, `jpg-to-png-converter-without-registration`, `online-jpg-to-png-converter-free`, `jpg-to-png-converter-browser-based`, `jpg-to-png-converter-no-download`, `jpg-to-png-converter-instant-online`, `jpg-to-png-converter-privacy-focused`, `jpg-to-png-converter-web-based`
-
 #### [JPG to WebP Converter](https://sopkit.github.io/jpg-to-webp-converter)
 - **Description**: Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your website instantly.
 - **Alternative Intents / Keywords**: `free-jpg-to-webp-converter-online`, `jpg-to-webp-converter-tool`, `webp-converter`, `jpg-to-webp-converter-online-free`, `free-jpg-to-webp-converter-no-signup`, `jpg-to-webp-converter-tool-online`, `best-free-jpg-to-webp-converter`, `jpg-to-webp-converter-without-registration`, `online-jpg-to-webp-converter-free`, `jpg-to-webp-converter-browser-based`, `jpg-to-webp-converter-no-download`, `jpg-to-webp-converter-instant-online`, `jpg-to-webp-converter-privacy-focused`, `jpg-to-webp-converter-web-based`, `jpg-to-webp-converter-no-install`
@@ -271,10 +268,6 @@ Canonical Base URL: https://sopkit.github.io
 - **Description**: Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first browser-based conversion.
 - **Alternative Intents / Keywords**: `free-png-to-ico-converter-online`, `png-to-ico-converter-tool`, `png-to-favicon-generator`, `png-to-ico-converter-online-free`, `free-png-to-ico-converter-no-signup`, `png-to-ico-converter-tool-online`, `best-free-png-to-ico-converter`, `png-to-ico-converter-without-registration`, `online-png-to-ico-converter-free`, `png-to-ico-converter-browser-based`, `png-to-ico-converter-no-download`, `png-to-ico-converter-instant-online`, `png-to-ico-converter-privacy-focused`, `png-to-ico-converter-web-based`, `png-to-ico-converter-no-install`
 
-#### [PNG to JPG Converter](https://sopkit.github.io/png-to-jpg-converter)
-- **Description**: Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser.
-- **Alternative Intents / Keywords**: `free-png-to-jpg-converter-online`, `png-to-jpg-converter-tool`, `convert-png-to-jpeg-free`, `png-to-jpg-converter-online-free`, `free-png-to-jpg-converter-no-signup`, `png-to-jpg-converter-tool-online`, `best-free-png-to-jpg-converter`, `png-to-jpg-converter-without-registration`, `online-png-to-jpg-converter-free`, `png-to-jpg-converter-browser-based`, `png-to-jpg-converter-no-download`, `png-to-jpg-converter-instant-online`, `png-to-jpg-converter-privacy-focused`, `png-to-jpg-converter-web-based`, `png-to-jpg-converter-no-install`
-
 #### [PNG to WebP Converter](https://sopkit.github.io/png-to-webp-converter)
 - **Description**: Convert PNG to WebP to optimize your website speed. Significantly reduce file sizes while maintaining image transparency and quality. Free, fast, and secure online tool.
 - **Alternative Intents / Keywords**: `free-png-to-webp-converter-online`, `png-to-webp-converter-tool`, `png-to-webp-online`, `png-to-webp-converter-online-free`, `free-png-to-webp-converter-no-signup`, `png-to-webp-converter-tool-online`, `best-free-png-to-webp-converter`, `png-to-webp-converter-without-registration`, `online-png-to-webp-converter-free`, `png-to-webp-converter-browser-based`, `png-to-webp-converter-no-download`, `png-to-webp-converter-instant-online`, `png-to-webp-converter-privacy-focused`, `png-to-webp-converter-web-based`, `png-to-webp-converter-no-install`
@@ -282,14 +275,6 @@ Canonical Base URL: https://sopkit.github.io
 #### [Rotate Image](https://sopkit.github.io/rotate-image)
 - **Description**: Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure. No signup needed.
 - **Alternative Intents / Keywords**: `free-rotate-image-online`, `pdf-rotate`, `rotate-image-tool`, `rotate-pdf-online`, `rotate-pdf-pages`, `rotate-image-online-free`, `free-rotate-image-no-signup`, `rotate-image-tool-online`, `best-free-rotate-image`, `rotate-image-without-registration`, `online-rotate-image-free`, `rotate-image-browser-based`, `rotate-image-no-download`, `rotate-image-instant-online`, `rotate-image-privacy-focused`
-
-#### [WebP to JPG Converter](https://sopkit.github.io/webp-to-jpg-converter)
-- **Description**: Convert WebP images to JPG format for maximum compatibility across all devices and platforms. Our free online converter is fast, secure, and preserves image detail.
-- **Alternative Intents / Keywords**: `free-webp-to-jpg-converter-online`, `webp-to-jpg-converter-tool`, `webp-to-jpeg-online`, `webp-to-jpg-converter-online-free`, `free-webp-to-jpg-converter-no-signup`, `webp-to-jpg-converter-tool-online`, `best-free-webp-to-jpg-converter`, `webp-to-jpg-converter-without-registration`, `online-webp-to-jpg-converter-free`, `webp-to-jpg-converter-browser-based`, `webp-to-jpg-converter-no-download`, `webp-to-jpg-converter-instant-online`, `webp-to-jpg-converter-privacy-focused`, `webp-to-jpg-converter-web-based`, `webp-to-jpg-converter-no-install`
-
-#### [WebP to PNG Converter](https://sopkit.github.io/webp-to-png-converter)
-- **Description**: Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.
-- **Alternative Intents / Keywords**: `free-webp-to-png-converter-online`, `webp-to-png-converter-tool`, `webp-to-png-with-transparency`, `webp-to-png-converter-online-free`, `free-webp-to-png-converter-no-signup`, `webp-to-png-converter-tool-online`, `best-free-webp-to-png-converter`, `webp-to-png-converter-without-registration`, `online-webp-to-png-converter-free`, `webp-to-png-converter-browser-based`, `webp-to-png-converter-no-download`, `webp-to-png-converter-instant-online`, `webp-to-png-converter-privacy-focused`, `webp-to-png-converter-web-based`, `webp-to-png-converter-no-install`
 
 #### [Free Image Tools Online](https://sopkit.github.io/image-tools)
 - **Description**: Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.
@@ -376,7 +361,8 @@ Canonical Base URL: https://sopkit.github.io
 - **Description**: Add fun emojis to your text or convert words into emoji-rich messages for social media.
 
 #### [Random Word Generator](https://sopkit.github.io/random-word-generator)
-- **Description**: Generate random words for creative writing, brainstroming, or educational games.
+- **Description**: Generate random words instantly for creative writing, brainstorming, or vocabulary practice. Our free online tool offers customizable options for word type and quantity. Fun and fast.
+- **Alternative Intents / Keywords**: `free-random-word-generator-online`, `generate-random-stuff`, `random-color-schemes`, `random-excuse-generator`, `random-generator`, `random-word-generator-online-free`, `free-random-word-generator-no-signup`, `random-word-generator-tool-online`, `best-free-random-word-generator`, `random-word-generator-without-registration`, `online-random-word-generator-free`, `random-word-generator-browser-based`, `random-word-generator-no-download`, `random-word-generator-instant-online`, `random-word-generator-privacy-focused`
 
 #### [Resume ATS Score Checker](https://sopkit.github.io/resume-ats-score-checker)
 - **Description**: Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professionals.
@@ -412,10 +398,6 @@ Canonical Base URL: https://sopkit.github.io
 #### [Number to Word Converter](https://sopkit.github.io/number-to-word-converter)
 - **Description**: Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple formats and large numbers.
 - **Alternative Intents / Keywords**: `check-whatsapp-number`, `check-word-count`, `free-number-to-word-converter-online`, `number-pdf-pages`, `number-to-word-converter-tool`, `number-to-word-converter-online-free`, `free-number-to-word-converter-no-signup`, `number-to-word-converter-tool-online`, `best-free-number-to-word-converter`, `number-to-word-converter-without-registration`, `online-number-to-word-converter-free`, `number-to-word-converter-browser-based`, `number-to-word-converter-no-download`, `number-to-word-converter-instant-online`, `number-to-word-converter-privacy-focused`
-
-#### [Random Word Generator](https://sopkit.github.io/random-word-generator)
-- **Description**: Generate random words instantly for creative writing, brainstorming, or vocabulary practice. Our free online tool offers customizable options for word type and quantity. Fun and fast.
-- **Alternative Intents / Keywords**: `free-random-word-generator-online`, `generate-random-stuff`, `random-color-schemes`, `random-excuse-generator`, `random-generator`, `random-word-generator-online-free`, `free-random-word-generator-no-signup`, `random-word-generator-tool-online`, `best-free-random-word-generator`, `random-word-generator-without-registration`, `online-random-word-generator-free`, `random-word-generator-browser-based`, `random-word-generator-no-download`, `random-word-generator-instant-online`, `random-word-generator-privacy-focused`
 
 #### [Remove Line Breaks](https://sopkit.github.io/remove-line-breaks)
 - **Description**: Remove line breaks, carriage returns, and extra whitespace from your text instantly. Perfect for cleaning up copied content for clean formatting. Free and privacy-focused online tool.
@@ -1042,7 +1024,8 @@ Canonical Base URL: https://sopkit.github.io
 - **Description**: Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more.
 
 #### [HTML Minifier](https://sopkit.github.io/html-minifier)
-- **Description**: Compress and minify your HTML code instantly by removing comments and extra whitespace.
+- **Description**: Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times.
+- **Alternative Intents / Keywords**: `free-html-minifier-online`, `html-minifier-tool`, `optimize-html-for-web`, `html-minifier-online-free`, `free-html-minifier-no-signup`, `html-minifier-tool-online`, `best-free-html-minifier`, `html-minifier-without-registration`, `online-html-minifier-free`, `html-minifier-browser-based`, `html-minifier-no-download`, `html-minifier-instant-online`, `html-minifier-privacy-focused`, `html-minifier-web-based`, `html-minifier-no-install`
 
 #### [User Agent Parser](https://sopkit.github.io/user-agent-parser)
 - **Description**: Parse any User Agent string to detect Browser, OS, and Engine details instantly.
@@ -1072,7 +1055,8 @@ Canonical Base URL: https://sopkit.github.io
 - **Description**: Generate random names for characters, personas, or test data with gender and niche options.
 
 #### [Binary to Hex Converter](https://sopkit.github.io/binary-to-hex-converter)
-- **Description**: Convert binary strings to hexadecimal values and vice versa instantly.
+- **Description**: Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast and secure.
+- **Alternative Intents / Keywords**: `free-binary-to-hex-converter-online`, `binary-to-hex-converter-tool`, `convert-binary-to-hexadecimal`, `binary-to-hex-converter-online-free`, `free-binary-to-hex-converter-no-signup`, `binary-to-hex-converter-tool-online`, `best-free-binary-to-hex-converter`, `binary-to-hex-converter-without-registration`, `online-binary-to-hex-converter-free`, `binary-to-hex-converter-browser-based`, `binary-to-hex-converter-no-download`, `binary-to-hex-converter-instant-online`, `binary-to-hex-converter-privacy-focused`, `binary-to-hex-converter-web-based`, `binary-to-hex-converter-no-install`
 
 #### [JWT Decoder & Debugger](https://sopkit.github.io/jwt-decoder)
 - **Description**: Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature.
@@ -1104,10 +1088,6 @@ Canonical Base URL: https://sopkit.github.io
 #### [Binary to Decimal Converter](https://sopkit.github.io/binary-to-decimal-converter)
 - **Description**: Convert binary numbers to decimal (Base-10) instantly. Our free online converter helps you with computer science calculations and binary data analysis in seconds.
 - **Alternative Intents / Keywords**: `free-binary-to-decimal-converter-online`, `binary-to-decimal-converter-tool`, `binary-to-base10-converter`, `binary-to-decimal-converter-online-free`, `free-binary-to-decimal-converter-no-signup`, `binary-to-decimal-converter-tool-online`, `best-free-binary-to-decimal-converter`, `binary-to-decimal-converter-without-registration`, `online-binary-to-decimal-converter-free`, `binary-to-decimal-converter-browser-based`, `binary-to-decimal-converter-no-download`, `binary-to-decimal-converter-instant-online`, `binary-to-decimal-converter-privacy-focused`, `binary-to-decimal-converter-web-based`, `binary-to-decimal-converter-no-install`
-
-#### [Binary to HEX Converter](https://sopkit.github.io/binary-to-hex-converter)
-- **Description**: Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast and secure.
-- **Alternative Intents / Keywords**: `free-binary-to-hex-converter-online`, `binary-to-hex-converter-tool`, `convert-binary-to-hexadecimal`, `binary-to-hex-converter-online-free`, `free-binary-to-hex-converter-no-signup`, `binary-to-hex-converter-tool-online`, `best-free-binary-to-hex-converter`, `binary-to-hex-converter-without-registration`, `online-binary-to-hex-converter-free`, `binary-to-hex-converter-browser-based`, `binary-to-hex-converter-no-download`, `binary-to-hex-converter-instant-online`, `binary-to-hex-converter-privacy-focused`, `binary-to-hex-converter-web-based`, `binary-to-hex-converter-no-install`
 
 #### [Binary to Octal Converter](https://sopkit.github.io/binary-to-octal-converter)
 - **Description**: Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical students.
@@ -1232,10 +1212,6 @@ Canonical Base URL: https://sopkit.github.io
 #### [HTML Encoder](https://sopkit.github.io/html-encoder)
 - **Description**: Encode text into HTML entities instantly for secure web display. Our free online tool protects your markup by converting special characters into safe HTML-encoded strings.
 - **Alternative Intents / Keywords**: `free-html-encoder-online`, `html-encoder-tool`, `encode-text-for-html`, `html-encoder-online-free`, `free-html-encoder-no-signup`, `html-encoder-tool-online`, `best-free-html-encoder`, `html-encoder-without-registration`, `online-html-encoder-free`, `html-encoder-browser-based`, `html-encoder-no-download`, `html-encoder-instant-online`, `html-encoder-privacy-focused`, `html-encoder-web-based`, `html-encoder-no-install`
-
-#### [HTML Minifier](https://sopkit.github.io/html-minifier)
-- **Description**: Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times.
-- **Alternative Intents / Keywords**: `free-html-minifier-online`, `html-minifier-tool`, `optimize-html-for-web`, `html-minifier-online-free`, `free-html-minifier-no-signup`, `html-minifier-tool-online`, `best-free-html-minifier`, `html-minifier-without-registration`, `online-html-minifier-free`, `html-minifier-browser-based`, `html-minifier-no-download`, `html-minifier-instant-online`, `html-minifier-privacy-focused`, `html-minifier-web-based`, `html-minifier-no-install`
 
 #### [HubSpot API Key Tester](https://sopkit.github.io/api-key-tester/hubspot)
 - **Description**: Test your HubSpot API key with the contacts endpoint.
@@ -1631,10 +1607,6 @@ Canonical Base URL: https://sopkit.github.io
 #### [Parts Per Converter](https://sopkit.github.io/parts-per-converter)
 - **Description**: Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows.
 - **Alternative Intents / Keywords**: `free-parts-per-converter-online`, `parts-per-converter-tool`, `parts-per-converter-online-free`, `free-parts-per-converter-no-signup`, `parts-per-converter-tool-online`, `best-free-parts-per-converter`, `parts-per-converter-without-registration`, `online-parts-per-converter-free`, `parts-per-converter-browser-based`, `parts-per-converter-no-download`, `parts-per-converter-instant-online`, `parts-per-converter-privacy-focused`, `parts-per-converter-web-based`, `parts-per-converter-no-install`, `free-online-parts-per-converter`
-
-#### [ASCII Art Generator](https://sopkit.github.io/ascii-art-generator)
-- **Description**: Convert images into text-based ASCII art online. Customize resolution and contrast for the perfect text-based representation.
-- **Alternative Intents / Keywords**: `ascii-art-generator-online-free`, `free-ascii-art-generator-no-signup`, `ascii-art-generator-tool-online`, `best-free-ascii-art-generator`, `ascii-art-generator-without-registration`, `online-ascii-art-generator-free`, `ascii-art-generator-browser-based`, `ascii-art-generator-no-download`, `ascii-art-generator-instant-online`, `ascii-art-generator-privacy-focused`, `ascii-art-generator-web-based`, `ascii-art-generator-no-install`, `free-online-ascii-art-generator`, `ascii-art-generator-secure-online`, `ascii-art-generator-fast-processing`
 
 #### [Secure Password Generator](https://sopkit.github.io/secure-password-generator)
 - **Description**: Create cryptographically secure, random passwords online. Customize length, character sets, and verify strength locally.
@@ -2205,9 +2177,6 @@ Canonical Base URL: https://sopkit.github.io
 
 #### [Macro Calculator](https://sopkit.github.io/macro-calculator)
 - **Description**: Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance.
-
-#### [Water Intake Calculator](https://sopkit.github.io/water-intake-calculator)
-- **Description**: Find out exactly how much water you should drink daily based on your weight and exercise habits.
 
 #### [Ideal Body Weight Calculator](https://sopkit.github.io/ideal-body-weight-calculator)
 - **Description**: Determine your healthy weight range based on your height, age, and gender using standard formulas.

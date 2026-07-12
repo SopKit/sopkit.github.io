@@ -57,12 +57,12 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 ### Image Tools
 
 - [SVG to PNG Converter](https://sopkit.github.io/svg-to-png) - Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds.
-- [WEBP to PNG Converter](https://sopkit.github.io/webp-to-png) - Convert modern WEBP images to widely supported PNG format without losing quality.
-- [ICO to PNG Converter](https://sopkit.github.io/ico-to-png) - Extract PNG images from ICO icon files. Perfect for web developers and designers.
-- [JPG to PNG Converter](https://sopkit.github.io/jpg-to-png) - Convert JPG photos to PNG format to support transparency and lossless compression.
-- [PNG to JPG Converter](https://sopkit.github.io/png-to-jpg) - Convert PNG images to JPG format for smaller file sizes and web optimization.
+- [WEBP to PNG Converter](https://sopkit.github.io/webp-to-png) - Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.
+- [ICO to PNG Converter](https://sopkit.github.io/ico-to-png) - Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [JPG to PNG Converter](https://sopkit.github.io/jpg-to-png) - Convert JPG to PNG with transparency support. Maintain high image quality and convert formats instantly in your browser. Free, secure, and privacy-focused online tool.
+- [PNG to JPG Converter](https://sopkit.github.io/png-to-jpg) - Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser.
 - [SVG to JPG Converter](https://sopkit.github.io/svg-to-jpg) - Convert SVG vector files into standard JPG images with custom background colors.
-- [WEBP to JPG Converter](https://sopkit.github.io/webp-to-jpg) - Convert WEBP files to JPG format for compatibility with all devices and platforms.
+- [WEBP to JPG Converter](https://sopkit.github.io/webp-to-jpg) - Convert WebP images to JPG format for maximum compatibility across all devices and platforms. Our free online converter is fast, secure, and preserves image detail.
 - [Advanced Favicon Generator](https://sopkit.github.io/favicon-generator-pro) - Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image.
 - [Image Metadata (EXIF) Remover](https://sopkit.github.io/remove-image-metadata) - Remove sensitive GPS, camera, and author metadata from your images before sharing online.
 - [Pro Image Color Picker](https://sopkit.github.io/image-color-picker) - Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-perfect picker.
@@ -76,7 +76,6 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [EXIF Reader](https://sopkit.github.io/exif-reader) - Extract metadata and EXIF data from images including camera settings and GPS location
 - [Favicon Generator](https://sopkit.github.io/favicon-generator) - Generate favicons from text, images, or emojis for websites
 - [Flip Image](https://sopkit.github.io/flip-image) - Free flip image tool to process your data instantly with privacy-friendly browser-based workflows.
-- [ICO to PNG Converter](https://sopkit.github.io/ico-to-png-converter) - Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.
 - [Image Compressor](https://sopkit.github.io/image-compressor) - Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing.
 - [Image Converter](https://sopkit.github.io/image-converter) - Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy.
 - [Image Cropper](https://sopkit.github.io/image-cropper) - Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows.
@@ -90,18 +89,14 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [JPG to BMP Converter](https://sopkit.github.io/jpg-to-bmp-converter) - Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading files to any server.
 - [JPG to GIF Converter](https://sopkit.github.io/jpg-to-gif-converter) - Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online image converter.
 - [JPG to ICO Converter](https://sopkit.github.io/jpg-to-ico-converter) - Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signup required.
-- [JPG to PNG Converter](https://sopkit.github.io/jpg-to-png-converter) - Convert JPG to PNG with transparency support. Maintain high image quality and convert formats instantly in your browser. Free, secure, and privacy-focused online tool.
 - [JPG to WebP Converter](https://sopkit.github.io/jpg-to-webp-converter) - Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your website instantly.
 - [Logo Generator](https://sopkit.github.io/logo-generator) - Create professional logos with text, fonts, and custom colors
 - [Photo Enhancer](https://sopkit.github.io/photo-enhancer) - Enhance photo quality with AI-powered image enhancement
 - [PNG to BMP Converter](https://sopkit.github.io/png-to-bmp-converter) - Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast, secure, and privacy-focused.
 - [PNG to GIF Converter](https://sopkit.github.io/png-to-gif-converter) - Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file uploads.
 - [PNG to ICO Converter](https://sopkit.github.io/png-to-ico-converter) - Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first browser-based conversion.
-- [PNG to JPG Converter](https://sopkit.github.io/png-to-jpg-converter) - Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser.
 - [PNG to WebP Converter](https://sopkit.github.io/png-to-webp-converter) - Convert PNG to WebP to optimize your website speed. Significantly reduce file sizes while maintaining image transparency and quality. Free, fast, and secure online tool.
 - [Rotate Image](https://sopkit.github.io/rotate-image) - Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure. No signup needed.
-- [WebP to JPG Converter](https://sopkit.github.io/webp-to-jpg-converter) - Convert WebP images to JPG format for maximum compatibility across all devices and platforms. Our free online converter is fast, secure, and preserves image detail.
-- [WebP to PNG Converter](https://sopkit.github.io/webp-to-png-converter) - Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.
 - [Free Image Tools Online](https://sopkit.github.io/image-tools) - Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.
 - [Icon Generator](https://sopkit.github.io/icon-generator) - Generate app icons and favicons for Android, iOS, and web applications.
 - [Image Editor](https://sopkit.github.io/image-editor) - Edit, crop, and enhance your photos online with our free image editing tools.
@@ -128,7 +123,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Word Frequency Counter](https://sopkit.github.io/word-frequency-counter) - Calculate word density, occurrences, and text analytics with a sorted frequency table.
 - [Case Converter (Sentence, Upper, Lower)](https://sopkit.github.io/case-converter) - Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly.
 - [Emoji Text Generator](https://sopkit.github.io/emoji-text-generator) - Add fun emojis to your text or convert words into emoji-rich messages for social media.
-- [Random Word Generator](https://sopkit.github.io/random-word-generator) - Generate random words for creative writing, brainstroming, or educational games.
+- [Random Word Generator](https://sopkit.github.io/random-word-generator) - Generate random words instantly for creative writing, brainstorming, or vocabulary practice. Our free online tool offers customizable options for word type and quantity. Fun and fast.
 - [Resume ATS Score Checker](https://sopkit.github.io/resume-ats-score-checker) - Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professionals.
 - [Resume Keyword Matcher](https://sopkit.github.io/resume-keyword-matcher) - Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS.
 - [Cover Letter Generator](https://sopkit.github.io/cover-letter-generator) - Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit.
@@ -139,7 +134,6 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Line Sorter](https://sopkit.github.io/line-sorter) - Sort lists, names, or lines alphabetically or by length instantly. Our free online Line Sorter helps you organize data for cleaner documentation and code. Privacy-friendly and fast.
 - [Lorem Ipsum Generator](https://sopkit.github.io/lorem-ipsum) - Generate custom Lorem Ipsum text for your designs.
 - [Number to Word Converter](https://sopkit.github.io/number-to-word-converter) - Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple formats and large numbers.
-- [Random Word Generator](https://sopkit.github.io/random-word-generator) - Generate random words instantly for creative writing, brainstorming, or vocabulary practice. Our free online tool offers customizable options for word type and quantity. Fun and fast.
 - [Remove Line Breaks](https://sopkit.github.io/remove-line-breaks) - Remove line breaks, carriage returns, and extra whitespace from your text instantly. Perfect for cleaning up copied content for clean formatting. Free and privacy-focused online tool.
 - [Text Compare](https://sopkit.github.io/text-compare) - Compare two text snippets side-by-side to find differences instantly. Our free online Text Compare tool highlights additions, deletions, and changes with high precision. Secure and browser-based.
 - [Text Repeater](https://sopkit.github.io/text-repeater) - Repeat any text as many times as you need with our free online Text Repeater. Perfect for testing, social media, or fun content. Simple, fast, and works instantly in your browser.
@@ -310,7 +304,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [URL Slug Generator](https://sopkit.github.io/slug-generator) - Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages.
 - [JSON to TypeScript Interface](https://sopkit.github.io/json-to-typescript) - Convert JSON objects into clean TypeScript interfaces or type definitions automatically.
 - [SQL Formatter & Beautifier](https://sopkit.github.io/sql-formatter) - Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more.
-- [HTML Minifier](https://sopkit.github.io/html-minifier) - Compress and minify your HTML code instantly by removing comments and extra whitespace.
+- [HTML Minifier](https://sopkit.github.io/html-minifier) - Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times.
 - [User Agent Parser](https://sopkit.github.io/user-agent-parser) - Parse any User Agent string to detect Browser, OS, and Engine details instantly.
 - [YAML to JSON Converter](https://sopkit.github.io/yaml-to-json-converter) - Convert YAML configurations to clean JSON structures instantly. Safe & secure.
 - [JSON to YAML Converter](https://sopkit.github.io/json-to-yaml-converter) - Convert JSON configurations to clean YAML structures instantly. Safe & secure.
@@ -320,7 +314,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [XML Formatter & Beautifier](https://sopkit.github.io/xml-formatter) - Clean and format messy XML data into a readable hierarchical structure.
 - [HTML Entity Encoder/Decoder](https://sopkit.github.io/html-entity-encoder) - Encode or decode HTML entities to prevent XSS or display special characters safely.
 - [Random Name Generator](https://sopkit.github.io/random-name-generator) - Generate random names for characters, personas, or test data with gender and niche options.
-- [Binary to Hex Converter](https://sopkit.github.io/binary-to-hex-converter) - Convert binary strings to hexadecimal values and vice versa instantly.
+- [Binary to Hex Converter](https://sopkit.github.io/binary-to-hex-converter) - Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast and secure.
 - [JWT Decoder & Debugger](https://sopkit.github.io/jwt-decoder) - Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature.
 - [Amazon SES API Key Tester](https://sopkit.github.io/api-key-tester/amazon-ses) - Test your Amazon SES credentials with the send email endpoint.
 - [Anthropic Claude API Key Tester](https://sopkit.github.io/api-key-tester/anthropic) - Test your Anthropic Claude API key with the messages endpoint.
@@ -329,7 +323,6 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Attio API Key Tester](https://sopkit.github.io/api-key-tester/attio) - Test your Attio API key with the records endpoint.
 - [Binary to ASCII Converter](https://sopkit.github.io/binary-to-ascii-converter) - Transform binary code (0s and 1s) into readable ASCII text instantly. Our free online converter is fast, accurate, and works entirely in your browser. No signup required.
 - [Binary to Decimal Converter](https://sopkit.github.io/binary-to-decimal-converter) - Convert binary numbers to decimal (Base-10) instantly. Our free online converter helps you with computer science calculations and binary data analysis in seconds.
-- [Binary to HEX Converter](https://sopkit.github.io/binary-to-hex-converter) - Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast and secure.
 - [Binary to Octal Converter](https://sopkit.github.io/binary-to-octal-converter) - Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical students.
 - [Binary to Text Converter](https://sopkit.github.io/binary-to-text-converter) - Decode binary strings into readable text instantly. Our free online tool is perfect for discovering hidden messages or debugging data streams. 100% free and secure.
 - [Brevo API Key Tester](https://sopkit.github.io/api-key-tester/brevo) - Test your Brevo (Sendinblue) API key with the send email endpoint.
@@ -361,7 +354,6 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [HTML Beautifier](https://sopkit.github.io/html-beautifier) - Format and prettify your HTML code instantly. Our free online HTML Beautifier fixes indentation, improves readability, and cleans up messy markup for better web development.
 - [HTML Decoder](https://sopkit.github.io/html-decoder) - Decode HTML entities back to their original characters instantly. Our free online tool converts &amp; and similar entities into readable text for easy debugging and content cleaning.
 - [HTML Encoder](https://sopkit.github.io/html-encoder) - Encode text into HTML entities instantly for secure web display. Our free online tool protects your markup by converting special characters into safe HTML-encoded strings.
-- [HTML Minifier](https://sopkit.github.io/html-minifier) - Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times.
 - [HubSpot API Key Tester](https://sopkit.github.io/api-key-tester/hubspot) - Test your HubSpot API key with the contacts endpoint.
 - [Intercom API Key Tester](https://sopkit.github.io/api-key-tester/intercom) - Test your Intercom access token with the me endpoint.
 - [JavaScript Beautifier](https://sopkit.github.io/javascript-beautifier) - Format and prettify your JavaScript code instantly. Our free online JS Beautifier improves code readability, fixes indentation, and helps you understand complex scripts easily.
@@ -463,7 +455,6 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Pace Converter](https://sopkit.github.io/pace-converter) - Free pace converter tool to process your data instantly with privacy-friendly browser-based workflows.
 - [Page Size Checker](https://sopkit.github.io/page-size-checker) - Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows.
 - [Parts Per Converter](https://sopkit.github.io/parts-per-converter) - Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [ASCII Art Generator](https://sopkit.github.io/ascii-art-generator) - Convert images into text-based ASCII art online. Customize resolution and contrast for the perfect text-based representation.
 - [Secure Password Generator](https://sopkit.github.io/secure-password-generator) - Create cryptographically secure, random passwords online. Customize length, character sets, and verify strength locally.
 - [Password Generator](https://sopkit.github.io/password-generator) - Create strong, secure passwords instantly with customizable settings.
 - [Paypal Fee Calculator](https://sopkit.github.io/paypal-fee-calculator) - Free paypal fee calculator tool to process your data instantly with privacy-friendly browser-based workflows.
@@ -638,6 +629,5 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [BMR Calculator (Basal Metabolic Rate)](https://sopkit.github.io/bmr-calculator) - Calculate your Basal Metabolic Rate (BMR) to understand how many calories your body burns at rest.
 - [TDEE Calculator](https://sopkit.github.io/tdee-calculator) - Calculate your Total Daily Energy Expenditure (TDEE) based on your activity level and fitness goals.
 - [Macro Calculator](https://sopkit.github.io/macro-calculator) - Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance.
-- [Water Intake Calculator](https://sopkit.github.io/water-intake-calculator) - Find out exactly how much water you should drink daily based on your weight and exercise habits.
 - [Ideal Body Weight Calculator](https://sopkit.github.io/ideal-body-weight-calculator) - Determine your healthy weight range based on your height, age, and gender using standard formulas.
 - [Body Fat Percentage Calculator](https://sopkit.github.io/body-fat-calculator) - Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness.
