@@ -9579,6 +9579,13 @@
           "category": "developer"
         },
         {
+          "id": "api-key-tester",
+          "name": "API Key Tester Suite",
+          "description": "Secure, client-side, browser-based API credentials validators for developers. Verify your OpenAI, Gemini, DeepSeek, Stripe, and other API keys instantly.",
+          "route": "/api-key-tester",
+          "category": "developer"
+        },
+        {
           "id": "amazon-ses-api-key-tester",
           "name": "Amazon SES API Key Tester",
           "description": "Test your Amazon SES credentials with the send email endpoint.",

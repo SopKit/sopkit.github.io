@@ -168,7 +168,7 @@ export function getCompleteToolSeoInventory(): ToolSeoInventoryItem[] {
 			suggestedInternalLinks: [
 				tool.category === "exam-tools" ? "/exam-image-tools" : "",
 				tool.category === "calculators" ? "/student-calculators" : "",
-				tool.category === "developer" ? "/api-key-testers" : "",
+				tool.category === "developer" ? "/api-key-tester" : "",
 				...relatedRoutes,
 			].filter(Boolean),
 			recommendedCTA:
