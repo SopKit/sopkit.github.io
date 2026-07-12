@@ -22,6 +22,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Progress } from "@/components/ui/progress";
 import { toast } from "sonner";
 import { Badge } from "@/components/ui/badge";
+import AdPlacement from "@/components/ads/AdPlacement";
 
 export default function ResumeATSChecker() {
   const [resumeText, setResumeText] = useState("");
@@ -226,6 +227,10 @@ export default function ResumeATSChecker() {
                   </p>
                 </CardContent>
               </Card>
+
+              <div className="shrink-0">
+                <AdPlacement placement="in-content" slug="resume-ats-checker" category="utilities" />
+              </div>
 
               <Card className="border-primary/10 bg-card/50">
                 <CardHeader>

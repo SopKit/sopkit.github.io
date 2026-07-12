@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import { getMonetizationDecision } from "@/data/monetization";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { SHOW_SCRIPTLY_ADS } from "@/constants/config";
+import { SHOW_SCRIPTLY_ADS, ADSENSE_SLOT_IDS } from "@/constants/config";
+import AdSlot from "./AdSlot";
 
 interface AdPlacementProps {
   placement: "after-hero" | "before-tool" | "after-tool" | "in-content" | "sidebar" | "footer";
@@ -81,33 +82,36 @@ export default function AdPlacement({
   slug = "",
   category = "",
 }: AdPlacementProps) {
-  if (!SHOW_SCRIPTLY_ADS) {
-    return null;
-  }
-
   const monetization = getMonetizationDecision({ slug, category });
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
   const [adDecision, setAdDecision] = useState<"ad" | "empty">("ad");
 
   useEffect(() => {
-    // 80% chance to show a high-converting Scriptly Store ad
-    // 20% chance to hide the ad slot completely (remove slot)
-    const rand = Math.random();
-    if (rand < 0.80) {
-      setAdDecision("ad");
-      const productIndex = Math.floor(Math.random() * SCRIPTLY_PRODUCTS.length);
-      setSelectedProduct(SCRIPTLY_PRODUCTS[productIndex]);
-    } else {
-      setAdDecision("empty");
+    if (SHOW_SCRIPTLY_ADS) {
+      const rand = Math.random();
+      if (rand < 0.80) {
+        setAdDecision("ad");
+        const productIndex = Math.floor(Math.random() * SCRIPTLY_PRODUCTS.length);
+        setSelectedProduct(SCRIPTLY_PRODUCTS[productIndex]);
+      } else {
+        setAdDecision("empty");
+      }
     }
   }, []);
 
-  if (!monetization.adsAllowed || adDecision === "empty") {
+  if (!monetization.adsAllowed) {
     return null;
   }
 
-  // Render a gorgeous high-converting Scriptly Store ad
-  if (!selectedProduct) return null;
+  // Google AdSense Flow
+  if (!SHOW_SCRIPTLY_ADS) {
+    const slotId = ADSENSE_SLOT_IDS[placement];
+    if (!slotId) return null;
+    return <AdSlot slot={slotId} format="auto" label={true} />;
+  }
+
+  // Scriptly Sponsor Flow
+  if (adDecision === "empty" || !selectedProduct) return null;
 
   return (
     <div className="relative w-full my-8 p-5 sm:p-6 rounded-2xl border border-primary/20 bg-card/60 backdrop-blur-sm shadow-[0_8px_30px_rgb(0,0,0,0.02)] overflow-hidden flex flex-col md:flex-row gap-6 items-center">

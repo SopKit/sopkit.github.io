@@ -1096,6 +1096,32 @@
             ]
           },
           "article": "\\n## What is the Refund Policy Generator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "love-calculator",
+          "name": "Love Calculator",
+          "description": "Calculate relationship compatibility based on name numerology and astronomical alignment. Discover your love score instantly with our free interactive compatibility calculator.",
+          "route": "/love-calculator",
+          "extraSlugs": [
+            "name-compatibility-calculator",
+            "love-compatibility-test",
+            "couple-love-meter"
+          ],
+          "popular": true,
+          "category": "generators",
+          "features": [
+            "Input two names to calculate detailed compatibility scores",
+            "Deterministic name numerology algorithms mapping alignments",
+            "Generates beautiful relationship verdicts and tips",
+            "One-tap copy to share compatibility summaries with friends",
+            "Completely private: name parameters are processed locally in your browser"
+          ],
+          "faqs": [
+            {
+              "question": "Is the Love Calculator scientifically accurate?",
+              "answer": "This tool is a fun generator utilizing name numerology and character value hashing. It is meant for entertainment and viral sharing purposes!"
+            }
+          ]
         }
       ]
     },
@@ -3727,6 +3753,62 @@
             "hindi-typing-tool-no-download",
             "hindi-typing-tool-instant-online",
             "hindi-typing-tool-privacy-focused"
+          ]
+        },
+        {
+          "id": "fancy-text-generator",
+          "name": "Fancy Text Generator",
+          "description": "Generate stylish text, cursive fonts, gothic letters, bubble symbols, and gaming nicknames instantly. Copy and paste stylish names for Instagram, Twitter, and FreeFire.",
+          "route": "/fancy-text-generator",
+          "extraSlugs": [
+            "stylish-text-generator",
+            "font-changer-online",
+            "cool-font-generator"
+          ],
+          "popular": true,
+          "category": "text",
+          "features": [
+            "Convert plain text to 20+ unique Unicode font styles in real-time",
+            "Generate stylized gaming nicknames with borders and decoration symbols",
+            "One-tap click to copy styles directly to your clipboard",
+            "Works on Instagram, Twitter, Facebook, TikTok, Discord, and FreeFire",
+            "100% client-side: runs directly in your browser with zero data uploads"
+          ],
+          "faqs": [
+            {
+              "question": "How does the Fancy Text Generator work?",
+              "answer": "It maps standard English alphabet letters to decorative mathematical Unicode symbols. Since they are standard symbols, you can copy and paste them anywhere that supports Unicode."
+            },
+            {
+              "question": "Will the stylish text work on Instagram or Twitter bios?",
+              "answer": "Yes, standard social platforms fully support Unicode characters, making it perfect for custom bios, tweets, and comments."
+            }
+          ]
+        },
+        {
+          "id": "text-to-handwriting",
+          "name": "Text to Handwriting Converter",
+          "description": "Convert digital text into realistic handwritten pages. Customize paper styles (lined, grid, plain), handwriting fonts, and ink colors to download handwritten sheets as PNG.",
+          "route": "/text-to-handwriting",
+          "extraSlugs": [
+            "digital-text-to-handwriting",
+            "typed-text-to-handwritten",
+            "make-handwritten-pages-online"
+          ],
+          "popular": true,
+          "category": "text",
+          "features": [
+            "Convert typed text to realistic handwriting in real-time",
+            "Choose between lined notebook paper, grid school paper, or plain sheets",
+            "Supports multiple handwriting fonts (Caveat, Sacramento, Shadows Into Light)",
+            "Select between blue, black, and red gel pen inks",
+            "Download the generated handwritten sheet as a high-quality PNG image"
+          ],
+          "faqs": [
+            {
+              "question": "Can I use this tool to write assignments?",
+              "answer": "Yes, this tool can convert any digital text notes into a realistic lined paper image mimicking handwritten notes."
+            }
           ]
         }
       ]
@@ -17050,6 +17132,36 @@
             ]
           },
           "article": "\\n## What is the Profit Margin Calculator?\\n\\nThis online tool helps you handle your business or personal details quickly. Perfect for streamlining your workflow.\\n\\n## Why use SopKit?\\n\\nSopKit is committed to providing free, fast, and secure tools. No login or installation required. All computations run inside your browser client."
+        },
+        {
+          "id": "income-tax-calculator",
+          "name": "Income Tax Calculator FY 2026-27",
+          "description": "Calculate and compare your income tax under the Old vs New Tax Regimes for FY 2026-27 (AY 2027-28). Compare deductions, rebates, and slabs to find the optimal regime.",
+          "route": "/income-tax-calculator",
+          "extraSlugs": [
+            "indian-tax-calculator-2026-27",
+            "old-vs-new-tax-regime-calculator",
+            "income-tax-calculator-india"
+          ],
+          "popular": true,
+          "category": "calculators",
+          "features": [
+            "Compare Indian Old vs New Tax Regimes side-by-side automatically",
+            "Includes the latest standard deduction updates for FY 2026-27 (₹75,000 for New Regime)",
+            "Input custom investment deductions (Section 80C, 80D, HRA, and others)",
+            "Instant rebate calculation under Section 87A for both regimes",
+            "Detailed breakdown of tax liabilities and education cess"
+          ],
+          "faqs": [
+            {
+              "question": "What is the standard deduction for New Regime in FY 2026-27?",
+              "answer": "The New Tax Regime standard deduction is set to ₹75,000 for FY 2026-27."
+            },
+            {
+              "question": "How is Section 87A rebate calculated in the New Regime?",
+              "answer": "Under the New Tax Regime, if your taxable income does not exceed ₹7,00,000, your tax liability is fully rebated under Section 87A."
+            }
+          ]
         }
       ]
     },
@@ -17679,6 +17791,58 @@
           "extraSlugs": [
             "compress-pdf-to-200kb",
             "pdf-200kb-compressor"
+          ]
+        },
+        {
+          "id": "ssc-mts-photo-resizer",
+          "name": "SSC MTS Photo Resizer",
+          "description": "Resize and compress your passport photo and signature to meet the official SSC MTS online application requirements. Convert photos to 3.5 x 4.5 cm (20KB-50KB) and signatures to 10-20KB.",
+          "route": "/ssc-mts-photo-resizer",
+          "extraSlugs": [
+            "ssc-mts-photo-compressor",
+            "resize-photo-for-ssc-mts",
+            "ssc-mts-signature-resizer"
+          ],
+          "popular": true,
+          "category": "exam-tools",
+          "features": [
+            "Pre-configured specs for SSC MTS: 3.5cm x 4.5cm dimensions",
+            "Compresses photo automatically to the official 20KB - 50KB range",
+            "Resizes and compresses signatures to the official 10KB - 20KB range",
+            "100% private: images are processed locally in your browser sandbox",
+            "Download compliant JPEGs instantly with zero quality loss"
+          ],
+          "faqs": [
+            {
+              "question": "What are the photo requirements for SSC MTS?",
+              "answer": "The photograph must be in JPEG format, with dimensions of 3.5 cm (width) x 4.5 cm (height), and a file size between 20 KB and 50 KB."
+            }
+          ]
+        },
+        {
+          "id": "rrb-group-d-photo-resizer",
+          "name": "RRB Group D Photo Resizer",
+          "description": "Resize and compress your passport photo and signature for RRB Group D / Railway recruitment online applications. Pre-configured to official size and KB boundaries.",
+          "route": "/rrb-group-d-photo-resizer",
+          "extraSlugs": [
+            "rrb-group-d-photo-compressor",
+            "railway-group-d-photo-resizer",
+            "rrb-signature-resizer"
+          ],
+          "popular": true,
+          "category": "exam-tools",
+          "features": [
+            "Pre-configured specs for RRB Group D / Indian Railway applications",
+            "Compresses photos automatically to the official 20KB - 50KB range",
+            "Compresses signatures to the official 10KB - 20KB range",
+            "100% browser-based processing keeps your personal photos secure",
+            "Download optimized JPEG output ready for submission"
+          ],
+          "faqs": [
+            {
+              "question": "What is the photo size limit for RRB Group D?",
+              "answer": "The passport photograph should be between 20 KB and 50 KB, and the signature file should be between 10 KB and 20 KB in JPEG format."
+            }
           ]
         }
       ]

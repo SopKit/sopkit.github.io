@@ -17,6 +17,7 @@ import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import { GlassCard, PremiumDropZone } from "../shared/WorkspaceComponents";
 import { cn } from "@/lib/utils";
+import AdPlacement from "@/components/ads/AdPlacement";
 
 export default function PdfCompressorTool() {
 	const [selectedFile, setSelectedFile] = useState(null);
@@ -267,6 +268,10 @@ export default function PdfCompressorTool() {
 												{compressionStats.reductionPercentage}%
 											</div>
 											<div className="text-sm font-black text-emerald-600/80 tracking-[0.2em] uppercase">Size Reduction Achieved</div>
+										</div>
+
+										<div className="shrink-0 my-4">
+											<AdPlacement placement="in-content" slug="pdf-compressor" category="pdf" />
 										</div>
 
 										<Button onClick={downloadCompressedFile} size="lg" className="h-20 w-full rounded-[2.5rem] bg-emerald-500 hover:bg-emerald-600 shadow-2xl shadow-emerald-500/30 text-xl font-black gap-4 border-0">

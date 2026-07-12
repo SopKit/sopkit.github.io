@@ -118,6 +118,10 @@ Canonical Base URL: https://sopkit.github.io
 #### [Refund Policy Generator](https://sopkit.github.io/refund-policy-generator)
 - **Description**: Generate optimized refund policy generator details. Instantly copy or share customized outputs.
 
+#### [Love Calculator](https://sopkit.github.io/love-calculator)
+- **Description**: Calculate relationship compatibility based on name numerology and astronomical alignment. Discover your love score instantly with our free interactive compatibility calculator.
+- **Alternative Intents / Keywords**: `name-compatibility-calculator`, `love-compatibility-test`, `couple-love-meter`
+
 
 ### Image Tools Tools
 
@@ -454,6 +458,14 @@ Canonical Base URL: https://sopkit.github.io
 #### [Hindi Typing Tool](https://sopkit.github.io/hindi-typing-tool)
 - **Description**: Type in English and get it transliterated to Hindi in real-time. Free online Devanagari phonetic Hindi typing utility.
 - **Alternative Intents / Keywords**: `english-to-hindi-typing`, `online-hindi-keyboard`, `hindi-typing-keyboard`, `easy-hindi-typing`, `type-in-hindi-online`, `hindi-typing-tool-online-free`, `free-hindi-typing-tool-no-signup`, `hindi-typing-tool-tool-online`, `best-free-hindi-typing-tool`, `hindi-typing-tool-without-registration`, `online-hindi-typing-tool-free`, `hindi-typing-tool-browser-based`, `hindi-typing-tool-no-download`, `hindi-typing-tool-instant-online`, `hindi-typing-tool-privacy-focused`
+
+#### [Fancy Text Generator](https://sopkit.github.io/fancy-text-generator)
+- **Description**: Generate stylish text, cursive fonts, gothic letters, bubble symbols, and gaming nicknames instantly. Copy and paste stylish names for Instagram, Twitter, and FreeFire.
+- **Alternative Intents / Keywords**: `stylish-text-generator`, `font-changer-online`, `cool-font-generator`
+
+#### [Text to Handwriting Converter](https://sopkit.github.io/text-to-handwriting)
+- **Description**: Convert digital text into realistic handwritten pages. Customize paper styles (lined, grid, plain), handwriting fonts, and ink colors to download handwritten sheets as PNG.
+- **Alternative Intents / Keywords**: `digital-text-to-handwriting`, `typed-text-to-handwritten`, `make-handwritten-pages-online`
 
 
 ### PDF Tools Tools
@@ -2113,6 +2125,10 @@ Canonical Base URL: https://sopkit.github.io
 #### [Profit Margin Calculator](https://sopkit.github.io/profit-margin-calculator)
 - **Description**: Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns.
 
+#### [Income Tax Calculator FY 2026-27](https://sopkit.github.io/income-tax-calculator)
+- **Description**: Calculate and compare your income tax under the Old vs New Tax Regimes for FY 2026-27 (AY 2027-28). Compare deductions, rebates, and slabs to find the optimal regime.
+- **Alternative Intents / Keywords**: `indian-tax-calculator-2026-27`, `old-vs-new-tax-regime-calculator`, `income-tax-calculator-india`
+
 
 ### Exam Image & Form Tools Tools
 
@@ -2180,6 +2196,14 @@ Canonical Base URL: https://sopkit.github.io
 #### [PDF Compressor Under 200KB](https://sopkit.github.io/pdf-compressor-under-200kb)
 - **Description**: Compress PDF files under 200KB for exam, job, and government form uploads.
 - **Alternative Intents / Keywords**: `compress-pdf-to-200kb`, `pdf-200kb-compressor`
+
+#### [SSC MTS Photo Resizer](https://sopkit.github.io/ssc-mts-photo-resizer)
+- **Description**: Resize and compress your passport photo and signature to meet the official SSC MTS online application requirements. Convert photos to 3.5 x 4.5 cm (20KB-50KB) and signatures to 10-20KB.
+- **Alternative Intents / Keywords**: `ssc-mts-photo-compressor`, `resize-photo-for-ssc-mts`, `ssc-mts-signature-resizer`
+
+#### [RRB Group D Photo Resizer](https://sopkit.github.io/rrb-group-d-photo-resizer)
+- **Description**: Resize and compress your passport photo and signature for RRB Group D / Railway recruitment online applications. Pre-configured to official size and KB boundaries.
+- **Alternative Intents / Keywords**: `rrb-group-d-photo-compressor`, `railway-group-d-photo-resizer`, `rrb-signature-resizer`
 
 
 ### Health & Fitness Tools

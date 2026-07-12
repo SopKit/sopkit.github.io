@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
+import AdPlacement from "@/components/ads/AdPlacement";
 
 export type CalcKind =
 	| "percentage-calculator"
@@ -142,6 +143,9 @@ function GstCalc() {
 				<Input readOnly className="bg-muted/40" value={`Tax: ${tax}`} />
 				<div className="md:col-span-2">
 					<Input readOnly className="bg-muted/40" value={`Total: ${total}`} />
+				</div>
+				<div className="md:col-span-2 shrink-0">
+					<AdPlacement placement="in-content" slug="gst-calculator" category="calculators" />
 				</div>
 				<p className="text-xs text-muted-foreground md:col-span-2">
 					Exclusive amount plus GST. Confirm rounding rules on real invoices.

@@ -18,6 +18,7 @@ import { Progress } from "@/components/ui/progress";
 import { Slider } from "@/components/ui/slider";
 import { GlassCard, PremiumDropZone } from "../shared/WorkspaceComponents";
 import { cn } from "@/lib/utils";
+import AdPlacement from "@/components/ads/AdPlacement";
 
 export default function ImageCompressorTool() {
 	const [files, setFiles] = useState([]);
@@ -335,6 +336,10 @@ export default function ImageCompressorTool() {
 								</div>
 							</div>
 						</GlassCard>
+
+						<div className="shrink-0 my-4">
+							<AdPlacement placement="in-content" slug="image-compressor" category="image" />
+						</div>
 
 						<GlassCard className="p-8">
 							<div className="space-y-6">

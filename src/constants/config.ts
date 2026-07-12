@@ -18,6 +18,14 @@ export const POPULAR_TOOL_COUNT = allTools.filter((tool: any) => tool?.popular).
 
 export const SHOW_SCRIPTLY_ADS = false;
 export const GITHUB_REPO_URL = "https://github.com/SopKit/sopkit.github.io";
+export const ADSENSE_SLOT_IDS = {
+	"after-hero": "9876543210",
+	"before-tool": "9876543211",
+	"after-tool": "9876543212",
+	"in-content": "9876543213",
+	"sidebar": "9876543214",
+	"footer": "9876543215",
+};
 export const DEFAULT_META_TITLE = "SopKit - Free Online Toolkit (100% Client-Side)";
 export const DEFAULT_META_DESC = "SopKit is a free, privacy-first online utility suite. Compress images, merge PDFs, download videos, and format developer logs locally in your browser sandbox.";
 export const THEME_COLOR = "#10b981";

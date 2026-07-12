@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import AdPlacement from "@/components/ads/AdPlacement";
 
 function ExamPhotoResizerInner({
     examName = "UPSC",
@@ -473,6 +474,9 @@ function ExamPhotoResizerInner({
 
                 {/* Resized Result Output panel */}
                 <div className="md:col-span-5 space-y-6">
+                    <div className="shrink-0">
+                        <AdPlacement placement="in-content" slug="ssc-photo-resizer" category="exam" />
+                    </div>
                     <Card className="border-2 border-primary/10 bg-card/30 backdrop-blur-sm shadow-xl min-h-[300px] flex flex-col justify-between">
                         <CardContent className="p-6 flex-1 flex flex-col justify-between space-y-6">
                             <div className="space-y-4 text-center">

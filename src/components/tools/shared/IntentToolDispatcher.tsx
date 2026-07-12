@@ -41,6 +41,10 @@ const DomainToIPTool = dynamic(() => import("@/components/tools/built-ins/Domain
 const DouyinDownloader = dynamic(() => import("@/components/tools/downloaders/DouyinDownloader"), { ssr: false });
 const EspnDownloader = dynamic(() => import("@/components/tools/downloaders/EspnDownloader"), { ssr: false });
 const ExamPhotoResizer = dynamic(() => import("@/components/tools/exam/ExamPhotoResizer"), { ssr: false });
+const FancyTextGenerator = dynamic(() => import("@/components/tools/text/FancyTextGenerator"), { ssr: false });
+const LoveCalculator = dynamic(() => import("@/components/tools/calculators/LoveCalculator"), { ssr: false });
+const TaxCalculator = dynamic(() => import("@/components/tools/calculators/TaxCalculator"), { ssr: false });
+const TextToHandwriting = dynamic(() => import("@/components/tools/text/TextToHandwriting"), { ssr: false });
 const ExamPillar = dynamic(() => import("@/components/pillars/ExamPillar"), { ssr: false });
 const ExifReaderTool = dynamic(() => import("@/components/tools/image/ExifReaderTool"), { ssr: false });
 const FacebookDownloader = dynamic(() => import("@/components/tools/downloaders/FacebookDownloader"), { ssr: false });
@@ -469,6 +473,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "facebook-story-downloader": { component: FacebookStoryDownloader, props: {} },
     "facebook-video-downloader": { component: FacebookDownloader, props: {} },
     "fake-chat-generator": { component: FakeChatGeneratorTool, props: {} },
+    "fancy-text-generator": { component: FancyTextGenerator, props: {} },
     "faq-schema-generator": { component: FaqSchemaGenerator, props: {} },
     "favicon-generator": { component: FaviconGeneratorTool, props: {} },
     "fb-clip-downloader": { component: FacebookDownloader, props: {} },
@@ -519,6 +524,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "image-tools": { component: ImagePillar, props: {} },
     "imdb-video-downloader": { component: ImdbDownloader, props: {} },
     "imgur-video-downloader": { component: ImgurDownloader, props: {} },
+    "income-tax-calculator": { component: TaxCalculator, props: {} },
     "indexnow": { component: BuiltInSafeHttp, props: {"toolId": "indexnow"} },
     "indexnow-submitter": { component: BuiltInSafeHttp, props: {"toolId": "indexnow"} },
     "insta-reels-saver": { component: InstagramReelDownloader, props: {} },
@@ -567,6 +573,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "logo-generator": { component: LogoGeneratorTool, props: {} },
     "lorem-ipsum": { component: LoremIpsumGeneratorTool, props: {} },
     "lorem-ipsum-generator": { component: LoremIpsumGeneratorTool, props: {} },
+    "love-calculator": { component: LoveCalculator, props: {} },
     "m3u8-downloader": { component: M3u8Downloader, props: {} },
     "margin-calculator": { component: BuiltInCalculators, props: {"kind": "margin-calculator"} },
     "markdown-to-text": { component: MarkdownToText, props: {} },
@@ -633,6 +640,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "qr-code-generator": { component: QrGeneratorPremium, props: {} },
     "qr-code-reader": { component: QrReaderPremium, props: {} },
     "railway-exam-photo-resizer": { component: ExamPhotoResizer, props: {"examName": "Railway"} },
+    "rrb-group-d-photo-resizer": { component: ExamPhotoResizer, props: {"examName": "Railway"} },
     "random-uuid-generator": { component: UuidGeneratorTool, props: {} },
     "reactive-energy-converter": { component: UniversalUnitConverter, props: {"preset": "reactivePower"} },
     "reactive-power-converter": { component: UniversalUnitConverter, props: {"preset": "reactivePower"} },
@@ -676,6 +684,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "soundcloud-video-downloader": { component: SoundcloudDownloader, props: {} },
     "speed-converter": { component: UniversalUnitConverter, props: {"preset": "speed"} },
     "ssc-photo-resizer": { component: ExamPhotoResizer, props: {"examName": "SSC"} },
+    "ssc-mts-photo-resizer": { component: ExamPhotoResizer, props: {"examName": "SSC"} },
     "streamable-video-downloader": { component: StreamableDownloader, props: {} },
     "ted-video-downloader": { component: TedDownloader, props: {} },
     "telegram-video-downloader": { component: TelegramDownloader, props: {} },
@@ -691,6 +700,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "text-to-hex-converter": { component: BaseConverter, props: {"converterKind": "text-to-hex"} },
     "text-to-octal-converter": { component: BaseConverter, props: {"converterKind": "text-to-octal"} },
     "text-to-slug-converter": { component: SlugTool, props: {} },
+    "text-to-handwriting": { component: TextToHandwriting, props: {} },
     "text-to-speech": { component: TextToSpeechTool, props: {} },
     "text-to-tags-converter": { component: TagsFromTextTool, props: {} },
     "threads-video-downloader": { component: ThreadsDownloader, props: {} },

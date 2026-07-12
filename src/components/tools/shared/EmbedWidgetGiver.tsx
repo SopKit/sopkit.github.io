@@ -83,7 +83,7 @@ export function EmbedWidgetGiver({ toolId, toolName }: EmbedWidgetGiverProps) {
 			{isOpen && (
 				<div className="space-y-3 pt-2 border-t border-border/20 animate-in">
 					<p className="text-xs text-muted-foreground leading-relaxed">
-						Copy the code snippet below and paste it into your site's HTML editor. The tool runs 100% client-side inside your visitor's browser, consuming none of your server bandwidth, and is guaranteed **100% ad-free forever**.
+						Copy the code snippet below and paste it into your site's HTML editor. The tool runs 100% client-side inside your visitor's browser, consuming none of your server bandwidth, and is completely free to use.
 					</p>
 					<div className="relative group/embed">
 						<pre className="w-full p-4 bg-zinc-950 text-zinc-100 rounded-lg overflow-x-auto text-[11px] font-mono leading-relaxed border border-zinc-800 focus:outline-none max-h-36">

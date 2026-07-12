@@ -225,10 +225,10 @@ export default async function LandingPage() {
 								New Feature
 							</Badge>
 							<h2 className="text-3xl font-black tracking-tight text-foreground uppercase">
-								100% Ad-Free Tool Embeds
+								Seamless Tool Embeds
 							</h2>
 							<p className="text-sm text-muted-foreground leading-relaxed">
-								Integrate any of SopKit's {SITE_CONFIG.toolCountString} utilities directly onto your own website, blog, or documentation. Our embedded sandboxes run entirely in your visitor's browser, consuming zero server bandwidth and remaining **completely ad-free forever**.
+								Integrate any of SopKit's {SITE_CONFIG.toolCountString} utilities directly onto your own website, blog, or documentation. Our embedded sandboxes run entirely in your visitor's browser, consuming zero server bandwidth and remaining free to use.
 							</p>
 						</div>
 						<div className="p-6 bg-muted/30 border border-border/40 rounded-xl space-y-4 font-mono text-xs text-muted-foreground">

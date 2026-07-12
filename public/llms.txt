@@ -53,6 +53,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Payment Reminder Generator](https://sopkit.github.io/payment-reminder-generator) - Generate optimized payment reminder generator details. Instantly copy or share customized outputs.
 - [Product Description Generator](https://sopkit.github.io/product-description-generator) - Generate optimized product description generator details. Instantly copy or share customized outputs.
 - [Refund Policy Generator](https://sopkit.github.io/refund-policy-generator) - Generate optimized refund policy generator details. Instantly copy or share customized outputs.
+- [Love Calculator](https://sopkit.github.io/love-calculator) - Calculate relationship compatibility based on name numerology and astronomical alignment. Discover your love score instantly with our free interactive compatibility calculator.
 
 ### Image Tools
 
@@ -148,6 +149,8 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Unicode to Kruti Dev Converter](https://sopkit.github.io/unicode-to-kruti-dev) - Convert standard Unicode Devanagari Hindi text to legacy Kruti Dev 010 font layout text dynamically.
 - [Hinglish to Hindi Converter](https://sopkit.github.io/hinglish-to-hindi) - Convert phonetic Hinglish (Roman English) text into standard Unicode Hindi (Devanagari) dynamically.
 - [Hindi Typing Tool](https://sopkit.github.io/hindi-typing-tool) - Type in English and get it transliterated to Hindi in real-time. Free online Devanagari phonetic Hindi typing utility.
+- [Fancy Text Generator](https://sopkit.github.io/fancy-text-generator) - Generate stylish text, cursive fonts, gothic letters, bubble symbols, and gaming nicknames instantly. Copy and paste stylish names for Instagram, Twitter, and FreeFire.
+- [Text to Handwriting Converter](https://sopkit.github.io/text-to-handwriting) - Convert digital text into realistic handwritten pages. Customize paper styles (lined, grid, plain), handwriting fonts, and ink colors to download handwritten sheets as PNG.
 
 ### PDF Tools
 
@@ -609,6 +612,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [BMI + Ideal Weight Calculator](https://sopkit.github.io/bmi-ideal-weight-calculator) - Calculate your bmi + ideal weight calculator instantly. Free browser-based calculator with detailed breakdowns.
 - [Daily Water Intake Calculator](https://sopkit.github.io/water-intake-calculator) - Calculate your daily water intake calculator instantly. Free browser-based calculator with detailed breakdowns.
 - [Profit Margin Calculator](https://sopkit.github.io/profit-margin-calculator) - Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [Income Tax Calculator FY 2026-27](https://sopkit.github.io/income-tax-calculator) - Calculate and compare your income tax under the Old vs New Tax Regimes for FY 2026-27 (AY 2027-28). Compare deductions, rebates, and slabs to find the optimal regime.
 
 ### Exam Image & Form Tools
 
@@ -630,6 +634,8 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Photo Name Date Editor](https://sopkit.github.io/photo-name-date-editor) - Add name and date text to exam photos when an application form requires it.
 - [JPG to PDF for Exam Forms](https://sopkit.github.io/jpg-to-pdf-exam-forms) - Convert photos and documents to PDF for online exam forms with file-size friendly output.
 - [PDF Compressor Under 200KB](https://sopkit.github.io/pdf-compressor-under-200kb) - Compress PDF files under 200KB for exam, job, and government form uploads.
+- [SSC MTS Photo Resizer](https://sopkit.github.io/ssc-mts-photo-resizer) - Resize and compress your passport photo and signature to meet the official SSC MTS online application requirements. Convert photos to 3.5 x 4.5 cm (20KB-50KB) and signatures to 10-20KB.
+- [RRB Group D Photo Resizer](https://sopkit.github.io/rrb-group-d-photo-resizer) - Resize and compress your passport photo and signature for RRB Group D / Railway recruitment online applications. Pre-configured to official size and KB boundaries.
 
 ### Health & Fitness
 

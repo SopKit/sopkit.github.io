@@ -2,7 +2,7 @@
 
 # SopKit: Free Online Tools - Privacy-First Utility Engine
 
-### **400+ Browser-Based Tools for Image, PDF, Video, SEO, Developer & More — No Signup Required**
+### **600+ Browser-Based Tools for Image, PDF, Video, SEO, Developer & More — No Signup Required**
 
 [![GitHub stars](https://img.shields.io/github/stars/SopKit/sopkit.github.io?style=for-the-badge&color=ffd700)](https://github.com/SopKit/sopkit.github.io/stargazers)
 [![GitHub license](https://img.shields.io/github/license/SopKit/sopkit.github.io?style=for-the-badge&color=2ecc71)](https://github.com/SopKit/sopkit.github.io/blob/main/LICENSE)
@@ -41,15 +41,15 @@ SopKit's core utility logic is available as individual, zero-dependency, strictl
 
 ## What is SopKit?
 
-SopKit is a **free online tools** platform with **400+ browser-based utilities** across **12+ categories**. Every tool is designed to work instantly without registration, software installation, or file uploads to external servers. We prioritize **privacy-first processing** — most tools run entirely in your browser.
+SopKit is a **free online tools** platform with **600+ browser-based utilities** across **12+ categories**. Every tool is designed to work instantly without registration, software installation, or file uploads to external servers. We prioritize **privacy-first processing** — most tools run entirely in your browser.
 
 ### Why Choose SopKit?
 
 - **Completely Free** — No hidden fees, premium tiers, or usage limits
 - **Privacy-First** — 95% of tools process data locally; files never leave your device
 - **No Signup Required** — Start using any tool instantly with zero friction
-- **100% Ad-Free Embeds** — Embed any tool directly onto your site via iframe; guaranteed ad-free forever
-- **400+ Tools & Growing** — From image compression to SEO analysis, we cover every common workflow
+- **Iframe Embed Widgets** — Embed any tool directly onto your site via iframe, fully sandboxed
+- **600+ Tools & Growing** — From image compression to SEO analysis, we cover every common workflow
 - **Fast & Modern** — Built on Next.js 16 with optimized Core Web Vitals
 - **Mobile-Friendly** — Fully responsive design works on all devices
 
@@ -98,7 +98,7 @@ SopKit is a **free online tools** platform with **400+ browser-based utilities**
 
 ## 🚀 Features
 
-- **400+ free online tools** across 12 categories
+- **600+ free online tools** across 12 categories
 - **Privacy-first architecture** — client-side processing for most tools
 - **Structured data (JSON-LD)** — SoftwareApplication, FAQPage, HowTo, BreadcrumbList schemas on every tool page
 - **Dynamic XML sitemap** with prioritized URLs
@@ -106,7 +106,7 @@ SopKit is a **free online tools** platform with **400+ browser-based utilities**
 - **OpenSearch support** for browser search integration
 - **PWA-ready** with full manifest and service worker
 - **Responsive design** optimized for mobile, tablet, and desktop
-- **100% Ad-Free Iframe Embeds** — Integrate any utility directly onto your site (e.g. `/embed-tool/?id=pdf-editor`) with zero ads, fully sandboxed, forever.
+- **Iframe Embed Widgets** — Integrate any utility directly onto your site (e.g. `/embed-tool/?id=pdf-editor`) fully sandboxed.
 - **Google Analytics, Clarity, and AdSense** integrated
 
 ## 🏗️ Architecture
