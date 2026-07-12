@@ -15432,6 +15432,13 @@
       "description": "Various useful tools",
       "tools": [
         {
+          "id": "new-tools",
+          "name": "Newly Added Tools",
+          "description": "Track newly added tools, release updates, and codebase expansion history of SopKit.",
+          "route": "/new-tools",
+          "category": "others"
+        },
+        {
           "id": "about",
           "name": "About",
           "description": "Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.",

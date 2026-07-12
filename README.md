@@ -211,6 +211,7 @@ This project is open source. See the [LICENSE](LICENSE) file for details.
 If SopKit helps you, please star the repository — it helps others discover these free tools.
 
 [![Stargazers repo roster for @SopKit/sopkit.github.io](https://reporoster.com/stars/SopKit/sopkit.github.io)](https://github.com/SopKit/sopkit.github.io/stargazers)
+[![Forkers repo roster for @SopKit/sopkit.github.io](https://reporoster.com/forks/SopKit/sopkit.github.io)](https://github.com/SopKit/sopkit.github.io/network/members)
 
 Made with ❤️ and high-performance JS.
 
