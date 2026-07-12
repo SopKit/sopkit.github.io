@@ -213,7 +213,7 @@ export default function ToolLayout({
 	return (
 		<div className="min-h-screen bg-background text-foreground selection:bg-primary/20 ambient-glow">
 			<StructuredData tool={enrichedTool} />
-			<div className="container mx-auto px-4 pt-8">
+			<div className="container mx-auto px-4 pt-4">
 				<Suspense fallback={<div className="h-6 w-64 bg-muted/20 animate-pulse rounded" />}>
 					<BreadcrumbsEnhanced
 						customBreadcrumbs={breadcrumbs}
@@ -222,37 +222,30 @@ export default function ToolLayout({
 				</Suspense>
 			</div>
 
-			<main className="container mx-auto px-4 py-10 md:py-14 max-w-6xl space-y-16">
-				<section className="text-center space-y-6 max-w-4xl mx-auto animate-in pt-4">
-					<h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight bg-gradient-to-b from-foreground to-foreground/70">
+			<main className="container mx-auto px-4 py-4 md:py-6 max-w-6xl space-y-8">
+				<section className="text-center space-y-3 max-w-4xl mx-auto animate-in pt-1">
+					<h1 className="text-3xl md:text-5xl font-black tracking-tight leading-none bg-gradient-to-b from-foreground to-foreground/70">
 						{enrichedTool.name}
 					</h1>
-					<p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+					<p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl mx-auto">
 						{finalDescription}
 						{!finalDescription.toLowerCase().includes("privacy")
 							? defaultSuffix
 							: ""}
 					</p>
-
+					{!isCompanyPage && enrichedTool.category !== "downloaders" && (
+						<div className="flex items-center justify-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-[11px] font-semibold shadow-sm backdrop-blur-sm mx-auto w-fit">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-3.5 h-3.5 text-emerald-500">
+								<path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+							</svg>
+							<span>100% Client-Side Sandbox: Your files are processed locally and never uploaded to any server.</span>
+						</div>
+					)}
 				</section>
-
-				<div className="max-w-4xl mx-auto">
-					<AdPlacement placement="after-hero" category={tool.category} slug={tool.id} />
-				</div>
 
 				{/* Copyright Disclaimer for Downloaders */}
 				{tool.category === "downloaders" && (
 					<DownloadDisclaimer platformName={tool.name.replace(/ downloader$/i, "").replace(/ download$/i, "")} />
-				)}
-
-				{/* Zero-Upload Secure Sandbox Badge */}
-				{!isCompanyPage && tool.category !== "downloaders" && (
-					<div className="max-w-4xl mx-auto flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm -mb-6 relative z-20 w-fit">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4 text-emerald-500">
-							<path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-						</svg>
-						<span>100% Client-Side Sandbox: Your files are processed locally and never uploaded to any server.</span>
-					</div>
 				)}
 
 				{/* Tool Interaction Area */}
@@ -264,7 +257,8 @@ export default function ToolLayout({
 
 				{!isCompanyPage && (
 					<>
-						<div className="max-w-4xl mx-auto">
+						<div className="max-w-4xl mx-auto space-y-6">
+							<AdPlacement placement="after-hero" category={tool.category} slug={tool.id} />
 							<AdPlacement placement="after-tool" category={tool.category} slug={tool.id} />
 						</div>
 
