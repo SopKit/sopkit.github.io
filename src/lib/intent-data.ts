@@ -58,6 +58,26 @@ We use advanced OCR and layout analysis to ensure that your Word document looks 
             { question: "Is it really free without an email?", answer: "Yes, SopKit provides professional-grade conversion tools completely free of charge with no signup or email barriers." },
             { question: "What file formats are supported?", answer: "We support all standard PDF files and convert them to the latest .docx format compatible with Microsoft Word and Google Docs." }
         ]
+    },
+    "online-twitter-card-generator-free": {
+        parentToolId: "twitter-card-generator",
+        title: "Online Twitter Card Generator Free - Preview & Meta Tag Creator",
+        description: "Create and preview Twitter Card meta tags (Summary, Large Image) for your website. 100% free, instant, and browser-based with no registration.",
+        keywords: "online twitter card generator free, twitter card generator tool, preview twitter cards, twitter cards meta tags",
+        article: `
+## Optimize Your Social Media Preview Tags
+Twitter Cards make it possible to attach rich photos, videos, and media experiences to Tweets, helping to drive traffic to your website.
+
+### Why Twitter Cards Matter
+Tweets with rich media previews receive significantly higher click-through rates (CTR) and user engagement compared to plain text links.
+
+### How to Use the Generator
+Simply enter your site title, description, image URL, and select the card format (e.g., Summary Card or Summary Card with Large Image). Our tool will output the exact meta tag lines to paste into your website's HTML head.
+        `,
+        faqs: [
+            { question: "Is the Twitter Card Generator completely free?", answer: "Yes, our generator tool is completely free with no usage limits or sign-ups required." },
+            { question: "What are the types of Twitter Cards?", answer: "The most popular card types are Summary Card (small thumbnail image) and Summary Card with Large Image." }
+        ]
     }
 };
 

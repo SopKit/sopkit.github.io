@@ -1872,6 +1872,9 @@ Canonical Base URL: https://sopkit.github.io
 
 ### Other Tools Tools
 
+#### [Newly Added Tools](https://sopkit.github.io/new-tools)
+- **Description**: Track newly added tools, release updates, and codebase expansion history of SopKit.
+
 #### [About](https://sopkit.github.io/about)
 - **Description**: Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
 - **Alternative Intents / Keywords**: `about-online-free`, `free-about-no-signup`, `about-tool-online`, `best-free-about`, `about-without-registration`, `online-about-free`, `about-browser-based`, `about-no-download`, `about-instant-online`, `about-privacy-focused`, `about-web-based`, `about-no-install`, `free-online-about`, `about-secure-online`, `about-fast-processing`

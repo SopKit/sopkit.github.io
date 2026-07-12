@@ -177,6 +177,7 @@ const WordToPDF = dynamic(() => import("@/components/tools/pdf/WordToPDF"), { ss
 const YouTubeChannelIDFinderTool = dynamic(() => import("@/components/tools/youtube/YouTubeChannelIDFinderTool"), { ssr: false });
 const YouTubeDownloader = dynamic(() => import("@/components/tools/downloaders/YouTubeDownloader"), { ssr: false });
 const YouTubeShortsDownloader = dynamic(() => import("@/components/tools/downloaders/YouTubeShortsDownloader"), { ssr: false });
+const YoutubeThumbnailDownloader = dynamic(() => import("@/components/tools/downloaders/YoutubeThumbnailDownloader"), { ssr: false });
 
 // Registry of tool ID to dynamic component and preset props
 
@@ -751,7 +752,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "youtube-subscribe-link-generator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-tag-extractor": { component: YouTubeDownloader, props: {} },
     "youtube-tag-generator": { component: YouTubeChannelIDFinderTool, props: {} },
-    "youtube-thumbnail-downloader": { component: YouTubeDownloader, props: {} },
+    "youtube-thumbnail-downloader": { component: YoutubeThumbnailDownloader, props: {} },
     "youtube-timestamp-link-generator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-title-extractor": { component: YouTubeDownloader, props: {} },
     "youtube-title-length-checker": { component: YouTubeChannelIDFinderTool, props: {} },

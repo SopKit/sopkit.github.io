@@ -527,6 +527,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 
 ### Other Tools
 
+- [Newly Added Tools](https://sopkit.github.io/new-tools) - Track newly added tools, release updates, and codebase expansion history of SopKit.
 - [About](https://sopkit.github.io/about) - Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
 - [Blog](https://sopkit.github.io/blog) - Free Blog online. Blog allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
 - [Contact](https://sopkit.github.io/contact) - Free Contact online. Contact allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.

@@ -63,8 +63,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${BASE_URL}/how-to-format-json-properly`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${BASE_URL}/seo-tools-free-online`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${BASE_URL}/tools-for-developers`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
-		{ url: `${BASE_URL}/top-10-free-online-tools-for-seo`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
-		{ url: `${BASE_URL}/top-10-json-tools-online`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
+		{url: `${BASE_URL}/top-10-free-online-tools-for-seo`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
+		{url: `${BASE_URL}/top-10-json-tools-online`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
+		{url: `${BASE_URL}/new-tools`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
 	];
 
 	// Use site deployment date for tool pages (staggered by popularity)
@@ -74,7 +75,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			if (!route.startsWith("/")) return false;
 			if (route.includes("?")) return false;
 			if (route.startsWith("/search")) return false;
-			if (route.startsWith("/api-key-tester/")) return false;
 			return true;
 		})
 		.map((tool) => ({
