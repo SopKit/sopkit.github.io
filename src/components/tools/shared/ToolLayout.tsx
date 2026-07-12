@@ -281,28 +281,6 @@ export default function ToolLayout({
 							<EmbedWidgetGiver toolId={tool.id} toolName={tool.name} />
 						)}
 
-						{/* Contribution Notice - below fold */}
-						<section className="text-center space-y-4 max-w-2xl mx-auto p-8 border border-dashed rounded-2xl bg-primary/5" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 200px" }}>
-							<h3 className="text-lg font-bold">Tool not working or missing something?</h3>
-							<p className="text-sm text-muted-foreground">
-								This tool is open-source and community-driven. If you find a bug, have a feature request,
-								or want to contribute a new tool, please create a PR on GitHub or contact us.
-							</p>
-							<div className="flex flex-wrap items-center justify-center gap-4">
-								<Button variant="outline" size="sm" asChild className="gap-2">
-									<a href={SITE_CONFIG.githubRepoUrl} target="_blank" rel="noreferrer">
-										<Github className="h-4 w-4" />
-										Contribute on GitHub
-									</a>
-								</Button>
-								<Button variant="ghost" size="sm" asChild className="gap-2">
-									<a href="mailto:shaswatraj3@gmail.com">
-										shaswatraj3@gmail.com
-									</a>
-								</Button>
-							</div>
-						</section>
-
 						{/* Trust indicators - defer rendering (generic boilerplate) */}
 						<div style={{ contentVisibility: "auto", containIntrinsicSize: "auto 600px" }}>
 							<ToolTrust />
@@ -330,7 +308,29 @@ export default function ToolLayout({
 							</div>
 						</div>
 
-						<div className="h-16" >
+						{/* Contribution Notice - moved to absolute bottom */}
+						<section className="text-center space-y-4 max-w-2xl mx-auto p-8 border border-dashed rounded-2xl bg-primary/5 mt-16" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 200px" }}>
+							<h3 className="text-lg font-bold">Tool not working or missing something?</h3>
+							<p className="text-sm text-muted-foreground">
+								This tool is open-source and community-driven. If you find a bug, have a feature request,
+								or want to contribute a new tool, please create a PR on GitHub or contact us.
+							</p>
+							<div className="flex flex-wrap items-center justify-center gap-4">
+								<Button variant="outline" size="sm" asChild className="gap-2">
+									<a href={SITE_CONFIG.githubRepoUrl} target="_blank" rel="noreferrer">
+										<Github className="h-4 w-4" />
+										Contribute on GitHub
+									</a>
+								</Button>
+								<Button variant="ghost" size="sm" asChild className="gap-2">
+									<a href="mailto:shaswatraj3@gmail.com">
+										shaswatraj3@gmail.com
+									</a>
+								</Button>
+							</div>
+						</section>
+
+						<div className="h-16 mt-8" >
 							<p className="text-base text-muted-foreground/70 max-w-xl mx-auto">
 								Part of SopKit — {SITE_CONFIG.toolCountString} free online tools for image, PDF, video,
 								audio, text, SEO, and developer workflows. No registration required.

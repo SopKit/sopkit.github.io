@@ -252,7 +252,7 @@ export default async function LandingPage() {
 						</p>
 						<Link 
 							href="/tools" 
-							className="inline-flex h-14 items-center justify-center rounded-none bg-background text-foreground px-10 text-lg font-bold hover:bg-background/95 transition-transform border border-transparent gap-2 hover:gap-3 group/btn"
+							className="inline-flex h-14 items-center justify-center rounded-none bg-primary text-primary-foreground hover:bg-primary/90 px-10 text-lg font-bold transition-all hover:scale-[1.02] active:scale-[0.98] gap-2 hover:gap-3 group/btn relative z-10 shadow-lg"
 						>
 							View All {SITE_CONFIG.toolCountString} Tools
 							<ArrowRight className="h-5 w-5 transition-transform" />
