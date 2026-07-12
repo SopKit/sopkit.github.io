@@ -59,6 +59,7 @@
 
 ## Related Skills
 
+- **Codebase Manager** (`/codebase-manager`): Detailed workflow for registering tools, cleaning registry duplicates, mapping dispatcher entries, and type safety constraints.
 - **SEO Audit** (`/seo-audit`): Full SEO audit framework for identifying issues
 - **SEO Content Writer**: SEO-optimized blog posts and landing pages
 - **SEO/GEO**: Generative engine optimization for AI search visibility

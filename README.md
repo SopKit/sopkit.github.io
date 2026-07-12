@@ -186,6 +186,7 @@ We welcome contributions! Whether you're fixing bugs, adding new tools, or impro
 
 ## 📖 Documentation
 
+- [Newly Added Tools & Updates](https://sopkit.github.io/new-tools/)
 - [Architecture & Workflow](docs/AGENTS.md)
 - [Design System](docs/DESIGN_SYSTEM.md)
 - [Low-Hanging-Fruit SEO Strategy](docs/seo-low-hanging-fruit-strategy.md)

@@ -23,7 +23,7 @@ export const metadata = {
 		description: "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup. No signup",
 		images: ["/og-image.jpg"],
 	},
-	robots: { index: false, follow: true },
+	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {
