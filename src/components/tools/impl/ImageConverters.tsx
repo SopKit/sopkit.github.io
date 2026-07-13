@@ -3,21 +3,15 @@
 import React, { useState, useRef } from "react";
 import { 
   FileImage, 
-  RefreshCw, 
   Download, 
-  Trash2, 
   Upload, 
   Settings, 
   Shield, 
   Zap,
-  Image as ImageIcon,
-  Check,
-  Plus
+  Image as ImageIcon
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 
 export default function ImageConverters({ defaultTab = "convert" }) {

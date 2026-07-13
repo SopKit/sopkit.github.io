@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
-import { QrCode, Scan, Upload, Copy, ExternalLink, Loader2, History, Camera } from "lucide-react";
+import { Scan, Upload, Copy, ExternalLink, History, Camera } from "lucide-react";
 
 export default function QrReaderPremium() {
     const [scannedResult, setScannedResult] = useState<string | null>(null);

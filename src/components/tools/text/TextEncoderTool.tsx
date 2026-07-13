@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpDown, Code, Copy, FileText, Zap, Shield, HelpCircle, ArrowRight } from "lucide-react";
+import { Copy, FileText, Zap, Shield, HelpCircle } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -15,7 +15,6 @@ import {
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { GlassCard } from "../shared/WorkspaceComponents";
-import { cn } from "@/lib/utils";
 
 export default function TextEncoderTool() {
 	const [inputText, setInputText] = useState("");

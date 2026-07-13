@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Link from "next/link";
 import { Search, ExternalLink, Filter, Sparkles, AlertCircle } from "lucide-react";
 import { AppleNavbar } from "@/components/navigation/AppleNavbar";
 import { AppleFooter } from "@/components/footers/AppleFooter";

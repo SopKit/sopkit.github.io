@@ -1,7 +1,7 @@
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/shared/theme-provider";
 import { getAllTools, Tool } from "@/lib/tools";
-import { SITE_URL, TOOL_COUNT_STRING, TOOL_COUNT, CATEGORY_COUNT } from "@/constants/config";
+import { SITE_URL, TOOL_COUNT_STRING } from "@/constants/config";
 import "./globals.css";
 import Script from "next/script";
 import dynamic from "next/dynamic";

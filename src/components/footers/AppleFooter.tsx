@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { LanguageSelector } from "@/components/shared/LanguageSelector";
 import { usePathname } from "next/navigation";

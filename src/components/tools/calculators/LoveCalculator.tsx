@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Heart, RefreshCw, Copy, Check, Share2, Sparkles } from "lucide-react";
+import { Heart, RefreshCw, Copy, Check, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";

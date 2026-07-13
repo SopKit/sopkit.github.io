@@ -5,25 +5,18 @@ import {
 	ArrowRightIcon,
 	CheckCircleIcon,
 	DownloadIcon,
-	FolderIcon,
 	ImageIcon,
 	RefreshCwIcon,
 	SettingsIcon,
 	TrashIcon,
-	UploadIcon,
 	ZapIcon,
 	Image as ImageLucide
 } from "lucide-react";
 import { useState, useRef } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
+
+
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import {
@@ -33,11 +26,10 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
-import { Separator } from "@/components/ui/separator";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { GlassCard, PremiumDropZone, WorkspaceTitle } from "../shared/WorkspaceComponents";
+import { GlassCard, PremiumDropZone } from "../shared/WorkspaceComponents";
 import { cn } from "@/lib/utils";
 
 export default function ImageConverterTool({ defaultOutputFormat = "png" }) {

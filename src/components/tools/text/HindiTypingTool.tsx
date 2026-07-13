@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
-import { Copy, Trash2, Download, Shield, Sparkles, Check, Type, Info, Share2 } from "lucide-react";
+import React, { useState, useRef } from "react";
+import { Copy, Trash2, Download, Shield, Sparkles, Check, Type, Info } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";

@@ -4,9 +4,7 @@ import React, { useState } from "react";
 import { 
 	LayoutIcon, 
 	CopyIcon, 
-	CheckCircleIcon,
-	TrashIcon,
-	FileTextIcon 
+	CheckCircleIcon 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "../shared/WorkspaceComponents";

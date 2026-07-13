@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, HelpCircle, FileText, ArrowRight, Rss, Layers } from "lucide-react";
+import { BookOpen, FileText, ArrowRight, Rss, Layers } from "lucide-react";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { Suspense } from "react";
 

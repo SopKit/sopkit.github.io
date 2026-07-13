@@ -5,9 +5,7 @@ import {
 	ShuffleIcon, 
 	CopyIcon, 
 	CheckCircleIcon,
-	DownloadIcon,
-	TrashIcon,
-	FileTextIcon 
+	DownloadIcon 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "../shared/WorkspaceComponents";

@@ -1,11 +1,9 @@
 "use client";
 
 import {
-	CheckIcon,
 	DownloadIcon,
 	FileIcon,
 	ReplaceAll,
-	UploadIcon,
 	XIcon,
 	ZapIcon,
 	ArrowRight

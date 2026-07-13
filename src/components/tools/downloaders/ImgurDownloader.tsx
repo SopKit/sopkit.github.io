@@ -1,9 +1,9 @@
 "use client";
 
-import { AlertCircle, BookOpen, CheckCircle, Download, Globe, HelpCircle, ImageIcon, Link, Loader2, Music, Play, Shield, Star, Wrench, Zap } from "lucide-react";
+import { AlertCircle, BookOpen, CheckCircle, Download, Globe, HelpCircle, ImageIcon, Loader2, Music, Shield, Zap } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 
 export default function ImgurDownloader() {

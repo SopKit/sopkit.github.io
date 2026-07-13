@@ -5,13 +5,10 @@ import {
   FileText, 
   Linkedin, 
   Send, 
-  User, 
-  Briefcase, 
   Sparkles,
   Copy,
   Check,
   RefreshCw,
-  ArrowRight,
   Shield,
   MessageSquare
 } from "lucide-react";
@@ -19,8 +16,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Textarea } from "@/components/ui/textarea";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 
 const TEMPLATES = {

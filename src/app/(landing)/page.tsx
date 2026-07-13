@@ -3,7 +3,6 @@ import { HomeSEOContent } from "@/components/landing/HomeSEOContent";
 import { HomeFAQ } from "@/components/landing/HomeFAQ";
 import { getAllTools } from "@/lib/tools";
 import Link from "next/link";
-import { STATIC_ROUTES } from "@/lib/tools";
 import StructuredData from "@/components/shared/StructuredData";
 import { SITE_CONFIG } from "@/constants/config";
 import AdPlacement from "@/components/ads/AdPlacement";

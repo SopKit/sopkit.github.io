@@ -10,7 +10,6 @@ import {
   Briefcase, 
   ArrowRight,
   Upload,
-  Copy,
   RefreshCw,
   Shield,
   Star,

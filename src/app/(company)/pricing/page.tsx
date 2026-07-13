@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Check, ShieldCheck, Terminal, Heart, Zap, Sparkles } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { Suspense } from "react";
 

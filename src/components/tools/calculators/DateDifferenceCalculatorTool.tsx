@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "../shared/WorkspaceComponents";
-import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 
 interface DateDifferenceResult {

@@ -4,7 +4,6 @@ import { useState, useCallback, useRef, useEffect } from "react";
 import { 
     Upload, 
     Info, 
-    Download, 
     FileText,
     Loader2,
     Settings2,

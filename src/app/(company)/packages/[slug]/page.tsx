@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Package, Terminal, ArrowRight, ExternalLink, Code2, BookOpen, ChevronRight, ShieldAlert, Cpu } from "lucide-react";
+import { Package, Terminal, ArrowRight, ExternalLink, Code2, BookOpen, ChevronRight, Cpu } from "lucide-react";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { Suspense } from "react";
 

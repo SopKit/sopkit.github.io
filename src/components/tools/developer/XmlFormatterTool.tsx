@@ -5,13 +5,12 @@ import {
 	CodeIcon, 
 	CopyIcon, 
 	CheckCircleIcon,
-	TrashIcon,
-	BracesIcon 
+	TrashIcon 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "../shared/WorkspaceComponents";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 import { validate, format, minify } from "@sopkit/xml";
 

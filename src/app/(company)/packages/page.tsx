@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Package, Terminal, ArrowRight, ExternalLink, Code2, Copy, Check } from "lucide-react";
+import { ArrowRight, ExternalLink, Copy, Check } from "lucide-react";
 import { AppleNavbar } from "@/components/navigation/AppleNavbar";
 import { AppleFooter } from "@/components/footers/AppleFooter";
 import { GridPattern } from "@/components/shared/GridPattern";

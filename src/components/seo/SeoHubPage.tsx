@@ -6,7 +6,6 @@ import StructuredData from "@/components/shared/StructuredData";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import {
 	seoOpportunities,
-	type SeoOpportunity,
 } from "@/data/seo-opportunities";
 import { getAllTools } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";

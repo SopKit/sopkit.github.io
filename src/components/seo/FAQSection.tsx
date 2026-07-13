@@ -1,8 +1,6 @@
 "use client";
 
 import {
-	ChevronDown,
-	ChevronUp,
 	HelpCircle,
 	MessageCircle,
 } from "lucide-react";

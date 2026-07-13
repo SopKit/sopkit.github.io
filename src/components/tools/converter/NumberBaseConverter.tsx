@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Code, Copy, RefreshCw, Hash } from "lucide-react";
+import { Copy, RefreshCw, Hash } from "lucide-react";
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";

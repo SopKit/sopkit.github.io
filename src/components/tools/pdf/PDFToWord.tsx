@@ -8,7 +8,6 @@ import {
     FileType,
     Loader2,
     Settings2,
-    FileCheck,
     AlertCircle,
     CheckCircle2
 } from "lucide-react";

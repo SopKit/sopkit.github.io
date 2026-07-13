@@ -3,12 +3,9 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import { 
     Upload, 
-    Trash2, 
-    Download, 
-    FileText,
+    Trash2,
     Loader2,
     Settings2,
-    CheckCircle2,
     XCircle,
     LayoutGrid,
     Eye

@@ -8,7 +8,6 @@ import {
     FileText,
     Loader2,
     ShieldCheck,
-    Download,
     Eye,
     EyeOff
 } from "lucide-react";

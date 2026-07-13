@@ -4,7 +4,6 @@ import {
 	AlertCircleIcon,
 	ArrowRightIcon,
 	CheckCircleIcon,
-	CodeIcon,
 	CopyIcon,
 	ArrowLeftIcon as DecodeIcon,
 	DownloadIcon,

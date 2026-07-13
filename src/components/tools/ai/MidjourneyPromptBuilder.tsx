@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { AlertCircle, Copy, Check, Sparkles, Image as ImageIcon, RotateCcw, Sliders, Settings } from "lucide-react";
+import { Copy, Check, Sparkles, Image as ImageIcon, RotateCcw, Sliders, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";

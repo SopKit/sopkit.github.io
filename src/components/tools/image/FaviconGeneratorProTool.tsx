@@ -2,19 +2,13 @@
 
 import React, { useState, useRef } from "react";
 import { 
-	UploadIcon, 
-	DownloadIcon, 
 	ImageIcon, 
-	CheckCircleIcon, 
-	AlertCircleIcon, 
 	ZapIcon,
-	TrashIcon,
-	HelpCircleIcon
+	TrashIcon
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Switch } from "@/components/ui/switch";
-import { Label } from "@/components/ui/label";
 import { GlassCard, PremiumDropZone } from "../shared/WorkspaceComponents";
 import { toast } from "sonner";
 

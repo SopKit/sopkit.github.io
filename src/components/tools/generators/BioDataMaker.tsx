@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import { FileText, Printer, Shield, RefreshCw, Upload, Sparkles, Check, Trash2, Heart, Briefcase } from "lucide-react";
+import { Printer, Shield, RefreshCw, Upload, Trash2, Heart, Briefcase } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";

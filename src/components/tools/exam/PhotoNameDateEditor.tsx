@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Upload, Download, RefreshCw, Check, FileImage, Trash2, Shield, Eye, Type } from "lucide-react";
+import { Upload, Download, RefreshCw, FileImage, Trash2, Shield, Eye, Type } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";

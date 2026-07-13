@@ -9,7 +9,6 @@ import {
     FileCheck, 
     Scale, 
     Image as ImageIcon,
-    FileSpreadsheet,
     Scissors,
     ArrowRightLeft,
     CheckCircle2

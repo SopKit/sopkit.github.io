@@ -25,8 +25,6 @@ import {
 	Pause,
 	SkipBack,
 	SkipForward,
-	Crop,
-	Settings2,
 	CheckCircle2,
 } from "lucide-react";
 

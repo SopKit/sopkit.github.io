@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
-import { FileText, Loader2, ShieldCheck, Hammer } from "lucide-react";
+import { Loader2, ShieldCheck, Hammer } from "lucide-react";
 
 export default function PDFRepair() {
     const [file, setFile] = useState<File | null>(null);

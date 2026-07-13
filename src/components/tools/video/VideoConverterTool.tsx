@@ -21,7 +21,6 @@ import {
 	Film,
 	Settings2,
 	CheckCircle2,
-	AlertCircle,
 } from "lucide-react";
 
 const OUTPUT_FORMATS = [

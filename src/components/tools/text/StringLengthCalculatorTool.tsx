@@ -3,8 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { 
 	TypeIcon, 
-	TrashIcon,
-	LayoutGridIcon
+	TrashIcon
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "../shared/WorkspaceComponents";

@@ -1,6 +1,6 @@
 "use client";
 
-import { Copy, Trash2, Download, Check, RefreshCw, Type, Hash } from "lucide-react";
+import { Copy, Trash2, Download, Check, Type } from "lucide-react";
 import { useState, useCallback, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";

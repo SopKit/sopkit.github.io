@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ArrowRightLeft, Copy, Trash2, Clipboard, Shield, Check, Type } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRightLeft, Copy, Trash2, Shield, Check, Type } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";

@@ -1,7 +1,5 @@
 import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { KeyRound, ShieldCheck, ChevronRight } from "lucide-react";
 import { getAllTools } from "@/lib/tools";
 

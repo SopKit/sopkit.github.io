@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Upload, Download, RefreshCw, FileText, Check, AlertCircle, Trash2, Shield, Settings } from "lucide-react";
+import { Download, RefreshCw, FileText, Check, AlertCircle, Trash2, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 
 export default function PdfCompressor200kb() {

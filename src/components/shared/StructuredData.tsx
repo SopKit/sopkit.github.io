@@ -1,4 +1,4 @@
-import { getAllCategories, getAllTools, type Tool, type Category } from "@/lib/tools";
+import { getAllCategories, getAllTools, type Tool } from "@/lib/tools";
 
 const BASE_URL = "https://sopkit.github.io";
 const allCategories = getAllCategories();

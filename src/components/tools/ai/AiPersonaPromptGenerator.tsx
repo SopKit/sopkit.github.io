@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Copy, Check, Sparkles, User, MessageSquare, ShieldCheck, RotateCcw, Award } from "lucide-react";
+import { Copy, Check, User, MessageSquare, ShieldCheck, RotateCcw, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";

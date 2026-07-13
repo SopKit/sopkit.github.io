@@ -5,12 +5,11 @@ import {
 	SmileIcon, 
 	CopyIcon, 
 	CheckCircleIcon,
-	TrashIcon,
-	ZapIcon 
+	TrashIcon 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "../shared/WorkspaceComponents";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 
 export default function EmojiTextGeneratorTool() {

@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Copy, Check, Sparkles, Smile, RefreshCw } from "lucide-react";
+import { Copy, Check, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import { toast } from "sonner";
 
 // Unicode maps for font styles
 const fontMaps: Record<string, (text: string) => string> = {

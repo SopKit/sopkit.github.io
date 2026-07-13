@@ -1,8 +1,7 @@
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Info, Layers, Wrench, Sparkles, ShieldCheck } from "lucide-react";
-import { SITE_CONFIG } from "@/constants/config";
+import { Calendar, Info, Layers, Wrench } from "lucide-react";
 
 export const metadata = {
 	title: "Newly Added Tools & Changelog - SopKit",

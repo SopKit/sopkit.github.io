@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import { Upload, CheckCircle2, XCircle, FileImage, Trash2, Shield, FileText, Check, AlertCircle, HelpCircle } from "lucide-react";
+import { Upload, CheckCircle2, XCircle, FileImage, Trash2, Shield, FileText, Check, HelpCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";

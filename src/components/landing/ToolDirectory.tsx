@@ -1,9 +1,8 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { Search, ChevronRight, Zap, RefreshCw, LayoutGrid } from "lucide-react";
+import { Search, ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { Badge } from "@/components/ui/button";
 
 interface Tool {
 	id: string;

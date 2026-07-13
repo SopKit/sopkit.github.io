@@ -3,9 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { 
-    ImageIcon, 
     Maximize, 
-    Minimize, 
     Zap, 
     Layers, 
     Eraser, 

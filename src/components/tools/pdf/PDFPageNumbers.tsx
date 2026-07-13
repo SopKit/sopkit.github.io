@@ -10,7 +10,6 @@ import {
     Settings2,
     AlignLeft,
     AlignCenter,
-    AlignRight,
     ArrowUp,
     ArrowDown
 } from "lucide-react";
@@ -19,7 +18,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 
 declare global {

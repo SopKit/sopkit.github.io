@@ -9,9 +9,6 @@ import {
     FileText,
     Loader2,
     Settings2,
-    ArrowRightLeft,
-    CheckCircle2,
-    Circle,
     LayoutGrid
 } from "lucide-react";
 import { Button } from "@/components/ui/button";

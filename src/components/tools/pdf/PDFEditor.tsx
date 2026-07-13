@@ -4,7 +4,6 @@ import { useState, useCallback, useRef, useEffect } from "react";
 import { 
     Upload, 
     Type, 
-    Download, 
     FileText,
     Loader2,
     Settings2,
@@ -19,8 +18,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 
 declare global {
     interface Window {

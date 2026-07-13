@@ -8,7 +8,6 @@ import { useEffect, useState, Suspense } from "react";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { AuthButton } from "./AuthButton";
 import { Input } from "@/components/ui/input";
-import { cn } from "@/lib/utils";
 import { STATIC_ROUTES } from "@/lib/tools";
 import { GITHUB_REPO_URL } from "@/constants/config";
 

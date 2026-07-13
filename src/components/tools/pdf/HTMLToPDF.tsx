@@ -1,15 +1,12 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { 
-    Upload, 
     Code, 
-    Download, 
-    FileText,
+    Download,
     Loader2,
     Settings2,
     Eye,
-    Globe,
     Monitor
 } from "lucide-react";
 import { Button } from "@/components/ui/button";

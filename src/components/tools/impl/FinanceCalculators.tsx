@@ -2,23 +2,16 @@
 
 import React, { useState, useMemo } from "react";
 import { 
-  Calculator, 
   IndianRupee, 
   TrendingUp, 
   PieChart, 
-  Wallet, 
   Briefcase,
-  ArrowRight,
-  Info,
-  Shield,
-  RefreshCw
+  Info
 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Progress } from "@/components/ui/progress";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function FinanceCalculators({ defaultTab = "sip" }) {
   const [activeTab, setActiveTab] = useState(defaultTab);

@@ -10,11 +10,8 @@ import {
 	Maximize2,
 	Minimize2,
 	RotateCcw,
-	Search,
 	Settings,
-	Shield,
 	Upload,
-	Zap,
 } from "lucide-react";
 import { useCallback, useRef, useState, useEffect } from "react";
 import { Alert, AlertDescription } from "@/components/ui/alert";

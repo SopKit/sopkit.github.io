@@ -3,12 +3,10 @@
 import React, { useState, useEffect } from "react";
 import { 
 	SearchIcon, 
-	InfoIcon, 
 	MonitorIcon, 
 	TerminalIcon, 
 	ShieldIcon 
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { GlassCard } from "../shared/WorkspaceComponents";
 
 export default function UserAgentParserTool() {

@@ -5,8 +5,7 @@ import {
 	CodeIcon, 
 	CopyIcon, 
 	CheckCircleIcon,
-	TrashIcon,
-	FileTextIcon 
+	TrashIcon 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "../shared/WorkspaceComponents";

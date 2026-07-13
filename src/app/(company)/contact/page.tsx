@@ -1,6 +1,5 @@
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import { Button } from "@/components/ui/button";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {

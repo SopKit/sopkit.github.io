@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
-import { getToolByRoute, getToolById, getRelatedTools } from "@/lib/tools";
+import { getToolByRoute, getToolById } from "@/lib/tools";
 import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
 
 const relatedToolIds = [

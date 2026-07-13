@@ -6,7 +6,6 @@ import {
 	CopyIcon, 
 	CheckCircleIcon,
 	ClockIcon,
-	ArrowRightIcon,
 	SettingsIcon
 } from "lucide-react";
 import { Button } from "@/components/ui/button";

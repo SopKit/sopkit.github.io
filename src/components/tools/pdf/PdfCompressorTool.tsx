@@ -1,17 +1,13 @@
 "use client";
 
 import {
-	CheckCircleIcon,
 	DownloadIcon,
 	FileIcon,
 	MinimizeIcon,
 	RefreshCwIcon,
-	UploadIcon,
-	ZapIcon,
-	ArrowRight
+	ZapIcon
 } from "lucide-react";
 import { useRef, useState } from "react";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";

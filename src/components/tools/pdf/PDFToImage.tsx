@@ -4,7 +4,6 @@ import { useState, useCallback, useRef, useEffect } from "react";
 import { 
     Upload, 
     FileImage as FileImageIcon, 
-    X, 
     Download, 
     FileText,
     Loader2,

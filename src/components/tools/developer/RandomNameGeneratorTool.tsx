@@ -6,7 +6,6 @@ import {
 	CopyIcon, 
 	CheckCircleIcon,
 	DownloadIcon,
-	TrashIcon,
 	ShuffleIcon 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";

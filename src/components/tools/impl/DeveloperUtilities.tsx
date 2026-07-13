@@ -1,25 +1,18 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 import { 
   Code, 
   Terminal, 
-  Database, 
-  FileJson, 
-  Globe, 
   Shield, 
   Copy, 
   RefreshCw, 
-  Zap,
-  Check,
-  Search,
-  Type
+  Zap
 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 
 export default function DeveloperUtilities({ defaultTab = "uuid" }) {
