@@ -8,6 +8,7 @@ import StructuredData from "@/components/shared/StructuredData";
 import { SITE_CONFIG } from "@/constants/config";
 import AdPlacement from "@/components/ads/AdPlacement";
 import { Badge } from "@/components/ui/badge";
+import { ToolDirectory } from "@/components/landing/ToolDirectory";
 import {
 	Image as ImageIcon,
 	FileText,
@@ -160,62 +161,8 @@ export default async function LandingPage() {
 					</div>
 				</section>
 
-				{/* 8 Featured Tools */}
-				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_600px]">
-					<h2 className="text-3xl font-black tracking-tight text-foreground mb-8 uppercase">
-						Featured Tools
-					</h2>
-					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-						{featuredTools.map((tool: any) => (
-							<ToolCard key={tool.id} tool={tool} />
-						))}
-					</div>
-				</section>
-
-				{/* Popular for Indian Forms */}
-				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_400px]">
-					<h2 className="text-3xl font-black tracking-tight text-foreground mb-2 uppercase">
-						Popular for Indian Forms
-					</h2>
-					<p className="text-muted-foreground mb-8">
-						Quick tools to resize and compress photos, signatures, and PDFs for UPSC, SSC, NEET, JEE, and PAN Card portals.
-					</p>
-					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-						{indianFormTools.map((tool: any) => (
-							<ToolCard key={tool.id} tool={tool} />
-						))}
-					</div>
-				</section>
-
-				{/* Developer Tools */}
-				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_400px]">
-					<h2 className="text-3xl font-black tracking-tight text-foreground mb-2 uppercase">
-						Developer Tools
-					</h2>
-					<p className="text-muted-foreground mb-8">
-						Format code, encode Base64 strings, generate cryptographically secure UUIDs, and optimize stylesheets.
-					</p>
-					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-						{developerTools.map((tool: any) => (
-							<ToolCard key={tool.id} tool={tool} />
-						))}
-					</div>
-				</section>
-
-				{/* PDF Tools */}
-				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_400px]">
-					<h2 className="text-3xl font-black tracking-tight text-foreground mb-2 uppercase">
-						PDF Tools
-					</h2>
-					<p className="text-muted-foreground mb-8">
-						Compress PDFs to exact limits, split pages, merge files, and format PDFs for public government uploads.
-					</p>
-					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-						{pdfTools.map((tool: any) => (
-							<ToolCard key={tool.id} tool={tool} />
-						))}
-					</div>
-				</section>
+				{/* 560+ Live Tool Directory Search & Index Grid */}
+				<ToolDirectory tools={allTools} />
 
 				{/* Ad-Free Embed Feature Highlight */}
 				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_300px]">

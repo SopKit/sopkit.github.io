@@ -8,9 +8,35 @@ import AdPlacement from "@/components/ads/AdPlacement";
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import { useEffect } from "react";
+
 function EmbedToolContent() {
 	const searchParams = useSearchParams();
 	const toolId = searchParams.get("id") || "";
+	const themeParam = searchParams.get("theme") || "dark";
+	const accentParam = searchParams.get("accent") || "blue";
+
+	useEffect(() => {
+		const htmlEl = document.documentElement;
+		if (themeParam === "light") {
+			htmlEl.classList.remove("dark");
+			htmlEl.classList.add("light");
+		} else {
+			htmlEl.classList.remove("light");
+			htmlEl.classList.add("dark");
+		}
+
+		const accentColors: Record<string, string> = {
+			blue: "210 100% 58%",
+			purple: "270 95% 60%",
+			emerald: "150 90% 40%",
+			orange: "25 95% 50%",
+		};
+
+		if (accentColors[accentParam]) {
+			htmlEl.style.setProperty("--primary", accentColors[accentParam]);
+		}
+	}, [themeParam, accentParam]);
 
 	if (!toolId) {
 		return (
