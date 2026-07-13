@@ -284,25 +284,150 @@
 	border-radius: 1.25rem !important; /* modern 20px corners */
 }
 
-/* Upload & Dropzone Areas */
-.border-dashed {
-	border-radius: 1.25rem !important;
-	background: radial-gradient(circle at center, hsl(var(--primary) / 0.03), transparent) !important;
-	border-color: hsl(var(--primary) / 0.2) !important;
-	transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+/* Avoid nested double-padding squishing tool contents */
+main section.bg-card\/30 > div > div.space-y-6.p-6,
+main section.bg-card\/30 > div > div[class*="p-6"] {
+	padding: 0 !important;
+}
+main section.bg-card\/30 > div > div:first-child {
+	padding: 0 !important;
 }
 
-.border-dashed:hover {
+/* Make nested cards inside the main tool container completely borderless and transparent */
+main section [data-slot="card"],
+main section div[class*="bg-card"] {
+	background-color: transparent !important;
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+}
+
+/* Premium Section Headings inside tool area */
+main section [data-slot="card-header"] {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	padding-top: 0 !important;
+	border-bottom: 1px solid hsl(var(--border) / 0.4) !important;
+	margin-bottom: 1.5rem !important;
+	padding-bottom: 0.75rem !important;
+}
+main section [data-slot="card-title"] {
+	font-size: 1.25rem !important;
+	font-weight: 800 !important;
+	letter-spacing: -0.025em !important;
+	color: hsl(var(--foreground)) !important;
+}
+main section [data-slot="card-description"] {
+	font-size: 0.825rem !important;
+	color: hsl(var(--muted-foreground)) !important;
+	margin-top: 0.25rem !important;
+}
+main section [data-slot="card-content"] {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+/* Upload & Dropzone Areas: clean, flexible, centered */
+main section div[class*="border-dashed"] {
+	border: 2px dashed hsl(var(--primary) / 0.3) !important;
+	background: hsl(var(--card) / 0.15) !important;
+	border-radius: 16px !important;
+	padding: 2.5rem 1.5rem !important;
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: center !important;
+	justify-content: center !important;
+	text-align: center !important;
+	cursor: pointer !important;
+	transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+main section div[class*="border-dashed"]:hover {
+	border-color: hsl(var(--primary)) !important;
+	background: hsl(var(--primary) / 0.05) !important;
+	transform: scale(0.99);
+}
+
+/* Premium Transparent inputs, textareas, and selectors */
+main section textarea,
+main section input[type="text"],
+main section input[type="number"],
+main section select {
+	background-color: hsl(var(--background) / 0.4) !important;
+	border: 1px solid hsl(var(--border) / 0.8) !important;
+	border-radius: 12px !important;
+	padding: 0.75rem 1rem !important;
+	font-size: 0.875rem !important;
+	color: hsl(var(--foreground)) !important;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02) !important;
+	transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+main section textarea:focus,
+main section input[type="text"]:focus,
+main section input[type="number"]:focus,
+main section select:focus {
+	border-color: hsl(var(--primary)) !important;
+	background-color: hsl(var(--background) / 0.6) !important;
+	box-shadow: 0 0 0 3px hsl(var(--primary) / 0.15), inset 0 2px 4px rgba(0, 0, 0, 0.01) !important;
+	outline: none !important;
+}
+
+/* Segmented Tabs controls as floating capsules */
+main section [data-slot="tabs-list"] {
+	background-color: hsl(var(--background) / 0.4) !important;
+	border: 1px solid hsl(var(--border) / 0.4) !important;
+	padding: 4px !important;
+	border-radius: 14px !important;
+	display: flex !important;
+	gap: 2px !important;
+}
+main section [data-slot="tabs-trigger"] {
+	border-radius: 10px !important;
+	font-weight: 600 !important;
+	font-size: 0.825rem !important;
+	color: hsl(var(--muted-foreground)) !important;
+	transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+main section [data-slot="tabs-trigger"]:hover {
+	color: hsl(var(--foreground)) !important;
+	background-color: hsl(var(--foreground) / 0.03) !important;
+}
+main section [data-slot="tabs-trigger"][data-state="active"] {
+	background-color: hsl(var(--primary)) !important;
+	color: hsl(var(--primary-foreground)) !important;
+	box-shadow: 0 4px 12px hsl(var(--primary) / 0.25) !important;
+}
+
+/* Outline and secondary buttons */
+main section button[class*="variant-outline"],
+main section button:not([class*="bg-primary"]):not([class*="bg-destructive"]):not([class*="bg-emerald"]) {
+	background-color: hsl(var(--background) / 0.4) !important;
+	border: 1px solid hsl(var(--border) / 0.8) !important;
+	border-radius: 10px !important;
+	color: hsl(var(--foreground)) !important;
+	font-weight: 600 !important;
+	transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+main section button[class*="variant-outline"]:hover,
+main section button:not([class*="bg-primary"]):not([class*="bg-destructive"]):not([class*="bg-emerald"]):hover {
+	background-color: hsl(var(--foreground) / 0.03) !important;
 	border-color: hsl(var(--primary) / 0.4) !important;
-	background: radial-gradient(circle at center, hsl(var(--primary) / 0.06), transparent) !important;
+	color: hsl(var(--primary)) !important;
+	transform: translateY(-1px);
 }
 
-/* Header bars inside tool interaction area */
-div[class*="bg-card/50"].p-6.border {
-	border-radius: 1rem !important;
-	background-color: hsl(var(--card) / 0.4) !important;
-	border-color: hsl(var(--border) / 0.6) !important;
-	box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05) !important;
+/* Primary Action Buttons */
+main section button[class*="bg-primary"] {
+	border-radius: 10px !important;
+	font-weight: 600 !important;
+	box-shadow: 0 4px 14px hsl(var(--primary) / 0.3) !important;
+	transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+main section button[class*="bg-primary"]:hover {
+	box-shadow: 0 6px 20px hsl(var(--primary) / 0.45) !important;
+	transform: translateY(-1px);
 }
 
 /* Badge pills */
