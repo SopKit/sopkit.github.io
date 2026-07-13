@@ -20,6 +20,7 @@ import AdPlacement from "@/components/ads/AdPlacement";
 import { getSeoOpportunityByRoute } from "@/data/seo-opportunities";
 
 import { EmbedWidgetGiver } from "./EmbedWidgetGiver";
+import { ToolToolbar } from "./ToolToolbar";
 
 interface ToolArticleProps {
 	content?: string;
@@ -241,6 +242,11 @@ export default function ToolLayout({
 							<span>100% Client-Side Sandbox: Your files are processed locally and never uploaded to any server.</span>
 						</div>
 					)}
+					{!isCompanyPage && (
+						<div className="pt-2">
+							<ToolToolbar toolId={tool.id} toolRoute={tool.route} toolName={tool.name} />
+						</div>
+					)}
 				</section>
 
 				{/* Copyright Disclaimer for Downloaders */}
@@ -282,6 +288,17 @@ export default function ToolLayout({
 						{/* Embeddable Growth Widget */}
 						{!isCompanyPage && (
 							<EmbedWidgetGiver toolId={tool.id} toolName={tool.name} />
+						)}
+
+						{/* Related Tools - rendered just after embed section */}
+						{finalRelatedTools.length > 0 && (
+							<div style={{ contentVisibility: "auto", containIntrinsicSize: "auto 800px" }} className="py-2">
+								<RelatedTools
+									currentTool={tool.id}
+									category={tool.category}
+									tools={finalRelatedTools}
+								/>
+							</div>
 						)}
 
 						{/* Trust indicators - defer rendering (generic boilerplate) */}
@@ -371,15 +388,6 @@ export default function ToolLayout({
 							<AdPlacement placement="footer" category={tool.category} slug={tool.id} />
 						</div>
 
-						{finalRelatedTools.length > 0 && (
-							<div style={{ contentVisibility: "auto", containIntrinsicSize: "auto 800px" }}>
-								<RelatedTools
-									currentTool={tool.id}
-									category={tool.category}
-									tools={finalRelatedTools}
-								/>
-							</div>
-						)}
 					</>
 				)}
 			</main>
