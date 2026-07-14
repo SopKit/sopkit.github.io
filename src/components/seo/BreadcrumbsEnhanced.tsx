@@ -3,6 +3,7 @@
 import { ChevronRight, Home, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 export interface Breadcrumb {
 	name: string;
@@ -31,11 +32,13 @@ const generateBreadcrumbSchema = (breadcrumbs: Breadcrumb[]) => {
 	};
 };
 
-export default function BreadcrumbsEnhanced({
+function BreadcrumbsInner({
 	customBreadcrumbs = [],
 	homeText = "Home",
 	suppressSchema = false,
-}: BreadcrumbsEnhancedProps) {
+	variant = "default",
+	className = "",
+}: BreadcrumbsEnhancedProps & { variant?: "default" | "pills"; className?: string }) {
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
 	const lang = searchParams.get("lang") || "en";
@@ -228,5 +231,13 @@ export function RichBreadcrumbs({
 				</ol>
 			</nav>
 		</>
+	);
+}
+
+export default function BreadcrumbsEnhanced(props: BreadcrumbsEnhancedProps & { variant?: "default" | "pills"; className?: string }) {
+	return (
+		<Suspense fallback={<div className="h-6 w-48 bg-muted/10 animate-pulse rounded-md mb-6" />}>
+			<BreadcrumbsInner {...props} />
+		</Suspense>
 	);
 }

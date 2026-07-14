@@ -14,6 +14,11 @@ const nextConfig = {
 		ignoreBuildErrors: true,
 	},
 
+	// Strips console logs in production to shrink package sizes and speed up loads
+	compiler: {
+		removeConsole: process.env.NODE_ENV === "production",
+	},
+
 	// Advanced image optimization
 	images: {
 		unoptimized: true,

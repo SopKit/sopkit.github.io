@@ -326,7 +326,7 @@ export default function RootLayout({
 				</Script>
 				<Script
 					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1828915420581549"
-					strategy="afterInteractive"
+					strategy="lazyOnload"
 					crossOrigin="anonymous"
 				/>
 				{/* Clarity Tracking Code */}

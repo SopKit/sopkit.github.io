@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import SearchContent from "./SearchContent";
 import { SITE_CONFIG } from "@/constants/config";
 import toolsData from "@/constants/tools.json";
@@ -77,10 +78,12 @@ export default async function SearchPage() {
 						On first SSR/hydration it renders the full enriched tool list — crawlers see it,
 						users can interact with it, and there's no duplicate content.
 					*/}
-					<SearchContent
-						initialTools={enrichedTools}
-						initialCategories={populatedCategories}
-					/>
+					<Suspense fallback={<div className="h-48 flex items-center justify-center text-muted-foreground">Loading search engine...</div>}>
+						<SearchContent
+							initialTools={enrichedTools}
+							initialCategories={populatedCategories}
+						/>
+					</Suspense>
 				</div>
 			</main>
 		</div>
