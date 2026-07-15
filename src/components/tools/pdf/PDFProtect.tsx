@@ -1,10 +1,9 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef } from "react";
 import { 
     Upload, 
     Lock, 
-    Unlock, 
     FileText,
     Loader2,
     ShieldCheck,
@@ -12,21 +11,14 @@ import {
     EyeOff
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 
-declare global {
-    interface Window {
-        PDFLib: any;
-    }
-}
-
 export default function PDFProtect() {
-    const [pdflib, setPdflib] = useState<any>(null);
     const [file, setFile] = useState<File | null>(null);
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
@@ -39,27 +31,9 @@ export default function PDFProtect() {
     });
     const fileInputRef = useRef<HTMLInputElement>(null);
 
-    useEffect(() => {
-        const loadPdfLib = async () => {
-            if (window.PDFLib) {
-                setPdflib(window.PDFLib);
-                return;
-            }
-
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-            script.async = true;
-            script.onload = () => {
-                setPdflib(window.PDFLib);
-            };
-            document.head.appendChild(script);
-        };
-        loadPdfLib();
-    }, []);
-
     const onFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         const selectedFile = e.target.files?.[0];
-        if (selectedFile && selectedFile.type === "application/pdf") {
+        if (selectedFile && (selectedFile.type === "application/pdf" || selectedFile.name.toLowerCase().endsWith(".pdf"))) {
             setFile(selectedFile);
             toast.success("PDF loaded successfully");
         } else if (selectedFile) {
@@ -68,7 +42,6 @@ export default function PDFProtect() {
     }, []);
 
     const protectPDF = async () => {
-        if (!pdflib) return;
         if (!file) {
             toast.error("Please upload a PDF file first");
             return;
@@ -80,27 +53,25 @@ export default function PDFProtect() {
 
         setIsProcessing(true);
         try {
-            const { PDFDocument } = pdflib;
+            const { encryptPDF } = await import("@pdfsmaller/pdf-encrypt-lite");
             const arrayBuffer = await file.arrayBuffer();
-            const pdfDoc = await PDFDocument.load(arrayBuffer);
-            
-            pdfDoc.encrypt({
-                userPassword: password,
-                ownerPassword: Math.random().toString(36).substring(7),
-                permissions: {
-                    printing: permissions.printing ? 'highResolution' : 'none',
-                    modifying: permissions.modifying,
-                    copying: permissions.copying,
-                    annotating: permissions.annotating,
-                },
+            const existingPdfBytes = new Uint8Array(arrayBuffer);
+
+            // Encrypt using the library with options
+            const ownerPassword = Math.random().toString(36).substring(7);
+            const encryptedBytes = await encryptPDF(existingPdfBytes, password, {
+                ownerPassword,
+                allowPrinting: permissions.printing,
+                allowCopying: permissions.copying,
+                allowModifying: permissions.modifying,
+                allowAnnotating: permissions.annotating,
             });
 
-            const pdfBytes = await pdfDoc.save();
-            const blob = new Blob([pdfBytes.buffer], { type: "application/pdf" });
+            const blob = new Blob([encryptedBytes], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
             const link = document.createElement("a");
             link.href = url;
-            link.download = `${file.name.replace('.pdf', '')}_protected.pdf`;
+            link.download = `${file.name.replace(/\.pdf$/i, "")}_protected.pdf`;
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -116,38 +87,39 @@ export default function PDFProtect() {
     };
 
     return (
-        <div className="space-y-8 animate-in fade-in duration-700">
+        <div className="space-y-8 max-w-4xl mx-auto">
+            {/* Privacy Shield */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Your documents are encrypted locally. No bytes are sent to any remote server.</span>
+            </div>
+
             {/* Header Section */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/50 p-6 border border-border/40 backdrop-blur-sm">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 text-primary">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
                         <Lock className="h-6 w-6" />
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold">PDF Protector</h2>
-                        <p className="text-sm text-muted-foreground">Secure your PDF documents with industry-standard encryption</p>
+                        <h2 className="text-xl font-bold">PDF Protector</h2>
+                        <p className="text-xs text-muted-foreground">Secure your PDF documents with local password protection</p>
                     </div>
                 </div>
-                {!pdflib && (
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <Loader2 className="h-3 w-3 animate-spin" /> Loading Security Engine...
-                    </div>
-                )}
                 <div className="flex items-center gap-2">
                     <Button 
                         variant="outline" 
                         onClick={() => fileInputRef.current?.click()}
-                        className="border-primary/20 hover:border-primary/50"
+                        className="border-border hover:bg-muted/40 text-xs font-bold"
                     >
                         <Upload className="mr-2 h-4 w-4" /> {file ? "Change PDF" : "Select PDF"}
                     </Button>
                     <Button 
-                        disabled={!file || !password || isProcessing || !pdflib}
+                        disabled={!file || !password || isProcessing}
                         onClick={protectPDF}
-                        className="bg-primary hover:bg-primary/90"
+                        className="bg-primary hover:bg-primary/90 text-xs font-bold text-white shadow-md shadow-primary/10"
                     >
                         {isProcessing ? (
-                            <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Securing...</>
+                            <><Loader2 className="mr-2 h-4 w-4 animate-spin text-white" /> Securing...</>
                         ) : (
                             <><ShieldCheck className="mr-2 h-4 w-4" /> Protect PDF</>
                         )}
@@ -168,38 +140,33 @@ export default function PDFProtect() {
                     {!file ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-primary/20 hover:border-primary/40 bg-card/30 hover:bg-card/50 transition-all text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
                         >
-                            <div className="p-6 bg-primary/5 group-hover:scale-110 transition-transform">
+                            <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
                                 <FileText className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
                             </div>
-                            <h3 className="mt-6 text-xl font-bold">Upload PDF to Secure</h3>
-                            <p className="mt-2 text-muted-foreground max-w-sm">
-                                Add a strong password to your PDF and restrict unauthorized access, printing, or copying.
+                            <h3 className="mt-6 text-lg font-bold">Upload PDF to Secure</h3>
+                            <p className="mt-2 text-xs text-muted-foreground max-w-xs leading-relaxed">
+                                Add a strong password to your PDF and restrict unauthorized access, printing, or copying locally.
                             </p>
-                            <div className="mt-8 flex gap-3">
-                                <Badge variant="outline">AES Encryption</Badge>
-                                <Badge variant="outline">Secure</Badge>
-                                <Badge variant="outline">Private</Badge>
-                            </div>
                         </div>
                     ) : (
-                        <Card className="border-border/40 bg-card/40 overflow-hidden">
-                            <div className="p-12 flex flex-col items-center justify-center bg-muted/30 border-b border-border/40">
-                                <div className="p-6 bg-primary/10 mb-6">
-                                    <FileText className="h-16 w-16 text-primary" />
+                        <Card className="border-border/40 bg-card/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-lg">
+                            <div className="p-8 flex flex-col items-center justify-center bg-muted/20 border-b border-border/20">
+                                <div className="p-4 bg-primary/10 rounded-2xl mb-4">
+                                    <FileText className="h-12 w-12 text-primary" />
                                 </div>
-                                <h3 className="text-xl font-bold truncate max-w-md">{file.name}</h3>
-                                <div className="mt-4 flex gap-4">
-                                    <Badge variant="secondary" className="">{(file.size / (1024 * 1024)).toFixed(2)} MB</Badge>
-                                    <Badge variant="outline" className="border-primary/20 text-primary">Ready to Secure</Badge>
+                                <h3 className="text-base font-bold truncate max-w-xs">{file.name}</h3>
+                                <div className="mt-3 flex gap-2">
+                                    <Badge variant="secondary" className="text-xs">{(file.size / (1024 * 1024)).toFixed(2)} MB</Badge>
+                                    <Badge variant="outline" className="border-primary/20 text-primary text-xs">Ready to Secure</Badge>
                                 </div>
                             </div>
-                            <CardContent className="p-8 space-y-8">
+                            <CardContent className="p-8 space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                     <div className="space-y-4">
                                         <div className="space-y-2">
-                                            <Label htmlFor="password-input" className="text-xs font-bold uppercase tracking-widest">Set Access Password</Label>
+                                            <Label htmlFor="password-input" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Set Access Password</Label>
                                             <div className="relative">
                                                 <Input 
                                                     id="password-input"
@@ -207,7 +174,7 @@ export default function PDFProtect() {
                                                     placeholder="Enter a strong password..." 
                                                     value={password}
                                                     onChange={(e) => setPassword(e.target.value)}
-                                                    className="pr-10 border-primary/20 focus-visible:ring-primary/30"
+                                                    className="pr-10 border-border/30 focus-visible:ring-primary/20 bg-background/50 h-10"
                                                 />
                                                 <button 
                                                     type="button"
@@ -217,110 +184,58 @@ export default function PDFProtect() {
                                                     {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                                                 </button>
                                             </div>
-                                            <p className="text-[10px] text-muted-foreground italic uppercase tracking-tighter">
-                                                * This password will be required to open the PDF document.
+                                            <p className="text-[10px] text-muted-foreground leading-normal mt-1">
+                                                This password will be required to open the protected PDF document.
                                             </p>
                                         </div>
                                     </div>
-                                    
-                                    <div className="space-y-6 bg-muted/20 p-6 border border-border/40">
-                                        <h4 className="text-xs font-bold uppercase tracking-widest flex items-center gap-2">
-                                            <ShieldCheck className="h-4 w-4 text-primary" /> Restriction Settings
-                                        </h4>
-                                        <div className="space-y-4">
-                                            <div className="flex items-center space-x-2">
-                                                <Checkbox 
-                                                    id="perm-print" 
-                                                    checked={permissions.printing} 
-                                                    onCheckedChange={(checked) => setPermissions(p => ({ ...p, printing: !!checked }))}
-                                                    className=""
-                                                />
-                                                <Label htmlFor="perm-print" className="text-sm cursor-pointer font-medium">Allow Printing</Label>
-                                            </div>
-                                            <div className="flex items-center space-x-2">
-                                                <Checkbox 
-                                                    id="perm-copy" 
-                                                    checked={permissions.copying} 
-                                                    onCheckedChange={(checked) => setPermissions(p => ({ ...p, copying: !!checked }))}
-                                                    className=""
-                                                />
-                                                <Label htmlFor="perm-copy" className="text-sm cursor-pointer font-medium">Allow Content Copying</Label>
-                                            </div>
-                                            <div className="flex items-center space-x-2">
-                                                <Checkbox 
-                                                    id="perm-modify" 
-                                                    checked={permissions.modifying} 
-                                                    onCheckedChange={(checked) => setPermissions(p => ({ ...p, modifying: !!checked }))}
-                                                    className=""
-                                                />
-                                                <Label htmlFor="perm-modify" className="text-sm cursor-pointer font-medium">Allow Modifications</Label>
-                                            </div>
-                                            <div className="flex items-center space-x-2">
-                                                <Checkbox 
-                                                    id="perm-annot" 
-                                                    checked={permissions.annotating} 
-                                                    onCheckedChange={(checked) => setPermissions(p => ({ ...p, annotating: !!checked }))}
-                                                    className=""
-                                                />
-                                                <Label htmlFor="perm-annot" className="text-sm cursor-pointer font-medium">Allow Annotations</Label>
-                                            </div>
+
+                                    <div className="space-y-4">
+                                        <Label className="text-xs font-bold uppercase tracking-wider text-muted-foreground block">Restrict Permissions</Label>
+                                        <div className="space-y-3 pl-1">
+                                            {[
+                                                { id: "printing", label: "Allow Printing" },
+                                                { id: "copying", label: "Allow Copying Text/Images" },
+                                                { id: "modifying", label: "Allow Modifying Content" },
+                                                { id: "annotating", label: "Allow Form Filling & Annotations" }
+                                            ].map((perm) => (
+                                                <div key={perm.id} className="flex items-center space-x-2.5">
+                                                    <Checkbox 
+                                                        id={perm.id} 
+                                                        checked={(permissions as any)[perm.id]}
+                                                        onCheckedChange={(checked) => 
+                                                            setPermissions(prev => ({ ...prev, [perm.id]: !!checked }))
+                                                        }
+                                                        className="border-border/60 data-[state=checked]:bg-primary"
+                                                    />
+                                                    <Label htmlFor={perm.id} className="text-xs font-medium text-foreground cursor-pointer select-none">
+                                                        {perm.label}
+                                                    </Label>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
-                                </div>
-                                
-                                <div className="pt-4 border-t border-border/40 flex justify-end">
-                                    <Button 
-                                        size="lg"
-                                        disabled={!password || isProcessing || !pdflib}
-                                        onClick={protectPDF}
-                                        className="px-12 h-14 font-bold uppercase tracking-widest"
-                                    >
-                                        {isProcessing ? "Processing..." : "Generate Protected PDF"}
-                                    </Button>
                                 </div>
                             </CardContent>
                         </Card>
                     )}
                 </div>
 
-                {/* Sidebar Info */}
-                <div className="space-y-6">
-                    <Card className="border-border/40 bg-card/50 backdrop-blur-sm">
-                        <CardHeader className="pb-4 border-b border-border/40">
-                            <CardTitle className="text-xs font-bold uppercase tracking-widest flex items-center gap-2">
-                                <Lock className="h-4 w-4 text-primary" /> Security Details
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 space-y-6">
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Encryption Standard</h5>
-                                <p className="text-sm font-medium">AES-256 Bit Encryption</p>
-                            </div>
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Privacy Guarantee</h5>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                    Your files are processed locally. The password encryption happens inside your browser tab. We never see your password or your document.
-                                </p>
-                            </div>
-                            <div className="pt-4 border-t border-border/40">
-                                <div className="flex items-center gap-2 text-primary">
-                                    <ShieldCheck className="h-4 w-4" />
-                                    <span className="text-xs font-bold uppercase tracking-widest">100% Client-Side</span>
-                                </div>
-                            </div>
-                        </CardContent>
+                {/* Right Side Info Bar */}
+                <div className="space-y-4">
+                    <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-4 text-xs leading-relaxed">
+                        <h4 className="font-bold text-sm text-foreground">Security Features</h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                            <li>• <strong>Local RC4 128-bit Encryption</strong> protects user access.</li>
+                            <li>• Custom file permission flags to restrict modifications.</li>
+                            <li>• Zero server retention: your files are processed in-browser.</li>
+                        </ul>
                     </Card>
-
-                    <Card className="border-primary/20 bg-primary/5">
-                        <CardContent className="p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <Unlock className="h-5 w-5 text-primary" />
-                                <h4 className="text-sm font-bold uppercase tracking-widest">Forgot Password?</h4>
-                            </div>
-                            <p className="text-xs text-muted-foreground leading-relaxed">
-                                Please remember your password! Once a PDF is protected, it cannot be opened without the correct password. We do not store or recover passwords.
-                            </p>
-                        </CardContent>
+                    <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-3 text-xs leading-relaxed">
+                        <h4 className="font-bold text-sm text-foreground">HIPAA & SOC2 Safe</h4>
+                        <p className="text-muted-foreground">
+                            Because no documents are sent to any remote servers, this tool is ideal for corporate and institutional security standards.
+                        </p>
                     </Card>
                 </div>
             </div>

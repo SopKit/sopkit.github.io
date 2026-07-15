@@ -10,11 +10,7 @@ import { Inter } from "next/font/google";
 
 import { PWARegistration } from "@/components/shared/PWARegistration";
 
-// Dynamic import for Stack Auth - heavy client bundle, only loaded when configured
-const StackAuthProvider = dynamic(
-	() => import("@/components/shared/StackAuthProvider"),
-	{ ssr: false }
-);
+import { ClientStackAuthProvider } from "@/components/shared/ClientStackAuthProvider";
 
 // Dynamic imports for below-fold / non-critical layout components
 const AppleNavbar = dynamic(
@@ -346,7 +342,7 @@ export default function RootLayout({
 				/>
 			</head>
 			<body className={`ds-page font-sans antialiased ${inter.className}`}>
-				<StackAuthProvider>
+				<ClientStackAuthProvider>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 						<AppleNavbar />
 						{children}
@@ -355,7 +351,7 @@ export default function RootLayout({
 						<Toaster />
 						<PWARegistration />
 					</ThemeProvider>
-				</StackAuthProvider>
+				</ClientStackAuthProvider>
 
 				<Script
 					src="https://assets.onedollarstats.com/stonks.js"

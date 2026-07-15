@@ -6,6 +6,7 @@
       "name": "30tools",
       "dependencies": {
         "@opennextjs/cloudflare": "^1.19.8",
+        "@pdfsmaller/pdf-encrypt-lite": "^1.0.2",
         "@radix-ui/react-accordion": "^1.2.11",
         "@radix-ui/react-avatar": "^1.1.10",
         "@radix-ui/react-checkbox": "^1.3.2",
@@ -466,6 +467,8 @@
     "@pdf-lib/standard-fonts": ["@pdf-lib/standard-fonts@1.0.0", "", { "dependencies": { "pako": "^1.0.6" } }, "sha512-hU30BK9IUN/su0Mn9VdlVKsWBS6GyhVfqjwl1FjZN4TxP6cCw0jP2w7V3Hf5uX7M0AZJ16vey9yE0ny7Sa59ZA=="],
 
     "@pdf-lib/upng": ["@pdf-lib/upng@1.0.1", "", { "dependencies": { "pako": "^1.0.10" } }, "sha512-dQK2FUMQtowVP00mtIksrlZhdFXQZPC+taih1q4CvPZ5vqdxR/LKBaFg0oAfzd1GlHZXXSPdQfzQnt+ViGvEIQ=="],
+
+    "@pdfsmaller/pdf-encrypt-lite": ["@pdfsmaller/pdf-encrypt-lite@1.0.2", "", { "peerDependencies": { "pdf-lib": "^1.17.1" } }, "sha512-9egzPJ9I6gfmRP7BJjN3M1dt99DagF72BpQneVke1vgXAeIAU38i2YAt+EBvwbaYTmn7CFu/Z6IeIhoe0p/YQg=="],
 
     "@poppinss/colors": ["@poppinss/colors@4.1.5", "", { "dependencies": { "kleur": "^4.1.5" } }, "sha512-FvdDqtcRCtz6hThExcFOgW0cWX+xwSMWcRuQe5ZEb2m7cVQOAVZOIMt+/v9RxGiD9/OY16qJBXK4CVKWAPalBw=="],
 

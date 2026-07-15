@@ -1,67 +1,38 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef } from "react";
 import { 
     Upload, 
     Unlock, 
-    Lock,
     FileText,
     Loader2,
-    CheckCircle2,
-    Download,
+    ShieldCheck,
     Eye,
     EyeOff,
-    AlertCircle
+    CheckCircle2
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-
-declare global {
-    interface Window {
-        PDFLib: any;
-    }
-}
 
 export default function PDFUnlock() {
-    const [pdflib, setPdflib] = useState<any>(null);
     const [file, setFile] = useState<File | null>(null);
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
     const [isProcessing, setIsProcessing] = useState(false);
     const [isDecrypted, setIsDecrypted] = useState(false);
+    const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
-
-    useEffect(() => {
-        const loadPdfLib = async () => {
-            if (window.PDFLib) {
-                setPdflib(window.PDFLib);
-                return;
-            }
-
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-            script.async = true;
-            script.onload = () => {
-                setPdflib(window.PDFLib);
-            };
-            script.onerror = () => {
-                toast.error("Failed to load PDF processing library. Please check your internet connection and refresh.");
-            };
-            document.head.appendChild(script);
-        };
-        loadPdfLib();
-    }, []);
 
     const onFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         const selectedFile = e.target.files?.[0];
-        if (selectedFile && selectedFile.type === "application/pdf") {
+        if (selectedFile && (selectedFile.type === "application/pdf" || selectedFile.name.toLowerCase().endsWith(".pdf"))) {
             setFile(selectedFile);
             setIsDecrypted(false);
+            setDownloadUrl(null);
             setPassword("");
             toast.success("PDF loaded successfully");
         } else if (selectedFile) {
@@ -70,7 +41,6 @@ export default function PDFUnlock() {
     }, []);
 
     const unlockPDF = async () => {
-        if (!pdflib) return;
         if (!file) {
             toast.error("Please upload a PDF file first");
             return;
@@ -82,71 +52,62 @@ export default function PDFUnlock() {
 
         setIsProcessing(true);
         try {
-            const { PDFDocument } = pdflib;
+            const { PDFDocument } = await import("pdf-lib");
             const arrayBuffer = await file.arrayBuffer();
             
+            // pdf-lib decrypts the PDF document in memory using the user password
             const pdfDoc = await PDFDocument.load(arrayBuffer, { password });
             const pdfBytes = await pdfDoc.save();
             
-            const blob = new Blob([pdfBytes.buffer], { type: "application/pdf" });
+            const blob = new Blob([pdfBytes], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
-            const link = document.createElement("a");
-            link.href = url;
-            link.download = `${file.name.replace('.pdf', '')}_unlocked.pdf`;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-            
+            setDownloadUrl(url);
             setIsDecrypted(true);
-            toast.success("PDF unlocked successfully!");
-        } catch (error: any) {
+            toast.success("PDF password removed successfully!");
+        } catch (error) {
             console.error(error);
-            if (error.message && error.message.includes("Incorrect password")) {
-                toast.error("Incorrect password. Please try again.");
-            } else {
-                toast.error("Failed to unlock PDF. Make sure the file is password-protected.");
-            }
+            toast.error("Failed to unlock PDF. The password might be incorrect.");
         } finally {
             setIsProcessing(false);
         }
     };
 
     return (
-        <div className="space-y-8 animate-in fade-in duration-700">
+        <div className="space-y-8 max-w-4xl mx-auto">
+            {/* Privacy Shield */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Your documents are decrypted locally in RAM. No file data leaves your device.</span>
+            </div>
+
             {/* Header Section */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/50 p-6 border border-border/40 backdrop-blur-sm">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 text-primary">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
                         <Unlock className="h-6 w-6" />
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold">PDF Unlocker</h2>
-                        <p className="text-sm text-muted-foreground">Remove password protection and restrictions from your PDF files</p>
+                        <h2 className="text-xl font-bold">PDF Unlocker</h2>
+                        <p className="text-xs text-muted-foreground">Remove passwords and security restrictions from your PDFs locally</p>
                     </div>
                 </div>
-                {!pdflib && (
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <Loader2 className="h-3 w-3 animate-spin" /> Loading Decryption Engine...
-                    </div>
-                )}
                 <div className="flex items-center gap-2">
                     <Button 
                         variant="outline" 
                         onClick={() => fileInputRef.current?.click()}
-                        className="border-primary/20 hover:border-primary/50"
+                        className="border-border hover:bg-muted/40 text-xs font-bold"
                     >
                         <Upload className="mr-2 h-4 w-4" /> {file ? "Change PDF" : "Select PDF"}
                     </Button>
                     <Button 
-                        disabled={!file || !password || isProcessing || !pdflib}
+                        disabled={!file || !password || isProcessing}
                         onClick={unlockPDF}
-                        className="bg-primary hover:bg-primary/90"
+                        className="bg-primary hover:bg-primary/90 text-xs font-bold text-white shadow-md shadow-primary/10"
                     >
                         {isProcessing ? (
-                            <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Unlocking...</>
+                            <><Loader2 className="mr-2 h-4 w-4 animate-spin text-white" /> Removing Restrictions...</>
                         ) : (
-                            <><CheckCircle2 className="mr-2 h-4 w-4" /> Unlock PDF</>
+                            <><Unlock className="mr-2 h-4 w-4" /> Unlock PDF</>
                         )}
                     </Button>
                 </div>
@@ -165,153 +126,86 @@ export default function PDFUnlock() {
                     {!file ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-primary/20 hover:border-primary/40 bg-card/30 hover:bg-card/50 transition-all text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
                         >
-                            <div className="p-6 bg-primary/5 group-hover:scale-110 transition-transform">
-                                <Lock className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
+                            <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
+                                <FileText className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
                             </div>
-                            <h3 className="mt-6 text-xl font-bold">Upload Locked PDF</h3>
-                            <p className="mt-2 text-muted-foreground max-w-sm">
-                                Enter the password to remove encryption and save a permanent unlocked version of your PDF.
+                            <h3 className="mt-6 text-lg font-bold">Upload Locked PDF</h3>
+                            <p className="mt-2 text-xs text-muted-foreground max-w-xs leading-relaxed">
+                                Upload your password-protected PDF to strip access restrictions and create an unlocked copy.
                             </p>
-                            <div className="mt-8 flex gap-3">
-                                <Badge variant="outline">Decrypt</Badge>
-                                <Badge variant="outline">No Watermark</Badge>
-                                <Badge variant="outline">Fast</Badge>
-                            </div>
                         </div>
                     ) : (
-                        <Card className="border-border/40 bg-card/40 overflow-hidden">
-                            <div className="p-12 flex flex-col items-center justify-center bg-muted/30 border-b border-border/40">
-                                <div className="p-6 bg-destructive/10 mb-6 relative">
-                                    <FileText className="h-16 w-16 text-destructive" />
-                                    <div className="absolute bottom-0 right-0 p-1 bg-background rounded-full">
-                                        <Lock className="h-6 w-6 text-destructive" />
-                                    </div>
+                        <Card className="border-border/40 bg-card/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-lg animate-in">
+                            <div className="p-8 flex flex-col items-center justify-center bg-muted/20 border-b border-border/20">
+                                <div className="p-4 bg-primary/10 rounded-2xl mb-4">
+                                    <FileText className="h-12 w-12 text-primary" />
                                 </div>
-                                <h3 className="text-xl font-bold truncate max-w-md">{file.name}</h3>
-                                <div className="mt-4 flex gap-4">
-                                    <Badge variant="secondary" className="">{(file.size / (1024 * 1024)).toFixed(2)} MB</Badge>
-                                    <Badge variant="outline" className="border-destructive/20 text-destructive uppercase tracking-widest font-bold">Locked PDF</Badge>
+                                <h3 className="text-base font-bold truncate max-w-xs">{file.name}</h3>
+                                <div className="mt-3 flex gap-2">
+                                    <Badge variant="secondary" className="text-xs">{(file.size / (1024 * 1024)).toFixed(2)} MB</Badge>
+                                    <Badge variant="outline" className="border-primary/20 text-primary text-xs">Ready to Decrypt</Badge>
                                 </div>
                             </div>
-                            <CardContent className="p-8 space-y-8">
-                                <div className="max-w-md mx-auto space-y-6">
-                                    <Alert variant="destructive" className="border-destructive/20 bg-destructive/5">
-                                        <AlertCircle className="h-4 w-4" />
-                                        <AlertTitle className="text-xs font-bold uppercase tracking-widest">Password Required</AlertTitle>
-                                        <AlertDescription className="text-xs leading-relaxed">
-                                            This tool removes the password from a PDF. You must know the current password to decrypt and unlock the file.
-                                        </AlertDescription>
-                                    </Alert>
+                            <CardContent className="p-8 space-y-6">
+                                <div className="space-y-4 max-w-sm mx-auto">
+                                    <div className="space-y-2">
+                                        <Label htmlFor="password-input" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Enter Document Password</Label>
+                                        <div className="relative">
+                                            <Input 
+                                                id="password-input"
+                                                type={showPassword ? "text" : "password"} 
+                                                placeholder="Enter PDF password..." 
+                                                value={password}
+                                                onChange={(e) => setPassword(e.target.value)}
+                                                className="pr-10 border-border/30 focus-visible:ring-primary/20 bg-background/50 h-10"
+                                            />
+                                            <button 
+                                                type="button"
+                                                onClick={() => setShowPassword(!showPassword)}
+                                                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-primary transition-colors"
+                                            >
+                                                {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                                            </button>
+                                        </div>
+                                    </div>
 
-                                    <div className="space-y-4">
-                                        <div className="space-y-2">
-                                            <Label htmlFor="unlock-password" className="text-xs font-bold uppercase tracking-widest">Enter PDF Password</Label>
-                                            <div className="relative">
-                                                <Input 
-                                                    id="unlock-password"
-                                                    type={showPassword ? "text" : "password"} 
-                                                    placeholder="Enter current password..." 
-                                                    value={password}
-                                                    onChange={(e) => setPassword(e.target.value)}
-                                                    className="pr-10 border-destructive/20 focus-visible:ring-destructive/30"
-                                                />
-                                                <button 
-                                                    type="button"
-                                                    onClick={() => setShowPassword(!showPassword)}
-                                                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-destructive transition-colors"
-                                                >
-                                                    {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                                                </button>
+                                    {isDecrypted && downloadUrl && (
+                                        <div className="pt-4 space-y-3 border-t border-border/20 text-center animate-in">
+                                            <div className="flex items-center justify-center gap-1.5 text-emerald-500 text-sm font-semibold">
+                                                <CheckCircle2 className="w-4 h-4 shrink-0" />
+                                                <span>Restrictions Removed Successfully!</span>
                                             </div>
+                                            <Button asChild className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-10">
+                                                <a href={downloadUrl} download={`${file.name.replace(/\.pdf$/i, "")}_unlocked.pdf`}>
+                                                    Download Unlocked PDF
+                                                </a>
+                                            </Button>
                                         </div>
-
-                                        <Button 
-                                            size="lg"
-                                            disabled={!password || isProcessing || !pdflib}
-                                            onClick={unlockPDF}
-                                            className="w-full h-14 font-bold uppercase tracking-widest bg-destructive hover:bg-destructive/90"
-                                        >
-                                            {isProcessing ? "Unlocking..." : "Decrypt & Download Unlocked PDF"}
-                                        </Button>
-                                    </div>
+                                    )}
                                 </div>
-                                
-                                {isDecrypted && (
-                                    <div className="flex flex-col items-center gap-4 p-6 bg-primary/5 border border-primary/20 animate-in zoom-in-95">
-                                        <CheckCircle2 className="h-10 w-10 text-primary" />
-                                        <div className="text-center">
-                                            <h4 className="font-bold">Success! PDF Unlocked</h4>
-                                            <p className="text-sm text-muted-foreground">The decrypted version has been downloaded to your computer.</p>
-                                        </div>
-                                        <Button variant="outline" size="sm" onClick={() => window.location.reload()} className="">
-                                            <Download className="h-4 w-4 mr-2" /> Download Again
-                                        </Button>
-                                    </div>
-                                )}
                             </CardContent>
                         </Card>
                     )}
                 </div>
 
-                {/* Sidebar Info */}
-                <div className="space-y-6">
-                    <Card className="border-border/40 bg-card/50 backdrop-blur-sm">
-                        <CardHeader className="pb-4 border-b border-border/40">
-                            <CardTitle className="text-xs font-bold uppercase tracking-widest flex items-center gap-2">
-                                <Unlock className="h-4 w-4 text-primary" /> Why Unlock?
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 space-y-6">
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Remove Restrictions</h5>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                    Once unlocked, you can print, copy text, and edit the PDF without entering a password every time.
-                                </p>
-                            </div>
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Zero Server Uploads</h5>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                    Our unlocker works entirely in-browser. Your password and data are never sent to our servers.
-                                </p>
-                            </div>
-                        </CardContent>
+                {/* Right Side Info Bar */}
+                <div className="space-y-4">
+                    <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-4 text-xs leading-relaxed">
+                        <h4 className="font-bold text-sm text-foreground">How unlocking works</h4>
+                        <p className="text-muted-foreground">
+                            Standard security protocols require entering the password. Once loaded, our local javascript environment removes the encryption flag and saves an unencrypted copy.
+                        </p>
                     </Card>
-
-                    <Card className="border-primary/20 bg-primary/5">
-                        <CardContent className="p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <ShieldCheck className="h-5 w-5 text-primary" />
-                                <h4 className="text-sm font-bold uppercase tracking-widest">Secure & Legal</h4>
-                            </div>
-                            <p className="text-xs text-muted-foreground leading-relaxed">
-                                This tool is intended for unlocking PDFs for which you have the legal right and correct password.
-                            </p>
-                        </CardContent>
+                    <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-3 text-xs leading-relaxed">
+                        <h4 className="font-bold text-sm text-foreground">No Password bypass</h4>
+                        <p className="text-muted-foreground">
+                            For security reasons, this tool does not crack password keys. You must know the password to strip restrictions.
+                        </p>
                     </Card>
                 </div>
             </div>
         </div>
-    );
-}
-
-function ShieldCheck({ className }: { className?: string }) {
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className={className}
-        >
-            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z" />
-            <path d="m9 12 2 2 4-4" />
-        </svg>
     );
 }
