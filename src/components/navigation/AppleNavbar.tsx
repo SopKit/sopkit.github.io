@@ -1,75 +1,128 @@
 "use client";
 
-import { Github, LayoutGrid, Search, Menu, X } from "lucide-react";
+import { Github, LayoutGrid, Search, Menu, X, Command, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import * as React from "react";
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useState, useRef, Suspense } from "react";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { AuthButton } from "./AuthButton";
 import { Input } from "@/components/ui/input";
 import { STATIC_ROUTES } from "@/lib/tools";
 import { GITHUB_REPO_URL } from "@/constants/config";
 
-function SearchInput() {
-	const router = useRouter();
-	const searchParams = useSearchParams();
-	const [query, setQuery] = useState(searchParams.get("q") || "");
-
-	useEffect(() => {
-		setQuery(searchParams.get("q") || "");
-	}, [searchParams]);
-
-	const handleSearch = (e: React.FormEvent) => {
-		e.preventDefault();
-		if (query.trim()) {
-			router.push(`${STATIC_ROUTES.SEARCH}?q=${encodeURIComponent(query.trim())}`);
-		} else {
-			router.push(STATIC_ROUTES.SEARCH);
-		}
-	};
-
-	return (
-		<form onSubmit={handleSearch} className="relative w-full max-w-xs hidden md:block">
-			<div className="relative flex items-center">
-				<Search className="absolute left-3 h-3.5 w-3.5 text-muted-foreground/70" />
-				<Input
-					type="text"
-					placeholder="Search tools... (⌘K)"
-					value={query}
-					onChange={(e) => setQuery(e.target.value)}
-					className="bg-muted/40 border-border/30 hover:border-border/60 text-sm h-8 pl-8 pr-4 rounded-lg focus-visible:ring-1 focus-visible:ring-primary/20 transition-all w-full placeholder:text-muted-foreground/50"
-				/>
-			</div>
-		</form>
-	);
+interface SearchToolItem {
+	id: string;
+	name: string;
+	description: string;
+	route: string;
+	category: string;
 }
 
 export function AppleNavbar() {
 	const router = useRouter();
 	const pathname = usePathname();
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const [isSearchOpen, setIsSearchOpen] = useState(false);
+	const [searchQuery, setSearchQuery] = useState("");
+	const [allTools, setAllTools] = useState<SearchToolItem[]>([]);
+	const [selectedIndex, setSelectedIndex] = useState(0);
+	const searchModalRef = useRef<HTMLDivElement>(null);
+	const searchInputRef = useRef<HTMLInputElement>(null);
 
 	if (pathname?.startsWith("/embed")) {
 		return null;
 	}
 
+	const loadToolsIndex = async () => {
+		if (allTools.length === 0) {
+			try {
+				const data = await import("@/constants/tools.json");
+				const list: SearchToolItem[] = [];
+				if (data.categories) {
+					Object.keys(data.categories).forEach((catKey) => {
+						const cat = data.categories[catKey];
+						if (cat.tools) {
+							cat.tools.forEach((t: any) => {
+								list.push({
+									id: t.id,
+									name: t.name,
+									description: t.description || "",
+									route: t.route,
+									category: cat.name
+								});
+							});
+						}
+					});
+				}
+				setAllTools(list);
+			} catch (err) {
+				console.error("Failed to load tools search index:", err);
+			}
+		}
+	};
+
+	const openSearch = async () => {
+		setIsSearchOpen(true);
+		setSearchQuery("");
+		setSelectedIndex(0);
+		await loadToolsIndex();
+		// Auto-focus input
+		setTimeout(() => {
+			searchInputRef.current?.focus();
+		}, 100);
+	};
+
+	const closeSearch = () => {
+		setIsSearchOpen(false);
+	};
+
+	// Keydown listener for Cmd + K / Ctrl + K and Command dialog navigation
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
 			if ((e.metaKey || e.ctrlKey) && e.key === "k") {
 				e.preventDefault();
-				const searchInput = document.querySelector('input[placeholder*="Search"]') as HTMLInputElement;
-				if (searchInput) {
-					searchInput.focus();
-					searchInput.select();
+				if (isSearchOpen) {
+					closeSearch();
 				} else {
-					router.push(STATIC_ROUTES.SEARCH);
+					openSearch();
 				}
 			}
+
+			if (e.key === "Escape") {
+				closeSearch();
+			}
 		};
+
 		window.addEventListener("keydown", handleKeyDown);
 		return () => window.removeEventListener("keydown", handleKeyDown);
-	}, [router]);
+	}, [isSearchOpen, allTools]);
+
+	const filteredTools = searchQuery.trim()
+		? allTools.filter(
+				(t) =>
+					t.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+					t.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+					t.category.toLowerCase().includes(searchQuery.toLowerCase())
+		  )
+		: allTools.slice(0, 8); // default show first 8 tools if query is empty
+
+	const handleDialogKeyDown = (e: React.KeyboardEvent) => {
+		if (e.key === "ArrowDown") {
+			e.preventDefault();
+			setSelectedIndex((prev) => (prev + 1) % Math.max(1, filteredTools.length));
+		} else if (e.key === "ArrowUp") {
+			e.preventDefault();
+			setSelectedIndex((prev) => (prev - 1 + filteredTools.length) % Math.max(1, filteredTools.length));
+		} else if (e.key === "Enter") {
+			e.preventDefault();
+			const selected = filteredTools[selectedIndex];
+			if (selected) {
+				router.push(selected.route);
+				closeSearch();
+			}
+		}
+	};
 
 	const categories = [
 		{ name: "Features", href: STATIC_ROUTES.TOOLS },
@@ -103,10 +156,17 @@ export function AppleNavbar() {
 					</nav>
 				</div>
 
-				{/* Center: Search */}
-				<Suspense fallback={null}>
-					<SearchInput />
-				</Suspense>
+				{/* Center: Search Button (Cmd+K Indicator) */}
+				<button 
+					onClick={openSearch} 
+					className="relative w-full max-w-xs hidden md:flex items-center text-left text-xs text-muted-foreground/70 h-8 px-3 rounded-lg bg-muted/40 border border-border/30 hover:border-border/60 hover:bg-muted/60 transition-all select-none"
+				>
+					<Search className="h-3.5 w-3.5 mr-2 text-muted-foreground/50" />
+					<span className="flex-1">Search 500+ tools...</span>
+					<kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-0.5 rounded border border-border/60 bg-muted px-1.5 font-mono text-[9px] font-bold text-muted-foreground/90 shadow-sm">
+						<span className="text-xs">⌘</span>K
+					</kbd>
+				</button>
 
 				{/* Right side */}
 				<div className="flex items-center gap-3">
@@ -136,38 +196,104 @@ export function AppleNavbar() {
 						</Suspense>
 					</div>
 
-					{/* Mobile Menu Button */}
-					<button
-						className="p-1.5 text-muted-foreground hover:text-foreground md:hidden rounded-md transition-colors"
-						onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-						aria-label="Toggle menu"
-					>
-						{mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-					</button>
+					{/* Mobile Search & Menu Button */}
+					<div className="flex items-center gap-2 md:hidden">
+						<button
+							onClick={openSearch}
+							className="p-1.5 text-muted-foreground hover:text-foreground rounded-md transition-colors"
+							aria-label="Search tools"
+						>
+							<Search className="h-4 w-4" />
+						</button>
+						<button
+							className="p-1.5 text-muted-foreground hover:text-foreground rounded-md transition-colors"
+							onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+							aria-label="Toggle menu"
+						>
+							{mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+						</button>
+					</div>
 				</div>
 			</div>
+
+			{/* Floating Command Search Dialog (Cmd + K Modal) */}
+			{isSearchOpen && (
+				<div className="fixed inset-0 z-50 flex items-start justify-center pt-[15vh] px-4">
+					{/* Backdrop overlay */}
+					<div onClick={closeSearch} className="fixed inset-0 bg-background/80 backdrop-blur-sm animate-in fade-in duration-200" />
+					
+					{/* Dialog panel */}
+					<div 
+						ref={searchModalRef}
+						onKeyDown={handleDialogKeyDown}
+						className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-border/40 bg-card shadow-2xl animate-in zoom-in-95 duration-200"
+					>
+						<div className="flex items-center border-b border-border/20 px-4 h-12">
+							<Search className="h-4 w-4 mr-2 text-muted-foreground/60 shrink-0" />
+							<input
+								ref={searchInputRef}
+								type="text"
+								placeholder="Search tools, formats, categories..."
+								value={searchQuery}
+								onChange={(e) => {
+									setSearchQuery(e.target.value);
+									setSelectedIndex(0);
+								}}
+								className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground/50 border-0 focus:outline-none focus:ring-0 h-full"
+							/>
+							<kbd className="hidden sm:inline-flex h-5 select-none items-center gap-0.5 rounded border border-border/60 bg-muted px-1.5 font-mono text-[9px] font-bold text-muted-foreground/80">
+								ESC
+							</kbd>
+						</div>
+
+						{/* Results */}
+						<div className="p-2 max-h-[350px] overflow-y-auto">
+							{filteredTools.length === 0 ? (
+								<div className="p-8 text-center text-xs text-muted-foreground">
+									No matching tools found. Try searching for "pdf", "image", or "json".
+								</div>
+							) : (
+								<div className="space-y-1">
+									{searchQuery.trim() === "" && (
+										<p className="px-3 py-1.5 text-[9px] font-bold text-muted-foreground/70 uppercase tracking-wider flex items-center gap-1">
+											<Sparkles className="w-3 h-3 text-primary animate-pulse" /> Popular Sandbox Utilities
+										</p>
+									)}
+									{filteredTools.map((tool, index) => {
+										const isSelected = selectedIndex === index;
+										return (
+											<div
+												key={tool.id}
+												onClick={() => {
+													router.push(tool.route);
+													closeSearch();
+												}}
+												onMouseEnter={() => setSelectedIndex(index)}
+												className={`flex items-center justify-between p-3 rounded-xl cursor-pointer select-none transition-all ${
+													isSelected ? "bg-primary/10 border-l-2 border-primary" : "bg-transparent"
+												}`}
+											>
+												<div className="flex-1 min-w-0 pr-3">
+													<p className={`text-xs font-bold ${isSelected ? "text-primary" : "text-foreground"}`}>{tool.name}</p>
+													<p className="text-[10px] text-muted-foreground truncate leading-normal mt-0.5">{tool.description}</p>
+												</div>
+												<Badge variant="outline" className="text-[9px] font-bold uppercase tracking-wide shrink-0">
+													{tool.category}
+												</Badge>
+											</div>
+										);
+									})}
+								</div>
+							)}
+						</div>
+					</div>
+				</div>
+			)}
 
 			{/* Mobile Menu */}
 			{mobileMenuOpen && (
 				<div className="absolute top-14 left-0 w-full bg-background/95 backdrop-blur-xl border-b border-border/40 md:hidden animate-in fade-in-50 duration-200">
 					<div className="flex flex-col p-4 gap-4">
-						<form
-							onSubmit={(e) => {
-								e.preventDefault();
-								const q = (e.currentTarget.elements.namedItem("q") as HTMLInputElement).value;
-								router.push(`${STATIC_ROUTES.SEARCH}?q=${encodeURIComponent(q.trim())}`);
-								setMobileMenuOpen(false);
-							}}
-							className="relative"
-						>
-							<Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/75" />
-							<Input
-								name="q"
-								placeholder="Search tools..."
-								className="bg-muted/50 border-transparent text-foreground pl-9 w-full rounded-lg"
-							/>
-						</form>
-
 						<div className="flex flex-col gap-3">
 							{categories.map((link) => (
 								<Link

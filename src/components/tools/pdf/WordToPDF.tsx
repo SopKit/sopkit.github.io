@@ -1,127 +1,80 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef } from "react";
 import { 
     Upload, 
-    FileText, 
     Download, 
-    FileType,
+    FileText,
     Loader2,
-    Settings2,
+    ShieldCheck,
     FileCheck,
-    AlertCircle
+    FileType,
+    Eye
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
-
-declare global {
-    interface Window {
-        mammoth: any;
-        PDFLib: any;
-        html2canvas: any;
-    }
-}
+import { Label } from "@/components/ui/label";
 
 export default function WordToPDF() {
-    const [mammoth, setMammoth] = useState<any>(null);
-    const [pdflib, setPdflib] = useState<any>(null);
-    const [error, setError] = useState<string | null>(null);
     const [file, setFile] = useState<File | null>(null);
     const [isProcessing, setIsProcessing] = useState(false);
     const [previewHtml, setPreviewHtml] = useState<string>("");
+    const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
     const previewRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        // Load Mammoth
-        if (!window.mammoth) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/mammoth@1.6.0/mammoth.browser.min.js";
-            script.async = true;
-            script.onload = () => setMammoth(window.mammoth);
-            script.onerror = () => {
-                setError("Failed to load document processing library. Please check your internet connection and refresh.");
-            };
-            document.head.appendChild(script);
-        } else {
-            setMammoth(window.mammoth);
-        }
-
-        // Load PDF-Lib
-        if (!window.PDFLib) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-            script.async = true;
-            script.onload = () => setPdflib(window.PDFLib);
-            script.onerror = () => {
-                setError("Failed to load PDF processing library. Please check your internet connection and refresh.");
-            };
-            document.head.appendChild(script);
-        } else {
-            setPdflib(window.PDFLib);
-        }
-
-        // Load html2canvas from CDN if not already present or if we want to be sure
-        if (!window.html2canvas) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js";
-            script.async = true;
-            document.head.appendChild(script);
-        }
-    }, []);
-
-    const onFileChange = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
-        const selectedFile = e.target.files?.[0];
-        if (selectedFile && (selectedFile.name.endsWith(".docx") || selectedFile.type === "application/vnd.openxmlformats-officedocument.wordprocessingml.document")) {
-            setFile(selectedFile);
-            toast.success("Document loaded");
-            convertToHtml(selectedFile);
-        } else if (selectedFile) {
-            toast.error("Please select a valid .docx file");
-        }
-    }, [mammoth]);
-
     const convertToHtml = async (docxFile: File) => {
-        if (!mammoth) return;
         setIsProcessing(true);
         try {
+            const mammoth = await import("mammoth");
             const arrayBuffer = await docxFile.arrayBuffer();
             const result = await mammoth.convertToHtml({ arrayBuffer });
             setPreviewHtml(result.value);
-            if (result.messages.length > 0) {
-                console.log("Mammoth messages:", result.messages);
-            }
         } catch (error) {
             console.error(error);
-            toast.error("Failed to read Word document");
+            toast.error("Failed to read Word document structure.");
         } finally {
             setIsProcessing(false);
         }
     };
 
-    const generatePDF = async () => {
-        if (!pdflib || !previewRef.current || !window.html2canvas) {
-            toast.error("Required libraries are still loading...");
-            return;
+    const onFileChange = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const selectedFile = e.target.files?.[0];
+        if (selectedFile && (selectedFile.name.endsWith(".docx") || selectedFile.type === "application/vnd.openxmlformats-officedocument.wordprocessingml.document")) {
+            setFile(selectedFile);
+            setDownloadUrl(null);
+            setPreviewHtml("");
+            toast.success("Word document loaded successfully.");
+            await convertToHtml(selectedFile);
+        } else if (selectedFile) {
+            toast.error("Please select a valid .docx document file.");
         }
+        e.target.value = "";
+    }, []);
+
+    const generatePDF = async () => {
+        if (!previewRef.current || !file) return;
 
         setIsProcessing(true);
         try {
-            const canvas = await window.html2canvas(previewRef.current, {
-                scale: 2,
+            const html2canvas = (await import("html2canvas")).default;
+            const { PDFDocument } = await import("pdf-lib");
+
+            const canvas = await html2canvas(previewRef.current, {
+                scale: 1.8,
                 useCORS: true,
-                logging: false
+                logging: false,
+                backgroundColor: "#ffffff"
             });
 
-            const imgData = canvas.toDataURL("image/jpeg", 0.95);
-            const { PDFDocument, PageSizes } = pdflib;
+            const imgData = canvas.toDataURL("image/jpeg", 0.9);
             const pdfDoc = await PDFDocument.create();
             
-            // Convert pixels to points (1 pixel = 0.75 points)
-            const width = canvas.width * 0.75 / 2; // Divided by scale
-            const height = canvas.height * 0.75 / 2;
+            // Convert pixels to PDF points (1 pixel = 0.75 points)
+            const width = (canvas.width * 0.75) / 1.8;
+            const height = (canvas.height * 0.75) / 1.8;
 
             const page = pdfDoc.addPage([width, height]);
             const img = await pdfDoc.embedJpg(imgData);
@@ -134,60 +87,54 @@ export default function WordToPDF() {
             });
 
             const pdfBytes = await pdfDoc.save();
-            const blob = new Blob([pdfBytes.buffer], { type: "application/pdf" });
+            const blob = new Blob([pdfBytes], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
-            const link = document.createElement("a");
-            link.href = url;
-            link.download = `${file?.name.replace(".docx", "")}.pdf`;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-            
-            toast.success("Word converted to PDF successfully!");
+            setDownloadUrl(url);
+            toast.success("Word document converted to PDF successfully!");
         } catch (error) {
             console.error(error);
-            toast.error("Failed to generate PDF");
+            toast.error("Failed to convert Word document to PDF.");
         } finally {
             setIsProcessing(false);
         }
     };
 
     return (
-        <div className="space-y-8 animate-in fade-in duration-700">
+        <div className="space-y-8 max-w-4xl mx-auto">
+            {/* Privacy Badge */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Your documents are converted locally. No file contents are sent over the network.</span>
+            </div>
+
             {/* Header Section */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/50 p-6 border border-border/40 backdrop-blur-sm">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 text-primary">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
                         <FileType className="h-6 w-6" />
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold">Word to PDF</h2>
-                        <p className="text-sm text-muted-foreground">Convert .docx documents to professional PDF files instantly</p>
+                        <h2 className="text-xl font-bold">Word to PDF Converter</h2>
+                        <p className="text-xs text-muted-foreground">Convert DOCX documents to standard PDF files locally in your browser</p>
                     </div>
                 </div>
-                {(!mammoth || !pdflib) && (
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <Loader2 className="h-3 w-3 animate-spin" /> Loading Conversion Engine...
-                    </div>
-                )}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
                     <Button 
                         variant="outline" 
                         onClick={() => fileInputRef.current?.click()}
-                        className="border-primary/20 hover:border-primary/50"
+                        className="border-border hover:bg-muted/40 text-xs font-bold"
                     >
                         <Upload className="mr-2 h-4 w-4" /> {file ? "Change Document" : "Select Word File"}
                     </Button>
                     <Button 
-                        disabled={!file || isProcessing || !pdflib}
+                        disabled={!file || isProcessing}
                         onClick={generatePDF}
-                        className="bg-primary hover:bg-primary/90"
+                        className="bg-primary hover:bg-primary/90 text-xs font-bold text-white shadow-md shadow-primary/10"
                     >
                         {isProcessing ? (
-                            <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Processing...</>
+                            <><Loader2 className="mr-2 h-4 w-4 animate-spin text-white" /> Converting...</>
                         ) : (
-                            <><Download className="mr-2 h-4 w-4" /> Convert to PDF</>
+                            <><FileCheck className="mr-2 h-4 w-4" /> Convert to PDF</>
                         )}
                     </Button>
                 </div>
@@ -206,31 +153,26 @@ export default function WordToPDF() {
                     {!file ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-primary/20 hover:border-primary/40 bg-card/30 hover:bg-card/50 transition-all text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
                         >
-                            <div className="p-6 bg-primary/5 group-hover:scale-110 transition-transform">
+                            <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
                                 <FileText className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
                             </div>
-                            <h3 className="mt-6 text-xl font-bold">Upload Word Document</h3>
-                            <p className="mt-2 text-muted-foreground max-w-sm">
-                                Supported formats: .docx (Microsoft Word). Your document is processed locally and stays 100% private.
+                            <h3 className="mt-6 text-lg font-bold">Upload Word Document</h3>
+                            <p className="mt-2 text-xs text-muted-foreground max-w-xs leading-relaxed">
+                                Upload a `.docx` file. We parse the document structure in browser RAM to render page previews and export to PDF.
                             </p>
-                            <div className="mt-8 flex gap-3">
-                                <Badge variant="outline">DOCX</Badge>
-                                <Badge variant="outline">PDF</Badge>
-                                <Badge variant="outline">Private</Badge>
-                            </div>
                         </div>
                     ) : (
-                        <Card className="border-border/40 bg-white overflow-hidden min-h-[600px]">
-                            <CardHeader className="bg-muted/30 border-b border-border/40 py-4 flex flex-row items-center justify-between">
-                                <div className="flex items-center gap-2">
-                                    <FileCheck className="h-4 w-4 text-primary" />
-                                    <span className="text-xs font-bold uppercase tracking-widest">{file.name}</span>
+                        <Card className="border border-border/40 bg-white overflow-hidden min-h-[500px] shadow-lg rounded-3xl">
+                            <div className="bg-muted/15 border-b border-border/20 py-4 px-6 flex flex-row items-center justify-between">
+                                <div className="flex items-center gap-2 text-foreground">
+                                    <Eye className="h-4 w-4 text-primary" />
+                                    <span className="text-xs font-bold uppercase tracking-wider truncate max-w-xs">{file.name}</span>
                                 </div>
-                                <Badge variant="outline" className="border-primary/20 text-primary uppercase text-[10px]">Preview Mode</Badge>
-                            </CardHeader>
-                            <CardContent className="p-8 md:p-12 text-black">
+                                <Badge variant="outline" className="border-primary/20 text-primary uppercase text-[9px] font-bold">Local Preview</Badge>
+                            </div>
+                            <div className="p-8 md:p-12 text-black bg-white select-none">
                                 <div 
                                     ref={previewRef}
                                     className="prose prose-sm max-w-none word-preview"
@@ -238,64 +180,36 @@ export default function WordToPDF() {
                                 />
                                 {isProcessing && !previewHtml && (
                                     <div className="flex flex-col items-center justify-center py-24 gap-4">
-                                        <Loader2 className="h-8 w-8 animate-spin text-primary/40" />
-                                        <p className="text-sm text-muted-foreground animate-pulse">Rendering document...</p>
+                                        <Loader2 className="h-8 w-8 animate-spin text-primary/30" />
+                                        <p className="text-xs text-muted-foreground animate-pulse">Parsing Word file structure...</p>
                                     </div>
                                 )}
-                            </CardContent>
+                            </div>
                         </Card>
                     )}
                 </div>
 
-                {/* Sidebar Info */}
-                <div className="space-y-6">
-                    <Card className="border-border/40 bg-card/50 backdrop-blur-sm">
-                        <CardHeader className="pb-4 border-b border-border/40">
-                            <CardTitle className="text-sm font-bold flex items-center gap-2 uppercase tracking-widest">
-                                <Settings2 className="h-4 w-4 text-primary" /> Info
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 space-y-6">
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">How it works</h5>
-                                <p className="text-xs text-muted-foreground leading-relaxed">
-                                    We render your Word document to HTML and then capture it as a high-resolution PDF. This ensures maximum compatibility and formatting preservation.
-                                </p>
-                            </div>
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Format Support</h5>
-                                <p className="text-xs text-muted-foreground leading-relaxed">
-                                    Currently supports <strong>.docx</strong> files. Legacy .doc files are not supported yet.
-                                </p>
-                            </div>
-                        </CardContent>
+                {/* Right Side Info Bar */}
+                <div className="space-y-4">
+                    <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-4 text-xs leading-relaxed">
+                        <h4 className="font-bold text-sm text-foreground">Layout Fidelity</h4>
+                        <p className="text-muted-foreground">
+                            Mammoth focuses on translating paragraphs, headings, bullet lists, and standard tables from Word layouts into clean, semantic HTML formats, preserving content.
+                        </p>
                     </Card>
-
-                    <Card className="border-primary/20 bg-primary/5">
-                        <CardContent className="p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <AlertCircle className="h-5 w-5 text-primary" />
-                                <h4 className="text-sm font-bold uppercase tracking-widest">Quality Tip</h4>
-                            </div>
-                            <p className="text-xs text-muted-foreground leading-relaxed">
-                                For best results, use standard fonts and layouts in your Word document. Complex floating elements might shift slightly during conversion.
-                            </p>
-                        </CardContent>
-                    </Card>
+                    
+                    {downloadUrl && (
+                        <Card className="p-5 border border-emerald-500/20 bg-emerald-500/5 rounded-2xl space-y-3 text-xs leading-relaxed animate-in">
+                            <h4 className="font-bold text-sm text-emerald-600 dark:text-emerald-400">PDF Ready!</h4>
+                            <Button asChild className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-9">
+                                <a href={downloadUrl} download={`${file.name.replace(/\.docx$/i, "")}.pdf`}>
+                                    <Download className="w-4 h-4 mr-2" /> Download PDF
+                                </a>
+                            </Button>
+                        </Card>
+                    )}
                 </div>
             </div>
-            
-            <style jsx global>{`
-                .word-preview {
-                    font-family: 'Inter', sans-serif;
-                    line-height: 1.6;
-                }
-                .word-preview h1 { font-size: 2em; font-weight: bold; margin-bottom: 0.5em; }
-                .word-preview h2 { font-size: 1.5em; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em; }
-                .word-preview p { margin-bottom: 1em; }
-                .word-preview table { width: 100%; border-collapse: collapse; margin-bottom: 1em; }
-                .word-preview table td, .word-preview table th { border: 1px solid #ddd; padding: 8px; }
-            `}</style>
         </div>
     );
 }

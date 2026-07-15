@@ -3,16 +3,16 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import { 
     Upload, 
-    Pipette, 
     Copy, 
     ImageIcon,
-    RefreshCw,
     History,
     Check,
-    ZoomIn
+    Pipette,
+    ShieldCheck,
+    Palette
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
@@ -20,12 +20,13 @@ import { Input } from "@/components/ui/input";
 
 export default function ImageColorPicker() {
     const [image, setImage] = useState<string | null>(null);
-    const [pickedColor, setPickedColor] = useState<string>("#000000");
-    const [rgb, setRgb] = useState<{r: number, g: number, b: number}>({r: 0, g: 0, b: 0});
-    const [history, setHistory] = useState<string[]>([]);
+    const [pickedColor, setPickedColor] = useState<string>("#0F172A");
+    const [rgb, setRgb] = useState<{r: number, g: number, b: number}>({r: 15, g: 23, b: 42});
+    const [history, setHistory] = useState<string[]>(["#0F172A", "#3B82F6", "#10B981", "#EF4444"]);
     const [isHovering, setIsHovering] = useState(false);
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
     const [zoomPos, setZoomPos] = useState({ x: 0, y: 0 });
+    const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
     
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const imageRef = useRef<HTMLImageElement>(null);
@@ -40,14 +41,52 @@ export default function ImageColorPicker() {
                 setHistory([]);
             };
             reader.readAsDataURL(file);
-            toast.success("Image loaded successfully");
+            toast.success("Image loaded. Hover over the image to inspect colors.");
         } else if (file) {
             toast.error("Please select a valid image file");
         }
+        e.target.value = "";
     }, []);
 
     const rgbToHex = (r: number, g: number, b: number) => {
         return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();
+    };
+
+    const rgbToHsl = (r: number, g: number, b: number) => {
+        r /= 255; g /= 255; b /= 255;
+        const max = Math.max(r, g, b), min = Math.min(r, g, b);
+        let h = 0, s = 0, l = (max + min) / 2;
+
+        if (max !== min) {
+            const d = max - min;
+            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+            switch (max) {
+                case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                case g: h = (b - r) / d + 2; break;
+                case b: h = (r - g) / d + 4; break;
+            }
+            h /= 6;
+        }
+
+        return `hsl(${Math.round(h * 360)}, ${Math.round(s * 100)}%, ${Math.round(l * 100)}%)`;
+    };
+
+    const rgbToCmyk = (r: number, g: number, b: number) => {
+        let c = 1 - (r / 255);
+        let m = 1 - (g / 255);
+        let y = 1 - (b / 255);
+        let k = Math.min(c, m, y);
+
+        if (k === 1) {
+            return `cmyk(0%, 0%, 0%, 100%)`;
+        }
+
+        c = ((c - k) / (1 - k)) * 100;
+        m = ((m - k) / (1 - k)) * 100;
+        y = ((y - k) / (1 - k)) * 100;
+        k = k * 100;
+
+        return `cmyk(${Math.round(c)}%, ${Math.round(m)}%, ${Math.round(y)}%, ${Math.round(k)}%)`;
     };
 
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -57,7 +96,7 @@ export default function ImageColorPicker() {
         const x = Math.floor(e.clientX - rect.left);
         const y = Math.floor(e.clientY - rect.top);
         
-        // Calculate original coordinates (account for scaling)
+        // Calculate original coordinate layout (mapping scaling variables)
         const scaleX = imageRef.current.naturalWidth / rect.width;
         const scaleY = imageRef.current.naturalHeight / rect.height;
         const origX = Math.floor(x * scaleX);
@@ -68,21 +107,32 @@ export default function ImageColorPicker() {
 
         const ctx = canvasRef.current.getContext("2d", { willReadFrequently: true });
         if (ctx) {
-            const pixel = ctx.getImageData(origX, origY, 1, 1).data;
-            const r = pixel[0];
-            const g = pixel[1];
-            const b = pixel[2];
-            setRgb({ r, g, b });
-            setPickedColor(rgbToHex(r, g, b));
+            try {
+                const pixel = ctx.getImageData(origX, origY, 1, 1).data;
+                const r = pixel[0];
+                const g = pixel[1];
+                const b = pixel[2];
+                setRgb({ r, g, b });
+                setPickedColor(rgbToHex(r, g, b));
+            } catch (err) {
+                // Cross origin canvas fallback
+            }
         }
     };
 
     const handlePickColor = () => {
         if (pickedColor) {
-            setHistory(prev => [pickedColor, ...prev.filter(c => c !== pickedColor)].slice(0, 12));
+            setHistory(prev => [pickedColor, ...prev.filter(c => c !== pickedColor)].slice(0, 10));
             navigator.clipboard.writeText(pickedColor);
-            toast.success(`Copied ${pickedColor} to clipboard`);
+            toast.success(`Copied HEX code: ${pickedColor}`);
         }
+    };
+
+    const copyFormatText = (text: string, formatId: string) => {
+        navigator.clipboard.writeText(text);
+        setCopiedFormat(formatId);
+        setTimeout(() => setCopiedFormat(null), 1500);
+        toast.success(`Copied ${formatId.toUpperCase()} value: ${text}`);
     };
 
     useEffect(() => {
@@ -101,41 +151,33 @@ export default function ImageColorPicker() {
         }
     }, [image]);
 
-    const copyToClipboard = (text: string) => {
-        navigator.clipboard.writeText(text);
-        toast.success(`Copied ${text}`);
-    };
-
     return (
-        <div className="space-y-8 animate-in fade-in duration-700">
+        <div className="space-y-8 max-w-5xl mx-auto">
+            {/* Privacy Badge */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Image sampling and color calculations run locally in memory. No uploads.</span>
+            </div>
+
             {/* Header Section */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/50 p-6 border border-border/40 rounded-none backdrop-blur-sm">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 text-primary">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
                         <Pipette className="h-6 w-6" />
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold">Image Color Picker</h2>
-                        <p className="text-sm text-muted-foreground">Extract hex, rgb, and hsl color codes from any image instantly</p>
+                        <h2 className="text-xl font-bold">Image Color Picker</h2>
+                        <p className="text-xs text-muted-foreground">Pick exact Hex, RGB, HSL, and CMYK color codes from images locally</p>
                     </div>
                 </div>
                 <div className="flex items-center gap-2">
                     <Button 
                         variant="outline" 
                         onClick={() => fileInputRef.current?.click()}
-                        className="rounded-none border-primary/20 hover:border-primary/50"
+                        className="border-border hover:bg-muted/40 text-xs font-bold"
                     >
-                        <Upload className="mr-2 h-4 w-4" /> {image ? "Change Image" : "Upload Image"}
+                        <Upload className="mr-2 h-4 w-4" /> {image ? "Change Image" : "Select Image"}
                     </Button>
-                    {image && (
-                        <Button 
-                            variant="ghost" 
-                            onClick={() => setImage(null)}
-                            className="rounded-none hover:bg-destructive/10 hover:text-destructive"
-                        >
-                            <RefreshCw className="mr-2 h-4 w-4" /> Reset
-                        </Button>
-                    )}
                 </div>
                 <input 
                     type="file" 
@@ -146,158 +188,188 @@ export default function ImageColorPicker() {
                 />
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-                {/* Main Content Area */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                {/* Main Image Canvas View */}
                 <div className="lg:col-span-3 space-y-6">
                     {!image ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-primary/20 hover:border-primary/40 bg-card/30 hover:bg-card/50 transition-all rounded-none text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
                         >
-                            <div className="p-6 bg-primary/5 rounded-none group-hover:scale-110 transition-transform">
-                                <ImageIcon className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
+                            <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
+                                <Pipette className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
                             </div>
-                            <h3 className="mt-6 text-xl font-bold">Upload Image to Pick Colors</h3>
-                            <p className="mt-2 text-muted-foreground max-w-sm">
-                                Get hex codes from your photos. All processing happens in your browser for 100% privacy.
+                            <h3 className="mt-6 text-lg font-bold">Upload Image to Pick Colors</h3>
+                            <p className="mt-2 text-xs text-muted-foreground max-w-xs leading-relaxed">
+                                Upload a design draft, logo, or image. Hover and click anywhere on the viewport to grab precise color values.
                             </p>
-                            <div className="mt-8 flex gap-3">
-                                <Badge variant="outline">HEX</Badge>
-                                <Badge variant="outline">RGB</Badge>
-                                <Badge variant="outline">HSL</Badge>
-                            </div>
                         </div>
                     ) : (
-                        <div className="relative group cursor-crosshair overflow-hidden border border-border/40 bg-muted/20">
-                            <div 
-                                className="relative inline-block"
-                                onMouseMove={handleMouseMove}
-                                onMouseEnter={() => setIsHovering(true)}
-                                onMouseLeave={() => setIsHovering(false)}
-                                onClick={handlePickColor}
-                            >
-                                <img 
-                                    ref={imageRef}
-                                    src={image} 
-                                    alt="Color Picker Source" 
-                                    className="max-w-full block select-none"
-                                />
-                                
-                                {isHovering && (
-                                    <div 
-                                        className="absolute pointer-events-none border-2 border-white shadow-2xl rounded-full w-24 h-24 overflow-hidden -translate-x-1/2 -translate-y-1/2"
-                                        style={{ 
-                                            left: mousePos.x, 
-                                            top: mousePos.y,
-                                            boxShadow: '0 0 0 2px rgba(0,0,0,0.2)'
-                                        }}
-                                    >
-                                        <canvas 
-                                            ref={canvasRef} 
-                                            className="hidden"
-                                        />
+                        <Card className="border border-border/40 bg-white overflow-hidden shadow-lg rounded-3xl">
+                            <div className="bg-muted/15 border-b border-border/20 py-4 px-6 flex flex-row items-center justify-between">
+                                <div className="flex items-center gap-2 text-foreground">
+                                    <ImageIcon className="h-4 w-4 text-primary" />
+                                    <span className="text-xs font-bold uppercase tracking-wider">Hover & Click to Capture</span>
+                                </div>
+                                <Badge variant="outline" className="border-primary/20 text-primary uppercase text-[9px] font-bold">Zoom Loupe Active</Badge>
+                            </div>
+                            <div className="p-8 flex items-center justify-center bg-muted/5 relative overflow-hidden select-none">
+                                <div 
+                                    className="relative cursor-crosshair max-w-full"
+                                    onMouseMove={handleMouseMove}
+                                    onMouseEnter={() => setIsHovering(true)}
+                                    onMouseLeave={() => setIsHovering(false)}
+                                    onClick={handlePickColor}
+                                >
+                                    <img 
+                                        ref={imageRef}
+                                        src={image} 
+                                        alt="Color Picker Board" 
+                                        className="max-h-[400px] object-contain rounded-xl border pointer-events-none" 
+                                    />
+                                    
+                                    {/* Magnifying Loupe Circular Overlay */}
+                                    {isHovering && (
                                         <div 
-                                            className="w-full h-full"
                                             style={{
-                                                backgroundImage: `url(${image})`,
-                                                backgroundPosition: `${-(zoomPos.x * 4) + 48}px ${-(zoomPos.y * 4) + 48}px`,
-                                                backgroundSize: `${(imageRef.current?.naturalWidth || 0) * 4}px ${(imageRef.current?.naturalHeight || 0) * 4}px`,
-                                                backgroundRepeat: 'no-repeat',
-                                                imageRendering: 'pixelated'
+                                                position: "absolute",
+                                                left: `${mousePos.x}px`,
+                                                top: `${mousePos.y}px`,
+                                                transform: "translate(-50%, -50%)",
+                                                pointerEvents: "none",
+                                                border: `4px solid ${pickedColor}`,
+                                                boxShadow: "0 10px 25px -5px rgba(0,0,0,0.3), inset 0 0 8px rgba(0,0,0,0.2)"
                                             }}
-                                        />
-                                        <div className="absolute inset-0 flex items-center justify-center">
-                                            <div className="w-1 h-1 bg-white ring-1 ring-black/50" />
+                                            className="w-16 h-16 rounded-full overflow-hidden z-30 bg-white flex items-center justify-center"
+                                        >
+                                            {/* Micro zoom background render using raw canvas scale mapping */}
+                                            <div 
+                                                style={{
+                                                    width: "100%",
+                                                    height: "100%",
+                                                    backgroundColor: pickedColor
+                                                }}
+                                                className="flex items-center justify-center"
+                                            >
+                                                <span className="text-[8px] text-white font-mono drop-shadow bg-black/40 px-1 rounded">
+                                                    {pickedColor}
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                )}
+                                    )}
+                                </div>
+                                
+                                <canvas ref={canvasRef} className="hidden" />
                             </div>
-                            <div className="absolute top-4 left-4 pointer-events-none">
-                                <Badge className="rounded-none bg-black/60 backdrop-blur-md border-none font-bold tracking-widest px-3 py-1">
-                                    Click to Pick
-                                </Badge>
-                            </div>
-                        </div>
+                        </Card>
                     )}
                 </div>
 
-                {/* Sidebar Controls */}
-                <div className="space-y-6">
-                    {/* Picked Color Display */}
-                    <Card className="rounded-none border-border/40 bg-card/50 backdrop-blur-sm">
-                        <CardHeader className="pb-4 border-b border-border/40">
-                            <CardTitle className="text-xs font-bold uppercase tracking-widest flex items-center gap-2">
-                                <ZoomIn className="h-4 w-4 text-primary" /> Active Color
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 space-y-6">
-                            <div className="flex flex-col items-center gap-4">
+                {/* Right Side Info & Values Panel */}
+                <div className="lg:col-span-2 space-y-6">
+                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-6">
+                        <h3 className="font-bold text-sm text-foreground flex items-center gap-1.5">
+                            <Palette className="w-4 h-4 text-primary" /> Color Inspector
+                        </h3>
+
+                        <div className="space-y-4">
+                            {/* Color Preview Block */}
+                            <div className="flex gap-4 items-center">
                                 <div 
-                                    className="w-full h-24 border border-border/40 shadow-inner"
                                     style={{ backgroundColor: pickedColor }}
+                                    className="w-16 h-16 rounded-2xl border border-border/40 shadow-inner shrink-0" 
                                 />
-                                <div className="w-full space-y-4">
-                                    <div className="space-y-2">
-                                        <Label className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">HEX Code</Label>
-                                        <div className="flex gap-2">
-                                            <Input readOnly value={pickedColor} className="rounded-none h-9 font-mono text-xs" />
-                                            <Button size="icon" variant="outline" className="rounded-none h-9 w-9 shrink-0" onClick={() => copyToClipboard(pickedColor)}>
-                                                <Copy className="h-4 w-4" />
-                                            </Button>
-                                        </div>
+                                <div className="min-w-0 flex-1">
+                                    <h4 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Active Capture</h4>
+                                    <p className="text-lg font-black text-foreground font-mono mt-0.5">{pickedColor}</p>
+                                </div>
+                            </div>
+
+                            {/* Color Formats Inputs */}
+                            <div className="space-y-3.5 pt-2">
+                                <div className="space-y-1">
+                                    <Label className="text-[9px] font-bold text-muted-foreground uppercase">HEX Code</Label>
+                                    <div className="relative">
+                                        <Input readOnly value={pickedColor} className="font-mono text-xs h-9 bg-background/40 pr-10" />
+                                        <button 
+                                            onClick={() => copyFormatText(pickedColor, "hex")}
+                                            className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded"
+                                        >
+                                            {copiedFormat === "hex" ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Copy className="w-3.5 h-3.5 text-muted-foreground" />}
+                                        </button>
                                     </div>
-                                    <div className="space-y-2">
-                                        <Label className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">RGB Values</Label>
-                                        <div className="flex gap-2">
-                                            <Input readOnly value={`${rgb.r}, ${rgb.g}, ${rgb.b}`} className="rounded-none h-9 font-mono text-xs" />
-                                            <Button size="icon" variant="outline" className="rounded-none h-9 w-9 shrink-0" onClick={() => copyToClipboard(`rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`)}>
-                                                <Copy className="h-4 w-4" />
-                                            </Button>
-                                        </div>
+                                </div>
+
+                                <div className="space-y-1">
+                                    <Label className="text-[9px] font-bold text-muted-foreground uppercase">RGB Value</Label>
+                                    <div className="relative">
+                                        <Input readOnly value={`rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`} className="font-mono text-xs h-9 bg-background/40 pr-10" />
+                                        <button 
+                                            onClick={() => copyFormatText(`rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`, "rgb")}
+                                            className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded"
+                                        >
+                                            {copiedFormat === "rgb" ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Copy className="w-3.5 h-3.5 text-muted-foreground" />}
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div className="space-y-1">
+                                    <Label className="text-[9px] font-bold text-muted-foreground uppercase">HSL Format</Label>
+                                    <div className="relative">
+                                        <Input readOnly value={rgbToHsl(rgb.r, rgb.g, rgb.b)} className="font-mono text-xs h-9 bg-background/40 pr-10" />
+                                        <button 
+                                            onClick={() => copyFormatText(rgbToHsl(rgb.r, rgb.g, rgb.b), "hsl")}
+                                            className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded"
+                                        >
+                                            {copiedFormat === "hsl" ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Copy className="w-3.5 h-3.5 text-muted-foreground" />}
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div className="space-y-1">
+                                    <Label className="text-[9px] font-bold text-muted-foreground uppercase">CMYK (Print)</Label>
+                                    <div className="relative">
+                                        <Input readOnly value={rgbToCmyk(rgb.r, rgb.g, rgb.b)} className="font-mono text-xs h-9 bg-background/40 pr-10" />
+                                        <button 
+                                            onClick={() => copyFormatText(rgbToCmyk(rgb.r, rgb.g, rgb.b), "cmyk")}
+                                            className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded"
+                                        >
+                                            {copiedFormat === "cmyk" ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Copy className="w-3.5 h-3.5 text-muted-foreground" />}
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                        </CardContent>
+                        </div>
                     </Card>
 
-                    {/* History */}
+                    {/* History Panel */}
                     {history.length > 0 && (
-                        <Card className="rounded-none border-border/40 bg-card/50 backdrop-blur-sm">
-                            <CardHeader className="pb-4 border-b border-border/40">
-                                <CardTitle className="text-xs font-bold uppercase tracking-widest flex items-center gap-2">
-                                    <History className="h-4 w-4 text-primary" /> Recent Colors
-                                </CardTitle>
-                            </CardHeader>
-                            <CardContent className="pt-6">
-                                <div className="grid grid-cols-4 gap-2">
-                                    {history.map((color, idx) => (
-                                        <button 
-                                            key={idx}
-                                            onClick={() => {
-                                                setPickedColor(color);
-                                                copyToClipboard(color);
-                                            }}
-                                            className="aspect-square border border-border/40 hover:scale-110 transition-transform shadow-sm"
-                                            style={{ backgroundColor: color }}
-                                            title={color}
-                                        />
-                                    ))}
-                                </div>
-                            </CardContent>
+                        <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4">
+                            <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
+                                <History className="w-3.5 h-3.5" /> Recent Color Swatches
+                            </h3>
+                            <div className="grid grid-cols-5 gap-3">
+                                {history.map((color, i) => (
+                                    <button
+                                        key={`${color}-${i}`}
+                                        style={{ backgroundColor: color }}
+                                        onClick={() => {
+                                            setPickedColor(color);
+                                            // Parse hex back to RGB to update sliders
+                                            const r = parseInt(color.slice(1, 3), 16) || 0;
+                                            const g = parseInt(color.slice(3, 5), 16) || 0;
+                                            const b = parseInt(color.slice(5, 7), 16) || 0;
+                                            setRgb({ r, g, b });
+                                            navigator.clipboard.writeText(color);
+                                            toast.success(`HEX code loaded and copied: ${color}`);
+                                        }}
+                                        className="aspect-square w-full rounded-xl border border-border/20 shadow-sm hover:scale-105 active:scale-95 transition-all"
+                                        title={color}
+                                    />
+                                ))}
+                            </div>
                         </Card>
                     )}
-
-                    <Card className="rounded-none border-primary/20 bg-primary/5">
-                        <CardContent className="p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <Check className="h-5 w-5 text-primary" />
-                                <h4 className="text-sm font-bold uppercase tracking-widest">Designer Tip</h4>
-                            </div>
-                            <p className="text-xs text-muted-foreground leading-relaxed">
-                                Click anywhere on the image to save the color to your history and copy it to your clipboard automatically.
-                            </p>
-                        </CardContent>
-                    </Card>
                 </div>
             </div>
         </div>

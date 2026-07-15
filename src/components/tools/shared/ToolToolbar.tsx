@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Share2, Link as LinkIcon, Code, Check } from "lucide-react";
+import { Share2, Link as LinkIcon, Code, Check, Bookmark, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 interface ToolToolbarProps {
 	toolId: string;
@@ -13,13 +14,25 @@ interface ToolToolbarProps {
 export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 	const [shareCopied, setShareCopied] = useState(false);
 	const [stateCopied, setStateCopied] = useState(false);
+	const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+	const [isInstallable, setIsInstallable] = useState(false);
+
+	// PWA Install prompt listener
+	useEffect(() => {
+		const handleBeforeInstall = (e: Event) => {
+			e.preventDefault();
+			setDeferredPrompt(e);
+			setIsInstallable(true);
+		};
+		window.addEventListener("beforeinstallprompt", handleBeforeInstall);
+		return () => window.removeEventListener("beforeinstallprompt", handleBeforeInstall);
+	}, []);
 
 	// Automated URL State Rehydration: checks if "?input=..." is present in URL and populates fields
 	useEffect(() => {
 		const searchParams = new URLSearchParams(window.location.search);
 		const inputVal = searchParams.get("input");
 		if (inputVal) {
-			// Find the first visible input or textarea in the tool interaction area
 			setTimeout(() => {
 				const activeFormEl = document.querySelector(
 					"main section.bg-card\\/30 textarea, main section.bg-card\\/30 input[type='text']"
@@ -27,7 +40,6 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 
 				if (activeFormEl) {
 					activeFormEl.value = inputVal;
-					// Dispatch react-friendly input event to trigger local tool calculations
 					const event = new Event("input", { bubbles: true });
 					activeFormEl.dispatchEvent(event);
 				}
@@ -61,7 +73,6 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 	};
 
 	const handleCopyState = () => {
-		// Scrape the primary textarea or input value in the tool area
 		const activeFormEl = document.querySelector(
 			"main section.bg-card\\/30 textarea, main section.bg-card\\/30 input[type='text']"
 		) as HTMLTextAreaElement | HTMLInputElement | null;
@@ -80,6 +91,23 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 		const embedSection = document.querySelector("section[class*='border-border/40']");
 		if (embedSection) {
 			embedSection.scrollIntoView({ behavior: "smooth", block: "center" });
+		}
+	};
+
+	const handleBookmark = () => {
+		toast.info("Press Cmd + D (or Ctrl + D) to bookmark this tool in your browser!", {
+			duration: 4000,
+		});
+	};
+
+	const handleInstallApp = async () => {
+		if (deferredPrompt) {
+			deferredPrompt.prompt();
+			const { outcome } = await deferredPrompt.userChoice;
+			if (outcome === "accepted") {
+				setIsInstallable(false);
+				setDeferredPrompt(null);
+			}
 		}
 	};
 
@@ -132,6 +160,28 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 				<Code className="h-3.5 w-3.5 text-primary" />
 				<span>Embed Tool</span>
 			</Button>
+
+			<Button
+				variant="outline"
+				size="sm"
+				onClick={handleBookmark}
+				className="h-8 text-xs gap-1.5 rounded-full"
+			>
+				<Bookmark className="h-3.5 w-3.5 text-primary" />
+				<span>Bookmark</span>
+			</Button>
+
+			{isInstallable && (
+				<Button
+					variant="outline"
+					size="sm"
+					onClick={handleInstallApp}
+					className="h-8 text-xs gap-1.5 rounded-full bg-primary/10 border-primary/20 hover:bg-primary/20 text-primary"
+				>
+					<Download className="h-3.5 w-3.5 text-primary" />
+					<span>Install App</span>
+				</Button>
+			)}
 		</div>
 	);
 }

@@ -1,92 +1,61 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef } from "react";
 import { 
     Upload, 
-    FileText, 
     Download, 
-    FileType,
+    FileText,
     Loader2,
-    Settings2,
-    AlertCircle,
-    CheckCircle2
+    ShieldCheck,
+    FileCheck,
+    FileType,
+    Eye
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Progress } from "@/components/ui/progress";
-
-declare global {
-    interface Window {
-        pdfjsLib: any;
-        docx: any;
-    }
-}
+import { Label } from "@/components/ui/label";
 
 export default function PDFToWord() {
-    const [pdfjs, setPdfjs] = useState<any>(null);
-    const [docx, setDocx] = useState<any>(null);
     const [file, setFile] = useState<File | null>(null);
     const [isProcessing, setIsProcessing] = useState(false);
     const [progress, setProgress] = useState(0);
     const [extractedText, setExtractedText] = useState<string>("");
+    const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
 
-    useEffect(() => {
-        // Load PDF.js
-        if (!window.pdfjsLib) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js";
-            script.async = true;
-            script.onload = () => {
-                window.pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";
-                setPdfjs(window.pdfjsLib);
-            };
-            document.head.appendChild(script);
-        } else {
-            setPdfjs(window.pdfjsLib);
-        }
-
-        // Load docx
-        if (!window.docx) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/docx@8.2.2/build/index.min.js";
-            script.async = true;
-            script.onload = () => setDocx(window.docx);
-            document.head.appendChild(script);
-        } else {
-            setDocx(window.docx);
-        }
-    }, []);
-
-    const onFileChange = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const onFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         const selectedFile = e.target.files?.[0];
-        if (selectedFile && selectedFile.type === "application/pdf") {
+        if (selectedFile && (selectedFile.type === "application/pdf" || selectedFile.name.toLowerCase().endsWith(".pdf"))) {
             setFile(selectedFile);
             setExtractedText("");
-            toast.success("PDF loaded");
+            setDownloadUrl(null);
+            toast.success("PDF document loaded successfully.");
         } else if (selectedFile) {
             toast.error("Please select a valid PDF file");
         }
+        e.target.value = "";
     }, []);
 
     const convertToWord = async () => {
-        if (!pdfjs || !docx || !file) {
-            toast.error("Libraries are still loading...");
-            return;
-        }
+        if (!file) return;
 
         setIsProcessing(true);
         setProgress(0);
         try {
+            const pdfjsLib = await import("pdfjs-dist");
+            pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
+
+            const docx = await import("docx");
+
             const arrayBuffer = await file.arrayBuffer();
-            const loadingTask = pdfjs.getDocument(arrayBuffer);
+            const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
             const pdf = await loadingTask.promise;
             
             const numPages = pdf.numPages;
             let fullText = "";
-
             const sections = [];
 
             for (let i = 1; i <= numPages; i++) {
@@ -95,10 +64,10 @@ export default function PDFToWord() {
                 const pageText = textContent.items.map((item: any) => item.str).join(" ");
                 fullText += pageText + "\n\n";
                 
-                // Create docx paragraph for this page
+                // Create docx paragraphs for this page, converting string text to object text runs
                 const paragraphs = textContent.items.map((item: any) => {
                     return new docx.Paragraph({
-                        children: [new docx.TextRun(item.str)],
+                        children: [new docx.TextRun({ text: item.str })],
                     });
                 });
 
@@ -107,10 +76,10 @@ export default function PDFToWord() {
                     children: paragraphs,
                 });
 
-                setProgress(Math.round((i / numPages) * 50));
+                setProgress(Math.round((i / numPages) * 60));
             }
 
-            setExtractedText(fullText.substring(0, 1000) + "...");
+            setExtractedText(fullText.substring(0, 1500) + (fullText.length > 1500 ? "..." : ""));
 
             const doc = new docx.Document({
                 sections: sections,
@@ -118,59 +87,54 @@ export default function PDFToWord() {
 
             const blob = await docx.Packer.toBlob(doc);
             const url = URL.createObjectURL(blob);
-            const link = document.createElement("a");
-            link.href = url;
-            link.download = `${file.name.replace(".pdf", "")}.docx`;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
+            setDownloadUrl(url);
             
             setProgress(100);
-            toast.success("PDF converted to Word successfully!");
+            toast.success("PDF converted to Word document successfully!");
         } catch (error) {
             console.error(error);
-            toast.error("Failed to convert PDF to Word");
+            toast.error("Failed to convert PDF to Word document.");
         } finally {
             setIsProcessing(false);
         }
     };
 
     return (
-        <div className="space-y-8 animate-in fade-in duration-700">
+        <div className="space-y-8 max-w-4xl mx-auto">
+            {/* Privacy Badge */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Your documents are converted locally. No file contents are sent over the network.</span>
+            </div>
+
             {/* Header Section */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/50 p-6 border border-border/40 backdrop-blur-sm">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 text-primary">
-                        <FileText className="h-6 w-6" />
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
+                        <FileType className="h-6 w-6" />
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold">PDF to Word</h2>
-                        <p className="text-sm text-muted-foreground">Convert PDF documents into editable Microsoft Word (.docx) files</p>
+                        <h2 className="text-xl font-bold">PDF to Word Converter</h2>
+                        <p className="text-xs text-muted-foreground">Convert PDF files into editable Microsoft Word (.docx) documents locally</p>
                     </div>
                 </div>
-                {(!pdfjs || !docx) && (
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <Loader2 className="h-3 w-3 animate-spin" /> Loading Engine...
-                    </div>
-                )}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
                     <Button 
                         variant="outline" 
                         onClick={() => fileInputRef.current?.click()}
-                        className="border-primary/20 hover:border-primary/50"
+                        className="border-border hover:bg-muted/40 text-xs font-bold"
                     >
                         <Upload className="mr-2 h-4 w-4" /> {file ? "Change PDF" : "Select PDF"}
                     </Button>
                     <Button 
-                        disabled={!file || isProcessing || !docx}
+                        disabled={!file || isProcessing}
                         onClick={convertToWord}
-                        className="bg-primary hover:bg-primary/90"
+                        className="bg-primary hover:bg-primary/90 text-xs font-bold text-white shadow-md shadow-primary/10"
                     >
                         {isProcessing ? (
-                            <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {progress}%</>
+                            <><Loader2 className="mr-2 h-4 w-4 animate-spin text-white" /> Converting...</>
                         ) : (
-                            <><Download className="mr-2 h-4 w-4" /> Convert to Word</>
+                            <><FileCheck className="mr-2 h-4 w-4" /> Convert to Word</>
                         )}
                     </Button>
                 </div>
@@ -189,109 +153,64 @@ export default function PDFToWord() {
                     {!file ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-primary/20 hover:border-primary/40 bg-card/30 hover:bg-card/50 transition-all text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
                         >
-                            <div className="p-6 bg-primary/5 group-hover:scale-110 transition-transform">
-                                <FileType className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
+                            <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
+                                <FileText className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
                             </div>
-                            <h3 className="mt-6 text-xl font-bold">Upload PDF to Convert</h3>
-                            <p className="mt-2 text-muted-foreground max-w-sm">
-                                Extract text and formatting from your PDF into a Word document. No files are uploaded to our servers.
+                            <h3 className="mt-6 text-lg font-bold">Upload PDF Document</h3>
+                            <p className="mt-2 text-xs text-muted-foreground max-w-xs leading-relaxed">
+                                Upload a PDF document. We extract text contents and build an editable `.docx` Word file locally in browser RAM.
                             </p>
-                            <div className="mt-8 flex gap-3">
-                                <Badge variant="outline">PDF</Badge>
-                                <Badge variant="outline">DOCX</Badge>
-                                <Badge variant="outline">Editable</Badge>
-                            </div>
                         </div>
                     ) : (
-                        <Card className="border-border/40 bg-card/40 overflow-hidden">
-                            <div className="p-12 flex flex-col items-center justify-center bg-muted/30 border-b border-border/40">
-                                <div className="p-6 bg-primary/10 mb-6">
-                                    <FileText className="h-16 w-16 text-primary" />
+                        <Card className="border border-border/40 bg-white overflow-hidden min-h-[400px] shadow-lg rounded-3xl">
+                            <div className="bg-muted/15 border-b border-border/20 py-4 px-6 flex flex-row items-center justify-between">
+                                <div className="flex items-center gap-2 text-foreground">
+                                    <Eye className="h-4 w-4 text-primary" />
+                                    <span className="text-xs font-bold uppercase tracking-wider truncate max-w-xs">{file.name}</span>
                                 </div>
-                                <h3 className="text-xl font-bold truncate max-w-md">{file.name}</h3>
-                                <div className="mt-4 flex gap-4">
-                                    <Badge variant="secondary" className="">{(file.size / (1024 * 1024)).toFixed(2)} MB</Badge>
-                                    <Badge variant="outline" className="border-primary/20 text-primary">Ready to Convert</Badge>
-                                </div>
+                                <Badge variant="outline" className="border-primary/20 text-primary uppercase text-[9px] font-bold">Extracted Text Preview</Badge>
                             </div>
-                            <CardContent className="p-8 space-y-6">
-                                {isProcessing && (
-                                    <div className="space-y-4">
-                                        <div className="flex justify-between text-xs font-bold uppercase tracking-widest">
-                                            <span>Converting Document...</span>
-                                            <span>{progress}%</span>
-                                        </div>
-                                        <Progress value={progress} className="h-1 bg-primary/10" />
+                            <div className="p-8 md:p-12 text-black bg-white select-none">
+                                {extractedText ? (
+                                    <pre className="text-xs font-mono text-muted-foreground whitespace-pre-wrap leading-relaxed max-h-[350px] overflow-y-auto pr-1">
+                                        {extractedText}
+                                    </pre>
+                                ) : isProcessing ? (
+                                    <div className="flex flex-col items-center justify-center py-24 gap-4">
+                                        <Loader2 className="h-8 w-8 animate-spin text-primary/30" />
+                                        <p className="text-xs text-muted-foreground animate-pulse">Extracting text layers locally...</p>
+                                    </div>
+                                ) : (
+                                    <div className="text-center py-24 text-muted-foreground text-xs font-medium">
+                                        Click "Convert to Word" above to extract content layers.
                                     </div>
                                 )}
-                                
-                                {extractedText && (
-                                    <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4">
-                                        <div className="flex items-center gap-2 text-primary">
-                                            <CheckCircle2 className="h-5 w-5" />
-                                            <h4 className="font-bold">Conversion Complete</h4>
-                                        </div>
-                                        <div className="p-4 bg-muted/50 border border-border/40 italic text-xs text-muted-foreground">
-                                            Preview: {extractedText}
-                                        </div>
-                                        <p className="text-sm text-muted-foreground">
-                                            Your editable Word document has been generated and downloaded.
-                                        </p>
-                                    </div>
-                                )}
-                                
-                                <div className="pt-4 border-t border-border/40 flex justify-end">
-                                    <Button 
-                                        size="lg"
-                                        disabled={isProcessing}
-                                        onClick={convertToWord}
-                                        className="px-12 h-14 font-bold uppercase tracking-widest"
-                                    >
-                                        {isProcessing ? "Processing..." : extractedText ? "Convert Again" : "Start Conversion"}
-                                    </Button>
-                                </div>
-                            </CardContent>
+                            </div>
                         </Card>
                     )}
                 </div>
 
-                {/* Sidebar Info */}
-                <div className="space-y-6">
-                    <Card className="border-border/40 bg-card/50 backdrop-blur-sm">
-                        <CardHeader className="pb-4 border-b border-border/40">
-                            <CardTitle className="text-sm font-bold flex items-center gap-2 uppercase tracking-widest">
-                                <Settings2 className="h-4 w-4 text-primary" /> Info
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 space-y-6">
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Layout Preservation</h5>
-                                <p className="text-xs text-muted-foreground leading-relaxed">
-                                    Our converter attempts to preserve the text flow and basic styling. For complex layouts with many images, some adjustments might be needed in Word.
-                                </p>
-                            </div>
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Privacy Guarantee</h5>
-                                <p className="text-xs text-muted-foreground leading-relaxed">
-                                    We use client-side technologies to process your PDF. Your data never leaves your computer, making it more secure than server-based converters.
-                                </p>
-                            </div>
-                        </CardContent>
+                {/* Right Side Info Bar */}
+                <div className="space-y-4">
+                    <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-4 text-xs leading-relaxed">
+                        <h4 className="font-bold text-sm text-foreground">Content fidelity</h4>
+                        <p className="text-muted-foreground">
+                            This tool extracts the text layer from your PDF document and outputs a styled DOCX page tree. Rotated text boxes or scanner images are not supported.
+                        </p>
                     </Card>
-
-                    <Card className="border-primary/20 bg-primary/5">
-                        <CardContent className="p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <AlertCircle className="h-5 w-5 text-primary" />
-                                <h4 className="text-sm font-bold uppercase tracking-widest">Limitations</h4>
-                            </div>
-                            <p className="text-xs text-muted-foreground leading-relaxed">
-                                Scanned PDFs (images of text) will not be editable unless they have been OCRed. This tool works best with text-based PDFs.
-                            </p>
-                        </CardContent>
-                    </Card>
+                    
+                    {downloadUrl && (
+                        <Card className="p-5 border border-emerald-500/20 bg-emerald-500/5 rounded-2xl space-y-3 text-xs leading-relaxed animate-in">
+                            <h4 className="font-bold text-sm text-emerald-600 dark:text-emerald-400">Word File Ready!</h4>
+                            <Button asChild className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-9">
+                                <a href={downloadUrl} download={`${file.name.replace(/\.pdf$/i, "")}.docx`}>
+                                    <Download className="w-4 h-4 mr-2" /> Download DOCX
+                                </a>
+                            </Button>
+                        </Card>
+                    )}
                 </div>
             </div>
         </div>

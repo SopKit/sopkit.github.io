@@ -1,94 +1,46 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef } from "react";
 import { 
     Upload, 
-    ArrowLeftRight, 
     Download,
     Loader2,
-    Settings2,
-    LayoutGrid,
+    FileText,
+    ShieldCheck,
     ChevronLeft,
     ChevronRight,
-    ArrowUpDown
+    ArrowLeftRight,
+    RefreshCw
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Progress } from "@/components/ui/progress";
 
-declare global {
-    interface Window {
-        pdfjsLib: any;
-        PDFLib: any;
-    }
-}
-
 interface PageData {
     id: string;
-    originalIndex: number;
+    originalIndex: number; // 0-indexed
     dataUrl: string;
 }
 
 export default function PDFRearrange() {
-    const [pdfjs, setPdfjs] = useState<any>(null);
-    const [pdflib, setPdflib] = useState<any>(null);
     const [file, setFile] = useState<File | null>(null);
     const [pages, setPages] = useState<PageData[]>([]);
     const [isProcessing, setIsProcessing] = useState(false);
     const [loadingProgress, setLoadingProgress] = useState(0);
-    const [loadError, setLoadError] = useState<string | null>(null);
-
     const fileInputRef = useRef<HTMLInputElement>(null);
 
-    useEffect(() => {
-        // Load PDF.js
-        if (!window.pdfjsLib) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js";
-            script.async = true;
-            script.onload = () => {
-                window.pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";
-                setPdfjs(window.pdfjsLib);
-            };
-            script.onerror = () => setLoadError("Failed to load PDF processing library. Please check your internet connection and refresh.");
-            document.head.appendChild(script);
-        } else {
-            setPdfjs(window.pdfjsLib);
-        }
-
-        // Load PDF-Lib
-        if (!window.PDFLib) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-            script.async = true;
-            script.onload = () => setPdflib(window.PDFLib);
-            script.onerror = () => setLoadError("Failed to load PDF processing library. Please check your internet connection and refresh.");
-            document.head.appendChild(script);
-        } else {
-            setPdflib(window.PDFLib);
-        }
-    }, []);
-
-    const onFileChange = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
-        const selectedFile = e.target.files?.[0];
-        if (selectedFile && selectedFile.type === "application/pdf") {
-            setFile(selectedFile);
-            setPages([]);
-            loadPreviews(selectedFile);
-        } else if (selectedFile) {
-            toast.error("Please select a valid PDF file");
-        }
-    }, [pdfjs]);
-
     const loadPreviews = async (pdfFile: File) => {
-        if (!pdfjs) return;
         setIsProcessing(true);
         setLoadingProgress(0);
         try {
+            // Dynamically import pdfjs-dist
+            const pdfjsLib = await import("pdfjs-dist");
+            pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
+
             const arrayBuffer = await pdfFile.arrayBuffer();
-            const loadingTask = pdfjs.getDocument(arrayBuffer);
+            const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
             const pdf = await loadingTask.promise;
             
             const numPages = pdf.numPages;
@@ -96,7 +48,8 @@ export default function PDFRearrange() {
 
             for (let i = 1; i <= numPages; i++) {
                 const page = await pdf.getPage(i);
-                const viewport = page.getViewport({ scale: 0.4 });
+                const viewport = page.getViewport({ scale: 0.35 });
+                
                 const canvas = document.createElement("canvas");
                 const context = canvas.getContext("2d");
                 if (!context) continue;
@@ -107,102 +60,148 @@ export default function PDFRearrange() {
                 await page.render({ canvasContext: context, viewport }).promise;
                 
                 newPages.push({
-                    id: Math.random().toString(36).substr(2, 9),
+                    id: Math.random().toString(36).substring(2, 9),
                     originalIndex: i - 1,
-                    dataUrl: canvas.toDataURL("image/png")
+                    dataUrl: canvas.toDataURL("image/jpeg", 0.75)
                 });
                 
                 setLoadingProgress(Math.round((i / numPages) * 100));
             }
             
             setPages(newPages);
-            toast.success(`PDF loaded with ${numPages} pages`);
+            toast.success(`PDF loaded with ${numPages} pages.`);
         } catch (error) {
             console.error(error);
-            toast.error("Failed to load PDF previews");
+            toast.error("Failed to load PDF previews locally.");
         } finally {
             setIsProcessing(false);
         }
     };
 
-    const movePage = (index: number, direction: 'left' | 'right') => {
-        const newPages = [...pages];
-        const targetIndex = direction === 'left' ? index - 1 : index + 1;
-        
+    const onFileChange = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const selectedFile = e.target.files?.[0];
+        if (selectedFile && (selectedFile.type === "application/pdf" || selectedFile.name.toLowerCase().endsWith(".pdf"))) {
+            setFile(selectedFile);
+            setPages([]);
+            await loadPreviews(selectedFile);
+        } else if (selectedFile) {
+            toast.error("Please select a valid PDF file");
+        }
+        e.target.value = ""; // Reset
+    }, []);
+
+    const movePage = (index: number, direction: -1 | 1) => {
+        const targetIndex = index + direction;
         if (targetIndex < 0 || targetIndex >= pages.length) return;
-        
-        [newPages[index], newPages[targetIndex]] = [newPages[targetIndex], newPages[index]];
+
+        const newPages = [...pages];
+        const temp = newPages[index];
+        newPages[index] = newPages[targetIndex];
+        newPages[targetIndex] = temp;
         setPages(newPages);
     };
 
-    const savePDF = async () => {
-        if (!pdflib || !file) return;
+    const reversePages = () => {
+        setPages([...pages].reverse());
+        toast.info("Pages order reversed!");
+    };
+
+    const saveRearrangedPDF = async () => {
+        if (!file || pages.length === 0) {
+            toast.error("Please upload a PDF file first");
+            return;
+        }
+
         setIsProcessing(true);
         try {
-            const { PDFDocument } = pdflib;
+            const { PDFDocument } = await import("pdf-lib");
             const arrayBuffer = await file.arrayBuffer();
-            const pdfDoc = await PDFDocument.load(arrayBuffer);
+            const originalDoc = await PDFDocument.load(arrayBuffer);
             
-            const newPdfDoc = await PDFDocument.create();
-            const originalPages = await newPdfDoc.copyPages(pdfDoc, pdfDoc.getPageIndices());
+            // Create a brand new PDF
+            const newDoc = await PDFDocument.create();
 
-            // Add pages in the new order
-            for (const page of pages) {
-                newPdfDoc.addPage(originalPages[page.originalIndex]);
-            }
+            // Map order of original pages to copy
+            const pagesToCopy = pages.map(p => p.originalIndex);
+            
+            // Copy pages in the new user-defined order
+            const copiedPages = await newDoc.copyPages(originalDoc, pagesToCopy);
+            copiedPages.forEach(page => newDoc.addPage(page));
 
-            const pdfBytes = await newPdfDoc.save();
-            const blob = new Blob([pdfBytes.buffer], { type: "application/pdf" });
+            const pdfBytes = await newDoc.save();
+            const blob = new Blob([pdfBytes], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
             const link = document.createElement("a");
             link.href = url;
-            link.download = `${file.name.replace(".pdf", "")}_reordered.pdf`;
+            link.download = `${file.name.replace(/\.pdf$/i, "")}_rearranged.pdf`;
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
             
-            toast.success("PDF reordered and saved successfully!");
+            toast.success("PDF rearranged and downloaded successfully!");
+            // Reload the preview using the new file layout
+            const newFile = new File([blob], file.name, { type: "application/pdf" });
+            setFile(newFile);
+            setPages([]);
+            await loadPreviews(newFile);
         } catch (error) {
             console.error(error);
-            toast.error("Failed to reorder PDF");
+            toast.error("Failed to rearrange PDF pages.");
         } finally {
             setIsProcessing(false);
         }
     };
 
     return (
-        <div className="space-y-8 animate-in fade-in duration-700">
-            {/* Header Section */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/50 p-6 border border-border/40 backdrop-blur-sm">
+        <div className="space-y-8 max-w-5xl mx-auto">
+            {/* Privacy Badge */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Your documents are rearranged locally in RAM. Your files never leave your computer.</span>
+            </div>
+
+            {/* Toolbar */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 text-primary">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
                         <ArrowLeftRight className="h-6 w-6" />
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold">Rearrange PDF Pages</h2>
-                        <p className="text-sm text-muted-foreground">Visually reorder the pages of your PDF document using a simple grid editor</p>
+                        <h2 className="text-xl font-bold">Rearrange PDF Pages</h2>
+                        <p className="text-xs text-muted-foreground">Drag, swap, or reorder pages in your PDF document securely</p>
                     </div>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
                     <Button 
                         variant="outline" 
                         onClick={() => fileInputRef.current?.click()}
-                        className="border-primary/20 hover:border-primary/50"
+                        className="border-border hover:bg-muted/40 text-xs font-bold"
                     >
                         <Upload className="mr-2 h-4 w-4" /> {file ? "Change PDF" : "Select PDF"}
                     </Button>
-                    <Button 
-                        disabled={pages.length === 0 || isProcessing || !pdflib}
-                        onClick={savePDF}
-                        className="bg-primary hover:bg-primary/90"
-                    >
-                        {isProcessing ? (
-                            <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Processing...</>
-                        ) : (
-                            <><Download className="mr-2 h-4 w-4" /> Save Reordered PDF</>
-                        )}
-                    </Button>
+                    {pages.length > 0 && (
+                        <>
+                            <Button 
+                                variant="outline" 
+                                onClick={reversePages}
+                                className="border-border hover:bg-muted/40 text-xs font-bold"
+                            >
+                                <RefreshCw className="mr-2 h-4 w-4" /> Reverse Order
+                            </Button>
+                            <Button 
+                                disabled={isProcessing}
+                                onClick={saveRearrangedPDF}
+                                className="bg-primary hover:bg-primary/95 text-xs font-bold text-white shadow-md shadow-primary/10"
+                            >
+                                {isProcessing ? (
+                                    <><Loader2 className="mr-2 h-4 w-4 animate-spin text-white" /> Saving...</>
+                                ) : (
+                                    <><Download className="mr-2 h-4 w-4" /> Save & Download PDF</>
+                                )}
+                            </Button>
+                        </>
+                    )}
                 </div>
                 <input 
                     type="file" 
@@ -213,132 +212,88 @@ export default function PDFRearrange() {
                 />
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-                {/* Main Content Area */}
-                <div className="lg:col-span-3 space-y-6">
-                    {loadError ? (
-                        <div className="p-6 border border-destructive/50 bg-destructive/10 text-destructive text-sm">
-                            {loadError}
+            {/* Previews & Workspace */}
+            <div className="space-y-6">
+                {!file ? (
+                    <div 
+                        onClick={() => fileInputRef.current?.click()}
+                        className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
+                    >
+                        <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
+                            <ArrowLeftRight className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
                         </div>
-                    ) : !file ? (
-                        <div
-                            onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-primary/20 hover:border-primary/40 bg-card/30 hover:bg-card/50 transition-all text-center"
-                        >
-                            <div className="p-6 bg-primary/5 group-hover:scale-110 transition-transform">
-                                <LayoutGrid className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
+                        <h3 className="mt-6 text-lg font-bold">Upload PDF to Rearrange</h3>
+                        <p className="mt-2 text-xs text-muted-foreground max-w-xs leading-relaxed">
+                            Click or drag a PDF document. Reorder pages easily using swap arrows on each preview card.
+                        </p>
+                    </div>
+                ) : isProcessing && pages.length === 0 ? (
+                    <Card className="p-12 text-center border-border/40 bg-card/20 space-y-4 rounded-3xl">
+                        <Loader2 className="h-10 w-10 text-primary animate-spin mx-auto" />
+                        <h3 className="font-bold text-base">Rendering Page Previews locally...</h3>
+                        <Progress value={loadingProgress} className="max-w-xs mx-auto h-2" />
+                        <p className="text-xs text-muted-foreground font-mono">{loadingProgress}% completed</p>
+                    </Card>
+                ) : (
+                    <div className="space-y-6">
+                        <div className="flex items-center justify-between p-4 bg-muted/10 border border-border/30 rounded-2xl text-xs">
+                            <div className="flex items-center gap-2">
+                                <FileText className="w-4 h-4 text-primary" />
+                                <span className="font-bold text-foreground truncate max-w-xs">{file.name}</span>
+                                <Badge variant="secondary">{(file.size / (1024 * 1024)).toFixed(2)} MB</Badge>
                             </div>
-                            <h3 className="mt-6 text-xl font-bold">Upload PDF to Reorder</h3>
-                            <p className="mt-2 text-muted-foreground max-w-sm">
-                                Simply use the arrows to move pages to their correct position. No files are uploaded to our servers.
-                            </p>
-                            <div className="mt-8 flex gap-3">
-                                <Badge variant="outline">Visual</Badge>
-                                <Badge variant="outline">Secure</Badge>
-                                <Badge variant="outline">Fast</Badge>
-                            </div>
+                            <span className="text-muted-foreground font-bold uppercase tracking-wider">
+                                {pages.length} Pages Loaded
+                            </span>
                         </div>
-                    ) : (
-                        <div className="space-y-4">
-                            <div className="flex items-center gap-2 mb-4">
-                                <Badge variant="secondary" className="uppercase tracking-tighter">{file.name}</Badge>
-                                <span className="text-xs text-muted-foreground">{pages.length} Pages</span>
-                            </div>
-                            
-                            {isProcessing && loadingProgress < 100 && (
-                                <div className="space-y-2 mb-6">
-                                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest">
-                                        <span>Loading Page Previews...</span>
-                                        <span>{loadingProgress}%</span>
+
+                        {/* Page Cards Grid */}
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                            {pages.map((p, index) => (
+                                <div
+                                    key={p.id}
+                                    className="group relative flex flex-col items-center p-3 rounded-2xl border border-border/40 bg-card/10 hover:bg-card/20 hover:border-primary/20 transition-all duration-300"
+                                >
+                                    {/* Page Position badge */}
+                                    <div className="absolute top-2 left-2 z-20 bg-primary/90 text-primary-foreground font-black text-[10px] w-5.5 h-5.5 rounded-full flex items-center justify-center shadow">
+                                        {index + 1}
                                     </div>
-                                    <Progress value={loadingProgress} className="h-1 bg-primary/10" />
+
+                                    {/* Swapping Controls */}
+                                    <div className="absolute top-2 right-2 z-20 flex gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+                                        <button
+                                            type="button"
+                                            disabled={index === 0}
+                                            onClick={() => movePage(index, -1)}
+                                            className="w-5 h-5 rounded-full bg-background border border-border flex items-center justify-center hover:bg-muted disabled:opacity-30 disabled:pointer-events-none"
+                                        >
+                                            <ChevronLeft className="w-3.5 h-3.5" />
+                                        </button>
+                                        <button
+                                            type="button"
+                                            disabled={index === pages.length - 1}
+                                            onClick={() => movePage(index, 1)}
+                                            className="w-5 h-5 rounded-full bg-background border border-border flex items-center justify-center hover:bg-muted disabled:opacity-30 disabled:pointer-events-none"
+                                        >
+                                            <ChevronRight className="w-3.5 h-3.5" />
+                                        </button>
+                                    </div>
+
+                                    <div className="relative aspect-[3/4] w-full rounded-lg overflow-hidden border border-border/10 bg-background shadow-inner mt-2">
+                                        <img
+                                            src={p.dataUrl}
+                                            alt={`Page ${index + 1}`}
+                                            className="w-full h-full object-contain pointer-events-none"
+                                        />
+                                    </div>
+                                    <span className="mt-3 text-[10px] font-bold text-muted-foreground uppercase tracking-widest">
+                                        Original Page {p.originalIndex + 1}
+                                    </span>
                                 </div>
-                            )}
-
-                            <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-6">
-                                {pages.map((page, index) => (
-                                    <Card 
-                                        key={page.id} 
-                                        className="border-border/40 bg-card/40 overflow-hidden group hover:border-primary/40 transition-colors"
-                                    >
-                                        <div className="aspect-[3/4] bg-white p-4 flex items-center justify-center relative overflow-hidden">
-                                            <img 
-                                                src={page.dataUrl} 
-                                                alt={`Page ${index + 1}`} 
-                                                className="max-w-full max-h-full object-contain shadow-sm"
-                                            />
-                                            <div className="absolute top-2 left-2 px-2 py-1 bg-black/60 text-[10px] font-bold text-white uppercase tracking-widest">
-                                                Page {index + 1}
-                                            </div>
-                                            {page.originalIndex !== index && (
-                                                <div className="absolute top-2 right-2 p-1 bg-primary text-white">
-                                                    <ArrowUpDown className="h-3 w-3" />
-                                                </div>
-                                            )}
-                                        </div>
-                                        <CardContent className="p-2 grid grid-cols-2 gap-1 border-t border-border/40 bg-muted/20">
-                                            <Button 
-                                                variant="ghost" 
-                                                size="sm" 
-                                                disabled={index === 0}
-                                                onClick={() => movePage(index, 'left')}
-                                                className="h-8 text-[10px] font-bold uppercase tracking-widest hover:bg-primary/10 hover:text-primary disabled:opacity-30"
-                                            >
-                                                <ChevronLeft className="h-4 w-4" />
-                                            </Button>
-                                            <Button 
-                                                variant="ghost" 
-                                                size="sm" 
-                                                disabled={index === pages.length - 1}
-                                                onClick={() => movePage(index, 'right')}
-                                                className="h-8 text-[10px] font-bold uppercase tracking-widest hover:bg-primary/10 hover:text-primary disabled:opacity-30"
-                                            >
-                                                <ChevronRight className="h-4 w-4" />
-                                            </Button>
-                                        </CardContent>
-                                    </Card>
-                                ))}
-                            </div>
+                            ))}
                         </div>
-                    )}
-                </div>
-
-                {/* Sidebar Info */}
-                <div className="space-y-6">
-                    <Card className="border-border/40 bg-card/50 backdrop-blur-sm">
-                        <CardHeader className="pb-4 border-b border-border/40">
-                            <CardTitle className="text-sm font-bold flex items-center gap-2 uppercase tracking-widest">
-                                <Settings2 className="h-4 w-4 text-primary" /> Info
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 space-y-6">
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Visual Feedback</h5>
-                                <p className="text-xs text-muted-foreground leading-relaxed">
-                                    A small "moved" icon will appear in the top-right corner of any page that is no longer in its original position.
-                                </p>
-                            </div>
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Local Ordering</h5>
-                                <p className="text-xs text-muted-foreground leading-relaxed">
-                                    Your documents are processed locally. This makes the reordering process extremely fast even for large PDF files.
-                                </p>
-                            </div>
-                        </CardContent>
-                    </Card>
-
-                    <Card className="border-primary/20 bg-primary/5">
-                        <CardContent className="p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <ArrowLeftRight className="h-5 w-5 text-primary" />
-                                <h4 className="text-sm font-bold uppercase tracking-widest">Pro Tip</h4>
-                            </div>
-                            <p className="text-xs text-muted-foreground leading-relaxed">
-                                Need to move a page long distances? Click the arrows repeatedly. The grid updates instantly for a smooth experience.
-                            </p>
-                        </CardContent>
-                    </Card>
-                </div>
+                    </div>
+                )}
             </div>
         </div>
     );

@@ -1,153 +1,146 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef } from "react";
 import { 
     Upload, 
-    Hash, 
     Download, 
     FileText,
     Loader2,
-    Settings2,
-    AlignLeft,
-    AlignCenter,
-    ArrowUp,
-    ArrowDown
+    ShieldCheck,
+    Settings,
+    Hash,
+    Type
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-
-declare global {
-    interface Window {
-        PDFLib: any;
-    }
-}
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function PDFPageNumbers() {
-    const [pdflib, setPdflib] = useState<any>(null);
     const [file, setFile] = useState<File | null>(null);
     const [isProcessing, setIsProcessing] = useState(false);
     const [position, setPosition] = useState<string>("bottom-center");
     const [startFrom, setStartFrom] = useState<number>(1);
-    const [fontSize, setFontSize] = useState<number>(12);
+    const [fontSize, setFontSize] = useState<number>(10);
+    const [textFormat, setTextFormat] = useState<string>("Page {page} of {total}");
+    const [textColor, setTextColor] = useState<string>("black");
+    const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
-
-    useEffect(() => {
-        if (!window.PDFLib) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-            script.async = true;
-            script.onload = () => setPdflib(window.PDFLib);
-            document.head.appendChild(script);
-        } else {
-            setPdflib(window.PDFLib);
-        }
-    }, []);
 
     const onFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         const selectedFile = e.target.files?.[0];
-        if (selectedFile && selectedFile.type === "application/pdf") {
+        if (selectedFile && (selectedFile.type === "application/pdf" || selectedFile.name.toLowerCase().endsWith(".pdf"))) {
             setFile(selectedFile);
-            toast.success("PDF loaded");
+            setDownloadUrl(null);
+            toast.success("PDF loaded successfully");
         } else if (selectedFile) {
             toast.error("Please select a valid PDF file");
         }
+        e.target.value = "";
     }, []);
 
     const addPageNumbers = async () => {
-        if (!pdflib || !file) return;
+        if (!file) return;
 
         setIsProcessing(true);
         try {
-            const { PDFDocument, rgb, StandardFonts } = pdflib;
+            const { PDFDocument, rgb, StandardFonts } = await import("pdf-lib");
             const arrayBuffer = await file.arrayBuffer();
             const pdfDoc = await PDFDocument.load(arrayBuffer);
             const pages = pdfDoc.getPages();
+            const total = pages.length;
             const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica);
 
-            for (let i = 0; i < pages.length; i++) {
+            // Determine RGB color
+            let colorVal = rgb(0, 0, 0); // default black
+            if (textColor === "gray") colorVal = rgb(0.5, 0.5, 0.5);
+            else if (textColor === "white") colorVal = rgb(1, 1, 1);
+            else if (textColor === "red") colorVal = rgb(0.85, 0.18, 0.18);
+            else if (textColor === "blue") colorVal = rgb(0.18, 0.35, 0.85);
+
+            for (let i = 0; i < total; i++) {
                 const page = pages[i];
                 const { width, height } = page.getSize();
-                const text = `${i + startFrom}`;
+                
+                // Build string
+                const pageNum = i + startFrom;
+                const text = textFormat
+                    .replace("{page}", String(pageNum))
+                    .replace("{total}", String(total));
+
                 const textWidth = helveticaFont.widthOfTextAtSize(text, fontSize);
                 
-                let x = width / 2 - textWidth / 2;
-                let y = 20;
+                let x = width / 2 - textWidth / 2; // default center
+                let y = 25; // default bottom
 
                 const [vPos, hPos] = position.split("-");
                 
                 if (hPos === "left") x = 40;
                 else if (hPos === "right") x = width - textWidth - 40;
                 
-                if (vPos === "top") y = height - fontSize - 20;
+                if (vPos === "top") y = height - fontSize - 25;
 
                 page.drawText(text, {
                     x,
                     y,
                     size: fontSize,
                     font: helveticaFont,
-                    color: rgb(0, 0, 0),
+                    color: colorVal,
                 });
             }
 
             const pdfBytes = await pdfDoc.save();
-            const blob = new Blob([pdfBytes.buffer], { type: "application/pdf" });
+            const blob = new Blob([pdfBytes], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
-            const link = document.createElement("a");
-            link.href = url;
-            link.download = `${file.name.replace(".pdf", "")}_paged.pdf`;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-            
+            setDownloadUrl(url);
             toast.success("Page numbers added successfully!");
         } catch (error) {
             console.error(error);
-            toast.error("Failed to add page numbers");
+            toast.error("Failed to add page numbers to PDF.");
         } finally {
             setIsProcessing(false);
         }
     };
 
     return (
-        <div className="space-y-8 animate-in fade-in duration-700">
+        <div className="space-y-8 max-w-4xl mx-auto">
+            {/* Privacy Badge */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Page numbering runs locally. Your document stays on your device.</span>
+            </div>
+
             {/* Header Section */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/50 p-6 border border-border/40 backdrop-blur-sm">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 text-primary">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
                         <Hash className="h-6 w-6" />
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold">PDF Page Numbers</h2>
-                        <p className="text-sm text-muted-foreground">Add customizable page numbers to your PDF documents instantly</p>
+                        <h2 className="text-xl font-bold">Add PDF Page Numbers</h2>
+                        <p className="text-xs text-muted-foreground">Add custom layout numbers and headers/footers to PDF pages</p>
                     </div>
                 </div>
-                {!pdflib && (
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <Loader2 className="h-3 w-3 animate-spin" /> Loading PDF Library...
-                    </div>
-                )}
                 <div className="flex items-center gap-2">
                     <Button 
                         variant="outline" 
                         onClick={() => fileInputRef.current?.click()}
-                        className="border-primary/20 hover:border-primary/50"
+                        className="border-border hover:bg-muted/40 text-xs font-bold"
                     >
                         <Upload className="mr-2 h-4 w-4" /> {file ? "Change PDF" : "Select PDF"}
                     </Button>
                     <Button 
-                        disabled={!file || isProcessing || !pdflib}
+                        disabled={!file || isProcessing}
                         onClick={addPageNumbers}
-                        className="bg-primary hover:bg-primary/90"
+                        className="bg-primary hover:bg-primary/90 text-xs font-bold text-white shadow-md shadow-primary/10"
                     >
                         {isProcessing ? (
-                            <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Processing...</>
+                            <><Loader2 className="mr-2 h-4 w-4 animate-spin text-white" /> Numbering...</>
                         ) : (
-                            <><Download className="mr-2 h-4 w-4" /> Add Numbers</>
+                            <><Hash className="mr-2 h-4 w-4" /> Add Page Numbers</>
                         )}
                     </Button>
                 </div>
@@ -166,150 +159,143 @@ export default function PDFPageNumbers() {
                     {!file ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-primary/20 hover:border-primary/40 bg-card/30 hover:bg-card/50 transition-all text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
                         >
-                            <div className="p-6 bg-primary/5 group-hover:scale-110 transition-transform">
-                                <FileText className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
+                            <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
+                                <Hash className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
                             </div>
-                            <h3 className="mt-6 text-xl font-bold">Upload PDF to Paginate</h3>
-                            <p className="mt-2 text-muted-foreground max-w-sm">
-                                Choose position and style for your page numbers. Your PDF stays private and is processed entirely in your browser.
+                            <h3 className="mt-6 text-lg font-bold">Upload PDF to Number</h3>
+                            <p className="mt-2 text-xs text-muted-foreground max-w-xs leading-relaxed">
+                                Upload your document to add headers, page counters, and margins locally in your browser.
                             </p>
-                            <div className="mt-8 flex gap-3">
-                                <Badge variant="outline">Pagination</Badge>
-                                <Badge variant="outline">Secure</Badge>
-                                <Badge variant="outline">Fast</Badge>
-                            </div>
                         </div>
                     ) : (
-                        <Card className="border-border/40 bg-card/40 overflow-hidden">
-                            <div className="p-12 flex flex-col items-center justify-center bg-muted/30 border-b border-border/40 relative">
-                                <div className="p-6 bg-primary/10 mb-6">
-                                    <FileText className="h-16 w-16 text-primary" />
+                        <Card className="border-border/40 bg-card/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-lg animate-in">
+                            <div className="p-8 flex flex-col items-center justify-center bg-muted/20 border-b border-border/20">
+                                <div className="p-4 bg-primary/10 rounded-2xl mb-4">
+                                    <FileText className="h-12 w-12 text-primary" />
                                 </div>
-                                <h3 className="text-xl font-bold truncate max-w-md">{file.name}</h3>
-                                <div className="mt-4 flex gap-4">
-                                    <Badge variant="secondary" className="">{(file.size / (1024 * 1024)).toFixed(2)} MB</Badge>
-                                    <Badge variant="outline" className="border-primary/20 text-primary">Ready to Paginate</Badge>
-                                </div>
-                                
-                                {/* Position Preview Overlay */}
-                                <div className="absolute inset-0 pointer-events-none p-4 flex flex-col justify-between opacity-20">
-                                    <div className="flex justify-between items-start">
-                                        <div className={`p-1 bg-primary ${position === 'top-left' ? 'opacity-100 ring-2 ring-primary' : 'opacity-20'}`}><Hash className="w-4 h-4 text-white" /></div>
-                                        <div className={`p-1 bg-primary ${position === 'top-center' ? 'opacity-100 ring-2 ring-primary' : 'opacity-20'}`}><Hash className="w-4 h-4 text-white" /></div>
-                                        <div className={`p-1 bg-primary ${position === 'top-right' ? 'opacity-100 ring-2 ring-primary' : 'opacity-20'}`}><Hash className="w-4 h-4 text-white" /></div>
-                                    </div>
-                                    <div className="flex justify-between items-end">
-                                        <div className={`p-1 bg-primary ${position === 'bottom-left' ? 'opacity-100 ring-2 ring-primary' : 'opacity-20'}`}><Hash className="w-4 h-4 text-white" /></div>
-                                        <div className={`p-1 bg-primary ${position === 'bottom-center' ? 'opacity-100 ring-2 ring-primary' : 'opacity-20'}`}><Hash className="w-4 h-4 text-white" /></div>
-                                        <div className={`p-1 bg-primary ${position === 'bottom-right' ? 'opacity-100 ring-2 ring-primary' : 'opacity-20'}`}><Hash className="w-4 h-4 text-white" /></div>
-                                    </div>
+                                <h3 className="text-base font-bold truncate max-w-xs">{file.name}</h3>
+                                <div className="mt-3 flex gap-2">
+                                    <Badge variant="secondary" className="text-xs">{(file.size / (1024 * 1024)).toFixed(2)} MB</Badge>
+                                    <Badge variant="outline" className="border-primary/20 text-primary text-xs">Ready to Number</Badge>
                                 </div>
                             </div>
-                            <CardContent className="p-8 space-y-8">
+                            <CardContent className="p-8 space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                    <div className="space-y-6">
-                                        <div className="space-y-3">
-                                            <Label className="text-xs font-bold uppercase tracking-widest text-muted-foreground flex items-center gap-2">
-                                                <AlignLeft className="h-3 w-3" /> Position on Page
-                                            </Label>
-                                            <div className="grid grid-cols-3 gap-2">
-                                                {[
-                                                    { id: 'top-left', icon: <ArrowUp className="w-3 h-3 mr-1" /> },
-                                                    { id: 'top-center', icon: <ArrowUp className="w-3 h-3 mr-1" /> },
-                                                    { id: 'top-right', icon: <ArrowUp className="w-3 h-3 mr-1" /> },
-                                                    { id: 'bottom-left', icon: <ArrowDown className="w-3 h-3 mr-1" /> },
-                                                    { id: 'bottom-center', icon: <ArrowDown className="w-3 h-3 mr-1" /> },
-                                                    { id: 'bottom-right', icon: <ArrowDown className="w-3 h-3 mr-1" /> },
-                                                ].map((pos) => (
-                                                    <Button
-                                                        key={pos.id}
-                                                        variant={position === pos.id ? "default" : "outline"}
-                                                        size="sm"
-                                                        onClick={() => setPosition(pos.id)}
-                                                        className="text-[10px] font-bold uppercase tracking-tighter h-10 px-1"
+                                    <div className="space-y-4">
+                                        <h4 className="text-xs font-bold uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 mb-2">
+                                            <Settings className="w-3.5 h-3.5" />
+                                            Layout Settings
+                                        </h4>
+                                        <div className="space-y-4">
+                                            <div className="space-y-2">
+                                                <Label htmlFor="position-select" className="text-xs font-semibold text-foreground">Position</Label>
+                                                <select
+                                                    id="position-select"
+                                                    value={position}
+                                                    onChange={(e) => setPosition(e.target.value)}
+                                                    className="w-full h-10 px-3 rounded-lg border border-border/35 bg-background text-sm focus-visible:ring-primary/20"
+                                                >
+                                                    <option value="top-left">Top Left</option>
+                                                    <option value="top-center">Top Center</option>
+                                                    <option value="top-right">Top Right</option>
+                                                    <option value="bottom-left">Bottom Left</option>
+                                                    <option value="bottom-center">Bottom Center</option>
+                                                    <option value="bottom-right">Bottom Right</option>
+                                                </select>
+                                            </div>
+
+                                            <div className="space-y-2">
+                                                <Label htmlFor="start-input" className="text-xs font-semibold text-foreground">Start Numbering From</Label>
+                                                <Input 
+                                                    id="start-input"
+                                                    type="number"
+                                                    min="1"
+                                                    value={startFrom}
+                                                    onChange={(e) => setStartFrom(Math.max(1, parseInt(e.target.value, 10) || 1))}
+                                                    className="border-border/30 bg-background/50 h-10 text-sm"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-4">
+                                        <h4 className="text-xs font-bold uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 mb-2">
+                                            <Type className="w-3.5 h-3.5" />
+                                            Font & Text Settings
+                                        </h4>
+                                        <div className="space-y-4">
+                                            <div className="space-y-2">
+                                                <Label htmlFor="format-input" className="text-xs font-semibold text-foreground">Number Format</Label>
+                                                <Input 
+                                                    id="format-input"
+                                                    type="text"
+                                                    value={textFormat}
+                                                    onChange={(e) => setTextFormat(e.target.value)}
+                                                    className="border-border/30 bg-background/50 h-10 text-sm"
+                                                />
+                                                <p className="text-[9px] text-muted-foreground leading-normal mt-1">
+                                                    Use <span className="font-mono">{`{page}`}</span> for current page and <span className="font-mono">{`{total}`}</span> for total count.
+                                                </p>
+                                            </div>
+
+                                            <div className="grid grid-cols-2 gap-4">
+                                                <div className="space-y-2">
+                                                    <Label htmlFor="color-select" className="text-xs font-semibold text-foreground">Color</Label>
+                                                    <select
+                                                        id="color-select"
+                                                        value={textColor}
+                                                        onChange={(e) => setTextColor(e.target.value)}
+                                                        className="w-full h-10 px-3 rounded-lg border border-border/35 bg-background text-sm focus-visible:ring-primary/20"
                                                     >
-                                                        {pos.icon} {pos.id.replace('-', ' ')}
-                                                    </Button>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="space-y-6">
-                                        <div className="grid grid-cols-2 gap-4">
-                                            <div className="space-y-2">
-                                                <Label className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Start From</Label>
-                                                <Input 
-                                                    type="number" 
-                                                    value={startFrom} 
-                                                    onChange={(e) => setStartFrom(parseInt(e.target.value) || 1)}
-                                                    className="h-10 border-primary/10"
-                                                />
-                                            </div>
-                                            <div className="space-y-2">
-                                                <Label className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Font Size</Label>
-                                                <Input 
-                                                    type="number" 
-                                                    value={fontSize} 
-                                                    onChange={(e) => setFontSize(parseInt(e.target.value) || 12)}
-                                                    className="h-10 border-primary/10"
-                                                />
+                                                        <option value="black">Black</option>
+                                                        <option value="gray">Gray</option>
+                                                        <option value="blue">Blue</option>
+                                                        <option value="red">Red</option>
+                                                        <option value="white">White</option>
+                                                    </select>
+                                                </div>
+                                                <div className="space-y-2">
+                                                    <Label htmlFor="size-input" className="text-xs font-semibold text-foreground">Font Size (pt)</Label>
+                                                    <Input 
+                                                        id="size-input"
+                                                        type="number"
+                                                        min="6"
+                                                        max="28"
+                                                        value={fontSize}
+                                                        onChange={(e) => setFontSize(Math.max(6, Math.min(28, parseInt(e.target.value, 10) || 10)))}
+                                                        className="border-border/30 bg-background/50 h-10 text-sm"
+                                                    />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <div className="pt-6 border-t border-border/40 flex justify-end">
-                                    <Button 
-                                        size="lg"
-                                        disabled={isProcessing || !pdflib}
-                                        onClick={addPageNumbers}
-                                        className="px-12 h-14 font-bold uppercase tracking-widest"
-                                    >
-                                        {isProcessing ? "Processing..." : "Generate PDF with Numbers"}
-                                    </Button>
-                                </div>
+
+                                {downloadUrl && (
+                                    <div className="pt-6 border-t border-border/20 text-center animate-in">
+                                        <Button asChild className="w-full max-w-sm bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-10">
+                                            <a href={downloadUrl} download={`${file.name.replace(/\.pdf$/i, "")}_numbered.pdf`}>
+                                                <Download className="w-4 h-4 mr-2" /> Download Numbered PDF
+                                            </a>
+                                        </Button>
+                                    </div>
+                                )}
                             </CardContent>
                         </Card>
                     )}
                 </div>
 
-                {/* Sidebar Info */}
-                <div className="space-y-6">
-                    <Card className="border-border/40 bg-card/50 backdrop-blur-sm">
-                        <CardHeader className="pb-4 border-b border-border/40">
-                            <CardTitle className="text-sm font-bold flex items-center gap-2 uppercase tracking-widest">
-                                <Settings2 className="h-4 w-4 text-primary" /> Options
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 space-y-6">
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Multiple Positions</h5>
-                                <p className="text-xs text-muted-foreground leading-relaxed">
-                                    Choose between top or bottom placement, and left, center, or right alignment for your page numbers.
-                                </p>
-                            </div>
-                            <div className="space-y-2">
-                                <h5 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Custom Starting Page</h5>
-                                <p className="text-xs text-muted-foreground leading-relaxed">
-                                    Set any number to start your pagination. Useful for documents that are part of a larger set.
-                                </p>
-                            </div>
-                        </CardContent>
-                    </Card>
-
-                    <Card className="border-primary/20 bg-primary/5">
-                        <CardContent className="p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <AlignCenter className="h-5 w-5 text-primary" />
-                                <h4 className="text-sm font-bold uppercase tracking-widest">Pro Tip</h4>
-                            </div>
-                            <p className="text-xs text-muted-foreground leading-relaxed">
-                                For academic papers, the standard position is usually bottom center or top right with a font size of 10-12pt.
-                            </p>
-                        </CardContent>
+                {/* Right Side Info Bar */}
+                <div className="space-y-4">
+                    <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-4 text-xs leading-relaxed">
+                        <h4 className="font-bold text-sm text-foreground">Custom Templates</h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                            <li>• Use <span className="font-mono">Page {"{page}"} of {"{total}"}</span> for standard formats.</li>
+                            <li>• Use <span className="font-mono">Doc-ID: {"{page}"}</span> for archive structures.</li>
+                            <li>• Custom color settings support light and dark print styles.</li>
+                        </ul>
                     </Card>
                 </div>
             </div>

@@ -1,264 +1,284 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import { useState, useCallback, useRef } from "react";
 import { 
-	ImageIcon, 
-	ZapIcon,
-	TrashIcon
+    Upload, 
+    Download, 
+    Image as ImageIcon,
+    Loader2,
+    ShieldCheck,
+    Check,
+    Settings,
+    Grid,
+    Trash2
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Switch } from "@/components/ui/switch";
-import { GlassCard, PremiumDropZone } from "../shared/WorkspaceComponents";
 import { toast } from "sonner";
+import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
+
+interface FaviconSize {
+    size: number;
+    name: string;
+    checked: boolean;
+    desc: string;
+}
 
 export default function FaviconGeneratorProTool() {
-	const [imageSrc, setImageSrc] = useState(null);
-	const [fileName, setFileName] = useState("");
-	const [isGenerating, setIsGenerating] = useState(false);
-	const fileInputRef = useRef(null);
-	const [dragActive, setDragActive] = useState(false);
+    const [imageSrc, setImageSrc] = useState<string | null>(null);
+    const [fileName, setFileName] = useState("");
+    const [isGenerating, setIsGenerating] = useState(false);
+    const fileInputRef = useRef<HTMLInputElement>(null);
 
-	const [sizes, setSizes] = useState([
-		{ size: 16, name: "favicon-16x16.png", checked: true, desc: "Legacy browser tabs" },
-		{ size: 32, name: "favicon-32x32.png", checked: true, desc: "Standard browser tabs" },
-		{ size: 48, name: "favicon-48x48.png", checked: true, desc: "Windows desktop shortcut" },
-		{ size: 180, name: "apple-touch-icon.png", checked: true, desc: "iOS home screen" },
-		{ size: 192, name: "android-chrome-192x192.png", checked: true, desc: "Android home screen" },
-		{ size: 512, name: "android-chrome-512x512.png", checked: true, desc: "PWA splash screen" }
-	]);
+    const [sizes, setSizes] = useState<FaviconSize[]>([
+        { size: 16, name: "favicon-16x16.png", checked: true, desc: "Legacy browser tabs" },
+        { size: 32, name: "favicon-32x32.png", checked: true, desc: "Standard browser tabs" },
+        { size: 48, name: "favicon-48x48.png", checked: true, desc: "Windows desktop shortcut" },
+        { size: 180, name: "apple-touch-icon.png", checked: true, desc: "iOS home screen" },
+        { size: 192, name: "android-chrome-192x192.png", checked: true, desc: "Android home screen" },
+        { size: 512, name: "android-chrome-512x512.png", checked: true, desc: "PWA splash screen" }
+    ]);
 
-	const [includeIco, setIncludeIco] = useState(true);
+    const [includeIco, setIncludeIco] = useState(true);
 
-	const handleFile = (file) => {
-		if (!file) return;
-		if (!file.type.startsWith("image/")) {
-			toast.error("Please upload an image file");
-			return;
-		}
-		setFileName(file.name);
-		const reader = new FileReader();
-		reader.onload = (e) => {
-			setImageSrc(e.target.result);
-		};
-		reader.readAsDataURL(file);
-	};
+    const handleFile = (file: File) => {
+        if (!file.type.startsWith("image/")) {
+            toast.error("Please upload a valid image file");
+            return;
+        }
+        setFileName(file.name);
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            setImageSrc(e.target?.result as string);
+            toast.success("Image uploaded. Select sizes and download your package.");
+        };
+        reader.readAsDataURL(file);
+    };
 
-	const handleDrop = (e) => {
-		e.preventDefault();
-		e.stopPropagation();
-		setDragActive(false);
-		if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-			handleFile(e.dataTransfer.files[0]);
-		}
-	};
+    const onFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+        const selectedFile = e.target.files?.[0];
+        if (selectedFile) {
+            handleFile(selectedFile);
+        }
+        e.target.value = "";
+    }, []);
 
-	const handleFileSelect = (e) => {
-		if (e.target.files && e.target.files[0]) {
-			handleFile(e.target.files[0]);
-		}
-	};
+    const toggleSize = (index: number) => {
+        setSizes(prev =>
+            prev.map((s, idx) => idx === index ? { ...s, checked: !s.checked } : s)
+        );
+    };
 
-	const toggleSize = (index) => {
-		setSizes((prev) =>
-			prev.map((s, idx) => (idx === index ? { ...s, checked: !s.checked } : s))
-		);
-	};
+    const generateFavicons = async () => {
+        if (!imageSrc) return;
+        setIsGenerating(true);
 
-	const generateFavicons = async () => {
-		if (!imageSrc) return;
-		setIsGenerating(true);
+        try {
+            const JSZip = (await import("jszip")).default;
+            const zip = new JSZip();
+            const img = new Image();
 
-		try {
-			const JSZip = (await import("jszip")).default;
-			const zip = new JSZip();
-			const img = new Image();
+            img.src = imageSrc;
+            await new Promise((resolve, reject) => {
+                img.onload = resolve;
+                img.onerror = reject;
+            });
 
-			await new Promise((resolve, reject) => {
-				img.onload = resolve;
-				img.onerror = reject;
-				img.src = imageSrc;
-			});
+            const canvas = document.createElement("canvas");
+            const ctx = canvas.getContext("2d");
+            if (!ctx) throw new Error("Canvas context is missing");
 
-			const canvas = document.createElement("canvas");
-			const ctx = canvas.getContext("2d");
+            // Generate selected PNG sizes
+            const selectedSizes = sizes.filter(s => s.checked);
+            for (const sizeObj of selectedSizes) {
+                canvas.width = sizeObj.size;
+                canvas.height = sizeObj.size;
+                ctx.clearRect(0, 0, sizeObj.size, sizeObj.size);
+                ctx.drawImage(img, 0, 0, sizeObj.size, sizeObj.size);
 
-			// Generate selected PNG sizes
-			const selectedSizes = sizes.filter((s) => s.checked);
-			for (const sizeObj of selectedSizes) {
-				canvas.width = sizeObj.size;
-				canvas.height = sizeObj.size;
-				ctx.clearRect(0, 0, sizeObj.size, sizeObj.size);
-				ctx.drawImage(img, 0, 0, sizeObj.size, sizeObj.size);
+                const dataUrl = canvas.toDataURL("image/png");
+                const base64Data = dataUrl.split(",")[1];
+                zip.file(sizeObj.name, base64Data, { base64: true });
+            }
 
-				const blob = await new Promise((res) => canvas.toBlob(res, "image/png"));
-				zip.file(sizeObj.name, blob);
-			}
+            // Generate standard favicon.ico
+            if (includeIco) {
+                canvas.width = 32;
+                canvas.height = 32;
+                ctx.clearRect(0, 0, 32, 32);
+                ctx.drawImage(img, 0, 0, 32, 32);
+                const icoDataUrl = canvas.toDataURL("image/png");
+                zip.file("favicon.ico", icoDataUrl.split(",")[1], { base64: true });
+            }
 
-			// Generate favicon.ico (composed of 16, 32, 48 sizes if supported, or single 32px standard)
-			if (includeIco) {
-				canvas.width = 32;
-				canvas.height = 32;
-				ctx.clearRect(0, 0, 32, 32);
-				ctx.drawImage(img, 0, 0, 32, 32);
+            // Webmanifest configuration file
+            const manifest = {
+                name: "My App",
+                short_name: "App",
+                icons: [
+                    { src: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+                    { src: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" }
+                ],
+                theme_color: "#ffffff",
+                background_color: "#ffffff",
+                display: "standalone"
+            };
+            zip.file("site.webmanifest", JSON.stringify(manifest, null, 2));
 
-				const blob = await new Promise((res) => canvas.toBlob(res, "image/png"));
-				// Standard trick: package PNG directly with .ico extension or let the server/browser interpret it
-				zip.file("favicon.ico", blob);
-			}
+            // Generate HTML readme tags helper
+            const htmlTags = `<!-- Favicon configuration -->\n<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">\n<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">\n<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">\n<link rel="manifest" href="/site.webmanifest">`;
+            zip.file("readme-html-tags.txt", htmlTags);
 
-			// Add HTML snippet instructions
-			const snippet = `<!-- Standard favicon links -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">`;
+            const content = await zip.generateAsync({ type: "blob" });
+            const url = URL.createObjectURL(content);
 
-			zip.file("readme.txt", `Favicon pack generated with SopKit\n\nPlace the generated files in the root directory of your website.\n\nAdd this to your HTML <head>:\n\n${snippet}`);
-			zip.file("site.webmanifest", JSON.stringify({
-				name: "SopKit App",
-				short_name: "App",
-				icons: [
-					{ src: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
-					{ src: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" }
-				],
-				theme_color: "#ffffff",
-				background_color: "#ffffff",
-				display: "standalone"
-			}, null, 2));
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = `favicons_package_${Date.now()}.zip`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
 
-			const content = await zip.generateAsync({ type: "blob" });
-			const url = URL.createObjectURL(content);
-			const link = document.createElement("a");
-			link.href = url;
-			link.download = "favicon_pack_sopkit.zip";
-			document.body.appendChild(link);
-			link.click();
-			document.body.removeChild(link);
-			URL.revokeObjectURL(url);
-			toast.success("Favicon pack downloaded successfully!");
-		} catch (error) {
-			console.error(error);
-			toast.error("Failed to generate favicon pack");
-		} finally {
-			setIsGenerating(false);
-		}
-	};
+            toast.success("Favicon package generated and downloaded successfully!");
+        } catch (error) {
+            console.error(error);
+            toast.error("Failed to generate favicon files.");
+        } finally {
+            setIsGenerating(false);
+        }
+    };
 
-	const clearAll = () => {
-		setImageSrc(null);
-		setFileName("");
-	};
+    return (
+        <div className="space-y-8 max-w-5xl mx-auto">
+            {/* Privacy Badge */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Image resizing and packaging happens entirely in local memory. No files are uploaded.</span>
+            </div>
 
-	return (
-		<div className="w-full max-w-5xl mx-auto space-y-12 pb-24 animate-in">
-			<section>
-				<PremiumDropZone
-					onDrop={handleDrop}
-					onDragOver={(e) => { e.preventDefault(); setDragActive(true); }}
-					onDragLeave={() => setDragActive(false)}
-					onClick={() => fileInputRef.current?.click()}
-					dragActive={dragActive}
-					icon={ImageIcon}
-					title="Drop your logo image here"
-					subtitle="Accepts PNG, JPG, WebP or SVG format (Square works best)"
-				/>
-				<input
-					ref={fileInputRef}
-					type="file"
-					accept="image/*"
-					onChange={handleFileSelect}
-					className="hidden"
-				/>
+            {/* Header Section */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
+                <div className="flex items-center gap-4">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
+                        <ImageIcon className="h-6 w-6" />
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-bold">Favicon Package Generator (Pro)</h2>
+                        <p className="text-xs text-muted-foreground">Upload your high-res logo and export standard multiresolution web favicons locally</p>
+                    </div>
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                    <Button 
+                        variant="outline" 
+                        onClick={() => fileInputRef.current?.click()}
+                        className="border-border hover:bg-muted/40 text-xs font-bold"
+                    >
+                        <Upload className="mr-2 h-4 w-4" /> {imageSrc ? "Change Image" : "Select Image"}
+                    </Button>
+                    {imageSrc && (
+                        <Button 
+                            disabled={isGenerating}
+                            onClick={generateFavicons}
+                            className="bg-primary hover:bg-primary/95 text-xs font-bold text-white shadow-md shadow-primary/10"
+                        >
+                            {isGenerating ? (
+                                <><Loader2 className="mr-2 h-4 w-4 animate-spin text-white" /> Packing...</>
+                            ) : (
+                                <><Download className="mr-2 h-4 w-4" /> Export Favicons ZIP</>
+                            )}
+                        </Button>
+                    )}
+                </div>
+                <input 
+                    type="file" 
+                    accept="image/*" 
+                    className="hidden" 
+                    ref={fileInputRef}
+                    onChange={onFileChange}
+                />
+            </div>
 
-				{imageSrc && (
-					<div className="mt-8 flex justify-between items-center px-4">
-						<div className="flex items-center gap-4">
-							<Badge variant="secondary" className="px-4 py-1.5 text-sm rounded-full">
-								File loaded: {fileName}
-							</Badge>
-						</div>
-						<Button variant="ghost" size="sm" onClick={clearAll} className="rounded-full hover:bg-destructive/10 hover:text-destructive transition-colors">
-							<TrashIcon className="h-4 w-4 mr-2" />
-							Remove File
-						</Button>
-					</div>
-				)}
-			</section>
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                {/* File picker & sizes list */}
+                <div className="lg:col-span-3 space-y-6">
+                    {!imageSrc ? (
+                        <div 
+                            onClick={() => fileInputRef.current?.click()}
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
+                        >
+                            <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
+                                <ImageIcon className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
+                            </div>
+                            <h3 className="mt-6 text-lg font-bold">Upload Logo to Generate</h3>
+                            <p className="mt-2 text-xs text-muted-foreground max-w-xs leading-relaxed">
+                                Upload a transparent PNG or SVG logo to split and package standard sizes for modern web deployments.
+                            </p>
+                        </div>
+                    ) : (
+                        <Card className="p-6 border border-border/40 bg-card/10 rounded-3xl space-y-6 shadow-sm animate-in">
+                            <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
+                                <Settings className="w-3.5 h-3.5" /> Target Sizes
+                            </h3>
 
-			{imageSrc && (
-				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-					{/* Options Panel */}
-					<div className="lg:col-span-7 space-y-6">
-						<GlassCard className="p-8">
-							<h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
-								<ImageIcon className="text-primary w-6 h-6" />
-								Configure Sizes
-							</h3>
+                            <div className="space-y-3.5">
+                                <div className="flex items-center justify-between p-3 border border-border/20 rounded-xl bg-background/50">
+                                    <div className="space-y-0.5">
+                                        <Label htmlFor="ico-toggle" className="text-xs font-bold text-foreground cursor-pointer">Generate favicon.ico</Label>
+                                        <p className="text-[10px] text-muted-foreground leading-normal">
+                                            32x32 pixel fallback container for legacy desktop browsers.
+                                        </p>
+                                    </div>
+                                    <Switch 
+                                        id="ico-toggle" 
+                                        checked={includeIco} 
+                                        onCheckedChange={setIncludeIco}
+                                        className="data-[state=checked]:bg-primary"
+                                    />
+                                </div>
 
-							<div className="space-y-4">
-								{sizes.map((s, idx) => (
-									<div 
-										key={s.size} 
-										className="flex items-center justify-between p-4 rounded-2xl bg-muted/10 border border-border/40 hover:bg-muted/20 transition-all"
-									>
-										<div className="flex flex-col">
-											<span className="font-bold text-lg">{s.size}x{s.size} ({s.name})</span>
-											<span className="text-sm text-muted-foreground">{s.desc}</span>
-										</div>
-										<Switch 
-											checked={s.checked} 
-											onCheckedChange={() => toggleSize(idx)}
-											className="scale-110"
-										/>
-									</div>
-								))}
+                                {sizes.map((s, idx) => (
+                                    <div key={s.name} className="flex items-center justify-between p-3 border border-border/20 rounded-xl bg-background/50">
+                                        <div className="space-y-0.5">
+                                            <Label htmlFor={`size-${idx}`} className="text-xs font-bold text-foreground cursor-pointer">
+                                                {s.name} ({s.size}x{s.size})
+                                            </Label>
+                                            <p className="text-[10px] text-muted-foreground leading-normal">{s.desc}</p>
+                                        </div>
+                                        <Switch 
+                                            id={`size-${idx}`} 
+                                            checked={s.checked} 
+                                            onCheckedChange={() => toggleSize(idx)}
+                                            className="data-[state=checked]:bg-primary"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </Card>
+                    )}
+                </div>
 
-								<div className="flex items-center justify-between p-4 rounded-2xl bg-primary/5 border border-primary/20 mt-6">
-									<div className="flex flex-col">
-										<span className="font-bold text-lg text-primary">Include favicon.ico</span>
-										<span className="text-sm text-muted-foreground">Standard 32x32 legacy root wrapper</span>
-									</div>
-									<Switch 
-										checked={includeIco} 
-										onCheckedChange={setIncludeIco}
-										className="scale-110"
-									/>
-								</div>
-							</div>
-						</GlassCard>
-					</div>
-
-					{/* Image Preview & Output */}
-					<div className="lg:col-span-5 space-y-8">
-						<GlassCard className="p-8 flex flex-col items-center justify-center text-center">
-							<h3 className="text-xl font-bold mb-6">Source Preview</h3>
-							<div className="w-40 h-40 bg-muted/20 border border-border/60 rounded-3xl overflow-hidden flex items-center justify-center p-4">
-								<img 
-									src={imageSrc} 
-									alt="Uploaded preview" 
-									className="max-w-full max-h-full object-contain rounded-xl"
-								/>
-							</div>
-							<p className="text-sm text-muted-foreground mt-4 max-w-xs">
-								Ensure your image is square (1:1 aspect ratio) for best results. Non-square images will be scaled.
-							</p>
-						</GlassCard>
-
-						<GlassCard className="p-8">
-							<Button
-								onClick={generateFavicons}
-								disabled={isGenerating || !sizes.some((s) => s.checked)}
-								className="w-full h-20 rounded-[2rem] text-xl font-black tracking-tighter shadow-2xl shadow-primary/30 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-4 group"
-							>
-								{isGenerating ? "GENERATING..." : "GENERATE FAVICONS"}
-								<ZapIcon className="w-6 h-6 fill-current" />
-							</Button>
-						</GlassCard>
-					</div>
-				</div>
-			)}
-		</div>
-	);
+                {/* Upload Image Preview Box */}
+                {imageSrc && (
+                    <div className="lg:col-span-2 space-y-6">
+                        <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl text-center shadow-sm">
+                            <h3 className="font-bold text-sm text-foreground flex items-center justify-center gap-1.5">
+                                <Grid className="w-4 h-4 text-primary" /> Source Preview
+                            </h3>
+                            <div className="p-8 border border-border/20 bg-background/40 rounded-3xl flex items-center justify-center shadow-inner mt-4">
+                                <img 
+                                    src={imageSrc} 
+                                    alt="Uploaded logo preview" 
+                                    className="max-h-[180px] object-contain rounded-lg" 
+                                />
+                            </div>
+                            <p className="text-[10px] text-muted-foreground mt-2 truncate font-bold font-mono">{fileName}</p>
+                        </Card>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
 }

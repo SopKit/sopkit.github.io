@@ -1,248 +1,222 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import { useState, useCallback, useRef } from "react";
 import { 
-	ImageIcon, 
-	DownloadIcon, 
-	TrashIcon, 
-	ShieldCheckIcon,
-	AlertTriangleIcon,
-	CheckCircleIcon,
-	ZapIcon 
+    Upload, 
+    Download, 
+    FileText,
+    Loader2,
+    ShieldCheck,
+    Image as ImageIcon,
+    Trash2,
+    CheckCircle2
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GlassCard, PremiumDropZone } from "../shared/WorkspaceComponents";
 import { toast } from "sonner";
+import { Label } from "@/components/ui/label";
 
 export default function ImageMetadataRemoverTool() {
-	const [imageSrc, setImageSrc] = useState(null);
-	const [fileInfo, setFileInfo] = useState(null);
-	const [isProcessing, setIsProcessing] = useState(false);
-	const [isDone, setIsDone] = useState(false);
-	const [cleanBlob, setCleanBlob] = useState(null);
-	const fileInputRef = useRef(null);
-	const [dragActive, setDragActive] = useState(false);
+    const [file, setFile] = useState<File | null>(null);
+    const [previewUrl, setPreviewUrl] = useState<string | null>(null);
+    const [isProcessing, setIsProcessing] = useState(false);
+    const [cleanBlob, setCleanBlob] = useState<Blob | null>(null);
+    const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
+    const [tagsCount, setTagsCount] = useState<number | null>(null);
+    const fileInputRef = useRef<HTMLInputElement>(null);
 
-	const formatFileSize = (bytes) => {
-		if (bytes === 0) return "0 Bytes";
-		const k = 1024;
-		const sizes = ["Bytes", "KB", "MB"];
-		const i = Math.floor(Math.log(bytes) / Math.log(k));
-		return `${parseFloat((bytes / k ** i).toFixed(2))} ${sizes[i]}`;
-	};
+    const checkTagsCount = async (imgFile: File) => {
+        try {
+            const ExifReader = (await import("exifreader")).default;
+            const arrayBuffer = await imgFile.arrayBuffer();
+            const tags = ExifReader.load(arrayBuffer);
+            const count = Object.keys(tags).length;
+            setTagsCount(count);
+        } catch (e) {
+            setTagsCount(0);
+        }
+    };
 
-	const handleFile = (file) => {
-		if (!file) return;
-		if (!file.type.startsWith("image/")) {
-			toast.error("Please upload an image file (JPG, PNG, WebP)");
-			return;
-		}
+    const onFileChange = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const selectedFile = e.target.files?.[0];
+        if (selectedFile && selectedFile.type.startsWith("image/")) {
+            setFile(selectedFile);
+            setCleanBlob(null);
+            setDownloadUrl(null);
+            setTagsCount(null);
+            
+            const url = URL.createObjectURL(selectedFile);
+            setPreviewUrl(url);
 
-		setFileInfo({
-			name: file.name,
-			size: file.size,
-			type: file.type,
-		});
+            await checkTagsCount(selectedFile);
+            toast.success("Image loaded. Press Clean Metadata to sanitize.");
+        } else if (selectedFile) {
+            toast.error("Please select a valid image file");
+        }
+        e.target.value = "";
+    }, []);
 
-		const reader = new FileReader();
-		reader.onload = (e) => {
-			setImageSrc(e.target.result);
-			setIsDone(false);
-			setCleanBlob(null);
-		};
-		reader.readAsDataURL(file);
-	};
+    const stripMetadata = async () => {
+        if (!file || !previewUrl) return;
 
-	const handleDrop = (e) => {
-		e.preventDefault();
-		e.stopPropagation();
-		setDragActive(false);
-		if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-			handleFile(e.dataTransfer.files[0]);
-		}
-	};
+        setIsProcessing(true);
+        try {
+            const img = new Image();
+            img.src = previewUrl;
+            await new Promise((resolve, reject) => {
+                img.onload = resolve;
+                img.onerror = reject;
+            });
 
-	const handleFileSelect = (e) => {
-		if (e.target.files && e.target.files[0]) {
-			handleFile(e.target.files[0]);
-		}
-	};
+            // Draw image on canvas, stripping original exif blocks
+            const canvas = document.createElement("canvas");
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext("2d");
+            if (!ctx) throw new Error("Canvas context is missing");
 
-	const stripMetadata = async () => {
-		if (!imageSrc) return;
-		setIsProcessing(true);
+            ctx.drawImage(img, 0, 0);
 
-		try {
-			const img = new Image();
-			await new Promise((resolve, reject) => {
-				img.onload = resolve;
-				img.onerror = reject;
-				img.src = imageSrc;
-			});
+            const mimeType = file.type || "image/jpeg";
+            const blob = await new Promise<Blob | null>((resolve) => {
+                canvas.toBlob((b) => resolve(b), mimeType, 0.95);
+            });
 
-			const canvas = document.createElement("canvas");
-			canvas.width = img.width;
-			canvas.height = img.height;
+            if (!blob) throw new Error("Blob compilation failed");
 
-			const ctx = canvas.getContext("2d");
-			// Draw image directly onto a clean canvas. This strips EXIF/GPS instantly.
-			ctx.drawImage(img, 0, 0);
+            setCleanBlob(blob);
+            const url = URL.createObjectURL(blob);
+            setDownloadUrl(url);
+            toast.success("EXIF, GPS, and camera metadata successfully removed!");
+        } catch (error) {
+            console.error(error);
+            toast.error("Failed to strip metadata from image.");
+        } finally {
+            setIsProcessing(false);
+        }
+    };
 
-			const mimeType = fileInfo.type === "image/jpeg" ? "image/jpeg" : "image/png";
-			const blob = await new Promise((resolve) => {
-				canvas.toBlob(resolve, mimeType, 0.95);
-			});
+    return (
+        <div className="space-y-8 max-w-4xl mx-auto">
+            {/* Privacy Badge */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Metadata stripping happens entirely locally in your browser memory. No files are uploaded or stored.</span>
+            </div>
 
-			setCleanBlob(blob);
-			setIsDone(true);
-			toast.success("All EXIF & GPS metadata successfully removed!");
-		} catch (err) {
-			console.error(err);
-			toast.error("An error occurred during metadata removal");
-		} finally {
-			setIsProcessing(false);
-		}
-	};
+            {/* Header Section */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
+                <div className="flex items-center gap-4">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
+                        <Trash2 className="h-6 w-6" />
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-bold">Image Metadata Stripper</h2>
+                        <p className="text-xs text-muted-foreground">Remove EXIF, GPS, device details, and creation tags from photos locally</p>
+                    </div>
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                    <Button 
+                        variant="outline" 
+                        onClick={() => fileInputRef.current?.click()}
+                        className="border-border hover:bg-muted/40 text-xs font-bold"
+                    >
+                        <Upload className="mr-2 h-4 w-4" /> {file ? "Change Image" : "Select Image"}
+                    </Button>
+                    {file && !cleanBlob && (
+                        <Button 
+                            disabled={isProcessing}
+                            onClick={stripMetadata}
+                            className="bg-primary hover:bg-primary/95 text-xs font-bold text-white shadow-md shadow-primary/10"
+                        >
+                            {isProcessing ? (
+                                <><Loader2 className="mr-2 h-4 w-4 animate-spin text-white" /> Stripping...</>
+                            ) : (
+                                <><Trash2 className="mr-2 h-4 w-4" /> Strip Metadata</>
+                            )}
+                        </Button>
+                    )}
+                </div>
+                <input 
+                    type="file" 
+                    accept="image/*" 
+                    className="hidden" 
+                    ref={fileInputRef}
+                    onChange={onFileChange}
+                />
+            </div>
 
-	const downloadCleanImage = () => {
-		if (!cleanBlob) return;
-		const url = URL.createObjectURL(cleanBlob);
-		const link = document.createElement("a");
-		link.href = url;
-		
-		const ext = fileInfo.type === "image/jpeg" ? ".jpg" : ".png";
-		const baseName = fileInfo.name.replace(/\.[^/.]+$/, "");
-		link.download = `${baseName}_cleaned${ext}`;
-		
-		document.body.appendChild(link);
-		link.click();
-		document.body.removeChild(link);
-		URL.revokeObjectURL(url);
-	};
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                {/* Main Content Area */}
+                <div className="lg:col-span-3 space-y-6">
+                    {!file ? (
+                        <div 
+                            onClick={() => fileInputRef.current?.click()}
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
+                        >
+                            <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
+                                <ImageIcon className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
+                            </div>
+                            <h3 className="mt-6 text-lg font-bold">Upload Image to Strip Info</h3>
+                            <p className="mt-2 text-xs text-muted-foreground max-w-xs leading-relaxed">
+                                Upload JPG, PNG, or WebP. We rasterize the pixel layers on a clean canvas to drop all metadata headers.
+                            </p>
+                        </div>
+                    ) : (
+                        <Card className="border border-border/40 bg-white overflow-hidden shadow-lg rounded-3xl">
+                            <div className="bg-muted/15 border-b border-border/20 py-4 px-6 flex flex-row items-center justify-between">
+                                <div className="flex items-center gap-2 text-foreground">
+                                    <ImageIcon className="h-4 w-4 text-primary" />
+                                    <span className="text-xs font-bold uppercase tracking-wider truncate max-w-xs">{file.name}</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    {tagsCount !== null && (
+                                        <Badge variant="secondary" className="text-[9px] font-bold">
+                                            {tagsCount > 0 ? `${tagsCount} EXIF Tags Found` : "No Metadata Detected"}
+                                        </Badge>
+                                    )}
+                                    <Badge variant="outline" className="border-primary/20 text-primary uppercase text-[9px] font-bold">Local File</Badge>
+                                </div>
+                            </div>
+                            <div className="p-8 flex items-center justify-center bg-muted/5 min-h-[300px]">
+                                {previewUrl && (
+                                    <img 
+                                        src={previewUrl} 
+                                        alt="Preview" 
+                                        className="max-h-[350px] object-contain rounded-2xl border shadow" 
+                                    />
+                                )}
+                            </div>
+                        </Card>
+                    )}
+                </div>
 
-	const clearAll = () => {
-		setImageSrc(null);
-		setFileInfo(null);
-		setCleanBlob(null);
-		setIsDone(false);
-	};
-
-	return (
-		<div className="w-full max-w-5xl mx-auto space-y-12 pb-24 animate-in">
-			<section>
-				<PremiumDropZone
-					onDrop={handleDrop}
-					onDragOver={(e) => { e.preventDefault(); setDragActive(true); }}
-					onDragLeave={() => setDragActive(false)}
-					onClick={() => fileInputRef.current?.click()}
-					dragActive={dragActive}
-					icon={ImageIcon}
-					title="Drop your photo here to strip metadata"
-					subtitle="Accepts JPEG, PNG, or WebP files"
-				/>
-				<input
-					ref={fileInputRef}
-					type="file"
-					accept="image/*"
-					onChange={handleFileSelect}
-					className="hidden"
-				/>
-
-				{fileInfo && (
-					<div className="mt-8 flex justify-between items-center px-4">
-						<div className="flex items-center gap-4">
-							<Badge variant="secondary" className="px-4 py-1.5 text-sm rounded-full">
-								Loaded: {fileInfo.name} ({formatFileSize(fileInfo.size)})
-							</Badge>
-						</div>
-						<Button variant="ghost" size="sm" onClick={clearAll} className="rounded-full hover:bg-destructive/10 hover:text-destructive transition-colors">
-							<TrashIcon className="h-4 w-4 mr-2" />
-							Remove File
-						</Button>
-					</div>
-				)}
-			</section>
-
-			{imageSrc && (
-				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-					{/* Explanation / Actions */}
-					<div className="lg:col-span-7 space-y-6">
-						<GlassCard className="p-8 space-y-6">
-							<h3 className="text-2xl font-bold flex items-center gap-3">
-								<ShieldCheckIcon className="text-emerald-500 w-6 h-6" />
-								Metadata Privacy Protection
-							</h3>
-							
-							<div className="space-y-4 text-muted-foreground leading-relaxed">
-								<p>
-									Modern digital cameras and smartphones save hidden metadata called <strong>EXIF records</strong> inside every photo you take. This information often includes:
-								</p>
-								<ul className="list-disc pl-6 space-y-2">
-									<li>Exact GPS Coordinates (where the photo was taken)</li>
-									<li>Camera or smartphone brand and model</li>
-									<li>Exact date and time of capture</li>
-									<li>Lens descriptions and aperture settings</li>
-								</ul>
-								<p>
-									Sharing photos online with EXIF data active raises privacy concerns. Our tool draws the photo pixels onto a clean virtual canvas, rendering a new file that has <strong>0% EXIF or tracking metadata</strong>.
-								</p>
-							</div>
-
-							<div className="border border-border/40 p-4 rounded-2xl flex items-start gap-4 bg-amber-500/[0.03]">
-								<AlertTriangleIcon className="text-amber-500 w-6 h-6 mt-1 flex-shrink-0" />
-								<div className="text-sm space-y-1">
-									<h4 className="font-bold text-foreground">100% Browser-Side Privacy</h4>
-									<p className="text-muted-foreground">
-										Processing happens inside your web browser. Your private photographs are never sent or stored on our servers.
-									</p>
-								</div>
-							</div>
-						</GlassCard>
-					</div>
-
-					{/* Image Preview & Output */}
-					<div className="lg:col-span-5 space-y-8">
-						<GlassCard className="p-8 flex flex-col items-center justify-center text-center">
-							<h3 className="text-xl font-bold mb-6">Source Preview</h3>
-							<div className="w-full h-48 bg-muted/20 border border-border/60 rounded-3xl overflow-hidden flex items-center justify-center p-4">
-								<img 
-									src={imageSrc} 
-									alt="Uploaded preview" 
-									className="max-w-full max-h-full object-contain rounded-xl"
-								/>
-							</div>
-						</GlassCard>
-
-						<GlassCard className="p-8">
-							{!isDone ? (
-								<Button
-									onClick={stripMetadata}
-									disabled={isProcessing}
-									className="w-full h-20 rounded-[2rem] text-xl font-black tracking-tighter shadow-2xl shadow-primary/30 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-4 group"
-								>
-									{isProcessing ? "PROCESSING..." : "STRIP METADATA"}
-									<ZapIcon className="w-6 h-6 fill-current" />
-								</Button>
-							) : (
-								<div className="space-y-4">
-									<div className="flex items-center justify-center gap-2 p-4 bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 rounded-2xl">
-										<CheckCircleIcon className="w-5 h-5" />
-										<span className="font-bold">Metadata Cleaned!</span>
-									</div>
-									<Button
-										onClick={downloadCleanImage}
-										className="w-full h-20 rounded-[2rem] text-xl font-black tracking-tighter bg-emerald-600 hover:bg-emerald-700 shadow-2xl shadow-emerald-600/30 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-4 group text-white"
-									>
-										DOWNLOAD CLEANED IMAGE
-										<DownloadIcon className="w-6 h-6" />
-									</Button>
-								</div>
-							)}
-						</GlassCard>
-					</div>
-				</div>
-			)}
-		</div>
-	);
+                {/* Right Side Info Bar */}
+                <div className="space-y-4">
+                    <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-4 text-xs leading-relaxed">
+                        <h4 className="font-bold text-sm text-foreground">What is stripped?</h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                            <li>• GPS Latitude, Longitude, and Altitude.</li>
+                            <li>• Camera Model, F-stop, ISO, and Exposure.</li>
+                            <li>• Creation Timestamp and Editor software tags.</li>
+                        </ul>
+                    </Card>
+                    
+                    {downloadUrl && (
+                        <Card className="p-5 border border-emerald-500/20 bg-emerald-500/5 rounded-2xl space-y-3 text-xs leading-relaxed animate-in">
+                            <h4 className="font-bold text-sm text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                                <CheckCircle2 className="w-4 h-4 text-emerald-500" /> Sanitized Image Ready!
+                            </h4>
+                            <Button asChild className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-9">
+                                <a href={downloadUrl} download={`sanitized_${file!.name}`}>
+                                    <Download className="w-4 h-4 mr-2" /> Download Clean Image
+                                </a>
+                            </Button>
+                        </Card>
+                    )}
+                </div>
+            </div>
+        </div>
+    );
 }
