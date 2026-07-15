@@ -9,7 +9,6 @@ import {
     ShieldCheck, 
     X,
     Settings,
-    CheckCircle2,
     FileText,
     ArrowRight
 } from "lucide-react";

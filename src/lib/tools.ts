@@ -12,6 +12,7 @@ export const STATIC_ROUTES = {
 	BLOG: "/blog",
 	TOOL_GUIDES: "/tool-guides",
 	NEW_TOOLS: "/new-tools",
+	PRO: "/pro",
 };
 
 export const SUPPORTED_LANGUAGES = [

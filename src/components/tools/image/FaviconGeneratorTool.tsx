@@ -10,7 +10,6 @@ import {
     ShieldCheck,
     Settings,
     Grid,
-    Check,
     Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";

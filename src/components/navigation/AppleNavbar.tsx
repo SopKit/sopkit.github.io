@@ -1,8 +1,8 @@
 "use client";
 
-import { Github, LayoutGrid, Search, Menu, X, Command, Sparkles } from "lucide-react";
+import { Github, LayoutGrid, Search, Menu, X, Sparkles } from "lucide-react";
 import Link from "next/link";
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import * as React from "react";
 import { useEffect, useState, useRef, Suspense } from "react";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
