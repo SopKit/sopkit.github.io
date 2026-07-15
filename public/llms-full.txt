@@ -472,87 +472,91 @@ Canonical Base URL: https://sopkit.github.io
 
 #### [Compress PDF to Exact KB](https://sopkit.github.io/compress-pdf-to-exact-kb)
 - **Description**: Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online.
+- **Alternative Intents / Keywords**: `compress-pdf-to-exact-kb-no-upload`, `privacy-friendly-compress-pdf-to-exact-kb`, `client-side-compress-pdf-to-exact-kb-free`, `local-compress-pdf-to-exact-kb-offline`
 
 #### [Remove Pages from PDF](https://sopkit.github.io/remove-pages-from-pdf)
 - **Description**: Delete unwanted pages from a PDF file online. Select pages, remove them, and download a clean PDF for free.
+- **Alternative Intents / Keywords**: `remove-pages-from-pdf-no-upload`, `privacy-friendly-remove-pages-from-pdf`, `client-side-remove-pages-from-pdf-free`, `local-remove-pages-from-pdf-offline`
 
 #### [PDF to JPG Converter](https://sopkit.github.io/pdf-to-jpg-converter)
 - **Description**: Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file.
+- **Alternative Intents / Keywords**: `pdf-to-jpg-converter-no-upload`, `privacy-friendly-pdf-to-jpg-converter`, `client-side-pdf-to-jpg-converter-free`, `local-pdf-to-jpg-converter-offline`
 
 #### [Merge PDF Online](https://sopkit.github.io/merge-pdf-online)
 - **Description**: Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly.
+- **Alternative Intents / Keywords**: `merge-pdf-online-no-upload`, `privacy-friendly-merge-pdf-online`, `client-side-merge-pdf-online-free`, `local-merge-pdf-online-offline`
 
 #### [HTML to PDF Converter](https://sopkit.github.io/html-to-pdf)
 - **Description**: Convert HTML code or files to print-ready PDF documents client-side instantly.
-- **Alternative Intents / Keywords**: `convert-html-to-pdf`, `html-to-pdf-converter`, `save-html-as-pdf`, `free-html-to-pdf-online`
+- **Alternative Intents / Keywords**: `convert-html-to-pdf`, `html-to-pdf-converter`, `save-html-as-pdf`, `free-html-to-pdf-online`, `html-to-pdf-no-upload`, `privacy-friendly-html-to-pdf`, `client-side-html-to-pdf-free`, `local-html-to-pdf-offline`
 
 #### [PDF Compressor](https://sopkit.github.io/pdf-compressor)
 - **Description**: Compress PDF documents to reduce file size while maintaining original print quality.
-- **Alternative Intents / Keywords**: `reduce-pdf-size`, `compress-pdf-online`, `free-pdf-size-reducer`, `minify-pdf-document`
+- **Alternative Intents / Keywords**: `reduce-pdf-size`, `compress-pdf-online`, `free-pdf-size-reducer`, `minify-pdf-document`, `pdf-compressor-no-upload`, `privacy-friendly-pdf-compressor`, `client-side-pdf-compressor-free`, `local-pdf-compressor-offline`
 
 #### [PDF Page Numbers Adder](https://sopkit.github.io/pdf-page-numbers)
 - **Description**: Add page numbers to your PDF documents easily. Customize positioning, font size, and start index.
-- **Alternative Intents / Keywords**: `add-page-numbers-to-pdf`, `pdf-pagination-tool`, `insert-pdf-page-numbers`, `paginate-pdf-online`
+- **Alternative Intents / Keywords**: `add-page-numbers-to-pdf`, `pdf-pagination-tool`, `insert-pdf-page-numbers`, `paginate-pdf-online`, `pdf-page-numbers-no-upload`, `privacy-friendly-pdf-page-numbers`, `client-side-pdf-page-numbers-free`, `local-pdf-page-numbers-offline`
 
 #### [PDF Watermark Creator](https://sopkit.github.io/pdf-watermark)
 - **Description**: Add text or image logos as watermarks to all pages of your PDF document securely in your browser.
-- **Alternative Intents / Keywords**: `watermark-pdf-online`, `add-logo-to-pdf`, `pdf-watermark-inserter`, `free-pdf-watermarker`
+- **Alternative Intents / Keywords**: `watermark-pdf-online`, `add-logo-to-pdf`, `pdf-watermark-inserter`, `free-pdf-watermarker`, `pdf-watermark-no-upload`, `privacy-friendly-pdf-watermark`, `client-side-pdf-watermark-free`, `local-pdf-watermark-offline`
 
 #### [PDF Metadata Editor](https://sopkit.github.io/pdf-metadata-editor)
 - **Description**: Edit PDF document metadata including Title, Author, Subject, and Keywords online for free.
-- **Alternative Intents / Keywords**: `edit-pdf-properties`, `change-pdf-title-author`, `pdf-tag-editor-online`
+- **Alternative Intents / Keywords**: `edit-pdf-properties`, `change-pdf-title-author`, `pdf-tag-editor-online`, `pdf-metadata-editor-no-upload`, `privacy-friendly-pdf-metadata-editor`, `client-side-pdf-metadata-editor-free`, `local-pdf-metadata-editor-offline`
 
 #### [PDF Merger](https://sopkit.github.io/pdf-merger)
 - **Description**: Combine multiple PDF documents into a single file quickly. Reorder files and merge instantly.
-- **Alternative Intents / Keywords**: `combine-pdf-files`, `merge-multiple-pdfs`, `free-pdf-merger-online`, `pdf-joiner-tool`
+- **Alternative Intents / Keywords**: `combine-pdf-files`, `merge-multiple-pdfs`, `free-pdf-merger-online`, `pdf-joiner-tool`, `pdf-merger-no-upload`, `privacy-friendly-pdf-merger`, `client-side-pdf-merger-free`, `local-pdf-merger-offline`
 
 #### [PDF Splitter](https://sopkit.github.io/pdf-splitter)
 - **Description**: Split PDF documents by page ranges or extract individual pages into separate PDF files.
-- **Alternative Intents / Keywords**: `extract-pdf-pages`, `split-pdf-online`, `cut-pdf-pages`, `pdf-page-extractor-free`
+- **Alternative Intents / Keywords**: `extract-pdf-pages`, `split-pdf-online`, `cut-pdf-pages`, `pdf-page-extractor-free`, `pdf-splitter-no-upload`, `privacy-friendly-pdf-splitter`, `client-side-pdf-splitter-free`, `local-pdf-splitter-offline`
 
 #### [PDF Rotation Tool](https://sopkit.github.io/pdf-rotation)
 - **Description**: Rotate single or all pages of a PDF document to landscape or portrait orientation instantly.
-- **Alternative Intents / Keywords**: `rotate-pdf-pages`, `change-pdf-orientation`, `fix-pdf-page-angle`, `rotate-pdf-online-free`
+- **Alternative Intents / Keywords**: `rotate-pdf-pages`, `change-pdf-orientation`, `fix-pdf-page-angle`, `rotate-pdf-online-free`, `pdf-rotation-no-upload`, `privacy-friendly-pdf-rotation`, `client-side-pdf-rotation-free`, `local-pdf-rotation-offline`
 
 #### [Image to PDF](https://sopkit.github.io/image-to-pdf)
 - **Description**: Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required.
-- **Alternative Intents / Keywords**: `add-page-numbers-to-pdf-online`, `add-password-to-pdf`, `annotate-pdf-online`, `change-pdf-orientation`, `combine-pdf-files`, `image-to-pdf-online-free`, `free-image-to-pdf-no-signup`, `image-to-pdf-tool-online`, `best-free-image-to-pdf`, `image-to-pdf-without-registration`, `online-image-to-pdf-free`, `image-to-pdf-browser-based`, `image-to-pdf-no-download`, `image-to-pdf-instant-online`, `image-to-pdf-privacy-focused`
+- **Alternative Intents / Keywords**: `add-page-numbers-to-pdf-online`, `add-password-to-pdf`, `annotate-pdf-online`, `change-pdf-orientation`, `combine-pdf-files`, `image-to-pdf-online-free`, `free-image-to-pdf-no-signup`, `image-to-pdf-tool-online`, `best-free-image-to-pdf`, `image-to-pdf-without-registration`, `online-image-to-pdf-free`, `image-to-pdf-browser-based`, `image-to-pdf-no-download`, `image-to-pdf-instant-online`, `image-to-pdf-privacy-focused`, `image-to-pdf-no-upload`, `privacy-friendly-image-to-pdf`, `client-side-image-to-pdf-free`, `local-image-to-pdf-offline`
 
 #### [PDF Editor](https://sopkit.github.io/pdf-editor)
 - **Description**: Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup.
-- **Alternative Intents / Keywords**: `annotate-pdf-online-free`, `edit-pdf-online-free`, `free-pdf-text-editor`, `pdf-text-editor`, `pdf-editor-online-free`, `free-pdf-editor-no-signup`, `pdf-editor-tool-online`, `best-free-pdf-editor`, `pdf-editor-without-registration`, `online-pdf-editor-free`, `pdf-editor-browser-based`, `pdf-editor-no-download`, `pdf-editor-instant-online`, `pdf-editor-privacy-focused`, `pdf-editor-web-based`
+- **Alternative Intents / Keywords**: `annotate-pdf-online-free`, `edit-pdf-online-free`, `free-pdf-text-editor`, `pdf-text-editor`, `pdf-editor-online-free`, `free-pdf-editor-no-signup`, `pdf-editor-tool-online`, `best-free-pdf-editor`, `pdf-editor-without-registration`, `online-pdf-editor-free`, `pdf-editor-browser-based`, `pdf-editor-no-download`, `pdf-editor-instant-online`, `pdf-editor-privacy-focused`, `pdf-editor-web-based`, `pdf-editor-no-upload`, `privacy-friendly-pdf-editor`, `client-side-pdf-editor-free`, `local-pdf-editor-offline`
 
 #### [PDF Password Protect](https://sopkit.github.io/pdf-protect)
 - **Description**: Secure your PDF files with strong password encryption online for free. Privacy-first local processing ensures your sensitive documents never leave your browser.
-- **Alternative Intents / Keywords**: `lock-pdf-from-editing-free`, `password-protect-pdf`, `password-protect-pdf-online`, `pdf-password-remover`, `remove-pdf-password`, `pdf-password-protect-online-free`, `free-pdf-password-protect-no-signup`, `pdf-password-protect-tool-online`, `best-free-pdf-password-protect`, `pdf-password-protect-without-registration`, `online-pdf-password-protect-free`, `pdf-password-protect-browser-based`, `pdf-password-protect-no-download`, `pdf-password-protect-instant-online`, `pdf-password-protect-privacy-focused`
+- **Alternative Intents / Keywords**: `lock-pdf-from-editing-free`, `password-protect-pdf`, `password-protect-pdf-online`, `pdf-password-remover`, `remove-pdf-password`, `pdf-password-protect-online-free`, `free-pdf-password-protect-no-signup`, `pdf-password-protect-tool-online`, `best-free-pdf-password-protect`, `pdf-password-protect-without-registration`, `online-pdf-password-protect-free`, `pdf-password-protect-browser-based`, `pdf-password-protect-no-download`, `pdf-password-protect-instant-online`, `pdf-password-protect-privacy-focused`, `pdf-protect-no-upload`, `privacy-friendly-pdf-protect`, `client-side-pdf-protect-free`, `local-pdf-protect-offline`
 
 #### [PDF to Image](https://sopkit.github.io/pdf-to-image)
 - **Description**: Convert PDF pages to high-quality JPG, PNG images
-- **Alternative Intents / Keywords**: `convert-pdf-to-high-quality-jpg`, `pdf-to-png-converter`, `pdf-to-image-online-free`, `free-pdf-to-image-no-signup`, `pdf-to-image-tool-online`, `best-free-pdf-to-image`, `pdf-to-image-without-registration`, `online-pdf-to-image-free`, `pdf-to-image-browser-based`, `pdf-to-image-no-download`, `pdf-to-image-instant-online`, `pdf-to-image-privacy-focused`, `pdf-to-image-web-based`, `pdf-to-image-no-install`, `free-online-pdf-to-image`
+- **Alternative Intents / Keywords**: `convert-pdf-to-high-quality-jpg`, `pdf-to-png-converter`, `pdf-to-image-online-free`, `free-pdf-to-image-no-signup`, `pdf-to-image-tool-online`, `best-free-pdf-to-image`, `pdf-to-image-without-registration`, `online-pdf-to-image-free`, `pdf-to-image-browser-based`, `pdf-to-image-no-download`, `pdf-to-image-instant-online`, `pdf-to-image-privacy-focused`, `pdf-to-image-web-based`, `pdf-to-image-no-install`, `free-online-pdf-to-image`, `pdf-to-image-no-upload`, `privacy-friendly-pdf-to-image`, `client-side-pdf-to-image-free`, `local-pdf-to-image-offline`
 
 #### [PDF to Word](https://sopkit.github.io/pdf-to-word)
 - **Description**: Convert PDF files to editable Word documents
-- **Alternative Intents / Keywords**: `convert-pdf-to-docx-editable-free`, `editable-pdf-to-word`, `pdf-to-doc-converter`, `save-word-as-pdf`, `pdf-to-word-online-free`, `free-pdf-to-word-no-signup`, `pdf-to-word-tool-online`, `best-free-pdf-to-word`, `pdf-to-word-without-registration`, `online-pdf-to-word-free`, `pdf-to-word-browser-based`, `pdf-to-word-no-download`, `pdf-to-word-instant-online`, `pdf-to-word-privacy-focused`, `pdf-to-word-web-based`
+- **Alternative Intents / Keywords**: `convert-pdf-to-docx-editable-free`, `editable-pdf-to-word`, `pdf-to-doc-converter`, `save-word-as-pdf`, `pdf-to-word-online-free`, `free-pdf-to-word-no-signup`, `pdf-to-word-tool-online`, `best-free-pdf-to-word`, `pdf-to-word-without-registration`, `online-pdf-to-word-free`, `pdf-to-word-browser-based`, `pdf-to-word-no-download`, `pdf-to-word-instant-online`, `pdf-to-word-privacy-focused`, `pdf-to-word-web-based`, `pdf-to-word-no-upload`, `privacy-friendly-pdf-to-word`, `client-side-pdf-to-word-free`, `local-pdf-to-word-offline`
 
 #### [PDF Unlocker](https://sopkit.github.io/pdf-unlocker)
 - **Description**: Remove password protection from PDF files
-- **Alternative Intents / Keywords**: `remove-password-from-pdf-permanently`, `unlock-password-protected-pdf`, `pdf-unlocker-online-free`, `free-pdf-unlocker-no-signup`, `pdf-unlocker-tool-online`, `best-free-pdf-unlocker`, `pdf-unlocker-without-registration`, `online-pdf-unlocker-free`, `pdf-unlocker-browser-based`, `pdf-unlocker-no-download`, `pdf-unlocker-instant-online`, `pdf-unlocker-privacy-focused`, `pdf-unlocker-web-based`, `pdf-unlocker-no-install`, `free-online-pdf-unlocker`
+- **Alternative Intents / Keywords**: `remove-password-from-pdf-permanently`, `unlock-password-protected-pdf`, `pdf-unlocker-online-free`, `free-pdf-unlocker-no-signup`, `pdf-unlocker-tool-online`, `best-free-pdf-unlocker`, `pdf-unlocker-without-registration`, `online-pdf-unlocker-free`, `pdf-unlocker-browser-based`, `pdf-unlocker-no-download`, `pdf-unlocker-instant-online`, `pdf-unlocker-privacy-focused`, `pdf-unlocker-web-based`, `pdf-unlocker-no-install`, `free-online-pdf-unlocker`, `pdf-unlocker-no-upload`, `privacy-friendly-pdf-unlocker`, `client-side-pdf-unlocker-free`, `local-pdf-unlocker-offline`
 
 #### [Word to PDF](https://sopkit.github.io/word-to-pdf)
 - **Description**: Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required.
-- **Alternative Intents / Keywords**: `convert-docx-to-pdf-free-no-limit`, `word-to-pdf-converter-online`, `word-to-pdf-online-free`, `free-word-to-pdf-no-signup`, `word-to-pdf-tool-online`, `best-free-word-to-pdf`, `word-to-pdf-without-registration`, `online-word-to-pdf-free`, `word-to-pdf-browser-based`, `word-to-pdf-no-download`, `word-to-pdf-instant-online`, `word-to-pdf-privacy-focused`, `word-to-pdf-web-based`, `word-to-pdf-no-install`, `free-online-word-to-pdf`
+- **Alternative Intents / Keywords**: `convert-docx-to-pdf-free-no-limit`, `word-to-pdf-converter-online`, `word-to-pdf-online-free`, `free-word-to-pdf-no-signup`, `word-to-pdf-tool-online`, `best-free-word-to-pdf`, `word-to-pdf-without-registration`, `online-word-to-pdf-free`, `word-to-pdf-browser-based`, `word-to-pdf-no-download`, `word-to-pdf-instant-online`, `word-to-pdf-privacy-focused`, `word-to-pdf-web-based`, `word-to-pdf-no-install`, `free-online-word-to-pdf`, `word-to-pdf-no-upload`, `privacy-friendly-word-to-pdf`, `client-side-word-to-pdf-free`, `local-word-to-pdf-offline`
 
 #### [PDF Grayscale](https://sopkit.github.io/pdf-grayscale)
 - **Description**: Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signup required.
-- **Alternative Intents / Keywords**: `pdf-grayscale-online-free`, `free-pdf-grayscale-no-signup`, `pdf-grayscale-tool-online`, `best-free-pdf-grayscale`, `pdf-grayscale-without-registration`, `online-pdf-grayscale-free`, `pdf-grayscale-browser-based`, `pdf-grayscale-no-download`, `pdf-grayscale-instant-online`, `pdf-grayscale-privacy-focused`, `pdf-grayscale-web-based`, `pdf-grayscale-no-install`, `free-online-pdf-grayscale`, `pdf-grayscale-secure-online`, `pdf-grayscale-fast-processing`
+- **Alternative Intents / Keywords**: `pdf-grayscale-online-free`, `free-pdf-grayscale-no-signup`, `pdf-grayscale-tool-online`, `best-free-pdf-grayscale`, `pdf-grayscale-without-registration`, `online-pdf-grayscale-free`, `pdf-grayscale-browser-based`, `pdf-grayscale-no-download`, `pdf-grayscale-instant-online`, `pdf-grayscale-privacy-focused`, `pdf-grayscale-web-based`, `pdf-grayscale-no-install`, `free-online-pdf-grayscale`, `pdf-grayscale-secure-online`, `pdf-grayscale-fast-processing`, `pdf-grayscale-no-upload`, `privacy-friendly-pdf-grayscale`, `client-side-pdf-grayscale-free`, `local-pdf-grayscale-offline`
 
 #### [PDF Repair](https://sopkit.github.io/pdf-repair)
 - **Description**: Fix corrupted or broken PDF files online for free. Our secure repair tool rebuilds document headers and cross-reference tables to restore access to your PDF documents instantly.
-- **Alternative Intents / Keywords**: `pdf-repair-online-free`, `free-pdf-repair-no-signup`, `pdf-repair-tool-online`, `best-free-pdf-repair`, `pdf-repair-without-registration`, `online-pdf-repair-free`, `pdf-repair-browser-based`, `pdf-repair-no-download`, `pdf-repair-instant-online`, `pdf-repair-privacy-focused`, `pdf-repair-web-based`, `pdf-repair-no-install`, `free-online-pdf-repair`, `pdf-repair-secure-online`, `pdf-repair-fast-processing`
+- **Alternative Intents / Keywords**: `pdf-repair-online-free`, `free-pdf-repair-no-signup`, `pdf-repair-tool-online`, `best-free-pdf-repair`, `pdf-repair-without-registration`, `online-pdf-repair-free`, `pdf-repair-browser-based`, `pdf-repair-no-download`, `pdf-repair-instant-online`, `pdf-repair-privacy-focused`, `pdf-repair-web-based`, `pdf-repair-no-install`, `free-online-pdf-repair`, `pdf-repair-secure-online`, `pdf-repair-fast-processing`, `pdf-repair-no-upload`, `privacy-friendly-pdf-repair`, `client-side-pdf-repair-free`, `local-pdf-repair-offline`
 
 #### [PDF Tools](https://sopkit.github.io/pdf-tools)
 - **Description**: Merge, split, compress, and manipulate PDF documents
-- **Alternative Intents / Keywords**: `pdf-tools-online-free`, `free-pdf-tools-no-signup`, `pdf-tools-tool-online`, `best-free-pdf-tools`, `pdf-tools-without-registration`, `online-pdf-tools-free`, `pdf-tools-browser-based`, `pdf-tools-no-download`, `pdf-tools-instant-online`, `pdf-tools-privacy-focused`, `pdf-tools-web-based`, `pdf-tools-no-install`, `free-online-pdf-tools`, `pdf-tools-secure-online`, `pdf-tools-fast-processing`
+- **Alternative Intents / Keywords**: `pdf-tools-online-free`, `free-pdf-tools-no-signup`, `pdf-tools-tool-online`, `best-free-pdf-tools`, `pdf-tools-without-registration`, `online-pdf-tools-free`, `pdf-tools-browser-based`, `pdf-tools-no-download`, `pdf-tools-instant-online`, `pdf-tools-privacy-focused`, `pdf-tools-web-based`, `pdf-tools-no-install`, `free-online-pdf-tools`, `pdf-tools-secure-online`, `pdf-tools-fast-processing`, `pdf-tools-no-upload`, `privacy-friendly-pdf-tools`, `client-side-pdf-tools-free`, `local-pdf-tools-offline`
 
 
 ### Video Tools Tools

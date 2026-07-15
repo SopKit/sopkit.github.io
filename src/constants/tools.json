@@ -3825,7 +3825,14 @@
           "description": "Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online.",
           "route": "/compress-pdf-to-exact-kb",
           "popular": true,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side Compress PDF to Exact KB online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
+          "extraSlugs": [
+            "compress-pdf-to-exact-kb-no-upload",
+            "privacy-friendly-compress-pdf-to-exact-kb",
+            "client-side-compress-pdf-to-exact-kb-free",
+            "local-compress-pdf-to-exact-kb-offline"
+          ]
         },
         {
           "id": "remove-pages-from-pdf",
@@ -3833,7 +3840,14 @@
           "description": "Delete unwanted pages from a PDF file online. Select pages, remove them, and download a clean PDF for free.",
           "route": "/remove-pages-from-pdf",
           "popular": false,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side Remove Pages from PDF online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
+          "extraSlugs": [
+            "remove-pages-from-pdf-no-upload",
+            "privacy-friendly-remove-pages-from-pdf",
+            "client-side-remove-pages-from-pdf-free",
+            "local-remove-pages-from-pdf-offline"
+          ]
         },
         {
           "id": "pdf-to-jpg-converter",
@@ -3841,7 +3855,14 @@
           "description": "Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file.",
           "route": "/pdf-to-jpg-converter",
           "popular": true,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF to JPG Converter online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
+          "extraSlugs": [
+            "pdf-to-jpg-converter-no-upload",
+            "privacy-friendly-pdf-to-jpg-converter",
+            "client-side-pdf-to-jpg-converter-free",
+            "local-pdf-to-jpg-converter-offline"
+          ]
         },
         {
           "id": "merge-pdf-online",
@@ -3849,7 +3870,14 @@
           "description": "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly.",
           "route": "/merge-pdf-online",
           "popular": true,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side Merge PDF Online online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
+          "extraSlugs": [
+            "merge-pdf-online-no-upload",
+            "privacy-friendly-merge-pdf-online",
+            "client-side-merge-pdf-online-free",
+            "local-merge-pdf-online-offline"
+          ]
         },
         {
           "id": "html-to-pdf",
@@ -3858,12 +3886,16 @@
           "route": "/html-to-pdf",
           "popular": true,
           "category": "pdf",
-          "seoDescription": "Convert HTML snippets or code files directly into printable PDF documents in your browser. Fully local and private processing, free of charge.",
+          "seoDescription": "Privacy-friendly, 100% client-side HTML to PDF Converter online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
           "extraSlugs": [
             "convert-html-to-pdf",
             "html-to-pdf-converter",
             "save-html-as-pdf",
-            "free-html-to-pdf-online"
+            "free-html-to-pdf-online",
+            "html-to-pdf-no-upload",
+            "privacy-friendly-html-to-pdf",
+            "client-side-html-to-pdf-free",
+            "local-html-to-pdf-offline"
           ]
         },
         {
@@ -3873,12 +3905,16 @@
           "route": "/pdf-compressor",
           "popular": true,
           "category": "pdf",
-          "seoDescription": "Compress and reduce the file size of your PDF documents instantly. Fast, browser-based local compression keeping your print quality intact.",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Compressor online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
           "extraSlugs": [
             "reduce-pdf-size",
             "compress-pdf-online",
             "free-pdf-size-reducer",
-            "minify-pdf-document"
+            "minify-pdf-document",
+            "pdf-compressor-no-upload",
+            "privacy-friendly-pdf-compressor",
+            "client-side-pdf-compressor-free",
+            "local-pdf-compressor-offline"
           ]
         },
         {
@@ -3888,12 +3924,16 @@
           "route": "/pdf-page-numbers",
           "popular": true,
           "category": "pdf",
-          "seoDescription": "Add custom page numbers to your PDF headers or footers. Select from multiple layout alignments, start indexes, and font sizes securely.",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Page Numbers Adder online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
           "extraSlugs": [
             "add-page-numbers-to-pdf",
             "pdf-pagination-tool",
             "insert-pdf-page-numbers",
-            "paginate-pdf-online"
+            "paginate-pdf-online",
+            "pdf-page-numbers-no-upload",
+            "privacy-friendly-pdf-page-numbers",
+            "client-side-pdf-page-numbers-free",
+            "local-pdf-page-numbers-offline"
           ]
         },
         {
@@ -3903,12 +3943,16 @@
           "route": "/pdf-watermark",
           "popular": true,
           "category": "pdf",
-          "seoDescription": "Add text or image watermark logos to all pages of your PDF document in your browser. Customize alignment, opacity, rotation, and positioning.",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Watermark Creator online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
           "extraSlugs": [
             "watermark-pdf-online",
             "add-logo-to-pdf",
             "pdf-watermark-inserter",
-            "free-pdf-watermarker"
+            "free-pdf-watermarker",
+            "pdf-watermark-no-upload",
+            "privacy-friendly-pdf-watermark",
+            "client-side-pdf-watermark-free",
+            "local-pdf-watermark-offline"
           ]
         },
         {
@@ -3918,11 +3962,15 @@
           "route": "/pdf-metadata-editor",
           "popular": true,
           "category": "pdf",
-          "seoDescription": "Edit PDF document properties and metadata fields like Title, Author, Subject, and Keywords. Client-side browser execution keeps your files private.",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Metadata Editor online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
           "extraSlugs": [
             "edit-pdf-properties",
             "change-pdf-title-author",
-            "pdf-tag-editor-online"
+            "pdf-tag-editor-online",
+            "pdf-metadata-editor-no-upload",
+            "privacy-friendly-pdf-metadata-editor",
+            "client-side-pdf-metadata-editor-free",
+            "local-pdf-metadata-editor-offline"
           ]
         },
         {
@@ -3932,12 +3980,16 @@
           "route": "/pdf-merger",
           "popular": true,
           "category": "pdf",
-          "seoDescription": "Combine multiple PDF files into a single document online. Drag to reorder pages and merge files securely in your browser.",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Merger online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
           "extraSlugs": [
             "combine-pdf-files",
             "merge-multiple-pdfs",
             "free-pdf-merger-online",
-            "pdf-joiner-tool"
+            "pdf-joiner-tool",
+            "pdf-merger-no-upload",
+            "privacy-friendly-pdf-merger",
+            "client-side-pdf-merger-free",
+            "local-pdf-merger-offline"
           ]
         },
         {
@@ -3947,12 +3999,16 @@
           "route": "/pdf-splitter",
           "popular": true,
           "category": "pdf",
-          "seoDescription": "Split PDF documents by custom page ranges or extract single pages into new PDF files instantly. 100% private client-side utility.",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Splitter online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
           "extraSlugs": [
             "extract-pdf-pages",
             "split-pdf-online",
             "cut-pdf-pages",
-            "pdf-page-extractor-free"
+            "pdf-page-extractor-free",
+            "pdf-splitter-no-upload",
+            "privacy-friendly-pdf-splitter",
+            "client-side-pdf-splitter-free",
+            "local-pdf-splitter-offline"
           ]
         },
         {
@@ -3962,12 +4018,16 @@
           "route": "/pdf-rotation",
           "popular": true,
           "category": "pdf",
-          "seoDescription": "Rotate single pages or all pages of a PDF document to landscape or portrait orientation instantly. Safe, free, and local browser execution.",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Rotation Tool online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
           "extraSlugs": [
             "rotate-pdf-pages",
             "change-pdf-orientation",
             "fix-pdf-page-angle",
-            "rotate-pdf-online-free"
+            "rotate-pdf-online-free",
+            "pdf-rotation-no-upload",
+            "privacy-friendly-pdf-rotation",
+            "client-side-pdf-rotation-free",
+            "local-pdf-rotation-offline"
           ]
         },
         {
@@ -3990,10 +4050,15 @@
             "image-to-pdf-browser-based",
             "image-to-pdf-no-download",
             "image-to-pdf-instant-online",
-            "image-to-pdf-privacy-focused"
+            "image-to-pdf-privacy-focused",
+            "image-to-pdf-no-upload",
+            "privacy-friendly-image-to-pdf",
+            "client-side-image-to-pdf-free",
+            "local-image-to-pdf-offline"
           ],
           "popular": true,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side Image to PDF online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever."
         },
         {
           "id": "pdf-editor",
@@ -4015,10 +4080,15 @@
             "pdf-editor-no-download",
             "pdf-editor-instant-online",
             "pdf-editor-privacy-focused",
-            "pdf-editor-web-based"
+            "pdf-editor-web-based",
+            "pdf-editor-no-upload",
+            "privacy-friendly-pdf-editor",
+            "client-side-pdf-editor-free",
+            "local-pdf-editor-offline"
           ],
           "popular": true,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Editor online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever."
         },
         {
           "id": "pdf-protect",
@@ -4040,10 +4110,15 @@
             "pdf-password-protect-browser-based",
             "pdf-password-protect-no-download",
             "pdf-password-protect-instant-online",
-            "pdf-password-protect-privacy-focused"
+            "pdf-password-protect-privacy-focused",
+            "pdf-protect-no-upload",
+            "privacy-friendly-pdf-protect",
+            "client-side-pdf-protect-free",
+            "local-pdf-protect-offline"
           ],
           "popular": false,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Password Protect online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever."
         },
         {
           "id": "pdf-to-image",
@@ -4065,10 +4140,15 @@
             "pdf-to-image-privacy-focused",
             "pdf-to-image-web-based",
             "pdf-to-image-no-install",
-            "free-online-pdf-to-image"
+            "free-online-pdf-to-image",
+            "pdf-to-image-no-upload",
+            "privacy-friendly-pdf-to-image",
+            "client-side-pdf-to-image-free",
+            "local-pdf-to-image-offline"
           ],
           "popular": true,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF to Image online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever."
         },
         {
           "id": "pdf-to-word",
@@ -4090,10 +4170,15 @@
             "pdf-to-word-no-download",
             "pdf-to-word-instant-online",
             "pdf-to-word-privacy-focused",
-            "pdf-to-word-web-based"
+            "pdf-to-word-web-based",
+            "pdf-to-word-no-upload",
+            "privacy-friendly-pdf-to-word",
+            "client-side-pdf-to-word-free",
+            "local-pdf-to-word-offline"
           ],
           "popular": true,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF to Word online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever."
         },
         {
           "id": "pdf-unlocker",
@@ -4115,10 +4200,15 @@
             "pdf-unlocker-privacy-focused",
             "pdf-unlocker-web-based",
             "pdf-unlocker-no-install",
-            "free-online-pdf-unlocker"
+            "free-online-pdf-unlocker",
+            "pdf-unlocker-no-upload",
+            "privacy-friendly-pdf-unlocker",
+            "client-side-pdf-unlocker-free",
+            "local-pdf-unlocker-offline"
           ],
           "popular": false,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Unlocker online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever."
         },
         {
           "id": "word-to-pdf",
@@ -4140,10 +4230,15 @@
             "word-to-pdf-privacy-focused",
             "word-to-pdf-web-based",
             "word-to-pdf-no-install",
-            "free-online-word-to-pdf"
+            "free-online-word-to-pdf",
+            "word-to-pdf-no-upload",
+            "privacy-friendly-word-to-pdf",
+            "client-side-word-to-pdf-free",
+            "local-word-to-pdf-offline"
           ],
           "popular": true,
-          "category": "pdf"
+          "category": "pdf",
+          "seoDescription": "Privacy-friendly, 100% client-side Word to PDF online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever."
         },
         {
           "id": "pdf-grayscale",
@@ -4167,8 +4262,13 @@
             "pdf-grayscale-no-install",
             "free-online-pdf-grayscale",
             "pdf-grayscale-secure-online",
-            "pdf-grayscale-fast-processing"
-          ]
+            "pdf-grayscale-fast-processing",
+            "pdf-grayscale-no-upload",
+            "privacy-friendly-pdf-grayscale",
+            "client-side-pdf-grayscale-free",
+            "local-pdf-grayscale-offline"
+          ],
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Grayscale online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever."
         },
         {
           "id": "pdf-repair",
@@ -4192,8 +4292,13 @@
             "pdf-repair-no-install",
             "free-online-pdf-repair",
             "pdf-repair-secure-online",
-            "pdf-repair-fast-processing"
-          ]
+            "pdf-repair-fast-processing",
+            "pdf-repair-no-upload",
+            "privacy-friendly-pdf-repair",
+            "client-side-pdf-repair-free",
+            "local-pdf-repair-offline"
+          ],
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Repair online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever."
         },
         {
           "id": "pdf-tools",
@@ -4216,8 +4321,13 @@
             "pdf-tools-no-install",
             "free-online-pdf-tools",
             "pdf-tools-secure-online",
-            "pdf-tools-fast-processing"
-          ]
+            "pdf-tools-fast-processing",
+            "pdf-tools-no-upload",
+            "privacy-friendly-pdf-tools",
+            "client-side-pdf-tools-free",
+            "local-pdf-tools-offline"
+          ],
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Tools online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever."
         }
       ]
     },

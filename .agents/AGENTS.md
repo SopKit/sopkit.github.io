@@ -17,3 +17,4 @@ If you are asked to register new tools, update routing structures, deduplicate r
 3.  **Deduplicated Registry**: Keep **[tools.json](/sopkit.github.io/src/constants/tools.json)** clean. Run `node scripts/deduplicate-tools.mjs` if you introduce or update tool metadata.
 4.  **Disabled Ads Configuration**: Keep `SHOW_SCRIPTLY_ADS = false` inside `src/constants/config.ts` globally disabled unless explicitly requested by the user.
 5.  **Always Push to Git**: Once typechecks pass and sitemap/LLM indices are regenerated (`node scripts/generate-llms.mjs`), commit and git push directly to the `main` branch.
+6.  **PDF Tools Privacy & Keyword Targets**: Target long-tail, privacy-centric keyword search queries (e.g. "privacy-friendly", "no upload", "100% client-side", "secure local", "fast", "free forever") for all PDF-related tools. Ensure that both page metadata and tool interfaces clearly convey local-only browser execution.
