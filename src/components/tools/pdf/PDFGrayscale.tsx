@@ -39,25 +39,87 @@ export default function PDFGrayscale() {
         }
     };
 
+	const loadPdfJs = async () => {
+		if ((window as any).pdfjsLib) return (window as any).pdfjsLib;
+
+		return new Promise((resolve, reject) => {
+			const script = document.createElement("script");
+			script.src = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js";
+			script.onload = () => {
+				const pdfjs = (window as any).pdfjsLib;
+				pdfjs.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js";
+				resolve(pdfjs);
+			};
+			script.onerror = () => reject(new Error("Failed to load PDF.js engine."));
+			document.head.appendChild(script);
+		});
+	};
+
     const convertToGrayscale = async () => {
         if (!file || !pdfLibReady) return;
 
         setIsProcessing(true);
         try {
-            const { PDFDocument, rgb } = (window as any).PDFLib;
+            const pdfjs = await loadPdfJs();
+            const { PDFDocument } = (window as any).PDFLib;
             const arrayBuffer = await file.arrayBuffer();
-            const pdfDoc = await PDFDocument.load(arrayBuffer);
             
-            // Note: Advanced grayscale conversion involves parsing all XObjects
-            // and converting their color spaces. This is a "best-effort" client-side
-            // implementation that rebuilds the PDF structure for better B&W compatibility.
+            const pdf = await (pdfjs as any).getDocument({ data: arrayBuffer }).promise;
+            const numPages = pdf.numPages;
             
-            const pdfBytes = await pdfDoc.save();
+            const newPdfDoc = await PDFDocument.create();
+
+            for (let i = 1; i <= numPages; i++) {
+                const page = await pdf.getPage(i);
+                // Use quality scale of 1.5 for print-legible text
+                const viewport = page.getViewport({ scale: 1.5 });
+                
+                const canvas = document.createElement("canvas");
+                const ctx = canvas.getContext("2d");
+                if (!ctx) throw new Error("Could not create 2D canvas context.");
+
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+
+                await page.render({
+                    canvasContext: ctx,
+                    viewport: viewport
+                }).promise;
+
+                // Grayscale/Black & White pixel conversion
+                const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                const data = imgData.data;
+                for (let j = 0; j < data.length; j += 4) {
+                    const r = data[j];
+                    const g = data[j + 1];
+                    const b = data[j + 2];
+                    const brightness = 0.299 * r + 0.587 * g + 0.114 * b;
+                    data[j] = brightness;     // Red
+                    data[j + 1] = brightness; // Green
+                    data[j + 2] = brightness; // Blue
+                }
+                ctx.putImageData(imgData, 0, 0);
+
+                const dataUrl = canvas.toDataURL("image/jpeg", 0.85);
+                const base64 = dataUrl.split(",")[1];
+                const imgBytes = Uint8Array.from(atob(base64), (c) => c.charCodeAt(0));
+
+                const embeddedImage = await newPdfDoc.embedJpg(imgBytes);
+                const newPage = newPdfDoc.addPage([viewport.width, viewport.height]);
+                newPage.drawImage(embeddedImage, {
+                    x: 0,
+                    y: 0,
+                    width: viewport.width,
+                    height: viewport.height
+                });
+            }
+            
+            const pdfBytes = await newPdfDoc.save();
             const blob = new Blob([pdfBytes], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
             setDownloadUrl(url);
             
-            toast.success("PDF processed successfully! Your grayscale-ready file is ready for download.");
+            toast.success("PDF processed successfully! Your black & white PDF is ready.");
         } catch (error) {
             console.error("Error processing PDF:", error);
             toast.error("Failed to process PDF. The file might be protected or corrupted.");
