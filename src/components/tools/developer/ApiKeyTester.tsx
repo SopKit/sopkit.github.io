@@ -1,194 +1,271 @@
 "use client";
 
 import { useState } from "react";
+import { 
+    KeyRound, 
+    ShieldCheck, 
+    AlertCircle, 
+    Loader2, 
+    CheckCircle2, 
+    Settings,
+    Grid,
+    Globe,
+    Terminal
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { toast } from "sonner";
+import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { KeyRound, ShieldCheck, AlertCircle, Loader2 } from "lucide-react";
-import { cn } from "@/lib/utils";
 
-export default function ApiKeyTester({ toolName }) {
-	const [apiKey, setApiKey] = useState("");
-	const [status, setStatus] = useState("idle"); // idle, testing, success, error
-	const [message, setMessage] = useState("");
+export default function ApiKeyTester({ toolName = "OpenAI API Key" }: { toolName?: string }) {
+    const [apiKey, setApiKey] = useState("");
+    const [platform, setPlatform] = useState<string>(() => {
+        const clean = toolName.toLowerCase();
+        if (clean.includes("openai")) return "openai";
+        if (clean.includes("gemini")) return "gemini";
+        if (clean.includes("stripe")) return "stripe";
+        if (clean.includes("groq")) return "groq";
+        if (clean.includes("deepseek")) return "deepseek";
+        return "custom";
+    });
 
-	const handleTest = async () => {
-		if (!apiKey) {
-			setStatus("error");
-			setMessage("Please enter an API key to test.");
-			return;
-		}
+    const [customUrl, setCustomUrl] = useState("");
+    const [customMethod, setCustomMethod] = useState("GET");
+    const [status, setStatus] = useState<"idle" | "testing" | "success" | "error">("idle");
+    const [message, setMessage] = useState("");
+    const [statusCode, setStatusCode] = useState<number | null>(null);
 
-		setStatus("testing");
-		const nameClean = toolName.toLowerCase();
+    const handleTest = async () => {
+        if (!apiKey.trim()) {
+            setStatus("error");
+            setMessage("Please enter an API Key string to check.");
+            return;
+        }
 
-		try {
-			if (nameClean.includes("openai")) {
-				const res = await fetch("https://api.openai.com/v1/models", {
-					headers: { "Authorization": `Bearer ${apiKey}` }
-				});
-				if (res.status === 200) {
-					setStatus("success");
-					setMessage("✓ Success! The OpenAI API Key is valid and active.");
-				} else {
-					const errData = await res.json().catch(() => ({}));
-					setStatus("error");
-					setMessage(`✗ Invalid API Key. OpenAI returned status ${res.status}: ${errData?.error?.message || "Unauthorized"}`);
-				}
-			} else if (nameClean.includes("gemini")) {
-				const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
-				if (res.status === 200) {
-					setStatus("success");
-					setMessage("✓ Success! The Google Gemini API Key is valid and active.");
-				} else {
-					const errData = await res.json().catch(() => ({}));
-					setStatus("error");
-					setMessage(`✗ Invalid API Key. Google Gemini returned status ${res.status}: ${errData?.error?.message || "Unauthorized"}`);
-				}
-			} else if (nameClean.includes("stripe")) {
-				const res = await fetch("https://api.stripe.com/v1/charges?limit=1", {
-					headers: { "Authorization": `Bearer ${apiKey}` }
-				});
-				if (res.status === 200) {
-					setStatus("success");
-					setMessage("✓ Success! The Stripe API Key is valid and active.");
-				} else {
-					const errData = await res.json().catch(() => ({}));
-					setStatus("error");
-					setMessage(`✗ Invalid API Key. Stripe returned status ${res.status}: ${errData?.error?.message || "Unauthorized"}`);
-				}
-			} else if (nameClean.includes("groq")) {
-				const res = await fetch("https://api.groq.com/openai/v1/models", {
-					headers: { "Authorization": `Bearer ${apiKey}` }
-				});
-				if (res.status === 200) {
-					setStatus("success");
-					setMessage("✓ Success! The Groq API Key is valid and active.");
-				} else {
-					const errData = await res.json().catch(() => ({}));
-					setStatus("error");
-					setMessage(`✗ Invalid API Key. Groq returned status ${res.status}: ${errData?.error?.message || "Unauthorized"}`);
-				}
-			} else if (nameClean.includes("deepseek")) {
-				const res = await fetch("https://api.deepseek.com/models", {
-					headers: { "Authorization": `Bearer ${apiKey}` }
-				});
-				if (res.status === 200) {
-					setStatus("success");
-					setMessage("✓ Success! The DeepSeek API Key is valid and active.");
-				} else {
-					const errData = await res.json().catch(() => ({}));
-					setStatus("error");
-					setMessage(`✗ Invalid API Key. DeepSeek returned status ${res.status}: ${errData?.error?.message || "Unauthorized"}`);
-				}
-			} else {
-				// Fallback simulator for other keys (e.g. attio, hubspot)
-				setTimeout(() => {
-					if (apiKey.length < 8) {
-						setStatus("error");
-						setMessage("✗ Key is too short to be a valid API token.");
-					} else {
-						setStatus("success");
-						setMessage(`✓ Key format matches the structure for ${toolName}. Checked locally.`);
-					}
-				}, 1000);
-			}
-		} catch (err: any) {
-			console.error(err);
-			setStatus("error");
-			setMessage(`✗ Connection or CORS block error: ${err.message}. Direct browser request failed.`);
-		}
-	};
+        setStatus("testing");
+        setStatusCode(null);
+        setMessage("");
 
-	return (
-		<div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-			<Card className="rounded-none border-2 border-primary/10 shadow-xl overflow-hidden">
-				<div className="h-1 bg-primary/20" />
-				<CardHeader className="p-8 pb-4">
-					<div className="flex items-center gap-3 mb-2">
-						<div className="p-2 bg-primary/10 text-primary">
-							<KeyRound className="w-5 h-5" />
-						</div>
-						<h2 className="text-sm font-bold uppercase tracking-[0.2em] text-primary/60">
-							{toolName} Check
-						</h2>
-					</div>
-					<CardTitle className="text-3xl font-black tracking-tighter">
-						Validate your Credentials
-					</CardTitle>
-					<CardDescription className="text-lg leading-relaxed max-w-2xl">
-						Test your API credentials. For security, use restricted/test keys only. Do not paste production root/admin credentials.
-					</CardDescription>
-				</CardHeader>
+        let targetUrl = "";
+        let headers: Record<string, string> = {};
+        let body: string | null = null;
 
-				<CardContent className="p-8 pt-4 space-y-6">
-					<div className="space-y-4">
-						<div className="relative group">
-							<Input
-								type="password"
-								placeholder={`Enter ${toolName} API Key...`}
-								value={apiKey}
-								onChange={(e) => setApiKey(e.target.value)}
-								className="h-14 px-6 text-lg border-2 border-primary/5 focus:border-primary/20 transition-all rounded-none bg-muted/30"
-							/>
-							<div className="absolute inset-y-0 right-4 flex items-center">
-								{status === "testing" ? (
-									<Loader2 className="w-5 h-5 animate-spin text-primary" />
-								) : status === "success" ? (
-									<ShieldCheck className="w-5 h-5 text-green-500" />
-								) : status === "error" ? (
-									<AlertCircle className="w-5 h-5 text-destructive" />
-								) : null}
-							</div>
-						</div>
+        if (platform === "openai") {
+            targetUrl = "https://api.openai.com/v1/models";
+            headers = { "Authorization": `Bearer ${apiKey}` };
+        } else if (platform === "gemini") {
+            targetUrl = `https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`;
+        } else if (platform === "stripe") {
+            targetUrl = "https://api.stripe.com/v1/charges?limit=1";
+            headers = { "Authorization": `Bearer ${apiKey}` };
+        } else if (platform === "groq") {
+            targetUrl = "https://api.groq.com/openai/v1/models";
+            headers = { "Authorization": `Bearer ${apiKey}` };
+        } else if (platform === "deepseek") {
+            targetUrl = "https://api.deepseek.com/models";
+            headers = { "Authorization": `Bearer ${apiKey}` };
+        } else {
+            targetUrl = customUrl || "";
+            headers = { "Authorization": `Bearer ${apiKey}` };
+        }
 
-						<Button
-							size="lg"
-							onClick={handleTest}
-							disabled={status === "testing"}
-							className="w-full h-14 text-lg font-bold rounded-none active:scale-[0.98] transition-transform shadow-lg shadow-primary/20"
-						>
-							{status === "testing" ? "Validating Key..." : "Run Security Test"}
-						</Button>
-					</div>
+        if (!targetUrl) {
+            setStatus("error");
+            setMessage("Please specify a valid test endpoint URL.");
+            return;
+        }
 
-					{message && (
-						<div className={cn(
-							"p-6 border flex gap-4 animate-in zoom-in duration-300",
-							status === "error" ? "bg-destructive/5 border-destructive/20 text-destructive-foreground" : "bg-green-50 border-green-200 text-green-900"
-						)}>
-							<div className="mt-1">
-								{status === "error" ? <AlertCircle className="w-5 h-5" /> : <ShieldCheck className="w-5 h-5" />}
-							</div>
-							<div>
-								<p className="font-bold mb-1">
-									{status === "error" ? "Validation Error" : "Validation Success"}
-								</p>
-								<p className="opacity-90">{message}</p>
-							</div>
-						</div>
-					)}
-				</CardContent>
-			</Card>
+        try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 8000);
 
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 opacity-80">
-				<div className="p-6 bg-muted/40 border border-primary/5">
-					<h3 className="font-bold flex items-center gap-2 mb-2">
-						<ShieldCheck className="w-4 h-4 text-primary" /> Security Best Practices
-					</h3>
-					<p className="text-sm text-muted-foreground">
-						Always use restricted/test keys for testing. Never paste production root credentials. Rotate credentials if compromised.
-					</p>
-				</div>
-				<div className="p-6 bg-muted/40 border border-primary/5">
-					<h3 className="font-bold flex items-center gap-2 mb-2">
-						<KeyRound className="w-4 h-4 text-primary" /> Required Permissions
-					</h3>
-					<p className="text-sm text-muted-foreground">
-						Grant only the minimum permissions needed for your use case. Review and revoke unused permissions regularly.
-					</p>
-				</div>
-			</div>
-		</div>
-	);
+            const res = await fetch(targetUrl, {
+                method: platform === "custom" ? customMethod : "GET",
+                headers,
+                signal: controller.signal
+            });
+            clearTimeout(timeoutId);
+
+            setStatusCode(res.status);
+
+            if (res.status === 200 || res.status === 201) {
+                setStatus("success");
+                setMessage(`✓ Success! The API Key is valid and authorized (HTTP ${res.status}).`);
+            } else {
+                const text = await res.text();
+                setStatus("error");
+                setMessage(`✗ Authorization failed (HTTP ${res.status}). API Endpoint response: ${text.substring(0, 160) || "No details provided"}`);
+            }
+        } catch (err: any) {
+            console.error(err);
+            setStatus("error");
+            
+            if (err.name === "AbortError") {
+                setMessage("✗ Connection timeout. The server didn't respond in time.");
+            } else {
+                setMessage(`✗ Request failed: ${err.message}. Note: Browser-based tests may trigger CORS blocks if the endpoint doesn't allow cross-origin requests.`);
+            }
+        }
+    };
+
+    return (
+        <div className="space-y-8 max-w-5xl mx-auto">
+            {/* Privacy Badge */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Direct connections are initiated straight from your browser. We never see or store your API keys.</span>
+            </div>
+
+            {/* Header Section */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
+                <div className="flex items-center gap-4">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
+                        <KeyRound className="h-6 w-6" />
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-bold">API Key Tester & Diagnostics</h2>
+                        <p className="text-xs text-muted-foreground">Test the validity and authorization limits of developer API keys directly from your browser locally</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                {/* Form Inputs Panel */}
+                <div className="lg:col-span-3 space-y-6">
+                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-5 shadow-sm text-xs font-semibold">
+                        <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
+                            <Settings className="w-3.5 h-3.5" /> API Key Target Parameters
+                        </h3>
+
+                        <div className="space-y-3.5">
+                            <div className="space-y-1.5">
+                                <Label htmlFor="platform-select" className="text-[10px] font-bold text-muted-foreground uppercase">Target Provider</Label>
+                                <select
+                                    id="platform-select"
+                                    value={platform}
+                                    onChange={(e) => setPlatform(e.target.value)}
+                                    className="w-full h-9 px-3 rounded-lg border border-border/35 bg-background text-xs"
+                                >
+                                    <option value="openai">OpenAI (v1/models)</option>
+                                    <option value="gemini">Google Gemini (generativelanguage)</option>
+                                    <option value="stripe">Stripe (v1/charges)</option>
+                                    <option value="groq">Groq (openai/v1/models)</option>
+                                    <option value="deepseek">DeepSeek (models)</option>
+                                    <option value="custom">Custom Endpoint Address</option>
+                                </select>
+                            </div>
+
+                            {platform === "custom" && (
+                                <div className="grid grid-cols-4 gap-3">
+                                    <div className="col-span-1 space-y-1.5">
+                                        <Label htmlFor="custom-method" className="text-[10px] font-bold text-muted-foreground uppercase">Method</Label>
+                                        <select
+                                            id="custom-method"
+                                            value={customMethod}
+                                            onChange={(e) => setCustomMethod(e.target.value)}
+                                            className="w-full h-9 px-2 rounded-lg border border-border/35 bg-background text-xs"
+                                        >
+                                            <option value="GET">GET</option>
+                                            <option value="POST">POST</option>
+                                        </select>
+                                    </div>
+                                    <div className="col-span-3 space-y-1.5">
+                                        <Label htmlFor="custom-url" className="text-[10px] font-bold text-muted-foreground uppercase">Endpoint URL</Label>
+                                        <Input 
+                                            id="custom-url"
+                                            type="text"
+                                            value={customUrl}
+                                            onChange={(e) => setCustomUrl(e.target.value)}
+                                            className="h-9 text-xs border-border/30 bg-background/50 font-mono"
+                                            placeholder="https://api.example.com/v1/user"
+                                        />
+                                    </div>
+                                </div>
+                            )}
+
+                            <div className="space-y-1.5">
+                                <Label htmlFor="key-input" className="text-[10px] font-bold text-muted-foreground uppercase">API Key / Token Value</Label>
+                                <Input 
+                                    id="key-input"
+                                    type="password"
+                                    value={apiKey}
+                                    onChange={(e) => setApiKey(e.target.value)}
+                                    className="h-9 text-xs border-border/30 bg-background/50 font-mono"
+                                    placeholder={platform === "openai" ? "sk-..." : "Paste key string..."}
+                                />
+                            </div>
+                        </div>
+
+                        <Button 
+                            disabled={status === "testing"}
+                            onClick={handleTest}
+                            className="w-full bg-primary hover:bg-primary/95 text-xs font-bold text-white shadow-md shadow-primary/10 mt-2 h-10"
+                        >
+                            {status === "testing" ? (
+                                <><Loader2 className="mr-2 h-4 w-4 animate-spin text-white" /> Sending test request...</>
+                            ) : (
+                                <><Globe className="mr-2 h-4 w-4" /> Run Connection Diagnostics</>
+                            )}
+                        </Button>
+                    </Card>
+                </div>
+
+                {/* Status Result Panel */}
+                <div className="lg:col-span-2 space-y-6">
+                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm min-h-[220px] flex flex-col justify-between">
+                        <div>
+                            <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
+                                <Terminal className="w-3.5 h-3.5" /> Diagnostic Console
+                            </h3>
+
+                            <div className="mt-4 space-y-4">
+                                {status === "idle" && (
+                                    <div className="flex flex-col items-center justify-center p-6 text-center text-muted-foreground border border-dashed border-border/20 rounded-xl bg-background/30">
+                                        <KeyRound className="w-8 h-8 text-muted-foreground/45 mb-2" />
+                                        <p className="text-[10px] font-bold uppercase">Console Inactive</p>
+                                        <p className="text-[9px] text-muted-foreground/80 mt-1 max-w-[160px] leading-relaxed">Submit parameters to initiate API diagnostics.</p>
+                                    </div>
+                                )}
+
+                                {status === "testing" && (
+                                    <div className="flex flex-col items-center justify-center p-6 text-center text-primary border border-primary/10 rounded-xl bg-primary/5 animate-pulse">
+                                        <Loader2 className="w-8 h-8 animate-spin mb-2" />
+                                        <p className="text-[10px] font-bold uppercase">Connecting...</p>
+                                    </div>
+                                )}
+
+                                {status === "success" && (
+                                    <div className="p-4 border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 rounded-xl flex items-start gap-2.5">
+                                        <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                                        <div className="space-y-1">
+                                            <span className="text-[10px] font-bold uppercase block">Valid API Key</span>
+                                            <p className="text-[11px] font-mono leading-relaxed">{message}</p>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {status === "error" && (
+                                    <div className="p-4 border border-destructive/20 bg-destructive/5 text-destructive rounded-xl flex items-start gap-2.5">
+                                        <AlertCircle className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
+                                        <div className="space-y-1">
+                                            <span className="text-[10px] font-bold uppercase block">Connection Failed</span>
+                                            <p className="text-[11px] font-mono leading-relaxed">{message}</p>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+
+                        {statusCode !== null && (
+                            <div className="text-[10px] font-bold text-muted-foreground font-mono text-right mt-2 border-t border-border/10 pt-2">
+                                HTTP STATUS CODE: <span className={statusCode === 200 ? "text-emerald-500" : "text-destructive"}>{statusCode}</span>
+                            </div>
+                        )}
+                    </Card>
+                </div>
+            </div>
+        </div>
+    );
 }

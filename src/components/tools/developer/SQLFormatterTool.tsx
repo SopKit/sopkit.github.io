@@ -1,270 +1,262 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { 
-	DatabaseIcon, 
-	CopyIcon, 
-	CheckCircleIcon,
-	TrashIcon,
-	DownloadIcon,
-	PlayIcon,
-	SettingsIcon
+    Upload, 
+    Download, 
+    Database,
+    Loader2,
+    ShieldCheck,
+    Check,
+    Copy,
+    Trash2,
+    Settings,
+    Grid,
+    Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { GlassCard } from "../shared/WorkspaceComponents";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 
 const DIALECTS = [
-	{ value: "sql", label: "Standard SQL" },
-	{ value: "mysql", label: "MySQL" },
-	{ value: "postgresql", label: "PostgreSQL" },
-	{ value: "sqlite", label: "SQLite" },
-	{ value: "mariadb", label: "MariaDB" },
-	{ value: "tsql", label: "Transact-SQL (T-SQL)" },
-	{ value: "plsql", label: "Oracle PL/SQL" },
-	{ value: "db2", label: "IBM DB2" },
-	{ value: "redshift", label: "Amazon Redshift" },
-	{ value: "spark", label: "Spark SQL" },
-	{ value: "bigquery", label: "Google BigQuery" },
+    { value: "sql", label: "Standard SQL" },
+    { value: "mysql", label: "MySQL" },
+    { value: "postgresql", label: "PostgreSQL" },
+    { value: "sqlite", label: "SQLite" },
+    { value: "mariadb", label: "MariaDB" },
+    { value: "tsql", label: "Transact-SQL (T-SQL)" },
+    { value: "plsql", label: "Oracle PL/SQL" },
+    { value: "db2", label: "IBM DB2" },
+    { value: "redshift", label: "Amazon Redshift" },
+    { value: "spark", label: "Spark SQL" },
+    { value: "bigquery", label: "Google BigQuery" },
 ];
 
 const DEFAULT_SQL = `SELECT users.id, users.name, SUM(orders.total) AS total_spent, orders.created_at FROM users LEFT JOIN orders ON users.id = orders.user_id WHERE orders.status = 'completed' AND orders.total > 100 GROUP BY users.id, users.name, orders.created_at ORDER BY total_spent DESC, orders.created_at ASC LIMIT 10;`;
 
 export default function SQLFormatterTool() {
-	const [sqlInput, setSqlInput] = useState(DEFAULT_SQL);
-	const [sqlOutput, setSqlOutput] = useState("");
-	const [dialect, setDialect] = useState("sql");
-	const [indentSize, setIndentSize] = useState("2");
-	const [keywordCase, setKeywordCase] = useState("upper");
-	const [copied, setCopied] = useState(false);
-	const [error, setError] = useState("");
-	const [libReady, setLibReady] = useState(false);
+    const [sqlInput, setSqlInput] = useState(DEFAULT_SQL);
+    const [sqlOutput, setSqlOutput] = useState("");
+    const [dialect, setDialect] = useState("sql");
+    const [indentSize, setIndentSize] = useState<string>("2");
+    const [keywordCase, setKeywordCase] = useState("upper");
+    const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
+    const [error, setError] = useState("");
+    const [isProcessing, setIsProcessing] = useState(false);
 
-	useEffect(() => {
-		if (typeof window !== "undefined") {
-			if ((window as any).sqlFormatter) {
-				setLibReady(true);
-			} else {
-				const script = document.createElement("script");
-				script.src = "https://cdn.jsdelivr.net/npm/sql-formatter@15.4.0/dist/sql-formatter.min.js";
-				script.async = true;
-				script.onload = () => setLibReady(true);
-				script.onerror = () => {
-					toast.error("Failed to load SQL formatter library. Please refresh.");
-				};
-				document.body.appendChild(script);
-			}
-		}
-	}, []);
+    const formatSql = useCallback(async () => {
+        if (!sqlInput.trim()) {
+            setSqlOutput("");
+            setError("");
+            return;
+        }
 
-	const formatSql = () => {
-		if (!sqlInput.trim()) {
-			setSqlOutput("");
-			setError("");
-			return;
-		}
+        setIsProcessing(true);
+        setError("");
+        try {
+            const sqlFormatter = await import("sql-formatter");
+            const formatted = sqlFormatter.format(sqlInput, {
+                language: dialect as any,
+                tabWidth: parseInt(indentSize, 10) || 2,
+                keywordCase: keywordCase === "preserve" ? undefined : keywordCase as any,
+            });
+            setSqlOutput(formatted);
+        } catch (err: any) {
+            setError(err.message || "Failed to format SQL query. Check syntax.");
+            setSqlOutput("");
+        } finally {
+            setIsProcessing(false);
+        }
+    }, [sqlInput, dialect, indentSize, keywordCase]);
 
-		if (!libReady || !(window as any).sqlFormatter) {
-			toast.error("Formatter library is still loading. Please wait a moment.");
-			return;
-		}
+    useEffect(() => {
+        formatSql();
+    }, [sqlInput, dialect, indentSize, keywordCase, formatSql]);
 
-		try {
-			setError("");
-			const formatted = (window as any).sqlFormatter.format(sqlInput, {
-				language: dialect,
-				tabWidth: parseInt(indentSize, 10),
-				keywordCase: keywordCase === "preserve" ? undefined : keywordCase,
-			});
-			setSqlOutput(formatted);
-		} catch (err: any) {
-			setError(err.message || "Failed to format SQL query. Check syntax.");
-			setSqlOutput("");
-		}
-	};
+    const copyToClipboard = async () => {
+        if (!sqlOutput) return;
+        try {
+            await navigator.clipboard.writeText(sqlOutput);
+            setCopiedFormat("formatted");
+            setTimeout(() => setCopiedFormat(null), 1500);
+            toast.success("SQL query copied to clipboard.");
+        } catch (err) {
+            console.error(err);
+        }
+    };
 
-	useEffect(() => {
-		if (libReady) {
-			formatSql();
-		}
-	}, [sqlInput, dialect, indentSize, keywordCase, libReady]);
+    const clearAll = () => {
+        setSqlInput("");
+        setSqlOutput("");
+        setError("");
+    };
 
-	const copyToClipboard = () => {
-		if (!sqlOutput) return;
-		navigator.clipboard.writeText(sqlOutput);
-		setCopied(true);
-		toast.success("SQL copied to clipboard!");
-		setTimeout(() => setCopied(false), 2000);
-	};
+    const downloadCode = () => {
+        if (!sqlOutput) return;
+        const blob = new Blob([sqlOutput], { type: "text/plain;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `formatted_query.sql`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+    };
 
-	const clearAll = () => {
-		setSqlInput("");
-		setSqlOutput("");
-		setError("");
-	};
+    return (
+        <div className="space-y-8 max-w-5xl mx-auto">
+            {/* Privacy Badge */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: SQL formatting is processed locally in browser RAM. No script data leaves your device.</span>
+            </div>
 
-	const downloadSql = () => {
-		if (!sqlOutput) return;
-		const blob = new Blob([sqlOutput], { type: "text/plain;charset=utf-8" });
-		const url = URL.createObjectURL(blob);
-		const link = document.createElement("a");
-		link.href = url;
-		link.download = `formatted_query.sql`;
-		link.click();
-		URL.revokeObjectURL(url);
-	};
+            {/* Header Section */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
+                <div className="flex items-center gap-4">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
+                        <Database className="h-6 w-6" />
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-bold">SQL Query Formatter</h2>
+                        <p className="text-xs text-muted-foreground">Format and beautify complex SQL statements for PostgreSQL, MySQL, SQLite, and more locally</p>
+                    </div>
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                    <Button 
+                        variant="outline" 
+                        onClick={clearAll}
+                        className="border-destructive/20 text-destructive hover:bg-destructive/10 text-xs font-bold"
+                    >
+                        <Trash2 className="mr-2 h-4 w-4" /> Clear
+                    </Button>
+                </div>
+            </div>
 
-	return (
-		<div className="w-full max-w-6xl mx-auto space-y-8 pb-24 animate-in">
-			<div className="flex justify-between items-center px-4">
-				<h3 className="text-lg font-bold flex items-center gap-2 text-muted-foreground">
-					<DatabaseIcon className="w-5 h-5 text-primary" />
-					SQL Formatter & Beautifier
-				</h3>
-				<Button variant="ghost" size="sm" onClick={clearAll} className="rounded-full hover:bg-destructive/10 hover:text-destructive">
-					<TrashIcon className="h-4 w-4 mr-2" />
-					Clear
-				</Button>
-			</div>
+            {error && (
+                <Card className="p-4 border border-destructive/20 bg-destructive/5 rounded-2xl text-xs font-mono text-destructive">
+                    {error}
+                </Card>
+            )}
 
-			<div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-				{/* Settings panel */}
-				<div className="lg:col-span-3">
-					<GlassCard className="p-6 space-y-6">
-						<div className="flex items-center gap-2 font-bold text-lg border-b pb-3">
-							<SettingsIcon className="w-4 h-4 text-primary" />
-							Format Options
-						</div>
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                {/* Options Panel */}
+                <div className="space-y-4">
+                    <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-4 text-xs font-semibold">
+                        <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
+                            <Settings className="w-3.5 h-3.5 text-primary" /> Settings
+                        </h3>
 
-						{/* SQL Dialect selection */}
-						<div className="space-y-2">
-							<label className="text-xs font-bold text-muted-foreground uppercase">SQL Dialect</label>
-							<Select value={dialect} onValueChange={setDialect}>
-								<SelectTrigger className="w-full bg-muted/40 border-border/40 rounded-xl">
-									<SelectValue placeholder="Select Dialect" />
-								</SelectTrigger>
-								<SelectContent>
-									{DIALECTS.map((d) => (
-										<SelectItem key={d.value} value={d.value}>
-											{d.label}
-										</SelectItem>
-									))}
-								</SelectContent>
-							</Select>
-						</div>
+                        <div className="space-y-4">
+                            <div className="space-y-1.5">
+                                <Label htmlFor="dialect-select" className="text-[10px] font-bold text-muted-foreground uppercase">Dialect</Label>
+                                <select
+                                    id="dialect-select"
+                                    value={dialect}
+                                    onChange={(e) => setDialect(e.target.value)}
+                                    className="w-full h-9 px-3 rounded-lg border border-border/35 bg-background text-xs"
+                                >
+                                    {DIALECTS.map(d => (
+                                        <option key={d.value} value={d.value}>{d.label}</option>
+                                    ))}
+                                </select>
+                            </div>
 
-						{/* Indentation selection */}
-						<div className="space-y-2">
-							<label className="text-xs font-bold text-muted-foreground uppercase">Indentation</label>
-							<Select value={indentSize} onValueChange={setIndentSize}>
-								<SelectTrigger className="w-full bg-muted/40 border-border/40 rounded-xl">
-									<SelectValue placeholder="Select Indentation" />
-								</SelectTrigger>
-								<SelectContent>
-									<SelectItem value="2">2 Spaces</SelectItem>
-									<SelectItem value="4">4 Spaces</SelectItem>
-									<SelectItem value="8">8 Spaces</SelectItem>
-								</SelectContent>
-							</Select>
-						</div>
+                            <div className="space-y-1.5">
+                                <Label htmlFor="indent-select" className="text-[10px] font-bold text-muted-foreground uppercase">Indentation</Label>
+                                <select
+                                    id="indent-select"
+                                    value={indentSize}
+                                    onChange={(e) => setIndentSize(e.target.value)}
+                                    className="w-full h-9 px-3 rounded-lg border border-border/35 bg-background text-xs"
+                                >
+                                    <option value="2">2 Spaces</option>
+                                    <option value="4">4 Spaces</option>
+                                    <option value="8">8 Spaces</option>
+                                </select>
+                            </div>
 
-						{/* Keyword Casing selection */}
-						<div className="space-y-2">
-							<label className="text-xs font-bold text-muted-foreground uppercase">Keyword Case</label>
-							<Select value={keywordCase} onValueChange={setKeywordCase}>
-								<SelectTrigger className="w-full bg-muted/40 border-border/40 rounded-xl">
-									<SelectValue placeholder="Keyword Case" />
-								</SelectTrigger>
-								<SelectContent>
-									<SelectItem value="upper">UPPERCASE</SelectItem>
-									<SelectItem value="lower">lowercase</SelectItem>
-									<SelectItem value="preserve">Preserve Case</SelectItem>
-								</SelectContent>
-							</Select>
-						</div>
+                            <div className="space-y-1.5">
+                                <Label htmlFor="case-select" className="text-[10px] font-bold text-muted-foreground uppercase">Keywords Case</Label>
+                                <select
+                                    id="case-select"
+                                    value={keywordCase}
+                                    onChange={(e) => setKeywordCase(e.target.value)}
+                                    className="w-full h-9 px-3 rounded-lg border border-border/35 bg-background text-xs"
+                                >
+                                    <option value="upper">UPPERCASE</option>
+                                    <option value="lower">lowercase</option>
+                                    <option value="preserve">preserve original</option>
+                                </select>
+                            </div>
+                        </div>
+                    </Card>
+                </div>
 
-						<div className="pt-2">
-							<Button onClick={formatSql} disabled={!sqlInput.trim()} className="w-full rounded-xl bg-primary hover:scale-102 transition-all font-bold gap-2">
-								<PlayIcon className="w-4 h-4" />
-								Format SQL
-							</Button>
-						</div>
-					</GlassCard>
-				</div>
+                {/* Editor Workspace Panels */}
+                <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-3.5">
+                        <Label htmlFor="sql-input" className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1.5 px-1">
+                            <Settings className="w-3.5 h-3.5" /> Source SQL Query
+                        </Label>
+                        <Textarea 
+                            id="sql-input"
+                            value={sqlInput}
+                            onChange={(e) => setSqlInput(e.target.value)}
+                            className="font-mono text-xs leading-relaxed border-border/30 bg-background/50 h-[380px] resize-none focus-visible:ring-primary/20 rounded-2xl p-4"
+                            placeholder="Paste your raw SQL query here..."
+                        />
+                    </div>
 
-				{/* Inputs & Outputs panel */}
-				<div className="lg:col-span-9 space-y-8">
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-						{/* SQL Input */}
-						<GlassCard className="p-6 flex flex-col">
-							<div className="flex justify-between items-center mb-4">
-								<span className="font-bold text-lg">SQL Input</span>
-								<Badge variant="secondary">Raw SQL</Badge>
-							</div>
-							<textarea
-								value={sqlInput}
-								onChange={(e) => setSqlInput(e.target.value)}
-								placeholder="Paste your SQL statement here..."
-								className="w-full h-[450px] bg-muted/20 border border-border/40 rounded-2xl p-6 font-mono text-sm leading-relaxed focus:outline-none focus:ring-2 focus:ring-primary/20 custom-scrollbar resize-none"
-							/>
-							{error && (
-								<div className="mt-4 p-4 rounded-xl bg-destructive/10 border border-destructive/20 text-destructive text-xs font-mono max-h-24 overflow-y-auto">
-									Error: {error}
-								</div>
-							)}
-						</GlassCard>
-
-						{/* SQL Output */}
-						<GlassCard className="p-6 flex flex-col">
-							<div className="flex justify-between items-center mb-4">
-								<span className="font-bold text-lg">Formatted Result</span>
-								<Badge variant="outline">Beautified</Badge>
-							</div>
-
-							<div className="flex-1 min-h-[380px] max-h-[450px] overflow-y-auto bg-muted/10 border border-border/40 rounded-2xl p-6 custom-scrollbar">
-								{sqlOutput ? (
-									<pre className="font-mono text-sm leading-relaxed whitespace-pre-wrap select-all text-primary-foreground/90">
-										<code>{sqlOutput}</code>
-									</pre>
-								) : (
-									<span className="text-muted-foreground text-sm italic">Formatted SQL output will appear here...</span>
-								)}
-							</div>
-
-							<div className="mt-6 flex gap-4">
-								<Button
-									onClick={copyToClipboard}
-									disabled={!sqlOutput}
-									className="flex-1 h-12 rounded-2xl font-bold bg-primary hover:scale-102 active:scale-98 transition-all shadow-xl shadow-primary/10 flex items-center justify-center gap-2"
-								>
-									{copied ? (
-										<>
-											<CheckCircleIcon className="w-5 h-5" />
-											COPIED!
-										</>
-									) : (
-										<>
-											<CopyIcon className="w-5 h-5" />
-											COPY SQL
-										</>
-									)}
-								</Button>
-								<Button
-									variant="outline"
-									onClick={downloadSql}
-									disabled={!sqlOutput}
-									className="h-12 w-12 rounded-2xl border border-border/40 flex items-center justify-center hover:bg-muted/40"
-									title="Download SQL File"
-								>
-									<DownloadIcon className="w-5 h-5" />
-								</Button>
-							</div>
-						</GlassCard>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+                    <div className="space-y-3.5">
+                        <div className="flex justify-between items-center px-1">
+                            <Label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1.5">
+                                <Sparkles className="w-3.5 h-3.5 text-primary" /> Formatted SQL Output
+                            </Label>
+                            {sqlOutput && (
+                                <div className="flex gap-1.5">
+                                    <Button 
+                                        variant="ghost" 
+                                        size="sm" 
+                                        onClick={copyToClipboard}
+                                        className="h-7 text-[10px] font-bold gap-1 px-2.5 rounded-lg border hover:bg-muted"
+                                    >
+                                        {copiedFormat === "formatted" ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3 text-primary" />}
+                                    </Button>
+                                    <Button 
+                                        variant="ghost" 
+                                        size="sm" 
+                                        onClick={downloadCode}
+                                        className="h-7 text-[10px] font-bold gap-1 px-2.5 rounded-lg border hover:bg-muted"
+                                    >
+                                        <Download className="w-3 h-3 text-primary" />
+                                    </Button>
+                                </div>
+                            )}
+                        </div>
+                        <Card className="border border-border/40 rounded-2xl overflow-hidden shadow-lg h-[380px] flex flex-col bg-white">
+                            <div className="flex-1 overflow-auto p-6 font-mono text-xs leading-relaxed text-black bg-white select-text">
+                                {isProcessing ? (
+                                    <div className="h-full flex flex-col items-center justify-center gap-2">
+                                        <Loader2 className="w-6 h-6 text-primary animate-spin" />
+                                        <span className="text-[10px] text-muted-foreground animate-pulse">Formatting...</span>
+                                    </div>
+                                ) : sqlOutput ? (
+                                    <pre className="whitespace-pre">{sqlOutput}</pre>
+                                ) : (
+                                    <div className="h-full flex items-center justify-center text-center text-xs text-muted-foreground font-medium max-w-xs mx-auto">
+                                        Formatted SQL will appear here automatically.
+                                    </div>
+                                )}
+                            </div>
+                        </Card>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }

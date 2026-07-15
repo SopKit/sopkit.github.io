@@ -1,430 +1,371 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { 
-	Code2Icon, 
-	CopyIcon, 
-	CheckCircleIcon,
-	TrashIcon,
-	DownloadIcon,
-	PlayIcon,
-	SettingsIcon,
-	FileCode2Icon
+    Upload, 
+    Download, 
+    Code as CodeIcon,
+    Loader2,
+    ShieldCheck,
+    Check,
+    Copy,
+    Trash2,
+    Settings,
+    Grid,
+    Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { GlassCard } from "../shared/WorkspaceComponents";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 
 const LANGUAGES = [
-	{ value: "json", label: "JSON" },
-	{ value: "xml", label: "XML" },
-	{ value: "sql", label: "SQL" },
-	{ value: "html", label: "HTML" },
-	{ value: "css", label: "CSS" },
-	{ value: "javascript", label: "JavaScript (JS)" },
+    { value: "json", label: "JSON" },
+    { value: "xml", label: "XML" },
+    { value: "sql", label: "SQL" },
+    { value: "html", label: "HTML" },
+    { value: "css", label: "CSS" },
+    { value: "javascript", label: "JavaScript (JS)" },
 ];
 
 const DIALECTS = [
-	{ value: "sql", label: "Standard SQL" },
-	{ value: "mysql", label: "MySQL" },
-	{ value: "postgresql", label: "PostgreSQL" },
-	{ value: "sqlite", label: "SQLite" },
-	{ value: "mariadb", label: "MariaDB" },
-	{ value: "tsql", label: "Transact-SQL" },
-	{ value: "plsql", label: "Oracle PL/SQL" },
+    { value: "sql", label: "Standard SQL" },
+    { value: "mysql", label: "MySQL" },
+    { value: "postgresql", label: "PostgreSQL" },
+    { value: "sqlite", label: "SQLite" },
+    { value: "mariadb", label: "MariaDB" },
+    { value: "tsql", label: "Transact-SQL" },
+    { value: "plsql", label: "Oracle PL/SQL" },
 ];
 
 const SAMPLES: Record<string, string> = {
-	json: `{"name":"John Doe","age":30,"city":"New York","hobbies":["reading","coding"],"address":{"street":"123 Main St","zip":10001}}`,
-	xml: `<?xml version="1.0" encoding="UTF-8"?><catalog><book id="bk101"><author>Gambardella, Matthew</author><title>XML Developer's Guide</title><price>44.95</price></book></catalog>`,
-	sql: `SELECT users.id, users.name, orders.total FROM users JOIN orders ON users.id = orders.user_id WHERE orders.total > 100 ORDER BY orders.total DESC;`,
-	html: `<!DOCTYPE html><html><head><title>Test Page</title></head><body><div id="main"><h1>Hello World</h1><p>This is a <b>formatted</b> markup code.</p></div></body></html>`,
-	css: `body{background-color:#f0f2f5;color:#1c1e21;font-family:sans-serif;}#main{max-width:800px;margin:0 auto;padding:20px;border-radius:8px;}`,
-	javascript: `function greet(user){const msg="Hello, "+user+"!";console.log(msg);return msg;}greet("SopKit");`,
+    json: `{"name":"John Doe","age":30,"city":"New York","hobbies":["reading","coding"],"address":{"street":"123 Main St","zip":10001}}`,
+    xml: `<?xml version="1.0" encoding="UTF-8"?><catalog><book id="bk101"><author>Gambardella, Matthew</author><title>XML Developer's Guide</title><price>44.95</price></book></catalog>`,
+    sql: `SELECT users.id, users.name, orders.total FROM users JOIN orders ON users.id = orders.user_id WHERE orders.total > 100 ORDER BY orders.total DESC;`,
+    html: `<!DOCTYPE html><html><head><title>Test Page</title></head><body><div id="main"><h1>Hello World</h1><p>This is a <b>formatted</b> markup code.</p></div></body></html>`,
+    css: `body{background-color:#f0f2f5;color:#1c1e21;font-family:sans-serif;}#main{max-width:800px;margin:0 auto;padding:20px;border-radius:8px;}`,
+    javascript: `function greet(user){const msg="Hello, "+user+"!";console.log(msg);return msg;}greet("SopKit");`,
 };
 
 export default function CodeFormatterTool() {
-	const [language, setLanguage] = useState("json");
-	const [inputCode, setInputCode] = useState(SAMPLES.json);
-	const [outputCode, setOutputCode] = useState("");
-	const [indentSize, setIndentSize] = useState("2");
-	const [sqlDialect, setSqlDialect] = useState("sql");
-	const [sqlKeywordCase, setSqlKeywordCase] = useState("upper");
-	const [copied, setCopied] = useState(false);
-	const [error, setError] = useState("");
-	const [libsLoaded, setLibsLoaded] = useState<Record<string, boolean>>({
-		sql: false,
-		jsbeautify: false,
-	});
+    const [language, setLanguage] = useState("json");
+    const [inputCode, setInputCode] = useState(SAMPLES.json);
+    const [outputCode, setOutputCode] = useState("");
+    const [indentSize, setIndentSize] = useState<string>("2");
+    const [sqlDialect, setSqlDialect] = useState("sql");
+    const [sqlKeywordCase, setSqlKeywordCase] = useState("upper");
+    const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
+    const [error, setError] = useState("");
+    const [isProcessing, setIsProcessing] = useState(false);
 
-	// Inject external CDNs dynamically depending on chosen language
-	useEffect(() => {
-		if (typeof window === "undefined") return;
+    const formatCode = useCallback(async () => {
+        if (!inputCode.trim()) {
+            setOutputCode("");
+            setError("");
+            return;
+        }
 
-		const loadScript = (src: string, key: string, globalCheck: string) => {
-			if ((window as any)[globalCheck]) {
-				setLibsLoaded(prev => ({ ...prev, [key]: true }));
-				return;
-			}
-			const script = document.createElement("script");
-			script.src = src;
-			script.async = true;
-			script.onload = () => {
-				setLibsLoaded(prev => ({ ...prev, [key]: true }));
-			};
-			script.onerror = () => {
-				toast.error(`Failed to load ${key} formatter engine.`);
-			};
-			document.body.appendChild(script);
-		};
+        setError("");
+        setIsProcessing(true);
+        try {
+            let formatted = "";
+            const indentNum = parseInt(indentSize, 10) || 2;
 
-		if (language === "sql" && !libsLoaded.sql) {
-			loadScript(
-				"https://cdn.jsdelivr.net/npm/sql-formatter@15.4.0/dist/sql-formatter.min.js",
-				"sql",
-				"sqlFormatter"
-			);
-		} else if (["html", "css", "javascript"].includes(language) && !libsLoaded.jsbeautify) {
-			// Load core beautify, then CSS & HTML beautifier scripts
-			if (!(window as any).js_beautify) {
-				const mainScript = document.createElement("script");
-				mainScript.src = "https://cdn.jsdelivr.net/npm/js-beautify@1.15.1/js/lib/beautify.min.js";
-				mainScript.async = true;
-				mainScript.onload = () => {
-					// Load css & html beautifier scripts sequentially
-					const cssScript = document.createElement("script");
-					cssScript.src = "https://cdn.jsdelivr.net/npm/js-beautify@1.15.1/js/lib/beautify-css.min.js";
-					cssScript.async = true;
-					document.body.appendChild(cssScript);
+            if (language === "json") {
+                const parsed = JSON.parse(inputCode);
+                formatted = JSON.stringify(parsed, null, indentNum);
+            } else if (language === "xml") {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(inputCode, "application/xml");
+                const parserError = xmlDoc.querySelector("parsererror");
+                if (parserError) {
+                    throw new Error(parserError.textContent || "Invalid XML Structure");
+                }
+                
+                // Format XML structures recursively
+                let cleanXml = inputCode.replace(/>\s*</g, "><").trim();
+                let pad = 0;
+                const reg = /(>)(<)(\/*)/g;
+                cleanXml = cleanXml.replace(reg, "$1\r\n$2$3");
+                const lines = cleanXml.split("\r\n");
+                let result = "";
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i].trim();
+                    if (!line) continue;
 
-					const htmlScript = document.createElement("script");
-					htmlScript.src = "https://cdn.jsdelivr.net/npm/js-beautify@1.15.1/js/lib/beautify-html.min.js";
-					htmlScript.async = true;
-					htmlScript.onload = () => {
-						setLibsLoaded(prev => ({ ...prev, jsbeautify: true }));
-					};
-					document.body.appendChild(htmlScript);
-				};
-				document.body.appendChild(mainScript);
-			} else {
-				setLibsLoaded(prev => ({ ...prev, jsbeautify: true }));
-			}
-		}
-	}, [language, libsLoaded]);
+                    let indentLevel = 0;
+                    if (line.match(/.+<\/\w[^>]*>$/)) {
+                        indentLevel = 0;
+                    } else if (line.match(/^<\/\w/)) {
+                        if (pad !== 0) pad -= 1;
+                    } else if (line.match(/^<\w[^>]*[^\/]>.*$/)) {
+                        indentLevel = 1;
+                    } else {
+                        indentLevel = 0;
+                    }
 
-	const formatCode = useCallback(() => {
-		if (!inputCode.trim()) {
-			setOutputCode("");
-			setError("");
-			return;
-		}
+                    const padding = " ".repeat(pad * indentNum);
+                    result += padding + line + "\n";
+                    pad += indentLevel;
+                }
+                formatted = result.trim();
+            } else if (language === "sql") {
+                const sqlFormatter = await import("sql-formatter");
+                formatted = sqlFormatter.format(inputCode, {
+                    language: sqlDialect as any,
+                    tabWidth: indentNum,
+                    keywordCase: sqlKeywordCase === "preserve" ? undefined : sqlKeywordCase as any,
+                });
+            } else {
+                // HTML, CSS, JavaScript using js-beautify
+                const jsBeautify = (await import("js-beautify")) as any;
+                const js_beautify = jsBeautify.js || jsBeautify.default?.js || jsBeautify.js_beautify;
+                const css_beautify = jsBeautify.css || jsBeautify.default?.css || jsBeautify.css_beautify;
+                const html_beautify = jsBeautify.html || jsBeautify.default?.html || jsBeautify.html_beautify;
 
-		const indent = " ".repeat(parseInt(indentSize, 10));
+                const options = {
+                    indent_size: indentNum,
+                    wrap_line_length: 100,
+                };
 
-		try {
-			setError("");
-			let formatted = "";
+                if (language === "html") {
+                    formatted = html_beautify(inputCode, options);
+                } else if (language === "css") {
+                    formatted = css_beautify(inputCode, options);
+                } else if (language === "javascript") {
+                    formatted = js_beautify(inputCode, options);
+                }
+            }
 
-			if (language === "json") {
-				const parsed = JSON.parse(inputCode);
-				formatted = JSON.stringify(parsed, null, parseInt(indentSize, 10));
-			} else if (language === "xml") {
-				const parser = new DOMParser();
-				const xmlDoc = parser.parseFromString(inputCode, "application/xml");
-				const parserError = xmlDoc.querySelector("parsererror");
-				if (parserError) {
-					throw new Error(parserError.textContent || "Invalid XML Structure");
-				}
-				// Basic XML formatting
-				let cleanXml = inputCode.replace(/>\s*</g, "><").trim();
-				let pad = 0;
-				const reg = /(>)(<)(\/*)/g;
-				cleanXml = cleanXml.replace(reg, "$1\r\n$2$3");
-				const lines = cleanXml.split("\r\n");
-				let result = "";
-				for (let i = 0; i < lines.length; i++) {
-					const line = lines[i].trim();
-					if (!line) continue;
+            setOutputCode(formatted);
+        } catch (err: any) {
+            setError(err.message || "Failed to format code. Please verify syntax.");
+            setOutputCode("");
+        } finally {
+            setIsProcessing(false);
+        }
+    }, [inputCode, language, indentSize, sqlDialect, sqlKeywordCase]);
 
-					let indentLevel = 0;
-					if (line.match(/.+<\/\w[^>]*>$/)) {
-						indentLevel = 0;
-					} else if (line.match(/^<\/\w/)) {
-						if (pad !== 0) pad -= 1;
-					} else if (line.match(/^<\w[^>]*[^\/]>.*$/)) {
-						indentLevel = 1;
-					} else {
-						indentLevel = 0;
-					}
+    useEffect(() => {
+        formatCode();
+    }, [inputCode, language, indentSize, sqlDialect, sqlKeywordCase, formatCode]);
 
-					let padding = " ".repeat(pad * parseInt(indentSize, 10));
-					result += padding + line + "\n";
-					pad += indentLevel;
-				}
-				formatted = result.trim();
-			} else if (language === "sql") {
-				if (!(window as any).sqlFormatter) {
-					setError("SQL Formatting Engine is loading...");
-					return;
-				}
-				formatted = (window as any).sqlFormatter.format(inputCode, {
-					language: sqlDialect,
-					tabWidth: parseInt(indentSize, 10),
-					keywordCase: sqlKeywordCase === "preserve" ? undefined : sqlKeywordCase,
-				});
-			} else if (language === "html") {
-				if (!(window as any).html_beautify) {
-					setError("HTML Beautify Engine is loading...");
-					return;
-				}
-				formatted = (window as any).html_beautify(inputCode, {
-					indent_size: parseInt(indentSize, 10),
-					wrap_line_length: 80,
-				});
-			} else if (language === "css") {
-				if (!(window as any).css_beautify) {
-					setError("CSS Beautify Engine is loading...");
-					return;
-				}
-				formatted = (window as any).css_beautify(inputCode, {
-					indent_size: parseInt(indentSize, 10),
-				});
-			} else if (language === "javascript") {
-				if (!(window as any).js_beautify) {
-					setError("JavaScript Beautify Engine is loading...");
-					return;
-				}
-				formatted = (window as any).js_beautify(inputCode, {
-					indent_size: parseInt(indentSize, 10),
-				});
-			}
+    const handleLanguageChange = (lang: string) => {
+        setLanguage(lang);
+        setInputCode(SAMPLES[lang] || "");
+        setOutputCode("");
+        setError("");
+    };
 
-			setOutputCode(formatted);
-		} catch (err: any) {
-			setError(err.message || "Failed to format code. Check syntax.");
-			setOutputCode("");
-		}
-	}, [inputCode, language, indentSize, sqlDialect, sqlKeywordCase]);
+    const copyToClipboard = async () => {
+        if (!outputCode) return;
+        try {
+            await navigator.clipboard.writeText(outputCode);
+            setCopiedFormat("beautified");
+            setTimeout(() => setCopiedFormat(null), 1500);
+            toast.success("Beautified code copied to clipboard.");
+        } catch (err) {
+            console.error(err);
+        }
+    };
 
-	useEffect(() => {
-		formatCode();
-	}, [inputCode, language, indentSize, sqlDialect, sqlKeywordCase, formatCode, libsLoaded]);
+    const clearAll = () => {
+        setInputCode("");
+        setOutputCode("");
+        setError("");
+    };
 
-	const handleLanguageChange = (lang: string) => {
-		setLanguage(lang);
-		setInputCode(SAMPLES[lang] || "");
-		setOutputCode("");
-		setError("");
-	};
+    const downloadCode = () => {
+        if (!outputCode) return;
+        const extensions: Record<string, string> = {
+            json: "json",
+            xml: "xml",
+            sql: "sql",
+            html: "html",
+            css: "css",
+            javascript: "js",
+        };
+        const ext = extensions[language] || "txt";
+        const blob = new Blob([outputCode], { type: "text/plain;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `formatted_code.${ext}`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+    };
 
-	const copyToClipboard = () => {
-		if (!outputCode) return;
-		navigator.clipboard.writeText(outputCode);
-		setCopied(true);
-		toast.success("Code copied to clipboard!");
-		setTimeout(() => setCopied(false), 2000);
-	};
+    return (
+        <div className="space-y-8 max-w-6xl mx-auto">
+            {/* Privacy Badge */}
+            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+                <span>🔒 100% Client-Side Sandbox: Code formatting is processed locally in browser RAM. No script data leaves your device.</span>
+            </div>
 
-	const clearAll = () => {
-		setInputCode("");
-		setOutputCode("");
-		setError("");
-	};
+            {/* Header Section */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
+                <div className="flex items-center gap-4">
+                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
+                        <CodeIcon className="h-6 w-6" />
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-bold">Multi-Language Code Formatter</h2>
+                        <p className="text-xs text-muted-foreground">Prettify and format JSON, XML, HTML, CSS, JS, and SQL queries locally</p>
+                    </div>
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                    <Button 
+                        variant="outline" 
+                        onClick={clearAll}
+                        className="border-destructive/20 text-destructive hover:bg-destructive/10 text-xs font-bold"
+                    >
+                        <Trash2 className="mr-2 h-4 w-4" /> Clear
+                    </Button>
+                </div>
+            </div>
 
-	const downloadCode = () => {
-		if (!outputCode) return;
-		const extensions: Record<string, string> = {
-			json: "json",
-			xml: "xml",
-			sql: "sql",
-			html: "html",
-			css: "css",
-			javascript: "js",
-		};
-		const ext = extensions[language] || "txt";
-		const blob = new Blob([outputCode], { type: "text/plain;charset=utf-8" });
-		const url = URL.createObjectURL(blob);
-		const link = document.createElement("a");
-		link.href = url;
-		link.download = `formatted_code.${ext}`;
-		link.click();
-		URL.revokeObjectURL(url);
-	};
+            {error && (
+                <Card className="p-4 border border-destructive/20 bg-destructive/5 rounded-2xl text-xs font-mono text-destructive">
+                    {error}
+                </Card>
+            )}
 
-	return (
-		<div className="w-full max-w-6xl mx-auto space-y-8 pb-24 animate-in">
-			<div className="flex justify-between items-center px-4">
-				<h3 className="text-lg font-bold flex items-center gap-2 text-muted-foreground">
-					<Code2Icon className="w-5 h-5 text-primary" />
-					Multi-Language Code Formatter
-				</h3>
-				<Button variant="ghost" size="sm" onClick={clearAll} className="rounded-full hover:bg-destructive/10 hover:text-destructive">
-					<TrashIcon className="h-4 w-4 mr-2" />
-					Clear
-				</Button>
-			</div>
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                {/* Options Panel */}
+                <div className="space-y-4">
+                    <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-4 text-xs font-semibold">
+                        <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
+                            <Settings className="w-3.5 h-3.5 text-primary" /> Settings
+                        </h3>
 
-			<div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-				{/* Settings panel */}
-				<div className="lg:col-span-3">
-					<GlassCard className="p-6 space-y-6">
-						<div className="flex items-center gap-2 font-bold text-lg border-b pb-3">
-							<SettingsIcon className="w-4 h-4 text-primary" />
-							Format Options
-						</div>
+                        <div className="space-y-4">
+                            <div className="space-y-1.5">
+                                <Label htmlFor="language-select" className="text-[10px] font-bold text-muted-foreground uppercase">Language</Label>
+                                <select
+                                    id="language-select"
+                                    value={language}
+                                    onChange={(e) => handleLanguageChange(e.target.value)}
+                                    className="w-full h-9 px-3 rounded-lg border border-border/35 bg-background text-xs"
+                                >
+                                    {LANGUAGES.map(l => (
+                                        <option key={l.value} value={l.value}>{l.label}</option>
+                                    ))}
+                                </select>
+                            </div>
 
-						{/* Language selection */}
-						<div className="space-y-2">
-							<label className="text-xs font-bold text-muted-foreground uppercase">Language</label>
-							<Select value={language} onValueChange={handleLanguageChange}>
-								<SelectTrigger className="w-full bg-muted/40 border-border/40 rounded-xl">
-									<SelectValue placeholder="Select Language" />
-								</SelectTrigger>
-								<SelectContent>
-									{LANGUAGES.map((l) => (
-										<SelectItem key={l.value} value={l.value}>
-											{l.label}
-										</SelectItem>
-									))}
-								</SelectContent>
-							</Select>
-						</div>
+                            <div className="space-y-1.5">
+                                <Label htmlFor="indent-select" className="text-[10px] font-bold text-muted-foreground uppercase">Indentation</Label>
+                                <select
+                                    id="indent-select"
+                                    value={indentSize}
+                                    onChange={(e) => setIndentSize(e.target.value)}
+                                    className="w-full h-9 px-3 rounded-lg border border-border/35 bg-background text-xs"
+                                >
+                                    <option value="2">2 Spaces</option>
+                                    <option value="4">4 Spaces</option>
+                                    <option value="8">8 Spaces</option>
+                                </select>
+                            </div>
 
-						{/* Indentation selection */}
-						<div className="space-y-2">
-							<label className="text-xs font-bold text-muted-foreground uppercase">Indentation</label>
-							<Select value={indentSize} onValueChange={setIndentSize}>
-								<SelectTrigger className="w-full bg-muted/40 border-border/40 rounded-xl">
-									<SelectValue placeholder="Select Indentation" />
-								</SelectTrigger>
-								<SelectContent>
-									<SelectItem value="2">2 Spaces</SelectItem>
-									<SelectItem value="4">4 Spaces</SelectItem>
-									<SelectItem value="8">8 Spaces</SelectItem>
-								</SelectContent>
-							</Select>
-						</div>
+                            {language === "sql" && (
+                                <>
+                                    <div className="space-y-1.5">
+                                        <Label htmlFor="dialect-select" className="text-[10px] font-bold text-muted-foreground uppercase">SQL Dialect</Label>
+                                        <select
+                                            id="dialect-select"
+                                            value={sqlDialect}
+                                            onChange={(e) => setSqlDialect(e.target.value)}
+                                            className="w-full h-9 px-3 rounded-lg border border-border/35 bg-background text-xs"
+                                        >
+                                            {DIALECTS.map(d => (
+                                                <option key={d.value} value={d.value}>{d.label}</option>
+                                            ))}
+                                        </select>
+                                    </div>
+                                    <div className="space-y-1.5">
+                                        <Label htmlFor="case-select" className="text-[10px] font-bold text-muted-foreground uppercase">Keywords Case</Label>
+                                        <select
+                                            id="case-select"
+                                            value={sqlKeywordCase}
+                                            onChange={(e) => setSqlKeywordCase(e.target.value)}
+                                            className="w-full h-9 px-3 rounded-lg border border-border/35 bg-background text-xs"
+                                        >
+                                            <option value="upper">UPPERCASE</option>
+                                            <option value="lower">lowercase</option>
+                                            <option value="preserve">preserve original</option>
+                                        </select>
+                                    </div>
+                                </>
+                            )}
+                        </div>
+                    </Card>
+                </div>
 
-						{/* SQL Specific Dialect */}
-						{language === "sql" && (
-							<>
-								<div className="space-y-2 animate-in fade-in">
-									<label className="text-xs font-bold text-muted-foreground uppercase">SQL Dialect</label>
-									<Select value={sqlDialect} onValueChange={setSqlDialect}>
-										<SelectTrigger className="w-full bg-muted/40 border-border/40 rounded-xl">
-											<SelectValue placeholder="SQL Dialect" />
-										</SelectTrigger>
-										<SelectContent>
-											{DIALECTS.map((d) => (
-												<SelectItem key={d.value} value={d.value}>
-													{d.label}
-												</SelectItem>
-											))}
-										</SelectContent>
-									</Select>
-								</div>
+                {/* Editor Workspace Panels */}
+                <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-3.5">
+                        <Label htmlFor="input-code" className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1.5 px-1">
+                            <Settings className="w-3.5 h-3.5" /> Source Code
+                        </Label>
+                        <Textarea 
+                            id="input-code"
+                            value={inputCode}
+                            onChange={(e) => setInputCode(e.target.value)}
+                            className="font-mono text-xs leading-relaxed border-border/30 bg-background/50 h-[420px] resize-none focus-visible:ring-primary/20 rounded-2xl p-4"
+                            placeholder={`Paste your raw ${language.toUpperCase()} code here...`}
+                        />
+                    </div>
 
-								<div className="space-y-2 animate-in fade-in">
-									<label className="text-xs font-bold text-muted-foreground uppercase">Keyword Case</label>
-									<Select value={sqlKeywordCase} onValueChange={setSqlKeywordCase}>
-										<SelectTrigger className="w-full bg-muted/40 border-border/40 rounded-xl">
-											<SelectValue placeholder="Keyword Case" />
-										</SelectTrigger>
-										<SelectContent>
-											<SelectItem value="upper">UPPERCASE</SelectItem>
-											<SelectItem value="lower">lowercase</SelectItem>
-											<SelectItem value="preserve">Preserve Case</SelectItem>
-										</SelectContent>
-									</Select>
-								</div>
-							</>
-						)}
-
-						<div className="pt-2">
-							<Button onClick={formatCode} disabled={!inputCode.trim()} className="w-full rounded-xl bg-primary hover:scale-102 transition-all font-bold gap-2">
-								<PlayIcon className="w-4 h-4" />
-								Format Code
-							</Button>
-						</div>
-					</GlassCard>
-				</div>
-
-				{/* Inputs & Outputs panel */}
-				<div className="lg:col-span-9 space-y-8">
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-						{/* Code Input */}
-						<GlassCard className="p-6 flex flex-col">
-							<div className="flex justify-between items-center mb-4">
-								<span className="font-bold text-lg">Source Code</span>
-								<Badge variant="secondary">
-									<FileCode2Icon className="w-3.5 h-3.5 mr-1 inline" />
-									{LANGUAGES.find(l => l.value === language)?.label}
-								</Badge>
-							</div>
-							<textarea
-								value={inputCode}
-								onChange={(e) => setInputCode(e.target.value)}
-								placeholder={`Paste your ${language.toUpperCase()} code here...`}
-								className="w-full h-[450px] bg-muted/20 border border-border/40 rounded-2xl p-6 font-mono text-sm leading-relaxed focus:outline-none focus:ring-2 focus:ring-primary/20 custom-scrollbar resize-none"
-							/>
-							{error && (
-								<div className="mt-4 p-4 rounded-xl bg-destructive/10 border border-destructive/20 text-destructive text-xs font-mono max-h-24 overflow-y-auto">
-									{error}
-								</div>
-							)}
-						</GlassCard>
-
-						{/* Code Output */}
-						<GlassCard className="p-6 flex flex-col">
-							<div className="flex justify-between items-center mb-4">
-								<span className="font-bold text-lg">Formatted Result</span>
-								<Badge variant="outline">Beautified</Badge>
-							</div>
-
-							<div className="flex-1 min-h-[380px] max-h-[450px] overflow-y-auto bg-muted/10 border border-border/40 rounded-2xl p-6 custom-scrollbar">
-								{outputCode ? (
-									<pre className="font-mono text-sm leading-relaxed whitespace-pre-wrap select-all text-primary-foreground/90">
-										<code>{outputCode}</code>
-									</pre>
-								) : (
-									<span className="text-muted-foreground text-sm italic">Formatted output will appear here...</span>
-								)}
-							</div>
-
-							<div className="mt-6 flex gap-4">
-								<Button
-									onClick={copyToClipboard}
-									disabled={!outputCode}
-									className="flex-1 h-12 rounded-2xl font-bold bg-primary hover:scale-102 active:scale-98 transition-all shadow-xl shadow-primary/10 flex items-center justify-center gap-2"
-								>
-									{copied ? (
-										<>
-											<CheckCircleIcon className="w-5 h-5" />
-											COPIED!
-										</>
-									) : (
-										<>
-											<CopyIcon className="w-5 h-5" />
-											COPY CODE
-										</>
-									)}
-								</Button>
-								<Button
-									variant="outline"
-									onClick={downloadCode}
-									disabled={!outputCode}
-									className="h-12 w-12 rounded-2xl border border-border/40 flex items-center justify-center hover:bg-muted/40"
-									title="Download Formatted File"
-								>
-									<DownloadIcon className="w-5 h-5" />
-								</Button>
-							</div>
-						</GlassCard>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+                    <div className="space-y-3.5">
+                        <div className="flex justify-between items-center px-1">
+                            <Label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1.5">
+                                <Sparkles className="w-3.5 h-3.5 text-primary" /> Beautified Output
+                            </Label>
+                            {outputCode && (
+                                <div className="flex gap-1.5">
+                                    <Button 
+                                        variant="ghost" 
+                                        size="sm" 
+                                        onClick={copyToClipboard}
+                                        className="h-7 text-[10px] font-bold gap-1 px-2.5 rounded-lg border hover:bg-muted"
+                                    >
+                                        {copiedFormat === "beautified" ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3 text-primary" />}
+                                    </Button>
+                                    <Button 
+                                        variant="ghost" 
+                                        size="sm" 
+                                        onClick={downloadCode}
+                                        className="h-7 text-[10px] font-bold gap-1 px-2.5 rounded-lg border hover:bg-muted"
+                                    >
+                                        <Download className="w-3 h-3 text-primary" />
+                                    </Button>
+                                </div>
+                            )}
+                        </div>
+                        <Card className="border border-border/40 rounded-2xl overflow-hidden shadow-lg h-[420px] flex flex-col bg-white">
+                            <div className="flex-1 overflow-auto p-6 font-mono text-xs leading-relaxed text-black bg-white select-text">
+                                {isProcessing ? (
+                                    <div className="h-full flex flex-col items-center justify-center gap-2">
+                                        <Loader2 className="w-6 h-6 text-primary animate-spin" />
+                                        <span className="text-[10px] text-muted-foreground animate-pulse">Prettifying...</span>
+                                    </div>
+                                ) : outputCode ? (
+                                    <pre className="whitespace-pre">{outputCode}</pre>
+                                ) : (
+                                    <div className="h-full flex items-center justify-center text-center text-xs text-muted-foreground font-medium max-w-xs mx-auto">
+                                        Beautified code will appear here automatically.
+                                    </div>
+                                )}
+                            </div>
+                        </Card>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }
