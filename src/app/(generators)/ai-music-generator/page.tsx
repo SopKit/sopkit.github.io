@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import AIMusicGeneratorTool from "@/components/tools/generators/AIMusicGeneratorTool";
 
 export const metadata = {
-	title: "AI Music Generator Online Free - No Signup | SopKit",
-	description: "Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation with studio-grade quality. Free this week! No signup, no uploads, 100% private browser-based tool.",
+	title: "Free AI Music Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free AI Music Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+	keywords: "ai music generator, free online tool, no signup, ai music generator online, generators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ai-music-generator/",
+		canonical: "https://sopkit.github.io/ai-music-generator",
 	},
 	openGraph: {
-		title: "AI Music Generator Online Free - No Signup",
-		description: "Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation with stu",
-		url: "https://sopkit.github.io/ai-music-generator/",
+		title: "Free AI Music Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free AI Music Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/ai-music-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "AI Music Generator Online Free - Fast & Secure",
-		description: "Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation with stu",
+		title: "Free AI Music Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free AI Music Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

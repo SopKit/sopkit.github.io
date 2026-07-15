@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Ideal Body Weight Calculator Online Free | SopKit",
-	description: "Determine your healthy weight range based on your height, age, and gender using standard formulas. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Ideal Body Weight Calculator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Ideal Body Weight Calculator online. Fast, secure browser-based utility with no registration. Easy to use.",
+	keywords: "ideal body weight calculator, free online tool, no signup, ideal body weight calculator online, health, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ideal-body-weight-calculator/",
+		canonical: "https://sopkit.github.io/ideal-body-weight-calculator",
 	},
 	openGraph: {
-		title: "Ideal Body Weight Calculator Online Free - No Signup | SopKit",
-		description: "Determine your healthy weight range based on your height, age, and gender using standard formulas. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/ideal-body-weight-calculator/",
+		title: "Free Ideal Body Weight Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Ideal Body Weight Calculator online. Fast, secure browser-based utility with no registration. Easy to use.",
+		url: "https://sopkit.github.io/ideal-body-weight-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Ideal Body Weight Calculator Online Free - Fast & Secure",
-		description: "Determine your healthy weight range based on your height, age, and gender using standard formulas. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Ideal Body Weight Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Ideal Body Weight Calculator online. Fast, secure browser-based utility with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

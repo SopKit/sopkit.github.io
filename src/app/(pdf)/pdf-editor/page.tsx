@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import PDFEditor from "@/components/tools/pdf/PDFEditor";
 
 export const metadata = {
-	title: "PDF Editor Online Free - Edit, Merge & Convert PDF | SopKit",
-	description: "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free PDF Editor Online - No Signup | SopKit",
+	description: "Manage, convert, edit, and secure PDF documents with our free PDF Editor online. Safe and private browser-based tool with no registration. 100% free and secure.",
+	keywords: "pdf editor, free online tool, no signup, pdf editor online, pdf, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-editor/",
+		canonical: "https://sopkit.github.io/pdf-editor",
 	},
 	openGraph: {
-		title: "PDF Editor Online Free - No Signup",
-		description: "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup. No signup",
-		url: "https://sopkit.github.io/pdf-editor/",
+		title: "Free PDF Editor Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF Editor online. Safe and private browser-based tool with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/pdf-editor",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "PDF Editor Online Free - Fast & Secure",
-		description: "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup. No signup",
+		title: "Free PDF Editor Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF Editor online. Safe and private browser-based tool with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -5,23 +5,24 @@ import AcademicGradesCalculator from "@/components/tools/calculators/AcademicGra
 
 
 export const metadata = {
-	title: "CGPA to Percentage Calculator for Indian Universities Free | SopKit",
-	description: "Convert your CGPA into percentage using common Indian university formulas like CBSE 9.5x, VTU, Mumbai University, DU, AKTU, and Anna University. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free CGPA to Percentage Calculator for Indian Universities Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free CGPA to Percentage Calculator for Indian Universities online. Quick, accurate browser calculato...",
+	keywords: "cgpa to percentage calculator for indian universities, free online tool, no signup, cgpa to percentage calculator for indian universities online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/cgpa-to-percentage-calculator-india/",
+		canonical: "https://sopkit.github.io/cgpa-to-percentage-calculator-india",
 	},
 	openGraph: {
-		title: "CGPA to Percentage Calculator for Indian Universities Online Free - No Signup | SopKit",
-		description: "Convert your CGPA into percentage using common Indian university formulas like CBSE 9.5x, VTU, Mumbai University, DU, AKTU, and Anna University. No signup, no u",
-		url: "https://sopkit.github.io/cgpa-to-percentage-calculator-india/",
+		title: "Free CGPA to Percentage Calculator for Indian Universities Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free CGPA to Percentage Calculator for Indian Universities online. Quick, accurate browser calculato...",
+		url: "https://sopkit.github.io/cgpa-to-percentage-calculator-india",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "CGPA to Percentage Calculator for Indian Universities Online Free - Fast & Secure",
-		description: "Convert your CGPA into percentage using common Indian university formulas like CBSE 9.5x, VTU, Mumbai University, DU, AKTU, and Anna University. No signup, no u",
+		title: "Free CGPA to Percentage Calculator for Indian Universities Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free CGPA to Percentage Calculator for Indian Universities online. Quick, accurate browser calculato...",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

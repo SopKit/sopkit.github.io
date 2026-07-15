@@ -5,15 +5,15 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Pinterest Video Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Pinterest Video Downloader online. High-speed downloading with no signup needed. 100% free.",
+	description: "Download, convert, and edit video files instantly with our free Pinterest Video Downloader online. Fast, secure, and private processing with no signup.",
 	keywords: "pinterest video downloader, download pinterest videos, pinterest video saver, pin video download, free tool, SopKit, pinterest-video-downloader, free pinterest-video-downloader, pinterest video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/pinterest-video-downloader/",
+		canonical: "https://sopkit.github.io/pinterest-video-downloader",
 	},
 	openGraph: {
 		title: "Free Pinterest Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Pinterest Video Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://sopkit.github.io/pinterest-video-downloader/",
+		description: "Download, convert, and edit video files instantly with our free Pinterest Video Downloader online. Fast, secure, and private processing with no signup.",
+		url: "https://sopkit.github.io/pinterest-video-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Pinterest Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Pinterest Video Downloader online. High-speed downloading with no signup needed. 100% free.",
+		description: "Download, convert, and edit video files instantly with our free Pinterest Video Downloader online. Fast, secure, and private processing with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

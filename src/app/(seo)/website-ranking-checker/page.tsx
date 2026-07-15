@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Website Ranking Checker Online Free - No Signup | SopKit",
-	description: "Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Website Ranking Checker Online - No Signup | SopKit",
+	description: "Audit websites, analyze search rankings, and generate schemas with our free Website Ranking Checker online. Optimize search presence with no signup. 100% free.",
+	keywords: "website ranking checker, free online tool, no signup, website ranking checker online, seo, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/website-ranking-checker/",
+		canonical: "https://sopkit.github.io/website-ranking-checker",
 	},
 	openGraph: {
-		title: "Website Ranking Checker Online Free - No Signup",
-		description: "Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-base",
-		url: "https://sopkit.github.io/website-ranking-checker/",
+		title: "Free Website Ranking Checker Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Website Ranking Checker online. Optimize search presence with no signup. 100% free.",
+		url: "https://sopkit.github.io/website-ranking-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Website Ranking Checker Online Free - Fast & Secure",
-		description: "Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-base",
+		title: "Free Website Ranking Checker Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Website Ranking Checker online. Optimize search presence with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

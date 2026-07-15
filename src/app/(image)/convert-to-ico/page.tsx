@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Convert to ICO Online Free - Compress & Convert Images | SopKit",
-	description: "Free convert to ico tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Convert to ICO Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Convert to ICO online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
+	keywords: "convert to ico, free online tool, no signup, convert to ico online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/convert-to-ico/",
+		canonical: "https://sopkit.github.io/convert-to-ico",
 	},
 	openGraph: {
-		title: "Convert to ICO Online Free - No Signup",
-		description: "Free convert to ico tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/convert-to-ico/",
+		title: "Free Convert to ICO Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Convert to ICO online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
+		url: "https://sopkit.github.io/convert-to-ico",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Convert to ICO Online Free - Fast & Secure",
-		description: "Free convert to ico tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Convert to ICO Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Convert to ICO online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

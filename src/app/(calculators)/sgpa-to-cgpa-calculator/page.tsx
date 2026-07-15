@@ -5,23 +5,24 @@ import AcademicGradesCalculator from "@/components/tools/calculators/AcademicGra
 
 
 export const metadata = {
-	title: "SGPA to CGPA Calculator Online Free | SopKit",
-	description: "Calculate your cumulative GPA (CGPA) from semester-wise SGPA values. Supports credit-weighted and simple average methods. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free SGPA to CGPA Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free SGPA to CGPA Calculator online. Quick, accurate browser calculator with no registration.",
+	keywords: "sgpa to cgpa calculator, free online tool, no signup, sgpa to cgpa calculator online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/sgpa-to-cgpa-calculator/",
+		canonical: "https://sopkit.github.io/sgpa-to-cgpa-calculator",
 	},
 	openGraph: {
-		title: "SGPA to CGPA Calculator Online Free - No Signup | SopKit",
-		description: "Calculate your cumulative GPA (CGPA) from semester-wise SGPA values. Supports credit-weighted and simple average methods. No signup, no uploads, 100% private br",
-		url: "https://sopkit.github.io/sgpa-to-cgpa-calculator/",
+		title: "Free SGPA to CGPA Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free SGPA to CGPA Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/sgpa-to-cgpa-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "SGPA to CGPA Calculator Online Free - Fast & Secure",
-		description: "Calculate your cumulative GPA (CGPA) from semester-wise SGPA values. Supports credit-weighted and simple average methods. No signup, no uploads, 100% private br",
+		title: "Free SGPA to CGPA Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free SGPA to CGPA Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

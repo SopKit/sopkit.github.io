@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Google Cache Checker Online Free - No Signup | SopKit",
-	description: "Free google cache checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Google Cache Checker Online - No Signup | SopKit",
+	description: "Audit websites, analyze search rankings, and generate schemas with our free Google Cache Checker online. Optimize search presence with no signup. Free & secure.",
+	keywords: "google cache checker, free online tool, no signup, google cache checker online, seo, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/google-cache-checker/",
+		canonical: "https://sopkit.github.io/google-cache-checker",
 	},
 	openGraph: {
-		title: "Google Cache Checker Online Free - No Signup",
-		description: "Free google cache checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/google-cache-checker/",
+		title: "Free Google Cache Checker Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Cache Checker online. Optimize search presence with no signup. Free & secure.",
+		url: "https://sopkit.github.io/google-cache-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Google Cache Checker Online Free - Fast & Secure",
-		description: "Free google cache checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
+		title: "Free Google Cache Checker Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Cache Checker online. Optimize search presence with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

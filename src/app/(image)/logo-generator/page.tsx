@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import LogoGeneratorTool from "@/components/tools/image/LogoGeneratorTool";
 
 export const metadata = {
-	title: "Logo Generator Online Free - Compress & Convert Images | SopKit",
-	description: "Create professional logos with text, fonts, and custom colors No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Logo Generator Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Logo Generator online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
+	keywords: "logo generator, free online tool, no signup, logo generator online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/logo-generator/",
+		canonical: "https://sopkit.github.io/logo-generator",
 	},
 	openGraph: {
-		title: "Logo Generator Online Free - No Signup",
-		description: "Create professional logos with text, fonts, and custom colors No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/logo-generator/",
+		title: "Free Logo Generator Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Logo Generator online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
+		url: "https://sopkit.github.io/logo-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Logo Generator Online Free - Fast & Secure",
-		description: "Create professional logos with text, fonts, and custom colors No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Logo Generator Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Logo Generator online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

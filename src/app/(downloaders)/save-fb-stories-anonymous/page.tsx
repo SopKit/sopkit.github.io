@@ -4,24 +4,24 @@ import FacebookStoryDownloader from "@/components/tools/downloaders/FacebookStor
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Save Fb Stories Anonymous Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Save Fb Stories Anonymous online. High-speed downloading with no signup needed. Easy to use.",
+	title: "Free Save Facebook Stories Anonymous Online - No Signup | SopKit",
+	description: "Download, convert, and edit video files instantly with our free Save Facebook Stories Anonymous online. Fast, secure, and private processing with no signup.",
 	keywords: "save fb stories anonymous, anonymous facebook story viewer, fb story downloader, anonymous story viewer, SopKit, save-fb-stories-anonymous, free save-fb-stories-anonymous, save fb stories anonymous online, online downloader, free media saver, video downloader, url downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/save-fb-stories-anonymous/",
+		canonical: "https://sopkit.github.io/save-fb-stories-anonymous",
 	},
 	openGraph: {
-		title: "Free Save Fb Stories Anonymous Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Save Fb Stories Anonymous online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://sopkit.github.io/save-fb-stories-anonymous/",
+		title: "Free Save Facebook Stories Anonymous Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Save Facebook Stories Anonymous online. Fast, secure, and private processing with no signup.",
+		url: "https://sopkit.github.io/save-fb-stories-anonymous",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Save Fb Stories Anonymous Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Save Fb Stories Anonymous online. High-speed downloading with no signup needed. Easy to use.",
+		title: "Free Save Facebook Stories Anonymous Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Save Facebook Stories Anonymous online. Fast, secure, and private processing with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

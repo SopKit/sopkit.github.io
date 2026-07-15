@@ -5,23 +5,24 @@ import { Suspense } from "react";
 import { Clock, Calendar, ArrowRight } from "lucide-react";
 
 export const metadata = {
-	title: "Blog & Guides for Free Online Tools | SopKit",
-	description: "Actionable guides, tool lists, and tutorials for SEO, developer workflows, and everyday online conversion tasks.",
+	title: "Free Blog Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Blog online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 	keywords: "SopKit blog, free online tools guides, seo tutorials, json guides, converter tutorials, no signup tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/blog/",
+		canonical: "https://sopkit.github.io/blog",
 	},
 	openGraph: {
-		title: "Blog & Guides for Free Online Tools | SopKit",
-		description: "Read practical guides that link directly to free tools you can use instantly.",
-		url: "https://sopkit.github.io/blog/",
-		type: "website",
+		title: "Free Blog Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Blog online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/blog",
+		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
+		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Blog & Guides for Free Online Tools | SopKit",
-		description: "Read practical guides that link directly to free tools you can use instantly.",
+		title: "Free Blog Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Blog online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

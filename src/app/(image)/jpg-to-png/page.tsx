@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "JPG to PNG Converter Online Free | SopKit",
-	description: "Convert JPG photos to PNG format to support transparency and lossless compression. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JPG to PNG Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free JPG to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+	keywords: "jpg to png converter, free online tool, no signup, jpg to png converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/jpg-to-png/",
+		canonical: "https://sopkit.github.io/jpg-to-png",
 	},
 	openGraph: {
-		title: "JPG to PNG Converter Online Free - No Signup | SopKit",
-		description: "Convert JPG photos to PNG format to support transparency and lossless compression. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/jpg-to-png/",
+		title: "Free JPG to PNG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free JPG to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/jpg-to-png",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JPG to PNG Converter Online Free - Fast & Secure",
-		description: "Convert JPG photos to PNG format to support transparency and lossless compression. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free JPG to PNG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free JPG to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import PasswordGeneratorTool from "@/components/tools/utilities/PasswordGeneratorTool";
 
 export const metadata = {
-	title: "Password Generator Online Free - No Signup | SopKit",
-	description: "Create strong, secure passwords instantly with customizable settings. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Password Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Password Generator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "password generator, free online tool, no signup, password generator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/password-generator/",
+		canonical: "https://sopkit.github.io/password-generator",
 	},
 	openGraph: {
-		title: "Password Generator Online Free - No Signup",
-		description: "Create strong, secure passwords instantly with customizable settings. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/password-generator/",
+		title: "Free Password Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Password Generator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/password-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Password Generator Online Free - Fast & Secure",
-		description: "Create strong, secure passwords instantly with customizable settings. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Password Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Password Generator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

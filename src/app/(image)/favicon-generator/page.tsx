@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import FaviconGeneratorTool from "@/components/tools/image/FaviconGeneratorTool";
 
 export const metadata = {
-	title: "Favicon Generator Online Free - Compress & Convert Images | SopKit",
-	description: "Generate favicons from text, images, or emojis for websites No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Favicon Generator Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Favicon Generator online. Crop, resize, and optimize photos in your browser with no signup. No signup required.",
+	keywords: "favicon generator, free online tool, no signup, favicon generator online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/favicon-generator/",
+		canonical: "https://sopkit.github.io/favicon-generator",
 	},
 	openGraph: {
-		title: "Favicon Generator Online Free - No Signup",
-		description: "Generate favicons from text, images, or emojis for websites No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/favicon-generator/",
+		title: "Free Favicon Generator Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Favicon Generator online. Crop, resize, and optimize photos in your browser with no signup. No signup required.",
+		url: "https://sopkit.github.io/favicon-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Favicon Generator Online Free - Fast & Secure",
-		description: "Generate favicons from text, images, or emojis for websites No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Favicon Generator Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Favicon Generator online. Crop, resize, and optimize photos in your browser with no signup. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

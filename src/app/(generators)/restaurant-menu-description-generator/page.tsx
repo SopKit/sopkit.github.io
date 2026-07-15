@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Menu Description Generator - Free Online Tool | SopKit",
-	description: "Generate optimized menu description generator details. Instantly copy or share customized outputs.",
+	title: "Free Menu Description Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Menu Description Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
 	keywords: "menu description generator, restaurant-menu-description-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/restaurant-menu-description-generator/",
+		canonical: "https://sopkit.github.io/restaurant-menu-description-generator",
 	},
 	openGraph: {
-		title: "Menu Description Generator - Free Online Tool | SopKit",
-		description: "Generate optimized menu description generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/restaurant-menu-description-generator/",
+		title: "Free Menu Description Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Menu Description Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
+		url: "https://sopkit.github.io/restaurant-menu-description-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Menu Description Generator - Free Online Tool | SopKit",
-		description: "Generate optimized menu description generator details. Instantly copy or share customized outputs.",
+		title: "Free Menu Description Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Menu Description Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "WEBP to JPG Converter Online Free | SopKit",
-	description: "Convert WEBP files to JPG format for compatibility with all devices and platforms. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free WEBP to JPG Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free WEBP to JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+	keywords: "webp to jpg converter, free online tool, no signup, webp to jpg converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/webp-to-jpg/",
+		canonical: "https://sopkit.github.io/webp-to-jpg",
 	},
 	openGraph: {
-		title: "WEBP to JPG Converter Online Free - No Signup | SopKit",
-		description: "Convert WEBP files to JPG format for compatibility with all devices and platforms. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/webp-to-jpg/",
+		title: "Free WEBP to JPG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free WEBP to JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+		url: "https://sopkit.github.io/webp-to-jpg",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "WEBP to JPG Converter Online Free - Fast & Secure",
-		description: "Convert WEBP files to JPG format for compatibility with all devices and platforms. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free WEBP to JPG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free WEBP to JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

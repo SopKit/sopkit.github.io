@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "BMI + Ideal Weight Calculator - Free Online Tool | SopKit",
-	description: "Calculate your bmi + ideal weight calculator instantly. Free browser-based calculator with detailed breakdowns.",
+	title: "Free BMI + Ideal Weight Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free BMI + Ideal Weight Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "bmi + ideal weight calculator, bmi-ideal-weight-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/bmi-ideal-weight-calculator/",
+		canonical: "https://sopkit.github.io/bmi-ideal-weight-calculator",
 	},
 	openGraph: {
-		title: "BMI + Ideal Weight Calculator - Free Online Tool | SopKit",
-		description: "Calculate your bmi + ideal weight calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/bmi-ideal-weight-calculator/",
+		title: "Free BMI + Ideal Weight Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free BMI + Ideal Weight Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/bmi-ideal-weight-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "BMI + Ideal Weight Calculator - Free Online Tool | SopKit",
-		description: "Calculate your bmi + ideal weight calculator instantly. Free browser-based calculator with detailed breakdowns.",
+		title: "Free BMI + Ideal Weight Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free BMI + Ideal Weight Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Whois Domain Lookup Online Free - No Signup | SopKit",
-	description: "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Whois Domain Lookup Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Whois Domain Lookup online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "whois domain lookup, free online tool, no signup, whois domain lookup online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/whois-domain-lookup/",
+		canonical: "https://sopkit.github.io/whois-domain-lookup",
 	},
 	openGraph: {
-		title: "Whois Domain Lookup Online Free - No Signup",
-		description: "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
-		url: "https://sopkit.github.io/whois-domain-lookup/",
+		title: "Free Whois Domain Lookup Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Whois Domain Lookup online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/whois-domain-lookup",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Whois Domain Lookup Online Free - Fast & Secure",
-		description: "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
+		title: "Free Whois Domain Lookup Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Whois Domain Lookup online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

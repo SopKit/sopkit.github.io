@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import QrReaderPremium from "@/components/tools/utilities/QrReaderPremium";
 
 export const metadata = {
-	title: "QR Code Reader Online Free - No Signup | SopKit",
-	description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free QR Code Reader Online - No Signup | SopKit",
+	description: "Create custom content with our free QR Code Reader online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+	keywords: "qr code reader, free online tool, no signup, qr code reader online, generators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/qr-code-reader/",
+		canonical: "https://sopkit.github.io/qr-code-reader",
 	},
 	openGraph: {
-		title: "QR Code Reader Online Free - No Signup",
-		description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage. No signup, ",
-		url: "https://sopkit.github.io/qr-code-reader/",
+		title: "Free QR Code Reader Online - No Signup | SopKit",
+		description: "Create custom content with our free QR Code Reader online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/qr-code-reader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "QR Code Reader Online Free - Fast & Secure",
-		description: "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage. No signup, ",
+		title: "Free QR Code Reader Online - No Signup | SopKit",
+		description: "Create custom content with our free QR Code Reader online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

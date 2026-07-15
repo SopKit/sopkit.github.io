@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Text to ASCII Converter Online Free - Developer Tools | SopKit",
-	description: "Convert plain text into ASCII character codes instantly. Our free online tool provides decimal ASCII values for every character in your input string. Fast and secure. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Text to ASCII Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free Text to ASCII Converter online. Secure, local developer utility with no registration.",
+	keywords: "text to ascii converter, free online tool, no signup, text to ascii converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-ascii-converter/",
+		canonical: "https://sopkit.github.io/text-to-ascii-converter",
 	},
 	openGraph: {
-		title: "Text to ASCII Converter Online Free - No Signup",
-		description: "Convert plain text into ASCII character codes instantly. Our free online tool provides decimal ASCII values for every character in your input string. Fast and s",
-		url: "https://sopkit.github.io/text-to-ascii-converter/",
+		title: "Free Text to ASCII Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Text to ASCII Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/text-to-ascii-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Text to ASCII Converter Online Free - Fast & Secure",
-		description: "Convert plain text into ASCII character codes instantly. Our free online tool provides decimal ASCII values for every character in your input string. Fast and s",
+		title: "Free Text to ASCII Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Text to ASCII Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

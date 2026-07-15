@@ -5,23 +5,24 @@ import FinanceCalculators from "@/components/tools/impl/FinanceCalculators";
 
 
 export const metadata = {
-	title: "SIP Calculator India Online Free | SopKit",
-	description: "Calculate estimated SIP returns and wealth growth for mutual fund investments online for free. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free SIP Calculator India Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free SIP Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
+	keywords: "sip calculator india, free online tool, no signup, sip calculator india online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/sip-calculator/",
+		canonical: "https://sopkit.github.io/sip-calculator",
 	},
 	openGraph: {
-		title: "SIP Calculator India Online Free - No Signup | SopKit",
-		description: "Calculate estimated SIP returns and wealth growth for mutual fund investments online for free. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/sip-calculator/",
+		title: "Free SIP Calculator India Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free SIP Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
+		url: "https://sopkit.github.io/sip-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "SIP Calculator India Online Free - Fast & Secure",
-		description: "Calculate estimated SIP returns and wealth growth for mutual fund investments online for free. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free SIP Calculator India Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free SIP Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,24 +4,24 @@ import SnapchatDownloader from "@/components/tools/downloaders/SnapchatDownloade
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Snapchat Saver Online - No Signup | SopKit",
-	description: "Save and download media files from Snapchat with our free Snapchat Saver online. High-speed downloading with no signup needed.",
+	title: "Free Snapchat Saver Online Online - No Signup | SopKit",
+	description: "Download, convert, and edit video files instantly with our free Snapchat Saver Online online. Fast, secure, and private processing with no signup. Easy to use.",
 	keywords: "snapchat saver online, free online tool, no signup, snapchat-saver-online, Snapchat Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/snapchat-saver-online/",
+		canonical: "https://sopkit.github.io/snapchat-saver-online",
 	},
 	openGraph: {
-		title: "Snapchat Saver Online - No Signup | SopKit",
-		description: "Save and download media files from Snapchat with our free Snapchat Saver online. High-speed downloading with no signup needed.",
-		url: "https://sopkit.github.io/snapchat-saver-online/",
+		title: "Free Snapchat Saver Online Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Snapchat Saver Online online. Fast, secure, and private processing with no signup. Easy to use.",
+		url: "https://sopkit.github.io/snapchat-saver-online",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Snapchat Saver Online - Fast & Secure",
-		description: "Save and download media files from Snapchat with our free Snapchat Saver online. High-speed downloading with no signup needed.",
+		title: "Free Snapchat Saver Online Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Snapchat Saver Online online. Fast, secure, and private processing with no signup. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

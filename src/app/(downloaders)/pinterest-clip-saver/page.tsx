@@ -5,15 +5,15 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Pinterest Clip Saver Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Pinterest Clip Saver online. High-speed downloading with no signup needed. Try it free now.",
+	description: "Download, convert, and edit video files instantly with our free Pinterest Clip Saver online. Fast, secure, and private processing with no signup. Free & secure.",
 	keywords: "pinterest clip saver, free online tool, no signup, pinterest-clip-saver, free pinterest-clip-saver, Pinterest Clip Saver online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/pinterest-clip-saver/",
+		canonical: "https://sopkit.github.io/pinterest-clip-saver",
 	},
 	openGraph: {
 		title: "Free Pinterest Clip Saver Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Pinterest Clip Saver online. High-speed downloading with no signup needed. Try it free now.",
-		url: "https://sopkit.github.io/pinterest-clip-saver/",
+		description: "Download, convert, and edit video files instantly with our free Pinterest Clip Saver online. Fast, secure, and private processing with no signup. Free & secure.",
+		url: "https://sopkit.github.io/pinterest-clip-saver",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Pinterest Clip Saver Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Pinterest Clip Saver online. High-speed downloading with no signup needed. Try it free now.",
+		description: "Download, convert, and edit video files instantly with our free Pinterest Clip Saver online. Fast, secure, and private processing with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

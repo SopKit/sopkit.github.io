@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import JSONMinifierTool from "@/components/tools/developer/JSONMinifierTool";
 
 export const metadata = {
-	title: "JSON Minify Online Free - Developer Tools | SopKit",
-	description: "Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JSON Minify Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JSON Minify online. Secure, local developer utility with no registration. No signup required.",
+	keywords: "json minify, free online tool, no signup, json minify online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-minify/",
+		canonical: "https://sopkit.github.io/json-minify",
 	},
 	openGraph: {
-		title: "JSON Minify Online Free - No Signup",
-		description: "Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly. No s",
-		url: "https://sopkit.github.io/json-minify/",
+		title: "Free JSON Minify Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON Minify online. Secure, local developer utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/json-minify",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JSON Minify Online Free - Fast & Secure",
-		description: "Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly. No s",
+		title: "Free JSON Minify Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON Minify online. Secure, local developer utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

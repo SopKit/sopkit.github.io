@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Advanced Favicon Generator Online Free | SopKit",
-	description: "Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Advanced Favicon Generator Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Advanced Favicon Generator online. Crop, resize, and optimize photos in your browser with no signup. 100% free.",
+	keywords: "advanced favicon generator, free online tool, no signup, advanced favicon generator online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/favicon-generator-pro/",
+		canonical: "https://sopkit.github.io/favicon-generator-pro",
 	},
 	openGraph: {
-		title: "Advanced Favicon Generator Online Free - No Signup | SopKit",
-		description: "Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/favicon-generator-pro/",
+		title: "Free Advanced Favicon Generator Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Advanced Favicon Generator online. Crop, resize, and optimize photos in your browser with no signup. 100% free.",
+		url: "https://sopkit.github.io/favicon-generator-pro",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Advanced Favicon Generator Online Free - Fast & Secure",
-		description: "Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Advanced Favicon Generator Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Advanced Favicon Generator online. Crop, resize, and optimize photos in your browser with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

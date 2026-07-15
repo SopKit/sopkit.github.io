@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Age Calculator Online Free - No Signup | SopKit",
-	description: "Free age calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Age Calculator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Age Calculator online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+	keywords: "age calculator, free online tool, no signup, age calculator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/age-calculator/",
+		canonical: "https://sopkit.github.io/age-calculator",
 	},
 	openGraph: {
-		title: "Age Calculator Online Free - No Signup",
-		description: "Free age calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/age-calculator/",
+		title: "Free Age Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Age Calculator online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/age-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Age Calculator Online Free - Fast & Secure",
-		description: "Free age calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Age Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Age Calculator online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

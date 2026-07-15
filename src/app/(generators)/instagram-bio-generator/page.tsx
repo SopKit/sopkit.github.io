@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Instagram Bio Generator - Free Online Tool | SopKit",
-	description: "Generate optimized instagram bio generator details. Instantly copy or share customized outputs.",
+	title: "Free Instagram Bio Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Instagram Bio Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
 	keywords: "instagram bio generator, instagram-bio-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/instagram-bio-generator/",
+		canonical: "https://sopkit.github.io/instagram-bio-generator",
 	},
 	openGraph: {
-		title: "Instagram Bio Generator - Free Online Tool | SopKit",
-		description: "Generate optimized instagram bio generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/instagram-bio-generator/",
+		title: "Free Instagram Bio Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Instagram Bio Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
+		url: "https://sopkit.github.io/instagram-bio-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Instagram Bio Generator - Free Online Tool | SopKit",
-		description: "Generate optimized instagram bio generator details. Instantly copy or share customized outputs.",
+		title: "Free Instagram Bio Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Instagram Bio Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

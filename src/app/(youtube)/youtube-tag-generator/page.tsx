@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "YouTube Tag Generator Online Free - No Signup | SopKit",
-	description: "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank higher in search results. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Tag Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Tag Generator online. Fast, secure browser-based utility with no registration. No signup required.",
+	keywords: "youtube tag generator, free online tool, no signup, youtube tag generator online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-tag-generator/",
+		canonical: "https://sopkit.github.io/youtube-tag-generator",
 	},
 	openGraph: {
-		title: "YouTube Tag Generator Online Free - No Signup",
-		description: "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank higher ",
-		url: "https://sopkit.github.io/youtube-tag-generator/",
+		title: "Free YouTube Tag Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Tag Generator online. Fast, secure browser-based utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/youtube-tag-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Tag Generator Online Free - Fast & Secure",
-		description: "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank higher ",
+		title: "Free YouTube Tag Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Tag Generator online. Fast, secure browser-based utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

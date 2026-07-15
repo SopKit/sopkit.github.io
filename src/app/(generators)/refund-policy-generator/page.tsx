@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Refund Policy Generator - Free Online Tool | SopKit",
-	description: "Generate optimized refund policy generator details. Instantly copy or share customized outputs.",
+	title: "Free Refund Policy Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Refund Policy Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
 	keywords: "refund policy generator, refund-policy-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/refund-policy-generator/",
+		canonical: "https://sopkit.github.io/refund-policy-generator",
 	},
 	openGraph: {
-		title: "Refund Policy Generator - Free Online Tool | SopKit",
-		description: "Generate optimized refund policy generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/refund-policy-generator/",
+		title: "Free Refund Policy Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Refund Policy Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
+		url: "https://sopkit.github.io/refund-policy-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Refund Policy Generator - Free Online Tool | SopKit",
-		description: "Generate optimized refund policy generator details. Instantly copy or share customized outputs.",
+		title: "Free Refund Policy Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Refund Policy Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "HTTP Status Code Checker Online Free - No Signup | SopKit",
-	description: "Free http status code checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free HTTP Status Code Checker Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free HTTP Status Code Checker online. Fast, secure browser-based utility with no registration. Try it free now.",
+	keywords: "http status code checker, free online tool, no signup, http status code checker online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/http-status-code-checker/",
+		canonical: "https://sopkit.github.io/http-status-code-checker",
 	},
 	openGraph: {
-		title: "HTTP Status Code Checker Online Free - No Signup",
-		description: "Free http status code checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
-		url: "https://sopkit.github.io/http-status-code-checker/",
+		title: "Free HTTP Status Code Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free HTTP Status Code Checker online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/http-status-code-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "HTTP Status Code Checker Online Free - Fast & Secure",
-		description: "Free http status code checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
+		title: "Free HTTP Status Code Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free HTTP Status Code Checker online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

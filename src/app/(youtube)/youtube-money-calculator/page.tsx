@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeMoneyCalculatorTool from "@/components/tools/youtube/YouTubeMoneyCalculatorTool";
 
 export const metadata = {
-	title: "YouTube Money Calculator Online Free - No Signup | SopKit",
-	description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metrics. Perfect for creators. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Money Calculator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Money Calculator online. Fast, secure browser-based utility with no registration. Try it free now.",
+	keywords: "youtube money calculator, free online tool, no signup, youtube money calculator online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-money-calculator/",
+		canonical: "https://sopkit.github.io/youtube-money-calculator",
 	},
 	openGraph: {
-		title: "YouTube Money Calculator Online Free - No Signup",
-		description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metri",
-		url: "https://sopkit.github.io/youtube-money-calculator/",
+		title: "Free YouTube Money Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Money Calculator online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/youtube-money-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Money Calculator Online Free - Fast & Secure",
-		description: "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metri",
+		title: "Free YouTube Money Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Money Calculator online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

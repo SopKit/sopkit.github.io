@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "WEBP to PNG Converter Online Free | SopKit",
-	description: "Convert modern WEBP images to widely supported PNG format without losing quality. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free WEBP to PNG Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free WEBP to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+	keywords: "webp to png converter, free online tool, no signup, webp to png converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/webp-to-png/",
+		canonical: "https://sopkit.github.io/webp-to-png",
 	},
 	openGraph: {
-		title: "WEBP to PNG Converter Online Free - No Signup | SopKit",
-		description: "Convert modern WEBP images to widely supported PNG format without losing quality. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/webp-to-png/",
+		title: "Free WEBP to PNG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free WEBP to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+		url: "https://sopkit.github.io/webp-to-png",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "WEBP to PNG Converter Online Free - Fast & Secure",
-		description: "Convert modern WEBP images to widely supported PNG format without losing quality. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free WEBP to PNG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free WEBP to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

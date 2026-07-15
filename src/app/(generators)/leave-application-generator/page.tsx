@@ -5,15 +5,15 @@ import LeaveLetterGenerator from "@/components/tools/generators/LeaveLetterGener
 
 export const metadata = {
 	title: "Free Leave Application Generator Online - No Signup | SopKit",
-	description: "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.",
+	description: "Create custom content with our free Leave Application Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
 	keywords: "leave-application-generator, Leave Application Generator",
 	alternates: {
-		canonical: "https://sopkit.github.io/leave-application-generator/",
+		canonical: "https://sopkit.github.io/leave-application-generator",
 	},
 	openGraph: {
 		title: "Free Leave Application Generator Online - No Signup | SopKit",
-		description: "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.",
-		url: "https://sopkit.github.io/leave-application-generator/",
+		description: "Create custom content with our free Leave Application Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
+		url: "https://sopkit.github.io/leave-application-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Leave Application Generator Online - No Signup | SopKit",
-		description: "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.",
+		description: "Create custom content with our free Leave Application Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "URL Encoder Decoder Online - Free URL Tool | SopKit",
-	description: "Encode or decode URLs and parameter query strings instantly. Safe, secure, and executed fully client-side in your browser. No registration required.",
+	title: "Free URL Encoder Decoder Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free URL Encoder Decoder online. Fast and private browser utility with no signup. Free & secure.",
+	keywords: "url encoder decoder, free online tool, no signup, url encoder decoder online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-encoder-decoder/",
+		canonical: "https://sopkit.github.io/url-encoder-decoder",
 	},
 	openGraph: {
-		title: "URL Encoder Decoder Online - Free URL Tool | SopKit",
-		description: "Encode or decode URLs and parameter query strings instantly. Safe, secure, and executed fully client-side in your browser. No registration required.",
-		url: "https://sopkit.github.io/url-encoder-decoder/",
+		title: "Free URL Encoder Decoder Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free URL Encoder Decoder online. Fast and private browser utility with no signup. Free & secure.",
+		url: "https://sopkit.github.io/url-encoder-decoder",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/text-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "URL Encoder Decoder Online - Free URL Tool | SopKit",
-		description: "Encode or decode URLs and parameter query strings instantly. Safe, secure, and executed fully client-side in your browser. No registration required.",
-		images: ["/og-images/text-tools.png"],
+		title: "Free URL Encoder Decoder Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free URL Encoder Decoder online. Fast and private browser utility with no signup. Free & secure.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

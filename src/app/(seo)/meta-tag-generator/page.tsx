@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import MetaTagGenerator from "@/components/tools/built-ins/MetaTagGenerator";
 
 export const metadata = {
-	title: "Meta Tag Generator Online Free - No Signup | SopKit",
-	description: "Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Meta Tag Generator Online - No Signup | SopKit",
+	description: "Audit websites, analyze search rankings, and generate schemas with our free Meta Tag Generator online. Optimize search presence with no signup. Try it free now.",
+	keywords: "meta tag generator, free online tool, no signup, meta tag generator online, seo, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/meta-tag-generator/",
+		canonical: "https://sopkit.github.io/meta-tag-generator",
 	},
 	openGraph: {
-		title: "Meta Tag Generator Online Free - No Signup",
-		description: "Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/meta-tag-generator/",
+		title: "Free Meta Tag Generator Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Meta Tag Generator online. Optimize search presence with no signup. Try it free now.",
+		url: "https://sopkit.github.io/meta-tag-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Meta Tag Generator Online Free - Fast & Secure",
-		description: "Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
+		title: "Free Meta Tag Generator Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Meta Tag Generator online. Optimize search presence with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Date Difference Calculator Online Free | SopKit",
-	description: "Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Date Difference Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Date Difference Calculator online. Quick, accurate browser calculator with no registration.",
+	keywords: "date difference calculator, free online tool, no signup, date difference calculator online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/date-difference-calculator/",
+		canonical: "https://sopkit.github.io/date-difference-calculator",
 	},
 	openGraph: {
-		title: "Date Difference Calculator Online Free - No Signup | SopKit",
-		description: "Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/date-difference-calculator/",
+		title: "Free Date Difference Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Date Difference Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/date-difference-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Date Difference Calculator Online Free - Fast & Secure",
-		description: "Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Date Difference Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Date Difference Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

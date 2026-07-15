@@ -4,24 +4,24 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "ROI Calculator - Return on Investment | SopKit",
-	description: "Calculate return on investment, net gain, and annualized ROI from your initial and final values. Free investment return calculator.",
+	title: "Free ROI Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free ROI Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 	keywords: "roi calculator, return on investment calculator, annualized return calculator, investment return, profit percentage calculator",
 	alternates: {
-		canonical: "https://sopkit.github.io/roi-calculator/",
+		canonical: "https://sopkit.github.io/roi-calculator",
 	},
 	openGraph: {
-		title: "ROI Calculator - Return on Investment | SopKit",
-		description: "Calculate return on investment, net gain, and annualized ROI from your initial and final values. Free investment return calculator.",
-		url: "https://sopkit.github.io/roi-calculator/",
+		title: "Free ROI Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free ROI Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
+		url: "https://sopkit.github.io/roi-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "ROI Calculator - Return on Investment | SopKit",
-		description: "Calculate return on investment, net gain, and annualized ROI from your initial and final values. Free investment return calculator.",
+		title: "Free ROI Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free ROI Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Free CSS Border Radius Generator Online | SopKit",
-	description: "Generate CSS border-radius rules interactively. Adjust corner curves in pixels or percentages, preview changes live, and copy vendor-prefixed stylesheet rules.",
+	title: "Free CSS Border Radius Generator Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free CSS Border Radius Generator online. Secure, local developer utility with no registration.",
+	keywords: "css border radius generator, free online tool, no signup, css border radius generator online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/css-border-radius-generator/",
+		canonical: "https://sopkit.github.io/css-border-radius-generator",
 	},
 	openGraph: {
-		title: "Free CSS Border Radius Generator Online | SopKit",
-		description: "Generate CSS border-radius rules interactively. Adjust corner curves in pixels or percentages, preview changes live, and copy vendor-prefixed stylesheet rules.",
-		url: "https://sopkit.github.io/css-border-radius-generator/",
+		title: "Free CSS Border Radius Generator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free CSS Border Radius Generator online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/css-border-radius-generator",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/developer-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free CSS Border Radius Generator Online | SopKit",
-		description: "Generate CSS border-radius rules interactively. Adjust corner curves in pixels or percentages, preview changes live, and copy vendor-prefixed stylesheet rules.",
-		images: ["/og-images/developer-tools.png"],
+		title: "Free CSS Border Radius Generator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free CSS Border Radius Generator online. Secure, local developer utility with no registration.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

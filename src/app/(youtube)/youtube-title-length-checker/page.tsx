@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeTitleLengthCheckerTool from "@/components/tools/youtube/YouTubeTitleLengthCheckerTool";
 
 export const metadata = {
-	title: "YouTube Title Length Checker Online Free - No Signup | SopKit",
-	description: "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is visible in search results. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Title Length Checker Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Title Length Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
+	keywords: "youtube title length checker, free online tool, no signup, youtube title length checker online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-title-length-checker/",
+		canonical: "https://sopkit.github.io/youtube-title-length-checker",
 	},
 	openGraph: {
-		title: "YouTube Title Length Checker Online Free - No Signup",
-		description: "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is ",
-		url: "https://sopkit.github.io/youtube-title-length-checker/",
+		title: "Free YouTube Title Length Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Title Length Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
+		url: "https://sopkit.github.io/youtube-title-length-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Title Length Checker Online Free - Fast & Secure",
-		description: "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is ",
+		title: "Free YouTube Title Length Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Title Length Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import TextGeneratorTool from "@/components/tools/generators/TextGeneratorTool";
 
 export const metadata = {
-	title: "Business Name Generator Online Free - No Signup | SopKit",
-	description: "Generate creative and catchy names for your brand or startup. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Business Name Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Business Name Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
+	keywords: "business name generator, free online tool, no signup, business name generator online, generators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/business-name-generator/",
+		canonical: "https://sopkit.github.io/business-name-generator",
 	},
 	openGraph: {
-		title: "Business Name Generator Online Free - No Signup",
-		description: "Generate creative and catchy names for your brand or startup. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/business-name-generator/",
+		title: "Free Business Name Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Business Name Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
+		url: "https://sopkit.github.io/business-name-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Business Name Generator Online Free - Fast & Secure",
-		description: "Generate creative and catchy names for your brand or startup. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Business Name Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Business Name Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

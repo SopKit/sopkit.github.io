@@ -4,24 +4,24 @@ import InstagramDownloader from "@/components/tools/downloaders/InstagramDownloa
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Save Ig Content Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Save Ig Content online. High-speed downloading with no signup needed. 100% free and secure.",
+	title: "Free Save Instagram Content Online - No Signup | SopKit",
+	description: "Download, convert, and edit video files instantly with our free Save Instagram Content online. Fast, secure, and private processing with no signup. Easy to use.",
 	keywords: "save ig content, free online tool, no signup, save-ig-content, free save-ig-content, Save Ig Content online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/save-ig-content/",
+		canonical: "https://sopkit.github.io/save-ig-content",
 	},
 	openGraph: {
-		title: "Free Save Ig Content Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Save Ig Content online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://sopkit.github.io/save-ig-content/",
+		title: "Free Save Instagram Content Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Save Instagram Content online. Fast, secure, and private processing with no signup. Easy to use.",
+		url: "https://sopkit.github.io/save-ig-content",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Save Ig Content Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Save Ig Content online. High-speed downloading with no signup needed. 100% free and secure.",
+		title: "Free Save Instagram Content Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Save Instagram Content online. Fast, secure, and private processing with no signup. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,24 +4,24 @@ import TikTokMP3Converter from "@/components/tools/downloaders/TikTokMP3Converte
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Modify Mp3 File Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Modify Mp3 File online. High-speed downloading with no signup needed. 100% free and secure.",
+	title: "Free Modify MP3 File Online - No Signup | SopKit",
+	description: "Process, edit, and convert audio files with our free Modify MP3 File online. High-quality output and private browser-based tools with no signup. Free & secure.",
 	keywords: "modify mp3 file, free online tool, no signup, modify-mp3-file, free modify-mp3-file, Modify Mp3 File online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/modify-mp3-file/",
+		canonical: "https://sopkit.github.io/modify-mp3-file",
 	},
 	openGraph: {
-		title: "Free Modify Mp3 File Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Modify Mp3 File online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://sopkit.github.io/modify-mp3-file/",
+		title: "Free Modify MP3 File Online - No Signup | SopKit",
+		description: "Process, edit, and convert audio files with our free Modify MP3 File online. High-quality output and private browser-based tools with no signup. Free & secure.",
+		url: "https://sopkit.github.io/modify-mp3-file",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Modify Mp3 File Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Modify Mp3 File online. High-speed downloading with no signup needed. 100% free and secure.",
+		title: "Free Modify MP3 File Online - No Signup | SopKit",
+		description: "Process, edit, and convert audio files with our free Modify MP3 File online. High-quality output and private browser-based tools with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -5,15 +5,15 @@ import InvoiceGenerator from "@/components/tools/generators/InvoiceGenerator";
 
 export const metadata = {
 	title: "Free Simple Invoice Generator Online - No Signup | SopKit",
-	description: "Create and print professional billing invoices online. Add custom line items, tax, discount details, and generate print-ready PDF layouts instantly.",
+	description: "Create custom content with our free Simple Invoice Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
 	keywords: "simple-invoice-generator, Simple Invoice Generator",
 	alternates: {
-		canonical: "https://sopkit.github.io/simple-invoice-generator/",
+		canonical: "https://sopkit.github.io/simple-invoice-generator",
 	},
 	openGraph: {
 		title: "Free Simple Invoice Generator Online - No Signup | SopKit",
-		description: "Create and print professional billing invoices online. Add custom line items, tax, discount details, and generate print-ready PDF layouts instantly.",
-		url: "https://sopkit.github.io/simple-invoice-generator/",
+		description: "Create custom content with our free Simple Invoice Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
+		url: "https://sopkit.github.io/simple-invoice-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Simple Invoice Generator Online - No Signup | SopKit",
-		description: "Create and print professional billing invoices online. Add custom line items, tax, discount details, and generate print-ready PDF layouts instantly.",
+		description: "Create custom content with our free Simple Invoice Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

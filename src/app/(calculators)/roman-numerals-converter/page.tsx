@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Roman Numerals Converter Online Free | SopKit",
-	description: "Convert numbers to Roman numerals and vice versa instantly. Supports large numbers and historical formats. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Roman Numerals Converter Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Roman Numerals Converter online. Quick, accurate browser calculator with no registration.",
+	keywords: "roman numerals converter, free online tool, no signup, roman numerals converter online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/roman-numerals-converter/",
+		canonical: "https://sopkit.github.io/roman-numerals-converter",
 	},
 	openGraph: {
-		title: "Roman Numerals Converter Online Free - No Signup | SopKit",
-		description: "Convert numbers to Roman numerals and vice versa instantly. Supports large numbers and historical formats. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/roman-numerals-converter/",
+		title: "Free Roman Numerals Converter Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Roman Numerals Converter online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/roman-numerals-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Roman Numerals Converter Online Free - Fast & Secure",
-		description: "Convert numbers to Roman numerals and vice versa instantly. Supports large numbers and historical formats. No signup, no uploads, 100% private browser-based too",
+		title: "Free Roman Numerals Converter Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Roman Numerals Converter online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

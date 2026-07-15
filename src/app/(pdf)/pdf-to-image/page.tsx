@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import PDFToImage from "@/components/tools/pdf/PDFToImage";
 
 export const metadata = {
-	title: "PDF to Image Online Free - Edit, Merge & Convert PDF | SopKit",
-	description: "Convert PDF pages to high-quality JPG, PNG images No signup, no uploads, 100% private browser-based tool.",
+	title: "Free PDF to Image Online - No Signup | SopKit",
+	description: "Manage, convert, edit, and secure PDF documents with our free PDF to Image online. Safe and private browser-based tool with no registration. No signup required.",
+	keywords: "pdf to image, free online tool, no signup, pdf to image online, pdf, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-to-image/",
+		canonical: "https://sopkit.github.io/pdf-to-image",
 	},
 	openGraph: {
-		title: "PDF to Image Online Free - No Signup",
-		description: "Convert PDF pages to high-quality JPG, PNG images No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/pdf-to-image/",
+		title: "Free PDF to Image Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF to Image online. Safe and private browser-based tool with no registration. No signup required.",
+		url: "https://sopkit.github.io/pdf-to-image",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "PDF to Image Online Free - Fast & Secure",
-		description: "Convert PDF pages to high-quality JPG, PNG images No signup, no uploads, 100% private browser-based tool.",
+		title: "Free PDF to Image Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF to Image online. Safe and private browser-based tool with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

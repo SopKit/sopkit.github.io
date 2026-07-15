@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Resize and compress files with our free Form Image Size Checker online. Safe and private browser utility for government exam portal applications. Free & secure.",
 	keywords: "form-image-size-checker, Form Image Size Checker, check image size online, photo dimension checker, exam photo validator, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/form-image-size-checker/",
+		canonical: "https://sopkit.github.io/form-image-size-checker",
 	},
 	openGraph: {
 		title: "Free Form Image Size Checker Online - No Signup | SopKit",
 		description: "Resize and compress files with our free Form Image Size Checker online. Safe and private browser utility for government exam portal applications. Free & secure.",
-		url: "https://sopkit.github.io/form-image-size-checker/",
+		url: "https://sopkit.github.io/form-image-size-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

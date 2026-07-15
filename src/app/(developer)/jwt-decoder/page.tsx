@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "JWT Decoder & Debugger Online Free | SopKit",
-	description: "Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JWT Decoder & Debugger Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JWT Decoder & Debugger online. Secure, local developer utility with no registration.",
+	keywords: "jwt decoder & debugger, free online tool, no signup, jwt decoder & debugger online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/jwt-decoder/",
+		canonical: "https://sopkit.github.io/jwt-decoder",
 	},
 	openGraph: {
-		title: "JWT Decoder & Debugger Online Free - No Signup | SopKit",
-		description: "Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/jwt-decoder/",
+		title: "Free JWT Decoder & Debugger Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JWT Decoder & Debugger online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/jwt-decoder",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JWT Decoder & Debugger Online Free - Fast & Secure",
-		description: "Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free JWT Decoder & Debugger Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JWT Decoder & Debugger online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "YouTube Hashtag Generator Online Free - No Signup | SopKit",
-	description: "Generate viral hashtags for your YouTube videos instantly. Our free online tool suggests relevant, search-friendly tags to help you reach more viewers and boost engagement. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Hashtag Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Hashtag Generator online. Fast, secure browser-based utility with no registration. Free & secure.",
+	keywords: "youtube hashtag generator, free online tool, no signup, youtube hashtag generator online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-hashtag-generator/",
+		canonical: "https://sopkit.github.io/youtube-hashtag-generator",
 	},
 	openGraph: {
-		title: "YouTube Hashtag Generator Online Free - No Signup",
-		description: "Generate viral hashtags for your YouTube videos instantly. Our free online tool suggests relevant, search-friendly tags to help you reach more viewers and boost",
-		url: "https://sopkit.github.io/youtube-hashtag-generator/",
+		title: "Free YouTube Hashtag Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Hashtag Generator online. Fast, secure browser-based utility with no registration. Free & secure.",
+		url: "https://sopkit.github.io/youtube-hashtag-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Hashtag Generator Online Free - Fast & Secure",
-		description: "Generate viral hashtags for your YouTube videos instantly. Our free online tool suggests relevant, search-friendly tags to help you reach more viewers and boost",
+		title: "Free YouTube Hashtag Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Hashtag Generator online. Fast, secure browser-based utility with no registration. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

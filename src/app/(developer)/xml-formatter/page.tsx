@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "XML Formatter & Beautifier Online Free | SopKit",
-	description: "Clean and format messy XML data into a readable hierarchical structure. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free XML Formatter & Beautifier Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free XML Formatter & Beautifier online. Secure, local developer utility with no registration.",
+	keywords: "xml formatter & beautifier, free online tool, no signup, xml formatter & beautifier online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/xml-formatter/",
+		canonical: "https://sopkit.github.io/xml-formatter",
 	},
 	openGraph: {
-		title: "XML Formatter & Beautifier Online Free - No Signup | SopKit",
-		description: "Clean and format messy XML data into a readable hierarchical structure. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/xml-formatter/",
+		title: "Free XML Formatter & Beautifier Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free XML Formatter & Beautifier online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/xml-formatter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "XML Formatter & Beautifier Online Free - Fast & Secure",
-		description: "Clean and format messy XML data into a readable hierarchical structure. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free XML Formatter & Beautifier Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free XML Formatter & Beautifier online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Payment Reminder Generator - Free Online Tool | SopKit",
-	description: "Generate optimized payment reminder generator details. Instantly copy or share customized outputs.",
+	title: "Free Payment Reminder Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Payment Reminder Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
 	keywords: "payment reminder generator, payment-reminder-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/payment-reminder-generator/",
+		canonical: "https://sopkit.github.io/payment-reminder-generator",
 	},
 	openGraph: {
-		title: "Payment Reminder Generator - Free Online Tool | SopKit",
-		description: "Generate optimized payment reminder generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/payment-reminder-generator/",
+		title: "Free Payment Reminder Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Payment Reminder Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
+		url: "https://sopkit.github.io/payment-reminder-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Payment Reminder Generator - Free Online Tool | SopKit",
-		description: "Generate optimized payment reminder generator details. Instantly copy or share customized outputs.",
+		title: "Free Payment Reminder Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Payment Reminder Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

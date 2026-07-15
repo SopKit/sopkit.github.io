@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "ASCII to Text Converter Online Free - Developer Tools | SopKit",
-	description: "Convert ASCII character codes back to readable text instantly. Our free online tool makes it easy to decode ASCII sequences for development and debugging tasks. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free ASCII to Text Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free ASCII to Text Converter online. Secure, local developer utility with no registration.",
+	keywords: "ascii to text converter, free online tool, no signup, ascii to text converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ascii-to-text-converter/",
+		canonical: "https://sopkit.github.io/ascii-to-text-converter",
 	},
 	openGraph: {
-		title: "ASCII to Text Converter Online Free - No Signup",
-		description: "Convert ASCII character codes back to readable text instantly. Our free online tool makes it easy to decode ASCII sequences for development and debugging tasks.",
-		url: "https://sopkit.github.io/ascii-to-text-converter/",
+		title: "Free ASCII to Text Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free ASCII to Text Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/ascii-to-text-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "ASCII to Text Converter Online Free - Fast & Secure",
-		description: "Convert ASCII character codes back to readable text instantly. Our free online tool makes it easy to decode ASCII sequences for development and debugging tasks.",
+		title: "Free ASCII to Text Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free ASCII to Text Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

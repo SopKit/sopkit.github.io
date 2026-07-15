@@ -3,24 +3,24 @@ import Fragment from "react";
 
 
 export const metadata = {
-	title: "Best Free ChatGPT Alternatives for Daily Tasks | SopKit",
-	description: "Looking for a free ChatGPT alternative? Build a focused digital workflow for writing, coding, and image generation using our top free online tools.",
+	title: "Free Best Free Alternative to ChatGPT for Daily Tasks Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Best Free Alternative to ChatGPT for Daily Tasks online. Fast, secure browser-based utility with no reg...",
 	keywords: "best free alternative to chatgpt for daily tasks, best free alternative to chatgpt for daily tasks guide, SopKit, best-free-alternative-to-chatgpt, best free alternative to chatgpt, free best-free-alternative-to-chatgpt, best free alternative to chatgpt online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/best-free-alternative-to-chatgpt/",
+		canonical: "https://sopkit.github.io/best-free-alternative-to-chatgpt",
 	},
 	openGraph: {
-		title: "Best Free ChatGPT Alternatives for Daily Tasks | SopKit",
-		description: "Looking for a free ChatGPT alternative? Build a focused digital workflow for writing, coding, and image generation using our top free online tools.",
-		url: "https://sopkit.github.io/best-free-alternative-to-chatgpt/",
+		title: "Free Best Free Alternative to ChatGPT for Daily Tasks Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Best Free Alternative to ChatGPT for Daily Tasks online. Fast, secure browser-based utility with no reg...",
+		url: "https://sopkit.github.io/best-free-alternative-to-chatgpt",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Best Free ChatGPT Alternatives for Daily Tasks | SopKit",
-		description: "Looking for a free ChatGPT alternative? Build a focused digital workflow for writing, coding, and image generation using our top free online tools.",
+		title: "Free Best Free Alternative to ChatGPT for Daily Tasks Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Best Free Alternative to ChatGPT for Daily Tasks online. Fast, secure browser-based utility with no reg...",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

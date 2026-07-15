@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "CPM Calculator Online Free - No Signup | SopKit",
-	description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach efficiency. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free CPM Calculator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free CPM Calculator online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+	keywords: "cpm calculator, free online tool, no signup, cpm calculator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/cpm-calculator/",
+		canonical: "https://sopkit.github.io/cpm-calculator",
 	},
 	openGraph: {
-		title: "CPM Calculator Online Free - No Signup",
-		description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach e",
-		url: "https://sopkit.github.io/cpm-calculator/",
+		title: "Free CPM Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free CPM Calculator online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/cpm-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "CPM Calculator Online Free - Fast & Secure",
-		description: "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach e",
+		title: "Free CPM Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free CPM Calculator online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

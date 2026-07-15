@@ -5,15 +5,15 @@ import ConstructionCalculator from "@/components/tools/calculators/ConstructionC
 
 export const metadata = {
 	title: "Free Brick Calculator Online - No Signup | SopKit",
-	description: "Calculate the total number of bricks, cement bags, and sand volume required for building a wall.",
+	description: "Free online calculator to find bricks, cement, and sand required for construction. Quick & easy brick calculator with precise material estimation for walls, pillars, and slabs. No signup needed.",
 	keywords: "brick-calculator, Brick Calculator, bricks needed for wall, cement sand calculator, construction calculator, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/brick-calculator/",
+		canonical: "https://sopkit.github.io/brick-calculator",
 	},
 	openGraph: {
 		title: "Free Brick Calculator Online - No Signup | SopKit",
-		description: "Calculate the total number of bricks, cement bags, and sand volume required for building a wall.",
-		url: "https://sopkit.github.io/brick-calculator/",
+		description: "Compute rates, taxes, averages, and conversions with our free Brick Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
+		url: "https://sopkit.github.io/brick-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Brick Calculator Online - No Signup | SopKit",
-		description: "Calculate the total number of bricks, cement bags, and sand volume required for building a wall.",
+		description: "Compute rates, taxes, averages, and conversions with our free Brick Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

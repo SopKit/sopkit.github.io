@@ -5,15 +5,15 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Downloaders Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Downloaders online. High-speed downloading with no signup needed. 100% free and easy to use.",
+	description: "Download, convert, and edit video files instantly with our free Downloaders online. Fast, secure, and private processing with no signup. No registration needed.",
 	keywords: "downloaders, free online tool, no signup, free downloaders, Downloaders online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/downloaders/",
+		canonical: "https://sopkit.github.io/downloaders",
 	},
 	openGraph: {
 		title: "Free Downloaders Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Downloaders online. High-speed downloading with no signup needed. 100% free and easy to use.",
-		url: "https://sopkit.github.io/downloaders/",
+		description: "Download, convert, and edit video files instantly with our free Downloaders online. Fast, secure, and private processing with no signup. No registration needed.",
+		url: "https://sopkit.github.io/downloaders",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Downloaders Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Downloaders online. High-speed downloading with no signup needed. 100% free and easy to use.",
+		description: "Download, convert, and edit video files instantly with our free Downloaders online. Fast, secure, and private processing with no signup. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

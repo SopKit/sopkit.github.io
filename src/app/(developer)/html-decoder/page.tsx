@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 
 export const metadata = {
-	title: "HTML Decoder Online Free - Developer Tools | SopKit",
-	description: "Decode HTML entities back to their original characters instantly. Our free online tool converts &amp; and similar entities into readable text for easy debugging and content cleaning. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free HTML Decoder Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free HTML Decoder online. Secure, local developer utility with no registration. No signup required.",
+	keywords: "html decoder, free online tool, no signup, html decoder online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-decoder/",
+		canonical: "https://sopkit.github.io/html-decoder",
 	},
 	openGraph: {
-		title: "HTML Decoder Online Free - No Signup",
-		description: "Decode HTML entities back to their original characters instantly. Our free online tool converts &amp; and similar entities into readable text for easy debugging",
-		url: "https://sopkit.github.io/html-decoder/",
+		title: "Free HTML Decoder Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free HTML Decoder online. Secure, local developer utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/html-decoder",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "HTML Decoder Online Free - Fast & Secure",
-		description: "Decode HTML entities back to their original characters instantly. Our free online tool converts &amp; and similar entities into readable text for easy debugging",
+		title: "Free HTML Decoder Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free HTML Decoder online. Secure, local developer utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

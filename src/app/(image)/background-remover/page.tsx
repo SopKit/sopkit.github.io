@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BackgroundRemoverTool from "@/components/tools/image/BackgroundRemoverTool";
 
 export const metadata = {
-	title: "Background Remover Online Free - Compress & Convert Images | SopKit",
-	description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no signup needed. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Background Remover Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Background Remover online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+	keywords: "background remover, free online tool, no signup, background remover online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/background-remover/",
+		canonical: "https://sopkit.github.io/background-remover",
 	},
 	openGraph: {
-		title: "Background Remover Online Free - No Signup",
-		description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no s",
-		url: "https://sopkit.github.io/background-remover/",
+		title: "Free Background Remover Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Background Remover online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/background-remover",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Background Remover Online Free - Fast & Secure",
-		description: "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no s",
+		title: "Free Background Remover Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Background Remover online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

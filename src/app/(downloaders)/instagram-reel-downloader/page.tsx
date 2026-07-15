@@ -5,15 +5,15 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Instagram Reel Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Instagram Reel Downloader online. High-speed downloading with no signup needed. Easy to use.",
+	description: "Download, convert, and edit video files instantly with our free Instagram Reel Downloader online. Fast, secure, and private processing with no signup.",
 	keywords: "instagram reel downloader, download reels, instagram reels saver, reel video downloader, free tool, SopKit, instagram-reel-downloader, free instagram-reel-downloader, instagram reel downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/instagram-reel-downloader/",
+		canonical: "https://sopkit.github.io/instagram-reel-downloader",
 	},
 	openGraph: {
 		title: "Free Instagram Reel Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Instagram Reel Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://sopkit.github.io/instagram-reel-downloader/",
+		description: "Download, convert, and edit video files instantly with our free Instagram Reel Downloader online. Fast, secure, and private processing with no signup.",
+		url: "https://sopkit.github.io/instagram-reel-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Instagram Reel Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Instagram Reel Downloader online. High-speed downloading with no signup needed. Easy to use.",
+		description: "Download, convert, and edit video files instantly with our free Instagram Reel Downloader online. Fast, secure, and private processing with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

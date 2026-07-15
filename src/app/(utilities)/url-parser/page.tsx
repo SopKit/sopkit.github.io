@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import UrlParserTool from "@/components/tools/built-ins/UrlParserTool";
 
 export const metadata = {
-	title: "URL Parser Online Free - No Signup | SopKit",
-	description: "Free url parser tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free URL Parser Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free URL Parser online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+	keywords: "url parser, free online tool, no signup, url parser online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-parser/",
+		canonical: "https://sopkit.github.io/url-parser",
 	},
 	openGraph: {
-		title: "URL Parser Online Free - No Signup",
-		description: "Free url parser tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/url-parser/",
+		title: "Free URL Parser Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free URL Parser online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/url-parser",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "URL Parser Online Free - Fast & Secure",
-		description: "Free url parser tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free URL Parser Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free URL Parser online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

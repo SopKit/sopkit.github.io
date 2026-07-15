@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Format, clean, sort, and analyze text files instantly with our free Kruti Dev to Unicode Converter online. Fast and private browser utility with no signup.",
 	keywords: "kruti-dev-to-unicode, Kruti Dev to Unicode, kruti dev to unicode hindi, unicode to kruti dev, hinglish to hindi transliterate, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/kruti-dev-to-unicode/",
+		canonical: "https://sopkit.github.io/kruti-dev-to-unicode",
 	},
 	openGraph: {
 		title: "Free Kruti Dev to Unicode Converter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Kruti Dev to Unicode Converter online. Fast and private browser utility with no signup.",
-		url: "https://sopkit.github.io/kruti-dev-to-unicode/",
+		url: "https://sopkit.github.io/kruti-dev-to-unicode",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

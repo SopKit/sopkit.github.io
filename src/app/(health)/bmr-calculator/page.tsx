@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "BMR Calculator (Basal Metabolic Rate) Online Free | SopKit",
-	description: "Calculate your Basal Metabolic Rate (BMR) to understand how many calories your body burns at rest. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free BMR Calculator (Basal Metabolic Rate) Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free BMR Calculator (Basal Metabolic Rate) online. Fast, secure browser-based utility with no registration.",
+	keywords: "bmr calculator (basal metabolic rate), free online tool, no signup, bmr calculator (basal metabolic rate) online, health, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/bmr-calculator/",
+		canonical: "https://sopkit.github.io/bmr-calculator",
 	},
 	openGraph: {
-		title: "BMR Calculator (Basal Metabolic Rate) Online Free - No Signup | SopKit",
-		description: "Calculate your Basal Metabolic Rate (BMR) to understand how many calories your body burns at rest. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/bmr-calculator/",
+		title: "Free BMR Calculator (Basal Metabolic Rate) Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free BMR Calculator (Basal Metabolic Rate) online. Fast, secure browser-based utility with no registration.",
+		url: "https://sopkit.github.io/bmr-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "BMR Calculator (Basal Metabolic Rate) Online Free - Fast & Secure",
-		description: "Calculate your Basal Metabolic Rate (BMR) to understand how many calories your body burns at rest. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free BMR Calculator (Basal Metabolic Rate) Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free BMR Calculator (Basal Metabolic Rate) online. Fast, secure browser-based utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

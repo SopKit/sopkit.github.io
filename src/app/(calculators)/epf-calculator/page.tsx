@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "EPF Calculator (Employee Provident Fund) Free | SopKit",
-	description: "Calculate your EPF maturity amount based on your basic salary, monthly contribution, and current interest rate. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free EPF Calculator (Employee Provident Fund) Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free EPF Calculator (Employee Provident Fund) online. Quick, accurate browser calculator with no reg...",
+	keywords: "epf calculator (employee provident fund), free online tool, no signup, epf calculator (employee provident fund) online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/epf-calculator/",
+		canonical: "https://sopkit.github.io/epf-calculator",
 	},
 	openGraph: {
-		title: "EPF Calculator (Employee Provident Fund) Online Free - No Signup | SopKit",
-		description: "Calculate your EPF maturity amount based on your basic salary, monthly contribution, and current interest rate. No signup, no uploads, 100% private browser-base",
-		url: "https://sopkit.github.io/epf-calculator/",
+		title: "Free EPF Calculator (Employee Provident Fund) Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free EPF Calculator (Employee Provident Fund) online. Quick, accurate browser calculator with no reg...",
+		url: "https://sopkit.github.io/epf-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "EPF Calculator (Employee Provident Fund) Online Free - Fast & Secure",
-		description: "Calculate your EPF maturity amount based on your basic salary, monthly contribution, and current interest rate. No signup, no uploads, 100% private browser-base",
+		title: "Free EPF Calculator (Employee Provident Fund) Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free EPF Calculator (Employee Provident Fund) online. Quick, accurate browser calculator with no reg...",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

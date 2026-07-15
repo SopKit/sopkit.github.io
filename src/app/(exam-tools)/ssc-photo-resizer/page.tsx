@@ -17,27 +17,27 @@ const relatedToolIds = [
 ];
 
 export const metadata = {
-  title: "SSC Photo Resizer - Resize Photo and Signature for SSC Forms | SopKit",
-  description:
-    "Resize and compress SSC photos to 350x450 pixels and 20KB-50KB, plus resize signature to 10KB-20KB directly in your browser. Free, private, no signup.",
-  alternates: { canonical: "https://sopkit.github.io/ssc-photo-resizer/" },
-  openGraph: {
-    title: "SSC Photo Resizer - Resize Photo and Signature for SSC Forms | SopKit",
-    description:
-      "Resize SSC photos to 350x450 pixels and 20KB-50KB, and signatures to the required 10KB-20KB band for SSC CGL, CHSL, MTS and other SSC online forms.",
-    url: "https://sopkit.github.io/ssc-photo-resizer/",
-    siteName: "SopKit",
-    images: [{ url: "/og-image.jpg" }],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "SSC Photo Resizer - Resize Photo and Signature for SSC Forms | SopKit",
-    description:
-      "Resize SSC photos to 350x450 pixels and 20KB-50KB, and signatures to 10KB-20KB. Works in the browser with no signup.",
-    images: ["/og-image.jpg"],
-  },
-  robots: { index: true, follow: true },
+	title: "Free SSC Photo Resizer Online - No Signup | SopKit",
+	description: "Resize and compress files with our free SSC Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
+	keywords: "ssc photo resizer, free online tool, no signup, ssc photo resizer online, exam-tools, SopKit",
+	alternates: {
+		canonical: "https://sopkit.github.io/ssc-photo-resizer",
+	},
+	openGraph: {
+		title: "Free SSC Photo Resizer Online - No Signup | SopKit",
+		description: "Resize and compress files with our free SSC Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
+		url: "https://sopkit.github.io/ssc-photo-resizer",
+		siteName: "SopKit",
+		images: [{ url: "/og-image.jpg" }],
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Free SSC Photo Resizer Online - No Signup | SopKit",
+		description: "Resize and compress files with our free SSC Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
+		images: ["/og-image.jpg"],
+	},
+	robots: { index: true, follow: true },
 };
 
 export default async function ToolPage() {

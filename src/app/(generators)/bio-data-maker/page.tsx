@@ -5,15 +5,15 @@ import BioDataMaker from "@/components/tools/generators/BioDataMaker";
 
 export const metadata = {
 	title: "Free Bio Data Maker Online - No Signup | SopKit",
-	description: "Create beautiful marriage biodata sheets or professional resumes. Upload photos, input family or job details, and print a custom layout.",
+	description: "Create custom content with our free Bio Data Maker online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 	keywords: "bio-data-maker, Bio Data Maker",
 	alternates: {
-		canonical: "https://sopkit.github.io/bio-data-maker/",
+		canonical: "https://sopkit.github.io/bio-data-maker",
 	},
 	openGraph: {
 		title: "Free Bio Data Maker Online - No Signup | SopKit",
-		description: "Create beautiful marriage biodata sheets or professional resumes. Upload photos, input family or job details, and print a custom layout.",
-		url: "https://sopkit.github.io/bio-data-maker/",
+		description: "Create custom content with our free Bio Data Maker online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/bio-data-maker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Bio Data Maker Online - No Signup | SopKit",
-		description: "Create beautiful marriage biodata sheets or professional resumes. Upload photos, input family or job details, and print a custom layout.",
+		description: "Create custom content with our free Bio Data Maker online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

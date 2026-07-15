@@ -9,22 +9,23 @@ import { Music, ArrowRight, Sparkles } from "lucide-react";
 
 export const metadata = {
 	title: "Free Audio Tools Online - No Signup | SopKit",
-	description: "Compress and convert audio files between formats. High-quality output and private browser-based tools with no signup.",
+	description: "Process, edit, and convert audio files with our free Audio Tools online. High-quality output and private browser-based tools with no signup. No signup required.",
+	keywords: "audio tools, free online tool, no signup, audio tools online, audio, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/audio-tools/",
+		canonical: "https://sopkit.github.io/audio-tools",
 	},
 	openGraph: {
 		title: "Free Audio Tools Online - No Signup | SopKit",
-		description: "Compress and convert audio files between formats. High-quality output and private browser-based tools with no signup.",
-		url: "https://sopkit.github.io/audio-tools/",
+		description: "Process, edit, and convert audio files with our free Audio Tools online. High-quality output and private browser-based tools with no signup. No signup required.",
+		url: "https://sopkit.github.io/audio-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Audio Tools Online - Fast & Secure",
-		description: "Compress and convert audio files between formats. High-quality output and private browser-based tools with no signup.",
+		title: "Free Audio Tools Online - No Signup | SopKit",
+		description: "Process, edit, and convert audio files with our free Audio Tools online. High-quality output and private browser-based tools with no signup. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

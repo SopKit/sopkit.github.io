@@ -14,24 +14,27 @@ const relatedToolIds = [
 ];
 
 export const metadata = {
-	title: "RRB Group D Photo Resizer - Resize Photo & Signature | SopKit",
-	description: "Free online RRB Group D photo resizer tool. Resize passport photos and signatures to match Indian Railways requirements. Browser-based, private, and fast.",
-	alternates: { canonical: "https://sopkit.github.io/rrb-group-d-photo-resizer/" },
+	title: "Free RRB Group D Photo Resizer Online - No Signup | SopKit",
+	description: "Resize and compress files with our free RRB Group D Photo Resizer online. Safe and private browser utility for government exam portal applications. Easy to use.",
+	keywords: "rrb group d photo resizer, free online tool, no signup, rrb group d photo resizer online, exam-tools, SopKit",
+	alternates: {
+		canonical: "https://sopkit.github.io/rrb-group-d-photo-resizer",
+	},
 	openGraph: {
-		title: "RRB Group D Photo Resizer - Resize Photo & Signature | SopKit",
-		description: "Resize and compress your passport photo and signature to meet the official RRB Group D / Railway exam application specifications.",
-		url: "https://sopkit.github.io/rrb-group-d-photo-resizer/",
+		title: "Free RRB Group D Photo Resizer Online - No Signup | SopKit",
+		description: "Resize and compress files with our free RRB Group D Photo Resizer online. Safe and private browser utility for government exam portal applications. Easy to use.",
+		url: "https://sopkit.github.io/rrb-group-d-photo-resizer",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
-		type: "website"
+		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "RRB Group D Photo Resizer - Resize Photo & Signature | SopKit",
-		description: "Free browser-based photo resizer for Railway RRB Group D forms. Private, quick, and meets all official criteria.",
-		images: ["/og-image.jpg"]
+		title: "Free RRB Group D Photo Resizer Online - No Signup | SopKit",
+		description: "Resize and compress files with our free RRB Group D Photo Resizer online. Safe and private browser utility for government exam portal applications. Easy to use.",
+		images: ["/og-image.jpg"],
 	},
-	robots: { index: true, follow: true }
+	robots: { index: true, follow: true },
 };
 
 export default async function RrbGroupDResizerPage() {

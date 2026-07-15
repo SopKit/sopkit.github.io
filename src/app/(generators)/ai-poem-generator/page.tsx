@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import TextGeneratorTool from "@/components/tools/generators/TextGeneratorTool";
 
 export const metadata = {
-	title: "AI Poem Generator Online Free - No Signup | SopKit",
-	description: "Create beautiful poems, haikus, and rhymes using artificial intelligence. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free AI Poem Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free AI Poem Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+	keywords: "ai poem generator, free online tool, no signup, ai poem generator online, generators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ai-poem-generator/",
+		canonical: "https://sopkit.github.io/ai-poem-generator",
 	},
 	openGraph: {
-		title: "AI Poem Generator Online Free - No Signup",
-		description: "Create beautiful poems, haikus, and rhymes using artificial intelligence. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/ai-poem-generator/",
+		title: "Free AI Poem Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free AI Poem Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/ai-poem-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "AI Poem Generator Online Free - Fast & Secure",
-		description: "Create beautiful poems, haikus, and rhymes using artificial intelligence. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free AI Poem Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free AI Poem Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

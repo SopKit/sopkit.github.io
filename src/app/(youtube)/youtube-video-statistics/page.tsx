@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "YouTube Video Statistics Online Free - No Signup | SopKit",
-	description: "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Video Statistics Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Video Statistics online. Fast, secure browser-based utility with no registration. Try it free now.",
+	keywords: "youtube video statistics, free online tool, no signup, youtube video statistics online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-video-statistics/",
+		canonical: "https://sopkit.github.io/youtube-video-statistics",
 	},
 	openGraph: {
-		title: "YouTube Video Statistics Online Free - No Signup",
-		description: "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool. No ",
-		url: "https://sopkit.github.io/youtube-video-statistics/",
+		title: "Free YouTube Video Statistics Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Video Statistics online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/youtube-video-statistics",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Video Statistics Online Free - Fast & Secure",
-		description: "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool. No ",
+		title: "Free YouTube Video Statistics Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Video Statistics online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

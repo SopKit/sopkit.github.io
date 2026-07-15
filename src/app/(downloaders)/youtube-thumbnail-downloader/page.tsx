@@ -4,24 +4,24 @@ import YoutubeThumbnailDownloader from "@/components/tools/downloaders/YoutubeTh
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Thumbnail Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free YouTube Thumbnail Downloader online. High-speed downloading with no signup needed.",
+	title: "Free Youtube Thumbnail Downloader Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Youtube Thumbnail Downloader online. Fast, secure browser-based utility with no registration. Easy to use.",
 	keywords: "youtube thumbnail downloader, download youtube thumbnails, video thumbnail grabber, free tool, SopKit, youtube-thumbnail-downloader, free youtube-thumbnail-downloader, youtube thumbnail downloader online, online downloader, free media saver, video downloader, url downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-thumbnail-downloader/",
+		canonical: "https://sopkit.github.io/youtube-thumbnail-downloader",
 	},
 	openGraph: {
-		title: "Free YouTube Thumbnail Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free YouTube Thumbnail Downloader online. High-speed downloading with no signup needed.",
-		url: "https://sopkit.github.io/youtube-thumbnail-downloader/",
+		title: "Free Youtube Thumbnail Downloader Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Youtube Thumbnail Downloader online. Fast, secure browser-based utility with no registration. Easy to use.",
+		url: "https://sopkit.github.io/youtube-thumbnail-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Thumbnail Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free YouTube Thumbnail Downloader online. High-speed downloading with no signup needed.",
+		title: "Free Youtube Thumbnail Downloader Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Youtube Thumbnail Downloader online. Fast, secure browser-based utility with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

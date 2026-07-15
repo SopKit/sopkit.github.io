@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Food Cost Calculator - Free Online Tool | SopKit",
-	description: "Calculate your food cost calculator instantly. Free browser-based calculator with detailed breakdowns.",
+	title: "Free Food Cost Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Food Cost Calculator online. Quick, accurate browser calculator with no registration. Easy to use.",
 	keywords: "food cost calculator, food-cost-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/food-cost-calculator/",
+		canonical: "https://sopkit.github.io/food-cost-calculator",
 	},
 	openGraph: {
-		title: "Food Cost Calculator - Free Online Tool | SopKit",
-		description: "Calculate your food cost calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/food-cost-calculator/",
+		title: "Free Food Cost Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Food Cost Calculator online. Quick, accurate browser calculator with no registration. Easy to use.",
+		url: "https://sopkit.github.io/food-cost-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Food Cost Calculator - Free Online Tool | SopKit",
-		description: "Calculate your food cost calculator instantly. Free browser-based calculator with detailed breakdowns.",
+		title: "Free Food Cost Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Food Cost Calculator online. Quick, accurate browser calculator with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

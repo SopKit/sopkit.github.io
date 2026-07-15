@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Text to HEX Converter Online Free - Developer Tools | SopKit",
-	description: "Convert plain text into hexadecimal format instantly. Our free online tool provides a clean hex representation of your input string for development and data analysis. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Text to HEX Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free Text to HEX Converter online. Secure, local developer utility with no registration. 100% free.",
+	keywords: "text to hex converter, free online tool, no signup, text to hex converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-hex-converter/",
+		canonical: "https://sopkit.github.io/text-to-hex-converter",
 	},
 	openGraph: {
-		title: "Text to HEX Converter Online Free - No Signup",
-		description: "Convert plain text into hexadecimal format instantly. Our free online tool provides a clean hex representation of your input string for development and data ana",
-		url: "https://sopkit.github.io/text-to-hex-converter/",
+		title: "Free Text to HEX Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Text to HEX Converter online. Secure, local developer utility with no registration. 100% free.",
+		url: "https://sopkit.github.io/text-to-hex-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Text to HEX Converter Online Free - Fast & Secure",
-		description: "Convert plain text into hexadecimal format instantly. Our free online tool provides a clean hex representation of your input string for development and data ana",
+		title: "Free Text to HEX Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Text to HEX Converter online. Secure, local developer utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

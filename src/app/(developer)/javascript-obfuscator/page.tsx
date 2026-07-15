@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 
 export const metadata = {
-	title: "JavaScript Obfuscator Online Free - Developer Tools | SopKit",
-	description: "Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent unauthorized script modification. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JavaScript Obfuscator Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JavaScript Obfuscator online. Secure, local developer utility with no registration. 100% free.",
+	keywords: "javascript obfuscator, free online tool, no signup, javascript obfuscator online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/javascript-obfuscator/",
+		canonical: "https://sopkit.github.io/javascript-obfuscator",
 	},
 	openGraph: {
-		title: "JavaScript Obfuscator Online Free - No Signup",
-		description: "Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent",
-		url: "https://sopkit.github.io/javascript-obfuscator/",
+		title: "Free JavaScript Obfuscator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JavaScript Obfuscator online. Secure, local developer utility with no registration. 100% free.",
+		url: "https://sopkit.github.io/javascript-obfuscator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JavaScript Obfuscator Online Free - Fast & Secure",
-		description: "Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent",
+		title: "Free JavaScript Obfuscator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JavaScript Obfuscator online. Secure, local developer utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

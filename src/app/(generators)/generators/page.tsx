@@ -9,15 +9,15 @@ import { Sparkles, ArrowRight } from "lucide-react";
 
 export const metadata = {
 	title: "Free Fun Generators Online - No Signup | SopKit",
-	description: "Create viral content with AI-powered fun generators",
+	description: "Solve everyday digital tasks instantly using our free Fun Generators online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 	keywords: "ai generators, bio generator, name generator, fun tools, free online generators, SopKit, generators, free generators, generators online, online generator, free creator, content generator",
 	alternates: {
-		canonical: "https://sopkit.github.io/generators/",
+		canonical: "https://sopkit.github.io/generators",
 	},
 	openGraph: {
 		title: "Free Fun Generators Online - No Signup | SopKit",
-		description: "Create viral content with AI-powered fun generators",
-		url: "https://sopkit.github.io/generators/",
+		description: "Solve everyday digital tasks instantly using our free Fun Generators online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/generators",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -25,7 +25,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Fun Generators Online - No Signup | SopKit",
-		description: "Create viral content with AI-powered fun generators",
+		description: "Solve everyday digital tasks instantly using our free Fun Generators online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

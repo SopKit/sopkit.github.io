@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Discount Calculator Online Free - No Signup | SopKit",
-	description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Discount Calculator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Discount Calculator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "discount calculator, free online tool, no signup, discount calculator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/discount-calculator/",
+		canonical: "https://sopkit.github.io/discount-calculator",
 	},
 	openGraph: {
-		title: "Discount Calculator Online Free - No Signup",
-		description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping. No signup, no uplo",
-		url: "https://sopkit.github.io/discount-calculator/",
+		title: "Free Discount Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Discount Calculator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/discount-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Discount Calculator Online Free - Fast & Secure",
-		description: "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping. No signup, no uplo",
+		title: "Free Discount Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Discount Calculator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

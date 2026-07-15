@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "JPG to WebP Converter Online Free - Compress & Convert Images | SopKit",
-	description: "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your website instantly. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JPG to WebP Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free JPG to WebP Converter online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+	keywords: "jpg to webp converter, free online tool, no signup, jpg to webp converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/jpg-to-webp-converter/",
+		canonical: "https://sopkit.github.io/jpg-to-webp-converter",
 	},
 	openGraph: {
-		title: "JPG to WebP Converter Online Free - No Signup",
-		description: "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your webs",
-		url: "https://sopkit.github.io/jpg-to-webp-converter/",
+		title: "Free JPG to WebP Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free JPG to WebP Converter online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+		url: "https://sopkit.github.io/jpg-to-webp-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JPG to WebP Converter Online Free - Fast & Secure",
-		description: "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your webs",
+		title: "Free JPG to WebP Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free JPG to WebP Converter online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

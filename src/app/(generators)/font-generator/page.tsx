@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import FontGeneratorTool from "@/components/tools/generators/FontGeneratorTool";
 
 export const metadata = {
-	title: "Font Generator Online Free - No Signup | SopKit",
-	description: "Professional Font Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Font Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Font Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+	keywords: "font generator, free online tool, no signup, font generator online, generators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/font-generator/",
+		canonical: "https://sopkit.github.io/font-generator",
 	},
 	openGraph: {
-		title: "Font Generator Online Free - No Signup",
-		description: "Professional Font Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/font-generator/",
+		title: "Free Font Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Font Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/font-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Font Generator Online Free - Fast & Secure",
-		description: "Professional Font Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Font Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Font Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

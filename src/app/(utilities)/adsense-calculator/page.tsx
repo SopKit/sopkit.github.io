@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Adsense Calculator Online Free - No Signup | SopKit",
-	description: "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Adsense Calculator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Adsense Calculator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "adsense calculator, free online tool, no signup, adsense calculator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/adsense-calculator/",
+		canonical: "https://sopkit.github.io/adsense-calculator",
 	},
 	openGraph: {
-		title: "Adsense Calculator Online Free - No Signup",
-		description: "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/adsense-calculator/",
+		title: "Free Adsense Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Adsense Calculator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/adsense-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Adsense Calculator Online Free - Fast & Secure",
-		description: "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
+		title: "Free Adsense Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Adsense Calculator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,24 +4,24 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "BMI Calculator - Body Mass Index | SopKit",
-	description: "Calculate your Body Mass Index from height and weight and see your BMI category. Free, private BMI calculator that runs in your browser.",
+	title: "Free BMI Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free BMI Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 	keywords: "bmi calculator, body mass index calculator, bmi chart, healthy weight calculator, calculate bmi",
 	alternates: {
-		canonical: "https://sopkit.github.io/bmi-calculator/",
+		canonical: "https://sopkit.github.io/bmi-calculator",
 	},
 	openGraph: {
-		title: "BMI Calculator - Body Mass Index | SopKit",
-		description: "Calculate your Body Mass Index from height and weight and see your BMI category. Free, private BMI calculator that runs in your browser.",
-		url: "https://sopkit.github.io/bmi-calculator/",
+		title: "Free BMI Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free BMI Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
+		url: "https://sopkit.github.io/bmi-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "BMI Calculator - Body Mass Index | SopKit",
-		description: "Calculate your Body Mass Index from height and weight and see your BMI category. Free, private BMI calculator that runs in your browser.",
+		title: "Free BMI Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free BMI Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

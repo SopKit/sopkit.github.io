@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageToPDF from "@/components/tools/pdf/ImageToPDF";
 
 export const metadata = {
-	title: "Image to PDF Online Free - Edit, Merge & Convert PDF | SopKit",
-	description: "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Image to PDF Online - No Signup | SopKit",
+	description: "Manage, convert, edit, and secure PDF documents with our free Image to PDF online. Safe and private browser-based tool with no registration. No signup required.",
+	keywords: "image to pdf, free online tool, no signup, image to pdf online, pdf, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-to-pdf/",
+		canonical: "https://sopkit.github.io/image-to-pdf",
 	},
 	openGraph: {
-		title: "Image to PDF Online Free - No Signup",
-		description: "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required. No signup,",
-		url: "https://sopkit.github.io/image-to-pdf/",
+		title: "Free Image to PDF Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free Image to PDF online. Safe and private browser-based tool with no registration. No signup required.",
+		url: "https://sopkit.github.io/image-to-pdf",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Image to PDF Online Free - Fast & Secure",
-		description: "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required. No signup,",
+		title: "Free Image to PDF Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free Image to PDF online. Safe and private browser-based tool with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

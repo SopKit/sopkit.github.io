@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Logo Idea Generator - Free Online Tool | SopKit",
-	description: "Generate optimized logo idea generator details. Instantly copy or share customized outputs.",
+	title: "Free Logo Idea Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Logo Idea Generator online. Generate high-quality outputs instantly with no registration required. No registration needed.",
 	keywords: "logo idea generator, logo-idea-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/logo-idea-generator/",
+		canonical: "https://sopkit.github.io/logo-idea-generator",
 	},
 	openGraph: {
-		title: "Logo Idea Generator - Free Online Tool | SopKit",
-		description: "Generate optimized logo idea generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/logo-idea-generator/",
+		title: "Free Logo Idea Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Logo Idea Generator online. Generate high-quality outputs instantly with no registration required. No registration needed.",
+		url: "https://sopkit.github.io/logo-idea-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Logo Idea Generator - Free Online Tool | SopKit",
-		description: "Generate optimized logo idea generator details. Instantly copy or share customized outputs.",
+		title: "Free Logo Idea Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Logo Idea Generator online. Generate high-quality outputs instantly with no registration required. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

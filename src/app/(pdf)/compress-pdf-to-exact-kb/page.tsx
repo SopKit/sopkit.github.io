@@ -5,23 +5,24 @@ import PDFCompressor from "@/components/tools/pdf/PDFCompressor";
 
 
 export const metadata = {
-	title: "Compress PDF to Exact KB Online Free | SopKit",
-	description: "Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Compress PDF to Exact KB Online - No Signup | SopKit",
+	description: "Manage, convert, edit, and secure PDF documents with our free Compress PDF to Exact KB online. Safe and private browser-based tool with no registration.",
+	keywords: "compress pdf to exact kb, free online tool, no signup, compress pdf to exact kb online, pdf, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/compress-pdf-to-exact-kb/",
+		canonical: "https://sopkit.github.io/compress-pdf-to-exact-kb",
 	},
 	openGraph: {
-		title: "Compress PDF to Exact KB Online Free - No Signup | SopKit",
-		description: "Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/compress-pdf-to-exact-kb/",
+		title: "Free Compress PDF to Exact KB Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free Compress PDF to Exact KB online. Safe and private browser-based tool with no registration.",
+		url: "https://sopkit.github.io/compress-pdf-to-exact-kb",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Compress PDF to Exact KB Online Free - Fast & Secure",
-		description: "Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Compress PDF to Exact KB Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free Compress PDF to Exact KB online. Safe and private browser-based tool with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

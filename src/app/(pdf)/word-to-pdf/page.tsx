@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import WordToPDF from "@/components/tools/pdf/WordToPDF";
 
 export const metadata = {
-	title: "Word to PDF Online Free - Edit, Merge & Convert PDF | SopKit",
-	description: "Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Word to PDF Online - No Signup | SopKit",
+	description: "Manage, convert, edit, and secure PDF documents with our free Word to PDF online. Safe and private browser-based tool with no registration. No signup required.",
+	keywords: "word to pdf, free online tool, no signup, word to pdf online, pdf, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/word-to-pdf/",
+		canonical: "https://sopkit.github.io/word-to-pdf",
 	},
 	openGraph: {
-		title: "Word to PDF Online Free - No Signup",
-		description: "Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required. No signup, no uploads",
-		url: "https://sopkit.github.io/word-to-pdf/",
+		title: "Free Word to PDF Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free Word to PDF online. Safe and private browser-based tool with no registration. No signup required.",
+		url: "https://sopkit.github.io/word-to-pdf",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Word to PDF Online Free - Fast & Secure",
-		description: "Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required. No signup, no uploads",
+		title: "Free Word to PDF Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free Word to PDF online. Safe and private browser-based tool with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

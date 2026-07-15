@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import PDFToWord from "@/components/tools/pdf/PDFToWord";
 
 export const metadata = {
-	title: "PDF to Word Online Free - Edit, Merge & Convert PDF | SopKit",
-	description: "Convert PDF files to editable Word documents No signup, no uploads, 100% private browser-based tool.",
+	title: "Free PDF to Word Online - No Signup | SopKit",
+	description: "Manage, convert, edit, and secure PDF documents with our free PDF to Word online. Safe and private browser-based tool with no registration. No signup required.",
+	keywords: "pdf to word, free online tool, no signup, pdf to word online, pdf, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-to-word/",
+		canonical: "https://sopkit.github.io/pdf-to-word",
 	},
 	openGraph: {
-		title: "PDF to Word Online Free - No Signup",
-		description: "Convert PDF files to editable Word documents No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/pdf-to-word/",
+		title: "Free PDF to Word Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF to Word online. Safe and private browser-based tool with no registration. No signup required.",
+		url: "https://sopkit.github.io/pdf-to-word",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "PDF to Word Online Free - Fast & Secure",
-		description: "Convert PDF files to editable Word documents No signup, no uploads, 100% private browser-based tool.",
+		title: "Free PDF to Word Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF to Word online. Safe and private browser-based tool with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

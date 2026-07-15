@@ -5,15 +5,15 @@ import ConstructionCalculator from "@/components/tools/calculators/ConstructionC
 
 export const metadata = {
 	title: "Free Paint Calculator Online - No Signup | SopKit",
-	description: "Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.",
+	description: "Compute rates, taxes, averages, and conversions with our free Paint Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 	keywords: "paint-calculator, Paint Calculator, how much paint do I need, wall paint calculator, paint room estimator, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/paint-calculator/",
+		canonical: "https://sopkit.github.io/paint-calculator",
 	},
 	openGraph: {
 		title: "Free Paint Calculator Online - No Signup | SopKit",
-		description: "Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.",
-		url: "https://sopkit.github.io/paint-calculator/",
+		description: "Compute rates, taxes, averages, and conversions with our free Paint Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
+		url: "https://sopkit.github.io/paint-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Paint Calculator Online - No Signup | SopKit",
-		description: "Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.",
+		description: "Compute rates, taxes, averages, and conversions with our free Paint Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

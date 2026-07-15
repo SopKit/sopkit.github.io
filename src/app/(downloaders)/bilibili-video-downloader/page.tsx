@@ -5,15 +5,15 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Bilibili Video Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Bilibili Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
+	description: "Download, convert, and edit video files instantly with our free Bilibili Video Downloader online. Fast, secure, and private processing with no signup.",
 	keywords: "bilibili video downloader, free online tool, no signup, bilibili-video-downloader, free bilibili-video-downloader, Bilibili Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/bilibili-video-downloader/",
+		canonical: "https://sopkit.github.io/bilibili-video-downloader",
 	},
 	openGraph: {
 		title: "Free Bilibili Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Bilibili Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://sopkit.github.io/bilibili-video-downloader/",
+		description: "Download, convert, and edit video files instantly with our free Bilibili Video Downloader online. Fast, secure, and private processing with no signup.",
+		url: "https://sopkit.github.io/bilibili-video-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Bilibili Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Bilibili Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
+		description: "Download, convert, and edit video files instantly with our free Bilibili Video Downloader online. Fast, secure, and private processing with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

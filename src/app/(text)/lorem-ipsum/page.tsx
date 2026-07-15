@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import LoremIpsumGeneratorTool from "@/components/tools/generators/LoremIpsumGeneratorTool";
 
 export const metadata = {
-	title: "Lorem Ipsum Generator Online Free - No Signup | SopKit",
-	description: "Generate custom Lorem Ipsum text for your designs. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Lorem Ipsum Generator Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Lorem Ipsum Generator online. Fast and private browser utility with no signup. Easy to use.",
+	keywords: "lorem ipsum generator, free online tool, no signup, lorem ipsum generator online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/lorem-ipsum/",
+		canonical: "https://sopkit.github.io/lorem-ipsum",
 	},
 	openGraph: {
-		title: "Lorem Ipsum Generator Online Free - No Signup",
-		description: "Generate custom Lorem Ipsum text for your designs. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/lorem-ipsum/",
+		title: "Free Lorem Ipsum Generator Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Lorem Ipsum Generator online. Fast and private browser utility with no signup. Easy to use.",
+		url: "https://sopkit.github.io/lorem-ipsum",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Lorem Ipsum Generator Online Free - Fast & Secure",
-		description: "Generate custom Lorem Ipsum text for your designs. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Lorem Ipsum Generator Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Lorem Ipsum Generator online. Fast and private browser utility with no signup. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

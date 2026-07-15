@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import SitemapGeneratorTool from "@/components/tools/seo/SitemapGeneratorTool";
 
 export const metadata = {
-	title: "Robots.txt and Sitemap Generator Free Online - No Signup | SopKit",
-	description: "Free Robots.txt and Sitemap Generator online. Generate search engine friendly robots.txt and sitemap.xml files for your website to improve crawling and indexing. 100% free, no signup required.",
+	title: "Free Robots.txt and Sitemap Generator Online - No Signup | SopKit",
+	description: "Audit websites, analyze search rankings, and generate schemas with our free Robots.txt and Sitemap Generator online. Optimize search presence with no signup.",
+	keywords: "robots.txt and sitemap generator, free online tool, no signup, robots.txt and sitemap generator online, seo, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/robots-txt-sitemap-generator/",
+		canonical: "https://sopkit.github.io/robots-txt-sitemap-generator",
 	},
 	openGraph: {
-		title: "Robots.txt and Sitemap Generator Online Free - No Signup",
-		description: "Free Robots.txt and Sitemap Generator online. Generate search-engine friendly robots.txt and sitemap.xml files for your website to improve crawling and indexing.",
-		url: "https://sopkit.github.io/robots-txt-sitemap-generator/",
+		title: "Free Robots.txt and Sitemap Generator Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Robots.txt and Sitemap Generator online. Optimize search presence with no signup.",
+		url: "https://sopkit.github.io/robots-txt-sitemap-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Robots.txt and Sitemap Generator Online Free - Fast & Secure",
-		description: "Free Robots.txt and Sitemap Generator online. Generate search-engine friendly robots.txt and sitemap.xml files for your website to improve crawling and indexing.",
+		title: "Free Robots.txt and Sitemap Generator Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Robots.txt and Sitemap Generator online. Optimize search presence with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

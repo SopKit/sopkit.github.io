@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Hosting Checker Online Free - No Signup | SopKit",
-	description: "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Hosting Checker Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Hosting Checker online. Fast, secure browser-based utility with no registration. No registration needed.",
+	keywords: "hosting checker, free online tool, no signup, hosting checker online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/hosting-checker/",
+		canonical: "https://sopkit.github.io/hosting-checker",
 	},
 	openGraph: {
-		title: "Hosting Checker Online Free - No Signup",
-		description: "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/hosting-checker/",
+		title: "Free Hosting Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Hosting Checker online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/hosting-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Hosting Checker Online Free - Fast & Secure",
-		description: "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Hosting Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Hosting Checker online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import DomainToIPTool from "@/components/tools/built-ins/DomainToIPTool";
 
 export const metadata = {
-	title: "Domain to IP Converter Online Free - No Signup | SopKit",
-	description: "Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Domain to IP Converter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Domain to IP Converter online. Fast, secure browser-based utility with no registration. Try it free now.",
+	keywords: "domain to ip converter, free online tool, no signup, domain to ip converter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/domain-to-ip-converter/",
+		canonical: "https://sopkit.github.io/domain-to-ip-converter",
 	},
 	openGraph: {
-		title: "Domain to IP Converter Online Free - No Signup",
-		description: "Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues. No signup, ",
-		url: "https://sopkit.github.io/domain-to-ip-converter/",
+		title: "Free Domain to IP Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Domain to IP Converter online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/domain-to-ip-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Domain to IP Converter Online Free - Fast & Secure",
-		description: "Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues. No signup, ",
+		title: "Free Domain to IP Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Domain to IP Converter online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

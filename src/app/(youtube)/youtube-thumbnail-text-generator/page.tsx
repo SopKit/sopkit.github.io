@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "YouTube Thumbnail Text Generator - Free Online Tool | SopKit",
-	description: "Generate optimized youtube thumbnail text generator details. Instantly copy or share customized outputs.",
+	title: "Free YouTube Thumbnail Text Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Thumbnail Text Generator online. Fast, secure browser-based utility with no registration.",
 	keywords: "youtube thumbnail text generator, youtube-thumbnail-text-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-thumbnail-text-generator/",
+		canonical: "https://sopkit.github.io/youtube-thumbnail-text-generator",
 	},
 	openGraph: {
-		title: "YouTube Thumbnail Text Generator - Free Online Tool | SopKit",
-		description: "Generate optimized youtube thumbnail text generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/youtube-thumbnail-text-generator/",
+		title: "Free YouTube Thumbnail Text Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Thumbnail Text Generator online. Fast, secure browser-based utility with no registration.",
+		url: "https://sopkit.github.io/youtube-thumbnail-text-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Thumbnail Text Generator - Free Online Tool | SopKit",
-		description: "Generate optimized youtube thumbnail text generator details. Instantly copy or share customized outputs.",
+		title: "Free YouTube Thumbnail Text Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Thumbnail Text Generator online. Fast, secure browser-based utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 
 export const metadata = {
-	title: "JSON to CSV Converter Online Free - Developer Tools | SopKit",
-	description: "Convert JSON data to CSV format instantly. Our free online converter makes it easy to transform complex JSON structures into simple spreadsheet-ready tables. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JSON to CSV Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JSON to CSV Converter online. Secure, local developer utility with no registration. 100% free.",
+	keywords: "json to csv converter, free online tool, no signup, json to csv converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-to-csv-converter/",
+		canonical: "https://sopkit.github.io/json-to-csv-converter",
 	},
 	openGraph: {
-		title: "JSON to CSV Converter Online Free - No Signup",
-		description: "Convert JSON data to CSV format instantly. Our free online converter makes it easy to transform complex JSON structures into simple spreadsheet-ready tables. No",
-		url: "https://sopkit.github.io/json-to-csv-converter/",
+		title: "Free JSON to CSV Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON to CSV Converter online. Secure, local developer utility with no registration. 100% free.",
+		url: "https://sopkit.github.io/json-to-csv-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JSON to CSV Converter Online Free - Fast & Secure",
-		description: "Convert JSON data to CSV format instantly. Our free online converter makes it easy to transform complex JSON structures into simple spreadsheet-ready tables. No",
+		title: "Free JSON to CSV Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON to CSV Converter online. Secure, local developer utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Text Reverser Online Free | SopKit",
-	description: "Flip your text backwards or reverse the order of words instantly for creative projects and coding. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Text Reverser Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Text Reverser online. Fast and private browser utility with no signup. 100% free and secure.",
+	keywords: "text reverser, free online tool, no signup, text reverser online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-reverser/",
+		canonical: "https://sopkit.github.io/text-reverser",
 	},
 	openGraph: {
-		title: "Text Reverser Online Free - No Signup | SopKit",
-		description: "Flip your text backwards or reverse the order of words instantly for creative projects and coding. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/text-reverser/",
+		title: "Free Text Reverser Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Text Reverser online. Fast and private browser utility with no signup. 100% free and secure.",
+		url: "https://sopkit.github.io/text-reverser",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Text Reverser Online Free - Fast & Secure",
-		description: "Flip your text backwards or reverse the order of words instantly for creative projects and coding. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Text Reverser Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Text Reverser online. Fast and private browser utility with no signup. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

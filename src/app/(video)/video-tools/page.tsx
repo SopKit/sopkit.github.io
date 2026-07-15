@@ -12,12 +12,12 @@ export const metadata = {
 	description: "Download, convert, and edit video files instantly with our free Video Tools online. Fast, secure, and private processing with no signup. No registration needed.",
 	keywords: "video tools, free online tool, no signup, video-tools, free video-tools, Video Tools online, video tool, video editor, media converter, online video, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/video-tools/",
+		canonical: "https://sopkit.github.io/video-tools",
 	},
 	openGraph: {
 		title: "Free Video Tools Online - No Signup | SopKit",
 		description: "Download, convert, and edit video files instantly with our free Video Tools online. Fast, secure, and private processing with no signup. No registration needed.",
-		url: "https://sopkit.github.io/video-tools/",
+		url: "https://sopkit.github.io/video-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "SQL Formatter & Beautifier Online Free | SopKit",
-	description: "Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free SQL Formatter & Beautifier Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free SQL Formatter & Beautifier online. Secure, local developer utility with no registration.",
+	keywords: "sql formatter & beautifier, free online tool, no signup, sql formatter & beautifier online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/sql-formatter/",
+		canonical: "https://sopkit.github.io/sql-formatter",
 	},
 	openGraph: {
-		title: "SQL Formatter & Beautifier Online Free - No Signup | SopKit",
-		description: "Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/sql-formatter/",
+		title: "Free SQL Formatter & Beautifier Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free SQL Formatter & Beautifier online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/sql-formatter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "SQL Formatter & Beautifier Online Free - Fast & Secure",
-		description: "Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free SQL Formatter & Beautifier Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free SQL Formatter & Beautifier online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -5,15 +5,15 @@ import AcademicGradesCalculator from "@/components/tools/calculators/AcademicGra
 
 export const metadata = {
 	title: "Free CGPA to Percentage Calculator Online - No Signup | SopKit",
-	description: "Convert your CGPA to equivalent percentage marks using standard university formulas (like CBSE 9.5x).",
+	description: "Compute rates, taxes, averages, and conversions with our free CGPA to Percentage Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "cgpa-to-percentage-calculator, CGPA to Percentage Calculator, convert cgpa to percentage, cgpa to percent CBSE, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/cgpa-to-percentage-calculator/",
+		canonical: "https://sopkit.github.io/cgpa-to-percentage-calculator",
 	},
 	openGraph: {
 		title: "Free CGPA to Percentage Calculator Online - No Signup | SopKit",
-		description: "Convert your CGPA to equivalent percentage marks using standard university formulas (like CBSE 9.5x).",
-		url: "https://sopkit.github.io/cgpa-to-percentage-calculator/",
+		description: "Compute rates, taxes, averages, and conversions with our free CGPA to Percentage Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/cgpa-to-percentage-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free CGPA to Percentage Calculator Online - No Signup | SopKit",
-		description: "Convert your CGPA to equivalent percentage marks using standard university formulas (like CBSE 9.5x).",
+		description: "Compute rates, taxes, averages, and conversions with our free CGPA to Percentage Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

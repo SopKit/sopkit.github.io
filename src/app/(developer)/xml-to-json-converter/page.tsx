@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 
 export const metadata = {
-	title: "XML to JSON Converter Online Free - Developer Tools | SopKit",
-	description: "Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for web apps. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free XML to JSON Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free XML to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
+	keywords: "xml to json converter, free online tool, no signup, xml to json converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/xml-to-json-converter/",
+		canonical: "https://sopkit.github.io/xml-to-json-converter",
 	},
 	openGraph: {
-		title: "XML to JSON Converter Online Free - No Signup",
-		description: "Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for w",
-		url: "https://sopkit.github.io/xml-to-json-converter/",
+		title: "Free XML to JSON Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free XML to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
+		url: "https://sopkit.github.io/xml-to-json-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "XML to JSON Converter Online Free - Fast & Secure",
-		description: "Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for w",
+		title: "Free XML to JSON Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free XML to JSON Converter online. Secure, local developer utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

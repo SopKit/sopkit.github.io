@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 
 export const metadata = {
-	title: "JSON to Text Converter Online Free - Developer Tools | SopKit",
-	description: "Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw data. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JSON to Text Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JSON to Text Converter online. Secure, local developer utility with no registration.",
+	keywords: "json to text converter, free online tool, no signup, json to text converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-to-text-converter/",
+		canonical: "https://sopkit.github.io/json-to-text-converter",
 	},
 	openGraph: {
-		title: "JSON to Text Converter Online Free - No Signup",
-		description: "Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw d",
-		url: "https://sopkit.github.io/json-to-text-converter/",
+		title: "Free JSON to Text Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON to Text Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/json-to-text-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JSON to Text Converter Online Free - Fast & Secure",
-		description: "Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw d",
+		title: "Free JSON to Text Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON to Text Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

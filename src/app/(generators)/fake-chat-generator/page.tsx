@@ -3,15 +3,15 @@ import FakeChatGeneratorTool from "@/components/tools/generators/FakeChatGenerat
 
 export const metadata = {
 	title: "Free Fake Chat Generator Online - No Signup | SopKit",
-	description: "Create realistic-looking fake chat screenshots for WhatsApp, Discord, and iMessage.",
+	description: "Create custom content with our free Fake Chat Generator online. Generate high-quality outputs instantly with no registration required. No registration needed.",
 	keywords: "fake, chat, generator, free fake chat generator, online fake chat generator, SopKit, fake-chat-generator, fake chat generator, free fake-chat-generator, fake chat generator online, online generator, free creator",
 	alternates: {
-		canonical: "https://sopkit.github.io/fake-chat-generator/",
+		canonical: "https://sopkit.github.io/fake-chat-generator",
 	},
 	openGraph: {
 		title: "Free Fake Chat Generator Online - No Signup | SopKit",
-		description: "Create realistic-looking fake chat screenshots for WhatsApp, Discord, and iMessage.",
-		url: "https://sopkit.github.io/fake-chat-generator/",
+		description: "Create custom content with our free Fake Chat Generator online. Generate high-quality outputs instantly with no registration required. No registration needed.",
+		url: "https://sopkit.github.io/fake-chat-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -19,7 +19,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Fake Chat Generator Online - No Signup | SopKit",
-		description: "Create realistic-looking fake chat screenshots for WhatsApp, Discord, and iMessage.",
+		description: "Create custom content with our free Fake Chat Generator online. Generate high-quality outputs instantly with no registration required. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

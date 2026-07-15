@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import CSSShadowTool from "@/components/tools/developer/CSSShadowTool";
 
 export const metadata = {
-	title: "CSS Shadow Generator Online Free - Developer Tools | SopKit",
-	description: "Generate CSS box shadows and text shadows for modern web design. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free CSS Shadow Generator Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free CSS Shadow Generator online. Secure, local developer utility with no registration. 100% free.",
+	keywords: "css shadow generator, free online tool, no signup, css shadow generator online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/css-shadow-generator/",
+		canonical: "https://sopkit.github.io/css-shadow-generator",
 	},
 	openGraph: {
-		title: "CSS Shadow Generator Online Free - No Signup",
-		description: "Generate CSS box shadows and text shadows for modern web design. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/css-shadow-generator/",
+		title: "Free CSS Shadow Generator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free CSS Shadow Generator online. Secure, local developer utility with no registration. 100% free.",
+		url: "https://sopkit.github.io/css-shadow-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "CSS Shadow Generator Online Free - Fast & Secure",
-		description: "Generate CSS box shadows and text shadows for modern web design. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free CSS Shadow Generator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free CSS Shadow Generator online. Secure, local developer utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

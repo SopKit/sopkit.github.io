@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Binary to Octal Converter Online Free - Developer Tools | SopKit",
-	description: "Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical students. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Binary to Octal Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free Binary to Octal Converter online. Secure, local developer utility with no registration.",
+	keywords: "binary to octal converter, free online tool, no signup, binary to octal converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/binary-to-octal-converter/",
+		canonical: "https://sopkit.github.io/binary-to-octal-converter",
 	},
 	openGraph: {
-		title: "Binary to Octal Converter Online Free - No Signup",
-		description: "Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical studen",
-		url: "https://sopkit.github.io/binary-to-octal-converter/",
+		title: "Free Binary to Octal Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Binary to Octal Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/binary-to-octal-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Binary to Octal Converter Online Free - Fast & Secure",
-		description: "Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical studen",
+		title: "Free Binary to Octal Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Binary to Octal Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

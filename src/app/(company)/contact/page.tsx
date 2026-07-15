@@ -3,24 +3,24 @@ import { ArrowUpRight } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
-	title: "Contact SopKit - Tool Requests, Support & Feedback",
-	description: "Have a question, feedback, or a tool request for SopKit? Reach out to our open-source team via email or report bugs directly on our GitHub repository.",
+	title: "Free Contact Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Contact online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 	keywords: "contact SopKit, support, feedback, help, contact, request tool, SopKit support, report bug",
 	alternates: {
-		canonical: "https://sopkit.github.io/contact/",
+		canonical: "https://sopkit.github.io/contact",
 	},
 	openGraph: {
-		title: "Contact SopKit - Tool Requests, Support & Feedback",
-		description: "Have a question, feedback, or a tool request for SopKit? Reach out to our open-source team via email or report bugs directly on our GitHub repository.",
-		url: "https://sopkit.github.io/contact/",
+		title: "Free Contact Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Contact online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/contact",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Contact SopKit - Tool Requests & Support",
-		description: "Have a question, feedback, or a tool request for SopKit? Reach out to our open-source team via email or report bugs directly on our GitHub repository.",
+		title: "Free Contact Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Contact online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

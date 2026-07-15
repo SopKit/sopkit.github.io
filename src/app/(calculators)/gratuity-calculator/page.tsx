@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Gratuity Calculator (India) Online Free | SopKit",
-	description: "Estimate your gratuity amount based on your last drawn salary and years of service in India. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Gratuity Calculator (India) Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Gratuity Calculator (India) online. Quick, accurate browser calculator with no registration.",
+	keywords: "gratuity calculator (india), free online tool, no signup, gratuity calculator (india) online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/gratuity-calculator/",
+		canonical: "https://sopkit.github.io/gratuity-calculator",
 	},
 	openGraph: {
-		title: "Gratuity Calculator (India) Online Free - No Signup | SopKit",
-		description: "Estimate your gratuity amount based on your last drawn salary and years of service in India. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/gratuity-calculator/",
+		title: "Free Gratuity Calculator (India) Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Gratuity Calculator (India) online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/gratuity-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Gratuity Calculator (India) Online Free - Fast & Secure",
-		description: "Estimate your gratuity amount based on your last drawn salary and years of service in India. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Gratuity Calculator (India) Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Gratuity Calculator (India) online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 
 export const metadata = {
-	title: "HTML Beautifier Online Free - Developer Tools | SopKit",
-	description: "Format and prettify your HTML code instantly. Our free online HTML Beautifier fixes indentation, improves readability, and cleans up messy markup for better web development. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free HTML Beautifier Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free HTML Beautifier online. Secure, local developer utility with no registration. Try it free now.",
+	keywords: "html beautifier, free online tool, no signup, html beautifier online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-beautifier/",
+		canonical: "https://sopkit.github.io/html-beautifier",
 	},
 	openGraph: {
-		title: "HTML Beautifier Online Free - No Signup",
-		description: "Format and prettify your HTML code instantly. Our free online HTML Beautifier fixes indentation, improves readability, and cleans up messy markup for better web",
-		url: "https://sopkit.github.io/html-beautifier/",
+		title: "Free HTML Beautifier Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free HTML Beautifier online. Secure, local developer utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/html-beautifier",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "HTML Beautifier Online Free - Fast & Secure",
-		description: "Format and prettify your HTML code instantly. Our free online HTML Beautifier fixes indentation, improves readability, and cleans up messy markup for better web",
+		title: "Free HTML Beautifier Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free HTML Beautifier online. Secure, local developer utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

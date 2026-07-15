@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Format, clean, sort, and analyze text files instantly with our free Random Word Generator online. Fast and private browser utility with no signup. Easy to use.",
 	keywords: "random word generator, free online tool, no signup, random-word-generator, free random-word-generator, Random Word Generator online, text tool, text editor online, content formatter, writing utility, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/random-word-generator/",
+		canonical: "https://sopkit.github.io/random-word-generator",
 	},
 	openGraph: {
 		title: "Free Random Word Generator Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Random Word Generator online. Fast and private browser utility with no signup. Easy to use.",
-		url: "https://sopkit.github.io/random-word-generator/",
+		url: "https://sopkit.github.io/random-word-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

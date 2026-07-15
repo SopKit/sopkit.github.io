@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import CreditCardValidatorTool from "@/components/tools/security/CreditCardValidatorTool";
 
 export const metadata = {
-	title: "Credit Card Validator Online Free - No Signup | SopKit",
-	description: "Check if a credit card number is valid using the Luhn algorithm instantly. Our free online tool helps you verify card formats and identify card types for testing purposes. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Credit Card Validator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Credit Card Validator online. Fast, secure browser-based utility with no registration. No signup required.",
+	keywords: "credit card validator, free online tool, no signup, credit card validator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/credit-card-validator/",
+		canonical: "https://sopkit.github.io/credit-card-validator",
 	},
 	openGraph: {
-		title: "Credit Card Validator Online Free - No Signup",
-		description: "Check if a credit card number is valid using the Luhn algorithm instantly. Our free online tool helps you verify card formats and identify card types for testin",
-		url: "https://sopkit.github.io/credit-card-validator/",
+		title: "Free Credit Card Validator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Credit Card Validator online. Fast, secure browser-based utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/credit-card-validator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Credit Card Validator Online Free - Fast & Secure",
-		description: "Check if a credit card number is valid using the Luhn algorithm instantly. Our free online tool helps you verify card formats and identify card types for testin",
+		title: "Free Credit Card Validator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Credit Card Validator online. Fast, secure browser-based utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

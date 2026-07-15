@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "WhatsApp Link Generator - Free Online Tool | SopKit",
-	description: "Generate optimized whatsapp link generator details. Instantly copy or share customized outputs.",
+	title: "Free WhatsApp Link Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free WhatsApp Link Generator online. Fast, secure browser-based utility with no registration. Try it free now.",
 	keywords: "whatsapp link generator, whatsapp-link-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/whatsapp-link-generator/",
+		canonical: "https://sopkit.github.io/whatsapp-link-generator",
 	},
 	openGraph: {
-		title: "WhatsApp Link Generator - Free Online Tool | SopKit",
-		description: "Generate optimized whatsapp link generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/whatsapp-link-generator/",
+		title: "Free WhatsApp Link Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free WhatsApp Link Generator online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/whatsapp-link-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "WhatsApp Link Generator - Free Online Tool | SopKit",
-		description: "Generate optimized whatsapp link generator details. Instantly copy or share customized outputs.",
+		title: "Free WhatsApp Link Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free WhatsApp Link Generator online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Speed Converter Online Free - No Signup | SopKit",
-	description: "Free speed converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Speed Converter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Speed Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
+	keywords: "speed converter, free online tool, no signup, speed converter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/speed-converter/",
+		canonical: "https://sopkit.github.io/speed-converter",
 	},
 	openGraph: {
-		title: "Speed Converter Online Free - No Signup",
-		description: "Free speed converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/speed-converter/",
+		title: "Free Speed Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Speed Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/speed-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Speed Converter Online Free - Fast & Secure",
-		description: "Free speed converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Speed Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Speed Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

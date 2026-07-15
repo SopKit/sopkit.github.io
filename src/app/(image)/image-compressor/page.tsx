@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageCompressorTool from "@/components/tools/image/ImageCompressorTool";
 
 export const metadata = {
-	title: "Image Compressor Online Free - Compress & Convert Images | SopKit",
-	description: "Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Image Compressor Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Image Compressor online. Crop, resize, and optimize photos in your browser with no signup. No signup required.",
+	keywords: "image compressor, free online tool, no signup, image compressor online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-compressor/",
+		canonical: "https://sopkit.github.io/image-compressor",
 	},
 	openGraph: {
-		title: "Image Compressor Online Free - No Signup",
-		description: "Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing. No signup, no",
-		url: "https://sopkit.github.io/image-compressor/",
+		title: "Free Image Compressor Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image Compressor online. Crop, resize, and optimize photos in your browser with no signup. No signup required.",
+		url: "https://sopkit.github.io/image-compressor",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Image Compressor Online Free - Fast & Secure",
-		description: "Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing. No signup, no",
+		title: "Free Image Compressor Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image Compressor online. Crop, resize, and optimize photos in your browser with no signup. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

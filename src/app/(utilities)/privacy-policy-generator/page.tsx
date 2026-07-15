@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import LegalTemplateGenerator from "@/components/tools/built-ins/LegalTemplateGenerator";
 
 export const metadata = {
-	title: "Privacy Policy Generator Online Free - No Signup | SopKit",
-	description: "Free privacy policy generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Privacy Policy Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Privacy Policy Generator online. Fast, secure browser-based utility with no registration. Try it free now.",
+	keywords: "privacy policy generator, free online tool, no signup, privacy policy generator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/privacy-policy-generator/",
+		canonical: "https://sopkit.github.io/privacy-policy-generator",
 	},
 	openGraph: {
-		title: "Privacy Policy Generator Online Free - No Signup",
-		description: "Free privacy policy generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
-		url: "https://sopkit.github.io/privacy-policy-generator/",
+		title: "Free Privacy Policy Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Privacy Policy Generator online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/privacy-policy-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Privacy Policy Generator Online Free - Fast & Secure",
-		description: "Free privacy policy generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
+		title: "Free Privacy Policy Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Privacy Policy Generator online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

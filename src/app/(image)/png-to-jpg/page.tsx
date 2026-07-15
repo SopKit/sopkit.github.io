@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "PNG to JPG Converter Online Free | SopKit",
-	description: "Convert PNG images to JPG format for smaller file sizes and web optimization. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free PNG to JPG Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free PNG to JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+	keywords: "png to jpg converter, free online tool, no signup, png to jpg converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/png-to-jpg/",
+		canonical: "https://sopkit.github.io/png-to-jpg",
 	},
 	openGraph: {
-		title: "PNG to JPG Converter Online Free - No Signup | SopKit",
-		description: "Convert PNG images to JPG format for smaller file sizes and web optimization. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/png-to-jpg/",
+		title: "Free PNG to JPG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free PNG to JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/png-to-jpg",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "PNG to JPG Converter Online Free - Fast & Secure",
-		description: "Convert PNG images to JPG format for smaller file sizes and web optimization. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free PNG to JPG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free PNG to JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

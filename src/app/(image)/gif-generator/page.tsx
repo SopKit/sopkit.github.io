@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Free Animated GIF Generator Online - Convert Images to GIF | SopKit",
-	description: "Convert multiple PNG, JPG, or WebP images into an animated GIF. Adjust delay speed, dimensions, and loops client-side. No registration required.",
+	title: "Free GIF Generator Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free GIF Generator online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
+	keywords: "gif generator, free online tool, no signup, gif generator online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/gif-generator/",
+		canonical: "https://sopkit.github.io/gif-generator",
 	},
 	openGraph: {
-		title: "Free Animated GIF Generator Online - Convert Images to GIF | SopKit",
-		description: "Convert multiple PNG, JPG, or WebP images into an animated GIF. Adjust delay speed, dimensions, and loops client-side. No registration required.",
-		url: "https://sopkit.github.io/gif-generator/",
+		title: "Free GIF Generator Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free GIF Generator online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
+		url: "https://sopkit.github.io/gif-generator",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/image-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Animated GIF Generator Online - Convert Images to GIF | SopKit",
-		description: "Convert multiple PNG, JPG, or WebP images into an animated GIF. Adjust delay speed, dimensions, and loops client-side. No registration required.",
-		images: ["/og-images/image-tools.png"],
+		title: "Free GIF Generator Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free GIF Generator online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

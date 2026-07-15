@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import CreditCardGeneratorTool from "@/components/tools/security/CreditCardGeneratorTool";
 
 export const metadata = {
-	title: "Credit Card Generator Online Free - No Signup | SopKit",
-	description: "Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks without being real cards. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Credit Card Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Credit Card Generator online. Fast, secure browser-based utility with no registration. No signup required.",
+	keywords: "credit card generator, free online tool, no signup, credit card generator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/credit-card-generator/",
+		canonical: "https://sopkit.github.io/credit-card-generator",
 	},
 	openGraph: {
-		title: "Credit Card Generator Online Free - No Signup",
-		description: "Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks without",
-		url: "https://sopkit.github.io/credit-card-generator/",
+		title: "Free Credit Card Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Credit Card Generator online. Fast, secure browser-based utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/credit-card-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Credit Card Generator Online Free - Fast & Secure",
-		description: "Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks without",
+		title: "Free Credit Card Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Credit Card Generator online. Fast, secure browser-based utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

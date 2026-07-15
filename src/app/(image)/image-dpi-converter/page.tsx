@@ -5,15 +5,15 @@ import ResizeImageCm from "@/components/tools/image/ResizeImageCm";
 
 export const metadata = {
 	title: "Free Image DPI Converter Online - No Signup | SopKit",
-	description: "Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing.",
+	description: "Edit, convert, and compress images with our free Image DPI Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 	keywords: "image-dpi-converter, Image DPI Converter",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-dpi-converter/",
+		canonical: "https://sopkit.github.io/image-dpi-converter",
 	},
 	openGraph: {
 		title: "Free Image DPI Converter Online - No Signup | SopKit",
-		description: "Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing.",
-		url: "https://sopkit.github.io/image-dpi-converter/",
+		description: "Edit, convert, and compress images with our free Image DPI Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/image-dpi-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Image DPI Converter Online - No Signup | SopKit",
-		description: "Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing.",
+		description: "Edit, convert, and compress images with our free Image DPI Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

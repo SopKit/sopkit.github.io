@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 
 export const metadata = {
-	title: "Image Cropper Online Free - Compress & Convert Images | SopKit",
-	description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Image Cropper Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Image Cropper online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
+	keywords: "image cropper, free online tool, no signup, image cropper online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-cropper/",
+		canonical: "https://sopkit.github.io/image-cropper",
 	},
 	openGraph: {
-		title: "Image Cropper Online Free - No Signup",
-		description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/image-cropper/",
+		title: "Free Image Cropper Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image Cropper online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
+		url: "https://sopkit.github.io/image-cropper",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Image Cropper Online Free - Fast & Secure",
-		description: "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Image Cropper Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image Cropper online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

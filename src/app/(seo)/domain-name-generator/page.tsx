@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import WebTools from "@/components/tools/impl/WebTools";
 
 export const metadata = {
-	title: "Domain Name Generator Online Free - No Signup | SopKit",
-	description: "Free online Domain Name Generator. Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free. 100% free, no signup required, and privacy-focused processing in your browser.",
+	title: "Free Domain Name Generator Online - No Signup | SopKit",
+	description: "Audit websites, analyze search rankings, and generate schemas with our free Domain Name Generator online. Optimize search presence with no signup. Easy to use.",
+	keywords: "domain name generator, free online tool, no signup, domain name generator online, seo, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/domain-name-generator/",
+		canonical: "https://sopkit.github.io/domain-name-generator",
 	},
 	openGraph: {
-		title: "Domain Name Generator Online Free - No Signup",
-		description: "Free online Domain Name Generator. Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free. 100% free, no signup required, and privacy-focused.",
-		url: "https://sopkit.github.io/domain-name-generator/",
+		title: "Free Domain Name Generator Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Domain Name Generator online. Optimize search presence with no signup. Easy to use.",
+		url: "https://sopkit.github.io/domain-name-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Domain Name Generator Online Free - Fast & Secure",
-		description: "Free online Domain Name Generator. Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free.",
+		title: "Free Domain Name Generator Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Domain Name Generator online. Optimize search presence with no signup. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

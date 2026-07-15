@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Illuminance Converter Online Free - No Signup | SopKit",
-	description: "Free illuminance converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Illuminance Converter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Illuminance Converter online. Fast, secure browser-based utility with no registration. No signup required.",
+	keywords: "illuminance converter, free online tool, no signup, illuminance converter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/illuminance-converter/",
+		canonical: "https://sopkit.github.io/illuminance-converter",
 	},
 	openGraph: {
-		title: "Illuminance Converter Online Free - No Signup",
-		description: "Free illuminance converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
-		url: "https://sopkit.github.io/illuminance-converter/",
+		title: "Free Illuminance Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Illuminance Converter online. Fast, secure browser-based utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/illuminance-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Illuminance Converter Online Free - Fast & Secure",
-		description: "Free illuminance converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
+		title: "Free Illuminance Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Illuminance Converter online. Fast, secure browser-based utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

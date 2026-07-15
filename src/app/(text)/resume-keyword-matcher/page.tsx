@@ -5,23 +5,24 @@ import ResumeATSChecker from "@/components/tools/impl/ResumeATSChecker";
 
 
 export const metadata = {
-	title: "Resume Keyword Matcher Online Free | SopKit",
-	description: "Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Resume Keyword Matcher Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Resume Keyword Matcher online. Fast and private browser utility with no signup. Easy to use.",
+	keywords: "resume keyword matcher, free online tool, no signup, resume keyword matcher online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/resume-keyword-matcher/",
+		canonical: "https://sopkit.github.io/resume-keyword-matcher",
 	},
 	openGraph: {
-		title: "Resume Keyword Matcher Online Free - No Signup | SopKit",
-		description: "Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS. No signup, no uploads, 100% private ",
-		url: "https://sopkit.github.io/resume-keyword-matcher/",
+		title: "Free Resume Keyword Matcher Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Resume Keyword Matcher online. Fast and private browser utility with no signup. Easy to use.",
+		url: "https://sopkit.github.io/resume-keyword-matcher",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Resume Keyword Matcher Online Free - Fast & Secure",
-		description: "Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS. No signup, no uploads, 100% private ",
+		title: "Free Resume Keyword Matcher Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Resume Keyword Matcher online. Fast and private browser utility with no signup. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

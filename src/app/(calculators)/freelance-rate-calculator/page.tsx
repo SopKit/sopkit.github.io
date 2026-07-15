@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Freelance Rate Calculator - Free Online Tool | SopKit",
-	description: "Calculate your freelance rate calculator instantly. Free browser-based calculator with detailed breakdowns.",
+	title: "Free Freelance Rate Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Freelance Rate Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "freelance rate calculator, freelance-rate-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/freelance-rate-calculator/",
+		canonical: "https://sopkit.github.io/freelance-rate-calculator",
 	},
 	openGraph: {
-		title: "Freelance Rate Calculator - Free Online Tool | SopKit",
-		description: "Calculate your freelance rate calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/freelance-rate-calculator/",
+		title: "Free Freelance Rate Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Freelance Rate Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/freelance-rate-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Freelance Rate Calculator - Free Online Tool | SopKit",
-		description: "Calculate your freelance rate calculator instantly. Free browser-based calculator with detailed breakdowns.",
+		title: "Free Freelance Rate Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Freelance Rate Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

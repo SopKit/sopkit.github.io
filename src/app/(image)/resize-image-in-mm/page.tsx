@@ -5,15 +5,15 @@ import ResizeImageCm from "@/components/tools/image/ResizeImageCm";
 
 export const metadata = {
 	title: "Free Resize Image in MM Online - No Signup | SopKit",
-	description: "Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents.",
+	description: "Edit, convert, and compress images with our free Resize Image in MM online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 	keywords: "resize-image-in-mm, Resize Image in MM",
 	alternates: {
-		canonical: "https://sopkit.github.io/resize-image-in-mm/",
+		canonical: "https://sopkit.github.io/resize-image-in-mm",
 	},
 	openGraph: {
 		title: "Free Resize Image in MM Online - No Signup | SopKit",
-		description: "Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents.",
-		url: "https://sopkit.github.io/resize-image-in-mm/",
+		description: "Edit, convert, and compress images with our free Resize Image in MM online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/resize-image-in-mm",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Resize Image in MM Online - No Signup | SopKit",
-		description: "Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents.",
+		description: "Edit, convert, and compress images with our free Resize Image in MM online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

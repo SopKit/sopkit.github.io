@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Read the SopKit Privacy Policy. We explain how we handle data across our browser-based and server-side tools, and your privacy protections.",
 	keywords: "privacy policy, SopKit privacy, data protection, privacy policy SopKit, privacy, free privacy, privacy online, SopKit, free online tools, browser tools, no signup tools, privacy tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/privacy/",
+		canonical: "https://sopkit.github.io/privacy",
 	},
 	openGraph: {
 		title: "Free Privacy Policy Online - SopKit",
 		description: "Read the SopKit Privacy Policy. We explain how we handle data across our browser-based and server-side tools, and your privacy protections.",
-		url: "https://sopkit.github.io/privacy/",
+		url: "https://sopkit.github.io/privacy",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

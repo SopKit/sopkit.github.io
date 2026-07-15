@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Visual Sitemap Generator Online Free - No Signup | SopKit",
-	description: "Visualize your website's sitemap structure instantly. Enter your XML sitemap URL to generate a dynamic tree view of your site hierarchy. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Visual Sitemap Generator Online - No Signup | SopKit",
+	description: "Audit websites, analyze search rankings, and generate schemas with our free Visual Sitemap Generator online. Optimize search presence with no signup. 100% free.",
+	keywords: "visual sitemap generator, free online tool, no signup, visual sitemap generator online, seo, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/visual-sitemap/",
+		canonical: "https://sopkit.github.io/visual-sitemap",
 	},
 	openGraph: {
-		title: "Visual Sitemap Generator Online Free - No Signup",
-		description: "Visualize your website's sitemap structure instantly. Enter your XML sitemap URL to generate a dynamic tree view of your site hierarchy. No signup, no uploads, ",
-		url: "https://sopkit.github.io/visual-sitemap/",
+		title: "Free Visual Sitemap Generator Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Visual Sitemap Generator online. Optimize search presence with no signup. 100% free.",
+		url: "https://sopkit.github.io/visual-sitemap",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Visual Sitemap Generator Online Free - Fast & Secure",
-		description: "Visualize your website's sitemap structure instantly. Enter your XML sitemap URL to generate a dynamic tree view of your site hierarchy. No signup, no uploads, ",
+		title: "Free Visual Sitemap Generator Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Visual Sitemap Generator online. Optimize search presence with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

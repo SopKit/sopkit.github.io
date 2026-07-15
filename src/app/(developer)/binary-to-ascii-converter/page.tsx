@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Binary to ASCII Converter Online Free - Developer Tools | SopKit",
-	description: "Transform binary code (0s and 1s) into readable ASCII text instantly. Our free online converter is fast, accurate, and works entirely in your browser. No signup required. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Binary to ASCII Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free Binary to ASCII Converter online. Secure, local developer utility with no registration.",
+	keywords: "binary to ascii converter, free online tool, no signup, binary to ascii converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/binary-to-ascii-converter/",
+		canonical: "https://sopkit.github.io/binary-to-ascii-converter",
 	},
 	openGraph: {
-		title: "Binary to ASCII Converter Online Free - No Signup",
-		description: "Transform binary code (0s and 1s) into readable ASCII text instantly. Our free online converter is fast, accurate, and works entirely in your browser. No signup",
-		url: "https://sopkit.github.io/binary-to-ascii-converter/",
+		title: "Free Binary to ASCII Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Binary to ASCII Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/binary-to-ascii-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Binary to ASCII Converter Online Free - Fast & Secure",
-		description: "Transform binary code (0s and 1s) into readable ASCII text instantly. Our free online converter is fast, accurate, and works entirely in your browser. No signup",
+		title: "Free Binary to ASCII Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Binary to ASCII Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

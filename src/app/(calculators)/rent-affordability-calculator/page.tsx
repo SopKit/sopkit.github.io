@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Rent Affordability Calculator - Free Online Tool | SopKit",
-	description: "Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns.",
+	title: "Free Rent Affordability Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Rent Affordability Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "rent affordability calculator, rent-affordability-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/rent-affordability-calculator/",
+		canonical: "https://sopkit.github.io/rent-affordability-calculator",
 	},
 	openGraph: {
-		title: "Rent Affordability Calculator - Free Online Tool | SopKit",
-		description: "Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/rent-affordability-calculator/",
+		title: "Free Rent Affordability Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Rent Affordability Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/rent-affordability-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Rent Affordability Calculator - Free Online Tool | SopKit",
-		description: "Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns.",
+		title: "Free Rent Affordability Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Rent Affordability Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

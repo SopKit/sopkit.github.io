@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "YouTube Video Count Checker Online Free - No Signup | SopKit",
-	description: "Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel auditing. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Video Count Checker Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Video Count Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
+	keywords: "youtube video count checker, free online tool, no signup, youtube video count checker online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-video-count-checker/",
+		canonical: "https://sopkit.github.io/youtube-video-count-checker",
 	},
 	openGraph: {
-		title: "YouTube Video Count Checker Online Free - No Signup",
-		description: "Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel auditi",
-		url: "https://sopkit.github.io/youtube-video-count-checker/",
+		title: "Free YouTube Video Count Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Video Count Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
+		url: "https://sopkit.github.io/youtube-video-count-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Video Count Checker Online Free - Fast & Secure",
-		description: "Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel auditi",
+		title: "Free YouTube Video Count Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Video Count Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

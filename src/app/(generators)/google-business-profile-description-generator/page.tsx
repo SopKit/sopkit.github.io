@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "GBP Description Generator - Free Online Tool | SopKit",
-	description: "Generate optimized gbp description generator details. Instantly copy or share customized outputs.",
+	title: "Free GBP Description Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free GBP Description Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
 	keywords: "gbp description generator, google-business-profile-description-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/google-business-profile-description-generator/",
+		canonical: "https://sopkit.github.io/google-business-profile-description-generator",
 	},
 	openGraph: {
-		title: "GBP Description Generator - Free Online Tool | SopKit",
-		description: "Generate optimized gbp description generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/google-business-profile-description-generator/",
+		title: "Free GBP Description Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free GBP Description Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
+		url: "https://sopkit.github.io/google-business-profile-description-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "GBP Description Generator - Free Online Tool | SopKit",
-		description: "Generate optimized gbp description generator details. Instantly copy or share customized outputs.",
+		title: "Free GBP Description Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free GBP Description Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

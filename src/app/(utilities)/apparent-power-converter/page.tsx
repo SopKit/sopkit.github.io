@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Apparent Power Converter Online Free - No Signup | SopKit",
-	description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Apparent Power Converter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Apparent Power Converter online. Fast, secure browser-based utility with no registration. Try it free now.",
+	keywords: "apparent power converter, free online tool, no signup, apparent power converter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/apparent-power-converter/",
+		canonical: "https://sopkit.github.io/apparent-power-converter",
 	},
 	openGraph: {
-		title: "Apparent Power Converter Online Free - No Signup",
-		description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians. No signup, n",
-		url: "https://sopkit.github.io/apparent-power-converter/",
+		title: "Free Apparent Power Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Apparent Power Converter online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/apparent-power-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Apparent Power Converter Online Free - Fast & Secure",
-		description: "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians. No signup, n",
+		title: "Free Apparent Power Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Apparent Power Converter online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

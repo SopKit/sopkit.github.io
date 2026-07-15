@@ -5,23 +5,24 @@ import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
 
 
 export const metadata = {
-	title: "SSC Photo and Signature Resizer Online Free | SopKit",
-	description: "Resize and compress SSC photo (20-50KB) and signature (10-20KB) online for government exam forms. 100% compliant with SSC requirements. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free SSC Photo and Signature Resizer Online - No Signup | SopKit",
+	description: "Resize and compress files with our free SSC Photo and Signature Resizer online. Safe and private browser utility for government exam portal applications.",
+	keywords: "ssc photo and signature resizer, free online tool, no signup, ssc photo and signature resizer online, exam-tools, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ssc-photo-signature-resizer/",
+		canonical: "https://sopkit.github.io/ssc-photo-signature-resizer",
 	},
 	openGraph: {
-		title: "SSC Photo and Signature Resizer Online Free - No Signup | SopKit",
-		description: "Resize and compress SSC photo (20-50KB) and signature (10-20KB) online for government exam forms. 100% compliant with SSC requirements. No signup, no uploads, 1",
-		url: "https://sopkit.github.io/ssc-photo-signature-resizer/",
+		title: "Free SSC Photo and Signature Resizer Online - No Signup | SopKit",
+		description: "Resize and compress files with our free SSC Photo and Signature Resizer online. Safe and private browser utility for government exam portal applications.",
+		url: "https://sopkit.github.io/ssc-photo-signature-resizer",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "SSC Photo and Signature Resizer Online Free - Fast & Secure",
-		description: "Resize and compress SSC photo (20-50KB) and signature (10-20KB) online for government exam forms. 100% compliant with SSC requirements. No signup, no uploads, 1",
+		title: "Free SSC Photo and Signature Resizer Online - No Signup | SopKit",
+		description: "Resize and compress files with our free SSC Photo and Signature Resizer online. Safe and private browser utility for government exam portal applications.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

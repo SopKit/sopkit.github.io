@@ -4,24 +4,24 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Inflation Calculator - Buying Power Over Time | SopKit",
-	description: "See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.",
+	title: "Free Inflation Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Inflation Calculator online. Quick, accurate browser calculator with no registration. Easy to use.",
 	keywords: "inflation calculator, buying power calculator, future value of money, purchasing power calculator, inflation impact",
 	alternates: {
-		canonical: "https://sopkit.github.io/inflation-calculator/",
+		canonical: "https://sopkit.github.io/inflation-calculator",
 	},
 	openGraph: {
-		title: "Inflation Calculator - Buying Power Over Time | SopKit",
-		description: "See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.",
-		url: "https://sopkit.github.io/inflation-calculator/",
+		title: "Free Inflation Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Inflation Calculator online. Quick, accurate browser calculator with no registration. Easy to use.",
+		url: "https://sopkit.github.io/inflation-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Inflation Calculator - Buying Power Over Time | SopKit",
-		description: "See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.",
+		title: "Free Inflation Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Inflation Calculator online. Quick, accurate browser calculator with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

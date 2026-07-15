@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import RomanNumeralTool from "@/components/tools/built-ins/RomanNumeralTool";
 
 export const metadata = {
-	title: "Number to Roman Numerals Online Free - No Signup | SopKit",
-	description: "Free number to roman numerals tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Number to Roman Numerals Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Number to Roman Numerals online. Fast, secure browser-based utility with no registration. Try it free now.",
+	keywords: "number to roman numerals, free online tool, no signup, number to roman numerals online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/number-to-roman-numerals/",
+		canonical: "https://sopkit.github.io/number-to-roman-numerals",
 	},
 	openGraph: {
-		title: "Number to Roman Numerals Online Free - No Signup",
-		description: "Free number to roman numerals tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
-		url: "https://sopkit.github.io/number-to-roman-numerals/",
+		title: "Free Number to Roman Numerals Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Number to Roman Numerals online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/number-to-roman-numerals",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Number to Roman Numerals Online Free - Fast & Secure",
-		description: "Free number to roman numerals tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-bas",
+		title: "Free Number to Roman Numerals Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Number to Roman Numerals online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

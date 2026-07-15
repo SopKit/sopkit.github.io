@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Recurring Deposit (RD) Calculator Online Free | SopKit",
-	description: "Calculate the maturity amount and interest earned on your monthly Recurring Deposit (RD) investments. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Recurring Deposit (RD) Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Recurring Deposit (RD) Calculator online. Quick, accurate browser calculator with no registration.",
+	keywords: "recurring deposit (rd) calculator, free online tool, no signup, recurring deposit (rd) calculator online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/rd-calculator/",
+		canonical: "https://sopkit.github.io/rd-calculator",
 	},
 	openGraph: {
-		title: "Recurring Deposit (RD) Calculator Online Free - No Signup | SopKit",
-		description: "Calculate the maturity amount and interest earned on your monthly Recurring Deposit (RD) investments. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/rd-calculator/",
+		title: "Free Recurring Deposit (RD) Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Recurring Deposit (RD) Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/rd-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Recurring Deposit (RD) Calculator Online Free - Fast & Secure",
-		description: "Calculate the maturity amount and interest earned on your monthly Recurring Deposit (RD) investments. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Recurring Deposit (RD) Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Recurring Deposit (RD) Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

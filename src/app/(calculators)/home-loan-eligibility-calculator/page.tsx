@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Home Loan Eligibility Calculator - Free Online Tool | SopKit",
-	description: "Calculate your home loan eligibility calculator instantly. Free browser-based calculator with detailed breakdowns.",
+	title: "Free Home Loan Eligibility Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Home Loan Eligibility Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "home loan eligibility calculator, home-loan-eligibility-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/home-loan-eligibility-calculator/",
+		canonical: "https://sopkit.github.io/home-loan-eligibility-calculator",
 	},
 	openGraph: {
-		title: "Home Loan Eligibility Calculator - Free Online Tool | SopKit",
-		description: "Calculate your home loan eligibility calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/home-loan-eligibility-calculator/",
+		title: "Free Home Loan Eligibility Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Home Loan Eligibility Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/home-loan-eligibility-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Home Loan Eligibility Calculator - Free Online Tool | SopKit",
-		description: "Calculate your home loan eligibility calculator instantly. Free browser-based calculator with detailed breakdowns.",
+		title: "Free Home Loan Eligibility Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Home Loan Eligibility Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

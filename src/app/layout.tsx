@@ -12,7 +12,8 @@ import { PWARegistration } from "@/components/shared/PWARegistration";
 
 // Dynamic import for Stack Auth - heavy client bundle, only loaded when configured
 const StackAuthProvider = dynamic(
-	() => import("@/components/shared/StackAuthProvider")
+	() => import("@/components/shared/StackAuthProvider"),
+	{ ssr: false }
 );
 
 // Dynamic imports for below-fold / non-critical layout components

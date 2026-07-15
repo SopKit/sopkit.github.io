@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Text to Octal Converter Online Free - Developer Tools | SopKit",
-	description: "Convert text into octal numeric values instantly. Our free online converter provides base-8 representations for every character in your text for technical analysis. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Text to Octal Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free Text to Octal Converter online. Secure, local developer utility with no registration.",
+	keywords: "text to octal converter, free online tool, no signup, text to octal converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-octal-converter/",
+		canonical: "https://sopkit.github.io/text-to-octal-converter",
 	},
 	openGraph: {
-		title: "Text to Octal Converter Online Free - No Signup",
-		description: "Convert text into octal numeric values instantly. Our free online converter provides base-8 representations for every character in your text for technical analy",
-		url: "https://sopkit.github.io/text-to-octal-converter/",
+		title: "Free Text to Octal Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Text to Octal Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/text-to-octal-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Text to Octal Converter Online Free - Fast & Secure",
-		description: "Convert text into octal numeric values instantly. Our free online converter provides base-8 representations for every character in your text for technical analy",
+		title: "Free Text to Octal Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Text to Octal Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

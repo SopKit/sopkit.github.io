@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 
 export const metadata = {
-	title: "JavaScript Beautifier Online Free - Developer Tools | SopKit",
-	description: "Format and prettify your JavaScript code instantly. Our free online JS Beautifier improves code readability, fixes indentation, and helps you understand complex scripts easily. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JavaScript Beautifier Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JavaScript Beautifier online. Secure, local developer utility with no registration. 100% free.",
+	keywords: "javascript beautifier, free online tool, no signup, javascript beautifier online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/javascript-beautifier/",
+		canonical: "https://sopkit.github.io/javascript-beautifier",
 	},
 	openGraph: {
-		title: "JavaScript Beautifier Online Free - No Signup",
-		description: "Format and prettify your JavaScript code instantly. Our free online JS Beautifier improves code readability, fixes indentation, and helps you understand complex",
-		url: "https://sopkit.github.io/javascript-beautifier/",
+		title: "Free JavaScript Beautifier Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JavaScript Beautifier online. Secure, local developer utility with no registration. 100% free.",
+		url: "https://sopkit.github.io/javascript-beautifier",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JavaScript Beautifier Online Free - Fast & Secure",
-		description: "Format and prettify your JavaScript code instantly. Our free online JS Beautifier improves code readability, fixes indentation, and helps you understand complex",
+		title: "Free JavaScript Beautifier Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JavaScript Beautifier online. Secure, local developer utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,24 +4,24 @@ import AkillitvDownloader from "@/components/tools/downloaders/AkillitvDownloade
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free AkilliTv Video Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free AkilliTv Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
+	title: "Free Akillitv Video Downloader Online - No Signup | SopKit",
+	description: "Download, convert, and edit video files instantly with our free Akillitv Video Downloader online. Fast, secure, and private processing with no signup.",
 	keywords: "akillitv video downloader, free online tool, no signup, akillitv-video-downloader, free akillitv-video-downloader, Akillitv Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/akillitv-video-downloader/",
+		canonical: "https://sopkit.github.io/akillitv-video-downloader",
 	},
 	openGraph: {
-		title: "Free AkilliTv Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free AkilliTv Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://sopkit.github.io/akillitv-video-downloader/",
+		title: "Free Akillitv Video Downloader Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Akillitv Video Downloader online. Fast, secure, and private processing with no signup.",
+		url: "https://sopkit.github.io/akillitv-video-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free AkilliTv Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free AkilliTv Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
+		title: "Free Akillitv Video Downloader Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Akillitv Video Downloader online. Fast, secure, and private processing with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

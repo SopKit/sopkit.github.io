@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSerialization from "@/components/tools/built-ins/BuiltInSerialization";
 
 export const metadata = {
-	title: "JSON to TSV Converter Online Free - Developer Tools | SopKit",
-	description: "Convert JSON data to Tab-Separated Values (TSV) format instantly. Our free online converter helps you prepare data for Excel and other spreadsheet applications. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JSON to TSV Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JSON to TSV Converter online. Secure, local developer utility with no registration. 100% free.",
+	keywords: "json to tsv converter, free online tool, no signup, json to tsv converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-to-tsv-converter/",
+		canonical: "https://sopkit.github.io/json-to-tsv-converter",
 	},
 	openGraph: {
-		title: "JSON to TSV Converter Online Free - No Signup",
-		description: "Convert JSON data to Tab-Separated Values (TSV) format instantly. Our free online converter helps you prepare data for Excel and other spreadsheet applications.",
-		url: "https://sopkit.github.io/json-to-tsv-converter/",
+		title: "Free JSON to TSV Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON to TSV Converter online. Secure, local developer utility with no registration. 100% free.",
+		url: "https://sopkit.github.io/json-to-tsv-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JSON to TSV Converter Online Free - Fast & Secure",
-		description: "Convert JSON data to Tab-Separated Values (TSV) format instantly. Our free online converter helps you prepare data for Excel and other spreadsheet applications.",
+		title: "Free JSON to TSV Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON to TSV Converter online. Secure, local developer utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -9,15 +9,15 @@ import { Wrench, ArrowRight, Sparkles } from "lucide-react";
 
 export const metadata = {
 	title: "Free Other Tools Online - No Signup | SopKit",
-	description: "Free Other Tools online tool. Fast and secure.",
+	description: "Solve everyday digital tasks instantly using our free Other Tools online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 	keywords: "utility tools, free online tool, no signup, other-tools, Other Tools, free other-tools, Other Tools online, online utility, web calculator, free converter, browser tool, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/other-tools/",
+		canonical: "https://sopkit.github.io/other-tools",
 	},
 	openGraph: {
 		title: "Free Other Tools Online - No Signup | SopKit",
-		description: "Free Other Tools online tool. Fast and secure.",
-		url: "https://sopkit.github.io/other-tools/",
+		description: "Solve everyday digital tasks instantly using our free Other Tools online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/other-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -25,7 +25,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Other Tools Online - No Signup | SopKit",
-		description: "Free Other Tools online tool. Fast and secure.",
+		description: "Solve everyday digital tasks instantly using our free Other Tools online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

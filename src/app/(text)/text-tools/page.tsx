@@ -9,15 +9,15 @@ import { Type, ArrowRight } from "lucide-react";
 
 export const metadata = {
 	title: "Free Text Tools Online - No Signup | SopKit",
-	description: "Format, convert, and manipulate text content",
+	description: "Solve everyday digital tasks instantly using our free Text Tools online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 	keywords: "text tools, word counter, case converter, text cleaner, online text tools, SopKit, text-tools, free text-tools, text tools online, text tool, online text utility, free text converter",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-tools/",
+		canonical: "https://sopkit.github.io/text-tools",
 	},
 	openGraph: {
 		title: "Free Text Tools Online - No Signup | SopKit",
-		description: "Format, convert, and manipulate text content",
-		url: "https://sopkit.github.io/text-tools/",
+		description: "Solve everyday digital tasks instantly using our free Text Tools online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/text-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -25,7 +25,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Text Tools Online - No Signup | SopKit",
-		description: "Format, convert, and manipulate text content",
+		description: "Solve everyday digital tasks instantly using our free Text Tools online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

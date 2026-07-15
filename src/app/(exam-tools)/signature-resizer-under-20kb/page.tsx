@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Resize and compress files with our free Signature Resizer Under 20KB online. Safe and private browser utility for government exam portal applications.",
 	keywords: "signature-resizer-under-20kb, Signature Resizer Under 20KB, signature compressor 20kb, signature crop 20kb, exam signature size, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/signature-resizer-under-20kb/",
+		canonical: "https://sopkit.github.io/signature-resizer-under-20kb",
 	},
 	openGraph: {
 		title: "Free Signature Resizer Under 20KB Online - No Signup | SopKit",
 		description: "Resize and compress files with our free Signature Resizer Under 20KB online. Safe and private browser utility for government exam portal applications.",
-		url: "https://sopkit.github.io/signature-resizer-under-20kb/",
+		url: "https://sopkit.github.io/signature-resizer-under-20kb",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

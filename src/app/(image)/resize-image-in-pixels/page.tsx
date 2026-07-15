@@ -5,15 +5,15 @@ import ResizeImageCm from "@/components/tools/image/ResizeImageCm";
 
 export const metadata = {
 	title: "Free Resize Image in Pixels Online - No Signup | SopKit",
-	description: "Resize your images by specifying exact width and height in pixels (px) for web, social media, and digital platforms.",
+	description: "Edit, convert, and compress images with our free Resize Image in Pixels online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
 	keywords: "resize-image-in-pixels, Resize Image in Pixels",
 	alternates: {
-		canonical: "https://sopkit.github.io/resize-image-in-pixels/",
+		canonical: "https://sopkit.github.io/resize-image-in-pixels",
 	},
 	openGraph: {
 		title: "Free Resize Image in Pixels Online - No Signup | SopKit",
-		description: "Resize your images by specifying exact width and height in pixels (px) for web, social media, and digital platforms.",
-		url: "https://sopkit.github.io/resize-image-in-pixels/",
+		description: "Edit, convert, and compress images with our free Resize Image in Pixels online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+		url: "https://sopkit.github.io/resize-image-in-pixels",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Resize Image in Pixels Online - No Signup | SopKit",
-		description: "Resize your images by specifying exact width and height in pixels (px) for web, social media, and digital platforms.",
+		description: "Edit, convert, and compress images with our free Resize Image in Pixels online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

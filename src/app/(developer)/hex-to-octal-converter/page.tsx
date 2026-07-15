@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "HEX to Octal Converter Online Free - Developer Tools | SopKit",
-	description: "Convert hexadecimal values to octal format instantly. Our free online converter helps with computer science base transformations and data processing in your browser. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free HEX to Octal Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free HEX to Octal Converter online. Secure, local developer utility with no registration.",
+	keywords: "hex to octal converter, free online tool, no signup, hex to octal converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/hex-to-octal-converter/",
+		canonical: "https://sopkit.github.io/hex-to-octal-converter",
 	},
 	openGraph: {
-		title: "HEX to Octal Converter Online Free - No Signup",
-		description: "Convert hexadecimal values to octal format instantly. Our free online converter helps with computer science base transformations and data processing in your bro",
-		url: "https://sopkit.github.io/hex-to-octal-converter/",
+		title: "Free HEX to Octal Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free HEX to Octal Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/hex-to-octal-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "HEX to Octal Converter Online Free - Fast & Secure",
-		description: "Convert hexadecimal values to octal format instantly. Our free online converter helps with computer science base transformations and data processing in your bro",
+		title: "Free HEX to Octal Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free HEX to Octal Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

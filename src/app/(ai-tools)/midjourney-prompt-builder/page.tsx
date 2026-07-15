@@ -5,23 +5,23 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Midjourney Prompt Builder Online - No Signup | SopKit",
-	description: "Create highly optimized, rich Midjourney prompt command strings instantly. Choose from various art mediums, lighting parameters, and aspect ratios. No signup required.",
+	description: "Solve everyday digital tasks instantly using our free Midjourney Prompt Builder online. Fast, secure browser-based utility with no registration. Free & secure.",
 	keywords: "midjourney prompt builder, midjourney prompt generator, ai art prompt helper, free online prompt builder, SopKit, midjourney-prompt-builder, free midjourney-prompt-builder, midjourney prompt generator online, online prompt builder, free art helper, midjourney prompt parameters, imagine prompt creator",
 	alternates: {
-		canonical: "https://sopkit.github.io/midjourney-prompt-builder/",
+		canonical: "https://sopkit.github.io/midjourney-prompt-builder",
 	},
 	openGraph: {
 		title: "Free Midjourney Prompt Builder Online - No Signup | SopKit",
-		description: "Create highly optimized, rich Midjourney prompt command strings instantly. Choose from various art mediums, lighting parameters, and aspect ratios. No signup required.",
-		url: "https://sopkit.github.io/midjourney-prompt-builder/",
+		description: "Solve everyday digital tasks instantly using our free Midjourney Prompt Builder online. Fast, secure browser-based utility with no registration. Free & secure.",
+		url: "https://sopkit.github.io/midjourney-prompt-builder",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Midjourney Prompt Builder Online - Fast & Secure",
-		description: "Create highly optimized, rich Midjourney prompt command strings instantly. Choose from various art mediums, lighting parameters, and aspect ratios. No signup required.",
+		title: "Free Midjourney Prompt Builder Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Midjourney Prompt Builder online. Fast, secure browser-based utility with no registration. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

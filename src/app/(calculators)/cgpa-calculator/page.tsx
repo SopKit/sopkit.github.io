@@ -5,15 +5,15 @@ import AcademicGradesCalculator from "@/components/tools/calculators/AcademicGra
 
 export const metadata = {
 	title: "Free CGPA Calculator Online - No Signup | SopKit",
-	description: "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.",
+	description: "Compute rates, taxes, averages, and conversions with our free CGPA Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 	keywords: "cgpa-calculator, CGPA Calculator, calculate cgpa, semester cgpa calculator, cumulative grade point average, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/cgpa-calculator/",
+		canonical: "https://sopkit.github.io/cgpa-calculator",
 	},
 	openGraph: {
 		title: "Free CGPA Calculator Online - No Signup | SopKit",
-		description: "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.",
-		url: "https://sopkit.github.io/cgpa-calculator/",
+		description: "Compute rates, taxes, averages, and conversions with our free CGPA Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
+		url: "https://sopkit.github.io/cgpa-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free CGPA Calculator Online - No Signup | SopKit",
-		description: "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.",
+		description: "Compute rates, taxes, averages, and conversions with our free CGPA Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

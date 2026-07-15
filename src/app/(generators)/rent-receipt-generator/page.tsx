@@ -5,15 +5,15 @@ import RentReceiptGenerator from "@/components/tools/generators/RentReceiptGener
 
 export const metadata = {
 	title: "Free Rent Receipt Generator Online - No Signup | SopKit",
-	description: "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
+	description: "Create custom content with our free Rent Receipt Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
 	keywords: "rent-receipt-generator, Rent Receipt Generator, print rent receipt, hra rent receipt, rent slip maker, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/rent-receipt-generator/",
+		canonical: "https://sopkit.github.io/rent-receipt-generator",
 	},
 	openGraph: {
 		title: "Free Rent Receipt Generator Online - No Signup | SopKit",
-		description: "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
-		url: "https://sopkit.github.io/rent-receipt-generator/",
+		description: "Create custom content with our free Rent Receipt Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
+		url: "https://sopkit.github.io/rent-receipt-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Rent Receipt Generator Online - No Signup | SopKit",
-		description: "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
+		description: "Create custom content with our free Rent Receipt Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

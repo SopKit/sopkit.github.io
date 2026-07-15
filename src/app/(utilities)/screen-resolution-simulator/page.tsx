@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ScreenResolutionTool from "@/components/tools/built-ins/ScreenResolutionTool";
 
 export const metadata = {
-	title: "Screen Resolution Simulator Online Free - No Signup | SopKit",
-	description: "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Screen Resolution Simulator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Screen Resolution Simulator online. Fast, secure browser-based utility with no registration. Easy to use.",
+	keywords: "screen resolution simulator, free online tool, no signup, screen resolution simulator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/screen-resolution-simulator/",
+		canonical: "https://sopkit.github.io/screen-resolution-simulator",
 	},
 	openGraph: {
-		title: "Screen Resolution Simulator Online Free - No Signup",
-		description: "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-",
-		url: "https://sopkit.github.io/screen-resolution-simulator/",
+		title: "Free Screen Resolution Simulator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Screen Resolution Simulator online. Fast, secure browser-based utility with no registration. Easy to use.",
+		url: "https://sopkit.github.io/screen-resolution-simulator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Screen Resolution Simulator Online Free - Fast & Secure",
-		description: "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-",
+		title: "Free Screen Resolution Simulator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Screen Resolution Simulator online. Fast, secure browser-based utility with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

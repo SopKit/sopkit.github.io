@@ -4,24 +4,24 @@ import NinegagDownloader from "@/components/tools/downloaders/NinegagDownloader"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free NineGag Video Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free NineGag Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
+	title: "Free Ninegag Video Downloader Online - No Signup | SopKit",
+	description: "Download, convert, and edit video files instantly with our free Ninegag Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
 	keywords: "ninegag video downloader, free online tool, no signup, ninegag-video-downloader, free ninegag-video-downloader, Ninegag Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ninegag-video-downloader/",
+		canonical: "https://sopkit.github.io/ninegag-video-downloader",
 	},
 	openGraph: {
-		title: "Free NineGag Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free NineGag Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://sopkit.github.io/ninegag-video-downloader/",
+		title: "Free Ninegag Video Downloader Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Ninegag Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
+		url: "https://sopkit.github.io/ninegag-video-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free NineGag Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free NineGag Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
+		title: "Free Ninegag Video Downloader Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Ninegag Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

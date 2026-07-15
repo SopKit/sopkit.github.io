@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Parts Per Converter Online Free - No Signup | SopKit",
-	description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Parts Per Converter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Parts Per Converter online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "parts per converter, free online tool, no signup, parts per converter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/parts-per-converter/",
+		canonical: "https://sopkit.github.io/parts-per-converter",
 	},
 	openGraph: {
-		title: "Parts Per Converter Online Free - No Signup",
-		description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
-		url: "https://sopkit.github.io/parts-per-converter/",
+		title: "Free Parts Per Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Parts Per Converter online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/parts-per-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Parts Per Converter Online Free - Fast & Secure",
-		description: "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based to",
+		title: "Free Parts Per Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Parts Per Converter online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

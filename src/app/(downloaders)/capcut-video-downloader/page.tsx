@@ -5,15 +5,15 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Capcut Video Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Capcut Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
+	description: "Download, convert, and edit video files instantly with our free Capcut Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
 	keywords: "capcut video downloader, free online tool, no signup, capcut-video-downloader, free capcut-video-downloader, Capcut Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/capcut-video-downloader/",
+		canonical: "https://sopkit.github.io/capcut-video-downloader",
 	},
 	openGraph: {
 		title: "Free Capcut Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Capcut Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://sopkit.github.io/capcut-video-downloader/",
+		description: "Download, convert, and edit video files instantly with our free Capcut Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
+		url: "https://sopkit.github.io/capcut-video-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Capcut Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Capcut Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
+		description: "Download, convert, and edit video files instantly with our free Capcut Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

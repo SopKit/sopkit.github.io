@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Calorie Deficit Calculator - Daily Calories for Weight Loss | SopKit",
-	description: "Find the daily calorie deficit you need to lose weight. Free calculator estimates your maintenance calories (TDEE) and target intake for safe, steady fat loss. No signup, works in your browser.",
+	title: "Free Calorie Deficit Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Calorie Deficit Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "calorie deficit calculator, weight loss calculator, tdee calculator, daily calorie intake, fat loss calculator, maintenance calories",
 	alternates: {
-		canonical: "https://sopkit.github.io/calorie-deficit-calculator/",
+		canonical: "https://sopkit.github.io/calorie-deficit-calculator",
 	},
 	openGraph: {
-		title: "Calorie Deficit Calculator - Daily Calories for Weight Loss",
-		description: "Find the daily calorie deficit you need to lose weight. Estimate your TDEE and target intake for safe, steady fat loss. Free, no signup.",
-		url: "https://sopkit.github.io/calorie-deficit-calculator/",
+		title: "Free Calorie Deficit Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Calorie Deficit Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/calorie-deficit-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Calorie Deficit Calculator - Daily Calories for Weight Loss",
-		description: "Find the daily calorie deficit you need to lose weight. Estimate your TDEE and target intake for safe, steady fat loss. Free, no signup.",
+		title: "Free Calorie Deficit Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Calorie Deficit Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import PhotoEnhancerTool from "@/components/tools/image/PhotoEnhancerTool";
 
 export const metadata = {
-	title: "Photo Enhancer Online Free - Compress & Convert Images | SopKit",
-	description: "Enhance photo quality with AI-powered image enhancement No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Photo Enhancer Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Photo Enhancer online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
+	keywords: "photo enhancer, free online tool, no signup, photo enhancer online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/photo-enhancer/",
+		canonical: "https://sopkit.github.io/photo-enhancer",
 	},
 	openGraph: {
-		title: "Photo Enhancer Online Free - No Signup",
-		description: "Enhance photo quality with AI-powered image enhancement No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/photo-enhancer/",
+		title: "Free Photo Enhancer Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Photo Enhancer online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
+		url: "https://sopkit.github.io/photo-enhancer",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Photo Enhancer Online Free - Fast & Secure",
-		description: "Enhance photo quality with AI-powered image enhancement No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Photo Enhancer Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Photo Enhancer online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

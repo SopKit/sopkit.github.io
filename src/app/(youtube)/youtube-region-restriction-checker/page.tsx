@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "YouTube Region Restriction Checker Online Free - No Signup | SopKit",
-	description: "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your content. Fast and accurate. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Region Restriction Checker Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Region Restriction Checker online. Fast, secure browser-based utility with no registration.",
+	keywords: "youtube region restriction checker, free online tool, no signup, youtube region restriction checker online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-region-restriction-checker/",
+		canonical: "https://sopkit.github.io/youtube-region-restriction-checker",
 	},
 	openGraph: {
-		title: "YouTube Region Restriction Checker Online Free - No Signup",
-		description: "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your content. F",
-		url: "https://sopkit.github.io/youtube-region-restriction-checker/",
+		title: "Free YouTube Region Restriction Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Region Restriction Checker online. Fast, secure browser-based utility with no registration.",
+		url: "https://sopkit.github.io/youtube-region-restriction-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Region Restriction Checker Online Free - Fast & Secure",
-		description: "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your content. F",
+		title: "Free YouTube Region Restriction Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Region Restriction Checker online. Fast, secure browser-based utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import TextGeneratorTool from "@/components/tools/generators/TextGeneratorTool";
 
 export const metadata = {
-	title: "Poetry Generator Online Free - No Signup | SopKit",
-	description: "Professional Poetry Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Poetry Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Poetry Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+	keywords: "poetry generator, free online tool, no signup, poetry generator online, generators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/poetry-generator/",
+		canonical: "https://sopkit.github.io/poetry-generator",
 	},
 	openGraph: {
-		title: "Poetry Generator Online Free - No Signup",
-		description: "Professional Poetry Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/poetry-generator/",
+		title: "Free Poetry Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Poetry Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/poetry-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Poetry Generator Online Free - Fast & Secure",
-		description: "Professional Poetry Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Poetry Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Poetry Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

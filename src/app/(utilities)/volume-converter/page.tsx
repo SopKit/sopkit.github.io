@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Volume Converter Online Free - No Signup | SopKit",
-	description: "Free volume converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Volume Converter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Volume Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
+	keywords: "volume converter, free online tool, no signup, volume converter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/volume-converter/",
+		canonical: "https://sopkit.github.io/volume-converter",
 	},
 	openGraph: {
-		title: "Volume Converter Online Free - No Signup",
-		description: "Free volume converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/volume-converter/",
+		title: "Free Volume Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Volume Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/volume-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Volume Converter Online Free - Fast & Secure",
-		description: "Free volume converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Volume Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Volume Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

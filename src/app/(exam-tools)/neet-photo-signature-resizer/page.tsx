@@ -5,23 +5,24 @@ import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
 
 
 export const metadata = {
-	title: "NEET Photo & Signature Resizer Online Free | SopKit",
-	description: "Resize and compress NEET photo and signature for application forms. Adjust size, dimensions, format, and file limit online. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free NEET Photo & Signature Resizer Online - No Signup | SopKit",
+	description: "Resize and compress files with our free NEET Photo & Signature Resizer online. Safe and private browser utility for government exam portal applications.",
+	keywords: "neet photo & signature resizer, free online tool, no signup, neet photo & signature resizer online, exam-tools, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/neet-photo-signature-resizer/",
+		canonical: "https://sopkit.github.io/neet-photo-signature-resizer",
 	},
 	openGraph: {
-		title: "NEET Photo & Signature Resizer Online Free - No Signup | SopKit",
-		description: "Resize and compress NEET photo and signature for application forms. Adjust size, dimensions, format, and file limit online. No signup, no uploads, 100% private ",
-		url: "https://sopkit.github.io/neet-photo-signature-resizer/",
+		title: "Free NEET Photo & Signature Resizer Online - No Signup | SopKit",
+		description: "Resize and compress files with our free NEET Photo & Signature Resizer online. Safe and private browser utility for government exam portal applications.",
+		url: "https://sopkit.github.io/neet-photo-signature-resizer",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "NEET Photo & Signature Resizer Online Free - Fast & Secure",
-		description: "Resize and compress NEET photo and signature for application forms. Adjust size, dimensions, format, and file limit online. No signup, no uploads, 100% private ",
+		title: "Free NEET Photo & Signature Resizer Online - No Signup | SopKit",
+		description: "Resize and compress files with our free NEET Photo & Signature Resizer online. Safe and private browser utility for government exam portal applications.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

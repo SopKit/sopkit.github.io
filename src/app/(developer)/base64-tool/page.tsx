@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import Base64Tool from "@/components/tools/developer/Base64Tool";
 
 export const metadata = {
-	title: "Base64 Tool Online Free - Developer Tools | SopKit",
-	description: "Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text format. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Base64 Tool Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free Base64 Tool online. Secure, local developer utility with no registration. No signup required.",
+	keywords: "base64 tool, free online tool, no signup, base64 tool online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/base64-tool/",
+		canonical: "https://sopkit.github.io/base64-tool",
 	},
 	openGraph: {
-		title: "Base64 Tool Online Free - No Signup",
-		description: "Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text forma",
-		url: "https://sopkit.github.io/base64-tool/",
+		title: "Free Base64 Tool Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Base64 Tool online. Secure, local developer utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/base64-tool",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Base64 Tool Online Free - Fast & Secure",
-		description: "Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text forma",
+		title: "Free Base64 Tool Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Base64 Tool online. Secure, local developer utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

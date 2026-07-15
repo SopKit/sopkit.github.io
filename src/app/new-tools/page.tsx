@@ -4,10 +4,25 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Info, Layers, Wrench } from "lucide-react";
 
 export const metadata = {
-	title: "Newly Added Tools & Changelog - SopKit",
-	description: "Track newly added tools, release dates, and design intents for the SopKit toolkit expansion.",
+	title: "Free Newly Added Tools Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Newly Added Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
+	keywords: "newly added tools, free online tool, no signup, newly added tools online, others, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/new-tools/",
+		canonical: "https://sopkit.github.io/new-tools",
+	},
+	openGraph: {
+		title: "Free Newly Added Tools Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Newly Added Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/new-tools",
+		siteName: "SopKit",
+		images: [{ url: "/og-image.jpg" }],
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Free Newly Added Tools Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Newly Added Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

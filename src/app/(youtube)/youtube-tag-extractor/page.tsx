@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import DownloaderEngine from "@/components/tools/downloaders/DownloaderEngine";
 
 export const metadata = {
-	title: "YouTube Tag Extractor Online Free - No Signup | SopKit",
-	description: "Extract hidden tags from any YouTube video instantly. Our free online tool helps you discover the keywords used by top-performing creators to boost your own video SEO. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Tag Extractor Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Tag Extractor online. Fast, secure browser-based utility with no registration. No signup required.",
+	keywords: "youtube tag extractor, free online tool, no signup, youtube tag extractor online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-tag-extractor/",
+		canonical: "https://sopkit.github.io/youtube-tag-extractor",
 	},
 	openGraph: {
-		title: "YouTube Tag Extractor Online Free - No Signup",
-		description: "Extract hidden tags from any YouTube video instantly. Our free online tool helps you discover the keywords used by top-performing creators to boost your own vid",
-		url: "https://sopkit.github.io/youtube-tag-extractor/",
+		title: "Free YouTube Tag Extractor Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Tag Extractor online. Fast, secure browser-based utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/youtube-tag-extractor",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Tag Extractor Online Free - Fast & Secure",
-		description: "Extract hidden tags from any YouTube video instantly. Our free online tool helps you discover the keywords used by top-performing creators to boost your own vid",
+		title: "Free YouTube Tag Extractor Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Tag Extractor online. Fast, secure browser-based utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

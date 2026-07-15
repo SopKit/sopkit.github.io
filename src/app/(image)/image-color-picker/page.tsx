@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Pro Image Color Picker Online Free | SopKit",
-	description: "Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-perfect picker. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Pro Image Color Picker Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Pro Image Color Picker online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+	keywords: "pro image color picker, free online tool, no signup, pro image color picker online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-color-picker/",
+		canonical: "https://sopkit.github.io/image-color-picker",
 	},
 	openGraph: {
-		title: "Pro Image Color Picker Online Free - No Signup | SopKit",
-		description: "Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-perfect picker. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/image-color-picker/",
+		title: "Free Pro Image Color Picker Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Pro Image Color Picker online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+		url: "https://sopkit.github.io/image-color-picker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Pro Image Color Picker Online Free - Fast & Secure",
-		description: "Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-perfect picker. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Pro Image Color Picker Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Pro Image Color Picker online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

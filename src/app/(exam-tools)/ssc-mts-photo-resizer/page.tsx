@@ -14,24 +14,27 @@ const relatedToolIds = [
 ];
 
 export const metadata = {
-	title: "SSC MTS Photo Resizer - Resize Photo & Signature | SopKit",
-	description: "Free online SSC MTS photo resizer tool. Resize passport photos to 3.5 x 4.5 cm (20KB - 50KB) and signatures to 10KB - 20KB. Browser-based, private, and fast.",
-	alternates: { canonical: "https://sopkit.github.io/ssc-mts-photo-resizer/" },
+	title: "Free SSC MTS Photo Resizer Online - No Signup | SopKit",
+	description: "Resize and compress files with our free SSC MTS Photo Resizer online. Safe and private browser utility for government exam portal applications. Try it free now.",
+	keywords: "ssc mts photo resizer, free online tool, no signup, ssc mts photo resizer online, exam-tools, SopKit",
+	alternates: {
+		canonical: "https://sopkit.github.io/ssc-mts-photo-resizer",
+	},
 	openGraph: {
-		title: "SSC MTS Photo Resizer - Resize Photo & Signature | SopKit",
-		description: "Resize and compress your passport photo and signature to meet the official SSC MTS online application requirements.",
-		url: "https://sopkit.github.io/ssc-mts-photo-resizer/",
+		title: "Free SSC MTS Photo Resizer Online - No Signup | SopKit",
+		description: "Resize and compress files with our free SSC MTS Photo Resizer online. Safe and private browser utility for government exam portal applications. Try it free now.",
+		url: "https://sopkit.github.io/ssc-mts-photo-resizer",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
-		type: "website"
+		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "SSC MTS Photo Resizer - Resize Photo & Signature | SopKit",
-		description: "Free browser-based photo resizer for SSC MTS forms. Private, quick, and meets all official criteria.",
-		images: ["/og-image.jpg"]
+		title: "Free SSC MTS Photo Resizer Online - No Signup | SopKit",
+		description: "Resize and compress files with our free SSC MTS Photo Resizer online. Safe and private browser utility for government exam portal applications. Try it free now.",
+		images: ["/og-image.jpg"],
 	},
-	robots: { index: true, follow: true }
+	robots: { index: true, follow: true },
 };
 
 export default async function SscMtsResizerPage() {

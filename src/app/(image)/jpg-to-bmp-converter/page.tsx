@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "JPG to BMP Converter Online Free - Compress & Convert Images | SopKit",
-	description: "Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading files to any server. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JPG to BMP Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free JPG to BMP Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+	keywords: "jpg to bmp converter, free online tool, no signup, jpg to bmp converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/jpg-to-bmp-converter/",
+		canonical: "https://sopkit.github.io/jpg-to-bmp-converter",
 	},
 	openGraph: {
-		title: "JPG to BMP Converter Online Free - No Signup",
-		description: "Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading ",
-		url: "https://sopkit.github.io/jpg-to-bmp-converter/",
+		title: "Free JPG to BMP Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free JPG to BMP Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/jpg-to-bmp-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JPG to BMP Converter Online Free - Fast & Secure",
-		description: "Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading ",
+		title: "Free JPG to BMP Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free JPG to BMP Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

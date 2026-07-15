@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "ICO to PNG Converter Online Free | SopKit",
-	description: "Extract PNG images from ICO icon files. Perfect for web developers and designers. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free ICO to PNG Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free ICO to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+	keywords: "ico to png converter, free online tool, no signup, ico to png converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ico-to-png/",
+		canonical: "https://sopkit.github.io/ico-to-png",
 	},
 	openGraph: {
-		title: "ICO to PNG Converter Online Free - No Signup | SopKit",
-		description: "Extract PNG images from ICO icon files. Perfect for web developers and designers. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/ico-to-png/",
+		title: "Free ICO to PNG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free ICO to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/ico-to-png",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "ICO to PNG Converter Online Free - Fast & Secure",
-		description: "Extract PNG images from ICO icon files. Perfect for web developers and designers. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free ICO to PNG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free ICO to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

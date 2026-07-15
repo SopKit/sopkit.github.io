@@ -4,24 +4,24 @@ import TikTokMP3Converter from "@/components/tools/downloaders/TikTokMP3Converte
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Shrink Mp3 Size Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Shrink Mp3 Size online. High-speed downloading with no signup needed. 100% free and secure.",
+	title: "Free Shrink MP3 Size Online - No Signup | SopKit",
+	description: "Process, edit, and convert audio files with our free Shrink MP3 Size online. High-quality output and private browser-based tools with no signup. Free & secure.",
 	keywords: "shrink mp3 size, free online tool, no signup, shrink-mp3-size, free shrink-mp3-size, Shrink Mp3 Size online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/shrink-mp3-size/",
+		canonical: "https://sopkit.github.io/shrink-mp3-size",
 	},
 	openGraph: {
-		title: "Free Shrink Mp3 Size Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Shrink Mp3 Size online. High-speed downloading with no signup needed. 100% free and secure.",
-		url: "https://sopkit.github.io/shrink-mp3-size/",
+		title: "Free Shrink MP3 Size Online - No Signup | SopKit",
+		description: "Process, edit, and convert audio files with our free Shrink MP3 Size online. High-quality output and private browser-based tools with no signup. Free & secure.",
+		url: "https://sopkit.github.io/shrink-mp3-size",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Shrink Mp3 Size Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Shrink Mp3 Size online. High-speed downloading with no signup needed. 100% free and secure.",
+		title: "Free Shrink MP3 Size Online - No Signup | SopKit",
+		description: "Process, edit, and convert audio files with our free Shrink MP3 Size online. High-quality output and private browser-based tools with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

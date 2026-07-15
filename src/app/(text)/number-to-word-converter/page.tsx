@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import WordCounterTool from "@/components/tools/text/WordCounterTool";
 
 export const metadata = {
-	title: "Number to Word Converter Online Free - No Signup | SopKit",
-	description: "Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple formats and large numbers. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Number to Word Converter Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Number to Word Converter online. Fast and private browser utility with no signup. 100% free.",
+	keywords: "number to word converter, free online tool, no signup, number to word converter online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/number-to-word-converter/",
+		canonical: "https://sopkit.github.io/number-to-word-converter",
 	},
 	openGraph: {
-		title: "Number to Word Converter Online Free - No Signup",
-		description: "Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple forma",
-		url: "https://sopkit.github.io/number-to-word-converter/",
+		title: "Free Number to Word Converter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Number to Word Converter online. Fast and private browser utility with no signup. 100% free.",
+		url: "https://sopkit.github.io/number-to-word-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Number to Word Converter Online Free - Fast & Secure",
-		description: "Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple forma",
+		title: "Free Number to Word Converter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Number to Word Converter online. Fast and private browser utility with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

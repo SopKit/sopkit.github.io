@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Slogan Generator - Free Online Tool | SopKit",
-	description: "Generate optimized slogan generator details. Instantly copy or share customized outputs.",
+	title: "Free Slogan Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Slogan Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 	keywords: "slogan generator, slogan-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/slogan-generator/",
+		canonical: "https://sopkit.github.io/slogan-generator",
 	},
 	openGraph: {
-		title: "Slogan Generator - Free Online Tool | SopKit",
-		description: "Generate optimized slogan generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/slogan-generator/",
+		title: "Free Slogan Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Slogan Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/slogan-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Slogan Generator - Free Online Tool | SopKit",
-		description: "Generate optimized slogan generator details. Instantly copy or share customized outputs.",
+		title: "Free Slogan Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Slogan Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

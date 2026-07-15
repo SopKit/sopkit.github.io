@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Currency Converter Online Free - No Signup | SopKit",
-	description: "Convert currencies with real-time exchange rates instantly. Our free online tool supports all major global currencies for travel, business, and financial planning. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Currency Converter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Currency Converter online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "currency converter, free online tool, no signup, currency converter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/currency-converter/",
+		canonical: "https://sopkit.github.io/currency-converter",
 	},
 	openGraph: {
-		title: "Currency Converter Online Free - No Signup",
-		description: "Convert currencies with real-time exchange rates instantly. Our free online tool supports all major global currencies for travel, business, and financial planni",
-		url: "https://sopkit.github.io/currency-converter/",
+		title: "Free Currency Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Currency Converter online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/currency-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Currency Converter Online Free - Fast & Secure",
-		description: "Convert currencies with real-time exchange rates instantly. Our free online tool supports all major global currencies for travel, business, and financial planni",
+		title: "Free Currency Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Currency Converter online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

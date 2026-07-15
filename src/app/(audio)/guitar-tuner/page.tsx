@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import GuitarTunerTool from "@/components/tools/audio/GuitarTunerTool";
 
 export const metadata = {
-	title: "Guitar Tuner Online Free - No Signup | SopKit",
-	description: "Free online guitar tuner. Uses your microphone to tune your guitar accurately. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Guitar Tuner Online - No Signup | SopKit",
+	description: "Process, edit, and convert audio files with our free Guitar Tuner online. High-quality output and private browser-based tools with no signup. Try it free now.",
+	keywords: "guitar tuner, free online tool, no signup, guitar tuner online, audio, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/guitar-tuner/",
+		canonical: "https://sopkit.github.io/guitar-tuner",
 	},
 	openGraph: {
-		title: "Guitar Tuner Online Free - No Signup",
-		description: "Free online guitar tuner. Uses your microphone to tune your guitar accurately. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/guitar-tuner/",
+		title: "Free Guitar Tuner Online - No Signup | SopKit",
+		description: "Process, edit, and convert audio files with our free Guitar Tuner online. High-quality output and private browser-based tools with no signup. Try it free now.",
+		url: "https://sopkit.github.io/guitar-tuner",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Guitar Tuner Online Free - Fast & Secure",
-		description: "Free online guitar tuner. Uses your microphone to tune your guitar accurately. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Guitar Tuner Online - No Signup | SopKit",
+		description: "Process, edit, and convert audio files with our free Guitar Tuner online. High-quality output and private browser-based tools with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

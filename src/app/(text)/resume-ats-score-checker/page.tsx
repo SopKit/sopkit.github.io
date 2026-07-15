@@ -5,23 +5,24 @@ import ResumeATSChecker from "@/components/tools/impl/ResumeATSChecker";
 
 
 export const metadata = {
-	title: "Resume ATS Score Checker Online Free | SopKit",
-	description: "Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professionals. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Resume ATS Score Checker Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Resume ATS Score Checker online. Fast and private browser utility with no signup. 100% free.",
+	keywords: "resume ats score checker, free online tool, no signup, resume ats score checker online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/resume-ats-score-checker/",
+		canonical: "https://sopkit.github.io/resume-ats-score-checker",
 	},
 	openGraph: {
-		title: "Resume ATS Score Checker Online Free - No Signup | SopKit",
-		description: "Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professio",
-		url: "https://sopkit.github.io/resume-ats-score-checker/",
+		title: "Free Resume ATS Score Checker Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Resume ATS Score Checker online. Fast and private browser utility with no signup. 100% free.",
+		url: "https://sopkit.github.io/resume-ats-score-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Resume ATS Score Checker Online Free - Fast & Secure",
-		description: "Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professio",
+		title: "Free Resume ATS Score Checker Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Resume ATS Score Checker online. Fast and private browser utility with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

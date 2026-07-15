@@ -9,15 +9,15 @@ import { Terminal, ArrowRight } from "lucide-react";
 
 export const metadata = {
 	title: "Free Developer Tools Online - No Signup | SopKit",
-	description: "Format JSON, generate hashes, and developer utilities",
+	description: "Solve everyday digital tasks instantly using our free Developer Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
 	keywords: "developer tools, json formatter, base64 encoder, api tester, online dev tools, SopKit, developer-tools, free developer-tools, developer tools online, developer tool, online code utility, free developer tool",
 	alternates: {
-		canonical: "https://sopkit.github.io/developer-tools/",
+		canonical: "https://sopkit.github.io/developer-tools",
 	},
 	openGraph: {
 		title: "Free Developer Tools Online - No Signup | SopKit",
-		description: "Format JSON, generate hashes, and developer utilities",
-		url: "https://sopkit.github.io/developer-tools/",
+		description: "Solve everyday digital tasks instantly using our free Developer Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/developer-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -25,7 +25,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Developer Tools Online - No Signup | SopKit",
-		description: "Format JSON, generate hashes, and developer utilities",
+		description: "Solve everyday digital tasks instantly using our free Developer Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

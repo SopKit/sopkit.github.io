@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "UUID/GUID Generator Online Free | SopKit",
-	description: "Generate unique UUID v4 and GUID strings instantly for your applications and databases. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free UUID/GUID Generator Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free UUID/GUID Generator online. Secure, local developer utility with no registration. Easy to use.",
+	keywords: "uuid/guid generator, free online tool, no signup, uuid/guid generator online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/uuid-generator/",
+		canonical: "https://sopkit.github.io/uuid-generator",
 	},
 	openGraph: {
-		title: "UUID/GUID Generator Online Free - No Signup | SopKit",
-		description: "Generate unique UUID v4 and GUID strings instantly for your applications and databases. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/uuid-generator/",
+		title: "Free UUID/GUID Generator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free UUID/GUID Generator online. Secure, local developer utility with no registration. Easy to use.",
+		url: "https://sopkit.github.io/uuid-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "UUID/GUID Generator Online Free - Fast & Secure",
-		description: "Generate unique UUID v4 and GUID strings instantly for your applications and databases. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free UUID/GUID Generator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free UUID/GUID Generator online. Secure, local developer utility with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

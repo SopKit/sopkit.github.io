@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Decimal to Binary Converter Online Free - Developer Tools | SopKit",
-	description: "Convert decimal numbers (Base-10) to binary code (Base-2) instantly. Our free online converter is perfect for students, developers, and data analysis tasks. Fast, secure, and accurate. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Decimal to Binary Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free Decimal to Binary Converter online. Secure, local developer utility with no registration.",
+	keywords: "decimal to binary converter, free online tool, no signup, decimal to binary converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/decimal-to-binary-converter/",
+		canonical: "https://sopkit.github.io/decimal-to-binary-converter",
 	},
 	openGraph: {
-		title: "Decimal to Binary Converter Online Free - No Signup",
-		description: "Convert decimal numbers (Base-10) to binary code (Base-2) instantly. Our free online converter is perfect for students, developers, and data analysis tasks. Fas",
-		url: "https://sopkit.github.io/decimal-to-binary-converter/",
+		title: "Free Decimal to Binary Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Decimal to Binary Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/decimal-to-binary-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Decimal to Binary Converter Online Free - Fast & Secure",
-		description: "Convert decimal numbers (Base-10) to binary code (Base-2) instantly. Our free online converter is perfect for students, developers, and data analysis tasks. Fas",
+		title: "Free Decimal to Binary Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Decimal to Binary Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BaseConverter from "@/components/tools/shared/BaseConverter";
 
 export const metadata = {
-	title: "Binary to HEX Converter Online Free - Developer Tools | SopKit",
-	description: "Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast and secure. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Binary to Hex Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free Binary to Hex Converter online. Secure, local developer utility with no registration.",
+	keywords: "binary to hex converter, free online tool, no signup, binary to hex converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/binary-to-hex-converter/",
+		canonical: "https://sopkit.github.io/binary-to-hex-converter",
 	},
 	openGraph: {
-		title: "Binary to HEX Converter Online Free - No Signup",
-		description: "Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast an",
-		url: "https://sopkit.github.io/binary-to-hex-converter/",
+		title: "Free Binary to Hex Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Binary to Hex Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/binary-to-hex-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Binary to HEX Converter Online Free - Fast & Secure",
-		description: "Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast an",
+		title: "Free Binary to Hex Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free Binary to Hex Converter online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

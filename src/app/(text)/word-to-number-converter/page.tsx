@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import WordCounterTool from "@/components/tools/text/WordCounterTool";
 
 export const metadata = {
-	title: "Word to Number Converter Online Free - No Signup | SopKit",
-	description: "Convert words into digits instantly with our free online Word to Number converter. Perfect for data entry, educational exercises, and technical documentation cleanup. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Word to Number Converter Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Word to Number Converter online. Fast and private browser utility with no signup. 100% free.",
+	keywords: "word to number converter, free online tool, no signup, word to number converter online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/word-to-number-converter/",
+		canonical: "https://sopkit.github.io/word-to-number-converter",
 	},
 	openGraph: {
-		title: "Word to Number Converter Online Free - No Signup",
-		description: "Convert words into digits instantly with our free online Word to Number converter. Perfect for data entry, educational exercises, and technical documentation cl",
-		url: "https://sopkit.github.io/word-to-number-converter/",
+		title: "Free Word to Number Converter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Word to Number Converter online. Fast and private browser utility with no signup. 100% free.",
+		url: "https://sopkit.github.io/word-to-number-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Word to Number Converter Online Free - Fast & Secure",
-		description: "Convert words into digits instantly with our free online Word to Number converter. Perfect for data entry, educational exercises, and technical documentation cl",
+		title: "Free Word to Number Converter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Word to Number Converter online. Fast and private browser utility with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

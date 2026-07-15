@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "Image Converter Online Free - Compress & Convert Images | SopKit",
-	description: "Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Image Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Image Converter online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
+	keywords: "image converter, free online tool, no signup, image converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-converter/",
+		canonical: "https://sopkit.github.io/image-converter",
 	},
 	openGraph: {
-		title: "Image Converter Online Free - No Signup",
-		description: "Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy. No signup,",
-		url: "https://sopkit.github.io/image-converter/",
+		title: "Free Image Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image Converter online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
+		url: "https://sopkit.github.io/image-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Image Converter Online Free - Fast & Secure",
-		description: "Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy. No signup,",
+		title: "Free Image Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image Converter online. Crop, resize, and optimize photos in your browser with no signup. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

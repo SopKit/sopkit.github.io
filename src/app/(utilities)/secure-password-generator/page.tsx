@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Secure Password Generator Online Free | SopKit",
-	description: "Create strong and cryptographically secure passwords locally in your browser. Fully customizable length, character sets, and instant strength indicators.",
+	title: "Free Secure Password Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Secure Password Generator online. Fast, secure browser-based utility with no registration. Free & secure.",
+	keywords: "secure password generator, free online tool, no signup, secure password generator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/secure-password-generator/",
+		canonical: "https://sopkit.github.io/secure-password-generator",
 	},
 	openGraph: {
-		title: "Secure Password Generator Online Free | SopKit",
-		description: "Create strong and cryptographically secure passwords locally in your browser. Fully customizable length, character sets, and instant strength indicators.",
-		url: "https://sopkit.github.io/secure-password-generator/",
+		title: "Free Secure Password Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Secure Password Generator online. Fast, secure browser-based utility with no registration. Free & secure.",
+		url: "https://sopkit.github.io/secure-password-generator",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/developer-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Secure Password Generator Online Free | SopKit",
-		description: "Create strong and cryptographically secure passwords locally in your browser. Fully customizable length, character sets, and instant strength indicators.",
-		images: ["/og-images/developer-tools.png"],
+		title: "Free Secure Password Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Secure Password Generator online. Fast, secure browser-based utility with no registration. Free & secure.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

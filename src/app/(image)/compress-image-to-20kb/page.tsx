@@ -5,15 +5,15 @@ import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
 
 export const metadata = {
 	title: "Free Compress Image to 20KB Online - No Signup | SopKit",
-	description: "Compress any image file (JPG, PNG, WebP) to fit strictly under 20KB while maintaining the best possible visual clarity.",
+	description: "Edit, convert, and compress images with our free Compress Image to 20KB online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
 	keywords: "compress-image-to-20kb, Compress Image to 20KB, compress image 20kb, photo size under 20kb, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/compress-image-to-20kb/",
+		canonical: "https://sopkit.github.io/compress-image-to-20kb",
 	},
 	openGraph: {
 		title: "Free Compress Image to 20KB Online - No Signup | SopKit",
-		description: "Compress any image file (JPG, PNG, WebP) to fit strictly under 20KB while maintaining the best possible visual clarity.",
-		url: "https://sopkit.github.io/compress-image-to-20kb/",
+		description: "Edit, convert, and compress images with our free Compress Image to 20KB online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+		url: "https://sopkit.github.io/compress-image-to-20kb",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Compress Image to 20KB Online - No Signup | SopKit",
-		description: "Compress any image file (JPG, PNG, WebP) to fit strictly under 20KB while maintaining the best possible visual clarity.",
+		description: "Edit, convert, and compress images with our free Compress Image to 20KB online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Advanced Sitemap Generator Online Free - No Signup | SopKit",
-	description: "Generate XML sitemaps for any website URL. Crawl websites and create comprehensive sitemaps with proper formatting and metadata. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Advanced Sitemap Generator Online - No Signup | SopKit",
+	description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Sitemap Generator online. Optimize search presence with no signup.",
+	keywords: "advanced sitemap generator, free online tool, no signup, advanced sitemap generator online, seo, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/sitemap-generator/",
+		canonical: "https://sopkit.github.io/sitemap-generator",
 	},
 	openGraph: {
-		title: "Advanced Sitemap Generator Online Free - No Signup",
-		description: "Generate XML sitemaps for any website URL. Crawl websites and create comprehensive sitemaps with proper formatting and metadata. No signup, no uploads, 100% pri",
-		url: "https://sopkit.github.io/sitemap-generator/",
+		title: "Free Advanced Sitemap Generator Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Sitemap Generator online. Optimize search presence with no signup.",
+		url: "https://sopkit.github.io/sitemap-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Advanced Sitemap Generator Online Free - Fast & Secure",
-		description: "Generate XML sitemaps for any website URL. Crawl websites and create comprehensive sitemaps with proper formatting and metadata. No signup, no uploads, 100% pri",
+		title: "Free Advanced Sitemap Generator Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Sitemap Generator online. Optimize search presence with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

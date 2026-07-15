@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
 
 export const metadata = {
-	title: "Temperature Converter Online Free - No Signup | SopKit",
-	description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Temperature Converter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Temperature Converter online. Fast, secure browser-based utility with no registration. No signup required.",
+	keywords: "temperature converter, free online tool, no signup, temperature converter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/temperature-converter/",
+		canonical: "https://sopkit.github.io/temperature-converter",
 	},
 	openGraph: {
-		title: "Temperature Converter Online Free - No Signup",
-		description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
-		url: "https://sopkit.github.io/temperature-converter/",
+		title: "Free Temperature Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Temperature Converter online. Fast, secure browser-based utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/temperature-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Temperature Converter Online Free - Fast & Secure",
-		description: "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based ",
+		title: "Free Temperature Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Temperature Converter online. Fast, secure browser-based utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,24 +4,24 @@ import InstagramDPDownloader from "@/components/tools/downloaders/InstagramDPDow
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Save Insta Pfp Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Save Insta Pfp online. High-speed downloading with no signup needed. No registration needed.",
+	title: "Free Save Insta Profile Picture Online - No Signup | SopKit",
+	description: "Download, convert, and edit video files instantly with our free Save Insta Profile Picture online. Fast, secure, and private processing with no signup.",
 	keywords: "save insta pfp, free online tool, no signup, save-insta-pfp, free save-insta-pfp, Save Insta Pfp online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/save-insta-pfp/",
+		canonical: "https://sopkit.github.io/save-insta-pfp",
 	},
 	openGraph: {
-		title: "Free Save Insta Pfp Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Save Insta Pfp online. High-speed downloading with no signup needed. No registration needed.",
-		url: "https://sopkit.github.io/save-insta-pfp/",
+		title: "Free Save Insta Profile Picture Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Save Insta Profile Picture online. Fast, secure, and private processing with no signup.",
+		url: "https://sopkit.github.io/save-insta-pfp",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Save Insta Pfp Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Save Insta Pfp online. High-speed downloading with no signup needed. No registration needed.",
+		title: "Free Save Insta Profile Picture Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Save Insta Profile Picture online. Fast, secure, and private processing with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

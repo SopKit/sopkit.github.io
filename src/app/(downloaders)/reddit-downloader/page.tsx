@@ -2,24 +2,24 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 import RedditDownloader from "@/components/tools/downloaders/RedditDownloader";
 
 export const metadata = {
-	title: "Free Reddit Video Downloader Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Reddit Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
+	title: "Free Reddit Downloader Online - No Signup | SopKit",
+	description: "Download, convert, and edit video files instantly with our free Reddit Downloader online. Fast, secure, and private processing with no signup. Try it free now.",
 	keywords: "reddit video downloader, free online tool, no signup, video, reddit video downloader online, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/reddit-downloader/",
+		canonical: "https://sopkit.github.io/reddit-downloader",
 	},
 	openGraph: {
-		title: "Free Reddit Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Reddit Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
-		url: "https://sopkit.github.io/reddit-downloader/",
+		title: "Free Reddit Downloader Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Reddit Downloader online. Fast, secure, and private processing with no signup. Try it free now.",
+		url: "https://sopkit.github.io/reddit-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Reddit Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Reddit Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
+		title: "Free Reddit Downloader Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Reddit Downloader online. Fast, secure, and private processing with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

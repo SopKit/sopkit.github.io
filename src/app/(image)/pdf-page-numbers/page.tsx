@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Add Page Numbers to PDF Online Free - PDF Pagination | SopKit",
-	description: "Add page numbers to your PDF documents online. Customize layout positions (headers/footers), alignments, font sizes, and start index numbers securely.",
+	title: "Free PDF Page Numbers Adder Online - No Signup | SopKit",
+	description: "Manage, convert, edit, and secure PDF documents with our free PDF Page Numbers Adder online. Safe and private browser-based tool with no registration.",
+	keywords: "pdf page numbers adder, free online tool, no signup, pdf page numbers adder online, pdf, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-page-numbers/",
+		canonical: "https://sopkit.github.io/pdf-page-numbers",
 	},
 	openGraph: {
-		title: "Add Page Numbers to PDF Online Free - PDF Pagination | SopKit",
-		description: "Add page numbers to your PDF documents online. Customize layout positions (headers/footers), alignments, font sizes, and start index numbers securely.",
-		url: "https://sopkit.github.io/pdf-page-numbers/",
+		title: "Free PDF Page Numbers Adder Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF Page Numbers Adder online. Safe and private browser-based tool with no registration.",
+		url: "https://sopkit.github.io/pdf-page-numbers",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/pdf-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Add Page Numbers to PDF Online Free - PDF Pagination | SopKit",
-		description: "Add page numbers to your PDF documents online. Customize layout positions (headers/footers), alignments, font sizes, and start index numbers securely.",
-		images: ["/og-images/pdf-tools.png"],
+		title: "Free PDF Page Numbers Adder Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF Page Numbers Adder online. Safe and private browser-based tool with no registration.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

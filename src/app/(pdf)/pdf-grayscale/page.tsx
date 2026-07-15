@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import PDFGrayscale from "@/components/tools/pdf/PDFGrayscale";
 
 export const metadata = {
-	title: "PDF Grayscale Online Free - Edit, Merge & Convert PDF | SopKit",
-	description: "Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signup required. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free PDF Grayscale Online - No Signup | SopKit",
+	description: "Manage, convert, edit, and secure PDF documents with our free PDF Grayscale online. Safe and private browser-based tool with no registration. Try it free now.",
+	keywords: "pdf grayscale, free online tool, no signup, pdf grayscale online, pdf, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-grayscale/",
+		canonical: "https://sopkit.github.io/pdf-grayscale",
 	},
 	openGraph: {
-		title: "PDF Grayscale Online Free - No Signup",
-		description: "Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signu",
-		url: "https://sopkit.github.io/pdf-grayscale/",
+		title: "Free PDF Grayscale Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF Grayscale online. Safe and private browser-based tool with no registration. Try it free now.",
+		url: "https://sopkit.github.io/pdf-grayscale",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "PDF Grayscale Online Free - Fast & Secure",
-		description: "Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signu",
+		title: "Free PDF Grayscale Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF Grayscale online. Safe and private browser-based tool with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

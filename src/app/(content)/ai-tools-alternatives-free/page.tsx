@@ -3,24 +3,24 @@ import Fragment from "react";
 
 
 export const metadata = {
-	title: "Best Free AI Tool Alternatives (No Subscriptions) | SopKit",
-	description: "Discover the best free AI tool alternatives for content creation, voice generation, and digital writing without paying for monthly subscriptions.",
+	title: "Free AI Tools Alternatives Free - Practical Picks Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free AI Tools Alternatives Free - Practical Picks online. Fast, secure browser-based utility with no registr...",
 	keywords: "ai tools alternatives free - practical picks, ai tools alternatives free - practical picks guide, SopKit, ai-tools-alternatives-free, ai tools alternatives free, free ai-tools-alternatives-free, ai tools alternatives free online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/ai-tools-alternatives-free/",
+		canonical: "https://sopkit.github.io/ai-tools-alternatives-free",
 	},
 	openGraph: {
-		title: "Best Free AI Tool Alternatives (No Subscriptions) | SopKit",
-		description: "Discover the best free AI tool alternatives for content creation, voice generation, and digital writing without paying for monthly subscriptions.",
-		url: "https://sopkit.github.io/ai-tools-alternatives-free/",
+		title: "Free AI Tools Alternatives Free - Practical Picks Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free AI Tools Alternatives Free - Practical Picks online. Fast, secure browser-based utility with no registr...",
+		url: "https://sopkit.github.io/ai-tools-alternatives-free",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Best Free AI Tool Alternatives (No Subscriptions) | SopKit",
-		description: "Discover the best free AI tool alternatives for content creation, voice generation, and digital writing without paying for monthly subscriptions.",
+		title: "Free AI Tools Alternatives Free - Practical Picks Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free AI Tools Alternatives Free - Practical Picks online. Fast, secure browser-based utility with no registr...",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

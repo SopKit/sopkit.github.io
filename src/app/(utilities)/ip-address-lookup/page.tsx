@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import IPLocationFinderTool from "@/components/tools/utilities/IPLocationFinderTool";
 
 export const metadata = {
-	title: "IP Address Lookup Online Free - No Signup | SopKit",
-	description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free IP Address Lookup Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free IP Address Lookup online. Fast, secure browser-based utility with no registration. No registration needed.",
+	keywords: "ip address lookup, free online tool, no signup, ip address lookup online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ip-address-lookup/",
+		canonical: "https://sopkit.github.io/ip-address-lookup",
 	},
 	openGraph: {
-		title: "IP Address Lookup Online Free - No Signup",
-		description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
-		url: "https://sopkit.github.io/ip-address-lookup/",
+		title: "Free IP Address Lookup Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free IP Address Lookup online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/ip-address-lookup",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "IP Address Lookup Online Free - Fast & Secure",
-		description: "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
+		title: "Free IP Address Lookup Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free IP Address Lookup online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

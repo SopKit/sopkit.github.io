@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "URL Slug Generator Online Free | SopKit",
-	description: "Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free URL Slug Generator Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free URL Slug Generator online. Secure, local developer utility with no registration. Easy to use.",
+	keywords: "url slug generator, free online tool, no signup, url slug generator online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/slug-generator/",
+		canonical: "https://sopkit.github.io/slug-generator",
 	},
 	openGraph: {
-		title: "URL Slug Generator Online Free - No Signup | SopKit",
-		description: "Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/slug-generator/",
+		title: "Free URL Slug Generator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free URL Slug Generator online. Secure, local developer utility with no registration. Easy to use.",
+		url: "https://sopkit.github.io/slug-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "URL Slug Generator Online Free - Fast & Secure",
-		description: "Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free URL Slug Generator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free URL Slug Generator online. Secure, local developer utility with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Add Watermark to Image Online Free - Photo Protect | SopKit",
-	description: "Add text or image logos as watermarks to your pictures securely. Adjust opacity, scale, positioning, rotation, and tile configurations. 100% private.",
+	title: "Free Image Watermark Adder Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Image Watermark Adder online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+	keywords: "image watermark adder, free online tool, no signup, image watermark adder online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-watermark/",
+		canonical: "https://sopkit.github.io/image-watermark",
 	},
 	openGraph: {
-		title: "Add Watermark to Image Online Free - Photo Protect | SopKit",
-		description: "Add text or image logos as watermarks to your pictures securely. Adjust opacity, scale, positioning, rotation, and tile configurations. 100% private.",
-		url: "https://sopkit.github.io/image-watermark/",
+		title: "Free Image Watermark Adder Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image Watermark Adder online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+		url: "https://sopkit.github.io/image-watermark",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/image-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Add Watermark to Image Online Free - Photo Protect | SopKit",
-		description: "Add text or image logos as watermarks to your pictures securely. Adjust opacity, scale, positioning, rotation, and tile configurations. 100% private.",
-		images: ["/og-images/image-tools.png"],
+		title: "Free Image Watermark Adder Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image Watermark Adder online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

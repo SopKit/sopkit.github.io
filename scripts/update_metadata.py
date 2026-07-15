@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 # Paths
-BASE_DIR = Path("/Users/shaswatraj/Desktop/earn/SopKit")
+BASE_DIR = Path(__file__).resolve().parent.parent
 APP_DIR = BASE_DIR / "src" / "app"
 TOOLS_JSON_PATH = BASE_DIR / "src" / "constants" / "tools.json"
 

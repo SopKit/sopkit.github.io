@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "PNG to GIF Converter Online Free - Compress & Convert Images | SopKit",
-	description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file uploads. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free PNG to GIF Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free PNG to GIF Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+	keywords: "png to gif converter, free online tool, no signup, png to gif converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/png-to-gif-converter/",
+		canonical: "https://sopkit.github.io/png-to-gif-converter",
 	},
 	openGraph: {
-		title: "PNG to GIF Converter Online Free - No Signup",
-		description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file upload",
-		url: "https://sopkit.github.io/png-to-gif-converter/",
+		title: "Free PNG to GIF Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free PNG to GIF Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/png-to-gif-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "PNG to GIF Converter Online Free - Fast & Secure",
-		description: "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file upload",
+		title: "Free PNG to GIF Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free PNG to GIF Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

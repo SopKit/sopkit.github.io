@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "QR Code Generator for Business - Free Online Tool | SopKit",
-	description: "Generate optimized qr code generator for business details. Instantly copy or share customized outputs.",
+	title: "Free QR Code Generator for Business Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free QR Code Generator for Business online. Fast, secure browser-based utility with no registration. 100% free.",
 	keywords: "qr code generator for business, qr-code-generator-business, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/qr-code-generator-business/",
+		canonical: "https://sopkit.github.io/qr-code-generator-business",
 	},
 	openGraph: {
-		title: "QR Code Generator for Business - Free Online Tool | SopKit",
-		description: "Generate optimized qr code generator for business details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/qr-code-generator-business/",
+		title: "Free QR Code Generator for Business Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free QR Code Generator for Business online. Fast, secure browser-based utility with no registration. 100% free.",
+		url: "https://sopkit.github.io/qr-code-generator-business",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "QR Code Generator for Business - Free Online Tool | SopKit",
-		description: "Generate optimized qr code generator for business details. Instantly copy or share customized outputs.",
+		title: "Free QR Code Generator for Business Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free QR Code Generator for Business online. Fast, secure browser-based utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

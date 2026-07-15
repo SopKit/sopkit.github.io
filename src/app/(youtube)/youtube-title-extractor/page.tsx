@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import DownloaderEngine from "@/components/tools/downloaders/DownloaderEngine";
 
 export const metadata = {
-	title: "YouTube Title Extractor Online Free - No Signup | SopKit",
-	description: "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Title Extractor Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Title Extractor online. Fast, secure browser-based utility with no registration. Try it free now.",
+	keywords: "youtube title extractor, free online tool, no signup, youtube title extractor online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-title-extractor/",
+		canonical: "https://sopkit.github.io/youtube-title-extractor",
 	},
 	openGraph: {
-		title: "YouTube Title Extractor Online Free - No Signup",
-		description: "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool. No ",
-		url: "https://sopkit.github.io/youtube-title-extractor/",
+		title: "Free YouTube Title Extractor Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Title Extractor online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/youtube-title-extractor",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Title Extractor Online Free - Fast & Secure",
-		description: "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool. No ",
+		title: "Free YouTube Title Extractor Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Title Extractor online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

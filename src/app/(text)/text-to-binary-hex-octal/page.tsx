@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Text to Binary Hex Octal Converter Online | SopKit",
-	description: "Convert string text to binary, hexadecimal, and octal representations simultaneously. Lightweight, secure, and runs entirely in your browser. 100% free.",
+	title: "Free Text to Binary/Hex/Octal Converter Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Text to Binary/Hex/Octal Converter online. Fast and private browser utility with no signup.",
+	keywords: "text to binary/hex/octal converter, free online tool, no signup, text to binary/hex/octal converter online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-binary-hex-octal/",
+		canonical: "https://sopkit.github.io/text-to-binary-hex-octal",
 	},
 	openGraph: {
-		title: "Text to Binary Hex Octal Converter Online | SopKit",
-		description: "Convert string text to binary, hexadecimal, and octal representations simultaneously. Lightweight, secure, and runs entirely in your browser. 100% free.",
-		url: "https://sopkit.github.io/text-to-binary-hex-octal/",
+		title: "Free Text to Binary/Hex/Octal Converter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Text to Binary/Hex/Octal Converter online. Fast and private browser utility with no signup.",
+		url: "https://sopkit.github.io/text-to-binary-hex-octal",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/text-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Text to Binary Hex Octal Converter Online | SopKit",
-		description: "Convert string text to binary, hexadecimal, and octal representations simultaneously. Lightweight, secure, and runs entirely in your browser. 100% free.",
-		images: ["/og-images/text-tools.png"],
+		title: "Free Text to Binary/Hex/Octal Converter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Text to Binary/Hex/Octal Converter online. Fast and private browser utility with no signup.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

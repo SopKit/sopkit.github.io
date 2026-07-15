@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Image to Base64 Converter Online Free | SopKit",
-	description: "Convert PNG, JPG, SVG, WebP, and GIF images to Base64 data URI string instantly. Generate raw code, HTML image tags, or CSS snippets. 100% private.",
+	title: "Free Image to Base64 Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Image to Base64 Converter online. Crop, resize, and optimize photos in your browser with no signup. 100% free.",
+	keywords: "image to base64 converter, free online tool, no signup, image to base64 converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-to-base64/",
+		canonical: "https://sopkit.github.io/image-to-base64",
 	},
 	openGraph: {
-		title: "Image to Base64 Converter Online Free | SopKit",
-		description: "Convert PNG, JPG, SVG, WebP, and GIF images to Base64 data URI string instantly. Generate raw code, HTML image tags, or CSS snippets. 100% private.",
-		url: "https://sopkit.github.io/image-to-base64/",
+		title: "Free Image to Base64 Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image to Base64 Converter online. Crop, resize, and optimize photos in your browser with no signup. 100% free.",
+		url: "https://sopkit.github.io/image-to-base64",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/image-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Image to Base64 Converter Online Free | SopKit",
-		description: "Convert PNG, JPG, SVG, WebP, and GIF images to Base64 data URI string instantly. Generate raw code, HTML image tags, or CSS snippets. 100% private.",
-		images: ["/og-images/image-tools.png"],
+		title: "Free Image to Base64 Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image to Base64 Converter online. Crop, resize, and optimize photos in your browser with no signup. 100% free.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

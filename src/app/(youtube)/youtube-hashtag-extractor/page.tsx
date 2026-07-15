@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import DownloaderEngine from "@/components/tools/downloaders/DownloaderEngine";
 
 export const metadata = {
-	title: "YouTube Hashtag Extractor Online Free - No Signup | SopKit",
-	description: "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video SEO for better reach. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Hashtag Extractor Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Hashtag Extractor online. Fast, secure browser-based utility with no registration. Free & secure.",
+	keywords: "youtube hashtag extractor, free online tool, no signup, youtube hashtag extractor online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-hashtag-extractor/",
+		canonical: "https://sopkit.github.io/youtube-hashtag-extractor",
 	},
 	openGraph: {
-		title: "YouTube Hashtag Extractor Online Free - No Signup",
-		description: "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video SEO for ",
-		url: "https://sopkit.github.io/youtube-hashtag-extractor/",
+		title: "Free YouTube Hashtag Extractor Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Hashtag Extractor online. Fast, secure browser-based utility with no registration. Free & secure.",
+		url: "https://sopkit.github.io/youtube-hashtag-extractor",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Hashtag Extractor Online Free - Fast & Secure",
-		description: "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video SEO for ",
+		title: "Free YouTube Hashtag Extractor Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Hashtag Extractor online. Fast, secure browser-based utility with no registration. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "GPA to 4.0 Scale Converter Online Free | SopKit",
-	description: "Convert your Indian percentage or 10-point CGPA into the standard US 4.0 GPA scale for study abroad. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free GPA to 4.0 Scale Converter Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free GPA to 4.0 Scale Converter online. Quick, accurate browser calculator with no registration.",
+	keywords: "gpa to 4.0 scale converter, free online tool, no signup, gpa to 4.0 scale converter online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/gpa-to-4-scale-converter/",
+		canonical: "https://sopkit.github.io/gpa-to-4-scale-converter",
 	},
 	openGraph: {
-		title: "GPA to 4.0 Scale Converter Online Free - No Signup | SopKit",
-		description: "Convert your Indian percentage or 10-point CGPA into the standard US 4.0 GPA scale for study abroad. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/gpa-to-4-scale-converter/",
+		title: "Free GPA to 4.0 Scale Converter Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free GPA to 4.0 Scale Converter online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/gpa-to-4-scale-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "GPA to 4.0 Scale Converter Online Free - Fast & Secure",
-		description: "Convert your Indian percentage or 10-point CGPA into the standard US 4.0 GPA scale for study abroad. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free GPA to 4.0 Scale Converter Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free GPA to 4.0 Scale Converter online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

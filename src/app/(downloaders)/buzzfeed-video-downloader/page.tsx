@@ -5,15 +5,15 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Buzzfeed Video Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Buzzfeed Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
+	description: "Download, convert, and edit video files instantly with our free Buzzfeed Video Downloader online. Fast, secure, and private processing with no signup.",
 	keywords: "buzzfeed video downloader, free online tool, no signup, buzzfeed-video-downloader, free buzzfeed-video-downloader, Buzzfeed Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/buzzfeed-video-downloader/",
+		canonical: "https://sopkit.github.io/buzzfeed-video-downloader",
 	},
 	openGraph: {
 		title: "Free Buzzfeed Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Buzzfeed Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
-		url: "https://sopkit.github.io/buzzfeed-video-downloader/",
+		description: "Download, convert, and edit video files instantly with our free Buzzfeed Video Downloader online. Fast, secure, and private processing with no signup.",
+		url: "https://sopkit.github.io/buzzfeed-video-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Buzzfeed Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Buzzfeed Video Downloader online. High-speed downloading with no signup needed. Easy to use.",
+		description: "Download, convert, and edit video files instantly with our free Buzzfeed Video Downloader online. Fast, secure, and private processing with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -5,23 +5,24 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 
 
 export const metadata = {
-	title: "GST Calculator India Online Free | SopKit",
-	description: "Calculate GST amount, inclusive/exclusive price, CGST, SGST, and IGST for Indian invoices instantly. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free GST Calculator India Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free GST Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
+	keywords: "gst calculator india, free online tool, no signup, gst calculator india online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/gst-calculator-india/",
+		canonical: "https://sopkit.github.io/gst-calculator-india",
 	},
 	openGraph: {
-		title: "GST Calculator India Online Free - No Signup | SopKit",
-		description: "Calculate GST amount, inclusive/exclusive price, CGST, SGST, and IGST for Indian invoices instantly. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/gst-calculator-india/",
+		title: "Free GST Calculator India Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free GST Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
+		url: "https://sopkit.github.io/gst-calculator-india",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "GST Calculator India Online Free - Fast & Secure",
-		description: "Calculate GST amount, inclusive/exclusive price, CGST, SGST, and IGST for Indian invoices instantly. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free GST Calculator India Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free GST Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

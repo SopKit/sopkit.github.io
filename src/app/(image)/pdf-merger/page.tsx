@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Free PDF Merger Online - Combine Multiple PDF Files | SopKit",
-	description: "Combine multiple PDF documents into a single file quickly. Drag-and-drop to reorder pages or files, merge instantly, and download securely for free.",
+	title: "Free PDF Merger Online - No Signup | SopKit",
+	description: "Manage, convert, edit, and secure PDF documents with our free PDF Merger online. Safe and private browser-based tool with no registration. 100% free and secure.",
+	keywords: "pdf merger, free online tool, no signup, pdf merger online, pdf, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/pdf-merger/",
+		canonical: "https://sopkit.github.io/pdf-merger",
 	},
 	openGraph: {
-		title: "Free PDF Merger Online - Combine Multiple PDF Files | SopKit",
-		description: "Combine multiple PDF documents into a single file quickly. Drag-and-drop to reorder pages or files, merge instantly, and download securely for free.",
-		url: "https://sopkit.github.io/pdf-merger/",
+		title: "Free PDF Merger Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF Merger online. Safe and private browser-based tool with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/pdf-merger",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/pdf-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PDF Merger Online - Combine Multiple PDF Files | SopKit",
-		description: "Combine multiple PDF documents into a single file quickly. Drag-and-drop to reorder pages or files, merge instantly, and download securely for free.",
-		images: ["/og-images/pdf-tools.png"],
+		title: "Free PDF Merger Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free PDF Merger online. Safe and private browser-based tool with no registration. 100% free and secure.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

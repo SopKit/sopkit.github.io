@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import TextCompareTool from "@/components/tools/text/TextCompareTool";
 
 export const metadata = {
-	title: "Convert VTT to SRT Online Free - No Signup | SopKit",
-	description: "Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Convert VTT to SRT Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Convert VTT to SRT online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "convert vtt to srt, free online tool, no signup, convert vtt to srt online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/convert-vtt-to-srt/",
+		canonical: "https://sopkit.github.io/convert-vtt-to-srt",
 	},
 	openGraph: {
-		title: "Convert VTT to SRT Online Free - No Signup",
-		description: "Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players. No signu",
-		url: "https://sopkit.github.io/convert-vtt-to-srt/",
+		title: "Free Convert VTT to SRT Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Convert VTT to SRT online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/convert-vtt-to-srt",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Convert VTT to SRT Online Free - Fast & Secure",
-		description: "Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players. No signu",
+		title: "Free Convert VTT to SRT Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Convert VTT to SRT online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

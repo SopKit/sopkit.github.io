@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import JsonFormatterTool from "@/components/tools/code/JsonFormatterTool";
 
 export const metadata = {
-	title: "JSON Editor Online Free - Developer Tools | SopKit",
-	description: "Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data perfectly. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JSON Editor Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JSON Editor online. Secure, local developer utility with no registration. No signup required.",
+	keywords: "json editor, free online tool, no signup, json editor online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-editor/",
+		canonical: "https://sopkit.github.io/json-editor",
 	},
 	openGraph: {
-		title: "JSON Editor Online Free - No Signup",
-		description: "Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data per",
-		url: "https://sopkit.github.io/json-editor/",
+		title: "Free JSON Editor Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON Editor online. Secure, local developer utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/json-editor",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JSON Editor Online Free - Fast & Secure",
-		description: "Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data per",
+		title: "Free JSON Editor Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON Editor online. Secure, local developer utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

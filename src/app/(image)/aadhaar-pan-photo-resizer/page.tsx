@@ -5,23 +5,24 @@ import PanCardResizer from "@/components/tools/exam/PanCardResizer";
 
 
 export const metadata = {
-	title: "Aadhaar and PAN Card Photo Resizer Online Free | SopKit",
-	description: "Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online document forms. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Aadhaar and PAN Card Photo Resizer Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Aadhaar and PAN Card Photo Resizer online. Crop, resize, and optimize photos in your browser with no signup.",
+	keywords: "aadhaar and pan card photo resizer, free online tool, no signup, aadhaar and pan card photo resizer online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/aadhaar-pan-photo-resizer/",
+		canonical: "https://sopkit.github.io/aadhaar-pan-photo-resizer",
 	},
 	openGraph: {
-		title: "Aadhaar and PAN Card Photo Resizer Online Free - No Signup | SopKit",
-		description: "Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online document forms. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/aadhaar-pan-photo-resizer/",
+		title: "Free Aadhaar and PAN Card Photo Resizer Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Aadhaar and PAN Card Photo Resizer online. Crop, resize, and optimize photos in your browser with no signup.",
+		url: "https://sopkit.github.io/aadhaar-pan-photo-resizer",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Aadhaar and PAN Card Photo Resizer Online Free - Fast & Secure",
-		description: "Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online document forms. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Aadhaar and PAN Card Photo Resizer Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Aadhaar and PAN Card Photo Resizer online. Crop, resize, and optimize photos in your browser with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

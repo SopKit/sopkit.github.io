@@ -3,15 +3,15 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
 	title: "Free All Downloaders Online - No Signup | SopKit",
-	description: "All Downloaders - Coming Soon",
+	description: "Download, convert, and edit video files instantly with our free All Downloaders online. Fast, secure, and private processing with no signup. No signup required.",
 	keywords: "all downloaders, free online tool, no signup, others, all downloaders online, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/all-downloaders/",
+		canonical: "https://sopkit.github.io/all-downloaders",
 	},
 	openGraph: {
 		title: "Free All Downloaders Online - No Signup | SopKit",
-		description: "All Downloaders - Coming Soon",
-		url: "https://sopkit.github.io/all-downloaders/",
+		description: "Download, convert, and edit video files instantly with our free All Downloaders online. Fast, secure, and private processing with no signup. No signup required.",
+		url: "https://sopkit.github.io/all-downloaders",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -19,7 +19,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free All Downloaders Online - No Signup | SopKit",
-		description: "All Downloaders - Coming Soon",
+		description: "Download, convert, and edit video files instantly with our free All Downloaders online. Fast, secure, and private processing with no signup. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

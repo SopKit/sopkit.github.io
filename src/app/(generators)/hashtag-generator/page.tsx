@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Hashtag Generator - Free Online Tool | SopKit",
-	description: "Generate optimized hashtag generator details. Instantly copy or share customized outputs.",
+	title: "Free Hashtag Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Hashtag Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 	keywords: "hashtag generator, hashtag-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/hashtag-generator/",
+		canonical: "https://sopkit.github.io/hashtag-generator",
 	},
 	openGraph: {
-		title: "Hashtag Generator - Free Online Tool | SopKit",
-		description: "Generate optimized hashtag generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/hashtag-generator/",
+		title: "Free Hashtag Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Hashtag Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/hashtag-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Hashtag Generator - Free Online Tool | SopKit",
-		description: "Generate optimized hashtag generator details. Instantly copy or share customized outputs.",
+		title: "Free Hashtag Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Hashtag Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

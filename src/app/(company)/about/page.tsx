@@ -5,24 +5,24 @@ import { Code, Globe, Lock, Zap, Users, ShieldAlert, CheckCircle } from "lucide-
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
-	title: "About SopKit - The Privacy-First Browser Utility Platform",
-	description: "Learn about SopKit, the browser-native toolkit with 500+ free online utilities. Our core differentiator is that your files stay on your device—100% local, sandboxed processing.",
+	title: "Free About Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free About online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 	keywords: "about SopKit, client-side tools, private online utility, no upload pdf editor, local image converter, browser sandbox tools, secure developer tools, open source browser utilities",
 	alternates: {
-		canonical: "https://sopkit.github.io/about/",
+		canonical: "https://sopkit.github.io/about",
 	},
 	openGraph: {
-		title: "About SopKit - The Privacy-First Browser Utility Platform",
-		description: "Learn about SopKit, the browser-native toolkit with 500+ free online utilities. Our core differentiator is that your files stay on your device—100% local, sandboxed processing.",
-		url: "https://sopkit.github.io/about/",
+		title: "Free About Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free About online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/about",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "About SopKit - The Privacy-First Browser Utility Platform",
-		description: "Learn about SopKit, the browser-native toolkit with 500+ free online utilities. Our core differentiator is that your files stay on your device—100% local, sandboxed processing.",
+		title: "Free About Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free About online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

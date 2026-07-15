@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BrowserDetectTool from "@/components/tools/built-ins/BrowserDetectTool";
 
 export const metadata = {
-	title: "What Is My Browser Online Free - No Signup | SopKit",
-	description: "Free what is my browser tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free What Is My Browser Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free What Is My Browser online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "what is my browser, free online tool, no signup, what is my browser online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/what-is-my-browser/",
+		canonical: "https://sopkit.github.io/what-is-my-browser",
 	},
 	openGraph: {
-		title: "What Is My Browser Online Free - No Signup",
-		description: "Free what is my browser tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/what-is-my-browser/",
+		title: "Free What Is My Browser Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free What Is My Browser online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/what-is-my-browser",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "What Is My Browser Online Free - Fast & Secure",
-		description: "Free what is my browser tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
+		title: "Free What Is My Browser Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free What Is My Browser online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

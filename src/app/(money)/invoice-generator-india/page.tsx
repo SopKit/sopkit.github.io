@@ -5,23 +5,24 @@ import SimpleInvoiceGenerator from "@/components/tools/generators/InvoiceGenerat
 
 
 export const metadata = {
-	title: "Invoice Generator India with GST Online Free | SopKit",
-	description: "Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Invoice Generator India with GST Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Invoice Generator India with GST online. Quick, accurate browser calculator with no registration.",
+	keywords: "invoice generator india with gst, free online tool, no signup, invoice generator india with gst online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/invoice-generator-india/",
+		canonical: "https://sopkit.github.io/invoice-generator-india",
 	},
 	openGraph: {
-		title: "Invoice Generator India with GST Online Free - No Signup | SopKit",
-		description: "Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free. No signup, no uploads, 100% private browser-b",
-		url: "https://sopkit.github.io/invoice-generator-india/",
+		title: "Free Invoice Generator India with GST Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Invoice Generator India with GST online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/invoice-generator-india",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Invoice Generator India with GST Online Free - Fast & Secure",
-		description: "Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free. No signup, no uploads, 100% private browser-b",
+		title: "Free Invoice Generator India with GST Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Invoice Generator India with GST online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

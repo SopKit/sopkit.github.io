@@ -5,23 +5,24 @@ import JobMessageGenerator from "@/components/tools/impl/JobMessageGenerator";
 
 
 export const metadata = {
-	title: "LinkedIn Headline Generator Online Free | SopKit",
-	description: "Create professional LinkedIn headlines that stand out. Generate multiple variations for developers, students, freelancers, and marketers. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free LinkedIn Headline Generator Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free LinkedIn Headline Generator online. Fast and private browser utility with no signup.",
+	keywords: "linkedin headline generator, free online tool, no signup, linkedin headline generator online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/linkedin-headline-generator/",
+		canonical: "https://sopkit.github.io/linkedin-headline-generator",
 	},
 	openGraph: {
-		title: "LinkedIn Headline Generator Online Free - No Signup | SopKit",
-		description: "Create professional LinkedIn headlines that stand out. Generate multiple variations for developers, students, freelancers, and marketers. No signup, no uploads,",
-		url: "https://sopkit.github.io/linkedin-headline-generator/",
+		title: "Free LinkedIn Headline Generator Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free LinkedIn Headline Generator online. Fast and private browser utility with no signup.",
+		url: "https://sopkit.github.io/linkedin-headline-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "LinkedIn Headline Generator Online Free - Fast & Secure",
-		description: "Create professional LinkedIn headlines that stand out. Generate multiple variations for developers, students, freelancers, and marketers. No signup, no uploads,",
+		title: "Free LinkedIn Headline Generator Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free LinkedIn Headline Generator online. Fast and private browser utility with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

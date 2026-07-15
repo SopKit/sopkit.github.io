@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Client Proposal Generator - Free Online Tool | SopKit",
-	description: "Generate optimized client proposal generator details. Instantly copy or share customized outputs.",
+	title: "Free Client Proposal Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Client Proposal Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
 	keywords: "client proposal generator, client-proposal-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/client-proposal-generator/",
+		canonical: "https://sopkit.github.io/client-proposal-generator",
 	},
 	openGraph: {
-		title: "Client Proposal Generator - Free Online Tool | SopKit",
-		description: "Generate optimized client proposal generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/client-proposal-generator/",
+		title: "Free Client Proposal Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Client Proposal Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
+		url: "https://sopkit.github.io/client-proposal-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Client Proposal Generator - Free Online Tool | SopKit",
-		description: "Generate optimized client proposal generator details. Instantly copy or share customized outputs.",
+		title: "Free Client Proposal Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Client Proposal Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

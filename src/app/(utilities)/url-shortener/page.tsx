@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import URLShortenerTool from "@/components/tools/utilities/URLShortenerTool";
 
 export const metadata = {
-	title: "URL Shortener Online Free - No Signup | SopKit",
-	description: "Shorten long URLs for easier sharing No signup, no uploads, 100% private browser-based tool.",
+	title: "Free URL Shortener Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free URL Shortener online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+	keywords: "url shortener, free online tool, no signup, url shortener online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-shortener/",
+		canonical: "https://sopkit.github.io/url-shortener",
 	},
 	openGraph: {
-		title: "URL Shortener Online Free - No Signup",
-		description: "Shorten long URLs for easier sharing No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/url-shortener/",
+		title: "Free URL Shortener Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free URL Shortener online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/url-shortener",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "URL Shortener Online Free - Fast & Secure",
-		description: "Shorten long URLs for easier sharing No signup, no uploads, 100% private browser-based tool.",
+		title: "Free URL Shortener Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free URL Shortener online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

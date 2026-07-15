@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import CSSGradientTool from "@/components/tools/developer/CSSGradientTool";
 
 export const metadata = {
-	title: "CSS Gradient Generator Online Free - Developer Tools | SopKit",
-	description: "Create beautiful CSS gradients for your web projects. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free CSS Gradient Generator Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free CSS Gradient Generator online. Secure, local developer utility with no registration.",
+	keywords: "css gradient generator, free online tool, no signup, css gradient generator online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/css-gradient-generator/",
+		canonical: "https://sopkit.github.io/css-gradient-generator",
 	},
 	openGraph: {
-		title: "CSS Gradient Generator Online Free - No Signup",
-		description: "Create beautiful CSS gradients for your web projects. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/css-gradient-generator/",
+		title: "Free CSS Gradient Generator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free CSS Gradient Generator online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/css-gradient-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "CSS Gradient Generator Online Free - Fast & Secure",
-		description: "Create beautiful CSS gradients for your web projects. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free CSS Gradient Generator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free CSS Gradient Generator online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

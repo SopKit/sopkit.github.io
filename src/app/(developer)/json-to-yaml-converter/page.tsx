@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Free JSON to YAML Converter Online | SopKit",
-	description: "Convert JSON data strings to clean YAML configurations instantly. Safe, secure, and executed fully client-side in your browser. No signup required.",
+	title: "Free JSON to YAML Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JSON to YAML Converter online. Secure, local developer utility with no registration.",
+	keywords: "json to yaml converter, free online tool, no signup, json to yaml converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-to-yaml-converter/",
+		canonical: "https://sopkit.github.io/json-to-yaml-converter",
 	},
 	openGraph: {
-		title: "Free JSON to YAML Converter Online | SopKit",
-		description: "Convert JSON data strings to clean YAML configurations instantly. Safe, secure, and executed fully client-side in your browser. No signup required.",
-		url: "https://sopkit.github.io/json-to-yaml-converter/",
+		title: "Free JSON to YAML Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON to YAML Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/json-to-yaml-converter",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/developer-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free JSON to YAML Converter Online | SopKit",
-		description: "Convert JSON data strings to clean YAML configurations instantly. Safe, secure, and executed fully client-side in your browser. No signup required.",
-		images: ["/og-images/developer-tools.png"],
+		title: "Free JSON to YAML Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON to YAML Converter online. Secure, local developer utility with no registration.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

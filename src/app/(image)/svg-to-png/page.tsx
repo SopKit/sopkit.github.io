@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "SVG to PNG Converter Online Free | SopKit",
-	description: "Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free SVG to PNG Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free SVG to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+	keywords: "svg to png converter, free online tool, no signup, svg to png converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/svg-to-png/",
+		canonical: "https://sopkit.github.io/svg-to-png",
 	},
 	openGraph: {
-		title: "SVG to PNG Converter Online Free - No Signup | SopKit",
-		description: "Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/svg-to-png/",
+		title: "Free SVG to PNG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free SVG to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/svg-to-png",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "SVG to PNG Converter Online Free - Fast & Secure",
-		description: "Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free SVG to PNG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free SVG to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

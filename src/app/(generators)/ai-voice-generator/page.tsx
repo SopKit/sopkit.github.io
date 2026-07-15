@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import AIVoiceGeneratorTool from "@/components/tools/generators/AIVoiceGeneratorTool";
 
 export const metadata = {
-	title: "AI Voice Generator Online Free - No Signup | SopKit",
-	description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibility, and creative projects. No signup required. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free AI Voice Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free AI Voice Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+	keywords: "ai voice generator, free online tool, no signup, ai voice generator online, generators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/ai-voice-generator/",
+		canonical: "https://sopkit.github.io/ai-voice-generator",
 	},
 	openGraph: {
-		title: "AI Voice Generator Online Free - No Signup",
-		description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibil",
-		url: "https://sopkit.github.io/ai-voice-generator/",
+		title: "Free AI Voice Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free AI Voice Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/ai-voice-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "AI Voice Generator Online Free - Fast & Secure",
-		description: "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibil",
+		title: "Free AI Voice Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free AI Voice Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

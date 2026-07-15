@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import LineSorterTool from "@/components/tools/text/LineSorterTool";
 
 export const metadata = {
-	title: "Text Sorter Online Free - No Signup | SopKit",
-	description: "Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for researchers and developers. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Text Sorter Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Text Sorter online. Fast and private browser utility with no signup. No registration needed.",
+	keywords: "text sorter, free online tool, no signup, text sorter online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-sorter/",
+		canonical: "https://sopkit.github.io/text-sorter",
 	},
 	openGraph: {
-		title: "Text Sorter Online Free - No Signup",
-		description: "Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for resear",
-		url: "https://sopkit.github.io/text-sorter/",
+		title: "Free Text Sorter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Text Sorter online. Fast and private browser utility with no signup. No registration needed.",
+		url: "https://sopkit.github.io/text-sorter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Text Sorter Online Free - Fast & Secure",
-		description: "Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for resear",
+		title: "Free Text Sorter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Text Sorter online. Fast and private browser utility with no signup. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

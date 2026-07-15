@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Macro Calculator Online Free | SopKit",
-	description: "Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Macro Calculator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Macro Calculator online. Fast, secure browser-based utility with no registration. No registration needed.",
+	keywords: "macro calculator, free online tool, no signup, macro calculator online, health, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/macro-calculator/",
+		canonical: "https://sopkit.github.io/macro-calculator",
 	},
 	openGraph: {
-		title: "Macro Calculator Online Free - No Signup | SopKit",
-		description: "Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/macro-calculator/",
+		title: "Free Macro Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Macro Calculator online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/macro-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Macro Calculator Online Free - Fast & Secure",
-		description: "Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Macro Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Macro Calculator online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

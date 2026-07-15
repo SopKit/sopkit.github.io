@@ -4,24 +4,24 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Savings Goal Calculator - Monthly Deposit Planner | SopKit",
-	description: "Find the monthly deposit needed to reach a savings goal by a target date, including interest. Free savings planning calculator.",
+	title: "Free Savings Goal Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Savings Goal Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "savings goal calculator, monthly savings calculator, savings target planner, how much to save calculator, savings plan calculator",
 	alternates: {
-		canonical: "https://sopkit.github.io/savings-goal-calculator/",
+		canonical: "https://sopkit.github.io/savings-goal-calculator",
 	},
 	openGraph: {
-		title: "Savings Goal Calculator - Monthly Deposit Planner | SopKit",
-		description: "Find the monthly deposit needed to reach a savings goal by a target date, including interest. Free savings planning calculator.",
-		url: "https://sopkit.github.io/savings-goal-calculator/",
+		title: "Free Savings Goal Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Savings Goal Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/savings-goal-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Savings Goal Calculator - Monthly Deposit Planner | SopKit",
-		description: "Find the monthly deposit needed to reach a savings goal by a target date, including interest. Free savings planning calculator.",
+		title: "Free Savings Goal Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Savings Goal Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

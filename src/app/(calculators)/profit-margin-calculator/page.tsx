@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Profit Margin Calculator - Free Online Tool | SopKit",
-	description: "Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns.",
+	title: "Free Profit Margin Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Profit Margin Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "profit margin calculator, profit-margin-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/profit-margin-calculator/",
+		canonical: "https://sopkit.github.io/profit-margin-calculator",
 	},
 	openGraph: {
-		title: "Profit Margin Calculator - Free Online Tool | SopKit",
-		description: "Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/profit-margin-calculator/",
+		title: "Free Profit Margin Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Profit Margin Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/profit-margin-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Profit Margin Calculator - Free Online Tool | SopKit",
-		description: "Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns.",
+		title: "Free Profit Margin Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Profit Margin Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

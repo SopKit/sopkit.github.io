@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Word Frequency Counter Online - Density Checker | SopKit",
-	description: "Analyze word frequency and character density in your text. Get a sorted breakdown of how often each word is used. Perfect for writers and SEO audits.",
+	title: "Free Word Frequency Counter Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Word Frequency Counter online. Fast and private browser utility with no signup. Easy to use.",
+	keywords: "word frequency counter, free online tool, no signup, word frequency counter online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/word-frequency-counter/",
+		canonical: "https://sopkit.github.io/word-frequency-counter",
 	},
 	openGraph: {
-		title: "Word Frequency Counter Online - Density Checker | SopKit",
-		description: "Analyze word frequency and character density in your text. Get a sorted breakdown of how often each word is used. Perfect for writers and SEO audits.",
-		url: "https://sopkit.github.io/word-frequency-counter/",
+		title: "Free Word Frequency Counter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Word Frequency Counter online. Fast and private browser utility with no signup. Easy to use.",
+		url: "https://sopkit.github.io/word-frequency-counter",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/text-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Word Frequency Counter Online - Density Checker | SopKit",
-		description: "Analyze word frequency and character density in your text. Get a sorted breakdown of how often each word is used. Perfect for writers and SEO audits.",
-		images: ["/og-images/text-tools.png"],
+		title: "Free Word Frequency Counter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Word Frequency Counter online. Fast and private browser utility with no signup. Easy to use.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

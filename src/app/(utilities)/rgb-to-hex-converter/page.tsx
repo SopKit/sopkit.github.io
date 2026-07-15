@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import RgbHexConverter from "@/components/tools/built-ins/RgbHexConverter";
 
 export const metadata = {
-	title: "RGB to HEX Converter Online Free - No Signup | SopKit",
-	description: "Free rgb to hex converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free RGB to HEX Converter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free RGB to HEX Converter online. Fast, secure browser-based utility with no registration. No signup required.",
+	keywords: "rgb to hex converter, free online tool, no signup, rgb to hex converter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/rgb-to-hex-converter/",
+		canonical: "https://sopkit.github.io/rgb-to-hex-converter",
 	},
 	openGraph: {
-		title: "RGB to HEX Converter Online Free - No Signup",
-		description: "Free rgb to hex converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/rgb-to-hex-converter/",
+		title: "Free RGB to HEX Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free RGB to HEX Converter online. Fast, secure browser-based utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/rgb-to-hex-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "RGB to HEX Converter Online Free - Fast & Secure",
-		description: "Free rgb to hex converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
+		title: "Free RGB to HEX Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free RGB to HEX Converter online. Fast, secure browser-based utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

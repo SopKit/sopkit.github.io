@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Page Size Checker Online Free - No Signup | SopKit",
-	description: "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Page Size Checker Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Page Size Checker online. Fast, secure browser-based utility with no registration. No registration needed.",
+	keywords: "page size checker, free online tool, no signup, page size checker online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/page-size-checker/",
+		canonical: "https://sopkit.github.io/page-size-checker",
 	},
 	openGraph: {
-		title: "Page Size Checker Online Free - No Signup",
-		description: "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
-		url: "https://sopkit.github.io/page-size-checker/",
+		title: "Free Page Size Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Page Size Checker online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/page-size-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Page Size Checker Online Free - Fast & Secure",
-		description: "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
+		title: "Free Page Size Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Page Size Checker online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

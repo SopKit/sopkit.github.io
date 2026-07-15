@@ -4,15 +4,15 @@ import Fragment from "react";
 
 export const metadata = {
 	title: "Free Top 10 Free Online Tools for SEO (2026) Online - No Signup | SopKit",
-	description: "Top 10 free SEO tools for keyword research, audits, metadata, indexing checks, and sitemaps. Ranked for speed and daily SEO workflows.",
+	description: "Solve everyday digital tasks instantly using our free Top 10 Free Online Tools for SEO (2026) online. Fast, secure browser-based utility with no registration.",
 	keywords: "top 10 free online tools for seo (2026), top 10 free online tools for seo (2026) guide, SopKit, top-10-free-online-tools-for-seo, top 10 free online tools for seo, free top-10-free-online-tools-for-seo, top 10 free online tools for seo online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/top-10-free-online-tools-for-seo/",
+		canonical: "https://sopkit.github.io/top-10-free-online-tools-for-seo",
 	},
 	openGraph: {
 		title: "Free Top 10 Free Online Tools for SEO (2026) Online - No Signup | SopKit",
-		description: "Top 10 free SEO tools for keyword research, audits, metadata, indexing checks, and sitemaps. Ranked for speed and daily SEO workflows.",
-		url: "https://sopkit.github.io/top-10-free-online-tools-for-seo/",
+		description: "Solve everyday digital tasks instantly using our free Top 10 Free Online Tools for SEO (2026) online. Fast, secure browser-based utility with no registration.",
+		url: "https://sopkit.github.io/top-10-free-online-tools-for-seo",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -20,7 +20,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Top 10 Free Online Tools for SEO (2026) Online - No Signup | SopKit",
-		description: "Top 10 free SEO tools for keyword research, audits, metadata, indexing checks, and sitemaps. Ranked for speed and daily SEO workflows.",
+		description: "Solve everyday digital tasks instantly using our free Top 10 Free Online Tools for SEO (2026) online. Fast, secure browser-based utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

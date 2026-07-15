@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageResizerTool from "@/components/tools/image/ImageResizerTool";
 
 export const metadata = {
-	title: "Image Resizer Online Free - Compress & Convert Images | SopKit",
-	description: "Resize images with custom dimensions and aspect ratios No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Image Resizer Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Image Resizer online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
+	keywords: "image resizer, free online tool, no signup, image resizer online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-resizer/",
+		canonical: "https://sopkit.github.io/image-resizer",
 	},
 	openGraph: {
-		title: "Image Resizer Online Free - No Signup",
-		description: "Resize images with custom dimensions and aspect ratios No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/image-resizer/",
+		title: "Free Image Resizer Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image Resizer online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
+		url: "https://sopkit.github.io/image-resizer",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Image Resizer Online Free - Fast & Secure",
-		description: "Resize images with custom dimensions and aspect ratios No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Image Resizer Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Image Resizer online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

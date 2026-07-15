@@ -3,24 +3,24 @@ import Fragment from "react";
 
 
 export const metadata = {
-	title: "How to Format JSON Properly Without Breaking Data | SopKit",
-	description: "Learn how to format JSON correctly. Avoid syntax errors, clean up payloads, and use safe formatting practices for API requests and configuration files.",
+	title: "Free How to Format JSON Properly (Without Breaking Data) Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free How to Format JSON Properly (Without Breaking Data) online. Fast, secure browser-based utility with no...",
 	keywords: "how to format json properly (without breaking data), how to format json properly (without breaking data) guide, SopKit, how-to-format-json-properly, how to format json properly, free how-to-format-json-properly, how to format json properly online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/how-to-format-json-properly/",
+		canonical: "https://sopkit.github.io/how-to-format-json-properly",
 	},
 	openGraph: {
-		title: "How to Format JSON Properly Without Breaking Data | SopKit",
-		description: "Learn how to format JSON correctly. Avoid syntax errors, clean up payloads, and use safe formatting practices for API requests and configuration files.",
-		url: "https://sopkit.github.io/how-to-format-json-properly/",
+		title: "Free How to Format JSON Properly (Without Breaking Data) Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free How to Format JSON Properly (Without Breaking Data) online. Fast, secure browser-based utility with no...",
+		url: "https://sopkit.github.io/how-to-format-json-properly",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "How to Format JSON Properly Without Breaking Data | SopKit",
-		description: "Learn how to format JSON correctly. Avoid syntax errors, clean up payloads, and use safe formatting practices for API requests and configuration files.",
+		title: "Free How to Format JSON Properly (Without Breaking Data) Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free How to Format JSON Properly (Without Breaking Data) online. Fast, secure browser-based utility with no...",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

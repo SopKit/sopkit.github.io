@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "GST Calculator Online Free - No Signup | SopKit",
-	description: "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free GST Calculator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free GST Calculator online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+	keywords: "gst calculator, free online tool, no signup, gst calculator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/gst-calculator/",
+		canonical: "https://sopkit.github.io/gst-calculator",
 	},
 	openGraph: {
-		title: "GST Calculator Online Free - No Signup",
-		description: "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/gst-calculator/",
+		title: "Free GST Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free GST Calculator online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		url: "https://sopkit.github.io/gst-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "GST Calculator Online Free - Fast & Secure",
-		description: "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free GST Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free GST Calculator online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

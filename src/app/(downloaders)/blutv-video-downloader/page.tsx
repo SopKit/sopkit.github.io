@@ -4,24 +4,24 @@ import BlutvDownloader from "@/components/tools/downloaders/BlutvDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free BluTV Video Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free BluTV Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
+	title: "Free Blutv Video Downloader Online - No Signup | SopKit",
+	description: "Download, convert, and edit video files instantly with our free Blutv Video Downloader online. Fast, secure, and private processing with no signup. Easy to use.",
 	keywords: "blutv video downloader, free online tool, no signup, blutv-video-downloader, free blutv-video-downloader, Blutv Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/blutv-video-downloader/",
+		canonical: "https://sopkit.github.io/blutv-video-downloader",
 	},
 	openGraph: {
-		title: "Free BluTV Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free BluTV Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://sopkit.github.io/blutv-video-downloader/",
+		title: "Free Blutv Video Downloader Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Blutv Video Downloader online. Fast, secure, and private processing with no signup. Easy to use.",
+		url: "https://sopkit.github.io/blutv-video-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free BluTV Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free BluTV Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
+		title: "Free Blutv Video Downloader Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Blutv Video Downloader online. Fast, secure, and private processing with no signup. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

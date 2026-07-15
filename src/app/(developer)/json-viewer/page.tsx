@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import JsonFormatterTool from "@/components/tools/code/JsonFormatterTool";
 
 export const metadata = {
-	title: "JSON Viewer Online Free - Developer Tools | SopKit",
-	description: "Free json viewer tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JSON Viewer Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JSON Viewer online. Secure, local developer utility with no registration. No signup required.",
+	keywords: "json viewer, free online tool, no signup, json viewer online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/json-viewer/",
+		canonical: "https://sopkit.github.io/json-viewer",
 	},
 	openGraph: {
-		title: "JSON Viewer Online Free - No Signup",
-		description: "Free json viewer tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/json-viewer/",
+		title: "Free JSON Viewer Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON Viewer online. Secure, local developer utility with no registration. No signup required.",
+		url: "https://sopkit.github.io/json-viewer",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JSON Viewer Online Free - Fast & Secure",
-		description: "Free json viewer tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free JSON Viewer Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JSON Viewer online. Secure, local developer utility with no registration. No signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

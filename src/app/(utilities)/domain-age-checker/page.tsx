@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Domain Age Checker Online Free - No Signup | SopKit",
-	description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Domain Age Checker Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Domain Age Checker online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "domain age checker, free online tool, no signup, domain age checker online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/domain-age-checker/",
+		canonical: "https://sopkit.github.io/domain-age-checker",
 	},
 	openGraph: {
-		title: "Domain Age Checker Online Free - No Signup",
-		description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis. No signup, no uploads",
-		url: "https://sopkit.github.io/domain-age-checker/",
+		title: "Free Domain Age Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Domain Age Checker online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/domain-age-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Domain Age Checker Online Free - Fast & Secure",
-		description: "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis. No signup, no uploads",
+		title: "Free Domain Age Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Domain Age Checker online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

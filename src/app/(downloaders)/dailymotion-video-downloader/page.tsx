@@ -5,15 +5,15 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Dailymotion Video Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Dailymotion Video Downloader online. High-speed downloading with no signup needed.",
+	description: "Download, convert, and edit video files instantly with our free Dailymotion Video Downloader online. Fast, secure, and private processing with no signup.",
 	keywords: "dailymotion downloader, download dailymotion videos, dailymotion to mp4, free video tool, SopKit, dailymotion-video-downloader, dailymotion video downloader, free dailymotion-video-downloader, dailymotion video downloader online, online downloader, free media saver, video downloader",
 	alternates: {
-		canonical: "https://sopkit.github.io/dailymotion-video-downloader/",
+		canonical: "https://sopkit.github.io/dailymotion-video-downloader",
 	},
 	openGraph: {
 		title: "Free Dailymotion Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Dailymotion Video Downloader online. High-speed downloading with no signup needed.",
-		url: "https://sopkit.github.io/dailymotion-video-downloader/",
+		description: "Download, convert, and edit video files instantly with our free Dailymotion Video Downloader online. Fast, secure, and private processing with no signup.",
+		url: "https://sopkit.github.io/dailymotion-video-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Dailymotion Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Dailymotion Video Downloader online. High-speed downloading with no signup needed.",
+		description: "Download, convert, and edit video files instantly with our free Dailymotion Video Downloader online. Fast, secure, and private processing with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Markdown to HTML Converter Online Free | SopKit",
-	description: "Convert Markdown text into clean HTML code for your website, blog, or email newsletters. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Markdown to HTML Converter Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Markdown to HTML Converter online. Fast and private browser utility with no signup.",
+	keywords: "markdown to html converter, free online tool, no signup, markdown to html converter online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/markdown-to-html/",
+		canonical: "https://sopkit.github.io/markdown-to-html",
 	},
 	openGraph: {
-		title: "Markdown to HTML Converter Online Free - No Signup | SopKit",
-		description: "Convert Markdown text into clean HTML code for your website, blog, or email newsletters. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/markdown-to-html/",
+		title: "Free Markdown to HTML Converter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Markdown to HTML Converter online. Fast and private browser utility with no signup.",
+		url: "https://sopkit.github.io/markdown-to-html",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Markdown to HTML Converter Online Free - Fast & Secure",
-		description: "Convert Markdown text into clean HTML code for your website, blog, or email newsletters. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Markdown to HTML Converter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Markdown to HTML Converter online. Fast and private browser utility with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

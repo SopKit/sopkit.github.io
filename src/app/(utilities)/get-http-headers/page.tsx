@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Get HTTP Headers Online Free - No Signup | SopKit",
-	description: "Free get http headers tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Get HTTP Headers Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Get HTTP Headers online. Fast, secure browser-based utility with no registration. No registration needed.",
+	keywords: "get http headers, free online tool, no signup, get http headers online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/get-http-headers/",
+		canonical: "https://sopkit.github.io/get-http-headers",
 	},
 	openGraph: {
-		title: "Get HTTP Headers Online Free - No Signup",
-		description: "Free get http headers tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/get-http-headers/",
+		title: "Free Get HTTP Headers Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Get HTTP Headers online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/get-http-headers",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Get HTTP Headers Online Free - Fast & Secure",
-		description: "Free get http headers tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Get HTTP Headers Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Get HTTP Headers online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

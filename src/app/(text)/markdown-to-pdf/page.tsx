@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Markdown to PDF Converter Online Free | SopKit",
-	description: "Convert Markdown text into a clean, print-ready PDF document instantly. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Markdown to PDF Converter Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Markdown to PDF Converter online. Fast and private browser utility with no signup.",
+	keywords: "markdown to pdf converter, free online tool, no signup, markdown to pdf converter online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/markdown-to-pdf/",
+		canonical: "https://sopkit.github.io/markdown-to-pdf",
 	},
 	openGraph: {
-		title: "Markdown to PDF Converter Online Free - No Signup | SopKit",
-		description: "Convert Markdown text into a clean, print-ready PDF document instantly. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/markdown-to-pdf/",
+		title: "Free Markdown to PDF Converter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Markdown to PDF Converter online. Fast and private browser utility with no signup.",
+		url: "https://sopkit.github.io/markdown-to-pdf",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/text-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Markdown to PDF Converter Online Free - Fast & Secure",
-		description: "Convert Markdown text into a clean, print-ready PDF document instantly. No signup, no uploads, 100% private browser-based tool.",
-		images: ["/og-images/text-tools.png"],
+		title: "Free Markdown to PDF Converter Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Markdown to PDF Converter online. Fast and private browser utility with no signup.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

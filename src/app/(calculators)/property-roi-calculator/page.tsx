@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Property ROI Calculator - Free Online Tool | SopKit",
-	description: "Calculate your property roi calculator instantly. Free browser-based calculator with detailed breakdowns.",
+	title: "Free Property ROI Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Property ROI Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "property roi calculator, property-roi-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/property-roi-calculator/",
+		canonical: "https://sopkit.github.io/property-roi-calculator",
 	},
 	openGraph: {
-		title: "Property ROI Calculator - Free Online Tool | SopKit",
-		description: "Calculate your property roi calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/property-roi-calculator/",
+		title: "Free Property ROI Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Property ROI Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/property-roi-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Property ROI Calculator - Free Online Tool | SopKit",
-		description: "Calculate your property roi calculator instantly. Free browser-based calculator with detailed breakdowns.",
+		title: "Free Property ROI Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Property ROI Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

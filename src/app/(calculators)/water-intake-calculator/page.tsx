@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Daily Water Intake Calculator - Free Online Tool | SopKit",
-	description: "Calculate your daily water intake calculator instantly. Free browser-based calculator with detailed breakdowns.",
+	title: "Free Daily Water Intake Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Daily Water Intake Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "daily water intake calculator, water-intake-calculator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/water-intake-calculator/",
+		canonical: "https://sopkit.github.io/water-intake-calculator",
 	},
 	openGraph: {
-		title: "Daily Water Intake Calculator - Free Online Tool | SopKit",
-		description: "Calculate your daily water intake calculator instantly. Free browser-based calculator with detailed breakdowns.",
-		url: "https://sopkit.github.io/water-intake-calculator/",
+		title: "Free Daily Water Intake Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Daily Water Intake Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/water-intake-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Daily Water Intake Calculator - Free Online Tool | SopKit",
-		description: "Calculate your daily water intake calculator instantly. Free browser-based calculator with detailed breakdowns.",
+		title: "Free Daily Water Intake Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Daily Water Intake Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

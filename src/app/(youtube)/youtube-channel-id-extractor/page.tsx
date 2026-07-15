@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import DownloaderEngine from "@/components/tools/downloaders/DownloaderEngine";
 
 export const metadata = {
-	title: "YouTube Channel ID Extractor Online Free - No Signup | SopKit",
-	description: "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations. Free and fast online tool. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Channel ID Extractor Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Channel ID Extractor online. Fast, secure browser-based utility with no registration. Easy to use.",
+	keywords: "youtube channel id extractor, free online tool, no signup, youtube channel id extractor online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-channel-id-extractor/",
+		canonical: "https://sopkit.github.io/youtube-channel-id-extractor",
 	},
 	openGraph: {
-		title: "YouTube Channel ID Extractor Online Free - No Signup",
-		description: "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations. Free and",
-		url: "https://sopkit.github.io/youtube-channel-id-extractor/",
+		title: "Free YouTube Channel ID Extractor Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Channel ID Extractor online. Fast, secure browser-based utility with no registration. Easy to use.",
+		url: "https://sopkit.github.io/youtube-channel-id-extractor",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Channel ID Extractor Online Free - Fast & Secure",
-		description: "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations. Free and",
+		title: "Free YouTube Channel ID Extractor Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Channel ID Extractor online. Fast, secure browser-based utility with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

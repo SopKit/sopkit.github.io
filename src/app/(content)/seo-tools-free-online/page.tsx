@@ -3,24 +3,24 @@ import Fragment from "react";
 
 
 export const metadata = {
-	title: "Best Free SEO Tools Online - Top Ranked Picks (2026) | SopKit",
-	description: "Optimize your search ranking with the best free SEO tools online. Audit, generate metadata, plan keywords, and track indexing with zero signup required.",
+	title: "Free SEO Tools Free Online - Ranked Picks (2026) Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free SEO Tools Free Online - Ranked Picks (2026) online. Fast, secure browser-based utility with no registra...",
 	keywords: "seo tools free online - ranked picks (2026), seo tools free online - ranked picks (2026) guide, SopKit, seo-tools-free-online, seo tools free online, free seo-tools-free-online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/seo-tools-free-online/",
+		canonical: "https://sopkit.github.io/seo-tools-free-online",
 	},
 	openGraph: {
-		title: "Best Free SEO Tools Online - Top Ranked Picks (2026) | SopKit",
-		description: "Optimize your search ranking with the best free SEO tools online. Audit, generate metadata, plan keywords, and track indexing with zero signup required.",
-		url: "https://sopkit.github.io/seo-tools-free-online/",
+		title: "Free SEO Tools Free Online - Ranked Picks (2026) Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free SEO Tools Free Online - Ranked Picks (2026) online. Fast, secure browser-based utility with no registra...",
+		url: "https://sopkit.github.io/seo-tools-free-online",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Best Free SEO Tools Online - Top Ranked Picks (2026) | SopKit",
-		description: "Optimize your search ranking with the best free SEO tools online. Audit, generate metadata, plan keywords, and track indexing with zero signup required.",
+		title: "Free SEO Tools Free Online - Ranked Picks (2026) Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free SEO Tools Free Online - Ranked Picks (2026) online. Fast, secure browser-based utility with no registra...",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

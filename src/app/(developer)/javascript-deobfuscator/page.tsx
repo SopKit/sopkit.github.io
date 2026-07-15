@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
 
 export const metadata = {
-	title: "JavaScript DeObfuscator Online Free - Developer Tools | SopKit",
-	description: "Make obfuscated JavaScript code readable again instantly. Our free online DeObfuscator reverses common obfuscation techniques to help with code analysis and debugging. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JavaScript DeObfuscator Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free JavaScript DeObfuscator online. Secure, local developer utility with no registration.",
+	keywords: "javascript deobfuscator, free online tool, no signup, javascript deobfuscator online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/javascript-deobfuscator/",
+		canonical: "https://sopkit.github.io/javascript-deobfuscator",
 	},
 	openGraph: {
-		title: "JavaScript DeObfuscator Online Free - No Signup",
-		description: "Make obfuscated JavaScript code readable again instantly. Our free online DeObfuscator reverses common obfuscation techniques to help with code analysis and deb",
-		url: "https://sopkit.github.io/javascript-deobfuscator/",
+		title: "Free JavaScript DeObfuscator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JavaScript DeObfuscator online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/javascript-deobfuscator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JavaScript DeObfuscator Online Free - Fast & Secure",
-		description: "Make obfuscated JavaScript code readable again instantly. Our free online DeObfuscator reverses common obfuscation techniques to help with code analysis and deb",
+		title: "Free JavaScript DeObfuscator Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free JavaScript DeObfuscator online. Secure, local developer utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

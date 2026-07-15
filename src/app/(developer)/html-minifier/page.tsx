@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Free HTML Minifier Online - Compress HTML Code | SopKit",
-	description: "Compress and minify your HTML code instantly. Remove comments, redundant whitespace, and reduce page size to improve SEO and load speeds. Private & secure.",
+	title: "Free HTML Minifier Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free HTML Minifier online. Secure, local developer utility with no registration. Try it free now.",
+	keywords: "html minifier, free online tool, no signup, html minifier online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-minifier/",
+		canonical: "https://sopkit.github.io/html-minifier",
 	},
 	openGraph: {
-		title: "Free HTML Minifier Online - Compress HTML Code | SopKit",
-		description: "Compress and minify your HTML code instantly. Remove comments, redundant whitespace, and reduce page size to improve SEO and load speeds. Private & secure.",
-		url: "https://sopkit.github.io/html-minifier/",
+		title: "Free HTML Minifier Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free HTML Minifier online. Secure, local developer utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/html-minifier",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/developer-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free HTML Minifier Online - Compress HTML Code | SopKit",
-		description: "Compress and minify your HTML code instantly. Remove comments, redundant whitespace, and reduce page size to improve SEO and load speeds. Private & secure.",
-		images: ["/og-images/developer-tools.png"],
+		title: "Free HTML Minifier Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free HTML Minifier online. Secure, local developer utility with no registration. Try it free now.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

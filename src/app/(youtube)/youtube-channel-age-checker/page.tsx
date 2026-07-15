@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "YouTube Channel Age Checker Online Free - No Signup | SopKit",
-	description: "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive analysis. Fast and private. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Channel Age Checker Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Channel Age Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
+	keywords: "youtube channel age checker, free online tool, no signup, youtube channel age checker online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-channel-age-checker/",
+		canonical: "https://sopkit.github.io/youtube-channel-age-checker",
 	},
 	openGraph: {
-		title: "YouTube Channel Age Checker Online Free - No Signup",
-		description: "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive analys",
-		url: "https://sopkit.github.io/youtube-channel-age-checker/",
+		title: "Free YouTube Channel Age Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Channel Age Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
+		url: "https://sopkit.github.io/youtube-channel-age-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Channel Age Checker Online Free - Fast & Secure",
-		description: "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive analys",
+		title: "Free YouTube Channel Age Checker Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Channel Age Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

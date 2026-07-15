@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Format, clean, sort, and analyze text files instantly with our free Unicode to Kruti Dev Converter online. Fast and private browser utility with no signup.",
 	keywords: "unicode-to-kruti-dev, Unicode to Kruti Dev Converter",
 	alternates: {
-		canonical: "https://sopkit.github.io/unicode-to-kruti-dev/",
+		canonical: "https://sopkit.github.io/unicode-to-kruti-dev",
 	},
 	openGraph: {
 		title: "Free Unicode to Kruti Dev Converter Online - No Signup | SopKit",
 		description: "Format, clean, sort, and analyze text files instantly with our free Unicode to Kruti Dev Converter online. Fast and private browser utility with no signup.",
-		url: "https://sopkit.github.io/unicode-to-kruti-dev/",
+		url: "https://sopkit.github.io/unicode-to-kruti-dev",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

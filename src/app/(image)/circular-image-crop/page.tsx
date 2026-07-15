@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Circular Image Crop Online Free - Avatar & Profile Cropper | SopKit",
-	description: "Crop images into perfect circular shapes online. Ideal for Twitter, LinkedIn, Discord, and Instagram profile pictures. Completely private & local processing.",
+	title: "Free Circular Image Crop Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Circular Image Crop online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+	keywords: "circular image crop, free online tool, no signup, circular image crop online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/circular-image-crop/",
+		canonical: "https://sopkit.github.io/circular-image-crop",
 	},
 	openGraph: {
-		title: "Circular Image Crop Online Free - Avatar & Profile Cropper | SopKit",
-		description: "Crop images into perfect circular shapes online. Ideal for Twitter, LinkedIn, Discord, and Instagram profile pictures. Completely private & local processing.",
-		url: "https://sopkit.github.io/circular-image-crop/",
+		title: "Free Circular Image Crop Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Circular Image Crop online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/circular-image-crop",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/image-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Circular Image Crop Online Free - Avatar & Profile Cropper | SopKit",
-		description: "Crop images into perfect circular shapes online. Ideal for Twitter, LinkedIn, Discord, and Instagram profile pictures. Completely private & local processing.",
-		images: ["/og-images/image-tools.png"],
+		title: "Free Circular Image Crop Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Circular Image Crop online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

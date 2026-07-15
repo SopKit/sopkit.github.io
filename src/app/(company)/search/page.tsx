@@ -5,15 +5,15 @@ import toolsData from "@/constants/tools.json";
 
 export const metadata = {
 	title: "Free Search All Tools Online - No Signup | SopKit",
-	description: "Search and browse our collection of 300+ free online tools. 100% free, no signup required.",
+	description: "Solve everyday digital tasks instantly using our free Search All Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
 	keywords: "search online tools, free online tools, SopKit search, image tool search, pdf tool search, seo tools directory, developer utilities, search, free search, search online, SopKit, browser tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/search/",
+		canonical: "https://sopkit.github.io/search",
 	},
 	openGraph: {
 		title: "Free Search All Tools Online - No Signup | SopKit",
-		description: "Search and browse our collection of 300+ free online tools. 100% free, no signup required.",
-		url: "https://sopkit.github.io/search/",
+		description: "Solve everyday digital tasks instantly using our free Search All Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/search",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,10 +21,10 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Search All Tools Online - No Signup | SopKit",
-		description: "Search and browse our collection of 300+ free online tools. 100% free, no signup required.",
+		description: "Solve everyday digital tasks instantly using our free Search All Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
-	robots: { index: false, follow: true },
+	robots: { index: true, follow: true },
 };
 
 export default async function SearchPage() {

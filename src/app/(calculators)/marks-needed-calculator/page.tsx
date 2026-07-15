@@ -5,23 +5,24 @@ import AcademicGradesCalculator from "@/components/tools/calculators/AcademicGra
 
 
 export const metadata = {
-	title: "Exam Marks Needed Calculator Online Free | SopKit",
-	description: "Find out exactly how many marks you need in your final exam to pass or reach your target grade based on internal scores. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Exam Marks Needed Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Exam Marks Needed Calculator online. Quick, accurate browser calculator with no registration.",
+	keywords: "exam marks needed calculator, free online tool, no signup, exam marks needed calculator online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/marks-needed-calculator/",
+		canonical: "https://sopkit.github.io/marks-needed-calculator",
 	},
 	openGraph: {
-		title: "Exam Marks Needed Calculator Online Free - No Signup | SopKit",
-		description: "Find out exactly how many marks you need in your final exam to pass or reach your target grade based on internal scores. No signup, no uploads, 100% private bro",
-		url: "https://sopkit.github.io/marks-needed-calculator/",
+		title: "Free Exam Marks Needed Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Exam Marks Needed Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/marks-needed-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Exam Marks Needed Calculator Online Free - Fast & Secure",
-		description: "Find out exactly how many marks you need in your final exam to pass or reach your target grade based on internal scores. No signup, no uploads, 100% private bro",
+		title: "Free Exam Marks Needed Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Exam Marks Needed Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

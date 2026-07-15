@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import TextToSpeechTool from "@/components/tools/audio/TextToSpeechTool";
 
 export const metadata = {
-	title: "Text to Speech Online Free - No Signup | SopKit",
-	description: "Convert text to natural sounding speech audio No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Text to Speech Online - No Signup | SopKit",
+	description: "Process, edit, and convert audio files with our free Text to Speech online. High-quality output and private browser-based tools with no signup. Try it free now.",
+	keywords: "text to speech, free online tool, no signup, text to speech online, audio, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/text-to-speech/",
+		canonical: "https://sopkit.github.io/text-to-speech",
 	},
 	openGraph: {
-		title: "Text to Speech Online Free - No Signup",
-		description: "Convert text to natural sounding speech audio No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/text-to-speech/",
+		title: "Free Text to Speech Online - No Signup | SopKit",
+		description: "Process, edit, and convert audio files with our free Text to Speech online. High-quality output and private browser-based tools with no signup. Try it free now.",
+		url: "https://sopkit.github.io/text-to-speech",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Text to Speech Online Free - Fast & Secure",
-		description: "Convert text to natural sounding speech audio No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Text to Speech Online - No Signup | SopKit",
+		description: "Process, edit, and convert audio files with our free Text to Speech online. High-quality output and private browser-based tools with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

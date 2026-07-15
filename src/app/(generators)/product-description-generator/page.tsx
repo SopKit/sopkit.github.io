@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Product Description Generator - Free Online Tool | SopKit",
-	description: "Generate optimized product description generator details. Instantly copy or share customized outputs.",
+	title: "Free Product Description Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Product Description Generator online. Generate high-quality outputs instantly with no registration required. Free & secure.",
 	keywords: "product description generator, product-description-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/product-description-generator/",
+		canonical: "https://sopkit.github.io/product-description-generator",
 	},
 	openGraph: {
-		title: "Product Description Generator - Free Online Tool | SopKit",
-		description: "Generate optimized product description generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/product-description-generator/",
+		title: "Free Product Description Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Product Description Generator online. Generate high-quality outputs instantly with no registration required. Free & secure.",
+		url: "https://sopkit.github.io/product-description-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Product Description Generator - Free Online Tool | SopKit",
-		description: "Generate optimized product description generator details. Instantly copy or share customized outputs.",
+		title: "Free Product Description Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Product Description Generator online. Generate high-quality outputs instantly with no registration required. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

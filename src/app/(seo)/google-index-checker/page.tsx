@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Google Index Checker Online Free - No Signup | SopKit",
-	description: "Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Google Index Checker Online - No Signup | SopKit",
+	description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
+	keywords: "google index checker, free online tool, no signup, google index checker online, seo, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/google-index-checker/",
+		canonical: "https://sopkit.github.io/google-index-checker",
 	},
 	openGraph: {
-		title: "Google Index Checker Online Free - No Signup",
-		description: "Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/google-index-checker/",
+		title: "Free Google Index Checker Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
+		url: "https://sopkit.github.io/google-index-checker",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Google Index Checker Online Free - Fast & Secure",
-		description: "Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based t",
+		title: "Free Google Index Checker Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

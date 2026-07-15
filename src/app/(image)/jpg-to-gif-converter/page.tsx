@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "JPG to GIF Converter Online Free - Compress & Convert Images | SopKit",
-	description: "Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online image converter. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JPG to GIF Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free JPG to GIF Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+	keywords: "jpg to gif converter, free online tool, no signup, jpg to gif converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/jpg-to-gif-converter/",
+		canonical: "https://sopkit.github.io/jpg-to-gif-converter",
 	},
 	openGraph: {
-		title: "JPG to GIF Converter Online Free - No Signup",
-		description: "Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online image",
-		url: "https://sopkit.github.io/jpg-to-gif-converter/",
+		title: "Free JPG to GIF Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free JPG to GIF Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
+		url: "https://sopkit.github.io/jpg-to-gif-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JPG to GIF Converter Online Free - Fast & Secure",
-		description: "Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online image",
+		title: "Free JPG to GIF Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free JPG to GIF Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

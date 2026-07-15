@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "YouTube Channel Finder Online Free - No Signup | SopKit",
-	description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your next video project. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Channel Finder Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Channel Finder online. Fast, secure browser-based utility with no registration. Try it free now.",
+	keywords: "youtube channel finder, free online tool, no signup, youtube channel finder online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-channel-finder/",
+		canonical: "https://sopkit.github.io/youtube-channel-finder",
 	},
 	openGraph: {
-		title: "YouTube Channel Finder Online Free - No Signup",
-		description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your ",
-		url: "https://sopkit.github.io/youtube-channel-finder/",
+		title: "Free YouTube Channel Finder Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Channel Finder online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/youtube-channel-finder",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Channel Finder Online Free - Fast & Secure",
-		description: "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your ",
+		title: "Free YouTube Channel Finder Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Channel Finder online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

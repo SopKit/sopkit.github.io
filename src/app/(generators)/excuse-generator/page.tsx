@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import TextGeneratorTool from "@/components/tools/generators/TextGeneratorTool";
 
 export const metadata = {
-	title: "Excuse Generator Online Free - No Signup | SopKit",
-	description: "Generate creative excuses for any situation. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Excuse Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Excuse Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+	keywords: "excuse generator, free online tool, no signup, excuse generator online, generators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/excuse-generator/",
+		canonical: "https://sopkit.github.io/excuse-generator",
 	},
 	openGraph: {
-		title: "Excuse Generator Online Free - No Signup",
-		description: "Generate creative excuses for any situation. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/excuse-generator/",
+		title: "Free Excuse Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Excuse Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/excuse-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Excuse Generator Online Free - Fast & Secure",
-		description: "Generate creative excuses for any situation. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Excuse Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Excuse Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import HtaccessGenerator from "@/components/tools/built-ins/HtaccessGenerator";
 
 export const metadata = {
-	title: "Htaccess Redirect Generator Online Free - No Signup | SopKit",
-	description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Htaccess Redirect Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Htaccess Redirect Generator online. Fast, secure browser-based utility with no registration. Easy to use.",
+	keywords: "htaccess redirect generator, free online tool, no signup, htaccess redirect generator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/htaccess-redirect-generator/",
+		canonical: "https://sopkit.github.io/htaccess-redirect-generator",
 	},
 	openGraph: {
-		title: "Htaccess Redirect Generator Online Free - No Signup",
-		description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-",
-		url: "https://sopkit.github.io/htaccess-redirect-generator/",
+		title: "Free Htaccess Redirect Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Htaccess Redirect Generator online. Fast, secure browser-based utility with no registration. Easy to use.",
+		url: "https://sopkit.github.io/htaccess-redirect-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Htaccess Redirect Generator Online Free - Fast & Secure",
-		description: "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-",
+		title: "Free Htaccess Redirect Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Htaccess Redirect Generator online. Fast, secure browser-based utility with no registration. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

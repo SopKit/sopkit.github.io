@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import QrGeneratorPremium from "@/components/tools/utilities/QrGeneratorPremium";
 
 export const metadata = {
-	title: "QR Code Generator Online Free - No Signup | SopKit",
-	description: "Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free QR Code Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free QR Code Generator online. Fast, secure browser-based utility with no registration. No registration needed.",
+	keywords: "qr code generator, free online tool, no signup, qr code generator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/qr-code-generator/",
+		canonical: "https://sopkit.github.io/qr-code-generator",
 	},
 	openGraph: {
-		title: "QR Code Generator Online Free - No Signup",
-		description: "Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
-		url: "https://sopkit.github.io/qr-code-generator/",
+		title: "Free QR Code Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free QR Code Generator online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/qr-code-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "QR Code Generator Online Free - Fast & Secure",
-		description: "Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool",
+		title: "Free QR Code Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free QR Code Generator online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

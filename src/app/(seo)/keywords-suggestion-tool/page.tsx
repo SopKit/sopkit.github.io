@@ -4,24 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import KeywordTool from "@/components/tools/seo/KeywordTool";
 
 export const metadata = {
-	title: "Keywords Suggestion Tool - Free Keyword Ideas Generator | SopKit",
-	description: "Generate hundreds of long-tail keyword suggestions for SEO and content in seconds. Free keyword research tool that runs in your browser — no signup, no login, 100% private.",
+	title: "Free Keywords Suggestion Tool Online - No Signup | SopKit",
+	description: "Audit websites, analyze search rankings, and generate schemas with our free Keywords Suggestion Tool online. Optimize search presence with no signup. 100% free.",
 	keywords: "keyword suggestion tool, keyword research, long-tail keywords, seo keywords, free keyword generator, keyword ideas",
 	alternates: {
-		canonical: "https://sopkit.github.io/keywords-suggestion-tool/",
+		canonical: "https://sopkit.github.io/keywords-suggestion-tool",
 	},
 	openGraph: {
-		title: "Keywords Suggestion Tool - Free Keyword Ideas Generator",
-		description: "Generate hundreds of long-tail keyword suggestions for SEO and content in seconds. Free, browser-based, and private — no signup required.",
-		url: "https://sopkit.github.io/keywords-suggestion-tool/",
+		title: "Free Keywords Suggestion Tool Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Keywords Suggestion Tool online. Optimize search presence with no signup. 100% free.",
+		url: "https://sopkit.github.io/keywords-suggestion-tool",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Keywords Suggestion Tool - Free Keyword Ideas Generator",
-		description: "Generate hundreds of long-tail keyword suggestions for SEO and content in seconds. Free, browser-based, and private — no signup required.",
+		title: "Free Keywords Suggestion Tool Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Keywords Suggestion Tool online. Optimize search presence with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

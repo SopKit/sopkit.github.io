@@ -5,15 +5,15 @@ import ResignationLetterGenerator from "@/components/tools/generators/Resignatio
 
 export const metadata = {
 	title: "Free Resignation Letter Generator Online - No Signup | SopKit",
-	description: "Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.",
+	description: "Create custom content with our free Resignation Letter Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
 	keywords: "resignation-letter-generator, Resignation Letter Generator",
 	alternates: {
-		canonical: "https://sopkit.github.io/resignation-letter-generator/",
+		canonical: "https://sopkit.github.io/resignation-letter-generator",
 	},
 	openGraph: {
 		title: "Free Resignation Letter Generator Online - No Signup | SopKit",
-		description: "Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.",
-		url: "https://sopkit.github.io/resignation-letter-generator/",
+		description: "Create custom content with our free Resignation Letter Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
+		url: "https://sopkit.github.io/resignation-letter-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Resignation Letter Generator Online - No Signup | SopKit",
-		description: "Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.",
+		description: "Create custom content with our free Resignation Letter Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

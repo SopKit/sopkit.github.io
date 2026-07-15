@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "Complete SEO Audit Tool Online Free - No Signup | SopKit",
-	description: "Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
+	description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
+	keywords: "complete seo audit tool, free online tool, no signup, complete seo audit tool online, seo, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/seo-audit-tool/",
+		canonical: "https://sopkit.github.io/seo-audit-tool",
 	},
 	openGraph: {
-		title: "Complete SEO Audit Tool Online Free - No Signup",
-		description: "Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations. No signup, no uploads,",
-		url: "https://sopkit.github.io/seo-audit-tool/",
+		title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
+		url: "https://sopkit.github.io/seo-audit-tool",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Complete SEO Audit Tool Online Free - Fast & Secure",
-		description: "Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations. No signup, no uploads,",
+		title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
+		description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

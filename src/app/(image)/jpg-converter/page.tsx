@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
 
 export const metadata = {
-	title: "JPG Converter Online Free - Compress & Convert Images | SopKit",
-	description: "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-focused and works entirely in your browser. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free JPG Converter Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
+	keywords: "jpg converter, free online tool, no signup, jpg converter online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/jpg-converter/",
+		canonical: "https://sopkit.github.io/jpg-converter",
 	},
 	openGraph: {
-		title: "JPG Converter Online Free - No Signup",
-		description: "Convert photos and images to JPG format instantly. Free online JPG converter that keeps high quality while shrinking file size. Private, browser-based, no signup.",
-		url: "https://sopkit.github.io/jpg-converter/",
+		title: "Free JPG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
+		url: "https://sopkit.github.io/jpg-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "JPG Converter Online Free - Fast & Secure",
-		description: "Convert photos and images to JPG format instantly. Free online JPG converter that keeps high quality while shrinking file size. Private, browser-based, no signup.",
+		title: "Free JPG Converter Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

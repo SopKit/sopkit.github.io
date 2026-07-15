@@ -5,23 +5,24 @@ import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
 
 
 export const metadata = {
-	title: "UPSC Photo Resizer 350x350 Online Free | SopKit",
-	description: "Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free UPSC Photo Resizer 350x350 Online - No Signup | SopKit",
+	description: "Resize and compress files with our free UPSC Photo Resizer 350x350 online. Safe and private browser utility for government exam portal applications. 100% free.",
+	keywords: "upsc photo resizer 350x350, free online tool, no signup, upsc photo resizer 350x350 online, exam-tools, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/upsc-photo-resizer-350x350/",
+		canonical: "https://sopkit.github.io/upsc-photo-resizer-350x350",
 	},
 	openGraph: {
-		title: "UPSC Photo Resizer 350x350 Online Free - No Signup | SopKit",
-		description: "Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/upsc-photo-resizer-350x350/",
+		title: "Free UPSC Photo Resizer 350x350 Online - No Signup | SopKit",
+		description: "Resize and compress files with our free UPSC Photo Resizer 350x350 online. Safe and private browser utility for government exam portal applications. 100% free.",
+		url: "https://sopkit.github.io/upsc-photo-resizer-350x350",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "UPSC Photo Resizer 350x350 Online Free - Fast & Secure",
-		description: "Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free UPSC Photo Resizer 350x350 Online - No Signup | SopKit",
+		description: "Resize and compress files with our free UPSC Photo Resizer 350x350 online. Safe and private browser utility for government exam portal applications. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

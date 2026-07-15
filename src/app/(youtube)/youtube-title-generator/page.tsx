@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "YouTube Title Generator - Free Online Tool | SopKit",
-	description: "Generate optimized youtube title generator details. Instantly copy or share customized outputs.",
+	title: "Free YouTube Title Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Title Generator online. Fast, secure browser-based utility with no registration. Try it free now.",
 	keywords: "youtube title generator, youtube-title-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-title-generator/",
+		canonical: "https://sopkit.github.io/youtube-title-generator",
 	},
 	openGraph: {
-		title: "YouTube Title Generator - Free Online Tool | SopKit",
-		description: "Generate optimized youtube title generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/youtube-title-generator/",
+		title: "Free YouTube Title Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Title Generator online. Fast, secure browser-based utility with no registration. Try it free now.",
+		url: "https://sopkit.github.io/youtube-title-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Title Generator - Free Online Tool | SopKit",
-		description: "Generate optimized youtube title generator details. Instantly copy or share customized outputs.",
+		title: "Free YouTube Title Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Title Generator online. Fast, secure browser-based utility with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

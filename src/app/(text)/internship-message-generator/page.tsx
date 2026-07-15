@@ -5,23 +5,24 @@ import JobMessageGenerator from "@/components/tools/impl/JobMessageGenerator";
 
 
 export const metadata = {
-	title: "Internship Application Message Generator Free | SopKit",
-	description: "Generate short, human internship messages for LinkedIn, email, and founder outreach. Perfect for students and freshers. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Internship Application Message Generator Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Internship Application Message Generator online. Fast and private browser utility with no...",
+	keywords: "internship application message generator, free online tool, no signup, internship application message generator online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/internship-message-generator/",
+		canonical: "https://sopkit.github.io/internship-message-generator",
 	},
 	openGraph: {
-		title: "Internship Application Message Generator Online Free - No Signup | SopKit",
-		description: "Generate short, human internship messages for LinkedIn, email, and founder outreach. Perfect for students and freshers. No signup, no uploads, 100% private brow",
-		url: "https://sopkit.github.io/internship-message-generator/",
+		title: "Free Internship Application Message Generator Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Internship Application Message Generator online. Fast and private browser utility with no...",
+		url: "https://sopkit.github.io/internship-message-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Internship Application Message Generator Online Free - Fast & Secure",
-		description: "Generate short, human internship messages for LinkedIn, email, and founder outreach. Perfect for students and freshers. No signup, no uploads, 100% private brow",
+		title: "Free Internship Application Message Generator Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Internship Application Message Generator online. Fast and private browser utility with no...",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

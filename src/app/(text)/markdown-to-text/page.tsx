@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import MarkdownToText from "@/components/tools/text/MarkdownToText";
 
 export const metadata = {
-	title: "Markdown to Text Online Free - No Signup | SopKit",
-	description: "Convert Markdown formatted text to clean plain text instantly. Perfect for cleaning up content from ChatGPT, Claude, and GitHub. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Markdown to Text Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Markdown to Text online. Fast and private browser utility with no signup. Try it free now.",
+	keywords: "markdown to text, free online tool, no signup, markdown to text online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/markdown-to-text/",
+		canonical: "https://sopkit.github.io/markdown-to-text",
 	},
 	openGraph: {
-		title: "Markdown to Text Online Free - No Signup",
-		description: "Convert Markdown formatted text to clean plain text instantly. Perfect for cleaning up content from ChatGPT, Claude, and GitHub. No signup, no uploads, 100% pri",
-		url: "https://sopkit.github.io/markdown-to-text/",
+		title: "Free Markdown to Text Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Markdown to Text online. Fast and private browser utility with no signup. Try it free now.",
+		url: "https://sopkit.github.io/markdown-to-text",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Markdown to Text Online Free - Fast & Secure",
-		description: "Convert Markdown formatted text to clean plain text instantly. Perfect for cleaning up content from ChatGPT, Claude, and GitHub. No signup, no uploads, 100% pri",
+		title: "Free Markdown to Text Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Markdown to Text online. Fast and private browser utility with no signup. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

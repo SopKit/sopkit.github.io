@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 
 export const metadata = {
-	title: "IndexNow Submitter Online Free - No Signup | SopKit",
-	description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free IndexNow Submitter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free IndexNow Submitter online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "indexnow submitter, free online tool, no signup, indexnow submitter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/indexnow/",
+		canonical: "https://sopkit.github.io/indexnow",
 	},
 	openGraph: {
-		title: "IndexNow Submitter Online Free - No Signup",
-		description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/indexnow/",
+		title: "Free IndexNow Submitter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free IndexNow Submitter online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/indexnow",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "IndexNow Submitter Online Free - Fast & Secure",
-		description: "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free IndexNow Submitter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free IndexNow Submitter online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

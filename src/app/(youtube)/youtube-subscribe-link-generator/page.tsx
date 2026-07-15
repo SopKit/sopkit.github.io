@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeSubscribeLinkGeneratorTool from "@/components/tools/youtube/YouTubeSubscribeLinkGeneratorTool";
 
 export const metadata = {
-	title: "YouTube Subscribe Link Generator Online Free - No Signup | SopKit",
-	description: "Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for social media and bios. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Subscribe Link Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Subscribe Link Generator online. Fast, secure browser-based utility with no registration.",
+	keywords: "youtube subscribe link generator, free online tool, no signup, youtube subscribe link generator online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-subscribe-link-generator/",
+		canonical: "https://sopkit.github.io/youtube-subscribe-link-generator",
 	},
 	openGraph: {
-		title: "YouTube Subscribe Link Generator Online Free - No Signup",
-		description: "Create a direct YouTube subscribe link for your channel instantly. Boost subscribers with one-click confirmation links for your bio and social posts. Free, no signup.",
-		url: "https://sopkit.github.io/youtube-subscribe-link-generator/",
+		title: "Free YouTube Subscribe Link Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Subscribe Link Generator online. Fast, secure browser-based utility with no registration.",
+		url: "https://sopkit.github.io/youtube-subscribe-link-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Subscribe Link Generator Online Free - Fast & Secure",
-		description: "Create a direct YouTube subscribe link for your channel instantly. Boost subscribers with one-click confirmation links for your bio and social posts. Free, no signup.",
+		title: "Free YouTube Subscribe Link Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Subscribe Link Generator online. Fast, secure browser-based utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

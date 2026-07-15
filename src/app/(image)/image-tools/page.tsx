@@ -2,24 +2,24 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 import ImagePillar from "@/components/pillars/ImagePillar";
 
 export const metadata = {
-	title: "Free Image Tools Online - No Signup | SopKit",
-	description: "Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.",
+	title: "Free Free Image Tools Online Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Free Image Tools Online online. Crop, resize, and optimize photos in your browser with no signup. Easy to use.",
 	keywords: "image tools, free image tools online, image compressor free, remove background online, resize image for instagram, photo enhancer free, convert heic to jpg, SopKit image",
 	alternates: {
-		canonical: "https://sopkit.github.io/image-tools/",
+		canonical: "https://sopkit.github.io/image-tools",
 	},
 	openGraph: {
-		title: "Free Image Tools Online - No Signup | SopKit",
-		description: "Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.",
-		url: "https://sopkit.github.io/image-tools/",
+		title: "Free Free Image Tools Online Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Free Image Tools Online online. Crop, resize, and optimize photos in your browser with no signup. Easy to use.",
+		url: "https://sopkit.github.io/image-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Image Tools Online - No Signup | SopKit",
-		description: "Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.",
+		title: "Free Free Image Tools Online Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Free Image Tools Online online. Crop, resize, and optimize photos in your browser with no signup. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

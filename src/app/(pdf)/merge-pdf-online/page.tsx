@@ -5,23 +5,24 @@ import PDFMerger from "@/components/tools/pdf/PDFMerger";
 
 
 export const metadata = {
-	title: "Merge PDF Online Free | SopKit",
-	description: "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Merge PDF Online Online - No Signup | SopKit",
+	description: "Manage, convert, edit, and secure PDF documents with our free Merge PDF Online online. Safe and private browser-based tool with no registration. Free & secure.",
+	keywords: "merge pdf online, free online tool, no signup, merge pdf online online, pdf, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/merge-pdf-online/",
+		canonical: "https://sopkit.github.io/merge-pdf-online",
 	},
 	openGraph: {
-		title: "Merge PDF Online Free - No Signup | SopKit",
-		description: "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/merge-pdf-online/",
+		title: "Free Merge PDF Online Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free Merge PDF Online online. Safe and private browser-based tool with no registration. Free & secure.",
+		url: "https://sopkit.github.io/merge-pdf-online",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Merge PDF Online Free - Fast & Secure",
-		description: "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Merge PDF Online Online - No Signup | SopKit",
+		description: "Manage, convert, edit, and secure PDF documents with our free Merge PDF Online online. Safe and private browser-based tool with no registration. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

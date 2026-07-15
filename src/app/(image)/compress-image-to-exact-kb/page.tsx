@@ -5,23 +5,24 @@ import ImageCompressorTool from "@/components/tools/image/ImageCompressorTool";
 
 
 export const metadata = {
-	title: "Compress Image to Exact KB Online Free | SopKit",
-	description: "Compress JPG, PNG, or WebP images to exact KB sizes like 10KB, 20KB, 50KB, 100KB, and 200KB online for free. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Compress Image to Exact KB Online - No Signup | SopKit",
+	description: "Edit, convert, and compress images with our free Compress Image to Exact KB online. Crop, resize, and optimize photos in your browser with no signup. 100% free.",
+	keywords: "compress image to exact kb, free online tool, no signup, compress image to exact kb online, image, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/compress-image-to-exact-kb/",
+		canonical: "https://sopkit.github.io/compress-image-to-exact-kb",
 	},
 	openGraph: {
-		title: "Compress Image to Exact KB Online Free - No Signup | SopKit",
-		description: "Compress JPG, PNG, or WebP images to exact KB sizes like 10KB, 20KB, 50KB, 100KB, and 200KB online for free. No signup, no uploads, 100% private browser-based t",
-		url: "https://sopkit.github.io/compress-image-to-exact-kb/",
+		title: "Free Compress Image to Exact KB Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Compress Image to Exact KB online. Crop, resize, and optimize photos in your browser with no signup. 100% free.",
+		url: "https://sopkit.github.io/compress-image-to-exact-kb",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Compress Image to Exact KB Online Free - Fast & Secure",
-		description: "Compress JPG, PNG, or WebP images to exact KB sizes like 10KB, 20KB, 50KB, 100KB, and 200KB online for free. No signup, no uploads, 100% private browser-based t",
+		title: "Free Compress Image to Exact KB Online - No Signup | SopKit",
+		description: "Edit, convert, and compress images with our free Compress Image to Exact KB online. Crop, resize, and optimize photos in your browser with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

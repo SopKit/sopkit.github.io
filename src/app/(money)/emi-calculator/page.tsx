@@ -5,23 +5,24 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 
 
 export const metadata = {
-	title: "EMI Calculator for Loans Online Free | SopKit",
-	description: "Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free EMI Calculator for Loans Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free EMI Calculator for Loans online. Quick, accurate browser calculator with no registration.",
+	keywords: "emi calculator for loans, free online tool, no signup, emi calculator for loans online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/emi-calculator/",
+		canonical: "https://sopkit.github.io/emi-calculator",
 	},
 	openGraph: {
-		title: "EMI Calculator for Loans Online Free - No Signup | SopKit",
-		description: "Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/emi-calculator/",
+		title: "Free EMI Calculator for Loans Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free EMI Calculator for Loans online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/emi-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "EMI Calculator for Loans Online Free - Fast & Secure",
-		description: "Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans. No signup, no uploads, 100% private browser-based too",
+		title: "Free EMI Calculator for Loans Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free EMI Calculator for Loans online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

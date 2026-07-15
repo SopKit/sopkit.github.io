@@ -5,23 +5,24 @@ import AttendanceCalculator from "@/components/tools/calculators/AttendanceCalcu
 
 
 export const metadata = {
-	title: "Attendance Shortage Calculator Online Free | SopKit",
-	description: "Calculate how many classes you need to attend to reach 75% attendance or how many classes you can safely miss. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Attendance Shortage Calculator Online - No Signup | SopKit",
+	description: "Compute rates, taxes, averages, and conversions with our free Attendance Shortage Calculator online. Quick, accurate browser calculator with no registration.",
+	keywords: "attendance shortage calculator, free online tool, no signup, attendance shortage calculator online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/attendance-shortage-calculator/",
+		canonical: "https://sopkit.github.io/attendance-shortage-calculator",
 	},
 	openGraph: {
-		title: "Attendance Shortage Calculator Online Free - No Signup | SopKit",
-		description: "Calculate how many classes you need to attend to reach 75% attendance or how many classes you can safely miss. No signup, no uploads, 100% private browser-based",
-		url: "https://sopkit.github.io/attendance-shortage-calculator/",
+		title: "Free Attendance Shortage Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Attendance Shortage Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/attendance-shortage-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Attendance Shortage Calculator Online Free - Fast & Secure",
-		description: "Calculate how many classes you need to attend to reach 75% attendance or how many classes you can safely miss. No signup, no uploads, 100% private browser-based",
+		title: "Free Attendance Shortage Calculator Online - No Signup | SopKit",
+		description: "Compute rates, taxes, averages, and conversions with our free Attendance Shortage Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

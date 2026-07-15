@@ -4,24 +4,25 @@ import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 
 export const metadata = {
-	title: "Free HTML to XML Entities Converter Online | SopKit",
-	description: "Convert HTML special characters into XML entities (like &amp;lt; and &amp;gt;) instantly. Escape and unescape code segments safely. Privacy-first browser tool.",
+	title: "Free HTML to XML Entities Converter Online - No Signup | SopKit",
+	description: "Format, minify, validate, and convert code snippets with our free HTML to XML Entities Converter online. Secure, local developer utility with no registration.",
+	keywords: "html to xml entities converter, free online tool, no signup, html to xml entities converter online, developer, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/html-to-xml-entities/",
+		canonical: "https://sopkit.github.io/html-to-xml-entities",
 	},
 	openGraph: {
-		title: "Free HTML to XML Entities Converter Online | SopKit",
-		description: "Convert HTML special characters into XML entities (like &amp;lt; and &amp;gt;) instantly. Escape and unescape code segments safely. Privacy-first browser tool.",
-		url: "https://sopkit.github.io/html-to-xml-entities/",
+		title: "Free HTML to XML Entities Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free HTML to XML Entities Converter online. Secure, local developer utility with no registration.",
+		url: "https://sopkit.github.io/html-to-xml-entities",
 		siteName: "SopKit",
-		images: [{ url: "/og-images/developer-tools.png" }],
+		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free HTML to XML Entities Converter Online | SopKit",
-		description: "Convert HTML special characters into XML entities (like &amp;lt; and &amp;gt;) instantly. Escape and unescape code segments safely. Privacy-first browser tool.",
-		images: ["/og-images/developer-tools.png"],
+		title: "Free HTML to XML Entities Converter Online - No Signup | SopKit",
+		description: "Format, minify, validate, and convert code snippets with our free HTML to XML Entities Converter online. Secure, local developer utility with no registration.",
+		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
 };

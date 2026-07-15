@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Body Fat Percentage Calculator Online Free | SopKit",
-	description: "Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Body Fat Percentage Calculator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Body Fat Percentage Calculator online. Fast, secure browser-based utility with no registration. 100% free.",
+	keywords: "body fat percentage calculator, free online tool, no signup, body fat percentage calculator online, health, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/body-fat-calculator/",
+		canonical: "https://sopkit.github.io/body-fat-calculator",
 	},
 	openGraph: {
-		title: "Body Fat Percentage Calculator Online Free - No Signup | SopKit",
-		description: "Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/body-fat-calculator/",
+		title: "Free Body Fat Percentage Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Body Fat Percentage Calculator online. Fast, secure browser-based utility with no registration. 100% free.",
+		url: "https://sopkit.github.io/body-fat-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Body Fat Percentage Calculator Online Free - Fast & Secure",
-		description: "Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Body Fat Percentage Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Body Fat Percentage Calculator online. Fast, secure browser-based utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

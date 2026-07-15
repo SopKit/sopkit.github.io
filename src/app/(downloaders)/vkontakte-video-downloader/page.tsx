@@ -5,15 +5,15 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Vkontakte Video Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Vkontakte Video Downloader online. High-speed downloading with no signup needed. 100% free.",
+	description: "Download, convert, and edit video files instantly with our free Vkontakte Video Downloader online. Fast, secure, and private processing with no signup.",
 	keywords: "vkontakte video downloader, free online tool, no signup, vkontakte-video-downloader, free vkontakte-video-downloader, Vkontakte Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/vkontakte-video-downloader/",
+		canonical: "https://sopkit.github.io/vkontakte-video-downloader",
 	},
 	openGraph: {
 		title: "Free Vkontakte Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Vkontakte Video Downloader online. High-speed downloading with no signup needed. 100% free.",
-		url: "https://sopkit.github.io/vkontakte-video-downloader/",
+		description: "Download, convert, and edit video files instantly with our free Vkontakte Video Downloader online. Fast, secure, and private processing with no signup.",
+		url: "https://sopkit.github.io/vkontakte-video-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Vkontakte Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Vkontakte Video Downloader online. High-speed downloading with no signup needed. 100% free.",
+		description: "Download, convert, and edit video files instantly with our free Vkontakte Video Downloader online. Fast, secure, and private processing with no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

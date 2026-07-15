@@ -5,15 +5,15 @@ import AcademicGradesCalculator from "@/components/tools/calculators/AcademicGra
 
 export const metadata = {
 	title: "Free SGPA Calculator Online - No Signup | SopKit",
-	description: "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.",
+	description: "Compute rates, taxes, averages, and conversions with our free SGPA Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 	keywords: "sgpa-calculator, SGPA Calculator, calculate sgpa, credit point calculator, semester grade calculator, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/sgpa-calculator/",
+		canonical: "https://sopkit.github.io/sgpa-calculator",
 	},
 	openGraph: {
 		title: "Free SGPA Calculator Online - No Signup | SopKit",
-		description: "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.",
-		url: "https://sopkit.github.io/sgpa-calculator/",
+		description: "Compute rates, taxes, averages, and conversions with our free SGPA Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
+		url: "https://sopkit.github.io/sgpa-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free SGPA Calculator Online - No Signup | SopKit",
-		description: "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.",
+		description: "Compute rates, taxes, averages, and conversions with our free SGPA Calculator online. Quick, accurate browser calculator with no registration. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

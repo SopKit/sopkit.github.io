@@ -5,15 +5,15 @@ import AttendanceCalculator from "@/components/tools/calculators/AttendanceCalcu
 
 export const metadata = {
 	title: "Free 75% Attendance Calculator Online - No Signup | SopKit",
-	description: "Calculate how many classes you need to attend or can safely skip to maintain a minimum 75% attendance rate.",
+	description: "Compute rates, taxes, averages, and conversions with our free 75% Attendance Calculator online. Quick, accurate browser calculator with no registration.",
 	keywords: "75-attendance-calculator, 75 Attendance Calculator, attendance calculator, college attendance calculator, skip class calculator, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/75-attendance-calculator/",
+		canonical: "https://sopkit.github.io/75-attendance-calculator",
 	},
 	openGraph: {
 		title: "Free 75% Attendance Calculator Online - No Signup | SopKit",
-		description: "Calculate how many classes you need to attend or can safely skip to maintain a minimum 75% attendance rate.",
-		url: "https://sopkit.github.io/75-attendance-calculator/",
+		description: "Compute rates, taxes, averages, and conversions with our free 75% Attendance Calculator online. Quick, accurate browser calculator with no registration.",
+		url: "https://sopkit.github.io/75-attendance-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free 75% Attendance Calculator Online - No Signup | SopKit",
-		description: "Calculate how many classes you need to attend or can safely skip to maintain a minimum 75% attendance rate.",
+		description: "Compute rates, taxes, averages, and conversions with our free 75% Attendance Calculator online. Quick, accurate browser calculator with no registration.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

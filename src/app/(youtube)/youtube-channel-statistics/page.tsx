@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
 
 export const metadata = {
-	title: "YouTube Channel Statistics Online Free - No Signup | SopKit",
-	description: "Get detailed insights and statistics for any YouTube channel instantly. View subscriber counts, video totals, and engagement metrics with our free online analytics tool. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free YouTube Channel Statistics Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free YouTube Channel Statistics online. Fast, secure browser-based utility with no registration. Free & secure.",
+	keywords: "youtube channel statistics, free online tool, no signup, youtube channel statistics online, youtube, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/youtube-channel-statistics/",
+		canonical: "https://sopkit.github.io/youtube-channel-statistics",
 	},
 	openGraph: {
-		title: "YouTube Channel Statistics Online Free - No Signup",
-		description: "Get detailed insights and statistics for any YouTube channel instantly. View subscriber counts, video totals, and engagement metrics with our free online analyt",
-		url: "https://sopkit.github.io/youtube-channel-statistics/",
+		title: "Free YouTube Channel Statistics Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Channel Statistics online. Fast, secure browser-based utility with no registration. Free & secure.",
+		url: "https://sopkit.github.io/youtube-channel-statistics",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "YouTube Channel Statistics Online Free - Fast & Secure",
-		description: "Get detailed insights and statistics for any YouTube channel instantly. View subscriber counts, video totals, and engagement metrics with our free online analyt",
+		title: "Free YouTube Channel Statistics Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free YouTube Channel Statistics online. Fast, secure browser-based utility with no registration. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

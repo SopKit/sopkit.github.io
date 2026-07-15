@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import RgbHexConverter from "@/components/tools/built-ins/RgbHexConverter";
 
 export const metadata = {
-	title: "Color Converter Online Free - No Signup | SopKit",
-	description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Color Converter Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Color Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
+	keywords: "color converter, free online tool, no signup, color converter online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/color-converter/",
+		canonical: "https://sopkit.github.io/color-converter",
 	},
 	openGraph: {
-		title: "Color Converter Online Free - No Signup",
-		description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision",
-		url: "https://sopkit.github.io/color-converter/",
+		title: "Free Color Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Color Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
+		url: "https://sopkit.github.io/color-converter",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Color Converter Online Free - Fast & Secure",
-		description: "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision",
+		title: "Free Color Converter Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Color Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

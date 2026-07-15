@@ -5,15 +5,15 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free Save Instagram Clips Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free Save Instagram Clips online. High-speed downloading with no signup needed. Try it free now.",
+	description: "Download, convert, and edit video files instantly with our free Save Instagram Clips online. Fast, secure, and private processing with no signup. Free & secure.",
 	keywords: "save instagram clips, free online tool, no signup, save-instagram-clips, free save-instagram-clips, Save Instagram Clips online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/save-instagram-clips/",
+		canonical: "https://sopkit.github.io/save-instagram-clips",
 	},
 	openGraph: {
 		title: "Free Save Instagram Clips Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Save Instagram Clips online. High-speed downloading with no signup needed. Try it free now.",
-		url: "https://sopkit.github.io/save-instagram-clips/",
+		description: "Download, convert, and edit video files instantly with our free Save Instagram Clips online. Fast, secure, and private processing with no signup. Free & secure.",
+		url: "https://sopkit.github.io/save-instagram-clips",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -21,7 +21,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Save Instagram Clips Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free Save Instagram Clips online. High-speed downloading with no signup needed. Try it free now.",
+		description: "Download, convert, and edit video files instantly with our free Save Instagram Clips online. Fast, secure, and private processing with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

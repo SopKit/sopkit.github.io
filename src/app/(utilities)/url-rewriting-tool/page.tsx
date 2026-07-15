@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import UrlParserTool from "@/components/tools/built-ins/UrlParserTool";
 
 export const metadata = {
-	title: "URL Rewriting Tool Online Free - No Signup | SopKit",
-	description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free URL Rewriting Tool Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free URL Rewriting Tool online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "url rewriting tool, free online tool, no signup, url rewriting tool online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/url-rewriting-tool/",
+		canonical: "https://sopkit.github.io/url-rewriting-tool",
 	},
 	openGraph: {
-		title: "URL Rewriting Tool Online Free - No Signup",
-		description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
-		url: "https://sopkit.github.io/url-rewriting-tool/",
+		title: "Free URL Rewriting Tool Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free URL Rewriting Tool online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/url-rewriting-tool",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "URL Rewriting Tool Online Free - Fast & Secure",
-		description: "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based too",
+		title: "Free URL Rewriting Tool Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free URL Rewriting Tool online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

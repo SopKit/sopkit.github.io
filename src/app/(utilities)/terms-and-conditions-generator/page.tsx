@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Terms and Conditions Generator - Free Online Tool | SopKit",
-	description: "Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability.",
+	title: "Free Terms and Conditions Generator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Terms and Conditions Generator online. Fast, secure browser-based utility with no registration. 100% free.",
 	keywords: "terms and conditions generator, terms-and-conditions-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/terms-and-conditions-generator/",
+		canonical: "https://sopkit.github.io/terms-and-conditions-generator",
 	},
 	openGraph: {
-		title: "Terms and Conditions Generator - Free Online Tool | SopKit",
-		description: "Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability.",
-		url: "https://sopkit.github.io/terms-and-conditions-generator/",
+		title: "Free Terms and Conditions Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Terms and Conditions Generator online. Fast, secure browser-based utility with no registration. 100% free.",
+		url: "https://sopkit.github.io/terms-and-conditions-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Terms and Conditions Generator - Free Online Tool | SopKit",
-		description: "Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability.",
+		title: "Free Terms and Conditions Generator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Terms and Conditions Generator online. Fast, secure browser-based utility with no registration. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

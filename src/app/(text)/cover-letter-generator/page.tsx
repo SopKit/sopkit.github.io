@@ -5,23 +5,24 @@ import JobMessageGenerator from "@/components/tools/impl/JobMessageGenerator";
 
 
 export const metadata = {
-	title: "Cover Letter Generator Online Free | SopKit",
-	description: "Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Cover Letter Generator Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Cover Letter Generator online. Fast and private browser utility with no signup. Easy to use.",
+	keywords: "cover letter generator, free online tool, no signup, cover letter generator online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/cover-letter-generator/",
+		canonical: "https://sopkit.github.io/cover-letter-generator",
 	},
 	openGraph: {
-		title: "Cover Letter Generator Online Free - No Signup | SopKit",
-		description: "Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit. No signup, no upl",
-		url: "https://sopkit.github.io/cover-letter-generator/",
+		title: "Free Cover Letter Generator Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Cover Letter Generator online. Fast and private browser utility with no signup. Easy to use.",
+		url: "https://sopkit.github.io/cover-letter-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Cover Letter Generator Online Free - Fast & Secure",
-		description: "Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit. No signup, no upl",
+		title: "Free Cover Letter Generator Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Cover Letter Generator online. Fast and private browser utility with no signup. Easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

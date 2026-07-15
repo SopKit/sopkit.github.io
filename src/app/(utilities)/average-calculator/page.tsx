@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 
 export const metadata = {
-	title: "Average Calculator Online Free - No Signup | SopKit",
-	description: "Calculate the mean, median, mode, and range of any dataset instantly. Our free online Average Calculator helps you analyze statistics and numeric data in seconds. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Average Calculator Online - No Signup | SopKit",
+	description: "Solve everyday digital tasks instantly using our free Average Calculator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+	keywords: "average calculator, free online tool, no signup, average calculator online, utilities, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/average-calculator/",
+		canonical: "https://sopkit.github.io/average-calculator",
 	},
 	openGraph: {
-		title: "Average Calculator Online Free - No Signup",
-		description: "Calculate the mean, median, mode, and range of any dataset instantly. Our free online Average Calculator helps you analyze statistics and numeric data in second",
-		url: "https://sopkit.github.io/average-calculator/",
+		title: "Free Average Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Average Calculator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
+		url: "https://sopkit.github.io/average-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Average Calculator Online Free - Fast & Secure",
-		description: "Calculate the mean, median, mode, and range of any dataset instantly. Our free online Average Calculator helps you analyze statistics and numeric data in second",
+		title: "Free Average Calculator Online - No Signup | SopKit",
+		description: "Solve everyday digital tasks instantly using our free Average Calculator online. Fast, secure browser-based utility with no registration. 100% free and secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

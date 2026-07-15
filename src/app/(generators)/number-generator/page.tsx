@@ -4,23 +4,24 @@ import { getToolByRoute } from "@/lib/tools";
 import NumberGeneratorTool from "@/components/tools/generators/NumberGeneratorTool";
 
 export const metadata = {
-	title: "Number Generator Online Free - No Signup | SopKit",
-	description: "Professional Number Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Number Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Number Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+	keywords: "number generator, free online tool, no signup, number generator online, generators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/number-generator/",
+		canonical: "https://sopkit.github.io/number-generator",
 	},
 	openGraph: {
-		title: "Number Generator Online Free - No Signup",
-		description: "Professional Number Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/number-generator/",
+		title: "Free Number Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Number Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
+		url: "https://sopkit.github.io/number-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Number Generator Online Free - Fast & Secure",
-		description: "Professional Number Generator tool for free online use. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Number Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Number Generator online. Generate high-quality outputs instantly with no registration required. 100% free and easy to use.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

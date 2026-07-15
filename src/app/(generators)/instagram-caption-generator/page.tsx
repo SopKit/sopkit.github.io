@@ -4,24 +4,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Instagram Caption Generator - Free Online Tool | SopKit",
-	description: "Generate optimized instagram caption generator details. Instantly copy or share customized outputs.",
+	title: "Free Instagram Caption Generator Online - No Signup | SopKit",
+	description: "Create custom content with our free Instagram Caption Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
 	keywords: "instagram caption generator, instagram-caption-generator, free online, no signup, SopKit, browser utility",
 	alternates: {
-		canonical: "https://sopkit.github.io/instagram-caption-generator/",
+		canonical: "https://sopkit.github.io/instagram-caption-generator",
 	},
 	openGraph: {
-		title: "Instagram Caption Generator - Free Online Tool | SopKit",
-		description: "Generate optimized instagram caption generator details. Instantly copy or share customized outputs.",
-		url: "https://sopkit.github.io/instagram-caption-generator/",
+		title: "Free Instagram Caption Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Instagram Caption Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
+		url: "https://sopkit.github.io/instagram-caption-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Instagram Caption Generator - Free Online Tool | SopKit",
-		description: "Generate optimized instagram caption generator details. Instantly copy or share customized outputs.",
+		title: "Free Instagram Caption Generator Online - No Signup | SopKit",
+		description: "Create custom content with our free Instagram Caption Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

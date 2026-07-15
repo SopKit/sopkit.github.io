@@ -5,23 +5,24 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 
 
 export const metadata = {
-	title: "Emoji Text Generator Online Free | SopKit",
-	description: "Add fun emojis to your text or convert words into emoji-rich messages for social media. No signup, no uploads, 100% private browser-based tool.",
+	title: "Free Emoji Text Generator Online - No Signup | SopKit",
+	description: "Format, clean, sort, and analyze text files instantly with our free Emoji Text Generator online. Fast and private browser utility with no signup. Free & secure.",
+	keywords: "emoji text generator, free online tool, no signup, emoji text generator online, text, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/emoji-text-generator/",
+		canonical: "https://sopkit.github.io/emoji-text-generator",
 	},
 	openGraph: {
-		title: "Emoji Text Generator Online Free - No Signup | SopKit",
-		description: "Add fun emojis to your text or convert words into emoji-rich messages for social media. No signup, no uploads, 100% private browser-based tool.",
-		url: "https://sopkit.github.io/emoji-text-generator/",
+		title: "Free Emoji Text Generator Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Emoji Text Generator online. Fast and private browser utility with no signup. Free & secure.",
+		url: "https://sopkit.github.io/emoji-text-generator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Emoji Text Generator Online Free - Fast & Secure",
-		description: "Add fun emojis to your text or convert words into emoji-rich messages for social media. No signup, no uploads, 100% private browser-based tool.",
+		title: "Free Emoji Text Generator Online - No Signup | SopKit",
+		description: "Format, clean, sort, and analyze text files instantly with our free Emoji Text Generator online. Fast and private browser utility with no signup. Free & secure.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -4,24 +4,24 @@ import PuhutvDownloader from "@/components/tools/downloaders/PuhutvDownloader";
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free PuhuTv Video Downloader Online - No Signup | SopKit",
-	description: "Save and download media files from multiple platforms with our free PuhuTv Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
+	title: "Free Puhutv Video Downloader Online - No Signup | SopKit",
+	description: "Download, convert, and edit video files instantly with our free Puhutv Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
 	keywords: "puhutv video downloader, free online tool, no signup, puhutv-video-downloader, free puhutv-video-downloader, Puhutv Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/puhutv-video-downloader/",
+		canonical: "https://sopkit.github.io/puhutv-video-downloader",
 	},
 	openGraph: {
-		title: "Free PuhuTv Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free PuhuTv Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
-		url: "https://sopkit.github.io/puhutv-video-downloader/",
+		title: "Free Puhutv Video Downloader Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Puhutv Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
+		url: "https://sopkit.github.io/puhutv-video-downloader",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free PuhuTv Video Downloader Online - No Signup | SopKit",
-		description: "Save and download media files from multiple platforms with our free PuhuTv Video Downloader online. High-speed downloading with no signup needed. Free & secure.",
+		title: "Free Puhutv Video Downloader Online - No Signup | SopKit",
+		description: "Download, convert, and edit video files instantly with our free Puhutv Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
