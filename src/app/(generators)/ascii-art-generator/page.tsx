@@ -3,28 +3,13 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import AsciiArtGeneratorTool from "@/components/tools/generators/AsciiArtGeneratorTool";
 
-export const metadata = {
-	title: "ASCII Art Generator Online Free - No Signup | SopKit",
-	description: "Convert images into text-based ASCII art online. Customize resolution and contrast for the perfect text-based representation. No signup, no uploads, 100% private browser-based tool.",
-	alternates: {
-		canonical: "https://sopkit.github.io/ascii-art-generator/",
-	},
-	openGraph: {
-		title: "ASCII Art Generator Online Free - No Signup",
-		description: "Convert images into text-based ASCII art online. Customize resolution and contrast for the perfect text-based representation. No signup, no uploads, 100% privat",
-		url: "https://sopkit.github.io/ascii-art-generator/",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "ASCII Art Generator Online Free - Fast & Secure",
-		description: "Convert images into text-based ASCII art online. Customize resolution and contrast for the perfect text-based representation. No signup, no uploads, 100% privat",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Ascii Art Generator",
+	description: "Privacy-friendly, 100% client-side ascii art generation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	route: "/ascii-art-generator",
+	category: "ascii-art-generator",
+});
+
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/ascii-art-generator");

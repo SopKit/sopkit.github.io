@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "BMR Calculator (Basal Metabolic Rate)",
-	description: "Private BMR Calculator (Basal Metabolic Rate): privately calculate health metrics entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	description: "Privacy-friendly, 100% client-side bmr calculator (basal metabolic rate). Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
 	route: "/bmr-calculator",
 	category: "health",
 });

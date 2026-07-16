@@ -7,27 +7,13 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calculator, ArrowRight } from "lucide-react";
 
-export const metadata = {
-	title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
-	description: "Free online calculators for every need. BMI calculators, loan estimators, percentage tools, and scientific math tools. Get instant, accurate results for free.",
-	keywords: "online calculators, bmi calculator, loan calculator, math tools, free calculators, SopKit, calculators, calculators online, online calculator, free math tool, converter, number tool",
-	alternates: { canonical: "https://sopkit.github.io/calculators/" },
-	openGraph: {
-		title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
-		description: "Free online calculators for every need. BMI calculators, loan estimators, percentage tools, and scientific math tools. Get instant, accurate results for free.",
-		url: "https://sopkit.github.io/calculators/",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
-		description: "Free online calculators for every need. BMI calculators, loan estimators, percentage tools, and scientific math tools.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Calculators",
+	description: "Privacy-friendly, 100% client-side calculators. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	route: "/calculators",
+	category: "calculators",
+});
+
 
 export default function CalculatorsHub() {
 	const tools = getAllToolsByCategory("calculators");

@@ -4,28 +4,14 @@ import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, ArrowRight } from "lucide-react";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free SEO Tools Online - Optimize Your Website | SopKit",
-	description: "Professional suite of free SEO tools. Keyword generators, meta tag analyzers, sitemap makers, and SERP checkers. Improve your search rankings for free.",
-	keywords: "seo tools, keyword generator, meta tag analyzer, sitemap maker, online seo tools, SopKit, seo-tools, free seo-tools, seo tools online, seo tool, website analyzer, online seo checker",
-	alternates: { canonical: "https://sopkit.github.io/seo-tools/" },
-	openGraph: {
-		title: "Free SEO Tools Online - Optimize Your Website | SopKit",
-		description: "Professional suite of free SEO tools. Keyword generators, meta tag analyzers, sitemap makers, and SERP checkers. Improve your search rankings for free.",
-		url: "https://sopkit.github.io/seo-tools/",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free SEO Tools Online - Optimize Your Website | SopKit",
-		description: "Professional suite of free SEO tools. Keyword generators, meta tag analyzers, sitemap makers, and SERP checkers.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "SEO Tools",
+	description: "Privacy-friendly, 100% client-side SEO Tools. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	route: "/seo-tools",
+	category: "seo",
+});
 
 export default function SEOHub() {
 	const tools = getAllToolsByCategory("seo");

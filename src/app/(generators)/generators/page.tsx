@@ -10,7 +10,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Fun Generators",
-	description: "Privacy-friendly, 100% client-side Fun Generators online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+	description: "Privacy-friendly, 100% client-side fun generators. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
 	route: "/generators",
 	category: "others",
 });
