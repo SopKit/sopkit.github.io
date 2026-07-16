@@ -25,6 +25,7 @@
 		"publish-all": "node scripts/publish-all.mjs"
 	},
 	"dependencies": {
+		"@hexclave/next": "1.0.51",
 		"@opennextjs/cloudflare": "^1.19.8",
 		"@pdfsmaller/pdf-encrypt-lite": "^1.0.2",
 		"@radix-ui/react-accordion": "^1.2.11",

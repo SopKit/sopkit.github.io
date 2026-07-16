@@ -8,6 +8,7 @@ import { useEffect, useState, useRef, Suspense } from "react";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { AuthButton } from "./AuthButton";
 import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
 import { STATIC_ROUTES } from "@/lib/tools";
 import { GITHUB_REPO_URL } from "@/constants/config";
 
@@ -97,6 +98,40 @@ export function AppleNavbar() {
 		window.addEventListener("keydown", handleKeyDown);
 		return () => window.removeEventListener("keydown", handleKeyDown);
 	}, [isSearchOpen, allTools]);
+
+	const POPULAR_SEARCHES = [
+		"PDF Merger",
+		"Image Compressor",
+		"JSON Formatter",
+		"QR Code Generator",
+		"Password Generator",
+		"Base64 Encode",
+		"UUID Generator",
+		"Word Counter",
+		"Markdown to HTML",
+		"URL Shortener",
+		"BMI Calculator",
+		"Color Converter",
+		"CSV to JSON",
+		"HTML Minifier",
+		"Text to Speech",
+	];
+
+	const suggestions = (() => {
+		if (!searchQuery.trim()) return [] as SearchToolItem[];
+		const q = searchQuery.toLowerCase();
+		return allTools
+			.filter(
+				(t) =>
+					t.name.toLowerCase().includes(q) ||
+					t.description.toLowerCase().includes(q) ||
+					t.category.toLowerCase().includes(q) ||
+					t.id.toLowerCase().includes(q)
+			)
+			.slice(0, 8);
+	})();
+
+	const showSuggestions = searchQuery.trim().length > 0 && suggestions.length > 0;
 
 	const filteredTools = searchQuery.trim()
 		? allTools.filter(
@@ -247,18 +282,16 @@ export function AppleNavbar() {
 
 						{/* Results */}
 						<div className="p-2 max-h-[350px] overflow-y-auto">
-							{filteredTools.length === 0 ? (
+							{!searchQuery.trim() && !allTools.length ? (
 								<div className="p-8 text-center text-xs text-muted-foreground">
-									No matching tools found. Try searching for "pdf", "image", or "json".
+									Loading tools index...
 								</div>
-							) : (
+							) : !searchQuery.trim() ? (
 								<div className="space-y-1">
-									{searchQuery.trim() === "" && (
-										<p className="px-3 py-1.5 text-[9px] font-bold text-muted-foreground/70 uppercase tracking-wider flex items-center gap-1">
-											<Sparkles className="w-3 h-3 text-primary animate-pulse" /> Popular Sandbox Utilities
-										</p>
-									)}
-									{filteredTools.map((tool, index) => {
+									<p className="px-3 py-1.5 text-[9px] font-bold text-muted-foreground/70 uppercase tracking-wider flex items-center gap-1">
+										<Sparkles className="w-3 h-3 text-primary animate-pulse" /> Popular Sandbox Utilities
+									</p>
+									{allTools.slice(0, 8).map((tool, index) => {
 										const isSelected = selectedIndex === index;
 										return (
 											<div
@@ -282,6 +315,40 @@ export function AppleNavbar() {
 											</div>
 										);
 									})}
+								</div>
+							) : showSuggestions ? (
+								<div className="space-y-1">
+									<p className="px-3 py-1.5 text-[9px] font-bold text-muted-foreground/70 uppercase tracking-wider">
+										Suggestions
+									</p>
+									{suggestions.map((tool, index) => {
+										const isSelected = selectedIndex === index;
+										return (
+											<div
+												key={tool.id}
+												onClick={() => {
+													router.push(tool.route);
+													closeSearch();
+												}}
+												onMouseEnter={() => setSelectedIndex(index)}
+												className={`flex items-center justify-between p-3 rounded-xl cursor-pointer select-none transition-all ${
+													isSelected ? "bg-primary/10 border-l-2 border-primary" : "bg-transparent"
+												}`}
+											>
+												<div className="flex-1 min-w-0 pr-3">
+													<p className={`text-xs font-bold ${isSelected ? "text-primary" : "text-foreground"}`}>{tool.name}</p>
+													<p className="text-[10px] text-muted-foreground truncate leading-normal mt-0.5">{tool.description}</p>
+												</div>
+												<Badge variant="outline" className="text-[9px] font-bold uppercase tracking-wide shrink-0">
+													{tool.category}
+												</Badge>
+											</div>
+										);
+									})}
+								</div>
+							) : (
+								<div className="p-8 text-center text-xs text-muted-foreground">
+									No matching tools found. Try searching for "pdf", "image", or "json".
 								</div>
 							)}
 						</div>

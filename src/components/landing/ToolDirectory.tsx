@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState, useTransition, useRef } from "react";
 import { Search, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
@@ -89,8 +89,36 @@ export function ToolDirectory({ tools }: ToolDirectoryProps) {
 	const [searchQuery, setSearchQuery] = useState("");
 	const [selectedCategory, setSelectedCategory] = useState("all");
 	const [isPending, startTransition] = useTransition();
+	const [showSuggestions, setShowSuggestions] = useState(false);
+	const searchInputRef = useRef<HTMLInputElement>(null);
 
 	const toolsCount = tools.length;
+
+	const POPULAR_SEARCHES = [
+		"PDF Merger",
+		"Image Compressor",
+		"JSON Formatter",
+		"QR Code Generator",
+		"Password Generator",
+		"Base64 Encode",
+		"UUID Generator",
+		"Word Counter",
+		"Markdown to HTML",
+		"URL Shortener",
+	];
+
+	const suggestions = (() => {
+		if (!searchQuery.trim()) return [] as Tool[];
+		const q = searchQuery.toLowerCase();
+		return tools
+			.filter(
+				(t) =>
+					t.name.toLowerCase().includes(q) ||
+					t.description.toLowerCase().includes(q) ||
+					t.id.toLowerCase().includes(q)
+			)
+			.slice(0, 8);
+	})();
 
 	const handleCategoryChange = (slug: string) => {
 		startTransition(() => {
@@ -100,6 +128,23 @@ export function ToolDirectory({ tools }: ToolDirectoryProps) {
 
 	const handleSearchChange = (query: string) => {
 		setSearchQuery(query);
+		setShowSuggestions(query.trim().length > 0);
+	};
+
+	const handleSuggestionClick = (tool: Tool) => {
+		setSearchQuery(tool.name);
+		setShowSuggestions(false);
+		window.location.href = tool.route;
+	};
+
+	const handleBlur = () => {
+		setTimeout(() => setShowSuggestions(false), 150);
+	};
+
+	const handleFocus = () => {
+		if (searchQuery.trim()) {
+			setShowSuggestions(true);
+		}
 	};
 
 	const renderToolCard = (tool: Tool) => {
@@ -164,18 +209,59 @@ export function ToolDirectory({ tools }: ToolDirectoryProps) {
 				</p>
 			</div>
 
-			{/* Search and filter toolbar */}
-			<div className="space-y-6 max-w-4xl mx-auto">
-				<div className="relative group">
-					<Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground group-focus-within:text-primary transition-colors" />
-					<input
-						type="text"
-						value={searchQuery}
-						onChange={(e) => handleSearchChange(e.target.value)}
-						placeholder="Filter tools by name, description, or keyword..."
-						className="w-full h-12 pl-12 pr-6 rounded-xl bg-card border border-border/40 focus:outline-none focus:border-primary/60 focus:ring-4 focus:ring-primary/10 transition-all text-sm placeholder:text-muted-foreground/50"
-					/>
-				</div>
+		{/* Search and filter toolbar */}
+		<div className="space-y-6 max-w-4xl mx-auto">
+			<div className="relative group">
+				<Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground group-focus-within:text-primary transition-colors z-10" />
+				<input
+					type="text"
+					value={searchQuery}
+					onChange={(e) => handleSearchChange(e.target.value)}
+					onBlur={handleBlur}
+					onFocus={handleFocus}
+					placeholder="Filter tools by name, description, or keyword..."
+					className="w-full h-12 pl-12 pr-6 rounded-xl bg-card border border-border/40 focus:outline-none focus:border-primary/60 focus:ring-4 focus:ring-primary/10 transition-all text-sm placeholder:text-muted-foreground/50"
+					autoComplete="off"
+					role="combobox"
+					aria-expanded={showSuggestions}
+					aria-controls="tool-suggestions"
+					ref={searchInputRef}
+				/>
+
+				{showSuggestions && (
+					<div id="tool-suggestions" className="absolute left-0 right-0 top-full mt-2 bg-card border border-border/60 shadow-2xl z-50 max-h-[320px] overflow-y-auto rounded-xl">
+						{!searchQuery.trim() && (
+							<div className="px-4 py-2 text-[10px] font-bold text-muted-foreground/70 uppercase tracking-wider border-b border-border/10">
+								Popular Searches
+							</div>
+						)}
+						{(searchQuery.trim() ? suggestions : []).map((tool) => (
+							<div
+								key={tool.id}
+								onMouseDown={(e) => e.preventDefault()}
+								onClick={() => handleSuggestionClick(tool)}
+								className="flex items-center justify-between px-4 py-3 hover:bg-muted/60 transition-colors border-b border-border/10 last:border-b-0 cursor-pointer"
+							>
+								<div className="flex items-center gap-3 min-w-0">
+									<Search className="h-3.5 w-3.5 text-muted-foreground shrink-0" />
+									<div className="min-w-0">
+										<p className="text-sm font-bold truncate">{tool.name}</p>
+										<p className="text-[11px] text-muted-foreground truncate">{tool.description}</p>
+									</div>
+								</div>
+								<span className="text-[9px] font-bold uppercase tracking-wide text-muted-foreground/70 shrink-0">
+									{tool.category.replace("-tools", "")}
+								</span>
+							</div>
+						))}
+						{searchQuery.trim() && suggestions.length === 0 && (
+							<div className="px-4 py-6 text-center text-xs text-muted-foreground">
+								No matching tools found.
+							</div>
+						)}
+					</div>
+				)}
+			</div>
 
 				{/* Filter Category pills */}
 				<div className="flex flex-wrap items-center justify-center gap-1.5 pb-2 border-b border-border/10">

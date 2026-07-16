@@ -55,6 +55,40 @@ function SearchResults({ initialTools, initialCategories }: SearchContentProps) 
 	const hasQuery = query.trim().length > 0;
 	const noResults = hasQuery && !loading && results.length === 0;
 
+	const POPULAR_SEARCHES = [
+		"PDF Merger",
+		"Image Compressor",
+		"JSON Formatter",
+		"QR Code Generator",
+		"Password Generator",
+		"Base64 Encode",
+		"UUID Generator",
+		"Word Counter",
+		"Markdown to HTML",
+		"URL Shortener",
+		"BMI Calculator",
+		"Color Converter",
+		"CSV to JSON",
+		"HTML Minifier",
+		"Text to Speech",
+	];
+
+	const suggestions = (() => {
+		if (!query.trim()) return [] as Tool[];
+		const q = query.toLowerCase();
+		return initialTools
+			.filter(
+				(t) =>
+					t.name.toLowerCase().includes(q) ||
+					t.description.toLowerCase().includes(q) ||
+					t.category.toLowerCase().includes(q) ||
+					t.id.toLowerCase().includes(q)
+			)
+			.slice(0, 8);
+	})();
+
+	const showSuggestions = query.trim().length > 0 && suggestions.length > 0 && !loading;
+
 	const performSearch = useCallback((q: string, cat: string) => {
 		const cleanQuery = q.toLowerCase().trim();
 		if (!cleanQuery) {
@@ -127,22 +161,52 @@ function SearchResults({ initialTools, initialCategories }: SearchContentProps) 
 		<div className="space-y-8">
 			{/* Search Input */}
 			<div className="relative max-w-2xl mx-auto">
-				<Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+				<Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground z-10" />
 				<Input
 					ref={searchInputRef}
 					value={query}
 					onChange={(e) => handleInputChange(e.target.value)}
 					placeholder="Search tools (e.g. 'pdf converter', 'image compressor')..."
 					className="pl-12 py-7 text-lg rounded-none border-2 border-primary/20 focus-visible:ring-primary focus-visible:border-primary transition-all shadow-xl"
+					autoComplete="off"
 				/>
 				{query && (
 					<button 
 						onClick={handleReset}
-						className="absolute right-4 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded-sm"
+						className="absolute right-4 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded-sm z-10"
 						aria-label="Clear search"
 					>
 						<X className="h-4 w-4" />
 					</button>
+				)}
+
+				{/* Autocomplete Suggestions */}
+				{showSuggestions && (
+					<div className="absolute left-0 right-0 top-full mt-2 bg-card border border-border/60 shadow-2xl z-50 max-h-[320px] overflow-y-auto rounded-sm">
+						{suggestions.map((tool, idx) => (
+							<Link
+								key={tool.id}
+								href={tool.route}
+								className="flex items-center justify-between px-4 py-3 hover:bg-muted/60 transition-colors border-b border-border/10 last:border-b-0"
+								onClick={() => {
+									setQuery(tool.name);
+									setResults([tool]);
+									setLoading(false);
+								}}
+							>
+								<div className="flex items-center gap-3 min-w-0">
+									<Search className="h-3.5 w-3.5 text-muted-foreground shrink-0" />
+									<div className="min-w-0">
+										<p className="text-sm font-bold truncate">{tool.name}</p>
+										<p className="text-[11px] text-muted-foreground truncate">{tool.description}</p>
+									</div>
+								</div>
+								<Badge variant="outline" className="text-[9px] font-bold uppercase tracking-wide shrink-0">
+									{tool.category}
+								</Badge>
+							</Link>
+						))}
+					</div>
 				)}
 			</div>
 
