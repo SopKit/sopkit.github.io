@@ -1,0 +1,161 @@
+{
+  "qrcode-generator": {
+    "whatItIs": "The QR Code Generator creates custom QR codes for URLs, text, contact cards, WiFi, and more. Design QR codes with custom colors, logos, and patterns for marketing, business cards, and event materials.",
+    "features": [
+      "Generate QR codes for URLs, text, contacts",
+      "Custom colors and gradients",
+      "Add logo to QR code center",
+      "Multiple error correction levels",
+      "Download in PNG, SVG, EPS",
+      "Batch generate multiple QR codes",
+      "Track QR code scans",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the QR Code Generator",
+      "steps": [
+        {
+          "name": "Select QR code type",
+          "text": "Choose the type of QR code: URL, text, contact card (vCard), WiFi credentials, email, phone number, or SMS."
+        },
+        {
+          "name": "Enter content",
+          "text": "Input the content for your QR code. For URLs, paste the web address. For WiFi, enter network name and password."
+        },
+        {
+          "name": "Customize design",
+          "text": "Set colors, add your logo, choose pattern style, and set error correction level. Preview the QR code to ensure it scans correctly."
+        },
+        {
+          "name": "Download QR code",
+          "text": "Download the QR code in your preferred format: PNG for web, SVG for scaling, or EPS for professional printing."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What types of QR codes can I create?",
+        "answer": "The tool supports URL QR codes, plain text, contact cards (vCard), WiFi credentials, email links, phone numbers, SMS, and calendar events."
+      },
+      {
+        "question": "Can I add a logo to my QR code?",
+        "answer": "Yes, you can upload a logo to place in the center of your QR code. Keep logos small and high-contrast to maintain scannability. Use higher error correction levels when adding logos."
+      },
+      {
+        "question": "What format should I download?",
+        "answer": "PNG is best for web and digital use. SVG is ideal for scaling without quality loss. EPS is recommended for professional printing and design software."
+      },
+      {
+        "question": "Is the QR Code Generator free?",
+        "answer": "Yes, generating QR codes is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate QR codes online for free. Create custom QR codes for URLs, WiFi, contacts with logos and colors. Download in PNG, SVG, EPS formats."
+  },
+  "meme-generator": {
+    "whatItIs": "The Meme Generator creates custom memes with popular templates or your own images. Add top and bottom text, adjust fonts, and share memes for social media, messaging, and entertainment.",
+    "features": [
+      "Generate memes from templates",
+      "Upload custom images",
+      "Add top and bottom text",
+      "Adjust font size and color",
+      "Popular meme templates library",
+      "Download as image",
+      "Share to social media",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Meme Generator",
+      "steps": [
+        {
+          "name": "Choose template or upload",
+          "text": "Select from popular meme templates or upload your own image. The tool supports JPG, PNG, and GIF formats."
+        },
+        {
+          "name": "Add meme text",
+          "text": "Type your top and bottom text. The classic meme format has impact font with white text and black outline."
+        },
+        {
+          "name": "Customize appearance",
+          "text": "Adjust font size, text color, and outline. Preview the meme to make sure the text is readable and positioned well."
+        },
+        {
+          "name": "Download and share",
+          "text": "Download the meme as an image file. Share it on social media, in messages, or with friends."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I use my own images?",
+        "answer": "Yes, upload any image to create a custom meme. The tool works best with clear images where text is easily readable."
+      },
+      {
+        "question": "What font does it use?",
+        "answer": "The default meme font is Impact with white fill and black stroke, the classic meme style. You can change the font, size, and colors in the customization options."
+      },
+      {
+        "question": "Are the templates free to use?",
+        "answer": "Yes, popular meme templates are provided for free use. Custom uploads are your own content. Respect copyright when using others' images."
+      },
+      {
+        "question": "Is the Meme Generator free?",
+        "answer": "Yes, creating memes is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate memes online for free. Create custom memes with templates or your own images. Add text, adjust fonts, and download for social media sharing."
+  },
+  "emoji-picker": {
+    "whatItIs": "The Emoji Picker provides quick access to search, copy, and use emojis across all platforms. Browse emoji categories, search by keyword, and copy emojis with one click for messaging, social media, and documents.",
+    "features": [
+      "Browse emoji by category",
+      "Search emojis by keyword",
+      "Copy emoji with one click",
+      "Show emoji names and codes",
+      "Recently used emojis",
+      "Skin tone variations",
+      "Works on all platforms",
+      "Free unlimited use"
+    ],
+    "howToUse": {
+      "name": "How to Use the Emoji Picker",
+      "steps": [
+        {
+          "name": "Browse or search",
+          "text": "Browse emojis by category (smileys, animals, food, activities) or search for specific emojis by keyword or name."
+        },
+        {
+          "name": "Select emoji",
+          "text": "Click on any emoji to select it. Choose skin tone variations if available for people emojis."
+        },
+        {
+          "name": "Copy emoji",
+          "text": "Click copy to copy the emoji to your clipboard. Paste it directly into any app, message, or document."
+        },
+        {
+          "name": "View details",
+          "text": "Click the info button to see the emoji name, Unicode code point, and related emojis for easy discovery."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Which emojis are supported?",
+        "answer": "The picker includes all standard Unicode emojis including smileys, animals, food, activities, travel, objects, symbols, and flags. New emojis are added with Unicode updates."
+      },
+      {
+        "question": "Do emojis look the same on all devices?",
+        "answer": "Emojis may look slightly different across platforms (Apple, Google, Samsung, Microsoft) as each platform uses its own emoji design. The underlying character is the same."
+      },
+      {
+        "question": "Can I search for specific emojis?",
+        "answer": "Yes, search by keyword, name, or description. The tool matches against emoji names and keywords to help you find the right emoji quickly."
+      },
+      {
+        "question": "Is the Emoji Picker free?",
+        "answer": "Yes, using the emoji picker is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Browse and copy emojis online for free. Search emojis by keyword and category. Quick emoji picker for social media, messaging, and documents."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "group": 5,
+  "name": "video_2",
+  "tools": [
+    "insta-reels-saver",
+    "instagram-downloader",
+    "instagram-image-downloader",
+    "instagram-reel-downloader",
+    "instagram-story-downloader",
+    "instagram-videos-downloader",
+    "izlesene-video-downloader",
+    "kickstarter-video-downloader",
+    "kwai-video-downloader",
+    "likee-video-downloader",
+    "linkedin-video-downloader",
+    "m3u8-downloader",
+    "mashable-video-downloader",
+    "mixcloud-video-downloader",
+    "mxtakatak-video-downloader",
+    "ninegag-video-downloader",
+    "odnoklassniki-video-downloader",
+    "online-video-downloader",
+    "periscope-video-downloader",
+    "pinterest-clip-saver",
+    "pinterest-gif-downloader",
+    "pinterest-image-downloader",
+    "pinterest-video-downloader",
+    "puhutv-video-downloader",
+    "reddit-downloader",
+    "reddit-media-saver"
+  ]
+}

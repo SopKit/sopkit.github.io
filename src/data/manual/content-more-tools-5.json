@@ -1,0 +1,108 @@
+{
+  "image-resizer": {
+    "whatItIs": "The Image Resizer changes image dimensions to any custom size for web use, social media, thumbnails, and print. Maintain aspect ratio or crop to exact dimensions while optimizing file size for faster loading.",
+    "features": [
+      "Resize images to any dimensions",
+      "Maintain or ignore aspect ratio",
+      "Crop to exact dimensions",
+      "Batch resize multiple images",
+      "Support for JPG, PNG, WebP, GIF",
+      "Adjust compression quality",
+      "Download individually or as ZIP",
+      "Free unlimited resizing"
+    ],
+    "howToUse": {
+      "name": "How to Use the Image Resizer",
+      "steps": [
+        {
+          "name": "Upload images",
+          "text": "Select the images you want to resize. You can upload multiple files for batch resizing."
+        },
+        {
+          "name": "Set dimensions",
+          "text": "Enter the target width and height. Choose whether to maintain aspect ratio or force exact dimensions with cropping."
+        },
+        {
+          "name": "Resize images",
+          "text": "Click resize to process your images. The tool resizes all images to your specified dimensions while optimizing quality."
+        },
+        {
+          "name": "Download resized images",
+          "text": "Download individual files or all resized images as a ZIP archive. Use them for web, social media, or print."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the maximum image size?",
+        "answer": "The tool supports images up to 50MB each. For very large images, consider using a smaller source image or splitting into multiple files."
+      },
+      {
+        "question": "Will resizing affect quality?",
+        "answer": "The tool uses high-quality resampling algorithms to minimize quality loss. Smaller to larger resizing may show some quality degradation, but it is generally acceptable for most uses."
+      },
+      {
+        "question": "Can I resize for specific social media?",
+        "answer": "Yes, you can enter standard dimensions for Instagram posts (1080x1080), stories (1080x1920), Facebook covers (851x315), and other platform-specific sizes."
+      },
+      {
+        "question": "Is the Image Resizer free?",
+        "answer": "Yes, resizing images is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Resize images online for free. Change image dimensions with aspect ratio control and cropping. Batch resize for web, social media, and print."
+  },
+  "image-converter": {
+    "whatItIs": "The Image Converter transforms images between formats including JPG, PNG, WebP, GIF, BMP, TIFF, and ICO. Convert images for web compatibility, storage optimization, or platform requirements without quality loss.",
+    "features": [
+      "Convert between JPG, PNG, WebP, GIF",
+      "Support for BMP, TIFF, ICO formats",
+      "Batch convert multiple images",
+      "Maintain image quality",
+      "Adjust compression settings",
+      "Resize during conversion",
+      "Download as ZIP or individual",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Image Converter",
+      "steps": [
+        {
+          "name": "Upload images",
+          "text": "Select the images you want to convert. The tool accepts all common image formats."
+        },
+        {
+          "name": "Select output format",
+          "text": "Choose the target format: JPG for photos, PNG for transparency, WebP for web optimization, GIF for animations, or other formats."
+        },
+        {
+          "name": "Convert images",
+          "text": "Click convert to process your images. The tool converts each image to the selected format with your quality settings."
+        },
+        {
+          "name": "Download converted images",
+          "text": "Download the converted images individually or as a ZIP archive. Use them in your projects or applications."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Which formats are supported?",
+        "answer": "The tool supports input and output for JPG, PNG, WebP, GIF, BMP, TIFF, ICO, and SVG. WebP offers better compression than JPG and PNG for web use."
+      },
+      {
+        "question": "Does conversion affect quality?",
+        "answer": "Quality loss depends on the format combination. JPG to PNG is lossless, while PNG to JPG involves some loss. Use high quality settings to minimize degradation."
+      },
+      {
+        "question": "Can I convert animated GIFs?",
+        "answer": "Yes, animated GIFs are converted to the target format. For WebP output, animations are preserved with smaller file sizes."
+      },
+      {
+        "question": "Is the Image Converter free?",
+        "answer": "Yes, converting between image formats is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert images online for free. Transform between JPG, PNG, WebP, GIF, and more. Batch conversion with quality preservation for web and design."
+  }
+}

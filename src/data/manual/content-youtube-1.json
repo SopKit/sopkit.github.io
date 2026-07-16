@@ -1,0 +1,638 @@
+{
+  "youtube-channel-age-checker": {
+    "whatItIs": "The YouTube Channel Age Checker reveals the exact creation date and age of any public YouTube channel. Enter a channel URL or ID and instantly see when the channel was created, how long it has been active, and its current statistics.",
+    "features": [
+      "Find exact channel creation date",
+      "Calculate channel age in years, months, and days",
+      "Show channel statistics and growth metrics",
+      "Check channel history at a glance",
+      "Support for channel URLs and custom URLs",
+      "Fast processing with instant results",
+      "Privacy-focused with no signup required",
+      "Works on mobile and desktop"
+    ],
+    "howToUse": {
+      "name": "How to Use the YouTube Channel Age Checker",
+      "steps": [
+        {
+          "name": "Enter channel URL or ID",
+          "text": "Copy the YouTube channel URL or paste the channel ID. The tool accepts both standard URLs and custom channel handles."
+        },
+        {
+          "name": "Analyze the channel",
+          "text": "Click the check button. The tool fetches public channel data and calculates the exact creation date and age."
+        },
+        {
+          "name": "View channel details",
+          "text": "See the channel creation date, exact age, subscriber count, view count, and other available statistics."
+        },
+        {
+          "name": "Use the information",
+          "text": "Copy the channel age data for your records, research, or content verification purposes."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How accurate is the channel age data?",
+        "answer": "The tool uses YouTube's public API data, so the channel creation date and age are as accurate as YouTube's records."
+      },
+      {
+        "question": "Can I check any YouTube channel?",
+        "answer": "Yes, you can check any public YouTube channel. Private or deleted channels cannot be analyzed."
+      },
+      {
+        "question": "Does it show channel statistics too?",
+        "answer": "Yes, the tool shows the channel creation date, exact age, subscriber count, total views, and video count when available."
+      },
+      {
+        "question": "Is the YouTube Channel Age Checker free?",
+        "answer": "Yes, checking channel age is completely free with no limits on the number of channels you can check."
+      }
+    ],
+    "seoDescription": "Find the exact age and creation date of any YouTube channel for free. Check channel statistics and history with our online YouTube channel analyzer."
+  },
+  "youtube-channel-finder": {
+    "whatItIs": "The YouTube Channel Finder helps you discover YouTube channels by keyword, category, topic, or niche. Find relevant creators, analyze their stats, and identify potential collaboration opportunities for your content strategy.",
+    "features": [
+      "Search channels by keyword or topic",
+      "Filter by category, subscriber range, and region",
+      "View channel statistics and growth trends",
+      "Compare multiple channels side by side",
+      "Export channel lists for analysis",
+      "Identify trending channels in your niche",
+      "No API key or signup required",
+      "Free unlimited searches"
+    ],
+    "howToUse": {
+      "name": "How to Use the YouTube Channel Finder",
+      "steps": [
+        {
+          "name": "Enter search terms",
+          "text": "Type keywords related to the channel type you are looking for, such as 'tech reviews', 'cooking', or 'fitness'."
+        },
+        {
+          "name": "Apply filters",
+          "text": "Filter results by category, minimum subscribers, region, and language to narrow down to the most relevant channels."
+        },
+        {
+          "name": "Review channel results",
+          "text": "Browse the list of matching channels with their subscriber counts, view statistics, and content categories."
+        },
+        {
+          "name": "Analyze and export",
+          "text": "Click on individual channels for detailed stats. Export the list for your research or outreach campaigns."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does the YouTube Channel Finder work?",
+        "answer": "The tool searches YouTube's public database using your keywords and filters to find matching channels. It displays results with key metrics to help you evaluate them."
+      },
+      {
+        "question": "Can I filter channels by subscriber count?",
+        "answer": "Yes, you can set minimum and maximum subscriber ranges to find channels that match your target audience size or collaboration budget."
+      },
+      {
+        "question": "Does it show channel growth data?",
+        "answer": "The tool shows current statistics including subscribers, total views, and video count. Growth trends may be available depending on data freshness."
+      },
+      {
+        "question": "Is there a limit on searches?",
+        "answer": "No, you can perform unlimited searches for free. The tool refreshes data periodically to keep results current."
+      }
+    ],
+    "seoDescription": "Find YouTube channels by keyword, topic, or niche online for free. Discover creators, analyze stats, and identify collaboration opportunities."
+  },
+  "youtube-channel-id-extractor": {
+    "whatItIs": "The YouTube Channel ID Extractor pulls the unique Channel ID from any YouTube URL instantly. Useful for developers working with the YouTube API, content creators managing multiple channels, and analysts tracking channel data.",
+    "features": [
+      "Extract Channel ID from any YouTube URL",
+      "Support for custom channel URLs and handles",
+      "Batch extract multiple channel IDs",
+      "Copy IDs with one click",
+      "Show additional channel details",
+      "No API key required for basic extraction",
+      "Works with all YouTube URL formats",
+      "Privacy-focused local processing"
+    ],
+    "howToUse": {
+      "name": "How to Use the YouTube Channel ID Extractor",
+      "steps": [
+        {
+          "name": "Paste YouTube URL",
+          "text": "Copy and paste any YouTube channel URL into the input field. The tool accepts standard URLs, custom handles, and channel links."
+        },
+        {
+          "name": "Extract the Channel ID",
+          "text": "Click the extract button. The tool parses the URL and displays the unique Channel ID along with available channel details."
+        },
+        {
+          "name": "Copy the ID",
+          "text": "Click to copy the Channel ID to your clipboard. Use it for API calls, documentation, or your records."
+        },
+        {
+          "name": "Batch extract more",
+          "text": "Paste multiple URLs to extract Channel IDs in bulk. All results are displayed in a list for easy copying."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a YouTube Channel ID?",
+        "answer": "A YouTube Channel ID is a unique alphanumeric identifier assigned to every YouTube channel. It looks like 'UCxxxxxxxxxxxxxxxxxxxxxxxx' and is used in the YouTube Data API."
+      },
+      {
+        "question": "Can I extract IDs from custom channel URLs?",
+        "answer": "Yes, the tool handles all YouTube URL formats including custom handles like @username, legacy channel names, and standard channel URLs."
+      },
+      {
+        "question": "Is this tool free to use?",
+        "answer": "Yes, extracting YouTube Channel IDs is completely free with unlimited usage."
+      },
+      {
+        "question": "Can I batch extract multiple IDs?",
+        "answer": "Yes, paste multiple YouTube URLs at once to extract all their Channel IDs in a single operation."
+      }
+    ],
+    "seoDescription": "Extract YouTube Channel IDs from URLs online for free. Get unique channel identifiers from any YouTube link instantly. Batch extraction supported."
+  },
+  "youtube-playlist-link-extractor": {
+    "whatItIs": "The YouTube Playlist Link Extractor pulls all video URLs, IDs, titles, and publish dates from any public YouTube playlist. Export playlist data for analysis, backup, or content planning purposes.",
+    "features": [
+      "Extract all video URLs from a playlist",
+      "Get video titles, IDs, and publish dates",
+      "Export playlist data to CSV or JSON",
+      "Support for public and unlisted playlists",
+      "Show video duration and view count",
+      "Batch process multiple playlists",
+      "No API key required",
+      "Privacy-focused with no data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use the YouTube Playlist Link Extractor",
+      "steps": [
+        {
+          "name": "Paste playlist URL",
+          "text": "Copy the YouTube playlist URL and paste it into the input field. The tool accepts all standard playlist URL formats."
+        },
+        {
+          "name": "Extract playlist data",
+          "text": "Click the extract button. The tool fetches all videos in the playlist and displays their details in a table."
+        },
+        {
+          "name": "Review the results",
+          "text": "Browse the list of videos with titles, URLs, durations, and publish dates. Verify that all expected videos are included."
+        },
+        {
+          "name": "Export the data",
+          "text": "Download the playlist data as CSV or JSON for use in spreadsheets, analysis tools, or your own applications."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What data can I extract from playlists?",
+        "answer": "The tool extracts video URLs, titles, descriptions, publish dates, durations, view counts, and video IDs for all videos in the playlist."
+      },
+      {
+        "question": "Does it work with private playlists?",
+        "answer": "No, only public and unlisted playlists can be accessed. Private playlists require authentication and are not supported."
+      },
+      {
+        "question": "Can I export the data?",
+        "answer": "Yes, you can export playlist data as CSV for Excel/Google Sheets or as JSON for programmatic use."
+      },
+      {
+        "question": "Is there a limit on playlist size?",
+        "answer": "The tool can handle playlists with up to 500 videos. Very large playlists may take longer to process."
+      }
+    ],
+    "seoDescription": "Extract YouTube playlist links and data online for free. Get all video URLs, titles, and details from any playlist. Export to CSV or JSON."
+  },
+  "youtube-channel-statistics": {
+    "whatItIs": "The YouTube Channel Statistics tool provides detailed insights and analytics for any public YouTube channel. View subscriber counts, total views, video statistics, engagement rates, and growth metrics all in one place.",
+    "features": [
+      "View subscriber count and growth trends",
+      "See total views and average views per video",
+      "Analyze video frequency and upload patterns",
+      "Get engagement rate estimates",
+      "Compare with similar channels",
+      "Export statistics for reporting",
+      "No signup or API key required",
+      "Free unlimited lookups"
+    ],
+    "howToUse": {
+      "name": "How to Use the YouTube Channel Statistics",
+      "steps": [
+        {
+          "name": "Enter channel URL",
+          "text": "Paste the YouTube channel URL or handle. The tool works with both standard URLs and custom @handles."
+        },
+        {
+          "name": "Fetch channel data",
+          "text": "Click the analyze button. The tool retrieves public statistics for the channel and displays them in organized sections."
+        },
+        {
+          "name": "Review the statistics",
+          "text": "Browse subscriber counts, total views, video count, estimated earnings, and engagement metrics. Check growth trends where available."
+        },
+        {
+          "name": "Export or share",
+          "text": "Export the statistics as an image or PDF for reports. Copy individual metrics for your analysis."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What statistics are available?",
+        "answer": "The tool shows subscriber count, total views, video count, channel creation date, estimated watch time, and engagement metrics like average views per video."
+      },
+      {
+        "question": "Are earnings estimates accurate?",
+        "answer": "Earnings estimates are based on industry averages and public data. Actual earnings vary based on many factors including CPM, audience location, and content type."
+      },
+      {
+        "question": "Can I compare multiple channels?",
+        "answer": "Yes, you can analyze multiple channels separately and compare their statistics side by side for competitive analysis."
+      },
+      {
+        "question": "Is the YouTube Channel Statistics tool free?",
+        "answer": "Yes, the basic statistics lookup is completely free. Premium features like historical data and advanced analytics may require a subscription."
+      }
+    ],
+    "seoDescription": "Analyze YouTube channel statistics online for free. Get subscriber counts, view analytics, engagement rates, and growth metrics for any channel."
+  },
+  "text-to-speech": {
+    "whatItIs": "The Text to Speech tool converts written text into natural-sounding spoken audio instantly. Choose from multiple AI voices, adjust speed and pitch, and download high-quality audio files for videos, podcasts, accessibility, or learning purposes.",
+    "features": [
+      "Convert text to natural AI speech",
+      "Multiple voice options and accents",
+      "Adjustable speech speed and pitch",
+      "Support for multiple languages",
+      "High-quality audio output",
+      "Download as MP3 or WAV",
+      "No signup or API key required",
+      "Privacy-focused browser processing"
+    ],
+    "howToUse": {
+      "name": "How to Use Text to Speech",
+      "steps": [
+        {
+          "name": "Enter your text",
+          "text": "Type or paste the text you want to convert to speech. You can enter anything from a single sentence to several paragraphs."
+        },
+        {
+          "name": "Select a voice",
+          "text": "Choose from available AI voices. Each voice has a different tone and accent. Preview voices by clicking the play button."
+        },
+        {
+          "name": "Adjust settings",
+          "text": "Set the speech rate, pitch, and volume. Slower speeds are better for educational content, while natural pace suits most uses."
+        },
+        {
+          "name": "Generate and download",
+          "text": "Click generate to create the audio. Preview the result and download the file in your preferred format."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How natural does the AI voice sound?",
+        "answer": "Modern AI text-to-speech models produce highly natural speech with proper intonation, pauses, and emphasis. The quality continues to improve with regular updates."
+      },
+      {
+        "question": "What languages are supported?",
+        "answer": "The tool supports major languages including English, Spanish, French, German, Hindi, Portuguese, and more. Each language has multiple voice variants."
+      },
+      {
+        "question": "Can I use the audio commercially?",
+        "answer": "Generated audio can typically be used for personal and commercial projects. Check the specific voice licensing terms for commercial use cases."
+      },
+      {
+        "question": "Is Text to Speech really free?",
+        "answer": "Yes, the basic text-to-speech conversion is free with daily limits. Premium plans offer unlimited usage and additional voices."
+      }
+    ],
+    "seoDescription": "Convert text to speech online for free. Create natural-sounding AI voiceovers in multiple languages. Download high-quality audio for any project."
+  },
+  "guitar-tuner": {
+    "whatItIs": "The Guitar Tuner uses your device microphone to help you tune your guitar accurately. Play a string and the tuner detects the pitch in real-time, showing you whether the note is sharp, flat, or perfectly in tune.",
+    "features": [
+      "Real-time pitch detection using microphone",
+      "Visual feedback with needle and cents display",
+      "Support for standard and alternate tunings",
+      "Works with acoustic, electric, and bass guitars",
+      "Chromatic tuning mode for all notes",
+      "Adjustable reference pitch (A4)",
+      "No installation or download required",
+      "Works on mobile and desktop browsers"
+    ],
+    "howToUse": {
+      "name": "How to Use the Guitar Tuner",
+      "steps": [
+        {
+          "name": "Allow microphone access",
+          "text": "Grant browser permission for microphone access when prompted. The tuner needs your microphone to detect guitar string pitches."
+        },
+        {
+          "name": "Select your tuning",
+          "text": "Choose standard tuning (E A D G B E) or select alternate tunings like Drop D, Open G, or DADGAD if needed."
+        },
+        {
+          "name": "Play a string",
+          "text": "Play one string at a time and watch the tuner display. The needle will move to show if the note is sharp (right) or flat (left)."
+        },
+        {
+          "name": "Tune your guitar",
+          "text": "Adjust the tuning pegs until the needle centers and shows 0 cents. The note name will highlight when perfectly in tune."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How accurate is the guitar tuner?",
+        "answer": "The tuner uses precision pitch detection algorithms accurate to within 1 cent. This is more than sufficient for most playing and recording situations."
+      },
+      {
+        "question": "Can I use this with other instruments?",
+        "answer": "Yes, the chromatic mode works with any instrument including bass guitar, violin, ukulele, and piano. Simply select the target note."
+      },
+      {
+        "question": "Does it work on mobile phones?",
+        "answer": "Yes, the tuner works on both iOS and Android devices through the mobile browser. Microphone access is required for pitch detection."
+      },
+      {
+        "question": "Is the Guitar Tuner free?",
+        "answer": "Yes, the basic chromatic tuner is completely free. Premium features like alternate tunings and custom pitch reference may require a subscription."
+      }
+    ],
+    "seoDescription": "Tune your guitar online for free using your microphone. Real-time chromatic tuner with visual feedback for acoustic, electric, and bass guitars."
+  },
+  "uuid-generator": {
+    "whatItIs": "The UUID/GUID Generator creates unique identifier strings instantly for applications and databases. Generate UUID v4 and GUID values with customizable formats for use in software development, testing, and data management.",
+    "features": [
+      "Generate UUID v4 random identifiers",
+      "Create GUID strings in multiple formats",
+      "Batch generate multiple UUIDs",
+      "Uppercase and lowercase options",
+      "Include or remove braces",
+      "Copy individual or all UUIDs",
+      "No signup or software required",
+      "Privacy-focused local generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the UUID/GUID Generator",
+      "steps": [
+        {
+          "name": "Select UUID version",
+          "text": "Choose the UUID version you need. Version 4 is the most common for random UUIDs used in applications."
+        },
+        {
+          "name": "Set format options",
+          "text": "Choose uppercase or lowercase, and whether to include braces around the UUID."
+        },
+        {
+          "name": "Generate UUIDs",
+          "text": "Click generate to create one or more UUIDs. Use the batch option to generate multiple identifiers at once."
+        },
+        {
+          "name": "Copy the UUID",
+          "text": "Click to copy individual UUIDs or copy all generated values at once for use in your code or database."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the difference between UUID and GUID?",
+        "answer": "UUID (Universally Unique Identifier) and GUID (Globally Unique Identifier) refer to the same concept. GUID is Microsoft's implementation name, while UUID is the open standard."
+      },
+      {
+        "question": "Can I generate multiple UUIDs at once?",
+        "answer": "Yes, the batch generation feature lets you create up to 100 UUIDs in one operation. Each UUID is guaranteed to be unique."
+      },
+      {
+        "question": "Are the generated UUIDs truly unique?",
+        "answer": "UUID v4 uses random numbers, making the probability of duplicates practically zero. The tool uses cryptographically secure random generation where supported."
+      },
+      {
+        "question": "Is this generator free?",
+        "answer": "Yes, generating UUIDs is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate UUID v4 and GUID strings online for free. Create unique identifiers for databases, APIs, and applications. Batch generation supported."
+  },
+  "slug-generator": {
+    "whatItIs": "The URL Slug Generator converts any text into clean, SEO-friendly URL slugs. Perfect for blog posts, product pages, and web addresses. Create readable, lowercase, hyphen-separated URLs that search engines love.",
+    "features": [
+      "Convert text to SEO-friendly URL slugs",
+      "Remove special characters automatically",
+      "Support for multiple languages",
+      "Batch generate slugs from a list",
+      "Customizable separator character",
+      "Maximum length control",
+      "Copy slugs with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the URL Slug Generator",
+      "steps": [
+        {
+          "name": "Enter your text",
+          "text": "Type or paste the title or text you want to convert to a URL slug. This can be blog post titles, product names, or any text."
+        },
+        {
+          "name": "Configure options",
+          "text": "Choose the separator character (usually hyphen), set maximum length, and select whether to convert to lowercase."
+        },
+        {
+          "name": "Generate the slug",
+          "text": "Click the generate button. The tool creates a clean, URL-safe slug from your input text."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the generated slug and use it in your URLs. Batch mode lets you generate slugs for multiple items at once."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a URL slug?",
+        "answer": "A URL slug is the part of a web address that comes after the domain. For example, in 'example.com/my-blog-post', 'my-blog-post' is the slug. It should be readable and contain relevant keywords."
+      },
+      {
+        "question": "Why are slugs important for SEO?",
+        "answer": "URL slugs help search engines understand page content. Including relevant keywords in your slug can improve your search rankings and make URLs more shareable."
+      },
+      {
+        "question": "Can I generate slugs in languages other than English?",
+        "answer": "Yes, the tool supports transliteration for many languages, converting non-ASCII characters to their ASCII equivalents for URL-safe slugs."
+      },
+      {
+        "question": "Is the Slug Generator free?",
+        "answer": "Yes, generating URL slugs is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate SEO-friendly URL slugs from text online for free. Convert titles to clean, readable web addresses. Batch slug generation available."
+  },
+  "json-to-typescript": {
+    "whatItIs": "The JSON to TypeScript Interface converter transforms JSON objects into clean TypeScript interfaces or type definitions automatically. Paste JSON and get ready-to-use TypeScript code with proper types, optional properties, and nested interfaces.",
+    "features": [
+      "Convert JSON to TypeScript interfaces",
+      "Generate type definitions automatically",
+      "Handle nested objects and arrays",
+      "Support for optional and required properties",
+      "Generate union types for varied values",
+      "One-click copy TypeScript code",
+      "No signup or installation needed",
+      "Privacy-focused local processing"
+    ],
+    "howToUse": {
+      "name": "How to Use JSON to TypeScript Interface",
+      "steps": [
+        {
+          "name": "Paste your JSON",
+          "text": "Copy and paste your JSON object into the input area. The tool supports any valid JSON structure including nested objects and arrays."
+        },
+        {
+          "name": "Convert to TypeScript",
+          "text": "Click the convert button. The tool analyzes the JSON structure and generates corresponding TypeScript interfaces or type definitions."
+        },
+        {
+          "name": "Review the output",
+          "text": "Check the generated TypeScript code. The tool creates clean interfaces with proper typing for all properties."
+        },
+        {
+          "name": "Copy the TypeScript",
+          "text": "Copy the generated interfaces to your clipboard and paste them directly into your TypeScript project."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it handle nested objects?",
+        "answer": "Yes, the converter recursively analyzes nested objects and creates separate interfaces for each level, maintaining clean and organized type definitions."
+      },
+      {
+        "question": "Are all properties required by default?",
+        "answer": "By default, properties are marked as optional if they might be missing. You can configure the tool to make all properties required if needed."
+      },
+      {
+        "question": "Can I convert arrays?",
+        "answer": "Yes, arrays are properly typed with their element types. If arrays contain objects, separate interfaces are generated for the array element types."
+      },
+      {
+        "question": "Is the JSON to TypeScript converter free?",
+        "answer": "Yes, the converter is completely free with no limits on usage."
+      }
+    ],
+    "seoDescription": "Convert JSON to TypeScript interfaces online for free. Transform JSON objects into clean TypeScript type definitions with proper typing automatically."
+  },
+  "sql-formatter": {
+    "whatItIs": "The SQL Formatter and Beautifier formats SQL queries for better readability with proper indentation, line breaks, and capitalization. Supports MySQL, PostgreSQL, SQL Server, and Oracle dialects for cleaner database code.",
+    "features": [
+      "Format SQL queries with proper indentation",
+      "Support for multiple SQL dialects",
+      "Keyword capitalization options",
+      "Customize indentation and spacing",
+      "Minify SQL to single line",
+      "Highlight syntax for readability",
+      "One-click copy formatted SQL",
+      "Privacy-focused local processing"
+    ],
+    "howToUse": {
+      "name": "How to Use the SQL Formatter",
+      "steps": [
+        {
+          "name": "Paste your SQL query",
+          "text": "Copy and paste your unformatted SQL query into the input area. The tool supports any SQL dialect."
+        },
+        {
+          "name": "Select SQL dialect",
+          "text": "Choose your database type: MySQL, PostgreSQL, SQL Server, or Oracle. Each dialect has specific formatting rules."
+        },
+        {
+          "name": "Configure formatting",
+          "text": "Set indentation level (spaces or tabs), keyword case (uppercase, lowercase), and line break preferences."
+        },
+        {
+          "name": "Format and copy",
+          "text": "Click format to beautify your SQL. Copy the formatted query or switch to minify mode to compress it."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Which SQL dialects are supported?",
+        "answer": "The formatter supports MySQL, PostgreSQL, SQL Server (T-SQL), Oracle (PL/SQL), SQLite, and generic ANSI SQL."
+      },
+      {
+        "question": "Can I minify SQL queries too?",
+        "answer": "Yes, the minify mode compresses SQL into a single line by removing unnecessary whitespace while keeping the query functional."
+      },
+      {
+        "question": "Does it preserve comments?",
+        "answer": "Yes, SQL comments are preserved and properly positioned in the formatted output."
+      },
+      {
+        "question": "Is the SQL Formatter free?",
+        "answer": "Yes, formatting and beautifying SQL is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Format SQL queries online for free. Beautify and minify SQL code for MySQL, PostgreSQL, SQL Server, and Oracle. Clean database code instantly."
+  },
+  "html-minifier": {
+    "whatItIs": "The HTML Minifier compresses and optimizes HTML code by removing unnecessary whitespace, comments, and redundant attributes. Reduce file sizes to improve website loading speed and performance while preserving functionality.",
+    "features": [
+      "Remove whitespace and comments",
+      "Minify HTML to reduce file size",
+      "Preserve functional HTML structure",
+      "Optional attribute minification",
+      "Show compression savings percentage",
+      "Batch minify multiple files",
+      "One-click copy minified code",
+      "Privacy-focused local processing"
+    ],
+    "howToUse": {
+      "name": "How to Use the HTML Minifier",
+      "steps": [
+        {
+          "name": "Paste your HTML code",
+          "text": "Copy and paste your HTML code into the input area. The tool accepts any valid HTML including inline CSS and JavaScript."
+        },
+        {
+          "name": "Configure minification options",
+          "text": "Choose whether to remove comments, collapse whitespace, and minify attributes. Enable conservative mode to preserve readability."
+        },
+        {
+          "name": "Minify the HTML",
+          "text": "Click the minify button. The tool processes your code and displays the compressed version with file size savings."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Copy the minified HTML to your clipboard. Use it directly in your website or project files."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does minification break my HTML?",
+        "answer": "No, the tool preserves all functional aspects of your HTML. Only unnecessary whitespace, comments, and optional attributes are removed."
+      },
+      {
+        "question": "How much smaller will my HTML get?",
+        "answer": "Typical savings range from 10% to 40% depending on the original formatting. Heavily formatted code with many comments sees the biggest reduction."
+      },
+      {
+        "question": "Should I minify development HTML?",
+        "answer": "Keep unminified HTML for development and use minified versions for production. The minified version is harder to debug but loads faster."
+      },
+      {
+        "question": "Is the HTML Minifier free?",
+        "answer": "Yes, the HTML minifier is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Minify HTML code online for free. Compress and optimize HTML to reduce file sizes and improve website speed. Remove whitespace and comments instantly."
+  }
+}

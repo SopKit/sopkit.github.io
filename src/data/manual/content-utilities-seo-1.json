@@ -1,0 +1,267 @@
+{
+  "adsense-calculator": {
+    "whatItIs": "The AdSense Calculator estimates potential earnings from Google AdSense based on your website traffic, CTR, and CPC. Plan your monetization strategy and understand how page views, impressions, and click-through rates translate into revenue.",
+    "features": [
+      "Estimate daily, monthly, and yearly AdSense earnings",
+      "Calculate based on page views and impressions",
+      "Adjustable CTR and CPC parameters",
+      "Support for different traffic scenarios",
+      "Show earnings per 1,000 visitors",
+      "Compare different monetization strategies",
+      "Export calculations for planning",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the AdSense Calculator",
+      "steps": [
+        {
+          "name": "Enter your traffic data",
+          "text": "Input your daily or monthly page views and impressions. Use Google Analytics data if you have it, or estimate based on your audience size."
+        },
+        {
+          "name": "Set CTR and CPC",
+          "text": "Enter your estimated click-through rate (CTR) and cost per click (CPC). Industry averages can be used if you don't have exact figures."
+        },
+        {
+          "name": "Calculate earnings",
+          "text": "Click calculate to see estimated earnings for different time periods. The tool shows daily, monthly, and annual projections."
+        },
+        {
+          "name": "Analyze and plan",
+          "text": "Use the results to plan your content strategy and traffic growth goals. Adjust parameters to see how changes affect earnings."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How accurate are AdSense earnings estimates?",
+        "answer": "Estimates are based on industry averages and your input parameters. Actual earnings vary based on content niche, audience location, seasonality, and ad placement."
+      },
+      {
+        "question": "What is a good CTR for AdSense?",
+        "answer": "Average CTR ranges from 1% to 3% for most websites. Highly targeted content and strategic ad placement can achieve higher rates."
+      },
+      {
+        "question": "Does this calculator account for RPM?",
+        "answer": "Yes, the tool calculates effective RPM (Revenue Per Mille) based on your traffic and earnings, giving you a key metric for comparing monetization efficiency."
+      },
+      {
+        "question": "Is the AdSense Calculator free?",
+        "answer": "Yes, calculating potential AdSense earnings is completely free with unlimited scenarios."
+      }
+    ],
+    "seoDescription": "Calculate potential Google AdSense earnings online for free. Estimate revenue from website traffic with CTR and CPC parameters. Plan your monetization strategy."
+  },
+  "domain-name-generator": {
+    "whatItIs": "The Domain Name Generator creates short, brandable domain name ideas for your startup, SaaS, blog, or business. Enter keywords related to your niche and get hundreds of available domain suggestions instantly.",
+    "features": [
+      "Generate domain ideas from keywords",
+      "Check domain availability in real-time",
+      "Support for multiple TLDs including .com, .io, .ai",
+      "Filter by domain length and style",
+      "Brandable and keyword-rich suggestions",
+      "Show alternative TLDs if .com is taken",
+      "Save favorite domain ideas",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Domain Name Generator",
+      "steps": [
+        {
+          "name": "Enter keywords",
+          "text": "Type 1-3 keywords related to your business, niche, or brand. The tool uses these to generate relevant domain suggestions."
+        },
+        {
+          "name": "Select TLD preferences",
+          "text": "Choose your preferred top-level domains like .com, .io, .ai, .co, or .app. You can select multiple to see options across TLDs."
+        },
+        {
+          "name": "Generate ideas",
+          "text": "Click generate to see a list of domain suggestions. The tool checks availability and shows which domains are currently unregistered."
+        },
+        {
+          "name": "Review and save",
+          "text": "Browse the suggestions and save your favorites. Check availability on registrars for domains you want to purchase."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does the generator come up with domain ideas?",
+        "answer": "The tool combines your keywords with relevant prefixes, suffixes, and words to create brandable domain names. It also checks common domain patterns and variations."
+      },
+      {
+        "question": "Are the generated domains actually available?",
+        "answer": "The tool checks real-time availability for popular TLDs. However, availability can change quickly, so verify before purchasing."
+      },
+      {
+        "question": "Can I filter for short domain names?",
+        "answer": "Yes, you can set maximum length filters to find shorter domain names that are easier to remember and type."
+      },
+      {
+        "question": "Is the Domain Name Generator free?",
+        "answer": "Yes, generating and checking domain availability is completely free."
+      }
+    ],
+    "seoDescription": "Generate brandable domain name ideas online for free. Find available domains from keywords with real-time availability checks. Perfect for startups and blogs."
+  },
+  "keyword-research-tool": {
+    "whatItIs": "The Advanced Keyword Research tool provides comprehensive keyword analysis with search volume, difficulty, CPC data, and related keyword suggestions. Essential for SEO professionals, content creators, and digital marketers planning their content strategy.",
+    "features": [
+      "Analyze keyword search volume and trends",
+      "Check keyword difficulty scores",
+      "Get CPC and competition data",
+      "Discover related and long-tail keywords",
+      "Compare multiple keywords side by side",
+      "Export keyword lists to CSV",
+      "Track keyword performance over time",
+      "Free tier with essential features"
+    ],
+    "howToUse": {
+      "name": "How to Use the Advanced Keyword Research Tool",
+      "steps": [
+        {
+          "name": "Enter seed keywords",
+          "text": "Type your main keyword or phrase into the search box. Enter multiple keywords to compare them simultaneously."
+        },
+        {
+          "name": "Analyze keyword data",
+          "text": "Review the metrics including search volume, difficulty, CPC, and trend graphs. Check related keyword suggestions for content ideas."
+        },
+        {
+          "name": "Explore related keywords",
+          "text": "Browse the related keywords section for long-tail opportunities. Filter by difficulty to find keywords you can realistically rank for."
+        },
+        {
+          "name": "Export your keyword list",
+          "text": "Save your selected keywords as a CSV file for use in your content calendar or SEO planning tools."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Where does the keyword data come from?",
+        "answer": "The tool aggregates data from multiple search engines and third-party APIs to provide search volume, difficulty estimates, and CPC data."
+      },
+      {
+        "question": "What is keyword difficulty?",
+        "answer": "Keyword difficulty is a score from 0-100 estimating how hard it would be to rank for that keyword. Lower scores indicate easier opportunities."
+      },
+      {
+        "question": "Can I export keyword data?",
+        "answer": "Yes, you can export keyword lists as CSV files for import into spreadsheets, content calendars, or SEO tools."
+      },
+      {
+        "question": "Is the Keyword Research Tool free?",
+        "answer": "The tool offers a free tier with daily limits. Premium plans provide unlimited searches and advanced features like historical data and competitor analysis."
+      }
+    ],
+    "seoDescription": "Advanced keyword research tool with search volume, difficulty, and CPC data. Find profitable keywords and plan your SEO content strategy for free."
+  },
+  "bmi-calculator": {
+    "whatItIs": "The BMI Calculator computes your Body Mass Index from your height and weight to determine if you are underweight, normal, overweight, or obese. Get instant results with health category classification and ideal weight ranges.",
+    "features": [
+      "Calculate BMI from height and weight",
+      "Support for metric and imperial units",
+      "Show health category classification",
+      "Display ideal weight range",
+      "Calculate for adults and children",
+      "Show BMI formula and explanation",
+      "Privacy-focused no data storage",
+      "Works on all devices"
+    ],
+    "howToUse": {
+      "name": "How to Use the BMI Calculator",
+      "steps": [
+        {
+          "name": "Enter your height",
+          "text": "Input your height in centimeters or feet and inches. The tool accepts both metric and imperial measurement systems."
+        },
+        {
+          "name": "Enter your weight",
+          "text": "Input your current weight in kilograms or pounds. Enter the value precisely for the most accurate result."
+        },
+        {
+          "name": "Calculate BMI",
+          "text": "Click the calculate button. Your BMI score appears instantly along with the health category and ideal weight range."
+        },
+        {
+          "name": "Understand your result",
+          "text": "Read the health classification and recommendations. The tool explains what your BMI means and provides general health guidance."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a healthy BMI range?",
+        "answer": "A healthy BMI for adults is between 18.5 and 24.9. Below 18.5 is underweight, 25-29.9 is overweight, and 30+ is obese. These are general guidelines for adults."
+      },
+      {
+        "question": "Does BMI account for muscle mass?",
+        "answer": "BMI does not distinguish between muscle and fat. Athletes with high muscle mass may have a high BMI but low body fat. Use BMI as a general indicator alongside other health metrics."
+      },
+      {
+        "question": "Can I use this for children?",
+        "answer": "BMI calculation works for children, but interpretation requires age and sex-specific percentile charts. This tool provides adult BMI classification."
+      },
+      {
+        "question": "Is the BMI Calculator free?",
+        "answer": "Yes, calculating BMI is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate your BMI online for free. Determine if your weight is healthy with instant body mass index results. Supports metric and imperial units."
+  },
+  "percentage-calculator": {
+    "whatItIs": "The Percentage Calculator computes percentages, percentage changes, discounts, and increases instantly. Useful for shopping discounts, tax calculations, grade percentages, and financial analysis with multiple calculation modes.",
+    "features": [
+      "Calculate percentage of a number",
+      "Find percentage increase or decrease",
+      "Calculate discount percentages",
+      "Reverse percentage calculations",
+      "Support for multiple calculation modes",
+      "Show step-by-step calculations",
+      "Copy results with one click",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the Percentage Calculator",
+      "steps": [
+        {
+          "name": "Select calculation type",
+          "text": "Choose the type of percentage calculation you need: simple percentage, percentage change, discount, or reverse percentage."
+        },
+        {
+          "name": "Enter your values",
+          "text": "Input the numbers required for your calculation type. The tool adapts the input fields based on your selection."
+        },
+        {
+          "name": "Calculate the result",
+          "text": "Click calculate to see the result. The tool shows the answer and the formula used for verification."
+        },
+        {
+          "name": "Use the result",
+          "text": "Copy the result to your clipboard or take a screenshot. The calculation history is available if you need to reference previous results."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What types of percentage calculations are supported?",
+        "answer": "The tool supports simple percentage calculations, percentage increase/decrease, discount calculations, and reverse percentage problems."
+      },
+      {
+        "question": "Can I calculate percentage change between two values?",
+        "answer": "Yes, enter the original and new values to calculate the percentage increase or decrease between them."
+      },
+      {
+        "question": "Does it show the calculation steps?",
+        "answer": "Yes, the tool displays the formula and steps used to arrive at the result, which is helpful for learning or verification."
+      },
+      {
+        "question": "Is the Percentage Calculator free?",
+        "answer": "Yes, all percentage calculations are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate percentages online for free. Compute percentage changes, discounts, increases, and more. Step-by-step calculations for shopping, finance, and math."
+  }
+}

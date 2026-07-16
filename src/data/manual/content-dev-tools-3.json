@@ -1,0 +1,160 @@
+{
+  "credit-card-generator": {
+    "whatItIs": "The Credit Card Generator creates valid test credit card numbers for development and testing purposes. Supports Visa, MasterCard, Amex, and Discover formats with Luhn algorithm validation for payment system testing.",
+    "features": [
+      "Generate valid test card numbers",
+      "Support for Visa, MasterCard, Amex, Discover",
+      "Luhn algorithm validation",
+      "Generate with expiration and CVV",
+      "Bulk generate multiple cards",
+      "Show card type and issuer",
+      "For testing purposes only",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Credit Card Generator",
+      "steps": [
+        {
+          "name": "Select card type",
+          "text": "Choose the card type you need for testing: Visa, MasterCard, American Express, Discover, or generate random types."
+        },
+        {
+          "name": "Generate card number",
+          "text": "Click generate to create a valid test card number. The tool uses the Luhn algorithm to ensure format validity."
+        },
+        {
+          "name": "View card details",
+          "text": "See the generated card number along with a test expiration date and CVV. These are for testing only, not real cards."
+        },
+        {
+          "name": "Use for development",
+          "text": "Use the generated card details in your payment form testing, sandbox environments, or development workflows."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Are these real credit card numbers?",
+        "answer": "No, these are test card numbers generated for development and testing. They follow valid formats but are not linked to real accounts and cannot be used for actual purchases."
+      },
+      {
+        "question": "Can I use these for real transactions?",
+        "answer": "Absolutely not. These are for testing payment forms, sandbox environments, and development workflows only. Using them for real transactions is illegal."
+      },
+      {
+        "question": "What is the Luhn algorithm?",
+        "answer": "The Luhn algorithm is a checksum formula used to validate credit card numbers. Generated numbers pass this validation but are not real payment cards."
+      },
+      {
+        "question": "Is the Credit Card Generator free?",
+        "answer": "Yes, generating test credit card numbers is completely free for development and testing purposes."
+      }
+    ],
+    "seoDescription": "Generate test credit card numbers online for free. Create valid Visa, MasterCard, Amex card numbers for payment form testing and development."
+  },
+  "iban-generator": {
+    "whatItIs": "The IBAN Generator creates valid International Bank Account Numbers (IBAN) for testing and development. Supports multiple countries and formats for payment system testing and form validation.",
+    "features": [
+      "Generate valid IBAN numbers",
+      "Support for multiple countries",
+      "Correct country-specific formats",
+      "IBAN checksum validation",
+      "Bulk generate multiple IBANs",
+      "Show country and bank details",
+      "For testing purposes only",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the IBAN Generator",
+      "steps": [
+        {
+          "name": "Select country",
+          "text": "Choose the country for your IBAN. Each country has a specific IBAN format and length. Common options include DE, FR, GB, ES, IT, NL."
+        },
+        {
+          "name": "Generate IBAN",
+          "text": "Click generate to create a valid IBAN for the selected country. The tool generates correct checksums and format."
+        },
+        {
+          "name": "View IBAN details",
+          "text": "See the generated IBAN with country code, check digits, BBAN, and total length. Verify the format matches country requirements."
+        },
+        {
+          "name": "Use for testing",
+          "text": "Use the IBAN for testing payment forms, validation logic, and financial applications. Do not use for real transactions."
+        }
+ ]
+    },
+    "faqs": [
+      {
+        "question": "What is an IBAN?",
+        "answer": "IBAN (International Bank Account Number) is an internationally standardized system for identifying bank accounts across national borders. It starts with a 2-letter country code followed by check digits and BBAN."
+      },
+      {
+        "question": "Are generated IBANs real?",
+        "answer": "No, generated IBANs are for testing and development only. They follow valid formats but do not correspond to real bank accounts."
+      },
+      {
+        "question": "Which countries are supported?",
+        "answer": "The tool supports IBAN generation for all countries in the IBAN registry including EU countries, UK, Switzerland, Norway, and many others."
+      },
+      {
+        "question": "Is the IBAN Generator free?",
+        "answer": "Yes, generating test IBANs is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate IBAN numbers online for free. Create valid test IBANs for multiple countries. Payment form testing and development tool."
+  },
+  "bin-checker":": "The BIN Checker identifies the issuing bank, card type, country, and brand from the first 6 digits of a credit or debit card number. Useful for payment processing, fraud prevention, and e-commerce verification.",
+    "features": [
+      "Identify card issuer from BIN",
+      "Show card type and brand",
+      "Display issuing bank and country",
+      "Support for all major card networks",
+      "Bulk check multiple BINs",
+      "Show card level and type",
+      "Export results",
+      "Free unlimited checks"
+    ],
+    "howToUse": {
+      "name": "How to Use the BIN Checker",
+      "steps": [
+        {
+          "name": "Enter card number or BIN",
+          "text": "Type the first 6 digits of a credit or debit card number. You can also paste a full card number and the tool extracts the BIN."
+        },
+        {
+          "name": "Check the BIN",
+          "text": "Click check to look up the BIN in the database. The tool returns card brand, type, level, issuer, and country."
+        },
+        {
+          "name": "Review results",
+          "text": "See the card details including Visa/MasterCard/Amex brand, credit/debit type, issuing bank name, and country of origin."
+        },
+        {
+          "name": "Use for verification",
+          "text": "Use the BIN information for payment processing, fraud prevention, or understanding your customers' card types."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a BIN number?",
+        "answer": "BIN (Bank Identification Number) is the first 6 digits of a credit or debit card. It identifies the issuing institution, card type, and country of origin."
+      },
+      {
+        "question": "How accurate is the BIN database?",
+        "answer": "The tool uses an up-to-date BIN database covering major card networks. However, BIN ranges can change, so verify critical transactions with your payment processor."
+      },
+      {
+        "question": "Can I check multiple BINs at once?",
+        "answer": "Yes, bulk BIN checking is supported. Paste a list of BINs or card numbers to check them all in one operation."
+      },
+      {
+        "question": "Is the BIN Checker free?",
+        "answer": "Yes, checking BIN numbers is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Check BIN numbers online for free. Identify card issuer, brand, type, and country from the first 6 digits. Payment verification and fraud prevention tool."
+  }
+}

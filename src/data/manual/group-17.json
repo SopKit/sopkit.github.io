@@ -1,0 +1,27 @@
+{
+  "group": 17,
+  "name": "seo",
+  "tools": [
+    "domain-name-generator",
+    "website-cost-calculator",
+    "seo-title-meta-description-generator",
+    "robots-txt-sitemap-generator",
+    "keyword-research-tool",
+    "sitemap-generator",
+    "seo-audit-tool",
+    "backlink-checker",
+    "bulk-keyword-rank-checker",
+    "google-cache-checker",
+    "google-index-checker",
+    "keyword-density-checker",
+    "keywords-suggestion-tool",
+    "meta-tag-generator",
+    "open-graph-checker",
+    "open-graph-generator",
+    "seotoolkit",
+    "twitter-card-generator",
+    "visual-sitemap",
+    "website-ranking-checker",
+    "sitemap-url-downloader"
+  ]
+}

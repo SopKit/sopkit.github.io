@@ -1,0 +1,161 @@
+{
+  "json-to-yaml": {
+    "whatItIs": "The JSON to YAML Converter transforms JSON data into human-readable YAML format for configuration files, DevOps, and data storage. Convert structured JSON to YAML for Kubernetes, Ansible, Docker, and CI/CD configurations.",
+    "features": [
+      "Convert JSON to YAML format",
+      "Preserve JSON data types",
+      "Handle nested structures",
+      "Batch convert JSON files",
+      "Choose YAML formatting style",
+      "Validate YAML output",
+      "Download .yaml or .yml files",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the JSON to YAML Converter",
+      "steps": [
+        {
+          "name": "Upload JSON file",
+          "text": "Select your JSON file or paste JSON text. The tool validates the JSON structure before conversion."
+        },
+        {
+          "name": "Configure YAML options",
+          "text": "Choose YAML formatting: indentation style, quote handling, and whether to use flow or block style for collections."
+        },
+        {
+          "name": "Convert to YAML",
+          "text": "Click convert to transform JSON to YAML. The tool preserves all data types: strings, numbers, booleans, nulls, arrays, and objects."
+        },
+        {
+          "name": "Copy or download YAML",
+          "text": "Preview the YAML output. Copy it or download as a .yaml or .yml file for use in your projects."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why convert JSON to YAML?",
+        "answer": "YAML is more human-readable and commonly used for configuration files in DevOps tools like Kubernetes, Ansible, Docker Compose, and GitHub Actions."
+      },
+      {
+        "question": "Does it preserve all JSON data types?",
+        "answer": "Yes, the tool preserves strings, numbers, booleans, null values, arrays, and nested objects in the YAML output with appropriate YAML syntax."
+      },
+      {
+        "question": "Can I customize YAML formatting?",
+        "answer": "Yes, you can choose block style (more readable) or flow style (more compact), adjust indentation, and control quote usage."
+      },
+      {
+        "question": "Is the JSON to YAML Converter free?",
+        "answer": "Yes, converting JSON to YAML is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert JSON to YAML online for free. Transform JSON data to YAML format for configuration and DevOps. Batch conversion with formatting options."
+  },
+  "yaml-to-xml": {
+    "whatItIs": "The YAML to XML Converter transforms YAML configuration files into XML format for legacy systems, enterprise integrations, and applications requiring XML data interchange.",
+    "features": [
+      "Convert YAML to XML format",
+      "Preserve YAML data structure",
+      "Handle nested YAML mappings",
+      "Batch convert YAML files",
+      "Configure XML output options",
+      "Validate XML output",
+      "Download XML files",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the YAML to XML Converter",
+      "steps": [
+        {
+          "name": "Upload YAML file",
+          "text": "Select your .yaml or .yml file or paste YAML text. The tool validates the YAML structure."
+        },
+        {
+          "name": "Configure XML options",
+          "text": "Set the root element name and configure how YAML keys become XML elements. Choose attribute vs element representation."
+        },
+        {
+          "name": "Convert to XML",
+          "text": "Click convert to transform YAML to XML. The tool creates valid, well-formatted XML from your YAML data."
+        },
+        {
+          "name": "Download XML file",
+          "text": "Preview the XML output and download it for use in your applications or systems."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why convert YAML to XML?",
+        "answer": "Some legacy systems, enterprise applications, and specific APIs require XML format. Converting from YAML enables integration with XML-based systems."
+      },
+      {
+        "question": "Does it handle YAML lists?",
+        "answer": "Yes, YAML lists are converted to repeated XML elements. Nested structures are represented with nested XML elements."
+      },
+      {
+        "question": "Can I customize the XML root element?",
+        "answer": "Yes, you can set the root element name and configure how YAML keys map to XML elements and attributes."
+      },
+      {
+        "question": "Is the YAML to XML Converter free?",
+        "answer": "Yes, converting YAML to XML is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert YAML to XML online for free. Transform YAML configs to XML format for legacy systems and enterprise integration. Batch conversion available."
+  },
+  "xml-to-csv": {
+    "whatItIs": "The XML to CSV Converter transforms XML data into CSV spreadsheet format for data analysis, database imports, and Excel compatibility. Extract tabular data from XML documents for easy processing.",
+    "features": [
+      "Convert XML to CSV format",
+      "Extract tabular data from XML",
+      "Handle nested XML structures",
+      "Batch convert XML files",
+      "Choose delimiter and encoding",
+      "Preview CSV output",
+      "Download as spreadsheet",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the XML to CSV Converter",
+      "steps": [
+        {
+          "name": "Upload XML file",
+          "text": "Select your XML file or paste XML text. The tool parses the structure and identifies repeatable elements for tabular extraction."
+        },
+        {
+          "name": "Configure CSV options",
+          "text": "Choose the repeating element to use as rows, set column mapping, and select delimiter and encoding."
+        },
+        {
+          "name": "Convert to CSV",
+          "text": "Click convert to extract tabular data from XML and create a CSV file. Nested elements are flattened into columns."
+        },
+        {
+          "name": "Download CSV file",
+          "text": "Preview the CSV output and download it for use in spreadsheets or databases."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does it handle nested XML?",
+        "answer": "The tool flattens nested XML structures into CSV columns using dot notation (e.g., user.address.city becomes a single column). You can configure the flattening depth."
+      },
+      {
+        "question": "What if my XML doesn't have clear table structure?",
+        "answer": "Choose the repeating element that best represents rows. The tool can handle various XML structures including RSS feeds, data exports, and configuration files."
+      },
+      {
+        "question": "Can I batch convert XML files?",
+        "answer": "Yes, upload multiple XML files to convert them all to CSV in one operation."
+      },
+      {
+        "question": "Is the XML to CSV Converter free?",
+        "answer": "Yes, converting XML to CSV is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert XML to CSV online for free. Extract tabular data from XML documents to spreadsheet format. Batch conversion with customizable columns."
+  }
+}

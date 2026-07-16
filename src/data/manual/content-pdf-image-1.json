@@ -1,0 +1,642 @@
+{
+  "compress-pdf-to-exact-kb": {
+    "whatItIs": "The Compress PDF to Exact KB tool shrinks PDF files to a precise target size like 100KB, 200KB, or any custom size you specify. Unlike basic compressors, this tool gives you exact control over the output file size for uploads with strict size limits.",
+    "features": [
+      "Compress PDF to exact KB sizes like 100KB, 200KB, 500KB",
+      "Set custom target file size",
+      "Multiple compression levels",
+      "Preserve text quality and readability",
+      "Remove embedded fonts and images selectively",
+      "Batch compress multiple PDFs",
+      "Preview file size before download",
+      "Privacy-focused with no uploads to servers"
+    ],
+    "howToUse": {
+      "name": "How to Use Compress PDF to Exact KB",
+      "steps": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF file you want to compress. The tool shows the current file size and page count."
+        },
+        {
+          "name": "Set target size",
+          "text": "Enter your exact target size in KB (e.g., 100, 200, 500) or use the preset buttons for common sizes."
+        },
+        {
+          "name": "Choose compression mode",
+          "text": "Select between aggressive compression for smallest file size or balanced mode to preserve more quality."
+        },
+        {
+          "name": "Compress the PDF",
+          "text": "Click the compress button. The tool processes your file and attempts to reach your exact target size."
+        },
+        {
+          "name": "Download the result",
+          "text": "Download the compressed PDF. Check that it meets your size requirement and quality needs."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I really get an exact file size?",
+        "answer": "The tool uses intelligent compression to get as close to your target size as possible. Exact sizes may vary slightly depending on the PDF content, but you can adjust compression settings for finer control."
+      },
+      {
+        "question": "Will compression affect document quality?",
+        "answer": "Higher compression levels may slightly reduce image quality or remove embedded fonts. The balanced mode preserves most quality while achieving good compression."
+      },
+      {
+        "question": "What is the maximum PDF size I can upload?",
+        "answer": "You can upload PDF files up to 100MB. The tool handles large documents with multiple pages and embedded media."
+      },
+      {
+        "question": "Is this tool free to use?",
+        "answer": "Yes, the Compress PDF to Exact KB tool is completely free with no usage limits or watermarks."
+      }
+    ],
+    "seoDescription": "Compress PDF to exact KB sizes like 100KB, 200KB, 500KB online for free. Precise file size control for strict upload limits. No quality loss guaranteed."
+  },
+  "remove-pages-from-pdf": {
+    "whatItIs": "The Remove Pages from PDF tool lets you delete unwanted pages from PDF documents online. Select specific pages to remove, reorder remaining pages, and download the cleaned PDF without installing any software.",
+    "features": [
+      "Remove specific pages by number or range",
+      "Visual page preview before deletion",
+      "Reorder remaining pages",
+      "Delete multiple pages at once",
+      "Preserve original document quality",
+      "Support for password-protected PDFs",
+      "Batch process multiple PDFs",
+      "Privacy-focused local processing"
+    ],
+    "howToUse": {
+      "name": "How to Use Remove Pages from PDF",
+      "steps": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF file from which you want to remove pages. The tool displays all pages with previews."
+        },
+        {
+          "name": "Select pages to remove",
+          "text": "Choose the pages you want to delete by clicking on them or entering page numbers or ranges like 3-5, 7, 9."
+        },
+        {
+          "name": "Reorder remaining pages",
+          "text": "Drag and drop to reorder the remaining pages if needed. You can also rotate pages at this stage."
+        },
+        {
+          "name": "Download the PDF",
+          "text": "Click download to get the cleaned PDF with only the pages you want to keep. All original formatting is preserved."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I remove multiple pages at once?",
+        "answer": "Yes, you can select individual pages, ranges like 3-5, or non-consecutive pages like 1, 3, 5 to remove in one operation."
+      },
+      {
+        "question": "Does removing pages affect the remaining content?",
+        "answer": "No, the remaining pages retain all their original formatting, images, and text. Only the selected pages are removed."
+      },
+      {
+        "question": "Can I reorder pages after removing some?",
+        "answer": "Yes, you can drag and drop to reorder the remaining pages in any sequence you prefer before downloading."
+      },
+      {
+        "question": "Is this tool free?",
+        "answer": "Yes, removing pages from PDFs is completely free with no limits on usage."
+      }
+    ],
+    "seoDescription": "Remove pages from PDF online for free. Delete unwanted pages, reorder documents, and download cleaned PDFs. No software installation needed."
+  },
+  "pdf-to-jpg-converter": {
+    "whatItIs": "The PDF to JPG Converter transforms PDF pages into high-quality JPG images. Extract all pages or select specific ones, with options for resolution and quality settings. Perfect for sharing PDF content as images or creating thumbnails.",
+    "features": [
+      "Convert PDF pages to JPG images",
+      "Extract all pages or select specific ones",
+      "High-resolution output options",
+      "Adjustable image quality",
+      "Batch conversion for multi-page PDFs",
+      "Preview before downloading",
+      "Download as individual files or ZIP",
+      "Privacy-focused local processing"
+    ],
+    "howToUse": {
+      "name": "How to Use the PDF to JPG Converter",
+      "steps": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF file you want to convert. The tool displays all pages with previews so you can see what will be converted."
+        },
+        {
+          "name": "Select pages and settings",
+          "text": "Choose whether to convert all pages or select specific ones. Set the output resolution and quality level."
+        },
+        {
+          "name": "Convert to JPG",
+          "text": "Click the convert button. The tool processes each page and converts it to a JPG image with your specified settings."
+        },
+        {
+          "name": "Download the images",
+          "text": "Download individual JPG files or all pages as a ZIP archive. Each page gets a sequential filename for easy organization."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I convert only specific pages?",
+        "answer": "Yes, you can select specific pages or page ranges to convert instead of the entire document. This saves time and storage space."
+      },
+      {
+        "question": "What resolution options are available?",
+        "answer": "You can choose from standard web resolution (72 DPI), print quality (150 DPI), or high resolution (300 DPI) depending on your needs."
+      },
+      {
+        "question": "Will the JPG images have good quality?",
+        "answer": "Yes, the converter maintains high image quality with options to adjust the compression level. Higher quality settings produce larger files."
+      },
+      {
+        "question": "Is this tool free?",
+        "answer": "Yes, the PDF to JPG converter is completely free with unlimited conversions."
+      }
+    ],
+    "seoDescription": "Convert PDF to JPG online for free. Extract PDF pages as high-quality JPG images. Batch conversion with resolution options available."
+  },
+  "merge-pdf-online": {
+    "whatItIs": "The Merge PDF Online tool combines multiple PDF files into a single document instantly. Reorder pages, add multiple files, and merge them into one organized PDF without needing desktop software.",
+    "features": [
+      "Combine multiple PDFs into one document",
+      "Drag and drop to reorder files and pages",
+      "Merge unlimited number of PDFs",
+      "Preserve original quality and formatting",
+      "Add password protection to merged PDF",
+      "Preview before merging",
+      "Support for large files",
+      "Privacy-focused with no data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Merge PDF Online",
+      "steps": [
+        {
+          "name": "Upload PDF files",
+          "text": "Select multiple PDF files from your device or drag and drop them into the upload area. Files are listed in the order they will be merged."
+        },
+        {
+          "name": "Reorder files",
+          "text": "Drag and drop to reorder the PDFs. You can also preview individual pages and reorder pages within each file if needed."
+        },
+        {
+          "name": "Configure options",
+          "text": "Set output filename and optionally add password protection. Choose whether to compress the final file."
+        },
+        {
+          "name": "Merge and download",
+          "text": "Click the merge button. The tool combines all PDFs into one file that you can download immediately."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How many PDFs can I merge at once?",
+        "answer": "You can merge up to 20 PDF files in a single operation. For larger batches, merge in groups and then combine the results."
+      },
+      {
+        "question": "Will the merged PDF maintain quality?",
+        "answer": "Yes, the tool preserves the original quality of all input files including images, text formatting, and vector graphics."
+      },
+      {
+        "question": "Can I reorder pages within the merged PDF?",
+        "answer": "Yes, you can drag and drop to reorder both the files and individual pages within each file before merging."
+      },
+      {
+        "question": "Is the Merge PDF tool free?",
+        "answer": "Yes, merging PDFs is completely free with no limits on the number of merges or file sizes."
+      }
+    ],
+    "seoDescription": "Merge PDF files online for free. Combine multiple PDFs into one document with drag-and-drop reordering. No software installation required."
+  },
+  "html-to-pdf": {
+    "whatItIs": "The HTML to PDF Converter transforms web pages, HTML code, and HTML files into professional PDF documents. Perfect for saving web content, creating reports from HTML templates, or generating printable documents from web-based data.",
+    "features": [
+      "Convert HTML code or URLs to PDF",
+      "Preserve CSS styling and layout",
+      "Support for modern HTML5 and CSS3",
+      "Custom page size and margins",
+      "Add headers and footers",
+      "Batch convert multiple HTML files",
+      "High-resolution output",
+      "Privacy-focused local processing"
+    ],
+    "howToUse": {
+      "name": "How to Use the HTML to PDF Converter",
+      "steps": [
+        {
+          "name": "Enter HTML or URL",
+          "text": "Paste your HTML code directly or enter a URL to convert a web page. You can also upload HTML files from your device."
+        },
+        {
+          "name": "Configure page settings",
+          "text": "Set page size (A4, Letter, etc.), margins, orientation, and whether to include page numbers or headers."
+        },
+        {
+          "name": "Preview the PDF",
+          "text": "Preview how the PDF will look before generating. Check that the layout, fonts, and images render correctly."
+        },
+        {
+          "name": "Generate and download",
+          "text": "Click the generate button and wait for the PDF to be created. Download the file once processing is complete."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I convert a live website URL to PDF?",
+        "answer": "Yes, enter any public URL and the tool will fetch the page and convert it to PDF. Dynamic content that loads with JavaScript may not be captured."
+      },
+      {
+        "question": "Does it support modern CSS like flexbox and grid?",
+        "answer": "The converter supports most modern CSS features including flexbox, grid, custom fonts, and animations. Complex layouts should render correctly in most cases."
+      },
+      {
+        "question": "Can I customize the PDF appearance?",
+        "answer": "Yes, you can set page size, margins, orientation, headers, footers, and page numbers. Some tools also allow CSS injection for custom styling."
+      },
+      {
+        "question": "Is the HTML to PDF Converter free?",
+        "answer": "Yes, the basic converter is completely free. Premium features like batch processing may require a paid plan depending on the implementation."
+      }
+    ],
+    "seoDescription": "Convert HTML to PDF online for free. Transform HTML code, files, or web pages into print-ready PDF documents. Preserve CSS styling and layout."
+  },
+  "video-tools": {
+    "whatItIs": "Video Tools is a comprehensive suite for video compression, format conversion, and GIF creation. Edit, cut, merge, and convert video files entirely in your browser with no software downloads required.",
+    "features": [
+      "Compress videos to reduce file size",
+      "Convert between MP4, AVI, MKV, MOV, and more",
+      "Trim and cut video clips",
+      "Merge multiple videos into one",
+      "Create animated GIFs from videos",
+      "Extract audio from videos",
+      "Add text and watermarks to videos",
+      "Browser-based processing for privacy"
+    ],
+    "howToUse": {
+      "name": "How to Use Video Tools",
+      "steps": [
+        {
+          "name": "Upload your video",
+          "text": "Select the video file you want to process. The tool supports all common video formats and codecs."
+        },
+        {
+          "name": "Choose your tool",
+          "text": "Select the operation you need: compress, convert, trim, merge, or create a GIF. Each tool has specific options."
+        },
+        {
+          "name": "Configure settings",
+          "text": "Set output format, quality, resolution, and any other parameters like trim points or merge order."
+        },
+        {
+          "name": "Process and download",
+          "text": "Click the process button and wait for the video to be processed. Download the result once complete."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What video formats are supported?",
+        "answer": "The tool supports all common formats including MP4, AVI, MKV, MOV, WMV, FLV, and WebM. Input and output formats may vary by specific operation."
+      },
+      {
+        "question": "Is there a file size limit?",
+        "answer": "Free users can process videos up to 500MB. Larger files may require a premium plan or splitting into smaller segments."
+      },
+      {
+        "question": "Does video processing affect quality?",
+        "answer": "Quality depends on the compression settings. Higher quality settings preserve more detail but produce larger files. The tool offers a preview so you can check quality before downloading."
+      },
+      {
+        "question": "Are my videos stored on any server?",
+        "answer": "No, video processing happens locally in your browser. Your files are never uploaded to external servers, ensuring complete privacy."
+      }
+    ],
+    "seoDescription": "Free online video tools for compression, conversion, trimming, and merging. Process videos in your browser with no software downloads. Supports MP4, AVI, MKV, and more."
+  },
+  "video-converter": {
+    "whatItIs": "The Video Converter transforms video files between different formats like MP4, AVI, MKV, MOV, and WebM. Convert videos for web use, mobile devices, or professional editing while maintaining high quality.",
+    "features": [
+      "Convert between all major video formats",
+      "Support for HD and 4K resolutions",
+      "Adjustable output quality settings",
+      "Extract audio from video files",
+      "Batch convert multiple videos",
+      "Hardware-accelerated processing",
+      "No software installation needed",
+      "Privacy-focused local conversion"
+    ],
+    "howToUse": {
+      "name": "How to Use the Video Converter",
+      "steps": [
+        {
+          "name": "Upload your video",
+          "text": "Select the video file you want to convert. The tool automatically detects the input format and displays file information."
+        },
+        {
+          "name": "Choose output format",
+          "text": "Select your target format from the available options. MP4 is recommended for web use, while MOV is better for editing."
+        },
+        {
+          "name": "Set quality and resolution",
+          "text": "Choose the output quality and resolution. Higher settings preserve more quality but create larger files."
+        },
+        {
+          "name": "Convert and download",
+          "text": "Click the convert button. Once processing is complete, download the converted video file to your device."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Which video formats are supported?",
+        "answer": "The converter supports input and output for MP4, AVI, MKV, MOV, WebM, FLV, WMV, and more. MP4 is recommended for maximum compatibility."
+      },
+      {
+        "question": "Can I convert 4K videos?",
+        "answer": "Yes, 4K and even 8K videos are supported for both input and output. Higher resolution videos take longer to process."
+      },
+      {
+        "question": "Does conversion affect video quality?",
+        "answer": "Quality loss is minimal with the right settings. Use high bitrate and original resolution for best results. Some compression is inevitable when converting between certain formats."
+      },
+      {
+        "question": "Is the Video Converter free?",
+        "answer": "Yes, the basic video converter is free. Premium features like 4K support and batch processing may require a paid plan."
+      }
+    ],
+    "seoDescription": "Convert video files online for free. Transform MP4, AVI, MKV, MOV, and more with high quality output. Browser-based video format converter."
+  },
+  "video-editor": {
+    "whatItIs": "The Video Editor lets you cut, trim, merge, and edit video files directly in your browser. No desktop software needed. Add transitions, text overlays, and basic effects to create polished videos for social media or presentations.",
+    "features": [
+      "Trim and cut video clips precisely",
+      "Merge multiple videos into one",
+      "Add text overlays and captions",
+      "Basic transitions between clips",
+      "Crop and resize videos",
+      "Adjust brightness and contrast",
+      "Export in multiple formats",
+      "Browser-based with no installation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Video Editor",
+      "steps": [
+        {
+          "name": "Upload your videos",
+          "text": "Upload the video clips you want to edit. Multiple files can be uploaded for merging projects."
+        },
+        {
+          "name": "Arrange your timeline",
+          "text": "Drag clips to the timeline in your desired order. Trim each clip by setting start and end points."
+        },
+        {
+          "name": "Add edits and effects",
+          "text": "Insert text overlays, adjust colors, add transitions between clips, and crop to your desired aspect ratio."
+        },
+        {
+          "name": "Export the video",
+          "text": "Choose your output format and quality, then export. The processed video downloads when ready."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What editing features are available?",
+        "answer": "The editor includes trim, cut, merge, text overlay, basic color correction, cropping, and transitions. Advanced features like keyframes and effects are available in the premium version."
+      },
+      {
+        "question": "Can I edit videos on my phone?",
+        "answer": "Yes, the browser-based editor works on both desktop and mobile devices. The interface adapts to touch screens for easy editing on phones."
+      },
+      {
+        "question": "What video formats can I export?",
+        "answer": "You can export edited videos in MP4, WebM, and MOV formats with various quality settings from standard definition to 1080p."
+      },
+      {
+        "question": "Is there a duration limit?",
+        "answer": "Free users can edit videos up to 10 minutes. Longer videos require a premium subscription."
+      }
+    ],
+    "seoDescription": "Edit videos online for free. Trim, merge, add text, and apply effects in your browser. No software downloads required for basic video editing."
+  },
+  "age-calculator": {
+    "whatItIs": "The Age Calculator computes your exact age in years, months, and days from your date of birth. It also calculates age differences between two dates, making it useful for legal documents, medical forms, and general curiosity.",
+    "features": [
+      "Calculate exact age in years, months, and days",
+      "Find age difference between two dates",
+      "Show age in total days, hours, and minutes",
+      "Support for past and future dates",
+      "Calculate age on any specific future or past date",
+      "Show next birthday countdown",
+      "Privacy-focused no data storage",
+      "Works on all devices"
+    ],
+    "howToUse": {
+      "name": "How to Use the Age Calculator",
+      "steps": [
+        {
+          "name": "Enter your birth date",
+          "text": "Select your date of birth using the date picker. The tool accepts dates in any valid format."
+        },
+        {
+          "name": "View your exact age",
+          "text": "The calculator instantly shows your age in years, months, and days. Additional details like total days lived are also displayed."
+        },
+        {
+          "name": "Calculate age difference",
+          "text": "Switch to the difference mode and enter two dates to calculate the exact time span between them in various units."
+        },
+        {
+          "name": "Check age on a specific date",
+          "text": "Enter any future or past date to see how old you will be or were on that date. Useful for planning and historical calculations."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How accurate is the age calculation?",
+        "answer": "The Age Calculator provides exact age in years, months, and days, accounting for different month lengths and leap years automatically."
+      },
+      {
+        "question": "Can I calculate age difference between two people?",
+        "answer": "Yes, use the difference calculator mode to find the exact age gap between any two dates. Enter both dates and the tool shows the difference in all units."
+      },
+      {
+        "question": "Does it consider leap years?",
+        "answer": "Yes, the calculator accounts for leap years and varying month lengths to provide accurate results for all date combinations."
+      },
+      {
+        "question": "Is my birth date stored anywhere?",
+        "answer": "No, all calculations happen in your browser. Your birth date is never sent to any server or stored permanently."
+      }
+    ],
+    "seoDescription": "Calculate your exact age online for free. Get age in years, months, and days. Also find age differences between any two dates instantly."
+  },
+  "angle-converter": {
+    "whatItIs": "The Angle Converter transforms angle measurements between different units including degrees, radians, gradians, revolutions, and milliradians. Essential for students, engineers, and programmers working with trigonometry, navigation, or geometry.",
+    "features": [
+      "Convert between degrees, radians, and gradians",
+      "Support for revolutions and milliradians",
+      "Real-time conversion as you type",
+      "Mathematical precision with many decimal places",
+      "Show conversion formulas",
+      "Copy results with one click",
+      "Works offline in your browser",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Angle Converter",
+      "steps": [
+        {
+          "name": "Enter the angle value",
+          "text": "Type the angle measurement you want to convert in the input field. The tool automatically detects the current unit."
+        },
+        {
+          "name": "Select input unit",
+          "text": "Choose the unit of your input angle: degrees, radians, gradians, revolutions, or milliradians."
+        },
+        {
+          "name": "View all conversions",
+          "text": "See the converted values in all other units instantly. The tool updates in real-time as you type."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click to copy any converted value to your clipboard. Use the formulas section if you need to understand the conversion."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What angle units are supported?",
+        "answer": "The converter supports degrees, radians, gradians, revolutions, and milliradians. All common mathematical and engineering angle units are covered."
+      },
+      {
+        "question": "How precise are the conversions?",
+        "answer": "Conversions use full floating-point precision. You can adjust the number of decimal places displayed for cleaner results."
+      },
+      {
+        "question": "Can I use this for trigonometric calculations?",
+        "answer": "Yes, the degree to radian conversion is particularly useful for trigonometric functions in programming and mathematics."
+      },
+      {
+        "question": "Is the Angle Converter free?",
+        "answer": "Yes, all conversions are free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert angles between degrees, radians, gradians, and more online for free. Precise mathematical angle conversion for engineering and trigonometry."
+  },
+  "apparent-power-converter": {
+    "whatItIs": "The Apparent Power Converter converts between volt-amperes (VA), millivolt-amperes (mVA), kilovolt-amperes (kVA), and megavolt-amperes (MVA). Essential for electrical engineers and technicians working with AC power systems.",
+    "features": [
+      "Convert between VA, mVA, kVA, and MVA",
+      "Real-time conversion as you type",
+      "Support for single and three-phase systems",
+      "Show conversion formulas and explanations",
+      "Copy results with one click",
+      "High precision calculations",
+      "Works offline in browser",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Apparent Power Converter",
+      "steps": [
+        {
+          "name": "Enter the power value",
+          "text": "Type the apparent power value you want to convert. The tool works with any numeric value."
+        },
+        {
+          "name": "Select input unit",
+          "text": "Choose the unit of your input: volt-amperes, millivolt-amperes, kilovolt-amperes, or megavolt-amperes."
+        },
+        {
+          "name": "View all conversions",
+          "text": "See the converted values in all other units instantly. The tool updates as you type for quick experimentation."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click to copy any converted value. Use the formulas section if you need to understand the relationship between units."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is apparent power?",
+        "answer": "Apparent power (measured in volt-amperes or VA) is the total power in an AC circuit, combining real power (watts) and reactive power (VAR). It represents the full load current."
+      },
+      {
+        "question": "When do I need to use kVA vs kW?",
+        "answer": "Use kVA (kilovolt-amperes) for apparent power and kW (kilowatts) for real power. Electrical equipment like transformers and generators are rated in kVA, while appliances show power consumption in watts or kW."
+      },
+      {
+        "question": "Does this converter handle three-phase power?",
+        "answer": "The basic converter handles single-phase values. For three-phase calculations, you may need additional formulas involving the square root of 3."
+      },
+      {
+        "question": "Is the Apparent Power Converter free?",
+        "answer": "Yes, all conversions are completely free with no limits on usage."
+      }
+    ],
+    "seoDescription": "Convert apparent power between VA, kVA, MVA, and mVA online for free. Essential electrical power unit converter for engineers and technicians."
+  },
+  "area-converter": {
+    "whatItIs": "The Area Converter transforms area measurements between different units including square meters, square feet, acres, hectares, and square kilometers. Useful for real estate, construction, agriculture, and land measurement projects.",
+    "features": [
+      "Convert between metric and imperial area units",
+      "Support for common units: sq m, sq ft, acres, hectares",
+      "Real-time conversion as you type",
+      "Show conversion formulas",
+      "Copy results with one click",
+      "Works offline in your browser",
+      "High precision calculations",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Area Converter",
+      "steps": [
+        {
+          "name": "Enter the area value",
+          "text": "Type the area measurement you want to convert. The tool accepts decimal values for precision."
+        },
+        {
+          "name": "Select input unit",
+          "text": "Choose the unit of your input measurement from the available options including metric and imperial units."
+        },
+        {
+          "name": "View all conversions",
+          "text": "See the converted values in all other supported units instantly. The tool updates in real-time."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click to copy any converted value. Check the formulas section for the mathematical basis of conversions."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What area units are supported?",
+        "answer": "The converter supports square meters, square feet, square yards, acres, hectares, square kilometers, square miles, and more. Both metric and imperial units are covered."
+      },
+      {
+        "question": "How accurate are the conversions?",
+        "answer": "Conversions use standard conversion factors with full floating-point precision. Results are accurate to many decimal places."
+      },
+      {
+        "question": "Can I convert between metric and imperial?",
+        "answer": "Yes, the converter seamlessly handles conversions between metric units (sq m, hectares) and imperial units (sq ft, acres)."
+      },
+      {
+        "question": "Is the Area Converter free?",
+        "answer": "Yes, all area conversions are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert area units online for free. Transform between square meters, square feet, acres, hectares, and more. Real-time conversion for real estate and construction."
+  }
+}

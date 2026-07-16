@@ -1,0 +1,532 @@
+{
+  "svg-to-png-converter": {
+    "whatItIs": "The SVG to PNG Converter transforms scalable vector graphics into high-quality raster PNG images. This tool preserves image quality while converting vector formats to the widely-compatible PNG format with transparency support, making it ideal for web graphics, icons, and design assets.",
+    "features": [
+      "Convert SVG to PNG with transparency preserved",
+      "High-resolution output up to 4K",
+      "Batch conversion of multiple SVG files",
+      "Custom output dimensions and DPI settings",
+      "No software installation required",
+      "Privacy-focused browser-based processing",
+      "Download converted files individually or as ZIP",
+      "Supports complex SVG with gradients and filters"
+    ],
+    "howToUse": {
+      "name": "How to Use the SVG to PNG Converter",
+      "steps": [
+        {
+          "name": "Upload your SVG files",
+          "text": "Click the upload area or drag and drop your SVG files. You can upload single or multiple files for batch conversion."
+        },
+        {
+          "name": "Set output preferences",
+          "text": "Choose your desired output dimensions, DPI (72, 150, 300, or custom), and background color if needed."
+        },
+        {
+          "name": "Convert the files",
+          "text": "Click the convert button. The tool processes each file and shows previews of the converted PNG images."
+        },
+        {
+          "name": "Review and download",
+          "text": "Check the previews to ensure quality meets your needs. Download individual files or all at once as a ZIP archive."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does the converter preserve transparency?",
+        "answer": "Yes, transparent areas in your SVG are preserved in the PNG output. You can also choose to add a solid background color if preferred."
+      },
+      {
+        "question": "What is the maximum file size?",
+        "answer": "The tool supports SVG files up to 50MB each. For larger files, consider simplifying your SVG or splitting it into smaller parts."
+      },
+      {
+        "question": "Can I convert multiple SVGs at once?",
+        "answer": "Yes, batch conversion is supported. Upload up to 20 SVG files at once and convert them all in a single operation."
+      },
+      {
+        "question": "Is the SVG to PNG Converter free?",
+        "answer": "Yes, the converter is completely free with no usage limits or watermarks on output files."
+      }
+    ],
+    "seoDescription": "Convert SVG to PNG online for free with transparency support. High-quality vector to raster conversion with batch processing and custom dimensions."
+  },
+  "webp-to-png-converter": {
+    "whatItIs": "The WebP to PNG Converter converts modern WebP images to the widely-supported PNG format. This is useful when you need WebP images in environments that don't support the format, or when you need PNG's lossless quality and transparency features.",
+    "features": [
+      "Convert WebP to PNG with full transparency support",
+      "Maintain original image quality during conversion",
+      "Batch conversion of multiple WebP files",
+      "No file size limits for individual conversions",
+      "Works entirely in your browser",
+      "Privacy-focused with no uploads to external servers",
+      "Download converted files as ZIP or individually",
+      "Support for animated WebP conversion"
+    ],
+    "howToUse": {
+      "name": "How to Use the WebP to PNG Converter",
+      "steps": [
+        {
+          "name": "Upload WebP files",
+          "text": "Select or drag and drop your WebP image files. You can upload multiple files for batch conversion."
+        },
+        {
+          "name": "Configure output settings",
+          "text": "Choose whether to preserve transparency and select output quality settings if compression options are available."
+        },
+        {
+          "name": "Convert images",
+          "text": "Click the convert button to process your files. The tool converts each WebP to PNG format while maintaining visual quality."
+        },
+        {
+          "name": "Download results",
+          "text": "Preview the converted PNG files and download them individually or as a ZIP archive to your device."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why convert WebP to PNG?",
+        "answer": "WebP offers great compression but isn't supported everywhere. Converting to PNG ensures compatibility with all software, browsers, and devices while maintaining transparency."
+      },
+      {
+        "question": "Does conversion affect image quality?",
+        "answer": "No, the converter maintains the original image quality. WebP is already compressed, and PNG preserves that quality exactly during conversion."
+      },
+      {
+        "question": "Can I convert animated WebP files?",
+        "answer": "Yes, animated WebP files are converted to PNG sequences or animated formats where supported, preserving all frames."
+      },
+      {
+        "question": "Is this converter really free?",
+        "answer": "Yes, the WebP to PNG converter is 100% free with unlimited conversions and no watermarks on output files."
+      }
+    ],
+    "seoDescription": "Convert WebP to PNG online for free. Maintain image quality and transparency while ensuring compatibility with all browsers and devices."
+  },
+  "ico-to-png-converter": {
+    "whatItIs": "The ICO to PNG Converter transforms Windows icon files into standard PNG images. Extract icons from ICO files and convert them to high-quality PNG format for web use, app development, or graphic design projects.",
+    "features": [
+      "Extract all sizes from ICO files",
+      "Convert ICO to PNG with transparency",
+      "Preview all icon sizes before downloading",
+      "Batch conversion of multiple ICO files",
+      "High-resolution output for retina displays",
+      "No software installation needed",
+      "Privacy-focused with local processing",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the ICO to PNG Converter",
+      "steps": [
+        {
+          "name": "Upload ICO file",
+          "text": "Select your ICO file or drag and drop it into the upload area. The tool will automatically detect all icon sizes contained in the file."
+        },
+        {
+          "name": "Select icon sizes",
+          "text": "Choose which icon sizes you want to convert to PNG. Common sizes like 16x16, 32x32, 48x48, 64x64, 128x128, and 256x256 are available."
+        },
+        {
+          "name": "Convert to PNG",
+          "text": "Click the convert button. Each selected size is converted to an individual PNG file with transparency preserved."
+        },
+        {
+          "name": "Download PNG files",
+          "text": "Download the converted PNG files individually or as a ZIP archive containing all selected sizes."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What sizes can I extract from an ICO file?",
+        "answer": "ICO files can contain multiple sizes from 16x16 up to 256x256 pixels. The tool displays all available sizes so you can choose which ones to convert."
+      },
+      {
+        "question": "Can I convert multiple ICO files at once?",
+        "answer": "Yes, batch conversion is supported. Upload multiple ICO files and convert them all to PNG in one operation."
+      },
+      {
+        "question": "Is transparency preserved in the PNG output?",
+        "answer": "Yes, the alpha channel and transparency from your ICO file are fully preserved in the PNG output."
+      },
+      {
+        "question": "Is the ICO to PNG Converter free?",
+        "answer": "Yes, this converter is completely free with no limits on the number of files or conversions."
+      }
+    ],
+    "seoDescription": "Convert ICO to PNG online for free. Extract Windows icons and save as high-quality PNG images with transparency. Batch conversion supported."
+  },
+  "jpg-to-png-converter": {
+    "whatItIs": "The JPG to PNG Converter transforms JPEG images into lossless PNG format. This is ideal when you need to preserve image quality, add transparency, or prepare images for graphic design work where compression artifacts would be visible.",
+    "features": [
+      "Convert JPG to PNG with lossless quality",
+      "Add transparency where needed",
+      "Batch conversion of multiple images",
+      "Maintain original resolution and detail",
+      "Adjustable compression settings",
+      "Privacy-focused browser processing",
+      "No file size limits",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the JPG to PNG Converter",
+      "steps": [
+        {
+          "name": "Upload JPG images",
+          "text": "Select or drag and drop your JPG files. You can upload multiple images for batch conversion."
+        },
+        {
+          "name": "Set conversion options",
+          "text": "Choose whether to preserve the original background or add transparency. Select output quality settings if applicable."
+        },
+        {
+          "name": "Convert to PNG",
+          "text": "Click the convert button. The tool processes each JPG and outputs high-quality PNG files with no quality loss."
+        },
+        {
+          "name": "Download the PNG files",
+          "text": "Preview the converted images and download them individually or as a ZIP archive containing all converted files."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does converting JPG to PNG improve quality?",
+        "answer": "PNG uses lossless compression, so the quality matches the original JPG exactly. However, PNG files are typically larger than JPG for photographic content."
+      },
+      {
+        "question": "Can I add transparency to a JPG image?",
+        "answer": "JPG format doesn't support transparency, but after conversion to PNG you can use image editing tools to make backgrounds transparent if needed."
+      },
+      {
+        "question": "What is the maximum file size?",
+        "answer": "There is no strict file size limit, but very large files may take longer to process. Most JPG files under 50MB convert quickly."
+      },
+      {
+        "question": "Is this converter really free?",
+        "answer": "Yes, the JPG to PNG converter is 100% free with unlimited conversions and no watermarks."
+      }
+    ],
+    "seoDescription": "Convert JPG to PNG online for free. Transform JPEG images to lossless PNG format with transparency support. Batch conversion available."
+  },
+  "png-to-jpg-converter": {
+    "whatItIs": "The PNG to JPG Converter transforms PNG images into compressed JPEG format. Reduce file sizes significantly while maintaining acceptable image quality, making it perfect for web uploads, email attachments, and storage optimization.",
+    "features": [
+      "Convert PNG to compressed JPG format",
+      "Adjustable quality and compression levels",
+      "Significant file size reduction",
+      "Batch conversion of multiple PNG files",
+      "Preview before and after file sizes",
+      "No software installation required",
+      "Privacy-focused local processing",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the PNG to JPG Converter",
+      "steps": [
+        {
+          "name": "Upload PNG files",
+          "text": "Select or drag and drop your PNG images. Multiple files can be uploaded for batch conversion."
+        },
+        {
+          "name": "Set quality level",
+          "text": "Choose the compression quality from high (larger file, better quality) to low (smaller file, more compression). 80-90% is recommended for most uses."
+        },
+        {
+          "name": "Convert to JPG",
+          "text": "Click the convert button. The tool compresses each PNG into a JPG file, showing the new file size for comparison."
+        },
+        {
+          "name": "Download JPG files",
+          "text": "Preview the converted images and download them individually or as a ZIP archive."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Will converting PNG to JPG reduce quality?",
+        "answer": "JPG uses lossy compression, so there is some quality loss compared to PNG. However, at 80-90% quality, the difference is barely noticeable for most uses."
+      },
+      {
+        "question": "What happens to transparent areas?",
+        "answer": "PNG transparency is not supported in JPG format. Transparent areas are filled with a background color (usually white or black) during conversion."
+      },
+      {
+        "question": "How much smaller will my files be?",
+        "answer": "JPG files are typically 5-10x smaller than PNG files for photographic images. The exact reduction depends on the image content and quality setting."
+      },
+      {
+        "question": "Is this converter free?",
+        "answer": "Yes, the PNG to JPG converter is completely free with unlimited conversions and no watermarks."
+      }
+    ],
+    "seoDescription": "Convert PNG to JPG online for free. Reduce image file sizes with adjustable compression. Batch convert multiple PNG images to JPEG format."
+  },
+  "text-reverser": {
+    "whatItIs": "The Text Reverser flips your text backwards or reverses the order of words instantly. Create mirror text for social media posts, creative writing projects, or just for fun. The tool supports character reversal, word order reversal, and line reversal.",
+    "features": [
+      "Reverse text character by character",
+      "Reverse the order of words while keeping letters intact",
+      "Reverse entire lines of text",
+      "Support for Unicode and special characters",
+      "Preserve formatting and spacing",
+      "One-click copy to clipboard",
+      "Process unlimited text length",
+      "Works on mobile and desktop"
+    ],
+    "howToUse": {
+      "name": "How to Use the Text Reverser",
+      "steps": [
+        {
+          "name": "Enter your text",
+          "text": "Type or paste the text you want to reverse into the input area. The tool supports any length of text."
+        },
+        {
+          "name": "Choose reversal type",
+          "text": "Select how you want the text reversed: character by character, word order only, or line by line."
+        },
+        {
+          "name": "View the result",
+          "text": "The reversed text appears instantly in the output area. Try different reversal modes to get the effect you want."
+        },
+        {
+          "name": "Copy the output",
+          "text": "Click the copy button to copy the reversed text to your clipboard. Paste it anywhere you need it."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What types of text reversal are available?",
+        "answer": "The tool offers three modes: character reversal (complete mirror), word reversal (same words, reversed order), and line reversal (reverse the order of paragraphs or lines)."
+      },
+      {
+        "question": "Does it support non-English characters?",
+        "answer": "Yes, the text reverser fully supports Unicode including Hindi, Arabic, Chinese, Japanese, and emoji characters."
+      },
+      {
+        "question": "Can I reverse very long texts?",
+        "answer": "There is no character limit for text reversal. The tool processes texts of any length quickly and efficiently."
+      },
+      {
+        "question": "Is the Text Reverser free?",
+        "answer": "Yes, this tool is completely free with no limits on usage."
+      }
+    ],
+    "seoDescription": "Reverse text online for free. Flip characters, words, or lines backwards instantly. Perfect for creative writing, social media, and fun text effects."
+  },
+  "remove-duplicate-lines": {
+    "whatItIs": "The Remove Duplicate Lines tool cleans up your text data by automatically identifying and removing identical lines. Perfect for cleaning lists, datasets, log files, and any text content where duplicate entries cause clutter or errors.",
+    "features": [
+      "Remove exact duplicate lines instantly",
+      "Case-sensitive and case-insensitive options",
+      "Preserve original line order",
+      "Show count of removed duplicates",
+      "Support for large text inputs",
+      "Remove blank lines option",
+      "One-click copy cleaned text",
+      "Works with any text format"
+    ],
+    "howToUse": {
+      "name": "How to Use Remove Duplicate Lines",
+      "steps": [
+        {
+          "name": "Paste your text",
+          "text": "Copy and paste your text containing duplicate lines into the input area. This can be lists, data, log files, or any multi-line text."
+        },
+        {
+          "name": "Choose removal mode",
+          "text": "Select whether to match duplicates exactly or ignore case differences. Enable the blank lines option if you want to remove empty lines too."
+        },
+        {
+          "name": "Remove duplicates",
+          "text": "Click the remove duplicates button. The tool processes your text and shows the cleaned result with a count of removed lines."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Review the cleaned text and copy it to your clipboard with one click. The original text remains available for comparison."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it preserve the order of lines?",
+        "answer": "Yes, the tool maintains the original order of unique lines. Only duplicates are removed, keeping the first occurrence of each line."
+      },
+      {
+        "question": "Can I choose to ignore case when removing duplicates?",
+        "answer": "Yes, there is a case-insensitive mode that treats 'Apple' and 'apple' as duplicates while preserving the original casing of the first occurrence."
+      },
+      {
+        "question": "What is the maximum text length?",
+        "answer": "The tool handles texts up to 100,000 characters. For larger datasets, consider splitting your text into smaller chunks."
+      },
+      {
+        "question": "Does it remove blank lines too?",
+        "answer": "You can enable the remove blank lines option to clean up empty lines in addition to removing duplicates."
+      }
+    ],
+    "seoDescription": "Remove duplicate lines from text online for free. Clean up lists, data, and log files by eliminating repeated entries instantly. Case-sensitive options available."
+  },
+  "markdown-to-html": {
+    "whatItIs": "The Markdown to HTML Converter transforms Markdown formatted text into clean HTML code instantly. Perfect for bloggers, developers, and content creators who write in Markdown but need HTML output for websites, emails, or documentation.",
+    "features": [
+      "Convert standard Markdown syntax to HTML",
+      "Support for tables, code blocks, and lists",
+      "Custom CSS class options for styling",
+      "Live preview of converted output",
+      "Syntax highlighting for code blocks",
+      "Export clean, semantic HTML",
+      "Support for GitHub Flavored Markdown",
+      "One-click copy HTML code"
+    ],
+    "howToUse": {
+      "name": "How to Use the Markdown to HTML Converter",
+      "steps": [
+        {
+          "name": "Enter Markdown text",
+          "text": "Type or paste your Markdown content into the editor. The tool supports standard Markdown as well as GitHub Flavored Markdown."
+        },
+        {
+          "name": "Preview the HTML",
+          "text": "See a live preview of how the HTML will render. Toggle between the Markdown source and HTML output view."
+        },
+        {
+          "name": "Configure options",
+          "text": "Choose whether to include CSS, enable syntax highlighting, or add custom class names to HTML elements."
+        },
+        {
+          "name": "Copy the HTML",
+          "text": "Click to copy the clean HTML code to your clipboard. Paste it directly into your website, CMS, or email template."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What Markdown syntax is supported?",
+        "answer": "The converter supports standard Markdown including headings, bold, italic, links, images, lists, code blocks, blockquotes, and tables. GitHub Flavored Markdown features like task lists and strikethrough are also supported."
+      },
+      {
+        "question": "Can I add custom CSS classes?",
+        "answer": "Yes, you can configure the converter to add custom CSS classes to HTML elements for easier styling in your existing stylesheets."
+      },
+      {
+        "question": "Does it support code syntax highlighting?",
+        "answer": "Yes, code blocks are automatically wrapped with syntax highlighting classes compatible with popular highlighters like Prism.js and Highlight.js."
+      },
+      {
+        "question": "Is the HTML output clean and semantic?",
+        "answer": "The converter produces clean, semantic HTML5 markup without unnecessary inline styles or bloated markup."
+      }
+    ],
+    "seoDescription": "Convert Markdown to HTML online for free. Transform MD files into clean, semantic HTML code with live preview. Supports GitHub Flavored Markdown."
+  },
+  "markdown-to-pdf": {
+    "whatItIs": "The Markdown to PDF Converter transforms Markdown documents into professional, print-ready PDF files. Write your content in simple Markdown syntax and generate formatted PDFs with custom styling, page breaks, and table of contents.",
+    "features": [
+      "Convert Markdown to PDF with one click",
+      "Custom page size and margins",
+      "Add table of contents automatically",
+      "Support for code syntax highlighting",
+      "Embed images and tables",
+      "Custom fonts and styling options",
+      "Header and footer support",
+      "High-quality print-ready output"
+    ],
+    "howToUse": {
+      "name": "How to Use the Markdown to PDF Converter",
+      "steps": [
+        {
+          "name": "Write or paste Markdown",
+          "text": "Enter your Markdown content in the editor. Include headings, lists, tables, code blocks, and images as needed."
+        },
+        {
+          "name": "Configure PDF settings",
+          "text": "Set page size (A4, Letter, etc.), margins, orientation, and whether to include a table of contents."
+        },
+        {
+          "name": "Preview the document",
+          "text": "Preview how your PDF will look before generating. Check that formatting, page breaks, and styling are correct."
+        },
+        {
+          "name": "Generate and download",
+          "text": "Click generate to create the PDF. Once processed, download the file directly to your device."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What page sizes are supported?",
+        "answer": "The tool supports standard page sizes including A4, Letter, Legal, and A3. You can also set custom dimensions if needed."
+      },
+      {
+        "question": "Can I add a cover page or header?",
+        "answer": "Yes, you can configure headers, footers, page numbers, and even add a cover page with custom title and author information."
+      },
+      {
+        "question": "Are images and tables supported?",
+        "answer": "Yes, all Markdown elements including images, tables, code blocks, and blockquotes are properly formatted in the PDF output."
+      },
+      {
+        "question": "Is this converter free?",
+        "answer": "Yes, the Markdown to PDF converter is completely free with no watermarks or feature limitations."
+      }
+    ],
+    "seoDescription": "Convert Markdown to PDF online for free. Create professional, print-ready PDF documents from MD files with custom styling and TOC support."
+  },
+  "url-encoder-decoder": {
+    "whatItIs": "The URL Encoder Decoder converts special characters in URLs to their percent-encoded format and decodes encoded URLs back to readable text. Essential for web developers working with query parameters, API requests, and URL formatting.",
+    "features": [
+      "Encode URLs for safe web transmission",
+      "Decode percent-encoded URLs",
+      "Batch encode/decode multiple URLs",
+      "Support for query parameter encoding",
+      "Handle special characters and spaces",
+      "One-click copy to clipboard",
+      "Visual encoding breakdown",
+      "Privacy-focused local processing"
+    ],
+    "howToUse": {
+      "name": "How to Use the URL Encoder Decoder",
+      "steps": [
+        {
+          "name": "Paste your URL",
+          "text": "Enter the URL you want to encode or decode in the input field. This can be a full URL, query string, or just the part you need processed."
+        },
+        {
+          "name": "Choose operation",
+          "text": "Select whether you want to encode the URL (convert special characters) or decode it (restore readable format)."
+        },
+        {
+          "name": "Process the URL",
+          "text": "Click the encode or decode button. The result appears instantly in the output area with a breakdown of changed characters."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Copy the processed URL to your clipboard with one click. Use it in your code, links, or API requests."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "When should I encode a URL?",
+        "answer": "Encode URLs when including special characters, spaces, or non-ASCII characters in web addresses or query parameters. This ensures the URL is valid and safe to use in links and API calls."
+      },
+      {
+        "question": "What characters get encoded?",
+        "answer": "Special characters like spaces, ampersands, question marks, and non-ASCII characters are converted to percent-encoded format (e.g., space becomes %20)."
+      },
+      {
+        "question": "Can I encode query parameters separately?",
+        "answer": "Yes, the tool can encode just the query string portion of a URL, which is useful when building API requests with multiple parameters."
+      },
+      {
+        "question": "Is this tool free?",
+        "answer": "Yes, the URL Encoder Decoder is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Encode and decode URLs online for free. Convert special characters to percent-encoded format for safe web use. Batch processing available."
+  }
+}

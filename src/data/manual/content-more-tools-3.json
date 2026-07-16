@@ -1,0 +1,160 @@
+{
+  "dns-lookup": {
+    "whatItIs": "The DNS Lookup tool queries DNS records for any domain name including A, AAAA, MX, TXT, CNAME, and NS records. Troubleshoot email delivery, verify domain configuration, and debug website connectivity issues.",
+    "features": [
+      "Query all DNS record types",
+      "Show A, AAAA, MX, TXT, CNAME records",
+      "Check nameservers",
+      "Propagation status checker",
+      "Batch lookup multiple domains",
+      "Export DNS records",
+      "Trace DNS propagation",
+      "Free unlimited lookups"
+    ],
+    "howToUse": {
+      "name": "How to Use the DNS Lookup Tool",
+      "steps": [
+        {
+          "name": "Enter domain name",
+          "text": "Type the domain name you want to look up. Enter without www or https:// for accurate DNS queries."
+        },
+        {
+          "name": "Select record type",
+          "text": "Choose the DNS record type to query: A (IPv4), AAAA (IPv6), MX (mail), TXT (text), CNAME (alias), or NS (nameservers). Select All to see all records."
+        },
+        {
+          "name": "Lookup DNS records",
+          "text": "Click lookup to query the DNS records. The tool shows the results with values, TTL, and record type."
+        },
+        {
+          "name": "Analyze results",
+          "text": "Review the DNS configuration. Check for correct A records, MX setup for email, SPF/TXT records, and proper nameservers."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are DNS records?",
+        "answer": "DNS records are entries in the Domain Name System that map domain names to IP addresses and other resources. Common types include A (IPv4 address), MX (mail server), TXT (text records), and CNAME (alias)."
+      },
+      {
+        "question": "Why would I need to check DNS records?",
+        "answer": "DNS lookups help troubleshoot website connectivity, verify email configuration (MX and SPF records), check domain propagation, and debug DNS-related issues."
+      },
+      {
+        "question": "How long does DNS propagation take?",
+        "answer": "DNS propagation typically takes 24-48 hours globally, though many providers update within a few hours. The tool can check propagation status from multiple locations."
+      },
+      {
+        "question": "Is the DNS Lookup tool free?",
+        "answer": "Yes, looking up DNS records is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Lookup DNS records online for free. Query A, MX, TXT, CNAME, and NS records for any domain. Troubleshoot email and website configuration issues."
+  },
+  "reverse-dns-lookup": {
+    "whatItIs": "The Reverse DNS Lookup tool resolves IP addresses to domain names (PTR records). Identify which domains point to a specific IP address, troubleshoot email delivery issues, and investigate server configurations.",
+    "features": [
+      "Resolve IP to hostname",
+      "Check PTR records",
+      "Identify shared hosting",
+      "Batch reverse lookup",
+      "Show DNS propagation",
+      "Export results",
+      "Free unlimited lookups"
+    ],
+    "howToUse": {
+      "name": "How to Use the Reverse DNS Lookup Tool",
+      "steps": [
+        {
+          "name": "Enter IP address",
+          "text": "Type the IPv4 or IPv6 address you want to reverse lookup. You can also paste an IP from server logs or email headers."
+        },
+        {
+          "name": "Perform reverse lookup",
+          "text": "Click lookup to query the PTR record for the IP. The tool returns the associated hostname if one is configured."
+        },
+        {
+          "name": "Review results",
+          "text": "See the resolved hostname or note if no PTR record exists. Check if the hostname matches the expected domain."
+        },
+        {
+          "name": "Use for troubleshooting",
+          "text": "Use reverse DNS results to verify email server configuration, identify shared hosting environments, and investigate IP addresses."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is reverse DNS?",
+        "answer": "Reverse DNS resolves an IP address to a domain name using PTR records. It is commonly used for email server verification and identifying the hostname associated with an IP."
+      },
+      {
+        "question": "Why is reverse DNS important for email?",
+        "answer": "Many mail servers check reverse DNS to verify that the sending IP address matches the domain claiming to send email. Missing or mismatched PTR records can cause email delivery failures."
+      },
+      {
+        "question": "What if there is no PTR record?",
+        "answer": "If no PTR record exists, the reverse lookup returns no hostname. This is common for dynamic IPs but problematic for email servers which typically require valid PTR records."
+      },
+      {
+        "question": "Is the Reverse DNS Lookup free?",
+        "answer": "Yes, reverse DNS lookups are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Perform reverse DNS lookup online for free. Resolve IP addresses to hostnames. Troubleshoot email delivery and verify server configuration."
+  },
+  "blacklist-checker": {
+    "whatItIs": "The Blacklist Checker verifies if a domain, IP address, or email server is listed on email blacklists (DNSBLs). Essential for email deliverability, ensuring your emails reach inboxes instead of spam folders.",
+    "features": [
+      "Check IP against major blacklists",
+      "Check domain blacklists",
+      "Check email server reputation",
+      "Show blacklist status for each list",
+      "Explain listing reasons",
+      "Provide delisting instructions",
+      "Batch check multiple IPs",
+      "Free basic checking"
+    ],
+    "howToUse": {
+      "name": "How to Use the Blacklist Checker",
+      "steps": [
+        {
+          "name": "Enter IP or domain",
+          "text": "Type the IP address, domain, or mail server hostname you want to check. For email issues, check both your server IP and domain."
+        },
+        {
+          "name": "Check blacklists",
+          "text": "Click check to query multiple DNSBLs (DNS-based Blackhole Lists). The tool checks against major email blacklists simultaneously."
+        },
+        {
+          "name": "Review results",
+          "text": "See whether your IP or domain is listed on any blacklists. Check the listing reason and date if available."
+        },
+        {
+          "name": "Take action if needed",
+          "text": "If listed, follow the provided delisting instructions. Fix any underlying issues like spam complaints or open relays."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are email blacklists?",
+        "answer": "Email blacklists (DNSBLs) are lists of IP addresses and domains known to send spam. Mail servers check these lists and may reject or spam-filter emails from listed sources."
+      },
+      {
+        "question": "Why would my IP be blacklisted?",
+        "answer": "Common reasons include sending spam emails, having compromised accounts sending spam, being on a shared hosting IP with spammers, or having improper reverse DNS configuration."
+      },
+      {
+        "question": "How do I get delisted?",
+        "answer": "Each blacklist has its own delisting process. Usually, you need to fix the underlying issue (stop spam, secure accounts) and then request removal through the blacklist's website."
+      },
+      {
+        "question": "Is the Blacklist Checker free?",
+        "answer": "Basic blacklist checking is free with daily limits. Premium plans offer unlimited checks and monitoring alerts."
+      }
+    ],
+    "seoDescription": "Check email blacklists online for free. Verify if your IP or domain is listed on DNSBLs. Improve email deliverability and sender reputation."
+  }
+}

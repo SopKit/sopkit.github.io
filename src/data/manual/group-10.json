@@ -1,0 +1,33 @@
+{
+  "group": 10,
+  "name": "image_1",
+  "tools": [
+    "svg-to-png-converter",
+    "webp-to-png-converter",
+    "ico-to-png-converter",
+    "jpg-to-png-converter",
+    "png-to-jpg-converter",
+    "svg-to-jpg-converter",
+    "webp-to-jpg-converter",
+    "favicon-generator-pro",
+    "image-metadata-remover",
+    "image-color-picker-pro",
+    "compress-image-to-exact-kb",
+    "resize-image-cm-mm-inch",
+    "passport-photo-maker-india",
+    "aadhaar-pan-photo-resizer",
+    "background-remover",
+    "base64-to-image-converter",
+    "convert-to-ico",
+    "exif-reader",
+    "favicon-generator",
+    "flip-image",
+    "image-compressor",
+    "image-converter",
+    "image-cropper",
+    "circular-image-crop",
+    "image-watermark",
+    "gif-generator",
+    "image-enlarger"
+  ]
+}

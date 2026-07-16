@@ -1,0 +1,30 @@
+{
+  "group": 12,
+  "name": "calculators_1",
+  "tools": [
+    "roman-numerals-converter",
+    "number-to-words-converter",
+    "date-difference-calculator",
+    "working-days-calculator",
+    "gpa-to-4-scale-converter",
+    "rd-calculator",
+    "gratuity-calculator",
+    "epf-calculator",
+    "invoice-generator-india",
+    "gst-calculator-india",
+    "emi-calculator",
+    "sip-calculator",
+    "fd-calculator-india",
+    "salary-calculator-india",
+    "cgpa-to-percentage-calculator-india",
+    "sgpa-to-cgpa-calculator",
+    "attendance-shortage-calculator",
+    "marks-needed-calculator",
+    "75-attendance-calculator",
+    "sgpa-calculator",
+    "cgpa-calculator",
+    "cgpa-to-percentage-calculator",
+    "required-marks-calculator",
+    "brick-calculator"
+  ]
+}

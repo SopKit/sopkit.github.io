@@ -1,0 +1,267 @@
+{
+  "mortgage-calculator": {
+    "whatItIs": "The Mortgage Calculator computes monthly payments, total interest, and amortization schedules for home loans. Enter loan amount, interest rate, and term to see detailed payment breakdowns and understand the true cost of your mortgage.",
+    "features": [
+      "Calculate monthly mortgage payments",
+      "Show total interest and total cost",
+      "Generate amortization schedule",
+      "Support for fixed and adjustable rates",
+      "Include property tax and insurance",
+      "Compare different loan terms",
+      "Show principal vs interest breakdown",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the Mortgage Calculator",
+      "steps": [
+        {
+          "name": "Enter loan details",
+          "text": "Input the home price, down payment amount, loan amount, and interest rate. You can also enter property tax, insurance, and HOA fees."
+        },
+        {
+          "name": "Set loan term",
+          "text": "Choose the loan term in years: 15, 20, 30, or custom. Shorter terms have higher payments but less total interest."
+        },
+        {
+          "name": "Calculate payments",
+          "text": "Click calculate to see your monthly payment breakdown. The tool shows principal, interest, tax, insurance, and total monthly cost."
+        },
+        {
+          "name": "Review amortization",
+          "text": "View the full amortization schedule showing how each payment splits between principal and interest over the loan term."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is included in the monthly payment?",
+        "answer": "The calculator shows principal and interest (P&I), plus optional property tax, homeowner's insurance, and PMI if applicable. This gives you the true total monthly cost."
+      },
+      {
+        "question": "How accurate are the calculations?",
+        "answer": "The calculator uses standard mortgage amortization formulas. Actual payments may vary slightly based on lender fees, exact closing dates, and specific loan terms."
+      },
+      {
+        "question": "Can I compare different loan terms?",
+        "answer": "Yes, run multiple calculations with different terms and rates to compare total costs and monthly payments side by side."
+      },
+      {
+        "question": "Is the Mortgage Calculator free?",
+        "answer": "Yes, mortgage calculations are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate mortgage payments online for free. Compute monthly home loan payments with amortization schedule. Compare loan terms and interest costs."
+  },
+  "loan-calculator": {
+    "whatItIs": "The Loan Calculator computes monthly payments, total interest, and payoff timelines for personal loans, auto loans, student loans, and other installment loans. Compare different loan terms and interest rates to make informed borrowing decisions.",
+    "features": [
+      "Calculate monthly loan payments",
+      "Show total interest and total cost",
+      "Generate amortization schedule",
+      "Support for various loan types",
+      "Compare multiple loan offers",
+      "Calculate payoff timeline",
+      "Show extra payment impact",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the Loan Calculator",
+      "steps": [
+        {
+          "name": "Enter loan amount",
+          "text": "Input the total loan amount you are borrowing. This is the principal before interest."
+        },
+        {
+          "name": "Set interest rate and term",
+          "text": "Enter the annual interest rate (APR) and the loan term in months or years. Use the rate offered by your lender."
+        },
+        {
+          "name": "Calculate payments",
+          "text": "Click calculate to see your monthly payment amount, total interest paid, and total cost of the loan."
+        },
+        {
+          "name": "Explore scenarios",
+          "text": "Adjust the loan amount, rate, or term to see how changes affect your monthly payment and total interest."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What types of loans can I calculate?",
+        "answer": "The calculator works for personal loans, auto loans, student loans, home equity loans, and any fixed-interest installment loan."
+      },
+      {
+        "question": "Does it show the amortization schedule?",
+        "answer": "Yes, the tool generates a detailed amortization schedule showing how each payment splits between principal and interest over the loan term."
+      },
+      {
+        "question": "Can I see the impact of extra payments?",
+        "answer": "Yes, you can enter extra monthly or one-time payments to see how they reduce the loan term and total interest paid."
+      },
+      {
+        "question": "Is the Loan Calculator free?",
+        "answer": "Yes, all loan calculations are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate loan payments online for free. Compute monthly payments, total interest, and amortization for personal, auto, and student loans."
+  },
+  "home-loan-eligibility-calculator": {
+    "whatItIs": "The Home Loan Eligibility Calculator estimates how much you can borrow for a home purchase based on your income, expenses, credit profile, and down payment. Helps you understand your buying power before applying for a mortgage.",
+    "features": [
+      "Estimate maximum home loan amount",
+      "Calculate based on income and expenses",
+      "Show recommended down payment",
+      "Estimate monthly EMI affordability",
+      "Consider multiple income sources",
+      "Factor in existing debts",
+      "Show eligibility for different tenures",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the Home Loan Eligibility Calculator",
+      "steps": [
+        {
+          "name": "Enter your income",
+          "text": "Input your monthly or annual income. Include all sources of income like salary, rental income, and business income."
+        },
+        {
+          "name": "Enter existing expenses",
+          "text": "List your current EMIs, credit card payments, and other monthly obligations. This helps assess your debt-to-income ratio."
+        },
+        {
+          "name": "Set interest rate and tenure",
+          "text": "Enter the expected interest rate and preferred loan tenure. Use current market rates for realistic estimates."
+        },
+        {
+          "name": "Check eligibility",
+          "text": "Click calculate to see your estimated loan eligibility, maximum affordable EMI, and recommended down payment."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How is home loan eligibility calculated?",
+        "answer": "Eibility is based on your income, existing debts, credit score, and the lender's criteria. The calculator uses standard debt-to-income ratio guidelines."
+      },
+      {
+        "question": "Does this guarantee loan approval?",
+        "answer": "No, this is an estimate only. Actual loan approval depends on the lender's policies, your credit score, documentation, and other factors."
+      },
+      {
+        "question": "What down payment should I plan for?",
+        "answer": "The tool suggests a recommended down payment based on your eligibility and typical lender requirements. In many cases, 10-20% is standard."
+      },
+      {
+        "question": "Is the Home Loan Eligibility Calculator free?",
+        "answer": "Yes, checking your home loan eligibility is completely free with unlimited calculations."
+      }
+    ],
+    "seoDescription": "Check home loan eligibility online for free. Estimate how much you can borrow based on income and expenses. Plan your home purchase budget."
+  },
+  "salary-calculator-india": {
+    "whatItIs": "The India Salary Calculator computes take-home pay, income tax, PF deductions, and net salary based on the Indian salary structure. Calculate CTC breakdown, in-hand salary, and tax liabilities under both old and new tax regimes.",
+    "features": [
+      "Calculate in-hand salary from CTC",
+      "Show income tax under old and new regimes",
+      "Compute PF, ESIC, and professional tax",
+      "Breakdown CTC components",
+      "Compare old vs new tax regime",
+      "Show HRA exemption calculation",
+      "Support for different salary structures",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the India Salary Calculator",
+      "steps": [
+        {
+          "name": "Enter your CTC",
+          "text": "Input your annual Cost to Company (CTC) amount. You can also enter individual salary components if known."
+        },
+        {
+          "name": "Set salary components",
+          "text": "Enter basic salary, HRA, special allowances, and other components. The tool can auto-calculate based on standard structures."
+        },
+        {
+          "name": "Select tax regime",
+          "text": "Choose between the old tax regime with deductions or the new tax regime with lower rates. Compare both to see which saves more."
+        },
+        {
+          "name": "View salary breakdown",
+          "text": "See your monthly in-hand salary, annual tax liability, PF contributions, and complete CTC breakdown."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the difference between CTC and in-hand salary?",
+        "answer": "CTC (Cost to Company) is the total amount spent on you, including PF, gratuity, and other benefits. In-hand salary is what you actually receive after all deductions."
+      },
+      {
+        "question": "Should I choose old or new tax regime?",
+        "answer": "The new regime has lower rates but fewer deductions. The old regime has higher rates but allows deductions like 80C, HRA, and home loan interest. Use the calculator to compare both."
+      },
+      {
+        "question": "Does it calculate HRA exemption?",
+        "answer": "Yes, the tool calculates HRA exemption based on your rent payments, basic salary, and HRA received, showing the tax savings from HRA."
+      },
+      {
+        "question": "Is the India Salary Calculator free?",
+        "answer": "Yes, all salary and tax calculations are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate in-hand salary from CTC online for free. Indian salary calculator with income tax, PF, and HRA under old and new tax regimes."
+  },
+  "gst-calculator-india": {
+    "whatItIs": "The India GST Calculator computes Goods and Services Tax for various tax slabs and categories. Calculate GST amount, total price including GST, and reverse GST from total amounts for business and personal use.",
+    "features": [
+      "Calculate GST for all tax slabs",
+      "Show CGST, SGST, and IGST",
+      "Reverse GST calculation",
+      "Support for all GST categories",
+      "Generate GST invoice summaries",
+      "Works for interstate and intrastate",
+      "Copy calculations easily",
+      "Free unlimited usage"
+    ],
+    "howToUse": {
+      "name": "How to Use the India GST Calculator",
+      "steps": [
+        {
+          "name": "Enter amount",
+          "text": "Input the base amount before GST. Enter the original price of goods or services."
+        },
+        {
+          "name": "Select GST rate",
+          "text": "Choose the applicable GST slab: 5%, 12%, 18%, 28%, or custom rate. Select whether it's CGST+SGST or IGST."
+        },
+        {
+          "name": "Calculate GST",
+          "text": "Click calculate to see the GST amount and total price including tax. The tool breaks down CGST, SGST, and IGST as applicable."
+        },
+        {
+          "name": "Use the breakdown",
+          "text": "Copy the GST breakdown for invoices, receipts, or accounting records. Use reverse mode to find the base price from a GST-inclusive total."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What GST slabs are supported?",
+        "answer": "The calculator supports all GST rates including 0%, 5%, 12%, 18%, and 28%. Custom rates can also be entered for special categories."
+      },
+      {
+        "question": "What is the difference between CGST, SGST, and IGST?",
+        "answer": "CGST and SGST apply to intrastate transactions (within the same state). IGST applies to interstate transactions. The tool automatically calculates based on your selection."
+      },
+      {
+        "question": "Can I calculate GST in reverse?",
+        "answer": "Yes, enter the total GST-inclusive amount to find the original price and the GST amount. This is useful when you only have the final billed amount."
+      },
+      {
+        "question": "Is the India GST Calculator free?",
+        "answer": "Yes, all GST calculations are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate GST online for free. Compute CGST, SGST, IGST for all tax slabs. Reverse GST calculator for invoices and accounting. India GST tool."
+  }
+}

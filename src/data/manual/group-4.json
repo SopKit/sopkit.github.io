@@ -1,0 +1,32 @@
+{
+  "group": 4,
+  "name": "video_1",
+  "tools": [
+    "video-tools",
+    "video-converter",
+    "video-editor",
+    "akillitv-video-downloader",
+    "all-downloaders",
+    "bandcamp-video-downloader",
+    "bilibili-video-downloader",
+    "bitchute-video-downloader",
+    "blogger-video-downloader",
+    "blutv-video-downloader",
+    "buzzfeed-video-downloader",
+    "capcut-video-downloader",
+    "chingari-video-downloader",
+    "dailymotion-video-downloader",
+    "douyin-video-downloader",
+    "downloaders",
+    "espn-video-downloader",
+    "facebook-story-downloader",
+    "facebook-video-downloader",
+    "fb-video-saver",
+    "febspot-video-downloader",
+    "flickr-video-downloader",
+    "ifunny-video-downloader",
+    "ig-highlights-saver",
+    "imdb-video-downloader",
+    "imgur-video-downloader"
+  ]
+}

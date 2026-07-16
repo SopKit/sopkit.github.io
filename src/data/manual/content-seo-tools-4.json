@@ -1,0 +1,266 @@
+{
+  "ssl-certificate-checker": {
+    "whatItIs": "The SSL Certificate Checker verifies SSL/TLS certificates for websites, checking validity, expiration, issuer, and security configuration. Ensure your website has a valid, properly configured SSL certificate for HTTPS security.",
+    "features": [
+      "Check SSL certificate validity",
+      "Show certificate expiration date",
+      "Verify certificate chain",
+      "Check encryption strength",
+      "Detect certificate issues",
+      "Show issuer and SANs",
+      "Export certificate details",
+      "Free unlimited checks"
+    ],
+    "howToUse": {
+      "name": "How to Use the SSL Certificate Checker",
+      "steps": [
+        {
+          "name": "Enter website URL",
+          "text": "Type the domain name of the website. Enter without https:// - the tool connects directly to analyze the SSL configuration."
+        },
+        {
+          "name": "Check SSL certificate",
+          "text": "Click check to retrieve and analyze the SSL certificate. The tool connects to the server and examines the certificate chain."
+        },
+        {
+          "name": "Review certificate details",
+          "text": "See the certificate issuer, validity dates, domain names (SANs), encryption strength, and any detected issues or warnings."
+        },
+        {
+          "name": "Take action",
+          "text": "Renew certificates approaching expiration. Fix any detected issues like weak encryption or incomplete chains."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What information does the SSL checker show?",
+        "answer": "The tool shows certificate issuer, validity period, domains covered (SANs), encryption protocol, cipher strength, and certificate chain status."
+      },
+      {
+        "question": "How can I tell if my SSL is secure?",
+        "answer": "A secure SSL certificate is valid, not expired, issued by a trusted CA, uses strong encryption (TLS 1.2+), and covers all necessary domain names."
+      },
+      {
+        "question": "What happens if my SSL expires?",
+        "answer": "Expired SSL certificates cause browser security warnings, loss of user trust, and potential SEO ranking drops. Renew certificates before expiration."
+      },
+      {
+        "question": "Is the SSL Certificate Checker free?",
+        "answer": "Yes, checking SSL certificates is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Check SSL certificates online for free. Verify HTTPS certificate validity, expiration, and security. Ensure proper SSL configuration for your website."
+  },
+  "port-scanner": {
+    "whatItIs": "The Port Scanner checks open ports on a server or website to identify running services and potential security vulnerabilities. Essential for network administrators, security professionals, and system administrators.",
+    "features": [
+      "Scan common ports",
+      "Identify open and closed ports",
+      "Detect running services",
+      "Show port status and banners",
+      "Scan multiple ports",
+      "Export scan results",
+      "Identify security risks",
+      "Free basic scanning"
+    ],
+    "howToUse": {
+      "name": "How to Use the Port Scanner",
+      "steps": [
+        {
+          "name": "Enter hostname or IP",
+          "text": "Type the domain name or IP address of the server you want to scan. You can scan your own servers for security audits."
+        },
+        {
+          "name": "Select port range",
+          "text": "Choose preset port ranges (top 100, top 1000, or custom). Select common ports for web servers, databases, or SSH."
+        },
+        {
+          "name": "Start scan",
+          "text": "Click scan to check the selected ports. The tool attempts connections and reports which ports are open, closed, or filtered."
+        },
+        {
+          "name": "Review results",
+          "text": "See the scan results with port numbers, status, and detected services. Identify any unexpected open ports that may pose security risks."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What ports does it scan?",
+        "answer": "The tool can scan common ports including 21 (FTP), 22 (SSH), 80 (HTTP), 443 (HTTPS), 3306 (MySQL), 5432 (PostgreSQL), and many more."
+      },
+      {
+        "question": "Is port scanning legal?",
+        "answer": "Only scan ports on servers you own or have explicit permission to test. Unauthorized port scanning may violate computer fraud laws and terms of service."
+      },
+      {
+        "question": "What do the scan results mean?",
+        "answer": "Open ports indicate services listening for connections. Closed ports reject connections. Filtered ports are blocked by firewalls. Open ports should be secured and monitored."
+      },
+      {
+        "question": "Is the Port Scanner free?",
+        "answer": "Basic port scanning is free. Premium plans offer advanced scanning, custom port ranges, and detailed service detection."
+      }
+    ],
+    "seoDescription": "Scan ports online for free. Check open ports on servers for security audits. Identify running services and potential vulnerabilities."
+  },
+  "my-user-agent": {
+    "whatItIs": "The My User Agent tool reveals your browser's user agent string along with detailed browser, operating system, and device information. Essential for debugging, compatibility testing, and understanding how websites see your browser.",
+    "features": [
+      "Show your current user agent",
+      "Detect browser name and version",
+      "Identify operating system",
+      "Show device type",
+      "Detect rendering engine",
+      "Show screen resolution",
+      "Copy user agent string",
+      "Free unlimited checks"
+    ],
+    "howToUse": {
+      "name": "How to Use the My User Agent Tool",
+      "steps": [
+        {
+          "name": "Visit the tool page",
+          "text": "Open the My User Agent tool. Your browser information is detected automatically without any input needed."
+        },
+        {
+          "name": "View your user agent",
+          "text": "See your complete user agent string and parsed components: browser name and version, operating system, device type, and engine."
+        },
+        {
+          "name": "Check compatibility",
+          "text": "Use the information to debug website compatibility issues. Check if your browser supports the features a website requires."
+        },
+        {
+          "name": "Copy user agent",
+          "text": "Copy your user agent string for testing purposes or to provide when reporting browser-specific bugs."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a user agent?",
+        "answer": "A user agent is a string sent by your browser to websites identifying the browser type, version, operating system, and device. Websites use this to deliver compatible content."
+      },
+      {
+        "question": "Why would I need to know my user agent?",
+        "answer": "Knowing your user agent helps debug website compatibility issues, verify browser features, test responsive designs, and report bugs with accurate system information."
+      },
+      {
+        "question": "Can I spoof my user agent?",
+        "answer": "Yes, browser developer tools and extensions allow you to override your user agent string for testing. This tool shows your actual user agent for comparison."
+      },
+      {
+        "question": "Is the My User Agent tool free?",
+        "answer": "Yes, checking your user agent and browser information is completely free."
+      }
+    ],
+    "seoDescription": "Check your user agent online for free. Detect browser, OS, and device information. Debug browser compatibility issues with detailed user agent data."
+  },
+  "whois-lookup": {
+    "whatItIs": "The Whois Lookup tool retrieves registration information for domain names including owner details, registrar, creation and expiration dates, and name servers. Essential for domain research, contact verification, and intellectual property protection.",
+    "features": [
+      "Lookup domain registration details",
+      "Show registrar and registration dates",
+      "Display name servers",
+      "Check domain availability",
+      "Show domain status",
+      "Batch lookup multiple domains",
+      "Export domain data",
+      "Free unlimited lookups"
+    ],
+    "howToUse": {
+      "name": "How to Use the Whois Lookup Tool",
+      "steps": [
+        {
+          "name": "Enter domain name",
+          "text": "Type the domain name you want to look up without www or https://. Use just the domain like 'example.com'."
+        },
+        {
+          "name": "Perform lookup",
+          "text": "Click lookup to query the WHOIS database. The tool retrieves registration information from the domain's registry."
+        },
+        {
+          "name": "Review domain details",
+          "text": "See the registrar, registration and expiration dates, name servers, domain status, and registrant information if publicly available."
+        },
+        {
+          "name": "Use the information",
+          "text": "Use the WHOIS data for domain acquisition research, contacting domain owners, verifying ownership, or checking domain age for SEO."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What information does WHOIS show?",
+        "answer": "WHOIS shows registrar name, registration and expiration dates, name servers, domain status, and registrant contact details. Some data may be redacted for privacy (GDPR)."
+      },
+      {
+        "question": "Is WHOIS data always accurate?",
+        "answer": "WHOIS accuracy depends on registrars enforcing accurate data entry. Privacy services may redact personal information. Use WHOIS as a starting point for domain research."
+      },
+      {
+        "question": "Can I look up expired or deleted domains?",
+        "answer": "Expired domains may still show WHOIS data during the grace period. After deletion, WHOIS information may no longer be available until the domain is re-registered."
+      },
+      {
+        "question": "Is the Whois Lookup tool free?",
+        "answer": "Yes, WHOIS lookups are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Lookup WHOIS data for domains online for free. Check domain registration details, owner info, expiration dates, and name servers. Free domain research tool."
+  },
+  "domain-age-checker": {
+    "whatItIs": "The Domain Age Checker determines the age and creation date of any domain name. Domain age is an important SEO factor, and this tool helps you check how long a website has been established.",
+    "features": [
+      "Check domain creation date",
+      "Calculate domain age in years",
+      "Show registration and expiration",
+      "Check multiple domains",
+      "Show domain history",
+      "Export domain data",
+      "Free unlimited checks"
+    ],
+    "howToUse": {
+      "name": "How to Use the Domain Age Checker",
+      "steps": [
+        {
+          "name": "Enter domain name",
+          "text": "Type the domain name you want to check. Enter without www or https:// for accurate results."
+        },
+        {
+          "name": "Check domain age",
+          "text": "Click check to query the domain registration data. The tool retrieves creation date and calculates the current age."
+        },
+        {
+          "name": "Review domain details",
+          "text": "See the domain creation date, age in years and days, registrar, expiration date, and name servers."
+        },
+        {
+          "name": "Use the information",
+          "text": "Use domain age data for SEO analysis, competitor research, and domain acquisition decisions. Older domains may have authority advantages."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why does domain age matter for SEO?",
+        "answer": "Older domains may have established trust and authority with search engines. However, domain age is just one factor - content quality and backlinks are more important for rankings."
+      },
+      {
+        "question": "Can I check multiple domains at once?",
+        "answer": "Yes, batch domain age checking is supported. Enter multiple domains to check their ages in a single operation."
+      },
+      {
+        "question": "How accurate is the domain age data?",
+        "answer": "The tool uses WHOIS data which is generally accurate. However, domain transfers between registrars may update the creation date in some cases."
+      },
+      {
+        "question": "Is the Domain Age Checker free?",
+        "answer": "Yes, checking domain age is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Check domain age online for free. Find domain creation date and registration history. SEO research tool for analyzing website authority and age."
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "url-encode": {
+    "whatItIs": "The URL Encode tool converts special characters in URLs to their percent-encoded format. Essential for web developers and API users who need to include spaces, symbols, and non-ASCII characters in valid web addresses.",
+    "features": [
+      "Encode URLs for safe web use",
+      "Encode query parameters individually",
+      "Support for special characters and spaces",
+      "Preserve URL structure",
+      "Show encoded vs original comparison",
+      "Batch encode multiple URLs",
+      "Copy encoded URLs with one click",
+      "Free unlimited encoding"
+    ],
+    "howToUse": {
+      "name": "How to Use the URL Encode Tool",
+      "steps": [
+        {
+          "name": "Enter your URL or text",
+          "text": "Type or paste the URL or text containing special characters that need encoding. You can also encode just query parameters."
+        },
+        {
+          "name": "Encode the content",
+          "text": "Click the encode button. The tool converts special characters to their percent-encoded equivalents (e.g., spaces become %20)."
+        },
+        {
+          "name": "View the encoded result",
+          "text": "See the encoded URL with a comparison to the original. Non-ASCII characters are properly encoded for web use."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the encoded URL to your clipboard. Use it in links, API requests, or HTML forms where special characters would cause issues."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "When do I need to URL encode?",
+        "answer": "URL encoding is needed when including special characters like spaces, ampersands, question marks, or non-ASCII characters in URLs. This ensures the URL is valid and safe to use."
+      },
+      {
+        "question": "What characters get encoded?",
+        "answer": "Characters like space, !, #, $, %, &, *, and non-ASCII characters are converted to percent-encoded format. Alphanumeric characters and -_.~ remain unencoded."
+      },
+      {
+        "question": "Can I encode just query parameters?",
+        "answer": "Yes, the tool can encode just the query string portion of a URL, which is useful when building API requests with multiple parameters."
+      },
+      {
+        "question": "Is URL encoding free?",
+        "answer": "Yes, URL encoding is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "URL encode text and special characters online for free. Convert URLs to percent-encoded format for safe web use. Batch encoding supported."
+  },
+  "url-decode": {
+    "whatItIs": "The URL Decode tool converts percent-encoded URLs back to their readable, original format. Decode encoded URLs, query strings, and URI components to understand what they link to or extract original data.",
+    "features": [
+      "Decode percent-encoded URLs",
+      "Decode URL query parameters",
+      "Support for UTF-8 characters",
+      "Handle special character restoration",
+      "Batch decode multiple URLs",
+      "Show decoded vs original comparison",
+      "Copy decoded URLs with one click",
+      "Free unlimited decoding"
+    ],
+    "howToUse": {
+      "name": "How to Use the URL Decode Tool",
+      "steps": [
+        {
+          "name": "Paste encoded URL",
+          "text": "Copy and paste the percent-encoded URL or query string you want to decode. The tool handles all standard encoding formats."
+        },
+        {
+          "name": "Decode the URL",
+          "text": "Click the decode button. The tool converts all percent-encoded sequences back to their original characters."
+        },
+        {
+          "name": "View the readable URL",
+          "text": "See the decoded URL in its original, readable form. Spaces, special characters, and Unicode characters are restored."
+        },
+        {
+          "name": "Copy the decoded URL",
+          "text": "Click to copy the decoded URL. Use it to understand where a link goes or to extract original data from encoded strings."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why would I need to decode a URL?",
+        "answer": "URL decoding is useful when you receive encoded URLs from emails, logs, or API responses and need to understand the actual destination or extract the original data."
+      },
+      {
+        "question": "Does it handle double-encoded URLs?",
+        "answer": "The tool decodes standard percent-encoded URLs. For double-encoded URLs, run the decode operation twice or use the batch decode feature."
+      },
+      {
+        "question": "Can I decode query parameters separately?",
+        "answer": "Yes, you can paste just the query string portion to decode individual parameters without affecting the base URL."
+      },
+      {
+        "question": "Is URL decoding free?",
+        "answer": "Yes, decoding URLs is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Decode URL encoded strings online for free. Convert percent-encoded URLs back to readable format. Batch decode query parameters and URIs."
+  },
+  "password-generator": {
+    "whatItIs": "The Password Generator creates strong, secure passwords with customizable length, character types, and complexity. Generate passwords that meet website requirements for uppercase, lowercase, numbers, and symbols.",
+    "features": [
+      "Generate strong random passwords",
+      "Customizable length from 8 to 128 characters",
+      "Include or exclude character types",
+      "Exclude ambiguous characters",
+      "Generate multiple passwords at once",
+      "Show password strength indicator",
+      "Copy passwords with one click",
+      "Privacy-focused local generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Password Generator",
+      "steps": [
+        {
+          "name": "Set password options",
+          "text": "Choose the password length and select which character types to include: uppercase, lowercase, numbers, and symbols. Adjust options to meet site requirements."
+        },
+        {
+          "name": "Generate passwords",
+          "text": "Click generate to create one or more random passwords. The tool uses cryptographically secure random generation where available."
+        },
+        {
+          "name": "Check strength",
+          "text": "Review the password strength indicator showing entropy and estimated crack time. Stronger passwords have higher entropy scores."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Click to copy your chosen password. Store it securely in a password manager for safekeeping."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How long should my password be?",
+        "answer": "Use at least 12 characters for important accounts. Longer passwords (16+ characters) are significantly more secure. The tool supports up to 128 characters."
+      },
+      {
+        "question": "Are generated passwords truly random?",
+        "answer": "The tool uses cryptographically secure random number generation where supported by your browser, ensuring passwords are unpredictable and unique."
+      },
+      {
+        "question": "Can I generate passwords without symbols?",
+        "answer": "Yes, you can customize which character types to include. Some websites restrict special characters, so you can generate compatible passwords."
+      },
+      {
+        "question": "Is the Password Generator free?",
+        "answer": "Yes, generating secure passwords is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate strong secure passwords online for free. Create random passwords with custom length and character types. Password strength checker included."
+  },
+  "word-counter": {
+    "whatItIs": "The Word Counter counts words, characters, sentences, and paragraphs in your text instantly. Shows reading time, keyword density, and character statistics for writers, students, and content creators optimizing their content.",
+    "features": [
+      "Count words and characters",
+      "Show sentence and paragraph count",
+      "Calculate reading time",
+      "Keyword density analysis",
+      "Count without spaces option",
+      "Real-time counting as you type",
+      "Show character frequency",
+      "Free unlimited counting"
+    ],
+    "howToUse": {
+      "name": "How to Use the Word Counter",
+      "steps": [
+        {
+          "name": "Paste or type your text",
+          "text": "Copy and paste your text into the input area or type directly. The counter updates in real-time as you type or paste."
+        },
+        {
+          "name": "View statistics",
+          "text": "See word count, character count, sentence count, paragraph count, and estimated reading time displayed prominently."
+        },
+        {
+          "name": "Analyze keywords",
+          "text": "Check keyword density and frequency. The tool shows which words appear most often and their percentage of total words."
+        },
+        {
+          "name": "Use the results",
+          "text": "Use the statistics for content planning, meeting word count requirements, or optimizing your writing for readability."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it count words in different languages?",
+        "answer": "Yes, the word counter supports multiple languages including English, Hindi, Spanish, French, and more. Word boundaries are detected appropriately for each language."
+      },
+      {
+        "question": "What is reading time based on?",
+        "answer": "Reading time is estimated based on average reading speed of 200-250 words per minute for adults. The tool shows both silent reading and aloud reading estimates."
+      },
+      {
+        "question": "Does it count spaces and punctuation?",
+        "answer": "The tool shows both character count with spaces and without spaces, plus separate counts for letters, numbers, and punctuation."
+      },
+      {
+        "question": "Is the Word Counter free?",
+        "answer": "Yes, all word counting features are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Count words and characters online for free. Real-time word counter with reading time and keyword density analysis. Essential for writers and content creators."
+  }
+}

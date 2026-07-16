@@ -1,0 +1,426 @@
+{
+  "roman-numerals-converter": {
+    "whatItIs": "The Roman Numerals Converter transforms numbers between Roman numerals and Arabic numerals instantly. Supports numbers from 1 to 3999 with proper Roman numeral formatting rules. Essential for students, historians, designers, and puzzle enthusiasts.",
+    "features": [
+      "Convert Arabic numbers to Roman numerals",
+      "Convert Roman numerals to numbers",
+      "Support for numbers 1-3999",
+      "Follows standard Roman numeral rules",
+      "Real-time conversion as you type",
+      "Show conversion validation",
+      "Copy results with one click",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Roman Numerals Converter",
+      "steps": [
+        {
+          "name": "Enter a number or numeral",
+          "text": "Type an Arabic number (1-3999) or Roman numeral into the input field. The tool automatically detects which format you entered."
+        },
+        {
+          "name": "View the conversion",
+          "text": "See the converted result instantly. If you entered a number, you get the Roman numeral. If you entered Roman numerals, you get the Arabic number."
+        },
+        {
+          "name": "Validate Roman numerals",
+          "text": "Check if a Roman numeral is correctly formatted. The tool validates subtractive notation and proper ordering."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click to copy the converted value. Use it in documents, designs, tattoos, or educational materials."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the maximum number supported?",
+        "answer": "The converter supports numbers from 1 to 3999, which covers all standard Roman numerals using the common symbols (I, V, X, L, C, D, M)."
+      },
+      {
+        "question": "Does it validate Roman numeral formatting?",
+        "answer": "Yes, the tool validates Roman numerals for proper subtractive notation, correct symbol ordering, and valid character combinations."
+      },
+      {
+        "question": "Can I use Roman numerals for dates?",
+        "answer": "Yes, Roman numerals are commonly used for dates on monuments, documents, and copyrights. The converter handles the numbers used in dates correctly."
+      },
+      {
+        "question": "Is the Roman Numerals Converter free?",
+        "answer": "Yes, converting between Roman and Arabic numerals is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert Roman numerals to numbers and vice versa online for free. Support for numbers 1-3999 with proper validation. Quick conversion for students and designers."
+  },
+  "sip-calculator": {
+    "whatItIs": "The SIP Calculator estimates returns on Systematic Investment Plan (SIP) mutual fund investments in India. Calculate future value of monthly investments with compound interest and visualize your wealth growth over time.",
+    "features": [
+      "Calculate SIP returns with compound interest",
+      "Show total invested and total returns",
+      "Estimate wealth creation over time",
+      "Adjustable monthly investment amount",
+      "Variable expected return rate",
+      "Show year-by-year growth",
+      "Compare different SIP amounts",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the SIP Calculator",
+      "steps": [
+        {
+          "name": "Enter monthly investment",
+          "text": "Input the amount you plan to invest monthly through SIP. Start with an amount comfortable for your budget."
+        },
+        {
+          "name": "Set expected return rate",
+          "text": "Enter the expected annual return rate based on the mutual fund category. Equity funds typically show 10-15% historical returns."
+        },
+        {
+          "name": "Set investment period",
+          "text": "Choose how many years you plan to continue the SIP. Longer periods benefit more from compound growth."
+        },
+        {
+          "name": "View projected returns",
+          "text": "See your total investment, estimated returns, and final corpus value. Review the year-by-year breakdown to understand growth."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How accurate are SIP return estimates?",
+        "answer": "Estimates are based on the expected return rate you input. Actual returns depend on market conditions and fund performance. Past performance does not guarantee future results."
+      },
+      {
+        "question": "What return rate should I use?",
+        "answer": "Use historical averages as a guide. Equity funds have shown 10-15% annual returns over long periods. Debt funds typically show 6-9%. Be conservative with estimates."
+      },
+      {
+        "question": "Does it account for step-up SIP?",
+        "answer": "Basic SIP calculators assume constant monthly investments. Step-up SIPs where you increase investments annually may yield higher returns."
+      },
+      {
+        "question": "Is the SIP Calculator free?",
+        "answer": "Yes, calculating SIP returns is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate SIP returns online for free. Estimate mutual fund SIP investments with compound interest. Plan your wealth creation and retirement goals."
+  },
+  "emi-calculator": {
+    "whatItIs": "The EMI Calculator computes Equated Monthly Installments for loans including home loans, personal loans, car loans, and education loans. Shows principal and interest breakdown, total payment, and amortization schedule.",
+    "features": [
+      "Calculate EMI for all loan types",
+      "Show principal and interest breakdown",
+      "Generate amortization schedule",
+      "Support for prepayment calculations",
+      "Compare different loan scenarios",
+      "Show total interest and total cost",
+      "Adjustable interest rate and tenure",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the EMI Calculator",
+      "steps": [
+        {
+          "name": "Enter loan amount",
+          "text": "Input the principal loan amount you want to borrow. Enter the total loan amount sanctioned or expected."
+        },
+        {
+          "name": "Set interest rate and tenure",
+          "text": "Enter the annual interest rate and loan tenure in months or years. Use the rate offered by your lender."
+        },
+        {
+          "name": "Calculate EMI",
+          "text": "Click calculate to see your monthly EMI, total interest, and total amount payable. The tool shows the complete breakdown."
+        },
+        {
+          "name": "Review amortization",
+          "text": "View the amortization schedule showing how each EMI payment reduces principal over time. Check the impact of prepayments."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is EMI?",
+        "answer": "EMI (Equated Monthly Installment) is the fixed monthly payment made to repay a loan. It includes both principal repayment and interest, calculated using the amortization formula."
+      },
+      {
+        "question": "Does EMI change over time?",
+        "answer": "For fixed-rate loans, the EMI amount remains constant throughout the tenure, but the proportion of principal and interest changes. Early payments have more interest, later payments have more principal."
+      },
+      {
+        "question": "Can I see the effect of prepayment?",
+        "answer": "Yes, the calculator shows how extra payments reduce the loan tenure and total interest. Enter prepayment amounts to see the savings."
+      },
+      {
+        "question": "Is the EMI Calculator free?",
+        "answer": "Yes, calculating EMIs is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate EMI online for free. Compute monthly loan installments for home, personal, car, and education loans. View amortization schedule and interest breakdown."
+  },
+  "fd-calculator-india": {
+    "whatItIs": "The India FD Calculator computes maturity amount and interest earned on fixed deposits based on principal, tenure, and interest rate. Shows both simple and compound interest calculations for better investment planning.",
+    "features": [
+      "Calculate FD maturity amount",
+      "Show simple and compound interest",
+      "Compare different tenures and rates",
+      "Show interest payout options",
+      "Calculate for senior citizens",
+      "Generate year-by-year breakdown",
+      "Support for cumulative and non-cumulative FDs",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the India FD Calculator",
+      "steps": [
+        {
+          "name": "Enter deposit amount",
+          "text": "Input the principal amount you want to deposit. Enter the amount you are considering investing in a fixed deposit."
+        },
+        {
+          "name": "Set tenure and rate",
+          "text": "Choose the deposit tenure in months or years and enter the interest rate offered by the bank. Senior citizen rates can be selected if applicable."
+        },
+        {
+          "name": "Select compounding",
+          "text": "Choose the compounding frequency: monthly, quarterly, half-yearly, or yearly. This affects the final maturity amount."
+        },
+        {
+          "name": "View maturity details",
+          "text": "See the maturity amount, total interest earned, and effective yield. Compare with other investment options."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does compounding frequency affect returns?",
+        "answer": "Yes, more frequent compounding (monthly vs yearly) yields higher returns on the same FD. The difference is more noticeable for longer tenures and larger amounts."
+      },
+      {
+        "question": "Are senior citizen rates higher?",
+        "answer": "Yes, most banks offer 0.25% to 0.75% higher interest rates for senior citizens (60+ years). The calculator supports these special rates."
+      },
+      {
+        "question": "Does it show TDS deduction?",
+        "answer": "Basic FD calculations show gross returns. For TDS calculations, you may need to consult your bank as TDS rules depend on your total income and tax bracket."
+      },
+      {
+        "question": "Is the India FD Calculator free?",
+        "answer": "Yes, calculating fixed deposit returns is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate FD maturity amount online for free. India fixed deposit calculator with compound interest. Compare tenures and senior citizen rates."
+  },
+  "roman-numerals-to-number": {
+    "whatItIs": "The Roman Numerals to Number converter decodes Roman numeral strings into their Arabic number equivalents. Validate and convert any Roman numeral from I to MMMCMXCIX with proper error detection for invalid formats.",
+    "features": [
+      "Convert Roman numerals to Arabic numbers",
+      "Validate Roman numeral formatting",
+      "Detect invalid Roman numeral sequences",
+      "Support for numbers 1-3999",
+      "Real-time conversion as you type",
+      "Explain conversion steps",
+      "Copy result with one click",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Roman Numerals to Number Converter",
+      "steps": [
+        {
+          "name": "Enter Roman numeral",
+          "text": "Type or paste a Roman numeral like XIV, MCMXCIX, or MMXXIV. The tool validates the format as you type."
+        },
+        {
+          "name": "View the number",
+          "text": "See the Arabic number equivalent instantly. The tool shows the calculation process for learning purposes."
+        },
+        {
+          "name": "Check for errors",
+          "text": "If you enter an invalid Roman numeral, the tool identifies the issue and suggests corrections."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click to copy the converted number. Use it in calculations, documents, or educational materials."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the maximum Roman numeral supported?",
+        "answer": "The tool supports Roman numerals up to 3999 (MMMCMXCIX), which is the standard range using basic Roman numeral symbols."
+      },
+      {
+        "question": "Does it validate incorrect Roman numerals?",
+        "answer": "Yes, the tool detects common errors like repeated symbols more than 3 times, invalid subtractive pairs, and incorrect ordering."
+      },
+      {
+        "question": "Can I use lowercase Roman numerals?",
+        "answer": "Yes, the tool accepts both uppercase and lowercase Roman numerals and converts them correctly."
+      },
+      {
+        "question": "Is this converter free?",
+        "answer": "Yes, converting Roman numerals to numbers is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert Roman numerals to numbers online for free. Decode Roman numerals with validation and error detection. Instant conversion for numbers 1-3999."
+  },
+  "json-formatter": {
+    "whatItIs": "The JSON Formatter and Beautifier formats raw JSON data into clean, indented code with syntax highlighting. Also minifies JSON, validates structure, and detects errors for API responses, configuration files, and data debugging.",
+    "features": [
+      "Format and beautify JSON with indentation",
+      "Minify JSON to single line",
+      "Validate JSON syntax",
+      "Highlight syntax errors",
+      "Show JSON tree view",
+      "Copy formatted JSON",
+      "Download as file",
+      "Privacy-focused local processing"
+    ],
+    "howToUse": {
+      "name": "How to Use the JSON Formatter",
+      "steps": [
+        {
+          "name": "Paste JSON data",
+          "text": "Copy and paste raw JSON into the input area. The tool automatically detects the format and shows validation status."
+        },
+        {
+          "name": "Format or minify",
+          "text": "Click format to beautify the JSON with proper indentation, or minify to compress it to a single line for transmission."
+        },
+        {
+          "name": "View the result",
+          "text": "See the formatted JSON with syntax highlighting. If there are errors, the tool highlights the exact location and explains the issue."
+        },
+        {
+          "name": "Copy or download",
+          "text": "Copy the formatted JSON to clipboard or download it as a .json file for use in your projects."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it validate JSON syntax?",
+        "answer": "Yes, the tool validates your JSON against the standard syntax rules and shows detailed error messages with line numbers for quick debugging."
+      },
+      {
+        "question": "Can I view JSON as a tree?",
+        "answer": "Yes, the tree view displays JSON data in an expandable hierarchical format, making it easy to navigate large JSON structures."
+      },
+      {
+        "question": "Does it support JSON5 or comments?",
+        "answer": "The standard formatter validates strict JSON. Some implementations support JSON5 with comments and trailing commas for configuration files."
+      },
+      {
+        "question": "Is the JSON Formatter free?",
+        "answer": "Yes, formatting, validating, and minifying JSON is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Format and beautify JSON online for free. Validate JSON syntax, minify code, and view tree structure. Essential tool for API debugging and development."
+  },
+  "base64-encode": {
+    "whatItIs": "The Base64 Encode tool converts text, strings, or binary data into Base64 encoded format. Useful for embedding data in URLs, emails, HTML, and data URLs where special characters would cause issues.",
+    "features": [
+      "Encode text to Base64 format",
+      "Support for UTF-8 and binary data",
+      "Encode files to Base64",
+      "Decode Base64 back to text",
+      "Copy encoded output with one click",
+      "Show character count and size",
+      "Works offline in browser",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Base64 Encode Tool",
+      "steps": [
+        {
+          "name": "Enter your text or data",
+          "text": "Type or paste the text you want to encode. You can also upload a file to encode its contents as Base64."
+        },
+        {
+          "name": "Choose encoding mode",
+          "text": "Select standard Base64 encoding or URL-safe Base64 if you need to embed the result in a URL."
+        },
+        {
+          "name": "Encode the data",
+          "text": "Click encode to convert your input to Base64 format. The encoded string appears instantly in the output area."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Copy the Base64 string to your clipboard. Use it in data URLs, email attachments, or wherever encoded data is needed."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is Base64 encoding used for?",
+        "answer": "Base64 encoding converts binary data into ASCII text format for safe transmission in text-based systems. It is commonly used in data URLs, email attachments, and APIs."
+      },
+      {
+        "question": "Does Base64 encrypt my data?",
+        "answer": "No, Base64 is an encoding scheme, not encryption. The encoded data can be easily decoded back to the original. Use encryption for sensitive data security."
+      },
+      {
+        "question": "Can I encode images or files?",
+        "answer": "Yes, the tool supports encoding any file type to Base64. This is useful for creating data URLs for web embedding."
+      },
+      {
+        "question": "Is the Base64 Encode tool free?",
+        "answer": "Yes, Base64 encoding and decoding are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Encode text and files to Base64 online for free. Convert data to Base64 format for URLs, emails, and data embedding. URL-safe encoding available."
+  },
+  "base64-decode": {
+    "whatItIs": "The Base64 Decode tool converts Base64 encoded strings back to their original text or binary format. Decode Base64 data URLs, email attachments, and encoded API responses to view the original content.",
+    "features": [
+      "Decode Base64 to plain text",
+      "Support for standard and URL-safe Base64",
+      "Decode files from Base64",
+      "Handle UTF-8 and binary data",
+      "Validate Base64 format",
+      "Copy decoded output with one click",
+      "Works offline in browser",
+      "Free unlimited decoding"
+    ],
+    "howToUse": {
+      "name": "How to Use the Base64 Decode Tool",
+      "steps": [
+        {
+          "name": "Paste Base64 string",
+          "text": "Copy and paste the Base64 encoded string you want to decode. The tool detects standard and URL-safe Base64 automatically."
+        },
+        {
+          "name": "Choose decode mode",
+          "text": "Select standard Base64 or URL-safe Base64 decoding depending on the format of your input."
+        },
+        {
+          "name": "Decode the data",
+          "text": "Click decode to convert the Base64 string back to its original form. The decoded content appears in the output area."
+        },
+        {
+          "name": "Copy or download",
+          "text": "Copy the decoded text or download the decoded file. Use it for inspection, editing, or further processing."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What can I decode with this tool?",
+        "answer": "You can decode any valid Base64 string including text, JSON, XML, images encoded as data URLs, and binary files."
+      },
+      {
+        "question": "How do I know if my string is URL-safe Base64?",
+        "answer": "URL-safe Base64 uses - and _ instead of + and /. If your Base64 string is part of a URL, use URL-safe decoding."
+      },
+      {
+        "question": "Can I decode large files?",
+        "answer": "Yes, the tool can decode large Base64 strings. Very large files may take longer to process depending on your browser's memory limits."
+      },
+      {
+        "question": "Is the Base64 Decode tool free?",
+        "answer": "Yes, Base64 decoding is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Decode Base64 strings online for free. Convert Base64 encoded data back to text and files. Supports standard and URL-safe Base64 formats."
+  }
+}

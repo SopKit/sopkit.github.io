@@ -1,0 +1,267 @@
+{
+  "neet-photo-signature-resizer": {
+    "whatItIs": "The NEET Photo and Signature Resizer is designed specifically for NEET UG exam applicants. Resize and compress your photo and signature to meet the exact NTA specifications for the NEET application form.",
+    "features": [
+      "Resize NEET photos to required dimensions",
+      "Compress to NEET file size limits",
+      "Resize signatures to specified size",
+      "Support for JPG and JPEG formats",
+      "Meet NTA official specifications",
+      "Instant preview before download",
+      "Mobile-friendly interface",
+      "Free unlimited use"
+    ],
+    "howToUse": {
+      "name": "How to Use the NEET Photo Signature Resizer",
+      "steps": [
+        {
+          "name": "Upload your photo",
+          "text": "Select your passport-sized photograph. Make sure your face is clearly visible with a white or light background as per NEET guidelines."
+        },
+        {
+          "name": "Auto-resize and compress",
+          "text": "The tool automatically resizes your photo to the dimensions required by NTA and compresses it to the specified file size limit."
+        },
+        {
+          "name": "Upload your signature",
+          "text": "Upload your signature on a white background. The tool resizes it to the required dimensions for NEET."
+        },
+        {
+          "name": "Download both files",
+          "text": "Download the resized photo and signature. Both files are ready to upload to the NEET application portal."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the NEET photo requirements?",
+        "answer": "NEET requires passport-sized photos in JPG/JPEG format with white background, typically sized between 10KB-50KB, with dimensions specified by NTA (usually 3.5cm x 4.5cm)."
+      },
+      {
+        "question": "What format should my signature be in?",
+        "answer": "Your signature should be on a white background in JPG/JPEG format, typically sized between 1KB-10KB as specified in the NEET guidelines."
+      },
+      {
+        "question": "Can I check if my photo meets NEET requirements?",
+        "answer": "Yes, the tool checks your photo against NEET specifications and warns you if any requirements are not met before you download."
+      },
+      {
+        "question": "Is the NEET Photo Signature Resizer free?",
+        "answer": "Yes, resizing photos and signatures for NEET is completely free with unlimited use."
+      }
+    ],
+    "seoDescription": "Resize NEET exam photos and signatures online for free. Meet NTA specifications for NEET UG application. Compress to required file sizes instantly."
+  },
+  "rgb-to-hex-converter": {
+    "whatItIs": "The RGB to HEX Converter transforms RGB color values to hexadecimal color codes used in web design and CSS. Convert between color formats instantly with visual preview for web developers and graphic designers.",
+    "features": [
+      "Convert RGB to HEX color codes",
+      "Visual color preview",
+      "Convert HEX to RGB",
+      "Support for HSL and other formats",
+      "Copy color values with one click",
+      "Generate CSS color declarations",
+      "Works offline in browser",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the RGB to HEX Converter",
+      "steps": [
+        {
+          "name": "Enter RGB values",
+          "text": "Input the red, green, and blue values (0-255) in the input fields. You can also paste existing RGB values."
+        },
+        {
+          "name": "View HEX output",
+          "text": "See the corresponding HEX color code instantly. A visual color preview shows the exact color."
+        },
+        {
+          "name": "Copy the color code",
+          "text": "Click to copy the HEX code or CSS declaration. Paste it directly into your CSS, HTML, or design software."
+        },
+        {
+          "name": "Convert back",
+          "text": "Switch to HEX input to convert back to RGB. The tool works both ways for flexibility."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the RGB to HEX formula?",
+        "answer": "Each RGB component (0-255) is converted to a two-digit hexadecimal value. The three pairs are concatenated: RGB(255,0,0) becomes #FF0000."
+      },
+      {
+        "question": "Can I convert HEX to RGB too?",
+        "answer": "Yes, the converter works both ways. Enter a HEX code and get the RGB values instantly."
+      },
+      {
+        "question": "Does it support 3-digit HEX codes?",
+        "answer": "Yes, the tool handles both 3-digit (#FFF) and 6-digit (#FFFFFF) HEX codes and converts them correctly to RGB."
+      },
+      {
+        "question": "Is the RGB to HEX Converter free?",
+        "answer": "Yes, converting between RGB and HEX is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert RGB to HEX color codes online for free. Transform color values between RGB, HEX, HSL, and CSS formats. Visual preview included."
+  },
+  "hex-to-rgb-converter": {
+    "whatItIs": "The HEX to RGB Converter transforms hexadecimal color codes into RGB values for web design, programming, and graphic design. Get precise color components for CSS, design software, and color manipulation.",
+    "features": [
+      "Convert HEX to RGB values",
+      "Visual color preview",
+      "Support for 3 and 6 digit HEX",
+      "Show RGB and HSL values",
+      "Generate CSS color declarations",
+      "Copy values with one click",
+      "Works offline in browser",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the HEX to RGB Converter",
+      "steps": [
+        {
+          "name": "Enter HEX color code",
+          "text": "Type or paste a HEX color code like #FF5733 or #FFF. The tool accepts both 3-digit and 6-digit formats with or without the # symbol."
+        },
+        {
+          "name": "View RGB values",
+          "text": "See the RGB components instantly displayed. The color preview shows the exact color represented by the code."
+        },
+        {
+          "name": "Copy the values",
+          "text": "Click to copy the RGB values or CSS declaration. Use them in your stylesheets, design tools, or programming code."
+        },
+        {
+          "name": "Explore related formats",
+          "text": "View the color in HSL and other formats for additional context in your design or development work."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a HEX color code?",
+        "answer": "A HEX color code is a six-digit (or three-digit) representation of a color using hexadecimal notation. Each pair of digits represents the red, green, and blue components."
+      },
+      {
+        "question": "Does it support shorthand HEX codes?",
+        "answer": "Yes, the tool accepts both 3-digit shorthand codes (#FFF expands to #FFFFFF) and full 6-digit HEX codes."
+      },
+      {
+        "question": "Can I convert multiple colors at once?",
+        "answer": "Yes, you can paste multiple HEX codes separated by commas or newlines to convert them all at once."
+      },
+      {
+        "question": "Is the HEX to RGB Converter free?",
+        "answer": "Yes, converting HEX to RGB is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert HEX to RGB color values online for free. Transform hex color codes to RGB, HSL, and CSS formats. Visual preview and batch conversion available."
+  },
+  "json-validator": {
+    "whatItIs": "The JSON Validator checks JSON syntax for errors and validates structure against schemas. Essential for developers debugging API responses, configuration files, and data interchange formats with detailed error reporting.",
+    "features": [
+      "Validate JSON syntax instantly",
+      "Show detailed error messages with line numbers",
+      "Support for JSON Schema validation",
+      "Highlight errors in context",
+      "Format and beautify valid JSON",
+      "Tree view for valid JSON",
+      "Batch validate multiple JSON files",
+      "Privacy-focused local validation"
+    ],
+    "howToUse": {
+      "name": "How to Use the JSON Validator",
+      "steps": [
+        {
+          "name": "Paste your JSON",
+          "text": "Copy and paste the JSON you want to validate. The tool checks syntax as soon as you paste or can wait for manual validation."
+        },
+        {
+          "name": "Validate the JSON",
+          "text": "Click the validate button or enable auto-validation. The tool checks against JSON syntax rules and reports any errors."
+        },
+        {
+          "name": "Review errors",
+          "text": "If errors are found, the tool highlights the exact location with line numbers and explains what went wrong (missing comma, unmatched bracket, etc.)."
+        },
+        {
+          "name": "Fix and revalidate",
+          "text": "Correct the errors in your JSON and revalidate until the structure is valid. Use the beautifier for cleaner code."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What errors can the validator detect?",
+        "answer": "The validator detects syntax errors like missing commas, unmatched brackets, trailing commas, invalid string formatting, and unexpected tokens."
+      },
+      {
+        "question": "Does it validate against JSON Schema?",
+        "answer": "Yes, advanced JSON validation can check against JSON Schema definitions to validate structure, required fields, and data types."
+      },
+      {
+        "question": "Can it validate large JSON files?",
+        "answer": "Yes, the tool handles large JSON files, though very large files may take longer to process. Consider splitting extremely large files for faster validation."
+      },
+      {
+        "question": "Is the JSON Validator free?",
+        "answer": "Yes, validating JSON syntax is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Validate JSON syntax online for free. Check JSON errors with detailed messages and line numbers. JSON Schema validation available for developers."
+  },
+  "whatismyip": {
+    "whatItIs": "The What Is My IP tool reveals your current public IP address, location, ISP, and network information instantly. Essential for troubleshooting network issues, checking VPN connections, and understanding your online identity.",
+    "features": [
+      "Show your public IP address",
+      "Display approximate geolocation",
+      "Show ISP and organization info",
+      "Detect proxy and VPN status",
+      "Show IPv4 and IPv6 addresses",
+      "Display browser and system info",
+      "One-click copy IP address",
+      "Free unlimited lookups"
+    ],
+    "howToUse": {
+      "name": "How to Use the What Is My IP Tool",
+      "steps": [
+        {
+          "name": "Visit the tool page",
+          "text": "Open the What Is My IP tool. Your IP information is detected automatically without any input required."
+        },
+        {
+          "name": "View your IP details",
+          "text": "See your public IP address, approximate location, ISP name, and connection status. Check if you are using a VPN or proxy."
+        },
+        {
+          "name": "Copy your IP",
+          "text": "Click to copy your IP address for use in troubleshooting, whitelisting, or network configuration."
+        },
+        {
+          "name": "Check VPN status",
+          "text": "Verify that your VPN is working by comparing your real IP with the displayed IP. If they differ, your VPN is active."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is my IP address?",
+        "answer": "Your IP address is a unique number assigned to your device by your Internet Service Provider (ISP). It identifies your device on the internet and enables communication with other devices."
+      },
+      {
+        "question": "Does this show my exact location?",
+        "answer": "The tool shows approximate location based on IP geolocation databases. Accuracy varies and is typically at the city or region level, not exact street address."
+      },
+      {
+        "question": "How can I hide my IP address?",
+        "answer": "Use a VPN (Virtual Private Network) or proxy service to mask your real IP address. The What Is My IP tool can verify if your IP is hidden."
+      },
+      {
+        "question": "Is the What Is My IP tool free?",
+        "answer": "Yes, checking your IP address and network details is completely free with unlimited lookups."
+      }
+    ],
+    "seoDescription": "Find your IP address online for free. Check public IP, location, ISP, and VPN status instantly. Essential network troubleshooting tool."
+  }
+}

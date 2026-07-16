@@ -1,0 +1,157 @@
+{
+  "otp-generator": {
+    "whatItIs": "The OTP Generator creates one-time passwords for two-factor authentication (2FA) testing and development. Generate time-based (TOTP) and counter-based (HOTP) OTPs following RFC standards for authentication system testing.",
+    "features": [
+      "Generate TOTP time-based OTPs",
+      "Generate HOTP counter-based OTPs",
+      "Support for 6 and 8 digit OTPs",
+      "RFC 6238 and RFC 4226 compliant",
+      "Show OTP countdown timer",
+      "Support custom secret keys",
+      "Batch generate OTPs",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the OTP Generator",
+      "steps": [
+        {
+          "name": "Select OTP type",
+          "text": "Choose between TOTP (time-based, changes every 30 seconds) or HOTP (counter-based, changes with each use). Select 6 or 8 digit OTP length."
+        },
+        {
+          "name": "Enter secret key",
+          "text": "Provide the Base32-encoded secret key from your authentication system. You can also generate a random key for testing."
+        },
+        {
+          "name": "Generate OTP",
+          "text": "Click generate to create the current OTP code. For TOTP, the code refreshes automatically every 30 seconds."
+        },
+        {
+          "name": "Copy and verify",
+          "text": "Copy the OTP code and use it to test your authentication system. Verify that your application correctly validates the generated code."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is OTP?",
+        "answer": "OTP (One-Time Password) is a password that is valid for only one login session or transaction. It is commonly used in two-factor authentication (2FA) for enhanced security."
+      },
+      {
+        "question": "What is TOTP vs HOTP?",
+        "answer": "TOTP (Time-based OTP) changes based on the current time, typically every 30 seconds. HOTP (HMAC-based OTP) changes based on a counter that increments with each use."
+      },
+      {
+        "question": "Can I test my 2FA system with this?",
+        "answer": "Yes, use the same secret key as your authentication system to generate OTPs and verify that your system correctly validates them."
+      },
+      {
+        "question": "Is the OTP Generator free?",
+        "answer": "Yes, generating OTPs is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate OTP codes online for free. Create TOTP and HOTP one-time passwords for 2FA testing and development. RFC compliant authentication tool."
+  },
+  "lorem-ipsum": {
+    "whatItIs": "The Lorem Ipsum Generator creates placeholder text in the traditional Latin Lorem Ipsum format for design mockups, wireframes, and content layouts. Generate paragraphs, sentences, or words for prototyping and design testing.",
+    "features": [
+      "Generate Lorem Ipsum placeholder text",
+      "Customizable length and format",
+      "Generate paragraphs, sentences, or words",
+      "Start with standard or random text",
+      "HTML format option",
+      "Copy text with one click",
+      "Works offline in browser",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Lorem Ipsum Generator",
+      "steps": [
+        {
+          "name": "Select text type",
+          "text": "Choose the type of placeholder text you need: paragraphs, sentences, words, lists, or full articles."
+        },
+        {
+          "name": "Set quantity",
+          "text": "Specify how many paragraphs, sentences, or words you want. The tool generates the requested amount of Lorem Ipsum text."
+        },
+        {
+          "name": "Generate text",
+          "text": "Click generate to create the placeholder text. The text follows standard Lorem Ipsum patterns for realistic appearance."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the generated text and paste it into your design mockup, website template, or document for prototyping."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is Lorem Ipsum?",
+        "answer": "Lorem Ipsum is placeholder text derived from Latin, used by designers and publishers to fill layouts before real content is available. It helps visualize design without being distracted by meaningful text."
+      },
+      {
+        "question": "Can I generate HTML-formatted Lorem Ipsum?",
+        "answer": "Yes, the tool can output Lorem Ipsum wrapped in HTML tags like <p>, <h1>, <ul> for direct use in web design mockups."
+      },
+      {
+        "question": "Does it generate the same text every time?",
+        "answer": "The tool can generate standard Lorem Ipsum starting with 'Lorem ipsum dolor sit amet' or randomized variations. Choose based on your needs."
+      },
+      {
+        "question": "Is the Lorem Ipsum Generator free?",
+        "answer": "Yes, generating placeholder text is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate Lorem Ipsum placeholder text online for free. Create paragraphs, sentences, and words for design mockups and wireframes. HTML format available."
+  },
+  "dummy-text-generator": {
+    "whatItIs": "The Dummy Text Generator creates realistic placeholder content for design mockups, testing, and prototyping. Generate paragraphs, headlines, lists, and articles that look like real content for better design previews.",
+    "features": [
+      "Generate realistic placeholder text",
+      "Multiple content types: paragraphs, lists",
+      "Customizable length and density",
+      "Generate headlines and subheadings",
+      "HTML formatted output",
+      "Copy with one click",
+      "Works offline in browser",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Dummy Text Generator",
+      "steps": [
+        {
+          "name": "Select content type",
+          "text": "Choose the type of dummy text: paragraphs with headings, list items, article content, or mixed content for realistic mockups."
+        },
+        {
+          "name": "Set length",
+          "text": "Specify how much content you need: number of paragraphs, words, or characters."
+        },
+        {
+          "name": "Generate text",
+          "text": "Click generate to create realistic placeholder content. The tool produces text that resembles real copywriting."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the generated text and paste it into your design mockup, website template, or document for realistic prototyping."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Lorem Ipsum vs dummy text: what is the difference?",
+        "answer": "Lorem Ipsum uses pseudo-Latin text with standard passages. Dummy text can include realistic-sounding English content, headlines, and lists that better represent actual website content."
+      },
+      {
+        "question": "Can I generate HTML content?",
+        "answer": "Yes, the tool can generate dummy text with HTML tags including headings, paragraphs, lists, and links for web design mockups."
+      },
+      {
+        "question": "Is the Dummy Text Generator free?",
+        "answer": "Yes, generating dummy text is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate dummy text and placeholder content online for free. Create realistic placeholder text for design mockups, wireframes, and prototyping."
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "website-cost-calculator": {
+    "whatItIs": "The Website Cost Calculator estimates how much a website may cost based on pages, design quality, features, and development approach. Helps businesses and entrepreneurs plan budgets for website design, development, and maintenance.",
+    "features": [
+      "Estimate website development costs",
+      "Factor in design complexity",
+      "Include feature and plugin costs",
+      "Show hosting and maintenance estimates",
+      "Compare DIY vs professional development",
+      "Breakdown by category",
+      "Support for different website types",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the Website Cost Calculator",
+      "steps": [
+        {
+          "name": "Select website type",
+          "text": "Choose your website type: business website, e-commerce store, blog, portfolio, or web application. Each type has different baseline costs."
+        },
+        {
+          "name": "Enter project details",
+          "text": "Input number of pages, design complexity (template or custom), and required features like CMS, e-commerce, booking systems, etc."
+        },
+        {
+          "name": "Set development approach",
+          "text": "Choose between DIY website builders, freelance development, or agency development. Each approach has different cost structures."
+        },
+        {
+          "name": "View cost estimate",
+          "text": "See a detailed cost breakdown including development, design, hosting, maintenance, and ongoing costs. Use this for budgeting and planning."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How accurate are website cost estimates?",
+        "answer": "Estimates are based on industry averages and your inputs. Actual costs vary based on developer rates, specific requirements, and market conditions in your region."
+      },
+      {
+        "question": "What factors affect website cost the most?",
+        "answer": "Custom design, complex functionality (e-commerce, membership systems), and ongoing maintenance are the biggest cost drivers. Simple brochure websites are the most affordable."
+      },
+      {
+        "question": "Does it include ongoing costs?",
+        "answer": "Yes, the calculator estimates ongoing costs including hosting, domain renewal, maintenance, and updates for the first year."
+      },
+      {
+        "question": "Is the Website Cost Calculator free?",
+        "answer": "Yes, estimating website costs is completely free with unlimited calculations."
+      }
+    ],
+    "seoDescription": "Estimate website development cost online for free. Plan budgets for design, features, hosting, and maintenance. Compare DIY vs professional website costs."
+  },
+  "meta-description-generator": {
+    "whatItIs": "The Meta Description Generator creates compelling, SEO-optimized meta descriptions for web pages. Generate descriptions that improve click-through rates from search results with proper length and keyword optimization.",
+    "features": [
+      "Generate SEO-optimized meta descriptions",
+      "Optimize for target keywords",
+      "Ensure proper length (150-160 chars)",
+      "Create multiple variations",
+      "A/B test different descriptions",
+      "Show search result preview",
+      "Bulk generate for multiple pages",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Meta Description Generator",
+      "steps": [
+        {
+          "name": "Enter page details",
+          "text": "Input your page title, target keyword, and a brief summary of the page content. The more detail you provide, the better the output."
+        },
+        {
+          "name": "Generate descriptions",
+          "text": "Click generate to create multiple meta description variations. The tool optimizes for length, keywords, and click appeal."
+        },
+        {
+          "name": "Review and select",
+          "text": "Read the generated descriptions and choose the one that best represents your page. Check the character count to ensure it displays fully in search results."
+        },
+        {
+          "name": "Copy and implement",
+          "text": "Copy your chosen meta description and paste it into your page's meta tags. Use different descriptions for different pages."
+        }
+      }
+    },
+    "faqs": [
+      {
+        "question": "How long should a meta description be?",
+        "answer": "Optimal meta descriptions are 150-160 characters. Google typically displays up to 160 characters, so staying within this range ensures your full description shows in search results."
+      },
+      {
+        "question": "Can meta descriptions improve my rankings?",
+        "answer": "Meta descriptions don't directly affect rankings, but they influence click-through rates (CTR). Higher CTR signals relevance to Google, which can indirectly improve rankings."
+      },
+      {
+        "question": "Should I include my target keyword?",
+        "answer": "Yes, include your target keyword naturally in the meta description. Google highlights matching keywords in search results, making your listing more noticeable."
+      },
+      {
+        "question": "Is the Meta Description Generator free?",
+        "answer": "Yes, generating meta descriptions is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate SEO meta descriptions online for free. Create compelling page descriptions optimized for click-through rates. Multiple variations and bulk generation available."
+  },
+  "tag-generator": {
+    "whatItIs": "The Tag Generator creates relevant tags for blog posts, YouTube videos, products, and social media content. Improve content discoverability and organization with optimized keyword tags based on your content.",
+    "features": [
+      "Generate relevant tags from text",
+      "Extract keywords automatically",
+      "Support for multiple platforms",
+      "Remove duplicate and stop words",
+      "Show tag frequency",
+      "Bulk tag generation",
+      "Copy tags with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Tag Generator",
+      "steps": [
+        {
+          "name": "Enter your content",
+          "text": "Paste your blog post, video description, product description, or any text content. The tool analyzes the text to identify key topics."
+        },
+        {
+          "name": "Generate tags",
+          "text": "Click generate to extract relevant tags. The tool removes stop words, identifies key phrases, and ranks tags by relevance."
+        },
+        {
+          "name": "Review and edit tags",
+          "text": "Browse the generated tags and remove any that don't fit. Add custom tags if needed for your specific platform."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the tags and paste them into your blog, YouTube video, product listing, or social media post."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How many tags should I use?",
+        "answer": "Optimal tag count varies by platform. YouTube allows up to 500 characters for tags (about 8-12 tags). Blogs typically use 5-10 tags. Focus on relevance over quantity."
+      },
+      {
+        "question": "Does it support different languages?",
+        "answer": "Yes, the tool can generate tags from text in multiple languages. The stop word removal adapts to the detected language."
+      },
+      {
+        "question": "Can I generate tags for YouTube?",
+        "answer": "Yes, the tool generates tags suitable for YouTube descriptions, optimizing for search and discovery within the platform."
+      },
+      {
+        "question": "Is the Tag Generator free?",
+        "answer": "Yes, generating tags is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate content tags online for free. Extract relevant keywords and tags for blogs, YouTube, products, and social media. Improve content discoverability."
+  },
+  "hashtag-generator": {
+    "whatItIs": "The Hashtag Generator creates relevant, trending hashtags for social media posts on Instagram, Twitter, TikTok, and LinkedIn. Improve post visibility and reach with optimized hashtags based on your content and niche.",
+    "features": [
+      "Generate relevant hashtags from text",
+      "Include trending and popular hashtags",
+      "Support for multiple platforms",
+      "Mix of popular and niche hashtags",
+      "Show hashtag usage counts",
+      "Bulk generate for multiple posts",
+      "Copy hashtags with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Hashtag Generator",
+      "steps": [
+        {
+          "name": "Enter your post content",
+          "text": "Paste your social media caption or describe your post topic. Include keywords related to your niche for better hashtag suggestions."
+        },
+        {
+          "name": "Select platform",
+          "text": "Choose your target platform: Instagram, Twitter, TikTok, or LinkedIn. Each platform has different hashtag best practices."
+        },
+        {
+          "name": "Generate hashtags",
+          "text": "Click generate to get a mix of popular, niche, and branded hashtags. The tool shows estimated usage counts for each hashtag."
+        },
+        {
+          "name": "Copy and post",
+          "text": "Copy the hashtags and paste them into your social media post. Mix different sizes for optimal reach and engagement."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How many hashtags should I use?",
+        "answer": "Instagram allows up to 30 hashtags but 5-10 highly relevant ones work best. Twitter and LinkedIn perform better with 1-3 targeted hashtags. TikTok works well with 3-5 hashtags."
+      },
+      {
+        "question": "Should I use popular or niche hashtags?",
+        "answer": "Use a mix: some popular hashtags for visibility and niche hashtags for targeted reach. Popular hashtags have more competition but reach wider audiences."
+      },
+      {
+        "question": "Are the hashtags truly trending?",
+        "answer": "The tool generates hashtags based on relevance and estimated popularity. For real-time trending data, check each platform's trending page."
+      },
+      {
+        "question": "Is the Hashtag Generator free?",
+        "answer": "Yes, generating hashtags is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate hashtags for Instagram, Twitter, TikTok online for free. Create relevant, trending hashtags to improve social media post visibility and reach."
+  },
+  "alt-text-generator": {
+    "whatItIs": "The Alt Text Generator creates descriptive, SEO-friendly alternative text for images. Improve website accessibility and image SEO with automatically generated alt text that describes image content for screen readers.",
+    "features": [
+      "Generate descriptive alt text from images",
+      "SEO-optimized image descriptions",
+      "Support for multiple image types",
+      "Batch generate for multiple images",
+      "Include relevant keywords naturally",
+      "Accessibility-focused descriptions",
+      "Copy alt text with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Alt Text Generator",
+      "steps": [
+        {
+          "name": "Upload your image",
+          "text": "Select the image you want alt text for. The tool analyzes the image content using AI image recognition."
+        },
+        {
+          "name": "Generate alt text",
+          "text": "Click generate to create descriptive alt text. The tool describes what is visible in the image in a concise, accessible way."
+        },
+        {
+          "name": "Review and optimize",
+          "text": "Read the generated alt text. Edit it to include relevant keywords naturally while maintaining accurate image description."
+        },
+        {
+          "name": "Copy and implement",
+          "text": "Copy the alt text and add it to your image's alt attribute in HTML. This improves both accessibility and image SEO."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is alt text?",
+        "answer": "Alt text (alternative text) is a descriptive attribute added to images in HTML. It describes the image content for screen readers and appears when images fail to load."
+      },
+      {
+        "question": "Why is alt text important for SEO?",
+        "answer": "Search engines cannot 'see' images. Alt text helps them understand image content, improving your chances of appearing in image search results."
+      },
+      {
+        "question": "How long should alt text be?",
+        "answer": "Keep alt text concise, typically under 125 characters. Describe the image accurately and include relevant keywords naturally without keyword stuffing."
+      },
+      {
+        "question": "Is the Alt Text Generator free?",
+        "answer": "Yes, generating alt text is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate alt text for images online for free. Create SEO-friendly and accessible image descriptions. Improve image SEO and website accessibility with AI-powered alt text."
+  },
+  "openai-api-key-tester": {
+    "whatItIs": "The OpenAI API Key Tester validates OpenAI API keys for GPT-4, GPT-3.5, DALL-E, and Whisper services. Check key validity, remaining quota, and model access without making unnecessary API calls.",
+    "features": [
+      "Validate OpenAI API key format",
+      "Check key validity and status",
+      "Show remaining quota and usage",
+      "Test model access permissions",
+      "Verify organization and project",
+      "Detect key rotation needs",
+      "Privacy-focused validation",
+      "Free unlimited testing"
+    ],
+    "howToUse": {
+      "name": "How to Use the OpenAI API Key Tester",
+      "steps": [
+        {
+          "name": "Enter your API key",
+          "text": "Paste your OpenAI API key starting with 'sk-'. The tool accepts keys for GPT, DALL-E, Whisper, and other OpenAI services."
+        },
+        {
+          "name": "Test the key",
+          "text": "Click test to validate the key. The tool checks format, makes a lightweight API call, and reports the key status."
+        },
+        {
+          "name": "Review results",
+          "text": "See whether the key is valid, active, and which models and services it can access. Check remaining quota if available."
+        },
+        {
+          "name": "Take action",
+          "text": "If the key is invalid or expired, generate a new one from the OpenAI dashboard. Use a valid key for your applications."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is it safe to test my API key?",
+        "answer": "The tool validates keys without storing them. However, for maximum security, test with minimal-scope keys and rotate keys regularly."
+      },
+      {
+        "question": "What does the tool check?",
+        "answer": "The tool verifies key format, checks validity against OpenAI's API, reports available models and services, and shows quota information when accessible."
+      },
+      {
+        "question": "Does it work for all OpenAI services?",
+        "answer": "Yes, the tool tests keys for GPT-4, GPT-3.5, DALL-E, Whisper, Embeddings, and other OpenAI API services."
+      },
+      {
+        "question": "Is the API Key Tester free?",
+        "answer": "Yes, testing OpenAI API keys is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Test OpenAI API keys online for free. Validate GPT-4, GPT-3.5, DALL-E keys instantly. Check key validity, quota, and model access without coding."
+  }
+}

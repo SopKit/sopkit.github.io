@@ -1,0 +1,214 @@
+{
+  "regex-tester": {
+    "whatItIs": "The Regex Tester validates and debugs regular expressions with real-time matching, highlighting, and explanation. Essential for developers working with pattern matching, data validation, and text processing who need to test regex syntax quickly.",
+    "features": [
+      "Test regex patterns in real-time",
+      "Highlight matching text",
+      "Explain regex components",
+      "Support for multiple regex flavors",
+      "Show capture groups",
+      "Replace and split operations",
+      "Generate code snippets",
+      "Free unlimited testing"
+    ],
+    "howToUse": {
+      "name": "How to Use the Regex Tester",
+      "steps": [
+        {
+          "name": "Enter regex pattern",
+          "text": "Type your regular expression pattern in the regex field. The tool supports JavaScript, Python, PCRE, and other common regex flavors."
+        },
+        {
+          "name": "Enter test text",
+          "text": "Paste the text you want to test the regex against. Matches are highlighted in real-time as you type."
+        },
+        {
+          "name": "Analyze matches",
+          "text": "Review highlighted matches, capture groups, and match positions. Use the explanation feature to understand each part of your regex."
+        },
+        {
+          "name": "Generate code",
+          "text": "Copy the regex with code snippets for your programming language. Use replace mode to test substitution patterns."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What regex flavors are supported?",
+        "answer": "The tool supports JavaScript (ECMAScript), Python (re module), PCRE (PHP), and common regex syntax used in most programming languages."
+      },
+      {
+        "question": "Can I test regex replacements?",
+        "answer": "Yes, the replace mode lets you test substitution patterns. Enter a replacement string and see the transformed output in real-time."
+      },
+      {
+        "question": "How do I understand my regex?",
+        "answer": "The explanation feature breaks down your regex into components, explaining what each part matches. This is helpful for learning and debugging complex patterns."
+      },
+      {
+        "question": "Is the Regex Tester free?",
+        "answer": "Yes, testing and debugging regular expressions is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Test regular expressions online for free. Debug regex patterns with real-time matching and highlighting. Support for JavaScript, Python, and PCRE flavors."
+  },
+  "jwt-decoder": {
+    "whatItIs": "The JWT Decoder decodes JSON Web Tokens to inspect headers, payload, and signature without verification. Essential for debugging authentication flows and understanding token contents in web applications.",
+    "features": [
+      "Decode JWT tokens instantly",
+      "View header and payload data",
+      "Show token expiration",
+      "Inspect claims and scopes",
+      "Support for JWS and JWE",
+      "Pretty-print JSON output",
+      "Copy decoded data with one click",
+      "Free unlimited decoding"
+    ],
+    "howToUse": {
+      "name": "How to Use the JWT Decoder",
+      "steps": [
+        {
+          "name": "Paste JWT token",
+          "text": "Copy and paste your JWT token (the three-part string separated by dots) into the input field. No verification is required for decoding."
+        },
+        {
+          "name": "Decode the token",
+          "text": "Click decode to parse the JWT. The tool splits the token into header, payload, and signature sections."
+        },
+        {
+          "name": "Inspect the data",
+          "text": "Review the decoded header and payload in readable JSON format. Check claims like user ID, expiration, issuer, and custom data."
+        },
+        {
+          "name": "Copy or debug",
+          "text": "Copy the decoded data for debugging or documentation. Use the information to troubleshoot authentication issues."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a JWT?",
+        "answer": "JWT (JSON Web Token) is a compact, URL-safe token format used for securely transmitting information between parties. It consists of a header, payload, and signature separated by dots."
+      },
+      {
+        "question": "Does this verify the token signature?",
+        "answer": "This tool decodes the token without verifying the signature. For signature verification, you need the secret key or public key used to sign the token."
+      },
+      {
+        "question": "Can I decode encrypted JWTs?",
+        "answer": "Basic decoding works for unencrypted (JWS) tokens. Encrypted (JWE) tokens require decryption keys which this tool does not handle."
+      },
+      {
+        "question": "Is the JWT Decoder free?",
+        "answer": "Yes, decoding JWT tokens is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Decode JWT tokens online for free. Inspect JSON Web Token headers and payloads without verification. Debug authentication and API tokens."
+  },
+  "uuid-v4-generator": {
+    "whatItIs": "The UUID v4 Generator creates random UUID (Universally Unique Identifier) version 4 strings for use in databases, APIs, and distributed systems. Generate cryptographically strong unique IDs for applications.",
+    "features": [
+      "Generate UUID v4 random IDs",
+      "Support for standard and uppercase formats",
+      "Generate multiple UUIDs at once",
+      "Show UUID version and variant",
+      "Copy with or without braces",
+      "Batch generate for bulk needs",
+      "Show collision probability",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the UUID v4 Generator",
+      "steps": [
+        {
+          "name": "Select UUID options",
+          "text": "Choose the number of UUIDs to generate and the output format: standard lowercase, uppercase, or with braces."
+        },
+        {
+          "name": "Generate UUIDs",
+          "text": "Click generate to create cryptographically secure UUID v4 values. Each UUID is guaranteed to be unique with extremely low collision probability."
+        },
+        {
+          "name": "Review UUIDs",
+          "text": "See the generated UUIDs with their version and variant information. Verify the format meets your requirements."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy individual UUIDs or all at once. Use them as unique identifiers in databases, API responses, or distributed systems."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is UUID v4?",
+        "answer": "UUID v4 is a randomly generated 128-bit identifier. It uses random or pseudo-random numbers and has an extremely low probability of collision, making it suitable for unique IDs."
+      },
+      {
+        "question": "How unique are UUIDs?",
+        "answer": "UUID v4 has 122 random bits, giving 5.3 x 10^36 possible values. The probability of collision is negligible for all practical purposes."
+      },
+      {
+        "question": "Can I generate multiple UUIDs at once?",
+        "answer": "Yes, you can generate up to 1000 UUIDs in a single batch operation. Each UUID is independently generated with secure randomness."
+      },
+      {
+        "question": "Is the UUID v4 Generator free?",
+        "answer": "Yes, generating UUIDs is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate UUID v4 online for free. Create cryptographically secure random UUIDs for databases, APIs, and applications. Batch generation supported."
+  },
+  "nanoid-generator": {
+    "whatItIs": "The NanoID Generator creates compact, URL-friendly unique identifiers using the NanoID algorithm. Shorter and more secure than UUIDs, perfect for database keys, URL shorteners, and file naming.",
+    "features": [
+      "Generate NanoID strings",
+      "Customizable ID length",
+      "URL-safe character set",
+      "Cryptographically secure generation",
+      "Batch generate multiple IDs",
+      "Show collision probability",
+      "Copy IDs with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the NanoID Generator",
+      "steps": [
+        {
+          "name": "Set ID length",
+          "text": "Choose the length of your NanoID. Default is 21 characters, which provides sufficient uniqueness for most applications."
+        },
+        {
+          "name": "Select character set",
+          "text": "Choose the character set: URL-safe (default), alphanumeric, or custom. URL-safe excludes similar-looking characters like I, l, and 1."
+        },
+        {
+          "name": "Generate NanoIDs",
+          "text": "Click generate to create NanoID strings. The tool uses a cryptographically secure random generator."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the generated NanoID for use as a database key, URL slug, file name, or any unique identifier requirement."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is NanoID?",
+        "answer": "NanoID is a tiny, secure, URL-friendly unique string ID generator. It produces shorter IDs than UUIDs with better collision resistance and URL safety."
+      },
+      {
+        "question": "NanoID vs UUID: which is better?",
+        "answer": "NanoIDs are shorter, URL-safe, and more customizable than UUIDs. Use NanoIDs for URLs and database keys, UUIDs for distributed system IDs where length doesn't matter."
+      },
+      {
+        "question": "How long should my NanoID be?",
+        "answer": "21 characters is the default and works for most use cases. For higher security or larger datasets, use 32+ characters. Each additional character exponentially increases uniqueness."
+      },
+      {
+        "question": "Is the NanoID Generator free?",
+        "answer": "Yes, generating NanoIDs is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate NanoID online for free. Create compact, URL-friendly unique identifiers. Secure alternative to UUIDs for database keys and URLs."
+  }
+}

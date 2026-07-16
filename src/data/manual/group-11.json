@@ -1,0 +1,32 @@
+{
+  "group": 11,
+  "name": "image_2",
+  "tools": [
+    "image-resizer",
+    "image-to-base64",
+    "jpg-converter",
+    "jpg-to-bmp-converter",
+    "jpg-to-gif-converter",
+    "jpg-to-ico-converter",
+    "jpg-to-webp-converter",
+    "logo-generator",
+    "photo-enhancer",
+    "png-to-bmp-converter",
+    "png-to-gif-converter",
+    "png-to-ico-converter",
+    "png-to-webp-converter",
+    "rotate-image",
+    "image-tools",
+    "icon-generator",
+    "image-editor",
+    "compress-image-to-20kb",
+    "resize-image-in-cm",
+    "compress-image-to-10kb",
+    "compress-image-to-30kb",
+    "compress-image-to-100kb",
+    "compress-image-to-200kb",
+    "resize-image-in-mm",
+    "resize-image-in-pixels",
+    "image-dpi-converter"
+  ]
+}

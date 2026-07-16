@@ -1,0 +1,267 @@
+{
+  "ip-address-generator": {
+    "whatItIs": "The IP Address Generator creates random IPv4 and IPv6 addresses for network testing, development, and educational purposes. Generate valid IP addresses with custom ranges and subnet masks.",
+    "features": [
+      "Generate random IPv4 addresses",
+      "Generate random IPv6 addresses",
+      "Custom IP range and subnet",
+      "Generate IP batches",
+      "Show IP class and type",
+      "Convert between formats",
+      "Copy IP addresses with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the IP Address Generator",
+      "steps": [
+        {
+          "name": "Select IP version",
+          "text": "Choose between IPv4 (32-bit) or IPv6 (128-bit) address generation based on your testing needs."
+        },
+        {
+          "name": "Set IP range",
+          "text": "Optionally specify a custom IP range or subnet mask. The tool generates IPs within the specified network boundaries."
+        },
+        {
+          "name": "Generate IPs",
+          "text": "Click generate to create one or more random IP addresses. The tool generates valid, properly formatted IP addresses."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the generated IP addresses for use in network testing, development environments, or educational examples."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the difference between IPv4 and IPv6?",
+        "answer": "IPv4 uses 32-bit addresses (e.g., 192.168.1.1) and is the current standard. IPv6 uses 128-bit addresses (e.g., 2001:0db8::1) and is the future standard with much more address space."
+      },
+      {
+        "question": "Can I generate IPs for a specific subnet?",
+        "answer": "Yes, you can specify a custom IP range and subnet mask. The tool generates IPs within that network, excluding network and broadcast addresses."
+      },
+      {
+        "question": "Are generated IPs real or assigned?",
+        "answer": "No, generated IPs are random and may or may not correspond to real devices. Use them only for testing and development, not for real network configuration."
+      },
+      {
+        "question": "Is the IP Address Generator free?",
+        "answer": "Yes, generating IP addresses is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate random IP addresses online for free. Create IPv4 and IPv6 addresses for network testing and development. Custom range and batch generation."
+  },
+  "mac-address-generator": {
+    "whatItIs": "The MAC Address Generator creates random MAC addresses for network testing, virtualization, and development. Generate valid unicast MAC addresses with customizable vendor prefixes.",
+    "features": [
+      "Generate random MAC addresses",
+      "Custom vendor prefix (OUI)",
+      "Support for unicast addresses",
+      "Generate multiple MACs at once",
+      "Show address format",
+      "Convert between formats",
+      "Copy MAC addresses with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the MAC Address Generator",
+      "steps": [
+        {
+          "name": "Select generation options",
+          "text": "Choose whether to use a random vendor prefix or specify a custom OUI (Organizationally Unique Identifier) for the first 3 bytes."
+        },
+        {
+          "name": "Generate MAC address",
+          "text": "Click generate to create a valid MAC address. The tool ensures the address is unicast (not multicast) and locally administered if needed."
+        },
+        {
+          "name": "View address details",
+          "text": "See the generated MAC address in standard formats: colon-separated (00:1A:2B:3C:4D:5E), hyphen-separated, or dot-separated."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the MAC address for use in network testing, VM configuration, or development environments."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a MAC address?",
+        "answer": "A MAC (Media Access Control) address is a unique identifier assigned to network interfaces. It is 48 bits (6 bytes) long and used for communication on the physical network segment."
+      },
+      {
+        "question": "What is an OUI?",
+        "answer": "OUI (Organizationally Unique Identifier) is the first 24 bits (3 bytes) of a MAC address assigned by the IEEE to device manufacturers. You can specify a custom OUI or use random values."
+      },
+      {
+        "question": "Are generated MAC addresses real?",
+        "answer": "No, generated MAC addresses are for testing and development. They may coincidentally match real devices but are not assigned to any actual hardware."
+      },
+      {
+        "question": "Is the MAC Address Generator free?",
+        "answer": "Yes, generating MAC addresses is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate random MAC addresses online for free. Create valid unicast MAC addresses for network testing and virtualization. Custom OUI support."
+  },
+  "user-agent-generator": {
+    "whatItIs": "The User Agent Generator creates random user agent strings for browser testing, web scraping, and development. Simulate different browsers, devices, and operating systems for compatibility testing.",
+    "features": [
+      "Generate random user agent strings",
+      "Support for major browsers and devices",
+      "Customize OS and browser type",
+      "Include mobile and desktop agents",
+      "Batch generate multiple agents",
+      "Show parsed agent components",
+      "Copy user agents with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the User Agent Generator",
+      "steps": [
+        {
+          "name": "Select browser/device",
+          "text": "Choose the type of user agent you need: Chrome on Windows, Safari on iPhone, Firefox on Android, or random mix of devices and browsers."
+        },
+        {
+          "name": "Configure options",
+          "text": "Set the browser version range, OS version, and device type. Choose between latest versions or include older versions for compatibility testing."
+        },
+        {
+          "name": "Generate user agents",
+          "text": "Click generate to create user agent strings. Each string represents a realistic browser and device combination."
+        },
+        {
+          "name": "Copy and test",
+          "text": "Copy the user agent string and use it in browser developer tools, curl requests, or testing frameworks to simulate different devices."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a user agent string?",
+        "answer": "A user agent string is text sent by web browsers to servers identifying the browser type, version, operating system, and device. Servers use this to deliver compatible content."
+      },
+      {
+        "question": "Why generate fake user agents?",
+        "answer": "Developers use user agent testing to ensure websites work correctly across different browsers and devices. It helps identify compatibility issues and responsive design problems."
+      },
+      {
+        "question": "Can I test mobile user agents?",
+        "answer": "Yes, the tool generates user agents for popular mobile devices including iPhones, Android phones, and tablets with realistic browser and OS combinations."
+      },
+      {
+        "question": "Is the User Agent Generator free?",
+        "answer": "Yes, generating user agent strings is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate user agent strings online for free. Create random browser and device user agents for web testing and development. Mobile and desktop support."
+  },
+  "csrf-token-generator": {
+    "whatItIs": "The CSRF Token Generator creates secure random tokens for Cross-Site Request Forgery protection in web applications. Generate cryptographically secure tokens to prevent CSRF attacks on forms and APIs.",
+    "features": [
+      "Generate cryptographically secure CSRF tokens",
+      "Customizable token length",
+      "Support for multiple tokens",
+      "URL-safe and base64 encoding",
+      "Show token entropy",
+      "Batch generate tokens",
+      "Copy tokens with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the CSRF Token Generator",
+      "steps": [
+        {
+          "name": "Set token length",
+          "text": "Choose the token length in bytes. Longer tokens provide more security. 32 bytes (256 bits) is recommended for most applications."
+        },
+        {
+          "name": "Select encoding",
+          "text": "Choose between hex, base64, or URL-safe base64 encoding depending on how you will use the token in forms or headers."
+        },
+        {
+          "name": "Generate token",
+          "text": "Click generate to create a cryptographically secure random token. The tool uses secure random number generation."
+        },
+        {
+          "name": "Copy and implement",
+          "text": "Copy the token and add it to your forms as a hidden field. Verify the token on form submission to prevent CSRF attacks."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a CSRF token?",
+        "answer": "A CSRF token is a unique, secret, unpredictable value generated by a server-side application and transmitted to the client. It prevents Cross-Site Request Forgery attacks by ensuring requests originate from your application."
+      },
+      {
+        "question": "How long should a CSRF token be?",
+        "answer": "Use at least 128 bits (16 bytes) of entropy. 256 bits (32 bytes) is recommended for high-security applications. Longer tokens are exponentially more secure."
+      },
+      {
+        "question": "How do I use CSRF tokens?",
+        "answer": "Generate a token server-side, embed it in forms as a hidden field, and verify it on form submission. For APIs, include the token in a custom header."
+      },
+      {
+        "question": "Is the CSRF Token Generator free?",
+        "answer": "Yes, generating CSRF tokens is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate CSRF tokens online for free. Create secure random tokens for web application security. Prevent Cross-Site Request Forgery attacks with cryptographically secure tokens."
+  },
+  "cron-job-generator": {
+    "whatItIs": "The Cron Job Generator creates cron expressions for scheduling tasks on Linux, Unix, and web hosting environments. Generate cron syntax for scheduled jobs with a visual interface and human-readable descriptions.",
+    "features": [
+      "Generate cron expressions visually",
+      "Support for all cron fields",
+      "Show human-readable schedule",
+      "Explain cron syntax",
+      "Generate common schedules",
+      "Validate cron expressions",
+      "Copy cron command with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Cron Job Generator",
+      "steps": [
+        {
+          "name": "Set schedule parameters",
+          "text": "Use the visual interface to set when you want the job to run: minute, hour, day of month, month, and day of week. Use presets for common schedules."
+        },
+        {
+          "name": "Generate cron expression",
+          "text": "Click generate to create the cron syntax. The tool shows the cron expression and a human-readable description of the schedule."
+        },
+        {
+          "name": "Validate expression",
+          "text": "Check that the cron expression is valid. The tool validates syntax and warns about common mistakes."
+        },
+        {
+          "name": "Copy the cron command",
+          "text": "Copy the cron expression and paste it into your crontab file or hosting control panel."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a cron job?",
+        "answer": "A cron job is a scheduled task that runs automatically at specified intervals on Unix-like systems. Cron expressions define when and how often the task executes."
+      },
+      {
+        "question": "How do I read a cron expression?",
+        "answer": "A cron expression has 5 fields: minute (0-59), hour (0-23), day of month (1-31), month (1-12), and day of week (0-7, 0 and 7 are Sunday). Example: '0 9 * * 1' runs at 9 AM every Monday."
+      },
+      {
+        "question": "Can I use special characters in cron?",
+        "answer": "Yes, cron supports *, /, -, and , for ranges, steps, and lists. The generator handles these special characters and shows their meaning."
+      },
+      {
+        "question": "Is the Cron Job Generator free?",
+        "answer": "Yes, generating cron expressions is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate cron job expressions online for free. Create cron schedules with visual interface. Explain and validate cron syntax for Linux and web hosting."
+  }
+}

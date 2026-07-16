@@ -1,0 +1,161 @@
+{
+  "lorawan-device-eui-generator": {
+    "whatItIs": "The LoRaWAN Device EUI Generator creates unique Device EUI identifiers for LoRaWAN IoT devices. Generate 64-bit extended unique identifiers following LoRaWAN specifications for device registration and network configuration.",
+    "features": [
+      "Generate LoRaWAN Device EUIs",
+      "Support for 64-bit format",
+      "Generate AppEUI and DevEUI",
+      "Validate EUI format",
+      "Batch generate multiple EUIs",
+      "Show in hexadecimal format",
+      "Copy EUIs with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the LoRaWAN Device EUI Generator",
+      "steps": [
+        {
+          "name": "Select EUI type",
+          "text": "Choose whether to generate a DevEUI (Device EUI) for your device or an AppEUI (Application EUI) for your application."
+        },
+        {
+          "name": "Set generation options",
+          "text": "Choose the number of EUIs to generate. The tool uses cryptographically secure random generation for unique identifiers."
+        },
+        {
+          "name": "Generate EUIs",
+          "text": "Click generate to create the LoRaWAN EUIs. Each EUI is a 64-bit value displayed as 16 hexadecimal characters."
+        },
+        {
+          "name": "Copy and register",
+          "text": "Copy the generated EUIs and register them in your LoRaWAN Network Server (LNS) like TTN, ChirpStack, or Actility."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a Device EUI?",
+        "answer": "A Device EUI (DevEUI) is a 64-bit unique identifier for LoRaWAN end devices. It uniquely identifies each LoRaWAN device in the network and is used for device registration and over-the-air activation."
+      },
+      {
+        "question": "What is the difference between DevEUI and AppEUI?",
+        "answer": "DevEUI uniquely identifies a device, while AppEUI identifies an application. Both are 64-bit values, but DevEUI is device-specific and AppEUI is shared by all devices in an application."
+      },
+      {
+        "question": "Do I need to register EUIs?",
+        "answer": "Yes, you must register DevEUIs in your LoRaWAN Network Server (LNS) before devices can join the network. The LNS uses DevEUI to authenticate and manage devices."
+      },
+      {
+        "question": "Is the LoRaWAN Device EUI Generator free?",
+        "answer": "Yes, generating LoRaWAN EUIs is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate LoRaWAN Device EUI and AppEUI online for free. Create 64-bit unique identifiers for IoT device registration. Free LoRaWAN development tool."
+  },
+  "font-generator": {
+    "whatItIs": "The Font Generator transforms regular text into stylish Unicode font styles for social media posts, usernames, bio pages, and creative projects. Create unique text appearances using special Unicode characters without changing your actual font.",
+    "features": [
+      "Convert text to fancy Unicode fonts",
+      "Multiple style options: bold, italic, cursive",
+      "Support for social media platforms",
+      "Copy text with one click",
+      "Real-time preview",
+      "Works with emoji and symbols",
+      "No special software needed",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Font Generator",
+      "steps": [
+        {
+          "name": "Enter your text",
+          "text": "Type or paste the text you want to style. The tool works with letters, numbers, and common symbols."
+        },
+        {
+          "name": "Select font style",
+          "text": "Choose from available Unicode font styles: bold, italic, cursive, script, gothic, and more exotic styles."
+        },
+        {
+          "name": "Preview the result",
+          "text": "See your text rendered in the selected style instantly. Check that all characters display correctly in the preview."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Click to copy the styled text. Paste it into social media bios, usernames, posts, or any platform that supports Unicode."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do these work on all platforms?",
+        "answer": "Most platforms support Unicode characters including Instagram, Twitter, TikTok, Discord, and gaming platforms. Some very old systems may not display all styles correctly."
+      },
+      {
+        "question": "Are these real fonts?",
+        "answer": "No, these are not actual font files. The tool maps regular characters to Unicode characters that look similar but styled. Your text remains readable as regular text."
+      },
+      {
+        "question": "Can I use these in usernames?",
+        "answer": "Yes, styled Unicode text works in most platform usernames and display names. Some platforms may restrict certain characters, so test before committing."
+      },
+      {
+        "question": "Is the Font Generator free?",
+        "answer": "Yes, generating styled text is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate fancy fonts and stylish text online for free. Convert text to Unicode styles for social media bios, usernames, and creative posts. Multiple font styles available."
+  },
+  "fancy-text-generator": {
+    "whatItIs": "The Fancy Text Generator creates decorative and stylized text using Unicode characters for social media, gaming, messaging, and creative projects. Transform ordinary text into eye-catching styles without special fonts.",
+    "features": [
+      "Generate fancy Unicode text styles",
+      "Multiple decorative font options",
+      "Support for emoji and symbols",
+      "Copy text with one click",
+      "Real-time style preview",
+      "Work on all major platforms",
+      "No registration required",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Fancy Text Generator",
+      "steps": [
+        {
+          "name": "Type your text",
+          "text": "Enter the text you want to stylize. The generator works with regular letters, numbers, and basic symbols."
+        },
+        {
+          "name": "Browse styles",
+          "text": "Scroll through the available fancy text styles. Each style uses different Unicode characters to create visual effects."
+        },
+        {
+          "name": "Preview and select",
+          "text": "Click on a style to preview it. Check that all characters display correctly and choose your favorite."
+        },
+        {
+          "name": "Copy the text",
+          "text": "Click copy and paste the fancy text into your social media post, chat message, profile, or gaming username."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What makes text 'fancy'?",
+        "answer": "Fancy text uses Unicode characters that resemble styled versions of regular characters. These include bold, italic, cursive, script, and many other stylistic variants."
+      },
+      {
+        "question": "Will fancy text work everywhere?",
+        "answer": "Most modern apps and websites support Unicode text. However, some very old systems or specific apps may not display all styles correctly."
+      },
+      {
+        "question": "Is fancy text the same as a font?",
+        "answer": "No, fancy text uses Unicode characters, not actual font files. This means the text is stored as regular characters but displayed with special styling."
+      },
+      {
+        "question": "Is the Fancy Text Generator free?",
+        "answer": "Yes, generating fancy text is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate fancy text and stylish fonts online for free. Create decorative Unicode text for social media, gaming, and messaging. Multiple styles available."
+  }
+}

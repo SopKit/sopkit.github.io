@@ -1,0 +1,320 @@
+{
+  "robots-txt-sitemap-generator": {
+    "whatItIs": "The Robots.txt and Sitemap Generator creates robots.txt files to control search engine crawling and generates XML sitemaps to help search engines discover and index your website pages. Essential SEO tools for website owners and developers.",
+    "features": [
+      "Generate robots.txt file",
+      "Create XML sitemap automatically",
+      "Control search engine access",
+      "Include or exclude page patterns",
+      "Set crawl delay",
+      "Add sitemap to robots.txt",
+      "Validate syntax",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Robots.txt and Sitemap Generator",
+      "steps": [
+        {
+          "name": "Enter your website URL",
+          "text": "Type your domain name. The tool uses this to generate absolute URLs for your sitemap entries."
+        },
+        {
+          "name": "Configure robots.txt rules",
+          "text": "Set which user agents can crawl which directories. Add allow/disallow rules and crawl delay settings for search engines."
+        },
+        {
+          "name": "Generate sitemap",
+          "text": "Enter or paste your website URLs to include in the sitemap. The tool generates a valid XML sitemap with proper formatting."
+        },
+        {
+          "name": "Download files",
+          "text": "Download both robots.txt and sitemap.xml files. Upload them to your website root directory for search engines to find."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is robots.txt used for?",
+        "answer": "Robots.txt instructs search engine crawlers which pages or sections of your site they can or cannot crawl. It helps protect sensitive areas and optimize crawl budget."
+      },
+      {
+        "question": "What is an XML sitemap?",
+        "answer": "An XML sitemap lists all important pages on your website in a format search engines can read. It helps search engines discover and index your content more efficiently."
+      },
+      {
+        "question": "Where do I upload these files?",
+        "answer": "Upload robots.txt and sitemap.xml to your website's root directory (e.g., example.com/robots.txt). Search engines look for these files automatically."
+      },
+      {
+        "question": "Is this generator free?",
+        "answer": "Yes, generating robots.txt and XML sitemaps is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate robots.txt and XML sitemap online for free. Create SEO-friendly robots.txt files and sitemaps to improve search engine crawling. Free website SEO tools."
+  },
+  "meta-tag-generator": {
+    "whatItIs": "The Meta Tag Generator creates SEO-optimized meta tags for websites including title tags, meta descriptions, Open Graph tags, and Twitter Cards. Improve search engine visibility and social media sharing with properly formatted metadata.",
+    "features": [
+      "Generate SEO title tags",
+      "Create meta descriptions",
+      "Generate Open Graph tags",
+      "Create Twitter Card meta tags",
+      "Validate tag character limits",
+      "Preview search result appearance",
+      "Generate schema markup",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Meta Tag Generator",
+      "steps": [
+        {
+          "name": "Enter page details",
+          "text": "Input your page title, description, URL, and keywords. Add Open Graph image and type for social media sharing."
+        },
+        {
+          "name": "Generate meta tags",
+          "text": "Click generate to create all meta tags. The tool produces valid HTML meta tags for SEO and social media."
+        },
+        {
+          "name": "Preview results",
+          "text": "See how your page will appear in Google search results and social media feeds. Check character limits for optimal display."
+        },
+        {
+          "name": "Copy and implement",
+          "text": "Copy the generated meta tags and paste them into your HTML head section. The tags are ready to use immediately."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What meta tags should I include?",
+        "answer": "Essential meta tags include title tag (50-60 characters), meta description (150-160 characters), and Open Graph tags for social sharing. Add structured data for rich results."
+      },
+      {
+        "question": "How long should my title tag be?",
+        "answer": "Optimal title tags are 50-60 characters to avoid truncation in search results. The tool shows character count and warns if your title is too long."
+      },
+      {
+        "question": "What are Open Graph tags?",
+        "answer": "Open Graph (OG) tags control how your page appears when shared on Facebook, LinkedIn, and other social platforms. They define the title, description, image, and URL."
+      },
+      {
+        "question": "Is the Meta Tag Generator free?",
+        "answer": "Yes, generating meta tags is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate SEO meta tags online for free. Create title tags, meta descriptions, Open Graph, and Twitter Card tags. Optimize for search engines and social sharing."
+  },
+  "open-graph-generator": {
+    "whatItIs": "The Open Graph Generator creates OG meta tags for controlling how your website appears when shared on social media platforms like Facebook, LinkedIn, and WhatsApp. Optimize link previews with custom images, titles, and descriptions.",
+    "features": [
+      "Generate Open Graph meta tags",
+      "Preview social media card appearance",
+      "Optimize for Facebook and LinkedIn",
+      "Set OG image, title, and description",
+      "Support for article and website types",
+      "Validate OG tag completeness",
+      "Copy ready-to-use HTML code",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Open Graph Generator",
+      "steps": [
+        {
+          "name": "Enter page details",
+          "text": "Input your page title, description, URL, and the image you want to show when shared. Choose the OG type: website, article, or product."
+        },
+        {
+          "name": "Generate OG tags",
+          "text": "Click generate to create the Open Graph meta tags. The tool produces valid HTML for your head section."
+        },
+        {
+          "name": "Preview social card",
+          "text": "See how your link will appear when shared on Facebook, LinkedIn, or WhatsApp. Check that the image, title, and description look correct."
+        },
+        {
+          "name": "Copy and implement",
+          "text": "Copy the OG meta tags and add them to your HTML. Test with Facebook's Sharing Debugger after implementation."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are Open Graph tags?",
+        "answer": "Open Graph tags are meta tags that control how web pages appear when shared on social media. They define the title, description, image, and other properties of the shared link."
+      },
+      {
+        "question": "What image size should I use for OG images?",
+        "answer": "Recommended OG image size is 1200x630 pixels for optimal display on Facebook and LinkedIn. Minimum size is 200x200 pixels."
+      },
+      {
+        "question": "Does it work for WhatsApp?",
+        "answer": "Yes, WhatsApp uses OG tags (and sometimes Twitter Card tags) to generate link previews. Proper OG tags ensure your links look good on WhatsApp too."
+      },
+      {
+        "question": "Is the Open Graph Generator free?",
+        "answer": "Yes, generating Open Graph meta tags is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate Open Graph meta tags online for free. Create social media link previews for Facebook, LinkedIn, and WhatsApp. Optimize OG tags for better sharing."
+  },
+  "sitemap-generator": {
+    "whatItIs": "The Sitemap Generator creates XML sitemaps for websites to help search engines discover and index all important pages. Submit sitemaps to Google Search Console and Bing Webmaster Tools for improved SEO.",
+    "features": [
+      "Generate XML sitemap automatically",
+      "Set priority and change frequency",
+      "Include images and videos",
+      "Generate HTML sitemap",
+      "Split large sitemaps",
+      "Validate sitemap format",
+      "Submit to search engines",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Sitemap Generator",
+      "steps": [
+        {
+          "name": "Enter website URLs",
+          "text": "Paste a list of your website URLs or enter your domain for automatic crawling. Include all important pages you want indexed."
+        },
+        {
+          "name": "Configure sitemap settings",
+          "text": "Set default priority, change frequency, and last modified dates. Configure image and video inclusion if needed."
+        },
+        {
+          "name": "Generate sitemap",
+          "text": "Click generate to create the XML sitemap. The tool produces a valid sitemap.xml file ready for search engines."
+        },
+        {
+          "name": "Download and submit",
+          "text": "Download the sitemap.xml file and upload it to your website root. Submit it to Google Search Console and Bing Webmaster Tools."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is an XML sitemap?",
+        "answer": "An XML sitemap is a file that lists all important URLs on your website along with metadata like last modified date, change frequency, and priority. It helps search engines crawl and index your site more effectively."
+      },
+      {
+        "question": "How many URLs can a sitemap have?",
+        "answer": "A single sitemap can contain up to 50,000 URLs or be up to 50MB uncompressed. For larger sites, use sitemap index files to link multiple sitemaps together."
+      },
+      {
+        "question": "Should I include every page on my site?",
+        "answer": "Include pages you want search engines to index. Exclude admin pages, thank-you pages, duplicate content, and pages with noindex tags."
+      },
+      {
+        "question": "Is the Sitemap Generator free?",
+        "answer": "Yes, generating XML sitemaps is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate XML sitemap online for free. Create sitemaps for search engines to improve website indexing. Submit to Google Search Console and Bing."
+  },
+  "google-analytics-generator": {
+    "whatItIs": "The Google Analytics Generator helps you implement Google Analytics tracking codes, create custom event tracking snippets, and generate measurement protocol hits for server-side tracking and data analysis.",
+    "features": [
+      "Generate GA4 tracking code",
+      "Create Universal Analytics snippets",
+      "Generate custom event tracking code",
+      "Support for Google Tag Manager",
+      "Create measurement protocol hits",
+      "Copy ready-to-use code",
+      "Documentation and examples",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Google Analytics Generator",
+      "steps": [
+        {
+          "name": "Enter tracking ID",
+          "text": "Input your Google Analytics measurement ID (G-XXXXXXXXXX for GA4 or UA-XXXXXXXXX for Universal Analytics)."
+        },
+        {
+          "name": "Select tracking type",
+          "text": "Choose the type of tracking code you need: page view tracking, custom events, ecommerce tracking, or server-side measurement protocol."
+        },
+        {
+          "name": "Configure options",
+          "text": "Set event parameters, custom dimensions, and other tracking options specific to your implementation needs."
+        },
+        {
+          "name": "Copy the code",
+          "text": "Copy the generated tracking code snippet. Paste it into your website's HTML or configure it in Google Tag Manager."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is GA4 vs Universal Analytics?",
+        "answer": "GA4 (Google Analytics 4) is the current version using measurement IDs starting with G-. Universal Analytics (UA) is the older version being phased out. Always use GA4 for new implementations."
+      },
+      {
+        "question": "Where do I place the tracking code?",
+        "answer": "Place the GA4 tracking code in the <head> section of every page you want to track. For Google Tag Manager, add the GTM container code instead."
+      },
+      {
+        "question": "Can I track custom events?",
+        "answer": "Yes, the generator creates custom event tracking snippets for specific user actions like button clicks, form submissions, and video plays."
+      },
+      {
+        "question": "Is the Google Analytics Generator free?",
+        "answer": "Yes, generating tracking code snippets is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate Google Analytics tracking code online for free. Create GA4 measurement IDs, custom event tracking, and measurement protocol hits. Ready-to-use code snippets."
+  },
+  "schema-generator": {
+    "whatItIs": "The Schema Generator creates structured data markup (JSON-LD) for websites to help search engines understand content and display rich results. Generate schema for articles, products, events, recipes, local businesses, and more.",
+    "features": [
+      "Generate JSON-LD schema markup",
+      "Support for all Schema.org types",
+      "Validate schema syntax",
+      "Preview rich result appearance",
+      "Create article, product, event schemas",
+      "Generate local business schema",
+      "Copy ready-to-use code",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Schema Generator",
+      "steps": [
+        {
+          "name": "Select schema type",
+          "text": "Choose the Schema.org type that matches your content: Article, Product, Event, Local Business, Recipe, FAQ, Breadcrumb, and more."
+        },
+        {
+          "name": "Fill in details",
+          "text": "Enter the required properties for your schema type: name, description, URL, date, price, address, etc. The tool shows required fields."
+        },
+        {
+          "name": "Generate schema",
+          "text": "Click generate to create the JSON-LD structured data. The tool produces valid schema.org markup."
+        },
+        {
+          "name": "Copy and implement",
+          "text": "Copy the JSON-LD code and paste it into your page's <head> or <body>. Test with Google's Rich Results Test."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is structured data?",
+        "answer": "Structured data (schema markup) is code that helps search engines understand your content better. It enables rich results like star ratings, event dates, and product prices in search."
+      },
+      {
+        "question": "What schema types are supported?",
+        "answer": "The tool supports all common Schema.org types including Article, BlogPosting, Product, Event, LocalBusiness, Recipe, FAQPage, BreadcrumbList, Organization, Person, and more."
+      },
+      {
+        "question": "Does it guarantee rich results?",
+        "answer": "Valid schema markup is a requirement for rich results, but Google also considers content quality and other factors. Use the Rich Results Test to verify eligibility."
+      },
+      {
+        "question": "Is the Schema Generator free?",
+        "answer": "Yes, generating schema markup is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate JSON-LD schema markup online for free. Create structured data for articles, products, events, local businesses, and more. Improve SEO with rich results."
+  }
+}

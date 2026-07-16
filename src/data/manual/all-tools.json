@@ -1,0 +1,3985 @@
+[
+  {
+    "id": "ai-image-generator",
+    "name": "AI Image Generator",
+    "category": "generators",
+    "route": "/ai-image-generator",
+    "description": "Generate stunning AI images from text prompts instantly. Create photorealistic photos, digital art, anime, and illustrations for free. No signup required, unlimited generations, and 100% private browser-based processing."
+  },
+  {
+    "id": "ai-voice-generator",
+    "name": "AI Voice Generator",
+    "category": "generators",
+    "route": "/ai-voice-generator",
+    "description": "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibility, and creative projects. No signup required."
+  },
+  {
+    "id": "ai-music-generator",
+    "name": "AI Music Generator",
+    "category": "generators",
+    "route": "/ai-music-generator",
+    "description": "Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation with studio-grade quality. Free this week!"
+  },
+  {
+    "id": "qr-code-reader",
+    "name": "QR Code Reader",
+    "category": "generators",
+    "route": "/qr-code-reader",
+    "description": "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage."
+  },
+  {
+    "id": "bio-generator",
+    "name": "Bio Generator",
+    "category": "generators",
+    "route": "/bio-generator",
+    "description": "Create professional and aesthetic bios for social media profiles."
+  },
+  {
+    "id": "business-name-generator",
+    "name": "Business Name Generator",
+    "category": "generators",
+    "route": "/business-name-generator",
+    "description": "Generate creative and catchy names for your brand or startup."
+  },
+  {
+    "id": "ai-poem-generator",
+    "name": "AI Poem Generator",
+    "category": "generators",
+    "route": "/ai-poem-generator",
+    "description": "Create beautiful poems, haikus, and rhymes using artificial intelligence."
+  },
+  {
+    "id": "fake-chat-generator",
+    "name": "Fake Chat Generator",
+    "category": "generators",
+    "route": "/fake-chat-generator",
+    "description": "Create realistic-looking fake chat screenshots for WhatsApp, Discord, and iMessage."
+  },
+  {
+    "id": "excuse-generator",
+    "name": "Excuse Generator",
+    "category": "generators",
+    "route": "/excuse-generator",
+    "description": "Generate creative excuses for any situation."
+  },
+  {
+    "id": "font-generator",
+    "name": "Font Generator",
+    "category": "generators",
+    "route": "/font-generator",
+    "description": "Professional Font Generator tool for free online use."
+  },
+  {
+    "id": "number-generator",
+    "name": "Number Generator",
+    "category": "generators",
+    "route": "/number-generator",
+    "description": "Professional Number Generator tool for free online use."
+  },
+  {
+    "id": "poetry-generator",
+    "name": "Poetry Generator",
+    "category": "generators",
+    "route": "/poetry-generator",
+    "description": "Professional Poetry Generator tool for free online use."
+  },
+  {
+    "id": "rent-receipt-generator",
+    "name": "Rent Receipt Generator",
+    "category": "generators",
+    "route": "/rent-receipt-generator",
+    "description": "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly."
+  },
+  {
+    "id": "simple-invoice-generator",
+    "name": "Simple Invoice Generator",
+    "category": "generators",
+    "route": "/simple-invoice-generator",
+    "description": "Create and print professional billing invoices online. Add custom line items, tax, discount details, and generate print-ready PDF layouts instantly."
+  },
+  {
+    "id": "leave-application-generator",
+    "name": "Leave Application Generator",
+    "category": "generators",
+    "route": "/leave-application-generator",
+    "description": "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly."
+  },
+  {
+    "id": "resignation-letter-generator",
+    "name": "Resignation Letter Generator",
+    "category": "generators",
+    "route": "/resignation-letter-generator",
+    "description": "Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly."
+  },
+  {
+    "id": "bio-data-maker",
+    "name": "Bio Data Maker",
+    "category": "generators",
+    "route": "/bio-data-maker",
+    "description": "Create beautiful marriage biodata sheets or professional resumes. Upload photos, input family or job details, and print a custom layout."
+  },
+  {
+    "id": "instagram-bio-generator",
+    "name": "Instagram Bio Generator",
+    "category": "generators",
+    "route": "/instagram-bio-generator",
+    "description": "Generate optimized instagram bio generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "instagram-caption-generator",
+    "name": "Instagram Caption Generator",
+    "category": "generators",
+    "route": "/instagram-caption-generator",
+    "description": "Generate optimized instagram caption generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "hashtag-generator",
+    "name": "Hashtag Generator",
+    "category": "generators",
+    "route": "/hashtag-generator",
+    "description": "Generate optimized hashtag generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "slogan-generator",
+    "name": "Slogan Generator",
+    "category": "generators",
+    "route": "/slogan-generator",
+    "description": "Generate optimized slogan generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "logo-idea-generator",
+    "name": "Logo Idea Generator",
+    "category": "generators",
+    "route": "/logo-idea-generator",
+    "description": "Generate optimized logo idea generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "google-business-profile-description-generator",
+    "name": "GBP Description Generator",
+    "category": "generators",
+    "route": "/google-business-profile-description-generator",
+    "description": "Generate optimized gbp description generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "review-reply-generator",
+    "name": "Review Reply Generator",
+    "category": "generators",
+    "route": "/review-reply-generator",
+    "description": "Generate optimized review reply generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "restaurant-menu-description-generator",
+    "name": "Menu Description Generator",
+    "category": "generators",
+    "route": "/restaurant-menu-description-generator",
+    "description": "Generate optimized menu description generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "client-proposal-generator",
+    "name": "Client Proposal Generator",
+    "category": "generators",
+    "route": "/client-proposal-generator",
+    "description": "Generate optimized client proposal generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "payment-reminder-generator",
+    "name": "Payment Reminder Generator",
+    "category": "generators",
+    "route": "/payment-reminder-generator",
+    "description": "Generate optimized payment reminder generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "product-description-generator",
+    "name": "Product Description Generator",
+    "category": "generators",
+    "route": "/product-description-generator",
+    "description": "Generate optimized product description generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "refund-policy-generator",
+    "name": "Refund Policy Generator",
+    "category": "generators",
+    "route": "/refund-policy-generator",
+    "description": "Generate optimized refund policy generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "love-calculator",
+    "name": "Love Calculator",
+    "category": "generators",
+    "route": "/love-calculator",
+    "description": "Calculate relationship compatibility based on name numerology and astronomical alignment. Discover your love score instantly with our free interactive compatibility calculator."
+  },
+  {
+    "id": "svg-to-png-converter",
+    "name": "SVG to PNG Converter",
+    "category": "image",
+    "route": "/svg-to-png",
+    "description": "Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds."
+  },
+  {
+    "id": "webp-to-png-converter",
+    "name": "WEBP to PNG Converter",
+    "category": "image",
+    "route": "/webp-to-png",
+    "description": "Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool."
+  },
+  {
+    "id": "ico-to-png-converter",
+    "name": "ICO to PNG Converter",
+    "category": "image",
+    "route": "/ico-to-png",
+    "description": "Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "jpg-to-png-converter",
+    "name": "JPG to PNG Converter",
+    "category": "image",
+    "route": "/jpg-to-png",
+    "description": "Convert JPG to PNG with transparency support. Maintain high image quality and convert formats instantly in your browser. Free, secure, and privacy-focused online tool."
+  },
+  {
+    "id": "png-to-jpg-converter",
+    "name": "PNG to JPG Converter",
+    "category": "image",
+    "route": "/png-to-jpg",
+    "description": "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser."
+  },
+  {
+    "id": "svg-to-jpg-converter",
+    "name": "SVG to JPG Converter",
+    "category": "image",
+    "route": "/svg-to-jpg",
+    "description": "Convert SVG vector files into standard JPG images with custom background colors."
+  },
+  {
+    "id": "webp-to-jpg-converter",
+    "name": "WEBP to JPG Converter",
+    "category": "image",
+    "route": "/webp-to-jpg",
+    "description": "Convert WebP images to JPG format for maximum compatibility across all devices and platforms. Our free online converter is fast, secure, and preserves image detail."
+  },
+  {
+    "id": "favicon-generator-pro",
+    "name": "Advanced Favicon Generator",
+    "category": "image",
+    "route": "/favicon-generator-pro",
+    "description": "Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image."
+  },
+  {
+    "id": "image-metadata-remover",
+    "name": "Image Metadata (EXIF) Remover",
+    "category": "image",
+    "route": "/remove-image-metadata",
+    "description": "Remove sensitive GPS, camera, and author metadata from your images before sharing online."
+  },
+  {
+    "id": "image-color-picker-pro",
+    "name": "Pro Image Color Picker",
+    "category": "image",
+    "route": "/image-color-picker",
+    "description": "Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-perfect picker."
+  },
+  {
+    "id": "compress-image-to-exact-kb",
+    "name": "Compress Image to Exact KB",
+    "category": "image",
+    "route": "/compress-image-to-exact-kb",
+    "description": "Compress JPG, PNG, or WebP images to exact KB sizes like 10KB, 20KB, 50KB, 100KB, and 200KB online for free."
+  },
+  {
+    "id": "resize-image-cm-mm-inch",
+    "name": "Resize Image in CM, MM, Inches",
+    "category": "image",
+    "route": "/resize-image-cm-mm-inch",
+    "description": "Resize photos by centimeters, millimeters, inches, pixels, and DPI for official forms, printing, and documents."
+  },
+  {
+    "id": "passport-photo-maker-india",
+    "name": "Passport Photo Maker India",
+    "category": "image",
+    "route": "/passport-photo-maker-india",
+    "description": "Create passport-size photos for Indian forms with crop, background, size, and print layout options online for free."
+  },
+  {
+    "id": "aadhaar-pan-photo-resizer",
+    "name": "Aadhaar and PAN Card Photo Resizer",
+    "category": "image",
+    "route": "/aadhaar-pan-photo-resizer",
+    "description": "Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online document forms."
+  },
+  {
+    "id": "background-remover",
+    "name": "Background Remover",
+    "category": "image",
+    "route": "/background-remover",
+    "description": "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no signup needed."
+  },
+  {
+    "id": "base64-to-image-converter",
+    "name": "Base64 to Image Converter",
+    "category": "image",
+    "route": "/base64-to-image-converter",
+    "description": "Convert Base64 strings to images (PNG, JPG, WebP) instantly. Our privacy-first tool processes data locally in your browser, ensuring your images stay secure. Free and fast Base64 decoder."
+  },
+  {
+    "id": "convert-to-ico",
+    "name": "Convert to ICO",
+    "category": "image",
+    "route": "/convert-to-ico",
+    "description": "Free convert to ico tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "exif-reader",
+    "name": "EXIF Reader",
+    "category": "image",
+    "route": "/exif-reader",
+    "description": "Extract metadata and EXIF data from images including camera settings and GPS location"
+  },
+  {
+    "id": "favicon-generator",
+    "name": "Favicon Generator",
+    "category": "image",
+    "route": "/favicon-generator",
+    "description": "Generate favicons from text, images, or emojis for websites"
+  },
+  {
+    "id": "flip-image",
+    "name": "Flip Image",
+    "category": "image",
+    "route": "/flip-image",
+    "description": "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "image-compressor",
+    "name": "Image Compressor",
+    "category": "image",
+    "route": "/image-compressor",
+    "description": "Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing."
+  },
+  {
+    "id": "image-converter",
+    "name": "Image Converter",
+    "category": "image",
+    "route": "/image-converter",
+    "description": "Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy."
+  },
+  {
+    "id": "image-cropper",
+    "name": "Image Cropper",
+    "category": "image",
+    "route": "/image-cropper",
+    "description": "Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "circular-image-crop",
+    "name": "Circular Image Crop",
+    "category": "image",
+    "route": "/circular-image-crop",
+    "description": "Crop images into perfect circular shapes online. Ideal for profile pictures and social media avatars."
+  },
+  {
+    "id": "image-watermark",
+    "name": "Image Watermark Adder",
+    "category": "image",
+    "route": "/image-watermark",
+    "description": "Add text or image logo watermarks to your pictures. Customize opacity, size, positioning, and rotation to protect your images online."
+  },
+  {
+    "id": "gif-generator",
+    "name": "GIF Generator",
+    "category": "image",
+    "route": "/gif-generator",
+    "description": "Compile multiple images into an animated GIF client-side. Control delay/interval and image dimensions easily."
+  },
+  {
+    "id": "image-enlarger",
+    "name": "Image Enlarger",
+    "category": "image",
+    "route": "/image-enlarger",
+    "description": "Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "image-resizer",
+    "name": "Image Resizer",
+    "category": "image",
+    "route": "/image-resizer",
+    "description": "Resize images with custom dimensions and aspect ratios"
+  },
+  {
+    "id": "image-to-base64",
+    "name": "Image to Base64 Converter",
+    "category": "image",
+    "route": "/image-to-base64",
+    "description": "Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "jpg-converter",
+    "name": "JPG Converter",
+    "category": "image",
+    "route": "/jpg-converter",
+    "description": "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-focused and works entirely in your browser."
+  },
+  {
+    "id": "jpg-to-bmp-converter",
+    "name": "JPG to BMP Converter",
+    "category": "image",
+    "route": "/jpg-to-bmp-converter",
+    "description": "Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading files to any server."
+  },
+  {
+    "id": "jpg-to-gif-converter",
+    "name": "JPG to GIF Converter",
+    "category": "image",
+    "route": "/jpg-to-gif-converter",
+    "description": "Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online image converter."
+  },
+  {
+    "id": "jpg-to-ico-converter",
+    "name": "JPG to ICO Converter",
+    "category": "image",
+    "route": "/jpg-to-ico-converter",
+    "description": "Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signup required."
+  },
+  {
+    "id": "jpg-to-webp-converter",
+    "name": "JPG to WebP Converter",
+    "category": "image",
+    "route": "/jpg-to-webp-converter",
+    "description": "Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your website instantly."
+  },
+  {
+    "id": "logo-generator",
+    "name": "Logo Generator",
+    "category": "image",
+    "route": "/logo-generator",
+    "description": "Create professional logos with text, fonts, and custom colors"
+  },
+  {
+    "id": "photo-enhancer",
+    "name": "Photo Enhancer",
+    "category": "image",
+    "route": "/photo-enhancer",
+    "description": "Enhance photo quality with AI-powered image enhancement"
+  },
+  {
+    "id": "png-to-bmp-converter",
+    "name": "PNG to BMP Converter",
+    "category": "image",
+    "route": "/png-to-bmp-converter",
+    "description": "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast, secure, and privacy-focused."
+  },
+  {
+    "id": "png-to-gif-converter",
+    "name": "PNG to GIF Converter",
+    "category": "image",
+    "route": "/png-to-gif-converter",
+    "description": "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file uploads."
+  },
+  {
+    "id": "png-to-ico-converter",
+    "name": "PNG to ICO Converter",
+    "category": "image",
+    "route": "/png-to-ico-converter",
+    "description": "Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first browser-based conversion."
+  },
+  {
+    "id": "png-to-webp-converter",
+    "name": "PNG to WebP Converter",
+    "category": "image",
+    "route": "/png-to-webp-converter",
+    "description": "Convert PNG to WebP to optimize your website speed. Significantly reduce file sizes while maintaining image transparency and quality. Free, fast, and secure online tool."
+  },
+  {
+    "id": "rotate-image",
+    "name": "Rotate Image",
+    "category": "image",
+    "route": "/rotate-image",
+    "description": "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure. No signup needed."
+  },
+  {
+    "id": "image-tools",
+    "name": "Free Image Tools Online",
+    "category": "image",
+    "route": "/image-tools",
+    "description": "Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused."
+  },
+  {
+    "id": "icon-generator",
+    "name": "Icon Generator",
+    "category": "image",
+    "route": "/icon-generator",
+    "description": "Generate app icons and favicons for Android, iOS, and web applications."
+  },
+  {
+    "id": "image-editor",
+    "name": "Image Editor",
+    "category": "image",
+    "route": "/image-editor",
+    "description": "Edit, crop, and enhance your photos online with our free image editing tools."
+  },
+  {
+    "id": "compress-image-to-20kb",
+    "name": "Compress Image to 20KB",
+    "category": "image",
+    "route": "/compress-image-to-20kb",
+    "description": "Compress any image file (JPG, PNG, WebP) to fit strictly under 20KB while maintaining the best possible visual clarity."
+  },
+  {
+    "id": "resize-image-in-cm",
+    "name": "Resize Image in CM",
+    "category": "image",
+    "route": "/resize-image-in-cm",
+    "description": "Resize your images by specifying width and height in centimeters (cm), millimeters (mm), or inches for printing and forms."
+  },
+  {
+    "id": "compress-image-to-10kb",
+    "name": "Compress Image to 10KB",
+    "category": "image",
+    "route": "/compress-image-to-10kb",
+    "description": "Compress any image file (JPG, PNG, WebP) to fit strictly under 10KB while maintaining the best possible visual clarity."
+  },
+  {
+    "id": "compress-image-to-30kb",
+    "name": "Compress Image to 30KB",
+    "category": "image",
+    "route": "/compress-image-to-30kb",
+    "description": "Compress any image file (JPG, PNG, WebP) to fit strictly under 30KB while maintaining the best possible visual clarity."
+  },
+  {
+    "id": "compress-image-to-100kb",
+    "name": "Compress Image to 100KB",
+    "category": "image",
+    "route": "/compress-image-to-100kb",
+    "description": "Compress any image file (JPG, PNG, WebP) to fit strictly under 100KB while maintaining the best possible visual clarity."
+  },
+  {
+    "id": "compress-image-to-200kb",
+    "name": "Compress Image to 200KB",
+    "category": "image",
+    "route": "/compress-image-to-200kb",
+    "description": "Compress any image file (JPG, PNG, WebP) to fit strictly under 200KB while maintaining the best possible visual clarity."
+  },
+  {
+    "id": "resize-image-in-mm",
+    "name": "Resize Image in MM",
+    "category": "image",
+    "route": "/resize-image-in-mm",
+    "description": "Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents."
+  },
+  {
+    "id": "resize-image-in-pixels",
+    "name": "Resize Image in Pixels",
+    "category": "image",
+    "route": "/resize-image-in-pixels",
+    "description": "Resize your images by specifying exact width and height in pixels (px) for web, social media, and digital platforms."
+  },
+  {
+    "id": "image-dpi-converter",
+    "name": "Image DPI Converter",
+    "category": "image",
+    "route": "/image-dpi-converter",
+    "description": "Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing."
+  },
+  {
+    "id": "text-reverser",
+    "name": "Text Reverser",
+    "category": "text",
+    "route": "/text-reverser",
+    "description": "Flip your text backwards or reverse the order of words instantly for creative projects and coding."
+  },
+  {
+    "id": "remove-duplicate-lines",
+    "name": "Remove Duplicate Lines",
+    "category": "text",
+    "route": "/remove-duplicate-lines",
+    "description": "Clean up your lists and data by automatically removing identical lines of text. Fast and private."
+  },
+  {
+    "id": "markdown-to-html",
+    "name": "Markdown to HTML Converter",
+    "category": "text",
+    "route": "/markdown-to-html",
+    "description": "Convert Markdown text into clean HTML code for your website, blog, or email newsletters."
+  },
+  {
+    "id": "markdown-to-pdf",
+    "name": "Markdown to PDF Converter",
+    "category": "text",
+    "route": "/markdown-to-pdf",
+    "description": "Convert Markdown text into a clean, print-ready PDF document instantly."
+  },
+  {
+    "id": "url-encoder-decoder",
+    "name": "URL Encoder Decoder",
+    "category": "text",
+    "route": "/url-encoder-decoder",
+    "description": "Encode or decode your URLs and URL query parameters instantly. 100% private."
+  },
+  {
+    "id": "string-length-calculator",
+    "name": "String Length Calculator",
+    "category": "text",
+    "route": "/string-length-calculator",
+    "description": "Get detailed string analytics including character, word, byte, and line counts instantly."
+  },
+  {
+    "id": "text-to-binary-hex-octal",
+    "name": "Text to Binary/Hex/Octal Converter",
+    "category": "text",
+    "route": "/text-to-binary-hex-octal",
+    "description": "Convert plain text strings to binary, hex, and octal formats simultaneously. 100% local."
+  },
+  {
+    "id": "slug-to-text-converter",
+    "name": "Slug to Text Converter",
+    "category": "text",
+    "route": "/slug-to-text-converter",
+    "description": "Convert URL slugs with hyphens or underscores back into clean, readable text strings."
+  },
+  {
+    "id": "word-frequency-counter",
+    "name": "Word Frequency Counter",
+    "category": "text",
+    "route": "/word-frequency-counter",
+    "description": "Calculate word density, occurrences, and text analytics with a sorted frequency table."
+  },
+  {
+    "id": "case-converter",
+    "name": "Case Converter (Sentence, Upper, Lower)",
+    "category": "text",
+    "route": "/case-converter",
+    "description": "Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly."
+  },
+  {
+    "id": "emoji-text-generator",
+    "name": "Emoji Text Generator",
+    "category": "text",
+    "route": "/emoji-text-generator",
+    "description": "Add fun emojis to your text or convert words into emoji-rich messages for social media."
+  },
+  {
+    "id": "random-word-generator",
+    "name": "Random Word Generator",
+    "category": "text",
+    "route": "/random-word-generator",
+    "description": "Generate random words instantly for creative writing, brainstorming, or vocabulary practice. Our free online tool offers customizable options for word type and quantity. Fun and fast."
+  },
+  {
+    "id": "resume-ats-score-checker",
+    "name": "Resume ATS Score Checker",
+    "category": "text",
+    "route": "/resume-ats-score-checker",
+    "description": "Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professionals."
+  },
+  {
+    "id": "resume-keyword-matcher",
+    "name": "Resume Keyword Matcher",
+    "category": "text",
+    "route": "/resume-keyword-matcher",
+    "description": "Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS."
+  },
+  {
+    "id": "cover-letter-generator",
+    "name": "Cover Letter Generator",
+    "category": "text",
+    "route": "/cover-letter-generator",
+    "description": "Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit."
+  },
+  {
+    "id": "linkedin-headline-generator",
+    "name": "LinkedIn Headline Generator",
+    "category": "text",
+    "route": "/linkedin-headline-generator",
+    "description": "Create professional LinkedIn headlines that stand out. Generate multiple variations for developers, students, freelancers, and marketers."
+  },
+  {
+    "id": "internship-message-generator",
+    "name": "Internship Application Message Generator",
+    "category": "text",
+    "route": "/internship-message-generator",
+    "description": "Generate short, human internship messages for LinkedIn, email, and founder outreach. Perfect for students and freshers."
+  },
+  {
+    "id": "article-rewriter",
+    "name": "Article Rewriter",
+    "category": "text",
+    "route": "/article-rewriter",
+    "description": "Paraphrase and rewrite articles instantly with our free online Article Rewriter. Improve readability, change tone, and create unique content variations for blogs and SEO. 100% free and secure."
+  },
+  {
+    "id": "comma-separator",
+    "name": "Comma Separator",
+    "category": "text",
+    "route": "/comma-separator",
+    "description": "Convert lists, columns, or text into comma-separated values (CSV) instantly. Our free online Comma Separator is perfect for data cleaning and formatting tasks. Privacy-focused browser tool."
+  },
+  {
+    "id": "line-sorter",
+    "name": "Line Sorter",
+    "category": "text",
+    "route": "/line-sorter",
+    "description": "Sort lists, names, or lines alphabetically or by length instantly. Our free online Line Sorter helps you organize data for cleaner documentation and code. Privacy-friendly and fast."
+  },
+  {
+    "id": "lorem-ipsum-generator",
+    "name": "Lorem Ipsum Generator",
+    "category": "text",
+    "route": "/lorem-ipsum",
+    "description": "Generate custom Lorem Ipsum text for your designs."
+  },
+  {
+    "id": "number-to-word-converter",
+    "name": "Number to Word Converter",
+    "category": "text",
+    "route": "/number-to-word-converter",
+    "description": "Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple formats and large numbers."
+  },
+  {
+    "id": "remove-line-breaks",
+    "name": "Remove Line Breaks",
+    "category": "text",
+    "route": "/remove-line-breaks",
+    "description": "Remove line breaks, carriage returns, and extra whitespace from your text instantly. Perfect for cleaning up copied content for clean formatting. Free and privacy-focused online tool."
+  },
+  {
+    "id": "text-compare",
+    "name": "Text Compare",
+    "category": "text",
+    "route": "/text-compare",
+    "description": "Compare two text snippets side-by-side to find differences instantly. Our free online Text Compare tool highlights additions, deletions, and changes with high precision. Secure and browser-based."
+  },
+  {
+    "id": "text-repeater",
+    "name": "Text Repeater",
+    "category": "text",
+    "route": "/text-repeater",
+    "description": "Repeat any text as many times as you need with our free online Text Repeater. Perfect for testing, social media, or fun content. Simple, fast, and works instantly in your browser."
+  },
+  {
+    "id": "text-sorter",
+    "name": "Text Sorter",
+    "category": "text",
+    "route": "/text-sorter",
+    "description": "Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for researchers and developers."
+  },
+  {
+    "id": "text-to-hashtags-converter",
+    "name": "Text to Hashtags Converter",
+    "category": "text",
+    "route": "/text-to-hashtags-converter",
+    "description": "Convert your text into trending hashtags for social media instantly. Our free tool helps you optimize posts for Instagram, TikTok, and Twitter with relevant, search-friendly tags."
+  },
+  {
+    "id": "text-to-slug-converter",
+    "name": "Text to Slug Converter",
+    "category": "text",
+    "route": "/text-to-slug-converter",
+    "description": "Transform any text or title into a URL-friendly slug instantly. Perfect for SEO-friendly web development, blog posts, and clean link structures. Free and fast online tool."
+  },
+  {
+    "id": "text-to-tags-converter",
+    "name": "Text to Tags Converter",
+    "category": "text",
+    "route": "/text-to-tags-converter",
+    "description": "Extract and generate relevant meta tags from your text instantly. Our free online converter helps you create SEO tags, HTML keywords, and header tags for better web visibility."
+  },
+  {
+    "id": "word-counter",
+    "name": "Word Counter",
+    "category": "text",
+    "route": "/word-counter",
+    "description": "Count words, characters, sentences, and paragraphs in your text instantly. Our free online Word Counter also provides estimated reading time and text analysis. Fast and private."
+  },
+  {
+    "id": "word-to-number-converter",
+    "name": "Word to Number Converter",
+    "category": "text",
+    "route": "/word-to-number-converter",
+    "description": "Convert words into digits instantly with our free online Word to Number converter. Perfect for data entry, educational exercises, and technical documentation cleanup."
+  },
+  {
+    "id": "markdown-to-text",
+    "name": "Markdown to Text",
+    "category": "text",
+    "route": "/markdown-to-text",
+    "description": "Convert Markdown formatted text to clean plain text instantly. Perfect for cleaning up content from ChatGPT, Claude, and GitHub."
+  },
+  {
+    "id": "kruti-dev-to-unicode",
+    "name": "Kruti Dev to Unicode Converter",
+    "category": "text",
+    "route": "/kruti-dev-to-unicode",
+    "description": "Convert legacy Kruti Dev 010 font layout text to standard Unicode Devanagari Hindi text dynamically."
+  },
+  {
+    "id": "unicode-to-kruti-dev",
+    "name": "Unicode to Kruti Dev Converter",
+    "category": "text",
+    "route": "/unicode-to-kruti-dev",
+    "description": "Convert standard Unicode Devanagari Hindi text to legacy Kruti Dev 010 font layout text dynamically."
+  },
+  {
+    "id": "hinglish-to-hindi",
+    "name": "Hinglish to Hindi Converter",
+    "category": "text",
+    "route": "/hinglish-to-hindi",
+    "description": "Convert phonetic Hinglish (Roman English) text into standard Unicode Hindi (Devanagari) dynamically."
+  },
+  {
+    "id": "hindi-typing-tool",
+    "name": "Hindi Typing Tool",
+    "category": "text",
+    "route": "/hindi-typing-tool",
+    "description": "Type in English and get it transliterated to Hindi in real-time. Free online Devanagari phonetic Hindi typing utility."
+  },
+  {
+    "id": "fancy-text-generator",
+    "name": "Fancy Text Generator",
+    "category": "text",
+    "route": "/fancy-text-generator",
+    "description": "Generate stylish text, cursive fonts, gothic letters, bubble symbols, and gaming nicknames instantly. Copy and paste stylish names for Instagram, Twitter, and FreeFire."
+  },
+  {
+    "id": "text-to-handwriting",
+    "name": "Text to Handwriting Converter",
+    "category": "text",
+    "route": "/text-to-handwriting",
+    "description": "Convert digital text into realistic handwritten pages. Customize paper styles (lined, grid, plain), handwriting fonts, and ink colors to download handwritten sheets as PNG."
+  },
+  {
+    "id": "compress-pdf-to-exact-kb",
+    "name": "Compress PDF to Exact KB",
+    "category": "pdf",
+    "route": "/compress-pdf-to-exact-kb",
+    "description": "Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online."
+  },
+  {
+    "id": "remove-pages-from-pdf",
+    "name": "Remove Pages from PDF",
+    "category": "pdf",
+    "route": "/remove-pages-from-pdf",
+    "description": "Delete unwanted pages from a PDF file online. Select pages, remove them, and download a clean PDF for free."
+  },
+  {
+    "id": "pdf-to-jpg-converter",
+    "name": "PDF to JPG Converter",
+    "category": "pdf",
+    "route": "/pdf-to-jpg-converter",
+    "description": "Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file."
+  },
+  {
+    "id": "merge-pdf-online",
+    "name": "Merge PDF Online",
+    "category": "pdf",
+    "route": "/merge-pdf-online",
+    "description": "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly."
+  },
+  {
+    "id": "html-to-pdf",
+    "name": "HTML to PDF Converter",
+    "category": "pdf",
+    "route": "/html-to-pdf",
+    "description": "Convert HTML code or files to print-ready PDF documents client-side instantly."
+  },
+  {
+    "id": "pdf-compressor",
+    "name": "PDF Compressor",
+    "category": "pdf",
+    "route": "/pdf-compressor",
+    "description": "Compress PDF documents to reduce file size while maintaining original print quality."
+  },
+  {
+    "id": "pdf-page-numbers",
+    "name": "PDF Page Numbers Adder",
+    "category": "pdf",
+    "route": "/pdf-page-numbers",
+    "description": "Add page numbers to your PDF documents easily. Customize positioning, font size, and start index."
+  },
+  {
+    "id": "pdf-watermark",
+    "name": "PDF Watermark Creator",
+    "category": "pdf",
+    "route": "/pdf-watermark",
+    "description": "Add text or image logos as watermarks to all pages of your PDF document securely in your browser."
+  },
+  {
+    "id": "pdf-metadata-editor",
+    "name": "PDF Metadata Editor",
+    "category": "pdf",
+    "route": "/pdf-metadata-editor",
+    "description": "Edit PDF document metadata including Title, Author, Subject, and Keywords online for free."
+  },
+  {
+    "id": "pdf-merger",
+    "name": "PDF Merger",
+    "category": "pdf",
+    "route": "/pdf-merger",
+    "description": "Combine multiple PDF documents into a single file quickly. Reorder files and merge instantly."
+  },
+  {
+    "id": "pdf-splitter",
+    "name": "PDF Splitter",
+    "category": "pdf",
+    "route": "/pdf-splitter",
+    "description": "Split PDF documents by page ranges or extract individual pages into separate PDF files."
+  },
+  {
+    "id": "pdf-rotation",
+    "name": "PDF Rotation Tool",
+    "category": "pdf",
+    "route": "/pdf-rotation",
+    "description": "Rotate single or all pages of a PDF document to landscape or portrait orientation instantly."
+  },
+  {
+    "id": "image-to-pdf",
+    "name": "Image to PDF",
+    "category": "pdf",
+    "route": "/image-to-pdf",
+    "description": "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required."
+  },
+  {
+    "id": "pdf-editor",
+    "name": "PDF Editor",
+    "category": "pdf",
+    "route": "/pdf-editor",
+    "description": "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup."
+  },
+  {
+    "id": "pdf-protect",
+    "name": "PDF Password Protect",
+    "category": "pdf",
+    "route": "/pdf-protect",
+    "description": "Secure your PDF files with strong password encryption online for free. Privacy-first local processing ensures your sensitive documents never leave your browser."
+  },
+  {
+    "id": "pdf-to-image",
+    "name": "PDF to Image",
+    "category": "pdf",
+    "route": "/pdf-to-image",
+    "description": "Convert PDF pages to high-quality JPG, PNG images"
+  },
+  {
+    "id": "pdf-to-word",
+    "name": "PDF to Word",
+    "category": "pdf",
+    "route": "/pdf-to-word",
+    "description": "Convert PDF files to editable Word documents"
+  },
+  {
+    "id": "pdf-unlocker",
+    "name": "PDF Unlocker",
+    "category": "pdf",
+    "route": "/pdf-unlocker",
+    "description": "Remove password protection from PDF files"
+  },
+  {
+    "id": "word-to-pdf",
+    "name": "Word to PDF",
+    "category": "pdf",
+    "route": "/word-to-pdf",
+    "description": "Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required."
+  },
+  {
+    "id": "pdf-grayscale",
+    "name": "PDF Grayscale",
+    "category": "pdf",
+    "route": "/pdf-grayscale",
+    "description": "Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signup required."
+  },
+  {
+    "id": "pdf-repair",
+    "name": "PDF Repair",
+    "category": "pdf",
+    "route": "/pdf-repair",
+    "description": "Fix corrupted or broken PDF files online for free. Our secure repair tool rebuilds document headers and cross-reference tables to restore access to your PDF documents instantly."
+  },
+  {
+    "id": "pdf-tools",
+    "name": "PDF Tools",
+    "category": "pdf",
+    "route": "/pdf-tools",
+    "description": "Merge, split, compress, and manipulate PDF documents"
+  },
+  {
+    "id": "video-tools",
+    "name": "Video Tools",
+    "category": "video",
+    "route": "/video-tools",
+    "description": "Compress videos, convert formats, and create GIFs"
+  },
+  {
+    "id": "video-converter",
+    "name": "Video Converter",
+    "category": "video",
+    "route": "/video-converter",
+    "description": "Convert video files between MP4, AVI, MKV, MOV, and more."
+  },
+  {
+    "id": "video-editor",
+    "name": "Video Editor",
+    "category": "video",
+    "route": "/video-editor",
+    "description": "Edit, cut, and merge video files online for free."
+  },
+  {
+    "id": "akillitv-video-downloader",
+    "name": "Akillitv Video Downloader",
+    "category": "video",
+    "route": "/akillitv-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Akillitv Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "all-downloaders",
+    "name": "All Downloaders",
+    "category": "video",
+    "route": "/all-downloaders",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the All Downloaders. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "bandcamp-video-downloader",
+    "name": "Bandcamp Video Downloader",
+    "category": "video",
+    "route": "/bandcamp-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Bandcamp Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "bilibili-video-downloader",
+    "name": "Bilibili Video Downloader",
+    "category": "video",
+    "route": "/bilibili-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Bilibili Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "bitchute-video-downloader",
+    "name": "Bitchute Video Downloader",
+    "category": "video",
+    "route": "/bitchute-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Bitchute Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "blogger-video-downloader",
+    "name": "Blogger Video Downloader",
+    "category": "video",
+    "route": "/blogger-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Blogger Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "blutv-video-downloader",
+    "name": "Blutv Video Downloader",
+    "category": "video",
+    "route": "/blutv-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Blutv Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "buzzfeed-video-downloader",
+    "name": "Buzzfeed Video Downloader",
+    "category": "video",
+    "route": "/buzzfeed-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Buzzfeed Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "capcut-video-downloader",
+    "name": "Capcut Video Downloader",
+    "category": "video",
+    "route": "/capcut-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Capcut Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "chingari-video-downloader",
+    "name": "Chingari Video Downloader",
+    "category": "video",
+    "route": "/chingari-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Chingari Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "dailymotion-video-downloader",
+    "name": "Dailymotion Video Downloader",
+    "category": "video",
+    "route": "/dailymotion-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Dailymotion Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "douyin-video-downloader",
+    "name": "Douyin Video Downloader",
+    "category": "video",
+    "route": "/douyin-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Douyin Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "downloaders",
+    "name": "Downloaders",
+    "category": "video",
+    "route": "/downloaders",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Downloaders. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "espn-video-downloader",
+    "name": "Espn Video Downloader",
+    "category": "video",
+    "route": "/espn-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Espn Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "facebook-story-downloader",
+    "name": "Facebook Story Downloader",
+    "category": "video",
+    "route": "/facebook-story-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Facebook Story Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "facebook-video-downloader",
+    "name": "Facebook Video Downloader",
+    "category": "video",
+    "route": "/facebook-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Facebook Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "fb-video-saver",
+    "name": "Facebook Video Saver",
+    "category": "video",
+    "route": "/fb-video-saver",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Facebook Video Saver. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "febspot-video-downloader",
+    "name": "Febspot Video Downloader",
+    "category": "video",
+    "route": "/febspot-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Febspot Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "flickr-video-downloader",
+    "name": "Flickr Video Downloader",
+    "category": "video",
+    "route": "/flickr-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Flickr Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "ifunny-video-downloader",
+    "name": "Ifunny Video Downloader",
+    "category": "video",
+    "route": "/ifunny-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Ifunny Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "ig-highlights-saver",
+    "name": "Instagram Highlights Saver",
+    "category": "video",
+    "route": "/ig-highlights-saver",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Instagram Highlights Saver. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "imdb-video-downloader",
+    "name": "Imdb Video Downloader",
+    "category": "video",
+    "route": "/imdb-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Imdb Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "imgur-video-downloader",
+    "name": "Imgur Video Downloader",
+    "category": "video",
+    "route": "/imgur-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Imgur Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "insta-reels-saver",
+    "name": "Insta Reels Saver",
+    "category": "video",
+    "route": "/insta-reels-saver",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Insta Reels Saver. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "instagram-downloader",
+    "name": "Instagram Downloader",
+    "category": "video",
+    "route": "/instagram-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Instagram Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "instagram-image-downloader",
+    "name": "Instagram Image Downloader",
+    "category": "video",
+    "route": "/instagram-image-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Instagram Image Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "instagram-reel-downloader",
+    "name": "Instagram Reel Downloader",
+    "category": "video",
+    "route": "/instagram-reel-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Instagram Reel Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "instagram-story-downloader",
+    "name": "Instagram Story Downloader",
+    "category": "video",
+    "route": "/instagram-story-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Instagram Story Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "instagram-videos-downloader",
+    "name": "Instagram Videos Downloader",
+    "category": "video",
+    "route": "/instagram-videos-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Instagram Videos Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "izlesene-video-downloader",
+    "name": "Izlesene Video Downloader",
+    "category": "video",
+    "route": "/izlesene-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Izlesene Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "kickstarter-video-downloader",
+    "name": "Kickstarter Video Downloader",
+    "category": "video",
+    "route": "/kickstarter-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Kickstarter Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "kwai-video-downloader",
+    "name": "Kwai Video Downloader",
+    "category": "video",
+    "route": "/kwai-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Kwai Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "likee-video-downloader",
+    "name": "Likee Video Downloader",
+    "category": "video",
+    "route": "/likee-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Likee Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "linkedin-video-downloader",
+    "name": "Linkedin Video Downloader",
+    "category": "video",
+    "route": "/linkedin-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Linkedin Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "m3u8-downloader",
+    "name": "M3u8 Downloader",
+    "category": "video",
+    "route": "/m3u8-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the M3u8 Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "mashable-video-downloader",
+    "name": "Mashable Video Downloader",
+    "category": "video",
+    "route": "/mashable-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Mashable Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "mixcloud-video-downloader",
+    "name": "Mixcloud Video Downloader",
+    "category": "video",
+    "route": "/mixcloud-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Mixcloud Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "mxtakatak-video-downloader",
+    "name": "Mxtakatak Video Downloader",
+    "category": "video",
+    "route": "/mxtakatak-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Mxtakatak Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "ninegag-video-downloader",
+    "name": "Ninegag Video Downloader",
+    "category": "video",
+    "route": "/ninegag-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Ninegag Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "odnoklassniki-video-downloader",
+    "name": "Odnoklassniki Video Downloader",
+    "category": "video",
+    "route": "/odnoklassniki-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Odnoklassniki Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "online-video-downloader",
+    "name": "Online Video Downloader",
+    "category": "video",
+    "route": "/online-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Online Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "periscope-video-downloader",
+    "name": "Periscope Video Downloader",
+    "category": "video",
+    "route": "/periscope-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Periscope Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "pinterest-clip-saver",
+    "name": "Pinterest Clip Saver",
+    "category": "video",
+    "route": "/pinterest-clip-saver",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Pinterest Clip Saver. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "pinterest-gif-downloader",
+    "name": "Pinterest Gif Downloader",
+    "category": "video",
+    "route": "/pinterest-gif-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Pinterest Gif Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "pinterest-image-downloader",
+    "name": "Pinterest Image Downloader",
+    "category": "video",
+    "route": "/pinterest-image-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Pinterest Image Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "pinterest-video-downloader",
+    "name": "Pinterest Video Downloader",
+    "category": "video",
+    "route": "/pinterest-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Pinterest Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "puhutv-video-downloader",
+    "name": "Puhutv Video Downloader",
+    "category": "video",
+    "route": "/puhutv-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Puhutv Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "reddit-downloader",
+    "name": "Reddit Downloader",
+    "category": "video",
+    "route": "/reddit-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Reddit Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "reddit-media-saver",
+    "name": "Reddit Media Saver",
+    "category": "video",
+    "route": "/reddit-media-saver",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Reddit Media Saver. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "reddit-video-downloader",
+    "name": "Reddit Video Downloader",
+    "category": "video",
+    "route": "/reddit-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Reddit Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "rumble-video-downloader",
+    "name": "Rumble Video Downloader",
+    "category": "video",
+    "route": "/rumble-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Rumble Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "save-fb-stories-anonymous",
+    "name": "Save Facebook Stories Anonymous",
+    "category": "video",
+    "route": "/save-fb-stories-anonymous",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Save Facebook Stories Anonymous. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "save-ig-content",
+    "name": "Save Instagram Content",
+    "category": "video",
+    "route": "/save-ig-content",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Save Instagram Content. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "save-insta-pfp",
+    "name": "Save Insta Profile Picture",
+    "category": "video",
+    "route": "/save-insta-pfp",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Save Insta Profile Picture. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "save-instagram-clips",
+    "name": "Save Instagram Clips",
+    "category": "video",
+    "route": "/save-instagram-clips",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Save Instagram Clips. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "save-reels-video",
+    "name": "Save Reels Video",
+    "category": "video",
+    "route": "/save-reels-video",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Save Reels Video. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "save-snaps-to-gallery",
+    "name": "Save Snaps To Gallery",
+    "category": "video",
+    "route": "/save-snaps-to-gallery",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Save Snaps To Gallery. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "save-tiktok-mp4",
+    "name": "Save Tiktok MP4",
+    "category": "video",
+    "route": "/save-tiktok-mp4",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Save Tiktok MP4. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "save-twitter-videos",
+    "name": "Save Twitter Videos",
+    "category": "video",
+    "route": "/save-twitter-videos",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Save Twitter Videos. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "sharechat-video-downloader",
+    "name": "Sharechat Video Downloader",
+    "category": "video",
+    "route": "/sharechat-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Sharechat Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "snapchat-saver-online",
+    "name": "Snapchat Saver Online",
+    "category": "video",
+    "route": "/snapchat-saver-online",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Snapchat Saver Online. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "snapchat-video-downloader",
+    "name": "Snapchat Video Downloader",
+    "category": "video",
+    "route": "/snapchat-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Snapchat Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "streamable-video-downloader",
+    "name": "Streamable Video Downloader",
+    "category": "video",
+    "route": "/streamable-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Streamable Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "ted-video-downloader",
+    "name": "Ted Video Downloader",
+    "category": "video",
+    "route": "/ted-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Ted Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "telegram-video-downloader",
+    "name": "Telegram Video Downloader",
+    "category": "video",
+    "route": "/telegram-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Telegram Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "threads-video-downloader",
+    "name": "Threads Video Downloader",
+    "category": "video",
+    "route": "/threads-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Threads Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "tiktok-downloader",
+    "name": "Tiktok Downloader",
+    "category": "video",
+    "route": "/tiktok-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Tiktok Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "tiktok-saver-no-watermark",
+    "name": "Tiktok Saver No Watermark",
+    "category": "video",
+    "route": "/tiktok-saver-no-watermark",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Tiktok Saver No Watermark. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "tiktok-videos-downloader",
+    "name": "Tiktok Videos Downloader",
+    "category": "video",
+    "route": "/tiktok-videos-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Tiktok Videos Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "tumblr-video-downloader",
+    "name": "Tumblr Video Downloader",
+    "category": "video",
+    "route": "/tumblr-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Tumblr Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "twitch-video-downloader",
+    "name": "Twitch Video Downloader",
+    "category": "video",
+    "route": "/twitch-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Twitch Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "twitter-video-downloader",
+    "name": "Twitter Video Downloader",
+    "category": "video",
+    "route": "/twitter-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Twitter Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "universal-video-downloader",
+    "name": "Universal Video Downloader",
+    "category": "video",
+    "route": "/universal-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Universal Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "vimeo-video-downloader",
+    "name": "Vimeo Video Downloader",
+    "category": "video",
+    "route": "/vimeo-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Vimeo Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "vkontakte-video-downloader",
+    "name": "Vkontakte Video Downloader",
+    "category": "video",
+    "route": "/vkontakte-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Vkontakte Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "youtube-channel-age-checker",
+    "name": "YouTube Channel Age Checker",
+    "category": "youtube",
+    "route": "/youtube-channel-age-checker",
+    "description": "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive analysis. Fast and private."
+  },
+  {
+    "id": "youtube-channel-finder",
+    "name": "YouTube Channel Finder",
+    "category": "youtube",
+    "route": "/youtube-channel-finder",
+    "description": "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your next video project."
+  },
+  {
+    "id": "youtube-channel-id-extractor",
+    "name": "YouTube Channel ID Extractor",
+    "category": "youtube",
+    "route": "/youtube-channel-id-extractor",
+    "description": "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations. Free and fast online tool."
+  },
+  {
+    "id": "youtube-playlist-link-extractor",
+    "name": "YouTube Playlist Link Extractor",
+    "category": "youtube",
+    "route": "/youtube-playlist-link-extractor",
+    "description": "Extract all video URLs, IDs, titles, and publish dates from any public YouTube playlist. Free online playlist extractor for creators, marketers, and researchers."
+  },
+  {
+    "id": "youtube-channel-statistics",
+    "name": "YouTube Channel Statistics",
+    "category": "youtube",
+    "route": "/youtube-channel-statistics",
+    "description": "Get detailed insights and statistics for any YouTube channel instantly. View subscriber counts, video totals, and engagement metrics with our free online analytics tool."
+  },
+  {
+    "id": "youtube-comment-picker",
+    "name": "YouTube Comment Picker",
+    "category": "youtube",
+    "route": "/youtube-comment-picker",
+    "description": "Pick a random winner from your YouTube video comments instantly. Our free online Comment Picker is perfect for giveaways, contests, and audience engagement. Fast and fair."
+  },
+  {
+    "id": "youtube-description-extractor",
+    "name": "YouTube Description Extractor",
+    "category": "youtube",
+    "route": "/youtube-description-extractor",
+    "description": "Extract the full description from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool."
+  },
+  {
+    "id": "youtube-embed-code-generator",
+    "name": "YouTube Embed Code Generator",
+    "category": "youtube",
+    "route": "/youtube-embed-code-generator",
+    "description": "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and privacy settings for your website."
+  },
+  {
+    "id": "youtube-hashtag-extractor",
+    "name": "YouTube Hashtag Extractor",
+    "category": "youtube",
+    "route": "/youtube-hashtag-extractor",
+    "description": "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video SEO for better reach."
+  },
+  {
+    "id": "youtube-hashtag-generator",
+    "name": "YouTube Hashtag Generator",
+    "category": "youtube",
+    "route": "/youtube-hashtag-generator",
+    "description": "Generate viral hashtags for your YouTube videos instantly. Our free online tool suggests relevant, search-friendly tags to help you reach more viewers and boost engagement."
+  },
+  {
+    "id": "youtube-money-calculator",
+    "name": "YouTube Money Calculator",
+    "category": "youtube",
+    "route": "/youtube-money-calculator",
+    "description": "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metrics. Perfect for creators."
+  },
+  {
+    "id": "youtube-region-restriction-checker",
+    "name": "YouTube Region Restriction Checker",
+    "category": "youtube",
+    "route": "/youtube-region-restriction-checker",
+    "description": "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your content. Fast and accurate."
+  },
+  {
+    "id": "youtube-subscribe-link-generator",
+    "name": "YouTube Subscribe Link Generator",
+    "category": "youtube",
+    "route": "/youtube-subscribe-link-generator",
+    "description": "Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for social media and bios."
+  },
+  {
+    "id": "youtube-tag-extractor",
+    "name": "YouTube Tag Extractor",
+    "category": "youtube",
+    "route": "/youtube-tag-extractor",
+    "description": "Extract hidden tags from any YouTube video instantly. Our free online tool helps you discover the keywords used by top-performing creators to boost your own video SEO."
+  },
+  {
+    "id": "youtube-tag-generator",
+    "name": "YouTube Tag Generator",
+    "category": "youtube",
+    "route": "/youtube-tag-generator",
+    "description": "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank higher in search results."
+  },
+  {
+    "id": "youtube-timestamp-link-generator",
+    "name": "YouTube Timestamp Link Generator",
+    "category": "youtube",
+    "route": "/youtube-timestamp-link-generator",
+    "description": "Create direct links to specific parts of any YouTube video instantly. Our free online tool helps you share precise moments with friends, students, or your audience. Fast and easy."
+  },
+  {
+    "id": "youtube-title-extractor",
+    "name": "YouTube Title Extractor",
+    "category": "youtube",
+    "route": "/youtube-title-extractor",
+    "description": "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool."
+  },
+  {
+    "id": "youtube-title-length-checker",
+    "name": "YouTube Title Length Checker",
+    "category": "youtube",
+    "route": "/youtube-title-length-checker",
+    "description": "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is visible in search results."
+  },
+  {
+    "id": "youtube-video-count-checker",
+    "name": "YouTube Video Count Checker",
+    "category": "youtube",
+    "route": "/youtube-video-count-checker",
+    "description": "Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel auditing."
+  },
+  {
+    "id": "youtube-video-statistics",
+    "name": "YouTube Video Statistics",
+    "category": "youtube",
+    "route": "/youtube-video-statistics",
+    "description": "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool."
+  },
+  {
+    "id": "youtube-title-capitalizer",
+    "name": "Youtube Video Title Capitalizer",
+    "category": "youtube",
+    "route": "/youtube-title-capitalizer",
+    "description": "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles stand out."
+  },
+  {
+    "id": "youtube-views-ratio-calculator",
+    "name": "YouTube Views Ratio Calculator",
+    "category": "youtube",
+    "route": "/youtube-views-ratio-calculator",
+    "description": "Calculate the view-to-engagement ratio for any YouTube video instantly. Our free online tool helps you understand audience interaction and video performance beyond just views."
+  },
+  {
+    "id": "youtube-title-generator",
+    "name": "YouTube Title Generator",
+    "category": "youtube",
+    "route": "/youtube-title-generator",
+    "description": "Generate optimized youtube title generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "youtube-description-generator",
+    "name": "YouTube Description Generator",
+    "category": "youtube",
+    "route": "/youtube-description-generator",
+    "description": "Generate optimized youtube description generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "youtube-thumbnail-text-generator",
+    "name": "YouTube Thumbnail Text Generator",
+    "category": "youtube",
+    "route": "/youtube-thumbnail-text-generator",
+    "description": "Generate optimized youtube thumbnail text generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "youtube-thumbnail-downloader",
+    "name": "Youtube Thumbnail Downloader",
+    "category": "youtube",
+    "route": "/youtube-thumbnail-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Youtube Thumbnail Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "youtube-video-downloader",
+    "name": "Youtube Video Downloader",
+    "category": "youtube",
+    "route": "/youtube-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Youtube Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "text-to-speech",
+    "name": "Text to Speech",
+    "category": "audio",
+    "route": "/text-to-speech",
+    "description": "Convert text to natural sounding speech audio"
+  },
+  {
+    "id": "audio-tools",
+    "name": "Audio Tools",
+    "category": "audio",
+    "route": "/audio-tools",
+    "description": "Compress and convert audio files between formats"
+  },
+  {
+    "id": "guitar-tuner",
+    "name": "Guitar Tuner",
+    "category": "audio",
+    "route": "/guitar-tuner",
+    "description": "Free online guitar tuner. Uses your microphone to tune your guitar accurately."
+  },
+  {
+    "id": "free-mp3-extractor",
+    "name": "Free MP3 Extractor",
+    "category": "audio",
+    "route": "/free-mp3-extractor",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Free MP3 Extractor. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "gaana-video-downloader",
+    "name": "Gaana Video Downloader",
+    "category": "audio",
+    "route": "/gaana-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Gaana Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "modify-mp3-file",
+    "name": "Modify MP3 File",
+    "category": "audio",
+    "route": "/modify-mp3-file",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Modify MP3 File. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "mp3-from-tiktok",
+    "name": "MP3 From Tiktok",
+    "category": "audio",
+    "route": "/mp3-from-tiktok",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the MP3 From Tiktok. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "mp4-to-mp3",
+    "name": "MP4 To MP3",
+    "category": "audio",
+    "route": "/mp4-to-mp3",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the MP4 To MP3. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "shrink-mp3-size",
+    "name": "Shrink MP3 Size",
+    "category": "audio",
+    "route": "/shrink-mp3-size",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Shrink MP3 Size. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "soundcloud-video-downloader",
+    "name": "Soundcloud Video Downloader",
+    "category": "audio",
+    "route": "/soundcloud-video-downloader",
+    "description": "Free, high-speed online downloader to save and download media content from platforms using the Soundcloud Video Downloader. No registration, 100% secure client-side browser processing."
+  },
+  {
+    "id": "uuid-generator",
+    "name": "UUID/GUID Generator",
+    "category": "developer",
+    "route": "/uuid-generator",
+    "description": "Generate unique UUID v4 and GUID strings instantly for your applications and databases."
+  },
+  {
+    "id": "slug-generator",
+    "name": "URL Slug Generator",
+    "category": "developer",
+    "route": "/slug-generator",
+    "description": "Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages."
+  },
+  {
+    "id": "json-to-typescript",
+    "name": "JSON to TypeScript Interface",
+    "category": "developer",
+    "route": "/json-to-typescript",
+    "description": "Convert JSON objects into clean TypeScript interfaces or type definitions automatically."
+  },
+  {
+    "id": "sql-formatter",
+    "name": "SQL Formatter & Beautifier",
+    "category": "developer",
+    "route": "/sql-formatter",
+    "description": "Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more."
+  },
+  {
+    "id": "html-minifier",
+    "name": "HTML Minifier",
+    "category": "developer",
+    "route": "/html-minifier",
+    "description": "Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times."
+  },
+  {
+    "id": "user-agent-parser",
+    "name": "User Agent Parser",
+    "category": "developer",
+    "route": "/user-agent-parser",
+    "description": "Parse any User Agent string to detect Browser, OS, and Engine details instantly."
+  },
+  {
+    "id": "yaml-to-json-converter",
+    "name": "YAML to JSON Converter",
+    "category": "developer",
+    "route": "/yaml-to-json-converter",
+    "description": "Convert YAML configurations to clean JSON structures instantly. Safe & secure."
+  },
+  {
+    "id": "json-to-yaml-converter",
+    "name": "JSON to YAML Converter",
+    "category": "developer",
+    "route": "/json-to-yaml-converter",
+    "description": "Convert JSON configurations to clean YAML structures instantly. Safe & secure."
+  },
+  {
+    "id": "html-to-xml-entities",
+    "name": "HTML to XML Entities Converter",
+    "category": "developer",
+    "route": "/html-to-xml-entities",
+    "description": "Convert HTML special characters into safe XML entities and display tags securely online."
+  },
+  {
+    "id": "css-border-radius-generator",
+    "name": "CSS Border Radius Generator",
+    "category": "developer",
+    "route": "/css-border-radius-generator",
+    "description": "Generate CSS border-radius rules interactively with live shape previews and webkit/moz prefixes."
+  },
+  {
+    "id": "crontab-generator",
+    "name": "Crontab Expression Generator",
+    "category": "developer",
+    "route": "/crontab-generator",
+    "description": "Easily create and validate cron job expressions with our interactive visual generator."
+  },
+  {
+    "id": "xml-formatter",
+    "name": "XML Formatter & Beautifier",
+    "category": "developer",
+    "route": "/xml-formatter",
+    "description": "Clean and format messy XML data into a readable hierarchical structure."
+  },
+  {
+    "id": "html-entity-encoder",
+    "name": "HTML Entity Encoder/Decoder",
+    "category": "developer",
+    "route": "/html-entity-encoder",
+    "description": "Encode or decode HTML entities to prevent XSS or display special characters safely."
+  },
+  {
+    "id": "random-name-generator",
+    "name": "Random Name Generator",
+    "category": "developer",
+    "route": "/random-name-generator",
+    "description": "Generate random names for characters, personas, or test data with gender and niche options."
+  },
+  {
+    "id": "binary-to-hex-converter",
+    "name": "Binary to Hex Converter",
+    "category": "developer",
+    "route": "/binary-to-hex-converter",
+    "description": "Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast and secure."
+  },
+  {
+    "id": "jwt-decoder",
+    "name": "JWT Decoder & Debugger",
+    "category": "developer",
+    "route": "/jwt-decoder",
+    "description": "Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature."
+  },
+  {
+    "id": "api-key-tester",
+    "name": "API Key Tester Suite",
+    "category": "developer",
+    "route": "/api-key-tester",
+    "description": "Secure, client-side, browser-based API credentials validators for developers. Verify your OpenAI, Gemini, DeepSeek, Stripe, and other API keys instantly."
+  },
+  {
+    "id": "amazon-ses-api-key-tester",
+    "name": "Amazon SES API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/amazon-ses",
+    "description": "Test your Amazon SES credentials with the send email endpoint."
+  },
+  {
+    "id": "anthropic-api-key-tester",
+    "name": "Anthropic Claude API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/anthropic",
+    "description": "Test your Anthropic Claude API key with the messages endpoint."
+  },
+  {
+    "id": "ascii-to-binary-converter",
+    "name": "ASCII to Binary Converter",
+    "category": "developer",
+    "route": "/ascii-to-binary-converter",
+    "description": "Convert ASCII text to binary code instantly. Our free online converter is perfect for computer science students, developers, and hobbyists. Fast, secure, and browser-based."
+  },
+  {
+    "id": "ascii-to-text-converter",
+    "name": "ASCII to Text Converter",
+    "category": "developer",
+    "route": "/ascii-to-text-converter",
+    "description": "Convert ASCII character codes back to readable text instantly. Our free online tool makes it easy to decode ASCII sequences for development and debugging tasks."
+  },
+  {
+    "id": "attio-api-key-tester",
+    "name": "Attio API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/attio",
+    "description": "Test your Attio API key with the records endpoint."
+  },
+  {
+    "id": "binary-to-ascii-converter",
+    "name": "Binary to ASCII Converter",
+    "category": "developer",
+    "route": "/binary-to-ascii-converter",
+    "description": "Transform binary code (0s and 1s) into readable ASCII text instantly. Our free online converter is fast, accurate, and works entirely in your browser. No signup required."
+  },
+  {
+    "id": "binary-to-decimal-converter",
+    "name": "Binary to Decimal Converter",
+    "category": "developer",
+    "route": "/binary-to-decimal-converter",
+    "description": "Convert binary numbers to decimal (Base-10) instantly. Our free online converter helps you with computer science calculations and binary data analysis in seconds."
+  },
+  {
+    "id": "binary-to-octal-converter",
+    "name": "Binary to Octal Converter",
+    "category": "developer",
+    "route": "/binary-to-octal-converter",
+    "description": "Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical students."
+  },
+  {
+    "id": "binary-to-text-converter",
+    "name": "Binary to Text Converter",
+    "category": "developer",
+    "route": "/binary-to-text-converter",
+    "description": "Decode binary strings into readable text instantly. Our free online tool is perfect for discovering hidden messages or debugging data streams. 100% free and secure."
+  },
+  {
+    "id": "brevo-api-key-tester",
+    "name": "Brevo API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/brevo",
+    "description": "Test your Brevo (Sendinblue) API key with the send email endpoint."
+  },
+  {
+    "id": "clearbit-api-key-tester",
+    "name": "Clearbit API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/clearbit",
+    "description": "Test your Clearbit API key with the company enrichment endpoint."
+  },
+  {
+    "id": "cohere-api-key-tester",
+    "name": "Cohere API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/cohere",
+    "description": "Test your Cohere API key with the generate endpoint."
+  },
+  {
+    "id": "coresignal-api-key-tester",
+    "name": "Coresignal API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/coresignal",
+    "description": "Test your Coresignal API key with the companies endpoint."
+  },
+  {
+    "id": "crunchbase-api-key-tester",
+    "name": "Crunchbase API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/crunchbase",
+    "description": "Test your Crunchbase API key with the organizations endpoint."
+  },
+  {
+    "id": "css-beautifier",
+    "name": "CSS Beautifier",
+    "category": "developer",
+    "route": "/css-beautifier",
+    "description": "Format and prettify your CSS code instantly with our free online CSS Beautifier. Improve code readability, fix indentation, and organize your stylesheets for better maintenance. Fast and secure."
+  },
+  {
+    "id": "css-minifier",
+    "name": "CSS Minifier",
+    "category": "developer",
+    "route": "/css-minifier",
+    "description": "Compress and minify your CSS files to reduce page load times and improve website performance. Our free online tool removes unnecessary whitespace and comments instantly. Privacy-focused."
+  },
+  {
+    "id": "csv-to-json-converter",
+    "name": "CSV to JSON Converter",
+    "category": "developer",
+    "route": "/csv-to-json-converter",
+    "description": "Convert CSV files to JSON format instantly. Our free online converter makes it easy to transform spreadsheet data into developer-friendly JSON code for web applications and APIs."
+  },
+  {
+    "id": "data-axle-api-key-tester",
+    "name": "Data Axle API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/data-axle",
+    "description": "Test your Data Axle API key with the business lookup endpoint."
+  },
+  {
+    "id": "datanyze-api-key-tester",
+    "name": "Datanyze API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/datanyze",
+    "description": "Test your Datanyze API key with the companies endpoint."
+  },
+  {
+    "id": "decimal-to-binary-converter",
+    "name": "Decimal to Binary Converter",
+    "category": "developer",
+    "route": "/decimal-to-binary-converter",
+    "description": "Convert decimal numbers (Base-10) to binary code (Base-2) instantly. Our free online converter is perfect for students, developers, and data analysis tasks. Fast, secure, and accurate."
+  },
+  {
+    "id": "decimal-to-hex-converter",
+    "name": "Decimal to HEX Converter",
+    "category": "developer",
+    "route": "/decimal-to-hex-converter",
+    "description": "Transform decimal numbers into hexadecimal format instantly. Our free online tool is perfect for web development, low-level programming, and color code analysis. Fast and private."
+  },
+  {
+    "id": "decimal-to-octal-converter",
+    "name": "Decimal to Octal Converter",
+    "category": "developer",
+    "route": "/decimal-to-octal-converter",
+    "description": "Convert decimal numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for computer science and technical tasks. No signup required."
+  },
+  {
+    "id": "decimal-to-text-converter",
+    "name": "Decimal to Text Converter",
+    "category": "developer",
+    "route": "/decimal-to-text-converter",
+    "description": "Convert decimal character codes back to readable text instantly. Our free online tool helps you decode numeric data streams and debug text processing tasks in your browser."
+  },
+  {
+    "id": "deepseek-api-key-tester",
+    "name": "DeepSeek API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/deepseek",
+    "description": "Test your DeepSeek API key with the chat completions endpoint."
+  },
+  {
+    "id": "demandbase-api-key-tester",
+    "name": "Demandbase API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/demandbase",
+    "description": "Test your Demandbase API key with the accounts endpoint."
+  },
+  {
+    "id": "enrich-api-key-tester",
+    "name": "Enrich API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/enrich",
+    "description": "Test your Enrich API key with the person enrichment endpoint."
+  },
+  {
+    "id": "freshdesk-api-key-tester",
+    "name": "Freshdesk API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/freshdesk",
+    "description": "Test your Freshdesk API key with the tickets endpoint."
+  },
+  {
+    "id": "fullcontact-api-key-tester",
+    "name": "FullContact API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/fullcontact",
+    "description": "Test your FullContact API key with the person enrichment endpoint."
+  },
+  {
+    "id": "google-gemini-api-key-tester",
+    "name": "Google Gemini API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/google-gemini",
+    "description": "Test your Google Gemini API key with the generateContent endpoint."
+  },
+  {
+    "id": "groq-api-key-tester",
+    "name": "Groq API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/groq",
+    "description": "Test your Groq API key with the chat completions endpoint."
+  },
+  {
+    "id": "hex-to-binary-converter",
+    "name": "HEX to Binary Converter",
+    "category": "developer",
+    "route": "/hex-to-binary-converter",
+    "description": "Transform hexadecimal values into binary code instantly. Our free online HEX to Binary converter is perfect for developers, hardware engineers, and technical students. Fast and secure."
+  },
+  {
+    "id": "hex-to-decimal-converter",
+    "name": "HEX to Decimal Converter",
+    "category": "developer",
+    "route": "/hex-to-decimal-converter",
+    "description": "Convert hexadecimal numbers to decimal (Base-10) instantly. Our free online tool provides quick and accurate base conversions for programming and memory address analysis."
+  },
+  {
+    "id": "hex-to-octal-converter",
+    "name": "HEX to Octal Converter",
+    "category": "developer",
+    "route": "/hex-to-octal-converter",
+    "description": "Convert hexadecimal values to octal format instantly. Our free online converter helps with computer science base transformations and data processing in your browser."
+  },
+  {
+    "id": "hex-to-text-converter",
+    "name": "HEX to Text Converter",
+    "category": "developer",
+    "route": "/hex-to-text-converter",
+    "description": "Convert hexadecimal strings back to readable text instantly. Our free online HEX to Text tool is perfect for decoding data, debugging, and discovering hidden text streams."
+  },
+  {
+    "id": "hg-insights-api-key-tester",
+    "name": "HG Insights API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/hg-insights",
+    "description": "Test your HG Insights API key with the companies endpoint."
+  },
+  {
+    "id": "html-beautifier",
+    "name": "HTML Beautifier",
+    "category": "developer",
+    "route": "/html-beautifier",
+    "description": "Format and prettify your HTML code instantly. Our free online HTML Beautifier fixes indentation, improves readability, and cleans up messy markup for better web development."
+  },
+  {
+    "id": "html-decoder",
+    "name": "HTML Decoder",
+    "category": "developer",
+    "route": "/html-decoder",
+    "description": "Decode HTML entities back to their original characters instantly. Our free online tool converts &amp; and similar entities into readable text for easy debugging and content cleaning."
+  },
+  {
+    "id": "html-encoder",
+    "name": "HTML Encoder",
+    "category": "developer",
+    "route": "/html-encoder",
+    "description": "Encode text into HTML entities instantly for secure web display. Our free online tool protects your markup by converting special characters into safe HTML-encoded strings."
+  },
+  {
+    "id": "hubspot-api-key-tester",
+    "name": "HubSpot API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/hubspot",
+    "description": "Test your HubSpot API key with the contacts endpoint."
+  },
+  {
+    "id": "intercom-api-key-tester",
+    "name": "Intercom API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/intercom",
+    "description": "Test your Intercom access token with the me endpoint."
+  },
+  {
+    "id": "javascript-beautifier",
+    "name": "JavaScript Beautifier",
+    "category": "developer",
+    "route": "/javascript-beautifier",
+    "description": "Format and prettify your JavaScript code instantly. Our free online JS Beautifier improves code readability, fixes indentation, and helps you understand complex scripts easily."
+  },
+  {
+    "id": "javascript-deobfuscator",
+    "name": "JavaScript DeObfuscator",
+    "category": "developer",
+    "route": "/javascript-deobfuscator",
+    "description": "Make obfuscated JavaScript code readable again instantly. Our free online DeObfuscator reverses common obfuscation techniques to help with code analysis and debugging."
+  },
+  {
+    "id": "javascript-minifier",
+    "name": "JavaScript Minifier",
+    "category": "developer",
+    "route": "/javascript-minifier",
+    "description": "Compress and minify your JavaScript files to reduce payload size and speed up your website. Our free online tool removes unnecessary code while preserving functionality."
+  },
+  {
+    "id": "javascript-obfuscator",
+    "name": "JavaScript Obfuscator",
+    "category": "developer",
+    "route": "/javascript-obfuscator",
+    "description": "Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent unauthorized script modification."
+  },
+  {
+    "id": "json-editor",
+    "name": "JSON Editor",
+    "category": "developer",
+    "route": "/json-editor",
+    "description": "Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data perfectly."
+  },
+  {
+    "id": "json-formatter",
+    "name": "JSON Formatter",
+    "category": "developer",
+    "route": "/json-formatter",
+    "description": "Format and beautify your JSON data instantly for better readability. Our free online tool validates your JSON structure and provides a clean, indented view of your code."
+  },
+  {
+    "id": "json-minify",
+    "name": "JSON Minify",
+    "category": "developer",
+    "route": "/json-minify",
+    "description": "Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly."
+  },
+  {
+    "id": "json-to-csv-converter",
+    "name": "JSON to CSV Converter",
+    "category": "developer",
+    "route": "/json-to-csv-converter",
+    "description": "Convert JSON data to CSV format instantly. Our free online converter makes it easy to transform complex JSON structures into simple spreadsheet-ready tables."
+  },
+  {
+    "id": "json-to-json-schema",
+    "name": "JSON to JSON Schema",
+    "category": "developer",
+    "route": "/json-to-json-schema",
+    "description": "Generate a JSON Schema from your JSON data automatically. Our free online tool helps you define validation rules and document your JSON structure for APIs."
+  },
+  {
+    "id": "json-to-text-converter",
+    "name": "JSON to Text Converter",
+    "category": "developer",
+    "route": "/json-to-text-converter",
+    "description": "Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw data."
+  },
+  {
+    "id": "json-to-tsv-converter",
+    "name": "JSON to TSV Converter",
+    "category": "developer",
+    "route": "/json-to-tsv-converter",
+    "description": "Convert JSON data to Tab-Separated Values (TSV) format instantly. Our free online converter helps you prepare data for Excel and other spreadsheet applications."
+  },
+  {
+    "id": "json-to-xml-converter",
+    "name": "JSON to XML Converter",
+    "category": "developer",
+    "route": "/json-to-xml-converter",
+    "description": "Convert JSON data to XML format instantly. Our free online tool handles nesting and attributes to ensure a clean transformation for legacy system compatibility."
+  },
+  {
+    "id": "json-validator",
+    "name": "JSON Validator",
+    "category": "developer",
+    "route": "/json-validator",
+    "description": "Validate your JSON data for syntax errors and structural integrity instantly. Our free online tool helps you catch bugs and ensure your JSON is RFC-compliant."
+  },
+  {
+    "id": "json-viewer",
+    "name": "JSON Viewer",
+    "category": "developer",
+    "route": "/json-viewer",
+    "description": "Free json viewer tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "leadgenius-api-key-tester",
+    "name": "LeadGenius API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/leadgenius",
+    "description": "Test your LeadGenius API key with the companies endpoint."
+  },
+  {
+    "id": "leadspace-api-key-tester",
+    "name": "Leadspace API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/leadspace",
+    "description": "Test your Leadspace API key with the contacts endpoint."
+  },
+  {
+    "id": "loops-api-key-tester",
+    "name": "Loops API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/loops",
+    "description": "Test your Loops API key with the contacts endpoint."
+  },
+  {
+    "id": "lusha-api-key-tester",
+    "name": "Lusha API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/lusha",
+    "description": "Test your Lusha API key with the contacts endpoint."
+  },
+  {
+    "id": "mailgun-api-key-tester",
+    "name": "Mailgun API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/mailgun",
+    "description": "Test your Mailgun API key with the messages endpoint."
+  },
+  {
+    "id": "mattermark-api-key-tester",
+    "name": "Mattermark API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/mattermark",
+    "description": "Test your Mattermark API key with the companies endpoint."
+  },
+  {
+    "id": "melissa-api-key-tester",
+    "name": "Melissa API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/melissa",
+    "description": "Test your Melissa API key with the address verification endpoint."
+  },
+  {
+    "id": "octal-to-binary-converter",
+    "name": "Octal to Binary Converter",
+    "category": "developer",
+    "route": "/octal-to-binary-converter",
+    "description": "Convert octal numbers to binary code instantly. Our free online converter provides fast and accurate base transformations for computer science students and developers."
+  },
+  {
+    "id": "octal-to-decimal-converter",
+    "name": "Octal to Decimal Converter",
+    "category": "developer",
+    "route": "/octal-to-decimal-converter",
+    "description": "Convert octal numbers to decimal (Base-10) instantly. Our free online tool makes it easy to transform numeric bases for programming and mathematical calculations."
+  },
+  {
+    "id": "octal-to-hex-converter",
+    "name": "Octal to HEX Converter",
+    "category": "developer",
+    "route": "/octal-to-hex-converter",
+    "description": "Transform octal values into hexadecimal format instantly. Our free online converter is perfect for low-level programming and memory address transformations."
+  },
+  {
+    "id": "octal-to-text-converter",
+    "name": "Octal to Text Converter",
+    "category": "developer",
+    "route": "/octal-to-text-converter",
+    "description": "Convert octal character codes back to readable text instantly. Our free online tool helps you decode data streams and debug text processing tasks in your browser."
+  },
+  {
+    "id": "openai-api-key-tester",
+    "name": "OpenAI API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/openai",
+    "description": "Test your OpenAI API key with the models endpoint."
+  },
+  {
+    "id": "people-data-labs-api-key-tester",
+    "name": "People Data Labs API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/people-data-labs",
+    "description": "Test your People Data Labs API key with the person enrichment endpoint."
+  },
+  {
+    "id": "pipedrive-api-key-tester",
+    "name": "Pipedrive API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/pipedrive",
+    "description": "Test your Pipedrive API token with the deals endpoint."
+  },
+  {
+    "id": "pipl-api-key-tester",
+    "name": "Pipl API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/pipl",
+    "description": "Test your Pipl API key with the search endpoint."
+  },
+  {
+    "id": "postmark-api-key-tester",
+    "name": "Postmark Server Token Tester",
+    "category": "developer",
+    "route": "/api-key-tester/postmark",
+    "description": "Test your Postmark Server Token with the email sending endpoint."
+  },
+  {
+    "id": "resend-api-key-tester",
+    "name": "Resend API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/resend",
+    "description": "Test your Resend API key with the emails endpoint."
+  },
+  {
+    "id": "sendgrid-api-key-tester",
+    "name": "SendGrid API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/sendgrid",
+    "description": "Test your SendGrid API key with the mail send endpoint."
+  },
+  {
+    "id": "snov-io-api-key-tester",
+    "name": "Snov.io API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/snov-io",
+    "description": "Test your Snov.io API key with the leads endpoint."
+  },
+  {
+    "id": "sparkpost-api-key-tester",
+    "name": "SparkPost API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/sparkpost",
+    "description": "Test your SparkPost API key with the transmissions endpoint."
+  },
+  {
+    "id": "stripe-api-key-tester",
+    "name": "Stripe API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/stripe",
+    "description": "Test your Stripe API key with the charges endpoint."
+  },
+  {
+    "id": "text-to-ascii-converter",
+    "name": "Text to ASCII Converter",
+    "category": "developer",
+    "route": "/text-to-ascii-converter",
+    "description": "Convert plain text into ASCII character codes instantly. Our free online tool provides decimal ASCII values for every character in your input string. Fast and secure."
+  },
+  {
+    "id": "text-to-binary-converter",
+    "name": "Text to Binary Converter",
+    "category": "developer",
+    "route": "/text-to-binary-converter",
+    "description": "Translate text into binary code (0s and 1s) instantly. Our free online converter is perfect for learning how computers represent data and creating secret binary messages."
+  },
+  {
+    "id": "text-to-decimal-converter",
+    "name": "Text to Decimal Converter",
+    "category": "developer",
+    "route": "/text-to-decimal-converter",
+    "description": "Convert text characters into their decimal numeric equivalents instantly. Our free online tool is useful for debugging character encoding and understanding data representations."
+  },
+  {
+    "id": "text-to-hex-converter",
+    "name": "Text to HEX Converter",
+    "category": "developer",
+    "route": "/text-to-hex-converter",
+    "description": "Convert plain text into hexadecimal format instantly. Our free online tool provides a clean hex representation of your input string for development and data analysis."
+  },
+  {
+    "id": "text-to-octal-converter",
+    "name": "Text to Octal Converter",
+    "category": "developer",
+    "route": "/text-to-octal-converter",
+    "description": "Convert text into octal numeric values instantly. Our free online converter provides base-8 representations for every character in your text for technical analysis."
+  },
+  {
+    "id": "tsv-to-json-converter",
+    "name": "TSV to JSON Converter",
+    "category": "developer",
+    "route": "/tsv-to-json-converter",
+    "description": "Convert Tab-Separated Values (TSV) into JSON format instantly. Our free online tool makes it easy to transform structured data for web applications and API development."
+  },
+  {
+    "id": "twilio-api-key-tester",
+    "name": "Twilio API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/twilio",
+    "description": "Test your Twilio Account SID and Auth Token with the messages endpoint."
+  },
+  {
+    "id": "xml-to-json-converter",
+    "name": "XML to JSON Converter",
+    "category": "developer",
+    "route": "/xml-to-json-converter",
+    "description": "Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for web apps."
+  },
+  {
+    "id": "zendesk-api-key-tester",
+    "name": "Zendesk API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/zendesk",
+    "description": "Test your Zendesk API token with the tickets endpoint."
+  },
+  {
+    "id": "zoominfo-api-key-tester",
+    "name": "ZoomInfo API Key Tester",
+    "category": "developer",
+    "route": "/api-key-tester/zoominfo",
+    "description": "Test your ZoomInfo API key with the contacts endpoint."
+  },
+  {
+    "id": "base64-tool",
+    "name": "Base64 Tool",
+    "category": "developer",
+    "route": "/base64-tool",
+    "description": "Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text format."
+  },
+  {
+    "id": "css-gradient-generator",
+    "name": "CSS Gradient Generator",
+    "category": "developer",
+    "route": "/css-gradient-generator",
+    "description": "Create beautiful CSS gradients for your web projects."
+  },
+  {
+    "id": "css-shadow-generator",
+    "name": "CSS Shadow Generator",
+    "category": "developer",
+    "route": "/css-shadow-generator",
+    "description": "Generate CSS box shadows and text shadows for modern web design."
+  },
+  {
+    "id": "code-formatter",
+    "name": "Code Formatter",
+    "category": "developer",
+    "route": "/code-formatter",
+    "description": "Format and beautify HTML, CSS, JavaScript, and SQL code."
+  },
+  {
+    "id": "adsense-calculator",
+    "name": "Adsense Calculator",
+    "category": "utilities",
+    "route": "/adsense-calculator",
+    "description": "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "age-calculator",
+    "name": "Age Calculator",
+    "category": "utilities",
+    "route": "/age-calculator",
+    "description": "Free age calculator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "angle-converter",
+    "name": "Angle Converter",
+    "category": "utilities",
+    "route": "/angle-converter",
+    "description": "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and accurate."
+  },
+  {
+    "id": "apparent-power-converter",
+    "name": "Apparent Power Converter",
+    "category": "utilities",
+    "route": "/apparent-power-converter",
+    "description": "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians."
+  },
+  {
+    "id": "area-converter",
+    "name": "Area Converter",
+    "category": "utilities",
+    "route": "/area-converter",
+    "description": "Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design projects."
+  },
+  {
+    "id": "average-calculator",
+    "name": "Average Calculator",
+    "category": "utilities",
+    "route": "/average-calculator",
+    "description": "Calculate the mean, median, mode, and range of any dataset instantly. Our free online Average Calculator helps you analyze statistics and numeric data in seconds."
+  },
+  {
+    "id": "base64-decode",
+    "name": "Base64 Decode",
+    "category": "utilities",
+    "route": "/base64-decode",
+    "description": "Decode Base64 strings back to their original plain text instantly. Our privacy-first tool processes everything in your browser, ensuring your data never leaves your device."
+  },
+  {
+    "id": "base64-encode",
+    "name": "Base64 Encode",
+    "category": "utilities",
+    "route": "/base64-encode",
+    "description": "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in web URLs."
+  },
+  {
+    "id": "charge-converter",
+    "name": "Charge Converter",
+    "category": "utilities",
+    "route": "/charge-converter",
+    "description": "Convert between coulombs, millicoulombs, and other electrical charge units instantly. Our free online tool provides quick and accurate physics base transformations."
+  },
+  {
+    "id": "color-converter",
+    "name": "Color Converter",
+    "category": "utilities",
+    "route": "/color-converter",
+    "description": "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision."
+  },
+  {
+    "id": "confidence-interval-calculator",
+    "name": "Confidence Interval Calculator",
+    "category": "utilities",
+    "route": "/confidence-interval-calculator",
+    "description": "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your research."
+  },
+  {
+    "id": "convert-srt-to-vtt",
+    "name": "Convert SRT to VTT",
+    "category": "utilities",
+    "route": "/convert-srt-to-vtt",
+    "description": "Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming platforms."
+  },
+  {
+    "id": "convert-vtt-to-srt",
+    "name": "Convert VTT to SRT",
+    "category": "utilities",
+    "route": "/convert-vtt-to-srt",
+    "description": "Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players."
+  },
+  {
+    "id": "cpm-calculator",
+    "name": "CPM Calculator",
+    "category": "utilities",
+    "route": "/cpm-calculator",
+    "description": "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach efficiency."
+  },
+  {
+    "id": "credit-card-generator",
+    "name": "Credit Card Generator",
+    "category": "utilities",
+    "route": "/credit-card-generator",
+    "description": "Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks without being real cards."
+  },
+  {
+    "id": "credit-card-validator",
+    "name": "Credit Card Validator",
+    "category": "utilities",
+    "route": "/credit-card-validator",
+    "description": "Check if a credit card number is valid using the Luhn algorithm instantly. Our free online tool helps you verify card formats and identify card types for testing purposes."
+  },
+  {
+    "id": "currency-converter",
+    "name": "Currency Converter",
+    "category": "utilities",
+    "route": "/currency-converter",
+    "description": "Convert currencies with real-time exchange rates instantly. Our free online tool supports all major global currencies for travel, business, and financial planning."
+  },
+  {
+    "id": "current-converter",
+    "name": "Current Converter",
+    "category": "utilities",
+    "route": "/current-converter",
+    "description": "Convert between amperes, milliamperes, and other electrical current units instantly. Our free online tool is perfect for electronics and electrical engineering tasks."
+  },
+  {
+    "id": "digital-converter",
+    "name": "Digital Converter",
+    "category": "utilities",
+    "route": "/digital-converter",
+    "description": "Convert between bytes, kilobytes, megabytes, and gigabytes instantly. Our free online tool helps you understand data storage and file sizes in seconds."
+  },
+  {
+    "id": "disclaimer-generator",
+    "name": "Disclaimer Generator",
+    "category": "utilities",
+    "route": "/disclaimer-generator",
+    "description": "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal requirements."
+  },
+  {
+    "id": "discount-calculator",
+    "name": "Discount Calculator",
+    "category": "utilities",
+    "route": "/discount-calculator",
+    "description": "Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping."
+  },
+  {
+    "id": "dns-records-checker",
+    "name": "DNS Records Checker",
+    "category": "utilities",
+    "route": "/dns-records-checker",
+    "description": "Retrieve all DNS records (A, MX, TXT, CNAME) for any domain instantly. Our free online tool helps you troubleshoot website hosting and email configuration issues."
+  },
+  {
+    "id": "domain-age-checker",
+    "name": "Domain Age Checker",
+    "category": "utilities",
+    "route": "/domain-age-checker",
+    "description": "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis."
+  },
+  {
+    "id": "domain-to-ip-converter",
+    "name": "Domain to IP Converter",
+    "category": "utilities",
+    "route": "/domain-to-ip-converter",
+    "description": "Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues."
+  },
+  {
+    "id": "each-converter",
+    "name": "Each Converter",
+    "category": "utilities",
+    "route": "/each-converter",
+    "description": "Free each converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "energy-converter",
+    "name": "Energy Converter",
+    "category": "utilities",
+    "route": "/energy-converter",
+    "description": "Free energy converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "facebook-id-finder",
+    "name": "Facebook ID Finder",
+    "category": "utilities",
+    "route": "/facebook-id-finder",
+    "description": "Free facebook id finder tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "faq-schema-generator",
+    "name": "FAQ Schema Generator",
+    "category": "utilities",
+    "route": "/faq-schema-generator",
+    "description": "Free faq schema generator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "frequency-converter",
+    "name": "Frequency Converter",
+    "category": "utilities",
+    "route": "/frequency-converter",
+    "description": "Free frequency converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "get-http-headers",
+    "name": "Get HTTP Headers",
+    "category": "utilities",
+    "route": "/get-http-headers",
+    "description": "Free get http headers tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "gst-calculator",
+    "name": "GST Calculator",
+    "category": "utilities",
+    "route": "/gst-calculator",
+    "description": "Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "hex-to-rgb-converter",
+    "name": "HEX to RGB Converter",
+    "category": "utilities",
+    "route": "/hex-to-rgb-converter",
+    "description": "Free hex to rgb converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "hosting-checker",
+    "name": "Hosting Checker",
+    "category": "utilities",
+    "route": "/hosting-checker",
+    "description": "Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "htaccess-redirect-generator",
+    "name": "Htaccess Redirect Generator",
+    "category": "utilities",
+    "route": "/htaccess-redirect-generator",
+    "description": "Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "http-status-code-checker",
+    "name": "HTTP Status Code Checker",
+    "category": "utilities",
+    "route": "/http-status-code-checker",
+    "description": "Free http status code checker tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "illuminance-converter",
+    "name": "Illuminance Converter",
+    "category": "utilities",
+    "route": "/illuminance-converter",
+    "description": "Free illuminance converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "indexnow-submitter",
+    "name": "IndexNow Submitter",
+    "category": "utilities",
+    "route": "/indexnow",
+    "description": "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol."
+  },
+  {
+    "id": "internet-speed-test",
+    "name": "Internet Speed Test",
+    "category": "utilities",
+    "route": "/internet-speed-test",
+    "description": "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly."
+  },
+  {
+    "id": "ip-address-lookup",
+    "name": "IP Address Lookup",
+    "category": "utilities",
+    "route": "/ip-address-lookup",
+    "description": "Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "length-converter",
+    "name": "Length Converter",
+    "category": "utilities",
+    "route": "/length-converter",
+    "description": "Free length converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "loan-calculator",
+    "name": "Loan Calculator",
+    "category": "utilities",
+    "route": "/loan-calculator",
+    "description": "Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "margin-calculator",
+    "name": "Margin Calculator",
+    "category": "utilities",
+    "route": "/margin-calculator",
+    "description": "Free margin calculator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "md5-generator",
+    "name": "MD5 Generator",
+    "category": "utilities",
+    "route": "/md5-generator",
+    "description": "Free md5 generator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "number-to-roman-numerals",
+    "name": "Number to Roman Numerals",
+    "category": "utilities",
+    "route": "/number-to-roman-numerals",
+    "description": "Free number to roman numerals tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "pace-converter",
+    "name": "Pace Converter",
+    "category": "utilities",
+    "route": "/pace-converter",
+    "description": "Free pace converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "page-size-checker",
+    "name": "Page Size Checker",
+    "category": "utilities",
+    "route": "/page-size-checker",
+    "description": "Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "parts-per-converter",
+    "name": "Parts Per Converter",
+    "category": "utilities",
+    "route": "/parts-per-converter",
+    "description": "Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "secure-password-generator",
+    "name": "Secure Password Generator",
+    "category": "utilities",
+    "route": "/secure-password-generator",
+    "description": "Create cryptographically secure, random passwords online. Customize length, character sets, and verify strength locally."
+  },
+  {
+    "id": "password-generator",
+    "name": "Password Generator",
+    "category": "utilities",
+    "route": "/password-generator",
+    "description": "Create strong, secure passwords instantly with customizable settings."
+  },
+  {
+    "id": "paypal-fee-calculator",
+    "name": "Paypal Fee Calculator",
+    "category": "utilities",
+    "route": "/paypal-fee-calculator",
+    "description": "Free paypal fee calculator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "percentage-calculator",
+    "name": "Percentage Calculator",
+    "category": "utilities",
+    "route": "/percentage-calculator",
+    "description": "Free percentage calculator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "power-converter",
+    "name": "Power Converter",
+    "category": "utilities",
+    "route": "/power-converter",
+    "description": "Free power converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "pressure-converter",
+    "name": "Pressure Converter",
+    "category": "utilities",
+    "route": "/pressure-converter",
+    "description": "Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "privacy-policy-generator",
+    "name": "Privacy Policy Generator",
+    "category": "utilities",
+    "route": "/privacy-policy-generator",
+    "description": "Free privacy policy generator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "probability-calculator",
+    "name": "Probability Calculator",
+    "category": "utilities",
+    "route": "/probability-calculator",
+    "description": "Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "qr-code-decoder",
+    "name": "QR Code Decoder",
+    "category": "utilities",
+    "route": "/qr-code-decoder",
+    "description": "Free qr code decoder tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "qr-code-generator",
+    "name": "QR Code Generator",
+    "category": "utilities",
+    "route": "/qr-code-generator",
+    "description": "Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "random-uuid-generator",
+    "name": "Random UUID Generator",
+    "category": "utilities",
+    "route": "/random-uuid-generator",
+    "description": "Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "reactive-energy-converter",
+    "name": "Reactive Energy Converter",
+    "category": "utilities",
+    "route": "/reactive-energy-converter",
+    "description": "Free reactive energy converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "reactive-power-converter",
+    "name": "Reactive Power Converter",
+    "category": "utilities",
+    "route": "/reactive-power-converter",
+    "description": "Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "redirect-checker",
+    "name": "Redirect Checker",
+    "category": "utilities",
+    "route": "/redirect-checker",
+    "description": "Free redirect checker tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "rgb-to-hex-converter",
+    "name": "RGB to HEX Converter",
+    "category": "utilities",
+    "route": "/rgb-to-hex-converter",
+    "description": "Free rgb to hex converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "roman-numerals-to-number",
+    "name": "Roman Numerals to Number",
+    "category": "utilities",
+    "route": "/roman-numerals-to-number",
+    "description": "Free roman numerals to number tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "sales-tax-calculator",
+    "name": "Sales Tax Calculator",
+    "category": "utilities",
+    "route": "/sales-tax-calculator",
+    "description": "Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "screen-resolution-simulator",
+    "name": "Screen Resolution Simulator",
+    "category": "utilities",
+    "route": "/screen-resolution-simulator",
+    "description": "Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "server-status-checker",
+    "name": "Server Status Checker",
+    "category": "utilities",
+    "route": "/server-status-checker",
+    "description": "Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "speed-converter",
+    "name": "Speed Converter",
+    "category": "utilities",
+    "route": "/speed-converter",
+    "description": "Free speed converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "temperature-converter",
+    "name": "Temperature Converter",
+    "category": "utilities",
+    "route": "/temperature-converter",
+    "description": "Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "time-converter",
+    "name": "Time Converter",
+    "category": "utilities",
+    "route": "/time-converter",
+    "description": "Free time converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "torque-converter",
+    "name": "Torque Converter",
+    "category": "utilities",
+    "route": "/torque-converter",
+    "description": "Free torque converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "url-decode",
+    "name": "URL Decode",
+    "category": "utilities",
+    "route": "/url-decode",
+    "description": "Free url decode tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "url-encode",
+    "name": "URL Encode",
+    "category": "utilities",
+    "route": "/url-encode",
+    "description": "Free url encode tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "url-opener",
+    "name": "URL Opener",
+    "category": "utilities",
+    "route": "/url-opener",
+    "description": "Free url opener tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "url-parser",
+    "name": "URL Parser",
+    "category": "utilities",
+    "route": "/url-parser",
+    "description": "Free url parser tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "url-rewriting-tool",
+    "name": "URL Rewriting Tool",
+    "category": "utilities",
+    "route": "/url-rewriting-tool",
+    "description": "Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "url-shortener",
+    "name": "URL Shortener",
+    "category": "utilities",
+    "route": "/url-shortener",
+    "description": "Shorten long URLs for easier sharing"
+  },
+  {
+    "id": "utm-builder",
+    "name": "UTM Builder",
+    "category": "utilities",
+    "route": "/utm-builder",
+    "description": "Easily build campaign URLs with UTM parameters for Google Analytics tracking."
+  },
+  {
+    "id": "voltage-converter",
+    "name": "Voltage Converter",
+    "category": "utilities",
+    "route": "/voltage-converter",
+    "description": "Free voltage converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "volume-converter",
+    "name": "Volume Converter",
+    "category": "utilities",
+    "route": "/volume-converter",
+    "description": "Free volume converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "volumetric-flow-rate-converter",
+    "name": "Volumetric Flow Rate Converter",
+    "category": "utilities",
+    "route": "/volumetric-flow-rate-converter",
+    "description": "Free volumetric flow rate converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "weight-converter",
+    "name": "Weight Converter",
+    "category": "utilities",
+    "route": "/weight-converter",
+    "description": "Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "what-is-my-browser",
+    "name": "What Is My Browser",
+    "category": "utilities",
+    "route": "/what-is-my-browser",
+    "description": "Free what is my browser tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "what-is-my-ip-address",
+    "name": "What Is My IP Address",
+    "category": "utilities",
+    "route": "/what-is-my-ip-address",
+    "description": "Free what is my ip address tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "what-is-my-screen-resolution",
+    "name": "What Is My Screen Resolution",
+    "category": "utilities",
+    "route": "/what-is-my-screen-resolution",
+    "description": "Free what is my screen resolution tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "what-is-my-user-agent",
+    "name": "What Is My User Agent",
+    "category": "utilities",
+    "route": "/what-is-my-user-agent",
+    "description": "Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "whois-domain-lookup",
+    "name": "Whois Domain Lookup",
+    "category": "utilities",
+    "route": "/whois-domain-lookup",
+    "description": "Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "wordpress-theme-detector",
+    "name": "WordPress Theme Detector",
+    "category": "utilities",
+    "route": "/wordpress-theme-detector",
+    "description": "Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "other-tools",
+    "name": "Other Tools",
+    "category": "utilities",
+    "route": "/other-tools",
+    "description": "Free Other Tools online tool. Fast and secure."
+  },
+  {
+    "id": "text-tools",
+    "name": "Text Tools",
+    "category": "utilities",
+    "route": "/text-tools",
+    "description": "Format, convert, and manipulate text content"
+  },
+  {
+    "id": "whatsapp-link-generator",
+    "name": "WhatsApp Link Generator",
+    "category": "utilities",
+    "route": "/whatsapp-link-generator",
+    "description": "Generate optimized whatsapp link generator details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "qr-code-generator-business",
+    "name": "QR Code Generator for Business",
+    "category": "utilities",
+    "route": "/qr-code-generator-business",
+    "description": "Generate optimized qr code generator for business details. Instantly copy or share customized outputs."
+  },
+  {
+    "id": "terms-and-conditions-generator",
+    "name": "Terms and Conditions Generator",
+    "category": "utilities",
+    "route": "/terms-and-conditions-generator",
+    "description": "Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability."
+  },
+  {
+    "id": "domain-name-generator",
+    "name": "Domain Name Generator",
+    "category": "seo",
+    "route": "/domain-name-generator",
+    "description": "Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free."
+  },
+  {
+    "id": "website-cost-calculator",
+    "name": "Website Cost Calculator",
+    "category": "seo",
+    "route": "/website-cost-calculator",
+    "description": "Estimate how much a website may cost based on pages, design quality, and features like ecommerce."
+  },
+  {
+    "id": "seo-title-meta-description-generator",
+    "name": "SEO Title & Meta Description Generator",
+    "category": "seo",
+    "route": "/seo-title-meta-description-generator",
+    "description": "Generate SEO-friendly page titles and meta descriptions for blogs, tools, and landing pages."
+  },
+  {
+    "id": "robots-txt-sitemap-generator",
+    "name": "Robots.txt and Sitemap Generator",
+    "category": "seo",
+    "route": "/robots-txt-sitemap-generator",
+    "description": "Generate robots.txt and sitemap.xml files for your website to improve crawling and indexing."
+  },
+  {
+    "id": "keyword-research-tool",
+    "name": "Advanced Keyword Research",
+    "category": "seo",
+    "route": "/keyword-research-tool",
+    "description": "Comprehensive keyword research tool with search volume, difficulty, CPC data, and keyword suggestions. Find profitable keywords for SEO."
+  },
+  {
+    "id": "sitemap-generator",
+    "name": "Advanced Sitemap Generator",
+    "category": "seo",
+    "route": "/sitemap-generator",
+    "description": "Generate XML sitemaps for any website URL. Crawl websites and create comprehensive sitemaps with proper formatting and metadata."
+  },
+  {
+    "id": "seo-audit-tool",
+    "name": "Complete SEO Audit Tool",
+    "category": "seo",
+    "route": "/seo-audit-tool",
+    "description": "Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations."
+  },
+  {
+    "id": "backlink-checker",
+    "name": "Backlink Checker",
+    "category": "seo",
+    "route": "/backlink-checker",
+    "description": "Analyze backlinks for any website with our free backlink checker. Discover referring domains, anchor texts, and link quality metrics instantly. No signup required, unlimited checks, SEO-grade data."
+  },
+  {
+    "id": "bulk-keyword-rank-checker",
+    "name": "Bulk Keyword Rank Checker",
+    "category": "seo",
+    "route": "/bulk-keyword-rank-checker",
+    "description": "Check Google rankings for multiple keywords instantly with our free bulk keyword rank checker. Track keyword positions, monitor competitors, and get accurate SERP data. No signup required."
+  },
+  {
+    "id": "google-cache-checker",
+    "name": "Google Cache Checker",
+    "category": "seo",
+    "route": "/google-cache-checker",
+    "description": "Free google cache checker tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "google-index-checker",
+    "name": "Google Index Checker",
+    "category": "seo",
+    "route": "/google-index-checker",
+    "description": "Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "keyword-density-checker",
+    "name": "Keyword Density Checker",
+    "category": "seo",
+    "route": "/keyword-density-checker",
+    "description": "Free keyword density checker tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "keywords-suggestion-tool",
+    "name": "Keywords Suggestion Tool",
+    "category": "seo",
+    "route": "/keywords-suggestion-tool",
+    "description": "Free keywords suggestion tool tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "meta-tag-generator",
+    "name": "Meta Tag Generator",
+    "category": "seo",
+    "route": "/meta-tag-generator",
+    "description": "Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "open-graph-checker",
+    "name": "Open Graph Checker",
+    "category": "seo",
+    "route": "/open-graph-checker",
+    "description": "Free open graph checker tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "open-graph-generator",
+    "name": "Open Graph Generator",
+    "category": "seo",
+    "route": "/open-graph-generator",
+    "description": "Free open graph generator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "seotoolkit",
+    "name": "SEO Toolkit",
+    "category": "seo",
+    "route": "/seotoolkit",
+    "description": "All-in-one SEO audit and analysis tool. 27+ checks."
+  },
+  {
+    "id": "twitter-card-generator",
+    "name": "Twitter Card Generator",
+    "category": "seo",
+    "route": "/twitter-card-generator",
+    "description": "Free twitter card generator tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "visual-sitemap",
+    "name": "Visual Sitemap Generator",
+    "category": "seo",
+    "route": "/visual-sitemap",
+    "description": "Visualize your website's sitemap structure instantly. Enter your XML sitemap URL to generate a dynamic tree view of your site hierarchy."
+  },
+  {
+    "id": "website-ranking-checker",
+    "name": "Website Ranking Checker",
+    "category": "seo",
+    "route": "/website-ranking-checker",
+    "description": "Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows."
+  },
+  {
+    "id": "sitemap-url-downloader",
+    "name": "Sitemap Url Downloader",
+    "category": "seo",
+    "route": "/sitemap-url-downloader",
+    "description": "Free Sitemap Url Downloader online. Sitemap Url Downloader allows you to optimize your website quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser."
+  },
+  {
+    "id": "midjourney-prompt-builder",
+    "name": "Midjourney Prompt Builder",
+    "category": "ai-tools",
+    "route": "/midjourney-prompt-builder",
+    "description": "Create high-quality Midjourney prompts with aspect ratio, style, camera angles, lighting, and version parameters instantly. Free online helper for AI artists."
+  },
+  {
+    "id": "ai-persona-prompt-generator",
+    "name": "AI Persona & System Prompt Generator",
+    "category": "ai-tools",
+    "route": "/ai-persona-prompt-generator",
+    "description": "Generate optimized system prompts and expert personas for ChatGPT, Claude, and Gemini. Choose roles, tone, and formatting constraints for better AI replies."
+  },
+  {
+    "id": "new-tools",
+    "name": "Newly Added Tools",
+    "category": "others",
+    "route": "/new-tools",
+    "description": "Track newly added tools, release updates, and codebase expansion history of SopKit."
+  },
+  {
+    "id": "about",
+    "name": "About",
+    "category": "others",
+    "route": "/about",
+    "description": "Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser."
+  },
+  {
+    "id": "blog",
+    "name": "Blog",
+    "category": "others",
+    "route": "/blog",
+    "description": "Free Blog online. Blog allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser."
+  },
+  {
+    "id": "contact",
+    "name": "Contact",
+    "category": "others",
+    "route": "/contact",
+    "description": "Free Contact online. Contact allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser."
+  },
+  {
+    "id": "search",
+    "name": "Search All Tools",
+    "category": "others",
+    "route": "/search",
+    "description": "Search and browse our collection of 300+ free online tools. 100% free, no signup required."
+  },
+  {
+    "id": "generators",
+    "name": "Fun Generators",
+    "category": "others",
+    "route": "/generators",
+    "description": "Create viral content with AI-powered fun generators"
+  },
+  {
+    "id": "developer-tools",
+    "name": "Developer Tools",
+    "category": "others",
+    "route": "/developer-tools",
+    "description": "Format JSON, generate hashes, and developer utilities"
+  },
+  {
+    "id": "privacy",
+    "name": "Free Privacy Policy Online",
+    "category": "company",
+    "route": "/privacy",
+    "description": "Read the SopKit Privacy Policy. We explain what data we collect, how we protect it, and how our privacy-first browser-based tools work. No signup required."
+  },
+  {
+    "id": "terms",
+    "name": "Free Terms of Use Online",
+    "category": "company",
+    "route": "/terms",
+    "description": "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration."
+  },
+  {
+    "id": "best-free-tools-for-students",
+    "name": "Best Free Tools for Students (2026)",
+    "category": "content",
+    "route": "/best-free-tools-for-students",
+    "description": "Discover the best free tools for students in 2026. Improve writing, formatting, assignments, and study productivity with no-signup online tools."
+  },
+  {
+    "id": "tools-for-developers",
+    "name": "Tools for Developers - Free Online Stack",
+    "category": "content",
+    "route": "/tools-for-developers",
+    "description": "A practical collection of free tools for developers: JSON utilities, encoding, text transformers, validators, and conversion helpers."
+  },
+  {
+    "id": "seo-tools-free-online",
+    "name": "SEO Tools Free Online - Ranked Picks (2026)",
+    "category": "content",
+    "route": "/seo-tools-free-online",
+    "description": "Use free online SEO tools for audits, keyword planning, metadata generation, and indexing checks. Built for creators, agencies, and developers."
+  },
+  {
+    "id": "ai-tools-alternatives-free",
+    "name": "AI Tools Alternatives Free - Practical Picks",
+    "category": "content",
+    "route": "/ai-tools-alternatives-free",
+    "description": "Explore free AI tool alternatives for writing, image creation, voice generation, and content ideation without subscriptions."
+  },
+  {
+    "id": "best-free-alternative-to-chatgpt",
+    "name": "Best Free Alternative to ChatGPT for Daily Tasks",
+    "category": "content",
+    "route": "/best-free-alternative-to-chatgpt",
+    "description": "Looking for a free ChatGPT alternative? Build a focused stack for writing, metadata, image generation, and voice tasks with free online tools."
+  },
+  {
+    "id": "top-10-free-online-tools-for-seo",
+    "name": "Top 10 Free Online Tools for SEO (2026)",
+    "category": "content",
+    "route": "/top-10-free-online-tools-for-seo",
+    "description": "Top 10 free SEO tools for keyword research, audits, metadata, indexing checks, and sitemaps. Ranked for speed and daily SEO workflows."
+  },
+  {
+    "id": "top-10-json-tools-online",
+    "name": "Top 10 JSON Tools Online for Faster Developer Workflows",
+    "category": "content",
+    "route": "/top-10-json-tools-online",
+    "description": "A practical list of the top 10 JSON tools online for formatting, validation, conversion, and schema-ready payload workflows."
+  },
+  {
+    "id": "how-to-format-json-properly",
+    "name": "How to Format JSON Properly (Without Breaking Data)",
+    "category": "content",
+    "route": "/how-to-format-json-properly",
+    "description": "Learn how to format JSON correctly with a simple workflow for validation, cleanup, and conversion-safe output."
+  },
+  {
+    "id": "best-free-converters-in-2026",
+    "name": "Best Free Converters in 2026 (File, Data, and Media)",
+    "category": "content",
+    "route": "/best-free-converters-in-2026",
+    "description": "The best free converters in 2026 for JSON, CSV, XML, images, and documents. No signup required."
+  },
+  {
+    "id": "roman-numerals-converter",
+    "name": "Roman Numerals Converter",
+    "category": "calculators",
+    "route": "/roman-numerals-converter",
+    "description": "Convert numbers to Roman numerals and vice versa instantly. Supports large numbers and historical formats."
+  },
+  {
+    "id": "number-to-words-converter",
+    "name": "Number to Words Converter",
+    "category": "calculators",
+    "route": "/number-to-words-converter",
+    "description": "Convert any number into words (English, Indian numbering system) for cheques, invoices, and documents."
+  },
+  {
+    "id": "date-difference-calculator",
+    "name": "Date Difference Calculator",
+    "category": "calculators",
+    "route": "/date-difference-calculator",
+    "description": "Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes."
+  },
+  {
+    "id": "working-days-calculator",
+    "name": "Working Days Calculator",
+    "category": "calculators",
+    "route": "/working-days-calculator",
+    "description": "Calculate the number of working days or business days between two dates, excluding weekends and holidays."
+  },
+  {
+    "id": "gpa-to-4-scale-converter",
+    "name": "GPA to 4.0 Scale Converter",
+    "category": "calculators",
+    "route": "/gpa-to-4-scale-converter",
+    "description": "Convert your Indian percentage or 10-point CGPA into the standard US 4.0 GPA scale for study abroad."
+  },
+  {
+    "id": "rd-calculator",
+    "name": "Recurring Deposit (RD) Calculator",
+    "category": "calculators",
+    "route": "/rd-calculator",
+    "description": "Calculate the maturity amount and interest earned on your monthly Recurring Deposit (RD) investments."
+  },
+  {
+    "id": "gratuity-calculator",
+    "name": "Gratuity Calculator (India)",
+    "category": "calculators",
+    "route": "/gratuity-calculator",
+    "description": "Estimate your gratuity amount based on your last drawn salary and years of service in India."
+  },
+  {
+    "id": "epf-calculator",
+    "name": "EPF Calculator (Employee Provident Fund)",
+    "category": "calculators",
+    "route": "/epf-calculator",
+    "description": "Calculate your EPF maturity amount based on your basic salary, monthly contribution, and current interest rate."
+  },
+  {
+    "id": "invoice-generator-india",
+    "name": "Invoice Generator India with GST",
+    "category": "calculators",
+    "route": "/invoice-generator-india",
+    "description": "Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free."
+  },
+  {
+    "id": "gst-calculator-india",
+    "name": "GST Calculator India",
+    "category": "calculators",
+    "route": "/gst-calculator-india",
+    "description": "Calculate GST amount, inclusive/exclusive price, CGST, SGST, and IGST for Indian invoices instantly."
+  },
+  {
+    "id": "emi-calculator",
+    "name": "EMI Calculator for Loans",
+    "category": "calculators",
+    "route": "/emi-calculator",
+    "description": "Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans."
+  },
+  {
+    "id": "sip-calculator",
+    "name": "SIP Calculator India",
+    "category": "calculators",
+    "route": "/sip-calculator",
+    "description": "Calculate estimated SIP returns and wealth growth for mutual fund investments online for free."
+  },
+  {
+    "id": "fd-calculator-india",
+    "name": "FD Calculator India",
+    "category": "calculators",
+    "route": "/fd-calculator-india",
+    "description": "Calculate fixed deposit maturity amount and interest with quarterly compounding for Indian banks."
+  },
+  {
+    "id": "salary-calculator-india",
+    "name": "Salary Calculator India (CTC to In-Hand)",
+    "category": "calculators",
+    "route": "/salary-calculator-india",
+    "description": "Calculate your monthly in-hand salary from annual CTC with PF, professional tax, and income tax deductions."
+  },
+  {
+    "id": "cgpa-to-percentage-calculator-india",
+    "name": "CGPA to Percentage Calculator for Indian Universities",
+    "category": "calculators",
+    "route": "/cgpa-to-percentage-calculator-india",
+    "description": "Convert your CGPA into percentage using common Indian university formulas like CBSE 9.5x, VTU, Mumbai University, DU, AKTU, and Anna University."
+  },
+  {
+    "id": "sgpa-to-cgpa-calculator",
+    "name": "SGPA to CGPA Calculator",
+    "category": "calculators",
+    "route": "/sgpa-to-cgpa-calculator",
+    "description": "Calculate your cumulative GPA (CGPA) from semester-wise SGPA values. Supports credit-weighted and simple average methods."
+  },
+  {
+    "id": "attendance-shortage-calculator",
+    "name": "Attendance Shortage Calculator",
+    "category": "calculators",
+    "route": "/attendance-shortage-calculator",
+    "description": "Calculate how many classes you need to attend to reach 75% attendance or how many classes you can safely miss."
+  },
+  {
+    "id": "marks-needed-calculator",
+    "name": "Exam Marks Needed Calculator",
+    "category": "calculators",
+    "route": "/marks-needed-calculator",
+    "description": "Find out exactly how many marks you need in your final exam to pass or reach your target grade based on internal scores."
+  },
+  {
+    "id": "75-attendance-calculator",
+    "name": "75% Attendance Calculator",
+    "category": "calculators",
+    "route": "/75-attendance-calculator",
+    "description": "Calculate how many classes you need to attend or can safely skip to maintain a minimum 75% attendance rate."
+  },
+  {
+    "id": "sgpa-calculator",
+    "name": "SGPA Calculator",
+    "category": "calculators",
+    "route": "/sgpa-calculator",
+    "description": "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned."
+  },
+  {
+    "id": "cgpa-calculator",
+    "name": "CGPA Calculator",
+    "category": "calculators",
+    "route": "/cgpa-calculator",
+    "description": "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points."
+  },
+  {
+    "id": "cgpa-to-percentage-calculator",
+    "name": "CGPA to Percentage Calculator",
+    "category": "calculators",
+    "route": "/cgpa-to-percentage-calculator",
+    "description": "Convert your CGPA to equivalent percentage marks using standard university formulas (like CBSE 9.5x)."
+  },
+  {
+    "id": "required-marks-calculator",
+    "name": "Required Marks Calculator",
+    "category": "calculators",
+    "route": "/required-marks-calculator",
+    "description": "Find out exactly how many marks you need to score in your final exam to achieve your target grade or pass."
+  },
+  {
+    "id": "brick-calculator",
+    "name": "Brick Calculator",
+    "category": "calculators",
+    "route": "/brick-calculator",
+    "description": "Calculate the total number of bricks, cement bags, and sand volume required for building a wall."
+  },
+  {
+    "id": "paint-calculator",
+    "name": "Paint Calculator",
+    "category": "calculators",
+    "route": "/paint-calculator",
+    "description": "Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings."
+  },
+  {
+    "id": "tile-calculator",
+    "name": "Tile Calculator",
+    "category": "calculators",
+    "route": "/tile-calculator",
+    "description": "Calculate the total number of floor or wall tiles needed for a room, including waste margins and cost estimates."
+  },
+  {
+    "id": "compound-interest-calculator",
+    "name": "Compound Interest Calculator",
+    "category": "calculators",
+    "route": "/compound-interest-calculator",
+    "description": "Calculate compound interest and future value with regular contributions. See how your savings or investments grow over time, free and instant."
+  },
+  {
+    "id": "mortgage-calculator",
+    "name": "Mortgage Calculator",
+    "category": "calculators",
+    "route": "/mortgage-calculator",
+    "description": "Estimate your monthly mortgage payment, total interest, and total cost from home price, down payment, rate, and term. Free, no signup."
+  },
+  {
+    "id": "car-loan-calculator",
+    "name": "Car Loan Calculator",
+    "category": "calculators",
+    "route": "/car-loan-calculator",
+    "description": "Work out your monthly car payment and total interest from vehicle price, down payment, trade-in, APR, and term. Free auto loan calculator."
+  },
+  {
+    "id": "roi-calculator",
+    "name": "ROI Calculator",
+    "category": "calculators",
+    "route": "/roi-calculator",
+    "description": "Calculate return on investment, net gain, and annualized ROI from your initial and final values. Free investment return calculator."
+  },
+  {
+    "id": "savings-goal-calculator",
+    "name": "Savings Goal Calculator",
+    "category": "calculators",
+    "route": "/savings-goal-calculator",
+    "description": "Find the monthly deposit needed to reach a savings goal by a target date, including interest. Free savings planning calculator."
+  },
+  {
+    "id": "tip-calculator",
+    "name": "Tip Calculator",
+    "category": "calculators",
+    "route": "/tip-calculator",
+    "description": "Calculate the tip, total, and amount per person for any bill. Quick gratuity and bill-splitting calculator, free and no signup."
+  },
+  {
+    "id": "bmi-calculator",
+    "name": "BMI Calculator",
+    "category": "calculators",
+    "route": "/bmi-calculator",
+    "description": "Calculate your Body Mass Index from height and weight and see your BMI category. Free, private BMI calculator that runs in your browser."
+  },
+  {
+    "id": "fuel-cost-calculator",
+    "name": "Fuel Cost Calculator",
+    "category": "calculators",
+    "route": "/fuel-cost-calculator",
+    "description": "Estimate the fuel needed and total cost for a trip from distance, fuel economy, and price per litre. Free trip fuel cost calculator."
+  },
+  {
+    "id": "inflation-calculator",
+    "name": "Inflation Calculator",
+    "category": "calculators",
+    "route": "/inflation-calculator",
+    "description": "See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool."
+  },
+  {
+    "id": "break-even-calculator",
+    "name": "Break-Even Calculator",
+    "category": "calculators",
+    "route": "/break-even-calculator",
+    "description": "Calculate the break-even point in units and revenue from fixed costs, variable cost per unit, and selling price. Free business calculator."
+  },
+  {
+    "id": "food-cost-calculator",
+    "name": "Food Cost Calculator",
+    "category": "calculators",
+    "route": "/food-cost-calculator",
+    "description": "Calculate your food cost calculator instantly. Free browser-based calculator with detailed breakdowns."
+  },
+  {
+    "id": "freelance-rate-calculator",
+    "name": "Freelance Rate Calculator",
+    "category": "calculators",
+    "route": "/freelance-rate-calculator",
+    "description": "Calculate your freelance rate calculator instantly. Free browser-based calculator with detailed breakdowns."
+  },
+  {
+    "id": "rent-affordability-calculator",
+    "name": "Rent Affordability Calculator",
+    "category": "calculators",
+    "route": "/rent-affordability-calculator",
+    "description": "Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns."
+  },
+  {
+    "id": "home-loan-eligibility-calculator",
+    "name": "Home Loan Eligibility Calculator",
+    "category": "calculators",
+    "route": "/home-loan-eligibility-calculator",
+    "description": "Calculate your home loan eligibility calculator instantly. Free browser-based calculator with detailed breakdowns."
+  },
+  {
+    "id": "property-roi-calculator",
+    "name": "Property ROI Calculator",
+    "category": "calculators",
+    "route": "/property-roi-calculator",
+    "description": "Calculate your property roi calculator instantly. Free browser-based calculator with detailed breakdowns."
+  },
+  {
+    "id": "calorie-deficit-calculator",
+    "name": "Calorie Deficit Calculator",
+    "category": "calculators",
+    "route": "/calorie-deficit-calculator",
+    "description": "Calculate your calorie deficit calculator instantly. Free browser-based calculator with detailed breakdowns."
+  },
+  {
+    "id": "protein-intake-calculator",
+    "name": "Protein Intake Calculator",
+    "category": "calculators",
+    "route": "/protein-intake-calculator",
+    "description": "Calculate your protein intake calculator instantly. Free browser-based calculator with detailed breakdowns."
+  },
+  {
+    "id": "bmi-ideal-weight-calculator",
+    "name": "BMI + Ideal Weight Calculator",
+    "category": "calculators",
+    "route": "/bmi-ideal-weight-calculator",
+    "description": "Calculate your bmi + ideal weight calculator instantly. Free browser-based calculator with detailed breakdowns."
+  },
+  {
+    "id": "water-intake-calculator",
+    "name": "Daily Water Intake Calculator",
+    "category": "calculators",
+    "route": "/water-intake-calculator",
+    "description": "Calculate your daily water intake calculator instantly. Free browser-based calculator with detailed breakdowns."
+  },
+  {
+    "id": "profit-margin-calculator",
+    "name": "Profit Margin Calculator",
+    "category": "calculators",
+    "route": "/profit-margin-calculator",
+    "description": "Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns."
+  },
+  {
+    "id": "income-tax-calculator",
+    "name": "Income Tax Calculator FY 2026-27",
+    "category": "calculators",
+    "route": "/income-tax-calculator",
+    "description": "Calculate and compare your income tax under the Old vs New Tax Regimes for FY 2026-27 (AY 2027-28). Compare deductions, rebates, and slabs to find the optimal regime."
+  },
+  {
+    "id": "ssc-photo-signature-resizer",
+    "name": "SSC Photo and Signature Resizer",
+    "category": "exam-tools",
+    "route": "/ssc-photo-signature-resizer",
+    "description": "Resize and compress SSC photo (20-50KB) and signature (10-20KB) online for government exam forms. 100% compliant with SSC requirements."
+  },
+  {
+    "id": "upsc-photo-resizer-350x350",
+    "name": "UPSC Photo Resizer 350x350",
+    "category": "exam-tools",
+    "route": "/upsc-photo-resizer-350x350",
+    "description": "Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms."
+  },
+  {
+    "id": "neet-photo-signature-resizer",
+    "name": "NEET Photo & Signature Resizer",
+    "category": "exam-tools",
+    "route": "/neet-photo-signature-resizer",
+    "description": "Resize and compress NEET photo and signature for application forms. Adjust size, dimensions, format, and file limit online."
+  },
+  {
+    "id": "upsc-photo-resizer",
+    "name": "UPSC Photo Resizer",
+    "category": "exam-tools",
+    "route": "/upsc-photo-resizer",
+    "description": "Resize your photo and signature to meet the exact dimensions (350x350 pixels) and file size (20KB - 300KB) specified for UPSC IAS/IFS application forms."
+  },
+  {
+    "id": "ssc-photo-resizer",
+    "name": "SSC Photo Resizer",
+    "category": "exam-tools",
+    "route": "/ssc-photo-resizer",
+    "description": "Resize and compress SSC photos to 350x450 pixels and 20KB-50KB, plus resize signatures to 10KB-20KB. No signup required."
+  },
+  {
+    "id": "signature-resizer-under-20kb",
+    "name": "Signature Resizer Under 20KB",
+    "category": "exam-tools",
+    "route": "/signature-resizer-under-20kb",
+    "description": "Resize and compress signatures under 20KB for exam forms, job applications, and government portals. Free browser-based signature compressor."
+  },
+  {
+    "id": "neet-photo-resizer",
+    "name": "NEET Photo Resizer",
+    "category": "exam-tools",
+    "route": "/neet-photo-resizer",
+    "description": "Resize and compress NEET application photos and signatures for online form uploads. Free, private, and no signup required."
+  },
+  {
+    "id": "jee-photo-resizer",
+    "name": "JEE Photo Resizer",
+    "category": "exam-tools",
+    "route": "/jee-photo-resizer",
+    "description": "Prepare JEE Main photo and signature images for online application forms with browser-based resize and compression."
+  },
+  {
+    "id": "cuet-photo-resizer",
+    "name": "CUET Photo Resizer",
+    "category": "exam-tools",
+    "route": "/cuet-photo-resizer",
+    "description": "Resize CUET photos and signatures for application forms using a free browser-based image resizer and compressor."
+  },
+  {
+    "id": "railway-exam-photo-resizer",
+    "name": "Railway Exam Photo Resizer",
+    "category": "exam-tools",
+    "route": "/railway-exam-photo-resizer",
+    "description": "Resize photos and signatures for railway exam forms, including RRB and recruitment portal uploads."
+  },
+  {
+    "id": "ibps-photo-resizer",
+    "name": "Bank Exam Photo Resizer",
+    "category": "exam-tools",
+    "route": "/ibps-photo-resizer",
+    "description": "Resize and compress photos and signatures for IBPS, SBI, and bank exam application forms."
+  },
+  {
+    "id": "pan-card-photo-resizer",
+    "name": "PAN Card Photo Resizer",
+    "category": "exam-tools",
+    "route": "/pan-card-photo-resizer",
+    "description": "Resize PAN card photos and signatures for online application forms with safe browser processing."
+  },
+  {
+    "id": "passport-photo-maker",
+    "name": "Passport Photo Maker India",
+    "category": "exam-tools",
+    "route": "/passport-photo-maker",
+    "description": "Create passport-style photos for Indian forms and documents with crop, resize, and compression controls."
+  },
+  {
+    "id": "photo-compressor-under-50kb",
+    "name": "Photo Compressor Under 50KB",
+    "category": "exam-tools",
+    "route": "/photo-compressor-under-50kb",
+    "description": "Compress exam photos under 50KB for application forms while keeping face details readable."
+  },
+  {
+    "id": "form-image-size-checker",
+    "name": "Form Image Size Checker",
+    "category": "exam-tools",
+    "route": "/form-image-size-checker",
+    "description": "Check image dimensions, file size, format, and DPI before uploading photos or signatures to online forms."
+  },
+  {
+    "id": "photo-name-date-editor",
+    "name": "Photo Name Date Editor",
+    "category": "exam-tools",
+    "route": "/photo-name-date-editor",
+    "description": "Add name and date text to exam photos when an application form requires it."
+  },
+  {
+    "id": "jpg-to-pdf-exam-forms",
+    "name": "JPG to PDF for Exam Forms",
+    "category": "exam-tools",
+    "route": "/jpg-to-pdf-exam-forms",
+    "description": "Convert photos and documents to PDF for online exam forms with file-size friendly output."
+  },
+  {
+    "id": "pdf-compressor-under-200kb",
+    "name": "PDF Compressor Under 200KB",
+    "category": "exam-tools",
+    "route": "/pdf-compressor-under-200kb",
+    "description": "Compress PDF files under 200KB for exam, job, and government form uploads."
+  },
+  {
+    "id": "ssc-mts-photo-resizer",
+    "name": "SSC MTS Photo Resizer",
+    "category": "exam-tools",
+    "route": "/ssc-mts-photo-resizer",
+    "description": "Resize and compress your passport photo and signature to meet the official SSC MTS online application requirements. Convert photos to 3.5 x 4.5 cm (20KB-50KB) and signatures to 10-20KB."
+  },
+  {
+    "id": "rrb-group-d-photo-resizer",
+    "name": "RRB Group D Photo Resizer",
+    "category": "exam-tools",
+    "route": "/rrb-group-d-photo-resizer",
+    "description": "Resize and compress your passport photo and signature for RRB Group D / Railway recruitment online applications. Pre-configured to official size and KB boundaries."
+  },
+  {
+    "id": "bmr-calculator",
+    "name": "BMR Calculator (Basal Metabolic Rate)",
+    "category": "health",
+    "route": "/bmr-calculator",
+    "description": "Calculate your Basal Metabolic Rate (BMR) to understand how many calories your body burns at rest."
+  },
+  {
+    "id": "tdee-calculator",
+    "name": "TDEE Calculator",
+    "category": "health",
+    "route": "/tdee-calculator",
+    "description": "Calculate your Total Daily Energy Expenditure (TDEE) based on your activity level and fitness goals."
+  },
+  {
+    "id": "macro-calculator",
+    "name": "Macro Calculator",
+    "category": "health",
+    "route": "/macro-calculator",
+    "description": "Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance."
+  },
+  {
+    "id": "ideal-body-weight-calculator",
+    "name": "Ideal Body Weight Calculator",
+    "category": "health",
+    "route": "/ideal-body-weight-calculator",
+    "description": "Determine your healthy weight range based on your height, age, and gender using standard formulas."
+  },
+  {
+    "id": "body-fat-calculator",
+    "name": "Body Fat Percentage Calculator",
+    "category": "health",
+    "route": "/body-fat-calculator",
+    "description": "Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness."
+  }
+]

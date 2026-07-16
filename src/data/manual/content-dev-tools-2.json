@@ -1,0 +1,214 @@
+{
+  "md5-hash-generator": {
+    "whatItIs": "The MD5 Hash Generator creates MD5 hash values from text or files for data integrity verification, checksums, and security applications. Generate 128-bit hash values instantly for verifying file integrity and data consistency.",
+    "features": [
+      "Generate MD5 hash from text",
+      "Hash files for integrity checks",
+      "Support for large files",
+      "Show hash in multiple formats",
+      "Compare hash values",
+      "Batch hash multiple files",
+      "Copy hash with one click",
+      "Free unlimited hashing"
+    ],
+    "howToUse": {
+      "name": "How to Use the MD5 Hash Generator",
+      "steps": [
+        {
+          "name": "Enter text or upload file",
+          "text": "Type or paste the text you want to hash, or upload a file. The tool supports any file type and text length."
+        },
+        {
+          "name": "Generate MD5 hash",
+          "text": "Click generate to compute the 32-character hexadecimal MD5 hash of your input. The hash appears instantly."
+        },
+        {
+          "name": "Compare hashes",
+          "text": "Use the comparison feature to verify that two files or texts produce the same hash, confirming data integrity."
+        },
+        {
+          "name": "Copy the hash",
+          "text": "Click to copy the MD5 hash for use in verification, documentation, or security applications."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is an MD5 hash?",
+        "answer": "MD5 is a cryptographic hash function that produces a 128-bit hash value (32 hexadecimal characters). It is commonly used for file integrity verification and checksums."
+      },
+      {
+        "question": "Is MD5 secure for passwords?",
+        "answer": "MD5 is considered cryptographically broken for security purposes like password hashing. Use bcrypt, SHA-256, or Argon2 for secure password storage."
+      },
+      {
+        "question": "Can I verify file downloads with MD5?",
+        "answer": "Yes, MD5 hashes are commonly provided for file downloads. Compare the generated hash with the published hash to verify the file hasn't been corrupted or tampered with."
+      },
+      {
+        "question": "Is the MD5 Hash Generator free?",
+        "answer": "Yes, generating MD5 hashes is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate MD5 hash online for free. Create checksums for text and files. Verify data integrity with instant 128-bit hash generation."
+  },
+  "sha-generator": {
+    "whatItIs": "The SHA Hash Generator creates SHA-1, SHA-256, SHA-384, and SHA-512 hash values from text or files. More secure than MD5 for cryptographic applications, data integrity, and digital signatures.",
+    "features": [
+      "Generate SHA-1, SHA-256, SHA-384, SHA-512",
+      "Hash text and files",
+      "Show hash in hex format",
+      "Compare hash values",
+      "Batch hash multiple files",
+      "Verify file integrity",
+      "Copy hash with one click",
+      "Free unlimited hashing"
+    ],
+    "howToUse": {
+      "name": "How to Use the SHA Hash Generator",
+      "steps": [
+        {
+          "name": "Enter text or upload file",
+          "text": "Type or paste text to hash, or upload a file. The tool supports all common file types and text formats."
+        },
+        {
+          "name": "Select SHA algorithm",
+          "text": "Choose the SHA variant: SHA-1 (160-bit), SHA-256 (256-bit), SHA-384, or SHA-512 (512-bit). SHA-256 is recommended for most uses."
+        },
+        {
+          "name": "Generate hash",
+          "text": "Click generate to compute the hash. The result is displayed as a hexadecimal string with the appropriate length for the algorithm."
+        },
+        {
+          "name": "Copy and verify",
+          "text": "Copy the hash and compare it with known values to verify file integrity or data consistency."
+        }
+      }
+    },
+    "faqs": [
+      {
+        "question": "Which SHA algorithm should I use?",
+        "answer": "Use SHA-256 for most applications as it provides a good balance of security and performance. SHA-512 offers higher security for sensitive applications. Avoid SHA-1 for security purposes."
+      },
+      {
+        "question": "What is SHA used for?",
+        "answer": "SHA hashes are used for data integrity verification, digital signatures, SSL certificates, password storage (with salting), and blockchain applications."
+      },
+      {
+        "question": "Are SHA hashes reversible?",
+        "answer": "No, SHA hashes are one-way functions. You cannot reverse a hash to get the original text, but you can verify that data produces a specific hash."
+      },
+      {
+        "question": "Is the SHA Generator free?",
+        "answer": "Yes, generating SHA hashes is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate SHA-256, SHA-512 hash online for free. Create secure checksums for text and files. Verify data integrity with SHA hash generation."
+  },
+  "barcode-generator": {
+    "whatItIs": "The Barcode Generator creates various barcode formats including QR codes, Code 128, EAN-13, UPC-A, and Code 39. Generate scannable barcodes for products, inventory, tickets, and marketing materials with customizable design.",
+    "features": [
+      "Generate multiple barcode formats",
+      "Support for QR codes and linear barcodes",
+      "Customizable size and colors",
+      "Add logos to QR codes",
+      "Download in PNG, SVG, EPS",
+      "Batch generate barcodes",
+      "Print-ready high resolution",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Barcode Generator",
+      "steps": [
+        {
+          "name": "Select barcode type",
+          "text": "Choose the barcode format you need: QR Code, Code 128, EAN-13, UPC-A, Code 39, or others. Each format has different use cases."
+        },
+        {
+          "name": "Enter data",
+          "text": "Input the data to encode: URL for QR codes, product numbers for EAN/UPC, or any text for Code 128/39. Follow the format requirements."
+        },
+        {
+          "name": "Customize design",
+          "text": "Set the barcode size, colors, and error correction level for QR codes. Optionally add a logo or text below the barcode."
+        },
+        {
+          "name": "Download barcode",
+          "text": "Download the generated barcode in your preferred format: PNG for web, SVG for scaling, or EPS for professional printing."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What barcode formats are supported?",
+        "answer": "The tool supports QR Code, Code 128, EAN-13, UPC-A, Code 39, ITF, MSI, and Pharmacode. Each format serves different industry needs."
+      },
+      {
+        "question": "Can I add a logo to my QR code?",
+        "answer": "Yes, you can upload a logo to embed in the center of your QR code. Keep logos small and high-contrast to maintain scannability."
+      },
+      {
+        "question": "What format should I download?",
+        "answer": "PNG is best for web and digital use. SVG is ideal for scaling without quality loss. EPS is recommended for professional printing and design software."
+      },
+      {
+        "question": "Is the Barcode Generator free?",
+        "answer": "Yes, generating barcodes and QR codes is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate barcodes and QR codes online for free. Create Code 128, EAN-13, UPC-A, and custom QR codes. Download in PNG, SVG, EPS formats."
+  },
+  "barcode-reader": {
+    "whatItIs": "The Barcode Reader scans and decodes barcodes from images or your device camera. Supports QR codes, Code 128, EAN-13, UPC-A, and many other formats for product identification, inventory management, and marketing.",
+    "features": [
+      "Scan barcodes from uploaded images",
+      "Live camera barcode scanning",
+      "Support for all major barcode formats",
+      "Instant decode and display",
+      "Copy decoded data with one click",
+      "Works on mobile and desktop",
+      "No app download required",
+      "Privacy-focused local processing"
+    ],
+    "howToUse": {
+      "name": "How to Use the Barcode Reader",
+      "steps": [
+        {
+          "name": "Choose scanning method",
+          "text": "Select to upload a barcode image or use your device camera for live scanning. Grant camera permission when prompted."
+        },
+        {
+          "name": "Position or upload barcode",
+          "text": "If using camera, point it at the barcode. If uploading, select the image file containing the barcode."
+        },
+        {
+          "name": "Scan the barcode",
+          "text": "The tool automatically detects and decodes the barcode. The encoded data appears instantly in the results area."
+        },
+        {
+          "name": "Use the data",
+          "text": "Copy the decoded data or take the suggested action. For URLs, click to open. For product codes, look up product information."
+        }
+ ]
+    },
+    "faqs": [
+      {
+        "question": "What barcode formats can it read?",
+        "answer": "The reader supports QR Code, Code 128, EAN-13, UPC-A, Code 39, Data Matrix, PDF417, and many other common barcode formats."
+      },
+      {
+        "question": "Can I scan barcodes with my phone camera?",
+        "answer": "Yes, the tool uses your device camera for live barcode scanning. Works on both iOS and Android devices through the mobile browser."
+      },
+      {
+        "question": "What types of data can be decoded?",
+        "answer": "The tool decodes URLs, plain text, product numbers, contact information, WiFi credentials, and any data encoded in supported barcode formats."
+      },
+      {
+        "question": "Is the Barcode Reader free?",
+        "answer": "Yes, scanning and decoding barcodes is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Read barcodes and QR codes online for free. Scan from images or camera instantly. Supports Code 128, EAN-13, UPC-A, and more. No app required."
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "favicon-generator": {
+    "whatItIs": "The Favicon Generator creates website favicons from images or text. Generate favicons in multiple sizes for browsers, iOS, Android, and desktop shortcuts from a single source image or text.",
+    "features": [
+      "Generate favicons from images",
+      "Create favicons from text",
+      "Support for all platform sizes",
+      "Generate HTML code",
+      "Create favicon package (ICO, PNG)",
+      "Show preview on browsers",
+      "Download all sizes",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Favicon Generator",
+      "steps": [
+        {
+          "name": "Upload image or enter text",
+          "text": "Upload a square image (at least 512x512) or enter text to create a favicon from letters. Choose background color and style."
+        },
+        {
+          "name": "Configure favicon",
+          "text": "Set the padding, background color, and text style if using text. Preview how the favicon will look at different sizes."
+        },
+        {
+          "name": "Generate favicons",
+          "text": "Click generate to create favicon files in all required sizes: 16x16, 32x32, 48x48, 64x64, 128x128, 180x180, 192x192, 512x512."
+        },
+        {
+          "name": "Download and implement",
+          "text": "Download the favicon package. Copy the HTML code and place the files in your website root directory."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What favicon sizes do I need?",
+        "answer": "Essential sizes include 16x16 (browser tab), 32x32 (taskbar), 180x180 (iOS), 192x192 (Android), and 512x512 (PWA). The tool generates all required sizes."
+      },
+      {
+        "question": "Should I use an image or text favicon?",
+        "answer": "Image favicons show your logo and are more recognizable. Text favicons work for single-letter or short abbreviations. Choose based on your brand."
+      },
+      {
+        "question": "What format should I use?",
+        "answer": "Use ICO for classic favicon.ico and PNG for modern browsers. Include Apple Touch Icon and Android manifest icons for mobile support."
+      },
+      {
+        "question": "Is the Favicon Generator free?",
+        "answer": "Yes, generating favicons is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate favicons online for free. Create website favicons from images or text in all sizes. Download favicon package with HTML code for browsers and mobile."
+  },
+  "logo-maker": {
+    "whatItIs": "The Logo Maker creates professional logos for businesses, brands, and websites. Design custom logos with templates, icons, fonts, and colors. Download logos in high resolution for web and print use.",
+    "features": [
+      "Create logos from templates",
+      "Customize colors, fonts, icons",
+      "Add text and taglines",
+      "Multiple design styles",
+      "High-resolution downloads",
+      "Transparent background option",
+      "Brand kit generation",
+      "Free basic logo creation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Logo Maker",
+      "steps": [
+        {
+          "name": "Enter brand details",
+          "text": "Type your business or brand name and optional tagline. Select your industry for style suggestions."
+        },
+        {
+          "name": "Choose a template",
+          "text": "Browse logo templates matching your brand style. Select a template as a starting point for customization."
+        },
+        {
+          "name": "Customize the logo",
+          "text": "Change colors, fonts, icons, and layout. Adjust spacing and alignment until the logo matches your brand vision."
+        },
+        {
+          "name": "Download your logo",
+          "text": "Download the logo in high resolution (PNG, JPG, SVG). Choose transparent background for versatile use across different backgrounds."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I use the logo for commercial purposes?",
+        "answer": "Yes, logos created with the free tool are yours to use commercially. Premium plans offer full commercial rights and trademark-grade vector files."
+      },
+      {
+        "question": "What formats can I download?",
+        "answer": "Free downloads include PNG and JPG. Premium plans offer SVG (vector) for infinite scaling and AI/EPS files for design software editing."
+      },
+      {
+        "question": "Do I own the logo I create?",
+        "answer": "Yes, you own the rights to logos you create. Check the terms for specific licensing details on individual elements like icons and fonts."
+      },
+      {
+        "question": "Is the Logo Maker free?",
+        "answer": "Basic logo creation is free with limited downloads. Premium plans offer high-resolution files, full commercial rights, and brand kits."
+      }
+    ],
+    "seoDescription": "Create logos online for free. Design professional business logos with templates and customization. Download high-resolution logos for web and print."
+  },
+  "app-icon-generator": {
+    "whatItIs": "The App Icon Generator creates app icons for iOS, Android, and web applications from a single source image. Generate all required icon sizes for app stores, home screens, and notifications.",
+    "features": [
+      "Generate app icons from one image",
+      "Support for iOS and Android sizes",
+      "Create adaptive icons",
+      "Generate notification icons",
+      "Show preview on devices",
+      "Download icon package",
+      "Transparent background support",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the App Icon Generator",
+      "steps": [
+        {
+          "name": "Upload source image",
+          "text": "Upload a square image (at least 1024x1024) as your source icon. The tool uses this to generate all required sizes."
+        },
+        {
+          "name": "Select platforms",
+          "text": "Choose which platforms you need icons for: iOS, Android, or web. The tool generates all sizes for the selected platforms."
+        },
+        {
+          "name": "Generate icons",
+          "text": "Click generate to create all app icon sizes. The tool produces properly sized icons with correct naming conventions."
+        },
+        {
+          "name": "Download icon package",
+          "text": "Download the complete icon package as a ZIP. Extract and place the icons in your app project directories."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What sizes are generated?",
+        "answer": "The tool generates all standard sizes including iOS (all device sizes), Android (mdpi through xxxhdpi, adaptive icons), web app icons, and notification icons."
+      },
+      {
+        "question": "What format should my source image be?",
+        "answer": "Use a square PNG image at least 1024x1024 pixels. Higher resolution sources produce better results. Avoid text-heavy images as they may be hard to read at small sizes."
+      },
+      {
+        "question": "Can I preview icons on devices?",
+        "answer": "Yes, the tool shows previews of how your icon will look on different devices and home screen positions. This helps ensure readability at small sizes."
+      },
+      {
+        "question": "Is the App Icon Generator free?",
+        "answer": "Yes, generating app icons is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate app icons online for free. Create iOS, Android, and web app icons from one image. Download all required sizes for app stores and devices."
+  }
+}

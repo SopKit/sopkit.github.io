@@ -1,0 +1,1302 @@
+{
+  "ssc-photo-signature-resizer": {
+    "whatItIs": "This tool helps you resize and compress both your photo and signature to meet the exact requirements for SSC exams. Staff Selection Commission forms typically require a passport photo between 20-50KB and a signature between 10-20KB, and this utility ensures your files fit these specifications perfectly.",
+    "features": [
+      "Resize photos to 350x450 pixels as required by SSC",
+      "Compress photos to the 20-50KB range automatically",
+      "Resize and compress signatures to 10-20KB",
+      "Preview your resized images before downloading",
+      "Process multiple images in one session",
+      "100% browser-based processing with no server uploads",
+      "Supports JPG and PNG input formats",
+      "One-click download of processed files"
+    ],
+    "howToUse": {
+      "name": "How to Use SSC Photo and Signature Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Photo",
+          "text": "Click the upload button or drag and drop your passport photo into the designated area. The tool accepts JPG or PNG formats."
+        },
+        {
+          "name": "Set Photo Dimensions",
+          "text": "The tool automatically sets the dimensions to 350x450 pixels for SSC. You can adjust if your specific exam requires different measurements."
+        },
+        {
+          "name": "Compress to Required Size",
+          "text": "Use the compression slider to reduce your photo to between 20-50KB while maintaining clarity. The tool shows the file size in real-time."
+        },
+        {
+          "name": "Upload and Process Signature",
+          "text": "Repeat the process for your signature, targeting the 10-20KB range. Crop any excess white space around your signature first for best results."
+        },
+        {
+          "name": "Download and Verify",
+          "text": "Download both processed files. Double-check the file sizes and dimensions match SSC requirements before submitting your application."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the exact photo requirements for SSC CGL?",
+        "answer": "SSC CGL requires a recent passport-size color photograph in JPG format, typically 350x450 pixels, with file size between 20KB and 50KB. The background should be white or light-colored."
+      },
+      {
+        "question": "Can I use a scanned signature for SSC forms?",
+        "answer": "Yes, you can use a scanned signature. Make sure it's clear, in black ink on white paper, and scanned at high resolution before compressing to 10-20KB."
+      },
+      {
+        "question": "Why does my photo look blurry after compression?",
+        "answer": "If your photo appears blurry, the original image may have been too small or low resolution. Start with a high-quality photo (at least 600x800 pixels) for best results after compression."
+      },
+      {
+        "question": "Does this tool work for SSC CHSL and MTS exams too?",
+        "answer": "Yes, the photo and signature requirements for SSC CHSL, MTS, and most other SSC exams are similar. This tool is configured to handle all common SSC exam specifications."
+      },
+      {
+        "question": "What if my compressed photo is still over 50KB?",
+        "answer": "If your photo is still too large, try cropping it more tightly around your face and shoulders, or reduce the image quality slightly. The tool provides real-time feedback on file size."
+      },
+      {
+        "question": "Is there a limit to how many photos I can process?",
+        "answer": "No, you can process as many photos and signatures as you need. The tool works entirely in your browser with no usage limits."
+      }
+    ],
+    "seoDescription": "Free online SSC Photo and Signature Resizer tool to compress and resize images for SSC CGL, CHSL, MTS exams. Meet exact 20-50KB photo and 10-20KB signature requirements with browser-based processing."
+  },
+  "upsc-photo-resizer-350x350": {
+    "whatItIs": "This specialized tool resizes your photograph to exactly 350x350 pixels, which is the standard dimension required for UPSC Civil Services examinations including IAS, IFS, and other Group A services. It ensures your photo meets the exact pixel requirements while maintaining image quality.",
+    "features": [
+      "Precise resizing to 350x350 pixels for UPSC forms",
+      "Maintains aspect ratio without distortion",
+      "Compresses to UPSC-recommended file sizes",
+      "Supports both JPG and PNG input formats",
+      "Real-time preview of resized image",
+      "Batch processing for multiple photos",
+      "No watermarks or quality loss",
+      "Completely private browser-based processing"
+    ],
+    "howToUse": {
+      "name": "How to Use UPSC Photo Resizer 350x350",
+      "steps": [
+        {
+          "name": "Select Your Photo",
+          "text": "Upload a recent passport-size photograph from your device. The photo should have a plain light background and show your full face clearly."
+        },
+        {
+          "name": "Automatic Resizing",
+          "text": "The tool automatically resizes your photo to 350x350 pixels. If your photo isn't square, it will crop to maintain the 1:1 aspect ratio."
+        },
+        {
+          "name": "Adjust Crop if Needed",
+          "text": "If the automatic crop doesn't center your face properly, use the drag handles to reposition the crop area before finalizing."
+        },
+        {
+          "name": "Compress to Required Size",
+          "text": "Adjust the compression level to meet UPSC's file size requirements (typically under 300KB). The tool displays the current file size."
+        },
+        {
+          "name": "Download and Save",
+          "text": "Download your resized photo. Save it with a clear filename like 'UPSC_Photo_YourName.jpg' for easy identification during form submission."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the exact photo size required for UPSC IAS exam?",
+        "answer": "UPSC requires a passport-size photograph of 350x350 pixels in JPG format. The file size should typically be between 20KB and 300KB, with a plain white or light-colored background."
+      },
+      {
+        "question": "Can I wear glasses in my UPSC application photo?",
+        "answer": "Yes, you can wear glasses, but make sure there's no reflection on the lenses and your eyes are clearly visible. Avoid tinted or sunglasses."
+      },
+      {
+        "question": "Does UPSC accept photos with borders or frames?",
+        "answer": "No, UPSC does not accept photos with borders, frames, or any other decorations. The photo should be a plain passport-style image."
+      },
+      {
+        "question": "What should I do if my photo is rejected by UPSC portal?",
+        "answer": "If your photo is rejected, check the error message for specific issues. Common problems include wrong dimensions, file size too large, or poor image quality. Use this tool to correct these issues."
+      },
+      {
+        "question": "Can I use a selfie for UPSC application?",
+        "answer": "While you can use a selfie, it's not recommended. A professional passport photo with proper lighting and a plain background is more likely to be accepted without issues."
+      },
+      {
+        "question": "How recent should my UPSC application photo be?",
+        "answer": "Your photo should be recent, typically not older than 3-6 months. It should accurately represent your current appearance."
+      }
+    ],
+    "seoDescription": "UPSC Photo Resizer 350x350 pixels - Free online tool to resize photos for IAS, IFS, and UPSC Civil Services exams. Meet exact dimension and file size requirements with browser-based processing."
+  },
+  "neet-photo-signature-resizer": {
+    "whatItIs": "This tool is specifically designed for NEET exam applicants to resize and compress both their passport photo and signature to meet NTA's strict requirements. NEET forms require specific dimensions and file sizes that this tool handles automatically.",
+    "features": [
+      "Resize photos to NEET-required dimensions (typically 3.5cm x 4.5cm)",
+      "Compress photos to 10-200KB range as per NEET guidelines",
+      "Resize and compress signatures to 4-30KB",
+      "Supports JPG/JPEG and PNG formats",
+      "Preview before final download",
+      "Process both photo and signature in one session",
+      "Maintains image clarity after compression",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use NEET Photo & Signature Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Passport Photo",
+          "text": "Select a recent passport-size photograph with a white background. The photo should show your head and shoulders clearly."
+        },
+        {
+          "name": "Set NEET Photo Specifications",
+          "text": "The tool automatically configures the dimensions to NEET standards (3.5cm x 4.5cm). Adjust the crop area to center your face properly."
+        },
+        {
+          "name": "Compress Photo to Required Size",
+          "text": "Use the compression controls to reduce your photo to between 10-200KB. NEET typically requires photos under 200KB but check your specific notification."
+        },
+        {
+          "name": "Upload and Process Signature",
+          "text": "Upload your signature image. The tool will resize and compress it to the 4-30KB range required by NEET. Sign on white paper with black ink for best results."
+        },
+        {
+          "name": "Download Both Files",
+          "text": "Download your processed photo and signature. Verify both files meet NEET's size and dimension requirements before uploading to the application portal."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the exact photo dimensions for NEET 2026?",
+        "answer": "For NEET 2026, the photograph should be in JPG format with dimensions 3.5cm (width) x 4.5cm (height). The file size should be between 10KB and 200KB."
+      },
+      {
+        "question": "Can I use a colored background for NEET photo?",
+        "answer": "No, NEET requires a white background for the passport photograph. Any colored or patterned background will result in rejection of your application."
+      },
+      {
+        "question": "What type of signature does NEET accept?",
+        "answer": "NEET accepts a clear scanned image of your signature in running handwriting. It should be on white paper with black or dark blue ink, and the file size should be between 4KB and 30KB."
+      },
+      {
+        "question": "Can I wear a cap or religious headwear in my NEET photo?",
+        "answer": "Religious headwear is allowed only if it doesn't cover your face. Caps, hats, or any other headwear that obscures your face or hairline are not permitted."
+      },
+      {
+        "question": "Why was my NEET photo rejected even after using this tool?",
+        "answer": "Common reasons for rejection include poor lighting, shadows on the face, red eyes, or not following the dress code (avoid uniforms or similar clothing). Ensure your photo has even lighting and a neutral expression."
+      },
+      {
+        "question": "Can I edit my photo after uploading to NEET portal?",
+        "answer": "Once you've submitted your application, you cannot edit the photo. However, during the application correction window (if available), you may be able to replace it. Always verify your photo before final submission."
+      }
+    ],
+    "seoDescription": "NEET Photo & Signature Resizer - Free online tool to resize and compress images for NEET UG 2026 exam. Meet NTA's exact requirements for photo dimensions (3.5x4.5cm) and file sizes (10-200KB)."
+  },
+  "upsc-photo-resizer": {
+    "whatItIs": "This comprehensive UPSC photo resizing tool helps you prepare both your photograph and signature for UPSC Civil Services examinations. It handles the specific requirements for IAS, IFS, IPS, and other Group A and B services, ensuring your images meet the exact specifications before upload.",
+    "features": [
+      "Resize photos to UPSC standard 350x350 pixels",
+      "Compress photos to 20-300KB range",
+      "Resize and compress signatures to 10-40KB",
+      "Supports JPG, JPEG, and PNG formats",
+      "Real-time preview of processed images",
+      "Batch processing for multiple images",
+      "Maintains image quality and clarity",
+      "100% browser-based with no data uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use UPSC Photo Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Photograph",
+          "text": "Select a recent passport-size color photograph. The photo should have a plain white or light-colored background and show your full face from the front."
+        },
+        {
+          "name": "Set Dimensions to 350x350",
+          "text": "The tool automatically sets the output to 350x350 pixels. If your photo isn't square, it will be cropped to fit. Adjust the crop area to center your face."
+        },
+        {
+          "name": "Compress to UPSC Standards",
+          "text": "Adjust the compression to achieve a file size between 20KB and 300KB. UPSC typically accepts photos in this range, but always check your specific notification."
+        },
+        {
+          "name": "Process Your Signature",
+          "text": "Upload your signature image. The tool will resize it and compress it to between 10-40KB. Use a clear, dark ink signature on white paper."
+        },
+        {
+          "name": "Download and Verify",
+          "text": "Download both processed files. Double-check that the photo is 350x350 pixels and both files meet UPSC's size requirements before submitting your application."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the difference between UPSC Photo Resizer and UPSC Photo Resizer 350x350?",
+        "answer": "The UPSC Photo Resizer 350x350 is specifically for resizing to that exact dimension, while this UPSC Photo Resizer also handles signature resizing and compression for both photos and signatures in one tool."
+      },
+      {
+        "question": "Can I use the same photo for multiple UPSC exams?",
+        "answer": "Yes, you can use the same photo for multiple UPSC exams as long as it meets the specifications for each exam and your appearance hasn't changed significantly."
+      },
+      {
+        "question": "What should I wear for my UPSC application photo?",
+        "answer": "Wear light-colored, plain clothing. Avoid uniforms, dark colors, or patterns. The photo should clearly show your face and shoulders against the plain background."
+      },
+      {
+        "question": "Can I smile in my UPSC application photo?",
+        "answer": "You should maintain a neutral expression with your mouth closed. A slight smile is generally acceptable, but avoid broad smiles or laughter that might distort your facial features."
+      },
+      {
+        "question": "How do I ensure my signature is accepted by UPSC?",
+        "answer": "Your signature should be clear and legible, in your normal handwriting. Use black ink on white paper, scan at high resolution, and ensure it's not too small or too large. The file size should be between 10-40KB."
+      },
+      {
+        "question": "What if my photo doesn't meet UPSC requirements after using this tool?",
+        "answer": "If your photo is rejected, check the specific error message. Common issues include wrong dimensions, file size too large, poor quality, or not following the background requirements. Re-process your photo with adjusted settings."
+      }
+    ],
+    "seoDescription": "UPSC Photo Resizer - Free online tool to resize and compress photos and signatures for UPSC IAS, IFS, IPS exams. Meet exact 350x350 pixel and 20-300KB requirements with browser-based processing."
+  },
+  "ssc-photo-resizer": {
+    "whatItIs": "This dedicated tool helps SSC exam applicants resize and compress their photographs to meet the specific requirements of various SSC examinations. It handles the common 350x450 pixel dimension and 20-50KB file size that most SSC forms require.",
+    "features": [
+      "Resize photos to 350x450 pixels for SSC forms",
+      "Compress photos to 20-50KB range automatically",
+      "Maintains image quality and facial clarity",
+      "Supports JPG and PNG input formats",
+      "Real-time file size preview",
+      "One-click download of processed images",
+      "Process multiple photos in a single session",
+      "100% private browser-based processing"
+    ],
+    "howToUse": {
+      "name": "How to Resize and Compress a Photo for SSC",
+      "steps": [
+        {
+          "name": "Select Your Photo",
+          "text": "Upload a recent passport-size photograph. The photo should have a plain white or light-colored background and show your full face clearly."
+        },
+        {
+          "name": "Set SSC Dimensions",
+          "text": "The tool automatically configures the output to 350x450 pixels, which is the standard for most SSC exams. The aspect ratio will be maintained."
+        },
+        {
+          "name": "Adjust Crop Area",
+          "text": "If needed, adjust the crop area to ensure your face is centered and properly framed within the 350x450 pixel dimensions."
+        },
+        {
+          "name": "Compress to 20-50KB",
+          "text": "Use the compression slider to reduce your photo to between 20-50KB. The tool shows the current file size, so you can find the right balance between size and quality."
+        },
+        {
+          "name": "Download and Verify",
+          "text": "Download your processed photo. Before submitting, verify that it's exactly 350x450 pixels and between 20-50KB in size."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the difference between SSC Photo Resizer and SSC Photo and Signature Resizer?",
+        "answer": "This SSC Photo Resizer focuses only on photos, while the SSC Photo and Signature Resizer handles both photos and signatures in one tool. Use this if you only need to process your photo."
+      },
+      {
+        "question": "Can I use a black and white photo for SSC exams?",
+        "answer": "SSC typically requires color photographs. Black and white photos are generally not accepted unless specifically mentioned in the exam notification."
+      },
+      {
+        "question": "What should be the background color for SSC photo?",
+        "answer": "The background should be plain white or a very light color. Avoid patterned, dark, or colored backgrounds as they may lead to rejection of your application."
+      },
+      {
+        "question": "Can I wear spectacles in my SSC application photo?",
+        "answer": "Yes, you can wear spectacles, but ensure there's no glare on the lenses and your eyes are clearly visible. Avoid tinted glasses or sunglasses."
+      },
+      {
+        "question": "How can I reduce my photo size without losing quality?",
+        "answer": "Start with a high-resolution photo (at least 600x800 pixels). The tool uses smart compression to reduce file size while maintaining visual clarity. Avoid excessive compression that makes the photo blurry."
+      },
+      {
+        "question": "What if my photo is still over 50KB after compression?",
+        "answer": "If your photo is still too large, try cropping it more tightly around your face and shoulders, or slightly reduce the image quality. You can also try starting with a smaller original image."
+      }
+    ],
+    "seoDescription": "SSC Photo Resizer - Free online tool to resize and compress photos to 350x450 pixels and 20-50KB for SSC CGL, CHSL, MTS exams. Meet exact requirements with browser-based processing."
+  },
+  "signature-resizer-under-20kb": {
+    "whatItIs": "This specialized tool helps you resize and compress your signature to under 20KB, which is a common requirement for many exam forms, job applications, and government portals. It ensures your signature file is small enough for upload while remaining clear and legible.",
+    "features": [
+      "Compress signatures to under 20KB automatically",
+      "Maintains signature clarity and legibility",
+      "Supports JPG, PNG, and other image formats",
+      "Real-time file size preview",
+      "Crop tool to remove excess white space",
+      "Adjustable compression levels",
+      "Batch processing for multiple signatures",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Resize Signature Under 20KB",
+      "steps": [
+        {
+          "name": "Scan or Photograph Your Signature",
+          "text": "Create a digital image of your signature. For best results, sign on plain white paper with black ink, then scan at 300 DPI or take a clear photo in good lighting."
+        },
+        {
+          "name": "Upload Signature Image",
+          "text": "Upload your signature image to the tool. The signature should be clear and dark against the white background."
+        },
+        {
+          "name": "Crop Excess Space",
+          "text": "Use the crop tool to remove any unnecessary white space around your signature. This helps reduce the file size significantly."
+        },
+        {
+          "name": "Compress to Under 20KB",
+          "text": "Adjust the compression level until your signature file is under 20KB. The tool shows the current file size in real-time."
+        },
+        {
+          "name": "Download and Test",
+          "text": "Download your compressed signature. Open the file to ensure it's still clear and legible before using it for official submissions."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the best way to create a digital signature?",
+        "answer": "Sign on plain white paper with a black gel pen or marker for a dark, clear signature. Scan it at 300 DPI or take a photo in natural light with no shadows. Avoid using ballpoint pens as they may create faint signatures."
+      },
+      {
+        "question": "Can I use a typed name instead of a signature?",
+        "answer": "No, most official forms require your actual handwritten signature, not a typed name. A typed name may be considered invalid and could lead to rejection of your application."
+      },
+      {
+        "question": "Why does my signature look pixelated after compression?",
+        "answer": "Pixelation usually occurs when the original signature image is too small or low resolution. Start with a high-quality scan or photo (at least 600x200 pixels) for best results after compression."
+      },
+      {
+        "question": "What if my signature is still over 20KB?",
+        "answer": "If your signature is still too large, try cropping more tightly around the signature itself, reducing the image dimensions, or using a slightly lower compression quality. You can also try re-scanning at a lower DPI."
+      },
+      {
+        "question": "Can I use this tool for multiple different applications?",
+        "answer": "Yes, you can use this tool for any application that requires a signature under 20KB. The processed signature file can be reused for multiple forms."
+      },
+      {
+        "question": "Is a digital signature legally valid?",
+        "answer": "A scanned image of your handwritten signature is generally accepted as valid for most online applications. However, for legal documents, you may need a digital signature certificate. Always check the specific requirements of the form you're submitting."
+      }
+    ],
+    "seoDescription": "Signature Resizer Under 20KB - Free online tool to compress and resize signature images for exam forms, job applications, and government portals. Meet exact file size requirements with browser-based processing."
+  },
+  "neet-photo-resizer": {
+    "whatItIs": "This tool is specifically designed to help NEET applicants resize and compress their application photos to meet the National Testing Agency's requirements. It handles the specific dimensions and file sizes that NEET forms demand, ensuring your photo is accepted without issues.",
+    "features": [
+      "Resize photos to NEET-standard dimensions",
+      "Compress photos to 10-200KB range",
+      "Maintains facial clarity and detail",
+      "Supports JPG and PNG formats",
+      "Real-time preview of resized photo",
+      "Automatic aspect ratio maintenance",
+      "One-click download of processed photo",
+      "100% private browser-based processing"
+    ],
+    "howToUse": {
+      "name": "How to Use NEET Photo Resizer",
+      "steps": [
+        {
+          "name": "Select Your Photo",
+          "text": "Upload a recent passport-size color photograph. The photo should have a plain white background and show your full face from the front with a neutral expression."
+        },
+        {
+          "name": "Set NEET Dimensions",
+          "text": "The tool automatically configures the output to NEET's required dimensions (typically 3.5cm x 4.5cm). The aspect ratio will be maintained during resizing."
+        },
+        {
+          "name": "Adjust Crop Area",
+          "text": "If the automatic crop doesn't center your face properly, use the drag handles to reposition the crop area. Ensure your face occupies about 70-80% of the photo frame."
+        },
+        {
+          "name": "Compress to Required Size",
+          "text": "Adjust the compression level to achieve a file size between 10KB and 200KB. NEET typically accepts photos in this range, but always check your specific notification."
+        },
+        {
+          "name": "Download and Verify",
+          "text": "Download your processed photo. Before submitting, verify that it meets NEET's dimension and file size requirements."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the difference between NEET Photo Resizer and NEET Photo & Signature Resizer?",
+        "answer": "This NEET Photo Resizer focuses only on photos, while the NEET Photo & Signature Resizer handles both photos and signatures in one tool. Use this if you only need to process your photo for NEET."
+      },
+      {
+        "question": "Can I wear a white shirt in my NEET photo?",
+        "answer": "Yes, you can wear a white shirt, but make sure it contrasts with the white background so your face and clothing are clearly visible. Avoid shirts that blend into the background."
+      },
+      {
+        "question": "What should be the expression in my NEET photo?",
+        "answer": "Maintain a neutral expression with your mouth closed. Avoid smiling, frowning, or any exaggerated expressions. Your eyes should be open and clearly visible."
+      },
+      {
+        "question": "Can I use a photo with a shadow on my face for NEET?",
+        "answer": "No, photos with shadows on the face are typically rejected. Ensure your photo is taken in even, diffused lighting with no shadows on your face or background."
+      },
+      {
+        "question": "How can I ensure my NEET photo is not rejected?",
+        "answer": "Follow these guidelines: recent photo (not older than 6 months), plain white background, neutral expression, no shadows, proper lighting, and clear facial features. Use this tool to ensure correct dimensions and file size."
+      },
+      {
+        "question": "Can I use the same photo for NEET and JEE?",
+        "answer": "You can use the same photo if it meets the requirements for both exams. However, NEET and JEE may have slightly different specifications, so always verify the photo meets each exam's specific requirements."
+      }
+    ],
+    "seoDescription": "NEET Photo Resizer - Free online tool to resize and compress photos for NEET UG exam. Meet NTA's exact dimension and file size requirements with browser-based processing."
+  },
+  "jee-photo-resizer": {
+    "whatItIs": "This tool helps JEE Main and Advanced applicants resize and compress their application photos to meet the specific requirements set by the National Testing Agency. It ensures your photo meets the exact specifications before you upload it to the JEE portal.",
+    "features": [
+      "Resize photos to JEE-required dimensions",
+      "Compress photos to 10-200KB range",
+      "Maintains image quality and facial details",
+      "Supports JPG and PNG input formats",
+      "Real-time preview of processed photo",
+      "Automatic aspect ratio maintenance",
+      "Crop tool for precise framing",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use JEE Photo Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Photograph",
+          "text": "Select a recent passport-size color photograph. The photo should have a plain white or light-colored background and show your full face clearly."
+        },
+        {
+          "name": "Set JEE Dimensions",
+          "text": "The tool automatically configures the output to JEE's required dimensions. For JEE Main, this is typically 3.5cm x 4.5cm, but always check your specific notification."
+        },
+        {
+          "name": "Adjust Crop and Position",
+          "text": "Use the crop tool to ensure your face is centered and properly framed. Your face should occupy about 70-80% of the photo frame for best results."
+        },
+        {
+          "name": "Compress to Required Size",
+          "text": "Adjust the compression level to achieve a file size between 10KB and 200KB. JEE typically accepts photos in this range."
+        },
+        {
+          "name": "Download and Verify",
+          "text": "Download your processed photo. Before submitting to the JEE portal, verify that it meets all the specified requirements for dimensions and file size."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the exact photo requirements for JEE Main 2026?",
+        "answer": "For JEE Main 2026, the photograph should be in JPG/JPEG format with dimensions 3.5cm (width) x 4.5cm (height). The file size should be between 10KB and 200KB, with a plain white background."
+      },
+      {
+        "question": "Can I wear a cap in my JEE application photo?",
+        "answer": "No, headwear including caps, hats, or religious headwear (unless it doesn't cover the face) is not permitted in JEE application photos. Your full face and hairline should be clearly visible."
+      },
+      {
+        "question": "What should be the background in my JEE photo?",
+        "answer": "JEE requires a plain white background for the passport photograph. Avoid patterned, colored, or dark backgrounds as they may lead to rejection of your application."
+      },
+      {
+        "question": "Can I use a selfie for JEE application?",
+        "answer": "While you can use a selfie, it's not recommended. A professional passport photo with proper lighting, plain background, and neutral expression is more likely to be accepted without issues."
+      },
+      {
+        "question": "How recent should my JEE application photo be?",
+        "answer": "Your photo should be recent, typically not older than 3-6 months. It should accurately represent your current appearance as it will be used for verification during the exam."
+      },
+      {
+        "question": "What if my JEE photo is rejected by the portal?",
+        "answer": "If your photo is rejected, check the error message for specific issues. Common problems include wrong dimensions, file size too large, poor image quality, or not following the background requirements. Use this tool to correct these issues and re-upload."
+      }
+    ],
+    "seoDescription": "JEE Photo Resizer - Free online tool to resize and compress photos for JEE Main and Advanced exams. Meet NTA's exact dimension and file size requirements with browser-based processing."
+  },
+  "cuet-photo-resizer": {
+    "whatItIs": "This tool is designed specifically for CUET (Common University Entrance Test) applicants to resize and compress their application photos and signatures. It handles the specific requirements set by the National Testing Agency for CUET forms.",
+    "features": [
+      "Resize photos to CUET-required dimensions",
+      "Compress photos to 10-200KB range",
+      "Resize and compress signatures to 4-30KB",
+      "Maintains image clarity and quality",
+      "Supports JPG and PNG formats",
+      "Real-time preview of processed images",
+      "Process both photo and signature in one session",
+      "100% private browser-based processing"
+    ],
+    "howToUse": {
+      "name": "How to Use CUET Photo Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Passport Photo",
+          "text": "Select a recent passport-size color photograph with a plain white background. The photo should show your full face clearly from the front."
+        },
+        {
+          "name": "Set CUET Dimensions",
+          "text": "The tool automatically configures the output to CUET's required dimensions. For CUET, this is typically 3.5cm x 4.5cm, but always verify with your specific notification."
+        },
+        {
+          "name": "Adjust Crop Area",
+          "text": "Use the crop tool to ensure your face is centered and properly framed within the dimensions. Your face should occupy about 70-80% of the photo frame."
+        },
+        {
+          "name": "Compress Photo to Required Size",
+          "text": "Adjust the compression level to achieve a file size between 10KB and 200KB. CUET typically accepts photos in this range."
+        },
+        {
+          "name": "Process and Download Signature",
+          "text": "Upload your signature, resize it, and compress it to between 4-30KB. Download both processed files and verify they meet CUET's requirements."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the photo requirements for CUET 2026?",
+        "answer": "For CUET 2026, the photograph should be in JPG/JPEG format with dimensions 3.5cm (width) x 4.5cm (height). The file size should be between 10KB and 200KB, with a plain white background."
+      },
+      {
+        "question": "Can I use the same photo for multiple CUET applications?",
+        "answer": "Yes, you can use the same photo for multiple CUET applications as long as it meets the specifications for each and your appearance hasn't changed significantly."
+      },
+      {
+        "question": "What type of signature does CUET accept?",
+        "answer": "CUET accepts a clear scanned image of your signature in running handwriting. It should be on white paper with black or dark blue ink, and the file size should be between 4KB and 30KB."
+      },
+      {
+        "question": "Can I wear glasses in my CUET application photo?",
+        "answer": "Yes, you can wear glasses, but ensure there's no glare on the lenses and your eyes are clearly visible. Avoid tinted glasses or sunglasses."
+      },
+      {
+        "question": "What should I do if my CUET photo is rejected?",
+        "answer": "If your photo is rejected, check the error message for specific issues. Common problems include wrong dimensions, file size too large, poor image quality, or not following the background requirements. Use this tool to correct these issues."
+      },
+      {
+        "question": "How can I ensure my CUET signature is clear after compression?",
+        "answer": "Start with a high-quality scan of your signature (at least 600x200 pixels). Sign with a dark pen on white paper, and use this tool to compress it while maintaining clarity. Avoid excessive compression that makes the signature blurry."
+      }
+    ],
+    "seoDescription": "CUET Photo Resizer - Free online tool to resize and compress photos and signatures for Common University Entrance Test. Meet NTA's exact requirements with browser-based processing."
+  },
+  "railway-exam-photo-resizer": {
+    "whatItIs": "This tool helps railway exam applicants, including RRB and other railway recruitment exams, resize and compress their application photos and signatures to meet the specific requirements. It handles the various specifications that different railway exams demand.",
+    "features": [
+      "Resize photos for RRB and railway exams",
+      "Compress photos to 20-50KB range",
+      "Resize and compress signatures to 10-20KB",
+      "Supports JPG and PNG formats",
+      "Real-time preview of processed images",
+      "Process both photo and signature in one session",
+      "Maintains image quality and clarity",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use Railway Exam Photo Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Photograph",
+          "text": "Select a recent passport-size color photograph. For railway exams, the photo should have a plain white or light-colored background."
+        },
+        {
+          "name": "Set Railway Exam Dimensions",
+          "text": "The tool automatically configures the output to common railway exam dimensions (typically 3.5cm x 4.5cm). Adjust if your specific exam requires different measurements."
+        },
+        {
+          "name": "Adjust Crop and Position",
+          "text": "Use the crop tool to ensure your face is centered and properly framed. Your face should occupy about 70-80% of the photo frame."
+        },
+        {
+          "name": "Compress to Required Size",
+          "text": "Adjust the compression level to achieve a file size between 20KB and 50KB, which is the common requirement for most railway exams."
+        },
+        {
+          "name": "Process and Download Signature",
+          "text": "Upload your signature, resize it, and compress it to between 10-20KB. Download both processed files and verify they meet your specific railway exam's requirements."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the photo requirements for RRB Group D exam?",
+        "answer": "For RRB Group D, the photograph should be in JPG format with dimensions typically around 3.5cm x 4.5cm. The file size should be between 20KB and 50KB, with a plain white background."
+      },
+      {
+        "question": "Can I use a colored background for railway exam photo?",
+        "answer": "No, railway exams typically require a plain white or very light-colored background. Any colored or patterned background may lead to rejection of your application."
+      },
+      {
+        "question": "What is the signature size for RRB exams?",
+        "answer": "For most RRB exams, the signature file should be between 10KB and 20KB in JPG format. The signature should be clear and legible, in your normal handwriting."
+      },
+      {
+        "question": "Can I wear a uniform in my railway exam photo?",
+        "answer": "No, you should not wear any uniform or official dress in your application photo. Wear plain, light-colored clothing with a neutral expression."
+      },
+      {
+        "question": "What if my railway exam photo is rejected?",
+        "answer": "If your photo is rejected, check the error message for specific issues. Common problems include wrong dimensions, file size too large, poor image quality, or not following the background requirements. Use this tool to correct these issues."
+      },
+      {
+        "question": "Can I use the same photo for multiple railway exams?",
+        "answer": "Yes, you can use the same photo for multiple railway exams as long as it meets the specifications for each exam and your appearance hasn't changed significantly."
+      }
+    ],
+    "seoDescription": "Railway Exam Photo Resizer - Free online tool to resize and compress photos and signatures for RRB Group D, NTPC, and other railway recruitment exams. Meet exact requirements with browser-based processing."
+  },
+  "ibps-photo-resizer": {
+    "whatItIs": "This tool helps IBPS, SBI, and other bank exam applicants resize and compress their application photos and signatures to meet the specific requirements of banking sector examinations. It handles the various specifications that different bank exams demand.",
+    "features": [
+      "Resize photos for IBPS, SBI, and bank exams",
+      "Compress photos to 20-50KB range",
+      "Resize and compress signatures to 10-20KB",
+      "Supports JPG and PNG formats",
+      "Real-time preview of processed images",
+      "Process both photo and signature in one session",
+      "Maintains image quality and clarity",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use Bank Exam Photo Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Photograph",
+          "text": "Select a recent passport-size color photograph. For bank exams, the photo should have a plain white background and show your full face clearly."
+        },
+        {
+          "name": "Set Bank Exam Dimensions",
+          "text": "The tool automatically configures the output to common bank exam dimensions (typically 3.5cm x 4.5cm or 200x230 pixels). Adjust if your specific exam requires different measurements."
+        },
+        {
+          "name": "Adjust Crop and Position",
+          "text": "Use the crop tool to ensure your face is centered and properly framed. Your face should occupy about 70-80% of the photo frame for best results."
+        },
+        {
+          "name": "Compress to Required Size",
+          "text": "Adjust the compression level to achieve a file size between 20KB and 50KB, which is the common requirement for most bank exams."
+        },
+        {
+          "name": "Process and Download Signature",
+          "text": "Upload your signature, resize it, and compress it to between 10-20KB. Download both processed files and verify they meet your specific bank exam's requirements."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the photo requirements for IBPS PO exam?",
+        "answer": "For IBPS PO, the photograph should be in JPG format with dimensions typically 200x230 pixels. The file size should be between 20KB and 50KB, with a plain white background."
+      },
+      {
+        "question": "What is the difference between IBPS and SBI photo requirements?",
+        "answer": "IBPS and SBI photo requirements are generally similar, but there may be slight differences in dimensions or file size limits. Always check the specific notification for your exam. This tool can handle both requirements."
+      },
+      {
+        "question": "Can I wear glasses in my bank exam photo?",
+        "answer": "Yes, you can wear glasses, but ensure there's no glare on the lenses and your eyes are clearly visible. Avoid tinted glasses or sunglasses."
+      },
+      {
+        "question": "What should be the background in my IBPS photo?",
+        "answer": "IBPS requires a plain white background for the passport photograph. Avoid patterned, colored, or dark backgrounds as they may lead to rejection of your application."
+      },
+      {
+        "question": "What if my bank exam photo is rejected?",
+        "answer": "If your photo is rejected, check the error message for specific issues. Common problems include wrong dimensions, file size too large, poor image quality, or not following the background requirements. Use this tool to correct these issues."
+      },
+      {
+        "question": "Can I use a selfie for IBPS application?",
+        "answer": "While you can use a selfie, it's not recommended. A professional passport photo with proper lighting, plain background, and neutral expression is more likely to be accepted without issues."
+      }
+    ],
+    "seoDescription": "Bank Exam Photo Resizer - Free online tool to resize and compress photos and signatures for IBPS PO, Clerk, SBI, and other banking exams. Meet exact requirements with browser-based processing."
+  },
+  "pan-card-photo-resizer": {
+    "whatItIs": "This tool helps you resize and compress your photograph for PAN card applications, both for new applications and updates. It ensures your photo meets the exact specifications required by the Income Tax Department for PAN card processing.",
+    "features": [
+      "Resize photos to PAN card requirements",
+      "Compress photos to 20-50KB range",
+      "Maintains image quality and facial clarity",
+      "Supports JPG and PNG formats",
+      "Real-time preview of processed photo",
+      "Automatic aspect ratio maintenance",
+      "Crop tool for precise framing",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use PAN Card Photo Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Photograph",
+          "text": "Select a recent passport-size color photograph. For PAN card, the photo should have a plain white background and show your full face clearly from the front."
+        },
+        {
+          "name": "Set PAN Card Dimensions",
+          "text": "The tool automatically configures the output to PAN card dimensions (typically 3.5cm x 2.5cm or 350x250 pixels). The aspect ratio will be maintained during resizing."
+        },
+        {
+          "name": "Adjust Crop Area",
+          "text": "Use the crop tool to ensure your face is centered and properly framed within the dimensions. Your face should occupy about 70-80% of the photo frame."
+        },
+        {
+          "name": "Compress to Required Size",
+          "text": "Adjust the compression level to achieve a file size between 20KB and 50KB. PAN card applications typically accept photos in this range."
+        },
+        {
+          "name": "Download and Verify",
+          "text": "Download your processed photo. Before submitting, verify that it meets PAN card's dimension and file size requirements."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the exact photo requirements for PAN card?",
+        "answer": "For PAN card, the photograph should be in JPG format with dimensions 3.5cm (width) x 2.5cm (height) or 350x250 pixels. The file size should be between 20KB and 50KB, with a plain white background."
+      },
+      {
+        "question": "Can I wear glasses in my PAN card photo?",
+        "answer": "Yes, you can wear glasses, but ensure there's no glare on the lenses and your eyes are clearly visible. Avoid tinted glasses or sunglasses."
+      },
+      {
+        "question": "What should be the background in my PAN card photo?",
+        "answer": "PAN card requires a plain white background for the photograph. Avoid patterned, colored, or dark backgrounds as they may lead to rejection of your application."
+      },
+      {
+        "question": "Can I use a black and white photo for PAN card?",
+        "answer": "No, PAN card applications require color photographs. Black and white photos are not accepted for PAN card applications."
+      },
+      {
+        "question": "How recent should my PAN card photo be?",
+        "answer": "Your photo should be recent, typically not older than 6 months. It should accurately represent your current appearance as it will be used for identification purposes."
+      },
+      {
+        "question": "What if my PAN card photo is rejected?",
+        "answer": "If your photo is rejected, check the error message for specific issues. Common problems include wrong dimensions, file size too large, poor image quality, or not following the background requirements. Use this tool to correct these issues."
+      }
+    ],
+    "seoDescription": "PAN Card Photo Resizer - Free online tool to resize and compress photos for PAN card applications. Meet Income Tax Department's exact dimension and file size requirements with browser-based processing."
+  },
+  "passport-photo-maker": {
+    "whatItIs": "This tool helps you create passport-style photos that meet Indian government standards for various official documents and forms. It provides the precise dimensions, background, and quality requirements needed for Indian passport applications and other official purposes.",
+    "features": [
+      "Create passport photos to Indian standards (51mm x 51mm)",
+      "Resize and crop photos to exact passport dimensions",
+      "Compress photos to required file sizes",
+      "Add white background if needed",
+      "Supports JPG and PNG formats",
+      "Real-time preview of passport photo",
+      "Print-ready output for physical submissions",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use Passport Photo Maker India",
+      "steps": [
+        {
+          "name": "Upload Your Photograph",
+          "text": "Select a recent photograph of yourself. The photo should be taken against a plain background, with your full face clearly visible from the front."
+        },
+        {
+          "name": "Set Passport Dimensions",
+          "text": "The tool automatically configures the output to Indian passport standards (51mm x 51mm or 510x510 pixels). The aspect ratio will be maintained."
+        },
+        {
+          "name": "Adjust Crop and Background",
+          "text": "Use the crop tool to ensure your face is centered and properly framed. If your photo doesn't have a white background, the tool can help adjust it to meet passport requirements."
+        },
+        {
+          "name": "Compress to Required Size",
+          "text": "Adjust the compression level to achieve the required file size. For online submissions, this is typically between 20KB and 50KB."
+        },
+        {
+          "name": "Download and Print",
+          "text": "Download your processed passport photo. For physical submissions, you can print it at the required size (51mm x 51mm) on matte photo paper."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the exact dimensions for Indian passport photo?",
+        "answer": "Indian passport photos should be 51mm x 51mm (2 inches x 2 inches) in size. The digital version should be 510x510 pixels with a resolution of at least 300 DPI."
+      },
+      {
+        "question": "What should be the background color for Indian passport photo?",
+        "answer": "Indian passport photos require a plain white background. The background should be uniform with no shadows, patterns, or other objects."
+      },
+      {
+        "question": "Can I wear glasses in my Indian passport photo?",
+        "answer": "Yes, you can wear glasses, but ensure there's no glare on the lenses and your eyes are clearly visible. Avoid tinted glasses or sunglasses. Heavy-rimmed glasses should also be avoided."
+      },
+      {
+        "question": "What should I wear for my passport photo?",
+        "answer": "Wear plain, light-colored clothing that contrasts with the white background. Avoid uniforms, dark colors, or patterns. Religious headwear is allowed if it doesn't cover your face."
+      },
+      {
+        "question": "How many passport photos do I need?",
+        "answer": "For a new passport application, you typically need 2 identical photos. For renewal, you may need 1-2 photos. Always check the specific requirements for your application type."
+      },
+      {
+        "question": "Can I smile in my passport photo?",
+        "answer": "You should maintain a neutral expression with your mouth closed. A slight smile is generally acceptable, but avoid broad smiles or any expression that might distort your facial features."
+      }
+    ],
+    "seoDescription": "Passport Photo Maker India - Free online tool to create passport-size photos (51mm x 51mm) for Indian passport applications. Meet exact dimension, background, and file size requirements with browser-based processing."
+  },
+  "photo-compressor-under-50kb": {
+    "whatItIs": "This tool helps you compress your exam photos to under 50KB while maintaining the clarity needed for official form submissions. Many exam portals have strict file size limits, and this tool ensures your photos meet those requirements without losing important details.",
+    "features": [
+      "Compress photos to under 50KB automatically",
+      "Maintains facial clarity and details",
+      "Supports JPG and PNG formats",
+      "Real-time file size preview",
+      "Adjustable compression levels",
+      "Batch processing for multiple photos",
+      "Crop tool for precise framing",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use Photo Compressor Under 50KB",
+      "steps": [
+        {
+          "name": "Upload Your Photo",
+          "text": "Select the photo you need to compress. The photo should be a recent passport-size image with a plain background."
+        },
+        {
+          "name": "Check Current File Size",
+          "text": "The tool will display the current file size of your photo. If it's already under 50KB, you may not need to compress it further."
+        },
+        {
+          "name": "Adjust Compression Level",
+          "text": "Use the compression slider to reduce the file size to under 50KB. The tool shows the current file size in real-time as you adjust."
+        },
+        {
+          "name": "Preview Quality",
+          "text": "Preview the compressed photo to ensure your face and details are still clear. If the photo appears blurry, reduce the compression slightly."
+        },
+        {
+          "name": "Download Compressed Photo",
+          "text": "Once you're satisfied with the quality and file size, download the compressed photo. Verify that it's under 50KB before using it for your exam form."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why do exam forms require photos under 50KB?",
+        "answer": "Exam portals have file size limits to ensure smooth uploads and processing of thousands of applications. Photos under 50KB upload faster and don't consume excessive server storage."
+      },
+      {
+        "question": "Will compressing my photo affect its acceptance?",
+        "answer": "As long as the compressed photo maintains clear facial details and meets the dimension requirements, it should be accepted. This tool uses smart compression to preserve important details."
+      },
+      {
+        "question": "What if my photo is still over 50KB after compression?",
+        "answer": "If your photo is still too large, try cropping it more tightly around your face and shoulders, or start with a smaller original image. You can also try reducing the image dimensions slightly."
+      },
+      {
+        "question": "Can I compress a group photo for exam forms?",
+        "answer": "No, exam forms require individual passport photos, not group photos. Use a recent individual passport-size photograph for compression."
+      },
+      {
+        "question": "What is the best original photo size for compression?",
+        "answer": "Start with a high-resolution photo (at least 600x800 pixels) for best results. High-resolution photos compress better and maintain more detail at smaller file sizes."
+      },
+      {
+        "question": "Can I use this tool for non-exam photos?",
+        "answer": "Yes, you can use this tool to compress any photo to under 50KB for email attachments, web uploads, or any other purpose that requires smaller file sizes."
+      }
+    ],
+    "seoDescription": "Photo Compressor Under 50KB - Free online tool to compress exam photos for application forms. Reduce file size while maintaining clarity with browser-based processing."
+  },
+  "form-image-size-checker": {
+    "whatItIs": "This tool helps you verify that your photos and signatures meet the exact dimension and file size requirements before you upload them to official exam forms. It checks all the critical specifications that exam portals validate, helping you avoid rejection due to incorrect image properties.",
+    "features": [
+      "Check image dimensions in pixels and centimeters",
+      "Verify file size in KB and MB",
+      "Check image format (JPG, PNG, etc.)",
+      "Validate DPI/resolution",
+      "Compare against specific exam requirements",
+      "Batch check multiple images",
+      "Detailed report of image properties",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use Form Image Size Checker",
+      "steps": [
+        {
+          "name": "Upload Your Image",
+          "text": "Drag and drop or select the photo or signature you want to check. The tool accepts JPG, PNG, and other common image formats."
+        },
+        {
+          "name": "View Image Properties",
+          "text": "The tool will display all the properties of your image: dimensions (in pixels and centimeters), file size, format, and resolution (DPI)."
+        },
+        {
+          "name": "Select Exam Requirements",
+          "text": "Choose the specific exam you're applying for (e.g., UPSC, SSC, NEET) or enter the required dimensions and file size manually."
+        },
+        {
+          "name": "Check Compliance",
+          "text": "The tool will compare your image properties against the selected exam's requirements and highlight any issues that need to be fixed."
+        },
+        {
+          "name": "Fix Issues if Needed",
+          "text": "If your image doesn't meet the requirements, use the appropriate resizer or compressor tool to fix the issues, then re-check with this tool."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why was my photo rejected by the exam portal?",
+        "answer": "Common reasons for rejection include wrong dimensions, file size too large or too small, incorrect format, or poor image quality. Use this tool to check your photo against the exam's requirements before uploading."
+      },
+      {
+        "question": "What is DPI and why does it matter?",
+        "answer": "DPI (dots per inch) measures the resolution of your image. Higher DPI means better quality. Most exam portals require at least 300 DPI for clear photos, but the file size also increases with higher DPI."
+      },
+      {
+        "question": "Can I check multiple images at once?",
+        "answer": "Yes, you can upload and check multiple images in one session. This is useful for checking both your photo and signature, or for verifying images for multiple exam applications."
+      },
+      {
+        "question": "What if my image dimensions are in inches but the exam requires centimeters?",
+        "answer": "This tool automatically converts between different units of measurement. It will display your image dimensions in both pixels and centimeters, making it easy to compare against any exam's requirements."
+      },
+      {
+        "question": "How accurate is the size checking?",
+        "answer": "The tool provides precise measurements of your image properties. The accuracy depends on the metadata stored in your image file, which is typically very reliable for digital photos."
+      },
+      {
+        "question": "Can I use this tool for non-exam images?",
+        "answer": "Yes, you can use this tool to check the properties of any image, whether for exams, job applications, or any other purpose that has specific image requirements."
+      }
+    ],
+    "seoDescription": "Form Image Size Checker - Free online tool to verify photo and signature dimensions, file size, format, and DPI for exam forms. Ensure compliance with exact requirements before uploading."
+  },
+  "photo-name-date-editor": {
+    "whatItIs": "This tool helps you add your name and date to your exam photos when the application form specifically requires it. Some exam portals ask for photos with the candidate's name and date printed on them, and this tool makes it easy to add this text while maintaining the photo's compliance with other requirements.",
+    "features": [
+      "Add text (name, date) to exam photos",
+      "Customize font, size, and color of text",
+      "Position text anywhere on the photo",
+      "Maintains photo dimensions and quality",
+      "Supports JPG and PNG formats",
+      "Real-time preview of edited photo",
+      "Adjustable text opacity",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use Photo Name Date Editor",
+      "steps": [
+        {
+          "name": "Upload Your Photo",
+          "text": "Select the photo you need to edit. The photo should already meet the dimension and file size requirements for your exam."
+        },
+        {
+          "name": "Enter Text Details",
+          "text": "Type your name and the required date in the text fields. You can also add any other text that your specific exam form requires."
+        },
+        {
+          "name": "Customize Text Appearance",
+          "text": "Choose the font, size, color, and position for your text. For most exam photos, use a clear, readable font in black color. Position the text where it won't obscure your face."
+        },
+        {
+          "name": "Adjust Text Position",
+          "text": "Drag the text to the desired position on your photo. Common positions are at the bottom or side of the photo, but always check your exam's specific requirements."
+        },
+        {
+          "name": "Download Edited Photo",
+          "text": "Download your edited photo. Verify that the text is clear and legible, and that the photo still meets all other requirements (dimensions, file size, etc.)."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Which exams require name and date on photos?",
+        "answer": "Some state-level exams and certain university entrance tests require the candidate's name and date to be printed on the photo. Always check your specific exam notification for this requirement."
+      },
+      {
+        "question": "Where should I place the text on my photo?",
+        "answer": "The text should be placed where it doesn't obscure your face or any important features. Common positions are at the bottom of the photo or along one side. Avoid placing text over your face, eyes, or other identifying features."
+      },
+      {
+        "question": "What font and size should I use?",
+        "answer": "Use a clear, sans-serif font like Arial or Helvetica. The font size should be large enough to be readable but not so large that it dominates the photo. Typically, 12-18pt font works well."
+      },
+      {
+        "question": "Can I add other information besides name and date?",
+        "answer": "You can add any text that your specific exam form requires. However, only add what's explicitly asked for, as extra text might cause the photo to be rejected."
+      },
+      {
+        "question": "Will adding text affect my photo's file size?",
+        "answer": "Adding text to your photo may slightly increase the file size. After adding text, check the file size and compress if necessary to meet your exam's requirements."
+      },
+      {
+        "question": "What if the text obscures part of my photo?",
+        "answer": "If the text obscures important parts of your photo, reposition it to a less intrusive location. The text should be clearly visible but not cover your face, eyes, or other identifying features."
+      }
+    ],
+    "seoDescription": "Photo Name Date Editor - Free online tool to add name and date text to exam photos. Customize font, size, and position while maintaining compliance with exam requirements."
+  },
+  "jpg-to-pdf-exam-forms": {
+    "whatItIs": "This tool helps you convert your exam photos and documents from JPG format to PDF, which is often required for online form submissions. It creates PDF files that are optimized for exam portals, with the right file size and quality to ensure smooth uploads.",
+    "features": [
+      "Convert JPG images to PDF format",
+      "Compress PDF to exam-friendly file sizes",
+      "Maintains image quality in PDF",
+      "Supports multiple images in one PDF",
+      "Adjustable PDF quality settings",
+      "Real-time file size preview",
+      "Customizable page size and orientation",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use JPG to PDF for Exam Forms",
+      "steps": [
+        {
+          "name": "Upload Your JPG Image",
+          "text": "Select the JPG image you want to convert to PDF. This could be your exam photo, signature, or any other document required for your application."
+        },
+        {
+          "name": "Set PDF Options",
+          "text": "Choose your PDF settings. For exam forms, select the appropriate page size (usually A4 or the size of your image) and orientation (portrait or landscape)."
+        },
+        {
+          "name": "Adjust Quality and File Size",
+          "text": "Adjust the quality settings to achieve the desired file size. Exam portals often have PDF size limits, typically under 200KB or 500KB."
+        },
+        {
+          "name": "Add Multiple Images (if needed)",
+          "text": "If you need to combine multiple images (e.g., photo and signature) into one PDF, upload all the images. The tool will create a multi-page PDF or arrange them on a single page."
+        },
+        {
+          "name": "Download PDF",
+          "text": "Download your PDF file. Verify that it opens correctly and meets the file size requirements for your exam form before uploading."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why do exam forms require PDF instead of JPG?",
+        "answer": "PDF format is often preferred for official documents because it preserves the layout, prevents easy editing, and can combine multiple pages or images into one file. Some exam portals specifically require PDF for consistency."
+      },
+      {
+        "question": "What PDF size is acceptable for exam forms?",
+        "answer": "Most exam portals accept PDF files under 200KB or 500KB. Some may have larger limits. Always check your specific exam's requirements. This tool helps you create PDFs within these limits."
+      },
+      {
+        "question": "Can I convert multiple JPGs to one PDF?",
+        "answer": "Yes, you can upload multiple JPG images and the tool will combine them into a single PDF file. This is useful for exams that require both a photo and signature in one document."
+      },
+      {
+        "question": "Will the PDF quality be good enough for exam forms?",
+        "answer": "Yes, the tool maintains high quality in the PDF conversion. The quality settings are optimized for exam forms, ensuring that your photos and documents remain clear and legible."
+      },
+      {
+        "question": "Can I edit the PDF after conversion?",
+        "answer": "The PDF created by this tool is a standard PDF that can be opened and viewed by any PDF reader. However, for security, some exam portals may require the PDF to be non-editable. Always check your exam's specific requirements."
+      },
+      {
+        "question": "What if my PDF is still too large?",
+        "answer": "If your PDF is still too large, try reducing the quality settings further, or compress the original JPG images before converting them to PDF. You can also try creating separate PDFs for each image."
+      }
+    ],
+    "seoDescription": "JPG to PDF for Exam Forms - Free online tool to convert exam photos and documents to PDF format. Create optimized PDFs that meet exam portal requirements with browser-based processing."
+  },
+  "pdf-compressor-under-200kb": {
+    "whatItIs": "This tool helps you compress your PDF documents to under 200KB, which is a common file size limit for many exam forms, job applications, and government portals. It reduces the file size while maintaining the document's readability and quality.",
+    "features": [
+      "Compress PDF files to under 200KB",
+      "Maintains document readability and quality",
+      "Supports multi-page PDFs",
+      "Adjustable compression levels",
+      "Real-time file size preview",
+      "Preserves text and image clarity",
+      "Batch processing for multiple PDFs",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use PDF Compressor Under 200KB",
+      "steps": [
+        {
+          "name": "Upload Your PDF",
+          "text": "Select the PDF file you need to compress. This could be your exam form, certificate, or any other document required for your application."
+        },
+        {
+          "name": "Check Current File Size",
+          "text": "The tool will display the current file size of your PDF. If it's already under 200KB, you may not need to compress it further."
+        },
+        {
+          "name": "Adjust Compression Level",
+          "text": "Use the compression slider to reduce the file size to under 200KB. The tool shows the current file size in real-time as you adjust."
+        },
+        {
+          "name": "Preview Compressed PDF",
+          "text": "Preview the compressed PDF to ensure all text and images are still readable. If the quality is too low, reduce the compression slightly."
+        },
+        {
+          "name": "Download Compressed PDF",
+          "text": "Once you're satisfied with the quality and file size, download the compressed PDF. Verify that it's under 200KB and all content is clear before using it for your exam form."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why do exam forms require PDFs under 200KB?",
+        "answer": "Exam portals have file size limits to ensure smooth uploads and processing of thousands of applications. PDFs under 200KB upload faster and don't consume excessive server storage, especially when many candidates are submitting simultaneously."
+      },
+      {
+        "question": "Will compressing my PDF affect its acceptance?",
+        "answer": "As long as the compressed PDF maintains readable text and clear images, it should be accepted. This tool uses smart compression to preserve important content while reducing file size."
+      },
+      {
+        "question": "What if my PDF is still over 200KB after compression?",
+        "answer": "If your PDF is still too large, try compressing the original images within the PDF before creating it, or split the PDF into smaller files. You can also try reducing the resolution of images in the PDF."
+      },
+      {
+        "question": "Can I compress a scanned PDF?",
+        "answer": "Yes, you can compress scanned PDFs. Scanned documents often have large file sizes due to high-resolution images. This tool can significantly reduce the file size while maintaining readability."
+      },
+      {
+        "question": "What is the best original PDF size for compression?",
+        "answer": "Start with a PDF that has reasonable quality. If you're creating the PDF from images, use images that are appropriately sized (not excessively large) for best compression results."
+      },
+      {
+        "question": "Can I use this tool for non-exam PDFs?",
+        "answer": "Yes, you can use this tool to compress any PDF to under 200KB for email attachments, web uploads, or any other purpose that has file size limits."
+      }
+    ],
+    "seoDescription": "PDF Compressor Under 200KB - Free online tool to compress PDF files for exam forms, job applications, and government portals. Reduce file size while maintaining readability with browser-based processing."
+  },
+  "ssc-mts-photo-resizer": {
+    "whatItIs": "This specialized tool helps SSC MTS (Multi Tasking Staff) exam applicants resize and compress their passport photos and signatures to meet the exact requirements specified in the official notification. It handles the specific dimensions and file sizes that SSC MTS forms demand.",
+    "features": [
+      "Pre-configured for SSC MTS: 3.5cm x 4.5cm dimensions",
+      "Compresses photos to 20-50KB range automatically",
+      "Resizes signatures to 10-20KB range",
+      "Maintains image quality and clarity",
+      "Real-time preview of processed images",
+      "Process both photo and signature in one session",
+      "Supports JPG and PNG formats",
+      "100% private with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use SSC MTS Photo Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Passport Photo",
+          "text": "Select a recent passport-size color photograph with a plain white background. The photo should show your full face clearly from the front."
+        },
+        {
+          "name": "Automatic SSC MTS Configuration",
+          "text": "The tool automatically configures the output to SSC MTS requirements: 3.5cm x 4.5cm dimensions for photos and appropriate sizes for signatures."
+        },
+        {
+          "name": "Adjust Crop Area",
+          "text": "Use the crop tool to ensure your face is centered and properly framed within the 3.5cm x 4.5cm dimensions. Your face should occupy about 70-80% of the photo frame."
+        },
+        {
+          "name": "Compress to Required Sizes",
+          "text": "The tool automatically compresses photos to 20-50KB and signatures to 10-20KB. Adjust if needed to meet the exact requirements."
+        },
+        {
+          "name": "Download and Verify",
+          "text": "Download both processed files. Before submitting to the SSC MTS portal, verify that the photo is 3.5cm x 4.5cm and both files meet the size requirements."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the exact photo requirements for SSC MTS 2026?",
+        "answer": "For SSC MTS 2026, the photograph must be in JPEG format, with dimensions of 3.5 cm (width) x 4.5 cm (height), and a file size between 20 KB and 50 KB. The background should be plain white."
+      },
+      {
+        "question": "What are the signature requirements for SSC MTS?",
+        "answer": "The signature should be in JPEG format with a file size between 10 KB and 20 KB. It should be clear and legible, in your normal handwriting on white paper with black ink."
+      },
+      {
+        "question": "Can I use a colored background for SSC MTS photo?",
+        "answer": "No, SSC MTS requires a plain white background for the passport photograph. Any colored or patterned background may lead to rejection of your application."
+      },
+      {
+        "question": "What should I wear for my SSC MTS photo?",
+        "answer": "Wear plain, light-colored clothing that contrasts with the white background. Avoid uniforms, dark colors, or patterns. Religious headwear is allowed if it doesn't cover your face."
+      },
+      {
+        "question": "How can I ensure my SSC MTS photo is accepted?",
+        "answer": "Follow these guidelines: recent photo (not older than 6 months), plain white background, neutral expression, no shadows, proper lighting, and clear facial features. Use this tool to ensure correct dimensions and file size."
+      },
+      {
+        "question": "What if my SSC MTS photo is rejected?",
+        "answer": "If your photo is rejected, check the error message for specific issues. Common problems include wrong dimensions, file size too large, poor image quality, or not following the background requirements. Use this tool to correct these issues."
+      }
+    ],
+    "seoDescription": "SSC MTS Photo Resizer - Free online tool to resize and compress photos and signatures for SSC Multi Tasking Staff exam. Meet exact 3.5cm x 4.5cm and 20-50KB requirements with browser-based processing."
+  },
+  "rrb-group-d-photo-resizer": {
+    "whatItIs": "This specialized tool helps RRB Group D exam applicants resize and compress their passport photos and signatures to meet the exact requirements specified by the Railway Recruitment Board. It handles the specific dimensions and file sizes that RRB Group D forms demand.",
+    "features": [
+      "Pre-configured for RRB Group D / Indian Railway applications",
+      "Compresses photos to 20-50KB range automatically",
+      "Compresses signatures to 10-20KB range",
+      "Maintains image quality and clarity",
+      "Real-time preview of processed images",
+      "Process both photo and signature in one session",
+      "Supports JPG and PNG formats",
+      "100% private browser-based processing"
+    ],
+    "howToUse": {
+      "name": "How to Use RRB Group D Photo Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Passport Photo",
+          "text": "Select a recent passport-size color photograph with a plain white background. The photo should show your full face clearly from the front with a neutral expression."
+        },
+        {
+          "name": "Automatic RRB Group D Configuration",
+          "text": "The tool automatically configures the output to RRB Group D requirements: appropriate dimensions for photos and signatures, with file sizes of 20-50KB for photos and 10-20KB for signatures."
+        },
+        {
+          "name": "Adjust Crop Area",
+          "text": "Use the crop tool to ensure your face is centered and properly framed. Your face should occupy about 70-80% of the photo frame for best results."
+        },
+        {
+          "name": "Compress to Required Sizes",
+          "text": "The tool automatically compresses your images to the required sizes. Adjust the compression if needed to meet the exact RRB Group D specifications."
+        },
+        {
+          "name": "Download and Verify",
+          "text": "Download both processed files. Before submitting to the RRB Group D portal, verify that both files meet the dimension and size requirements specified in the official notification."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the photo size limit for RRB Group D?",
+        "answer": "For RRB Group D, the passport photograph should be between 20 KB and 50 KB in JPEG format. The exact dimensions may vary, but typically around 3.5cm x 4.5cm."
+      },
+      {
+        "question": "What is the signature size limit for RRB Group D?",
+        "answer": "The signature file for RRB Group D should be between 10 KB and 20 KB in JPEG format. The signature should be clear and legible, in your normal handwriting."
+      },
+      {
+        "question": "Can I wear a cap in my RRB Group D photo?",
+        "answer": "No, headwear including caps, hats, or religious headwear (unless it doesn't cover the face) is not permitted in RRB Group D application photos. Your full face and hairline should be clearly visible."
+      },
+      {
+        "question": "What should be the background in my RRB Group D photo?",
+        "answer": "RRB Group D requires a plain white background for the passport photograph. Avoid patterned, colored, or dark backgrounds as they may lead to rejection of your application."
+      },
+      {
+        "question": "How can I ensure my RRB Group D photo is accepted?",
+        "answer": "Follow these guidelines: recent photo (not older than 6 months), plain white background, neutral expression, no shadows, proper lighting, and clear facial features. Use this tool to ensure correct dimensions and file size."
+      },
+      {
+        "question": "What if my RRB Group D application is rejected due to photo issues?",
+        "answer": "If your application is rejected due to photo issues, check the error message for specific problems. Common issues include wrong dimensions, file size too large, poor image quality, or not following the background requirements. Use this tool to correct these issues and re-apply if possible."
+      }
+    ],
+    "seoDescription": "RRB Group D Photo Resizer - Free online tool to resize and compress photos and signatures for Railway Recruitment Board Group D exam. Meet exact file size requirements with browser-based processing."
+  }
+}

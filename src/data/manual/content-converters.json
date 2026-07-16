@@ -1,0 +1,267 @@
+{
+  "batch-csv-converter": {
+    "whatItIs": "The Batch CSV Converter transforms CSV files between different formats, delimiters, and encodings. Convert semicolon-separated to comma-separated, change encodings, and reformat CSV data for different applications and regions.",
+    "features": [
+      "Convert CSV delimiter types",
+      "Change encoding (UTF-8, Latin-1, etc.)",
+      "Batch convert multiple files",
+      "Preview data before conversion",
+      "Handle quoted fields correctly",
+      "Support for custom delimiters",
+      "Export in multiple formats",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Batch CSV Converter",
+      "steps": [
+        {
+          "name": "Upload CSV files",
+          "text": "Select one or more CSV files for batch conversion. The tool reads the file structure and detects the current delimiter."
+        },
+        {
+          "name": "Select conversion options",
+          "text": "Choose the target delimiter (comma, semicolon, tab), encoding format, and any special handling for quotes or line breaks."
+        },
+        {
+          "name": "Preview and convert",
+          "text": "Preview the converted data to verify correctness. Click convert to process all files in the batch."
+        },
+        {
+          "name": "Download converted files",
+          "text": "Download the converted CSV files individually or as a ZIP archive containing all processed files."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why do I need to convert CSV files?",
+        "answer": "Different regions and applications use different delimiters. European systems often use semicolons (CSV with semicolon) while American systems use commas. Converting ensures compatibility."
+      },
+      {
+        "question": "Does it handle special characters?",
+        "answer": "Yes, the tool properly handles quoted fields, embedded delimiters, line breaks within fields, and various character encodings."
+      },
+      {
+        "question": "Can I convert CSV to Excel?",
+        "answer": "The tool converts between CSV formats and can output Excel-compatible CSV. For direct Excel conversion, use the Excel to CSV converter tool."
+      },
+      {
+        "question": "Is the Batch CSV Converter free?",
+        "answer": "Yes, batch CSV conversion is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert CSV files online for free. Batch transform delimiters, encoding, and formatting. Handle semicolon, tab, and comma-separated values."
+  },
+  "excel-to-csv": {
+    "whatItIs": "The Excel to CSV Converter transforms Excel spreadsheets (.xlsx, .xls) into CSV format for data interchange, database imports, and compatibility with various applications and systems.",
+    "features": [
+      "Convert Excel to CSV format",
+      "Support for .xlsx and .xls files",
+      "Select specific sheets to convert",
+      "Handle multiple sheets",
+      "Preserve data formatting",
+      "Batch convert multiple files",
+      "Choose delimiter and encoding",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Excel to CSV Converter",
+      "steps": [
+        {
+          "name": "Upload Excel file",
+          "text": "Select your .xlsx or .xls file. The tool reads all sheets and shows a preview of the data."
+        },
+        {
+          "name": "Select sheets and options",
+          "text": "Choose which sheets to convert. Select delimiter (comma, semicolon, tab) and encoding format for the CSV output."
+        },
+        {
+          "name": "Convert to CSV",
+          "text": "Click convert to transform the Excel data to CSV format. The tool handles formulas, dates, and special characters correctly."
+        },
+        {
+          "name": "Download CSV files",
+          "text": "Download the converted CSV files. Each Excel sheet becomes a separate CSV file with proper naming."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it preserve formulas?",
+        "answer": "No, formulas are converted to their calculated values in CSV format. CSV only stores raw data, not formulas or formatting."
+      },
+      {
+        "question": "Can I convert multiple sheets?",
+        "answer": "Yes, each sheet in the Excel file is converted to a separate CSV file. You can choose which sheets to include or exclude."
+      },
+      {
+        "question": "What Excel formats are supported?",
+        "answer": "The tool supports both .xlsx (Excel 2007+) and .xls (Excel 97-2003) formats. Very old Excel files may require additional conversion."
+      },
+      {
+        "question": "Is the Excel to CSV Converter free?",
+        "answer": "Yes, converting Excel to CSV is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert Excel to CSV online for free. Transform .xlsx and .xls files to CSV format. Batch conversion with multiple sheet support."
+  },
+  "csv-to-excel": {
+    "whatItIs": "The CSV to Excel Converter transforms CSV files into Excel-compatible .xlsx format. Convert delimited text files to spreadsheets with proper formatting, multiple sheets, and Excel features.",
+    "features": [
+      "Convert CSV to Excel .xlsx format",
+      "Support for all delimiters",
+      "Auto-detect column types",
+      "Create multiple sheets",
+      "Apply cell formatting",
+      "Batch convert multiple files",
+      "Preserve special characters",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the CSV to Excel Converter",
+      "steps": [
+        {
+          "name": "Upload CSV file",
+          "text": "Select your CSV file. The tool auto-detects the delimiter and shows a preview of the data in a spreadsheet-like view."
+        },
+        {
+          "name": "Configure conversion",
+          "text": "Choose the target Excel format. Specify encoding, delimiter used in the CSV, and any column type detection preferences."
+        },
+        {
+          "name": "Convert to Excel",
+          "text": "Click convert to create the Excel file. The tool properly formats dates, numbers, and text columns."
+        },
+        {
+          "name": "Download Excel file",
+          "text": "Download the .xlsx file and open it in Excel, Google Sheets, or any spreadsheet application."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it detect column types automatically?",
+        "answer": "Yes, the tool analyzes data in each column to detect whether it contains numbers, dates, or text. You can override auto-detection if needed."
+      },
+      {
+        "question": "Can I convert multiple CSV files at once?",
+        "answer": "Yes, batch conversion is supported. Upload multiple CSV files and convert them all to Excel format in one operation."
+      },
+      {
+        "question": "What delimiters are supported?",
+        "answer": "The tool supports comma, semicolon, tab, pipe, and custom delimiters. Auto-detection identifies the delimiter automatically in most cases."
+      },
+      {
+        "question": "Is the CSV to Excel Converter free?",
+        "answer": "Yes, converting CSV to Excel is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert CSV to Excel online for free. Transform CSV files to .xlsx format with auto column detection. Batch conversion supported."
+  },
+  "csv-to-json": {
+    "whatItIs": "The CSV to JSON Converter transforms CSV data into structured JSON format for web applications, APIs, and data processing. Convert delimited spreadsheet data into easy-to-use JSON objects with nested structure support.",
+    "features": [
+      "Convert CSV to JSON format",
+      "Support for nested JSON structures",
+      "Handle headers and data rows",
+      "Batch convert multiple files",
+      "Preview JSON output",
+      "Support for arrays and objects",
+      "Choose JSON formatting",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the CSV to JSON Converter",
+      "steps": [
+        {
+          "name": "Upload CSV file",
+          "text": "Select your CSV file or paste CSV text. The tool shows a preview of the data with detected headers."
+        },
+        {
+          "name": "Configure JSON structure",
+          "text": "Choose whether the first row contains headers, set array or object output format, and configure any nesting options."
+        },
+        {
+          "name": "Convert to JSON",
+          "text": "Click convert to transform the CSV data to JSON. The tool creates properly formatted JSON with correct data types."
+        },
+        {
+          "name": "Copy or download JSON",
+          "text": "Preview the JSON output and copy it or download as a .json file for use in your applications."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it handle CSV headers?",
+        "answer": "Yes, the tool uses the first row as JSON keys by default. You can disable this to use numeric indices instead of header names."
+      },
+      {
+        "question": "Can I create nested JSON?",
+        "answer": "Yes, the tool supports creating nested JSON structures by grouping related columns or flattening hierarchical CSV data."
+      },
+      {
+        "question": "Does it detect data types?",
+        "answer": "The tool attempts to convert numeric values to numbers and dates to ISO format strings. You can override type detection if needed."
+      },
+      {
+        "question": "Is the CSV to JSON Converter free?",
+        "answer": "Yes, converting CSV to JSON is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert CSV to JSON online for free. Transform CSV data to structured JSON format for web apps and APIs. Batch conversion with nested structure support."
+  },
+  "xml-to-json": {
+    "whatItIs": "The XML to JSON Converter transforms XML documents into structured JSON format. Essential for web developers working with APIs, migrating data formats, and processing XML data in modern JavaScript applications.",
+    "features": [
+      "Convert XML to JSON format",
+      "Preserve XML attributes and structure",
+      "Handle nested XML elements",
+      "Batch convert XML files",
+      "Preview converted output",
+      "Choose attribute handling",
+      "Minify or pretty-print JSON",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the XML to JSON Converter",
+      "steps": [
+        {
+          "name": "Upload or paste XML",
+          "text": "Upload an XML file or paste XML text into the input area. The tool parses the XML structure immediately."
+        },
+        {
+          "name": "Configure conversion options",
+          "text": "Choose how to handle XML attributes: include them in the JSON, convert to properties, or ignore them. Set output formatting preferences."
+        },
+        {
+          "name": "Convert to JSON",
+          "text": "Click convert to transform the XML to JSON. The tool maintains the hierarchical structure and data values."
+        },
+        {
+          "name": "Copy or download",
+          "text": "Preview the JSON output and copy it or download as a file. Use it in your applications or APIs."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How are XML attributes handled?",
+        "answer": "The tool can include XML attributes as separate fields in JSON, merge them with element content, or ignore them based on your preference."
+      },
+      {
+        "question": "Does it preserve XML namespaces?",
+        "answer": "Namespace prefixes can be preserved or stripped depending on the conversion settings. Check the output to ensure compatibility with your target system."
+      },
+      {
+        "question": "Can I convert large XML files?",
+        "answer": "Yes, the tool handles large XML files. Very large files may take longer to process depending on your browser's memory limits."
+      },
+      {
+        "question": "Is the XML to JSON Converter free?",
+        "answer": "Yes, converting XML to JSON is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert XML to JSON online for free. Transform XML documents to structured JSON format. Preserve attributes and nested elements. Batch conversion available."
+  }
+}

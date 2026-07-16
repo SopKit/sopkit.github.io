@@ -1,0 +1,546 @@
+{
+  "image-resizer": {
+    "whatItIs": "Image Resizer is a free online tool that allows you to adjust the dimensions of your photos and images to any custom width and height. Whether you need to shrink a large photo for email or enlarge a small image for printing, this tool maintains the aspect ratio while giving you full control over the output size.",
+    "features": [
+      "Resize images by specifying exact width and height in pixels",
+      "Maintain original aspect ratio to prevent distortion",
+      "Support for JPG, PNG, WebP, and other common image formats",
+      "Real-time preview of resized image before downloading",
+      "Batch resize multiple images at once for efficiency",
+      "Custom DPI settings for print-ready outputs",
+      "Preset dimensions for social media platforms like Instagram, Facebook, and Twitter",
+      "100% browser-based processing with no file uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use Image Resizer",
+      "steps": [
+        {
+          "name": "Upload Your Image",
+          "text": "Click the upload button or drag and drop your image file into the designated area. The tool supports most common image formats."
+        },
+        {
+          "name": "Set New Dimensions",
+          "text": "Enter your desired width and height in pixels. You can toggle the aspect ratio lock to maintain proportions or set custom dimensions."
+        },
+        {
+          "name": "Preview the Result",
+          "text": "View the resized image in the preview window. Adjust dimensions if needed to achieve the perfect size."
+        },
+        {
+          "name": "Apply Additional Settings",
+          "text": "Optionally, adjust DPI settings or choose from preset dimensions for specific platforms or use cases."
+        },
+        {
+          "name": "Download Resized Image",
+          "text": "Click the download button to save your resized image directly to your device in your chosen format."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I resize an image without losing quality?",
+        "answer": "When reducing size, quality is generally maintained. Enlarging small images may result in some quality loss, but our tool uses smart algorithms to minimize this effect."
+      },
+      {
+        "question": "What's the maximum image size I can resize?",
+        "answer": "The tool handles most standard image sizes up to several megapixels. Very large images may take longer to process but will still work."
+      },
+      {
+        "question": "How do I maintain the aspect ratio when resizing?",
+        "answer": "Enable the aspect ratio lock feature before setting your dimensions. This ensures your image won't be stretched or squashed."
+      },
+      {
+        "question": "Can I resize multiple images at once?",
+        "answer": "Yes, the batch processing feature allows you to upload and resize several images simultaneously, saving you time."
+      },
+      {
+        "question": "What image formats are supported for resizing?",
+        "answer": "The tool supports JPG, JPEG, PNG, WebP, BMP, and GIF formats. You can resize and download in your preferred format."
+      },
+      {
+        "question": "Is there a limit to how many images I can resize?",
+        "answer": "No, you can resize as many images as you need completely free of charge with no daily limits or restrictions."
+      }
+    ],
+    "seoDescription": "Free online Image Resizer to adjust photo dimensions in pixels while maintaining quality. Resize JPG, PNG, WebP images for social media, email, or print with no uploads required."
+  },
+  "image-to-base64": {
+    "whatItIs": "Image to Base64 Converter transforms your image files into Base64 encoded strings that can be directly embedded in HTML, CSS, or JSON. This is particularly useful for web developers who need to include images directly in their code without separate file requests.",
+    "features": [
+      "Convert any image to Base64 string instantly",
+      "Support for JPG, PNG, WebP, GIF, and BMP formats",
+      "Copy the Base64 string to clipboard with one click",
+      "Adjustable output format (data URI or raw Base64)",
+      "Preview the original image alongside the encoded string",
+      "Batch convert multiple images to Base64 at once",
+      "Option to include or exclude the data URI prefix",
+      "100% client-side conversion with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use Image to Base64 Converter",
+      "steps": [
+        {
+          "name": "Select Your Image",
+          "text": "Upload the image you want to convert by clicking the upload button or dragging the file into the tool."
+        },
+        {
+          "name": "Choose Output Options",
+          "text": "Select whether you want a data URI (for web use) or raw Base64 string. Choose if you need the format prefix included."
+        },
+        {
+          "name": "Convert the Image",
+          "text": "Click the convert button. The tool will process your image and generate the Base64 string instantly."
+        },
+        {
+          "name": "Copy or Download Result",
+          "text": "The Base64 string will appear in the output box. Click copy to clipboard or download as a text file for later use."
+        },
+        {
+          "name": "Use in Your Project",
+          "text": "Paste the Base64 string directly into your HTML img src, CSS background-image, or any other code that accepts Base64 encoded images."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is Base64 encoding used for?",
+        "answer": "Base64 encoding is commonly used to embed images directly in HTML, CSS, or JSON without needing separate image files. It's also used for transmitting binary data in text-based formats like email."
+      },
+      {
+        "question": "Does the Base64 string include the image format?",
+        "answer": "Yes, when using the data URI option, the string includes the image format (e.g., data:image/png;base64,...). You can also get just the raw Base64 without the prefix."
+      },
+      {
+        "question": "Can I convert a Base64 string back to an image?",
+        "answer": "Yes, you would need a Base64 to Image converter for that. Our tool focuses on the image-to-Base64 direction."
+      },
+      {
+        "question": "Is there a size limit for images I can convert?",
+        "answer": "The tool can handle most standard image sizes. Very large images will produce very long Base64 strings, which may not be practical for all use cases."
+      },
+      {
+        "question": "How do I use the Base64 string in HTML?",
+        "answer": "Use it as the src attribute in an img tag: <img src="data:image/png;base64,YOUR_BASE64_STRING_HERE" alt="description">"
+      },
+      {
+        "question": "Does the conversion process affect image quality?",
+        "answer": "No, the Base64 encoding is a lossless process. The image quality remains exactly the same as the original file."
+      }
+    ],
+    "seoDescription": "Convert images to Base64 strings online for free. Embed JPG, PNG, WebP directly in HTML or CSS with this privacy-focused, no-upload tool."
+  },
+  "jpg-converter": {
+    "whatItIs": "JPG Converter is a versatile tool that transforms your images into the widely compatible JPG format. Whether you need to convert PNGs with transparency to JPGs for smaller file sizes or change other formats to JPG for web compatibility, this tool handles the conversion while maintaining visual quality.",
+    "features": [
+      "Convert any image format to JPG/JPEG instantly",
+      "Support for PNG, WebP, BMP, GIF, SVG, and more input formats",
+      "Adjustable JPG quality settings (0-100%)",
+      "Option to flatten transparency with custom background colors",
+      "Batch convert multiple images to JPG at once",
+      "Preview the converted image before downloading",
+      "Maintain original aspect ratio and dimensions",
+      "100% browser-based conversion with no file uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use JPG Converter",
+      "steps": [
+        {
+          "name": "Upload Your Image",
+          "text": "Select the image file you want to convert to JPG format. The tool accepts most common image formats."
+        },
+        {
+          "name": "Set Conversion Options",
+          "text": "Choose your desired JPG quality level (higher = better quality but larger file size). If your image has transparency, select a background color."
+        },
+        {
+          "name": "Convert the Image",
+          "text": "Click the convert button. The tool will process your image and transform it into JPG format."
+        },
+        {
+          "name": "Preview the Result",
+          "text": "View the converted JPG image in the preview window. Check that the quality and appearance meet your expectations."
+        },
+        {
+          "name": "Download JPG Image",
+          "text": "Click download to save the converted JPG image to your device. The file will have the .jpg extension."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why convert to JPG format?",
+        "answer": "JPG offers excellent compression for photographs and complex images, resulting in smaller file sizes compared to formats like PNG. It's also universally supported across all devices and platforms."
+      },
+      {
+        "question": "What happens to transparent areas when converting to JPG?",
+        "answer": "JPG doesn't support transparency, so transparent areas will be filled with a color you choose (default is white). You can select any background color before conversion."
+      },
+      {
+        "question": "Can I convert multiple images to JPG at once?",
+        "answer": "Yes, use the batch conversion feature to upload and convert several images to JPG format simultaneously."
+      },
+      {
+        "question": "What's the best JPG quality setting?",
+        "answer": "For web use, 70-80% quality offers a good balance between file size and visual quality. For printing or professional use, 90-100% is recommended."
+      },
+      {
+        "question": "Does converting to JPG reduce file size?",
+        "answer": "Yes, especially when converting from formats like PNG or BMP. JPG uses lossy compression which significantly reduces file size, particularly for photographs."
+      },
+      {
+        "question": "Can I convert JPG to other formats with this tool?",
+        "answer": "This tool is specifically for converting TO JPG. For converting FROM JPG to other formats, you would need a different converter tool."
+      }
+    ],
+    "seoDescription": "Free online JPG Converter to transform PNG, WebP, BMP, GIF to JPG format. Adjust quality settings and handle transparency with this privacy-focused tool."
+  },
+  "jpg-to-bmp-converter": {
+    "whatItIs": "JPG to BMP Converter transforms your JPG images into the BMP (Bitmap) format, which is ideal for legacy systems, certain software applications, or when you need uncompressed image data. Unlike JPG, BMP files store images without compression, preserving every pixel exactly as it was.",
+    "features": [
+      "Convert JPG images to BMP format instantly",
+      "Preserve original image dimensions and color depth",
+      "Support for both 24-bit and 32-bit BMP output",
+      "Batch convert multiple JPG files to BMP at once",
+      "Option to maintain or remove alpha channels",
+      "Preview BMP output before downloading",
+      "No quality loss from JPG compression artifacts in output",
+      "100% client-side conversion with no server uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use JPG to BMP Converter",
+      "steps": [
+        {
+          "name": "Upload JPG Image",
+          "text": "Select the JPG or JPEG image you want to convert. You can upload from your device or drag and drop the file."
+        },
+        {
+          "name": "Choose BMP Settings",
+          "text": "Select your preferred BMP format options. Choose between 24-bit (no alpha) or 32-bit (with alpha channel) if needed."
+        },
+        {
+          "name": "Convert to BMP",
+          "text": "Click the convert button. The tool will transform your JPG into a BMP file, which may increase the file size significantly."
+        },
+        {
+          "name": "Preview the BMP Image",
+          "text": "View the converted BMP image in the preview window. BMP files are larger but maintain exact pixel data."
+        },
+        {
+          "name": "Download BMP File",
+          "text": "Click download to save the BMP file to your device. The file will have the .bmp extension."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why would I need to convert JPG to BMP?",
+        "answer": "BMP is often required for legacy software, certain Windows applications, or when you need uncompressed image data. It's also useful for image editing where you need to preserve exact pixel information."
+      },
+      {
+        "question": "Will the BMP file be larger than the original JPG?",
+        "answer": "Yes, BMP files are typically much larger than JPG files because they use no compression. A JPG might be a few hundred KB while the same image as BMP could be several MB."
+      },
+      {
+        "question": "Does BMP support transparency?",
+        "answer": "Yes, BMP can support transparency through alpha channels in its 32-bit format. You can choose to maintain or add transparency during conversion."
+      },
+      {
+        "question": "Can I convert multiple JPGs to BMP at once?",
+        "answer": "Yes, the batch processing feature allows you to upload and convert several JPG images to BMP format simultaneously."
+      },
+      {
+        "question": "What's the difference between 24-bit and 32-bit BMP?",
+        "answer": "24-bit BMP stores RGB color information (16.7 million colors) while 32-bit adds an alpha channel for transparency (RGBA). 32-bit files are larger but support transparency."
+      },
+      {
+        "question": "Will converting JPG to BMP improve image quality?",
+        "answer": "No, converting from JPG (a lossy format) to BMP won't recover any quality lost during the original JPG compression. It will only remove additional compression."
+      }
+    ],
+    "seoDescription": "Convert JPG to BMP format online for free. Transform JPEG images to uncompressed Bitmap files for legacy systems with this privacy-focused, no-upload tool."
+  },
+  "jpg-to-gif-converter": {
+    "whatItIs": "JPG to GIF Converter transforms your static JPG images into the GIF format, which is widely used for web graphics and simple animations. While this tool converts single images to GIF, it's particularly useful when you need the GIF format for compatibility or when planning to create animations.",
+    "features": [
+      "Convert JPG images to GIF format instantly",
+      "Support for both static and animated GIF output",
+      "Adjustable color palette size (up to 256 colors)",
+      "Option to add simple animation effects",
+      "Control over dithering for better color transitions",
+      "Preview GIF output before downloading",
+      "Batch convert multiple JPG files to GIF at once",
+      "100% browser-based conversion with no file uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use JPG to GIF Converter",
+      "steps": [
+        {
+          "name": "Upload JPG Image",
+          "text": "Select the JPG image you want to convert to GIF format. The tool accepts most JPG and JPEG files."
+        },
+        {
+          "name": "Set GIF Options",
+          "text": "Choose your color palette size (more colors = better quality but larger file). For animations, set the frame delay if applicable."
+        },
+        {
+          "name": "Convert to GIF",
+          "text": "Click the convert button. The tool will transform your JPG into GIF format, which may reduce the color depth."
+        },
+        {
+          "name": "Preview the GIF",
+          "text": "View the converted GIF image in the preview window. Check that the colors and quality meet your expectations."
+        },
+        {
+          "name": "Download GIF File",
+          "text": "Click download to save the GIF file to your device. The file will have the .gif extension."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why convert JPG to GIF?",
+        "answer": "GIF is widely supported for web graphics and offers features like animation and transparency. It's also useful when you need a specific format for certain platforms or applications."
+      },
+      {
+        "question": "Will the GIF have the same quality as the JPG?",
+        "answer": "GIF uses a maximum of 256 colors, so complex photographs may lose some color detail. Simple images, logos, and graphics with limited colors convert very well."
+      },
+      {
+        "question": "Can I create animated GIFs with this tool?",
+        "answer": "This tool converts single JPG images to GIF format. For creating animated GIFs from multiple images, you would need a dedicated GIF animation tool."
+      },
+      {
+        "question": "What's the best color palette size for GIF?",
+        "answer": "For simple graphics, 16-32 colors may be sufficient. For photographs, use the maximum 256 colors. More colors mean better quality but larger file size."
+      },
+      {
+        "question": "Does GIF support transparency?",
+        "answer": "Yes, GIF format supports transparency through a single transparent color. You can set this during the conversion process."
+      },
+      {
+        "question": "Can I convert multiple JPGs to GIF at once?",
+        "answer": "Yes, use the batch conversion feature to process several JPG images to GIF format simultaneously."
+      }
+    ],
+    "seoDescription": "Convert JPG to GIF format online for free. Transform JPEG images to GIF for web graphics with this privacy-focused, no-upload tool."
+  },
+  "jpg-to-ico-converter": {
+    "whatItIs": "JPG to ICO Converter creates Windows icon files (ICO) from your JPG images, perfect for favicons, desktop icons, or application icons. The tool generates multiple icon sizes within a single ICO file to ensure compatibility across different display resolutions and contexts.",
+    "features": [
+      "Convert JPG images to ICO favicon format instantly",
+      "Generate multiple icon sizes (16x16, 32x32, 48x48, 64x64, 128x128, 256x256) in one file",
+      "Support for both standard and high-resolution icons",
+      "Option to create ICO with or without transparency",
+      "Preview all icon sizes before downloading",
+      "Batch convert multiple JPG files to ICO at once",
+      "Customizable icon dimensions based on your needs",
+      "100% browser-based conversion with no file uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use JPG to ICO Converter",
+      "steps": [
+        {
+          "name": "Upload JPG Image",
+          "text": "Select a square or nearly square JPG image for best results. Icon images should ideally be square to avoid distortion."
+        },
+        {
+          "name": "Choose Icon Sizes",
+          "text": "Select which icon sizes you want included in your ICO file. For maximum compatibility, include all standard sizes from 16x16 to 256x256."
+        },
+        {
+          "name": "Set Transparency Options",
+          "text": "If your image has transparency or you want a transparent background, enable the transparency option and choose your method."
+        },
+        {
+          "name": "Convert to ICO",
+          "text": "Click the convert button. The tool will create an ICO file containing all your selected icon sizes."
+        },
+        {
+          "name": "Download ICO File",
+          "text": "Click download to save the ICO file to your device. This single file contains all the icon sizes you selected."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is an ICO file used for?",
+        "answer": "ICO files are primarily used for Windows icons, favicons (website icons in browser tabs), and application icons. They can contain multiple image sizes in a single file."
+      },
+      {
+        "question": "Does the JPG image need to be square?",
+        "answer": "For best results, yes. Icon images should be square to display properly. The tool will center non-square images, but they may appear distorted at some sizes."
+      },
+      {
+        "question": "What icon sizes should I include?",
+        "answer": "For maximum compatibility, include all standard sizes: 16x16, 32x32, 48x48, 64x64, 128x128, and 256x256. This ensures your icon looks good at all display scales."
+      },
+      {
+        "question": "Can I create a favicon for my website with this tool?",
+        "answer": "Yes, simply convert your logo or desired image to ICO format and upload it to your website's root directory as favicon.ico."
+      },
+      {
+        "question": "Does ICO format support transparency?",
+        "answer": "Yes, ICO format supports transparency. The tool can preserve transparency from your original image or add it during conversion."
+      },
+      {
+        "question": "Can I convert multiple JPGs to ICO at once?",
+        "answer": "Yes, use the batch processing feature to create ICO files from several JPG images simultaneously."
+      }
+    ],
+    "seoDescription": "Convert JPG to ICO format online for free. Create multi-size favicons and Windows icons from JPEG images with this privacy-focused, no-upload tool."
+  },
+  "jpg-to-webp-converter": {
+    "whatItIs": "JPG to WebP Converter transforms your JPG images into the modern WebP format, which offers superior compression and quality compared to traditional formats. WebP images are typically 25-35% smaller than comparable JPG files at the same visual quality, making them ideal for web use.",
+    "features": [
+      "Convert JPG images to WebP format instantly",
+      "Significantly reduce file size without visible quality loss",
+      "Adjustable WebP quality settings (0-100)",
+      "Support for both lossy and lossless WebP compression",
+      "Preserve transparency if converting from other formats",
+      "Batch convert multiple JPG files to WebP at once",
+      "Preview WebP output before downloading",
+      "100% browser-based conversion with no file uploads"
+    ],
+    "howToUse": {
+      "name": "How to Use JPG to WebP Converter",
+      "steps": [
+        {
+          "name": "Upload JPG Image",
+          "text": "Select the JPG or JPEG image you want to convert to WebP format. The tool accepts most JPG files regardless of size."
+        },
+        {
+          "name": "Choose WebP Settings",
+          "text": "Select your compression method (lossy for smaller files, lossless for perfect quality). Adjust the quality slider for lossy compression."
+        },
+        {
+          "name": "Convert to WebP",
+          "text": "Click the convert button. The tool will transform your JPG into WebP format, which typically results in a much smaller file."
+        },
+        {
+          "name": "Preview the WebP Image",
+          "text": "View the converted WebP image in the preview window. Compare it with your original to ensure quality is maintained."
+        },
+        {
+          "name": "Download WebP File",
+          "text": "Click download to save the WebP file to your device. The file will have the .webp extension."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the advantages of WebP over JPG?",
+        "answer": "WebP offers better compression than JPG, resulting in smaller file sizes at the same visual quality. It also supports transparency (like PNG) and animation (like GIF)."
+      },
+      {
+        "question": "Is WebP widely supported?",
+        "answer": "WebP is supported by all modern browsers (Chrome, Firefox, Edge, Safari) and most image editing software. It's become the standard for web images."
+      },
+      {
+        "question": "What's the difference between lossy and lossless WebP?",
+        "answer": "Lossy WebP offers better compression with some quality loss (imperceptible at high quality settings). Lossless WebP preserves perfect quality but results in larger files than lossy."
+      },
+      {
+        "question": "What WebP quality setting should I use?",
+        "answer": "For most web use, 75-85 quality offers an excellent balance between file size and visual quality. For high-quality displays, use 90-100."
+      },
+      {
+        "question": "Can I convert multiple JPGs to WebP at once?",
+        "answer": "Yes, the batch conversion feature allows you to upload and convert several JPG images to WebP format simultaneously."
+      },
+      {
+        "question": "Does WebP support transparency?",
+        "answer": "Yes, WebP format supports full alpha transparency, similar to PNG. However, since JPG doesn't support transparency, converting JPG to WebP won't add transparency."
+      }
+    ],
+    "seoDescription": "Convert JPG to WebP format online for free. Reduce file size by 25-35% without quality loss using this privacy-focused, no-upload WebP converter."
+  },
+  "logo-generator": {
+    "whatItIs": "Logo Generator is a powerful tool that helps you create professional, custom logos for your business, brand, or personal projects. With a variety of fonts, colors, and layout options, you can design a unique logo that perfectly represents your identity without any design experience.",
+    "features": [
+      "Create custom logos with your brand name or text",
+      "Hundreds of professional font styles to choose from",
+      "Full color customization with color picker or hex codes",
+      "Multiple logo layout options (text only, icon + text, etc.)",
+      "Real-time preview as you design your logo",
+      "Download logos as high-resolution PNG files",
+      "Transparent background option for versatile use",
+      "No design experience required — simple text-based interface"
+    ],
+    "howToUse": {
+      "name": "How to Use Logo Generator",
+      "steps": [
+        {
+          "name": "Enter Your Brand Name",
+          "text": "Type your business name, brand name, or any text you want to appear in your logo. You can also add a tagline or subtitle."
+        },
+        {
+          "name": "Choose a Font Style",
+          "text": "Browse through the available font styles. Options range from modern and minimal to bold and decorative. Select one that matches your brand personality."
+        },
+        {
+          "name": "Customize Colors",
+          "text": "Pick colors that match your brand identity. Use the color picker for precise selection or enter hex codes for exact brand colors."
+        },
+        {
+          "name": "Select Layout and Icons",
+          "text": "Choose how your text is arranged. Some fonts include decorative elements. You can also add simple icons or shapes to complement your text."
+        },
+        {
+          "name": "Download Your Logo",
+          "text": "Once satisfied with your design, click download to save your logo as a high-resolution PNG file with transparent background."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need design experience to use this logo maker?",
+        "answer": "No, the Logo Generator is designed for everyone. Simply enter your text, choose a font and colors, and the tool creates a professional logo automatically."
+      },
+      {
+        "question": "Can I use the logo for my business?",
+        "answer": "Yes, logos created with our Logo Generator can be used for personal and commercial purposes, including business branding, websites, and marketing materials."
+      },
+      {
+        "question": "What file format are logos downloaded in?",
+        "answer": "Logos are downloaded as PNG files with transparent backgrounds, making them suitable for use on any background color or image."
+      },
+      {
+        "question": "Can I edit my logo after downloading?",
+        "answer": "Yes, you can always return to the Logo Generator, recreate your logo with the same settings, and make adjustments. The download is final, but the design process is repeatable."
+      },
+      {
+        "question": "Is this logo generator really free?",
+        "answer": "Yes, the Logo Generator is completely free with no hidden charges, no registration required, and no watermarks on your downloads."
+      },
+      {
+        "question": "Can I create multiple logo variations?",
+        "answer": "Absolutely. You can create as many logo designs as you want, experimenting with different fonts, colors, and layouts until you find the perfect one."
+      }
+    ],
+    "seoDescription": "Create professional logos online for free. Design custom brand logos with text, fonts, and colors using this easy, no-signup logo maker."
+  },
+  "photo-enhancer": {
+    "whatItIs": "Photo Enhancer uses advanced AI technology to improve the quality of your images automatically. Whether you have a blurry photo, a low-resolution image, or a picture taken in poor lighting, this tool can enhance sharpness, adjust colors, reduce noise, and even upscale resolution for better results.",
+    "features": [
+      "AI-powered image enhancement for automatic quality improvement",
+      "Upscale images to higher resolutions while maintaining quality",
+      "Automatic sharpness and detail enhancement",
+      "Color correction and balance adjustment",
+      "Noise reduction for grainy or low-light photos",
+      "Selective enhancement options (sharpen, denoise, brighten, etc.)",
+      "Before/after comparison slider to see improvements",
+      "Support for JPG, PNG, WebP, and other common formats"
+    ],
+    "howToUse": {
+      "name": "How to Use Photo Enhancer",
+      "steps": [
+        {
+          "name": "Upload Your Photo",
+          "text": "Click the upload button or drag and drop your image into the tool. You can also paste an image from your clipboard."
+        },
+        {
+          "name": "Select Enhancement Type",
+          "text": "Choose what kind of enhancement you need: auto-enhance for overall improvement, upscale for resolution increase, sharpen, denoise, or adjust specific aspects."
+        },
+        {
+          "name": "Adjust Settings (Optional)\

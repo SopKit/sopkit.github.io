@@ -1,0 +1,161 @@
+{
+  "business-card-generator": {
+    "whatItIs": "The Business Card Generator creates professional business card designs with customizable templates, layouts, and branding. Design printable business cards online with your logo, contact information, and company details.",
+    "features": [
+      "Create business card designs",
+      "Customizable templates",
+      "Add logo and branding",
+      "Multiple layout options",
+      "Print-ready high resolution",
+      "Front and back design",
+      "Download as PDF or image",
+      "Free basic design"
+    ],
+    "howToUse": {
+      "name": "How to Use the Business Card Generator",
+      "steps": [
+        {
+          "name": "Choose a template",
+          "text": "Browse business card templates by industry and style. Select a template that matches your brand aesthetic."
+        },
+        {
+          "name": "Enter your details",
+          "text": "Fill in your name, job title, company, phone, email, website, and address. The tool formats the information professionally."
+        },
+        {
+          "name": "Customize design",
+          "text": "Change colors, fonts, and layout. Upload your logo and adjust positioning. Preview both front and back of the card."
+        },
+        {
+          "name": "Download business cards",
+          "text": "Download your business card as a print-ready PDF or high-resolution image. Send to a printer or use for digital sharing."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What file formats can I download?",
+        "answer": "Free downloads include PNG and JPG images. Premium plans offer print-ready PDF with bleed marks, SVG vector files, and PSD for Photoshop editing."
+      },
+      {
+        "question": "What size should a business card be?",
+        "answer": "Standard business cards are 3.5 x 2 inches (89 x 51 mm) in the US, and 85 x 55 mm internationally. The tool uses standard dimensions with optional bleed for printing."
+      },
+      {
+        "question": "Can I design both sides?",
+        "answer": "Yes, the tool supports front and back design. Use the back for additional information, QR codes, or a different layout."
+      },
+      {
+        "question": "Is the Business Card Generator free?",
+        "answer": "Basic business card design is free. Premium plans offer print-ready files, vector formats, and unlimited designs."
+      }
+    ],
+    "seoDescription": "Create business cards online for free. Design professional cards with templates, logos, and custom branding. Download print-ready PDFs and high-res images."
+  },
+  "certificate-generator": {
+    "whatItIs": "The Certificate Generator creates professional certificates for courses, awards, competitions, and achievements. Design printable certificates with customizable templates, borders, and personalized details.",
+    "features": [
+      "Generate professional certificates",
+      "Customizable templates and layouts",
+      "Add recipient names and details",
+      "Include QR codes for verification",
+      "Multiple design styles",
+      "Print-ready high resolution",
+      "Batch generate certificates",
+      "Free basic generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Certificate Generator",
+      "steps": [
+        {
+          "name": "Choose a template",
+          "text": "Select a certificate template for your purpose: course completion, award, participation, or professional certification."
+        },
+        {
+          "name": "Customize content",
+          "text": "Enter recipient name, course/achievement title, date, and signature lines. Add your organization logo and customize colors."
+        },
+        {
+          "name": "Configure design",
+          "text": "Adjust fonts, border styles, and layout. Add a QR code for certificate verification if needed."
+        },
+        {
+          "name": "Generate and download",
+          "text": "Generate the certificate and download as PDF or high-resolution image. Print or share digitally with recipients."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What certificate types can I create?",
+        "answer": "The tool supports course completion certificates, award certificates, participation certificates, professional certifications, and custom achievement certificates."
+      },
+      {
+        "question": "Can I add a verification QR code?",
+        "answer": "Yes, premium plans allow adding QR codes that link to an online verification page. This prevents certificate fraud and enables instant verification."
+      },
+      {
+        "question": "What formats are available?",
+        "answer": "Free downloads include PNG images. Premium plans offer print-ready PDF with bleed marks, editable PSD files, and vector formats."
+      },
+      {
+        "question": "Is the Certificate Generator free?",
+        "answer": "Basic certificate generation is free. Premium plans offer batch generation, verification systems, and print-ready files."
+      }
+    ],
+    "seoDescription": "Generate certificates online for free. Create professional certificates for courses, awards, and achievements. Customizable templates with print-ready download."
+  },
+  "invoice-generator": {
+    "whatItIs": "The Invoice Generator creates professional invoices for businesses and freelancers. Generate branded invoices with item details, tax calculations, and payment terms. Download as PDF or share online.",
+    "features": [
+      "Create professional invoices",
+      "Add company logo and branding",
+      "Line items with quantities and prices",
+      "Auto-calculate subtotals and taxes",
+      "Multiple currency support",
+      "Download as PDF",
+      "Share via link",
+      "Free basic invoices"
+    ],
+    "howToUse": {
+      "name": "How to Use the Invoice Generator",
+      "steps": [
+        {
+          "name": "Enter business details",
+          "text": "Fill in your business name, address, logo, and contact information. Add your client's details including billing address."
+        },
+        {
+          "name": "Add line items",
+          "text": "List your products or services with descriptions, quantities, unit prices, and amounts. The tool auto-calculates subtotals and taxes."
+        },
+        {
+          "name": "Set payment terms",
+          "text": "Enter the invoice number, issue date, due date, and payment terms. Add notes or terms and conditions."
+        },
+        {
+          "name": "Generate and send",
+          "text": "Click generate to create the invoice PDF. Download it or share via a link for online payment."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I add my company logo?",
+        "answer": "Yes, upload your company logo to appear at the top of the invoice. The tool supports PNG, JPG, and SVG logos."
+      },
+      {
+        "question": "Does it calculate taxes automatically?",
+        "answer": "Yes, you can set tax rates (percentage or fixed) and the tool auto-calculates tax amounts for each line item and the total."
+      },
+      {
+        "question": "Can I accept online payments?",
+        "answer": "Premium plans integrate with payment gateways like Stripe and PayPal, allowing clients to pay directly from the invoice link."
+      },
+      {
+        "question": "Is the Invoice Generator free?",
+        "answer": "Basic invoice generation is free. Premium plans offer recurring invoices, online payments, and accounting integrations."
+      }
+    ],
+    "seoDescription": "Generate invoices online for free. Create professional business invoices with tax calculations and branding. Download as PDF or share online for payment."
+  }
+}

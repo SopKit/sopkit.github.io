@@ -1,0 +1,214 @@
+{
+  "broken-link-checker": {
+    "whatItIs": "The Broken Link Checker scans websites for broken internal and external links that return 404 errors or other HTTP errors. Essential for SEO health, user experience, and maintaining website quality.",
+    "features": [
+      "Scan website for broken links",
+      "Detect 404 and server errors",
+      "Show internal and external broken links",
+      "Crawl multiple pages",
+      "Export broken link report",
+      "Check redirect chains",
+      "Monitor link health",
+      "Free basic scanning"
+    ],
+    "howToUse": {
+      "name": "How to Use the Broken Link Checker",
+      "steps": [
+        {
+          "name": "Enter website URL",
+          "text": "Type the domain or specific page URL you want to scan. Enter the full URL starting with https:// for accurate crawling."
+        },
+        {
+          "name": "Start crawl",
+          "text": "Click start to begin scanning. The tool crawls your website, following internal links and checking each one for errors."
+        },
+        {
+          "name": "Review broken links",
+          "text": "See a list of broken links with their source pages, error codes, and status. Check for 404, 500, and timeout errors."
+        },
+        {
+          "name": "Export and fix",
+          "text": "Export the broken link report. Fix broken links by updating URLs, adding redirects, or removing dead links."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What HTTP errors does it detect?",
+        "answer": "The tool detects 404 (Not Found), 500 (Server Error), 403 (Forbidden), timeouts, and other HTTP error codes. It also identifies redirect chains and loops."
+      },
+      {
+        "question": "How many pages can it crawl?",
+        "answer": "Free plans typically scan up to 1000 pages per crawl. Premium plans offer deeper crawling for larger websites."
+      },
+      {
+        "question": "Does it check external links?",
+        "answer": "Yes, the tool checks both internal and external links. External link checking may be limited in free plans to manage server load."
+      },
+      {
+        "question": "Is the Broken Link Checker free?",
+        "answer": "Basic broken link checking is free. Premium plans offer deeper crawling, scheduled monitoring, and larger site limits."
+      }
+    ],
+    "seoDescription": "Check broken links online for free. Scan websites for 404 errors and broken URLs. Export reports for SEO health and link maintenance."
+  },
+  "page-speed-checker": {
+    "whatItIs": "The Page Speed Checker analyzes website loading performance using Core Web Vitals and other speed metrics. Get actionable insights to improve page load times for better user experience and SEO rankings.",
+    "features": [
+      "Analyze page load speed",
+      "Show Core Web Vitals metrics",
+      "Identify performance bottlenecks",
+      "Suggest optimization improvements",
+      "Compare mobile vs desktop",
+      "Show loading waterfall",
+      "Test from multiple locations",
+      "Free basic analysis"
+    ],
+    "howToUse": {
+      "name": "How to Use the Page Speed Checker",
+      "steps": [
+        {
+          "name": "Enter page URL",
+          "text": "Type or paste the full URL of the web page you want to analyze. Include https:// for accurate testing."
+        },
+        {
+          "name": "Run speed test",
+          "text": "Click analyze to run the speed test. The tool loads the page and measures performance metrics from a real browser."
+        },
+        {
+          "name": "Review performance score",
+          "text": "See the overall performance score and individual metrics: LCP, FID, CLS, FCP, TTI, and TBT. Review the detailed findings."
+        },
+        {
+          "name": "Implement optimizations",
+          "text": "Follow the optimization suggestions to improve your page speed. Prioritize high-impact fixes for the best results."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are Core Web Vitals?",
+        "answer": "Core Web Vitals are Google's user experience metrics: LCP (Largest Contentful Paint) for loading, FID (First Input Delay) for interactivity, and CLS (Cumulative Layout Shift) for visual stability."
+      },
+      {
+        "question": "How can I improve my page speed?",
+        "answer": "Common optimizations include compressing images, minifying CSS/JS, enabling caching, using CDNs, reducing redirects, and optimizing server response times."
+      },
+      {
+        "question": "Does it test mobile speed?",
+        "answer": "Yes, the tool tests both mobile and desktop performance. Mobile scores are particularly important for SEO as Google uses mobile-first indexing."
+      },
+      {
+        "question": "Is the Page Speed Checker free?",
+        "answer": "Basic page speed analysis is free. Premium plans offer historical tracking, competitor comparison, and advanced monitoring."
+      }
+    ],
+    "seoDescription": "Check page speed online for free. Analyze Core Web Vitals and performance metrics. Get actionable insights to improve website loading speed and SEO."
+  },
+  "website-screenshot": {
+    "whatItIs": "The Website Screenshot tool captures full-page screenshots of any website URL. Create visual archives, documentation, previews, and mockups without browser extensions or screen capture software.",
+    "features": [
+      "Capture full-page website screenshots",
+      "Set custom viewport size",
+      "Choose image format and quality",
+      "Schedule recurring captures",
+      "Capture at different resolutions",
+      "Hide or show elements",
+      "Batch capture multiple URLs",
+      "Free basic captures"
+    ],
+    "howToUse": {
+      "name": "How to Use the Website Screenshot Tool",
+      "steps": [
+        {
+          "name": "Enter website URL",
+          "text": "Type the full URL of the website you want to capture. Enter https:// for best results."
+        },
+        {
+          "name": "Configure capture settings",
+          "text": "Set the viewport width (desktop, tablet, mobile), image format (PNG, JPG), and quality level. Choose full page or viewport-only capture."
+        },
+        {
+          "name": "Capture screenshot",
+          "text": "Click capture to take the screenshot. The tool loads the page and captures the visible area or full page scroll."
+        },
+        {
+          "name": "Download the image",
+          "text": "Download the screenshot for documentation, sharing, or archiving. Set up recurring captures for monitoring website changes."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it capture the full page?",
+        "answer": "Yes, the full page option captures the entire scrollable height of the website. You can also choose viewport-only captures for above-the-fold screenshots."
+      },
+      {
+        "question": "What image formats are supported?",
+        "answer": "The tool supports PNG (lossless, larger files) and JPG (compressed, smaller files). PNG is recommended for screenshots with text and UI elements."
+      },
+      {
+        "question": "Can I capture at different screen sizes?",
+        "answer": "Yes, you can set custom viewport widths for desktop (1920px), tablet (768px), or mobile (375px) screenshots to test responsive designs."
+      },
+      {
+        "question": "Is the Website Screenshot tool free?",
+        "answer": "Basic screenshot capture is free with daily limits. Premium plans offer HD captures, batch processing, and scheduled monitoring."
+      }
+    ],
+    "seoDescription": "Capture website screenshots online for free. Take full-page screenshots of any URL for documentation and mockups. Multiple resolutions and formats."
+  },
+  "http-headers-checker": {
+    "whatItIs": "The HTTP Headers Checker inspects HTTP response headers for any website URL. Analyze security headers, caching rules, redirects, and server configurations for SEO and security optimization.",
+    "features": [
+      "Inspect HTTP response headers",
+      "Check security headers",
+      "Analyze caching directives",
+      "Detect redirect chains",
+      "Show server software",
+      "Check CORS headers",
+      "Export header data",
+      "Free unlimited checks"
+    ],
+    "howToUse": {
+      "name": "How to Use the HTTP Headers Checker",
+      "steps": [
+        {
+          "name": "Enter URL",
+          "text": "Type the full URL of the website you want to analyze. Include https:// for accurate header inspection."
+        },
+        {
+          "name": "Check headers",
+          "text": "Click check to fetch and display all HTTP response headers. The tool shows request and response headers in an organized format."
+        },
+        {
+          "name": "Analyze headers",
+          "text": "Review security headers like HSTS, CSP, X-Frame-Options, and X-XSS-Protection. Check caching directives and server information."
+        },
+        {
+          "name": "Export or optimize",
+          "text": "Export the header data for analysis. Use the insights to improve security, caching, and SEO performance."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are HTTP headers?",
+        "answer": "HTTP headers are additional information sent with HTTP requests and responses. They control caching, security, redirects, content types, and other important web behavior."
+      },
+      {
+        "question": "What security headers should I check?",
+        "answer": "Important security headers include HSTS (HTTPS enforcement), CSP (content security policy), X-Frame-Options (clickjacking protection), and X-XSS-Protection."
+      },
+      {
+        "question": "Can I check my server software?",
+        "answer": "Yes, the tool shows the Server header revealing server software (Apache, Nginx, etc.) and other technology indicators."
+      },
+      {
+        "question": "Is the HTTP Headers Checker free?",
+        "answer": "Yes, checking HTTP headers is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Check HTTP headers online for free. Inspect security, caching, and server headers for any URL. Analyze website configuration for SEO and security."
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "gravatar-checker": {
+    "whatItIs": "The Gravatar Checker looks up Gravatar profile images and information associated with an email address. See the profile picture, name, and public profile details linked to any Gravatar-enabled email.",
+    "features": [
+      "Lookup Gravatar by email",
+      "Show profile image and details",
+      "Support for MD5 hash lookup",
+      "Show profile URLs",
+      "Check if Gravatar exists",
+      "Download profile image",
+      "Free unlimited lookups"
+    ],
+    "howToUse": {
+      "name": "How to Use the Gravatar Checker",
+      "steps": [
+        {
+          "name": "Enter email address",
+          "text": "Type the email address you want to check for a Gravatar profile. The tool hashes the email and queries the Gravatar service."
+        },
+        {
+          "name": "Lookup Gravatar",
+          "text": "Click lookup to check for a Gravatar profile. The tool shows the profile image, name, and public profile details if found."
+        },
+        {
+          "name": "View profile details",
+          "text": "See the Gravatar profile image at different sizes. View the profile name, description, and linked URLs if publicly available."
+        },
+        {
+          "name": "Download image",
+          "text": "Download the Gravatar profile image for use in your application or contact management system."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is Gravatar?",
+        "answer": "Gravatar (Globally Recognized Avatar) is a service that associates profile images with email addresses. Websites and applications can display the same avatar across different platforms."
+      },
+      {
+        "question": "Do I need to create an account?",
+        "answer": "No, you only need the email address associated with the Gravatar. The tool hashes the email and queries Gravatar without any authentication."
+      },
+      {
+        "question": "Can I check Gravatar without the email?",
+        "answer": "If you know the MD5 hash of the email, you can look up the Gravatar directly using the hash. The tool can also compute the hash from the email."
+      },
+      {
+        "question": "Is the Gravatar Checker free?",
+        "answer": "Yes, looking up Gravatar profiles is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Check Gravatar profiles online for free. Look up profile images and details by email address. Download Gravatar avatars instantly."
+  },
+  "duplicate-image-finder": {
+    "whatItIs": "The Duplicate Image Finder scans folders and devices for duplicate and similar images. Reclaim storage space by identifying and removing duplicate photos, screenshots, and image files.",
+    "features": [
+      "Find duplicate images",
+      "Detect similar and near-duplicate images",
+      "Scan local folders and drives",
+      "Show image previews",
+      "Compare image hashes",
+      "Batch delete duplicates",
+      "Reclaim storage space",
+      "Free basic scanning"
+    ],
+    "howToUse": {
+      "name": "How to Use the Duplicate Image Finder",
+      "steps": [
+        {
+          "name": "Select folders to scan",
+          "text": "Choose the folders or drives you want to scan for duplicate images. Select specific directories or scan your entire device."
+        },
+        {
+          "name": "Start scanning",
+          "text": "Click scan to find duplicate and similar images. The tool uses perceptual hashing to identify exact and near-duplicate images."
+        },
+        {
+          "name": "Review duplicates",
+          "text": "Browse the grouped duplicates with image previews. Select which versions to keep and which to delete."
+        },
+        {
+          "name": "Delete duplicates",
+          "text": "Confirm and delete selected duplicates. The tool moves files to trash or deletes them permanently based on your settings."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does it detect similar images?",
+        "answer": "The tool uses perceptual hashing (pHash) to identify images that look similar even if they have different file sizes, resolutions, or slight modifications."
+      },
+      {
+        "question": "Will it scan my cloud storage?",
+        "answer": "The basic tool scans local files. Premium versions can scan cloud storage services like Google Drive, Dropbox, and OneDrive."
+      },
+      {
+        "question": "Are deleted images recoverable?",
+        "answer": "Deleted images go to your system trash/recycle bin by default. Use the permanent delete option only when you are sure you don't need the duplicates."
+      },
+      {
+        "question": "Is the Duplicate Image Finder free?",
+        "answer": "Basic duplicate scanning is free. Premium plans offer cloud scanning, advanced similarity detection, and batch operations."
+      }
+    ],
+    "seoDescription": "Find duplicate images online and locally. Scan folders for exact and similar image duplicates. Reclaim storage space with duplicate photo finder."
+  },
+  "image-compressor": {
+    "whatItIs": "The Image Compressor reduces image file sizes while maintaining quality for faster website loading and email attachments. Compress JPG, PNG, WebP, and GIF images with adjustable quality settings.",
+    "features": [
+      "Compress JPG, PNG, WebP, GIF",
+      "Adjustable quality levels",
+      "Batch compress multiple images",
+      "Show compression savings",
+      "Preserve transparency",
+      "Resize during compression",
+      "Privacy-focused local processing",
+      "Free unlimited compression"
+    ],
+    "howToUse": {
+      "name": "How to Use the Image Compressor",
+      "steps": [
+        {
+          "name": "Upload images",
+          "text": "Select the images you want to compress. You can upload JPG, PNG, WebP, and GIF files individually or in batch."
+        },
+        {
+          "name": "Set quality level",
+          "text": "Choose the compression quality from high (minimal compression) to low (maximum compression). Preview the quality difference."
+        },
+        {
+          "name": "Compress images",
+          "text": "Click compress to reduce file sizes. The tool shows before and after file sizes with savings percentage."
+        },
+        {
+          "name": "Download compressed images",
+          "text": "Download individual compressed images or all as a ZIP archive. Use the optimized images for web or email."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How much can image compression reduce file size?",
+        "answer": "Typical compression reduces file sizes by 50-80% while maintaining acceptable quality. The exact reduction depends on the original image and quality setting."
+      },
+      {
+        "question": "Does compression affect image quality?",
+        "answer": "Higher quality settings preserve most of the original quality. Lower settings introduce more compression artifacts. Preview the results before downloading."
+      },
+      {
+        "question": "Can I compress PNG with transparency?",
+        "answer": "Yes, PNG transparency is preserved during compression. The tool optimizes PNG files without losing the alpha channel."
+      },
+      {
+        "question": "Is the Image Compressor free?",
+        "answer": "Yes, compressing images is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Compress images online for free. Reduce JPG, PNG, WebP file sizes while maintaining quality. Batch image compression for faster website loading."
+  }
+}

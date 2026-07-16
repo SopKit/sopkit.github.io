@@ -10,9 +10,8 @@ import {
 	ToolSteps,
 	ToolTrust,
 } from "./ToolSharedComponents";
-import { getDynamicSEOContent } from "./seoTemplates";
 import { getRelatedTools, type Tool } from "@/lib/tools";
-import { MANUAL_TOOL_CONTENT } from "@/data/tool-manual-content";
+import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
 import { Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -136,28 +135,20 @@ export default function ToolLayout({
 	const opportunity = getSeoOpportunityByRoute(tool.route);
 	const routeKey = tool.route.endsWith("/") ? tool.route.slice(0, -1) : tool.route;
 
-	// Dynamically enrich tool data if SEO content is missing
+	// Build enriched tool data from manual SEO content (the single source of truth)
 	const enrichedTool: Tool = { ...tool };
 	const manualContent = MANUAL_TOOL_CONTENT[tool.id];
 
 	if (manualContent) {
-		if (!enrichedTool.article) enrichedTool.article = manualContent.whatItIs;
-		if (!enrichedTool.features) enrichedTool.features = manualContent.features;
-		if (!enrichedTool.howTo) enrichedTool.howTo = manualContent.howToUse;
-		if (!enrichedTool.faqs) enrichedTool.faqs = manualContent.faqs;
-	} else if (
-		!enrichedTool.features ||
-		!enrichedTool.faqs ||
-		!enrichedTool.howTo ||
-		!enrichedTool.article
-	) {
-		const dynamicContent = getDynamicSEOContent(tool);
-		if (!enrichedTool.features) enrichedTool.features = dynamicContent.features;
-		if (!enrichedTool.howTo) enrichedTool.howTo = dynamicContent.howTo;
-		if (!enrichedTool.faqs) enrichedTool.faqs = dynamicContent.faqs;
-		if (!enrichedTool.article) enrichedTool.article = dynamicContent.article;
+		// Manual content always takes precedence — no generic template fallback
+		enrichedTool.article = manualContent.whatItIs;
+		enrichedTool.features = manualContent.features;
+		enrichedTool.howTo = manualContent.howToUse;
+		enrichedTool.faqs = manualContent.faqs;
+		enrichedTool.description = manualContent.seoDescription || enrichedTool.description;
 	}
 
+	// H1 overrides for category hub pages
 	if (ROUTE_H1_OVERRIDES[routeKey]) {
 		enrichedTool.name = ROUTE_H1_OVERRIDES[routeKey];
 	} else if (opportunity) {
@@ -173,32 +164,6 @@ export default function ToolLayout({
 		};
 	} else if (tool.category !== "company" && !tool.route.endsWith("-tools") && tool.route !== "/generators" && tool.route !== "/calculators") {
 		enrichedTool.name = generateToolH1(tool.name, tool.category);
-	}
-
-	// Replace ${name} placeholders in the enriched data
-	const toolName = enrichedTool.name;
-	if (enrichedTool.article) {
-		enrichedTool.article = enrichedTool.article.replace(/\${name}/g, toolName);
-	}
-	if (enrichedTool.features) {
-		enrichedTool.features = enrichedTool.features.map(f => f.replace(/\${name}/g, toolName));
-	}
-	if (enrichedTool.faqs) {
-		enrichedTool.faqs = enrichedTool.faqs.map(faq => ({
-			question: faq.question.replace(/\${name}/g, toolName),
-			answer: faq.answer.replace(/\${name}/g, toolName),
-		}));
-	}
-	if (enrichedTool.howTo) {
-		enrichedTool.howTo = {
-			...enrichedTool.howTo,
-			name: enrichedTool.howTo.name?.replace(/\${name}/g, toolName),
-			steps: enrichedTool.howTo.steps?.map(s => ({
-				...s,
-				name: s.name.replace(/\${name}/g, toolName),
-				text: s.text.replace(/\${name}/g, toolName),
-			})),
-		};
 	}
 
 	// Append brand-identity article content and FAQs for privacy, security, client-side, and speed

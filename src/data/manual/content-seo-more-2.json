@@ -1,0 +1,267 @@
+{
+  "email-extractor": {
+    "whatItIs": "The Email Extractor finds and extracts email addresses from text, web pages, and documents. Useful for lead generation, contact list building, and data mining from websites and text files.",
+    "features": [
+      "Extract emails from text",
+      "Scrape emails from web pages",
+      "Extract from uploaded documents",
+      "Remove duplicate emails",
+      "Validate email format",
+      "Export to CSV or text",
+      "Batch process multiple sources",
+      "Free basic extraction"
+    ],
+    "howToUse": {
+      "name": "How to Use the Email Extractor",
+      "steps": [
+        {
+          "name": "Enter text or URL",
+          "text": "Paste text containing email addresses or enter a website URL to scrape. You can also upload text files or documents."
+        },
+        {
+          "name": "Extract emails",
+          "text": "Click extract to scan the content and find all email addresses. The tool uses pattern matching to identify valid email formats."
+        },
+        {
+          "name": "Review and clean",
+          "text": "Browse the extracted emails. Remove duplicates, filter invalid formats, and organize the list as needed."
+        },
+        {
+          "name": "Export the list",
+          "text": "Download the email list as CSV, TXT, or copy to clipboard for use in your email marketing or contact management."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I extract emails from websites?",
+        "answer": "Yes, enter any public website URL and the tool will scrape the page for email addresses. Be aware of website terms of service and privacy laws like GDPR."
+      },
+      {
+        "question": "Does it validate extracted emails?",
+        "answer": "Yes, the tool validates email format and can flag invalid or malformed addresses. It does not verify if emails are active or deliverable."
+      },
+      {
+        "question": "Can I extract from multiple sources at once?",
+        "answer": "Yes, batch processing is available for multiple URLs or files. Premium plans offer higher limits and faster processing."
+      },
+      {
+        "question": "Is the Email Extractor free?",
+        "answer": "Basic email extraction is free with daily limits. Premium plans offer unlimited extraction and advanced features."
+      }
+    ],
+    "seoDescription": "Extract email addresses from text and websites online for free. Scrape emails from web pages and documents. Export contact lists for lead generation."
+  },
+  "email-verifier": {
+    "whatItIs": "The Email Verifier checks the validity and deliverability of email addresses without sending emails. Verify syntax, domain existence, and mailbox availability to clean your email list and improve deliverability.",
+    "features": [
+      "Validate email syntax",
+      "Check domain MX records",
+      "Verify mailbox existence",
+      "Detect disposable and temporary emails",
+      "Remove invalid addresses",
+      "Batch verify email lists",
+      "Show deliverability score",
+      "Free basic verification"
+    ],
+    "howToUse": {
+      "name": "How to Use the Email Verifier",
+      "steps": [
+        {
+          "name": "Enter email address",
+          "text": "Type or paste the email address you want to verify. You can also upload a list of emails for batch verification."
+        },
+        {
+          "name": "Verify the email",
+          "text": "Click verify to check the email. The tool validates syntax, checks domain MX records, and tests mailbox existence."
+        },
+        {
+          "name": "Review results",
+          "text": "See the verification result: valid, invalid, or risky. Check the deliverability score and any detected issues."
+        },
+        {
+          "name": "Clean your list",
+          "text": "Remove invalid emails from your list. Use the batch results to clean large email lists before campaigns."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does email verification work?",
+        "answer": "The tool checks email syntax, verifies the domain has valid MX records, and performs SMTP verification to test if the mailbox exists without sending an email."
+      },
+      {
+        "question": "Does it catch disposable emails?",
+        "answer": "Yes, the tool detects temporary and disposable email providers, role-based addresses, and known spam traps to help maintain list quality."
+      },
+      {
+        "question": "Is email verification 100% accurate?",
+        "answer": "Verification is highly accurate but not 100% guaranteed. Some mail servers accept all addresses during the initial handshake (catch-all domains), making individual verification impossible."
+      },
+      {
+        "question": "Is the Email Verifier free?",
+        "answer": "Basic email verification is free with daily limits. Premium plans offer bulk verification with higher accuracy checks."
+      }
+    ],
+    "seoDescription": "Verify email addresses online for free. Check email validity, syntax, and deliverability without sending emails. Clean email lists for better campaign results."
+  },
+  "extract-links-from-page": {
+    "whatItIs": "The Extract Links from Page tool pulls all hyperlinks from any web page URL. Analyze website structure, audit internal and external links, and extract URLs for SEO analysis and content research.",
+    "features": [
+      "Extract all links from a web page",
+      "Show internal and external links",
+      "Filter by link type",
+      "Check link status codes",
+      "Export links to CSV",
+      "Analyze anchor text",
+      "Batch process multiple pages",
+      "Free basic extraction"
+    ],
+    "howToUse": {
+      "name": "How to Use the Extract Links from Page Tool",
+      "steps": [
+        {
+          "name": "Enter page URL",
+          "text": "Type or paste the URL of the web page you want to analyze. The tool fetches the page and parses all hyperlinks."
+        },
+        {
+          "name": "Extract all links",
+          "text": "Click extract to pull all links from the page. The tool separates internal and external links and shows their anchor text."
+        },
+        {
+          "name": "Analyze links",
+          "text": "Review the extracted links. Check for broken links, analyze anchor text distribution, and identify linking patterns."
+        },
+        {
+          "name": "Export results",
+          "text": "Export the link data as CSV for further analysis in Excel or SEO tools."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it extract all types of links?",
+        "answer": "The tool extracts all anchor tags (href), canonical links, Open Graph URLs, and other linked resources. It categorizes internal vs external links automatically."
+      },
+      {
+        "question": "Can I check for broken links?",
+        "answer": "Yes, the tool can check the HTTP status of each extracted link to identify 404 errors and other broken links on the page."
+      },
+      {
+        "question": "Does it follow redirects?",
+        "answer": "The tool can follow redirects and show the final destination URL. This is useful for identifying redirect chains and their final targets."
+      },
+      {
+        "question": "Is the Link Extractor free?",
+        "answer": "Basic link extraction is free with daily limits. Premium plans offer unlimited extraction and bulk page analysis."
+      }
+    ],
+    "seoDescription": "Extract links from web pages online for free. Pull all hyperlinks for SEO analysis and link audits. Export internal and external links to CSV."
+  },
+  "keyword-position-checker": {
+    "whatItIs": "The Keyword Position Checker tracks keyword rankings for websites in search engine results. Monitor your SEO performance by checking where your pages rank for specific keywords on Google and other search engines.",
+    "features": [
+      "Check keyword rankings on Google",
+      "Track multiple keywords",
+      "Show position history",
+      "Compare with competitors",
+      "Support for multiple countries",
+      "Daily ranking updates",
+      "Export ranking reports",
+      "Free basic tracking"
+    ],
+    "howToUse": {
+      "name": "How to Use the Keyword Position Checker",
+      "steps": [
+        {
+          "name": "Enter domain and keywords",
+          "text": "Type your website domain and the keywords you want to track. Enter multiple keywords separated by commas or newlines."
+        },
+        {
+          "name": "Select search engine and location",
+          "text": "Choose Google as the search engine and select the country and city for localized ranking checks."
+        },
+        {
+          "name": "Check rankings",
+          "text": "Click check to see your current rankings for each keyword. The tool shows the position, URL, and search engine results page."
+        },
+        {
+          "name": "Track changes",
+          "text": "Monitor ranking changes over time. Set up alerts for significant position changes."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How accurate are ranking checks?",
+        "answer": "Ranking positions are checked in real-time from the specified location. Results may vary slightly due to personalization, but the tool uses neutral search settings for consistency."
+      },
+      {
+        "question": "Can I track multiple domains?",
+        "answer": "Yes, you can track keywords for multiple domains in separate tracking lists. Premium plans offer more domains and keywords per account."
+      },
+      {
+        "question": "Does it show historical data?",
+        "answer": "Yes, the tool tracks ranking history over time. You can view charts showing position changes and identify trends."
+      },
+      {
+        "question": "Is the Keyword Position Checker free?",
+        "answer": "Basic keyword tracking is free with limits. Premium plans offer unlimited keywords and advanced features like competitor tracking."
+      }
+    ],
+    "seoDescription": "Check keyword rankings online for free. Track Google search positions for your website. Monitor SEO performance and competitor rankings over time."
+  },
+  "backlink-checker": {
+    "whatItIs": "The Backlink Checker analyzes the backlink profile of any website. Discover who is linking to your site, analyze link quality, and identify opportunities for link building and SEO improvement.",
+    "features": [
+      "Analyze website backlinks",
+      "Show linking domains count",
+      "Analyze link quality metrics",
+      "Identify toxic backlinks",
+      "Track new and lost links",
+      "Export backlink reports",
+      "Compare with competitors",
+      "Free basic analysis"
+    ],
+    "howToUse": {
+      "name": "How to Use the Backlink Checker",
+      "steps": [
+        {
+          "name": "Enter website URL",
+          "text": "Type the domain you want to analyze. Enter the full URL without https:// or www for best results."
+        },
+        {
+          "name": "Analyze backlinks",
+          "text": "Click analyze to scan the web for links pointing to your domain. The tool compiles the backlink profile and metrics."
+        },
+        {
+          "name": "Review backlink data",
+          "text": "Browse linking domains, individual backlinks, anchor text distribution, and quality metrics like domain authority."
+        },
+        {
+          "name": "Export report",
+          "text": "Download the backlink report for your SEO analysis. Identify toxic links to disavow and opportunities for new link building."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a backlink?",
+        "answer": "A backlink is a hyperlink from one website to another. Search engines use backlinks as a ranking signal, with high-quality links improving your SEO performance."
+      },
+      {
+        "question": "Does it show all backlinks?",
+        "answer": "The tool shows a representative sample of backlinks from its index. It may not capture every single backlink, especially newer or lower-authority links."
+      },
+      {
+        "question": "Can I identify toxic backlinks?",
+        "answer": "Yes, the tool flags potentially harmful backlinks from spammy or low-quality sites. You can use this data to create a disavow file for Google Search Console."
+      },
+      {
+        "question": "Is the Backlink Checker free?",
+        "answer": "Basic backlink analysis is free. Premium plans offer deeper analysis, historical data, and competitor comparison."
+      }
+    ],
+    "seoDescription": "Check website backlinks online for free. Analyze link profile, domain authority, and anchor text. Identify toxic links and link building opportunities."
+  }
+}

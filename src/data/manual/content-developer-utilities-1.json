@@ -1,0 +1,373 @@
+{
+  "currency-converter": {
+    "whatItIs": "The Currency Converter transforms amounts between different world currencies using live exchange rates. Convert money instantly for travel, international shopping, business transactions, or financial planning with accurate, up-to-date rates.",
+    "features": [
+      "Convert between 150+ world currencies",
+      "Live exchange rate updates",
+      "Historical rate lookup",
+      "Support for cryptocurrency conversions",
+      "Calculate conversions in both directions",
+      "Show exchange rate trends",
+      "Works offline with last known rates",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Currency Converter",
+      "steps": [
+        {
+          "name": "Enter the amount",
+          "text": "Type the amount of money you want to convert. The tool accepts any numeric value including decimals."
+        },
+        {
+          "name": "Select currencies",
+          "text": "Choose the source currency you are converting from and the target currency you want to convert to. Search by currency name or code."
+        },
+        {
+          "name": "View the result",
+          "text": "See the converted amount instantly with the current exchange rate. The tool updates rates regularly for accuracy."
+        },
+        {
+          "name": "Check historical rates",
+          "text": "View historical exchange rate data to understand currency trends over time. Useful for financial planning and analysis."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How often are exchange rates updated?",
+        "answer": "Exchange rates are updated every few minutes from reliable financial data providers. The tool uses the most current rates available for accurate conversions."
+      },
+      {
+        "question": "Which currencies are supported?",
+        "answer": "The converter supports over 150 world currencies including USD, EUR, GBP, INR, JPY, CNY, and all major world currencies. Cryptocurrency conversions are also available."
+      },
+      {
+        "question": "Are the rates accurate for large transactions?",
+        "answer": "The tool shows mid-market rates for reference. For actual large transactions, check with your bank or money transfer service as they may use different rates with fees included."
+      },
+      {
+        "question": "Is the Currency Converter free?",
+        "answer": "Yes, currency conversion is completely free with unlimited usage. No account or signup is required."
+      }
+    ],
+    "seoDescription": "Convert currencies online for free with live exchange rates. Transform money between 150+ world currencies instantly. Historical rates available for planning."
+  },
+  "unit-converter": {
+    "whatItIs": "The Unit Converter transforms measurements between different units across length, weight, volume, temperature, speed, area, and more. Essential for students, engineers, travelers, and anyone working with different measurement systems.",
+    "features": [
+      "Convert between metric and imperial units",
+      "Support for length, weight, volume, temperature",
+      "Real-time conversion as you type",
+      "Multiple unit categories",
+      "Show conversion formulas",
+      "Copy results with one click",
+      "Works offline in your browser",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Unit Converter",
+      "steps": [
+        {
+          "name": "Select unit category",
+          "text": "Choose the type of measurement you want to convert: length, weight, volume, temperature, speed, area, or others."
+        },
+        {
+          "name": "Enter the value",
+          "text": "Type the measurement value you want to convert. The tool supports decimal values for precision."
+        },
+        {
+          "name": "Select input and output units",
+          "text": "Choose the unit you are converting from and the unit you want to convert to. The tool shows all available units in the category."
+        },
+        {
+          "name": "View and copy the result",
+          "text": "See the converted value instantly. Click to copy the result or check the formula to understand the conversion."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What unit categories are supported?",
+        "answer": "The converter supports length, weight, volume, temperature, speed, area, time, pressure, energy, power, data storage, and many more categories."
+      },
+      {
+        "question": "Can I convert between metric and imperial?",
+        "answer": "Yes, the tool seamlessly converts between metric units (meters, kilograms, liters) and imperial units (feet, pounds, gallons)."
+      },
+      {
+        "question": "How precise are the conversions?",
+        "answer": "Conversions use standard conversion factors with full floating-point precision. You can adjust the number of decimal places displayed."
+      },
+      {
+        "question": "Is the Unit Converter free?",
+        "answer": "Yes, all unit conversions are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert units online for free. Transform between metric and imperial units for length, weight, volume, temperature, and more. Real-time conversion with formulas."
+  },
+  "color-converter": {
+    "whatItIs": "The Color Converter transforms colors between different formats including HEX, RGB, HSL, CMYK, and HSV. Essential for web designers, graphic designers, and developers working with color values across different tools and platforms.",
+    "features": [
+      "Convert between HEX, RGB, HSL, CMYK, HSV",
+      "Visual color preview with each conversion",
+      "Copy color values in any format",
+      "Generate color palettes",
+      "Show color harmonies",
+      "Contrast ratio checker",
+      "Works offline in browser",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Color Converter",
+      "steps": [
+        {
+          "name": "Enter or pick a color",
+          "text": "Type a color value in any format or use the color picker to visually select a color. The tool automatically detects the input format."
+        },
+        {
+          "name": "View all conversions",
+          "text": "See the color represented in all supported formats: HEX, RGB, HSL, CMYK, and HSV. Each value updates in real-time."
+        },
+        {
+          "name": "Copy color values",
+          "text": "Click to copy any color value to your clipboard. Use the copied value in your CSS, design software, or development code."
+        },
+        {
+          "name": "Explore related colors",
+          "text": "View color harmonies like complementary, analogous, and triadic colors. Generate palettes for your design projects."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What color formats are supported?",
+        "answer": "The converter supports HEX, RGB, HSL, CMYK, HSV, and color names. You can input and output in any of these formats."
+      },
+      {
+        "question": "Can I pick colors visually?",
+        "answer": "Yes, the built-in color picker lets you select any color visually. The tool then shows all format conversions for that color."
+      },
+      {
+        "question": "Does it show color harmonies?",
+        "answer": "Yes, the tool generates complementary, analogous, triadic, and tetradic color schemes based on your selected color."
+      },
+      {
+        "question": "Is the Color Converter free?",
+        "answer": "Yes, all color conversions and palette generation are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert colors between HEX, RGB, HSL, CMYK online for free. Visual color picker with palette generation and harmony suggestions for designers and developers."
+  },
+  "number-to-words-converter": {
+    "whatItIs": "The Number to Words Converter transforms any number into its word representation. Supports English and Indian numbering systems, making it ideal for writing cheques, invoices, legal documents, and educational materials.",
+    "features": [
+      "Convert numbers to words in English",
+      "Support for Indian numbering system (lakhs, crores)",
+      "Handle decimal numbers",
+      "Convert negative numbers",
+      "Support for very large numbers",
+      "One-click copy word output",
+      "Works offline in browser",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Number to Words Converter",
+      "steps": [
+        {
+          "name": "Enter a number",
+          "text": "Type or paste the number you want to convert to words. The tool accepts any integer or decimal number."
+        },
+        {
+          "name": "Select numbering system",
+          "text": "Choose between the international system (million, billion) or the Indian system (lakh, crore) depending on your needs."
+        },
+        {
+          "name": "View the words",
+          "text": "See the number written out in words instantly. The result is properly capitalized and formatted."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click to copy the word representation. Paste it directly into cheques, invoices, or documents."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it support the Indian numbering system?",
+        "answer": "Yes, the converter supports both international (thousand, million, billion) and Indian (thousand, lakh, crore) numbering systems. Choose the one that matches your requirement."
+      },
+      {
+        "question": "Can it handle very large numbers?",
+        "answer": "Yes, the tool can convert extremely large numbers to words. The only practical limit is browser memory for very long numbers."
+      },
+      {
+        "question": "Does it handle decimal numbers?",
+        "answer": "Yes, decimal numbers are converted with the fractional part written as 'point' followed by individual digits or as 'and' with the decimal component."
+      },
+      {
+        "question": "Is this converter free?",
+        "answer": "Yes, converting numbers to words is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert numbers to words online for free. Supports English and Indian numbering systems (lakhs, crores). Perfect for cheques, invoices, and legal documents."
+  },
+  "date-difference-calculator": {
+    "whatItIs": "The Date Difference Calculator computes the exact duration between two dates in years, months, weeks, days, hours, and minutes. Essential for project planning, age verification, contract durations, and event countdowns.",
+    "features": [
+      "Calculate exact date differences",
+      "Show results in multiple units",
+      "Include or exclude weekends",
+      "Calculate business days between dates",
+      "Support for past and future dates",
+      "Add or subtract days from a date",
+      "Show weekdays and weekends count",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the Date Difference Calculator",
+      "steps": [
+        {
+          "name": "Select two dates",
+          "text": "Choose the start and end dates using the date picker. You can also type dates directly in common formats."
+        },
+        {
+          "name": "Choose calculation mode",
+          "text": "Select whether to include all days or calculate business days only. Choose the output units you want to see."
+        },
+        {
+          "name": "Calculate the difference",
+          "text": "Click calculate to see the exact duration between the dates. Results show years, months, weeks, days, hours, and minutes."
+        },
+        {
+          "name": "Use the result",
+          "text": "Copy the date difference for your records, project planning, or documentation purposes."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it include both start and end dates?",
+        "answer": "The tool typically calculates the difference between dates excluding the start date. You can adjust this in settings based on your needs."
+      },
+      {
+        "question": "Can I calculate business days only?",
+        "answer": "Yes, the business days mode excludes weekends and optionally holidays from the calculation, which is useful for project timelines and contractual periods."
+      },
+      {
+        "question": "Does it handle leap years?",
+        "answer": "Yes, the calculator accurately accounts for leap years and varying month lengths when computing date differences."
+      },
+      {
+        "question": "Is the Date Difference Calculator free?",
+        "answer": "Yes, calculating date differences is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate date differences online for free. Find exact duration between two dates in years, months, days, and hours. Business day calculation available."
+  },
+  "working-days-calculator": {
+    "whatItIs": "The Working Days Calculator counts the number of business days between two dates, excluding weekends and optionally holidays. Essential for project managers, HR professionals, and anyone working with business timelines.",
+    "features": [
+      "Count business days between two dates",
+      "Exclude weekends automatically",
+      "Option to exclude holidays",
+      "Add or subtract working days from a date",
+      "Show total days and working days",
+      "Support for different weekend configurations",
+      "Export results for planning",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the Working Days Calculator",
+      "steps": [
+        {
+          "name": "Select date range",
+          "text": "Choose the start and end dates for your calculation. Use the date picker for easy selection."
+        },
+        {
+          "name": "Configure weekend and holidays",
+          "text": "Select which days are weekends (Saturday-Sunday or other configurations). Optionally add holidays to exclude from the count."
+        },
+        {
+          "name": "Calculate working days",
+          "text": "Click calculate to see the number of working days between the dates. The tool also shows total calendar days for reference."
+        },
+        {
+          "name": "Use the result",
+          "text": "Copy the working days count for project planning, payroll calculations, or contract timelines."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are considered working days?",
+        "answer": "By default, working days are Monday through Friday. You can customize which days are considered weekends based on your region or company policy."
+      },
+      {
+        "question": "Can I exclude holidays?",
+        "answer": "Yes, you can add specific holiday dates to exclude from the working days count. This is useful for accurate project timelines."
+      },
+      {
+        "question": "Can I calculate a future date from working days?",
+        "answer": "Yes, switch to the 'add working days' mode to calculate what date it will be after a specified number of business days."
+      },
+      {
+        "question": "Is the Working Days Calculator free?",
+        "answer": "Yes, all working days calculations are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate working days between dates online for free. Count business days excluding weekends and holidays. Add or subtract working days from any date."
+  },
+  "gpa-to-4-scale-converter": {
+    "whatItIs": "The GPA to 4.0 Scale Converter transforms Indian percentage grades, 10-point CGPA, or other grading systems into the standard US 4.0 GPA scale. Helpful for students applying to US universities and international education platforms.",
+    "features": [
+      "Convert percentage to 4.0 GPA",
+      "Convert 10-point CGPA to 4.0 GPA",
+      "Support for Indian and international grading",
+      "Show conversion formula and explanation",
+      "Handle edge cases and rounding",
+      "Batch convert multiple grades",
+      "Copy results with one click",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the GPA to 4.0 Scale Converter",
+      "steps": [
+        {
+          "name": "Select conversion type",
+          "text": "Choose whether you are converting from percentage, 10-point CGPA, or another grading system to the 4.0 scale."
+        },
+        {
+          "name": "Enter your grade",
+          "text": "Input your percentage or CGPA value. The tool accepts decimal values for precise conversions."
+        },
+        {
+          "name": "Convert to 4.0 GPA",
+          "text": "Click convert to see your grade on the 4.0 scale. The tool shows the calculation method used."
+        },
+        {
+          "name": "Understand the result",
+          "text": "Review your converted GPA and understand how it maps to the US grading scale. Use this for university applications and transcript evaluation."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How is the 4.0 GPA calculated?",
+        "answer": "The most common formula is GPA = (percentage / 100) * 4. However, different institutions use different conversion formulas. This tool uses standard conversion methods."
+      },
+      {
+        "question": "Does it support Indian CGPA to 4.0 conversion?",
+        "answer": "Yes, the tool supports converting Indian 10-point CGPA to the US 4.0 scale using standard conversion formulas used by universities."
+      },
+      {
+        "question": "Are the conversions accurate for university applications?",
+        "answer": "The tool provides standard conversion estimates. Always check with your target university as they may have specific conversion formulas or evaluation methods."
+      },
+      {
+        "question": "Is the GPA Converter free?",
+        "answer": "Yes, converting grades to 4.0 GPA scale is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert GPA to 4.0 scale online for free. Transform Indian percentage and CGPA to US GPA for university applications. Accurate grade conversion tool."
+  }
+}

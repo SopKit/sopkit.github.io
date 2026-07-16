@@ -1,0 +1,29 @@
+{
+  "group": 13,
+  "name": "calculators_2",
+  "tools": [
+    "paint-calculator",
+    "tile-calculator",
+    "compound-interest-calculator",
+    "mortgage-calculator",
+    "car-loan-calculator",
+    "roi-calculator",
+    "savings-goal-calculator",
+    "tip-calculator",
+    "bmi-calculator",
+    "fuel-cost-calculator",
+    "inflation-calculator",
+    "break-even-calculator",
+    "food-cost-calculator",
+    "freelance-rate-calculator",
+    "rent-affordability-calculator",
+    "home-loan-eligibility-calculator",
+    "property-roi-calculator",
+    "calorie-deficit-calculator",
+    "protein-intake-calculator",
+    "bmi-ideal-weight-calculator",
+    "water-intake-calculator",
+    "profit-margin-calculator",
+    "income-tax-calculator"
+  ]
+}

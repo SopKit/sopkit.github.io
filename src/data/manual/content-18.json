@@ -1,0 +1,866 @@
+{
+  "youtube-channel-age-checker": {
+    "whatItIs": "The YouTube Channel Age Checker is a free online tool that reveals the exact creation date of any YouTube channel. It's perfect for verifying account authenticity, researching competitors, or understanding channel history without needing to dig through YouTube's interface.",
+    "features": [
+      "Find the precise creation date of any public YouTube channel",
+      "Works with channel URLs, handles, or channel IDs",
+      "Instant results without requiring YouTube API keys",
+      "No login or account creation needed",
+      "Completely browser-based for maximum privacy",
+      "Supports both personal and brand channels",
+      "Useful for competitive analysis and channel auditing",
+      "Mobile-friendly interface for on-the-go research"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Channel Age Checker",
+      "steps": [
+        {"name": "Find the Channel URL", "text": "Navigate to the YouTube channel you want to check and copy its URL from your browser's address bar."},
+        {"name": "Paste the Channel Link", "text": "Enter the complete channel URL into the input field on the Channel Age Checker page."},
+        {"name": "Click Check Age", "text": "Press the check button to process the channel information through our system."},
+        {"name": "View Creation Date", "text": "The tool will display the exact date when the channel was created, including day, month, and year."},
+        {"name": "Use the Information", "text": "Apply the channel age data for your research, verification, or competitive analysis needs."}
+      ]
+    },
+    "faqs": [
+      {"question": "Why would I need to check a YouTube channel's age?", "answer": "Channel age helps verify authenticity, understand a creator's experience level, assess content consistency over time, and make informed decisions about collaborations or competitive strategies."},
+      {"question": "Does this tool work with private or unlisted channels?", "answer": "No, the Channel Age Checker only works with public YouTube channels. Private or unlisted channels cannot be accessed through this tool."},
+      {"question": "Is there a limit to how many channels I can check?", "answer": "No limits. You can check as many YouTube channels as you need, completely free of charge, with no daily restrictions."},
+      {"question": "Can I check the age of my own channel?", "answer": "Yes, simply paste your own channel URL into the tool to see when you created your YouTube account."},
+      {"question": "Does this tool store any information about the channels I check?", "answer": "No, all processing happens in your browser. We don't store, collect, or share any channel data or your search history."},
+      {"question": "What if the channel URL format has changed?", "answer": "The tool supports all current YouTube URL formats including /c/ handles, /user/ names, and /channel/ IDs. It automatically detects and processes the correct channel identifier."}
+    ],
+    "seoDescription": "Free YouTube Channel Age Checker to find exact creation dates of any public channel. Verify account authenticity, research competitors, and audit channels instantly with no API keys or signups required."
+  },
+  "youtube-channel-finder": {
+    "whatItIs": "The YouTube Channel Finder helps you discover relevant channels based on keywords, topics, or categories. It's an essential research tool for finding competitors, discovering new content creators, or identifying potential collaboration partners in your niche.",
+    "features": [
+      "Search for channels by specific keywords or topics",
+      "Filter results by relevance, subscriber count, or upload frequency",
+      "Discover channels in any category or niche",
+      "View channel statistics alongside search results",
+      "Export channel lists for further analysis",
+      "No YouTube API key required for basic searches",
+      "Fast, real-time channel discovery",
+      "Mobile-optimized for research on any device"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Channel Finder",
+      "steps": [
+        {"name": "Enter Your Search Term", "text": "Type a keyword, topic, or phrase related to the channels you want to find in the search box."},
+        {"name": "Select Search Parameters", "text": "Choose any additional filters like category, minimum subscribers, or upload frequency if available."},
+        {"name": "Run the Search", "text": "Click the search button to find channels matching your criteria across YouTube."},
+        {"name": "Browse Results", "text": "Review the list of discovered channels with their basic statistics and descriptions."},
+        {"name": "Save or Export", "text": "Bookmark interesting channels or export the list for your records and further analysis."}
+      ]
+    },
+    "faqs": [
+      {"question": "Can I find channels by exact subscriber count?", "answer": "While you can't specify exact numbers, you can often filter by subscriber ranges to find channels of similar size to yours or your targets."},
+      {"question": "Does this tool show channel contact information?", "answer": "No, the Channel Finder only displays public channel information like name, description, subscriber count, and upload frequency. Contact details are not included."},
+      {"question": "How accurate are the search results?", "answer": "Results are based on YouTube's public data and our search algorithms. They reflect currently available public channels matching your search criteria."},
+      {"question": "Can I search for channels in specific languages?", "answer": "Yes, include language-specific keywords in your search to find channels that create content in particular languages."},
+      {"question": "Is there a way to exclude certain channels from results?", "answer": "The basic search doesn't support exclusions, but you can manually filter results by reviewing the channel names and descriptions before saving."},
+      {"question": "Can I use this for influencer marketing research?", "answer": "Absolutely. The Channel Finder is excellent for identifying potential influencers, analyzing competitor channels, and building targeted outreach lists for marketing campaigns."}
+    ],
+    "seoDescription": "Free YouTube Channel Finder to discover relevant channels by keyword, topic, or category. Research competitors, find collaboration partners, and identify influencers in your niche instantly."
+  },
+  "youtube-channel-id-extractor": {
+    "whatItIs": "The YouTube Channel ID Extractor instantly retrieves the unique Channel ID from any YouTube URL. This is essential for developers working with YouTube APIs, marketers setting up tracking, or anyone needing the technical identifier behind a channel.",
+    "features": [
+      "Extract Channel ID from any YouTube URL format",
+      "Works with /c/ handles, /user/ names, and /channel/ IDs",
+      "Instant extraction with one click",
+      "Copy to clipboard functionality for easy use",
+      "No API keys or authentication required",
+      "Supports batch processing of multiple URLs",
+      "Browser-based for complete privacy",
+      "Developer-friendly output format"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Channel ID Extractor",
+      "steps": [
+        {"name": "Copy Channel URL", "text": "Navigate to the YouTube channel and copy its URL from your browser's address bar."},
+        {"name": "Paste URL into Tool", "text": "Enter the complete channel URL into the input field on the Channel ID Extractor page."},
+        {"name": "Click Extract", "text": "Press the extract button to process the URL and identify the Channel ID."},
+        {"name": "Copy the Channel ID", "text": "The unique Channel ID will appear. Click copy to add it to your clipboard."},
+        {"name": "Use in Your Application", "text": "Paste the Channel ID into your YouTube API calls, analytics tools, or other integrations."}
+      ]
+    },
+    "faqs": [
+      {"question": "What is a YouTube Channel ID and why do I need it?", "answer": "A Channel ID is YouTube's unique identifier for each channel, used in API calls, embed codes, and various integrations. It's different from the channel name or handle and remains constant even if the name changes."},
+      {"question": "Does the Channel ID ever change?", "answer": "No, once assigned, a YouTube Channel ID remains the same permanently, even if the channel name, handle, or other details change."},
+      {"question": "Can I extract Channel IDs from video URLs?", "answer": "No, this tool specifically extracts Channel IDs from channel URLs. For video URLs, you would need a different tool to get the video ID."},
+      {"question": "Is the Channel ID the same as the channel handle?", "answer": "No, they're different. The handle is the @username that appears in URLs like youtube.com/@channelname, while the Channel ID is a unique string like UCxxxxxxxxxxxx that identifies the channel in YouTube's systems."},
+      {"question": "Can I use this for YouTube API v3?", "answer": "Yes, the Channel ID extracted by this tool is exactly what you need for YouTube Data API v3 calls that require channel identifiers."},
+      {"question": "Does this work with YouTube Music channels?", "answer": "Yes, the tool works with all types of YouTube channels, including those primarily focused on music content."}
+    ],
+    "seoDescription": "Free YouTube Channel ID Extractor to get unique Channel IDs from any URL. Essential for developers, API integrations, and technical YouTube operations with instant results."
+  },
+  "youtube-playlist-link-extractor": {
+    "whatItIs": "The YouTube Playlist Link Extractor pulls all video URLs, titles, IDs, and publish dates from any public YouTube playlist. It's perfect for content creators, researchers, and marketers who need to analyze or repurpose playlist content.",
+    "features": [
+      "Extract every video link from public playlists instantly",
+      "Get video titles, IDs, URLs, and publish dates in one operation",
+      "Export playlist data to CSV for spreadsheet analysis",
+      "Works with playlist URLs or direct playlist IDs",
+      "No YouTube API key required for extraction",
+      "Clean table view of all extracted playlist data",
+      "Fast processing even for large playlists",
+      "Privacy-friendly browser-based operation"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Playlist Link Extractor",
+      "steps": [
+        {"name": "Find Playlist URL", "text": "Navigate to the YouTube playlist you want to extract and copy its URL from your browser."},
+        {"name": "Paste Playlist Link", "text": "Enter the complete playlist URL or just the playlist ID into the input field."},
+        {"name": "Click Extract", "text": "Press the extract button to fetch all videos from the playlist using our extraction service."},
+        {"name": "Review Extracted Data", "text": "View all video titles, URLs, IDs, and publish dates in a clean, organized table."},
+        {"name": "Download CSV", "text": "Export the complete playlist data as a CSV file for further analysis or record-keeping."}
+      ]
+    },
+    "faqs": [
+      {"question": "Can I extract from private or unlisted playlists?", "answer": "No, this tool only works with public playlists. Private or unlisted playlists cannot be accessed through this service."},
+      {"question": "Is there a limit to playlist size?", "answer": "The tool can handle most public playlists, but extremely large playlists may take longer to process or might have limitations based on the extraction service."},
+      {"question": "What data is included in the CSV export?", "answer": "The CSV file includes video titles, video IDs, full URLs, publish dates, and any other available metadata for each video in the playlist."},
+      {"question": "Can I extract playlists from other users' channels?", "answer": "Yes, as long as the playlist is public, you can extract data from any user's public playlists, not just your own."},
+      {"question": "Does this tool work with YouTube Music playlists?", "answer": "This tool is designed for YouTube video playlists. YouTube Music playlists may have different URL structures and might not be compatible."},
+      {"question": "How often is the playlist data updated?", "answer": "The extraction pulls current data at the time of your request, so you get the most up-to-date playlist contents available."}
+    ],
+    "seoDescription": "Free YouTube Playlist Link Extractor to get all video URLs, titles, and metadata from any public playlist. Export to CSV for analysis, research, or content repurposing."
+  },
+  "youtube-channel-statistics": {
+    "whatItIs": "The YouTube Channel Statistics tool provides detailed insights into any public channel's performance metrics. Get subscriber counts, video totals, view counts, and engagement data to understand a channel's reach and influence.",
+    "features": [
+      "View subscriber counts and growth trends",
+      "See total video uploads and upload frequency",
+      "Analyze total views and average video performance",
+      "Check channel engagement metrics like likes and comments",
+      "Compare multiple channels side by side",
+      "No API key or authentication required",
+      "Real-time data updates",
+      "Export statistics for spreadsheet analysis"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Channel Statistics",
+      "steps": [
+        {"name": "Enter Channel URL or Name", "text": "Type or paste the YouTube channel URL, handle, or name into the search field."},
+        {"name": "Click Analyze", "text": "Press the analyze button to fetch the latest statistics for the specified channel."},
+        {"name": "Review Statistics", "text": "View comprehensive metrics including subscribers, videos, views, and engagement data."},
+        {"name": "Compare Channels", "text": "Add multiple channels to compare their performance metrics side by side."},
+        {"name": "Export Data", "text": "Download the statistics in CSV format for further analysis or reporting."}
+      ]
+    },
+    "faqs": [
+      {"question": "How accurate are the statistics shown?", "answer": "Statistics are pulled from YouTube's public data and are as accurate as what YouTube displays publicly. Note that some metrics may be rounded or estimated."},
+      {"question": "Can I see historical data for a channel?", "answer": "The tool primarily shows current statistics. For historical data, you would need to use YouTube's official analytics or third-party services with access to historical information."},
+      {"question": "Why do some channels show limited statistics?", "answer": "Some channels may have privacy settings that limit the display of certain statistics, or they may be too new to have accumulated significant data."},
+      {"question": "Can I track my own channel's statistics?", "answer": "Yes, you can check statistics for your own channel, but for detailed analytics, YouTube Studio provides more comprehensive insights for channel owners."},
+      {"question": "Does this tool work with YouTube Premium channels?", "answer": "Yes, the tool works with all public YouTube channels regardless of whether they're part of YouTube Premium or not."},
+      {"question": "Can I use this for competitive analysis?", "answer": "Absolutely. The Channel Statistics tool is excellent for analyzing competitors, understanding market trends, and identifying opportunities in your niche."}
+    ],
+    "seoDescription": "Free YouTube Channel Statistics tool to analyze subscriber counts, video totals, views, and engagement metrics for any public channel. Perfect for competitive research and channel auditing."
+  },
+  "youtube-comment-picker": {
+    "whatItIs": "The YouTube Comment Picker randomly selects a winner from your video comments for giveaways, contests, or audience engagement. It ensures fair selection and makes managing comment-based promotions effortless.",
+    "features": [
+      "Randomly select a winner from all video comments",
+      "Filter comments by date range or specific keywords",
+      "Exclude certain users or comments from selection",
+      "Verify fair selection with transparent random process",
+      "Works with any public YouTube video",
+      "No login or API keys required",
+      "Instant results with one click",
+      "Mobile-friendly for on-the-go giveaways"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Comment Picker",
+      "steps": [
+        {"name": "Enter Video URL", "text": "Paste the URL of the YouTube video whose comments you want to pick from into the input field."},
+        {"name": "Set Selection Criteria", "text": "Choose any filters like date range, minimum comment length, or exclude certain users if needed."},
+        {"name": "Click Pick Winner", "text": "Press the pick button to randomly select a comment from the eligible pool."},
+        {"name": "Verify Selection", "text": "Review the selected comment and user to ensure it meets your criteria."},
+        {"name": "Announce Winner", "text": "Use the selected comment details to announce your giveaway or contest winner."}
+      ]
+    },
+    "faqs": [
+      {"question": "How does the random selection work?", "answer": "The tool uses a cryptographically secure random number generator to ensure each eligible comment has an equal chance of being selected, providing fair and unbiased results."},
+      {"question": "Can I pick multiple winners at once?", "answer": "Yes, you can run the picker multiple times to select multiple winners, or some versions may allow specifying the number of winners to pick simultaneously."},
+      {"question": "Does this work with videos that have thousands of comments?", "answer": "Yes, the tool can handle videos with large numbers of comments, though processing may take slightly longer for videos with tens of thousands of comments."},
+      {"question": "Can I exclude replies from the selection?", "answer": "This depends on the tool's settings. Some implementations allow filtering to include only top-level comments, excluding replies."},
+      {"question": "Is the selection truly random and fair?", "answer": "Yes, the tool uses proper randomization algorithms to ensure fairness. Each eligible comment has an equal probability of being selected."},
+      {"question": "Can I use this for business promotions?", "answer": "Yes, many businesses use comment pickers for social media giveaways and promotions to engage their audience and increase participation."}
+    ],
+    "seoDescription": "Free YouTube Comment Picker to randomly select giveaway winners from video comments. Ensure fair selection for contests, promotions, and audience engagement with transparent results."
+  },
+  "youtube-description-extractor": {
+    "whatItIs": "The YouTube Description Extractor instantly retrieves the full description text from any YouTube video. It's invaluable for SEO analysis, competitor research, or archiving video information without manually copying descriptions.",
+    "features": [
+      "Extract complete video descriptions with one click",
+      "Preserve all formatting, links, and timestamps from original descriptions",
+      "Works with any public YouTube video",
+      "No API keys or authentication required",
+      "Copy to clipboard for easy use",
+      "Download descriptions as text files",
+      "Batch processing for multiple videos",
+      "Browser-based for complete privacy"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Description Extractor",
+      "steps": [
+        {"name": "Find Video URL", "text": "Navigate to the YouTube video and copy its URL from your browser's address bar."},
+        {"name": "Paste Video Link", "text": "Enter the complete video URL into the input field on the Description Extractor page."},
+        {"name": "Click Extract", "text": "Press the extract button to fetch the video's description text."},
+        {"name": "Review Description", "text": "View the full description with all formatting, links, and timestamps preserved."},
+        {"name": "Copy or Save", "text": "Copy the description to your clipboard or download it as a text file for your records."}
+      ]
+    },
+    "faqs": [
+      {"question": "Does this extract descriptions from private or unlisted videos?", "answer": "No, the tool only works with public YouTube videos. Private or unlisted videos cannot be accessed."},
+      {"question": "Are timestamps and links preserved in the extracted description?", "answer": "Yes, the tool preserves all original formatting including timestamps, clickable links, and any special formatting from the original description."},
+      {"question": "Can I extract descriptions from videos I don't own?", "answer": "Yes, you can extract descriptions from any public YouTube video, regardless of ownership. This is particularly useful for competitor research."},
+      {"question": "Is there a character limit for descriptions?", "answer": "The tool can handle YouTube's maximum description length, including all formatting and links."},
+      {"question": "Can I use this for SEO analysis?", "answer": "Absolutely. Extracting descriptions allows you to analyze competitors' keyword usage, linking strategies, and content structure for SEO insights."},
+      {"question": "Does this work with YouTube Shorts?", "answer": "Yes, the tool works with all types of YouTube videos, including Shorts, as long as they are public."}
+    ],
+    "seoDescription": "Free YouTube Description Extractor to get full video descriptions from any public video. Perfect for SEO analysis, competitor research, and content archiving with all formatting preserved."
+  },
+  "youtube-embed-code-generator": {
+    "whatItIs": "The YouTube Embed Code Generator creates customizable embed codes for your videos. Control player size, start time, autoplay, and other parameters to perfectly integrate YouTube content into your website or blog.",
+    "features": [
+      "Generate responsive embed codes that adapt to container size",
+      "Set custom start times for videos to begin at specific moments",
+      "Control player parameters like autoplay, loop, and controls visibility",
+      "Enable privacy-enhanced mode to prevent tracking",
+      "Choose from multiple player themes and sizes",
+      "Preview embed before generating final code",
+      "Copy code with one click for easy implementation",
+      "Works with all public YouTube videos"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Embed Code Generator",
+      "steps": [
+        {"name": "Enter Video URL", "text": "Paste the URL of the YouTube video you want to embed into the input field."},
+        {"name": "Customize Player Settings", "text": "Adjust parameters like start time, autoplay, loop, controls, and privacy settings to your preference."},
+        {"name": "Set Dimensions", "text": "Choose a specific size or select responsive to have the player adapt to its container."},
+        {"name": "Preview Embed", "text": "Use the preview function to see how your embedded video will look with the current settings."},
+        {"name": "Copy Embed Code", "text": "Click the copy button to get the complete iframe code ready to paste into your website."}
+      ]
+    },
+    "faqs": [
+      {"question": "What is privacy-enhanced mode?", "answer": "Privacy-enhanced mode prevents YouTube from tracking viewing behavior of visitors to your site when they interact with the embedded video, providing better privacy protection."},
+      {"question": "Can I embed videos that autoplay with sound?", "answer": "While you can set autoplay, most modern browsers block autoplay with sound. Videos will autoplay muted, and users must interact to unmute."},
+      {"question": "Does the embed code work on all websites?", "answer": "Yes, the generated iframe code works on virtually all websites, blogs, and content management systems that support HTML iframes."},
+      {"question": "Can I customize the player controls?", "answer": "Yes, you can choose to show or hide player controls, progress bar, and other interface elements based on your preferences."},
+      {"question": "Is there a way to make the embed responsive?", "answer": "Yes, select the responsive option to have the player automatically adjust its size to fit the container while maintaining aspect ratio."},
+      {"question": "Can I embed playlists instead of single videos?", "answer": "This tool is designed for single videos. For playlists, you would need to use YouTube's playlist embed code directly from their platform."}
+    ],
+    "seoDescription": "Free YouTube Embed Code Generator to create customizable, responsive video embeds. Control start times, autoplay, privacy settings, and more for perfect website integration."
+  },
+  "youtube-hashtag-extractor": {
+    "whatItIs": "The YouTube Hashtag Extractor identifies and lists all hashtags used in a video's description or title. It's perfect for analyzing competitors' tagging strategies and discovering trending hashtags in your niche.",
+    "features": [
+      "Extract all hashtags from any public YouTube video",
+      "Identify hashtags in both titles and descriptions",
+      "See hashtag frequency and placement in content",
+      "Copy hashtags with one click for reuse",
+      "Analyze competitors' hashtag strategies",
+      "No API keys or login required",
+      "Fast, instant extraction",
+      "Export hashtag lists for analysis"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Hashtag Extractor",
+      "steps": [
+        {"name": "Find Video URL", "text": "Navigate to the YouTube video and copy its URL from your browser."},
+        {"name": "Paste Video Link", "text": "Enter the complete video URL into the input field on the Hashtag Extractor page."},
+        {"name": "Click Extract", "text": "Press the extract button to scan the video's title and description for hashtags."},
+        {"name": "Review Hashtags", "text": "View all hashtags found in the video, organized by where they appear."},
+        {"name": "Copy or Save", "text": "Copy individual hashtags or the complete list for use in your own videos."}
+      ]
+    },
+    "faqs": [
+      {"question": "What's the difference between hashtags and tags?", "answer": "Hashtags are visible in video titles or descriptions and start with #, while tags are hidden metadata added by the uploader. This tool extracts visible hashtags, not hidden tags."},
+      {"question": "Can I see which hashtags are most popular?", "answer": "The tool shows all hashtags used in the specific video, but doesn't provide popularity metrics. You can manually track which hashtags appear frequently across multiple videos."},
+      {"question": "Do hashtags in the first comment count?", "answer": "No, this tool only extracts hashtags from the video title and description, not from comments."},
+      {"question": "Can I extract hashtags from multiple videos at once?", "answer": "The basic tool processes one video at a time, but you can run it multiple times for different videos to build a comprehensive hashtag list."},
+      {"question": "Are hashtags case-sensitive?", "answer": "No, YouTube hashtags are not case-sensitive. #YouTube and #youtube are treated as the same hashtag."},
+      {"question": "Can I use extracted hashtags in my own videos?", "answer": "Yes, you can reuse any public hashtags in your own content. This is a common practice for discovering effective tags in your niche."}
+    ],
+    "seoDescription": "Free YouTube Hashtag Extractor to find all hashtags from any video's title and description. Analyze competitors' strategies and discover trending tags for better reach."
+  },
+  "youtube-hashtag-generator": {
+    "whatItIs": "The YouTube Hashtag Generator creates relevant, search-friendly hashtags for your videos based on your content topic. It helps increase discoverability and reach by suggesting tags that align with current trends and search patterns.",
+    "features": [
+      "Generate relevant hashtags based on your video topic",
+      "Suggest trending and popular hashtags in your niche",
+      "Create a mix of broad and specific hashtags for optimal reach",
+      "Avoid overused or spammy tags",
+      "Copy all generated hashtags with one click",
+      "Customize the number of hashtags to generate",
+      "No login or API keys required",
+      "Instant results for any topic"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Hashtag Generator",
+      "steps": [
+        {"name": "Enter Video Topic", "text": "Type a description of your video content or the main topic/keyword in the input field."},
+        {"name": "Select Hashtag Count", "text": "Choose how many hashtags you want to generate (typically 5-15 for YouTube)."},
+        {"name": "Click Generate", "text": "Press the generate button to create a list of relevant hashtags for your content."},
+        {"name": "Review Suggestions", "text": "Browse through the generated hashtags and select the most relevant ones for your video."},
+        {"name": "Copy to Description", "text": "Copy the selected hashtags and add them to your YouTube video description."}
+      ]
+    },
+    "faqs": [
+      {"question": "How many hashtags should I use in my YouTube videos?", "answer": "YouTube allows up to 15 hashtags per video. Using 5-10 relevant hashtags is generally recommended for optimal reach without appearing spammy."},
+      {"question": "Where should I place hashtags in my video?", "answer": "Hashtags can be placed in the video title (first 3 appear above the title) or in the description. Many creators put them at the bottom of the description."},
+      {"question": "Can I use the same hashtags for every video?", "answer": "While you can reuse some relevant hashtags, it's better to customize them for each video's specific content to maximize relevance and reach."},
+      {"question": "Do hashtags affect YouTube SEO?", "answer": "Yes, relevant hashtags can help YouTube understand your content better and may improve discoverability in search and suggested videos."},
+      {"question": "Should I use trending hashtags even if they're not perfectly relevant?", "answer": "It's best to use hashtags that are both trending and relevant to your content. Irrelevant hashtags may hurt your video's performance and could be flagged as spam."},
+      {"question": "Can I create my own hashtags?", "answer": "Yes, you can create branded or unique hashtags. The generator provides suggestions, but you can always add your own custom hashtags to the mix."}
+    ],
+    "seoDescription": "Free YouTube Hashtag Generator to create relevant, trending tags for your videos. Boost discoverability and reach with optimized hashtags tailored to your content topic."
+  },
+  "youtube-money-calculator": {
+    "whatItIs": "The YouTube Money Calculator estimates potential earnings for videos or channels based on views, CPM rates, and engagement metrics. It helps creators understand revenue potential and set realistic expectations for their content.",
+    "features": [
+      "Estimate earnings based on video views and CPM",
+      "Adjust CPM rates for different niches and audiences",
+      "Calculate potential revenue for entire channels",
+      "Factor in engagement metrics like likes and comments",
+      "Compare earnings across different scenarios",
+      "No login or financial information required",
+      "Instant calculations with real-time updates",
+      "Educational tool for understanding YouTube monetization"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Money Calculator",
+      "steps": [
+        {"name": "Enter View Count", "text": "Input the number of views for your video or channel that you want to estimate earnings for."},
+        {"name": "Set CPM Rate", "text": "Enter an estimated CPM (cost per thousand views) for your niche. Rates vary by content type and audience."},
+        {"name": "Add Engagement Metrics", "text": "Include likes, comments, and other engagement data if you want more accurate estimates."},
+        {"name": "Click Calculate", "text": "Press the calculate button to see estimated earnings based on your inputs."},
+        {"name": "Review Estimates", "text": "View the calculated potential earnings and adjust your inputs to see different scenarios."}
+      ]
+    },
+    "faqs": [
+      {"question": "How accurate are the earnings estimates?", "answer": "Estimates are based on the inputs you provide and industry averages. Actual earnings can vary significantly based on many factors including ad types, viewer location, and seasonality."},
+      {"question": "What is a typical CPM on YouTube?", "answer": "CPM varies widely by niche. Finance and business content often has higher CPMs ($10-$50), while gaming might be lower ($1-$10). Most creators see CPMs between $3-$10."},
+      {"question": "Does this calculator account for YouTube's revenue share?", "answer": "Yes, standard calculations assume YouTube's 45% share, meaning creators get approximately 55% of the total ad revenue."},
+      {"question": "Can I calculate earnings for videos that aren't monetized?", "answer": "Yes, the calculator provides estimates based on hypothetical monetization. Actual earnings require the video to be monetized and meeting YouTube's requirements."},
+      {"question": "Do all views count toward earnings?", "answer": "No, only views from monetized videos with eligible ad impressions count. Not all views generate revenue, and some may be from non-monetizable regions or ad-blocking users."},
+      {"question": "Can I use this for channel valuation?", "answer": "While the calculator provides earnings estimates, channel valuation involves many more factors including growth rate, audience demographics, and content quality. This tool is best for rough earnings estimates."}
+    ],
+    "seoDescription": "Free YouTube Money Calculator to estimate potential earnings from views. Understand revenue potential based on CPM rates and engagement metrics for videos or entire channels."
+  },
+  "youtube-region-restriction-checker": {
+    "whatItIs": "The YouTube Region Restriction Checker verifies if a video is blocked or restricted in specific countries. It helps creators and viewers understand global content availability and identify geo-restrictions.",
+    "features": [
+      "Check video availability in any country or region",
+      "Identify countries where videos are blocked or restricted",
+      "Test multiple regions simultaneously",
+      "See the reason for restrictions when available",
+      "No login or API keys required",
+      "Fast, real-time availability checks",
+      "Works with any public YouTube video",
+      "Mobile-friendly interface"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Region Restriction Checker",
+      "steps": [
+        {"name": "Enter Video URL", "text": "Paste the URL of the YouTube video you want to check into the input field."},
+        {"name": "Select Countries to Check", "text": "Choose the specific countries or regions you want to test for availability."},
+        {"name": "Click Check Availability", "text": "Press the check button to test the video's availability in your selected regions."},
+        {"name": "Review Results", "text": "View which countries can access the video and which have restrictions."},
+        {"name": "Understand Restrictions", "text": "For restricted countries, see if the reason is provided (e.g., copyright, content policies)."}
+      ]
+    },
+    "faqs": [
+      {"question": "Why would a video be restricted in certain countries?", "answer": "Videos may be restricted due to copyright issues, content that violates local laws, licensing restrictions, or the uploader's own geo-blocking settings."},
+      {"question": "Can I check restrictions for my own videos?", "answer": "Yes, you can check the global availability of your own videos to understand where your content can be viewed."},
+      {"question": "Does this tool work with age-restricted videos?", "answer": "Yes, the tool can identify age restrictions, but note that age-restricted videos may have different availability rules than geo-restrictions."},
+      {"question": "Can I bypass region restrictions with this tool?", "answer": "No, this tool only checks for restrictions. It doesn't provide any means to bypass geo-blocking or access restricted content."},
+      {"question": "How often do region restrictions change?", "answer": "Restrictions can change at any time based on copyright claims, policy updates, or uploader decisions. Always check current availability."},
+      {"question": "Does this work with YouTube Premium content?", "answer": "Yes, the tool checks availability for all public YouTube content, including videos that are part of YouTube Premium."}
+    ],
+    "seoDescription": "Free YouTube Region Restriction Checker to verify video availability in any country. Identify geo-blocks and understand global content restrictions for any public video."
+  },
+  "youtube-subscribe-link-generator": {
+    "whatItIs": "The YouTube Subscribe Link Generator creates direct links that automatically prompt users to subscribe to your channel. These are perfect for social media bios, email signatures, or any place where you want to drive subscriptions with minimal effort.",
+    "features": [
+      "Generate direct subscribe links for any YouTube channel",
+      "Create links that work across all platforms and devices",
+      "Customize link parameters for tracking campaigns",
+      "Short, clean URLs that are easy to share",
+      "No login or API keys required",
+      "Instant link generation with one click",
+      "Copy to clipboard for immediate use",
+      "Works with all public YouTube channels"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Subscribe Link Generator",
+      "steps": [
+        {"name": "Enter Channel URL or ID", "text": "Paste your YouTube channel URL or Channel ID into the input field."},
+        {"name": "Customize Link Parameters", "text": "Add any campaign tracking parameters or customizations if needed."},
+        {"name": "Click Generate Link", "text": "Press the generate button to create your custom subscribe link."},
+        {"name": "Copy the Link", "text": "Click copy to add the subscribe link to your clipboard."},
+        {"name": "Share the Link", "text": "Paste the link into your social media bios, email signatures, or anywhere you want to promote subscriptions."}
+      ]
+    },
+    "faqs": [
+      {"question": "What does a subscribe link look like?", "answer": "A typical subscribe link looks like https://www.youtube.com/c/YourChannelName?sub_confirmation=1 or https://www.youtube.com/channel/UCxxxxxxxxxxxx?sub_confirmation=1"},
+      {"question": "Does the subscribe link work on mobile devices?", "answer": "Yes, subscribe links work on all devices including mobile phones and tablets. They open the YouTube app or mobile site."},
+      {"question": "Can I track how many people subscribe through my link?", "answer": "The basic subscribe link doesn't include tracking. For tracking, you would need to use YouTube's built-in analytics or add UTM parameters to your links."},
+      {"question": "Is there a limit to how many subscribe links I can create?", "answer": "No, you can create as many subscribe links as you need for different campaigns or platforms."},
+      {"question": "Can I use this for multiple channels?", "answer": "Yes, you can generate subscribe links for any public YouTube channel, not just your own."},
+      {"question": "Do subscribe links expire?", "answer": "No, subscribe links remain valid as long as the channel exists and is public."}
+    ],
+    "seoDescription": "Free YouTube Subscribe Link Generator to create direct subscription links for any channel. Drive more subscribers with one-click links perfect for social media, emails, and promotions."
+  },
+  "youtube-tag-extractor": {
+    "whatItIs": "The YouTube Tag Extractor reveals the hidden tags that creators add to their videos for SEO purposes. Unlike hashtags, these tags aren't visible to viewers but are crucial for search discoverability and algorithm ranking.",
+    "features": [
+      "Extract hidden tags from any public YouTube video",
+      "View the exact keywords creators use for SEO",
+      "Analyze competitors' tagging strategies",
+      "Copy tags with one click for reuse",
+      "No API keys or login required",
+      "Fast, instant tag extraction",
+      "Export tag lists for analysis",
+      "Browser-based for complete privacy"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Tag Extractor",
+      "steps": [
+        {"name": "Find Video URL", "text": "Navigate to the YouTube video and copy its URL from your browser."},
+        {"name": "Paste Video Link", "text": "Enter the complete video URL into the input field on the Tag Extractor page."},
+        {"name": "Click Extract Tags", "text": "Press the extract button to retrieve the video's hidden tags."},
+        {"name": "Review Extracted Tags", "text": "View all the tags the creator has added to the video for SEO purposes."},
+        {"name": "Copy or Save Tags", "text": "Copy individual tags or the complete list for use in your own videos."}
+      ]
+    },
+    "faqs": [
+      {"question": "What's the difference between tags and hashtags?", "answer": "Tags are hidden metadata added by the uploader for SEO, while hashtags are visible in the title or description and start with #. This tool extracts hidden tags, not visible hashtags."},
+      {"question": "Can I see how many tags a video has?", "answer": "Yes, the tool will show you all the tags associated with the video, allowing you to see the total count and each individual tag."},
+      {"question": "Do tags affect YouTube search rankings?", "answer": "Yes, relevant tags help YouTube understand your content and can improve your video's visibility in search results and suggested videos."},
+      {"question": "Can I use extracted tags in my own videos?", "answer": "Yes, you can reuse any public tags in your own content. This is a common practice for discovering effective keywords in your niche."},
+      {"question": "Is there a limit to how many tags I can extract?", "answer": "The tool can extract all tags from a video. YouTube allows up to 500 characters worth of tags per video."},
+      {"question": "Do all videos have tags?", "answer": "Not all videos have tags. Some creators may not add any, while others use the full 500-character limit for comprehensive tagging."}
+    ],
+    "seoDescription": "Free YouTube Tag Extractor to reveal hidden SEO tags from any video. Analyze competitors' keyword strategies and discover effective tags for better search rankings."
+  },
+  "youtube-tag-generator": {
+    "whatItIs": "The YouTube Tag Generator creates optimized, SEO-friendly tags for your videos based on your content topic. It suggests relevant keywords that help improve your video's discoverability in YouTube search and suggested videos.",
+    "features": [
+      "Generate relevant tags based on your video topic",
+      "Suggest high-volume, low-competition keywords",
+      "Create a mix of broad and long-tail tags",
+      "Avoid overused or irrelevant tags",
+      "Copy all generated tags with one click",
+      "Customize the number of tags to generate",
+      "No login or API keys required",
+      "Instant results for any content type"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Tag Generator",
+      "steps": [
+        {"name": "Enter Video Topic", "text": "Type a description of your video content or main keywords in the input field."},
+        {"name": "Select Tag Count", "text": "Choose how many tags you want to generate (YouTube allows up to 500 characters total)."},
+        {"name": "Click Generate Tags", "text": "Press the generate button to create a list of relevant tags for your content."},
+        {"name": "Review Suggestions", "text": "Browse through the generated tags and select the most relevant ones for your video."},
+        {"name": "Copy to Video Settings", "text": "Copy the selected tags and add them to your YouTube video's tag field."}
+      ]
+    },
+    "faqs": [
+      {"question": "How many tags should I use for my YouTube videos?", "answer": "YouTube allows up to 500 characters for tags. Using 10-15 relevant tags is generally recommended, with a mix of broad and specific keywords."},
+      {"question": "Should I use single words or phrases for tags?", "answer": "Use both. Single words work for broad topics, while phrases (long-tail keywords) help target specific searches. A mix of both is ideal."},
+      {"question": "Can I reuse the same tags for multiple videos?", "answer": "You can reuse some relevant tags, but it's better to customize tags for each video's specific content to maximize relevance and reach."},
+      {"question": "Do tags affect YouTube's algorithm?", "answer": "Yes, relevant tags help YouTube's algorithm understand your content and can improve recommendations and search rankings."},
+      {"question": "Should I include my channel name in tags?", "answer": "Yes, including your channel name or brand in tags can help with brand recognition and may improve visibility for your other content."},
+      {"question": "Can I use competitor tags in my own videos?", "answer": "Yes, you can use any public tags. This is a common strategy for discovering effective keywords in your niche."}
+    ],
+    "seoDescription": "Free YouTube Tag Generator to create SEO-friendly keywords for your videos. Improve discoverability and rankings with optimized tags tailored to your content."
+  },
+  "youtube-timestamp-link-generator": {
+    "whatItIs": "The YouTube Timestamp Link Generator creates direct links to specific moments in any YouTube video. It's perfect for sharing exact scenes, highlighting key points, or directing viewers to important sections without them having to search through the video.",
+    "features": [
+      "Create links to specific times in any YouTube video",
+      "Set precise timestamps down to the second",
+      "Generate shareable links that start at your chosen moment",
+      "Works with any public YouTube video",
+      "No login or API keys required",
+      "Instant link generation",
+      "Copy links with one click",
+      "Mobile-friendly for on-the-go sharing"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Timestamp Link Generator",
+      "steps": [
+        {"name": "Enter Video URL", "text": "Paste the URL of the YouTube video you want to link to into the input field."},
+        {"name": "Set Timestamp", "text": "Enter the specific time (in hours:minutes:seconds format) where you want the video to start playing."},
+        {"name": "Click Generate Link", "text": "Press the generate button to create your timestamped link."},
+        {"name": "Copy the Timestamp Link", "text": "Click copy to add the timestamped URL to your clipboard."},
+        {"name": "Share the Link", "text": "Paste the link anywhere you want to share. When clicked, the video will start at your specified time."}
+      ]
+    },
+    "faqs": [
+      {"question": "What format should I use for timestamps?", "answer": "Use the format HH:MM:SS (hours:minutes:seconds). For example, 1:23:45 for 1 hour, 23 minutes, and 45 seconds into the video."},
+      {"question": "Can I create multiple timestamp links for the same video?", "answer": "Yes, you can create as many different timestamp links as you need for the same video, each starting at a different time."},
+      {"question": "Do timestamp links work on mobile devices?", "answer": "Yes, timestamp links work on all devices. The YouTube app and mobile site both support starting videos at specific times."},
+      {"question": "Can I link to the end of a video?", "answer": "Yes, you can set the timestamp to the video's total duration to link directly to the end."},
+      {"question": "Do timestamp links work with YouTube Shorts?", "answer": "Yes, timestamp links work with all types of YouTube videos, including Shorts."},
+      {"question": "Can I use timestamp links in video descriptions?", "answer": "Yes, timestamp links are perfect for video descriptions, allowing you to create a table of contents that links to specific sections."}
+    ],
+    "seoDescription": "Free YouTube Timestamp Link Generator to create direct links to specific video moments. Share exact scenes, highlight key points, or direct viewers to important sections instantly."
+  },
+  "youtube-title-extractor": {
+    "whatItIs": "The YouTube Title Extractor instantly retrieves the exact title from any YouTube video. It's perfect for competitor research, SEO analysis, or archiving video information without manually copying titles.",
+    "features": [
+      "Extract exact video titles with one click",
+      "Preserve all original capitalization and formatting",
+      "Works with any public YouTube video",
+      "No API keys or authentication required",
+      "Copy to clipboard for easy use",
+      "Download titles as text files",
+      "Batch processing for multiple videos",
+      "Browser-based for complete privacy"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Title Extractor",
+      "steps": [
+        {"name": "Find Video URL", "text": "Navigate to the YouTube video and copy its URL from your browser's address bar."},
+        {"name": "Paste Video Link", "text": "Enter the complete video URL into the input field on the Title Extractor page."},
+        {"name": "Click Extract Title", "text": "Press the extract button to fetch the video's title."},
+        {"name": "Review Title", "text": "View the exact title with all original formatting preserved."},
+        {"name": "Copy or Save", "text": "Copy the title to your clipboard or download it as a text file for your records."}
+      ]
+    },
+    "faqs": [
+      {"question": "Does this extract titles from private or unlisted videos?", "answer": "No, the tool only works with public YouTube videos. Private or unlisted videos cannot be accessed."},
+      {"question": "Are emojis in titles preserved?", "answer": "Yes, the tool preserves all original formatting including emojis, special characters, and capitalization from the original title."},
+      {"question": "Can I extract titles from videos I don't own?", "answer": "Yes, you can extract titles from any public YouTube video, regardless of ownership. This is useful for competitor research."},
+      {"question": "Is there a character limit for titles?", "answer": "The tool can handle YouTube's maximum title length of 100 characters, including all formatting."},
+      {"question": "Can I use this for SEO analysis?", "answer": "Absolutely. Extracting titles allows you to analyze competitors' keyword usage and title structure for SEO insights."},
+      {"question": "Does this work with YouTube Shorts?", "answer": "Yes, the tool works with all types of YouTube videos, including Shorts, as long as they are public."}
+    ],
+    "seoDescription": "Free YouTube Title Extractor to get exact video titles from any public video. Perfect for competitor research, SEO analysis, and content archiving with all formatting preserved."
+  },
+  "youtube-title-length-checker": {
+    "whatItIs": "The YouTube Title Length Checker helps you ensure your video titles are the optimal length for maximum visibility. It checks if your titles will be fully displayed in search results, suggested videos, and mobile views without truncation.",
+    "features": [
+      "Check if your title fits within YouTube's display limits",
+      "See character count and pixel width of your title",
+      "Preview how your title will appear in different contexts",
+      "Get recommendations for optimal title length",
+      "No login or API keys required",
+      "Instant length checking",
+      "Copy and edit titles directly in the tool",
+      "Mobile-friendly interface"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Title Length Checker",
+      "steps": [
+        {"name": "Enter Your Title", "text": "Type or paste your YouTube video title into the input field."},
+        {"name": "Click Check Length", "text": "Press the check button to analyze your title's length."},
+        {"name": "Review Results", "text": "See the character count, pixel width, and how your title will appear in different YouTube contexts."},
+        {"name": "Get Recommendations", "text": "Receive suggestions for optimizing your title length if it's too long or too short."},
+        {"name": "Edit and Retest", "text": "Make adjustments to your title and retest until you achieve the optimal length."}
+      ]
+    },
+    "faqs": [
+      {"question": "What is the optimal length for YouTube titles?", "answer": "YouTube titles can be up to 100 characters, but for best display across all devices, keeping titles under 60-70 characters ensures they won't be truncated in most views."},
+      {"question": "Why does title length matter?", "answer": "Titles that are too long get cut off with ellipses, making them less effective. Optimal length ensures your full title is visible in search results and suggested videos."},
+      {"question": "Does the checker account for different devices?", "answer": "Yes, the tool shows how your title will appear on desktop, mobile, and other contexts where truncation might occur."},
+      {"question": "Can I check multiple titles at once?", "answer": "The basic tool checks one title at a time, but you can use it repeatedly for all your video titles."},
+      {"question": "Does title length affect SEO?", "answer": "While length itself doesn't directly affect SEO, shorter, more focused titles often perform better as they're more likely to be fully displayed and clicked."},
+      {"question": "What happens if my title is too long?", "answer": "The tool will show you where truncation occurs and suggest shortening your title to ensure full visibility across all platforms."}
+    ],
+    "seoDescription": "Free YouTube Title Length Checker to ensure optimal title display. Check character counts, preview truncation, and optimize titles for maximum visibility across all devices."
+  },
+  "youtube-video-count-checker": {
+    "whatItIs": "The YouTube Video Count Checker provides the exact number of public videos on any YouTube channel. It's perfect for tracking channel growth, competitive analysis, or verifying a creator's content output.",
+    "features": [
+      "Get the exact count of public videos for any channel",
+      "Works with channel URLs, handles, or channel IDs",
+      "Instant results without API keys",
+      "No login or account creation needed",
+      "Completely browser-based for privacy",
+      "Track video count changes over time",
+      "Compare video counts across multiple channels",
+      "Mobile-friendly interface"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Video Count Checker",
+      "steps": [
+        {"name": "Enter Channel URL or Name", "text": "Type or paste the YouTube channel URL, handle, or name into the input field."},
+        {"name": "Click Check Count", "text": "Press the check button to fetch the current video count for the specified channel."},
+        {"name": "View Video Count", "text": "The tool will display the exact number of public videos on the channel."},
+        {"name": "Compare with Other Channels", "text": "Check video counts for multiple channels to compare content output."},
+        {"name": "Track Over Time", "text": "Use the tool periodically to monitor video count growth for channels you're tracking."}
+      ]
+    },
+    "faqs": [
+      {"question": "Does this count private or unlisted videos?", "answer": "No, the tool only counts public videos. Private and unlisted videos are not included in the count."},
+      {"question": "Why would I need to check video count?", "answer": "Video count helps assess a channel's activity level, content consistency, and growth rate. It's useful for competitive analysis and understanding a creator's output."},
+      {"question": "Does the count include deleted videos?", "answer": "No, the count only includes currently public videos. Deleted videos are not counted."},
+      {"question": "Can I check my own channel's video count?", "answer": "Yes, you can check the video count for your own channel to track your content growth."},
+      {"question": "How often is the video count updated?", "answer": "The tool pulls current data at the time of your request, so you get the most up-to-date video count available."},
+      {"question": "Does this work with YouTube Premium channels?", "answer": "Yes, the tool works with all public YouTube channels regardless of monetization status or Premium membership."}
+    ],
+    "seoDescription": "Free YouTube Video Count Checker to get exact public video counts for any channel. Track content growth, analyze competitors, and verify creator output instantly."
+  },
+  "youtube-video-statistics": {
+    "whatItIs": "The YouTube Video Statistics tool provides detailed metrics for any public video, including view counts, likes, dislikes (where available), comments, and engagement rates. It's perfect for analyzing video performance and understanding audience interaction.",
+    "features": [
+      "View detailed metrics for any public YouTube video",
+      "See view counts, likes, comments, and engagement rates",
+      "Analyze video performance over time",
+      "Compare statistics across multiple videos",
+      "No API keys or authentication required",
+      "Real-time data updates",
+      "Export statistics for analysis",
+      "Mobile-friendly interface"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Video Statistics",
+      "steps": [
+        {"name": "Enter Video URL", "text": "Paste the URL of the YouTube video you want to analyze into the input field."},
+        {"name": "Click Analyze", "text": "Press the analyze button to fetch the latest statistics for the specified video."},
+        {"name": "Review Metrics", "text": "View comprehensive statistics including views, likes, comments, and engagement data."},
+        {"name": "Compare Videos", "text": "Add multiple videos to compare their performance metrics side by side."},
+        {"name": "Export Data", "text": "Download the statistics in a format suitable for spreadsheets or reports."}
+      ]
+    },
+    "faqs": [
+      {"question": "How accurate are the video statistics?", "answer": "Statistics are pulled from YouTube's public data and are as accurate as what YouTube displays publicly. Some metrics may be rounded or estimated."},
+      {"question": "Can I see historical statistics?", "answer": "The tool primarily shows current statistics. For historical data, you would need to use YouTube Studio or third-party analytics services."},
+      {"question": "Why do some videos show limited statistics?", "answer": "Some videos may have privacy settings that limit the display of certain statistics, or they may be too new to have accumulated significant data."},
+      {"question": "Can I track my own videos' statistics?", "answer": "Yes, but for detailed analytics on your own videos, YouTube Studio provides more comprehensive insights for video owners."},
+      {"question": "Does this work with age-restricted videos?", "answer": "Yes, the tool works with all public videos, including those that are age-restricted."},
+      {"question": "Can I use this for competitive analysis?", "answer": "Absolutely. The Video Statistics tool is excellent for analyzing competitors' top-performing content and understanding what works in your niche."}
+    ],
+    "seoDescription": "Free YouTube Video Statistics tool to analyze view counts, likes, comments, and engagement for any public video. Perfect for performance analysis and competitive research."
+  },
+  "youtube-title-capitalizer": {
+    "whatItIs": "The YouTube Title Capitalizer automatically formats your video titles according to industry best practices. It ensures consistent, professional capitalization that improves readability and click-through rates.",
+    "features": [
+      "Automatically capitalize titles according to YouTube standards",
+      "Choose from different capitalization styles (title case, sentence case, etc.)",
+      "Preserve special formatting and emojis",
+      "Preview capitalized titles before applying",
+      "No login or API keys required",
+      "Instant capitalization",
+      "Copy formatted titles with one click",
+      "Mobile-friendly interface"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Title Capitalizer",
+      "steps": [
+        {"name": "Enter Your Title", "text": "Type or paste your YouTube video title into the input field."},
+        {"name": "Select Capitalization Style", "text": "Choose your preferred style, such as title case, sentence case, or all caps."},
+        {"name": "Click Capitalize", "text": "Press the capitalize button to format your title."},
+        {"name": "Preview Result", "text": "View how your title will look with the selected capitalization style."},
+        {"name": "Copy Formatted Title", "text": "Click copy to use the capitalized title in your YouTube video."}
+      ]
+    },
+    "faqs": [
+      {"question": "What is title case capitalization?", "answer": "Title case capitalizes the first letter of each major word in the title, except for articles, conjunctions, and short prepositions."},
+      {"question": "Which capitalization style is best for YouTube?", "answer": "Title case is most common for YouTube titles as it improves readability and looks professional. However, the best style depends on your brand and content type."},
+      {"question": "Does the tool handle special characters and emojis?", "answer": "Yes, the capitalizer preserves all special characters, emojis, and numbers while only affecting letters."},
+      {"question": "Can I capitalize multiple titles at once?", "answer": "The basic tool processes one title at a time, but you can use it repeatedly for all your video titles."},
+      {"question": "Does capitalization affect YouTube SEO?", "answer": "While capitalization itself doesn't directly affect SEO, properly formatted titles are more likely to be clicked, which can indirectly improve rankings."},
+      {"question": "Can I undo the capitalization?", "answer": "Yes, you can always re-enter your original title and try a different style, or simply not use the formatted version."}
+    ],
+    "seoDescription": "Free YouTube Title Capitalizer to automatically format video titles. Choose from multiple styles for professional, consistent capitalization that improves readability and CTR."
+  },
+  "youtube-views-ratio-calculator": {
+    "whatItIs": "The YouTube Views Ratio Calculator helps you understand audience engagement by comparing views to likes, comments, and other interactions. It provides insights into how well your content resonates with viewers beyond just view counts.",
+    "features": [
+      "Calculate engagement ratios (likes per view, comments per view, etc.)",
+      "Compare your ratios to YouTube averages",
+      "Analyze multiple videos side by side",
+      "Identify your best-performing content by engagement",
+      "No login or API keys required",
+      "Instant ratio calculations",
+      "Export ratio data for analysis",
+      "Mobile-friendly interface"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Views Ratio Calculator",
+      "steps": [
+        {"name": "Enter Video Metrics", "text": "Input the view count, likes, comments, and other metrics for your video."},
+        {"name": "Click Calculate Ratios", "text": "Press the calculate button to compute your engagement ratios."},
+        {"name": "Review Results", "text": "View ratios like likes per 100 views, comments per 1000 views, and other engagement metrics."},
+        {"name": "Compare with Averages", "text": "See how your ratios compare to typical YouTube averages for your niche."},
+        {"name": "Analyze Performance", "text": "Use the ratios to identify which videos perform best with your audience."}
+      ]
+    },
+    "faqs": [
+      {"question": "What is a good likes-to-views ratio on YouTube?", "answer": "A good ratio varies by niche, but generally 4-10% (4-10 likes per 100 views) is considered average to good. Viral content often sees 15% or higher."},
+      {"question": "Why is the views ratio important?", "answer": "Views alone don't tell the full story. Engagement ratios help you understand how well your content resonates with viewers and can indicate quality and relevance."},
+      {"question": "Can I calculate ratios for multiple videos?", "answer": "Yes, you can input data for multiple videos to compare their engagement ratios side by side."},
+      {"question": "What ratios should I focus on?", "answer": "Focus on likes-to-views and comments-to-views ratios as primary indicators of engagement. Watch time ratios are also crucial but require different tools."},
+      {"question": "Do ratios vary by video length?", "answer": "Yes, longer videos often have different engagement patterns than shorter ones. Always compare ratios for videos of similar length."},
+      {"question": "Can I use this for channel audits?", "answer": "Absolutely. The Views Ratio Calculator is excellent for auditing your channel's performance and identifying content that resonates best with your audience."}
+    ],
+    "seoDescription": "Free YouTube Views Ratio Calculator to analyze engagement metrics. Compare likes, comments, and other interactions to views for deeper insights into video performance."
+  },
+  "youtube-title-generator": {
+    "whatItIs": "The YouTube Title Generator creates compelling, click-worthy titles for your videos based on your content topic. It helps improve discoverability and click-through rates by suggesting titles optimized for both search and audience appeal.",
+    "features": [
+      "Generate catchy titles based on your video topic",
+      "Create SEO-friendly titles with relevant keywords",
+      "Suggest multiple title variations for A/B testing",
+      "Include power words and emotional triggers",
+      "Optimize for both search and click-through rates",
+      "No login or API keys required",
+      "Instant title generation",
+      "Copy titles with one click"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Title Generator",
+      "steps": [
+        {"name": "Enter Video Topic", "text": "Type a description of your video content or main keywords in the input field."},
+        {"name": "Select Title Style", "text": "Choose from options like how-to, listicle, question-based, or other popular formats."},
+        {"name": "Click Generate Titles", "text": "Press the generate button to create multiple title suggestions."},
+        {"name": "Review Suggestions", "text": "Browse through the generated titles and select the most compelling ones."},
+        {"name": "Copy Your Favorite", "text": "Copy the title you like best and use it for your YouTube video."}
+      ]
+    },
+    "faqs": [
+      {"question": "How many title suggestions do I get?", "answer": "The tool typically generates 5-10 title suggestions per request, giving you plenty of options to choose from."},
+      {"question": "Can I customize the generated titles?", "answer": "Yes, you can use the generated titles as inspiration and modify them to better fit your brand voice or specific content."},
+      {"question": "Do the titles include keywords for SEO?", "answer": "Yes, the generator creates titles that incorporate relevant keywords to help with search discoverability while remaining compelling to viewers."},
+      {"question": "Can I generate titles for any type of video?", "answer": "Yes, the tool works for any video topic, from tutorials and reviews to vlogs and entertainment content."},
+      {"question": "Should I always use the first suggestion?", "answer": "No, review all suggestions and choose the one that best fits your content and audience. Sometimes combining elements from different suggestions works best."},
+      {"question": "Can I use this for video ideas?", "answer": "Yes, the title suggestions can also spark new video ideas based on popular formats and topics in your niche."}
+    ],
+    "seoDescription": "Free YouTube Title Generator to create compelling, SEO-friendly video titles. Boost click-through rates and discoverability with optimized titles tailored to your content."
+  },
+  "youtube-description-generator": {
+    "whatItIs": "The YouTube Description Generator creates optimized, informative descriptions for your videos. It helps improve SEO, provide valuable information to viewers, and include all necessary links and calls-to-action in a professional format.",
+    "features": [
+      "Generate comprehensive video descriptions",
+      "Include relevant keywords for SEO",
+      "Add timestamps for video chapters",
+      "Incorporate social media links and calls-to-action",
+      "Format descriptions for maximum readability",
+      "No login or API keys required",
+      "Instant description generation",
+      "Copy descriptions with one click"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Description Generator",
+      "steps": [
+        {"name": "Enter Video Details", "text": "Type information about your video including topic, keywords, and any specific points to include."},
+        {"name": "Add Links and CTAs", "text": "Include your social media links, website URL, and any calls-to-action you want in the description."},
+        {"name": "Click Generate Description", "text": "Press the generate button to create a comprehensive description."},
+        {"name": "Review Generated Description", "text": "View the complete description with all elements properly formatted."},
+        {"name": "Copy to YouTube", "text": "Copy the description and paste it into your YouTube video's description field."}
+      ]
+    },
+    "faqs": [
+      {"question": "What should I include in my YouTube description?", "answer": "Include a brief summary of the video, relevant keywords, timestamps for chapters, links to your social media and website, and clear calls-to-action like subscribe or visit links."},
+      {"question": "How long should my description be?", "answer": "YouTube allows up to 5,000 characters. Use the first 2-3 lines for the most important information, as this appears above the show more fold."},
+      {"question": "Can I add hashtags to the generated description?", "answer": "Yes, you can add relevant hashtags at the bottom of the description. The generator may include some, but you can always add more."},
+      {"question": "Does the description affect SEO?", "answer": "Yes, the description is one of the most important factors for YouTube SEO. It helps the algorithm understand your content and can improve search rankings."},
+      {"question": "Can I use the same description for multiple videos?", "answer": "While you can reuse some elements, it's better to customize each description for the specific video content to maximize relevance and SEO."},
+      {"question": "Should I include timestamps in every description?", "answer": "Timestamps are very helpful for longer videos or tutorials. They allow viewers to jump to specific sections and can improve watch time."}
+    ],
+    "seoDescription": "Free YouTube Description Generator to create optimized, informative video descriptions. Improve SEO and viewer engagement with professional descriptions including keywords, links, and CTAs."
+  },
+  "youtube-thumbnail-text-generator": {
+    "whatItIs": "The YouTube Thumbnail Text Generator creates eye-catching, readable text overlays for your video thumbnails. It helps you design professional thumbnails that stand out in search results and suggested videos.",
+    "features": [
+      "Generate attention-grabbing text for thumbnails",
+      "Choose from multiple font styles and sizes",
+      "Create text that stands out against any background",
+      "Optimize text for readability at small sizes",
+      "No login or API keys required",
+      "Instant text generation",
+      "Copy text with one click",
+      "Mobile-friendly interface"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Thumbnail Text Generator",
+      "steps": [
+        {"name": "Enter Thumbnail Text", "text": "Type the text you want to appear on your thumbnail into the input field."},
+        {"name": "Select Style Options", "text": "Choose font style, size, color, and any effects like outlines or shadows."},
+        {"name": "Click Generate", "text": "Press the generate button to create your thumbnail text."},
+        {"name": "Preview Text", "text": "View how your text will look on a thumbnail background."},
+        {"name": "Copy Text Style", "text": "Copy the formatted text and apply it to your thumbnail design."}
+      ]
+    },
+    "faqs": [
+      {"question": "What makes good thumbnail text?", "answer": "Good thumbnail text is short, readable at small sizes, contrasts well with the background, and communicates the video's value or main point."},
+      {"question": "How many words should I use on a thumbnail?", "answer": "Keep it brief - 3-5 words maximum. Thumbnail text needs to be readable even at small sizes on mobile devices."},
+      {"question": "What font size is best for thumbnails?", "answer": "Font size depends on your text length, but generally 24-48pt works well for main text, ensuring readability when the thumbnail is small."},
+      {"question": "Should I use the same text style for all thumbnails?", "answer": "Consistent branding is good, but varying your text can help different videos stand out. Find a balance between consistency and variety."},
+      {"question": "Can I use this for thumbnail design?", "answer": "Yes, the generated text can be used in any thumbnail design tool or directly in YouTube's thumbnail editor."},
+      {"question": "Does thumbnail text affect click-through rate?", "answer": "Yes, compelling, readable thumbnail text can significantly improve your click-through rate from search results and suggested videos."}
+    ],
+    "seoDescription": "Free YouTube Thumbnail Text Generator to create eye-catching, readable text for video thumbnails. Design professional thumbnails that stand out and improve click-through rates."
+  },
+  "youtube-thumbnail-downloader": {
+    "whatItIs": "The YouTube Thumbnail Downloader allows you to save thumbnails from any YouTube video to your device. It's perfect for repurposing content, creating collages, or saving reference images from videos.",
+    "features": [
+      "Download thumbnails from any public YouTube video",
+      "Choose from available thumbnail resolutions",
+      "Save thumbnails as high-quality images",
+      "No login or API keys required",
+      "Instant download with one click",
+      "Batch download multiple thumbnails",
+      "Browser-based for complete privacy",
+      "Mobile-friendly interface"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Thumbnail Downloader",
+      "steps": [
+        {"name": "Enter Video URL", "text": "Paste the URL of the YouTube video whose thumbnail you want to download."},
+        {"name": "Select Thumbnail Quality", "text": "Choose from available resolution options if multiple are offered."},
+        {"name": "Click Download", "text": "Press the download button to save the thumbnail to your device."},
+        {"name": "Save the Image", "text": "Choose where to save the thumbnail image on your device."},
+        {"name": "Use the Thumbnail", "text": "Use the downloaded thumbnail for your intended purpose, respecting copyright and usage rights."}
+      ]
+    },
+    "faqs": [
+      {"question": "What resolutions are available for thumbnails?", "answer": "YouTube typically offers thumbnails in multiple resolutions, commonly 1280x720, 640x480, and 320x180 pixels."},
+      {"question": "Can I download thumbnails from videos I don't own?", "answer": "Yes, you can download thumbnails from any public video, but be mindful of copyright and usage rights when repurposing others' content."},
+      {"question": "Does this work with custom thumbnails?", "answer": "Yes, the tool can download both auto-generated and custom thumbnails that creators have uploaded."},
+      {"question": "Can I download multiple thumbnails at once?", "answer": "The basic tool downloads one at a time, but you can use it repeatedly for multiple videos."},
+      {"question": "Are downloaded thumbnails watermarked?", "answer": "No, the thumbnails are downloaded as-is from YouTube, without any additional watermarks."},
+      {"question": "Can I use downloaded thumbnails for my own videos?", "answer": "You can use thumbnails for reference or inspiration, but avoid using others' exact thumbnails for your own videos to prevent copyright issues."}
+    ],
+    "seoDescription": "Free YouTube Thumbnail Downloader to save thumbnails from any public video. Download high-quality images for repurposing, reference, or design inspiration."
+  },
+  "youtube-video-downloader": {
+    "whatItIs": "The YouTube Video Downloader allows you to save videos from YouTube to your device for offline viewing. It supports multiple formats and qualities, making it easy to access content when you don't have an internet connection.",
+    "features": [
+      "Download videos from any public YouTube video",
+      "Choose from multiple quality options (up to 4K where available)",
+      "Download in MP4, WebM, or other available formats",
+      "No login or API keys required",
+      "Fast download speeds",
+      "Batch download multiple videos",
+      "Browser-based for complete privacy",
+      "Mobile-friendly interface"
+    ],
+    "howToUse": {
+      "name": "How to Use YouTube Video Downloader",
+      "steps": [
+        {"name": "Enter Video URL", "text": "Paste the URL of the YouTube video you want to download into the input field."},
+        {"name": "Select Quality and Format", "text": "Choose your preferred video quality and file format from the available options."},
+        {"name": "Click Download", "text": "Press the download button to start saving the video to your device."},
+        {"name": "Save the Video", "text": "Choose where to save the downloaded video file on your device."},
+        {"name": "Watch Offline", "text": "Enjoy the video without needing an internet connection."}
+      ]
+    },
+    "faqs": [
+      {"question": "What video qualities are available?", "answer": "Available qualities depend on the original video, but typically range from 144p to 4K, with common options being 360p, 480p, 720p, 1080p, and 1440p."},
+      {"question": "Can I download age-restricted videos?", "answer": "Age-restricted videos may have download limitations depending on the downloader's capabilities and YouTube's policies."},
+      {"question": "Does this work with YouTube Premium content?", "answer": "The tool works with public YouTube content. Premium content may have additional restrictions."},
+      {"question": "Can I download only the audio?", "answer": "This tool is for video downloads. For audio-only, you would need a dedicated YouTube to MP3 converter."},
+      {"question": "Are there any limits to how many videos I can download?", "answer": "The tool itself has no limits, but be mindful of YouTube's terms of service regarding downloading content."},
+      {"question": "Can I download videos on mobile devices?", "answer": "Yes, the downloader works on mobile devices, though some browsers may have limitations on file downloads."}
+    ],
+    "seoDescription": "Free YouTube Video Downloader to save videos from any public YouTube video. Choose from multiple qualities and formats for offline viewing on any device."
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "case-converter": {
+    "whatItIs": "The Case Converter transforms text between different capitalization formats including uppercase, lowercase, title case, sentence case, camelCase, snake_case, and more. Essential for writers, programmers, and content creators formatting text for different contexts.",
+    "features": [
+      "Convert to uppercase, lowercase, title case",
+      "Sentence case and capitalized case",
+      "camelCase, PascalCase, snake_case, kebab-case",
+      "Toggle case and random case",
+      "Real-time conversion as you type",
+      "Batch process multiple texts",
+      "Copy converted text with one click",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Case Converter",
+      "steps": [
+        {
+          "name": "Enter your text",
+          "text": "Type or paste the text you want to convert. The tool supports any length of text in any format."
+        },
+        {
+          "name": "Select case type",
+          "text": "Choose the desired case format from the available options. Each format has specific rules for capitalization and spacing."
+        },
+        {
+          "name": "View the result",
+          "text": "See the converted text instantly. Try different case types to find the best format for your needs."
+        },
+        {
+          "name": "Copy the text",
+          "text": "Click to copy the converted text. Use it in documents, code, social media, or any other context."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What case formats are available?",
+        "answer": "The tool supports uppercase, lowercase, title case, sentence case, capitalized case, camelCase, PascalCase, snake_case, kebab-case, and toggle case."
+      },
+      {
+        "question": "What is title case?",
+        "answer": "Title case capitalizes the first letter of each major word (nouns, verbs, adjectives, adverbs) while keeping articles and prepositions lowercase unless they are the first or last word."
+      },
+      {
+        "question": "Can I convert text in languages other than English?",
+        "answer": "Yes, case conversion works with Unicode text including Hindi, Arabic, and other languages. Some case types like title case are optimized for English."
+      },
+      {
+        "question": "Is the Case Converter free?",
+        "answer": "Yes, all case conversions are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert text case online for free. Transform text to uppercase, lowercase, title case, camelCase, snake_case, and more. Fast case conversion tool."
+  },
+  "text-to-morse": {
+    "whatItIs": "The Text to Morse Code converter translates any text into Morse code using dots and dashes. Supports letters, numbers, and common punctuation. Useful for learning Morse code, creating signals, or encoding secret messages.",
+    "features": [
+      "Convert text to Morse code",
+      "Support for letters, numbers, and punctuation",
+      "Play Morse code as audio",
+      "Show dot and dash with timing",
+      "Copy Morse code with one click",
+      "Real-time conversion as you type",
+      "Light signal simulation",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Text to Morse Code Converter",
+      "steps": [
+        {
+          "name": "Enter your text",
+          "text": "Type or paste the text you want to convert to Morse code. The tool supports letters, numbers, and common punctuation."
+        },
+        {
+          "name": "View Morse code",
+          "text": "See your text converted to dots and dashes instantly. Each character is separated by a space and words by a slash."
+        },
+        {
+          "name": "Listen to the signal",
+          "text": "Click play to hear the Morse code as audio beeps. Adjust the speed and pitch if the tool supports these settings."
+        },
+        {
+          "name": "Copy the Morse code",
+          "text": "Copy the Morse code output for use in communications, learning, or creative projects."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What characters are supported in Morse code?",
+        "answer": "The tool supports all English letters (A-Z), numbers (0-9), and common punctuation marks including period, comma, question mark, and slash."
+      },
+      {
+        "question": "Can I listen to the Morse code?",
+        "answer": "Yes, the audio playback feature converts the Morse code to beeps. You can adjust the speed (WPM) and tone frequency for comfortable listening."
+      },
+      {
+        "question": "What do dots and dashes mean?",
+        "answer": "In Morse code, a dot (.) is a short signal and a dash (-) is a long signal. Each letter and number has a unique combination of dots and dashes."
+      },
+      {
+        "question": "Is the Text to Morse tool free?",
+        "answer": "Yes, converting text to Morse code and listening to audio is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert text to Morse code online for free. Translate any text into dots and dashes with audio playback. Learn and use Morse code instantly."
+  },
+  "morse-to-text": {
+    "whatItIs": "The Morse to Text converter decodes Morse code sequences back into readable text. Supports standard International Morse code with dots, dashes, and proper spacing for letters and words.",
+    "features": [
+      "Decode Morse code to plain text",
+      "Support for International Morse code",
+      "Handle dots, dashes, and spacing",
+      "Real-time decoding as you type",
+      "Audio input support",
+      "Show translation step by step",
+      "Copy decoded text with one click",
+      "Free unlimited decoding"
+    ],
+    "howToUse": {
+      "name": "How to Use the Morse to Text Converter",
+      "steps": [
+        {
+          "name": "Enter Morse code",
+          "text": "Type or paste Morse code using dots (.), dashes (-), spaces between letters, and slashes (/) between words."
+        },
+        {
+          "name": "Decode the message",
+          "text": "Click decode or watch the real-time conversion. The tool translates the Morse sequence into readable text instantly."
+        },
+        {
+          "name": "Review the result",
+          "text": "See the decoded text clearly displayed. Check that the translation is accurate, especially for unusual combinations."
+        },
+        {
+          "name": "Copy the text",
+          "text": "Click to copy the decoded message. Use it for communication, learning, or translating old Morse code records."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What Morse code format is supported?",
+        "answer": "The tool supports standard International Morse code with dots for short signals and dashes for long signals. Letters are separated by spaces and words by slashes."
+      },
+      {
+        "question": "Can I decode Morse code from audio?",
+        "answer": "Some implementations support audio input where you play a Morse code signal and the tool decodes it. Check if your version has this feature enabled."
+      },
+      {
+        "question": "What happens with invalid Morse sequences?",
+        "answer": "Invalid sequences are flagged with error messages. The tool attempts to decode valid portions and indicates where the sequence breaks down."
+      },
+      {
+        "question": "Is the Morse to Text converter free?",
+        "answer": "Yes, decoding Morse code is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Decode Morse code to text online for free. Translate dots and dashes back to readable messages. Support for International Morse code standard."
+  },
+  "ascii-art-generator": {
+    "whatItIs": "The ASCII Art Generator converts text and images into ASCII art using characters, symbols, and letters. Create text-based art for social media, forums, terminals, and creative projects from photos or custom text.",
+    "features": [
+      "Convert images to ASCII art",
+      "Generate ASCII art from text",
+      "Adjustable character density",
+      "Multiple ASCII character sets",
+      "Color ASCII art support",
+      "Resize and crop for output",
+      "Copy ASCII art with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the ASCII Art Generator",
+      "steps": [
+        {
+          "name": "Upload image or enter text",
+          "text": "Upload an image you want to convert to ASCII art, or enter text to create stylized ASCII lettering."
+        },
+        {
+          "name": "Adjust settings",
+          "text": "Choose the character set, width, and contrast level. For images, select how many characters to use per line."
+        },
+        {
+          "name": "Generate ASCII art",
+          "text": "Click generate to create your ASCII art. The tool converts the image or text using the selected character set."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the ASCII art to your clipboard. Paste it into social media, code comments, terminal displays, or creative projects."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What image formats are supported?",
+        "answer": "The tool supports common image formats including JPG, PNG, GIF, and WebP. Upload any image to convert it to ASCII art."
+      },
+      {
+        "question": "Can I adjust the detail level?",
+        "answer": "Yes, you can change the output width and character set to make the ASCII art more detailed or more abstract depending on your needs."
+      },
+      {
+        "question": "Does it support color ASCII art?",
+        "answer": "Some versions support ANSI color codes for colorful ASCII art. Check the options for color mode if you want colored output."
+      },
+      {
+        "question": "Is the ASCII Art Generator free?",
+        "answer": "Yes, generating ASCII art is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate ASCII art from images and text online for free. Create text-based art for social media, forums, and terminals. Multiple character sets available."
+  },
+  "lorem-ipsum-generator": {
+    "whatItIs": "The Lorem Ipsum Generator creates placeholder text for design mockups, wireframes, and content layouts. Generate paragraphs, sentences, or words of Lorem Ipsum text with customizable length and format.",
+    "features": [
+      "Generate Lorem Ipsum placeholder text",
+      "Customizable length: paragraphs, sentences, words",
+      "Multiple Latin text variations",
+      "Start with 'Lorem ipsum' or random start",
+      "Generate lists and headings",
+      "Copy text with one click",
+      "HTML format option",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Lorem Ipsum Generator",
+      "steps": [
+        {
+          "name": "Choose text type",
+          "text": "Select whether you want paragraphs, sentences, words, or lists. Choose the number of units you need."
+        },
+        {
+          "name": "Configure options",
+          "text": "Set the starting text (standard 'Lorem ipsum' or random), paragraph length, and whether to include HTML tags."
+        },
+        {
+          "name": "Generate text",
+          "text": "Click generate to create your placeholder text. The tool produces coherent-looking Latin placeholder text instantly."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the generated text and paste it into your design mockup, website template, or document layout."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is Lorem Ipsum used for?",
+        "answer": "Lorem Ipsum is placeholder text used by designers, publishers, and developers to fill layouts before real content is available. It helps visualize design without being distracted by meaningful text."
+      },
+      {
+        "question": "Can I generate HTML-formatted Lorem Ipsum?",
+        "answer": "Yes, the tool can output Lorem Ipsum wrapped in HTML tags like <p>, <h1>, and <ul> for direct use in web design mockups."
+      },
+      {
+        "question": "Can I generate more than just paragraphs?",
+        "answer": "Yes, you can generate individual words, sentences, lists, and even full articles of placeholder text in various lengths."
+      },
+      {
+        "question": "Is the Lorem Ipsum Generator free?",
+        "answer": "Yes, generating placeholder text is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate Lorem Ipsum placeholder text online for free. Create paragraphs, sentences, and words for design mockups and wireframes. HTML format available."
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "business-name-generator": {
+    "whatItIs": "The Business Name Generator creates brandable, memorable business name ideas for startups, companies, and online stores. Generate unique name suggestions with domain availability checks based on your industry and keywords.",
+    "features": [
+      "Generate business name ideas from keywords",
+      "Check domain availability",
+      "Support for multiple industries",
+      "Brandable and memorable suggestions",
+      "Short and long name options",
+      "Save favorite names",
+      "Export name list",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Business Name Generator",
+      "steps": [
+        {
+          "name": "Enter keywords",
+          "text": "Type 1-3 keywords related to your business, product, or niche. The tool combines these with relevant words to generate name ideas."
+        },
+        {
+          "name": "Select industry",
+          "text": "Choose your industry or business type for more targeted suggestions. The tool considers industry trends and naming conventions."
+        },
+        {
+          "name": "Generate names",
+          "text": "Click generate to see a list of business name suggestions. The tool creates brandable, memorable names with available .com domains."
+        },
+        {
+          "name": "Review and save",
+          "text": "Browse the suggestions and save your favorites. Check domain availability for your top choices before committing."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does the name generator work?",
+        "answer": "The tool combines your keywords with relevant prefixes, suffixes, and words to create brandable business names. It also checks .com domain availability in real-time."
+      },
+      {
+        "question": "Are the generated names unique?",
+        "answer": "The tool generates unique combinations, but similar names may exist. Always check trademark databases before finalizing your business name."
+      },
+      {
+        "question": "Can I filter by name length?",
+        "answer": "Yes, you can set preferences for short names (easier to remember) or longer descriptive names. The tool respects your length preferences."
+      },
+      {
+        "question": "Is the Business Name Generator free?",
+        "answer": "Yes, generating business name ideas is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate business name ideas online for free. Create brandable startup names with domain availability checks. Find the perfect name for your company or online store."
+  },
+  "ai-poem-generator": {
+    "whatItIs": "The AI Poem Generator creates original poems on any topic, theme, or style using artificial intelligence. Generate rhyming poems, free verse, haikus, sonnets, and other poetic forms for creative writing and inspiration.",
+    "features": [
+      "Generate poems on any topic",
+      "Support for multiple poetic forms",
+      "Customizable themes and moods",
+      "Rhyme and meter control",
+      "Multiple poem variations",
+      "Inspiration for writers",
+      "Free basic generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the AI Poem Generator",
+      "steps": [
+        {
+          "name": "Enter your topic or theme",
+          "text": "Type the subject, emotion, or theme for your poem. Be as specific or abstract as you like for different creative results."
+        },
+        {
+          "name": "Select poem style",
+          "text": "Choose the poetic form: free verse, sonnet, haiku, limerick, acrostic, or other styles. Each form has different structural requirements."
+        },
+        {
+          "name": "Generate poem",
+          "text": "Click generate to create your poem. The AI composes original verses based on your topic and selected style."
+        },
+        {
+          "name": "Review and refine",
+          "text": "Read the generated poem and regenerate if needed. Make manual edits to personalize the poem for your needs."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What poetic forms are supported?",
+        "answer": "The tool supports free verse, sonnets, haikus, limericks, acrostic poems, ballads, odes, and other common poetic forms. Each form follows traditional structural patterns."
+      },
+      {
+        "question": "Are the poems original?",
+        "answer": "Yes, the AI generates original poems for each request. The content is unique to your topic and settings, not copied from existing poems."
+      },
+      {
+        "question": "Can I control the poem's mood?",
+        "answer": "Yes, specify the mood or tone: happy, melancholic, romantic, mysterious, inspirational, etc. The AI adapts the language and imagery accordingly."
+      },
+      {
+        "question": "Is the AI Poem Generator free?",
+        "answer": "Basic poem generation is free. Premium plans offer more styles, longer poems, and advanced customization."
+      }
+    ],
+    "seoDescription": "Generate AI poems online for free. Create original poems on any topic in various styles. Get inspiration for haikus, sonnets, free verse, and more."
+  },
+  "fake-chat-generator": {
+    "whatItIs": "The Fake Chat Generator creates realistic fake chat screenshots for WhatsApp, iMessage, Instagram, and other messaging apps. Design mock conversations for presentations, social media content, and design mockups.",
+    "features": [
+      "Create fake chat screenshots",
+      "Support for WhatsApp, iMessage, Instagram",
+      "Customize sender and receiver",
+      "Add timestamps and read receipts",
+      "Upload profile pictures",
+      "Export as image",
+      "Multiple chat styles",
+      "Free basic generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Fake Chat Generator",
+      "steps": [
+        {
+          "name": "Select platform",
+          "text": "Choose the messaging app style: WhatsApp, iMessage, Instagram DM, Telegram, or generic chat. Each has different UI elements."
+        },
+        {
+          "name": "Customize participants",
+          "text": "Enter names and upload profile pictures for both sender and receiver. Set the chat theme colors and bubble styles."
+        },
+        {
+          "name": "Add messages",
+          "text": "Type the conversation messages. Alternate between sender and receiver. Add timestamps, read receipts, and typing indicators."
+        },
+        {
+          "name": "Export screenshot",
+          "text": "Generate the chat screenshot and download it as an image. Use it for presentations, social media, or design mockups."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I create realistic-looking chats?",
+        "answer": "Yes, the tool closely mimics the UI of popular messaging apps including chat bubbles, timestamps, read receipts, and profile pictures."
+      },
+      {
+        "question": "Is it legal to create fake chats?",
+        "answer": "Creating fake chats for personal use, design mockups, or satire is generally acceptable. Never use fake chats for fraud, harassment, or misleading others."
+      },
+      {
+        "question": "Can I customize the appearance?",
+        "answer": "Yes, you can customize colors, fonts, bubble styles, and add your own profile pictures to make the chat look authentic."
+      },
+      {
+        "question": "Is the Fake Chat Generator free?",
+        "answer": "Basic fake chat generation is free. Premium plans offer more platforms, batch generation, and advanced customization."
+      }
+    ],
+    "seoDescription": "Generate fake chat screenshots online for free. Create realistic WhatsApp, iMessage, Instagram mock conversations. Design tool for presentations and social media."
+  },
+  "excuse-generator": {
+    "whatItIs": "The Excuse Generator creates creative, funny, and believable excuses for being late, missing work, canceling plans, or forgetting events. Perfect for writers, role-players, and anyone needing humorous or realistic excuses.",
+    "features": [
+      "Generate excuses for various situations",
+      "Funny and creative variations",
+      "Professional excuses for work",
+      "Social excuses for plans",
+      "Customize tone and length",
+      "Multiple categories",
+      "Copy with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Excuse Generator",
+      "steps": [
+        {
+          "name": "Select excuse category",
+          "text": "Choose the situation: running late, missing work, canceling plans, forgetting an event, or needing a break."
+        },
+        {
+          "name": "Set tone",
+          "text": "Select the tone: professional, funny, creative, or believable. Different tones suit different situations and audiences."
+        },
+        {
+          "name": "Generate excuses",
+          "text": "Click generate to create excuse variations. The tool produces multiple options for you to choose from."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy your chosen excuse. Adapt it to your specific situation for maximum believability or humor."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Are these excuses realistic?",
+        "answer": "The tool generates a mix of realistic and humorous excuses. Professional excuses are designed to be believable, while funny ones are clearly meant for entertainment."
+      },
+      {
+        "question": "Can I customize the excuses?",
+        "answer": "Yes, use the generated excuses as inspiration and customize them with specific details relevant to your situation for better authenticity."
+      },
+      {
+        "question": "What categories are available?",
+        "answer": "Categories include running late, missing work, canceling plans, forgetting important dates, needing personal time, and creative excuses for writers and role-players."
+      },
+      {
+        "question": "Is the Excuse Generator free?",
+        "answer": "Yes, generating excuses is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate excuses online for free. Create funny, professional, and believable excuses for being late or missing plans. Perfect for writers and role-playing."
+  },
+  "number-generator": {
+    "whatItIs": "The Number Generator creates random numbers within custom ranges for games, lotteries, statistics, and programming. Generate single numbers, sequences, or sets with customizable parameters.",
+    "features": [
+      "Generate random numbers in range",
+      "Support for min and max values",
+      "Generate multiple numbers at once",
+      "Avoid duplicate numbers",
+      "Generate number sequences",
+      "Show sorted or unsorted",
+      "Copy numbers with one click",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Number Generator",
+      "steps": [
+        {
+          "name": "Set range",
+          "text": "Enter the minimum and maximum values for your random numbers. Choose any range from 0-9 for dice to millions for lotteries."
+        },
+        {
+          "name": "Configure options",
+          "text": "Set how many numbers to generate. Choose whether to allow duplicates and whether to sort the results."
+        },
+        {
+          "name": "Generate numbers",
+          "text": "Click generate to create random numbers. The tool uses cryptographically secure random generation where available."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click to copy the generated numbers. Use them for games, raffles, statistical sampling, or programming."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Are the numbers truly random?",
+        "answer": "The tool uses cryptographically secure random number generation where supported by your browser, ensuring unpredictable and unbiased results."
+      },
+      {
+        "question": "Can I generate unique numbers only?",
+        "answer": "Yes, enable the 'no duplicates' option to generate a set of unique numbers. This is useful for lottery numbers, raffles, and random sampling."
+      },
+      {
+        "question": "What is the maximum number?",
+        "answer": "There is no fixed maximum. You can generate numbers in any range from single digits to very large numbers, limited only by floating-point precision."
+      },
+      {
+        "question": "Is the Number Generator free?",
+        "answer": "Yes, generating random numbers is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate random numbers online for free. Create random number sets, sequences, and ranges for games, lotteries, and statistics. No duplicates option."
+  },
+  "poetry-generator": {
+    "whatItIs": "The Poetry Generator creates original poems on any theme using AI. Generate rhyming and free verse poems, haikus, and other poetic forms for creative writing, greeting cards, and inspiration.",
+    "features": [
+      "Generate original poems",
+      "Multiple poetic forms",
+      "Customizable themes and topics",
+      "Rhyme and meter options",
+      "Multiple variations",
+      "Copy and share",
+      "Free basic generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Poetry Generator",
+      "steps": [
+        {
+          "name": "Enter a theme",
+          "text": "Type the topic, emotion, or theme for your poem. Be specific or abstract for different creative outcomes."
+        },
+        {
+          "name": "Select poem form",
+          "text": "Choose the type of poem: free verse, sonnet, haiku, limerick, acrostic, or ode. Each has different structural patterns."
+        },
+        {
+          "name": "Generate poem",
+          "text": "Click generate to create your poem. The AI writes original verses based on your theme and selected form."
+        },
+        {
+          "name": "Save and share",
+          "text": "Copy the poem or regenerate for different variations. Share your poem or use it as inspiration for your own writing."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What types of poems can I generate?",
+        "answer": "The tool supports free verse, sonnets, haikus, limericks, acrostics, odes, ballads, and free-form poetry. Each type follows its traditional structure where applicable."
+      },
+      {
+        "question": "Are generated poems original?",
+        "answer": "Yes, each poem is generated fresh and is unique to your input. The content is not copied from existing poems or poets."
+      },
+      {
+        "question": "Can I control the poem length?",
+        "answer": "Yes, you can set the desired length or number of lines. Shorter forms like haikus have fixed structures, while free verse can be any length."
+      },
+      {
+        "question": "Is the Poetry Generator free?",
+        "answer": "Basic poem generation is free. Premium plans offer more styles, longer poems, and advanced customization options."
+      }
+    ],
+    "seoDescription": "Generate poems online for free using AI. Create original poems in various styles: haiku, sonnet, free verse, limerick. Get creative writing inspiration."
+  }
+}

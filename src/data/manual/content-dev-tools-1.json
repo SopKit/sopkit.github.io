@@ -1,0 +1,532 @@
+{
+  "plagiarism-checker": {
+    "whatItIs": "The Plagiarism Checker compares your text against billions of web pages and documents to identify copied or unoriginal content. Essential for students, writers, and content creators ensuring their work is original and properly cited.",
+    "features": [
+      "Check text against web sources",
+      "Highlight matched content",
+      "Show similarity percentage",
+      "Generate originality reports",
+      "Support for multiple languages",
+      "Check multiple documents",
+      "Deep search mode for thorough checking",
+      "Privacy-focused with secure processing"
+    ],
+    "howToUse": {
+      "name": "How to Use the Plagiarism Checker",
+      "steps": [
+        {
+          "name": "Enter or upload text",
+          "text": "Paste your text into the input area or upload a document file. The tool accepts plain text, DOCX, and PDF formats."
+        },
+        {
+          "name": "Start plagiarism scan",
+          "text": "Click the check button to start scanning. The tool compares your text against web pages, academic papers, and published content."
+        },
+        {
+          "name": "Review results",
+          "text": "See a similarity percentage and highlighted sections that match external sources. Each match shows the source URL for verification."
+        },
+        {
+          "name": "Take action",
+          "text": "Rewrite or cite any flagged sections. Download the originality report for submission or records."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How accurate is the plagiarism check?",
+        "answer": "The tool scans against billions of web pages and documents using advanced algorithms. Accuracy depends on database coverage and text length."
+      },
+      {
+        "question": "Is my text stored or shared?",
+        "answer": "No, your text is processed securely and not stored permanently. Privacy is maintained throughout the scanning process."
+      },
+      {
+        "question": "Does it check against academic databases?",
+        "answer": "Premium versions include academic database checking. The free version checks against publicly available web content."
+      },
+      {
+        "question": "What is a good similarity score?",
+        "answer": "A similarity score below 15% is generally acceptable for most purposes. Higher scores may indicate excessive copying and require revision."
+      }
+    ],
+    "seoDescription": "Check plagiarism online for free. Scan text against web pages and documents for originality. Essential tool for students, writers, and content creators."
+  },
+  "grammar-checker": {
+    "whatItIs": "The Grammar Checker identifies and corrects grammar, spelling, punctuation, and style errors in your writing. Get suggestions for improvement, clarity, and tone to make your writing polished and professional.",
+    "features": [
+      "Check grammar and spelling errors",
+      "Suggest sentence improvements",
+      "Check punctuation and style",
+      "Support for multiple English dialects",
+      "Show readability score",
+      "Suggest vocabulary enhancements",
+      "One-click apply corrections",
+      "Free basic checking"
+    ],
+    "howToUse": {
+      "name": "How to Use the Grammar Checker",
+      "steps": [
+        {
+          "name": "Enter your text",
+          "text": "Type or paste the text you want to check. The tool accepts any length of text from single sentences to full documents."
+        },
+        {
+          "name": "Run grammar check",
+          "text": "Click the check button. The tool analyzes your text for grammar, spelling, punctuation, and style issues."
+        },
+        {
+          "name": "Review suggestions",
+          "text": "Browse the suggested corrections. Each issue is explained with alternatives. Accept or reject suggestions as needed."
+        },
+        {
+          "name": "Apply corrections",
+          "text": "Click to apply all corrections or accept them one by one. Copy the polished text for use in your documents."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What types of errors can it detect?",
+        "answer": "The checker detects grammar errors, spelling mistakes, punctuation issues, sentence fragments, passive voice overuse, and style inconsistencies."
+      },
+      {
+        "question": "Does it support different English dialects?",
+        "answer": "Yes, you can select between American, British, Australian, and Canadian English for spelling and grammar rules."
+      },
+      {
+        "question": "Can it improve my writing style?",
+        "answer": "Yes, the tool provides style suggestions for clarity, conciseness, and tone. Premium versions offer more advanced style recommendations."
+      },
+      {
+        "question": "Is the Grammar Checker free?",
+        "answer": "Basic grammar and spell checking is free. Premium features like advanced style suggestions and plagiarism checking require a subscription."
+      }
+    ],
+    "seoDescription": "Check grammar and spelling online for free. Improve writing with AI-powered grammar suggestions. Support for multiple English dialects and style checking."
+  },
+  "paraphrasing-tool": {
+    "whatItIs": "The Paraphrasing Tool rewrites and rephrases text while preserving the original meaning. Essential for avoiding plagiarism, simplifying complex content, and improving writing clarity with multiple rewriting modes.",
+    "features": [
+      "Rewrite text while preserving meaning",
+      "Multiple rewriting modes and tones",
+      "Avoid plagiarism with unique phrasing",
+      "Simplify complex sentences",
+      "Maintain original length or shorten",
+      "Support for multiple languages",
+      "Batch process multiple paragraphs",
+      "Free basic paraphrasing"
+    ],
+    "howToUse": {
+      "name": "How to Use the Paraphrasing Tool",
+      "steps": [
+        {
+          "name": "Enter your text",
+          "text": "Paste the text you want to paraphrase. The tool accepts paragraphs, articles, or any length of content."
+        },
+        {
+          "name": "Choose rewriting mode",
+          "text": "Select the tone and style: standard, fluency, human-like, or academic. Choose whether to maintain or change the length."
+        },
+        {
+          "name": "Paraphrase the text",
+          "text": "Click paraphrase to generate rewritten versions. The tool produces multiple variations for you to choose from."
+        },
+        {
+          "name": "Review and copy",
+          "text": "Compare the paraphrased versions with your original. Select the one that best fits your needs and copy it for use."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does paraphrasing avoid plagiarism?",
+        "answer": "Paraphrasing helps restructure text while maintaining meaning, but always cite sources properly. The tool helps create unique phrasing but does not eliminate the need for attribution."
+      },
+      {
+        "question": "Will the meaning change?",
+        "answer": "The tool preserves the original meaning while changing wording and sentence structure. Review the output to ensure accuracy for technical or precise content."
+      },
+      {
+        "question": "Can I paraphrase academic content?",
+        "answer": "Yes, the academic mode is optimized for research papers, maintaining formal tone while rephrasing content appropriately."
+      },
+      {
+        "question": "Is the Paraphrasing Tool free?",
+        "answer": "Basic paraphrasing is free with daily limits. Premium plans offer unlimited usage and advanced modes."
+      }
+    ],
+    "seoDescription": "Paraphrase text online for free. Rewrite content while preserving meaning. Multiple modes for academic, fluent, and human-like rewriting."
+  },
+  "text-summarizer": {
+    "whatItIs": "The Text Summarizer condenses long articles, documents, and text into concise summaries using AI. Extract key points and main ideas from lengthy content for quick understanding and efficient information consumption.",
+    "features": [
+      "Summarize long text into key points",
+      "Adjustable summary length",
+      "Bullet point and paragraph modes",
+      "Preserve important details and context",
+      "Support for multiple languages",
+      "Extract keywords automatically",
+      "Batch summarize multiple texts",
+      "Free basic summarization"
+    ],
+    "howToUse": {
+      "name": "How to Use the Text Summarizer",
+      "steps": [
+        {
+          "name": "Enter your text",
+          "text": "Paste the article, document, or long text you want to summarize. The tool works best with content over 200 words."
+        },
+        {
+          "name": "Choose summary length",
+          "text": "Select short, medium, or long summary. Choose between paragraph format or bullet points for easier reading."
+        },
+        {
+          "name": "Generate summary",
+          "text": "Click summarize to create a condensed version. The AI extracts the most important information while preserving context."
+        },
+        {
+          "name": "Review and copy",
+          "text": "Read the summary to ensure it captures the key points. Copy it for notes, research, or quick reference."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How long does the summary need to be?",
+        "answer": "The tool works best with content over 200 words. It can handle articles, research papers, reports, and any lengthy text. Very short texts may not need summarization."
+      },
+      {
+        "question": "Does it preserve important details?",
+        "answer": "Yes, the AI identifies and preserves key facts, conclusions, and essential details while removing redundant information and examples."
+      },
+      {
+        "question": "Can I summarize in different languages?",
+        "answer": "Yes, the tool supports multiple languages for both input and output. The summary maintains the original language unless you specify otherwise."
+      },
+      {
+        "question": "Is the Text Summarizer free?",
+        "answer": "Basic summarization is free with daily limits. Premium plans offer longer texts and advanced AI models for better quality summaries."
+      }
+    ],
+    "seoDescription": "Summarize text online for free using AI. Condense long articles and documents into concise summaries. Extract key points instantly."
+  },
+  "binary-translator": {
+    "whatItIs": "The Binary Translator converts text to binary code and binary back to text. Perfect for learning binary encoding, creating binary art, understanding computer data representation, and encoding secret messages.",
+    "features": [
+      "Convert text to binary code",
+      "Decode binary to readable text",
+      "Support for ASCII and UTF-8",
+      "Show binary representation with spacing",
+      "Real-time conversion as you type",
+      "Copy binary or text output",
+      "Educational explanations",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the Binary Translator",
+      "steps": [
+        {
+          "name": "Enter text or binary",
+          "text": "Type or paste regular text to convert to binary, or paste binary code to decode to text. The tool detects the input format automatically."
+        },
+        {
+          "name": "Choose conversion mode",
+          "text": "Select text to binary or binary to text. The tool also supports ASCII-specific conversion for learning purposes."
+        },
+        {
+          "name": "View the result",
+          "text": "See the converted output instantly. Binary code is displayed with spaces for readability."
+        },
+        {
+          "name": "Copy and use",
+          "text": "Copy the converted output. Use binary code for encoding messages, learning, or creative projects."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is binary code?",
+        "answer": "Binary code is the fundamental language of computers, using only 0s and 1s. Each character in text is represented by an 8-bit binary number (ASCII or UTF-8 encoding)."
+      },
+      {
+        "question": "Does it support special characters?",
+        "answer": "Yes, the tool supports ASCII and extended ASCII characters including letters, numbers, punctuation, and common symbols."
+      },
+      {
+        "question": "Can I encode secret messages?",
+        "answer": "Yes, you can convert messages to binary for fun or educational purposes. Binary encoding is not secure encryption, but it works for casual secret messaging."
+      },
+      {
+        "question": "Is the Binary Translator free?",
+        "answer": "Yes, converting between text and binary is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert text to binary and binary to text online for free. Learn ASCII and UTF-8 encoding. Educational binary translator for students and developers."
+  },
+  "htpasswd-generator": {
+    "whatItIs": "The Htpasswd Generator creates secure password hashes for Apache HTTP Basic Authentication. Generate bcrypt, MD5, SHA1, and crypt encrypted passwords for protecting directories and websites with .htaccess files.",
+    "features": [
+      "Generate Apache htpasswd hashes",
+      "Support for bcrypt, MD5, SHA1, crypt",
+      "Secure password hashing",
+      "Generate for single or multiple users",
+      "Copy htpasswd format output",
+      "Show password strength",
+      "Free unlimited generation",
+      "Works offline in browser"
+    ],
+    "howToUse": {
+      "name": "How to Use the Htpasswd Generator",
+      "steps": [
+        {
+          "name": "Enter username and password",
+          "text": "Type the username and password you want to protect. The tool will generate the htpasswd hash for this user."
+        },
+        {
+          "name": "Select hash algorithm",
+          "text": "Choose bcrypt for maximum security or MD5/SHA1 for compatibility with older Apache versions. Bcrypt is recommended for new setups."
+        },
+        {
+          "name": "Generate htpasswd entry",
+          "text": "Click generate to create the htpasswd format string. The output includes username:hashedpassword format."
+        },
+        {
+          "name": "Copy and configure",
+          "text": "Copy the generated line and add it to your .htpasswd file. Configure your .htaccess file to protect the desired directory."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is htpasswd used for?",
+        "answer": "Htpasswd files store username and hashed password pairs for Apache HTTP Basic Authentication. They protect web directories by requiring a username and password to access them."
+      },
+      {
+        "question": "Which hash algorithm should I use?",
+        "answer": "Use bcrypt (apr1) for best security. MD5 is faster but less secure. SHA1 and crypt are older formats mainly for compatibility with legacy systems."
+      },
+      {
+        "question": "Is my password stored anywhere?",
+        "answer": "No, the tool generates the hash locally in your browser. Your password is never sent to any server or stored anywhere."
+      },
+      {
+        "question": "Is the Htpasswd Generator free?",
+        "answer": "Yes, generating htpasswd hashes is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate Apache htpasswd passwords online for free. Create secure bcrypt, MD5, and SHA1 hashes for HTTP Basic Authentication and .htaccess protection."
+  },
+  "htaccess-generator": {
+    "whatItIs": "The Htaccess Generator creates Apache .htaccess configuration files for URL redirects, security rules, caching, and server configurations. Generate clean, production-ready .htaccess rules without manually writing complex directives.",
+    "features": [
+      "Generate URL redirect rules",
+      "Create security and access rules",
+      "Configure browser caching headers",
+      "Set up custom error pages",
+      "Block IP addresses and user agents",
+      "Force HTTPS and WWW redirects",
+      "Enable compression",
+      "Free unlimited generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Htaccess Generator",
+      "steps": [
+        {
+          "name": "Select configuration type",
+          "text": "Choose the type of .htaccess rules you need: redirects, security, caching, compression, or custom configurations."
+        },
+        {
+          "name": "Configure options",
+          "text": "Enter the specific parameters for your configuration. For redirects, specify source and destination URLs. For security, set access rules."
+        },
+        {
+          "name": "Generate .htaccess code",
+          "text": "Click generate to create the .htaccess directives. The tool produces clean, well-commented code ready to use."
+        },
+        {
+          "name": "Copy and deploy",
+          "text": "Copy the generated code to your .htaccess file. Upload it to your web server's root directory or the directory you want to configure."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What can .htaccess files do?",
+        "answer": ".htaccess files control Apache server behavior including URL redirects, access control, caching, compression, custom error pages, and security rules on a per-directory basis."
+      },
+      {
+        "question": "Will these rules work on Nginx?",
+        "answer": "No, .htaccess files are specific to Apache servers. Nginx uses different configuration files (nginx.conf). Check the Nginx Config Generator for Nginx rules."
+      },
+      {
+        "question": "Can I combine multiple rule types?",
+        "answer": "Yes, you can generate multiple sets of rules and combine them in one .htaccess file. Be careful with conflicting directives."
+      },
+      {
+        "question": "Is the Htaccess Generator free?",
+        "answer": "Yes, generating .htaccess configuration code is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate Apache .htaccess files online for free. Create URL redirects, security rules, caching, and server configurations. Production-ready code."
+  },
+  "http-status-code-checker": {
+    "whatItIs": "The HTTP Status Code Checker verifies HTTP response codes for URLs, checking for 200 OK, 301 redirects, 404 errors, and 500 server errors. Essential for SEO audits, website monitoring, and link validation.",
+    "features": [
+      "Check HTTP status codes for URLs",
+      "Detect redirects and chains",
+      "Identify 404 and 500 errors",
+      "Batch check multiple URLs",
+      "Show response headers",
+      "Track redirect chains",
+      "Export results to CSV",
+      "Free unlimited checks"
+    ],
+    "howToUse": {
+      "name": "How to Use the HTTP Status Code Checker",
+      "steps": [
+        {
+          "name": "Enter URLs to check",
+          "text": "Type or paste the URLs you want to check. You can check one URL at a time or paste a list for batch checking."
+        },
+        {
+          "name": "Check status codes",
+          "text": "Click the check button. The tool fetches each URL and displays the HTTP status code along with response headers."
+        },
+        {
+          "name": "Review results",
+          "text": "See the status code for each URL: 200 (OK), 301/302 (redirect), 404 (not found), 500 (server error), etc. Follow redirect chains if present."
+        },
+        {
+          "name": "Export or fix issues",
+          "text": "Export the results for your SEO audit. Fix any 404 errors, update redirects, or address server errors based on the findings."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What HTTP status codes can it detect?",
+        "answer": "The tool detects all standard HTTP status codes including 200 OK, 301/302 redirects, 400/401/403 errors, 404 Not Found, and 500/503 server errors."
+      },
+      {
+        "question": "Does it show redirect chains?",
+        "answer": "Yes, the tool follows redirect chains and shows each hop in the chain, helping you identify redirect loops or excessive hops that affect SEO."
+      },
+      {
+        "question": "Can I check multiple URLs at once?",
+        "answer": "Yes, batch checking is supported. Paste a list of URLs and get status codes for all of them in a single operation."
+      },
+      {
+        "question": "Is the HTTP Status Code Checker free?",
+        "answer": "Yes, checking HTTP status codes is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Check HTTP status codes online for free. Verify 200, 301, 404, and 500 responses for SEO audits. Batch URL checking with redirect chain tracking."
+  },
+  "server-status-checker": {
+    "whatItIs": "The Server Status Checker monitors website and server availability by checking HTTP response codes, response times, and server headers. Detect downtime, performance issues, and server problems instantly.",
+    "features": [
+      "Check website uptime status",
+      "Measure server response time",
+      "Detect server downtime",
+      "Monitor HTTP response codes",
+      "Check from multiple locations",
+      "Show server headers info",
+      "Set up monitoring alerts",
+      "Free basic monitoring"
+    ],
+    "howToUse": {
+      "name": "How to Use the Server Status Checker",
+      "steps": [
+        {
+          "name": "Enter website URL",
+          "text": "Type or paste the website URL you want to check. Enter the full URL including https:// for accurate results."
+        },
+        {
+          "name": "Check server status",
+          "text": "Click check to test the server. The tool sends a request and measures response time and status code."
+        },
+        {
+          "name": "Review results",
+          "text": "See whether the server is online, response time in milliseconds, HTTP status code, and any error messages encountered."
+        },
+        {
+          "name": "Monitor continuously",
+          "text": "Set up periodic checks to monitor uptime. Enable alerts to be notified when your server goes down."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What does the server status check measure?",
+        "answer": "The tool measures HTTP response code, response time (latency), server headers, and whether the website is accessible from the internet."
+      },
+      {
+        "question": "What do different status codes mean?",
+        "answer": "200 means the server is up and responding correctly. 500 series errors indicate server problems. 404 means the specific page is not found but the server is running."
+      },
+      {
+        "question": "Can I monitor multiple servers?",
+        "answer": "Yes, you can add multiple URLs to monitor. Premium plans offer more monitoring slots and more frequent check intervals."
+      },
+      {
+        "question": "Is the Server Status Checker free?",
+        "answer": "Basic server status checking is free. Advanced monitoring with alerts and historical data requires a premium subscription."
+      }
+    ],
+    "seoDescription": "Check server status and uptime online for free. Monitor website availability and response times. Detect downtime and server errors instantly."
+  },
+  "hosting-checker": {
+    "whatItIs": "The Hosting Checker identifies the web hosting provider, server location, CDN, and technology stack for any website. Useful for competitive analysis, vendor research, and understanding what technologies power websites you admire.",
+    "features": [
+      "Identify hosting provider",
+      "Show server location and IP",
+      "Detect CDN services",
+      "Analyze technology stack",
+      "Show SSL certificate info",
+      "Detect CMS and frameworks",
+      "Compare with competitors",
+      "Free unlimited lookups"
+    ],
+    "howToUse": {
+      "name": "How to Use the Hosting Checker",
+      "steps": [
+        {
+          "name": "Enter website URL",
+          "text": "Type or paste the domain name of the website you want to analyze. Enter the domain without http:// or www."
+        },
+        {
+          "name": "Analyze the website",
+          "text": "Click the check button. The tool performs DNS lookups and analyzes HTTP headers to identify hosting and technology details."
+        },
+        {
+          "name": "Review hosting details",
+          "text": "See the hosting provider, server location, CDN service, SSL certificate details, and detected technologies like CMS and frameworks."
+        },
+        {
+          "name": "Use the information",
+          "text": "Use the hosting details for research, migration planning, or competitive analysis of websites in your niche."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does the hosting checker work?",
+        "answer": "The tool performs DNS lookups, analyzes HTTP response headers, and examines SSL certificates to identify the hosting provider, server software, and CDN services."
+      },
+      {
+        "question": "Can it detect WordPress and other CMS?",
+        "answer": "Yes, the tool detects common CMS platforms like WordPress, Joomla, Drupal, and Shopify by analyzing HTML structure, meta tags, and file paths."
+      },
+      {
+        "question": "Is the hosting information accurate?",
+        "answer": "The tool provides best-effort detection based on publicly available data. Some hosting providers use CDNs or reverse proxies that may mask the actual hosting provider."
+      },
+      {
+        "question": "Is the Hosting Checker free?",
+        "answer": "Yes, checking website hosting details is completely free with unlimited lookups."
+      }
+    ],
+    "seoDescription": "Check website hosting provider and server details online for free. Identify hosting, CDN, SSL, and technology stack for any domain. Competitive analysis tool."
+  }
+}

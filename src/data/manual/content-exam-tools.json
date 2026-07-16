@@ -1,0 +1,267 @@
+{
+  "loan-amortization-calculator": {
+    "whatItIs": "The Loan Amortization Calculator generates a detailed payment schedule showing how each EMI payment splits between principal and interest over the entire loan term. Visualize your loan payoff progress and understand the true cost of borrowing.",
+    "features": [
+      "Generate complete amortization schedule",
+      "Show principal vs interest breakdown",
+      "Calculate remaining balance after each payment",
+      "Support for different loan types",
+      "Include extra payment impact",
+      "Export schedule as CSV",
+      "Visual chart of balance reduction",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the Loan Amortization Calculator",
+      "steps": [
+        {
+          "name": "Enter loan details",
+          "text": "Input the loan amount, interest rate, and loan term in years or months. These are the standard parameters from your loan agreement."
+        },
+        {
+          "name": "Calculate amortization",
+          "text": "Click calculate to generate the full amortization schedule. The tool computes each payment's principal and interest portions."
+        },
+        {
+          "name": "Review the schedule",
+          "text": "Browse the year-by-year or month-by-month breakdown. See how the principal portion increases over time while interest decreases."
+        },
+        {
+          "name": "Export or analyze",
+          "text": "Download the schedule as CSV for your records. Use extra payment options to see how prepayments accelerate payoff."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is loan amortization?",
+        "answer": "Amortization is the process of paying off a loan through regular payments over time. Each payment covers both interest and principal, with the proportion changing over the loan term."
+      },
+      {
+        "question": "Why does the interest portion decrease over time?",
+        "answer": "Interest is calculated on the remaining loan balance. As you pay down the principal, less interest accrues each period, so more of your payment goes toward principal."
+      },
+      {
+        "question": "Can I see the effect of extra payments?",
+        "answer": "Yes, enter extra monthly or one-time payments to see how they reduce the loan term and total interest. Small extra payments can save thousands over the loan life."
+      },
+      {
+        "question": "Is the Amortization Calculator free?",
+        "answer": "Yes, generating amortization schedules is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Generate loan amortization schedule online for free. View principal vs interest breakdown for each EMI payment. Calculate remaining balance and payoff timeline."
+  },
+  "compound-interest-calculator": {
+    "whatItIs": "The Compound Interest Calculator computes the future value of investments with compound growth over time. Shows how your money grows with regular contributions and varying interest rates for savings, investments, and retirement planning.",
+    "features": [
+      "Calculate compound interest growth",
+      "Support for regular contributions",
+      "Show total contributions and total interest",
+      "Adjustable compounding frequency",
+      "Generate growth chart",
+      "Compare simple vs compound interest",
+      "Calculate time to reach goals",
+      "Free unlimited calculations"
+    ],
+    "howToUse": {
+      "name": "How to Use the Compound Interest Calculator",
+      "steps": [
+        {
+          "name": "Enter initial investment",
+          "text": "Input the principal amount you are starting with. This is your initial deposit or current savings balance."
+        },
+        {
+          "name": "Set contribution and rate",
+          "text": "Enter the monthly or yearly contribution amount and the expected annual interest rate. Choose the compounding frequency."
+        },
+        {
+          "name": "Set time period",
+          "text": "Choose the investment period in years. Longer timeframes show the dramatic effect of compound growth."
+        },
+        {
+          "name": "View growth projection",
+          "text": "See the total future value, total contributions, and total interest earned. Review the year-by-year growth chart."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is compound interest?",
+        "answer": "Compound interest is interest calculated on the initial principal and all accumulated interest from previous periods. It causes investments to grow exponentially over time."
+      },
+      {
+        "question": "How does compounding frequency affect returns?",
+        "answer": "More frequent compounding (monthly vs yearly) yields higher returns. The difference increases with higher rates and longer time periods."
+      },
+      {
+        "question": "Can I calculate returns for SIP or recurring deposits?",
+        "answer": "Yes, enter regular monthly or yearly contributions to calculate returns for SIPs, recurring deposits, and regular investment plans."
+      },
+      {
+        "question": "Is the Compound Interest Calculator free?",
+        "answer": "Yes, all compound interest calculations are completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Calculate compound interest online for free. Compute investment growth with regular contributions. Plan savings and retirement with compound growth projections."
+  },
+  "invoice-generator-india": {
+    "whatItIs": "The India Invoice Generator creates professional GST-compliant invoices for businesses and freelancers. Generate invoices with CGST, SGST, IGST calculations, item descriptions, and company branding for billing clients in India.",
+    "features": [
+      "Create GST-compliant invoices",
+      "Auto-calculate CGST, SGST, IGST",
+      "Add multiple items and quantities",
+      "Include business logo and details",
+      "Professional invoice templates",
+      "Download as PDF",
+      "Calculate totals and taxes automatically",
+      "Free unlimited invoices"
+    ],
+    "howToUse": {
+      "name": "How to Use the India Invoice Generator",
+      "steps": [
+        {
+          "name": "Enter business and client details",
+          "text": "Fill in your business name, address, GSTIN, and bank details. Add the client's name, address, and GSTIN if applicable."
+        },
+        {
+          "name": "Add invoice items",
+          "text": "List your products or services with descriptions, quantities, rates, and GST rates. The tool auto-calculates line totals."
+        },
+        {
+          "name": "Set tax and payment terms",
+          "text": "Choose whether to apply CGST+SGST for intrastate or IGST for interstate. Set payment terms and due dates."
+        },
+        {
+          "name": "Generate and download",
+          "text": "Click generate to create your invoice. Preview it and download as PDF for sending to clients or record keeping."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is this GST-compliant?",
+        "answer": "Yes, the invoice generator creates invoices that comply with GST regulations including HSN codes, GSTIN, tax calculations, and proper invoice numbering."
+      },
+      {
+        "question": "Can I add my business logo?",
+        "answer": "Yes, you can upload your business logo to appear on the invoice. Customize colors and layout to match your brand."
+      },
+      {
+        "question": "Does it calculate taxes automatically?",
+        "answer": "Yes, enter the GST rate for each item and the tool automatically calculates CGST, SGST, IGST, and total amounts."
+      },
+      {
+        "question": "Is the India Invoice Generator free?",
+        "answer": "Yes, generating invoices is completely free with unlimited usage. Premium features like recurring invoices may be available in paid plans."
+      }
+    ],
+    "seoDescription": "Generate GST invoices online for free. Create professional invoices with CGST, SGST, IGST auto-calculation for Indian businesses and freelancers. Download as PDF."
+  },
+  "ssc-photo-signature-resizer": {
+    "whatItIs": "The SSC Photo and Signature Resizer is specifically designed for SSC exam applicants. Resize and compress photos and signatures to meet the exact SSC CGL, CHSL, and MTS requirements for file size and dimensions.",
+    "features": [
+      "Resize photos to SSC required dimensions",
+      "Compress photos to exact KB limits",
+      "Resize and compress signatures",
+      "Support for JPG and PNG formats",
+      "Instant preview before download",
+      "Meet official SSC specifications",
+      "Batch process photo and signature",
+      "Free unlimited use"
+    ],
+    "howToUse": {
+      "name": "How to Use the SSC Photo and Signature Resizer",
+      "steps": [
+        {
+          "name": "Upload your photo",
+          "text": "Select your passport-sized photo. The tool accepts JPG, JPEG, and PNG formats. Make sure your face is clearly visible."
+        },
+        {
+          "name": "Resize to SSC specs",
+          "text": "The tool automatically resizes your photo to the required dimensions (typically 3.5cm x 4.5cm or as specified)."
+        },
+        {
+          "name": "Compress to required size",
+          "text": "The tool compresses your photo to the exact file size limit (typically 10-50KB) required by SSC. Your signature is also resized to 10-20KB."
+        },
+        {
+          "name": "Download both files",
+          "text": "Download the resized photo and signature. Both files meet the official SSC application requirements."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the SSC photo requirements?",
+        "answer": "SSC typically requires photos of 3.5cm x 4.5cm (or similar) in JPG/JPEG format, sized between 10-50KB. The background should be white or light-colored."
+      },
+      {
+        "question": "What are the signature requirements?",
+        "answer": "SSC requires signatures in JPG/JPEG format, sized between 10-20KB. The signature should be on a white background with black ink."
+      },
+      {
+        "question": "Can I use the same tool for other exams?",
+        "answer": "Yes, while optimized for SSC requirements, the resizer works for any exam that requires specific photo and signature dimensions."
+      },
+      {
+        "question": "Is the SSC Photo Signature Resizer free?",
+        "answer": "Yes, resizing and compressing photos and signatures for SSC is completely free with unlimited use."
+      }
+    ],
+    "seoDescription": "Resize SSC exam photos and signatures online for free. Compress to exact KB limits as per SSC CGL, CHSL, MTS requirements. Instant download."
+  },
+  "upsc-photo-resizer-350x350": {
+    "whatItIs": "The UPSC Photo Resizer 350x350 is specifically designed for UPSC exam applicants. Resize and compress your photo to exactly 350x350 pixels and the required file size for UPSC CSE application forms.",
+    "features": [
+      "Resize photos to exact 350x350 pixels",
+      "Compress to UPSC file size limits",
+      "Support for JPG and PNG formats",
+      "Instant preview of resized photo",
+      "Maintain aspect ratio and quality",
+      "Meet official UPSC specifications",
+      "Works on mobile and desktop",
+      "Free unlimited use"
+    ],
+    "howToUse": {
+      "name": "How to Use the UPSC Photo Resizer 350x350",
+      "steps": [
+        {
+          "name": "Upload your photo",
+          "text": "Select your passport-sized photo file. The tool accepts JPG, JPEG, and PNG formats up to the size limit."
+        },
+        {
+          "name": "Auto-resize to 350x350",
+          "text": "The tool automatically resizes your photo to exactly 350x350 pixels as required by UPSC. The aspect ratio is maintained."
+        },
+        {
+          "name": "Compress to required KB",
+          "text": "The tool compresses the photo to meet UPSC's file size requirement (typically 10KB-50KB) without losing quality."
+        },
+        {
+          "name": "Download the resized photo",
+          "text": "Preview the resized photo and download it. The file is ready to upload directly to the UPSC application portal."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the UPSC photo size requirement?",
+        "answer": "UPSC requires photos of exactly 350x350 pixels in JPG/JPEG format, typically sized between 10KB and 50KB. The photo should have a white or light background."
+      },
+      {
+        "question": "Will my photo quality be maintained?",
+        "answer": "Yes, the tool maintains good photo quality while resizing and compressing to meet UPSC requirements. You can preview before downloading."
+      },
+      {
+        "question": "Can I use this for other government exams?",
+        "answer": "Yes, the 350x350 resizer works for any exam or form requiring that specific dimension. Check the specific requirements for each exam."
+      },
+      {
+        "question": "Is the UPSC Photo Resizer free?",
+        "answer": "Yes, resizing photos for UPSC is completely free with unlimited use."
+      }
+    ],
+    "seoDescription": "Resize UPSC exam photos to 350x350 pixels online for free. Compress to required KB for UPSC CSE application. Instant download ready for upload."
+  }
+}

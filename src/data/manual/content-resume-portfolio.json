@@ -1,0 +1,160 @@
+{
+  "resume-builder": {
+    "whatItIs": "The Resume Builder creates professional resumes and CVs with customizable templates, formatting, and content suggestions. Build ATS-friendly resumes that stand out to recruiters and pass applicant tracking systems.",
+    "features": [
+      "Create professional resumes",
+      "ATS-friendly templates",
+      "Customizable sections and layouts",
+      "Content suggestions and examples",
+      "Multiple resume formats",
+      "Export as PDF or DOCX",
+      "Cover letter generator",
+      "Free basic resume creation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Resume Builder",
+      "steps": [
+        {
+          "name": "Choose a template",
+          "text": "Browse resume templates by industry and style. Select a clean, professional template optimized for ATS systems."
+        },
+        {
+          "name": "Enter your information",
+          "text": "Fill in your contact details, work experience, education, skills, and achievements. Use the content suggestions for effective bullet points."
+        },
+        {
+          "name": "Customize the design",
+          "text": "Adjust fonts, colors, section order, and spacing. Preview how your resume looks to recruiters and ATS systems."
+        },
+        {
+          "name": "Download your resume",
+          "text": "Download your resume as a PDF or DOCX file. Share it with employers or upload to job portals."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What makes a resume ATS-friendly?",
+        "answer": "ATS-friendly resumes use standard section headings, simple formatting without tables or graphics, standard fonts, and keywords from the job description. Avoid columns, text boxes, and unusual formatting."
+      },
+      {
+        "question": "Can I create a CV instead of a resume?",
+        "answer": "Yes, the tool supports both resumes (1-2 pages, focused) and CVs (detailed, academic or research-focused). Choose the format appropriate for your industry and region."
+      },
+      {
+        "question": "Does it check for ATS compatibility?",
+        "answer": "Premium plans include ATS scoring that analyzes your resume against job descriptions and suggests improvements for better compatibility."
+      },
+      {
+        "question": "Is the Resume Builder free?",
+        "answer": "Basic resume creation is free. Premium plans offer advanced templates, ATS scoring, cover letters, and multiple export formats."
+      }
+    ],
+    "seoDescription": "Build professional resumes online for free. Create ATS-friendly CVs with customizable templates. Download as PDF or DOCX for job applications."
+  },
+  "cover-letter-generator": {
+    "whatItIs": "The Cover Letter Generator creates professional cover letters tailored to specific job applications. Generate compelling cover letters that highlight your qualifications and match job requirements.",
+    "features": [
+      "Generate professional cover letters",
+      "Tailor to job descriptions",
+      "Multiple templates and styles",
+      "Highlight key qualifications",
+      "Show personality and culture fit",
+      "Export as PDF or DOCX",
+      "Free basic generation"
+    ],
+    "howToUse": {
+      "name": "How to Use the Cover Letter Generator",
+      "steps": [
+        {
+          "name": "Enter job details",
+          "text": "Paste the job description and enter the company name, position title, and hiring manager name if known."
+        },
+        {
+          "name": "Enter your background",
+          "text": "List your relevant experience, skills, and achievements. The tool uses this to personalize the cover letter."
+        },
+        {
+          "name": "Generate cover letter",
+          "text": "Click generate to create a tailored cover letter. The tool matches your qualifications with job requirements."
+        },
+        {
+          "name": "Edit and download",
+          "text": "Review the generated letter, make personal edits, and download as PDF or DOCX for submission."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How long should a cover letter be?",
+        "answer": "A cover letter should be 3-4 paragraphs and fit on one page. Keep it concise while highlighting your most relevant qualifications for the position."
+      },
+      {
+        "question": "Should I customize for each job?",
+        "answer": "Yes, customize your cover letter for each application. Mention the company name, specific job requirements, and how your skills match their needs."
+      },
+      {
+        "question": "Can I use AI-generated cover letters?",
+        "answer": "AI-generated cover letters provide a good starting point, but always review and personalize them. Add specific examples and your genuine voice to make it authentic."
+      },
+      {
+        "question": "Is the Cover Letter Generator free?",
+        "answer": "Basic cover letter generation is free. Premium plans offer multiple versions, A/B testing, and advanced personalization."
+      }
+    ],
+    "seoDescription": "Generate cover letters online for free. Create professional job application cover letters tailored to specific positions. Download as PDF or DOCX."
+  },
+  "portfolio-generator": {
+    "whatItIs": "The Portfolio Generator creates professional portfolio websites for showcasing your work, projects, and skills. Build a personal portfolio with customizable templates, project galleries, and contact forms.",
+    "features": [
+      "Create portfolio websites",
+      "Customizable templates",
+      "Project gallery and case studies",
+      "Add resume and bio sections",
+      "Contact form integration",
+      "Mobile-responsive design",
+      "Custom domain support",
+      "Free basic portfolio"
+    ],
+    "howToUse": {
+      "name": "How to Use the Portfolio Generator",
+      "steps": [
+        {
+          "name": "Choose a template",
+          "text": "Select a portfolio template matching your profession: designer, developer, writer, photographer, or general professional."
+        },
+        {
+          "name": "Add your content",
+          "text": "Upload project images, write project descriptions, add your bio, resume, and contact information. Organize projects by category."
+        },
+        {
+          "name": "Customize design",
+          "text": "Change colors, fonts, and layout to match your personal brand. Set up a custom domain if desired."
+        },
+        {
+          "name": "Publish your portfolio",
+          "text": "Preview your portfolio and publish it online. Share the link with employers, clients, and on social media."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What should I include in my portfolio?",
+        "answer": "Include your best 4-8 projects with descriptions, your skills, about me section, resume, and contact information. Quality matters more than quantity."
+      },
+      {
+        "question": "Can I use my own domain?",
+        "answer": "Yes, premium plans support custom domains. Connect your portfolio to example.com or any domain you own."
+      },
+      {
+        "question": "Is the portfolio mobile-friendly?",
+        "answer": "Yes, all templates are fully responsive and look great on mobile devices, tablets, and desktops."
+      },
+      {
+        "question": "Is the Portfolio Generator free?",
+        "answer": "Basic portfolio creation is free. Premium plans offer custom domains, advanced features, and removal of branding."
+      }
+    ],
+    "seoDescription": "Create portfolio websites online for free. Build professional portfolios with project galleries and custom branding. Showcase your work to employers and clients."
+  }
+}

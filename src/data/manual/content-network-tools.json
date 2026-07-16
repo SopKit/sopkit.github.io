@@ -1,0 +1,158 @@
+{
+  "proxy-checker": {
+    "whatItIs": "The Proxy Checker detects whether you are using a proxy or VPN and shows your apparent IP address and location. Verify your anonymity settings and ensure your proxy configuration is working correctly.",
+    "features": [
+      "Detect proxy and VPN usage",
+      "Show apparent IP address",
+      "Display proxy location",
+      "Check proxy type (HTTP, SOCKS)",
+      "Show real vs apparent IP",
+      "Test proxy anonymity level",
+      "Free unlimited checks"
+    ],
+    "howToUse": {
+      "name": "How to Use the Proxy Checker",
+      "steps": [
+        {
+          "name": "Visit the tool page",
+          "text": "Open the Proxy Checker tool. Your connection information is detected automatically without any input required."
+        },
+        {
+          "name": "View proxy status",
+          "text": "See whether you are connected through a proxy or VPN. Check the apparent IP address, location, and ISP shown to websites."
+        },
+        {
+          "name": "Compare real vs apparent",
+          "text": "Compare your real IP with the apparent IP seen by websites. Verify that your proxy is masking your actual location."
+        },
+        {
+          "name": "Test anonymity",
+          "text": "Check the anonymity level of your proxy connection. Transparent proxies reveal your real IP, while elite proxies provide maximum anonymity."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does the proxy checker work?",
+        "answer": "The tool analyzes HTTP headers, IP addresses, and connection properties to detect proxy and VPN usage. It compares your apparent IP with known proxy/VPN ranges."
+      },
+      {
+        "question": "What types of proxies does it detect?",
+        "answer": "The tool detects HTTP proxies, HTTPS proxies, SOCKS proxies, VPN connections, and Tor exit nodes. It also identifies transparent, anonymous, and elite proxy types."
+      },
+      {
+        "question": "Can I test if my VPN is working?",
+        "answer": "Yes, visit the tool while connected to your VPN. If the apparent IP and location differ from your real location, your VPN is masking your connection correctly."
+      },
+      {
+        "question": "Is the Proxy Checker free?",
+        "answer": "Yes, checking proxy and VPN status is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Check proxy and VPN status online for free. Detect if you are using a proxy, verify anonymity level, and compare real vs apparent IP addresses."
+  },
+  "ipv6-checker": {
+    "whatItIs": "The IPv6 Checker detects whether your internet connection and browser support IPv6, the next-generation internet protocol. Check IPv6 connectivity, assigned addresses, and protocol compatibility.",
+    "features": [
+      "Detect IPv6 support",
+      "Show IPv6 address",
+      "Check IPv6 connectivity",
+      "Compare IPv4 and IPv6",
+      "Show protocol details",
+      "Test IPv6-only websites",
+      "Free unlimited checks"
+    ],
+    "howToUse": {
+      "name": "How to Use the IPv6 Checker",
+      "steps": [
+        {
+          "name": "Visit the tool page",
+          "text": "Open the IPv6 Checker. Your connection is automatically analyzed for IPv6 support and connectivity."
+        },
+        {
+          "name": "View IPv6 status",
+          "text": "See whether your connection supports IPv6. Check your IPv6 address, connectivity status, and protocol details."
+        },
+        {
+          "name": "Compare IPv4 and IPv6",
+          "text": "Review both your IPv4 and IPv6 addresses. Check if you have native IPv6 or are using tunneling/translation technologies."
+        },
+        {
+          "name": "Test connectivity",
+          "text": "Use the IPv6 connectivity test to verify that you can reach IPv6-only websites and services."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is IPv6?",
+        "answer": "IPv6 (Internet Protocol version 6) is the latest version of the Internet Protocol. It provides a much larger address space than IPv4 and is designed to replace IPv4 as the internet runs out of addresses."
+      },
+      {
+        "question": "Why does IPv6 matter?",
+        "answer": "IPv6 enables more devices to connect to the internet and offers improvements in security and routing. Many new services and networks require IPv6 connectivity."
+      },
+      {
+        "question": "How can I get IPv6?",
+        "answer": "Most modern ISPs support IPv6 automatically. If your ISP does not support IPv6, you can use tunnel brokers or transition technologies like 6to4 or Teredo."
+      },
+      {
+        "question": "Is the IPv6 Checker free?",
+        "answer": "Yes, checking IPv6 support and connectivity is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Check IPv6 support and connectivity online for free. Detect IPv6 address and protocol compatibility. Test your internet connection for IPv6 readiness."
+  },
+  "isp-lookup": {
+    "whatItIs": "The ISP Lookup tool identifies your Internet Service Provider, IP address range, and connection details. Useful for troubleshooting network issues, verifying VPN connections, and understanding your internet connection.",
+    "features": [
+      "Identify your ISP name",
+      "Show IP address and range",
+      "Display connection type",
+      "Show approximate location",
+      "Detect VPN or proxy usage",
+      "Show AS number and organization",
+      "Free unlimited lookups"
+    ],
+    "howToUse": {
+      "name": "How to Use the ISP Lookup Tool",
+      "steps": [
+        {
+          "name": "Visit the tool page",
+          "text": "Open the ISP Lookup tool. Your ISP information is detected automatically from your IP address."
+        },
+        {
+          "name": "View ISP details",
+          "text": "See your ISP name, IP address, AS number, organization, and approximate location. Check connection type and network details."
+        },
+        {
+          "name": "Verify VPN status",
+          "text": "Check if your connection shows your real ISP or a VPN/proxy provider. Compare with your expected ISP."
+        },
+        {
+          "name": "Use for troubleshooting",
+          "text": "Use the ISP information for network troubleshooting, geolocation verification, or understanding your connection details."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What information does ISP lookup show?",
+        "answer": "The tool shows your ISP name, IP address, autonomous system number (ASN), organization name, connection type, and approximate geographic location."
+      },
+      {
+        "question": "How accurate is ISP detection?",
+        "answer": "ISP detection is accurate based on IP address allocation databases. It shows the organization providing your internet connection, though resellers and MVNOs may show the parent network."
+      },
+      {
+        "question": "Can this detect VPNs?",
+        "answer": "Yes, the tool shows if your apparent ISP is a known VPN or proxy provider. Compare the displayed ISP with your actual internet provider."
+      },
+      {
+        "question": "Is the ISP Lookup free?",
+        "answer": "Yes, looking up ISP information is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Lookup ISP information online for free. Identify your Internet Service Provider, IP address, and connection details. Verify VPN and proxy connections."
+  }
+}

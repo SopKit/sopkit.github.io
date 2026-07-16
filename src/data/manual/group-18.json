@@ -1,0 +1,33 @@
+{
+  "group": 18,
+  "name": "youtube",
+  "tools": [
+    "youtube-channel-age-checker",
+    "youtube-channel-finder",
+    "youtube-channel-id-extractor",
+    "youtube-playlist-link-extractor",
+    "youtube-channel-statistics",
+    "youtube-comment-picker",
+    "youtube-description-extractor",
+    "youtube-embed-code-generator",
+    "youtube-hashtag-extractor",
+    "youtube-hashtag-generator",
+    "youtube-money-calculator",
+    "youtube-region-restriction-checker",
+    "youtube-subscribe-link-generator",
+    "youtube-tag-extractor",
+    "youtube-tag-generator",
+    "youtube-timestamp-link-generator",
+    "youtube-title-extractor",
+    "youtube-title-length-checker",
+    "youtube-video-count-checker",
+    "youtube-video-statistics",
+    "youtube-title-capitalizer",
+    "youtube-views-ratio-calculator",
+    "youtube-title-generator",
+    "youtube-description-generator",
+    "youtube-thumbnail-text-generator",
+    "youtube-thumbnail-downloader",
+    "youtube-video-downloader"
+  ]
+}

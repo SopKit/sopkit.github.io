@@ -1,0 +1,161 @@
+{
+  "sql-to-csv": {
+    "whatItIs": "The SQL to CSV Converter exports SQL query results to CSV format for data analysis, reporting, and spreadsheet use. Run SQL queries against databases or paste SQL results and export to clean, formatted CSV files.",
+    "features": [
+      "Convert SQL results to CSV",
+      "Support for major SQL dialects",
+      "Handle complex query results",
+      "Export with headers",
+      "Choose delimiter and encoding",
+      "Batch export multiple queries",
+      "Download as CSV file",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the SQL to CSV Converter",
+      "steps": [
+        {
+          "name": "Enter SQL query or results",
+          "text": "Paste your SQL query or query results. You can also upload CSV exports from database tools."
+        },
+        {
+          "name": "Configure CSV options",
+          "text": "Set the delimiter, encoding, and whether to include column headers. Choose quoting rules for text fields."
+        },
+        {
+          "name": "Convert to CSV",
+          "text": "Click convert to transform the SQL results to CSV format. The tool handles NULL values and special characters correctly."
+        },
+        {
+          "name": "Download CSV",
+          "text": "Download the CSV file and open it in Excel, Google Sheets, or any data analysis tool."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need a database connection?",
+        "answer": "No, you can paste SQL query results directly. If you have a database connection, some versions support direct query execution."
+      },
+      {
+        "question": "What SQL dialects are supported?",
+        "answer": "The tool handles standard SQL results. It works with results from MySQL, PostgreSQL, SQL Server, SQLite, and other databases since CSV format is universal."
+      },
+      {
+        "question": "Can I export large query results?",
+        "answer": "Yes, the tool handles large result sets. Very large exports may take longer and could be limited by browser memory."
+      },
+      {
+        "question": "Is the SQL to CSV Converter free?",
+        "answer": "Yes, converting SQL results to CSV is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert SQL query results to CSV online for free. Export database data to spreadsheet format for analysis and reporting. Support for all major SQL dialects."
+  },
+  "csv-to-tsv": {
+    "whatItIs": "The CSV to TSV Converter transforms comma-separated values into tab-separated values format. TSV is simpler and more reliable for data interchange, avoiding issues with commas in data fields.",
+    "features": [
+      "Convert CSV to TSV format",
+      "Handle commas in data fields",
+      "Batch convert multiple files",
+      "Choose encoding format",
+      "Preview converted data",
+      "Download TSV files",
+      "Preserve data integrity",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the CSV to TSV Converter",
+      "steps": [
+        {
+          "name": "Upload CSV file",
+          "text": "Select your CSV file or paste CSV text. The tool detects the delimiter and parses the data structure."
+        },
+        {
+          "name": "Configure TSV options",
+          "text": "Set the output encoding and any special handling for quotes or line breaks within fields."
+        },
+        {
+          "name": "Convert to TSV",
+          "text": "Click convert to transform the CSV to tab-separated format. The tool replaces commas with tabs as field separators."
+        },
+        {
+          "name": "Download TSV file",
+          "text": "Download the TSV file for use in data processing, spreadsheets, or programming applications."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is TSV format?",
+        "answer": "TSV (Tab-Separated Values) is a simple text format where columns are separated by tab characters instead of commas. It is more reliable when data contains commas."
+      },
+      {
+        "question": "Why use TSV instead of CSV?",
+        "answer": "TSV avoids the need for quoting when data contains commas. This makes parsing simpler and reduces errors in programs that process tabular data."
+      },
+      {
+        "question": "Can I convert TSV back to CSV?",
+        "answer": "Yes, use the CSV to TSV converter in reverse mode or the general delimiter converter to switch between formats."
+      },
+      {
+        "question": "Is the CSV to TSV Converter free?",
+        "answer": "Yes, converting CSV to TSV is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert CSV to TSV online for free. Transform comma-separated values to tab-separated format. More reliable for data containing commas."
+  },
+  "sql-to-json": {
+    "whatItIs": "The SQL to JSON Converter transforms SQL query results into structured JSON format for APIs, web applications, and NoSQL databases. Convert relational query results to hierarchical JSON objects.",
+    "features": [
+      "Convert SQL results to JSON",
+      "Support for major SQL dialects",
+      "Handle nested result structures",
+      "Batch convert query results",
+      "Choose JSON formatting",
+      "Preserve data types",
+      "Download JSON files",
+      "Free unlimited conversions"
+    ],
+    "howToUse": {
+      "name": "How to Use the SQL to JSON Converter",
+      "steps": [
+        {
+          "name": "Enter SQL query or results",
+          "text": "Paste your SQL query or results from a database tool. The tool parses the tabular data and converts it to JSON."
+        },
+        {
+          "name": "Configure JSON options",
+          "text": "Choose JSON formatting: array of objects or object with IDs. Set indentation and data type handling."
+        },
+        {
+          "name": "Convert to JSON",
+          "text": "Click convert to transform the SQL results to structured JSON. The tool creates clean JSON from tabular data."
+        },
+        {
+          "name": "Download JSON file",
+          "text": "Copy or download the JSON file for use in your API, application, or NoSQL database."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does it handle NULL values?",
+        "answer": "Yes, SQL NULL values are converted to JSON null. You can configure the tool to skip NULL fields or convert them to empty strings."
+      },
+      {
+        "question": "Can I use SQL queries directly?",
+        "answer": "Some versions support direct database connections. The standard converter works with pasted SQL query results from any database tool."
+      },
+      {
+        "question": "What JSON structure does it create?",
+        "answer": "The tool creates an array of objects by default, where each row is a JSON object with column names as keys. You can also output as an object keyed by a unique column."
+      },
+      {
+        "question": "Is the SQL to JSON Converter free?",
+        "answer": "Yes, converting SQL to JSON is completely free with unlimited usage."
+      }
+    ],
+    "seoDescription": "Convert SQL to JSON online for free. Transform database query results to structured JSON for APIs and NoSQL. Support for all major SQL dialects."
+  }
+}

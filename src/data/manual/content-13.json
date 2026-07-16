@@ -1,0 +1,1405 @@
+{
+  "paint-calculator": {
+    "whatItIs": "The Paint Calculator helps you determine exactly how much paint you need for any painting project. Simply enter your wall dimensions and the calculator will estimate the paint quantity in liters and the total cost based on current paint prices.",
+    "features": [
+      "Calculate paint quantity for walls, ceilings, or any surface area",
+      "Estimate total cost based on paint price per liter",
+      "Adjust coverage rate for different paint types (emulsion, distemper, etc.)",
+      "Account for multiple coats with automatic quantity adjustment",
+      "Convert between square feet and square meters",
+      "Save and compare different paint brand scenarios",
+      "Mobile-friendly interface for on-site calculations",
+      "No signup or registration required"
+    ],
+    "howToUse": {
+      "name": "How to Use Paint Calculator",
+      "steps": [
+        {
+          "name": "Measure Your Space",
+          "text": "Enter the length and height of each wall or the total area you want to paint in square feet or square meters."
+        },
+        {
+          "name": "Select Paint Type",
+          "text": "Choose your paint type as the coverage rate varies between emulsion, distemper, and other paint varieties."
+        },
+        {
+          "name": "Set Number of Coats",
+          "text": "Specify how many coats you plan to apply - typically 2 coats for new walls, 1 coat for touch-ups."
+        },
+        {
+          "name": "Enter Paint Price",
+          "text": "Input the current price per liter of your chosen paint to get accurate cost estimates."
+        },
+        {
+          "name": "Get Results",
+          "text": "View the total paint quantity needed and estimated cost. Adjust inputs as needed for different scenarios."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How accurate is the paint quantity calculation?",
+        "answer": "The calculator uses standard coverage rates (typically 10-12 sq m per liter for emulsion). Actual coverage may vary based on surface texture and application method."
+      },
+      {
+        "question": "Can I calculate paint for multiple rooms at once?",
+        "answer": "Yes, you can either calculate each room separately and sum the totals, or add up all wall areas first and enter the combined measurement."
+      },
+      {
+        "question": "Does the calculator account for doors and windows?",
+        "answer": "You should subtract the area of doors and windows from your total wall area before entering the measurement for most accurate results."
+      },
+      {
+        "question": "What coverage rate should I use for exterior walls?",
+        "answer": "Exterior paints typically have lower coverage (8-10 sq m per liter) due to rougher surfaces. Adjust the coverage rate in the calculator accordingly."
+      },
+      {
+        "question": "Can I save my calculations for later?",
+        "answer": "All calculations are done in your browser, so you can bookmark the page with your inputs. For permanent storage, take a screenshot of your results."
+      }
+    ],
+    "seoDescription": "Free online paint calculator to estimate exact paint quantity and cost for walls and ceilings. Calculate liters needed based on area, paint type, and number of coats."
+  },
+  "tile-calculator": {
+    "whatItIs": "The Tile Calculator helps you determine the exact number of tiles needed for any flooring or wall tiling project. It accounts for tile size, room dimensions, and includes a waste percentage to ensure you order enough tiles.",
+    "features": [
+      "Calculate tiles needed for floors, walls, or backsplashes",
+      "Support for various tile sizes (cm, inches, feet)",
+      "Adjustable waste percentage (typically 5-10% for cuts and breakage)",
+      "Calculate both tile quantity and total cost",
+      "Visual layout preview for complex patterns",
+      "Convert between metric and imperial units",
+      "Save multiple scenarios for comparison",
+      "Works offline once loaded"
+    ],
+    "howToUse": {
+      "name": "How to Use Tile Calculator",
+      "steps": [
+        {
+          "name": "Enter Room Dimensions",
+          "text": "Input the length and width of your floor or wall area in your preferred unit of measurement."
+        },
+        {
+          "name": "Specify Tile Size",
+          "text": "Enter the dimensions of each tile. The calculator supports both square and rectangular tiles."
+        },
+        {
+          "name": "Set Waste Percentage",
+          "text": "Adjust the waste factor based on your layout complexity. Standard is 5% for simple layouts, 10% for diagonal or complex patterns."
+        },
+        {
+          "name": "Add Tile Price",
+          "text": "Optional: Enter the price per tile or per square foot to calculate total project cost."
+        },
+        {
+          "name": "Review Results",
+          "text": "See the exact number of tiles needed, including extras for cuts and breakage, plus total cost if price was entered."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How much waste percentage should I use?",
+        "answer": "For standard straight layouts, 5% is sufficient. For diagonal patterns or rooms with many corners, use 10%. For complex designs, consider 15%."
+      },
+      {
+        "question": "Can I calculate tiles for a wall with a window?",
+        "answer": "Yes, either subtract the window area from your total wall area before calculating, or calculate the full wall and manually adjust the final count."
+      },
+      {
+        "question": "Does the calculator account for grout lines?",
+        "answer": "The calculator assumes standard grout lines. For precise calculations with specific grout widths, you may need to adjust your tile size input slightly."
+      },
+      {
+        "question": "What if my tiles are sold in boxes?",
+        "answer": "The calculator shows total tiles needed. Check how many tiles come in each box and divide the total by that number to find how many boxes to purchase."
+      },
+      {
+        "question": "Can I use this for outdoor patios?",
+        "answer": "Absolutely. The same principles apply for outdoor tiling. You might want to increase the waste percentage to 10-15% for outdoor projects."
+      }
+    ],
+    "seoDescription": "Free tile calculator to determine exact number of tiles needed for floors and walls. Includes waste percentage and cost estimation for any tile size."
+  },
+  "compound-interest-calculator": {
+    "whatItIs": "The Compound Interest Calculator shows how your investments grow over time with compound interest. It demonstrates the powerful effect of earning interest on your interest, helping you plan for financial goals like retirement or education.",
+    "features": [
+      "Calculate future value with compound interest",
+      "Include regular monthly or annual contributions",
+      "Adjust compounding frequency (annually, semi-annually, quarterly, monthly)",
+      "Compare different interest rates side by side",
+      "Visual growth chart over time",
+      "Calculate how long to reach a financial goal",
+      "Account for initial principal and additional deposits",
+      "No personal data required"
+    ],
+    "howToUse": {
+      "name": "How to Use Compound Interest Calculator",
+      "steps": [
+        {
+          "name": "Enter Initial Investment",
+          "text": "Input your starting amount or current savings balance."
+        },
+        {
+          "name": "Set Interest Rate",
+          "text": "Enter the annual interest rate you expect to earn. Use realistic rates based on your investment type."
+        },
+        {
+          "name": "Choose Time Period",
+          "text": "Specify how many years you plan to invest. You can also enter a target amount to calculate the time needed."
+        },
+        {
+          "name": "Add Regular Contributions",
+          "text": "Optional: Enter any monthly or annual deposits you plan to make to see how they boost your returns."
+        },
+        {
+          "name": "View Growth Projection",
+          "text": "See your investment growth over time with a detailed breakdown of interest earned each period."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is compound interest?",
+        "answer": "Compound interest is when you earn interest on both your original investment and the accumulated interest from previous periods. This creates exponential growth over time."
+      },
+      {
+        "question": "How often is interest compounded?",
+        "answer": "The frequency varies by investment. Savings accounts often compound monthly, while some investments compound annually. More frequent compounding yields better returns."
+      },
+      {
+        "question": "Can I calculate for multiple investments?",
+        "answer": "Yes, run separate calculations for each investment and sum the results, or use the total of all investments as your initial principal."
+      },
+      {
+        "question": "Does this account for taxes on interest?",
+        "answer": "The calculator shows gross returns. For net returns, you would need to adjust the interest rate downward based on your tax bracket."
+      },
+      {
+        "question": "What rate should I use for stock market investments?",
+        "answer": "Historical stock market returns average 7-10% annually, but past performance doesn't guarantee future results. Use conservative estimates for planning."
+      }
+    ],
+    "seoDescription": "Free compound interest calculator to project investment growth over time. Calculate future value with regular contributions and different compounding frequencies."
+  },
+  "mortgage-calculator": {
+    "whatItIs": "The Mortgage Calculator helps you understand the financial commitment of a home loan. It breaks down your monthly payment into principal and interest, shows the total interest paid over the life of the loan, and helps you compare different loan scenarios.",
+    "features": [
+      "Calculate monthly mortgage payments",
+      "Breakdown of principal vs interest in each payment",
+      "Total interest paid over the loan term",
+      "Amortization schedule showing payment breakdown by year",
+      "Compare different loan terms (15-year vs 30-year)",
+      "Account for property taxes and homeowners insurance",
+      "Calculate impact of extra payments",
+      "No credit check or personal information required"
+    ],
+    "howToUse": {
+      "name": "How to Use Mortgage Calculator",
+      "steps": [
+        {
+          "name": "Enter Home Price",
+          "text": "Input the purchase price of the property you're considering."
+        },
+        {
+          "name": "Set Down Payment",
+          "text": "Enter the amount you can put down upfront. This affects your loan amount and monthly payment."
+        },
+        {
+          "name": "Input Interest Rate",
+          "text": "Enter the annual interest rate for your mortgage. Shop around for the best rates."
+        },
+        {
+          "name": "Choose Loan Term",
+          "text": "Select the length of your mortgage in years. Common terms are 15, 20, or 30 years."
+        },
+        {
+          "name": "Review Payment Details",
+          "text": "See your monthly payment breakdown, total interest, and amortization schedule. Adjust inputs to find the best scenario."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How much down payment do I need?",
+        "answer": "Conventional loans typically require 20% down to avoid private mortgage insurance. FHA loans may accept as little as 3.5% down."
+      },
+      {
+        "question": "What's the difference between 15-year and 30-year mortgages?",
+        "answer": "A 15-year mortgage has higher monthly payments but significantly less total interest paid. A 30-year mortgage has lower payments but costs more in interest over time."
+      },
+      {
+        "question": "Can I pay off my mortgage early?",
+        "answer": "Yes, most mortgages allow early payoff. Use the extra payment feature to see how additional payments reduce your term and interest."
+      },
+      {
+        "question": "Does the calculator include property taxes?",
+        "answer": "You can optionally include estimated property taxes to see the total monthly housing cost, but this varies by location."
+      },
+      {
+        "question": "What interest rate should I use?",
+        "answer": "Use the rate quoted by your lender. Rates vary based on credit score, loan type, and market conditions. Get pre-approved for the most accurate rate."
+      }
+    ],
+    "seoDescription": "Free mortgage calculator to estimate monthly payments, total interest, and amortization schedules. Compare different loan terms and down payment scenarios."
+  },
+  "car-loan-calculator": {
+    "whatItIs": "The Car Loan Calculator helps you understand the true cost of financing a vehicle. It calculates your monthly payment, total interest paid, and shows how different loan terms affect your overall cost.",
+    "features": [
+      "Calculate monthly car loan payments",
+      "Account for vehicle price, down payment, and trade-in value",
+      "Adjust loan term from 1 to 7 years",
+      "Compare different interest rates",
+      "See total interest paid over the life of the loan",
+      "Calculate loan payoff date",
+      "Account for sales tax on the vehicle",
+      "No personal information required"
+    ],
+    "howToUse": {
+      "name": "How to Use Car Loan Calculator",
+      "steps": [
+        {
+          "name": "Enter Vehicle Price",
+          "text": "Input the purchase price of the car you want to finance."
+        },
+        {
+          "name": "Set Down Payment",
+          "text": "Enter the amount you can pay upfront. A larger down payment reduces your loan amount and monthly payment."
+        },
+        {
+          "name": "Add Trade-In Value",
+          "text": "If you're trading in a vehicle, enter its estimated value to further reduce your loan amount."
+        },
+        {
+          "name": "Input Loan Terms",
+          "text": "Enter the interest rate and loan term in months or years. Typical car loans range from 36 to 84 months."
+        },
+        {
+          "name": "Review Loan Details",
+          "text": "See your monthly payment, total interest, and payoff date. Adjust terms to find the best fit for your budget."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What's a good interest rate for a car loan?",
+        "answer": "Rates vary based on credit score and lender. Excellent credit may get rates under 4%, while average credit might see 6-8%. Always shop around for the best rate."
+      },
+      {
+        "question": "How long should my car loan be?",
+        "answer": "Shorter terms (36-48 months) mean higher payments but less interest. Longer terms (60-84 months) have lower payments but cost more overall. Choose based on your budget."
+      },
+      {
+        "question": "Can I pay off my car loan early?",
+        "answer": "Most car loans allow early payoff, but some may have prepayment penalties. Check your loan agreement and use the calculator to see savings from early payoff."
+      },
+      {
+        "question": "Does the calculator include sales tax?",
+        "answer": "You can optionally include sales tax in the vehicle price or as a separate line item to see its impact on your loan amount."
+      },
+      {
+        "question": "What's the difference between APR and interest rate?",
+        "answer": "The interest rate is the cost of borrowing the principal. APR includes the interest rate plus other fees, giving you the true cost of the loan."
+      }
+    ],
+    "seoDescription": "Free car loan calculator to estimate monthly payments and total interest. Compare different loan terms, down payments, and interest rates for auto financing."
+  },
+  "roi-calculator": {
+    "whatItIs": "The ROI Calculator helps you evaluate the profitability of any investment. It calculates the return on investment percentage, showing how much you've gained (or lost) relative to your initial investment.",
+    "features": [
+      "Calculate ROI percentage for any investment",
+      "Determine net gain or loss in absolute terms",
+      "Calculate annualized ROI for multi-year investments",
+      "Compare different investment opportunities",
+      "Account for initial investment and final value",
+      "Include additional costs or income",
+      "Visual representation of investment growth",
+      "No financial data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use ROI Calculator",
+      "steps": [
+        {
+          "name": "Enter Initial Investment",
+          "text": "Input the amount you initially invested in the opportunity."
+        },
+        {
+          "name": "Enter Final Value",
+          "text": "Input the current value or selling price of your investment."
+        },
+        {
+          "name": "Set Time Period",
+          "text": "Specify how long you held the investment to calculate annualized returns."
+        },
+        {
+          "name": "Add Additional Costs",
+          "text": "Optional: Include any additional investments or costs associated with the opportunity."
+        },
+        {
+          "name": "View ROI Results",
+          "text": "See your return on investment percentage, net gain/loss, and annualized return. Compare with other opportunities."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a good ROI?",
+        "answer": "A good ROI depends on the risk level. Low-risk investments like bonds might return 2-5%. Stocks historically average 7-10%. High-risk opportunities may target 15%+."
+      },
+      {
+        "question": "How is ROI different from interest rate?",
+        "answer": "Interest rate is the return on a loan or savings. ROI measures the profitability of any investment, including business ventures, stocks, or real estate."
+      },
+      {
+        "question": "Can ROI be negative?",
+        "answer": "Yes, if your investment loses value, your ROI will be negative, indicating a loss rather than a gain."
+      },
+      {
+        "question": "Does ROI account for inflation?",
+        "answer": "Standard ROI calculations don't account for inflation. For real returns, you'd need to adjust the final value for inflation."
+      },
+      {
+        "question": "How do I calculate ROI for a business?",
+        "answer": "For a business, ROI is (Net Profit / Cost of Investment) x 100. Net profit is revenue minus all expenses. The calculator simplifies this calculation."
+      }
+    ],
+    "seoDescription": "Free ROI calculator to determine return on investment percentage. Calculate net gain, annualized returns, and compare different investment opportunities."
+  },
+  "savings-goal-calculator": {
+    "whatItIs": "The Savings Goal Calculator helps you determine how much you need to save each month to reach a specific financial target by a certain date. It accounts for any existing savings and potential interest earnings.",
+    "features": [
+      "Calculate monthly savings needed to reach any goal",
+      "Account for existing savings balance",
+      "Include potential interest on savings",
+      "Adjust time horizon for your target date",
+      "Compare different savings scenarios",
+      "Visual progress tracking",
+      "Calculate impact of different interest rates",
+      "No personal financial data required"
+    ],
+    "howToUse": {
+      "name": "How to Use Savings Goal Calculator",
+      "steps": [
+        {
+          "name": "Set Your Goal",
+          "text": "Enter the total amount you want to save. This could be for a vacation, down payment, emergency fund, or any other purpose."
+        },
+        {
+          "name": "Enter Current Savings",
+          "text": "Input any amount you've already saved toward this goal."
+        },
+        {
+          "name": "Set Target Date",
+          "text": "Specify when you want to reach your savings goal. This determines your time horizon."
+        },
+        {
+          "name": "Add Interest Rate",
+          "text": "Optional: Enter the expected interest rate on your savings to see how it reduces the amount you need to save."
+        },
+        {
+          "name": "Get Savings Plan",
+          "text": "See the exact amount you need to save each month to reach your goal on time, including how interest helps you get there faster."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How much should I save for an emergency fund?",
+        "answer": "Financial experts typically recommend 3-6 months of living expenses. Use the calculator to determine the monthly savings needed to reach this goal."
+      },
+      {
+        "question": "Can I adjust my goal amount later?",
+        "answer": "Yes, you can recalculate anytime with a new goal amount or timeframe. The calculator is flexible for changing circumstances."
+      },
+      {
+        "question": "What interest rate should I use?",
+        "answer": "Use the rate your savings account or investment earns. High-yield savings accounts might offer 1-2%, while investments could earn more but with more risk."
+      },
+      {
+        "question": "Does the calculator account for taxes on interest?",
+        "answer": "The calculator shows gross interest. For net savings, you'd need to adjust the interest rate based on your tax situation."
+      },
+      {
+        "question": "Can I save weekly instead of monthly?",
+        "answer": "Yes, calculate the monthly amount and divide by 4 for weekly savings. Some people prefer bi-weekly savings (monthly amount divided by 2)."
+      }
+    ],
+    "seoDescription": "Free savings goal calculator to determine monthly savings needed. Plan for any financial target with existing savings and potential interest earnings."
+  },
+  "tip-calculator": {
+    "whatItIs": "The Tip Calculator takes the guesswork out of tipping at restaurants. It calculates the appropriate tip amount based on your bill total and desired tip percentage, and can split the total among multiple people.",
+    "features": [
+      "Calculate tip amount based on bill total",
+      "Split bill and tip among multiple people",
+      "Adjust tip percentage (standard is 15-20%)",
+      "Calculate total amount per person",
+      "Round up to nearest dollar for convenience",
+      "Account for tax in the total",
+      "Quick percentage presets (10%, 15%, 18%, 20%)",
+      "No personal data required"
+    ],
+    "howToUse": {
+      "name": "How to Use Tip Calculator",
+      "steps": [
+        {
+          "name": "Enter Bill Amount",
+          "text": "Input the total of your restaurant bill before tax and tip."
+        },
+        {
+          "name": "Select Tip Percentage",
+          "text": "Choose your desired tip percentage. 15% is standard for decent service, 18-20% for excellent service."
+        },
+        {
+          "name": "Add Tax Amount",
+          "text": "Optional: Enter the tax amount if it's not included in your bill total."
+        },
+        {
+          "name": "Split the Bill",
+          "text": "Enter the number of people sharing the bill to see each person's share of the total including tip."
+        },
+        {
+          "name": "View Totals",
+          "text": "See the tip amount, total bill with tip, and each person's share. Adjust as needed."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What's an appropriate tip percentage?",
+        "answer": "15% is standard for good service. 18-20% is common for excellent service. Some high-end restaurants may expect 20% or more. Adjust based on service quality."
+      },
+      {
+        "question": "Should I tip on the pre-tax or post-tax amount?",
+        "answer": "It's customary to tip on the pre-tax amount (the subtotal). However, some people prefer to tip on the total including tax."
+      },
+      {
+        "question": "How do I handle large groups?",
+        "answer": "For groups of 6 or more, many restaurants automatically add a gratuity (usually 18-20%). Check your bill for this before adding an additional tip."
+      },
+      {
+        "question": "Is it rude to calculate the tip at the table?",
+        "answer": "Not at all. It's smart to verify the math, especially when splitting bills. Most servers appreciate accurate tips."
+      },
+      {
+        "question": "What about takeout orders?",
+        "answer": "Tipping on takeout is appreciated but not always expected. 10% is generous for takeout, or you can round up to the nearest dollar."
+      }
+    ],
+    "seoDescription": "Free tip calculator to determine appropriate gratuity. Split bills among friends, calculate percentages, and see total amounts per person."
+  },
+  "bmi-calculator": {
+    "whatItIs": "The BMI Calculator assesses your body mass index, a standard measure of body fat based on height and weight. It categorizes your BMI to help you understand if you're underweight, normal weight, overweight, or obese.",
+    "features": [
+      "Calculate BMI from height and weight",
+      "Support for both metric (kg/cm) and imperial (lbs/in) units",
+      "BMI categorization (underweight, normal, overweight, obese)",
+      "Health recommendations based on BMI",
+      "Track BMI changes over time",
+      "Calculate BMI for children and teens (with age adjustment)",
+      "No personal data storage",
+      "Mobile-friendly design"
+    ],
+    "howToUse": {
+      "name": "How to Use BMI Calculator",
+      "steps": [
+        {
+          "name": "Select Measurement System",
+          "text": "Choose between metric (kilograms and centimeters) or imperial (pounds and inches) units based on what you're comfortable with."
+        },
+        {
+          "name": "Enter Your Height",
+          "text": "Input your height. For metric, use centimeters. For imperial, use feet and inches."
+        },
+        {
+          "name": "Enter Your Weight",
+          "text": "Input your current weight. For metric, use kilograms. For imperial, use pounds."
+        },
+        {
+          "name": "View BMI Result",
+          "text": "See your BMI number and category. The calculator will also provide general health guidance based on your result."
+        },
+        {
+          "name": "Track Progress",
+          "text": "Optional: Note your BMI and check back periodically to track changes as your weight or height changes."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a healthy BMI?",
+        "answer": "A BMI between 18.5 and 24.9 is considered normal or healthy. Below 18.5 is underweight, 25-29.9 is overweight, and 30+ is obese."
+      },
+      {
+        "question": "Is BMI accurate for athletes?",
+        "answer": "BMI may overestimate body fat in athletes with high muscle mass, as it doesn't distinguish between muscle and fat. Other measures may be more accurate for very fit individuals."
+      },
+      {
+        "question": "Does BMI account for age?",
+        "answer": "Standard BMI doesn't account for age, but the calculator includes an option for children and teens that adjusts for age and growth patterns."
+      },
+      {
+        "question": "Can BMI be different for men and women?",
+        "answer": "The BMI formula is the same, but the healthy weight ranges can differ slightly. Women often have a slightly higher percentage of body fat than men at the same BMI."
+      },
+      {
+        "question": "How often should I check my BMI?",
+        "answer": "For general health tracking, checking your BMI every few months is sufficient. More frequent checks may be helpful if you're actively trying to gain or lose weight."
+      }
+    ],
+    "seoDescription": "Free BMI calculator to assess body mass index from height and weight. Includes categorization and health recommendations for all ages."
+  },
+  "fuel-cost-calculator": {
+    "whatItIs": "The Fuel Cost Calculator helps you estimate the total cost of fuel for any trip. It's perfect for planning road trips, commuting costs, or comparing vehicle efficiency.",
+    "features": [
+      "Calculate fuel cost for any distance",
+      "Adjust for vehicle fuel efficiency (miles per gallon or km per liter)",
+      "Account for current fuel prices",
+      "Compare costs between different vehicles",
+      "Estimate round-trip vs one-way costs",
+      "Calculate cost per person for shared rides",
+      "Convert between metric and imperial units",
+      "No location tracking or personal data"
+    ],
+    "howToUse": {
+      "name": "How to Use Fuel Cost Calculator",
+      "steps": [
+        {
+          "name": "Enter Trip Distance",
+          "text": "Input the total distance of your trip. You can enter one-way or round-trip distance."
+        },
+        {
+          "name": "Set Fuel Efficiency",
+          "text": "Enter your vehicle's fuel efficiency. This could be in miles per gallon (MPG) or kilometers per liter (km/l)."
+        },
+        {
+          "name": "Enter Fuel Price",
+          "text": "Input the current price of fuel per gallon or per liter in your area."
+        },
+        {
+          "name": "Adjust for Passengers",
+          "text": "Optional: If you're splitting costs, enter the number of people sharing the ride to see the cost per person."
+        },
+        {
+          "name": "View Cost Estimate",
+          "text": "See the total fuel cost for your trip, fuel consumption, and cost per person if applicable."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do I find my vehicle's fuel efficiency?",
+        "answer": "Check your vehicle's owner manual, look for the EPA rating sticker in new cars, or calculate it yourself by dividing miles driven by gallons used over several fill-ups."
+      },
+      {
+        "question": "Does driving style affect fuel efficiency?",
+        "answer": "Yes, aggressive driving (rapid acceleration, speeding) can reduce fuel efficiency by 15-30%. Smooth, steady driving improves mileage."
+      },
+      {
+        "question": "How do I account for traffic or hills?",
+        "answer": "Stop-and-go traffic and hilly terrain can reduce fuel efficiency. Consider reducing your MPG/km/l by 10-20% for such conditions."
+      },
+      {
+        "question": "Can I calculate for electric vehicles?",
+        "answer": "For EVs, you'd need to use electricity cost per mile/kilometer instead of fuel. The same principle applies but with different units."
+      },
+      {
+        "question": "Does the calculator account for cargo or passengers?",
+        "answer": "Extra weight reduces fuel efficiency. For heavily loaded vehicles, consider reducing your efficiency rating by 1-2 MPG or 0.5-1 km/l."
+      }
+    ],
+    "seoDescription": "Free fuel cost calculator to estimate trip expenses. Calculate based on distance, vehicle efficiency, and current fuel prices for any journey."
+  },
+  "inflation-calculator": {
+    "whatItIs": "The Inflation Calculator shows how the purchasing power of money changes over time. It helps you understand how much more (or less) you would need today to maintain the same buying power as in the past, or how much future money will be worth in today's terms.",
+    "features": [
+      "Calculate inflation-adjusted value of money",
+      "See how prices have changed between any two years",
+      "Project future purchasing power",
+      "Compare inflation rates between different periods",
+      "Calculate real return on investments after inflation",
+      "Historical inflation data for multiple countries",
+      "Visual representation of value changes",
+      "No personal financial data required"
+    ],
+    "howToUse": {
+      "name": "How to Use Inflation Calculator",
+      "steps": [
+        {
+          "name": "Enter Amount",
+          "text": "Input the monetary amount you want to adjust for inflation. This could be a salary, price, or any other figure."
+        },
+        {
+          "name": "Set Start Year",
+          "text": "Enter the year the original amount is from. This is the year you want to adjust from."
+        },
+        {
+          "name": "Set End Year",
+          "text": "Enter the year you want to adjust to. This could be the current year or any year in the past or future."
+        },
+        {
+          "name": "Select Country",
+          "text": "Choose the country whose inflation rate you want to use. Inflation varies significantly by country."
+        },
+        {
+          "name": "View Inflation-Adjusted Value",
+          "text": "See what your original amount would be worth in the target year's dollars, accounting for inflation."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is inflation?",
+        "answer": "Inflation is the rate at which the general level of prices for goods and services is rising, causing purchasing power to fall. It's usually expressed as an annual percentage."
+      },
+      {
+        "question": "How is inflation measured?",
+        "answer": "Inflation is typically measured using a price index like the Consumer Price Index (CPI), which tracks changes in the price of a basket of common goods and services."
+      },
+      {
+        "question": "What's the average inflation rate?",
+        "answer": "In the US, long-term average inflation is about 3-4% per year. It varies by country and time period, with some countries experiencing much higher rates."
+      },
+      {
+        "question": "Does inflation affect savings?",
+        "answer": "Yes, inflation erodes the purchasing power of savings over time. Money sitting in a low-interest savings account may lose value in real terms during periods of high inflation."
+      },
+      {
+        "question": "Can inflation be negative?",
+        "answer": "Yes, negative inflation is called deflation, where the general price level falls. This can be problematic as it may lead to reduced spending and economic slowdown."
+      }
+    ],
+    "seoDescription": "Free inflation calculator to adjust money values between years. See how purchasing power changes over time with historical and projected inflation rates."
+  },
+  "break-even-calculator": {
+    "whatItIs": "The Break-Even Calculator helps businesses determine the point at which total revenues equal total costs. It shows how many units you need to sell to cover all your costs, or how much revenue is needed to break even.",
+    "features": [
+      "Calculate break-even point in units or revenue",
+      "Account for fixed costs and variable costs per unit",
+      "Determine selling price per unit",
+      "Calculate contribution margin",
+      "Project profit at different sales levels",
+      "Visual break-even chart",
+      "Compare different pricing scenarios",
+      "No business data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Break-Even Calculator",
+      "steps": [
+        {
+          "name": "Enter Fixed Costs",
+          "text": "Input all costs that don't change with production level, like rent, salaries, and equipment. These are your overhead costs."
+        },
+        {
+          "name": "Set Variable Cost Per Unit",
+          "text": "Enter the cost to produce each unit, including materials, labor, and other costs that vary with production volume."
+        },
+        {
+          "name": "Enter Selling Price",
+          "text": "Input the price at which you sell each unit. This should be your net selling price after any discounts."
+        },
+        {
+          "name": "Add Current Sales",
+          "text": "Optional: Enter your current sales volume to see how close you are to breaking even."
+        },
+        {
+          "name": "View Break-Even Analysis",
+          "text": "See how many units you need to sell to break even, the revenue required, and your profit at different sales levels."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the break-even point?",
+        "answer": "The break-even point is the level of sales at which total revenues equal total costs, resulting in neither profit nor loss. It's a critical metric for understanding business viability."
+      },
+      {
+        "question": "What's the difference between fixed and variable costs?",
+        "answer": "Fixed costs remain constant regardless of production level (like rent). Variable costs change with production volume (like materials and direct labor)."
+      },
+      {
+        "question": "How do I lower my break-even point?",
+        "answer": "You can lower your break-even point by reducing fixed costs, lowering variable costs per unit, or increasing your selling price."
+      },
+      {
+        "question": "Does break-even analysis account for taxes?",
+        "answer": "Standard break-even analysis doesn't account for taxes. For a more accurate picture, you'd need to adjust your calculations for tax implications."
+      },
+      {
+        "question": "Can I use this for personal finance?",
+        "answer": "Yes, you can use break-even concepts for personal decisions. For example, calculate how much you need to earn from a side hustle to cover its costs."
+      }
+    ],
+    "seoDescription": "Free break-even calculator for business planning. Determine units needed to cover costs, calculate contribution margin, and project profitability."
+  },
+  "food-cost-calculator": {
+    "whatItIs": "The Food Cost Calculator helps restaurants, caterers, and home cooks determine the exact cost of preparing dishes. It breaks down ingredient costs to help with pricing, budgeting, and cost control.",
+    "features": [
+      "Calculate cost per dish or recipe",
+      "Break down ingredient costs individually",
+      "Account for ingredient quantities and unit costs",
+      "Calculate cost per serving",
+      "Adjust for waste and shrinkage",
+      "Compare costs between different recipes",
+      "Scale recipes up or down with automatic cost adjustment",
+      "No business data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Food Cost Calculator",
+      "steps": [
+        {
+          "name": "List Your Ingredients",
+          "text": "Enter all ingredients used in your recipe or dish."
+        },
+        {
+          "name": "Enter Quantities",
+          "text": "For each ingredient, specify the amount used in the recipe (e.g., 250g, 1 cup, 2 tbsp)."
+        },
+        {
+          "name": "Add Unit Costs",
+          "text": "Enter the cost per unit for each ingredient. This could be per gram, per kilogram, per item, etc."
+        },
+        {
+          "name": "Set Serving Size",
+          "text": "Specify how many servings the recipe makes. The calculator will divide the total cost by this number."
+        },
+        {
+          "name": "View Cost Breakdown",
+          "text": "See the total cost of the recipe, cost per serving, and a breakdown of which ingredients contribute most to the cost."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What's a good food cost percentage?",
+        "answer": "In restaurants, food cost percentage (cost of goods sold as a percentage of revenue) typically ranges from 25-35%. Fine dining may be higher, fast food lower."
+      },
+      {
+        "question": "How do I account for labor costs?",
+        "answer": "This calculator focuses on ingredient costs. For total dish cost, you would need to add labor costs separately based on preparation time."
+      },
+      {
+        "question": "Can I calculate for bulk purchases?",
+        "answer": "Yes, enter the bulk purchase price and quantity. The calculator will determine the per-unit cost and apply it to your recipe quantities."
+      },
+      {
+        "question": "How do I handle ingredients used in multiple dishes?",
+        "answer": "Calculate the cost per unit (gram, ounce, etc.) for shared ingredients, then apply that rate to each dish that uses the ingredient."
+      },
+      {
+        "question": "Does the calculator account for seasoning and small ingredients?",
+        "answer": "Yes, include all ingredients no matter how small. Even salt, pepper, and cooking oil contribute to the total cost and should be accounted for."
+      }
+    ],
+    "seoDescription": "Free food cost calculator for restaurants and home cooks. Determine exact ingredient costs, cost per serving, and optimize recipe pricing."
+  },
+  "freelance-rate-calculator": {
+    "whatItIs": "The Freelance Rate Calculator helps freelancers determine what to charge for their services. It accounts for business expenses, desired profit, and market rates to suggest an appropriate hourly or project-based rate.",
+    "features": [
+      "Calculate hourly, daily, or project rates",
+      "Account for business expenses and overhead",
+      "Determine desired annual income",
+      "Adjust for billable hours vs total hours",
+      "Compare with industry standard rates",
+      "Calculate rates for different experience levels",
+      "Project annual revenue based on rates",
+      "No personal financial data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Freelance Rate Calculator",
+      "steps": [
+        {
+          "name": "Set Desired Annual Income",
+          "text": "Enter the total amount you want to earn in a year from your freelance work."
+        },
+        {
+          "name": "Enter Business Expenses",
+          "text": "Input your estimated annual business costs, including software, equipment, marketing, insurance, and other overhead."
+        },
+        {
+          "name": "Estimate Billable Hours",
+          "text": "Specify how many hours per year you expect to bill clients. Remember to account for non-billable time (admin, marketing, etc.)."
+        },
+        {
+          "name": "Adjust for Experience",
+          "text": "Select your experience level. More experienced freelancers typically command higher rates."
+        },
+        {
+          "name": "View Rate Recommendations",
+          "text": "See suggested hourly, daily, and project rates that will help you reach your income goals, covering both your salary and business expenses."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do I determine my billable hours?",
+        "answer": "Track your time for a few weeks to see how much is spent on client work vs administrative tasks. Most freelancers bill 50-70% of their total working hours."
+      },
+      {
+        "question": "What's a good freelance rate?",
+        "answer": "Rates vary widely by industry, experience, and location. Beginners might charge $20-50/hr, experienced professionals $50-150/hr, and specialists $150+/hr."
+      },
+      {
+        "question": "Should I charge hourly or per project?",
+        "answer": "Hourly works well for open-ended projects. Fixed-price (per project) is better for well-defined work. Many freelancers use a combination, charging hourly with a project cap."
+      },
+      {
+        "question": "How do I account for taxes?",
+        "answer": "As a freelancer, you'll need to pay self-employment tax (about 15.3%) plus income tax. Add 25-30% to your desired income to cover taxes."
+      },
+      {
+        "question": "Can I charge different rates for different clients?",
+        "answer": "Yes, many freelancers have tiered pricing based on client budget, project complexity, or urgency. Just be consistent in your reasoning."
+      }
+    ],
+    "seoDescription": "Free freelance rate calculator to determine hourly and project rates. Account for expenses, desired income, and market standards to price services correctly."
+  },
+  "rent-affordability-calculator": {
+    "whatItIs": "The Rent Affordability Calculator helps you determine how much rent you can comfortably afford based on your income and expenses. It follows the common 30% rule while allowing for customization based on your financial situation.",
+    "features": [
+      "Calculate maximum affordable rent",
+      "Apply the 30% rule (rent should be ≤ 30% of gross income)",
+      "Account for other monthly expenses",
+      "Adjust for debt payments",
+      "Compare with 50/30/20 budget rule",
+      "Calculate based on net or gross income",
+      "See impact of different rent amounts on savings",
+      "No personal financial data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Rent Affordability Calculator",
+      "steps": [
+        {
+          "name": "Enter Your Income",
+          "text": "Input your monthly gross income (before taxes). You can also use net income if you prefer."
+        },
+        {
+          "name": "List Monthly Expenses",
+          "text": "Enter your other monthly obligations like utilities, groceries, transportation, and existing debt payments."
+        },
+        {
+          "name": "Set Savings Goal",
+          "text": "Specify how much you want to save each month. This affects how much you can allocate to rent."
+        },
+        {
+          "name": "Adjust Rent Percentage",
+          "text": "Choose what percentage of your income you want to spend on rent. The standard recommendation is 30%, but you can adjust this."
+        },
+        {
+          "name": "View Affordability Range",
+          "text": "See the maximum rent you can afford while maintaining your savings goals and covering all expenses."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the 30% rule?",
+        "answer": "The 30% rule suggests that you should spend no more than 30% of your gross income on housing (rent or mortgage). This helps ensure you have enough for other expenses and savings."
+      },
+      {
+        "question": "Should I use gross or net income?",
+        "answer": "Gross income (before taxes) is more commonly used for rent calculations. However, using net income (after taxes) may give a more accurate picture of what you can truly afford."
+      },
+      {
+        "question": "What if I have roommates?",
+        "answer": "If you have roommates, you can either calculate based on your share of the rent, or calculate the total rent the household can afford and divide by the number of roommates."
+      },
+      {
+        "question": "Does this account for utilities?",
+        "answer": "The calculator can include utilities in your expenses. Some landlords include utilities in the rent, while others don't - adjust accordingly."
+      },
+      {
+        "question": "How do I know if I can afford a place?",
+        "answer": "Beyond the rent amount, consider the security deposit (usually 1-2 months rent), moving costs, and any upfront fees. Make sure you'll still have an emergency fund after moving in."
+      }
+    ],
+    "seoDescription": "Free rent affordability calculator to determine maximum rent based on income. Follows the 30% rule and accounts for expenses and savings goals."
+  },
+  "home-loan-eligibility-calculator": {
+    "whatItIs": "The Home Loan Eligibility Calculator helps you understand how much you can borrow for a home purchase based on your income, expenses, and other financial factors. It gives you an estimate of your maximum loan amount before you apply.",
+    "features": [
+      "Calculate maximum home loan eligibility",
+      "Account for monthly income and expenses",
+      "Adjust for existing loans and EMIs",
+      "Consider loan tenure preferences",
+      "Apply different interest rates",
+      "Calculate based on FOIR (Fixed Obligation to Income Ratio)",
+      "Compare eligibility across different lenders",
+      "No credit check or personal data required"
+    ],
+    "howToUse": {
+      "name": "How to Use Home Loan Eligibility Calculator",
+      "steps": [
+        {
+          "name": "Enter Monthly Income",
+          "text": "Input your total monthly income from all sources. Include salary, bonuses, and other regular income."
+        },
+        {
+          "name": "List Monthly Expenses",
+          "text": "Enter your regular monthly expenses including living costs, existing EMIs, and other obligations."
+        },
+        {
+          "name": "Add Existing Loans",
+          "text": "Specify any current loans or EMIs you're paying. This affects your debt-to-income ratio."
+        },
+        {
+          "name": "Set Loan Preferences",
+          "text": "Enter your preferred loan tenure and expected interest rate. Longer tenures may increase eligibility but also total interest."
+        },
+        {
+          "name": "View Eligibility Results",
+          "text": "See the maximum loan amount you're likely eligible for, along with the corresponding EMI. Adjust inputs to see how different factors affect eligibility."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is FOIR?",
+        "answer": "FOIR (Fixed Obligation to Income Ratio) is the percentage of your income that goes toward fixed obligations like EMIs. Most lenders prefer FOIR below 50-60%."
+      },
+      {
+        "question": "How do lenders determine eligibility?",
+        "answer": "Lenders consider income, age, employment stability, credit score, existing debts, and property value. The calculator gives an estimate based on income and expenses."
+      },
+      {
+        "question": "Does eligibility guarantee approval?",
+        "answer": "No, eligibility calculators provide estimates. Actual approval depends on the lender's full assessment including credit history, property evaluation, and other factors."
+      },
+      {
+        "question": "Can I increase my eligibility?",
+        "answer": "Yes, you can increase eligibility by increasing your income, reducing existing debts, improving your credit score, or opting for a longer loan tenure."
+      },
+      {
+        "question": "What's the difference between eligibility and affordability?",
+        "answer": "Eligibility is what a lender is willing to lend based on their criteria. Affordability is what you can comfortably repay based on your budget. They may differ significantly."
+      }
+    ],
+    "seoDescription": "Free home loan eligibility calculator to estimate maximum borrowable amount. Based on income, expenses, and existing loans without affecting credit score."
+  },
+  "property-roi-calculator": {
+    "whatItIs": "The Property ROI Calculator helps real estate investors evaluate the potential return on investment properties. It calculates both cash-on-cash return and overall ROI, accounting for purchase costs, rental income, and expenses.",
+    "features": [
+      "Calculate ROI for rental properties",
+      "Account for purchase price and closing costs",
+      "Include rental income and vacancy rates",
+      "Adjust for property expenses (taxes, insurance, maintenance)",
+      "Calculate cash flow and cash-on-cash return",
+      "Project long-term appreciation",
+      "Compare different investment properties",
+      "No personal financial data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Property ROI Calculator",
+      "steps": [
+        {
+          "name": "Enter Property Details",
+          "text": "Input the purchase price, closing costs, and any renovation expenses for the property."
+        },
+        {
+          "name": "Add Financing Information",
+          "text": "Specify your down payment and loan terms if you're financing the purchase. This affects your cash investment."
+        },
+        {
+          "name": "Set Rental Income",
+          "text": "Enter the expected monthly rent and estimate vacancy rate (typically 5-10% for residential properties)."
+        },
+        {
+          "name": "List Property Expenses",
+          "text": "Include all ongoing costs: property taxes, insurance, maintenance, property management fees, and any other expenses."
+        },
+        {
+          "name": "View ROI Analysis",
+          "text": "See your property's ROI, cash flow, cash-on-cash return, and break-even timeline. Compare with other investment opportunities."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is cash-on-cash return?",
+        "answer": "Cash-on-cash return is the annual pre-tax cash flow divided by the total cash invested. It measures the return on the actual cash you've put into the property."
+      },
+      {
+        "question": "What's a good ROI for rental property?",
+        "answer": "A good ROI varies by market, but generally 8-12% is considered good for residential rental properties. Commercial properties may have different benchmarks."
+      },
+      {
+        "question": "How do I estimate vacancy rate?",
+        "answer": "Vacancy rate depends on local market conditions. In strong markets, 3-5% may be appropriate. In weaker markets or for problem properties, 10-15% might be more realistic."
+      },
+      {
+        "question": "Does ROI include property appreciation?",
+        "answer": "The calculator can include estimated appreciation in the total ROI calculation. However, appreciation is speculative and shouldn't be the sole basis for investment decisions."
+      },
+      {
+        "question": "What expenses am I missing?",
+        "answer": "Commonly overlooked expenses include vacancy costs, tenant turnover costs (cleaning, advertising), repairs and maintenance (typically 1-2% of property value annually), and capital expenditures (roof, HVAC replacement)."
+      }
+    ],
+    "seoDescription": "Free property ROI calculator for real estate investors. Evaluate rental income, expenses, and potential returns to make informed investment decisions."
+  },
+  "calorie-deficit-calculator": {
+    "whatItIs": "The Calorie Deficit Calculator helps you determine how many calories you need to consume to lose weight at a healthy, sustainable rate. It calculates your daily calorie needs based on your current weight, height, age, and activity level.",
+    "features": [
+      "Calculate daily calorie needs for weight loss",
+      "Determine maintenance calories",
+      "Set weight loss goals (0.5-2 lbs per week)",
+      "Account for age, gender, height, and weight",
+      "Adjust for activity level (sedentary to very active)",
+      "Calculate macronutrient breakdown",
+      "Track progress over time",
+      "No personal data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Calorie Deficit Calculator",
+      "steps": [
+        {
+          "name": "Enter Personal Information",
+          "text": "Input your age, gender, current weight, and height. These factors affect your metabolic rate."
+        },
+        {
+          "name": "Select Activity Level",
+          "text": "Choose your typical activity level from sedentary to very active. This significantly impacts your calorie needs."
+        },
+        {
+          "name": "Set Weight Loss Goal",
+          "text": "Specify your target weight and timeline, or choose a weekly weight loss rate (0.5-2 lbs per week is generally safe)."
+        },
+        {
+          "name": "View Calorie Recommendations",
+          "text": "See your daily calorie intake for maintenance and for weight loss. The calculator will also suggest a macronutrient breakdown."
+        },
+        {
+          "name": "Track and Adjust",
+          "text": "Monitor your progress weekly. If you're not losing weight as expected, you may need to adjust your calorie intake or activity level."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a calorie deficit?",
+        "answer": "A calorie deficit occurs when you consume fewer calories than your body burns, forcing it to use stored fat for energy, resulting in weight loss."
+      },
+      {
+        "question": "How many calories should I cut to lose weight?",
+        "answer": "A deficit of 500 calories per day typically results in about 1 pound of weight loss per week. A 250-calorie deficit leads to about 0.5 pounds per week."
+      },
+      {
+        "question": "Is it safe to lose 2 pounds per week?",
+        "answer": "For most people, losing 1-2 pounds per week is considered safe and sustainable. Losing more than 2 pounds per week may lead to muscle loss and is harder to maintain."
+      },
+      {
+        "question": "Why am I not losing weight despite a calorie deficit?",
+        "answer": "Several factors could be at play: underestimating calorie intake, overestimating activity level, water retention, or metabolic adaptation. Try tracking more accurately and be patient."
+      },
+      {
+        "question": "Should I count exercise calories?",
+        "answer": "It's generally better to focus on diet for weight loss and consider exercise a bonus. Exercise calories are often overestimated, and it's easy to eat back the calories you burned."
+      }
+    ],
+    "seoDescription": "Free calorie deficit calculator to determine daily intake for weight loss. Based on age, weight, height, activity level, and weight loss goals."
+  },
+  "protein-intake-calculator": {
+    "whatItIs": "The Protein Intake Calculator helps you determine how much protein you need daily based on your weight, activity level, and fitness goals. It provides personalized recommendations to support muscle maintenance, growth, or overall health.",
+    "features": [
+      "Calculate daily protein requirements",
+      "Adjust for activity level and fitness goals",
+      "Support for weight loss, maintenance, or muscle gain",
+      "Account for age and gender differences",
+      "Convert between grams and ounces",
+      "Calculate protein per meal",
+      "Track intake against goals",
+      "No personal data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Protein Intake Calculator",
+      "steps": [
+        {
+          "name": "Enter Your Weight",
+          "text": "Input your current weight in pounds or kilograms. Protein needs are typically calculated per unit of body weight."
+        },
+        {
+          "name": "Select Activity Level",
+          "text": "Choose your typical activity level. More active individuals generally need more protein to support muscle repair and growth."
+        },
+        {
+          "name": "Set Your Goal",
+          "text": "Specify whether you're aiming for weight loss, maintenance, or muscle gain. Each goal has different protein requirements."
+        },
+        {
+          "name": "View Protein Recommendation",
+          "text": "See your daily protein target in grams. The calculator will also show how much protein you need per meal if you eat 3-5 times per day."
+        },
+        {
+          "name": "Plan Your Meals",
+          "text": "Use the protein per meal guidance to plan balanced meals throughout the day. Consider protein sources like lean meats, fish, eggs, dairy, legumes, and plant-based options."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How much protein do I need?",
+        "answer": "For sedentary adults, 0.8g per kg of body weight (0.36g per lb) is sufficient. For active individuals, 1.2-2.0g per kg (0.5-0.9g per lb) is recommended, with higher amounts for muscle building."
+      },
+      {
+        "question": "Can I consume too much protein?",
+        "answer": "For healthy individuals, protein intake up to 2-3g per kg of body weight appears safe. However, extremely high protein intake may strain kidneys in susceptible individuals."
+      },
+      {
+        "question": "What are the best protein sources?",
+        "answer": "Complete proteins (containing all essential amino acids) include animal products like meat, fish, eggs, and dairy. Plant-based complete proteins include soy, quinoa, and combinations like rice and beans."
+      },
+      {
+        "question": "Does protein timing matter?",
+        "answer": "For most people, total daily protein is more important than timing. However, for muscle building, spreading protein intake evenly across meals (20-40g per meal) may be optimal."
+      },
+      {
+        "question": "How do I calculate protein in my food?",
+        "answer": "Check nutrition labels for protein content. For whole foods, use a nutrition database or app. A food scale can help with accurate portion sizes."
+      }
+    ],
+    "seoDescription": "Free protein intake calculator to determine daily requirements. Based on weight, activity level, and fitness goals for muscle maintenance or growth."
+  },
+  "bmi-ideal-weight-calculator": {
+    "whatItIs": "The BMI + Ideal Weight Calculator combines body mass index assessment with ideal weight range calculations. It provides a comprehensive view of your weight status and suggests a healthy weight range based on your height and frame size.",
+    "features": [
+      "Calculate BMI and ideal weight range",
+      "Account for height, age, and gender",
+      "Adjust for body frame size (small, medium, large)",
+      "Provide weight range for optimal health",
+      "Compare current weight with ideal range",
+      "Calculate weight loss or gain needed",
+      "Visual progress tracking",
+      "No personal data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use BMI + Ideal Weight Calculator",
+      "steps": [
+        {
+          "name": "Enter Height and Weight",
+          "text": "Input your current height and weight. Use either metric or imperial units."
+        },
+        {
+          "name": "Select Gender and Age",
+          "text": "Choose your gender and enter your age. These factors affect the ideal weight calculation."
+        },
+        {
+          "name": "Set Body Frame",
+          "text": "Select your body frame size (small, medium, or large). This is typically based on your wrist circumference relative to your height."
+        },
+        {
+          "name": "View Results",
+          "text": "See your BMI, BMI category, and your ideal weight range. The calculator will show where your current weight falls relative to the ideal range."
+        },
+        {
+          "name": "Plan Your Journey",
+          "text": "If your current weight is outside the ideal range, use the calculator's guidance to set realistic goals for gradual, healthy weight change."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do I determine my body frame size?",
+        "answer": "Measure your wrist circumference. For men: small < 6.5", medium 6.5-7.5", large > 7.5". For women: small < 6", medium 6-6.5", large > 6.5"."
+      },
+      {
+        "question": "What is the ideal weight formula?",
+        "answer": "Several formulas exist. A common one is: For men, 50 kg + 2.3 kg per inch over 5 feet. For women, 45.5 kg + 2.3 kg per inch over 5 feet. Adjust for frame size."
+      },
+      {
+        "question": "Is ideal weight the same as healthy weight?",
+        "answer": "Ideal weight is a guideline based on height and frame. Healthy weight also considers body composition, fitness level, and overall health markers."
+      },
+      {
+        "question": "Can I be healthy outside the ideal weight range?",
+        "answer": "Yes, especially if you have significant muscle mass. Body composition (muscle vs fat percentage) is often a better indicator of health than weight alone."
+      },
+      {
+        "question": "How quickly should I reach my ideal weight?",
+        "answer": "A safe rate is 0.5-1 pound (0.2-0.5 kg) per week. Rapid weight loss or gain can be unhealthy and is often not sustainable."
+      }
+    ],
+    "seoDescription": "Free BMI and ideal weight calculator to assess healthy weight range. Based on height, age, gender, and body frame size for comprehensive weight analysis."
+  },
+  "water-intake-calculator": {
+    "whatItIs": "The Daily Water Intake Calculator determines how much water you should drink each day to maintain optimal hydration. It accounts for your weight, activity level, and climate to provide personalized recommendations.",
+    "features": [
+      "Calculate daily water needs",
+      "Adjust for weight and activity level",
+      "Account for climate and exercise",
+      "Convert between metric and imperial units",
+      "Set hourly water intake goals",
+      "Track intake throughout the day",
+      "Calculate water from other beverages",
+      "No personal data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Daily Water Intake Calculator",
+      "steps": [
+        {
+          "name": "Enter Your Weight",
+          "text": "Input your current weight in pounds or kilograms. Water needs are typically calculated based on body weight."
+        },
+        {
+          "name": "Select Activity Level",
+          "text": "Choose your typical activity level. More active individuals need more water to replace fluids lost through sweat."
+        },
+        {
+          "name": "Adjust for Climate",
+          "text": "Specify if you live in a hot or humid climate, which can increase your water needs."
+        },
+        {
+          "name": "View Water Recommendation",
+          "text": "See your total daily water intake goal. The calculator will also break this down into hourly targets."
+        },
+        {
+          "name": "Track Your Intake",
+          "text": "Use the hourly goals to track your water consumption throughout the day. Remember that all beverages count toward your total, not just plain water."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How much water do I need daily?",
+        "answer": "A common recommendation is 8 glasses (about 2 liters or half a gallon) per day. However, needs vary based on weight, activity, and climate. A better guideline is 30-35 ml per kg of body weight."
+      },
+      {
+        "question": "Can I drink too much water?",
+        "answer": "Yes, overhydration (hyponatremia) can occur if you drink excessive amounts in a short period, diluting your body's electrolytes. This is rare but can be dangerous."
+      },
+      {
+        "question": "Does coffee or tea count toward my water intake?",
+        "answer": "Yes, all beverages count toward your daily fluid intake. However, caffeinated beverages have a mild diuretic effect, so they may not hydrate as effectively as water."
+      },
+      {
+        "question": "How do I know if I'm dehydrated?",
+        "answer": "Signs of dehydration include dark yellow urine, fatigue, headache, dizziness, and dry mouth. Thirst is also a good indicator - if you're thirsty, you're already slightly dehydrated."
+      },
+      {
+        "question": "Should I drink more water when sick?",
+        "answer": "Yes, especially with fever, vomiting, or diarrhea, which cause fluid loss. Increase your intake and consider electrolyte solutions if you're losing significant fluids."
+      }
+    ],
+    "seoDescription": "Free daily water intake calculator to determine hydration needs. Based on weight, activity level, and climate for personalized recommendations."
+  },
+  "profit-margin-calculator": {
+    "whatItIs": "The Profit Margin Calculator helps businesses determine their profitability by showing what percentage of revenue remains as profit after all expenses are paid. It's essential for pricing strategies and financial analysis.",
+    "features": [
+      "Calculate profit margin percentage",
+      "Determine net profit from revenue and costs",
+      "Compare gross margin vs net margin",
+      "Adjust for different cost structures",
+      "Calculate markup percentage",
+      "Project margins at different sales volumes",
+      "Compare with industry benchmarks",
+      "No business data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Profit Margin Calculator",
+      "steps": [
+        {
+          "name": "Enter Revenue",
+          "text": "Input your total revenue or sales amount. This is the total income from selling your products or services."
+        },
+        {
+          "name": "Enter Cost of Goods Sold",
+          "text": "Input the direct costs of producing your goods or services. This includes materials, direct labor, and other variable costs."
+        },
+        {
+          "name": "Add Operating Expenses",
+          "text": "Enter your fixed operating costs like rent, salaries, utilities, marketing, and other overhead expenses."
+        },
+        {
+          "name": "View Margin Analysis",
+          "text": "See your gross profit margin (revenue minus COGS) and net profit margin (revenue minus all expenses). The calculator will also show your markup percentage."
+        },
+        {
+          "name": "Compare with Benchmarks",
+          "text": "Use industry benchmarks to see how your margins compare. Adjust your pricing or costs to improve profitability."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is a good profit margin?",
+        "answer": "Profit margins vary widely by industry. Retail might have 2-5% net margins, while software companies may have 20-30%. Gross margins (before operating expenses) are typically higher."
+      },
+      {
+        "question": "What's the difference between gross and net margin?",
+        "answer": "Gross margin is revenue minus cost of goods sold. Net margin is revenue minus all expenses (COGS + operating expenses). Net margin gives the true picture of profitability."
+      },
+      {
+        "question": "How do I improve my profit margin?",
+        "answer": "You can improve margins by increasing prices, reducing costs (materials, labor, overhead), increasing sales volume, or improving operational efficiency."
+      },
+      {
+        "question": "What is markup vs margin?",
+        "answer": "Markup is the percentage added to the cost price to get the selling price. Margin is the percentage of the selling price that is profit. They're calculated differently and give different perspectives."
+      },
+      {
+        "question": "Does profit margin account for taxes?",
+        "answer": "Standard profit margin calculations are before taxes. To see after-tax margins, you would need to subtract your tax liability from your net profit."
+      }
+    ],
+    "seoDescription": "Free profit margin calculator for business analysis. Determine gross and net margins, markup percentages, and compare with industry benchmarks."
+  },
+  "income-tax-calculator": {
+    "whatItIs": "The Income Tax Calculator helps you estimate your tax liability under different tax regimes. For FY 2026-27, it compares the Old Tax Regime with the New Tax Regime, accounting for deductions, rebates, and the latest tax slabs.",
+    "features": [
+      "Compare Old vs New Tax Regime side-by-side",
+      "Calculate tax liability based on income and deductions",
+      "Account for standard deduction (₹75,000 for New Regime in FY 2026-27)",
+      "Include Section 80C, 80D, HRA, and other deductions",
+      "Calculate Section 87A rebate automatically",
+      "Show detailed tax breakdown with cess",
+      "Project tax savings from investments",
+      "No personal financial data storage"
+    ],
+    "howToUse": {
+      "name": "How to Use Income Tax Calculator",
+      "steps": [
+        {
+          "name": "Enter Annual Income",
+          "text": "Input your total annual income from all sources. Include salary, business income, capital gains, and other taxable income."
+        },
+        {
+          "name": "Select Tax Regime",
+          "text": "Choose whether to calculate under the Old Regime (with deductions) or New Regime (lower rates, fewer deductions), or compare both."
+        },
+        {
+          "name": "Add Deductions",
+          "text": "For Old Regime, enter your eligible deductions under sections like 80C (investments), 80D (health insurance), HRA (house rent allowance), etc."
+        },
+        {
+          "name": "Enter Other Details",
+          "text": "Specify your age (for different tax slabs) and any other relevant information like home loan interest."
+        },
+        {
+          "name": "View Tax Calculation",
+          "text": "See your tax liability under each regime, the amount of tax saved, and which regime is more beneficial for your situation."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What are the key differences between Old and New Tax Regimes?",
+        "answer": "The New Regime offers lower tax rates but eliminates most deductions and exemptions available in the Old Regime. The choice depends on your income level and eligible deductions."
+      },
+      {
+        "question": "What is the standard deduction for FY 2026-27?",
+        "answer": "In the New Tax Regime, the standard deduction is ₹75,000 for FY 2026-27. In the Old Regime, it remains at ₹50,000."
+      },
+      {
+        "question": "What is Section 87A rebate?",
+        "answer": "Section 87A provides a full tax rebate if your taxable income is below ₹7,00,000 in the New Regime. In the Old Regime, the rebate applies for income below ₹5,00,000."
+      },
+      {
+        "question": "Can I switch between regimes every year?",
+        "answer": "Yes, you can choose between the Old and New Tax Regimes each financial year based on which is more beneficial for your situation."
+      },
+      {
+        "question": "What deductions are still available in the New Regime?",
+        "answer": "The New Regime allows standard deduction, employer's contribution to NPS (up to 10% of salary), and deductions under Section 80CCD(2) and 80JJAA."
+      }
+    ],
+    "seoDescription": "Free income tax calculator for FY 2026-27. Compare Old vs New Tax Regime with deductions, rebates, and the latest tax slabs for optimal tax planning."
+  }
+}

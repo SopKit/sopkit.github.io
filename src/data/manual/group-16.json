@@ -1,0 +1,26 @@
+{
+  "group": 16,
+  "name": "exam-tools",
+  "tools": [
+    "ssc-photo-signature-resizer",
+    "upsc-photo-resizer-350x350",
+    "neet-photo-signature-resizer",
+    "upsc-photo-resizer",
+    "ssc-photo-resizer",
+    "signature-resizer-under-20kb",
+    "neet-photo-resizer",
+    "jee-photo-resizer",
+    "cuet-photo-resizer",
+    "railway-exam-photo-resizer",
+    "ibps-photo-resizer",
+    "pan-card-photo-resizer",
+    "passport-photo-maker",
+    "photo-compressor-under-50kb",
+    "form-image-size-checker",
+    "photo-name-date-editor",
+    "jpg-to-pdf-exam-forms",
+    "pdf-compressor-under-200kb",
+    "ssc-mts-photo-resizer",
+    "rrb-group-d-photo-resizer"
+  ]
+}

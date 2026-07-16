@@ -1,0 +1,287 @@
+{
+  "ai-image-generator": {
+    "whatItIs": "The AI Image Generator transforms text descriptions into stunning visual artwork using advanced machine learning models. Simply type what you want to see, and the tool generates multiple high-quality image variations in seconds, supporting styles from photorealistic to abstract art.",
+    "features": [
+      "Generate multiple image variations from a single text prompt",
+      "Support for photorealistic, anime, digital art, and abstract styles",
+      "High-resolution output suitable for web and print",
+      "Adjustable aspect ratios for different use cases",
+      "Privacy-first processing with no account required",
+      "Fast generation times under 10 seconds per image",
+      "Download images in standard web formats",
+      "No watermarks on generated images"
+    ],
+    "howToUse": {
+      "name": "How to Use the AI Image Generator",
+      "steps": [
+        {
+          "name": "Enter your prompt",
+          "text": "Type a detailed description of the image you want to create. Be specific about subjects, styles, colors, and mood for better results."
+        },
+        {
+          "name": "Choose your style",
+          "text": "Select an art style from the available options like photorealistic, digital art, anime, or abstract to match your vision."
+        },
+        {
+          "name": "Set dimensions",
+          "text": "Pick your preferred aspect ratio and resolution. Square works well for social media, while landscape is better for presentations."
+        },
+        {
+          "name": "Generate images",
+          "text": "Click the generate button and wait a few seconds. The AI will produce multiple variations based on your prompt."
+        },
+        {
+          "name": "Download your favorite",
+          "text": "Review all generated images and click the download button on the one you like best. Images are saved directly to your device."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is the AI Image Generator really free?",
+        "answer": "Yes, the basic image generation is completely free with no signup required. There are daily usage limits to ensure fair access for all users."
+      },
+      {
+        "question": "What kind of images can I create?",
+        "answer": "You can generate virtually any type of image including portraits, landscapes, product mockups, concept art, logos, and abstract designs. The AI works best with clear, descriptive prompts."
+      },
+      {
+        "question": "Are the generated images copyrighted?",
+        "answer": "Generated images are yours to use for personal and commercial projects. However, we recommend checking the specific licensing terms of the underlying AI model for commercial use cases."
+      },
+      {
+        "question": "Why are some generated images not exactly what I described?",
+        "answer": "AI image generation involves some creative interpretation. Try being more specific with your prompt, adding details about lighting, composition, and style to get closer to your desired result."
+      }
+    ],
+    "seoDescription": "Generate stunning AI images from text prompts for free. Create photorealistic photos, digital art, and illustrations instantly with our privacy-first AI image generator."
+  },
+  "ai-voice-generator": {
+    "whatItIs": "The AI Voice Generator converts written text into natural-sounding speech using artificial intelligence. Choose from multiple voice styles and languages to create audio content for videos, presentations, podcasts, or accessibility purposes without recording your own voice.",
+    "features": [
+      "Convert text to natural-sounding speech in seconds",
+      "Multiple voice styles including professional, casual, and expressive",
+      "Support for major world languages and accents",
+      "Adjustable speech speed and pitch controls",
+      "High-quality audio output suitable for professional use",
+      "No microphone or recording equipment needed",
+      "Works entirely in your browser for privacy",
+      "Download audio in common formats"
+    ],
+    "howToUse": {
+      "name": "How to Use the AI Voice Generator",
+      "steps": [
+        {
+          "name": "Enter your text",
+          "text": "Type or paste the text you want to convert to speech. You can enter anything from a single sentence to several paragraphs."
+        },
+        {
+          "name": "Select a voice",
+          "text": "Browse the available voice options and choose one that matches your content's tone. Preview voices by clicking the play button next to each option."
+        },
+        {
+          "name": "Adjust settings",
+          "text": "Fine-tune the speech rate, pitch, and volume to your preference. Slower speeds work better for educational content, while natural pace suits most uses."
+        },
+        {
+          "name": "Generate audio",
+          "text": "Click the generate button and wait a moment for the AI to process your text. The audio will appear in the player below."
+        },
+        {
+          "name": "Download the file",
+          "text": "Listen to the preview and download the audio file to your device. The file is ready to use in your projects immediately."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What languages does the AI Voice Generator support?",
+        "answer": "The tool supports major languages including English, Spanish, French, German, Hindi, and many more. Each language has multiple voice variants with different accents and tones."
+      },
+      {
+        "question": "Can I use the generated voice for commercial projects?",
+        "answer": "Yes, generated audio can be used for commercial purposes including videos, podcasts, and presentations. However, please review the voice licensing terms for any restrictions."
+      },
+      {
+        "question": "How natural does the AI voice sound?",
+        "answer": "Modern AI voice models produce remarkably natural speech with proper intonation, pauses, and emphasis. The quality continues to improve with regular model updates."
+      },
+      {
+        "question": "Is there a limit on how much text I can convert?",
+        "answer": "Free users have a daily character limit that resets every 24 hours. For longer content, you can split your text into smaller sections and generate them separately."
+      }
+    ],
+    "seoDescription": "Convert text to natural-sounding speech audio for free. Choose from multiple AI voices and languages to create professional voiceovers instantly."
+  },
+  "ai-music-generator": {
+    "whatItIs": "The AI Music Generator creates original music compositions from text descriptions or musical parameters. Describe the mood, genre, tempo, and instruments you want, and the AI composes a unique track complete with vocals and instrumentation in minutes.",
+    "features": [
+      "Generate original music from text descriptions",
+      "Support for multiple genres and moods",
+      "Automatic vocal and instrumental track generation",
+      "Customizable tempo, key, and song structure",
+      "Export in standard audio formats",
+      "No musical knowledge or instruments required",
+      "Create background music for videos and podcasts",
+      "Privacy-focused browser-based processing"
+    ],
+    "howToUse": {
+      "name": "How to Use the AI Music Generator",
+      "steps": [
+        {
+          "name": "Describe your song",
+          "text": "Enter a detailed description including genre, mood, tempo, and any specific instruments or vocal styles you want in the composition."
+        },
+        {
+          "name": "Configure parameters",
+          "text": "Set the song length, tempo in BPM, and musical key. You can also specify whether you want instrumental only or with vocals."
+        },
+        {
+          "name": "Generate the track",
+          "text": "Click generate and let the AI compose your music. Processing typically takes between 30 seconds to 2 minutes depending on length."
+        },
+        {
+          "name": "Preview and refine",
+          "text": "Listen to the generated track and make adjustments if needed. You can regenerate with slightly different parameters for variation."
+        },
+        {
+          "name": "Download your music",
+          "text": "Once satisfied, download the audio file to your device. The track is ready to use in your creative projects."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I use AI-generated music commercially?",
+        "answer": "Generated music can typically be used for personal and commercial projects, but you should verify the specific licensing terms. Some AI music platforms offer commercial licenses for a fee."
+      },
+      {
+        "question": "How long does it take to generate a song?",
+        "answer": "Most songs generate within 1-3 minutes depending on length and complexity. Shorter clips under 1 minute are usually ready in under a minute."
+      },
+      {
+        "question": "Do I need music skills to use this tool?",
+        "answer": "No musical expertise is required. The AI handles composition, arrangement, and mixing automatically. You just need to describe what kind of music you want."
+      },
+      {
+        "question": "What genres can the AI generate?",
+        "answer": "The AI supports a wide range of genres including pop, rock, electronic, classical, jazz, hip-hop, ambient, and many more. You can also blend styles for unique results."
+      }
+    ],
+    "seoDescription": "Generate original AI music from text prompts. Create full songs with vocals and instrumentation in any genre for free using our AI music composer."
+  },
+  "qr-code-reader": {
+    "whatItIs": "The QR Code Reader scans and decodes QR codes from images or your device camera instantly. Simply upload a QR code image or use your phone's camera to scan codes in the real world, extracting URLs, contact info, or any embedded data securely in your browser.",
+    "features": [
+      "Scan QR codes from uploaded images",
+      "Live camera scanning for real-world QR codes",
+      "Decode all standard QR code types and data formats",
+      "Instant results with no software installation",
+      "Copy decoded data with one click",
+      "Works on mobile and desktop devices",
+      "Privacy-focused with no data storage",
+      "Support for damaged or low-quality QR codes"
+    ],
+    "howToUse": {
+      "name": "How to Use the QR Code Reader",
+      "steps": [
+        {
+          "name": "Choose scanning method",
+          "text": "Select whether you want to upload a QR code image or use your device camera for live scanning. Camera access requires browser permission."
+        },
+        {
+          "name": "Position or upload the code",
+          "text": "If using camera, point it at the QR code. If uploading, select the image file containing the QR code from your device."
+        },
+        {
+          "name": "Wait for detection",
+          "text": "The tool automatically detects and decodes the QR code. For camera scanning, hold steady until the code is recognized."
+        },
+        {
+          "name": "View the result",
+          "text": "The decoded content appears immediately. For URLs, you can click to open directly. For other data types like contacts or WiFi, follow the provided instructions."
+        },
+        {
+          "name": "Copy or use the data",
+          "text": "Copy the decoded information to your clipboard or take the suggested action like opening a link or saving a contact."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is the QR Code Reader free to use?",
+        "answer": "Yes, the QR code reader is completely free with no limits on scanning. There are no premium features or signup requirements."
+      },
+      {
+        "question": "Can it scan QR codes from my phone's camera?",
+        "answer": "Yes, the tool supports live camera scanning on both mobile and desktop devices. Simply grant camera permission when prompted."
+      },
+      {
+        "question": "What types of QR codes can it read?",
+        "answer": "The reader supports all standard QR code types including URLs, plain text, contact cards (vCard), WiFi credentials, email addresses, phone numbers, and more."
+      },
+      {
+        "question": "Is my scanned data stored anywhere?",
+        "answer": "No, all QR code scanning happens locally in your browser. The decoded data is never uploaded to any server or stored permanently."
+      }
+    ],
+    "seoDescription": "Scan and decode QR codes online for free. Upload images or use your camera to read QR codes instantly. No app download required."
+  },
+  "bio-generator": {
+    "whatItIs": "The Bio Generator creates professional and engaging bios for social media profiles, websites, and professional networking platforms. Generate unique, personalized biographies that match your style and goals in seconds.",
+    "features": [
+      "Generate bios for multiple social platforms",
+      "Multiple tone options: professional, casual, witty, and creative",
+      "Include key details like profession, interests, and achievements",
+      "Character count optimization for Twitter, Instagram, and LinkedIn",
+      "Multiple variations per generation",
+      "Privacy-first with no data storage",
+      "Copy to clipboard with one click",
+      "Supports both personal and business profiles"
+    ],
+    "howToUse": {
+      "name": "How to Use the Bio Generator",
+      "steps": [
+        {
+          "name": "Enter your details",
+          "text": "Fill in your name, profession, key skills, interests, and any achievements you want highlighted in your bio."
+        },
+        {
+          "name": "Choose your tone",
+          "text": "Select the tone that best fits your brand: professional for LinkedIn, casual for personal accounts, or witty for creative profiles."
+        },
+        {
+          "name": "Select the platform",
+          "text": "Choose your target platform to get optimized character counts and formatting. Each platform has different best practices."
+        },
+        {
+          "name": "Generate bios",
+          "text": "Click generate to receive multiple unique bio variations. Each one highlights different aspects of your personality or profession."
+        },
+        {
+          "name": "Copy and customize",
+          "text": "Select your favorite bio, make any final tweaks, and copy it directly to your profile. The tool remembers your preferences for next time."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Which social media platforms are supported?",
+        "answer": "The Bio Generator supports all major platforms including Instagram, Twitter/X, LinkedIn, TikTok, Facebook, GitHub, and personal websites."
+      },
+      {
+        "question": "How many bio variations can I generate?",
+        "answer": "Each generation produces 3-5 unique bio variations. You can generate as many times as you want to explore different angles and styles."
+      },
+      {
+        "question": "Can I use these bios for business accounts?",
+        "answer": "Absolutely. The tool has specific modes for business and personal brands, with options to include calls-to-action, contact information, and value propositions."
+      },
+      {
+        "question": "Are the bios unique and not template-based?",
+        "answer": "Each generated bio is dynamically created based on your input details. The AI combines your information in different ways to produce genuinely unique variations."
+      }
+    ],
+    "seoDescription": "Create professional social media bios for Instagram, Twitter, LinkedIn, and more. Generate unique, personalized profile descriptions for free."
+  }
+}
