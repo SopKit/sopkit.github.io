@@ -8,20 +8,13 @@ export async function generateMetadata({ params }) {
 		.map((w) => w.charAt(0).toUpperCase() + w.slice(1))
 		.join(" ");
 
-	let description = `Edit, convert, and compress images with our free ${name} online. Crop, resize, and optimize photos in your browser with no signup.`;
-	if (description.length < 150) {
-		description += " 100% free, fast, and privacy-first.";
-	}
-	if (description.length > 160) {
-		description = description.slice(0, 157) + "...";
-	}
-
-	const title = `Free ${name} Online - No Signup | SopKit`;
+	const title = `${name} — 100% Client-Side in Your Browser | No Upload, No AI Training | SopKit`;
+	const description = `Privacy-friendly, 100% client-side ${name}. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.`;
 
 	return {
 		title,
 		description,
-		keywords: `${slug}, free online tool, no signup, image, ${slug} online, SopKit`,
+		keywords: `private, client-side, no upload, no AI training, browser sandbox, secure, ${slug}, image, SopKit`,
 		alternates: {
 			canonical: `https://sopkit.github.io/image-converter/${slug}/`,
 		},

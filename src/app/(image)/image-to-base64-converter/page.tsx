@@ -2,29 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import ImageToBase64Tool from "@/components/tools/image/ImageToBase64Tool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Image to Base64 Converter Online Free - Compress & Convert Images | SopKit",
-	description: "Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-based tool.",
-	alternates: {
-		canonical: "https://sopkit.github.io/image-to-base64-converter/",
-	},
-	openGraph: {
-		title: "Image to Base64 Converter Online Free - No Signup",
-		description: "Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-ba",
-		url: "https://sopkit.github.io/image-to-base64-converter/",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Image to Base64 Converter Online Free - Fast & Secure",
-		description: "Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows. No signup, no uploads, 100% private browser-ba",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Image to Base64 Converter",
+	description: "Privacy-friendly, 100% client-side Image to Base64 Converter. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	route: "/image-to-base64-converter",
+	category: "image",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/image-to-base64-converter");

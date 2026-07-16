@@ -2,29 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "WebP to PNG Converter Online Free - Compress & Convert Images | SopKit",
-	description: "Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool. No signup, no uploads, 100% private browser-based tool.",
-	alternates: {
-		canonical: "https://sopkit.github.io/webp-to-png-converter/",
-	},
-	openGraph: {
-		title: "WebP to PNG Converter Online Free - No Signup",
-		description: "Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool. No signup,",
-		url: "https://sopkit.github.io/webp-to-png-converter/",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "WebP to PNG Converter Online Free - Fast & Secure",
-		description: "Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool. No signup,",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "WebP to PNG Converter",
+	description: "Privacy-friendly, 100% client-side WebP to PNG Converter. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	route: "/webp-to-png-converter",
+	category: "image",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/webp-to-png-converter");
