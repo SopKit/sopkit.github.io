@@ -166,53 +166,10 @@ export default function ToolLayout({
 		enrichedTool.name = generateToolH1(tool.name, tool.category);
 	}
 
-	// Append brand-identity article content and FAQs for privacy, security, client-side, and speed
-	const brandArticleSection = `
-## Privacy & Security: Why 100% Client-Side Processing Matters
-
-When using online tools, there are two separate questions to consider: what is technically possible if you upload your files to a third-party server, and what has actually been caught or demonstrated.
-
-While reputable providers publish privacy policies stating that files are encrypted, deleted after a short period (for example, iLovePDF states processed files are deleted within two hours), once a file reaches someone else's server, several risks exist:
-- **Employee Viewing**: Authorized administrators or employees could potentially view uploaded files containing passports, Aadhaar cards, PAN, or bank statements.
-- **Longer Retention**: Files may be stored in backups, logs, or cache longer than expected.
-- **AI Training**: Documents could be harvested to train OCR, document understanding, or handwriting recognition models.
-- **Metadata Harvesting**: Even without reading content, servers collect file size, upload time, device, browser, approximate location, and IP address.
-- **Data Breaches & Exploits**: Hackers can compromise cloud storage buckets or databases, exposing uploaded documents, bank statements, or PAN details.
-
-### The SopKit Difference: 100% Local Sandbox
-
-SopKit operates as a 100% client-side sandbox. All processing, conversion, formatting, and compression is executed locally in your browser's V8 engine.
-- **Zero Server Uploads**: Your files, text, images, and data never leave your device or reach any remote server.
-- **No Data Retention**: Because nothing is uploaded, there are no files to delete, no logs to wipe, and no database to breach.
-- **Instant Local Execution**: No network upload or download latency means operations are completed in milliseconds.
-
-SopKit is the trusted, privacy-first choice for handling highly sensitive personal documents, financial statements, medical records, and proprietary source code.
-`;
-
-	if (tool.category !== "company" && tool.category !== "content") {
-		if (enrichedTool.article) {
-			enrichedTool.article = enrichedTool.article + brandArticleSection;
-		} else {
-			enrichedTool.article = brandArticleSection;
-		}
-
-		const cleanNameForFaq = toolName.replace(/\s+—.*/, "");
-		const brandFaqs = [
-			{
-				question: `Is it safe to upload files to online ${cleanNameForFaq} tools?`,
-				answer: `No, uploading files to third-party servers carries significant privacy risks. While reputable services like iLovePDF or Smallpdf state they delete files within two hours, server processing exposes you to potential employee access, backups retention, metadata tracking, and data breaches. SopKit is different: everything is processed locally in your browser's V8 engine, meaning your sensitive documents (like passports, Aadhaar, PAN, and bank statements) never leave your device.`
-			},
-			{
-				question: `What are the privacy risks of server-side converters?`,
-				answer: `If a service processes files on their servers, they can technically read document contents, collect metadata (device, IP address, location), use documents for AI training, or expose documents in data breaches. SopKit runs entirely locally, protecting your privacy and security from all server-side vulnerabilities.`
-			},
-			{
-				question: `Why is SopKit better than popular online file processors?`,
-				answer: `Unlike popular platforms that upload your files to remote servers, SopKit operates as a client-side sandbox. This makes it extremely fast (zero network upload/download latency) and 100% private. It is the perfect secure, offline-capable alternative for handling sensitive personal or business files.`
-			}
-		];
-		enrichedTool.faqs = [...(enrichedTool.faqs || []), ...brandFaqs];
-	}
+	// Do not inject generic brand-wide articles or FAQ sections here.
+	// Keep `enrichedTool.article`, `enrichedTool.features`, `enrichedTool.howTo`,
+	// and `enrichedTool.faqs` strictly from per-tool/manual content or explicit
+	// page overrides so pages render only personalized texts.
 
 	// Company pages (privacy, terms, about) don't need tool-specific sections
 	const isCompanyPage = tool.category === "company";
@@ -227,6 +184,13 @@ SopKit is the trusted, privacy-first choice for handling highly sensitive person
 	const defaultSuffix =
 		" Fast and privacy-conscious. Data handling depends on the tool and is documented on each page.";
 	const finalDescription = String(enrichedTool.description || "").replace(/\\n/g, "\n").trim();
+
+	// Keep only the personalized intro text for the tool article.
+	// Remove generic template sections that start with headings like "## Why...".
+	if (enrichedTool.article) {
+		// Split at the first top-level markdown heading (## ) and keep the lead content only
+		enrichedTool.article = String(enrichedTool.article).split(/\n##\s+/)[0].trim();
+	}
 
 	return (
 		<div className="min-h-screen bg-background text-foreground selection:bg-primary/20 ambient-glow">

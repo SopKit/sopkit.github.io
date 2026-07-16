@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "11.2",
-    "lastUpdated": "2026-07-11",
-    "totalTools": 569,
-    "totalCategories": 11
+    "lastUpdated": "2026-07-16",
+    "totalTools": 592,
+    "totalCategories": 19
   },
   "categories": {
     "generators": {
@@ -22097,6 +22097,1325 @@
             "local-body-fat-calculator-offline",
             "body-fat-calculator-no-data-selling",
             "secure-body-fat-calculator-locally"
+          ]
+        }
+      ]
+    },
+    "privacy-tools": {
+      "name": "Privacy & Security Tools",
+      "slug": "privacy-tools",
+      "icon": "ShieldCheckIcon",
+      "description": "Free privacy-first tools for data protection, email security, and compliance. Run securely in your browser with zero uploads.",
+      "tools": [
+        {
+          "id": "pii-scrubber",
+          "name": "PII Scrubber",
+          "description": "Remove personal information from text before sending to AI. Scrub emails, phone numbers, SSNs, credit cards, and API keys locally.",
+          "route": "/pii-scrubber",
+          "popular": true,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "pii-scrubber-free",
+            "pii-scrubber-online",
+            "free-pii-scrubber-no-signup",
+            "best-pii-scrubber-online",
+            "pii-scrubber-tool",
+            "pii-scrubber-no-upload",
+            "privacy-friendly-pii-scrubber",
+            "client-side-pii-scrubber-free",
+            "local-pii-scrubber-offline",
+            "pii-scrubber-no-data-selling",
+            "secure-pii-scrubber-locally"
+          ],
+          "features": [
+            "Scrub emails, phone numbers, SSNs, credit cards, and API keys",
+            "100% client-side processing — text never leaves your browser",
+            "Support for custom PII patterns",
+            "Instant results with no uploads",
+            "Works with JSON, code, and plain text",
+            "Free forever, no signup required"
+          ],
+          "faqs": [
+            {
+              "question": "What is PII scrubbing?",
+              "answer": "PII scrubbing removes personally identifiable information like emails, phone numbers, SSNs, and API keys from text before sharing it with AI models or third parties."
+            },
+            {
+              "question": "Is the PII Scrubber really private?",
+              "answer": "Yes. All scrubbing happens locally in your browser using JavaScript. Your text is never uploaded to any server, ensuring complete privacy."
+            },
+            {
+              "question": "What types of PII can be scrubbed?",
+              "answer": "The tool detects emails, phone numbers, Social Security Numbers, credit card numbers, API keys, IP addresses, and custom patterns you define."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Paste Your Text",
+              "description": "Paste the text containing sensitive information into the input area."
+            },
+            {
+              "title": "Select PII Types",
+              "description": "Choose which types of PII to scrub: emails, phones, SSNs, credit cards, API keys, etc."
+            },
+            {
+              "title": "Scrub and Copy",
+              "description": "Click scrub to remove all selected PII types. Copy the cleaned text and use it safely."
+            }
+          ]
+        },
+        {
+          "id": "email-subject-line-tester",
+          "name": "Email Subject Line Tester",
+          "description": "Score email subject lines for open rate potential, spam risk, length, and clarity. Get instant feedback and improvement suggestions.",
+          "route": "/email-subject-line-tester",
+          "popular": true,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "email-subject-line-tester-free",
+            "email-subject-line-tester-online",
+            "free-email-subject-line-tester-no-signup",
+            "best-email-subject-line-tester-online",
+            "email-subject-line-tester-tool",
+            "email-subject-line-tester-no-upload",
+            "privacy-friendly-email-subject-line-tester",
+            "client-side-email-subject-line-tester-free",
+            "local-email-subject-line-tester-offline",
+            "email-subject-line-tester-no-data-selling",
+            "secure-email-subject-line-tester-locally"
+          ],
+          "features": [
+            "Score subject lines 0-100 for open rate potential",
+            "Detect spam trigger words and deliverability risks",
+            "Check optimal length for mobile and desktop",
+            "Analyze emotional tone and clarity",
+            "Get actionable improvement suggestions",
+            "100% client-side — your emails stay private"
+          ],
+          "faqs": [
+            {
+              "question": "How does the email subject line tester work?",
+              "answer": "Paste your subject line and the tool analyzes length, spam words, readability, specificity, personalization, and engagement factors to give you a score and suggestions."
+            },
+            {
+              "question": "What makes a good email subject line?",
+              "answer": "Keep it 30-50 characters, avoid spam trigger words, be specific, use personalization when possible, and front-load the most important words for mobile truncation."
+            },
+            {
+              "question": "Is my email data stored?",
+              "answer": "No. All analysis happens locally in your browser. Your subject lines and email content are never uploaded to our servers."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Paste Subject Line",
+              "description": "Paste the email subject line you want to test into the input field."
+            },
+            {
+              "title": "Get Your Score",
+              "description": "The tool analyzes length, spam risk, clarity, and engagement potential instantly."
+            },
+            {
+              "title": "Review Suggestions",
+              "description": "Review the feedback and improved alternatives to optimize your subject line before sending."
+            }
+          ]
+        },
+        {
+          "id": "ai-text-detector",
+          "name": "AI Text Detector",
+          "description": "Detect AI-generated text with a free browser-based analyzer. Check if content was written by ChatGPT, Claude, or other AI models — privately, no uploads.",
+          "route": "/ai-text-detector",
+          "popular": true,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "ai-text-detector-free",
+            "ai-text-detector-online",
+            "free-ai-text-detector-no-signup",
+            "best-ai-text-detector-online",
+            "ai-text-detector-tool",
+            "ai-text-detector-no-upload",
+            "privacy-friendly-ai-text-detector",
+            "client-side-ai-text-detector-free",
+            "local-ai-text-detector-offline",
+            "ai-text-detector-no-data-selling",
+            "secure-ai-text-detector-locally"
+          ],
+          "features": [
+            "Detect AI-generated text from ChatGPT, Claude, Gemini, and other models",
+            "100% client-side analysis — text never leaves your browser",
+            "Per-paragraph AI probability scoring",
+            "Support for long documents",
+            "Instant results with no uploads",
+            "Free forever, no signup required"
+          ],
+          "faqs": [
+            {
+              "question": "How accurate is the AI text detector?",
+              "answer": "The detector analyzes linguistic patterns, perplexity, and burstiness to estimate AI probability. It's a strong indicator but not 100% definitive — always use human judgment for important decisions."
+            },
+            {
+              "question": "Is my text uploaded to a server?",
+              "answer": "No. All analysis happens locally in your browser. Your text is never sent to any external server, ensuring complete privacy."
+            },
+            {
+              "question": "Which AI models can be detected?",
+              "answer": "The detector is trained to identify patterns from major AI models including ChatGPT, Claude, Gemini, and other large language models."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Paste Text",
+              "description": "Paste the text you want to analyze into the input area."
+            },
+            {
+              "title": "Analyze",
+              "description": "Click analyze to run the client-side detection algorithm."
+            },
+            {
+              "title": "Review Results",
+              "description": "View the AI probability score per paragraph and overall document assessment."
+            }
+          ]
+        },
+        {
+          "id": "email-validator",
+          "name": "Email Validator",
+          "description": "Validate email addresses for format, domain, and deliverability. Check if an email is valid, disposable, or from a free provider — privately in your browser.",
+          "route": "/email-validator",
+          "popular": true,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "email-validator-free",
+            "email-validator-online",
+            "free-email-validator-no-signup",
+            "best-email-validator-online",
+            "email-validator-tool",
+            "email-validator-no-upload",
+            "privacy-friendly-email-validator",
+            "client-side-email-validator-free",
+            "local-email-validator-offline",
+            "email-validator-no-data-selling",
+            "secure-email-validator-locally"
+          ],
+          "features": [
+            "Validate email format and syntax",
+            "Check domain MX records",
+            "Detect disposable and temporary email providers",
+            "Identify free email providers",
+            "Bulk email validation",
+            "100% client-side — emails never leave your browser"
+          ],
+          "faqs": [
+            {
+              "question": "How does email validation work?",
+              "answer": "The tool checks email syntax, validates domain MX records via DNS lookups, and cross-references against known disposable email provider lists."
+            },
+            {
+              "question": "Are my emails stored?",
+              "answer": "No. All validation happens locally in your browser. Email addresses are never uploaded to any server."
+            },
+            {
+              "question": "Can I validate multiple emails at once?",
+              "answer": "Yes. Use the bulk validation feature to check up to 100 emails at a time with detailed results for each."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Enter Email",
+              "description": "Type or paste the email address you want to validate."
+            },
+            {
+              "title": "Run Validation",
+              "description": "Click validate to check format, domain, and provider type."
+            },
+            {
+              "title": "Review Results",
+              "description": "See detailed results including validity status, domain type, and any warnings."
+            }
+          ]
+        },
+        {
+          "id": "spam-word-checker",
+          "name": "Spam Word Checker",
+          "description": "Scan email copy for spam trigger words. Get a spam score and suggestions to improve deliverability before sending.",
+          "route": "/spam-word-checker",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "spam-word-checker-free",
+            "spam-word-checker-online",
+            "free-spam-word-checker-no-signup",
+            "best-spam-word-checker-online",
+            "spam-word-checker-tool",
+            "spam-word-checker-no-upload",
+            "privacy-friendly-spam-word-checker",
+            "client-side-spam-word-checker-free",
+            "local-spam-word-checker-offline",
+            "spam-word-checker-no-data-selling",
+            "secure-spam-word-checker-locally"
+          ],
+          "features": [
+            "Scan text for 200+ spam trigger words",
+            "Get a spam score from 0-100",
+            "Highlight problematic phrases",
+            "Suggest safer alternatives",
+            "Check subject lines and body copy",
+            "100% client-side — text stays private"
+          ],
+          "faqs": [
+            {
+              "question": "What are spam trigger words?",
+              "answer": "Spam trigger words are phrases and terms that email filters associate with spammy content, such as 'free money', 'act now', 'limited time offer', and excessive punctuation."
+            },
+            {
+              "question": "Will this guarantee my email won't go to spam?",
+              "answer": "No tool can guarantee inbox placement. Spam filters consider many factors beyond words, including sender reputation, authentication, and user engagement. This tool helps reduce one common risk factor."
+            },
+            {
+              "question": "Is my email content uploaded?",
+              "answer": "No. All scanning happens locally in your browser. Your email content is never sent to any server."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Paste Email Copy",
+              "description": "Paste your email subject line and/or body copy into the tool."
+            },
+            {
+              "title": "Scan for Spam Words",
+              "description": "Click scan to analyze your text against common spam trigger words and patterns."
+            },
+            {
+              "title": "Review Score and Fixes",
+              "description": "Review your spam score, highlighted issues, and suggested improvements."
+            }
+          ]
+        },
+        {
+          "id": "phishing-url-checker",
+          "name": "Phishing URL Checker",
+          "description": "Check if a URL is safe or a phishing site. Analyze links for suspicious patterns, domain age, and known threats — privately in your browser.",
+          "route": "/phishing-url-checker",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "phishing-url-checker-free",
+            "phishing-url-checker-online",
+            "free-phishing-url-checker-no-signup",
+            "best-phishing-url-checker-online",
+            "phishing-url-checker-tool",
+            "phishing-url-checker-no-upload",
+            "privacy-friendly-phishing-url-checker",
+            "client-side-phishing-url-checker-free",
+            "local-phishing-url-checker-offline",
+            "phishing-url-checker-no-data-selling",
+            "secure-phishing-url-checker-locally"
+          ],
+          "features": [
+            "Check URLs against known phishing patterns",
+            "Analyze domain age and registration details",
+            "Detect suspicious URL structures",
+            "Check for HTTPS and certificate validity",
+            "Report suspicious URLs",
+            "100% client-side — URLs stay private"
+          ],
+          "faqs": [
+            {
+              "question": "How does phishing URL detection work?",
+              "answer": "The tool analyzes URL structure, domain registration data, known phishing patterns, and security indicators to assess risk."
+            },
+            {
+              "question": "Can it detect all phishing sites?",
+              "answer": "No tool can catch 100% of phishing sites. This tool checks against known patterns and heuristics, but always use caution with unknown links."
+            },
+            {
+              "question": "Is my browsing history tracked?",
+              "answer": "No. All checks happen locally in your browser. URLs you check are never uploaded to any server."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Paste URL",
+              "description": "Paste the URL you want to check into the input field."
+            },
+            {
+              "title": "Analyze URL",
+              "description": "Click analyze to check the URL against phishing patterns and domain data."
+            },
+            {
+              "title": "Review Risk Assessment",
+              "description": "View the risk score and detailed analysis of the URL's safety."
+            }
+          ]
+        },
+        {
+          "id": "password-strength-checker",
+          "name": "Password Strength Checker",
+          "description": "Check password strength and get security recommendations. Analyze entropy, common patterns, and breach exposure — all locally in your browser.",
+          "route": "/password-strength-checker",
+          "popular": true,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "password-strength-checker-free",
+            "password-strength-checker-online",
+            "free-password-strength-checker-no-signup",
+            "best-password-strength-checker-online",
+            "password-strength-checker-tool",
+            "password-strength-checker-no-upload",
+            "privacy-friendly-password-strength-checker",
+            "client-side-password-strength-checker-free",
+            "local-password-strength-checker-offline",
+            "password-strength-checker-no-data-selling",
+            "secure-password-strength-checker-locally"
+          ],
+          "features": [
+            "Analyze password entropy and strength",
+            "Check against common password patterns",
+            "Estimate crack time",
+            "Get security recommendations",
+            "Support for long passwords",
+            "100% client-side — passwords never leave your browser"
+          ],
+          "faqs": [
+            {
+              "question": "Is my password sent to a server?",
+              "answer": "No. Password strength analysis happens entirely in your browser using JavaScript. Your password is never transmitted anywhere."
+            },
+            {
+              "question": "How is password strength calculated?",
+              "answer": "The tool calculates entropy based on length, character variety, and patterns. It also checks against common passwords and known breach data heuristics."
+            },
+            {
+              "question": "What is a strong password?",
+              "answer": "A strong password is at least 12 characters long, includes uppercase, lowercase, numbers, and symbols, and avoids common words or patterns."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Enter Password",
+              "description": "Type or paste the password you want to analyze."
+            },
+            {
+              "title": "Analyze Strength",
+              "description": "Click check to analyze entropy, patterns, and estimated crack time."
+            },
+            {
+              "title": "Review Recommendations",
+              "description": "Review the strength score and follow recommendations to improve security."
+            }
+          ]
+        },
+        {
+          "id": "security-headers-checker",
+          "name": "Security Headers Checker",
+          "description": "Analyze website security headers like CSP, HSTS, X-Frame-Options, and more. Get a security score and recommendations for free.",
+          "route": "/security-headers-checker",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "security-headers-checker-free",
+            "security-headers-checker-online",
+            "free-security-headers-checker-no-signup",
+            "best-security-headers-checker-online",
+            "security-headers-checker-tool",
+            "security-headers-checker-no-upload",
+            "privacy-friendly-security-headers-checker",
+            "client-side-security-headers-checker-free",
+            "local-security-headers-checker-offline",
+            "security-headers-checker-no-data-selling",
+            "secure-security-headers-checker-locally"
+          ],
+          "features": [
+            "Check 10+ security headers",
+            "Get a security score 0-100",
+            "Detailed analysis of each header",
+            "Recommendations for missing headers",
+            "Support for any public URL",
+            "100% client-side analysis"
+          ],
+          "faqs": [
+            {
+              "question": "What are security headers?",
+              "answer": "Security headers are HTTP response headers that tell browsers how to behave when handling your site's content. Examples include Content-Security-Policy, X-Frame-Options, and Strict-Transport-Security."
+            },
+            {
+              "question": "How do I fix missing headers?",
+              "answer": "The tool provides specific recommendations for each missing or misconfigured header. Typically, these are added at the server or CDN level."
+            },
+            {
+              "question": "Does this tool modify my website?",
+              "answer": "No. This is a read-only analysis tool. It checks headers but makes no changes to your website."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Enter URL",
+              "description": "Paste the URL of the website you want to analyze."
+            },
+            {
+              "title": "Check Headers",
+              "description": "Click analyze to fetch and inspect the site's security headers."
+            },
+            {
+              "title": "Review Score",
+              "description": "View your security score and detailed recommendations for improvement."
+            }
+          ]
+        },
+        {
+          "id": "ssl-certificate-checker",
+          "name": "SSL Certificate Checker",
+          "description": "Check SSL certificate details, validity, and chain for any website. Verify issuer, expiration, and encryption strength privately.",
+          "route": "/ssl-certificate-checker",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "ssl-certificate-checker-free",
+            "ssl-certificate-checker-online",
+            "free-ssl-certificate-checker-no-signup",
+            "best-ssl-certificate-checker-online",
+            "ssl-certificate-checker-tool",
+            "ssl-certificate-checker-no-upload",
+            "privacy-friendly-ssl-certificate-checker",
+            "client-side-ssl-certificate-checker-free",
+            "local-ssl-certificate-checker-offline",
+            "ssl-certificate-checker-no-data-selling",
+            "secure-ssl-certificate-checker-locally"
+          ],
+          "features": [
+            "Check SSL certificate validity",
+            "View issuer and expiration date",
+            "Inspect certificate chain",
+            "Check encryption strength",
+            "Support for all public HTTPS sites",
+            "100% client-side — no data uploaded"
+          ],
+          "faqs": [
+            {
+              "question": "What information does the SSL checker show?",
+              "answer": "The tool shows certificate issuer, validity period, domain names covered, encryption algorithms, and chain validation status."
+            },
+            {
+              "question": "Why is my SSL certificate important?",
+              "answer": "SSL certificates encrypt data between your browser and the server. They verify the website's identity and protect against man-in-the-middle attacks."
+            },
+            {
+              "question": "Is this check accurate?",
+              "answer": "The tool uses your browser's built-in TLS/SSL APIs to inspect certificates, providing the same information your browser uses to establish secure connections."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Enter URL",
+              "description": "Paste the HTTPS URL of the website you want to check."
+            },
+            {
+              "title": "Check Certificate",
+              "description": "Click check to inspect the SSL certificate details."
+            },
+            {
+              "title": "Review Details",
+              "description": "View certificate validity, issuer, expiration, and encryption information."
+            }
+          ]
+        },
+        {
+          "id": "domain-reputation-checker",
+          "name": "Domain Reputation Checker",
+          "description": "Check domain reputation, age, and safety status. Analyze if a website is trustworthy, blacklisted, or suspicious.",
+          "route": "/domain-reputation-checker",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "domain-reputation-checker-free",
+            "domain-reputation-checker-online",
+            "free-domain-reputation-checker-no-signup",
+            "best-domain-reputation-checker-online",
+            "domain-reputation-checker-tool",
+            "domain-reputation-checker-no-upload",
+            "privacy-friendly-domain-reputation-checker",
+            "client-side-domain-reputation-checker-free",
+            "local-domain-reputation-checker-offline",
+            "domain-reputation-checker-no-data-selling",
+            "secure-domain-reputation-checker-locally"
+          ],
+          "features": [
+            "Check domain age and registration",
+            "Analyze SSL certificate status",
+            "Check blacklist status",
+            "Review DNS records",
+            "Get a trust score",
+            "100% client-side — URLs stay private"
+          ],
+          "faqs": [
+            {
+              "question": "What is domain reputation?",
+              "answer": "Domain reputation is a measure of a website's trustworthiness based on factors like domain age, SSL configuration, blacklist status, and DNS records."
+            },
+            {
+              "question": "How is the trust score calculated?",
+              "answer": "The score combines domain age, HTTPS adoption, SSL validity, blacklist status, and DNS configuration health into a single 0-100 rating."
+            },
+            {
+              "question": "Can this detect all malicious sites?",
+              "answer": "No. This tool checks technical indicators but cannot guarantee a site is safe. Always use caution and antivirus software for complete protection."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Enter Domain",
+              "description": "Type the domain name you want to check (e.g., example.com)."
+            },
+            {
+              "title": "Analyze Reputation",
+              "description": "Click analyze to check domain age, SSL, blacklists, and DNS records."
+            },
+            {
+              "title": "Review Trust Score",
+              "description": "View the domain's trust score and detailed security assessment."
+            }
+          ]
+        },
+        {
+          "id": "cookie-consent-generator",
+          "name": "Cookie Consent Generator",
+          "description": "Generate GDPR-compliant cookie consent banners and privacy notices for your website. Customize styles and export code.",
+          "route": "/cookie-consent-generator",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "cookie-consent-generator-free",
+            "cookie-consent-generator-online",
+            "free-cookie-consent-generator-no-signup",
+            "best-cookie-consent-generator-online",
+            "cookie-consent-generator-tool",
+            "cookie-consent-generator-no-upload",
+            "privacy-friendly-cookie-consent-generator",
+            "client-side-cookie-consent-generator-free",
+            "local-cookie-consent-generator-offline",
+            "cookie-consent-generator-no-data-selling",
+            "secure-cookie-consent-generator-locally"
+          ],
+          "features": [
+            "Generate GDPR-compliant consent banners",
+            "Customize colors, text, and positioning",
+            "Export HTML, CSS, and JavaScript",
+            "Support for multiple languages",
+            "Cookie preference center",
+            "100% client-side — code stays private"
+          ],
+          "faqs": [
+            {
+              "question": "What is a cookie consent banner?",
+              "answer": "A cookie consent banner is a notification that informs visitors about cookie usage and requests their consent, as required by privacy laws like GDPR and ePrivacy Directive."
+            },
+            {
+              "question": "Is this consent banner GDPR compliant?",
+              "answer": "The generated banners provide the necessary UI components for GDPR compliance, but you should consult a legal professional to ensure full compliance with your specific use case."
+            },
+            {
+              "question": "Can I customize the banner appearance?",
+              "answer": "Yes. You can customize colors, fonts, text, position, and behavior to match your website's design."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Configure Settings",
+              "description": "Set your banner text, colors, position, and cookie categories."
+            },
+            {
+              "title": "Customize Design",
+              "description": "Adjust the appearance to match your website's branding."
+            },
+            {
+              "title": "Export Code",
+              "description": "Copy the generated HTML, CSS, and JavaScript to add to your website."
+            }
+          ]
+        },
+        {
+          "id": "gdpr-compliance-checker",
+          "name": "GDPR Compliance Checker",
+          "description": "Check your website for GDPR compliance issues. Analyze privacy policy, cookie consent, data collection, and user rights — privately.",
+          "route": "/gdpr-compliance-checker",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "gdpr-compliance-checker-free",
+            "gdpr-compliance-checker-online",
+            "free-gdpr-compliance-checker-no-signup",
+            "best-gdpr-compliance-checker-online",
+            "gdpr-compliance-checker-tool",
+            "gdpr-compliance-checker-no-upload",
+            "privacy-friendly-gdpr-compliance-checker",
+            "client-side-gdpr-compliance-checker-free",
+            "local-gdpr-compliance-checker-offline",
+            "gdpr-compliance-checker-no-data-selling",
+            "secure-gdpr-compliance-checker-locally"
+          ],
+          "features": [
+            "Check privacy policy presence",
+            "Analyze cookie consent implementation",
+            "Review data collection practices",
+            "Check user rights mechanisms",
+            "Get a compliance score",
+            "100% client-side — URLs stay private"
+          ],
+          "faqs": [
+            {
+              "question": "What is GDPR?",
+              "answer": "GDPR (General Data Protection Regulation) is an EU law that gives individuals control over their personal data and imposes strict rules on organizations that collect, process, and store that data."
+            },
+            {
+              "question": "Is this checker legally binding?",
+              "answer": "No. This tool provides a technical assessment only. For legal compliance, consult a qualified privacy lawyer or data protection officer."
+            },
+            {
+              "question": "What does the compliance score mean?",
+              "answer": "The score reflects how well your website implements common GDPR requirements based on automated checks. Higher scores indicate better alignment with GDPR principles."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Enter Website URL",
+              "description": "Paste your website URL to begin the compliance scan."
+            },
+            {
+              "title": "Run Analysis",
+              "description": "The tool checks for privacy policies, cookie notices, and data handling practices."
+            },
+            {
+              "title": "Review Findings",
+              "description": "View your compliance score and detailed recommendations for improvement."
+            }
+          ]
+        },
+        {
+          "id": "data-retention-policy-generator",
+          "name": "Data Retention Policy Generator",
+          "description": "Generate a data retention policy for your business. Customize by industry, data types, and jurisdiction — export in minutes.",
+          "route": "/data-retention-policy-generator",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "data-retention-policy-generator-free",
+            "data-retention-policy-generator-online",
+            "free-data-retention-policy-generator-no-signup",
+            "best-data-retention-policy-generator-online",
+            "data-retention-policy-generator-tool",
+            "data-retention-policy-generator-no-upload",
+            "privacy-friendly-data-retention-policy-generator",
+            "client-side-data-retention-policy-generator-free",
+            "local-data-retention-policy-generator-offline",
+            "data-retention-policy-generator-no-data-selling",
+            "secure-data-retention-policy-generator-locally"
+          ],
+          "features": [
+            "Generate customized retention policies",
+            "Support for multiple jurisdictions",
+            "Define data categories and retention periods",
+            "Export in PDF and DOCX formats",
+            "Include deletion and archiving procedures",
+            "100% client-side — content stays private"
+          ],
+          "faqs": [
+            {
+              "question": "What is a data retention policy?",
+              "answer": "A data retention policy is a document that specifies how long an organization keeps different types of data, when to delete it, and how to securely dispose of it."
+            },
+            {
+              "question": "Is this policy legally binding?",
+              "answer": "The generated policy is a template. You should have it reviewed by legal counsel to ensure it meets your specific regulatory requirements."
+            },
+            {
+              "question": "Which regulations does it support?",
+              "answer": "The generator supports GDPR, CCPA, HIPAA, and other major privacy frameworks with jurisdiction-specific retention period recommendations."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Select Jurisdiction",
+              "description": "Choose your applicable privacy regulations and jurisdiction."
+            },
+            {
+              "title": "Define Data Categories",
+              "description": "Select the types of data your organization handles and retention periods."
+            },
+            {
+              "title": "Generate Policy",
+              "description": "Generate the policy document and export it in your preferred format."
+            }
+          ]
+        },
+        {
+          "id": "email-header-analyzer",
+          "name": "Email Header Analyzer",
+          "description": "Analyze email headers for deliverability issues, spoofing, and routing problems. Inspect SPF, DKIM, DMARC, and IP paths.",
+          "route": "/email-header-analyzer",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "email-header-analyzer-free",
+            "email-header-analyzer-online",
+            "free-email-header-analyzer-no-signup",
+            "best-email-header-analyzer-online",
+            "email-header-analyzer-tool",
+            "email-header-analyzer-no-upload",
+            "privacy-friendly-email-header-analyzer",
+            "client-side-email-header-analyzer-free",
+            "local-email-header-analyzer-offline",
+            "email-header-analyzer-no-data-selling",
+            "secure-email-header-analyzer-locally"
+          ],
+          "features": [
+            "Parse full email headers",
+            "Check SPF, DKIM, and DMARC results",
+            "Trace email delivery path",
+            "Detect spoofing attempts",
+            "Get deliverability recommendations",
+            "100% client-side — headers stay private"
+          ],
+          "faqs": [
+            {
+              "question": "What are email headers?",
+              "answer": "Email headers are metadata attached to every email that contains routing information, sender details, authentication results, and other technical data."
+            },
+            {
+              "question": "How do I get email headers?",
+              "answer": "In most email clients, you can view headers by opening the email, clicking 'More' or 'View original message', and looking for 'Show original' or 'View headers' options."
+            },
+            {
+              "question": "Can this detect email spoofing?",
+              "answer": "The tool analyzes SPF, DKIM, and DMARC results to help identify potential spoofing, but sophisticated attacks may still bypass these checks."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Copy Headers",
+              "description": "Copy the full email headers from your email client."
+            },
+            {
+              "title": "Paste and Analyze",
+              "description": "Paste the headers into the tool and click analyze."
+            },
+            {
+              "title": "Review Results",
+              "description": "View authentication results, delivery path, and any issues detected."
+            }
+          ]
+        },
+        {
+          "id": "ai-image-detector",
+          "name": "AI Image Detector",
+          "description": "Detect AI-generated images and deepfakes. Analyze image metadata and patterns to identify synthetic media — privately in your browser.",
+          "route": "/ai-image-detector",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "ai-image-detector-free",
+            "ai-image-detector-online",
+            "free-ai-image-detector-no-signup",
+            "best-ai-image-detector-online",
+            "ai-image-detector-tool",
+            "ai-image-detector-no-upload",
+            "privacy-friendly-ai-image-detector",
+            "client-side-ai-image-detector-free",
+            "local-ai-image-detector-offline",
+            "ai-image-detector-no-data-selling",
+            "secure-ai-image-detector-locally"
+          ],
+          "features": [
+            "Detect AI-generated images",
+            "Analyze image metadata and artifacts",
+            "Check for deepfake indicators",
+            "Support for JPEG, PNG, WebP",
+            "100% client-side — images never leave your browser",
+            "Free forever, no signup required"
+          ],
+          "faqs": [
+            {
+              "question": "How does AI image detection work?",
+              "answer": "The tool analyzes image metadata, compression artifacts, pixel patterns, and other indicators that are common in AI-generated images from models like DALL-E, Midjourney, and Stable Diffusion."
+            },
+            {
+              "question": "Is my image uploaded?",
+              "answer": "No. All analysis happens locally in your browser. Your images are never uploaded to any server."
+            },
+            {
+              "question": "Can it detect all AI images?",
+              "answer": "The tool detects common AI generation artifacts, but sophisticated fakes may evade detection. This tool is a helpful indicator, not definitive proof."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Upload Image",
+              "description": "Upload or paste the image you want to analyze."
+            },
+            {
+              "title": "Analyze",
+              "description": "Click analyze to run the detection algorithm."
+            },
+            {
+              "title": "Review Results",
+              "description": "View the AI probability score and detected artifacts."
+            }
+          ]
+        },
+        {
+          "id": "data-breach-checker",
+          "name": "Data Breach Checker",
+          "description": "Check if your email or phone number has appeared in a known data breach. Get breach details and security recommendations.",
+          "route": "/data-breach-checker",
+          "popular": true,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "data-breach-checker-free",
+            "data-breach-checker-online",
+            "free-data-breach-checker-no-signup",
+            "best-data-breach-checker-online",
+            "data-breach-checker-tool",
+            "data-breach-checker-no-upload",
+            "privacy-friendly-data-breach-checker",
+            "client-side-data-breach-checker-free",
+            "local-data-breach-checker-offline",
+            "data-breach-checker-no-data-selling",
+            "secure-data-breach-checker-locally"
+          ],
+          "features": [
+            "Check against known breach databases",
+            "Support for email and phone lookups",
+            "Get breach details and dates",
+            "Receive security recommendations",
+            "100% client-side — identifiers stay private",
+            "Free forever, no signup required"
+          ],
+          "faqs": [
+            {
+              "question": "How does breach checking work?",
+              "answer": "The tool checks your email or phone against known data breach databases using private hashing techniques. Your actual identifier is never exposed."
+            },
+            {
+              "question": "Where does breach data come from?",
+              "answer": "The tool uses Have I Been Pwned (HIBP) APIs and other reputable breach databases to provide accurate, up-to-date information."
+            },
+            {
+              "question": "Is my email address stored?",
+              "answer": "No. The tool uses k-anonymity to check breaches without revealing your full email address. Your privacy is protected throughout the process."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Enter Email or Phone",
+              "description": "Type the email or phone number you want to check."
+            },
+            {
+              "title": "Check Breaches",
+              "description": "Click check to search against known breach databases privately."
+            },
+            {
+              "title": "Review Results",
+              "description": "View any breaches found, dates, and security recommendations."
+            }
+          ]
+        },
+        {
+          "id": "email-deliverability-checker",
+          "name": "Email Deliverability Checker",
+          "description": "Check email deliverability by analyzing SPF, DKIM, and DMARC records. Ensure your emails reach the inbox, not spam.",
+          "route": "/email-deliverability-checker",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "email-deliverability-checker-free",
+            "email-deliverability-checker-online",
+            "free-email-deliverability-checker-no-signup",
+            "best-email-deliverability-checker-online",
+            "email-deliverability-checker-tool",
+            "email-deliverability-checker-no-upload",
+            "privacy-friendly-email-deliverability-checker",
+            "client-side-email-deliverability-checker-free",
+            "local-email-deliverability-checker-offline",
+            "email-deliverability-checker-no-data-selling",
+            "secure-email-deliverability-checker-locally"
+          ],
+          "features": [
+            "Check SPF, DKIM, and DMARC records",
+            "Get a deliverability score",
+            "Identify misconfigurations",
+            "Provide fix recommendations",
+            "Support for any domain",
+            "100% client-side — domains stay private"
+          ],
+          "faqs": [
+            {
+              "question": "What is email deliverability?",
+              "answer": "Email deliverability is the ability to successfully deliver emails to subscribers' inboxes rather than spam or junk folders."
+            },
+            {
+              "question": "How do I improve deliverability?",
+              "answer": "Set up SPF, DKIM, and DMARC records, maintain a clean email list, avoid spam trigger words, and monitor your sender reputation regularly."
+            },
+            {
+              "question": "Why are my emails going to spam?",
+              "answer": "Common causes include missing authentication records, low sender reputation, spammy content, or poor list hygiene. The tool helps identify technical issues."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Enter Domain",
+              "description": "Type the domain name you want to check."
+            },
+            {
+              "title": "Check Records",
+              "description": "Click check to analyze SPF, DKIM, and DMARC records."
+            },
+            {
+              "title": "Review Deliverability",
+              "description": "View your deliverability score and recommendations to fix issues."
+            }
+          ]
+        },
+        {
+          "id": "privacy-policy-auditor",
+          "name": "Privacy Policy Auditor",
+          "description": "Audit your privacy policy for GDPR, CCPA, and other regulation compliance. Get a checklist and improvement suggestions.",
+          "route": "/privacy-policy-auditor",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "privacy-policy-auditor-free",
+            "privacy-policy-auditor-online",
+            "free-privacy-policy-auditor-no-signup",
+            "best-privacy-policy-auditor-online",
+            "privacy-policy-auditor-tool",
+            "privacy-policy-auditor-no-upload",
+            "privacy-friendly-privacy-policy-auditor",
+            "client-side-privacy-policy-auditor-free",
+            "local-privacy-policy-auditor-offline",
+            "privacy-policy-auditor-no-data-selling",
+            "secure-privacy-policy-auditor-locally"
+          ],
+          "features": [
+            "Check against GDPR requirements",
+            "Analyze CCPA compliance",
+            "Review data collection disclosures",
+            "Check for required clauses",
+            "Get a compliance score",
+            "100% client-side — policy text stays private"
+          ],
+          "faqs": [
+            {
+              "question": "What does the privacy policy auditor check?",
+              "answer": "The tool checks for required disclosures, data collection statements, user rights, retention periods, third-party sharing clauses, and contact information."
+            },
+            {
+              "question": "Is this a legal audit?",
+              "answer": "No. This is an automated technical check. For legal compliance, consult a qualified privacy lawyer."
+            },
+            {
+              "question": "How often should I audit my privacy policy?",
+              "answer": "Review your privacy policy whenever you change data practices, add new features, or when regulations update. At minimum, audit annually."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Paste Policy",
+              "description": "Paste your privacy policy text into the tool."
+            },
+            {
+              "title": "Run Audit",
+              "description": "Click audit to analyze the policy against GDPR, CCPA, and other frameworks."
+            },
+            {
+              "title": "Review Findings",
+              "description": "View your compliance score and detailed recommendations."
+            }
+          ]
+        },
+        {
+          "id": "email-preview-generator",
+          "name": "Email Preview Generator",
+          "description": "Generate email previews across desktop, mobile, and dark mode. Test how your email looks in different clients before sending.",
+          "route": "/email-preview-generator",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "email-preview-generator-free",
+            "email-preview-generator-online",
+            "free-email-preview-generator-no-signup",
+            "best-email-preview-generator-online",
+            "email-preview-generator-tool",
+            "email-preview-generator-no-upload",
+            "privacy-friendly-email-preview-generator",
+            "client-side-email-preview-generator-free",
+            "local-email-preview-generator-offline",
+            "email-preview-generator-no-data-selling",
+            "secure-email-preview-generator-locally"
+          ],
+          "features": [
+            "Preview on desktop, mobile, and tablet",
+            "Dark and light mode previews",
+            "Test different email clients",
+            "Check responsiveness",
+            "100% client-side — email HTML stays private",
+            "Free forever, no signup required"
+          ],
+          "faqs": [
+            {
+              "question": "Why is email preview important?",
+              "answer": "Email clients render HTML differently. Previewing ensures your email looks good across Gmail, Outlook, Apple Mail, and mobile clients."
+            },
+            {
+              "question": "Which email clients are supported?",
+              "answer": "The tool simulates Gmail, Outlook, Apple Mail, Yahoo Mail, and common mobile email clients."
+            },
+            {
+              "question": "Is my email content uploaded?",
+              "answer": "No. All previews are generated locally in your browser. Your email HTML and content are never uploaded to any server."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Paste HTML",
+              "description": "Paste your email HTML code into the tool."
+            },
+            {
+              "title": "Select Clients",
+              "description": "Choose which email clients and devices to preview."
+            },
+            {
+              "title": "Review Previews",
+              "description": "View how your email renders across different clients and modes."
+            }
+          ]
+        },
+        {
+          "id": "spam-score-checker",
+          "name": "Spam Score Checker",
+          "description": "Check the spam score of your email or message. Analyze content, links, and formatting for deliverability issues.",
+          "route": "/spam-score-checker",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "spam-score-checker-free",
+            "spam-score-checker-online",
+            "free-spam-score-checker-no-signup",
+            "best-spam-score-checker-online",
+            "spam-score-checker-tool",
+            "spam-score-checker-no-upload",
+            "privacy-friendly-spam-score-checker",
+            "client-side-spam-score-checker-free",
+            "local-spam-score-checker-offline",
+            "spam-score-checker-no-data-selling",
+            "secure-spam-score-checker-locally"
+          ],
+          "features": [
+            "Calculate spam score 0-100",
+            "Analyze content and links",
+            "Check formatting and HTML",
+            "Identify spam trigger patterns",
+            "Get deliverability recommendations",
+            "100% client-side — content stays private"
+          ],
+          "faqs": [
+            {
+              "question": "What affects spam score?",
+              "answer": "Spam score is affected by content, links, HTML quality, sender reputation, authentication records, and recipient engagement patterns."
+            },
+            {
+              "question": "How can I improve my spam score?",
+              "answer": "Use proper authentication, clean email lists, avoid spam trigger words, balance text-to-image ratio, and include a plain-text version."
+            },
+            {
+              "question": "Is a low spam score a guarantee?",
+              "answer": "No. Spam filters use many signals beyond score. Use this tool as one part of a broader deliverability strategy."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Enter Content",
+              "description": "Paste your email subject line and body content."
+            },
+            {
+              "title": "Check Score",
+              "description": "Click check to analyze your spam score and identify issues."
+            },
+            {
+              "title": "Review Recommendations",
+              "description": "Review suggestions to improve deliverability before sending."
+            }
+          ]
+        },
+        {
+          "id": "consent-management-generator",
+          "name": "Consent Management Generator",
+          "description": "Generate consent management banners and preference centers for GDPR and CCPA compliance. Export customizable code.",
+          "route": "/consent-management-generator",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "consent-management-generator-free",
+            "consent-management-generator-online",
+            "free-consent-management-generator-no-signup",
+            "best-consent-management-generator-online",
+            "consent-management-generator-tool",
+            "consent-management-generator-no-upload",
+            "privacy-friendly-consent-management-generator",
+            "client-side-consent-management-generator-free",
+            "local-consent-management-generator-offline",
+            "consent-management-generator-no-data-selling",
+            "secure-consent-management-generator-locally"
+          ],
+          "features": [
+            "Generate consent management banners",
+            "Create preference centers",
+            "Support for multiple purposes",
+            "Export HTML, CSS, and JavaScript",
+            "GDPR and CCPA ready",
+            "100% client-side — code stays private"
+          ],
+          "faqs": [
+            {
+              "question": "What is consent management?",
+              "answer": "Consent management is the process of obtaining, recording, and managing user consent for data processing activities, as required by privacy regulations like GDPR."
+            },
+            {
+              "question": "Do I need a consent banner?",
+              "answer": "If you use cookies or collect personal data from EU or California residents, you likely need a consent mechanism. Consult legal advice for your specific situation."
+            },
+            {
+              "question": "Can I customize the banner?",
+              "answer": "Yes. You can customize colors, text, positioning, and cookie categories to match your website and legal requirements."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Configure Purposes",
+              "description": "Select data processing purposes and cookie categories."
+            },
+            {
+              "title": "Customize UI",
+              "description": "Adjust the banner and preference center appearance."
+            },
+            {
+              "title": "Export Code",
+              "description": "Copy the generated code and add it to your website."
+            }
+          ]
+        },
+        {
+          "id": "breach-notification-generator",
+          "name": "Breach Notification Generator",
+          "description": "Generate data breach notification templates for customers, regulators, and internal teams. Compliant with GDPR and state laws.",
+          "route": "/breach-notification-generator",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "breach-notification-generator-free",
+            "breach-notification-generator-online",
+            "free-breach-notification-generator-no-signup",
+            "best-breach-notification-generator-online",
+            "breach-notification-generator-tool",
+            "breach-notification-generator-no-upload",
+            "privacy-friendly-breach-notification-generator",
+            "client-side-breach-notification-generator-free",
+            "local-breach-notification-generator-offline",
+            "breach-notification-generator-no-data-selling",
+            "secure-breach-notification-generator-locally"
+          ],
+          "features": [
+            "Generate customer notification templates",
+            "Create regulator notification drafts",
+            "Include required disclosures",
+            "Support for GDPR and US state laws",
+            "Export in multiple formats",
+            "100% client-side — content stays private"
+          ],
+          "faqs": [
+            {
+              "question": "When must I notify about a data breach?",
+              "answer": "Under GDPR, notify within 72 hours of becoming aware. Under US state laws, timelines vary from 30 to 90 days. Consult legal counsel for your jurisdiction."
+            },
+            {
+              "question": "Who needs to be notified?",
+              "answer": "Typically, you must notify affected individuals, regulators (like Data Protection Authorities), and sometimes the media for large-scale breaches."
+            },
+            {
+              "question": "Is this template legally sufficient?",
+              "answer": "This tool provides a starting template. Have your legal team review and adapt it to your specific breach scenario and jurisdiction."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Enter Breach Details",
+              "description": "Provide details about the breach including data types affected and number of individuals."
+            },
+            {
+              "title": "Select Recipients",
+              "description": "Choose whether you need customer, regulator, or internal notifications."
+            },
+            {
+              "title": "Generate Template",
+              "description": "Generate the notification template and customize it for your needs."
+            }
+          ]
+        },
+        {
+          "id": "data-anonymization-report-generator",
+          "name": "Data Anonymization Report Generator",
+          "description": "Generate data anonymization reports for GDPR Article 25 compliance. Document anonymization techniques and risk assessments.",
+          "route": "/data-anonymization-report-generator",
+          "popular": false,
+          "category": "privacy-tools",
+          "extraSlugs": [
+            "data-anonymization-report-generator-free",
+            "data-anonymization-report-generator-online",
+            "free-data-anonymization-report-generator-no-signup",
+            "best-data-anonymization-report-generator-online",
+            "data-anonymization-report-generator-tool",
+            "data-anonymization-report-generator-no-upload",
+            "privacy-friendly-data-anonymization-report-generator",
+            "client-side-data-anonymization-report-generator-free",
+            "local-data-anonymization-report-generator-offline",
+            "data-anonymization-report-generator-no-data-selling",
+            "secure-data-anonymization-report-generator-locally"
+          ],
+          "features": [
+            "Document anonymization methods",
+            "Generate risk assessment reports",
+            "Support for GDPR Article 25",
+            "Include technique recommendations",
+            "Export in PDF format",
+            "100% client-side — data stays private"
+          ],
+          "faqs": [
+            {
+              "question": "What is data anonymization?",
+              "answer": "Data anonymization is the process of removing or obfuscating personally identifiable information so that individuals cannot be re-identified."
+            },
+            {
+              "question": "What techniques are covered?",
+              "answer": "The report covers pseudonymization, aggregation, k-anonymity, differential privacy, and other common anonymization techniques."
+            },
+            {
+              "question": "Is this report legally binding?",
+              "answer": "No. This is a documentation template. Consult a privacy professional to ensure your anonymization meets legal requirements."
+            }
+          ],
+          "howTo": [
+            {
+              "title": "Describe Dataset",
+              "description": "Provide information about the dataset you want to anonymize."
+            },
+            {
+              "title": "Select Techniques",
+              "description": "Choose the anonymization techniques you plan to apply."
+            },
+            {
+              "title": "Generate Report",
+              "description": "Generate and export the anonymization report for your records."
+            }
           ]
         }
       ]
