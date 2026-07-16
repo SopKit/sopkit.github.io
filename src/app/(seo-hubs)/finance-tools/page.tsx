@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
+import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
 	title: "Finance Calculators - Loan, GST, Margin & Sales Tax Tools | SopKit",
@@ -13,9 +14,7 @@ export default function FinanceToolsHub() {
 			title="Finance Tools"
 			description="Estimate loans, calculate sales taxes, find profit margins, and calculate payment fees. Fast, accurate, and secure browser-based calculations."
 			route="/finance-tools"
-		tools={getAllTools().filter(t => ["gst-calculator","emi-calculator","sip-calculator","salary-calculator-india","income-tax-calculator","fd-calculator-india","profit-margin-calculator","roi-calculator"].includes(t.id))}
-			mainCategorySlugs={["calculators"]}
-			guideTitle="Financial Planning Advice"
+		tools={getAllTools().filter(t => ["gst-calculator","emi-calculator","sip-calculator","salary-calculator-india","income-tax-calculator","fd-calculator-india","profit-margin-calculator","roi-calculator"].includes(t.id))}			guideTitle="Financial Planning Advice"
 			guidePoints={[
 				"Use loan calculators to check monthly EMI options and total interest payments over the tenure.",
 				"Estimate profit margins, markup factors, and markup percentages before pricing your products.",

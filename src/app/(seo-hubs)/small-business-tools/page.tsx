@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
+import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
 	title: "Small Business Tools - QR, SEO and Website Utilities | SopKit",
@@ -13,9 +14,7 @@ export default function SmallBusinessToolsHub() {
 			title="Small Business Tools"
 			description="Low-friction tools for restaurants, shops, service businesses, and local websites: QR codes, SEO previews, metadata checks, and practical website fixes."
 			route="/small-business-tools"
-		tools={getAllTools().filter(t => ["qr-code-generator","qr-code-generator-business","whatsapp-link-generator","invoice-generator-india","rent-receipt-generator","simple-invoice-generator","business-name-generator","product-description-generator"].includes(t.id))}
-			categoryNames={["Small Business QR Tools", "SEO Tools"]}
-			guideTitle="Small Business Growth Stack"
+		tools={getAllTools().filter(t => ["qr-code-generator","qr-code-generator-business","whatsapp-link-generator","invoice-generator-india","rent-receipt-generator","simple-invoice-generator","business-name-generator","product-description-generator"].includes(t.id))}			guideTitle="Small Business Growth Stack"
 			guidePoints={[
 				"Use QR pages for offline-to-online actions like menus, payments, forms, and WiFi.",
 				"Use SEO preview tools before sharing landing pages or publishing local service pages.",

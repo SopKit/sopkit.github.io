@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
+import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
 	title: "Student Tools - Attendance, Grades and Study Utilities | SopKit",
@@ -13,9 +14,7 @@ export default function StudentToolsHub() {
 			title="Student Tools"
 			description="A focused student utility hub for attendance planning, grade calculations, and form-upload tasks that students repeatedly search for during semesters and admissions."
 			route="/student-tools"
-		tools={getAllTools().filter(t => ["json-formatter","json-to-typescript","json-to-csv-converter","markdown-to-html","text-compare","case-converter","word-counter","slug-generator"].includes(t.id))}
-			categoryNames={["Student Calculators", "Exam Image Tools"]}
-			guideTitle="Student Tool Roadmap"
+		tools={getAllTools().filter(t => ["json-formatter","json-to-typescript","json-to-csv-converter","markdown-to-html","text-compare","case-converter","word-counter","slug-generator"].includes(t.id))}			guideTitle="Student Tool Roadmap"
 			guidePoints={[
 				"Use attendance calculators before shortage notices become urgent.",
 				"Use SGPA and CGPA calculators for planning, not official transcript replacement.",

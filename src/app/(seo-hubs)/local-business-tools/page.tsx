@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
+import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
 	title: "Local Business Tools - Free QR Codes, SEO & Invoicing | SopKit",
@@ -13,9 +14,7 @@ export default function LocalBusinessToolsHub() {
 			title="Local Business Tools"
 			description="Optimize offline operations and local search engine visibility with free QR tools, business calculators, and invoice generators."
 			route="/local-business-tools"
-		tools={getAllTools().filter(t => ["qr-code-generator","qr-code-generator-business","whatsapp-link-generator","google-business-profile-description-generator","restaurant-menu-description-generator","invoice-generator-india","rent-receipt-generator","simple-invoice-generator"].includes(t.id))}
-			mainCategorySlugs={["generators"]}
-			guideTitle="Growing Your Local Business"
+		tools={getAllTools().filter(t => ["qr-code-generator","qr-code-generator-business","whatsapp-link-generator","google-business-profile-description-generator","restaurant-menu-description-generator","invoice-generator-india","rent-receipt-generator","simple-invoice-generator"].includes(t.id))}			guideTitle="Growing Your Local Business"
 			guidePoints={[
 				"Create WiFi and UPI payment QR codes to simplify client checkout and customer connectivity.",
 				"Use visual invoice generators to quickly generate PDF receipts and estimates.",

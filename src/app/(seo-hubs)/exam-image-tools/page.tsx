@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
+import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
 	title: "Exam Image Tools - Photo and Signature Resizers | SopKit",
@@ -13,9 +14,7 @@ export default function ExamImageToolsHub() {
 			title="Exam Image Tools"
 			description="Specific photo, signature, DPI, and KB-size tools for Indian exam forms and application portals. Built for exact-use searches, not generic image editing."
 			route="/exam-image-tools"
-		tools={getAllTools().filter(t => ["ssc-photo-resizer","upsc-photo-resizer","neet-photo-resizer","jee-photo-resizer","pan-card-photo-resizer","passport-photo-maker","signature-resizer-under-20kb","photo-compressor-under-50kb"].includes(t.id))}
-			categoryNames={["Exam Image Tools"]}
-			guideTitle="How To Prepare Exam Uploads"
+		tools={getAllTools().filter(t => ["ssc-photo-resizer","upsc-photo-resizer","neet-photo-resizer","jee-photo-resizer","pan-card-photo-resizer","passport-photo-maker","signature-resizer-under-20kb","photo-compressor-under-50kb"].includes(t.id))}			guideTitle="How To Prepare Exam Uploads"
 			guidePoints={[
 				"Start with the official notification and note dimensions, format, and KB limits.",
 				"Crop before compression so the face, signature, or document area remains readable.",

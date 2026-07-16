@@ -64,7 +64,7 @@ export default async function ToolsDirectoryPage() {
 					</p>
 				</div>
 
-				<ToolDirectory categories={toolCategories} lang="en" />
+				<ToolDirectory tools={toolCategories.flatMap(c => c.tools)} />
 			</div>
 		</main>
 	);

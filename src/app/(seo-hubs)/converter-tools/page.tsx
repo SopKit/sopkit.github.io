@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
+import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
 	title: "Free Online Converter Tools - Image, PDF & Code Converters | SopKit",
@@ -13,9 +14,7 @@ export default function ConverterToolsHub() {
 			title="Converter Tools"
 			description="Convert files, images, documents, and data formats instantly in your browser. Fast, free, and completely secure client-side conversions."
 			route="/converter-tools"
-		tools={getAllTools().filter(t => ["jpg-to-png-converter","png-to-jpg-converter","webp-to-png-converter","png-to-webp-converter","svg-to-png","ico-to-png","base64-encode","base64-decode","url-encode","url-decode"].includes(t.id))}
-			mainCategorySlugs={["image", "pdf"]}
-			guideTitle="File and Format Conversion Best Practices"
+		tools={getAllTools().filter(t => ["jpg-to-png-converter","png-to-jpg-converter","webp-to-png-converter","png-to-webp-converter","svg-to-png","ico-to-png","base64-encode","base64-decode","url-encode","url-decode"].includes(t.id))}			guideTitle="File and Format Conversion Best Practices"
 			guidePoints={[
 				"Use image converters to convert PNG and WebP files to JPG to meet application upload limits.",
 				"Convert Word documents and images to PDF format to preserve formatting when sharing files.",

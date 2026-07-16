@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
+import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
 	title: "Free Online Calculators - Math, Finance, Academic & Student Tools | SopKit",
@@ -13,9 +14,7 @@ export default function CalculatorToolsHub() {
 			title="Calculator Tools"
 			description="Explore our collection of free online calculators. Get instant results for loan EMIs, GST, academic grades, attendance, and business margins."
 			route="/calculator-tools"
-		tools={getAllTools().filter(t => ["bmi-calculator","gpa-to-4-scale-converter","cgpa-to-percentage-calculator","gst-calculator","emi-calculator","sip-calculator","salary-calculator-india","freelance-rate-calculator"].includes(t.id))}
-			mainCategorySlugs={["calculators"]}
-			guideTitle="Using SopKit Calculators"
+		tools={getAllTools().filter(t => ["bmi-calculator","gpa-to-4-scale-converter","cgpa-to-percentage-calculator","gst-calculator","emi-calculator","sip-calculator","salary-calculator-india","freelance-rate-calculator"].includes(t.id))}			guideTitle="Using SopKit Calculators"
 			guidePoints={[
 				"Use academic calculators to plan semester grades and check required marks for exams.",
 				"Estimate business markups and sales taxes to plan client proposals and product prices.",

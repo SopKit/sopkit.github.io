@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
+import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
 	title: "Business Tools - Free Online Utilities for Startups & Shops | SopKit",
@@ -13,9 +14,7 @@ export default function BusinessToolsHub() {
 			title="Business Tools"
 			description="Low-friction tools for business owners, freelancers, and startups. Generate invoices, print HRA rent receipts, draft HR letters, and estimate taxes easily."
 			route="/business-tools"
-		tools={getAllTools().filter(t => ["rent-receipt-generator","simple-invoice-generator","resignation-letter-generator","bio-data-maker","leave-application-generator","payment-reminder-generator","client-proposal-generator","product-description-generator"].includes(t.id))}
-			mainCategorySlugs={["generators"]}
-			guideTitle="Business Tool Workflows"
+		tools={getAllTools().filter(t => ["rent-receipt-generator","simple-invoice-generator","resignation-letter-generator","bio-data-maker","leave-application-generator","payment-reminder-generator","client-proposal-generator","product-description-generator"].includes(t.id))}			guideTitle="Business Tool Workflows"
 			guidePoints={[
 				"Use invoice and receipt generators to prepare client bills and claim tax deductions.",
 				"Draft professional HR communications, including leave applications and resignation letters.",
