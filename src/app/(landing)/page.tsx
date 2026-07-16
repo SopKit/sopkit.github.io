@@ -24,8 +24,8 @@ import { generateMetadata as baseGenerateMetadata } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<any> {
 	return baseGenerateMetadata({
-		title: "SopKit - The Premium Free Online Toolkit (No Signup)",
-		description: `Access ${SITE_CONFIG.toolCountString} pro-grade online tools for Image, PDF, Video, Audio, and SEO. Secure, private, and 100% free with no registration required.`,
+		title: "SopKit - Private, Fast, Client-Side Free Online Tools (No Signup)",
+		description: `${SITE_CONFIG.toolCountString} free online tools for Image, PDF, Video, Audio, and SEO that run 100% client-side in your browser. Private, fast, and secure — no uploads, no data selling, no signup required.`,
 		path: "/",
 	});
 }
@@ -64,7 +64,8 @@ function ToolCard({ tool }: { tool: any }) {
 }
 
 export default async function LandingPage() {
-	const heroTitle = "SopKit — 460+ Free Online Tools, No Signup Required";
+	const heroTitle = `Private, Fast & Secure — ${SITE_CONFIG.toolCountString} Free Tools That Run in Your Browser`;
+	const heroSubtitle = "While other tool sites upload and sell your data, SopKit processes everything client-side on your own device. No uploads, no tracking your files, no signup — just fast, free tools.";
 	const allTools = getAllTools();
 
 	// 8 Featured tools (highly popular)
@@ -126,7 +127,7 @@ export default async function LandingPage() {
 
 			<div className="container mx-auto px-4 max-w-7xl">
 				{/* Hero Section */}
-				<PremiumHero title={heroTitle} />
+				<PremiumHero title={heroTitle} subtitle={heroSubtitle} />
 
 				<div className="py-8 max-w-4xl mx-auto">
 					<AdPlacement placement="after-hero" pageType="home" />

@@ -29,7 +29,12 @@ export function PremiumHero({ title, subtitle = "" }) {
 				<h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-foreground mb-8 leading-[1.1] bg-gradient-to-b from-foreground to-foreground/80">
 					{title}
 				</h1>
-				
+				{subtitle && (
+					<p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+						{subtitle}
+					</p>
+				)}
+
 				{/* Search Discovery Engine */}
 				<form 
 					onSubmit={handleSearch}

@@ -12,6 +12,7 @@ import {
 } from "./ToolSharedComponents";
 import { getDynamicSEOContent } from "./seoTemplates";
 import { getRelatedTools, type Tool } from "@/lib/tools";
+import { MANUAL_TOOL_CONTENT } from "@/data/tool-manual-content";
 import { Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -22,7 +23,7 @@ import { getSeoOpportunityByRoute } from "@/data/seo-opportunities";
 import { EmbedWidgetGiver } from "./EmbedWidgetGiver";
 import { ToolToolbar } from "./ToolToolbar";
 
-function ToolArticle({ content }: ToolArticleProps) {
+function ToolArticle({ content }: { content?: string }) {
 	if (!content) return null;
 
 	// Simple markdown-like parser for the templates
@@ -137,7 +138,14 @@ export default function ToolLayout({
 
 	// Dynamically enrich tool data if SEO content is missing
 	const enrichedTool: Tool = { ...tool };
-	if (
+	const manualContent = MANUAL_TOOL_CONTENT[tool.id];
+
+	if (manualContent) {
+		if (!enrichedTool.article) enrichedTool.article = manualContent.whatItIs;
+		if (!enrichedTool.features) enrichedTool.features = manualContent.features;
+		if (!enrichedTool.howTo) enrichedTool.howTo = manualContent.howToUse;
+		if (!enrichedTool.faqs) enrichedTool.faqs = manualContent.faqs;
+	} else if (
 		!enrichedTool.features ||
 		!enrichedTool.faqs ||
 		!enrichedTool.howTo ||
