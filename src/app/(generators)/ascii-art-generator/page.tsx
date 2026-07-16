@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 import AsciiArtGeneratorTool from "@/components/tools/generators/AsciiArtGeneratorTool";
 
 export const metadata = generateToolMetadata({

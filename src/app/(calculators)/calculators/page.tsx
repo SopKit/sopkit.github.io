@@ -1,4 +1,5 @@
 import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 import { PremiumHero } from "@/components/landing/PremiumHero";
 import { AppleFooter } from "@/components/footers/AppleFooter";
 import { AppleNavbar } from "@/components/navigation/AppleNavbar";
