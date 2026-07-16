@@ -127,7 +127,6 @@ export function AppleNavbar() {
 	const categories = [
 		{ name: "Features", href: STATIC_ROUTES.TOOLS },
 		{ name: "Packages", href: "/packages" },
-		{ name: "Pricing", href: STATIC_ROUTES.PRO },
 		{ name: "Resources", href: STATIC_ROUTES.TOOL_GUIDES },
 		{ name: "Blog", href: STATIC_ROUTES.BLOG },
 	];

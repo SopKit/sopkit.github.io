@@ -1,7 +1,5 @@
 import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
 import { PremiumHero } from "@/components/landing/PremiumHero";
-import { AppleFooter } from "@/components/footers/AppleFooter";
-import { AppleNavbar } from "@/components/navigation/AppleNavbar";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -37,7 +35,6 @@ export default function VideoToolsHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
-			<AppleNavbar />
 			<main>
 				<PremiumHero title="Video Tools" subtitle="Convert, edit, and download videos 100% free in your browser. No signup, no uploads to servers — everything stays private." />
 				<div className="container mx-auto px-4 py-16 max-w-7xl relative">
@@ -69,7 +66,6 @@ export default function VideoToolsHub() {
 					</div>
 				</div>
 			</main>
-			<AppleFooter categories={categories} />
 		</div>
 	);
 }

@@ -1,7 +1,5 @@
 import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
 import { PremiumHero } from "@/components/landing/PremiumHero";
-import { AppleFooter } from "@/components/footers/AppleFooter";
-import { AppleNavbar } from "@/components/navigation/AppleNavbar";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -40,7 +38,6 @@ export default function TextHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
-			<AppleNavbar />
 			<main>
 				<PremiumHero 
 					title="Text Utilities" 
@@ -74,7 +71,6 @@ export default function TextHub() {
 					</div>
 				</div>
 			</main>
-			<AppleFooter categories={categories} />
 		</div>
 	);
 }

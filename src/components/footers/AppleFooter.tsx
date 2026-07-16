@@ -69,11 +69,6 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 								</Link>
 							</li>
 							<li>
-								<Link href={STATIC_ROUTES.PRO} className="text-muted-foreground hover:text-foreground transition-colors">
-									Pro Account
-								</Link>
-							</li>
-							<li>
 								<Link href={STATIC_ROUTES.TOOL_GUIDES} className="text-muted-foreground hover:text-foreground transition-colors">
 									Resources
 								</Link>

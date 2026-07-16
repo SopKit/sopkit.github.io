@@ -22,15 +22,11 @@ import { getSeoOpportunityByRoute } from "@/data/seo-opportunities";
 import { EmbedWidgetGiver } from "./EmbedWidgetGiver";
 import { ToolToolbar } from "./ToolToolbar";
 
-interface ToolArticleProps {
-	content?: string;
-}
-
 function ToolArticle({ content }: ToolArticleProps) {
 	if (!content) return null;
 
 	// Simple markdown-like parser for the templates
-	const lines = content.trim().split("\n");
+	const lines = content.replace(/\\n/g, "\n").trim().split("\n");
 	return (
 		<section className="scroll-mt-24 prose prose-invert max-w-none">
 			<div className="space-y-8">
@@ -69,7 +65,7 @@ function ToolArticle({ content }: ToolArticleProps) {
 					return (
 						<p
 							key={i}
-							className="text-xl text-muted-foreground leading-relaxed"
+							className="text-xl text-muted-foreground leading-relaxed whitespace-pre-line"
 						>
 							{line}
 						</p>
@@ -257,7 +253,7 @@ SopKit is the trusted, privacy-first choice for handling highly sensitive person
 
 	const defaultSuffix =
 		" Fast and privacy-conscious. Data handling depends on the tool and is documented on each page.";
-	const finalDescription = String(enrichedTool.description || "").trim();
+	const finalDescription = String(enrichedTool.description || "").replace(/\\n/g, "\n").trim();
 
 	return (
 		<div className="min-h-screen bg-background text-foreground selection:bg-primary/20 ambient-glow">
