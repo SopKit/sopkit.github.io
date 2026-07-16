@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import PhotoCompressor50kb from "@/components/tools/exam/PhotoCompressor50kb";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Photo Compressor Under 50KB Online - No Signup | SopKit",
-	description: "Resize and compress files with our free Photo Compressor Under 50KB online. Safe and private browser utility for government exam portal applications. 100% free.",
-	keywords: "photo-compressor-under-50kb, Photo Compressor Under 50KB, compress photo to 50kb, resize image to 50kb online, photo 50kb limit, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/photo-compressor-under-50kb",
-	},
-	openGraph: {
-		title: "Free Photo Compressor Under 50KB Online - No Signup | SopKit",
-		description: "Resize and compress files with our free Photo Compressor Under 50KB online. Safe and private browser utility for government exam portal applications. 100% free.",
-		url: "https://sopkit.github.io/photo-compressor-under-50kb",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Photo Compressor Under 50KB Online - No Signup | SopKit",
-		description: "Resize and compress files with our free Photo Compressor Under 50KB online. Safe and private browser utility for government exam portal applications. 100% free.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Photo Compressor Under 50KB",
+	description: "Private Photo Compressor Under 50KB: privately compress exam documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/photo-compressor-under-50kb",
+	category: "exam-tools",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/photo-compressor-under-50kb");

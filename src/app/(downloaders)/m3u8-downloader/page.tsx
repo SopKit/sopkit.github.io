@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import M3u8Downloader from "@/components/tools/downloaders/M3u8Downloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free M3u8 Downloader Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free M3u8 Downloader online. Fast, secure, and private processing with no signup. No signup required.",
-	keywords: "m3u8 downloader, free online tool, no signup, m3u8-downloader, free m3u8-downloader, M3u8 Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/m3u8-downloader",
-	},
-	openGraph: {
-		title: "Free M3u8 Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free M3u8 Downloader online. Fast, secure, and private processing with no signup. No signup required.",
-		url: "https://sopkit.github.io/m3u8-downloader",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free M3u8 Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free M3u8 Downloader online. Fast, secure, and private processing with no signup. No signup required.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "M3u8 Downloader",
+	description: "Private M3u8 Downloader: privately download videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/m3u8-downloader",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/m3u8-downloader");

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute, getToolById } from "@/lib/tools";
 import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
+import { generateToolMetadata } from "@/lib/seo";
 
 const relatedToolIds = [
 	"ssc-photo-resizer",
@@ -13,29 +14,12 @@ const relatedToolIds = [
 	"pdf-compressor-under-200kb"
 ];
 
-export const metadata = {
-	title: "Free SSC MTS Photo Resizer Online - No Signup | SopKit",
-	description: "Resize and compress files with our free SSC MTS Photo Resizer online. Safe and private browser utility for government exam portal applications. Try it free now.",
-	keywords: "ssc mts photo resizer, free online tool, no signup, ssc mts photo resizer online, exam-tools, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/ssc-mts-photo-resizer",
-	},
-	openGraph: {
-		title: "Free SSC MTS Photo Resizer Online - No Signup | SopKit",
-		description: "Resize and compress files with our free SSC MTS Photo Resizer online. Safe and private browser utility for government exam portal applications. Try it free now.",
-		url: "https://sopkit.github.io/ssc-mts-photo-resizer",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free SSC MTS Photo Resizer Online - No Signup | SopKit",
-		description: "Resize and compress files with our free SSC MTS Photo Resizer online. Safe and private browser utility for government exam portal applications. Try it free now.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "SSC MTS Photo Resizer",
+	description: "Private SSC MTS Photo Resizer: privately convert exam documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/ssc-mts-photo-resizer",
+	category: "exam-tools",
+});
 
 export default async function SscMtsResizerPage() {
 	const tool = getToolByRoute("/ssc-mts-photo-resizer");

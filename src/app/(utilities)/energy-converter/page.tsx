@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import UniversalUnitConverter from "@/components/tools/built-ins/UniversalUnitConverter";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Energy Converter Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free Energy Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
-	keywords: "energy converter, joules to calories, kwh to joules, btu converter, convert energy units, free energy calculator",
-	alternates: {
-		canonical: "https://sopkit.github.io/energy-converter",
-	},
-	openGraph: {
-		title: "Free Energy Converter Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Energy Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
-		url: "https://sopkit.github.io/energy-converter",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Energy Converter Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Energy Converter online. Fast, secure browser-based utility with no registration. No registration needed.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Energy Converter",
+	description: "Private Energy Converter: privately convert web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/energy-converter",
+	category: "utilities",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/energy-converter");

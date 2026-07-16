@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free BMI + Ideal Weight Calculator Online - No Signup | SopKit",
-	description: "Compute rates, taxes, averages, and conversions with our free BMI + Ideal Weight Calculator online. Quick, accurate browser calculator with no registration.",
-	keywords: "bmi + ideal weight calculator, bmi-ideal-weight-calculator, free online, no signup, SopKit, browser utility",
-	alternates: {
-		canonical: "https://sopkit.github.io/bmi-ideal-weight-calculator",
-	},
-	openGraph: {
-		title: "Free BMI + Ideal Weight Calculator Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free BMI + Ideal Weight Calculator online. Quick, accurate browser calculator with no registration.",
-		url: "https://sopkit.github.io/bmi-ideal-weight-calculator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free BMI + Ideal Weight Calculator Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free BMI + Ideal Weight Calculator online. Quick, accurate browser calculator with no registration.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "BMI + Ideal Weight Calculator",
+	description: "Private BMI + Ideal Weight Calculator: privately calculate numbers entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/bmi-ideal-weight-calculator",
+	category: "calculators",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/bmi-ideal-weight-calculator");

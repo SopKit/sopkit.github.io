@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
-	keywords: "complete seo audit tool, free online tool, no signup, complete seo audit tool online, seo, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/seo-audit-tool",
-	},
-	openGraph: {
-		title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
-		url: "https://sopkit.github.io/seo-audit-tool",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Complete SEO Audit Tool Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Complete SEO Audit Tool online. Optimize search presence with no signup. 100% free.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Complete SEO Audit Tool",
+	description: "Private Complete SEO Audit: privately validate website data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/seo-audit-tool",
+	category: "seo",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/seo-audit-tool");

@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import Base64Tool from "@/components/tools/developer/Base64Tool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Base64 Encode Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free Base64 Encode online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
-	keywords: "base64 encode, free online tool, no signup, base64 encode online, utilities, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/base64-encode",
-	},
-	openGraph: {
-		title: "Free Base64 Encode Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Base64 Encode online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
-		url: "https://sopkit.github.io/base64-encode",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Base64 Encode Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Base64 Encode online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Base64 Encode",
+	description: "Private Base64 Encode: privately process web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/base64-encode",
+	category: "utilities",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/base64-encode");

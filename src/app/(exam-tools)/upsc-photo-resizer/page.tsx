@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free UPSC Photo Resizer Online - No Signup | SopKit",
-	description: "Resize and compress files with our free UPSC Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
-	keywords: "upsc-photo-resizer, UPSC Photo Resizer, upsc photo resizer online, upsc signature resizer, upsc image compressor, upsc exam resize, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/upsc-photo-resizer",
-	},
-	openGraph: {
-		title: "Free UPSC Photo Resizer Online - No Signup | SopKit",
-		description: "Resize and compress files with our free UPSC Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
-		url: "https://sopkit.github.io/upsc-photo-resizer",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free UPSC Photo Resizer Online - No Signup | SopKit",
-		description: "Resize and compress files with our free UPSC Photo Resizer online. Safe and private browser utility for government exam portal applications. No signup required.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "UPSC Photo Resizer",
+	description: "Private UPSC Photo Resizer: privately process exam documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/upsc-photo-resizer",
+	category: "exam-tools",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/upsc-photo-resizer");

@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import PinterestDownloader from "@/components/tools/downloaders/PinterestDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Pinterest Image Downloader Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Pinterest Image Downloader online. Fast, secure, and private processing with no signup.",
-	keywords: "pinterest image downloader, free online tool, no signup, pinterest-image-downloader, free pinterest-image-downloader, Pinterest Image Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/pinterest-image-downloader",
-	},
-	openGraph: {
-		title: "Free Pinterest Image Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Pinterest Image Downloader online. Fast, secure, and private processing with no signup.",
-		url: "https://sopkit.github.io/pinterest-image-downloader",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Pinterest Image Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Pinterest Image Downloader online. Fast, secure, and private processing with no signup.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Pinterest Image Downloader",
+	description: "Private Pinterest Image Downloader: privately download videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/pinterest-image-downloader",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/pinterest-image-downloader");

@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import WordToPDF from "@/components/tools/pdf/WordToPDF";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Word to PDF Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free Word to PDF online. Safe and private browser-based tool with no registration. No signup required.",
-	keywords: "word to pdf, free online tool, no signup, word to pdf online, pdf, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/word-to-pdf",
-	},
-	openGraph: {
-		title: "Free Word to PDF Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free Word to PDF online. Safe and private browser-based tool with no registration. No signup required.",
-		url: "https://sopkit.github.io/word-to-pdf",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Word to PDF Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free Word to PDF online. Safe and private browser-based tool with no registration. No signup required.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Word to PDF",
+	description: "Private Word to PDF: privately convert PDF documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/word-to-pdf",
+	category: "pdf",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/word-to-pdf");

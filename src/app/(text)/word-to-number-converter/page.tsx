@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import WordCounterTool from "@/components/tools/text/WordCounterTool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Word to Number Converter Online - No Signup | SopKit",
-	description: "Format, clean, sort, and analyze text files instantly with our free Word to Number Converter online. Fast and private browser utility with no signup. 100% free.",
-	keywords: "word to number converter, free online tool, no signup, word to number converter online, text, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/word-to-number-converter",
-	},
-	openGraph: {
-		title: "Free Word to Number Converter Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Word to Number Converter online. Fast and private browser utility with no signup. 100% free.",
-		url: "https://sopkit.github.io/word-to-number-converter",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Word to Number Converter Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Word to Number Converter online. Fast and private browser utility with no signup. 100% free.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Word to Number Converter",
+	description: "Private Word to Number Converter: privately convert text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/word-to-number-converter",
+	category: "text",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/word-to-number-converter");

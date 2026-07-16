@@ -6,30 +6,14 @@ import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sparkles, ArrowRight } from "lucide-react";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Fun Generators Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free Fun Generators online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
-	keywords: "ai generators, bio generator, name generator, fun tools, free online generators, SopKit, generators, free generators, generators online, online generator, free creator, content generator",
-	alternates: {
-		canonical: "https://sopkit.github.io/generators",
-	},
-	openGraph: {
-		title: "Free Fun Generators Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Fun Generators online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
-		url: "https://sopkit.github.io/generators",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Fun Generators Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Fun Generators online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Fun Generators",
+	description: "Privacy-friendly, 100% client-side Fun Generators online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+	route: "/generators",
+	category: "others",
+});
 
 export default function GeneratorsHub() {
 	const tools = getAllToolsByCategory("generators");

@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import KeywordTool from "@/components/tools/seo/KeywordTool";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Advanced Keyword Research Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Keyword Research online. Optimize search presence with no signup.",
-	keywords: "keyword research tool, seo keyword finder, search keywords, keyword analysis, free seo tool, SopKit, keyword-research-tool, free keyword-research-tool, keyword research tool online, seo tool, website analyzer, online seo checker",
-	alternates: {
-		canonical: "https://sopkit.github.io/keyword-research-tool",
-	},
-	openGraph: {
-		title: "Free Advanced Keyword Research Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Keyword Research online. Optimize search presence with no signup.",
-		url: "https://sopkit.github.io/keyword-research-tool",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Advanced Keyword Research Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Keyword Research online. Optimize search presence with no signup.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Advanced Keyword Research",
+	description: "Private Advanced Keyword Research: privately process website data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/keyword-research-tool",
+	category: "seo",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/keyword-research-tool");

@@ -2,31 +2,15 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import JobMessageGenerator from "@/components/tools/impl/JobMessageGenerator";
+import { generateToolMetadata } from "@/lib/seo";
 
 
-export const metadata = {
-	title: "Free Cover Letter Generator Online - No Signup | SopKit",
-	description: "Format, clean, sort, and analyze text files instantly with our free Cover Letter Generator online. Fast and private browser utility with no signup. Easy to use.",
-	keywords: "cover letter generator, free online tool, no signup, cover letter generator online, text, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/cover-letter-generator",
-	},
-	openGraph: {
-		title: "Free Cover Letter Generator Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Cover Letter Generator online. Fast and private browser utility with no signup. Easy to use.",
-		url: "https://sopkit.github.io/cover-letter-generator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Cover Letter Generator Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Cover Letter Generator online. Fast and private browser utility with no signup. Easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Cover Letter Generator",
+	description: "Private Cover Letter: privately generate text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/cover-letter-generator",
+	category: "text",
+});
 
 export default function ToolPage() {
 	const tool = getToolByRoute("/cover-letter-generator");

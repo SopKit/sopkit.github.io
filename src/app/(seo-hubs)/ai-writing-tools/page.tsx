@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SeoHubPage from "@/components/seo/SeoHubPage";
+import HubPage from "@/components/seo/HubPage";
 
 export const metadata: Metadata = {
 	title: "AI Writing Tools - Free Text & Content Generators | SopKit",
@@ -9,10 +9,11 @@ export const metadata: Metadata = {
 
 export default function AiWritingToolsHub() {
 	return (
-		<SeoHubPage
+		<HubPage
 			title="AI Writing Tools"
 			description="Draft copy, format paragraphs, generate slogans, and write custom emails with our free online AI writing and text tools."
 			route="/ai-writing-tools"
+		tools={getAllTools().filter(t => ["review-reply-generator","product-description-generator","instagram-caption-generator","seo-title-meta-description-generator","meta-tag-generator","open-graph-generator","twitter-card-generator","description-generator"].includes(t.id))}
 			mainCategorySlugs={["generators"]}
 			guideTitle="Optimizing Your AI Writing"
 			guidePoints={[

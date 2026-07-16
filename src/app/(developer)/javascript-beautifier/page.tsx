@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import BuiltInMarkup from "@/components/tools/built-ins/BuiltInMarkup";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free JavaScript Beautifier Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free JavaScript Beautifier online. Secure, local developer utility with no registration. 100% free.",
-	keywords: "javascript beautifier, free online tool, no signup, javascript beautifier online, developer, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/javascript-beautifier",
-	},
-	openGraph: {
-		title: "Free JavaScript Beautifier Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JavaScript Beautifier online. Secure, local developer utility with no registration. 100% free.",
-		url: "https://sopkit.github.io/javascript-beautifier",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free JavaScript Beautifier Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JavaScript Beautifier online. Secure, local developer utility with no registration. 100% free.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "JavaScript Beautifier",
+	description: "Private JavaScript Beautifier: privately format code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/javascript-beautifier",
+	category: "developer",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/javascript-beautifier");

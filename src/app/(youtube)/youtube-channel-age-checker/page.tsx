@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import YouTubeChannelIDFinderTool from "@/components/tools/youtube/YouTubeChannelIDFinderTool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free YouTube Channel Age Checker Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free YouTube Channel Age Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
-	keywords: "youtube channel age checker, free online tool, no signup, youtube channel age checker online, youtube, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/youtube-channel-age-checker",
-	},
-	openGraph: {
-		title: "Free YouTube Channel Age Checker Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free YouTube Channel Age Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
-		url: "https://sopkit.github.io/youtube-channel-age-checker",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free YouTube Channel Age Checker Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free YouTube Channel Age Checker online. Fast, secure browser-based utility with no registration. Easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "YouTube Channel Age Checker",
+	description: "Private YouTube Channel Age Checker: privately generate YouTube content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/youtube-channel-age-checker",
+	category: "youtube",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/youtube-channel-age-checker");

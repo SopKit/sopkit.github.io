@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import TwitterCardGenerator from "@/components/tools/built-ins/TwitterCardGenerator";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Twitter Card Generator Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Twitter Card Generator online. Optimize search presence with no signup. Easy to use.",
-	keywords: "twitter card generator, free online tool, no signup, twitter card generator online, seo, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/twitter-card-generator",
-	},
-	openGraph: {
-		title: "Free Twitter Card Generator Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Twitter Card Generator online. Optimize search presence with no signup. Easy to use.",
-		url: "https://sopkit.github.io/twitter-card-generator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Twitter Card Generator Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Twitter Card Generator online. Optimize search presence with no signup. Easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Twitter Card Generator",
+	description: "Private Twitter Card: privately generate website data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/twitter-card-generator",
+	category: "seo",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/twitter-card-generator");

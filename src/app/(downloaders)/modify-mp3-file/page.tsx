@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import TikTokMP3Converter from "@/components/tools/downloaders/TikTokMP3Converter";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Modify MP3 File Online - No Signup | SopKit",
-	description: "Process, edit, and convert audio files with our free Modify MP3 File online. High-quality output and private browser-based tools with no signup. Free & secure.",
-	keywords: "modify mp3 file, free online tool, no signup, modify-mp3-file, free modify-mp3-file, Modify Mp3 File online, video downloader, free download tool, online media saver, no signup download, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/modify-mp3-file",
-	},
-	openGraph: {
-		title: "Free Modify MP3 File Online - No Signup | SopKit",
-		description: "Process, edit, and convert audio files with our free Modify MP3 File online. High-quality output and private browser-based tools with no signup. Free & secure.",
-		url: "https://sopkit.github.io/modify-mp3-file",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Modify MP3 File Online - No Signup | SopKit",
-		description: "Process, edit, and convert audio files with our free Modify MP3 File online. High-quality output and private browser-based tools with no signup. Free & secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Modify MP3 File",
+	description: "Private Modify MP3 File: privately download audio files entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/modify-mp3-file",
+	category: "audio",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/modify-mp3-file");

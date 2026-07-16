@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Advanced Sitemap Generator Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Sitemap Generator online. Optimize search presence with no signup.",
-	keywords: "advanced sitemap generator, free online tool, no signup, advanced sitemap generator online, seo, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/sitemap-generator",
-	},
-	openGraph: {
-		title: "Free Advanced Sitemap Generator Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Sitemap Generator online. Optimize search presence with no signup.",
-		url: "https://sopkit.github.io/sitemap-generator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Advanced Sitemap Generator Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Advanced Sitemap Generator online. Optimize search presence with no signup.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Advanced Sitemap Generator",
+	description: "Private Advanced Sitemap: privately generate website data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/sitemap-generator",
+	category: "seo",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/sitemap-generator");

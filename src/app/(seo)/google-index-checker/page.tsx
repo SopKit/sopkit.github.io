@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Google Index Checker Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
-	keywords: "google index checker, free online tool, no signup, google index checker online, seo, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/google-index-checker",
-	},
-	openGraph: {
-		title: "Free Google Index Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
-		url: "https://sopkit.github.io/google-index-checker",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Google Index Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Google Index Checker online. Optimize search presence with no signup. Free & secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Google Index Checker",
+	description: "Private Google Index Checker: privately validate website data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/google-index-checker",
+	category: "seo",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/google-index-checker");

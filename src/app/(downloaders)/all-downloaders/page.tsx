@@ -1,29 +1,13 @@
 import AllDownloaders from "@/components/tools/downloaders/AllDownloaders";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free All Downloaders Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free All Downloaders online. Fast, secure, and private processing with no signup. No signup required.",
-	keywords: "all downloaders, free online tool, no signup, others, all downloaders online, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/all-downloaders",
-	},
-	openGraph: {
-		title: "Free All Downloaders Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free All Downloaders online. Fast, secure, and private processing with no signup. No signup required.",
-		url: "https://sopkit.github.io/all-downloaders",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free All Downloaders Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free All Downloaders online. Fast, secure, and private processing with no signup. No signup required.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "All Downloaders",
+	description: "Private All Downloaders: privately download videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/all-downloaders",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = {

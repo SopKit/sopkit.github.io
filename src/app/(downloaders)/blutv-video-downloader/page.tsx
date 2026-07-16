@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import BlutvDownloader from "@/components/tools/downloaders/BlutvDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Blutv Video Downloader Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Blutv Video Downloader online. Fast, secure, and private processing with no signup. Easy to use.",
-	keywords: "blutv video downloader, free online tool, no signup, blutv-video-downloader, free blutv-video-downloader, Blutv Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/blutv-video-downloader",
-	},
-	openGraph: {
-		title: "Free Blutv Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Blutv Video Downloader online. Fast, secure, and private processing with no signup. Easy to use.",
-		url: "https://sopkit.github.io/blutv-video-downloader",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Blutv Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Blutv Video Downloader online. Fast, secure, and private processing with no signup. Easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Blutv Video Downloader",
+	description: "Private Blutv Video Downloader: privately download videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/blutv-video-downloader",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/blutv-video-downloader");

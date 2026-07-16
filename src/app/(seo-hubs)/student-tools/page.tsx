@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SeoHubPage from "@/components/seo/SeoHubPage";
+import HubPage from "@/components/seo/HubPage";
 
 export const metadata: Metadata = {
 	title: "Student Tools - Attendance, Grades and Study Utilities | SopKit",
@@ -9,10 +9,11 @@ export const metadata: Metadata = {
 
 export default function StudentToolsHub() {
 	return (
-		<SeoHubPage
+		<HubPage
 			title="Student Tools"
 			description="A focused student utility hub for attendance planning, grade calculations, and form-upload tasks that students repeatedly search for during semesters and admissions."
 			route="/student-tools"
+		tools={getAllTools().filter(t => ["json-formatter","json-to-typescript","json-to-csv-converter","markdown-to-html","text-compare","case-converter","word-counter","slug-generator"].includes(t.id))}
 			categoryNames={["Student Calculators", "Exam Image Tools"]}
 			guideTitle="Student Tool Roadmap"
 			guidePoints={[

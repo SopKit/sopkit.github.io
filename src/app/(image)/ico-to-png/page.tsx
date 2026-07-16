@@ -2,31 +2,15 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
+import { generateToolMetadata } from "@/lib/seo";
 
 
-export const metadata = {
-	title: "Free ICO to PNG Converter Online - No Signup | SopKit",
-	description: "Edit, convert, and compress images with our free ICO to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-	keywords: "ico to png converter, free online tool, no signup, ico to png converter online, image, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/ico-to-png",
-	},
-	openGraph: {
-		title: "Free ICO to PNG Converter Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free ICO to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-		url: "https://sopkit.github.io/ico-to-png",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free ICO to PNG Converter Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free ICO to PNG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "ICO to PNG Converter",
+	description: "Private ICO to PNG Converter: privately convert images entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/ico-to-png",
+	category: "image",
+});
 
 export default function ToolPage() {
 	const tool = getToolByRoute("/ico-to-png");

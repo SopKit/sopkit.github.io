@@ -1,29 +1,13 @@
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import ImagePillar from "@/components/pillars/ImagePillar";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Free Image Tools Online Online - No Signup | SopKit",
-	description: "Edit, convert, and compress images with our free Free Image Tools Online online. Crop, resize, and optimize photos in your browser with no signup. Easy to use.",
-	keywords: "image tools, free image tools online, image compressor free, remove background online, resize image for instagram, photo enhancer free, convert heic to jpg, SopKit image",
-	alternates: {
-		canonical: "https://sopkit.github.io/image-tools",
-	},
-	openGraph: {
-		title: "Free Free Image Tools Online Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free Free Image Tools Online online. Crop, resize, and optimize photos in your browser with no signup. Easy to use.",
-		url: "https://sopkit.github.io/image-tools",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Free Image Tools Online Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free Free Image Tools Online online. Crop, resize, and optimize photos in your browser with no signup. Easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Free Image Tools Online",
+	description: "Private Free Image Tools: privately process images entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/image-tools",
+	category: "image",
+});
 
 export default async function ToolPage() {
 	const tool = {

@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import SitemapUrlDownloader from "@/components/tools/downloaders/SitemapUrlDownloader";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Sitemap Url Downloader Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Sitemap Url Downloader online. Optimize search presence with no signup. Easy to use.",
-	keywords: "sitemap url downloader, free online tool, no signup, sitemap url downloader online, seo, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/sitemap-url-downloader",
-	},
-	openGraph: {
-		title: "Free Sitemap Url Downloader Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Sitemap Url Downloader online. Optimize search presence with no signup. Easy to use.",
-		url: "https://sopkit.github.io/sitemap-url-downloader",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Sitemap Url Downloader Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Sitemap Url Downloader online. Optimize search presence with no signup. Easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Sitemap Url Downloader",
+	description: "Private Sitemap Url Downloader: privately download website data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/sitemap-url-downloader",
+	category: "seo",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/sitemap-url-downloader");

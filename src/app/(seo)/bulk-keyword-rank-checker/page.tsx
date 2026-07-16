@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Bulk Keyword Rank Checker Online - No Signup | SopKit",
-	description: "Audit websites, analyze search rankings, and generate schemas with our free Bulk Keyword Rank Checker online. Optimize search presence with no signup.",
-	keywords: "bulk keyword rank checker, free online tool, no signup, bulk keyword rank checker online, seo, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/bulk-keyword-rank-checker",
-	},
-	openGraph: {
-		title: "Free Bulk Keyword Rank Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Bulk Keyword Rank Checker online. Optimize search presence with no signup.",
-		url: "https://sopkit.github.io/bulk-keyword-rank-checker",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Bulk Keyword Rank Checker Online - No Signup | SopKit",
-		description: "Audit websites, analyze search rankings, and generate schemas with our free Bulk Keyword Rank Checker online. Optimize search presence with no signup.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Bulk Keyword Rank Checker",
+	description: "Private Bulk Keyword Rank Checker: privately validate website data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/bulk-keyword-rank-checker",
+	category: "seo",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/bulk-keyword-rank-checker");

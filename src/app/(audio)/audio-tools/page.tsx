@@ -4,30 +4,14 @@ import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Music, ArrowRight, Sparkles } from "lucide-react";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Audio Tools Online - No Signup | SopKit",
-	description: "Process, edit, and convert audio files with our free Audio Tools online. High-quality output and private browser-based tools with no signup. No signup required.",
-	keywords: "audio tools, free online tool, no signup, audio tools online, audio, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/audio-tools",
-	},
-	openGraph: {
-		title: "Free Audio Tools Online - No Signup | SopKit",
-		description: "Process, edit, and convert audio files with our free Audio Tools online. High-quality output and private browser-based tools with no signup. No signup required.",
-		url: "https://sopkit.github.io/audio-tools",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Audio Tools Online - No Signup | SopKit",
-		description: "Process, edit, and convert audio files with our free Audio Tools online. High-quality output and private browser-based tools with no signup. No signup required.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Audio Tools",
+	description: "Private Audio Tools: privately convert audio files entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/audio-tools",
+	category: "audio",
+});
 
 export default function AudioHub() {
 	const tools = getAllToolsByCategory("audio");

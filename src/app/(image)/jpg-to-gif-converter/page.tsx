@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free JPG to GIF Converter Online - No Signup | SopKit",
-	description: "Edit, convert, and compress images with our free JPG to GIF Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-	keywords: "jpg to gif converter, free online tool, no signup, jpg to gif converter online, image, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/jpg-to-gif-converter",
-	},
-	openGraph: {
-		title: "Free JPG to GIF Converter Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free JPG to GIF Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-		url: "https://sopkit.github.io/jpg-to-gif-converter",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free JPG to GIF Converter Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free JPG to GIF Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "JPG to GIF Converter",
+	description: "Private JPG to GIF Converter: privately convert images entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/jpg-to-gif-converter",
+	category: "image",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/jpg-to-gif-converter");

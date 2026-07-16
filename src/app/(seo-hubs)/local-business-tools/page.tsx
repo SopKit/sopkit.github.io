@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SeoHubPage from "@/components/seo/SeoHubPage";
+import HubPage from "@/components/seo/HubPage";
 
 export const metadata: Metadata = {
 	title: "Local Business Tools - Free QR Codes, SEO & Invoicing | SopKit",
@@ -9,10 +9,11 @@ export const metadata: Metadata = {
 
 export default function LocalBusinessToolsHub() {
 	return (
-		<SeoHubPage
+		<HubPage
 			title="Local Business Tools"
 			description="Optimize offline operations and local search engine visibility with free QR tools, business calculators, and invoice generators."
 			route="/local-business-tools"
+		tools={getAllTools().filter(t => ["qr-code-generator","qr-code-generator-business","whatsapp-link-generator","google-business-profile-description-generator","restaurant-menu-description-generator","invoice-generator-india","rent-receipt-generator","simple-invoice-generator"].includes(t.id))}
 			mainCategorySlugs={["generators"]}
 			guideTitle="Growing Your Local Business"
 			guidePoints={[

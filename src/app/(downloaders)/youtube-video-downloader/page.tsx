@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import YouTubeDownloader from "@/components/tools/downloaders/YouTubeDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Youtube Video Downloader Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free Youtube Video Downloader online. Fast, secure browser-based utility with no registration. Try it free now.",
-	keywords: "youtube video downloader, download youtube videos, youtube hd downloader, free video downloader, online tool, SopKit, youtube-video-downloader, free youtube-video-downloader, youtube video downloader online, online downloader, free media saver, video downloader",
-	alternates: {
-		canonical: "https://sopkit.github.io/youtube-video-downloader",
-	},
-	openGraph: {
-		title: "Free Youtube Video Downloader Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Youtube Video Downloader online. Fast, secure browser-based utility with no registration. Try it free now.",
-		url: "https://sopkit.github.io/youtube-video-downloader",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Youtube Video Downloader Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Youtube Video Downloader online. Fast, secure browser-based utility with no registration. Try it free now.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Youtube Video Downloader",
+	description: "Private Youtube Video Downloader: privately download YouTube content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/youtube-video-downloader",
+	category: "youtube",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/youtube-video-downloader");

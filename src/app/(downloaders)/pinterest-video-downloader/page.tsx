@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import PinterestDownloader from "@/components/tools/downloaders/PinterestDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Pinterest Video Downloader Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Pinterest Video Downloader online. Fast, secure, and private processing with no signup.",
-	keywords: "pinterest video downloader, download pinterest videos, pinterest video saver, pin video download, free tool, SopKit, pinterest-video-downloader, free pinterest-video-downloader, pinterest video downloader online, online downloader, free media saver, video downloader",
-	alternates: {
-		canonical: "https://sopkit.github.io/pinterest-video-downloader",
-	},
-	openGraph: {
-		title: "Free Pinterest Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Pinterest Video Downloader online. Fast, secure, and private processing with no signup.",
-		url: "https://sopkit.github.io/pinterest-video-downloader",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Pinterest Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Pinterest Video Downloader online. Fast, secure, and private processing with no signup.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Pinterest Video Downloader",
+	description: "Private Pinterest Video Downloader: privately download videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/pinterest-video-downloader",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/pinterest-video-downloader");

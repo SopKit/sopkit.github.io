@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Railway Exam Photo Resizer Online - No Signup | SopKit",
-	description: "Resize and compress files with our free Railway Exam Photo Resizer online. Safe and private browser utility for government exam portal applications. 100% free.",
-	keywords: "railway-exam-photo-resizer, Railway Exam Photo Resizer, rrb photo resizer, railway signature resizer, rrb photo size, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/railway-exam-photo-resizer",
-	},
-	openGraph: {
-		title: "Free Railway Exam Photo Resizer Online - No Signup | SopKit",
-		description: "Resize and compress files with our free Railway Exam Photo Resizer online. Safe and private browser utility for government exam portal applications. 100% free.",
-		url: "https://sopkit.github.io/railway-exam-photo-resizer",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Railway Exam Photo Resizer Online - No Signup | SopKit",
-		description: "Resize and compress files with our free Railway Exam Photo Resizer online. Safe and private browser utility for government exam portal applications. 100% free.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Railway Exam Photo Resizer",
+	description: "Private Railway Exam Photo Resizer: privately process exam documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/railway-exam-photo-resizer",
+	category: "exam-tools",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/railway-exam-photo-resizer");

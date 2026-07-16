@@ -1,29 +1,13 @@
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import VideoEditorTool from "@/components/tools/video/VideoEditorTool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Video Editor Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Video Editor online. Fast, secure, and private processing with no signup. 100% free and secure.",
-	keywords: "video, editor, free video editor, online video editor, SopKit, video-editor, video editor, free video-editor, video editor online, video converter, browser video tool, free video utility",
-	alternates: {
-		canonical: "https://sopkit.github.io/video-editor",
-	},
-	openGraph: {
-		title: "Free Video Editor Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Video Editor online. Fast, secure, and private processing with no signup. 100% free and secure.",
-		url: "https://sopkit.github.io/video-editor",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Video Editor Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Video Editor online. Fast, secure, and private processing with no signup. 100% free and secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Video Editor",
+	description: "Private Video Editor: privately process videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/video-editor",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = { id: "video-editor", name: "Video Editor", description: "Trim, cut, and edit video clips directly in your browser. Our free Video Editor requires no software installation and supports all major formats.", route: "/video-editor", category: "video" };

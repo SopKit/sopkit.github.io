@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SeoHubPage from "@/components/seo/SeoHubPage";
+import HubPage from "@/components/seo/HubPage";
 
 export const metadata: Metadata = {
 	title: "QR Tools - Restaurant Menu, Google Form, WiFi and UPI QR | SopKit",
@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 
 export default function QrToolsHub() {
 	return (
-		<SeoHubPage
+		<HubPage
 			title="QR Tools"
 			description="QR pages grouped by actual use case: menus, forms, WiFi, UPI payments, and business cards. Clean tools for small businesses and everyday sharing."
 			route="/qr-tools"
-			categoryNames={["Small Business QR Tools"]}
+			tools={getAllTools().filter(t => ["qr-code-generator","qr-code-generator-business","qr-code-reader","qr-code-decoder","barcode-generator","barcode-reader","whatsapp-link-generator"].includes(t.id))}
 			guideTitle="QR Code Quality Checklist"
 			guidePoints={[
 				"Use a mobile-friendly destination page before printing any QR code.",

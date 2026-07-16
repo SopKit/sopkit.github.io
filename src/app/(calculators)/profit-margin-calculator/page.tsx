@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Profit Margin Calculator Online - No Signup | SopKit",
-	description: "Compute rates, taxes, averages, and conversions with our free Profit Margin Calculator online. Quick, accurate browser calculator with no registration.",
-	keywords: "profit margin calculator, profit-margin-calculator, free online, no signup, SopKit, browser utility",
-	alternates: {
-		canonical: "https://sopkit.github.io/profit-margin-calculator",
-	},
-	openGraph: {
-		title: "Free Profit Margin Calculator Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free Profit Margin Calculator online. Quick, accurate browser calculator with no registration.",
-		url: "https://sopkit.github.io/profit-margin-calculator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Profit Margin Calculator Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free Profit Margin Calculator online. Quick, accurate browser calculator with no registration.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Profit Margin Calculator",
+	description: "Private Profit Margin Calculator: privately calculate numbers entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/profit-margin-calculator",
+	category: "calculators",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/profit-margin-calculator");

@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import TikTokAudioDownloader from "@/components/tools/downloaders/TikTokAudioDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Free MP3 Extractor Online - No Signup | SopKit",
-	description: "Process, edit, and convert audio files with our free Free MP3 Extractor online. High-quality output and private browser-based tools with no signup. Easy to use.",
-	keywords: "free mp3 extractor, free online tool, no signup, free-mp3-extractor, Free Mp3 Extractor online, video downloader, free download tool, online media saver, no signup download, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/free-mp3-extractor",
-	},
-	openGraph: {
-		title: "Free Free MP3 Extractor Online - No Signup | SopKit",
-		description: "Process, edit, and convert audio files with our free Free MP3 Extractor online. High-quality output and private browser-based tools with no signup. Easy to use.",
-		url: "https://sopkit.github.io/free-mp3-extractor",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Free MP3 Extractor Online - No Signup | SopKit",
-		description: "Process, edit, and convert audio files with our free Free MP3 Extractor online. High-quality output and private browser-based tools with no signup. Easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Free MP3 Extractor",
+	description: "Private Free MP3 Extractor: privately download audio files entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/free-mp3-extractor",
+	category: "audio",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/free-mp3-extractor");

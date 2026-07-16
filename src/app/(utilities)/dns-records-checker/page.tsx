@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import DnsLookupTool from "@/components/tools/built-ins/DnsLookupTool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free DNS Records Checker Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free DNS Records Checker online. Fast, secure browser-based utility with no registration. 100% free and secure.",
-	keywords: "dns records checker, free online tool, no signup, dns records checker online, utilities, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/dns-records-checker",
-	},
-	openGraph: {
-		title: "Free DNS Records Checker Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free DNS Records Checker online. Fast, secure browser-based utility with no registration. 100% free and secure.",
-		url: "https://sopkit.github.io/dns-records-checker",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free DNS Records Checker Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free DNS Records Checker online. Fast, secure browser-based utility with no registration. 100% free and secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "DNS Records Checker",
+	description: "Private DNS Records Checker: privately validate web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/dns-records-checker",
+	category: "utilities",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/dns-records-checker");

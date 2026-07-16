@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import JpgToPdfExam from "@/components/tools/exam/JpgToPdfExam";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free JPG to PDF for Exam Forms Online - No Signup | SopKit",
-	description: "Resize and compress files with our free JPG to PDF for Exam Forms online. Safe and private browser utility for government exam portal applications. Easy to use.",
-	keywords: "jpg-to-pdf-exam-forms, JPG to PDF for Exam Forms, convert jpg to pdf for exam, image to pdf exam forms, pdf creator, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/jpg-to-pdf-exam-forms",
-	},
-	openGraph: {
-		title: "Free JPG to PDF for Exam Forms Online - No Signup | SopKit",
-		description: "Resize and compress files with our free JPG to PDF for Exam Forms online. Safe and private browser utility for government exam portal applications. Easy to use.",
-		url: "https://sopkit.github.io/jpg-to-pdf-exam-forms",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free JPG to PDF for Exam Forms Online - No Signup | SopKit",
-		description: "Resize and compress files with our free JPG to PDF for Exam Forms online. Safe and private browser utility for government exam portal applications. Easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "JPG to PDF for Exam Forms",
+	description: "Private JPG to PDF for Exam Forms: privately convert exam documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/jpg-to-pdf-exam-forms",
+	category: "exam-tools",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/jpg-to-pdf-exam-forms");

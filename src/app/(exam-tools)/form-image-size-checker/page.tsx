@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import FormImageSizeChecker from "@/components/tools/exam/FormImageSizeChecker";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Form Image Size Checker Online - No Signup | SopKit",
-	description: "Resize and compress files with our free Form Image Size Checker online. Safe and private browser utility for government exam portal applications. Free & secure.",
-	keywords: "form-image-size-checker, Form Image Size Checker, check image size online, photo dimension checker, exam photo validator, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/form-image-size-checker",
-	},
-	openGraph: {
-		title: "Free Form Image Size Checker Online - No Signup | SopKit",
-		description: "Resize and compress files with our free Form Image Size Checker online. Safe and private browser utility for government exam portal applications. Free & secure.",
-		url: "https://sopkit.github.io/form-image-size-checker",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Form Image Size Checker Online - No Signup | SopKit",
-		description: "Resize and compress files with our free Form Image Size Checker online. Safe and private browser utility for government exam portal applications. Free & secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Form Image Size Checker",
+	description: "Private Form Image Size Checker: privately validate exam documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/form-image-size-checker",
+	category: "exam-tools",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/form-image-size-checker");

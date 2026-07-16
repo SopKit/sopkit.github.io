@@ -2,30 +2,14 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { KeyRound, ShieldCheck, ChevronRight } from "lucide-react";
 import { getAllTools } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free API Key Tester Suite Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free API Key Tester Suite online. Secure, local developer utility with no registration. 100% free.",
-	keywords: "api key tester suite, free online tool, no signup, api key tester suite online, developer, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/api-key-tester",
-	},
-	openGraph: {
-		title: "Free API Key Tester Suite Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free API Key Tester Suite online. Secure, local developer utility with no registration. 100% free.",
-		url: "https://sopkit.github.io/api-key-tester",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free API Key Tester Suite Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free API Key Tester Suite online. Secure, local developer utility with no registration. 100% free.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "API Key Tester Suite",
+	description: "Private API Key Tester Suite: privately calculate code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/api-key-tester",
+	category: "developer",
+});
 
 export default async function ApiKeyTesterHubPage() {
 	const tool = {

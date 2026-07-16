@@ -1,29 +1,13 @@
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import FakeChatGeneratorTool from "@/components/tools/generators/FakeChatGeneratorTool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Fake Chat Generator Online - No Signup | SopKit",
-	description: "Create custom content with our free Fake Chat Generator online. Generate high-quality outputs instantly with no registration required. No registration needed.",
-	keywords: "fake, chat, generator, free fake chat generator, online fake chat generator, SopKit, fake-chat-generator, fake chat generator, free fake-chat-generator, fake chat generator online, online generator, free creator",
-	alternates: {
-		canonical: "https://sopkit.github.io/fake-chat-generator",
-	},
-	openGraph: {
-		title: "Free Fake Chat Generator Online - No Signup | SopKit",
-		description: "Create custom content with our free Fake Chat Generator online. Generate high-quality outputs instantly with no registration required. No registration needed.",
-		url: "https://sopkit.github.io/fake-chat-generator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Fake Chat Generator Online - No Signup | SopKit",
-		description: "Create custom content with our free Fake Chat Generator online. Generate high-quality outputs instantly with no registration required. No registration needed.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Fake Chat Generator",
+	description: "Private Fake Chat: privately generate content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/fake-chat-generator",
+	category: "generators",
+});
 
 export default async function ToolPage() {
 	const tool = { id: "fake-chat-generator", name: "Fake Chat Generator", description: "Create realistic fake chat screenshots for social media, presentations, or fun. Our free Fake Chat Generator supports multiple messaging app styles.", route: "/fake-chat-generator", category: "generators" };

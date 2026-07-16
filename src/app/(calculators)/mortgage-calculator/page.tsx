@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Mortgage Calculator Online - No Signup | SopKit",
-	description: "Compute rates, taxes, averages, and conversions with our free Mortgage Calculator online. Quick, accurate browser calculator with no registration. Easy to use.",
-	keywords: "mortgage calculator, monthly mortgage payment, home loan calculator, mortgage interest calculator, house payment calculator",
-	alternates: {
-		canonical: "https://sopkit.github.io/mortgage-calculator",
-	},
-	openGraph: {
-		title: "Free Mortgage Calculator Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free Mortgage Calculator online. Quick, accurate browser calculator with no registration. Easy to use.",
-		url: "https://sopkit.github.io/mortgage-calculator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Mortgage Calculator Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free Mortgage Calculator online. Quick, accurate browser calculator with no registration. Easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Mortgage Calculator",
+	description: "Private Mortgage Calculator: privately calculate numbers entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/mortgage-calculator",
+	category: "calculators",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/mortgage-calculator");

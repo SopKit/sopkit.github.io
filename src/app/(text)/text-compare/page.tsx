@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import TextCompareTool from "@/components/tools/text/TextCompareTool";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Text Compare Online - No Signup | SopKit",
-	description: "Format, clean, sort, and analyze text files instantly with our free Text Compare online. Fast and private browser utility with no signup. 100% free and secure.",
-	keywords: "text compare, free online tool, no signup, text-compare, free text-compare, Text Compare online, text tool, text editor online, content formatter, writing utility, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/text-compare",
-	},
-	openGraph: {
-		title: "Free Text Compare Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Text Compare online. Fast and private browser utility with no signup. 100% free and secure.",
-		url: "https://sopkit.github.io/text-compare",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Text Compare Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Text Compare online. Fast and private browser utility with no signup. 100% free and secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Text Compare",
+	description: "Private Text Compare: privately process text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/text-compare",
+	category: "text",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/text-compare");

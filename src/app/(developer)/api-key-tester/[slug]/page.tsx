@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getToolByRoute, getRelatedTools, getAllTools } from "@/lib/tools";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import ApiKeyTester from "@/components/tools/developer/ApiKeyTester";
+import { generateToolMetadata } from "@/lib/seo";
 
 export async function generateMetadata({ params }) {
 	const { slug } = await params;
@@ -10,29 +11,12 @@ export async function generateMetadata({ params }) {
 
 	if (!tool) return {};
 
-	return {
-		title: `${tool.seoTitle || tool.name} - API Test Utility | SopKit`,
+	return generateToolMetadata({
+		name: tool.name,
 		description: tool.seoDescription || tool.description,
-		keywords: `api tester, ${tool.name.toLowerCase()}, validate api key, debug api, SopKit`,
-		alternates: {
-			canonical: `https://sopkit.github.io/api-key-tester/${slug}/`,
-		},
-		openGraph: {
-			title: `${tool.name} - API Test Utility | SopKit`,
-			description: tool.description,
-			url: `https://sopkit.github.io/api-key-tester/${slug}/`,
-			siteName: "SopKit",
-			images: [{ url: "/og-image.jpg" }],
-			type: "website",
-		},
-		twitter: {
-			card: "summary_large_image",
-			title: `${tool.name} - API Test Utility | SopKit`,
-			description: tool.description,
-			images: ["/og-image.jpg"],
-		},
-		robots: { index: true, follow: true },
-	};
+		route: tool.route,
+		category: tool.category || "developer",
+	});
 }
 
 export default async function ApiKeyTesterPage({ params }: any) {

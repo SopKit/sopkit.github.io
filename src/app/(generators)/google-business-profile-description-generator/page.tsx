@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free GBP Description Generator Online - No Signup | SopKit",
-	description: "Create custom content with our free GBP Description Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
-	keywords: "gbp description generator, google-business-profile-description-generator, free online, no signup, SopKit, browser utility",
-	alternates: {
-		canonical: "https://sopkit.github.io/google-business-profile-description-generator",
-	},
-	openGraph: {
-		title: "Free GBP Description Generator Online - No Signup | SopKit",
-		description: "Create custom content with our free GBP Description Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
-		url: "https://sopkit.github.io/google-business-profile-description-generator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free GBP Description Generator Online - No Signup | SopKit",
-		description: "Create custom content with our free GBP Description Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "GBP Description Generator",
+	description: "Private GBP Description: privately generate content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/google-business-profile-description-generator",
+	category: "generators",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/google-business-profile-description-generator");

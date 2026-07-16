@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free QR Code Generator for Business Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free QR Code Generator for Business online. Fast, secure browser-based utility with no registration. 100% free.",
-	keywords: "qr code generator for business, qr-code-generator-business, free online, no signup, SopKit, browser utility",
-	alternates: {
-		canonical: "https://sopkit.github.io/qr-code-generator-business",
-	},
-	openGraph: {
-		title: "Free QR Code Generator for Business Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free QR Code Generator for Business online. Fast, secure browser-based utility with no registration. 100% free.",
-		url: "https://sopkit.github.io/qr-code-generator-business",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free QR Code Generator for Business Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free QR Code Generator for Business online. Fast, secure browser-based utility with no registration. 100% free.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "QR Code Generator for Business",
+	description: "Private QR Code Generator for Business: privately generate web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/qr-code-generator-business",
+	category: "utilities",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/qr-code-generator-business");

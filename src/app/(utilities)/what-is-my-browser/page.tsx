@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import BrowserDetectTool from "@/components/tools/built-ins/BrowserDetectTool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free What Is My Browser Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free What Is My Browser online. Fast, secure browser-based utility with no registration. 100% free and secure.",
-	keywords: "what is my browser, free online tool, no signup, what is my browser online, utilities, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/what-is-my-browser",
-	},
-	openGraph: {
-		title: "Free What Is My Browser Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free What Is My Browser online. Fast, secure browser-based utility with no registration. 100% free and secure.",
-		url: "https://sopkit.github.io/what-is-my-browser",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free What Is My Browser Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free What Is My Browser online. Fast, secure browser-based utility with no registration. 100% free and secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "What Is My Browser",
+	description: "Private What Is My Browser: privately process web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/what-is-my-browser",
+	category: "utilities",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/what-is-my-browser");

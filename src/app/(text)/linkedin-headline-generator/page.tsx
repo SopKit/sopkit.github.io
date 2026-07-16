@@ -2,31 +2,15 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import JobMessageGenerator from "@/components/tools/impl/JobMessageGenerator";
+import { generateToolMetadata } from "@/lib/seo";
 
 
-export const metadata = {
-	title: "Free LinkedIn Headline Generator Online - No Signup | SopKit",
-	description: "Format, clean, sort, and analyze text files instantly with our free LinkedIn Headline Generator online. Fast and private browser utility with no signup.",
-	keywords: "linkedin headline generator, free online tool, no signup, linkedin headline generator online, text, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/linkedin-headline-generator",
-	},
-	openGraph: {
-		title: "Free LinkedIn Headline Generator Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free LinkedIn Headline Generator online. Fast and private browser utility with no signup.",
-		url: "https://sopkit.github.io/linkedin-headline-generator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free LinkedIn Headline Generator Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free LinkedIn Headline Generator online. Fast and private browser utility with no signup.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "LinkedIn Headline Generator",
+	description: "Private LinkedIn Headline: privately generate text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/linkedin-headline-generator",
+	category: "text",
+});
 
 export default function ToolPage() {
 	const tool = getToolByRoute("/linkedin-headline-generator");

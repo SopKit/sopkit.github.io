@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import RentReceiptGenerator from "@/components/tools/generators/RentReceiptGenerator";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Rent Receipt Generator Online - No Signup | SopKit",
-	description: "Create custom content with our free Rent Receipt Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
-	keywords: "rent-receipt-generator, Rent Receipt Generator, print rent receipt, hra rent receipt, rent slip maker, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/rent-receipt-generator",
-	},
-	openGraph: {
-		title: "Free Rent Receipt Generator Online - No Signup | SopKit",
-		description: "Create custom content with our free Rent Receipt Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
-		url: "https://sopkit.github.io/rent-receipt-generator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Rent Receipt Generator Online - No Signup | SopKit",
-		description: "Create custom content with our free Rent Receipt Generator online. Generate high-quality outputs instantly with no registration required. 100% free and secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Rent Receipt Generator",
+	description: "Private Rent Receipt: privately generate content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/rent-receipt-generator",
+	category: "generators",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/rent-receipt-generator");

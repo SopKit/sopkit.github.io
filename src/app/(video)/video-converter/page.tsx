@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import VideoConverterTool from "@/components/tools/video/VideoConverterTool";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Video Converter Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Video Converter online. Fast, secure, and private processing with no signup. No signup required.",
-	keywords: "video converter, convert video, mp4 converter, video format converter, free video tool, SopKit, video-converter, free video-converter, video converter online, browser video tool, online video editor, free video utility",
-	alternates: {
-		canonical: "https://sopkit.github.io/video-converter",
-	},
-	openGraph: {
-		title: "Free Video Converter Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Video Converter online. Fast, secure, and private processing with no signup. No signup required.",
-		url: "https://sopkit.github.io/video-converter",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Video Converter Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Video Converter online. Fast, secure, and private processing with no signup. No signup required.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Video Converter",
+	description: "Private Video Converter: privately convert videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/video-converter",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/video-converter");

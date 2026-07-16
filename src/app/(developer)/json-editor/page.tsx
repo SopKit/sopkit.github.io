@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import JsonFormatterTool from "@/components/tools/code/JsonFormatterTool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free JSON Editor Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free JSON Editor online. Secure, local developer utility with no registration. No signup required.",
-	keywords: "json editor, free online tool, no signup, json editor online, developer, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/json-editor",
-	},
-	openGraph: {
-		title: "Free JSON Editor Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JSON Editor online. Secure, local developer utility with no registration. No signup required.",
-		url: "https://sopkit.github.io/json-editor",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free JSON Editor Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free JSON Editor online. Secure, local developer utility with no registration. No signup required.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "JSON Editor",
+	description: "Private JSON Editor: privately process code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/json-editor",
+	category: "developer",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/json-editor");

@@ -73,11 +73,61 @@ export function generateMetadata({
 				index: !noIndex,
 				follow: !noIndex,
 				"max-video-preview": -1,
-				"max-image-preview": "large",
+				"max-image-preference": "large",
 				"max-snippet": -1,
 			},
 		},
 	};
+}
+
+interface ToolMetadataProps {
+	name: string;
+	description?: string;
+	route: string;
+	category?: string;
+	keywords?: string[];
+}
+
+/**
+ * Generate privacy-first metadata for a tool page.
+ *
+ * Brand positioning (low-hanging fruit SEO strategy):
+ *   - Compete against server-side tools (Smallpdf, iLovePDF, CloudConvert)
+ *     that upload user data to their servers
+ *   - Emphasize: client-side processing, no AI training, no data selling,
+ *     100% browser sandbox, instant local execution
+ *
+ * Title pattern: "[Tool Name] — 100% Client-Side in Your Browser | No Upload, No AI Training | SopKit"
+ * Description: Privacy-first, always mentions client-side + no upload + no AI training.
+ */
+export function generateToolMetadata({
+	name,
+	description,
+	route,
+	category,
+	keywords = [],
+}: ToolMetadataProps): Metadata {
+	const cleanName = name.replace(/\s+—.*$/, "").replace(/^Free\s+/i, "").trim();
+	const baseKeywords = [
+		"private", "client-side", "no upload", "no AI training",
+		"browser sandbox", "secure", cleanName.toLowerCase(),
+		...(category ? [category] : []),
+		"SopKit",
+	];
+	const allKeywords = [...new Set([...baseKeywords, ...keywords])].join(", ");
+
+	const title = `${cleanName} — 100% Client-Side in Your Browser | No Upload, No AI Training | SopKit`;
+
+	const desc = description && description.length > 80
+		? description
+		: `${cleanName} runs 100% client-side in your browser sandbox. Unlike server-side tools, your data never leaves your device — no uploads, no AI training, no data selling, no server storage. Fast, free, private, and secure.`;
+
+	return generateMetadata({
+		title,
+		description: desc,
+		path: route,
+		image: "/og-image.jpg",
+	});
 }
 
 interface SchemaProps {

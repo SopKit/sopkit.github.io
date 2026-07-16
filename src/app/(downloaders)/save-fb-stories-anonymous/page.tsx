@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import FacebookStoryDownloader from "@/components/tools/downloaders/FacebookStoryDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Save Facebook Stories Anonymous Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Save Facebook Stories Anonymous online. Fast, secure, and private processing with no signup.",
-	keywords: "save fb stories anonymous, anonymous facebook story viewer, fb story downloader, anonymous story viewer, SopKit, save-fb-stories-anonymous, free save-fb-stories-anonymous, save fb stories anonymous online, online downloader, free media saver, video downloader, url downloader",
-	alternates: {
-		canonical: "https://sopkit.github.io/save-fb-stories-anonymous",
-	},
-	openGraph: {
-		title: "Free Save Facebook Stories Anonymous Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Save Facebook Stories Anonymous online. Fast, secure, and private processing with no signup.",
-		url: "https://sopkit.github.io/save-fb-stories-anonymous",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Save Facebook Stories Anonymous Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Save Facebook Stories Anonymous online. Fast, secure, and private processing with no signup.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Save Facebook Stories Anonymous",
+	description: "Private Save Facebook Stories Anonymous: privately download videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/save-fb-stories-anonymous",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/save-fb-stories-anonymous");

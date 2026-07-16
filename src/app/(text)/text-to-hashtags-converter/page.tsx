@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import TagsFromTextTool from "@/components/tools/text/TagsFromTextTool";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Text to Hashtags Converter Online - No Signup | SopKit",
-	description: "Format, clean, sort, and analyze text files instantly with our free Text to Hashtags Converter online. Fast and private browser utility with no signup.",
-	keywords: "text to hashtags converter, free online tool, no signup, text tool, text editor online, content formatter, writing utility, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/text-to-hashtags-converter",
-	},
-	openGraph: {
-		title: "Free Text to Hashtags Converter Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Text to Hashtags Converter online. Fast and private browser utility with no signup.",
-		url: "https://sopkit.github.io/text-to-hashtags-converter",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Text to Hashtags Converter Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Text to Hashtags Converter online. Fast and private browser utility with no signup.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Text to Hashtags Converter",
+	description: "Private Text to Hashtags Converter: privately convert text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/text-to-hashtags-converter",
+	category: "text",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/text-to-hashtags-converter");

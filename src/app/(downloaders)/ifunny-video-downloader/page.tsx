@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import IfunnyDownloader from "@/components/tools/downloaders/IfunnyDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Ifunny Video Downloader Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Ifunny Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
-	keywords: "ifunny video downloader, free online tool, no signup, ifunny-video-downloader, free ifunny-video-downloader, Ifunny Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/ifunny-video-downloader",
-	},
-	openGraph: {
-		title: "Free Ifunny Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Ifunny Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
-		url: "https://sopkit.github.io/ifunny-video-downloader",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Ifunny Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Ifunny Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Ifunny Video Downloader",
+	description: "Private Ifunny Video Downloader: privately download videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/ifunny-video-downloader",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/ifunny-video-downloader");

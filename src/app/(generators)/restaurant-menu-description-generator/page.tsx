@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Menu Description Generator Online - No Signup | SopKit",
-	description: "Create custom content with our free Menu Description Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
-	keywords: "menu description generator, restaurant-menu-description-generator, free online, no signup, SopKit, browser utility",
-	alternates: {
-		canonical: "https://sopkit.github.io/restaurant-menu-description-generator",
-	},
-	openGraph: {
-		title: "Free Menu Description Generator Online - No Signup | SopKit",
-		description: "Create custom content with our free Menu Description Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
-		url: "https://sopkit.github.io/restaurant-menu-description-generator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Menu Description Generator Online - No Signup | SopKit",
-		description: "Create custom content with our free Menu Description Generator online. Generate high-quality outputs instantly with no registration required. Try it free now.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Menu Description Generator",
+	description: "Private Menu Description: privately generate content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/restaurant-menu-description-generator",
+	category: "generators",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/restaurant-menu-description-generator");

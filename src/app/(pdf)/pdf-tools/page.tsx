@@ -1,29 +1,13 @@
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import PDFPillar from "@/components/pillars/PDFPillar";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free PDF Tools Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free PDF Tools online. Safe and private browser-based tool with no registration. 100% free and secure.",
-	keywords: "pdf tools, free pdf tools online, merge pdf free, compress pdf online, split pdf online, secure pdf editor, convert pdf to word online, SopKit pdf",
-	alternates: {
-		canonical: "https://sopkit.github.io/pdf-tools",
-	},
-	openGraph: {
-		title: "Free PDF Tools Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Tools online. Safe and private browser-based tool with no registration. 100% free and secure.",
-		url: "https://sopkit.github.io/pdf-tools",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free PDF Tools Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Tools online. Safe and private browser-based tool with no registration. 100% free and secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "PDF Tools",
+	description: "Private PDF Tools: privately compress PDF documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/pdf-tools",
+	category: "pdf",
+});
 
 export default async function ToolPage() {
 	const tool = {

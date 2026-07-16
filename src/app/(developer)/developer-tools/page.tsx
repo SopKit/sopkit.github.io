@@ -4,30 +4,14 @@ import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Terminal, ArrowRight } from "lucide-react";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Developer Tools Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free Developer Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
-	keywords: "developer tools, json formatter, base64 encoder, api tester, online dev tools, SopKit, developer-tools, free developer-tools, developer tools online, developer tool, online code utility, free developer tool",
-	alternates: {
-		canonical: "https://sopkit.github.io/developer-tools",
-	},
-	openGraph: {
-		title: "Free Developer Tools Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Developer Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
-		url: "https://sopkit.github.io/developer-tools",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Developer Tools Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Developer Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Developer Tools",
+	description: "Privacy-friendly, 100% client-side Developer Tools online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+	route: "/developer-tools",
+	category: "others",
+});
 
 export default function DeveloperHub() {
 	const tools = getAllToolsByCategory("developer");

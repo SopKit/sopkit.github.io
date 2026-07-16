@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import TikTokAudioDownloader from "@/components/tools/downloaders/TikTokAudioDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free MP3 From Tiktok Online - No Signup | SopKit",
-	description: "Process, edit, and convert audio files with our free MP3 From Tiktok online. High-quality output and private browser-based tools with no signup. Free & secure.",
-	keywords: "mp3 from tiktok, free online tool, no signup, mp3-from-tiktok, free mp3-from-tiktok, Mp3 From Tiktok online, video downloader, free download tool, online media saver, no signup download, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/mp3-from-tiktok",
-	},
-	openGraph: {
-		title: "Free MP3 From Tiktok Online - No Signup | SopKit",
-		description: "Process, edit, and convert audio files with our free MP3 From Tiktok online. High-quality output and private browser-based tools with no signup. Free & secure.",
-		url: "https://sopkit.github.io/mp3-from-tiktok",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free MP3 From Tiktok Online - No Signup | SopKit",
-		description: "Process, edit, and convert audio files with our free MP3 From Tiktok online. High-quality output and private browser-based tools with no signup. Free & secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "MP3 From Tiktok",
+	description: "Private MP3 From Tiktok: privately download audio files entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/mp3-from-tiktok",
+	category: "audio",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/mp3-from-tiktok");

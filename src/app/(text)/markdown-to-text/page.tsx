@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import MarkdownToText from "@/components/tools/text/MarkdownToText";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Markdown to Text Online - No Signup | SopKit",
-	description: "Format, clean, sort, and analyze text files instantly with our free Markdown to Text online. Fast and private browser utility with no signup. Try it free now.",
-	keywords: "markdown to text, free online tool, no signup, markdown to text online, text, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/markdown-to-text",
-	},
-	openGraph: {
-		title: "Free Markdown to Text Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Markdown to Text online. Fast and private browser utility with no signup. Try it free now.",
-		url: "https://sopkit.github.io/markdown-to-text",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Markdown to Text Online - No Signup | SopKit",
-		description: "Format, clean, sort, and analyze text files instantly with our free Markdown to Text online. Fast and private browser utility with no signup. Try it free now.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Markdown to Text",
+	description: "Private Markdown to Text: privately convert text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/markdown-to-text",
+	category: "text",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/markdown-to-text");

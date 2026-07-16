@@ -2,31 +2,15 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
+import { generateToolMetadata } from "@/lib/seo";
 
 
-export const metadata = {
-	title: "Free SSC Photo and Signature Resizer Online - No Signup | SopKit",
-	description: "Resize and compress files with our free SSC Photo and Signature Resizer online. Safe and private browser utility for government exam portal applications.",
-	keywords: "ssc photo and signature resizer, free online tool, no signup, ssc photo and signature resizer online, exam-tools, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/ssc-photo-signature-resizer",
-	},
-	openGraph: {
-		title: "Free SSC Photo and Signature Resizer Online - No Signup | SopKit",
-		description: "Resize and compress files with our free SSC Photo and Signature Resizer online. Safe and private browser utility for government exam portal applications.",
-		url: "https://sopkit.github.io/ssc-photo-signature-resizer",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free SSC Photo and Signature Resizer Online - No Signup | SopKit",
-		description: "Resize and compress files with our free SSC Photo and Signature Resizer online. Safe and private browser utility for government exam portal applications.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "SSC Photo and Signature Resizer",
+	description: "Private SSC Photo and Signature Resizer: privately compress exam documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/ssc-photo-signature-resizer",
+	category: "exam-tools",
+});
 
 export default function ToolPage() {
 	const tool = getToolByRoute("/ssc-photo-signature-resizer");

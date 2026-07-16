@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import MashableDownloader from "@/components/tools/downloaders/MashableDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Mashable Video Downloader Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Mashable Video Downloader online. Fast, secure, and private processing with no signup.",
-	keywords: "mashable video downloader, free online tool, no signup, mashable-video-downloader, free mashable-video-downloader, Mashable Video Downloader online, video downloader, free download tool, online media saver, no signup download, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/mashable-video-downloader",
-	},
-	openGraph: {
-		title: "Free Mashable Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Mashable Video Downloader online. Fast, secure, and private processing with no signup.",
-		url: "https://sopkit.github.io/mashable-video-downloader",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Mashable Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Mashable Video Downloader online. Fast, secure, and private processing with no signup.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Mashable Video Downloader",
+	description: "Private Mashable Video Downloader: privately download videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/mashable-video-downloader",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/mashable-video-downloader");

@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import PhotoNameDateEditor from "@/components/tools/exam/PhotoNameDateEditor";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Photo Name Date Editor Online - No Signup | SopKit",
-	description: "Resize and compress files with our free Photo Name Date Editor online. Safe and private browser utility for government exam portal applications. Free & secure.",
-	keywords: "photo-name-date-editor, Photo Name Date Editor, photo with name and date, name date photo maker, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/photo-name-date-editor",
-	},
-	openGraph: {
-		title: "Free Photo Name Date Editor Online - No Signup | SopKit",
-		description: "Resize and compress files with our free Photo Name Date Editor online. Safe and private browser utility for government exam portal applications. Free & secure.",
-		url: "https://sopkit.github.io/photo-name-date-editor",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Photo Name Date Editor Online - No Signup | SopKit",
-		description: "Resize and compress files with our free Photo Name Date Editor online. Safe and private browser utility for government exam portal applications. Free & secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Photo Name Date Editor",
+	description: "Private Photo Name Date Editor: privately process exam documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/photo-name-date-editor",
+	category: "exam-tools",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/photo-name-date-editor");

@@ -2,31 +2,15 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
+import { generateToolMetadata } from "@/lib/seo";
 
 
-export const metadata = {
-	title: "Free PNG to JPG Converter Online - No Signup | SopKit",
-	description: "Edit, convert, and compress images with our free PNG to JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-	keywords: "png to jpg converter, free online tool, no signup, png to jpg converter online, image, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/png-to-jpg",
-	},
-	openGraph: {
-		title: "Free PNG to JPG Converter Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free PNG to JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-		url: "https://sopkit.github.io/png-to-jpg",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free PNG to JPG Converter Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free PNG to JPG Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "PNG to JPG Converter",
+	description: "Private PNG to JPG Converter: privately convert images entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/png-to-jpg",
+	category: "image",
+});
 
 export default function ToolPage() {
 	const tool = getToolByRoute("/png-to-jpg");

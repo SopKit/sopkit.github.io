@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import DailymotionDownloader from "@/components/tools/downloaders/DailymotionDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Dailymotion Video Downloader Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Dailymotion Video Downloader online. Fast, secure, and private processing with no signup.",
-	keywords: "dailymotion downloader, download dailymotion videos, dailymotion to mp4, free video tool, SopKit, dailymotion-video-downloader, dailymotion video downloader, free dailymotion-video-downloader, dailymotion video downloader online, online downloader, free media saver, video downloader",
-	alternates: {
-		canonical: "https://sopkit.github.io/dailymotion-video-downloader",
-	},
-	openGraph: {
-		title: "Free Dailymotion Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Dailymotion Video Downloader online. Fast, secure, and private processing with no signup.",
-		url: "https://sopkit.github.io/dailymotion-video-downloader",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Dailymotion Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Dailymotion Video Downloader online. Fast, secure, and private processing with no signup.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Dailymotion Video Downloader",
+	description: "Private Dailymotion Video Downloader: privately download videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/dailymotion-video-downloader",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/dailymotion-video-downloader");

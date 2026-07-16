@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SeoHubPage from "@/components/seo/SeoHubPage";
+import HubPage from "@/components/seo/HubPage";
 
 export const metadata: Metadata = {
 	title: "Social Media Tools - Instagram Bio, Caption & Hashtag Generators | SopKit",
@@ -9,10 +9,11 @@ export const metadata: Metadata = {
 
 export default function SocialMediaToolsHub() {
 	return (
-		<SeoHubPage
+		<HubPage
 			title="Social Media Tools"
 			description="Boost your social media presence with free generators for bios, captions, hashtags, and text styles. Perfect for creators, influencers, and brand managers."
 			route="/social-media-tools"
+		tools={getAllTools().filter(t => ["instagram-bio-generator","instagram-caption-generator","hashtag-generator","youtube-thumbnail-generator","twitter-card-generator","open-graph-generator","qr-code-generator","bio-generator"].includes(t.id))}
 			mainCategorySlugs={["generators"]}
 			guideTitle="Social Media Copywriting Strategy"
 			guidePoints={[

@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free HTML to XML Entities Converter Online - No Signup | SopKit",
-	description: "Format, minify, validate, and convert code snippets with our free HTML to XML Entities Converter online. Secure, local developer utility with no registration.",
-	keywords: "html to xml entities converter, free online tool, no signup, html to xml entities converter online, developer, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/html-to-xml-entities",
-	},
-	openGraph: {
-		title: "Free HTML to XML Entities Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free HTML to XML Entities Converter online. Secure, local developer utility with no registration.",
-		url: "https://sopkit.github.io/html-to-xml-entities",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free HTML to XML Entities Converter Online - No Signup | SopKit",
-		description: "Format, minify, validate, and convert code snippets with our free HTML to XML Entities Converter online. Secure, local developer utility with no registration.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "HTML to XML Entities Converter",
+	description: "Private HTML to XML Entities Converter: privately convert code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/html-to-xml-entities",
+	category: "developer",
+});
 
 export default function ToolPage() {
 	const tool = getToolByRoute("/html-to-xml-entities");

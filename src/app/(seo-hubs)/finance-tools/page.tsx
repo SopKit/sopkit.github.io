@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SeoHubPage from "@/components/seo/SeoHubPage";
+import HubPage from "@/components/seo/HubPage";
 
 export const metadata: Metadata = {
 	title: "Finance Calculators - Loan, GST, Margin & Sales Tax Tools | SopKit",
@@ -9,10 +9,11 @@ export const metadata: Metadata = {
 
 export default function FinanceToolsHub() {
 	return (
-		<SeoHubPage
+		<HubPage
 			title="Finance Tools"
 			description="Estimate loans, calculate sales taxes, find profit margins, and calculate payment fees. Fast, accurate, and secure browser-based calculations."
 			route="/finance-tools"
+		tools={getAllTools().filter(t => ["gst-calculator","emi-calculator","sip-calculator","salary-calculator-india","income-tax-calculator","fd-calculator-india","profit-margin-calculator","roi-calculator"].includes(t.id))}
 			mainCategorySlugs={["calculators"]}
 			guideTitle="Financial Planning Advice"
 			guidePoints={[

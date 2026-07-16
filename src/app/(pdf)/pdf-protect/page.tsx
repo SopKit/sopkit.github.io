@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import PDFProtect from "@/components/tools/pdf/PDFProtect";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free PDF Password Protect Online - No Signup | SopKit",
-	description: "Manage, convert, edit, and secure PDF documents with our free PDF Password Protect online. Safe and private browser-based tool with no registration. 100% free.",
-	keywords: "pdf-protect, Pdf Protect, free pdf-protect, Pdf Protect online, PDF utility, document editor, online PDF tool, free PDF converter, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/pdf-protect",
-	},
-	openGraph: {
-		title: "Free PDF Password Protect Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Password Protect online. Safe and private browser-based tool with no registration. 100% free.",
-		url: "https://sopkit.github.io/pdf-protect",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free PDF Password Protect Online - No Signup | SopKit",
-		description: "Manage, convert, edit, and secure PDF documents with our free PDF Password Protect online. Safe and private browser-based tool with no registration. 100% free.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "PDF Password Protect",
+	description: "Private PDF Password Protect: privately process PDF documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/pdf-protect",
+	category: "pdf",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/pdf-protect");

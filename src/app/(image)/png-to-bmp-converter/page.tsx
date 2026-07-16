@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import ImageConverterTool from "@/components/tools/image/ImageConverterTool";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free PNG to BMP Converter Online - No Signup | SopKit",
-	description: "Edit, convert, and compress images with our free PNG to BMP Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-	keywords: "png to bmp converter, free online tool, no signup, png to bmp converter online, image, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/png-to-bmp-converter",
-	},
-	openGraph: {
-		title: "Free PNG to BMP Converter Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free PNG to BMP Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-		url: "https://sopkit.github.io/png-to-bmp-converter",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free PNG to BMP Converter Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free PNG to BMP Converter online. Crop, resize, and optimize photos in your browser with no signup. Try it free now.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "PNG to BMP Converter",
+	description: "Private PNG to BMP Converter: privately convert images entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/png-to-bmp-converter",
+	category: "image",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/png-to-bmp-converter");

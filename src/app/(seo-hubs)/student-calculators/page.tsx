@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SeoHubPage from "@/components/seo/SeoHubPage";
+import HubPage from "@/components/seo/HubPage";
 
 export const metadata: Metadata = {
 	title: "Student Calculators - Attendance, SGPA, CGPA and Marks | SopKit",
@@ -9,10 +9,11 @@ export const metadata: Metadata = {
 
 export default function StudentCalculatorsHub() {
 	return (
-		<SeoHubPage
+		<HubPage
 			title="Student Calculators"
 			description="Practical calculators for attendance shortage, grade planning, CGPA conversion, and final exam marks. Useful for college and engineering students."
 			route="/student-calculators"
+		tools={getAllTools().filter(t => ["gpa-to-4-scale-converter","cgpa-to-percentage-calculator","cgpa-calculator","sgpa-calculator","percentage-calculator","marks-needed-calculator","attendance-shortage-calculator","75-attendance-calculator"].includes(t.id))}
 			categoryNames={["Student Calculators"]}
 			guideTitle="Student Calculator Strategy"
 			guidePoints={[

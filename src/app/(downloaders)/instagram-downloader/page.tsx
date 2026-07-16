@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import InstagramDownloader from "@/components/tools/downloaders/InstagramDownloader";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Instagram Downloader Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Instagram Downloader online. Fast, secure, and private processing with no signup. Free & secure.",
-	keywords: "instagram downloader, download instagram videos, instagram reels downloader, instagram photo downloader, free online tool, SopKit, instagram-downloader, free instagram-downloader, instagram downloader online, online downloader, free media saver, video downloader",
-	alternates: {
-		canonical: "https://sopkit.github.io/instagram-downloader",
-	},
-	openGraph: {
-		title: "Free Instagram Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Instagram Downloader online. Fast, secure, and private processing with no signup. Free & secure.",
-		url: "https://sopkit.github.io/instagram-downloader",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Instagram Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Instagram Downloader online. Fast, secure, and private processing with no signup. Free & secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Instagram Downloader",
+	description: "Private Instagram Downloader: privately download videos entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/instagram-downloader",
+	category: "video",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/instagram-downloader");

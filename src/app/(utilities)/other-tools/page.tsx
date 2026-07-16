@@ -4,30 +4,14 @@ import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Wrench, ArrowRight, Sparkles } from "lucide-react";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Other Tools Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free Other Tools online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
-	keywords: "utility tools, free online tool, no signup, other-tools, Other Tools, free other-tools, Other Tools online, online utility, web calculator, free converter, browser tool, SopKit",
-	alternates: {
-		canonical: "https://sopkit.github.io/other-tools",
-	},
-	openGraph: {
-		title: "Free Other Tools Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Other Tools online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
-		url: "https://sopkit.github.io/other-tools",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Other Tools Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Other Tools online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Other Tools",
+	description: "Private Other Tools: privately process web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/other-tools",
+	category: "utilities",
+});
 
 export default function OtherToolsHub() {
 	const tools = getAllToolsByCategory("utilities");

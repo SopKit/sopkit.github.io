@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Property ROI Calculator Online - No Signup | SopKit",
-	description: "Compute rates, taxes, averages, and conversions with our free Property ROI Calculator online. Quick, accurate browser calculator with no registration.",
-	keywords: "property roi calculator, property-roi-calculator, free online, no signup, SopKit, browser utility",
-	alternates: {
-		canonical: "https://sopkit.github.io/property-roi-calculator",
-	},
-	openGraph: {
-		title: "Free Property ROI Calculator Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free Property ROI Calculator online. Quick, accurate browser calculator with no registration.",
-		url: "https://sopkit.github.io/property-roi-calculator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Property ROI Calculator Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free Property ROI Calculator online. Quick, accurate browser calculator with no registration.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Property ROI Calculator",
+	description: "Private Property ROI Calculator: privately calculate numbers entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/property-roi-calculator",
+	category: "calculators",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/property-roi-calculator");

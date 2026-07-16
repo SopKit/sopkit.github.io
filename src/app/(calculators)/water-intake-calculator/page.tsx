@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Daily Water Intake Calculator Online - No Signup | SopKit",
-	description: "Compute rates, taxes, averages, and conversions with our free Daily Water Intake Calculator online. Quick, accurate browser calculator with no registration.",
-	keywords: "daily water intake calculator, water-intake-calculator, free online, no signup, SopKit, browser utility",
-	alternates: {
-		canonical: "https://sopkit.github.io/water-intake-calculator",
-	},
-	openGraph: {
-		title: "Free Daily Water Intake Calculator Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free Daily Water Intake Calculator online. Quick, accurate browser calculator with no registration.",
-		url: "https://sopkit.github.io/water-intake-calculator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Daily Water Intake Calculator Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free Daily Water Intake Calculator online. Quick, accurate browser calculator with no registration.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Daily Water Intake Calculator",
+	description: "Private Daily Water Intake Calculator: privately calculate numbers entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/water-intake-calculator",
+	category: "calculators",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/water-intake-calculator");

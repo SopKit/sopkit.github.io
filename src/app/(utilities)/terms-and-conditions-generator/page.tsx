@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Terms and Conditions Generator Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free Terms and Conditions Generator online. Fast, secure browser-based utility with no registration. 100% free.",
-	keywords: "terms and conditions generator, terms-and-conditions-generator, free online, no signup, SopKit, browser utility",
-	alternates: {
-		canonical: "https://sopkit.github.io/terms-and-conditions-generator",
-	},
-	openGraph: {
-		title: "Free Terms and Conditions Generator Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Terms and Conditions Generator online. Fast, secure browser-based utility with no registration. 100% free.",
-		url: "https://sopkit.github.io/terms-and-conditions-generator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Terms and Conditions Generator Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Terms and Conditions Generator online. Fast, secure browser-based utility with no registration. 100% free.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Terms and Conditions Generator",
+	description: "Private Terms and Conditions: privately generate web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/terms-and-conditions-generator",
+	category: "utilities",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/terms-and-conditions-generator");

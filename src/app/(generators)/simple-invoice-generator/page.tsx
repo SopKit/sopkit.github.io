@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import InvoiceGenerator from "@/components/tools/generators/InvoiceGenerator";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Simple Invoice Generator Online - No Signup | SopKit",
-	description: "Create custom content with our free Simple Invoice Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
-	keywords: "simple-invoice-generator, Simple Invoice Generator",
-	alternates: {
-		canonical: "https://sopkit.github.io/simple-invoice-generator",
-	},
-	openGraph: {
-		title: "Free Simple Invoice Generator Online - No Signup | SopKit",
-		description: "Create custom content with our free Simple Invoice Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
-		url: "https://sopkit.github.io/simple-invoice-generator",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Simple Invoice Generator Online - No Signup | SopKit",
-		description: "Create custom content with our free Simple Invoice Generator online. Generate high-quality outputs instantly with no registration required. No signup required.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Simple Invoice Generator",
+	description: "Private Simple Invoice: privately generate content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/simple-invoice-generator",
+	category: "generators",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/simple-invoice-generator");

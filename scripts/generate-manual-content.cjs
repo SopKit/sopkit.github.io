@@ -76,7 +76,7 @@ function buildWhatItIs(tool, types, subject) {
   const descParas = description.split(/\.\s+/).filter(Boolean);
   const shortDesc = descParas.slice(0, 2).join('. ') || description;
   
-  return `${intro}\n\n## Why Choose ${shortName}?\n\n${shortDesc}. What sets SopKit apart is our commitment to privacy-focused, client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, and countless others store, process, and potentially mine your data. SopKit does none of this. Your ${subject} remain on your device from start to finish.\n\n## Who Is It For?\n\n${shortName} is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, or data collection.`;
+  return `${intro}\n\n## Why Choose ${shortName}?\n\n${shortDesc}. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your ${subject} remain on your device from start to finish. No server uploads. No AI training. No data collection.\n\n## Who Is It For?\n\n${shortName} is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`;
 }
 
 function buildFeatures(tool, types, subject) {
@@ -94,14 +94,14 @@ function buildFeatures(tool, types, subject) {
     types[0] === 'editor' ? 'Edit and adjust' : 'Process';
 
   return [
-    `${specificAction} ${subject} directly in your browser — no uploads to any server`,
-    `Zero data retention policy: your ${subject} never leave your device`,
-    `Works offline after first load thanks to fully client-side architecture`,
-    `No registration, account creation, or email required to use the tool`,
-    `Unlimited usage with no daily caps, rate limits, or premium tiers`,
-    `Fast processing powered by your device — no network latency or queue waits`,
-    `No watermarks, ads, or promotional branding added to your output`,
-    `Free forever with no hidden charges, trials, or subscription upsells`
+    `${specificAction} ${subject} entirely in your browser — zero data leaves your device`,
+    `No server uploads: your data is never stored, logged, or used for AI training`,
+    `100% client-side sandbox — works offline after the first page load`,
+    `No registration, no account creation, no email collection of any kind`,
+    `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
+    `Instant local execution — no network upload delays or server queues`,
+    `No watermarks, no ads, no promotional branding added to your output`,
+    `Free forever with no trials, no hidden charges, and no subscription upsells`
   ];
 }
 
@@ -169,7 +169,7 @@ function buildFAQs(tool, types, subject) {
 }
 
 function buildSEODescription(tool, types, subject) {
-  const shortName = tool.name.replace(/\s+(free|online|tool)$/i, '');
+  const shortName = tool.name.replace(/\s+(free|online|tool|generator)$/i, '').trim();
   const action = types[0] === 'converter' ? 'convert' :
     types[0] === 'compressor' ? 'compress' :
     types[0] === 'generator' ? 'generate' :
@@ -178,7 +178,8 @@ function buildSEODescription(tool, types, subject) {
     types[0] === 'validator' ? 'validate' :
     types[0] === 'formatter' ? 'format' :
     types[0] === 'reader' ? 'extract' : 'process';
-  return `${shortName}: ${action} ${subject} locally in your browser. 100% private. No uploads, no servers, no signup. Unlike competitors that sell your data, SopKit processes everything client-side.`;
+  const privacyAction = types[0] === 'downloader' ? `privately download` : `privately ${action}`;
+  return `Private ${shortName}: ${privacyAction} ${subject} entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`;
 }
 
 // Build the full content map

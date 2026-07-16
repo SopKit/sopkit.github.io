@@ -2,30 +2,14 @@ import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
 import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
+import { generateToolMetadata } from "@/lib/seo";
 
-export const metadata = {
-	title: "Free Compress Image to 30KB Online - No Signup | SopKit",
-	description: "Edit, convert, and compress images with our free Compress Image to 30KB online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
-	keywords: "compress-image-to-30kb, Compress Image to 30KB",
-	alternates: {
-		canonical: "https://sopkit.github.io/compress-image-to-30kb",
-	},
-	openGraph: {
-		title: "Free Compress Image to 30KB Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free Compress Image to 30KB online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
-		url: "https://sopkit.github.io/compress-image-to-30kb",
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Free Compress Image to 30KB Online - No Signup | SopKit",
-		description: "Edit, convert, and compress images with our free Compress Image to 30KB online. Crop, resize, and optimize photos in your browser with no signup. Free & secure.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+export const metadata = generateToolMetadata({
+	name: "Compress Image to 30KB",
+	description: "Private Compress Image to 30KB: privately compress images entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	route: "/compress-image-to-30kb",
+	category: "image",
+});
 
 export default async function ToolPage() {
 	const tool = getToolByRoute("/compress-image-to-30kb");
