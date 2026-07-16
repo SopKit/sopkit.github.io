@@ -4,7 +4,6 @@ import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { getAllTools } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
-import AdPlacement from "@/components/ads/AdPlacement";
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -72,11 +71,6 @@ function EmbedToolContent() {
 				<div className="p-4 sm:p-6 bg-card/30 border border-border/40 rounded-2xl shadow-xl relative overflow-hidden w-full">
 					<IntentToolDispatcher toolId={tool.id} />
 				</div>
-			</div>
-
-			{/* Ad Unit inside Embed */}
-			<div className="w-full max-w-5xl mx-auto mt-4 shrink-0">
-				<AdPlacement placement="footer" category={tool.category} slug={tool.id} />
 			</div>
 
 			{/* Footer: branding button linking to main tool on SopKit */}
