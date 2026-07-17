@@ -12,7 +12,7 @@ import {
 } from "./ToolSharedComponents";
 import { getRelatedTools, type Tool } from "@/lib/tools";
 import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { SITE_CONFIG } from "@/constants/config";
@@ -229,6 +229,28 @@ export default function ToolLayout({
 						</div>
 					)}
 				</section>
+
+				{!isCompanyPage && tool.category !== "content" && (
+					<aside
+						className="max-w-4xl mx-auto mt-2 mb-2"
+						aria-label="Trending AI announcement"
+					>
+						<Link
+							href="/blog/use-kimi-k3-for-free"
+							className="group flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-violet-500/10 via-fuchsia-500/10 to-rose-500/10 border border-violet-500/20 text-[13px] font-medium text-foreground/90 hover:from-violet-500/20 hover:via-fuchsia-500/20 hover:to-rose-500/20 transition-all duration-300 backdrop-blur-sm shadow-sm hover:shadow-md"
+						>
+							<Sparkles className="w-3.5 h-3.5 text-violet-500 group-hover:rotate-12 transition-transform" />
+							<span>
+								<strong className="font-semibold text-foreground">Trending AI:</strong>{" "}
+								Learn how to{" "}
+								<span className="font-bold text-violet-600 dark:text-violet-400 group-hover:underline underline-offset-2 decoration-violet-500/50">
+									use Kimi K3 for free
+								</span>
+								{" "}— access Moonshot AI's new 2.8T parameter reasoning model online today!
+							</span>
+						</Link>
+					</aside>
+				)}
 
 				{/* Copyright Disclaimer for Downloaders */}
 				{tool.category === "downloaders" && (
