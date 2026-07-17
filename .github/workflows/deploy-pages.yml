@@ -72,7 +72,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Submit URLs to Search Engines
-        run: bun run submit-urls
+        run: node submit-urls.mjs
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
           BING_API_KEY: ${{ secrets.BING_API_KEY }}
