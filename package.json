@@ -21,7 +21,7 @@
 		"generate-icons": "node scripts/generate-icons.cjs",
 		"generate-feed": "node scripts/generate-feed.cjs",
 		"seo:audit": "node scripts/seo-audit-local.mjs",
-		"submit-urls": "node submit-urls.js",
+		"submit-urls": "node submit-urls.mjs",
 		"publish-all": "node scripts/publish-all.mjs"
 	},
 	"dependencies": {
