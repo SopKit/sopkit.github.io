@@ -51,12 +51,12 @@ export function generateMetadata({
 }: MetadataProps & { keywords?: string[] }): Metadata {
 	const cleanPath = path.startsWith("/") ? path : `/${path}`;
 	const canonicalUrl = withSlash(`${BASE_URL}${cleanPath}`);
-	const allKeywords = [...new Set([...keywords, ...TRENDING_VIRAL_KEYWORDS])].join(", ");
+	const mergedKeywords = [...new Set([...keywords, ...TRENDING_VIRAL_KEYWORDS])];
 
 	return {
 		title,
 		description,
-		keywords: allKeywords,
+		keywords: mergedKeywords,
 		alternates: {
 			canonical: canonicalUrl,
 		},
@@ -144,7 +144,7 @@ export function generateToolMetadata({
 		description: desc,
 		path: route,
 		image: "/og-image.jpg",
-		keywords: allKeywords,
+		keywords: [...new Set([...keywords, ...TRENDING_VIRAL_KEYWORDS])],
 	});
 }
 

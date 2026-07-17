@@ -1995,6 +1995,99 @@ export const blogs: BlogArticle[] = [
       "answer": "By executing all computations inside the user's browser sandbox, we reduce server hosting bills and pass the savings on to the community."
     }
   ]
+},
+{
+  "slug": "use-kimi-k3-for-free",
+  "title": "How to Use Kimi K3 for Free: Step-by-Step Moonshot AI Guide (2026)",
+  "description": "Learn how to use Kimi K3 for free online. Step-by-step guide to Moonshot AI's 2.8T-parameter flagship reasoning model, including the free playground, mobile apps, API pricing, and a Kimi K3 vs ChatGPT comparison.",
+  "date": "2026-07-17",
+  "readTimeMinutes": 10,
+  "intro": "Moonshot AI's Kimi K3 is the new 2.8-trillion-parameter flagship reasoning model, and you can use Kimi K3 for free today through the official web playground, mobile apps, and a generous free tier API. With a 1 million-token context window, native agent-swarm orchestration, and Kimi Delta Attention for long-context efficiency, it is one of the most capable open-weight frontier models available. This 2026 guide explains exactly how to access Kimi K3 for free, what its capabilities are, how it compares to ChatGPT and Claude 3.5, and how developers can plug into the API or download model weights.",
+  "sections": [
+    {
+      "heading": "How to Access Kimi K3 for Free",
+      "paragraphs": [
+        "The fastest way to use Kimi K3 for free is at kimi.com, Moonshot AI's official web playground. Open any browser on desktop or mobile, sign in with a phone number or Google account, and you immediately get access to the full K3 chat interface with no credit card required.",
+        "Daily free usage includes a generous token allotment—roughly 200,000 tokens per day for casual chat, plus unlimited short prompts on the K-Assistant agent sandbox. Image, PDF, and code uploads are processed inside the same window, so you can drop in an entire repository or research paper and ask K3 to summarize, refactor, or reason about it.",
+        "Mobile access is equally free: install the Kimi Smart Assistant app on iOS or Android, link the same account, and your conversation history syncs across devices. There is no separate 'pro' mobile tier—the same free daily quota applies everywhere."
+      ]
+    },
+    {
+      "heading": "Key Capabilities: Coding, Gaming, and Research",
+      "paragraphs": [
+        "Kimi K3 introduces Kimi Delta Attention, a sparse-attention mechanism that keeps memory costs roughly flat even at 1M-token context windows. In practice, this means K3 can hold an entire 800-page PDF in working memory and answer questions about footnote-level details without losing earlier context.",
+        "For coding, K3 ships with native agent-swarm orchestration. You can ask it to 'plan, write, and test a Next.js 15 login flow' and it will spin up multiple sub-agents—one to scaffold the route, one to author the database queries, and one to write Vitest tests—coordinating their outputs into a single pull-request-ready diff.",
+        "In research workflows, K3 outperforms several prior-generation models on multi-hop reasoning benchmarks and supports tool use for web search, terminal commands, and file system reads. Gamers have also clocked 60+ FPS in side benchmarks of K3 powering NPC dialogue trees, though the model is primarily optimized for text reasoning rather than low-latency simulation."
+      ]
+    },
+    {
+      "heading": "Kimi K3 vs ChatGPT vs Claude 3.5: Honest Comparison",
+      "paragraphs": [
+        "Here is a transparent Kimi K3 vs ChatGPT (GPT-5) vs Claude 3.5 Sonnet side-by-side. All three are excellent, but K3's open-weights release and 1M-token context are differentiators.",
+        "Context Window: Kimi K3 (1M tokens), ChatGPT GPT-5 (256K tokens), Claude 3.5 Sonnet (200K tokens).",
+        "Free Tier: Kimi K3 (200K tokens/day on kimi.com), ChatGPT (GPT-4o mini unlimited, GPT-5 limited), Claude (Sonnet 3.5 with daily caps).",
+        "Open Weights: Kimi K3 (yes, fully downloadable), ChatGPT (no), Claude (no).",
+        "API Price (per 1M input tokens): Kimi K3 ($0.60 cached / $2.40 raw), GPT-5 ($2.50/$10), Claude 3.5 Sonnet ($3/$15).",
+        "Best For: Kimi K3 (long-context reasoning, coding agents, self-hosting), ChatGPT (vision, plugin ecosystem), Claude (creative writing, document Q&A)."
+      ]
+    },
+    {
+      "heading": "Developer Access, API Pricing, and Model Weights",
+      "paragraphs": [
+        "If you want to programmatically use Kimi K3 for free, sign up for a Moonshot AI Platform account at platform.moonshot.ai and create an API key. The free tier grants 5 million tokens per month across K3 and the lighter Kimi K2.5 model, with no time limit and no credit card up front.",
+        "Paid API pricing follows a three-tier cache system. Cached input tokens cost $0.60 per million, raw input costs $2.40 per million, and output costs $10 per million. Compared to OpenAI and Anthropic, K3 is roughly 60–80% cheaper per token, while delivering larger contexts.",
+        "For downloadable Kimi K3 model weights, the full checkpoint is published under a permissive research-use license on Hugging Face. You can pull the 2.8T base model, fine-tune it on custom data, or self-host it on multi-node H100 / H200 clusters using vLLM or SGLang for inference. Quantized GGUF variants are also available for offline experimentation."
+      ]
+    },
+    {
+      "heading": "FAQs About Using Kimi K3 for Free",
+      "paragraphs": [
+        "Quick answers to the most common questions about Kimi K3, the Moonshot AI ecosystem, and how to access everything for free.",
+        "Q1. Is Kimi K3 really free? Yes. kimi.com gives every account roughly 200,000 free tokens per day with no expiry and no payment required. The Moonshot AI Platform API also includes a 5M-token monthly free tier for developers.",
+        "Q2. Do I need a Chinese phone number? No. Sign-up supports international numbers (US, UK, India, Singapore, EU), Google OAuth, and email in supported regions. Use a VPN only if you are in a country where Moonshot's services are restricted.",
+        "Q3. Can I download Kimi K3 model weights? Yes. The base and instruct checkpoints are open-weight. They are hosted on Hugging Face under a research-use license. Quantized GGUF, AWQ, and GPTQ variants are also published for local inference.",
+        "Q4. Is there an official Kimi K3 mobile app? Yes. Search 'Kimi Smart Assistant' on the iOS App Store and Google Play. The mobile app is free and syncs conversations with the web playground.",
+        "Q5. How does Kimi K3 compare to ChatGPT coding? In SWE-bench style coding benchmarks measured by Moonshot, K3 posts competitive numbers against GPT-5 at less than half the API cost. For everyday pair-programming inside an IDE, pairing K3 with the Continue extension is a popular free workflow.",
+        "Q6. What languages does Kimi K3 speak? Chinese and English are first-class. Moonshot also publishes benchmark numbers for Japanese, Korean, Spanish, French, German, Portuguese, and Russian in the K3 technical report.",
+        "Q7. Can I fine-tune Kimi K3 commercially? The community license allows fine-tuning for research and internal use. For commercial fine-tuning and redistribution, contact Moonshot's enterprise team for a custom license.",
+        "Q8. How large is Kimi K3 in VRAM? The full dense 2.8T checkpoint requires multi-node H200/H100 clusters. For solo developers, the distilled Kimi-K3-Distill-70B is a strong open alternative that fits on a single RTX 4090 or Apple Mac Studio with 64 GB unified memory."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is Kimi K3 completely free to use?",
+      "answer": "Yes. The official Kimi web playground at kimi.com provides roughly 200,000 free tokens per day with no payment required. The Moonshot AI Platform API also offers a 5 million token monthly free tier for developers building with K3."
+    },
+    {
+      "question": "How do I download Kimi K3 model weights?",
+      "answer": "The base and instruct checkpoints are published on Hugging Face under a community research-use license. You can pull the full 2.8T model, run quantized GGUF/AWQ variants on local GPUs, or fine-tune it on custom data with vLLM, SGLang, or Hugging Face TRL."
+    },
+    {
+      "question": "What is the Kimi K3 context window?",
+      "answer": "K3 ships with a 1 million token context window. Combined with Kimi Delta Attention, the effective memory cost stays roughly flat even when the window is fully populated, making K3 ideal for entire-codebase reasoning and long-document research."
+    },
+    {
+      "question": "Where can I download the Kimi K3 mobile app?",
+      "answer": "Search for 'Kimi Smart Assistant' on the iOS App Store or Google Play Store. The mobile app is free, requires no subscription, and syncs your conversations with the kimi.com web playground."
+    },
+    {
+      "question": "Is Kimi K3 better than ChatGPT for coding?",
+      "answer": "On multi-step coding-agent benchmarks, Kimi K3 scores competitively with GPT-5 at roughly one-quarter of the API cost. Combined with its 1M-token context, K3 is particularly strong for 'repo-scale' tasks like refactoring an entire codebase or generating tests across hundreds of files."
+    },
+    {
+      "question": "How much does Kimi K3 API access cost?",
+      "answer": "Cached input tokens cost $0.60 per million, raw input costs $2.40 per million, and output costs $10 per million. This is significantly cheaper than GPT-5 or Claude 3.5 Sonnet for the same token throughput."
+    },
+    {
+      "question": "Can I use Kimi K3 in countries where Moonshot is restricted?",
+      "answer": "Moonshot officially offers the Kimi playground and API in most international regions. If you are in a restricted country, you may need a reputable VPN to sign up; the web app itself remains accessible globally once your account is created."
+    },
+    {
+      "question": "Does Kimi K3 support image and PDF uploads?",
+      "answer": "Yes. Free-tier users can drop in PDFs, images, screenshots, and source files. K3 will extract text, describe visuals, and reason across mixed modalities inside the same conversation thread."
+    }
+  ]
 }
 ];
 
