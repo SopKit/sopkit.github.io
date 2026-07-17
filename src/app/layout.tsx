@@ -105,6 +105,18 @@ export const metadata: Metadata = {
 		"secure online tools",
 		"professional web tools",
 		"instant online tools",
+
+		// Kimi K3 trending keywords (viral 2026)
+		"use kimi k3 for free",
+		"kimi k3",
+		"kimi k3 moonshot ai",
+		"kimi k3 free online",
+		"how to use kimi k3",
+		"kimi k3 free online playground",
+		"kimi k3 api price",
+		"kimi k3 vs chatgpt",
+		"kimi k3 download model weights",
+		"kimi k3 capabilities",
 	].join(", "),
 	authors: [{ name: "SopKit Team", url: "https://sopkit.github.io" }],
 	creator: "SopKit",

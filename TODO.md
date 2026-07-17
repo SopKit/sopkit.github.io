@@ -7,3 +7,7 @@ add this link on footer https://sopkit.github.io/online-tools/
 
 also fix https://github.com/SopKit/it-tools
 rebrand both with sopkit and add ads and analytics to both.
+
+
+add tool FFmpeg Command Generator for Common Encoding Workflows
+ and seach for related tool and add them. add all features of https://ffmpeg-commander.com/ 

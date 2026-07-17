@@ -22,7 +22,21 @@ interface MetadataProps {
 	path?: string;
 	image?: string;
 	noIndex?: boolean;
+	keywords?: string[];
 }
+
+/**
+ * Global viral keyword injection: append trending AI keywords for every
+ * generated metadata payload so that search signals across every page
+ * reinforce the most-searched trending topics on the site.
+ */
+const TRENDING_VIRAL_KEYWORDS = [
+	"kimi k3",
+	"use kimi k3 for free",
+	"kimi k3 free online",
+	"kimi k3 moonshot ai",
+	"how to use kimi k3",
+];
 
 /**
  * Generate standard metadata for a page
@@ -33,13 +47,16 @@ export function generateMetadata({
 	path = "",
 	image = "/og-image.jpg",
 	noIndex = false,
-}: MetadataProps): Metadata {
+	keywords = [],
+}: MetadataProps & { keywords?: string[] }): Metadata {
 	const cleanPath = path.startsWith("/") ? path : `/${path}`;
 	const canonicalUrl = withSlash(`${BASE_URL}${cleanPath}`);
+	const allKeywords = [...new Set([...keywords, ...TRENDING_VIRAL_KEYWORDS])].join(", ");
 
 	return {
 		title,
 		description,
+		keywords: allKeywords,
 		alternates: {
 			canonical: canonicalUrl,
 		},
@@ -114,7 +131,7 @@ export function generateToolMetadata({
 		...(category ? [category] : []),
 		"SopKit",
 	];
-	const allKeywords = [...new Set([...baseKeywords, ...keywords])].join(", ");
+	const allKeywords = [...new Set([...baseKeywords, ...keywords, ...TRENDING_VIRAL_KEYWORDS])].join(", ");
 
 	const title = `${cleanName} — 100% Client-Side in Your Browser | No Upload, No AI Training | SopKit`;
 
@@ -127,6 +144,7 @@ export function generateToolMetadata({
 		description: desc,
 		path: route,
 		image: "/og-image.jpg",
+		keywords: allKeywords,
 	});
 }
 
