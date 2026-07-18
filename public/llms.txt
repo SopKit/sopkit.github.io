@@ -644,3 +644,29 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Macro Calculator](https://sopkit.github.io/macro-calculator) - Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance.
 - [Ideal Body Weight Calculator](https://sopkit.github.io/ideal-body-weight-calculator) - Determine your healthy weight range based on your height, age, and gender using standard formulas.
 - [Body Fat Percentage Calculator](https://sopkit.github.io/body-fat-calculator) - Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness.
+
+### Privacy & Security Tools
+
+- [PII Scrubber](https://sopkit.github.io/pii-scrubber) - Remove personal information from text before sending to AI. Scrub emails, phone numbers, SSNs, credit cards, and API keys locally.
+- [Email Subject Line Tester](https://sopkit.github.io/email-subject-line-tester) - Score email subject lines for open rate potential, spam risk, length, and clarity. Get instant feedback and improvement suggestions.
+- [AI Text Detector](https://sopkit.github.io/ai-text-detector) - Detect AI-generated text with a free browser-based analyzer. Check if content was written by ChatGPT, Claude, or other AI models — privately, no uploads.
+- [Email Validator](https://sopkit.github.io/email-validator) - Validate email addresses for format, domain, and deliverability. Check if an email is valid, disposable, or from a free provider — privately in your browser.
+- [Spam Word Checker](https://sopkit.github.io/spam-word-checker) - Scan email copy for spam trigger words. Get a spam score and suggestions to improve deliverability before sending.
+- [Phishing URL Checker](https://sopkit.github.io/phishing-url-checker) - Check if a URL is safe or a phishing site. Analyze links for suspicious patterns, domain age, and known threats — privately in your browser.
+- [Password Strength Checker](https://sopkit.github.io/password-strength-checker) - Check password strength and get security recommendations. Analyze entropy, common patterns, and breach exposure — all locally in your browser.
+- [Security Headers Checker](https://sopkit.github.io/security-headers-checker) - Analyze website security headers like CSP, HSTS, X-Frame-Options, and more. Get a security score and recommendations for free.
+- [SSL Certificate Checker](https://sopkit.github.io/ssl-certificate-checker) - Check SSL certificate details, validity, and chain for any website. Verify issuer, expiration, and encryption strength privately.
+- [Domain Reputation Checker](https://sopkit.github.io/domain-reputation-checker) - Check domain reputation, age, and safety status. Analyze if a website is trustworthy, blacklisted, or suspicious.
+- [Cookie Consent Generator](https://sopkit.github.io/cookie-consent-generator) - Generate GDPR-compliant cookie consent banners and privacy notices for your website. Customize styles and export code.
+- [GDPR Compliance Checker](https://sopkit.github.io/gdpr-compliance-checker) - Check your website for GDPR compliance issues. Analyze privacy policy, cookie consent, data collection, and user rights — privately.
+- [Data Retention Policy Generator](https://sopkit.github.io/data-retention-policy-generator) - Generate a data retention policy for your business. Customize by industry, data types, and jurisdiction — export in minutes.
+- [Email Header Analyzer](https://sopkit.github.io/email-header-analyzer) - Analyze email headers for deliverability issues, spoofing, and routing problems. Inspect SPF, DKIM, DMARC, and IP paths.
+- [AI Image Detector](https://sopkit.github.io/ai-image-detector) - Detect AI-generated images and deepfakes. Analyze image metadata and patterns to identify synthetic media — privately in your browser.
+- [Data Breach Checker](https://sopkit.github.io/data-breach-checker) - Check if your email or phone number has appeared in a known data breach. Get breach details and security recommendations.
+- [Email Deliverability Checker](https://sopkit.github.io/email-deliverability-checker) - Check email deliverability by analyzing SPF, DKIM, and DMARC records. Ensure your emails reach the inbox, not spam.
+- [Privacy Policy Auditor](https://sopkit.github.io/privacy-policy-auditor) - Audit your privacy policy for GDPR, CCPA, and other regulation compliance. Get a checklist and improvement suggestions.
+- [Email Preview Generator](https://sopkit.github.io/email-preview-generator) - Generate email previews across desktop, mobile, and dark mode. Test how your email looks in different clients before sending.
+- [Spam Score Checker](https://sopkit.github.io/spam-score-checker) - Check the spam score of your email or message. Analyze content, links, and formatting for deliverability issues.
+- [Consent Management Generator](https://sopkit.github.io/consent-management-generator) - Generate consent management banners and preference centers for GDPR and CCPA compliance. Export customizable code.
+- [Breach Notification Generator](https://sopkit.github.io/breach-notification-generator) - Generate data breach notification templates for customers, regulators, and internal teams. Compliant with GDPR and state laws.
+- [Data Anonymization Report Generator](https://sopkit.github.io/data-anonymization-report-generator) - Generate data anonymization reports for GDPR Article 25 compliance. Document anonymization techniques and risk assessments.

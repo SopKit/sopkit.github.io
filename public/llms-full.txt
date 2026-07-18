@@ -2341,3 +2341,98 @@ Canonical Base URL: https://sopkit.github.io
 - **Description**: Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness.
 - **Alternative Intents / Keywords**: `body-fat-calculator-no-upload`, `privacy-friendly-body-fat-calculator`, `client-side-body-fat-calculator-free`, `local-body-fat-calculator-offline`, `body-fat-calculator-no-data-selling`, `secure-body-fat-calculator-locally`
 
+
+### Privacy & Security Tools Tools
+
+#### [PII Scrubber](https://sopkit.github.io/pii-scrubber)
+- **Description**: Remove personal information from text before sending to AI. Scrub emails, phone numbers, SSNs, credit cards, and API keys locally.
+- **Alternative Intents / Keywords**: `pii-scrubber-free`, `pii-scrubber-online`, `free-pii-scrubber-no-signup`, `best-pii-scrubber-online`, `pii-scrubber-tool`, `pii-scrubber-no-upload`, `privacy-friendly-pii-scrubber`, `client-side-pii-scrubber-free`, `local-pii-scrubber-offline`, `pii-scrubber-no-data-selling`, `secure-pii-scrubber-locally`
+
+#### [Email Subject Line Tester](https://sopkit.github.io/email-subject-line-tester)
+- **Description**: Score email subject lines for open rate potential, spam risk, length, and clarity. Get instant feedback and improvement suggestions.
+- **Alternative Intents / Keywords**: `email-subject-line-tester-free`, `email-subject-line-tester-online`, `free-email-subject-line-tester-no-signup`, `best-email-subject-line-tester-online`, `email-subject-line-tester-tool`, `email-subject-line-tester-no-upload`, `privacy-friendly-email-subject-line-tester`, `client-side-email-subject-line-tester-free`, `local-email-subject-line-tester-offline`, `email-subject-line-tester-no-data-selling`, `secure-email-subject-line-tester-locally`
+
+#### [AI Text Detector](https://sopkit.github.io/ai-text-detector)
+- **Description**: Detect AI-generated text with a free browser-based analyzer. Check if content was written by ChatGPT, Claude, or other AI models — privately, no uploads.
+- **Alternative Intents / Keywords**: `ai-text-detector-free`, `ai-text-detector-online`, `free-ai-text-detector-no-signup`, `best-ai-text-detector-online`, `ai-text-detector-tool`, `ai-text-detector-no-upload`, `privacy-friendly-ai-text-detector`, `client-side-ai-text-detector-free`, `local-ai-text-detector-offline`, `ai-text-detector-no-data-selling`, `secure-ai-text-detector-locally`
+
+#### [Email Validator](https://sopkit.github.io/email-validator)
+- **Description**: Validate email addresses for format, domain, and deliverability. Check if an email is valid, disposable, or from a free provider — privately in your browser.
+- **Alternative Intents / Keywords**: `email-validator-free`, `email-validator-online`, `free-email-validator-no-signup`, `best-email-validator-online`, `email-validator-tool`, `email-validator-no-upload`, `privacy-friendly-email-validator`, `client-side-email-validator-free`, `local-email-validator-offline`, `email-validator-no-data-selling`, `secure-email-validator-locally`
+
+#### [Spam Word Checker](https://sopkit.github.io/spam-word-checker)
+- **Description**: Scan email copy for spam trigger words. Get a spam score and suggestions to improve deliverability before sending.
+- **Alternative Intents / Keywords**: `spam-word-checker-free`, `spam-word-checker-online`, `free-spam-word-checker-no-signup`, `best-spam-word-checker-online`, `spam-word-checker-tool`, `spam-word-checker-no-upload`, `privacy-friendly-spam-word-checker`, `client-side-spam-word-checker-free`, `local-spam-word-checker-offline`, `spam-word-checker-no-data-selling`, `secure-spam-word-checker-locally`
+
+#### [Phishing URL Checker](https://sopkit.github.io/phishing-url-checker)
+- **Description**: Check if a URL is safe or a phishing site. Analyze links for suspicious patterns, domain age, and known threats — privately in your browser.
+- **Alternative Intents / Keywords**: `phishing-url-checker-free`, `phishing-url-checker-online`, `free-phishing-url-checker-no-signup`, `best-phishing-url-checker-online`, `phishing-url-checker-tool`, `phishing-url-checker-no-upload`, `privacy-friendly-phishing-url-checker`, `client-side-phishing-url-checker-free`, `local-phishing-url-checker-offline`, `phishing-url-checker-no-data-selling`, `secure-phishing-url-checker-locally`
+
+#### [Password Strength Checker](https://sopkit.github.io/password-strength-checker)
+- **Description**: Check password strength and get security recommendations. Analyze entropy, common patterns, and breach exposure — all locally in your browser.
+- **Alternative Intents / Keywords**: `password-strength-checker-free`, `password-strength-checker-online`, `free-password-strength-checker-no-signup`, `best-password-strength-checker-online`, `password-strength-checker-tool`, `password-strength-checker-no-upload`, `privacy-friendly-password-strength-checker`, `client-side-password-strength-checker-free`, `local-password-strength-checker-offline`, `password-strength-checker-no-data-selling`, `secure-password-strength-checker-locally`
+
+#### [Security Headers Checker](https://sopkit.github.io/security-headers-checker)
+- **Description**: Analyze website security headers like CSP, HSTS, X-Frame-Options, and more. Get a security score and recommendations for free.
+- **Alternative Intents / Keywords**: `security-headers-checker-free`, `security-headers-checker-online`, `free-security-headers-checker-no-signup`, `best-security-headers-checker-online`, `security-headers-checker-tool`, `security-headers-checker-no-upload`, `privacy-friendly-security-headers-checker`, `client-side-security-headers-checker-free`, `local-security-headers-checker-offline`, `security-headers-checker-no-data-selling`, `secure-security-headers-checker-locally`
+
+#### [SSL Certificate Checker](https://sopkit.github.io/ssl-certificate-checker)
+- **Description**: Check SSL certificate details, validity, and chain for any website. Verify issuer, expiration, and encryption strength privately.
+- **Alternative Intents / Keywords**: `ssl-certificate-checker-free`, `ssl-certificate-checker-online`, `free-ssl-certificate-checker-no-signup`, `best-ssl-certificate-checker-online`, `ssl-certificate-checker-tool`, `ssl-certificate-checker-no-upload`, `privacy-friendly-ssl-certificate-checker`, `client-side-ssl-certificate-checker-free`, `local-ssl-certificate-checker-offline`, `ssl-certificate-checker-no-data-selling`, `secure-ssl-certificate-checker-locally`
+
+#### [Domain Reputation Checker](https://sopkit.github.io/domain-reputation-checker)
+- **Description**: Check domain reputation, age, and safety status. Analyze if a website is trustworthy, blacklisted, or suspicious.
+- **Alternative Intents / Keywords**: `domain-reputation-checker-free`, `domain-reputation-checker-online`, `free-domain-reputation-checker-no-signup`, `best-domain-reputation-checker-online`, `domain-reputation-checker-tool`, `domain-reputation-checker-no-upload`, `privacy-friendly-domain-reputation-checker`, `client-side-domain-reputation-checker-free`, `local-domain-reputation-checker-offline`, `domain-reputation-checker-no-data-selling`, `secure-domain-reputation-checker-locally`
+
+#### [Cookie Consent Generator](https://sopkit.github.io/cookie-consent-generator)
+- **Description**: Generate GDPR-compliant cookie consent banners and privacy notices for your website. Customize styles and export code.
+- **Alternative Intents / Keywords**: `cookie-consent-generator-free`, `cookie-consent-generator-online`, `free-cookie-consent-generator-no-signup`, `best-cookie-consent-generator-online`, `cookie-consent-generator-tool`, `cookie-consent-generator-no-upload`, `privacy-friendly-cookie-consent-generator`, `client-side-cookie-consent-generator-free`, `local-cookie-consent-generator-offline`, `cookie-consent-generator-no-data-selling`, `secure-cookie-consent-generator-locally`
+
+#### [GDPR Compliance Checker](https://sopkit.github.io/gdpr-compliance-checker)
+- **Description**: Check your website for GDPR compliance issues. Analyze privacy policy, cookie consent, data collection, and user rights — privately.
+- **Alternative Intents / Keywords**: `gdpr-compliance-checker-free`, `gdpr-compliance-checker-online`, `free-gdpr-compliance-checker-no-signup`, `best-gdpr-compliance-checker-online`, `gdpr-compliance-checker-tool`, `gdpr-compliance-checker-no-upload`, `privacy-friendly-gdpr-compliance-checker`, `client-side-gdpr-compliance-checker-free`, `local-gdpr-compliance-checker-offline`, `gdpr-compliance-checker-no-data-selling`, `secure-gdpr-compliance-checker-locally`
+
+#### [Data Retention Policy Generator](https://sopkit.github.io/data-retention-policy-generator)
+- **Description**: Generate a data retention policy for your business. Customize by industry, data types, and jurisdiction — export in minutes.
+- **Alternative Intents / Keywords**: `data-retention-policy-generator-free`, `data-retention-policy-generator-online`, `free-data-retention-policy-generator-no-signup`, `best-data-retention-policy-generator-online`, `data-retention-policy-generator-tool`, `data-retention-policy-generator-no-upload`, `privacy-friendly-data-retention-policy-generator`, `client-side-data-retention-policy-generator-free`, `local-data-retention-policy-generator-offline`, `data-retention-policy-generator-no-data-selling`, `secure-data-retention-policy-generator-locally`
+
+#### [Email Header Analyzer](https://sopkit.github.io/email-header-analyzer)
+- **Description**: Analyze email headers for deliverability issues, spoofing, and routing problems. Inspect SPF, DKIM, DMARC, and IP paths.
+- **Alternative Intents / Keywords**: `email-header-analyzer-free`, `email-header-analyzer-online`, `free-email-header-analyzer-no-signup`, `best-email-header-analyzer-online`, `email-header-analyzer-tool`, `email-header-analyzer-no-upload`, `privacy-friendly-email-header-analyzer`, `client-side-email-header-analyzer-free`, `local-email-header-analyzer-offline`, `email-header-analyzer-no-data-selling`, `secure-email-header-analyzer-locally`
+
+#### [AI Image Detector](https://sopkit.github.io/ai-image-detector)
+- **Description**: Detect AI-generated images and deepfakes. Analyze image metadata and patterns to identify synthetic media — privately in your browser.
+- **Alternative Intents / Keywords**: `ai-image-detector-free`, `ai-image-detector-online`, `free-ai-image-detector-no-signup`, `best-ai-image-detector-online`, `ai-image-detector-tool`, `ai-image-detector-no-upload`, `privacy-friendly-ai-image-detector`, `client-side-ai-image-detector-free`, `local-ai-image-detector-offline`, `ai-image-detector-no-data-selling`, `secure-ai-image-detector-locally`
+
+#### [Data Breach Checker](https://sopkit.github.io/data-breach-checker)
+- **Description**: Check if your email or phone number has appeared in a known data breach. Get breach details and security recommendations.
+- **Alternative Intents / Keywords**: `data-breach-checker-free`, `data-breach-checker-online`, `free-data-breach-checker-no-signup`, `best-data-breach-checker-online`, `data-breach-checker-tool`, `data-breach-checker-no-upload`, `privacy-friendly-data-breach-checker`, `client-side-data-breach-checker-free`, `local-data-breach-checker-offline`, `data-breach-checker-no-data-selling`, `secure-data-breach-checker-locally`
+
+#### [Email Deliverability Checker](https://sopkit.github.io/email-deliverability-checker)
+- **Description**: Check email deliverability by analyzing SPF, DKIM, and DMARC records. Ensure your emails reach the inbox, not spam.
+- **Alternative Intents / Keywords**: `email-deliverability-checker-free`, `email-deliverability-checker-online`, `free-email-deliverability-checker-no-signup`, `best-email-deliverability-checker-online`, `email-deliverability-checker-tool`, `email-deliverability-checker-no-upload`, `privacy-friendly-email-deliverability-checker`, `client-side-email-deliverability-checker-free`, `local-email-deliverability-checker-offline`, `email-deliverability-checker-no-data-selling`, `secure-email-deliverability-checker-locally`
+
+#### [Privacy Policy Auditor](https://sopkit.github.io/privacy-policy-auditor)
+- **Description**: Audit your privacy policy for GDPR, CCPA, and other regulation compliance. Get a checklist and improvement suggestions.
+- **Alternative Intents / Keywords**: `privacy-policy-auditor-free`, `privacy-policy-auditor-online`, `free-privacy-policy-auditor-no-signup`, `best-privacy-policy-auditor-online`, `privacy-policy-auditor-tool`, `privacy-policy-auditor-no-upload`, `privacy-friendly-privacy-policy-auditor`, `client-side-privacy-policy-auditor-free`, `local-privacy-policy-auditor-offline`, `privacy-policy-auditor-no-data-selling`, `secure-privacy-policy-auditor-locally`
+
+#### [Email Preview Generator](https://sopkit.github.io/email-preview-generator)
+- **Description**: Generate email previews across desktop, mobile, and dark mode. Test how your email looks in different clients before sending.
+- **Alternative Intents / Keywords**: `email-preview-generator-free`, `email-preview-generator-online`, `free-email-preview-generator-no-signup`, `best-email-preview-generator-online`, `email-preview-generator-tool`, `email-preview-generator-no-upload`, `privacy-friendly-email-preview-generator`, `client-side-email-preview-generator-free`, `local-email-preview-generator-offline`, `email-preview-generator-no-data-selling`, `secure-email-preview-generator-locally`
+
+#### [Spam Score Checker](https://sopkit.github.io/spam-score-checker)
+- **Description**: Check the spam score of your email or message. Analyze content, links, and formatting for deliverability issues.
+- **Alternative Intents / Keywords**: `spam-score-checker-free`, `spam-score-checker-online`, `free-spam-score-checker-no-signup`, `best-spam-score-checker-online`, `spam-score-checker-tool`, `spam-score-checker-no-upload`, `privacy-friendly-spam-score-checker`, `client-side-spam-score-checker-free`, `local-spam-score-checker-offline`, `spam-score-checker-no-data-selling`, `secure-spam-score-checker-locally`
+
+#### [Consent Management Generator](https://sopkit.github.io/consent-management-generator)
+- **Description**: Generate consent management banners and preference centers for GDPR and CCPA compliance. Export customizable code.
+- **Alternative Intents / Keywords**: `consent-management-generator-free`, `consent-management-generator-online`, `free-consent-management-generator-no-signup`, `best-consent-management-generator-online`, `consent-management-generator-tool`, `consent-management-generator-no-upload`, `privacy-friendly-consent-management-generator`, `client-side-consent-management-generator-free`, `local-consent-management-generator-offline`, `consent-management-generator-no-data-selling`, `secure-consent-management-generator-locally`
+
+#### [Breach Notification Generator](https://sopkit.github.io/breach-notification-generator)
+- **Description**: Generate data breach notification templates for customers, regulators, and internal teams. Compliant with GDPR and state laws.
+- **Alternative Intents / Keywords**: `breach-notification-generator-free`, `breach-notification-generator-online`, `free-breach-notification-generator-no-signup`, `best-breach-notification-generator-online`, `breach-notification-generator-tool`, `breach-notification-generator-no-upload`, `privacy-friendly-breach-notification-generator`, `client-side-breach-notification-generator-free`, `local-breach-notification-generator-offline`, `breach-notification-generator-no-data-selling`, `secure-breach-notification-generator-locally`
+
+#### [Data Anonymization Report Generator](https://sopkit.github.io/data-anonymization-report-generator)
+- **Description**: Generate data anonymization reports for GDPR Article 25 compliance. Document anonymization techniques and risk assessments.
+- **Alternative Intents / Keywords**: `data-anonymization-report-generator-free`, `data-anonymization-report-generator-online`, `free-data-anonymization-report-generator-no-signup`, `best-data-anonymization-report-generator-online`, `data-anonymization-report-generator-tool`, `data-anonymization-report-generator-no-upload`, `privacy-friendly-data-anonymization-report-generator`, `client-side-data-anonymization-report-generator-free`, `local-data-anonymization-report-generator-offline`, `data-anonymization-report-generator-no-data-selling`, `secure-data-anonymization-report-generator-locally`
+

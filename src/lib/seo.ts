@@ -36,6 +36,12 @@ const TRENDING_VIRAL_KEYWORDS = [
 	"kimi k3 free online",
 	"kimi k3 moonshot ai",
 	"how to use kimi k3",
+	"kimi k3 free online playground",
+	"kimi k3 vs chatgpt",
+	"kimi k3 api price",
+	"kimi k3 capabilities",
+	"kimi k3 model weights",
+	"kimi k3 download",
 ];
 
 /**
@@ -90,7 +96,7 @@ export function generateMetadata({
 				index: !noIndex,
 				follow: !noIndex,
 				"max-video-preview": -1,
-				"max-image-preference": "large",
+				"max-image-preview": "large",
 				"max-snippet": -1,
 			},
 		},
