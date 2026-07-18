@@ -155,7 +155,7 @@ export function generateToolMetadata({
 		}
 	}
 
-	const title = customTitle || `${cleanName} — 100% Client-Side in Your Browser | No Upload, No AI Training | SopKit`;
+	const title = customTitle || `${cleanName} — 100% Free, Fast, Private in Your Browser - SopKit`;
 
 	const desc = customDesc || (description && description.length > 80
 		? description
