@@ -57,6 +57,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 
 ### Image Tools
 
+- [Gemini Watermark Remover](https://sopkit.github.io/gemini-watermark-remover) - Remove the Google Gemini AI logo and watermarks from your images online. Process 100% client-side inside your browser for complete privacy.
 - [SVG to PNG Converter](https://sopkit.github.io/svg-to-png) - Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds.
 - [WEBP to PNG Converter](https://sopkit.github.io/webp-to-png) - Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.
 - [ICO to PNG Converter](https://sopkit.github.io/ico-to-png) - Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.
