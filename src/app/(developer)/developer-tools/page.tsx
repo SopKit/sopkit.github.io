@@ -34,7 +34,7 @@ export default function DeveloperHub() {
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
 						{tools.map((tool: Tool) => (
 							<Link key={tool.id} href={tool.route}>
-								<Card className="h-full hover:shadow-2xl hover:border-primary/50 transition-all group overflow-hidden bg-card/50 backdrop-blur-sm border-border/40">
+								<Card className="h-full border border-border/80 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-sm transition-all duration-200 group overflow-hidden bg-card/60 backdrop-blur-sm">
 									<CardHeader className="pb-2">
 										<CardTitle className="flex items-center justify-between">
 											<span className="text-xl font-bold tracking-tight">{tool.name}</span>

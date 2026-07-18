@@ -353,7 +353,7 @@ export default function RootLayout({
 					}}
 				/>
 			</head>
-			<body className={`ds-page font-sans antialiased ${inter.className}`}>
+			<body className={`ds-page font-sans antialiased min-h-screen ${inter.className}`}>
 				<ClientStackAuthProvider>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 						<AppleNavbar />

@@ -83,25 +83,25 @@
 
 @layer base {
 	:root {
-		/* Neo-classy blue palette */
-		--background: 220 20% 98%;
-		--foreground: 224 40% 12%;
+		/* Minimalist Clean Palette */
+		--background: 0 0% 99%;
+		--foreground: 240 10% 4%;
 		--card: 0 0% 100%;
-		--card-foreground: 224 40% 12%;
+		--card-foreground: 240 10% 4%;
 		--popover: 0 0% 100%;
-		--popover-foreground: 224 40% 12%;
+		--popover-foreground: 240 10% 4%;
 		--primary: 221 83% 53%;
 		--primary-foreground: 0 0% 100%;
-		--secondary: 220 20% 96%;
-		--secondary-foreground: 224 30% 20%;
-		--muted: 220 16% 92%;
-		--muted-foreground: 224 20% 40%;
-		--accent: 221 83% 53% / 0.1;
+		--secondary: 240 5% 96%;
+		--secondary-foreground: 240 10% 4%;
+		--muted: 240 5% 96%;
+		--muted-foreground: 240 4% 46%;
+		--accent: 221 83% 53% / 0.05;
 		--accent-foreground: 221 83% 53%;
 		--destructive: 0 84% 60%;
 		--destructive-foreground: 0 0% 100%;
-		--border: 224 20% 88%;
-		--input: 224 20% 88%;
+		--border: 240 6% 90%;
+		--input: 240 6% 90%;
 		--ring: 221 83% 53%;
 		--radius: 12px;
 
@@ -116,28 +116,28 @@
 	}
 
 	.dark {
-		/* Neo-classy dark palette */
-		--background: 224 40% 8%;
-		--foreground: 220 20% 94%;
-		--card: 224 30% 14%;
-		--card-foreground: 220 20% 94%;
-		--popover: 224 30% 14%;
-		--popover-foreground: 220 20% 94%;
-		--primary: 221 83% 60%;
+		/* Minimalist Clean Dark Palette */
+		--background: 240 10% 4%;
+		--foreground: 0 0% 98%;
+		--card: 240 10% 6%;
+		--card-foreground: 0 0% 98%;
+		--popover: 240 10% 6%;
+		--popover-foreground: 0 0% 98%;
+		--primary: 217 91% 60%;
 		--primary-foreground: 0 0% 100%;
-		--secondary: 224 30% 16%;
-		--secondary-foreground: 220 20% 90%;
-		--muted: 224 30% 18%;
-		--muted-foreground: 220 20% 70%;
-		--accent: 221 83% 60% / 0.15;
-		--accent-foreground: 221 83% 60%;
+		--secondary: 240 4% 12%;
+		--secondary-foreground: 0 0% 98%;
+		--muted: 240 4% 12%;
+		--muted-foreground: 240 5% 65%;
+		--accent: 217 91% 60% / 0.1;
+		--accent-foreground: 217 91% 60%;
 		--destructive: 0 84% 60%;
 		--destructive-foreground: 0 0% 100%;
-		--border: 224 30% 24%;
-		--input: 224 30% 24%;
-		--ring: 221 83% 60%;
+		--border: 240 4% 16%;
+		--input: 240 4% 16%;
+		--ring: 217 91% 60%;
 
-		--chart-1: 221 83% 60%;
+		--chart-1: 217 91% 60%;
 		--chart-2: 199 89% 55%;
 		--chart-3: 258 90% 72%;
 		--chart-4: 38 92% 60%;
@@ -186,17 +186,17 @@
 	}
 
 	.bg-apple-light {
-		background-color: #f5f5f7;
-		color: #1d1d1f;
+		background-color: #f0f4f8;
+		color: #1a2a3a;
 	}
 
 	.bg-apple-dark {
-		background-color: #000;
-		color: #fff;
+		background-color: #0b132b;
+		color: #e2e8f0;
 	}
 
 	.apple-glass {
-		background-color: rgb(0 0 0 / 0.8);
+		background-color: rgb(11 19 43 / 0.8);
 		backdrop-filter: saturate(180%) blur(20px);
 	}
 
@@ -205,9 +205,9 @@
 	}
 
 	.bg-gradient-cute {
-		background-image: radial-gradient(circle at 10% 10%, rgb(59 130 246 / 0.18), transparent 30%),
-			radial-gradient(circle at 90% 20%, rgb(236 72 153 / 0.14), transparent 30%),
-			radial-gradient(circle at 50% 100%, rgb(168 85 247 / 0.12), transparent 35%);
+		background-image: radial-gradient(circle at 10% 10%, rgb(30 144 255 / 0.22), transparent 40%),
+			radial-gradient(circle at 90% 20%, rgb(0 191 255 / 0.18), transparent 40%),
+			radial-gradient(circle at 50% 100%, rgb(72 61 139 / 0.15), transparent 45%);
 	}
 
 	.apple-card-premium {
@@ -219,17 +219,17 @@
 
 	.apple-card-premium:hover {
 		transform: translateY(-2px);
-		box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.08);
-		border-color: hsl(var(--primary) / 0.3);
-	}
-
-	.dark .apple-card-premium:hover {
-		box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.4);
+		box-shadow: 0 12px 30px -10px rgba(30, 144, 255, 0.15);
 		border-color: hsl(var(--primary) / 0.4);
 	}
 
+	.dark .apple-card-premium:hover {
+		box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(30, 144, 255, 0.1);
+		border-color: hsl(var(--primary) / 0.5);
+	}
+
 	.apple-glass-premium {
-		background-color: hsl(var(--background) / 0.7);
+		background-color: hsl(var(--background) / 0.75);
 		backdrop-filter: blur(20px) saturate(190%);
 		border: 1px solid hsl(var(--border));
 	}

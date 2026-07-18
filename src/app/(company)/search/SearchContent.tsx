@@ -246,7 +246,7 @@ function SearchResults({ initialTools, initialCategories }: SearchContentProps) 
 						<Link 
 							key={tool.id} 
 							href={tool.route}
-							className="group relative bg-card border border-border/40 hover:border-primary/40 transition-all duration-300 p-6 flex flex-col h-full hover:shadow-2xl hover:shadow-primary/5"
+							className="group relative bg-card border border-border/50 rounded-xl hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-sm transition-all duration-200 p-6 flex flex-col h-full"
 						>
 							<div className="space-y-3 flex-1">
 								<div className="flex items-start justify-between gap-2">

@@ -143,17 +143,17 @@ export default async function LandingPage() {
 							<Link
 								key={cat.name}
 								href={cat.href}
-								className="group p-8 bg-card border border-border/60 rounded-none hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] dark:hover:shadow-[0_20px_50px_rgba(255,255,255,0.03)] hover:border-primary/40 hover:-translate-y-1 transition-all duration-300 no-underline"
+								className="group p-6 bg-card border border-border/50 rounded-xl hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300 no-underline"
 							>
-								<div className="flex items-center gap-4 mb-4">
-									<div className="p-3 bg-primary/10 text-primary rounded-none">
+								<div className="flex items-center gap-3 mb-3">
+									<div className="p-2.5 bg-secondary text-foreground rounded-lg">
 										{cat.icon}
 									</div>
-									<h3 className="text-xl font-bold group-hover:text-primary transition-colors">
+									<h3 className="text-lg font-bold group-hover:text-primary transition-colors">
 										{cat.name}
 									</h3>
 								</div>
-								<p className="text-sm text-muted-foreground leading-relaxed">
+								<p className="text-xs text-muted-foreground leading-relaxed">
 									{cat.description}
 								</p>
 							</Link>
@@ -166,24 +166,24 @@ export default async function LandingPage() {
 
 				{/* Ad-Free Embed Feature Highlight */}
 				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_300px]">
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-card border border-border/40 p-8 md:p-12">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-card border border-border/50 p-6 md:p-10 rounded-2xl shadow-sm hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300">
 						<div className="space-y-4">
 							<Badge className="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-semibold px-3 py-1 rounded-full w-fit">
 								New Feature
 							</Badge>
-							<h2 className="text-3xl font-black tracking-tight text-foreground uppercase">
+							<h2 className="text-2xl font-black tracking-tight text-foreground uppercase">
 								Seamless Tool Embeds
 							</h2>
-							<p className="text-sm text-muted-foreground leading-relaxed">
+							<p className="text-xs text-muted-foreground leading-relaxed">
 								Integrate any of SopKit's {SITE_CONFIG.toolCountString} utilities directly onto your own website, blog, or documentation. Our embedded sandboxes run entirely in your visitor's browser, consuming zero server bandwidth and remaining free to use.
 							</p>
 						</div>
-						<div className="p-6 bg-muted/30 border border-border/40 rounded-xl space-y-4 font-mono text-xs text-muted-foreground">
+						<div className="p-5 bg-muted/40 border border-border/40 rounded-xl space-y-3 font-mono text-xs text-muted-foreground">
 							<span className="font-bold text-foreground block">HTML Embed Code Example:</span>
 							<textarea
 								readOnly
 								value={`<iframe src="https://sopkit.github.io/embed-tool/?id=pdf-editor" width="100%" height="550" style="border:0; border-radius:12px; overflow:hidden;" title="Free Local PDF Editor by SopKit"></iframe>`}
-								className="w-full h-24 p-3 bg-card border border-border/40 rounded-lg resize-none focus:outline-none text-[10px]"
+								className="w-full h-20 p-2.5 bg-card border border-border/40 rounded-lg resize-none focus:outline-none text-[10px]"
 							/>
 						</div>
 					</div>
@@ -191,18 +191,17 @@ export default async function LandingPage() {
 
 				{/* Final CTA - View All Tools */}
 				<section className="py-16 text-center border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_300px]">
-					<div className="max-w-3xl mx-auto px-6 py-16 rounded-none bg-foreground text-background relative overflow-hidden group">
-						<div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-10 transition-opacity" />
-						<h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-background">Need another tool?</h2>
-						<p className="text-lg opacity-80 mb-10 text-background/90">
+					<div className="max-w-3xl mx-auto px-6 py-12 rounded-2xl bg-zinc-900 dark:bg-zinc-100 border border-zinc-800 dark:border-zinc-200 text-zinc-100 dark:text-zinc-900 relative overflow-hidden group shadow-sm">
+						<h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-zinc-50 dark:text-zinc-950">Need another tool?</h2>
+						<p className="text-sm text-zinc-300 dark:text-zinc-600 mb-8 max-w-lg mx-auto leading-relaxed">
 							We have {SITE_CONFIG.toolCountString} free browser-based tools for document editing, image compression, formatting, calculations, and content generation.
 						</p>
 						<Link 
 							href="/tools" 
-							className="inline-flex h-14 items-center justify-center rounded-none bg-primary text-primary-foreground hover:bg-primary/90 px-10 text-lg font-bold transition-all hover:scale-[1.02] active:scale-[0.98] gap-2 hover:gap-3 group/btn relative z-10 shadow-lg"
+							className="inline-flex h-12 items-center justify-center rounded-lg bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50 hover:bg-zinc-200 dark:hover:bg-zinc-800 px-8 text-sm font-bold transition-all hover:scale-[1.01] active:scale-[0.99] gap-1.5"
 						>
 							View All {SITE_CONFIG.toolCountString} Tools
-							<ArrowRight className="h-5 w-5 transition-transform" />
+							<ArrowRight className="h-4 w-4" />
 						</Link>
 					</div>
 				</section>

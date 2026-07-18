@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { Search, ExternalLink, Filter, Sparkles, AlertCircle } from "lucide-react";
-import { AppleNavbar } from "@/components/navigation/AppleNavbar";
 import { AppleFooter } from "@/components/footers/AppleFooter";
 import { GridPattern } from "@/components/shared/GridPattern";
 import directoriesData from "@/constants/directories.json";
@@ -45,17 +44,16 @@ export default function StartupDirectoriesPage() {
 	}));
 
 	return (
-		<div className="min-h-screen bg-background flex flex-col font-sans">
-			<AppleNavbar />
-			<main className="flex-1 relative">
+		<div className="min-h-screen bg-background flex flex-col font-sans relative overflow-hidden">
+			<main className="flex-1 relative z-10">
 				<GridPattern className="opacity-[0.03]" />
 
 				{/* Minimalist Hero */}
 				<section className="container mx-auto max-w-5xl px-6 pt-16 pb-12 text-center space-y-4">
-					<span className="text-[10px] font-bold uppercase tracking-wider text-primary bg-primary/5 border border-primary/10 px-3 py-1 rounded-full">
+					<span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border/85 px-3 py-1 rounded-full shadow-sm">
 						Launch & Growth resources
 					</span>
-					<h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
+					<h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-foreground leading-tight">
 						Startup & SaaS Submission Directories
 					</h1>
 					<p className="text-sm md:text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">
@@ -240,7 +238,6 @@ export default function StartupDirectoriesPage() {
 					)}
 				</section>
 			</main>
-			<AppleFooter categories={categories} />
 		</div>
 	);
 }

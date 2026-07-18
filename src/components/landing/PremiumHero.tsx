@@ -72,42 +72,42 @@ export function PremiumHero({ title, subtitle = "" }) {
 			</div>
 
 			<div className="w-full max-w-3xl mx-auto text-center px-4">
-				<h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-foreground mb-8 leading-[1.1] bg-gradient-to-b from-foreground to-foreground/80">
+				<h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-foreground mb-8 leading-[1.1]">
 					{title}
 				</h1>
 				{subtitle && (
-					<p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+					<p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
 						{subtitle}
 					</p>
 				)}
-
-				{/* Search Discovery Engine */}
-				<form
-					onSubmit={handleSearch}
-					className="relative w-full max-w-2xl mx-auto group animate-fade-in"
-				>
-					<div className="relative flex items-center shadow-lg border border-border/40 hover:border-border transition-all">
-						<Search className="absolute left-6 h-5 w-5 text-muted-foreground group-focus-within:text-primary transition-colors" />
-						<Input
-							ref={inputRef}
-							type="text"
-							placeholder="Search for any tool (e.g. 'compress image', 'pdf', 'youtube')..."
-							className="h-16 pl-16 pr-32 rounded-none bg-card border-none text-lg focus-visible:ring-0 focus-visible:ring-offset-0 transition-all placeholder:text-muted-foreground/50 w-full"
-							value={query}
-							onChange={(e) => {
-								setQuery(e.target.value);
-								setShowSuggestions(true);
-							}}
-							onFocus={() => setShowSuggestions(true)}
-							autoComplete="off"
-						/>
-						<Button
-							type="submit"
-							className="absolute right-2 h-12 px-6 rounded-none bg-primary hover:bg-primary/95 text-white font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]"
-						>
-							Find Tool
-						</Button>
-					</div>
+ 
+ 				{/* Search Discovery Engine */}
+ 				<form
+ 					onSubmit={handleSearch}
+ 					className="relative w-full max-w-2xl mx-auto group animate-fade-in"
+ 				>
+					<div className="relative flex items-center shadow-sm border border-zinc-200 dark:border-zinc-800 rounded-xl bg-card overflow-hidden transition-all duration-200 hover:border-zinc-300 dark:hover:border-zinc-700 focus-within:border-zinc-400 dark:focus-within:border-zinc-650">
+ 						<Search className="absolute left-6 h-5 w-5 text-muted-foreground transition-colors" />
+ 						<Input
+ 							ref={inputRef}
+ 							type="text"
+ 							placeholder="Search for any tool (e.g. 'compress image', 'pdf', 'youtube')...."
+							className="h-16 pl-16 pr-32 bg-transparent border-none text-base focus-visible:ring-0 focus-visible:ring-offset-0 transition-all placeholder:text-muted-foreground/40 w-full"
+ 							value={query}
+ 							onChange={(e) => {
+ 								setQuery(e.target.value);
+ 								setShowSuggestions(true);
+ 							}}
+ 							onFocus={() => setShowSuggestions(true)}
+ 							autoComplete="off"
+ 						/>
+ 						<Button
+ 							type="submit"
+							className="absolute right-2 h-12 px-6 rounded-lg bg-zinc-900 dark:bg-zinc-100 hover:bg-zinc-800 dark:hover:bg-zinc-200 text-zinc-50 dark:text-zinc-900 font-semibold transition-all"
+ 						>
+ 							Find Tool
+ 						</Button>
+ 					</div>
 
 					{showSuggestions && (
 						<div className="absolute left-0 right-0 top-full mt-2 bg-card border border-border/60 shadow-2xl z-50 max-h-[320px] overflow-y-auto rounded-xl">

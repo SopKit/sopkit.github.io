@@ -1,8 +1,6 @@
-import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, Tool } from "@/lib/tools";
 import { generateToolMetadata } from "@/lib/seo";
 import { PremiumHero } from "@/components/landing/PremiumHero";
-import { AppleFooter } from "@/components/footers/AppleFooter";
-import { AppleNavbar } from "@/components/navigation/AppleNavbar";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -15,17 +13,11 @@ export const metadata = generateToolMetadata({
 	category: "calculators",
 });
 
-
 export default function CalculatorsHub() {
 	const tools = getAllToolsByCategory("calculators");
-	const categories = getAllCategories().map(cat => ({ 
-		label: cat.name, 
-		href: cat.slug.startsWith("/") ? cat.slug : `/${cat.slug}` 
-	}));
 
 	return (
 		<div className="min-h-screen bg-background">
-			<AppleNavbar />
 			<main>
 				<PremiumHero 
 					title="Smart Calculators" 
@@ -38,7 +30,7 @@ export default function CalculatorsHub() {
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
 						{tools.map((tool: Tool) => (
 							<Link key={tool.id} href={tool.route}>
-								<Card className="h-full hover:shadow-2xl hover:border-primary/50 transition-all group overflow-hidden bg-card/50 backdrop-blur-sm">
+								<Card className="h-full border border-border/80 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-sm transition-all duration-200 group overflow-hidden bg-card/60 backdrop-blur-sm">
 									<CardHeader className="pb-2">
 										<CardTitle className="flex items-center justify-between">
 											<span className="text-xl font-bold tracking-tight">{tool.name}</span>
@@ -59,7 +51,6 @@ export default function CalculatorsHub() {
 					</div>
 				</div>
 			</main>
-			<AppleFooter categories={categories} />
 		</div>
 	);
 }
