@@ -93,6 +93,7 @@ const LikeeDownloader = dynamic(() => import("@/components/tools/downloaders/Lik
 const LineSorterTool = dynamic(() => import("@/components/tools/text/LineSorterTool"), { ssr: false });
 const LinkedinDownloader = dynamic(() => import("@/components/tools/downloaders/LinkedinDownloader"), { ssr: false });
 const LogoGeneratorTool = dynamic(() => import("@/components/tools/image/LogoGeneratorTool"), { ssr: false });
+const GeminiWatermarkRemover = dynamic(() => import("@/components/tools/image/GeminiWatermarkRemover"), { ssr: false });
 const LoremIpsumGeneratorTool = dynamic(() => import("@/components/tools/generators/LoremIpsumGeneratorTool"), { ssr: false });
 const M3u8Downloader = dynamic(() => import("@/components/tools/downloaders/M3u8Downloader"), { ssr: false });
 const MarkdownToText = dynamic(() => import("@/components/tools/text/MarkdownToText"), { ssr: false });
@@ -343,6 +344,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "random-word-generator": { component: RandomWordGeneratorTool, props: {} },
     // Image & Format
     "favicon-generator-pro": { component: FaviconGeneratorProTool, props: {} },
+    "gemini-watermark-remover": { component: GeminiWatermarkRemover, props: {} },
     "image-metadata-remover": { component: ImageMetadataRemoverTool, props: {} },
     "image-color-picker-pro": { component: ImageColorPicker, props: {} },
     "image-to-base64": { component: ImageToBase64Tool, props: {} },

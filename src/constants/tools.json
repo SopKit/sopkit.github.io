@@ -1366,6 +1366,23 @@
       "description": "Compress, convert, resize, and edit images online",
       "tools": [
         {
+          "id": "gemini-watermark-remover",
+          "name": "Gemini Watermark Remover",
+          "description": "Remove the Google Gemini AI logo and watermarks from your images online. Process 100% client-side inside your browser for complete privacy.",
+          "route": "/gemini-watermark-remover",
+          "popular": true,
+          "category": "image",
+          "seoDescription": "Privacy-friendly, 100% client-side Gemini Watermark Remover online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "extraSlugs": [
+            "gemini-watermark-remover-no-upload",
+            "privacy-friendly-gemini-watermark-remover",
+            "client-side-gemini-watermark-remover-free",
+            "local-gemini-watermark-remover-offline",
+            "remove-google-gemini-watermark-locally",
+            "clean-gemini-images-no-upload"
+          ]
+        },
+        {
           "id": "svg-to-png-converter",
           "name": "SVG to PNG Converter",
           "description": "Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds.",
