@@ -4,6 +4,7 @@ import { getAllTools, getToolById, getToolByExtraSlug, type Tool } from "@/lib/t
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import SeoOpportunityTool from "@/components/seo/SeoOpportunityTool";
+import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
 import {
     getSeoOpportunityBySlug,
     seoOpportunities,
@@ -98,7 +99,69 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
     const intent = getIntentBySlug(slug);
 
-    if (!intent) return {};
+    if (!intent) {
+        const extraTool = getToolByExtraSlug(slug);
+        if (extraTool) {
+            const isNoUpload = slug.includes("no-upload") || slug.includes("offline") || slug.includes("local");
+            const isPrivacy = slug.includes("privacy") || slug.includes("secure") || slug.includes("safe") || slug.includes("no-data-selling");
+            const isFree = slug.includes("free") || slug.includes("no-signup") || slug.includes("no-registration");
+
+            let title = "";
+            let description = "";
+
+            if (isNoUpload) {
+                title = `Free ${extraTool.name} (No File Uploads) — Local Browser Tool`;
+                description = `Run ${extraTool.name} locally in your browser. 100% private, client-side processing with zero file uploads. Fast, secure, and free.`;
+            } else if (isPrivacy) {
+                title = `Secure ${extraTool.name} — Privacy-Friendly Client-Side App`;
+                description = `A secure, privacy-first alternative for ${extraTool.name}. Operates in a local browser sandbox with no server uploads and no data tracking.`;
+            } else if (isFree) {
+                title = `Free ${extraTool.name} Online — No Signup Required`;
+                description = `Access our 100% free ${extraTool.name} online with no usage limits and no registration. Secure client-side processing in your browser.`;
+            } else {
+                title = `Free ${extraTool.name} Online — ${extraTool.description.slice(0, 30)}`;
+                description = `Privacy-friendly, 100% client-side ${extraTool.name} online. Secure local browser processing with no file uploads and no data selling.`;
+            }
+
+            // Pad or trim description to exactly 150-160 characters
+            const targetMin = 150;
+            const targetMax = 160;
+            if (description.length < targetMin) {
+                while (description.length < targetMin) {
+                    description += " Try it now for free.";
+                }
+            }
+            if (description.length > targetMax) {
+                description = description.substring(0, 157) + "...";
+            }
+
+            const canonicalUrl = `https://sopkit.github.io/${slug}/`;
+
+            return {
+                title,
+                description,
+                alternates: {
+                    canonical: canonicalUrl,
+                },
+                openGraph: {
+                    title,
+                    description,
+                    url: canonicalUrl,
+                    siteName: "SopKit",
+                    images: [{ url: "/og-image.jpg" }],
+                    type: "website",
+                },
+                twitter: {
+                    card: "summary_large_image",
+                    title,
+                    description,
+                    images: ["/og-image.jpg"],
+                },
+                robots: { index: true, follow: true },
+            };
+        }
+        return {};
+    }
 
     const parentTool = getToolById(intent.parentToolId);
     if (!parentTool) return {};
@@ -152,12 +215,77 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
 
     const intent = getIntentBySlug(slug);
 
-    // Long-tail extraSlugs (e.g. "ai-art-generator-online") have no dedicated
-    // page but should 301-consolidate to their parent tool instead of 404ing.
+    // Serve long-tail extraSlugs as standalone landers instead of redirecting
     if (!intent) {
         const extraTool = getToolByExtraSlug(slug);
         if (extraTool) {
-            permanentRedirect(`${extraTool.route}/`);
+            const isNoUpload = slug.includes("no-upload") || slug.includes("offline") || slug.includes("local");
+            const isPrivacy = slug.includes("privacy") || slug.includes("secure") || slug.includes("safe") || slug.includes("no-data-selling");
+            const isFree = slug.includes("free") || slug.includes("no-signup") || slug.includes("no-registration");
+
+            const tool = { ...extraTool };
+            const manualContent = MANUAL_TOOL_CONTENT[extraTool.id] || {};
+
+            // 1. Customize name (H1)
+            let keywordHighlight = "";
+            if (isNoUpload) {
+                keywordHighlight = " (No File Uploads)";
+            } else if (isPrivacy) {
+                keywordHighlight = " (100% Secure & Private)";
+            } else if (isFree) {
+                keywordHighlight = " (Free & No Signup)";
+            }
+            tool.name = `${extraTool.name}${keywordHighlight}`;
+
+            // 2. Customize description
+            tool.description = `A specialized, privacy-focused version of our ${extraTool.name} utility optimized for client-side security and local execution.`;
+
+            // 3. Customize Article
+            let extraArticle = "";
+            if (isNoUpload) {
+                extraArticle = `
+\n### Why a "No Upload" ${extraTool.name} is Essential
+Many online converters require you to upload files to their servers, exposing your sensitive documents, financial statements, or personal images to data breach risks and employee access. This page provides a 100% client-side alternative. Your files never leave your device, meaning you get absolute security and zero network upload latency.
+`;
+            } else if (isPrivacy) {
+                extraArticle = `
+\n### Absolute Privacy and Data Security
+With our privacy-friendly architecture, we guarantee that no data processed by this ${extraTool.name} is stored, tracked, or used to train artificial intelligence models. This local sandbox is built to meet corporate security guidelines and protect user confidentiality.
+`;
+            } else if (isFree) {
+                extraArticle = `
+\n### 100% Free Without Limitations
+Unlike freemium services that restrict file sizes or impose hourly conversion limits, this ${extraTool.name} is free forever with no daily caps, no hidden fees, and no signups required. Access full processing capabilities instantly.
+`;
+            }
+            const baseArticle = manualContent.whatItIs || extraTool.article || "";
+            tool.article = baseArticle + extraArticle;
+
+            // 4. Customize FAQs
+            const baseFaqs = manualContent.faqs || extraTool.faqs || [];
+            const customFaqs = [
+                {
+                    question: `Does this ${extraTool.name} page upload my files?`,
+                    answer: `No, this page runs entirely in your browser. All operations are performed client-side using JavaScript, ensuring your files never leave your device.`
+                },
+                {
+                    question: `Is there any fee or usage limit for this local tool?`,
+                    answer: `No, the tool is 100% free with no registration, no file size limits, and no daily usage caps.`
+                }
+            ];
+            tool.faqs = [...customFaqs, ...baseFaqs.slice(0, 3)];
+
+            const breadcrumbs = [
+                { name: "Home", route: "/" },
+                { name: extraTool.name, route: extraTool.route },
+                { name: slug.replace(/-/g, " "), route: `/${slug}` }
+            ];
+
+            return (
+                <ToolLayout breadcrumbs={breadcrumbs} tool={tool}>
+                    <IntentToolDispatcher toolId={extraTool.id} />
+                </ToolLayout>
+            );
         }
         notFound();
     }
@@ -194,6 +322,16 @@ export async function generateStaticParams() {
     });
     Object.keys(intentData).forEach((slug) => {
         slugs.add(slug);
+    });
+    getAllTools().forEach((t) => {
+        if (t.extraSlugs) {
+            t.extraSlugs.forEach((slug) => {
+                const trimmed = slug ? slug.trim() : "";
+                if (trimmed) {
+                    slugs.add(trimmed);
+                }
+            });
+        }
     });
     return Array.from(slugs).map((slug) => ({ slug }));
 }

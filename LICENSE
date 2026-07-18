@@ -1,21 +1,28 @@
-MIT License
+SopKit Non-Commercial License
 
 Copyright (c) 2026 Shaswat Raj (sh20raj)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. Definitions.
+   "License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 5 of this document.
+   "Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.
+   "You" (or "Your") shall mean an individual or Legal Entity exercising permissions granted by this License.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Grant of License.
+   Subject to the terms and conditions of this License, Licensor hereby grants You a world-wide, royalty-free, non-exclusive, non-sublicensable license to use, reproduce, modify, and run the Software for personal, non-commercial purposes only.
+
+3. Commercial Use Restriction.
+   You may NOT use the Software, or any derivative works of the Software, for commercial purposes. Commercial purposes include, but are not limited to:
+   - Selling or renting the Software or any portion thereof.
+   - Using the Software to provide commercial services (such as hosting the tools as a paid service or on a website monetized by advertisements, subscriptions, or paywalls).
+   - Bundling the Software as part of a commercial product or enterprise system.
+   - Any use by a commercial entity, corporation, or business enterprise.
+
+4. Redistribution & Attribution.
+   You may distribute copies or derivative works of the Software for non-commercial purposes, provided that:
+   - You include a copy of this License in any copies or derivative works.
+   - You retain all copyright, patent, trademark, and attribution notices from the Software.
+
+5. Disclaimer of Warranty.
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -31,30 +31,9 @@ function generateRedirects() {
 `;
 
     const allRedirects = [];
-
-    // Process categories and tools
-    Object.values(toolsData.categories).forEach(category => {
-        category.tools.forEach(tool => {
-            if (tool.extraSlugs && Array.from(new Set(tool.extraSlugs)).length > 0) {
-                const target = tool.route.endsWith('/') ? tool.route : `${tool.route}/`;
-                // Remove duplicates and self-references
-                const uniqueSlugs = [...new Set(tool.extraSlugs)].filter(slug => {
-                    const slugPath = slug.startsWith('/') ? slug : `/${slug}`;
-                    const cleanSlugPath = slugPath.endsWith('/') ? slugPath : `${slugPath}/`;
-                    return cleanSlugPath !== target;
-                });
-
-                uniqueSlugs.forEach(slug => {
-                    const source = slug.startsWith('/') ? slug : `/${slug}`;
-                    const sourceWithSlash = source.endsWith('/') ? source : `${source}/`;
-                    
-                    redirectsContent += `${source} ${target} 301\n`;
-                    allRedirects.push({ source: sourceWithSlash, target });
-                    redirectCount++;
-                });
-            }
-        });
-    });
+    // Programmatic extraSlugs are now served as standalone pages via the App Router
+    // (src/app/[slug]/page.tsx) to capture organic long-tail traffic natively.
+    // We no longer generate 301 redirects or static meta-refresh HTML pages for them.
 
     // Write public/_redirects
     fs.writeFileSync(publicRedirectsPath, redirectsContent);

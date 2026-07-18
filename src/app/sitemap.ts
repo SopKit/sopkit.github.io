@@ -109,26 +109,61 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		priority: 0.85,
 	}));
 
-	try {
-		// Get all extraSlugs to make sure they are excluded (except the intent pages we just added)
-		const extraSlugsSet = new Set(
-			allTools.flatMap((t) => (t.extraSlugs || []).map((slug) => {
-				const cleanSlug = slug.startsWith("/") ? slug : `/${slug}`;
-				return `${BASE_URL}${cleanSlug}`;
-			}))
-		);
-		
-		// Standalone SEO opportunities intentionally turn selected extra slugs into real pages.
-		seoOpportunityPages.forEach(page => extraSlugsSet.delete(page.url));
-		intentPages.forEach(page => extraSlugsSet.delete(page.url));
+	const RESERVED_SLUGS = new Set([
+		"privacy",
+		"terms",
+		"about",
+		"pro",
+		"pricing",
+		"feed.xml",
+		"tools",
+		"archive",
+		"embed",
+		"embed-tool",
+		"new-tools",
+		"search",
+		"calculator-tools",
+		"image-tools",
+		"pdf-tools",
+		"developer-tools",
+		"seo-tools",
+		"text-tools",
+		"video-tools",
+		"audio-tools",
+		"downloaders"
+	]);
 
+	const extraSlugsPages: MetadataRoute.Sitemap = [];
+	allTools.forEach((t) => {
+		if (t.extraSlugs) {
+			t.extraSlugs.forEach((slug) => {
+				const trimmed = slug ? slug.trim() : "";
+				if (trimmed && !RESERVED_SLUGS.has(trimmed)) {
+					extraSlugsPages.push({
+						url: `${BASE_URL}/${trimmed}`,
+						lastModified: t.popular ? now : siteUpdated,
+						changeFrequency: "weekly" as const,
+						priority: 0.65,
+					});
+				}
+			});
+		}
+	});
+
+	try {
 		// Deduplicate by URL to avoid duplicate sitemap entries.
 		// NOTE: URLs are emitted WITH a trailing slash to stay consistent with the
 		// canonical URLs declared in page metadata (the dominant form across the site).
-		const allPages = [...staticPages, ...toolPages, ...blogPages, ...seoOpportunityPages, ...intentPages];
+		const allPages = [
+			...staticPages,
+			...toolPages,
+			...blogPages,
+			...seoOpportunityPages,
+			...intentPages,
+			...extraSlugsPages,
+		];
 		const seen = new Set<string>();
 		return allPages
-			.filter((page) => !extraSlugsSet.has(page.url))
 			.filter((page) => {
 				if (seen.has(page.url)) return false;
 				seen.add(page.url);

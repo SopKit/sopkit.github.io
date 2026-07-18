@@ -1,4 +1,15 @@
 import toolsData from "@/constants/tools.json";
+import toolArticles from "@/data/tool-articles.json";
+import toolFeatures from "@/data/tool-features.json";
+import toolFaqs from "@/data/tool-faqs.json";
+import toolHowtos from "@/data/tool-howtos.json";
+import toolExtraslugs from "@/data/tool-extraslugs.json";
+
+const articlesMap = toolArticles as Record<string, string>;
+const featuresMap = toolFeatures as Record<string, string[]>;
+const faqsMap = toolFaqs as Record<string, { question: string; answer: string }[]>;
+const howtosMap = toolHowtos as Record<string, any>;
+const extraslugsMap = toolExtraslugs as Record<string, string[]>;
 
 export const STATIC_ROUTES = {
 	HOME: "/",
@@ -53,8 +64,21 @@ export interface Category {
 
 export const categories = toolsData.categories as unknown as Record<string, Category>;
 
+function enrichTool(tool: Tool): Tool {
+	if (!tool) return tool;
+	return {
+		...tool,
+		article: articlesMap[tool.id] || tool.article,
+		features: featuresMap[tool.id] || tool.features,
+		faqs: faqsMap[tool.id] || tool.faqs,
+		howTo: howtosMap[tool.id] || tool.howTo,
+		extraSlugs: extraslugsMap[tool.id] || tool.extraSlugs,
+	};
+}
+
 export function getAllTools(): Tool[] {
-	return Object.values(categories).flatMap((cat) => cat?.tools || []);
+	const rawTools = Object.values(categories).flatMap((cat) => cat?.tools || []);
+	return rawTools.map(enrichTool);
 }
 
 export function getToolByRoute(route: string): Tool | undefined {

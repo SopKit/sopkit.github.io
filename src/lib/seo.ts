@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getAllTools, getAllCategories } from "./tools";
+import toolsData from "@/constants/tools.json";
 
 /**
  * Centralized SEO utility for SopKit
@@ -31,17 +32,16 @@ interface MetadataProps {
  * reinforce the most-searched trending topics on the site.
  */
 const TRENDING_VIRAL_KEYWORDS = [
-	"kimi k3",
-	"use kimi k3 for free",
-	"kimi k3 free online",
-	"kimi k3 moonshot ai",
-	"how to use kimi k3",
-	"kimi k3 free online playground",
-	"kimi k3 vs chatgpt",
-	"kimi k3 api price",
-	"kimi k3 capabilities",
-	"kimi k3 model weights",
-	"kimi k3 download",
+	"free online tools",
+	"no upload",
+	"client-side converter",
+	"100% private",
+	"browser utility",
+	"secure converter",
+	"no registration tool",
+	"no ads online",
+	"unlimited file conversion",
+	"instant document tool"
 ];
 
 /**
@@ -54,15 +54,13 @@ export function generateMetadata({
 	image = "/og-image.jpg",
 	noIndex = false,
 	keywords = [],
-}: MetadataProps & { keywords?: string[] }): Metadata {
-	const cleanPath = path.startsWith("/") ? path : `/${path}`;
-	const canonicalUrl = withSlash(`${BASE_URL}${cleanPath}`);
-	const mergedKeywords = [...new Set([...keywords, ...TRENDING_VIRAL_KEYWORDS])];
+}: MetadataProps): Metadata {
+	const canonicalUrl = withSlash(`${BASE_URL}${path.startsWith("/") ? path : `/${path}`}`);
 
 	return {
 		title,
 		description,
-		keywords: mergedKeywords,
+		keywords: [...new Set([...keywords, ...TRENDING_VIRAL_KEYWORDS])],
 		alternates: {
 			canonical: canonicalUrl,
 		},
@@ -137,13 +135,31 @@ export function generateToolMetadata({
 		...(category ? [category] : []),
 		"SopKit",
 	];
-	const allKeywords = [...new Set([...baseKeywords, ...keywords, ...TRENDING_VIRAL_KEYWORDS])].join(", ");
+	const allKeywords = [...new Set([...baseKeywords, ...keywords, ...TRENDING_VIRAL_KEYWORDS])];
 
-	const title = `${cleanName} — 100% Client-Side in Your Browser | No Upload, No AI Training | SopKit`;
+	// Check if a custom title or description exists in tools.json
+	let customTitle = "";
+	let customDesc = "";
+	if (toolsData.categories) {
+		for (const cat of Object.values(toolsData.categories) as any[]) {
+			if (cat.tools) {
+				const found = cat.tools.find((t: any) => t.route === route);
+				if (found) {
+					if (found.seoTitle) customTitle = found.seoTitle;
+					else if (found.title) customTitle = found.title;
+					
+					if (found.seoDescription) customDesc = found.seoDescription;
+					break;
+				}
+			}
+		}
+	}
 
-	const desc = description && description.length > 80
+	const title = customTitle || `${cleanName} — 100% Client-Side in Your Browser | No Upload, No AI Training | SopKit`;
+
+	const desc = customDesc || (description && description.length > 80
 		? description
-		: `${cleanName} runs 100% client-side in your browser sandbox. Unlike server-side tools, your data never leaves your device — no uploads, no AI training, no data selling, no server storage. Fast, free, private, and secure.`;
+		: `${cleanName} runs 100% client-side in your browser sandbox. Unlike server-side tools, your data never leaves your device — no uploads, no AI training, no data selling, no server storage. Fast, free, private, and secure.`);
 
 	return generateMetadata({
 		title,
