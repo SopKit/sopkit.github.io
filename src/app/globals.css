@@ -110,8 +110,6 @@
 		--chart-3: 258 90% 66%;
 		--chart-4: 38 92% 50%;
 		--chart-5: 160 84% 39%;
-	}
-
 		--apple-blue: var(--primary);
 		--apple-gray: var(--background);
 		--apple-near-black: var(--foreground);
