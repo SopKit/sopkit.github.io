@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { Search, ExternalLink, Filter, Sparkles, AlertCircle } from "lucide-react";
-import { AppleFooter } from "@/components/footers/AppleFooter";
 import { GridPattern } from "@/components/shared/GridPattern";
 import directoriesData from "@/constants/directories.json";
 import { getAllCategories } from "@/lib/tools";

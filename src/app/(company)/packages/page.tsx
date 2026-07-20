@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, ExternalLink, Copy, Check } from "lucide-react";
 import { GridPattern } from "@/components/shared/GridPattern";
-import { getAllCategories } from "@/lib/tools";
 
 const PACKAGES_DATA = [
 	{
