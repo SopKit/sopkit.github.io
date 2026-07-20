@@ -32,17 +32,17 @@ export default async function ToolPage() {
 	const relatedTools = [
 		{
 			id: "ai-video-summarizer",
-			name: "Ai Video Summarizer",
-			description: "Ai Video Summarizer - Coming Soon",
+			name: "AI Video Summarizer",
+			description: "Summarize video transcripts into key points and insights using intelligent text analysis. Free and private.",
 			route: "/ai-video-summarizer",
 			extraSlugs: [],
-			popular: false,
-			category: "others",
+			popular: true,
+			category: "video",
 		},
 		{
 			id: "audio-equalizer",
 			name: "Audio Equalizer",
-			description: "Audio Equalizer - Coming Soon",
+			description: "Adjust audio frequencies with a 10-band graphic equalizer. Choose from presets like Rock, Pop, Jazz, and more.",
 			route: "/audio-equalizer",
 			extraSlugs: [
 				"audio-tools",
@@ -53,17 +53,17 @@ export default async function ToolPage() {
 				"shorten-audio-clip",
 				"split-audio-file",
 			],
-			popular: false,
-			category: "others",
+			popular: true,
+			category: "audio",
 		},
 		{
 			id: "audio-joiner",
 			name: "Audio Joiner",
-			description: "Audio Joiner - Coming Soon",
+			description: "Join multiple audio files into a single seamless track. Combine MP3, WAV, OGG, and M4A files. Free and private.",
 			route: "/audio-joiner",
 			extraSlugs: [],
-			popular: false,
-			category: "others",
+			popular: true,
+			category: "audio",
 		},
 	];
 

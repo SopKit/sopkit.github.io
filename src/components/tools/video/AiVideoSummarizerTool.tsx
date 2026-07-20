@@ -8,8 +8,9 @@ import {
 	Download,
 	FileText,
 	Upload,
+	ShieldCheck,
 } from "lucide-react";
-import { useRef, useState } from "react";
+import { useRef, useState, useCallback } from "react";
 import { toast } from "sonner";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -32,55 +33,139 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
+interface KeyPoint {
+	point: string;
+	importance: "High" | "Medium" | "Low";
+}
+
+function extractSentences(text: string): string[] {
+	return text
+		.split(/[.!?]+/)
+		.map(s => s.trim())
+		.filter(s => s.length > 10);
+}
+
+function scoreSentence(sentence: string, fullText: string): number {
+	const lower = sentence.toLowerCase();
+	const words = lower.split(/\s+/).filter(w => w.length > 2);
+	let score = 0;
+
+	// Score based on word frequency in the full text
+	const fullLower = fullText.toLowerCase();
+	for (const word of words) {
+		const count = (fullLower.match(new RegExp(word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), "g")) || []).length;
+		if (count > 1) score += count * 0.5;
+	}
+
+	// Bonus for sentences containing important trigger words
+	const importantWords = ["important", "key", "significant", "crucial", "essential", "main", "primary", "major", "critical", "vital", "notable", "especially", "particularly"];
+	for (const word of importantWords) {
+		if (lower.includes(word)) score += 3;
+	}
+
+	// Bonus for longer, substantive sentences
+	if (words.length > 8) score += 2;
+	if (words.length > 15) score += 1;
+
+	// Position bonus — first and last sentences are often important
+	const sentences = extractSentences(fullText);
+	const idx = sentences.indexOf(sentence);
+	if (idx === 0) score += 3;
+	if (idx === sentences.length - 1) score += 2;
+
+	return score;
+}
+
+function generateSummary(text: string, type: string, length: string): string {
+	const sentences = extractSentences(text);
+	if (sentences.length === 0) return "No content to summarize.";
+
+	const scored = sentences.map(s => ({ sentence: s, score: scoreSentence(s, text) }))
+		.sort((a, b) => b.score - a.score);
+
+	const maxSentences = length === "short" ? 3 : length === "medium" ? 6 : 10;
+
+	if (type === "bullet-points") {
+		return scored
+			.slice(0, maxSentences)
+			.map(s => `• ${s.sentence.trim()}`)
+			.join("\n");
+	} else if (type === "executive") {
+		const top = scored.slice(0, 3);
+		return `Executive Summary:\n${top.map(s => `• ${s.sentence.trim()}`).join("\n")}\n\nKey Focus: ${top[0]?.sentence || ""}`;
+	} else {
+		return scored
+			.slice(0, maxSentences)
+			.map(s => s.sentence.trim())
+			.join(". ") + ".";
+	}
+}
+
+function extractKeyPoints(text: string): KeyPoint[] {
+	const sentences = extractSentences(text);
+	const scored = sentences.map(s => ({ sentence: s, score: scoreSentence(s, text) }));
+	const top = scored.sort((a, b) => b.score - a.score).slice(0, 6);
+
+	return top.map((item, i) => {
+		const words = item.sentence.split(/\s+/).filter(w => w.length > 3);
+		const topic = words.slice(0, 4).join(" ");
+		return {
+			point: topic.charAt(0).toUpperCase() + topic.slice(1),
+			importance: i < 2 ? ("High" as const) : i < 4 ? ("Medium" as const) : ("Low" as const),
+		};
+	});
+}
+
 export default function AiVideoSummarizerTool() {
-	const [videoFile, setVideoFile] = useState(null);
-	const [videoUrl, setVideoUrl] = useState("");
+	const [videoFile, setVideoFile] = useState<File | null>(null);
+	const [transcriptInput, setTranscriptInput] = useState("");
 	const [summaryType, setSummaryType] = useState("bullet-points");
 	const [summaryLength, setSummaryLength] = useState("medium");
 	const [isProcessing, setIsProcessing] = useState(false);
 	const [progress, setProgress] = useState(0);
 	const [summary, setSummary] = useState("");
-	const [keyPoints, setKeyPoints] = useState([]);
-	const [transcript, setTranscript] = useState("");
+	const [keyPoints, setKeyPoints] = useState<KeyPoint[]>([]);
 	const [processingStep, setProcessingStep] = useState("");
 	const [copied, setCopied] = useState(false);
-	const fileInputRef = useRef(null);
-	const _videoRef = useRef(null);
+	const fileInputRef = useRef<HTMLInputElement>(null);
 
-	const handleFileUpload = (event) => {
-		const file = event.target.files[0];
-		if (file) {
-			if (file.size > 500 * 1024 * 1024) {
-				// 500MB limit
-				toast.error(
-					"File size too large. Please use a file smaller than 500MB.",
-				);
-				return;
-			}
+	const handleFileUpload = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
+		const file = event.target.files?.[0];
+		if (!file) return;
 
-			const allowedTypes = [
-				"video/mp4",
-				"video/avi",
-				"video/mov",
-				"video/mkv",
-				"video/webm",
-			];
-			if (!allowedTypes.includes(file.type)) {
-				toast.error(
-					"Unsupported file format. Please use MP4, AVI, MOV, MKV, or WebM.",
-				);
-				return;
-			}
-
-			setVideoFile(file);
-			setVideoUrl("");
-			toast.success("Video file selected successfully");
+		if (file.size > 50 * 1024 * 1024) {
+			toast.error("File size too large. Please use a file smaller than 50MB.");
+			return;
 		}
-	};
 
-	const processVideo = async () => {
-		if (!videoFile && !videoUrl.trim()) {
-			toast.error("Please upload a video file or enter a video URL");
+		// Try to extract text from various file types
+		const ext = file.name.split(".").pop()?.toLowerCase();
+		if (ext === "txt" || ext === "md" || ext === "srt" || ext === "vtt" || file.type === "text/plain") {
+			const reader = new FileReader();
+			reader.onload = (e) => {
+				const text = e.target?.result as string;
+				setTranscriptInput(text);
+				toast.success("Transcript loaded from file!");
+			};
+			reader.readAsText(file);
+		} else {
+			// For video files, prompt user to paste transcript
+			setVideoFile(file);
+			toast.success("Video file selected. Paste the transcript below or upload a .txt file.");
+		}
+
+		event.target.value = "";
+	}, []);
+
+	const processSummary = useCallback(async () => {
+		const textToSummarize = transcriptInput.trim();
+		if (!textToSummarize) {
+			toast.error("Please paste a video transcript or upload a text file to summarize.");
+			return;
+		}
+
+		if (textToSummarize.length < 20) {
+			toast.error("Transcript is too short. Please provide more content.");
 			return;
 		}
 
@@ -88,228 +173,129 @@ export default function AiVideoSummarizerTool() {
 		setProgress(0);
 		setSummary("");
 		setKeyPoints([]);
-		setTranscript("");
 
 		try {
-			// Simulate AI processing steps
-			setProcessingStep("Extracting audio from video...");
-			await simulateProgress(0, 25, 2000);
+			setProcessingStep("Analyzing content...");
+			await new Promise(r => setTimeout(r, 300));
+			setProgress(25);
 
-			setProcessingStep("Transcribing audio to text...");
-			await simulateProgress(25, 60, 3000);
-
-			setProcessingStep("Analyzing content with AI...");
-			await simulateProgress(60, 85, 2500);
+			setProcessingStep("Identifying key topics...");
+			await new Promise(r => setTimeout(r, 400));
+			setProgress(50);
 
 			setProcessingStep("Generating summary...");
-			await simulateProgress(85, 100, 1500);
+			await new Promise(r => setTimeout(r, 400));
+			setProgress(75);
 
-			// Generate sample transcript and summary
-			const sampleTranscript = generateSampleTranscript();
-			const generatedSummary = generateSummary(
-				sampleTranscript,
-				summaryType,
-				summaryLength,
-			);
-			const extractedKeyPoints = extractKeyPoints(sampleTranscript);
+			const generatedSummary = generateSummary(textToSummarize, summaryType, summaryLength);
+			const extractedKeyPoints = extractKeyPoints(textToSummarize);
 
-			setTranscript(sampleTranscript);
+			await new Promise(r => setTimeout(r, 300));
 			setSummary(generatedSummary);
 			setKeyPoints(extractedKeyPoints);
 			setProcessingStep("Complete!");
+			setProgress(100);
 
-			toast.success("Video summary generated successfully!");
+			toast.success("Summary generated successfully!");
 		} catch (error) {
-			toast.error("Failed to process video. Please try again.");
+			toast.error("Failed to generate summary. Please try again.");
 		} finally {
 			setIsProcessing(false);
-			setProgress(0);
-			setProcessingStep("");
 		}
-	};
+	}, [transcriptInput, summaryType, summaryLength]);
 
-	const simulateProgress = (start, end, duration) => {
-		return new Promise((resolve) => {
-			const steps = 20;
-			const increment = (end - start) / steps;
-			const stepDuration = duration / steps;
-			let current = start;
-
-			const interval = setInterval(() => {
-				current += increment;
-				setProgress(Math.min(current, end));
-
-				if (current >= end) {
-					clearInterval(interval);
-					resolve();
-				}
-			}, stepDuration);
-		});
-	};
-
-	const generateSampleTranscript = () => {
-		const videoName = videoFile ? videoFile.name : "Sample Video";
-		return `This is a sample transcript for ${videoName}. The video discusses various topics including productivity tips, workflow optimization, and best practices for content creation. The speaker covers important points about time management, automation tools, and strategies for improving efficiency in daily tasks. Key insights are shared about leveraging technology to streamline processes and achieve better results with less effort.`;
-	};
-
-	const generateSummary = (_transcript, type, length) => {
-		const summaries = {
-			"bullet-points": {
-				short:
-					"• Video covers productivity and workflow optimization\n• Discusses automation tools and efficiency strategies\n• Provides time management best practices",
-				medium:
-					"• The video focuses on productivity tips and workflow optimization techniques\n• Speaker discusses various automation tools and their practical applications\n• Key strategies for improving daily efficiency and time management are covered\n• Best practices for content creation and process streamlining are shared\n• Emphasis on leveraging technology to achieve better results with less effort",
-				long: "• Comprehensive overview of productivity enhancement strategies and workflow optimization\n• Detailed discussion of automation tools and their implementation in daily workflows\n• In-depth analysis of time management techniques and their practical applications\n• Extensive coverage of content creation best practices and optimization methods\n• Strategic insights into leveraging technology for improved efficiency and results\n• Practical examples of process streamlining and workflow automation\n• Expert advice on balancing productivity with quality output",
-			},
-			paragraph: {
-				short:
-					"This video provides valuable insights into productivity and workflow optimization, covering essential automation tools and efficiency strategies for better time management.",
-				medium:
-					"The video offers a comprehensive guide to productivity enhancement, focusing on workflow optimization and automation tools. The speaker shares practical strategies for improving daily efficiency, time management techniques, and best practices for content creation. Emphasis is placed on leveraging technology to streamline processes and achieve better results with minimal effort.",
-				long: "This comprehensive video presentation delves deep into productivity enhancement strategies and workflow optimization techniques. The speaker provides detailed insights into various automation tools and their practical applications in daily workflows. The content covers extensive time management methodologies, content creation best practices, and strategic approaches to process streamlining. Throughout the presentation, there is a strong emphasis on leveraging modern technology to achieve superior results while minimizing effort and maximizing efficiency.",
-			},
-			executive: {
-				short:
-					"Key Focus: Productivity optimization through automation and strategic workflow management.",
-				medium:
-					"Executive Summary: The presentation focuses on productivity enhancement through strategic workflow optimization and automation implementation. Primary recommendations include adopting time management best practices and leveraging technology for improved efficiency.",
-				long: "Executive Summary: This presentation provides a strategic overview of productivity enhancement methodologies, emphasizing workflow optimization and automation implementation. The content delivers actionable insights for improving operational efficiency through systematic approaches to time management and technology integration. Key recommendations focus on streamlining processes, implementing automation tools, and adopting best practices for sustainable productivity improvements across various business functions.",
-			},
-		};
-
-		return summaries[type][length] || summaries["bullet-points"].medium;
-	};
-
-	const extractKeyPoints = (_transcript) => {
-		return [
-			{ point: "Productivity Enhancement", importance: "High" },
-			{ point: "Workflow Optimization", importance: "High" },
-			{ point: "Automation Tools", importance: "Medium" },
-			{ point: "Time Management", importance: "High" },
-			{ point: "Content Creation", importance: "Medium" },
-			{ point: "Process Streamlining", importance: "Medium" },
-		];
-	};
-
-	const copyToClipboard = async (text) => {
+	const copyToClipboard = useCallback(async (text: string) => {
 		try {
 			await navigator.clipboard.writeText(text);
 			setCopied(true);
 			setTimeout(() => setCopied(false), 2000);
 			toast.success("Copied to clipboard!");
-		} catch (error) {
+		} catch {
 			toast.error("Failed to copy to clipboard");
 		}
-	};
+	}, []);
 
-	const downloadSummary = () => {
-		const content = `Video Summary\n\n${summary}\n\nKey Points:\n${keyPoints.map((kp) => `• ${kp.point} (${kp.importance} importance)`).join("\n")}\n\nFull Transcript:\n${transcript}`;
+	const downloadSummary = useCallback(() => {
+		const content = `Video Summary\n\n${summary}\n\nKey Points:\n${keyPoints.map((kp) => `• ${kp.point} (${kp.importance} importance)`).join("\n")}`;
 		const blob = new Blob([content], { type: "text/plain" });
 		const url = URL.createObjectURL(blob);
 		const a = document.createElement("a");
 		a.href = url;
 		a.download = `video-summary-${Date.now()}.txt`;
-		document.body.appendChild(a);
 		a.click();
-		document.body.removeChild(a);
 		URL.revokeObjectURL(url);
 		toast.success("Summary downloaded!");
-	};
+	}, [summary, keyPoints]);
+
+	const reset = useCallback(() => {
+		setVideoFile(null);
+		setTranscriptInput("");
+		setSummary("");
+		setKeyPoints([]);
+		setProgress(0);
+		setProcessingStep("");
+		if (fileInputRef.current) fileInputRef.current.value = "";
+	}, []);
 
 	return (
-		<div className="max-w-6xl mx-auto p-6 space-y-8">
-			<div className="text-center space-y-4">
-				<div className="flex items-center justify-center gap-2 mb-4">
-					<Brain className="h-8 w-8 text-primary" />
-					<h2 className="text-3xl font-bold">AI Video Summarizer</h2>
-				</div>
-				<p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-					Get instant AI-powered summaries of long videos, meetings, lectures,
-					and presentations. Save time by extracting key insights without
-					watching the entire content.
-				</p>
-				<div className="flex flex-wrap justify-center gap-2">
-					<Badge variant="secondary">🤖 AI Powered</Badge>
-					<Badge variant="secondary">⚡ Fast Processing</Badge>
-					<Badge variant="secondary">📝 Multiple Formats</Badge>
-					<Badge variant="secondary">🎯 Key Insights</Badge>
-				</div>
+		<div className="space-y-8 max-w-5xl mx-auto">
+			<div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
+				<ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
+				<span>🔒 100% Client-Side: All text processing runs locally. No data sent to any server.</span>
 			</div>
 
-			<div className="grid lg:grid-cols-2 gap-8">
-				<Card>
+			<div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
+				<div className="flex items-center gap-4">
+					<div className="p-3 bg-primary/10 text-primary rounded-xl">
+						<Brain className="h-6 w-6" />
+					</div>
+					<div>
+						<h2 className="text-xl font-bold">AI Video Summarizer</h2>
+						<p className="text-xs text-muted-foreground">Summarize video transcripts into key points using intelligent text analysis</p>
+					</div>
+				</div>
+				<div className="flex items-center gap-2 flex-wrap">
+					<Button variant="outline" onClick={() => fileInputRef.current?.click()} className="text-xs font-bold">
+						<Upload className="mr-2 h-4 w-4" /> Upload Transcript
+					</Button>
+					<Button
+						disabled={isProcessing || !transcriptInput.trim()}
+						onClick={processSummary}
+						className="bg-primary hover:bg-primary/90 text-xs font-bold text-white"
+					>
+						{isProcessing ? (
+							<><Clock className="mr-2 h-4 w-4 animate-spin" /> Processing...</>
+						) : (
+							<><Brain className="mr-2 h-4 w-4" /> Generate Summary</>
+						)}
+					</Button>
+					<Button variant="outline" onClick={reset} disabled={isProcessing}>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></svg>
+					</Button>
+				</div>
+				<input type="file" accept=".txt,.md,.srt,.vtt,text/plain" className="hidden" ref={fileInputRef} onChange={handleFileUpload} />
+			</div>
+
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+				<Card className="border border-border/40 bg-card/20 rounded-3xl">
 					<CardHeader>
-						<CardTitle>Upload Video</CardTitle>
-						<CardDescription>
-							Upload a video file or paste a YouTube/video URL for AI
-							summarization
-						</CardDescription>
+						<CardTitle className="text-sm font-bold">Video Transcript</CardTitle>
+						<CardDescription>Paste the video transcript or upload a .txt file</CardDescription>
 					</CardHeader>
-					<CardContent className="space-y-6">
-						<div>
-							<Label htmlFor="video-file">Video File Upload</Label>
-							<div className="mt-2">
-								<input
-									ref={fileInputRef}
-									type="file"
-									id="video-file"
-									accept="video/*"
-									onChange={handleFileUpload}
-									className="hidden"
-								/>
-								<Button
-									variant="outline"
-									onClick={() => fileInputRef.current?.click()}
-									className="w-full h-32 border-dashed"
-									disabled={isProcessing}
-								>
-									<div className="text-center">
-										<Upload className="h-8 w-8 mx-auto mb-2 text-muted-foreground" />
-										<p className="text-sm font-medium">
-											{videoFile ? videoFile.name : "Click to upload video"}
-										</p>
-										<p className="text-xs text-muted-foreground">
-											MP4, AVI, MOV, MKV, WebM (max 500MB)
-										</p>
-									</div>
-								</Button>
-							</div>
-						</div>
-
-						<div className="relative">
-							<div className="absolute inset-0 flex items-center">
-								<span className="w-full border-t" />
-							</div>
-							<div className="relative flex justify-center text-xs uppercase">
-								<span className="bg-background px-2 text-muted-foreground">
-									Or
-								</span>
-							</div>
-						</div>
-
-						<div>
-							<Label htmlFor="video-url">
-								Video URL (YouTube, Vimeo, etc.)
-							</Label>
-							<Input
-								id="video-url"
-								value={videoUrl}
-								onChange={(e) => setVideoUrl(e.target.value)}
-								placeholder="https://youtube.com/watch?v=..."
-								className="mt-1"
-								disabled={isProcessing}
-							/>
-						</div>
+					<CardContent className="space-y-4">
+						<Textarea
+							value={transcriptInput}
+							onChange={(e) => setTranscriptInput(e.target.value)}
+							placeholder={`Paste your video transcript here...\n\nExample:\nIn this video, we explore the key principles of effective time management. First, we discuss the importance of prioritizing tasks based on urgency and importance. The Eisenhower Matrix is a powerful tool for this purpose. Next, we examine how to eliminate distractions and maintain focus. Research shows that multitasking reduces productivity by up to 40%. Finally, we cover strategies for maintaining work-life balance and preventing burnout.`}
+							className="min-h-[250px] resize-none text-sm"
+							disabled={isProcessing}
+						/>
 
 						<div className="grid grid-cols-2 gap-4">
 							<div>
-								<Label htmlFor="summary-type">Summary Type</Label>
-								<Select
-									value={summaryType}
-									onValueChange={setSummaryType}
-									disabled={isProcessing}
-								>
-									<SelectTrigger>
+								<Label>Summary Type</Label>
+								<Select value={summaryType} onValueChange={setSummaryType} disabled={isProcessing}>
+									<SelectTrigger className="mt-1">
 										<SelectValue />
 									</SelectTrigger>
 									<SelectContent>
@@ -319,15 +305,10 @@ export default function AiVideoSummarizerTool() {
 									</SelectContent>
 								</Select>
 							</div>
-
 							<div>
-								<Label htmlFor="summary-length">Summary Length</Label>
-								<Select
-									value={summaryLength}
-									onValueChange={setSummaryLength}
-									disabled={isProcessing}
-								>
-									<SelectTrigger>
+								<Label>Summary Length</Label>
+								<Select value={summaryLength} onValueChange={setSummaryLength} disabled={isProcessing}>
+									<SelectTrigger className="mt-1">
 										<SelectValue />
 									</SelectTrigger>
 									<SelectContent>
@@ -338,24 +319,6 @@ export default function AiVideoSummarizerTool() {
 								</Select>
 							</div>
 						</div>
-
-						<Button
-							onClick={processVideo}
-							disabled={isProcessing || (!videoFile && !videoUrl.trim())}
-							className="w-full"
-						>
-							{isProcessing ? (
-								<>
-									<Clock className="h-4 w-4 mr-2 animate-spin" />
-									Processing...
-								</>
-							) : (
-								<>
-									<Brain className="h-4 w-4 mr-2" />
-									Generate AI Summary
-								</>
-							)}
-						</Button>
 
 						{isProcessing && (
 							<div className="space-y-2">
@@ -369,66 +332,42 @@ export default function AiVideoSummarizerTool() {
 					</CardContent>
 				</Card>
 
-				<Card>
+				<Card className="border border-border/40 bg-card/20 rounded-3xl">
 					<CardHeader>
-						<CardTitle>AI Summary Results</CardTitle>
-						<CardDescription>
-							Generated summary and key insights from your video
-						</CardDescription>
+						<CardTitle className="text-sm font-bold">Summary Results</CardTitle>
+						<CardDescription>AI-generated summary and key insights</CardDescription>
 					</CardHeader>
 					<CardContent className="space-y-6">
 						{summary ? (
 							<>
 								<div>
 									<div className="flex justify-between items-center mb-2">
-										<Label className="text-base font-semibold">Summary</Label>
+										<Label className="text-sm font-semibold">Summary</Label>
 										<div className="flex gap-2">
-											<Button
-												size="sm"
-												variant="outline"
-												onClick={() => copyToClipboard(summary)}
-											>
-												{copied ? (
-													<Check className="h-4 w-4" />
-												) : (
-													<Copy className="h-4 w-4" />
-												)}
+											<Button size="sm" variant="outline" onClick={() => copyToClipboard(summary)} className="h-7 text-[10px]">
+												{copied ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+												<span className="ml-1">{copied ? "Copied" : "Copy"}</span>
 											</Button>
-											<Button
-												size="sm"
-												variant="outline"
-												onClick={downloadSummary}
-											>
-												<Download className="h-4 w-4" />
+											<Button size="sm" variant="outline" onClick={downloadSummary} className="h-7 text-[10px]">
+												<Download className="h-3 w-3 mr-1" /> Download
 											</Button>
 										</div>
 									</div>
 									<Textarea
 										value={summary}
 										readOnly
-										className="min-h-[150px] resize-none"
+										className="min-h-[150px] resize-none text-sm"
 									/>
 								</div>
 
 								{keyPoints.length > 0 && (
 									<div>
-										<Label className="text-base font-semibold">
-											Key Points
-										</Label>
+										<Label className="text-sm font-semibold">Key Points</Label>
 										<div className="mt-2 space-y-2">
 											{keyPoints.map((point, index) => (
-												<div
-													key={index}
-													className="flex justify-between items-center p-2 bg-muted "
-												>
+												<div key={index} className="flex justify-between items-center p-2.5 rounded-lg bg-muted/30 border border-border/20">
 													<span className="text-sm">{point.point}</span>
-													<Badge
-														variant={
-															point.importance === "High"
-																? "destructive"
-																: "secondary"
-														}
-													>
+													<Badge variant={point.importance === "High" ? "default" : "secondary"} className="text-[10px]">
 														{point.importance}
 													</Badge>
 												</div>
@@ -436,93 +375,16 @@ export default function AiVideoSummarizerTool() {
 										</div>
 									</div>
 								)}
-
-								{transcript && (
-									<div>
-										<Label className="text-base font-semibold">
-											Full Transcript
-										</Label>
-										<Textarea
-											value={transcript}
-											readOnly
-											className="mt-2 min-h-[100px] resize-none text-xs"
-										/>
-									</div>
-								)}
 							</>
 						) : (
-							<div className="flex items-center justify-center h-64 bg-muted ">
+							<div className="flex items-center justify-center h-64 rounded-lg bg-muted/20">
 								<div className="text-center text-muted-foreground">
-									<FileText className="h-12 w-12 mx-auto mb-2" />
-									<p>Your AI summary will appear here</p>
+									<FileText className="h-12 w-12 mx-auto mb-2 opacity-40" />
+									<p className="text-sm">Your AI summary will appear here</p>
+									<p className="text-xs mt-1">Paste a transcript and click Generate</p>
 								</div>
 							</div>
 						)}
-					</CardContent>
-				</Card>
-			</div>
-
-			{/* SEO Content Section */}
-			<div className="mt-12 space-y-8">
-				<Card>
-					<CardHeader>
-						<CardTitle>About AI Video Summarization</CardTitle>
-					</CardHeader>
-					<CardContent className="prose max-w-none">
-						<p>
-							AI video summarization is a powerful technology that automatically
-							extracts key information from video content, saving you hours of
-							viewing time. Perfect for students, professionals, researchers,
-							and content creators who need to quickly understand video content.
-						</p>
-
-						<h3>Key Benefits:</h3>
-						<ul>
-							<li>
-								<strong>Time Saving:</strong> Get insights from hours of video
-								in minutes
-							</li>
-							<li>
-								<strong>AI Accuracy:</strong> Advanced algorithms identify key
-								points and themes
-							</li>
-							<li>
-								<strong>Multiple Formats:</strong> Bullet points, paragraphs, or
-								executive summaries
-							</li>
-							<li>
-								<strong>Key Insights:</strong> Automatically extracted important
-								topics
-							</li>
-							<li>
-								<strong>Easy Sharing:</strong> Copy or download summaries for
-								collaboration
-							</li>
-							<li>
-								<strong>Accessibility:</strong> Make video content searchable
-								and accessible
-							</li>
-						</ul>
-
-						<h3>Perfect For:</h3>
-						<ul>
-							<li>Meeting recordings and conference calls</li>
-							<li>Educational lectures and online courses</li>
-							<li>Webinars and training sessions</li>
-							<li>Podcast episodes and interviews</li>
-							<li>Long-form YouTube videos</li>
-							<li>Corporate presentations</li>
-							<li>Research interviews and documentaries</li>
-						</ul>
-
-						<h3>How It Works:</h3>
-						<ol>
-							<li>Upload your video file or paste a video URL</li>
-							<li>Choose your preferred summary format and length</li>
-							<li>AI extracts audio and transcribes the content</li>
-							<li>Advanced algorithms analyze and summarize key points</li>
-							<li>Get formatted summary with downloadable transcript</li>
-						</ol>
 					</CardContent>
 				</Card>
 			</div>

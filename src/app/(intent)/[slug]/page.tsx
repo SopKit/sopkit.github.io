@@ -100,7 +100,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const intent = getIntentBySlug(slug);
 
     if (!intent) {
-        const extraTool = getToolByExtraSlug(slug);
+        const extraTool = getToolByExtraSlug(slug) || getToolById(slug);
         if (extraTool) {
             const isNoUpload = slug.includes("no-upload") || slug.includes("offline") || slug.includes("local");
             const isPrivacy = slug.includes("privacy") || slug.includes("secure") || slug.includes("safe") || slug.includes("no-data-selling");
@@ -217,7 +217,7 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
 
     // Serve long-tail extraSlugs as standalone landers instead of redirecting
     if (!intent) {
-        const extraTool = getToolByExtraSlug(slug);
+        const extraTool = getToolByExtraSlug(slug) || getToolById(slug);
         if (extraTool) {
             const isNoUpload = slug.includes("no-upload") || slug.includes("offline") || slug.includes("local");
             const isPrivacy = slug.includes("privacy") || slug.includes("secure") || slug.includes("safe") || slug.includes("no-data-selling");
@@ -323,7 +323,8 @@ export async function generateStaticParams() {
     Object.keys(intentData).forEach((slug) => {
         slugs.add(slug);
     });
-    getAllTools().forEach((t) => {
+    const tools = getAllTools();
+    tools.forEach((t) => {
         if (t.extraSlugs) {
             t.extraSlugs.forEach((slug) => {
                 const trimmed = slug ? slug.trim() : "";
@@ -332,6 +333,10 @@ export async function generateStaticParams() {
                 }
             });
         }
+    });
+    // Include privacy tool IDs that lack dedicated pages
+    tools.filter(t => t.category === 'privacy-tools').forEach(t => {
+        if (t.route) slugs.add(t.route.replace(/^\//, ''));
     });
     return Array.from(slugs).map((slug) => ({ slug }));
 }

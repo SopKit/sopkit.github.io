@@ -2,7 +2,7 @@
   "metadata": {
     "version": "11.2",
     "lastUpdated": "2026-07-16",
-    "totalTools": 592,
+    "totalTools": 596,
     "totalCategories": 19
   },
   "categories": {
@@ -1232,6 +1232,14 @@
           "seoDescription": "Privacy-friendly, 100% client-side Video Editor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
         },
         {
+          "id": "ai-video-summarizer",
+          "name": "AI Video Summarizer",
+          "description": "Summarize video transcripts into key points and insights. Paste any transcript and get instant bullet-point summaries, paragraphs, or executive overviews. 100% free and private.",
+          "route": "/ai-video-summarizer",
+          "popular": true,
+          "seoDescription": "Privacy-friendly, 100% client-side AI Video Summarizer online. Summarize video transcripts entirely in your browser. Fast, safe, and free forever."
+        },
+        {
           "id": "akillitv-video-downloader",
           "name": "Akillitv Video Downloader",
           "description": "Free, high-speed online downloader to save and download media content from platforms using the Akillitv Video Downloader. No registration, 100% secure client-side browser processing.",
@@ -2142,6 +2150,22 @@
           "route": "/soundcloud-video-downloader",
           "popular": false,
           "seoDescription": "Privacy-friendly, 100% client-side Soundcloud Video Downloader online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+        },
+        {
+          "id": "audio-equalizer",
+          "name": "Audio Equalizer",
+          "description": "Adjust audio frequencies with a 10-band graphic equalizer. Choose from presets like Rock, Pop, Jazz, and Vocal Boost, or customize your own profile. Free and private browser-based processing.",
+          "route": "/audio-equalizer",
+          "popular": true,
+          "seoDescription": "Privacy-friendly, 100% client-side Audio Equalizer online. Adjust frequencies with 10-band EQ entirely in your browser with zero uploads. Fast, safe, and free forever."
+        },
+        {
+          "id": "audio-joiner",
+          "name": "Audio Joiner",
+          "description": "Join multiple audio files into a single track seamlessly. Combine MP3, WAV, OGG, and M4A files in any order. Free, private, and works entirely in your browser.",
+          "route": "/audio-joiner",
+          "popular": true,
+          "seoDescription": "Privacy-friendly, 100% client-side Audio Joiner online. Combine multiple audio files into one locally in your browser. Fast, safe, and free forever."
         }
       ]
     },

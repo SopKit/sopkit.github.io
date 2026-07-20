@@ -15,6 +15,29 @@ const BackgroundRemoverTool = dynamic(() => import("@/components/tools/image/Bac
 const BandcampDownloader = dynamic(() => import("@/components/tools/downloaders/BandcampDownloader"), { ssr: false });
 const Base64ToImageTool = dynamic(() => import("@/components/tools/image/Base64ToImageTool"), { ssr: false });
 const Base64Tool = dynamic(() => import("@/components/tools/developer/Base64Tool"), { ssr: false });
+const PiiScrubber = dynamic(() => import("@/components/tools/privacy/PiiScrubber"), { ssr: false });
+const EmailSubjectLineTester = dynamic(() => import("@/components/tools/privacy/EmailSubjectLineTester"), { ssr: false });
+const AiTextDetector = dynamic(() => import("@/components/tools/privacy/AiTextDetector"), { ssr: false });
+const EmailValidator = dynamic(() => import("@/components/tools/privacy/EmailValidator"), { ssr: false });
+const SpamWordChecker = dynamic(() => import("@/components/tools/privacy/SpamWordChecker"), { ssr: false });
+const PhishingUrlChecker = dynamic(() => import("@/components/tools/privacy/PhishingUrlChecker"), { ssr: false });
+const PasswordStrengthChecker = dynamic(() => import("@/components/tools/privacy/PasswordStrengthChecker"), { ssr: false });
+const SecurityHeadersChecker = dynamic(() => import("@/components/tools/privacy/SecurityHeadersChecker"), { ssr: false });
+const SslCertificateChecker = dynamic(() => import("@/components/tools/privacy/SslCertificateChecker"), { ssr: false });
+const DomainReputationChecker = dynamic(() => import("@/components/tools/privacy/DomainReputationChecker"), { ssr: false });
+const CookieConsentGenerator = dynamic(() => import("@/components/tools/privacy/CookieConsentGenerator"), { ssr: false });
+const GdprComplianceChecker = dynamic(() => import("@/components/tools/privacy/GdprComplianceChecker"), { ssr: false });
+const DataRetentionPolicyGenerator = dynamic(() => import("@/components/tools/privacy/DataRetentionPolicyGenerator"), { ssr: false });
+const EmailHeaderAnalyzer = dynamic(() => import("@/components/tools/privacy/EmailHeaderAnalyzer"), { ssr: false });
+const AiImageDetector = dynamic(() => import("@/components/tools/privacy/AiImageDetector"), { ssr: false });
+const DataBreachChecker = dynamic(() => import("@/components/tools/privacy/DataBreachChecker"), { ssr: false });
+const EmailDeliverabilityChecker = dynamic(() => import("@/components/tools/privacy/EmailDeliverabilityChecker"), { ssr: false });
+const PrivacyPolicyAuditor = dynamic(() => import("@/components/tools/privacy/PrivacyPolicyAuditor"), { ssr: false });
+const EmailPreviewGenerator = dynamic(() => import("@/components/tools/privacy/EmailPreviewGenerator"), { ssr: false });
+const SpamScoreChecker = dynamic(() => import("@/components/tools/privacy/SpamScoreChecker"), { ssr: false });
+const ConsentManagementGenerator = dynamic(() => import("@/components/tools/privacy/ConsentManagementGenerator"), { ssr: false });
+const BreachNotificationGenerator = dynamic(() => import("@/components/tools/privacy/BreachNotificationGenerator"), { ssr: false });
+const DataAnonymizationReportGenerator = dynamic(() => import("@/components/tools/privacy/DataAnonymizationReportGenerator"), { ssr: false });
 const BaseConverter = dynamic(() => import("@/components/tools/shared/BaseConverter"), { ssr: false });
 const BilibiliDownloader = dynamic(() => import("@/components/tools/downloaders/BilibiliDownloader"), { ssr: false });
 const BioDataMaker = dynamic(() => import("@/components/tools/generators/BioDataMaker"), { ssr: false });
@@ -58,6 +81,9 @@ const FontGeneratorTool = dynamic(() => import("@/components/tools/generators/Fo
 const FormImageSizeChecker = dynamic(() => import("@/components/tools/exam/FormImageSizeChecker"), { ssr: false });
 const GaanaDownloader = dynamic(() => import("@/components/tools/downloaders/GaanaDownloader"), { ssr: false });
 const GuitarTunerTool = dynamic(() => import("@/components/tools/audio/GuitarTunerTool"), { ssr: false });
+const AudioEqualizerTool = dynamic(() => import("@/components/tools/audio/AudioEqualizerTool"), { ssr: false });
+const AudioJoinerTool = dynamic(() => import("@/components/tools/audio/AudioJoinerTool"), { ssr: false });
+const AiVideoSummarizerTool = dynamic(() => import("@/components/tools/video/AiVideoSummarizerTool"), { ssr: false });
 const HashGeneratorTool = dynamic(() => import("@/components/tools/security/HashGeneratorTool"), { ssr: false });
 const HindiTypingTool = dynamic(() => import("@/components/tools/text/HindiTypingTool"), { ssr: false });
 const HtaccessGenerator = dynamic(() => import("@/components/tools/built-ins/HtaccessGenerator"), { ssr: false });
@@ -493,6 +519,9 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "google-index-checker": { component: BuiltInSafeHttp, props: {"toolId": "google-index-checker"} },
     "gst-calculator": { component: BuiltInCalculators, props: {"kind": "gst-calculator"} },
     "guitar-tuner": { component: GuitarTunerTool, props: {} },
+    "audio-equalizer": { component: AudioEqualizerTool, props: {} },
+    "audio-joiner": { component: AudioJoinerTool, props: {} },
+    "ai-video-summarizer": { component: AiVideoSummarizerTool, props: {} },
     "hex-to-binary-converter": { component: BaseConverter, props: {"converterKind": "hex-to-binary"} },
     "hex-to-decimal-converter": { component: BaseConverter, props: {"converterKind": "hex-to-decimal"} },
     "hex-to-octal-converter": { component: BaseConverter, props: {"converterKind": "hex-to-octal"} },
@@ -864,6 +893,29 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "twilio-api-key-tester": { component: ApiKeyTester, props: { toolName: "Twilio API Key Tester" } },
     "zendesk-api-key-tester": { component: ApiKeyTester, props: { toolName: "Zendesk API Key Tester" } },
     "zoominfo-api-key-tester": { component: ApiKeyTester, props: { toolName: "ZoomInfo API Key Tester" } },
+    "pii-scrubber": { component: PiiScrubber, props: {} },
+    "email-subject-line-tester": { component: EmailSubjectLineTester, props: {} },
+    "ai-text-detector": { component: AiTextDetector, props: {} },
+    "email-validator": { component: EmailValidator, props: {} },
+    "spam-word-checker": { component: SpamWordChecker, props: {} },
+    "phishing-url-checker": { component: PhishingUrlChecker, props: {} },
+    "password-strength-checker": { component: PasswordStrengthChecker, props: {} },
+    "security-headers-checker": { component: SecurityHeadersChecker, props: {} },
+    "ssl-certificate-checker": { component: SslCertificateChecker, props: {} },
+    "domain-reputation-checker": { component: DomainReputationChecker, props: {} },
+    "cookie-consent-generator": { component: CookieConsentGenerator, props: {} },
+    "gdpr-compliance-checker": { component: GdprComplianceChecker, props: {} },
+    "data-retention-policy-generator": { component: DataRetentionPolicyGenerator, props: {} },
+    "email-header-analyzer": { component: EmailHeaderAnalyzer, props: {} },
+    "ai-image-detector": { component: AiImageDetector, props: {} },
+    "data-breach-checker": { component: DataBreachChecker, props: {} },
+    "email-deliverability-checker": { component: EmailDeliverabilityChecker, props: {} },
+    "privacy-policy-auditor": { component: PrivacyPolicyAuditor, props: {} },
+    "email-preview-generator": { component: EmailPreviewGenerator, props: {} },
+    "spam-score-checker": { component: SpamScoreChecker, props: {} },
+    "consent-management-generator": { component: ConsentManagementGenerator, props: {} },
+    "breach-notification-generator": { component: BreachNotificationGenerator, props: {} },
+    "data-anonymization-report-generator": { component: DataAnonymizationReportGenerator, props: {} },
 };
 
 interface IntentToolDispatcherProps {
