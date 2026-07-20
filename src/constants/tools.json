@@ -3027,6 +3027,14 @@
           "route": "/code-formatter",
           "popular": false,
           "seoDescription": "Privacy-friendly, 100% client-side Code Formatter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+        },
+        {
+          "id": "javascript-notebook",
+          "name": "JavaScript Notebook",
+          "description": "Interactively write, run, and debug JavaScript code with a Jupyter-style notebook. Supports multi-cell editing, console output, async/await, and ES2024 features. 100% client-side execution.",
+          "route": "/javascript-notebook",
+          "popular": true,
+          "seoDescription": "Interactive JavaScript Notebook online. Run JS code in a Jupyter-style environment directly in your browser. Multi-cell support, console output, async/await. Free and private."
         }
       ]
     },

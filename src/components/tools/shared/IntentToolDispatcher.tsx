@@ -108,6 +108,7 @@ const JSONFormatterTool = dynamic(() => import("@/components/tools/developer/JSO
 const JSONMinifierTool = dynamic(() => import("@/components/tools/developer/JSONMinifierTool"), { ssr: false });
 const JSONToSchemaTool = dynamic(() => import("@/components/tools/developer/JSONToSchemaTool"), { ssr: false });
 const JpgToPdfExam = dynamic(() => import("@/components/tools/exam/JpgToPdfExam"), { ssr: false });
+const JavaScriptNotebookTool = dynamic(() => import("@/components/tools/developer/JavaScriptNotebookTool"), { ssr: false });
 const JsonFormatterTool = dynamic(() => import("@/components/tools/code/JsonFormatterTool"), { ssr: false });
 const KeywordTool = dynamic(() => import("@/components/tools/seo/KeywordTool"), { ssr: false });
 const KickstarterDownloader = dynamic(() => import("@/components/tools/downloaders/KickstarterDownloader"), { ssr: false });
@@ -571,6 +572,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "javascript-deobfuscator": { component: BuiltInMarkup, props: {"toolId": "javascript-deobfuscator"} },
     "javascript-minifier": { component: BuiltInMarkup, props: {"toolId": "javascript-minifier"} },
     "javascript-obfuscator": { component: BuiltInMarkup, props: {"toolId": "javascript-obfuscator"} },
+    "javascript-notebook": { component: JavaScriptNotebookTool, props: {} },
     "jee-photo-resizer": { component: ExamPhotoResizer, props: {"examName": "JEE"} },
     "jpg-converter": { component: ImageConverterTool, props: {} },
     "jpg-to-bmp-converter": { component: ImageConverterTool, props: {} },

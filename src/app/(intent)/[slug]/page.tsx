@@ -335,8 +335,8 @@ export async function generateStaticParams() {
             });
         }
     });
-    // Include privacy tool IDs that lack dedicated pages
-    tools.filter(t => t.category === 'privacy-tools').forEach(t => {
+    // Include tool routes so tools without dedicated pages are pre-rendered
+    tools.forEach(t => {
         if (t.route) slugs.add(t.route.replace(/^\//, ''));
     });
     return Array.from(slugs).map((slug) => ({ slug }));
