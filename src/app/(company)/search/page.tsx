@@ -24,7 +24,7 @@ export const metadata = {
 		description: "Solve everyday digital tasks instantly using our free Search All Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
 		images: ["/og-image.jpg"],
 	},
-	robots: { index: true, follow: true },
+	robots: { index: false, follow: true },
 };
 
 export default async function SearchPage() {

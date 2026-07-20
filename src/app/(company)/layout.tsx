@@ -23,6 +23,30 @@ export const metadata: Metadata = {
 	},
 };
 
+export const startupMetadata: Metadata = {
+	title: "Startup & SaaS Submission Directories — Free List of 100+ Platforms | SopKit",
+	description: "Curated list of 100+ startup directories, review sites, and communities to submit your software, AI tools, or developer products for free. Boost traffic and SEO.",
+	openGraph: {
+		title: "Startup & SaaS Submission Directories — Free List | SopKit",
+		description: "Curated list of 100+ startup directories, review sites, and communities to submit your software or AI tools for free.",
+		url: "https://sopkit.github.io/startup-directories/",
+		siteName: "SopKit",
+		type: "website",
+	},
+};
+
+export const packagesMetadata: Metadata = {
+	title: "SopKit Developer Packages — Free Zero-Dependency NPM Libraries",
+	description: "Browse SopKit's open-source @sopkit NPM packages — base64, UUID, slug, color, validator, and more. Zero-dependency, strictly-typed, ESM+CJS dual-format.",
+	openGraph: {
+		title: "SopKit Developer Packages — Free Zero-Dependency NPM Libraries",
+		description: "Browse SopKit's open-source @sopkit NPM packages — base64, UUID, slug, color, validator, and more.",
+		url: "https://sopkit.github.io/packages/",
+		siteName: "SopKit",
+		type: "website",
+	},
+};
+
 export default function CompanyGroupLayout({
 	children,
 }: {

@@ -17,7 +17,7 @@ export default function SslCertificateChecker() {
     try {
       const target = domain.replace(/^https?:\/\//, "").split("/")[0];
       const resp = await fetch(`https://ssl-checker.cyclic.app/api/check?domain=${encodeURIComponent(target)}`);
-      const data = await resp.json();
+      const data: any = await resp.json();
       if (data.error) throw new Error(data.error);
       setResult({
         valid: data.valid !== false,
@@ -30,7 +30,7 @@ export default function SslCertificateChecker() {
       try {
         const target = domain.replace(/^https?:\/\//, "").split("/")[0];
         const resp = await fetch(`https://api.ssllabs.com/api/v3/analyze?host=${encodeURIComponent(target)}`);
-        const data = await resp.json();
+        const data: any = await resp.json();
         if (data.status === "ERROR") throw new Error(data.statusMessage);
         if (data.endpoints && data.endpoints[0]) {
           const ep = data.endpoints[0];

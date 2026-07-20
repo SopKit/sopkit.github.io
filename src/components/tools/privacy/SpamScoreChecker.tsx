@@ -14,7 +14,7 @@ export default function SpamScoreChecker() {
     let score = 100;
 
     const words = input.split(/\s+/).filter(Boolean);
-    const urls = (input.match(/https?:\/\/[^\s]+/g) || []);
+    const urls: string[] = (input.match(/https?:\/\/[^\s]+/g) || []);
 
     const lower = input.toLowerCase();
     const spammy = [

@@ -5,6 +5,7 @@ import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import SeoOpportunityTool from "@/components/seo/SeoOpportunityTool";
 import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
+import type { ManualToolContent } from "@/data/tool-manual-content";
 import {
     getSeoOpportunityBySlug,
     seoOpportunities,
@@ -207,7 +208,7 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
         ];
 
         return (
-            <ToolLayout breadcrumbs={[]} tool={tool} breadcrumbs={breadcrumbs} relatedTools={relatedTools}>
+            <ToolLayout tool={tool} breadcrumbs={breadcrumbs} relatedTools={relatedTools}>
                 <SeoOpportunityTool opportunity={opportunity} />
             </ToolLayout>
         );
@@ -224,7 +225,7 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
             const isFree = slug.includes("free") || slug.includes("no-signup") || slug.includes("no-registration");
 
             const tool = { ...extraTool };
-            const manualContent = MANUAL_TOOL_CONTENT[extraTool.id] || {};
+            const manualContent: ManualToolContent = MANUAL_TOOL_CONTENT[extraTool.id] || {} as ManualToolContent;
 
             // 1. Customize name (H1)
             let keywordHighlight = "";
@@ -276,9 +277,9 @@ Unlike freemium services that restrict file sizes or impose hourly conversion li
             tool.faqs = [...customFaqs, ...baseFaqs.slice(0, 3)];
 
             const breadcrumbs = [
-                { name: "Home", route: "/" },
-                { name: extraTool.name, route: extraTool.route },
-                { name: slug.replace(/-/g, " "), route: `/${slug}` }
+                { name: "Home", url: "/" },
+                { name: extraTool.name, url: extraTool.route },
+                { name: slug.replace(/-/g, " "), url: `/${slug}` }
             ];
 
             return (

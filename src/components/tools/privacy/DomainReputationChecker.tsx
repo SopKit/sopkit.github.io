@@ -18,7 +18,7 @@ export default function DomainReputationChecker() {
 
     try {
       const resp = await fetch(`https://dns.google/resolve?name=${encodeURIComponent(clean)}&type=A`);
-      const dnsData = await resp.json();
+      const dnsData: any = await resp.json();
       if (dnsData.Answer && dnsData.Answer.length > 0) {
         score += 10;
         flags.push("Domain resolves: Yes");
@@ -32,7 +32,7 @@ export default function DomainReputationChecker() {
 
     try {
       const resp = await fetch(`https://dns.google/resolve?name=${encodeURIComponent(clean)}&type=TXT`);
-      const data = await resp.json();
+      const data: any = await resp.json();
       const txtRecords = (data.Answer || []).map((r: any) => r.data);
       if (txtRecords.some((t: string) => t.includes("v=spf1"))) { score += 5; flags.push("SPF record found"); }
       if (txtRecords.some((t: string) => t.includes("google-site-verification") || t.includes("ms="))) { score += 5; flags.push("Verification records found"); }

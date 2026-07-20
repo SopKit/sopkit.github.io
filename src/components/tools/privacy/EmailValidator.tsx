@@ -28,7 +28,7 @@ export default function EmailValidator() {
 
     try {
       const resp = await fetch(`https://dns.google/resolve?name=${encodeURIComponent(domain)}&type=MX`);
-      const data = await resp.json();
+      const data: any = await resp.json();
       const hasMx = data.Answer && data.Answer.length > 0;
       details.push(hasMx ? "MX records: Found (domain accepts email)" : "MX records: Not found");
     } catch {

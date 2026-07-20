@@ -19,7 +19,7 @@ export default function DataBreachChecker() {
       if (resp.status === 404) {
         setResult({ breaches: 0, found: false, sources: [] });
       } else if (resp.ok) {
-        const data = await resp.json();
+        const data: any[] = await resp.json();
         setResult({ breaches: data.length, found: true, sources: data.map((b: any) => b.Name) });
       } else {
         throw new Error(`API error: ${resp.status}`);

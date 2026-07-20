@@ -28,7 +28,7 @@ export default function SecurityHeadersChecker() {
     try {
       const target = url.startsWith("http") ? url : "https://" + url;
       const resp = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(target)}`);
-      const data = await resp.json();
+      const data: any = await resp.json();
       const entries = (data.contents?.headers || []).map((h: string) => h.split(": "));
       const headers: Record<string, string> = {};
       entries.forEach(([k, v]: string[]) => { headers[k?.toLowerCase()] = v; });

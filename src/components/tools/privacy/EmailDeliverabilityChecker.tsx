@@ -22,7 +22,7 @@ export default function EmailDeliverabilityChecker() {
 
     try {
       const resp = await fetch(`https://dns.google/resolve?name=${encodeURIComponent(clean)}&type=TXT`);
-      const data = await resp.json();
+      const data: any = await resp.json();
       const records = (data.Answer || []).map((r: any) => r.data);
 
       const spfRec = records.find((r: string) => r.includes("v=spf1"));
@@ -38,7 +38,7 @@ export default function EmailDeliverabilityChecker() {
 
     try {
       const dmarcResp = await fetch(`https://dns.google/resolve?name=${encodeURIComponent("_dmarc." + clean)}&type=TXT`);
-      const dmarcData = await dmarcResp.json();
+      const dmarcData: any = await dmarcResp.json();
       const dmarcRec = (dmarcData.Answer || []).find((r: any) => r.data.includes("v=DMARC1"));
       if (dmarcRec) { dmarc = `Found (${dmarcRec.data.slice(0, 80)})`; score += 30; }
       else { dmarc = "Not found — consider implementing DMARC policy"; }
