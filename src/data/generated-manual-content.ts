@@ -22622,8 +22622,8 @@ Pixel Art Maker is built for game developers, designers, and pixel art enthusias
       ],
     },
     faqs: [
-      { question: `Can I undo my changes?`, text: `The tool says Undo: Yes, click 'Undo' to revert your last action. You can undo up to 20 previous states.` },
-      { question: `What size is the exported PNG?`, text: `The canvas exports at 64x64 pixels (16x16 grid at 4x resolution) for crisp, scaled-up pixel art.` },
+      { question: `Can I undo my changes?`, answer: `Yes, click 'Undo' to revert your last action. You can undo up to 20 previous states.` },
+      { question: `What size is the exported PNG?`, answer: `The canvas exports at 64x64 pixels (16x16 grid at 4x resolution) for crisp, scaled-up pixel art.` },
     ],
     seoDescription: `Pixel Art Maker — create pixel art online with an interactive grid editor. Draw pixel by pixel, choose colors, and export as PNG. 100% free, private, and client-side.`,
   },
