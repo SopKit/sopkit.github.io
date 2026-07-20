@@ -55,10 +55,11 @@
         {
           "id": "business-name-generator",
           "name": "Business Name Generator",
-          "description": "Generate creative and catchy names for your brand or startup.",
+          "description": "Generate creative and catchy business name ideas for your brand, startup, or company. Free online business name generator with AI-powered suggestions — all client-side, no signup required.",
           "route": "/business-name-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Business Name Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Business Name Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Business Name Generator — Creative Brand Name Ideas Online | SopKit"
         },
         {
           "id": "ai-poem-generator",
@@ -95,15 +96,17 @@
           "id": "number-generator",
           "name": "Number Generator",
           "route": "/number-generator",
-          "description": "Professional Number Generator tool for free online use.",
-          "seoDescription": "Privacy-friendly, 100% client-side Number Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "description": "Generate random numbers, lottery numbers, PIN codes, and custom number sequences instantly in your browser. Free and private number generator with multiple output formats.",
+          "seoDescription": "Privacy-friendly, 100% client-side Number Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Number Generator Online — Random, Lottery, PIN Numbers | SopKit"
         },
         {
           "id": "poetry-generator",
           "name": "Poetry Generator",
           "route": "/poetry-generator",
-          "description": "Professional Poetry Generator tool for free online use.",
-          "seoDescription": "Privacy-friendly, 100% client-side Poetry Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "description": "Generate beautiful poems, haikus, sonnets, and rhymes instantly in your browser. Free online poetry generator for creative writing, learning, and inspiration — all client-side, no server needed.",
+          "seoDescription": "Privacy-friendly, 100% client-side Poetry Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Poetry Generator Online — Write Poems, Haikus & Rhymes | SopKit"
         },
         {
           "id": "rent-receipt-generator",
@@ -148,10 +151,11 @@
         {
           "id": "instagram-bio-generator",
           "name": "Instagram Bio Generator",
-          "description": "Generate optimized instagram bio generator details. Instantly copy or share customized outputs.",
+          "description": "Generate optimized Instagram bios with stylish fonts, emojis, and formatting. Free online Instagram bio generator for personal profiles, business accounts, and creators — 100% client-side, no signup.",
           "route": "/instagram-bio-generator",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side Instagram Bio Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Instagram Bio Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Instagram Bio Generator — Create Stylish Bios Online | SopKit"
         },
         {
           "id": "instagram-caption-generator",
@@ -248,6 +252,46 @@
           "route": "/love-calculator",
           "popular": true,
           "seoDescription": "Privacy-friendly, 100% client-side Love Calculator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+        },
+        {
+          "id": "color-palette-generator",
+          "name": "Color Palette Generator",
+          "description": "Generate beautiful color palettes with harmony rules. Explore complementary, analogous, triadic, and tetradic color schemes. Copy hex codes and export CSS variables.",
+          "route": "/color-palette-generator",
+          "popular": true,
+          "seoDescription": "Privacy-friendly, 100% client-side Color Palette Generator online. Create harmonious color schemes locally in your browser with no data uploads."
+        },
+        {
+          "id": "meme-generator",
+          "name": "Meme Generator",
+          "description": "Create viral memes online for free. Add custom text to images with classic meme styling. Export as PNG with zero data uploads.",
+          "route": "/meme-generator",
+          "popular": true,
+          "seoDescription": "Privacy-friendly, 100% client-side Meme Generator online. Create and customize memes locally in your browser with no data uploads."
+        },
+        {
+          "id": "story-idea-generator",
+          "name": "Story Idea Generator",
+          "description": "Get unlimited creative writing prompts and story ideas. Generate characters, settings, conflicts, and themes across multiple genres instantly.",
+          "route": "/story-idea-generator",
+          "popular": false,
+          "seoDescription": "Privacy-friendly, 100% client-side Story Idea Generator online. Generate creative writing prompts locally in your browser."
+        },
+        {
+          "id": "pixel-art-maker",
+          "name": "Pixel Art Maker",
+          "description": "Create pixel art with an interactive grid-based editor. Choose colors, draw pixel by pixel, and export as PNG. Free and private.",
+          "route": "/pixel-art-maker",
+          "popular": false,
+          "seoDescription": "Privacy-friendly, 100% client-side Pixel Art Maker online. Create pixel art locally in your browser with zero data uploads."
+        },
+        {
+          "id": "avatar-generator",
+          "name": "Avatar Generator",
+          "description": "Generate unique identicon-style avatars from any seed text. Customize colors and export as PNG. Perfect for profiles, forums, and placeholders.",
+          "route": "/avatar-generator",
+          "popular": false,
+          "seoDescription": "Privacy-friendly, 100% client-side Avatar Generator online. Create unique identicon avatars locally in your browser."
         }
       ]
     },
@@ -343,10 +387,11 @@
         {
           "id": "image-color-picker-pro",
           "name": "Pro Image Color Picker",
-          "description": "Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-perfect picker.",
+          "description": "Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-level color picker. Free online color extraction tool that runs entirely in your browser — no uploads, instant results.",
           "route": "/image-color-picker",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side Pro Image Color Picker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Pro Image Color Picker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Image Color Picker Online — Extract HEX, RGB, HSL Codes | SopKit"
         },
         {
           "id": "compress-image-to-exact-kb",
@@ -375,10 +420,11 @@
         {
           "id": "aadhaar-pan-photo-resizer",
           "name": "Aadhaar and PAN Card Photo Resizer",
-          "description": "Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online document forms.",
+          "description": "Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online government exam forms. Free online photo resizer that processes everything in your browser with no uploads.",
           "route": "/aadhaar-pan-photo-resizer",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Aadhaar and PAN Card Photo Resizer online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Aadhaar and PAN Card Photo Resizer online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Aadhaar & PAN Photo Resizer — Resize for KYC & Government Forms | SopKit"
         },
         {
           "id": "background-remover",
@@ -423,10 +469,11 @@
         {
           "id": "flip-image",
           "name": "Flip Image",
-          "description": "Free flip image tool to process your data instantly with privacy-friendly browser-based workflows.",
+          "description": "Free flip image tool to flip photos and images horizontally or vertically. Process your data instantly with privacy-friendly browser-based image flipping — no uploads, no servers, no data collection.",
           "route": "/flip-image",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Flip Image online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Flip Image online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Image Flipper Online — Flip Photos Horizontally & Vertically | SopKit"
         },
         {
           "id": "image-compressor",
@@ -545,10 +592,11 @@
         {
           "id": "logo-generator",
           "name": "Logo Generator",
-          "description": "Create professional logos with text, fonts, and custom colors",
+          "description": "Create professional logos with text, fonts, and custom colors for your brand or business. Design unique logos instantly with our free online logo maker — no design skills needed, 100% browser-based.",
           "route": "/logo-generator",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side Logo Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Logo Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Logo Generator — Create Custom Logos Online with Text & Fonts | SopKit"
         },
         {
           "id": "photo-enhancer",
@@ -734,10 +782,11 @@
         {
           "id": "markdown-to-pdf",
           "name": "Markdown to PDF Converter",
-          "description": "Convert Markdown text into a clean, print-ready PDF document instantly.",
+          "description": "Convert Markdown text into a clean, print-ready PDF document instantly in your browser. Free online Markdown to PDF converter with live preview — no signup required, all processing is local and private.",
           "route": "/markdown-to-pdf",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side Markdown to PDF Converter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Markdown to PDF Converter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Markdown to PDF Converter Online | SopKit"
         },
         {
           "id": "url-encoder-decoder",
@@ -774,10 +823,11 @@
         {
           "id": "word-frequency-counter",
           "name": "Word Frequency Counter",
-          "description": "Calculate word density, occurrences, and text analytics with a sorted frequency table.",
+          "description": "Calculate word density, occurrences, and text analytics with our free online word frequency counter. Analyze any text for keyword frequency, word count, and content statistics — 100% private, no uploads.",
           "route": "/word-frequency-counter",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side Word Frequency Counter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Word Frequency Counter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Word Frequency Counter Online — Analyze Text Density | SopKit"
         },
         {
           "id": "case-converter",
@@ -1092,10 +1142,11 @@
         {
           "id": "pdf-metadata-editor",
           "name": "PDF Metadata Editor",
-          "description": "Edit PDF document metadata including Title, Author, Subject, and Keywords online for free.",
+          "description": "Edit PDF document metadata including Title, Author, Subject, and Keywords directly in your browser. Free online PDF metadata editor with 100% client-side processing — no uploads, no data collection.",
           "route": "/pdf-metadata-editor",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side PDF Metadata Editor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Metadata Editor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free PDF Metadata Editor Online — Edit Title, Author & Subject | SopKit"
         },
         {
           "id": "pdf-merger",
@@ -1156,18 +1207,20 @@
         {
           "id": "pdf-to-word",
           "name": "PDF to Word",
-          "description": "Convert PDF files to editable Word documents",
+          "description": "Convert PDF files to editable Word documents (DOCX) directly in your browser. Free online PDF to Word converter with 100% client-side processing — no uploads, no AI training, no data storage.",
           "route": "/pdf-to-word",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side PDF to Word online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side PDF to Word online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free PDF to Word Converter Online — Convert PDF to DOCX | SopKit"
         },
         {
           "id": "pdf-unlocker",
           "name": "PDF Unlocker",
-          "description": "Remove password protection from PDF files",
+          "description": "Remove password protection from PDF files directly in your browser. Free online PDF password remover with 100% client-side processing — your files never leave your device, no uploads, no data storage.",
           "route": "/pdf-unlocker",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side PDF Unlocker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Unlocker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free PDF Unlocker Online — Remove PDF Password Protection | SopKit"
         },
         {
           "id": "word-to-pdf",
@@ -1196,9 +1249,10 @@
         {
           "id": "pdf-tools",
           "name": "PDF Tools",
-          "description": "Merge, split, compress, and manipulate PDF documents",
+          "description": "Merge, split, compress, edit, and manipulate PDF documents online for free. All PDF processing happens 100% client-side in your browser — no file uploads, no data storage, no AI training.",
           "route": "/pdf-tools",
-          "seoDescription": "Privacy-friendly, 100% client-side PDF Tools online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side PDF Tools online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free PDF Tools Online — Merge, Split, Compress & Edit PDFs | SopKit"
         }
       ]
     },
@@ -1218,10 +1272,11 @@
         {
           "id": "video-converter",
           "name": "Video Converter",
-          "description": "Convert video files between MP4, AVI, MKV, MOV, and more.",
+          "description": "Convert video files between MP4, AVI, MKV, MOV, WebM, and more formats directly in your browser. Free online video converter with private client-side processing — no uploads, no server storage.",
           "route": "/video-converter",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Video Converter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Video Converter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Video Converter Online — Convert MP4, AVI, MKV, MOV | SopKit"
         },
         {
           "id": "video-editor",
@@ -1853,7 +1908,8 @@
           "description": "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive analysis. Fast and private.",
           "route": "/youtube-channel-age-checker",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Channel Age Checker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Channel Age Checker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Channel Age Checker — Find Channel Creation Date | SopKit"
         },
         {
           "id": "youtube-channel-finder",
@@ -1861,7 +1917,8 @@
           "description": "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your next video project.",
           "route": "/youtube-channel-finder",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Channel Finder online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Channel Finder online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Channel Finder — Search & Discover Channels Online | SopKit"
         },
         {
           "id": "youtube-channel-id-extractor",
@@ -1869,7 +1926,8 @@
           "description": "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations. Free and fast online tool.",
           "route": "/youtube-channel-id-extractor",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Channel ID Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Channel ID Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Channel ID Extractor — Find Channel ID Online | SopKit"
         },
         {
           "id": "youtube-playlist-link-extractor",
@@ -1877,7 +1935,8 @@
           "description": "Extract all video URLs, IDs, titles, and publish dates from any public YouTube playlist. Free online playlist extractor for creators, marketers, and researchers.",
           "route": "/youtube-playlist-link-extractor",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Playlist Link Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Playlist Link Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Playlist Link Extractor — Get All Video URLs | SopKit"
         },
         {
           "id": "youtube-channel-statistics",
@@ -1885,7 +1944,8 @@
           "description": "Get detailed insights and statistics for any YouTube channel instantly. View subscriber counts, video totals, and engagement metrics with our free online analytics tool.",
           "route": "/youtube-channel-statistics",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Channel Statistics online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Channel Statistics online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Channel Statistics — View Analytics & Stats Online | SopKit"
         },
         {
           "id": "youtube-comment-picker",
@@ -1893,7 +1953,8 @@
           "description": "Pick a random winner from your YouTube video comments instantly. Our free online Comment Picker is perfect for giveaways, contests, and audience engagement. Fast and fair.",
           "route": "/youtube-comment-picker",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Comment Picker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Comment Picker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Comment Picker — Random Winner Selector | SopKit"
         },
         {
           "id": "youtube-description-extractor",
@@ -1901,7 +1962,8 @@
           "description": "Extract the full description from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool.",
           "route": "/youtube-description-extractor",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Description Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Description Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Description Extractor — Copy Video Descriptions | SopKit"
         },
         {
           "id": "youtube-embed-code-generator",
@@ -1909,7 +1971,8 @@
           "description": "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and privacy settings for your website.",
           "route": "/youtube-embed-code-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Embed Code Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Embed Code Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Embed Code Generator — Responsive Iframe Codes | SopKit"
         },
         {
           "id": "youtube-hashtag-extractor",
@@ -1917,7 +1980,8 @@
           "description": "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video SEO for better reach.",
           "route": "/youtube-hashtag-extractor",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Hashtag Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Hashtag Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Hashtag Extractor — Find Video Hashtags | SopKit"
         },
         {
           "id": "youtube-hashtag-generator",
@@ -1925,7 +1989,8 @@
           "description": "Generate viral hashtags for your YouTube videos instantly. Our free online tool suggests relevant, search-friendly tags to help you reach more viewers and boost engagement.",
           "route": "/youtube-hashtag-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Hashtag Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Hashtag Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Hashtag Generator — Trending Tags for Videos | SopKit"
         },
         {
           "id": "youtube-money-calculator",
@@ -1933,7 +1998,8 @@
           "description": "Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metrics. Perfect for creators.",
           "route": "/youtube-money-calculator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Money Calculator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Money Calculator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Money Calculator — Estimate Ad Revenue & Earnings | SopKit"
         },
         {
           "id": "youtube-region-restriction-checker",
@@ -1941,7 +2007,8 @@
           "description": "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your content. Fast and accurate.",
           "route": "/youtube-region-restriction-checker",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Region Restriction Checker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Region Restriction Checker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Region Restriction Checker — Test Video Availability | SopKit"
         },
         {
           "id": "youtube-subscribe-link-generator",
@@ -1949,7 +2016,8 @@
           "description": "Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for social media and bios.",
           "route": "/youtube-subscribe-link-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Subscribe Link Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Subscribe Link Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Subscribe Link Generator — Custom Subscribe URLs | SopKit"
         },
         {
           "id": "youtube-tag-extractor",
@@ -1957,7 +2025,8 @@
           "description": "Extract hidden tags from any YouTube video instantly. Our free online tool helps you discover the keywords used by top-performing creators to boost your own video SEO.",
           "route": "/youtube-tag-extractor",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Tag Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Tag Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Tag Extractor — Find Video Tags & Keywords | SopKit"
         },
         {
           "id": "youtube-tag-generator",
@@ -1965,7 +2034,8 @@
           "description": "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank higher in search results.",
           "route": "/youtube-tag-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Tag Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Tag Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Tag Generator — SEO Tags for YouTube Videos | SopKit"
         },
         {
           "id": "youtube-timestamp-link-generator",
@@ -1973,7 +2043,8 @@
           "description": "Create direct links to specific parts of any YouTube video instantly. Our free online tool helps you share precise moments with friends, students, or your audience. Fast and easy.",
           "route": "/youtube-timestamp-link-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Timestamp Link Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Timestamp Link Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Timestamp Link Generator — Share Specific Moments | SopKit"
         },
         {
           "id": "youtube-title-extractor",
@@ -1981,7 +2052,8 @@
           "description": "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool.",
           "route": "/youtube-title-extractor",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Title Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Title Extractor online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Title Extractor — Copy Video Titles Online | SopKit"
         },
         {
           "id": "youtube-title-length-checker",
@@ -1989,7 +2061,8 @@
           "description": "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is visible in search results.",
           "route": "/youtube-title-length-checker",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Title Length Checker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Title Length Checker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Title Length Checker — Optimize Title Length | SopKit"
         },
         {
           "id": "youtube-video-count-checker",
@@ -1997,7 +2070,8 @@
           "description": "Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel auditing.",
           "route": "/youtube-video-count-checker",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Video Count Checker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Video Count Checker online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Video Count Checker — Count Channel Videos | SopKit"
         },
         {
           "id": "youtube-video-statistics",
@@ -2005,7 +2079,8 @@
           "description": "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool.",
           "route": "/youtube-video-statistics",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Video Statistics online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Video Statistics online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Video Statistics — View Analytics & Data | SopKit"
         },
         {
           "id": "youtube-title-capitalizer",
@@ -2013,7 +2088,8 @@
           "description": "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles stand out.",
           "route": "/youtube-title-capitalizer",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Youtube Video Title Capitalizer online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Youtube Video Title Capitalizer online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Title Capitalizer — Auto-Format Video Titles | SopKit"
         },
         {
           "id": "youtube-views-ratio-calculator",
@@ -2021,7 +2097,8 @@
           "description": "Calculate the view-to-engagement ratio for any YouTube video instantly. Our free online tool helps you understand audience interaction and video performance beyond just views.",
           "route": "/youtube-views-ratio-calculator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Views Ratio Calculator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Views Ratio Calculator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Views Ratio Calculator — Engagement Rate | SopKit"
         },
         {
           "id": "youtube-title-generator",
@@ -2029,7 +2106,8 @@
           "description": "Generate optimized youtube title generator details. Instantly copy or share customized outputs.",
           "route": "/youtube-title-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Title Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Title Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Title Generator — Click-Worthy Video Titles | SopKit"
         },
         {
           "id": "youtube-description-generator",
@@ -2037,7 +2115,8 @@
           "description": "Generate optimized youtube description generator details. Instantly copy or share customized outputs.",
           "route": "/youtube-description-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Description Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Description Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Description Generator — SEO Video Descriptions | SopKit"
         },
         {
           "id": "youtube-thumbnail-text-generator",
@@ -2045,7 +2124,8 @@
           "description": "Generate optimized youtube thumbnail text generator details. Instantly copy or share customized outputs.",
           "route": "/youtube-thumbnail-text-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side YouTube Thumbnail Text Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side YouTube Thumbnail Text Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free YouTube Thumbnail Text Generator — Eye-Catching Titles | SopKit"
         },
         {
           "id": "youtube-thumbnail-downloader",
@@ -2074,10 +2154,11 @@
         {
           "id": "text-to-speech",
           "name": "Text to Speech",
-          "description": "Convert text to natural sounding speech audio",
+          "description": "Convert text to natural sounding speech audio directly in your browser using Web Speech API. Free online text to speech converter with multiple voice options — no uploads needed.",
           "route": "/text-to-speech",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side Text to Speech online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Text to Speech online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Text to Speech Online — Natural Voice Generator | SopKit"
         },
         {
           "id": "audio-tools",
@@ -2234,18 +2315,20 @@
         {
           "id": "json-to-yaml-converter",
           "name": "JSON to YAML Converter",
-          "description": "Convert JSON configurations to clean YAML structures instantly. Safe & secure.",
+          "description": "Convert JSON configurations to clean YAML structures instantly in your browser. Free, private, and 100% client-side JSON to YAML converter with zero file uploads needed.",
           "route": "/json-to-yaml-converter",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side JSON to YAML Converter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side JSON to YAML Converter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free JSON to YAML Converter Online — Instant Conversion | SopKit"
         },
         {
           "id": "html-to-xml-entities",
           "name": "HTML to XML Entities Converter",
-          "description": "Convert HTML special characters into safe XML entities and display tags securely online.",
+          "description": "Convert HTML special characters into safe XML entities and decode entities back to HTML. Free online converter for web developers — 100% client-side processing, no uploads needed.",
           "route": "/html-to-xml-entities",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side HTML to XML Entities Converter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side HTML to XML Entities Converter online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free HTML to XML Entities Converter Online | SopKit"
         },
         {
           "id": "css-border-radius-generator",
@@ -2847,18 +2930,20 @@
         {
           "id": "people-data-labs-api-key-tester",
           "name": "People Data Labs API Key Tester",
-          "description": "Test your People Data Labs API key with the person enrichment endpoint.",
+          "description": "Test your People Data Labs API key with the person enrichment endpoint to verify it works correctly. Free online API key tester that runs securely from your browser with no data storage.",
           "route": "/api-key-tester/people-data-labs",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side People Data Labs API Key Tester online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side People Data Labs API Key Tester online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free People Data Labs API Key Tester — Validate API Token | SopKit"
         },
         {
           "id": "pipedrive-api-key-tester",
           "name": "Pipedrive API Key Tester",
-          "description": "Test your Pipedrive API token with the deals endpoint.",
+          "description": "Test your Pipedrive API token with the deals endpoint to verify it works. Free online API key tester that runs securely from your browser — no server storage, no data collection.",
           "route": "/api-key-tester/pipedrive",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Pipedrive API Key Tester online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Pipedrive API Key Tester online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Pipedrive API Key Tester — Validate Your API Token Online | SopKit"
         },
         {
           "id": "pipl-api-key-tester",
@@ -2903,10 +2988,11 @@
         {
           "id": "sparkpost-api-key-tester",
           "name": "SparkPost API Key Tester",
-          "description": "Test your SparkPost API key with the transmissions endpoint.",
+          "description": "Test your SparkPost API key with the transmissions endpoint to verify it works. Free online API key validator that runs securely from your browser — no server storage, no data collection.",
           "route": "/api-key-tester/sparkpost",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side SparkPost API Key Tester online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side SparkPost API Key Tester online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free SparkPost API Key Tester — Validate API Token Online | SopKit"
         },
         {
           "id": "stripe-api-key-tester",
@@ -3662,10 +3748,11 @@
         {
           "id": "utm-builder",
           "name": "UTM Builder",
-          "description": "Easily build campaign URLs with UTM parameters for Google Analytics tracking.",
+          "description": "Easily build campaign URLs with UTM parameters for Google Analytics tracking. Free online UTM builder for marketing campaigns, social media, and email links — 100% private, no signup.",
           "route": "/utm-builder",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side UTM Builder online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side UTM Builder online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free UTM Builder Online — Create Campaign URLs with UTM Parameters | SopKit"
         },
         {
           "id": "voltage-converter",
@@ -4022,9 +4109,10 @@
         {
           "id": "search",
           "name": "Search All Tools",
-          "description": "Search and browse our collection of 300+ free online tools. 100% free, no signup required.",
+          "description": "Search and browse our collection of 600+ free online tools across 19 categories. Find the perfect browser-based utility for developers, designers, students, and everyday tasks — all 100% free and private.",
           "route": "/search",
-          "seoDescription": "Privacy-friendly, 100% client-side Search All Tools online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Search All Tools online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free Online Tools Search — Browse 600+ Browser Utilities | SopKit"
         },
         {
           "id": "generators",
@@ -4627,11 +4715,12 @@
         {
           "id": "ibps-photo-resizer",
           "name": "Bank Exam Photo Resizer",
-          "description": "Resize and compress photos and signatures for IBPS, SBI, and bank exam application forms.",
+          "description": "Resize and compress photos and signatures for IBPS, SBI, and other bank exam application forms. Free online photo resizer for government exams — all processing done locally in your browser.",
           "route": "/ibps-photo-resizer",
           "popular": false,
           "title": "Bank Exam Photo Resizer - Free Online Tool",
-          "seoDescription": "Privacy-friendly, 100% client-side Bank Exam Photo Resizer online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side Bank Exam Photo Resizer online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free IBPS Photo Resizer Online — Resize for Bank Exam Forms | SopKit"
         },
         {
           "id": "pan-card-photo-resizer",
@@ -4720,10 +4809,11 @@
         {
           "id": "bmr-calculator",
           "name": "BMR Calculator (Basal Metabolic Rate)",
-          "description": "Calculate your Basal Metabolic Rate (BMR) to understand how many calories your body burns at rest.",
+          "description": "Calculate your Basal Metabolic Rate (BMR) to understand daily calorie needs for weight management. Free online BMR calculator using Mifflin-St Jeor equation — 100% private, no data storage.",
           "route": "/bmr-calculator",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side BMR Calculator (Basal Metabolic Rate) online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever."
+          "seoDescription": "Privacy-friendly, 100% client-side BMR Calculator (Basal Metabolic Rate) online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+          "seoTitle": "Free BMR Calculator Online — Calculate Basal Metabolic Rate | SopKit"
         },
         {
           "id": "tdee-calculator",

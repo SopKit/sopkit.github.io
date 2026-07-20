@@ -9289,6 +9289,65 @@ JavaScript Minifier is built for privacy-conscious users who need reliable resul
     ],
     seoDescription: `Private JavaScript Minifier: privately compress code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
+  "javascript-notebook": {
+    whatItIs: `JavaScript Notebook is a Jupyter-style interactive coding environment that runs entirely in your browser. Write, execute, and debug JavaScript code in individual cells with live console output, execution timing, and full support for modern ES2024 features including async/await, Promises, and the latest array methods. Unlike online code editors that send your scripts to remote servers for execution, this notebook runs everything locally in a sandboxed JavaScript environment — your code never leaves your device.
+
+## Why Choose JavaScript Notebook?
+
+Run, test, and experiment with JavaScript code in a structured notebook interface directly in your browser. Each cell runs independently with its own sandboxed console and execution context, providing a Jupyter-like experience for JavaScript developers, students, and educators. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing online code playground uploads your code to their servers — CodePen, JSFiddle, Replit, and countless others store, process, and potentially mine your snippets for AI training or data collection. SopKit does none of this. Your code remains on your device from start to finish. No server uploads. No AI training. No data collection.
+
+## Who Is It For?
+
+JavaScript Notebook is built for developers, students, and educators who need a safe, private environment for JavaScript experimentation. Whether you are testing a new algorithm, debugging a tricky async pattern, teaching JavaScript concepts in a classroom, or interviewing candidates with live coding exercises, this notebook delivers the interactivity you need without compromising privacy. Its multi-cell architecture makes it ideal for breaking down complex problems into manageable steps, and its localStorage auto-save ensures you never lose your work. The ability to export and share notebooks as JSON or HTML makes it easy to collaborate or archive your experiments.
+
+## Key Capabilities
+
+- Multi-cell architecture with independent execution contexts and individual console output
+- Full sandboxed execution with captured console.log, console.error, console.warn, console.table, console.time, and console.dir output
+- Support for modern JavaScript including async/await, arrow functions, destructuring, spread operator, optional chaining, nullish coalescing, and all ES2024 features
+- Built-in snippet library with common coding patterns for quick experimentation (API fetching, array operations, date formatting, string manipulation, classes, Promises, and more)
+- Share notebooks via URL — encode the entire notebook in a shareable URL hash for one-click sharing
+- Export notebooks as JSON for later import or as standalone HTML documents
+- Auto-save to localStorage with save status indicator
+- Cell management: add, delete, reorder cells, hide/show code, and clear individual cell outputs
+- Keyboard shortcuts: Shift+Enter or Cmd+Enter to run, Escape to exit cell focus`,
+    features: [
+      `Run JavaScript code entirely in your browser — zero data leaves your device`,
+      `No server uploads: your code is never stored, logged, or used for AI training`,
+      `100% client-side sandbox — works offline after the first page load`,
+      `Multi-cell Jupyter-style interface with independent execution contexts`,
+      `Captures console output: log, error, warn, info, table, dir, time/timeEnd`,
+      `Full ES2024 support including top-level await, Promises, and modern syntax`,
+      `Built-in snippet library with 8 common coding patterns for quick experimentation`,
+      `Share notebooks via URL hash — encode and share with a single click`,
+      `Export as JSON for later import or as standalone HTML documents`,
+      `Auto-saves to localStorage with real-time save status indicator`,
+      `Code cell collapse, individual output clearing, and keyboard shortcuts`,
+      `No registration, no account creation, no email collection of any kind`,
+      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
+      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+    ],
+    howToUse: {
+      name: "How to use JavaScript Notebook",
+      steps: [
+        { name: "Write your code", text: "Click on any code cell and start typing JavaScript. Each cell operates independently, allowing you to break complex logic into manageable steps. Use the built-in snippet library to insert common patterns like API fetch calls, array operations, or async/await examples." },
+        { name: "Run a cell", text: "Click the Play button on any cell or press Shift+Enter (or Cmd+Enter) to execute the code. The cell will show execution status and timing. Console output, errors, and return values are displayed below the cell." },
+        { name: "Manage cells", text: "Add new cells using the + button, reorder them with the up/down arrows, or delete unwanted cells. Use the eye icon to collapse code you don't need to see, or the eraser icon to clear individual cell outputs." },
+        { name: "Run all cells", text: "Click the 'Run All' button in the toolbar to execute every cell in sequence. This is useful for running an entire notebook after loading or importing it." },
+        { name: "Save and share", text: "The notebook auto-saves to your browser's localStorage. Export as JSON to save permanently, as HTML for sharing with non-technical users, or use the Share button to generate a URL containing the entire notebook in the hash fragment." },
+      ],
+    },
+    faqs: [
+      { question: `Is JavaScript Notebook really free? Are there any hidden charges?`, answer: `Yes, JavaScript Notebook is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium code playgrounds that restrict features or limit executions, SopKit provides unlimited access to all features at no cost.` },
+      { question: `Does JavaScript Notebook send my code to a server?`, answer: `No. JavaScript Notebook runs 100% in your browser using a sandboxed JavaScript sandbox. Your code is executed locally using the Function() constructor within a controlled environment that captures console output. Nothing is uploaded, logged, or transmitted over the network.` },
+      { question: `Can I use JavaScript Notebook offline?`, answer: `Yes, after the initial page load, JavaScript Notebook works entirely offline. The tool is a client-side React component that executes JavaScript code locally. Your notebooks are saved to your browser's localStorage and persist between sessions without any server communication.` },
+      { question: `What JavaScript features are supported?`, answer: `JavaScript Notebook supports all ES2024+ features including async/await, arrow functions, classes, template literals, destructuring, spread/rest operators, optional chaining, nullish coalescing, BigInt, Promise.all, Array.group, and the latest array methods like toReversed(), toSorted(), and with().` },
+      { question: `Can I share my notebook with others?`, answer: `Yes, you can share notebooks in multiple ways: (1) Use the Share button to copy a URL containing the entire notebook encoded in the hash fragment. (2) Export as JSON and share the file. (3) Export as standalone HTML for users who just want to view the code.` },
+      { question: `Can I use require() or import modules in the notebook?`, answer: `The notebook runs in a browser sandbox and does not support Node.js require() or ES module imports. It is designed for vanilla JavaScript experimentation. For module-based workflows, consider using a dedicated module bundler.` },
+      { question: `Is there a limit on how many cells I can create?`, answer: `There is no hard limit on the number of cells. However, browser memory and localStorage size limits may impose practical constraints. For most use cases, notebooks with up to 50-100 cells work smoothly.` },
+    ],
+    seoDescription: `Interactive JavaScript Notebook — write, run, and debug JS code in a Jupyter-style environment. Multi-cell editor with console output, async/await, ES2024. 100% client-side sandbox — no server uploads. Free, private, and secure.`,
+  },
   "javascript-obfuscator": {
     whatItIs: `JavaScript Obfuscator is a versatile web tool that helps you work with code and data efficiently. Unlike online services that track your usage and collect data, this tool processes everything locally in your browser. It is designed to provide a fast, private, and straightforward solution for common code and data tasks without requiring signups, payments, or software installations.
 
@@ -22431,5 +22490,175 @@ ZoomInfo API Key Tester is built for privacy-conscious users who need reliable r
       { question: `Can I use ZoomInfo API Key Tester on mobile devices or tablets?`, answer: `Yes, ZoomInfo API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
     ],
     seoDescription: `Private ZoomInfo API Key Tester: privately validate code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+  },
+  "color-palette-generator": {
+    whatItIs: `Color Palette Generator is a creative design tool that generates harmonious color schemes based on color theory principles. Unlike online palette tools that require accounts or send your data to servers, this tool runs entirely in your browser, generating complementary, analogous, triadic, tetradic, and split-complementary color schemes instantly.
+
+## Why Choose Color Palette Generator?
+
+Generate professional color palettes for your design projects using proven color harmony rules. Whether you are a web designer, graphic artist, or brand developer, our palette generator helps you discover beautiful color combinations without needing deep color theory knowledge. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing color tool uploads your data to their servers for processing. SopKit does none of this. Your color choices remain on your device from start to finish.
+
+## Who Is It For?
+
+Color Palette Generator is built for designers, developers, and creative professionals who need quick, harmonious color schemes for their projects. Whether you are designing a website, creating a brand identity, or working on UI mockups, this tool delivers professional color palettes without compromising your privacy.`,
+    features: [
+      `Generate harmonious color schemes: complementary, analogous, triadic, tetradic, and split-complementary`,
+      `Pick any base color using the color picker or enter hex codes manually`,
+      `Random color generator for inspiration at the click of a button`,
+      `Copy individual colors or export entire palette as CSS variables`,
+      `Copy palette as comma-separated values for easy import`,
+      `100% client-side processing with zero server uploads`,
+      `No registration, no account creation, no data collection`,
+      `Free forever with unlimited usage`,
+    ],
+    howToUse: {
+      name: "How to use Color Palette Generator",
+      steps: [
+        { name: "Choose a base color", text: "Use the color picker or type a hex code to set your starting color. The tool will generate a harmonious palette based on your selection." },
+        { name: "Select harmony rule", text: "Choose from complementary, analogous, triadic, tetradic, or split-complementary to generate different color relationships." },
+        { name: "Copy or export", text: "Click any color swatch to copy its hex code, or export the entire palette as CSS variables or comma-separated values." },
+      ],
+    },
+    faqs: [
+      { question: `Can I use Color Palette Generator offline?`, answer: `Yes, after the initial page load, the tool works entirely offline. All color calculations are performed locally in your browser.` },
+      { question: `What color harmony rules are supported?`, answer: `We support complementary (opposite colors), analogous (adjacent colors), triadic (three evenly spaced colors), tetradic (four colors forming a rectangle), and split-complementary (base color with two adjacent to its complement).` },
+    ],
+    seoDescription: `Color Palette Generator — create harmonious color schemes online. Generate complementary, analogous, and triadic palettes. 100% client-side, free, and private. No server uploads.`,
+  },
+  "meme-generator": {
+    whatItIs: `Meme Generator is a fun creative tool that lets you create classic memes by adding bold text to images or colored backgrounds. Unlike online meme makers that upload your creations to their servers, this tool runs entirely in your browser using HTML Canvas — your images and text never leave your device.
+
+## Why Choose Meme Generator?
+
+Create viral-worthy memes instantly with customizable text overlays and templates. Choose from preset color themes or upload your own images. Our canvas-based editor gives you full control over top and bottom text placement with classic meme styling. What sets SopKit apart is our privacy-first approach. Every competing meme tool uploads your images to their servers for processing. SopKit processes everything locally in your browser's Canvas API.
+
+## Who Is It For?
+
+Meme Generator is perfect for social media managers, content creators, and anyone who wants to create memes quickly without compromising their privacy or uploading images to third-party servers.`,
+    features: [
+      `Create memes with customizable top and bottom text on images or colored backgrounds`,
+      `Multiple preset color templates including Classic, Dark, Vibrant, Warm, and Nature themes`,
+      `Upload your own images as meme backgrounds with full Canvas rendering`,
+      `Export memes as high-quality PNG images with a single click`,
+      `Classic Impact font styling with white fill and black stroke for authentic meme look`,
+      `100% client-side Canvas processing — no image uploads to any server`,
+      `No registration, no account, no watermark on exported memes`,
+      `Free forever with unlimited meme creation`,
+    ],
+    howToUse: {
+      name: "How to use Meme Generator",
+      steps: [
+        { name: "Enter your text", text: "Type your top and bottom text. Text is automatically converted to uppercase for classic meme styling." },
+        { name: "Choose background", text: "Select a preset color theme or upload your own image by clicking 'Upload Image'." },
+        { name: "Export", text: "Click 'Export PNG' to download your meme as a high-quality PNG image, ready to share." },
+      ],
+    },
+    faqs: [
+      { question: `Is there a watermark on exported memes?`, answer: `No, exported memes are completely clean with no watermarks, branding, or attribution required.` },
+      { question: `Can I use my own images?`, answer: `Yes, click 'Upload Image' to use any JPEG, PNG, or WebP image as your meme background. Images are processed locally and never uploaded to any server.` },
+    ],
+    seoDescription: `Meme Generator — create custom memes online for free. Add text to images with classic meme styling. 100% client-side Canvas processing. Free, private, and no watermark.`,
+  },
+  "story-idea-generator": {
+    whatItIs: `Story Idea Generator is a creative writing tool that produces unlimited story prompts by combining random characters, settings, conflicts, and themes across multiple genres. Whether you need inspiration for your next novel, a writing exercise, or a roleplaying game hook, this tool delivers fresh ideas instantly — all processed locally in your browser.
+
+## Why Choose Story Idea Generator?
+
+Writer's block is a thing of the past. Our prompt generator combines elements from curated pools of characters, settings, conflicts, and themes to create unique story premises with every click. Choose from eight genres including Fantasy, Sci-Fi, Mystery, Romance, Thriller, Adventure, Horror, and Comedy. What sets SopKit apart is our commitment to privacy — your generated ideas stay on your device and are never used for AI training or data collection.
+
+## Who Is It For?
+
+Story Idea Generator is built for writers, educators, game masters, and anyone who needs creative inspiration. Whether you are a novelist looking for your next plot, a teacher designing creative writing exercises, or a D&D game master preparing campaign hooks, this tool provides endless creative fuel without tracking your usage or stealing your ideas.`,
+    features: [
+      `Generate unlimited story prompts combining characters, settings, conflicts, and themes`,
+      `Support for 8 genres: Fantasy, Sci-Fi, Mystery, Romance, Thriller, Adventure, Horror, Comedy`,
+      `Curated pools of creative elements for diverse and interesting combinations`,
+      `History of generated ideas for reference and inspiration`,
+      `Copy prompts to clipboard with a single click`,
+      `100% client-side generation with no server communication`,
+      `No registration, no account, no data collection of any kind`,
+      `Free forever with unlimited idea generation`,
+    ],
+    howToUse: {
+      name: "How to use Story Idea Generator",
+      steps: [
+        { name: "Select genre", text: "Choose from eight genres to filter the type of story prompt you want to generate." },
+        { name: "Generate idea", text: "Click 'Generate Story Idea' to create a random prompt combining a character, setting, conflict, and theme." },
+        { name: "Save or regenerate", text: "Copy your favorite ideas, or click 'Regenerate' for a new combination. Your idea history is preserved during the session." },
+      ],
+    },
+    faqs: [
+      { question: `How many different prompts can this generate?`, answer: `With 15 characters, 12 settings, 10 conflicts, and 10 themes across 8 genres, the tool can generate thousands of unique combinations.` },
+      { question: `Can I save my generated ideas?`, answer: `Generated ideas are stored in your session history. You can copy individual ideas to your clipboard for permanent storage.` },
+    ],
+    seoDescription: `Story Idea Generator — get unlimited creative writing prompts. Generate characters, settings, conflicts, and themes across 8 genres. 100% free, private, and client-side.`,
+  },
+  "pixel-art-maker": {
+    whatItIs: `Pixel Art Maker is a browser-based grid editor for creating pixel art. Draw pixel by pixel on a 16x16 grid with a palette of 12 colors plus a custom color picker. Unlike online editors that require accounts or save your data on servers, this tool runs entirely in your browser — all drawing data stays on your device.
+
+## Why Choose Pixel Art Maker?
+
+Create retro-style pixel art with an intuitive grid-based editor. Perfect for game sprites, favicons, emoji art, or just creative fun. Our editor supports click-to-draw, click-and-drag painting, undo history, and PNG export at 4x resolution for crisp, scaled-up artwork. What sets SopKit apart is our privacy commitment — every competing art tool uploads your creations to their servers. SopKit processes everything locally using HTML Canvas.
+
+## Who Is It For?
+
+Pixel Art Maker is built for game developers, designers, and pixel art enthusiasts who want a simple, private tool for creating pixel art without signing up or uploading their work to third-party servers.`,
+    features: [
+      `16x16 pixel grid with intuitive click-to-draw and drag-to-paint interaction`,
+      `12 preset colors plus full custom color picker for unlimited color choices`,
+      `Undo history (up to 20 steps) for easy experimentation`,
+      `Clear canvas with undo support for starting over`,
+      `Export artwork as PNG at 4x resolution with crisp pixel scaling`,
+      `100% client-side Canvas rendering with zero data uploads`,
+      `No registration, no account, no data collection or tracking`,
+      `Free forever with unlimited pixel art creation`,
+    ],
+    howToUse: {
+      name: "How to use Pixel Art Maker",
+      steps: [
+        { name: "Choose a color", text: "Select a color from the palette or use the custom color picker to choose any color." },
+        { name: "Draw", text: "Click on individual pixels to color them, or click and drag to paint multiple pixels at once." },
+        { name: "Export", text: "Click 'Export PNG' to download your pixel art at 4x resolution as a PNG image." },
+      ],
+    },
+    faqs: [
+      { question: `Can I undo my changes?`, text: `The tool says Undo: Yes, click 'Undo' to revert your last action. You can undo up to 20 previous states.` },
+      { question: `What size is the exported PNG?`, text: `The canvas exports at 64x64 pixels (16x16 grid at 4x resolution) for crisp, scaled-up pixel art.` },
+    ],
+    seoDescription: `Pixel Art Maker — create pixel art online with an interactive grid editor. Draw pixel by pixel, choose colors, and export as PNG. 100% free, private, and client-side.`,
+  },
+  "avatar-generator": {
+    whatItIs: `Avatar Generator creates unique identicon-style avatar images from any text seed. Inspired by GitHub-style identicons, this tool generates symmetric, visually appealing avatar graphics that are deterministic — the same seed always produces the same avatar. Perfect for user profiles, forum accounts, or placeholder avatars.
+
+## Why Choose Avatar Generator?
+
+Generate unique, visually consistent avatars from any text input. Each seed produces a distinctive symmetric pattern with customizable color palettes. Unlike avatar services that store your generated images on their servers, this tool runs entirely in your browser using Canvas — no data ever leaves your device. Choose from 6 color palettes or use your own colors.
+
+## Who Is It For?
+
+Avatar Generator is built for developers, product managers, and anyone who needs unique, deterministic avatars for user profiles, development environments, or placeholder content without relying on external services.`,
+    features: [
+      `Generate unique identicon-style avatars from any text seed with deterministic output`,
+      `6 curated color palettes for different aesthetics (light, dark, vibrant, nature, warm, tech)`,
+      `Symmetric 7x7 grid pattern based on seed hash for visually balanced avatars`,
+      `Randomize with a single click for quick inspiration`,
+      `Export avatars as PNG images for immediate use`,
+      `100% client-side Canvas generation with zero server communication`,
+      `No registration, no account, no image storage or tracking`,
+      `Free forever with unlimited avatar generation`,
+    ],
+    howToUse: {
+      name: "How to use Avatar Generator",
+      steps: [
+        { name: "Enter a seed", text: "Type any text into the seed field. The same seed always produces the same avatar pattern." },
+        { name: "Customize colors", text: "Choose from 6 preset color palettes to change the look and feel of your avatar." },
+        { name: "Export", text: "Click 'Export PNG' to download your avatar as a transparent PNG image." },
+      ],
+    },
+    faqs: [
+      { question: `Is the avatar generation deterministic?`, answer: `Yes, the same seed text always produces the exact same avatar pattern and colors. This makes it perfect for consistent user profile images.` },
+      { question: `Can I use my own colors?`, answer: `You can choose from 6 preset color palettes. The tool uses a hash-based algorithm to generate symmetric patterns based on your seed text.` },
+    ],
+    seoDescription: `Avatar Generator — create unique identicon avatars from any text. Deterministic, customizable colors, and PNG export. 100% free, private, and client-side.`,
   },
 };

@@ -10,6 +10,11 @@ const AcademicGradesCalculator = dynamic(() => import("@/components/tools/calcul
 const AkillitvDownloader = dynamic(() => import("@/components/tools/downloaders/AkillitvDownloader"), { ssr: false });
 const AllDownloaders = dynamic(() => import("@/components/tools/downloaders/AllDownloaders"), { ssr: false });
 const AsciiArtGeneratorTool = dynamic(() => import("@/components/tools/generators/AsciiArtGeneratorTool"), { ssr: false });
+const ColorPaletteGenerator = dynamic(() => import("@/components/tools/generators/ColorPaletteGenerator"), { ssr: false });
+const MemeGenerator = dynamic(() => import("@/components/tools/generators/MemeGenerator"), { ssr: false });
+const StoryIdeaGenerator = dynamic(() => import("@/components/tools/generators/StoryIdeaGenerator"), { ssr: false });
+const PixelArtMaker = dynamic(() => import("@/components/tools/generators/PixelArtMaker"), { ssr: false });
+const AvatarGenerator = dynamic(() => import("@/components/tools/generators/AvatarGenerator"), { ssr: false });
 const AttendanceCalculator = dynamic(() => import("@/components/tools/calculators/AttendanceCalculator"), { ssr: false });
 const BackgroundRemoverTool = dynamic(() => import("@/components/tools/image/BackgroundRemoverTool"), { ssr: false });
 const BandcampDownloader = dynamic(() => import("@/components/tools/downloaders/BandcampDownloader"), { ssr: false });
@@ -607,6 +612,11 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "lorem-ipsum": { component: LoremIpsumGeneratorTool, props: {} },
     "lorem-ipsum-generator": { component: LoremIpsumGeneratorTool, props: {} },
     "love-calculator": { component: LoveCalculator, props: {} },
+    "color-palette-generator": { component: ColorPaletteGenerator, props: {} },
+    "meme-generator": { component: MemeGenerator, props: {} },
+    "story-idea-generator": { component: StoryIdeaGenerator, props: {} },
+    "pixel-art-maker": { component: PixelArtMaker, props: {} },
+    "avatar-generator": { component: AvatarGenerator, props: {} },
     "m3u8-downloader": { component: M3u8Downloader, props: {} },
     "margin-calculator": { component: BuiltInCalculators, props: {"kind": "margin-calculator"} },
     "markdown-to-text": { component: MarkdownToText, props: {} },

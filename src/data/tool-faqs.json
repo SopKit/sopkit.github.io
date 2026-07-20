@@ -4,19 +4,71 @@
   "ai-music-generator": [],
   "qr-code-reader": [],
   "bio-generator": [],
-  "business-name-generator": [],
+  "business-name-generator": [
+    {
+      "question": "How are business names generated?",
+      "answer": "The generator combines keywords, industry terms, and creative patterns to produce unique, catchy business name suggestions instantly."
+    },
+    {
+      "question": "Can I generate names for a specific industry?",
+      "answer": "Yes, you can specify keywords related to your industry or brand to get more relevant and targeted name suggestions."
+    },
+    {
+      "question": "Are my business ideas private?",
+      "answer": "Yes. All name generation happens client-side. Your keywords and generated names are never saved or sent to any server."
+    }
+  ],
   "ai-poem-generator": [],
   "fake-chat-generator": [],
   "excuse-generator": [],
   "font-generator": [],
-  "number-generator": [],
-  "poetry-generator": [],
+  "number-generator": [
+    {
+      "question": "What types of numbers can I generate?",
+      "answer": "You can generate random numbers, lottery numbers, PIN codes, custom ranges, and number sequences with various output formats."
+    },
+    {
+      "question": "Is the number generation truly random?",
+      "answer": "The generator uses cryptographically strong randomization via the Web Crypto API when available, providing high-quality random numbers."
+    },
+    {
+      "question": "Can I set a custom range for numbers?",
+      "answer": "Yes, you can set minimum and maximum values to generate numbers within any custom range you need."
+    }
+  ],
+  "poetry-generator": [
+    {
+      "question": "What types of poems can I generate?",
+      "answer": "You can generate poems, haikus, sonnets, limericks, and rhyming verses with customizable themes and styles."
+    },
+    {
+      "question": "How does the poetry generation work?",
+      "answer": "The generator uses pattern-based templates and rhyme detection to create poetic verses based on your chosen theme and style."
+    },
+    {
+      "question": "Can I save or share my poems?",
+      "answer": "Yes, you can copy your generated poem to clipboard or download it as a text file to save or share anywhere."
+    }
+  ],
   "rent-receipt-generator": [],
   "simple-invoice-generator": [],
   "leave-application-generator": [],
   "resignation-letter-generator": [],
   "bio-data-maker": [],
-  "instagram-bio-generator": [],
+  "instagram-bio-generator": [
+    {
+      "question": "How do I create an Instagram bio?",
+      "answer": "Choose a style template, enter your details, pick fonts and emojis, and instantly preview your optimized Instagram bio."
+    },
+    {
+      "question": "Can I copy the bio directly?",
+      "answer": "Yes, you can copy the generated bio to your clipboard with one click and paste it directly into Instagram."
+    },
+    {
+      "question": "Is my bio data private?",
+      "answer": "Yes. All bio generation happens client-side in your browser. Nothing you type is saved or sent to any server."
+    }
+  ],
   "instagram-caption-generator": [],
   "hashtag-generator": [],
   "slogan-generator": [],
@@ -39,17 +91,56 @@
   "webp-to-jpg-converter": [],
   "favicon-generator-pro": [],
   "image-metadata-remover": [],
-  "image-color-picker-pro": [],
+  "image-color-picker-pro": [
+    {
+      "question": "How do I pick colors from an image?",
+      "answer": "Upload an image and click anywhere on it to extract the exact color. The tool displays HEX, RGB, and HSL values instantly."
+    },
+    {
+      "question": "Can I copy color codes?",
+      "answer": "Yes, you can copy any color code (HEX, RGB, or HSL) to your clipboard with a single click."
+    },
+    {
+      "question": "Is my image uploaded to a server?",
+      "answer": "No. All color extraction happens client-side using Canvas API. Your image is processed entirely in your browser."
+    }
+  ],
   "compress-image-to-exact-kb": [],
   "resize-image-cm-mm-inch": [],
   "passport-photo-maker-india": [],
-  "aadhaar-pan-photo-resizer": [],
+  "aadhaar-pan-photo-resizer": [
+    {
+      "question": "What are the standard Aadhaar photo dimensions?",
+      "answer": "Aadhaar photos typically require 2x2 inch size with specific pixel dimensions. The tool automatically applies the correct dimensions for Aadhaar, PAN, and KYC forms."
+    },
+    {
+      "question": "Can I resize both photos and signatures?",
+      "answer": "Yes, the tool supports resizing both photographs and signature images for various government application forms."
+    },
+    {
+      "question": "Is my personal photo uploaded?",
+      "answer": "No. All image resizing and compression happens locally in your browser. Your photos never leave your device."
+    }
+  ],
   "background-remover": [],
   "base64-to-image-converter": [],
   "convert-to-ico": [],
   "exif-reader": [],
   "favicon-generator": [],
-  "flip-image": [],
+  "flip-image": [
+    {
+      "question": "How do I flip an image?",
+      "answer": "Upload an image from your device, choose horizontal (mirror) or vertical flip direction, preview the result, and download the flipped image."
+    },
+    {
+      "question": "What image formats are supported?",
+      "answer": "The tool supports JPG, PNG, GIF, WebP, and BMP image formats for flipping operations."
+    },
+    {
+      "question": "Is my image uploaded to a server?",
+      "answer": "No. All image processing is done locally in your browser using the Canvas API. Your image never leaves your device."
+    }
+  ],
   "image-compressor": [],
   "image-converter": [],
   "image-cropper": [],
@@ -64,7 +155,20 @@
   "jpg-to-gif-converter": [],
   "jpg-to-ico-converter": [],
   "jpg-to-webp-converter": [],
-  "logo-generator": [],
+  "logo-generator": [
+    {
+      "question": "How do I create a custom logo with this tool?",
+      "answer": "Simply type your brand name, choose a font style, pick colors, and customize the layout. All editing happens in your browser instantly with no signup required."
+    },
+    {
+      "question": "Can I download my logo in high resolution?",
+      "answer": "Yes, you can download your logo as a PNG image. The logo is rendered at high resolution directly in your browser."
+    },
+    {
+      "question": "Is my logo data private?",
+      "answer": "Absolutely. All logo creation and rendering happens 100% client-side in your browser. No text, colors, or design data is ever sent to our servers."
+    }
+  ],
   "photo-enhancer": [],
   "png-to-bmp-converter": [],
   "png-to-gif-converter": [],
@@ -86,12 +190,38 @@
   "text-reverser": [],
   "remove-duplicate-lines": [],
   "markdown-to-html": [],
-  "markdown-to-pdf": [],
+  "markdown-to-pdf": [
+    {
+      "question": "How do I convert Markdown to PDF?",
+      "answer": "Type or paste your Markdown text into the editor, preview the formatted output, and click download to save as a PDF. All rendering happens locally."
+    },
+    {
+      "question": "Does it support images and tables in Markdown?",
+      "answer": "Yes, the converter supports standard Markdown syntax including headings, lists, tables, code blocks, images, and links in the PDF output."
+    },
+    {
+      "question": "Is my Markdown data stored on your servers?",
+      "answer": "No. Markdown to PDF conversion happens entirely in your browser. Your content never leaves your device."
+    }
+  ],
   "url-encoder-decoder": [],
   "string-length-calculator": [],
   "text-to-binary-hex-octal": [],
   "slug-to-text-converter": [],
-  "word-frequency-counter": [],
+  "word-frequency-counter": [
+    {
+      "question": "How does word frequency counting work?",
+      "answer": "Paste or type text and the tool analyzes every word, counting occurrences and displaying them sorted by frequency for easy text analysis."
+    },
+    {
+      "question": "Can I exclude common words from analysis?",
+      "answer": "Yes, the tool can filter out stop words (the, and, a, etc.) to focus on meaningful keywords in your text analysis."
+    },
+    {
+      "question": "Is my text data stored?",
+      "answer": "No. All text analysis is done locally in your browser. Your text never leaves your device."
+    }
+  ],
   "case-converter": [],
   "emoji-text-generator": [],
   "random-word-generator": [],
@@ -129,7 +259,20 @@
   "pdf-compressor": [],
   "pdf-page-numbers": [],
   "pdf-watermark": [],
-  "pdf-metadata-editor": [],
+  "pdf-metadata-editor": [
+    {
+      "question": "What PDF metadata can I edit?",
+      "answer": "You can edit standard PDF metadata fields including Title, Author, Subject, Keywords, Producer, and Creator information."
+    },
+    {
+      "question": "How do I edit PDF metadata?",
+      "answer": "Upload your PDF file, edit the metadata fields in the form, and download the updated PDF with the new metadata embedded."
+    },
+    {
+      "question": "Is my PDF file uploaded?",
+      "answer": "No. All metadata editing happens client-side in your browser using PDF.js. Your file never leaves your device."
+    }
+  ],
   "pdf-merger": [],
   "pdf-splitter": [],
   "pdf-rotation": [],
@@ -137,14 +280,66 @@
   "pdf-editor": [],
   "pdf-protect": [],
   "pdf-to-image": [],
-  "pdf-to-word": [],
-  "pdf-unlocker": [],
+  "pdf-to-word": [
+    {
+      "question": "How accurate is the PDF to Word conversion?",
+      "answer": "The conversion extracts text content and basic formatting from PDFs. Text extraction is highly accurate for digital PDFs; scanned documents may require OCR (not included)."
+    },
+    {
+      "question": "What output format does the tool produce?",
+      "answer": "The tool generates editable Word documents (.docx format) that can be opened in Microsoft Word, Google Docs, or LibreOffice."
+    },
+    {
+      "question": "Is my PDF file stored on your servers?",
+      "answer": "No. All conversion processing is done client-side using PDF.js. Your document never leaves your device."
+    }
+  ],
+  "pdf-unlocker": [
+    {
+      "question": "Can I remove any PDF password?",
+      "answer": "The tool can remove user-level password protection (restrictions on printing, editing, etc.) from PDFs. Owner-level passwords may not always be removable."
+    },
+    {
+      "question": "How does PDF unlocking work?",
+      "answer": "Upload your password-protected PDF, enter the password if required, and the tool removes the restrictions by creating a new unlocked version."
+    },
+    {
+      "question": "Is my PDF stored on your servers?",
+      "answer": "No. All PDF processing is done client-side using PDF.js. Your file never leaves your device."
+    }
+  ],
   "word-to-pdf": [],
   "pdf-grayscale": [],
   "pdf-repair": [],
-  "pdf-tools": [],
+  "pdf-tools": [
+    {
+      "question": "What PDF operations can I perform?",
+      "answer": "You can merge, split, compress, edit metadata, add watermarks, add page numbers, rotate pages, and unlock password-protected PDFs."
+    },
+    {
+      "question": "Are my PDF files uploaded to a server?",
+      "answer": "No. All PDF processing is done 100% client-side using PDF.js and other browser-based libraries. Your files never leave your device."
+    },
+    {
+      "question": "Is there a file size limit?",
+      "answer": "Since all processing is client-side, the limit depends on your device's memory and browser capabilities rather than our servers."
+    }
+  ],
   "video-tools": [],
-  "video-converter": [],
+  "video-converter": [
+    {
+      "question": "What video formats are supported?",
+      "answer": "The converter supports MP4, AVI, MKV, MOV, WebM, OGG, and more common video formats for conversion."
+    },
+    {
+      "question": "How does browser-based video conversion work?",
+      "answer": "The tool uses Canvas API and MediaRecorder to process video frames and re-encode them in the target format, all within your browser."
+    },
+    {
+      "question": "Is there a file size limit?",
+      "answer": "Since processing is client-side, the limit depends on your device's memory and browser capabilities. Very large files may need a capable device."
+    }
+  ],
   "video-editor": [],
   "akillitv-video-downloader": [],
   "all-downloaders": [],
@@ -248,7 +443,20 @@
   "youtube-thumbnail-text-generator": [],
   "youtube-thumbnail-downloader": [],
   "youtube-video-downloader": [],
-  "text-to-speech": [],
+  "text-to-speech": [
+    {
+      "question": "How does the text to speech tool work?",
+      "answer": "Type or paste text into the input box, choose a voice and speed, and click play. The tool uses your browser's built-in Web Speech API to generate natural-sounding speech."
+    },
+    {
+      "question": "Can I download the speech as an audio file?",
+      "answer": "Yes, you can record and download the generated speech as an audio file directly from your browser."
+    },
+    {
+      "question": "Is my text data sent to a server?",
+      "answer": "No. All speech synthesis happens locally using your browser's native speech engine. Your text never leaves your device."
+    }
+  ],
   "audio-tools": [],
   "guitar-tuner": [],
   "free-mp3-extractor": [],
@@ -265,8 +473,34 @@
   "html-minifier": [],
   "user-agent-parser": [],
   "yaml-to-json-converter": [],
-  "json-to-yaml-converter": [],
-  "html-to-xml-entities": [],
+  "json-to-yaml-converter": [
+    {
+      "question": "How do I convert JSON to YAML?",
+      "answer": "Paste your JSON into the input box and the conversion happens instantly. The tool automatically detects JSON format and outputs clean, properly indented YAML."
+    },
+    {
+      "question": "Does the converter handle nested JSON objects?",
+      "answer": "Yes, it fully supports nested objects, arrays, and complex JSON structures, converting them to proper YAML with correct indentation."
+    },
+    {
+      "question": "Is my JSON data uploaded to a server?",
+      "answer": "No. All conversion processing happens 100% client-side in your browser. Your data never leaves your device."
+    }
+  ],
+  "html-to-xml-entities": [
+    {
+      "question": "What are HTML entities?",
+      "answer": "HTML entities are special character codes (like &amp; for &) used to display reserved characters safely in HTML and XML documents."
+    },
+    {
+      "question": "How does the converter work?",
+      "answer": "Paste your HTML text and the tool automatically converts special characters to their safe XML entity equivalents or decodes them back."
+    },
+    {
+      "question": "Is my data sent to a server?",
+      "answer": "No. All conversion happens locally in your browser. Your code and text never leave your device."
+    }
+  ],
   "css-border-radius-generator": [],
   "crontab-generator": [],
   "xml-formatter": [],
@@ -341,14 +575,53 @@
   "octal-to-hex-converter": [],
   "octal-to-text-converter": [],
   "openai-api-key-tester": [],
-  "people-data-labs-api-key-tester": [],
-  "pipedrive-api-key-tester": [],
+  "people-data-labs-api-key-tester": [
+    {
+      "question": "How does the API tester work?",
+      "answer": "Enter your People Data Labs API key and the tool tests it against the person enrichment endpoint directly from your browser to verify it's valid."
+    },
+    {
+      "question": "Is my API key stored?",
+      "answer": "No. The key is used only for the test request and is never stored, logged, or transmitted to our servers."
+    },
+    {
+      "question": "What happens on a failed test?",
+      "answer": "The tool displays the error response from the API so you can diagnose issues with your API key configuration."
+    }
+  ],
+  "pipedrive-api-key-tester": [
+    {
+      "question": "How does the API key tester work?",
+      "answer": "Enter your Pipedrive API token and the tool makes a test request to the deals endpoint directly from your browser to verify the token works."
+    },
+    {
+      "question": "Is my API key stored or logged?",
+      "answer": "No. The API key is used only for the test request from your browser and is never stored, logged, or transmitted to our servers."
+    },
+    {
+      "question": "What does a successful test look like?",
+      "answer": "A successful test shows a green status with the API response data. A failed test displays the error message to help you debug."
+    }
+  ],
   "pipl-api-key-tester": [],
   "postmark-api-key-tester": [],
   "resend-api-key-tester": [],
   "sendgrid-api-key-tester": [],
   "snov-io-api-key-tester": [],
-  "sparkpost-api-key-tester": [],
+  "sparkpost-api-key-tester": [
+    {
+      "question": "How do I test my SparkPost API key?",
+      "answer": "Enter your SparkPost API key and the tool tests it against the transmissions endpoint to verify it has the correct permissions."
+    },
+    {
+      "question": "Is my API key stored anywhere?",
+      "answer": "No. The API key is used exclusively for the test call from your browser and is never saved or transmitted to our servers."
+    },
+    {
+      "question": "What does a successful response look like?",
+      "answer": "A successful test returns green status with transmission API details. Errors include descriptive messages to help troubleshoot."
+    }
+  ],
   "stripe-api-key-tester": [],
   "text-to-ascii-converter": [],
   "text-to-binary-converter": [],
@@ -440,7 +713,20 @@
   "url-parser": [],
   "url-rewriting-tool": [],
   "url-shortener": [],
-  "utm-builder": [],
+  "utm-builder": [
+    {
+      "question": "What are UTM parameters?",
+      "answer": "UTM parameters are tags added to URLs that help Google Analytics track where traffic comes from, including source, medium, campaign, and content."
+    },
+    {
+      "question": "How do I use the UTM builder?",
+      "answer": "Enter your base URL, fill in the UTM fields (source, medium, campaign, etc.), and the tool generates a complete campaign URL ready to use."
+    },
+    {
+      "question": "Can I save my UTM campaigns?",
+      "answer": "The generated URLs can be copied to clipboard or exported. URLs are not stored on servers — everything stays in your browser."
+    }
+  ],
   "voltage-converter": [],
   "volume-converter": [],
   "volumetric-flow-rate-converter": [],
@@ -483,7 +769,20 @@
   "about": [],
   "blog": [],
   "contact": [],
-  "search": [],
+  "search": [
+    {
+      "question": "What can I search for on SopKit?",
+      "answer": "You can search across 600+ free online tools organized in 19 categories including developer tools, image editors, PDF tools, calculators, and more."
+    },
+    {
+      "question": "How does the search work?",
+      "answer": "Simply type keywords related to the tool you need and the search instantly filters through all tools by name, description, and category."
+    },
+    {
+      "question": "Are my searches private?",
+      "answer": "Yes. Search happens entirely client-side. Your search queries are not tracked, logged, or sent to any analytics service."
+    }
+  ],
   "generators": [],
   "developer-tools": [],
   "privacy": [],
@@ -554,7 +853,20 @@
   "jee-photo-resizer": [],
   "cuet-photo-resizer": [],
   "railway-exam-photo-resizer": [],
-  "ibps-photo-resizer": [],
+  "ibps-photo-resizer": [
+    {
+      "question": "What are IBPS photo requirements?",
+      "answer": "IBPS bank exams require specific photo dimensions (typically 200x230 pixels) and file size limits. The tool auto-applies these specifications."
+    },
+    {
+      "question": "Can I resize photos for other bank exams?",
+      "answer": "Yes, the tool supports photo resizing for IBPS, SBI, RBI, and other public sector bank exam applications."
+    },
+    {
+      "question": "Is my photo stored anywhere?",
+      "answer": "No. All resizing is done locally in your browser. Your photo is never uploaded to any server."
+    }
+  ],
   "pan-card-photo-resizer": [],
   "passport-photo-maker": [],
   "photo-compressor-under-50kb": [],
@@ -564,7 +876,20 @@
   "pdf-compressor-under-200kb": [],
   "ssc-mts-photo-resizer": [],
   "rrb-group-d-photo-resizer": [],
-  "bmr-calculator": [],
+  "bmr-calculator": [
+    {
+      "question": "What is BMR and why is it important?",
+      "answer": "Basal Metabolic Rate (BMR) is the number of calories your body needs at rest. It helps determine daily calorie needs for weight management and fitness planning."
+    },
+    {
+      "question": "How is BMR calculated?",
+      "answer": "The calculator uses the Mifflin-St Jeor equation, which is the most accurate formula for estimating BMR based on age, gender, weight, and height."
+    },
+    {
+      "question": "Is my health data stored?",
+      "answer": "No. All calculations are done locally in your browser. Your personal data is not stored, logged, or transmitted anywhere."
+    }
+  ],
   "tdee-calculator": [],
   "macro-calculator": [],
   "ideal-body-weight-calculator": [],
