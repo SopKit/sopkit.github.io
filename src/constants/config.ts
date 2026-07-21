@@ -28,7 +28,7 @@ export const ADSENSE_SLOT_IDS = {
 };
 export const DEFAULT_META_TITLE = "SopKit - Free Online Toolkit (100% Client-Side)";
 export const DEFAULT_META_DESC = "SopKit is a free, privacy-first online utility suite. Compress images, merge PDFs, download videos, and format developer logs locally in your browser sandbox.";
-export const THEME_COLOR = "#10b981";
+export const THEME_COLOR = "#2563eb";
 export const FEED_URL = `${SITE_URL}/feed.xml`;
 export const SITEMAP_URL = `${SITE_URL}/sitemap.xml`;
 

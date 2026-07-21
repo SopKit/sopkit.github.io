@@ -141,7 +141,7 @@ export const metadata: Metadata = {
 		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
 		url: "https://sopkit.github.io/",
 		siteName: "SopKit",
-		images: [{ url: "https://sopkit.github.io/og-image.png/", width: 1200, height: 630 }],
+		images: [{ url: "https://sopkit.github.io/og-image.png", width: 1200, height: 630 }],
 		locale: "en_US",
 		type: "website",
 	},
@@ -184,7 +184,7 @@ export const metadata: Metadata = {
 			{
 				rel: "mask-icon",
 				url: "/icons/safari-pinned-tab.svg",
-				color: "#000000",
+				color: "#2563eb",
 			},
 		],
 	},
@@ -252,7 +252,7 @@ export default function RootLayout({
 				<meta name="apple-mobile-web-app-title" content="SopKit" />
 				<meta name="mobile-web-app-capable" content="yes" />
 				<meta name="msapplication-config" content="/browserconfig.xml" />
-				<meta name="msapplication-TileColor" content="#000000" />
+				<meta name="msapplication-TileColor" content="#2563eb" />
 				<meta name="msapplication-tap-highlight" content="no" />
 
 				{/* Robots handled by Next.js metadata API */}

@@ -83,25 +83,25 @@
 
 @layer base {
 	:root {
-		/* Minimalist Clean Palette */
-		--background: 0 0% 99%;
-		--foreground: 240 10% 4%;
+		/* Blue Professional Palette - Rich, Trustworthy, Modern */
+		--background: 225 25% 97%;
+		--foreground: 222 20% 12%;
 		--card: 0 0% 100%;
-		--card-foreground: 240 10% 4%;
+		--card-foreground: 222 20% 12%;
 		--popover: 0 0% 100%;
-		--popover-foreground: 240 10% 4%;
+		--popover-foreground: 222 20% 12%;
 		--primary: 221 83% 53%;
 		--primary-foreground: 0 0% 100%;
-		--secondary: 240 5% 96%;
-		--secondary-foreground: 240 10% 4%;
-		--muted: 240 5% 96%;
-		--muted-foreground: 240 4% 46%;
-		--accent: 221 83% 53% / 0.05;
+		--secondary: 221 40% 94%;
+		--secondary-foreground: 222 20% 12%;
+		--muted: 221 20% 94%;
+		--muted-foreground: 222 12% 48%;
+		--accent: 221 83% 53% / 0.08;
 		--accent-foreground: 221 83% 53%;
 		--destructive: 0 84% 60%;
 		--destructive-foreground: 0 0% 100%;
-		--border: 240 6% 90%;
-		--input: 240 6% 90%;
+		--border: 221 20% 88%;
+		--input: 221 20% 88%;
 		--ring: 221 83% 53%;
 		--radius: 12px;
 
@@ -116,25 +116,25 @@
 	}
 
 	.dark {
-		/* Minimalist Clean Dark Palette */
-		--background: 240 10% 4%;
+		/* Blue Professional Dark Palette */
+		--background: 222 30% 6%;
 		--foreground: 0 0% 98%;
-		--card: 240 10% 6%;
+		--card: 222 28% 8%;
 		--card-foreground: 0 0% 98%;
-		--popover: 240 10% 6%;
+		--popover: 222 28% 8%;
 		--popover-foreground: 0 0% 98%;
 		--primary: 217 91% 60%;
 		--primary-foreground: 0 0% 100%;
-		--secondary: 240 4% 12%;
+		--secondary: 222 20% 16%;
 		--secondary-foreground: 0 0% 98%;
-		--muted: 240 4% 12%;
-		--muted-foreground: 240 5% 65%;
-		--accent: 217 91% 60% / 0.1;
+		--muted: 222 15% 14%;
+		--muted-foreground: 222 10% 62%;
+		--accent: 217 91% 60% / 0.12;
 		--accent-foreground: 217 91% 60%;
 		--destructive: 0 84% 60%;
 		--destructive-foreground: 0 0% 100%;
-		--border: 240 4% 16%;
-		--input: 240 4% 16%;
+		--border: 222 20% 16%;
+		--input: 222 20% 16%;
 		--ring: 217 91% 60%;
 
 		--chart-1: 217 91% 60%;
@@ -185,18 +185,18 @@
 		letter-spacing: -0.022em;
 	}
 
-	.bg-apple-light {
-		background-color: #f0f4f8;
-		color: #1a2a3a;
+		.bg-apple-light {
+		background-color: hsl(221 40% 96%);
+		color: hsl(222 20% 12%);
 	}
 
 	.bg-apple-dark {
-		background-color: #0b132b;
-		color: #e2e8f0;
+		background-color: hsl(222 40% 8%);
+		color: hsl(0 0% 98%);
 	}
 
 	.apple-glass {
-		background-color: rgb(11 19 43 / 0.8);
+		background-color: hsl(222 30% 8% / 0.8);
 		backdrop-filter: saturate(180%) blur(20px);
 	}
 
@@ -205,9 +205,10 @@
 	}
 
 	.bg-gradient-cute {
-		background-image: radial-gradient(circle at 10% 10%, rgb(30 144 255 / 0.22), transparent 40%),
-			radial-gradient(circle at 90% 20%, rgb(0 191 255 / 0.18), transparent 40%),
-			radial-gradient(circle at 50% 100%, rgb(72 61 139 / 0.15), transparent 45%);
+		background-image: 
+			radial-gradient(ellipse 80% 60% at 5% 10%, hsl(221 83% 53% / 0.18), transparent 50%),
+			radial-gradient(ellipse 60% 50% at 95% 15%, hsl(199 89% 48% / 0.15), transparent 50%),
+			radial-gradient(ellipse 70% 60% at 50% 90%, hsl(258 90% 66% / 0.10), transparent 50%);
 	}
 
 	.apple-card-premium {
@@ -218,18 +219,18 @@
 	}
 
 	.apple-card-premium:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 12px 30px -10px rgba(30, 144, 255, 0.15);
+		transform: translateY(-3px);
+		box-shadow: 0 16px 40px -12px hsl(221 83% 53% / 0.25);
 		border-color: hsl(var(--primary) / 0.4);
 	}
 
 	.dark .apple-card-premium:hover {
-		box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(30, 144, 255, 0.1);
+		box-shadow: 0 16px 40px -12px hsl(222 30% 6%), 0 0 20px hsl(217 91% 60% / 0.12);
 		border-color: hsl(var(--primary) / 0.5);
 	}
 
 	.apple-glass-premium {
-		background-color: hsl(var(--background) / 0.75);
+		background-color: hsl(var(--background) / 0.8);
 		backdrop-filter: blur(20px) saturate(190%);
 		border: 1px solid hsl(var(--border));
 	}

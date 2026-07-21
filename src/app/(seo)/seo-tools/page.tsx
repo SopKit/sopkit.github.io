@@ -53,6 +53,22 @@ export default function SEOHub() {
 							</Link>
 						))}
 					</div>
+
+					{/* Rich SEO Content */}
+					<section className="mt-20 max-w-4xl mx-auto space-y-8">
+						<div className="p-8 rounded-2xl border border-border/40 bg-card/30 backdrop-blur-sm">
+							<h2 className="text-2xl font-bold tracking-tight mb-4">Free Online SEO Tools — Analyze, Audit & Optimize Your Website</h2>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								SopKit's SEO tools help you analyze, audit, and optimize your website for better search engine rankings — all 100% free and processed entirely in your browser. Unlike other SEO toolkits that upload your website data to their servers, every tool here runs client-side, keeping your search strategies and site data completely private.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								From checking meta tags and Open Graph previews to generating sitemaps and auditing technical SEO, our suite covers the essential on-page optimization tasks that drive organic traffic. Use the backlink checker to monitor your link profile, the keyword research tool to discover ranking opportunities, and the Google cache checker to verify indexing status.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed">
+								All tools are free to use with no registration, no usage limits, and no data collection. Perfect for SEO professionals, bloggers, small business owners, and anyone looking to improve their search visibility without compromising their privacy.
+							</p>
+						</div>
+					</section>
 				</div>
 			</main>
 		</div>

@@ -82,6 +82,7 @@ export default function PackagesPage() {
 
 	return (
 		<div className="min-h-screen bg-background flex flex-col font-sans relative overflow-hidden">
+			<link rel="canonical" href="https://sopkit.github.io/packages/" />
 			<main className="flex-1 relative z-10">
 				<GridPattern className="opacity-[0.03]" />
 

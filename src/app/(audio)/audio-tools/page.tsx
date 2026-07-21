@@ -58,6 +58,22 @@ export default function AudioHub() {
 							</Link>
 						))}
 					</div>
+
+					{/* Rich SEO Content */}
+					<section className="mt-20 max-w-4xl mx-auto space-y-8">
+						<div className="p-8 rounded-2xl border border-border/40 bg-card/30 backdrop-blur-sm">
+							<h2 className="text-2xl font-bold tracking-tight mb-4">Free Online Audio Tools — Edit, Convert & Enhance Audio Files</h2>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								SopKit's audio toolkit lets you edit, convert, and enhance audio files directly in your browser — with zero uploads to any server. Use the 10-band graphic equalizer to fine-tune frequencies, join multiple audio clips into seamless tracks, convert text to natural-sounding speech, or tune your guitar with the built-in chromatic tuner.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								All audio processing leverages the Web Audio API for real-time, high-fidelity sound manipulation. Unlike online audio editors that require file uploads to their servers, SopKit processes everything locally — your audio files never leave your device. This means faster processing, unlimited file sizes (limited only by your browser's memory), and complete privacy.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed">
+								Perfect for podcasters, musicians, content creators, and anyone who needs quick audio adjustments without installing heavy software or sharing their files with third-party services. Free, private, and no registration needed.
+							</p>
+						</div>
+					</section>
 				</div>
 			</main>
 		</div>

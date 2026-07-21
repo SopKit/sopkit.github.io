@@ -53,6 +53,22 @@ export default function TextHub() {
 							</Link>
 						))}
 					</div>
+
+					{/* Rich SEO Content */}
+					<section className="mt-20 max-w-4xl mx-auto space-y-8">
+						<div className="p-8 rounded-2xl border border-border/40 bg-card/30 backdrop-blur-sm">
+							<h2 className="text-2xl font-bold tracking-tight mb-4">Free Online Text Tools — Transform, Analyze & Format Text Instantly</h2>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								SopKit's text tools provide 35+ utilities for transforming, analyzing, and formatting text — all processed 100% client-side in your browser. From word counters and case converters to Markdown editors, Lorem Ipsum generators, and legacy Devanagari converters, every tool keeps your data private and secure.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								Need to compare two documents, remove duplicate lines, sort text alphabetically, or convert between Kruti Dev and Unicode Hindi scripts? Our text manipulation suite handles it all. Use the word frequency counter for content analysis, the text-to-handwriting converter for creative projects, or the fancy text generator for social media posts.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed">
+								Unlike online text tools that send your content to external servers, SopKit processes everything locally in your browser. Your text never leaves your device. Free, private, and no registration required.
+							</p>
+						</div>
+					</section>
 				</div>
 			</main>
 		</div>

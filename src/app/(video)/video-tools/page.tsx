@@ -48,6 +48,22 @@ export default function VideoToolsHub() {
 							</Link>
 						))}
 					</div>
+
+					{/* Rich SEO Content */}
+					<section className="mt-20 max-w-4xl mx-auto space-y-8">
+						<div className="p-8 rounded-2xl border border-border/40 bg-card/30 backdrop-blur-sm">
+							<h2 className="text-2xl font-bold tracking-tight mb-4">Free Online Video Tools — Convert, Edit & Download Videos Privately</h2>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								SopKit's video tools let you convert, edit, and summarize video content entirely in your browser. Convert between MP4, WebM, AVI, and other formats using the built-in video converter, or use the AI Video Summarizer to extract key points from YouTube lectures and meeting recordings.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								All video processing uses browser-based APIs (Canvas, MediaRecorder) to handle conversion and editing locally. Unlike competing video tools that upload your files to their servers for processing — where they can be logged, analyzed, or used for training — SopKit ensures your videos never leave your device.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed">
+								Free to use with no registration, no upload limits, and no watermarks. Perfect for content creators, marketers, educators, and anyone who needs quick video processing without compromising their privacy.
+							</p>
+						</div>
+					</section>
 				</div>
 			</main>
 		</div>

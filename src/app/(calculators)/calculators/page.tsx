@@ -49,6 +49,22 @@ export default function CalculatorsHub() {
 							</Link>
 						))}
 					</div>
+
+					{/* Rich SEO Content */}
+					<section className="mt-20 max-w-4xl mx-auto space-y-8">
+						<div className="p-8 rounded-2xl border border-border/40 bg-card/30 backdrop-blur-sm">
+							<h2 className="text-2xl font-bold tracking-tight mb-4">Free Online Calculators — Finance, Health, Academic & Construction Tools</h2>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								SopKit's calculator collection covers 40+ essential calculators for finance, health, academics, construction, and everyday life. From EMI and SIP calculators for investment planning to BMI, BMR, and TDEE calculators for health tracking — every calculation runs 100% client-side in your browser with zero data uploads.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								Academic calculators help students convert CGPA to percentage, calculate attendance shortages, determine required marks, and estimate graduation grades. Financial tools cover compound interest, loan eligibility, rental affordability, GST, income tax, and more. Construction calculators handle brick, paint, and tile estimates for home improvement projects.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed">
+								All calculators are free with no registration, no usage limits, and no data storage. Your personal and financial data stays on your device — we never see or store your inputs.
+							</p>
+						</div>
+					</section>
 				</div>
 			</main>
 		</div>

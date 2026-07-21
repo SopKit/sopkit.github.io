@@ -51,6 +51,22 @@ export default function GeneratorsHub() {
 							</Link>
 						))}
 					</div>
+
+					{/* Rich SEO Content */}
+					<section className="mt-20 max-w-4xl mx-auto space-y-8">
+						<div className="p-8 rounded-2xl border border-border/40 bg-card/30 backdrop-blur-sm">
+							<h2 className="text-2xl font-bold tracking-tight mb-4">Free Online Generators — AI Content, Memes, Bios & Creative Tools</h2>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								SopKit's generator collection brings together 30+ creative tools for generating AI images, music, voiceovers, memes, social media bios, color palettes, pixel art, and more. Every generator runs 100% client-side in your browser using Canvas API, Web Audio API, and JavaScript — no data leaves your device.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed mb-4">
+								Create stunning AI-generated images from text prompts, compose royalty-free music with AI, convert text to natural-sounding speech, or generate professional Instagram bios with custom fonts. Our meme generator lets you add classic meme text to images, while the color palette generator creates harmonious schemes for your design projects.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed">
+								Unlike competitor generators that upload your prompts and uploads to their servers (often for AI training), SopKit processes everything locally. Your ideas, images, and generated content are yours alone. Free, private, and no registration required.
+							</p>
+						</div>
+					</section>
 				</div>
 			</main>
 		</div>
