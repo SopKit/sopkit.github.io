@@ -144,7 +144,9 @@ export default function ToolLayout({
 		enrichedTool.article = manualContent.whatItIs;
 		enrichedTool.features = manualContent.features;
 		enrichedTool.howTo = manualContent.howToUse;
-		enrichedTool.faqs = manualContent.faqs;
+		enrichedTool.faqs = (manualContent.faqs && manualContent.faqs.length > 0 && !manualContent.faqs[0]?.question?.startsWith("What exactly does"))
+			? manualContent.faqs
+			: (tool.faqs && tool.faqs.length > 0 ? tool.faqs : manualContent.faqs);
 		enrichedTool.description = manualContent.seoDescription || enrichedTool.description;
 	}
 

@@ -15,6 +15,7 @@ import { readFileSync, writeFileSync } from "fs";
 
 const MIN_DESC = 100;
 const json = JSON.parse(readFileSync("src/constants/tools.json", "utf8"));
+const toolFaqs = JSON.parse(readFileSync("src/data/tool-faqs.json", "utf8"));
 const categories = json.categories || {};
 const tools = Object.values(categories).flatMap((c) => c.tools || []);
 
@@ -34,7 +35,8 @@ for (const t of tools) {
 			descSeen.set(key, route);
 		}
 	}
-	if (!t.faqs || t.faqs.length === 0) {
+	const faqs = toolFaqs[t.id] || t.faqs || [];
+	if (!faqs || faqs.length === 0) {
 		issues.push({ route, type: "no-faqs", detail: "no FAQ schema/visible FAQs" });
 	}
 	if (!t.seoTitle) issues.push({ route, type: "missing-seoTitle", detail: "no seoTitle" });
