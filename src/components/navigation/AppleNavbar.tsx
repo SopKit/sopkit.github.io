@@ -171,9 +171,12 @@ export function AppleNavbar() {
 			<div className="container mx-auto h-full flex items-center justify-between px-4 max-w-7xl">
 				{/* Left side */}
 				<div className="flex items-center gap-6">
-					<Link href={STATIC_ROUTES.HOME} className="flex items-center gap-2">
-						<span className="text-lg font-bold tracking-tight text-foreground hover:opacity-85 transition-opacity">
-							SopKit
+					<Link href={STATIC_ROUTES.HOME} className="flex items-center gap-2 group">
+						<div className="w-7 h-7 rounded-lg bg-blue-600 dark:bg-blue-500 flex items-center justify-center text-white font-black text-sm shadow-sm shadow-blue-500/30 group-hover:scale-105 transition-transform">
+							S
+						</div>
+						<span className="text-lg font-bold tracking-tight text-foreground group-hover:opacity-90 transition-opacity">
+							Sop<span className="text-blue-600 dark:text-blue-400">Kit</span>
 						</span>
 					</Link>
 
@@ -182,7 +185,7 @@ export function AppleNavbar() {
 							<Link
 								key={link.name}
 								href={link.href}
-								className="text-[11px] font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors"
+								className="text-[11px] font-medium tracking-wide text-muted-foreground hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
 							>
 								{link.name}
 							</Link>

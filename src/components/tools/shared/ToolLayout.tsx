@@ -195,7 +195,9 @@ export default function ToolLayout({
 	}
 
 	return (
-		<div className="min-h-screen bg-background text-foreground selection:bg-primary/20 ambient-glow">
+		<div className="min-h-screen bg-background text-foreground selection:bg-blue-500/30 relative overflow-hidden">
+			{/* Top Blue Ambient Radial Blur */}
+			<div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-blue-500/10 dark:bg-blue-500/15 blur-[120px] pointer-events-none -z-10 rounded-full" />
 			<StructuredData tool={enrichedTool} />
 			<div className="container mx-auto px-4 pt-4">
 				<Suspense fallback={<div className="h-6 w-64 bg-muted/20 animate-pulse rounded" />}>
@@ -208,7 +210,7 @@ export default function ToolLayout({
 
 			<main className="container mx-auto px-4 py-4 md:py-6 max-w-6xl space-y-8">
 				<section className="text-center space-y-3 max-w-4xl mx-auto animate-in pt-1">
-					<h1 className="text-3xl md:text-5xl font-black tracking-tight leading-none bg-gradient-to-b from-foreground to-foreground/70">
+					<h1 className="text-3xl md:text-5xl font-black tracking-tight leading-none bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 dark:from-blue-400 dark:via-sky-400 dark:to-blue-300 bg-clip-text text-transparent">
 						{enrichedTool.name}
 					</h1>
 					<p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl mx-auto">

@@ -143,13 +143,13 @@ export default async function LandingPage() {
 							<Link
 								key={cat.name}
 								href={cat.href}
-								className="group p-6 bg-card border border-border/50 rounded-xl hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300 no-underline"
+								className="group p-6 bg-card border border-border/50 rounded-xl hover:shadow-[0_8px_30px_rgb(37,99,235,0.08)] dark:hover:shadow-[0_8px_30px_rgb(59,130,246,0.12)] hover:border-blue-500/40 transition-all duration-300 no-underline"
 							>
 								<div className="flex items-center gap-3 mb-3">
-									<div className="p-2.5 bg-secondary text-foreground rounded-lg">
+									<div className="p-2.5 bg-blue-500/10 dark:bg-blue-400/10 text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white dark:group-hover:bg-blue-500 rounded-lg transition-all duration-300">
 										{cat.icon}
 									</div>
-									<h3 className="text-lg font-bold group-hover:text-primary transition-colors">
+									<h3 className="text-lg font-bold group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
 										{cat.name}
 									</h3>
 								</div>

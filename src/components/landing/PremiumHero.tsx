@@ -67,13 +67,19 @@ export function PremiumHero({ title, subtitle = "" }) {
 		<div className="relative pt-12 pb-8 md:pt-20 md:pb-12 overflow-hidden flex flex-col justify-center items-center">
 			{/* Background Ambient Glow */}
 			<div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 pointer-events-none">
-				<div className="absolute top-0 left-[-10%] w-[35%] h-[35%] bg-primary/5 blur-[100px] rounded-none" />
-				<div className="absolute bottom-0 right-[-10%] w-[35%] h-[35%] bg-secondary/5 blur-[100px] rounded-none" />
+				<div className="absolute top-[-10%] left-[-10%] w-[50%] h-[60%] bg-blue-500/15 dark:bg-blue-500/20 blur-[130px] rounded-full" />
+				<div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[60%] bg-sky-500/15 dark:bg-sky-500/20 blur-[130px] rounded-full" />
 			</div>
 
 			<div className="w-full max-w-3xl mx-auto text-center px-4">
 				<h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-foreground mb-8 leading-[1.1]">
-					{title}
+					{title.includes("—") ? (
+						<>
+							{title.split("—")[0]} — <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 dark:from-blue-400 dark:via-sky-400 dark:to-blue-300 bg-clip-text text-transparent">{title.split("—")[1]}</span>
+						</>
+					) : (
+						title
+					)}
 				</h1>
 				{subtitle && (
 					<p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -86,13 +92,13 @@ export function PremiumHero({ title, subtitle = "" }) {
  					onSubmit={handleSearch}
  					className="relative w-full max-w-2xl mx-auto group animate-fade-in"
  				>
-					<div className="relative flex items-center shadow-sm border border-zinc-200 dark:border-zinc-800 rounded-xl bg-card overflow-hidden transition-all duration-200 hover:border-zinc-300 dark:hover:border-zinc-700 focus-within:border-zinc-400 dark:focus-within:border-zinc-650">
- 						<Search className="absolute left-6 h-5 w-5 text-muted-foreground transition-colors" />
+					<div className="relative flex items-center shadow-md shadow-blue-500/5 border border-blue-500/20 dark:border-blue-500/30 rounded-xl bg-card overflow-hidden transition-all duration-200 hover:border-blue-500/40 focus-within:border-blue-500 dark:focus-within:border-blue-400">
+ 						<Search className="absolute left-6 h-5 w-5 text-blue-600 dark:text-blue-400 transition-colors" />
  						<Input
  							ref={inputRef}
  							type="text"
  							placeholder="Search for any tool (e.g. 'compress image', 'pdf', 'youtube')...."
-							className="h-16 pl-16 pr-32 bg-transparent border-none text-base focus-visible:ring-0 focus-visible:ring-offset-0 transition-all placeholder:text-muted-foreground/40 w-full"
+							className="h-16 pl-16 pr-32 bg-transparent border-none text-base focus-visible:ring-0 focus-visible:ring-offset-0 transition-all placeholder:text-muted-foreground/50 w-full"
  							value={query}
  							onChange={(e) => {
  								setQuery(e.target.value);
@@ -103,7 +109,7 @@ export function PremiumHero({ title, subtitle = "" }) {
  						/>
  						<Button
  							type="submit"
-							className="absolute right-2 h-12 px-6 rounded-lg bg-zinc-900 dark:bg-zinc-100 hover:bg-zinc-800 dark:hover:bg-zinc-200 text-zinc-50 dark:text-zinc-900 font-semibold transition-all"
+							className="absolute right-2 h-12 px-6 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold shadow-md shadow-blue-500/25 transition-all"
  						>
  							Find Tool
  						</Button>
