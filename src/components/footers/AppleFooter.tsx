@@ -100,23 +100,28 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 						</ul>
 					</div>
 
-					{/* Featured & Open Source */}
+					{/* Sponsors & Startups */}
 					<div>
-						<h4 className="text-xs font-semibold tracking-wider uppercase text-muted-foreground/80 mb-3">Community</h4>
+						<h4 className="text-xs font-semibold tracking-wider uppercase text-muted-foreground/80 mb-3">Sponsors & Startups</h4>
 						<ul className="space-y-2 text-xs">
 							<li>
-								<a href={SITE_CONFIG.githubRepoUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
-									GitHub Repository <ArrowUpRight className="h-3 w-3 opacity-60" />
+								<a href="https://campusloop.space/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 font-medium">
+									CampusLoop <ArrowUpRight className="h-3 w-3 opacity-60" />
 								</a>
 							</li>
-							{/* <li>
-								<a href="https://wify.my/" target="_blank" rel="noopener noreferrer nofollow" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
-									Wify.my <ArrowUpRight className="h-3 w-3 opacity-60" />
+							<li>
+								<a href="http://debo.life/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 font-medium">
+									Debo.life <ArrowUpRight className="h-3 w-3 opacity-60" />
 								</a>
-							</li> */}
+							</li>
 							<li>
 								<a href="https://linespedia.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
 									Linespedia <ArrowUpRight className="h-3 w-3 opacity-60" />
+								</a>
+							</li>
+							<li>
+								<a href={SITE_CONFIG.githubRepoUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
+									GitHub Repository <ArrowUpRight className="h-3 w-3 opacity-60" />
 								</a>
 							</li>
 						</ul>
