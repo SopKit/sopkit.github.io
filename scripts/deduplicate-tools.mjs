@@ -18,7 +18,7 @@ for (const [catKey, category] of Object.entries(toolsData.categories)) {
   for (const tool of tools) {
     if (globalSeen.has(tool.id)) {
       const existing = globalSeen.get(tool.id);
-      console.log(`Global Merge duplicate tool: ${tool.id} (Categories: ${existing.category} & ${catKey})`);
+      console.log(`Global Merge duplicate tool: ${tool.id} (Categories: ${existing._category} & ${catKey})`);
 
       // Merge extraSlugs
       const combinedSlugs = new Set([
@@ -53,6 +53,7 @@ for (const [catKey, category] of Object.entries(toolsData.categories)) {
         existing.description = tool.description;
       }
     } else {
+      tool._category = catKey;
       globalSeen.set(tool.id, tool);
     }
   }
@@ -65,17 +66,11 @@ for (const [catKey, category] of Object.entries(toolsData.categories)) {
   const categoryTools = category.tools || [];
 
   for (const tool of categoryTools) {
-    // Only keep if this is the instance stored in globalSeen map
-    // (This guarantees exactly one global instance of the tool)
     const storedTool = globalSeen.get(tool.id);
-    if (storedTool && storedTool.category === catKey) {
-      cleanTools.push(storedTool);
-    } else if (storedTool && !cleanTools.some(t => t.id === tool.id)) {
-      // If the category field matches, or if we want to retain its original position
-      // Let's make sure it is in the clean list of the category it is registered to
-      if (storedTool.category === catKey) {
-        cleanTools.push(storedTool);
-      }
+    if (storedTool && storedTool._category === catKey) {
+      const toolToSave = { ...storedTool };
+      delete toolToSave._category;
+      cleanTools.push(toolToSave);
     }
   }
 
