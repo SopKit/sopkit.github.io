@@ -2,17 +2,24 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Info, Layers, Wrench } from "lucide-react";
+import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
+import {
+	ToolFeatures,
+	ToolSteps,
+	ToolFAQ,
+	ToolTrust,
+} from "@/components/tools/shared/ToolSharedComponents";
 
 export const metadata = {
-	title: "Free Newly Added Tools Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free Newly Added Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
-	keywords: "newly added tools, free online tool, no signup, newly added tools online, others, SopKit",
+	title: "New Tools & Updates — Latest Free Online Tools Added | SopKit",
+	description: "Discover the newest free online tools added to SopKit's library. Track release updates, from embed widgets and API testers to calculators, YouTube utilities, and more. 100% client-side, private, free forever.",
+	keywords: "new online tools, free tools added, latest online utilities, new browser tools, sopkit updates, free online toolkit, newly added web tools",
 	alternates: {
 		canonical: "https://sopkit.github.io/new-tools",
 	},
 	openGraph: {
-		title: "Free Newly Added Tools Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Newly Added Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
+		title: "New Tools & Updates — Latest Free Online Tools Added | SopKit",
+		description: "Discover the newest free online tools added to SopKit's library. Track release updates — from embed widgets and API testers to calculators and YouTube utilities. 100% client-side, no data uploads.",
 		url: "https://sopkit.github.io/new-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +27,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Newly Added Tools Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Newly Added Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
+		title: "New Tools & Updates — Latest Free Online Tools Added | SopKit",
+		description: "Discover the newest free online tools added to SopKit's library. Track release updates — from embed widgets and API testers to calculators and YouTube utilities. 100% client-side, no data uploads.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -30,11 +37,13 @@ export const metadata = {
 export default async function NewToolsPage() {
 	const tool = {
 		id: "new-tools",
-		name: "Newly Added Tools & Updates",
-		description: "Track newly added tools, release updates, and codebase expansion history of SopKit.",
+		name: "New Tools & Updates — Latest Free Online Tools",
+		description: "Track newly added tools, release updates, and codebase expansion history of SopKit's growing library of 600+ free online tools.",
 		route: "/new-tools",
 		category: "company",
 	};
+
+	const manualContent = MANUAL_TOOL_CONTENT["new-tools"];
 
 	const updates = [
 		{
@@ -84,7 +93,12 @@ export default async function NewToolsPage() {
 	];
 
 	return (
-		<ToolLayout breadcrumbs={[]} tool={tool}>
+		<ToolLayout
+			breadcrumbs={[
+				{ name: "New Tools & Updates", url: "/new-tools", isLast: true },
+			]}
+			tool={tool}
+		>
 			<div className="space-y-8">
 				<div className="text-center max-w-2xl mx-auto space-y-2">
 					<p className="text-sm text-muted-foreground">
@@ -141,6 +155,78 @@ export default async function NewToolsPage() {
 							</CardContent>
 						</Card>
 					))}
+				</div>
+
+				{/* Rich SEO Content: Article from manual content */}
+				{manualContent?.whatItIs && (
+					<section className="scroll-mt-24 max-w-4xl mx-auto">
+						<div className="space-y-8">
+							{manualContent.whatItIs.split("\n").map((line, i) => {
+								if (line.startsWith("## ")) {
+									return (
+										<h2
+											key={i}
+											className="text-3xl md:text-5xl font-extrabold tracking-tight mt-16 mb-8 text-foreground"
+										>
+											{line.replace("## ", "")}
+										</h2>
+									);
+								}
+								if (line.startsWith("### ")) {
+									return (
+										<h3
+											key={i}
+											className="text-2xl md:text-3xl font-bold tracking-tight mt-12 mb-6 text-foreground/90"
+										>
+											{line.replace("### ", "")}
+										</h3>
+									);
+								}
+								if (line.startsWith("- ")) {
+									return (
+										<li
+											key={i}
+											className="text-lg text-muted-foreground ml-6 list-disc"
+										>
+											{line.replace("- ", "")}
+										</li>
+									);
+								}
+								if (line.trim() === "") return <div key={i} className="h-4" />;
+								return (
+									<p
+										key={i}
+										className="text-xl text-muted-foreground leading-relaxed whitespace-pre-line"
+									>
+										{line}
+									</p>
+								);
+							})}
+						</div>
+					</section>
+				)}
+
+				{/* Features from manual content */}
+				{manualContent?.features && (
+					<ToolFeatures features={manualContent.features} />
+				)}
+
+				{/* How-to steps from manual content */}
+				{manualContent?.howTo && (
+					<ToolSteps
+						steps={manualContent.howTo.steps}
+						toolName={tool.name}
+					/>
+				)}
+
+				{/* FAQ from manual content */}
+				{manualContent?.faqs && (
+					<ToolFAQ faqs={manualContent.faqs} toolName={tool.name} />
+				)}
+
+				{/* Trust indicators */}
+				<div className="pt-8">
+					<ToolTrust />
 				</div>
 			</div>
 		</ToolLayout>

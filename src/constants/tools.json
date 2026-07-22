@@ -45,8 +45,8 @@
           "description": "Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage.",
           "route": "/qr-code-reader",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side QR Code Reader online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
-          "seoTitle": "QR Code Reader — Scan and decode QR codes from images | SopKit"
+          "seoDescription": "Free QR Code Reader online: scan and decode QR codes from image files or live camera streams securely in your browser. 100% private, no server uploads.",
+          "seoTitle": "Free QR Code Reader Online — Scan & Decode QR Codes Privately"
         },
         {
           "id": "bio-generator",
@@ -54,8 +54,8 @@
           "description": "Create professional and aesthetic bios for social media profiles.",
           "route": "/bio-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Bio Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
-          "seoTitle": "Bio Generator — Create professional and aesthetic bios for social | SopKit"
+          "seoDescription": "Free Bio Generator online: create aesthetic, catchy social media bios for Instagram, Twitter/X, and LinkedIn. Works 100% in your browser, no signup needed.",
+          "seoTitle": "Free Bio Generator Online — Create Aesthetic Social Media Bios"
         },
         {
           "id": "business-name-generator",
@@ -63,8 +63,8 @@
           "description": "Generate creative and catchy business name ideas for your brand, startup, or company. Free online business name generator with AI-powered suggestions — all client-side, no signup required.",
           "route": "/business-name-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Business Name Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
-          "seoTitle": "Free Business Name Generator — Creative Brand Name Ideas Online | SopKit"
+          "seoDescription": "Free Business Name Generator online: generate creative brand and startup name ideas instantly. 100% private browser processing with zero signups required.",
+          "seoTitle": "Free Business Name Generator Online — Generate Creative Startup Brand Names"
         },
         {
           "id": "ai-poem-generator",
@@ -81,8 +81,8 @@
           "description": "Create realistic-looking fake chat screenshots for WhatsApp, Discord, and iMessage.",
           "route": "/fake-chat-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Fake Chat Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
-          "seoTitle": "Fake Chat Generator — Create realistic-looking fake chat screenshots for WhatsApp | SopKit"
+          "seoDescription": "Free Fake Chat Generator online: create realistic mock conversation screenshots for WhatsApp, Discord, and iMessage. Private client-side image rendering.",
+          "seoTitle": "Free Fake Chat Generator Online — Create Mock Screenshots for WhatsApp & iMessage"
         },
         {
           "id": "excuse-generator",
@@ -123,8 +123,8 @@
           "description": "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
           "route": "/rent-receipt-generator",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side Rent Receipt Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
-          "seoTitle": "Rent Receipt Generator — Generate HRA-compliant rent receipts online for free | SopKit"
+          "seoDescription": "Free Rent Receipt Generator online: create HRA-compliant receipts with landlord PAN for Income Tax claims. Instant PDF export, 100% private & client-side.",
+          "seoTitle": "Free Rent Receipt Generator Online — Download HRA Rent Receipts PDF"
         },
         {
           "id": "simple-invoice-generator",
@@ -132,8 +132,8 @@
           "description": "Create and print professional billing invoices online. Add custom line items, tax, discount details, and generate print-ready PDF layouts instantly.",
           "route": "/simple-invoice-generator",
           "popular": true,
-          "seoDescription": "Privacy-friendly, 100% client-side Simple Invoice Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
-          "seoTitle": "Simple Invoice Generator — Create and print professional billing invoices online | SopKit"
+          "seoDescription": "Free Simple Invoice Generator online: create itemized client invoices with tax calculations and instant PDF printing. 100% private browser billing tool.",
+          "seoTitle": "Free Simple Invoice Generator Online — Create & Print Invoices PDF"
         },
         {
           "id": "leave-application-generator",
@@ -141,8 +141,8 @@
           "description": "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.",
           "route": "/leave-application-generator",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Leave Application Generator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
-          "seoTitle": "Leave Application Generator — Draft professional leave applications for office, school | SopKit"
+          "seoDescription": "Free Leave Application Generator online: draft formal leave requests for office, school, or college. Instant copy and PDF export, 100% private.",
+          "seoTitle": "Free Leave Application Generator Online — Draft Office & College Leave Letters"
         },
         {
           "id": "resignation-letter-generator",
@@ -467,8 +467,8 @@
           "description": "Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online government exam forms. Free online photo resizer that processes everything in your browser with no uploads.",
           "route": "/aadhaar-pan-photo-resizer",
           "popular": false,
-          "seoDescription": "Privacy-friendly, 100% client-side Aadhaar and PAN Card Photo Resizer online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
-          "seoTitle": "Free Aadhaar & PAN Photo Resizer — Resize for KYC & Government Forms | SopKit"
+          "seoDescription": "Free Aadhaar & PAN Card Photo Resizer online: resize photos to 213x213 and signatures under 20KB for NSDL & UIDAI portals. 100% private browser processing.",
+          "seoTitle": "Free Aadhaar & PAN Photo Resizer Online — Resize Photos & Signatures Privately"
         },
         {
           "id": "background-remover",
@@ -3459,13 +3459,13 @@
       "tools": [
         {
           "id": "adsense-calculator",
-          "name": "Adsense Calculator",
-          "description": "Free adsense calculator tool to process your data instantly with privacy-friendly browser-based workflows.",
+          "name": "AdSense Calculator",
+          "description": "Calculate estimated Google AdSense earnings based on page views, CTR, and RPM/CPC rates instantly in your browser.",
           "route": "/adsense-calculator",
           "popular": false,
-          "title": "Adsense Calculator - Free Online Tool",
-          "seoDescription": "Privacy-friendly, 100% client-side Adsense Calculator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
-          "seoTitle": "Adsense Calculator — Free adsense calculator tool to process your | SopKit"
+          "title": "AdSense Calculator - Free Online Tool",
+          "seoDescription": "Free AdSense Calculator online: estimate daily, monthly, and yearly website ad revenue from page views, CTR, and RPM. 100% private browser processing.",
+          "seoTitle": "Free AdSense Calculator Online — Estimate Website Ad Revenue & RPM"
         },
         {
           "id": "age-calculator",
@@ -4861,8 +4861,8 @@
           "route": "/75-attendance-calculator",
           "popular": true,
           "title": "75% Attendance Calculator - Free Online Tool",
-          "seoDescription": "Privacy-friendly, 100% client-side 75% Attendance Calculator online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
-          "seoTitle": "75% Attendance Calculator — Calculate how many classes you need to | SopKit"
+          "seoDescription": "Free 75% Attendance Calculator online: calculate safe classes to bunk or mandatory lectures needed to hit 75% college attendance. 100% private & instant.",
+          "seoTitle": "Free 75% Attendance Calculator Online — Calculate Safe Bunks & Attendance Targets"
         },
         {
           "id": "sgpa-calculator",
