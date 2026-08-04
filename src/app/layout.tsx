@@ -283,43 +283,45 @@ export default function RootLayout({
 					href="/feed.xml"
 				/>
 
-				{/* Global JSON-LD Structured Data: WebSite + Organization */}
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify({
-							"@context": "https://schema.org",
-							"@type": "WebSite",
-							name: "SopKit",
-							url: `${SITE_URL}/`,
-							description: "460+ free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
-							potentialAction: {
-								"@type": "SearchAction",
-								target: {
-									"@type": "EntryPoint",
-									urlTemplate: `${SITE_URL}/search/?q={search_term_string}`,
-								},
-								"query-input": "required name=search_term_string",
+			{/* Global JSON-LD Structured Data: WebSite + Organization */}
+			<Script
+				id="jsonld-website"
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "WebSite",
+						name: "SopKit",
+						url: `${SITE_URL}/`,
+						description: "460+ free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
+						potentialAction: {
+							"@type": "SearchAction",
+							target: {
+								"@type": "EntryPoint",
+								urlTemplate: `${SITE_URL}/search/?q={search_term_string}`,
 							},
-						}),
-					}}
-				/>
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify({
-							"@context": "https://schema.org",
-							"@type": "Organization",
-							name: "SopKit",
-							url: `${SITE_URL}/`,
-							logo: `${SITE_URL}/favicon.ico`,
-							sameAs: [
-								"https://github.com/SopKit/sopkit.github.io",
-							],
-							description: "Privacy-first free online toolkit with 460+ browser-based tools.",
-						}),
-					}}
-				/>
+							"query-input": "required name=search_term_string",
+						},
+					}),
+				}}
+			/>
+			<Script
+				id="jsonld-organization"
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "Organization",
+						name: "SopKit",
+						url: `${SITE_URL}/`,
+						logo: `${SITE_URL}/favicon.ico`,
+						sameAs: [
+							"https://github.com/SopKit/sopkit.github.io",
+						],
+						description: "Privacy-first free online toolkit with 460+ browser-based tools.",
+					}),
+				}}
+			/>
 
 				<Script
 					src="https://www.googletagmanager.com/gtag/js?id=G-HKX99R92SE"
