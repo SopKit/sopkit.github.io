@@ -118,16 +118,16 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 				variant="outline"
 				size="sm"
 				onClick={handleShare}
-				className="h-8 text-xs gap-1.5 rounded-full"
+				className="h-8 text-xs gap-1.5 rounded-full border-border/60 hover:border-blue-500/40 hover:bg-blue-500/5 transition-all shadow-sm"
 			>
 				{shareCopied ? (
 					<>
 						<Check className="h-3.5 w-3.5 text-emerald-500" />
-						<span>Copied Link</span>
+						<span className="font-semibold text-emerald-600 dark:text-emerald-400">Copied Link</span>
 					</>
 				) : (
 					<>
-						<Share2 className="h-3.5 w-3.5 text-primary" />
+						<Share2 className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
 						<span>Share Tool</span>
 					</>
 				)}
@@ -137,16 +137,16 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 				variant="outline"
 				size="sm"
 				onClick={handleCopyState}
-				className="h-8 text-xs gap-1.5 rounded-full"
+				className="h-8 text-xs gap-1.5 rounded-full border-border/60 hover:border-blue-500/40 hover:bg-blue-500/5 transition-all shadow-sm"
 			>
 				{stateCopied ? (
 					<>
 						<Check className="h-3.5 w-3.5 text-emerald-500" />
-						<span>State Link Copied</span>
+						<span className="font-semibold text-emerald-600 dark:text-emerald-400">State Link Copied</span>
 					</>
 				) : (
 					<>
-						<LinkIcon className="h-3.5 w-3.5 text-primary" />
+						<LinkIcon className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
 						<span>Copy Link with Inputs</span>
 					</>
 				)}
@@ -156,9 +156,9 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 				variant="outline"
 				size="sm"
 				onClick={handleScrollToEmbed}
-				className="h-8 text-xs gap-1.5 rounded-full"
+				className="h-8 text-xs gap-1.5 rounded-full border-border/60 hover:border-blue-500/40 hover:bg-blue-500/5 transition-all shadow-sm"
 			>
-				<Code className="h-3.5 w-3.5 text-primary" />
+				<Code className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
 				<span>Embed Tool</span>
 			</Button>
 
@@ -166,9 +166,9 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 				variant="outline"
 				size="sm"
 				onClick={handleBookmark}
-				className="h-8 text-xs gap-1.5 rounded-full"
+				className="h-8 text-xs gap-1.5 rounded-full border-border/60 hover:border-blue-500/40 hover:bg-blue-500/5 transition-all shadow-sm"
 			>
-				<Bookmark className="h-3.5 w-3.5 text-primary" />
+				<Bookmark className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
 				<span>Bookmark</span>
 			</Button>
 
@@ -177,10 +177,10 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 					variant="outline"
 					size="sm"
 					onClick={handleInstallApp}
-					className="h-8 text-xs gap-1.5 rounded-full bg-primary/10 border-primary/20 hover:bg-primary/20 text-primary"
+					className="h-8 text-xs gap-1.5 rounded-full bg-blue-500/10 border-blue-500/30 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 transition-all shadow-sm"
 				>
-					<Download className="h-3.5 w-3.5 text-primary" />
-					<span>Install App</span>
+					<Download className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
+					<span className="font-semibold">Install App</span>
 				</Button>
 			)}
 		</div>

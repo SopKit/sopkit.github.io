@@ -64,12 +64,12 @@ export function SocialShare({ url, title, description, className = "" }: SocialS
 				variant="outline"
 				size="sm"
 				onClick={handleCopy}
-				className="rounded-none border-border/40"
+				className="rounded-xl border-border/60 hover:border-blue-500/40 hover:bg-blue-500/5 transition-all shadow-sm text-xs font-semibold"
 			>
 				{copied ? (
-					<CheckCircle2 className="h-4 w-4 mr-2 text-primary" />
+					<CheckCircle2 className="h-3.5 w-3.5 mr-1.5 text-emerald-500" />
 				) : (
-					<Copy className="h-4 w-4 mr-2" />
+					<Copy className="h-3.5 w-3.5 mr-1.5 text-blue-600 dark:text-blue-400" />
 				)}
 				{copied ? "Copied" : "Copy Link"}
 			</Button>
@@ -77,9 +77,9 @@ export function SocialShare({ url, title, description, className = "" }: SocialS
 				variant="default"
 				size="sm"
 				onClick={handleShare}
-				className="rounded-none"
+				className="rounded-xl bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold text-xs shadow-md shadow-blue-500/20"
 			>
-				<Share2 className="h-4 w-4 mr-2" />
+				<Share2 className="h-3.5 w-3.5 mr-1.5" />
 				Share
 			</Button>
 		</div>
@@ -112,61 +112,63 @@ export function RelatedTools({
 	}
 
 	return (
-		<Card className="rounded-none border-t-4 border-t-primary shadow-2xl">
-			<CardHeader>
-				<CardTitle className="flex items-center gap-2 text-2xl font-black italic uppercase tracking-tighter">
-					<TrendingUp className="h-6 w-6 text-primary" />
+		<Card className="rounded-2xl border border-border/60 bg-card/40 backdrop-blur-md shadow-sm overflow-hidden">
+			<CardHeader className="pb-4">
+				<CardTitle className="flex items-center gap-2.5 text-xl md:text-2xl font-black tracking-tight text-foreground">
+					<div className="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 inline-flex items-center justify-center">
+						<TrendingUp className="h-4 w-4" />
+					</div>
 					{title}
 				</CardTitle>
 			</CardHeader>
 			<CardContent>
-				<div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4">
+				<div className="grid md:grid-cols-2 gap-4">
 					{relatedTools.map((tool, index) => {
-						const isHighlighted = index < 3;
+						const isHighlighted = index < 2;
 						return (
 							<Link
 								key={tool.id}
 								href={tool.route}
 								className={cn(
-									"group relative block p-6 border transition-all duration-300 rounded-none",
+									"group relative block p-5 border transition-all duration-300 rounded-xl",
 									isHighlighted 
-										? "bg-primary/[0.03] border-primary/30 shadow-lg shadow-primary/5" 
-										: "bg-card border-border/40 hover:border-primary/20"
+										? "bg-blue-500/[0.03] border-blue-500/30 hover:border-blue-500/50 shadow-sm hover:shadow-md" 
+										: "bg-card border-border/60 hover:border-blue-500/30 hover:shadow-sm"
 								)}
 							>
 								{isHighlighted && (
-									<div className="absolute top-0 right-0 px-3 py-1 bg-primary text-[10px] font-black text-white uppercase tracking-widest leading-none">
-										Top Recommendation
+									<div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-blue-600 dark:bg-blue-500 text-[9px] font-bold text-white uppercase tracking-wider leading-none">
+										Recommended
 									</div>
 								)}
-								<div className="flex items-start gap-4">
-									<div className="flex-1">
+								<div className="flex items-start justify-between gap-4">
+									<div className="flex-1 min-w-0">
 										<div className="flex items-center gap-2">
 											<h3 className={cn(
-												"font-bold transition-colors group-hover:text-primary",
-												isHighlighted ? "text-xl" : "text-lg"
+												"font-bold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400",
+												isHighlighted ? "text-base" : "text-sm"
 											)}>
 												{tool.name}
 											</h3>
-											{isHighlighted && <Star className="h-4 w-4 text-primary fill-current" />}
+											{isHighlighted && <Star className="h-3.5 w-3.5 text-amber-500 fill-amber-500 shrink-0" />}
 										</div>
-										<p className="text-sm text-muted-foreground mt-2 line-clamp-2 leading-relaxed">
+										<p className="text-xs text-muted-foreground mt-1.5 line-clamp-2 leading-relaxed">
 											{tool.description}
 										</p>
 										{showCategory && (
-											<div className="mt-4 flex flex-wrap gap-2">
-												<Badge variant="secondary" className="rounded-none text-[10px] font-bold uppercase tracking-wider bg-muted/50">
+											<div className="mt-3 flex flex-wrap gap-1.5">
+												<Badge variant="secondary" className="rounded-md text-[9px] font-semibold uppercase tracking-wider bg-muted/60">
 													{tool.category}
 												</Badge>
 												{isHighlighted && (
-													<Badge variant="outline" className="rounded-none text-[10px] font-bold uppercase tracking-wider border-primary/20 text-primary">
-														Featured
+													<Badge variant="outline" className="rounded-md text-[9px] font-semibold uppercase tracking-wider border-blue-500/30 text-blue-600 dark:text-blue-400">
+														Popular
 													</Badge>
 												)}
 											</div>
 										)}
 									</div>
-									<ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+									<ArrowRight className="h-4 w-4 text-muted-foreground/60 group-hover:text-blue-600 dark:group-hover:text-blue-400 group-hover:translate-x-1 transition-all shrink-0 mt-1" />
 								</div>
 							</Link>
 						);
@@ -319,10 +321,10 @@ export function QuickActions({
 					variant="outline"
 					size="sm"
 					onClick={handleBookmark}
-					className={cn("rounded-none", bookmarked ? "bg-muted/50 border-border" : "")}
+					className={cn("rounded-xl border-border/60 hover:border-blue-500/40 text-xs font-semibold shadow-sm", bookmarked ? "bg-blue-500/10 border-blue-500/30 text-blue-600 dark:text-blue-400" : "")}
 				>
 					<Bookmark
-						className={cn("h-4 w-4 mr-2", bookmarked ? "fill-current text-primary" : "")}
+						className={cn("h-3.5 w-3.5 mr-1.5", bookmarked ? "fill-current text-blue-600 dark:text-blue-400" : "text-muted-foreground")}
 					/>
 					{bookmarked ? "Bookmarked" : "Bookmark"}
 				</Button>

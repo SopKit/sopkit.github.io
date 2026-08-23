@@ -135,6 +135,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 const cut = description.slice(0, targetMax);
                 const lastSpace = cut.lastIndexOf(" ");
                 description = `${(lastSpace > targetMin ? cut.slice(0, lastSpace) : cut).replace(/[\s,—-]+$/, "")}`;
+            }
 
             const canonicalUrl = `https://sopkit.github.io/${slug}/`;
 
