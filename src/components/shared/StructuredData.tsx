@@ -1,4 +1,5 @@
 import { getAllCategories, getAllTools, type Tool } from "@/lib/tools";
+import { TOOL_COUNT_STRING } from "@/constants/config";
 
 const BASE_URL = "https://sopkit.github.io";
 const allCategories = getAllCategories();
@@ -252,7 +253,7 @@ export default function StructuredData({
 		"@type": "WebSite",
 		name: "SopKit",
 		url: `${BASE_URL}/`,
-		description: "460+ free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
+		description: `${TOOL_COUNT_STRING} free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.`,
 		potentialAction: {
 			"@type": "SearchAction",
 			target: {
@@ -272,7 +273,7 @@ export default function StructuredData({
 		sameAs: [
 			"https://github.com/SopKit/sopkit.github.io",
 		],
-		description: "Privacy-first free online toolkit with 460+ browser-based tools.",
+		description: `Privacy-first free online toolkit with ${TOOL_COUNT_STRING} browser-based tools.`,
 	};
 
 	if (isHome) {

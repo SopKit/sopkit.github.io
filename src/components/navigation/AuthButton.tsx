@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { LogIn } from "lucide-react";
+import { Suspense } from "react";
 import { ErrorBoundary } from "@/components/shared/ErrorBoundary";
 import dynamic from "next/dynamic";
 
@@ -25,6 +26,9 @@ function LoginLink() {
 // separate chunk is produced; here we load that chunk lazily, client-only.
 // Anonymous visitors (the common case, and the entire build when Stack auth is
 // unconfigured) never download it.
+// NOTE: `ssr: false` throws BAILOUT_TO_CLIENT_SIDE_RENDERING during prerender.
+// It MUST stay wrapped in a local <Suspense> boundary (below) or the bailout
+// escapes to the root and empties the whole page's server-rendered HTML.
 const LazyAuthedButton = dynamic(
 	() => import("./AuthedButton").then((m) => m.AuthedButton),
 	{
@@ -46,7 +50,9 @@ export function AuthButton() {
 	// fell back to no-auth). Degrade to a plain login link instead of crashing.
 	return (
 		<ErrorBoundary fallback={<LoginLink />}>
-			<LazyAuthedButton fallback={<LoginLink />} />
+			<Suspense fallback={<LoginLink />}>
+				<LazyAuthedButton fallback={<LoginLink />} />
+			</Suspense>
 		</ErrorBoundary>
 	);
 }

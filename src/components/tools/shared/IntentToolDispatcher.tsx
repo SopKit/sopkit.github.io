@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import React from "react";
+import React, { Suspense } from "react";
 
 const AIImageGeneratorTool = dynamic(() => import("@/components/tools/generators/AIImageGeneratorTool"), { ssr: false });
 const AIMusicGeneratorTool = dynamic(() => import("@/components/tools/generators/AIMusicGeneratorTool"), { ssr: false });
@@ -937,7 +937,14 @@ interface IntentToolDispatcherProps {
 export default function IntentToolDispatcher({ toolId }: IntentToolDispatcherProps) {
     const entry = INTENT_TOOL_REGISTRY[toolId];
     if (!entry) return <p className="p-4 text-center text-red-500">Tool component not found.</p>;
-    
+
     const Component = entry.component;
-    return <Component {...entry.props} />;
+    // All registry components use next/dynamic({ ssr: false }), which throws
+    // BAILOUT_TO_CLIENT_SIDE_RENDERING while prerendering. A local Suspense
+    // keeps that bailout contained here instead of emptying the whole page.
+    return (
+        <Suspense fallback={<div className="min-h-[400px] w-full animate-pulse rounded-2xl bg-muted/30" />}>
+            <Component {...entry.props} />
+        </Suspense>
+    );
 }

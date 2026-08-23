@@ -58,9 +58,10 @@ export default async function AboutPage() {
 						<div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
 						<CardContent className="pt-10 space-y-8 px-6 md:px-12">
 							<div className="text-center space-y-4">
-								<h1 className="text-4xl md:text-5xl font-black tracking-tight text-foreground">
+								{/* H1 is rendered by ToolLayout above; this tagline stays a paragraph-level heading */}
+								<p className="text-3xl md:text-5xl font-black tracking-tight text-foreground">
 									The <span className="text-primary">Privacy-First</span> Utility Platform
-								</h1>
+								</p>
 								<p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
 									SopKit was built with a radical idea: you should not have to upload your private files, bank statements, photos, or API credentials to third-party servers just to perform daily utility tasks.
 								</p>

@@ -109,46 +109,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		priority: 0.85,
 	}));
 
-	const RESERVED_SLUGS = new Set([
-		"privacy",
-		"terms",
-		"about",
-		"pro",
-		"pricing",
-		"feed.xml",
-		"tools",
-		"archive",
-		"embed",
-		"embed-tool",
-		"new-tools",
-		"search",
-		"calculator-tools",
-		"image-tools",
-		"pdf-tools",
-		"developer-tools",
-		"seo-tools",
-		"text-tools",
-		"video-tools",
-		"audio-tools",
-		"downloaders"
-	]);
-
-	const extraSlugsPages: MetadataRoute.Sitemap = [];
-	allTools.forEach((t) => {
-		if (t.extraSlugs) {
-			t.extraSlugs.forEach((slug) => {
-				const trimmed = slug ? slug.trim() : "";
-				if (trimmed && !RESERVED_SLUGS.has(trimmed)) {
-					extraSlugsPages.push({
-						url: `${BASE_URL}/${trimmed}`,
-						lastModified: t.popular ? now : siteUpdated,
-						changeFrequency: "weekly" as const,
-						priority: 0.65,
-					});
-				}
-			});
-		}
-	});
+	// Keyword-permutation slugs (tool-extraslugs.json, ~9.2k URLs) are
+	// deliberately EXCLUDED from the sitemap:
+	//   - They are templated variants of parent tool pages (thin/duplicate
+	//     content at scale) and dilute crawl budget away from the ~800 pages
+	//     with unique value.
+	//   - The pages themselves remain reachable (200) via direct URL or
+	//     /archive, so existing equity is not lost.
+	//   - Re-include individual winners later based on GSC impression data.
+	// NOTE: extraSlugs permutation pages are intentionally not emitted here —
+	// see comment above.
 
 	try {
 		// Deduplicate by URL to avoid duplicate sitemap entries.
@@ -160,7 +130,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			...blogPages,
 			...seoOpportunityPages,
 			...intentPages,
-			...extraSlugsPages,
 		];
 		const seen = new Set<string>();
 		return allPages

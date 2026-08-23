@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import ApiKeyTester from "@/components/tools/developer/ApiKeyTester";
 import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
@@ -26,7 +27,11 @@ const WordCounterTool = dynamic(() => import("@/components/tools/text/WordCounte
 const LoremIpsumTool = dynamic(() => import("@/components/tools/text/LoremIpsumTool"), { ssr: false });
 const CaseConverter = dynamic(() => import("@/components/tools/text/CaseConverter"), { ssr: false });
 
-export default function SeoOpportunityTool({
+// Inner renderer so the exported component can contain all `ssr: false`
+// dynamic imports within a single local <Suspense> boundary. Without it, the
+// BAILOUT_TO_CLIENT_SIDE_RENDERING thrown while prerendering escapes to the
+// root and wipes out every page's server-rendered HTML.
+function SeoOpportunityToolInner({
 	opportunity,
 }: {
 	opportunity: SeoOpportunity;
@@ -121,4 +126,20 @@ export default function SeoOpportunityTool({
 	}
 
 	return <MetaTagGenerator />;
+}
+
+export default function SeoOpportunityTool({
+	opportunity,
+}: {
+	opportunity: SeoOpportunity;
+}) {
+	return (
+		<Suspense
+			fallback={
+				<div className="min-h-[400px] w-full animate-pulse rounded-2xl bg-muted/30" />
+			}
+		>
+			<SeoOpportunityToolInner opportunity={opportunity} />
+		</Suspense>
+	);
 }

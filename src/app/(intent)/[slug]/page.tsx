@@ -124,17 +124,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 description = `Privacy-friendly, 100% client-side ${extraTool.name} online. Secure local browser processing with no file uploads and no data selling.`;
             }
 
-            // Pad or trim description to exactly 150-160 characters
+            // Keep descriptions natural: append a CTA once if too short,
+            // otherwise trim at a word boundary (no repeated filler phrases).
             const targetMin = 150;
             const targetMax = 160;
             if (description.length < targetMin) {
-                while (description.length < targetMin) {
-                    description += " Try it now for free.";
-                }
+                description = `${description} Try it now for free.`;
             }
             if (description.length > targetMax) {
-                description = description.substring(0, 157) + "...";
-            }
+                const cut = description.slice(0, targetMax);
+                const lastSpace = cut.lastIndexOf(" ");
+                description = `${(lastSpace > targetMin ? cut.slice(0, lastSpace) : cut).replace(/[\s,—-]+$/, "")}`;
 
             const canonicalUrl = `https://sopkit.github.io/${slug}/`;
 

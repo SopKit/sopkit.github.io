@@ -4,23 +4,19 @@ import { getAllTools, Tool } from "@/lib/tools";
 import { SITE_URL, TOOL_COUNT_STRING } from "@/constants/config";
 import "./globals.css";
 import Script from "next/script";
-import dynamic from "next/dynamic";
 import { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-
+// NOTE: Do NOT use next/dynamic inside this Server Component.
+// In Next 16, next/dynamic within an RSC throws an uncaught
+// BAILOUT_TO_CLIENT_SIDE_RENDERING during prerender, which empties the
+// entire page HTML for crawlers (site-wide SEO regression). Use direct
+// imports for any component rendered by the root layout.
 import { PWARegistration } from "@/components/shared/PWARegistration";
 
 import { ClientStackAuthProvider } from "@/components/shared/ClientStackAuthProvider";
 
-// Dynamic imports for below-fold / non-critical layout components
-const AppleNavbar = dynamic(
-	() => import("@/components/navigation/AppleNavbar").then((mod) => ({ default: mod.AppleNavbar })),
-	{ ssr: true }
-);
-const AppleFooter = dynamic(
-	() => import("@/components/footers/AppleFooter").then((mod) => ({ default: mod.AppleFooter })),
-	{ ssr: true }
-);
+import { AppleNavbar } from "@/components/navigation/AppleNavbar";
+import { AppleFooter } from "@/components/footers/AppleFooter";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -105,18 +101,6 @@ export const metadata: Metadata = {
 		"secure online tools",
 		"professional web tools",
 		"instant online tools",
-
-		// Kimi K3 trending keywords (viral 2026)
-		"use kimi k3 for free",
-		"kimi k3",
-		"kimi k3 moonshot ai",
-		"kimi k3 free online",
-		"how to use kimi k3",
-		"kimi k3 free online playground",
-		"kimi k3 api price",
-		"kimi k3 vs chatgpt",
-		"kimi k3 download model weights",
-		"kimi k3 capabilities",
 	].join(", "),
 	authors: [{ name: "SopKit Team", url: "https://sopkit.github.io" }],
 	creator: "SopKit",
@@ -137,7 +121,7 @@ export const metadata: Metadata = {
 		},
 	},
 	openGraph: {
-		title: "SopKit — 460+ Free Online Tools",
+		title: `SopKit — ${TOOL_COUNT_STRING} Free Online Tools`,
 		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
 		url: "https://sopkit.github.io/",
 		siteName: "SopKit",
@@ -147,8 +131,8 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "SopKit — 460+ Free Online Tools",
-		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows.",
+		title: `SopKit — ${TOOL_COUNT_STRING} Free Online Tools`,
+		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
 		images: ["https://sopkit.github.io/og-image.png"],
 	},
 	robots: {
@@ -293,7 +277,7 @@ export default function RootLayout({
 						"@type": "WebSite",
 						name: "SopKit",
 						url: `${SITE_URL}/`,
-						description: "460+ free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
+						description: `${TOOL_COUNT_STRING} free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.`,
 						potentialAction: {
 							"@type": "SearchAction",
 							target: {
@@ -318,7 +302,7 @@ export default function RootLayout({
 						sameAs: [
 							"https://github.com/SopKit/sopkit.github.io",
 						],
-						description: "Privacy-first free online toolkit with 460+ browser-based tools.",
+						description: `Privacy-first free online toolkit with ${TOOL_COUNT_STRING} browser-based tools.`,
 					}),
 				}}
 			/>

@@ -17,6 +17,17 @@
   Cross-Origin-Resource-Policy: same-origin
 
 # ---------------------------------------------------------------------------
+# Embeddable tool routes (allow iframe embedding on external sites)
+# ---------------------------------------------------------------------------
+/embed-tool/*
+  X-Frame-Options: ALLOWALL
+  Cross-Origin-Resource-Policy: cross-origin
+
+/embed/*
+  X-Frame-Options: ALLOWALL
+  Cross-Origin-Resource-Policy: cross-origin
+
+# ---------------------------------------------------------------------------
 # Next.js static assets (hashed filenames = immutable)
 # ---------------------------------------------------------------------------
 /_next/static/*

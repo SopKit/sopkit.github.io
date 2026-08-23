@@ -262,6 +262,9 @@ export function AppleNavbar() {
 					{/* Dialog panel */}
 					<div 
 						ref={searchModalRef}
+						role="dialog"
+						aria-modal="true"
+						aria-label="Search tools"
 						onKeyDown={handleDialogKeyDown}
 						className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-border/40 bg-card shadow-2xl animate-in zoom-in-95 duration-200"
 					>
@@ -270,6 +273,7 @@ export function AppleNavbar() {
 							<input
 								ref={searchInputRef}
 								type="text"
+								aria-label="Search tools, formats, categories"
 								placeholder="Search tools, formats, categories..."
 								value={searchQuery}
 								onChange={(e) => {

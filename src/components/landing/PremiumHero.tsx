@@ -115,6 +115,7 @@ export function PremiumHero({ title, subtitle = "" }) {
 						<Input
 							ref={inputRef}
 							type="text"
+							aria-label="Search all tools"
 							placeholder="Search tools — try 'pdf', 'image', 'json', 'qr'..."
 							className="h-16 pl-16 pr-32 bg-transparent border-none text-base focus-visible:ring-0 focus-visible:ring-offset-0 transition-all placeholder:text-muted-foreground/50 w-full"
 							value={query}
@@ -127,6 +128,7 @@ export function PremiumHero({ title, subtitle = "" }) {
 						/>
 						<Button
 							type="submit"
+							aria-label="Search tools"
 							className="absolute right-2 h-12 px-6 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold shadow-md shadow-blue-500/25 transition-all"
 						>
 							Find Tool

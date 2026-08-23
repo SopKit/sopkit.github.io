@@ -27,24 +27,6 @@ interface MetadataProps {
 }
 
 /**
- * Global viral keyword injection: append trending AI keywords for every
- * generated metadata payload so that search signals across every page
- * reinforce the most-searched trending topics on the site.
- */
-const TRENDING_VIRAL_KEYWORDS = [
-	"free online tools",
-	"no upload",
-	"client-side converter",
-	"100% private",
-	"browser utility",
-	"secure converter",
-	"no registration tool",
-	"no ads online",
-	"unlimited file conversion",
-	"instant document tool"
-];
-
-/**
  * Generate standard metadata for a page
  */
 export function generateMetadata({
@@ -60,7 +42,7 @@ export function generateMetadata({
 	return {
 		title,
 		description,
-		keywords: [...new Set([...keywords, ...TRENDING_VIRAL_KEYWORDS])],
+		keywords,
 		alternates: {
 			canonical: canonicalUrl,
 		},
@@ -135,7 +117,7 @@ export function generateToolMetadata({
 		...(category ? [category] : []),
 		"SopKit",
 	];
-	const allKeywords = [...new Set([...baseKeywords, ...keywords, ...TRENDING_VIRAL_KEYWORDS])];
+	const allKeywords = [...new Set([...baseKeywords, ...keywords])];
 
 	// Check if a custom title or description exists in tools.json
 	let customTitle = "";
@@ -166,7 +148,7 @@ export function generateToolMetadata({
 		description: desc,
 		path: route,
 		image: "/og-image.jpg",
-		keywords: [...new Set([...keywords, ...TRENDING_VIRAL_KEYWORDS])],
+		keywords,
 	});
 }
 
