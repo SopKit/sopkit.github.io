@@ -3528,6 +3528,42 @@
           "popular": true,
           "seoDescription": "Interactive JavaScript Notebook online. Run JS code in a Jupyter-style environment directly in your browser. Multi-cell support, console output, async/await. Free and private.",
           "seoTitle": "JavaScript Notebook — Interactively write, run, and debug"
+        },
+        {
+          "id": "css-glassmorphism-generator",
+          "name": "CSS Glassmorphism Generator",
+          "description": "Create modern frosted glass UI elements with real-time blur, opacity, saturation, and border controls. Copy instant CSS and Tailwind CSS classes with zero server processing.",
+          "route": "/css-glassmorphism-generator",
+          "popular": true,
+          "seoTitle": "CSS Glassmorphism Generator — Frosted Glass UI Effect Builder",
+          "seoDescription": "Free online CSS Glassmorphism Generator. Create customizable frosted glass UI cards with real-time blur, border, and Tailwind classes. 100% client-side."
+        },
+        {
+          "id": "markdown-table-generator",
+          "name": "Markdown Table Generator",
+          "description": "Easily generate clean, formatted Markdown tables using an interactive spreadsheet visual editor. Customize column alignment, add rows, and copy syntax instantly.",
+          "route": "/markdown-table-generator",
+          "popular": true,
+          "seoTitle": "Markdown Table Generator — Visual Table Editor & Converter",
+          "seoDescription": "Free online Markdown Table Generator. Build and edit Markdown tables visually with alignment controls, spreadsheet grid, and copy-ready syntax."
+        },
+        {
+          "id": "json-diff-checker",
+          "name": "JSON Diff Checker",
+          "description": "Compare two JSON objects side-by-side to highlight added, removed, and modified keys with precision. Format, validate, and debug JSON payloads entirely in browser memory.",
+          "route": "/json-diff-checker",
+          "popular": true,
+          "seoTitle": "JSON Diff Checker — Compare & Find Differences in JSON",
+          "seoDescription": "Free online JSON Diff Checker. Compare two JSON payloads side-by-side, highlight differences, and validate structures with 100% client-side privacy."
+        },
+        {
+          "id": "ip-subnet-calculator",
+          "name": "IP Subnet Calculator",
+          "description": "Calculate IPv4 subnet masks, CIDR network ranges, usable host IPs, broadcast addresses, and wildcard masks instantly with 100% local browser execution.",
+          "route": "/ip-subnet-calculator",
+          "popular": true,
+          "seoTitle": "IP Subnet Calculator — CIDR Network & Host Range Tool",
+          "seoDescription": "Free online IP Subnet Calculator. Calculate CIDR prefixes, network addresses, broadcast IPs, and usable host ranges with 100% browser-based execution."
         }
       ]
     },
@@ -5202,6 +5238,15 @@
           "popular": true,
           "seoDescription": "Privacy-friendly, 100% client-side Income Tax Calculator FY 2026-27 online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
           "seoTitle": "Income Tax Calculator FY 2026-27 — Calculate and compare"
+        },
+        {
+          "id": "freelance-hourly-rate-calculator",
+          "name": "Freelance Hourly Rate Calculator",
+          "description": "Calculate your target freelance hourly rate, daily rate, and monthly retainers based on desired annual salary, business expenses, taxes, and billable hours.",
+          "route": "/freelance-hourly-rate-calculator",
+          "popular": true,
+          "seoTitle": "Freelance Hourly Rate Calculator — Target Rate & Retainer Tool",
+          "seoDescription": "Free Freelance Hourly Rate Calculator. Estimate your optimal hourly rate, day rate, and retainers based on expenses, taxes, and billable hours."
         }
       ]
     },

@@ -1158,6 +1158,18 @@ Canonical Base URL: https://sopkit.github.io
 #### [JavaScript Notebook](https://sopkit.github.io/javascript-notebook)
 - **Description**: Interactively write, run, and debug JavaScript code with a Jupyter-style notebook. Supports multi-cell editing, console output, async/await, and ES2024 features. 100% client-side execution.
 
+#### [CSS Glassmorphism Generator](https://sopkit.github.io/css-glassmorphism-generator)
+- **Description**: Create modern frosted glass UI elements with real-time blur, opacity, saturation, and border controls. Copy instant CSS and Tailwind CSS classes with zero server processing.
+
+#### [Markdown Table Generator](https://sopkit.github.io/markdown-table-generator)
+- **Description**: Easily generate clean, formatted Markdown tables using an interactive spreadsheet visual editor. Customize column alignment, add rows, and copy syntax instantly.
+
+#### [JSON Diff Checker](https://sopkit.github.io/json-diff-checker)
+- **Description**: Compare two JSON objects side-by-side to highlight added, removed, and modified keys with precision. Format, validate, and debug JSON payloads entirely in browser memory.
+
+#### [IP Subnet Calculator](https://sopkit.github.io/ip-subnet-calculator)
+- **Description**: Calculate IPv4 subnet masks, CIDR network ranges, usable host IPs, broadcast addresses, and wildcard masks instantly with 100% local browser execution.
+
 
 ### Utility Tools Tools
 
@@ -1721,6 +1733,9 @@ Canonical Base URL: https://sopkit.github.io
 
 #### [Income Tax Calculator FY 2026-27](https://sopkit.github.io/income-tax-calculator)
 - **Description**: Calculate and compare your income tax under the Old vs New Tax Regimes for FY 2026-27 (AY 2027-28). Compare deductions, rebates, and slabs to find the optimal regime.
+
+#### [Freelance Hourly Rate Calculator](https://sopkit.github.io/freelance-hourly-rate-calculator)
+- **Description**: Calculate your target freelance hourly rate, daily rate, and monthly retainers based on desired annual salary, business expenses, taxes, and billable hours.
 
 
 ### Exam Image & Form Tools Tools

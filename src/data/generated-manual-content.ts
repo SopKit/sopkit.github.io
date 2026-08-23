@@ -23322,4 +23322,259 @@ Anyone who needs to convert files between formats — designers, developers, stu
     ],
     seoDescription: `Best free online converters in 2026 — image, audio, video, document, and unit converters. 100% client-side processing with zero data uploads.`,
   },
+  "css-glassmorphism-generator": {
+    "whatItIs": "CSS Glassmorphism Generator is a visual web utility for front-end developers and UI/UX designers looking to build modern frosted glass interface elements. Using CSS backdrop-filter, rgba color alphas, and subtle specular border highlights, glassmorphism creates a sense of depth and hierarchy in web applications.\n\n## The Science of Glassmorphism in Modern Web Design\n\nThe glassmorphism aesthetic relies on layered semi-transparent cards placed over vibrant, high-contrast backgrounds. When a backdrop filter blur is applied to a translucent container, the underlying colors diffuse smoothly, mimicking optical refraction in physical frosted acrylic or tempered glass.\n\n### Key CSS Properties Involved:\n- `backdrop-filter: blur(Npx)`: Defines the intensity of the background diffusion.\n- `backdrop-filter: saturate(N%)`: Boosts background color vibrance through the frosted surface.\n- `-webkit-backdrop-filter`: Ensures cross-browser rendering on WebKit-based browsers (including Apple Safari on macOS and iOS).\n- `background: rgba(R, G, B, A)`: Provides the tinted surface layer while allowing background imagery to show through.\n- `border: 1px solid rgba(255, 255, 255, A)`: Adds a crisp light refraction edge to give the card definition.\n\n## Accessibility Best Practices for Glass Cards\n\nWhile glassmorphism looks stunning, contrast ratio must be maintained for accessibility (WCAG AA standard). Ensure that text placed inside glass containers maintains at least a 4.5:1 contrast ratio against the blurred background by adjusting the base glass opacity or utilizing subtle dark drop-shadows on typography.",
+    "features": [
+      "Interactive real-time visual preview over dynamic gradient geometry",
+      "Fine-grained slider controls for blur, opacity, saturation, border-opacity, and border-radius",
+      "Instant one-click copy for clean standard CSS with WebKit vendor prefixes",
+      "Instant copy for Tailwind CSS utility class chains",
+      "Built-in color picker and preset tints for dark mode and colored glass variations",
+      "100% client-side rendering — zero data transfer or server requests"
+    ],
+    "howToUse": {
+      "name": "How to generate custom CSS glassmorphism styles",
+      "steps": [
+        {
+          "name": "Adjust Blur & Opacity",
+          "text": "Use the sliders to calibrate the frosted blur depth and background surface transparency."
+        },
+        {
+          "name": "Tune Saturation & Border",
+          "text": "Increase backdrop saturation for richer colors and adjust the subtle border highlight opacity."
+        },
+        {
+          "name": "Pick Base Tint & Radius",
+          "text": "Choose a base glass color and set your preferred card corner rounding."
+        },
+        {
+          "name": "Copy Code Snippet",
+          "text": "Click Copy CSS or Copy Tailwind Classes to paste the styles directly into your stylesheet."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does CSS glassmorphism work on all browsers?",
+        "answer": "Yes, modern versions of Chrome, Edge, Firefox, and Safari support CSS backdrop-filter. Our generator automatically includes the -webkit-backdrop-filter prefix to guarantee full compatibility on iOS Safari and macOS."
+      },
+      {
+        "question": "How do I ensure readable text on frosted glass cards?",
+        "answer": "Keep the background opacity between 15% and 35%, apply at least 12px to 20px blur, and use high-contrast text colors or text drop-shadows to ensure compliance with WCAG contrast guidelines."
+      },
+      {
+        "question": "Can I use these styles in Tailwind CSS projects?",
+        "answer": "Yes! Our tool provides pre-formatted Tailwind arbitrary value classes (e.g. backdrop-blur, bg-white/20, border-white/20) that you can copy and paste directly into your JSX or HTML templates."
+      },
+      {
+        "question": "Is there any performance overhead with backdrop-filter?",
+        "answer": "Backdrop blur is GPU-accelerated in modern browsers. To maintain 60 FPS scrolling, avoid stacking dozens of overlapping blurred layers on low-end mobile devices."
+      }
+    ],
+    "seoDescription": "Free CSS Glassmorphism Generator: design custom frosted glass UI cards with real-time blur, border, and Tailwind classes. 100% client-side & instant."
+  },
+  "markdown-table-generator": {
+    "whatItIs": "Markdown Table Generator is a visual spreadsheet editor for creating GitHub Flavored Markdown (GFM) tables. Writing pipe-delimited Markdown tables by hand is tedious, error-prone, and difficult to format. This interactive grid tool lets you edit rows, add columns, customize text alignment, and generate clean, perfectly aligned Markdown tables in seconds.\n\n## Effortless Markdown Documentation & README Tables\n\nTables in Markdown are essential for comparing software features, listing API parameters, displaying benchmarks, and structuring tabular data in documentation sites (such as Docusaurus, VitePress, Nextra, and GitHub READMEs).\n\n### GFM Table Syntax Explained\nGitHub Flavored Markdown uses vertical pipes (`|`) to separate columns and hyphens (`---`) to define the header separator line:\n- **Left Alignment (`:---`)**: Default text alignment for descriptions and names.\n- **Center Alignment (`:---:`)**: Ideal for status badges, boolean checkmarks, and short codes.\n- **Right Alignment (`---:`)**: Standard for numbers, currency, percentages, and metrics.\n\nOur generator computes optimal column character widths, ensuring that the raw Markdown output is cleanly formatted and easy to read even in plain text editors.",
+    "features": [
+      "Interactive visual spreadsheet grid for seamless data entry",
+      "One-click row and column addition or removal",
+      "Per-column text alignment toggles (Left, Center, Right)",
+      "Automatic whitespace padding calculation for immaculate raw Markdown code",
+      "Direct download of generated table.md file",
+      "100% local browser execution — data never leaves your device"
+    ],
+    "howToUse": {
+      "name": "How to create a formatted Markdown table visually",
+      "steps": [
+        {
+          "name": "Set Column Headers",
+          "text": "Click on the header cells to name your table columns."
+        },
+        {
+          "name": "Add Rows & Cells",
+          "text": "Populate the data rows with your text, numbers, or links."
+        },
+        {
+          "name": "Configure Alignment",
+          "text": "Click the alignment icon on any column header to toggle left, center, or right alignment."
+        },
+        {
+          "name": "Copy or Download",
+          "text": "Click Copy Markdown to copy the syntax to your clipboard, or click Download .md."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does this table generator support GitHub Flavored Markdown (GFM)?",
+        "answer": "Yes. The generated syntax fully complies with GitHub Flavored Markdown (GFM), CommonMark, GitLab, Notion, Obsidian, and standard Markdown parsers."
+      },
+      {
+        "question": "How does column alignment work in Markdown?",
+        "answer": "Alignment is defined in the separator row beneath the headers. Colons on the left (:---) align left, colons on both sides (:---:) align center, and colons on the right (---:) align right."
+      },
+      {
+        "question": "Can I include links or formatting inside table cells?",
+        "answer": "Yes! You can input standard Markdown inline formatting such as **bold**, *italic*, `code`, and [links](url) directly into any cell."
+      },
+      {
+        "question": "Is there a limit on how many rows I can create?",
+        "answer": "No. Since all operations run locally in your browser memory, you can generate tables with dozens of rows and columns with zero lag."
+      }
+    ],
+    "seoDescription": "Free Markdown Table Generator: build and edit GitHub Flavored Markdown tables visually with alignment controls, spreadsheet grid, and copy-ready syntax."
+  },
+  "json-diff-checker": {
+    "whatItIs": "JSON Diff Checker is a side-by-side JSON comparison utility built for software engineers, QA testers, and DevOps specialists. It analyzes two JSON payloads recursively and provides a color-coded structural diff highlighting added properties, deleted keys, and modified values with zero data latency.\n\n## Precision Debugging for APIs and Configurations\n\nWhen developing REST APIs, refactoring microservices, or updating application configuration files, subtle changes in JSON structure can lead to runtime bugs or schema breakage. \n\n### What This Tool Detects:\n- **Added Keys**: Properties that exist in the modified JSON but were missing in the original payload.\n- **Removed Keys**: Properties present in the original JSON that were deleted in the target payload.\n- **Modified Values**: Keys where the data type or value changed (e.g. integer to string or updated boolean flags).\n- **Nested Object Traversal**: Recursively scans deeply nested objects and arrays without truncation.\n\n## Why Client-Side JSON Diffing Matters for Security\n\nJSON files frequently contain sensitive configuration parameters, environment variables, internal server URLs, and mock customer data. Using remote server-based diff utilities risks exposing proprietary schema configurations to third-party logs. SopKit performs 100% of JSON parsing and comparison client-side inside your browser's JavaScript V8 engine.",
+    "features": [
+      "Side-by-side JSON input editors with instant syntax validation",
+      "Built-in JSON beautifier and auto-formatter for minified payloads",
+      "Deep recursive key-by-key comparison algorithm",
+      "Color-coded diff summary with exact object dot-notation paths",
+      "Instant side-swap button to reverse comparison direction",
+      "100% private in-browser execution with zero telemetry or uploads"
+    ],
+    "howToUse": {
+      "name": "How to compare two JSON objects for differences",
+      "steps": [
+        {
+          "name": "Paste Original JSON",
+          "text": "Paste your baseline JSON payload into the left editor."
+        },
+        {
+          "name": "Paste Modified JSON",
+          "text": "Paste the new or modified JSON payload into the right editor."
+        },
+        {
+          "name": "Format Payloads",
+          "text": "Click Format on either side to automatically beautify and validate JSON syntax."
+        },
+        {
+          "name": "Inspect Diff Report",
+          "text": "Review the color-coded list of added, removed, and modified properties below."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does this JSON diff tool support nested objects and arrays?",
+        "answer": "Yes. The comparison engine recursively traverses all nested objects and arrays, displaying differences with full dot-notation paths (e.g., user.settings.theme)."
+      },
+      {
+        "question": "Is my confidential JSON data uploaded or logged?",
+        "answer": "No. All JSON parsing, formatting, and diffing calculations are executed purely in your local browser memory. No data is transmitted across the network."
+      },
+      {
+        "question": "What happens if my JSON has a syntax error?",
+        "answer": "The editor immediately displays an inline error message pointing out the invalid syntax, allowing you to correct missing commas or unquoted keys before diffing."
+      },
+      {
+        "question": "Can I compare minified JSON strings?",
+        "answer": "Yes! Simply paste the minified JSON and click the Format button to beautify it before running the comparison."
+      }
+    ],
+    "seoDescription": "Free online JSON Diff Checker: compare two JSON payloads side-by-side, highlight differences, and validate structures with 100% client-side privacy."
+  },
+  "ip-subnet-calculator": {
+    "whatItIs": "IP Subnet Calculator is a networking utility for system administrators, network engineers, DevOps professionals, and CCNA/CompTIA Network+ students. It calculates IPv4 Classless Inter-Domain Routing (CIDR) parameters, subnet masks, wildcard masks, usable IP ranges, and broadcast addresses instantly.\n\n## The Foundations of IPv4 Subnetting & CIDR\n\nSubnetting divides a large physical IP network into smaller, logical subnetworks. This improves network performance by segmenting broadcast domains, enhances security through access control lists (ACLs), and conserves precious IPv4 address space.\n\n### Key Subnet Metrics Explained:\n- **Network ID / Address**: The first address in the subnet, representing the subnetwork itself (all host bits set to 0).\n- **Broadcast IP**: The highest address in the subnet, used to send packets to all hosts in the network (all host bits set to 1).\n- **Usable Host Range**: All assignable IP addresses between the Network ID and the Broadcast Address ($2^{(32 - \\text{CIDR})} - 2$).\n- **Subnet Mask**: 32-bit bitmask separating the network portion from the host portion (e.g., /24 is 255.255.255.0).\n- **Wildcard Mask**: The inverted subnet mask used in Cisco router ACLs and OSPF routing configurations.\n\n## Private vs. Public IP Address Ranges (RFC 1918)\n\nThe calculator automatically identifies IP address scope:\n- **Class A Private**: 10.0.0.0 to 10.255.255.255 (/8)\n- **Class B Private**: 172.16.0.0 to 172.31.255.255 (/12)\n- **Class C Private**: 192.168.0.0 to 192.168.255.255 (/16)\n- **Loopback**: 127.0.0.0 to 127.255.255.255 (/8)",
+    "features": [
+      "Instant CIDR prefix selector from /0 down to /32 with real-time bitmask resolution",
+      "Calculates Network Address, Broadcast Address, Subnet Mask, and Wildcard Mask",
+      "Computes total host capacity and assignable usable host ranges",
+      "Automatic IP Class (A, B, C, D, E) and RFC 1918 Private/Public scope detection",
+      "Binary breakdown of IP address and Subnet Mask bits for CCNA learning",
+      "One-click copy for all calculated network metrics"
+    ],
+    "howToUse": {
+      "name": "How to calculate IPv4 subnet parameters",
+      "steps": [
+        {
+          "name": "Enter IPv4 Address",
+          "text": "Type an IPv4 address (such as 192.168.1.1 or 10.0.0.50) in standard dotted decimal format."
+        },
+        {
+          "name": "Select CIDR Prefix",
+          "text": "Choose your CIDR prefix (e.g. /24, /28, /30) from the dropdown or quick preset buttons."
+        },
+        {
+          "name": "Review Network Breakdown",
+          "text": "Inspect the calculated Network ID, Broadcast IP, usable host range, and total host capacity."
+        },
+        {
+          "name": "Copy Network Values",
+          "text": "Click the copy icon next to any field to copy subnet masks or IP ranges to your clipboard."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why are two IP addresses subtracted from the usable host count?",
+        "answer": "In standard IPv4 subnets, the very first address is reserved as the Network ID and the last address is reserved as the Broadcast Address, leaving 2^(32-CIDR) - 2 addresses for assignable devices."
+      },
+      {
+        "question": "What is the difference between a subnet mask and a wildcard mask?",
+        "answer": "A subnet mask identifies network and host bits (e.g., 255.255.255.0), while a wildcard mask is its bitwise inverse (e.g., 0.0.0.255), commonly used in Cisco firewall rules and OSPF configurations."
+      },
+      {
+        "question": "What is a /30 subnet used for?",
+        "answer": "A /30 subnet provides exactly 4 total IP addresses and 2 usable host addresses, making it the industry standard for point-to-point router links to conserve IPv4 addresses."
+      },
+      {
+        "question": "Does this calculator work offline?",
+        "answer": "Yes. All bitwise calculations run locally in your web browser using JavaScript binary arithmetic. No server connection or internet access is required once loaded."
+      }
+    ],
+    "seoDescription": "Free online IP Subnet Calculator: calculate CIDR prefixes, network addresses, broadcast IPs, and usable host ranges with 100% browser-based execution."
+  },
+  "freelance-hourly-rate-calculator": {
+    "whatItIs": "Freelance Hourly Rate Calculator is a financial planning tool built for independent contractors, freelancers, agency founders, and creative professionals. It calculates your required minimum hourly billing rate, daily rate, and monthly retainers based on your personal financial goals, business expenses, self-employment taxes, and actual billable capacity.\n\n## The Real Math Behind Sustainable Freelance Rates\n\nMany new freelancers make the mistake of dividing an employee salary by 2,000 annual hours (40 hours × 50 weeks). However, full-time employees receive employer-paid health insurance, paid time off (PTO), 401(k) matches, and employer-matched payroll taxes. Furthermore, freelancers can only bill for 50% to 70% of their working hours because significant time must be spent on non-billable administrative tasks (marketing, client proposals, bookkeeping, and invoicing).\n\n### Crucial Variables in Freelance Pricing:\n1. **Target Net Income**: The actual take-home pay you need for living expenses, savings, and investments.\n2. **Business Overhead**: Software subscriptions (Adobe, GitHub, Figma), hardware depreciation, accounting fees, and workspace costs.\n3. **Self-Employment Taxes**: Accounting for federal, state, and self-employment payroll taxes (often 25% to 35% total).\n4. **Paid Time Off (PTO) & Sick Days**: Factoring in 3 to 5 weeks of unpaid vacation and sick leave each year.\n5. **Billable Hour Reality**: Most sustainable freelancers average 20 to 30 billable hours per week, reserving the rest for business operations.\n6. **Profit Buffer**: A 10% to 20% margin to build emergency reserves and invest back into business growth.",
+    "features": [
+      "Comprehensive financial model factoring in take-home pay, overhead, taxes, and PTO",
+      "Calculates recommended hourly rate, day rate, monthly retainers, and annual gross revenue",
+      "Realistic billable capacity modeling (distinguishing billable hours from total work hours)",
+      "Interactive sliders and inputs with instant real-time recalculation",
+      "Visual metric highlights and responsive layout for mobile planning",
+      "100% private client-side calculations — your financial numbers are never transmitted or saved"
+    ],
+    "howToUse": {
+      "name": "How to calculate your freelance hourly and retainer rates",
+      "steps": [
+        {
+          "name": "Set Desired Annual Income",
+          "text": "Input the target annual take-home pay you want to earn after business expenses and taxes."
+        },
+        {
+          "name": "Input Overhead Expenses & Taxes",
+          "text": "Add your estimated annual business expenses and anticipated self-employment tax rate percentage."
+        },
+        {
+          "name": "Specify Vacation & Billable Hours",
+          "text": "Define how many vacation weeks you want to take and your realistic weekly billable hours (e.g. 25 hours/week)."
+        },
+        {
+          "name": "Review Rate Recommendations",
+          "text": "Inspect the calculated hourly rate, day rate, and monthly retainer goals needed to reach your target."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why should my freelance hourly rate be higher than my employee hourly rate?",
+        "answer": "As a freelancer, you must cover your own health insurance, retirement contributions, self-employment taxes, equipment costs, and unpaid vacation. Additionally, you cannot bill 40 hours every week due to administrative and business development time."
+      },
+      {
+        "question": "How many billable hours per week should I plan for?",
+        "answer": "Industry averages recommend planning for 20 to 30 billable hours per week. The remaining 10 to 20 hours are typically spent on client communication, invoicing, proposal writing, and marketing."
+      },
+      {
+        "question": "How do I convert my calculated hourly rate into a project-based quote?",
+        "answer": "Multiply your target hourly rate by the estimated hours required to complete the project, then add a 20% scope-creep buffer to account for unexpected client revisions."
+      },
+      {
+        "question": "Are my financial figures stored or tracked?",
+        "answer": "No. All calculations are executed strictly in your local browser memory. Your income goals and business finances remain 100% private to you."
+      }
+    ],
+    "seoDescription": "Free Freelance Hourly Rate Calculator: estimate your optimal hourly rate, day rate, and retainers based on expenses, taxes, and billable hours. 100% private."
+  },
 };

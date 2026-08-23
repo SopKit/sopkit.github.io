@@ -43,6 +43,11 @@ const SpamScoreChecker = dynamic(() => import("@/components/tools/privacy/SpamSc
 const ConsentManagementGenerator = dynamic(() => import("@/components/tools/privacy/ConsentManagementGenerator"), { ssr: false });
 const BreachNotificationGenerator = dynamic(() => import("@/components/tools/privacy/BreachNotificationGenerator"), { ssr: false });
 const DataAnonymizationReportGenerator = dynamic(() => import("@/components/tools/privacy/DataAnonymizationReportGenerator"), { ssr: false });
+const CssGlassmorphismGenerator = dynamic(() => import("@/components/tools/developer/CssGlassmorphismGenerator"), { ssr: false });
+const MarkdownTableGenerator = dynamic(() => import("@/components/tools/developer/MarkdownTableGenerator"), { ssr: false });
+const JsonDiffChecker = dynamic(() => import("@/components/tools/developer/JsonDiffChecker"), { ssr: false });
+const FreelanceHourlyRateCalculator = dynamic(() => import("@/components/tools/calculators/FreelanceHourlyRateCalculator"), { ssr: false });
+const IpSubnetCalculator = dynamic(() => import("@/components/tools/developer/IpSubnetCalculator"), { ssr: false });
 const BaseConverter = dynamic(() => import("@/components/tools/shared/BaseConverter"), { ssr: false });
 const BilibiliDownloader = dynamic(() => import("@/components/tools/downloaders/BilibiliDownloader"), { ssr: false });
 const BioDataMaker = dynamic(() => import("@/components/tools/generators/BioDataMaker"), { ssr: false });
@@ -477,6 +482,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "credit-card-generator": { component: CreditCardGeneratorTool, props: {} },
     "credit-card-validator": { component: CreditCardValidatorTool, props: {} },
     "css-beautifier": { component: BuiltInMarkup, props: {"toolId": "css-beautifier"} },
+    "css-glassmorphism-generator": { component: CssGlassmorphismGenerator, props: {} },
     "css-gradient-generator": { component: CSSGradientTool, props: {} },
     "css-minifier": { component: BuiltInMarkup, props: {"toolId": "css-minifier"} },
     "css-shadow-generator": { component: CSSShadowTool, props: {} },
@@ -518,6 +524,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "font-generator": { component: FontGeneratorTool, props: {} },
     "form-image-size-checker": { component: FormImageSizeChecker, props: {} },
     "free-mp3-extractor": { component: TikTokAudioDownloader, props: {} },
+    "freelance-hourly-rate-calculator": { component: FreelanceHourlyRateCalculator, props: {} },
     "frequency-converter": { component: UniversalUnitConverter, props: {"preset": "frequency"} },
     "gaana-video-downloader": { component: GaanaDownloader, props: {} },
     "get-http-headers": { component: BuiltInSafeHttp, props: {"toolId": "get-http-headers"} },
@@ -572,6 +579,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "instagram-videos-downloader": { component: InstagramDownloader, props: {} },
     "internet-speed-test": { component: InternetSpeedTestTool, props: {} },
     "ip-address-lookup": { component: IPLocationFinderTool, props: {} },
+    "ip-subnet-calculator": { component: IpSubnetCalculator, props: {} },
     "izlesene-video-downloader": { component: IzleseneDownloader, props: {} },
     "javascript-beautifier": { component: BuiltInMarkup, props: {"toolId": "javascript-beautifier"} },
     "javascript-deobfuscator": { component: BuiltInMarkup, props: {"toolId": "javascript-deobfuscator"} },
@@ -586,6 +594,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "jpg-to-pdf-exam-forms": { component: JpgToPdfExam, props: {} },
     "jpg-to-png-converter": { component: ImageConverterTool, props: {} },
     "jpg-to-webp-converter": { component: ImageConverterTool, props: {} },
+    "json-diff-checker": { component: JsonDiffChecker, props: {} },
     "json-editor": { component: JsonFormatterTool, props: {} },
     "json-formatter": { component: JSONFormatterTool, props: {} },
     "json-minify": { component: JSONMinifierTool, props: {} },
@@ -619,6 +628,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "avatar-generator": { component: AvatarGenerator, props: {} },
     "m3u8-downloader": { component: M3u8Downloader, props: {} },
     "margin-calculator": { component: BuiltInCalculators, props: {"kind": "margin-calculator"} },
+    "markdown-table-generator": { component: MarkdownTableGenerator, props: {} },
     "markdown-to-text": { component: MarkdownToText, props: {} },
     "mashable-video-downloader": { component: MashableDownloader, props: {} },
     "md5-generator": { component: HashGeneratorTool, props: {} },

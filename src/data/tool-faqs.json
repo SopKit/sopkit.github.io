@@ -8426,5 +8426,95 @@
       "question": "Does JavaScript Notebook work on mobile devices?",
       "answer": "Yes. JavaScript Notebook is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
+  ],
+  "css-glassmorphism-generator": [
+    {
+      "question": "Does CSS glassmorphism work on all browsers?",
+      "answer": "Yes, modern versions of Chrome, Edge, Firefox, and Safari support CSS backdrop-filter. Our generator automatically includes the -webkit-backdrop-filter prefix to guarantee full compatibility on iOS Safari and macOS."
+    },
+    {
+      "question": "How do I ensure readable text on frosted glass cards?",
+      "answer": "Keep the background opacity between 15% and 35%, apply at least 12px to 20px blur, and use high-contrast text colors or text drop-shadows to ensure compliance with WCAG contrast guidelines."
+    },
+    {
+      "question": "Can I use these styles in Tailwind CSS projects?",
+      "answer": "Yes! Our tool provides pre-formatted Tailwind arbitrary value classes (e.g. backdrop-blur, bg-white/20, border-white/20) that you can copy and paste directly into your JSX or HTML templates."
+    },
+    {
+      "question": "Is there any performance overhead with backdrop-filter?",
+      "answer": "Backdrop blur is GPU-accelerated in modern browsers. To maintain 60 FPS scrolling, avoid stacking dozens of overlapping blurred layers on low-end mobile devices."
+    }
+  ],
+  "markdown-table-generator": [
+    {
+      "question": "Does this table generator support GitHub Flavored Markdown (GFM)?",
+      "answer": "Yes. The generated syntax fully complies with GitHub Flavored Markdown (GFM), CommonMark, GitLab, Notion, Obsidian, and standard Markdown parsers."
+    },
+    {
+      "question": "How does column alignment work in Markdown?",
+      "answer": "Alignment is defined in the separator row beneath the headers. Colons on the left (:---) align left, colons on both sides (:---:) align center, and colons on the right (---:) align right."
+    },
+    {
+      "question": "Can I include links or formatting inside table cells?",
+      "answer": "Yes! You can input standard Markdown inline formatting such as **bold**, *italic*, `code`, and [links](url) directly into any cell."
+    },
+    {
+      "question": "Is there a limit on how many rows I can create?",
+      "answer": "No. Since all operations run locally in your browser memory, you can generate tables with dozens of rows and columns with zero lag."
+    }
+  ],
+  "json-diff-checker": [
+    {
+      "question": "Does this JSON diff tool support nested objects and arrays?",
+      "answer": "Yes. The comparison engine recursively traverses all nested objects and arrays, displaying differences with full dot-notation paths (e.g., user.settings.theme)."
+    },
+    {
+      "question": "Is my confidential JSON data uploaded or logged?",
+      "answer": "No. All JSON parsing, formatting, and diffing calculations are executed purely in your local browser memory. No data is transmitted across the network."
+    },
+    {
+      "question": "What happens if my JSON has a syntax error?",
+      "answer": "The editor immediately displays an inline error message pointing out the invalid syntax, allowing you to correct missing commas or unquoted keys before diffing."
+    },
+    {
+      "question": "Can I compare minified JSON strings?",
+      "answer": "Yes! Simply paste the minified JSON and click the Format button to beautify it before running the comparison."
+    }
+  ],
+  "ip-subnet-calculator": [
+    {
+      "question": "Why are two IP addresses subtracted from the usable host count?",
+      "answer": "In standard IPv4 subnets, the very first address is reserved as the Network ID and the last address is reserved as the Broadcast Address, leaving 2^(32-CIDR) - 2 addresses for assignable devices."
+    },
+    {
+      "question": "What is the difference between a subnet mask and a wildcard mask?",
+      "answer": "A subnet mask identifies network and host bits (e.g., 255.255.255.0), while a wildcard mask is its bitwise inverse (e.g., 0.0.0.255), commonly used in Cisco firewall rules and OSPF configurations."
+    },
+    {
+      "question": "What is a /30 subnet used for?",
+      "answer": "A /30 subnet provides exactly 4 total IP addresses and 2 usable host addresses, making it the industry standard for point-to-point router links to conserve IPv4 addresses."
+    },
+    {
+      "question": "Does this calculator work offline?",
+      "answer": "Yes. All bitwise calculations run locally in your web browser using JavaScript binary arithmetic. No server connection or internet access is required once loaded."
+    }
+  ],
+  "freelance-hourly-rate-calculator": [
+    {
+      "question": "Why should my freelance hourly rate be higher than my employee hourly rate?",
+      "answer": "As a freelancer, you must cover your own health insurance, retirement contributions, self-employment taxes, equipment costs, and unpaid vacation. Additionally, you cannot bill 40 hours every week due to administrative and business development time."
+    },
+    {
+      "question": "How many billable hours per week should I plan for?",
+      "answer": "Industry averages recommend planning for 20 to 30 billable hours per week. The remaining 10 to 20 hours are typically spent on client communication, invoicing, proposal writing, and marketing."
+    },
+    {
+      "question": "How do I convert my calculated hourly rate into a project-based quote?",
+      "answer": "Multiply your target hourly rate by the estimated hours required to complete the project, then add a 20% scope-creep buffer to account for unexpected client revisions."
+    },
+    {
+      "question": "Are my financial figures stored or tracked?",
+      "answer": "No. All calculations are executed strictly in your local browser memory. Your income goals and business finances remain 100% private to you."
+    }
   ]
 }
