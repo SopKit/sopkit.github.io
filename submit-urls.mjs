@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -7,7 +7,6 @@ const __dirname = path.dirname(__filename);
 
 const SITE_URL = "https://sopkit.github.io";
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY || "634a2c77198a45429967eb9dc1252278";
-const BING_API_KEY = process.env.BING_API_KEY || "";
 
 const BATCH_SIZE = 10000;
 
@@ -16,11 +15,10 @@ const STATIC_PAGES = [
 	"search",
 	"about",
 	"contact",
-	"help",
 	"privacy",
 	"terms",
+	"dmca",
 	"blog",
-	"api-docs",
 	"advertise",
 	"services",
 	"tools",
@@ -66,7 +64,7 @@ const STATIC_PAGES = [
 
 function readJson(filePath) {
 	try {
-		const absolute = path.join(__dirname, "..", filePath);
+		const absolute = path.join(__dirname, filePath);
 		return JSON.parse(readFileSync(absolute, "utf8"));
 	} catch (err) {
 		console.warn(`⚠️  Failed to read ${filePath}: ${err.message}`);
@@ -76,27 +74,55 @@ function readJson(filePath) {
 
 function extractArrayFromTs(filePath, variableName) {
 	try {
-		const absolute = path.join(__dirname, "..", filePath);
+		const absolute = path.join(__dirname, filePath);
 		const content = readFileSync(absolute, "utf8");
-		const regex = new RegExp(`export\\s+(?:const|let|var)\\s+${variableName}\\s*[:=]\\s*(\\[.*?\\]|\\{.*?\\})`, "s");
+		const regex = new RegExp(`export\\s+(?:const|let|var)\\s+${variableName}\\s*[:=]\\s*(\\[[\\s\\S]*?\\]);`, "m");
 		const match = content.match(regex);
-		if (!match) return [];
+		if (!match) {
+			// Fallback: extract slugs using regex
+			const slugs = [];
+			const slugMatches = content.matchAll(/slug:\s*["']([^"']+)["']/g);
+			for (const m of slugMatches) {
+				slugs.push({ slug: m[1] });
+			}
+			const routeMatches = content.matchAll(/route:\s*["']([^"']+)["']/g);
+			for (const m of routeMatches) {
+				slugs.push({ route: m[1] });
+			}
+			return slugs;
+		}
 		return JSON.parse(match[1]);
 	} catch (err) {
-		console.warn(`⚠️  Failed to parse ${variableName} from ${filePath}: ${err.message}`);
-		return [];
+		console.warn(`⚠️  Extracting slugs from ${filePath} via regex fallback...`);
+		try {
+			const absolute = path.join(__dirname, filePath);
+			const content = readFileSync(absolute, "utf8");
+			const items = [];
+			const slugMatches = content.matchAll(/slug:\s*["']([^"']+)["']/g);
+			for (const m of slugMatches) {
+				items.push({ slug: m[1] });
+			}
+			const routeMatches = content.matchAll(/route:\s*["']([^"']+)["']/g);
+			for (const m of routeMatches) {
+				items.push({ route: m[1] });
+			}
+			return items;
+		} catch (e) {
+			return [];
+		}
 	}
 }
 
 function extractObjectKeysFromTs(filePath, variableName) {
 	try {
-		const absolute = path.join(__dirname, "..", filePath);
+		const absolute = path.join(__dirname, filePath);
 		const content = readFileSync(absolute, "utf8");
-		const regex = new RegExp(`export\\s+(?:const|let|var)\\s+${variableName}\\s*[:=]\\s*(\\{.*?\\});`, "s");
-		const match = content.match(regex);
-		if (!match) return [];
-		const obj = JSON.parse(match[1]);
-		return Object.keys(obj);
+		const keys = [];
+		const keyMatches = content.matchAll(/["']([a-zA-Z0-9_-]+)["']\s*:\s*\{/g);
+		for (const m of keyMatches) {
+			keys.push(m[1]);
+		}
+		return keys;
 	} catch (err) {
 		console.warn(`⚠️  Failed to parse ${variableName} keys from ${filePath}: ${err.message}`);
 		return [];
@@ -121,10 +147,11 @@ function dedupe(urls) {
 async function postJson(url, payload) {
 	const res = await fetch(url, {
 		method: "POST",
-		headers: { "Content-Type": "application/json" },
+		headers: { "Content-Type": "application/json; charset=utf-8" },
 		body: JSON.stringify(payload),
 	});
-	return { status: res.status, ok: res.ok };
+	const body = await res.text();
+	return { status: res.status, ok: res.ok || res.status === 200 || res.status === 202, body };
 }
 
 async function submitIndexNow(urlList) {
@@ -136,9 +163,11 @@ async function submitIndexNow(urlList) {
 	};
 
 	const endpoints = [
-		{ name: "bing", url: "https://api.indexnow.org/indexnow" },
-		{ name: "yandex", url: "https://yandex.com/indexnow" },
-		{ name: "naver", url: "https://searchadvisor.naver.com/indexnow" },
+		{ name: "IndexNow (Central Hub)", url: "https://api.indexnow.org/indexnow" },
+		{ name: "Bing (IndexNow)", url: "https://www.bing.com/indexnow" },
+		{ name: "Yandex (IndexNow)", url: "https://yandex.com/indexnow" },
+		{ name: "Naver (IndexNow)", url: "https://searchadvisor.naver.com/indexnow" },
+		{ name: "Seznam.cz (IndexNow)", url: "https://search.seznam.cz/indexnow" },
 	];
 
 	const results = {};
@@ -146,7 +175,7 @@ async function submitIndexNow(urlList) {
 		try {
 			const { status, ok } = await postJson(ep.url, payload);
 			results[ep.name] = { status, ok };
-			console.log(`  ${ep.name}: ${status} ${ok ? "✅" : "❌"}`);
+			console.log(`  ${ep.name}: ${status} ${ok ? "✅ Submitted successfully" : "⚠️ " + status}`);
 		} catch (err) {
 			results[ep.name] = { error: err.message };
 			console.log(`  ${ep.name}: ❌ ${err.message}`);
@@ -155,35 +184,8 @@ async function submitIndexNow(urlList) {
 	return results;
 }
 
-async function submitBingApi(urlList) {
-	if (!BING_API_KEY) {
-		console.log("  Bing API: skipped (no BING_API_KEY)");
-		return { skipped: true };
-	}
-
-	try {
-		const res = await fetch(
-			`https://ssl.bing.com/webmaster/api.svc/json/SubmitUrlBatch?apiKey=${encodeURIComponent(BING_API_KEY)}`,
-			{
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({
-					siteUrl: SITE_URL,
-					urlList,
-				}),
-			}
-		);
-		const text = await res.text();
-		console.log(`  Bing API: ${res.status} ${res.ok ? "✅" : "❌"} ${text.slice(0, 120)}`);
-		return { status: res.status, ok: res.ok, body: text };
-	} catch (err) {
-		console.log(`  Bing API: ❌ ${err.message}`);
-		return { error: err.message };
-	}
-}
-
 async function main() {
-	console.log("🚀 Starting URL submission...\n");
+	console.log("🚀 Starting Global Search Engine Submission (IndexNow)...\\n");
 
 	const toolsJson = readJson("src/constants/tools.json");
 	const toolUrls = [];
@@ -193,57 +195,50 @@ async function main() {
 				if (tool.route && !tool.route.startsWith("/search")) {
 					toolUrls.push(normalizeUrl(tool.route));
 				}
+				if (tool.extraSlugs && Array.isArray(tool.extraSlugs)) {
+					for (const slug of tool.extraSlugs) {
+						if (slug) toolUrls.push(normalizeUrl(`/${slug}`));
+					}
+				}
 			}
 		}
 	}
-	console.log(`🔧 Tools: ${toolUrls.length}`);
+	console.log(`🔧 Tool URLs: ${toolUrls.length}`);
 
 	const blogs = extractArrayFromTs("src/constants/blog-data.ts", "blogs");
-	const blogUrls = blogs.map((b) => normalizeUrl(`/blog/${b.slug}`));
-	console.log(`📝 Blogs: ${blogUrls.length}`);
+	const blogUrls = blogs.filter(b => b.slug).map((b) => normalizeUrl(`/blog/${b.slug}`));
+	console.log(`📝 Blog URLs: ${blogUrls.length}`);
 
 	const seoOpportunities = extractArrayFromTs("src/data/seo-opportunities.ts", "seoOpportunities");
-	const seoUrls = seoOpportunities.map((o) => normalizeUrl(o.route));
-	console.log(`📈 SEO Opportunities: ${seoUrls.length}`);
+	const seoUrls = seoOpportunities.filter(o => o.route).map((o) => normalizeUrl(o.route));
+	console.log(`📈 SEO Opportunity URLs: ${seoUrls.length}`);
 
 	const intentKeys = extractObjectKeysFromTs("src/lib/intent-data.ts", "intentData");
 	const intentUrls = intentKeys.map((k) => normalizeUrl(`/${k}`));
-	console.log(`🎯 Intents: ${intentUrls.length}`);
+	console.log(`🎯 Intent Landing URLs: ${intentUrls.length}`);
 
 	const staticUrls = STATIC_PAGES.map((s) => normalizeUrl(s));
-	console.log(`🏠 Static pages: ${staticUrls.length}`);
+	console.log(`🏠 Static Hub URLs: ${staticUrls.length}`);
 
 	const allUrls = dedupe([...staticUrls, ...toolUrls, ...blogUrls, ...seoUrls, ...intentUrls]);
-	console.log(`\n📦 Total unique URLs: ${allUrls.length}`);
+	console.log(`\\n📦 Total Unique URLs to Index: ${allUrls.length}`);
 
 	const batches = [];
 	for (let i = 0; i < allUrls.length; i += BATCH_SIZE) {
 		batches.push(allUrls.slice(i, i + BATCH_SIZE));
 	}
-	console.log(`📦 Batches: ${batches.length} (${BATCH_SIZE} URLs each)\n`);
-
-	let indexNowSuccess = 0;
-	let bingSuccess = 0;
+	console.log(`📦 Batches: ${batches.length} (${BATCH_SIZE} URLs each)\\n`);
 
 	for (let i = 0; i < batches.length; i++) {
 		const batch = batches[i];
-		console.log(`--- Batch ${i + 1}/${batches.length} (${batch.length} URLs) ---`);
-
-		const indexNowResults = await submitIndexNow(batch);
-		const allOk = Object.values(indexNowResults).every((r) => r && r.ok);
-		if (allOk) indexNowSuccess++;
-
-		const bingResults = await submitBingApi(batch);
-		if (bingResults && bingResults.ok) bingSuccess++;
-
+		console.log(`--- Submitting Batch ${i + 1}/${batches.length} (${batch.length} URLs) ---`);
+		await submitIndexNow(batch);
 		if (i < batches.length - 1) {
 			await new Promise((r) => setTimeout(r, 1000));
 		}
 	}
 
-	console.log("\n🎉 Submission complete!");
-	console.log(`  IndexNow: ${indexNowSuccess}/${batches.length} batches succeeded`);
-	console.log(`  Bing API: ${bingSuccess}/${batches.length} batches succeeded`);
+	console.log("\\n🎉 IndexNow Broadcast Finished!");
 }
 
 main().catch((err) => {
