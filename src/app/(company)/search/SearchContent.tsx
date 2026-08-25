@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Search, ArrowRight, Sparkles, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
+import AdPlacement from "@/components/ads/AdPlacement";
 
 interface Tool {
 	id: string;
@@ -231,6 +232,11 @@ function SearchResults({ initialTools, initialCategories }: SearchContentProps) 
 				))}
 			</div>
 
+			{/* Top Search Ad Placement */}
+			<div className="max-w-4xl mx-auto my-4">
+				<AdPlacement placement="after-hero" pageType="category" />
+			</div>
+
 			{/* Results Grid */}
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 				{loading ? (
@@ -303,6 +309,11 @@ function SearchResults({ initialTools, initialCategories }: SearchContentProps) 
 						</button>
 					</div>
 				)}
+			</div>
+
+			{/* Bottom Search Ad Placement */}
+			<div className="max-w-4xl mx-auto my-8">
+				<AdPlacement placement="footer" pageType="category" />
 			</div>
 
 			{/* Live-region for screen readers */}

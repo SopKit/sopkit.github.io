@@ -107,7 +107,42 @@ export default function AdPlacement({
   if (!SHOW_SCRIPTLY_ADS) {
     const slotId = ADSENSE_SLOT_IDS[placement];
     if (!slotId) return null;
-    return <AdSlot slot={slotId} format="auto" label={true} />;
+
+    let format: "auto" | "rectangle" | "horizontal" | "vertical" | "autorelaxed" = "auto";
+    let layout: string | undefined = undefined;
+
+    switch (placement) {
+      case "after-hero":
+        format = "horizontal";
+        break;
+      case "before-tool":
+        format = "auto";
+        break;
+      case "after-tool":
+        format = "rectangle";
+        break;
+      case "in-content":
+        format = "auto";
+        layout = "in-article";
+        break;
+      case "sidebar":
+        format = "vertical";
+        break;
+      case "footer":
+        format = "autorelaxed";
+        break;
+      default:
+        format = "auto";
+    }
+
+    return (
+      <AdSlot
+        slot={slotId}
+        format={format}
+        layout={layout}
+        label={true}
+      />
+    );
   }
 
   // Scriptly Sponsor Flow

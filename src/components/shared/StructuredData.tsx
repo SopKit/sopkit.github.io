@@ -1,5 +1,5 @@
 import { getAllCategories, getAllTools, type Tool } from "@/lib/tools";
-import { TOOL_COUNT_STRING } from "@/constants/config";
+import { TOOL_COUNT_STRING, LAST_UPDATED } from "@/constants/config";
 
 const BASE_URL = "https://sopkit.github.io";
 const allCategories = getAllCategories();
@@ -71,7 +71,7 @@ export default function StructuredData({
 			isAccessibleForFree: true,
 			inLanguage: "en",
 			screenshot: `${BASE_URL}/og-image.jpg`,
-			dateModified: new Date().toISOString().split("T")[0],
+			dateModified: LAST_UPDATED,
 			offers: {
 				"@type": "Offer",
 				price: "0",
@@ -173,7 +173,7 @@ export default function StructuredData({
 						},
 					},
 					datePublished: "2024-01-01T08:00:00+08:00",
-					dateModified: new Date().toISOString(),
+					dateModified: LAST_UPDATED,
 					mainEntityOfPage: {
 						"@type": "WebPage",
 						"@id": toolUrl,

@@ -2,6 +2,7 @@ import { ToolDirectory } from "@/components/landing/ToolDirectory";
 import toolsData from "@/constants/tools.json";
 import { generateMetadata as baseGenerateMetadata } from "@/lib/seo";
 import { SITE_CONFIG } from "@/constants/config";
+import AdPlacement from "@/components/ads/AdPlacement";
 
 interface ToolCategory {
 	key: string;
@@ -64,7 +65,15 @@ export default async function ToolsDirectoryPage() {
 					</p>
 				</div>
 
+				<div className="max-w-4xl mx-auto my-6">
+					<AdPlacement placement="after-hero" pageType="category" />
+				</div>
+
 				<ToolDirectory tools={toolCategories.flatMap(c => c.tools)} />
+
+				<div className="max-w-4xl mx-auto my-12">
+					<AdPlacement placement="footer" pageType="category" />
+				</div>
 			</div>
 		</main>
 	);
