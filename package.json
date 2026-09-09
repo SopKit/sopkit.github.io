@@ -5,6 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "next dev --turbopack",
+		"prebuild": "tsx scripts/validate-registry.ts && tsx scripts/generate-sitemap.ts",
+		"validate:registry": "tsx scripts/validate-registry.ts",
+		"generate:sitemap": "tsx scripts/generate-sitemap.ts",
 		"build": "next build && node scripts/generate-redirects.cjs && node scripts/generate-llms.mjs",
 		"test": "node scripts/test-packages.js",
 		"start": "next start",
@@ -98,6 +101,7 @@
 		"sharp": "^0.34.2",
 		"tailwindcss": "^4",
 		"tsup": "^8.5.1",
+		"tsx": "^4.19.3",
 		"typescript": "^5.9.3",
 		"wrangler": "^4.45.3",
 		"zod": "^4.4.3"

@@ -78,6 +78,7 @@
         "sharp": "^0.34.2",
         "tailwindcss": "^4",
         "tsup": "^8.5.1",
+        "tsx": "^4.19.3",
         "typescript": "^5.9.3",
         "wrangler": "^4.45.3",
         "zod": "^4.4.3",

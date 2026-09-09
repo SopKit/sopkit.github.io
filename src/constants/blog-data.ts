@@ -2086,6 +2086,205 @@ export const blogs: BlogArticle[] = [
     {
       "question": "Does Kimi K3 support image and PDF uploads?",
       "answer": "Yes. Free-tier users can drop in PDFs, images, screenshots, and source files. K3 will extract text, describe visuals, and reason across mixed modalities inside the same conversation thread."
+,    }
+  ]
+},
+{
+  slug: "how-to-resize-photo-for-ssc-exam",
+  title: "How to Resize Photo for SSC Exam Form: Exact Size Guide (2026)",
+  description: "SSC form photo rejected? Here are the sizes SSC usually asks for, why uploads fail, and how to resize your photo and signature to fit in minutes.",
+  date: "2026-08-26",
+  readTimeMinutes: 7,
+  featuredToolRoutes: ["/ssc-photo-resizer", "/ssc-photo-signature-resizer", "/image-compressor"],
+  intro: "Every year, thousands of SSC applications bounce back at the last minute because of one small file: the photograph. Either it weighs too many kilobytes, it is in the wrong format, or the scan is too blurry to pass verification. This guide walks through what SSC forms typically ask for, why uploads get rejected, and how to fix your photo and signature in a few minutes without installing anything.",
+  sections: [
+    {
+      heading: "What Size Photo Does SSC Ask For?",
+      paragraphs: [
+        "Across recent SSC notifications — CGL, CHSL, MTS, GD Constable and others — the photograph requirement has stayed fairly consistent: a recent colour passport-style photo in JPEG format. The physical proportion most forms reference is 3.5 cm x 4.5 cm, the standard Indian passport-size ratio you would recognise from any ID card.",
+        "File size is where people slip up. Depending on the exam, portals commonly specify anything from around 20 KB up to 200 KB per photo, and the form will not accept a file outside that window. Because exact numbers shift between cycles, open the latest notification and read the photograph specification box yourself rather than trusting an old blog post — including this one.",
+        "One more detail worth checking: many SSC portals now flag photos where the face is too small or off-centre. A plain white or light background with your face filling roughly two-thirds of the frame, no caps or sunglasses — these are not just formalities, the automated checks genuinely look for them."
+      ]
+    },
+    {
+      heading: "How to Resize Your Photo Step by Step",
+      paragraphs: [
+        "Upload the picture straight from your phone gallery or desktop folder into the SopKit SSC Photo Resizer. Everything runs inside your browser, so the image never leaves your device.",
+        "Pick the preset matched to your exam. The tool crops to the passport proportion, keeps the JPEG format the portals expect, and squeezes the file into the size band SSC accepts. Check the preview, adjust if your face sits too low in the frame, then download.",
+        "If your original photo is already framed well and you only need to bring the file weight down, the Image Compressor does exactly that — same resolution, smaller kilobytes — which helps when a notification sets a maximum rather than an exact size."
+      ],
+      toolRoutes: ["/ssc-photo-resizer", "/image-compressor"]
+    },
+    {
+      heading: "Common Rejection Reasons (and Quick Fixes)",
+      paragraphs: [
+        "\u2018File size exceeds limit\u2019 is the classic failure. A photo taken on a modern phone can easily weigh 3 to 5 MB, while the portal wants under 200 KB. Compression fixes this in seconds; cropping alone does not, so do not skip the resize step.",
+        "Wrong format comes next. SSC forms want JPEG — not PNG, not HEIC. iPhones default to HEIC these days, so if your upload fails quietly, check the file extension first. Converting to JPEG during resizing solves it in one pass.",
+        "Blurry scans cause quieter failures: the form may accept the file today, but verification rejects it later. If you photographed a printed photo instead of scanning it, watch for glare, shadows and tilted edges. Flat lighting from directly above and the print held parallel to the camera matter more than an expensive camera."
+      ]
+    },
+    {
+      heading: "Do Not Forget the Signature",
+      paragraphs: [
+        "Signatures trip up even more applicants than photos, mostly because the limit is much tighter — recent SSC cycles have commonly asked for a signature file between 10 and 20 KB. Write your signature in black ink on plain white paper, photograph or scan it, then trim the empty margins around it before uploading.",
+        "The SSC Photo & Signature Resizer handles both files in one place, and if you are fighting a strict 10 KB cap, the Signature Resizer Under 20KB brings ink-on-white scans down without turning them illegible."
+      ],
+      toolRoutes: ["/ssc-photo-signature-resizer", "/signature-resizer-under-20kb"]
+    }
+  ],
+  faqs: [
+    {
+      question: "What photo size does SSC require?",
+      answer: "It varies slightly by exam and cycle, but recent notifications commonly specify a colour JPEG between roughly 20 KB and 200 KB in a 3.5 x 4.5 cm passport proportion. Treat the current year\u2019s official notification as the final word — specifications do change."
+    },
+    {
+      question: "Can I take the photo on my phone?",
+      answer: "Yes, plenty of applicants do. Stand against a plain light wall, face the daylight rather than having it behind you, keep your head level, and crop from the chest up. A modern phone camera is more than sharp enough once the file is resized to spec."
+    },
+    {
+      question: "How do I compress the photo without losing clarity?",
+      answer: "Always compress from the original file, not from a screenshot or a WhatsApp forward — every re-save costs quality. A proper resizer reduces kilobytes by trimming hidden metadata and adjusting compression, so at 100–200 KB a well-sourced photo still looks crisp at the size portals display it."
+    },
+    {
+      question: "Is it safe to upload ID photos to online tools?",
+      answer: "Fair concern — ID images deserve caution. SopKit resizers process everything locally in your browser with JavaScript; the photo is never sent to or stored on a server. You can even load the page, disconnect from the internet, and the tool will still work."
+    }
+  ]
+},
+{
+  slug: "upsc-photo-signature-size-guide",
+  title: "UPSC Photo & Signature Size Requirements: Complete Resize Guide",
+  description: "UPSC photo and signature size explained: the KB limits commonly seen in notifications, scan tips that avoid blur, and a fast way to resize both files.",
+  date: "2026-08-26",
+  readTimeMinutes: 8,
+  featuredToolRoutes: ["/upsc-photo-resizer", "/upsc-photo-resizer-350x350"],
+  intro: "The UPSC application form is unforgiving by design — and the photo and signature upload stage is where otherwise careful candidates lose hours. Between pixel dimensions, kilobyte windows and the white-paper rule for signatures, there is a lot to get right in one sitting. Here is what UPSC applications typically expect, plus the quickest way to prepare both files correctly.",
+  sections: [
+    {
+      heading: "What UPSC Usually Specifies",
+      paragraphs: [
+        "For the Civil Services examination and most other UPSC recruitment, the photograph has long been described in pixels rather than centimetres — 350 x 350 pixels is the figure most often quoted, which is why so many dedicated resizers are built around it. On file weight, a range of roughly 20 KB to 300 KB is commonly cited across recent cycles.",
+        "On format, JPG is the safe assumption. The photo itself should be recent, in colour, against a light background, with your full face visible — the same portrait rules you would follow for any government ID, enforced here by automated quality checks that can reject dark, grainy or over-cropped images.",
+        "The usual caveat, stated honestly: specifications get revised. Before uploading, open the current year\u2019s notification on the official UPSC website and confirm the numbers yourself. It takes two minutes and saves a failed submission at 11 pm on deadline day."
+      ]
+    },
+    {
+      heading: "Resizing the Photo Correctly",
+      paragraphs: [
+        "Upload your picture to the UPSC Photo Resizer and it handles the fiddly parts — cropping to the expected proportion while holding the file inside the accepted weight range — with all processing done locally in your browser.",
+        "If your notification spells out the 350 x 350 pixel requirement explicitly, the UPSC 350x350 resizer produces exactly that output with no guesswork. Look at the preview before downloading: your eyes should sit around the upper third of the frame and nothing important should touch the edges."
+      ],
+      toolRoutes: ["/upsc-photo-resizer", "/upsc-photo-resizer-350x350"]
+    },
+    {
+      heading: "Scanning Your Signature So It Passes",
+      paragraphs: [
+        "UPSC wants your signature the way you put it on paper — black or blue ink on plain white paper — uploaded as an image. Sign once, boldly, in the middle of an unruled sheet. Thin, faint signatures turn grey and patchy after compression, which is a common silent-rejection trigger.",
+        "Scan or photograph the sheet under even light, crop tightly around the signature, then run it through the Signature Resizer Under 20KB to land inside the tight file-size window these forms usually set. The paper should stay genuinely white; if it looks grey in the scan, raise the exposure slightly before resizing."
+      ],
+      toolRoutes: ["/signature-resizer-under-20kb"]
+    },
+    {
+      heading: "Filling Multiple Exam Forms This Season?",
+      paragraphs: [
+        "If you are applying to NEET, JEE or CUET alongside UPSC, note that each body sets its own specifications — they overlap but rarely match exactly. Rather than hunting for one universal file, keep your master photo handy and run it through the NEET Photo Resizer, JEE Photo Resizer or CUET Photo Resizer to generate a correctly sized copy for each portal. Two minutes each, and every application gets a file built to its own rules."
+      ],
+      toolRoutes: ["/neet-photo-resizer", "/jee-photo-resizer", "/cuet-photo-resizer"]
+    }
+  ],
+  faqs: [
+    {
+      question: "What size photo is required for the UPSC form?",
+      answer: "A colour JPG of roughly 350 x 350 pixels weighing somewhere between about 20 KB and 300 KB is the specification most often referenced. Confirm against the live notification for your specific exam before uploading, since details are revised occasionally."
+    },
+    {
+      question: "Can I reuse the photo from last year\u2019s application?",
+      answer: "Technically you can reuse any clear image, but UPSC asks for a current photograph, and invigilators compare the printed copy against your face at the exam hall. A photo more than a few months old risks a mismatch — take a fresh one; it costs nothing."
+    },
+    {
+      question: "My signature looks faded after resizing. What went wrong?",
+      answer: "Almost always a thin pen stroke or weak lighting during the scan. Redo it with a bolder pen, photograph under bright, even light, and increase contrast slightly before compressing. A heavier original survives the file-size squeeze far better."
+    },
+    {
+      question: "Does UPSC verify the photo against how I look on exam day?",
+      answer: "Yes — you carry a printed copy of the same photograph to the venue, and invigilators check it against your face. Heavy filters, sunglasses or group-photo crops can cause trouble at the gate even when the file uploaded without complaints."
+    }
+  ]
+},
+{
+  slug: "passport-photo-size-guide-countries",
+  title: "Passport Photo Size Guide: India, US, UK & Visa Photo Dimensions",
+  description: "Passport photo sizes for India, the US, and the UK side by side — millimetres, pixel counts, digital upload limits, and how to get it right at home.",
+  date: "2026-08-26",
+  readTimeMinutes: 8,
+  featuredToolRoutes: ["/passport-photo-maker", "/image-resizer", "/image-compressor"],
+  intro: "Passport photo rules look similar everywhere until you actually apply — then the millimetres stop matching. India wants 35 x 45 mm, the United States insists on 2 x 2 inches, the UK runs everything through a digital checker, and online visa portals add file-size caps on top of it all. This guide lines the main standards up side by side and shows how to produce a compliant photo at home with just a phone.",
+  sections: [
+    {
+      heading: "India: 35 x 45 mm",
+      paragraphs: [
+        "Indian passports and most government forms follow the 35 x 45 mm standard — the same proportion you have stuck on a dozen application forms. Your face, chin to crown, should span roughly three-quarters of the photo height, on a plain white or very light background, printed in colour on glossy paper.",
+        "For online applications the practical trick is thinking in pixels: at typical print resolution, 35 x 45 mm translates to approximately 413 x 531 pixels. Keep the master file larger than that and scale down when needed — enlarging a small image is what makes photos look soft.",
+        "When you need a print-ready result quickly, the Passport Photo Maker India crops your picture to this size and lays it out ready to submit or print."
+      ],
+      toolRoutes: ["/passport-photo-maker-india"]
+    },
+    {
+      heading: "The United States: 2 x 2 Inches",
+      paragraphs: [
+        "US passport photos measure exactly 2 x 2 inches (51 x 51 mm), with the head between 1 and 1⅜ inches from chin to crown. The background must be plain white or off-white, and glasses are not allowed anymore — even prescription ones.",
+        "The square proportion catches out anyone who has only ever shot 35 x 45 mm photos; the American version is noticeably wider. Crop from a fresh photo rather than trimming down an Indian-format print, because forcing a rectangle into a square cuts off either the head or the shoulders."
+      ]
+    },
+    {
+      heading: "The United Kingdom: 35 x 45 mm With Strict Digital Checks",
+      paragraphs: [
+        "UK passport photos share India\u2019s 35 x 45 mm dimensions, but the process leans heavily on an automated digital photo checker that measures head height and eye position. Photos failing that check are rejected before a human ever sees them, so precision matters more than aesthetics here.",
+        "Plain light-grey or white background, neutral expression, mouth closed, nothing covering the face. If your photo keeps failing the online checker, the culprit is almost always head height sitting a few millimetres outside the accepted range — recrop rather than retake."
+      ]
+    },
+    {
+      heading: "Digital Upload Limits for Online Visa Applications",
+      paragraphs: [
+        "Paper photos matter less every year; most visa applications now want a digital file, and those come with byte-level ceilings. The US diversity visa programme famously caps uploads at 240 KB, and several other portals set limits in the same ballpark — anywhere from 100 KB to a few hundred KB depending on the system.",
+        "Two moves cover nearly every case: resize to the pixel dimensions listed in the application guide using the Image Resizer, then run the result through the Image Compressor if the file still exceeds the cap. Work from the original photo each time, not from an already-compressed copy, or compression artifacts start piling up."
+      ],
+      toolRoutes: ["/image-resizer", "/image-compressor"]
+    },
+    {
+      heading: "Taking and Cropping a Compliant Photo at Home",
+      paragraphs: [
+        "Stand about half a metre in front of a plain wall with daylight falling on your face — window light beats ceiling bulbs, which cast nose shadows. Hold the phone at eye level, arm\u2019s length or propped against something steady, no smiling, hair off the forehead. Take several shots; even studio photographers rarely nail it first try.",
+        "Upload the best one to the Passport Photo Maker, crop to your country\u2019s proportions, and check that your eyes land roughly two-thirds up the frame. Processing happens locally in your browser, so the photo stays on your device throughout."
+      ],
+      toolRoutes: ["/passport-photo-maker"]
+    },
+    {
+      heading: "Printing Tips That Save a Second Trip",
+      paragraphs: [
+        "Print at 300 DPI or better on glossy photo paper — ordinary office paper absorbs ink unevenly and dulls skin tones. Lay out multiple copies on one 4 x 6 inch sheet; most photo shops charge the same regardless of how many copies fit on it.",
+        "One quiet warning: home-printed photos fade faster than lab prints. If the document will be checked years from now, paying a photo studio for the final print is cheap insurance after you have already done the hard part yourself.",
+        "Before printing, confirm the output dimensions with the Image Resizer so the millimetres on paper match what the form demands — printers silently shrink or stretch images more often than people expect."
+      ],
+      toolRoutes: ["/image-resizer"]
+    }
+  ],
+  faqs: [
+    {
+      question: "Is the Indian passport photo size the same as the UK\u2019s?",
+      answer: "Yes — both use 35 x 45 mm, so one printed photo physically fits either application. The difference is procedural: the UK runs submissions through an automated digital checker with strict head-height measurements, so crop accuracy matters more there than for most Indian paper applications."
+    },
+    {
+      question: "How large can a digital passport photo file be?",
+      answer: "It depends entirely on the portal. Some accept files up to a few megabytes; stricter systems — the US diversity visa being the best-known example — cap uploads around 240 KB. Check the technical requirements page of your specific application before resizing."
+    },
+    {
+      question: "Can I really take an acceptable passport photo with my phone?",
+      answer: "Modern phones are easily sharp enough. What decides acceptance is the setup: plain background, even daylight, neutral expression and a correct crop. Official services increasingly care about measurements, not whether a studio pressed the shutter."
+    },
+    {
+      question: "Why does my photo look blurry after shrinking it for upload?",
+      answer: "Usually because a small source image was enlarged first and compressed afterwards, multiplying artifacts. Start from the sharpest original you have, resize downward to the required pixels in one step, and compress once — repeatedly re-saving the same file is what ruins detail."
     }
   ]
 }

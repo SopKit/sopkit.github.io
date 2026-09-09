@@ -222,6 +222,16 @@ const YouTubeShortsDownloader = dynamic(() => import("@/components/tools/downloa
 const YoutubeThumbnailDownloader = dynamic(() => import("@/components/tools/downloaders/YoutubeThumbnailDownloader"), { ssr: false });
 const MidjourneyPromptBuilder = dynamic(() => import("@/components/tools/ai/MidjourneyPromptBuilder"), { ssr: false });
 const AiPersonaPromptGenerator = dynamic(() => import("@/components/tools/ai/AiPersonaPromptGenerator"), { ssr: false });
+const AiPromptImprover = dynamic(() => import("@/components/tools/ai/AiPromptImprover"), { ssr: false });
+const AiTokenCounter = dynamic(() => import("@/components/tools/ai/AiTokenCounter"), { ssr: false });
+const PromptTemplateGenerator = dynamic(() => import("@/components/tools/ai/PromptTemplateGenerator"), { ssr: false });
+const NegativePromptGenerator = dynamic(() => import("@/components/tools/ai/NegativePromptGenerator"), { ssr: false });
+const ImagePromptExtender = dynamic(() => import("@/components/tools/ai/ImagePromptExtender"), { ssr: false });
+const LlmOutputCleaner = dynamic(() => import("@/components/tools/ai/LlmOutputCleaner"), { ssr: false });
+const TextChunkSplitter = dynamic(() => import("@/components/tools/ai/TextChunkSplitter"), { ssr: false });
+const FewShotFormatter = dynamic(() => import("@/components/tools/ai/FewShotFormatter"), { ssr: false });
+const PromptAbComparator = dynamic(() => import("@/components/tools/ai/PromptAbComparator"), { ssr: false });
+const XmlPromptFormatter = dynamic(() => import("@/components/tools/ai/XmlPromptFormatter"), { ssr: false });
 
 // Registry of tool ID to dynamic component and preset props
 
@@ -305,6 +315,7 @@ const CodeFormatterTool = dynamic(() => import("@/components/tools/developer/Cod
 const UserAgentParserTool = dynamic(() => import("@/components/tools/developer/UserAgentParserTool"), { ssr: false });
 const HtmlToXmlEntitiesTool = dynamic(() => import("@/components/tools/developer/HtmlToXmlEntitiesTool"), { ssr: false });
 const CssBorderRadiusTool = dynamic(() => import("@/components/tools/developer/CssBorderRadiusTool"), { ssr: false });
+const FfmpegCommandGenerator = dynamic(() => import("@/components/tools/developer/FfmpegCommandGenerator"), { ssr: false });
 const FaviconGeneratorProTool = dynamic(() => import("@/components/tools/image/FaviconGeneratorProTool"), { ssr: false });
 const ImageMetadataRemoverTool = dynamic(() => import("@/components/tools/image/ImageMetadataRemoverTool"), { ssr: false });
 const ImageColorPicker = dynamic(() => import("@/components/tools/image/ImageColorPicker"), { ssr: false });
@@ -428,6 +439,8 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "ai-persona-prompt-generator": { component: AiPersonaPromptGenerator, props: {} },
     "ai-music-generator": { component: AIMusicGeneratorTool, props: {} },
     "ai-poem-generator": { component: TextGeneratorTool, props: {} },
+    "ai-prompt-improver": { component: AiPromptImprover, props: {} },
+    "ai-token-counter": { component: AiTokenCounter, props: {} },
     "ai-voice-generator": { component: AIVoiceGeneratorTool, props: {} },
     "akillitv-video-downloader": { component: AkillitvDownloader, props: {} },
     "all-downloaders": { component: AllDownloaders, props: {} },
@@ -514,11 +527,13 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "facebook-video-downloader": { component: FacebookDownloader, props: {} },
     "fake-chat-generator": { component: FakeChatGeneratorTool, props: {} },
     "fancy-text-generator": { component: FancyTextGenerator, props: {} },
+    "ffmpeg-command-generator": { component: FfmpegCommandGenerator, props: {} },
     "faq-schema-generator": { component: FaqSchemaGenerator, props: {} },
     "favicon-generator": { component: FaviconGeneratorTool, props: {} },
     "fb-clip-downloader": { component: FacebookDownloader, props: {} },
     "fb-video-saver": { component: FacebookDownloader, props: {} },
     "febspot-video-downloader": { component: FebspotDownloader, props: {} },
+    "few-shot-formatter": { component: FewShotFormatter, props: {} },
     "flickr-video-downloader": { component: FlickrDownloader, props: {} },
     "flip-image": { component: ImageResizerTool, props: {} },
     "font-generator": { component: FontGeneratorTool, props: {} },
@@ -547,7 +562,6 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "html-beautifier": { component: BuiltInMarkup, props: {"toolId": "html-beautifier"} },
     "html-decoder": { component: BuiltInMarkup, props: {"toolId": "html-decoder"} },
     "html-encoder": { component: BuiltInMarkup, props: {"toolId": "html-encoder"} },
-    "html-minifier": { component: BuiltInMarkup, props: {"toolId": "html-minifier"} },
     "http-status-code-checker": { component: BuiltInSafeHttp, props: {"toolId": "http-status-code-checker"} },
     "ibps-photo-resizer": { component: ExamPhotoResizer, props: {"examName": "IBPS"} },
     "ico-to-png-converter": { component: ImageConverterTool, props: {} },
@@ -562,6 +576,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "image-dpi-converter": { component: ResizeImageCm, props: {"defaultUnit": "inch", "defaultDpi": "300"} },
     "image-editor": { component: ImageResizerTool, props: {} },
     "image-enlarger": { component: ImageResizerTool, props: {} },
+    "image-prompt-extender": { component: ImagePromptExtender, props: {} },
     "image-resizer": { component: ImageResizerTool, props: {} },
     "image-to-base64-converter": { component: ImageToBase64Tool, props: {} },
     "image-to-pdf": { component: ImageToPDFTool, props: {} },
@@ -616,6 +631,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "likee-video-downloader": { component: LikeeDownloader, props: {} },
     "line-sorter": { component: LineSorterTool, props: {} },
     "linkedin-video-downloader": { component: LinkedinDownloader, props: {} },
+    "llm-output-cleaner": { component: LlmOutputCleaner, props: {} },
     "loan-calculator": { component: BuiltInCalculators, props: {"kind": "loan-calculator"} },
     "logo-generator": { component: LogoGeneratorTool, props: {} },
     "lorem-ipsum": { component: LoremIpsumGeneratorTool, props: {} },
@@ -640,6 +656,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "mp4-to-mp3": { component: TikTokMP3Converter, props: {} },
     "mxtakatak-video-downloader": { component: MxTakaTakDownloader, props: {} },
     "neet-photo-resizer": { component: ExamPhotoResizer, props: {"examName": "NEET"} },
+    "negative-prompt-generator": { component: NegativePromptGenerator, props: {} },
     "ninegag-video-downloader": { component: NinegagDownloader, props: {} },
     "number-generator": { component: NumberGeneratorTool, props: {} },
     "number-to-roman-numerals": { component: RomanNumeralTool, props: {} },
@@ -688,6 +705,8 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "pressure-converter": { component: UniversalUnitConverter, props: {"preset": "pressure"} },
     "privacy-policy-generator": { component: LegalTemplateGenerator, props: {} },
     "probability-calculator": { component: BuiltInCalculators, props: {"kind": "probability-calculator"} },
+    "prompt-a-b-comparator": { component: PromptAbComparator, props: {} },
+    "prompt-template-generator": { component: PromptTemplateGenerator, props: {} },
     "puhutv-video-downloader": { component: PuhutvDownloader, props: {} },
     "qr-code-decoder": { component: QrReaderPremium, props: {} },
     "qr-code-generator": { component: QrGeneratorPremium, props: {} },
@@ -743,6 +762,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "telegram-video-downloader": { component: TelegramDownloader, props: {} },
     "temperature-converter": { component: UniversalUnitConverter, props: {"preset": "temperature"} },
     "terms-and-condition-generator": { component: LegalTemplateGenerator, props: {} },
+    "text-chunk-splitter": { component: TextChunkSplitter, props: {} },
     "text-compare": { component: TextCompareTool, props: {} },
     "text-repeater": { component: TextRepeaterTool, props: {} },
     "text-sorter": { component: LineSorterTool, props: {} },
@@ -801,6 +821,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "word-to-number-converter": { component: WordToNumberTool, props: {} },
     "word-to-pdf": { component: WordToPDF, props: {} },
     "wordpress-theme-detector": { component: BuiltInSafeHttp, props: {"toolId": "wordpress-theme-detector"} },
+    "xml-prompt-formatter": { component: XmlPromptFormatter, props: {} },
     "xml-to-json-converter": { component: BuiltInSerialization, props: {"toolId": "xml-to-json-converter"} },
     "youtube-channel-age-checker": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-channel-banner-downloader": { component: YouTubeDownloader, props: {} },
@@ -813,16 +834,12 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "youtube-downloader": { component: YouTubeDownloader, props: {} },
     "youtube-hashtag-extractor": { component: YouTubeDownloader, props: {} },
     "youtube-hashtag-generator": { component: YouTubeChannelIDFinderTool, props: {} },
-    "youtube-money-calculator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-region-restriction-checker": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-shorts-downloader": { component: YouTubeShortsDownloader, props: {} },
-    "youtube-subscribe-link-generator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-tag-extractor": { component: YouTubeDownloader, props: {} },
     "youtube-tag-generator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-thumbnail-downloader": { component: YoutubeThumbnailDownloader, props: {} },
-    "youtube-timestamp-link-generator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-title-extractor": { component: YouTubeDownloader, props: {} },
-    "youtube-title-length-checker": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-video-count-checker": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-video-downloader": { component: YouTubeDownloader, props: {} },
     "youtube-video-statistics": { component: YouTubeChannelIDFinderTool, props: {} },

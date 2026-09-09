@@ -8516,5 +8516,203 @@
       "question": "Are my financial figures stored or tracked?",
       "answer": "No. All calculations are executed strictly in your local browser memory. Your income goals and business finances remain 100% private to you."
     }
+  ],
+  "ai-prompt-improver": [
+    {
+      "question": "How does the scoring work?",
+      "answer": "Each prompt is checked against four dimensions — role definition, context, constraints, and output format — and you get a per-dimension breakdown instead of a single opaque grade, so you can see exactly what your draft is missing."
+    },
+    {
+      "question": "What are the RTF and TAG frameworks mentioned on the page?",
+      "answer": "RTF stands for Role, Task, Format and TAG for Task, Action, Goal; both are lightweight structures that give the model an unambiguous job description. Pick either one and the rewriter reshapes your text to fit it."
+    },
+    {
+      "question": "Will my prompts be uploaded or stored anywhere?",
+      "answer": "No. Scoring and rewriting run entirely inside your browser tab, so drafts containing confidential product plans or client details never leave your machine."
+    },
+    {
+      "question": "Can I use this to improve Midjourney or other image prompts?",
+      "answer": "It is tuned for text prompts sent to chat models, but image prompts still benefit: the scorer flags missing subject detail and vague wording before you paste into Midjourney or Flux."
+    }
+  ],
+  "ai-token-counter": [
+    {
+      "question": "How accurate is the token estimation?",
+      "answer": "The counter uses a characters-per-token heuristic rather than a real model tokenizer, so expect estimates within roughly 10–20% of the true count. Code, non-English text, and unusual vocabulary tend to produce more tokens per character than plain English prose."
+    },
+    {
+      "question": "Where do the API prices come from?",
+      "answer": "The price table mirrors publicly listed rates for GPT-5, Claude, Gemini, and Llama models and is intended for ballpark budgeting. Always double-check current provider pricing before committing spend."
+    },
+    {
+      "question": "Can I paste multiple texts at once?",
+      "answer": "Yes. Drop a whole document, chat log, or several paragraphs into the input and the tool totals tokens across everything in one pass."
+    },
+    {
+      "question": "Is my text transmitted to a server?",
+      "answer": "Nothing is sent over the network — counting happens locally in JavaScript, so even proprietary prompts or customer transcripts stay on your device."
+    }
+  ],
+  "prompt-template-generator": [
+    {
+      "question": "How do {{variables}} work in a template?",
+      "answer": "Wrap any placeholder in double curly braces, like {{audience}} or {{tone}}, and you get a fill-in slot you can swap out each time you reuse the prompt. The live preview shows the finished result with your current values applied."
+    },
+    {
+      "question": "What presets are included?",
+      "answer": "There are starting templates for writing, coding, and marketing tasks — for example a blog-outline template or a code-review template — so you are not always beginning from a blank editor."
+    },
+    {
+      "question": "How do I reuse a template later?",
+      "answer": "Copy the finished template with its placeholders intact and keep it in your notes app or snippet manager; paste it back into the generator whenever you want fresh values filled in."
+    },
+    {
+      "question": "Does building templates cost anything or require an account?",
+      "answer": "No account, no tier limits, no cost. Templates are built and previewed locally in your browser."
+    }
+  ],
+  "negative-prompt-generator": [
+    {
+      "question": "What exactly is a negative prompt?",
+      "answer": "It is a list of things you do not want in the generated image — blurry hands, watermarks, distorted faces, washed-out contrast — passed to the model alongside your main prompt so it steers away from those artifacts."
+    },
+    {
+      "question": "Do all image models handle negative prompts the same way?",
+      "answer": "Stable Diffusion and Flux accept a dedicated negative prompt field, while Midjourney handles exclusions through its --no parameter instead. The tool produces output suited to whichever convention you pick."
+    },
+    {
+      "question": "Which categories of terms can I add?",
+      "answer": "Terms are grouped into buckets such as rendering artifacts, anatomy errors, quality flaws, and unwanted styles, so you can assemble a list quickly instead of retyping common exclusions from memory."
+    },
+    {
+      "question": "Should I include every term in my negative prompt?",
+      "answer": "No — overloaded negative lists can bleed into the positive result and dull your image. Start with a handful of terms relevant to your subject and add more only when a specific flaw keeps appearing."
+    }
+  ],
+  "image-prompt-extender": [
+    {
+      "question": "What kinds of modifiers does it add?",
+      "answer": "Curated phrases across five groups: artistic style, lighting setups, camera and lens choices, mood, and level of detail. Each group offers multiple options you can toggle on or off."
+    },
+    {
+      "question": "Will it replace my original prompt text?",
+      "answer": "No. Your prompt stays as the base and the selected modifiers get appended to it, so you always see the combined result before copying anything."
+    },
+    {
+      "question": "Is the extended output compatible with DALL·E as well as Midjourney?",
+      "answer": "Yes. The result stays plain descriptive text without model-specific syntax, so it works in DALL·E just as it does in Midjourney, Stable Diffusion, or Flux."
+    },
+    {
+      "question": "Why does my extended prompt still give inconsistent results?",
+      "answer": "Modifiers improve the odds but cannot guarantee outcomes; image models interpret style words probabilistically. Locking in one lighting phrase and one camera phrase at a time helps isolate what is actually changing."
+    }
+  ],
+  "llm-output-cleaner": [
+    {
+      "question": "What kinds of junk does it remove?",
+      "answer": "Markdown code fences, conversational openers like “Sure! Here is the code…”, stray backticks, and trailing commentary that models often wrap around their actual answer."
+    },
+    {
+      "question": "How does the JSON extraction work?",
+      "answer": "The cleaner scans the text for the first balanced {...} or [...] block, isolates it from surrounding chatter, and lets you confirm the extracted payload parses before you copy it."
+    },
+    {
+      "question": "What is the difference between markdown and plain text modes?",
+      "answer": "Markdown mode keeps headings, lists, and links but strips fences and prefixes; plain text mode flattens everything down to raw characters. Choose based on where the output is going next."
+    },
+    {
+      "question": "Does cleaning require an internet connection?",
+      "answer": "Once the page has loaded, everything runs offline in your browser — convenient when working with internal model output you would rather not push through any web service."
+    }
+  ],
+  "text-chunk-splitter": [
+    {
+      "question": "Which units can I split by?",
+      "answer": "Tokens, words, or characters. Token mode matters most for embedding APIs that bill and truncate by token count, while word and character modes fit simpler length limits."
+    },
+    {
+      "question": "Why would chunks need overlap?",
+      "answer": "Overlap keeps a stretch of text shared across chunk boundaries, so a sentence cut in half still appears whole in at least one retrieved chunk during RAG search. Without it, answers can miss context sitting right on a cut point."
+    },
+    {
+      "question": "What does paragraph-aware splitting change?",
+      "answer": "When possible, cuts land on paragraph breaks instead of mid-sentence, keeping chunks semantically coherent — which usually improves retrieval quality compared with arbitrary character slicing."
+    },
+    {
+      "question": "How do I get the chunks out?",
+      "answer": "Export the complete set in one click, ready to feed straight into an embedding pipeline or a vector database upload script."
+    }
+  ],
+  "few-shot-formatter": [
+    {
+      "question": "What input does the formatter expect?",
+      "answer": "Your example pairs — one input and its desired output each — typed or pasted in, however rough. It then assembles them into a cleanly delimited block the model can pattern-match against."
+    },
+    {
+      "question": "Which output styles can I choose between?",
+      "answer": "Numbered turns, XML-style tags, or markdown separators. Consistent delimiters matter because models rely on them to detect where each example begins and ends."
+    },
+    {
+      "question": "How many examples should a few-shot block contain?",
+      "answer": "Two to five covers most tasks; beyond that, accuracy gains flatten while prompt length and cost keep climbing. Consistency among your pairs matters far more than quantity."
+    },
+    {
+      "question": "Can I mix examples from different task types in one block?",
+      "answer": "Better not to. Mixing purposes blurs the pattern the model is meant to imitate, so keep each block focused on a single task and format."
+    }
+  ],
+  "prompt-a-b-comparator": [
+    {
+      "question": "What does the word-level diff highlight?",
+      "answer": "Added and removed words between version A and version B, much like a git diff, so reworded instructions stand out immediately instead of hiding in a wall of text."
+    },
+    {
+      "question": "How is the structure score calculated?",
+      "answer": "It checks how many recognized components each prompt contains — a defined role, background context, explicit constraints, and a stated output format — then scores accordingly, revealing at a glance which version is better organized."
+    },
+    {
+      "question": "Are token counts included in the comparison?",
+      "answer": "Both versions receive a token estimate plus the delta between them — handy when a rewrite gained clarity but also doubled the cost per call."
+    },
+    {
+      "question": "Are my comparisons saved between sessions?",
+      "answer": "Nothing persists — closing the tab discards the history, since all analysis happens in memory within your browser."
+    }
+  ],
+  "xml-prompt-formatter": [
+    {
+      "question": "Why does Claude respond well to XML tags?",
+      "answer": "Claude models were trained on documents rich in markup, so tags like <instructions> and <examples> act as clear signposts that separate competing parts of a long prompt and reduce instruction-following mistakes."
+    },
+    {
+      "question": "Which sections can I wrap in tags?",
+      "answer": "Context, instructions, examples, and thinking each get their own wrapper, mirroring the layout Anthropic’s own guidance suggests for complex prompts."
+    },
+    {
+      "question": "Can I use custom tag names?",
+      "answer": "Yes — beyond the standard sections you can name tags to match your workflow, as long as they stay consistent and descriptive; the model responds to structure more than to specific names."
+    },
+    {
+      "question": "How do I move the formatted prompt into Claude?",
+      "answer": "One click copies the fully tagged prompt to your clipboard, ready to paste straight into the Claude console, an API call, or any chat window."
+    }
+  ],
+  "ffmpeg-command-generator": [
+    {
+      "question": "Do I need FFmpeg installed to use this tool?",
+      "answer": "Yes. The tool only writes the command string; execution happens on your own machine, so install FFmpeg first — brew install ffmpeg on macOS or apt install ffmpeg on Ubuntu — then run the generated command yourself."
+    },
+    {
+      "question": "Which conversions can it build commands for?",
+      "answer": "Everyday jobs like MP4 and WebM conversion, compression, trimming by timestamp, animated GIF creation, and extracting audio from video, each with sensible defaults you can override."
+    },
+    {
+      "question": "Can I control codec and quality settings?",
+      "answer": "Codec dropdowns (libx264, libx265, VP9, and others), bitrate and CRF controls, resolution presets, and basic filters are exposed directly, and the command updates live as you adjust them."
+    },
+    {
+      "question": "Where should I run the generated command?",
+      "answer": "Open a terminal in the folder containing your video so the filename in the command resolves correctly, paste the line in, and press enter — FFmpeg writes the output next to the original file."
+    }
   ]
 }

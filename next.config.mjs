@@ -9,6 +9,9 @@ const toolsPath = path.join(__dirname, "src", "constants", "tools.json");
 const toolsData = JSON.parse(fs.readFileSync(toolsPath, "utf8"));
 
 const nextConfig = {
+	reactStrictMode: true,
+	basePath: "",
+
 	// TypeScript configuration
 	typescript: {
 		ignoreBuildErrors: true,

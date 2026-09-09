@@ -67,6 +67,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{url: `${BASE_URL}/top-10-free-online-tools-for-seo`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{url: `${BASE_URL}/top-10-json-tools-online`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{url: `${BASE_URL}/new-tools`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+		{ url: `${BASE_URL}/online-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
+		{ url: `${BASE_URL}/embed-tools`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
+		{ url: `${BASE_URL}/best-free-ilovepdf-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
+		{ url: `${BASE_URL}/best-free-adobe-acrobat-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
+		{ url: `${BASE_URL}/best-free-canva-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 	];
 
 	// Use site deployment date for tool pages (staggered by popularity)

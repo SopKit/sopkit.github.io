@@ -1170,6 +1170,9 @@ Canonical Base URL: https://sopkit.github.io
 #### [IP Subnet Calculator](https://sopkit.github.io/ip-subnet-calculator)
 - **Description**: Calculate IPv4 subnet masks, CIDR network ranges, usable host IPs, broadcast addresses, and wildcard masks instantly with 100% local browser execution.
 
+#### [FFmpeg Command Generator](https://sopkit.github.io/ffmpeg-command-generator)
+- **Description**: Generate FFmpeg commands for video conversion, compression, trimming, GIF creation, audio extraction, and common encoding workflows with codec, bitrate, resolution, and filter controls.
+
 
 ### Utility Tools Tools
 
@@ -1523,6 +1526,36 @@ Canonical Base URL: https://sopkit.github.io
 
 #### [AI Persona & System Prompt Generator](https://sopkit.github.io/ai-persona-prompt-generator)
 - **Description**: Generate optimized system prompts and expert personas for ChatGPT, Claude, and Gemini. Choose roles, tone, and formatting constraints for better AI replies.
+
+#### [AI Prompt Improver](https://sopkit.github.io/ai-prompt-improver)
+- **Description**: Score any AI prompt on role, context, constraints, and output format, then rewrite it with proven frameworks like RTF and TAG in one click. Free and 100% browser-based.
+
+#### [AI Token Counter & Cost Calculator](https://sopkit.github.io/ai-token-counter)
+- **Description**: Estimate tokens and API costs for GPT-5, Claude, Gemini, and Llama before you hit send. Live estimates, model price table, and batch paste support that runs fully in your browser.
+
+#### [Prompt Template Generator](https://sopkit.github.io/prompt-template-generator)
+- **Description**: Build reusable AI prompt templates with {{variables}}, presets for writing, coding, and marketing, live preview, and copy-ready output. Private and free forever.
+
+#### [Negative Prompt Generator](https://sopkit.github.io/negative-prompt-generator)
+- **Description**: Compose effective negative prompts for Stable Diffusion, Midjourney, and Flux from categorized lists covering artifacts, anatomy, quality, and style terms.
+
+#### [AI Image Prompt Extender](https://sopkit.github.io/image-prompt-extender)
+- **Description**: Extend image prompts with curated style, lighting, camera, mood, and detail modifiers for Midjourney, Stable Diffusion, DALL·E, and Flux.
+
+#### [LLM Output Cleaner](https://sopkit.github.io/llm-output-cleaner)
+- **Description**: Strip markdown code fences, chat prefixes, and stray artifacts from AI output. Extract clean JSON, markdown, or plain text in one click, entirely offline.
+
+#### [Text Chunk Splitter for RAG](https://sopkit.github.io/text-chunk-splitter)
+- **Description**: Split long documents into overlapping chunks by tokens, words, or characters for RAG pipelines and embedding APIs. Paragraph-aware splitting with instant export.
+
+#### [Few-Shot Prompt Formatter](https://sopkit.github.io/few-shot-formatter)
+- **Description**: Convert example input/output pairs into clean few-shot prompt blocks with numbered turns, XML tags, or markdown separators for better model performance.
+
+#### [Prompt A/B Comparator](https://sopkit.github.io/prompt-a-b-comparator)
+- **Description**: Compare two AI prompts side by side with word-level diffs, token estimates, and structure scores to see exactly what changed between versions.
+
+#### [XML Prompt Formatter for Claude](https://sopkit.github.io/xml-prompt-formatter)
+- **Description**: Structure prompts with XML tags for Claude models: wrap context, instructions, examples, and thinking sections in tags, then copy the organized result.
 
 
 ### Other Tools Tools

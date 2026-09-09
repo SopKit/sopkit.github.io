@@ -36,6 +36,8 @@ export interface Tool {
 	description: string;
 	route: string;
 	category: string;
+	slug?: string;
+	path?: string;
 	extraSlugs?: string[];
 	popular?: boolean;
 	seoTitle?: string;
@@ -53,6 +55,8 @@ export interface Tool {
 	reviews?: any[];
 	article?: string;
 }
+
+export type ToolItem = Tool;
 
 export interface Category {
 	name: string;

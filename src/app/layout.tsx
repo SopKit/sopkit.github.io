@@ -58,50 +58,6 @@ export const metadata: Metadata = {
 		template: "%s",
 	},
 	description: `Professional online toolkit with ${TOOL_COUNT_STRING} free tools for image compression, PDF editing, video conversion, SEO analysis, developer utilities, text processing, and more. Free to use with no signup required.`,
-	keywords: [
-		// Primary keywords
-		"free online tools",
-		"image compressor",
-		"pdf tools",
-		"video converter",
-		"seo tools",
-		"developer tools",
-		"online toolkit",
-
-		// Long-tail keywords
-		"compress images online free",
-		"pdf merger free online",
-		"video to gif converter",
-		"password generator secure",
-		"qr code generator free",
-		"color picker tool",
-		"base64 encoder decoder",
-		"text case converter",
-		"url shortener free",
-		"json formatter online",
-		"ai text to speech free",
-		"video downloader online",
-
-		// Semantic keywords
-		"online utilities",
-		"web tools",
-		"digital toolkit",
-		"file converter",
-		"image editor online",
-		"document tools",
-		"media converter",
-		"text tools",
-		"productivity tools",
-		"browser tools",
-
-		// Technical keywords
-		"no registration tools",
-		"privacy focused tools",
-		"client side processing",
-		"secure online tools",
-		"professional web tools",
-		"instant online tools",
-	].join(", "),
 	authors: [{ name: "SopKit Team", url: "https://sopkit.github.io" }],
 	creator: "SopKit",
 	publisher: "SopKit",
@@ -219,6 +175,7 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning className={inter.variable}>
 			<head>
 				<meta charSet="utf-8" />
+				<Script src="/coi-serviceworker.min.js" strategy="beforeInteractive" />
 
 				{/* Preconnect only to the most critical third-party origin */}
 				<link

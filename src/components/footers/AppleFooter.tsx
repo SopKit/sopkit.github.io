@@ -83,6 +83,16 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 									NPM Packages
 								</Link>
 							</li>
+							<li>
+								<Link href="/online-tools" className="text-muted-foreground hover:text-foreground transition-colors">
+									Online Tools
+								</Link>
+							</li>
+							<li>
+								<Link href="/embed-tools" className="text-muted-foreground hover:text-foreground transition-colors">
+									Embed Widgets
+								</Link>
+							</li>
 						</ul>
 					</div>
 
