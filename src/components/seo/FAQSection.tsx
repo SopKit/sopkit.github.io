@@ -49,8 +49,8 @@ export default function FAQSection({
 	title = "Frequently Asked Questions",
 	showSchema = true,
 	variant = "accordion", // "accordion", "grid", "list"
-	categoryTitle,
-	toolName,
+	categoryTitle = "",
+	toolName = "",
 }) {
 	// const [openItems, setOpenItems] = useState(new Set());
 

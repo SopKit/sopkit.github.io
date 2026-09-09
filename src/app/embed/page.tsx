@@ -35,6 +35,7 @@ export default function EmbedPage() {
 				<div className="text-white">Loading player...</div>
 			</div>
 		}>
+			<meta name="robots" content="noindex, nofollow" />
 			<EmbedContent />
 		</Suspense>
 	);

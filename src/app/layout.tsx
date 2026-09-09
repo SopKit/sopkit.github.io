@@ -72,6 +72,7 @@ export const metadata: Metadata = {
 	},
 	metadataBase: new URL(SITE_URL),
 	alternates: {
+		canonical: `${SITE_URL}/`,
 		types: {
 			"application/rss+xml": [{ url: "/feed.xml", title: "SopKit RSS Feed" }],
 		},

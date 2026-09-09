@@ -12,6 +12,7 @@ export default function ProRedirectPage() {
 
 	return (
 		<div className="min-h-screen bg-background flex items-center justify-center text-center p-6 font-sans">
+			<meta name="robots" content="noindex, follow" />
 			<div className="space-y-3">
 				<div className="h-6 w-6 border-2 border-primary border-t-transparent animate-spin rounded-full mx-auto" />
 				<h1 className="text-base font-bold text-foreground">Redirecting to Tools...</h1>

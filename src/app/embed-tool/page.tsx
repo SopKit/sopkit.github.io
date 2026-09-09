@@ -101,6 +101,7 @@ export default function EmbedToolPage() {
 				<div className="text-sm text-muted-foreground font-semibold animate-pulse">Loading tool sandbox...</div>
 			</div>
 		}>
+			<meta name="robots" content="noindex, nofollow" />
 			<EmbedToolContent />
 		</Suspense>
 	);

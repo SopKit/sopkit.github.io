@@ -27,13 +27,32 @@ interface MetadataProps {
 }
 
 /**
+ * Per-category Open Graph images (files in public/og-images/).
+ * Pages for these categories get a tailored social preview instead of the
+ * generic site-wide OG image, which lifts click-through from social/search.
+ */
+const CATEGORY_OG_IMAGES: Record<string, string> = {
+	developer: "/og-images/developer-tools.png",
+	image: "/og-images/image-tools.png",
+	pdf: "/og-images/pdf-tools.png",
+	seo: "/og-images/seo-tools.png",
+	text: "/og-images/text-tools.png",
+};
+
+export function resolveOgImage(category: string | undefined, explicitImage?: string): string {
+	if (explicitImage) return explicitImage;
+	if (category && CATEGORY_OG_IMAGES[category]) return CATEGORY_OG_IMAGES[category];
+	return "/og-image.png";
+}
+
+/**
  * Generate standard metadata for a page
  */
 export function generateMetadata({
 	title,
 	description,
 	path = "",
-	image = "/og-image.jpg",
+	image = "/og-image.png",
 	noIndex = false,
 	keywords = [],
 }: MetadataProps): Metadata {
@@ -147,7 +166,7 @@ export function generateToolMetadata({
 		title,
 		description: desc,
 		path: route,
-		image: "/og-image.jpg",
+		image: resolveOgImage(category),
 		keywords,
 	});
 }
