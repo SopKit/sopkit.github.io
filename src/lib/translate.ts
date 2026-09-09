@@ -43,8 +43,8 @@ class TranslateEngine {
 				return text;
 			}
 
-			const data = await response.json();
-			const translatedText = data.data.translations[0].translatedText;
+			const data: any = await response.json();
+			const translatedText = data?.data?.translations?.[0]?.translatedText || text;
 
 			this.cache[cacheKey] = translatedText;
 			return translatedText;
