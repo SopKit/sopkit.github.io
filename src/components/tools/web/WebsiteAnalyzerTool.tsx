@@ -98,8 +98,8 @@ export default function WebsiteAnalyzerTool() {
 			};
 
 			setResults(mockResults);
-		} catch (_err) {
-			setError(err.message);
+		} catch (_err: any) {
+			setError(_err?.message || "Analysis failed");
 		} finally {
 			setLoading(false);
 		}

@@ -55,7 +55,7 @@ export default function PDFRepair() {
             // Saving without object streams forces pdf-lib to expand compressed stream structures,
             // repairing indexing issues that prevent older PDF readers from parsing the pages.
             const pdfBytes = await pdfDoc.save({ useObjectStreams: !disableObjectStreams });
-            const blob = new Blob([pdfBytes], { type: "application/pdf" });
+            const blob = new Blob([pdfBytes as any], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
             setDownloadUrl(url);
             

@@ -35,15 +35,15 @@ export default function TeraboxVideoPlayer({ videoData }) {
 		}
 
 		// Handle M3U8 streams with HLS.js
+		const win = typeof window !== "undefined" ? (window as any) : null;
 		if (streamUrl?.includes(".m3u8")) {
 			if (
 				hlsLoaded &&
-				typeof window !== "undefined" &&
-				window.Hls?.isSupported()
+				win?.Hls?.isSupported()
 			) {
 				console.log("🎵 Loading M3U8 stream with HLS.js:", streamUrl);
 
-				const hls = new window.Hls({
+				const hls = new win.Hls({
 					enableWorker: true,
 					lowLatencyMode: false,
 					backBufferLength: 90,
@@ -54,12 +54,12 @@ export default function TeraboxVideoPlayer({ videoData }) {
 				hls.loadSource(streamUrl);
 				hls.attachMedia(video);
 
-				hls.on(window.Hls.Events.MANIFEST_PARSED, () => {
+				hls.on(win.Hls.Events.MANIFEST_PARSED, () => {
 					console.log("✅ HLS manifest parsed successfully");
 					setIsLoading(false);
 				});
 
-				hls.on(window.Hls.Events.ERROR, (event, data) => {
+				hls.on(win.Hls.Events.ERROR, (event: any, data: any) => {
 					console.error("❌ HLS error:", event, data);
 					if (data.fatal) {
 						setVideoError(true);

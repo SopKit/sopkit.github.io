@@ -79,7 +79,7 @@ export async function getYouTubeVideoMetadata(videoId: string): Promise<YouTubeM
 			throw new Error("Video not found or unavailable");
 		}
 
-		const data = await response.json();
+		const data: any = await response.json();
 
 		console.log("✅ Metadata fetched successfully:", data.title);
 
@@ -251,7 +251,7 @@ async function fetchFromTactiq(url: string, langCode: string) {
 		throw new Error(`Tactiq API request failed: ${response.status}`);
 	}
 
-	const data = await response.json();
+	const data: any = await response.json();
 
 	if (!data.captions || data.captions.length === 0) {
 		return null;

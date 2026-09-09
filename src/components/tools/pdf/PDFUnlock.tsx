@@ -56,10 +56,10 @@ export default function PDFUnlock() {
             const arrayBuffer = await file.arrayBuffer();
             
             // pdf-lib decrypts the PDF document in memory using the user password
-            const pdfDoc = await PDFDocument.load(arrayBuffer, { password });
+            const pdfDoc = await PDFDocument.load(arrayBuffer, { password } as any);
             const pdfBytes = await pdfDoc.save();
             
-            const blob = new Blob([pdfBytes], { type: "application/pdf" });
+            const blob = new Blob([pdfBytes as any], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
             setDownloadUrl(url);
             setIsDecrypted(true);

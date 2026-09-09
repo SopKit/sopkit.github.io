@@ -42,6 +42,8 @@
     "ecc",
     ".next",
     ".open-next",
-    "out"
+    "out",
+    "packages",
+    "sopkit-backend"
   ]
 }

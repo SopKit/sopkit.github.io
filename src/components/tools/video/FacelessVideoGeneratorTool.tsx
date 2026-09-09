@@ -90,8 +90,8 @@ export default function FacelessVideoGeneratorTool() {
 		return scripts[type] || scripts.motivational;
 	};
 
-	const simulateProgress = (start, end, duration, steps) => {
-		return new Promise((resolve) => {
+	const simulateProgress = (start: number, end: number, duration: number, steps: number = 20) => {
+		return new Promise<void>((resolve) => {
 			const totalSteps = steps || 20;
 			const increment = (end - start) / totalSteps;
 			const stepDuration = duration / totalSteps;

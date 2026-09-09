@@ -217,7 +217,7 @@ export default function KrutiDevConverter({ defaultMode = "kruti-to-uni" } = {})
                     <Label className="text-sm font-semibold uppercase text-primary tracking-wider flex justify-between items-center">
                         <span>Converted Output</span>
                         {outputText && (
-                            <Button variant="secondary" size="xs" onClick={handleCopy} className="gap-1 px-2 h-7 text-[10px]">
+                            <Button variant="secondary" size="sm" onClick={handleCopy} className="gap-1 px-2 h-7 text-[10px]">
                                 <Copy className="h-3.5 w-3.5" /> Copy
                             </Button>
                         )}

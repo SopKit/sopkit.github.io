@@ -35,7 +35,7 @@ export default function WordToNumberTool() {
   const [text, setText] = useState("");
   const num = useMemo(() => {
     const n = wordsToNumbers(text);
-    return isNaN(n) ? "" : n.toString();
+    return typeof n === "number" && !isNaN(n) ? n.toString() : "";
   }, [text]);
 
   return (

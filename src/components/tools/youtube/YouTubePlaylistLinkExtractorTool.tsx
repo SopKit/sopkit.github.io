@@ -58,7 +58,7 @@ export default function YouTubePlaylistLinkExtractorTool() {
 
     try {
       const response = await fetch(`/api/youtube-playlist-links?url=${encodeURIComponent(url.trim())}`);
-      const json = await response.json();
+      const json: any = await response.json();
 
       if (!response.ok || json.error) {
         throw new Error(json.error || "Unable to extract playlist links.");

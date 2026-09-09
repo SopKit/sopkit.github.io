@@ -60,7 +60,7 @@ export default function PDFToImage() {
                 canvas.height = viewport.height;
                 canvas.width = viewport.width;
 
-                await page.render({ canvasContext: context, viewport }).promise;
+                await (page.render as any)({ canvasContext: context, viewport }).promise;
                 
                 newPages.push({
                     pageNumber: i,
@@ -140,7 +140,7 @@ export default function PDFToImage() {
                 canvas.height = viewport.height;
                 canvas.width = viewport.width;
 
-                await page.render({ canvasContext: context, viewport }).promise;
+                await (page.render as any)({ canvasContext: context, viewport }).promise;
 
                 let imageType = "image/png";
                 let extension = ".png";

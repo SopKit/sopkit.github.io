@@ -143,13 +143,13 @@ export default function VisualSitemapTool() {
 				body: JSON.stringify({ url }),
 			});
 
-			const data = await res.json();
+			const data: any = await res.json();
 
-			if (!res.ok) throw new Error(data.error || "Failed to fetch sitemap");
+			if (!res.ok) throw new Error(data?.error || "Failed to fetch sitemap");
 
-			processSitemap(data.xml);
-		} catch (err) {
-			setError(err.message);
+			processSitemap(data?.xml || "");
+		} catch (err: any) {
+			setError(err?.message || "Failed to fetch sitemap");
 		} finally {
 			setLoading(false);
 		}

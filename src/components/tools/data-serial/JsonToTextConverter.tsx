@@ -13,7 +13,7 @@ export default function JsonToTextConverter() {
   const run = () => {
     try {
       let out = "";
-      switch ("json-to-text") {
+      switch ("json-to-text" as string) {
         case "json-to-csv": {
           const parsed = JSON.parse(input);
           const rows = Array.isArray(parsed) ? parsed : [parsed];

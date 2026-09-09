@@ -67,10 +67,10 @@ export default function YouTubeVideoSummarizer() {
 			const response = await fetch(
 				`/api/youtube/transcript?videoId=${videoId}`,
 			);
-			const result = await response.json();
+			const result: any = await response.json();
 
-			if (!result.success) {
-				throw new Error(result.error || "Failed to fetch transcript");
+			if (!result?.success) {
+				throw new Error(result?.error || "Failed to fetch transcript");
 			}
 
 			setTranscriptData(result.data);
@@ -86,13 +86,13 @@ export default function YouTubeVideoSummarizer() {
 				}),
 			});
 
-			const summaryResult = await summaryResponse.json();
+			const summaryResult: any = await summaryResponse.json();
 
-			if (summaryResult.success) {
+			if (summaryResult?.success) {
 				setSummary(summaryResult.data);
 			}
-		} catch (err) {
-			setError(err.message || "An error occurred while processing the video");
+		} catch (err: any) {
+			setError(err?.message || "An error occurred while processing the video");
 		} finally {
 			setIsLoading(false);
 		}

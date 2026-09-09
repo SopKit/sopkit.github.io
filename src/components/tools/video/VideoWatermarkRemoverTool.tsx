@@ -102,8 +102,8 @@ export default function VideoWatermarkRemoverTool() {
 		}
 	};
 
-	const simulateProgress = (start, end, duration) => {
-		return new Promise((resolve) => {
+	const simulateProgress = (start: number, end: number, duration: number) => {
+		return new Promise<void>((resolve) => {
 			const steps = 25;
 			const increment = (end - start) / steps;
 			const stepDuration = duration / steps;

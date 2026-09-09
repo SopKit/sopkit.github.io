@@ -13,7 +13,7 @@ export default function TsvToJsonConverter() {
   const run = () => {
     try {
       let out = "";
-      switch ("tsv-to-json") {
+      switch ("tsv-to-json" as string) {
         case "json-to-csv": {
           const parsed = JSON.parse(input);
           const rows = Array.isArray(parsed) ? parsed : [parsed];

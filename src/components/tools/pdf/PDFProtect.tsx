@@ -59,7 +59,7 @@ export default function PDFProtect() {
 
             // Encrypt using the library with options
             const ownerPassword = Math.random().toString(36).substring(7);
-            const encryptedBytes = await encryptPDF(existingPdfBytes, password, {
+            const encryptedBytes = await (encryptPDF as any)(existingPdfBytes, password, {
                 ownerPassword,
                 allowPrinting: permissions.printing,
                 allowCopying: permissions.copying,
@@ -67,7 +67,7 @@ export default function PDFProtect() {
                 allowAnnotating: permissions.annotating,
             });
 
-            const blob = new Blob([encryptedBytes], { type: "application/pdf" });
+            const blob = new Blob([encryptedBytes as any], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
             const link = document.createElement("a");
             link.href = url;

@@ -36,7 +36,7 @@ export default function PdfProtector() {
 			const fileBuffer = await file.arrayBuffer();
 			const pdfDoc = await PDFDocument.load(fileBuffer);
 
-			pdfDoc.encrypt({
+			(pdfDoc as any).encrypt({
 				userPassword: password,
 				ownerPassword: password,
 				permissions: {
@@ -51,7 +51,7 @@ export default function PdfProtector() {
 			});
 
 			const pdfBytes = await pdfDoc.save();
-			const blob = new Blob([pdfBytes], { type: "application/pdf" });
+			const blob = new Blob([pdfBytes as any], { type: "application/pdf" });
 			const url = URL.createObjectURL(blob);
 			setDownloadUrl(url);
 			toast.success("PDF protected successfully!");

@@ -93,7 +93,7 @@ export default function PdfSplitter() {
 				copiedPages.forEach((page) => newPdf.addPage(page));
 
 				const pdfBytes = await newPdf.save();
-				const blob = new Blob([pdfBytes], { type: "application/pdf" });
+				const blob = new Blob([pdfBytes as any], { type: "application/pdf" });
 				const url = URL.createObjectURL(blob);
 				setDownloadUrl(url);
 				toast.success("PDF split successfully!");
@@ -107,7 +107,7 @@ export default function PdfSplitter() {
 					singlePageDoc.addPage(copiedPage);
 
 					const pdfBytes = await singlePageDoc.save();
-					const blob = new Blob([pdfBytes], { type: "application/pdf" });
+					const blob = new Blob([pdfBytes as any], { type: "application/pdf" });
 					const url = URL.createObjectURL(blob);
 					urlsList.push({
 						name: `Page ${i + 1} - ${file.name}`,
@@ -136,7 +136,7 @@ export default function PdfSplitter() {
 					copiedPages.forEach((page) => chunkDoc.addPage(page));
 
 					const pdfBytes = await chunkDoc.save();
-					const blob = new Blob([pdfBytes], { type: "application/pdf" });
+					const blob = new Blob([pdfBytes as any], { type: "application/pdf" });
 					const url = URL.createObjectURL(blob);
 					urlsList.push({
 						name: `Pages ${startPage + 1} to ${endPage} - ${file.name}`,

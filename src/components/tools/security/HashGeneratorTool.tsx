@@ -58,33 +58,34 @@ export default function HashGeneratorTool() {
 	];
 
 	const loadCryptoJS = useCallback(() => {
-		return new Promise((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			if (typeof document === "undefined") return resolve();
 			const script = document.createElement("script");
 			script.src =
 				"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js";
-			script.onload = resolve;
+			script.onload = () => resolve();
 			script.onerror = reject;
 			document.head.appendChild(script);
 		});
 	}, []);
 
-	const generateHashes = useCallback(async (text) => {
+	const generateHashes = useCallback(async (text: string) => {
 		if (typeof window === "undefined") return;
 		setIsHashing(true);
 		const encoder = new TextEncoder();
 		const data = encoder.encode(text);
+		const win = typeof window !== "undefined" ? (window as any) : null;
 
 		try {
-			const results = {};
+			const results: Record<string, string> = {};
 
 			// MD5 (using crypto-js CDN)
-			if (window.CryptoJS) {
-				results.MD5 = window.CryptoJS.MD5(text).toString();
-				results["SHA-1"] = window.CryptoJS.SHA1(text).toString();
-				results["SHA-256"] = window.CryptoJS.SHA256(text).toString();
-				results["SHA-512"] = window.CryptoJS.SHA512(text).toString();
-				results["SHA-3"] = window.CryptoJS.SHA3(text).toString();
+			if (win?.CryptoJS) {
+				results.MD5 = win.CryptoJS.MD5(text).toString();
+				results["SHA-1"] = win.CryptoJS.SHA1(text).toString();
+				results["SHA-256"] = win.CryptoJS.SHA256(text).toString();
+				results["SHA-512"] = win.CryptoJS.SHA512(text).toString();
+				results["SHA-3"] = win.CryptoJS.SHA3(text).toString();
 			} else {
 				// Fallback to Web Crypto API for supported algorithms
 				if (typeof crypto !== "undefined" && crypto.subtle) {
@@ -109,14 +110,14 @@ export default function HashGeneratorTool() {
 				}
 
 				// Load crypto-js if not available
-				if (!window.CryptoJS) {
+				if (!win?.CryptoJS) {
 					await loadCryptoJS();
-					if (window.CryptoJS) {
-						results.MD5 = window.CryptoJS.MD5(text).toString();
-						results["SHA-1"] = window.CryptoJS.SHA1(text).toString();
-						results["SHA-256"] = window.CryptoJS.SHA256(text).toString();
-						results["SHA-512"] = window.CryptoJS.SHA512(text).toString();
-						results["SHA-3"] = window.CryptoJS.SHA3(text).toString();
+					if (win?.CryptoJS) {
+						results.MD5 = win.CryptoJS.MD5(text).toString();
+						results["SHA-1"] = win.CryptoJS.SHA1(text).toString();
+						results["SHA-256"] = win.CryptoJS.SHA256(text).toString();
+						results["SHA-512"] = win.CryptoJS.SHA512(text).toString();
+						results["SHA-3"] = win.CryptoJS.SHA3(text).toString();
 					}
 				}
 			}
@@ -143,14 +144,16 @@ export default function HashGeneratorTool() {
 		setTimeout(() => setCopied(""), 2000);
 	};
 
-	const handleFileUpload = (event) => {
-		const uploadedFile = event.target.files[0];
+	const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+		const uploadedFile = event.target.files?.[0];
 		if (uploadedFile) {
 			setFile(uploadedFile);
 			const reader = new FileReader();
 			reader.onload = (e) => {
-				const content = e.target.result;
-				setInputText(content);
+				const content = e.target?.result;
+				if (typeof content === "string") {
+					setInputText(content);
+				}
 			};
 			reader.readAsText(uploadedFile);
 		}
@@ -361,8 +364,8 @@ export default function HashGeneratorTool() {
 
 							<Button
 								onClick={() => {
-									const hash1 = document.getElementById("hash1").value;
-									const hash2 = document.getElementById("hash2").value;
+									const hash1 = (document.getElementById("hash1") as HTMLInputElement)?.value;
+									const hash2 = (document.getElementById("hash2") as HTMLInputElement)?.value;
 									if (hash1 && hash2) {
 										const match = compareHashes(hash1, hash2);
 										toast.success(match ? "Hashes match!" : "Hashes do not match.");

@@ -23,7 +23,7 @@ export default function IPLocationFinderTool() {
 		try {
 			// Using a free IP geolocation service
 			const response = await fetch("https://ipapi.co/json/");
-			const data = await response.json();
+			const data: any = await response.json();
 
 			const ipData = {
 				ip: data.ip,

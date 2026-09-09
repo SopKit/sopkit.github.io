@@ -40,26 +40,26 @@ const TwitterVideoDownloader = () => {
 				throw new Error("Failed to fetch video information");
 			}
 
-			const data = await response.json();
+			const data: any = await response.json();
 
 			// Parse the HTML response to extract download links
 			const parser = new DOMParser();
-			const doc = parser.parseFromString(data.html, "text/html");
+			const doc = parser.parseFromString(data?.html || "", "text/html");
 			const downloadLinks = doc.querySelectorAll(".btn-dl");
 
-			const options = Array.from(downloadLinks).map((link) => ({
-				quality: link.closest("tr").querySelector("td").textContent.trim(),
+			const options = Array.from(downloadLinks).map((link: any) => ({
+				quality: link.closest("tr")?.querySelector("td")?.textContent?.trim() || "HD",
 				type: link
 					.closest("tr")
-					.querySelector("td:nth-child(2)")
-					.textContent.trim(),
-				url: link.href,
+					?.querySelector("td:nth-child(2)")
+					?.textContent?.trim() || "video/mp4",
+				url: link.href || link.getAttribute("href") || "",
 			}));
 
 			setDownloadOptions(options);
 		} catch (_err) {
 			setError("Error downloading video. Please try again.");
-			console.error("Download error:", err);
+			console.error("Download error:", _err);
 		} finally {
 			setIsLoading(false);
 		}

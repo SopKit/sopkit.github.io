@@ -61,7 +61,7 @@ async function createOpenRouterCompletion(
 		if (!response.ok) {
 			let errorMessage = `OpenRouter API error: ${response.status}`;
 			try {
-				const errorData = await response.json();
+				const errorData: any = await response.json();
 				errorMessage += ` - ${errorData.error?.message || errorData.message || "Unknown error"}`;
 			} catch {
 				const errorText = await response.text();
@@ -70,7 +70,7 @@ async function createOpenRouterCompletion(
 			throw new Error(errorMessage);
 		}
 
-		const data = await response.json();
+		const data: any = await response.json();
 
 		// Validate response structure
 		if (!data.choices?.[0]?.message) {

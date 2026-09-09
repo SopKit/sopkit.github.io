@@ -129,23 +129,23 @@ export default function YouTubeSummaryGenerator() {
 					break;
 				default:
 					result = await generateYouTubeSummary(url, {
-						summaryLength,
-						summaryStyle,
+						summaryLength: summaryLength as any,
+						summaryStyle: summaryStyle as any,
 						includeTimestamps,
 						includeKeywords,
 					});
 			}
 
-			if (result.success) {
-				setSummaryData(result.data);
+			if (result && (result as any).success) {
+				setSummaryData((result as any).data);
 				toast.success("AI summary generated successfully!");
-				console.log("✅ Summary generated:", result.data);
+				console.log("✅ Summary generated:", (result as any).data);
 			} else {
-				setError(result.error || "Failed to generate video summary");
-				toast.error(result.error || "Failed to generate summary");
+				setError((result as any)?.error || "Failed to generate video summary");
+				toast.error((result as any)?.error || "Failed to generate summary");
 			}
 		} catch (_err) {
-			console.error("❌ Error generating summary:", err);
+			console.error("❌ Error generating summary:", _err);
 			setError("An error occurred while generating the summary");
 			toast.error("An error occurred while generating the summary");
 		} finally {

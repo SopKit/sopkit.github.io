@@ -102,10 +102,10 @@ export default function YouTubeScriptGenerator() {
 
 			const result = await generateYouTubeScript(scriptData);
 
-			if (result.success) {
-				setScript(result.script);
+			if (result && (result as any).script) {
+				setScript((result as any).script);
 			} else {
-				setError(result.error || "Failed to generate script");
+				setError((result as any)?.error || "Failed to generate script");
 			}
 		} catch (_err) {
 			setError("An error occurred while generating the script");
@@ -120,7 +120,7 @@ export default function YouTubeScriptGenerator() {
 			setCopied(true);
 			setTimeout(() => setCopied(false), 2000);
 		} catch (_err) {
-			console.error("Failed to copy script:", err);
+			console.error("Failed to copy script:", _err);
 		}
 	};
 

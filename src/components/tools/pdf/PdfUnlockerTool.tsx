@@ -47,7 +47,7 @@ export default function PdfUnlockerTool() {
 				"https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js";
 			script.onload = () => {
 				// Configure PDF.js worker
-				window.pdfjsLib.GlobalWorkerOptions.workerSrc =
+				(window as any).pdfjsLib.GlobalWorkerOptions.workerSrc =
 					"https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";
 				setPdfLibLoaded(true);
 			};
@@ -57,7 +57,8 @@ export default function PdfUnlockerTool() {
 			document.head.appendChild(script);
 		};
 
-		if (!window.pdfjsLib) {
+		const win = typeof window !== "undefined" ? (window as any) : null;
+		if (!win?.pdfjsLib) {
 			loadPdfLib();
 		} else {
 			setPdfLibLoaded(true);

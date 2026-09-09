@@ -70,7 +70,7 @@ export async function fetchTeraboxVideo(url: string): Promise<TeraboxVideoData> 
 			);
 		}
 
-		const data = await response.json();
+		const data: any = await response.json();
 
 		if (data.status !== "success") {
 			throw new Error(data.message || "Failed to fetch video");

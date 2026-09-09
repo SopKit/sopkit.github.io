@@ -10,6 +10,7 @@ import {
 	FileTextIcon 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { GlassCard } from "../shared/WorkspaceComponents";
 import { toast } from "sonner";
 

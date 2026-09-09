@@ -11,7 +11,7 @@ type UnitDef = { id: string; label: string; toBase: (v: number) => number; fromB
 function linear(f: number) { return { toBase: (v: number) => v * f, fromBase: (v: number) => v / f }; }
 
 function buildUnits() {
-  switch ("temperature") {
+  switch ("temperature" as string) {
     case "length": return [
       { id: "nm", label: "Nanometer", ...linear(1e-9) }, { id: "mm", label: "Millimeter", ...linear(1e-3) },
       { id: "cm", label: "Centimeter", ...linear(0.01) }, { id: "m", label: "Meter", ...linear(1) },

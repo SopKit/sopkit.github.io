@@ -13,7 +13,7 @@ export default function CsvToJsonConverter() {
   const run = () => {
     try {
       let out = "";
-      switch ("csv-to-json") {
+      switch ("csv-to-json" as string) {
         case "json-to-csv": {
           const parsed = JSON.parse(input);
           const rows = Array.isArray(parsed) ? parsed : [parsed];

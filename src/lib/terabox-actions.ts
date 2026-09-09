@@ -172,7 +172,7 @@ export async function fetchTeraboxVideoDataMdiskplay(url: string): Promise<Fetch
 			throw new Error(`mdiskplay API request failed: ${response.status}`);
 		}
 
-		const data = await response.json();
+		const data: any = await response.json();
 		console.log("✅ Received data from mdiskplay API:", data);
 
 		if (data.status !== "success" || !data.source) {
@@ -295,7 +295,7 @@ export async function fetchTeraboxVideoData(
 			throw new Error(`API request failed: ${response.status}`);
 		}
 
-		const data = await response.json();
+		const data: any = await response.json();
 		console.log("✅ Received data from TeraSnap API:", data);
 
 		if (!data?.file_name) {

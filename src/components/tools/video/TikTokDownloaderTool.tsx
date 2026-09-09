@@ -52,8 +52,8 @@ export default function TikTokDownloaderTool() {
 		}
 	};
 
-	const simulateProgress = (duration) => {
-		return new Promise((resolve) => {
+	const simulateProgress = (duration: number) => {
+		return new Promise<void>((resolve) => {
 			const steps = 50;
 			const increment = 100 / steps;
 			const stepDuration = duration / steps;

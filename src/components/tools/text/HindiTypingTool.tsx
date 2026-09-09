@@ -258,7 +258,6 @@ export default function HindiTypingTool() {
                     <div
                         id="hindi-output"
                         className="w-full h-80 p-4 rounded-xl border border-border/40 bg-indigo-950/20 backdrop-blur-sm text-base leading-relaxed overflow-y-auto whitespace-pre-wrap select-all font-sans"
-                        placeholder="Hindi translation will appear here..."
                     >
                         {convertedText || <span className="text-muted-foreground italic">हिंदी अनुवाद यहाँ दिखाई देगा...</span>}
                     </div>

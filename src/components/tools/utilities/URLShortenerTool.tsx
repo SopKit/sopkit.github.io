@@ -126,7 +126,7 @@ export default function URLShortenerTool() {
 			setCopiedId(id);
 			setTimeout(() => setCopiedId(""), 2000);
 		} catch (_err) {
-			console.error("Failed to copy:", err);
+			console.error("Failed to copy:", _err);
 		}
 	};
 

@@ -115,7 +115,7 @@ export default function NotesTool() {
 		if (!date) return "Never";
 
 		const now = new Date();
-		const diffMs = now - date;
+		const diffMs = now.getTime() - new Date(date).getTime();
 		const diffSecs = Math.floor(diffMs / 1000);
 		const diffMins = Math.floor(diffSecs / 60);
 		const diffHours = Math.floor(diffMins / 60);

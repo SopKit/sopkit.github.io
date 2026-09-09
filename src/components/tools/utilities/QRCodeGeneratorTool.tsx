@@ -82,7 +82,8 @@ export default function QRCodeGeneratorTool() {
 
 	// Enhanced QR Code generation function using QRCode.js library
 	const generateQRCode = useCallback(async () => {
-		if (typeof window === "undefined" || !window.QRCode) {
+		const win = typeof window !== "undefined" ? (window as any) : null;
+		if (!win?.QRCode) {
 			return;
 		}
 
@@ -125,7 +126,7 @@ export default function QRCodeGeneratorTool() {
 			// Generate QR code using QRCode.js
 			const canvas = canvasRef.current;
 			if (canvas) {
-				await window.QRCode.toCanvas(canvas, dataToEncode, {
+				await win.QRCode.toCanvas(canvas, dataToEncode, {
 					width: qrSize[0],
 					margin: includeMargin ? 2 : 0,
 					color: {
@@ -137,7 +138,7 @@ export default function QRCodeGeneratorTool() {
 			}
 
 			// Generate SVG version
-			const svgString = await window.QRCode.toString(dataToEncode, {
+			const svgString = await win.QRCode.toString(dataToEncode, {
 				type: "svg",
 				width: qrSize[0],
 				margin: includeMargin ? 2 : 0,

@@ -78,7 +78,7 @@ export async function getYouTubeVideoMetadata(videoId: string): Promise<YouTubeM
 			throw new Error("Video not found or unavailable");
 		}
 
-		const data = await response.json();
+		const data: any = await response.json();
 
 		return {
 			success: true,
@@ -343,7 +343,7 @@ export async function downloadYouTubeTranscriptTactiq(url: string, langCode: str
 			throw new Error(`API request failed: ${response.status}`);
 		}
 
-		const data = await response.json();
+		const data: any = await response.json();
 
 		if (!data.captions || data.captions.length === 0) {
 			return {
