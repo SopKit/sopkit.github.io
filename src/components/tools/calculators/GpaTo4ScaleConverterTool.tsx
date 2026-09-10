@@ -152,12 +152,12 @@ export default function GpaTo4ScaleConverterTool() {
 							{result && (
 								<div className="space-y-6">
 									<div className="grid grid-cols-2 gap-4">
-										<div className="p-6 bg-primary/10 border border-primary/20 rounded-3xl text-center">
+										<div className="p-6 bg-primary/10 border border-primary/20 rounded-2xl text-center">
 											<div className="text-5xl font-black text-primary font-mono">{result.gpa}</div>
 											<div className="text-sm text-muted-foreground font-bold mt-2">US 4.0 Scale GPA</div>
 										</div>
 
-										<div className="p-6 bg-muted/15 border border-border/40 rounded-3xl text-center flex flex-col items-center justify-center">
+										<div className="p-6 bg-muted/15 border border-border/40 rounded-2xl text-center flex flex-col items-center justify-center">
 											<Badge className="text-2xl px-5 py-1 text-center font-black bg-primary text-primary-foreground select-none">
 												{result.grade}
 											</Badge>

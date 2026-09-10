@@ -253,7 +253,7 @@ export default function PDFToImage() {
                 {!file ? (
                     <div 
                         onClick={() => fileInputRef.current?.click()}
-                        className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
+                        className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-2xl text-center"
                     >
                         <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
                             <ImageIcon className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
@@ -264,7 +264,7 @@ export default function PDFToImage() {
                         </p>
                     </div>
                 ) : isProcessing && pages.length === 0 ? (
-                    <Card className="p-12 text-center border-border/40 bg-card/20 space-y-4 rounded-3xl">
+                    <Card className="p-12 text-center border-border/40 bg-card/20 space-y-4 rounded-2xl">
                         <Loader2 className="h-10 w-10 text-primary animate-spin mx-auto" />
                         <h3 className="font-bold text-base">Preparing Page Previews...</h3>
                         <Progress value={progress} className="max-w-xs mx-auto h-2" />

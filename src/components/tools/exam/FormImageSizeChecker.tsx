@@ -283,7 +283,7 @@ export default function FormImageSizeChecker() {
                             {!file ? (
                                 <div
                                     onClick={triggerFileSelect}
-                                    className="border-2 border-dashed border-border/60 hover:border-primary/50 transition-all p-16 text-center cursor-pointer space-y-4 hover:bg-muted/10 group rounded-md"
+                                    className="border-2 border-dashed border-border/60 hover:border-primary/50 transition-all p-16 text-center cursor-pointer space-y-4 hover:bg-muted/10 group rounded-xl"
                                 >
                                     <input
                                         type="file"
@@ -302,7 +302,7 @@ export default function FormImageSizeChecker() {
                                 </div>
                             ) : (
                                 <div className="space-y-4">
-                                    <div className="relative border border-border/40 bg-muted/10 p-4 rounded-md">
+                                    <div className="relative border border-border/40 bg-muted/10 p-4 rounded-xl">
                                         {fileStats?.type === "pdf" ? (
                                             <div className="h-[200px] flex flex-col items-center justify-center gap-2 select-none">
                                                 <FileText className="h-16 w-16 text-primary" />
@@ -357,7 +357,7 @@ export default function FormImageSizeChecker() {
                                 <h3 className="text-xl font-bold border-b border-border/20 pb-2 text-center">Validation Status</h3>
 
                                 {!fileStats && (
-                                    <div className="h-64 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-md p-6 bg-muted/5 text-center">
+                                    <div className="h-64 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-xl p-6 bg-muted/5 text-center">
                                         <FileImage className="h-12 w-12 text-muted-foreground/40 mb-3" />
                                         <p className="text-sm text-muted-foreground">Upload a file to run compliance verification.</p>
                                     </div>
@@ -366,7 +366,7 @@ export default function FormImageSizeChecker() {
                                 {fileStats && results && (
                                     <div className="space-y-4">
                                         {/* Status Header */}
-                                        <div className={`p-4 rounded-md border flex items-center gap-3 ${
+                                        <div className={`p-4 rounded-xl border flex items-center gap-3 ${
                                             results.isPass
                                                 ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-500"
                                                 : "bg-red-500/10 border-red-500/20 text-red-500"

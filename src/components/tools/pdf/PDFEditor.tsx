@@ -288,7 +288,7 @@ export default function PDFEditor() {
                     {!file ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-2xl text-center"
                         >
                             <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
                                 <Type className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
@@ -334,7 +334,7 @@ export default function PDFEditor() {
                             {/* Main Interactive Canvas Viewer wrapper */}
                             <div 
                                 onClick={handleCanvasClick}
-                                className={`relative border border-border/40 rounded-3xl bg-white shadow-md overflow-hidden max-w-full flex justify-center p-4 select-none ${activeTool === "text" ? "cursor-crosshair" : "cursor-default"}`}
+                                className={`relative border border-border/40 rounded-2xl bg-white shadow-md overflow-hidden max-w-full flex justify-center p-4 select-none ${activeTool === "text" ? "cursor-crosshair" : "cursor-default"}`}
                             >
                                 <div className="relative">
                                     <canvas ref={canvasRef} className="max-w-full h-auto bg-white border border-border/10 shadow-sm" />

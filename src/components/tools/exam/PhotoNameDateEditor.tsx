@@ -175,7 +175,7 @@ export default function PhotoNameDateEditor() {
                             {!previewUrl ? (
                                 <div
                                     onClick={triggerFileSelect}
-                                    className="border-2 border-dashed border-border/60 hover:border-primary/50 transition-all p-12 text-center cursor-pointer space-y-4 hover:bg-muted/10 group rounded-md"
+                                    className="border-2 border-dashed border-border/60 hover:border-primary/50 transition-all p-12 text-center cursor-pointer space-y-4 hover:bg-muted/10 group rounded-xl"
                                 >
                                     <input
                                         type="file"
@@ -194,7 +194,7 @@ export default function PhotoNameDateEditor() {
                                 </div>
                             ) : (
                                 <div className="space-y-4">
-                                    <div className="relative border border-border/40 bg-muted/10 p-4 rounded-md">
+                                    <div className="relative border border-border/40 bg-muted/10 p-4 rounded-xl">
                                         <img
                                             src={previewUrl}
                                             alt="Uploaded preview"
@@ -305,7 +305,7 @@ export default function PhotoNameDateEditor() {
                                 )}
 
                                 {!processing && !outputUrl && (
-                                    <div className="h-64 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-md p-6 bg-muted/5">
+                                    <div className="h-64 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-xl p-6 bg-muted/5">
                                         <FileImage className="h-10 w-10 text-muted-foreground/40 mb-2" />
                                         <p className="text-xs text-muted-foreground">Upload a photo to see the caption preview.</p>
                                     </div>
@@ -313,14 +313,14 @@ export default function PhotoNameDateEditor() {
 
                                 {!processing && outputUrl && (
                                     <div className="space-y-4">
-                                        <div className="border border-primary/20 bg-muted/10 p-4 rounded-md flex items-center justify-center max-h-[300px] overflow-auto">
+                                        <div className="border border-primary/20 bg-muted/10 p-4 rounded-xl flex items-center justify-center max-h-[300px] overflow-auto">
                                             <img
                                                 src={outputUrl}
                                                 alt="Output result"
                                                 className="border border-border/40 shadow-md max-h-[250px] object-contain"
                                             />
                                         </div>
-                                        <div className="flex justify-between items-center text-xs bg-primary/5 border border-primary/10 rounded-sm py-2 px-3 text-left">
+                                        <div className="flex justify-between items-center text-xs bg-primary/5 border border-primary/10 rounded-xl py-2 px-3 text-left">
                                             <span>Dimensions: <strong>{image?.width} x {image?.height} px</strong></span>
                                             <span>File Size: <strong>{outputSizeKb} KB</strong></span>
                                         </div>

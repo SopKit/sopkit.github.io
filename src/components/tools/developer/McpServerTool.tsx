@@ -294,7 +294,7 @@ if __name__ == "__main__":
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 {/* Configuration Settings */}
                 <div className="lg:col-span-5 space-y-6">
-                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm text-xs font-semibold">
+                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm text-xs font-semibold">
                         <h4 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
                             <Settings className="w-3.5 h-3.5" /> Server Details
                         </h4>
@@ -342,7 +342,7 @@ if __name__ == "__main__":
                     </Card>
 
                     {/* Tools Definition Card */}
-                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm text-xs font-semibold">
+                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm text-xs font-semibold">
                         <div className="flex justify-between items-center border-b border-border/10 pb-2">
                             <h4 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
                                 <Grid className="w-3.5 h-3.5" /> Tools Definitions
@@ -409,7 +409,7 @@ if __name__ == "__main__":
 
                 {/* Boilerplate Output Preview Panel */}
                 <div className="lg:col-span-7 space-y-6">
-                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm text-xs font-semibold">
+                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm text-xs font-semibold">
                         <div className="flex justify-between items-center border-b border-border/10 pb-2">
                             <h4 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
                                 <Code className="w-3.5 h-3.5 text-primary" /> Generated Code

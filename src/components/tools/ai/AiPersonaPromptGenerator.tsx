@@ -165,7 +165,7 @@ export default function AiPersonaPromptGenerator() {
 							<select
 								value={tone}
 								onChange={(e) => setTone(e.target.value)}
-								className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-1 focus:ring-ring"
+								className="w-full h-10 px-3 rounded-xl border border-input bg-background text-sm focus:outline-none focus:ring-1 focus:ring-ring"
 							>
 								<option value="professional">Professional & Authoritative</option>
 								<option value="casual">Casual & Friendly</option>
@@ -180,7 +180,7 @@ export default function AiPersonaPromptGenerator() {
 							<select
 								value={formatConstraint}
 								onChange={(e) => setFormatConstraint(e.target.value)}
-								className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-1 focus:ring-ring"
+								className="w-full h-10 px-3 rounded-xl border border-input bg-background text-sm focus:outline-none focus:ring-1 focus:ring-ring"
 							>
 								<option value="markdown">Markdown (Headers, Bullet points)</option>
 								<option value="raw-text">Raw Plain Text Paragraphs</option>
@@ -225,7 +225,7 @@ export default function AiPersonaPromptGenerator() {
 							placeholder="e.g. Focus on TypeScript 5, avoid external CSS frameworks, assume the reader is a junior developer."
 							value={customContext}
 							onChange={(e) => setCustomContext(e.target.value)}
-							className="w-full min-h-[80px] p-3 rounded-md border border-input bg-background text-xs focus:outline-none focus:ring-1 focus:ring-ring resize-y leading-relaxed"
+							className="w-full min-h-[80px] p-3 rounded-xl border border-input bg-background text-xs focus:outline-none focus:ring-1 focus:ring-ring resize-y leading-relaxed"
 						/>
 					</div>
 

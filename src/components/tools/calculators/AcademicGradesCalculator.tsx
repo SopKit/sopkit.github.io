@@ -133,7 +133,7 @@ export default function AcademicGradesCalculator({ defaultTab = "sgpa" }: Props)
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2 p-1 bg-muted/40 border border-border/20 rounded-lg">
                 <button
                     onClick={() => setActiveTab("sgpa")}
-                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-md flex items-center justify-center gap-1.5 transition-all ${
+                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
                         activeTab === "sgpa"
                             ? "bg-primary text-primary-foreground shadow"
                             : "text-muted-foreground hover:text-foreground"
@@ -144,7 +144,7 @@ export default function AcademicGradesCalculator({ defaultTab = "sgpa" }: Props)
                 </button>
                 <button
                     onClick={() => setActiveTab("cgpa")}
-                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-md flex items-center justify-center gap-1.5 transition-all ${
+                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
                         activeTab === "cgpa"
                             ? "bg-primary text-primary-foreground shadow"
                             : "text-muted-foreground hover:text-foreground"
@@ -155,7 +155,7 @@ export default function AcademicGradesCalculator({ defaultTab = "sgpa" }: Props)
                 </button>
                 <button
                     onClick={() => setActiveTab("cgpa-pct")}
-                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-md flex items-center justify-center gap-1.5 transition-all ${
+                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
                         activeTab === "cgpa-pct"
                             ? "bg-primary text-primary-foreground shadow"
                             : "text-muted-foreground hover:text-foreground"
@@ -166,7 +166,7 @@ export default function AcademicGradesCalculator({ defaultTab = "sgpa" }: Props)
                 </button>
                 <button
                     onClick={() => setActiveTab("req-marks")}
-                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-md flex items-center justify-center gap-1.5 transition-all ${
+                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
                         activeTab === "req-marks"
                             ? "bg-primary text-primary-foreground shadow"
                             : "text-muted-foreground hover:text-foreground"

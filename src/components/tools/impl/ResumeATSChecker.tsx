@@ -262,7 +262,7 @@ export default function ResumeATSChecker() {
               </div>
             </>
           ) : (
-            <div className="h-full flex flex-col items-center justify-center p-10 text-center space-y-6 bg-secondary/5 rounded-3xl border border-dashed">
+            <div className="h-full flex flex-col items-center justify-center p-10 text-center space-y-6 bg-secondary/5 rounded-2xl border border-dashed">
               <div className="h-20 w-20 rounded-full bg-primary/10 flex items-center justify-center">
                 <Search className="h-10 w-10 text-primary/40" />
               </div>

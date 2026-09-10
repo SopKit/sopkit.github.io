@@ -40,7 +40,7 @@ export default function AiToolsHub() {
 		<div className="min-h-screen bg-background">
 			<main>
 				<PremiumHero 
-					title="AI Prompt Engineering Suite" 
+					title="AI Prompt Engineering Suite — Free Builders"
 					subtitle="Interactive prompt builders and system instructions generators. Elevate your creative output on Midjourney, ChatGPT, Claude, and Gemini with optimized structures."
 				/>
 				

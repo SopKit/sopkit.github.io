@@ -307,7 +307,7 @@ export default function NegativePromptGenerator() {
 						<div className="flex items-center justify-between">
 							<div className="flex items-center gap-2">
 								<span
-									className={`px-2 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider ${cat.color}`}
+									className={`px-2 py-0.5 rounded-xl text-[10px] font-black uppercase tracking-wider ${cat.color}`}
 								>
 									{cat.label}
 								</span>

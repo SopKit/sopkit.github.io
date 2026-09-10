@@ -17,7 +17,7 @@ const QUICK_TRENDING_TOOLS = [
 ];
 
 export function PremiumHero({
-	title = `Private, Fast & Local Online Tools`,
+	title = `Private, Fast & Local — ${SITE_CONFIG.toolCountString} Free Online Tools`,
 	subtitle = "Run 600+ utilities directly in your browser. No file uploads, no tracking, and no account required.",
 	tools,
 }: {
@@ -128,14 +128,26 @@ export function PremiumHero({
 					<span className="text-muted-foreground">{SITE_CONFIG.toolCountString} Free Tools</span>
 				</div>
 
-				{/* Minimal Crisp Headline */}
-				<div className="space-y-3">
-					<h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-foreground leading-[1.1]">
-						Private, Fast & Local <br className="hidden sm:inline" />
-						<span className="bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 dark:from-blue-400 dark:via-sky-300 dark:to-indigo-300 bg-clip-text text-transparent">
-							Online Tools
-						</span>
-					</h1>
+			{/* Minimal Crisp Headline — renders the page-specific title so every
+			    hub page ships a unique, keyword-rich H1 for crawlers. */}
+			<div className="space-y-3">
+				{(() => {
+					const parts = title.split("—").map((s) => s.trim()).filter(Boolean);
+					const lead = parts.length > 1 ? parts.slice(0, -1).join(" — ") : null;
+					const highlight = parts.length > 1 ? parts[parts.length - 1] : title;
+					return (
+						<h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-foreground leading-[1.1]">
+							{lead ? (
+								<>
+									{lead} <br className="hidden sm:inline" />
+								</>
+							) : null}
+							<span className="bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 dark:from-blue-400 dark:via-sky-300 dark:to-indigo-300 bg-clip-text text-transparent">
+								{highlight}
+							</span>
+						</h1>
+					);
+				})()}
 					<p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
 						{subtitle}
 					</p>

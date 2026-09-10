@@ -12,7 +12,7 @@ import {
 } from "./ToolSharedComponents";
 import { getRelatedTools, type Tool } from "@/lib/tools";
 import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
-import { Github, ExternalLink, Sparkles } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { SITE_CONFIG } from "@/constants/config";
@@ -102,6 +102,18 @@ function generateToolH1(toolName: string, category: string): string {
 		action = name.toLowerCase().includes("compress") ? "Reduce File Size" :
 		         name.toLowerCase().includes("resize") ? "Resize & Crop" : "Convert & Edit";
 		subject = "Images";
+	} else if (name.toLowerCase().includes("qr")) {
+		action = "Create & Customize";
+		subject = "QR Codes";
+	} else if (name.toLowerCase().includes("logo")) {
+		action = "Design & Create";
+		subject = "Logos";
+	} else if (name.toLowerCase().includes("markdown")) {
+		action = "Convert & Export";
+		subject = "Markdown";
+	} else if (name.toLowerCase().includes("bio data") || name.toLowerCase().includes("biodata") || name.toLowerCase().includes("bio-data")) {
+		action = "Create & Download";
+		subject = "Documents";
 	} else if (category === "pdf" || name.toLowerCase().includes("pdf")) {
 		action = name.toLowerCase().includes("compress") ? "Reduce File Size" : "Merge, Split & Edit";
 		subject = "PDF Documents";
@@ -164,7 +176,7 @@ export default function ToolLayout({
 				text,
 			})),
 		};
-	} else if (tool.category !== "company" && !tool.route.endsWith("-tools") && tool.route !== "/generators" && tool.route !== "/calculators") {
+	} else if (tool.category !== "company" && tool.category !== "content" && !tool.route.endsWith("-tools") && tool.route !== "/generators" && tool.route !== "/calculators") {
 		enrichedTool.name = generateToolH1(tool.name, tool.category);
 	}
 
@@ -243,7 +255,7 @@ export default function ToolLayout({
 
 				{/* Tool Interaction Area */}
 				{tool.category !== "content" && (
-					<section className="bg-card/30 backdrop-blur-md border border-border/40 rounded-3xl shadow-[0_32px_64px_-12px_rgba(0,0,0,0.15)] dark:shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)] relative group transition-all duration-500 hover:border-primary/20 min-h-[400px] overflow-hidden">
+					<section className="bg-card/30 backdrop-blur-md border border-border/40 rounded-2xl shadow-[0_32px_64px_-12px_rgba(0,0,0,0.15)] dark:shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)] relative group transition-all duration-500 hover:border-primary/20 min-h-[400px] overflow-hidden">
 						<div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] -z-10 transition-opacity" />
 						<div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 blur-[120px] -z-10 transition-opacity" />
 						<div className="relative z-10 p-6 md:p-8">{children}</div>

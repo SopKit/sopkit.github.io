@@ -177,12 +177,12 @@ export default function BmrCalculatorTool() {
 
 							{result && (
 								<div className="space-y-6">
-									<div className="p-6 bg-primary/10 border border-primary/20 rounded-3xl text-center">
+									<div className="p-6 bg-primary/10 border border-primary/20 rounded-2xl text-center">
 										<div className="text-4xl font-black text-primary font-mono">{result.mifflin} <span className="text-sm font-bold">kcal/day</span></div>
 										<div className="text-sm text-muted-foreground font-bold mt-2">Mifflin-St Jeor BMR</div>
 									</div>
 
-									<div className="p-6 bg-muted/10 border border-border/40 rounded-3xl text-center">
+									<div className="p-6 bg-muted/10 border border-border/40 rounded-2xl text-center">
 										<div className="text-4xl font-black text-foreground font-mono">{result.harris} <span className="text-sm font-bold text-muted-foreground">kcal/day</span></div>
 										<div className="text-sm text-muted-foreground font-bold mt-2">Harris-Benedict BMR</div>
 									</div>

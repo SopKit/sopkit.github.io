@@ -155,7 +155,7 @@ export default function CrontabGeneratorTool() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 {/* Visual Selectors */}
                 <div className="lg:col-span-7 space-y-6">
-                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-6 shadow-sm">
+                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-6 shadow-sm">
                         <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
                             <Settings className="w-3.5 h-3.5" /> Interactive Schedule Builder
                         </h3>
@@ -256,7 +256,7 @@ export default function CrontabGeneratorTool() {
                 {/* Expression and Preset Templates */}
                 <div className="lg:col-span-5 space-y-6">
                     {/* Expression Box */}
-                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm text-xs font-semibold">
+                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm text-xs font-semibold">
                         <Label htmlFor="expr-input" className="text-xs font-bold text-muted-foreground uppercase block">Expression Output</Label>
                         <div className="flex gap-2">
                             <Input 

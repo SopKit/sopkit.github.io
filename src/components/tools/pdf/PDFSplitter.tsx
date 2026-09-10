@@ -221,7 +221,7 @@ export default function PdfSplitter() {
 											setDownloadUrl(null);
 											setDownloadUrls([]);
 										}}
-										className={`flex-1 flex items-center justify-center gap-1.5 text-[10px] font-bold py-1.5 px-2 rounded-md transition-colors ${splitMode === mode.id ? "bg-primary text-primary-foreground shadow" : "text-muted-foreground hover:text-foreground"}`}
+										className={`flex-1 flex items-center justify-center gap-1.5 text-[10px] font-bold py-1.5 px-2 rounded-xl transition-colors ${splitMode === mode.id ? "bg-primary text-primary-foreground shadow" : "text-muted-foreground hover:text-foreground"}`}
 									>
 										<mode.icon className="w-3.5 h-3.5" />
 										{mode.label}

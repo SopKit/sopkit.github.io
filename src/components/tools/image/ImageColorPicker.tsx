@@ -194,7 +194,7 @@ export default function ImageColorPicker() {
                     {!image ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-2xl text-center"
                         >
                             <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
                                 <Pipette className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
@@ -205,7 +205,7 @@ export default function ImageColorPicker() {
                             </p>
                         </div>
                     ) : (
-                        <Card className="border border-border/40 bg-white overflow-hidden shadow-lg rounded-3xl">
+                        <Card className="border border-border/40 bg-white overflow-hidden shadow-lg rounded-2xl">
                             <div className="bg-muted/15 border-b border-border/20 py-4 px-6 flex flex-row items-center justify-between">
                                 <div className="flex items-center gap-2 text-foreground">
                                     <ImageIcon className="h-4 w-4 text-primary" />
@@ -267,7 +267,7 @@ export default function ImageColorPicker() {
 
                 {/* Right Side Info & Values Panel */}
                 <div className="lg:col-span-2 space-y-6">
-                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-6">
+                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-6">
                         <h3 className="font-bold text-sm text-foreground flex items-center gap-1.5">
                             <Palette className="w-4 h-4 text-primary" /> Color Inspector
                         </h3>
@@ -344,7 +344,7 @@ export default function ImageColorPicker() {
 
                     {/* History Panel */}
                     {history.length > 0 && (
-                        <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4">
+                        <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4">
                             <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
                                 <History className="w-3.5 h-3.5" /> Recent Color Swatches
                             </h3>

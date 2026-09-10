@@ -73,7 +73,7 @@ export default function SeoHubPage({
 					customBreadcrumbs={[{ name: title, url: route }]}
 				/>
 				<section className="max-w-3xl space-y-5">
-					<Badge variant="secondary" className="rounded-md">SEO Hub</Badge>
+					<Badge variant="secondary" className="rounded-full">SEO Hub</Badge>
 					<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">
 						{title}
 					</h1>
@@ -87,11 +87,11 @@ export default function SeoHubPage({
 						<Link
 							key={item.slug}
 							href={item.route}
-							className="group rounded-md border border-border/60 bg-card/40 p-5 transition-colors hover:border-primary/30"
+							className="group rounded-xl border border-border/60 bg-card/40 p-5 transition-colors hover:border-primary/30"
 						>
 							<div className="flex items-start justify-between gap-4">
 								<div>
-									<Badge variant="outline" className="mb-3 rounded-md">
+									<Badge variant="outline" className="mb-3 rounded-full">
 										{item.difficulty} difficulty
 									</Badge>
 									<h2 className="text-lg font-bold group-hover:text-primary">
@@ -108,7 +108,7 @@ export default function SeoHubPage({
 				</section>
 
 				<section className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-					<Card className="rounded-md border-border/60">
+					<Card className="border-border/60">
 						<CardHeader>
 							<CardTitle className="text-2xl">{guideTitle}</CardTitle>
 						</CardHeader>
@@ -124,7 +124,7 @@ export default function SeoHubPage({
 						</CardContent>
 					</Card>
 
-					<Card className="rounded-md border-border/60">
+					<Card className="border-border/60">
 						<CardHeader>
 							<CardTitle className="text-2xl">Questions</CardTitle>
 						</CardHeader>
@@ -141,12 +141,12 @@ export default function SeoHubPage({
 					</Card>
 				</section>
 
-				<section className="rounded-md border border-border/60 bg-muted/20 p-6">
+				<section className="rounded-xl border border-border/60 bg-muted/20 p-6">
 					<h2 className="text-2xl font-bold">Useful Internal Links</h2>
 					<div className="mt-4 flex flex-wrap gap-3">
-						<Link className="rounded-md border px-3 py-2 text-sm hover:border-primary/40" href="/api">SopKit API</Link>
-						<Link className="rounded-md border px-3 py-2 text-sm hover:border-primary/40" href="/advertise">Advertise</Link>
-						<Link className="rounded-md border px-3 py-2 text-sm hover:border-primary/40" href="/services">Hire Us</Link>
+						<Link className="rounded-full border px-3 py-2 text-sm hover:border-primary/40" href="/api">SopKit API</Link>
+						<Link className="rounded-full border px-3 py-2 text-sm hover:border-primary/40" href="/advertise">Advertise</Link>
+						<Link className="rounded-full border px-3 py-2 text-sm hover:border-primary/40" href="/services">Hire Us</Link>
 					</div>
 				</section>
 			</main>

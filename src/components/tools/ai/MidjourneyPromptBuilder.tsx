@@ -140,7 +140,7 @@ export default function MidjourneyPromptBuilder() {
 							<select
 								value={artStyle}
 								onChange={(e) => setArtStyle(e.target.value)}
-								className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-1 focus:ring-ring"
+								className="w-full h-10 px-3 rounded-xl border border-input bg-background text-sm focus:outline-none focus:ring-1 focus:ring-ring"
 							>
 								<option value="">None (Default Midjourney Style)</option>
 								{artStyles.map(style => (
@@ -158,7 +158,7 @@ export default function MidjourneyPromptBuilder() {
 							<select
 								value={lighting}
 								onChange={(e) => setLighting(e.target.value)}
-								className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-1 focus:ring-ring"
+								className="w-full h-10 px-3 rounded-xl border border-input bg-background text-sm focus:outline-none focus:ring-1 focus:ring-ring"
 							>
 								<option value="">None</option>
 								{lightings.map(light => (
@@ -176,7 +176,7 @@ export default function MidjourneyPromptBuilder() {
 							<select
 								value={camera}
 								onChange={(e) => setCamera(e.target.value)}
-								className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-1 focus:ring-ring"
+								className="w-full h-10 px-3 rounded-xl border border-input bg-background text-sm focus:outline-none focus:ring-1 focus:ring-ring"
 							>
 								<option value="">None</option>
 								{cameras.map(cam => (
@@ -203,7 +203,7 @@ export default function MidjourneyPromptBuilder() {
 									<select
 										value={aspectRatio}
 										onChange={(e) => setAspectRatio(e.target.value)}
-										className="w-full h-9 px-2 rounded-md border border-input bg-background text-xs focus:outline-none focus:ring-1 focus:ring-ring"
+										className="w-full h-9 px-2 rounded-xl border border-input bg-background text-xs focus:outline-none focus:ring-1 focus:ring-ring"
 									>
 										<option value="16:9">16:9 (Landscape)</option>
 										<option value="1:1">1:1 (Square)</option>
@@ -219,7 +219,7 @@ export default function MidjourneyPromptBuilder() {
 									<select
 										value={version}
 										onChange={(e) => setVersion(e.target.value)}
-										className="w-full h-9 px-2 rounded-md border border-input bg-background text-xs focus:outline-none focus:ring-1 focus:ring-ring"
+										className="w-full h-9 px-2 rounded-xl border border-input bg-background text-xs focus:outline-none focus:ring-1 focus:ring-ring"
 									>
 										<option value="6.0">Version 6.0 (Latest)</option>
 										<option value="5.2">Version 5.2</option>

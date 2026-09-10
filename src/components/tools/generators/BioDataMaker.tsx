@@ -361,11 +361,11 @@ export default function BioDataMaker() {
                                 {mode === "marriage" ? (
                                     <>
                                         <div className="text-rose-600 font-serif text-lg tracking-widest uppercase font-bold">|| श्री गणेशाय नमः ||</div>
-                                        <h1 className="text-2xl font-bold font-serif text-amber-900 tracking-wider">BIO DATA</h1>
+                                        <p className="text-2xl font-bold font-serif text-amber-900 tracking-wider">BIO DATA</p>
                                     </>
                                 ) : (
                                     <>
-                                        <h1 className="text-2xl font-bold tracking-wide text-slate-900 uppercase">{fullName}</h1>
+                                        <p className="text-2xl font-bold tracking-wide text-slate-900 uppercase">{fullName}</p>
                                         <p className="text-sm font-medium text-slate-500">{occupation}</p>
                                     </>
                                 )}

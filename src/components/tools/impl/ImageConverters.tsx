@@ -59,7 +59,7 @@ export default function ImageConverters({ defaultTab = "convert" }) {
              <CardContent className="space-y-4">
                <div 
                  onClick={() => fileInputRef.current.click()}
-                 className="h-64 border-2 border-dashed rounded-3xl flex flex-col items-center justify-center cursor-pointer hover:bg-primary/5 transition-colors relative overflow-hidden"
+                 className="h-64 border-2 border-dashed rounded-2xl flex flex-col items-center justify-center cursor-pointer hover:bg-primary/5 transition-colors relative overflow-hidden"
                >
                  {previewUrl ? (
                    <img src={previewUrl} className="h-full w-full object-contain p-4" alt="Preview" />
@@ -105,7 +105,7 @@ export default function ImageConverters({ defaultTab = "convert" }) {
                </CardContent>
              </Card>
            ) : (
-             <div className="h-full flex flex-col items-center justify-center p-20 text-center border border-dashed rounded-3xl opacity-30">
+             <div className="h-full flex flex-col items-center justify-center p-20 text-center border border-dashed rounded-2xl opacity-30">
                 <ImageIcon className="h-16 w-16 mb-4" />
                 <p className="text-sm">Converted image will appear here.</p>
              </div>

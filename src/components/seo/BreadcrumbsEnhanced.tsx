@@ -236,7 +236,7 @@ export function RichBreadcrumbs({
 
 export default function BreadcrumbsEnhanced(props: BreadcrumbsEnhancedProps & { variant?: "default" | "pills"; className?: string }) {
 	return (
-		<Suspense fallback={<div className="h-6 w-48 bg-muted/10 animate-pulse rounded-md mb-6" />}>
+		<Suspense fallback={<div className="h-6 w-48 bg-muted/10 animate-pulse rounded-xl mb-6" />}>
 			<BreadcrumbsInner {...props} />
 		</Suspense>
 	);

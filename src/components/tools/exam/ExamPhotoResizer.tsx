@@ -263,7 +263,7 @@ function ExamPhotoResizerInner({
                                 <button
                                     type="button"
                                     onClick={() => changeLanguage("en")}
-                                    className={`px-2 py-0.5 rounded-sm transition-all text-[11px] font-bold ${!isHindi ? "bg-primary/10 text-primary" : "text-muted-foreground hover:text-foreground"}`}
+                                    className={`px-2 py-0.5 rounded-xl transition-all text-[11px] font-bold ${!isHindi ? "bg-primary/10 text-primary" : "text-muted-foreground hover:text-foreground"}`}
                                 >
                                     English
                                 </button>
@@ -271,7 +271,7 @@ function ExamPhotoResizerInner({
                                 <button
                                     type="button"
                                     onClick={() => changeLanguage("hi")}
-                                    className={`px-2 py-0.5 rounded-sm transition-all text-[11px] font-bold ${isHindi ? "bg-primary/10 text-primary" : "text-muted-foreground hover:text-foreground"}`}
+                                    className={`px-2 py-0.5 rounded-xl transition-all text-[11px] font-bold ${isHindi ? "bg-primary/10 text-primary" : "text-muted-foreground hover:text-foreground"}`}
                                 >
                                     हिन्दी (Hindi)
                                 </button>

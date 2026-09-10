@@ -10,6 +10,8 @@ const BASE_DISALLOW = [
 	"/private/",
 	"/handler/",
 	"/embed/",
+	"/embed-tool/",
+	"/embed-tool",
 	"/youtube-redirects/",
 	"/search",
 	"/search/",

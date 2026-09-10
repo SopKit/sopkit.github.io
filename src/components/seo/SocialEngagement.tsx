@@ -157,11 +157,11 @@ export function RelatedTools({
 										</p>
 										{showCategory && (
 											<div className="mt-3 flex flex-wrap gap-1.5">
-												<Badge variant="secondary" className="rounded-md text-[9px] font-semibold uppercase tracking-wider bg-muted/60">
+												<Badge variant="secondary" className="rounded-full text-[9px] font-semibold uppercase tracking-wider bg-muted/60">
 													{tool.category}
 												</Badge>
 												{isHighlighted && (
-													<Badge variant="outline" className="rounded-md text-[9px] font-semibold uppercase tracking-wider border-blue-500/30 text-blue-600 dark:text-blue-400">
+													<Badge variant="outline" className="rounded-full text-[9px] font-semibold uppercase tracking-wider border-blue-500/30 text-blue-600 dark:text-blue-400">
 														Popular
 													</Badge>
 												)}

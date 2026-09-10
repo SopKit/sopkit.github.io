@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import StructuredData from "@/components/shared/StructuredData";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
-import { getAllTools, type Tool } from "@/lib/tools";
+import { type Tool } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
 
 export type HubPageProps = {
@@ -57,7 +57,7 @@ export default function HubPage({
 			<main className="container mx-auto max-w-6xl px-4 py-12 md:py-16 space-y-12">
 				<BreadcrumbsEnhanced customBreadcrumbs={[{ name: title, url: route }]} />
 				<section className="max-w-3xl space-y-5">
-					<Badge variant="secondary" className="rounded-md">{badge}</Badge>
+					<Badge variant="secondary" className="rounded-full">{badge}</Badge>
 					<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">
 						{title}
 					</h1>
@@ -74,7 +74,7 @@ export default function HubPage({
 						<Link
 							key={tool.id}
 							href={tool.route}
-							className="group rounded-md border border-border/60 bg-card/40 p-5 transition-colors hover:border-primary/30"
+							className="group rounded-xl border border-border/60 bg-card/40 p-5 transition-colors hover:border-primary/30"
 						>
 							<div className="flex items-start justify-between gap-4">
 								<div>
@@ -94,7 +94,7 @@ export default function HubPage({
 				{(guidePoints.length > 0 || faqs.length > 0) && (
 					<section className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
 						{guidePoints.length > 0 && (
-							<Card className="rounded-md border-border/60">
+							<Card className="border-border/60">
 								<CardHeader>
 									<CardTitle className="text-2xl">{guideTitle}</CardTitle>
 								</CardHeader>
@@ -111,7 +111,7 @@ export default function HubPage({
 							</Card>
 						)}
 						{faqs.length > 0 && (
-							<Card className="rounded-md border-border/60">
+							<Card className="border-border/60">
 								<CardHeader>
 									<CardTitle className="text-2xl">Common Questions</CardTitle>
 								</CardHeader>

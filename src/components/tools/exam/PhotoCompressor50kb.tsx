@@ -189,7 +189,7 @@ export default function PhotoCompressor50kb() {
                                 </div>
                             ) : (
                                 <div className="space-y-4">
-                                    <div className="relative border border-border/40 bg-muted/10 p-4 rounded-md">
+                                    <div className="relative border border-border/40 bg-muted/10 p-4 rounded-xl">
                                         <img
                                             src={previewUrl}
                                             alt="Preview"
@@ -205,7 +205,7 @@ export default function PhotoCompressor50kb() {
                                         </Button>
                                     </div>
                                     {originalInfo && (
-                                        <div className="flex flex-wrap items-center justify-between text-xs text-muted-foreground bg-muted/20 px-3 py-2 border border-border/10 rounded-sm">
+                                        <div className="flex flex-wrap items-center justify-between text-xs text-muted-foreground bg-muted/20 px-3 py-2 border border-border/10 rounded-xl">
                                             <span>Original Size: <strong>{originalInfo.sizeKb} KB</strong></span>
                                             <span>File Type: <strong>{originalInfo.type.split("/")[1].toUpperCase()}</strong></span>
                                         </div>
@@ -273,7 +273,7 @@ export default function PhotoCompressor50kb() {
                                 )}
 
                                 {!processing && !compressedUrl && (
-                                    <div className="h-64 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-md p-6 bg-muted/5">
+                                    <div className="h-64 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-xl p-6 bg-muted/5">
                                         <FileImage className="h-12 w-12 text-muted-foreground/40 mb-3" />
                                         <p className="text-sm text-muted-foreground">Upload a photo to see the compressed result.</p>
                                     </div>
@@ -281,14 +281,14 @@ export default function PhotoCompressor50kb() {
 
                                 {!processing && compressedUrl && (
                                     <div className="space-y-4">
-                                        <div className="border border-primary/20 bg-muted/10 p-4 rounded-md">
+                                        <div className="border border-primary/20 bg-muted/10 p-4 rounded-xl">
                                             <img
                                                 src={compressedUrl}
                                                 alt="Compressed output"
                                                 className="max-h-[260px] mx-auto object-contain border border-border/40 shadow-md"
                                             />
                                         </div>
-                                        <div className="grid grid-cols-2 gap-2 text-sm bg-primary/5 border border-primary/10 rounded-sm py-2 px-3 text-left">
+                                        <div className="grid grid-cols-2 gap-2 text-sm bg-primary/5 border border-primary/10 rounded-xl py-2 px-3 text-left">
                                             <div>
                                                 <span className="text-xs text-muted-foreground block">Dimensions</span>
                                                 <span className="font-bold font-mono">{compressedWidth} x {compressedHeight} px</span>

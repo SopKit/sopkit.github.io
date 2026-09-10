@@ -2,14 +2,14 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Free SEO Tools Free Online - Ranked Picks (2026) Online - No Signup | SopKit",
+	title: "Free SEO Tools Online — Top Ranked Picks 2026 | SopKit",
 	description: "Assemble a free SEO stack that works in 2026: audit, keyword research, on-page metadata, and technical checks. No logins, no uploads, no subscriptions.",
 	keywords: "seo tools free online - ranked picks (2026), seo tools free online - ranked picks (2026) guide, SopKit, seo-tools-free-online, seo tools free online, free seo-tools-free-online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
 		canonical: "https://sopkit.github.io/seo-tools-free-online",
 	},
 	openGraph: {
-		title: "Free SEO Tools Free Online - Ranked Picks (2026) Online - No Signup | SopKit",
+		title: "Free SEO Tools Online — Top Ranked Picks 2026 | SopKit",
 		description: "Assemble a free SEO stack that works in 2026: audit, keyword research, on-page metadata, and technical checks. No logins, no uploads, no subscriptions.",
 		url: "https://sopkit.github.io/seo-tools-free-online",
 		siteName: "SopKit",
@@ -18,7 +18,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free SEO Tools Free Online - Ranked Picks (2026) Online - No Signup | SopKit",
+		title: "Free SEO Tools Online — Top Ranked Picks 2026 | SopKit",
 		description: "Assemble a free SEO stack that works in 2026: audit, keyword research, on-page metadata, and technical checks. No logins, no uploads, no subscriptions.",
 		images: ["/og-image.jpg"],
 	},
@@ -28,7 +28,7 @@ export const metadata = {
 export default async function ToolPage() {
 	const tool = {
 		id: "seo-tools-free-online",
-		name: "SEO Tools Free Online - Ranked Picks (2026)",
+		name: "Free SEO Tools Online — Top Ranked Picks 2026",
 		description:
 			"Use free online SEO tools for audits, keyword planning, metadata generation, and indexing checks. Built for creators, agencies, and developers.",
 		route: "/seo-tools-free-online",

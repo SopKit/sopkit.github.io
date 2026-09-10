@@ -205,7 +205,7 @@ export default function FaviconGeneratorProTool() {
                     {!imageSrc ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-2xl text-center"
                         >
                             <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
                                 <ImageIcon className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
@@ -216,7 +216,7 @@ export default function FaviconGeneratorProTool() {
                             </p>
                         </div>
                     ) : (
-                        <Card className="p-6 border border-border/40 bg-card/10 rounded-3xl space-y-6 shadow-sm animate-in">
+                        <Card className="p-6 border border-border/40 bg-card/10 rounded-2xl space-y-6 shadow-sm animate-in">
                             <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
                                 <Settings className="w-3.5 h-3.5" /> Target Sizes
                             </h3>
@@ -261,11 +261,11 @@ export default function FaviconGeneratorProTool() {
                 {/* Upload Image Preview Box */}
                 {imageSrc && (
                     <div className="lg:col-span-2 space-y-6">
-                        <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl text-center shadow-sm">
+                        <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl text-center shadow-sm">
                             <h3 className="font-bold text-sm text-foreground flex items-center justify-center gap-1.5">
                                 <Grid className="w-4 h-4 text-primary" /> Source Preview
                             </h3>
-                            <div className="p-8 border border-border/20 bg-background/40 rounded-3xl flex items-center justify-center shadow-inner mt-4">
+                            <div className="p-8 border border-border/20 bg-background/40 rounded-2xl flex items-center justify-center shadow-inner mt-4">
                                 <img 
                                     src={imageSrc} 
                                     alt="Uploaded logo preview" 

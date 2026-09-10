@@ -72,7 +72,7 @@ export default function YouTubeTitleLengthCheckerTool() {
 							</Button>
 						</div>
 						<div className="p-4 bg-background border border-border/40 rounded-xl space-y-1 max-w-sm">
-							<div className="aspect-video w-full bg-muted rounded-md mb-2 flex items-center justify-center text-xs text-muted-foreground">Video Thumbnail Preview</div>
+							<div className="aspect-video w-full bg-muted rounded-xl mb-2 flex items-center justify-center text-xs text-muted-foreground">Video Thumbnail Preview</div>
 							<h4 className={`text-sm font-semibold leading-snug ${isTooLong ? "line-clamp-2" : ""}`}>
 								{title || "Your video title will render here"}
 							</h4>

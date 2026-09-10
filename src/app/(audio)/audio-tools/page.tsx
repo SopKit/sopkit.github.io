@@ -24,7 +24,7 @@ export default function AudioHub() {
 		<div className="min-h-screen bg-background">
 			<main>
 				<PremiumHero 
-					title="Audio Utilities" 
+					title="Audio Utilities — Free Convert & Edit Tools"
 					subtitle="Convert, compress, and edit audio files 100% free in your browser. No signup, no uploads to servers — everything stays private."
 				/>
 				

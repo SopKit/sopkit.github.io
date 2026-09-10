@@ -186,7 +186,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);`;
 										key={c}
 										type="button"
 										onClick={() => setBgColor(c)}
-										className="w-7 h-7 rounded-md border border-border/80 transition-transform hover:scale-110"
+										className="w-7 h-7 rounded-xl border border-border/80 transition-transform hover:scale-110"
 										style={{ backgroundColor: c }}
 										aria-label={`Select color ${c}`}
 									/>
@@ -202,7 +202,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);`;
 					<div className="relative h-64 md:h-72 rounded-2xl overflow-hidden p-6 flex items-center justify-center bg-gradient-to-tr from-violet-600 via-indigo-500 to-pink-500 shadow-inner">
 						{/* Background geometric shapes */}
 						<div className="absolute top-4 left-4 w-24 h-24 rounded-full bg-amber-400 blur-sm opacity-80 animate-pulse" />
-						<div className="absolute bottom-4 right-6 w-32 h-32 rounded-3xl bg-cyan-400 blur-sm opacity-80" />
+						<div className="absolute bottom-4 right-6 w-32 h-32 rounded-2xl bg-cyan-400 blur-sm opacity-80" />
 						<div className="absolute top-1/2 left-1/3 w-16 h-16 rounded-xl bg-emerald-400 blur-sm opacity-70" />
 
 						{/* Live Glass Element */}

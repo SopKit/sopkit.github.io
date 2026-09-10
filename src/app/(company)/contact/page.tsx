@@ -3,15 +3,15 @@ import { ArrowUpRight } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
-	title: "Free Contact Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free Contact online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+	title: "Contact SopKit — Support & Feedback",
+	description: "Reach the SopKit team for support, feedback or partnerships. We reply fast — find every channel here.",
 	keywords: "contact SopKit, support, feedback, help, contact, request tool, SopKit support, report bug",
 	alternates: {
 		canonical: "https://sopkit.github.io/contact",
 	},
 	openGraph: {
-		title: "Free Contact Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Contact online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		title: "Contact SopKit — Support & Feedback",
+		description: "Reach the SopKit team for support, feedback or partnerships. We reply fast — find every channel here.",
 		url: "https://sopkit.github.io/contact",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -19,8 +19,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Contact Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Contact online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		title: "Contact SopKit — Support & Feedback",
+		description: "Reach the SopKit team for support, feedback or partnerships. We reply fast — find every channel here.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

@@ -24,7 +24,7 @@ export default function TextHub() {
 		<div className="min-h-screen bg-background">
 			<main>
 				<PremiumHero 
-					title="Text Utilities" 
+					title="Text Utilities — Free Format, Count & Analyze"
 					subtitle="Fast and secure text transformation tools. Format, clean, and analyze your content instantly with our professional suite."
 				/>
 				

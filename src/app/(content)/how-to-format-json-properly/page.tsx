@@ -2,14 +2,14 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Free How to Format JSON Properly (Without Breaking Data) Online - No Signup | SopKit",
+	title: "How to Format JSON Properly — 2026 Guide | SopKit",
 	description: "Format JSON the safe way: validate first, pretty-print second, minify last. Common errors explained plus local, in-browser tools that never upload data.",
 	keywords: "how to format json properly (without breaking data), how to format json properly (without breaking data) guide, SopKit, how-to-format-json-properly, how to format json properly, free how-to-format-json-properly, how to format json properly online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
 		canonical: "https://sopkit.github.io/how-to-format-json-properly",
 	},
 	openGraph: {
-		title: "Free How to Format JSON Properly (Without Breaking Data) Online - No Signup | SopKit",
+		title: "How to Format JSON Properly — 2026 Guide | SopKit",
 		description: "Format JSON the safe way: validate first, pretty-print second, minify last. Common errors explained plus local, in-browser tools that never upload data.",
 		url: "https://sopkit.github.io/how-to-format-json-properly",
 		siteName: "SopKit",
@@ -18,7 +18,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free How to Format JSON Properly (Without Breaking Data) Online - No Signup | SopKit",
+		title: "How to Format JSON Properly — 2026 Guide | SopKit",
 		description: "Format JSON the safe way: validate first, pretty-print second, minify last. Common errors explained plus local, in-browser tools that never upload data.",
 		images: ["/og-image.jpg"],
 	},
@@ -28,7 +28,7 @@ export const metadata = {
 export default async function ToolPage() {
 	const tool = {
 		id: "how-to-format-json-properly",
-		name: "How to Format JSON Properly (Without Breaking Data)",
+		name: "How to Format JSON Properly — 2026 Guide",
 		description:
 			"Learn how to format JSON correctly with a simple workflow for validation, cleanup, and conversion-safe output.",
 		route: "/how-to-format-json-properly",

@@ -170,11 +170,11 @@ export default function PanCardResizer() {
                         <CardContent className="p-6 space-y-6">
                             
                             {/* Mode Selection */}
-                            <div className="grid grid-cols-2 gap-2 p-1 bg-muted/40 border border-border/20 rounded-md">
+                            <div className="grid grid-cols-2 gap-2 p-1 bg-muted/40 border border-border/20 rounded-xl">
                                 <button
                                     type="button"
                                     onClick={() => setMode("photo")}
-                                    className={`py-2 text-sm font-semibold rounded-sm transition-all ${
+                                    className={`py-2 text-sm font-semibold rounded-xl transition-all ${
                                         mode === "photo"
                                             ? "bg-primary text-primary-foreground shadow-sm"
                                             : "text-muted-foreground hover:text-foreground"
@@ -185,7 +185,7 @@ export default function PanCardResizer() {
                                 <button
                                     type="button"
                                     onClick={() => setMode("signature")}
-                                    className={`py-2 text-sm font-semibold rounded-sm transition-all ${
+                                    className={`py-2 text-sm font-semibold rounded-xl transition-all ${
                                         mode === "signature"
                                             ? "bg-primary text-primary-foreground shadow-sm"
                                             : "text-muted-foreground hover:text-foreground"
@@ -199,7 +199,7 @@ export default function PanCardResizer() {
                             {!previewUrl ? (
                                 <div
                                     onClick={triggerFileSelect}
-                                    className="border-2 border-dashed border-border/60 hover:border-primary/50 transition-all p-12 text-center cursor-pointer space-y-4 hover:bg-muted/10 group rounded-md"
+                                    className="border-2 border-dashed border-border/60 hover:border-primary/50 transition-all p-12 text-center cursor-pointer space-y-4 hover:bg-muted/10 group rounded-xl"
                                 >
                                     <input
                                         type="file"
@@ -218,7 +218,7 @@ export default function PanCardResizer() {
                                 </div>
                             ) : (
                                 <div className="space-y-4">
-                                    <div className="relative border border-border/40 bg-muted/10 p-4 rounded-md">
+                                    <div className="relative border border-border/40 bg-muted/10 p-4 rounded-xl">
                                         <img
                                             src={previewUrl}
                                             alt="Uploaded preview"
@@ -234,7 +234,7 @@ export default function PanCardResizer() {
                                         </Button>
                                     </div>
                                     {originalInfo && (
-                                        <div className="flex flex-wrap items-center justify-between text-xs text-muted-foreground bg-muted/20 px-3 py-2 border border-border/10 rounded-sm">
+                                        <div className="flex flex-wrap items-center justify-between text-xs text-muted-foreground bg-muted/20 px-3 py-2 border border-border/10 rounded-xl">
                                             <span>Original Size: <strong>{originalInfo.sizeKb} KB</strong></span>
                                             <span>File Type: <strong>{originalInfo.type.split("/")[1].toUpperCase()}</strong></span>
                                         </div>
@@ -284,7 +284,7 @@ export default function PanCardResizer() {
                                 )}
 
                                 {!processing && !resizedUrl && (
-                                    <div className="h-48 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-md p-6 bg-muted/5">
+                                    <div className="h-48 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-xl p-6 bg-muted/5">
                                         <FileImage className="h-10 w-10 text-muted-foreground/40 mb-2" />
                                         <p className="text-xs text-muted-foreground">Upload your file to preview output.</p>
                                     </div>
@@ -292,7 +292,7 @@ export default function PanCardResizer() {
 
                                 {!processing && resizedUrl && (
                                     <div className="space-y-4">
-                                        <div className="border border-primary/20 bg-muted/10 p-4 rounded-md flex items-center justify-center">
+                                        <div className="border border-primary/20 bg-muted/10 p-4 rounded-xl flex items-center justify-center">
                                             <img
                                                 src={resizedUrl}
                                                 alt="Output result"
@@ -300,7 +300,7 @@ export default function PanCardResizer() {
                                                 style={{ width: `${width}px`, height: `${height}px`, maxWidth: "100%", maxHeight: "200px" }}
                                             />
                                         </div>
-                                        <div className="grid grid-cols-2 gap-2 text-sm bg-primary/5 border border-primary/10 rounded-sm py-2 px-3 text-left">
+                                        <div className="grid grid-cols-2 gap-2 text-sm bg-primary/5 border border-primary/10 rounded-xl py-2 px-3 text-left">
                                             <div>
                                                 <span className="text-xs text-muted-foreground block font-semibold">Dimensions</span>
                                                 <span className="font-bold font-mono">{width} x {height} px</span>

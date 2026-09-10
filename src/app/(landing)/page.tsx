@@ -15,8 +15,6 @@ import {
 	Calculator,
 	Search,
 	Type,
-	ChevronRight,
-	Zap,
 	ArrowRight
 } from "lucide-react";
 
@@ -30,41 +28,7 @@ export async function generateMetadata(): Promise<any> {
 	});
 }
 
-function ToolCard({ tool }: { tool: any }) {
-	if (!tool) return null;
-	return (
-		<Link
-			href={tool.route}
-			className="group flex flex-col justify-between p-6 bg-card border border-border/60 rounded-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_20px_50px_rgba(255,255,255,0.05)] hover:border-blue-500/40 hover:-translate-y-1 transition-all duration-300 no-underline h-full relative overflow-hidden"
-		>
-			<div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-			<div className="relative z-10">
-				<div className="flex items-start justify-between gap-2 mb-3">
-					<h3 className="text-lg font-bold text-card-foreground tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-						{tool.name}
-					</h3>
-					{tool.id === "ai-music-generator" && (
-						<Badge className="bg-gradient-to-r from-amber-500 to-orange-500 text-white border-0 text-[10px] px-1.5 py-0 shrink-0 animate-pulse rounded-full">
-							<Zap className="h-2.5 w-2.5 mr-0.5" />
-							Free
-						</Badge>
-					)}
-				</div>
-				{tool.description && (
-					<p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">
-						{tool.description}
-					</p>
-				)}
-			</div>
-			<div className="mt-6 text-blue-600 dark:text-blue-400 text-xs font-bold flex items-center gap-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all relative z-10">
-				Open Sandbox <ChevronRight className="h-3.5 w-3.5" />
-			</div>
-		</Link>
-	);
-}
-
 export default async function LandingPage() {
-	const heroTitle = `Private, Fast & Local — ${SITE_CONFIG.toolCountString} Free Tools That Never Upload Your Files`;
 	const heroSubtitle = `While other tool sites upload and store your files on cloud servers, SopKit runs 100% locally in your browser sandbox using WebAssembly. Zero data collection, instant speed, no signup required.`;
 	const allTools = getAllTools();
 
@@ -86,7 +50,7 @@ export default async function LandingPage() {
 
 			<div className="container mx-auto px-4 max-w-7xl">
 				{/* Hero Section */}
-				<PremiumHero title={heroTitle} subtitle={heroSubtitle} tools={allTools} />
+				<PremiumHero subtitle={heroSubtitle} tools={allTools} />
 
 				{/* High Viewability Ad Unit after Hero & Sponsors */}
 				<div className="py-4 max-w-4xl mx-auto">

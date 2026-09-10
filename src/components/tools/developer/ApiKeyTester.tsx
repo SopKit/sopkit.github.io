@@ -134,7 +134,7 @@ export default function ApiKeyTester({ toolName = "OpenAI API Key" }: { toolName
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
                 {/* Form Inputs Panel */}
                 <div className="lg:col-span-3 space-y-6">
-                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-5 shadow-sm text-xs font-semibold">
+                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-5 shadow-sm text-xs font-semibold">
                         <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
                             <Settings className="w-3.5 h-3.5" /> API Key Target Parameters
                         </h3>
@@ -214,7 +214,7 @@ export default function ApiKeyTester({ toolName = "OpenAI API Key" }: { toolName
 
                 {/* Status Result Panel */}
                 <div className="lg:col-span-2 space-y-6">
-                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm min-h-[220px] flex flex-col justify-between">
+                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm min-h-[220px] flex flex-col justify-between">
                         <div>
                             <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
                                 <Terminal className="w-3.5 h-3.5" /> Diagnostic Console

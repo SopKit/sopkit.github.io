@@ -16,6 +16,8 @@ interface ToolModeTabsProps {
 	value: string;
 	/** Called when the user picks a mode. */
 	onChange: (value: string) => void;
+	/** Accessible label for the tablist (defaults to "Tool mode"). */
+	ariaLabel?: string;
 	className?: string;
 }
 
@@ -28,6 +30,7 @@ export function ToolModeTabs({
 	tabs,
 	value,
 	onChange,
+	ariaLabel = "Tool mode",
 	className,
 }: ToolModeTabsProps) {
 	const selectedIndex = Math.max(
@@ -50,9 +53,9 @@ export function ToolModeTabs({
 	};
 
 	return (
-		<div
-			role="tablist"
-			aria-label="Tool mode"
+	<div
+		role="tablist"
+		aria-label={ariaLabel}
 			className={cn(DS.tabs.container, className)}
 			style={{ gridTemplateColumns: `repeat(${tabs.length}, minmax(0, 1fr))` }}
 		>

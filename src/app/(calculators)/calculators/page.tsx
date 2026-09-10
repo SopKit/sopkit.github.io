@@ -20,7 +20,7 @@ export default function CalculatorsHub() {
 		<div className="min-h-screen bg-background">
 			<main>
 				<PremiumHero 
-					title="Smart Calculators" 
+					title="Smart Calculators — Free Finance, Health & Math"
 					subtitle="Accurate and easy-to-use calculators for every need. From finance to health, get the answers you need in seconds."
 				/>
 				

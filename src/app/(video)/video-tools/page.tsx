@@ -20,7 +20,7 @@ export default function VideoToolsHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<main>
-				<PremiumHero title="Video Tools" subtitle="Convert, edit, and download videos 100% free in your browser. No signup, no uploads to servers — everything stays private." />
+				<PremiumHero title="Video Tools — Convert, Edit & Download Free" subtitle="Convert, edit, and download videos 100% free in your browser. No signup, no uploads to servers — everything stays private." />
 				<div className="container mx-auto px-4 py-16 max-w-7xl relative">
 					<GridPattern className="opacity-20" />
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">

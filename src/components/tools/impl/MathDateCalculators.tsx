@@ -130,7 +130,7 @@ export default function MathDateCalculators({ defaultTab = "date-diff" }) {
                 </CardContent>
               </Card>
               {romanOutput && (
-                <div className="p-8 text-center bg-secondary/10 rounded-3xl border border-dashed">
+                <div className="p-8 text-center bg-secondary/10 rounded-2xl border border-dashed">
                    <p className="text-sm text-muted-foreground mb-2">Result</p>
                    <h2 className="text-5xl font-black text-primary">{romanOutput}</h2>
                 </div>

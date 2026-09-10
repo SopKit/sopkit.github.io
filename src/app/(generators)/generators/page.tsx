@@ -20,7 +20,7 @@ export default function GeneratorsHub() {
 		<div className="min-h-screen bg-background">
 			<main>
 				<PremiumHero 
-					title="AI & Fun Generators" 
+					title="AI & Fun Generators — Free Creative Tools"
 					subtitle="Generate anything from stunning AI art to professional social bios instantly. Free, fast, and no registration required."
 				/>
 				

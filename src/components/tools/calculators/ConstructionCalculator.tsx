@@ -163,7 +163,7 @@ export default function ConstructionCalculator({ defaultTab = "brick" }: Props) 
             <div className="grid grid-cols-3 gap-2 p-1 bg-muted/40 border border-border/20 rounded-lg">
                 <button
                     onClick={() => setActiveTab("brick")}
-                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-md flex items-center justify-center gap-1.5 transition-all ${
+                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
                         activeTab === "brick"
                             ? "bg-primary text-primary-foreground shadow"
                             : "text-muted-foreground hover:text-foreground"
@@ -174,7 +174,7 @@ export default function ConstructionCalculator({ defaultTab = "brick" }: Props) 
                 </button>
                 <button
                     onClick={() => setActiveTab("tile")}
-                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-md flex items-center justify-center gap-1.5 transition-all ${
+                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
                         activeTab === "tile"
                             ? "bg-primary text-primary-foreground shadow"
                             : "text-muted-foreground hover:text-foreground"
@@ -185,7 +185,7 @@ export default function ConstructionCalculator({ defaultTab = "brick" }: Props) 
                 </button>
                 <button
                     onClick={() => setActiveTab("paint")}
-                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-md flex items-center justify-center gap-1.5 transition-all ${
+                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
                         activeTab === "paint"
                             ? "bg-primary text-primary-foreground shadow"
                             : "text-muted-foreground hover:text-foreground"

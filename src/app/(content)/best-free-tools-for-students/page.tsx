@@ -2,14 +2,14 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Free Best Free Tools for Students (2026) Online - No Signup | SopKit",
+	title: "Best Free Tools for Students in 2026 | SopKit",
 	description: "Solve everyday digital tasks instantly using our free Best Free Tools for Students (2026) online. Fast, secure browser-based utility with no registration.",
 	keywords: "best free tools for students (2026), best free tools for students (2026) guide, SopKit, best-free-tools-for-students, best free tools for students, free best-free-tools-for-students, best free tools for students online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
 		canonical: "https://sopkit.github.io/best-free-tools-for-students",
 	},
 	openGraph: {
-		title: "Free Best Free Tools for Students (2026) Online - No Signup | SopKit",
+		title: "Best Free Tools for Students in 2026 | SopKit",
 		description: "Solve everyday digital tasks instantly using our free Best Free Tools for Students (2026) online. Fast, secure browser-based utility with no registration.",
 		url: "https://sopkit.github.io/best-free-tools-for-students",
 		siteName: "SopKit",
@@ -18,7 +18,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Best Free Tools for Students (2026) Online - No Signup | SopKit",
+		title: "Best Free Tools for Students in 2026 | SopKit",
 		description: "Solve everyday digital tasks instantly using our free Best Free Tools for Students (2026) online. Fast, secure browser-based utility with no registration.",
 		images: ["/og-image.jpg"],
 	},
@@ -28,7 +28,7 @@ export const metadata = {
 export default async function ToolPage() {
 	const tool = {
 		id: "best-free-tools-for-students",
-		name: "Best Free Tools for Students (2026)",
+		name: "Best Free Tools for Students in 2026",
 		description:
 			"Discover the best free tools for students in 2026. Improve writing, formatting, assignments, and study productivity with no-signup online tools.",
 		route: "/best-free-tools-for-students",

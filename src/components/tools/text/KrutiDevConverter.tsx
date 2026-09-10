@@ -156,7 +156,7 @@ export default function KrutiDevConverter({ defaultMode = "kruti-to-uni" } = {})
             <div className="grid grid-cols-3 gap-2 p-1 bg-muted/40 border border-border/20 rounded-lg">
                 <button
                     onClick={() => { setMode("kruti-to-uni"); handleClear(); }}
-                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-md flex items-center justify-center gap-1.5 transition-all ${
+                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
                         mode === "kruti-to-uni"
                             ? "bg-primary text-primary-foreground shadow"
                             : "text-muted-foreground hover:text-foreground"
@@ -167,7 +167,7 @@ export default function KrutiDevConverter({ defaultMode = "kruti-to-uni" } = {})
                 </button>
                 <button
                     onClick={() => { setMode("uni-to-kruti"); handleClear(); }}
-                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-md flex items-center justify-center gap-1.5 transition-all ${
+                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
                         mode === "uni-to-kruti"
                             ? "bg-primary text-primary-foreground shadow"
                             : "text-muted-foreground hover:text-foreground"
@@ -178,7 +178,7 @@ export default function KrutiDevConverter({ defaultMode = "kruti-to-uni" } = {})
                 </button>
                 <button
                     onClick={() => { setMode("hinglish-to-hindi"); handleClear(); }}
-                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-md flex items-center justify-center gap-1.5 transition-all ${
+                    className={`py-2 px-3 text-xs md:text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
                         mode === "hinglish-to-hindi"
                             ? "bg-primary text-primary-foreground shadow"
                             : "text-muted-foreground hover:text-foreground"

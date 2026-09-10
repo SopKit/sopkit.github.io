@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Code, Copy, Check, Palette, Moon, Sun, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ToolModeTabs } from "./design-system";
 
 interface EmbedWidgetGiverProps {
 	toolId: string;
@@ -96,65 +97,52 @@ export function EmbedWidgetGiver({ toolId, toolName }: EmbedWidgetGiverProps) {
 						<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 							{/* Theme selection */}
 							<div className="space-y-2">
-								<label className="text-[11px] font-bold text-muted-foreground uppercase flex items-center gap-1">
+								<span className="text-[11px] font-bold text-muted-foreground uppercase flex items-center gap-1">
 									{theme === "dark" ? <Moon className="h-3 w-3" /> : <Sun className="h-3 w-3" />}
 									Display Theme
-								</label>
-								<div className="flex rounded-lg border border-border bg-background p-1 gap-1">
-									<button
-										type="button"
-										onClick={() => setTheme("dark")}
-										className={`flex-1 text-[11px] font-bold py-1 px-2.5 rounded-md transition-colors ${theme === "dark" ? "bg-primary text-primary-foreground shadow" : "text-muted-foreground hover:text-foreground"}`}
-									>
-										Dark
-									</button>
-									<button
-										type="button"
-										onClick={() => setTheme("light")}
-										className={`flex-1 text-[11px] font-bold py-1 px-2.5 rounded-md transition-colors ${theme === "light" ? "bg-primary text-primary-foreground shadow" : "text-muted-foreground hover:text-foreground"}`}
-									>
-										Light
-									</button>
-								</div>
+								</span>
+								<ToolModeTabs
+									ariaLabel="Display theme"
+									tabs={[
+										{ value: "dark", label: "Dark" },
+										{ value: "light", label: "Light" },
+									]}
+									value={theme}
+									onChange={setTheme}
+								/>
 							</div>
 
 							{/* Accent Color Selection */}
 							<div className="space-y-2">
-								<label className="text-[11px] font-bold text-muted-foreground uppercase flex items-center gap-1">
+								<span className="text-[11px] font-bold text-muted-foreground uppercase flex items-center gap-1">
 									<Palette className="h-3 w-3" />
 									Accent Color
-								</label>
-								<div className="flex rounded-lg border border-border bg-background p-1 gap-1 flex-wrap">
-									{["blue", "purple", "emerald", "orange"].map((c) => (
-										<button
-											key={c}
-											type="button"
-											onClick={() => setAccent(c)}
-											className={`flex-1 text-[10px] font-bold py-1 px-1.5 rounded-md transition-colors capitalize ${accent === c ? "bg-primary text-primary-foreground shadow" : "text-muted-foreground hover:text-foreground"}`}
-										>
-											{c}
-										</button>
-									))}
-								</div>
+								</span>
+								<ToolModeTabs
+									ariaLabel="Accent color"
+									tabs={["blue", "purple", "emerald", "orange"].map((c) => ({
+										value: c,
+										label: c.charAt(0).toUpperCase() + c.slice(1),
+									}))}
+									value={accent}
+									onChange={setAccent}
+								/>
 							</div>
 
 							{/* Height adjustment */}
 							<div className="space-y-2">
-								<label className="text-[11px] font-bold text-muted-foreground uppercase">
+								<span className="text-[11px] font-bold text-muted-foreground uppercase">
 									Iframe Height (px)
-								</label>
-								<div className="flex rounded-lg border border-border bg-background p-1 gap-1">
-									{["500", "550", "600"].map((h) => (
-										<button
-											key={h}
-											type="button"
-											onClick={() => setHeight(h)}
-											className={`flex-1 text-[10px] font-bold py-1 px-2 rounded-md transition-colors ${height === h ? "bg-primary text-primary-foreground shadow" : "text-muted-foreground hover:text-foreground"}`}
-										>
-											{h}px
-										</button>
-									))}
-								</div>
+								</span>
+								<ToolModeTabs
+									ariaLabel="Iframe height in pixels"
+									tabs={["500", "550", "600"].map((h) => ({
+										value: h,
+										label: `${h}px`,
+									}))}
+									value={height}
+									onChange={setHeight}
+								/>
 							</div>
 						</div>
 					</div>
@@ -178,7 +166,7 @@ export function EmbedWidgetGiver({ toolId, toolName }: EmbedWidgetGiverProps) {
 
 					{/* Code output and copy box */}
 					<div className="relative group/embed">
-						<pre className="w-full p-4 bg-zinc-950 text-zinc-100 rounded-lg overflow-x-auto text-[11px] font-mono leading-relaxed border border-zinc-800 focus:outline-none max-h-36">
+						<pre className="w-full p-4 bg-zinc-950 text-zinc-100 rounded-xl overflow-x-auto text-[11px] font-mono leading-relaxed border border-zinc-800 focus:outline-none max-h-36">
 							<code ref={codeRef} className="language-html">
 								{embedCode}
 							</code>

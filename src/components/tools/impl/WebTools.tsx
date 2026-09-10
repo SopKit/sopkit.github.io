@@ -111,7 +111,7 @@ export default function WebTools({ defaultTab = "domain" }) {
                     </div>
                   ))
                 ) : (
-                  <div className="h-full flex flex-col items-center justify-center p-10 text-center border border-dashed rounded-3xl opacity-50">
+                  <div className="h-full flex flex-col items-center justify-center p-10 text-center border border-dashed rounded-2xl opacity-50">
                     <Globe className="h-10 w-10 mb-2" />
                     <p className="text-sm">Enter a keyword to get domain ideas.</p>
                   </div>
@@ -210,7 +210,7 @@ export default function WebTools({ defaultTab = "domain" }) {
                     </div>
                   </>
                 ) : (
-                  <div className="h-full flex flex-col items-center justify-center p-10 text-center border border-dashed rounded-3xl opacity-50">
+                  <div className="h-full flex flex-col items-center justify-center p-10 text-center border border-dashed rounded-2xl opacity-50">
                     <Search className="h-10 w-10 mb-2" />
                     <p className="text-sm">Enter a topic to generate SEO tags.</p>
                   </div>

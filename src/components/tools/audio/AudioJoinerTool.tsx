@@ -251,7 +251,7 @@ export default function AudioJoinerTool() {
 			{audioFiles.length === 0 ? (
 				<div
 					onClick={() => fileInputRef.current?.click()}
-					className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
+					className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-2xl text-center"
 				>
 					<div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
 						<Music className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />

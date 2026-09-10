@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import { 
 	FileTextIcon, 
 	EyeIcon, 
@@ -19,8 +19,64 @@ declare global {
 	}
 }
 
+function compileMarkdown(md: string): string {
+	let rawHtml = md;
+
+	// Escape basic HTML tags to prevent XSS
+	rawHtml = rawHtml
+		.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;");
+
+	// Code blocks
+	rawHtml = rawHtml.replace(/```([\s\S]*?)```/g, (match, code) => {
+		return `<pre style="background: #f4f4f5; padding: 12px; border-radius: 8px; font-family: monospace; font-size: 13px; overflow-x: auto; margin: 16px 0;"><code>${code.trim()}</code></pre>`;
+	});
+
+	// Headings
+	rawHtml = rawHtml.replace(/^### (.*?)$/gm, '<h3 style="font-size: 16px; font-weight: bold; margin-top: 16px; margin-bottom: 8px; color: #18181b;">$1</h3>');
+	rawHtml = rawHtml.replace(/^## (.*?)$/gm, '<h2 style="font-size: 20px; font-weight: 800; margin-top: 24px; margin-bottom: 12px; color: #18181b; border-bottom: 1px solid #e4e4e7; padding-bottom: 4px;">$1</h2>');
+	rawHtml = rawHtml.replace(/^# (.*?)$/gm, '<h1 style="font-size: 26px; font-weight: 900; margin-top: 28px; margin-bottom: 16px; color: #18181b; text-align: center;">$1</h1>');
+
+	// Bold & Italic
+	rawHtml = rawHtml.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+	rawHtml = rawHtml.replace(/\*(.*?)\*/g, "<em>$1</em>");
+
+	// Inline code
+	rawHtml = rawHtml.replace(/`([^`]+)`/g, '<code style="background: #f4f4f5; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 13px; color: #2563eb;">$1</code>');
+
+	// Blockquotes
+	rawHtml = rawHtml.replace(/^> (.*?)$/gm, '<blockquote style="border-left: 4px solid #3b82f6; padding-left: 16px; font-style: italic; margin: 16px 0; color: #71717a;">$1</blockquote>');
+
+	// Horizontal rule
+	rawHtml = rawHtml.replace(/^---$/gm, '<hr style="border: 0; border-top: 1px solid #e4e4e7; margin: 24px 0;" />');
+
+	// Lists
+	rawHtml = rawHtml.replace(/^\- (.*?)$/gm, '<li style="margin-left: 20px; list-style-type: disc; margin-top: 4px; margin-bottom: 4px; color: #3f3f46;">$1</li>');
+	rawHtml = rawHtml.replace(/^\* (.*?)$/gm, '<li style="margin-left: 20px; list-style-type: disc; margin-top: 4px; margin-bottom: 4px; color: #3f3f46;">$1</li>');
+
+	// Handle paragraphs
+	const lines = rawHtml.split(/\n{2,}/);
+	rawHtml = lines.map(line => {
+		const trimmed = line.trim();
+		if (
+			trimmed.startsWith("<h") || 
+			trimmed.startsWith("<li") || 
+			trimmed.startsWith("<pre") || 
+			trimmed.startsWith("<block") ||
+			trimmed.startsWith("<hr") ||
+			trimmed === ""
+		) {
+			return line;
+		}
+		return `<p style="margin-top: 12px; margin-bottom: 12px; color: #3f3f46; line-height: 1.6;">${line.replace(/\n/g, "<br>")}</p>`;
+	}).join("\n");
+
+	return rawHtml;
+}
+
 export default function MarkdownToPdfTool() {
-	const [markdown, setMarkdown] = useState(`# Document Title
+	const [markdown, setMarkdown] = useState(`## Document Title
 
 This is a clean, print-ready PDF document compiled directly from **Markdown** in your browser.
 
@@ -39,9 +95,11 @@ This is a clean, print-ready PDF document compiled directly from **Markdown** in
 > "This tool runs entirely in your browser using local canvas buffers, guaranteeing total security for your private files."
 `);
 
-	const [html, setHtml] = useState("");
+	const html = useMemo(() => compileMarkdown(markdown), [markdown]);
 	const [isProcessing, setIsProcessing] = useState(false);
-	const [pdflib, setPdflib] = useState<any>(null);
+	const [pdflib, setPdflib] = useState<any>(() =>
+		typeof window !== "undefined" ? ((window as any).PDFLib ?? null) : null,
+	);
 	const previewRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -55,8 +113,6 @@ This is a clean, print-ready PDF document compiled directly from **Markdown** in
 				toast.error("Failed to load PDF library. Please refresh and check connection.");
 			};
 			document.head.appendChild(script);
-		} else {
-			setPdflib(window.PDFLib);
 		}
 
 		// Load html2canvas from CDN
@@ -71,65 +127,8 @@ This is a clean, print-ready PDF document compiled directly from **Markdown** in
 		}
 	}, []);
 
-	const compileMarkdown = (md: string) => {
-		let rawHtml = md;
 
-		// Escape basic HTML tags to prevent XSS
-		rawHtml = rawHtml
-			.replace(/&/g, "&amp;")
-			.replace(/</g, "&lt;")
-			.replace(/>/g, "&gt;");
 
-		// Code blocks
-		rawHtml = rawHtml.replace(/```([\s\S]*?)```/g, (match, code) => {
-			return `<pre style="background: #f4f4f5; padding: 12px; border-radius: 8px; font-family: monospace; font-size: 13px; overflow-x: auto; margin: 16px 0;"><code>${code.trim()}</code></pre>`;
-		});
-
-		// Headings
-		rawHtml = rawHtml.replace(/^### (.*?)$/gm, '<h3 style="font-size: 16px; font-weight: bold; margin-top: 16px; margin-bottom: 8px; color: #18181b;">$1</h3>');
-		rawHtml = rawHtml.replace(/^## (.*?)$/gm, '<h2 style="font-size: 20px; font-weight: 800; margin-top: 24px; margin-bottom: 12px; color: #18181b; border-bottom: 1px solid #e4e4e7; padding-bottom: 4px;">$1</h2>');
-		rawHtml = rawHtml.replace(/^# (.*?)$/gm, '<h1 style="font-size: 26px; font-weight: 900; margin-top: 28px; margin-bottom: 16px; color: #18181b; text-align: center;">$1</h1>');
-
-		// Bold & Italic
-		rawHtml = rawHtml.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-		rawHtml = rawHtml.replace(/\*(.*?)\*/g, "<em>$1</em>");
-
-		// Inline code
-		rawHtml = rawHtml.replace(/`([^`]+)`/g, '<code style="background: #f4f4f5; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 13px; color: #2563eb;">$1</code>');
-
-		// Blockquotes
-		rawHtml = rawHtml.replace(/^> (.*?)$/gm, '<blockquote style="border-left: 4px solid #3b82f6; padding-left: 16px; font-style: italic; margin: 16px 0; color: #71717a;">$1</blockquote>');
-
-		// Horizontal rule
-		rawHtml = rawHtml.replace(/^---$/gm, '<hr style="border: 0; border-top: 1px solid #e4e4e7; margin: 24px 0;" />');
-
-		// Lists
-		rawHtml = rawHtml.replace(/^\- (.*?)$/gm, '<li style="margin-left: 20px; list-style-type: disc; margin-top: 4px; margin-bottom: 4px; color: #3f3f46;">$1</li>');
-		rawHtml = rawHtml.replace(/^\* (.*?)$/gm, '<li style="margin-left: 20px; list-style-type: disc; margin-top: 4px; margin-bottom: 4px; color: #3f3f46;">$1</li>');
-
-		// Handle paragraphs
-		const lines = rawHtml.split(/\n{2,}/);
-		rawHtml = lines.map(line => {
-			const trimmed = line.trim();
-			if (
-				trimmed.startsWith("<h") || 
-				trimmed.startsWith("<li") || 
-				trimmed.startsWith("<pre") || 
-				trimmed.startsWith("<block") ||
-				trimmed.startsWith("<hr") ||
-				trimmed === ""
-			) {
-				return line;
-			}
-			return `<p style="margin-top: 12px; margin-bottom: 12px; color: #3f3f46; line-height: 1.6;">${line.replace(/\n/g, "<br>")}</p>`;
-		}).join("\n");
-
-		setHtml(rawHtml);
-	};
-
-	useEffect(() => {
-		compileMarkdown(markdown);
-	}, [markdown]);
 
 	const handleDownloadPdf = async () => {
 		if (!pdflib || !window.html2canvas || !previewRef.current) {

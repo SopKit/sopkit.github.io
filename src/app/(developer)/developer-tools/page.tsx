@@ -24,7 +24,7 @@ export default function DeveloperHub() {
 		<div className="min-h-screen bg-background">
 			<main>
 				<PremiumHero 
-					title="Developer Utilities" 
+					title="Developer Utilities — Free JSON, Code & API Tools"
 					subtitle="Professional-grade tools for modern workflows. Fast, private, and 100% browser-based processing for all your coding needs."
 				/>
 				

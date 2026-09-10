@@ -24,7 +24,7 @@ export default function SEOHub() {
 		<div className="min-h-screen bg-background">
 			<main>
 				<PremiumHero 
-					title="SEO Utilities" 
+					title="SEO Utilities — Free Audit & Optimization Tools"
 					subtitle="Boost your search visibility with our professional SEO toolkit. Fast, data-driven, and 100% free online optimization tools."
 				/>
 				

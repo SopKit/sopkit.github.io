@@ -55,12 +55,12 @@ export default function LoremIpsumTool() {
 						<label className="text-xs font-medium text-muted-foreground">Count</label>
 						<input type="number" min="1" max="100" value={count}
 							onChange={(e) => setCount(Math.max(1, Number(e.target.value)))}
-							className="w-20 h-10 px-3 rounded-md border bg-background text-sm" />
+							className="w-20 h-10 px-3 rounded-xl border bg-background text-sm" />
 					</div>
 					<div className="space-y-1">
 						<label className="text-xs font-medium text-muted-foreground">Unit</label>
 						<select value={unit} onChange={(e) => setUnit(e.target.value)}
-							className="h-10 px-3 rounded-md border bg-background text-sm">
+							className="h-10 px-3 rounded-xl border bg-background text-sm">
 							<option value="paragraphs">Paragraphs</option>
 							<option value="sentences">Sentences</option>
 							<option value="words">Words</option>

@@ -277,7 +277,7 @@ export default function AiVideoSummarizerTool() {
 			</div>
 
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-				<Card className="border border-border/40 bg-card/20 rounded-3xl">
+				<Card className="border border-border/40 bg-card/20 rounded-2xl">
 					<CardHeader>
 						<CardTitle className="text-sm font-bold">Video Transcript</CardTitle>
 						<CardDescription>Paste the video transcript or upload a .txt file</CardDescription>
@@ -332,7 +332,7 @@ export default function AiVideoSummarizerTool() {
 					</CardContent>
 				</Card>
 
-				<Card className="border border-border/40 bg-card/20 rounded-3xl">
+				<Card className="border border-border/40 bg-card/20 rounded-2xl">
 					<CardHeader>
 						<CardTitle className="text-sm font-bold">Summary Results</CardTitle>
 						<CardDescription>AI-generated summary and key insights</CardDescription>

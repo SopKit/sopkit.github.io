@@ -177,7 +177,7 @@ export default function GifGeneratorTool() {
 											<img 
 												src={frame.src} 
 												alt={frame.name} 
-												className="h-8 w-8 object-cover rounded-md border border-border/50"
+												className="h-8 w-8 object-cover rounded-xl border border-border/50"
 											/>
 											<span className="truncate font-semibold">{frame.name}</span>
 										</div>

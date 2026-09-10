@@ -216,7 +216,7 @@ export default function PdfCompressor() {
 											key={p.id}
 											type="button"
 											onClick={() => setPreset(p.id)}
-											className={`flex-1 text-[10px] font-bold py-1.5 px-2 rounded-md transition-colors ${preset === p.id ? "bg-primary text-primary-foreground shadow" : "text-muted-foreground hover:text-foreground"}`}
+											className={`flex-1 text-[10px] font-bold py-1.5 px-2 rounded-xl transition-colors ${preset === p.id ? "bg-primary text-primary-foreground shadow" : "text-muted-foreground hover:text-foreground"}`}
 										>
 											{p.label}
 										</button>

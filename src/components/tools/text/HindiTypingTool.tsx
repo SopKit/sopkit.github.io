@@ -276,7 +276,7 @@ export default function HindiTypingTool() {
                             <button
                                 key={char}
                                 onClick={() => insertCharacter(char)}
-                                className="px-2.5 py-1 text-sm bg-secondary/80 hover:bg-indigo-600 hover:text-white rounded-md transition-colors font-sans border border-border/10"
+                                className="px-2.5 py-1 text-sm bg-secondary/80 hover:bg-indigo-600 hover:text-white rounded-xl transition-colors font-sans border border-border/10"
                             >
                                 {char}
                             </button>

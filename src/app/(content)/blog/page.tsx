@@ -5,15 +5,15 @@ import { Suspense } from "react";
 import { Clock, Calendar, ArrowRight } from "lucide-react";
 
 export const metadata = {
-	title: "Free Blog Online - No Signup | SopKit",
-	description: "Solve everyday digital tasks instantly using our free Blog online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+	title: "SopKit Blog — Guides & Tool Tips | SopKit",
+	description: "Tutorials, comparisons and productivity guides from the SopKit team. Learn the tools — free forever.",
 	keywords: "SopKit blog, free online tools guides, seo tutorials, json guides, converter tutorials, no signup tools",
 	alternates: {
 		canonical: "https://sopkit.github.io/blog",
 	},
 	openGraph: {
-		title: "Free Blog Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Blog online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		title: "SopKit Blog — Guides & Tool Tips | SopKit",
+		description: "Tutorials, comparisons and productivity guides from the SopKit team. Learn the tools — free forever.",
 		url: "https://sopkit.github.io/blog",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -21,8 +21,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Blog Online - No Signup | SopKit",
-		description: "Solve everyday digital tasks instantly using our free Blog online. Fast, secure browser-based utility with no registration. 100% free and easy to use.",
+		title: "SopKit Blog — Guides & Tool Tips | SopKit",
+		description: "Tutorials, comparisons and productivity guides from the SopKit team. Learn the tools — free forever.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

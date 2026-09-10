@@ -2,14 +2,14 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Free AI Tools Alternatives Free - Practical Picks Online - No Signup | SopKit",
+	title: "Free AI Tool Alternatives — Best Picks 2026 | SopKit",
 	description: "Practical free alternatives to paid AI tools for image creation, voiceovers, prompts, and content ideation. Browser-based, no signup, nothing uploaded.",
 	keywords: "ai tools alternatives free - practical picks, ai tools alternatives free - practical picks guide, SopKit, ai-tools-alternatives-free, ai tools alternatives free, free ai-tools-alternatives-free, ai tools alternatives free online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
 		canonical: "https://sopkit.github.io/ai-tools-alternatives-free",
 	},
 	openGraph: {
-		title: "Free AI Tools Alternatives Free - Practical Picks Online - No Signup | SopKit",
+		title: "Free AI Tool Alternatives — Best Picks 2026 | SopKit",
 		description: "Practical free alternatives to paid AI tools for image creation, voiceovers, prompts, and content ideation. Browser-based, no signup, nothing uploaded.",
 		url: "https://sopkit.github.io/ai-tools-alternatives-free",
 		siteName: "SopKit",
@@ -18,7 +18,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free AI Tools Alternatives Free - Practical Picks Online - No Signup | SopKit",
+		title: "Free AI Tool Alternatives — Best Picks 2026 | SopKit",
 		description: "Practical free alternatives to paid AI tools for image creation, voiceovers, prompts, and content ideation. Browser-based, no signup, nothing uploaded.",
 		images: ["/og-image.jpg"],
 	},
@@ -28,7 +28,7 @@ export const metadata = {
 export default async function ToolPage() {
 	const tool = {
 		id: "ai-tools-alternatives-free",
-		name: "AI Tools Alternatives Free - Practical Picks",
+		name: "Free AI Tool Alternatives — Best Picks 2026",
 		description:
 			"Explore free AI tool alternatives for writing, image creation, voice generation, and content ideation without subscriptions.",
 		route: "/ai-tools-alternatives-free",

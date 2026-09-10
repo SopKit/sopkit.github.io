@@ -219,7 +219,7 @@ export default function FaviconGeneratorTool() {
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
                 {/* Configuration controls */}
                 <div className="lg:col-span-3 space-y-6">
-                    <Card className="p-6 border border-border/40 bg-card/10 rounded-3xl space-y-6 shadow-sm">
+                    <Card className="p-6 border border-border/40 bg-card/10 rounded-2xl space-y-6 shadow-sm">
                         <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
                             <Settings className="w-3.5 h-3.5" /> Configurations
                         </h3>
@@ -235,7 +235,7 @@ export default function FaviconGeneratorTool() {
                                     key={tab.id}
                                     type="button"
                                     onClick={() => setMode(tab.id as any)}
-                                    className={`flex-1 flex items-center justify-center h-8 rounded-md text-xs font-bold gap-1 transition-all ${mode === tab.id ? "bg-card text-foreground border border-border/20 shadow-sm" : "text-muted-foreground hover:text-foreground"}`}
+                                    className={`flex-1 flex items-center justify-center h-8 rounded-xl text-xs font-bold gap-1 transition-all ${mode === tab.id ? "bg-card text-foreground border border-border/20 shadow-sm" : "text-muted-foreground hover:text-foreground"}`}
                                 >
                                     <tab.icon className="w-3.5 h-3.5" />
                                     {tab.label}
@@ -380,14 +380,14 @@ export default function FaviconGeneratorTool() {
 
                 {/* Preview viewport */}
                 <div className="lg:col-span-2 space-y-6">
-                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-6 text-center shadow-sm">
+                    <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-6 text-center shadow-sm">
                         <h3 className="font-bold text-sm text-foreground flex items-center justify-center gap-1.5">
                             <Grid className="w-4 h-4 text-primary" /> Favicon Preview
                         </h3>
 
                         <div className="flex flex-col items-center gap-6 justify-center">
                             {previewUrl ? (
-                                <div className="p-8 border border-border/20 bg-background/40 rounded-3xl flex items-center justify-center shadow-inner">
+                                <div className="p-8 border border-border/20 bg-background/40 rounded-2xl flex items-center justify-center shadow-inner">
                                     <img 
                                         src={previewUrl} 
                                         alt="Favicon preview" 
@@ -395,7 +395,7 @@ export default function FaviconGeneratorTool() {
                                     />
                                 </div>
                             ) : (
-                                <div className="w-24 h-24 rounded-3xl bg-muted/20 animate-pulse border border-border/10" />
+                                <div className="w-24 h-24 rounded-2xl bg-muted/20 animate-pulse border border-border/10" />
                             )}
 
                             <div className="space-y-2.5 w-full">
@@ -405,7 +405,7 @@ export default function FaviconGeneratorTool() {
                                         <img 
                                             src={previewUrl} 
                                             alt="Icon" 
-                                            className="w-4 h-4 rounded-sm object-contain" 
+                                            className="w-4 h-4 rounded-xl object-contain" 
                                         />
                                     )}
                                     <span className="text-[10px] font-bold truncate text-foreground flex-1">My Premium Website</span>

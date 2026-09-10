@@ -162,7 +162,7 @@ export default function JpgToPdfExam() {
                     {images.length === 0 ? (
                         <div
                             onClick={triggerFileSelect}
-                            className="border-2 border-dashed border-border/60 hover:border-primary/50 transition-all p-16 text-center cursor-pointer space-y-6 hover:bg-muted/10 group rounded-md"
+                            className="border-2 border-dashed border-border/60 hover:border-primary/50 transition-all p-16 text-center cursor-pointer space-y-6 hover:bg-muted/10 group rounded-xl"
                         >
                             <input
                                 type="file"
@@ -239,7 +239,7 @@ export default function JpgToPdfExam() {
                                 {/* Add more box */}
                                 <div
                                     onClick={triggerFileSelect}
-                                    className="border-2 border-dashed border-border/60 hover:border-primary/40 bg-card/10 hover:bg-card/30 transition-all cursor-pointer aspect-[4/3] flex flex-col items-center justify-center rounded-md gap-2"
+                                    className="border-2 border-dashed border-border/60 hover:border-primary/40 bg-card/10 hover:bg-card/30 transition-all cursor-pointer aspect-[4/3] flex flex-col items-center justify-center rounded-xl gap-2"
                                 >
                                     <Plus className="h-8 w-8 text-muted-foreground" />
                                     <span className="text-xs font-bold text-muted-foreground uppercase">Add More</span>

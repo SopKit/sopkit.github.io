@@ -32,10 +32,10 @@ function AffiliateBlock({ opportunity }: { opportunity: SeoOpportunity }) {
 	const recommendation = affiliateRecommendations[slot];
 
 	return (
-		<Card className="rounded-md border-border/60 bg-muted/20">
+		<Card className="border-border/60 bg-muted/20">
 			<CardHeader className="pb-3">
 				<div className="flex items-center gap-2">
-					<Badge variant="secondary" className="rounded-md">{recommendation.label}</Badge>
+					<Badge variant="secondary" className="rounded-full">{recommendation.label}</Badge>
 				</div>
 				<CardTitle className="text-xl">{recommendation.title}</CardTitle>
 			</CardHeader>
@@ -63,7 +63,7 @@ export default function SeoOpportunityContent({
 	return (
 		<section className="space-y-10">
 			<div className="grid gap-4 md:grid-cols-3">
-				<Card className="rounded-md border-border/60 bg-card/40">
+				<Card className="border-border/60 bg-card/40">
 					<CardHeader className="pb-2">
 						<CardTitle className="flex items-center gap-2 text-base">
 							<CheckCircle2 className="h-4 w-4 text-primary" />
@@ -79,7 +79,7 @@ export default function SeoOpportunityContent({
 					</CardContent>
 				</Card>
 
-				<Card className="rounded-md border-border/60 bg-card/40">
+				<Card className="border-border/60 bg-card/40">
 					<CardHeader className="pb-2">
 						<CardTitle className="flex items-center gap-2 text-base">
 							<ShieldCheck className="h-4 w-4 text-primary" />
@@ -93,7 +93,7 @@ export default function SeoOpportunityContent({
 					</CardContent>
 				</Card>
 
-				<Card className="rounded-md border-border/60 bg-card/40">
+				<Card className="border-border/60 bg-card/40">
 					<CardHeader className="pb-2">
 						<CardTitle className="flex items-center gap-2 text-base">
 							<Sparkles className="h-4 w-4 text-primary" />
@@ -104,7 +104,7 @@ export default function SeoOpportunityContent({
 						<p className="text-sm leading-relaxed text-muted-foreground">
 							Need a custom API integration, private server deployment, or custom features for this tool? Contact our team.
 						</p>
-						<Button asChild size="sm" variant="outline" className="mt-4 rounded-md">
+						<Button asChild size="sm" variant="outline" className="mt-4 rounded-xl">
 							<Link href="/services">Hire Us</Link>
 						</Button>
 					</CardContent>
@@ -118,7 +118,7 @@ export default function SeoOpportunityContent({
 						<ol className="mt-4 space-y-3 text-muted-foreground">
 							{opportunity.steps.map((step, index) => (
 								<li key={step} className="flex gap-3">
-									<span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-sm font-bold text-primary">
+									<span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-sm font-bold text-primary">
 										{index + 1}
 									</span>
 									<span>{step}</span>
@@ -133,7 +133,7 @@ export default function SeoOpportunityContent({
 							{opportunity.commonProblems.map((problem) => (
 								<div
 									key={problem}
-									className="rounded-md border border-border/60 bg-muted/20 p-4 text-sm text-muted-foreground"
+									className="rounded-xl border border-border/60 bg-muted/20 p-4 text-sm text-muted-foreground"
 								>
 									{problem}
 								</div>
@@ -144,7 +144,7 @@ export default function SeoOpportunityContent({
 
 				<div className="space-y-4">
 					{opportunity.monetization.serviceCTA && (
-						<Card className="rounded-md border-primary/20 bg-primary/5">
+						<Card className="border-primary/20 bg-primary/5">
 							<CardHeader className="pb-3">
 								<CardTitle className="flex items-center gap-2 text-xl">
 									<BriefcaseBusiness className="h-5 w-5 text-primary" />
@@ -155,7 +155,7 @@ export default function SeoOpportunityContent({
 								<p className="text-sm leading-relaxed text-muted-foreground">
 									{opportunity.recommendedCTA}
 								</p>
-								<Button asChild className="rounded-md">
+								<Button asChild className="rounded-xl">
 									<Link href="/services">View Services</Link>
 								</Button>
 							</CardContent>
@@ -164,7 +164,7 @@ export default function SeoOpportunityContent({
 
 					<AffiliateBlock opportunity={opportunity} />
 
-					<Card className="rounded-md border-border/60 bg-card/40">
+					<Card className="border-border/60 bg-card/40">
 						<CardHeader className="pb-3">
 							<CardTitle className="text-xl">Monetization Safety</CardTitle>
 						</CardHeader>
@@ -184,7 +184,7 @@ export default function SeoOpportunityContent({
 							<Link
 								key={item.slug}
 								href={item.route}
-								className="group rounded-md border border-border/60 bg-card/40 p-4 transition-colors hover:border-primary/30"
+								className="group rounded-xl border border-border/60 bg-card/40 p-4 transition-colors hover:border-primary/30"
 							>
 								<div className="flex items-start justify-between gap-4">
 									<div>

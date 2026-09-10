@@ -4,15 +4,15 @@ import { FileText } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
-	title: "Free Terms of Use Online - SopKit",
-	description: "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
+	title: "Terms of Use — Fair & Simple Rules | SopKit",
+	description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
 	keywords: "terms of use, SopKit terms, terms of service, free online tools terms, terms, free terms, terms online, SopKit, free online tools, browser tools, no signup tools, privacy tools",
 	alternates: {
 		canonical: "https://sopkit.github.io/terms",
 	},
 	openGraph: {
-		title: "Free Terms of Use Online - SopKit",
-		description: "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
+		title: "Terms of Use — Fair & Simple Rules | SopKit",
+		description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
 		url: "https://sopkit.github.io/terms",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -20,8 +20,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Terms of Use Online - SopKit",
-		description: "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
+		title: "Terms of Use — Fair & Simple Rules | SopKit",
+		description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -31,7 +31,7 @@ export default async function TermsPage() {
 	const tool = {
 		id: "terms",
 		name: "Terms of Use",
-		description: "Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.",
+		description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
 		route: "/terms",
 		category: "company",
 	};

@@ -179,7 +179,7 @@ export default function Base64Tool({ initialMode = "encode" }: { initialMode?: "
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                 {/* Options Panel */}
                 <div className="space-y-4">
-                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm text-xs font-semibold">
+                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm text-xs font-semibold">
                         <h4 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
                             <Settings className="w-3.5 h-3.5" /> Operations
                         </h4>
@@ -230,7 +230,7 @@ export default function Base64Tool({ initialMode = "encode" }: { initialMode?: "
                         {mode === "file-encode" ? (
                             <div 
                                 onClick={() => fileInputRef.current?.click()}
-                                className="group cursor-pointer flex flex-col items-center justify-center p-8 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center h-[380px]"
+                                className="group cursor-pointer flex flex-col items-center justify-center p-8 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-2xl text-center h-[380px]"
                             >
                                 <div className="p-4 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
                                     <Upload className="h-8 w-8 text-primary/40 group-hover:text-primary/60" />

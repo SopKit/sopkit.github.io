@@ -94,7 +94,7 @@ export default function CssBorderRadiusTool() {
                 {/* Visual Preview & Presets Panel */}
                 <div className="lg:col-span-7 space-y-6">
                     {/* Live Preview */}
-                    <Card className="p-8 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl overflow-hidden shadow-sm flex items-center justify-center min-h-[220px]">
+                    <Card className="p-8 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl overflow-hidden shadow-sm flex items-center justify-center min-h-[220px]">
                         <div 
                             className="w-40 h-40 bg-primary/20 border-2 border-primary/50 shadow-md transition-all duration-300"
                             style={{ borderRadius: borderRadiusValue }}
@@ -129,7 +129,7 @@ export default function CssBorderRadiusTool() {
                 {/* Editor Workspace Parameters */}
                 <div className="lg:col-span-5 space-y-6">
                     {/* Settings Sliders */}
-                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm text-xs font-semibold">
+                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm text-xs font-semibold">
                         <div className="flex justify-between items-center border-b border-border/10 pb-2">
                             <h4 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
                                 <Settings className="w-3.5 h-3.5" /> Adjustments
@@ -222,7 +222,7 @@ export default function CssBorderRadiusTool() {
                     </Card>
 
                     {/* Export Codes Panel */}
-                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm text-xs font-semibold">
+                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm text-xs font-semibold">
                         <h4 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
                             <Code className="w-3.5 h-3.5 text-primary" /> CSS Output
                         </h4>

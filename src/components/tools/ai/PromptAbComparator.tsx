@@ -85,8 +85,8 @@ function StatsPanel({ side, text, other }: { side: string; text: string; other: 
 
 function renderParts(parts: DiffPart[]): ReactNode[] {
 	return parts.map((part, i) => {
-		if (part.added) return <ins key={i} className="no-underline bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 rounded-sm px-0.5">{part.value}</ins>;
-		if (part.removed) return <del key={i} className="no-underline line-through bg-red-500/10 text-red-700 dark:text-red-300 rounded-sm px-0.5">{part.value}</del>;
+		if (part.added) return <ins key={i} className="no-underline bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 rounded-xl px-0.5">{part.value}</ins>;
+		if (part.removed) return <del key={i} className="no-underline line-through bg-red-500/10 text-red-700 dark:text-red-300 rounded-xl px-0.5">{part.value}</del>;
 		return <span key={i}>{part.value}</span>;
 	});
 }
@@ -168,8 +168,8 @@ export default function PromptAbComparator() {
 							{renderParts(result)}
 						</p>
 						<div className="flex gap-4 text-[11px] text-muted-foreground">
-							<span className="flex items-center gap-1"><span className="w-3 h-3 rounded-sm bg-red-500/10 line-through decoration-red-500" /> removed from A</span>
-							<span className="flex items-center gap-1"><span className="w-3 h-3 rounded-sm bg-emerald-500/10" /> added in B</span>
+							<span className="flex items-center gap-1"><span className="w-3 h-3 rounded-xl bg-red-500/10 line-through decoration-red-500" /> removed from A</span>
+							<span className="flex items-center gap-1"><span className="w-3 h-3 rounded-xl bg-emerald-500/10" /> added in B</span>
 						</div>
 					</div>
 				</>

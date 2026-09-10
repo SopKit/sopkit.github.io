@@ -148,7 +148,7 @@ export default function ExifReaderTool() {
                     {!file ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-2xl text-center"
                         >
                             <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
                                 <Camera className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
@@ -160,7 +160,7 @@ export default function ExifReaderTool() {
                         </div>
                     ) : (
                         <div className="grid grid-cols-1 gap-6">
-                            <Card className="border border-border/40 bg-white overflow-hidden shadow-lg rounded-3xl">
+                            <Card className="border border-border/40 bg-white overflow-hidden shadow-lg rounded-2xl">
                                 <div className="bg-muted/15 border-b border-border/20 py-4 px-6 flex flex-row items-center justify-between">
                                     <div className="flex items-center gap-2 text-foreground">
                                         <Eye className="h-4 w-4 text-primary" />
@@ -202,12 +202,12 @@ export default function ExifReaderTool() {
                 {/* Right Side Metadata Panel */}
                 <div className="lg:col-span-2 space-y-6">
                     {isProcessing ? (
-                        <Card className="p-12 text-center border-border/40 bg-card/20 space-y-4 rounded-3xl">
+                        <Card className="p-12 text-center border-border/40 bg-card/20 space-y-4 rounded-2xl">
                             <Loader2 className="h-8 w-8 text-primary animate-spin mx-auto" />
                             <p className="text-xs text-muted-foreground animate-pulse">Extracting metadata headers...</p>
                         </Card>
                     ) : exif ? (
-                        <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-6">
+                        <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-6">
                             <h3 className="font-bold text-sm text-foreground">EXIF Properties</h3>
                             
                             <div className="space-y-4">

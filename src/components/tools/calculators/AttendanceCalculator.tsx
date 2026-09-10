@@ -142,7 +142,7 @@ export default function AttendanceCalculator() {
                                 </h3>
 
                                 {totNum <= 0 && (
-                                    <div className="h-40 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-md p-6 bg-muted/5 text-center">
+                                    <div className="h-40 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-xl p-6 bg-muted/5 text-center">
                                         <HelpCircle className="h-10 w-10 text-muted-foreground/40 mb-2" />
                                         <p className="text-xs text-muted-foreground">Input class details to see skip or attendance targets.</p>
                                     </div>
@@ -158,7 +158,7 @@ export default function AttendanceCalculator() {
                                 {totNum > 0 && attNum <= totNum && (
                                     <div className="space-y-4">
                                         {/* Current Stat Box */}
-                                        <div className={`p-4 rounded-md border text-center ${
+                                        <div className={`p-4 rounded-xl border text-center ${
                                             status === "pass"
                                                 ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-500"
                                                 : "bg-red-500/10 border-red-500/20 text-red-500"

@@ -90,7 +90,7 @@ export default function QrReaderPremium() {
                 </CardHeader>
                 <CardContent className="space-y-8">
                     {/* Scanner Area */}
-                    <div className="flex flex-col items-center justify-center p-12 border-2 border-dashed rounded-3xl bg-muted/20 border-primary/20 hover:border-primary/40 transition-all relative overflow-hidden group">
+                    <div className="flex flex-col items-center justify-center p-12 border-2 border-dashed rounded-2xl bg-muted/20 border-primary/20 hover:border-primary/40 transition-all relative overflow-hidden group">
                         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                         
                         <Input

@@ -20,7 +20,7 @@ export default function OtherToolsHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<main>
-				<PremiumHero title="Utility Tools" subtitle="IP lookup, speed test, QR codes, notes, URL tools, and more — all free, fast, and no signup required." />
+				<PremiumHero title="Utility Tools — Free QR, IP & Everyday Helpers" subtitle="IP lookup, speed test, QR codes, notes, URL tools, and more — all free, fast, and no signup required." />
 				<div className="container mx-auto px-4 py-16 max-w-7xl relative">
 					<GridPattern className="opacity-20" />
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">

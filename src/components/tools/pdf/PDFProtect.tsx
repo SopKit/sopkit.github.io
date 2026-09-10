@@ -140,7 +140,7 @@ export default function PDFProtect() {
                     {!file ? (
                         <div 
                             onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
+                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-2xl text-center"
                         >
                             <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
                                 <FileText className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
@@ -151,7 +151,7 @@ export default function PDFProtect() {
                             </p>
                         </div>
                     ) : (
-                        <Card className="border-border/40 bg-card/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-lg">
+                        <Card className="border-border/40 bg-card/10 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg">
                             <div className="p-8 flex flex-col items-center justify-center bg-muted/20 border-b border-border/20">
                                 <div className="p-4 bg-primary/10 rounded-2xl mb-4">
                                     <FileText className="h-12 w-12 text-primary" />

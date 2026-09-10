@@ -190,7 +190,7 @@ export default function JSONToTSVTool() {
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                 {/* Options Panel */}
                 <div className="space-y-4">
-                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm text-xs font-semibold">
+                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm text-xs font-semibold">
                         <h4 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
                             <Settings className="w-3.5 h-3.5" /> Conversion settings
                         </h4>

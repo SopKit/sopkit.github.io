@@ -317,7 +317,7 @@ export default function PassportPhotoMaker() {
                                 </div>
                             ) : (
                                 <div className="space-y-4">
-                                    <div className="relative border border-border/40 bg-muted/10 p-2 rounded-md overflow-hidden select-none">
+                                    <div className="relative border border-border/40 bg-muted/10 p-2 rounded-xl overflow-hidden select-none">
                                         <div
                                             ref={containerRef}
                                             onMouseDown={handleMouseDown}
@@ -366,7 +366,7 @@ export default function PassportPhotoMaker() {
                                     </div>
 
                                     {/* Crop Controls */}
-                                    <div className="flex items-center justify-center gap-4 bg-muted/20 p-3 rounded-md border border-border/10">
+                                    <div className="flex items-center justify-center gap-4 bg-muted/20 p-3 rounded-xl border border-border/10">
                                         <Button
                                             variant="outline"
                                             size="icon"
@@ -477,7 +477,7 @@ export default function PassportPhotoMaker() {
                                 </h3>
 
                                 {!previewUrl && (
-                                    <div className="h-80 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-md p-6 bg-muted/5">
+                                    <div className="h-80 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-xl p-6 bg-muted/5">
                                         <FileImage className="h-12 w-12 text-muted-foreground/40 mb-3" />
                                         <p className="text-sm text-muted-foreground max-w-xs mx-auto">
                                             Upload a portrait picture. You'll be able to crop, rotate, and generate print-ready passport sheets instantly.
@@ -487,7 +487,7 @@ export default function PassportPhotoMaker() {
 
                                 {previewUrl && outputUrl && (
                                     <div className="space-y-4">
-                                        <div className="border border-primary/20 bg-muted/10 p-4 rounded-md flex justify-center items-center overflow-auto max-h-[360px]">
+                                        <div className="border border-primary/20 bg-muted/10 p-4 rounded-xl flex justify-center items-center overflow-auto max-h-[360px]">
                                             <img
                                                 src={outputUrl}
                                                 alt="Output Passport Preview"
@@ -495,7 +495,7 @@ export default function PassportPhotoMaker() {
                                             />
                                         </div>
 
-                                        <div className="grid grid-cols-2 gap-2 text-sm bg-primary/5 border border-primary/10 rounded-sm py-2.5 px-3 text-left">
+                                        <div className="grid grid-cols-2 gap-2 text-sm bg-primary/5 border border-primary/10 rounded-xl py-2.5 px-3 text-left">
                                             <div>
                                                 <span className="text-xs text-muted-foreground block">Dimensions</span>
                                                 <span className="font-bold font-mono">

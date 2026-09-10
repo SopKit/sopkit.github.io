@@ -152,7 +152,7 @@ export default function YouTubePlaylistLinkExtractorTool() {
                 </Button>
               </div>
 
-              <div className="overflow-x-auto rounded-3xl border border-border/50">
+              <div className="overflow-x-auto rounded-2xl border border-border/50">
                 <table className="min-w-full divide-y divide-border text-left">
                   <thead className="bg-slate-950/10">
                     <tr>

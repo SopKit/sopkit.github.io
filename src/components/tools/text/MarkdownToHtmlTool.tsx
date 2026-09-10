@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 import { 
 	CodeIcon, 
 	EyeIcon, 
@@ -14,8 +14,60 @@ import { Badge } from "@/components/ui/badge";
 import { GlassCard } from "../shared/WorkspaceComponents";
 import { toast } from "sonner";
 
+function compileMarkdown(md: string): string {
+	let rawHtml = md;
+
+	// Escape basic HTML tags to prevent XSS
+	rawHtml = rawHtml
+		.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;");
+
+	// Code blocks
+	rawHtml = rawHtml.replace(/```([\s\S]*?)```/g, (match, code) => {
+		return `<pre className="bg-muted p-4 rounded-xl font-mono text-sm overflow-x-auto my-4 block"><code>${code.trim()}</code></pre>`;
+	});
+
+	// Headings
+	rawHtml = rawHtml.replace(/^### (.*?)$/gm, '<h3 className="text-xl font-bold mt-6 mb-3 text-foreground">$1</h3>');
+	rawHtml = rawHtml.replace(/^## (.*?)$/gm, '<h2 className="text-2xl font-black mt-8 mb-4 text-foreground border-b border-border/40 pb-2">$1</h2>');
+	rawHtml = rawHtml.replace(/^# (.*?)$/gm, '<h1 className="text-3xl font-black mt-10 mb-6 text-foreground">$1</h1>');
+
+	// Bold & Italic
+	rawHtml = rawHtml.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+	rawHtml = rawHtml.replace(/\*(.*?)\*/g, "<em>$1</em>");
+
+	// Inline code
+	rawHtml = rawHtml.replace(/`([^`]+)`/g, '<code className="bg-muted px-2 py-0.5 rounded font-mono text-sm text-primary">$1</code>');
+
+	// Blockquotes
+	rawHtml = rawHtml.replace(/^> (.*?)$/gm, '<blockquote className="border-l-4 border-primary pl-4 italic my-4 text-muted-foreground">$1</blockquote>');
+
+	// Lists
+	rawHtml = rawHtml.replace(/^\- (.*?)$/gm, '<li className="ml-6 list-disc text-muted-foreground my-1">$1</li>');
+	rawHtml = rawHtml.replace(/^\* (.*?)$/gm, '<li className="ml-6 list-disc text-muted-foreground my-1">$1</li>');
+
+	// Handle paragraphs (anything not wrapped in structural tags, split by double line breaks)
+	const lines = rawHtml.split(/\n{2,}/);
+	rawHtml = lines.map(line => {
+		const trimmed = line.trim();
+		if (
+			trimmed.startsWith("<h") || 
+			trimmed.startsWith("<li") || 
+			trimmed.startsWith("<pre") || 
+			trimmed.startsWith("<block") ||
+			trimmed === ""
+		) {
+			return line;
+		}
+		return `<p className="my-4 text-muted-foreground leading-relaxed">${line.replace(/\n/g, "<br>")}</p>`;
+	}).join("\n");
+
+	return rawHtml;
+}
+
 export default function MarkdownToHtmlTool() {
-	const [markdown, setMarkdown] = useState(`# Live Markdown Editor
+	const [markdown, setMarkdown] = useState(`## Live Markdown Editor
 
 Write your markdown in the left panel to compile it to **HTML** in real-time.
 
@@ -33,65 +85,12 @@ Write your markdown in the left panel to compile it to **HTML** in real-time.
 - Use \\\`code\\\` for inline code
 `);
 
-	const [html, setHtml] = useState("");
 	const [activeTab, setActiveTab] = useState("preview"); // preview or code
 	const [copied, setCopied] = useState(false);
 
-	const compileMarkdown = (md) => {
-		let rawHtml = md;
 
-		// Escape basic HTML tags to prevent XSS
-		rawHtml = rawHtml
-			.replace(/&/g, "&amp;")
-			.replace(/</g, "&lt;")
-			.replace(/>/g, "&gt;");
 
-		// Code blocks
-		rawHtml = rawHtml.replace(/```([\s\S]*?)```/g, (match, code) => {
-			return `<pre className="bg-muted p-4 rounded-xl font-mono text-sm overflow-x-auto my-4 block"><code>${code.trim()}</code></pre>`;
-		});
-
-		// Headings
-		rawHtml = rawHtml.replace(/^### (.*?)$/gm, '<h3 className="text-xl font-bold mt-6 mb-3 text-foreground">$1</h3>');
-		rawHtml = rawHtml.replace(/^## (.*?)$/gm, '<h2 className="text-2xl font-black mt-8 mb-4 text-foreground border-b border-border/40 pb-2">$1</h2>');
-		rawHtml = rawHtml.replace(/^# (.*?)$/gm, '<h1 className="text-3xl font-black mt-10 mb-6 text-foreground">$1</h1>');
-
-		// Bold & Italic
-		rawHtml = rawHtml.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-		rawHtml = rawHtml.replace(/\*(.*?)\*/g, "<em>$1</em>");
-
-		// Inline code
-		rawHtml = rawHtml.replace(/`([^`]+)`/g, '<code className="bg-muted px-2 py-0.5 rounded font-mono text-sm text-primary">$1</code>');
-
-		// Blockquotes
-		rawHtml = rawHtml.replace(/^> (.*?)$/gm, '<blockquote className="border-l-4 border-primary pl-4 italic my-4 text-muted-foreground">$1</blockquote>');
-
-		// Lists
-		rawHtml = rawHtml.replace(/^\- (.*?)$/gm, '<li className="ml-6 list-disc text-muted-foreground my-1">$1</li>');
-		rawHtml = rawHtml.replace(/^\* (.*?)$/gm, '<li className="ml-6 list-disc text-muted-foreground my-1">$1</li>');
-
-		// Handle paragraphs (anything not wrapped in structural tags, split by double line breaks)
-		const lines = rawHtml.split(/\n{2,}/);
-		rawHtml = lines.map(line => {
-			const trimmed = line.trim();
-			if (
-				trimmed.startsWith("<h") || 
-				trimmed.startsWith("<li") || 
-				trimmed.startsWith("<pre") || 
-				trimmed.startsWith("<block") ||
-				trimmed === ""
-			) {
-				return line;
-			}
-			return `<p className="my-4 text-muted-foreground leading-relaxed">${line.replace(/\n/g, "<br>")}</p>`;
-		}).join("\n");
-
-		setHtml(rawHtml);
-	};
-
-	useEffect(() => {
-		compileMarkdown(markdown);
-	}, [markdown]);
+	const html = useMemo(() => compileMarkdown(markdown), [markdown]);
 
 	const copyToClipboard = () => {
 		navigator.clipboard.writeText(html);

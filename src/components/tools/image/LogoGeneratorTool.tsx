@@ -3,10 +3,6 @@
 import html2canvas from "html2canvas";
 import {
 	Anchor,
-	ArrowLeftToLine,
-	ArrowRightToLine,
-	ArrowUpDown,
-	Bold,
 	Briefcase,
 	Coffee,
 	Code2,
@@ -19,39 +15,21 @@ import {
 	Hexagon,
 	Highlighter,
 	ImageIcon,
-	Italic,
 	Lightbulb,
 	LineChart,
 	Loader2,
 	Lock,
 	Mail,
-	Maximize2,
-	Menu,
-	Minimize2,
 	Moon,
-	MousePointerClick,
-	Palette,
-	PanelBottomClose,
-	PanelBottomOpen,
-	PanelLeftClose,
-	PanelRightClose,
-	PanelTopClose,
-	PanelTopOpen,
-	Pause,
-	Play,
 	Plug,
 	RefreshCcw,
 	Rocket,
 	Save,
 	Settings2,
-	Shapes,
 	Smartphone,
-	Sparkles,
 	Star,
-	Sticker,
 	Sun,
 	Tag,
-	Trash2,
 	Twitter,
 	Undo2,
 	User,
@@ -635,7 +613,7 @@ export default function LogoGeneratorTool() {
 		<div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
 			<div className="xl:col-span-1 space-y-6">
 				<div className="flex items-center justify-between">
-					<h1 className="text-xl font-semibold">Logo Studio</h1>
+					<h2 className="text-xl font-semibold">Logo Studio</h2>
 					<div className="flex items-center gap-2">
 						<TooltipProvider>
 							<Tooltip>

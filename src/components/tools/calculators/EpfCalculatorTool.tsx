@@ -193,7 +193,7 @@ export default function EpfCalculatorTool() {
 
 							{result && (
 								<div className="space-y-6">
-									<div className="p-6 bg-primary/10 border border-primary/20 rounded-3xl text-center">
+									<div className="p-6 bg-primary/10 border border-primary/20 rounded-2xl text-center">
 										<div className="text-4xl font-black text-primary font-mono">₹{result.totalAccumulated.toLocaleString()}</div>
 										<div className="text-sm text-muted-foreground font-bold mt-2">Retirement Corpus (at age {retirementAge})</div>
 									</div>

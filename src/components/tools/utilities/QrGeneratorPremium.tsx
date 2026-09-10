@@ -130,7 +130,7 @@ export default function QrGeneratorPremium({
                                             type="color"
                                             value={fgColor}
                                             onChange={(e) => setFgColor(e.target.value)}
-                                            className="w-12 h-10 p-1 rounded-md"
+                                            className="w-12 h-10 p-1 rounded-xl"
                                         />
                                         <Input
                                             value={fgColor}
@@ -146,7 +146,7 @@ export default function QrGeneratorPremium({
                                             type="color"
                                             value={bgColor}
                                             onChange={(e) => setBgColor(e.target.value)}
-                                            className="w-12 h-10 p-1 rounded-md"
+                                            className="w-12 h-10 p-1 rounded-xl"
                                         />
                                         <Input
                                             value={bgColor}

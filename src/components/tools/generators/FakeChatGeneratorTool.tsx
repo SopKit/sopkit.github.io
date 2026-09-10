@@ -311,7 +311,7 @@ export default function FakeChatGeneratorTool() {
 						<div className="flex justify-center">
 							<div
 								ref={chatRef}
-								className="w-[320px] rounded-3xl overflow-hidden shadow-2xl border border-border"
+								className="w-[320px] rounded-2xl overflow-hidden shadow-2xl border border-border"
 								style={{ backgroundColor: style.bg }}
 							>
 								<div

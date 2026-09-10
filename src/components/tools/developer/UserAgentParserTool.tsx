@@ -257,7 +257,7 @@ export default function UserAgentParserTool() {
                 {/* System Specs List card */}
                 {clientSpecs && (
                     <div className="lg:col-span-2 space-y-6">
-                        <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm">
+                        <Card className="p-6 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm">
                             <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
                                 <Languages className="w-4 h-4 text-primary" /> Sandbox Status
                             </h3>

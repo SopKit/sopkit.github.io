@@ -103,9 +103,9 @@ export default function CSSShadowTool() {
                 {/* Visual Preview & Presets Panel */}
                 <div className="lg:col-span-7 space-y-6">
                     {/* Live Preview */}
-                    <Card className="p-8 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl overflow-hidden shadow-sm flex items-center justify-center min-h-[220px]">
+                    <Card className="p-8 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl overflow-hidden shadow-sm flex items-center justify-center min-h-[220px]">
                         <div 
-                            className="w-40 h-40 rounded-3xl bg-background border border-border/10 transition-shadow duration-300"
+                            className="w-40 h-40 rounded-2xl bg-background border border-border/10 transition-shadow duration-300"
                             style={{ boxShadow: shadowValue }}
                         />
                     </Card>
@@ -138,7 +138,7 @@ export default function CSSShadowTool() {
                 {/* Editor Workspace Parameters */}
                 <div className="lg:col-span-5 space-y-6">
                     {/* Settings Sliders */}
-                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm text-xs font-semibold">
+                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm text-xs font-semibold">
                         <h4 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5 border-b border-border/10 pb-2">
                             <Settings className="w-3.5 h-3.5" /> Adjustments
                         </h4>
@@ -252,7 +252,7 @@ export default function CSSShadowTool() {
                     </Card>
 
                     {/* Export Codes Panel */}
-                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4 shadow-sm text-xs font-semibold">
+                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-2xl space-y-4 shadow-sm text-xs font-semibold">
                         <h4 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
                             <Code className="w-3.5 h-3.5 text-primary" /> CSS Output
                         </h4>
