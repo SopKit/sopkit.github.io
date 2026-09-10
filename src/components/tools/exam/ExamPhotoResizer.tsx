@@ -1,14 +1,26 @@
 "use client";
 
-import React, { useState, useRef, useEffect, Suspense } from "react";
-import { Upload, Download, RefreshCw, Sliders, Check, AlertCircle, FileImage, Trash2, Shield } from "lucide-react";
+import React, { useState, useRef, Suspense } from "react";
+import { Download, RefreshCw, Sliders, Check, AlertCircle, FileImage, Trash2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import AdPlacement from "@/components/ads/AdPlacement";
+import {
+    ToolShell,
+    ToolGrid,
+    ToolGridMain,
+    ToolGridSide,
+    ToolPanel,
+    ToolDropzone,
+    ToolModeTabs,
+    ToolField,
+    ToolFileBar,
+    ToolSectionTitle,
+    ToolPrivacyNote,
+    ToolPreviewFrame,
+} from "@/components/tools/shared/design-system";
 
 function ExamPhotoResizerInner({
     examName = "UPSC",
@@ -57,6 +69,7 @@ function ExamPhotoResizerInner({
         compliant: isHindi ? "टारगेट नियमों के अनुरूप है" : "Compliant with target rules",
         mismatch: isHindi ? "साइज बेमेल है। आयाम कम करने का प्रयास करें।" : "Size mismatch. Try reducing dimensions.",
         download: isHindi ? "JPEG डाउनलोड करें" : "Download JPEG",
+        processing: isHindi ? "प्रोसेस हो रहा है…" : "Processing…",
         disclaimerLabel: isHindi ? "अस्वीकरण (Disclaimer):" : "Disclaimer:",
         disclaimerText: isHindi ? "जमा करने से पहले हमेशा आधिकारिक अधिसूचना के साथ आवश्यकताओं की पुष्टि करें।" : disclaimer,
     };
@@ -65,13 +78,14 @@ function ExamPhotoResizerInner({
     const [previewUrl, setPreviewUrl] = useState("");
     const [originalInfo, setOriginalInfo] = useState(null);
     
-    // Resize settings
+    // Resize settings — initialized from the exam preset table below so the
+    // first render already shows correct values (no cascading effect updates).
     const [mode, setMode] = useState("photo"); // "photo" or "signature"
-    const [width, setWidth] = useState(presetWidth);
-    const [height, setHeight] = useState(presetHeight);
+    const [width, setWidth] = useState(() => getExamPresets(examName, "photo", presetWidth, presetHeight, presetMinKb, presetMaxKb).width);
+    const [height, setHeight] = useState(() => getExamPresets(examName, "photo", presetWidth, presetHeight, presetMinKb, presetMaxKb).height);
     const [unit, setUnit] = useState(presetUnit);
-    const [minKb, setMinKb] = useState(presetMinKb);
-    const [maxKb, setMaxKb] = useState(presetMaxKb);
+    const [minKb, setMinKb] = useState(() => getExamPresets(examName, "photo", presetWidth, presetHeight, presetMinKb, presetMaxKb).minKb);
+    const [maxKb, setMaxKb] = useState(() => getExamPresets(examName, "photo", presetWidth, presetHeight, presetMinKb, presetMaxKb).maxKb);
     
     // Processing state
     const [processing, setProcessing] = useState(false);
@@ -79,96 +93,44 @@ function ExamPhotoResizerInner({
     const [resizedSize, setResizedSize] = useState(0);
     const [resizedWidth, setResizedWidth] = useState(0);
     const [resizedHeight, setResizedHeight] = useState(0);
-    
-    const fileInputRef = useRef(null);
+
     const canvasRef = useRef(null);
 
-    // Apply presets when mode changes
-    useEffect(() => {
-        if (examName === "UPSC") {
-            if (mode === "photo") {
-                setWidth(350);
-                setHeight(350);
-                setMinKb(20);
-                setMaxKb(300);
-            } else {
-                setWidth(350);
-                setHeight(350);
-                setMinKb(20);
-                setMaxKb(300);
-            }
-        } else if (examName === "SSC") {
-            if (mode === "photo") {
-                setWidth(350); // 3.5cm x 4.5cm approx 350x450
-                setHeight(450);
-                setMinKb(20);
-                setMaxKb(50);
-            } else {
-                setWidth(350); // 4.0cm x 2.0cm approx 400x200
-                setHeight(200);
-                setMinKb(10);
-                setMaxKb(20);
-            }
-        } else if (examName === "NEET") {
-            if (mode === "photo") {
-                setWidth(480); // 4x6 inch postcard size or 3.5x4.5cm passport
-                setHeight(640);
-                setMinKb(10);
-                setMaxKb(200);
-            } else {
-                setWidth(350);
-                setHeight(150);
-                setMinKb(4);
-                setMaxKb(30);
-            }
-        } else if (examName === "JEE") {
-            if (mode === "photo") {
-                setWidth(350);
-                setHeight(450);
-                setMinKb(10);
-                setMaxKb(200);
-            } else {
-                setWidth(350);
-                setHeight(150);
-                setMinKb(4);
-                setMaxKb(30);
-            }
-        } else if (examName === "CUET") {
-            if (mode === "photo") {
-                setWidth(350);
-                setHeight(450);
-                setMinKb(10);
-                setMaxKb(200);
-            } else {
-                setWidth(350);
-                setHeight(150);
-                setMinKb(4);
-                setMaxKb(30);
-            }
-        } else if (examName === "Railway") {
-            if (mode === "photo") {
-                setWidth(350);
-                setHeight(450);
-                setMinKb(20);
-                setMaxKb(50);
-            } else {
-                setWidth(350);
-                setHeight(150);
-                setMinKb(10);
-                setMaxKb(20);
-            }
-        }
-    }, [mode, examName]);
+    // Exam preset dimensions (px) and KB windows per mode. Unknown exams
+    // fall back to the component props.
+    function getExamPresets(exam: string, m: string, dw: number, dh: number, dmin: number, dmax: number) {
+        const table: Record<string, { photo: number[]; signature: number[] }> = {
+            UPSC: { photo: [350, 350, 20, 300], signature: [350, 350, 20, 300] },
+            SSC: { photo: [350, 450, 20, 50], signature: [350, 200, 10, 20] },
+            NEET: { photo: [480, 640, 10, 200], signature: [350, 150, 4, 30] },
+            JEE: { photo: [350, 450, 10, 200], signature: [350, 150, 4, 30] },
+            CUET: { photo: [350, 450, 10, 200], signature: [350, 150, 4, 30] },
+            Railway: { photo: [350, 450, 20, 50], signature: [350, 150, 10, 20] },
+        };
+        const entry = table[exam];
+        const values = entry ? (m === "photo" ? entry.photo : entry.signature) : [dw, dh, dmin, dmax];
+        return { width: values[0], height: values[1], minKb: values[2], maxKb: values[3] };
+    }
 
-    const handleFileChange = (e) => {
-        const file = e.target.files[0];
+    // Apply presets synchronously with the mode switch (no effect needed).
+    const handleModeChange = (nextMode: string) => {
+        setMode(nextMode);
+        const presets = getExamPresets(examName, nextMode, presetWidth, presetHeight, presetMinKb, presetMaxKb);
+        setWidth(presets.width);
+        setHeight(presets.height);
+        setMinKb(presets.minKb);
+        setMaxKb(presets.maxKb);
+    };
+
+    const handleFiles = (files: File[]) => {
+        const file = files[0];
         if (!file) return;
-        
+
         if (!file.type.startsWith("image/")) {
             toast.error("Please upload a valid image file.");
             return;
         }
-        
+
         setOriginalInfo({
             name: file.name,
             sizeKb: (file.size / 1024).toFixed(1),
@@ -177,20 +139,18 @@ function ExamPhotoResizerInner({
 
         const reader = new FileReader();
         reader.onload = (event) => {
+            const result = event.target?.result;
+            if (typeof result !== "string") return;
             const img = new Image();
             img.onload = () => {
                 setImage(img);
-                setPreviewUrl(event.target.result);
+                setPreviewUrl(result);
                 // Trigger auto-process
                 setTimeout(() => processImage(img), 100);
             };
-            img.src = event.target.result;
+            img.src = result;
         };
         reader.readAsDataURL(file);
-    };
-
-    const triggerFileSelect = () => {
-        fileInputRef.current.click();
     };
 
     const processImage = (activeImage = image) => {
@@ -258,7 +218,7 @@ function ExamPhotoResizerInner({
                 }
                 
                 setResizedUrl(dataUrl);
-                setResizedSize(sizeKb.toFixed(1));
+                setResizedSize(Number(sizeKb.toFixed(1)));
                 setResizedWidth(width);
                 setResizedHeight(height);
                 toast.success(isHindi ? "इमेज सफलतापूर्वक प्रोसेस हो गई!" : "Image successfully processed!");
@@ -287,19 +247,15 @@ function ExamPhotoResizerInner({
         setPreviewUrl("");
         setResizedUrl("");
         setOriginalInfo(null);
-        if (fileInputRef.current) {
-            fileInputRef.current.value = "";
-        }
     };
 
     return (
-        <div className="w-full max-w-4xl mx-auto space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-                
+        <ToolShell>
+            <ToolGrid>
+
                 {/* Upload & Config panel */}
-                <div className="md:col-span-7 space-y-6">
-                    <Card className="border border-border/40 bg-card/20 backdrop-blur-sm shadow-md">
-                        <CardContent className="p-6 space-y-6">
+                <ToolGridMain>
+                    <ToolPanel>
                             
                             {/* Language selection toggle */}
                             <div className="flex justify-end items-center gap-2 mb-2 text-xs border-b border-border/10 pb-2">
@@ -323,56 +279,27 @@ function ExamPhotoResizerInner({
 
                             {/* Mode selection (Photo vs Signature) */}
                             {showSignatureOption && (
-                                <div className="grid grid-cols-2 gap-2 p-1 bg-muted/40 border border-border/20 rounded-md">
-                                    <button
-                                        type="button"
-                                        onClick={() => setMode("photo")}
-                                        className={`py-2 text-sm font-semibold rounded-sm transition-all ${
-                                            mode === "photo"
-                                                ? "bg-primary text-primary-foreground shadow-sm"
-                                                : "text-muted-foreground hover:text-foreground"
-                                        }`}
-                                    >
-                                        {t.photo}
-                                    </button>
-                                    <button
-                                        type="button"
-                                        onClick={() => setMode("signature")}
-                                        className={`py-2 text-sm font-semibold rounded-sm transition-all ${
-                                            mode === "signature"
-                                                ? "bg-primary text-primary-foreground shadow-sm"
-                                                : "text-muted-foreground hover:text-foreground"
-                                        }`}
-                                    >
-                                        {t.signature}
-                                    </button>
-                                </div>
+                                <ToolModeTabs
+                                    tabs={[
+                                        { value: "photo", label: t.photo },
+                                        { value: "signature", label: t.signature },
+                                    ]}
+                                    value={mode}
+                                    onChange={handleModeChange}
+                                />
                             )}
 
                             {/* File Upload Zone */}
                             {!previewUrl ? (
-                                <div
-                                    onClick={triggerFileSelect}
-                                    className="border-2 border-dashed border-border/60 hover:border-primary/50 transition-all p-12 text-center cursor-pointer space-y-4 hover:bg-muted/10 group"
-                                >
-                                    <input
-                                        type="file"
-                                        ref={fileInputRef}
-                                        onChange={handleFileChange}
-                                        accept="image/*"
-                                        className="hidden"
-                                    />
-                                    <div className="p-4 bg-primary/10 text-primary rounded-full w-fit mx-auto group-hover:scale-110 transition-transform">
-                                        <Upload className="h-8 w-8" />
-                                    </div>
-                                    <div className="space-y-2">
-                                        <p className="font-bold text-lg">{t.uploadTitle}</p>
-                                        <p className="text-sm text-muted-foreground">{t.uploadSub}</p>
-                                    </div>
-                                </div>
+                                <ToolDropzone
+                                    title={t.uploadTitle}
+                                    subtitle={t.uploadSub}
+                                    accept="image/*"
+                                    onFiles={handleFiles}
+                                />
                             ) : (
                                 <div className="space-y-4">
-                                    <div className="relative border border-border/40 bg-muted/10 p-4 rounded-md">
+                                    <ToolPreviewFrame>
                                         <img
                                             src={previewUrl}
                                             alt="Uploaded preview"
@@ -387,73 +314,57 @@ function ExamPhotoResizerInner({
                                         >
                                             <Trash2 className="h-4 w-4" />
                                         </Button>
-                                    </div>
+                                    </ToolPreviewFrame>
                                     {originalInfo && (
-                                        <div className="flex flex-wrap items-center justify-between text-xs text-muted-foreground bg-muted/20 px-3 py-2 border border-border/10 rounded-sm">
+                                        <ToolFileBar>
                                             <span>{t.originalFile}: <strong>{originalInfo.name}</strong></span>
                                             <span>{t.originalSize}: <strong>{originalInfo.sizeKb} KB</strong></span>
-                                        </div>
+                                        </ToolFileBar>
                                     )}
                                 </div>
                             )}
 
                             {/* Dimension Settings Panel */}
                             <div className="space-y-4 pt-4 border-t border-border/40">
-                                <div className="flex items-center gap-2 mb-2 text-sm font-semibold text-primary">
-                                    <Sliders className="h-4 w-4" />
-                                    <span>{t.settingsTitle}</span>
-                                </div>
+                                <ToolSectionTitle icon={<Sliders className="h-4 w-4" />}>
+                                    {t.settingsTitle}
+                                </ToolSectionTitle>
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div className="space-y-2">
-                                        <Label htmlFor="width">{t.widthLabel} ({unit})</Label>
-                                        <Input
-                                            id="width"
-                                            type="number"
-                                            value={width}
-                                            onChange={(e) => setWidth(parseInt(e.target.value) || 0)}
-                                            className="h-10 text-base"
-                                        />
-                                    </div>
-                                    <div className="space-y-2">
-                                        <Label htmlFor="height">{t.heightLabel} ({unit})</Label>
-                                        <Input
-                                            id="height"
-                                            type="number"
-                                            value={height}
-                                            onChange={(e) => setHeight(parseInt(e.target.value) || 0)}
-                                            className="h-10 text-base"
-                                        />
-                                    </div>
+                                    <ToolField
+                                        fieldId="width"
+                                        label={`${t.widthLabel} (${unit})`}
+                                        type="number"
+                                        value={width}
+                                        onChange={(e) => setWidth(parseInt(e.target.value) || 0)}
+                                    />
+                                    <ToolField
+                                        fieldId="height"
+                                        label={`${t.heightLabel} (${unit})`}
+                                        type="number"
+                                        value={height}
+                                        onChange={(e) => setHeight(parseInt(e.target.value) || 0)}
+                                    />
                                 </div>
 
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div className="space-y-2">
-                                        <Label htmlFor="minKb">{t.minKbLabel}</Label>
-                                        <Input
-                                            id="minKb"
-                                            type="number"
-                                            value={minKb}
-                                            onChange={(e) => setMinKb(parseInt(e.target.value) || 0)}
-                                            className="h-10 text-base"
-                                        />
-                                    </div>
-                                    <div className="space-y-2">
-                                        <Label htmlFor="maxKb">{t.maxKbLabel}</Label>
-                                        <Input
-                                            id="maxKb"
-                                            type="number"
-                                            value={maxKb}
-                                            onChange={(e) => setMaxKb(parseInt(e.target.value) || 0)}
-                                            className="h-10 text-base"
-                                        />
-                                    </div>
+                                    <ToolField
+                                        fieldId="minKb"
+                                        label={t.minKbLabel}
+                                        type="number"
+                                        value={minKb}
+                                        onChange={(e) => setMinKb(parseInt(e.target.value) || 0)}
+                                    />
+                                    <ToolField
+                                        fieldId="maxKb"
+                                        label={t.maxKbLabel}
+                                        type="number"
+                                        value={maxKb}
+                                        onChange={(e) => setMaxKb(parseInt(e.target.value) || 0)}
+                                    />
                                 </div>
 
                                 <div className="flex justify-between items-center pt-2">
-                                    <span className="text-xs text-muted-foreground flex items-center gap-1">
-                                        <Shield className="h-3 w-3 text-emerald-500" />
-                                        {t.privateLabel}
-                                    </span>
+                                    <ToolPrivacyNote>{t.privateLabel}</ToolPrivacyNote>
                                     {previewUrl && (
                                         <Button
                                             type="button"
@@ -468,12 +379,11 @@ function ExamPhotoResizerInner({
                                     )}
                                 </div>
                             </div>
-                        </CardContent>
-                    </Card>
-                </div>
+                    </ToolPanel>
+                </ToolGridMain>
 
                 {/* Resized Result Output panel */}
-                <div className="md:col-span-5 space-y-6">
+                <ToolGridSide>
                     <div className="shrink-0">
                         <AdPlacement placement="in-content" slug="ssc-photo-resizer" category="exam" />
                     </div>
@@ -490,7 +400,7 @@ function ExamPhotoResizerInner({
                                 )}
 
                                 {!processing && !resizedUrl && (
-                                    <div className="h-64 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-md p-6 bg-muted/5">
+                                    <div className="h-64 flex flex-col items-center justify-center border border-dashed border-border/40 rounded-xl p-6 bg-muted/5">
                                         <FileImage className="h-12 w-12 text-muted-foreground/40 mb-3" />
                                         <p className="text-sm text-muted-foreground">{t.previewSub}</p>
                                     </div>
@@ -498,15 +408,15 @@ function ExamPhotoResizerInner({
 
                                 {!processing && resizedUrl && (
                                     <div className="space-y-4">
-                                        <div className="border border-primary/20 bg-muted/10 p-4 rounded-md">
+                                        <ToolPreviewFrame className="border-primary/20">
                                             <img
                                                 src={resizedUrl}
                                                 alt="Resized output"
                                                 className="max-h-[260px] mx-auto object-contain border border-border/40 shadow-md"
                                                 style={{ width: `${width}px`, height: `${height}px`, maxWidth: "100%" }}
                                             />
-                                        </div>
-                                        <div className="grid grid-cols-2 gap-2 text-sm bg-primary/5 border border-primary/10 rounded-sm py-2 px-3 text-left">
+                                        </ToolPreviewFrame>
+                                        <div className="grid grid-cols-2 gap-2 text-sm bg-primary/5 border border-primary/10 rounded-xl py-2 px-3 text-left">
                                             <div>
                                                 <span className="text-xs text-muted-foreground block">{t.dimensions}</span>
                                                 <span className="font-bold font-mono">{resizedWidth} x {resizedHeight} px</span>
@@ -549,12 +459,12 @@ function ExamPhotoResizerInner({
                             </div>
                         </CardContent>
                     </Card>
-                </div>
+                </ToolGridSide>
 
-            </div>
+            </ToolGrid>
 
             <canvas ref={canvasRef} className="hidden" />
-        </div>
+        </ToolShell>
     );
 }
 

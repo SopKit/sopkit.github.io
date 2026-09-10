@@ -6,18 +6,24 @@ import {
     Download, 
     ImageIcon, 
     Loader2, 
-    ShieldCheck, 
     X,
     Settings,
     FileText,
     ArrowRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
+import { toast } from "sonner";
+import {
+    ToolShell,
+    ToolDropzone,
+    ToolModeTabs,
+    ToolField,
+    ToolPanel,
+    ToolSectionTitle,
+} from "@/components/tools/shared/design-system";
 
 interface CompressorFile {
     id: string;
@@ -38,23 +44,27 @@ export default function ImageCompressorTool() {
     const [targetKb, setTargetKb] = useState<number>(200);
     const fileInputRef = useRef<HTMLInputElement>(null);
 
+    const addFiles = useCallback((incoming: File[]) => {
+        const newFiles = incoming.map(file => ({
+            id: Math.random().toString(36).substring(2, 9),
+            file,
+            name: file.name,
+            originalSize: file.size,
+            preview: URL.createObjectURL(file),
+            compressedBlob: null,
+            compressedSize: null,
+            status: "pending" as const
+        }));
+        setFiles(prev => [...prev, ...newFiles]);
+        toast.success(`${newFiles.length} images queued for compression.`);
+    }, []);
+
     const onFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.files) {
-            const newFiles = Array.from(e.target.files).map(file => ({
-                id: Math.random().toString(36).substring(2, 9),
-                file,
-                name: file.name,
-                originalSize: file.size,
-                preview: URL.createObjectURL(file),
-                compressedBlob: null,
-                compressedSize: null,
-                status: "pending" as const
-            }));
-            setFiles(prev => [...prev, ...newFiles]);
-            toast.success(`${newFiles.length} images queued for compression.`);
+            addFiles(Array.from(e.target.files));
         }
         e.target.value = "";
-    }, []);
+    }, [addFiles]);
 
     const removeFile = (id: string) => {
         setFiles(prev => {
@@ -178,13 +188,7 @@ export default function ImageCompressorTool() {
     };
 
     return (
-        <div className="space-y-8 max-w-5xl mx-auto">
-            {/* Privacy Badge */}
-            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
-                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
-                <span>🔒 100% Client-Side Sandbox: Images are compressed locally inside your browser RAM. No photo data is sent to external servers.</span>
-            </div>
-
+        <ToolShell>
             {/* Header Toolbar */}
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-4">
@@ -241,18 +245,14 @@ export default function ImageCompressorTool() {
                 {/* Main Content Area */}
                 <div className="lg:col-span-3 space-y-6">
                     {files.length === 0 ? (
-                        <div 
-                            onClick={() => fileInputRef.current?.click()}
-                            className="group cursor-pointer flex flex-col items-center justify-center p-12 md:p-24 border-2 border-dashed border-border/40 hover:border-primary/40 bg-card/25 hover:bg-card/40 transition-all rounded-3xl text-center"
-                        >
-                            <div className="p-6 bg-primary/5 rounded-2xl group-hover:scale-115 transition-all shadow-sm">
-                                <ImageIcon className="h-12 w-12 text-primary/40 group-hover:text-primary/60" />
-                            </div>
-                            <h3 className="mt-6 text-lg font-bold">Upload Images to Compress</h3>
-                            <p className="mt-2 text-xs text-muted-foreground max-w-xs leading-relaxed">
-                                Upload one or more image files. You can choose percentage-based quality levels or specify exact KB boundaries.
-                            </p>
-                        </div>
+                        <ToolDropzone
+                            title="Upload Images to Compress"
+                            subtitle="Upload one or more image files. You can choose percentage-based quality levels or specify exact KB boundaries."
+                            accept="image/*"
+                            multiple
+                            onFiles={addFiles}
+                            icon={<ImageIcon className="h-8 w-8" />}
+                        />
                     ) : (
                         <div className="space-y-4">
                             {files.map((item) => {
@@ -325,30 +325,20 @@ export default function ImageCompressorTool() {
 
                 {/* Right Side Options Panel */}
                 <div className="space-y-4">
-                    <Card className="p-5 border border-border/40 bg-card/25 backdrop-blur-sm rounded-3xl space-y-4">
-                        <h4 className="font-bold text-xs uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
-                            <Settings className="w-3.5 h-3.5" /> Compression Settings
-                        </h4>
+                    <ToolPanel className="p-5">
+                        <ToolSectionTitle icon={<Settings className="w-3.5 h-3.5" />}>
+                            Compression Settings
+                        </ToolSectionTitle>
 
                         <div className="space-y-4 text-xs font-semibold">
-                            <div className="flex gap-2 p-1 bg-muted/20 border border-border/20 rounded-lg">
-                                <Button 
-                                    type="button" 
-                                    variant={mode === "quality" ? "secondary" : "ghost"}
-                                    onClick={() => setMode("quality")}
-                                    className="flex-1 text-[10px] font-bold h-7"
-                                >
-                                    Quality Scale
-                                </Button>
-                                <Button 
-                                    type="button" 
-                                    variant={mode === "target-kb" ? "secondary" : "ghost"}
-                                    onClick={() => setMode("target-kb")}
-                                    className="flex-1 text-[10px] font-bold h-7"
-                                >
-                                    Target KB Limit
-                                </Button>
-                            </div>
+                            <ToolModeTabs
+                                tabs={[
+                                    { value: "quality", label: "Quality Scale" },
+                                    { value: "target-kb", label: "Target KB Limit" },
+                                ]}
+                                value={mode}
+                                onChange={(v) => setMode(v as "quality" | "target-kb")}
+                            />
 
                             {mode === "quality" ? (
                                 <div className="space-y-2">
@@ -364,21 +354,18 @@ export default function ImageCompressorTool() {
                                     />
                                 </div>
                             ) : (
-                                <div className="space-y-2">
-                                    <Label htmlFor="target-kb-input" className="text-xs text-foreground">Target Size Limit (KB)</Label>
-                                    <Input 
-                                        id="target-kb-input"
-                                        type="number"
-                                        min="5"
-                                        max="5000"
-                                        value={targetKb}
-                                        onChange={(e) => setTargetKb(Math.max(5, Math.min(5000, parseInt(e.target.value, 10) || 200)))}
-                                        className="h-9 text-xs border-border/30 bg-background/50 font-bold"
-                                    />
-                                </div>
+                                <ToolField
+                                    fieldId="target-kb-input"
+                                    label="Target Size Limit (KB)"
+                                    type="number"
+                                    min={5}
+                                    max={5000}
+                                    value={targetKb}
+                                    onChange={(e) => setTargetKb(Math.max(5, Math.min(5000, parseInt(e.target.value, 10) || 200)))}
+                                />
                             )}
                         </div>
-                    </Card>
+                    </ToolPanel>
 
                     <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-3.5 text-xs leading-relaxed">
                         <h4 className="font-bold text-sm text-foreground flex items-center gap-1.5">
@@ -390,6 +377,6 @@ export default function ImageCompressorTool() {
                     </Card>
                 </div>
             </div>
-        </div>
+        </ToolShell>
     );
 }
