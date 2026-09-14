@@ -34,42 +34,42 @@ export const DS = {
 	} as const,
 
 	panel: {
-		card: "border border-border/40 bg-card/20 backdrop-blur-sm shadow-md",
+		card: "border border-border bg-surface-muted/50 dark:bg-card/40 backdrop-blur-sm shadow-sm",
 		content: "p-6 space-y-6",
-		divider: "pt-4 border-t border-border/40",
+		divider: "pt-4 border-t border-border",
 	} as const,
 
 	dropzone: {
-		base: "border-2 border-dashed border-border/60 hover:border-primary/50 transition-all p-8 md:p-12 text-center cursor-pointer space-y-4 hover:bg-muted/10 group rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50",
-		active: "border-primary/70 bg-primary/5",
+		base: "border-2 border-dashed border-border hover:border-foreground/40 transition-all p-8 md:p-12 text-center cursor-pointer space-y-4 hover:bg-surface-muted/30 group rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/20",
+		active: "border-primary bg-primary/5",
 		iconChip:
-			"p-4 bg-primary/10 text-primary rounded-2xl w-fit mx-auto group-hover:scale-110 transition-transform",
-		title: "font-bold text-lg",
+			"p-4 bg-surface-muted text-foreground rounded-2xl w-fit mx-auto group-hover:scale-105 transition-transform",
+		title: "font-serif text-lg font-medium text-foreground",
 		subtitle: "text-sm text-muted-foreground",
 	} as const,
 
 	tabs: {
 		container:
-			"grid gap-2 p-1 bg-muted/40 border border-border/20 rounded-xl",
+			"grid gap-1.5 p-1 bg-surface-muted border border-border rounded-xl",
 		button:
-			"py-2 px-3 text-sm font-semibold rounded-lg transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50",
-		active: "bg-primary text-primary-foreground shadow-sm",
+			"py-2 px-3 text-xs sm:text-sm font-medium rounded-lg transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/20",
+		active: "bg-primary text-primary-foreground shadow-xs font-semibold",
 		inactive: "text-muted-foreground hover:text-foreground",
 	} as const,
 
 	field: {
 		wrapper: "space-y-2",
-		input: "h-10 text-base",
+		input: "h-10 text-sm rounded-xl",
 	} as const,
 
 	fileBar:
-		"flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground bg-muted/20 px-3 py-2 border border-border/10 rounded-xl",
+		"flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground bg-surface-muted/40 px-3.5 py-2 border border-border rounded-xl",
 
 	previewFrame:
-		"relative border border-border/40 bg-muted/10 p-4 rounded-xl",
+		"relative border border-border bg-surface-muted/20 p-4 rounded-xl",
 
 	sectionTitle:
-		"flex items-center gap-2 mb-2 text-sm font-semibold text-primary",
+		"flex items-center gap-2 mb-2 text-xs font-mono uppercase tracking-wider text-muted-foreground",
 
 	privacyNote:
 		"text-xs text-muted-foreground flex items-center gap-1.5",

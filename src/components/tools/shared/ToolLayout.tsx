@@ -222,7 +222,7 @@ export default function ToolLayout({
 
 			<main className="container mx-auto px-4 py-4 md:py-6 max-w-6xl space-y-8">
 				<section className="text-center space-y-3 max-w-4xl mx-auto animate-in pt-1">
-					<h1 className="text-3xl md:text-5xl font-black tracking-tight leading-none bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 dark:from-blue-400 dark:via-sky-400 dark:to-blue-300 bg-clip-text text-transparent">
+					<h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight leading-tight text-foreground">
 						{enrichedTool.name}
 					</h1>
 					<p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl mx-auto">

@@ -4,8 +4,7 @@ import { getAllTools, Tool } from "@/lib/tools";
 import { SITE_URL, TOOL_COUNT_STRING } from "@/constants/config";
 import "./globals.css";
 import Script from "next/script";
-import { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Newsreader } from "next/font/google";
 // NOTE: Do NOT use next/dynamic inside this Server Component.
 // In Next 16, next/dynamic within an RSC throws an uncaught
 // BAILOUT_TO_CLIENT_SIDE_RENDERING during prerender, which empties the
@@ -15,8 +14,8 @@ import { PWARegistration } from "@/components/shared/PWARegistration";
 
 import { ClientStackAuthProvider } from "@/components/shared/ClientStackAuthProvider";
 
-import { AppleNavbar } from "@/components/navigation/AppleNavbar";
-import { AppleFooter } from "@/components/footers/AppleFooter";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -24,6 +23,14 @@ const inter = Inter({
 	preload: true,
 	variable: "--font-inter",
 	weight: ["400", "500", "600", "700", "800"],
+});
+
+const newsreader = Newsreader({
+	subsets: ["latin"],
+	display: "swap",
+	preload: true,
+	variable: "--font-editorial",
+	style: ["normal", "italic"],
 });
 
 export const viewport: Viewport = {
@@ -173,7 +180,7 @@ export default function RootLayout({
 	const categories = Array.from(categoriesMap.values());
 
 	return (
-		<html lang="en" suppressHydrationWarning className={inter.variable}>
+		<html lang="en" suppressHydrationWarning className={`${inter.variable} ${newsreader.variable}`}>
 			<head>
 				<meta charSet="utf-8" />
 				<Script src="/coi-serviceworker.min.js" strategy="beforeInteractive" />
@@ -297,13 +304,12 @@ export default function RootLayout({
 					}}
 				/>
 			</head>
-			<body className={`ds-page font-sans antialiased min-h-screen ${inter.className}`}>
+			<body className={`font-sans antialiased min-h-screen bg-background text-foreground ${inter.className}`}>
 				<ClientStackAuthProvider>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-						<AppleNavbar />
+						<Header />
 						{children}
-
-						<AppleFooter categories={categories} />
+						<Footer />
 						<Toaster />
 						<PWARegistration />
 					</ThemeProvider>

@@ -1,0 +1,131 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Container } from "@/components/layout/Container";
+import { LanguageSelector } from "@/components/shared/LanguageSelector";
+import { getRouteById, STATIC_ROUTES } from "@/lib/tools";
+import { SITE_CONFIG } from "@/constants/config";
+
+export function Footer() {
+	const pathname = usePathname();
+	if (pathname?.startsWith("/embed")) {
+		return null;
+	}
+
+	const productLinks = [
+		{ name: "Image Tools", href: "/image-tools" },
+		{ name: "PDF Tools", href: "/pdf-tools" },
+		{ name: "Developer Utilities", href: "/developer-tools" },
+		{ name: "Calculators", href: "/calculators" },
+		{ name: "SEO Tools", href: "/seo-tools" },
+		{ name: "Text Tools", href: "/text-tools" },
+	];
+
+	const platformLinks = [
+		{ name: "All 600+ Tools", href: STATIC_ROUTES.TOOLS },
+		{ name: "Tool Guides", href: STATIC_ROUTES.TOOL_GUIDES },
+		{ name: "NPM Packages", href: "/packages" },
+		{ name: "Embed Sandboxes", href: "/#embed" },
+		{ name: "Blog", href: STATIC_ROUTES.BLOG },
+	];
+
+	const companyLinks = [
+		{ name: "About Us", href: getRouteById("about") || "/about" },
+		{ name: "Contact", href: getRouteById("contact") || "/contact" },
+		{ name: "Privacy Policy", href: getRouteById("privacy") || "/privacy" },
+		{ name: "Terms of Service", href: getRouteById("terms") || "/terms" },
+		{ name: "DMCA Notice", href: "/dmca" },
+	];
+
+	return (
+		<footer className="border-t border-border bg-surface-muted/50 dark:bg-card/30 pt-16 pb-12 text-foreground">
+			<Container size="xl">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-border/70">
+					{/* Brand & Mission Column */}
+					<div className="lg:col-span-2 space-y-4 pr-4">
+						<Link
+							href={STATIC_ROUTES.HOME}
+							className="font-serif text-2xl font-bold tracking-tight text-foreground no-underline inline-block"
+						>
+							Sop<span className="italic font-normal">Kit</span>
+						</Link>
+						<p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
+							A curated collection of over {SITE_CONFIG.toolCountString} free, privacy-first utilities.
+							Every operation executes locally inside your browser sandbox — zero server uploads, zero tracking.
+						</p>
+						<div className="pt-2 flex items-center gap-2 text-xs text-muted-foreground font-mono">
+							<span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />
+							<span>100% Client-Side Execution</span>
+						</div>
+					</div>
+
+					{/* Products Column */}
+					<div className="space-y-3">
+						<h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
+							Tool Suites
+						</h4>
+						<ul className="space-y-2 text-sm text-muted-foreground">
+							{productLinks.map((link) => (
+								<li key={link.name}>
+									<Link
+										href={link.href}
+										className="hover:text-foreground transition-colors no-underline"
+									>
+										{link.name}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+
+					{/* Platform Column */}
+					<div className="space-y-3">
+						<h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
+							Platform
+						</h4>
+						<ul className="space-y-2 text-sm text-muted-foreground">
+							{platformLinks.map((link) => (
+								<li key={link.name}>
+									<Link
+										href={link.href}
+										className="hover:text-foreground transition-colors no-underline"
+									>
+										{link.name}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+
+					{/* Company / Legal Column */}
+					<div className="space-y-3">
+						<h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
+							Trust & Legal
+						</h4>
+						<ul className="space-y-2 text-sm text-muted-foreground">
+							{companyLinks.map((link) => (
+								<li key={link.name}>
+									<Link
+										href={link.href}
+										className="hover:text-foreground transition-colors no-underline"
+									>
+										{link.name}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
+
+				{/* Bottom Bar: Language & Copyright */}
+				<div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+					<p>© {new Date().getFullYear()} SopKit. All utilities are free to use without registration.</p>
+					<div className="flex items-center gap-4">
+						<LanguageSelector />
+					</div>
+				</div>
+			</Container>
+		</footer>
+	);
+}

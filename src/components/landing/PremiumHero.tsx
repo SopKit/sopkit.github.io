@@ -138,25 +138,26 @@ export function PremiumHero({
 
 				{/* Minimal Crisp Headline — renders the page-specific title so every
 				    hub page ships a unique, keyword-rich H1 for crawlers. */}
+				{/* Minimal Crisp Headline */}
 				<div className="space-y-3">
 					{(() => {
 						const parts = title.split("—").map((s) => s.trim()).filter(Boolean);
 						const lead = parts.length > 1 ? parts.slice(0, -1).join(" — ") : null;
 						const highlight = parts.length > 1 ? parts[parts.length - 1] : title;
 						return (
-							<h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-foreground leading-[1.12]">
+							<h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-foreground leading-[1.12]">
 								{lead ? (
 									<>
 										{lead} <br className="hidden sm:inline" />
 									</>
 								) : null}
-								<span className="bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 dark:from-blue-400 dark:via-sky-300 dark:to-indigo-300 bg-clip-text text-transparent">
+								<span className="italic font-normal">
 									{highlight}
 								</span>
 							</h1>
 						);
 					})()}
-					<p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+					<p className="font-sans text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
 						{subtitle}
 					</p>
 				</div>
