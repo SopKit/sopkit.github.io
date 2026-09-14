@@ -29,8 +29,8 @@ const SHOWCASE_CARDS: ShowcaseCard[] = [
 		metric: "90% Smaller",
 		href: "/image-compressor",
 		icon: ImageIcon,
-		rotation: "-rotate-6 translate-y-3",
-		color: "from-sky-500/10 to-blue-500/5 text-sky-600 dark:text-sky-400",
+		rotation: "-rotate-12 -translate-x-28 sm:-translate-x-32 translate-y-6",
+		color: "text-sky-600 dark:text-sky-400",
 	},
 	{
 		title: "PDF Merger",
@@ -39,8 +39,8 @@ const SHOWCASE_CARDS: ShowcaseCard[] = [
 		metric: "100% Client-Side",
 		href: "/merge-pdf-online",
 		icon: FileText,
-		rotation: "-rotate-2 -translate-y-2",
-		color: "from-rose-500/10 to-red-500/5 text-rose-600 dark:text-rose-400",
+		rotation: "-rotate-4 -translate-x-10 sm:-translate-x-12 -translate-y-2",
+		color: "text-rose-600 dark:text-rose-400",
 	},
 	{
 		title: "JSON Formatter",
@@ -49,8 +49,8 @@ const SHOWCASE_CARDS: ShowcaseCard[] = [
 		metric: "Syntax Tree",
 		href: "/json-formatter",
 		icon: Code2,
-		rotation: "rotate-3 translate-y-1",
-		color: "from-violet-500/10 to-purple-500/5 text-violet-600 dark:text-violet-400",
+		rotation: "rotate-4 translate-x-10 sm:translate-x-12 translate-y-2",
+		color: "text-violet-600 dark:text-violet-400",
 	},
 	{
 		title: "Background Remover",
@@ -59,8 +59,8 @@ const SHOWCASE_CARDS: ShowcaseCard[] = [
 		metric: "Instant Crop",
 		href: "/background-remover",
 		icon: Layers,
-		rotation: "rotate-8 translate-y-4",
-		color: "from-emerald-500/10 to-teal-500/5 text-emerald-600 dark:text-emerald-400",
+		rotation: "rotate-12 translate-x-28 sm:translate-x-32 translate-y-8",
+		color: "text-emerald-600 dark:text-emerald-400",
 	},
 ];
 
@@ -298,43 +298,43 @@ export function HeroSection({ tools }: { tools?: Tool[] }) {
 					</div>
 
 					{/* Right: Fanned / Tilted Showcase Cards (Inspired by Reference Image) */}
-					<div className="lg:col-span-5 relative flex items-center justify-center min-h-[360px] sm:min-h-[420px] select-none">
-						<div className="relative w-full max-w-sm h-80 flex items-center justify-center">
+					<div className="lg:col-span-5 relative flex items-center justify-center min-h-[380px] sm:min-h-[440px] select-none py-6">
+						<div className="relative w-full max-w-lg h-80 flex items-center justify-center">
 							{SHOWCASE_CARDS.map((card, idx) => {
 								const Icon = card.icon;
 								return (
 									<Link
 										key={card.title}
 										href={card.href}
-										className={`group absolute w-64 p-5 rounded-2xl bg-card border border-border/90 shadow-lg transition-all duration-300 hover:z-30 hover:scale-105 hover:rotate-0 hover:shadow-2xl cursor-pointer no-underline ${card.rotation}`}
+										className={`group absolute w-56 sm:w-60 p-5 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/90 dark:border-stone-800 shadow-xl dark:shadow-2xl transition-all duration-300 hover:z-50 hover:scale-110 hover:rotate-0 hover:shadow-2xl cursor-pointer no-underline ${card.rotation}`}
 										style={{ zIndex: idx + 10 }}
 									>
 										{/* Card Header with Icon & Arrow Badge */}
 										<div className="flex items-center justify-between mb-4">
-											<div className={`p-2.5 rounded-xl bg-gradient-to-br ${card.color}`}>
+											<div className={`w-10 h-10 rounded-xl bg-stone-100 dark:bg-stone-800 flex items-center justify-center ${card.color}`}>
 												<Icon className="h-5 w-5" />
 											</div>
-											<div className="w-7 h-7 rounded-full bg-surface-muted border border-border flex items-center justify-center text-muted-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors shadow-xs">
+											<div className="w-7 h-7 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 flex items-center justify-center text-stone-500 dark:text-stone-400 group-hover:bg-stone-900 group-hover:text-white dark:group-hover:bg-stone-100 dark:group-hover:text-stone-900 transition-colors shadow-xs">
 												<ArrowUpRight className="h-3.5 w-3.5" />
 											</div>
 										</div>
 
 										{/* Card Body */}
 										<div className="space-y-1 mb-4">
-											<h3 className="font-sans text-base font-bold text-foreground group-hover:text-primary transition-colors">
+											<h3 className="font-sans text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-primary transition-colors">
 												{card.title}
 											</h3>
-											<p className="text-xs text-muted-foreground">
+											<p className="text-xs text-stone-500 dark:text-stone-400">
 												{card.tag}
 											</p>
 										</div>
 
 										{/* Card Footer Metric Pill */}
-										<div className="pt-3 border-t border-border/60 flex items-center justify-between text-xs">
-											<span className="font-mono text-[11px] text-muted-foreground">
+										<div className="pt-3 border-t border-stone-200/80 dark:border-stone-800 flex items-center justify-between text-xs">
+											<span className="font-mono text-[11px] text-stone-500 dark:text-stone-400">
 												{card.badge}
 											</span>
-											<span className="font-bold text-foreground">
+											<span className="font-bold text-stone-900 dark:text-stone-100">
 												{card.metric}
 											</span>
 										</div>
