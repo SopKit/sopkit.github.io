@@ -3,9 +3,10 @@
 import * as React from "react";
 import Link from "next/link";
 import { Search, ArrowUpRight } from "lucide-react";
-import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
-import type { Tool } from "@/lib/tools";
+import { Container } from "@/components/layout/Container";
+import { Tool } from "@/lib/tools";
+import { trackCategorySelect, trackToolAction, trackSearch } from "@/lib/analytics";
 
 interface ToolDirectorySectionProps {
 	tools: Tool[];
@@ -46,6 +47,15 @@ export function ToolDirectorySection({ tools }: ToolDirectorySectionProps) {
 		});
 	}, [tools, searchQuery, selectedCategory]);
 
+	// Debounced search tracking for discovery analytics
+	React.useEffect(() => {
+		if (!searchQuery.trim()) return;
+		const timer = setTimeout(() => {
+			trackSearch(searchQuery, filteredTools.length, selectedCategory);
+		}, 600);
+		return () => clearTimeout(timer);
+	}, [searchQuery, filteredTools.length, selectedCategory]);
+
 	return (
 		<Section id="directory" spacing="default" divided>
 			<Container size="xl">
@@ -81,7 +91,10 @@ export function ToolDirectorySection({ tools }: ToolDirectorySectionProps) {
 							<button
 								key={cat.slug}
 								type="button"
-								onClick={() => setSelectedCategory(cat.slug)}
+								onClick={() => {
+									setSelectedCategory(cat.slug);
+									trackCategorySelect(cat.name);
+								}}
 								className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all select-none cursor-pointer ${
 									selectedCategory === cat.slug
 										? "bg-primary text-primary-foreground font-semibold shadow-xs scale-[1.02]"
@@ -114,6 +127,7 @@ export function ToolDirectorySection({ tools }: ToolDirectorySectionProps) {
 						<Link
 							key={tool.id}
 							href={tool.route}
+							onClick={() => trackToolAction(tool.id, "start")}
 							className="group flex flex-col justify-between p-5 rounded-xl bg-card border border-border hover:border-foreground/40 shadow-xs hover:shadow-md transition-all duration-200 no-underline"
 						>
 							<div className="space-y-2">

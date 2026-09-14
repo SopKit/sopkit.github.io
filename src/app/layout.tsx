@@ -10,7 +10,10 @@ import { Inter, Newsreader } from "next/font/google";
 // BAILOUT_TO_CLIENT_SIDE_RENDERING during prerender, which empties the
 // entire page HTML for crawlers (site-wide SEO regression). Use direct
 // imports for any component rendered by the root layout.
+import { Suspense } from "react";
 import { PWARegistration } from "@/components/shared/PWARegistration";
+import { GA4RouteTracker } from "@/components/shared/GA4RouteTracker";
+import { WebVitalsReporter } from "@/components/shared/WebVitalsReporter";
 
 import { ClientStackAuthProvider } from "@/components/shared/ClientStackAuthProvider";
 
@@ -312,6 +315,10 @@ export default function RootLayout({
 						<Footer />
 						<Toaster />
 						<PWARegistration />
+						<Suspense fallback={null}>
+							<GA4RouteTracker />
+						</Suspense>
+						<WebVitalsReporter />
 					</ThemeProvider>
 				</ClientStackAuthProvider>
 

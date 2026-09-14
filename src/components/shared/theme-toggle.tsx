@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 
 
 
+import { trackThemeChange } from "@/lib/analytics";
+
 export function ThemeToggle() {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
@@ -24,7 +26,9 @@ export function ThemeToggle() {
 	}
 
 	const toggleTheme = () => {
-		setTheme(theme === "dark" ? "light" : "dark");
+		const nextTheme = theme === "dark" ? "light" : "dark";
+		setTheme(nextTheme);
+		trackThemeChange(nextTheme);
 	};
 
 	return (

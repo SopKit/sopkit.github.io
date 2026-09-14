@@ -3,22 +3,12 @@
 import * as React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { 
-	Search, 
-	X, 
-	ArrowUpRight, 
-	Sparkles, 
-	Lock, 
-	Zap, 
-	FileText, 
-	Image as ImageIcon, 
-	Code, 
-	Layers 
-} from "lucide-react";
-import { Container } from "@/components/layout/Container";
+import { Search, Sparkles, X, ArrowUpRight, CheckCircle2, ShieldCheck, Zap, Layers, FileText, Image as ImageIcon, Code2, Lock } from "lucide-react";
 import { PillButton } from "@/components/ui/pill-button";
-import { getAllTools, type Tool } from "@/lib/tools";
+import { Container } from "@/components/layout/Container";
+import { type Tool, getAllTools, STATIC_ROUTES } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
+import { trackSearch, trackToolAction } from "@/lib/analytics";
 
 interface ShowcaseCard {
 	title: string;
@@ -58,7 +48,7 @@ const SHOWCASE_CARDS: ShowcaseCard[] = [
 		badge: "Sub-ms",
 		metric: "Syntax Tree",
 		href: "/json-formatter",
-		icon: Code,
+		icon: Code2,
 		rotation: "rotate-3 translate-y-1",
 		color: "from-violet-500/10 to-purple-500/5 text-violet-600 dark:text-violet-400",
 	},
@@ -116,11 +106,15 @@ export function HeroSection({ tools }: { tools?: Tool[] }) {
 	const handleSearch = (e: React.FormEvent) => {
 		e.preventDefault();
 		if (selectedIndex >= 0 && selectedIndex < filteredTools.length) {
-			router.push(filteredTools[selectedIndex].route);
+			const targetTool = filteredTools[selectedIndex];
+			trackSearch(query, filteredTools.length);
+			trackToolAction(targetTool.id, "start");
+			router.push(targetTool.route);
 			setShowSuggestions(false);
 			return;
 		}
 		if (query.trim()) {
+			trackSearch(query, filteredTools.length);
 			router.push(`/search?q=${encodeURIComponent(query.trim())}`);
 			setShowSuggestions(false);
 		}

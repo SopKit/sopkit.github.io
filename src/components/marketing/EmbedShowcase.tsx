@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Copy, Check, Code2, ExternalLink, Sparkles, Terminal, Layers } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { SITE_CONFIG } from "@/constants/config";
+import { trackEmbedInteraction } from "@/lib/analytics";
 
 const SAMPLE_TOOLS = [
 	{ id: "pdf-editor", name: "PDF Editor", desc: "Local PDF annotation & viewer" },
@@ -32,6 +33,7 @@ export function EmbedShowcase() {
 
 	const handleCopy = () => {
 		navigator.clipboard.writeText(getCode());
+		trackEmbedInteraction(selectedTool, "copy_code", activeTab);
 		setCopied(true);
 		setTimeout(() => setCopied(false), 2000);
 	};
@@ -113,7 +115,10 @@ export function EmbedShowcase() {
 								<div className="flex items-center gap-1 bg-zinc-800/80 p-1 rounded-lg text-[11px]">
 									<button
 										type="button"
-										onClick={() => setActiveTab("html")}
+										onClick={() => {
+											setActiveTab("html");
+											trackEmbedInteraction(selectedTool, "tab_switch", "html");
+										}}
 										className={`px-2.5 py-0.5 rounded-md transition-all ${
 											activeTab === "html" ? "bg-zinc-700 text-white font-bold" : "text-zinc-400 hover:text-zinc-200"
 										}`}
@@ -122,7 +127,10 @@ export function EmbedShowcase() {
 									</button>
 									<button
 										type="button"
-										onClick={() => setActiveTab("react")}
+										onClick={() => {
+											setActiveTab("react");
+											trackEmbedInteraction(selectedTool, "tab_switch", "react");
+										}}
 										className={`px-2.5 py-0.5 rounded-md transition-all ${
 											activeTab === "react" ? "bg-zinc-700 text-white font-bold" : "text-zinc-400 hover:text-zinc-200"
 										}`}
@@ -131,7 +139,10 @@ export function EmbedShowcase() {
 									</button>
 									<button
 										type="button"
-										onClick={() => setActiveTab("url")}
+										onClick={() => {
+											setActiveTab("url");
+											trackEmbedInteraction(selectedTool, "tab_switch", "url");
+										}}
 										className={`px-2.5 py-0.5 rounded-md transition-all ${
 											activeTab === "url" ? "bg-zinc-700 text-white font-bold" : "text-zinc-400 hover:text-zinc-200"
 										}`}
@@ -154,6 +165,7 @@ export function EmbedShowcase() {
 									href={embedUrl}
 									target="_blank"
 									rel="noopener noreferrer"
+									onClick={() => trackEmbedInteraction(selectedTool, "preview_click")}
 									className="text-zinc-400 hover:text-blue-400 transition-colors flex items-center gap-1 text-[11px]"
 								>
 									<span>Open Live Sandbox Preview</span>

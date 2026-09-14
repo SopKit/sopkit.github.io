@@ -86,3 +86,22 @@ All interactive utilities process files strictly in the client's browser sandbox
 - **WebAssembly (Wasm)**: Powers heavy media processing (e.g. PDF manipulation via pdf-lib, image compression via mozjpeg/oxipng).
 - **HTML5 Canvas & Web Workers**: Perform background transformations without freezing the main UI thread.
 - **Zero Upload Policy**: No server routes accept file payloads or log user inputs.
+
+---
+
+## 5. Google Analytics 4 (GA4) Architecture
+
+SopKit implements full-featured, privacy-conscious GA4 event telemetry:
+- **Central Telemetry Engine (`src/lib/analytics.ts`)**: Strongly-typed event dispatchers with pre-initialization queue buffering.
+- **SPA Client Navigation Tracking (`src/components/shared/GA4RouteTracker.tsx`)**: Listens to App Router `usePathname()` and `useSearchParams()` to dispatch `page_view` events with full paths on soft navigations.
+- **Core Web Vitals Streaming (`src/components/shared/WebVitalsReporter.tsx`)**: Streams real-user LCP, CLS, INP, FID, and TTFB metrics directly to GA4 custom metrics.
+- **Lifecycle & Discovery Events**:
+  - `search`: Debounced query tracking with result counts and category tags.
+  - `select_content`: Category filter and suite switches.
+  - `tool_action`: Tool starts, completions, errors, and exports.
+  - `file_processing`: Anonymous format extensions and size brackets (`<1MB`, `1-5MB`, `5-25MB`, `25MB+`). Zero PII.
+  - `copy_to_clipboard`: Output, URL, or code snippets copied.
+  - `embed_interaction`: Webmaster iframe copy, tab switch, and live preview clicks.
+  - `theme_change`: Theme preference (light/dark/system).
+  - `outbound_click`: Outbound links to GitHub, documentation, and external platforms.
+  - `exception`: Uncaught tool errors for performance diagnostics.

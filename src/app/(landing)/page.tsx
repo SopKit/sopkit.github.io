@@ -12,8 +12,8 @@ import { CategoryShowcase } from "@/components/marketing/CategoryShowcase";
 import { ToolDirectorySection } from "@/components/marketing/ToolDirectorySection";
 import { TrustSection } from "@/components/marketing/TrustSection";
 import { FAQSection } from "@/components/marketing/FAQSection";
-import { EmbedShowcase } from "@/components/landing/EmbedShowcase";
-import { HomeSEOContent } from "@/components/landing/HomeSEOContent";
+import { EmbedShowcase } from "@/components/marketing/EmbedShowcase";
+import { HomeSEOContent } from "@/components/marketing/HomeSEOContent";
 import { Container } from "@/components/layout/Container";
 
 export async function generateMetadata(): Promise<Metadata> {

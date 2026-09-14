@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Share2, Link as LinkIcon, Code, Check, Bookmark, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import { trackCopyToClipboard, trackEmbedInteraction } from "@/lib/analytics";
 
 interface ToolToolbarProps {
 	toolId: string;
@@ -68,6 +69,7 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 			}
 		} else {
 			navigator.clipboard.writeText(shareUrl);
+			trackCopyToClipboard(toolId, "url");
 			setShareCopied(true);
 			setTimeout(() => setShareCopied(false), 2000);
 		}
@@ -84,11 +86,13 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 			: getShareUrl();
 
 		navigator.clipboard.writeText(shareUrl);
+		trackCopyToClipboard(toolId, "url");
 		setStateCopied(true);
 		setTimeout(() => setStateCopied(false), 2000);
 	};
 
 	const handleScrollToEmbed = () => {
+		trackEmbedInteraction(toolId, "tab_switch");
 		const embedSection = document.querySelector("section[class*='border-border/40']");
 		if (embedSection) {
 			embedSection.scrollIntoView({ behavior: "smooth", block: "center" });

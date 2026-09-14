@@ -1,5 +1,5 @@
 import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
-import { PremiumHero } from "@/components/landing/PremiumHero";
+import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
