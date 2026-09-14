@@ -57,7 +57,7 @@ export default function HttpStatusCodeChecker() {
       });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || "failed");
-      const tid = "http-status-code-checker";
+      const tid: string = "http-status-code-checker";
       let text = "";
       if (tid === "page-size-checker") {
         const bytes = new Blob([d.text ?? ""]).size;

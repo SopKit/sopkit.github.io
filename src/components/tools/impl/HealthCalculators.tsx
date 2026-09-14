@@ -48,7 +48,8 @@ export default function HealthCalculators({ defaultTab = "bmr" }) {
   // --- Water Intake ---
   const waterIntake = useMemo(() => {
     const w = parseFloat(weight) || 0;
-    return ((w * 0.033) + (activity > 1.5 ? 0.5 : 0)).toFixed(1);
+    const act = parseFloat(activity) || 1.2;
+    return ((w * 0.033) + (act > 1.5 ? 0.5 : 0)).toFixed(1);
   }, [weight, activity]);
 
   // --- Body Fat (US Navy Method) ---
@@ -219,7 +220,7 @@ export default function HealthCalculators({ defaultTab = "bmr" }) {
                   <div className="text-center space-y-6">
                     <p className="text-sm text-muted-foreground uppercase tracking-widest">Estimated Body Fat</p>
                     <h2 className="text-6xl font-black text-primary">{bodyFat}%</h2>
-                    <Progress value={parseFloat(bodyFat)} className="h-3 max-w-md mx-auto" />
+                    <Progress value={parseFloat(String(bodyFat)) || 0} className="h-3 max-w-md mx-auto" />
                     <p className="text-xs text-muted-foreground italic">Note: US Navy formula is an estimate. DXA scans are more accurate.</p>
                   </div>
                 )}

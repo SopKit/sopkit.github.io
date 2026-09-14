@@ -21,7 +21,7 @@ export default function QrCodeGeneratorBusinessTool() {
 
     const generateQR = async () => {
       try {
-        if (!window.QRCode) {
+        if (!(window as any).QRCode) {
           const script = document.createElement("script");
           script.src = "https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js";
           script.onload = () => drawQR(canvas);
@@ -36,8 +36,8 @@ export default function QrCodeGeneratorBusinessTool() {
     generateQR();
   }, [data]);
 
-  const drawQR = (canvas) => {
-    window.QRCode.toCanvas(canvas, data, {
+  const drawQR = (canvas: any) => {
+    (window as any).QRCode.toCanvas(canvas, data, {
       width: 220,
       margin: 2
     }, (err) => {
@@ -50,7 +50,7 @@ export default function QrCodeGeneratorBusinessTool() {
     const canvas = document.getElementById("biz-qr-canvas");
     if (!canvas) return;
     const link = document.createElement("a");
-    link.href = canvas.toDataURL("image/png");
+    link.href = (canvas as HTMLCanvasElement).toDataURL("image/png");
     link.download = "business-qr-code-" + type + ".png";
     link.click();
     toast.success("QR Code downloaded!");

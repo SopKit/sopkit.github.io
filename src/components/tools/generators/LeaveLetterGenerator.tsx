@@ -30,7 +30,7 @@ export default function LeaveLetterGenerator() {
         const start = new Date(startDate);
         const end = new Date(endDate);
         if (isNaN(start.getTime()) || isNaN(end.getTime()) || start > end) return 0;
-        const diffTime = Math.abs(end - start);
+        const diffTime = Math.abs(end.getTime() - start.getTime());
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) + 1; // inclusive
         return diffDays;
     }, [startDate, endDate]);

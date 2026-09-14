@@ -1,7 +1,7 @@
 "use client";
 
 import { Download, Image as ImageIcon, Upload } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -36,147 +36,59 @@ const TEMPLATES = {
 	},
 };
 
+interface OgConfig {
+	template: string;
+	title: string;
+	description: string;
+	siteName: string;
+	backgroundColor: string;
+	background: string;
+	textColor: string;
+	accentColor: string;
+	fontSize: number;
+	layout?: string;
+	logoUrl: string | null;
+	backgroundImageUrl: string | null;
+}
+
 export default function OgImageGenerator() {
-	const canvasRef = useRef(null);
+	const canvasRef = useRef<HTMLCanvasElement>(null);
 	const [_loading, _setLoading] = useState(false);
-	const [config, setConfig] = useState({
+	const [config, setConfig] = useState<OgConfig>({
 		template: "simple",
 		title: "My Awesome Article",
 		description: "Learn how to create amazing things with this guide.",
 		siteName: "mysite.com",
 		backgroundColor: "#ffffff",
+		background: "#ffffff",
 		textColor: "#000000",
 		accentColor: "#3b82f6",
 		fontSize: 60,
+		layout: "center",
 		logoUrl: null,
 		backgroundImageUrl: null,
 	});
 
-	// Draw canvas whenever config changes
-	useEffect(() => {
-		drawCanvas();
-	}, [drawCanvas]);
-
-	const handleConfigChange = (key, value) => {
+	const handleConfigChange = (key: string, value: any) => {
 		setConfig((prev) => ({ ...prev, [key]: value }));
 	};
 
-	const handleImageUpload = (e, key) => {
-		const file = e.target.files[0];
+	const handleImageUpload = (e: any, key: string) => {
+		const file = e.target.files?.[0];
 		if (file) {
 			const reader = new FileReader();
-			reader.onload = (event) => {
+			reader.onload = (event: any) => {
 				handleConfigChange(key, event.target.result);
 			};
 			reader.readAsDataURL(file);
 		}
 	};
 
-	const drawCanvas = () => {
-		const canvas = canvasRef.current;
-		if (!canvas) return;
-		const ctx = canvas.getContext("2d");
-
-		// Standard OG Image size
-		canvas.width = 1200;
-		canvas.height = 630;
-
-		// Background
-		if (config.backgroundImageUrl) {
-			const img = new Image();
-			img.src = config.backgroundImageUrl;
-			img.onload = () => {
-				// Cover fit
-				const scale = Math.max(
-					canvas.width / img.width,
-					canvas.height / img.height,
-				);
-				const x = canvas.width / 2 - (img.width / 2) * scale;
-				const y = canvas.height / 2 - (img.height / 2) * scale;
-				ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
-
-				// Add overlay for readability
-				ctx.fillStyle = "rgba(0,0,0,0.4)";
-				ctx.fillRect(0, 0, canvas.width, canvas.height);
-				drawText(ctx);
-			};
-		} else {
-			if (config.background.startsWith("linear-gradient")) {
-				const gradient = ctx.createLinearGradient(
-					0,
-					0,
-					canvas.width,
-					canvas.height,
-				);
-				// Simplified gradient parsing for demo
-				if (config.template === "gradient") {
-					gradient.addColorStop(0, "#667eea");
-					gradient.addColorStop(1, "#764ba2");
-				} else {
-					gradient.addColorStop(0, "#ffffff");
-					gradient.addColorStop(1, "#e5e7eb");
-				}
-				ctx.fillStyle = gradient;
-			} else {
-				ctx.fillStyle = config.background;
-			}
-			ctx.fillRect(0, 0, canvas.width, canvas.height);
-			drawText(ctx);
-		}
-	};
-
-	const drawText = (ctx) => {
-		const {
-			title,
-			description,
-			siteName,
-			textColor,
-			fontSize,
-			layout,
-			logoUrl,
-		} = config;
-
-		ctx.fillStyle = textColor;
-		ctx.textAlign = layout === "center" ? "center" : "left";
-		ctx.textBaseline = "middle";
-
-		const x = layout === "center" ? canvas.width / 2 : 100;
-		const y = canvas.height / 2;
-
-		// Logo
-		if (logoUrl) {
-			const img = new Image();
-			img.src = logoUrl;
-			img.onload = () => {
-				const logoSize = 80;
-				const logoX =
-					layout === "center" ? canvas.width / 2 - logoSize / 2 : 60; // Adjusted for padding
-				const logoY = 60;
-				ctx.drawImage(img, logoX, logoY, logoSize, logoSize);
-			};
-		}
-
-		// Site Name
-		ctx.font = `bold 30px Inter, sans-serif`;
-		ctx.globalAlpha = 0.8;
-		ctx.fillText(siteName, x, y - 150);
-		ctx.globalAlpha = 1.0;
-
-		// Title
-		ctx.font = `bold ${fontSize}px Inter, sans-serif`;
-		wrapText(ctx, title, x, y - 20, canvas.width - 200, fontSize * 1.2);
-
-		// Description
-		ctx.font = `medium ${fontSize * 0.5}px Inter, sans-serif`;
-		ctx.globalAlpha = 0.9;
-		wrapText(ctx, description, x, y + 100, canvas.width - 200, fontSize * 0.8);
-	};
-
-	const wrapText = (ctx, text, x, y, maxWidth, lineHeight) => {
-		const words = text.split(" ");
+	const wrapText = (ctx: CanvasRenderingContext2D, text: string, x: number, y: number, maxWidth: number, lineHeight: number) => {
+		const words = (text || "").split(" ");
 		let line = "";
 		let testLine = "";
-		const lineArray = [];
+		const lineArray: string[] = [];
 
 		for (let n = 0; n < words.length; n++) {
 			testLine = `${line + words[n]} `;
@@ -191,14 +103,116 @@ export default function OgImageGenerator() {
 		}
 		lineArray.push(line);
 
-		// Center vertically based on number of lines
-		const totalBlockHeight = lineArray.length * lineHeight;
-		const _startY = y - totalBlockHeight / 2; // Actually we want it relative to the y passed
-
 		for (let k = 0; k < lineArray.length; k++) {
 			ctx.fillText(lineArray[k], x, y + k * lineHeight);
 		}
 	};
+
+	const drawText = (ctx: CanvasRenderingContext2D) => {
+		const {
+			title,
+			description,
+			siteName,
+			textColor,
+			fontSize,
+			layout,
+			logoUrl,
+		} = config;
+
+		const cWidth = ctx.canvas.width;
+		const cHeight = ctx.canvas.height;
+
+		ctx.fillStyle = textColor;
+		ctx.textAlign = layout === "center" ? "center" : "left";
+		ctx.textBaseline = "middle";
+
+		const x = layout === "center" ? cWidth / 2 : 100;
+		const y = cHeight / 2;
+
+		// Logo
+		if (logoUrl) {
+			const img = new Image();
+			img.src = logoUrl;
+			img.onload = () => {
+				const logoSize = 80;
+				const logoX =
+					layout === "center" ? cWidth / 2 - logoSize / 2 : 60;
+				const logoY = 60;
+				ctx.drawImage(img, logoX, logoY, logoSize, logoSize);
+			};
+		}
+
+		// Site Name
+		ctx.font = `bold 30px Inter, sans-serif`;
+		ctx.globalAlpha = 0.8;
+		ctx.fillText(siteName, x, y - 150);
+		ctx.globalAlpha = 1.0;
+
+		// Title
+		ctx.font = `bold ${fontSize}px Inter, sans-serif`;
+		wrapText(ctx, title, x, y - 20, cWidth - 200, fontSize * 1.2);
+
+		// Description
+		ctx.font = `medium ${fontSize * 0.5}px Inter, sans-serif`;
+		ctx.globalAlpha = 0.9;
+		wrapText(ctx, description, x, y + 100, cWidth - 200, fontSize * 0.8);
+	};
+
+	const drawCanvas = useCallback(() => {
+		const canvas = canvasRef.current;
+		if (!canvas) return;
+		const ctx = canvas.getContext("2d");
+		if (!ctx) return;
+
+		// Standard OG Image size
+		canvas.width = 1200;
+		canvas.height = 630;
+
+		// Background
+		if (config.backgroundImageUrl) {
+			const img = new Image();
+			img.src = config.backgroundImageUrl;
+			img.onload = () => {
+				const scale = Math.max(
+					canvas.width / img.width,
+					canvas.height / img.height,
+				);
+				const x = canvas.width / 2 - (img.width / 2) * scale;
+				const y = canvas.height / 2 - (img.height / 2) * scale;
+				ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
+
+				ctx.fillStyle = "rgba(0,0,0,0.4)";
+				ctx.fillRect(0, 0, canvas.width, canvas.height);
+				drawText(ctx);
+			};
+		} else {
+			if (config.background && config.background.startsWith("linear-gradient")) {
+				const gradient = ctx.createLinearGradient(
+					0,
+					0,
+					canvas.width,
+					canvas.height,
+				);
+				if (config.template === "gradient") {
+					gradient.addColorStop(0, "#667eea");
+					gradient.addColorStop(1, "#764ba2");
+				} else {
+					gradient.addColorStop(0, "#ffffff");
+					gradient.addColorStop(1, "#e5e7eb");
+				}
+				ctx.fillStyle = gradient;
+			} else {
+				ctx.fillStyle = config.background || "#ffffff";
+			}
+			ctx.fillRect(0, 0, canvas.width, canvas.height);
+			drawText(ctx);
+		}
+	}, [config]);
+
+	// Draw canvas whenever config changes
+	useEffect(() => {
+		drawCanvas();
+	}, [drawCanvas]);
 
 	const handleDownload = () => {
 		const canvas = canvasRef.current;

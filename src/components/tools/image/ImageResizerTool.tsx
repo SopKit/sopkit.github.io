@@ -35,7 +35,7 @@ import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
 
 export default function ImageResizerTool() {
-	const [files, setFiles] = useState([]);
+	const [files, setFiles] = useState<any[]>([]);
 	const [resizeOptions, setResizeOptions] = useState({
 		width: 800,
 		height: 600,
@@ -45,7 +45,7 @@ export default function ImageResizerTool() {
 	});
 	const [isProcessing, setIsProcessing] = useState(false);
 	const [progress, setProgress] = useState(0);
-	const fileInputRef = useRef(null);
+	const fileInputRef = useRef<HTMLInputElement>(null);
 
 	const supportedFormats = [
 		"image/jpeg",
@@ -111,9 +111,9 @@ export default function ImageResizerTool() {
 		return `${parseFloat((bytes / k ** i).toFixed(2))} ${sizes[i]}`;
 	};
 
-	const handleFileSelect = (event) => {
-		const selectedFiles = Array.from(event.target.files);
-		const validFiles = selectedFiles.filter((file) => {
+	const handleFileSelect = (event: any) => {
+		const selectedFiles = Array.from(event.target.files || []) as File[];
+		const validFiles = selectedFiles.filter((file: File) => {
 			if (!supportedFormats.includes(file.type)) {
 				alert(`${file.name} is not a supported image format.`);
 				return false;
@@ -126,7 +126,7 @@ export default function ImageResizerTool() {
 		});
 
 		// Create image objects for each file
-		validFiles.forEach((file) => {
+		validFiles.forEach((file: File) => {
 			const img = new Image();
 			const url = URL.createObjectURL(file);
 
@@ -230,7 +230,7 @@ export default function ImageResizerTool() {
 			);
 
 			try {
-				const result = await resizeImage(fileData);
+				const result: any = await resizeImage(fileData);
 
 				setFiles((prev) =>
 					prev.map((f) =>

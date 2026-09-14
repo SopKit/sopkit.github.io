@@ -11,7 +11,7 @@ import {
 	Type,
 	Zap,
 } from "lucide-react";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,10 +23,18 @@ import {
 } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
 
+interface TextStats {
+	words: number;
+	characters: number;
+	charactersNoSpaces: number;
+	sentences: number;
+	paragraphs: number;
+}
+
 export default function TextCaseConverterTool() {
 	const [inputText, setInputText] = useState("");
-	const [results, setResults] = useState({});
-	const [stats, setStats] = useState(null);
+	const [results, setResults] = useState<Record<string, string>>({});
+	const [stats, setStats] = useState<TextStats | null>(null);
 
 	const sampleTexts = [
 		"hello world! this is a SAMPLE text for CASE conversion.",
@@ -143,7 +151,7 @@ export default function TextCaseConverterTool() {
 		}
 
 		const text = inputText.trim();
-		const conversions = {};
+		const conversions: Record<string, string> = {};
 
 		// Helper functions
 		const toTitleCase = (str) => {
@@ -297,11 +305,11 @@ export default function TextCaseConverterTool() {
 			await navigator.clipboard.writeText(text);
 			alert("Copied to clipboard!");
 		} catch (_err) {
-			console.error("Failed to copy:", err);
+			console.error("Failed to copy:", _err);
 		}
 	};
 
-	const handleDownload = (content, filename) => {
+	const handleDownload = (content: string, filename: string) => {
 		const blob = new Blob([content], { type: "text/plain" });
 		const url = URL.createObjectURL(blob);
 		const link = document.createElement("a");
@@ -327,7 +335,7 @@ export default function TextCaseConverterTool() {
 	};
 
 	// Auto-convert when text changes
-	useState(() => {
+	useEffect(() => {
 		if (inputText) {
 			const timeoutId = setTimeout(convertCase, 300);
 			return () => clearTimeout(timeoutId);

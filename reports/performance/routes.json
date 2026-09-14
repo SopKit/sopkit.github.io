@@ -1,0 +1,3854 @@
+[
+  {
+    "pathname": "/",
+    "category": "marketing",
+    "priority": "p0",
+    "type": "static"
+  },
+  {
+    "pathname": "/tools",
+    "category": "directory",
+    "priority": "p0",
+    "type": "static"
+  },
+  {
+    "pathname": "/categories",
+    "category": "directory",
+    "priority": "p0",
+    "type": "static"
+  },
+  {
+    "pathname": "/search",
+    "category": "directory",
+    "priority": "p0",
+    "type": "static"
+  },
+  {
+    "pathname": "/generators",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/ai-image-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-voice-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-music-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/qr-code-reader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/bio-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/business-name-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-poem-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/fake-chat-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/excuse-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/font-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/number-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/poetry-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/rent-receipt-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/simple-invoice-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/leave-application-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/resignation-letter-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/bio-data-maker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/instagram-bio-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/instagram-caption-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/hashtag-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/slogan-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/logo-idea-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/google-business-profile-description-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/review-reply-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/restaurant-menu-description-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/client-proposal-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/payment-reminder-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/product-description-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/refund-policy-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/love-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/color-palette-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/meme-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/story-idea-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pixel-art-maker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/avatar-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/gemini-watermark-remover",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/svg-to-png",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/webp-to-png",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ico-to-png",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/jpg-to-png",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/png-to-jpg",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/svg-to-jpg",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/webp-to-jpg",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/favicon-generator-pro",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/remove-image-metadata",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-color-picker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/compress-image-to-exact-kb",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/resize-image-cm-mm-inch",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/passport-photo-maker-india",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/aadhaar-pan-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/background-remover",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/base64-to-image-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/convert-to-ico",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/exif-reader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/favicon-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/flip-image",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-compressor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-cropper",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/circular-image-crop",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-watermark",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/gif-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-enlarger",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-to-base64",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/jpg-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/jpg-to-bmp-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/jpg-to-gif-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/jpg-to-ico-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/jpg-to-webp-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/logo-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/photo-enhancer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/png-to-bmp-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/png-to-gif-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/png-to-ico-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/png-to-webp-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/rotate-image",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-tools",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/icon-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-editor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/compress-image-to-20kb",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/resize-image-in-cm",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/compress-image-to-10kb",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/compress-image-to-30kb",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/compress-image-to-100kb",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/compress-image-to-200kb",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/resize-image-in-mm",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/resize-image-in-pixels",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-dpi-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/text-reverser",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/remove-duplicate-lines",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/markdown-to-html",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/markdown-to-pdf",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/url-encoder-decoder",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/string-length-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-to-binary-hex-octal",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/slug-to-text-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/word-frequency-counter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/case-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/emoji-text-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/random-word-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/resume-ats-score-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/resume-keyword-matcher",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/cover-letter-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/linkedin-headline-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/internship-message-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/article-rewriter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/comma-separator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/line-sorter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/lorem-ipsum",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/number-to-word-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/remove-line-breaks",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-compare",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-repeater",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-sorter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-to-hashtags-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-to-slug-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-to-tags-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/word-counter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/word-to-number-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/markdown-to-text",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/kruti-dev-to-unicode",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/unicode-to-kruti-dev",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/hinglish-to-hindi",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/hindi-typing-tool",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/fancy-text-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-to-handwriting",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/compress-pdf-to-exact-kb",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/remove-pages-from-pdf",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-to-jpg-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/merge-pdf-online",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/html-to-pdf",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-compressor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-page-numbers",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-watermark",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-metadata-editor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-merger",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-splitter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-rotation",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-to-pdf",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-editor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-protect",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-to-image",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-to-word",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-unlocker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/word-to-pdf",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-grayscale",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-repair",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-tools",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/video",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/video-tools",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/video-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/video-editor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-video-summarizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/akillitv-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/all-downloaders",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/bandcamp-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/bilibili-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/bitchute-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/blogger-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/blutv-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/buzzfeed-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/capcut-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/chingari-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/dailymotion-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/douyin-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/downloaders",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/espn-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/facebook-story-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/facebook-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/fb-video-saver",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/febspot-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/flickr-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ifunny-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ig-highlights-saver",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/imdb-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/imgur-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/insta-reels-saver",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/instagram-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/instagram-image-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/instagram-reel-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/instagram-story-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/instagram-videos-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/izlesene-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/kickstarter-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/kwai-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/likee-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/linkedin-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/m3u8-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/mashable-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/mixcloud-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/mxtakatak-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ninegag-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/odnoklassniki-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/online-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/periscope-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pinterest-clip-saver",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pinterest-gif-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pinterest-image-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pinterest-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/puhutv-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/reddit-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/reddit-media-saver",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/reddit-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/rumble-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/save-fb-stories-anonymous",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/save-ig-content",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/save-insta-pfp",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/save-instagram-clips",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/save-reels-video",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/save-snaps-to-gallery",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/save-tiktok-mp4",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/save-twitter-videos",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/sharechat-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/snapchat-saver-online",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/snapchat-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/streamable-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ted-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/telegram-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/threads-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/tiktok-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/tiktok-saver-no-watermark",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/tiktok-videos-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/tumblr-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/twitch-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/twitter-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/universal-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/vimeo-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/vkontakte-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/youtube-channel-age-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-channel-finder",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-channel-id-extractor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-playlist-link-extractor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-channel-statistics",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-comment-picker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-description-extractor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-embed-code-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-hashtag-extractor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-hashtag-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-money-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-region-restriction-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-subscribe-link-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-tag-extractor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-tag-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-timestamp-link-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-title-extractor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-title-length-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-video-count-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-video-statistics",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-title-capitalizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-views-ratio-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-title-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-description-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-thumbnail-text-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-thumbnail-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/youtube-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/audio",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/text-to-speech",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/audio-tools",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/guitar-tuner",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/free-mp3-extractor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/gaana-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/modify-mp3-file",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/mp3-from-tiktok",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/mp4-to-mp3",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/shrink-mp3-size",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/soundcloud-video-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/audio-equalizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/audio-joiner",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/developer",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/uuid-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/slug-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-to-typescript",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/sql-formatter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/html-minifier",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/user-agent-parser",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/yaml-to-json-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-to-yaml-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/html-to-xml-entities",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/css-border-radius-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/crontab-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/xml-formatter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/html-entity-encoder",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/random-name-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/binary-to-hex-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/jwt-decoder",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/amazon-ses",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/anthropic",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ascii-to-binary-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ascii-to-text-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/attio",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/binary-to-ascii-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/binary-to-decimal-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/binary-to-octal-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/binary-to-text-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/brevo",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/clearbit",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/cohere",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/coresignal",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/crunchbase",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/css-beautifier",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/css-minifier",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/csv-to-json-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/data-axle",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/datanyze",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/decimal-to-binary-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/decimal-to-hex-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/decimal-to-octal-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/decimal-to-text-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/deepseek",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/demandbase",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/enrich",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/freshdesk",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/fullcontact",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/google-gemini",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/groq",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/hex-to-binary-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/hex-to-decimal-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/hex-to-octal-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/hex-to-text-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/hg-insights",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/html-beautifier",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/html-decoder",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/html-encoder",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/hubspot",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/intercom",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/javascript-beautifier",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/javascript-deobfuscator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/javascript-minifier",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/javascript-obfuscator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-editor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-formatter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-minify",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-to-csv-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-to-json-schema",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-to-text-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-to-tsv-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-to-xml-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-validator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-viewer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/leadgenius",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/leadspace",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/loops",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/lusha",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/mailgun",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/mattermark",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/melissa",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/octal-to-binary-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/octal-to-decimal-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/octal-to-hex-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/octal-to-text-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/openai",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/people-data-labs",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/pipedrive",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/pipl",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/postmark",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/resend",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/sendgrid",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/snov-io",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/sparkpost",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/stripe",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-to-ascii-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-to-binary-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-to-decimal-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-to-hex-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-to-octal-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/tsv-to-json-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/twilio",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/xml-to-json-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/zendesk",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/api-key-tester/zoominfo",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/base64-tool",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/css-gradient-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/css-shadow-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/code-formatter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/javascript-notebook",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/css-glassmorphism-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/markdown-table-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/json-diff-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ip-subnet-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ffmpeg-command-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/utilities",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/adsense-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/age-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/angle-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/apparent-power-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/area-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/average-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/base64-decode",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/base64-encode",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/charge-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/color-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/confidence-interval-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/convert-srt-to-vtt",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/convert-vtt-to-srt",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/cpm-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/credit-card-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/credit-card-validator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/currency-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/current-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/digital-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/disclaimer-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/discount-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/dns-records-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/domain-age-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/domain-to-ip-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/each-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/energy-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/facebook-id-finder",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/faq-schema-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/frequency-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/get-http-headers",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/gst-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/hex-to-rgb-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/hosting-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/htaccess-redirect-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/http-status-code-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/illuminance-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/indexnow",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/internet-speed-test",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ip-address-lookup",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/length-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/loan-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/margin-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/md5-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/number-to-roman-numerals",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pace-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/page-size-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/parts-per-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/secure-password-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/password-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/paypal-fee-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/percentage-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/power-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pressure-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/privacy-policy-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/probability-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/qr-code-decoder",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/qr-code-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/random-uuid-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/reactive-energy-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/reactive-power-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/redirect-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/rgb-to-hex-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/roman-numerals-to-number",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/sales-tax-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/screen-resolution-simulator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/server-status-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/speed-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/temperature-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/time-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/torque-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/url-decode",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/url-encode",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/url-opener",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/url-parser",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/url-rewriting-tool",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/url-shortener",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/utm-builder",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/voltage-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/volume-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/volumetric-flow-rate-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/weight-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/what-is-my-browser",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/what-is-my-ip-address",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/what-is-my-screen-resolution",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/what-is-my-user-agent",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/whois-domain-lookup",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/wordpress-theme-detector",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/other-tools",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-tools",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/whatsapp-link-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/qr-code-generator-business",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/terms-and-conditions-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/seo",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/domain-name-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/website-cost-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/seo-title-meta-description-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/robots-txt-sitemap-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/keyword-research-tool",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/sitemap-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/seo-audit-tool",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/backlink-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/bulk-keyword-rank-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/google-cache-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/google-index-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/keyword-density-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/keywords-suggestion-tool",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/meta-tag-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/open-graph-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/open-graph-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/seotoolkit",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/twitter-card-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/visual-sitemap",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/website-ranking-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/sitemap-url-downloader",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-tools",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/midjourney-prompt-builder",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-persona-prompt-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-prompt-improver",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-token-counter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/prompt-template-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/negative-prompt-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/image-prompt-extender",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/llm-output-cleaner",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/text-chunk-splitter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/few-shot-formatter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/prompt-a-b-comparator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/xml-prompt-formatter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/others",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/new-tools",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/about",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/blog",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/contact",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/search",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/generators",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/developer-tools",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/company",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/privacy",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/terms",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/content",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/best-free-tools-for-students",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/tools-for-developers",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/seo-tools-free-online",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-tools-alternatives-free",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/best-free-alternative-to-chatgpt",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/top-10-free-online-tools-for-seo",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/top-10-json-tools-online",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/how-to-format-json-properly",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/best-free-converters-in-2026",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/blog",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/calculators",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/roman-numerals-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/number-to-words-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/date-difference-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/working-days-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/gpa-to-4-scale-converter",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/rd-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/gratuity-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/epf-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/invoice-generator-india",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/gst-calculator-india",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/emi-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/sip-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/fd-calculator-india",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/salary-calculator-india",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/cgpa-to-percentage-calculator-india",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/sgpa-to-cgpa-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/attendance-shortage-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/marks-needed-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/75-attendance-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/sgpa-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/cgpa-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/cgpa-to-percentage-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/required-marks-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/brick-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/paint-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/tile-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/compound-interest-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/mortgage-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/car-loan-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/roi-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/savings-goal-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/tip-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/bmi-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/fuel-cost-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/inflation-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/break-even-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/food-cost-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/freelance-rate-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/rent-affordability-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/home-loan-eligibility-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/property-roi-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/calorie-deficit-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/protein-intake-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/bmi-ideal-weight-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/water-intake-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/profit-margin-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/income-tax-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/freelance-hourly-rate-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/exam-tools",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/ssc-photo-signature-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/upsc-photo-resizer-350x350",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/neet-photo-signature-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/upsc-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ssc-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/signature-resizer-under-20kb",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/neet-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/jee-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/cuet-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/railway-exam-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ibps-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pan-card-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/passport-photo-maker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/photo-compressor-under-50kb",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/form-image-size-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/photo-name-date-editor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/jpg-to-pdf-exam-forms",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/pdf-compressor-under-200kb",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ssc-mts-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/rrb-group-d-photo-resizer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/health",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/bmr-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/tdee-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/macro-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ideal-body-weight-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/body-fat-calculator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/privacy-tools",
+    "category": "category",
+    "priority": "p1",
+    "type": "static"
+  },
+  {
+    "pathname": "/pii-scrubber",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/email-subject-line-tester",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-text-detector",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/email-validator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/spam-word-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/phishing-url-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/password-strength-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/security-headers-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ssl-certificate-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/domain-reputation-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/cookie-consent-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/gdpr-compliance-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/data-retention-policy-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/email-header-analyzer",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/ai-image-detector",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/data-breach-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/email-deliverability-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/privacy-policy-auditor",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/email-preview-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/spam-score-checker",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/consent-management-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/breach-notification-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/data-anonymization-report-generator",
+    "category": "tool",
+    "priority": "p1",
+    "type": "dynamic"
+  },
+  {
+    "pathname": "/embed-tool",
+    "category": "utility",
+    "priority": "p2",
+    "type": "embed"
+  }
+]

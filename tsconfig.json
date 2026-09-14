@@ -44,6 +44,7 @@
     ".open-next",
     "out",
     "packages",
-    "sopkit-backend"
+    "sopkit-backend",
+    "tests"
   ]
 }

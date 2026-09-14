@@ -160,7 +160,7 @@ export default function FormImageSizeChecker() {
             
             const reader = new FileReader();
             reader.onload = (event) => {
-                setPreviewUrl(event.target.result);
+                setPreviewUrl(event.target.result as string);
                 
                 const img = new Image();
                 img.onload = () => {
@@ -174,7 +174,7 @@ export default function FormImageSizeChecker() {
                     });
                     toast.success("Image loaded successfully!");
                 };
-                img.src = event.target.result;
+                img.src = event.target.result as string
             };
             reader.readAsDataURL(selectedFile);
         } else {

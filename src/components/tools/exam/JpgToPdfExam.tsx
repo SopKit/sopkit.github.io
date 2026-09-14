@@ -42,7 +42,7 @@ export default function JpgToPdfExam() {
 
     const onFileChange = useCallback((e) => {
         if (e.target.files) {
-            const newFiles = Array.from(e.target.files).map(file => ({
+            const newFiles = (Array.from(e.target.files) as File[]).map((file: File) => ({
                 id: Math.random().toString(36).substring(2, 11),
                 file,
                 preview: URL.createObjectURL(file)

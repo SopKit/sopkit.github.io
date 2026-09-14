@@ -48,11 +48,11 @@ export default function PhotoCompressor50kb() {
             const img = new Image();
             img.onload = () => {
                 setImage(img);
-                setPreviewUrl(event.target.result);
+                setPreviewUrl(event.target.result as string);
                 // Auto compress
                 setTimeout(() => compressPhoto(img), 100);
             };
-            img.src = event.target.result;
+            img.src = event.target.result as string;
         };
         reader.readAsDataURL(file);
     };
@@ -117,7 +117,7 @@ export default function PhotoCompressor50kb() {
                 }
                 
                 setCompressedUrl(dataUrl);
-                setCompressedSize(sizeKb.toFixed(1));
+                setCompressedSize(parseFloat(sizeKb.toFixed(1)));
                 setCompressedWidth(targetWidth);
                 setCompressedHeight(targetHeight);
                 toast.success("Photo compressed successfully!");

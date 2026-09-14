@@ -54,7 +54,7 @@ export default function TsvToJsonConverter() {
           const doc = new DOMParser().parseFromString(input, "application/xml");
           const err = doc.querySelector("parsererror");
           if (err) throw new Error("Invalid XML");
-          const nodeToObj = (el) => { const kids = Array.from(el.children); if (!kids.length) return el.textContent ?? ""; const o = {}; for (const c of kids) { const n = c.nodeName; const v = nodeToObj(c); o[n] = o[n] !== undefined ? (Array.isArray(o[n]) ? [...o[n], v] : [o[n], v]) : v; } return o; };
+          const nodeToObj = (el: any): any => { const kids = Array.from(el.children) as Element[]; if (!kids.length) return el.textContent ?? ""; const o: Record<string, any> = {}; for (const c of kids) { const n = c.nodeName; const v = nodeToObj(c); o[n] = o[n] !== undefined ? (Array.isArray(o[n]) ? [...o[n], v] : [o[n], v]) : v; } return o; };
           const root = doc.documentElement;
           out = JSON.stringify({ [root.nodeName]: nodeToObj(root) }, null, 2);
           break;

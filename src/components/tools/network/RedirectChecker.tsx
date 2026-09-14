@@ -57,7 +57,7 @@ export default function RedirectChecker() {
       });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || "failed");
-      const tid = "redirect-checker";
+      const tid: string = "redirect-checker";
       let text = "";
       if (tid === "page-size-checker") {
         const bytes = new Blob([d.text ?? ""]).size;

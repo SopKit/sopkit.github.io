@@ -1,16 +1,21 @@
 {
-	"name": "sopkit-backend",
-	"type": "module",
-	"scripts": {
-		"dev": "wrangler dev",
-		"deploy": "wrangler deploy --minify",
-		"cf-typegen": "wrangler types --env-interface CloudflareBindings"
-	},
-	"dependencies": {
-		"hono": "^4.12.30"
-	},
-	"devDependencies": {
-		"@types/node": "^26.1.1",
-		"wrangler": "^4.111.0"
-	}
+  "name": "sopkit-backend",
+  "version": "1.0.0",
+  "description": "High-throughput edge backend services and API layer for SopKit Platform",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "hono": "^4.6.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240903.0",
+    "typescript": "^5.6.2",
+    "wrangler": "^3.78.2"
+  }
 }

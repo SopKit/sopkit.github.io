@@ -57,7 +57,7 @@ export default function WhoisDomainLookup() {
       });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || "failed");
-      const tid = "whois-domain-lookup";
+      const tid: string = "whois-domain-lookup";
       let text = "";
       if (tid === "page-size-checker") {
         const bytes = new Blob([d.text ?? ""]).size;

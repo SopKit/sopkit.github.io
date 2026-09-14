@@ -275,7 +275,7 @@ export default async function ToolPage({ params }: any) {
 				}}
 			/>
 
-			<ToolLayout breadcrumbs={[]}
+			<ToolLayout
 				tool={tool}
 				breadcrumbs={breadcrumbs}
 				relatedTools={relatedTools}

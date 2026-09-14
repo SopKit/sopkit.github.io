@@ -34,7 +34,7 @@ export default function MathDateCalculators({ defaultTab = "date-diff" }) {
   const dateDiff = useMemo(() => {
     const s = new Date(startDate);
     const e = new Date(endDate);
-    const diff = Math.abs(e - s);
+    const diff = Math.abs(e.getTime() - s.getTime());
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const years = Math.floor(days / 365);
     const remDays = days % 365;

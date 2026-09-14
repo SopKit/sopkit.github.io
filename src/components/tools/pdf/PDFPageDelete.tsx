@@ -57,7 +57,7 @@ export default function PDFPageDelete() {
                 canvas.height = viewport.height;
                 canvas.width = viewport.width;
 
-                await page.render({ canvasContext: context, viewport }).promise;
+                await page.render({ canvasContext: context, viewport, canvas } as any).promise;
                 
                 newPages.push({
                     pageNumber: i,
@@ -133,7 +133,7 @@ export default function PDFPageDelete() {
             });
 
             const pdfBytes = await pdfDoc.save();
-            const blob = new Blob([pdfBytes], { type: "application/pdf" });
+            const blob = new Blob([pdfBytes as any], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
             const link = document.createElement("a");
             link.href = url;

@@ -129,6 +129,8 @@ export default function PdfCompressorTool() {
 					<PremiumDropZone
 						onDrop={(e) => { e.preventDefault(); handleFileUpload({ target: { files: e.dataTransfer.files } }); }}
 						onDragOver={(e) => e.preventDefault()}
+						onDragLeave={() => {}}
+						dragActive={false}
 						onClick={() => fileInputRef.current?.click()}
 						icon={FileIcon}
 						title="Drop your PDF here"

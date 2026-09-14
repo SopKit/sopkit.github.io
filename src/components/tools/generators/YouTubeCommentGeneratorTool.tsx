@@ -447,7 +447,8 @@ Make it feel genuine but entertaining!`;
 											</div>
 
 											<SocialShareButtons
-												text={shareText}
+												toolName="YouTube Comment Generator"
+												toolDescription={shareText}
 												toolUrl="https://sopkit.github.io/youtube-comment-generator"
 											/>
 										</>

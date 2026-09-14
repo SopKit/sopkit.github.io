@@ -57,7 +57,7 @@ export default function BulkKeywordRankChecker() {
       });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || "failed");
-      const tid = "bulk-keyword-rank-checker";
+      const tid: string = "bulk-keyword-rank-checker";
       let text = "";
       if (tid === "page-size-checker") {
         const bytes = new Blob([d.text ?? ""]).size;

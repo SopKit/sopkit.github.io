@@ -57,7 +57,7 @@ export default function WordpressThemeDetector() {
       });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || "failed");
-      const tid = "wordpress-theme-detector";
+      const tid: string = "wordpress-theme-detector";
       let text = "";
       if (tid === "page-size-checker") {
         const bytes = new Blob([d.text ?? ""]).size;

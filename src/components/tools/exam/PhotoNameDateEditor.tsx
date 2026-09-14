@@ -50,10 +50,10 @@ export default function PhotoNameDateEditor() {
             const img = new Image();
             img.onload = () => {
                 setImage(img);
-                setPreviewUrl(event.target.result);
+                setPreviewUrl(event.target.result as string);
                 setTimeout(() => processImage(img), 100);
             };
-            img.src = event.target.result;
+            img.src = event.target.result as string;
         };
         reader.readAsDataURL(file);
     };
@@ -120,7 +120,7 @@ export default function PhotoNameDateEditor() {
                 setOutputUrl(dataUrl);
                 
                 const sizeBytes = Math.round((dataUrl.split(",")[1].length * 3) / 4);
-                setOutputSizeKb((sizeBytes / 1024).toFixed(1));
+                setOutputSizeKb(parseFloat((sizeBytes / 1024).toFixed(1)));
                 toast.success("Name and Date added successfully!");
             } catch (err) {
                 console.error(err);

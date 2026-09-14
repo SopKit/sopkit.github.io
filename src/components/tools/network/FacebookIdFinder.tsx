@@ -57,7 +57,7 @@ export default function FacebookIdFinder() {
       });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || "failed");
-      const tid = "facebook-id-finder";
+      const tid: string = "facebook-id-finder";
       let text = "";
       if (tid === "page-size-checker") {
         const bytes = new Blob([d.text ?? ""]).size;

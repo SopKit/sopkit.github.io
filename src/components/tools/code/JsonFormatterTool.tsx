@@ -208,9 +208,9 @@ export default function JsonFormatterTool() {
 			const statistics = calculateStats(jsonInput, formatted, minified);
 			const analysis = analyzeJson(jsonInput);
 			setStats({ ...statistics, analysis });
-		} catch (_err) {
+		} catch (_err: any) {
 			setIsValid(false);
-			setError(`Invalid JSON: ${err.message}`);
+			setError(`Invalid JSON: ${_err?.message || "Syntax error"}`);
 			setFormattedJson("");
 			setMinifiedJson("");
 			setStats(null);
@@ -494,8 +494,7 @@ export default function JsonFormatterTool() {
 											placeholder="Search in JSON..."
 											value={searchTerm}
 											onChange={(e) => setSearchTerm(e.target.value)}
-											className="pl-9 w-40"
-											size="sm"
+											className="pl-9 w-40 h-8 text-sm"
 										/>
 									</div>
 								</div>

@@ -412,8 +412,8 @@ export default function InvoiceGenerator() {
                                 </thead>
                                 <tbody className="divide-y divide-slate-100">
                                     {items.map((item) => {
-                                        const qty = parseFloat(item.quantity) || 0;
-                                        const rate = parseFloat(item.rate) || 0;
+                                        const qty = parseFloat(String(item.quantity)) || 0;
+                                        const rate = parseFloat(String(item.rate)) || 0;
                                         const amt = qty * rate;
                                         return (
                                             <tr key={item.id} className="text-slate-700">

@@ -159,7 +159,7 @@ export default function ReviewSnippets({
 	variant = "grid", // "grid", "carousel", "list"
 	limit = 6,
 }) {
-	const reviews = SAMPLE_REVIEWS[toolId] || SAMPLE_REVIEWS.default || [];
+	const reviews = (SAMPLE_REVIEWS as any)[toolId] || (SAMPLE_REVIEWS as any).default || [];
 	if (!reviews || reviews.length === 0) return null;
 	const displayedReviews = reviews.slice(0, limit);
 

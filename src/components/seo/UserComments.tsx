@@ -20,15 +20,15 @@ import { Textarea } from "@/components/ui/textarea";
 // Comments data - currently empty. Add real comments from your database/API when available.
 const SAMPLE_COMMENTS = [];
 
-function CommentItem({ comment, onReply, onLike, depth = 0 }) {
+function CommentItem({ comment, onReply, onLike, depth = 0 }: any) {
 	const [liked, setLiked] = useState(false);
 	const [showReplyForm, setShowReplyForm] = useState(false);
 	const [replyText, setReplyText] = useState("");
 
-	const formatTimeAgo = (timestamp) => {
+	const formatTimeAgo = (timestamp: any) => {
 		const now = new Date();
 		const time = new Date(timestamp);
-		const diffInHours = Math.floor((now - time) / (1000 * 60 * 60));
+		const diffInHours = Math.floor((now.getTime() - time.getTime()) / (1000 * 60 * 60));
 
 		if (diffInHours < 1) return "Just now";
 		if (diffInHours < 24) return `${diffInHours}h ago`;
@@ -48,7 +48,7 @@ function CommentItem({ comment, onReply, onLike, depth = 0 }) {
 		}
 	};
 
-	const renderStars = (rating) => {
+	const renderStars = (rating: any) => {
 		return Array.from({ length: 5 }, (_, i) => (
 			<span
 				key={i}
@@ -177,7 +177,7 @@ export default function UserComments({
 	toolName,
 	showStats = true,
 	allowComments = true,
-}) {
+}: any) {
 	const [comments, setComments] = useState(SAMPLE_COMMENTS);
 	const [newComment, setNewComment] = useState("");
 	const [sortBy, setSortBy] = useState("newest"); // newest, oldest, helpful, popular
@@ -205,9 +205,9 @@ export default function UserComments({
 		}
 	};
 
-	const handleLike = (commentId, liked) => {
+	const handleLike = (commentId: any, liked: any) => {
 		setComments(
-			comments.map((comment) =>
+			comments.map((comment: any) =>
 				comment.id === commentId
 					? { ...comment, likes: comment.likes + (liked ? 1 : -1) }
 					: comment,
@@ -215,21 +215,21 @@ export default function UserComments({
 		);
 	};
 
-	const handleReply = (commentId, replyText) => {
+	const handleReply = (commentId: any, replyText: any) => {
 		// In a real app, this would create a new reply
 		console.log("Reply to", commentId, ":", replyText);
 	};
 
-	const sortedComments = [...comments].sort((a, b) => {
+	const sortedComments = [...comments].sort((a: any, b: any) => {
 		switch (sortBy) {
 			case "oldest":
-				return new Date(a.timestamp) - new Date(b.timestamp);
+				return new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime();
 			case "helpful":
 				return (b.helpful ? 1 : 0) - (a.helpful ? 1 : 0);
 			case "popular":
 				return b.likes - a.likes;
 			default: // newest
-				return new Date(b.timestamp) - new Date(a.timestamp);
+				return new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime();
 		}
 	});
 

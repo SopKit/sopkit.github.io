@@ -57,7 +57,7 @@ export default function SitemapGenerator() {
       });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || "failed");
-      const tid = "sitemap-generator";
+      const tid: string = "sitemap-generator";
       let text = "";
       if (tid === "page-size-checker") {
         const bytes = new Blob([d.text ?? ""]).size;

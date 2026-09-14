@@ -57,7 +57,7 @@ export default function DomainAgeChecker() {
       });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || "failed");
-      const tid = "domain-age-checker";
+      const tid: string = "domain-age-checker";
       let text = "";
       if (tid === "page-size-checker") {
         const bytes = new Blob([d.text ?? ""]).size;

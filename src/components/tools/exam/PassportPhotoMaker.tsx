@@ -58,13 +58,13 @@ export default function PassportPhotoMaker() {
             const img = new Image();
             img.onload = () => {
                 setImage(img);
-                setPreviewUrl(event.target.result);
+                setPreviewUrl(event.target.result as string);
                 setZoom(1);
                 setOffsetX(0);
                 setOffsetY(0);
                 setRotation(0);
             };
-            img.src = event.target.result;
+            img.src = event.target.result as string;
         };
         reader.readAsDataURL(file);
     };
@@ -215,7 +215,7 @@ export default function PassportPhotoMaker() {
             const dataUrl = canvas.toDataURL("image/jpeg", 0.92);
             setOutputUrl(dataUrl);
             const sizeBytes = Math.round((dataUrl.split(",")[1].length * 3) / 4);
-            setOutputSizeKb((sizeBytes / 1024).toFixed(1));
+            setOutputSizeKb(parseFloat((sizeBytes / 1024).toFixed(1)));
         } catch (err) {
             console.error("Canvas export failed: ", err);
         }

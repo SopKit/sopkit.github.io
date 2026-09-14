@@ -36,7 +36,7 @@ export default function WhatsAppLinkGeneratorTool() {
 
     const generateQR = async () => {
       try {
-        if (!window.QRCode) {
+        if (!(window as any).QRCode) {
           const script = document.createElement("script");
           script.src = "https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js";
           script.onload = () => drawQR(canvas);
@@ -52,8 +52,8 @@ export default function WhatsAppLinkGeneratorTool() {
     generateQR();
   }, [link]);
 
-  const drawQR = (canvas) => {
-    window.QRCode.toCanvas(canvas, link, {
+  const drawQR = (canvas: any) => {
+    (window as any).QRCode.toCanvas(canvas, link, {
       width: 200,
       margin: 2,
       color: {
@@ -77,7 +77,7 @@ export default function WhatsAppLinkGeneratorTool() {
   const downloadQR = () => {
     const canvas = document.getElementById("qr-canvas");
     if (!canvas) return;
-    const image = canvas.toDataURL("image/png");
+    const image = (canvas as HTMLCanvasElement).toDataURL("image/png");
     const a = document.createElement("a");
     a.href = image;
     a.download = "whatsapp-qr-code.png";

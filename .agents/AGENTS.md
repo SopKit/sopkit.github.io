@@ -63,9 +63,9 @@ When adding a new tool:
 
 ## ⚠️ Key Engineering Rules & Constraints
 
-1.  **No Build Commands**: Do NOT run production build commands (`bun run build`, `npm run build`) in the terminal. Verify all TypeScript compile checks by running `bun run typecheck` instead.
+1.  **No Build Commands**: Do NOT run production build commands (`bun run build`, `npm run build`) in the terminal. Verify all TypeScript compile checks by running `bun run typecheck` and architecture/security tests via `bun run test:arch`.
 2.  **Central Dispatcher Registry**: All interactive tools must be mapped inside **[IntentToolDispatcher.tsx](/sopkit.github.io/src/components/tools/shared/IntentToolDispatcher.tsx)** to keep client-side bundles lightweight and support the ad-free iframe embeds route (`/embed-tool/?id=...`).
 3.  **Deduplicated Registry**: Keep **[tools.json](/sopkit.github.io/src/constants/tools.json)** clean. Run `node scripts/deduplicate-tools.mjs` if you introduce or update tool metadata.
 4.  **Disabled Ads Configuration**: Keep `SHOW_SCRIPTLY_ADS = false` inside `src/constants/config.ts` globally disabled unless explicitly requested by the user.
-5.  **Always Push to Git**: Once typechecks pass and sitemap/LLM indices are regenerated (`node scripts/generate-llms.mjs`), commit and git push directly to the `main` branch.
+5.  **Always Push to Git**: Once typechecks pass (`bun run typecheck`), unit tests pass (`bun run test:arch`), and sitemap/LLM indices are regenerated (`node scripts/generate-llms.mjs`), commit and git push directly to the `main` branch.
 6.  **PDF Tools Privacy & Keyword Targets**: Target long-tail, privacy-centric keyword search queries (e.g. "privacy-friendly", "no upload", "100% client-side", "secure local", "fast", "free forever") for all PDF-related tools. Ensure that both page metadata and tool interfaces clearly convey local-only browser execution.

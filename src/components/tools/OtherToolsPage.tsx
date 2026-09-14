@@ -64,7 +64,7 @@ export default function OtherToolsPage({ categories, otherTools }) {
 
 	// Group filtered tools by category
 	const groupedFilteredTools = useMemo(() => {
-		const grouped = {};
+		const grouped: Record<string, { categoryName: string; tools: any[] }> = {};
 		filteredTools.forEach((tool) => {
 			if (!grouped[tool.categorySlug]) {
 				grouped[tool.categorySlug] = {

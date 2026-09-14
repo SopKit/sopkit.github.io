@@ -208,7 +208,7 @@ export default function BackgroundRemoverTool() {
 					);
 				}
 
-				const result = await removeBackground(file);
+				const result: any = await removeBackground(file);
 
 				setFiles((prev) =>
 					prev.map((f) =>

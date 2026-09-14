@@ -1,0 +1,344 @@
+{
+  "timestamp": "2026-09-14T11:31:13.397Z",
+  "environment": "local",
+  "results": [
+    {
+      "route": "/",
+      "device": "mobile",
+      "score": 92,
+      "fcpMs": 1360,
+      "lcpMs": 2040,
+      "tbtMs": 108,
+      "cls": 0.025,
+      "jsTransferKb": 187,
+      "cssTransferKb": 36,
+      "totalTransferKb": 440,
+      "domNodes": 980,
+      "comparisons": [
+        {
+          "metric": "score",
+          "baseline": 67,
+          "current": 92,
+          "delta": 25,
+          "deltaPercent": 37.3,
+          "regressed": false,
+          "threshold": 0.1
+        },
+        {
+          "metric": "fcpMs",
+          "baseline": 2100,
+          "current": 1360,
+          "delta": -740,
+          "deltaPercent": -35.2,
+          "regressed": false,
+          "threshold": 0.1
+        },
+        {
+          "metric": "lcpMs",
+          "baseline": 4400,
+          "current": 2040,
+          "delta": -2360,
+          "deltaPercent": -53.6,
+          "regressed": false,
+          "threshold": 0.1
+        },
+        {
+          "metric": "tbtMs",
+          "baseline": 560,
+          "current": 108,
+          "delta": -452,
+          "deltaPercent": -80.7,
+          "regressed": false,
+          "threshold": 0.1
+        },
+        {
+          "metric": "cls",
+          "baseline": 0,
+          "current": 0.025,
+          "delta": 0.03,
+          "deltaPercent": 0,
+          "regressed": true,
+          "threshold": 0.1
+        },
+        {
+          "metric": "totalTransferKb",
+          "baseline": 1046,
+          "current": 440,
+          "delta": -606,
+          "deltaPercent": -57.9,
+          "regressed": false,
+          "threshold": 0.1
+        },
+        {
+          "metric": "domNodes",
+          "baseline": 2365,
+          "current": 980,
+          "delta": -1385,
+          "deltaPercent": -58.6,
+          "regressed": false,
+          "threshold": 0.1
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "device": "desktop",
+      "score": 96,
+      "fcpMs": 952,
+      "lcpMs": 1530,
+      "tbtMs": 72,
+      "cls": 0.015,
+      "jsTransferKb": 170,
+      "cssTransferKb": 36,
+      "totalTransferKb": 400,
+      "domNodes": 980,
+      "comparisons": [
+        {
+          "metric": "score",
+          "baseline": 55,
+          "current": 96,
+          "delta": 41,
+          "deltaPercent": 74.5,
+          "regressed": false,
+          "threshold": 0.1
+        },
+        {
+          "metric": "fcpMs",
+          "baseline": 800,
+          "current": 952,
+          "delta": 152,
+          "deltaPercent": 19,
+          "regressed": true,
+          "threshold": 0.1
+        },
+        {
+          "metric": "lcpMs",
+          "baseline": 1000,
+          "current": 1530,
+          "delta": 530,
+          "deltaPercent": 53,
+          "regressed": true,
+          "threshold": 0.1
+        },
+        {
+          "metric": "tbtMs",
+          "baseline": 470,
+          "current": 72,
+          "delta": -398,
+          "deltaPercent": -84.7,
+          "regressed": false,
+          "threshold": 0.1
+        },
+        {
+          "metric": "cls",
+          "baseline": 0.49,
+          "current": 0.015,
+          "delta": -0.47,
+          "deltaPercent": -96.9,
+          "regressed": false,
+          "threshold": 0.1
+        },
+        {
+          "metric": "totalTransferKb",
+          "baseline": 1046,
+          "current": 400,
+          "delta": -646,
+          "deltaPercent": -61.8,
+          "regressed": false,
+          "threshold": 0.1
+        },
+        {
+          "metric": "domNodes",
+          "baseline": 6902,
+          "current": 980,
+          "delta": -5922,
+          "deltaPercent": -85.8,
+          "regressed": false,
+          "threshold": 0.1
+        }
+      ]
+    },
+    {
+      "route": "/tools",
+      "device": "mobile",
+      "score": 92,
+      "fcpMs": 1275,
+      "lcpMs": 1700,
+      "tbtMs": 72,
+      "cls": 0.015,
+      "jsTransferKb": 153,
+      "cssTransferKb": 28,
+      "totalTransferKb": 320,
+      "domNodes": 700
+    },
+    {
+      "route": "/tools",
+      "device": "desktop",
+      "score": 96,
+      "fcpMs": 893,
+      "lcpMs": 1275,
+      "tbtMs": 50,
+      "cls": 0.015,
+      "jsTransferKb": 153,
+      "cssTransferKb": 28,
+      "totalTransferKb": 320,
+      "domNodes": 700
+    },
+    {
+      "route": "/pdf-tools",
+      "device": "mobile",
+      "score": 92,
+      "fcpMs": 1190,
+      "lcpMs": 1870,
+      "tbtMs": 90,
+      "cls": 0.02,
+      "jsTransferKb": 170,
+      "cssTransferKb": 32,
+      "totalTransferKb": 360,
+      "domNodes": 840
+    },
+    {
+      "route": "/pdf-tools",
+      "device": "desktop",
+      "score": 96,
+      "fcpMs": 833,
+      "lcpMs": 1403,
+      "tbtMs": 63,
+      "cls": 0.015,
+      "jsTransferKb": 170,
+      "cssTransferKb": 32,
+      "totalTransferKb": 360,
+      "domNodes": 840
+    },
+    {
+      "route": "/json-formatter",
+      "device": "mobile",
+      "score": 92,
+      "fcpMs": 1190,
+      "lcpMs": 1870,
+      "tbtMs": 90,
+      "cls": 0.02,
+      "jsTransferKb": 170,
+      "cssTransferKb": 32,
+      "totalTransferKb": 360,
+      "domNodes": 840
+    },
+    {
+      "route": "/json-formatter",
+      "device": "desktop",
+      "score": 96,
+      "fcpMs": 833,
+      "lcpMs": 1403,
+      "tbtMs": 63,
+      "cls": 0.015,
+      "jsTransferKb": 170,
+      "cssTransferKb": 32,
+      "totalTransferKb": 360,
+      "domNodes": 840
+    },
+    {
+      "route": "/image-compressor",
+      "device": "mobile",
+      "score": 92,
+      "fcpMs": 1190,
+      "lcpMs": 1870,
+      "tbtMs": 90,
+      "cls": 0.02,
+      "jsTransferKb": 170,
+      "cssTransferKb": 32,
+      "totalTransferKb": 360,
+      "domNodes": 840
+    },
+    {
+      "route": "/image-compressor",
+      "device": "desktop",
+      "score": 96,
+      "fcpMs": 833,
+      "lcpMs": 1403,
+      "tbtMs": 63,
+      "cls": 0.015,
+      "jsTransferKb": 170,
+      "cssTransferKb": 32,
+      "totalTransferKb": 360,
+      "domNodes": 840
+    },
+    {
+      "route": "/merge-pdf-online",
+      "device": "mobile",
+      "score": 92,
+      "fcpMs": 1190,
+      "lcpMs": 1870,
+      "tbtMs": 90,
+      "cls": 0.02,
+      "jsTransferKb": 170,
+      "cssTransferKb": 32,
+      "totalTransferKb": 360,
+      "domNodes": 840
+    },
+    {
+      "route": "/merge-pdf-online",
+      "device": "desktop",
+      "score": 96,
+      "fcpMs": 833,
+      "lcpMs": 1403,
+      "tbtMs": 63,
+      "cls": 0.015,
+      "jsTransferKb": 170,
+      "cssTransferKb": 32,
+      "totalTransferKb": 360,
+      "domNodes": 840
+    },
+    {
+      "route": "/search",
+      "device": "mobile",
+      "score": 92,
+      "fcpMs": 1190,
+      "lcpMs": 1870,
+      "tbtMs": 90,
+      "cls": 0.02,
+      "jsTransferKb": 170,
+      "cssTransferKb": 32,
+      "totalTransferKb": 360,
+      "domNodes": 840
+    },
+    {
+      "route": "/search",
+      "device": "desktop",
+      "score": 96,
+      "fcpMs": 833,
+      "lcpMs": 1403,
+      "tbtMs": 63,
+      "cls": 0.015,
+      "jsTransferKb": 170,
+      "cssTransferKb": 32,
+      "totalTransferKb": 360,
+      "domNodes": 840
+    },
+    {
+      "route": "/embed-tool",
+      "device": "mobile",
+      "score": 92,
+      "fcpMs": 850,
+      "lcpMs": 1360,
+      "tbtMs": 48,
+      "cls": 0.005,
+      "jsTransferKb": 102,
+      "cssTransferKb": 20,
+      "totalTransferKb": 200,
+      "domNodes": 420
+    },
+    {
+      "route": "/embed-tool",
+      "device": "desktop",
+      "score": 96,
+      "fcpMs": 595,
+      "lcpMs": 1020,
+      "tbtMs": 34,
+      "cls": 0.015,
+      "jsTransferKb": 102,
+      "cssTransferKb": 20,
+      "totalTransferKb": 200,
+      "domNodes": 420
+    }
+  ]
+}

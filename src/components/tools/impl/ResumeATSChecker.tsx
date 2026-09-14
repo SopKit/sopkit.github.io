@@ -44,8 +44,8 @@ export default function ResumeATSChecker() {
     }
 
     const reader = new FileReader();
-    reader.onload = (event) => {
-      setResumeText(event.target.result);
+    reader.onload = (event: any) => {
+      setResumeText(event.target?.result as string);
       toast.success("Resume content loaded!");
     };
     reader.readAsText(file);

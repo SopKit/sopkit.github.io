@@ -47,10 +47,10 @@ export default function PanCardResizer() {
             const img = new Image();
             img.onload = () => {
                 setImage(img);
-                setPreviewUrl(event.target.result);
+                setPreviewUrl(event.target.result as string);
                 setTimeout(() => processImage(img), 100);
             };
-            img.src = event.target.result;
+            img.src = event.target.result as string;
         };
         reader.readAsDataURL(file);
     };
@@ -122,7 +122,7 @@ export default function PanCardResizer() {
                 }
                 
                 setResizedUrl(dataUrl);
-                setResizedSize(sizeKb.toFixed(1));
+                setResizedSize(parseFloat(sizeKb.toFixed(1)));
                 toast.success("Processed successfully!");
             } catch (err) {
                 console.error(err);

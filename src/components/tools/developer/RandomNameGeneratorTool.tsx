@@ -1,3 +1,4 @@
+import { Textarea } from "@/components/ui/textarea";
 "use client";
 
 import { useState, useEffect, useCallback } from "react";

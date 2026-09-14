@@ -66,7 +66,7 @@ export default function EmbedVideoPlayer() {
 		);
 	}
 
-	const containerStyle = {
+	const containerStyle: React.CSSProperties = {
 		width: "100%",
 		height: "100vh",
 		backgroundColor: "#000",
@@ -74,7 +74,7 @@ export default function EmbedVideoPlayer() {
 		flexDirection: "column",
 	};
 
-	const videoStyle = {
+	const videoStyle: React.CSSProperties = {
 		width: "100%",
 		height: "100%",
 		backgroundColor: "#000",

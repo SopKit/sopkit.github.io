@@ -90,7 +90,7 @@ export async function POST(request: Request) {
 
 		return NextResponse.json({ success: true, data: videoData });
 	} catch (_error) {
-		console.error("Error in video downloader API:", error);
+		console.error("Error in video downloader API:", _error);
 		return NextResponse.json(
 			{ error: "Internal server error" },
 			{ status: 500 },

@@ -417,7 +417,8 @@ Format as a clear persona prompt that someone can copy-paste into ChatGPT. Make 
 											</div>
 
 											<SocialShareButtons
-												text={shareText}
+												toolName="ChatGPT Persona Generator"
+												toolDescription={shareText}
 												toolUrl="https://sopkit.github.io/chatgpt-persona-generator"
 											/>
 										</>

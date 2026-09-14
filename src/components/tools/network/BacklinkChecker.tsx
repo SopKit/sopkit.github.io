@@ -57,7 +57,7 @@ export default function BacklinkChecker() {
       });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || "failed");
-      const tid = "backlink-checker";
+      const tid: string = "backlink-checker";
       let text = "";
       if (tid === "page-size-checker") {
         const bytes = new Blob([d.text ?? ""]).size;

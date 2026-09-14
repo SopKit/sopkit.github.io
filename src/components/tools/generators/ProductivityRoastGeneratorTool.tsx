@@ -515,10 +515,10 @@ Style: ${roastIntensity === "motivational" ? "Tough love coach" : roastIntensity
 											>
 												<p className="mb-2">{item.text}</p>
 												<div className="flex gap-1">
-													<Badge variant="outline" size="sm">
+													<Badge variant="outline" className="text-xs">
 														{workStyles.find((s) => s.id === item.style)?.name}
 													</Badge>
-													<Badge variant="outline" size="sm">
+													<Badge variant="outline" className="text-xs">
 														{
 															roastIntensities.find(
 																(i) => i.id === item.intensity,

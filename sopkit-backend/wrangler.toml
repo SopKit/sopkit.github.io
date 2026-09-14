@@ -1,0 +1,9 @@
+name = "sopkit-backend"
+main = "src/index.ts"
+compatibility_date = "2024-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
+MAX_PAYLOAD_SIZE_MB = 25
+ALLOWED_ORIGIN = "https://sopkit.github.io"

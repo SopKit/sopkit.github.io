@@ -80,8 +80,8 @@ export default function PDFEditorTool() {
 		}
 	};
 
-	const parsePageNumbers = (input, maxPages) => {
-		const pages = new Set();
+	const parsePageNumbers = (input: string, maxPages: number): number[] => {
+		const pages = new Set<number>();
 		const parts = input.split(",");
 
 		parts.forEach((part) => {
@@ -196,7 +196,7 @@ export default function PDFEditorTool() {
 	};
 
 	const downloadPDF = (pdfBytes, filename) => {
-		const blob = new Blob([pdfBytes], { type: "application/pdf" });
+		const blob = new Blob([pdfBytes as any], { type: "application/pdf" });
 		const url = URL.createObjectURL(blob);
 		const a = document.createElement("a");
 		a.href = url;

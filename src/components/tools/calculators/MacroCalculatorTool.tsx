@@ -113,7 +113,7 @@ export default function MacroCalculatorTool() {
 
 							<div className="space-y-2">
 								<label className="text-sm font-bold">Diet Strategy / Splits</label>
-								<Select value={dietType} onValueChange={setDietType}>
+								<Select value={dietType} onValueChange={(v) => setDietType(v as DietType)}>
 									<SelectTrigger className="h-12 rounded-xl bg-muted/20 font-bold border-border/40">
 										<SelectValue />
 									</SelectTrigger>

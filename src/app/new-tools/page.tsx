@@ -212,9 +212,9 @@ export default async function NewToolsPage() {
 				)}
 
 				{/* How-to steps from manual content */}
-				{manualContent?.howTo && (
+				{manualContent?.howToUse && (
 					<ToolSteps
-						steps={manualContent.howTo.steps}
+						steps={manualContent.howToUse.steps}
 						toolName={tool.name}
 					/>
 				)}

@@ -140,7 +140,7 @@ export default function TextToSpeechTool() {
 		try {
 			// Create audio context for recording
 			const audioContext = new (
-				window.AudioContext || window.webkitAudioContext
+				window.AudioContext || (window as any).webkitAudioContext
 			)();
 			const _destination = audioContext.createMediaStreamDestination();
 
@@ -158,8 +158,8 @@ export default function TextToSpeechTool() {
 		}
 	};
 
-	const getVoicesByLanguage = () => {
-		const grouped = voices.reduce((acc, voice) => {
+	const getVoicesByLanguage = (): Record<string, SpeechSynthesisVoice[]> => {
+		const grouped = voices.reduce<Record<string, SpeechSynthesisVoice[]>>((acc, voice) => {
 			const lang = voice.lang.split("-")[0];
 			if (!acc[lang]) acc[lang] = [];
 			acc[lang].push(voice);

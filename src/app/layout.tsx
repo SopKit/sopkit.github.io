@@ -1,3 +1,4 @@
+import type { Metadata, Viewport } from "next";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/shared/theme-provider";
 import { getAllTools, Tool } from "@/lib/tools";
