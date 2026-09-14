@@ -1,22 +1,15 @@
 import { PremiumHero } from "@/components/landing/PremiumHero";
 import { HomeSEOContent } from "@/components/landing/HomeSEOContent";
 import { HomeFAQ } from "@/components/landing/HomeFAQ";
+import { BentoCategoryGrid } from "@/components/landing/BentoCategoryGrid";
+import { EmbedShowcase } from "@/components/landing/EmbedShowcase";
 import { getAllTools } from "@/lib/tools";
 import Link from "next/link";
 import StructuredData from "@/components/shared/StructuredData";
 import { SITE_CONFIG } from "@/constants/config";
 import AdPlacement from "@/components/ads/AdPlacement";
-import { Badge } from "@/components/ui/badge";
 import { ToolDirectory } from "@/components/landing/ToolDirectory";
-import {
-	Image as ImageIcon,
-	FileText,
-	Code,
-	Calculator,
-	Search,
-	Type,
-	ArrowRight
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import { generateMetadata as baseGenerateMetadata } from "@/lib/seo";
 
@@ -31,16 +24,6 @@ export async function generateMetadata(): Promise<any> {
 export default async function LandingPage() {
 	const heroSubtitle = `While other tool sites upload and store your files on cloud servers, SopKit runs 100% locally in your browser sandbox using WebAssembly. Zero data collection, instant speed, no signup required.`;
 	const allTools = getAllTools();
-
-	// 6 Categories Grid data
-	const categoriesShow = [
-		{ name: "Image Tools", href: "/image-tools", icon: <ImageIcon className="h-6 w-6" />, description: "Compress, resize, convert, edit and crop images locally in your browser." },
-		{ name: "PDF Tools", href: "/pdf-tools", icon: <FileText className="h-6 w-6" />, description: "Merge, split, compress, edit and password protect PDF documents." },
-		{ name: "Developer Tools", href: "/developer-tools", icon: <Code className="h-6 w-6" />, description: "JSON formatting, Base64 encoding, UUID generation, diff checkers, and minifiers." },
-		{ name: "Calculators", href: "/calculators", icon: <Calculator className="h-6 w-6" />, description: "Financial retainers, CGPA converters, attendance tracking, and loan calculations." },
-		{ name: "SEO Tools", href: "/seo-tools", icon: <Search className="h-6 w-6" />, description: "Audit websites, inspect meta tags, generate robots.txt, and check cache." },
-		{ name: "Text Tools", href: "/text-tools", icon: <Type className="h-6 w-6" />, description: "Word counters, text formatting, diff checkers, and Unicode converters." }
-	];
 
 	return (
 		<main className="bg-background min-h-screen relative overflow-hidden">
@@ -57,61 +40,14 @@ export default async function LandingPage() {
 					<AdPlacement placement="after-hero" pageType="home" />
 				</div>
 
-				{/* 6 Categories Grid */}
-				<section className="py-10 [content-visibility:auto] [contain-intrinsic-size:1px_500px]">
-					<h2 className="text-2xl md:text-3xl font-black tracking-tight text-foreground mb-8 text-center uppercase">
-						Browse by Category
-					</h2>
-					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-						{categoriesShow.map((cat) => (
-							<Link
-								key={cat.name}
-								href={cat.href}
-								className="group p-6 bg-card border border-border/50 rounded-2xl hover:shadow-[0_12px_36px_rgb(37,99,235,0.08)] dark:hover:shadow-[0_12px_36px_rgb(59,130,246,0.12)] hover:border-blue-500/40 transition-all duration-300 no-underline"
-							>
-								<div className="flex items-center gap-3 mb-3">
-									<div className="p-2.5 bg-blue-500/10 dark:bg-blue-400/10 text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white dark:group-hover:bg-blue-500 rounded-xl transition-all duration-300">
-										{cat.icon}
-									</div>
-									<h3 className="text-lg font-bold group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-										{cat.name}
-									</h3>
-								</div>
-								<p className="text-xs text-muted-foreground leading-relaxed">
-									{cat.description}
-								</p>
-							</Link>
-						))}
-					</div>
-				</section>
+				{/* Bento Category Grid */}
+				<BentoCategoryGrid />
 
 				{/* 605+ Live Tool Directory Search & Index Grid */}
 				<ToolDirectory tools={allTools} />
 
 				{/* Ad-Free Embed Feature Highlight */}
-				<section className="py-12 border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_300px]">
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-card border border-border/50 p-6 md:p-10 rounded-2xl shadow-sm hover:border-blue-500/30 transition-all duration-300">
-						<div className="space-y-4">
-							<Badge className="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-semibold px-3 py-1 rounded-full w-fit">
-								Free Webmaster Feature
-							</Badge>
-							<h2 className="text-2xl font-black tracking-tight text-foreground uppercase">
-								Embed Tools on Your Website
-							</h2>
-							<p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-								Integrate any of SopKit&apos;s {SITE_CONFIG.toolCountString} utilities directly onto your own blog, documentation, or client portal. Our embedded sandboxes run entirely in your visitor&apos;s browser, consuming zero server bandwidth.
-							</p>
-						</div>
-						<div className="p-5 bg-muted/40 border border-border/40 rounded-xl space-y-3 font-mono text-xs text-muted-foreground">
-							<span className="font-bold text-foreground block">HTML Embed Code:</span>
-							<textarea
-								readOnly
-								value={`<iframe src="https://sopkit.github.io/embed-tool/?id=pdf-editor" width="100%" height="550" style="border:0; border-radius:12px; overflow:hidden;" title="Free Local PDF Editor by SopKit"></iframe>`}
-								className="w-full h-20 p-2.5 bg-card border border-border/40 rounded-lg resize-none focus:outline-none text-[10px]"
-							/>
-						</div>
-					</div>
-				</section>
+				<EmbedShowcase />
 
 				{/* High-Value In-Content Ad Section */}
 				<div className="py-8 max-w-4xl mx-auto [content-visibility:auto] [contain-intrinsic-size:1px_300px]">
@@ -119,19 +55,37 @@ export default async function LandingPage() {
 				</div>
 
 				{/* Final CTA - View All Tools */}
-				<section className="py-12 text-center border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_300px]">
-					<div className="max-w-3xl mx-auto px-6 py-12 rounded-2xl bg-zinc-900 dark:bg-zinc-100 border border-zinc-800 dark:border-zinc-200 text-zinc-100 dark:text-zinc-900 relative overflow-hidden group shadow-sm">
-						<h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-zinc-50 dark:text-zinc-950">Looking for a specific tool?</h2>
-						<p className="text-sm text-zinc-300 dark:text-zinc-600 mb-8 max-w-lg mx-auto leading-relaxed">
-							We maintain {SITE_CONFIG.toolCountString} free browser-based tools for document editing, image compression, formatting, calculations, and content generation.
+				<section className="py-14 text-center border-t border-border/40 [content-visibility:auto] [contain-intrinsic-size:1px_300px]">
+					<div className="max-w-4xl mx-auto px-6 sm:px-10 py-12 sm:py-16 rounded-3xl bg-gradient-to-b from-card/90 via-card/70 to-card/40 border border-border/80 dark:border-border/40 text-foreground relative overflow-hidden group shadow-xl backdrop-blur-xl">
+						{/* Ambient Glow */}
+						<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-tr from-blue-600/15 via-sky-400/10 to-transparent blur-3xl rounded-full pointer-events-none -z-10" />
+
+						<div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-6 select-none">
+							<span>Instant Client-Side Execution</span>
+						</div>
+
+						<h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 text-foreground uppercase">
+							Looking for a specific utility?
+						</h2>
+						<p className="text-sm sm:text-base text-muted-foreground mb-8 max-w-xl mx-auto leading-relaxed">
+							We maintain {SITE_CONFIG.toolCountString} free browser-based tools for image editing, PDF compression, code formatting, calculators, and content utilities.
 						</p>
-						<Link 
-							href="/tools" 
-							className="inline-flex h-12 items-center justify-center rounded-xl bg-blue-600 dark:bg-blue-500 text-white hover:bg-blue-700 dark:hover:bg-blue-600 px-8 text-sm font-bold transition-all hover:scale-[1.01] active:scale-[0.99] gap-1.5 shadow-md shadow-blue-500/25"
-						>
-							View All {SITE_CONFIG.toolCountString} Tools
-							<ArrowRight className="h-4 w-4" />
-						</Link>
+
+						<div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+							<Link 
+								href="/tools" 
+								className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 px-8 text-sm font-bold transition-all hover:scale-[1.02] active:scale-[0.98] gap-2 shadow-lg shadow-primary/25"
+							>
+								View All {SITE_CONFIG.toolCountString} Tools
+								<ArrowRight className="h-4 w-4" />
+							</Link>
+							<Link
+								href="/image-tools"
+								className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-xl bg-muted/50 hover:bg-muted text-foreground border border-border/60 px-6 text-sm font-semibold transition-all hover:border-border"
+							>
+								Explore Image Suite
+							</Link>
+						</div>
 					</div>
 				</section>
 

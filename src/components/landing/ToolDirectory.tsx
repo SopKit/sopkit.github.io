@@ -168,17 +168,17 @@ export function ToolDirectory({ tools }: ToolDirectoryProps) {
 				key={tool.id}
 				href={tool.route}
 				style={{ display: isVisible ? "flex" : "none" }}
-				className="group flex-col justify-between p-5 bg-card/20 hover:bg-card/50 border border-border/40 hover:border-primary/30 rounded-2xl hover:shadow-[0_16px_36px_rgba(0,0,0,0.06)] dark:hover:shadow-[0_16px_36px_rgba(255,255,255,0.02)] transition-all duration-300 no-underline relative overflow-hidden"
+				className="group flex-col justify-between p-5 bg-card/60 hover:bg-card/95 dark:bg-card/40 dark:hover:bg-card/75 border border-border/70 dark:border-border/40 hover:border-primary/50 dark:hover:border-primary/40 rounded-2xl hover:shadow-[0_16px_36px_rgba(37,99,235,0.12)] transition-all duration-300 no-underline relative overflow-hidden backdrop-blur-sm"
 			>
-				<div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+				<div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-sky-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 				
-				<div className="relative z-10 space-y-2">
+				<div className="relative z-10 space-y-2.5">
 					<div className="flex items-start justify-between gap-2">
 						<h3 className="text-sm font-bold text-foreground tracking-tight group-hover:text-primary transition-colors line-clamp-1">
 							{tool.name}
 						</h3>
 						{tool.category && (
-							<span className="text-[9px] font-bold uppercase tracking-widest text-primary/70 bg-primary/5 px-2 py-0.5 rounded-md">
+							<span className="text-[9px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded-full shrink-0">
 								{tool.category.replace("-tools", "")}
 							</span>
 						)}
@@ -188,7 +188,7 @@ export function ToolDirectory({ tools }: ToolDirectoryProps) {
 					</p>
 				</div>
 
-				<div className="mt-4 text-primary text-[11px] font-bold flex items-center gap-0.5 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all relative z-10">
+				<div className="mt-4 text-primary text-[11px] font-bold flex items-center gap-1 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all relative z-10">
 					<span>Open sandbox</span>
 					<ChevronRight className="h-3 w-3" />
 				</div>
@@ -220,7 +220,7 @@ export function ToolDirectory({ tools }: ToolDirectoryProps) {
 					onBlur={handleBlur}
 					onFocus={handleFocus}
 					placeholder="Filter tools by name, description, or keyword..."
-					className="w-full h-12 pl-12 pr-6 rounded-xl bg-card border border-border/40 focus:outline-none focus:border-primary/60 focus:ring-4 focus:ring-primary/10 transition-all text-sm placeholder:text-muted-foreground/50"
+					className="w-full h-13 pl-12 pr-6 rounded-2xl bg-card/80 border border-border/80 dark:border-border/60 focus:outline-none focus:border-primary/60 focus:ring-4 focus:ring-primary/15 transition-all text-sm sm:text-base placeholder:text-muted-foreground/50 backdrop-blur-xl shadow-sm"
 					autoComplete="off"
 					role="combobox"
 					aria-expanded={showSuggestions}
@@ -229,7 +229,7 @@ export function ToolDirectory({ tools }: ToolDirectoryProps) {
 				/>
 
 				{showSuggestions && (
-					<div id="tool-suggestions" className="absolute left-0 right-0 top-full mt-2 bg-card border border-border/60 shadow-2xl z-50 max-h-[320px] overflow-y-auto rounded-xl">
+					<div id="tool-suggestions" className="absolute left-0 right-0 top-full mt-2 bg-card border border-border/80 shadow-2xl z-50 max-h-[320px] overflow-y-auto rounded-2xl backdrop-blur-2xl p-1">
 						{!searchQuery.trim() && (
 							<div className="px-4 py-2 text-[10px] font-bold text-muted-foreground/70 uppercase tracking-wider border-b border-border/10">
 								Popular Searches
@@ -240,16 +240,16 @@ export function ToolDirectory({ tools }: ToolDirectoryProps) {
 								key={tool.id}
 								onMouseDown={(e) => e.preventDefault()}
 								onClick={() => handleSuggestionClick(tool)}
-								className="flex items-center justify-between px-4 py-3 hover:bg-muted/60 transition-colors border-b border-border/10 last:border-b-0 cursor-pointer"
+								className="flex items-center justify-between px-4 py-3 hover:bg-muted/60 transition-colors rounded-xl cursor-pointer"
 							>
 								<div className="flex items-center gap-3 min-w-0">
 									<Search className="h-3.5 w-3.5 text-muted-foreground shrink-0" />
 									<div className="min-w-0">
-										<p className="text-sm font-bold truncate">{tool.name}</p>
+										<p className="text-sm font-bold truncate text-foreground">{tool.name}</p>
 										<p className="text-[11px] text-muted-foreground truncate">{tool.description}</p>
 									</div>
 								</div>
-								<span className="text-[9px] font-bold uppercase tracking-wide text-muted-foreground/70 shrink-0">
+								<span className="text-[9px] font-bold uppercase tracking-wide text-primary bg-primary/10 px-2 py-0.5 rounded-full shrink-0">
 									{tool.category.replace("-tools", "")}
 								</span>
 							</div>
@@ -264,15 +264,15 @@ export function ToolDirectory({ tools }: ToolDirectoryProps) {
 			</div>
 
 				{/* Filter Category pills */}
-				<div className="flex flex-wrap items-center justify-center gap-1.5 pb-2 border-b border-border/10">
+				<div className="flex flex-wrap items-center justify-center gap-1.5 pb-2">
 					{CATEGORIES.map((cat) => (
 						<button
 							key={cat.slug}
 							onClick={() => handleCategoryChange(cat.slug)}
-							className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
+							className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all ${
 								selectedCategory === cat.slug
-									? "bg-primary text-primary-foreground shadow-md shadow-primary/20 scale-[1.02]"
-									: "bg-muted/30 hover:bg-muted/65 text-muted-foreground hover:text-foreground"
+									? "bg-primary text-primary-foreground shadow-md shadow-primary/25 scale-[1.02]"
+									: "bg-muted/40 hover:bg-muted/80 text-muted-foreground hover:text-foreground border border-border/40 hover:border-border"
 							}`}
 						>
 							{cat.name}

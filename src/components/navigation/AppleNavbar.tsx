@@ -196,11 +196,11 @@ export function AppleNavbar() {
 				{/* Center: Search Button (Cmd+K Indicator) */}
 				<button 
 					onClick={openSearch} 
-					className="relative w-full max-w-xs hidden md:flex items-center text-left text-xs text-muted-foreground/70 h-8 px-3 rounded-lg bg-muted/40 border border-border/30 hover:border-border/60 hover:bg-muted/60 transition-all select-none"
+					className="relative w-full max-w-xs hidden md:flex items-center text-left text-xs text-muted-foreground/70 h-8.5 px-3.5 rounded-xl bg-card/60 border border-border/60 hover:border-primary/40 hover:bg-card/90 transition-all select-none shadow-sm backdrop-blur-sm"
 				>
-					<Search className="h-3.5 w-3.5 mr-2 text-muted-foreground/50" />
-					<span className="flex-1">Search 500+ tools...</span>
-					<kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-0.5 rounded border border-border/60 bg-muted px-1.5 font-mono text-[9px] font-bold text-muted-foreground/90 shadow-sm">
+					<Search className="h-3.5 w-3.5 mr-2 text-muted-foreground/60" />
+					<span className="flex-1 text-muted-foreground/70">Search 600+ tools...</span>
+					<kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-0.5 rounded-md border border-border/60 bg-muted/60 px-1.5 font-mono text-[9px] font-bold text-muted-foreground/90 shadow-sm">
 						<span className="text-xs">⌘</span>K
 					</kbd>
 				</button>

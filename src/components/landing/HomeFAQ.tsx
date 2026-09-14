@@ -31,20 +31,28 @@ export function HomeFAQ() {
 	];
 
 	return (
-		<section className="py-24 border-t border-border/40">
+		<section className="py-20 border-t border-border/40">
 			<div className="max-w-3xl mx-auto px-4">
-				<div className="text-center mb-16">
-					<h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Frequently Asked Questions</h2>
-					<p className="text-lg text-muted-foreground">Everything you need to know about our toolkit and privacy.</p>
+				<div className="text-center mb-12 space-y-3">
+					<h2 className="text-3xl md:text-5xl font-black tracking-tight uppercase text-foreground">
+						Frequently Asked Questions
+					</h2>
+					<p className="text-sm md:text-base text-muted-foreground">
+						Everything you need to know about our browser toolkit, local execution, and privacy guarantee.
+					</p>
 				</div>
 				
-				<Accordion type="single" collapsible className="w-full space-y-4">
+				<Accordion type="single" collapsible className="w-full space-y-3">
 					{faqs.map((faq, i) => (
-						<AccordionItem key={i} value={`item-${i}`} className="border border-border/60 bg-card/50 px-6 rounded-none">
-							<AccordionTrigger className="text-lg font-semibold py-6 hover:no-underline rounded-none">
-								{faq.question}
+						<AccordionItem 
+							key={i} 
+							value={`item-${i}`} 
+							className="border border-border/70 dark:border-border/40 bg-card/60 dark:bg-card/40 hover:bg-card/90 dark:hover:bg-card/60 px-6 rounded-2xl backdrop-blur-sm transition-all duration-200 hover:border-primary/40 shadow-sm"
+						>
+							<AccordionTrigger className="text-base sm:text-lg font-bold py-5 hover:no-underline text-foreground group text-left">
+								<span className="group-hover:text-primary transition-colors">{faq.question}</span>
 							</AccordionTrigger>
-							<AccordionContent forceMount className="text-muted-foreground text-base pb-6 leading-relaxed">
+							<AccordionContent forceMount className="text-muted-foreground text-sm sm:text-base pb-6 leading-relaxed">
 								{faq.answer}
 							</AccordionContent>
 						</AccordionItem>

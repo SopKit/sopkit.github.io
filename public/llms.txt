@@ -42,17 +42,17 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Resignation Letter Generator](https://sopkit.github.io/resignation-letter-generator) - Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.
 - [Bio Data Maker](https://sopkit.github.io/bio-data-maker) - Create beautiful marriage biodata sheets or professional resumes. Upload photos, input family or job details, and print a custom layout.
 - [Instagram Bio Generator](https://sopkit.github.io/instagram-bio-generator) - Generate optimized Instagram bios with stylish fonts, emojis, and formatting. Free online Instagram bio generator for personal profiles, business accounts, and creators — 100% client-side, no signup.
-- [Instagram Caption Generator](https://sopkit.github.io/instagram-caption-generator) - Generate high-converting, customized instagram caption ideas, copy, and templates. Easily customize and copy results in one click.
-- [Hashtag Generator](https://sopkit.github.io/hashtag-generator) - Generate high-converting, customized hashtag ideas, copy, and templates. Easily customize and copy results in one click.
-- [Slogan Generator](https://sopkit.github.io/slogan-generator) - Generate high-converting, customized slogan ideas, copy, and templates. Easily customize and copy results in one click.
-- [Logo Idea Generator](https://sopkit.github.io/logo-idea-generator) - Generate high-converting, customized logo idea ideas, copy, and templates. Easily customize and copy results in one click.
-- [GBP Description Generator](https://sopkit.github.io/google-business-profile-description-generator) - Generate high-converting, customized gbp description ideas, copy, and templates. Easily customize and copy results in one click.
-- [Review Reply Generator](https://sopkit.github.io/review-reply-generator) - Generate high-converting, customized review reply ideas, copy, and templates. Easily customize and copy results in one click.
-- [Menu Description Generator](https://sopkit.github.io/restaurant-menu-description-generator) - Generate high-converting, customized menu description ideas, copy, and templates. Easily customize and copy results in one click.
-- [Client Proposal Generator](https://sopkit.github.io/client-proposal-generator) - Generate high-converting, customized client proposal ideas, copy, and templates. Easily customize and copy results in one click.
-- [Payment Reminder Generator](https://sopkit.github.io/payment-reminder-generator) - Generate high-converting, customized payment reminder ideas, copy, and templates. Easily customize and copy results in one click.
-- [Product Description Generator](https://sopkit.github.io/product-description-generator) - Generate optimized product description generator details. Instantly copy or share customized outputs.
-- [Refund Policy Generator](https://sopkit.github.io/refund-policy-generator) - Generate high-converting, customized refund policy ideas, copy, and templates. Easily customize and copy results in one click.
+- [Instagram Caption Generator](https://sopkit.github.io/instagram-caption-generator) - Generate scroll-stopping Instagram captions with hooks, CTAs and hashtag sets tailored to your topic. Customize and copy in one click — free.
+- [Hashtag Generator](https://sopkit.github.io/hashtag-generator) - Generate reach-boosting hashtags for Instagram Reels, TikTok, YouTube and X. Mix niche and trending tags, copy the full set in one click — free.
+- [Slogan Generator](https://sopkit.github.io/slogan-generator) - Generate catchy slogans and taglines for your brand, startup, product or campaign. Browse ideas, refine and copy — free, no signup.
+- [Logo Idea Generator](https://sopkit.github.io/logo-idea-generator) - Brainstorm logo concepts with style directions, icon ideas, color moods and font pairings for your brand. Free creative brief in one click.
+- [GBP Description Generator](https://sopkit.github.io/google-business-profile-description-generator) - Write a keyword-rich Google Business Profile description that ranks in local search. Service-focused copy within GBP limits — free, no signup.
+- [Review Reply Generator](https://sopkit.github.io/review-reply-generator) - Reply to Google, Yelp and Trustpilot reviews like a pro — polite thanks for praise, calm recovery for complaints. Copy-ready drafts, free.
+- [Menu Description Generator](https://sopkit.github.io/restaurant-menu-description-generator) - Write mouth-watering menu descriptions for dishes, cafes and restaurants. Sensory words that sell specials, combos and chef signatures — free.
+- [Client Proposal Generator](https://sopkit.github.io/client-proposal-generator) - Draft winning freelance proposals with scope, pricing, timeline and CTA sections. Customize for Upwork or direct clients — free, no signup.
+- [Payment Reminder Generator](https://sopkit.github.io/payment-reminder-generator) - Write firm-but-polite payment reminders and overdue invoice emails. Escalating tones from nudge to final notice — copy and send free.
+- [Product Description Generator](https://sopkit.github.io/product-description-generator) - Write benefit-driven product descriptions for Shopify, Amazon and Etsy with features, specs and SEO keywords. Copy-ready listings, free.
+- [Refund Policy Generator](https://sopkit.github.io/refund-policy-generator) - Generate a clear refund and returns policy for your store — windows, conditions, exclusions and process steps. Store-ready text, free.
 - [Love Calculator](https://sopkit.github.io/love-calculator) - Calculate relationship compatibility based on name numerology and astronomical alignment. Discover your love score instantly with our free interactive compatibility calculator.
 - [Color Palette Generator](https://sopkit.github.io/color-palette-generator) - Generate beautiful color palettes with harmony rules. Explore complementary, analogous, triadic, and tetradic color schemes. Copy hex codes and export CSS variables.
 - [Meme Generator](https://sopkit.github.io/meme-generator) - Create viral memes online for free. Add custom text to images with classic meme styling. Export as PNG with zero data uploads.
@@ -65,7 +65,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Gemini Watermark Remover](https://sopkit.github.io/gemini-watermark-remover) - Remove the Google Gemini AI logo and watermarks from your images online. Process 100% client-side inside your browser for complete privacy.
 - [SVG to PNG Converter](https://sopkit.github.io/svg-to-png) - Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [WEBP to PNG Converter](https://sopkit.github.io/webp-to-png) - Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.
-- [ICO to PNG Converter](https://sopkit.github.io/ico-to-png) - Free ico to png converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [ICO to PNG Converter](https://sopkit.github.io/ico-to-png) - Convert ICO icon files to PNG images in any size. Extract crisp icons for favicons, apps and design work — free, private, no signup.
 - [JPG to PNG Converter](https://sopkit.github.io/jpg-to-png) - Convert JPG to PNG with transparency support. Maintain high image quality and convert formats instantly in your browser. Free, secure, and privacy-focused online tool.
 - [PNG to JPG Converter](https://sopkit.github.io/png-to-jpg) - Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser.
 - [SVG to JPG Converter](https://sopkit.github.io/svg-to-jpg) - Convert SVG vector files into standard JPG images with custom background colors. Fast, 100% private client-side processing with zero file uploads and no registration required.
@@ -79,19 +79,19 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Aadhaar and PAN Card Photo Resizer](https://sopkit.github.io/aadhaar-pan-photo-resizer) - Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online government exam forms. Free online photo resizer that processes everything in your browser with no uploads.
 - [Background Remover](https://sopkit.github.io/background-remover) - Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no signup needed.
 - [Base64 to Image Converter](https://sopkit.github.io/base64-to-image-converter) - Convert Base64 strings to images (PNG, JPG, WebP) instantly. Our privacy-first tool processes data locally in your browser, ensuring your images stay secure. Free and fast Base64 decoder.
-- [Convert to ICO](https://sopkit.github.io/convert-to-ico) - Free convert to ico tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Convert to ICO](https://sopkit.github.io/convert-to-ico) - Convert PNG and JPG images to ICO favicon files in multiple sizes. Crisp Windows icons for apps and sites — free, no signup.
 - [EXIF Reader](https://sopkit.github.io/exif-reader) - Extract metadata and EXIF data from images including camera settings and GPS location. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [Favicon Generator](https://sopkit.github.io/favicon-generator) - Generate favicons from text, images, or emojis for websites. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [Flip Image](https://sopkit.github.io/flip-image) - Free flip image tool to flip photos and images horizontally or vertically. Process your data instantly with privacy-friendly browser-based image flipping — no uploads, no servers, no data collection.
 - [Image Compressor](https://sopkit.github.io/image-compressor) - Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing.
 - [Image Converter](https://sopkit.github.io/image-converter) - Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy.
-- [Image Cropper](https://sopkit.github.io/image-cropper) - Free image cropper tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Image Cropper](https://sopkit.github.io/image-cropper) - Crop images to exact dimensions with drag-and-drop precision. Lock aspect ratios for social posts and prints — free, no signup.
 - [Circular Image Crop](https://sopkit.github.io/circular-image-crop) - Crop images into perfect circular shapes online. Ideal for profile pictures and social media avatars.
 - [Image Watermark Adder](https://sopkit.github.io/image-watermark) - Add text or image logo watermarks to your pictures. Customize opacity, size, positioning, and rotation to protect your images online.
 - [GIF Generator](https://sopkit.github.io/gif-generator) - Compile multiple images into an animated GIF client-side. Control delay/interval and image dimensions easily.
-- [Image Enlarger](https://sopkit.github.io/image-enlarger) - Free image enlarger tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Image Enlarger](https://sopkit.github.io/image-enlarger) - Enlarge small images without heavy pixelation using smart upscaling. 2x and 4x options for prints and posters — free, no signup.
 - [Image Resizer](https://sopkit.github.io/image-resizer) - Resize images with custom dimensions and aspect ratios. Fast, 100% private client-side processing with zero file uploads and no registration required.
-- [Image to Base64 Converter](https://sopkit.github.io/image-to-base64) - Free image to base64 converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Image to Base64 Converter](https://sopkit.github.io/image-to-base64) - Encode any image to a Base64 data URI for embedding in HTML, CSS and JSON. Instant output with copy button — free, private.
 - [JPG Converter](https://sopkit.github.io/jpg-converter) - Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-focused and works entirely in your browser.
 - [JPG to BMP Converter](https://sopkit.github.io/jpg-to-bmp-converter) - Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading files to any server.
 - [JPG to GIF Converter](https://sopkit.github.io/jpg-to-gif-converter) - Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online image converter.
@@ -120,10 +120,10 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 ### Text Tools
 
 - [Text Reverser](https://sopkit.github.io/text-reverser) - Flip your text backwards or reverse the order of words instantly for creative projects and coding. Fast, 100% private client-side processing with zero file uploads and no registration required.
-- [Remove Duplicate Lines](https://sopkit.github.io/remove-duplicate-lines) - Clean up your lists and data by automatically removing identical lines of text. Fast and private. Fast, 100% private client-side processing with zero file uploads and no registration required.
+- [Remove Duplicate Lines](https://sopkit.github.io/remove-duplicate-lines) - Clean up your lists and data by automatically removing identical lines of text. Fast and private.
 - [Markdown to HTML Converter](https://sopkit.github.io/markdown-to-html) - Convert Markdown text into clean HTML code for your website, blog, or email newsletters. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [Markdown to PDF Converter](https://sopkit.github.io/markdown-to-pdf) - Convert Markdown text into a clean, print-ready PDF document instantly in your browser. Free online Markdown to PDF converter with live preview — no signup required, all processing is local and private.
-- [URL Encoder Decoder](https://sopkit.github.io/url-encoder-decoder) - Fast and privacy-conscious URL Encoder Decoder to encoder decoder web links and URI parameters directly in your browser with no server logging.
+- [URL Encoder Decoder](https://sopkit.github.io/url-encoder-decoder) - Encode and decode URLs, query strings and URI parameters instantly in your browser. No server logging, fully private.
 - [String Length Calculator](https://sopkit.github.io/string-length-calculator) - Get detailed string analytics including character, word, byte, and line counts instantly. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [Text to Binary/Hex/Octal Converter](https://sopkit.github.io/text-to-binary-hex-octal) - Convert plain text strings to binary, hex, and octal formats simultaneously. 100% local. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [Slug to Text Converter](https://sopkit.github.io/slug-to-text-converter) - Convert URL slugs with hyphens or underscores back into clean, readable text strings. Fast, 100% private client-side processing with zero file uploads and no registration required.
@@ -189,81 +189,81 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Video Converter](https://sopkit.github.io/video-converter) - Convert video files between MP4, AVI, MKV, MOV, WebM, and more formats directly in your browser. Free online video converter with private client-side processing — no uploads, no server storage.
 - [Video Editor](https://sopkit.github.io/video-editor) - Edit, cut, and merge video files online for free. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [AI Video Summarizer](https://sopkit.github.io/ai-video-summarizer) - Summarize video transcripts into key points and insights. Paste any transcript and get instant bullet-point summaries, paragraphs, or executive overviews. 100% free and private.
-- [Akillitv Video Downloader](https://sopkit.github.io/akillitv-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Akillitv Video Downloader. No registration, 100% secure client-side browser processing.
-- [All Downloaders](https://sopkit.github.io/all-downloaders) - Free, high-speed online downloader to save and download media content from platforms using the All Downloaders. No registration, 100% secure client-side browser processing.
-- [Bandcamp Video Downloader](https://sopkit.github.io/bandcamp-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Bandcamp Video Downloader. No registration, 100% secure client-side browser processing.
-- [Bilibili Video Downloader](https://sopkit.github.io/bilibili-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Bilibili Video Downloader. No registration, 100% secure client-side browser processing.
-- [Bitchute Video Downloader](https://sopkit.github.io/bitchute-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Bitchute Video Downloader. No registration, 100% secure client-side browser processing.
-- [Blogger Video Downloader](https://sopkit.github.io/blogger-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Blogger Video Downloader. No registration, 100% secure client-side browser processing.
-- [Blutv Video Downloader](https://sopkit.github.io/blutv-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Blutv Video Downloader. No registration, 100% secure client-side browser processing.
-- [Buzzfeed Video Downloader](https://sopkit.github.io/buzzfeed-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Buzzfeed Video Downloader. No registration, 100% secure client-side browser processing.
-- [Capcut Video Downloader](https://sopkit.github.io/capcut-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Capcut Video Downloader. No registration, 100% secure client-side browser processing.
-- [Chingari Video Downloader](https://sopkit.github.io/chingari-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Chingari Video Downloader. No registration, 100% secure client-side browser processing.
-- [Dailymotion Video Downloader](https://sopkit.github.io/dailymotion-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Dailymotion Video Downloader. No registration, 100% secure client-side browser processing.
-- [Douyin Video Downloader](https://sopkit.github.io/douyin-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Douyin Video Downloader. No registration, 100% secure client-side browser processing.
-- [Downloaders](https://sopkit.github.io/downloaders) - Free, high-speed online downloader to save and download media content from platforms using the Downloaders. No registration, 100% secure client-side browser processing.
-- [Espn Video Downloader](https://sopkit.github.io/espn-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Espn Video Downloader. No registration, 100% secure client-side browser processing.
-- [Facebook Story Downloader](https://sopkit.github.io/facebook-story-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Facebook Story Downloader. No registration, 100% secure client-side browser processing.
-- [Facebook Video Downloader](https://sopkit.github.io/facebook-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Facebook Video Downloader. No registration, 100% secure client-side browser processing.
-- [Facebook Video Saver](https://sopkit.github.io/fb-video-saver) - Free, high-speed online downloader to save and download media content from platforms using the Facebook Video Saver. No registration, 100% secure client-side browser processing.
-- [Febspot Video Downloader](https://sopkit.github.io/febspot-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Febspot Video Downloader. No registration, 100% secure client-side browser processing.
-- [Flickr Video Downloader](https://sopkit.github.io/flickr-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Flickr Video Downloader. No registration, 100% secure client-side browser processing.
-- [Ifunny Video Downloader](https://sopkit.github.io/ifunny-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Ifunny Video Downloader. No registration, 100% secure client-side browser processing.
-- [Instagram Highlights Saver](https://sopkit.github.io/ig-highlights-saver) - Free, high-speed online downloader to save and download media content from platforms using the Instagram Highlights Saver. No registration, 100% secure client-side browser processing.
-- [Imdb Video Downloader](https://sopkit.github.io/imdb-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Imdb Video Downloader. No registration, 100% secure client-side browser processing.
-- [Imgur Video Downloader](https://sopkit.github.io/imgur-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Imgur Video Downloader. No registration, 100% secure client-side browser processing.
-- [Insta Reels Saver](https://sopkit.github.io/insta-reels-saver) - Free, high-speed online downloader to save and download media content from platforms using the Insta Reels Saver. No registration, 100% secure client-side browser processing.
-- [Instagram Downloader](https://sopkit.github.io/instagram-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Instagram Downloader. No registration, 100% secure client-side browser processing.
-- [Instagram Image Downloader](https://sopkit.github.io/instagram-image-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Instagram Image Downloader. No registration, 100% secure client-side browser processing.
-- [Instagram Reel Downloader](https://sopkit.github.io/instagram-reel-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Instagram Reel Downloader. No registration, 100% secure client-side browser processing.
-- [Instagram Story Downloader](https://sopkit.github.io/instagram-story-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Instagram Story Downloader. No registration, 100% secure client-side browser processing.
-- [Instagram Videos Downloader](https://sopkit.github.io/instagram-videos-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Instagram Videos Downloader. No registration, 100% secure client-side browser processing.
-- [Izlesene Video Downloader](https://sopkit.github.io/izlesene-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Izlesene Video Downloader. No registration, 100% secure client-side browser processing.
-- [Kickstarter Video Downloader](https://sopkit.github.io/kickstarter-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Kickstarter Video Downloader. No registration, 100% secure client-side browser processing.
-- [Kwai Video Downloader](https://sopkit.github.io/kwai-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Kwai Video Downloader. No registration, 100% secure client-side browser processing.
-- [Likee Video Downloader](https://sopkit.github.io/likee-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Likee Video Downloader. No registration, 100% secure client-side browser processing.
-- [Linkedin Video Downloader](https://sopkit.github.io/linkedin-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Linkedin Video Downloader. No registration, 100% secure client-side browser processing.
-- [M3u8 Downloader](https://sopkit.github.io/m3u8-downloader) - Free, high-speed online downloader to save and download media content from platforms using the M3u8 Downloader. No registration, 100% secure client-side browser processing.
-- [Mashable Video Downloader](https://sopkit.github.io/mashable-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Mashable Video Downloader. No registration, 100% secure client-side browser processing.
-- [Mixcloud Video Downloader](https://sopkit.github.io/mixcloud-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Mixcloud Video Downloader. No registration, 100% secure client-side browser processing.
-- [Mxtakatak Video Downloader](https://sopkit.github.io/mxtakatak-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Mxtakatak Video Downloader. No registration, 100% secure client-side browser processing.
-- [Ninegag Video Downloader](https://sopkit.github.io/ninegag-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Ninegag Video Downloader. No registration, 100% secure client-side browser processing.
-- [Odnoklassniki Video Downloader](https://sopkit.github.io/odnoklassniki-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Odnoklassniki Video Downloader. No registration, 100% secure client-side browser processing.
-- [Online Video Downloader](https://sopkit.github.io/online-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Online Video Downloader. No registration, 100% secure client-side browser processing.
-- [Periscope Video Downloader](https://sopkit.github.io/periscope-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Periscope Video Downloader. No registration, 100% secure client-side browser processing.
-- [Pinterest Clip Saver](https://sopkit.github.io/pinterest-clip-saver) - Free, high-speed online downloader to save and download media content from platforms using the Pinterest Clip Saver. No registration, 100% secure client-side browser processing.
-- [Pinterest Gif Downloader](https://sopkit.github.io/pinterest-gif-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Pinterest Gif Downloader. No registration, 100% secure client-side browser processing.
-- [Pinterest Image Downloader](https://sopkit.github.io/pinterest-image-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Pinterest Image Downloader. No registration, 100% secure client-side browser processing.
-- [Pinterest Video Downloader](https://sopkit.github.io/pinterest-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Pinterest Video Downloader. No registration, 100% secure client-side browser processing.
-- [Puhutv Video Downloader](https://sopkit.github.io/puhutv-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Puhutv Video Downloader. No registration, 100% secure client-side browser processing.
-- [Reddit Downloader](https://sopkit.github.io/reddit-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Reddit Downloader. No registration, 100% secure client-side browser processing.
-- [Reddit Media Saver](https://sopkit.github.io/reddit-media-saver) - Free, high-speed online downloader to save and download media content from platforms using the Reddit Media Saver. No registration, 100% secure client-side browser processing.
-- [Reddit Video Downloader](https://sopkit.github.io/reddit-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Reddit Video Downloader. No registration, 100% secure client-side browser processing.
-- [Rumble Video Downloader](https://sopkit.github.io/rumble-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Rumble Video Downloader. No registration, 100% secure client-side browser processing.
-- [Save Facebook Stories Anonymous](https://sopkit.github.io/save-fb-stories-anonymous) - Free, high-speed online downloader to save and download media content from platforms using the Save Facebook Stories Anonymous. No registration, 100% secure client-side browser processing.
-- [Save Instagram Content](https://sopkit.github.io/save-ig-content) - Free, high-speed online downloader to save and download media content from platforms using the Save Instagram Content. No registration, 100% secure client-side browser processing.
-- [Save Insta Profile Picture](https://sopkit.github.io/save-insta-pfp) - Free, high-speed online downloader to save and download media content from platforms using the Save Insta Profile Picture. No registration, 100% secure client-side browser processing.
-- [Save Instagram Clips](https://sopkit.github.io/save-instagram-clips) - Free, high-speed online downloader to save and download media content from platforms using the Save Instagram Clips. No registration, 100% secure client-side browser processing.
-- [Save Reels Video](https://sopkit.github.io/save-reels-video) - Free, high-speed online downloader to save and download media content from platforms using the Save Reels Video. No registration, 100% secure client-side browser processing.
-- [Save Snaps To Gallery](https://sopkit.github.io/save-snaps-to-gallery) - Free, high-speed online downloader to save and download media content from platforms using the Save Snaps To Gallery. No registration, 100% secure client-side browser processing.
-- [Save Tiktok MP4](https://sopkit.github.io/save-tiktok-mp4) - Free, high-speed online downloader to save and download media content from platforms using the Save Tiktok MP4. No registration, 100% secure client-side browser processing.
-- [Save Twitter Videos](https://sopkit.github.io/save-twitter-videos) - Free, high-speed online downloader to save and download media content from platforms using the Save Twitter Videos. No registration, 100% secure client-side browser processing.
-- [Sharechat Video Downloader](https://sopkit.github.io/sharechat-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Sharechat Video Downloader. No registration, 100% secure client-side browser processing.
-- [Snapchat Saver Online](https://sopkit.github.io/snapchat-saver-online) - Free, high-speed online downloader to save and download media content from platforms using the Snapchat Saver Online. No registration, 100% secure client-side browser processing.
-- [Snapchat Video Downloader](https://sopkit.github.io/snapchat-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Snapchat Video Downloader. No registration, 100% secure client-side browser processing.
-- [Streamable Video Downloader](https://sopkit.github.io/streamable-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Streamable Video Downloader. No registration, 100% secure client-side browser processing.
-- [Ted Video Downloader](https://sopkit.github.io/ted-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Ted Video Downloader. No registration, 100% secure client-side browser processing.
-- [Telegram Video Downloader](https://sopkit.github.io/telegram-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Telegram Video Downloader. No registration, 100% secure client-side browser processing.
-- [Threads Video Downloader](https://sopkit.github.io/threads-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Threads Video Downloader. No registration, 100% secure client-side browser processing.
-- [Tiktok Downloader](https://sopkit.github.io/tiktok-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Tiktok Downloader. No registration, 100% secure client-side browser processing.
-- [Tiktok Saver No Watermark](https://sopkit.github.io/tiktok-saver-no-watermark) - Free, high-speed online downloader to save and download media content from platforms using the Tiktok Saver No Watermark. No registration, 100% secure client-side browser processing.
-- [Tiktok Videos Downloader](https://sopkit.github.io/tiktok-videos-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Tiktok Videos Downloader. No registration, 100% secure client-side browser processing.
-- [Tumblr Video Downloader](https://sopkit.github.io/tumblr-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Tumblr Video Downloader. No registration, 100% secure client-side browser processing.
-- [Twitch Video Downloader](https://sopkit.github.io/twitch-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Twitch Video Downloader. No registration, 100% secure client-side browser processing.
-- [Twitter Video Downloader](https://sopkit.github.io/twitter-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Twitter Video Downloader. No registration, 100% secure client-side browser processing.
-- [Universal Video Downloader](https://sopkit.github.io/universal-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Universal Video Downloader. No registration, 100% secure client-side browser processing.
-- [Vimeo Video Downloader](https://sopkit.github.io/vimeo-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Vimeo Video Downloader. No registration, 100% secure client-side browser processing.
-- [Vkontakte Video Downloader](https://sopkit.github.io/vkontakte-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Vkontakte Video Downloader. No registration, 100% secure client-side browser processing.
+- [Akillitv Video Downloader](https://sopkit.github.io/akillitv-video-downloader) - Save AkilliTV videos for offline viewing in HD quality. Paste the link, pick a format and download — free, no signup.
+- [All Downloaders](https://sopkit.github.io/all-downloaders) - One downloader for 70+ sites — TikTok, Instagram, Facebook, Twitter and more. Paste any video link — free, no signup.
+- [Bandcamp Video Downloader](https://sopkit.github.io/bandcamp-video-downloader) - Save Bandcamp tracks and albums you own for offline listening in high quality. Free audio downloads, no signup.
+- [Bilibili Video Downloader](https://sopkit.github.io/bilibili-video-downloader) - Download Bilibili videos in HD without watermark for offline watching. Paste the link and save — free, no signup.
+- [Bitchute Video Downloader](https://sopkit.github.io/bitchute-video-downloader) - Save BitChute videos as MP4 for offline viewing. Direct links in multiple qualities — free, no signup.
+- [Blogger Video Downloader](https://sopkit.github.io/blogger-video-downloader) - Download videos embedded in Blogger and Blogspot posts as MP4. One-click saves — free, private, no signup.
+- [Blutv Video Downloader](https://sopkit.github.io/blutv-video-downloader) - Save BluTV shows and clips you have access to for offline viewing. Simple link-based downloads — free, no signup.
+- [Buzzfeed Video Downloader](https://sopkit.github.io/buzzfeed-video-downloader) - Download BuzzFeed videos, Tasty recipes and listicles for offline watching. Quick MP4 saves — free, no signup.
+- [Capcut Video Downloader](https://sopkit.github.io/capcut-video-downloader) - Download CapCut template videos without watermark for re-editing. Clean exports for creators — free, no signup.
+- [Chingari Video Downloader](https://sopkit.github.io/chingari-video-downloader) - Save Chingari short videos in HD for offline viewing. Indian short-video app downloads — free, no signup.
+- [Dailymotion Video Downloader](https://sopkit.github.io/dailymotion-video-downloader) - Download Dailymotion videos in HD and SD qualities. News, music and shows offline — free, no signup.
+- [Douyin Video Downloader](https://sopkit.github.io/douyin-video-downloader) - Save Douyin (Chinese TikTok) videos without watermark. Paste link, download HD — free, no signup.
+- [Downloaders](https://sopkit.github.io/downloaders) - Every downloader in one directory — video, audio, image and social savers for 70+ platforms. Free, no signup.
+- [Espn Video Downloader](https://sopkit.github.io/espn-video-downloader) - Save ESPN highlights and clips for offline viewing. Sports moments in HD — free downloader, no signup.
+- [Facebook Story Downloader](https://sopkit.github.io/facebook-story-downloader) - Save Facebook stories before they expire in 24 hours. Anonymous viewing downloads — free, no signup.
+- [Facebook Video Downloader](https://sopkit.github.io/facebook-video-downloader) - Download Facebook videos, reels and Watch shows in HD. Paste link, save MP4 — free, no signup.
+- [Facebook Video Saver](https://sopkit.github.io/fb-video-saver) - Quick-save Facebook videos to your gallery in HD. Lightweight saver for daily clips — free, no signup.
+- [Febspot Video Downloader](https://sopkit.github.io/febspot-video-downloader) - Download Febspot viral videos and trending clips in HD. Save and share offline — free, no signup.
+- [Flickr Video Downloader](https://sopkit.github.io/flickr-video-downloader) - Download Flickr photos and videos in original resolution. For photographers' portfolios — free, no signup.
+- [Ifunny Video Downloader](https://sopkit.github.io/ifunny-video-downloader) - Save iFunny memes, GIFs and funny videos to share anywhere. Meme vault in your pocket — free, no signup.
+- [Instagram Highlights Saver](https://sopkit.github.io/ig-highlights-saver) - Save Instagram highlights and covers before profiles change. Archive stories permanently — free, no signup.
+- [Imdb Video Downloader](https://sopkit.github.io/imdb-video-downloader) - Download IMDb trailers and clips in HD for offline viewing. Movie previews anytime — free, no signup.
+- [Imgur Video Downloader](https://sopkit.github.io/imgur-video-downloader) - Download Imgur images, GIFs and albums in original quality. Backup viral posts — free, no signup.
+- [Insta Reels Saver](https://sopkit.github.io/insta-reels-saver) - Save Instagram Reels in HD without watermark. Trending audio kept intact — free, no signup.
+- [Instagram Downloader](https://sopkit.github.io/instagram-downloader) - All-in-one Instagram saver: reels, stories, photos, IGTV and highlights. One tool, everything — free.
+- [Instagram Image Downloader](https://sopkit.github.io/instagram-image-downloader) - Save Instagram photos in full resolution, including carousels. Zoom and download — free, no signup.
+- [Instagram Reel Downloader](https://sopkit.github.io/instagram-reel-downloader) - Download Instagram Reels with audio in HD quality. No watermark, instant MP4 — free, no signup.
+- [Instagram Story Downloader](https://sopkit.github.io/instagram-story-downloader) - Save Instagram stories anonymously before they vanish. HD story viewer downloads — free, no signup.
+- [Instagram Videos Downloader](https://sopkit.github.io/instagram-videos-downloader) - Download Instagram feed videos, lives and IGTV episodes in HD. Long videos too — free, no signup.
+- [Izlesene Video Downloader](https://sopkit.github.io/izlesene-video-downloader) - Download Izlesene Turkish videos in HD for offline viewing. Paste link and save — free, no signup.
+- [Kickstarter Video Downloader](https://sopkit.github.io/kickstarter-video-downloader) - Download Kickstarter campaign and pitch videos in HD. Save ideas worth backing — free, no signup.
+- [Kwai Video Downloader](https://sopkit.github.io/kwai-video-downloader) - Download Kwai short videos and trending clips in HD. Quick saves for sharing — free, no signup.
+- [Likee Video Downloader](https://sopkit.github.io/likee-video-downloader) - Download Likee short videos in HD for offline viewing. Effects, music and vlogs saved — free, no signup.
+- [Linkedin Video Downloader](https://sopkit.github.io/linkedin-video-downloader) - Save LinkedIn learning clips and feed videos for offline viewing. Professional content — free, no signup.
+- [M3u8 Downloader](https://sopkit.github.io/m3u8-downloader) - Download M3U8 HLS streams and convert to MP4. Paste playlist URL, save video — free, no signup.
+- [Mashable Video Downloader](https://sopkit.github.io/mashable-video-downloader) - Download Mashable tech and culture videos in HD. Stay updated offline — free, no signup.
+- [Mixcloud Video Downloader](https://sopkit.github.io/mixcloud-video-downloader) - Download Mixcloud DJ mixes and radio shows you follow for offline listening. Long sets saved — free.
+- [Mxtakatak Video Downloader](https://sopkit.github.io/mxtakatak-video-downloader) - Download MX TakaTak short videos in HD. Indian shorts saved offline — free, no signup.
+- [Ninegag Video Downloader](https://sopkit.github.io/ninegag-video-downloader) - Download 9GAG funny videos and memes in original quality. Daily laughs offline — free, no signup.
+- [Odnoklassniki Video Downloader](https://sopkit.github.io/odnoklassniki-video-downloader) - Download OK.ru (Odnoklassniki) videos and shows in HD. Russian social videos offline — free.
+- [Online Video Downloader](https://sopkit.github.io/online-video-downloader) - Paste any video link to download in HD — works with 70+ supported sites. Universal saver — free, no signup.
+- [Periscope Video Downloader](https://sopkit.github.io/periscope-video-downloader) - Download Periscope live replays and broadcasts before they expire. Archive streams — free, no signup.
+- [Pinterest Clip Saver](https://sopkit.github.io/pinterest-clip-saver) - Save Pinterest video clips and Idea Pins in HD. Craft inspiration offline — free, no signup.
+- [Pinterest Gif Downloader](https://sopkit.github.io/pinterest-gif-downloader) - Download Pinterest GIFs in original animated quality. Reaction library offline — free, no signup.
+- [Pinterest Image Downloader](https://sopkit.github.io/pinterest-image-downloader) - Download Pinterest images and infographics in full resolution. Mood boards offline — free, no signup.
+- [Pinterest Video Downloader](https://sopkit.github.io/pinterest-video-downloader) - Download Pinterest videos and Idea Pins in HD quality. Save tutorials and recipes — free, no signup.
+- [Puhutv Video Downloader](https://sopkit.github.io/puhutv-video-downloader) - Save PuhuTV series, films and shows for offline watching. Turkish streaming downloads — free, no signup.
+- [Reddit Downloader](https://sopkit.github.io/reddit-downloader) - Download Reddit videos, galleries and threads with media. Save discussions offline — free, no signup.
+- [Reddit Media Saver](https://sopkit.github.io/reddit-media-saver) - Quick-save Reddit images, GIFs and videos to your device. Lightweight media saver — free, no signup.
+- [Reddit Video Downloader](https://sopkit.github.io/reddit-video-downloader) - Download Reddit videos with audio included (v.redd.it fix). HD MP4 saves — free, no signup.
+- [Rumble Video Downloader](https://sopkit.github.io/rumble-video-downloader) - Download Rumble videos and shows in HD. Independent creators offline — free, no signup.
+- [Save Facebook Stories Anonymous](https://sopkit.github.io/save-fb-stories-anonymous) - View and save Facebook stories without the seen tag. Fully anonymous story saver — free, no signup.
+- [Save Instagram Content](https://sopkit.github.io/save-ig-content) - Save all Instagram content types — posts, reels, stories, highlights — in one place. Free, no signup.
+- [Save Insta Profile Picture](https://sopkit.github.io/save-insta-pfp) - View and download Instagram profile pictures in full HD size. Zoom any DP — free, no signup.
+- [Save Instagram Clips](https://sopkit.github.io/save-instagram-clips) - Download Instagram video clips and reels in HD with audio. Short-form gold — free, no signup.
+- [Save Reels Video](https://sopkit.github.io/save-reels-video) - Download Reels videos from Instagram and Facebook in HD. Trending sounds included — free, no signup.
+- [Save Snaps To Gallery](https://sopkit.github.io/save-snaps-to-gallery) - Save Snapchat snaps and stories directly to your gallery. Keep memories before they disappear — free.
+- [Save Tiktok MP4](https://sopkit.github.io/save-tiktok-mp4) - Save TikTok videos as clean MP4 files in HD. No watermark option included — free, no signup.
+- [Save Twitter Videos](https://sopkit.github.io/save-twitter-videos) - Download Twitter/X videos and GIFs in HD quality. Save viral clips offline — free, no signup.
+- [Sharechat Video Downloader](https://sopkit.github.io/sharechat-video-downloader) - Download ShareChat videos, jokes and status clips in HD. Indian regional content — free, no signup.
+- [Snapchat Saver Online](https://sopkit.github.io/snapchat-saver-online) - Online Snapchat saver for stories, snaps and spotlight videos. Download in HD — free, no signup.
+- [Snapchat Video Downloader](https://sopkit.github.io/snapchat-video-downloader) - Download Snapchat videos and spotlight clips in HD quality. Quick saves — free, no signup.
+- [Streamable Video Downloader](https://sopkit.github.io/streamable-video-downloader) - Download Streamable clips before links expire. Fast MP4 saves in HD — free, no signup.
+- [Ted Video Downloader](https://sopkit.github.io/ted-video-downloader) - Download TED Talks and TEDx speeches for offline learning. Ideas worth saving — free, no signup.
+- [Telegram Video Downloader](https://sopkit.github.io/telegram-video-downloader) - Download Telegram videos, files and channel media in original quality. Cloud content saved — free.
+- [Threads Video Downloader](https://sopkit.github.io/threads-video-downloader) - Download Threads videos and carousels in HD. Meta's X rival, saved offline — free, no signup.
+- [Tiktok Downloader](https://sopkit.github.io/tiktok-downloader) - The classic TikTok saver: videos in HD with or without watermark. Sounds included — free, no signup.
+- [Tiktok Saver No Watermark](https://sopkit.github.io/tiktok-saver-no-watermark) - Clean TikTok downloads with zero watermark or logo. Creator-ready reposts — free, no signup.
+- [Tiktok Videos Downloader](https://sopkit.github.io/tiktok-videos-downloader) - Bulk-download TikTok videos, slideshows and stories in HD. Whole profiles archived — free.
+- [Tumblr Video Downloader](https://sopkit.github.io/tumblr-video-downloader) - Download Tumblr videos, GIFs and photosets in original quality. Fandom archives — free, no signup.
+- [Twitch Video Downloader](https://sopkit.github.io/twitch-video-downloader) - Download Twitch clips, VODs and highlights in HD. Stream moments saved — free, no signup.
+- [Twitter Video Downloader](https://sopkit.github.io/twitter-video-downloader) - Download X/Twitter videos in HD with one paste. Spaces clips and lives too — free, no signup.
+- [Universal Video Downloader](https://sopkit.github.io/universal-video-downloader) - One universal downloader for every supported site. If it plays, it saves — free, no signup.
+- [Vimeo Video Downloader](https://sopkit.github.io/vimeo-video-downloader) - Download Vimeo videos in HD and 4K where available. Staff picks offline — free, no signup.
+- [Vkontakte Video Downloader](https://sopkit.github.io/vkontakte-video-downloader) - Download VK videos, clips and shows in HD. Russian social content offline — free, no signup.
 
 ### YouTube Tools
 
@@ -289,24 +289,24 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [YouTube Video Statistics](https://sopkit.github.io/youtube-video-statistics) - Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool.
 - [Youtube Video Title Capitalizer](https://sopkit.github.io/youtube-title-capitalizer) - Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles stand out.
 - [YouTube Views Ratio Calculator](https://sopkit.github.io/youtube-views-ratio-calculator) - Calculate the view-to-engagement ratio for any YouTube video instantly. Our free online tool helps you understand audience interaction and video performance beyond just views.
-- [YouTube Title Generator](https://sopkit.github.io/youtube-title-generator) - Generate high-converting, customized youtube title ideas, copy, and templates. Easily customize and copy results in one click.
-- [YouTube Description Generator](https://sopkit.github.io/youtube-description-generator) - Generate optimized youtube description generator details. Instantly copy or share customized outputs.
-- [YouTube Thumbnail Text Generator](https://sopkit.github.io/youtube-thumbnail-text-generator) - Generate optimized youtube thumbnail text generator details. Instantly copy or share customized outputs.
-- [Youtube Thumbnail Downloader](https://sopkit.github.io/youtube-thumbnail-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Youtube Thumbnail Downloader. No registration, 100% secure client-side browser processing.
-- [Youtube Video Downloader](https://sopkit.github.io/youtube-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Youtube Video Downloader. No registration, 100% secure client-side browser processing.
+- [YouTube Title Generator](https://sopkit.github.io/youtube-title-generator) - Create viral YouTube titles with proven hooks, brackets and keywords. CTR-focused ideas in seconds — free, no signup.
+- [YouTube Description Generator](https://sopkit.github.io/youtube-description-generator) - Generate search-optimized video descriptions with timestamps, hashtags and CTAs. Upload-ready text — free, no signup.
+- [YouTube Thumbnail Text Generator](https://sopkit.github.io/youtube-thumbnail-text-generator) - Generate punchy thumbnail text ideas — short, emotional, readable at any size. Boost clicks — free, no signup.
+- [Youtube Thumbnail Downloader](https://sopkit.github.io/youtube-thumbnail-downloader) - Grab YouTube thumbnails in SD, HD, Full HD and max resolution. One paste, instant gallery — free, no signup.
+- [Youtube Video Downloader](https://sopkit.github.io/youtube-video-downloader) - Save YouTube videos in MP4 from 144p to 4K for offline watching. Fast quality picker — free, no signup needed.
 
 ### Audio Tools
 
 - [Text to Speech](https://sopkit.github.io/text-to-speech) - Convert text to natural sounding speech audio directly in your browser using Web Speech API. Free online text to speech converter with multiple voice options — no uploads needed.
 - [Audio Tools](https://sopkit.github.io/audio-tools) - Compress and convert audio files between formats. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [Guitar Tuner](https://sopkit.github.io/guitar-tuner) - Free online guitar tuner. Uses your microphone to tune your guitar accurately. Fast, 100% private client-side processing with zero file uploads and no registration required.
-- [Free MP3 Extractor](https://sopkit.github.io/free-mp3-extractor) - Free, high-speed online downloader to save and download media content from platforms using the Free MP3 Extractor. No registration, 100% secure client-side browser processing.
-- [Gaana Video Downloader](https://sopkit.github.io/gaana-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Gaana Video Downloader. No registration, 100% secure client-side browser processing.
-- [Modify MP3 File](https://sopkit.github.io/modify-mp3-file) - Free, high-speed online downloader to save and download media content from platforms using the Modify MP3 File. No registration, 100% secure client-side browser processing.
-- [MP3 From Tiktok](https://sopkit.github.io/mp3-from-tiktok) - Free, high-speed online downloader to save and download media content from platforms using the MP3 From Tiktok. No registration, 100% secure client-side browser processing.
-- [MP4 To MP3](https://sopkit.github.io/mp4-to-mp3) - Free, high-speed online downloader to save and download media content from platforms using the MP4 To MP3. No registration, 100% secure client-side browser processing.
-- [Shrink MP3 Size](https://sopkit.github.io/shrink-mp3-size) - Free, high-speed online downloader to save and download media content from platforms using the Shrink MP3 Size. No registration, 100% secure client-side browser processing.
-- [Soundcloud Video Downloader](https://sopkit.github.io/soundcloud-video-downloader) - Free, high-speed online downloader to save and download media content from platforms using the Soundcloud Video Downloader. No registration, 100% secure client-side browser processing.
+- [Free MP3 Extractor](https://sopkit.github.io/free-mp3-extractor) - Extract MP3 audio from any video file in seconds. Video-to-audio rips in browser — free, no signup.
+- [Gaana Video Downloader](https://sopkit.github.io/gaana-video-downloader) - Download Gaana songs you love for offline listening in high quality. Bollywood and regional — free.
+- [Modify MP3 File](https://sopkit.github.io/modify-mp3-file) - Trim, cut and edit MP3 files right in your browser. Ringtone maker with fade effects — free, no signup.
+- [MP3 From Tiktok](https://sopkit.github.io/mp3-from-tiktok) - Convert TikTok videos to MP3 ringtones and sounds. Viral audios saved — free, no signup.
+- [MP4 To MP3](https://sopkit.github.io/mp4-to-mp3) - Convert MP4 videos to MP3 audio with quality picker. Extract soundtracks fast — free, no signup.
+- [Shrink MP3 Size](https://sopkit.github.io/shrink-mp3-size) - Compress large MP3s to smaller sizes for sharing and uploads. Smart bitrate control — free.
+- [Soundcloud Video Downloader](https://sopkit.github.io/soundcloud-video-downloader) - Download SoundCloud tracks and mixes you follow for offline listening. High quality — free.
 - [Audio Equalizer](https://sopkit.github.io/audio-equalizer) - Adjust audio frequencies with a 10-band graphic equalizer. Choose from presets like Rock, Pop, Jazz, and Vocal Boost, or customize your own profile. Free and private browser-based processing.
 - [Audio Joiner](https://sopkit.github.io/audio-joiner) - Join multiple audio files into a single track seamlessly. Combine MP3, WAV, OGG, and M4A files in any order. Free, private, and works entirely in your browser.
 
@@ -382,7 +382,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [JSON to TSV Converter](https://sopkit.github.io/json-to-tsv-converter) - Convert JSON data to Tab-Separated Values (TSV) format instantly. Our free online converter helps you prepare data for Excel and other spreadsheet applications.
 - [JSON to XML Converter](https://sopkit.github.io/json-to-xml-converter) - Convert JSON data to XML format instantly. Our free online tool handles nesting and attributes to ensure a clean transformation for legacy system compatibility.
 - [JSON Validator](https://sopkit.github.io/json-validator) - Validate your JSON data for syntax errors and structural integrity instantly. Our free online tool helps you catch bugs and ensure your JSON is RFC-compliant.
-- [JSON Viewer](https://sopkit.github.io/json-viewer) - Free json viewer tool to process your data instantly with privacy-friendly browser-based workflows. Fast, 100% private client-side processing with zero file uploads and no registration required.
+- [JSON Viewer](https://sopkit.github.io/json-viewer) - Explore JSON in collapsible tree, graph and code views with search. Handles huge files — free, no signup.
 - [LeadGenius API Key Tester](https://sopkit.github.io/api-key-tester/leadgenius) - Safely validate your LeadGenius API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
 - [Leadspace API Key Tester](https://sopkit.github.io/api-key-tester/leadspace) - Safely validate your Leadspace API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
 - [Loops API Key Tester](https://sopkit.github.io/api-key-tester/loops) - Safely validate your Loops API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
@@ -428,7 +428,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 ### Utility Tools
 
 - [AdSense Calculator](https://sopkit.github.io/adsense-calculator) - Calculate estimated Google AdSense earnings based on page views, CTR, and RPM/CPC rates instantly in your browser.
-- [Age Calculator](https://sopkit.github.io/age-calculator) - Free age calculator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Age Calculator](https://sopkit.github.io/age-calculator) - Calculate exact age in years, months and days from any birthdate. Birthday countdown included — free, no signup.
 - [Angle Converter](https://sopkit.github.io/angle-converter) - Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and accurate.
 - [Apparent Power Converter](https://sopkit.github.io/apparent-power-converter) - Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.
 - [Area Converter](https://sopkit.github.io/area-converter) - Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design projects.
@@ -451,69 +451,69 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [DNS Records Checker](https://sopkit.github.io/dns-records-checker) - Retrieve all DNS records (A, MX, TXT, CNAME) for any domain instantly. Our free online tool helps you troubleshoot website hosting and email configuration issues.
 - [Domain Age Checker](https://sopkit.github.io/domain-age-checker) - Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis.
 - [Domain to IP Converter](https://sopkit.github.io/domain-to-ip-converter) - Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues.
-- [Each Converter](https://sopkit.github.io/each-converter) - Free each converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Energy Converter](https://sopkit.github.io/energy-converter) - Free energy converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Facebook ID Finder](https://sopkit.github.io/facebook-id-finder) - Free facebook id finder tool to process your data instantly with privacy-friendly browser-based workflows.
-- [FAQ Schema Generator](https://sopkit.github.io/faq-schema-generator) - Free faq schema generator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Frequency Converter](https://sopkit.github.io/frequency-converter) - Free frequency converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Get HTTP Headers](https://sopkit.github.io/get-http-headers) - Free get http headers tool to process your data instantly with privacy-friendly browser-based workflows.
-- [GST Calculator](https://sopkit.github.io/gst-calculator) - Free gst calculator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [HEX to RGB Converter](https://sopkit.github.io/hex-to-rgb-converter) - Free hex to rgb converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Hosting Checker](https://sopkit.github.io/hosting-checker) - Free hosting checker tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Htaccess Redirect Generator](https://sopkit.github.io/htaccess-redirect-generator) - Free htaccess redirect generator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [HTTP Status Code Checker](https://sopkit.github.io/http-status-code-checker) - Free http status code checker tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Illuminance Converter](https://sopkit.github.io/illuminance-converter) - Free illuminance converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Each Converter](https://sopkit.github.io/each-converter) - Convert 'each' pricing to bulk totals and unit costs. Compare pack deals instantly — free, no signup.
+- [Energy Converter](https://sopkit.github.io/energy-converter) - Convert energy between joules, calories, kWh and BTU. Physics and bills alike — free, no signup.
+- [Facebook ID Finder](https://sopkit.github.io/facebook-id-finder) - Find the numeric ID of any Facebook profile, page or post from its URL. For developers — free, no signup.
+- [FAQ Schema Generator](https://sopkit.github.io/faq-schema-generator) - Generate valid FAQPage JSON-LD schema for rich Google results. Paste Q&As, copy code — free.
+- [Frequency Converter](https://sopkit.github.io/frequency-converter) - Convert frequency between Hz, kHz, MHz and GHz. Radio and audio math — free, no signup.
+- [Get HTTP Headers](https://sopkit.github.io/get-http-headers) - Inspect HTTP response headers of any URL: server, caching, security and redirects. Free, no signup.
+- [GST Calculator](https://sopkit.github.io/gst-calculator) - Add or remove 5%, 12%, 18% and 28% GST for Indian billing. Inclusive-exclusive math — free.
+- [HEX to RGB Converter](https://sopkit.github.io/hex-to-rgb-converter) - Convert HEX colors to RGB values with live preview. Copy for CSS in one click — free, no signup.
+- [Hosting Checker](https://sopkit.github.io/hosting-checker) - Discover where any website is hosted: provider, IP and nameservers. Competitor intel — free.
+- [Htaccess Redirect Generator](https://sopkit.github.io/htaccess-redirect-generator) - Generate Apache .htaccess 301 redirect rules without regex pain. HTTP to HTTPS too — free.
+- [HTTP Status Code Checker](https://sopkit.github.io/http-status-code-checker) - Look up any HTTP status code: 200, 301, 404, 500 and more explained plainly. Debug faster — free.
+- [Illuminance Converter](https://sopkit.github.io/illuminance-converter) - Convert illuminance between lux, foot-candles and lumens. Lighting design math — free.
 - [IndexNow Submitter](https://sopkit.github.io/indexnow) - Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [Internet Speed Test](https://sopkit.github.io/internet-speed-test) - Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.
-- [IP Address Lookup](https://sopkit.github.io/ip-address-lookup) - Free ip address lookup tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Length Converter](https://sopkit.github.io/length-converter) - Free length converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Loan Calculator](https://sopkit.github.io/loan-calculator) - Free loan calculator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Margin Calculator](https://sopkit.github.io/margin-calculator) - Free margin calculator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [MD5 Generator](https://sopkit.github.io/md5-generator) - Free md5 generator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Number to Roman Numerals](https://sopkit.github.io/number-to-roman-numerals) - Free number to roman numerals tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Pace Converter](https://sopkit.github.io/pace-converter) - Free pace converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Page Size Checker](https://sopkit.github.io/page-size-checker) - Free page size checker tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Parts Per Converter](https://sopkit.github.io/parts-per-converter) - Free parts per converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [IP Address Lookup](https://sopkit.github.io/ip-address-lookup) - See your public IP, location, ISP and timezone instantly. Network details — free, no signup.
+- [Length Converter](https://sopkit.github.io/length-converter) - Convert length between mm, cm, inches, feet, meters and miles. Everyday math — free.
+- [Loan Calculator](https://sopkit.github.io/loan-calculator) - Plan loans with EMI, total interest and amortization schedules. Borrow smarter — free.
+- [Margin Calculator](https://sopkit.github.io/margin-calculator) - Calculate profit margins, markups and breakeven points. Pricing clarity — free, no signup.
+- [MD5 Generator](https://sopkit.github.io/md5-generator) - Generate MD5 hashes for passwords and file checksums. Instant digests — free, no signup.
+- [Number to Roman Numerals](https://sopkit.github.io/number-to-roman-numerals) - Convert numbers to Roman numerals (MMXXVI) and back. History homework — free, no signup.
+- [Pace Converter](https://sopkit.github.io/pace-converter) - Convert running pace between min/km, min/mile and speed. Race planning — free, no signup.
+- [Page Size Checker](https://sopkit.github.io/page-size-checker) - Check any page's total weight: HTML, CSS, JS and images broken down. Speed audit — free.
+- [Parts Per Converter](https://sopkit.github.io/parts-per-converter) - Convert ppm, ppb, percent and mg/L concentrations. Lab and pool math — free, no signup.
 - [Secure Password Generator](https://sopkit.github.io/secure-password-generator) - Create cryptographically secure, random passwords online. Customize length, character sets, and verify strength locally.
 - [Password Generator](https://sopkit.github.io/password-generator) - Generate cryptographically secure, random passwords with custom lengths, symbols, numbers, and uppercase characters locally on your device.
-- [Paypal Fee Calculator](https://sopkit.github.io/paypal-fee-calculator) - Free paypal fee calculator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Percentage Calculator](https://sopkit.github.io/percentage-calculator) - Free percentage calculator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Power Converter](https://sopkit.github.io/power-converter) - Free power converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Pressure Converter](https://sopkit.github.io/pressure-converter) - Free pressure converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Privacy Policy Generator](https://sopkit.github.io/privacy-policy-generator) - Free privacy policy generator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Probability Calculator](https://sopkit.github.io/probability-calculator) - Free probability calculator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [QR Code Decoder](https://sopkit.github.io/qr-code-decoder) - Free qr code decoder tool to process your data instantly with privacy-friendly browser-based workflows.
-- [QR Code Generator](https://sopkit.github.io/qr-code-generator) - Free qr code generator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Random UUID Generator](https://sopkit.github.io/random-uuid-generator) - Free random uuid generator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Reactive Energy Converter](https://sopkit.github.io/reactive-energy-converter) - Free reactive energy converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Reactive Power Converter](https://sopkit.github.io/reactive-power-converter) - Free reactive power converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Redirect Checker](https://sopkit.github.io/redirect-checker) - Free redirect checker tool to process your data instantly with privacy-friendly browser-based workflows.
-- [RGB to HEX Converter](https://sopkit.github.io/rgb-to-hex-converter) - Free rgb to hex converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Roman Numerals to Number](https://sopkit.github.io/roman-numerals-to-number) - Free roman numerals to number tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Sales Tax Calculator](https://sopkit.github.io/sales-tax-calculator) - Free sales tax calculator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Screen Resolution Simulator](https://sopkit.github.io/screen-resolution-simulator) - Free screen resolution simulator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Server Status Checker](https://sopkit.github.io/server-status-checker) - Free server status checker tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Speed Converter](https://sopkit.github.io/speed-converter) - Free speed converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Temperature Converter](https://sopkit.github.io/temperature-converter) - Free temperature converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Time Converter](https://sopkit.github.io/time-converter) - Free time converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Torque Converter](https://sopkit.github.io/torque-converter) - Free torque converter tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Paypal Fee Calculator](https://sopkit.github.io/paypal-fee-calculator) - See exactly what PayPal takes from every sale, domestic and international. Price with fees in mind — free.
+- [Percentage Calculator](https://sopkit.github.io/percentage-calculator) - Find percentages, increases, decreases and reverses in one box. Everyday math — free, no signup.
+- [Power Converter](https://sopkit.github.io/power-converter) - Convert power between watts, kilowatts, horsepower and BTU/hr. Engine math — free, no signup.
+- [Pressure Converter](https://sopkit.github.io/pressure-converter) - Convert pressure between PSI, bar, kPa, atm and mmHg. Tire and lab math — free.
+- [Privacy Policy Generator](https://sopkit.github.io/privacy-policy-generator) - Generate a GDPR-friendly privacy policy for your site or app in minutes. Copy-ready — free.
+- [Probability Calculator](https://sopkit.github.io/probability-calculator) - Calculate odds for dice, cards, coins and events with steps. Stats clarity — free, no signup.
+- [QR Code Decoder](https://sopkit.github.io/qr-code-decoder) - Read QR codes from uploaded images to reveal links and text. Instant decode — free, no signup.
+- [QR Code Generator](https://sopkit.github.io/qr-code-generator) - Make custom QR codes with colors, logos and frames for links, Wi-Fi and UPI. Free, no signup.
+- [Random UUID Generator](https://sopkit.github.io/random-uuid-generator) - Generate random UUIDs v4 in bulk for databases and testing. One click, a thousand IDs — free.
+- [Reactive Energy Converter](https://sopkit.github.io/reactive-energy-converter) - Convert reactive energy between kVArh, MVArh and more. Power systems math — free, no signup.
+- [Reactive Power Converter](https://sopkit.github.io/reactive-power-converter) - Convert reactive power between kVAr, MVAr and VAr. Electrical grids simplified — free.
+- [Redirect Checker](https://sopkit.github.io/redirect-checker) - Trace any URL's full redirect chain: 301s, 302s and final landing page. SEO audits — free.
+- [RGB to HEX Converter](https://sopkit.github.io/rgb-to-hex-converter) - Convert RGB values to HEX codes with live color preview. One-click CSS copy — free.
+- [Roman Numerals to Number](https://sopkit.github.io/roman-numerals-to-number) - Translate Roman numerals (XIV, MMXXVI) to regular numbers. Ancient math — free.
+- [Sales Tax Calculator](https://sopkit.github.io/sales-tax-calculator) - Add US state sales tax to prices or back it out. Checkout math — free, no signup.
+- [Screen Resolution Simulator](https://sopkit.github.io/screen-resolution-simulator) - Preview your site at phone, tablet, laptop and 4K sizes. Responsive testing — free.
+- [Server Status Checker](https://sopkit.github.io/server-status-checker) - Check if any website or server is up, slow or down right now. Instant status — free.
+- [Speed Converter](https://sopkit.github.io/speed-converter) - Convert speed between km/h, mph, knots, m/s and Mach. Travel math — free, no signup.
+- [Temperature Converter](https://sopkit.github.io/temperature-converter) - Convert Celsius, Fahrenheit and Kelvin with formula shown. Weather and lab — free.
+- [Time Converter](https://sopkit.github.io/time-converter) - Convert seconds to hours, days to weeks, and across timezones. Schedule math — free.
+- [Torque Converter](https://sopkit.github.io/torque-converter) - Convert torque between Nm, ft-lb, kg-m and more. Garage and engineering — free.
 - [URL Decode](https://sopkit.github.io/url-decode) - Fast and privacy-conscious URL Decode to decode web links and URI parameters directly in your browser with no server logging.
 - [URL Encode](https://sopkit.github.io/url-encode) - Fast and privacy-conscious URL Encode to encode web links and URI parameters directly in your browser with no server logging.
 - [URL Opener](https://sopkit.github.io/url-opener) - Fast and privacy-conscious URL Opener to opener web links and URI parameters directly in your browser with no server logging.
 - [URL Parser](https://sopkit.github.io/url-parser) - Fast and privacy-conscious URL Parser to parser web links and URI parameters directly in your browser with no server logging.
-- [URL Rewriting Tool](https://sopkit.github.io/url-rewriting-tool) - Free url rewriting tool tool to process your data instantly with privacy-friendly browser-based workflows.
+- [URL Rewriting Tool](https://sopkit.github.io/url-rewriting-tool) - Generate clean rewrite rules for Apache and Nginx. Pretty URLs without pain — free.
 - [URL Shortener](https://sopkit.github.io/url-shortener) - Shorten long web URLs into compact, easily shareable links for social media, marketing campaigns, and messages with zero tracking.
 - [UTM Builder](https://sopkit.github.io/utm-builder) - Easily build campaign URLs with UTM parameters for Google Analytics tracking. Free online UTM builder for marketing campaigns, social media, and email links — 100% private, no signup.
-- [Voltage Converter](https://sopkit.github.io/voltage-converter) - Free voltage converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Volume Converter](https://sopkit.github.io/volume-converter) - Free volume converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Volumetric Flow Rate Converter](https://sopkit.github.io/volumetric-flow-rate-converter) - Free volumetric flow rate converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Weight Converter](https://sopkit.github.io/weight-converter) - Free weight converter tool to process your data instantly with privacy-friendly browser-based workflows.
-- [What Is My Browser](https://sopkit.github.io/what-is-my-browser) - Free what is my browser tool to process your data instantly with privacy-friendly browser-based workflows.
-- [What Is My IP Address](https://sopkit.github.io/what-is-my-ip-address) - Free what is my ip address tool to process your data instantly with privacy-friendly browser-based workflows.
-- [What Is My Screen Resolution](https://sopkit.github.io/what-is-my-screen-resolution) - Free what is my screen resolution tool to process your data instantly with privacy-friendly browser-based workflows.
-- [What Is My User Agent](https://sopkit.github.io/what-is-my-user-agent) - Free what is my user agent tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Whois Domain Lookup](https://sopkit.github.io/whois-domain-lookup) - Free whois domain lookup tool to process your data instantly with privacy-friendly browser-based workflows.
-- [WordPress Theme Detector](https://sopkit.github.io/wordpress-theme-detector) - Free wordpress theme detector tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Voltage Converter](https://sopkit.github.io/voltage-converter) - Convert voltage between volts, millivolts and kilovolts. Circuit math — free, no signup.
+- [Volume Converter](https://sopkit.github.io/volume-converter) - Convert volume between liters, gallons, cups and mL. Cooking and lab — free.
+- [Volumetric Flow Rate Converter](https://sopkit.github.io/volumetric-flow-rate-converter) - Convert flow rates: L/min, GPM, CFM and m³/h. Plumbing math — free, no signup.
+- [Weight Converter](https://sopkit.github.io/weight-converter) - Convert weight between kg, pounds, ounces and grams. Gym and shipping — free.
+- [What Is My Browser](https://sopkit.github.io/what-is-my-browser) - Instantly see your browser name, version, OS and engine. Debug compat — free.
+- [What Is My IP Address](https://sopkit.github.io/what-is-my-ip-address) - See your public IPv4/IPv6 address with location and ISP. One glance — free.
+- [What Is My Screen Resolution](https://sopkit.github.io/what-is-my-screen-resolution) - See your screen resolution, viewport and pixel ratio live. Design reference — free.
+- [What Is My User Agent](https://sopkit.github.io/what-is-my-user-agent) - View your full User-Agent string with parsed browser and OS. Copy ready — free.
+- [Whois Domain Lookup](https://sopkit.github.io/whois-domain-lookup) - Look up any domain's owner, registrar and expiry dates. Due diligence — free.
+- [WordPress Theme Detector](https://sopkit.github.io/wordpress-theme-detector) - Detect any site's WordPress theme and plugins in seconds. Spy ethically — free.
 - [Other Tools](https://sopkit.github.io/other-tools) - Free Other Tools online tool. Fast and secure. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [Text Tools](https://sopkit.github.io/text-tools) - Format, convert, and manipulate text content. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [WhatsApp Link Generator](https://sopkit.github.io/whatsapp-link-generator) - Generate high-converting, customized whatsapp link ideas, copy, and templates. Easily customize and copy results in one click.
@@ -531,18 +531,18 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Complete SEO Audit Tool](https://sopkit.github.io/seo-audit-tool) - Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations.
 - [Backlink Checker](https://sopkit.github.io/backlink-checker) - Analyze backlinks for any website with our free backlink checker. Discover referring domains, anchor texts, and link quality metrics instantly. No signup required, unlimited checks, SEO-grade data.
 - [Bulk Keyword Rank Checker](https://sopkit.github.io/bulk-keyword-rank-checker) - Check Google rankings for multiple keywords instantly with our free bulk keyword rank checker. Track keyword positions, monitor competitors, and get accurate SERP data. No signup required.
-- [Google Cache Checker](https://sopkit.github.io/google-cache-checker) - Free google cache checker tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Google Index Checker](https://sopkit.github.io/google-index-checker) - Free google index checker tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Keyword Density Checker](https://sopkit.github.io/keyword-density-checker) - Free keyword density checker tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Keywords Suggestion Tool](https://sopkit.github.io/keywords-suggestion-tool) - Free keywords suggestion tool tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Meta Tag Generator](https://sopkit.github.io/meta-tag-generator) - Free meta tag generator tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Open Graph Checker](https://sopkit.github.io/open-graph-checker) - Free open graph checker tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Open Graph Generator](https://sopkit.github.io/open-graph-generator) - Free open graph generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Google Cache Checker](https://sopkit.github.io/google-cache-checker) - See Google's cached snapshot of any page to verify indexing. Freshness check — free.
+- [Google Index Checker](https://sopkit.github.io/google-index-checker) - Check if any URL is indexed in Google right now. site: lookups made easy — free.
+- [Keyword Density Checker](https://sopkit.github.io/keyword-density-checker) - Measure keyword frequency to dodge stuffing penalties. TF analysis — free, no signup.
+- [Keywords Suggestion Tool](https://sopkit.github.io/keywords-suggestion-tool) - Get long-tail keyword ideas from seed terms with questions and modifiers. Free research.
+- [Meta Tag Generator](https://sopkit.github.io/meta-tag-generator) - Generate complete meta tag sets: title, description, OG, Twitter and robots. Copy all — free.
+- [Open Graph Checker](https://sopkit.github.io/open-graph-checker) - Preview how links look on Facebook, LinkedIn and Slack. Fix broken cards — free.
+- [Open Graph Generator](https://sopkit.github.io/open-graph-generator) - Build OG title, description and image tags for perfect social shares. Copy code — free.
 - [SEO Toolkit](https://sopkit.github.io/seotoolkit) - Comprehensive all-in-one technical SEO audit and website analysis tool covering meta tags, performance headers, mobile viewports, and links.
-- [Twitter Card Generator](https://sopkit.github.io/twitter-card-generator) - Free twitter card generator tool to process your data instantly with privacy-friendly browser-based workflows.
+- [Twitter Card Generator](https://sopkit.github.io/twitter-card-generator) - Create Twitter summary cards with images for bigger, clickable tweets. Free, no signup.
 - [Visual Sitemap Generator](https://sopkit.github.io/visual-sitemap) - Visualize your website's sitemap structure instantly. Enter your XML sitemap URL to generate a dynamic tree view of your site hierarchy.
-- [Website Ranking Checker](https://sopkit.github.io/website-ranking-checker) - Free website ranking checker tool to process your data instantly with privacy-friendly browser-based workflows.
-- [Sitemap Url Downloader](https://sopkit.github.io/sitemap-url-downloader) - Free Sitemap Url Downloader online. Sitemap Url Downloader allows you to optimize your website quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
+- [Website Ranking Checker](https://sopkit.github.io/website-ranking-checker) - Track keyword positions across Google results daily. Ranking history — free, no signup.
+- [Sitemap Url Downloader](https://sopkit.github.io/sitemap-url-downloader) - Extract every URL from any XML sitemap for audits and migrations. Bulk export — free.
 
 ### AI Prompt Tools
 
@@ -627,7 +627,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Fuel Cost Calculator](https://sopkit.github.io/fuel-cost-calculator) - Estimate the fuel needed and total cost for a trip from distance, fuel economy, and price per litre. Free trip fuel cost calculator.
 - [Inflation Calculator](https://sopkit.github.io/inflation-calculator) - See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.
 - [Break-Even Calculator](https://sopkit.github.io/break-even-calculator) - Calculate the break-even point in units and revenue from fixed costs, variable cost per unit, and selling price. Free business calculator.
-- [Food Cost Calculator](https://sopkit.github.io/food-cost-calculator) - Calculate your food cost calculator instantly. Free browser-based calculator with detailed breakdowns.
+- [Food Cost Calculator](https://sopkit.github.io/food-cost-calculator) - Price menu items right with ingredient costs, margins and plate percentages. Restaurant math — free.
 - [Freelance Rate Calculator](https://sopkit.github.io/freelance-rate-calculator) - Calculate your freelance rate calculator instantly. Free browser-based calculator with detailed breakdowns.
 - [Rent Affordability Calculator](https://sopkit.github.io/rent-affordability-calculator) - Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns.
 - [Home Loan Eligibility Calculator](https://sopkit.github.io/home-loan-eligibility-calculator) - Calculate your home loan eligibility calculator instantly. Free browser-based calculator with detailed breakdowns.

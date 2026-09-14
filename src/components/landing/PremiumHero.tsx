@@ -115,39 +115,47 @@ export function PremiumHero({
 	}, []);
 
 	return (
-		<div className="relative pt-12 pb-10 md:pt-20 md:pb-16 flex flex-col justify-center items-center">
-			{/* Subtle Ambient Radial Glow */}
-			<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-80 bg-gradient-to-tr from-blue-600/10 via-sky-500/10 to-indigo-600/10 blur-[120px] rounded-full pointer-events-none -z-10" />
+		<div className="relative pt-10 pb-12 md:pt-20 md:pb-20 flex flex-col justify-center items-center">
+			{/* Multi-Stop Ambient Aurora Glow */}
+			<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-96 bg-gradient-to-tr from-blue-600/15 via-sky-400/10 to-indigo-600/15 blur-[140px] rounded-full pointer-events-none -z-10" />
+			<div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-72 h-72 bg-blue-500/10 blur-[90px] rounded-full pointer-events-none -z-10" />
 
 			<div className="w-full max-w-4xl mx-auto text-center px-4 space-y-6">
-				{/* Minimal Pill Badge */}
-				<div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-muted/60 hover:bg-muted border border-border/50 text-foreground text-xs font-medium backdrop-blur-sm transition-colors select-none">
-					<Lock className="h-3.5 w-3.5 text-blue-500" />
-					<span>100% Client-Side Sandbox</span>
-					<span className="text-muted-foreground/50">•</span>
-					<span className="text-muted-foreground">{SITE_CONFIG.toolCountString} Free Tools</span>
+				{/* Modern Trust Pill Badges */}
+				<div className="inline-flex flex-wrap items-center justify-center gap-2 p-1 rounded-full bg-card/60 border border-border/70 backdrop-blur-md text-xs font-medium shadow-sm select-none">
+					<div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold">
+						<Lock className="h-3.5 w-3.5" />
+						<span>100% Browser Sandbox</span>
+					</div>
+					<span className="hidden sm:inline text-muted-foreground/40">•</span>
+					<div className="hidden sm:inline-flex items-center gap-1 text-muted-foreground px-2">
+						<Sparkles className="h-3 w-3 text-amber-500" />
+						<span>Zero Cloud Uploads</span>
+					</div>
+					<span className="hidden sm:inline text-muted-foreground/40">•</span>
+					<span className="text-muted-foreground px-2.5 py-0.5">{SITE_CONFIG.toolCountString} Free Tools</span>
 				</div>
 
-			{/* Minimal Crisp Headline — renders the page-specific title so every
-			    hub page ships a unique, keyword-rich H1 for crawlers. */}
-			<div className="space-y-3">
-				{(() => {
-					const parts = title.split("—").map((s) => s.trim()).filter(Boolean);
-					const lead = parts.length > 1 ? parts.slice(0, -1).join(" — ") : null;
-					const highlight = parts.length > 1 ? parts[parts.length - 1] : title;
-					return (
-						<h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-foreground leading-[1.1]">
-							{lead ? (
-								<>
-									{lead} <br className="hidden sm:inline" />
-								</>
-							) : null}
-							<span className="bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 dark:from-blue-400 dark:via-sky-300 dark:to-indigo-300 bg-clip-text text-transparent">
-								{highlight}
-							</span>
-						</h1>
-					);
-				})()}
+				{/* Minimal Crisp Headline — renders the page-specific title so every
+				    hub page ships a unique, keyword-rich H1 for crawlers. */}
+				<div className="space-y-3">
+					{(() => {
+						const parts = title.split("—").map((s) => s.trim()).filter(Boolean);
+						const lead = parts.length > 1 ? parts.slice(0, -1).join(" — ") : null;
+						const highlight = parts.length > 1 ? parts[parts.length - 1] : title;
+						return (
+							<h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-foreground leading-[1.12]">
+								{lead ? (
+									<>
+										{lead} <br className="hidden sm:inline" />
+									</>
+								) : null}
+								<span className="bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 dark:from-blue-400 dark:via-sky-300 dark:to-indigo-300 bg-clip-text text-transparent">
+									{highlight}
+								</span>
+							</h1>
+						);
+					})()}
 					<p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
 						{subtitle}
 					</p>
@@ -158,7 +166,7 @@ export function PremiumHero({
 					onSubmit={handleSearch}
 					className="relative w-full max-w-xl mx-auto group z-30 pt-2"
 				>
-					<div className="relative flex items-center shadow-lg shadow-black/5 dark:shadow-black/20 border border-border/80 dark:border-border/60 hover:border-blue-500/50 focus-within:border-blue-500 focus-within:ring-4 focus-within:ring-blue-500/15 rounded-2xl bg-card/90 backdrop-blur-xl transition-all duration-200">
+					<div className="relative flex items-center shadow-xl shadow-blue-500/5 dark:shadow-black/30 border border-border/80 dark:border-border/60 hover:border-blue-500/50 focus-within:border-blue-500 focus-within:ring-4 focus-within:ring-blue-500/15 rounded-2xl bg-card/95 backdrop-blur-xl transition-all duration-200">
 						<Search className="absolute left-4.5 h-4.5 w-4.5 text-muted-foreground group-focus-within:text-blue-500 transition-colors shrink-0" />
 						<input
 							ref={inputRef}
@@ -198,7 +206,7 @@ export function PremiumHero({
 							<button
 								type="submit"
 								aria-label="Search"
-								className="h-8.5 sm:h-9 px-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-xs transition-transform active:scale-95 cursor-pointer shadow-sm"
+								className="h-9 px-4 rounded-xl bg-primary text-primary-foreground font-semibold text-xs transition-all hover:bg-primary/90 active:scale-95 cursor-pointer shadow-sm shadow-primary/25"
 							>
 								Search
 							</button>
@@ -209,7 +217,7 @@ export function PremiumHero({
 					{showSuggestions && (
 						<div
 							ref={dropdownRef}
-							className="absolute left-0 right-0 top-full mt-2 bg-card border border-border shadow-xl z-50 max-h-[320px] overflow-y-auto rounded-2xl p-1.5 text-left divide-y divide-border/20"
+							className="absolute left-0 right-0 top-full mt-2 bg-card border border-border/80 shadow-2xl z-50 max-h-[320px] overflow-y-auto rounded-2xl p-1.5 text-left divide-y divide-border/20 backdrop-blur-2xl"
 						>
 							<div className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground/60 flex items-center justify-between">
 								<span>{query.trim() ? "Search Results" : "Quick Suggestions"}</span>
@@ -255,13 +263,13 @@ export function PremiumHero({
 				<div className="flex flex-wrap items-center justify-center gap-1.5 pt-1">
 					<span className="text-xs text-muted-foreground/70 flex items-center gap-1 mr-1">
 						<Sparkles className="h-3 w-3 text-blue-500" />
-						Popular:
+						Trending:
 					</span>
 					{QUICK_TRENDING_TOOLS.map((item) => (
 						<a
 							key={item.route}
 							href={item.route}
-							className="inline-flex items-center px-2.5 py-1 rounded-full bg-muted/40 hover:bg-muted/80 border border-border/40 hover:border-border text-xs text-muted-foreground hover:text-foreground transition-colors"
+							className="inline-flex items-center px-3 py-1 rounded-full bg-muted/50 hover:bg-primary hover:text-primary-foreground border border-border/40 hover:border-transparent text-xs text-muted-foreground transition-all duration-200"
 						>
 							{item.name}
 						</a>

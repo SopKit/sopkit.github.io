@@ -50,8 +50,13 @@ export function AppleFooter({ categories = [] }: { categories?: CategoryItem[] }
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
 					{/* Brand column */}
 					<div className="space-y-4">
-						<Link href={STATIC_ROUTES.HOME} className="text-lg font-bold tracking-tight">
-							SopKit
+						<Link href={STATIC_ROUTES.HOME} className="flex items-center gap-2 group w-fit">
+							<div className="w-7 h-7 rounded-lg bg-blue-600 dark:bg-blue-500 flex items-center justify-center text-white font-black text-sm shadow-sm shadow-blue-500/30 group-hover:scale-105 transition-transform">
+								S
+							</div>
+							<span className="text-lg font-bold tracking-tight text-foreground group-hover:opacity-90 transition-opacity">
+								Sop<span className="text-blue-600 dark:text-blue-400">Kit</span>
+							</span>
 						</Link>
 						<p className="text-xs leading-relaxed text-muted-foreground max-w-xs">
 							{SITE_CONFIG.toolCountString} free tools for creators, developers, and professionals.
