@@ -45,6 +45,10 @@ export interface Tool {
 	categoryKey?: string;
 	categoryName?: string;
 	categorySlug?: string;
+	executionType?: "client" | "external" | "hybrid" | "server";
+	providerName?: string;
+	dataTransmissionNotice?: string;
+	isCredentialSensitive?: boolean;
 	features?: string[];
 	howTo?: {
 		name?: string;
@@ -54,6 +58,16 @@ export interface Tool {
 	author?: any;
 	reviews?: any[];
 	article?: string;
+}
+
+export interface SearchToolRecord {
+	id: string;
+	name: string;
+	route: string;
+	category: string;
+	description?: string;
+	popular?: boolean;
+	executionType?: "client" | "external" | "hybrid" | "server";
 }
 
 export type ToolItem = Tool;
@@ -83,6 +97,19 @@ function enrichTool(tool: Tool): Tool {
 export function getAllTools(): Tool[] {
 	const rawTools = Object.values(categories).flatMap((cat) => cat?.tools || []);
 	return rawTools.map(enrichTool);
+}
+
+export function getSearchToolRecords(): SearchToolRecord[] {
+	const rawTools = Object.values(categories).flatMap((cat) => cat?.tools || []);
+	return rawTools.map((t) => ({
+		id: t.id,
+		name: t.name,
+		route: t.route,
+		category: t.category,
+		description: t.description,
+		popular: t.popular,
+		executionType: t.id === "ai-image-generator" ? "external" : "client",
+	}));
 }
 
 export function getToolByRoute(route: string): Tool | undefined {

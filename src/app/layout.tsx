@@ -90,7 +90,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: `SopKit — ${TOOL_COUNT_STRING} Free Online Tools`,
-		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
+		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. Fast browser-sandboxed utilities with transparent processing.",
 		url: "https://sopkit.github.io/",
 		siteName: "SopKit",
 		images: [{ url: "https://sopkit.github.io/og-image.png", width: 1200, height: 630 }],
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: `SopKit — ${TOOL_COUNT_STRING} Free Online Tools`,
-		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.",
+		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. Fast browser-sandboxed utilities with transparent processing.",
 		images: ["https://sopkit.github.io/og-image.png"],
 	},
 	robots: {
@@ -246,7 +246,7 @@ export default function RootLayout({
 						"@type": "WebSite",
 						name: "SopKit",
 						url: `${SITE_URL}/`,
-						description: `${TOOL_COUNT_STRING} free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.`,
+						description: `${TOOL_COUNT_STRING} free online tools for image, PDF, video, audio, SEO, and developer workflows. Fast browser-sandboxed utilities with transparent data processing.`,
 						potentialAction: {
 							"@type": "SearchAction",
 							target: {
@@ -288,11 +288,13 @@ export default function RootLayout({
               gtag('config', 'G-HKX99R92SE');
             `}
 				</Script>
-				<Script
-					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1828915420581549"
-					strategy="lazyOnload"
-					crossOrigin="anonymous"
-				/>
+				{process.env.NEXT_PUBLIC_ENABLE_ADS === "true" && (
+					<Script
+						src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1828915420581549"
+						strategy="lazyOnload"
+						crossOrigin="anonymous"
+					/>
+				)}
 				{/* Clarity Tracking Code */}
 				<Script
 					id="clarity-tracking"

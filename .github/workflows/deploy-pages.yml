@@ -35,6 +35,12 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      - name: Verify Types, Architecture & Registry
+        run: |
+          bun run typecheck
+          bun run test:arch
+          bun run validate:registry
+
       - name: Build with Next.js
         run: bun run build
         env:

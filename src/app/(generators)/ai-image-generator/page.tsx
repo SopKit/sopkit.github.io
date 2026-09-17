@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "AI Image Generator",
-	description: "Privacy-friendly, 100% client-side ai image generation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Create AI-generated images from text prompts online. Fast browser-based interface powered by Pollinations.ai with customizable art styles, aspect ratios, and instant downloads.",
 	route: "/ai-image-generator",
 	category: "generators",
 });

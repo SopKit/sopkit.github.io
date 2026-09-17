@@ -14,7 +14,7 @@ const nextConfig = {
 
 	// TypeScript configuration
 	typescript: {
-		ignoreBuildErrors: true,
+		ignoreBuildErrors: false,
 	},
 
 	// Strips console logs in production to shrink package sizes and speed up loads

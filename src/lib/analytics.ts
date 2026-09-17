@@ -17,13 +17,41 @@ declare global {
 }
 
 /**
+ * Check if analytics telemetry is permitted by user settings and environment.
+ */
+export function isAnalyticsAllowed(): boolean {
+	if (typeof window === "undefined") return false;
+	try {
+		if ((window as any).__sopkit_analytics_disabled) return false;
+		if (localStorage.getItem("sopkit_consent_analytics") === "denied") return false;
+	} catch {
+		// Ignore storage errors in restrictive/incognito contexts
+	}
+	return true;
+}
+
+/**
+ * Redact sensitive patterns (emails, tokens, keys) and clamp search query length.
+ */
+export function sanitizeSearchQuery(rawQuery: string): string {
+	if (!rawQuery) return "";
+	let sanitized = rawQuery.trim().toLowerCase();
+	// Redact emails
+	sanitized = sanitized.replace(/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g, "[redacted_email]");
+	// Redact long random tokens/hashes (24+ continuous alphanumeric chars)
+	sanitized = sanitized.replace(/\b[a-zA-Z0-9_-]{24,}\b/g, "[redacted_token]");
+	// Truncate to safe length (max 40 characters)
+	return sanitized.slice(0, 40);
+}
+
+/**
  * Safe invocation of gtag that queues events if gtag.js has not finished initializing.
  */
 export function sendGAEvent(
 	eventName: string,
 	eventParams: Record<string, any> = {}
 ) {
-	if (typeof window === "undefined") return;
+	if (typeof window === "undefined" || !isAnalyticsAllowed()) return;
 
 	try {
 		if (typeof window.gtag === "function") {
@@ -40,30 +68,37 @@ export function sendGAEvent(
 }
 
 /**
- * Track SPA Page View on Next.js client-side route transitions
+ * Track SPA Page View on Next.js client-side route transitions (query strings stripped)
  */
 export function trackPageView(url: string, title?: string) {
+	if (!isAnalyticsAllowed()) return;
+
+	// Strip query parameters and hash fragments to prevent leaking tokens or query state
+	const cleanPath = (url || "/").split("?")[0].split("#")[0] || "/";
+	const origin = typeof window !== "undefined" ? window.location.origin : "https://sopkit.github.io";
+
 	sendGAEvent("page_view", {
-		page_location: window.location.href,
-		page_path: url,
+		page_location: `${origin}${cleanPath}`,
+		page_path: cleanPath,
 		page_title: title || (typeof document !== "undefined" ? document.title : ""),
 		send_to: GA_MEASUREMENT_ID,
 	});
 }
 
 /**
- * Track Search Discovery (Hero search or Tool Directory filter)
+ * Track Search Discovery (Hero search or Tool Directory filter, sanitized)
  */
 export function trackSearch(
 	searchTerm: string,
 	resultsCount?: number,
 	category?: string
 ) {
-	if (!searchTerm.trim()) return;
+	const sanitized = sanitizeSearchQuery(searchTerm);
+	if (!sanitized) return;
 	sendGAEvent("search", {
-		search_term: searchTerm.trim().toLowerCase(),
+		search_term: sanitized,
 		results_count: resultsCount,
-		search_category: category || "all",
+		search_category: (category || "all").slice(0, 30),
 	});
 }
 
@@ -191,27 +226,46 @@ export function trackThemeChange(theme: "light" | "dark" | "system") {
 }
 
 /**
- * Track Outbound Link Clicks (GitHub, External Documentation, Social)
+ * Track Outbound Link Clicks (origin + pathname only, strip query parameters)
  */
 export function trackOutboundClick(destinationUrl: string, linkText?: string) {
-	sendGAEvent("outbound_click", {
-		destination_url: destinationUrl,
-		link_text: linkText || "external_link",
-	});
+	try {
+		const parsed = new URL(destinationUrl, "https://sopkit.github.io");
+		// Only send origin + pathname to prevent leaking query tokens or credentials
+		const sanitizedUrl = `${parsed.origin}${parsed.pathname}`;
+		sendGAEvent("outbound_click", {
+			destination_url: sanitizedUrl,
+			link_text: (linkText || "external_link").slice(0, 40),
+		});
+	} catch {
+		sendGAEvent("outbound_click", {
+			destination_url: "invalid_url",
+			link_text: "external_link",
+		});
+	}
 }
 
 /**
- * Track Application & Tool Errors
+ * Track Application & Tool Errors (sanitized error codes, no stack traces or personal data)
  */
 export function trackError(
 	errorType: string,
 	message?: string,
 	toolId?: string
 ) {
+	// Sanitize error type to safe alphanumeric code
+	const safeType = (errorType || "error").replace(/[^a-zA-Z0-9_-]/g, "_").slice(0, 40);
+	// Sanitize message: strip stack traces, file paths, emails, and tokens
+	const safeMsg = (message || "unspecified")
+		.replace(/(file:\/\/[^\s]+|\/Users\/[^\s]+|\/home\/[^\s]+)/gi, "[path]")
+		.replace(/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g, "[email]")
+		.replace(/\b[a-zA-Z0-9_-]{24,}\b/g, "[token]")
+		.slice(0, 80);
+
 	sendGAEvent("exception", {
-		description: `${errorType}: ${message || "unknown error"}`,
+		description: `${safeType}: ${safeMsg}`,
 		fatal: false,
-		tool_id: toolId,
+		tool_id: toolId ? toolId.slice(0, 40) : undefined,
 	});
 }
 

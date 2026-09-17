@@ -432,9 +432,9 @@ export default function AIImageGeneratorTool() {
 						</div>
 
 						<div className="flex flex-wrap gap-2">
-							<Badge variant="secondary" className="gap-1">
+							<Badge variant="outline" className="gap-1 border-amber-500/40 text-amber-600 dark:text-amber-400 bg-amber-500/10">
 								<Sparkles className="h-3 w-3" />
-								AI-Powered
+								External API (Pollinations.ai)
 							</Badge>
 							<Badge variant="secondary" className="gap-1">
 								<Palette className="h-3 w-3" />
@@ -451,11 +451,15 @@ export default function AIImageGeneratorTool() {
 						</div>
 					</div>
 
-					<Alert className="mb-8">
-						<InfoIcon className="h-4 w-4" />
-						<AlertDescription>
-							Generate unlimited AI images for free. Your creations are stored
-							locally for privacy and can be downloaded in high quality.
+					<Alert className="mb-8 border-primary/30 bg-primary/5">
+						<InfoIcon className="h-4 w-4 text-primary shrink-0" />
+						<AlertDescription className="text-xs sm:text-sm text-foreground/90 space-y-1">
+							<p className="font-semibold text-foreground">
+								External Generation Notice
+							</p>
+							<p>
+								Image synthesis is powered by Pollinations.ai. When you click &ldquo;Generate Image&rdquo;, your text prompt is transmitted to their external API to synthesize artwork. Please avoid entering sensitive or personal information.
+							</p>
 						</AlertDescription>
 					</Alert>
 				</div>

@@ -156,11 +156,14 @@ export function generateToolMetadata({
 		}
 	}
 
-	const title = customTitle || `${cleanName} — 100% Free, Fast, Private in Your Browser - SopKit`;
+	const isExternalTool = route.includes("ai-image-generator") || route.includes("pollinations");
+	const title = customTitle || `${cleanName} — Free, Fast, Browser-Based Online Tool - SopKit`;
 
-	const desc = customDesc || (description && description.length > 80
+	const desc = customDesc || (description && description.length > 60
 		? description
-		: `${cleanName} runs 100% client-side in your browser sandbox. Unlike server-side tools, your data never leaves your device — no uploads, no AI training, no data selling, no server storage. Fast, free, private, and secure.`);
+		: isExternalTool
+			? `${cleanName} is a fast, accessible online tool on SopKit. Create and generate outputs directly in your browser with customizable parameters and instant export.`
+			: `${cleanName} runs directly in your browser sandbox. Fast, free, and privacy-focused processing without mandatory server storage.`);
 
 	return generateMetadata({
 		title,
