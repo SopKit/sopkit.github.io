@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-"use strict";
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -671,7 +670,7 @@ function md5(data) {
   return binl2hex(binlMD5(rstr2binl(utf8), utf8.length * 8));
 }
 
-// src/tools/timestamp.ts
+// ../cli/src/tools/timestamp.ts
 function now() {
   const d = /* @__PURE__ */ new Date();
   return formatTimestamp(d);
@@ -729,7 +728,7 @@ function getRelativeTime(timestampMs) {
   return "just now";
 }
 
-// src/tools/case.ts
+// ../cli/src/tools/case.ts
 function splitWords(text) {
   return text.replace(/([a-z0-9])([A-Z])/g, "$1 $2").replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2").replace(/[_\-./\\]+/g, " ").trim().split(/\s+/).filter(Boolean);
 }
@@ -769,7 +768,7 @@ function convertAllCases(text) {
   };
 }
 
-// src/tools/lorem.ts
+// ../cli/src/tools/lorem.ts
 var LOREM_WORDS = [
   "lorem",
   "ipsum",
@@ -889,7 +888,7 @@ function generateParagraphs(count = 3) {
   return paragraphs.join("\n\n");
 }
 
-// src/tools/url.ts
+// ../cli/src/tools/url.ts
 function parseUrl(input) {
   let target = input.trim();
   if (!/^https?:\/\//i.test(target)) {
@@ -920,7 +919,7 @@ function decodeUrl(str, component = true) {
   return component ? decodeURIComponent(str) : decodeURI(str);
 }
 
-// src/tools/bytes.ts
+// ../cli/src/tools/bytes.ts
 function formatBytes(bytes) {
   const absBytes = Math.abs(bytes);
   const kib = absBytes / 1024;
@@ -983,7 +982,7 @@ function parseByteString(input) {
   return Math.round(val * mult);
 }
 
-// src/tools/http.ts
+// ../cli/src/tools/http.ts
 var HTTP_CODES = {
   100: { phrase: "Continue", description: "Server received request headers, client should proceed to send the body." },
   101: { phrase: "Switching Protocols", description: "Requester has asked server to switch protocols (e.g. WebSocket)." },
@@ -1032,7 +1031,7 @@ function lookupStatus(code) {
   };
 }
 
-// src/tools/html.ts
+// ../cli/src/tools/html.ts
 var HTML_ENTITIES = {
   "&": "&amp;",
   "<": "&lt;",
@@ -1050,7 +1049,7 @@ function unescapeHtml(text) {
   return text.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&#x2F;/g, "/").replace(/&#x60;/g, "`").replace(/&#x3D;/g, "=");
 }
 
-// src/ui.ts
+// ../cli/src/ui.ts
 var import_node_readline = __toESM(require("readline"), 1);
 function rgb(r, g, b) {
   return `\x1B[38;2;${Math.round(r)};${Math.round(g)};${Math.round(b)}m`;
@@ -1301,7 +1300,7 @@ async function promptText(message, defaultValue = "") {
   });
 }
 
-// src/index.ts
+// ../cli/src/index.ts
 async function main() {
   const args = process.argv.slice(2);
   if (args.length > 0) {

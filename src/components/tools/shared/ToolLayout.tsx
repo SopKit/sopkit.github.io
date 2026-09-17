@@ -15,6 +15,7 @@ import AdPlacement from "@/components/ads/AdPlacement";
 import { getSeoOpportunityByRoute } from "@/data/seo-opportunities";
 import { ToolToolbar } from "./ToolToolbar";
 import { EmbedWidgetGiver } from "./EmbedWidgetGiver";
+import { VisitorBadge } from "@/components/shared/VisitorBadge";
 import {
 	resolveToolArchetype,
 	getArchetypeWorkspaceClass,
@@ -186,6 +187,7 @@ export default function ToolLayout({
 										{enrichedTool.category}
 									</span>
 								)}
+								<VisitorBadge path={tool.route || `/${tool.id}`} label="PAGE VIEWS" />
 							</div>
 
 							{/* Secondary Toolbar Actions */}
@@ -254,7 +256,8 @@ export default function ToolLayout({
 							<p className="text-xs text-muted-foreground max-w-xl mx-auto leading-relaxed">
 								SopKit is a privacy-first utility platform. Free forever with zero tracking.
 							</p>
-							<div className="flex items-center justify-center gap-3">
+							<div className="flex flex-wrap items-center justify-center gap-3">
+								<VisitorBadge path={tool.route || `/${tool.id}`} label="PAGE VIEWS" />
 								<Button variant="outline" size="sm" asChild className="h-7 text-xs gap-1.5 rounded-lg">
 									<a href={SITE_CONFIG.githubRepoUrl} target="_blank" rel="noreferrer">
 										<Github className="h-3.5 w-3.5" />

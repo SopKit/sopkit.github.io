@@ -6,6 +6,7 @@ import { SITE_CONFIG } from "@/constants/config";
 import AdPlacement from "@/components/ads/AdPlacement";
 import { Container } from "@/components/layout/Container";
 import { ToolDirectorySection } from "@/components/marketing/ToolDirectorySection";
+import { VisitorBadge } from "@/components/shared/VisitorBadge";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return baseGenerateMetadata({
@@ -23,11 +24,13 @@ export default async function ToolsDirectoryPage() {
 			<Container size="xl" className="py-12 sm:py-16">
 				{/* Editorial Header */}
 				<div className="max-w-3xl mb-12 space-y-4">
-					<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-muted border border-border text-xs font-mono text-muted-foreground select-none">
+					<div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-surface-muted border border-border text-xs font-mono text-muted-foreground select-none">
 						<span className="w-2 h-2 rounded-full bg-emerald-500" />
 						<span>{SITE_CONFIG.toolCountString} Available Utilities</span>
 						<span className="text-border">•</span>
 						<span>100% Client-Side</span>
+						<span className="text-border">•</span>
+						<VisitorBadge path="/tools" label="PAGE VIEWS" />
 					</div>
 
 					<h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-foreground leading-[1.1]">

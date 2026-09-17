@@ -521,27 +521,6 @@ async function sha1(data) {
     throw new Error("SHA-1 requires Web Crypto API or Node.js runtime.");
   }
 }
-async function hmacSha256(key, message) {
-  const keyBytes = typeof key === "string" ? new TextEncoder().encode(key) : key;
-  const msgBytes = typeof message === "string" ? new TextEncoder().encode(message) : message;
-  if (typeof globalThis.crypto?.subtle !== "undefined") {
-    const cryptoKey = await globalThis.crypto.subtle.importKey(
-      "raw",
-      keyBytes,
-      { name: "HMAC", hash: "SHA-256" },
-      false,
-      ["sign"]
-    );
-    const signature = await globalThis.crypto.subtle.sign("HMAC", cryptoKey, msgBytes);
-    return bufferToHex(new Uint8Array(signature));
-  }
-  try {
-    const nodeCrypto = await import("crypto");
-    return nodeCrypto.createHmac("sha256", keyBytes).update(msgBytes).digest("hex");
-  } catch {
-    throw new Error("HMAC requires Web Crypto API or Node.js runtime.");
-  }
-}
 function safeAdd(x, y) {
   const lsw = (x & 65535) + (y & 65535);
   const msw = (x >> 16) + (y >> 16) + (lsw >> 16);
@@ -667,6 +646,385 @@ function binl2hex(binarray) {
 function md5(data) {
   const utf8 = unescape(encodeURIComponent(data));
   return binl2hex(binlMD5(rstr2binl(utf8), utf8.length * 8));
+}
+
+// src/tools/timestamp.ts
+function now() {
+  const d = /* @__PURE__ */ new Date();
+  return formatTimestamp(d);
+}
+function fromEpoch(epoch) {
+  let num = typeof epoch === "string" ? Number(epoch.trim()) : epoch;
+  if (isNaN(num)) {
+    throw new Error(`Invalid numeric epoch timestamp: "${epoch}"`);
+  }
+  if (num < 1e11) {
+    num = num * 1e3;
+  }
+  return formatTimestamp(new Date(num));
+}
+function fromDateString(str) {
+  const d = new Date(str.trim());
+  if (isNaN(d.getTime())) {
+    throw new Error(`Unable to parse date string: "${str}"`);
+  }
+  return formatTimestamp(d);
+}
+function formatTimestamp(d) {
+  const ms = d.getTime();
+  const sec = Math.floor(ms / 1e3);
+  return {
+    seconds: sec,
+    milliseconds: ms,
+    iso: d.toISOString(),
+    utc: d.toUTCString(),
+    local: d.toString(),
+    relative: getRelativeTime(ms)
+  };
+}
+function getRelativeTime(timestampMs) {
+  const nowMs = Date.now();
+  const diffSec = Math.round((timestampMs - nowMs) / 1e3);
+  if (Math.abs(diffSec) < 5) return "just now";
+  const isPast = diffSec < 0;
+  const abs = Math.abs(diffSec);
+  const units = [
+    [31536e3, "year"],
+    [2592e3, "month"],
+    [86400, "day"],
+    [3600, "hour"],
+    [60, "minute"],
+    [1, "second"]
+  ];
+  for (const [divisor, unit] of units) {
+    if (abs >= divisor) {
+      const val = Math.floor(abs / divisor);
+      const plural = val > 1 ? `${unit}s` : unit;
+      return isPast ? `${val} ${plural} ago` : `in ${val} ${plural}`;
+    }
+  }
+  return "just now";
+}
+
+// src/tools/case.ts
+function splitWords(text) {
+  return text.replace(/([a-z0-9])([A-Z])/g, "$1 $2").replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2").replace(/[_\-./\\]+/g, " ").trim().split(/\s+/).filter(Boolean);
+}
+function toCamelCase(text) {
+  const words = splitWords(text);
+  if (words.length === 0) return "";
+  return words[0].toLowerCase() + words.slice(1).map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join("");
+}
+function toPascalCase(text) {
+  const words = splitWords(text);
+  return words.map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join("");
+}
+function toSnakeCase(text) {
+  return splitWords(text).map((w) => w.toLowerCase()).join("_");
+}
+function toKebabCase(text) {
+  return splitWords(text).map((w) => w.toLowerCase()).join("-");
+}
+function toConstantCase(text) {
+  return splitWords(text).map((w) => w.toUpperCase()).join("_");
+}
+function toTitleCase(text) {
+  return splitWords(text).map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(" ");
+}
+function toDotCase(text) {
+  return splitWords(text).map((w) => w.toLowerCase()).join(".");
+}
+function convertAllCases(text) {
+  return {
+    camelCase: toCamelCase(text),
+    pascalCase: toPascalCase(text),
+    snakeCase: toSnakeCase(text),
+    kebabCase: toKebabCase(text),
+    constantCase: toConstantCase(text),
+    titleCase: toTitleCase(text),
+    dotCase: toDotCase(text)
+  };
+}
+
+// src/tools/lorem.ts
+var LOREM_WORDS = [
+  "lorem",
+  "ipsum",
+  "dolor",
+  "sit",
+  "amet",
+  "consectetur",
+  "adipiscing",
+  "elit",
+  "sed",
+  "do",
+  "eiusmod",
+  "tempor",
+  "incididunt",
+  "ut",
+  "labore",
+  "et",
+  "dolore",
+  "magna",
+  "aliqua",
+  "enim",
+  "ad",
+  "minim",
+  "veniam",
+  "quis",
+  "nostrud",
+  "exercitation",
+  "ullamco",
+  "laboris",
+  "nisi",
+  "aliquip",
+  "ex",
+  "ea",
+  "commodo",
+  "consequat",
+  "duis",
+  "aute",
+  "irure",
+  "in",
+  "reprehenderit",
+  "voluptate",
+  "velit",
+  "esse",
+  "cillum",
+  "fugiat",
+  "nulla",
+  "pariatur",
+  "excepteur",
+  "sint",
+  "occaecat",
+  "cupidatat",
+  "non",
+  "proident",
+  "sunt",
+  "culpa",
+  "qui",
+  "officia",
+  "deserunt",
+  "mollit",
+  "anim",
+  "id",
+  "est",
+  "laborum",
+  "at",
+  "vero",
+  "eos",
+  "accusamus",
+  "iusto",
+  "odio",
+  "dignissimos",
+  "ducimus",
+  "blanditiis",
+  "praesentium",
+  "voluptatum",
+  "deleniti",
+  "atque",
+  "corrupti",
+  "quos",
+  "dolores",
+  "quas",
+  "molestias",
+  "excepturi",
+  "sint",
+  "obcaecati",
+  "cupiditate",
+  "provident"
+];
+function generateWords(count = 10) {
+  const result = [];
+  for (let i = 0; i < count; i++) {
+    result.push(LOREM_WORDS[i % LOREM_WORDS.length]);
+  }
+  return result.join(" ");
+}
+function generateSentence(minWords = 6, maxWords = 14) {
+  const length = Math.floor(Math.random() * (maxWords - minWords + 1)) + minWords;
+  const words = [];
+  for (let i = 0; i < length; i++) {
+    const idx = Math.floor(Math.random() * LOREM_WORDS.length);
+    words.push(LOREM_WORDS[idx]);
+  }
+  const sentence = words.join(" ");
+  return sentence.charAt(0).toUpperCase() + sentence.slice(1) + ".";
+}
+function generateParagraph(sentenceCount = 4) {
+  const sentences = [];
+  for (let i = 0; i < sentenceCount; i++) {
+    sentences.push(generateSentence());
+  }
+  return sentences.join(" ");
+}
+function generateParagraphs(count = 3) {
+  const paragraphs = [];
+  for (let i = 0; i < count; i++) {
+    paragraphs.push(generateParagraph());
+  }
+  return paragraphs.join("\n\n");
+}
+
+// src/tools/url.ts
+function parseUrl(input) {
+  let target = input.trim();
+  if (!/^https?:\/\//i.test(target)) {
+    target = "https://" + target;
+  }
+  const u = new URL(target);
+  const params = {};
+  u.searchParams.forEach((val, key) => {
+    params[key] = val;
+  });
+  return {
+    href: u.href,
+    protocol: u.protocol,
+    origin: u.origin,
+    host: u.host,
+    hostname: u.hostname,
+    port: u.port || "(default)",
+    pathname: u.pathname,
+    search: u.search || "(none)",
+    hash: u.hash || "(none)",
+    params
+  };
+}
+function encodeUrl(str, component = true) {
+  return component ? encodeURIComponent(str) : encodeURI(str);
+}
+function decodeUrl(str, component = true) {
+  return component ? decodeURIComponent(str) : decodeURI(str);
+}
+
+// src/tools/bytes.ts
+function formatBytes(bytes) {
+  const absBytes = Math.abs(bytes);
+  const kib = absBytes / 1024;
+  const mib = kib / 1024;
+  const gib = mib / 1024;
+  const tib = gib / 1024;
+  let binaryHuman = `${absBytes} B`;
+  if (tib >= 1) binaryHuman = `${tib.toFixed(2)} TiB`;
+  else if (gib >= 1) binaryHuman = `${gib.toFixed(2)} GiB`;
+  else if (mib >= 1) binaryHuman = `${mib.toFixed(2)} MiB`;
+  else if (kib >= 1) binaryHuman = `${kib.toFixed(2)} KiB`;
+  const kb = absBytes / 1e3;
+  const mb = kb / 1e3;
+  const gb = mb / 1e3;
+  const tb = gb / 1e3;
+  let decimalHuman = `${absBytes} B`;
+  if (tb >= 1) decimalHuman = `${tb.toFixed(2)} TB`;
+  else if (gb >= 1) decimalHuman = `${gb.toFixed(2)} GB`;
+  else if (mb >= 1) decimalHuman = `${mb.toFixed(2)} MB`;
+  else if (kb >= 1) decimalHuman = `${kb.toFixed(2)} KB`;
+  return {
+    bytes,
+    binary: {
+      kib: Number(kib.toFixed(2)),
+      mib: Number(mib.toFixed(2)),
+      gib: Number(gib.toFixed(2)),
+      tib: Number(tib.toFixed(2)),
+      human: binaryHuman
+    },
+    decimal: {
+      kb: Number(kb.toFixed(2)),
+      mb: Number(mb.toFixed(2)),
+      gb: Number(gb.toFixed(2)),
+      tb: Number(tb.toFixed(2)),
+      human: decimalHuman
+    }
+  };
+}
+function parseByteString(input) {
+  const match = input.trim().match(/^([0-9.]+)\s*([a-zA-Z]+)?$/);
+  if (!match) {
+    const raw = Number(input.trim());
+    if (isNaN(raw)) throw new Error(`Cannot parse bytes from: "${input}"`);
+    return raw;
+  }
+  const val = parseFloat(match[1]);
+  const unit = (match[2] || "B").toUpperCase();
+  const multipliers = {
+    B: 1,
+    KB: 1e3,
+    KIB: 1024,
+    MB: 1e3 ** 2,
+    MIB: 1024 ** 2,
+    GB: 1e3 ** 3,
+    GIB: 1024 ** 3,
+    TB: 1e3 ** 4,
+    TIB: 1024 ** 4
+  };
+  const mult = multipliers[unit] || 1;
+  return Math.round(val * mult);
+}
+
+// src/tools/http.ts
+var HTTP_CODES = {
+  100: { phrase: "Continue", description: "Server received request headers, client should proceed to send the body." },
+  101: { phrase: "Switching Protocols", description: "Requester has asked server to switch protocols (e.g. WebSocket)." },
+  200: { phrase: "OK", description: "Standard successful HTTP response." },
+  201: { phrase: "Created", description: "Request fulfilled and new resource created." },
+  202: { phrase: "Accepted", description: "Request accepted for processing, but processing is incomplete." },
+  204: { phrase: "No Content", description: "Request processed successfully, but returns no content." },
+  206: { phrase: "Partial Content", description: "Delivering part of the resource due to a Range header." },
+  301: { phrase: "Moved Permanently", description: "Permanent redirect. All future requests should use the new URI." },
+  302: { phrase: "Found", description: "Temporary redirect to a different URI." },
+  304: { phrase: "Not Modified", description: "Resource has not been modified since the version specified in request." },
+  307: { phrase: "Temporary Redirect", description: "Temporary redirect preserving original HTTP method." },
+  308: { phrase: "Permanent Redirect", description: "Permanent redirect preserving original HTTP method." },
+  400: { phrase: "Bad Request", description: "Server cannot process request due to client error (malformed syntax)." },
+  401: { phrase: "Unauthorized", description: "Authentication required and either missing or failed." },
+  403: { phrase: "Forbidden", description: "Authenticated client does not have access permissions." },
+  404: { phrase: "Not Found", description: "Requested resource could not be found on the server." },
+  405: { phrase: "Method Not Allowed", description: "Request method (POST, GET, etc.) not supported for resource." },
+  408: { phrase: "Request Timeout", description: "Server timed out waiting for the request from the client." },
+  409: { phrase: "Conflict", description: "Request could not be processed because of conflict in request state." },
+  413: { phrase: "Payload Too Large", description: "Request entity is larger than limits defined by server." },
+  415: { phrase: "Unsupported Media Type", description: "Payload format is in an unsupported format." },
+  422: { phrase: "Unprocessable Entity", description: "Syntax is correct but semantic instructions are unprocessable." },
+  429: { phrase: "Too Many Requests", description: "User has sent too many requests in a given amount of time (rate limited)." },
+  500: { phrase: "Internal Server Error", description: "Generic error message when server encounters an unexpected condition." },
+  501: { phrase: "Not Implemented", description: "Server either does not recognize request method or lacks ability to fulfill." },
+  502: { phrase: "Bad Gateway", description: "Server acting as gateway/proxy received invalid response from upstream." },
+  503: { phrase: "Service Unavailable", description: "Server is currently unavailable (overloaded or down for maintenance)." },
+  504: { phrase: "Gateway Timeout", description: "Gateway/proxy server did not receive timely response from upstream." }
+};
+function lookupStatus(code) {
+  const num = typeof code === "string" ? parseInt(code.trim(), 10) : code;
+  const item = HTTP_CODES[num];
+  if (!item) return null;
+  let category = "2xx Success";
+  if (num < 200) category = "1xx Informational";
+  else if (num < 300) category = "2xx Success";
+  else if (num < 400) category = "3xx Redirection";
+  else if (num < 500) category = "4xx Client Error";
+  else category = "5xx Server Error";
+  return {
+    code: num,
+    phrase: item.phrase,
+    category,
+    description: item.description
+  };
+}
+
+// src/tools/html.ts
+var HTML_ENTITIES = {
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  '"': "&quot;",
+  "'": "&#39;",
+  "/": "&#x2F;",
+  "`": "&#x60;",
+  "=": "&#x3D;"
+};
+function escapeHtml(text) {
+  return text.replace(/[&<>"'`=\/]/g, (char) => HTML_ENTITIES[char] || char);
+}
+function unescapeHtml(text) {
+  return text.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&#x2F;/g, "/").replace(/&#x60;/g, "`").replace(/&#x3D;/g, "=");
 }
 
 // src/ui.ts
@@ -933,13 +1291,20 @@ async function main() {
       { title: "\u{1F511}  Hash Generator", value: "hash", desc: "SHA-256, SHA-512, MD5, HMAC", tag: "CRYPTO", shortcut: "1" },
       { title: "\u{1F4E6}  Base64 Engine", value: "base64", desc: "Encode, Decode, URL-safe", tag: "ENCODE", shortcut: "2" },
       { title: "\u{1F194}  UUID Generator", value: "uuid", desc: "v4 Random, v1 Timestamp", tag: "IDENT", shortcut: "3" },
-      { title: "\u{1F517}  URL Slugify", value: "slug", desc: "URL-safe, SEO-friendly slugs", tag: "SEO", shortcut: "4" },
-      { title: "\u{1F3A8}  Color Converter", value: "color", desc: "HEX, RGB, HSL with visual swatch", tag: "DESIGN", shortcut: "5" },
-      { title: "\u{1F6E1}\uFE0F   JWT Inspector", value: "jwt", desc: "Decode header, payload & expiration", tag: "AUTH", shortcut: "6" },
-      { title: "\u2728  JSON Formatter", value: "json", desc: "Beautify, Minify, Validate", tag: "FORMAT", shortcut: "7" },
-      { title: "\u{1F4DC}  XML Formatter", value: "xml", desc: "Beautify, Minify, Validate", tag: "FORMAT", shortcut: "8" },
-      { title: "\u{1F512}  Password Generator", value: "password", desc: "High-entropy password with visual meter", tag: "SECURITY", shortcut: "9" },
-      { title: "\u2705  Data Validator", value: "validator", desc: "Email, URL, IP, UUID, JSON", tag: "CHECK", shortcut: "0" },
+      { title: "\u{1F552}  Timestamp / Epoch", value: "timestamp", desc: "Unix epoch, ISO, Relative time", tag: "DATE", shortcut: "4" },
+      { title: "\u{1F524}  Text Case Converter", value: "case", desc: "camel, snake, kebab, CONSTANT", tag: "TEXT", shortcut: "5" },
+      { title: "\u{1F517}  URL Slugify", value: "slug", desc: "URL-safe, SEO-friendly slugs", tag: "SEO", shortcut: "6" },
+      { title: "\u{1F3A8}  Color Converter", value: "color", desc: "HEX, RGB, HSL with visual swatch", tag: "DESIGN", shortcut: "7" },
+      { title: "\u{1F6E1}\uFE0F   JWT Inspector", value: "jwt", desc: "Decode header, payload & expiration", tag: "AUTH", shortcut: "8" },
+      { title: "\u2728  JSON Formatter", value: "json", desc: "Beautify, Minify, Validate", tag: "FORMAT", shortcut: "9" },
+      { title: "\u{1F4DC}  XML Formatter", value: "xml", desc: "Beautify, Minify, Validate", tag: "FORMAT", shortcut: "0" },
+      { title: "\u{1F512}  Password Generator", value: "password", desc: "High-entropy password with visual meter", tag: "SECURITY", shortcut: "p" },
+      { title: "\u{1F4DD}  Lorem Ipsum Generator", value: "lorem", desc: "Generate words, sentences, paragraphs", tag: "MOCK", shortcut: "l" },
+      { title: "\u{1F310}  URL Inspector & Parser", value: "url", desc: "Parse parameters, encode, decode", tag: "NET", shortcut: "u" },
+      { title: "\u{1F4BE}  Byte Size Converter", value: "bytes", desc: "B, KB, MB, GB, TB binary & decimal", tag: "DATA", shortcut: "b" },
+      { title: "\u{1F4E1}  HTTP Status Codes", value: "http", desc: "RFC codes 100-599 lookup & meaning", tag: "HTTP", shortcut: "h" },
+      { title: "\u{1F523}  HTML Entity Escape", value: "html", desc: "Encode / decode HTML entities", tag: "HTML", shortcut: "e" },
+      { title: "\u2705  Data Validator", value: "validator", desc: "Email, URL, IP, UUID, JSON", tag: "CHECK", shortcut: "v" },
       { title: "\u{1F6AA}  Exit", value: "exit", desc: "Return to shell", shortcut: "q" }
     ]);
     if (choice === "exit") {
@@ -958,6 +1323,12 @@ async function main() {
       case "uuid":
         await runUuid();
         break;
+      case "timestamp":
+        await runTimestamp();
+        break;
+      case "case":
+        await runCase();
+        break;
       case "slug":
         await runSlug();
         break;
@@ -975,6 +1346,21 @@ async function main() {
         break;
       case "password":
         await runPassword();
+        break;
+      case "lorem":
+        await runLorem();
+        break;
+      case "url":
+        await runUrl();
+        break;
+      case "bytes":
+        await runBytes();
+        break;
+      case "http":
+        await runHttp();
+        break;
+      case "html":
+        await runHtml();
         break;
       case "validator":
         await runValidator();
@@ -1017,6 +1403,53 @@ async function runUuid() {
   const duration = (performance.now() - t0).toFixed(2);
   printCard(`Generated UUID(s) [${version.toUpperCase()}]`, rows.join("\n"), `${count} generated in ${duration}ms`, "IDENTIFIER");
 }
+async function runTimestamp() {
+  const mode = await select("Timestamp / Epoch Operation:", [
+    { title: "Current Epoch & Date (Now)", value: "now", tag: "NOW" },
+    { title: "Convert Epoch to Human Date", value: "fromEpoch", tag: "CONVERT" },
+    { title: "Convert Date String to Epoch", value: "toDate", tag: "PARSE" }
+  ]);
+  const t0 = performance.now();
+  let info;
+  if (mode === "now") {
+    info = now();
+  } else if (mode === "fromEpoch") {
+    const epochInput = await promptText("Epoch timestamp (seconds or ms)", String(Math.floor(Date.now() / 1e3)));
+    if (!epochInput) return;
+    info = fromEpoch(epochInput);
+  } else {
+    const dateInput = await promptText("Date string (e.g. 2026-09-18T10:00:00Z)", (/* @__PURE__ */ new Date()).toISOString());
+    if (!dateInput) return;
+    info = fromDateString(dateInput);
+  }
+  const duration = (performance.now() - t0).toFixed(2);
+  const rows = [
+    `  ${c.muted}Epoch (Sec):${c.reset}    ${c.bold}${c.brightCyan}${info.seconds}${c.reset}`,
+    `  ${c.muted}Epoch (Ms):${c.reset}     ${c.bold}${c.brightWhite}${info.milliseconds}${c.reset}`,
+    `  ${c.muted}ISO 8601:${c.reset}       ${c.emerald}${info.iso}${c.reset}`,
+    `  ${c.muted}UTC Date:${c.reset}       ${c.brightWhite}${info.utc}${c.reset}`,
+    `  ${c.muted}Local Date:${c.reset}     ${c.brightWhite}${info.local}${c.reset}`,
+    `  ${c.muted}Relative:${c.reset}       ${c.amber}${info.relative}${c.reset}`
+  ].join("\n");
+  printCard("Timestamp & Epoch Breakdown", rows, `Resolved in ${duration}ms`, "DATETIME");
+}
+async function runCase() {
+  const text = await promptText("Enter string to convert", "SopKit Developer Toolkit");
+  if (!text) return;
+  const t0 = performance.now();
+  const all = convertAllCases(text);
+  const duration = (performance.now() - t0).toFixed(2);
+  const rows = [
+    `  ${c.muted}camelCase:${c.reset}     ${c.bold}${c.brightCyan}${all.camelCase}${c.reset}`,
+    `  ${c.muted}PascalCase:${c.reset}    ${c.bold}${c.emerald}${all.pascalCase}${c.reset}`,
+    `  ${c.muted}snake_case:${c.reset}    ${c.bold}${c.amber}${all.snakeCase}${c.reset}`,
+    `  ${c.muted}kebab-case:${c.reset}    ${c.bold}${c.rose}${all.kebabCase}${c.reset}`,
+    `  ${c.muted}CONSTANT_CASE:${c.reset} ${c.bold}${c.purple}${all.constantCase}${c.reset}`,
+    `  ${c.muted}Title Case:${c.reset}    ${c.brightWhite}${all.titleCase}${c.reset}`,
+    `  ${c.muted}dot.case:${c.reset}      ${c.muted}${all.dotCase}${c.reset}`
+  ].join("\n");
+  printCard("Text Case Conversions", rows, `Converted in ${duration}ms`, "STRING");
+}
 async function runSlug() {
   const text = await promptText("Text to slugify", "Love Calculator Story");
   if (!text) return;
@@ -1028,140 +1461,234 @@ async function runSlug() {
     `  ${c.muted}Input:${c.reset}   ${c.brightWhite}${text}${c.reset}`,
     `  ${c.muted}Slug:${c.reset}    ${c.bold}${c.emerald}${res}${c.reset}`
   ].join("\n");
-  printCard("URL Slug Output", content, `Generated in ${duration}ms`, "SEO");
+  printCard("URL Slug Generated", content, `Processed in ${duration}ms`, "SEO-SLUG");
 }
 async function runColor() {
-  const input = await promptText("Enter HEX / CSS color", "#ff3366");
-  if (!input) return;
+  const hex = await promptText("Enter HEX color code", "#38bdf8");
+  if (!hex) return;
+  const t0 = performance.now();
   try {
-    const rgbVal = hexToRgb(input);
+    const rgbVal = hexToRgb(hex);
     const hslVal = rgbToHsl(rgbVal.r, rgbVal.g, rgbVal.b);
-    const hexClean = input.startsWith("#") ? input : `#${input}`;
-    const rgbStr = `rgb(${rgbVal.r}, ${rgbVal.g}, ${rgbVal.b})`;
-    const hslStr = `hsl(${hslVal.h}, ${hslVal.s}%, ${hslVal.l}%)`;
-    printColorCard(hexClean, rgbStr, hslStr, rgbVal.r, rgbVal.g, rgbVal.b);
-  } catch (e) {
-    printCard("Error", `${c.red}${e.message}${c.reset}`);
+    const duration = (performance.now() - t0).toFixed(2);
+    printColorCard(hex, rgbVal, hslVal, duration);
+  } catch (err) {
+    console.log(`  ${c.red}Error:${c.reset} ${err.message}`);
   }
 }
 async function runJwt() {
-  const token = await promptText("Paste JWT Token");
+  const token = await promptText("Paste JSON Web Token (JWT)");
   if (!token) return;
   const t0 = performance.now();
   try {
     const decoded = decode2(token);
     const duration = (performance.now() - t0).toFixed(2);
-    const parts = [
-      `  ${c.bold}${c.violet}Algorithm & Header:${c.reset}`,
-      `  ${JSON.stringify(decoded.header, null, 2).split("\n").join("\n  ")}`,
+    const headerStr = JSON.stringify(decoded.header, null, 2);
+    const payloadStr = JSON.stringify(decoded.payload, null, 2);
+    const content = [
+      `  ${c.bold}${c.purple}HEADER:${c.reset}`,
+      ...headerStr.split("\n").map((l) => `    ${c.muted}${l}${c.reset}`),
       ``,
-      `  ${c.bold}${c.cyan}Claims & Payload:${c.reset}`,
-      `  ${JSON.stringify(decoded.payload, null, 2).split("\n").join("\n  ")}`
-    ];
-    printCard("Decoded JWT Details", parts.join("\n"), `Decoded in ${duration}ms`, "AUTH");
+      `  ${c.bold}${c.cyan}PAYLOAD:${c.reset}`,
+      ...payloadStr.split("\n").map((l) => `    ${c.brightWhite}${l}${c.reset}`)
+    ].join("\n");
+    printCard("Decoded JWT Token", content, `Parsed in ${duration}ms`, "JWT-INSPECT");
   } catch (err) {
-    printCard("Error", `${c.red}Failed to decode JWT: ${err.message}${c.reset}`);
+    console.log(`  ${c.red}Error parsing JWT:${c.reset} ${err.message}`);
   }
-}
-async function runHash() {
-  const algo = await select("Select Hash Algorithm:", [
-    { title: "SHA-256 (Industry standard)", value: "sha256", tag: "SECURE" },
-    { title: "SHA-512 (Maximum bit security)", value: "sha512", tag: "MAX" },
-    { title: "HMAC SHA-256 (Keyed Hash)", value: "hmac", tag: "HMAC" },
-    { title: "SHA-1 (Legacy checksum)", value: "sha1", tag: "LEGACY" },
-    { title: "MD5 (Legacy digest)", value: "md5", tag: "LEGACY" }
-  ]);
-  const text = await promptText("Input string to hash", "secret");
-  if (!text) return;
-  const t0 = performance.now();
-  let result = "";
-  if (algo === "sha256") result = await sha256(text);
-  else if (algo === "sha512") result = await sha512(text);
-  else if (algo === "sha1") result = await sha1(text);
-  else if (algo === "md5") result = await md5(text);
-  else if (algo === "hmac") {
-    const key = await promptText("Secret HMAC key", "sopkit-secret");
-    result = await hmacSha256(text, key);
-  }
-  const duration = (performance.now() - t0).toFixed(2);
-  const content = [
-    `  ${c.muted}Input:${c.reset}   ${c.brightWhite}${text}${c.reset}`,
-    `  ${c.muted}Digest:${c.reset}  ${c.bold}${c.cyan}${result}${c.reset}`
-  ].join("\n");
-  printCard(`${algo.toUpperCase()} Hash Output`, content, `Computed in ${duration}ms`, "CRYPTO");
 }
 async function runJson() {
   const mode = await select("JSON Operation:", [
-    { title: "Beautify / Format (2 spaces)", value: "beautify", tag: "FORMAT" },
-    { title: "Minify (Single line)", value: "minify", tag: "MINIFY" },
-    { title: "Validate Syntax", value: "validate", tag: "CHECK" }
+    { title: "Format & Beautify (2 spaces)", value: "format2", tag: "BEAUTIFY" },
+    { title: "Format & Beautify (4 spaces)", value: "format4", tag: "BEAUTIFY" },
+    { title: "Minify (Single-line)", value: "minify", tag: "MINIFY" },
+    { title: "Validate JSON Syntax", value: "validate", tag: "VALIDATE" }
   ]);
-  const text = await promptText("Enter JSON string", '{"name":"SopKit","speed":"instant"}');
-  if (!text) return;
+  const raw = await promptText("Enter JSON string");
+  if (!raw) return;
   const t0 = performance.now();
-  if (mode === "validate") {
-    const res = validate2(text);
+  try {
+    let output = "";
+    if (mode === "format2") output = format(raw, 2);
+    else if (mode === "format4") output = format(raw, 4);
+    else if (mode === "minify") output = minify(raw);
+    else {
+      const ok = validate2(raw).valid;
+      output = ok ? `${c.emerald}\u2714 JSON Syntax is Valid${c.reset}` : `${c.red}\u2716 Invalid JSON Syntax${c.reset}`;
+    }
     const duration = (performance.now() - t0).toFixed(2);
-    printCard(
-      "JSON Validation",
-      res.valid ? `  ${c.emerald}\u2714 Valid JSON Syntax${c.reset}` : `  ${c.red}\u2716 Invalid JSON: ${res.error}${c.reset}`,
-      `Validated in ${duration}ms`,
-      "JSON"
-    );
-  } else if (mode === "beautify") {
-    try {
-      const res = format(text, 2);
-      const duration = (performance.now() - t0).toFixed(2);
-      printCard("Formatted JSON", res, `Formatted in ${duration}ms`, "JSON");
-    } catch (e) {
-      printCard("Error", `${c.red}${e.message}${c.reset}`);
-    }
-  } else if (mode === "minify") {
-    try {
-      const res = minify(text);
-      const duration = (performance.now() - t0).toFixed(2);
-      printCard("Minified JSON", `${c.cyan}${res}${c.reset}`, `Minified in ${duration}ms`, "JSON");
-    } catch (e) {
-      printCard("Error", `${c.red}${e.message}${c.reset}`);
-    }
+    printCard("JSON Result", output, `Completed in ${duration}ms`, "JSON-ENGINE");
+  } catch (err) {
+    console.log(`  ${c.red}JSON Error:${c.reset} ${err.message}`);
   }
 }
 async function runXml() {
   const mode = await select("XML Operation:", [
-    { title: "Beautify / Format", value: "beautify", tag: "FORMAT" },
-    { title: "Minify", value: "minify", tag: "MINIFY" },
-    { title: "Validate Syntax", value: "validate", tag: "CHECK" }
+    { title: "Format & Beautify (Indent)", value: "format", tag: "BEAUTIFY" },
+    { title: "Minify XML", value: "minify", tag: "MINIFY" },
+    { title: "Validate XML Syntax", value: "validate", tag: "VALIDATE" }
   ]);
-  const text = await promptText("Enter XML string", "<root><tool>SopKit</tool></root>");
-  if (!text) return;
+  const raw = await promptText("Enter XML string");
+  if (!raw) return;
   const t0 = performance.now();
-  if (mode === "validate") {
-    const isValid = validate3(text).isValid;
+  try {
+    let output = "";
+    if (mode === "format") output = format2(raw, 2);
+    else if (mode === "minify") output = minify2(raw);
+    else {
+      const ok = validate3(raw).valid;
+      output = ok ? `${c.emerald}\u2714 XML Syntax is Valid${c.reset}` : `${c.red}\u2716 Invalid XML Syntax${c.reset}`;
+    }
     const duration = (performance.now() - t0).toFixed(2);
-    printCard(
-      "XML Validation",
-      isValid ? `  ${c.emerald}\u2714 Valid XML Document${c.reset}` : `  ${c.red}\u2716 Invalid XML${c.reset}`,
-      `Validated in ${duration}ms`,
-      "XML"
-    );
-  } else if (mode === "beautify") {
-    const res = format2(text, { indent: 2 });
-    const duration = (performance.now() - t0).toFixed(2);
-    printCard("Formatted XML", res, `Formatted in ${duration}ms`, "XML");
-  } else if (mode === "minify") {
-    const res = minify2(text);
-    const duration = (performance.now() - t0).toFixed(2);
-    printCard("Minified XML", `${c.cyan}${res}${c.reset}`, `Minified in ${duration}ms`, "XML");
+    printCard("XML Result", output, `Completed in ${duration}ms`, "XML-ENGINE");
+  } catch (err) {
+    console.log(`  ${c.red}XML Error:${c.reset} ${err.message}`);
   }
 }
 async function runPassword() {
-  const lenStr = await promptText("Password length", "24");
-  const length = Math.min(Math.max(parseInt(lenStr, 10) || 24, 4), 128);
+  const lenStr = await promptText("Password Length", "20");
+  const length = Math.min(Math.max(parseInt(lenStr, 10) || 20, 8), 128);
   const t0 = performance.now();
   const pass = generate({ length, numbers: true, symbols: true, uppercase: true, lowercase: true });
   const strength = analyze(pass);
   const duration = (performance.now() - t0).toFixed(2);
   printPasswordCard(pass, length, strength.entropy, strength.score, duration);
+}
+async function runLorem() {
+  const type = await select("Lorem Ipsum Type:", [
+    { title: "Words", value: "words", tag: "WORDS" },
+    { title: "Sentences", value: "sentences", tag: "SENTENCES" },
+    { title: "Paragraphs", value: "paragraphs", tag: "PARAGRAPHS" }
+  ]);
+  const countStr = await promptText("Quantity", "3");
+  const count = Math.min(Math.max(parseInt(countStr, 10) || 3, 1), 100);
+  const t0 = performance.now();
+  let result = "";
+  if (type === "words") result = generateWords(count);
+  else if (type === "sentences") {
+    const list = [];
+    for (let i = 0; i < count; i++) list.push(generateSentence());
+    result = list.join(" ");
+  } else {
+    result = generateParagraphs(count);
+  }
+  const duration = (performance.now() - t0).toFixed(2);
+  printCard(`Lorem Ipsum [${count} ${type.toUpperCase()}]`, result, `Generated in ${duration}ms`, "LOREM");
+}
+async function runUrl() {
+  const mode = await select("URL Operation:", [
+    { title: "Parse & Inspect URL", value: "parse", tag: "INSPECT" },
+    { title: "URL Encode Component", value: "encode", tag: "ENCODE" },
+    { title: "URL Decode Component", value: "decode", tag: "DECODE" }
+  ]);
+  const input = await promptText("Enter URL or text string", "https://sopkit.space/tools?cat=image&page=1#top");
+  if (!input) return;
+  const t0 = performance.now();
+  if (mode === "parse") {
+    try {
+      const parsed = parseUrl(input);
+      const duration = (performance.now() - t0).toFixed(2);
+      const paramRows = Object.entries(parsed.params).map(
+        ([k, v]) => `    ${c.cyan}${k}${c.reset}: ${c.brightWhite}${v}${c.reset}`
+      );
+      const rows = [
+        `  ${c.muted}Origin:${c.reset}    ${c.bold}${c.brightWhite}${parsed.origin}${c.reset}`,
+        `  ${c.muted}Protocol:${c.reset}  ${c.emerald}${parsed.protocol}${c.reset}`,
+        `  ${c.muted}Host:${c.reset}      ${c.brightCyan}${parsed.host}${c.reset}`,
+        `  ${c.muted}Pathname:${c.reset}  ${c.amber}${parsed.pathname}${c.reset}`,
+        `  ${c.muted}Hash:${c.reset}      ${c.purple}${parsed.hash}${c.reset}`,
+        `  ${c.muted}Params (${Object.keys(parsed.params).length}):${c.reset}`,
+        ...paramRows.length > 0 ? paramRows : [`    ${c.dim}(none)${c.reset}`]
+      ].join("\n");
+      printCard("URL Breakdown", rows, `Parsed in ${duration}ms`, "URL-INSPECT");
+    } catch (e) {
+      console.log(`  ${c.red}Invalid URL:${c.reset} ${e.message}`);
+    }
+  } else if (mode === "encode") {
+    const encoded = encodeUrl(input);
+    const duration = (performance.now() - t0).toFixed(2);
+    printCard("URL Encoded", `${c.bold}${c.brightWhite}${encoded}${c.reset}`, `Encoded in ${duration}ms`, "URL-ENCODE");
+  } else {
+    const decoded = decodeUrl(input);
+    const duration = (performance.now() - t0).toFixed(2);
+    printCard("URL Decoded", `${c.bold}${c.brightWhite}${decoded}${c.reset}`, `Decoded in ${duration}ms`, "URL-DECODE");
+  }
+}
+async function runBytes() {
+  const input = await promptText("Enter byte amount or size string (e.g. 1048576, 500MB, 2.5GB)", "1048576");
+  if (!input) return;
+  const t0 = performance.now();
+  try {
+    const bytes = parseByteString(input);
+    const b = formatBytes(bytes);
+    const duration = (performance.now() - t0).toFixed(2);
+    const rows = [
+      `  ${c.muted}Exact Bytes:${c.reset}     ${c.bold}${c.brightWhite}${b.bytes.toLocaleString()} B${c.reset}`,
+      ``,
+      `  ${c.bold}${c.cyan}BINARY (Base 1024 / IEC):${c.reset}`,
+      `    KiB:  ${c.brightWhite}${b.binary.kib.toLocaleString()}${c.reset}`,
+      `    MiB:  ${c.brightWhite}${b.binary.mib.toLocaleString()}${c.reset}`,
+      `    GiB:  ${c.brightWhite}${b.binary.gib.toLocaleString()}${c.reset}`,
+      `    Human: ${c.bold}${c.emerald}${b.binary.human}${c.reset}`,
+      ``,
+      `  ${c.bold}${c.purple}DECIMAL (Base 1000 / SI):${c.reset}`,
+      `    KB:   ${c.brightWhite}${b.decimal.kb.toLocaleString()}${c.reset}`,
+      `    MB:   ${c.brightWhite}${b.decimal.mb.toLocaleString()}${c.reset}`,
+      `    GB:   ${c.brightWhite}${b.decimal.gb.toLocaleString()}${c.reset}`,
+      `    Human: ${c.bold}${c.amber}${b.decimal.human}${c.reset}`
+    ].join("\n");
+    printCard("Data Size Conversions", rows, `Computed in ${duration}ms`, "BYTES");
+  } catch (e) {
+    console.log(`  ${c.red}Error:${c.reset} ${e.message}`);
+  }
+}
+async function runHttp() {
+  const code = await promptText("HTTP Status Code to lookup", "404");
+  if (!code) return;
+  const t0 = performance.now();
+  const info = lookupStatus(code);
+  const duration = (performance.now() - t0).toFixed(2);
+  if (!info) {
+    console.log(`  ${c.red}Unknown HTTP Status Code:${c.reset} ${code}`);
+    return;
+  }
+  const badgeColor = info.code < 300 ? c.emerald : info.code < 400 ? c.cyan : info.code < 500 ? c.amber : c.red;
+  const rows = [
+    `  ${c.muted}Status:${c.reset}       ${badgeColor}${c.bold}${info.code} ${info.phrase}${c.reset}`,
+    `  ${c.muted}Class:${c.reset}        ${c.brightWhite}${info.category}${c.reset}`,
+    `  ${c.muted}Description:${c.reset}  ${c.muted}${info.description}${c.reset}`
+  ].join("\n");
+  printCard(`HTTP ${info.code}`, rows, `Retrieved in ${duration}ms`, "HTTP-STATUS");
+}
+async function runHtml() {
+  const mode = await select("HTML Entity Operation:", [
+    { title: `Escape HTML (encode <, >, &, ", ')`, value: "escape", tag: "ESCAPE" },
+    { title: "Unescape HTML (decode entities)", value: "unescape", tag: "UNESCAPE" }
+  ]);
+  const text = await promptText("Enter text string", `<div class="container">&copy; SopKit</div>`);
+  if (!text) return;
+  const t0 = performance.now();
+  const res = mode === "escape" ? escapeHtml(text) : unescapeHtml(text);
+  const duration = (performance.now() - t0).toFixed(2);
+  printCard("HTML Entity Result", `${c.bold}${c.brightWhite}${res}${c.reset}`, `Executed in ${duration}ms`, "HTML");
+}
+async function runHash() {
+  const algo = await select("Select Hash Algorithm:", [
+    { title: "SHA-256 (Secure, 256-bit)", value: "sha256", tag: "DEFAULT" },
+    { title: "SHA-512 (Ultra-Secure, 512-bit)", value: "sha512", tag: "HIGH-ENTROPY" },
+    { title: "MD5 (Legacy Fingerprint)", value: "md5", tag: "CHECKSUM" },
+    { title: "SHA-1 (Legacy Git Object)", value: "sha1", tag: "LEGACY" }
+  ]);
+  const text = await promptText("Enter text to hash");
+  if (!text) return;
+  const t0 = performance.now();
+  let result = "";
+  if (algo === "sha256") result = await sha256(text);
+  else if (algo === "sha512") result = await sha512(text);
+  else if (algo === "md5") result = await md5(text);
+  else if (algo === "sha1") result = await sha1(text);
+  const duration = (performance.now() - t0).toFixed(2);
+  printCard(`Hash Output [${algo.toUpperCase()}]`, `${c.bold}${c.brightCyan}${result}${c.reset}`, `Generated in ${duration}ms`, "CRYPTO");
 }
 async function runValidator() {
   const type = await select("Validator Type:", [
@@ -1191,19 +1718,26 @@ async function handleDirectCli(args) {
   if (cmd === "--help" || cmd === "-h" || cmd === "help") {
     printBanner();
     console.log(`  ${c.bold}${c.brightWhite}Usage:${c.reset}
-    ${c.cyan}sopkit${c.reset}                              Launch world-class interactive UI dashboard
-    ${c.cyan}sopkit uuid${c.reset} [v4|v1] [count]         Generate UUID(s)
-    ${c.cyan}sopkit base64${c.reset} <encode|decode> <text>  Base64 text encoder/decoder
-    ${c.cyan}sopkit hash${c.reset} <sha256|sha512|md5> <txt> Compute cryptographic hashes
-    ${c.cyan}sopkit slug${c.reset} <text>                  Generate URL-safe slug
-    ${c.cyan}sopkit password${c.reset} [length]             Generate strong entropy password
-    ${c.cyan}sopkit color${c.reset} <hex>                   Convert HEX, RGB, HSL with visual preview
-    ${c.cyan}sopkit validator${c.reset} <email|url|ip> <val> Validate string formats
+    ${c.cyan}sopkit${c.reset}                                    Launch interactive UI dashboard
+    ${c.cyan}sopkit uuid${c.reset} [v4|v1] [count]               Generate UUID(s)
+    ${c.cyan}sopkit timestamp${c.reset} [epoch|iso]                 Convert or inspect timestamp/epoch
+    ${c.cyan}sopkit case${c.reset} <text>                         Convert string to camel, snake, kebab, CONSTANT
+    ${c.cyan}sopkit lorem${c.reset} [count] [words|sentences]      Generate placeholder Lorem Ipsum
+    ${c.cyan}sopkit base64${c.reset} <encode|decode> <text>        Base64 text encoder/decoder
+    ${c.cyan}sopkit hash${c.reset} <sha256|sha512|md5> <txt>       Compute cryptographic hashes
+    ${c.cyan}sopkit slug${c.reset} <text>                        Generate URL-safe slug
+    ${c.cyan}sopkit password${c.reset} [length]                   Generate strong entropy password
+    ${c.cyan}sopkit color${c.reset} <hex>                         Convert HEX, RGB, HSL with visual preview
+    ${c.cyan}sopkit url${c.reset} <parse|encode|decode> <url>     Inspect or encode/decode URL
+    ${c.cyan}sopkit bytes${c.reset} <size>                         Convert byte units (KB, MB, GB, TB)
+    ${c.cyan}sopkit http${c.reset} <code>                          Lookup HTTP status code & RFC meaning
+    ${c.cyan}sopkit html${c.reset} <escape|unescape> <str>        Escape/unescape HTML entities
+    ${c.cyan}sopkit validator${c.reset} <email|url|ip> <val>       Validate string formats
 `);
     return;
   }
   if (cmd === "--version" || cmd === "-v") {
-    console.log("sopkit v1.0.2");
+    console.log("sopkit v1.1.0");
     return;
   }
   if (cmd === "uuid") {
@@ -1211,6 +1745,90 @@ async function handleDirectCli(args) {
     const count = parseInt(args[2] || "1", 10) || 1;
     for (let i = 0; i < count; i++) {
       console.log(ver === "v1" ? v1() : v4());
+    }
+    return;
+  }
+  if (cmd === "timestamp" || cmd === "epoch") {
+    const arg = args[1];
+    if (!arg || arg === "now") {
+      const nowInfo = now();
+      console.log(`${nowInfo.seconds} (ms: ${nowInfo.milliseconds}) | ${nowInfo.iso}`);
+    } else if (/^\d+$/.test(arg)) {
+      const info = fromEpoch(arg);
+      console.log(`${info.iso} (${info.relative})`);
+    } else {
+      const info = fromDateString(args.slice(1).join(" "));
+      console.log(`Epoch: ${info.seconds} (ms: ${info.milliseconds}) | ${info.iso}`);
+    }
+    return;
+  }
+  if (cmd === "case" || cmd === "text") {
+    const text = args.slice(1).join(" ");
+    if (!text) {
+      console.log(`${c.red}Error: Please provide text to convert.${c.reset}`);
+      return;
+    }
+    const all = convertAllCases(text);
+    console.log(`camelCase:     ${all.camelCase}`);
+    console.log(`PascalCase:    ${all.pascalCase}`);
+    console.log(`snake_case:    ${all.snakeCase}`);
+    console.log(`kebab-case:    ${all.kebabCase}`);
+    console.log(`CONSTANT_CASE: ${all.constantCase}`);
+    return;
+  }
+  if (cmd === "lorem") {
+    const count = parseInt(args[1] || "10", 10) || 10;
+    const type = (args[2] || "words").toLowerCase();
+    if (type.startsWith("par")) {
+      console.log(generateParagraphs(count));
+    } else if (type.startsWith("sen")) {
+      const sents = [];
+      for (let i = 0; i < count; i++) sents.push(generateSentence());
+      console.log(sents.join(" "));
+    } else {
+      console.log(generateWords(count));
+    }
+    return;
+  }
+  if (cmd === "url") {
+    const sub = args[1]?.toLowerCase();
+    const rest = args.slice(2).join(" ");
+    if (sub === "encode") {
+      console.log(encodeUrl(rest));
+    } else if (sub === "decode") {
+      console.log(decodeUrl(rest));
+    } else {
+      const target = rest || args[1] || "";
+      const p = parseUrl(target);
+      console.log(`Origin:   ${p.origin}`);
+      console.log(`Path:     ${p.pathname}`);
+      console.log(`Params:   ${JSON.stringify(p.params)}`);
+    }
+    return;
+  }
+  if (cmd === "bytes") {
+    const raw = args.slice(1).join(" ");
+    const b = formatBytes(parseByteString(raw));
+    console.log(`Bytes: ${b.bytes.toLocaleString()} B | Binary: ${b.binary.human} | Decimal: ${b.decimal.human}`);
+    return;
+  }
+  if (cmd === "http" || cmd === "status") {
+    const code = args[1];
+    const info = lookupStatus(code);
+    if (!info) {
+      console.log(`Unknown HTTP Status: ${code}`);
+    } else {
+      console.log(`${info.code} ${info.phrase} (${info.category}) - ${info.description}`);
+    }
+    return;
+  }
+  if (cmd === "html") {
+    const sub = args[1]?.toLowerCase();
+    const str = args.slice(2).join(" ");
+    if (sub === "unescape" || sub === "decode") {
+      console.log(unescapeHtml(str));
+    } else {
+      console.log(escapeHtml(str || args.slice(1).join(" ")));
     }
     return;
   }
@@ -1249,6 +1867,16 @@ async function handleDirectCli(args) {
     } catch (e) {
       console.error(e.message);
     }
+    return;
+  }
+  if (cmd === "validator") {
+    const type = (args[1] || "email").toLowerCase();
+    const val = args[2] || "";
+    let ok = false;
+    if (type === "email") ok = isEmail(val);
+    else if (type === "url") ok = isUrl(val);
+    else if (type === "ip") ok = isIp(val);
+    console.log(ok ? "VALID" : "INVALID");
     return;
   }
   console.log(`${c.red}Unknown command: ${cmd}${c.reset}. Run ${c.cyan}sopkit --help${c.reset} for options.`);

@@ -1,0 +1,60 @@
+{
+  "name": "@sopkit/sopkit",
+  "version": "1.0.1",
+  "description": "Official SopKit developer toolkit & interactive CLI — 17+ high-performance offline developer tools directly in your terminal.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "type": "module",
+  "bin": {
+    "sopkit": "./bin/sopkit.cjs"
+  },
+  "scripts": {
+    "build": "tsup --config tsup.config.ts"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "sopkit",
+    "cli",
+    "toolkit",
+    "developer-tools",
+    "base64",
+    "uuid",
+    "slug",
+    "json",
+    "color",
+    "jwt",
+    "hash",
+    "password",
+    "epoch",
+    "timestamp",
+    "case-converter",
+    "lorem-ipsum",
+    "url-parser"
+  ],
+  "author": "SopKit <shaswatraj3@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SopKit/sopkit.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SopKit/sopkit.github.io/issues"
+  },
+  "homepage": "https://sopkit.space/"
+}

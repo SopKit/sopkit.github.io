@@ -1,12 +1,12 @@
 {
   "name": "@sopkit/cli",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "Interactive command-line interface for the SopKit utility ecosystem.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "type": "module",
   "bin": {
-    "sopkit": "dist/index.cjs"
+    "sopkit": "./bin/sopkit.cjs"
   },
   "scripts": {
     "build": "tsup --config tsup.config.ts"

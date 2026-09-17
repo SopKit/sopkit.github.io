@@ -1,5 +1,7 @@
 # @sopkit/hash
 
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40sopkit%2Fhash&label=VISITORS&labelColor=%230f172a&countColor=%230284c7)](https://visitorbadge.io/status?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40sopkit%2Fhash)
+
 Ultra-fast, zero-dependency cryptographic hashing utilities for modern JavaScript runtimes (Browser, Node.js, Cloudflare Workers, Bun, Deno).
 
 ## Features

@@ -1,10 +1,13 @@
 # SopKit Utility Libraries Ecosystem
 
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FSopKit%2Fsopkit.github.io%2Fpackages&label=VISITORS&labelColor=%230f172a&countColor=%230284c7)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FSopKit%2Fsopkit.github.io%2Fpackages)
+
 This directory hosts the standalone, reusable developer packages maintained by SopKit. Every package is written in strict TypeScript, compiled with `tsup` to both ESM and CommonJS formats, and includes full types (`.d.ts`).
 
 ## Packages List
 
-- **[`@sopkit/cli`](./cli)**: Interactive CLI dashboard providing a terminal UI & direct scriptable commands.
+- **[`@sopkit/cli`](./cli)**: Interactive CLI dashboard providing a terminal UI & direct scriptable commands (`npx @sopkit/cli`).
+- **[`@sopkit/sopkit`](./sopkit)**: Official SopKit developer toolkit distribution package (`npx @sopkit/sopkit`).
 - **[`@sopkit/base64`](./base64)**: Full Unicode & URL-Safe Base64 encoder and decoder.
 - **[`@sopkit/uuid`](./uuid)**: Cryptographically secure UUID v4 & v1 generator and validator.
 - **[`@sopkit/slug`](./slug)**: Multilingual URL slug generator with accent normalization.

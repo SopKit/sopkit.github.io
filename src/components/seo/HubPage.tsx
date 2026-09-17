@@ -6,6 +6,7 @@ import StructuredData from "@/components/shared/StructuredData";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { type Tool } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
+import { VisitorBadge } from "@/components/shared/VisitorBadge";
 
 export type HubPageProps = {
 	title: string;
@@ -57,7 +58,10 @@ export default function HubPage({
 			<main className="container mx-auto max-w-6xl px-4 py-12 md:py-16 space-y-12">
 				<BreadcrumbsEnhanced customBreadcrumbs={[{ name: title, url: route }]} />
 				<section className="max-w-3xl space-y-5">
-					<Badge variant="secondary" className="rounded-full">{badge}</Badge>
+					<div className="flex flex-wrap items-center gap-3">
+						<Badge variant="secondary" className="rounded-full">{badge}</Badge>
+						<VisitorBadge path={route} label="PAGE VIEWS" />
+					</div>
 					<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">
 						{title}
 					</h1>
