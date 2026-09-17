@@ -119,6 +119,9 @@ Canonical Base URL: https://sopkit.github.io
 #### [Avatar Generator](https://sopkit.github.io/avatar-generator)
 - **Description**: Generate unique identicon-style avatars from any seed text. Customize colors and export as PNG. Perfect for profiles, forums, and placeholders.
 
+#### [Ascii Art Generator](https://sopkit.github.io/ascii-art-generator)
+- **Description**: Transform photos and images into creative text-based ASCII art in your browser. Adjust contrast and character width with instant local preview.
+
 
 ### Image Tools Tools
 
@@ -711,6 +714,15 @@ Canonical Base URL: https://sopkit.github.io
 #### [Vkontakte Video Downloader](https://sopkit.github.io/vkontakte-video-downloader)
 - **Description**: Download VK videos, clips and shows in HD. Russian social content offline — free, no signup.
 
+#### [Terabox Video Downloader](https://sopkit.github.io/terabox-downloader)
+- **Description**: Stream and download Terabox media files easily directly in your browser with no registration or software installation required.
+
+#### [Instagram Reels Downloader HD](https://sopkit.github.io/ig-reels-downloader-hd)
+- **Description**: Download Instagram Reels videos in high definition directly to your device without logging in or installing third-party apps.
+
+#### [Facebook Video & Clip Downloader](https://sopkit.github.io/fb-clip-downloader)
+- **Description**: Download public Facebook videos and short clips in MP4 format directly to your device for offline personal viewing.
+
 
 ### YouTube Tools Tools
 
@@ -794,6 +806,18 @@ Canonical Base URL: https://sopkit.github.io
 
 #### [Youtube Video Downloader](https://sopkit.github.io/youtube-video-downloader)
 - **Description**: Save YouTube videos in MP4 from 144p to 4K for offline watching. Fast quality picker — free, no signup needed.
+
+#### [YouTube Video Downloader](https://sopkit.github.io/youtube-downloader)
+- **Description**: Download YouTube videos and audio online in high quality MP4 and MP3 formats for offline personal use with content you own.
+
+#### [YouTube Shorts Downloader](https://sopkit.github.io/youtube-shorts-downloader)
+- **Description**: Save YouTube Shorts videos in HD MP4 format for offline viewing without watermarks or account registration.
+
+#### [YouTube Channel Banner Downloader](https://sopkit.github.io/youtube-channel-banner-downloader)
+- **Description**: Extract and download high-resolution channel banner art and channel headers from any public YouTube channel.
+
+#### [YouTube Channel Logo Downloader](https://sopkit.github.io/youtube-channel-logo-downloader)
+- **Description**: Download full-size profile pictures, avatar logos, and channel icons from any public YouTube channel in original resolution.
 
 
 ### Audio Tools Tools

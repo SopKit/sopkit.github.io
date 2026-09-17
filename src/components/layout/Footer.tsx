@@ -26,7 +26,7 @@ export function Footer() {
 		{ name: "All 600+ Tools", href: STATIC_ROUTES.TOOLS },
 		{ name: "Tool Guides", href: STATIC_ROUTES.TOOL_GUIDES },
 		{ name: "NPM Packages", href: "/packages" },
-		{ name: "Embed Sandboxes", href: "/#embed" },
+		{ name: "Tool IDs & Embeds", href: STATIC_ROUTES.TOOL_ID },
 		{ name: "Blog", href: STATIC_ROUTES.BLOG },
 	];
 

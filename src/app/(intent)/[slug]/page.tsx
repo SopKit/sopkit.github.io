@@ -1,6 +1,6 @@
 import { notFound, permanentRedirect } from "next/navigation";
 import { getIntentBySlug, intentData } from "@/lib/intent-data";
-import { getAllTools, getToolById, getToolByExtraSlug, type Tool } from "@/lib/tools";
+import { getAllTools, getToolById, getToolByExtraSlug, getToolByRoute, type Tool } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import SeoOpportunityTool from "@/components/seo/SeoOpportunityTool";
@@ -101,8 +101,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const intent = getIntentBySlug(slug);
 
     if (!intent) {
-        const extraTool = getToolByExtraSlug(slug) || getToolById(slug);
+        const extraTool = getToolByExtraSlug(slug) || getToolById(slug) || getToolByRoute("/" + slug);
         if (extraTool) {
+            const isCanonicalTool = extraTool.route === `/${slug}`;
             const isNoUpload = slug.includes("no-upload") || slug.includes("offline") || slug.includes("local");
             const isPrivacy = slug.includes("privacy") || slug.includes("secure") || slug.includes("safe") || slug.includes("no-data-selling");
             const isFree = slug.includes("free") || slug.includes("no-signup") || slug.includes("no-registration");
@@ -110,7 +111,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             let title = "";
             let description = "";
 
-            if (isNoUpload) {
+            if (isCanonicalTool) {
+                title = extraTool.seoTitle || `${extraTool.name} — Free Online Tool | SopKit`;
+                description = extraTool.seoDescription || extraTool.description;
+            } else if (isNoUpload) {
                 title = `Free ${extraTool.name} (No File Uploads) — Local Browser Tool`;
                 description = `Run ${extraTool.name} locally in your browser. 100% private, client-side processing with zero file uploads. Fast, secure, and free.`;
             } else if (isPrivacy) {
@@ -217,10 +221,16 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
 
     const intent = getIntentBySlug(slug);
 
-    // Serve long-tail extraSlugs as standalone landers instead of redirecting
+    // Serve long-tail extraSlugs as standalone landers or handle canonical tool fallback
     if (!intent) {
-        const extraTool = getToolByExtraSlug(slug) || getToolById(slug);
+        const extraTool = getToolByExtraSlug(slug) || getToolById(slug) || getToolByRoute("/" + slug);
         if (extraTool) {
+            // If the user accessed via tool ID when the canonical route is different (e.g. /webp-to-jpg-converter -> /webp-to-jpg)
+            if (`/${slug}` !== extraTool.route && extraTool.id === slug) {
+                permanentRedirect(extraTool.route);
+            }
+
+            const isCanonicalTool = extraTool.route === `/${slug}`;
             const isNoUpload = slug.includes("no-upload") || slug.includes("offline") || slug.includes("local");
             const isPrivacy = slug.includes("privacy") || slug.includes("secure") || slug.includes("safe") || slug.includes("no-data-selling");
             const isFree = slug.includes("free") || slug.includes("no-signup") || slug.includes("no-registration");
@@ -228,54 +238,61 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
             const tool = { ...extraTool };
             const manualContent: ManualToolContent = MANUAL_TOOL_CONTENT[extraTool.id] || {} as ManualToolContent;
 
-            // 1. Customize name (H1)
-            let keywordHighlight = "";
-            if (isNoUpload) {
-                keywordHighlight = " (No File Uploads)";
-            } else if (isPrivacy) {
-                keywordHighlight = " (100% Secure & Private)";
-            } else if (isFree) {
-                keywordHighlight = " (Free & No Signup)";
-            }
-            tool.name = `${extraTool.name}${keywordHighlight}`;
+            if (isCanonicalTool) {
+                tool.name = extraTool.name;
+                tool.description = extraTool.description;
+                tool.article = manualContent.whatItIs || extraTool.article || "";
+                tool.faqs = manualContent.faqs || extraTool.faqs || [];
+            } else {
+                // 1. Customize name (H1)
+                let keywordHighlight = "";
+                if (isNoUpload) {
+                    keywordHighlight = " (No File Uploads)";
+                } else if (isPrivacy) {
+                    keywordHighlight = " (100% Secure & Private)";
+                } else if (isFree) {
+                    keywordHighlight = " (Free & No Signup)";
+                }
+                tool.name = `${extraTool.name}${keywordHighlight}`;
 
-            // 2. Customize description
-            tool.description = `A specialized, privacy-focused version of our ${extraTool.name} utility optimized for client-side security and local execution.`;
+                // 2. Customize description
+                tool.description = `A specialized, privacy-focused version of our ${extraTool.name} utility optimized for client-side security and local execution.`;
 
-            // 3. Customize Article
-            let extraArticle = "";
-            if (isNoUpload) {
-                extraArticle = `
+                // 3. Customize Article
+                let extraArticle = "";
+                if (isNoUpload) {
+                    extraArticle = `
 \n### Why a "No Upload" ${extraTool.name} is Essential
 Many online converters require you to upload files to their servers, exposing your sensitive documents, financial statements, or personal images to data breach risks and employee access. This page provides a 100% client-side alternative. Your files never leave your device, meaning you get absolute security and zero network upload latency.
 `;
-            } else if (isPrivacy) {
-                extraArticle = `
+                } else if (isPrivacy) {
+                    extraArticle = `
 \n### Absolute Privacy and Data Security
 With our privacy-friendly architecture, we guarantee that no data processed by this ${extraTool.name} is stored, tracked, or used to train artificial intelligence models. This local sandbox is built to meet corporate security guidelines and protect user confidentiality.
 `;
-            } else if (isFree) {
-                extraArticle = `
+                } else if (isFree) {
+                    extraArticle = `
 \n### 100% Free Without Limitations
 Unlike freemium services that restrict file sizes or impose hourly conversion limits, this ${extraTool.name} is free forever with no daily caps, no hidden fees, and no signups required. Access full processing capabilities instantly.
 `;
-            }
-            const baseArticle = manualContent.whatItIs || extraTool.article || "";
-            tool.article = baseArticle + extraArticle;
-
-            // 4. Customize FAQs
-            const baseFaqs = manualContent.faqs || extraTool.faqs || [];
-            const customFaqs = [
-                {
-                    question: `Does this ${extraTool.name} page upload my files?`,
-                    answer: `No, this page runs entirely in your browser. All operations are performed client-side using JavaScript, ensuring your files never leave your device.`
-                },
-                {
-                    question: `Is there any fee or usage limit for this local tool?`,
-                    answer: `No, the tool is 100% free with no registration, no file size limits, and no daily usage caps.`
                 }
-            ];
-            tool.faqs = [...customFaqs, ...baseFaqs.slice(0, 3)];
+                const baseArticle = manualContent.whatItIs || extraTool.article || "";
+                tool.article = baseArticle + extraArticle;
+
+                // 4. Customize FAQs
+                const baseFaqs = manualContent.faqs || extraTool.faqs || [];
+                const customFaqs = [
+                    {
+                        question: `Does this ${extraTool.name} page upload my files?`,
+                        answer: `No, this page runs entirely in your browser. All operations are performed client-side using JavaScript, ensuring your files never leave your device.`
+                    },
+                    {
+                        question: `Is there any fee or usage limit for this local tool?`,
+                        answer: `No, the tool is 100% free with no registration, no file size limits, and no daily usage caps.`
+                    }
+                ];
+                tool.faqs = [...customFaqs, ...baseFaqs.slice(0, 3)];
+            }
 
             const breadcrumbs = [
                 { name: "Home", url: "/" },
@@ -335,10 +352,6 @@ export async function generateStaticParams() {
                 }
             });
         }
-    });
-    // Include tool routes so tools without dedicated pages are pre-rendered
-    tools.forEach(t => {
-        if (t.route) slugs.add(t.route.replace(/^\//, ''));
     });
     return Array.from(slugs).map((slug) => ({ slug }));
 }

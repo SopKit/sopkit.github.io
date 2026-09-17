@@ -45,7 +45,7 @@ function getCategoryDescriptionJSX(slug: string, originalDesc: string) {
 	if (slug === "developer") {
 		return (
 			<>
-				Format code, convert variables, and encode strings with our online <Link href="/json-formatter/" className="text-primary hover:underline font-semibold">JSON Formatter</Link>, <Link href="/base64-encoder-decoder/" className="text-primary hover:underline font-semibold">Base64 Encoder Decoder</Link>, and <Link href="/html-beautifier/" className="text-primary hover:underline font-semibold">HTML Beautifier</Link>.
+				Format code, convert variables, and encode strings with our online <Link href="/json-formatter/" className="text-primary hover:underline font-semibold">JSON Formatter</Link>, <Link href="/base64-tool/" className="text-primary hover:underline font-semibold">Base64 Encoder Decoder</Link>, and <Link href="/html-beautifier/" className="text-primary hover:underline font-semibold">HTML Beautifier</Link>.
 			</>
 		);
 	}

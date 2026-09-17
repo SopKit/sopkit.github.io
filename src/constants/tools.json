@@ -2,7 +2,7 @@
   "metadata": {
     "version": "11.2",
     "lastUpdated": "2026-08-26",
-    "totalTools": 618,
+    "totalTools": 626,
     "totalCategories": 19
   },
   "categories": {
@@ -323,6 +323,15 @@
           "popular": false,
           "seoDescription": "Generate unique identicon avatars from any word or name with custom colors. Export PNGs for profiles, forums and placeholders — free.",
           "seoTitle": "Avatar Generator — Generate unique identicon-style avatars"
+        },
+        {
+          "id": "ascii-art-generator",
+          "name": "Ascii Art Generator",
+          "description": "Transform photos and images into creative text-based ASCII art in your browser. Adjust contrast and character width with instant local preview.",
+          "route": "/ascii-art-generator",
+          "popular": false,
+          "seoDescription": "Convert images into custom ASCII text art directly in your browser. Control character width and contrast with 100% private client-side processing.",
+          "seoTitle": "Free ASCII Art Generator — Image to Text Art Online"
         }
       ]
     },
@@ -2186,6 +2195,33 @@
           "popular": false,
           "seoDescription": "Save VKontakte videos and music clips in high quality. VK downloads simplified — free, no signup required.",
           "seoTitle": "VK Downloader — Videos & Clips HD"
+        },
+        {
+          "id": "terabox-downloader",
+          "name": "Terabox Video Downloader",
+          "description": "Stream and download Terabox media files easily directly in your browser with no registration or software installation required.",
+          "route": "/terabox-downloader",
+          "popular": false,
+          "seoDescription": "Play and download Terabox video links directly in your web browser. Fast streaming player, private processing, no account needed.",
+          "seoTitle": "Free Terabox Video Downloader & Player Online"
+        },
+        {
+          "id": "ig-reels-downloader-hd",
+          "name": "Instagram Reels Downloader HD",
+          "description": "Download Instagram Reels videos in high definition directly to your device without logging in or installing third-party apps.",
+          "route": "/ig-reels-downloader-hd",
+          "popular": false,
+          "seoDescription": "Download high quality Instagram Reels videos in MP4 format without login or watermarks. Fast, secure, and free online tool.",
+          "seoTitle": "Free Instagram Reels Downloader HD — Save IG Reels"
+        },
+        {
+          "id": "fb-clip-downloader",
+          "name": "Facebook Video & Clip Downloader",
+          "description": "Download public Facebook videos and short clips in MP4 format directly to your device for offline personal viewing.",
+          "route": "/fb-clip-downloader",
+          "popular": false,
+          "seoDescription": "Save public Facebook videos and short reels in clean MP4 format. Free online browser utility with no registration required.",
+          "seoTitle": "Free Facebook Video & Clip Downloader Online"
         }
       ]
     },
@@ -2437,6 +2473,42 @@
           "popular": false,
           "seoDescription": "Download YouTube videos in 360p to 4K MP4 for offline viewing. Your own and Creative Commons content — free.",
           "seoTitle": "YouTube Video Downloader — 4K MP4, Free"
+        },
+        {
+          "id": "youtube-downloader",
+          "name": "YouTube Video Downloader",
+          "description": "Download YouTube videos and audio online in high quality MP4 and MP3 formats for offline personal use with content you own.",
+          "route": "/youtube-downloader",
+          "popular": false,
+          "seoDescription": "Download YouTube clips in MP4 or extract MP3 audio directly in your browser. Free online utility for personal media and openly licensed content.",
+          "seoTitle": "Free YouTube Video & Audio Downloader Online"
+        },
+        {
+          "id": "youtube-shorts-downloader",
+          "name": "YouTube Shorts Downloader",
+          "description": "Save YouTube Shorts videos in HD MP4 format for offline viewing without watermarks or account registration.",
+          "route": "/youtube-shorts-downloader",
+          "popular": false,
+          "seoDescription": "Download YouTube Shorts clips in high-definition MP4 format without watermarks. Free online tool, instant local processing, no signup required.",
+          "seoTitle": "Free YouTube Shorts Downloader — HD MP4 Videos"
+        },
+        {
+          "id": "youtube-channel-banner-downloader",
+          "name": "YouTube Channel Banner Downloader",
+          "description": "Extract and download high-resolution channel banner art and channel headers from any public YouTube channel.",
+          "route": "/youtube-channel-banner-downloader",
+          "popular": false,
+          "seoDescription": "Download high-resolution YouTube channel banners and header images instantly. Simple, free online tool with no signup required.",
+          "seoTitle": "Free YouTube Channel Banner Downloader — HD Headers"
+        },
+        {
+          "id": "youtube-channel-logo-downloader",
+          "name": "YouTube Channel Logo Downloader",
+          "description": "Download full-size profile pictures, avatar logos, and channel icons from any public YouTube channel in original resolution.",
+          "route": "/youtube-channel-logo-downloader",
+          "popular": false,
+          "seoDescription": "Download full-resolution YouTube channel profile pictures and avatar logos online for free. Fast, private, and instant.",
+          "seoTitle": "Free YouTube Channel Logo & Avatar Downloader"
         }
       ]
     },

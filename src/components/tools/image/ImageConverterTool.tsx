@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { 
     Upload, 
     Download, 
@@ -46,6 +46,22 @@ export default function ImageConverterTool({ defaultOutputFormat = "png" }) {
     const [heightInput, setHeightInput] = useState<string>("");
     const fileInputRef = useRef<HTMLInputElement>(null);
 
+    // Sync outputFormat when defaultOutputFormat changes
+    useEffect(() => {
+        if (defaultOutputFormat) {
+            setOutputFormat(defaultOutputFormat);
+        }
+    }, [defaultOutputFormat]);
+
+    // Clean up previews on unmount to prevent object URL memory leaks
+    useEffect(() => {
+        return () => {
+            files.forEach(f => {
+                if (f.preview) URL.revokeObjectURL(f.preview);
+            });
+        };
+    }, []);
+
     const addFiles = useCallback((incoming: File[]) => {
         const newFiles = incoming.map(file => ({
             id: Math.random().toString(36).substring(2, 9),
@@ -58,7 +74,7 @@ export default function ImageConverterTool({ defaultOutputFormat = "png" }) {
             status: "pending" as const
         }));
         setFiles(prev => [...prev, ...newFiles]);
-        toast.success(`${newFiles.length} images added to converter queue.`);
+        toast.success(`${newFiles.length} image${newFiles.length > 1 ? "s" : ""} added to queue.`);
     }, []);
 
     const onFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
@@ -81,6 +97,12 @@ export default function ImageConverterTool({ defaultOutputFormat = "png" }) {
         setFiles([]);
     };
 
+    const handleFormatChange = (newFormat: string) => {
+        setOutputFormat(newFormat);
+        // Reset converted items so user can re-convert with new format
+        setFiles(prev => prev.map(f => f.status === "done" ? { ...f, status: "pending", convertedBlob: null, convertedSize: null } : f));
+    };
+
     const convertSingleImage = async (fileItem: ConverterFile): Promise<ConverterFile> => {
         const img = new Image();
         img.src = fileItem.preview;
@@ -99,11 +121,19 @@ export default function ImageConverterTool({ defaultOutputFormat = "png" }) {
 
         canvas.width = targetWidth;
         canvas.height = targetHeight;
-        ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
 
         let mimeType = "image/png";
         if (outputFormat === "jpeg" || outputFormat === "jpg") mimeType = "image/jpeg";
         else if (outputFormat === "webp") mimeType = "image/webp";
+        else if (outputFormat === "bmp") mimeType = "image/bmp";
+
+        // For JPEG, fill transparent backgrounds with white to prevent black artifacts
+        if (mimeType === "image/jpeg") {
+            ctx.fillStyle = "#ffffff";
+            ctx.fillRect(0, 0, targetWidth, targetHeight);
+        }
+
+        ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
 
         const convertedBlob = await new Promise<Blob | null>((res) => {
             canvas.toBlob((b) => res(b), mimeType, quality / 100);
@@ -117,6 +147,21 @@ export default function ImageConverterTool({ defaultOutputFormat = "png" }) {
             convertedSize: convertedBlob.size,
             status: "done"
         };
+    };
+
+    const downloadSingle = (item: ConverterFile) => {
+        if (!item.convertedBlob) return;
+        const ext = outputFormat === "jpeg" ? "jpg" : outputFormat;
+        const baseName = item.name.substring(0, item.name.lastIndexOf(".")) || item.name;
+        const url = URL.createObjectURL(item.convertedBlob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `${baseName}_converted.${ext}`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        toast.success(`Downloaded ${baseName}_converted.${ext}`);
     };
 
     const runConversion = async () => {
@@ -317,9 +362,21 @@ export default function ImageConverterTool({ defaultOutputFormat = "png" }) {
                                             {item.status === "failed" && (
                                                 <Badge variant="destructive" className="text-[9px] font-bold uppercase">Failed</Badge>
                                             )}
+                                            {item.status === "done" && item.convertedBlob && (
+                                                <Button 
+                                                    variant="ghost" 
+                                                    size="icon" 
+                                                    title="Download converted image"
+                                                    onClick={() => downloadSingle(item)}
+                                                    className="w-8 h-8 rounded-lg hover:bg-primary/10 text-primary"
+                                                >
+                                                    <Download className="w-4 h-4" />
+                                                </Button>
+                                            )}
                                             <Button 
                                                 variant="ghost" 
                                                 size="icon" 
+                                                title="Remove file"
                                                 onClick={() => removeFile(item.id)}
                                                 className="w-8 h-8 rounded-lg hover:bg-destructive/10 text-muted-foreground hover:text-destructive"
                                             >
@@ -346,7 +403,7 @@ export default function ImageConverterTool({ defaultOutputFormat = "png" }) {
                                 <select
                                     id="format-select"
                                     value={outputFormat}
-                                    onChange={(e) => setOutputFormat(e.target.value)}
+                                    onChange={(e) => handleFormatChange(e.target.value)}
                                     className="w-full h-9 px-3 rounded-lg border border-border/35 bg-background text-xs"
                                 >
                                     <option value="png">PNG (Lossless)</option>

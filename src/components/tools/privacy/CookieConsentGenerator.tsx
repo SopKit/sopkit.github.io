@@ -47,7 +47,7 @@ export default function CookieConsentGenerator() {
   .sopkit-cookie-btn-accept { ${style === "colorful" ? "background: #fff; color: #667eea;" : "background: #4caf50; color: #fff;"} }
 </style>
 <div class="sopkit-cookie-banner" id="sopkit-cookie-banner">
-  <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <a href="/privacy-policy">Learn more</a></p>
+  <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <a href="/privacy">Learn more</a></p>
   <div style="display: flex; gap: 8px;">
     <button class="sopkit-cookie-btn sopkit-cookie-btn-accept" onclick="document.getElementById('sopkit-cookie-banner').style.display='none'; localStorage.setItem('cookies-accepted','true');">Accept</button>
     <button class="sopkit-cookie-btn" onclick="document.getElementById('sopkit-cookie-banner').style.display='none';">Decline</button>

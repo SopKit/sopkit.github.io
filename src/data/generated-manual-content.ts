@@ -24008,4 +24008,306 @@ XML Prompt Formatter for Claude is built for privacy-conscious users who need re
     ],
     seoDescription: `Private XML Prompt Formatter for Claude: privately format AI prompts entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
+
+  "ascii-art-generator": {
+  "whatItIs": "Ascii Art Generator is a creative in-browser graphics tool that converts photos, logos, and illustrations into retro text-based ASCII character art. By sampling pixel luminance across an HTML5 canvas, the generator maps dark and light values to proportional typographic symbols. All rendering occurs locally on your machine with zero server communication.",
+  "features": [
+    "Instant client-side canvas luminance mapping",
+    "Real-time contrast and character column width adjustment",
+    "One-click copy to clipboard for forums and terminal motd",
+    "Direct plain-text (.txt) file download",
+    "Zero file uploads — 100% private in-browser generation"
+  ],
+  "howToUse": {
+    "name": "How to generate ASCII art from an image",
+    "steps": [
+      {
+        "name": "Upload Image",
+        "text": "Select a JPG, PNG, or WebP photo to convert into ASCII art."
+      },
+      {
+        "name": "Adjust Settings",
+        "text": "Slide the width slider to change character columns and adjust contrast for sharper details."
+      },
+      {
+        "name": "Copy or Download",
+        "text": "Click Copy to grab the raw ASCII text or Download to save as a .txt file."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Are my uploaded photos sent to a server?",
+      "answer": "No. The ASCII generation engine runs 100% inside your browser using HTML5 Canvas. Your photos never leave your device."
+    },
+    {
+      "question": "What image formats are supported?",
+      "answer": "You can convert PNG, JPG, JPEG, WebP, GIF, and SVG files into ASCII art."
+    },
+    {
+      "question": "Can I use the ASCII output commercially?",
+      "answer": "Yes, all generated text art is completely royalty-free for personal and commercial use."
+    }
+  ],
+  "seoDescription": "Convert images into custom ASCII text art directly in your browser. Control character width and contrast with 100% private client-side processing."
+},
+  "terabox-downloader": {
+  "whatItIs": "Terabox Video Downloader allows users to inspect, stream, and download Terabox media links directly inside a distraction-free web player without third-party desktop clients.",
+  "features": [
+    "Streamlined Terabox media playback and stream resolution",
+    "No desktop software or browser extensions required",
+    "Zero registration or credit card requirements",
+    "Fast preview player with responsive controls"
+  ],
+  "howToUse": {
+    "name": "How to use Terabox Video Downloader",
+    "steps": [
+      {
+        "name": "Paste Link",
+        "text": "Enter your public Terabox sharing URL into the input field."
+      },
+      {
+        "name": "Resolve Stream",
+        "text": "Click Get Video to load the media player and inspect stream options."
+      },
+      {
+        "name": "Download",
+        "text": "Use the download control to save the video file directly to your device."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Do I need a Terabox account?",
+      "answer": "No, you can stream and download shared public links directly through the web interface."
+    },
+    {
+      "question": "Is this tool free?",
+      "answer": "Yes, Terabox Video Downloader is 100% free with no daily quotas or hidden charges."
+    }
+  ],
+  "seoDescription": "Play and download Terabox video links directly in your web browser. Fast streaming player, private processing, no account needed."
+},
+  "youtube-downloader": {
+  "whatItIs": "YouTube Video Downloader provides a clean web interface for saving your own YouTube videos or public domain Creative Commons clips in MP4 video or MP3 audio formats.",
+  "features": [
+    "High quality video stream resolution (1080p, 720p, 480p)",
+    "Audio-only extraction for podcasts and music tracks",
+    "No client-side software or toolbars needed",
+    "Simple URL input with instant media detection"
+  ],
+  "howToUse": {
+    "name": "How to download YouTube videos",
+    "steps": [
+      {
+        "name": "Copy URL",
+        "text": "Copy the link of the video you wish to download."
+      },
+      {
+        "name": "Choose Format",
+        "text": "Paste into the input box and select your desired MP4 or MP3 quality."
+      },
+      {
+        "name": "Save Media",
+        "text": "Click Download to save the media file to your local computer or phone."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What video formats are supported?",
+      "answer": "Standard MP4 for high compatibility across mobile and desktop, plus MP3 for audio extraction."
+    },
+    {
+      "question": "Is registration required?",
+      "answer": "No, SopKit requires zero registration, emails, or accounts."
+    }
+  ],
+  "seoDescription": "Download YouTube clips in MP4 or extract MP3 audio directly in your browser. Free online utility for personal media and openly licensed content."
+},
+  "youtube-shorts-downloader": {
+  "whatItIs": "YouTube Shorts Downloader is optimized specifically for vertical video formats (9:16 aspect ratio), allowing creators and viewers to save Shorts clips without watermarks.",
+  "features": [
+    "Full original vertical 1080x1920 video quality preservation",
+    "Watermark-free MP4 output for editing and archiving",
+    "Compatible with mobile browsers on iOS and Android",
+    "Fast processing with zero waiting queues"
+  ],
+  "howToUse": {
+    "name": "How to download YouTube Shorts",
+    "steps": [
+      {
+        "name": "Copy Shorts Link",
+        "text": "Copy the YouTube Shorts URL from your browser or app share menu."
+      },
+      {
+        "name": "Paste and Fetch",
+        "text": "Paste the link into the downloader and click Download Shorts."
+      },
+      {
+        "name": "Save to Camera Roll",
+        "text": "Save the resulting clean MP4 file to your device storage."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Does this downloader add watermarks?",
+      "answer": "No, the output file contains no watermarks or overlays."
+    },
+    {
+      "question": "Can I download Shorts on iPhone or Android?",
+      "answer": "Yes, the tool runs seamlessly inside Safari, Chrome, and any mobile browser."
+    }
+  ],
+  "seoDescription": "Download YouTube Shorts clips in high-definition MP4 format without watermarks. Free online tool, instant local processing, no signup required."
+},
+  "ig-reels-downloader-hd": {
+  "whatItIs": "Instagram Reels Downloader HD allows users to save high-definition Instagram Reels videos directly to their device for offline viewing and creative reference.",
+  "features": [
+    "High definition video stream extraction",
+    "No Instagram account login or cookies required",
+    "Completely private — your downloads are not tracked or saved",
+    "Universal MP4 format playback on any device"
+  ],
+  "howToUse": {
+    "name": "How to download Instagram Reels",
+    "steps": [
+      {
+        "name": "Copy Reel URL",
+        "text": "Copy the Instagram Reel link from the Instagram app or website."
+      },
+      {
+        "name": "Paste Link",
+        "text": "Paste the URL into the input field."
+      },
+      {
+        "name": "Download HD Video",
+        "text": "Click Download Reel to save the MP4 video to your device."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Do I need to sign into Instagram?",
+      "answer": "No, you never need to share credentials or log in to use this tool."
+    },
+    {
+      "question": "Does it work for private accounts?",
+      "answer": "Only public Instagram Reels are accessible for download."
+    }
+  ],
+  "seoDescription": "Download high quality Instagram Reels videos in MP4 format without login or watermarks. Fast, secure, and free online tool."
+},
+  "fb-clip-downloader": {
+  "whatItIs": "Facebook Video & Clip Downloader enables saving public Facebook videos, reels, and clips to your device in MP4 format with full audio clarity.",
+  "features": [
+    "Direct video stream resolution for Facebook Watch and Reels",
+    "HD and SD quality options",
+    "No browser extensions required",
+    "Instant processing with zero wait times"
+  ],
+  "howToUse": {
+    "name": "How to download Facebook video clips",
+    "steps": [
+      {
+        "name": "Copy Link",
+        "text": "Copy the link of any public Facebook video or short clip."
+      },
+      {
+        "name": "Fetch Video",
+        "text": "Paste the URL and click Download."
+      },
+      {
+        "name": "Save",
+        "text": "Choose your preferred resolution and save the MP4 file."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Is this tool free?",
+      "answer": "Yes, it is 100% free with no limits on downloads."
+    },
+    {
+      "question": "Where are downloaded videos saved?",
+      "answer": "Files are saved to your browser default Downloads folder or Camera Roll."
+    }
+  ],
+  "seoDescription": "Save public Facebook videos and short reels in clean MP4 format. Free online browser utility with no registration required."
+},
+  "youtube-channel-banner-downloader": {
+  "whatItIs": "YouTube Channel Banner Downloader extracts the full-resolution channel header art (up to 2560x1440) from any public YouTube channel for design analysis and archiving.",
+  "features": [
+    "Pulls full 2560x1440 uncompressed TV-tier banner artwork",
+    "Supports channel @handle, custom URL, or channel ID input",
+    "Instant image preview and one-click download",
+    "Free with no API keys or accounts required"
+  ],
+  "howToUse": {
+    "name": "How to download a YouTube channel banner",
+    "steps": [
+      {
+        "name": "Enter Channel URL",
+        "text": "Paste any YouTube channel link or @handle."
+      },
+      {
+        "name": "Extract Banner",
+        "text": "Click Get Banner to fetch the highest-resolution banner image."
+      },
+      {
+        "name": "Save Image",
+        "text": "Download the banner image directly in original quality."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What is the maximum banner resolution?",
+      "answer": "YouTube stores banners up to 2560x1440 pixels. This tool downloads the highest available resolution."
+    },
+    {
+      "question": "Can I search by channel name?",
+      "answer": "Yes, you can paste the channel URL, @handle, or channel ID."
+    }
+  ],
+  "seoDescription": "Download high-resolution YouTube channel banners and header images instantly. Simple, free online tool with no signup required."
+},
+  "youtube-channel-logo-downloader": {
+  "whatItIs": "YouTube Channel Logo Downloader retrieves the full-size profile avatar icon (up to 800x800 pixels) from any YouTube creator or brand channel.",
+  "features": [
+    "Extracts full original avatar resolution without thumbnails pixelation",
+    "Works with channel @handle or standard YouTube links",
+    "Instant preview with transparent PNG/JPG download",
+    "100% free and client-side safe"
+  ],
+  "howToUse": {
+    "name": "How to download a YouTube channel logo",
+    "steps": [
+      {
+        "name": "Enter Channel",
+        "text": "Enter any YouTube channel URL or @handle."
+      },
+      {
+        "name": "Fetch Avatar",
+        "text": "Click Get Logo to extract the highest-resolution profile picture."
+      },
+      {
+        "name": "Download",
+        "text": "Click Download to save the avatar image to your device."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What resolution will the logo be?",
+      "answer": "The tool fetches the master 800x800 avatar image uploaded by the channel owner."
+    },
+    {
+      "question": "Is this tool free?",
+      "answer": "Yes, it is completely free with no usage limits."
+    }
+  ],
+  "seoDescription": "Download full-resolution YouTube channel profile pictures and avatar logos online for free. Fast, private, and instant."
+},
 };

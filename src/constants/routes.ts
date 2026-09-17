@@ -22,6 +22,7 @@ export const STATIC_ROUTES = {
 	CALCULATORS: "/calculators",
 	SEO_TOOLS: "/seo-tools",
 	TEXT_TOOLS: "/text-tools",
+	TOOL_ID: "/tool-id",
 } as const;
 
 export type StaticRoute = typeof STATIC_ROUTES[keyof typeof STATIC_ROUTES];
