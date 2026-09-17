@@ -224,30 +224,7 @@ export default function PdfSplitterTool() {
 	};
 
 	return (
-		<div className="container mx-auto px-4 py-8 max-w-6xl">
-			<div className="text-center mb-8">
-				<h2 className="text-4xl font-bold mb-4">Free PDF Splitter Online</h2>
-				<p className="text-xl text-muted-foreground mb-6">
-					Split PDF files into separate documents by pages, ranges, or
-					intervals. Extract specific pages or divide large PDFs into smaller
-					files instantly.
-				</p>
-
-				<div className="flex flex-wrap justify-center gap-4 mb-6">
-					<div className="flex items-center gap-2">
-						<Zap className="h-5 w-5 text-primary" />
-						<span className="text-sm font-medium">Instant Processing</span>
-					</div>
-					<div className="flex items-center gap-2">
-						<Shield className="h-5 w-5 text-primary" />
-						<span className="text-sm font-medium">Secure & Private</span>
-					</div>
-					<div className="flex items-center gap-2">
-						<Target className="h-5 w-5 text-primary" />
-						<span className="text-sm font-medium">Precise Control</span>
-					</div>
-				</div>
-			</div>
+		<div className="max-w-4xl mx-auto space-y-6">
 
 			{/* Upload Section */}
 			<Card className="mb-6">

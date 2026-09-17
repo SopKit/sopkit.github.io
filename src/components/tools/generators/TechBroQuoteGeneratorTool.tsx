@@ -1,436 +1,274 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import {
-	ArrowLeftIcon,
-	CopyIcon,
-	RefreshCwIcon,
-	RocketIcon,
-	TrendingUpIcon,
-	ZapIcon,
+	Copy,
+	RefreshCw,
+	Rocket,
+	Flame,
+	Check,
+	Sparkles,
+	Sliders,
+	Share2,
+	Terminal,
+	Zap,
 } from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
-import { getRouteById } from "@/lib/tools";
-import SocialShareButtons from "@/components/shared/SocialShareButtons";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
-import {
-	Select,
-	SelectContent,
-	SelectItem,
-	SelectTrigger,
-	SelectValue,
-} from "@/components/ui/select";
+import { trackToolExecution } from "@/lib/analytics";
 
-// Tech bro quote templates and data
-const QUOTE_TEMPLATES = [
-	"We're not just {action}, we're {impact} the entire {industry} ecosystem.",
-	"Our {product} leverages {technology} to {action} at scale.",
-	"We're building the {adjective} platform for {target_audience} to {action}.",
-	"Think {comparison}, but for {industry}. We're {impact} everything.",
-	"Our mission is to {action} {target_audience} through {technology}.",
-	"We're creating a {adjective} future where {vision}.",
-	"This isn't just {product}, it's a {adjective} revolution in {industry}.",
-	"We're {impact} the way {target_audience} {action} forever.",
-	"Our {technology}-powered solution will {action} the entire {industry}.",
-	"We're not just another {product}, we're the {adjective} solution for {problem}.",
+const PERSONAS = [
+	{
+		id: "founder",
+		name: "🦄 Delusional Founder",
+		role: "CEO & Visionary",
+		jargonRating: "99% Pure Vision",
+		prefix: "We are not building an app. We are building the operating system for human consciousness.",
+	},
+	{
+		id: "linkedin",
+		name: "💼 LinkedIn Guru",
+		role: "Chief Synergy Officer",
+		jargonRating: "97% Engagement Bait",
+		prefix: "I fired my top engineer today. Here is what it taught me about B2B sales leadership: 🧵",
+	},
+	{
+		id: "pitch",
+		name: "⚡ Series A Pitch",
+		role: "Stealth Mode Co-founder",
+		jargonRating: "95% VC Bait",
+		prefix: "It's like Uber meets Stripe for quantum AI agents. $40M pre-revenue SAFE note.",
+	},
+	{
+		id: "eacc",
+		name: "🤖 e/acc Tech Bro",
+		role: "AGI Accelerationist",
+		jargonRating: "100% Thermodynamic",
+		prefix: "Compute is the only sovereign currency. Decels will not survive the cluster expansion.",
+	},
+	{
+		id: "cto",
+		name: "☕ 10x Burnout CTO",
+		role: "Lead Platform Over-Architect",
+		jargonRating: "92% Overengineered",
+		prefix: "Our landing page is powered by 47 Kubernetes clusters and a custom distributed key-value store in Rust.",
+	},
 ];
 
-const BUZZWORDS = {
-	action: [
-		"disrupting",
-		"revolutionizing",
-		"transforming",
-		"optimizing",
-		"scaling",
-		"innovating",
-		"streamlining",
-		"automating",
-		"digitizing",
-		"modernizing",
-		"accelerating",
-		"empowering",
-	],
-	impact: [
-		"disrupting",
-		"revolutionizing",
-		"transforming",
-		"reshaping",
-		"redefining",
-		"reimagining",
-		"changing",
-		"evolving",
-		"upgrading",
-		"enhancing",
-		"optimizing",
-		"supercharging",
-	],
-	industry: [
-		"fintech",
-		"healthtech",
-		"edtech",
-		"proptech",
-		"foodtech",
-		"mobility",
-		"logistics",
-		"e-commerce",
-		"SaaS",
-		"blockchain",
-		"AI/ML",
-		"cybersecurity",
-		"sustainability",
-	],
-	product: [
-		"platform",
-		"ecosystem",
-		"solution",
-		"framework",
-		"infrastructure",
-		"marketplace",
-		"network",
-		"application",
-		"system",
-		"tool",
-		"service",
-		"experience",
-	],
-	technology: [
-		"AI",
-		"machine learning",
-		"blockchain",
-		"IoT",
-		"cloud computing",
-		"big data",
-		"automation",
-		"APIs",
-		"microservices",
-		"edge computing",
-		"quantum computing",
-		"AR/VR",
-	],
-	adjective: [
-		"game-changing",
-		"revolutionary",
-		"cutting-edge",
-		"next-generation",
-		"innovative",
-		"disruptive",
-		"scalable",
-		"seamless",
-		"intelligent",
-		"data-driven",
-		"user-centric",
-	],
-	target_audience: [
-		"millennials",
-		"Gen Z",
-		"enterprises",
-		"SMBs",
-		"creators",
-		"developers",
-		"consumers",
-		"professionals",
-		"startups",
-		"investors",
-		"entrepreneurs",
-		"users",
-	],
-	comparison: [
-		"Uber",
-		"Airbnb",
-		"Netflix",
-		"Amazon",
-		"Google",
-		"Facebook",
-		"Tesla",
-		"Spotify",
-		"Instagram",
-		"TikTok",
-		"Slack",
-		"Zoom",
-	],
-	vision: [
-		"everyone has access to innovation",
-		"technology serves humanity",
-		"data drives decisions",
-		"automation enhances creativity",
-		"AI augments human potential",
-		"blockchain ensures transparency",
-	],
-	problem: [
-		"inefficiency",
-		"fragmentation",
-		"complexity",
-		"scalability challenges",
-		"user experience gaps",
-		"data silos",
-		"manual processes",
-		"legacy systems",
-	],
+const TEMPLATES = [
+	"We're not just {action}, we're {impact} the entire {industry} paradigm through {technology} at planetary scale.",
+	"Think {comparison}, but horizontally integrated for {target_audience} using autonomous {technology}.",
+	"Our mission is to eliminate {problem} by leveraging {technology} to supercharge {target_audience} across Web3 and AI.",
+	"We raised a $12M seed round on a napkin to {action} {industry} workflows with real-time neural {technology}.",
+	"Legacy {industry} is fundamentally broken. Our zero-knowledge {technology} engine turns {problem} into exponential ARR.",
+	"We spent 8 months rewriting our {product} in Rust so {target_audience} can {action} with sub-millisecond quantum latency.",
+];
+
+const BUZZWORDS: Record<string, string[]> = {
+	action: ["democratizing", "disrupting", "revolutionizing", "tokenizing", "hyper-scaling", "neuralizing", "automating", "vectorizing"],
+	impact: ["reimagining", "supercharging", "rearchitecting", "paradigm-shifting", "quantum-accelerating"],
+	industry: ["fintech", "proptech", "B2B SaaS", "healthtech", "crypto-infrastructure", "generative AI", "edtech", "agentic workflows"],
+	technology: ["autonomous LLM agent swarms", "zero-knowledge rollups", "distributed state machines", "neural vector embeddings", "decentralized compute clusters"],
+	target_audience: ["growth hackers", "crypto degens", "enterprise sales teams", "angel syndicates", "indie hackers", "tier-1 VCs"],
+	comparison: ["Uber", "Linear", "Stripe", "Figma", "OpenAI", "Supabase", "Palantir"],
+	product: ["multi-agent workspace", "synergy protocol", "developer cockpit", "revenue flywheel", "data pipeline"],
+	problem: ["friction-filled churn", "legacy API latency", "cognitive overhead", "unscalable headcount", "fragmented tech debt"],
 };
 
-const QUOTE_STYLES = {
-	linkedin: "LinkedIn Post",
-	tweet: "Twitter Thread",
-	pitch: "Investor Pitch",
-	interview: "Tech Interview",
-	blog: "Medium Article",
-};
+function getRandom<T>(arr: T[]): T {
+	return arr[Math.floor(Math.random() * arr.length)];
+}
 
-const TechBroQuoteGeneratorTool = () => {
-	const [generatedQuote, setGeneratedQuote] = useState("");
+export default function TechBroQuoteGeneratorTool() {
+	const [selectedPersona, setSelectedPersona] = useState(PERSONAS[0]);
+	const [quote, setQuote] = useState("");
 	const [isGenerating, setIsGenerating] = useState(false);
-	const [selectedStyle, setSelectedStyle] = useState("linkedin");
-	const [copiedQuote, setCopiedQuote] = useState(false);
+	const [copied, setCopied] = useState(false);
+	const [slideNumber, setSlideNumber] = useState(3);
+	const [formatMode, setFormatMode] = useState<"deck" | "linkedin" | "tweet">("deck");
 
-	const getRandomItem = (array) => {
-		return array[Math.floor(Math.random() * array.length)];
-	};
-
-	const generateQuote = () => {
+	const generate = () => {
 		setIsGenerating(true);
+		const startTime = performance.now();
 
 		setTimeout(() => {
-			const template = getRandomItem(QUOTE_TEMPLATES);
-
-			let quote = template;
-
-			// Replace placeholders with random buzzwords
-			Object.keys(BUZZWORDS).forEach((category) => {
-				const regex = new RegExp(`{${category}}`, "g");
-				quote = quote.replace(regex, getRandomItem(BUZZWORDS[category]));
+			const template = getRandom(TEMPLATES);
+			let res = template;
+			Object.entries(BUZZWORDS).forEach(([key, list]) => {
+				const regex = new RegExp(`{${key}}`, "g");
+				res = res.replace(regex, getRandom(list));
 			});
 
-			// Style the quote based on selected format
-			let styledQuote = quote;
-
-			switch (selectedStyle) {
-				case "linkedin":
-					styledQuote = `🚀 ${quote}\n\n#startup #innovation #tech #entrepreneur #disruption`;
-					break;
-				case "tweet":
-					styledQuote = `🧵 THREAD: ${quote}\n\n1/7`;
-					break;
-				case "pitch":
-					styledQuote = `"${quote}"\n\n- Slide 3 of our Series A deck`;
-					break;
-				case "interview":
-					styledQuote = `Interviewer: "What makes your company unique?"\n\nMe: "${quote}"`;
-					break;
-				case "blog":
-					styledQuote = `## The Future is Here\n\n${quote}\n\n*Published on Medium • 5 min read*`;
-					break;
-				default:
-					styledQuote = quote;
-			}
-
-			setGeneratedQuote(styledQuote);
+			setQuote(res);
+			setSlideNumber(Math.floor(Math.random() * 12) + 2);
 			setIsGenerating(false);
-		}, 1000);
+
+			trackToolExecution("tech-bro-quote-generator", {
+				durationMs: performance.now() - startTime,
+				success: true,
+				action: "generate_quote",
+				category: "generator",
+			});
+		}, 350);
 	};
 
-	const copyQuote = async () => {
-		if (generatedQuote) {
-			await navigator.clipboard.writeText(generatedQuote);
-			setCopiedQuote(true);
-			setTimeout(() => setCopiedQuote(false), 2000);
+	useEffect(() => {
+		generate();
+	}, [selectedPersona]);
+
+	const getFormattedOutput = () => {
+		if (formatMode === "linkedin") {
+			return `${selectedPersona.prefix}\n\n"${quote}"\n\nAgree? What is your team doing to stay ahead? Let's discuss in the comments 👇\n\n#Startup #AI #Disruption #VentureCapital #B2BSaaS #HyperGrowth`;
+		}
+		if (formatMode === "tweet") {
+			return `1/7 ${selectedPersona.prefix}\n\n"${quote}"\n\nA thread on why 99% of legacy companies will be obsolete by Q4 🧵👇`;
+		}
+		return `"${quote}"\n\n— Slide ${slideNumber} of our Series A Deck (${selectedPersona.name})`;
+	};
+
+	const handleCopy = async () => {
+		const text = getFormattedOutput();
+		try {
+			await navigator.clipboard.writeText(text);
+			setCopied(true);
+			setTimeout(() => setCopied(false), 2000);
+		} catch (e) {
+			console.error("Copy failed", e);
 		}
 	};
 
 	return (
-		<div className="min-h-screen bg-muted/20 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900">
-			<div className="container mx-auto px-4 py-8">
-				<div className="mb-8">
-					<Link
-						href={getRouteById("generators")}
-						className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-4"
-					>
-						<ArrowLeftIcon className="mr-2 h-4 w-4" />
-						Back to Generators
-					</Link>
+		<div className="max-w-3xl mx-auto space-y-6">
+			{/* Persona Selector Chips */}
+			<div className="space-y-2">
+				<label className="text-xs font-bold uppercase tracking-wider text-muted-foreground block text-center">
+					Select Founder Persona
+				</label>
+				<div className="flex items-center justify-center flex-wrap gap-2">
+					{PERSONAS.map((p) => (
+						<button
+							key={p.id}
+							onClick={() => setSelectedPersona(p)}
+							className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all border ${
+								selectedPersona.id === p.id
+									? "bg-primary text-primary-foreground border-primary shadow-sm scale-105"
+									: "bg-secondary/60 hover:bg-secondary border-border/60 text-muted-foreground hover:text-foreground"
+							}`}
+						>
+							{p.name}
+						</button>
+					))}
+				</div>
+			</div>
 
-					<div className="flex items-center gap-3 mb-4">
-						<div className="p-2 bg-background">
-							<TrendingUpIcon className="h-6 w-6 text-white" />
-						</div>
-						<div>
-							<h2 className="text-3xl font-bold bg-background">
-								Tech Bro Quote Generator
-							</h2>
-							<p className="text-muted-foreground">
-								Generate satirical startup quotes and tech bro buzzwords
-							</p>
-						</div>
+			{/* Pitch Deck Slide Preview Card */}
+			<div className="relative rounded-2xl border border-border/80 bg-zinc-950 text-zinc-100 shadow-2xl overflow-hidden group">
+				{/* Mac window / Deck header bar */}
+				<div className="flex items-center justify-between px-4 py-3 bg-zinc-900/80 border-b border-zinc-800/80 text-xs">
+					<div className="flex items-center gap-2">
+						<span className="w-2.5 h-2.5 rounded-full bg-rose-500/80 inline-block" />
+						<span className="w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block" />
+						<span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80 inline-block" />
+						<span className="ml-2 font-mono text-[11px] text-zinc-400">
+							SLIDE_{String(slideNumber).padStart(2, "0")}_SYNERGY.DECK
+						</span>
 					</div>
 
-					<div className="flex flex-wrap gap-2 mb-6">
-						<Badge variant="secondary">🚀 Startup Buzzwords</Badge>
-						<Badge variant="secondary">💼 LinkedIn Ready</Badge>
-						<Badge variant="secondary">😂 Satirical Content</Badge>
-						<Badge variant="secondary">📱 Social Media</Badge>
+					<div className="flex items-center gap-2">
+						<span className="px-2 py-0.5 rounded-md bg-zinc-800 text-[10px] font-mono text-emerald-400 border border-emerald-500/30">
+							{selectedPersona.jargonRating}
+						</span>
 					</div>
 				</div>
 
-				<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-					{/* Controls */}
-					<div className="lg:col-span-1">
-						<Card>
-							<CardHeader>
-								<CardTitle className="flex items-center gap-2">
-									<ZapIcon className="h-5 w-5" />
-									Quote Settings
-								</CardTitle>
-								<CardDescription>
-									Customize your tech bro quote style
-								</CardDescription>
-							</CardHeader>
-							<CardContent className="space-y-4">
-								<div>
-									<label className="text-sm font-medium mb-2 block">
-										Quote Style
-									</label>
-									<Select
-										value={selectedStyle}
-										onValueChange={setSelectedStyle}
-									>
-										<SelectTrigger>
-											<SelectValue />
-										</SelectTrigger>
-										<SelectContent>
-											{Object.entries(QUOTE_STYLES).map(([key, label]) => (
-												<SelectItem key={key} value={key}>
-													{label}
-												</SelectItem>
-											))}
-										</SelectContent>
-									</Select>
-								</div>
-
-								<Button
-									onClick={generateQuote}
-									className="w-full bgtbd"
-									disabled={isGenerating}
-								>
-									{isGenerating ? (
-										<>
-											<RefreshCwIcon className="mr-2 h-4 w-4 animate-spin" />
-											Generating...
-										</>
-									) : (
-										<>
-											<RocketIcon className="mr-2 h-4 w-4" />
-											Generate Quote
-										</>
-									)}
-								</Button>
-							</CardContent>
-						</Card>
-					</div>
-
-					{/* Generated Quote */}
-					<div className="lg:col-span-2">
-						<Card>
-							<CardHeader>
-								<CardTitle className="flex items-center gap-2">
-									<TrendingUpIcon className="h-5 w-5" />
-									Generated Tech Bro Quote
-								</CardTitle>
-								<CardDescription>
-									Your satirical startup quote is ready for social media
-								</CardDescription>
-							</CardHeader>
-							<CardContent>
-								{generatedQuote ? (
-									<div className="space-y-4">
-										<div className="p-6 bg-background/20 dark:to-purple-900/20 shed border-border dark:border-border">
-											<pre className="whitespace-pre-wrap font-medium text-foreground dark:text-gray-200 leading-relaxed">
-												{generatedQuote}
-											</pre>
-										</div>
-
-										<div className="flex gap-2">
-											<Button
-												onClick={copyQuote}
-												variant="outline"
-												className="flex-1"
-											>
-												<CopyIcon className="mr-2 h-4 w-4" />
-												{copiedQuote ? "Copied!" : "Copy Quote"}
-											</Button>
-											<Button onClick={generateQuote} variant="outline">
-												<RefreshCwIcon className="h-4 w-4" />
-											</Button>
-										</div>
-									</div>
-								) : (
-									<div className="text-center py-12 text-muted-foreground">
-										<TrendingUpIcon className="h-12 w-12 mx-auto mb-4 opacity-50" />
-										<p>
-											Click "Generate Quote" to create your satirical tech bro
-											quote!
-										</p>
-										<p className="text-sm mt-2">
-											Perfect for LinkedIn memes and startup parody 🚀
-										</p>
-									</div>
-								)}
-							</CardContent>
-						</Card>
-					</div>
-				</div>
-
-				{/* Tips */}
-				<Card className="mt-8">
-					<CardHeader>
-						<CardTitle className="flex items-center gap-2">
-							<ZapIcon className="h-5 w-5" />
-							Pro Tips for Tech Bro Quotes
-						</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-							<div className="p-3 bg-muted/50 dark:bg-primary/20 ">
-								<h4 className="font-semibold mb-2">🎯 Perfect for Memes</h4>
-								<p>
-									Use these quotes for satirical content and startup parody
-									posts
-								</p>
+				{/* Deck Content Body */}
+				<div className="p-6 md:p-8 space-y-6">
+					<div className="flex items-center justify-between gap-2 border-b border-zinc-800/60 pb-3">
+						<div className="flex items-center gap-2">
+							<div className="w-8 h-8 rounded-lg bg-blue-600/20 text-blue-400 border border-blue-500/30 flex items-center justify-center font-bold text-sm">
+								YC
 							</div>
-							<div className="p-3 bg-muted/50 dark:bg-primary/20 ">
-								<h4 className="font-semibold mb-2">📱 Social Media Ready</h4>
-								<p>
-									Formatted for LinkedIn, Twitter, and other social platforms
-								</p>
-							</div>
-							<div className="p-3 bg-muted/50 dark:bg-primary/20 ">
-								<h4 className="font-semibold mb-2">😂 Satirical Content</h4>
-								<p>
-									Perfect for poking fun at startup culture and tech buzzwords
-								</p>
+							<div>
+								<div className="font-bold text-xs text-zinc-200">{selectedPersona.role}</div>
+								<div className="text-[10px] text-zinc-500 font-mono">Confidential // Series A Deck</div>
 							</div>
 						</div>
-					</CardContent>
-				</Card>
 
-				{/* Social Share */}
-				<div className="mt-12">
-					<SocialShareButtons
-						toolName="Tech Bro Quote Generator"
-						toolDescription="Generate hilarious satirical tech bro quotes and startup buzzwords! Perfect for LinkedIn memes and social media content. 🚀"
-						toolUrl="/tech-bro-quote-generator"
-						category="generators"
-					/>
+						<div className="flex items-center gap-1 bg-zinc-900 p-0.5 rounded-lg border border-zinc-800 text-[11px]">
+							<button
+								onClick={() => setFormatMode("deck")}
+								className={`px-2 py-1 rounded-md transition-colors ${formatMode === "deck" ? "bg-zinc-800 text-zinc-100 font-bold" : "text-zinc-400 hover:text-zinc-200"}`}
+							>
+								Deck
+							</button>
+							<button
+								onClick={() => setFormatMode("linkedin")}
+								className={`px-2 py-1 rounded-md transition-colors ${formatMode === "linkedin" ? "bg-zinc-800 text-zinc-100 font-bold" : "text-zinc-400 hover:text-zinc-200"}`}
+							>
+								LinkedIn
+							</button>
+							<button
+								onClick={() => setFormatMode("tweet")}
+								className={`px-2 py-1 rounded-md transition-colors ${formatMode === "tweet" ? "bg-zinc-800 text-zinc-100 font-bold" : "text-zinc-400 hover:text-zinc-200"}`}
+							>
+								X Thread
+							</button>
+						</div>
+					</div>
+
+					{/* The Quote */}
+					<div className="min-h-[100px] flex items-center justify-center text-center px-2">
+						{isGenerating ? (
+							<div className="flex items-center gap-2 text-zinc-400 text-sm font-mono animate-pulse">
+								<Sparkles className="w-4 h-4 text-blue-400 animate-spin" />
+								<span>Synthesizing multi-modal venture buzzwords...</span>
+							</div>
+						) : (
+							<blockquote className="text-lg md:text-2xl font-extrabold tracking-tight text-zinc-100 leading-snug">
+								&ldquo;{quote}&rdquo;
+							</blockquote>
+						)}
+					</div>
+
+					<div className="pt-2 flex flex-wrap items-center justify-between gap-3 text-xs border-t border-zinc-800/60">
+						<span className="text-zinc-400 text-[11px] font-mono">
+							Valuation: <span className="text-zinc-200 font-bold">$120M Pre-Money</span>
+						</span>
+						<span className="text-zinc-500 text-[11px]">
+							Target: <span className="text-zinc-300 font-semibold">100x ARR Multiple</span>
+						</span>
+					</div>
 				</div>
+			</div>
+
+			{/* Primary Action Buttons */}
+			<div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+				<Button
+					onClick={generate}
+					disabled={isGenerating}
+					className="h-12 text-sm font-extrabold rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg shadow-blue-500/20 border-0 transition-all active:scale-[0.98] gap-2"
+				>
+					<RefreshCw className={`w-4 h-4 ${isGenerating ? "animate-spin" : ""}`} />
+					<span>Scramble Another Buzzword</span>
+				</Button>
+
+				<Button
+					onClick={handleCopy}
+					variant={copied ? "secondary" : "outline"}
+					className="h-12 text-sm font-bold rounded-xl border-border/60 hover:bg-secondary gap-2"
+				>
+					{copied ? (
+						<>
+							<Check className="w-4 h-4 text-emerald-500" />
+							<span>Copied to Clipboard!</span>
+						</>
+					) : (
+						<>
+							<Copy className="w-4 h-4" />
+							<span>Copy for {formatMode === "deck" ? "Pitch" : formatMode === "linkedin" ? "LinkedIn" : "X"}</span>
+						</>
+					)}
+				</Button>
 			</div>
 		</div>
 	);
-};
-
-export default TechBroQuoteGeneratorTool;
+}

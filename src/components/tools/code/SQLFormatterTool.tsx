@@ -234,186 +234,155 @@ export default function SQLFormatter() {
 	};
 
 	return (
-		<div className="min-h-screen bg-background">
-			<div className="container mx-auto px-4 py-8">
-				<div className="max-w-6xl mx-auto">
-					<div className="text-center mb-8">
-						<h2 className="text-4xl font-bold mb-4">SQL Formatter</h2>
-						<p className="text-lg text-muted-foreground">
-							Format and beautify SQL queries with proper indentation and syntax
-							highlighting
-						</p>
-					</div>
-
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-						{/* Input Section */}
-						<div className="space-y-4">
-							<Card>
-								<CardHeader>
-									<CardTitle className="flex items-center gap-2">
-										<Database className="w-5 h-5" />
-										SQL Input
-									</CardTitle>
-									<CardDescription>
-										Paste your unformatted SQL query here
-									</CardDescription>
-								</CardHeader>
-								<CardContent className="space-y-4">
-									<Textarea
-										placeholder="Enter your SQL query here..."
-										value={sqlInput}
-										onChange={(e) => setSqlInput(e.target.value)}
-										className="min-h-[300px] font-mono text-sm"
-									/>
-									<div className="flex gap-2">
-										<Button onClick={loadSample} variant="outline" size="sm">
-											Load Sample
-										</Button>
-										<Button onClick={clearAll} variant="outline" size="sm">
-											Clear
-										</Button>
-									</div>
-								</CardContent>
-							</Card>
-
-							{/* Options */}
-							<Card>
-								<CardHeader>
-									<CardTitle>Formatting Options</CardTitle>
-								</CardHeader>
-								<CardContent className="space-y-4">
-									<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-										<div>
-											<Label htmlFor="dialect">SQL Dialect</Label>
-											<Select value={sqlDialect} onValueChange={setSqlDialect}>
-												<SelectTrigger>
-													<SelectValue />
-												</SelectTrigger>
-												<SelectContent>
-													<SelectItem value="standard">Standard SQL</SelectItem>
-													<SelectItem value="mysql">MySQL</SelectItem>
-													<SelectItem value="postgresql">PostgreSQL</SelectItem>
-													<SelectItem value="mssql">SQL Server</SelectItem>
-													<SelectItem value="oracle">Oracle</SelectItem>
-												</SelectContent>
-											</Select>
-										</div>
-
-										<div>
-											<Label htmlFor="indent">Indent Size</Label>
-											<Select value={indentSize} onValueChange={setIndentSize}>
-												<SelectTrigger>
-													<SelectValue />
-												</SelectTrigger>
-												<SelectContent>
-													<SelectItem value="2">2 spaces</SelectItem>
-													<SelectItem value="4">4 spaces</SelectItem>
-													<SelectItem value="8">8 spaces</SelectItem>
-												</SelectContent>
-											</Select>
-										</div>
-
-										<div>
-											<Label htmlFor="case">Keyword Case</Label>
-											<Select
-												value={keywordCase}
-												onValueChange={setKeywordCase}
-											>
-												<SelectTrigger>
-													<SelectValue />
-												</SelectTrigger>
-												<SelectContent>
-													<SelectItem value="upper">UPPERCASE</SelectItem>
-													<SelectItem value="lower">lowercase</SelectItem>
-												</SelectContent>
-											</Select>
-										</div>
-									</div>
-
-									<Button
-										onClick={formatSQL}
-										className="w-full"
-										disabled={!sqlInput.trim()}
-									>
-										<Code className="w-4 h-4 mr-2" />
-										Format SQL
-									</Button>
-								</CardContent>
-							</Card>
-						</div>
-
-						{/* Output Section */}
-						<div>
-							<Card>
-								<CardHeader>
-									<CardTitle>Formatted SQL</CardTitle>
-									<CardDescription>
-										Your beautifully formatted SQL query
-									</CardDescription>
-								</CardHeader>
-								<CardContent className="space-y-4">
-									<div className="relative">
-										<Textarea
-											value={formattedSql}
-											readOnly
-											placeholder="Formatted SQL will appear here..."
-											className="min-h-[400px] font-mono text-sm bg-muted/30"
-										/>
-										{formattedSql && (
-											<div className="absolute top-2 right-2 space-x-2">
-												<Button
-													size="sm"
-													variant="ghost"
-													onClick={copyToClipboard}
-												>
-													<Copy className="w-4 h-4" />
-												</Button>
-												<Button size="sm" variant="ghost" onClick={downloadSQL}>
-													<Download className="w-4 h-4" />
-												</Button>
-											</div>
-										)}
-									</div>
-								</CardContent>
-							</Card>
-						</div>
-					</div>
-
-					{/* Features */}
-					<Card className="mt-8">
-						<CardHeader>
-							<CardTitle>Features</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-								<div>
-									<h4 className="font-medium mb-2">Proper Indentation</h4>
-									<p className="text-muted-foreground">
-										Clean, readable formatting with consistent indentation
-									</p>
-								</div>
-								<div>
-									<h4 className="font-medium mb-2">Keyword Formatting</h4>
-									<p className="text-muted-foreground">
-										Uppercase or lowercase SQL keywords as preferred
-									</p>
-								</div>
-								<div>
-									<h4 className="font-medium mb-2">Multiple Dialects</h4>
-									<p className="text-muted-foreground">
-										Support for different SQL database systems
-									</p>
-								</div>
-								<div>
-									<h4 className="font-medium mb-2">Download & Copy</h4>
-									<p className="text-muted-foreground">
-										Easy sharing and saving of formatted queries
-									</p>
-								</div>
+		<div className="max-w-5xl mx-auto space-y-5">
+			{/* Studio Controls Header Bar */}
+			<Card className="border-border/60 shadow-sm">
+				<CardContent className="p-3.5 sm:p-4">
+					<div className="flex flex-wrap items-center justify-between gap-3">
+						<div className="flex flex-wrap items-center gap-3">
+							{/* Dialect */}
+							<div className="flex items-center gap-1.5">
+								<Label htmlFor="dialect" className="text-xs text-muted-foreground whitespace-nowrap">
+									Dialect:
+								</Label>
+								<Select value={sqlDialect} onValueChange={setSqlDialect}>
+									<SelectTrigger className="h-8 text-xs w-[130px]">
+										<SelectValue />
+									</SelectTrigger>
+									<SelectContent>
+										<SelectItem value="standard">Standard SQL</SelectItem>
+										<SelectItem value="mysql">MySQL</SelectItem>
+										<SelectItem value="postgresql">PostgreSQL</SelectItem>
+										<SelectItem value="mssql">SQL Server</SelectItem>
+										<SelectItem value="oracle">Oracle</SelectItem>
+									</SelectContent>
+								</Select>
 							</div>
-						</CardContent>
-					</Card>
-				</div>
+
+							{/* Indentation */}
+							<div className="flex items-center gap-1.5">
+								<Label htmlFor="indent" className="text-xs text-muted-foreground whitespace-nowrap">
+									Indent:
+								</Label>
+								<Select value={indentSize} onValueChange={setIndentSize}>
+									<SelectTrigger className="h-8 text-xs w-[100px]">
+										<SelectValue />
+									</SelectTrigger>
+									<SelectContent>
+										<SelectItem value="2">2 spaces</SelectItem>
+										<SelectItem value="4">4 spaces</SelectItem>
+										<SelectItem value="8">8 spaces</SelectItem>
+									</SelectContent>
+								</Select>
+							</div>
+
+							{/* Keyword Case */}
+							<div className="flex items-center gap-1.5">
+								<Label htmlFor="case" className="text-xs text-muted-foreground whitespace-nowrap">
+									Keywords:
+								</Label>
+								<Select value={keywordCase} onValueChange={setKeywordCase}>
+									<SelectTrigger className="h-8 text-xs w-[110px]">
+										<SelectValue />
+									</SelectTrigger>
+									<SelectContent>
+										<SelectItem value="upper">UPPERCASE</SelectItem>
+										<SelectItem value="lower">lowercase</SelectItem>
+									</SelectContent>
+								</Select>
+							</div>
+						</div>
+
+						<div className="flex items-center gap-2 ml-auto">
+							<Button onClick={loadSample} variant="outline" size="sm" className="h-8 text-xs">
+								Sample
+							</Button>
+							{sqlInput && (
+								<Button onClick={clearAll} variant="ghost" size="sm" className="h-8 text-xs text-muted-foreground hover:text-foreground">
+									Clear
+								</Button>
+							)}
+							<Button
+								onClick={formatSQL}
+								disabled={!sqlInput.trim()}
+								size="sm"
+								className="h-8 text-xs font-semibold px-4"
+							>
+								<Code className="w-3.5 h-3.5 mr-1.5" />
+								Format SQL
+							</Button>
+						</div>
+					</div>
+				</CardContent>
+			</Card>
+
+			{/* Dual-Pane Code Editor Grid */}
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+				{/* Input Pane */}
+				<Card className="border-border/60 shadow-sm flex flex-col">
+					<CardHeader className="py-2.5 px-4 border-b border-border/40 flex flex-row items-center justify-between space-y-0">
+						<div className="flex items-center gap-2">
+							<Database className="w-4 h-4 text-primary" />
+							<span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+								Input Query
+							</span>
+						</div>
+						<span className="text-[11px] text-muted-foreground font-mono">
+							{sqlInput.length} chars
+						</span>
+					</CardHeader>
+					<CardContent className="p-0 flex-1">
+						<Textarea
+							placeholder="Paste raw, minified, or unformatted SQL query here..."
+							value={sqlInput}
+							onChange={(e) => setSqlInput(e.target.value)}
+							className="min-h-[360px] h-full font-mono text-xs p-4 rounded-none border-0 resize-none focus-visible:ring-0 leading-relaxed bg-transparent"
+						/>
+					</CardContent>
+				</Card>
+
+				{/* Output Pane */}
+				<Card className="border-border/60 shadow-sm flex flex-col">
+					<CardHeader className="py-2.5 px-4 border-b border-border/40 flex flex-row items-center justify-between space-y-0">
+						<div className="flex items-center gap-2">
+							<Code className="w-4 h-4 text-emerald-500" />
+							<span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+								Beautified SQL
+							</span>
+						</div>
+						{formattedSql && (
+							<div className="flex items-center gap-1.5">
+								<Button
+									size="sm"
+									variant="ghost"
+									className="h-7 px-2 text-xs text-muted-foreground hover:text-foreground"
+									onClick={copyToClipboard}
+									title="Copy SQL"
+								>
+									<Copy className="w-3.5 h-3.5 mr-1" />
+									Copy
+								</Button>
+								<Button
+									size="sm"
+									variant="ghost"
+									className="h-7 px-2 text-xs text-muted-foreground hover:text-foreground"
+									onClick={downloadSQL}
+									title="Download .sql"
+								>
+									<Download className="w-3.5 h-3.5" />
+								</Button>
+							</div>
+						)}
+					</CardHeader>
+					<CardContent className="p-0 flex-1 relative bg-muted/20">
+						<Textarea
+							value={formattedSql}
+							readOnly
+							placeholder="Click 'Format SQL' to beautify your query..."
+							className="min-h-[360px] h-full font-mono text-xs p-4 rounded-none border-0 resize-none focus-visible:ring-0 leading-relaxed bg-transparent"
+						/>
+					</CardContent>
+				</Card>
 			</div>
 		</div>
 	);

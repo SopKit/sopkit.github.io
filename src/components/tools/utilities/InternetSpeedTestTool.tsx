@@ -77,259 +77,145 @@ export default function InternetSpeedTestTool() {
 	};
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-cyan-50 py-12 px-4">
-			<div className="max-w-4xl mx-auto">
-				{/* Header */}
-				<div className="text-center mb-12">
-					<h2 className="text-4xl font-bold text-foreground mb-4">
-						Internet Speed Test
-					</h2>
-					<p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-						Test your internet connection speed. Check download speed, upload
-						speed, and ping latency.
-					</p>
-				</div>
-
-				{/* Main Test Area */}
-				<Card className="mb-8">
-					<CardHeader>
-						<CardTitle className="flex items-center gap-2">
-							<Wifi className="h-5 w-5" />
-							Speed Test
-						</CardTitle>
-						<CardDescription>
-							Click start to begin testing your internet connection
-						</CardDescription>
-					</CardHeader>
-					<CardContent>
-						{!isTestRunning && !results && (
-							<div className="text-center py-12">
-								<div className="w-32 h-32 mx-auto mb-6 bg-background">
-									<Play className="h-12 w-12 text-white" />
+		<div className="max-w-4xl mx-auto space-y-6">
+			{/* Main Speed Test Console */}
+			<Card className="border-border/60 shadow-sm overflow-hidden">
+				<CardContent className="p-6 sm:p-10 flex flex-col items-center justify-center text-center">
+					{!isTestRunning && !results && (
+						<div className="space-y-6 py-6 max-w-sm mx-auto">
+							<button
+								onClick={simulateSpeedTest}
+								className="w-36 h-36 rounded-full bg-gradient-to-tr from-primary/90 to-primary text-primary-foreground font-bold text-lg shadow-xl hover:scale-105 active:scale-95 transition-all flex flex-col items-center justify-center mx-auto ring-8 ring-primary/10 hover:ring-primary/20 group"
+							>
+								<Play className="h-8 w-8 mb-1 fill-current group-hover:translate-x-0.5 transition-transform" />
+								<span>START</span>
+							</button>
+							<div>
+								<div className="text-base font-semibold text-foreground">
+									Ready to Measure Connection
 								</div>
-								<h2 className="text-2xl font-bold mb-4">Ready to Test</h2>
-								<p className="text-muted-foreground mb-6">
-									Click the button below to start testing your internet speed
-								</p>
-								<Button onClick={simulateSpeedTest} size="lg" className="px-8">
-									Start Speed Test
-								</Button>
-							</div>
-						)}
-
-						{isTestRunning && (
-							<div className="text-center py-12">
-								<div className="w-32 h-32 mx-auto mb-6 bg-background">
-									<RefreshCw className="h-12 w-12 text-white animate-spin" />
-								</div>
-								<h2 className="text-2xl font-bold mb-4">
-									Testing{" "}
-									{currentTest === "download"
-										? "Download Speed"
-										: currentTest === "upload"
-											? "Upload Speed"
-											: "Ping & Jitter"}
-								</h2>
-								<Progress
-									value={progress}
-									className="w-full max-w-md mx-auto mb-4"
-								/>
-								<p className="text-muted-foreground">{progress}% Complete</p>
-							</div>
-						)}
-
-						{results && (
-							<div className="space-y-6">
-								<div className="text-center py-6">
-									<h2 className="text-2xl font-bold mb-4">Test Results</h2>
-									<p className="text-muted-foreground">
-										Completed at {results.timestamp}
-									</p>
-								</div>
-
-								<div className="grid md:grid-cols-3 gap-6">
-									{/* Download Speed */}
-									<Card className="text-center">
-										<CardContent className="pt-6">
-											<Download className="h-8 w-8 text-primary mx-auto mb-3" />
-											<div className="text-3xl font-bold mb-2">
-												{results.download}
-											</div>
-											<div className="text-sm text-muted-foreground mb-2">
-												Mbps
-											</div>
-											<div
-												className={`text-sm font-medium ${getSpeedCategory(results.download).color}`}
-											>
-												{getSpeedCategory(results.download).label}
-											</div>
-											<div className="text-xs text-muted-foreground mt-1">
-												Download
-											</div>
-										</CardContent>
-									</Card>
-
-									{/* Upload Speed */}
-									<Card className="text-center">
-										<CardContent className="pt-6">
-											<Upload className="h-8 w-8 text-primary mx-auto mb-3" />
-											<div className="text-3xl font-bold mb-2">
-												{results.upload}
-											</div>
-											<div className="text-sm text-muted-foreground mb-2">
-												Mbps
-											</div>
-											<div
-												className={`text-sm font-medium ${getSpeedCategory(results.upload).color}`}
-											>
-												{getSpeedCategory(results.upload).label}
-											</div>
-											<div className="text-xs text-muted-foreground mt-1">
-												Upload
-											</div>
-										</CardContent>
-									</Card>
-
-									{/* Ping */}
-									<Card className="text-center">
-										<CardContent className="pt-6">
-											<Clock className="h-8 w-8 text-primary mx-auto mb-3" />
-											<div className="text-3xl font-bold mb-2">
-												{results.ping}
-											</div>
-											<div className="text-sm text-muted-foreground mb-2">
-												ms
-											</div>
-											<div
-												className={`text-sm font-medium ${
-													results.ping < 20
-														? "text-primary"
-														: results.ping < 50
-															? "text-primary"
-															: "text-destructive"
-												}`}
-											>
-												{results.ping < 20
-													? "Excellent"
-													: results.ping < 50
-														? "Good"
-														: "Fair"}
-											</div>
-											<div className="text-xs text-muted-foreground mt-1">
-												Ping
-											</div>
-										</CardContent>
-									</Card>
-								</div>
-
-								{/* Additional Metrics */}
-								<Card>
-									<CardContent className="pt-6">
-										<div className="grid md:grid-cols-2 gap-4">
-											<div className="flex justify-between">
-												<span className="font-medium">Jitter:</span>
-												<span>{results.jitter} ms</span>
-											</div>
-											<div className="flex justify-between">
-												<span className="font-medium">Test Server:</span>
-												<span>Auto-selected</span>
-											</div>
-										</div>
-									</CardContent>
-								</Card>
-
-								<div className="text-center">
-									<Button onClick={simulateSpeedTest} variant="outline">
-										<RefreshCw className="h-4 w-4 mr-2" />
-										Test Again
-									</Button>
-								</div>
-							</div>
-						)}
-					</CardContent>
-				</Card>
-
-				{/* Speed Recommendations */}
-				<Card className="mb-8">
-					<CardHeader>
-						<CardTitle>Speed Recommendations</CardTitle>
-						<CardDescription>
-							Recommended speeds for different activities
-						</CardDescription>
-					</CardHeader>
-					<CardContent>
-						<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-							<div className="text-center p-4 bg-gray-50 ">
-								<h3 className="font-semibold mb-2">Basic Browsing</h3>
-								<div className="text-2xl font-bold text-primary">1-5 Mbps</div>
-								<p className="text-sm text-muted-foreground mt-1">
-									Web browsing, email
-								</p>
-							</div>
-							<div className="text-center p-4 bg-gray-50 ">
-								<h3 className="font-semibold mb-2">HD Streaming</h3>
-								<div className="text-2xl font-bold text-primary">5-25 Mbps</div>
-								<p className="text-sm text-muted-foreground mt-1">
-									Netflix, YouTube HD
-								</p>
-							</div>
-							<div className="text-center p-4 bg-gray-50 ">
-								<h3 className="font-semibold mb-2">4K Streaming</h3>
-								<div className="text-2xl font-bold text-primary">25+ Mbps</div>
-								<p className="text-sm text-muted-foreground mt-1">
-									Ultra HD content
-								</p>
-							</div>
-							<div className="text-center p-4 bg-gray-50 ">
-								<h3 className="font-semibold mb-2">Gaming</h3>
-								<div className="text-2xl font-bold text-destructive">
-									&lt;50ms
-								</div>
-								<p className="text-sm text-muted-foreground mt-1">
-									Low ping required
+								<p className="text-xs text-muted-foreground mt-1">
+									Measures latency, download throughput, and upload speeds in real time
 								</p>
 							</div>
 						</div>
-					</CardContent>
-				</Card>
+					)}
 
-				{/* Features */}
-				<div className="grid md:grid-cols-3 gap-6">
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Download className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Download Test</h3>
-								<p className="text-sm text-muted-foreground">
-									Measure your download speed accurately
-								</p>
+					{isTestRunning && (
+						<div className="space-y-6 py-4 w-full max-w-md mx-auto">
+							<div className="w-36 h-36 rounded-full border-4 border-primary/20 border-t-primary animate-spin flex items-center justify-center mx-auto">
+								<div className="text-2xl font-mono font-bold text-foreground">
+									{progress}%
+								</div>
 							</div>
-						</CardContent>
-					</Card>
 
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Upload className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Upload Test</h3>
-								<p className="text-sm text-muted-foreground">
-									Check your upload speed performance
-								</p>
+							<div className="space-y-2">
+								<div className="text-sm font-semibold uppercase tracking-wider text-primary">
+									{currentTest === "download"
+										? "Testing Download Throughput..."
+										: currentTest === "upload"
+											? "Testing Upload Capability..."
+											: "Measuring Latency & Jitter..."}
+								</div>
+								<Progress value={progress} className="h-2 w-full max-w-xs mx-auto" />
 							</div>
-						</CardContent>
-					</Card>
+						</div>
+					)}
 
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Clock className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Ping & Latency</h3>
-								<p className="text-sm text-muted-foreground">
-									Test connection latency and jitter
-								</p>
+					{results && (
+						<div className="space-y-8 w-full">
+							{/* Results Header */}
+							<div className="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-border/40">
+								<div className="text-left">
+									<span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+										Connection Test Summary
+									</span>
+									<div className="text-xs text-muted-foreground">
+										Completed on {results.timestamp}
+									</div>
+								</div>
+								<Button onClick={simulateSpeedTest} variant="outline" size="sm" className="h-8 text-xs font-semibold">
+									<RefreshCw className="h-3.5 w-3.5 mr-1.5" />
+									Retest Speed
+								</Button>
 							</div>
-						</CardContent>
-					</Card>
+
+							{/* 3 Metric Cards */}
+							<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+								<div className="p-5 rounded-2xl border border-border/60 bg-muted/20 text-center space-y-1">
+									<div className="flex items-center justify-center gap-1.5 text-xs font-semibold text-muted-foreground uppercase">
+										<Download className="h-3.5 w-3.5 text-primary" />
+										Download
+									</div>
+									<div className="text-3xl sm:text-4xl font-mono font-bold tracking-tight text-foreground">
+										{results.download}
+									</div>
+									<div className="text-xs text-muted-foreground">Mbps</div>
+									<div className="pt-1">
+										<span className="inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full bg-primary/10 text-primary">
+											{getSpeedCategory(Number(results.download)).label}
+										</span>
+									</div>
+								</div>
+
+								<div className="p-5 rounded-2xl border border-border/60 bg-muted/20 text-center space-y-1">
+									<div className="flex items-center justify-center gap-1.5 text-xs font-semibold text-muted-foreground uppercase">
+										<Upload className="h-3.5 w-3.5 text-primary" />
+										Upload
+									</div>
+									<div className="text-3xl sm:text-4xl font-mono font-bold tracking-tight text-foreground">
+										{results.upload}
+									</div>
+									<div className="text-xs text-muted-foreground">Mbps</div>
+									<div className="pt-1">
+										<span className="inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full bg-primary/10 text-primary">
+											{getSpeedCategory(Number(results.upload)).label}
+										</span>
+									</div>
+								</div>
+
+								<div className="p-5 rounded-2xl border border-border/60 bg-muted/20 text-center space-y-1">
+									<div className="flex items-center justify-center gap-1.5 text-xs font-semibold text-muted-foreground uppercase">
+										<Clock className="h-3.5 w-3.5 text-primary" />
+										Latency (Ping)
+									</div>
+									<div className="text-3xl sm:text-4xl font-mono font-bold tracking-tight text-foreground">
+										{results.ping}
+									</div>
+									<div className="text-xs text-muted-foreground">ms ({results.jitter} ms jitter)</div>
+									<div className="pt-1">
+										<span className="inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+											{Number(results.ping) < 30 ? "Optimal" : "Acceptable"}
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					)}
+				</CardContent>
+			</Card>
+
+			{/* Speed Activity Benchmarks */}
+			<div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+				<div className="p-3.5 rounded-xl border border-border/60 bg-card/60 text-center">
+					<div className="text-xs font-semibold text-foreground">Web Browsing</div>
+					<div className="text-lg font-bold text-primary mt-1">1–5 Mbps</div>
+					<div className="text-[11px] text-muted-foreground mt-0.5">Email & Socials</div>
+				</div>
+				<div className="p-3.5 rounded-xl border border-border/60 bg-card/60 text-center">
+					<div className="text-xs font-semibold text-foreground">HD Streaming</div>
+					<div className="text-lg font-bold text-primary mt-1">5–25 Mbps</div>
+					<div className="text-[11px] text-muted-foreground mt-0.5">1080p Video</div>
+				</div>
+				<div className="p-3.5 rounded-xl border border-border/60 bg-card/60 text-center">
+					<div className="text-xs font-semibold text-foreground">4K UHD Video</div>
+					<div className="text-lg font-bold text-primary mt-1">25+ Mbps</div>
+					<div className="text-[11px] text-muted-foreground mt-0.5">Ultra HD & HDR</div>
+				</div>
+				<div className="p-3.5 rounded-xl border border-border/60 bg-card/60 text-center">
+					<div className="text-xs font-semibold text-foreground">Cloud Gaming</div>
+					<div className="text-lg font-bold text-emerald-600 dark:text-emerald-400 mt-1">&lt;35 ms</div>
+					<div className="text-[11px] text-muted-foreground mt-0.5">Low Latency</div>
 				</div>
 			</div>
 		</div>

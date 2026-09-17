@@ -73,170 +73,94 @@ export default function WhatsAppDPDownloaderTool() {
 	};
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 py-12 px-4">
-			<div className="max-w-4xl mx-auto">
-				{/* Header */}
-				<div className="text-center mb-12">
-					<h2 className="text-4xl font-bold text-foreground mb-4">
-						WhatsApp DP Downloader
-					</h2>
-					<p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-						Download WhatsApp profile pictures in high quality. Enter a phone
-						number with country code to get the profile picture URL.
-					</p>
-				</div>
+		<div className="max-w-xl mx-auto space-y-5">
+			{/* Main Phone Input Card */}
+			<Card className="border-border/60 shadow-sm">
+				<CardHeader className="pb-3">
+					<CardTitle className="text-base font-semibold flex items-center gap-2">
+						<Phone className="h-4 w-4 text-emerald-500" />
+						Target Contact Number
+					</CardTitle>
+					<CardDescription>
+						Enter any international phone number with country code (e.g. +1, +44, +91)
+					</CardDescription>
+				</CardHeader>
+				<CardContent className="space-y-4">
+					<div className="space-y-2">
+						<Input
+							id="phone"
+							placeholder="+1 234 567 8900"
+							value={phoneNumber}
+							onChange={(e) => setPhoneNumber(e.target.value)}
+							className="font-mono text-base h-11"
+						/>
+					</div>
 
-				{/* Main Tool */}
-				<Card className="mb-8">
-					<CardHeader>
-						<CardTitle className="flex items-center gap-2">
-							<Phone className="h-5 w-5" />
-							WhatsApp DP Downloader
-						</CardTitle>
-						<CardDescription>
-							Enter a phone number with country code to download the WhatsApp
-							profile picture
-						</CardDescription>
-					</CardHeader>
-					<CardContent className="space-y-6">
-						<div className="space-y-2">
-							<Label htmlFor="phone">Phone Number (with country code)</Label>
-							<Input
-								id="phone"
-								placeholder="+1234567890"
-								value={phoneNumber}
-								onChange={(e) => setPhoneNumber(e.target.value)}
-								className="text-lg"
+					<Button
+						onClick={extractWhatsAppDP}
+						disabled={loading || !phoneNumber.trim()}
+						className="w-full font-semibold h-11"
+					>
+						{loading ? "Resolving Profile..." : "Lookup WhatsApp Avatar"}
+					</Button>
+				</CardContent>
+			</Card>
+
+			{/* Avatar Result Card */}
+			{dpUrl && (
+				<Card className="border-border/60 shadow-sm overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+					<CardContent className="p-6 text-center space-y-4">
+						<div className="relative mx-auto w-32 h-32 rounded-full overflow-hidden border-4 border-emerald-500/20 shadow-md bg-muted/40 flex items-center justify-center">
+							<img
+								src={dpUrl}
+								alt="WhatsApp Profile"
+								className="w-full h-full object-cover"
+								width={128}
+								height={128}
+								onError={() => toast.error("Could not load profile picture")}
 							/>
-							<p className="text-sm text-muted-foreground">
-								Include country code (e.g., +1 for US, +91 for India)
+						</div>
+
+						<div className="space-y-1">
+							<div className="font-mono text-sm font-semibold text-foreground">
+								{phoneNumber}
+							</div>
+							<p className="text-xs text-muted-foreground">
+								Public profile picture preview
 							</p>
 						</div>
 
-						<Button
-							onClick={extractWhatsAppDP}
-							disabled={loading || !phoneNumber.trim()}
-							className="w-full"
-							size="lg"
-						>
-							{loading ? "Generating..." : "Get Profile Picture"}
-						</Button>
-
-						{dpUrl && (
-							<div className="space-y-4 pt-4 border-t">
-								<div className="flex flex-col sm:flex-row gap-4">
-									<div className="flex-1">
-										<Label htmlFor="dpUrl">Profile Picture URL</Label>
-										<Input id="dpUrl" value={dpUrl} readOnly className="mt-1" />
-									</div>
-								</div>
-
-								<div className="flex flex-col sm:flex-row gap-2">
-									<Button
-										onClick={copyToClipboard}
-										variant="outline"
-										size="sm"
-										className="flex items-center gap-2"
-									>
-										{copied ? (
-											<Check className="h-4 w-4" />
-										) : (
-											<Copy className="h-4 w-4" />
-										)}
-										{copied ? "Copied!" : "Copy URL"}
-									</Button>
-									<Button
-										onClick={downloadImage}
-										size="sm"
-										className="flex items-center gap-2"
-									>
-										<Download className="h-4 w-4" />
-										Download Image
-									</Button>
-								</div>
-
-								<div className="bg-gray-50 ">
-									<img
-										src={dpUrl}
-										alt="WhatsApp Profile Picture"
-										className="w-32 h-32 "
-										width={128}
-										height={128}
-										onError={() =>
-											toast.error("Could not load profile picture")
-										}
-									/>
-								</div>
-							</div>
-						)}
-					</CardContent>
-				</Card>
-
-				{/* Warning */}
-				<Card className="border-border bg-muted/50">
-					<CardContent className="pt-6">
-						<div className="flex items-start gap-3">
-							<AlertCircle className="h-5 w-5 text-primary mt-0.5" />
-							<div>
-								<h3 className="font-semibold text-primary mb-2">
-									Important Notes
-								</h3>
-								<ul className="text-sm text-primary space-y-1">
-									<li>
-										• Profile pictures may not be available for all numbers
-									</li>
-									<li>
-										• Privacy settings affect visibility of profile pictures
-									</li>
-									<li>
-										• Some profile pictures may be low resolution or default
-										images
-									</li>
-									<li>• Respect privacy and use this tool responsibly</li>
-								</ul>
-							</div>
+						<div className="flex items-center justify-center gap-2 pt-2">
+							<Button
+								onClick={downloadImage}
+								size="sm"
+								className="font-semibold"
+							>
+								<Download className="h-4 w-4 mr-1.5" />
+								Download Image
+							</Button>
+							<Button
+								onClick={copyToClipboard}
+								variant="outline"
+								size="sm"
+							>
+								{copied ? <Check className="h-4 w-4 mr-1.5 text-emerald-500" /> : <Copy className="h-4 w-4 mr-1.5" />}
+								{copied ? "Copied" : "Copy URL"}
+							</Button>
 						</div>
 					</CardContent>
 				</Card>
+			)}
 
-				{/* Features */}
-				<div className="grid md:grid-cols-3 gap-6 mt-8">
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Phone className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Easy Number Input</h3>
-								<p className="text-sm text-muted-foreground">
-									Simply enter phone number with country code
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Download className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Quick Download</h3>
-								<p className="text-sm text-muted-foreground">
-									Download profile pictures instantly
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Copy className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Copy URL</h3>
-								<p className="text-sm text-muted-foreground">
-									Copy profile picture URL to clipboard
-								</p>
-							</div>
-						</CardContent>
-					</Card>
+			{/* Notes Banner */}
+			<div className="p-4 rounded-xl border border-border/50 bg-muted/20 text-xs space-y-1.5 text-muted-foreground">
+				<div className="flex items-center gap-1.5 font-semibold text-foreground">
+					<AlertCircle className="h-3.5 w-3.5 text-amber-500" />
+					Privacy & Availability Notice
 				</div>
+				<p>
+					Profile picture visibility depends on the user's individual WhatsApp privacy settings (Everyone, My Contacts, or Nobody).
+				</p>
 			</div>
 		</div>
 	);

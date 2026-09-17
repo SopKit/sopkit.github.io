@@ -182,336 +182,194 @@ export default function PhoneValidatorTool() {
 	};
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-teal-50 py-12 px-4">
-			<div className="max-w-4xl mx-auto">
-				{/* Header */}
-				<div className="text-center mb-12">
-					<h2 className="text-4xl font-bold text-foreground mb-4">
-						Phone Number Validator
-					</h2>
-					<p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-						Validate phone numbers from any country. Check format, carrier
-						information, and get detailed analysis.
-					</p>
-				</div>
-
-				{/* Input Section */}
-				<Card className="mb-8">
-					<CardHeader>
-						<CardTitle className="flex items-center gap-2">
-							<Phone className="h-5 w-5" />
-							Phone Number Validation
-						</CardTitle>
-						<CardDescription>
-							Enter a phone number with country code to validate
-						</CardDescription>
-					</CardHeader>
-					<CardContent className="space-y-4">
-						<div className="space-y-2">
-							<Label htmlFor="phone">Phone Number</Label>
-							<Input
-								id="phone"
-								placeholder="+1234567890"
-								value={phoneNumber}
-								onChange={(e) => setPhoneNumber(e.target.value)}
-								className="text-lg font-mono"
-							/>
-							<p className="text-sm text-muted-foreground">
-								Include country code (e.g., +1 for US, +44 for UK, +91 for
-								India)
-							</p>
+		<div className="max-w-4xl mx-auto space-y-6">
+			{/* Input Section */}
+			<Card className="border-border/60 shadow-sm">
+				<CardHeader className="pb-3">
+					<div className="flex items-center justify-between">
+						<div>
+							<CardTitle className="text-base font-semibold flex items-center gap-2">
+								<Phone className="h-4 w-4 text-primary" />
+								Input International Phone Number
+							</CardTitle>
+							<CardDescription>
+								Validate format, country prefix, E.164 standardization, and estimated carrier
+							</CardDescription>
 						</div>
-
-						<div className="flex flex-col sm:flex-row gap-2">
-							<Button
-								onClick={validatePhoneNumber}
-								disabled={loading || !phoneNumber.trim()}
-								className="flex-1"
-							>
-								{loading ? "Validating..." : "Validate Phone Number"}
+						<div className="flex items-center gap-2">
+							<Button onClick={loadExample} variant="outline" size="sm" className="h-8 text-xs">
+								Random Example
 							</Button>
-							<Button onClick={loadExample} variant="outline">
-								Load Example
-							</Button>
-							<Button onClick={clearForm} variant="outline">
-								Clear
-							</Button>
+							{phoneNumber && (
+								<Button onClick={clearForm} variant="ghost" size="sm" className="h-8 text-xs text-muted-foreground hover:text-foreground">
+									Clear
+								</Button>
+							)}
 						</div>
-					</CardContent>
-				</Card>
+					</div>
+				</CardHeader>
+				<CardContent className="space-y-4">
+					<div className="flex flex-col sm:flex-row gap-3">
+						<Input
+							id="phone"
+							placeholder="+1 234 567 8900"
+							value={phoneNumber}
+							onChange={(e) => setPhoneNumber(e.target.value)}
+							onKeyDown={(e) => e.key === "Enter" && validatePhoneNumber()}
+							className="text-base font-mono h-11 flex-1"
+						/>
+						<Button
+							onClick={validatePhoneNumber}
+							disabled={loading || !phoneNumber.trim()}
+							className="h-11 px-6 font-semibold"
+						>
+							{loading ? "Validating..." : "Validate Number"}
+						</Button>
+					</div>
 
-				{/* Loading State */}
-				{loading && (
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center py-8">
-								<div className="animate-spin "></div>
-								<p className="text-muted-foreground">
-									Validating phone number...
-								</p>
+					<div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+						<span>Quick Samples:</span>
+						<button
+							onClick={() => setPhoneNumber("+1 415 555 2671")}
+							className="px-2 py-0.5 rounded bg-muted/60 hover:bg-muted font-mono"
+						>
+							🇺🇸 US (+1)
+						</button>
+						<button
+							onClick={() => setPhoneNumber("+44 20 7123 4567")}
+							className="px-2 py-0.5 rounded bg-muted/60 hover:bg-muted font-mono"
+						>
+							🇬🇧 UK (+44)
+						</button>
+						<button
+							onClick={() => setPhoneNumber("+91 98765 43210")}
+							className="px-2 py-0.5 rounded bg-muted/60 hover:bg-muted font-mono"
+						>
+							🇮🇳 IN (+91)
+						</button>
+						<button
+							onClick={() => setPhoneNumber("+49 30 12345678")}
+							className="px-2 py-0.5 rounded bg-muted/60 hover:bg-muted font-mono"
+						>
+							🇩🇪 DE (+49)
+						</button>
+					</div>
+				</CardContent>
+			</Card>
+
+			{/* Validation Results */}
+			{validationResult && (
+				<div className="space-y-5 animate-in fade-in zoom-in-95 duration-200">
+					{/* Status Banner */}
+					<Card className={`border-border/60 shadow-sm overflow-hidden ${
+						validationResult.isValid ? "bg-emerald-500/5" : "bg-destructive/5"
+					}`}>
+						<CardContent className="p-5 flex items-center justify-between">
+							<div className="flex items-center gap-3">
+								<div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${
+									validationResult.isValid ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400" : "bg-destructive/10 text-destructive"
+								}`}>
+									{validationResult.isValid ? <Check className="h-5 w-5" /> : <X className="h-5 w-5" />}
+								</div>
+								<div>
+									<div className="font-semibold text-sm text-foreground">
+										{validationResult.isValid ? "Valid Phone Number" : "Invalid Phone Number"}
+									</div>
+									<div className="text-xs text-muted-foreground font-mono">
+										{validationResult.cleanedNumber}
+									</div>
+								</div>
 							</div>
+							<Badge variant={validationResult.isValid ? "secondary" : "destructive"} className="text-xs font-semibold px-3 py-1">
+								{validationResult.isValid ? "Format Confirmed" : "Invalid Format"}
+							</Badge>
 						</CardContent>
 					</Card>
-				)}
 
-				{/* Validation Results */}
-				{validationResult && !loading && (
-					<div className="space-y-6">
-						{/* Validation Status */}
-						<Card>
-							<CardContent className="pt-6">
-								<div className="text-center py-6">
-									<div
-										className={`w-20 h-20 mx-auto mb-4 items-center justify-center ${
-											validationResult.isValid
-												? "bg-muted"
-												: "bg-destructive/20"
-										}`}
-									>
-										{validationResult.isValid ? (
-											<Check className="h-10 w-10 text-primary" />
-										) : (
-											<X className="h-10 w-10 text-destructive" />
-										)}
+					{validationResult.isValid && (
+						<>
+							{/* Formatted Numbers Grid */}
+							<div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+								<div className="p-4 rounded-xl border border-border/60 bg-muted/20 space-y-1">
+									<div className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+										International Format
 									</div>
-									<h2 className="text-2xl font-bold mb-2">
-										{validationResult.isValid
-											? "Valid Phone Number"
-											: "Invalid Phone Number"}
-									</h2>
-									<Badge
-										variant={
-											validationResult.isValid ? "default" : "destructive"
-										}
-										className="text-lg px-4 py-1"
-									>
-										{validationResult.isValid ? "Valid" : "Invalid"}
-									</Badge>
+									<div className="font-mono text-sm font-bold text-foreground truncate select-all">
+										{validationResult.format.international}
+									</div>
 								</div>
-							</CardContent>
-						</Card>
-
-						{validationResult.isValid && (
-							<>
-								{/* Phone Number Details */}
-								<div className="grid md:grid-cols-2 gap-6">
-									<Card>
-										<CardHeader>
-											<CardTitle className="flex items-center gap-2">
-												<Phone className="h-5 w-5" />
-												Number Details
-											</CardTitle>
-										</CardHeader>
-										<CardContent className="space-y-3">
-											<div className="flex justify-between">
-												<span className="font-medium">Original:</span>
-												<span className="font-mono">
-													{validationResult.originalNumber}
-												</span>
-											</div>
-											<div className="flex justify-between">
-												<span className="font-medium">Cleaned:</span>
-												<span className="font-mono">
-													{validationResult.cleanedNumber}
-												</span>
-											</div>
-											<div className="flex justify-between">
-												<span className="font-medium">Country Code:</span>
-												<Badge variant="secondary">
-													{validationResult.countryCode}
-												</Badge>
-											</div>
-											<div className="flex justify-between">
-												<span className="font-medium">National Number:</span>
-												<span className="font-mono">
-													{validationResult.nationalNumber}
-												</span>
-											</div>
-										</CardContent>
-									</Card>
-
-									<Card>
-										<CardHeader>
-											<CardTitle className="flex items-center gap-2">
-												<Globe className="h-5 w-5" />
-												Location Info
-											</CardTitle>
-										</CardHeader>
-										<CardContent className="space-y-3">
-											<div className="flex justify-between">
-												<span className="font-medium">Country:</span>
-												<span>{validationResult.country}</span>
-											</div>
-											<div className="flex justify-between">
-												<span className="font-medium">Timezone:</span>
-												<span>{validationResult.timezone}</span>
-											</div>
-											{validationResult.carrier && (
-												<div className="flex justify-between">
-													<span className="font-medium">Carrier:</span>
-													<span>{validationResult.carrier}</span>
-												</div>
-											)}
-											{validationResult.lineType && (
-												<div className="flex justify-between">
-													<span className="font-medium">Line Type:</span>
-													<Badge variant="outline">
-														{validationResult.lineType}
-													</Badge>
-												</div>
-											)}
-										</CardContent>
-									</Card>
+								<div className="p-4 rounded-xl border border-border/60 bg-muted/20 space-y-1">
+									<div className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+										National Format
+									</div>
+									<div className="font-mono text-sm font-bold text-foreground truncate select-all">
+										{validationResult.format.national}
+									</div>
 								</div>
+								<div className="p-4 rounded-xl border border-border/60 bg-muted/20 space-y-1">
+									<div className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+										E.164 Standardization
+									</div>
+									<div className="font-mono text-sm font-bold text-foreground truncate select-all">
+										{validationResult.format.e164}
+									</div>
+								</div>
+							</div>
 
-								{/* Formatted Numbers */}
-								<Card>
-									<CardHeader>
-										<CardTitle>Formatted Numbers</CardTitle>
-										<CardDescription>
-											Different formatting options for the phone number
-										</CardDescription>
+							{/* Telecom & Country Intelligence */}
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+								<Card className="border-border/60 shadow-sm">
+									<CardHeader className="py-3 px-4 border-b border-border/40">
+										<CardTitle className="text-sm font-semibold flex items-center gap-2">
+											<Globe className="h-4 w-4 text-primary" />
+											Country & Location
+										</CardTitle>
 									</CardHeader>
-									<CardContent>
-										<div className="grid md:grid-cols-3 gap-4">
-											<div className="text-center p-4 bg-muted/50 ">
-												<h3 className="font-semibold text-foreground mb-2">
-													International
-												</h3>
-												<div className="text-lg font-mono">
-													{validationResult.format.international}
-												</div>
-											</div>
-											<div className="text-center p-4 bg-muted/50 ">
-												<h3 className="font-semibold text-foreground mb-2">
-													National
-												</h3>
-												<div className="text-lg font-mono">
-													{validationResult.format.national}
-												</div>
-											</div>
-											<div className="text-center p-4 bg-muted/50 ">
-												<h3 className="font-semibold text-foreground mb-2">
-													E.164
-												</h3>
-												<div className="text-lg font-mono">
-													{validationResult.format.e164}
-												</div>
-											</div>
+									<CardContent className="p-4 space-y-2 text-xs">
+										<div className="flex justify-between py-1 border-b border-border/30">
+											<span className="text-muted-foreground">Country</span>
+											<span className="font-medium text-foreground">{validationResult.country}</span>
+										</div>
+										<div className="flex justify-between py-1 border-b border-border/30">
+											<span className="text-muted-foreground">Calling Code</span>
+											<span className="font-mono font-medium text-foreground">{validationResult.countryCode}</span>
+										</div>
+										<div className="flex justify-between py-1">
+											<span className="text-muted-foreground">Timezone</span>
+											<span className="font-medium text-foreground">{validationResult.timezone}</span>
 										</div>
 									</CardContent>
 								</Card>
-							</>
-						)}
-					</div>
-				)}
 
-				{/* Phone Number Formats Guide */}
-				<Card className="mt-8">
-					<CardHeader>
-						<CardTitle>Phone Number Format Guide</CardTitle>
-						<CardDescription>
-							Common international phone number formats
-						</CardDescription>
-					</CardHeader>
-					<CardContent>
-						<div className="grid md:grid-cols-2 gap-6">
-							<div className="space-y-3">
-								<h3 className="font-semibold">North America</h3>
-								<div className="space-y-1 text-sm">
-									<div>🇺🇸 United States: +1 234 567 8900</div>
-									<div>🇨🇦 Canada: +1 234 567 8900</div>
-									<div>🇲🇽 Mexico: +52 55 1234 5678</div>
-								</div>
+								<Card className="border-border/60 shadow-sm">
+									<CardHeader className="py-3 px-4 border-b border-border/40">
+										<CardTitle className="text-sm font-semibold flex items-center gap-2">
+											<Phone className="h-4 w-4 text-primary" />
+											Carrier & Line Spec
+										</CardTitle>
+									</CardHeader>
+									<CardContent className="p-4 space-y-2 text-xs">
+										<div className="flex justify-between py-1 border-b border-border/30">
+											<span className="text-muted-foreground">Estimated Carrier</span>
+											<span className="font-medium text-foreground">{validationResult.carrier || "Standard Telephony"}</span>
+										</div>
+										<div className="flex justify-between py-1 border-b border-border/30">
+											<span className="text-muted-foreground">Line Type</span>
+											<Badge variant="outline" className="text-[10px] h-4 font-normal">
+												{validationResult.lineType || "Mobile / Landline"}
+											</Badge>
+										</div>
+										<div className="flex justify-between py-1">
+											<span className="text-muted-foreground">National Number</span>
+											<span className="font-mono text-foreground">{validationResult.nationalNumber}</span>
+										</div>
+									</CardContent>
+								</Card>
 							</div>
-
-							<div className="space-y-3">
-								<h3 className="font-semibold">Europe</h3>
-								<div className="space-y-1 text-sm">
-									<div>🇬🇧 United Kingdom: +44 20 7123 4567</div>
-									<div>🇩🇪 Germany: +49 30 12345678</div>
-									<div>🇫🇷 France: +33 1 23 45 67 89</div>
-								</div>
-							</div>
-
-							<div className="space-y-3">
-								<h3 className="font-semibold">Asia</h3>
-								<div className="space-y-1 text-sm">
-									<div>🇮🇳 India: +91 98765 43210</div>
-									<div>🇨🇳 China: +86 138 0013 8000</div>
-									<div>🇯🇵 Japan: +81 90 1234 5678</div>
-								</div>
-							</div>
-
-							<div className="space-y-3">
-								<h3 className="font-semibold">Oceania</h3>
-								<div className="space-y-1 text-sm">
-									<div>🇦🇺 Australia: +61 4 1234 5678</div>
-									<div>🇳🇿 New Zealand: +64 21 123 456</div>
-								</div>
-							</div>
-						</div>
-					</CardContent>
-				</Card>
-
-				{/* Warning */}
-				<Card className="border-border bg-muted/50 mt-6">
-					<CardContent className="pt-6">
-						<div className="flex items-start gap-3">
-							<AlertCircle className="h-5 w-5 text-primary mt-0.5" />
-							<div>
-								<h3 className="font-semibold text-primary mb-2">
-									Privacy Notice
-								</h3>
-								<p className="text-sm text-primary">
-									This tool validates phone number formats only. No actual calls
-									are made and no personal data is stored. Carrier and location
-									information is estimated and may not be 100% accurate.
-								</p>
-							</div>
-						</div>
-					</CardContent>
-				</Card>
-
-				{/* Features */}
-				<div className="grid md:grid-cols-3 gap-6 mt-8">
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Phone className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Format Validation</h3>
-								<p className="text-sm text-muted-foreground">
-									Validate phone number format and structure
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Globe className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Country Detection</h3>
-								<p className="text-sm text-muted-foreground">
-									Identify country and region from number
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<MapPin className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Carrier Info</h3>
-								<p className="text-sm text-muted-foreground">
-									Get carrier and line type information
-								</p>
-							</div>
-						</CardContent>
-					</Card>
+						</>
+					)}
 				</div>
-			</div>
+			)}
 		</div>
 	);
 }

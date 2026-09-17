@@ -402,73 +402,12 @@ export default function AIImageGeneratorTool() {
 	};
 
 	return (
-		<div className="min-h-screen bg-background">
-			<div className="container mx-auto px-4 py-8 max-w-7xl">
-				{/* Header */}
-				<div className="mb-8">
-					<Link
-						href={getRouteById("other-tools")}
-						className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-6"
-					>
-						<ArrowLeftIcon className="mr-2 h-4 w-4" />
-						Back to Generator Tools
-					</Link>
-
-					<div className="space-y-4 mb-8">
-						<div className="flex items-start gap-4">
-							<div className="p-3 border ">
-								<Sparkles className="h-6 w-6" />
-							</div>
-							<div className="space-y-2">
-								<h2 className="text-4xl font-bold tracking-tight">
-									AI Image Generator
-								</h2>
-								<p className="text-xl text-muted-foreground max-w-3xl">
-									Create stunning AI-generated images from text prompts
-									instantly. Transform your ideas into beautiful, unique artwork
-									with advanced AI technology.
-								</p>
-							</div>
-						</div>
-
-						<div className="flex flex-wrap gap-2">
-							<Badge variant="outline" className="gap-1 border-amber-500/40 text-amber-600 dark:text-amber-400 bg-amber-500/10">
-								<Sparkles className="h-3 w-3" />
-								External API (Pollinations.ai)
-							</Badge>
-							<Badge variant="secondary" className="gap-1">
-								<Palette className="h-3 w-3" />
-								Multiple Styles
-							</Badge>
-							<Badge variant="secondary" className="gap-1">
-								<ImageIcon className="h-3 w-3" />
-								High Quality
-							</Badge>
-							<Badge variant="secondary" className="gap-1">
-								<DownloadIcon className="h-3 w-3" />
-								Instant Download
-							</Badge>
-						</div>
-					</div>
-
-					<Alert className="mb-8 border-primary/30 bg-primary/5">
-						<InfoIcon className="h-4 w-4 text-primary shrink-0" />
-						<AlertDescription className="text-xs sm:text-sm text-foreground/90 space-y-1">
-							<p className="font-semibold text-foreground">
-								External Generation Notice
-							</p>
-							<p>
-								Image synthesis is powered by Pollinations.ai. When you click &ldquo;Generate Image&rdquo;, your text prompt is transmitted to their external API to synthesize artwork. Please avoid entering sensitive or personal information.
-							</p>
-						</AlertDescription>
-					</Alert>
-				</div>
-
-				<Tabs
-					value={activeTab}
-					onValueChange={setActiveTab}
-					className="space-y-6"
-				>
+		<div className="max-w-6xl mx-auto space-y-6">
+			<Tabs
+				value={activeTab}
+				onValueChange={setActiveTab}
+				className="space-y-6"
+			>
 					<TabsList className="grid w-full grid-cols-3">
 						<TabsTrigger value="generator" className="gap-2">
 							<Wand2 className="h-4 w-4" />
@@ -944,61 +883,6 @@ export default function AIImageGeneratorTool() {
 						</Card>
 					</TabsContent>
 				</Tabs>
-
-				{/* FAQ Section */}
-				<Card className="mt-8">
-					<CardHeader>
-						<CardTitle>Frequently Asked Questions</CardTitle>
-					</CardHeader>
-					<CardContent className="space-y-6">
-						<div className="grid md:grid-cols-2 gap-6">
-							<div className="space-y-4">
-								<div>
-									<h4 className="font-medium mb-2">
-										How does AI image generation work?
-									</h4>
-									<p className="text-sm text-muted-foreground">
-										Our AI uses advanced machine learning models to interpret
-										your text description and create unique images based on
-										patterns learned from millions of images.
-									</p>
-								</div>
-								<div>
-									<h4 className="font-medium mb-2">
-										Are generated images copyright-free?
-									</h4>
-									<p className="text-sm text-muted-foreground">
-										Generally yes, AI-generated images are free to use. However,
-										ensure your prompts don't reference copyrighted characters
-										or brands.
-									</p>
-								</div>
-							</div>
-							<div className="space-y-4">
-								<div>
-									<h4 className="font-medium mb-2">
-										What makes a good prompt?
-									</h4>
-									<p className="text-sm text-muted-foreground">
-										Be specific about style, lighting, colors, and composition.
-										Include artistic references and descriptive adjectives for
-										better results.
-									</p>
-								</div>
-								<div>
-									<h4 className="font-medium mb-2">
-										How can I reproduce results?
-									</h4>
-									<p className="text-sm text-muted-foreground">
-										Use the same prompt, style, size, and seed number to
-										generate identical or very similar images consistently.
-									</p>
-								</div>
-							</div>
-						</div>
-					</CardContent>
-				</Card>
-			</div>
 		</div>
 	);
 }

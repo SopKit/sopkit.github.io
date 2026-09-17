@@ -10,8 +10,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
-// Import SocialShareButtons component
-import SocialShareButtons from "@/components/shared/SocialShareButtons";
+import { trackToolExecution } from "@/lib/analytics";
 import { Button } from "@/components/ui/button";
 import {
 	Card,
@@ -216,6 +215,11 @@ Format as a clear persona prompt that someone can copy-paste into ChatGPT. Make 
 			setGeneratedPersonas((prev) => [newPersona, ...prev.slice(0, 9)]);
 
 			toast.success("Persona generated successfully!");
+			trackToolExecution("chatgpt-persona-generator", {
+				success: true,
+				action: "generate_persona",
+				category: "generator",
+			});
 		} catch (error) {
 			toast.error("Failed to generate persona. Please try again.");
 		} finally {
@@ -247,29 +251,9 @@ Format as a clear persona prompt that someone can copy-paste into ChatGPT. Make 
 		toast.success("Persona downloaded!");
 	};
 
-	const shareText = persona
-		? `Check out this awesome ChatGPT persona I created: "${persona.substring(0, 100)}..." Create your own at`
-		: "Create unique ChatGPT personas with AI at";
-
 	return (
-		<div className="min-h-screen bg-muted/20 p-4">
-			<div className="max-w-6xl mx-auto space-y-8">
-				{/* Header */}
-				<div className="text-center space-y-4">
-					<div className="inline-flex items-center gap-2 bg-background">
-						<Sparkles className="w-4 h-4" />
-						AI-Powered Persona Generator
-					</div>
-					<h2 className="text-4xl md:text-6xl font-bold bg-muted/20 ">
-						ChatGPT Persona Generator
-					</h2>
-					<p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-						Create unique, quirky, and engaging ChatGPT personas that make your
-						AI conversations more fun and memorable!
-					</p>
-				</div>
-
-				<Tabs defaultValue="generator" className="space-y-6">
+		<div className="max-w-4xl mx-auto space-y-6">
+			<Tabs defaultValue="generator" className="space-y-6">
 					<TabsList className="grid w-full grid-cols-3">
 						<TabsTrigger value="generator">Generator</TabsTrigger>
 						<TabsTrigger value="presets">Preset Personas</TabsTrigger>
@@ -415,12 +399,6 @@ Format as a clear persona prompt that someone can copy-paste into ChatGPT. Make 
 													Regenerate
 												</Button>
 											</div>
-
-											<SocialShareButtons
-												toolName="ChatGPT Persona Generator"
-												toolDescription={shareText}
-												toolUrl="/chatgpt-persona-generator"
-											/>
 										</>
 									) : (
 										<div className="text-center py-8 text-muted-foreground">
@@ -519,57 +497,9 @@ Format as a clear persona prompt that someone can copy-paste into ChatGPT. Make 
 						)}
 					</TabsContent>
 				</Tabs>
-
-				{/* Features Section */}
-				<div className="grid md:grid-cols-3 gap-6">
-					<Card>
-						<CardHeader>
-							<CardTitle className="flex items-center gap-2 text-lg">
-								<Sparkles className="w-5 h-5 text-primary" />
-								AI-Powered
-							</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<p className="text-muted-foreground">
-								Uses advanced AI to create unique, engaging personas with
-								distinct personalities and quirks.
-							</p>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardHeader>
-							<CardTitle className="flex items-center gap-2 text-lg">
-								<Copy className="w-5 h-5 text-primary" />
-								Ready to Use
-							</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<p className="text-muted-foreground">
-								Generated prompts are ready to copy and paste directly into
-								ChatGPT for immediate use.
-							</p>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardHeader>
-							<CardTitle className="flex items-center gap-2 text-lg">
-								<Share2 className="w-5 h-5 text-primary" />
-								Shareable
-							</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<p className="text-muted-foreground">
-								Share your favorite personas with friends or save them for later
-								use across different projects.
-							</p>
-						</CardContent>
-					</Card>
-				</div>
-			</div>
 		</div>
 	);
 };
 
 export default ChatGPTPersonaGeneratorTool;
+

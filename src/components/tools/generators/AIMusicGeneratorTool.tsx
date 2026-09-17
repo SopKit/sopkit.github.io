@@ -4,13 +4,11 @@ import { Wand2, History, HeartIcon } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import AIMusicGeneratorHeader from "./AIMusicGeneratorHeader";
 import AIMusicGeneratorSettings from "./AIMusicGeneratorSettings";
 import AIMusicGeneratorResults from "./AIMusicGeneratorResults";
 import AIMusicGeneratorExamples from "./AIMusicGeneratorExamples";
 import AIMusicGeneratorHistory from "./AIMusicGeneratorHistory";
 import AIMusicGeneratorFavorites from "./AIMusicGeneratorFavorites";
-import AIMusicGeneratorFAQ from "./AIMusicGeneratorFAQ";
 
 interface MusicTrack {
 	id: number | string;
@@ -179,89 +177,83 @@ export default function AIMusicGeneratorTool() {
 	};
 
 	return (
-		<div className="min-h-screen bg-background">
-			<div className="container mx-auto px-4 py-8 max-w-7xl">
-				<AIMusicGeneratorHeader />
+		<div className="max-w-5xl mx-auto space-y-6">
+			<Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
+				<TabsList className="grid w-full grid-cols-3">
+					<TabsTrigger value="generator" className="gap-2">
+						<Wand2 className="h-4 w-4" />
+						Studio Generator
+					</TabsTrigger>
+					<TabsTrigger value="history" className="gap-2">
+						<History className="h-4 w-4" />
+						History ({history.length})
+					</TabsTrigger>
+					<TabsTrigger value="favorites" className="gap-2">
+						<HeartIcon className="h-4 w-4" />
+						Favorites ({favorites.length})
+					</TabsTrigger>
+				</TabsList>
 
-				<Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-					<TabsList className="grid w-full grid-cols-3">
-						<TabsTrigger value="generator" className="gap-2">
-							<Wand2 className="h-4 w-4" />
-							Generator
-						</TabsTrigger>
-						<TabsTrigger value="history" className="gap-2">
-							<History className="h-4 w-4" />
-							History ({history.length})
-						</TabsTrigger>
-						<TabsTrigger value="favorites" className="gap-2">
-							<HeartIcon className="h-4 w-4" />
-							Favorites ({favorites.length})
-						</TabsTrigger>
-					</TabsList>
+				<TabsContent value="generator" className="space-y-6">
+					<div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+						<AIMusicGeneratorSettings
+							prompt={prompt}
+							setPrompt={setPrompt}
+							lyrics={lyrics}
+							setLyrics={setLyrics}
+							audioData={audioData}
+							loading={loading}
+							error={error}
+							lyricsOptimizer={lyricsOptimizer}
+							setLyricsOptimizer={setLyricsOptimizer}
+							isInstrumental={isInstrumental}
+							setIsInstrumental={setIsInstrumental}
+							sampleRate={sampleRate}
+							setSampleRate={setSampleRate}
+							bitrate={bitrate}
+							setBitrate={setBitrate}
+							format={format}
+							setFormat={setFormat}
+							generationProgress={generationProgress}
+							handleGenerate={handleGenerate}
+							insertTag={insertTag}
+						/>
 
-					<TabsContent value="generator" className="space-y-6">
-						<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-							<AIMusicGeneratorSettings
-								prompt={prompt}
-								setPrompt={setPrompt}
-								lyrics={lyrics}
-								setLyrics={setLyrics}
+						<div className="lg:col-span-2 space-y-6">
+							<AIMusicGeneratorResults
 								audioData={audioData}
-								loading={loading}
-								error={error}
+								audioRef={audioRef}
+								handleDownload={handleDownload}
+								addToFavorites={addToFavorites}
+								prompt={prompt}
+								lyrics={lyrics}
 								lyricsOptimizer={lyricsOptimizer}
-								setLyricsOptimizer={setLyricsOptimizer}
 								isInstrumental={isInstrumental}
-								setIsInstrumental={setIsInstrumental}
 								sampleRate={sampleRate}
-								setSampleRate={setSampleRate}
 								bitrate={bitrate}
-								setBitrate={setBitrate}
 								format={format}
-								setFormat={setFormat}
-								generationProgress={generationProgress}
-								handleGenerate={handleGenerate}
-								insertTag={insertTag}
+								copied={copied}
+								setCopied={setCopied}
+								toast={toast}
 							/>
 
-							<div className="lg:col-span-2 space-y-6">
-								<AIMusicGeneratorResults
-									audioData={audioData}
-									audioRef={audioRef}
-									handleDownload={handleDownload}
-									addToFavorites={addToFavorites}
-									prompt={prompt}
-									lyrics={lyrics}
-									lyricsOptimizer={lyricsOptimizer}
-									isInstrumental={isInstrumental}
-									sampleRate={sampleRate}
-									bitrate={bitrate}
-									format={format}
-									copied={copied}
-									setCopied={setCopied}
-									toast={toast}
-								/>
-
-								<AIMusicGeneratorExamples loadPrompt={loadPrompt} loading={loading} />
-							</div>
+							<AIMusicGeneratorExamples loadPrompt={loadPrompt} loading={loading} />
 						</div>
-					</TabsContent>
+					</div>
+				</TabsContent>
 
-					<TabsContent value="history">
-						<AIMusicGeneratorHistory
-							history={history}
-							clearHistory={clearHistory}
-							loadFromHistory={loadFromHistory}
-						/>
-					</TabsContent>
+				<TabsContent value="history">
+					<AIMusicGeneratorHistory
+						history={history}
+						clearHistory={clearHistory}
+						loadFromHistory={loadFromHistory}
+					/>
+				</TabsContent>
 
-					<TabsContent value="favorites">
-						<AIMusicGeneratorFavorites favorites={favorites} removeFromFavorites={removeFromFavorites} />
-					</TabsContent>
-				</Tabs>
-
-				<AIMusicGeneratorFAQ />
-			</div>
+				<TabsContent value="favorites">
+					<AIMusicGeneratorFavorites favorites={favorites} removeFromFavorites={removeFromFavorites} />
+				</TabsContent>
+			</Tabs>
 		</div>
 	);
 }

@@ -343,30 +343,7 @@ export default function TextCaseConverterTool() {
 	}, [inputText, convertCase]);
 
 	return (
-		<div className="container mx-auto px-4 py-8 max-w-6xl">
-			<div className="text-center mb-8">
-				<h2 className="text-4xl font-bold mb-4">Free Text Case Converter</h2>
-				<p className="text-xl text-muted-foreground mb-6">
-					Convert text to different cases instantly: lowercase, UPPERCASE, Title
-					Case, camelCase, snake_case, kebab-case, and more. Perfect for
-					developers and content creators.
-				</p>
-
-				<div className="flex flex-wrap justify-center gap-4 mb-6">
-					<div className="flex items-center gap-2">
-						<Zap className="h-5 w-5 text-primary" />
-						<span className="text-sm font-medium">Real-time Conversion</span>
-					</div>
-					<div className="flex items-center gap-2">
-						<ArrowUpDown className="h-5 w-5 text-primary" />
-						<span className="text-sm font-medium">14 Case Types</span>
-					</div>
-					<div className="flex items-center gap-2">
-						<Shield className="h-5 w-5 text-primary" />
-						<span className="text-sm font-medium">Client-Side Processing</span>
-					</div>
-				</div>
-			</div>
+		<div className="max-w-5xl mx-auto space-y-6">
 
 			{/* Input Section */}
 			<Card className="mb-6">
@@ -606,52 +583,6 @@ export default function TextCaseConverterTool() {
 				</CardContent>
 			</Card>
 
-			{/* FAQ */}
-			<Card>
-				<CardHeader>
-					<CardTitle>Frequently Asked Questions</CardTitle>
-				</CardHeader>
-				<CardContent>
-					<div className="space-y-4">
-						<div>
-							<h4 className="font-medium mb-2">
-								What's the difference between camelCase and PascalCase?
-							</h4>
-							<p className="text-sm text-muted-foreground">
-								camelCase starts with a lowercase letter (firstName), while
-								PascalCase starts with uppercase (FirstName).
-							</p>
-						</div>
-						<div>
-							<h4 className="font-medium mb-2">
-								When should I use snake_case vs kebab-case?
-							</h4>
-							<p className="text-sm text-muted-foreground">
-								snake_case is common in Python and database naming, while
-								kebab-case is used in URLs and CSS classes.
-							</p>
-						</div>
-						<div>
-							<h4 className="font-medium mb-2">
-								What is alternating case used for?
-							</h4>
-							<p className="text-sm text-muted-foreground">
-								Alternating case is often used for stylistic purposes, memes, or
-								to represent sarcasm in informal text.
-							</p>
-						</div>
-						<div>
-							<h4 className="font-medium mb-2">
-								Does the tool preserve special characters?
-							</h4>
-							<p className="text-sm text-muted-foreground">
-								Yes, special characters, numbers, and punctuation are preserved.
-								Only letter cases are modified.
-							</p>
-						</div>
-					</div>
-				</CardContent>
-			</Card>
 		</div>
 	);
 }

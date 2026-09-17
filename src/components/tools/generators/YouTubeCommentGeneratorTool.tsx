@@ -263,29 +263,13 @@ Make it feel genuine but entertaining!`;
 		: "Generate viral YouTube comments at";
 
 	return (
-		<div className="min-h-screen bg-muted/20 p-4">
-			<div className="max-w-6xl mx-auto space-y-8">
-				{/* Header */}
-				<div className="text-center space-y-4">
-					<div className="inline-flex items-center gap-2 bg-background">
-						<Play className="w-4 h-4" />
-						Viral Comment Generator
-					</div>
-					<h2 className="text-4xl md:text-6xl font-bold bg-muted/20 ">
-						YouTube Comment Generator
-					</h2>
-					<p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-						Create dramatic, funny, and viral YouTube comments that capture the
-						essence of internet culture!
-					</p>
-				</div>
-
-				<Tabs defaultValue="generator" className="space-y-6">
-					<TabsList className="grid w-full grid-cols-3">
-						<TabsTrigger value="generator">Generator</TabsTrigger>
-						<TabsTrigger value="presets">Popular Styles</TabsTrigger>
-						<TabsTrigger value="history">History</TabsTrigger>
-					</TabsList>
+		<div className="max-w-4xl mx-auto space-y-6">
+			<Tabs defaultValue="generator" className="space-y-6">
+				<TabsList className="grid w-full grid-cols-3">
+					<TabsTrigger value="generator">Generator</TabsTrigger>
+					<TabsTrigger value="presets">Popular Styles</TabsTrigger>
+					<TabsTrigger value="history">History ({history.length})</TabsTrigger>
+				</TabsList>
 
 					<TabsContent value="generator" className="space-y-6">
 						<div className="grid md:grid-cols-2 gap-6">
@@ -393,47 +377,45 @@ Make it feel genuine but entertaining!`;
 								<CardContent className="space-y-4">
 									{comment ? (
 										<>
-											<div className="bg-gray-50 p-4 shed border-border">
+											<div className="rounded-xl border border-border/70 bg-card/60 p-4 shadow-sm">
 												<div className="flex items-start gap-3">
-													<div className="w-8 h-8 bg-background">U</div>
-													<div className="flex-1">
-														<div className="font-medium text-sm text-foreground mb-1">
-															@RandomUser2024
+													<div className="w-9 h-9 rounded-full bg-gradient-to-tr from-red-500 to-rose-600 flex items-center justify-center text-white font-bold text-sm shadow-sm shrink-0">
+														YT
+													</div>
+													<div className="flex-1 min-w-0">
+														<div className="flex items-center gap-2 mb-1">
+															<span className="font-semibold text-xs text-foreground">
+																@viral_viewer
+															</span>
+															<span className="text-[11px] text-muted-foreground">
+																2 hours ago
+															</span>
 														</div>
-														<p className="text-sm text-foreground whitespace-pre-wrap">
+														<p className="text-sm text-foreground leading-relaxed whitespace-pre-wrap font-sans">
 															{comment}
 														</p>
-														<div className="flex items-center gap-4 mt-2 text-xs text-muted-foreground">
-															<button className="flex items-center gap-1 hover:text-foreground">
-																<ThumbsUp className="w-3 h-3" />
-																<span>42</span>
-															</button>
-															<button className="flex items-center gap-1 hover:text-foreground">
-																<Heart className="w-3 h-3" />
-																<span>Reply</span>
-															</button>
-															<span>2 hours ago</span>
+														<div className="flex items-center gap-4 mt-3 text-xs text-muted-foreground">
+															<div className="flex items-center gap-1.5 hover:text-foreground transition-colors cursor-pointer">
+																<ThumbsUp className="w-3.5 h-3.5" />
+																<span>4.2K</span>
+															</div>
+															<div className="flex items-center gap-1.5 hover:text-foreground transition-colors cursor-pointer">
+																<Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" />
+																<span className="text-[11px]">Pinned by Creator</span>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 
-											<div className="flex flex-wrap gap-2">
+											<div className="flex items-center gap-2 pt-1">
 												<Button
 													onClick={() => copyToClipboard(comment)}
-													variant="outline"
+													className="flex-1 font-semibold"
 													size="sm"
 												>
-													<Copy className="w-4 h-4 mr-2" />
-													Copy
-												</Button>
-												<Button
-													onClick={downloadComment}
-													variant="outline"
-													size="sm"
-												>
-													<Download className="w-4 h-4 mr-2" />
-													Download
+													<Copy className="w-4 h-4 mr-1.5" />
+													Copy Comment
 												</Button>
 												<Button
 													onClick={handleGenerate}
@@ -441,16 +423,17 @@ Make it feel genuine but entertaining!`;
 													size="sm"
 													disabled={isGenerating}
 												>
-													<Shuffle className="w-4 h-4 mr-2" />
-													Regenerate
+													<Shuffle className="w-4 h-4 mr-1.5" />
+													New
+												</Button>
+												<Button
+													onClick={downloadComment}
+													variant="ghost"
+													size="sm"
+												>
+													<Download className="w-4 h-4" />
 												</Button>
 											</div>
-
-											<SocialShareButtons
-												toolName="YouTube Comment Generator"
-												toolDescription={shareText}
-												toolUrl="/youtube-comment-generator"
-											/>
 										</>
 									) : (
 										<div className="text-center py-8 text-muted-foreground">
@@ -568,55 +551,6 @@ Make it feel genuine but entertaining!`;
 						)}
 					</TabsContent>
 				</Tabs>
-
-				{/* Features Section */}
-				<div className="grid md:grid-cols-3 gap-6">
-					<Card>
-						<CardHeader>
-							<CardTitle className="flex items-center gap-2 text-lg">
-								<Play className="w-5 h-5 text-destructive" />
-								Viral Ready
-							</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<p className="text-muted-foreground">
-								Comments designed to capture attention and engagement, perfect
-								for social media sharing.
-							</p>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardHeader>
-							<CardTitle className="flex items-center gap-2 text-lg">
-								<Copy className="w-5 h-5 text-primary" />
-								Authentic Styles
-							</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<p className="text-muted-foreground">
-								Realistic comment styles that match actual YouTube user behavior
-								and internet culture.
-							</p>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardHeader>
-							<CardTitle className="flex items-center gap-2 text-lg">
-								<Share2 className="w-5 h-5 text-primary" />
-								Meme Material
-							</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<p className="text-muted-foreground">
-								Perfect for creating meme content, social media posts, and viral
-								entertainment.
-							</p>
-						</CardContent>
-					</Card>
-				</div>
-			</div>
 		</div>
 	);
 };

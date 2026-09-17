@@ -1365,206 +1365,126 @@ function EmojiCopyTool() {
 			EMOJI_CATEGORIES.smileys.emojis;
 
 	return (
-		<div className="min-h-screen bg-muted/20 dark:from-gray-900 dark:via-purple-900 dark:to-blue-900">
-			<div className="container mx-auto px-4 py-8">
-				<div className="mb-8">
-					<Link
-						href={getRouteById("generators")}
-						className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-4"
-					>
-						<ArrowLeftIcon className="mr-2 h-4 w-4" />
-						Back to Generators
-					</Link>
-
-					<div className="flex items-center gap-3 mb-4">
-						<div className="p-2 bg-background">
-							<SmileIcon className="h-6 w-6 text-white" />
-						</div>
-						<div>
-							<h2 className="text-3xl font-bold bg-background">
-								Emoji Copy Tool
-							</h2>
-							<p className="text-muted-foreground">
-								Find, copy, and paste emojis easily for your messages and
-								content
-							</p>
-						</div>
-					</div>
-
-					<div className="flex flex-wrap gap-2 mb-6">
-						<Badge variant="secondary">🔍 Easy Search</Badge>
-						<Badge variant="secondary">📋 One-Click Copy</Badge>
-						<Badge variant="secondary">🕒 Recent Emojis</Badge>
-						<Badge variant="secondary">🌈 All Categories</Badge>
-					</div>
-				</div>
-
-				{/* Search Bar */}
-				<div className="mb-6">
-					<div className="relative">
-						<SearchIcon className="absolute left-3 top-1/2 transform -transpace-y-1/2 h-4 w-4 text-muted-foreground" />
-						<Input
-							type="text"
-							placeholder="Search emojis..."
-							className="pl-10"
-							value={searchQuery}
-							onChange={(e) => setSearchQuery(e.target.value)}
-						/>
-					</div>
-				</div>
-
-				{/* Main Content */}
-				<Card className="mb-6">
-					<CardHeader className="pb-3">
-						<CardTitle>Emoji Collection</CardTitle>
-						<CardDescription>
-							Click on any emoji to copy it to your clipboard
-						</CardDescription>
-					</CardHeader>
-					<CardContent>
-						<Tabs
-							defaultValue="smileys"
-							value={activeCategory}
-							onValueChange={setActiveCategory}
+		<div className="max-w-4xl mx-auto space-y-4">
+			{/* Search & Quick Controls Bar */}
+			<div className="flex flex-col sm:flex-row items-center gap-3">
+				<div className="relative w-full">
+					<SearchIcon className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+					<Input
+						type="text"
+						placeholder="Search emojis by keyword or paste..."
+						className="pl-10 h-11 bg-background/60 border-border/60 text-sm focus-visible:ring-primary/20"
+						value={searchQuery}
+						onChange={(e) => setSearchQuery(e.target.value)}
+					/>
+					{searchQuery && (
+						<button
+							onClick={() => setSearchQuery("")}
+							className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground hover:text-foreground px-1.5 py-0.5 rounded bg-muted/60"
 						>
-							<TabsList className="mb-4 flex flex-wrap">
-								{Object.entries(EMOJI_CATEGORIES).map(([key, category]) => (
-									<TabsTrigger key={key} value={key} className="text-sm">
-										{category?.name || key}
-									</TabsTrigger>
-								))}
-								{recentEmojis.length > 0 && (
-									<TabsTrigger value="recent" className="text-sm">
-										<ClockIcon className="h-4 w-4 mr-1" /> Recent
-									</TabsTrigger>
-								)}
-							</TabsList>
+							Clear
+						</button>
+					)}
+				</div>
+				{copiedEmoji && (
+					<div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 shrink-0 text-sm font-medium animate-in fade-in zoom-in duration-200">
+						<span className="text-xl leading-none">{copiedEmoji}</span>
+						<span>Copied to clipboard!</span>
+					</div>
+				)}
+			</div>
 
-							{/* Display emojis based on search or category */}
-							<div className="grid grid-cols-8 sm:grid-cols-10 md:grid-cols-12 lg:grid-cols-16 gap-2">
-								{searchQuery.trim() ? (
-									filteredEmojis.length > 0 ? (
-										filteredEmojis.map((emoji, index) => (
-											<Button
-												key={index}
-												variant="ghost"
-												className={`h-10 w-10 p-0 text-xl hover:bg-muted ${copiedEmoji === emoji ? "ring-2 ring-primary" : ""}`}
-												onClick={() => handleCopyEmoji(emoji)}
-											>
-												{emoji}
-											</Button>
-										))
-									) : (
-										<div className="col-span-full text-center py-8 text-muted-foreground">
-											No emojis found matching "{searchQuery}"
-										</div>
-									)
-								) : activeCategory === "recent" ? (
-									recentEmojis.length > 0 ? (
-										recentEmojis.map((emoji, index) => (
-											<Button
-												key={index}
-												variant="ghost"
-												className={`h-10 w-10 p-0 text-xl hover:bg-muted ${copiedEmoji === emoji ? "ring-2 ring-primary" : ""}`}
-												onClick={() => handleCopyEmoji(emoji)}
-											>
-												{emoji}
-											</Button>
-										))
-									) : (
-										<div className="col-span-full text-center py-8 text-muted-foreground">
-											No recent emojis yet
-										</div>
-									)
-								) : (
-									(EMOJI_CATEGORIES[activeCategory]?.emojis || []).map(
-										(emoji, index) => (
-											<Button
-												key={index}
-												variant="ghost"
-												className={`h-10 w-10 p-0 text-xl hover:bg-muted ${copiedEmoji === emoji ? "ring-2 ring-primary" : ""}`}
-												onClick={() => handleCopyEmoji(emoji)}
-											>
-												{emoji}
-											</Button>
-										),
-									)
-								)}
+			{/* Recently Used Row (if present) */}
+			{recentEmojis.length > 0 && !searchQuery.trim() && (
+				<div className="p-3 rounded-xl border border-border/50 bg-muted/20">
+					<div className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+						<ClockIcon className="h-3.5 w-3.5" />
+						Recently Used
+					</div>
+					<div className="flex flex-wrap gap-1.5">
+						{recentEmojis.slice(0, 16).map((emoji, index) => (
+							<button
+								key={index}
+								type="button"
+								className={`h-10 w-10 text-2xl flex items-center justify-center rounded-lg hover:bg-muted/60 active:scale-95 transition-all ${
+									copiedEmoji === emoji ? "ring-2 ring-emerald-500 bg-emerald-500/10 scale-105" : ""
+								}`}
+								onClick={() => handleCopyEmoji(emoji)}
+								title={`Copy ${emoji}`}
+							>
+								{emoji}
+							</button>
+						))}
+					</div>
+				</div>
+			)}
+
+			{/* Category Selector Tabs & Grid */}
+			<Card className="border-border/60 shadow-sm overflow-hidden">
+				<CardContent className="p-4 sm:p-5">
+					<Tabs
+						defaultValue="smileys"
+						value={activeCategory}
+						onValueChange={setActiveCategory}
+						className="space-y-4"
+					>
+						{!searchQuery.trim() && (
+							<div className="overflow-x-auto pb-1 -mx-1 px-1">
+								<TabsList className="h-auto p-1 bg-muted/40 gap-1 flex flex-nowrap w-max">
+									{Object.entries(EMOJI_CATEGORIES).map(([key, category]) => (
+										<TabsTrigger
+											key={key}
+											value={key}
+											className="text-xs px-3 py-1.5 rounded-lg data-[state=active]:bg-background data-[state=active]:shadow-sm"
+										>
+											{category?.name || key}
+										</TabsTrigger>
+									))}
+								</TabsList>
 							</div>
-						</Tabs>
-					</CardContent>
-				</Card>
+						)}
 
-				{/* Recently Used */}
-				{recentEmojis.length > 0 &&
-					activeCategory !== "recent" &&
-					!searchQuery.trim() && (
-						<Card className="mb-6">
-							<CardHeader className="pb-3">
-								<CardTitle className="flex items-center">
-									<ClockIcon className="h-5 w-5 mr-2" />
-									Recently Used
-								</CardTitle>
-							</CardHeader>
-							<CardContent>
-								<div className="flex flex-wrap gap-2">
-									{recentEmojis.slice(0, 20).map((emoji, index) => (
-										<Button
+						{/* Emoji Grid */}
+						<div className="grid grid-cols-7 sm:grid-cols-10 md:grid-cols-12 lg:grid-cols-14 gap-1.5 max-h-[460px] overflow-y-auto p-1">
+							{searchQuery.trim() ? (
+								filteredEmojis.length > 0 ? (
+									filteredEmojis.map((emoji, index) => (
+										<button
 											key={index}
-											variant="ghost"
-											className={`h-10 w-10 p-0 text-xl hover:bg-muted ${copiedEmoji === emoji ? "ring-2 ring-primary" : ""}`}
+											type="button"
+											className={`h-11 w-11 text-2xl flex items-center justify-center rounded-xl hover:bg-muted/70 active:scale-90 transition-all ${
+												copiedEmoji === emoji ? "ring-2 ring-emerald-500 bg-emerald-500/10 scale-110" : ""
+											}`}
 											onClick={() => handleCopyEmoji(emoji)}
+											title={`Copy ${emoji}`}
 										>
 											{emoji}
-										</Button>
-									))}
-								</div>
-							</CardContent>
-						</Card>
-					)}
-
-				{/* Tips */}
-				<Card className="mb-8">
-					<CardHeader>
-						<CardTitle>Emoji Tips</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-							<div className="p-3 bg-muted/50 dark:bg-primary/20 ">
-								<h4 className="font-semibold mb-2">🔍 Find Emojis Fast</h4>
-								<p>
-									Use the search bar to quickly find specific emojis by typing
-									keywords
-								</p>
-							</div>
-							<div className="p-3 bg-muted/50 dark:bg-primary/20 ">
-								<h4 className="font-semibold mb-2">📋 One-Click Copy</h4>
-								<p>
-									Click any emoji to instantly copy it to your clipboard for
-									pasting anywhere
-								</p>
-							</div>
-							<div className="p-3 bg-muted/50 dark:bg-primary/20 ">
-								<h4 className="font-semibold mb-2">🌈 Emoji Categories</h4>
-								<p>
-									Browse emojis by category to find the perfect one for your
-									message
-								</p>
-							</div>
+										</button>
+									))
+								) : (
+									<div className="col-span-full text-center py-12 text-muted-foreground text-sm">
+										No emojis found matching "{searchQuery}"
+									</div>
+								)
+							) : (
+								(EMOJI_CATEGORIES[activeCategory]?.emojis || []).map((emoji, index) => (
+									<button
+										key={index}
+										type="button"
+										className={`h-11 w-11 text-2xl flex items-center justify-center rounded-xl hover:bg-muted/70 active:scale-90 transition-all ${
+											copiedEmoji === emoji ? "ring-2 ring-emerald-500 bg-emerald-500/10 scale-110" : ""
+										}`}
+										onClick={() => handleCopyEmoji(emoji)}
+										title={`Copy ${emoji}`}
+									>
+										{emoji}
+									</button>
+								))
+							)}
 						</div>
-					</CardContent>
-				</Card>
-
-				{/* Social Share */}
-				<div className="mt-12">
-					<SocialShareButtons
-						toolName="Emoji Copy Tool"
-						toolDescription="Find and copy emojis easily with our comprehensive emoji library! Perfect for messages, social media, and content. 😍"
-						toolUrl="/emoji-copy"
-						category="generators"
-					/>
-				</div>
-			</div>
+					</Tabs>
+				</CardContent>
+			</Card>
 		</div>
 	);
 }

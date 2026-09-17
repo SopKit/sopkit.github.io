@@ -168,219 +168,172 @@ http://subdomain.example.org/path/to/resource?param=value#section`;
 	const stats = getStats();
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-cyan-50 via-white to-blue-50 py-12 px-4">
-			<div className="max-w-4xl mx-auto">
-				{/* Header */}
-				<div className="text-center mb-12">
-					<h2 className="text-4xl font-bold text-foreground mb-4">
-						URL/Link Extractor
-					</h2>
-					<p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-						Extract all URLs and links from text, documents, or web content.
-						Find and organize website links efficiently.
-					</p>
-				</div>
-
-				{/* Input Section */}
-				<Card className="mb-8">
-					<CardHeader>
-						<CardTitle className="flex items-center gap-2">
-							<Link className="h-5 w-5" />
-							Text Input
-						</CardTitle>
-						<CardDescription>
-							Paste text containing URLs to extract all links
-						</CardDescription>
-					</CardHeader>
-					<CardContent className="space-y-4">
-						<Textarea
-							placeholder="Paste your text here... URLs will be automatically detected and extracted."
-							value={inputText}
-							onChange={(e) => setInputText(e.target.value)}
-							rows={10}
-							className="resize-y"
-						/>
-
-						<div className="flex flex-col sm:flex-row gap-2">
-							<Button
-								onClick={extractUrls}
-								disabled={!inputText.trim()}
-								className="flex-1"
-							>
-								<Link className="h-4 w-4 mr-2" />
-								Extract URLs
-							</Button>
-							<Button onClick={loadSampleText} variant="outline">
-								Load Sample Text
-							</Button>
-							<Button onClick={clearText} variant="outline">
-								Clear Text
-							</Button>
-						</div>
-					</CardContent>
-				</Card>
-
-				{/* Statistics */}
-				{extractedUrls.length > 0 && (
-					<Card className="mb-8">
-						<CardHeader>
-							<CardTitle className="flex items-center justify-between">
-								Extraction Results
-								<div className="flex gap-2">
-									<Button onClick={copyAllUrls} variant="outline" size="sm">
-										{copied ? (
-											<Check className="h-4 w-4" />
-										) : (
-											<Copy className="h-4 w-4" />
-										)}
-									</Button>
-									<Button onClick={downloadUrls} variant="outline" size="sm">
-										<Download className="h-4 w-4" />
-									</Button>
-								</div>
+		<div className="max-w-4xl mx-auto space-y-6">
+			{/* Input Section */}
+			<Card className="border-border/60 shadow-sm">
+				<CardHeader className="pb-3">
+					<div className="flex items-center justify-between">
+						<div>
+							<CardTitle className="flex items-center gap-2 text-lg">
+								<Link className="h-5 w-5 text-primary" />
+								Input Text or Raw Content
 							</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<div className="grid md:grid-cols-4 gap-4 mb-6">
-								<div className="text-center p-4 bg-muted/50 ">
-									<div className="text-2xl font-bold text-primary">
-										{stats.total}
-									</div>
-									<div className="text-sm text-muted-foreground">
-										Total URLs
-									</div>
-								</div>
-								<div className="text-center p-4 bg-muted/50 ">
-									<div className="text-2xl font-bold text-primary">
-										{stats.valid}
-									</div>
-									<div className="text-sm text-muted-foreground">
-										Valid URLs
-									</div>
-								</div>
-								<div className="text-center p-4 bg-destructive/10 ">
-									<div className="text-2xl font-bold text-destructive">
-										{stats.invalid}
-									</div>
-									<div className="text-sm text-muted-foreground">
-										Invalid URLs
-									</div>
-								</div>
-								<div className="text-center p-4 bg-muted/50 ">
-									<div className="text-2xl font-bold text-primary">
-										{stats.uniqueDomains}
-									</div>
-									<div className="text-sm text-muted-foreground">
-										Unique Domains
-									</div>
-								</div>
-							</div>
-						</CardContent>
-					</Card>
-				)}
-
-				{/* Extracted URLs */}
-				{extractedUrls.length > 0 && (
-					<Card>
-						<CardHeader>
-							<CardTitle>Extracted URLs ({extractedUrls.length})</CardTitle>
 							<CardDescription>
-								Click on any URL to open it, or use the copy button to copy
-								individual links
+								Paste raw text, HTML, markdown, or chat logs to extract links
 							</CardDescription>
+						</div>
+						<div className="flex items-center gap-2">
+							<Button onClick={loadSampleText} variant="outline" size="sm" className="h-8 text-xs">
+								Sample
+							</Button>
+							{inputText && (
+								<Button onClick={clearText} variant="ghost" size="sm" className="h-8 text-xs text-muted-foreground hover:text-foreground">
+									Clear
+								</Button>
+							)}
+						</div>
+					</div>
+				</CardHeader>
+				<CardContent className="space-y-4">
+					<Textarea
+						placeholder="Paste your content here... URLs will be extracted and validated instantly."
+						value={inputText}
+						onChange={(e) => setInputText(e.target.value)}
+						rows={8}
+						className="font-mono text-sm resize-y"
+					/>
+
+					<div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+						<Button
+							onClick={extractUrls}
+							disabled={!inputText.trim()}
+							className="w-full sm:w-auto px-6 font-semibold"
+						>
+							<Link className="h-4 w-4 mr-2" />
+							Extract Links Now
+						</Button>
+						{extractedUrls.length > 0 && (
+							<div className="flex items-center gap-2 w-full sm:w-auto">
+								<Button onClick={copyAllUrls} variant="outline" size="sm" className="flex-1 sm:flex-none">
+									{copied ? <Check className="h-4 w-4 mr-1.5 text-emerald-500" /> : <Copy className="h-4 w-4 mr-1.5" />}
+									{copied ? "Copied" : `Copy All (${extractedUrls.length})`}
+								</Button>
+								<Button onClick={downloadUrls} variant="outline" size="sm">
+									<Download className="h-4 w-4 mr-1.5" />
+									Export .txt
+								</Button>
+							</div>
+						)}
+					</div>
+				</CardContent>
+			</Card>
+
+			{/* Extraction Results */}
+			{extractedUrls.length > 0 && (
+				<div className="space-y-4">
+					{/* Stat Metrics Grid */}
+					<div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+						<div className="p-3.5 rounded-xl border border-border/60 bg-muted/30 text-center">
+							<div className="text-2xl font-bold tracking-tight text-primary">
+								{stats.total}
+							</div>
+							<div className="text-xs font-medium text-muted-foreground mt-0.5">
+								Total URLs
+							</div>
+						</div>
+						<div className="p-3.5 rounded-xl border border-border/60 bg-emerald-500/5 text-center">
+							<div className="text-2xl font-bold tracking-tight text-emerald-600 dark:text-emerald-400">
+								{stats.valid}
+							</div>
+							<div className="text-xs font-medium text-muted-foreground mt-0.5">
+								Valid URLs
+							</div>
+						</div>
+						<div className="p-3.5 rounded-xl border border-border/60 bg-destructive/5 text-center">
+							<div className="text-2xl font-bold tracking-tight text-destructive">
+								{stats.invalid}
+							</div>
+							<div className="text-xs font-medium text-muted-foreground mt-0.5">
+								Invalid Format
+							</div>
+						</div>
+						<div className="p-3.5 rounded-xl border border-border/60 bg-muted/30 text-center">
+							<div className="text-2xl font-bold tracking-tight text-foreground">
+								{stats.uniqueDomains}
+							</div>
+							<div className="text-xs font-medium text-muted-foreground mt-0.5">
+								Unique Domains
+							</div>
+						</div>
+					</div>
+
+					{/* Extracted URLs List */}
+					<Card className="border-border/60">
+						<CardHeader className="py-3 px-4 border-b border-border/40">
+							<div className="flex items-center justify-between">
+								<CardTitle className="text-base font-semibold">
+									Extracted Links ({extractedUrls.length})
+								</CardTitle>
+								<span className="text-xs text-muted-foreground">
+									Sanitized & ready to copy
+								</span>
+							</div>
 						</CardHeader>
-						<CardContent>
-							<div className="space-y-3">
-								{extractedUrls.map((urlData) => (
-									<div
-										key={urlData.id}
-										className="flex items-center justify-between p-3 border "
-									>
-										<div className="flex-1 min-w-0">
-											<div className="flex items-center gap-2 mb-1">
-												<Badge
-													variant={urlData.isValid ? "default" : "destructive"}
-													className="text-xs"
-												>
-													{urlData.isValid ? "Valid" : "Invalid"}
-												</Badge>
-												<span className="text-sm text-muted-foreground">
-													{urlData.domain}
-												</span>
-											</div>
-											<div className="font-mono text-sm truncate">
-												{urlData.normalized}
-											</div>
-											{urlData.original !== urlData.normalized && (
-												<div className="text-xs text-muted-foreground truncate">
-													Original: {urlData.original}
-												</div>
-											)}
-										</div>
-										<div className="flex items-center gap-2 ml-4">
-											{urlData.isValid && (
-												<Button
-													onClick={() => openUrl(urlData.normalized)}
-													variant="outline"
-													size="sm"
-												>
-													<ExternalLink className="h-4 w-4" />
-												</Button>
-											)}
-											<Button
-												onClick={() => copyUrl(urlData.normalized)}
-												variant="outline"
-												size="sm"
+						<CardContent className="p-0 divide-y divide-border/40 max-h-[460px] overflow-y-auto">
+							{extractedUrls.map((urlData) => (
+								<div
+									key={urlData.id}
+									className="flex items-center justify-between p-3 px-4 hover:bg-muted/20 transition-colors gap-3"
+								>
+									<div className="flex-1 min-w-0">
+										<div className="flex items-center gap-2 mb-1">
+											<Badge
+												variant={urlData.isValid ? "secondary" : "destructive"}
+												className="text-[10px] h-5 font-normal px-1.5"
 											>
-												<Copy className="h-4 w-4" />
-											</Button>
+												{urlData.isValid ? "Valid" : "Invalid"}
+											</Badge>
+											<span className="text-xs font-medium text-muted-foreground truncate">
+												{urlData.domain}
+											</span>
 										</div>
+										<div className="font-mono text-xs text-foreground truncate select-all">
+											{urlData.normalized}
+										</div>
+										{urlData.original !== urlData.normalized && (
+											<div className="text-[11px] text-muted-foreground truncate mt-0.5">
+												Raw: {urlData.original}
+											</div>
+										)}
 									</div>
-								))}
-							</div>
-						</CardContent>
-					</Card>
-				)}
-
-				{/* Features */}
-				<div className="grid md:grid-cols-3 gap-6 mt-8">
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Link className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Smart Detection</h3>
-								<p className="text-sm text-muted-foreground">
-									Automatically detect and extract all URL formats
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Copy className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Easy Export</h3>
-								<p className="text-sm text-muted-foreground">
-									Copy individual URLs or download all as a file
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<ExternalLink className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Quick Access</h3>
-								<p className="text-sm text-muted-foreground">
-									Open URLs directly or validate link integrity
-								</p>
-							</div>
+									<div className="flex items-center gap-1.5 shrink-0">
+										{urlData.isValid && (
+											<Button
+												onClick={() => openUrl(urlData.normalized)}
+												variant="ghost"
+												size="sm"
+												className="h-8 w-8 p-0 text-muted-foreground hover:text-foreground"
+												title="Open in new tab"
+											>
+												<ExternalLink className="h-3.5 w-3.5" />
+											</Button>
+										)}
+										<Button
+											onClick={() => copyUrl(urlData.normalized)}
+											variant="ghost"
+											size="sm"
+											className="h-8 w-8 p-0 text-muted-foreground hover:text-foreground"
+											title="Copy URL"
+										>
+											<Copy className="h-3.5 w-3.5" />
+										</Button>
+									</div>
+								</div>
+							))}
 						</CardContent>
 					</Card>
 				</div>
-			</div>
+			)}
 		</div>
 	);
 }

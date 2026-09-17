@@ -315,27 +315,12 @@ export default function SeoToolkit() {
 	}
 
 	return (
-		<div className="container mx-auto px-4 py-16 md:py-24">
-			{/* Hero Section */}
-			<div className="text-center max-w-3xl mx-auto mb-20">
-				<div className="inline-flex items-center gap-2 px-3 py-1 sm font-medium mb-8">
-					<Zap className="w-3 h-3" /> 27 Free Checks included
-				</div>
-				<h2 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-foreground">
-					SEO fixes <span className="text-orange-500">you can</span> apply{" "}
-					<span className="text-orange-500">today</span>
-				</h2>
-				<p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-					Paste your URL and get a prioritized checklist of high-impact SEO
-					issues in seconds.{" "}
-					<span className="font-semibold text-foreground">
-						No bloated reports.
-					</span>
-				</p>
-
+		<div className="max-w-4xl mx-auto space-y-6">
+			{/* Scan Form Hero */}
+			<div className="text-center max-w-2xl mx-auto space-y-4">
 				<form
 					onSubmit={handleAnalyze}
-					className="relative max-w-xl mx-auto mb-8"
+					className="relative max-w-xl mx-auto"
 				>
 					<div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
 						<Search className="h-5 w-5 text-muted-foreground" />

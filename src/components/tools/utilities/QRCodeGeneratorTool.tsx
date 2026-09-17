@@ -459,38 +459,8 @@ export default function QRCodeGeneratorTool() {
 	};
 
 	return (
-		<div className="min-h-screen bg-background">
-			<div className="container mx-auto px-4 py-8 max-w-6xl">
-				{/* Header */}
-				<div className="mb-8">
-					<Link href={STATIC_ROUTES.HOME}>
-						<Button variant="ghost" className="mb-4">
-							<ArrowLeftIcon className="h-4 w-4 mr-2" />
-							Back to Home
-						</Button>
-					</Link>
-
-					<div className="flex items-center gap-3 mb-4">
-						<div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl">
-							<QrCodeIcon className="h-6 w-6 text-primary" />
-						</div>
-						<div>
-							<h2 className="text-3xl font-bold">QR Code Generator</h2>
-							<p className="text-muted-foreground">
-								Create custom QR codes for any purpose
-							</p>
-						</div>
-					</div>
-
-					<div className="flex flex-wrap gap-2 mb-4">
-						<Badge variant="secondary">Multiple Types</Badge>
-						<Badge variant="secondary">Custom Colors</Badge>
-						<Badge variant="secondary">High Resolution</Badge>
-						<Badge variant="secondary">Free Forever</Badge>
-					</div>
-				</div>
-
-				<div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+		<div className="max-w-5xl mx-auto space-y-6">
+			<div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 					{/* Settings Panel */}
 					<div className="lg:col-span-1">
 						<Card>
@@ -802,7 +772,6 @@ export default function QRCodeGeneratorTool() {
 						</Card>
 					</div>
 				</div>
-			</div>
 		</div>
 	);
 }

@@ -130,301 +130,182 @@ export default function MailtoLinkGeneratorTool() {
 	};
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-pink-50 py-12 px-4">
-			<div className="max-w-4xl mx-auto">
-				{/* Header */}
-				<div className="text-center mb-12">
-					<h2 className="text-4xl font-bold text-foreground mb-4">
-						Mailto Link Generator
-					</h2>
-					<p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-						Create clickable email links with custom subject, body, CC, and BCC
-						fields for your website or application.
-					</p>
-				</div>
-
-				{/* Main Form */}
-				<Card className="mb-8">
-					<CardHeader>
-						<CardTitle className="flex items-center gap-2">
-							<Mail className="h-5 w-5" />
-							Email Link Details
-						</CardTitle>
-						<CardDescription>
-							Fill in the details to generate your mailto link
-						</CardDescription>
-					</CardHeader>
-					<CardContent className="space-y-6">
-						{/* Email Address */}
-						<div className="space-y-2">
-							<Label htmlFor="email">Email Address *</Label>
-							<Input
-								id="email"
-								type="email"
-								placeholder="contact@example.com"
-								value={formData.email}
-								onChange={(e) => handleInputChange("email", e.target.value)}
-								className="text-lg"
-							/>
-						</div>
-
-						{/* CC and BCC */}
-						<div className="grid md:grid-cols-2 gap-4">
-							<div className="space-y-2">
-								<Label htmlFor="cc">CC (Carbon Copy)</Label>
-								<Input
-									id="cc"
-									type="email"
-									placeholder="team@example.com"
-									value={formData.cc}
-									onChange={(e) => handleInputChange("cc", e.target.value)}
-								/>
-								<p className="text-sm text-muted-foreground">
-									Optional: Add CC recipients
-								</p>
-							</div>
-							<div className="space-y-2">
-								<Label htmlFor="bcc">BCC (Blind Carbon Copy)</Label>
-								<Input
-									id="bcc"
-									type="email"
-									placeholder="admin@example.com"
-									value={formData.bcc}
-									onChange={(e) => handleInputChange("bcc", e.target.value)}
-								/>
-								<p className="text-sm text-muted-foreground">
-									Optional: Add BCC recipients
-								</p>
-							</div>
-						</div>
-
-						{/* Subject */}
-						<div className="space-y-2">
-							<Label htmlFor="subject">Subject</Label>
-							<Input
-								id="subject"
-								placeholder="Enter email subject"
-								value={formData.subject}
-								onChange={(e) => handleInputChange("subject", e.target.value)}
-							/>
-							<p className="text-sm text-muted-foreground">
-								Optional: Pre-fill the email subject
-							</p>
-						</div>
-
-						{/* Body */}
-						<div className="space-y-2">
-							<Label htmlFor="body">Email Body</Label>
-							<Textarea
-								id="body"
-								placeholder="Enter email body content..."
-								value={formData.body}
-								onChange={(e) => handleInputChange("body", e.target.value)}
-								rows={6}
-							/>
-							<p className="text-sm text-muted-foreground">
-								Optional: Pre-fill the email content
-							</p>
-						</div>
-
-						{/* Action Buttons */}
-						<div className="flex flex-col sm:flex-row gap-2">
-							<Button
-								onClick={generateMailtoLink}
-								disabled={!formData.email.trim()}
-								className="flex-1"
-							>
-								Generate Mailto Link
-							</Button>
-							<Button onClick={loadExample} variant="outline">
-								Load Example
-							</Button>
-							<Button onClick={clearForm} variant="outline">
-								Clear Form
-							</Button>
-						</div>
-					</CardContent>
-				</Card>
-
-				{/* Generated Link */}
-				{generatedLink && (
-					<Card className="mb-8">
-						<CardHeader>
-							<CardTitle className="flex items-center gap-2">
-								<Link className="h-5 w-5" />
-								Generated Mailto Link
+		<div className="max-w-4xl mx-auto space-y-6">
+			{/* Form Composer Card */}
+			<Card className="border-border/60 shadow-sm">
+				<CardHeader className="pb-3">
+					<div className="flex items-center justify-between">
+						<div>
+							<CardTitle className="text-base font-semibold flex items-center gap-2">
+								<Mail className="h-4 w-4 text-primary" />
+								Compose Mailto Link
 							</CardTitle>
-						</CardHeader>
-						<CardContent className="space-y-4">
-							{/* Link Display */}
-							<div className="space-y-2">
-								<Label>Mailto Link</Label>
-								<div className="flex items-center gap-2">
-									<Input
-										value={generatedLink}
-										readOnly
-										className="font-mono text-sm"
-									/>
-									<Button onClick={copyToClipboard} variant="outline" size="sm">
-										{copied ? (
-											<Check className="h-4 w-4" />
-										) : (
-											<Copy className="h-4 w-4" />
-										)}
-									</Button>
-								</div>
-							</div>
-
-							{/* HTML Code */}
-							<div className="space-y-2">
-								<Label>HTML Code</Label>
-								<div className="flex items-center gap-2">
-									<Input
-										value={`<a href="${generatedLink}">Send Email</a>`}
-										readOnly
-										className="font-mono text-sm"
-									/>
-									<Button onClick={copyHtmlCode} variant="outline" size="sm">
-										<Copy className="h-4 w-4" />
-									</Button>
-								</div>
-							</div>
-
-							{/* Test Button */}
-							<div className="flex flex-col sm:flex-row gap-2">
-								<Button
-									onClick={testEmailLink}
-									className="flex items-center gap-2"
-								>
-									<ExternalLink className="h-4 w-4" />
-									Test Email Link
+							<CardDescription>
+								Define recipient, subject, carbon copies, and pre-written message body
+							</CardDescription>
+						</div>
+						<div className="flex items-center gap-2">
+							<Button onClick={loadExample} variant="outline" size="sm" className="h-8 text-xs">
+								Example
+							</Button>
+							{(formData.email || formData.subject || formData.body) && (
+								<Button onClick={clearForm} variant="ghost" size="sm" className="h-8 text-xs text-muted-foreground hover:text-foreground">
+									Clear
 								</Button>
+							)}
+						</div>
+					</div>
+				</CardHeader>
+				<CardContent className="space-y-4">
+					{/* Primary Recipient */}
+					<div className="space-y-1.5">
+						<Label htmlFor="email" className="text-xs font-medium">
+							To (Primary Recipient) *
+						</Label>
+						<Input
+							id="email"
+							type="email"
+							placeholder="hello@example.com"
+							value={formData.email}
+							onChange={(e) => handleInputChange("email", e.target.value)}
+							className="font-mono text-sm"
+						/>
+					</div>
+
+					{/* CC & BCC Row */}
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+						<div className="space-y-1.5">
+							<Label htmlFor="cc" className="text-xs font-medium text-muted-foreground">
+								CC (Carbon Copy)
+							</Label>
+							<Input
+								id="cc"
+								type="email"
+								placeholder="team@example.com"
+								value={formData.cc}
+								onChange={(e) => handleInputChange("cc", e.target.value)}
+								className="font-mono text-xs"
+							/>
+						</div>
+						<div className="space-y-1.5">
+							<Label htmlFor="bcc" className="text-xs font-medium text-muted-foreground">
+								BCC (Blind Carbon Copy)
+							</Label>
+							<Input
+								id="bcc"
+								type="email"
+								placeholder="archive@example.com"
+								value={formData.bcc}
+								onChange={(e) => handleInputChange("bcc", e.target.value)}
+								className="font-mono text-xs"
+							/>
+						</div>
+					</div>
+
+					{/* Subject */}
+					<div className="space-y-1.5">
+						<Label htmlFor="subject" className="text-xs font-medium">
+							Email Subject Line
+						</Label>
+						<Input
+							id="subject"
+							placeholder="e.g. Partnership Request or Product Question"
+							value={formData.subject}
+							onChange={(e) => handleInputChange("subject", e.target.value)}
+							className="text-sm"
+						/>
+					</div>
+
+					{/* Body */}
+					<div className="space-y-1.5">
+						<Label htmlFor="body" className="text-xs font-medium">
+							Email Body Template
+						</Label>
+						<Textarea
+							id="body"
+							placeholder="Write the pre-filled message text here..."
+							value={formData.body}
+							onChange={(e) => handleInputChange("body", e.target.value)}
+							rows={4}
+							className="text-sm resize-y font-sans"
+						/>
+					</div>
+
+					<Button
+						onClick={generateMailtoLink}
+						disabled={!formData.email.trim()}
+						className="w-full font-semibold h-10 mt-2"
+					>
+						<Link className="h-4 w-4 mr-2" />
+						Generate Mailto URL & HTML Code
+					</Button>
+				</CardContent>
+			</Card>
+
+			{/* Generated Output Card */}
+			{generatedLink && (
+				<Card className="border-border/60 shadow-sm animate-in fade-in zoom-in-95 duration-200">
+					<CardHeader className="py-3 px-4 border-b border-border/40">
+						<div className="flex items-center justify-between">
+							<CardTitle className="text-sm font-semibold">
+								Generated Mailto Codes
+							</CardTitle>
+							<Button
+								onClick={testEmailLink}
+								size="sm"
+								variant="outline"
+								className="h-7 text-xs font-medium"
+							>
+								<ExternalLink className="h-3.5 w-3.5 mr-1" />
+								Test In Email App
+							</Button>
+						</div>
+					</CardHeader>
+					<CardContent className="p-4 space-y-4">
+						{/* Raw URL */}
+						<div className="space-y-1.5">
+							<div className="flex items-center justify-between text-xs text-muted-foreground">
+								<span>Mailto URI (For buttons, redirects, and raw links)</span>
 								<Button
 									onClick={copyToClipboard}
-									variant="outline"
-									className="flex items-center gap-2"
+									variant="ghost"
+									size="sm"
+									className="h-6 text-xs px-2"
 								>
-									{copied ? (
-										<Check className="h-4 w-4" />
-									) : (
-										<Copy className="h-4 w-4" />
-									)}
-									{copied ? "Copied!" : "Copy Link"}
+									{copied ? <Check className="h-3.5 w-3.5 mr-1 text-emerald-500" /> : <Copy className="h-3.5 w-3.5 mr-1" />}
+									{copied ? "Copied" : "Copy Link"}
 								</Button>
 							</div>
+							<Input
+								value={generatedLink}
+								readOnly
+								className="font-mono text-xs select-all bg-muted/20"
+							/>
+						</div>
 
-							{/* Preview */}
-							<div className="bg-gray-50 ">
-								<h3 className="font-semibold mb-2">Preview:</h3>
-								<a
-									href={generatedLink}
-									className="text-primary hover:text-foreground underline"
+						{/* HTML Snippet */}
+						<div className="space-y-1.5">
+							<div className="flex items-center justify-between text-xs text-muted-foreground">
+								<span>HTML Anchor Tag (For website source code)</span>
+								<Button
+									onClick={copyHtmlCode}
+									variant="ghost"
+									size="sm"
+									className="h-6 text-xs px-2"
 								>
-									Send Email to {formData.email}
-								</a>
+									<Copy className="h-3.5 w-3.5 mr-1" />
+									Copy HTML
+								</Button>
 							</div>
-						</CardContent>
-					</Card>
-				)}
-
-				{/* Usage Examples */}
-				<Card className="mb-8">
-					<CardHeader>
-						<CardTitle>Usage Examples</CardTitle>
-						<CardDescription>Common use cases for mailto links</CardDescription>
-					</CardHeader>
-					<CardContent>
-						<div className="grid md:grid-cols-2 gap-6">
-							<div className="space-y-3">
-								<h3 className="font-semibold">Contact Form</h3>
-								<div className="bg-gray-50 p-3 rounded text-sm font-mono">
-									&lt;a
-									href="mailto:contact@company.com?subject=Website%20Inquiry"&gt;
-									<br />
-									&nbsp;&nbsp;Contact Us
-									<br />
-									&lt;/a&gt;
-								</div>
-							</div>
-
-							<div className="space-y-3">
-								<h3 className="font-semibold">Support Email</h3>
-								<div className="bg-gray-50 p-3 rounded text-sm font-mono">
-									&lt;a
-									href="mailto:support@company.com?subject=Technical%20Support"&gt;
-									<br />
-									&nbsp;&nbsp;Get Support
-									<br />
-									&lt;/a&gt;
-								</div>
-							</div>
-
-							<div className="space-y-3">
-								<h3 className="font-semibold">Feedback Form</h3>
-								<div className="bg-gray-50 p-3 rounded text-sm font-mono">
-									&lt;a
-									href="mailto:feedback@company.com?subject=User%20Feedback"&gt;
-									<br />
-									&nbsp;&nbsp;Send Feedback
-									<br />
-									&lt;/a&gt;
-								</div>
-							</div>
-
-							<div className="space-y-3">
-								<h3 className="font-semibold">Newsletter Subscription</h3>
-								<div className="bg-gray-50 p-3 rounded text-sm font-mono">
-									&lt;a
-									href="mailto:subscribe@company.com?subject=Newsletter%20Subscription"&gt;
-									<br />
-									&nbsp;&nbsp;Subscribe
-									<br />
-									&lt;/a&gt;
-								</div>
-							</div>
+							<Input
+								value={`<a href="${generatedLink}">Send Email</a>`}
+								readOnly
+								className="font-mono text-xs select-all bg-muted/20"
+							/>
 						</div>
 					</CardContent>
 				</Card>
-
-				{/* Features */}
-				<div className="grid md:grid-cols-3 gap-6">
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Mail className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Email Integration</h3>
-								<p className="text-sm text-muted-foreground">
-									Create seamless email integration for websites
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<Copy className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Copy & Paste</h3>
-								<p className="text-sm text-muted-foreground">
-									Easily copy links and HTML code
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-
-					<Card>
-						<CardContent className="pt-6">
-							<div className="text-center">
-								<ExternalLink className="h-8 w-8 text-primary mx-auto mb-3" />
-								<h3 className="font-semibold mb-2">Test & Preview</h3>
-								<p className="text-sm text-muted-foreground">
-									Test your email links before using them
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-				</div>
-			</div>
+			)}
 		</div>
 	);
 }

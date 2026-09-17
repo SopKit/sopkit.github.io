@@ -44,7 +44,7 @@ export const DS = {
 		active: "border-primary bg-primary/5",
 		iconChip:
 			"p-4 bg-surface-muted text-foreground rounded-2xl w-fit mx-auto group-hover:scale-105 transition-transform",
-		title: "font-serif text-lg font-medium text-foreground",
+		title: "font-sans font-semibold text-lg text-foreground tracking-tight",
 		subtitle: "text-sm text-muted-foreground",
 	} as const,
 
