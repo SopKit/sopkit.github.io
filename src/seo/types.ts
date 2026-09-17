@@ -32,6 +32,29 @@ export interface PageSeoInput {
   noindex?: boolean;
 }
 
+export interface ToolMetadataInput {
+  name: string;
+  route: string;
+  id?: string;
+  category?: string;
+  description?: string;
+  keywords?: string[];
+  ogImage?: string;
+  noindex?: boolean;
+  noIndex?: boolean;
+}
+
+export interface CategoryMetadataInput {
+  categorySlug: string;
+  name?: string;
+  description?: string;
+  count?: number;
+  keywords?: string[];
+  ogImage?: string;
+  noindex?: boolean;
+  noIndex?: boolean;
+}
+
 export interface BreadcrumbItem {
   name: string;
   item: string;

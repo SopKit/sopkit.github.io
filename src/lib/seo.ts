@@ -1,179 +1,36 @@
 import type { Metadata } from "next";
 import { getAllTools, getAllCategories } from "./tools";
-import toolsData from "@/constants/tools.json";
 
 /**
- * Centralized SEO utility for SopKit
+ * Centralized SEO utility for SopKit.
+ * Re-exports unified, standards-compliant metadata constructors from @/seo/metadata.
  */
-
 import { SITE_URL } from "@/constants/config";
+import {
+	constructToolMetadata,
+	constructCategoryMetadata,
+	constructPageMetadata,
+	resolveOgImage,
+	formatSeoTitle,
+	formatSeoDescription,
+	generateToolMetadata,
+	generateMetadata,
+	buildPageMetadata,
+} from "@/seo/metadata";
 
-
-/**
- * Normalize a URL to end with a single trailing slash. The site's canonical
- * URLs use trailing slashes (matching sitemap.ts), so every emitted URL should
- * be consistent to avoid duplicate-URL signals.
- */
-function withSlash(url: string): string {
-	return url.endsWith("/") ? url : `${url}/`;
-}
-
-interface MetadataProps {
-	title: string;
-	description: string;
-	path?: string;
-	image?: string;
-	noIndex?: boolean;
-	keywords?: string[];
-}
-
-/**
- * Per-category Open Graph images (files in public/og-images/).
- * Pages for these categories get a tailored social preview instead of the
- * generic site-wide OG image, which lifts click-through from social/search.
- */
-const CATEGORY_OG_IMAGES: Record<string, string> = {
-	developer: "/og-images/developer-tools.png",
-	image: "/og-images/image-tools.png",
-	pdf: "/og-images/pdf-tools.png",
-	seo: "/og-images/seo-tools.png",
-	text: "/og-images/text-tools.png",
+export {
+	constructToolMetadata,
+	constructCategoryMetadata,
+	constructPageMetadata,
+	resolveOgImage,
+	formatSeoTitle,
+	formatSeoDescription,
+	generateToolMetadata,
+	generateMetadata,
+	buildPageMetadata,
 };
 
-export function resolveOgImage(category: string | undefined, explicitImage?: string): string {
-	if (explicitImage) return explicitImage;
-	if (category && CATEGORY_OG_IMAGES[category]) return CATEGORY_OG_IMAGES[category];
-	return "/og-image.png";
-}
-
-/**
- * Generate standard metadata for a page
- */
-export function generateMetadata({
-	title,
-	description,
-	path = "",
-	image = "/og-image.png",
-	noIndex = false,
-	keywords = [],
-}: MetadataProps): Metadata {
-	const canonicalUrl = withSlash(`${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`);
-
-	return {
-		title,
-		description,
-		keywords,
-		alternates: {
-			canonical: canonicalUrl,
-		},
-		openGraph: {
-			title,
-			description,
-			url: canonicalUrl,
-			siteName: "SopKit",
-			locale: "en_US",
-			type: "website",
-			images: [
-				{
-					url: image.startsWith("http") ? image : `${SITE_URL}${image}`,
-					width: 1200,
-					height: 630,
-					alt: title,
-				},
-			],
-		},
-		twitter: {
-			card: "summary_large_image",
-			title,
-			description,
-			images: [image.startsWith("http") ? image : `${SITE_URL}${image}`],
-			creator: "@sopkit",
-		},
-		robots: {
-			index: !noIndex,
-			follow: !noIndex,
-			googleBot: {
-				index: !noIndex,
-				follow: !noIndex,
-				"max-video-preview": -1,
-				"max-image-preview": "large",
-				"max-snippet": -1,
-			},
-		},
-	};
-}
-
-interface ToolMetadataProps {
-	name: string;
-	description?: string;
-	route: string;
-	category?: string;
-	keywords?: string[];
-}
-
-/**
- * Generate privacy-first metadata for a tool page.
- *
- * Brand positioning (low-hanging fruit SEO strategy):
- *   - Compete against server-side tools (Smallpdf, iLovePDF, CloudConvert)
- *     that upload user data to their servers
- *   - Emphasize: client-side processing, no AI training, no data selling,
- *     100% browser sandbox, instant local execution
- *
- * Title pattern: "[Tool Name] — 100% Client-Side in Your Browser | No Upload, No AI Training | SopKit"
- * Description: Privacy-first, always mentions client-side + no upload + no AI training.
- */
-export function generateToolMetadata({
-	name,
-	description,
-	route,
-	category,
-	keywords = [],
-}: ToolMetadataProps): Metadata {
-	const cleanName = name.replace(/\s+—.*$/, "").replace(/^Free\s+/i, "").trim();
-	const baseKeywords = [
-		"private", "client-side", "no upload", "no AI training",
-		"browser sandbox", "secure", cleanName.toLowerCase(),
-		...(category ? [category] : []),
-		"SopKit",
-	];
-	const allKeywords = [...new Set([...baseKeywords, ...keywords])];
-
-	// Check if a custom title or description exists in tools.json
-	let customTitle = "";
-	let customDesc = "";
-	if (toolsData.categories) {
-		for (const cat of Object.values(toolsData.categories) as any[]) {
-			if (cat.tools) {
-				const found = cat.tools.find((t: any) => t.route === route);
-				if (found) {
-					if (found.seoTitle) customTitle = found.seoTitle;
-					else if (found.title) customTitle = found.title;
-					
-					if (found.seoDescription) customDesc = found.seoDescription;
-					break;
-				}
-			}
-		}
-	}
-
-	const isExternalTool = route.includes("ai-image-generator") || route.includes("pollinations");
-	const title = customTitle || `${cleanName} — Free, Fast, Browser-Based Online Tool - SopKit`;
-
-	const desc = customDesc || (description && description.length > 60
-		? description
-		: isExternalTool
-			? `${cleanName} is a fast, accessible online tool on SopKit. Create and generate outputs directly in your browser with customizable parameters and instant export.`
-			: `${cleanName} runs directly in your browser sandbox. Fast, free, and privacy-focused processing without mandatory server storage.`);
-
-	return generateMetadata({
-		title,
-		description: desc,
-		path: route,
-		image: resolveOgImage(category),
-		keywords,
-	});
-}
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 interface SchemaProps {
 	name: string;
@@ -196,7 +53,7 @@ export function generateWebAppSchema({
 		"@type": "WebApplication",
 		name,
 		description,
-		url: withSlash(`${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`),
+		url: buildCanonicalUrl(path),
 		applicationCategory: category,
 		operatingSystem: "Any",
 		offers: {
@@ -291,7 +148,7 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
 			"@type": "ListItem",
 			position: index + 1,
 			name: item.name,
-			item: withSlash(`${SITE_URL}${item.path}`),
+			item: buildCanonicalUrl(item.path),
 		})),
 	};
 }
@@ -312,7 +169,7 @@ export function generateToolSchema({
 		"@type": "WebApplication",
 		name,
 		description,
-		url: withSlash(`${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`),
+		url: buildCanonicalUrl(path),
 		applicationCategory: category,
 		operatingSystem: "Any",
 		offers: {
@@ -320,7 +177,6 @@ export function generateToolSchema({
 			price: "0",
 			priceCurrency: "USD",
 		},
-		// aggregateRating removed - only include if there are real, verified page-specific reviews
 	};
 }
 
@@ -386,14 +242,14 @@ export function generateCollectionPageSchema(
 		"@type": "CollectionPage",
 		name: categoryName,
 		description: categoryDescription,
-		url: withSlash(hubUrl),
+		url: buildCanonicalUrl(hubUrl),
 		mainEntity: {
 			"@type": "ItemList",
 			numberOfItems: categoryTools.length,
 			itemListElement: categoryTools.slice(0, 50).map((tool, index) => ({
 				"@type": "ListItem",
 				position: index + 1,
-				url: withSlash(`${SITE_URL}${tool.route}`),
+				url: buildCanonicalUrl(tool.route),
 				name: tool.name,
 			})),
 		},
