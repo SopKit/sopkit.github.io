@@ -46,9 +46,16 @@ export function Footer() {
 					<div className="lg:col-span-2 space-y-4 pr-4">
 						<Link
 							href={STATIC_ROUTES.HOME}
-							className="font-serif text-2xl font-bold tracking-tight text-foreground no-underline inline-block"
+							className="flex items-center gap-2.5 font-serif text-2xl font-bold tracking-tight text-foreground no-underline inline-flex"
 						>
-							Sop<span className="italic font-normal">Kit</span>
+							<img
+								src="/logo.png"
+								alt="SopKit Logo"
+								width={28}
+								height={28}
+								className="w-7 h-7 rounded-md object-contain"
+							/>
+							<span>Sop<span className="italic font-normal">Kit</span></span>
 						</Link>
 						<p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
 							A curated collection of over {SITE_CONFIG.toolCountString} free web utilities.

@@ -58,8 +58,15 @@ export function Header() {
 					{/* Left: Brand Identity */}
 					<Link
 						href={STATIC_ROUTES.HOME}
-						className="flex items-center gap-2 group no-underline text-foreground"
+						className="flex items-center gap-2.5 group no-underline text-foreground"
 					>
+						<img
+							src="/logo.png"
+							alt="SopKit Logo"
+							width={32}
+							height={32}
+							className="w-8 h-8 rounded-lg object-contain transition-transform duration-200 group-hover:scale-105"
+						/>
 						<span className="font-serif text-2xl font-bold tracking-tight group-hover:opacity-90 transition-opacity">
 							Sop<span className="italic font-normal">Kit</span>
 						</span>
