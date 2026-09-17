@@ -1,15 +1,16 @@
 "use client";
 
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { 
     Upload, 
     Download, 
     ImageIcon, 
     Loader2, 
-    X,
-    Settings,
-    FileText,
-    ArrowRight
+    X, 
+    Settings, 
+    FileText, 
+    ArrowRight,
+    AlertCircle
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -25,7 +26,9 @@ import {
     ToolSectionTitle,
 } from "@/components/tools/shared/design-system";
 
-interface CompressorFile {
+export type CompressorStatus = "pending" | "processing" | "done" | "target-unattainable" | "failed";
+
+export interface CompressorFile {
     id: string;
     file: File;
     name: string;
@@ -33,7 +36,22 @@ interface CompressorFile {
     preview: string;
     compressedBlob: Blob | null;
     compressedSize: number | null;
-    status: "pending" | "processing" | "done" | "failed";
+    status: CompressorStatus;
+    statusMessage?: string;
+}
+
+export function evaluateTargetSizeStatus(
+    blobSize: number, 
+    targetKb: number
+): { status: "done" | "target-unattainable"; statusMessage?: string } {
+    const targetBytes = targetKb * 1024;
+    if (blobSize <= targetBytes) {
+        return { status: "done" };
+    }
+    return { 
+        status: "target-unattainable", 
+        statusMessage: `Target ${targetKb} KB is unattainable without resizing image dimensions.` 
+    };
 }
 
 export default function ImageCompressorTool() {
@@ -43,9 +61,30 @@ export default function ImageCompressorTool() {
     const [quality, setQuality] = useState<number>(75);
     const [targetKb, setTargetKb] = useState<number>(200);
     const fileInputRef = useRef<HTMLInputElement>(null);
+    const isMountedRef = useRef(true);
+
+    useEffect(() => {
+        isMountedRef.current = true;
+        return () => {
+            isMountedRef.current = false;
+        };
+    }, []);
+
+    // Clean up created previews when component unmounts
+    useEffect(() => {
+        return () => {
+            files.forEach(f => {
+                try {
+                    URL.revokeObjectURL(f.preview);
+                } catch {
+                    // Ignore revoke errors
+                }
+            });
+        };
+    }, [files]);
 
     const addFiles = useCallback((incoming: File[]) => {
-        const newFiles = incoming.map(file => ({
+        const newFiles: CompressorFile[] = incoming.map(file => ({
             id: Math.random().toString(36).substring(2, 9),
             file,
             name: file.name,
@@ -53,10 +92,10 @@ export default function ImageCompressorTool() {
             preview: URL.createObjectURL(file),
             compressedBlob: null,
             compressedSize: null,
-            status: "pending" as const
+            status: "pending"
         }));
         setFiles(prev => [...prev, ...newFiles]);
-        toast.success(`${newFiles.length} images queued for compression.`);
+        toast.success(`${newFiles.length} image(s) queued for compression.`);
     }, []);
 
     const onFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
@@ -69,14 +108,59 @@ export default function ImageCompressorTool() {
     const removeFile = (id: string) => {
         setFiles(prev => {
             const fileItem = prev.find(f => f.id === id);
-            if (fileItem) URL.revokeObjectURL(fileItem.preview);
+            if (fileItem) {
+                try {
+                    URL.revokeObjectURL(fileItem.preview);
+                } catch {
+                    // Ignore revoke errors
+                }
+            }
             return prev.filter(f => f.id !== id);
         });
     };
 
     const clearAll = () => {
-        files.forEach(f => URL.revokeObjectURL(f.preview));
+        files.forEach(f => {
+            try {
+                URL.revokeObjectURL(f.preview);
+            } catch {
+                // Ignore revoke errors
+            }
+        });
         setFiles([]);
+    };
+
+    const handleModeChange = (newMode: "quality" | "target-kb") => {
+        setMode(newMode);
+        setFiles(prev => prev.map(f => (f.status === "done" || f.status === "target-unattainable") ? {
+            ...f,
+            status: "pending",
+            compressedBlob: null,
+            compressedSize: null,
+            statusMessage: undefined
+        } : f));
+    };
+
+    const handleQualityChange = (newQuality: number) => {
+        setQuality(newQuality);
+        setFiles(prev => prev.map(f => (f.status === "done" || f.status === "target-unattainable") ? {
+            ...f,
+            status: "pending",
+            compressedBlob: null,
+            compressedSize: null,
+            statusMessage: undefined
+        } : f));
+    };
+
+    const handleTargetKbChange = (newTargetKb: number) => {
+        setTargetKb(newTargetKb);
+        setFiles(prev => prev.map(f => (f.status === "done" || f.status === "target-unattainable") ? {
+            ...f,
+            status: "pending",
+            compressedBlob: null,
+            compressedSize: null,
+            statusMessage: undefined
+        } : f));
     };
 
     const compressSingleImage = async (fileItem: CompressorFile): Promise<CompressorFile> => {
@@ -97,12 +181,15 @@ export default function ImageCompressorTool() {
 
         const mimeType = fileItem.file.type || "image/jpeg";
         let compressedBlob: Blob | null = null;
+        let fileStatus: CompressorStatus = "done";
+        let statusMessage: string | undefined = undefined;
 
         if (mode === "quality") {
             const qualityValue = quality / 100;
             compressedBlob = await new Promise<Blob | null>((res) => {
                 canvas.toBlob((b) => res(b), mimeType, qualityValue);
             });
+            fileStatus = "done";
         } else {
             // Binary search to find optimal compression quality fitting under targetKb
             let low = 0.05, high = 0.98;
@@ -129,6 +216,12 @@ export default function ImageCompressorTool() {
                 });
             }
             compressedBlob = bestBlob;
+
+            if (compressedBlob) {
+                const evaluation = evaluateTargetSizeStatus(compressedBlob.size, targetKb);
+                fileStatus = evaluation.status;
+                statusMessage = evaluation.statusMessage;
+            }
         }
 
         if (!compressedBlob) throw new Error("Compression failed");
@@ -137,7 +230,8 @@ export default function ImageCompressorTool() {
             ...fileItem,
             compressedBlob,
             compressedSize: compressedBlob.size,
-            status: "done"
+            status: fileStatus,
+            statusMessage,
         };
     };
 
@@ -146,9 +240,16 @@ export default function ImageCompressorTool() {
         setIsProcessing(true);
 
         const updatedFiles = [...files];
-        
+        let successCount = 0;
+        let unattainableCount = 0;
+        let failCount = 0;
+
         for (let i = 0; i < updatedFiles.length; i++) {
-            if (updatedFiles[i].status === "done") continue;
+            if (!isMountedRef.current) break;
+            if (updatedFiles[i].status === "done") {
+                successCount++;
+                continue;
+            }
             
             updatedFiles[i].status = "processing";
             setFiles([...updatedFiles]);
@@ -156,15 +257,30 @@ export default function ImageCompressorTool() {
             try {
                 const result = await compressSingleImage(updatedFiles[i]);
                 updatedFiles[i] = result;
+                if (result.status === "done") successCount++;
+                else if (result.status === "target-unattainable") unattainableCount++;
             } catch (err) {
                 console.error(err);
                 updatedFiles[i].status = "failed";
+                failCount++;
             }
-            setFiles([...updatedFiles]);
+            if (isMountedRef.current) {
+                setFiles([...updatedFiles]);
+            }
         }
 
-        setIsProcessing(false);
-        toast.success("Compression process completed successfully!");
+        if (isMountedRef.current) {
+            setIsProcessing(false);
+            if (unattainableCount > 0 && successCount > 0) {
+                toast.info(`Completed: ${successCount} reached target, ${unattainableCount} could not meet target size without resizing.`);
+            } else if (unattainableCount > 0 && successCount === 0) {
+                toast.warning(`Target size was unattainable for ${unattainableCount} file(s) at current dimensions.`);
+            } else if (failCount > 0) {
+                toast.error(`Compression completed with ${failCount} failure(s).`);
+            } else {
+                toast.success(`All ${successCount} image(s) processed successfully!`);
+            }
+        }
     };
 
     const downloadCompressed = (fileItem: CompressorFile) => {
@@ -197,7 +313,7 @@ export default function ImageCompressorTool() {
                     </div>
                     <div>
                         <h2 className="text-xl font-bold">Image Compressor</h2>
-                        <p className="text-xs text-muted-foreground">Compress JPG, PNG, and WebP images to custom sizes or target KB thresholds locally</p>
+                        <p className="text-xs text-muted-foreground">Compress JPG, PNG, and WebP images to custom quality or target KB thresholds in your browser</p>
                     </div>
                 </div>
                 <div className="flex items-center gap-2 flex-wrap">
@@ -271,17 +387,27 @@ export default function ImageCompressorTool() {
                                             </div>
                                             <div className="min-w-0 flex-1">
                                                 <p className="text-xs font-bold truncate max-w-[200px] text-foreground">{item.name}</p>
-                                                <div className="flex gap-2 items-center mt-1">
+                                                <div className="flex gap-2 items-center mt-1 flex-wrap">
                                                     <span className="text-[10px] text-muted-foreground">{formatFileSize(item.originalSize)}</span>
-                                                    {item.status === "done" && item.compressedSize && (
+                                                    {item.compressedSize && (
                                                         <>
                                                             <ArrowRight className="w-3 h-3 text-muted-foreground" />
-                                                            <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
-                                                                {formatFileSize(item.compressedSize)} ({ratio}% smaller)
+                                                            <span className={`text-[10px] font-bold ${
+                                                                item.status === "target-unattainable" 
+                                                                    ? "text-amber-600 dark:text-amber-400" 
+                                                                    : "text-emerald-600 dark:text-emerald-400"
+                                                            }`}>
+                                                                {formatFileSize(item.compressedSize)} ({ratio > 0 ? `${ratio}% smaller` : "no reduction"})
                                                             </span>
                                                         </>
                                                     )}
                                                 </div>
+                                                {item.statusMessage && (
+                                                    <p className="text-[10px] text-amber-600 dark:text-amber-400 mt-1 flex items-center gap-1">
+                                                        <AlertCircle className="w-3 h-3 shrink-0" />
+                                                        {item.statusMessage}
+                                                    </p>
+                                                )}
                                             </div>
                                         </div>
 
@@ -301,6 +427,18 @@ export default function ImageCompressorTool() {
                                                         className="h-8 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-lg"
                                                     >
                                                         <Download className="w-3.5 h-3.5 mr-1" /> Save
+                                                    </Button>
+                                                </>
+                                            )}
+                                            {item.status === "target-unattainable" && (
+                                                <>
+                                                    <Badge className="bg-amber-600 hover:bg-amber-600 text-white text-[9px] font-bold uppercase">Target Unattainable</Badge>
+                                                    <Button 
+                                                        size="sm" 
+                                                        onClick={() => downloadCompressed(item)}
+                                                        className="h-8 bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold rounded-lg"
+                                                    >
+                                                        <Download className="w-3.5 h-3.5 mr-1" /> Save ({formatFileSize(item.compressedSize || 0)})
                                                     </Button>
                                                 </>
                                             )}
@@ -337,7 +475,7 @@ export default function ImageCompressorTool() {
                                     { value: "target-kb", label: "Target KB Limit" },
                                 ]}
                                 value={mode}
-                                onChange={(v) => setMode(v as "quality" | "target-kb")}
+                                onChange={(v) => handleModeChange(v as "quality" | "target-kb")}
                             />
 
                             {mode === "quality" ? (
@@ -349,7 +487,7 @@ export default function ImageCompressorTool() {
                                         min="10"
                                         max="100"
                                         value={quality}
-                                        onChange={(e) => setQuality(parseInt(e.target.value))}
+                                        onChange={(e) => handleQualityChange(parseInt(e.target.value))}
                                         className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-primary"
                                     />
                                 </div>
@@ -361,7 +499,7 @@ export default function ImageCompressorTool() {
                                     min={5}
                                     max={5000}
                                     value={targetKb}
-                                    onChange={(e) => setTargetKb(Math.max(5, Math.min(5000, parseInt(e.target.value, 10) || 200)))}
+                                    onChange={(e) => handleTargetKbChange(Math.max(5, Math.min(5000, parseInt(e.target.value, 10) || 200)))}
                                 />
                             )}
                         </div>
@@ -369,10 +507,13 @@ export default function ImageCompressorTool() {
 
                     <Card className="p-5 border border-border/40 bg-card/20 backdrop-blur-sm rounded-2xl space-y-3.5 text-xs leading-relaxed">
                         <h4 className="font-bold text-sm text-foreground flex items-center gap-1.5">
-                            <FileText className="w-4 h-4 text-primary animate-pulse" /> Optimizer details
+                            <FileText className="w-4 h-4 text-primary" /> Optimizer Details
                         </h4>
                         <p className="text-muted-foreground">
-                            When choosing <strong>Target KB Limit</strong>, we run a browser-native binary optimization loop to find the highest pixel rendering quality that fits exactly under your target threshold size.
+                            When using <strong>Target KB Limit</strong>, a binary optimization loop finds the highest visual quality fitting under your threshold. If an image cannot reach the target size even at minimum quality without reducing pixel dimensions, it will be clearly reported.
+                        </p>
+                        <p className="text-muted-foreground">
+                            <em>Note on PNGs:</em> Browser Canvas encodes PNGs losslessly without quality scaling. For dramatic size reduction of high-resolution images, convert to WebP or JPEG.
                         </p>
                     </Card>
                 </div>

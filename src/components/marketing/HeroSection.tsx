@@ -24,9 +24,9 @@ interface ShowcaseCard {
 const SHOWCASE_CARDS: ShowcaseCard[] = [
 	{
 		title: "Image Compressor",
-		tag: "WebAssembly",
-		badge: "Lossless",
-		metric: "90% Smaller",
+		tag: "Browser Canvas",
+		badge: "Adaptive",
+		metric: "Custom KB",
 		href: "/image-compressor",
 		icon: ImageIcon,
 		rotation: "-rotate-12 -translate-x-28 sm:-translate-x-32 translate-y-6",
