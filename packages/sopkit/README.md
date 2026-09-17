@@ -4,7 +4,7 @@
 
 [![npm version](https://img.shields.io/npm/v/sopkit.svg?style=flat-square&color=38bdf8)](https://www.npmjs.com/package/sopkit)
 [![npm downloads](https://img.shields.io/npm/dm/sopkit.svg?style=flat-square&color=22c55e)](https://www.npmjs.com/package/sopkit)
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fsopkit&label=VISITORS&labelColor=%230f172a&countColor=%230284c7)](https://visitorbadge.io/status?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fsopkit)
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40sopkit%2Fsopkit"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40sopkit%2Fsopkit&countColor=%23263759&style=flat" /></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 Run 17+ essential developer tools in your terminal without internet, zero tracking, and instant execution.

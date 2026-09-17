@@ -2,57 +2,63 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 interface VisitorBadgeProps {
-  /** Path to track (e.g. "/image-compressor" or full URL). If omitted, tracks global domain. */
+  /** Path to track (e.g. "/love-calculator" or full URL). If omitted or "global", tracks root domain. */
   path?: string;
-  /** Custom label (default: "VISITORS" or "PAGE VIEWS"). */
+  /** Optional label text or tooltip descriptor */
   label?: string;
-  /** Background hex color for the left label side (default: "#0f172a"). */
-  labelColor?: string;
-  /** Background hex color for the right count side (default: "#0284c7"). */
+  /** Background hex color for the count side (default: "#263759"). */
   countColor?: string;
+  /** Badge visual style (default: "flat"). */
+  style?: "flat" | "plastic";
   className?: string;
 }
 
 /**
- * VisitorBadge Component — displays a live visitor hit counter from visitorbadge.io.
- * Supports both global domain tracking and per-page unique URL tracking.
+ * VisitorBadge Component — displays a live visitor hit counter from visitorbadge.io using /api/combined.
+ * Links to https://visitorbadge.io/status?path=...
  */
 export function VisitorBadge({
   path,
-  label = "VISITORS",
-  labelColor = "#0f172a",
-  countColor = "#0284c7",
+  label = "Visitors",
+  countColor = "%23263759",
+  style = "flat",
   className,
 }: VisitorBadgeProps) {
-  // Normalize target URL for consistent tracking
-  let targetUrl = "https://sopkit.space";
+  // Normalize target URL with trailing slash
+  let targetUrl = "https://sopkit.space/";
   if (path && path !== "/" && path !== "global") {
-    const cleanPath = path.startsWith("/") ? path : `/${path}`;
-    targetUrl = `https://sopkit.space${cleanPath}`;
+    if (path.startsWith("http://") || path.startsWith("https://")) {
+      targetUrl = path.endsWith("/") ? path : `${path}/`;
+    } else {
+      const cleanPath = path.replace(/^\/+/, "").replace(/\/+$/, "");
+      targetUrl = `https://sopkit.space/${cleanPath}/`;
+    }
   }
 
   const encodedPath = encodeURIComponent(targetUrl);
-  const encodedLabel = encodeURIComponent(label);
-  const encodedLabelColor = encodeURIComponent(labelColor);
-  const encodedCountColor = encodeURIComponent(countColor);
+  // Ensure %23 is formatted properly if raw hex passed
+  const formattedCountColor = countColor.startsWith("#")
+    ? encodeURIComponent(countColor)
+    : countColor;
 
-  const badgeUrl = `https://api.visitorbadge.io/api/visitors?path=${encodedPath}&label=${encodedLabel}&labelColor=${encodedLabelColor}&countColor=${encodedCountColor}`;
+  const statusUrl = `https://visitorbadge.io/status?path=${encodedPath}`;
+  const badgeImageUrl = `https://api.visitorbadge.io/api/combined?path=${encodedPath}&countColor=${formattedCountColor}&style=${style}`;
 
   return (
     <a
-      href="https://visitorbadge.io"
+      href={statusUrl}
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "inline-flex items-center transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 rounded",
+        "inline-flex items-center transition-opacity hover:opacity-85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 rounded",
         className
       )}
-      title={`Live Visitor Count for ${targetUrl}`}
+      title={`Visitor Analytics for ${targetUrl}`}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={badgeUrl}
-        alt={`${label} Counter`}
+        src={badgeImageUrl}
+        alt="Visitors Counter"
         loading="lazy"
         decoding="async"
         className="h-5 w-auto rounded"

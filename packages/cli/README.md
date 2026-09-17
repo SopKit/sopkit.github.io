@@ -3,7 +3,7 @@
 > **SopKit CLI — Fast, privacy-first developer utilities in your terminal.**
 
 [![npm version](https://img.shields.io/npm/v/@sopkit/cli.svg?style=flat-square)](https://www.npmjs.com/package/@sopkit/cli)
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40sopkit%2Fcli&label=VISITORS&labelColor=%230f172a&countColor=%230284c7)](https://visitorbadge.io/status?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40sopkit%2Fcli)
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40sopkit%2Fcli"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40sopkit%2Fcli&countColor=%23263759&style=flat" /></a>
 [![license](https://img.shields.io/npm/l/@sopkit/cli.svg?style=flat-square)](https://github.com/SopKit/sopkit.github.io/blob/main/LICENSE)
 
 Zero-dependency, standalone command-line interface bundled with the complete SopKit utility engine. Works both as an **interactive keyboard-navigated dashboard** and as **direct scriptable one-liners** for shell pipes and CI.

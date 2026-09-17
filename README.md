@@ -11,7 +11,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![SEO Optimized](https://img.shields.io/badge/SEO-Optimized-2ea44f?style=for-the-badge)](https://sopkit.space)
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FSopKit%2Fsopkit.github.io&label=VISITORS&labelColor=%230f172a&countColor=%230284c7)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FSopKit%2Fsopkit.github.io)
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fsopkit.space%2F"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fsopkit.space%2F&countColor=%23263759&style=flat" /></a>
 
 **[sopkit.space](https://sopkit.space)** — A comprehensive free online toolkit designed for creators, developers, students, and professionals. Process images, edit PDFs, convert videos, analyze SEO, format code, generate passwords, and more — all directly in your browser with zero data uploads.
 

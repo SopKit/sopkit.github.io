@@ -1,6 +1,6 @@
 # SopKit Backend (Cloudflare Workers API)
 
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FSopKit%2Fsopkit.github.io%2Fsopkit-backend&label=VISITORS&labelColor=%230f172a&countColor=%230284c7)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FSopKit%2Fsopkit.github.io%2Fsopkit-backend)
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FSopKit%2Fsopkit.github.io%2Fsopkit-backend"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FSopKit%2Fsopkit.github.io%2Fsopkit-backend&countColor=%23263759&style=flat" /></a>
 
 ```txt
 npm install

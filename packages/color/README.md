@@ -2,7 +2,7 @@
 
 [![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.space/color-converter/)
 [![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.space/color-converter/)
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40sopkit%2Fcolor&label=VISITORS&labelColor=%230f172a&countColor=%230284c7)](https://visitorbadge.io/status?path=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40sopkit%2Fcolor)
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fsopkit.space%2Fcolor-converter%2F"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fsopkit.space%2Fcolor-converter%2F&countColor=%23263759&style=flat" /></a>
 
 Premium, lightweight colorspace conversion utility for HEX, RGB, and HSL. Part of the SopKit utility ecosystem.
 
