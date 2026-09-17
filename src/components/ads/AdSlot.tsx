@@ -101,7 +101,18 @@ export default function AdSlot({
     return () => clearTimeout(timer);
   }, [isVisible, slot]);
 
-  if (!slot || unfilled) return null;
+  if (!slot) return null;
+
+  if (unfilled) {
+    // Preserve layout containment to eliminate Cumulative Layout Shift (CLS) from sudden collapse
+    return (
+      <div
+        aria-hidden="true"
+        className="w-full pointer-events-none opacity-0 select-none"
+        style={{ height: `${reservedHeight}px`, containIntrinsicSize: `auto ${reservedHeight}px` }}
+      />
+    );
+  }
 
   return (
     <div

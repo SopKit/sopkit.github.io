@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { getMonetizationDecision } from "@/data/monetization";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { SHOW_SCRIPTLY_ADS, ADSENSE_SLOT_IDS } from "@/constants/config";
+import { SHOW_SCRIPTLY_ADS, ADSENSE_SLOT_IDS, isValidAdSenseSlotId } from "@/constants/config";
 import AdSlot from "./AdSlot";
 
 interface AdPlacementProps {
@@ -105,8 +105,10 @@ export default function AdPlacement({
 
   // Google AdSense Flow
   if (!SHOW_SCRIPTLY_ADS) {
+    if (process.env.NEXT_PUBLIC_ENABLE_ADS !== "true") return null;
+
     const slotId = ADSENSE_SLOT_IDS[placement];
-    if (!slotId) return null;
+    if (!slotId || !isValidAdSenseSlotId(slotId)) return null;
 
     let format: "auto" | "rectangle" | "horizontal" | "vertical" | "autorelaxed" = "auto";
     let layout: string | undefined = undefined;
