@@ -1,6 +1,6 @@
 # SopKit Performance CI Report
 
-**Generated**: 2026-09-17T17:30:56.440Z | **Environment**: local
+**Generated**: 2026-09-17T18:53:40.203Z | **Environment**: local
 
 | Route | Device | Perf Score | LCP (ms) | FCP (ms) | TBT (ms) | CLS | Total (KB) | DOM Nodes |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |

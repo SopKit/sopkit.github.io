@@ -90,10 +90,10 @@ export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 		return allTools
 			.filter(
 				(t) =>
-					t?.name?.toLowerCase().includes(q) ||
-					t?.description?.toLowerCase().includes(q) ||
-					t?.id?.toLowerCase().includes(q) ||
-					t?.category?.toLowerCase().includes(q)
+					(t?.name && t.name.toLowerCase().includes(q)) ||
+					(t?.description && t.description.toLowerCase().includes(q)) ||
+					(t?.id && t.id.toLowerCase().includes(q)) ||
+					(t?.category && t.category.toLowerCase().includes(q))
 			)
 			.slice(0, 6);
 	}, [query, allTools]);
@@ -277,7 +277,7 @@ export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 													</div>
 												</div>
 												<span className="text-[9px] font-bold uppercase tracking-wider text-muted-foreground bg-surface-muted px-2 py-0.5 rounded-full shrink-0 ml-2">
-													{tool.category.replace("-tools", "")}
+													{(tool.category || "").replace("-tools", "") || "utility"}
 												</span>
 											</div>
 										);

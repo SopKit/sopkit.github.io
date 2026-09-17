@@ -44,6 +44,7 @@ export default async function SearchPage() {
 		const category = cat as any;
 		const tools = (category.tools || []).map((tool: any) => ({
 			...tool,
+			category: category.slug || key,
 			categoryName: category.name,
 			categorySlug: category.slug,
 		}));

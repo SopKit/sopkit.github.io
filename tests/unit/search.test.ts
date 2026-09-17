@@ -19,4 +19,17 @@ describe("Search Engine", () => {
     expect(results.length).toBeGreaterThan(0);
     expect(results.some((r) => r.tool.name.toLowerCase().includes("compress"))).toBe(true);
   });
+
+  it("verifies all getSearchToolRecords have non-empty string categories", async () => {
+    const { getSearchToolRecords } = await import("../../src/lib/tools");
+    const records = getSearchToolRecords();
+    expect(records.length).toBeGreaterThan(500);
+    for (const record of records) {
+      expect(typeof record.category).toBe("string");
+      expect(record.category.length).toBeGreaterThan(0);
+      // Ensure .replace("-tools", "") never throws
+      expect(() => record.category.replace("-tools", "")).not.toThrow();
+    }
+  });
 });
+

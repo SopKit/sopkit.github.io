@@ -80,10 +80,10 @@ function SearchResults({ initialTools, initialCategories }: SearchContentProps) 
 		return initialTools
 			.filter(
 				(t) =>
-					t.name.toLowerCase().includes(q) ||
-					t.description.toLowerCase().includes(q) ||
-					t.category.toLowerCase().includes(q) ||
-					t.id.toLowerCase().includes(q)
+					(t.name && t.name.toLowerCase().includes(q)) ||
+					(t.description && t.description.toLowerCase().includes(q)) ||
+					(t.category && t.category.toLowerCase().includes(q)) ||
+					(t.id && t.id.toLowerCase().includes(q))
 			)
 			.slice(0, 8);
 	})();

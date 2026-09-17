@@ -83,21 +83,33 @@ function enrichTool(tool: Tool): Tool {
 }
 
 export function getAllTools(): Tool[] {
-	const rawTools = Object.values(categories).flatMap((cat) => cat?.tools || []);
+	const rawTools = Object.entries(categories).flatMap(([catKey, cat]) => {
+		const catSlug = cat?.slug || catKey;
+		const catName = cat?.name || catKey;
+		return (cat?.tools || []).map((t) => ({
+			...t,
+			category: t.category || catSlug,
+			categorySlug: t.categorySlug || catSlug,
+			categoryName: t.categoryName || catName,
+			categoryKey: t.categoryKey || catKey,
+		}));
+	});
 	return rawTools.map(enrichTool);
 }
 
 export function getSearchToolRecords(): SearchToolRecord[] {
-	const rawTools = Object.values(categories).flatMap((cat) => cat?.tools || []);
-	return rawTools.map((t) => ({
-		id: t.id,
-		name: t.name,
-		route: t.route,
-		category: t.category,
-		description: t.description,
-		popular: t.popular,
-		executionType: t.id === "ai-image-generator" ? "external" : "client",
-	}));
+	return Object.entries(categories).flatMap(([catKey, cat]) => {
+		const catSlug = cat?.slug || catKey;
+		return (cat?.tools || []).map((t) => ({
+			id: t.id,
+			name: t.name,
+			route: t.route,
+			category: t.category || catSlug,
+			description: t.description,
+			popular: t.popular,
+			executionType: t.id === "ai-image-generator" ? "external" : "client",
+		}));
+	});
 }
 
 export function getToolByRoute(route: string): Tool | undefined {

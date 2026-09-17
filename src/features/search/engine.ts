@@ -22,11 +22,11 @@ export function searchTools(query: string, limit: number = 20): SearchResult[] {
   const results: SearchResult[] = [];
 
   for (const tool of allTools) {
-    const nameLower = tool.name.toLowerCase();
-    const idLower = tool.id.toLowerCase();
-    const slugLower = tool.slug.toLowerCase();
-    const descLower = tool.description.toLowerCase();
-    const catLower = tool.category.toLowerCase();
+    const nameLower = (tool.name || "").toLowerCase();
+    const idLower = (tool.id || "").toLowerCase();
+    const slugLower = (tool.slug || "").toLowerCase();
+    const descLower = (tool.description || "").toLowerCase();
+    const catLower = (tool.category || "").toLowerCase();
 
     // 1. Exact name/id match
     if (nameLower === cleanQ || idLower === cleanQ || slugLower === cleanQ) {
