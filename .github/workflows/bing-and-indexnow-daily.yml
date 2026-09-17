@@ -1,0 +1,33 @@
+name: Daily Search Engine Indexing (IndexNow & Bing)
+
+on:
+  schedule:
+    # Runs daily at 03:00 UTC (08:30 AM IST)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  index-broadcast:
+    name: Submit URLs to IndexNow and Bing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun Runtime
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install Dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Broadcast URLs to IndexNow & Bing Search Console
+        run: node submit-urls.mjs
+        env:
+          SITE_URL: "https://sopkit.space"
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}

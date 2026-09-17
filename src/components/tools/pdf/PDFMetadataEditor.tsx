@@ -3,13 +3,10 @@
 import { useState, useCallback, useRef } from "react";
 import { 
     Upload, 
-    Info, 
     FileText,
     Loader2,
     ShieldCheck,
     Tags,
-    User,
-    BookOpen,
     Trash2,
     Save
 } from "lucide-react";
@@ -19,7 +16,6 @@ import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 
 interface PDFMetadata {
     title: string;

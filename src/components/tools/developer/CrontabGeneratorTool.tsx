@@ -8,13 +8,11 @@ import {
     Sparkles, 
     ShieldCheck, 
     Settings,
-    Grid,
     HelpCircle,
     Play
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";

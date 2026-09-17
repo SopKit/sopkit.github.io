@@ -1,4 +1,4 @@
-import { Check, Zap, Globe, Lock, HelpCircle, ArrowRight } from "lucide-react";
+import { Check, Zap, Globe, Lock, HelpCircle } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const ToolTrust = () => {

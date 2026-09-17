@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Search, Menu, X, ArrowUpRight } from "lucide-react";
+import { Search, Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { PillButton } from "@/components/ui/pill-button";
 import { Container } from "@/components/layout/Container";

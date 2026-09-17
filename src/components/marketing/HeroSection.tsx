@@ -3,11 +3,10 @@
 import * as React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Search, Sparkles, X, ArrowUpRight, CheckCircle2, ShieldCheck, Zap, Layers, FileText, Image as ImageIcon, Code2, Lock } from "lucide-react";
+import { Search, Sparkles, X, ArrowUpRight, Layers, FileText, Image as ImageIcon, Code2, Lock } from "lucide-react";
 import { PillButton } from "@/components/ui/pill-button";
 import { Container } from "@/components/layout/Container";
 import { type SearchToolRecord } from "@/lib/tools";
-import { STATIC_ROUTES } from "@/constants/routes";
 import { SITE_CONFIG } from "@/constants/config";
 import { trackSearch, trackToolAction } from "@/lib/analytics";
 

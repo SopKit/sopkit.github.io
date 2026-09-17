@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Copy, Check, Code2, ExternalLink, Sparkles, Terminal, Layers } from "lucide-react";
+import { Copy, Check, Code2, ExternalLink, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { SITE_CONFIG } from "@/constants/config";
 import { trackEmbedInteraction } from "@/lib/analytics";

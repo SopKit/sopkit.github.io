@@ -2,22 +2,18 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { 
-    Upload, 
     Download, 
     Code as CodeIcon,
-    Loader2,
     ShieldCheck,
     Check,
     Copy,
     Trash2,
     Settings,
-    Grid,
     Sparkles,
     AlertCircle
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";

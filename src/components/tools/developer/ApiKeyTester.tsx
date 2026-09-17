@@ -8,14 +8,11 @@ import {
     Loader2, 
     CheckCircle2, 
     Settings,
-    Grid,
     Globe,
     Terminal
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { toast } from "sonner";
+import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 

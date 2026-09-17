@@ -8,10 +8,8 @@ import {
     Check, 
     ExternalLink, 
     Code2, 
-    Layers, 
     Eye, 
-    Sliders,
-    Sparkles
+    Sliders
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";

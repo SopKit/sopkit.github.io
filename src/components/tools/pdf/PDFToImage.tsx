@@ -3,22 +3,18 @@
 import { useState, useCallback, useRef } from "react";
 import { 
     Upload, 
-    Download, 
-    FileText,
+    Download,
     Loader2,
     ShieldCheck,
     Image as ImageIcon,
     Settings,
-    Grid,
     CheckSquare,
     Square
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import { Progress } from "@/components/ui/progress";
-import { Label } from "@/components/ui/label";
 
 interface PageImage {
     pageNumber: number;

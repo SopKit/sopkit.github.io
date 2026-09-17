@@ -1,5 +1,5 @@
 import { getAllCategories, getAllTools, type Tool } from "@/lib/tools";
-import { TOOL_COUNT_STRING, LAST_UPDATED, SITE_URL } from "@/constants/config";
+import { LAST_UPDATED, SITE_URL } from "@/constants/config";
 
 const allCategories = getAllCategories();
 const allTools = getAllTools();

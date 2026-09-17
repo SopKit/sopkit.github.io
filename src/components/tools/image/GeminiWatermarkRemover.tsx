@@ -7,7 +7,6 @@ import {
 	RotateCcw,
 	Sparkles,
 	Trash2,
-	Upload,
 	Image as ImageIcon,
 	Crop,
 } from "lucide-react";

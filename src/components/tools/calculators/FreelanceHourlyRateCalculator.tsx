@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { DollarSign, ShieldCheck, Briefcase, Calendar, Percent, Sparkles, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ShieldCheck, Briefcase, Sparkles } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 

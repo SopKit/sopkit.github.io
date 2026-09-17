@@ -7,7 +7,6 @@ import {
     FileText,
     Loader2,
     ShieldCheck,
-    Plus,
     X,
     MoveUp,
     MoveDown,
@@ -15,10 +14,8 @@ import {
     Settings
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
-import { Label } from "@/components/ui/label";
 
 interface ImageFile {
     id: string;

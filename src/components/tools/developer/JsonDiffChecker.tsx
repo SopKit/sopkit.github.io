@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { GitCompare, Check, Copy, RefreshCw, ShieldCheck, AlertCircle, Sparkles } from "lucide-react";
+import { GitCompare, Check, RefreshCw, ShieldCheck, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";

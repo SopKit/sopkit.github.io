@@ -1,8 +1,6 @@
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Code, Globe, Lock, Zap, Users, ShieldAlert, CheckCircle } from "lucide-react";
-import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
 	title: "About SopKit — Privacy-First Free Online Tools Platform",

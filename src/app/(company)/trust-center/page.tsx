@@ -1,6 +1,6 @@
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { Card, CardContent } from "@/components/ui/card";
-import { ShieldCheck, Lock, Eye, CheckCircle2, Cpu, Globe } from "lucide-react";
+import { ShieldCheck, Lock, Eye, CheckCircle2, Cpu } from "lucide-react";
 
 export const metadata = {
 	title: "SopKit Trust & Safety Center - 100% Client-Side Local Utilities",

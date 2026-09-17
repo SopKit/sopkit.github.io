@@ -3,8 +3,7 @@
 import {
   Play, Trash2, Plus, ChevronUp, ChevronDown, Download, Upload,
   RotateCcw, ChevronRight, Copy, Check, Terminal, AlertCircle,
-  ShieldCheck, Clock, FileCode, SplitSquareHorizontal, Eye, EyeOff,
-  Code2, Share2, FileJson, Bookmark, Eraser, X,
+  ShieldCheck, Clock, FileCode, SplitSquareHorizontal, Eye, EyeOff, Share2, Bookmark, Eraser,
 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";

@@ -11,10 +11,9 @@ import {
     CheckCircle2
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
-import { Label } from "@/components/ui/label";
 
 export default function ImageMetadataRemoverTool() {
     const [file, setFile] = useState<File | null>(null);
