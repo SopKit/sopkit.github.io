@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import { getAllTools } from "@/lib/tools";
+import { getSearchToolRecords } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
 import { generateMetadata as baseGenerateMetadata } from "@/lib/seo";
 import StructuredData from "@/components/shared/StructuredData";
@@ -18,14 +18,14 @@ import { Container } from "@/components/layout/Container";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return baseGenerateMetadata({
-		title: `SopKit — ${SITE_CONFIG.toolCountString} Free Online Tools (100% Client-Side & Private)`,
-		description: `${SITE_CONFIG.toolCountString} free online tools for Image, PDF, Video, Audio, Developer utilities, and SEO that run 100% client-side in your browser. Private, fast, and secure — zero uploads, no tracking, no signup required.`,
+		title: `SopKit — ${SITE_CONFIG.toolCountString} Free Online Tools (Browser-Based & Private)`,
+		description: `${SITE_CONFIG.toolCountString} free online tools for Image, PDF, Video, Audio, Developer utilities, and SEO. Private, fast, and secure in-browser sandboxing — no mandatory signup.`,
 		path: "/",
 	});
 }
 
 export default async function LandingPage() {
-	const allTools = getAllTools();
+	const searchTools = getSearchToolRecords();
 
 	return (
 		<div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -33,7 +33,7 @@ export default async function LandingPage() {
 			<StructuredData isHome={true} />
 
 			{/* 1. Hero Section with Editorial Display & Fanned Interactive Cards */}
-			<HeroSection tools={allTools} />
+			<HeroSection tools={searchTools} />
 
 			{/* Ad Unit after Hero */}
 			<div className="py-4 max-w-4xl mx-auto w-full px-4">
@@ -44,7 +44,7 @@ export default async function LandingPage() {
 			<CategoryShowcase />
 
 			{/* 3. Live 600+ Tool Directory with Fast Search & Category Filter Tabs */}
-			<ToolDirectorySection tools={allTools} />
+			<ToolDirectorySection tools={searchTools} />
 
 			{/* 4. Trust & Architecture Pillars (100% Client-Side, No Signup, Fast) */}
 			<TrustSection />

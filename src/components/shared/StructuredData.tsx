@@ -93,20 +93,25 @@ export default function StructuredData({
 				: "Free online tool",
 		};
 
-		// Add AggregateRating if tool has reviews
+		// Add AggregateRating only if tool has genuine, validated reviews (never default missing to 5)
 		if (tool.reviews && tool.reviews.length > 0) {
-			const totalRating = tool.reviews.reduce((sum: number, r: any) => sum + (r.rating || 5), 0);
-			const avgRating = totalRating / tool.reviews.length;
-			toolStructuredData.aggregateRating = {
-				"@type": "AggregateRating",
-				ratingValue: avgRating.toFixed(1),
-				reviewCount: tool.reviews.length,
-				bestRating: "5",
-				worstRating: "1",
-			};
+			const validReviews = tool.reviews.filter(
+				(r: any) => typeof r?.rating === "number" && r.rating >= 1 && r.rating <= 5
+			);
+			if (validReviews.length > 0) {
+				const totalRating = validReviews.reduce((sum: number, r: any) => sum + r.rating, 0);
+				const avgRating = totalRating / validReviews.length;
+				toolStructuredData.aggregateRating = {
+					"@type": "AggregateRating",
+					ratingValue: avgRating.toFixed(1),
+					reviewCount: validReviews.length,
+					bestRating: "5",
+					worstRating: "1",
+				};
+			}
 		}
 
-		// Fallback to high-quality default FAQs if tool has no FAQs defined
+		// Fallback to capability-aware default FAQs if tool has no FAQs defined
 		const faqsToUse = tool.faqs && tool.faqs.length > 0
 			? tool.faqs
 			: [
@@ -116,7 +121,9 @@ export default function StructuredData({
 					},
 					{
 						question: `Does this ${tool.name} store or upload my files?`,
-						answer: `No. All operations and file processing for the ${tool.name} are completed locally inside your web browser using JavaScript or WebAssembly. Your files are never uploaded to our servers, ensuring total privacy and security.`
+						answer: tool.executionType === "external"
+							? `No files are stored on our servers. Processing requests for ${tool.name} are handled via transparent external APIs (${tool.providerName || "external provider"}). Only explicit generation prompts or inputs are submitted to produce your result.`
+							: `No. All operations and file processing for the ${tool.name} are completed locally inside your web browser using JavaScript or WebAssembly. Your files are never uploaded to our servers, ensuring total privacy and security.`
 					}
 			  ];
 
@@ -172,7 +179,7 @@ export default function StructuredData({
 							url: `${BASE_URL}/favicon.ico`,
 						},
 					},
-					datePublished: "2024-01-01T08:00:00+08:00",
+					...(tool.datePublished ? { datePublished: tool.datePublished } : {}),
 					dateModified: LAST_UPDATED,
 					mainEntityOfPage: {
 						"@type": "WebPage",
@@ -211,20 +218,20 @@ export default function StructuredData({
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(toolStructuredData),
+						__html: JSON.stringify(toolStructuredData).replace(/</g, "\\u003c"),
 					}}
 				/>
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(breadcrumbStructuredData),
+						__html: JSON.stringify(breadcrumbStructuredData).replace(/</g, "\\u003c"),
 					}}
 				/>
-				{faqData && (
+				{includeFAQ && faqData && (
 					<script
 						type="application/ld+json"
 						dangerouslySetInnerHTML={{
-							__html: JSON.stringify(faqData),
+							__html: JSON.stringify(faqData).replace(/</g, "\\u003c"),
 						}}
 					/>
 				)}
@@ -232,7 +239,7 @@ export default function StructuredData({
 					<script
 						type="application/ld+json"
 						dangerouslySetInnerHTML={{
-							__html: JSON.stringify(howToData),
+							__html: JSON.stringify(howToData).replace(/</g, "\\u003c"),
 						}}
 					/>
 				)}
@@ -240,41 +247,13 @@ export default function StructuredData({
 					<script
 						type="application/ld+json"
 						dangerouslySetInnerHTML={{
-							__html: JSON.stringify(articleData),
+							__html: JSON.stringify(articleData).replace(/</g, "\\u003c"),
 						}}
 					/>
 				)}
 			</>
 		);
 	}
-
-	const websiteStructuredData = {
-		"@context": "https://schema.org",
-		"@type": "WebSite",
-		name: "SopKit",
-		url: `${BASE_URL}/`,
-		description: `${TOOL_COUNT_STRING} free online tools for image, PDF, video, audio, SEO, and developer workflows. No signup, no uploads, 100% private.`,
-		potentialAction: {
-			"@type": "SearchAction",
-			target: {
-				"@type": "EntryPoint",
-				urlTemplate: `${BASE_URL}/search/?q={search_term_string}`,
-			},
-			"query-input": "required name=search_term_string",
-		},
-	};
-
-	const organizationStructuredData = {
-		"@context": "https://schema.org",
-		"@type": "Organization",
-		name: "SopKit",
-		url: `${BASE_URL}/`,
-		logo: `${BASE_URL}/favicon.ico`,
-		sameAs: [
-			"https://github.com/SopKit/sopkit.github.io",
-		],
-		description: `Privacy-first free online toolkit with ${TOOL_COUNT_STRING} browser-based tools.`,
-	};
 
 	if (isHome) {
 		const breadcrumbStructuredData = {
@@ -299,7 +278,7 @@ export default function StructuredData({
 					name: "Are the tools on SopKit really free?",
 					acceptedAnswer: {
 						"@type": "Answer",
-						text: "Yes. According to our Frictionless Access Framework, 100% of the tools on SopKit are free. We utilize a browser-first execution model that eliminates the need for expensive server-side compute, allowing us to provide professional-grade utilities at zero cost to the user.",
+						text: "Yes. All tools on SopKit are free to use. We prioritize a browser-first execution model that runs locally, providing fast utilities without subscription barriers.",
 					},
 				},
 				{
@@ -307,7 +286,7 @@ export default function StructuredData({
 					name: "Do I need to create an account to use the tools?",
 					acceptedAnswer: {
 						"@type": "Answer",
-						text: "No. Our 'No-Auth' engineering protocol ensures that users can deploy any utility instantly. Statistics show that removing mandatory registration reduces time-to-value by over 65%, making SopKit the most efficient toolkit for rapid digital engineering tasks.",
+						text: "No. You can use any utility instantly without mandatory account creation or registration steps.",
 					},
 				},
 				{
@@ -315,7 +294,7 @@ export default function StructuredData({
 					name: "Are my files safe when using SopKit?",
 					acceptedAnswer: {
 						"@type": "Answer",
-						text: "Security is verified through our Zero-Knowledge architecture. Over 90% of our core tools (including Image and PDF resizers) process data locally within your browser's V8 sandbox. This ensures that sensitive identity documents and private media never traverse our servers, providing 100% data residency.",
+						text: "Our core tools (including Image and PDF tools) process data locally within your browser sandbox. Your files and private media are not uploaded to our servers. Tools that require external APIs explicitly disclose their external processing before submission.",
 					},
 				},
 				{
@@ -323,37 +302,26 @@ export default function StructuredData({
 					name: "What types of tools are available on SopKit?",
 					acceptedAnswer: {
 						"@type": "Answer",
-						text: `SopKit delivers a unified ecosystem of ${TOOL_COUNT}+ professional utilities across ${CATEGORY_COUNT} technical domains, including WASM-powered image processing, secure PDF manipulation, enterprise-grade content extractors, and LLM-augmented developer tools.`,
+						text: `SopKit delivers utilities across ${CATEGORY_COUNT} categories, including browser-based image processing, PDF manipulation, developer utilities, format converters, and text helpers.`,
 					},
 				},
 			],
 		};
 
+		// Note: WebSite and Organization JSON-LD are already rendered globally in app/layout.tsx
 		return (
 			<>
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(websiteStructuredData),
-					}}
-				/>
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(organizationStructuredData),
-					}}
-				/>
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(breadcrumbStructuredData),
+						__html: JSON.stringify(breadcrumbStructuredData).replace(/</g, "\\u003c"),
 					}}
 				/>
 				{includeFAQ && (
 					<script
 						type="application/ld+json"
 						dangerouslySetInnerHTML={{
-							__html: JSON.stringify(faqStructuredData),
+							__html: JSON.stringify(faqStructuredData).replace(/</g, "\\u003c"),
 						}}
 					/>
 				)}
@@ -384,38 +352,17 @@ export default function StructuredData({
 			},
 		};
 
+		// WebSite is rendered globally in app/layout.tsx
 		return (
-			<>
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(websiteStructuredData),
-					}}
-				/>
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(toolsCollectionStructuredData),
-					}}
-				/>
-			</>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify(toolsCollectionStructuredData).replace(/</g, "\\u003c"),
+				}}
+			/>
 		);
 	}
 
-	return (
-		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(websiteStructuredData),
-				}}
-			/>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(organizationStructuredData),
-				}}
-			/>
-		</>
-	);
+	// Default fallback: WebSite and Organization are rendered in app/layout.tsx, avoid emitting duplicates
+	return null;
 }

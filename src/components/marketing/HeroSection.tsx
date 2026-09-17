@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import { Search, Sparkles, X, ArrowUpRight, CheckCircle2, ShieldCheck, Zap, Layers, FileText, Image as ImageIcon, Code2, Lock } from "lucide-react";
 import { PillButton } from "@/components/ui/pill-button";
 import { Container } from "@/components/layout/Container";
-import { type Tool, getAllTools, STATIC_ROUTES } from "@/lib/tools";
+import { type SearchToolRecord } from "@/lib/tools";
+import { STATIC_ROUTES } from "@/constants/routes";
 import { SITE_CONFIG } from "@/constants/config";
 import { trackSearch, trackToolAction } from "@/lib/analytics";
 
@@ -72,7 +73,7 @@ const POPULAR_QUICK_LINKS = [
 	{ name: "Word Counter", route: "/word-counter" },
 ];
 
-export function HeroSection({ tools }: { tools?: Tool[] }) {
+export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 	const [query, setQuery] = React.useState("");
 	const [showSuggestions, setShowSuggestions] = React.useState(false);
 	const [selectedIndex, setSelectedIndex] = React.useState(-1);
@@ -81,12 +82,7 @@ export function HeroSection({ tools }: { tools?: Tool[] }) {
 	const dropdownRef = React.useRef<HTMLDivElement>(null);
 
 	const allTools = React.useMemo(() => {
-		if (tools && tools.length > 0) return tools;
-		try {
-			return getAllTools();
-		} catch {
-			return [] as Tool[];
-		}
+		return tools || [];
 	}, [tools]);
 
 	const filteredTools = React.useMemo(() => {
@@ -197,6 +193,11 @@ export function HeroSection({ tools }: { tools?: Tool[] }) {
 								<input
 									ref={inputRef}
 									type="text"
+									role="combobox"
+									aria-autocomplete="list"
+									aria-expanded={showSuggestions && filteredTools.length > 0}
+									aria-controls="hero-search-listbox"
+									aria-activedescendant={selectedIndex >= 0 && selectedIndex < filteredTools.length ? `search-opt-${filteredTools[selectedIndex].id}` : undefined}
 									aria-label="Search all tools"
 									placeholder="Search by name, format, or task (e.g. PDF, WebP, JSON)..."
 									className="h-12 sm:h-13 pl-12 pr-28 bg-transparent border-none text-sm sm:text-base focus:outline-none placeholder:text-muted-foreground/50 w-full text-foreground font-medium"
@@ -236,12 +237,15 @@ export function HeroSection({ tools }: { tools?: Tool[] }) {
 							</div>
 
 							{/* Autocomplete Dropdown */}
-							{showSuggestions && (
+							{showSuggestions && filteredTools.length > 0 && (
 								<div
 									ref={dropdownRef}
+									role="listbox"
+									id="hero-search-listbox"
+									aria-label="Tool search results"
 									className="absolute left-0 right-0 top-full mt-2 bg-card border border-border shadow-2xl z-50 max-h-72 overflow-y-auto rounded-2xl p-1.5 text-left divide-y divide-border/20 backdrop-blur-2xl"
 								>
-									<div className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground/60 flex items-center justify-between">
+									<div className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground/60 flex items-center justify-between" aria-hidden="true">
 										<span>{query.trim() ? "Matching Utilities" : "Quick Suggestions"}</span>
 										<span className="text-[9px] font-normal lowercase">↑↓ to navigate</span>
 									</div>
@@ -250,6 +254,10 @@ export function HeroSection({ tools }: { tools?: Tool[] }) {
 										return (
 											<div
 												key={tool.id}
+												id={`search-opt-${tool.id}`}
+												role="option"
+												aria-selected={isSelected}
+												tabIndex={-1}
 												onMouseDown={(e) => e.preventDefault()}
 												onClick={() => {
 													setQuery(tool.name);

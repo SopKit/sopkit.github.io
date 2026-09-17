@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { LanguageSelector } from "@/components/shared/LanguageSelector";
-import { getRouteById, STATIC_ROUTES } from "@/lib/tools";
+import { STATIC_ROUTES } from "@/constants/routes";
 import { SITE_CONFIG } from "@/constants/config";
 
 export function Footer() {
@@ -31,11 +31,11 @@ export function Footer() {
 	];
 
 	const companyLinks = [
-		{ name: "About Us", href: getRouteById("about") || "/about" },
-		{ name: "Contact", href: getRouteById("contact") || "/contact" },
-		{ name: "Privacy Policy", href: getRouteById("privacy") || "/privacy" },
-		{ name: "Terms of Service", href: getRouteById("terms") || "/terms" },
-		{ name: "DMCA Notice", href: "/dmca" },
+		{ name: "About Us", href: STATIC_ROUTES.ABOUT },
+		{ name: "Contact", href: STATIC_ROUTES.CONTACT },
+		{ name: "Privacy Policy", href: STATIC_ROUTES.PRIVACY },
+		{ name: "Terms of Service", href: STATIC_ROUTES.TERMS },
+		{ name: "DMCA Notice", href: STATIC_ROUTES.DMCA },
 	];
 
 	return (
@@ -51,12 +51,12 @@ export function Footer() {
 							Sop<span className="italic font-normal">Kit</span>
 						</Link>
 						<p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
-							A curated collection of over {SITE_CONFIG.toolCountString} free, privacy-first utilities.
-							Every operation executes locally inside your browser sandbox — zero server uploads, zero tracking.
+							A curated collection of over {SITE_CONFIG.toolCountString} free web utilities.
+							Every tool clearly identifies where processing happens — prioritizing browser sandboxes and transparent execution.
 						</p>
 						<div className="pt-2 flex items-center gap-2 text-xs text-muted-foreground font-mono">
 							<span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />
-							<span>100% Client-Side Execution</span>
+							<span>Browser-First Sandboxed Processing</span>
 						</div>
 					</div>
 

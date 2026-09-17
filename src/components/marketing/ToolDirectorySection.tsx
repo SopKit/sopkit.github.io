@@ -5,11 +5,11 @@ import Link from "next/link";
 import { Search, ArrowUpRight } from "lucide-react";
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
-import { Tool } from "@/lib/tools";
+import { type SearchToolRecord } from "@/lib/tools";
 import { trackCategorySelect, trackToolAction, trackSearch } from "@/lib/analytics";
 
 interface ToolDirectorySectionProps {
-	tools: Tool[];
+	tools: SearchToolRecord[];
 }
 
 const CATEGORIES = [
@@ -78,6 +78,7 @@ export function ToolDirectorySection({ tools }: ToolDirectorySectionProps) {
 						<Search className="absolute left-4.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
 						<input
 							type="text"
+							aria-label="Filter tools by keyword"
 							value={searchQuery}
 							onChange={(e) => setSearchQuery(e.target.value)}
 							placeholder="Filter tools by keyword (e.g. compress, convert, merge, qr)..."
@@ -109,7 +110,9 @@ export function ToolDirectorySection({ tools }: ToolDirectorySectionProps) {
 
 				{/* Tools Count Metric */}
 				<div className="flex items-center justify-between text-xs text-muted-foreground font-mono mb-6 px-1">
-					<span>Showing {filteredTools.length} of {tools.length} utilities</span>
+					<span>
+						Showing {Math.min(48, filteredTools.length)} of {filteredTools.length} matching utilities ({tools.length} total)
+					</span>
 					{searchQuery && (
 						<button
 							type="button"

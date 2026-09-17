@@ -11,20 +11,7 @@ const faqsMap = toolFaqs as Record<string, { question: string; answer: string }[
 const howtosMap = toolHowtos as Record<string, any>;
 const extraslugsMap = toolExtraslugs as Record<string, string[]>;
 
-export const STATIC_ROUTES = {
-	HOME: "/",
-	SEARCH: "/search",
-	CONTACT: "/contact",
-	PRIVACY: "/privacy",
-	TERMS: "/terms",
-	ABOUT: "/about",
-	DMCA: "/dmca",
-	TOOLS: "/tools",
-	BLOG: "/blog",
-	TOOL_GUIDES: "/tool-guides",
-	NEW_TOOLS: "/new-tools",
-	PRO: "/pro",
-};
+export { STATIC_ROUTES } from "@/constants/routes";
 
 export const SUPPORTED_LANGUAGES = [
 	"en", "es", "fr", "de", "hi", "it", "pt", "ja", "zh", "ko", "ru", "tr", "vi", "id"
@@ -58,6 +45,7 @@ export interface Tool {
 	author?: any;
 	reviews?: any[];
 	article?: string;
+	datePublished?: string;
 }
 
 export interface SearchToolRecord {
