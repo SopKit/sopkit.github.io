@@ -16,6 +16,7 @@ import { PWARegistration } from "@/components/shared/PWARegistration";
 import { OfflineIndicator } from "@/components/shared/OfflineIndicator";
 import { GA4RouteTracker } from "@/components/shared/GA4RouteTracker";
 import { WebVitalsReporter } from "@/components/shared/WebVitalsReporter";
+import { GA_MEASUREMENT_ID } from "@/lib/analytics";
 
 import { ClientStackAuthProvider } from "@/components/shared/ClientStackAuthProvider";
 
@@ -285,7 +286,7 @@ export default function RootLayout({
 			/>
 
 				<Script
-					src="https://www.googletagmanager.com/gtag/js?id=G-HKX99R92SE"
+					src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
 					strategy="lazyOnload"
 				/>
 				<Script id="google-analytics" strategy="lazyOnload">
@@ -293,7 +294,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-HKX99R92SE');
+              gtag('config', '${GA_MEASUREMENT_ID}', { send_page_view: false });
             `}
 				</Script>
 				{process.env.NEXT_PUBLIC_ENABLE_ADS === "true" && (

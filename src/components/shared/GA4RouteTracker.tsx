@@ -3,22 +3,22 @@
 import { useEffect, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { trackPageView } from "@/lib/analytics";
+import { GA4AutoTracker } from "./GA4AutoTracker";
 
 export function GA4RouteTracker() {
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
-	const firstRender = useRef(true);
+	const lastTrackedUrl = useRef<string>("");
 
 	useEffect(() => {
-		if (firstRender.current) {
-			firstRender.current = false;
-			return;
-		}
-
 		const search = searchParams?.toString();
 		const fullUrl = search ? `${pathname}?${search}` : pathname;
-		trackPageView(fullUrl);
+
+		if (lastTrackedUrl.current !== fullUrl) {
+			lastTrackedUrl.current = fullUrl;
+			trackPageView(fullUrl);
+		}
 	}, [pathname, searchParams]);
 
-	return null;
+	return <GA4AutoTracker pathname={pathname} />;
 }
