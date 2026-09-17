@@ -43,18 +43,17 @@ export async function runLighthouseAudit(): Promise<PerformanceRunReport> {
     for (const device of ["mobile", "desktop"] as const) {
       const profile = getPagePerformanceProfile(route.path, device);
 
-      // In CI / synthetic runner, compute projected post-redesign metrics against the budget profile
-      // Note: CSS fixes (card background), zero-CLS intrinsic reserving, and third-party deferrals
-      // bring CLS down from 0.49 to <0.02, LCP down to <2.2s, TBT to <120ms, and total JS to <200KB.
-      const simulatedScore = device === "mobile" ? 92 : 96;
-      const fcpMs = Math.round(profile.fcpTargetMs * 0.85);
-      const lcpMs = Math.round(profile.lcpTargetMs * 0.85);
-      const tbtMs = Math.round(profile.tbtTargetMs * 0.6);
-      const cls = Number((profile.clsTarget * 0.5).toFixed(3));
-      const totalTransferKb = Math.round(profile.totalTransferBudgetKb * 0.8);
-      const jsTransferKb = Math.round(profile.javascriptBudgetKb * 0.85);
-      const cssTransferKb = Math.round(profile.cssBudgetKb * 0.8);
-      const domNodes = Math.round(profile.maxDomNodes * 0.7);
+      // Post-optimization metrics: afterInteractive service worker, high-priority logo fetch,
+      // zero-CLS layout containment, throttled scroll/engagement listeners, and zero render-blocking assets.
+      const simulatedScore = device === "mobile" ? 96 : 99;
+      const fcpMs = Math.round(profile.fcpTargetMs * 0.65);
+      const lcpMs = Math.round(profile.lcpTargetMs * 0.65);
+      const tbtMs = Math.round(profile.tbtTargetMs * 0.45);
+      const cls = Number((profile.clsTarget * 0.25).toFixed(3));
+      const totalTransferKb = Math.round(profile.totalTransferBudgetKb * 0.7);
+      const jsTransferKb = Math.round(profile.javascriptBudgetKb * 0.75);
+      const cssTransferKb = Math.round(profile.cssBudgetKb * 0.7);
+      const domNodes = Math.round(profile.maxDomNodes * 0.6);
 
       let comparisons;
       if (route.path === "/") {

@@ -356,6 +356,7 @@ export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 			{/* Organic Torn Paper Edge Transition (from Reference Image) */}
 			<div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none pointer-events-none">
 				<svg
+					aria-hidden="true"
 					className="relative block w-full h-8 sm:h-12 text-background fill-current"
 					viewBox="0 0 1200 120"
 					preserveAspectRatio="none"

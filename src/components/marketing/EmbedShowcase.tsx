@@ -112,9 +112,12 @@ export function EmbedShowcase() {
 								</div>
 
 								{/* Code Tab Switcher */}
-								<div className="flex items-center gap-1 bg-zinc-800/80 p-1 rounded-lg text-[11px]">
+								<div className="flex items-center gap-1 bg-zinc-800/80 p-1 rounded-lg text-[11px]" role="tablist">
 									<button
 										type="button"
+										role="tab"
+										aria-selected={activeTab === "html"}
+										aria-label="HTML embed code"
 										onClick={() => {
 											setActiveTab("html");
 											trackEmbedInteraction(selectedTool, "tab_switch", "html");
@@ -127,6 +130,9 @@ export function EmbedShowcase() {
 									</button>
 									<button
 										type="button"
+										role="tab"
+										aria-selected={activeTab === "react"}
+										aria-label="React embed code"
 										onClick={() => {
 											setActiveTab("react");
 											trackEmbedInteraction(selectedTool, "tab_switch", "react");
@@ -139,6 +145,9 @@ export function EmbedShowcase() {
 									</button>
 									<button
 										type="button"
+										role="tab"
+										aria-selected={activeTab === "url"}
+										aria-label="Direct URL embed code"
 										onClick={() => {
 											setActiveTab("url");
 											trackEmbedInteraction(selectedTool, "tab_switch", "url");

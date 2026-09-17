@@ -65,6 +65,7 @@ export function Header() {
 							alt="SopKit Logo"
 							width={32}
 							height={32}
+							fetchPriority="high"
 							className="w-8 h-8 rounded-lg object-contain transition-transform duration-200 group-hover:scale-105"
 						/>
 						<span className="font-serif text-2xl font-bold tracking-tight group-hover:opacity-90 transition-opacity">

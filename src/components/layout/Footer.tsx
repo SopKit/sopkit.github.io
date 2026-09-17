@@ -53,6 +53,8 @@ export function Footer() {
 								alt="SopKit Logo"
 								width={28}
 								height={28}
+								loading="lazy"
+								decoding="async"
 								className="w-7 h-7 rounded-md object-contain"
 							/>
 							<span>Sop<span className="italic font-normal">Kit</span></span>

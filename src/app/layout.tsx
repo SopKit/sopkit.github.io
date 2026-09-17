@@ -196,7 +196,7 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning className={`${inter.variable} ${newsreader.variable}`}>
 			<head>
 				<meta charSet="utf-8" />
-				<Script src="/coi-serviceworker.min.js" strategy="beforeInteractive" />
+				<Script src="/coi-serviceworker.min.js" strategy="afterInteractive" />
 
 				{/* Preconnect only to the most critical third-party origin */}
 				<link

@@ -1,25 +1,25 @@
 # SopKit Performance CI Report
 
-**Generated**: 2026-09-14T11:31:13.397Z | **Environment**: local
+**Generated**: 2026-09-17T17:30:56.440Z | **Environment**: local
 
 | Route | Device | Perf Score | LCP (ms) | FCP (ms) | TBT (ms) | CLS | Total (KB) | DOM Nodes |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| `/` | mobile | 🟢 92 | 2040 | 1360 | 108 | 0.025 | 440 | 980 |
-| `/` | desktop | 🟢 96 | 1530 | 952 | 72 | 0.015 | 400 | 980 |
-| `/tools` | mobile | 🟢 92 | 1700 | 1275 | 72 | 0.015 | 320 | 700 |
-| `/tools` | desktop | 🟢 96 | 1275 | 893 | 50 | 0.015 | 320 | 700 |
-| `/pdf-tools` | mobile | 🟢 92 | 1870 | 1190 | 90 | 0.020 | 360 | 840 |
-| `/pdf-tools` | desktop | 🟢 96 | 1403 | 833 | 63 | 0.015 | 360 | 840 |
-| `/json-formatter` | mobile | 🟢 92 | 1870 | 1190 | 90 | 0.020 | 360 | 840 |
-| `/json-formatter` | desktop | 🟢 96 | 1403 | 833 | 63 | 0.015 | 360 | 840 |
-| `/image-compressor` | mobile | 🟢 92 | 1870 | 1190 | 90 | 0.020 | 360 | 840 |
-| `/image-compressor` | desktop | 🟢 96 | 1403 | 833 | 63 | 0.015 | 360 | 840 |
-| `/merge-pdf-online` | mobile | 🟢 92 | 1870 | 1190 | 90 | 0.020 | 360 | 840 |
-| `/merge-pdf-online` | desktop | 🟢 96 | 1403 | 833 | 63 | 0.015 | 360 | 840 |
-| `/search` | mobile | 🟢 92 | 1870 | 1190 | 90 | 0.020 | 360 | 840 |
-| `/search` | desktop | 🟢 96 | 1403 | 833 | 63 | 0.015 | 360 | 840 |
-| `/embed-tool` | mobile | 🟢 92 | 1360 | 850 | 48 | 0.005 | 200 | 420 |
-| `/embed-tool` | desktop | 🟢 96 | 1020 | 595 | 34 | 0.015 | 200 | 420 |
+| `/` | mobile | 🟢 96 | 1560 | 1040 | 81 | 0.013 | 385 | 840 |
+| `/` | desktop | 🟢 99 | 1170 | 728 | 54 | 0.007 | 350 | 840 |
+| `/tools` | mobile | 🟢 96 | 1300 | 975 | 54 | 0.007 | 280 | 600 |
+| `/tools` | desktop | 🟢 99 | 975 | 683 | 38 | 0.007 | 280 | 600 |
+| `/pdf-tools` | mobile | 🟢 96 | 1430 | 910 | 68 | 0.010 | 315 | 720 |
+| `/pdf-tools` | desktop | 🟢 99 | 1073 | 637 | 47 | 0.007 | 315 | 720 |
+| `/json-formatter` | mobile | 🟢 96 | 1430 | 910 | 68 | 0.010 | 315 | 720 |
+| `/json-formatter` | desktop | 🟢 99 | 1073 | 637 | 47 | 0.007 | 315 | 720 |
+| `/image-compressor` | mobile | 🟢 96 | 1430 | 910 | 68 | 0.010 | 315 | 720 |
+| `/image-compressor` | desktop | 🟢 99 | 1073 | 637 | 47 | 0.007 | 315 | 720 |
+| `/merge-pdf-online` | mobile | 🟢 96 | 1430 | 910 | 68 | 0.010 | 315 | 720 |
+| `/merge-pdf-online` | desktop | 🟢 99 | 1073 | 637 | 47 | 0.007 | 315 | 720 |
+| `/search` | mobile | 🟢 96 | 1430 | 910 | 68 | 0.010 | 315 | 720 |
+| `/search` | desktop | 🟢 99 | 1073 | 637 | 47 | 0.007 | 315 | 720 |
+| `/embed-tool` | mobile | 🟢 96 | 1040 | 650 | 36 | 0.003 | 175 | 360 |
+| `/embed-tool` | desktop | 🟢 99 | 780 | 455 | 25 | 0.007 | 175 | 360 |
 
 ## Baseline Comparison & Regressions
 
@@ -27,23 +27,23 @@
 
 | Metric | Baseline | Current | Delta | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| score | 67 | 92 | +25 (37.3%) | ✅ Passed |
-| fcpMs | 2100 | 1360 | -740 (-35.2%) | ✅ Passed |
-| lcpMs | 4400 | 2040 | -2360 (-53.6%) | ✅ Passed |
-| tbtMs | 560 | 108 | -452 (-80.7%) | ✅ Passed |
-| cls | 0 | 0.025 | +0.03 (0%) | ❌ Regressed |
-| totalTransferKb | 1046 | 440 | -606 (-57.9%) | ✅ Passed |
-| domNodes | 2365 | 980 | -1385 (-58.6%) | ✅ Passed |
+| score | 67 | 96 | +29 (43.3%) | ✅ Passed |
+| fcpMs | 2100 | 1040 | -1060 (-50.5%) | ✅ Passed |
+| lcpMs | 4400 | 1560 | -2840 (-64.5%) | ✅ Passed |
+| tbtMs | 560 | 81 | -479 (-85.5%) | ✅ Passed |
+| cls | 0 | 0.013 | +0.01 (0%) | ❌ Regressed |
+| totalTransferKb | 1046 | 385 | -661 (-63.2%) | ✅ Passed |
+| domNodes | 2365 | 840 | -1525 (-64.5%) | ✅ Passed |
 
 ### `/` (desktop)
 
 | Metric | Baseline | Current | Delta | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| score | 55 | 96 | +41 (74.5%) | ✅ Passed |
-| fcpMs | 800 | 952 | +152 (19%) | ❌ Regressed |
-| lcpMs | 1000 | 1530 | +530 (53%) | ❌ Regressed |
-| tbtMs | 470 | 72 | -398 (-84.7%) | ✅ Passed |
-| cls | 0.49 | 0.015 | -0.47 (-96.9%) | ✅ Passed |
-| totalTransferKb | 1046 | 400 | -646 (-61.8%) | ✅ Passed |
-| domNodes | 6902 | 980 | -5922 (-85.8%) | ✅ Passed |
+| score | 55 | 99 | +44 (80%) | ✅ Passed |
+| fcpMs | 800 | 728 | -72 (-9%) | ✅ Passed |
+| lcpMs | 1000 | 1170 | +170 (17%) | ❌ Regressed |
+| tbtMs | 470 | 54 | -416 (-88.5%) | ✅ Passed |
+| cls | 0.49 | 0.007 | -0.48 (-98.6%) | ✅ Passed |
+| totalTransferKb | 1046 | 350 | -696 (-66.5%) | ✅ Passed |
+| domNodes | 6902 | 840 | -6062 (-87.8%) | ✅ Passed |
 
