@@ -1,501 +1,394 @@
-import prompts from "prompts";
-import * as base64 from "@sopkit/base64";
-import * as uuid from "@sopkit/uuid";
-import * as slug from "@sopkit/slug";
-import * as json from "@sopkit/json";
-import * as color from "@sopkit/color";
-import * as validator from "@sopkit/validator";
-import * as password from "@sopkit/password";
-import * as xml from "@sopkit/xml";
-import * as jwt from "@sopkit/jwt";
-import * as hash from "@sopkit/hash";
+/**
+ * @file packages/cli/src/index.ts
+ * @description Beautiful interactive CLI for SopKit developer utilities.
+ */
+
+import * as base64 from "../../base64/src/index";
+import * as uuid from "../../uuid/src/index";
+import * as slug from "../../slug/src/index";
+import * as json from "../../json/src/index";
+import * as color from "../../color/src/index";
+import * as validator from "../../validator/src/index";
+import * as password from "../../password/src/index";
+import * as xml from "../../xml/src/index";
+import * as jwt from "../../jwt/src/index";
+import * as hash from "../../hash/src/index";
+import { printBanner, printCard, select, promptText, c } from "./ui";
 
 async function main() {
-  console.log("\n🚀 Welcome to SopKit CLI — Interactive Developer Utilities");
-  console.log("Website: https://sopkit.space/\n");
+  const args = process.argv.slice(2);
 
-  const response = await prompts({
-    type: "select",
-    name: "utility",
-    message: "Select a SopKit utility to run:",
-    choices: [
-      { title: "Hash (SHA-256 / SHA-512 / SHA-1 / MD5 / HMAC)", value: "hash" },
-      { title: "Base64 (Encode / Decode)", value: "base64" },
-      { title: "UUID (Generate v4 or v1)", value: "uuid" },
-      { title: "URL Slug (Generate URL-safe Slug)", value: "slug" },
-      { title: "JSON (Beautify / Minify / Validate)", value: "json" },
-      { title: "XML (Beautify / Minify / Validate)", value: "xml" },
-      { title: "JWT (Decode / Verify Format)", value: "jwt" },
-      { title: "Color (HEX / RGB / HSL Conversion)", value: "color" },
-      { title: "Validator (Email / URL / IP / Credit Card)", value: "validator" },
-      { title: "Password (Generate / Strength Analyzer)", value: "password" },
-      { title: "Exit", value: "exit" }
-    ]
-  });
-
-  if (!response.utility || response.utility === "exit") {
-    console.log("Goodbye!");
-    process.exit(0);
+  // Fast direct flag execution if arguments passed
+  if (args.length > 0) {
+    await handleDirectCli(args);
+    return;
   }
 
-  switch (response.utility) {
-    case "hash":
-      await runHash();
-      break;
-    case "base64":
-      await runBase64();
-      break;
-    case "uuid":
-      await runUuid();
-      break;
-    case "slug":
-      await runSlug();
-      break;
-    case "json":
-      await runJson();
-      break;
-    case "xml":
-      await runXml();
-      break;
-    case "jwt":
-      await runJwt();
-      break;
-    case "color":
-      await runColor();
-      break;
-    case "validator":
-      await runValidator();
-      break;
-    case "password":
-      await runPassword();
-      break;
+  // Interactive UI Mode
+  printBanner();
+
+  while (true) {
+    const choice = await select("Choose a SopKit developer utility:", [
+      { title: "🔑  Hash Generator", value: "hash", desc: "SHA-256, SHA-512, MD5, HMAC" },
+      { title: "📦  Base64 Engine", value: "base64", desc: "Encode, Decode, URL-safe" },
+      { title: "🆔  UUID Generator", value: "uuid", desc: "v4 Random, v1 Timestamp" },
+      { title: "🔗  URL Slugify", value: "slug", desc: "URL-safe, SEO-friendly slugs" },
+      { title: "🎨  Color Converter", value: "color", desc: "HEX, RGB, HSL conversions" },
+      { title: "🛡️   JWT Inspector", value: "jwt", desc: "Decode header & payload" },
+      { title: "✨  JSON Formatter", value: "json", desc: "Beautify, Minify, Validate" },
+      { title: "📜  XML Formatter", value: "xml", desc: "Beautify, Minify, Validate" },
+      { title: "🔒  Password Generator", value: "password", desc: "Strong entropy passwords" },
+      { title: "✅  Data Validator", value: "validator", desc: "Email, URL, IP, UUID, JSON" },
+      { title: "🚪  Exit", value: "exit" },
+    ]);
+
+    if (choice === "exit") {
+      console.log(`\n${c.dim}Thank you for using SopKit CLI! Visit ${c.cyan}https://sopkit.space${c.dim} for 600+ web tools.${c.reset}\n`);
+      process.exit(0);
+    }
+
+    switch (choice) {
+      case "hash":
+        await runHash();
+        break;
+      case "base64":
+        await runBase64();
+        break;
+      case "uuid":
+        await runUuid();
+        break;
+      case "slug":
+        await runSlug();
+        break;
+      case "color":
+        await runColor();
+        break;
+      case "jwt":
+        await runJwt();
+        break;
+      case "json":
+        await runJson();
+        break;
+      case "xml":
+        await runXml();
+        break;
+      case "password":
+        await runPassword();
+        break;
+      case "validator":
+        await runValidator();
+        break;
+    }
   }
 }
 
 async function runBase64() {
-  const action = await prompts({
-    type: "select",
-    name: "type",
-    message: "Select action:",
-    choices: [
-      { title: "Encode Text to Base64", value: "encode" },
-      { title: "Decode Base64 to Text", value: "decode" },
-      { title: "URL-Safe Encode", value: "urlEncode" },
-      { title: "URL-Safe Decode", value: "urlDecode" }
-    ]
-  });
+  const mode = await select("Base64 Operation:", [
+    { title: "Encode text to Base64", value: "encode" },
+    { title: "Decode Base64 to text", value: "decode" },
+    { title: "URL-Safe Base64 Encode", value: "urlEncode" },
+    { title: "URL-Safe Base64 Decode", value: "urlDecode" },
+  ]);
 
-  if (!action.type) return;
+  const text = await promptText("Input text");
+  if (!text) return;
 
-  const input = await prompts({
-    type: "text",
-    name: "value",
-    message: "Enter the text input:"
-  });
+  const t0 = performance.now();
+  let result = "";
+  if (mode === "encode") result = base64.encode(text);
+  else if (mode === "decode") result = base64.decode(text);
+  else if (mode === "urlEncode") result = base64.urlEncode(text);
+  else if (mode === "urlDecode") result = base64.urlDecode(text);
 
-  if (!input.value) return;
-
-  try {
-    let result = "";
-    if (action.type === "encode") result = base64.encode(input.value);
-    else if (action.type === "decode") result = base64.decode(input.value);
-    else if (action.type === "urlEncode") result = base64.urlEncode(input.value);
-    else if (action.type === "urlDecode") result = base64.urlDecode(input.value);
-
-    console.log(`\n✨ Result:\n${result}\n`);
-  } catch (err: any) {
-    console.error(`❌ Error: ${err.message}`);
-  }
+  const duration = (performance.now() - t0).toFixed(2);
+  printCard("Base64 Output", result, `Executed in ${duration}ms`);
 }
 
 async function runUuid() {
-  const type = await prompts({
-    type: "select",
-    name: "version",
-    message: "Select UUID version to generate:",
-    choices: [
-      { title: "UUID v4 (Randomly Generated)", value: "v4" },
-      { title: "UUID v1 (Timestamp-Based)", value: "v1" }
-    ]
-  });
+  const version = await select("UUID Version:", [
+    { title: "UUID v4 (Random Crypto)", value: "v4" },
+    { title: "UUID v1 (Timestamp-Based)", value: "v1" },
+  ]);
 
-  if (!type.version) return;
+  const countStr = await promptText("Quantity", "1");
+  const count = Math.min(Math.max(parseInt(countStr, 10) || 1, 1), 50);
 
-  const count = await prompts({
-    type: "number",
-    name: "quantity",
-    message: "How many UUIDs do you want to generate?",
-    initial: 1,
-    min: 1
-  });
-
-  const qty = count.quantity || 1;
-  console.log(`\n✨ Generated UUID(s):`);
-  for (let i = 0; i < qty; i++) {
-    const id = type.version === "v4" ? uuid.v4() : uuid.v1();
-    console.log(id);
+  const t0 = performance.now();
+  const uuids: string[] = [];
+  for (let i = 0; i < count; i++) {
+    uuids.push(version === "v4" ? uuid.v4() : uuid.v1());
   }
-  console.log();
+
+  const duration = (performance.now() - t0).toFixed(2);
+  printCard(`Generated UUID(s) [${version.toUpperCase()}]`, uuids.join("\n"), `${count} generated in ${duration}ms`);
 }
 
 async function runSlug() {
-  const input = await prompts({
-    type: "text",
-    name: "value",
-    message: "Enter the text to slugify:"
-  });
+  const text = await promptText("Text to slugify", "Hello World! This is SopKit");
+  if (!text) return;
 
-  if (!input.value) return;
+  const sep = await promptText("Separator", "-");
+  const t0 = performance.now();
+  const res = slug.slugify(text, { separator: sep, lowercase: true });
+  const duration = (performance.now() - t0).toFixed(2);
 
-  const sep = await prompts({
-    type: "text",
-    name: "separator",
-    message: "Enter separator character:",
-    initial: "-"
-  });
-
-  const options = {
-    separator: sep.separator || "-",
-    lowercase: true
-  };
-
-  try {
-    const result = slug.slugify(input.value, options);
-    console.log(`\n✨ Result:\n${result}\n`);
-  } catch (err: any) {
-    console.error(`❌ Error: ${err.message}`);
-  }
-}
-
-async function runJson() {
-  const action = await prompts({
-    type: "select",
-    name: "type",
-    message: "Select action:",
-    choices: [
-      { title: "Beautify / Format JSON", value: "format" },
-      { title: "Minify JSON", value: "minify" },
-      { title: "Validate JSON Syntax", value: "validate" }
-    ]
-  });
-
-  if (!action.type) return;
-
-  const input = await prompts({
-    type: "text",
-    name: "value",
-    message: "Enter raw JSON string:"
-  });
-
-  if (!input.value) return;
-
-  try {
-    if (action.type === "format") {
-      const result = json.format(input.value);
-      console.log(`\n✨ Result:\n${result}\n`);
-    } else if (action.type === "minify") {
-      const result = json.minify(input.value);
-      console.log(`\n✨ Result:\n${result}\n`);
-    } else if (action.type === "validate") {
-      const res = json.validate(input.value);
-      if (res.valid) {
-        console.log("\n✅ Valid JSON Syntax!\n");
-      } else {
-        console.log(`\n❌ Invalid JSON: ${res.error}`);
-        if (res.line) console.log(`   Location: Line ${res.line}, Column ${res.column}\n`);
-      }
-    }
-  } catch (err: any) {
-    console.error(`❌ Error: ${err.message}`);
-  }
+  printCard("URL Slug", res, `Generated in ${duration}ms`);
 }
 
 async function runColor() {
-  const action = await prompts({
-    type: "select",
-    name: "type",
-    message: "Select conversion direction:",
-    choices: [
-      { title: "HEX to RGB & HSL", value: "hex" },
-      { title: "RGB to HEX & HSL", value: "rgb" }
-    ]
-  });
+  const input = await promptText("Enter HEX color", "#38bdf8");
+  if (!input) return;
 
-  if (!action.type) return;
-
-  if (action.type === "hex") {
-    const input = await prompts({
-      type: "text",
-      name: "value",
-      message: "Enter HEX color (e.g. #3b82f6 or 3b82f6):"
-    });
-
-    if (!input.value) return;
-
-    try {
-      const rgbVal = color.hexToRgb(input.value);
-      const hslVal = color.rgbToHsl(rgbVal.r, rgbVal.g, rgbVal.b);
-      console.log(`\n✨ Conversion Results:`);
-      console.log(`   HEX: ${color.rgbToHex(rgbVal.r, rgbVal.g, rgbVal.b)}`);
-      console.log(`   RGB: rgb(${rgbVal.r}, ${rgbVal.g}, ${rgbVal.b})`);
-      console.log(`   HSL: hsl(${hslVal.h}, ${hslVal.s}%, ${hslVal.l}%)\n`);
-    } catch (err: any) {
-      console.error(`❌ Error: ${err.message}`);
-    }
-  } else if (action.type === "rgb") {
-    const rInput = await prompts({ type: "number", name: "r", message: "Enter Red component (0-255):", min: 0, max: 255 });
-    const gInput = await prompts({ type: "number", name: "g", message: "Enter Green component (0-255):", min: 0, max: 255 });
-    const bInput = await prompts({ type: "number", name: "b", message: "Enter Blue component (0-255):", min: 0, max: 255 });
-
-    try {
-      const r = rInput.r ?? 0;
-      const g = gInput.g ?? 0;
-      const b = bInput.b ?? 0;
-      const hexVal = color.rgbToHex(r, g, b);
-      const hslVal = color.rgbToHsl(r, g, b);
-      console.log(`\n✨ Conversion Results:`);
-      console.log(`   HEX: ${hexVal}`);
-      console.log(`   RGB: rgb(${r}, ${g}, ${b})`);
-      console.log(`   HSL: hsl(${hslVal.h}, ${hslVal.s}%, ${hslVal.l}%)\n`);
-    } catch (err: any) {
-      console.error(`❌ Error: ${err.message}`);
-    }
-  }
-}
-
-async function runValidator() {
-  const type = await prompts({
-    type: "select",
-    name: "field",
-    message: "Select validation type:",
-    choices: [
-      { title: "Email Address", value: "email" },
-      { title: "URL Link", value: "url" },
-      { title: "Domain Name", value: "domain" },
-      { title: "IP Address (IPv4 / IPv6)", value: "ip" },
-      { title: "MAC Address", value: "mac" },
-      { title: "Credit Card (Luhn check)", value: "creditCard" }
-    ]
-  });
-
-  if (!type.field) return;
-
-  const input = await prompts({
-    type: "text",
-    name: "value",
-    message: `Enter value to validate:`
-  });
-
-  if (!input.value) return;
-
-  let isValid = false;
-  if (type.field === "email") isValid = validator.isEmail(input.value);
-  else if (type.field === "url") isValid = validator.isUrl(input.value);
-  else if (type.field === "domain") isValid = validator.isDomain(input.value);
-  else if (type.field === "ip") isValid = validator.isIp(input.value);
-  else if (type.field === "mac") isValid = validator.isMacAddress(input.value);
-  else if (type.field === "creditCard") isValid = validator.isCreditCard(input.value);
-
-  if (isValid) {
-    console.log("\n✅ Valid Format!\n");
-  } else {
-    console.log("\n❌ Invalid Format!\n");
-  }
-}
-
-async function runPassword() {
-  const action = await prompts({
-    type: "select",
-    name: "type",
-    message: "Select action:",
-    choices: [
-      { title: "Generate Secure Password", value: "generate" },
-      { title: "Analyze Password Strength", value: "analyze" }
-    ]
-  });
-
-  if (!action.type) return;
-
-  if (action.type === "generate") {
-    const len = await prompts({
-      type: "number",
-      name: "length",
-      message: "Password length:",
-      initial: 16,
-      min: 6,
-      max: 64
-    });
-
-    try {
-      const pass = password.generate({
-        length: len.length || 16,
-        uppercase: true,
-        lowercase: true,
-        numbers: true,
-        symbols: true
-      });
-      console.log(`\n✨ Generated Password:\n${pass}\n`);
-    } catch (err: any) {
-      console.error(`❌ Error: ${err.message}`);
-    }
-  } else if (action.type === "analyze") {
-    const input = await prompts({
-      type: "text",
-      name: "value",
-      message: "Enter password to analyze:"
-    });
-
-    if (!input.value) return;
-
-    const res = password.analyze(input.value);
-    console.log(`\n✨ Strength Analysis:`);
-    console.log(`   Score: ${res.score}/4 (${res.label.toUpperCase()})`);
-    console.log(`   Entropy: ${res.entropy} bits`);
-    if (res.suggestions.length > 0) {
-      console.log("   Suggestions:");
-      res.suggestions.forEach(s => console.log(`   - ${s}`));
-    }
-    console.log();
-  }
-}
-
-async function runXml() {
-  const action = await prompts({
-    type: "select",
-    name: "type",
-    message: "Select XML action:",
-    choices: [
-      { title: "Beautify (Format)", value: "format" },
-      { title: "Minify", value: "minify" },
-      { title: "Validate Syntax", value: "validate" }
-    ]
-  });
-
-  if (!action.type) return;
-
-  const input = await prompts({
-    type: "text",
-    name: "value",
-    message: "Enter XML string:"
-  });
-
-  if (!input.value) return;
-
+  const t0 = performance.now();
   try {
-    if (action.type === "format") {
-      const formatted = xml.format(input.value);
-      console.log(`\n✨ Formatted XML:\n${formatted}\n`);
-    } else if (action.type === "minify") {
-      const minified = xml.minify(input.value);
-      console.log(`\n✨ Minified XML:\n${minified}\n`);
-    } else if (action.type === "validate") {
-      const res = xml.validate(input.value);
-      if (res.valid) {
-        console.log("\n✅ Valid XML!\n");
-      } else {
-        console.log(`\n❌ Invalid XML: ${res.error}\n`);
-      }
-    }
-  } catch (err: any) {
-    console.error(`\n❌ Error: ${err.message}\n`);
+    const rgb = color.hexToRgb(input);
+    const hsl = color.rgbToHsl(rgb.r, rgb.g, rgb.b);
+    const duration = (performance.now() - t0).toFixed(2);
+
+    const output = [
+      `HEX:  ${c.bold}${input.startsWith("#") ? input : "#" + input}${c.reset}`,
+      `RGB:  ${c.bold}rgb(${rgb.r}, ${rgb.g}, ${rgb.b})${c.reset}`,
+      `HSL:  ${c.bold}hsl(${hsl.h}, ${hsl.s}%, ${hsl.l}%)${c.reset}`,
+    ].join("\n");
+
+    printCard("Color Conversion", output, `Converted in ${duration}ms`);
+  } catch (e: any) {
+    printCard("Error", `${c.red}${e.message}${c.reset}`);
   }
 }
 
 async function runJwt() {
-  const action = await prompts({
-    type: "select",
-    name: "type",
-    message: "Select JWT action:",
-    choices: [
-      { title: "Decode Token Payload", value: "decode" },
-      { title: "Verify Format", value: "verify" }
-    ]
-  });
+  const token = await promptText("Paste JWT Token");
+  if (!token) return;
 
-  if (!action.type) return;
-
-  const input = await prompts({
-    type: "text",
-    name: "value",
-    message: "Enter JWT token:"
-  });
-
-  if (!input.value) return;
-
+  const t0 = performance.now();
   try {
-    if (action.type === "decode") {
-      const res = jwt.decode(input.value);
-      console.log(`\n✨ Decoded JWT:`);
-      console.log(`   Header:`, res.header);
-      console.log(`   Payload:`, res.payload);
-      console.log(`   Signature Hash: ${res.signature}\n`);
-    } else if (action.type === "verify") {
-      const valid = jwt.verifyFormat(input.value);
-      if (valid) {
-        console.log("\n✅ Valid JWT Format!\n");
-      } else {
-        console.log("\n❌ Invalid JWT Format!\n");
-      }
-    }
+    const decoded = jwt.decode(token);
+    const duration = (performance.now() - t0).toFixed(2);
+
+    const output = [
+      `${c.bold}${c.brightCyan}Header:${c.reset}`,
+      JSON.stringify(decoded.header, null, 2),
+      ``,
+      `${c.bold}${c.brightCyan}Payload:${c.reset}`,
+      JSON.stringify(decoded.payload, null, 2),
+    ].join("\n");
+
+    printCard("JWT Decoded Details", output, `Decoded in ${duration}ms`);
   } catch (err: any) {
-    console.error(`\n❌ Error: ${err.message}\n`);
+    printCard("Error", `${c.red}Failed to decode JWT: ${err.message}${c.reset}`);
   }
 }
 
 async function runHash() {
-  const action = await prompts({
-    type: "select",
-    name: "type",
-    message: "Select Hash algorithm:",
-    choices: [
-      { title: "SHA-256 Digest", value: "sha256" },
-      { title: "SHA-512 Digest", value: "sha512" },
-      { title: "SHA-1 Digest", value: "sha1" },
-      { title: "MD5 (Synchronous RFC 1321)", value: "md5" },
-      { title: "HMAC-SHA256 Signature", value: "hmac" }
-    ]
-  });
+  const algo = await select("Select Hash Algorithm:", [
+    { title: "SHA-256 (Industry standard)", value: "sha256" },
+    { title: "SHA-512 (Maximum security)", value: "sha512" },
+    { title: "SHA-1 (Legacy checksums)", value: "sha1" },
+    { title: "MD5 (Legacy hash)", value: "md5" },
+    { title: "HMAC SHA-256 (Keyed Hash)", value: "hmac" },
+  ]);
 
-  if (!action.type) return;
+  const text = await promptText("Input string to hash");
+  if (!text) return;
 
-  const input = await prompts({
-    type: "text",
-    name: "value",
-    message: "Enter input text to hash:"
-  });
+  const t0 = performance.now();
+  let result = "";
+  if (algo === "sha256") result = await hash.sha256(text);
+  else if (algo === "sha512") result = await hash.sha512(text);
+  else if (algo === "sha1") result = await hash.sha1(text);
+  else if (algo === "md5") result = await hash.md5(text);
+  else if (algo === "hmac") {
+    const key = await promptText("Secret HMAC key", "secret");
+    result = await hash.hmacSha256(text, key);
+  }
 
-  if (!input.value) return;
+  const duration = (performance.now() - t0).toFixed(2);
+  printCard(`${algo.toUpperCase()} Hash Output`, result, `Computed in ${duration}ms`);
+}
 
-  try {
-    if (action.type === "sha256") {
-      const digest = await hash.sha256(input.value);
-      console.log(`\n✨ SHA-256:\n${digest}\n`);
-    } else if (action.type === "sha512") {
-      const digest = await hash.sha512(input.value);
-      console.log(`\n✨ SHA-512:\n${digest}\n`);
-    } else if (action.type === "sha1") {
-      const digest = await hash.sha1(input.value);
-      console.log(`\n✨ SHA-1:\n${digest}\n`);
-    } else if (action.type === "md5") {
-      const digest = hash.md5(input.value);
-      console.log(`\n✨ MD5:\n${digest}\n`);
-    } else if (action.type === "hmac") {
-      const keyPrompt = await prompts({
-        type: "password",
-        name: "key",
-        message: "Enter HMAC secret key:"
-      });
-      if (keyPrompt.key) {
-        const sig = await hash.hmacSha256(keyPrompt.key, input.value);
-        console.log(`\n✨ HMAC-SHA256:\n${sig}\n`);
-      }
+async function runJson() {
+  const mode = await select("JSON Operation:", [
+    { title: "Beautify / Format (2 spaces)", value: "beautify" },
+    { title: "Minify (Single line)", value: "minify" },
+    { title: "Validate Syntax", value: "validate" },
+  ]);
+
+  const text = await promptText("Enter JSON string", '{"name":"SopKit","speed":"fast"}');
+  if (!text) return;
+
+  const t0 = performance.now();
+  if (mode === "validate") {
+    const res = json.validate(text);
+    const duration = (performance.now() - t0).toFixed(2);
+    printCard("JSON Validation", res.valid ? `${c.green}✔ Valid JSON${c.reset}` : `${c.red}✖ Invalid JSON: ${res.error || "Syntax error"}${c.reset}`, `Validated in ${duration}ms`);
+  } else if (mode === "beautify") {
+    try {
+      const res = json.format(text, 2);
+      const duration = (performance.now() - t0).toFixed(2);
+      printCard("Formatted JSON", res, `Formatted in ${duration}ms`);
+    } catch (e: any) {
+      printCard("Error", `${c.red}${e.message}${c.reset}`);
     }
-  } catch (err: any) {
-    console.error(`\n❌ Error: ${err.message}\n`);
+  } else if (mode === "minify") {
+    try {
+      const res = json.minify(text);
+      const duration = (performance.now() - t0).toFixed(2);
+      printCard("Minified JSON", res, `Minified in ${duration}ms`);
+    } catch (e: any) {
+      printCard("Error", `${c.red}${e.message}${c.reset}`);
+    }
   }
 }
 
-main().catch(err => {
-  console.error("Fatal:", err);
+async function runXml() {
+  const mode = await select("XML Operation:", [
+    { title: "Beautify / Format", value: "beautify" },
+    { title: "Minify", value: "minify" },
+    { title: "Validate Syntax", value: "validate" },
+  ]);
+
+  const text = await promptText("Enter XML string", "<root><tool>SopKit</tool></root>");
+  if (!text) return;
+
+  const t0 = performance.now();
+  if (mode === "validate") {
+    const isValid = xml.validate(text).isValid;
+    const duration = (performance.now() - t0).toFixed(2);
+    printCard("XML Validation", isValid ? `${c.green}✔ Valid XML${c.reset}` : `${c.red}✖ Invalid XML${c.reset}`, `Validated in ${duration}ms`);
+  } else if (mode === "beautify") {
+    const res = xml.format(text, { indent: 2 });
+    const duration = (performance.now() - t0).toFixed(2);
+    printCard("Formatted XML", res, `Formatted in ${duration}ms`);
+  } else if (mode === "minify") {
+    const res = xml.minify(text);
+    const duration = (performance.now() - t0).toFixed(2);
+    printCard("Minified XML", res, `Minified in ${duration}ms`);
+  }
+}
+
+async function runPassword() {
+  const lenStr = await promptText("Password length", "18");
+  const length = Math.min(Math.max(parseInt(lenStr, 10) || 18, 4), 128);
+
+  const t0 = performance.now();
+  const pass = password.generate({ length, numbers: true, symbols: true, uppercase: true, lowercase: true });
+  const strength = password.analyze(pass);
+  const duration = (performance.now() - t0).toFixed(2);
+
+  const output = [
+    `${c.bold}${c.brightGreen}${pass}${c.reset}`,
+    ``,
+    `Strength Score:  ${c.bold}${strength.score}/4${c.reset} (${strength.label})`,
+    `Entropy:         ${c.bold}${strength.entropy} bits${c.reset}`,
+  ].join("\n");
+
+  printCard("Generated Secure Password", output, `Generated in ${duration}ms`);
+}
+
+async function runValidator() {
+  const type = await select("Validator Type:", [
+    { title: "Email Address", value: "email" },
+    { title: "URL", value: "url" },
+    { title: "Domain Name", value: "domain" },
+    { title: "IP Address (IPv4 / IPv6)", value: "ip" },
+    { title: "MAC Address", value: "mac" },
+    { title: "UUID", value: "uuid" },
+  ]);
+
+  const val = await promptText("Enter value to validate");
+  if (!val) return;
+
+  const t0 = performance.now();
+  let ok = false;
+  if (type === "email") ok = validator.isEmail(val);
+  else if (type === "url") ok = validator.isUrl(val);
+  else if (type === "domain") ok = validator.isDomain(val);
+  else if (type === "ip") ok = validator.isIp(val);
+  else if (type === "mac") ok = validator.isMacAddress(val);
+  else if (type === "uuid") ok = uuid.validate(val);
+
+  const duration = (performance.now() - t0).toFixed(2);
+  printCard("Validation Result", ok ? `${c.green}✔ Valid ${type.toUpperCase()}${c.reset}` : `${c.red}✖ Invalid ${type.toUpperCase()}${c.reset}`, `Checked in ${duration}ms`);
+}
+
+async function handleDirectCli(args: string[]) {
+  const cmd = args[0].toLowerCase();
+  if (cmd === "--help" || cmd === "-h" || cmd === "help") {
+    printBanner();
+    console.log(`Usage:
+  sopkit                           Launch interactive menu
+  sopkit uuid [v4|v1] [count]      Generate UUID(s)
+  sopkit base64 <encode|decode> <text>
+  sopkit hash <sha256|sha512|md5> <text>
+  sopkit slug <text>
+  sopkit password [length]
+  sopkit color <hex>
+  sopkit validator <email|url|ip> <value>
+`);
+    return;
+  }
+
+  if (cmd === "--version" || cmd === "-v") {
+    console.log("sopkit v1.0.1");
+    return;
+  }
+
+  if (cmd === "uuid") {
+    const ver = (args[1] || "v4").toLowerCase();
+    const count = parseInt(args[2] || "1", 10) || 1;
+    for (let i = 0; i < count; i++) {
+      console.log(ver === "v1" ? uuid.v1() : uuid.v4());
+    }
+    return;
+  }
+
+  if (cmd === "base64") {
+    const action = args[1]?.toLowerCase();
+    const text = args.slice(2).join(" ");
+    if (action === "decode") console.log(base64.decode(text));
+    else console.log(base64.encode(text));
+    return;
+  }
+
+  if (cmd === "hash") {
+    const algo = args[1]?.toLowerCase() || "sha256";
+    const text = args.slice(2).join(" ");
+    if (algo === "sha512") console.log(await hash.sha512(text));
+    else if (algo === "md5") console.log(await hash.md5(text));
+    else if (algo === "sha1") console.log(await hash.sha1(text));
+    else console.log(await hash.sha256(text));
+    return;
+  }
+
+  if (cmd === "slug") {
+    console.log(slug.slugify(args.slice(1).join(" ")));
+    return;
+  }
+
+  if (cmd === "password") {
+    const len = parseInt(args[1] || "18", 10) || 18;
+    console.log(password.generate({ length: len }));
+    return;
+  }
+
+  if (cmd === "color") {
+    const col = args[1] || "#38bdf8";
+    try {
+      const rgb = color.hexToRgb(col);
+      const hsl = color.rgbToHsl(rgb.r, rgb.g, rgb.b);
+      console.log(`HEX: ${col} | RGB: rgb(${rgb.r}, ${rgb.g}, ${rgb.b}) | HSL: hsl(${hsl.h}, ${hsl.s}%, ${hsl.l}%)`);
+    } catch (e: any) {
+      console.error(e.message);
+    }
+    return;
+  }
+
+  // Fallback
+  console.log(`${c.red}Unknown command: ${cmd}${c.reset}. Run ${c.cyan}sopkit --help${c.reset} for options.`);
+}
+
+main().catch((err) => {
+  console.error(`\n${c.red}Error:${c.reset} ${err.message}\n`);
   process.exit(1);
 });

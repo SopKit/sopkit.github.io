@@ -1,6 +1,6 @@
 {
   "name": "@sopkit/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interactive command-line interface for the SopKit utility ecosystem.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -9,7 +9,7 @@
     "sopkit": "./dist/index.cjs"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --clean"
+    "build": "tsup --config tsup.config.ts"
   },
   "exports": {
     ".": {
@@ -17,18 +17,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "dependencies": {
-    "@sopkit/base64": "file:../base64",
-    "@sopkit/color": "file:../color",
-    "@sopkit/json": "file:../json",
-    "@sopkit/slug": "file:../slug",
-    "@sopkit/uuid": "file:../uuid",
-    "@sopkit/validator": "file:../validator",
-    "@sopkit/password": "file:../password",
-    "@sopkit/xml": "file:../xml",
-    "@sopkit/jwt": "file:../jwt",
-    "@sopkit/hash": "file:../hash",
-    "prompts": "^2.4.2"
+  "dependencies": {},
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.0.0"
   },
   "keywords": [
     "sopkit",
@@ -38,12 +30,12 @@
     "uuid",
     "slug",
     "json",
-    "color"
+    "color",
+    "jwt",
+    "hash",
+    "password"
   ],
   "author": "SopKit",
   "license": "MIT",
-  "homepage": "https://sopkit.space/",
-  "devDependencies": {
-    "@types/prompts": "^2.4.9"
-  }
+  "homepage": "https://sopkit.space/"
 }
