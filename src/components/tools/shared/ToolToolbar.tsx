@@ -122,21 +122,21 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 	};
 
 	return (
-		<div className="inline-flex items-center flex-wrap justify-center gap-1.5 p-1.5 rounded-full bg-secondary/80 dark:bg-muted/40 border border-border/60 backdrop-blur-md shadow-xs select-none">
+		<div className="flex items-center flex-wrap justify-center sm:justify-end gap-1 select-none text-xs text-muted-foreground">
 			<Button
 				variant="ghost"
 				size="sm"
 				onClick={handleShare}
-				className="h-7 text-xs px-3 gap-1.5 rounded-full hover:bg-background/80 hover:text-foreground transition-all"
+				className="h-7 text-xs px-2.5 gap-1.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
 			>
 				{shareCopied ? (
 					<>
 						<Check className="h-3.5 w-3.5 text-emerald-500" />
-						<span className="font-semibold text-emerald-600 dark:text-emerald-400">Copied Link</span>
+						<span className="font-medium text-emerald-600 dark:text-emerald-400">Copied</span>
 					</>
 				) : (
 					<>
-						<Share2 className="h-3.5 w-3.5 text-muted-foreground" />
+						<Share2 className="h-3.5 w-3.5" />
 						<span>Share</span>
 					</>
 				)}
@@ -146,17 +146,17 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 				variant="ghost"
 				size="sm"
 				onClick={handleCopyState}
-				className="h-7 text-xs px-3 gap-1.5 rounded-full hover:bg-background/80 hover:text-foreground transition-all"
+				className="h-7 text-xs px-2.5 gap-1.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
 			>
 				{stateCopied ? (
 					<>
 						<Check className="h-3.5 w-3.5 text-emerald-500" />
-						<span className="font-semibold text-emerald-600 dark:text-emerald-400">Inputs Copied</span>
+						<span className="font-medium text-emerald-600 dark:text-emerald-400">Copied Link</span>
 					</>
 				) : (
 					<>
-						<LinkIcon className="h-3.5 w-3.5 text-muted-foreground" />
-						<span>Copy with Inputs</span>
+						<LinkIcon className="h-3.5 w-3.5" />
+						<span>Copy Link</span>
 					</>
 				)}
 			</Button>
@@ -165,9 +165,9 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 				variant="ghost"
 				size="sm"
 				onClick={handleScrollToEmbed}
-				className="h-7 text-xs px-3 gap-1.5 rounded-full hover:bg-background/80 hover:text-foreground transition-all"
+				className="h-7 text-xs px-2.5 gap-1.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
 			>
-				<Code className="h-3.5 w-3.5 text-muted-foreground" />
+				<Code className="h-3.5 w-3.5" />
 				<span>Embed</span>
 			</Button>
 
@@ -175,9 +175,9 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 				variant="ghost"
 				size="sm"
 				onClick={handleBookmark}
-				className="h-7 text-xs px-3 gap-1.5 rounded-full hover:bg-background/80 hover:text-foreground transition-all"
+				className="h-7 text-xs px-2.5 gap-1.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
 			>
-				<Bookmark className="h-3.5 w-3.5 text-muted-foreground" />
+				<Bookmark className="h-3.5 w-3.5" />
 				<span>Bookmark</span>
 			</Button>
 
@@ -186,10 +186,10 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 					variant="ghost"
 					size="sm"
 					onClick={handleInstallApp}
-					className="h-7 text-xs px-3 gap-1.5 rounded-full bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 font-semibold transition-all"
+					className="h-7 text-xs px-2.5 gap-1.5 rounded-lg text-primary font-medium hover:bg-primary/10 transition-colors"
 				>
 					<Download className="h-3.5 w-3.5" />
-					<span>Install App</span>
+					<span>Install</span>
 				</Button>
 			)}
 		</div>

@@ -4,69 +4,61 @@ import { RelatedTools } from "@/components/seo/SocialEngagement";
 import SeoOpportunityContent from "@/components/seo/SeoOpportunityContent";
 import StructuredData from "@/components/shared/StructuredData";
 import DownloadDisclaimer from "@/components/shared/DownloadDisclaimer";
-import {
-	ToolFAQ,
-	ToolFeatures,
-	ToolSteps,
-	ToolTrust,
-} from "./ToolSharedComponents";
+import { ToolFAQ, ToolFeatures, ToolSteps } from "./ToolSharedComponents";
 import { getRelatedTools, type Tool } from "@/lib/tools";
 import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
-import { Github, ExternalLink } from "lucide-react";
+import { Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { SITE_CONFIG } from "@/constants/config";
 import AdPlacement from "@/components/ads/AdPlacement";
 import { getSeoOpportunityByRoute } from "@/data/seo-opportunities";
-
-import { EmbedWidgetGiver } from "./EmbedWidgetGiver";
 import { ToolToolbar } from "./ToolToolbar";
+import { EmbedWidgetGiver } from "./EmbedWidgetGiver";
+import {
+	resolveToolArchetype,
+	getArchetypeWorkspaceClass,
+	resolveDataProcessing,
+	type ToolArchetype,
+} from "@/features/tools/archetypes";
 
-function ToolArticle({ content }: { content?: string }) {
+function ToolArticle({ content, title }: { content?: string; title?: string }) {
 	if (!content) return null;
 
-	// Simple markdown-like parser for the templates
 	const lines = content.replace(/\\n/g, "\n").trim().split("\n");
 	return (
-		<section className="scroll-mt-24 prose prose-invert max-w-none">
-			<div className="space-y-8">
+		<section className="scroll-mt-16 space-y-4 pt-6 border-t border-border/60" aria-label="About this tool">
+			<div className="flex flex-col gap-1">
+				<h2 className="text-lg sm:text-xl font-bold tracking-tight text-foreground">
+					About {title || "this Utility"}
+				</h2>
+				<p className="text-xs sm:text-sm text-muted-foreground">
+					Direct explanation of technical functionality, format support, and workflows.
+				</p>
+			</div>
+			<div className="space-y-4 text-xs sm:text-sm text-muted-foreground leading-relaxed">
 				{lines.map((line, i) => {
-					if (line.startsWith("## ")) {
-						return (
-							<h2
-								key={i}
-								className="text-3xl md:text-5xl font-extrabold tracking-tight mt-16 mb-8 text-foreground"
-							>
-								{line.replace("## ", "")}
-							</h2>
-						);
-					}
-					if (line.startsWith("### ")) {
+					if (line.startsWith("## ") || line.startsWith("### ")) {
+						const headingText = line.replace(/^#{2,3}\s+/, "");
 						return (
 							<h3
 								key={i}
-								className="text-2xl md:text-3xl font-bold tracking-tight mt-12 mb-6 text-foreground/90"
+								className="text-sm sm:text-base font-semibold text-foreground tracking-tight pt-2"
 							>
-								{line.replace("### ", "")}
+								{headingText}
 							</h3>
 						);
 					}
 					if (line.startsWith("- ")) {
 						return (
-							<li
-								key={i}
-								className="text-lg text-muted-foreground ml-6 list-disc"
-							>
-								{line.replace("- ", "")}
+							<li key={i} className="ml-5 list-disc text-muted-foreground">
+								{line.replace(/^- \s*/, "")}
 							</li>
 						);
 					}
-					if (line.trim() === "") return <div key={i} className="h-4" />;
+					if (line.trim() === "") return null;
 					return (
-						<p
-							key={i}
-							className="text-xl text-muted-foreground leading-relaxed whitespace-pre-line"
-						>
+						<p key={i} className="whitespace-pre-line">
 							{line}
 						</p>
 					);
@@ -81,6 +73,7 @@ export interface ToolLayoutProps {
 	children: React.ReactNode;
 	breadcrumbs?: Breadcrumb[];
 	relatedTools?: Tool[];
+	archetype?: ToolArchetype;
 	showHireMe?: boolean;
 }
 
@@ -93,66 +86,21 @@ const ROUTE_H1_OVERRIDES: Record<string, string> = {
 	"/calculator-tools": "Free Online Calculators — Math, Finance, Academic & Business",
 };
 
-function generateToolH1(toolName: string, category: string): string {
-	const name = toolName.replace(/\s+(online|free)$/i, "");
-	let action = "Optimize & Process";
-	let subject = "Files";
-	
-	if (category === "image" || name.toLowerCase().includes("image") || name.toLowerCase().includes("photo") || name.toLowerCase().includes("picture")) {
-		action = name.toLowerCase().includes("compress") ? "Reduce File Size" :
-		         name.toLowerCase().includes("resize") ? "Resize & Crop" : "Convert & Edit";
-		subject = "Images";
-	} else if (name.toLowerCase().includes("qr")) {
-		action = "Create & Customize";
-		subject = "QR Codes";
-	} else if (name.toLowerCase().includes("logo")) {
-		action = "Design & Create";
-		subject = "Logos";
-	} else if (name.toLowerCase().includes("markdown")) {
-		action = "Convert & Export";
-		subject = "Markdown";
-	} else if (name.toLowerCase().includes("bio data") || name.toLowerCase().includes("biodata") || name.toLowerCase().includes("bio-data")) {
-		action = "Create & Download";
-		subject = "Documents";
-	} else if (category === "pdf" || name.toLowerCase().includes("pdf")) {
-		action = name.toLowerCase().includes("compress") ? "Reduce File Size" : "Merge, Split & Edit";
-		subject = "PDF Documents";
-	} else if (category === "video" || name.toLowerCase().includes("video")) {
-		action = "Convert & Edit";
-		subject = "Video Files";
-	} else if (category === "audio" || name.toLowerCase().includes("audio") || name.toLowerCase().includes("mp3")) {
-		action = "Process & Convert";
-		subject = "Audio Files";
-	} else if (category === "calculators" || name.toLowerCase().includes("calculator") || name.toLowerCase().includes("interest") || name.toLowerCase().includes("loan")) {
-		action = "Calculate Formula";
-		subject = "Instantly";
-	} else if (category === "developer" || name.toLowerCase().includes("json") || name.toLowerCase().includes("base64") || name.toLowerCase().includes("code")) {
-		action = "Format, Encode & Debug";
-		subject = "Code";
-	} else if (category === "text" || name.toLowerCase().includes("text") || name.toLowerCase().includes("word") || name.toLowerCase().includes("character")) {
-		action = "Format, Count & Analyze";
-		subject = "Text";
-	}
-	
-	return `Free ${name} Online — ${action} ${subject}`;
-}
-
 export default function ToolLayout({
 	tool,
 	children,
 	breadcrumbs,
 	relatedTools = [],
+	archetype: explicitArchetype,
 	showHireMe = false,
 }: ToolLayoutProps) {
 	const opportunity = getSeoOpportunityByRoute(tool.route);
 	const routeKey = tool.route.endsWith("/") ? tool.route.slice(0, -1) : tool.route;
 
-	// Build enriched tool data from manual SEO content (the single source of truth)
 	const enrichedTool: Tool = { ...tool };
 	const manualContent = MANUAL_TOOL_CONTENT[tool.id];
 
 	if (manualContent) {
-		// Manual content always takes precedence — no generic template fallback
 		enrichedTool.article = manualContent.whatItIs;
 		enrichedTool.features = manualContent.features;
 		enrichedTool.howTo = manualContent.howToUse;
@@ -162,7 +110,7 @@ export default function ToolLayout({
 		enrichedTool.description = manualContent.seoDescription || enrichedTool.description;
 	}
 
-	// H1 overrides for category hub pages
+	// Semantic H1 resolution
 	if (ROUTE_H1_OVERRIDES[routeKey]) {
 		enrichedTool.name = ROUTE_H1_OVERRIDES[routeKey];
 	} else if (opportunity) {
@@ -176,44 +124,32 @@ export default function ToolLayout({
 				text,
 			})),
 		};
-	} else if (tool.category !== "company" && tool.category !== "content" && !tool.route.endsWith("-tools") && tool.route !== "/generators" && tool.route !== "/calculators") {
-		enrichedTool.name = generateToolH1(tool.name, tool.category);
 	}
 
-	// Do not inject generic brand-wide articles or FAQ sections here.
-	// Keep `enrichedTool.article`, `enrichedTool.features`, `enrichedTool.howTo`,
-	// and `enrichedTool.faqs` strictly from per-tool/manual content or explicit
-	// page overrides so pages render only personalized texts.
-
-	// Company pages (privacy, terms, about) don't need tool-specific sections
 	const isCompanyPage = tool.category === "company";
+	const isHubPage = isCompanyPage || tool.category === "content" || tool.route.endsWith("-tools") || tool.route === "/calculators";
 
-	// Ensure at least 10 related tools (skip for company pages)
+	// Filter contextual related tools: 4 to 6 items maximum
 	const finalRelatedTools = isCompanyPage
 		? []
-		: relatedTools.length < 10
-			? getRelatedTools(tool, 15) // Get more than 10 to be safe
-			: relatedTools;
+		: relatedTools.length > 0
+			? relatedTools.slice(0, 6)
+			: getRelatedTools(tool, 6);
 
 	const finalDescription = String(enrichedTool.description || "").replace(/\\n/g, "\n").trim();
 
-	// Keep only the personalized intro text for the tool article.
-	// Remove generic template sections that start with headings like "## Why...".
-	if (enrichedTool.article) {
-		// Split at the first top-level markdown heading (## ) and keep the lead content only
-		enrichedTool.article = String(enrichedTool.article).split(/\n##\s+/)[0].trim();
-	}
-
-	// Hub or directory pages (like /pdf-tools, /image-tools) contain their own directory layout
-	const isHubPage = isCompanyPage || tool.category === "content" || tool.route.endsWith("-tools") || tool.route === "/calculators";
+	// Archetype and responsive width resolution
+	const resolvedArchetype = explicitArchetype || resolveToolArchetype(enrichedTool);
+	const workspaceClass = getArchetypeWorkspaceClass(resolvedArchetype);
+	const dataProcessing = resolveDataProcessing(enrichedTool);
 
 	return (
-		<div className="min-h-screen bg-background text-foreground selection:bg-blue-500/30 relative overflow-hidden">
-			{/* Top Blue Ambient Radial Blur */}
-			<div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-blue-500/10 dark:bg-blue-500/15 blur-[120px] pointer-events-none -z-10 rounded-full" />
+		<div className="min-h-screen bg-background text-foreground relative">
 			<StructuredData tool={enrichedTool} />
-			<div className="container mx-auto px-4 pt-4">
-				<Suspense fallback={<div className="h-6 w-64 bg-muted/20 animate-pulse rounded" />}>
+
+			{/* Top Breadcrumb Navigation */}
+			<div className="container mx-auto px-4 pt-3 pb-1">
+				<Suspense fallback={<div className="h-5 w-48 bg-muted/20 animate-pulse rounded" />}>
 					<BreadcrumbsEnhanced
 						customBreadcrumbs={breadcrumbs}
 						suppressSchema={true}
@@ -221,172 +157,119 @@ export default function ToolLayout({
 				</Suspense>
 			</div>
 
-			<main className="container mx-auto px-4 py-4 md:py-6 max-w-6xl space-y-8">
-				<section className="text-center space-y-3 max-w-4xl mx-auto animate-in pt-1">
-					<h1 className="font-sans text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight bg-gradient-to-b from-foreground via-foreground to-foreground/80 bg-clip-text text-transparent">
-						{enrichedTool.name}
-					</h1>
-					<p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl mx-auto font-normal">
+			<main className="container mx-auto px-4 pb-16 space-y-6">
+				{/* Concise, Task-First Tool Header */}
+				<header className="max-w-4xl mx-auto space-y-2.5 pt-1 text-center sm:text-left">
+					<div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
+						<h1 className="font-sans text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-foreground">
+							{enrichedTool.name}
+						</h1>
+					</div>
+
+					<p className="text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-2xl">
 						{finalDescription}
 					</p>
-					{!isCompanyPage && enrichedTool.category !== "downloaders" && (
-						<div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-xs font-semibold backdrop-blur-sm mx-auto shadow-xs">
-							<span className="relative flex h-2 w-2">
-								<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-								<span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-							</span>
-							<span>100% Client-Side Sandbox &bull; Local Browser Execution</span>
+
+					{/* Factual Processing Model & Category Badges */}
+					{!isCompanyPage && (
+						<div className="flex flex-wrap items-center justify-center sm:justify-between gap-3 pt-1 border-b border-border/40 pb-3">
+							<div className="flex flex-wrap items-center gap-2">
+								<span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-muted/50 border border-border/60 text-[11px] font-mono font-medium text-foreground/80">
+									<span className={`h-1.5 w-1.5 rounded-full ${dataProcessing.type === "LOCAL" ? "bg-emerald-500" : dataProcessing.type === "NO_FILE_UPLOAD" ? "bg-blue-500" : "bg-purple-500"}`} />
+									{dataProcessing.badgeText}
+								</span>
+								<span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted/30 text-[11px] font-mono text-muted-foreground">
+									100% Free
+								</span>
+								{enrichedTool.category && (
+									<span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted/30 text-[11px] font-mono text-muted-foreground capitalize">
+										{enrichedTool.category}
+									</span>
+								)}
+							</div>
+
+							{/* Secondary Toolbar Actions */}
+							{!isHubPage && (
+								<ToolToolbar toolId={tool.id} toolRoute={tool.route} toolName={tool.name} />
+							)}
 						</div>
 					)}
-					{!isHubPage && (
-						<div className="pt-2">
-							<ToolToolbar toolId={tool.id} toolRoute={tool.route} toolName={tool.name} />
-						</div>
-					)}
-				</section>
+				</header>
 
-
-
-				{/* Copyright Disclaimer for Downloaders */}
+				{/* Downloader Legal Notice if applicable */}
 				{tool.category === "downloaders" && (
 					<DownloadDisclaimer platformName={tool.name.replace(/ downloader$/i, "").replace(/ download$/i, "")} />
 				)}
 
-				{/* Tool Interaction Area */}
+				{/* Primary Tool Workspace (Visually Dominant) */}
 				{!isHubPage && (
-					<section className="bg-card/30 backdrop-blur-md border border-border/40 rounded-2xl shadow-[0_32px_64px_-12px_rgba(0,0,0,0.15)] dark:shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)] relative group transition-all duration-500 hover:border-primary/20 min-h-[400px] overflow-hidden">
-						<div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] -z-10 transition-opacity" />
-						<div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 blur-[120px] -z-10 transition-opacity" />
-						<div className="relative z-10 p-6 md:p-8">{children}</div>
+					<section className={`w-full ${workspaceClass} mx-auto transition-all`}>
+						<div className="rounded-2xl border border-border/70 bg-card/60 shadow-xs overflow-hidden p-4 sm:p-6 lg:p-8">
+							{children}
+						</div>
 					</section>
 				)}
-				{isHubPage && children}
 
+				{isHubPage && (
+					<section className="w-full max-w-6xl mx-auto">
+						{children}
+					</section>
+				)}
+
+				{/* Secondary Content & SEO Documentation (Subordinated to Tool) */}
 				{!isCompanyPage && (
-					<>
-						<div className="max-w-4xl mx-auto space-y-6">
-							<AdPlacement placement="after-hero" category={tool.category} slug={tool.id} />
-							<AdPlacement placement="after-tool" category={tool.category} slug={tool.id} />
-						</div>
+					<div className="w-full max-w-4xl mx-auto space-y-10 pt-6">
+						<AdPlacement placement="after-tool" category={tool.category} slug={tool.id} />
 
-						{/* Downloader Legal Disclaimer - visible below tool */}
-						{tool.category === "downloaders" && (
-							<section className="max-w-4xl mx-auto space-y-4">
-								<h2 className="text-2xl font-bold tracking-tight">Legal Notice</h2>
-								<p className="text-muted-foreground leading-relaxed">
-									This tool is intended for downloading non-copyrighted, personal, or openly licensed content only.
-									SopKit does not host, store, or distribute copyrighted media. Users are solely responsible for
-									ensuring they have the legal right to download any content. By using this tool, you agree to our{" "}
-									<Link href="/terms" className="text-primary underline">Terms of Use</Link> and{" "}
-									<Link href="/dmca" className="text-primary underline">DMCA Policy</Link>.
-								</p>
-							</section>
+						{/* Editorial Documentation Layout */}
+						<ToolArticle content={enrichedTool.article} title={enrichedTool.name} />
+
+						{opportunity && (
+							<SeoOpportunityContent opportunity={opportunity} />
 						)}
 
-						{/* Embeddable Growth Widget */}
-						{!isCompanyPage && (
-							<EmbedWidgetGiver toolId={tool.id} toolName={tool.name} />
-						)}
+						<ToolFeatures features={enrichedTool.features} toolName={enrichedTool.name} />
 
-						{/* Related Tools - rendered just after embed section */}
+						<ToolSteps
+							steps={enrichedTool.howTo?.steps}
+							toolName={enrichedTool.name}
+						/>
+
+						<ToolFAQ faqs={enrichedTool.faqs} toolName={enrichedTool.name} />
+
+						{/* Contextual Related Tools (Compact 4-6 list) */}
 						{finalRelatedTools.length > 0 && (
-							<div style={{ contentVisibility: "auto", containIntrinsicSize: "auto 800px" }} className="py-2">
-								<RelatedTools
-									currentTool={tool.id}
-									category={tool.category}
-									tools={finalRelatedTools}
-								/>
-							</div>
+							<RelatedTools
+								currentTool={tool.id}
+								category={tool.category}
+								tools={finalRelatedTools}
+							/>
 						)}
 
-						{/* Trust indicators - defer rendering (generic boilerplate) */}
-						<div style={{ contentVisibility: "auto", containIntrinsicSize: "auto 600px" }}>
-							<ToolTrust />
-						</div>
+						{/* Compact Embed Option */}
+						<EmbedWidgetGiver toolId={tool.id} toolName={tool.name} />
 
-						{/* SEO Content - fully server-rendered for crawlers */}
-						<div className="space-y-16">
-							<div className="max-w-4xl mx-auto">
-								<AdPlacement placement="in-content" category={tool.category} slug={tool.id} />
-							</div>
-
-							<ToolArticle content={enrichedTool.article} />
-
-							{opportunity && (
-								<SeoOpportunityContent opportunity={opportunity} />
-							)}
-
-							<div className="grid grid-cols-1 gap-16">
-								<ToolFeatures features={enrichedTool.features} />
-								<ToolSteps
-									steps={enrichedTool.howTo?.steps}
-									toolName={enrichedTool.name}
-								/>
-								<ToolFAQ faqs={enrichedTool.faqs} toolName={enrichedTool.name} />
-							</div>
-						</div>
-
-						{/* Contribution Notice - moved to absolute bottom */}
-						<section className="text-center space-y-4 max-w-2xl mx-auto p-8 border border-dashed rounded-2xl bg-primary/5 mt-16" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 200px" }}>
-							<h3 className="text-lg font-bold">Tool not working or missing something?</h3>
-							<p className="text-sm text-muted-foreground">
-								This tool is open-source and community-driven. If you find a bug, have a feature request,
-								or want to contribute a new tool, please create a PR on GitHub or contact us.
+						{/* Community & Open-Source Footer Notice */}
+						<footer className="pt-8 border-t border-border/40 text-center space-y-3">
+							<p className="text-xs text-muted-foreground max-w-xl mx-auto leading-relaxed">
+								SopKit is a privacy-first utility platform. Free forever with zero tracking.
 							</p>
-							<div className="flex flex-wrap items-center justify-center gap-4">
-								<Button variant="outline" size="sm" asChild className="gap-2">
+							<div className="flex items-center justify-center gap-3">
+								<Button variant="outline" size="sm" asChild className="h-7 text-xs gap-1.5 rounded-lg">
 									<a href={SITE_CONFIG.githubRepoUrl} target="_blank" rel="noreferrer">
-										<Github className="h-4 w-4" />
+										<Github className="h-3.5 w-3.5" />
 										Contribute on GitHub
 									</a>
 								</Button>
-								<Button variant="ghost" size="sm" asChild className="gap-2">
-									<a href="mailto:shaswatraj3@gmail.com">
-										shaswatraj3@gmail.com
-									</a>
+								<Button variant="ghost" size="sm" asChild className="h-7 text-xs rounded-lg text-muted-foreground hover:text-foreground">
+									<Link href="/privacy">Privacy Notice</Link>
+								</Button>
+								<Button variant="ghost" size="sm" asChild className="h-7 text-xs rounded-lg text-muted-foreground hover:text-foreground">
+									<Link href="/terms">Terms of Service</Link>
 								</Button>
 							</div>
-						</section>
-
-						<div className="h-16 mt-8" >
-							<p className="text-base text-muted-foreground/70 max-w-xl mx-auto">
-								Part of SopKit — {SITE_CONFIG.toolCountString} free online tools for image, PDF, video,
-								audio, text, SEO, and developer workflows. No registration required.
-							</p>
-							<div className="flex items-center justify-center gap-2 pt-2">
-								<a
-									href={SITE_CONFIG.githubRepoUrl}
-									target="_blank"
-									rel="noreferrer"
-									className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-[10px] font-bold uppercase tracking-widest text-primary/60 hover:bg-primary/10 transition-colors"
-								>
-									<Github className="h-3 w-3" />
-									We are Open Source
-								</a>
-							</div>
-						</div>
-
-						{showHireMe && (
-							<section className="max-w-3xl mx-auto">
-								<div className="rounded-2xl border border-border/60 bg-card/40 p-6 md:p-8 space-y-4">
-									<h3 className="text-xl md:text-2xl font-bold">Need a custom tool like this?</h3>
-									<p className="text-muted-foreground">
-										I build fast SEO tools, calculators, PDF utilities, automations, and landing pages for startups and businesses.
-									</p>
-									<Button asChild>
-										<Link href="https://sh20raj.github.io/" rel="noopener noreferrer" className="inline-flex items-center gap-2">
-											Hire me
-											<ExternalLink className="h-4 w-4" />
-										</Link>
-									</Button>
-								</div>
-							</section>
-						)}
-						<div className="max-w-4xl mx-auto">
-							<AdPlacement placement="footer" category={tool.category} slug={tool.id} />
-						</div>
-
-					</>
+						</footer>
+					</div>
 				)}
 			</main>
 		</div>

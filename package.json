@@ -7,6 +7,7 @@
 		"dev": "next dev --turbopack",
 		"prebuild": "tsx scripts/validate-registry.ts && tsx scripts/generate-sitemap.ts",
 		"validate:registry": "tsx scripts/validate-registry.ts",
+		"validate:seo": "tsx scripts/validate-seo-architecture.ts",
 		"generate:sitemap": "tsx scripts/generate-sitemap.ts",
 		"build": "next build && node scripts/generate-redirects.cjs && node scripts/generate-llms.mjs",
 		"test": "node scripts/test-packages.js",

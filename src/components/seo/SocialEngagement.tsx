@@ -99,83 +99,50 @@ export function RelatedTools({
 	currentTool,
 	category,
 	tools = [],
-	title = "Related Tools",
-	showCategory = true,
+	title = "Related Tools & Workflows",
+	showCategory = false,
 }: RelatedToolsProps) {
-	// Filter related tools (excluding current tool)
+	// Filter 4-6 most relevant tools in the same or related category
 	const relatedTools = tools
-		.filter((tool) => tool.id !== currentTool && tool.category === category)
-		.slice(0, 10);
+		.filter((tool) => tool.id !== currentTool)
+		.slice(0, 6);
 
 	if (relatedTools.length === 0) {
 		return null;
 	}
 
 	return (
-		<Card className="rounded-2xl border border-border/60 bg-card/40 backdrop-blur-md shadow-sm overflow-hidden">
-			<CardHeader className="pb-4">
-				<CardTitle className="flex items-center gap-2.5 text-xl md:text-2xl font-black tracking-tight text-foreground">
-					<div className="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 inline-flex items-center justify-center">
-						<TrendingUp className="h-4 w-4" />
-					</div>
+		<section className="space-y-3 pt-6 border-t border-border/60" aria-label="Related tools">
+			<div className="flex items-center justify-between">
+				<h2 className="text-base sm:text-lg font-bold tracking-tight text-foreground flex items-center gap-2">
+					<TrendingUp className="h-4 w-4 text-primary" />
 					{title}
-				</CardTitle>
-			</CardHeader>
-			<CardContent>
-				<div className="grid md:grid-cols-2 gap-4">
-					{relatedTools.map((tool, index) => {
-						const isHighlighted = index < 2;
-						return (
-							<Link
-								key={tool.id}
-								href={tool.route}
-								className={cn(
-									"group relative block p-5 border transition-all duration-300 rounded-xl",
-									isHighlighted 
-										? "bg-blue-500/[0.03] border-blue-500/30 hover:border-blue-500/50 shadow-sm hover:shadow-md" 
-										: "bg-card border-border/60 hover:border-blue-500/30 hover:shadow-sm"
-								)}
-							>
-								{isHighlighted && (
-									<div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-blue-600 dark:bg-blue-500 text-[9px] font-bold text-white uppercase tracking-wider leading-none">
-										Recommended
-									</div>
-								)}
-								<div className="flex items-start justify-between gap-4">
-									<div className="flex-1 min-w-0">
-										<div className="flex items-center gap-2">
-											<h3 className={cn(
-												"font-bold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400",
-												isHighlighted ? "text-base" : "text-sm"
-											)}>
-												{tool.name}
-											</h3>
-											{isHighlighted && <Star className="h-3.5 w-3.5 text-amber-500 fill-amber-500 shrink-0" />}
-										</div>
-										<p className="text-xs text-muted-foreground mt-1.5 line-clamp-2 leading-relaxed">
-											{tool.description}
-										</p>
-										{showCategory && (
-											<div className="mt-3 flex flex-wrap gap-1.5">
-												<Badge variant="secondary" className="rounded-full text-[9px] font-semibold uppercase tracking-wider bg-muted/60">
-													{tool.category}
-												</Badge>
-												{isHighlighted && (
-													<Badge variant="outline" className="rounded-full text-[9px] font-semibold uppercase tracking-wider border-blue-500/30 text-blue-600 dark:text-blue-400">
-														Popular
-													</Badge>
-												)}
-											</div>
-										)}
-									</div>
-									<ArrowRight className="h-4 w-4 text-muted-foreground/60 group-hover:text-blue-600 dark:group-hover:text-blue-400 group-hover:translate-x-1 transition-all shrink-0 mt-1" />
-								</div>
-							</Link>
-						);
-					})}
-				</div>
-			</CardContent>
-		</Card>
+				</h2>
+				<span className="text-xs text-muted-foreground font-mono">
+					{relatedTools.length} utilities
+				</span>
+			</div>
+
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+				{relatedTools.map((tool) => (
+					<Link
+						key={tool.id}
+						href={tool.route}
+						className="group flex items-start justify-between gap-3 p-3 rounded-xl border border-border/60 bg-muted/20 hover:bg-muted/50 hover:border-primary/40 transition-all"
+					>
+						<div className="flex-1 min-w-0">
+							<div className="text-xs sm:text-sm font-semibold text-foreground group-hover:text-primary transition-colors truncate">
+								{tool.name}
+							</div>
+							<p className="text-[11px] text-muted-foreground line-clamp-1 mt-0.5 leading-snug">
+								{tool.description}
+							</p>
+						</div>
+						<ArrowRight className="h-3.5 w-3.5 text-muted-foreground/60 group-hover:text-primary group-hover:translate-x-0.5 transition-transform shrink-0 mt-0.5" />
+					</Link>
+				))}
+			</div>
+		</section>
 	);
 }
 

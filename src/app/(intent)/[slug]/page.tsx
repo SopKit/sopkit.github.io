@@ -141,7 +141,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 description = `${(lastSpace > targetMin ? cut.slice(0, lastSpace) : cut).replace(/[\s,—-]+$/, "")}`;
             }
 
-            const canonicalUrl = `https://sopkit.space/${slug}/`;
+            // Canonicalization strategy:
+            // If this slug is a synthetic permutation or alias, point canonical to parent canonical route
+            // and set noindex, follow to consolidate PageRank and avoid doorway penalties.
+            const canonicalRoute = extraTool.route.endsWith("/") ? extraTool.route : `${extraTool.route}/`;
+            const canonicalUrl = isCanonicalTool ? `https://sopkit.space/${slug}/` : `https://sopkit.space${canonicalRoute}`;
 
             return {
                 title,
@@ -163,7 +167,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                     description,
                     images: ["/og-image.jpg"],
                 },
-                robots: { index: true, follow: true },
+                robots: isCanonicalTool
+                    ? { index: true, follow: true }
+                    : { index: false, follow: true },
             };
         }
         return {};
@@ -334,24 +340,28 @@ Unlike freemium services that restrict file sizes or impose hourly conversion li
 
 export async function generateStaticParams() {
     const slugs = new Set<string>();
+
+    // Canonical tool routes that already have explicit page.tsx files
+    const canonicalSlugs = new Set<string>();
+    const tools = getAllTools();
+    tools.forEach((t) => {
+        const clean = (t.route || t.id).replace(/^\//, "").replace(/\/$/, "");
+        canonicalSlugs.add(clean);
+    });
+
+    // Curated SEO opportunities (only those without explicit dedicated pages)
     seoOpportunities.forEach((opportunity) => {
-        if (opportunity.slug) {
+        if (opportunity.slug && !canonicalSlugs.has(opportunity.slug)) {
             slugs.add(opportunity.slug);
         }
     });
+
+    // Intent landers
     Object.keys(intentData).forEach((slug) => {
-        slugs.add(slug);
-    });
-    const tools = getAllTools();
-    tools.forEach((t) => {
-        if (t.extraSlugs) {
-            t.extraSlugs.forEach((slug) => {
-                const trimmed = slug ? slug.trim() : "";
-                if (trimmed) {
-                    slugs.add(trimmed);
-                }
-            });
+        if (!canonicalSlugs.has(slug)) {
+            slugs.add(slug);
         }
     });
+
     return Array.from(slugs).map((slug) => ({ slug }));
 }
