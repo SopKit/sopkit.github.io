@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 		title: "Free Audio Tools Online - No Signup | SopKit",
 		description:
 			"Free AI text-to-speech, audio conversion, and compression tools. Generate voiceovers and process audio files instantly in your browser.",
-		url: "https://sopkit.space/audio-tools/",
+		url: `${SITE_URL}/audio-tools/`,
 		siteName: "SopKit",
 		images: [
 			{

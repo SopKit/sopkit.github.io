@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
@@ -5,7 +6,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "Student Calculators - Attendance, SGPA, CGPA and Marks | SopKit",
 	description: "Free student calculators for 75% attendance, how many classes you can miss, SGPA, CGPA, CGPA to percentage, and required final marks.",
-	alternates: { canonical: "https://sopkit.space/student-calculators/" },
+	alternates: { canonical: `${SITE_URL}/student-calculators/` },
 };
 
 export default function StudentCalculatorsHub() {

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { Code, Copy, Check, Palette, Moon, Sun, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ToolModeTabs } from "./design-system";
+import { SITE_URL } from "@/constants/config";
 
 interface EmbedWidgetGiverProps {
 	toolId: string;
@@ -18,7 +19,7 @@ export function EmbedWidgetGiver({ toolId, toolName }: EmbedWidgetGiverProps) {
 	const [height, setHeight] = useState("550");
 	const codeRef = useRef<HTMLElement>(null);
 
-	const embedUrl = `https://sopkit.space/embed-tool/?id=${toolId}&theme=${theme}&accent=${accent}`;
+	const embedUrl = `${SITE_URL}/embed-tool/?id=${toolId}&theme=${theme}&accent=${accent}`;
 	const embedCode = `<iframe src="${embedUrl}" width="100%" height="${height}" style="border:0; border-radius:12px; overflow:hidden;" title="Free Local ${toolName} by SopKit"></iframe>`;
 
 	const handleCopy = () => {

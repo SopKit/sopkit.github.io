@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { ShieldAlert } from "lucide-react";
@@ -7,8 +8,8 @@ export const metadata = {
 	title: "DMCA Copyright Policy - SopKit",
 	description: "SopKit DMCA copyright infringement notification policy. Learn how to report copyright violations and our takedown procedures.",
 	keywords: "dmca, copyright policy, takedown notice, copyright infringement, SopKit dmca, intellectual property, free dmca, dmca online, SopKit, free online tools, browser tools, no signup tools",
-	alternates: { canonical: "https://sopkit.space/dmca/" },
-	openGraph: { title: "DMCA Copyright Policy - SopKit", description: "SopKit DMCA copyright infringement notification policy. Learn how to report copyright violations and our takedown procedures.", url: "https://sopkit.space/dmca/", siteName: "SopKit", images: [{ url: "/og-image.jpg" }], type: "website" },
+	alternates: { canonical: `${SITE_CONFIG.siteUrl}/dmca/` },
+	openGraph: { title: "DMCA Copyright Policy - SopKit", description: "SopKit DMCA copyright infringement notification policy. Learn how to report copyright violations and our takedown procedures.", url: `${SITE_CONFIG.siteUrl}/dmca/`, siteName: "SopKit", images: [{ url: "/og-image.jpg" }], type: "website" },
 	twitter: { card: "summary_large_image", title: "DMCA Copyright Policy - SopKit", description: "SopKit DMCA copyright infringement notification policy.", images: ["/og-image.jpg"] },
 	robots: { index: true, follow: true },
 };
@@ -32,7 +33,7 @@ export default async function DMCAPage() {
 						"@type": "WebPage",
 						name: "DMCA Copyright Policy",
 						description: tool.description,
-						url: "https://sopkit.space/dmca/",
+						url: `${SITE_URL}/dmca/`,
 						publisher: { "@type": "Organization", name: "SopKit" },
 					}),
 				}}
@@ -50,7 +51,7 @@ export default async function DMCAPage() {
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">1. Digital Millennium Copyright Act (DMCA) Notice</h2>
 								<p className="text-sm leading-relaxed">
-									sopkit.github.io (&quot;SopKit&quot;) respects the intellectual property rights of others and expects its users to do the same. In accordance with the Digital Millennium Copyright Act of 1998 (&quot;DMCA&quot;), we will respond expeditiously to claims of copyright infringement committed using our service.
+									{SITE_CONFIG.domain} (&quot;SopKit&quot;) respects the intellectual property rights of others and expects its users to do the same. In accordance with the Digital Millennium Copyright Act of 1998 (&quot;DMCA&quot;), we will respond expeditiously to claims of copyright infringement committed using our service.
 								</p>
 							</section>
 

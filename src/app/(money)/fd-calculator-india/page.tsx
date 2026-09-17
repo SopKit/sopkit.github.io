@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
@@ -9,12 +10,12 @@ export const metadata = {
 	description: "Compute rates, taxes, averages, and conversions with our free FD Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
 	keywords: "fd calculator india, free online tool, no signup, fd calculator india online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.space/fd-calculator-india",
+		canonical: `${SITE_URL}/fd-calculator-india`,
 	},
 	openGraph: {
 		title: "Free FD Calculator India Online - No Signup | SopKit",
 		description: "Compute rates, taxes, averages, and conversions with our free FD Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
-		url: "https://sopkit.space/fd-calculator-india",
+		url: `${SITE_URL}/fd-calculator-india`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

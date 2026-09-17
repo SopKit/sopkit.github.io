@@ -2,7 +2,7 @@
 
 ## Overview
 
-[SopKit](https://sopkit.github.io) is a high-performance, developer-first utility ecosystem built with Next.js 16 (App Router) and Tailwind CSS v4. It provides **569+ free online tools** across `19` route-group categories (image, pdf, video, audio, text, developer, seo, youtube, generators, calculators, exam-tools, health, ai-tools, utilities, downloaders, company, content, blog, others) with a privacy-first, client-side sandbox processing model.
+[SopKit](https://sopkit.space) is a high-performance, developer-first utility ecosystem built with Next.js 16 (App Router) and Tailwind CSS v4. It provides **569+ free online tools** across `19` route-group categories (image, pdf, video, audio, text, developer, seo, youtube, generators, calculators, exam-tools, health, ai-tools, utilities, downloaders, company, content, blog, others) with a privacy-first, client-side sandbox processing model.
 
 **Core Positioning**: "Privacy-first client-side tools — no data selling, no server uploads, 100% local sandbox." This is the unique value proposition against competitors (ipullif, smallpdf, ilovepdf, etc.) that upload user data to their servers.
 

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
@@ -6,12 +7,12 @@ export const metadata = {
 	description: "Assemble a free SEO stack that works in 2026: audit, keyword research, on-page metadata, and technical checks. No logins, no uploads, no subscriptions.",
 	keywords: "seo tools free online - ranked picks (2026), seo tools free online - ranked picks (2026) guide, SopKit, seo-tools-free-online, seo tools free online, free seo-tools-free-online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.space/seo-tools-free-online",
+		canonical: `${SITE_URL}/seo-tools-free-online`,
 	},
 	openGraph: {
 		title: "Free SEO Tools Online — Top Ranked Picks 2026 | SopKit",
 		description: "Assemble a free SEO stack that works in 2026: audit, keyword research, on-page metadata, and technical checks. No logins, no uploads, no subscriptions.",
-		url: "https://sopkit.space/seo-tools-free-online",
+		url: `${SITE_URL}/seo-tools-free-online`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +48,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.space/seo-tools-free-online/",
+						url: `${SITE_URL}/seo-tools-free-online/`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

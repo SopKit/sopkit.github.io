@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import YouTubeDownloader from "@/components/tools/downloaders/YouTubeDownloader";
@@ -8,12 +9,12 @@ export const metadata = {
 	description: "Download high-quality YouTube channel logos and profile pictures instantly. Perfect for brand audits and design research. Free, fast, and secure online...",
 	keywords: "youtube channel logo downloader, free online tool, no signup, youtube-channel-logo-downloader, free youtube-channel-logo-downloader, Youtube Channel Logo Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://sopkit.space/youtube-channel-logo-downloader/",
+		canonical: `${SITE_URL}/youtube-channel-logo-downloader/`,
 	},
 	openGraph: {
 		title: "Free YouTube Channel Logo Downloader Online - No Signup | SopKit",
 		description: "Download high-quality YouTube channel logos and profile pictures instantly. Perfect for brand audits and design research. Free, fast, and secure online...",
-		url: "https://sopkit.space/youtube-channel-logo-downloader/",
+		url: `${SITE_URL}/youtube-channel-logo-downloader/`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

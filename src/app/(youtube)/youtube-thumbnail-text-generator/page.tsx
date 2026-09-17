@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
@@ -28,7 +29,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.space/youtube-thumbnail-text-generator/",
+						url: `${SITE_URL}/youtube-thumbnail-text-generator/`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: {

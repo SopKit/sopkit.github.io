@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -5,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
 	title: "Hire SopKit - SEO Fixes, Landing Pages and Custom Tools",
 	description: "Hire the team behind SopKit for SEO fixes, landing pages, restaurant QR menu websites, speed optimization, custom tools, and API integrations.",
-	alternates: { canonical: "https://sopkit.space/services/" },
+	alternates: { canonical: `${SITE_URL}/services/` },
 };
 
 const services = [

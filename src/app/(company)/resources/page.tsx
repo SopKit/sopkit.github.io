@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { Metadata } from "next";
 import Link from "next/link";
 import { BookOpen, FileText, ArrowRight, Rss, Layers } from "lucide-react";
@@ -8,12 +9,12 @@ export const metadata: Metadata = {
 	title: "SopKit Resources — Developer Guides, APIs, and Documentation",
 	description: "Access official guides, cheat sheets, API specifications, and community resources to maximize your developer productivity with SopKit.",
 	alternates: {
-		canonical: "https://sopkit.space/resources/",
+		canonical: `${SITE_URL}/resources/`,
 	},
 	openGraph: {
 		title: "SopKit Resources — Developer Guides, APIs, and Documentation",
 		description: "Browse guides, tools libraries, and API specifications.",
-		url: "https://sopkit.space/resources/",
+		url: `${SITE_URL}/resources/`,
 		images: [{ url: "/og-images/packages.png" }],
 	},
 };
@@ -24,7 +25,7 @@ export default function ResourcesPage() {
 		"@type": "CollectionPage",
 		"name": "SopKit Resources Hub",
 		"description": "Guides, APIs, sitemaps, RSS feeds, and packages list for SopKit developer ecosystem.",
-		"url": "https://sopkit.space/resources/"
+		"url": `${SITE_URL}/resources/`
 	};
 
 	const resourceCards = [

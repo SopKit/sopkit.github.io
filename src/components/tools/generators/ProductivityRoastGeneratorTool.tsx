@@ -14,6 +14,7 @@ import { toast } from "sonner";
 import SocialShareButtons from "@/components/shared/SocialShareButtons";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { SITE_URL, SITE_CONFIG } from "@/constants/config";
 import {
 	Card,
 	CardContent,
@@ -225,7 +226,7 @@ Style: ${roastIntensity === "motivational" ? "Tough love coach" : roastIntensity
 	};
 
 	const shareToSocial = () => {
-		const text = `My productivity roast: "${roast}" 😅 Get yours at sopkit.github.io!`;
+		const text = `My productivity roast: "${roast}" 😅 Get yours at ${SITE_CONFIG.domain}!`;
 		const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
 		window.open(url, "_blank");
 	};
@@ -588,7 +589,7 @@ Style: ${roastIntensity === "motivational" ? "Tough love coach" : roastIntensity
 					<SocialShareButtons
 						toolName="Productivity Roast Generator"
 						toolDescription="Get the honest feedback about your work habits you need to hear! 🔥"
-						toolUrl="https://sopkit.space/productivity-roast-generator"
+						toolUrl="/productivity-roast-generator"
 						category="generators"
 					/>
 				</div>

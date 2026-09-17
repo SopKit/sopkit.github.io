@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { SITE_DOMAIN } from "@/constants/config";
 
 export async function POST(req: Request) {
         try {
@@ -7,7 +8,7 @@ export async function POST(req: Request) {
 
 		// Validate request origin
 		const origin = req.headers.get("origin") || req.headers.get("referer");
-		const allowedHosts = ["sopkit.github.io", "www.sopkit.github.io", "localhost:3000"];
+		const allowedHosts = [SITE_DOMAIN, `www.${SITE_DOMAIN}`, "sopkit.github.io", "www.sopkit.github.io", "localhost:3000"];
 
 		let isAllowed = false;
 		if (origin) {

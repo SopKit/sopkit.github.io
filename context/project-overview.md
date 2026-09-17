@@ -2,7 +2,7 @@
 
 ## Product Summary
 
-**SopKit** is a large-scale, SEO-driven online toolkit platform at [sopkit.github.io](https://sopkit.github.io). It provides 376+ free browser-based tools across 15 categories with zero signup requirements. The philosophy is "The Ultimate Utility Engine" -- a Utility Operating System, not a simple script collection.
+**SopKit** is a large-scale, SEO-driven online toolkit platform at [sopkit.space](https://sopkit.space). It provides 376+ free browser-based tools across 15 categories with zero signup requirements. The philosophy is "The Ultimate Utility Engine" -- a Utility Operating System, not a simple script collection.
 
 ## Goals
 

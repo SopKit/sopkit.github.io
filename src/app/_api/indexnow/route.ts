@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
+import { SITE_URL, SITE_DOMAIN } from "@/constants/config";
 
-const INDEXNOW_KEY = "634a2c77198a45429967eb9dc1252278";
-const SITE_URL = "https://sopkit.space";
+const INDEXNOW_KEY = "ddc248a1620c45638eca52bca376f0cd";
 
 // All downloader URLs
 const DOWNLOADER_URLS = [
@@ -89,7 +89,7 @@ export async function POST(_request: Request) {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
-				host: "sopkit.github.io",
+				host: SITE_DOMAIN,
 				key: INDEXNOW_KEY,
 				keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
 				urlList: allUrls.slice(0, 10000), // IndexNow supports up to 10K URLs per batch
@@ -101,7 +101,7 @@ export async function POST(_request: Request) {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
-				host: "sopkit.github.io",
+				host: SITE_DOMAIN,
 				key: INDEXNOW_KEY,
 				keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
 				urlList: allUrls.slice(0, 10000),
@@ -115,7 +115,7 @@ export async function POST(_request: Request) {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({
-					host: "sopkit.github.io",
+					host: SITE_DOMAIN,
 					key: INDEXNOW_KEY,
 					keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
 					urlList: allUrls.slice(0, 10000),

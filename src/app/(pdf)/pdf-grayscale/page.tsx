@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
@@ -22,7 +23,7 @@ export default async function ToolPage() {
 		"@context": "https://schema.org",
 		"@type": "WebApplication",
 		"name": "PDF Grayscale Converter",
-		"url": "https://sopkit.space/pdf-grayscale/",
+		"url": `${SITE_URL}/pdf-grayscale/`,
 		"applicationCategory": "PDFApplication",
 		"operatingSystem": "All",
 		"browserRequirements": "Requires HTML5 support",

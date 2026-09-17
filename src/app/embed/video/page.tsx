@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { Suspense } from "react";
 import EmbedVideoPlayer from "./EmbedVideoPlayer";
 
@@ -26,7 +27,7 @@ export const metadata = {
 		title: "Free Video Player Online - No Signup | SopKit",
 		description:
 			"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
-		url: "https://sopkit.space/embed/video/",
+		url: `${SITE_URL}/embed/video/`,
 		siteName: "SopKit",
 		images: [
 			{
@@ -49,7 +50,7 @@ export const metadata = {
 	},
 
 	alternates: {
-		canonical: "https://sopkit.space/embed/video/",
+		canonical: `${SITE_URL}/embed/video/`,
 	},
 };
 
@@ -59,7 +60,7 @@ const jsonLd = {
 	name: "Video",
 	description:
 		"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
-	url: "https://sopkit.space/embed/video/",
+	url: `${SITE_URL}/embed/video/`,
 	applicationCategory: "UtilityApplication",
 	operatingSystem: "Any",
 	permissions: "browser",
@@ -71,7 +72,7 @@ const jsonLd = {
 	author: {
 		"@type": "Organization",
 		name: "SopKit",
-		url: "https://sopkit.space",
+		url: SITE_URL,
 	},
 };
 

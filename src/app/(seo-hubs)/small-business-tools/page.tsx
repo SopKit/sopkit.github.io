@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
@@ -5,7 +6,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "Small Business Tools - QR, SEO and Website Utilities | SopKit",
 	description: "Free small business tools for QR menus, Google Form QR codes, WiFi QR codes, UPI payment QR codes, Open Graph previews, and meta descriptions.",
-	alternates: { canonical: "https://sopkit.space/small-business-tools/" },
+	alternates: { canonical: `${SITE_URL}/small-business-tools/` },
 };
 
 export default function SmallBusinessToolsHub() {

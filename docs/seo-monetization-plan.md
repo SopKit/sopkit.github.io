@@ -1,7 +1,7 @@
 # SopKit SEO & Monetization Plan
 
 **Updated:** 2026-06-04  
-**Site:** [sopkit.github.io](https://sopkit.github.io) — 405+ free online tools, privacy-first, no signup required
+**Site:** [sopkit.space](https://sopkit.space) — 405+ free online tools, privacy-first, no signup required
 
 ## Competitive Landscape
 

@@ -12,6 +12,7 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
+import { SITE_URL } from "@/constants/config";
 
 export default function IndexNowClient() {
 	const [loading, setLoading] = useState(false);
@@ -128,9 +129,7 @@ export default function IndexNowClient() {
 				</CardHeader>
 				<CardContent className="space-y-4">
 					<Textarea
-						placeholder="https://sopkit.space/image-compressor
-https://sopkit.space/video-converter
-https://sopkit.space/pdf-merger"
+						placeholder={`${SITE_URL}/image-compressor\n${SITE_URL}/video-converter\n${SITE_URL}/pdf-merger`}
 						value={customUrls}
 						onChange={(e) => setCustomUrls(e.target.value)}
 						rows={6}
@@ -212,13 +211,13 @@ https://sopkit.space/pdf-merger"
 					<div>
 						<strong className="text-foreground">API Key:</strong>
 						<code className="block mt-1 bg-secondary p-2 rounded text-xs">
-							634a2c77198a45429967eb9dc1252278
+							ddc248a1620c45638eca52bca376f0cd
 						</code>
 					</div>
 					<div>
 						<strong className="text-foreground">Key Location:</strong>
 						<code className="block mt-1 bg-secondary p-2 rounded text-xs">
-							https://sopkit.space/634a2c77198a45429967eb9dc1252278.txt
+							{SITE_URL}/ddc248a1620c45638eca52bca376f0cd.txt
 						</code>
 					</div>
 					<div>

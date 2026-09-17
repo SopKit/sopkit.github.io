@@ -1,7 +1,7 @@
 /**
  * SopKit Validator Utilities
  * Premium, zero-dependency validation suite for email, URL, Domain, IP, MAC, Phone, and Credit Card formats.
- * Link: https://sopkit.github.io/seotoolkit/
+ * Link: https://sopkit.space/seotoolkit/
  */
 /**
  * Validates whether the given string is a valid email address.

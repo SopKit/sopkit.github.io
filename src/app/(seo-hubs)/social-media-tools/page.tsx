@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
@@ -5,7 +6,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "Social Media Tools - Instagram Bio, Caption & Hashtag Generators | SopKit",
 	description: "Free online social media tools for content creators. Generate aesthetic Instagram bios, creative captions, hashtags, and text styles to grow your accounts.",
-	alternates: { canonical: "https://sopkit.space/social-media-tools/" },
+	alternates: { canonical: `${SITE_URL}/social-media-tools/` },
 };
 
 export default function SocialMediaToolsHub() {

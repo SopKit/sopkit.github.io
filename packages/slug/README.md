@@ -1,12 +1,12 @@
 # `@sopkit/slug`
 
-[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.github.io/slug-generator/)
-[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.github.io/slug-generator/)
+[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.space/slug-generator/)
+[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.space/slug-generator/)
 
 Premium, lightweight URL slug generator and text clean-up utility with full Unicode/diacritics support. Part of the SopKit utility ecosystem.
 
 ## Online Interactive Tool
-You can use the browser-based interactive version of this tool at [SopKit Slug Generator](https://sopkit.github.io/slug-generator/).
+You can use the browser-based interactive version of this tool at [SopKit Slug Generator](https://sopkit.space/slug-generator/).
 
 ## Features
 - Unicode normalization (decomposes accents and diacritics like `é` ➜ `e`)
@@ -49,4 +49,4 @@ const slug = slugify("SopKit Slugify"); // "sopkit-slugify"
 ```
 
 ## License
-MIT © [SopKit](https://sopkit.github.io/)
+MIT © [SopKit](https://sopkit.space/)

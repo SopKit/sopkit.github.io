@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -5,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
 	title: "SopKit API - Image, PDF, QR and SEO Utility APIs",
 	description: "SopKit API is a planned product for image compression, PDF processing, QR generation, screenshots, SEO metadata, and Open Graph previews.",
-	alternates: { canonical: "https://sopkit.space/api/" },
+	alternates: { canonical: `${SITE_URL}/api/` },
 };
 
 const products = [

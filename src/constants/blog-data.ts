@@ -756,7 +756,7 @@ export const blogs: BlogArticle[] = [
 			{
 				heading: "Integration with SopKit",
 				paragraphs: [
-					"Hermes thrives when paired with the SopKit suite. It can use terminal operations, browser automation, and call the 190+ web utilities on sopkit.github.io to process data efficiently.",
+					"Hermes thrives when paired with the SopKit suite. It can use terminal operations, browser automation, and call the 600+ web utilities on sopkit.space to process data efficiently.",
 					"Many users use Hermes to automate repetitive tasks like JSON formatting, image conversion, and SEO audits using our privacy-first tools."
 				]
 			}

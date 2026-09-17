@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 		title: "Free AI Generator Tools Online - No Signup | SopKit",
 		description:
 			"Generate AI images, voiceovers, QR codes, and passwords for free. Customizable, no watermarks, instant download.",
-		url: "https://sopkit.space/generator-tools/",
+		url: `${SITE_URL}/generator-tools/`,
 		siteName: "SopKit",
 		images: [
 			{

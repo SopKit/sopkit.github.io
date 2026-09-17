@@ -2,7 +2,7 @@
 
 **Document Version:** 1.0.0  
 **Audit Date:** September 14, 2026  
-**Audited Target:** SopKit (`https://sopkit.github.io/`, repo: `SopKit/sopkit.github.io`, branch: `main`)
+**Audited Target:** SopKit (`https://sopkit.space/`, repo: `SopKit/sopkit.github.io`, branch: `main`)
 
 ---
 

@@ -10,14 +10,14 @@ test("Validator Utilities - isEmail", () => {
 });
 
 test("Validator Utilities - isUrl", () => {
-  assert.strictEqual(isUrl("https://sopkit.github.io/"), true);
+  assert.strictEqual(isUrl("https://sopkit.space/"), true);
   assert.strictEqual(isUrl("http://localhost:3000/app"), true);
   assert.strictEqual(isUrl("ftp://files.example.com"), true);
   assert.strictEqual(isUrl("just-a-string"), false);
 });
 
 test("Validator Utilities - isDomain", () => {
-  assert.strictEqual(isDomain("sopkit.github.io"), true);
+  assert.strictEqual(isDomain("sopkit.space"), true);
   assert.strictEqual(isDomain("google.co.in"), true);
   assert.strictEqual(isDomain("localhost"), false); // expects a TLD
   assert.strictEqual(isDomain("http://sopkit.com"), false);

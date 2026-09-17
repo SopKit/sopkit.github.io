@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 		title: "Free Video Tools Online - No Signup | SopKit",
 		description:
 			"Play Terabox videos, compress, convert, and trim video files for free. Browser-based, no signup, no watermarks.",
-		url: "https://sopkit.space/video-tools/",
+		url: `${SITE_URL}/video-tools/`,
 		siteName: "SopKit",
 		images: [
 			{

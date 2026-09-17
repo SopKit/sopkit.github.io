@@ -8,16 +8,18 @@ import * as validator from "@sopkit/validator";
 import * as password from "@sopkit/password";
 import * as xml from "@sopkit/xml";
 import * as jwt from "@sopkit/jwt";
+import * as hash from "@sopkit/hash";
 
 async function main() {
   console.log("\n🚀 Welcome to SopKit CLI — Interactive Developer Utilities");
-  console.log("Website: https://sopkit.github.io/\n");
+  console.log("Website: https://sopkit.space/\n");
 
   const response = await prompts({
     type: "select",
     name: "utility",
     message: "Select a SopKit utility to run:",
     choices: [
+      { title: "Hash (SHA-256 / SHA-512 / SHA-1 / MD5 / HMAC)", value: "hash" },
       { title: "Base64 (Encode / Decode)", value: "base64" },
       { title: "UUID (Generate v4 or v1)", value: "uuid" },
       { title: "URL Slug (Generate URL-safe Slug)", value: "slug" },
@@ -37,6 +39,9 @@ async function main() {
   }
 
   switch (response.utility) {
+    case "hash":
+      await runHash();
+      break;
     case "base64":
       await runBase64();
       break;
@@ -430,6 +435,59 @@ async function runJwt() {
         console.log("\n✅ Valid JWT Format!\n");
       } else {
         console.log("\n❌ Invalid JWT Format!\n");
+      }
+    }
+  } catch (err: any) {
+    console.error(`\n❌ Error: ${err.message}\n`);
+  }
+}
+
+async function runHash() {
+  const action = await prompts({
+    type: "select",
+    name: "type",
+    message: "Select Hash algorithm:",
+    choices: [
+      { title: "SHA-256 Digest", value: "sha256" },
+      { title: "SHA-512 Digest", value: "sha512" },
+      { title: "SHA-1 Digest", value: "sha1" },
+      { title: "MD5 (Synchronous RFC 1321)", value: "md5" },
+      { title: "HMAC-SHA256 Signature", value: "hmac" }
+    ]
+  });
+
+  if (!action.type) return;
+
+  const input = await prompts({
+    type: "text",
+    name: "value",
+    message: "Enter input text to hash:"
+  });
+
+  if (!input.value) return;
+
+  try {
+    if (action.type === "sha256") {
+      const digest = await hash.sha256(input.value);
+      console.log(`\n✨ SHA-256:\n${digest}\n`);
+    } else if (action.type === "sha512") {
+      const digest = await hash.sha512(input.value);
+      console.log(`\n✨ SHA-512:\n${digest}\n`);
+    } else if (action.type === "sha1") {
+      const digest = await hash.sha1(input.value);
+      console.log(`\n✨ SHA-1:\n${digest}\n`);
+    } else if (action.type === "md5") {
+      const digest = hash.md5(input.value);
+      console.log(`\n✨ MD5:\n${digest}\n`);
+    } else if (action.type === "hmac") {
+      const keyPrompt = await prompts({
+        type: "password",
+        name: "key",
+        message: "Enter HMAC secret key:"
+      });
+      if (keyPrompt.key) {
+        const sig = await hash.hmacSha256(keyPrompt.key, input.value);
+        console.log(`\n✨ HMAC-SHA256:\n${sig}\n`);
       }
     }
   } catch (err: any) {

@@ -1,18 +1,20 @@
+import { SITE_URL } from "@/constants/config";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Globe, Lock, Zap, Users, ShieldAlert, CheckCircle } from "lucide-react";
+import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
 	title: "About SopKit — Privacy-First Free Online Tools Platform",
-	description: "Learn about SopKit — the privacy-first free online tools platform with 500+ browser-based utilities. No signup, no uploads, 100% client-side processing for images, PDFs, videos, and more.",
+	description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup, no uploads, 100% client-side processing for images, PDFs, videos, and more.`,
 	keywords: "about SopKit, client-side tools, private online utility, no upload pdf editor, local image converter, browser sandbox tools, secure developer tools, open source browser utilities",
 	alternates: {
-		canonical: "https://sopkit.space/about",
+		canonical: `${SITE_CONFIG.siteUrl}/about/`,
 	},
 	openGraph: {
 		title: "About SopKit — Privacy-First Free Online Tools Platform",
-		description: "Learn about SopKit — the privacy-first free online tools platform with 500+ browser-based utilities. No signup, no uploads, 100% client-side processing.",
-		url: "https://sopkit.space/about",
+		description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup, no uploads, 100% client-side processing.`,
+		url: `${SITE_CONFIG.siteUrl}/about/`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -20,7 +22,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "About SopKit — Privacy-First Free Online Tools Platform",
-		description: "Learn about SopKit — the privacy-first free online tools platform with 500+ browser-based utilities. No signup, no uploads, 100% client-side processing.",
+		description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup, no uploads, 100% client-side processing.`,
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -30,7 +32,7 @@ export default async function AboutPage() {
 	const tool = {
 		id: "about",
 		name: "About SopKit",
-		description: `SopKit is the internet's most trusted, browser-native utility platform. We offer 500+ free tools for PDF, image, text, and code—processed entirely inside your browser sandbox.`,
+		description: `SopKit is the internet's most trusted, browser-native utility platform. We offer ${SITE_CONFIG.toolCountString} free tools for PDF, image, text, and code—processed entirely inside your browser sandbox.`,
 		route: "/about",
 		category: "company",
 	};
@@ -44,7 +46,7 @@ export default async function AboutPage() {
 						"@context": "https://schema.org",
 						"@type": "Organization",
 						name: "SopKit",
-						url: "https://sopkit.space",
+						url: SITE_URL,
 						description: tool.description,
 						sameAs: ["https://github.com/SH20RAJ/SopKit"],
 					}),

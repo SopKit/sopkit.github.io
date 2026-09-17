@@ -44,7 +44,7 @@ Rules:
 
 ### SEO, AEO & GEO Platform (`src/seo/`)
 - Centralized metadata and canonical URL generator: `src/seo/metadata.ts` and `src/seo/canonical.ts`.
-- Canonical URLs are normalized to `https://sopkit.github.io/<slug>` without tracking query parameters or trailing slashes.
+- Canonical URLs are normalized to `https://sopkit.space/<slug>` without tracking query parameters or trailing slashes.
 - Schema.org JSON-LD structured data generated via `src/seo/structured-data.ts`.
 
 ### Monetization & Zero-CLS Policy (`src/features/ads/`)

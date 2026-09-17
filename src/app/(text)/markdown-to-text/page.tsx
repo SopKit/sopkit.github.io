@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
@@ -22,7 +23,7 @@ export default async function ToolPage() {
 		"@context": "https://schema.org",
 		"@type": "WebApplication",
 		"name": "Markdown to Text Converter",
-		"url": "https://sopkit.space/markdown-to-text/",
+		"url": `${SITE_URL}/markdown-to-text/`,
 		"applicationCategory": "TextApplication",
 		"operatingSystem": "All",
 		"browserRequirements": "Requires HTML5 support",

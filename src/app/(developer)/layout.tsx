@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 		title: "Free Developer Tools Online - No Signup | SopKit",
 		description:
 			"Essential developer tools for JSON, JWT, Base64, hashing, and more. Secure client-side processing with no signup.",
-		url: "https://sopkit.space/developer-tools/",
+		url: `${SITE_URL}/developer-tools/`,
 		siteName: "SopKit",
 		images: [
 			{

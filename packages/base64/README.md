@@ -1,12 +1,12 @@
 # `@sopkit/base64`
 
-[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.github.io/base64-encode/)
-[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.github.io/base64-encode/)
+[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.space/base64-encode/)
+[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.space/base64-encode/)
 
 Premium, lightweight Base64 encoder and decoder for both Browser and Node.js environments. Part of the SopKit utility ecosystem.
 
 ## Online Interactive Tool
-You can use the browser-based interactive version of this tool at [SopKit Base64 Encoder/Decoder](https://sopkit.github.io/base64-encode/).
+You can use the browser-based interactive version of this tool at [SopKit Base64 Encoder/Decoder](https://sopkit.space/base64-encode/).
 
 ## Features
 - Full Unicode/UTF-8 support (unlike standard `btoa`/`atob` which fail on emojis and special chars)
@@ -50,4 +50,4 @@ const decoded = decode(encoded);
 ```
 
 ## License
-MIT © [SopKit](https://sopkit.github.io/)
+MIT © [SopKit](https://sopkit.space/)

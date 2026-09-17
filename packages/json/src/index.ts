@@ -1,7 +1,7 @@
 /**
  * SopKit JSON Utilities
  * Premium, zero-dependency JSON utility for parsing, validating, formatting, and minification.
- * Link: https://sopkit.github.io/json-formatter/
+ * Link: https://sopkit.space/json-formatter/
  */
 
 export interface FormatOptions {

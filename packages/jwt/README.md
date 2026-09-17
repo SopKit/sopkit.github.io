@@ -1,12 +1,12 @@
 # `@sopkit/jwt`
 
-[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.github.io/jwt-decoder/)
-[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.github.io/jwt-decoder/)
+[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.space/jwt-decoder/)
+[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.space/jwt-decoder/)
 
 Premium, lightweight JSON Web Token (JWT) decoder and format validator for both Browser and Node.js. Part of the SopKit utility ecosystem.
 
 ## Online Interactive Tool
-You can use the browser-based interactive version of this tool at [SopKit JWT Decoder](https://sopkit.github.io/jwt-decoder/).
+You can use the browser-based interactive version of this tool at [SopKit JWT Decoder](https://sopkit.space/jwt-decoder/).
 
 ## Features
 - Unicode/UTF-8 compliant decoding of token payloads (supports emjois and localized strings).
@@ -43,4 +43,4 @@ const { payload } = decode(token);
 ```
 
 ## License
-MIT © [SopKit](https://sopkit.github.io/)
+MIT © [SopKit](https://sopkit.space/)

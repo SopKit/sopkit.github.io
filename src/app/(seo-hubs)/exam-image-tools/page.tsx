@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
@@ -5,7 +6,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "Exam Image Tools - Photo and Signature Resizers | SopKit",
 	description: "Resize and compress photos, signatures, PDFs, and form images for SSC, UPSC, NEET, JEE, CUET, railway, and bank exam uploads.",
-	alternates: { canonical: "https://sopkit.space/exam-image-tools/" },
+	alternates: { canonical: `${SITE_URL}/exam-image-tools/` },
 };
 
 export default function ExamImageToolsHub() {

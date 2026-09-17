@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { FileText } from "lucide-react";
@@ -8,12 +9,12 @@ export const metadata = {
 	description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
 	keywords: "terms of use, SopKit terms, terms of service, free online tools terms, terms, free terms, terms online, SopKit, free online tools, browser tools, no signup tools, privacy tools",
 	alternates: {
-		canonical: "https://sopkit.space/terms",
+		canonical: `${SITE_CONFIG.siteUrl}/terms/`,
 	},
 	openGraph: {
 		title: "Terms of Use — Fair & Simple Rules | SopKit",
 		description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
-		url: "https://sopkit.space/terms",
+		url: `${SITE_CONFIG.siteUrl}/terms/`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -46,7 +47,7 @@ export default async function TermsPage() {
 						"@type": "WebPage",
 						name: "Terms of Use",
 						description: tool.description,
-						url: "https://sopkit.space/terms/",
+						url: `${SITE_URL}/terms/`,
 						publisher: { "@type": "Organization", name: "SopKit" },
 					}),
 				}}
@@ -64,7 +65,7 @@ export default async function TermsPage() {
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">1. Acceptance of Terms</h2>
 								<p className="text-sm leading-relaxed">
-									By accessing and using sopkit.github.io (&quot;the Service&quot;), you accept and agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the Service.
+									By accessing and using {SITE_CONFIG.domain} (&quot;the Service&quot;), you accept and agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the Service.
 								</p>
 							</section>
 

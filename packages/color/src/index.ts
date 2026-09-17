@@ -1,7 +1,7 @@
 /**
  * SopKit Color Utilities
  * Premium, zero-dependency color converter supporting HEX, RGB, RGBA, and HSL formats.
- * Link: https://sopkit.github.io/color-converter/
+ * Link: https://sopkit.space/color-converter/
  */
 
 export interface RGB {

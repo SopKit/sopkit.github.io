@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import React from "react";
 import { Metadata } from "next";
 import { getAllTools, getAllCategories } from "@/lib/tools";
@@ -41,8 +42,8 @@ export default async function ToolIdPage() {
 		"@graph": [
 			{
 				"@type": "WebPage",
-				"@id": "https://sopkit.space/tool-id/#webpage",
-				"url": "https://sopkit.space/tool-id",
+				"@id": `${SITE_URL}/tool-id/#webpage`,
+				"url": `${SITE_URL}/tool-id`,
 				"name": "Tool IDs & Embed Directory — SopKit Developer Reference",
 				"description": `Developer directory to lookup tool IDs, generate iframe embed codes, and integrate ${SITE_CONFIG.toolCountString} free tools into your site.`,
 				"breadcrumb": {
@@ -52,20 +53,20 @@ export default async function ToolIdPage() {
 							"@type": "ListItem",
 							"position": 1,
 							"name": "Home",
-							"item": "https://sopkit.space"
+							"item": SITE_URL
 						},
 						{
 							"@type": "ListItem",
 							"position": 2,
 							"name": "Tool ID Directory",
-							"item": "https://sopkit.space/tool-id"
+							"item": `${SITE_URL}/tool-id`
 						}
 					]
 				}
 			},
 			{
 				"@type": "TechArticle",
-				"@id": "https://sopkit.space/tool-id/#article",
+				"@id": `${SITE_URL}/tool-id/#article`,
 				"headline": "Embedding SopKit Client-Side Tools: Developer Integration Guide",
 				"description": "Comprehensive reference guide on embedding SopKit browser-based tools using responsive, privacy-compliant iframes.",
 				"author": {

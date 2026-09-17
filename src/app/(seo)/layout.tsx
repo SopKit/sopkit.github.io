@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 
 
 import { generateCollectionPageSchema } from "@/lib/seo";
@@ -12,7 +13,7 @@ export const metadata = {
 		title: "Free SEO Tools Online - No Signup | SopKit",
 		description:
 			"17+ free SEO tools for site audits, keyword research, schema markup, and meta tag optimization. No signup required.",
-		url: "https://sopkit.space/seo-tools/",
+		url: `${SITE_URL}/seo-tools/`,
 		siteName: "SopKit",
 		images: [
 			{

@@ -1,7 +1,7 @@
 /**
  * SopKit Base64 Utilities
  * Premium, zero-dependency Base64 encoder/decoder supporting Unicode and URL-safe formats.
- * Link: https://sopkit.github.io/base64-encode/
+ * Link: https://sopkit.space/base64-encode/
  */
 
 /**

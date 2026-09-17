@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
@@ -6,12 +7,12 @@ export const metadata = {
 	description: "Solve everyday digital tasks instantly using our free Tools for Developers - Free Online Stack online. Fast, secure browser-based utility with no registration.",
 	keywords: "tools for developers - free online stack, tools for developers - free online stack guide, SopKit, tools-for-developers, tools for developers, free tools-for-developers, tools for developers online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.space/tools-for-developers",
+		canonical: `${SITE_URL}/tools-for-developers`,
 	},
 	openGraph: {
 		title: "Free Developer Tools — Best Online Stack 2026 | SopKit",
 		description: "Solve everyday digital tasks instantly using our free Tools for Developers - Free Online Stack online. Fast, secure browser-based utility with no registration.",
-		url: "https://sopkit.space/tools-for-developers",
+		url: `${SITE_URL}/tools-for-developers`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +48,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.space/tools-for-developers/",
+						url: `${SITE_URL}/tools-for-developers/`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 		title: "Blog & Guides | SopKit",
 		description:
 			"Practical guides, tutorials, and tool comparisons for free online productivity tools.",
-		url: "https://sopkit.space/blog/",
+		url: `${SITE_URL}/blog/`,
 		siteName: "SopKit",
 		type: "website",
 	},

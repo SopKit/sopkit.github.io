@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/shared/theme-provider";
 import { getAllTools, Tool } from "@/lib/tools";
-import { SITE_URL, TOOL_COUNT_STRING } from "@/constants/config";
+import { SITE_URL, TOOL_COUNT_STRING, GITHUB_REPO_URL } from "@/constants/config";
 import "./globals.css";
 import Script from "next/script";
 import { Inter, Newsreader } from "next/font/google";
@@ -275,9 +275,9 @@ export default function RootLayout({
 						"@type": "Organization",
 						name: "SopKit",
 						url: `${SITE_URL}/`,
-						logo: `${SITE_URL}/favicon.ico`,
+						logo: `${SITE_URL}/logo.png`,
 						sameAs: [
-							"https://github.com/SopKit/sopkit.github.io",
+							GITHUB_REPO_URL,
 						],
 						description: `Privacy-first free online toolkit with ${TOOL_COUNT_STRING} browser-based tools.`,
 					}),

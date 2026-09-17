@@ -23,7 +23,7 @@ This redesign transforms SopKit from a client-heavy repository into an enterpris
 ### 3. Centralized SEO, AEO & GEO Platform (`src/seo/`)
 - **Centralized Registry**: Unified `config.ts`, `metadata.ts`, `canonical.ts`, `structured-data.ts`, `entities.ts`, and `validators.ts`.
 - **Structured Data**: Automatic generation of standards-compliant Schema.org JSON-LD (`WebSite`, `Organization`, `SoftwareApplication`, `BreadcrumbList`, `FAQPage`, `HowTo`).
-- **Strict Canonicalization**: Automated stripping of UTM/tracking parameters and normalization of URLs to `https://sopkit.github.io/<slug>`.
+- **Strict Canonicalization**: Automated stripping of UTM/tracking parameters and normalization of URLs to `https://sopkit.space/<slug>`.
 
 ### 4. Edge Backend Platform (`sopkit-backend/`)
 - **Independent Micro-Service Layer**: Standalone Hono edge service ready for Cloudflare Workers (`wrangler.toml`).

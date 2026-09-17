@@ -1,0 +1,33 @@
+{
+  "name": "@sopkit/hash",
+  "version": "1.0.0",
+  "description": "Ultra-fast, zero-dependency hashing library (SHA-256, SHA-512, SHA-1, MD5, HMAC) for Browser and Node.js.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "sopkit",
+    "hash",
+    "sha256",
+    "sha512",
+    "sha1",
+    "md5",
+    "hmac",
+    "crypto",
+    "webcrypto"
+  ],
+  "author": "SopKit",
+  "license": "MIT",
+  "homepage": "https://sopkit.space/hash-generator/"
+}

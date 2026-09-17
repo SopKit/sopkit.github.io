@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { ShieldCheck, Lock, Eye, CheckCircle2, Cpu } from "lucide-react";
@@ -7,12 +8,12 @@ export const metadata = {
 	description: "Verify how SopKit processes your PDFs, images, and developer data securely inside your browser. No files are uploaded, 100% local, sandboxed WebAssembly execution.",
 	keywords: "trust center, safe pdf compressor, secure document editor, HIPAA compliant pdf editor online, local code converter, gdpr compliant online tools",
 	alternates: {
-		canonical: "https://sopkit.space/trust-center/",
+		canonical: `${SITE_URL}/trust-center/`,
 	},
 	openGraph: {
 		title: "SopKit Trust & Safety Center - 100% Client-Side Local Utilities",
 		description: "Verify how SopKit processes your PDFs, images, and developer data securely inside your browser. No files are uploaded, 100% local, sandboxed WebAssembly execution.",
-		url: "https://sopkit.space/trust-center/",
+		url: `${SITE_URL}/trust-center/`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -44,7 +45,7 @@ export default async function TrustCenterPage() {
 						"@context": "https://schema.org",
 						"@type": "WebPage",
 						name: "SopKit Trust & Safety Center",
-						url: "https://sopkit.space/trust-center/",
+						url: `${SITE_URL}/trust-center/`,
 						description: tool.description,
 					}),
 				}}

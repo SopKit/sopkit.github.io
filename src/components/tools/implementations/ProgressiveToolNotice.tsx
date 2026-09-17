@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { STATIC_ROUTES } from "@/lib/tools";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { GITHUB_REPO_URL } from "@/constants/config";
 
 export default function ProgressiveToolNotice({ toolId }: { toolId: string }) {
 	const title = toolId
@@ -27,7 +28,7 @@ export default function ProgressiveToolNotice({ toolId }: { toolId: string }) {
 				<span className="text-muted-foreground">·</span>
 				<a
 					className="text-primary underline-offset-4 hover:underline"
-					href="https://github.com/SopKit/sopkit.github.io/issues"
+					href={`${GITHUB_REPO_URL}/issues`}
 					target="_blank"
 					rel="noreferrer"
 				>

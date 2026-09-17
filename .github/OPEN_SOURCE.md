@@ -53,6 +53,6 @@ We invite developers, designers, and SEO experts to help us build the future of 
 
 <div align="center">
 
-[GitHub](https://github.com/SopKit/sopkit.github.io) • [Website](https://sopkit.github.io) • [Contact](mailto:hello@sopkit.github.io)
+[GitHub](https://github.com/SopKit/sopkit.github.io) • [Website](https://sopkit.space) • [Contact](mailto:hello@sopkit.github.io)
 
 </div>

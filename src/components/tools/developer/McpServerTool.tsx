@@ -70,7 +70,7 @@ export default function McpServerTool() {
 
         if (language === "typescript") {
             code = `// ${serverName} - Model Context Protocol (MCP) Server
-// Generated dynamically on sopkit.github.io
+// Generated dynamically on sopkit.space
 // Date: ${timestamp}
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
@@ -157,7 +157,7 @@ run().catch(console.error);
         } else {
             // Python MCP Server
             code = `# ${serverName} - Model Context Protocol (MCP) Server
-# Generated dynamically on sopkit.github.io
+# Generated dynamically on sopkit.space
 # Date: ${timestamp}
 
 import asyncio

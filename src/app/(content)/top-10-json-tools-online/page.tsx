@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
@@ -6,12 +7,12 @@ export const metadata = {
 	description: "The 10 JSON tools worth bookmarking: formatter, validator, viewer, diff, minifier, and every converter from CSV to TypeScript. Free and browser-based.",
 	keywords: "top 10 json tools online for faster developer workflows, top 10 json tools online for faster developer workflows guide, SopKit, top-10-json-tools-online, top 10 json tools online, free top-10-json-tools-online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.space/top-10-json-tools-online",
+		canonical: `${SITE_URL}/top-10-json-tools-online`,
 	},
 	openGraph: {
 		title: "Top 10 JSON Tools Online for Faster Developer Workflows | SopKit",
 		description: "The 10 JSON tools worth bookmarking: formatter, validator, viewer, diff, minifier, and every converter from CSV to TypeScript. Free and browser-based.",
-		url: "https://sopkit.space/top-10-json-tools-online",
+		url: `${SITE_URL}/top-10-json-tools-online`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +48,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.space/top-10-json-tools-online/",
+						url: `${SITE_URL}/top-10-json-tools-online/`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

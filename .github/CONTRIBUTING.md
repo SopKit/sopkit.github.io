@@ -1,6 +1,6 @@
 # Contributing to SopKit
 
-![SopKit](https://sopkit.github.io/og-image.jpg)
+![SopKit](https://sopkit.space/og-image.jpg)
 
 First off, thank you for considering contributing to **SopKit**! With over **733+ tools** and a massive SEO ecosystem, your help is vital in making this the premier open-source utility engine.
 

@@ -1,7 +1,7 @@
 /**
  * SopKit JWT Utilities
  * Premium, zero-dependency JWT (JSON Web Token) parser and format validator.
- * Link: https://sopkit.github.io/jwt-decoder/
+ * Link: https://sopkit.space/jwt-decoder/
  */
 interface DecodedJWT {
     /**

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield } from "lucide-react";
@@ -8,12 +9,12 @@ export const metadata = {
 	description: "Learn how SopKit handles data: local browser sandbox execution for file utilities, external API disclosures for generative tools, and privacy-conscious analytics.",
 	keywords: "privacy policy, SopKit privacy, data protection, browser tools privacy, local processing, client-side tools",
 	alternates: {
-		canonical: "https://sopkit.space/privacy/",
+		canonical: `${SITE_CONFIG.siteUrl}/privacy/`,
 	},
 	openGraph: {
 		title: "Privacy Policy — Transparent Data Practices | SopKit",
 		description: "Learn how SopKit handles data: local browser sandbox execution for file utilities, external API disclosures for generative tools, and privacy-conscious analytics.",
-		url: "https://sopkit.space/privacy/",
+		url: `${SITE_CONFIG.siteUrl}/privacy/`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -46,7 +47,7 @@ export default async function PrivacyPage() {
 						"@type": "WebPage",
 						name: "Privacy Policy",
 						description: tool.description,
-						url: "https://sopkit.space/privacy/",
+						url: `${SITE_URL}/privacy/`,
 						publisher: { "@type": "Organization", name: "SopKit" },
 					}),
 				}}
@@ -66,7 +67,7 @@ export default async function PrivacyPage() {
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">1. Overview & Commitment to Transparency</h2>
 								<p className="text-sm leading-relaxed">
-									SopKit (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) operates <a href="https://sopkit.space" className="text-primary underline">sopkit.github.io</a>. We believe in providing free, fast web utilities while being completely transparent about how data is processed, which tools run locally in your browser, which tools communicate with external services, and what telemetry is collected.
+									SopKit (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) operates <a href={SITE_CONFIG.siteUrl} className="text-primary underline">{SITE_CONFIG.domain}</a>. We believe in providing free, fast web utilities while being completely transparent about how data is processed, which tools run locally in your browser, which tools communicate with external services, and what telemetry is collected.
 								</p>
 							</section>
 

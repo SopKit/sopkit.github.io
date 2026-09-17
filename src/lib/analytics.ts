@@ -6,6 +6,8 @@
  * Strictly zero PII: no file names, text content, or personal identifiers are recorded.
  */
 
+import { SITE_URL } from "@/constants/config";
+
 export const GA_MEASUREMENT_ID =
 	process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-HKX99R92SE";
 
@@ -75,7 +77,7 @@ export function trackPageView(url: string, title?: string) {
 
 	// Strip query parameters and hash fragments to prevent leaking tokens or query state
 	const cleanPath = (url || "/").split("?")[0].split("#")[0] || "/";
-	const origin = typeof window !== "undefined" ? window.location.origin : "https://sopkit.space";
+	const origin = typeof window !== "undefined" ? window.location.origin : SITE_URL;
 
 	sendGAEvent("page_view", {
 		page_location: `${origin}${cleanPath}`,
@@ -230,7 +232,7 @@ export function trackThemeChange(theme: "light" | "dark" | "system") {
  */
 export function trackOutboundClick(destinationUrl: string, linkText?: string) {
 	try {
-		const parsed = new URL(destinationUrl, "https://sopkit.space");
+		const parsed = new URL(destinationUrl, SITE_URL);
 		// Only send origin + pathname to prevent leaking query tokens or credentials
 		const sanitizedUrl = `${parsed.origin}${parsed.pathname}`;
 		sendGAEvent("outbound_click", {
@@ -287,3 +289,99 @@ export function trackWebVital(metric: {
 		non_interaction: true,
 	});
 }
+
+/**
+ * Detect client execution environment metadata for GA4 user/session properties (zero PII)
+ */
+export function getClientEnvironmentProperties(): Record<string, any> {
+	if (typeof window === "undefined") return {};
+	try {
+		const isPwa = window.matchMedia("(display-mode: standalone)").matches || (window.navigator as any).standalone === true;
+		const connection = (navigator as any).connection || (navigator as any).mozConnection || (navigator as any).webkitConnection;
+		const memory = (navigator as any).deviceMemory ? `${(navigator as any).deviceMemory}GB` : "unknown";
+		const concurrency = navigator.hardwareConcurrency ? `${navigator.hardwareConcurrency}` : "unknown";
+		const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+		return {
+			is_pwa: isPwa,
+			connection_effective_type: connection?.effectiveType || "unknown",
+			device_memory_tier: memory,
+			hardware_concurrency: concurrency,
+			prefers_reduced_motion: prefersReducedMotion,
+			screen_pixel_ratio: Math.round(window.devicePixelRatio || 1),
+		};
+	} catch {
+		return {};
+	}
+}
+
+/**
+ * Track PWA Installation prompt decisions
+ */
+export function trackPWAInstall(outcome: "accepted" | "dismissed") {
+	sendGAEvent("pwa_install_prompt", {
+		install_outcome: outcome,
+		...getClientEnvironmentProperties(),
+	});
+}
+
+/**
+ * Track Tool Social & Clipboard Sharing
+ */
+export function trackShare(toolId: string, method: "native_share" | "clipboard") {
+	sendGAEvent("share", {
+		method,
+		content_type: "tool",
+		item_id: toolId,
+	});
+}
+
+/**
+ * Track Granular Tool Execution Telemetry
+ */
+export function trackToolExecution(
+	toolId: string,
+	options: {
+		durationMs?: number;
+		success: boolean;
+		inputLengthBracket?: string;
+		action?: string;
+		category?: string;
+	}
+) {
+	sendGAEvent("tool_execution", {
+		tool_id: toolId,
+		tool_category: options.category || "utility",
+		action_type: options.action || "execute",
+		is_successful: options.success,
+		duration_ms: options.durationMs ? Math.round(options.durationMs) : undefined,
+		input_bracket: options.inputLengthBracket,
+		execution_engine: "client_browser",
+		...getClientEnvironmentProperties(),
+	});
+}
+
+/**
+ * Track Offline Tool Usage (Local ServiceWorker PWA capability)
+ */
+export function trackOfflineUsage(toolId: string) {
+	sendGAEvent("offline_tool_usage", {
+		tool_id: toolId,
+		is_offline: true,
+		timestamp: Date.now(),
+	});
+}
+
+/**
+ * Track NPM Package Installation Command Copying
+ */
+export function trackPackageCopy(
+	packageName: string,
+	packageManager: "npm" | "pnpm" | "yarn" | "bun" | "npx" = "npm"
+) {
+	sendGAEvent("package_copy", {
+		package_name: packageName,
+		package_manager: packageManager,
+	});
+}
+

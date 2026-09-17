@@ -8,9 +8,10 @@ import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 import { QrCode, Download, Settings, Palette, Type, Image as ImageIcon, Loader2 } from "lucide-react";
+import { SITE_URL } from "@/constants/config";
 
 export default function QrGeneratorPremium({
-    initialText = "https://sopkit.space",
+    initialText = SITE_URL,
 }: {
     initialText?: string;
 }) {

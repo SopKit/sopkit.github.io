@@ -6,4 +6,4 @@ compatibility_flags = ["nodejs_compat"]
 [vars]
 ENVIRONMENT = "production"
 MAX_PAYLOAD_SIZE_MB = 25
-ALLOWED_ORIGIN = "https://sopkit.github.io"
+ALLOWED_ORIGIN = "https://sopkit.space"

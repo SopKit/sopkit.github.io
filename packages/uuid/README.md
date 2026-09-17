@@ -1,12 +1,12 @@
 # `@sopkit/uuid`
 
-[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.github.io/uuid-generator/)
-[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.github.io/uuid-generator/)
+[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.space/uuid-generator/)
+[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.space/uuid-generator/)
 
 Premium, lightweight UUID v4 and v1 generator and validator for Browser and Node.js. Part of the SopKit utility ecosystem.
 
 ## Online Interactive Tool
-You can use the browser-based interactive version of this tool at [SopKit UUID Generator](https://sopkit.github.io/uuid-generator/).
+You can use the browser-based interactive version of this tool at [SopKit UUID Generator](https://sopkit.space/uuid-generator/).
 
 ## Features
 - Cryptographically secure UUID v4 generation using Web Crypto API.
@@ -51,4 +51,4 @@ console.log(validate(id)); // true
 ```
 
 ## License
-MIT © [SopKit](https://sopkit.github.io/)
+MIT © [SopKit](https://sopkit.space/)

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { ArrowUpRight } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/config";
@@ -7,12 +8,12 @@ export const metadata = {
 	description: "Reach the SopKit team for support, feedback or partnerships. We reply fast — find every channel here.",
 	keywords: "contact SopKit, support, feedback, help, contact, request tool, SopKit support, report bug",
 	alternates: {
-		canonical: "https://sopkit.space/contact",
+		canonical: `${SITE_URL}/contact`,
 	},
 	openGraph: {
 		title: "Contact SopKit — Support & Feedback",
 		description: "Reach the SopKit team for support, feedback or partnerships. We reply fast — find every channel here.",
-		url: "https://sopkit.space/contact",
+		url: `${SITE_URL}/contact`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -45,7 +46,7 @@ export default async function ToolPage() {
 						"@type": "ContactPage",
 						name: "Contact SopKit",
 						description: tool.description,
-						url: "https://sopkit.space/contact/",
+						url: `${SITE_URL}/contact/`,
 						mainEntity: {
 							"@type": "ContactPoint",
 							email: SITE_CONFIG.contactEmail,

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
@@ -5,7 +6,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "Free Online Calculators - Math, Finance, Academic & Student Tools | SopKit",
 	description: "Free online calculators for math, GPA, attendance, loan estimations, and business markup. Get instant calculations without signing up.",
-	alternates: { canonical: "https://sopkit.space/calculator-tools/" },
+	alternates: { canonical: `${SITE_URL}/calculator-tools/` },
 };
 
 export default function CalculatorToolsHub() {

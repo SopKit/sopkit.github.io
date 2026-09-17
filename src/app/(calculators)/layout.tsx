@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 export const metadata = {
 	title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
 	description:
@@ -8,7 +9,7 @@ export const metadata = {
 		title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
 		description:
 			"Free online calculators for finance, health, math, and daily life. BMI calculator, loan calculator, percentage calculator, and more. No signup, instant results.",
-		url: "https://sopkit.space/calculators/",
+		url: `${SITE_URL}/calculators/`,
 		siteName: "SopKit",
 		images: [
 			{
@@ -37,38 +38,38 @@ const jsonLdSchemas = {
 		name: "Free Online Calculators Collection",
 		description:
 			"A comprehensive collection of free online calculators for finance, health, math, and everyday needs.",
-		url: "https://sopkit.space/calculators/",
+		url: `${SITE_URL}/calculators/`,
 		mainEntity: {
 			"@type": "ItemList",
 			itemListElement: [
 				{
 					"@type": "ListItem",
 					position: 1,
-					url: "https://sopkit.space/percentage-calculator/",
+					url: `${SITE_URL}/percentage-calculator/`,
 					name: "Percentage Calculator",
 				},
 				{
 					"@type": "ListItem",
 					position: 2,
-					url: "https://sopkit.space/loan-calculator/",
+					url: `${SITE_URL}/loan-calculator/`,
 					name: "Loan Calculator",
 				},
 				{
 					"@type": "ListItem",
 					position: 3,
-					url: "https://sopkit.space/age-calculator/",
+					url: `${SITE_URL}/age-calculator/`,
 					name: "Age Calculator",
 				},
 				{
 					"@type": "ListItem",
 					position: 4,
-					url: "https://sopkit.space/discount-calculator/",
+					url: `${SITE_URL}/discount-calculator/`,
 					name: "Discount Calculator",
 				},
 				{
 					"@type": "ListItem",
 					position: 5,
-					url: "https://sopkit.space/sales-tax-calculator/",
+					url: `${SITE_URL}/sales-tax-calculator/`,
 					name: "Sales Tax Calculator",
 				},
 			],

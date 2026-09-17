@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import YouTubeDownloader from "@/components/tools/downloaders/YouTubeDownloader";
@@ -8,12 +9,12 @@ export const metadata = {
 	description: "Download high-resolution YouTube channel banners and covers instantly. Our free tool helps you save channel branding for design reference or archiving...",
 	keywords: "youtube channel banner downloader, free online tool, no signup, youtube-channel-banner-downloader, free youtube-channel-banner-downloader, Youtube Channel Banner Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://sopkit.space/youtube-channel-banner-downloader/",
+		canonical: `${SITE_URL}/youtube-channel-banner-downloader/`,
 	},
 	openGraph: {
 		title: "Free YouTube Channel Banner Downloader Online - No Signup | SopKit",
 		description: "Download high-resolution YouTube channel banners and covers instantly. Our free tool helps you save channel branding for design reference or archiving...",
-		url: "https://sopkit.space/youtube-channel-banner-downloader/",
+		url: `${SITE_URL}/youtube-channel-banner-downloader/`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

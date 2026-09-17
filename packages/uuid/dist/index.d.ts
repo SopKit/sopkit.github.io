@@ -1,7 +1,7 @@
 /**
  * SopKit UUID Utilities
  * Premium, zero-dependency UUID (Universally Unique Identifier) generator and validator.
- * Link: https://sopkit.github.io/uuid-generator/
+ * Link: https://sopkit.space/uuid-generator/
  */
 /**
  * Generates a cryptographically secure UUID v4 (Random).

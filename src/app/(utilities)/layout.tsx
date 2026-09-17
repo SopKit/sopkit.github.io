@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 		title: "Free Utility Tools Online - No Signup | SopKit",
 		description:
 			"85+ free utility tools — speed test, password generator, QR codes, converters, and calculators. No signup required.",
-		url: "https://sopkit.space/other-tools/",
+		url: `${SITE_URL}/other-tools/`,
 		siteName: "SopKit",
 		images: [
 			{

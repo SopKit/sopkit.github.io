@@ -12,10 +12,12 @@ import {
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
+import { SITE_URL } from "@/constants/config";
+
 interface SocialShareButtonsProps {
 	toolName: string;
 	toolDescription: string;
-	toolUrl: string;
+	toolUrl?: string;
 	category?: string;
 	customMessage?: string | null;
 }
@@ -29,17 +31,23 @@ const SocialShareButtons = ({
 }: SocialShareButtonsProps) => {
 	const [copied, setCopied] = useState(false);
 
+	const resolvedUrl = toolUrl
+		? (toolUrl.startsWith("http://") || toolUrl.startsWith("https://")
+			? toolUrl
+			: `${SITE_URL}${toolUrl.startsWith("/") ? "" : "/"}${toolUrl}`)
+		: (typeof window !== "undefined" ? window.location.href : SITE_URL);
+
 	// Generate attractive share messages
 	const generateShareText = (platform: string) => {
 		if (customMessage) return customMessage;
 
 		const messages: Record<string, string> = {
-			twitter: `🚀 Just discovered ${toolName} on SopKit! ${toolDescription} Perfect for ${category} work. Try it free: ${toolUrl} #${category}tools #webtools #free`,
-			facebook: `Amazing free tool alert! 🎉 ${toolName} - ${toolDescription}. This saved me so much time! Check it out at ${toolUrl}`,
-			linkedin: `Productivity boost: ${toolName} 📈 ${toolDescription} Great tool for professionals. Available free at ${toolUrl}`,
-			whatsapp: `Hey! Found this amazing free tool: ${toolName} - ${toolDescription} Check it out: ${toolUrl}`,
-			email: `Subject: Great Free Tool - ${toolName}\n\nHi!\n\nI found this amazing free tool that might interest you:\n\n${toolName}\n${toolDescription}\n\nYou can try it here: ${toolUrl}\n\nBest regards!`,
-			copy: `${toolName} - ${toolDescription} Try it free: ${toolUrl}`,
+			twitter: `🚀 Just discovered ${toolName} on SopKit! ${toolDescription} Perfect for ${category} work. Try it free: ${resolvedUrl} #${category}tools #webtools #free`,
+			facebook: `Amazing free tool alert! 🎉 ${toolName} - ${toolDescription}. This saved me so much time! Check it out at ${resolvedUrl}`,
+			linkedin: `Productivity boost: ${toolName} 📈 ${toolDescription} Great tool for professionals. Available free at ${resolvedUrl}`,
+			whatsapp: `Hey! Found this amazing free tool: ${toolName} - ${toolDescription} Check it out: ${resolvedUrl}`,
+			email: `Subject: Great Free Tool - ${toolName}\n\nHi!\n\nI found this amazing free tool that might interest you:\n\n${toolName}\n${toolDescription}\n\nYou can try it here: ${resolvedUrl}\n\nBest regards!`,
+			copy: `${toolName} - ${toolDescription} Try it free: ${resolvedUrl}`,
 		};
 
 		return messages[platform] || messages.copy;
@@ -47,8 +55,8 @@ const SocialShareButtons = ({
 
 	const shareUrls: Record<string, string> = {
 		twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(generateShareText("twitter"))}`,
-		facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(toolUrl)}&quote=${encodeURIComponent(generateShareText("facebook"))}`,
-		linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(toolUrl)}&title=${encodeURIComponent(toolName)}&summary=${encodeURIComponent(generateShareText("linkedin"))}`,
+		facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(resolvedUrl)}&quote=${encodeURIComponent(generateShareText("facebook"))}`,
+		linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(resolvedUrl)}&title=${encodeURIComponent(toolName)}&summary=${encodeURIComponent(generateShareText("linkedin"))}`,
 		whatsapp: `https://wa.me/?text=${encodeURIComponent(generateShareText("whatsapp"))}`,
 		email: `mailto:?${generateShareText("email").replace("Subject: ", "subject=").replace("\n\n", "&body=").replace(/\n/g, "%0D%0A")}`,
 	};

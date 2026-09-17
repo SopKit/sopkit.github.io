@@ -27,11 +27,11 @@ An interactive prompt-driven terminal interface to use all SopKit utilities dire
 
 | Package | Purpose | Installation | Live Tool Link |
 |---------|---------|--------------|----------------|
-| **`@sopkit/base64`** | Full Unicode and URL-Safe Base64 encoding & decoding | `npm install @sopkit/base64` | [Base64 Encoder](https://sopkit.github.io/base64-encode/) |
-| **`@sopkit/uuid`** | Secure UUID v4 (random) and v1 (timestamp) generation & validation | `npm install @sopkit/uuid` | [UUID Generator](https://sopkit.github.io/uuid-generator/) |
-| **`@sopkit/slug`** | Accent-normalized, multilingual URL slug generator | `npm install @sopkit/slug` | [Slug Generator](https://sopkit.github.io/slug-generator/) |
-| **`@sopkit/json`** | JSON syntax validator with line/column checks, pretty formatting, and minification | `npm install @sopkit/json` | [JSON Formatter](https://sopkit.github.io/json-formatter/) |
-| **`@sopkit/color`** | Color space conversions supporting HEX, RGB, and HSL formats | `npm install @sopkit/color` | [Color Converter](https://sopkit.github.io/color-converter/) |
+| **`@sopkit/base64`** | Full Unicode and URL-Safe Base64 encoding & decoding | `npm install @sopkit/base64` | [Base64 Encoder](https://sopkit.space/base64-encode/) |
+| **`@sopkit/uuid`** | Secure UUID v4 (random) and v1 (timestamp) generation & validation | `npm install @sopkit/uuid` | [UUID Generator](https://sopkit.space/uuid-generator/) |
+| **`@sopkit/slug`** | Accent-normalized, multilingual URL slug generator | `npm install @sopkit/slug` | [Slug Generator](https://sopkit.space/slug-generator/) |
+| **`@sopkit/json`** | JSON syntax validator with line/column checks, pretty formatting, and minification | `npm install @sopkit/json` | [JSON Formatter](https://sopkit.space/json-formatter/) |
+| **`@sopkit/color`** | Color space conversions supporting HEX, RGB, and HSL formats | `npm install @sopkit/color` | [Color Converter](https://sopkit.space/color-converter/) |
 
 ---
 

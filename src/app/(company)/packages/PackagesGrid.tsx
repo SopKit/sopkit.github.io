@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, ExternalLink, Copy, Check } from "lucide-react";
 import { GridPattern } from "@/components/shared/GridPattern";
+import { GITHUB_REPO_URL } from "@/constants/config";
+import { trackPackageCopy } from "@/lib/analytics";
 
 const PACKAGES_DATA = [
 	{
@@ -11,16 +13,26 @@ const PACKAGES_DATA = [
 		name: "@sopkit/cli",
 		description: "An interactive, prompt-driven terminal interface to use all SopKit developer utilities directly from your command-line.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/cli",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/cli",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/cli`,
 		installCmd: "npx @sopkit/cli",
 		badge: "CLI Utility",
+	},
+	{
+		id: "hash",
+		name: "@sopkit/hash",
+		description: "Ultra-fast cryptographic hashing suite (SHA-256, SHA-512, SHA-1, MD5, HMAC) with timing-safe comparisons.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/hash",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/hash`,
+		installCmd: "npm install @sopkit/hash",
+		badge: "Crypto & Hash",
+		toolLink: "/sha256-hash-generator",
 	},
 	{
 		id: "base64",
 		name: "@sopkit/base64",
 		description: "High-performance, URL-safe Base64 encoding & decoding supporting full Unicode and UTF-8 characters.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/base64",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/base64",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/base64`,
 		installCmd: "npm install @sopkit/base64",
 		badge: "Encoding",
 		toolLink: "/base64-encoder-decoder",
@@ -30,7 +42,7 @@ const PACKAGES_DATA = [
 		name: "@sopkit/uuid",
 		description: "Cryptographically secure UUID v4 (random) and v1 (timestamp) generation and validation library.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/uuid",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/uuid",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/uuid`,
 		installCmd: "npm install @sopkit/uuid",
 		badge: "Security & ID",
 		toolLink: "/uuid-generator",
@@ -40,7 +52,7 @@ const PACKAGES_DATA = [
 		name: "@sopkit/slug",
 		description: "Accent-normalized, multilingual URL slug generator built for SEO-friendly routing and clean slugs.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/slug",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/slug",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/slug`,
 		installCmd: "npm install @sopkit/slug",
 		badge: "SEO / Text",
 		toolLink: "/slug-generator",
@@ -50,7 +62,7 @@ const PACKAGES_DATA = [
 		name: "@sopkit/password",
 		description: "Secure local client-side password entropy evaluator and custom validator matching strict security patterns.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/password",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/password",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/password`,
 		installCmd: "npm install @sopkit/password",
 		badge: "Crypto",
 		toolLink: "/secure-password-generator",
@@ -60,19 +72,60 @@ const PACKAGES_DATA = [
 		name: "@sopkit/color",
 		description: "Ultra-fast color code parser and dual conversion utility (HEX, RGB, HSL) with zero external dependencies.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/color",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/color",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/color`,
 		installCmd: "npm install @sopkit/color",
 		badge: "Design",
 		toolLink: "/rgb-to-hex-converter",
+	},
+	{
+		id: "json",
+		name: "@sopkit/json",
+		description: "High-performance JSON formatter, minifier, and validator with precise line and column syntax error detection.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/json",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/json`,
+		installCmd: "npm install @sopkit/json",
+		badge: "Developer Tools",
+		toolLink: "/json-formatter",
+	},
+	{
+		id: "validator",
+		name: "@sopkit/validator",
+		description: "Strict, zero-dependency validation suite for emails, domains, URLs, IP addresses, and credit cards.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/validator",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/validator`,
+		installCmd: "npm install @sopkit/validator",
+		badge: "Validation",
+		toolLink: "/email-validator",
+	},
+	{
+		id: "xml",
+		name: "@sopkit/xml",
+		description: "Lightweight, zero-dependency XML parser, formatter, validator, and minifier with customizable indentation.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/xml",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/xml`,
+		installCmd: "npm install @sopkit/xml",
+		badge: "Developer Tools",
+		toolLink: "/xml-formatter",
+	},
+	{
+		id: "jwt",
+		name: "@sopkit/jwt",
+		description: "Unicode-safe JSON Web Token (JWT) decoder and format validator checking claims, header, and payload client-side.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/jwt",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/jwt`,
+		installCmd: "npm install @sopkit/jwt",
+		badge: "Security & Auth",
+		toolLink: "/jwt-decoder",
 	}
 ];
 
 export default function PackagesGrid() {
 	const [copiedId, setCopiedId] = useState<string | null>(null);
 
-	const handleCopy = async (id: string, text: string) => {
+	const handleCopy = async (id: string, text: string, pkgName: string) => {
 		try {
 			await navigator.clipboard.writeText(text);
+			trackPackageCopy(pkgName, text.startsWith("npx") ? "npx" : "npm");
 			setCopiedId(id);
 			setTimeout(() => setCopiedId(null), 2000);
 		} catch (err) {
@@ -126,7 +179,7 @@ export default function PackagesGrid() {
 									<div className="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-zinc-950/90 border border-border/20 font-mono text-[11px] text-zinc-300 shadow-inner group/copy">
 										<span className="truncate select-all">{pkg.installCmd}</span>
 										<button
-											onClick={() => handleCopy(pkg.id, pkg.installCmd)}
+											onClick={() => handleCopy(pkg.id, pkg.installCmd, pkg.name)}
 											className="p-1.5 hover:bg-zinc-800 rounded-lg text-muted-foreground hover:text-foreground transition-colors shrink-0"
 										>
 											{copiedId === pkg.id ? (

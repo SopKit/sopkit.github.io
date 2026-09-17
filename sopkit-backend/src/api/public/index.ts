@@ -11,7 +11,7 @@ publicRouter.get("/tools", (c) => {
   return c.json({
     message: "Public tools catalog",
     version: "1.0",
-    docs: "https://sopkit.github.io/docs",
+    docs: "https://sopkit.space/docs",
   });
 });
 

@@ -14,7 +14,7 @@ const app = new Hono();
 
 // Global middleware
 app.use("*", cors({
-  origin: ["https://sopkit.github.io", "http://localhost:3000"],
+  origin: ["https://sopkit.space", "https://sopkit.github.io", "http://localhost:3000"],
   allowMethods: ["GET", "POST", "OPTIONS"],
   allowHeaders: ["Content-Type", "Authorization", "X-Request-Id"],
   maxAge: 86400,

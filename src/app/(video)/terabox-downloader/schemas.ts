@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 export const jsonLdSchemas = {
 	webApp: {
 		"@context": "https://schema.org",
@@ -5,7 +6,7 @@ export const jsonLdSchemas = {
 		name: "Terabox Downloader Online Free - SopKit",
 		description:
 			"Best free online terabox downloader for downloading videos from tera box links and mdiskplay.",
-		url: "https://sopkit.space/terabox-downloader/",
+		url: `${SITE_URL}/terabox-downloader/`,
 		applicationCategory: "MultimediaApplication",
 		operatingSystem: "Any",
 		offers: {

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
@@ -22,7 +23,7 @@ export default async function ToolPage() {
 		"@context": "https://schema.org",
 		"@type": "WebApplication",
 		"name": "QR Code Reader",
-		"url": "https://sopkit.space/qr-code-reader/",
+		"url": `${SITE_URL}/qr-code-reader/`,
 		"applicationCategory": "UtilityApplication",
 		"operatingSystem": "All",
 		"browserRequirements": "Requires HTML5 support, camera access optionally",

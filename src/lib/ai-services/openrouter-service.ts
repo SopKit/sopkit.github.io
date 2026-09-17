@@ -1,5 +1,7 @@
 // "use server"
 // Core OpenRouter AI service for all text generation tasks
+import { SITE_URL, SITE_NAME } from "@/constants/config";
+
 const OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1";
 const DEFAULT_MODEL = "deepseek/deepseek-chat-v3-0324"; // Latest DeepSeek V3 model
 
@@ -45,8 +47,8 @@ async function createOpenRouterCompletion(
 			headers: {
 				Authorization: `Bearer ${apiKey}`,
 				"Content-Type": "application/json",
-				"HTTP-Referer": "https://sopkit.space",
-				"X-Title": "SopKit - Free Online Tools",
+				"HTTP-Referer": SITE_URL,
+				"X-Title": `${SITE_NAME} - Free Online Tools`,
 			},
 			body: JSON.stringify({
 				model,

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import AllDownloaders from "@/components/tools/downloaders/AllDownloaders";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { generateToolMetadata } from "@/lib/seo";
@@ -77,7 +78,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: "All Downloaders",
 						description: "All Downloaders",
-						url: "https://sopkit.space/all-downloaders/",
+						url: `${SITE_URL}/all-downloaders/`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "User Area | SopKit",
 		description: "Manage your SopKit account, preferences, and dashboard.",
-		url: "https://sopkit.space/account/",
+		url: `${SITE_URL}/account/`,
 		siteName: "SopKit",
 		type: "website",
 	},

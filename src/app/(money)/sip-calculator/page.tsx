@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
@@ -9,12 +10,12 @@ export const metadata = {
 	description: "Compute rates, taxes, averages, and conversions with our free SIP Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
 	keywords: "sip calculator india, free online tool, no signup, sip calculator india online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.space/sip-calculator",
+		canonical: `${SITE_URL}/sip-calculator`,
 	},
 	openGraph: {
 		title: "Free SIP Calculator India Online - No Signup | SopKit",
 		description: "Compute rates, taxes, averages, and conversions with our free SIP Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
-		url: "https://sopkit.space/sip-calculator",
+		url: `${SITE_URL}/sip-calculator`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

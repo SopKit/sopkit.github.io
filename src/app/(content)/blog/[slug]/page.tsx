@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogs, getBlogArticleBySlug } from "@/constants/blog-data";
@@ -68,19 +69,19 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 		author: {
 			"@type": "Organization",
 			name: "SopKit",
-			url: "https://sopkit.space",
+			url: SITE_URL,
 		},
 		publisher: {
 			"@type": "Organization",
 			name: "SopKit",
-			url: "https://sopkit.space",
+			url: SITE_URL,
 			logo: {
 				"@type": "ImageObject",
-				url: "https://sopkit.space/icons/icon-512x512.png/",
+				url: `${SITE_URL}/icons/icon-512x512.png/`,
 			},
 		},
 		mainEntityOfPage: `https://sopkit.space/blog/${article.slug}`,
-		image: "https://sopkit.space/og-image.jpg",
+		image: `${SITE_URL}/og-image.jpg`,
 	};
 
 	const breadcrumbSchema = {
@@ -91,13 +92,13 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 				"@type": "ListItem",
 				position: 1,
 				name: "Home",
-				item: "https://sopkit.space/",
+				item: `${SITE_URL}/`,
 			},
 			{
 				"@type": "ListItem",
 				position: 2,
 				name: "Blog",
-				item: "https://sopkit.space/blog/",
+				item: `${SITE_URL}/blog/`,
 			},
 			{
 				"@type": "ListItem",

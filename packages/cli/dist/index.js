@@ -9,18 +9,24 @@ import * as json from "@sopkit/json";
 import * as color from "@sopkit/color";
 import * as validator from "@sopkit/validator";
 import * as password from "@sopkit/password";
+import * as xml from "@sopkit/xml";
+import * as jwt from "@sopkit/jwt";
+import * as hash from "@sopkit/hash";
 async function main() {
   console.log("\n\u{1F680} Welcome to SopKit CLI \u2014 Interactive Developer Utilities");
-  console.log("Website: https://sopkit.github.io/\n");
+  console.log("Website: https://sopkit.space/\n");
   const response = await prompts({
     type: "select",
     name: "utility",
     message: "Select a SopKit utility to run:",
     choices: [
+      { title: "Hash (SHA-256 / SHA-512 / SHA-1 / MD5 / HMAC)", value: "hash" },
       { title: "Base64 (Encode / Decode)", value: "base64" },
       { title: "UUID (Generate v4 or v1)", value: "uuid" },
       { title: "URL Slug (Generate URL-safe Slug)", value: "slug" },
       { title: "JSON (Beautify / Minify / Validate)", value: "json" },
+      { title: "XML (Beautify / Minify / Validate)", value: "xml" },
+      { title: "JWT (Decode / Verify Format)", value: "jwt" },
       { title: "Color (HEX / RGB / HSL Conversion)", value: "color" },
       { title: "Validator (Email / URL / IP / Credit Card)", value: "validator" },
       { title: "Password (Generate / Strength Analyzer)", value: "password" },
@@ -32,6 +38,9 @@ async function main() {
     process.exit(0);
   }
   switch (response.utility) {
+    case "hash":
+      await runHash();
+      break;
     case "base64":
       await runBase64();
       break;
@@ -43,6 +52,12 @@ async function main() {
       break;
     case "json":
       await runJson();
+      break;
+    case "xml":
+      await runXml();
+      break;
+    case "jwt":
+      await runJwt();
       break;
     case "color":
       await runColor();
@@ -325,6 +340,158 @@ ${pass}
       res.suggestions.forEach((s) => console.log(`   - ${s}`));
     }
     console.log();
+  }
+}
+async function runXml() {
+  const action = await prompts({
+    type: "select",
+    name: "type",
+    message: "Select XML action:",
+    choices: [
+      { title: "Beautify (Format)", value: "format" },
+      { title: "Minify", value: "minify" },
+      { title: "Validate Syntax", value: "validate" }
+    ]
+  });
+  if (!action.type) return;
+  const input = await prompts({
+    type: "text",
+    name: "value",
+    message: "Enter XML string:"
+  });
+  if (!input.value) return;
+  try {
+    if (action.type === "format") {
+      const formatted = xml.format(input.value);
+      console.log(`
+\u2728 Formatted XML:
+${formatted}
+`);
+    } else if (action.type === "minify") {
+      const minified = xml.minify(input.value);
+      console.log(`
+\u2728 Minified XML:
+${minified}
+`);
+    } else if (action.type === "validate") {
+      const res = xml.validate(input.value);
+      if (res.valid) {
+        console.log("\n\u2705 Valid XML!\n");
+      } else {
+        console.log(`
+\u274C Invalid XML: ${res.error}
+`);
+      }
+    }
+  } catch (err) {
+    console.error(`
+\u274C Error: ${err.message}
+`);
+  }
+}
+async function runJwt() {
+  const action = await prompts({
+    type: "select",
+    name: "type",
+    message: "Select JWT action:",
+    choices: [
+      { title: "Decode Token Payload", value: "decode" },
+      { title: "Verify Format", value: "verify" }
+    ]
+  });
+  if (!action.type) return;
+  const input = await prompts({
+    type: "text",
+    name: "value",
+    message: "Enter JWT token:"
+  });
+  if (!input.value) return;
+  try {
+    if (action.type === "decode") {
+      const res = jwt.decode(input.value);
+      console.log(`
+\u2728 Decoded JWT:`);
+      console.log(`   Header:`, res.header);
+      console.log(`   Payload:`, res.payload);
+      console.log(`   Signature Hash: ${res.signature}
+`);
+    } else if (action.type === "verify") {
+      const valid = jwt.verifyFormat(input.value);
+      if (valid) {
+        console.log("\n\u2705 Valid JWT Format!\n");
+      } else {
+        console.log("\n\u274C Invalid JWT Format!\n");
+      }
+    }
+  } catch (err) {
+    console.error(`
+\u274C Error: ${err.message}
+`);
+  }
+}
+async function runHash() {
+  const action = await prompts({
+    type: "select",
+    name: "type",
+    message: "Select Hash algorithm:",
+    choices: [
+      { title: "SHA-256 Digest", value: "sha256" },
+      { title: "SHA-512 Digest", value: "sha512" },
+      { title: "SHA-1 Digest", value: "sha1" },
+      { title: "MD5 (Synchronous RFC 1321)", value: "md5" },
+      { title: "HMAC-SHA256 Signature", value: "hmac" }
+    ]
+  });
+  if (!action.type) return;
+  const input = await prompts({
+    type: "text",
+    name: "value",
+    message: "Enter input text to hash:"
+  });
+  if (!input.value) return;
+  try {
+    if (action.type === "sha256") {
+      const digest = await hash.sha256(input.value);
+      console.log(`
+\u2728 SHA-256:
+${digest}
+`);
+    } else if (action.type === "sha512") {
+      const digest = await hash.sha512(input.value);
+      console.log(`
+\u2728 SHA-512:
+${digest}
+`);
+    } else if (action.type === "sha1") {
+      const digest = await hash.sha1(input.value);
+      console.log(`
+\u2728 SHA-1:
+${digest}
+`);
+    } else if (action.type === "md5") {
+      const digest = hash.md5(input.value);
+      console.log(`
+\u2728 MD5:
+${digest}
+`);
+    } else if (action.type === "hmac") {
+      const keyPrompt = await prompts({
+        type: "password",
+        name: "key",
+        message: "Enter HMAC secret key:"
+      });
+      if (keyPrompt.key) {
+        const sig = await hash.hmacSha256(keyPrompt.key, input.value);
+        console.log(`
+\u2728 HMAC-SHA256:
+${sig}
+`);
+      }
+    }
+  } catch (err) {
+    console.error(`
+\u274C Error: ${err.message}
+`);
   }
 }
 main().catch((err) => {

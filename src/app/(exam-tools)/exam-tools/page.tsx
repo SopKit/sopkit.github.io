@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import ExamPillar from "@/components/pillars/ExamPillar";
 
@@ -6,12 +7,12 @@ export const metadata = {
 	description: "Prepare photos, signatures, and PDFs for online UPSC, SSC, NEET, and JEE forms. Crop, resize, and compress to exact KB limits securely in your browser.",
 	keywords: "exam tools, upsc photo resizer, ssc photo resizer, neet photo resizer, jee photo resizer, signature resizer 20kb, photo compressor 50kb, exam form resizer, SopKit exam",
 	alternates: {
-		canonical: "https://sopkit.space/exam-tools/",
+		canonical: `${SITE_URL}/exam-tools/`,
 	},
 	openGraph: {
 		title: "Free Exam Image & Form Tools Online - No Signup | SopKit",
 		description: "Prepare photos, signatures, and PDFs for online UPSC, SSC, NEET, and JEE forms. Crop, resize, and compress to exact KB limits securely in your browser.",
-		url: "https://sopkit.space/exam-tools/",
+		url: `${SITE_URL}/exam-tools/`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

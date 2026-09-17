@@ -1,6 +1,6 @@
 import React from "react";
 import type { Tool } from "@/lib/tools";
-import { SITE_CONFIG, SITE_URL } from "@/constants/config";
+import { SITE_CONFIG, SITE_URL, GITHUB_REPO_URL } from "@/constants/config";
 
 
 export interface JsonLdProps {
@@ -40,8 +40,8 @@ export function JsonLd({
 			"@type": "Organization",
 			name: "SopKit",
 			url: `${SITE_URL}/`,
-			logo: `${SITE_URL}/favicon.ico`,
-			sameAs: ["https://github.com/SopKit/sopkit.github.io"],
+			logo: `${SITE_URL}/logo.png`,
+			sameAs: [GITHUB_REPO_URL],
 			description: `Privacy-first free online toolkit with ${SITE_CONFIG.toolCountString} browser-based tools.`,
 		};
 

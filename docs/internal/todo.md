@@ -181,8 +181,8 @@ get apis from = https://www.urwatools.com/en/pinterest-video-downloader
 
 ---
 
-https://sopkit.github.io/png-to-pdf, https://sopkit.github.io/jpg-to-pdf and there are so many 404 pages either remove them or create them from the website contents 
+https://sopkit.space/png-to-pdf, https://sopkit.space/jpg-to-pdf and there are so many 404 pages either remove them or create them from the website contents 
 
 https://www.urwatools.com/downloaders
 
-completely delete https://sopkit.github.io/blogs/ -->
+completely delete https://sopkit.space/blogs/ -->

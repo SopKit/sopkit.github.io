@@ -1,7 +1,7 @@
 /**
  * SopKit Password Utilities
  * Premium, zero-dependency password generator and strength analyzer.
- * Link: https://sopkit.github.io/password-generator/
+ * Link: https://sopkit.space/password-generator/
  */
 interface GeneratorOptions {
     length?: number;

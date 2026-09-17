@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import { blogs } from "@/constants/blog-data";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
@@ -9,12 +10,12 @@ export const metadata = {
 	description: "Tutorials, comparisons and productivity guides from the SopKit team. Learn the tools — free forever.",
 	keywords: "SopKit blog, free online tools guides, seo tutorials, json guides, converter tutorials, no signup tools",
 	alternates: {
-		canonical: "https://sopkit.space/blog",
+		canonical: `${SITE_URL}/blog`,
 	},
 	openGraph: {
 		title: "SopKit Blog — Guides & Tool Tips | SopKit",
 		description: "Tutorials, comparisons and productivity guides from the SopKit team. Learn the tools — free forever.",
-		url: "https://sopkit.space/blog",
+		url: `${SITE_URL}/blog`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -45,7 +46,7 @@ export default function BlogPage() {
 		"@type": "CollectionPage",
 		name: "Blog & Guides for Free Online Tools",
 		description: "Actionable guides, tool lists, and tutorials for SEO, developer workflows, and everyday online conversion tasks.",
-		url: "https://sopkit.space/blog/",
+		url: `${SITE_URL}/blog/`,
 		mainEntity: {
 			"@type": "ItemList",
 			itemListElement: sortedArticles.slice(0, 10).map((article, i) => ({
@@ -65,13 +66,13 @@ export default function BlogPage() {
 				"@type": "ListItem",
 				position: 1,
 				name: "Home",
-				item: "https://sopkit.space/",
+				item: `${SITE_URL}/`,
 			},
 			{
 				"@type": "ListItem",
 				position: 2,
 				name: "Blog",
-				item: "https://sopkit.space/blog/",
+				item: `${SITE_URL}/blog/`,
 			},
 		],
 	};

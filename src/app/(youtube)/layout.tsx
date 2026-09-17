@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 		title: "Free YouTube Tools Online - No Signup | SopKit",
 		description:
 			"Download YouTube videos & Shorts, extract thumbnails, generate transcripts and scripts — all free with no signup.",
-		url: "https://sopkit.space/youtube-tools/",
+		url: `${SITE_URL}/youtube-tools/`,
 		siteName: "SopKit",
 		images: [
 			{

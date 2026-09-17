@@ -2,7 +2,7 @@
 
 ## Product Summary
 
-**SopKit** is a free, browser-based online toolkit platform providing 376+ tools across 15 categories. It's an SEO-first utility engine designed to dominate search results for online tool queries. Live at [sopkit.github.io](https://sopkit.github.io).
+**SopKit** is a free, browser-based online toolkit platform providing 376+ tools across 15 categories. It's an SEO-first utility engine designed to dominate search results for online tool queries. Live at [sopkit.space](https://sopkit.space).
 
 ## Goals
 

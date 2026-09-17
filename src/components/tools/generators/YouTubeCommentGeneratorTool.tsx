@@ -449,7 +449,7 @@ Make it feel genuine but entertaining!`;
 											<SocialShareButtons
 												toolName="YouTube Comment Generator"
 												toolDescription={shareText}
-												toolUrl="https://sopkit.space/youtube-comment-generator"
+												toolUrl="/youtube-comment-generator"
 											/>
 										</>
 									) : (

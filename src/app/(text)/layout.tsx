@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 import { generateCollectionPageSchema } from "@/lib/seo";
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 		title: "Text Tools - Free Online Text Utilities | SopKit",
 		description:
 			"Count words, convert case, sort lines, and clean text instantly with free browser-based tools. No signup required.",
-		url: "https://sopkit.space/text-tools/",
+		url: `${SITE_URL}/text-tools/`,
 		siteName: "SopKit",
 		type: "website",
 	},

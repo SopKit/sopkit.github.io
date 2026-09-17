@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
@@ -9,12 +10,12 @@ export const metadata = {
 	description: "Compute rates, taxes, averages, and conversions with our free Invoice Generator India with GST online. Quick, accurate browser calculator with no registration.",
 	keywords: "invoice generator india with gst, free online tool, no signup, invoice generator india with gst online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.space/invoice-generator-india",
+		canonical: `${SITE_URL}/invoice-generator-india`,
 	},
 	openGraph: {
 		title: "Free Invoice Generator India with GST Online - No Signup | SopKit",
 		description: "Compute rates, taxes, averages, and conversions with our free Invoice Generator India with GST online. Quick, accurate browser calculator with no registration.",
-		url: "https://sopkit.space/invoice-generator-india",
+		url: `${SITE_URL}/invoice-generator-india`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

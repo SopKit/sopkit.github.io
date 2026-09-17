@@ -1,12 +1,12 @@
 # `@sopkit/color`
 
-[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.github.io/color-converter/)
-[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.github.io/color-converter/)
+[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.space/color-converter/)
+[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.space/color-converter/)
 
 Premium, lightweight colorspace conversion utility for HEX, RGB, and HSL. Part of the SopKit utility ecosystem.
 
 ## Online Interactive Tool
-You can use the browser-based interactive version of this tool at [SopKit Color Converter](https://sopkit.github.io/color-converter/).
+You can use the browser-based interactive version of this tool at [SopKit Color Converter](https://sopkit.space/color-converter/).
 
 ## Features
 - Convert HEX to RGB
@@ -48,4 +48,4 @@ const rgb = hexToRgb("ffffff");
 ```
 
 ## License
-MIT © [SopKit](https://sopkit.github.io/)
+MIT © [SopKit](https://sopkit.space/)

@@ -4,17 +4,15 @@
   "description": "Interactive command-line interface for the SopKit utility ecosystem.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "type": "module",
   "bin": {
     "sopkit": "./dist/index.cjs"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+    "build": "tsup src/index.ts --format cjs,esm --clean"
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     }
@@ -29,6 +27,7 @@
     "@sopkit/password": "file:../password",
     "@sopkit/xml": "file:../xml",
     "@sopkit/jwt": "file:../jwt",
+    "@sopkit/hash": "file:../hash",
     "prompts": "^2.4.2"
   },
   "keywords": [
@@ -43,7 +42,7 @@
   ],
   "author": "SopKit",
   "license": "MIT",
-  "homepage": "https://sopkit.github.io/",
+  "homepage": "https://sopkit.space/",
   "devDependencies": {
     "@types/prompts": "^2.4.9"
   }

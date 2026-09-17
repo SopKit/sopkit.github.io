@@ -22,7 +22,7 @@ src/app/
 ```
 
 ## Canonical URL Invariants
-- Public URLs remain strictly canonical: `https://sopkit.github.io/<tool-slug>`.
+- Public URLs remain strictly canonical: `https://sopkit.space/<tool-slug>`.
 - No route groups appear in public URLs.
 - Category taxonomy is managed by the server tool registry (`src/features/tools/registry.ts`), not by directory nesting.
 - Embeddable versions are accessed via `/embed-tool?id=<tool-id>`.

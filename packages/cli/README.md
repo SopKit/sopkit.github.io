@@ -3,7 +3,7 @@
 Interactive Command-Line Interface (CLI) for the SopKit developer utility ecosystem.
 
 ## Online Interactive Suite
-You can use the full visual suite online at [SopKit](https://sopkit.github.io/).
+You can use the full visual suite online at [SopKit](https://sopkit.space/).
 
 ## Features
 - Fully interactive prompt-driven terminal interface
@@ -29,4 +29,4 @@ sopkit
 ```
 
 ## License
-MIT © [SopKit](https://sopkit.github.io/)
+MIT © [SopKit](https://sopkit.space/)

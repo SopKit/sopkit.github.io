@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import { getAllCategories } from "@/lib/tools";	export const metadata = {
 		title: "Free Tool Guides by Category | SopKit",
@@ -6,13 +7,13 @@ import { getAllCategories } from "@/lib/tools";	export const metadata = {
 		keywords:
 			"free tool guides, online tool categories, SopKit guide, best online tools, tool category pages",
 		alternates: {
-			canonical: "https://sopkit.space/tool-guides/",
+			canonical: `${SITE_URL}/tool-guides/`,
 		},
 		openGraph: {
 			title: "Free Tool Guides by Category | SopKit",
 			description:
 				"Browse free tool guides for every category on SopKit. Find the best image, PDF, SEO, developer, downloader, and utility tools online.",
-			url: "https://sopkit.space/tool-guides/",
+			url: `${SITE_URL}/tool-guides/`,
 			type: "website",
 			images: [{ url: "/og-image.jpg" }],
 		},

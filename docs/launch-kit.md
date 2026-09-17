@@ -1,7 +1,7 @@
 # SopKit Launch Kit
 
 Everything needed to launch and distribute SopKit (600+ free, privacy-first, browser-based tools).
-Base URL: https://sopkit.github.io
+Base URL: https://sopkit.space
 
 ---
 
@@ -48,7 +48,7 @@ No accounts, no uploads, no daily limits. Open a tool, get your result, done.
 ## 3. Directory Submission Checklist
 
 Work top-down; tick items as you go. Use one consistent listing: name, tagline above,
-description above, https://sopkit.github.io, og-image.jpg as screenshot.
+description above, https://sopkit.space, og-image.jpg as screenshot.
 
 - [ ] **AlternativeTo** — https://alternativeto.net — submit as alternative to iLovePDF, Smallpdf,
       Canva, and Online-Convert. List ~5 concrete app features. One submission per persona account.

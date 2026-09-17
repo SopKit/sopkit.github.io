@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 		title: "Free PDF Tools Online - No Signup | SopKit",
 		description:
 			"Merge, split, compress, and convert PDFs for free. No signup, no watermarks, zero-storage security policy.",
-		url: "https://sopkit.space/pdf-tools/",
+		url: `${SITE_URL}/pdf-tools/`,
 		siteName: "SopKit",
 		images: [
 			{

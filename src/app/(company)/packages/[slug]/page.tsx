@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Package, Terminal, ArrowRight, ExternalLink, Code2, BookOpen, ChevronRight, Cpu } from "lucide-react";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { Suspense } from "react";
+import { GITHUB_REPO_URL } from "@/constants/config";
 
 // Package definition database
 const PACKAGES_MAP: Record<string, any> = {
@@ -13,7 +14,7 @@ const PACKAGES_MAP: Record<string, any> = {
 		version: "1.0.0",
 		description: "Interactive command-line interface dashboard for running all SopKit utilities directly inside your terminal.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/cli",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/cli",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/cli`,
 		installCmd: "npx @sopkit/cli",
 		detailedDesc: "SopKit CLI is designed for developers who love keyboard-first workflows. It packages all standard SopKit utilities (Base64, UUID, URL Slug, JSON, and Color convert) into a single, interactive CLI console. No web browser required.",
 		rivals: {
@@ -41,7 +42,7 @@ sopkit`
 		version: "1.0.0",
 		description: "Premium Unicode-safe and URL-safe Base64 encoder and decoder for both Browser and Node.js.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/base64",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/base64",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/base64`,
 		installCmd: "npm install @sopkit/base64",
 		toolLink: "/base64-encode/",
 		detailedDesc: "Standard JavaScript btoa and atob functions fail on multi-byte UTF-8 Unicode characters (like Emojis). @sopkit/base64 fixes this natively, providing complete encoding safety and additional URL-Safe encoders.",
@@ -71,7 +72,7 @@ const dec = decode(enc); // "SopKit 🚀"`
 		version: "1.0.0",
 		description: "Cryptographically secure, lightweight UUID v4 and v1 generator/validator.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/uuid",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/uuid",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/uuid`,
 		installCmd: "npm install @sopkit/uuid",
 		toolLink: "/uuid-generator/",
 		detailedDesc: "Provides cryptographically secure random identifiers (v4) using global Web Crypto API and timestamp-based (v1) UUIDs. Optimized for high concurrency, zero-dependency, and extreme performance.",
@@ -100,7 +101,7 @@ console.log(validate(id)); // true`
 		version: "1.0.0",
 		description: "Multilingual URL-safe slug generator with complete accent and diacritics normalization.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/slug",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/slug",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/slug`,
 		installCmd: "npm install @sopkit/slug",
 		toolLink: "/slug-generator/",
 		detailedDesc: "Translates complex accent characters (like é, ü, ç, ö) into regular ASCII representations. Clean URL optimization ensures symbols are stripped correctly to boost SEO visibility.",
@@ -127,7 +128,7 @@ const slug = slugify("Café & Résumé!", { lowercase: true }); // "cafe-resume"
 		version: "1.0.0",
 		description: "Fast JSON syntax validator with precise line/column reporting, formatting, and minification.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/json",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/json",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/json`,
 		installCmd: "npm install @sopkit/json",
 		toolLink: "/json-formatter/",
 		detailedDesc: "Standard JSON.parse errors are notoriously vague. @sopkit/json parses raw strings and details precisely where a syntax error occurred, returning line numbers and column positions to improve development velocity.",
@@ -156,7 +157,7 @@ console.log(res.line, res.column); // prints line/col offsets`
 		version: "1.0.0",
 		description: "High-performance colorspace converter supporting HEX, RGB, and HSL representations.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/color",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/color",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/color`,
 		installCmd: "npm install @sopkit/color",
 		toolLink: "/color-converter/",
 		detailedDesc: "A lightweight color math engine. Ideal for dynamic themes, UI dashboards, canvas rendering, and color palette creation.",
@@ -186,7 +187,7 @@ const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);`
 		version: "1.0.0",
 		description: "Fast, zero-dependency validation suite for email, URLs, domains, IP addresses, credit cards, and MAC addresses.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/validator",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/validator",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/validator`,
 		installCmd: "npm install @sopkit/validator",
 		toolLink: "/seotoolkit/",
 		detailedDesc: "Legitimate email, credit card, and URL validators are often bloated. @sopkit/validator consolidates top-tier regex patterns and Luhn checkers into an extremely small package.",
@@ -217,7 +218,7 @@ isCreditCard("49927398716");`
 		version: "1.0.0",
 		description: "Customizable password generator and security entropy analyzer using information entropy.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/password",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/password",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/password`,
 		installCmd: "npm install @sopkit/password",
 		toolLink: "/password-generator/",
 		detailedDesc: "Generate secure random string passwords and perform strength checks based on pool variety and bit entropy (Shannon Entropy scale) rather than basic length metrics.",
@@ -245,7 +246,7 @@ const res = analyze(pass);`
 		version: "1.0.0",
 		description: "Premium XML formatter, validator, and minifier supporting nested tag validation and custom indent sizes.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/xml",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/xml",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/xml`,
 		installCmd: "npm install @sopkit/xml",
 		toolLink: "/xml-formatter/",
 		detailedDesc: "Parse, format, minify, and strictly validate XML data structures on the client side with zero telemetry.",
@@ -274,7 +275,7 @@ const clean = format("<tag>val</tag>", 2);`
 		version: "1.0.0",
 		description: "Unicode-safe JSON Web Token (JWT) decoder and format validator checking header and payload.",
 		npmLink: "https://www.npmjs.com/package/@sopkit/jwt",
-		githubLink: "https://github.com/SopKit/sopkit.github.io/tree/main/packages/jwt",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/jwt`,
 		installCmd: "npm install @sopkit/jwt",
 		toolLink: "/jwt-decoder/",
 		detailedDesc: "Extract metadata and claims securely from JWT strings entirely client-side without sending tokens to any server.",
@@ -297,6 +298,39 @@ if (verifyFormat(myToken)) {
   const result = decode(myToken);
   console.log(result.header.alg);
 }`
+	},
+	hash: {
+		name: "@sopkit/hash",
+		badge: "Crypto & Hash",
+		version: "1.0.0",
+		description: "High-performance cryptographic hashing suite supporting SHA-256, SHA-512, SHA-1, MD5, and HMAC-SHA256.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/hash",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/hash`,
+		installCmd: "npm install @sopkit/hash",
+		toolLink: "/sha256-hash-generator/",
+		detailedDesc: "Zero-dependency cryptographic hashing for modern runtimes. Built on the Web Crypto API with a fast synchronous pure-JS MD5 engine and timing-safe hash comparison.",
+		rivals: {
+			title: "Rivals Comparison",
+			legacyName: "crypto-js / js-sha256",
+			reasons: [
+				{ metric: "Dependencies", ours: "0 (Pure standard APIs)", legacy: "Heavy legacy baggage" },
+				{ metric: "Bundle size", ours: "1.6 KB (minified)", legacy: "40 KB+" },
+				{ metric: "Modern APIs", ours: "Native Web Crypto + ESM", legacy: "CommonJS legacy wrappers" }
+			]
+		},
+		api: [
+			{ name: "sha256(data: string | Uint8Array): Promise<string>", desc: "Computes standard SHA-256 digest." },
+			{ name: "sha512(data: string | Uint8Array): Promise<string>", desc: "Computes SHA-512 digest." },
+			{ name: "sha1(data: string | Uint8Array): Promise<string>", desc: "Computes legacy SHA-1 digest." },
+			{ name: "md5(data: string): string", desc: "Computes synchronous MD5 hexadecimal digest." },
+			{ name: "hmacSha256(key, message): Promise<string>", desc: "Computes HMAC-SHA256 signature." },
+			{ name: "compareHash(a: string, b: string): boolean", desc: "Constant-time string comparison mitigating timing attacks." }
+		],
+		usage: `import { sha256, md5, compareHash } from "@sopkit/hash";
+
+const hash = await sha256("hello world");
+const md5Hash = md5("hello world");
+const matches = compareHash(hash, expectedHash);`
 	}
 };
 

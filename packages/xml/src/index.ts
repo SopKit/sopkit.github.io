@@ -1,7 +1,7 @@
 /**
  * SopKit XML Utilities
  * Premium, zero-dependency XML parser, formatter, validator, and minifier.
- * Link: https://sopkit.github.io/xml-formatter/
+ * Link: https://sopkit.space/xml-formatter/
  */
 
 export interface ValidationResult {

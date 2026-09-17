@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
@@ -6,12 +7,12 @@ export const metadata = {
 	description: "Format JSON the safe way: validate first, pretty-print second, minify last. Common errors explained plus local, in-browser tools that never upload data.",
 	keywords: "how to format json properly (without breaking data), how to format json properly (without breaking data) guide, SopKit, how-to-format-json-properly, how to format json properly, free how-to-format-json-properly, how to format json properly online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.space/how-to-format-json-properly",
+		canonical: `${SITE_URL}/how-to-format-json-properly`,
 	},
 	openGraph: {
 		title: "How to Format JSON Properly — 2026 Guide | SopKit",
 		description: "Format JSON the safe way: validate first, pretty-print second, minify last. Common errors explained plus local, in-browser tools that never upload data.",
-		url: "https://sopkit.space/how-to-format-json-properly",
+		url: `${SITE_URL}/how-to-format-json-properly`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +48,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.space/how-to-format-json-properly/",
+						url: `${SITE_URL}/how-to-format-json-properly/`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

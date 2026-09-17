@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
@@ -8,13 +9,13 @@ export const metadata = {
 	keywords:
 		"best free canva alternatives, canva alternative free no watermark, favicon generator, logo generator free, local image tools, sopkit design tools",
 	alternates: {
-		canonical: "https://sopkit.space/best-free-canva-alternatives",
+		canonical: `${SITE_URL}/best-free-canva-alternatives`,
 	},
 	openGraph: {
 		title: "Best Free Canva Alternatives (2026) — Local, No-Account Design Utilities | SopKit",
 		description:
 			"Honest Canva alternatives for quick design jobs: favicons, logos, image resizing, background removal and palettes that run locally — no account, no watermark.",
-		url: "https://sopkit.space/best-free-canva-alternatives",
+		url: `${SITE_URL}/best-free-canva-alternatives`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -51,7 +52,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.space/best-free-canva-alternatives/",
+						url: `${SITE_URL}/best-free-canva-alternatives/`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

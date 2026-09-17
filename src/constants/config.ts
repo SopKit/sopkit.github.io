@@ -2,6 +2,7 @@ import toolsData from "@/constants/tools.json";
 
 export const SITE_NAME = "SopKit";
 export const SITE_URL = "https://sopkit.space";
+export const SITE_DOMAIN = "sopkit.space";
 export const CONTACT_EMAIL = "shaswatraj3@gmail.com";
 export const COMPANY_OR_OWNER_NAME = "SopKit";
 export const LAST_UPDATED = "2026-05-09";
@@ -46,6 +47,7 @@ export const SITEMAP_URL = `${SITE_URL}/sitemap.xml`;
 export const SITE_CONFIG = {
 	siteName: SITE_NAME,
 	siteUrl: SITE_URL,
+	domain: SITE_DOMAIN,
 	toolCount: TOOL_COUNT,
 	toolCountString: TOOL_COUNT_STRING,
 	categoryCount: CATEGORY_COUNT,

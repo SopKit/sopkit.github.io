@@ -1,12 +1,12 @@
 # `@sopkit/password`
 
-[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.github.io/password-generator/)
-[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.github.io/password-generator/)
+[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.space/password-generator/)
+[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.space/password-generator/)
 
 Premium, lightweight password generation and strength analysis library for Browser and Node.js. Part of the SopKit utility ecosystem.
 
 ## Online Interactive Tool
-You can use the browser-based interactive version of this tool at [SopKit Password Generator](https://sopkit.github.io/password-generator/).
+You can use the browser-based interactive version of this tool at [SopKit Password Generator](https://sopkit.space/password-generator/).
 
 ## Features
 - Highly customizable password generator (custom length, character pool filters).
@@ -37,4 +37,4 @@ console.log("Suggestions:", analysis.suggestions);
 ```
 
 ## License
-MIT © [SopKit](https://sopkit.github.io/)
+MIT © [SopKit](https://sopkit.space/)

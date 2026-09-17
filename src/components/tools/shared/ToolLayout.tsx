@@ -195,8 +195,6 @@ export default function ToolLayout({
 			? getRelatedTools(tool, 15) // Get more than 10 to be safe
 			: relatedTools;
 
-	const defaultSuffix =
-		" Fast and privacy-conscious. Data handling depends on the tool and is documented on each page.";
 	const finalDescription = String(enrichedTool.description || "").replace(/\\n/g, "\n").trim();
 
 	// Keep only the personalized intro text for the tool article.
@@ -225,21 +223,19 @@ export default function ToolLayout({
 
 			<main className="container mx-auto px-4 py-4 md:py-6 max-w-6xl space-y-8">
 				<section className="text-center space-y-3 max-w-4xl mx-auto animate-in pt-1">
-					<h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight leading-tight text-foreground">
+					<h1 className="font-sans text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight bg-gradient-to-b from-foreground via-foreground to-foreground/80 bg-clip-text text-transparent">
 						{enrichedTool.name}
 					</h1>
-					<p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl mx-auto">
+					<p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl mx-auto font-normal">
 						{finalDescription}
-						{!finalDescription.toLowerCase().includes("privacy")
-							? defaultSuffix
-							: ""}
 					</p>
 					{!isCompanyPage && enrichedTool.category !== "downloaders" && (
-						<div className="flex items-center justify-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-[11px] font-semibold shadow-sm backdrop-blur-sm mx-auto w-fit">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-3.5 h-3.5 text-emerald-500">
-								<path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-							</svg>
-							<span>100% Client-Side Sandbox: Your files are processed locally and never uploaded to any server.</span>
+						<div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-xs font-semibold backdrop-blur-sm mx-auto shadow-xs">
+							<span className="relative flex h-2 w-2">
+								<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+								<span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+							</span>
+							<span>100% Client-Side Sandbox &bull; Local Browser Execution</span>
 						</div>
 					)}
 					{!isHubPage && (

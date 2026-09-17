@@ -21,5 +21,5 @@ src/seo/
    - Tool pages: `SoftwareApplication` + `BreadcrumbList` + `FAQPage` (only when verified FAQs exist).
    - Category pages: `CollectionPage` + `ItemList` + `BreadcrumbList`.
    - Articles: `Article` + `BreadcrumbList`.
-3. **Canonical Normalization**: All canonical URLs strictly resolve to `https://sopkit.github.io/<slug>` without trailing slashes or tracking parameters.
+3. **Canonical Normalization**: All canonical URLs strictly resolve to `https://sopkit.space/<slug>` without trailing slashes or tracking parameters.
 4. **Agentic Crawlability**: `llms.txt` and semantic HTML landmark trees are maintained to ensure accessibility to AI agents.

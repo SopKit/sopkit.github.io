@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
@@ -5,7 +6,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "Business Tools - Free Online Utilities for Startups & Shops | SopKit",
 	description: "Free online business tools including invoice generators, rent receipt creators, leave applications, and GST calculators. Boost your business efficiency.",
-	alternates: { canonical: "https://sopkit.space/business-tools/" },
+	alternates: { canonical: `${SITE_URL}/business-tools/` },
 };
 
 export default function BusinessToolsHub() {

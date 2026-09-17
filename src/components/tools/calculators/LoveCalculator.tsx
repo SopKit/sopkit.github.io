@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { SITE_URL } from "@/constants/config";
 
 export default function LoveCalculator() {
 	const [name1, setName1] = useState("");
@@ -47,7 +48,7 @@ export default function LoveCalculator() {
 	};
 
 	const verdict = score !== null ? getVerdict(score) : null;
-	const shareText = score !== null ? `💖 Love Compatibility Test Result 💖\n\n👩 ${name1} + 👨 ${name2} = ${score}% Compatible!\nVerdict: ${verdict?.title} ${verdict?.emoji}\n\nTest your love at: https://sopkit.space/love-calculator/` : "";
+	const shareText = score !== null ? `💖 Love Compatibility Test Result 💖\n\n👩 ${name1} + 👨 ${name2} = ${score}% Compatible!\nVerdict: ${verdict?.title} ${verdict?.emoji}\n\nTest your love at: ${SITE_URL}/love-calculator/` : "";
 
 	const handleCopy = async () => {
 		if (!shareText) return;

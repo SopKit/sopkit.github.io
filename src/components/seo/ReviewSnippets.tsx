@@ -12,6 +12,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { SITE_CONFIG } from "@/constants/config";
 
 // Reviews data - currently empty. Add real reviews from your database/API when available.
 const SAMPLE_REVIEWS = {};
@@ -236,8 +237,8 @@ export default function ReviewSnippets({
 // Trust indicators component
 export function TrustIndicators() {
 	const stats = [
-		{ label: "Tools Available", value: "400+", icon: User },
-		{ label: "Categories", value: "10+", icon: Star },
+		{ label: "Tools Available", value: SITE_CONFIG.toolCountString, icon: User },
+		{ label: "Categories", value: `${SITE_CONFIG.categoryCount}+`, icon: Star },
 		{ label: "Price", value: "Free", icon: Heart },
 		{ label: "Signup Required", value: "No", icon: Award },
 	];

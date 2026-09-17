@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
@@ -6,12 +7,12 @@ export const metadata = {
 	description: "Practical free alternatives to paid AI tools for image creation, voiceovers, prompts, and content ideation. Browser-based, no signup, nothing uploaded.",
 	keywords: "ai tools alternatives free - practical picks, ai tools alternatives free - practical picks guide, SopKit, ai-tools-alternatives-free, ai tools alternatives free, free ai-tools-alternatives-free, ai tools alternatives free online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.space/ai-tools-alternatives-free",
+		canonical: `${SITE_URL}/ai-tools-alternatives-free`,
 	},
 	openGraph: {
 		title: "Free AI Tool Alternatives — Best Picks 2026 | SopKit",
 		description: "Practical free alternatives to paid AI tools for image creation, voiceovers, prompts, and content ideation. Browser-based, no signup, nothing uploaded.",
-		url: "https://sopkit.space/ai-tools-alternatives-free",
+		url: `${SITE_URL}/ai-tools-alternatives-free`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +48,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.space/ai-tools-alternatives-free/",
+						url: `${SITE_URL}/ai-tools-alternatives-free/`,
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

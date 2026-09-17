@@ -1,7 +1,7 @@
 /**
  * SopKit Slug Utilities
  * Premium, zero-dependency multilingual URL slug generator.
- * Link: https://sopkit.github.io/slug-generator/
+ * Link: https://sopkit.space/slug-generator/
  */
 
 export interface SlugOptions {

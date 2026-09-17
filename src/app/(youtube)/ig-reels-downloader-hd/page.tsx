@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import InstagramReelDownloader from "@/components/tools/downloaders/InstagramReelDownloader";
@@ -8,12 +9,12 @@ export const metadata = {
 	description: "Download Instagram Reels in high-definition quality instantly. Our free online downloader is optimized for speed and works on all devices. Save your...",
 	keywords: "ig reels downloader hd, free online tool, no signup, ig-reels-downloader-hd, free ig-reels-downloader-hd, Ig Reels Downloader Hd online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://sopkit.space/ig-reels-downloader-hd/",
+		canonical: `${SITE_URL}/ig-reels-downloader-hd/`,
 	},
 	openGraph: {
 		title: "Free Ig Reels Downloader Hd Online - No Signup | SopKit",
 		description: "Download Instagram Reels in high-definition quality instantly. Our free online downloader is optimized for speed and works on all devices. Save your...",
-		url: "https://sopkit.space/ig-reels-downloader-hd/",
+		url: `${SITE_URL}/ig-reels-downloader-hd/`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/config";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
@@ -5,7 +6,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "AI Writing Tools - Free Text & Content Generators | SopKit",
 	description: "Free AI writing tools. Generate social media bios, custom poems, excuses, resignation letters, and marketing slogans instantly in your browser.",
-	alternates: { canonical: "https://sopkit.space/ai-writing-tools/" },
+	alternates: { canonical: `${SITE_URL}/ai-writing-tools/` },
 };
 
 export default function AiWritingToolsHub() {

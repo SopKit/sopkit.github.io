@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { ChevronDown } from "lucide-react";
+import { SITE_CONFIG } from "@/constants/config";
 
 interface FAQItem {
   question: string;
@@ -29,7 +30,7 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Can I embed SopKit tools into my own website or documentation?",
     answer:
-      "Yes! Every interactive tool supports our dedicated embed route. You can add an iframe pointing to https://sopkit.space/embed-tool/?id=<tool-id> for a clean, distraction-free widget that fits seamlessly into your site.",
+      `Yes! Every interactive tool supports our dedicated embed route. You can add an iframe pointing to ${SITE_CONFIG.siteUrl}/embed-tool/?id=<tool-id> for a clean, distraction-free widget that fits seamlessly into your site.`,
   },
   {
     question: "Does SopKit work on smartphones and tablets?",
@@ -39,7 +40,7 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     question: "How do I request a new tool or report an issue?",
     answer:
-      "SopKit is open on GitHub. You can file an issue, suggest a utility, or contribute code directly on our GitHub repository at github.com/SopKit/sopkit.github.io.",
+      `SopKit is open on GitHub. You can file an issue, suggest a utility, or contribute code directly on our GitHub repository at ${SITE_CONFIG.githubRepoUrl.replace(/^https?:\/\//, "")}.`,
   },
 ];
 

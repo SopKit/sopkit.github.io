@@ -3,17 +3,18 @@ import Link from "next/link";
 import { Check, Sparkles } from "lucide-react";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { Suspense } from "react";
+import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata: Metadata = {
 	title: "SopKit Pricing — 100% Free Client-Side Tools & API Packages",
 	description: "Discover SopKit's plans. Access hundreds of online developer and file utilities completely free, or request custom API solutions.",
 	alternates: {
-		canonical: "https://sopkit.space/pricing/",
+		canonical: `${SITE_CONFIG.siteUrl}/pricing/`,
 	},
 	openGraph: {
 		title: "SopKit Pricing — 100% Free Client-Side Tools & API Packages",
 		description: "Browse free client-side tools and custom API integration rates.",
-		url: "https://sopkit.space/pricing/",
+		url: `${SITE_CONFIG.siteUrl}/pricing/`,
 		images: [{ url: "/og-images/packages.png" }],
 	},
 };
@@ -111,7 +112,7 @@ export default function PricingPage() {
 									<ul className="space-y-2.5 text-xs text-muted-foreground">
 										<li className="flex items-center gap-2">
 											<Check className="h-4 w-4 text-primary shrink-0" />
-											<span>Access to all 400+ online utilities</span>
+											<span>Access to all {SITE_CONFIG.toolCountString} online utilities</span>
 										</li>
 										<li className="flex items-center gap-2">
 											<Check className="h-4 w-4 text-primary shrink-0" />

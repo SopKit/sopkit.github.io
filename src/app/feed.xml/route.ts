@@ -1,9 +1,10 @@
+import { SITE_URL } from "@/constants/config";
 export const dynamic = "force-static";
 
 import { getAllTools } from "@/lib/tools";
 
 export async function GET() {
-	const baseUrl = "https://sopkit.space";
+	const baseUrl = SITE_URL;
 	const currentDate = new Date().toUTCString();
 	const currentYear = new Date().getFullYear();
 	const allTools = getAllTools();

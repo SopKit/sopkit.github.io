@@ -1,12 +1,12 @@
 # `@sopkit/json`
 
-[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.github.io/json-formatter/)
-[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.github.io/json-formatter/)
+[![Playground](https://img.shields.io/badge/SopKit-Playground-blueviolet?style=for-the-badge&logo=javascript)](https://sopkit.space/json-formatter/)
+[![Security](https://img.shields.io/badge/Sandbox-100%25%20Client--Side-emerald?style=for-the-badge)](https://sopkit.space/json-formatter/)
 
 Premium, lightweight JSON formatter, validator, and minifier for both Browser and Node.js. Part of the SopKit utility ecosystem.
 
 ## Online Interactive Tool
-You can use the browser-based interactive version of this tool at [SopKit JSON Formatter](https://sopkit.github.io/json-formatter/).
+You can use the browser-based interactive version of this tool at [SopKit JSON Formatter](https://sopkit.space/json-formatter/).
 
 ## Features
 - Robust JSON validation with detailed syntax error reporting (including line and column numbers).
@@ -51,4 +51,4 @@ const pretty = format('{"status":"ok"}');
 ```
 
 ## License
-MIT © [SopKit](https://sopkit.github.io/)
+MIT © [SopKit](https://sopkit.space/)

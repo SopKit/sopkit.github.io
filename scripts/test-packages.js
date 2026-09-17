@@ -14,7 +14,8 @@ const packages = [
   "validator",
   "password",
   "xml",
-  "jwt"
+  "jwt",
+  "hash"
 ];
 
 // Helper to run a command in a directory as a Promise

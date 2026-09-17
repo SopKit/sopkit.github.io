@@ -5,7 +5,8 @@ import { useState, useEffect } from "react";
 import { Share2, Link as LinkIcon, Code, Check, Bookmark, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { trackCopyToClipboard, trackEmbedInteraction } from "@/lib/analytics";
+import { trackCopyToClipboard, trackEmbedInteraction, trackShare, trackPWAInstall } from "@/lib/analytics";
+import { SITE_URL } from "@/constants/config";
 
 interface ToolToolbarProps {
 	toolId: string;
@@ -50,7 +51,7 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 	}, []);
 
 	const getShareUrl = () => {
-		return `https://sopkit.space${toolRoute}`;
+		return `${SITE_URL}${toolRoute}`;
 	};
 
 	const handleShare = async () => {
@@ -62,6 +63,7 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 					text: `Check out this free online ${toolName} on SopKit!`,
 					url: shareUrl,
 				});
+				trackShare(toolId, "native_share");
 			} catch (err) {
 				if ((err as Error).name !== "AbortError") {
 					console.error("Error sharing:", err);
@@ -70,6 +72,7 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 		} else {
 			navigator.clipboard.writeText(shareUrl);
 			trackCopyToClipboard(toolId, "url");
+			trackShare(toolId, "clipboard");
 			setShareCopied(true);
 			setTimeout(() => setShareCopied(false), 2000);
 		}
@@ -82,11 +85,12 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 
 		const baseVal = activeFormEl ? activeFormEl.value.trim() : "";
 		const shareUrl = baseVal
-			? `https://sopkit.space${toolRoute}?input=${encodeURIComponent(baseVal)}`
+			? `${SITE_URL}${toolRoute}?input=${encodeURIComponent(baseVal)}`
 			: getShareUrl();
 
 		navigator.clipboard.writeText(shareUrl);
 		trackCopyToClipboard(toolId, "url");
+		trackShare(toolId, "clipboard");
 		setStateCopied(true);
 		setTimeout(() => setStateCopied(false), 2000);
 	};
@@ -109,6 +113,7 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 		if (deferredPrompt) {
 			deferredPrompt.prompt();
 			const { outcome } = await deferredPrompt.userChoice;
+			trackPWAInstall(outcome === "accepted" ? "accepted" : "dismissed");
 			if (outcome === "accepted") {
 				setIsInstallable(false);
 				setDeferredPrompt(null);
@@ -117,12 +122,12 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 	};
 
 	return (
-		<div className="flex items-center justify-center flex-wrap gap-2 py-1 select-none">
+		<div className="inline-flex items-center flex-wrap justify-center gap-1.5 p-1.5 rounded-full bg-secondary/80 dark:bg-muted/40 border border-border/60 backdrop-blur-md shadow-xs select-none">
 			<Button
-				variant="outline"
+				variant="ghost"
 				size="sm"
 				onClick={handleShare}
-				className="h-8 text-xs gap-1.5 rounded-full border-border/60 hover:border-blue-500/40 hover:bg-blue-500/5 transition-all shadow-sm"
+				className="h-7 text-xs px-3 gap-1.5 rounded-full hover:bg-background/80 hover:text-foreground transition-all"
 			>
 				{shareCopied ? (
 					<>
@@ -131,60 +136,60 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 					</>
 				) : (
 					<>
-						<Share2 className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
-						<span>Share Tool</span>
+						<Share2 className="h-3.5 w-3.5 text-muted-foreground" />
+						<span>Share</span>
 					</>
 				)}
 			</Button>
 
 			<Button
-				variant="outline"
+				variant="ghost"
 				size="sm"
 				onClick={handleCopyState}
-				className="h-8 text-xs gap-1.5 rounded-full border-border/60 hover:border-blue-500/40 hover:bg-blue-500/5 transition-all shadow-sm"
+				className="h-7 text-xs px-3 gap-1.5 rounded-full hover:bg-background/80 hover:text-foreground transition-all"
 			>
 				{stateCopied ? (
 					<>
 						<Check className="h-3.5 w-3.5 text-emerald-500" />
-						<span className="font-semibold text-emerald-600 dark:text-emerald-400">State Link Copied</span>
+						<span className="font-semibold text-emerald-600 dark:text-emerald-400">Inputs Copied</span>
 					</>
 				) : (
 					<>
-						<LinkIcon className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
-						<span>Copy Link with Inputs</span>
+						<LinkIcon className="h-3.5 w-3.5 text-muted-foreground" />
+						<span>Copy with Inputs</span>
 					</>
 				)}
 			</Button>
 
 			<Button
-				variant="outline"
+				variant="ghost"
 				size="sm"
 				onClick={handleScrollToEmbed}
-				className="h-8 text-xs gap-1.5 rounded-full border-border/60 hover:border-blue-500/40 hover:bg-blue-500/5 transition-all shadow-sm"
+				className="h-7 text-xs px-3 gap-1.5 rounded-full hover:bg-background/80 hover:text-foreground transition-all"
 			>
-				<Code className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
-				<span>Embed Tool</span>
+				<Code className="h-3.5 w-3.5 text-muted-foreground" />
+				<span>Embed</span>
 			</Button>
 
 			<Button
-				variant="outline"
+				variant="ghost"
 				size="sm"
 				onClick={handleBookmark}
-				className="h-8 text-xs gap-1.5 rounded-full border-border/60 hover:border-blue-500/40 hover:bg-blue-500/5 transition-all shadow-sm"
+				className="h-7 text-xs px-3 gap-1.5 rounded-full hover:bg-background/80 hover:text-foreground transition-all"
 			>
-				<Bookmark className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
+				<Bookmark className="h-3.5 w-3.5 text-muted-foreground" />
 				<span>Bookmark</span>
 			</Button>
 
 			{isInstallable && (
 				<Button
-					variant="outline"
+					variant="ghost"
 					size="sm"
 					onClick={handleInstallApp}
-					className="h-8 text-xs gap-1.5 rounded-full bg-blue-500/10 border-blue-500/30 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 transition-all shadow-sm"
+					className="h-7 text-xs px-3 gap-1.5 rounded-full bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 font-semibold transition-all"
 				>
-					<Download className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
-					<span className="font-semibold">Install App</span>
+					<Download className="h-3.5 w-3.5" />
+					<span>Install App</span>
 				</Button>
 			)}
 		</div>
