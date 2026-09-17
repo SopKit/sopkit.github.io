@@ -6,7 +6,7 @@
   "module": "./dist/index.js",
   "type": "module",
   "bin": {
-    "sopkit": "./dist/index.cjs"
+    "sopkit": "dist/index.cjs"
   },
   "scripts": {
     "build": "tsup --config tsup.config.ts"
