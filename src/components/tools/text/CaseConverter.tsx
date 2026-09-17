@@ -1,224 +1,230 @@
 "use client";
 
+import React, { useCallback, useEffect, useState } from "react";
 import {
-	ArrowDownUp,
-	CaseLower,
-	CaseSensitive,
-	CaseUpper,
-	Copy,
-	Trash2,
-	Type,
+  ArrowDownUp,
+  CaseLower,
+  CaseSensitive,
+  CaseUpper,
+  Check,
+  Copy,
+  Trash2,
+  Type,
+  Sparkles,
 } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
+import { useToolStorage, useCopyFeedback } from "@/hooks/useToolStorage";
+import { ToolAutoSaveIndicator } from "@/components/tools/shared/ToolAutoSaveIndicator";
 
 type Mode =
-	| "upper"
-	| "lower"
-	| "title"
-	| "sentence"
-	| "alternating"
-	| "inverse";
+  | "upper"
+  | "lower"
+  | "title"
+  | "sentence"
+  | "alternating"
+  | "inverse";
+
+const SAMPLE_TEXT =
+  "the quick brown fox jumps over the lazy dog. modern web development with SopKit is fast, secure, and privacy-first.";
 
 export default function CaseConverter() {
-	const [inputText, setInputText] = useState("");
-	const [outputText, setOutputText] = useState("");
-	const [mode, setMode] = useState<Mode | null>(null);
+  const [inputText, setInputText, { isSaved, hasStoredValue, clearStorage }] =
+    useToolStorage<string>("case-converter", "text", SAMPLE_TEXT);
 
-	const transform = useCallback((text: string, type: Mode) => {
-		if (!text) return "";
-		let newText = "";
-		switch (type) {
-			case "upper":
-				newText = text.toUpperCase();
-				break;
-			case "lower":
-				newText = text.toLowerCase();
-				break;
-			case "title":
-				newText = text
-					.toLowerCase()
-					.split(/(\s+)/)
-					.map((word) =>
-						word.length > 0
-							? word.charAt(0).toUpperCase() + word.slice(1)
-							: word,
-					)
-					.join("");
-				break;
-			case "sentence":
-				newText = text
-					.toLowerCase()
-					.replace(/(^\s*[a-z]|[.!?]\s+[a-z])/g, (match) =>
-						match.toUpperCase(),
-					);
-				break;
-			case "alternating":
-				newText = text
-					.split("")
-					.map((c, i) => (i % 2 === 0 ? c.toLowerCase() : c.toUpperCase()))
-					.join("");
-				break;
-			case "inverse":
-				newText = text
-					.split("")
-					.map((c) =>
-						c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase(),
-					)
-					.join("");
-				break;
-			default:
-				newText = text;
-		}
-		return newText;
-	}, []);
+  const [mode, setMode] = useToolStorage<Mode | null>(
+    "case-converter",
+    "mode",
+    "title"
+  );
 
-	// Use a separate effect to update output when input OR mode changes
-	useEffect(() => {
-		if (mode) {
-			setOutputText(transform(inputText, mode));
-		} else {
-			setOutputText(inputText);
-		}
-	}, [inputText, mode, transform]);
+  const [outputText, setOutputText] = useState("");
+  const { copied, copy } = useCopyFeedback();
 
-	const copyToClipboard = () => {
-		if (!outputText) return;
-		navigator.clipboard.writeText(outputText);
-		toast.success("Copied to clipboard!");
-	};
+  const transform = useCallback((text: string, type: Mode | null) => {
+    if (!text || !type) return text;
+    switch (type) {
+      case "upper":
+        return text.toUpperCase();
+      case "lower":
+        return text.toLowerCase();
+      case "title":
+        return text
+          .toLowerCase()
+          .split(/(\s+)/)
+          .map((word) =>
+            word.length > 0
+              ? word.charAt(0).toUpperCase() + word.slice(1)
+              : word
+          )
+          .join("");
+      case "sentence":
+        return text
+          .toLowerCase()
+          .replace(/(^\s*[a-z]|[.!?]\s+[a-z])/g, (match) =>
+            match.toUpperCase()
+          );
+      case "alternating":
+        return text
+          .split("")
+          .map((c, i) => (i % 2 === 0 ? c.toLowerCase() : c.toUpperCase()))
+          .join("");
+      case "inverse":
+        return text
+          .split("")
+          .map((c) =>
+            c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()
+          )
+          .join("");
+      default:
+        return text;
+    }
+  }, []);
 
-	const clearText = () => {
-		setInputText("");
-		setMode(null);
-		toast.info("Cleared text");
-	};
+  useEffect(() => {
+    setOutputText(transform(inputText, mode));
+  }, [inputText, mode, transform]);
 
-	const handleModeClick = (newMode: Mode) => {
-		setMode(newMode);
-		toast.info(`Converted to ${newMode.replace("-", " ")}`);
-	};
+  const copyToClipboard = async () => {
+    if (!outputText) return;
+    const ok = await copy(outputText);
+    if (ok) toast.success("Copied converted text to clipboard!");
+  };
 
-	const modes = [
-		{ id: "upper", label: "UPPER CASE", icon: CaseUpper },
-		{ id: "lower", label: "lower case", icon: CaseLower },
-		{ id: "title", label: "Title Case", icon: CaseSensitive },
-		{ id: "sentence", label: "Sentence case", icon: Type },
-		{ id: "alternating", label: "aLtErNaTiNg", icon: ArrowDownUp },
-		{ id: "inverse", label: "InVeRsE cAsE", icon: ArrowDownUp },
-	];
+  const clearText = () => {
+    clearStorage();
+    setInputText("");
+    setMode(null);
+    toast.info("Cleared text");
+  };
 
-	return (
-		<div className="max-w-5xl mx-auto space-y-8 p-4 md:p-0">
-			{/* Mode Selection */}
-			<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-				{modes.map((m) => (
-					<Button
-						key={m.id}
-						variant={mode === m.id ? "default" : "outline"}
-						size="default"
-						onClick={() => handleModeClick(m.id as Mode)}
-						className={cn(
-							"h-12 transition-all duration-200",
-							mode === m.id
-								? "shadow-md scale-[1.02]"
-								: "hover:border-primary/50",
-						)}
-					>
-						<span className="truncate">{m.label}</span>
-					</Button>
-				))}
-			</div>
+  const handleModeClick = (newMode: Mode) => {
+    setMode(newMode);
+    toast.info(`Converted to ${newMode.replace("-", " ")}`);
+  };
 
-			{/* Editor Area */}
-			<div className="relative group">
-				<Textarea
-					value={inputText}
-					onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
-						setInputText(e.target.value)
-					}
-					placeholder="Type or paste your text here..."
-					className="min-h-[400px] text-lg p-8 bg-card border-border/60 focus:border-primary/50 transition-all resize-none shadow-sm font-medium"
-				/>
+  const modes = [
+    { id: "upper", label: "UPPER CASE", icon: CaseUpper },
+    { id: "lower", label: "lower case", icon: CaseLower },
+    { id: "title", label: "Title Case", icon: CaseSensitive },
+    { id: "sentence", label: "Sentence case", icon: Type },
+    { id: "alternating", label: "aLtErNaTiNg", icon: ArrowDownUp },
+    { id: "inverse", label: "InVeRsE cAsE", icon: ArrowDownUp },
+  ];
 
-				{/* Floating Actions */}
-				<div className="absolute bottom-6 right-6 flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-					<Button
-						variant="secondary"
-						size="sm"
-						onClick={clearText}
-						className="shadow-lg h-10 px-6 bg-background/80 backdrop-blur-sm border border-border hover:bg-destructive hover:text-destructive-foreground transition-all"
-					>
-						<Trash2 className="w-4 h-4 mr-2" />
-						Clear
-					</Button>
-					<Button
-						variant="default"
-						size="sm"
-						onClick={copyToClipboard}
-						disabled={!outputText}
-						className="shadow-lg h-10 px-6 bg-primary text-primary-foreground transition-all hover:scale-105"
-					>
-						<Copy className="w-4 h-4 mr-2" />
-						Copy Result
-					</Button>
-				</div>
+  return (
+    <div className="space-y-6">
+      {/* Mode Buttons Grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+        {modes.map((m) => (
+          <Button
+            key={m.id}
+            variant={mode === m.id ? "default" : "outline"}
+            size="sm"
+            onClick={() => handleModeClick(m.id as Mode)}
+            className={cn(
+              "h-10 text-xs font-semibold rounded-xl transition-all duration-200 gap-1.5",
+              mode === m.id ? "shadow-sm scale-[1.02]" : "hover:border-primary/50"
+            )}
+          >
+            <span className="truncate">{m.label}</span>
+          </Button>
+        ))}
+      </div>
 
-				{/* Real-time Indicator */}
-				<div className="absolute top-6 right-8 hidden md:block">
-					{mode && (
-						<div className="bg-primary/10 text-primary text-[10px] font-bold px-3 py-1.5 se tracking-widest border border-primary/20">
-							Active: {mode}
-						</div>
-					)}
-				</div>
-			</div>
+      {/* Editor & Action Bar */}
+      <div className="space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-3 bg-muted/20 border border-border/50 p-2.5 sm:p-3 rounded-xl">
+          <div className="flex items-center gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setInputText(SAMPLE_TEXT)}
+              className="h-7 text-xs font-semibold rounded-lg"
+            >
+              <Sparkles className="mr-1.5 h-3.5 w-3.5" /> Sample
+            </Button>
+            {mode && (
+              <span className="text-[11px] font-mono text-muted-foreground hidden sm:inline">
+                Active: <strong className="text-foreground capitalize">{mode}</strong>
+              </span>
+            )}
+          </div>
 
-			{/* Stats Cards */}
-			<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-				<div className="flex items-center gap-4 p-6 bg-card border border-border/50 shadow-sm">
-					<div className="w-12 h-12 items-center justify-center text-primary">
-						<Type className="w-6 h-6" />
-					</div>
-					<div className="flex flex-col">
-						<span className="text-2xl font-bold">{inputText.length}</span>
-						<span className="text-xs text-muted-foreground font-semibold uppercase tracking-wider">
-							Characters
-						</span>
-					</div>
-				</div>
+          <div className="flex items-center gap-2">
+            <ToolAutoSaveIndicator
+              isSaved={isSaved}
+              hasStoredValue={hasStoredValue}
+              onClear={clearText}
+            />
+            {inputText && (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={clearText}
+                className="h-7 px-2 text-xs text-muted-foreground hover:text-destructive hover:bg-destructive/10 rounded-lg"
+              >
+                <Trash2 className="w-3.5 h-3.5 mr-1" /> Clear
+              </Button>
+            )}
+            <Button
+              onClick={copyToClipboard}
+              disabled={!outputText}
+              size="sm"
+              className="h-7 text-xs font-semibold rounded-lg gap-1.5 px-3"
+            >
+              {copied ? (
+                <Check className="w-3.5 h-3.5 text-emerald-400" />
+              ) : (
+                <Copy className="w-3.5 h-3.5" />
+              )}
+              {copied ? "Copied!" : "Copy Result"}
+            </Button>
+          </div>
+        </div>
 
-				<div className="flex items-center gap-4 p-6 bg-card border border-border/50 shadow-sm">
-					<div className="w-12 h-12 items-center justify-center text-primary">
-						<CaseSensitive className="w-6 h-6" />
-					</div>
-					<div className="flex flex-col">
-						<span className="text-2xl font-bold">
-							{inputText.trim() ? inputText.trim().split(/\s+/).length : 0}
-						</span>
-						<span className="text-xs text-muted-foreground font-semibold uppercase tracking-wider">
-							Words
-						</span>
-					</div>
-				</div>
+        {/* Text Area */}
+        <Textarea
+          value={inputText}
+          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+            setInputText(e.target.value)
+          }
+          placeholder="Type or paste your text here..."
+          className="min-h-[300px] text-base p-4 sm:p-6 bg-background/60 border-border/50 focus-visible:ring-primary/30 rounded-xl transition-all resize-none shadow-xs font-sans leading-relaxed"
+        />
+      </div>
 
-				<div className="flex items-center gap-4 p-6 bg-card border border-border/50 shadow-sm">
-					<div className="w-12 h-12 items-center justify-center text-primary">
-						<ArrowDownUp className="w-6 h-6" />
-					</div>
-					<div className="flex flex-col">
-						<span className="text-2xl font-bold">
-							{inputText.split("\n").filter((l) => l.trim()).length}
-						</span>
-						<span className="text-xs text-muted-foreground font-semibold uppercase tracking-wider">
-							Lines
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+      {/* Stats Cards */}
+      <div className="grid grid-cols-3 gap-3">
+        <div className="p-3 bg-muted/20 border border-border/40 rounded-xl text-center">
+          <span className="text-xl font-bold text-foreground block">
+            {inputText.length}
+          </span>
+          <span className="text-[10px] text-muted-foreground font-semibold uppercase tracking-wider">
+            Characters
+          </span>
+        </div>
+
+        <div className="p-3 bg-muted/20 border border-border/40 rounded-xl text-center">
+          <span className="text-xl font-bold text-foreground block">
+            {inputText.trim() ? inputText.trim().split(/\s+/).length : 0}
+          </span>
+          <span className="text-[10px] text-muted-foreground font-semibold uppercase tracking-wider">
+            Words
+          </span>
+        </div>
+
+        <div className="p-3 bg-muted/20 border border-border/40 rounded-xl text-center">
+          <span className="text-xl font-bold text-foreground block">
+            {inputText.split("\n").filter((l) => l.trim()).length}
+          </span>
+          <span className="text-[10px] text-muted-foreground font-semibold uppercase tracking-wider">
+            Lines
+          </span>
+        </div>
+      </div>
+    </div>
+  );
 }

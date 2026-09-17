@@ -187,7 +187,6 @@ export default function ToolLayout({
 										{enrichedTool.category}
 									</span>
 								)}
-								<VisitorBadge path={tool.route || `/${tool.id}`} label="PAGE VIEWS" />
 							</div>
 
 							{/* Secondary Toolbar Actions */}

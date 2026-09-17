@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
@@ -16,6 +18,7 @@ interface VisitorBadgeProps {
 /**
  * VisitorBadge Component — displays a live visitor hit counter from visitorbadge.io using /api/combined.
  * Links to https://visitorbadge.io/status?path=...
+ * If blocked by adblockers/privacy shields or offline, gracefully fails without showing broken image icons.
  */
 export function VisitorBadge({
   path,
@@ -24,6 +27,8 @@ export function VisitorBadge({
   style = "flat",
   className,
 }: VisitorBadgeProps) {
+  const [hasError, setHasError] = React.useState(false);
+
   // Normalize target URL with trailing slash
   let targetUrl = "https://sopkit.space/";
   if (path && path !== "/" && path !== "global") {
@@ -44,6 +49,10 @@ export function VisitorBadge({
   const statusUrl = `https://visitorbadge.io/status?path=${encodedPath}`;
   const badgeImageUrl = `https://api.visitorbadge.io/api/combined?path=${encodedPath}&countColor=${formattedCountColor}&style=${style}`;
 
+  if (hasError) {
+    return null;
+  }
+
   return (
     <a
       href={statusUrl}
@@ -61,6 +70,7 @@ export function VisitorBadge({
         alt="Visitors Counter"
         loading="lazy"
         decoding="async"
+        onError={() => setHasError(true)}
         className="h-5 w-auto rounded"
       />
     </a>

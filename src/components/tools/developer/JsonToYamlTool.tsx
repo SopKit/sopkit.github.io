@@ -1,199 +1,228 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-import { 
-    Download, 
-    Code as CodeIcon,
-    Loader2,
-    ShieldCheck,
-    Check,
-    Copy,
-    Trash2,
-    Settings,
-    Sparkles,
-    AlertCircle
+import React, { useState, useEffect, useCallback } from "react";
+import {
+  Download,
+  FileCode,
+  Loader2,
+  Check,
+  Copy,
+  Trash2,
+  Sparkles,
+  AlertCircle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { useToolStorage, useCopyFeedback } from "@/hooks/useToolStorage";
+import { ToolAutoSaveIndicator } from "@/components/tools/shared/ToolAutoSaveIndicator";
+
+const DEFAULT_JSON = JSON.stringify(
+  {
+    title: "SopKit JSON Converter",
+    version: "1.0.0",
+    enabled: true,
+    tags: ["developer", "tools", "seo"],
+    author: {
+      name: "SopKit Developer",
+      github: "SopKit",
+    },
+    services: [
+      { name: "API Gateway", port: 8080 },
+      { name: "Auth Service", port: 3000 },
+    ],
+  },
+  null,
+  2
+);
 
 export default function JsonToYamlTool() {
-    const [jsonInput, setJsonInput] = useState<string>(JSON.stringify({
-        title: "SopKit JSON Converter",
-        version: "1.0.0",
-        enabled: true,
-        tags: ["developer", "tools", "seo"],
-        author: {
-            name: "Antigravity",
-            github: "SopKit"
-        }
-    }, null, 2));
+  const [jsonInput, setJsonInput, { isSaved, hasStoredValue, clearStorage }] =
+    useToolStorage<string>("json-to-yaml", "input", DEFAULT_JSON);
 
-    const [yamlOutput, setYamlOutput] = useState("");
-    const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
-    const [error, setError] = useState("");
-    const [isProcessing, setIsProcessing] = useState(false);
+  const [yamlOutput, setYamlOutput] = useState("");
+  const [error, setError] = useState("");
+  const [isProcessing, setIsProcessing] = useState(false);
+  const { copied, copy } = useCopyFeedback();
 
-    const convertJson = useCallback(async () => {
-        const text = jsonInput.trim();
-        if (!text) {
-            setYamlOutput("");
-            setError("");
-            return;
-        }
+  const convertJson = useCallback(async () => {
+    const text = jsonInput.trim();
+    if (!text) {
+      setYamlOutput("");
+      setError("");
+      return;
+    }
 
-        setIsProcessing(true);
-        setError("");
-        try {
-            const parsed = JSON.parse(text);
-            const jsyaml = await import("js-yaml");
-            const yamlDump = jsyaml.dump(parsed, { indent: 2, lineWidth: -1 });
-            setYamlOutput(yamlDump);
-        } catch (err: any) {
-            setError(err.message || "Failed to convert JSON. Verify layout structures.");
-            setYamlOutput("");
-        } finally {
-            setIsProcessing(false);
-        }
-    }, [jsonInput]);
+    setIsProcessing(true);
+    setError("");
+    try {
+      const parsed = JSON.parse(text);
+      const jsyaml = await import("js-yaml");
+      const yamlDump = jsyaml.dump(parsed, { indent: 2, lineWidth: -1 });
+      setYamlOutput(yamlDump);
+    } catch (err: any) {
+      setError(
+        err.message || "Failed to convert JSON. Verify JSON syntax."
+      );
+      setYamlOutput("");
+    } finally {
+      setIsProcessing(false);
+    }
+  }, [jsonInput]);
 
-    useEffect(() => {
-        convertJson();
-    }, [jsonInput, convertJson]);
+  useEffect(() => {
+    convertJson();
+  }, [convertJson]);
 
-    const copyToClipboard = async () => {
-        if (!yamlOutput) return;
-        try {
-            await navigator.clipboard.writeText(yamlOutput);
-            setCopiedFormat("yaml");
-            setTimeout(() => setCopiedFormat(null), 1500);
-            toast.success("YAML code copied to clipboard.");
-        } catch (err) {
-            console.error(err);
-        }
-    };
+  const copyToClipboard = async () => {
+    if (!yamlOutput) return;
+    const ok = await copy(yamlOutput);
+    if (ok) toast.success("Copied YAML to clipboard");
+  };
 
-    const clearAll = () => {
-        setJsonInput("");
-        setYamlOutput("");
-        setError("");
-    };
+  const downloadCode = () => {
+    if (!yamlOutput) return;
+    const blob = new Blob([yamlOutput], { type: "text/yaml;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "output.yaml";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    toast.success("Downloaded output.yaml");
+  };
 
-    const downloadCode = () => {
-        if (!yamlOutput) return;
-        const blob = new Blob([yamlOutput], { type: "text/yaml;charset=utf-8" });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = `converted.yaml`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-    };
+  const clearAll = () => {
+    clearStorage();
+    setJsonInput("");
+    setYamlOutput("");
+    setError("");
+  };
 
-    return (
-        <div className="space-y-8 max-w-5xl mx-auto">
-            {/* Privacy Badge */}
-            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
-                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
-                <span>🔒 100% Client-Side Sandbox: Your conversion happens completely in-browser. No payloads are sent to external servers.</span>
-            </div>
-
-            {/* Header Section */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
-                <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
-                        <CodeIcon className="h-6 w-6" />
-                    </div>
-                    <div>
-                        <h2 className="text-xl font-bold">JSON to YAML Converter</h2>
-                        <p className="text-xs text-muted-foreground">Translate structured JSON object trees into clean YAML document files locally</p>
-                    </div>
-                </div>
-                <div className="flex items-center gap-2 flex-wrap">
-                    <Button 
-                        variant="outline" 
-                        onClick={clearAll}
-                        className="border-destructive/20 text-destructive hover:bg-destructive/10 text-xs font-bold"
-                    >
-                        <Trash2 className="mr-2 h-4 w-4" /> Clear
-                    </Button>
-                </div>
-            </div>
-
-            {error && (
-                <div className="p-4 border border-destructive/20 bg-destructive/5 rounded-2xl flex items-start gap-3">
-                    <AlertCircle className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
-                    <div className="space-y-1">
-                        <p className="text-xs font-bold text-destructive">Invalid JSON Input</p>
-                        <p className="text-[11px] font-mono text-muted-foreground leading-relaxed">{error}</p>
-                    </div>
-                </div>
-            )}
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {/* JSON Input Panel */}
-                <div className="space-y-3.5">
-                    <Label htmlFor="json-input" className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1.5 px-1">
-                        <Settings className="w-3.5 h-3.5" /> JSON Input
-                    </Label>
-                    <Textarea 
-                        id="json-input"
-                        value={jsonInput}
-                        onChange={(e) => setJsonInput(e.target.value)}
-                        className="font-mono text-xs leading-relaxed border-border/30 bg-background/50 h-[380px] resize-none focus-visible:ring-primary/20 rounded-2xl p-4"
-                        placeholder="Paste your raw JSON code here..."
-                    />
-                </div>
-
-                {/* YAML Output Panel */}
-                <div className="space-y-3.5">
-                    <div className="flex justify-between items-center px-1">
-                        <Label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1.5">
-                            <Sparkles className="w-3.5 h-3.5 text-primary" /> YAML Output
-                        </Label>
-                        {yamlOutput && (
-                            <div className="flex gap-1.5">
-                                <Button 
-                                    variant="ghost" 
-                                    size="sm" 
-                                    onClick={copyToClipboard}
-                                    className="h-7 text-[10px] font-bold gap-1 px-2.5 rounded-lg border hover:bg-muted"
-                                >
-                                    {copiedFormat === "yaml" ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3 text-primary" />}
-                                </Button>
-                                <Button 
-                                    variant="ghost" 
-                                    size="sm" 
-                                    onClick={downloadCode}
-                                    className="h-7 text-[10px] font-bold gap-1 px-2.5 rounded-lg border hover:bg-muted"
-                                >
-                                    <Download className="w-3 h-3 text-primary" />
-                                </Button>
-                            </div>
-                        )}
-                    </div>
-                    <Card className="border border-border/40 rounded-2xl overflow-hidden shadow-lg h-[380px] flex flex-col bg-white">
-                        <div className="flex-1 overflow-auto p-6 font-mono text-xs leading-relaxed text-black bg-white select-text">
-                            {isProcessing ? (
-                                <div className="h-full flex flex-col items-center justify-center gap-2">
-                                    <Loader2 className="w-6 h-6 text-primary animate-spin" />
-                                    <span className="text-[10px] text-muted-foreground animate-pulse">Converting...</span>
-                                </div>
-                            ) : yamlOutput ? (
-                                <pre className="whitespace-pre">{yamlOutput}</pre>
-                            ) : (
-                                <div className="h-full flex items-center justify-center text-center text-xs text-muted-foreground font-medium max-w-xs mx-auto">
-                                    YAML output will be rendered here.
-                                </div>
-                            )}
-                        </div>
-                    </Card>
-                </div>
-            </div>
+  return (
+    <div className="space-y-6">
+      {/* Top Action Bar */}
+      <div className="flex flex-wrap items-center justify-between gap-3 bg-muted/20 border border-border/50 p-3 sm:p-4 rounded-xl">
+        <div className="flex items-center gap-2 flex-wrap">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setJsonInput(DEFAULT_JSON)}
+            className="h-7 text-xs font-semibold rounded-lg"
+          >
+            <Sparkles className="mr-1.5 h-3.5 w-3.5" /> Load Sample
+          </Button>
         </div>
-    );
+
+        <div className="flex items-center gap-2">
+          <ToolAutoSaveIndicator
+            isSaved={isSaved}
+            hasStoredValue={hasStoredValue}
+            onClear={clearAll}
+          />
+          {jsonInput && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={clearAll}
+              className="h-7 px-2.5 text-xs text-muted-foreground hover:text-destructive hover:bg-destructive/10 rounded-lg"
+            >
+              <Trash2 className="w-3.5 h-3.5 mr-1" /> Clear
+            </Button>
+          )}
+        </div>
+      </div>
+
+      {error && (
+        <div className="p-3.5 border border-destructive/30 bg-destructive/10 rounded-xl flex items-start gap-3">
+          <AlertCircle className="w-4 h-4 text-destructive shrink-0 mt-0.5" />
+          <div className="text-xs space-y-0.5">
+            <p className="font-semibold text-destructive">Invalid JSON Syntax</p>
+            <p className="text-muted-foreground font-mono text-[11px]">{error}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Main Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Input */}
+        <div className="space-y-3">
+          <div className="flex justify-between items-center">
+            <Label
+              htmlFor="json-yaml-input"
+              className="text-xs font-semibold text-foreground flex items-center gap-1.5"
+            >
+              <FileCode className="w-3.5 h-3.5 text-primary" /> Source JSON
+            </Label>
+            <span className="text-[11px] font-mono text-muted-foreground">
+              {jsonInput ? `${jsonInput.length} chars` : "Empty"}
+            </span>
+          </div>
+
+          <Textarea
+            id="json-yaml-input"
+            value={jsonInput}
+            onChange={(e) => setJsonInput(e.target.value)}
+            className="font-mono text-xs leading-relaxed border-border/50 bg-background/60 h-[380px] resize-none focus-visible:ring-primary/30 rounded-xl p-3.5 transition-all"
+            placeholder="Paste JSON to convert to YAML..."
+            spellCheck={false}
+          />
+        </div>
+
+        {/* Output */}
+        <div className="space-y-3">
+          <div className="flex justify-between items-center">
+            <Label className="text-xs font-semibold text-foreground flex items-center gap-1.5">
+              <Sparkles className="w-3.5 h-3.5 text-primary" /> YAML Output
+            </Label>
+            {yamlOutput && (
+              <div className="flex items-center gap-1.5">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={copyToClipboard}
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                >
+                  {copied ? (
+                    <Check className="w-3 h-3 text-emerald-500" />
+                  ) : (
+                    <Copy className="w-3 h-3" />
+                  )}
+                  Copy
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={downloadCode}
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                >
+                  <Download className="w-3 h-3" /> Save .yaml
+                </Button>
+              </div>
+            )}
+          </div>
+
+          <div className="rounded-xl border border-border/50 bg-card/60 p-4 font-mono text-xs h-[380px] overflow-auto select-text">
+            {isProcessing ? (
+              <div className="h-full flex flex-col items-center justify-center gap-2 text-muted-foreground">
+                <Loader2 className="w-6 h-6 animate-spin text-primary" />
+                <span className="text-xs">Converting to YAML...</span>
+              </div>
+            ) : yamlOutput ? (
+              <pre className="text-foreground/90 whitespace-pre leading-relaxed text-amber-300 dark:text-amber-400">
+                {yamlOutput}
+              </pre>
+            ) : (
+              <div className="h-full flex items-center justify-center text-muted-foreground/60 italic text-xs">
+                YAML output will be rendered here automatically...
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

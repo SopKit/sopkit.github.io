@@ -30,6 +30,7 @@ import {
 } from "@/components/ui/dialog";
 import { SITE_URL } from "@/constants/config";
 import { trackToolExecution } from "@/lib/analytics";
+import { useToolStorage } from "@/hooks/useToolStorage";
 
 interface MetricScore {
 	label: string;
@@ -57,8 +58,8 @@ const FAMOUS_COUPLES = [
 ];
 
 export default function LoveCalculator() {
-	const [name1, setName1] = useState("");
-	const [name2, setName2] = useState("");
+	const [name1, setName1] = useToolStorage<string>("love-calculator", "name1", "");
+	const [name2, setName2] = useToolStorage<string>("love-calculator", "name2", "");
 	const [score, setScore] = useState<number | null>(null);
 	const [metrics, setMetrics] = useState<MetricScore[]>([]);
 	const [isCalculating, setIsCalculating] = useState(false);

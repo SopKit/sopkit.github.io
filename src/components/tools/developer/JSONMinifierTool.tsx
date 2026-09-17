@@ -1,255 +1,259 @@
 "use client";
 
-import { useState, useRef } from "react";
-import { 
-    Upload, 
-    Download, 
-    FileJson,
-    Loader2,
-    ShieldCheck,
-    Check,
-    Copy,
-    Trash2,
-    Settings
+import React, { useState, useRef, useEffect } from "react";
+import {
+  Upload,
+  Download,
+  FileJson,
+  Check,
+  Copy,
+  Trash2,
+  Sparkles,
+  Zap,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { useToolStorage, useCopyFeedback } from "@/hooks/useToolStorage";
+import { ToolAutoSaveIndicator } from "@/components/tools/shared/ToolAutoSaveIndicator";
+
+const SAMPLE_JSON = `{
+  "platform": "SopKit",
+  "version": "2.0.0",
+  "privacy": {
+    "zeroUploads": true,
+    "localExecution": true
+  },
+  "features": [
+    "JSON Minifier",
+    "JWT Debugger",
+    "Base64 Codec",
+    "URL Formatter"
+  ]
+}`;
 
 export default function JSONMinifierTool() {
-    const [jsonInput, setJsonInput] = useState<string>("");
-    const [minifiedJson, setMinifiedJson] = useState<string>("");
-    const [isProcessing, setIsProcessing] = useState(false);
-    const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
-    const [stats, setStats] = useState<{ original: number; minified: number; ratio: number } | null>(null);
-    const fileInputRef = useRef<HTMLInputElement>(null);
+  const [jsonInput, setJsonInput, { isSaved, hasStoredValue, clearStorage }] =
+    useToolStorage<string>("json-minifier", "input", SAMPLE_JSON);
 
-    const handleMinify = () => {
-        if (!jsonInput.trim()) {
-            toast.error("Please enter JSON data first.");
-            return;
-        }
+  const [minifiedJson, setMinifiedJson] = useState<string>("");
+  const [stats, setStats] = useState<{
+    original: number;
+    minified: number;
+    ratio: number;
+  } | null>(null);
 
-        setIsProcessing(true);
-        try {
-            const parsed = JSON.parse(jsonInput);
-            const minified = JSON.stringify(parsed);
-            
-            setMinifiedJson(minified);
-            
-            const originalSize = new Blob([jsonInput]).size;
-            const minifiedSize = new Blob([minified]).size;
-            const ratio = originalSize > 0 
-                ? Math.round((1 - minifiedSize / originalSize) * 100)
-                : 0;
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const { copied, copy } = useCopyFeedback();
 
-            setStats({
-                original: originalSize,
-                minified: minifiedSize,
-                ratio
-            });
+  // Auto-minify on change
+  useEffect(() => {
+    if (!jsonInput.trim()) {
+      setMinifiedJson("");
+      setStats(null);
+      return;
+    }
 
-            toast.success("JSON minified successfully!");
-        } catch (error) {
-            toast.error("Invalid JSON. Please verify formatting syntax.");
-        } finally {
-            setIsProcessing(false);
-        }
+    try {
+      const parsed = JSON.parse(jsonInput);
+      const minified = JSON.stringify(parsed);
+      setMinifiedJson(minified);
+
+      const originalSize = new Blob([jsonInput]).size;
+      const minifiedSize = new Blob([minified]).size;
+      const ratio =
+        originalSize > 0
+          ? Math.round((1 - minifiedSize / originalSize) * 100)
+          : 0;
+
+      setStats({
+        original: originalSize,
+        minified: minifiedSize,
+        ratio: Math.max(0, ratio),
+      });
+    } catch {
+      // Keep previous minified or clear stats if syntax error
+      setStats(null);
+    }
+  }, [jsonInput]);
+
+  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const content = ev.target?.result as string;
+      setJsonInput(content);
+      toast.success(`Loaded "${file.name}"`);
     };
+    reader.readAsText(file);
+    e.target.value = "";
+  };
 
-    const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const file = event.target.files?.[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                const content = e.target?.result as string;
-                setJsonInput(content);
-                setMinifiedJson("");
-                setStats(null);
-                toast.success("JSON file loaded successfully.");
-            };
-            reader.readAsText(file);
-        }
-        event.target.value = "";
-    };
+  const copyToClipboard = async () => {
+    if (!minifiedJson) return;
+    const ok = await copy(minifiedJson);
+    if (ok) toast.success("Copied minified JSON to clipboard");
+  };
 
-    const copyToClipboard = async (text: string, formatId: string) => {
-        if (!text) return;
-        try {
-            await navigator.clipboard.writeText(text);
-            setCopiedFormat(formatId);
-            setTimeout(() => setCopiedFormat(null), 1500);
-            toast.success(`Copied minified JSON!`);
-        } catch (err) {
-            console.error(err);
-        }
-    };
+  const downloadJSON = () => {
+    if (!minifiedJson) return;
+    const blob = new Blob([minifiedJson], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "minified.json";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    toast.success("Downloaded minified.json");
+  };
 
-    const downloadJSON = () => {
-        if (!minifiedJson) return;
-        const blob = new Blob([minifiedJson], { type: "application/json" });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = "minified.json";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-    };
+  const clearInput = () => {
+    clearStorage();
+    setJsonInput("");
+    setMinifiedJson("");
+    setStats(null);
+  };
 
-    const clearInput = () => {
-        setJsonInput("");
-        setMinifiedJson("");
-        setStats(null);
-    };
+  const formatFileSize = (bytes: number) => {
+    if (bytes === 0) return "0 B";
+    if (bytes < 1024) return `${bytes} B`;
+    return `${(bytes / 1024).toFixed(1)} KB`;
+  };
 
-    const formatFileSize = (bytes: number) => {
-        if (bytes === 0) return "0 Bytes";
-        const k = 1024;
-        const sizes = ["Bytes", "KB", "MB"];
-        const i = Math.floor(Math.log(bytes) / Math.log(k));
-        return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + " " + sizes[i];
-    };
+  return (
+    <div className="space-y-6">
+      {/* Action Bar */}
+      <div className="flex flex-wrap items-center justify-between gap-3 bg-muted/20 border border-border/50 p-3 sm:p-4 rounded-xl">
+        <div className="flex items-center gap-2 flex-wrap">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => fileInputRef.current?.click()}
+            className="h-7 text-xs font-semibold rounded-lg"
+          >
+            <Upload className="mr-1.5 h-3.5 w-3.5" /> Upload File
+          </Button>
+          <input
+            type="file"
+            accept=".json,application/json"
+            ref={fileInputRef}
+            onChange={handleFileUpload}
+            className="hidden"
+          />
 
-    return (
-        <div className="space-y-8 max-w-5xl mx-auto">
-            {/* Privacy Badge */}
-            <div className="flex items-center gap-2 p-3.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold shadow-sm backdrop-blur-sm">
-                <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 shrink-0" />
-                <span>🔒 100% Client-Side Sandbox: Minification runs locally in memory. No file contents are transmitted to any remote servers.</span>
-            </div>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setJsonInput(SAMPLE_JSON)}
+            className="h-7 text-xs font-semibold rounded-lg"
+          >
+            <Sparkles className="mr-1.5 h-3.5 w-3.5" /> Load Sample
+          </Button>
 
-            {/* Header Section */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card/20 p-6 border border-border/40 backdrop-blur-sm rounded-2xl">
-                <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 text-primary rounded-xl">
-                        <FileJson className="h-6 w-6" />
-                    </div>
-                    <div>
-                        <h2 className="text-xl font-bold">JSON Minifier</h2>
-                        <p className="text-xs text-muted-foreground">Remove whitespace, newlines, and comments to compact JSON payloads locally</p>
-                    </div>
-                </div>
-                <div className="flex items-center gap-2 flex-wrap">
-                    <Button 
-                        variant="outline" 
-                        onClick={() => fileInputRef.current?.click()}
-                        className="border-border hover:bg-muted/40 text-xs font-bold"
-                    >
-                        <Upload className="mr-2 h-4 w-4" /> Load File
-                    </Button>
-                    <Button 
-                        variant="outline" 
-                        onClick={clearInput}
-                        className="border-destructive/20 text-destructive hover:bg-destructive/10 text-xs font-bold"
-                    >
-                        <Trash2 className="mr-2 h-4 w-4" /> Clear
-                    </Button>
-                    <Button 
-                        disabled={isProcessing || !jsonInput.trim()}
-                        onClick={handleMinify}
-                        className="bg-primary hover:bg-primary/95 text-xs font-bold text-white shadow-md shadow-primary/10"
-                    >
-                        {isProcessing ? (
-                            <><Loader2 className="mr-2 h-4 w-4 animate-spin text-white" /> Minifying...</>
-                        ) : (
-                            <><Settings className="mr-2 h-4 w-4" /> Minify JSON</>
-                        )}
-                    </Button>
-                    <input 
-                        type="file" 
-                        accept="application/json" 
-                        className="hidden" 
-                        ref={fileInputRef}
-                        onChange={handleFileUpload}
-                    />
-                </div>
-            </div>
-
-            {stats && (
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-in">
-                    <Card className="p-5 border border-border/30 bg-card/10 text-center rounded-2xl">
-                        <span className="text-[10px] text-muted-foreground font-bold uppercase tracking-wider">Original Size</span>
-                        <p className="text-lg md:text-2xl font-black text-foreground mt-1">{formatFileSize(stats.original)}</p>
-                    </Card>
-                    <Card className="p-5 border border-border/30 bg-card/10 text-center rounded-2xl">
-                        <span className="text-[10px] text-muted-foreground font-bold uppercase tracking-wider">Minified Size</span>
-                        <p className="text-lg md:text-2xl font-black text-primary mt-1">{formatFileSize(stats.minified)}</p>
-                    </Card>
-                    <Card className="p-5 border border-border/30 bg-card/10 text-center rounded-2xl">
-                        <span className="text-[10px] text-muted-foreground font-bold uppercase tracking-wider">Size Savings</span>
-                        <p className="text-lg md:text-2xl font-black text-emerald-600 dark:text-emerald-400 mt-1">-{stats.ratio}%</p>
-                    </Card>
-                </div>
-            )}
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {/* Input Area */}
-                <div className="space-y-4">
-                    <Label htmlFor="json-input" className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1.5 px-1">
-                        <Settings className="w-3.5 h-3.5" /> JSON Input
-                    </Label>
-                    <Textarea 
-                        id="json-input"
-                        value={jsonInput}
-                        onChange={(e) => {
-                            setJsonInput(e.target.value);
-                            setMinifiedJson("");
-                            setStats(null);
-                        }}
-                        className="font-mono text-xs leading-relaxed border-border/30 bg-background/50 h-[380px] resize-none focus-visible:ring-primary/20 rounded-2xl p-4"
-                        placeholder="Paste your raw JSON code here..."
-                    />
-                </div>
-
-                {/* Minified Output */}
-                <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                        <Label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1.5 px-1">
-                            <FileJson className="w-3.5 h-3.5" /> Compact Output
-                        </Label>
-                        {minifiedJson && (
-                            <div className="flex gap-1.5">
-                                <Button 
-                                    variant="ghost" 
-                                    size="sm" 
-                                    onClick={() => copyToClipboard(minifiedJson, "minified")}
-                                    className="h-7 text-[10px] font-bold gap-1 px-2.5 rounded-lg border hover:bg-muted"
-                                >
-                                    {copiedFormat === "minified" ? (
-                                        <><Check className="w-3 h-3 text-emerald-500" /> Copied</>
-                                    ) : (
-                                        <><Copy className="w-3 h-3 text-primary" /> Copy</>
-                                    )}
-                                </Button>
-                                <Button 
-                                    variant="ghost" 
-                                    size="sm" 
-                                    onClick={downloadJSON}
-                                    className="h-7 text-[10px] font-bold gap-1 px-2.5 rounded-lg border hover:bg-muted"
-                                >
-                                    <Download className="w-3 h-3 text-primary" /> Download
-                                </Button>
-                            </div>
-                        )}
-                    </div>
-                    
-                    <Card className="border border-border/40 rounded-2xl overflow-hidden shadow-lg h-[380px] flex flex-col bg-white">
-                        <div className="flex-1 overflow-auto p-6 font-mono text-xs leading-relaxed text-black bg-white select-text">
-                            {minifiedJson ? (
-                                <pre className="whitespace-pre-wrap break-all">{minifiedJson}</pre>
-                            ) : (
-                                <div className="h-full flex items-center justify-center text-center text-xs text-muted-foreground font-medium max-w-xs mx-auto">
-                                    Minified JSON output will be rendered here.
-                                </div>
-                            )}
-                        </div>
-                    </Card>
-                </div>
-            </div>
+          {stats && stats.ratio > 0 && (
+            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-xs font-mono font-medium">
+              <Zap className="w-3 h-3" /> Saved {stats.ratio}% (
+              {formatFileSize(stats.original)} → {formatFileSize(stats.minified)})
+            </span>
+          )}
         </div>
-    );
+
+        <div className="flex items-center gap-2">
+          <ToolAutoSaveIndicator
+            isSaved={isSaved}
+            hasStoredValue={hasStoredValue}
+            onClear={clearInput}
+          />
+          {jsonInput && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={clearInput}
+              className="h-7 px-2.5 text-xs text-muted-foreground hover:text-destructive hover:bg-destructive/10 rounded-lg"
+            >
+              <Trash2 className="w-3.5 h-3.5 mr-1" /> Clear
+            </Button>
+          )}
+        </div>
+      </div>
+
+      {/* Main Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Input */}
+        <div className="space-y-3">
+          <div className="flex justify-between items-center">
+            <Label
+              htmlFor="json-source-input"
+              className="text-xs font-semibold text-foreground flex items-center gap-1.5"
+            >
+              <FileJson className="w-3.5 h-3.5 text-primary" /> Source JSON
+            </Label>
+            <span className="text-[11px] font-mono text-muted-foreground">
+              {jsonInput ? `${jsonInput.length} chars` : "Empty"}
+            </span>
+          </div>
+
+          <Textarea
+            id="json-source-input"
+            value={jsonInput}
+            onChange={(e) => setJsonInput(e.target.value)}
+            className="font-mono text-xs leading-relaxed border-border/50 bg-background/60 h-[360px] resize-none focus-visible:ring-primary/30 rounded-xl p-3.5 transition-all"
+            placeholder="Paste raw JSON here..."
+            spellCheck={false}
+          />
+        </div>
+
+        {/* Output */}
+        <div className="space-y-3">
+          <div className="flex justify-between items-center">
+            <Label className="text-xs font-semibold text-foreground flex items-center gap-1.5">
+              <Sparkles className="w-3.5 h-3.5 text-primary" /> Compact Minified JSON
+            </Label>
+            {minifiedJson && (
+              <div className="flex items-center gap-1.5">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={copyToClipboard}
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                >
+                  {copied ? (
+                    <Check className="w-3 h-3 text-emerald-500" />
+                  ) : (
+                    <Copy className="w-3 h-3" />
+                  )}
+                  Copy
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={downloadJSON}
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                >
+                  <Download className="w-3 h-3" /> Save
+                </Button>
+              </div>
+            )}
+          </div>
+
+          <div className="rounded-xl border border-border/50 bg-card/60 p-4 font-mono text-xs h-[360px] overflow-auto select-text break-all">
+            {minifiedJson ? (
+              <pre className="text-foreground/90 whitespace-pre-wrap leading-relaxed">
+                {minifiedJson}
+              </pre>
+            ) : (
+              <div className="h-full flex items-center justify-center text-muted-foreground/60 italic text-xs">
+                Minified JSON will appear here automatically...
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
