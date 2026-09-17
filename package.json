@@ -28,7 +28,9 @@
 		"generate-feed": "node scripts/generate-feed.cjs",
 		"seo:audit": "node scripts/seo-audit-local.mjs",
 		"submit-urls": "node submit-urls.mjs",
-		"publish-all": "node scripts/publish-all.mjs"
+		"publish-all": "node scripts/publish-all.mjs",
+		"sopkit": "node packages/cli/dist/index.cjs",
+		"sopkit:build": "cd packages/cli && npm run build"
 	},
 	"dependencies": {
 		"@hexclave/next": "1.0.51",

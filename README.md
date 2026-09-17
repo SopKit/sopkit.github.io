@@ -28,7 +28,7 @@
 
 SopKit's core utility logic is available as individual, zero-dependency, strictly-typed packages under the `@sopkit` scope:
 
-- **[`@sopkit/cli`](https://www.npmjs.com/package/@sopkit/cli)**: `npx @sopkit/cli` - Interactive prompt-driven CLI dashboard.
+- **[`@sopkit/cli`](https://www.npmjs.com/package/@sopkit/cli)**: `npx @sopkit/cli` - Interactive prompt-driven CLI & direct command-line utilities.
 - **[`@sopkit/base64`](https://www.npmjs.com/package/@sopkit/base64)**: `npm i @sopkit/base64` - Unicode & URL-Safe Base64 encoder/decoder.
 - **[`@sopkit/uuid`](https://www.npmjs.com/package/@sopkit/uuid)**: `npm i @sopkit/uuid` - Cryptographically secure UUID v4 & v1 generator.
 - **[`@sopkit/slug`](https://www.npmjs.com/package/@sopkit/slug)**: `npm i @sopkit/slug` - Accent-normalized, multilingual URL slug generator.
@@ -36,8 +36,69 @@ SopKit's core utility logic is available as individual, zero-dependency, strictl
 - **[`@sopkit/color`](https://www.npmjs.com/package/@sopkit/color)**: `npm i @sopkit/color` - HEX, RGB, and HSL colorspace converter.
 - **[`@sopkit/validator`](https://www.npmjs.com/package/@sopkit/validator)**: `npm i @sopkit/validator` - Email, URL, IP, credit card, and MAC address validation.
 - **[`@sopkit/password`](https://www.npmjs.com/package/@sopkit/password)**: `npm i @sopkit/password` - Password generator and information entropy analyzer.
+- **[`@sopkit/xml`](https://www.npmjs.com/package/@sopkit/xml)**: `npm i @sopkit/xml` - XML formatter, minifier, and syntax validator.
+- **[`@sopkit/jwt`](https://www.npmjs.com/package/@sopkit/jwt)**: `npm i @sopkit/jwt` - Zero-dependency JWT inspector and token parser.
+- **[`@sopkit/hash`](https://www.npmjs.com/package/@sopkit/hash)**: `npm i @sopkit/hash` - High-performance SHA-256, SHA-512, MD5, and HMAC suite.
 
 *Learn more and check out complete APIs at the live [SopKit Packages Directory](https://sopkit.space/packages).*
+
+---
+
+### ⚡ SopKit CLI Setup & Usage
+
+The `@sopkit/cli` provides instant access to developer utilities directly in your terminal. It supports both a **visual interactive dashboard** and **direct one-liner commands** with pipe support.
+
+#### 1. Quickest Run (Zero Installation via `npx`)
+```bash
+# Interactive menu:
+npx @sopkit/cli
+
+# Direct command execution:
+npx @sopkit/cli uuid v4 3
+npx @sopkit/cli base64 encode "SopKit"
+npx @sopkit/cli hash sha256 "secret"
+npx @sopkit/cli slug "Love Calculator Story"
+npx @sopkit/cli color "#ff3366"
+npx @sopkit/cli password 24
+```
+
+#### 2. Global Installation (Enables `sopkit` command everywhere)
+```bash
+npm install -g @sopkit/cli
+
+# Now run 'sopkit' directly from anywhere:
+sopkit uuid v4 3
+sopkit base64 encode "SopKit"
+sopkit hash sha256 "secret"
+sopkit slug "Love Calculator Story"
+sopkit color "#ff3366"
+sopkit password 24
+```
+
+#### 3. Local Development Link (Inside this repository)
+If developing locally inside this cloned repository:
+```bash
+# Link the local CLI package to your global bin:
+cd packages/cli && npm link && cd ../..
+
+# Or run via root npm script:
+npm run sopkit -- uuid v4 3
+```
+
+#### 4. Available CLI Commands
+
+| Command | Description | Example |
+| :--- | :--- | :--- |
+| `sopkit` | Launch interactive menu | `sopkit` |
+| `sopkit uuid [v4\|v1] [count]` | Generate random or timestamp UUIDs | `sopkit uuid v4 5` |
+| `sopkit base64 <encode\|decode> <text>` | Fast Base64 conversion | `sopkit base64 encode "Hello"` |
+| `sopkit hash <sha256\|sha512\|md5> <text>` | Cryptographic hash generator | `sopkit hash sha256 "my-token"` |
+| `sopkit slug <text>` | Clean URL slug generator | `sopkit slug "Top 10 Online Tools"` |
+| `sopkit color <hex>` | HEX to RGB/HSL converter | `sopkit color "#38bdf8"` |
+| `sopkit password [length]` | Cryptographically secure password | `sopkit password 32` |
+| `sopkit validator <email\|url\|ip> <val>` | RFC data format validator | `sopkit validator email "dev@sopkit.space"` |
+
+---
 
 ## What is SopKit?
 

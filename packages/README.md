@@ -4,7 +4,7 @@ This directory hosts the standalone, reusable developer packages maintained by S
 
 ## Packages List
 
-- **[`@sopkit/cli`](./cli)**: Interactive CLI dashboard providing a terminal UI for all utilities.
+- **[`@sopkit/cli`](./cli)**: Interactive CLI dashboard providing a terminal UI & direct scriptable commands.
 - **[`@sopkit/base64`](./base64)**: Full Unicode & URL-Safe Base64 encoder and decoder.
 - **[`@sopkit/uuid`](./uuid)**: Cryptographically secure UUID v4 & v1 generator and validator.
 - **[`@sopkit/slug`](./slug)**: Multilingual URL slug generator with accent normalization.
@@ -12,6 +12,9 @@ This directory hosts the standalone, reusable developer packages maintained by S
 - **[`@sopkit/color`](./color)**: HEX, RGB, and HSL colorspace converter.
 - **[`@sopkit/validator`](./validator)**: Fast validation suite for Email, URLs, Domains, IPs, MACs, and Credit Cards.
 - **[`@sopkit/password`](./password)**: Customizable password generator and entropy analyzer.
+- **[`@sopkit/xml`](./xml)**: XML formatter, minifier, and syntax validator.
+- **[`@sopkit/jwt`](./jwt)**: Zero-dependency JWT inspector and token parser.
+- **[`@sopkit/hash`](./hash)**: High-performance SHA-256, SHA-512, MD5, and HMAC hashing suite.
 
 ---
 
