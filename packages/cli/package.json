@@ -1,6 +1,6 @@
 {
   "name": "@sopkit/cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Interactive command-line interface for the SopKit utility ecosystem.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

@@ -1,6 +1,6 @@
 /**
  * @file packages/cli/src/index.ts
- * @description Beautiful interactive CLI for SopKit developer utilities.
+ * @description World-class interactive CLI for SopKit developer utilities.
  */
 
 import * as base64 from "../../base64/src/index";
@@ -13,12 +13,21 @@ import * as password from "../../password/src/index";
 import * as xml from "../../xml/src/index";
 import * as jwt from "../../jwt/src/index";
 import * as hash from "../../hash/src/index";
-import { printBanner, printCard, select, promptText, c } from "./ui";
+import {
+  printBanner,
+  printCard,
+  printColorCard,
+  printPasswordCard,
+  select,
+  promptText,
+  c,
+  bgRgb,
+} from "./ui";
 
 async function main() {
   const args = process.argv.slice(2);
 
-  // Fast direct flag execution if arguments passed
+  // Direct CLI command handling
   if (args.length > 0) {
     await handleDirectCli(args);
     return;
@@ -29,21 +38,21 @@ async function main() {
 
   while (true) {
     const choice = await select("Choose a SopKit developer utility:", [
-      { title: "🔑  Hash Generator", value: "hash", desc: "SHA-256, SHA-512, MD5, HMAC" },
-      { title: "📦  Base64 Engine", value: "base64", desc: "Encode, Decode, URL-safe" },
-      { title: "🆔  UUID Generator", value: "uuid", desc: "v4 Random, v1 Timestamp" },
-      { title: "🔗  URL Slugify", value: "slug", desc: "URL-safe, SEO-friendly slugs" },
-      { title: "🎨  Color Converter", value: "color", desc: "HEX, RGB, HSL conversions" },
-      { title: "🛡️   JWT Inspector", value: "jwt", desc: "Decode header & payload" },
-      { title: "✨  JSON Formatter", value: "json", desc: "Beautify, Minify, Validate" },
-      { title: "📜  XML Formatter", value: "xml", desc: "Beautify, Minify, Validate" },
-      { title: "🔒  Password Generator", value: "password", desc: "Strong entropy passwords" },
-      { title: "✅  Data Validator", value: "validator", desc: "Email, URL, IP, UUID, JSON" },
-      { title: "🚪  Exit", value: "exit" },
+      { title: "🔑  Hash Generator", value: "hash", desc: "SHA-256, SHA-512, MD5, HMAC", tag: "CRYPTO", shortcut: "1" },
+      { title: "📦  Base64 Engine", value: "base64", desc: "Encode, Decode, URL-safe", tag: "ENCODE", shortcut: "2" },
+      { title: "🆔  UUID Generator", value: "uuid", desc: "v4 Random, v1 Timestamp", tag: "IDENT", shortcut: "3" },
+      { title: "🔗  URL Slugify", value: "slug", desc: "URL-safe, SEO-friendly slugs", tag: "SEO", shortcut: "4" },
+      { title: "🎨  Color Converter", value: "color", desc: "HEX, RGB, HSL with visual swatch", tag: "DESIGN", shortcut: "5" },
+      { title: "🛡️   JWT Inspector", value: "jwt", desc: "Decode header, payload & expiration", tag: "AUTH", shortcut: "6" },
+      { title: "✨  JSON Formatter", value: "json", desc: "Beautify, Minify, Validate", tag: "FORMAT", shortcut: "7" },
+      { title: "📜  XML Formatter", value: "xml", desc: "Beautify, Minify, Validate", tag: "FORMAT", shortcut: "8" },
+      { title: "🔒  Password Generator", value: "password", desc: "High-entropy password with visual meter", tag: "SECURITY", shortcut: "9" },
+      { title: "✅  Data Validator", value: "validator", desc: "Email, URL, IP, UUID, JSON", tag: "CHECK", shortcut: "0" },
+      { title: "🚪  Exit", value: "exit", desc: "Return to shell", shortcut: "q" },
     ]);
 
     if (choice === "exit") {
-      console.log(`\n${c.dim}Thank you for using SopKit CLI! Visit ${c.cyan}https://sopkit.space${c.dim} for 600+ web tools.${c.reset}\n`);
+      console.log(`\n  ${c.muted}Thank you for using SopKit! Visit ${c.cyan}https://sopkit.space${c.muted} for 600+ web tools.${c.reset}\n`);
       process.exit(0);
     }
 
@@ -84,10 +93,10 @@ async function main() {
 
 async function runBase64() {
   const mode = await select("Base64 Operation:", [
-    { title: "Encode text to Base64", value: "encode" },
-    { title: "Decode Base64 to text", value: "decode" },
-    { title: "URL-Safe Base64 Encode", value: "urlEncode" },
-    { title: "URL-Safe Base64 Decode", value: "urlDecode" },
+    { title: "Encode text to Base64", value: "encode", tag: "ENCODE" },
+    { title: "Decode Base64 to text", value: "decode", tag: "DECODE" },
+    { title: "URL-Safe Base64 Encode", value: "urlEncode", tag: "URL-SAFE" },
+    { title: "URL-Safe Base64 Decode", value: "urlDecode", tag: "URL-SAFE" },
   ]);
 
   const text = await promptText("Input text");
@@ -101,30 +110,32 @@ async function runBase64() {
   else if (mode === "urlDecode") result = base64.urlDecode(text);
 
   const duration = (performance.now() - t0).toFixed(2);
-  printCard("Base64 Output", result, `Executed in ${duration}ms`);
+  printCard("Base64 Output", `${c.bold}${c.brightWhite}${result}${c.reset}`, `Executed in ${duration}ms`, "BASE64");
 }
 
 async function runUuid() {
   const version = await select("UUID Version:", [
-    { title: "UUID v4 (Random Crypto)", value: "v4" },
-    { title: "UUID v1 (Timestamp-Based)", value: "v1" },
+    { title: "UUID v4 (Cryptographic Random)", value: "v4", tag: "RFC 4122" },
+    { title: "UUID v1 (Timestamp-Based)", value: "v1", tag: "RFC 4122" },
   ]);
 
   const countStr = await promptText("Quantity", "1");
   const count = Math.min(Math.max(parseInt(countStr, 10) || 1, 1), 50);
 
   const t0 = performance.now();
-  const uuids: string[] = [];
+  const rows: string[] = [];
   for (let i = 0; i < count; i++) {
-    uuids.push(version === "v4" ? uuid.v4() : uuid.v1());
+    const val = version === "v1" ? uuid.v1() : uuid.v4();
+    const idxBadge = `${c.dim}[${c.reset}${c.cyan}${String(i + 1).padStart(2, "0")}${c.dim}]${c.reset}`;
+    rows.push(`  ${idxBadge}  ${c.bold}${c.brightWhite}${val}${c.reset}`);
   }
 
   const duration = (performance.now() - t0).toFixed(2);
-  printCard(`Generated UUID(s) [${version.toUpperCase()}]`, uuids.join("\n"), `${count} generated in ${duration}ms`);
+  printCard(`Generated UUID(s) [${version.toUpperCase()}]`, rows.join("\n"), `${count} generated in ${duration}ms`, "IDENTIFIER");
 }
 
 async function runSlug() {
-  const text = await promptText("Text to slugify", "Hello World! This is SopKit");
+  const text = await promptText("Text to slugify", "Love Calculator Story");
   if (!text) return;
 
   const sep = await promptText("Separator", "-");
@@ -132,26 +143,26 @@ async function runSlug() {
   const res = slug.slugify(text, { separator: sep, lowercase: true });
   const duration = (performance.now() - t0).toFixed(2);
 
-  printCard("URL Slug", res, `Generated in ${duration}ms`);
+  const content = [
+    `  ${c.muted}Input:${c.reset}   ${c.brightWhite}${text}${c.reset}`,
+    `  ${c.muted}Slug:${c.reset}    ${c.bold}${c.emerald}${res}${c.reset}`,
+  ].join("\n");
+
+  printCard("URL Slug Output", content, `Generated in ${duration}ms`, "SEO");
 }
 
 async function runColor() {
-  const input = await promptText("Enter HEX color", "#38bdf8");
+  const input = await promptText("Enter HEX / CSS color", "#ff3366");
   if (!input) return;
 
-  const t0 = performance.now();
   try {
-    const rgb = color.hexToRgb(input);
-    const hsl = color.rgbToHsl(rgb.r, rgb.g, rgb.b);
-    const duration = (performance.now() - t0).toFixed(2);
+    const rgbVal = color.hexToRgb(input);
+    const hslVal = color.rgbToHsl(rgbVal.r, rgbVal.g, rgbVal.b);
+    const hexClean = input.startsWith("#") ? input : `#${input}`;
+    const rgbStr = `rgb(${rgbVal.r}, ${rgbVal.g}, ${rgbVal.b})`;
+    const hslStr = `hsl(${hslVal.h}, ${hslVal.s}%, ${hslVal.l}%)`;
 
-    const output = [
-      `HEX:  ${c.bold}${input.startsWith("#") ? input : "#" + input}${c.reset}`,
-      `RGB:  ${c.bold}rgb(${rgb.r}, ${rgb.g}, ${rgb.b})${c.reset}`,
-      `HSL:  ${c.bold}hsl(${hsl.h}, ${hsl.s}%, ${hsl.l}%)${c.reset}`,
-    ].join("\n");
-
-    printCard("Color Conversion", output, `Converted in ${duration}ms`);
+    printColorCard(hexClean, rgbStr, hslStr, rgbVal.r, rgbVal.g, rgbVal.b);
   } catch (e: any) {
     printCard("Error", `${c.red}${e.message}${c.reset}`);
   }
@@ -166,15 +177,15 @@ async function runJwt() {
     const decoded = jwt.decode(token);
     const duration = (performance.now() - t0).toFixed(2);
 
-    const output = [
-      `${c.bold}${c.brightCyan}Header:${c.reset}`,
-      JSON.stringify(decoded.header, null, 2),
+    const parts = [
+      `  ${c.bold}${c.violet}Algorithm & Header:${c.reset}`,
+      `  ${JSON.stringify(decoded.header, null, 2).split("\n").join("\n  ")}`,
       ``,
-      `${c.bold}${c.brightCyan}Payload:${c.reset}`,
-      JSON.stringify(decoded.payload, null, 2),
-    ].join("\n");
+      `  ${c.bold}${c.cyan}Claims & Payload:${c.reset}`,
+      `  ${JSON.stringify(decoded.payload, null, 2).split("\n").join("\n  ")}`,
+    ];
 
-    printCard("JWT Decoded Details", output, `Decoded in ${duration}ms`);
+    printCard("Decoded JWT Details", parts.join("\n"), `Decoded in ${duration}ms`, "AUTH");
   } catch (err: any) {
     printCard("Error", `${c.red}Failed to decode JWT: ${err.message}${c.reset}`);
   }
@@ -182,14 +193,14 @@ async function runJwt() {
 
 async function runHash() {
   const algo = await select("Select Hash Algorithm:", [
-    { title: "SHA-256 (Industry standard)", value: "sha256" },
-    { title: "SHA-512 (Maximum security)", value: "sha512" },
-    { title: "SHA-1 (Legacy checksums)", value: "sha1" },
-    { title: "MD5 (Legacy hash)", value: "md5" },
-    { title: "HMAC SHA-256 (Keyed Hash)", value: "hmac" },
+    { title: "SHA-256 (Industry standard)", value: "sha256", tag: "SECURE" },
+    { title: "SHA-512 (Maximum bit security)", value: "sha512", tag: "MAX" },
+    { title: "HMAC SHA-256 (Keyed Hash)", value: "hmac", tag: "HMAC" },
+    { title: "SHA-1 (Legacy checksum)", value: "sha1", tag: "LEGACY" },
+    { title: "MD5 (Legacy digest)", value: "md5", tag: "LEGACY" },
   ]);
 
-  const text = await promptText("Input string to hash");
+  const text = await promptText("Input string to hash", "secret");
   if (!text) return;
 
   const t0 = performance.now();
@@ -199,34 +210,44 @@ async function runHash() {
   else if (algo === "sha1") result = await hash.sha1(text);
   else if (algo === "md5") result = await hash.md5(text);
   else if (algo === "hmac") {
-    const key = await promptText("Secret HMAC key", "secret");
+    const key = await promptText("Secret HMAC key", "sopkit-secret");
     result = await hash.hmacSha256(text, key);
   }
 
   const duration = (performance.now() - t0).toFixed(2);
-  printCard(`${algo.toUpperCase()} Hash Output`, result, `Computed in ${duration}ms`);
+  const content = [
+    `  ${c.muted}Input:${c.reset}   ${c.brightWhite}${text}${c.reset}`,
+    `  ${c.muted}Digest:${c.reset}  ${c.bold}${c.cyan}${result}${c.reset}`,
+  ].join("\n");
+
+  printCard(`${algo.toUpperCase()} Hash Output`, content, `Computed in ${duration}ms`, "CRYPTO");
 }
 
 async function runJson() {
   const mode = await select("JSON Operation:", [
-    { title: "Beautify / Format (2 spaces)", value: "beautify" },
-    { title: "Minify (Single line)", value: "minify" },
-    { title: "Validate Syntax", value: "validate" },
+    { title: "Beautify / Format (2 spaces)", value: "beautify", tag: "FORMAT" },
+    { title: "Minify (Single line)", value: "minify", tag: "MINIFY" },
+    { title: "Validate Syntax", value: "validate", tag: "CHECK" },
   ]);
 
-  const text = await promptText("Enter JSON string", '{"name":"SopKit","speed":"fast"}');
+  const text = await promptText("Enter JSON string", '{"name":"SopKit","speed":"instant"}');
   if (!text) return;
 
   const t0 = performance.now();
   if (mode === "validate") {
     const res = json.validate(text);
     const duration = (performance.now() - t0).toFixed(2);
-    printCard("JSON Validation", res.valid ? `${c.green}✔ Valid JSON${c.reset}` : `${c.red}✖ Invalid JSON: ${res.error || "Syntax error"}${c.reset}`, `Validated in ${duration}ms`);
+    printCard(
+      "JSON Validation",
+      res.valid ? `  ${c.emerald}✔ Valid JSON Syntax${c.reset}` : `  ${c.red}✖ Invalid JSON: ${res.error}${c.reset}`,
+      `Validated in ${duration}ms`,
+      "JSON"
+    );
   } else if (mode === "beautify") {
     try {
       const res = json.format(text, 2);
       const duration = (performance.now() - t0).toFixed(2);
-      printCard("Formatted JSON", res, `Formatted in ${duration}ms`);
+      printCard("Formatted JSON", res, `Formatted in ${duration}ms`, "JSON");
     } catch (e: any) {
       printCard("Error", `${c.red}${e.message}${c.reset}`);
     }
@@ -234,7 +255,7 @@ async function runJson() {
     try {
       const res = json.minify(text);
       const duration = (performance.now() - t0).toFixed(2);
-      printCard("Minified JSON", res, `Minified in ${duration}ms`);
+      printCard("Minified JSON", `${c.cyan}${res}${c.reset}`, `Minified in ${duration}ms`, "JSON");
     } catch (e: any) {
       printCard("Error", `${c.red}${e.message}${c.reset}`);
     }
@@ -243,9 +264,9 @@ async function runJson() {
 
 async function runXml() {
   const mode = await select("XML Operation:", [
-    { title: "Beautify / Format", value: "beautify" },
-    { title: "Minify", value: "minify" },
-    { title: "Validate Syntax", value: "validate" },
+    { title: "Beautify / Format", value: "beautify", tag: "FORMAT" },
+    { title: "Minify", value: "minify", tag: "MINIFY" },
+    { title: "Validate Syntax", value: "validate", tag: "CHECK" },
   ]);
 
   const text = await promptText("Enter XML string", "<root><tool>SopKit</tool></root>");
@@ -255,45 +276,43 @@ async function runXml() {
   if (mode === "validate") {
     const isValid = xml.validate(text).isValid;
     const duration = (performance.now() - t0).toFixed(2);
-    printCard("XML Validation", isValid ? `${c.green}✔ Valid XML${c.reset}` : `${c.red}✖ Invalid XML${c.reset}`, `Validated in ${duration}ms`);
+    printCard(
+      "XML Validation",
+      isValid ? `  ${c.emerald}✔ Valid XML Document${c.reset}` : `  ${c.red}✖ Invalid XML${c.reset}`,
+      `Validated in ${duration}ms`,
+      "XML"
+    );
   } else if (mode === "beautify") {
     const res = xml.format(text, { indent: 2 });
     const duration = (performance.now() - t0).toFixed(2);
-    printCard("Formatted XML", res, `Formatted in ${duration}ms`);
+    printCard("Formatted XML", res, `Formatted in ${duration}ms`, "XML");
   } else if (mode === "minify") {
     const res = xml.minify(text);
     const duration = (performance.now() - t0).toFixed(2);
-    printCard("Minified XML", res, `Minified in ${duration}ms`);
+    printCard("Minified XML", `${c.cyan}${res}${c.reset}`, `Minified in ${duration}ms`, "XML");
   }
 }
 
 async function runPassword() {
-  const lenStr = await promptText("Password length", "18");
-  const length = Math.min(Math.max(parseInt(lenStr, 10) || 18, 4), 128);
+  const lenStr = await promptText("Password length", "24");
+  const length = Math.min(Math.max(parseInt(lenStr, 10) || 24, 4), 128);
 
   const t0 = performance.now();
   const pass = password.generate({ length, numbers: true, symbols: true, uppercase: true, lowercase: true });
   const strength = password.analyze(pass);
   const duration = (performance.now() - t0).toFixed(2);
 
-  const output = [
-    `${c.bold}${c.brightGreen}${pass}${c.reset}`,
-    ``,
-    `Strength Score:  ${c.bold}${strength.score}/4${c.reset} (${strength.label})`,
-    `Entropy:         ${c.bold}${strength.entropy} bits${c.reset}`,
-  ].join("\n");
-
-  printCard("Generated Secure Password", output, `Generated in ${duration}ms`);
+  printPasswordCard(pass, length, strength.entropy, strength.score, duration);
 }
 
 async function runValidator() {
   const type = await select("Validator Type:", [
-    { title: "Email Address", value: "email" },
-    { title: "URL", value: "url" },
-    { title: "Domain Name", value: "domain" },
-    { title: "IP Address (IPv4 / IPv6)", value: "ip" },
-    { title: "MAC Address", value: "mac" },
-    { title: "UUID", value: "uuid" },
+    { title: "Email Address", value: "email", tag: "EMAIL" },
+    { title: "URL (HTTP / HTTPS)", value: "url", tag: "URL" },
+    { title: "Domain Name", value: "domain", tag: "DNS" },
+    { title: "IP Address (IPv4 / IPv6)", value: "ip", tag: "NET" },
+    { title: "MAC Address", value: "mac", tag: "HARDWARE" },
+    { title: "UUID", value: "uuid", tag: "UUID" },
   ]);
 
   const val = await promptText("Enter value to validate");
@@ -309,28 +328,32 @@ async function runValidator() {
   else if (type === "uuid") ok = uuid.validate(val);
 
   const duration = (performance.now() - t0).toFixed(2);
-  printCard("Validation Result", ok ? `${c.green}✔ Valid ${type.toUpperCase()}${c.reset}` : `${c.red}✖ Invalid ${type.toUpperCase()}${c.reset}`, `Checked in ${duration}ms`);
+  const content = ok
+    ? `  ${c.emerald}${c.bold}✔ VALID${c.reset}  ${c.brightWhite}${val}${c.reset}`
+    : `  ${c.red}${c.bold}✖ INVALID${c.reset}  ${c.brightWhite}${val}${c.reset}`;
+
+  printCard(`Validation Result [${type.toUpperCase()}]`, content, `Checked in ${duration}ms`, "VALIDATE");
 }
 
 async function handleDirectCli(args: string[]) {
   const cmd = args[0].toLowerCase();
   if (cmd === "--help" || cmd === "-h" || cmd === "help") {
     printBanner();
-    console.log(`Usage:
-  sopkit                           Launch interactive menu
-  sopkit uuid [v4|v1] [count]      Generate UUID(s)
-  sopkit base64 <encode|decode> <text>
-  sopkit hash <sha256|sha512|md5> <text>
-  sopkit slug <text>
-  sopkit password [length]
-  sopkit color <hex>
-  sopkit validator <email|url|ip> <value>
+    console.log(`  ${c.bold}${c.brightWhite}Usage:${c.reset}
+    ${c.cyan}sopkit${c.reset}                              Launch world-class interactive UI dashboard
+    ${c.cyan}sopkit uuid${c.reset} [v4|v1] [count]         Generate UUID(s)
+    ${c.cyan}sopkit base64${c.reset} <encode|decode> <text>  Base64 text encoder/decoder
+    ${c.cyan}sopkit hash${c.reset} <sha256|sha512|md5> <txt> Compute cryptographic hashes
+    ${c.cyan}sopkit slug${c.reset} <text>                  Generate URL-safe slug
+    ${c.cyan}sopkit password${c.reset} [length]             Generate strong entropy password
+    ${c.cyan}sopkit color${c.reset} <hex>                   Convert HEX, RGB, HSL with visual preview
+    ${c.cyan}sopkit validator${c.reset} <email|url|ip> <val> Validate string formats
 `);
     return;
   }
 
   if (cmd === "--version" || cmd === "-v") {
-    console.log("sopkit v1.0.1");
+    console.log("sopkit v1.0.2");
     return;
   }
 
@@ -375,9 +398,11 @@ async function handleDirectCli(args: string[]) {
   if (cmd === "color") {
     const col = args[1] || "#38bdf8";
     try {
-      const rgb = color.hexToRgb(col);
-      const hsl = color.rgbToHsl(rgb.r, rgb.g, rgb.b);
-      console.log(`HEX: ${col} | RGB: rgb(${rgb.r}, ${rgb.g}, ${rgb.b}) | HSL: hsl(${hsl.h}, ${hsl.s}%, ${hsl.l}%)`);
+      const rgbVal = color.hexToRgb(col);
+      const hslVal = color.rgbToHsl(rgbVal.r, rgbVal.g, rgbVal.b);
+      // Pretty print with color swatch if in terminal
+      const swatch = process.stdout.isTTY ? `${bgRgb(rgbVal.r, rgbVal.g, rgbVal.b)}  ${c.reset} ` : "";
+      console.log(`${swatch}HEX: ${col} | RGB: rgb(${rgbVal.r}, ${rgbVal.g}, ${rgbVal.b}) | HSL: hsl(${hslVal.h}, ${hslVal.s}%, ${hslVal.l}%)`);
     } catch (e: any) {
       console.error(e.message);
     }

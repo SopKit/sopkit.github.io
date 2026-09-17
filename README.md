@@ -48,6 +48,10 @@ SopKit's core utility logic is available as individual, zero-dependency, strictl
 
 The `@sopkit/cli` provides instant access to developer utilities directly in your terminal. It supports both a **visual interactive dashboard** and **direct one-liner commands** with pipe support.
 
+<div align="center">
+  <img src="packages/cli/assets/demo.gif" alt="SopKit CLI Interactive Terminal Demo" width="760" style="border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);" />
+</div>
+
 #### 1. Quickest Run (Zero Installation via `npx`)
 ```bash
 # Interactive menu:

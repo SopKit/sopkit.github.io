@@ -7,6 +7,10 @@
 
 Zero-dependency, standalone command-line interface bundled with the complete SopKit utility engine. Works both as an **interactive keyboard-navigated dashboard** and as **direct scriptable one-liners** for shell pipes and CI.
 
+<div align="center">
+  <img src="assets/demo.gif" alt="SopKit CLI Interactive Terminal Demo" width="760" style="border-radius: 8px;" />
+</div>
+
 Full web version available at: **[sopkit.space](https://sopkit.space/)**
 
 ---
