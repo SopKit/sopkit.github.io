@@ -77,7 +77,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: "All Downloaders",
 						description: "All Downloaders",
-						url: "https://sopkit.github.io/all-downloaders/",
+						url: "https://sopkit.space/all-downloaders/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

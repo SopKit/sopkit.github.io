@@ -10,7 +10,7 @@ const toolsJsonPath = path.join(rootDir, 'src', 'constants', 'tools.json');
 const blogDataPath = path.join(rootDir, 'src', 'constants', 'blog-data.ts');
 const publicDir = path.join(rootDir, 'public');
 
-const BASE_URL = 'https://sopkit.github.io';
+const BASE_URL = 'https://sopkit.space';
 const LAST_MODIFIED = new Date().toISOString().split('T')[0];
 
 console.log('🚀 Generating static sitemap.xml and robots.txt...');

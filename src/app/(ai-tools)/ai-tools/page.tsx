@@ -10,12 +10,12 @@ export const metadata = {
 	description: "Optimize your AI workflows. Build Midjourney prompts, generate custom system personas for ChatGPT and Claude, and optimize your prompts online.",
 	keywords: "ai tools, midjourney prompt builder, system prompt generator, chatgpt persona creator, ai prompt optimizer, free online prompt helper, SopKit, ai-tools, free ai-tools, ai tools online, prompt tools, free prompt tool",
 	alternates: {
-		canonical: "https://sopkit.github.io/ai-tools/",
+		canonical: "https://sopkit.space/ai-tools/",
 	},
 	openGraph: {
 		title: "Free AI Prompt Tools & Persona Generators - SopKit",
 		description: "Optimize your AI workflows. Build Midjourney prompts, generate custom system personas for ChatGPT and Claude, and optimize your prompts online.",
-		url: "https://sopkit.github.io/ai-tools/",
+		url: "https://sopkit.space/ai-tools/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

@@ -29,7 +29,7 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Can I embed SopKit tools into my own website or documentation?",
     answer:
-      "Yes! Every interactive tool supports our dedicated embed route. You can add an iframe pointing to https://sopkit.github.io/embed-tool/?id=<tool-id> for a clean, distraction-free widget that fits seamlessly into your site.",
+      "Yes! Every interactive tool supports our dedicated embed route. You can add an iframe pointing to https://sopkit.space/embed-tool/?id=<tool-id> for a clean, distraction-free widget that fits seamlessly into your site.",
   },
   {
     question: "Does SopKit work on smartphones and tablets?",

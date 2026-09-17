@@ -291,53 +291,14 @@
    Tool Layout & Interactive Component Premium Polish
    ========================================================================== */
 .bg-card\/50, .bg-card\/40, .bg-card\/30, .bg-card\/20 {
-	border-radius: 1.25rem !important; /* modern 20px corners */
+	border-radius: 1.25rem;
 }
 
-/* Avoid nested double-padding squishing tool contents */
-main section.bg-card\/30 > div > div.space-y-6.p-6,
-main section.bg-card\/30 > div > div[class*="p-6"] {
-	padding: 0 !important;
-}
-main section.bg-card\/30 > div > div:first-child {
-	padding: 0 !important;
-}
-
-/* Make nested cards inside the main tool container completely borderless and transparent */
-main section [data-slot="card"],
-main section div[class*="bg-card"] {
-	background-color: transparent !important;
-	background: transparent !important;
-	border: none !important;
-	box-shadow: none !important;
-	padding: 0 !important;
-}
-
-/* Premium Section Headings inside tool area */
-main section [data-slot="card-header"] {
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-	padding-top: 0 !important;
-	border-bottom: 1px solid hsl(var(--border) / 0.4) !important;
-	margin-bottom: 1.5rem !important;
-	padding-bottom: 0.75rem !important;
-}
-main section [data-slot="card-title"] {
-	font-size: 1.25rem !important;
-	font-weight: 800 !important;
-	letter-spacing: -0.025em !important;
-	color: hsl(var(--foreground)) !important;
-}
-main section [data-slot="card-description"] {
-	font-size: 0.825rem !important;
-	color: hsl(var(--muted-foreground)) !important;
-	margin-top: 0.25rem !important;
-}
-main section [data-slot="card-content"] {
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
+/* Tool Interactive Shell Polish */
+.tool-flat-panel {
+	background: transparent;
+	border: none;
+	box-shadow: none;
 }
 
 /* Upload & Dropzone Areas: clean, flexible, centered */

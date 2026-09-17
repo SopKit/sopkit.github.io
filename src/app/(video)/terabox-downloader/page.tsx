@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Download, convert, and edit video files instantly with our free Terabox Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
 	keywords: "terabox video downloader, free online tool, no signup, terabox-downloader, Terabox Downloader, free terabox-downloader, Terabox Downloader online, video tool, video editor, media converter, online video, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/terabox-downloader/",
+		canonical: "https://sopkit.space/terabox-downloader/",
 	},
 	openGraph: {
 		title: "Free Terabox Video Downloader Online - No Signup | SopKit",
 		description: "Download, convert, and edit video files instantly with our free Terabox Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
-		url: "https://sopkit.github.io/terabox-downloader/",
+		url: "https://sopkit.space/terabox-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

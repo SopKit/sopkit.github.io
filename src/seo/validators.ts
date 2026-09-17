@@ -1,7 +1,4 @@
-/**
- * @file src/seo/validators.ts
- * @description SEO and metadata validation suite for CI checks.
- */
+import { SITE_URL } from "@/constants/config";
 
 export interface SeoValidationResult {
   valid: boolean;
@@ -37,7 +34,7 @@ export function validateSeoMetadata(input: {
   }
 
   // Canonical checks
-  if (!input.canonical || !input.canonical.startsWith("https://sopkit.github.io")) {
+  if (!input.canonical || !input.canonical.startsWith(SITE_URL)) {
     errors.push(`Canonical URL "${input.canonical}" is invalid or does not match primary domain.`);
   }
 

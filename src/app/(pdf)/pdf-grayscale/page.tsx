@@ -22,7 +22,7 @@ export default async function ToolPage() {
 		"@context": "https://schema.org",
 		"@type": "WebApplication",
 		"name": "PDF Grayscale Converter",
-		"url": "https://sopkit.github.io/pdf-grayscale/",
+		"url": "https://sopkit.space/pdf-grayscale/",
 		"applicationCategory": "PDFApplication",
 		"operatingSystem": "All",
 		"browserRequirements": "Requires HTML5 support",

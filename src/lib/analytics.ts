@@ -75,7 +75,7 @@ export function trackPageView(url: string, title?: string) {
 
 	// Strip query parameters and hash fragments to prevent leaking tokens or query state
 	const cleanPath = (url || "/").split("?")[0].split("#")[0] || "/";
-	const origin = typeof window !== "undefined" ? window.location.origin : "https://sopkit.github.io";
+	const origin = typeof window !== "undefined" ? window.location.origin : "https://sopkit.space";
 
 	sendGAEvent("page_view", {
 		page_location: `${origin}${cleanPath}`,
@@ -230,7 +230,7 @@ export function trackThemeChange(theme: "light" | "dark" | "system") {
  */
 export function trackOutboundClick(destinationUrl: string, linkText?: string) {
 	try {
-		const parsed = new URL(destinationUrl, "https://sopkit.github.io");
+		const parsed = new URL(destinationUrl, "https://sopkit.space");
 		// Only send origin + pathname to prevent leaking query tokens or credentials
 		const sanitizedUrl = `${parsed.origin}${parsed.pathname}`;
 		sendGAEvent("outbound_click", {

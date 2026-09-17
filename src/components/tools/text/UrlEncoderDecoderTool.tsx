@@ -13,7 +13,7 @@ import { GlassCard } from "../shared/WorkspaceComponents";
 import { toast } from "sonner";
 
 export default function UrlEncoderDecoderTool() {
-	const [input, setInput] = useState("https://sopkit.github.io/search?q=hello world & query=true");
+	const [input, setInput] = useState("https://sopkit.space/search?q=hello world & query=true");
 	const [output, setOutput] = useState("");
 	const [copied, setCopied] = useState(false);
 

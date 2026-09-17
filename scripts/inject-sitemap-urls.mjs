@@ -36,10 +36,10 @@ function run() {
     if (!cleanRoute.startsWith("/")) cleanRoute = "/" + cleanRoute;
     if (!cleanRoute.endsWith("/")) cleanRoute = cleanRoute + "/";
 
-    const fullUrl = `https://sopkit.github.io${cleanRoute}`.toLowerCase();
+    const fullUrl = `https://sopkit.space${cleanRoute}`.toLowerCase();
     
     if (!existingUrls.has(fullUrl)) {
-      newEntries += `  <url>\n    <loc>https://sopkit.github.io${cleanRoute}</loc>\n    <lastmod>${nowStr}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.75</priority>\n  </url>\n`;
+      newEntries += `  <url>\n    <loc>https://sopkit.space${cleanRoute}</loc>\n    <lastmod>${nowStr}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.75</priority>\n  </url>\n`;
       addedCount++;
     }
   }

@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
 	keywords: "terms of use, SopKit terms, terms of service, free online tools terms, terms, free terms, terms online, SopKit, free online tools, browser tools, no signup tools, privacy tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/terms",
+		canonical: "https://sopkit.space/terms",
 	},
 	openGraph: {
 		title: "Terms of Use — Fair & Simple Rules | SopKit",
 		description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
-		url: "https://sopkit.github.io/terms",
+		url: "https://sopkit.space/terms",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -46,7 +46,7 @@ export default async function TermsPage() {
 						"@type": "WebPage",
 						name: "Terms of Use",
 						description: tool.description,
-						url: "https://sopkit.github.io/terms/",
+						url: "https://sopkit.space/terms/",
 						publisher: { "@type": "Organization", name: "SopKit" },
 					}),
 				}}

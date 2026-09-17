@@ -9,12 +9,12 @@ export const metadata = {
 	description: "Compute rates, taxes, averages, and conversions with our free Salary Calculator India (CTC to In-Hand) online. Quick, accurate browser calculator with no reg...",
 	keywords: "salary calculator india (ctc to in-hand), free online tool, no signup, salary calculator india (ctc to in-hand) online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/salary-calculator-india",
+		canonical: "https://sopkit.space/salary-calculator-india",
 	},
 	openGraph: {
 		title: "Free Salary Calculator India (CTC to In-Hand) Online - No Signup | SopKit",
 		description: "Compute rates, taxes, averages, and conversions with our free Salary Calculator India (CTC to In-Hand) online. Quick, accurate browser calculator with no reg...",
-		url: "https://sopkit.github.io/salary-calculator-india",
+		url: "https://sopkit.space/salary-calculator-india",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

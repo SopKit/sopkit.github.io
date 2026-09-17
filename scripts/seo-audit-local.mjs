@@ -12,13 +12,13 @@
  *   node scripts/seo-audit-local.mjs
  *   node scripts/seo-audit-local.mjs --all
  *   node scripts/seo-audit-local.mjs --limit=50 --json
- *   BASE_URL=https://sopkit.github.io node scripts/seo-audit-local.mjs
+ *   BASE_URL=https://sopkit.space node scripts/seo-audit-local.mjs
  */
 
 import { writeFileSync } from "fs";
 import { join } from "path";
 
-const BASE_URL = process.env.BASE_URL || "https://sopkit.github.io";
+const BASE_URL = process.env.BASE_URL || "https://sopkit.space";
 const verbose = process.argv.includes("--verbose");
 const jsonOutput = process.argv.includes("--json");
 const all = process.argv.includes("--all");

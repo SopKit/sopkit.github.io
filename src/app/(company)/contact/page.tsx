@@ -7,12 +7,12 @@ export const metadata = {
 	description: "Reach the SopKit team for support, feedback or partnerships. We reply fast — find every channel here.",
 	keywords: "contact SopKit, support, feedback, help, contact, request tool, SopKit support, report bug",
 	alternates: {
-		canonical: "https://sopkit.github.io/contact",
+		canonical: "https://sopkit.space/contact",
 	},
 	openGraph: {
 		title: "Contact SopKit — Support & Feedback",
 		description: "Reach the SopKit team for support, feedback or partnerships. We reply fast — find every channel here.",
-		url: "https://sopkit.github.io/contact",
+		url: "https://sopkit.space/contact",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -45,7 +45,7 @@ export default async function ToolPage() {
 						"@type": "ContactPage",
 						name: "Contact SopKit",
 						description: tool.description,
-						url: "https://sopkit.github.io/contact/",
+						url: "https://sopkit.space/contact/",
 						mainEntity: {
 							"@type": "ContactPoint",
 							email: SITE_CONFIG.contactEmail,

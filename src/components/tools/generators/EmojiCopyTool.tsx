@@ -1560,7 +1560,7 @@ function EmojiCopyTool() {
 					<SocialShareButtons
 						toolName="Emoji Copy Tool"
 						toolDescription="Find and copy emojis easily with our comprehensive emoji library! Perfect for messages, social media, and content. 😍"
-						toolUrl="https://sopkit.github.io/emoji-copy"
+						toolUrl="https://sopkit.space/emoji-copy"
 						category="generators"
 					/>
 				</div>

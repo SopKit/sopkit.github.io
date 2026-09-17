@@ -9,12 +9,12 @@ export const metadata = {
 	description: "Compute rates, taxes, averages, and conversions with our free EMI Calculator for Loans online. Quick, accurate browser calculator with no registration.",
 	keywords: "emi calculator for loans, free online tool, no signup, emi calculator for loans online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/emi-calculator",
+		canonical: "https://sopkit.space/emi-calculator",
 	},
 	openGraph: {
 		title: "Free EMI Calculator for Loans Online - No Signup | SopKit",
 		description: "Compute rates, taxes, averages, and conversions with our free EMI Calculator for Loans online. Quick, accurate browser calculator with no registration.",
-		url: "https://sopkit.github.io/emi-calculator",
+		url: "https://sopkit.space/emi-calculator",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

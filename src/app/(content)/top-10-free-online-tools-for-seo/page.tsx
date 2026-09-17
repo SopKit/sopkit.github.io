@@ -6,12 +6,12 @@ export const metadata = {
 	description: "Solve everyday digital tasks instantly using our free Top 10 Free Online Tools for SEO (2026) online. Fast, secure browser-based utility with no registration.",
 	keywords: "top 10 free online tools for seo (2026), top 10 free online tools for seo (2026) guide, SopKit, top-10-free-online-tools-for-seo, top 10 free online tools for seo, free top-10-free-online-tools-for-seo, top 10 free online tools for seo online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/top-10-free-online-tools-for-seo",
+		canonical: "https://sopkit.space/top-10-free-online-tools-for-seo",
 	},
 	openGraph: {
 		title: "Top 10 Free SEO Tools Online for 2026 | SopKit",
 		description: "Solve everyday digital tasks instantly using our free Top 10 Free Online Tools for SEO (2026) online. Fast, secure browser-based utility with no registration.",
-		url: "https://sopkit.github.io/top-10-free-online-tools-for-seo",
+		url: "https://sopkit.space/top-10-free-online-tools-for-seo",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/top-10-free-online-tools-for-seo/",
+						url: "https://sopkit.space/top-10-free-online-tools-for-seo/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

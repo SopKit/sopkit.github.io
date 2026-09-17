@@ -41,8 +41,8 @@ export default async function ToolIdPage() {
 		"@graph": [
 			{
 				"@type": "WebPage",
-				"@id": "https://sopkit.github.io/tool-id/#webpage",
-				"url": "https://sopkit.github.io/tool-id",
+				"@id": "https://sopkit.space/tool-id/#webpage",
+				"url": "https://sopkit.space/tool-id",
 				"name": "Tool IDs & Embed Directory — SopKit Developer Reference",
 				"description": `Developer directory to lookup tool IDs, generate iframe embed codes, and integrate ${SITE_CONFIG.toolCountString} free tools into your site.`,
 				"breadcrumb": {
@@ -52,20 +52,20 @@ export default async function ToolIdPage() {
 							"@type": "ListItem",
 							"position": 1,
 							"name": "Home",
-							"item": "https://sopkit.github.io"
+							"item": "https://sopkit.space"
 						},
 						{
 							"@type": "ListItem",
 							"position": 2,
 							"name": "Tool ID Directory",
-							"item": "https://sopkit.github.io/tool-id"
+							"item": "https://sopkit.space/tool-id"
 						}
 					]
 				}
 			},
 			{
 				"@type": "TechArticle",
-				"@id": "https://sopkit.github.io/tool-id/#article",
+				"@id": "https://sopkit.space/tool-id/#article",
 				"headline": "Embedding SopKit Client-Side Tools: Developer Integration Guide",
 				"description": "Comprehensive reference guide on embedding SopKit browser-based tools using responsive, privacy-compliant iframes.",
 				"author": {

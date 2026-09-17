@@ -5,7 +5,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "Free Online Converter Tools - Image, PDF & Code Converters | SopKit",
 	description: "Free online format converter tools. Convert images to PDF, Word documents to PDF, text to binary, and format files locally and securely.",
-	alternates: { canonical: "https://sopkit.github.io/converter-tools/" },
+	alternates: { canonical: "https://sopkit.space/converter-tools/" },
 };
 
 export default function ConverterToolsHub() {

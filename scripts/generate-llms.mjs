@@ -8,7 +8,7 @@
 
 import { readFileSync, writeFileSync } from "fs";
 
-const BASE = "https://sopkit.github.io";
+const BASE = "https://sopkit.space";
 const json = JSON.parse(readFileSync("src/constants/tools.json", "utf8"));
 const categories = json.categories || {};
 const cats = Object.values(categories);

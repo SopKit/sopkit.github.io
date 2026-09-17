@@ -3,7 +3,7 @@ export const dynamic = "force-static";
 import { getAllTools } from "@/lib/tools";
 
 export async function GET() {
-	const baseUrl = "https://sopkit.github.io";
+	const baseUrl = "https://sopkit.space";
 	const currentDate = new Date().toUTCString();
 	const currentYear = new Date().getFullYear();
 	const allTools = getAllTools();

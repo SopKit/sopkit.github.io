@@ -15,12 +15,12 @@ export const metadata = {
 	description: "Discover the newest free online tools added to SopKit's library. Track release updates, from embed widgets and API testers to calculators, YouTube utilities, and more. 100% client-side, private, free forever.",
 	keywords: "new online tools, free tools added, latest online utilities, new browser tools, sopkit updates, free online toolkit, newly added web tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/new-tools",
+		canonical: "https://sopkit.space/new-tools",
 	},
 	openGraph: {
 		title: "New Tools & Updates — Latest Free Online Tools Added | SopKit",
 		description: "Discover the newest free online tools added to SopKit's library. Track release updates — from embed widgets and API testers to calculators and YouTube utilities. 100% client-side, no data uploads.",
-		url: "https://sopkit.github.io/new-tools",
+		url: "https://sopkit.space/new-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

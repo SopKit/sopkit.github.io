@@ -6,7 +6,8 @@ import toolsData from "@/constants/tools.json";
  * Centralized SEO utility for SopKit
  */
 
-const BASE_URL = "https://sopkit.github.io";
+import { SITE_URL } from "@/constants/config";
+
 
 /**
  * Normalize a URL to end with a single trailing slash. The site's canonical
@@ -56,7 +57,7 @@ export function generateMetadata({
 	noIndex = false,
 	keywords = [],
 }: MetadataProps): Metadata {
-	const canonicalUrl = withSlash(`${BASE_URL}${path.startsWith("/") ? path : `/${path}`}`);
+	const canonicalUrl = withSlash(`${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`);
 
 	return {
 		title,
@@ -74,7 +75,7 @@ export function generateMetadata({
 			type: "website",
 			images: [
 				{
-					url: image.startsWith("http") ? image : `${BASE_URL}${image}`,
+					url: image.startsWith("http") ? image : `${SITE_URL}${image}`,
 					width: 1200,
 					height: 630,
 					alt: title,
@@ -85,7 +86,7 @@ export function generateMetadata({
 			card: "summary_large_image",
 			title,
 			description,
-			images: [image.startsWith("http") ? image : `${BASE_URL}${image}`],
+			images: [image.startsWith("http") ? image : `${SITE_URL}${image}`],
 			creator: "@sopkit",
 		},
 		robots: {
@@ -195,7 +196,7 @@ export function generateWebAppSchema({
 		"@type": "WebApplication",
 		name,
 		description,
-		url: withSlash(`${BASE_URL}${path.startsWith("/") ? path : `/${path}`}`),
+		url: withSlash(`${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`),
 		applicationCategory: category,
 		operatingSystem: "Any",
 		offers: {
@@ -206,7 +207,7 @@ export function generateWebAppSchema({
 		author: {
 			"@type": "Organization",
 			name: "SopKit",
-			url: BASE_URL,
+			url: SITE_URL,
 		},
 	};
 }
@@ -290,7 +291,7 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
 			"@type": "ListItem",
 			position: index + 1,
 			name: item.name,
-			item: withSlash(`${BASE_URL}${item.path}`),
+			item: withSlash(`${SITE_URL}${item.path}`),
 		})),
 	};
 }
@@ -311,7 +312,7 @@ export function generateToolSchema({
 		"@type": "WebApplication",
 		name,
 		description,
-		url: withSlash(`${BASE_URL}${path.startsWith("/") ? path : `/${path}`}`),
+		url: withSlash(`${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`),
 		applicationCategory: category,
 		operatingSystem: "Any",
 		offers: {
@@ -327,19 +328,19 @@ export function generateToolSchema({
  * Category-hub URL map: route-group key → canonical hub URL
  */
 const CATEGORY_HUB_URLS: Record<string, string> = {
-	image: `${BASE_URL}/image-tools`,
-	pdf: `${BASE_URL}/pdf-tools`,
-	video: `${BASE_URL}/video-tools`,
-	audio: `${BASE_URL}/audio-tools`,
-	text: `${BASE_URL}/text-tools`,
-	seo: `${BASE_URL}/seo-tools`,
-	developer: `${BASE_URL}/developer-tools`,
-	utilities: `${BASE_URL}/other-tools`,
-	generators: `${BASE_URL}/generators`,
-	youtube: `${BASE_URL}/youtube-tools`,
-	downloaders: `${BASE_URL}/all-downloaders`,
-	calculators: `${BASE_URL}/calculators`,
-	"exam-tools": `${BASE_URL}/exam-tools`,
+	image: `${SITE_URL}/image-tools`,
+	pdf: `${SITE_URL}/pdf-tools`,
+	video: `${SITE_URL}/video-tools`,
+	audio: `${SITE_URL}/audio-tools`,
+	text: `${SITE_URL}/text-tools`,
+	seo: `${SITE_URL}/seo-tools`,
+	developer: `${SITE_URL}/developer-tools`,
+	utilities: `${SITE_URL}/other-tools`,
+	generators: `${SITE_URL}/generators`,
+	youtube: `${SITE_URL}/youtube-tools`,
+	downloaders: `${SITE_URL}/all-downloaders`,
+	calculators: `${SITE_URL}/calculators`,
+	"exam-tools": `${SITE_URL}/exam-tools`,
 };
 
 /**
@@ -371,7 +372,7 @@ export function generateCollectionPageSchema(
 		category?.description ||
 		`Free online ${categoryName.toLowerCase()} for everyday tasks.`;
 
-	const hubUrl = CATEGORY_HUB_URLS[groupKey] || `${BASE_URL}/${groupKey}`;
+	const hubUrl = CATEGORY_HUB_URLS[groupKey] || `${SITE_URL}/${groupKey}`;
 
 	const categoryTools = tools.filter(
 		(t) =>
@@ -392,7 +393,7 @@ export function generateCollectionPageSchema(
 			itemListElement: categoryTools.slice(0, 50).map((tool, index) => ({
 				"@type": "ListItem",
 				position: index + 1,
-				url: withSlash(`${BASE_URL}${tool.route}`),
+				url: withSlash(`${SITE_URL}${tool.route}`),
 				name: tool.name,
 			})),
 		},

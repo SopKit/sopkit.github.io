@@ -1,7 +1,6 @@
 import { getAllCategories, getAllTools, type Tool } from "@/lib/tools";
-import { TOOL_COUNT_STRING, LAST_UPDATED } from "@/constants/config";
+import { TOOL_COUNT_STRING, LAST_UPDATED, SITE_URL } from "@/constants/config";
 
-const BASE_URL = "https://sopkit.github.io";
 const allCategories = getAllCategories();
 const allTools = getAllTools();
 const TOOL_COUNT = allTools.length;
@@ -49,7 +48,7 @@ export default function StructuredData({
 			categoryLookup[tool.category] || categoryLookup[tool.categorySlug || ""] || null;
 		
 		const cleanRoute = tool.route.endsWith("/") ? tool.route : `${tool.route}/`;
-		const toolUrl = `${BASE_URL}${cleanRoute}`;
+		const toolUrl = `${SITE_URL}${cleanRoute}`;
 		
 		const toolCategoryName =
 			categoryDetails?.name || tool.categoryName || "Utilities";
@@ -57,7 +56,7 @@ export default function StructuredData({
 		
 		const categoryHubRoute = getCategoryHubUrl(toolCategorySlug);
 		const cleanCategoryHubRoute = categoryHubRoute.endsWith("/") ? categoryHubRoute : `${categoryHubRoute}/`;
-		const toolCategoryUrl = `${BASE_URL}${cleanCategoryHubRoute}`;
+		const toolCategoryUrl = `${SITE_URL}${cleanCategoryHubRoute}`;
 
 		const toolStructuredData: Record<string, any> = {
 			"@context": "https://schema.org",
@@ -70,7 +69,7 @@ export default function StructuredData({
 			url: toolUrl,
 			isAccessibleForFree: true,
 			inLanguage: "en",
-			screenshot: `${BASE_URL}/og-image.jpg`,
+			screenshot: `${SITE_URL}/og-image.jpg`,
 			dateModified: LAST_UPDATED,
 			offers: {
 				"@type": "Offer",
@@ -80,13 +79,13 @@ export default function StructuredData({
 			creator: {
 				"@type": "Organization",
 				name: "SopKit",
-				url: `${BASE_URL}/`,
-				logo: `${BASE_URL}/favicon.ico`,
+				url: `${SITE_URL}/`,
+				logo: `${SITE_URL}/favicon.ico`,
 			},
 			provider: {
 				"@type": "Organization",
 				name: "SopKit",
-				url: `${BASE_URL}/`,
+				url: `${SITE_URL}/`,
 			},
 			featureList: tool.features
 				? tool.features.join(", ")
@@ -169,14 +168,14 @@ export default function StructuredData({
 					author: {
 						"@type": "Organization",
 						name: "SopKit",
-						url: `${BASE_URL}/`,
+						url: `${SITE_URL}/`,
 					},
 					publisher: {
 						"@type": "Organization",
 						name: "SopKit",
 						logo: {
 							"@type": "ImageObject",
-							url: `${BASE_URL}/favicon.ico`,
+							url: `${SITE_URL}/favicon.ico`,
 						},
 					},
 					...(tool.datePublished ? { datePublished: tool.datePublished } : {}),
@@ -196,7 +195,7 @@ export default function StructuredData({
 					"@type": "ListItem",
 					position: 1,
 					name: "Home",
-					item: `${BASE_URL}/`,
+					item: `${SITE_URL}/`,
 				},
 				{
 					"@type": "ListItem",
@@ -264,7 +263,7 @@ export default function StructuredData({
 					"@type": "ListItem",
 					position: 1,
 					name: "Home",
-					item: BASE_URL,
+					item: SITE_URL,
 				},
 			],
 		};
@@ -335,7 +334,7 @@ export default function StructuredData({
 			"@type": "CollectionPage",
 			name: `Free Online Tools Collection - ${TOOL_COUNT}+ Professional Tools`,
 			description: `Comprehensive collection of ${TOOL_COUNT}+ free online tools for image processing, PDF editing, video conversion, text manipulation, SEO, and developer utilities.`,
-			url: BASE_URL,
+			url: SITE_URL,
 			mainEntity: {
 				"@type": "ItemList",
 				numberOfItems: CATEGORY_COUNT,
@@ -345,7 +344,7 @@ export default function StructuredData({
 					item: {
 						"@type": "CollectionPage",
 						name: category.name,
-						url: `${BASE_URL}${getCategoryHubUrl(category.slug)}`,
+						url: `${SITE_URL}${getCategoryHubUrl(category.slug)}`,
 						description: category.description,
 					},
 				})),

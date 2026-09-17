@@ -6,7 +6,7 @@ import { permanentRedirect } from "next/navigation";
 export const metadata: Metadata = {
 	title: "SopKit Pro — Now 100% Free",
 	description: "SopKit has retired the paid Pro tier. All tools are now 100% free with no signup required.",
-	alternates: { canonical: "https://sopkit.github.io/tools/" },
+	alternates: { canonical: "https://sopkit.space/tools/" },
 	robots: { index: false, follow: true },
 };
 

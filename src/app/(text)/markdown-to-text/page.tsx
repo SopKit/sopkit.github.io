@@ -22,7 +22,7 @@ export default async function ToolPage() {
 		"@context": "https://schema.org",
 		"@type": "WebApplication",
 		"name": "Markdown to Text Converter",
-		"url": "https://sopkit.github.io/markdown-to-text/",
+		"url": "https://sopkit.space/markdown-to-text/",
 		"applicationCategory": "TextApplication",
 		"operatingSystem": "All",
 		"browserRequirements": "Requires HTML5 support",

@@ -317,12 +317,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 		title: `${pkg.name} — Premium Developer Package`,
 		description: pkg.description,
 		alternates: {
-			canonical: `https://sopkit.github.io/packages/${slug}/`,
+			canonical: `https://sopkit.space/packages/${slug}/`,
 		},
 		openGraph: {
 			title: `${pkg.name} — Reusable TypeScript Utility`,
 			description: pkg.description,
-			url: `https://sopkit.github.io/packages/${slug}/`,
+			url: `https://sopkit.space/packages/${slug}/`,
 			images: [{ url: "/og-images/packages.png" }],
 		},
 	};

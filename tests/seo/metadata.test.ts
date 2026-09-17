@@ -6,19 +6,19 @@ describe("SEO Platform & Canonical Resolution", () => {
   it("normalizes canonical URLs properly", () => {
     const raw = "http://sopkit.github.io/tools/image-compressor/?utm_source=twitter&ref=abc";
     const canonical = buildCanonicalUrl(raw);
-    expect(canonical).toBe("https://sopkit.github.io/tools/image-compressor");
+    expect(canonical).toBe("https://sopkit.space/tools/image-compressor");
   });
 
   it("handles relative path canonicals", () => {
     const canonical = buildCanonicalUrl("/ai-image-generator/");
-    expect(canonical).toBe("https://sopkit.github.io/ai-image-generator");
+    expect(canonical).toBe("https://sopkit.space/ai-image-generator");
   });
 
   it("validates SEO metadata constraints", () => {
     const result = validateSeoMetadata({
       title: "AI Image Generator — Free Text to Image Online | SopKit",
       description: "Generate stunning AI images from text prompts instantly. 100% private, free forever in browser with zero file uploads or logins required.",
-      canonical: "https://sopkit.github.io/ai-image-generator",
+      canonical: "https://sopkit.space/ai-image-generator",
       h1Count: 1,
     });
 

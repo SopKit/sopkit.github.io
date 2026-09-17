@@ -20,7 +20,7 @@ export async function POST(req: Request) {
 		const response = await fetch(url, {
 			headers: {
 				"User-Agent":
-					"Mozilla/5.0 (compatible; SopKitBot/1.0; +https://sopkit.github.io/bot)",
+					"Mozilla/5.0 (compatible; SopKitBot/1.0; +https://sopkit.space/bot)",
 				Accept: "application/xml, text/xml, */*",
 			},
 			redirect: "follow",

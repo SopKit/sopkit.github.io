@@ -8,13 +8,13 @@ export const metadata = {
 	keywords:
 		"best free adobe acrobat alternatives, acrobat alternative free, free pdf editor no install, browser pdf tools, replace adobe acrobat, sopkit pdf tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/best-free-adobe-acrobat-alternatives",
+		canonical: "https://sopkit.space/best-free-adobe-acrobat-alternatives",
 	},
 	openGraph: {
 		title: "Best Free Adobe Acrobat Alternatives (2026) — No Install, No Subscription | SopKit",
 		description:
 			"Free browser-based Acrobat alternatives for 2026: edit, merge, split, compress, protect and convert PDFs without installing software or paying monthly.",
-		url: "https://sopkit.github.io/best-free-adobe-acrobat-alternatives",
+		url: "https://sopkit.space/best-free-adobe-acrobat-alternatives",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -51,7 +51,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/best-free-adobe-acrobat-alternatives/",
+						url: "https://sopkit.space/best-free-adobe-acrobat-alternatives/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

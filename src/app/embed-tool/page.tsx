@@ -62,7 +62,7 @@ function EmbedToolContent() {
 		);
 	}
 
-	const toolUrl = `https://sopkit.github.io${tool.route.startsWith("/") ? tool.route : "/" + tool.route}`;
+	const toolUrl = `https://sopkit.space${tool.route.startsWith("/") ? tool.route : "/" + tool.route}`;
 
 	return (
 		<div className="min-h-screen bg-background text-foreground flex flex-col justify-between p-4 sm:p-6 select-none font-sans">

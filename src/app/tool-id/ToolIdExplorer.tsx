@@ -60,7 +60,7 @@ export default function ToolIdExplorer({ initialTools, categories }: ToolIdExplo
         return initialTools.find((t) => t.id === selectedToolId) || initialTools[0];
     }, [initialTools, selectedToolId]);
 
-    const embedUrl = `https://sopkit.github.io/embed-tool/?id=${activeTool?.id || ""}&theme=${embedTheme}&accent=${embedAccent}`;
+    const embedUrl = `https://sopkit.space/embed-tool/?id=${activeTool?.id || ""}&theme=${embedTheme}&accent=${embedAccent}`;
     const iframeCode = `<iframe src="${embedUrl}" width="100%" height="650" frameborder="0" loading="lazy" style="border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); width: 100%;"></iframe>`;
 
     const copyToClipboard = (text: string, field: string) => {

@@ -1,16 +1,42 @@
 {
-	"name": "SopKit - Free Online Toolkit",
+	"name": "SopKit — 600+ Free Offline Browser Tools",
 	"short_name": "SopKit",
-	"description": "Fast, free, and privacy-focused tools for image, video, audio, PDF, and text processing.",
+	"description": "600+ free online developer tools, PDF utilities, image editors, and converters. 100% private, browser-based, with zero file uploads or logins.",
+	"id": "https://sopkit.space/",
 	"start_url": "/",
+	"scope": "/",
 	"display": "standalone",
-	"background_color": "#eef2ff",
-	"theme_color": "#2563eb",
-	"orientation": "portrait-primary",
-	"categories": ["productivity", "utilities", "photo"],
+	"display_override": [
+		"window-controls-overlay",
+		"standalone",
+		"minimal-ui"
+	],
+	"background_color": "#0B0F19",
+	"theme_color": "#0B0F19",
+	"orientation": "any",
+	"categories": [
+		"productivity",
+		"utilities",
+		"developer"
+	],
 	"lang": "en",
 	"dir": "ltr",
 	"icons": [
+		{
+			"src": "/favicon.ico",
+			"sizes": "32x32",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "/icons/favicon-16x16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "/icons/favicon-32x32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
 		{
 			"src": "/icons/icon-72x72.png",
 			"sizes": "72x72",
@@ -60,34 +86,26 @@
 			"purpose": "any maskable"
 		}
 	],
-	"screenshots": [
-		{
-			"src": "/screenshots/desktop.png",
-			"sizes": "1280x720",
-			"type": "image/png",
-			"form_factor": "wide"
-		},
-		{
-			"src": "/screenshots/mobile.png",
-			"sizes": "390x844",
-			"type": "image/png",
-			"form_factor": "narrow"
-		}
-	],
 	"shortcuts": [
 		{
-			"name": "Image Compressor",
-			"short_name": "Compress",
-			"description": "Compress images without quality loss",
-			"url": "/image-compressor",
-			"icons": [{ "src": "/icons/compress-96x96.png", "sizes": "96x96" }]
+			"name": "PDF Suite",
+			"url": "/pdf-tools",
+			"description": "Merge, split, and compress PDFs locally"
 		},
 		{
-			"name": "YouTube Downloader",
-			"short_name": "YT Download",
-			"description": "Download YouTube videos and audio",
-			"url": "/youtube-downloader",
-			"icons": [{ "src": "/icons/icon-96x96.png", "sizes": "96x96" }]
+			"name": "Image Converter",
+			"url": "/image-tools",
+			"description": "Convert and optimize images client-side"
+		},
+		{
+			"name": "Developer Utilities",
+			"url": "/developer-tools",
+			"description": "JSON Formatter, Base64, and Regex testers"
+		},
+		{
+			"name": "Browse All 600+ Tools",
+			"url": "/tools",
+			"description": "Search the complete SopKit directory"
 		}
 	]
 }

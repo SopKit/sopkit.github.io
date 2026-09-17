@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 	title: "SopKit Pricing — 100% Free Client-Side Tools & API Packages",
 	description: "Discover SopKit's plans. Access hundreds of online developer and file utilities completely free, or request custom API solutions.",
 	alternates: {
-		canonical: "https://sopkit.github.io/pricing/",
+		canonical: "https://sopkit.space/pricing/",
 	},
 	openGraph: {
 		title: "SopKit Pricing — 100% Free Client-Side Tools & API Packages",
 		description: "Browse free client-side tools and custom API integration rates.",
-		url: "https://sopkit.github.io/pricing/",
+		url: "https://sopkit.space/pricing/",
 		images: [{ url: "/og-images/packages.png" }],
 	},
 };

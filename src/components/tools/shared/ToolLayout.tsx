@@ -206,6 +206,9 @@ export default function ToolLayout({
 		enrichedTool.article = String(enrichedTool.article).split(/\n##\s+/)[0].trim();
 	}
 
+	// Hub or directory pages (like /pdf-tools, /image-tools) contain their own directory layout
+	const isHubPage = isCompanyPage || tool.category === "content" || tool.route.endsWith("-tools") || tool.route === "/calculators";
+
 	return (
 		<div className="min-h-screen bg-background text-foreground selection:bg-blue-500/30 relative overflow-hidden">
 			{/* Top Blue Ambient Radial Blur */}
@@ -239,7 +242,7 @@ export default function ToolLayout({
 							<span>100% Client-Side Sandbox: Your files are processed locally and never uploaded to any server.</span>
 						</div>
 					)}
-					{!isCompanyPage && (
+					{!isHubPage && (
 						<div className="pt-2">
 							<ToolToolbar toolId={tool.id} toolRoute={tool.route} toolName={tool.name} />
 						</div>
@@ -254,14 +257,14 @@ export default function ToolLayout({
 				)}
 
 				{/* Tool Interaction Area */}
-				{tool.category !== "content" && (
+				{!isHubPage && (
 					<section className="bg-card/30 backdrop-blur-md border border-border/40 rounded-2xl shadow-[0_32px_64px_-12px_rgba(0,0,0,0.15)] dark:shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)] relative group transition-all duration-500 hover:border-primary/20 min-h-[400px] overflow-hidden">
 						<div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] -z-10 transition-opacity" />
 						<div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 blur-[120px] -z-10 transition-opacity" />
 						<div className="relative z-10 p-6 md:p-8">{children}</div>
 					</section>
 				)}
-				{tool.category === "content" && children}
+				{isHubPage && children}
 
 				{!isCompanyPage && (
 					<>

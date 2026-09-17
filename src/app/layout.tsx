@@ -13,6 +13,7 @@ import { Inter, Newsreader } from "next/font/google";
 // imports for any component rendered by the root layout.
 import { Suspense } from "react";
 import { PWARegistration } from "@/components/shared/PWARegistration";
+import { OfflineIndicator } from "@/components/shared/OfflineIndicator";
 import { GA4RouteTracker } from "@/components/shared/GA4RouteTracker";
 import { WebVitalsReporter } from "@/components/shared/WebVitalsReporter";
 
@@ -69,7 +70,7 @@ export const metadata: Metadata = {
 		template: "%s",
 	},
 	description: `Professional online toolkit with ${TOOL_COUNT_STRING} free tools for image compression, PDF editing, video conversion, SEO analysis, developer utilities, text processing, and more. Free to use with no signup required.`,
-	authors: [{ name: "SopKit Team", url: "https://sopkit.github.io" }],
+	authors: [{ name: "SopKit Team", url: SITE_URL }],
 	creator: "SopKit",
 	publisher: "SopKit",
 	category: "Technology",
@@ -91,9 +92,9 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: `SopKit — ${TOOL_COUNT_STRING} Free Online Tools`,
 		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. Fast browser-sandboxed utilities with transparent processing.",
-		url: "https://sopkit.github.io/",
+		url: `${SITE_URL}/`,
 		siteName: "SopKit",
-		images: [{ url: "https://sopkit.github.io/og-image.png", width: 1200, height: 630 }],
+		images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: "SopKit — 600+ Free Online Tools" }],
 		locale: "en_US",
 		type: "website",
 	},
@@ -101,7 +102,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: `SopKit — ${TOOL_COUNT_STRING} Free Online Tools`,
 		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. Fast browser-sandboxed utilities with transparent processing.",
-		images: ["https://sopkit.github.io/og-image.png"],
+		images: [`${SITE_URL}/og-image.png`],
 	},
 	robots: {
 		index: true,
@@ -113,7 +114,6 @@ export const metadata: Metadata = {
 			noimageindex: false,
 			"max-video-preview": -1,
 			"max-image-preview": "large",
-			"max-snippet": -1,
 		},
 	},
 	...(Object.keys(siteVerification).length > 0
@@ -122,10 +122,18 @@ export const metadata: Metadata = {
 	manifest: "/manifest.json",
 	icons: {
 		icon: [
+			{ url: "/favicon.ico", sizes: "32x32" },
+			{ url: "/favicon.svg", type: "image/svg+xml" },
 			{ url: "/icons/icon-32x32.png", sizes: "32x32", type: "image/png" },
 			{ url: "/icons/icon-192x192.png", sizes: "192x192", type: "image/png" },
+			{ url: "/icons/icon-512x512.png", sizes: "512x512", type: "image/png" },
 		],
 		apple: [
+			{
+				url: "/apple-touch-icon.png",
+				sizes: "180x180",
+				type: "image/png",
+			},
 			{
 				url: "/icons/apple-touch-icon.png",
 				sizes: "180x180",
@@ -142,7 +150,7 @@ export const metadata: Metadata = {
 	},
 	appleWebApp: {
 		capable: true,
-		statusBarStyle: "default",
+		statusBarStyle: "black-translucent",
 		title: "SopKit",
 	},
 };
@@ -318,6 +326,7 @@ export default function RootLayout({
 						<Footer />
 						<Toaster />
 						<PWARegistration />
+						<OfflineIndicator />
 						<Suspense fallback={null}>
 							<GA4RouteTracker />
 						</Suspense>

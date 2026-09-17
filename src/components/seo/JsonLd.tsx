@@ -1,8 +1,7 @@
 import React from "react";
 import type { Tool } from "@/lib/tools";
-import { SITE_CONFIG } from "@/constants/config";
+import { SITE_CONFIG, SITE_URL } from "@/constants/config";
 
-const BASE_URL = "https://sopkit.github.io";
 
 export interface JsonLdProps {
 	tool?: Tool;
@@ -24,13 +23,13 @@ export function JsonLd({
 			"@context": "https://schema.org",
 			"@type": "WebSite",
 			name: "SopKit",
-			url: `${BASE_URL}/`,
+			url: `${SITE_URL}/`,
 			description: `${SITE_CONFIG.toolCountString} free online tools for image, PDF, video, audio, SEO, and developer workflows. 100% private, client-side execution.`,
 			potentialAction: {
 				"@type": "SearchAction",
 				target: {
 					"@type": "EntryPoint",
-					urlTemplate: `${BASE_URL}/search/?q={search_term_string}`,
+					urlTemplate: `${SITE_URL}/search/?q={search_term_string}`,
 				},
 				"query-input": "required name=search_term_string",
 			},
@@ -40,8 +39,8 @@ export function JsonLd({
 			"@context": "https://schema.org",
 			"@type": "Organization",
 			name: "SopKit",
-			url: `${BASE_URL}/`,
-			logo: `${BASE_URL}/favicon.ico`,
+			url: `${SITE_URL}/`,
+			logo: `${SITE_URL}/favicon.ico`,
 			sameAs: ["https://github.com/SopKit/sopkit.github.io"],
 			description: `Privacy-first free online toolkit with ${SITE_CONFIG.toolCountString} browser-based tools.`,
 		};
@@ -54,7 +53,7 @@ export function JsonLd({
 					"@type": "ListItem",
 					position: 1,
 					name: "Home",
-					item: `${BASE_URL}/`,
+					item: `${SITE_URL}/`,
 				},
 			],
 		};
@@ -80,10 +79,10 @@ export function JsonLd({
 	if (!tool) return null;
 
 	const cleanRoute = tool.route.endsWith("/") ? tool.route : `${tool.route}/`;
-	const canonicalUrl = `${BASE_URL}${cleanRoute}`;
+	const canonicalUrl = `${SITE_URL}${cleanRoute}`;
 	const catName = categoryName || tool.categoryName || tool.category || "Utilities";
 	const catSlug = categorySlug || tool.categorySlug || tool.category || "utilities";
-	const categoryHubUrl = `${BASE_URL}/${catSlug.endsWith("-tools") ? catSlug : `${catSlug}-tools`}/`;
+	const categoryHubUrl = `${SITE_URL}/${catSlug.endsWith("-tools") ? catSlug : `${catSlug}-tools`}/`;
 
 	// 1. SoftwareApplication / WebApplication Schema
 	const appSchema: Record<string, any> = {
@@ -97,7 +96,7 @@ export function JsonLd({
 		url: canonicalUrl,
 		isAccessibleForFree: true,
 		inLanguage: "en",
-		screenshot: `${BASE_URL}/og-image.jpg`,
+		screenshot: `${SITE_URL}/og-image.jpg`,
 		dateModified: SITE_CONFIG.lastUpdatedDate,
 		offers: {
 			"@type": "Offer",
@@ -107,13 +106,13 @@ export function JsonLd({
 		creator: {
 			"@type": "Organization",
 			name: "SopKit",
-			url: `${BASE_URL}/`,
-			logo: `${BASE_URL}/favicon.ico`,
+			url: `${SITE_URL}/`,
+			logo: `${SITE_URL}/favicon.ico`,
 		},
 		provider: {
 			"@type": "Organization",
 			name: "SopKit",
-			url: `${BASE_URL}/`,
+			url: `${SITE_URL}/`,
 		},
 	};
 
@@ -130,7 +129,7 @@ export function JsonLd({
 				"@type": "ListItem",
 				position: 1,
 				name: "Home",
-				item: `${BASE_URL}/`,
+				item: `${SITE_URL}/`,
 			},
 			{
 				"@type": "ListItem",

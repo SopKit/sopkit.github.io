@@ -47,7 +47,7 @@ export default function LoveCalculator() {
 	};
 
 	const verdict = score !== null ? getVerdict(score) : null;
-	const shareText = score !== null ? `💖 Love Compatibility Test Result 💖\n\n👩 ${name1} + 👨 ${name2} = ${score}% Compatible!\nVerdict: ${verdict?.title} ${verdict?.emoji}\n\nTest your love at: https://sopkit.github.io/love-calculator/` : "";
+	const shareText = score !== null ? `💖 Love Compatibility Test Result 💖\n\n👩 ${name1} + 👨 ${name2} = ${score}% Compatible!\nVerdict: ${verdict?.title} ${verdict?.emoji}\n\nTest your love at: https://sopkit.space/love-calculator/` : "";
 
 	const handleCopy = async () => {
 		if (!shareText) return;

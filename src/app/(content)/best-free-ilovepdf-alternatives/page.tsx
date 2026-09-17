@@ -8,13 +8,13 @@ export const metadata = {
 	keywords:
 		"best free ilovepdf alternatives, ilovepdf alternative free, smallpdf alternative, free pdf tools no upload, client-side pdf tools, sopkit pdf",
 	alternates: {
-		canonical: "https://sopkit.github.io/best-free-ilovepdf-alternatives",
+		canonical: "https://sopkit.space/best-free-ilovepdf-alternatives",
 	},
 	openGraph: {
 		title: "Best Free iLovePDF Alternatives (2026) — Private, Browser-Based PDF Tools | SopKit",
 		description:
 			"Honest iLovePDF alternative comparison for 2026. Merge, split, compress, and convert PDFs without uploads — see where free client-side tools win and where they don't.",
-		url: "https://sopkit.github.io/best-free-ilovepdf-alternatives",
+		url: "https://sopkit.space/best-free-ilovepdf-alternatives",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -51,7 +51,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/best-free-ilovepdf-alternatives/",
+						url: "https://sopkit.space/best-free-ilovepdf-alternatives/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

@@ -10,13 +10,13 @@ export const metadata = {
 	keywords:
 		"online tools, free online tools, browser tools, web utilities, image tools, pdf tools, text tools, developer tools, seo tools, converters, calculators, sopkit",
 	alternates: {
-		canonical: "https://sopkit.github.io/online-tools",
+		canonical: "https://sopkit.space/online-tools",
 	},
 	openGraph: {
 		title: "Free Online Tools — 600+ Browser-Based Utilities | SopKit",
 		description:
 			"Browse 600+ free online tools for images, PDFs, text, video, SEO, and code. Everything runs in your browser — no signup, no uploads, no limits.",
-		url: "https://sopkit.github.io/online-tools",
+		url: "https://sopkit.space/online-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -83,7 +83,7 @@ export default function OnlineToolsHub() {
 		"@type": "CollectionPage",
 		name: "Free Online Tools",
 		description: `Browse ${totalTools}+ free online tools for images, PDFs, text, video, audio, SEO, developers, and more. No signup, no uploads — everything runs in your browser.`,
-		url: "https://sopkit.github.io/online-tools",
+		url: "https://sopkit.space/online-tools",
 		isAccessibleForFree: true,
 		mainEntity: {
 			"@type": "ItemList",

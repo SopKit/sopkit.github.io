@@ -5,7 +5,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "AI Writing Tools - Free Text & Content Generators | SopKit",
 	description: "Free AI writing tools. Generate social media bios, custom poems, excuses, resignation letters, and marketing slogans instantly in your browser.",
-	alternates: { canonical: "https://sopkit.github.io/ai-writing-tools/" },
+	alternates: { canonical: "https://sopkit.space/ai-writing-tools/" },
 };
 
 export default function AiWritingToolsHub() {

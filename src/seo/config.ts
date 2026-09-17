@@ -4,22 +4,23 @@
  */
 
 import { SeoConfig } from "./types";
+import { SITE_URL, SITE_NAME, GITHUB_REPO_URL } from "@/constants/config";
 
 export const SEO_CONFIG: SeoConfig = {
-  siteUrl: "https://sopkit.github.io",
-  siteName: "SopKit",
-  defaultTitle: "SopKit — Free Online Developer & Productivity Tools",
-  titleTemplate: "%s | SopKit",
+  siteUrl: SITE_URL,
+  siteName: SITE_NAME,
+  defaultTitle: `${SITE_NAME} — Free Online Developer & Productivity Tools`,
+  titleTemplate: `%s | ${SITE_NAME}`,
   defaultDescription:
     "Explore 600+ free online developer tools, PDF utilities, image editors, and converters. 100% private, browser-based, with zero file uploads or logins.",
   defaultOgImage: "/og-image.png",
   twitterHandle: "@sopkit",
   organization: {
-    name: "SopKit",
-    url: "https://sopkit.github.io",
-    logo: "https://sopkit.github.io/logo.png",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.png`,
     sameAs: [
-      "https://github.com/SopKit/sopkit.github.io",
+      GITHUB_REPO_URL,
       "https://x.com/sopkit",
     ],
   },

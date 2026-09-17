@@ -18,7 +18,7 @@ export function EmbedWidgetGiver({ toolId, toolName }: EmbedWidgetGiverProps) {
 	const [height, setHeight] = useState("550");
 	const codeRef = useRef<HTMLElement>(null);
 
-	const embedUrl = `https://sopkit.github.io/embed-tool/?id=${toolId}&theme=${theme}&accent=${accent}`;
+	const embedUrl = `https://sopkit.space/embed-tool/?id=${toolId}&theme=${theme}&accent=${accent}`;
 	const embedCode = `<iframe src="${embedUrl}" width="100%" height="${height}" style="border:0; border-radius:12px; overflow:hidden;" title="Free Local ${toolName} by SopKit"></iframe>`;
 
 	const handleCopy = () => {

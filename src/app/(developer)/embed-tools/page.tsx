@@ -10,13 +10,13 @@ export const metadata = {
 	keywords:
 		"embed widgets, add free tools to your website, iframe widgets, embed tools, website tools widget, qr code embed, json formatter embed, free website widgets",
 	alternates: {
-		canonical: "https://sopkit.github.io/embed-tools",
+		canonical: "https://sopkit.space/embed-tools",
 	},
 	openGraph: {
 		title: "Embed Free Tools on Your Website — Iframe Widgets | SopKit",
 		description:
 			"Copy-paste iframe widgets for QR codes, password generation, JSON formatting and more. Free, sandboxed, themeable embeds — no backend or signup required.",
-		url: "https://sopkit.github.io/embed-tools",
+		url: "https://sopkit.space/embed-tools",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -31,7 +31,7 @@ export const metadata = {
 	robots: { index: true, follow: true },
 };
 
-const EMBED_BASE = "https://sopkit.github.io/embed-tool/";
+const EMBED_BASE = "https://sopkit.space/embed-tool/";
 
 interface EmbeddableTool {
 	id: string;
@@ -113,7 +113,7 @@ export default function EmbedToolsPage() {
 						name: "Embed Free Tools on Your Website",
 						description:
 							"Copy-paste iframe widgets for 12 popular SopKit tools. Free, sandboxed, themeable embeds with no backend required.",
-						url: "https://sopkit.github.io/embed-tools",
+						url: "https://sopkit.space/embed-tools",
 						isAccessibleForFree: true,
 					}),
 				}}

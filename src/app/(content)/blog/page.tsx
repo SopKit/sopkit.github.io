@@ -9,12 +9,12 @@ export const metadata = {
 	description: "Tutorials, comparisons and productivity guides from the SopKit team. Learn the tools — free forever.",
 	keywords: "SopKit blog, free online tools guides, seo tutorials, json guides, converter tutorials, no signup tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/blog",
+		canonical: "https://sopkit.space/blog",
 	},
 	openGraph: {
 		title: "SopKit Blog — Guides & Tool Tips | SopKit",
 		description: "Tutorials, comparisons and productivity guides from the SopKit team. Learn the tools — free forever.",
-		url: "https://sopkit.github.io/blog",
+		url: "https://sopkit.space/blog",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -45,14 +45,14 @@ export default function BlogPage() {
 		"@type": "CollectionPage",
 		name: "Blog & Guides for Free Online Tools",
 		description: "Actionable guides, tool lists, and tutorials for SEO, developer workflows, and everyday online conversion tasks.",
-		url: "https://sopkit.github.io/blog/",
+		url: "https://sopkit.space/blog/",
 		mainEntity: {
 			"@type": "ItemList",
 			itemListElement: sortedArticles.slice(0, 10).map((article, i) => ({
 				"@type": "ListItem",
 				position: i + 1,
 				name: article.title,
-				url: `https://sopkit.github.io/blog/${article.slug}/`,
+				url: `https://sopkit.space/blog/${article.slug}/`,
 			})),
 		},
 	};
@@ -65,13 +65,13 @@ export default function BlogPage() {
 				"@type": "ListItem",
 				position: 1,
 				name: "Home",
-				item: "https://sopkit.github.io/",
+				item: "https://sopkit.space/",
 			},
 			{
 				"@type": "ListItem",
 				position: 2,
 				name: "Blog",
-				item: "https://sopkit.github.io/blog/",
+				item: "https://sopkit.space/blog/",
 			},
 		],
 	};

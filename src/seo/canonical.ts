@@ -38,7 +38,7 @@ export function buildCanonicalUrl(pathOrUrl: string): string {
 
     // Normalize hostname
     url.protocol = "https:";
-    url.host = "sopkit.github.io";
+    url.host = new URL(SEO_CONFIG.siteUrl).host;
 
     // Normalize path (ensure leading slash, strip redundant double slashes)
     let pathname = url.pathname.replace(/\/+/g, "/");

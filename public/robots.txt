@@ -62,5 +62,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://sopkit.github.io/sitemap.xml
-Host: https://sopkit.github.io
+Sitemap: https://sopkit.space/sitemap.xml
+Host: https://sopkit.space

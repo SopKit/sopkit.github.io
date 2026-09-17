@@ -9,12 +9,12 @@ export const metadata = {
 	description: "Learn about SopKit — the privacy-first free online tools platform with 500+ browser-based utilities. No signup, no uploads, 100% client-side processing for images, PDFs, videos, and more.",
 	keywords: "about SopKit, client-side tools, private online utility, no upload pdf editor, local image converter, browser sandbox tools, secure developer tools, open source browser utilities",
 	alternates: {
-		canonical: "https://sopkit.github.io/about",
+		canonical: "https://sopkit.space/about",
 	},
 	openGraph: {
 		title: "About SopKit — Privacy-First Free Online Tools Platform",
 		description: "Learn about SopKit — the privacy-first free online tools platform with 500+ browser-based utilities. No signup, no uploads, 100% client-side processing.",
-		url: "https://sopkit.github.io/about",
+		url: "https://sopkit.space/about",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -46,7 +46,7 @@ export default async function AboutPage() {
 						"@context": "https://schema.org",
 						"@type": "Organization",
 						name: "SopKit",
-						url: "https://sopkit.github.io",
+						url: "https://sopkit.space",
 						description: tool.description,
 						sameAs: ["https://github.com/SH20RAJ/SopKit"],
 					}),

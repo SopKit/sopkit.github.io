@@ -1,7 +1,7 @@
 import { writeFileSync } from "fs";
 import { join } from "path";
 
-const BASE_URL = "https://sopkit.github.io";
+const BASE_URL = "https://sopkit.space";
 
 async function main() {
 	console.log(`Starting pre-flight check for ${BASE_URL}...`);

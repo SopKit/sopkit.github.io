@@ -6,12 +6,12 @@ export const metadata = {
 	description: "Solve everyday digital tasks instantly using our free Best Free Tools for Students (2026) online. Fast, secure browser-based utility with no registration.",
 	keywords: "best free tools for students (2026), best free tools for students (2026) guide, SopKit, best-free-tools-for-students, best free tools for students, free best-free-tools-for-students, best free tools for students online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/best-free-tools-for-students",
+		canonical: "https://sopkit.space/best-free-tools-for-students",
 	},
 	openGraph: {
 		title: "Best Free Tools for Students in 2026 | SopKit",
 		description: "Solve everyday digital tasks instantly using our free Best Free Tools for Students (2026) online. Fast, secure browser-based utility with no registration.",
-		url: "https://sopkit.github.io/best-free-tools-for-students",
+		url: "https://sopkit.space/best-free-tools-for-students",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/best-free-tools-for-students/",
+						url: "https://sopkit.space/best-free-tools-for-students/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

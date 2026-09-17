@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Solve everyday digital tasks instantly using our free Search All Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
 	keywords: "search online tools, free online tools, SopKit search, image tool search, pdf tool search, seo tools directory, developer utilities, search, free search, search online, SopKit, browser tools",
 	alternates: {
-		canonical: "https://sopkit.github.io/search",
+		canonical: "https://sopkit.space/search",
 	},
 	openGraph: {
 		title: "Free Search All Tools Online - No Signup | SopKit",
 		description: "Solve everyday digital tasks instantly using our free Search All Tools online. Fast, secure browser-based utility with no registration. No registration needed.",
-		url: "https://sopkit.github.io/search",
+		url: "https://sopkit.space/search",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

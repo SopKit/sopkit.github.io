@@ -56,11 +56,11 @@ function generateRedirects() {
   <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="0; url=${target}">
-    <link rel="canonical" href="https://sopkit.github.io${target}">
+    <link rel="canonical" href="https://sopkit.space${target}">
     <title>Redirecting...</title>
   </head>
   <body>
-    <p>Redirecting to <a href="${target}">https://sopkit.github.io${target}</a>...</p>
+    <p>Redirecting to <a href="${target}">https://sopkit.space${target}</a>...</p>
   </body>
 </html>`;
                 fs.writeFileSync(path.join(folderPath, 'index.html'), htmlContent);

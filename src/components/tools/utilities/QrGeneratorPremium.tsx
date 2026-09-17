@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import { QrCode, Download, Settings, Palette, Type, Image as ImageIcon, Loader2 } from "lucide-react";
 
 export default function QrGeneratorPremium({
-    initialText = "https://sopkit.github.io",
+    initialText = "https://sopkit.space",
 }: {
     initialText?: string;
 }) {

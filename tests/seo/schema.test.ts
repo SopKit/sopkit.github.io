@@ -18,7 +18,7 @@ describe("Schema.org JSON-LD Builders", () => {
     const schema = buildSoftwareAppSchema({
       name: "PDF Compressor",
       description: "Compress PDF files online securely in browser.",
-      url: "https://sopkit.github.io/pdf-compressor",
+      url: "https://sopkit.space/pdf-compressor",
       applicationCategory: "UtilityApplication",
     });
 
@@ -29,9 +29,9 @@ describe("Schema.org JSON-LD Builders", () => {
 
   it("builds valid BreadcrumbList schema", () => {
     const schema = buildBreadcrumbSchema([
-      { name: "Home", item: "https://sopkit.github.io" },
-      { name: "Tools", item: "https://sopkit.github.io/tools" },
-      { name: "PDF Compressor", item: "https://sopkit.github.io/pdf-compressor" },
+      { name: "Home", item: "https://sopkit.space" },
+      { name: "Tools", item: "https://sopkit.space/tools" },
+      { name: "PDF Compressor", item: "https://sopkit.space/pdf-compressor" },
     ]);
 
     expect(schema["@type"]).toBe("BreadcrumbList");

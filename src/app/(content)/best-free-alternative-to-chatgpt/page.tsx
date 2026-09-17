@@ -6,12 +6,12 @@ export const metadata = {
 	description: "Skip the chat window for mechanical daily tasks. Free browser tools for images, voice, text styling, passwords and more — no signup, nothing uploaded.",
 	keywords: "best free alternative to chatgpt for daily tasks, best free alternative to chatgpt for daily tasks guide, SopKit, best-free-alternative-to-chatgpt, best free alternative to chatgpt, free best-free-alternative-to-chatgpt, best free alternative to chatgpt online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
-		canonical: "https://sopkit.github.io/best-free-alternative-to-chatgpt",
+		canonical: "https://sopkit.space/best-free-alternative-to-chatgpt",
 	},
 	openGraph: {
 		title: "Best Free Alternative to ChatGPT for Daily Tasks Online | SopKit",
 		description: "Skip the chat window for mechanical daily tasks. Free browser tools for images, voice, text styling, passwords and more — no signup, nothing uploaded.",
-		url: "https://sopkit.github.io/best-free-alternative-to-chatgpt",
+		url: "https://sopkit.space/best-free-alternative-to-chatgpt",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function ToolPage() {
 						"@type": "SoftwareApplication",
 						name: tool.name,
 						description: tool.description,
-						url: "https://sopkit.github.io/best-free-alternative-to-chatgpt/",
+						url: "https://sopkit.space/best-free-alternative-to-chatgpt/",
 						applicationCategory: "UtilitiesApplication",
 						operatingSystem: "Any",
 						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

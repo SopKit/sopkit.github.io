@@ -50,7 +50,7 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 	}, []);
 
 	const getShareUrl = () => {
-		return `https://sopkit.github.io${toolRoute}`;
+		return `https://sopkit.space${toolRoute}`;
 	};
 
 	const handleShare = async () => {
@@ -82,7 +82,7 @@ export function ToolToolbar({ toolId, toolRoute, toolName }: ToolToolbarProps) {
 
 		const baseVal = activeFormEl ? activeFormEl.value.trim() : "";
 		const shareUrl = baseVal
-			? `https://sopkit.github.io${toolRoute}?input=${encodeURIComponent(baseVal)}`
+			? `https://sopkit.space${toolRoute}?input=${encodeURIComponent(baseVal)}`
 			: getShareUrl();
 
 		navigator.clipboard.writeText(shareUrl);

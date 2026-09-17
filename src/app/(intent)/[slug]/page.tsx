@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const opportunity = getSeoOpportunityBySlug(slug);
 
     if (opportunity?.standalone) {
-        const canonicalUrl = `https://sopkit.github.io${opportunity.route}/`;
+        const canonicalUrl = `https://sopkit.space${opportunity.route}/`;
 
         return {
             title: opportunity.title,
@@ -141,7 +141,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 description = `${(lastSpace > targetMin ? cut.slice(0, lastSpace) : cut).replace(/[\s,—-]+$/, "")}`;
             }
 
-            const canonicalUrl = `https://sopkit.github.io/${slug}/`;
+            const canonicalUrl = `https://sopkit.space/${slug}/`;
 
             return {
                 title,
@@ -172,7 +172,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const parentTool = getToolById(intent.parentToolId);
     if (!parentTool) return {};
 
-    const canonicalUrl = `https://sopkit.github.io/${slug}/`;
+    const canonicalUrl = `https://sopkit.space/${slug}/`;
     const brandedTitle = `${intent.title} | SopKit`;
 
     return {

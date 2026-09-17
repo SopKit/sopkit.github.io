@@ -106,7 +106,7 @@ async function pollStatus(processUrl: any, chatId: any, messageId: any) {
 
 			if (api) {
 				const poweredBy =
-					"\n\nPowered by https://sopkit.github.io/youtube-downloader\nFeedback: @sopbots";
+					"\n\nPowered by https://sopkit.space/youtube-downloader\nFeedback: @sopbots";
 				const isAudio =
 					api.fileName &&
 					(api.fileName.toLowerCase().endsWith(".mp3") ||
@@ -231,7 +231,7 @@ export async function POST(req: Request) {
 			if (text === "/start") {
 				await telegram("sendMessage", {
 					chat_id: chatId,
-					text: "👋 **Welcome to SopKit Video Downloader Bot!**\n\nSend me any YouTube link or directly share from YouTube App to telegram->bot to get started.\n\n📢 **Join @sopbots** for updates and feedback.\n\nPowered by https://sopkit.github.io/youtube-downloader",
+					text: "👋 **Welcome to SopKit Video Downloader Bot!**\n\nSend me any YouTube link or directly share from YouTube App to telegram->bot to get started.\n\n📢 **Join @sopbots** for updates and feedback.\n\nPowered by https://sopkit.space/youtube-downloader",
 					parse_mode: "Markdown",
 					disable_web_page_preview: true,
 					reply_markup: {
@@ -309,7 +309,7 @@ export async function POST(req: Request) {
 				await telegram("sendPhoto", {
 					chat_id: chatId,
 					photo: info.imagePreviewUrl,
-					caption: `🎥 **${info.title}**\n\nSelect a format to download:\n\nPowered by https://sopkit.github.io/youtube-downloader\nFeedback: @sopbots`,
+					caption: `🎥 **${info.title}**\n\nSelect a format to download:\n\nPowered by https://sopkit.space/youtube-downloader\nFeedback: @sopbots`,
 					parse_mode: "Markdown",
 					disable_web_page_preview: true,
 					reply_markup: { inline_keyboard: keyboard },

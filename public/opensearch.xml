@@ -4,12 +4,12 @@
   <ShortName>SopKit</ShortName>
   <Description>Search 365+ free online tools for image compression, PDF editing, video workflows, SEO, developer utilities, and more</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://sopkit.github.io/favicon.ico</Image>
-  <Image width="32" height="32" type="image/png">https://sopkit.github.io/icons/icon-32x32.png</Image>
-  <Image width="96" height="96" type="image/png">https://sopkit.github.io/icons/icon-96x96.png</Image>
-  <Url type="text/html" template="https://sopkit.github.io/search?q={searchTerms}"/>
-  <Url type="application/x-suggestions+json" template="https://sopkit.github.io/api/search/suggestions?q={searchTerms}"/>
-  <moz:SearchForm>https://sopkit.github.io/search</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://sopkit.space/favicon.ico</Image>
+  <Image width="32" height="32" type="image/png">https://sopkit.space/icons/icon-32x32.png</Image>
+  <Image width="96" height="96" type="image/png">https://sopkit.space/icons/icon-96x96.png</Image>
+  <Url type="text/html" template="https://sopkit.space/search?q={searchTerms}"/>
+  <Url type="application/x-suggestions+json" template="https://sopkit.space/api/search/suggestions?q={searchTerms}"/>
+  <moz:SearchForm>https://sopkit.space/search</moz:SearchForm>
   <Query role="example" searchTerms="image compressor" />
   <Query role="example" searchTerms="password generator" />
   <Query role="example" searchTerms="pdf merger" />

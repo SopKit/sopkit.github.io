@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline Mode — SopKit 100% Client-Side Tools</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #111827;
+      --border: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #38bdf8;
+      --emerald: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; text-align: center; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 40px 32px; max-width: 580px; width: 100%; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+    .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: var(--emerald); padding: 6px 14px; border-radius: 9999px; font-size: 12px; font-weight: 600; margin-bottom: 24px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--emerald); animation: pulse 2s infinite; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.5px; }
+    p { color: var(--muted); font-size: 15px; line-height: 1.6; margin-bottom: 28px; }
+    .tool-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 28px; text-align: left; }
+    .tool-link { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); border-radius: 12px; padding: 12px 16px; color: var(--text); text-decoration: none; font-size: 13px; font-weight: 600; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s; }
+    .tool-link:hover { border-color: var(--primary); background: rgba(56, 189, 248, 0.08); transform: translateY(-1px); }
+    .btn { background: var(--primary); color: #070a10; font-weight: 700; font-size: 14px; border: none; border-radius: 12px; padding: 12px 24px; cursor: pointer; transition: all 0.2s; display: inline-block; text-decoration: none; }
+    .btn:hover { filter: brightness(1.1); transform: translateY(-1px); }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">
+      <span class="dot"></span>
+      <span>100% Client-Side Sandbox Active</span>
+    </div>
+    <h1>You are browsing offline</h1>
+    <p>SopKit runs entirely in your local browser session. Previously visited utilities work with zero internet connectivity and zero server requests.</p>
+    
+    <div class="tool-list">
+      <a href="/" class="tool-link"><span>🏠 Home Dashboard</span><span>→</span></a>
+      <a href="/pdf-tools" class="tool-link"><span>📄 PDF Suite</span><span>→</span></a>
+      <a href="/image-tools" class="tool-link"><span>🖼️ Image Tools</span><span>→</span></a>
+      <a href="/developer-tools" class="tool-link"><span>💻 Developer Tools</span><span>→</span></a>
+      <a href="/base64-tool" class="tool-link"><span>🔤 Base64 Tool</span><span>→</span></a>
+      <a href="/qr-code-generator" class="tool-link"><span>📱 QR Generator</span><span>→</span></a>
+    </div>
+
+    <button class="btn" onclick="window.location.reload()">Check Connection & Refresh</button>
+  </div>
+</body>
+</html>

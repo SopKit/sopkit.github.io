@@ -128,9 +128,9 @@ export default function IndexNowClient() {
 				</CardHeader>
 				<CardContent className="space-y-4">
 					<Textarea
-						placeholder="https://sopkit.github.io/image-compressor
-https://sopkit.github.io/video-converter
-https://sopkit.github.io/pdf-merger"
+						placeholder="https://sopkit.space/image-compressor
+https://sopkit.space/video-converter
+https://sopkit.space/pdf-merger"
 						value={customUrls}
 						onChange={(e) => setCustomUrls(e.target.value)}
 						rows={6}
@@ -218,7 +218,7 @@ https://sopkit.github.io/pdf-merger"
 					<div>
 						<strong className="text-foreground">Key Location:</strong>
 						<code className="block mt-1 bg-secondary p-2 rounded text-xs">
-							https://sopkit.github.io/634a2c77198a45429967eb9dc1252278.txt
+							https://sopkit.space/634a2c77198a45429967eb9dc1252278.txt
 						</code>
 					</div>
 					<div>

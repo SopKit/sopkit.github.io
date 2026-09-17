@@ -18,7 +18,7 @@ export function EmbedShowcase() {
 	const [activeTab, setActiveTab] = useState<"html" | "react" | "url">("html");
 	const [copied, setCopied] = useState(false);
 
-	const embedUrl = `https://sopkit.github.io/embed-tool/?id=${selectedTool}`;
+	const embedUrl = `https://sopkit.space/embed-tool/?id=${selectedTool}`;
 
 	const getCode = () => {
 		switch (activeTab) {

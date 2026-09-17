@@ -35,12 +35,12 @@ export async function generateMetadata({ params }: BlogArticlePageProps) {
 			"SopKit blog",
 		].join(", "),
 		alternates: {
-			canonical: `https://sopkit.github.io/blog/${article.slug}/`,
+			canonical: `https://sopkit.space/blog/${article.slug}/`,
 		},
 		openGraph: {
 			title: article.title,
 			description: article.description,
-			url: `https://sopkit.github.io/blog/${article.slug}/`,
+			url: `https://sopkit.space/blog/${article.slug}/`,
 			type: "article",
 			images: [{ url: "/og-image.jpg" }],
 		},
@@ -68,19 +68,19 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 		author: {
 			"@type": "Organization",
 			name: "SopKit",
-			url: "https://sopkit.github.io",
+			url: "https://sopkit.space",
 		},
 		publisher: {
 			"@type": "Organization",
 			name: "SopKit",
-			url: "https://sopkit.github.io",
+			url: "https://sopkit.space",
 			logo: {
 				"@type": "ImageObject",
-				url: "https://sopkit.github.io/icons/icon-512x512.png/",
+				url: "https://sopkit.space/icons/icon-512x512.png/",
 			},
 		},
-		mainEntityOfPage: `https://sopkit.github.io/blog/${article.slug}`,
-		image: "https://sopkit.github.io/og-image.jpg",
+		mainEntityOfPage: `https://sopkit.space/blog/${article.slug}`,
+		image: "https://sopkit.space/og-image.jpg",
 	};
 
 	const breadcrumbSchema = {
@@ -91,19 +91,19 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 				"@type": "ListItem",
 				position: 1,
 				name: "Home",
-				item: "https://sopkit.github.io/",
+				item: "https://sopkit.space/",
 			},
 			{
 				"@type": "ListItem",
 				position: 2,
 				name: "Blog",
-				item: "https://sopkit.github.io/blog/",
+				item: "https://sopkit.space/blog/",
 			},
 			{
 				"@type": "ListItem",
 				position: 3,
 				name: article.title,
-				item: `https://sopkit.github.io/blog/${article.slug}/`,
+				item: `https://sopkit.space/blog/${article.slug}/`,
 			},
 		],
 	};

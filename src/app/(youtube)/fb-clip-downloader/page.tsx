@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Download Facebook video clips and highlights in high resolution instantly. Our free online downloader is fast, secure, and easy to use. No signup required...",
 	keywords: "fb clip downloader, free online tool, no signup, fb-clip-downloader, free fb-clip-downloader, Fb Clip Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/fb-clip-downloader/",
+		canonical: "https://sopkit.space/fb-clip-downloader/",
 	},
 	openGraph: {
 		title: "Free Fb Clip Downloader Online - No Signup | SopKit",
 		description: "Download Facebook video clips and highlights in high resolution instantly. Our free online downloader is fast, secure, and easy to use. No signup required...",
-		url: "https://sopkit.github.io/fb-clip-downloader/",
+		url: "https://sopkit.space/fb-clip-downloader/",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

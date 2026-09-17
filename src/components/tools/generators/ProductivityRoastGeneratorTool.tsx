@@ -588,7 +588,7 @@ Style: ${roastIntensity === "motivational" ? "Tough love coach" : roastIntensity
 					<SocialShareButtons
 						toolName="Productivity Roast Generator"
 						toolDescription="Get the honest feedback about your work habits you need to hear! 🔥"
-						toolUrl="https://sopkit.github.io/productivity-roast-generator"
+						toolUrl="https://sopkit.space/productivity-roast-generator"
 						category="generators"
 					/>
 				</div>

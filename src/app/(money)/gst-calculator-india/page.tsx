@@ -9,12 +9,12 @@ export const metadata = {
 	description: "Compute rates, taxes, averages, and conversions with our free GST Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
 	keywords: "gst calculator india, free online tool, no signup, gst calculator india online, calculators, SopKit",
 	alternates: {
-		canonical: "https://sopkit.github.io/gst-calculator-india",
+		canonical: "https://sopkit.space/gst-calculator-india",
 	},
 	openGraph: {
 		title: "Free GST Calculator India Online - No Signup | SopKit",
 		description: "Compute rates, taxes, averages, and conversions with our free GST Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
-		url: "https://sopkit.github.io/gst-calculator-india",
+		url: "https://sopkit.space/gst-calculator-india",
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

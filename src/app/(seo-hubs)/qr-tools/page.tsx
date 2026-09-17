@@ -5,7 +5,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "QR Tools - Restaurant Menu, Google Form, WiFi and UPI QR | SopKit",
 	description: "Create QR codes for restaurant menus, Google Forms, WiFi passwords, UPI payments, business cards, and small business workflows.",
-	alternates: { canonical: "https://sopkit.github.io/qr-tools/" },
+	alternates: { canonical: "https://sopkit.space/qr-tools/" },
 };
 
 export default function QrToolsHub() {
