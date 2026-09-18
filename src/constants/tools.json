@@ -2634,6 +2634,24 @@
       "description": "Format JSON, generate hashes, and developer utilities",
       "tools": [
         {
+          "id": "dev-speed",
+          "name": "DevSpeed Code Typing Speed Test",
+          "description": "Interactive developer typing speed test and symbol benchmark across TypeScript, Python, Rust, Go, and SQL with real-time stats, WPM/CPM, and shareable score badges.",
+          "route": "/dev-speed",
+          "popular": true,
+          "seoDescription": "Test and benchmark your coding typing speed with real syntax in TypeScript, Python, Rust, Go, and SQL. Measure WPM, CPM, and symbol accuracy free.",
+          "seoTitle": "DevSpeed — Developer Code Typing Speed Benchmark"
+        },
+        {
+          "id": "architecture-canvas",
+          "name": "System Architecture Canvas",
+          "description": "Visual drag-and-drop cloud and microservice system design visualizer with real-time latency simulation and one-click Mermaid.js export.",
+          "route": "/architecture-canvas",
+          "popular": true,
+          "seoDescription": "Design, simulate, and export modern cloud architectures and microservices. Drag-and-drop nodes, estimate end-to-end latency, and export to Mermaid.",
+          "seoTitle": "Architecture Canvas — Interactive System Design Visualizer"
+        },
+        {
           "id": "uuid-generator",
           "name": "UUID/GUID Generator",
           "description": "Generate unique UUID v4 and GUID strings instantly for your applications and databases. Fast, 100% private client-side processing with zero file uploads and no registration required.",

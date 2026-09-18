@@ -24345,4 +24345,104 @@ XML Prompt Formatter for Claude is built for privacy-conscious users who need re
   ],
   "seoDescription": "Download full-resolution YouTube channel profile pictures and avatar logos online for free. Fast, private, and instant."
 },
+  "dev-speed": {
+    "whatItIs": "DevSpeed is a gamified developer typing speed test designed specifically for software engineers and programmers. Standard typing benchmarks use conversational prose that does not train the specialized muscle memory required in coding—such as camelCase variables, arrow functions, opening and closing brackets, string interpolations, and SQL clauses. DevSpeed benchmarks your typing speed (WPM and CPM) and syntax accuracy against real production code across TypeScript, Python, Rust, Go, and SQL.",
+    "features": [
+      "Real production code snippets across TypeScript, JavaScript, Python, Rust, Go, and SQL",
+      "Calculates Net WPM, Gross WPM, Characters Per Minute (CPM), and character-by-character accuracy percentage",
+      "Detailed symbol mistake breakdown highlighting error-prone brackets, colons, and semicolons",
+      "Timed benchmark intervals: 30-second sprints, 60-second evaluations, or 120-second endurance tests",
+      "Auditory keystroke feedback with distinct tactile sounds for accurate inputs and syntax mismatches",
+      "Interactive developer tier certification ranking from Junior Dev to 10x Principal Architect",
+      "100% client-side execution with zero keystroke logging or data transmission"
+    ],
+    "howToUse": {
+      "name": "How to benchmark your developer typing speed",
+      "steps": [
+        {
+          "name": "Select Language",
+          "text": "Choose a programming language from the top toolbar (TypeScript, Python, Rust, Go, or SQL)."
+        },
+        {
+          "name": "Set Benchmark Duration",
+          "text": "Select your desired test duration (30 seconds, 60 seconds, or 120 seconds)."
+        },
+        {
+          "name": "Type Code Prompt",
+          "text": "Click into the dark code terminal and start typing. The benchmark timer starts automatically with your first keystroke."
+        },
+        {
+          "name": "Analyze Your Metrics",
+          "text": "Review your Net WPM, accuracy percentage, mistake count, and share your certified developer ranking."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How is DevSpeed different from general typing tests?",
+        "answer": "Traditional typing tests measure English prose where words are separated by single spaces. DevSpeed measures programming syntax including indentation, braces, semicolons, function signatures, and generics which require completely different finger movement patterns."
+      },
+      {
+        "question": "What is considered a good typing speed for software developers?",
+        "answer": "While average prose typing speed is around 40 WPM, coding speeds are typically lower due to special characters. A coding typing speed between 50 and 70 WPM is considered very good, while speeds above 80 WPM in code syntax put you in the top 5% of engineers."
+      },
+      {
+        "question": "Are my keystrokes tracked or sent to a server?",
+        "answer": "No. The entire typing evaluator runs client-side in your browser's local JavaScript thread. No keystrokes, timings, or snippets ever leave your device."
+      }
+    ],
+    "seoDescription": "Free DevSpeed developer code typing speed test: benchmark real syntax in TypeScript, Python, Rust, and SQL with WPM, CPM, and symbol accuracy."
+  },
+  "architecture-canvas": {
+    "whatItIs": "Architecture Canvas is an interactive visual system design diagrammer and cloud architecture simulator. Engineers, architects, and technical leads can visually model microservices, edge workers, API gateways, in-memory caches, message queues, and relational databases. The canvas lets you connect nodes, calculate end-to-end hop latencies, and export your visual design directly into Mermaid.js diagram syntax or JSON schemas for technical documentation.",
+    "features": [
+      "Visual drag-and-drop cloud architecture diagramming with responsive canvas grid snapping",
+      "Pre-loaded architectural patterns including Serverless Edge, Microservices E-Commerce, and Real-Time Chat",
+      "Automated theoretical end-to-end latency calculations accounting for network hops and cache hits",
+      "Component palette including Client, Edge Worker, Load Balancer, Gateway, Microservice, Cache, Database, and Queue",
+      "Real-time traffic flow simulation mode with animated directional packet indicators",
+      "Instant export to Markdown-compatible Mermaid.js diagram syntax for GitHub READMEs and RFCs",
+      "100% browser-based with zero server dependencies or account creation requirements"
+    ],
+    "howToUse": {
+      "name": "How to design a system architecture diagram",
+      "steps": [
+        {
+          "name": "Choose a Preset or Blank Canvas",
+          "text": "Start with a pre-configured architecture pattern (like Serverless Edge or Microservices) or start fresh."
+        },
+        {
+          "name": "Add Architecture Components",
+          "text": "Click buttons in the component palette to drop Edge Workers, Databases, API Gateways, or Caches onto the canvas."
+        },
+        {
+          "name": "Drag and Position Nodes",
+          "text": "Click and drag components into logical architectural tiers (Client -> Ingress -> Compute -> Storage)."
+        },
+        {
+          "name": "Connect and Simulate",
+          "text": "Select any node and pick a destination to form directed data flows, then click 'Simulate Flow' to verify traffic paths and hop latency."
+        },
+        {
+          "name": "Export Architecture",
+          "text": "Click 'Copy Mermaid' to paste the diagram directly into your Markdown docs, architecture proposals, or Jira tickets."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I export my architecture diagram to GitHub Markdown?",
+        "answer": "Yes. The 'Copy Mermaid' button generates standard Mermaid.js graph syntax (graph TD) that renders automatically inside GitHub markdown files, Notion, and GitLab."
+      },
+      {
+        "question": "How does the estimated end-to-end latency calculation work?",
+        "answer": "Each architectural component has a baseline theoretical execution latency (e.g. 4ms for Redis, 12ms for Edge Workers, 30ms for SQL databases). The canvas calculates the aggregate critical path latency across all connected hops with concurrency smoothing."
+      },
+      {
+        "question": "Do I need to sign in or pay to save my diagrams?",
+        "answer": "No. Architecture Canvas is completely free with no signup or subscription required. You can export your diagrams to Mermaid syntax or JSON blueprints at any time."
+      }
+    ],
+    "seoDescription": "Free Architecture Canvas: visual cloud system design tool. Model microservices, edge workers, and databases with live flow simulation and Mermaid export."
+  },
 };

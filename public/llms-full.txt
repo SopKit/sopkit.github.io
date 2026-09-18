@@ -861,6 +861,12 @@ Canonical Base URL: https://sopkit.space
 
 ### Developer Tools Tools
 
+#### [DevSpeed Code Typing Speed Test](https://sopkit.space/dev-speed)
+- **Description**: Interactive developer typing speed test and symbol benchmark across TypeScript, Python, Rust, Go, and SQL with real-time stats, WPM/CPM, and shareable score badges.
+
+#### [System Architecture Canvas](https://sopkit.space/architecture-canvas)
+- **Description**: Visual drag-and-drop cloud and microservice system design visualizer with real-time latency simulation and one-click Mermaid.js export.
+
 #### [UUID/GUID Generator](https://sopkit.space/uuid-generator)
 - **Description**: Generate unique UUID v4 and GUID strings instantly for your applications and databases. Fast, 100% private client-side processing with zero file uploads and no registration required.
 

@@ -1,7 +1,7 @@
 import { SITE_URL } from "@/constants/config";
 import React from "react";
 import { Metadata } from "next";
-import { getAllTools, getAllCategories } from "@/lib/tools";
+import { getSearchToolRecords, getAllCategories } from "@/lib/tools";
 import { generateMetadata as baseGenerateMetadata } from "@/lib/seo";
 import { SITE_CONFIG } from "@/constants/config";
 import { Container } from "@/components/layout/Container";
@@ -17,10 +17,10 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ToolIdPage() {
-	const allTools = getAllTools();
+	const searchTools = getSearchToolRecords();
 	const allCategories = getAllCategories();
 
-	const initialTools: ToolSummary[] = allTools.map((t) => ({
+	const initialTools: ToolSummary[] = searchTools.map((t) => ({
 		id: t.id,
 		name: t.name,
 		route: t.route,

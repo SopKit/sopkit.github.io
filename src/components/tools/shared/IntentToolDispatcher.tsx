@@ -58,6 +58,8 @@ const BrowserDetectTool = dynamic(() => import("@/components/tools/built-ins/Bro
 const BuiltInCalculators = dynamic(() => import("@/components/tools/built-ins/BuiltInCalculators"), { ssr: false });
 const BuiltInMarkup = dynamic(() => import("@/components/tools/built-ins/BuiltInMarkup"), { ssr: false });
 const BuiltInSafeHttp = dynamic(() => import("@/components/tools/built-ins/BuiltInSafeHttp"), { ssr: false });
+const DevSpeedChallenge = dynamic(() => import("@/components/features/DevSpeedChallenge"), { ssr: false });
+const ArchitectureCanvas = dynamic(() => import("@/components/features/ArchitectureCanvas"), { ssr: false });
 const BuiltInSerialization = dynamic(() => import("@/components/tools/built-ins/BuiltInSerialization"), { ssr: false });
 const BuzzfeedDownloader = dynamic(() => import("@/components/tools/downloaders/BuzzfeedDownloader"), { ssr: false });
 const CSSGradientTool = dynamic(() => import("@/components/tools/developer/CSSGradientTool"), { ssr: false });
@@ -956,6 +958,8 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "consent-management-generator": { component: ConsentManagementGenerator, props: {} },
     "breach-notification-generator": { component: BreachNotificationGenerator, props: {} },
     "data-anonymization-report-generator": { component: DataAnonymizationReportGenerator, props: {} },
+    "dev-speed": { component: DevSpeedChallenge, props: {} },
+    "architecture-canvas": { component: ArchitectureCanvas, props: {} },
 };
 
 interface IntentToolDispatcherProps {

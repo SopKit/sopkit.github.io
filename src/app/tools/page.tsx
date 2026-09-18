@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import { getAllTools } from "@/lib/tools";
+import { getSearchToolRecords } from "@/lib/tools";
 import { generateMetadata as baseGenerateMetadata } from "@/lib/seo";
 import { SITE_CONFIG } from "@/constants/config";
 import AdPlacement from "@/components/ads/AdPlacement";
@@ -17,7 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ToolsDirectoryPage() {
-	const allTools = getAllTools();
+	const searchTools = getSearchToolRecords();
 
 	return (
 		<div className="bg-background min-h-screen relative text-foreground">
@@ -48,7 +48,7 @@ export default async function ToolsDirectoryPage() {
 				</div>
 
 				{/* Centralized Search and Filter Directory */}
-				<ToolDirectorySection tools={allTools} />
+				<ToolDirectorySection tools={searchTools} />
 
 				<div className="max-w-4xl mx-auto my-12">
 					<AdPlacement placement="footer" pageType="category" />

@@ -359,7 +359,7 @@ export const blogs: BlogArticle[] = [
 	},
 	{
 		slug: "convert-youtube-videos-high-quality-320kbps-mp3",
-		title: "3 Methods to Convert YouTube Videos to High-Quality 320kbps MP3",
+		title: "Convert YouTube to 320kbps MP3 (2026)",
 		description: "Learn how to extract high-fidelity audio from YouTube videos with these simple methods.",
 		date: "2025-01-14",
 		readTimeMinutes: 6,
@@ -697,7 +697,7 @@ export const blogs: BlogArticle[] = [
 	},
 	{
 		slug: "top-sentence-rewriters-review",
-		title: "Top 4 Sentence Rewriters: A Comprehensive Review and Comparison",
+		title: "Top Sentence Rewriters: 2026 Review",
 		description: "Compare the best sentence rewriter tools to improve your content flow and clarity.",
 		date: "2025-01-06",
 		readTimeMinutes: 6,
@@ -740,7 +740,7 @@ export const blogs: BlogArticle[] = [
 	},
 	{
 		slug: "hermes-agent-review-956k-stars-self-improving-ai-agent-april-2026-11le",
-		title: "Hermes Agent Review: 956K Stars & Self-Improving AI (April 2026)",
+		title: "Hermes Agent Review: Self-Improving AI",
 		description: "A deep dive into the Hermes Agent framework, its rapid growth, self-evolving skills, and how it integrates with SopKit.",
 		date: "2026-04-28",
 		readTimeMinutes: 8,
@@ -843,7 +843,7 @@ export const blogs: BlogArticle[] = [
 	},
 	{
 		slug: "ultimate-guide-to-ai-generated-music-2026",
-		title: "The Ultimate Guide to AI-Generated Music: Royalty-Free Workflows",
+		title: "AI-Generated Royalty-Free Music Guide",
 		description: "Generate professional, royalty-free music using AI in 2026. Step-by-step guide on creating soundtracks for videos, podcasts, and games for free.",
 		date: "2026-05-09",
 		readTimeMinutes: 10,
@@ -879,7 +879,7 @@ export const blogs: BlogArticle[] = [
 	},
 	{
 		slug: "pro-json-workflows-formatter-conversion-guide",
-		title: "Pro JSON Workflows: From Formatting to Conversion for Developers",
+		title: "Pro JSON Workflows & Formatter Guide",
 		description: "Streamline your development process with professional JSON workflows. Learn how to format, validate, and convert JSON data efficiently in 2026.",
 		date: "2026-05-09",
 		readTimeMinutes: 15,
@@ -987,7 +987,7 @@ export const blogs: BlogArticle[] = [
 	},
 	{
 		slug: "must-have-free-coding-tools-students-2026",
-		title: "Must-Have Free Coding Tools for Computer Science Students in 2026",
+		title: "Free Coding Tools for CS Students (2026)",
 		description: "The best free tools for computer science students in 2026. From code formatters to API testers, these utilities will help you ace your assignments and projects.",
 		date: "2026-05-09",
 		readTimeMinutes: 14,
@@ -1059,7 +1059,7 @@ export const blogs: BlogArticle[] = [
 	},
 	{
 		slug: "complete-guide-to-image-conversion-webp-avif-2026",
-		title: "Complete Guide to Image Conversion: WebP, AVIF, and High-Fidelity Formats",
+		title: "Image Conversion Guide: WebP & AVIF",
 		description: "Optimize your website performance with the right image formats. Learn when to use WebP, AVIF, or PNG and how to convert them instantly for free.",
 		date: "2026-05-09",
 		readTimeMinutes: 13,
@@ -1095,7 +1095,7 @@ export const blogs: BlogArticle[] = [
 	},
 	{
 		slug: "standardizing-engineering-workflows-precision-unit-converters",
-		title: "Standardizing Engineering Workflows with Precision Unit Converters",
+		title: "Engineering Unit Converters Guide",
 		description: "Ensure accuracy in your engineering and scientific projects with precision unit conversion. A guide on standardizing units across global teams in 2026.",
 		date: "2026-05-09",
 		readTimeMinutes: 16,
@@ -1131,7 +1131,7 @@ export const blogs: BlogArticle[] = [
 	},
 	{
 		slug: "youtube-channel-growth-tag-title-generators-rank-1",
-		title: "YouTube Channel Growth: Using Tag & Title Generators to Rank #1",
+		title: "YouTube SEO: Tags & Title Generators",
 		description: "Boost your YouTube views and rankings with the right metadata strategy. Learn how to use tag and title generators to dominate the algorithm in 2026.",
 		date: "2026-05-09",
 		readTimeMinutes: 13,
@@ -1168,7 +1168,7 @@ export const blogs: BlogArticle[] = [
 	},
 	{
 		slug: "shift-to-browser-based-privacy-local-tools-winning-2026",
-		title: "The Shift to Browser-Based Privacy: Why Local Tools Are Winning in 2026",
+		title: "Why Browser Privacy Tools Win in 2026",
 		description: "Discover why privacy-first, browser-based tools are becoming the industry standard in 2026. Learn about the technology that keeps your data off the cloud.",
 		date: "2026-05-09",
 		readTimeMinutes: 10,
@@ -1938,7 +1938,7 @@ export const blogs: BlogArticle[] = [
 },
 {
   "slug": "text-to-handwriting-converter-guide",
-  "title": "Text to Handwriting: Turning Typed Notes Into Handwriting Fonts",
+  "title": "Text to Handwriting Converter Guide",
   "description": "Learn how to convert typed text notes into realistic handwriting pages and download them as printable PNGs.",
   "date": "2026-07-12",
   "readTimeMinutes": 5,
@@ -1998,7 +1998,7 @@ export const blogs: BlogArticle[] = [
 },
 {
   "slug": "use-kimi-k3-for-free",
-  "title": "How to Use Kimi K3 for Free: Step-by-Step Moonshot AI Guide (2026)",
+  "title": "How to Use Kimi K3 for Free (2026 Guide)",
   "description": "Learn how to use Kimi K3 for free online. Step-by-step guide to Moonshot AI's 2.8T-parameter flagship reasoning model, including the free playground, mobile apps, API pricing, and a Kimi K3 vs ChatGPT comparison.",
   "date": "2026-07-17",
   "readTimeMinutes": 10,
@@ -2091,7 +2091,7 @@ export const blogs: BlogArticle[] = [
 },
 {
   slug: "how-to-resize-photo-for-ssc-exam",
-  title: "How to Resize Photo for SSC Exam Form: Exact Size Guide (2026)",
+  title: "How to Resize Photo for SSC Exam Form",
   description: "SSC form photo rejected? Here are the sizes SSC usually asks for, why uploads fail, and how to resize your photo and signature to fit in minutes.",
   date: "2026-08-26",
   readTimeMinutes: 7,
@@ -2153,7 +2153,7 @@ export const blogs: BlogArticle[] = [
 },
 {
   slug: "upsc-photo-signature-size-guide",
-  title: "UPSC Photo & Signature Size Requirements: Complete Resize Guide",
+  title: "UPSC Photo & Signature Resize Guide (2026)",
   description: "UPSC photo and signature size explained: the KB limits commonly seen in notifications, scan tips that avoid blur, and a fast way to resize both files.",
   date: "2026-08-26",
   readTimeMinutes: 8,
@@ -2213,7 +2213,7 @@ export const blogs: BlogArticle[] = [
 },
 {
   slug: "passport-photo-size-guide-countries",
-  title: "Passport Photo Size Guide: India, US, UK & Visa Photo Dimensions",
+  title: "Passport Photo Size Guide by Country",
   description: "Passport photo sizes for India, the US, and the UK side by side — millimetres, pixel counts, digital upload limits, and how to get it right at home.",
   date: "2026-08-26",
   readTimeMinutes: 8,

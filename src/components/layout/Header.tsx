@@ -39,8 +39,9 @@ export function Header() {
 
 	const navItems = [
 		{ label: "All Tools", href: STATIC_ROUTES.TOOLS },
+		{ label: "DevSpeed", href: "/dev-speed" },
+		{ label: "Canvas", href: "/architecture-canvas" },
 		{ label: "Categories", href: "/#categories" },
-		{ label: "Embeds", href: "/#embed" },
 		{ label: "Guides", href: STATIC_ROUTES.TOOL_GUIDES },
 		{ label: "Blog", href: STATIC_ROUTES.BLOG },
 	];

@@ -70,6 +70,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/best-free-ilovepdf-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${SITE_URL}/best-free-adobe-acrobat-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${SITE_URL}/best-free-canva-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
+		{ url: `${SITE_URL}/dev-speed`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+		{ url: `${SITE_URL}/architecture-canvas`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+		{ url: `${SITE_URL}/pricing`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
+		{ url: `${SITE_URL}/resources`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
+		{ url: `${SITE_URL}/trust-center`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
+		{ url: `${SITE_URL}/hire`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
+		{ url: `${SITE_URL}/pro`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
+		{ url: `${SITE_URL}/api-key-testers`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
 	];
 
 	// Use site deployment date for tool pages (staggered by popularity)

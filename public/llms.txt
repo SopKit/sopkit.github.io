@@ -320,6 +320,8 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 
 ### Developer Tools
 
+- [DevSpeed Code Typing Speed Test](https://sopkit.space/dev-speed) - Interactive developer typing speed test and symbol benchmark across TypeScript, Python, Rust, Go, and SQL with real-time stats, WPM/CPM, and shareable score badges.
+- [System Architecture Canvas](https://sopkit.space/architecture-canvas) - Visual drag-and-drop cloud and microservice system design visualizer with real-time latency simulation and one-click Mermaid.js export.
 - [UUID/GUID Generator](https://sopkit.space/uuid-generator) - Generate unique UUID v4 and GUID strings instantly for your applications and databases. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [URL Slug Generator](https://sopkit.space/slug-generator) - Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages. Fast, 100% private client-side processing with zero file uploads and no registration required.
 - [JSON to TypeScript Interface](https://sopkit.space/json-to-typescript) - Convert JSON objects into clean TypeScript interfaces or type definitions automatically. Fast, 100% private client-side processing with zero file uploads and no registration required.

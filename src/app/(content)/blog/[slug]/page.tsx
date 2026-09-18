@@ -8,6 +8,8 @@ import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { Suspense } from "react";
 import { Calendar, Clock, ArrowLeft, ArrowRight, LayoutGrid } from "lucide-react";
 
+import { formatSeoTitle } from "@/seo/metadata";
+
 interface BlogArticlePageProps {
 	params: Promise<{ slug: string }>;
 }
@@ -27,8 +29,10 @@ export async function generateMetadata({ params }: BlogArticlePageProps) {
 		};
 	}
 
+	const seoTitle = formatSeoTitle(article.title);
+
 	return {
-		title: `${article.title} | SopKit`,
+		title: seoTitle,
 		description: article.description,
 		keywords: [
 			article.slug.split("-").join(" "),
