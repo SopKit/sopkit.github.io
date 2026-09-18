@@ -1329,6 +1329,9 @@ Canonical Base URL: https://sopkit.space
 #### [MD5 Generator](https://sopkit.space/md5-generator)
 - **Description**: Generate MD5 hashes for passwords and file checksums. Instant digests — free, no signup.
 
+#### [SHA256 Hash Generator](https://sopkit.space/sha256-hash-generator)
+- **Description**: Calculate secure SHA-256 and HMAC hashes in your browser. 100% client-side crypto — free forever.
+
 #### [Number to Roman Numerals](https://sopkit.space/number-to-roman-numerals)
 - **Description**: Convert numbers to Roman numerals (MMXXVI) and back. History homework — free, no signup.
 

@@ -331,6 +331,48 @@ if (verifyFormat(myToken)) {
 const hash = await sha256("hello world");
 const md5Hash = md5("hello world");
 const matches = compareHash(hash, expectedHash);`
+	},
+	player: {
+		name: "@sopkit/player",
+		badge: "Media & Player",
+		version: "1.0.0",
+		description: "Zero-dependency, modern HTML5 video player engine with custom controls, PiP, keyboard shortcuts, and theme support.",
+		npmLink: "https://www.npmjs.com/package/@sopkit/player",
+		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/player`,
+		installCmd: "npm install @sopkit/player",
+		toolLink: "/ai-video-summarizer",
+		detailedDesc: "A lightweight, zero-dependency HTML5 video player engine designed for modern web apps. Features floating gradient controls, smooth progress scrubbing, Picture-in-Picture, full keyboard shortcuts, and custom styling.",
+		rivals: {
+			title: "Rivals Comparison",
+			legacyName: "video.js / plyr",
+			reasons: [
+				{ metric: "Dependencies", ours: "0 (Zero dependencies)", legacy: "Heavy bundle & CSS baggage" },
+				{ metric: "Bundle size", ours: "4.2 KB (minified)", legacy: "150 KB+ (video.js)" },
+				{ metric: "Modern APIs", ours: "Native Web PiP & Fullscreen", legacy: "Legacy DOM polyfills" }
+			]
+		},
+		api: [
+			{ name: "createPlayer(options: SopKitPlayerOptions): SopKitPlayer", desc: "Factory to instantiate player in any DOM container." },
+			{ name: "player.play(): Promise<void>", desc: "Starts video playback." },
+			{ name: "player.pause(): void", desc: "Pauses active video playback." },
+			{ name: "player.seek(seconds: number): void", desc: "Seeks directly to timestamp in seconds." },
+			{ name: "player.setPlaybackRate(rate: number): void", desc: "Changes speed (0.5x, 1x, 1.25x, 1.5x, 2x)." },
+			{ name: "player.togglePip(): Promise<void>", desc: "Toggles native Picture-in-Picture window." },
+			{ name: "player.toggleFullscreen(): Promise<void>", desc: "Toggles container fullscreen mode." },
+			{ name: "player.on(event, handler): () => void", desc: "Subscribes to playback state events with cleanup callback." }
+		],
+		usage: `import { createPlayer } from "@sopkit/player";
+
+const player = createPlayer({
+  container: "#video-container",
+  src: "https://example.com/video.mp4",
+  poster: "https://example.com/cover.jpg",
+  themeColor: "#06b6d4"
+});
+
+player.on("play", (state) => {
+  console.log("Playing at:", state.currentTime);
+});`
 	}
 };
 

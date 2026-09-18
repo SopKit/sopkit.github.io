@@ -648,6 +648,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "markdown-to-text": { component: MarkdownToText, props: {} },
     "mashable-video-downloader": { component: MashableDownloader, props: {} },
     "md5-generator": { component: HashGeneratorTool, props: {} },
+    "sha256-hash-generator": { component: HashGeneratorTool, props: {} },
     "midjourney-prompt-builder": { component: MidjourneyPromptBuilder, props: {} },
     "meta-tag-generator": { component: MetaTagGenerator, props: {} },
     "mixcloud-video-downloader": { component: MixcloudDownloader, props: {} },

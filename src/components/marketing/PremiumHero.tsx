@@ -13,7 +13,7 @@ const QUICK_TRENDING_TOOLS = [
 	{ name: "JSON Format", route: "/json-formatter" },
 	{ name: "QR Generator", route: "/qr-code-generator" },
 	{ name: "UUID Generator", route: "/uuid-generator" },
-	{ name: "Base64", route: "/base64-encode-decode" },
+	{ name: "Base64", route: "/base64-tool" },
 ];
 
 export function PremiumHero({

@@ -478,6 +478,7 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 - [Loan Calculator](https://sopkit.space/loan-calculator) - Plan loans with EMI, total interest and amortization schedules. Borrow smarter — free.
 - [Margin Calculator](https://sopkit.space/margin-calculator) - Calculate profit margins, markups and breakeven points. Pricing clarity — free, no signup.
 - [MD5 Generator](https://sopkit.space/md5-generator) - Generate MD5 hashes for passwords and file checksums. Instant digests — free, no signup.
+- [SHA256 Hash Generator](https://sopkit.space/sha256-hash-generator) - Calculate secure SHA-256 and HMAC hashes in your browser. 100% client-side crypto — free forever.
 - [Number to Roman Numerals](https://sopkit.space/number-to-roman-numerals) - Convert numbers to Roman numerals (MMXXVI) and back. History homework — free, no signup.
 - [Pace Converter](https://sopkit.space/pace-converter) - Convert running pace between min/km, min/mile and speed. Race planning — free, no signup.
 - [Page Size Checker](https://sopkit.space/page-size-checker) - Check any page's total weight: HTML, CSS, JS and images broken down. Speed audit — free.

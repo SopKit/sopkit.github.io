@@ -1,0 +1,34 @@
+{
+  "name": "@sopkit/player",
+  "version": "1.0.0",
+  "description": "Ultra-fast, zero-dependency modern HTML5 video player engine with custom controls, PiP, keyboard shortcuts, and theme support.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "test": "node --test test/*.test.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "sopkit",
+    "player",
+    "video",
+    "html5",
+    "media",
+    "pip",
+    "controls",
+    "zero-dependency",
+    "custom-player"
+  ],
+  "author": "SopKit",
+  "license": "MIT",
+  "homepage": "https://sopkit.space/packages/player"
+}

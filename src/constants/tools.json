@@ -4049,6 +4049,15 @@
           "seoTitle": "MD5 Hash Generator — Instant Digests"
         },
         {
+          "id": "sha256-hash-generator",
+          "name": "SHA256 Hash Generator",
+          "description": "Calculate secure SHA-256 and HMAC hashes in your browser. 100% client-side crypto — free forever.",
+          "route": "/sha256-hash-generator",
+          "popular": true,
+          "seoDescription": "Generate SHA-256 cryptographic digests and HMACs online. Fast, browser-based, zero uploads.",
+          "seoTitle": "SHA256 Hash Generator Online — Free & Secure"
+        },
+        {
           "id": "number-to-roman-numerals",
           "name": "Number to Roman Numerals",
           "description": "Convert numbers to Roman numerals (MMXXVI) and back. History homework — free, no signup.",

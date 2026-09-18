@@ -17,6 +17,7 @@ This directory hosts the standalone, reusable developer packages maintained by S
 - **[`@sopkit/password`](./password)**: Customizable password generator and entropy analyzer.
 - **[`@sopkit/xml`](./xml)**: XML formatter, minifier, and syntax validator.
 - **[`@sopkit/jwt`](./jwt)**: Zero-dependency JWT inspector and token parser.
+- **[`@sopkit/player`](./player)**: Zero-dependency modern HTML5 video player engine with custom controls, PiP, and keyboard shortcuts.
 - **[`@sopkit/hash`](./hash)**: High-performance SHA-256, SHA-512, MD5, and HMAC hashing suite.
 
 ---

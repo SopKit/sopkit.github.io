@@ -22,8 +22,8 @@ export default async function ToolPage() {
 	};
 	const breadcrumbs = [
 		{
-			name: "Others Tools",
-			url: "/others-tools",
+			name: "Other Tools",
+			url: "/other-tools",
 		},
 		{
 			name: "All Downloaders",
