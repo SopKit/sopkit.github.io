@@ -408,6 +408,5 @@ export default function PdfMerger() {
           )}
         </div>
       </div>
-    </div>
   );
 }
