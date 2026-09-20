@@ -96,7 +96,7 @@ export function formatSeoDescription(rawDesc: string, toolName?: string): string
 
   // If shorter than 140 chars, enrich with privacy and browser sandbox guarantee
   if (desc.length < 140) {
-    const privacyAdd = " Fast, browser-based processing on SopKit.";
+    const privacyAdd = " Fast, browser-based processing on SopKit. Check the tool page for supported formats, processing details, and privacy information.";
     if (desc.length + privacyAdd.length <= 165) {
       return `${desc}${privacyAdd}`;
     }
