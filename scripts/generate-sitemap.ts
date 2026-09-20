@@ -144,7 +144,11 @@ for (const tool of allTools) {
   registerUrl(tool.route, priority, 'weekly');
 }
 
-// 3. Add blog posts
+// 3. Add blog archive pages and posts
+const blogArchivePages = Math.max(1, Math.ceil(blogSlugs.length / 12));
+for (let page = 2; page <= blogArchivePages; page++) {
+  registerUrl(`/blog/page/${page}`, '0.75', 'daily');
+}
 for (const slug of blogSlugs) {
   registerUrl(`/blog/${slug}`, '0.70', 'monthly');
 }
