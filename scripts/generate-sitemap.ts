@@ -8,9 +8,12 @@ const rootDir = path.resolve(__dirname, '..');
 
 const toolsJsonPath = path.join(rootDir, 'src', 'constants', 'tools.json');
 const blogDataPath = path.join(rootDir, 'src', 'constants', 'blog-data.ts');
+
 const publicDir = path.join(rootDir, 'public');
 
+
 const BASE_URL = 'https://sopkit.space';
+
 const LAST_MODIFIED = new Date().toISOString().split('T')[0];
 
 console.log('🚀 Generating unified static sitemap.xml and robots.txt...');
@@ -73,6 +76,7 @@ const staticPages = [
   { path: '/blog', priority: '0.80', changefreq: 'daily' },
   { path: '/tool-guides', priority: '0.70', changefreq: 'weekly' },
   { path: '/about', priority: '0.70', changefreq: 'monthly' },
+  { path: '/editorial-policy', priority: '0.65', changefreq: 'monthly' },
   { path: '/contact', priority: '0.70', changefreq: 'monthly' },
   { path: '/privacy', priority: '0.70', changefreq: 'monthly' },
   { path: '/terms', priority: '0.70', changefreq: 'monthly' },
@@ -130,6 +134,10 @@ for (const p of staticPages) {
 // 2. Add tools
 for (const tool of allTools) {
   if (!tool.route || !tool.route.startsWith('/')) continue;
+  const slug = tool.id || tool.route.replace(/^\//, '');
+  const category = (tool as any).category || '';
+  if (/downloader|media-saver|clip-saver|thumbnail-downloader|story-downloader|reel-downloader|api-key-tester|password|credential|token|secret-key|private-key|jwt|fake-chat-generator/i.test(slug)) continue;
+  if (/youtube/i.test(category)) continue;
   if (tool.route.includes('?')) continue;
   if (tool.route.startsWith('/search')) continue;
   const priority = tool.popular ? '0.90' : '0.80';
@@ -161,6 +169,7 @@ try {
   const { intentData } = await import('../src/lib/intent-data');
   if (intentData && typeof intentData === 'object') {
     for (const slug of Object.keys(intentData)) {
+      if (/downloader|media-saver|clip-saver|thumbnail-downloader|story-downloader|reel-downloader|api-key-tester|password|credential|token|secret-key|private-key|jwt|fake-chat-generator/i.test(slug)) continue;
       registerUrl(`/${slug}`, '0.85', 'weekly');
     }
   }
