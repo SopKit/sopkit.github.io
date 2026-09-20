@@ -19,6 +19,7 @@ export const POPULAR_TOOL_COUNT = allTools.filter((tool: any) => tool?.popular).
 
 export const SHOW_SCRIPTLY_ADS = false;
 export const GITHUB_REPO_URL = "https://github.com/SopKit/sopkit.github.io";
+export const GITHUB_ORG_URL = "https://github.com/SopKit";
 export const SOPKIT_BACKEND_URL = process.env.NEXT_PUBLIC_SOPKIT_BACKEND_URL || "https://sopkit-backend.shraj.workers.dev";
 
 // NOTE: The sequential slot IDs 9876543210-9876543215 are unverified mock placeholders.
@@ -62,6 +63,7 @@ export const SITE_CONFIG = {
 	companyOrOwnerName: COMPANY_OR_OWNER_NAME,
 	showScriptlyAds: SHOW_SCRIPTLY_ADS,
 	githubRepoUrl: GITHUB_REPO_URL,
+	githubOrgUrl: GITHUB_ORG_URL,
 	defaultMetaTitle: DEFAULT_META_TITLE,
 	defaultMetaDesc: DEFAULT_META_DESC,
 	themeColor: THEME_COLOR,
