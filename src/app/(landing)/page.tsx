@@ -18,8 +18,8 @@ import { Container } from "@/components/layout/Container";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return baseGenerateMetadata({
-		title: `SopKit — ${SITE_CONFIG.toolCountString} Free Online Tools (Browser-Based & Private)`,
-		description: `${SITE_CONFIG.toolCountString} free online tools for Image, PDF, Video, Audio, Developer utilities, and SEO. Private, fast, and secure in-browser sandboxing — no mandatory signup.`,
+		title: `SopKit — ${SITE_CONFIG.toolCountString} Free Online Tools`,
+		description: `${SITE_CONFIG.toolCountString} free online tools for Image, PDF, Video, Audio, Developer utilities, and SEO. Browser-first workflows with clear processing details and no mandatory signup.`,
 		path: "/",
 	});
 }
@@ -46,7 +46,7 @@ export default async function LandingPage() {
 			{/* 3. Live 600+ Tool Directory with Fast Search & Category Filter Tabs */}
 			<ToolDirectorySection tools={searchTools} />
 
-			{/* 4. Trust & Architecture Pillars (100% Client-Side, No Signup, Fast) */}
+			{/* 4. Trust & Architecture Pillars (Browser-First, No Signup, Fast) */}
 			<TrustSection />
 
 			{/* 5. Webmaster Embed Feature Showcase */}
