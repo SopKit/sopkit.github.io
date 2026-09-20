@@ -22,6 +22,8 @@ import { ClientStackAuthProvider } from "@/components/shared/ClientStackAuthProv
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import ConsentBanner from "@/components/privacy/ConsentBanner";
+import ConsentAwareThirdPartyScripts from "@/components/privacy/ConsentAwareThirdPartyScripts";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -220,7 +222,20 @@ export default function RootLayout({
 				<meta
 					name="google-adsense-account"
 					content="ca-pub-1828915420581549"
-				></meta>
+				/>
+				<Script id="google-consent-default" strategy="beforeInteractive">
+					{`
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("consent", "default", {
+  analytics_storage: "denied",
+  ad_storage: "denied",
+  ad_user_data: "denied",
+  ad_personalization: "denied",
+  wait_for_update: 500
+});
+`}
+				</Script>
 
 				{/* Search Box */}
 				<link
@@ -296,28 +311,7 @@ export default function RootLayout({
               gtag('config', '${GA_MEASUREMENT_ID}', { send_page_view: false });
             `}
 				</Script>
-				{process.env.NEXT_PUBLIC_ENABLE_ADS === "true" && (
-					<Script
-						src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1828915420581549"
-						strategy="lazyOnload"
-						crossOrigin="anonymous"
-					/>
-				)}
-				{/* Clarity Tracking Code */}
-				<Script
-					id="clarity-tracking"
-					strategy="lazyOnload"
-					dangerouslySetInnerHTML={{
-						__html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "uh6y61lx9p");
-            `,
-					}}
-				/>
-			</head>
+							</head>
 			<body className={`font-sans antialiased min-h-screen bg-background text-foreground ${inter.className}`}>
 				<ClientStackAuthProvider>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -327,17 +321,14 @@ export default function RootLayout({
 						<Toaster />
 						<PWARegistration />
 						<OfflineIndicator />
+					<ConsentAwareThirdPartyScripts enableAds={process.env.NEXT_PUBLIC_ENABLE_ADS === "true"} />
+					<ConsentBanner />
 						<Suspense fallback={null}>
 							<GA4RouteTracker />
 						</Suspense>
 						<WebVitalsReporter />
 					</ThemeProvider>
 				</ClientStackAuthProvider>
-
-				<Script
-					src="https://assets.onedollarstats.com/stonks.js"
-					strategy="lazyOnload"
-				/>
 			</body>
 		</html>
 	);
