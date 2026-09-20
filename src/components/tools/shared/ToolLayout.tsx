@@ -6,7 +6,6 @@ import StructuredData from "@/components/shared/StructuredData";
 import DownloadDisclaimer from "@/components/shared/DownloadDisclaimer";
 import { ToolFAQ, ToolFeatures, ToolSteps } from "./ToolSharedComponents";
 import { getRelatedTools, type Tool } from "@/lib/tools";
-import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
 import { Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -23,10 +22,43 @@ import {
 	type ToolArchetype,
 } from "@/features/tools/archetypes";
 
-function ToolArticle({ content, title }: { content?: string; title?: string }) {
-	if (!content) return null;
-
-	const lines = content.replace(/\\n/g, "\n").trim().split("\n");
+function ToolArticle({
+	content,
+	title,
+	description,
+	processingType,
+	toolRoute,
+}: {
+	content?: string;
+	title?: string;
+	description: string;
+	processingType: "LOCAL" | "NO_FILE_UPLOAD" | "EXTERNAL";
+	toolRoute: string;
+}) {
+	const resolvedTitle = title || "this utility";
+	const processingText =
+		processingType === "LOCAL"
+			? "The core operation runs in your browser. Inputs required by the tool stay in the browser session rather than being uploaded to SopKit servers."
+			: processingType === "NO_FILE_UPLOAD"
+				? "The tool does not require a file upload to SopKit. Any external or network processing is described in the page before it is used."
+				: "This tool can use external or network services. Review the processing notice before entering sensitive information.";
+	const fallbackContent = [
+		resolvedTitle + " is a focused browser utility for " + description.replace(/\\s+/g, " ").trim() + ".",
+		"",
+		"## What this tool is for",
+		"Use " + resolvedTitle + " when you need this task handled at " + toolRoute + ". The page is designed around a simple workflow: provide the required input, review the available controls, run the operation, and save or copy the result.",
+		"",
+		"## Processing and privacy",
+		processingText,
+		"",
+		"## Before you use it",
+		"Check the supported formats, limits, and output behavior shown on this page. For sensitive material, avoid entering information that the page says may be transmitted to an external provider.",
+		"",
+		"## Practical workflow",
+		"Open the tool, prepare the input, configure any available options, run the operation, and verify the result before saving or sharing it.",
+	].join("\n");
+	const articleContent = content?.trim() || fallbackContent;
+	const lines = articleContent.replace(/\\n/g, "\n").trim().split("\n");
 	return (
 		<section className="scroll-mt-16 space-y-4 pt-6 border-t border-border/60" aria-label="About this tool">
 			<div className="flex flex-col gap-1">
@@ -99,17 +131,6 @@ export default function ToolLayout({
 	const routeKey = tool.route.endsWith("/") ? tool.route.slice(0, -1) : tool.route;
 
 	const enrichedTool: Tool = { ...tool };
-	const manualContent = MANUAL_TOOL_CONTENT[tool.id];
-
-	if (manualContent) {
-		enrichedTool.article = manualContent.whatItIs;
-		enrichedTool.features = manualContent.features;
-		enrichedTool.howTo = manualContent.howToUse;
-		enrichedTool.faqs = (manualContent.faqs && manualContent.faqs.length > 0 && !manualContent.faqs[0]?.question?.startsWith("What exactly does"))
-			? manualContent.faqs
-			: (tool.faqs && tool.faqs.length > 0 ? tool.faqs : manualContent.faqs);
-		enrichedTool.description = manualContent.seoDescription || enrichedTool.description;
-	}
 
 	// Semantic H1 resolution
 	if (ROUTE_H1_OVERRIDES[routeKey]) {
@@ -138,6 +159,36 @@ export default function ToolLayout({
 			: getRelatedTools(tool, 6);
 
 	const finalDescription = String(enrichedTool.description || "").replace(/\\n/g, "\n").trim();
+
+	const fallbackFeatures = enrichedTool.features?.length
+		? enrichedTool.features
+		: [
+			"Task-focused workflow for " + enrichedTool.name,
+			"Browser-based interface with responsive controls",
+			"Clear result and export controls where the tool supports them",
+			"Core utilities are available without account registration",
+		];
+
+	const fallbackHowTo = enrichedTool.howTo?.steps?.length
+		? enrichedTool.howTo
+		: {
+			name: "How to use " + enrichedTool.name,
+			steps: [
+				{ name: "Open the tool", text: "Open " + enrichedTool.name + " and review the processing notice." },
+				{ name: "Provide the input", text: "Enter text, select a file, or provide the information requested by the tool." },
+				{ name: "Configure options", text: "Use the available controls to match the output you need." },
+				{ name: "Run and verify", text: "Start the operation and check the result before saving or sharing it." },
+			],
+		};
+
+	const fallbackFaqs = enrichedTool.faqs?.length
+		? enrichedTool.faqs
+		: [
+			{ question: "What does " + enrichedTool.name + " do?", answer: finalDescription || "It provides a focused browser workflow for " + enrichedTool.name + "." },
+			{ question: "Do I need an account to use " + enrichedTool.name + "?", answer: "Core SopKit utilities do not require account registration unless a page explicitly says otherwise." },
+			{ question: "How is my data handled?", answer: dataProcessing.type === "LOCAL" ? "The core operation stays in your browser for this processing mode." : "Review the processing notice because this tool may use an external service." },
+			{ question: "Does " + enrichedTool.name + " work on mobile?", answer: "The interface is responsive and designed for modern mobile and desktop browsers, subject to the tool's browser requirements." },
+		];
 
 	// Archetype and responsive width resolution
 	const resolvedArchetype = explicitArchetype || resolveToolArchetype(enrichedTool);
@@ -223,16 +274,22 @@ export default function ToolLayout({
 						<AdPlacement placement="after-tool" category={tool.category} slug={tool.id} />
 
 						{/* Editorial Documentation Layout */}
-						<ToolArticle content={enrichedTool.article} title={enrichedTool.name} />
+						<ToolArticle
+							content={enrichedTool.article}
+							title={enrichedTool.name}
+							description={finalDescription}
+							processingType={dataProcessing.type === "LOCAL" ? "LOCAL" : dataProcessing.type === "NO_FILE_UPLOAD" ? "NO_FILE_UPLOAD" : "EXTERNAL"}
+							toolRoute={tool.route}
+						/>
 
 						{opportunity && (
 							<SeoOpportunityContent opportunity={opportunity} />
 						)}
 
-						<ToolFeatures features={enrichedTool.features} toolName={enrichedTool.name} />
+						<ToolFeatures features={fallbackFeatures} toolName={enrichedTool.name} />
 
 						<ToolSteps
-							steps={enrichedTool.howTo?.steps}
+							steps={fallbackHowTo?.steps}
 							toolName={enrichedTool.name}
 						/>
 
@@ -253,7 +310,7 @@ export default function ToolLayout({
 						{/* Community & Open-Source Footer Notice */}
 						<footer className="pt-8 border-t border-border/40 text-center space-y-3">
 							<p className="text-xs text-muted-foreground max-w-xl mx-auto leading-relaxed">
-								SopKit is a privacy-first utility platform. Free forever with zero tracking.
+								SopKit is a privacy-focused utility platform with transparent processing and privacy choices.
 							</p>
 							<div className="flex flex-wrap items-center justify-center gap-3">
 								<VisitorBadge path={tool.route || `/${tool.id}`} label="PAGE VIEWS" />
