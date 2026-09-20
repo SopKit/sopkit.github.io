@@ -133,19 +133,19 @@ export default async function PrivacyPage() {
 									To maintain performance, identify broken tools, and understand which utilities are most useful, we utilize privacy-conscious telemetry:
 								</p>
 								<ul className="list-disc list-inside text-sm space-y-1.5 ml-4">
-									<li><strong>Google Analytics 4 (GA4):</strong> Aggregated page views, performance metrics, and anonymous tool lifecycle events (e.g. click counts, file format categories). We strip query parameters, tokens, and personal inputs from URLs before dispatching events.</li>
-									<li><strong>Microsoft Clarity:</strong> Aggregated heatmaps and usability session replays to diagnose UX friction. Clarity is restricted from capturing sensitive tool inputs or credential forms.</li>
-									<li><strong>OneDollarStats:</strong> Lightweight, cookie-free aggregated visitor metrics.</li>
+									<li><strong>Google Analytics 4 (GA4):</strong> Loads only after you grant analytics consent. We record aggregate page views, performance metrics, and tool lifecycle events while stripping query parameters and sensitive values from URLs.</li>
+									<li><strong>Microsoft Clarity:</strong> Loads only after analytics consent and is used for usability diagnostics such as heatmaps and session replay.</li>
+									<li><strong>OneDollarStats:</strong> Loads only after analytics consent for lightweight visitor measurement.</li>
 								</ul>
 							</section>
 
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">4. Advertising & Monetization Disclosures</h2>
 								<p className="text-sm leading-relaxed">
-									SopKit may display contextual or banner advertisements to support ongoing maintenance and infrastructure costs:
+									SopKit may display clearly labeled advertisements to support maintenance and infrastructure costs. Advertising remains disabled until you choose to allow it in the site's privacy controls.
 								</p>
 								<ul className="list-disc list-inside text-sm space-y-1.5 ml-4">
-									<li><strong>Google AdSense:</strong> When active, Google and third-party vendors use cookies or device identifiers to serve ads based on your visit history. Users in applicable regions (such as the EEA, UK, and Switzerland) can manage consent preferences.</li>
+									<li><strong>Google AdSense:</strong> When enabled and consented, Google and third-party vendors may use cookies or device identifiers for advertising. Available controls and regional requirements may vary by visitor location and the publisher's AdSense privacy settings.</li>
 									<li><strong>Ad Exclusions:</strong> Advertising scripts are strictly disabled on credential tools, password generators, and sensitive developer utilities.</li>
 								</ul>
 							</section>
@@ -166,7 +166,7 @@ export default async function PrivacyPage() {
 								</p>
 								<ul className="list-disc list-inside text-sm space-y-1 ml-4">
 									<li><strong>Local Storage:</strong> Recent generation history and favorites are stored solely in your browser&apos;s localStorage and can be deleted at any time through tool settings or browser history clearing.</li>
-									<li><strong>Analytics Opt-Out:</strong> You may block analytics using browser tracking protection, content blockers, or ad-blocking extensions without impacting tool functionality.</li>
+									<li><strong>Consent controls:</strong> Use the Privacy choices control in the footer to enable, disable, or customize optional analytics and advertising.</li>
 								</ul>
 							</section>
 
