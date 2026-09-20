@@ -226,7 +226,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 								const previous = pageNumbers[index - 1];
 								const hasGap = previous !== undefined && page - previous > 1;
 								return (
-									<React.Fragment key={page}>
+									<Fragment key={page}>
 										{hasGap && <span className="px-1 text-xs text-muted-foreground">…</span>}
 										<Link
 											href={getPageHref(page)}
@@ -239,7 +239,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 										>
 											{page}
 										</Link>
-									</React.Fragment>
+									</Fragment>
 								);
 							})}
 
