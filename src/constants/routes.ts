@@ -9,6 +9,7 @@ export const STATIC_ROUTES = {
 	PRIVACY: "/privacy",
 	TERMS: "/terms",
 	ABOUT: "/about",
+	EDITORIAL_POLICY: "/editorial-policy",
 	DMCA: "/dmca",
 	TOOLS: "/tools",
 	BLOG: "/blog",
