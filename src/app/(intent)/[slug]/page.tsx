@@ -4,8 +4,6 @@ import { getAllTools, getToolById, getToolByExtraSlug, getToolByRoute, type Tool
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import SeoOpportunityTool from "@/components/seo/SeoOpportunityTool";
-import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
-import type { ManualToolContent } from "@/data/tool-manual-content";
 import {
     getSeoOpportunityBySlug,
     seoOpportunities,
@@ -242,13 +240,12 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
             const isFree = slug.includes("free") || slug.includes("no-signup") || slug.includes("no-registration");
 
             const tool = { ...extraTool };
-            const manualContent: ManualToolContent = MANUAL_TOOL_CONTENT[extraTool.id] || {} as ManualToolContent;
 
             if (isCanonicalTool) {
                 tool.name = extraTool.name;
                 tool.description = extraTool.description;
-                tool.article = manualContent.whatItIs || extraTool.article || "";
-                tool.faqs = manualContent.faqs || extraTool.faqs || [];
+                tool.article = extraTool.article || "";
+                tool.faqs = extraTool.faqs || [];
             } else {
                 // 1. Customize name (H1)
                 let keywordHighlight = "";
@@ -282,11 +279,11 @@ With our privacy-friendly architecture, we guarantee that no data processed by t
 Unlike freemium services that restrict file sizes or impose hourly conversion limits, this ${extraTool.name} is free forever with no daily caps, no hidden fees, and no signups required. Access full processing capabilities instantly.
 `;
                 }
-                const baseArticle = manualContent.whatItIs || extraTool.article || "";
+                const baseArticle = extraTool.article || "";
                 tool.article = baseArticle + extraArticle;
 
                 // 4. Customize FAQs
-                const baseFaqs = manualContent.faqs || extraTool.faqs || [];
+                const baseFaqs = extraTool.faqs || [];
                 const customFaqs = [
                     {
                         question: `Does this ${extraTool.name} page upload my files?`,
