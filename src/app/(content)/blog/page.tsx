@@ -3,36 +3,76 @@ import Link from "next/link";
 import { blogs } from "@/constants/blog-data";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { Suspense } from "react";
-import { Clock, Calendar, ArrowRight } from "lucide-react";
+import { Clock, Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
-export const metadata = {
-	title: "SopKit Blog — Guides & Tool Tips | SopKit",
-	description: "Tutorials, comparisons and productivity guides from the SopKit team. Learn the tools — free forever.",
-	keywords: "SopKit blog, free online tools guides, seo tutorials, json guides, converter tutorials, no signup tools",
-	alternates: {
-		canonical: `${SITE_URL}/blog`,
-	},
-	openGraph: {
-		title: "SopKit Blog — Guides & Tool Tips | SopKit",
-		description: "Tutorials, comparisons and productivity guides from the SopKit team. Learn the tools — free forever.",
-		url: `${SITE_URL}/blog`,
-		siteName: "SopKit",
-		images: [{ url: "/og-image.jpg" }],
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "SopKit Blog — Guides & Tool Tips | SopKit",
-		description: "Tutorials, comparisons and productivity guides from the SopKit team. Learn the tools — free forever.",
-		images: ["/og-image.jpg"],
-	},
-	robots: { index: true, follow: true },
-};
+const PAGE_SIZE = 12;
 
-export default function BlogPage() {
-	const sortedArticles = [...blogs].sort((a, b) =>
-		new Date(b.date).getTime() - new Date(a.date).getTime()
+interface BlogPageProps {
+	searchParams: Promise<{ page?: string }>;
+}
+
+function getPageNumber(value?: string) {
+	const parsed = Number.parseInt(value || "1", 10);
+	return Number.isFinite(parsed) ? parsed : 1;
+}
+
+export async function generateMetadata({ searchParams }: BlogPageProps) {
+	const params = await searchParams;
+	const sortedArticles = [...blogs].sort(
+		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 	);
+	const totalPages = Math.max(1, Math.ceil(sortedArticles.length / PAGE_SIZE));
+	const requestedPage = getPageNumber(params.page);
+	const currentPage = Math.min(Math.max(requestedPage, 1), totalPages);
+	const canonical = currentPage === 1
+		? `${SITE_URL}/blog/`
+		: `${SITE_URL}/blog?page=${currentPage}`;
+
+	return {
+		title: currentPage === 1
+			? "SopKit Blog — Guides, Tutorials & Tool Tips"
+			: `SopKit Blog — Page ${currentPage} of ${totalPages}`,
+		description:
+			"Practical guides, tutorials, comparisons, and workflows for free online tools, developer utilities, SEO, PDFs, images, and everyday productivity.",
+		keywords:
+			"SopKit blog, free online tools guides, SEO tutorials, developer guides, PDF tutorials, image optimization, JSON guides, productivity tools",
+		alternates: { canonical },
+		openGraph: {
+			title: currentPage === 1
+				? "SopKit Blog — Guides, Tutorials & Tool Tips"
+				: `SopKit Blog — Page ${currentPage}`,
+			description:
+				"Practical guides, tutorials, comparisons, and workflows for free online tools and everyday digital tasks.",
+			url: canonical,
+			siteName: "SopKit",
+			images: [{ url: "/og-image.jpg" }],
+			type: "website",
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: currentPage === 1
+				? "SopKit Blog — Guides, Tutorials & Tool Tips"
+				: `SopKit Blog — Page ${currentPage}`,
+			description:
+				"Practical guides, tutorials, comparisons, and workflows for free online tools and everyday digital tasks.",
+			images: ["/og-image.jpg"],
+		},
+		robots: { index: true, follow: true },
+	};
+}
+
+export default async function BlogPage({ searchParams }: BlogPageProps) {
+	const params = await searchParams;
+	const sortedArticles = [...blogs].sort(
+		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+	);
+	const totalArticles = sortedArticles.length;
+	const totalPages = Math.max(1, Math.ceil(totalArticles / PAGE_SIZE));
+	const requestedPage = getPageNumber(params.page);
+	const currentPage = Math.min(Math.max(requestedPage, 1), totalPages);
+	const startIndex = (currentPage - 1) * PAGE_SIZE;
+	const pageArticles = sortedArticles.slice(startIndex, startIndex + PAGE_SIZE);
+	const pageUrl = currentPage === 1 ? `${SITE_URL}/blog/` : `${SITE_URL}/blog?page=${currentPage}`;
 
 	const featuredGuides = [
 		{ slug: "best-free-tools-for-students", label: "Students Guide" },
@@ -44,16 +84,19 @@ export default function BlogPage() {
 	const blogSchema = {
 		"@context": "https://schema.org",
 		"@type": "CollectionPage",
-		name: "Blog & Guides for Free Online Tools",
-		description: "Actionable guides, tool lists, and tutorials for SEO, developer workflows, and everyday online conversion tasks.",
-		url: `${SITE_URL}/blog/`,
+		name: currentPage === 1
+			? "SopKit Blog & Guides"
+			: `SopKit Blog & Guides — Page ${currentPage}`,
+		description:
+			"Actionable guides, tutorials, comparisons, and workflows for online utilities, developers, SEO, PDFs, images, and productivity.",
+		url: pageUrl,
 		mainEntity: {
 			"@type": "ItemList",
-			itemListElement: sortedArticles.slice(0, 10).map((article, i) => ({
+			itemListElement: pageArticles.map((article, i) => ({
 				"@type": "ListItem",
-				position: i + 1,
+				position: startIndex + i + 1,
 				name: article.title,
-				url: `https://sopkit.space/blog/${article.slug}/`,
+				url: `${SITE_URL}/blog/${article.slug}/`,
 			})),
 		},
 	};
@@ -62,38 +105,27 @@ export default function BlogPage() {
 		"@context": "https://schema.org",
 		"@type": "BreadcrumbList",
 		itemListElement: [
-			{
-				"@type": "ListItem",
-				position: 1,
-				name: "Home",
-				item: `${SITE_URL}/`,
-			},
-			{
-				"@type": "ListItem",
-				position: 2,
-				name: "Blog",
-				item: `${SITE_URL}/blog/`,
-			},
+			{ "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+			{ "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog/` },
+			...(currentPage > 1
+				? [{ "@type": "ListItem", position: 3, name: `Page ${currentPage}`, item: pageUrl }]
+				: []),
 		],
 	};
 
+	const getPageHref = (page: number) => page === 1 ? "/blog" : `/blog?page=${page}`;
+	const pageNumbers = Array.from(
+		new Set([1, currentPage - 1, currentPage, currentPage + 1, totalPages].filter(
+			(page) => page >= 1 && page <= totalPages
+		))
+	).sort((a, b) => a - b);
+
 	return (
 		<div className="min-h-screen bg-background text-foreground flex flex-col antialiased">
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(blogSchema),
-				}}
-			/>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(breadcrumbSchema),
-				}}
-			/>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
 			<main className="flex-grow">
-				{/* Top Hero Section */}
 				<section className="relative overflow-hidden bg-gradient-to-b from-primary/[0.03] via-transparent to-transparent py-12 md:py-20 border-b border-border/10">
 					<div className="container mx-auto max-w-6xl px-4">
 						<Suspense fallback={null}>
@@ -102,13 +134,13 @@ export default function BlogPage() {
 
 						<div className="mt-8 max-w-3xl">
 							<span className="text-[10px] font-bold uppercase tracking-widest text-primary bg-primary/5 px-2.5 py-1 rounded-full">
-								SopKit Content Engine
+								SopKit Content Library
 							</span>
 							<h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-foreground mt-4 leading-tight">
 								Guides & tutorials for browser utilities.
 							</h1>
 							<p className="mt-4 text-base md:text-lg text-muted-foreground leading-relaxed">
-								Step-by-step documentation, comparative analysis, and quick workflows to help you solve everyday engineering, conversion, and optimization tasks locally.
+								Step-by-step documentation, practical comparisons, and workflow guides for engineering, SEO, documents, images, and everyday digital tasks.
 							</p>
 
 							<div className="mt-8 flex flex-wrap gap-2">
@@ -126,10 +158,19 @@ export default function BlogPage() {
 					</div>
 				</section>
 
-				{/* Blog Cards List */}
-				<section className="container mx-auto max-w-6xl px-4 py-12 md:py-16">
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-						{sortedArticles.map((article) => (
+				<section className="container mx-auto max-w-6xl px-4 py-10 md:py-14">
+					<div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-8">
+						<div>
+							<p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Content archive</p>
+							<h2 className="mt-1 text-2xl font-bold tracking-tight">
+								{totalArticles} guides, tutorials, and explainers
+							</h2>
+						</div>
+						<p className="text-sm text-muted-foreground">Page {currentPage} of {totalPages} · {PAGE_SIZE} per page</p>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+						{pageArticles.map((article) => (
 							<Link
 								key={article.slug}
 								href={`/blog/${article.slug}`}
@@ -147,7 +188,6 @@ export default function BlogPage() {
 											{article.readTimeMinutes || 5} min read
 										</span>
 									</div>
-
 									<h2 className="mt-3 text-lg md:text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors duration-200 leading-snug">
 										{article.title}
 									</h2>
@@ -163,6 +203,63 @@ export default function BlogPage() {
 							</Link>
 						))}
 					</div>
+
+					{totalPages > 1 && (
+						<nav className="mt-12 flex items-center justify-center gap-1.5" aria-label="Blog pagination">
+							{currentPage > 1 ? (
+								<Link
+									href={getPageHref(currentPage - 1)}
+									className="inline-flex h-9 items-center gap-1 rounded-full border border-border px-3 text-xs font-semibold text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+									aria-label="Previous blog page"
+								>
+									<ChevronLeft className="h-3.5 w-3.5" />
+									Previous
+								</Link>
+							) : (
+								<span className="inline-flex h-9 items-center gap-1 rounded-full border border-border/40 px-3 text-xs font-semibold text-muted-foreground/40">
+									<ChevronLeft className="h-3.5 w-3.5" />
+									Previous
+								</span>
+							)}
+
+							{pageNumbers.map((page, index) => {
+								const previous = pageNumbers[index - 1];
+								const hasGap = previous !== undefined && page - previous > 1;
+								return (
+									<React.Fragment key={page}>
+										{hasGap && <span className="px-1 text-xs text-muted-foreground">…</span>}
+										<Link
+											href={getPageHref(page)}
+											aria-current={page === currentPage ? "page" : undefined}
+											className={`inline-flex h-9 min-w-9 items-center justify-center rounded-full border px-3 text-xs font-bold transition-colors ${
+												page === currentPage
+													? "border-primary bg-primary text-primary-foreground"
+													: "border-border text-muted-foreground hover:border-foreground/30 hover:text-foreground"
+											}`}
+										>
+											{page}
+										</Link>
+									</React.Fragment>
+								);
+							})}
+
+							{currentPage < totalPages ? (
+								<Link
+									href={getPageHref(currentPage + 1)}
+									className="inline-flex h-9 items-center gap-1 rounded-full border border-border px-3 text-xs font-semibold text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+									aria-label="Next blog page"
+								>
+									Next
+									<ChevronRight className="h-3.5 w-3.5" />
+								</Link>
+							) : (
+								<span className="inline-flex h-9 items-center gap-1 rounded-full border border-border/40 px-3 text-xs font-semibold text-muted-foreground/40">
+									Next
+									<ChevronRight className="h-3.5 w-3.5" />
+								</span>
+							)}
+						</nav>
+					)}
 				</section>
 			</main>
 		</div>
