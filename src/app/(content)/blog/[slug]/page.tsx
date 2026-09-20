@@ -1,7 +1,7 @@
 import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { blogs, getBlogArticleBySlug } from "@/constants/blog-data";
+import { getBlogArticleBySlug } from "@/constants/blog-data";
 import { getToolByRoute } from "@/lib/tools";
 import { getRelatedBlogArticles, getAdjacentBlogArticles, getSortedBlogs } from "@/lib/blog";
 import AdPlacement from "@/components/ads/AdPlacement";
