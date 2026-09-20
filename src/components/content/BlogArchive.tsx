@@ -7,6 +7,21 @@ import { Clock, Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-r
 
 const PAGE_SIZE = 12;
 
+export function getBlogArchiveMeta(requestedPage: number) {
+  const totalArticles = getSortedBlogs().length;
+  const totalPages = Math.max(1, Math.ceil(totalArticles / PAGE_SIZE));
+  const currentPage = Math.min(Math.max(requestedPage, 1), totalPages);
+  return {
+    totalArticles,
+    totalPages,
+    currentPage,
+    canonical:
+      currentPage === 1
+        ? `${SITE_URL}/blog/`
+        : `${SITE_URL}/blog/page/${currentPage}/`,
+  };
+}
+
 export default function BlogArchive({ currentPage }: { currentPage: number }) {
 	const sortedArticles = getSortedBlogs();
 	const totalArticles = sortedArticles.length;
