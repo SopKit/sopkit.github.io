@@ -85,8 +85,19 @@ export default function AdPlacement({
   const monetization = getMonetizationDecision({ slug, category });
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
   const [adDecision, setAdDecision] = useState<"ad" | "empty">("ad");
+  const [hasAdConsent, setHasAdConsent] = useState(false);
 
   useEffect(() => {
+    const readConsent = () => {
+      try {
+        setHasAdConsent(localStorage.getItem("sopkit_consent_ads") === "granted");
+      } catch {
+        setHasAdConsent(false);
+      }
+    };
+    readConsent();
+    window.addEventListener("sopkit-consent-updated", readConsent);
+
     if (SHOW_SCRIPTLY_ADS) {
       const rand = Math.random();
       if (rand < 0.80) {
@@ -97,9 +108,11 @@ export default function AdPlacement({
         setAdDecision("empty");
       }
     }
+
+    return () => window.removeEventListener("sopkit-consent-updated", readConsent);
   }, []);
 
-  if (!monetization.adsAllowed) {
+  if (!monetization.adsAllowed || !hasAdConsent) {
     return null;
   }
 
