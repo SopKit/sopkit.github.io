@@ -35,6 +35,7 @@ export function Footer() {
 		{ name: "About Us", href: STATIC_ROUTES.ABOUT },
 		{ name: "Contact", href: STATIC_ROUTES.CONTACT },
 		{ name: "Privacy Policy", href: STATIC_ROUTES.PRIVACY },
+		{ name: "Editorial Policy", href: STATIC_ROUTES.EDITORIAL_POLICY },
 		{ name: "Terms of Service", href: STATIC_ROUTES.TERMS },
 		{ name: "DMCA Notice", href: STATIC_ROUTES.DMCA },
 	];
@@ -162,6 +163,7 @@ export function Footer() {
 					<p>© {new Date().getFullYear()} SopKit. All utilities are free to use without registration.</p>
 					<div className="flex items-center gap-4">
 						<VisitorBadge path="global" label="TOTAL VISITORS" />
+						<button type="button" onClick={() => window.dispatchEvent(new CustomEvent("sopkit-open-consent"))} className="hover:text-foreground transition-colors">Privacy choices</button>
 						<LanguageSelector />
 					</div>
 				</div>
