@@ -2,7 +2,7 @@ import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
 import { blogs } from "@/constants/blog-data";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
-import { Suspense } from "react";
+import { Fragment, Suspense } from "react";
 import { Clock, Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 const PAGE_SIZE = 12;
@@ -239,7 +239,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 										>
 											{page}
 										</Link>
-									</React.Fragment>
+									</Fragment>
 								);
 							})}
 
