@@ -11,7 +11,7 @@ import { VisitorBadge } from "@/components/shared/VisitorBadge";
 export async function generateMetadata(): Promise<Metadata> {
 	return baseGenerateMetadata({
 		title: `All Free Online Tools Directory (${SITE_CONFIG.toolCountString} Tools) | SopKit`,
-		description: `Browse all ${SITE_CONFIG.toolCountString} free browser-based online tools for Image, PDF, Video, Audio, SEO, and developer workflows. 100% free, secure, and private.`,
+		description: `Browse a curated directory of SopKit browser utilities for Image, PDF, Video, Audio, SEO, and developer workflows, with processing details shown on each tool page.`,
 		path: "/tools",
 	});
 }
@@ -28,7 +28,7 @@ export default async function ToolsDirectoryPage() {
 						<span className="w-2 h-2 rounded-full bg-emerald-500" />
 						<span>{SITE_CONFIG.toolCountString} Available Utilities</span>
 						<span className="text-border">•</span>
-						<span>100% Client-Side</span>
+						<span>Browser-First</span>
 						<span className="text-border">•</span>
 						<VisitorBadge path="/tools" label="PAGE VIEWS" />
 					</div>
@@ -37,9 +37,8 @@ export default async function ToolsDirectoryPage() {
 						Complete Tool Directory
 					</h1>
 					<p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
-						Explore our complete catalog of {SITE_CONFIG.toolCountString} browser-based utilities.
-						Every tool processes files locally inside your browser sandbox for zero data leakage,
-						instant response, and zero signup friction.
+						Explore a curated catalog of {SITE_CONFIG.toolCountString} browser utilities across common file, developer, calculator, and content workflows.
+						Each tool page explains its processing model, supported inputs, and important limitations before you use it.
 					</p>
 				</div>
 
