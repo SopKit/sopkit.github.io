@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
-import BlogArchive, { getBlogArchiveMeta } from "@/components/content/BlogArchive";
+import BlogArchive from "@/components/content/BlogArchive";
 import { SITE_URL } from "@/constants/config";
 import { getSortedBlogs } from "@/lib/blog";
 
@@ -22,18 +22,21 @@ export async function generateMetadata({
 }: BlogPaginationPageProps): Promise<Metadata> {
   const { page: rawPage } = await params;
   const page = Number.parseInt(rawPage, 10);
-  const meta = getBlogArchiveMeta(Number.isFinite(page) ? page : 1);
-  const canonical = meta.currentPage === 1
+  const totalArticles = getSortedBlogs().length;
+  const totalPages = Math.max(1, Math.ceil(totalArticles / 12));
+  const currentPage = Math.min(Math.max(Number.isFinite(page) ? page : 1, 1), totalPages);
+  const canonical = currentPage === 1
     ? `${SITE_URL}/blog/`
-    : `${SITE_URL}/blog/page/${meta.currentPage}/`;
+    : `${SITE_URL}/blog/page/${currentPage}/`;
+
 
   return {
-    title: `SopKit Blog — Page ${meta.currentPage} of ${meta.totalPages}`,
+    title: `SopKit Blog — Page ${currentPage} of ${totalPages}`,
     description:
       "Practical guides, tutorials, comparisons, and workflows for free online tools and everyday digital tasks.",
     alternates: { canonical },
     openGraph: {
-      title: `SopKit Blog — Page ${meta.currentPage}`,
+      title: `SopKit Blog — Page ${currentPage}`,
       description:
         "Practical guides, tutorials, comparisons, and workflows for free online tools and everyday digital tasks.",
       url: canonical,
@@ -62,9 +65,9 @@ export default async function BlogPaginationPage({
   }
 
   const meta = getBlogArchiveMeta(parsedPage);
-  if (meta.currentPage !== parsedPage) {
+  if (currentPage !== parsedPage) {
     notFound();
   }
 
-  return <BlogArchive currentPage={meta.currentPage} />;
+  return <BlogArchive currentPage={currentPage} />;
 }
