@@ -51,6 +51,7 @@ export const monetizationRules = {
 export type MonetizationDecision = {
 	safety: MonetizationSafety;
 	adsAllowed: boolean;
+	indexable: boolean;
 	affiliateAllowed: boolean;
 	serviceCTA: boolean;
 	reason: string;
@@ -67,21 +68,27 @@ export function getMonetizationDecision({
 }): MonetizationDecision {
 	const normalizedSlug = slug.toLowerCase();
 	const normalizedCategory = category.toLowerCase();
-	const isRiskySlug = monetizationRules.riskySlugs.some((item) =>
-		normalizedSlug.includes(item),
-	);
-	const isRiskyCategory = monetizationRules.riskyCategories.some((item) =>
-		normalizedCategory.includes(item),
-	);
+	const isDownloaderLike = /downloader|media-saver|clip-saver|thumbnail-downloader|story-downloader|reel-downloader/i.test(normalizedSlug);
+	const isCredentialSensitive = /api-key-tester|password|credential|token|secret-key|private-key|jwt/i.test(normalizedSlug);
+	const isDeceptiveGenerator = /fake-chat-generator/i.test(normalizedSlug);
+	const isRiskySlug =
+		monetizationRules.riskySlugs.some((item) => normalizedSlug.includes(item)) ||
+		isDownloaderLike ||
+		isCredentialSensitive ||
+		isDeceptiveGenerator;
+	const isRiskyCategory =
+		monetizationRules.riskyCategories.some((item) => normalizedCategory.includes(item)) ||
+		normalizedCategory === "youtube";
 	const safety = overrideSafety || (isRiskySlug || isRiskyCategory ? "risky" : "safe");
 
 	if (safety === "risky") {
 		return {
 			safety,
 			adsAllowed: false,
+			indexable: false,
 			affiliateAllowed: false,
 			serviceCTA: false,
-			reason: "Ads disabled on downloader, copyright-sensitive, or account-risk pages.",
+			reason: "Ads and indexing disabled on downloader, copyright-sensitive, deceptive, or account-risk pages.",
 		};
 	}
 
@@ -89,6 +96,7 @@ export function getMonetizationDecision({
 		return {
 			safety,
 			adsAllowed: false,
+			indexable: false,
 			affiliateAllowed: true,
 			serviceCTA: false,
 			reason: "Ads disabled by caution policy; contextual recommendations only.",
@@ -98,6 +106,7 @@ export function getMonetizationDecision({
 	return {
 		safety,
 		adsAllowed: true,
+		indexable: true,
 		affiliateAllowed: true,
 		serviceCTA: true,
 		reason: "Safe utility page suitable for tasteful in-flow ads and contextual CTAs.",
