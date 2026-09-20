@@ -14,13 +14,10 @@ interface BlogArticlePageProps {
 	params: Promise<{ slug: string }>;
 }
 
-export const dynamicParams = true;
-export const revalidate = 86400;
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
-	return getSortedBlogs()
-		.slice(0, 50)
-		.map((article) => ({ slug: article.slug }));
+	return getSortedBlogs().map((article) => ({ slug: article.slug }));
 }
 
 export async function generateMetadata({ params }: BlogArticlePageProps) {
