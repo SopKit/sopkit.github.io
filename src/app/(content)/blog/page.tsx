@@ -239,7 +239,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 										>
 											{page}
 										</Link>
-									</Fragment>
+									</React.Fragment>
 								);
 							})}
 
