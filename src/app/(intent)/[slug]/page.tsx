@@ -1,5 +1,6 @@
 import { notFound, permanentRedirect } from "next/navigation";
 import { getIntentBySlug, intentData } from "@/lib/intent-data";
+import { getMonetizationDecision } from "@/data/monetization";
 import { getAllTools, getToolById, getToolByExtraSlug, getToolByRoute, type Tool } from "@/lib/tools";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
@@ -92,7 +93,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 description: opportunity.metaDescription,
                 images: ["/og-image.jpg"],
             },
-            robots: { index: true, follow: true },
+            robots: getMonetizationDecision({ slug }).indexable ? { index: true, follow: true } : { index: false, follow: false },
         };
     }
 
@@ -165,7 +166,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                     description,
                     images: ["/og-image.jpg"],
                 },
-                robots: isCanonicalTool
+                robots: isCanonicalTool && getMonetizationDecision({ slug: extraTool.id, category: extraTool.category }).indexable
                     ? { index: true, follow: true }
                     : { index: false, follow: true },
             };
