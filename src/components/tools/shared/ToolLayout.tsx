@@ -43,7 +43,7 @@ function ToolArticle({
 				? "The tool does not require a file upload to SopKit. Any external or network processing is described in the page before it is used."
 				: "This tool can use external or network services. Review the processing notice before entering sensitive information.";
 	const fallbackContent = [
-		resolvedTitle + " is a focused browser utility for " + description.replace(/\\s+/g, " ").trim() + ".",
+		resolvedTitle + " is a focused browser utility for " + description.replace(/\s+/g, " ").trim() + ".",
 		"",
 		"## What this tool is for",
 		"Use " + resolvedTitle + " when you need this task handled at " + toolRoute + ". The page is designed around a simple workflow: provide the required input, review the available controls, run the operation, and save or copy the result.",
@@ -181,6 +181,12 @@ export default function ToolLayout({
 			],
 		};
 
+
+	// Archetype and responsive width resolution
+	const resolvedArchetype = explicitArchetype || resolveToolArchetype(enrichedTool);
+	const workspaceClass = getArchetypeWorkspaceClass(resolvedArchetype);
+	const dataProcessing = resolveDataProcessing(enrichedTool);
+
 	const fallbackFaqs = enrichedTool.faqs?.length
 		? enrichedTool.faqs
 		: [
@@ -189,11 +195,6 @@ export default function ToolLayout({
 			{ question: "How is my data handled?", answer: dataProcessing.type === "LOCAL" ? "The core operation stays in your browser for this processing mode." : "Review the processing notice because this tool may use an external service." },
 			{ question: "Does " + enrichedTool.name + " work on mobile?", answer: "The interface is responsive and designed for modern mobile and desktop browsers, subject to the tool's browser requirements." },
 		];
-
-	// Archetype and responsive width resolution
-	const resolvedArchetype = explicitArchetype || resolveToolArchetype(enrichedTool);
-	const workspaceClass = getArchetypeWorkspaceClass(resolvedArchetype);
-	const dataProcessing = resolveDataProcessing(enrichedTool);
 
 	return (
 		<div className="min-h-screen bg-background text-foreground relative">
