@@ -45,17 +45,35 @@ export function initializeConsent() {
  * Updates consent state upon explicit user permission
  */
 export function updateConsent(granted: boolean) {
-  if (typeof window === "undefined" || !window.gtag) return;
+  updateConsentPreferences({ analytics: granted, ads: granted });
+}
 
-  const state = granted ? "granted" : "denied";
-  window.gtag("consent", "update", {
-    analytics_storage: state,
-    ad_storage: state,
-    ad_user_data: state,
-    ad_personalization: state,
-  });
+export function updateConsentPreferences({
+  analytics,
+  ads,
+}: {
+  analytics: boolean;
+  ads: boolean;
+}) {
+  if (typeof window === "undefined") return;
+
+  const analyticsState = analytics ? "granted" : "denied";
+  const adsState = ads ? "granted" : "denied";
+
+  if (window.gtag) {
+    window.gtag("consent", "update", {
+      analytics_storage: analyticsState,
+      ad_storage: adsState,
+      ad_user_data: adsState,
+      ad_personalization: adsState,
+    });
+  }
 
   try {
-    localStorage.setItem("sopkit_consent", state);
+    localStorage.setItem("sopkit_consent", "configured");
+    localStorage.setItem("sopkit_consent_analytics", analyticsState);
+    localStorage.setItem("sopkit_consent_ads", adsState);
+    localStorage.setItem("sopkit_consent_version", "2");
+    window.dispatchEvent(new CustomEvent("sopkit-consent-updated"));
   } catch {}
 }
