@@ -42,7 +42,7 @@ export function Footer() {
 	return (
 		<footer className="border-t border-border bg-surface-muted/50 dark:bg-card/30 pt-16 pb-12 text-foreground">
 			<Container size="xl">
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-border/70">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 pb-12 border-b border-border/70">
 					{/* Brand & Mission Column */}
 					<div className="lg:col-span-2 space-y-4 pr-4">
 						<Link
@@ -105,6 +105,35 @@ export function Footer() {
 									</Link>
 								</li>
 							))}
+						</ul>
+					</div>
+
+					{/* Open Source Column */}
+					<div className="space-y-3">
+						<h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
+							Open Source
+						</h4>
+						<ul className="space-y-2 text-sm text-muted-foreground">
+							<li>
+								<a
+									href={SITE_CONFIG.githubRepoUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="hover:text-foreground transition-colors no-underline"
+								>
+									Contribute on GitHub
+								</a>
+							</li>
+							<li>
+								<a
+									href={SITE_CONFIG.githubOrgUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="hover:text-foreground transition-colors no-underline"
+								>
+									SopKit GitHub Organization
+								</a>
+							</li>
 						</ul>
 					</div>
 
