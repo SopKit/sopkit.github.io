@@ -189,9 +189,20 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 								{article.readTimeMinutes || 5} min read
 							</span>
 						</div>
+						<div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+							<span>Written by SopKit Editorial Team</span>
+							<span>&bull;</span>
+							<Link href="/editorial-policy" className="text-primary hover:underline underline-offset-2">Editorial policy</Link>
+						</div>
 					</header>
 
-					<div className="mt-8 border-l-2 border-primary/20 pl-4 py-1.5">
+					<div className="mt-8 rounded-xl border border-border/40 bg-muted/10 px-4 py-3">
+						<p className="text-xs leading-5 text-muted-foreground">
+							Guides are maintained as practical technical references. Requirements or third-party behavior that can change over time should be verified against the relevant official source.
+						</p>
+					</div>
+
+					<div className="mt-5 border-l-2 border-primary/20 pl-4 py-1.5">
 						<p className="text-base sm:text-lg leading-relaxed text-muted-foreground italic font-normal">
 							{article.intro || article.description}
 						</p>
