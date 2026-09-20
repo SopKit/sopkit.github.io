@@ -2287,6 +2287,202 @@ export const blogs: BlogArticle[] = [
       answer: "Usually because a small source image was enlarged first and compressed afterwards, multiplying artifacts. Start from the sharpest original you have, resize downward to the required pixels in one step, and compress once — repeatedly re-saving the same file is what ruins detail."
     }
   ]
+},
+{
+  "slug": "compress-pdf-under-1mb",
+  "title": "How to Compress a PDF Below 1MB Without Losing Readability",
+  "description": "Learn how to compress a PDF under 1MB for email, forms, portals, and uploads while keeping text and important images readable.",
+  "date": "2026-09-20",
+  "readTimeMinutes": 7,
+  "featuredToolRoutes": ["/pdf-compressor"],
+  "intro": "Large PDF files are common when an application form, email attachment, learning portal, or document system sets a strict upload limit. A PDF compressor can reduce file size quickly, but the document still needs to be readable.",
+  "sections": [
+    {
+      "heading": "Why Some PDFs Are Surprisingly Large",
+      "paragraphs": [
+        "PDFs become large because of high-resolution scans, photographs, embedded fonts, duplicated images, or pages exported from design software. Scanned pages are often much larger than text-only pages.",
+        "Before compressing, inspect the document. If it is mostly text, oversized images may be the main cause. If it is a scan, resolution and image noise usually matter most."
+      ],
+      "toolRoutes": ["/pdf-compressor"]
+    },
+    {
+      "heading": "How to Compress a PDF Under 1MB",
+      "paragraphs": [
+        "Start with the original PDF. Use a browser-based PDF compressor, choose a balanced compression level, and export a new copy.",
+        "Open several pages after compression and inspect small text, signatures, tables, and image-heavy pages. For a hard 1MB limit, leave some headroom instead of targeting exactly 1MB."
+      ],
+      "toolRoutes": ["/pdf-compressor"]
+    },
+    {
+      "heading": "When Compression Is Not Enough",
+      "paragraphs": [
+        "If the scanned PDF is still too large, reduce oversized source images or re-scan paper documents at a sensible resolution. Clean scans often compress better than noisy phone photos.",
+        "You can also remove unnecessary pages or export again from the original source."
+      ]
+    }
+  ],
+  "faqs": [
+    {"question":"How do I compress a PDF to under 1MB?","answer":"Use the original PDF with a browser-based PDF compressor, choose balanced compression, export it, and check the final size. If it is still too large, reduce oversized scans or images in the source."},
+    {"question":"Does compressing a PDF make it blurry?","answer":"It can, especially with photographs and scans. Use a balanced setting and inspect image-heavy pages after compression."},
+    {"question":"Why is my scanned PDF still large after compression?","answer":"Scanned pages are stored as large images. High scan resolution, colour noise, and shadows can all increase file size."}
+  ]
+},
+{
+  "slug": "merge-multiple-pdf-files-into-one",
+  "title": "How to Merge Multiple PDF Files Into One Document",
+  "description": "Combine multiple PDF files into one document, put pages in the right order, and create a clean final file without desktop PDF software.",
+  "date": "2026-09-20",
+  "readTimeMinutes": 7,
+  "featuredToolRoutes": ["/pdf-merger"],
+  "intro": "Merging PDFs is useful for application packages, project submissions, invoices, meeting packs, course notes, and archives. Combining related files into one document makes uploading and sharing easier when a portal accepts a single PDF.",
+  "sections": [
+    {
+      "heading": "Prepare the Files Before Merging",
+      "paragraphs": [
+        "Rename files in the intended order, such as 01-cover.pdf, 02-form.pdf, and 03-certificate.pdf. Check orientation, missing pages, and unexpected blank pages before combining them."
+      ]
+    },
+    {
+      "heading": "How to Merge PDFs in the Right Order",
+      "paragraphs": [
+        "Open a PDF merger, add the source files, and arrange them in the exact sequence required by the recipient. Review the list before exporting.",
+        "After export, review the first, middle, and final pages and confirm that every required attachment is present."
+      ],
+      "toolRoutes": ["/pdf-merger"]
+    },
+    {
+      "heading": "Check the Final File",
+      "paragraphs": [
+        "Check the combined file size against the destination portal's limit. If necessary, merge first and then compress the result.",
+        "Use a descriptive filename such as application-supporting-documents.pdf."
+      ],
+      "toolRoutes": ["/pdf-merger","/pdf-compressor"]
+    }
+  ],
+  "faqs": [
+    {"question":"Can I merge several PDFs into one file?","answer":"Yes. A PDF merger combines multiple documents into a single PDF. Arrange the source files in the required order first."},
+    {"question":"Does merging PDFs reduce quality?","answer":"A merger should preserve the source contents. Quality issues are more likely to come from low-resolution scans or additional compression."},
+    {"question":"Can I merge PDFs and then compress the result?","answer":"Yes. Merge first to create one submission document, then compress it if the combined file exceeds an upload-size limit."}
+  ]
+},
+{
+  "slug": "format-json-online-developer-guide",
+  "title": "How to Format and Clean JSON Online: A Developer Guide",
+  "description": "Fix unreadable JSON, find structural errors, and format API responses for debugging, documentation, and development workflows.",
+  "date": "2026-09-20",
+  "readTimeMinutes": 8,
+  "featuredToolRoutes": ["/json-formatter"],
+  "intro": "JSON is easy to exchange between applications and surprisingly hard to read when it arrives as one long line. A JSON formatter turns compact API responses and configuration files into structured, readable data.",
+  "sections": [
+    {
+      "heading": "Why Formatted JSON Is Easier to Debug",
+      "paragraphs": [
+        "Readable indentation makes nested objects, arrays, and key-value pairs visible at a glance. Formatting changes whitespace and line breaks, not the meaning of valid JSON."
+      ],
+      "toolRoutes": ["/json-formatter"]
+    },
+    {
+      "heading": "Common JSON Syntax Errors",
+      "paragraphs": [
+        "Frequent problems include missing commas, unmatched braces or brackets, unquoted property names, single quotes, and trailing commas.",
+        "A useful debugging habit is to reduce the failing payload until the parser accepts the smaller object, then add sections back one at a time."
+      ]
+    },
+    {
+      "heading": "A Practical Formatting Workflow",
+      "paragraphs": [
+        "Copy an API response, configuration object, or webhook payload into a JSON formatter. Inspect nesting, arrays, repeated keys, and unexpectedly large objects.",
+        "Keep a raw sample and a readable version so debugging remains reproducible."
+      ],
+      "toolRoutes": ["/json-formatter"]
+    }
+  ],
+  "faqs": [
+    {"question":"What does a JSON formatter do?","answer":"It adds indentation and line breaks so valid JSON is easier to read without changing the underlying values."},
+    {"question":"Why does my JSON fail even though it looks correct?","answer":"Typical causes are missing commas, mismatched brackets, single quotes, unquoted keys, or trailing commas."},
+    {"question":"Can I format JSON from an API response?","answer":"Yes. Copy a JSON response into a formatter and inspect the objects and arrays, especially when the response is minified."}
+  ]
+},
+{
+  "slug": "compress-images-for-websites-without-quality-loss",
+  "title": "How to Compress Images for Websites Without Making Them Blurry",
+  "description": "Reduce image file sizes for websites while keeping photos and graphics sharp. Learn about dimensions, formats, and practical compression settings.",
+  "date": "2026-09-20",
+  "readTimeMinutes": 8,
+  "featuredToolRoutes": ["/image-compressor"],
+  "intro": "Large images can make a fast website feel slow, especially on mobile connections. A better workflow is to resize images to the dimensions they need, choose a suitable format, and then compress them until the visual difference is difficult to notice.",
+  "sections": [
+    {
+      "heading": "Resize Before Heavy Compression",
+      "paragraphs": [
+        "A photo displayed at 1200 pixels wide does not normally need to be served at 6000 pixels wide. Extra pixels increase file size without improving the displayed image.",
+        "Create the web-ready version from the original so you are not repeatedly resizing an already compressed file."
+      ],
+      "toolRoutes": ["/image-compressor"]
+    },
+    {
+      "heading": "Choose the Right Format",
+      "paragraphs": [
+        "JPEG is common for photographs, PNG is useful for transparency and certain graphics, and WebP is a strong general-purpose web format for many workflows."
+      ]
+    },
+    {
+      "heading": "Find a Useful Compression Level",
+      "paragraphs": [
+        "Start with moderate compression and compare the original against the web-ready copy at its final display size. Inspect text in screenshots, gradients, fine lines, and photographic detail.",
+        "The best result is the smallest file that still looks correct for the page."
+      ],
+      "toolRoutes": ["/image-compressor"]
+    }
+  ],
+  "faqs": [
+    {"question":"How do I compress an image without making it blurry?","answer":"Resize it to the dimensions it actually needs, start with moderate compression, and compare the result at its final display size."},
+    {"question":"What image format is best for websites?","answer":"It depends on the image. JPEG is common for photographs, PNG is useful for transparency, and WebP is a strong general-purpose web format when supported by the workflow."},
+    {"question":"Should I resize an image before compressing it?","answer":"Usually yes. Removing unnecessary pixels reduces the amount of data that needs to be compressed."}
+  ]
+},
+{
+  "slug": "remove-exif-metadata-from-photos-before-sharing",
+  "title": "How to Remove EXIF Metadata From Photos Before Sharing",
+  "description": "Learn what EXIF metadata reveals, why photo files can contain location and device details, and how to remove metadata before sharing an image.",
+  "date": "2026-09-20",
+  "readTimeMinutes": 7,
+  "featuredToolRoutes": ["/remove-image-metadata"],
+  "intro": "A photo can contain more than the pixels you see. EXIF metadata may record camera information, timestamps, orientation, software, and sometimes GPS coordinates. That can be useful for your own library but undesirable when a file leaves your control.",
+  "sections": [
+    {
+      "heading": "What Is EXIF Metadata?",
+      "paragraphs": [
+        "EXIF stands for Exchangeable Image File Format. Cameras and phones can store technical information alongside an image, including device model, capture settings, date, and orientation.",
+        "Some devices can also store location coordinates when location tagging is enabled."
+      ]
+    },
+    {
+      "heading": "Why Remove Metadata Before Sharing?",
+      "paragraphs": [
+        "A shared image may contain information that is not visible in the picture itself. Removing metadata is an extra privacy step, not a substitute for checking the visible image."
+      ]
+    },
+    {
+      "heading": "How to Remove EXIF Data From an Image",
+      "paragraphs": [
+        "Make a copy of the photo you plan to share. Open an image metadata remover, load the copy, remove the metadata, and download the cleaned result. Keep the original if you still need its capture information."
+      ],
+      "toolRoutes": ["/remove-image-metadata"]
+    },
+    {
+      "heading": "Metadata Is Only One Part of Photo Privacy",
+      "paragraphs": [
+        "Removing EXIF does not hide information visible in the image. House numbers, documents, computer screens, reflections, faces, and distinctive locations can reveal context without metadata."
+      ],
+      "toolRoutes": ["/remove-image-metadata"]
+    }
+  ],
+  "faqs": [
+    {"question":"What information can EXIF metadata contain?","answer":"Depending on the device, EXIF can contain camera model, capture date, exposure settings, orientation, editing software, and sometimes GPS coordinates."},
+    {"question":"Does removing EXIF metadata reduce image quality?","answer":"Removing metadata is separate from visual compression. A metadata-cleaning workflow can produce a copy without the hidden fields while preserving the visible picture."},
+    {"question":"Should I remove metadata before posting photos online?","answer":"It can be a sensible privacy step, especially for photos that may contain location or device information. Also inspect the visible image."}
+  ]
 }
 ];
 
