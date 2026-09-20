@@ -4,6 +4,7 @@ import toolFeatures from "@/data/tool-features.json";
 import toolFaqs from "@/data/tool-faqs.json";
 import toolHowtos from "@/data/tool-howtos.json";
 import toolExtraslugs from "@/data/tool-extraslugs.json";
+import { getMonetizationDecision } from "@/data/monetization";
 
 const articlesMap = toolArticles as Record<string, string>;
 const featuresMap = toolFeatures as Record<string, string[]>;
