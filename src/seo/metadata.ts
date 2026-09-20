@@ -13,8 +13,8 @@ import type { Metadata } from "next";
 import { SEO_CONFIG } from "./config";
 import { PageSeoInput, ToolMetadataInput, CategoryMetadataInput } from "./types";
 import { buildCanonicalUrl } from "./canonical";
-import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
 import toolsData from "@/constants/tools.json";
+import { getMonetizationDecision } from "@/data/monetization";
 
 /**
  * High-resolution category OpenGraph previews
@@ -96,7 +96,7 @@ export function formatSeoDescription(rawDesc: string, toolName?: string): string
 
   // If shorter than 140 chars, enrich with privacy and browser sandbox guarantee
   if (desc.length < 140) {
-    const privacyAdd = " 100% private browser processing — zero server uploads on SopKit.";
+    const privacyAdd = " Fast, browser-based processing on SopKit.";
     if (desc.length + privacyAdd.length <= 165) {
       return `${desc}${privacyAdd}`;
     }
@@ -167,7 +167,6 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
 
   const registry = getToolRegistry();
   const toolFromRegistry = registry.byRoute.get(cleanRoute) || registry.byId.get(toolId);
-  const manualContent = MANUAL_TOOL_CONTENT[toolId];
 
   // 1. Resolve Title (Priority: Registry seoTitle -> Pattern -> Fallback)
   let baseTitle = "";
@@ -181,14 +180,12 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
 
   // 2. Resolve Description (Priority: MANUAL_TOOL_CONTENT -> Registry seoDescription -> Props -> Dynamic fallback)
   let baseDesc = "";
-  if (manualContent?.seoDescription) {
-    baseDesc = manualContent.seoDescription;
-  } else if (toolFromRegistry?.seoDescription) {
+  if (toolFromRegistry?.seoDescription) {
     baseDesc = toolFromRegistry.seoDescription;
   } else if (props.description && props.description.length >= 75) {
     baseDesc = props.description;
   } else {
-    baseDesc = `Free ${cleanName} online: process and export files directly in your browser sandbox. 100% private — zero server uploads, no data storage, instant and secure on SopKit.`;
+    baseDesc = `Free ${cleanName} online: use the browser-based workflow on SopKit with clear processing and privacy information.`;
   }
   const description = formatSeoDescription(baseDesc, cleanName);
 
@@ -197,16 +194,17 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
 
   // 4. Resolve Keywords (Tailored long-tail privacy queries)
   const category = props.category || toolFromRegistry?.category || "utility";
+  const executionType = toolFromRegistry?.executionType || "client";
+  const privacyKeywords =
+    executionType === "external" || executionType === "server"
+      ? ["browser-based", "privacy-friendly"]
+      : ["client-side sandbox", "browser-based", "privacy-friendly", "no upload", "secure local"];
   const defaultKeywords = [
     cleanName,
     `free ${cleanName.toLowerCase()} online`,
     `${cleanName.toLowerCase()} tool`,
     `${category} tools`,
-    "client-side sandbox",
-    "browser-based",
-    "privacy-friendly",
-    "no upload",
-    "secure local",
+    ...privacyKeywords,
     "free online",
     "SopKit",
   ];
@@ -223,6 +221,11 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
 
   // 5. Resolve OpenGraph Image
   const ogImageUrl = resolveOgImage(category, props.ogImage);
+
+  const monetization = getMonetizationDecision({
+    slug: toolFromRegistry?.id || toolId,
+    category,
+  });
 
   // 6. Assemble complete Next.js Metadata
   return {
@@ -257,7 +260,7 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
       creator: SEO_CONFIG.twitterHandle,
       site: SEO_CONFIG.twitterHandle,
     },
-    robots: (props.noindex || props.noIndex)
+    robots: (props.noindex || props.noIndex || !monetization.indexable)
       ? { index: false, follow: false }
       : {
           index: true,
