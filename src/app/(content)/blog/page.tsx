@@ -1,6 +1,7 @@
 import { SITE_URL } from "@/constants/config";
 import Link from "next/link";
-import { blogs } from "@/constants/blog-data";
+import { redirect } from "next/navigation";
+import { getSortedBlogs } from "@/lib/blog";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { Fragment, Suspense } from "react";
 import { Clock, Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
@@ -18,9 +19,7 @@ function getPageNumber(value?: string) {
 
 export async function generateMetadata({ searchParams }: BlogPageProps) {
 	const params = await searchParams;
-	const sortedArticles = [...blogs].sort(
-		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-	);
+	const sortedArticles = getSortedBlogs();
 	const totalPages = Math.max(1, Math.ceil(sortedArticles.length / PAGE_SIZE));
 	const requestedPage = getPageNumber(params.page);
 	const currentPage = Math.min(Math.max(requestedPage, 1), totalPages);
@@ -70,6 +69,9 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 	const totalPages = Math.max(1, Math.ceil(totalArticles / PAGE_SIZE));
 	const requestedPage = getPageNumber(params.page);
 	const currentPage = Math.min(Math.max(requestedPage, 1), totalPages);
+	if (requestedPage !== currentPage) {
+		redirect(currentPage === 1 ? "/blog" : `/blog?page=${currentPage}`);
+	}
 	const startIndex = (currentPage - 1) * PAGE_SIZE;
 	const pageArticles = sortedArticles.slice(startIndex, startIndex + PAGE_SIZE);
 	const pageUrl = currentPage === 1 ? `${SITE_URL}/blog/` : `${SITE_URL}/blog?page=${currentPage}`;
