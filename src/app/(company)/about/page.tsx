@@ -32,7 +32,7 @@ export default async function AboutPage() {
 	const tool = {
 		id: "about",
 		name: "About SopKit",
-		description: `SopKit is the internet's most trusted, browser-native utility platform. We offer ${SITE_CONFIG.toolCountString} free tools for PDF, image, text, and code—processed entirely inside your browser sandbox.`,
+		description: `SopKit is a privacy-focused, browser-first utility platform. We offer ${SITE_CONFIG.toolCountString} free tools for PDF, image, text, and code—processed entirely inside your browser sandbox.`,
 		route: "/about",
 		category: "company",
 	};
@@ -97,15 +97,15 @@ export default async function AboutPage() {
 									<div className="flex gap-3 p-5 border border-border/30 bg-muted/10 rounded-2xl">
 										<Lock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
 										<div>
-											<h3 className="font-bold text-sm text-foreground">Absolute Data Security</h3>
-											<p className="text-xs text-muted-foreground mt-1">Our sandboxed client-side setup is fully compliant with strict corporate privacy and compliance guidelines (HIPAA, SOC2, GDPR).</p>
+											<h3 className="font-bold text-sm text-foreground">Browser-First Processing</h3>
+											<p className="text-xs text-muted-foreground mt-1">For tools marked as local processing, the core operation runs in your browser. Tools that use external services identify that processing model on the page.</p>
 										</div>
 									</div>
 									<div className="flex gap-3 p-5 border border-border/30 bg-muted/10 rounded-2xl">
 										<Zap className="h-5 w-5 text-primary shrink-0 mt-0.5" />
 										<div>
-											<h3 className="font-bold text-sm text-foreground">Offline Ready</h3>
-											<p className="text-xs text-muted-foreground mt-1">SopKit tools continue working even when you are disconnected from the internet. Simply load the page and go.</p>
+											<h3 className="font-bold text-sm text-foreground">Efficient Local Processing</h3>
+											<p className="text-xs text-muted-foreground mt-1">Some local tools can continue processing after the required page assets have loaded, but availability depends on the browser and the individual tool.</p>
 										</div>
 									</div>
 									<div className="flex gap-3 p-5 border border-border/30 bg-muted/10 rounded-2xl">
