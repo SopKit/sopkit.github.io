@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata: Metadata = {
-	title: "SopKit Pricing — 100% Free Client-Side Tools & API Packages",
+	title: "SopKit Pricing — Free Tools & Developer Packages",
 	description: "Discover SopKit's plans. Access hundreds of online developer and file utilities completely free, or request custom API solutions.",
 	alternates: {
 		canonical: `${SITE_CONFIG.siteUrl}/pricing/`,
@@ -29,7 +29,7 @@ export default function PricingPage() {
 				"name": "Are the online utilities really free?",
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": "Yes, 100% of the tools listed on SopKit are completely free to use, processed directly in your web browser with zero server uploads."
+					"text": "Core SopKit utilities are free to use. Processing differs by tool: many local utilities run in your browser, while some workflows use external or network services."
 				}
 			},
 			{
@@ -116,7 +116,7 @@ export default function PricingPage() {
 										</li>
 										<li className="flex items-center gap-2">
 											<Check className="h-4 w-4 text-primary shrink-0" />
-											<span>100% client-side privacy-first processing</span>
+											<span>Browser-first processing where supported</span>
 										</li>
 										<li className="flex items-center gap-2">
 											<Check className="h-4 w-4 text-primary shrink-0" />
