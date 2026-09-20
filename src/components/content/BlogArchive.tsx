@@ -7,11 +7,11 @@ import { Clock, Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-r
 
 const PAGE_SIZE = 12;
 
-export default function BlogArchive({ page }: { page: number }) {
+export default function BlogArchive({ currentPage }: { currentPage: number }) {
 	const sortedArticles = getSortedBlogs();
 	const totalArticles = sortedArticles.length;
 	const totalPages = Math.max(1, Math.ceil(totalArticles / PAGE_SIZE));
-	const page = Math.min(Math.max(page, 1), totalPages);
+	const page = Math.min(Math.max(currentPage, 1), totalPages);
 	const startIndex = (page - 1) * PAGE_SIZE;
 	const pageArticles = sortedArticles.slice(startIndex, startIndex + PAGE_SIZE);
 	const pageUrl = page === 1 ? `${SITE_URL}/blog/` : `${SITE_URL}/blog/page/${page}/`;
@@ -172,14 +172,14 @@ export default function BlogArchive({ page }: { page: number }) {
 										{hasGap && <span className="px-1 text-xs text-muted-foreground">…</span>}
 										<Link
 											href={getPageHref(number)}
-											aria-current={page === page ? "page" : undefined}
+											aria-current={number === page ? "page" : undefined}
 											className={`inline-flex h-9 min-w-9 items-center justify-center rounded-full border px-3 text-xs font-bold transition-colors ${
 												page === page
 													? "border-primary bg-primary text-primary-foreground"
 													: "border-border text-muted-foreground hover:border-foreground/30 hover:text-foreground"
 											}`}
 										>
-											{page}
+											{number}
 										</Link>
 									</Fragment>
 								);
