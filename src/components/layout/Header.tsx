@@ -8,6 +8,7 @@ import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { PillButton } from "@/components/ui/pill-button";
 import { Container } from "@/components/layout/Container";
 import { STATIC_ROUTES } from "@/lib/tools";
+import { GITHUB_REPO_URL } from "@/constants/config";
 
 export function Header() {
 	const pathname = usePathname();
@@ -26,7 +27,6 @@ export function Header() {
 		return () => window.removeEventListener("scroll", onScroll);
 	}, []);
 
-	// Global shortcut Cmd+K or Ctrl+K
 	const handleSearchTrigger = () => {
 		const searchInput = document.querySelector<HTMLInputElement>("input[aria-label='Search all tools']");
 		if (searchInput) {
@@ -56,7 +56,6 @@ export function Header() {
 		>
 			<Container size="xl">
 				<div className="flex items-center justify-between gap-4">
-					{/* Left: Brand Identity */}
 					<Link
 						href={STATIC_ROUTES.HOME}
 						className="flex items-center gap-2.5 group no-underline text-foreground"
@@ -75,7 +74,6 @@ export function Header() {
 						<span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-accent" />
 					</Link>
 
-					{/* Center: Floating Capsule Navigation (Desktop) */}
 					<nav className="hidden md:flex items-center gap-1 px-4 py-1.5 rounded-full bg-surface-muted/90 dark:bg-card/70 border border-border/80 shadow-sm backdrop-blur-md">
 						{navItems.map((item) => {
 							const isActive = pathname === item.href;
@@ -93,11 +91,18 @@ export function Header() {
 								</Link>
 							);
 						})}
+						<a
+							href={GITHUB_REPO_URL}
+							target="_blank"
+							rel="noopener noreferrer"
+							title="Contribute to SopKit on GitHub"
+							className="px-3.5 py-1 text-xs font-semibold rounded-full transition-all duration-150 no-underline text-muted-foreground hover:text-foreground hover:bg-background/80"
+						>
+							Contribute
+						</a>
 					</nav>
 
-					{/* Right: Actions (Search, Theme, Pill CTA) */}
 					<div className="flex items-center gap-2.5">
-						{/* Search Pill Trigger */}
 						<button
 							type="button"
 							onClick={handleSearchTrigger}
@@ -122,7 +127,6 @@ export function Header() {
 							Explore Tools
 						</PillButton>
 
-						{/* Mobile Hamburger Toggle */}
 						<button
 							type="button"
 							onClick={() => setMobileOpen(!mobileOpen)}
@@ -134,7 +138,6 @@ export function Header() {
 					</div>
 				</div>
 
-				{/* Mobile Drawer */}
 				{mobileOpen && (
 					<div className="md:hidden mt-3 p-4 rounded-2xl bg-card border border-border shadow-xl space-y-3 animate-fade-in">
 						<div className="flex flex-col gap-1">
@@ -148,6 +151,15 @@ export function Header() {
 									{item.label}
 								</Link>
 							))}
+							<a
+								href={GITHUB_REPO_URL}
+								target="_blank"
+								rel="noopener noreferrer"
+								onClick={() => setMobileOpen(false)}
+								className="px-3 py-2 text-sm font-semibold rounded-xl text-foreground hover:bg-muted transition-colors no-underline"
+							>
+								Contribute on GitHub
+							</a>
 						</div>
 						<div className="pt-2 border-t border-border flex flex-col gap-2">
 							<PillButton
