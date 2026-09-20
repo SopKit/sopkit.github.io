@@ -176,7 +176,6 @@ export default function PdfMerger() {
 
   return (
     <div className="w-full">
-      <div className="overflow-hidden rounded-[1.25rem] border border-border/60 bg-background/35 shadow-[0_18px_60px_-35px_hsl(var(--foreground)/0.35)]">
         <div className="flex items-center gap-3 border-b border-border/40 bg-muted/10 px-4 py-3 sm:px-5">
           <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 ring-1 ring-emerald-500/15">
             <ShieldCheck className="h-4 w-4 text-emerald-500" />
@@ -189,7 +188,7 @@ export default function PdfMerger() {
           </div>
         </div>
 
-        <div className="p-4 sm:p-5 lg:p-6">
+        <div className="px-0 py-4 sm:py-5 lg:py-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <div className="flex items-center gap-2.5">
