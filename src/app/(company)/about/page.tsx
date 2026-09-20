@@ -6,14 +6,14 @@ import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
 	title: "About SopKit — Privacy-First Free Online Tools Platform",
-	description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup, no uploads, 100% client-side processing for images, PDFs, videos, and more.`,
+	description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup for core utilities, with processing models clearly disclosed on individual tool pages.`,
 	keywords: "about SopKit, client-side tools, private online utility, no upload pdf editor, local image converter, browser sandbox tools, secure developer tools, open source browser utilities",
 	alternates: {
 		canonical: `${SITE_CONFIG.siteUrl}/about/`,
 	},
 	openGraph: {
 		title: "About SopKit — Privacy-First Free Online Tools Platform",
-		description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup, no uploads, 100% client-side processing.`,
+		description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup for core utilities, with local processing used where supported.`,
 		url: `${SITE_CONFIG.siteUrl}/about/`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -70,13 +70,13 @@ export default async function AboutPage() {
 							<div className="grid md:grid-cols-2 gap-4 text-center">
 								<div className="p-6 border border-border/30 bg-muted/10 rounded-2xl space-y-1">
 									<Lock className="h-8 w-8 text-emerald-500 mx-auto mb-2" />
-									<div className="text-2xl font-black">100% Client-Side</div>
+									<div className="text-2xl font-black">Browser-First</div>
 									<div className="text-xs text-muted-foreground">Processed inside your browser memory sandbox</div>
 								</div>
 								<div className="p-6 border border-border/30 bg-muted/10 rounded-2xl space-y-1">
 									<Zap className="h-8 w-8 text-primary mx-auto mb-2" />
 									<div className="text-2xl font-black">Instant Speed</div>
-									<div className="text-xs text-muted-foreground">Zero upload queue, zero network round-trip delays</div>
+									<div className="text-xs text-muted-foreground">Local processing where the tool supports it</div>
 								</div>
 							</div>
 
@@ -85,7 +85,7 @@ export default async function AboutPage() {
 									<ShieldAlert className="h-5 w-5 text-primary" /> Our Core Differentiator
 								</h2>
 								<p className="text-sm leading-relaxed text-muted-foreground">
-									Unlike conventional cloud-based utility platforms (like iLovePDF, Smallpdf, or CloudConvert) that require transferring your document files onto remote servers, <strong className="text-foreground">SopKit processes your data locally in your browser memory space</strong>. By utilizing modern web tech like <strong className="text-foreground">WebAssembly, Canvas contexts, and HTML5 file APIs</strong>, we compile and optimize your documents locally. Your sensitive information never touches our servers.
+									SopKit includes tools that process inputs locally in the browser as well as workflows that use network or external services. For a local-processing tool, modern browser APIs such as WebAssembly, Canvas, and the File API can perform the operation without uploading the working file to SopKit servers. The individual tool page is the source of truth for its processing model.
 								</p>
 							</section>
 
