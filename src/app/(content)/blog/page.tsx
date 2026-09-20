@@ -62,9 +62,7 @@ export async function generateMetadata({ searchParams }: BlogPageProps) {
 
 export default async function BlogPage({ searchParams }: BlogPageProps) {
 	const params = await searchParams;
-	const sortedArticles = [...blogs].sort(
-		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-	);
+	const sortedArticles = getSortedBlogs();
 	const totalArticles = sortedArticles.length;
 	const totalPages = Math.max(1, Math.ceil(totalArticles / PAGE_SIZE));
 	const requestedPage = getPageNumber(params.page);
