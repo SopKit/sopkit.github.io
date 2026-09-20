@@ -48,7 +48,7 @@ export function isAnalyticsAllowed(): boolean {
 	if (typeof window === "undefined") return false;
 	try {
 		if (window.__sopkit_analytics_disabled) return false;
-		if (localStorage.getItem("sopkit_consent_analytics") === "denied") return false;
+		if (localStorage.getItem("sopkit_consent_analytics") !== "granted") return false;
 	} catch {
 		// Ignore storage errors in restrictive/incognito contexts
 	}
