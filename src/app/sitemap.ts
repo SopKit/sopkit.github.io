@@ -102,7 +102,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		.map(({ _indexable, ...tool }) => tool);
 
 	// Blog URLs
+	const blogTotalPages = Math.max(1, Math.ceil(blogs.length / 12));
+	const blogArchivePages: MetadataRoute.Sitemap = Array.from(
+		{ length: Math.max(0, blogTotalPages - 1) },
+		(_, index) => ({
+			url: `${SITE_URL}/blog/page/${index + 2}`,
+			lastModified: now,
+			changeFrequency: "daily" as const,
+			priority: 0.75,
+		}),
+	);
+
 	const blogPages: MetadataRoute.Sitemap = [
+		...blogArchivePages,
 		...blogs.map((article) => ({
 			url: `${SITE_URL}/blog/${article.slug}`,
 			lastModified: new Date(article.date),
