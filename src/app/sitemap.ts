@@ -4,6 +4,7 @@ import { blogs } from "@/constants/blog-data";
 import { SITE_CONFIG, SITE_URL } from "@/constants/config";
 import { seoOpportunities } from "@/data/seo-opportunities";
 import { intentData } from "@/lib/intent-data";
+import { getMonetizationDecision } from "@/data/monetization";
 
 export const dynamic = 'force-static';
 
@@ -16,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	const staticPages: MetadataRoute.Sitemap = [
 		{ url: `${SITE_URL}/`, lastModified: now, changeFrequency: "daily", priority: 1.0 },
 		{ url: `${SITE_URL}/about`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
+		{ url: `${SITE_URL}/editorial-policy`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${SITE_URL}/contact`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/privacy`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/terms`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
@@ -94,7 +96,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			lastModified: tool.popular ? now : siteUpdated,
 			changeFrequency: "weekly" as const,
 			priority: tool.popular ? 0.9 : 0.75,
-		}));
+			_indexable: getMonetizationDecision({ slug: tool.id, category: tool.category }).indexable,
+		}))
+		.filter((tool) => tool._indexable)
+		.map(({ _indexable, ...tool }) => tool);
 
 	// Blog URLs
 	const blogPages: MetadataRoute.Sitemap = [
@@ -113,12 +118,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		priority: opportunity.priority === 1 ? 0.9 : opportunity.priority === 2 ? 0.86 : 0.84,
 	}));
 
-	const intentPages: MetadataRoute.Sitemap = Object.keys(intentData).map((slug) => ({
-		url: `${SITE_URL}/${slug}`,
-		lastModified: now,
-		changeFrequency: "weekly" as const,
-		priority: 0.85,
-	}));
+	const intentPages: MetadataRoute.Sitemap = Object.keys(intentData)
+		.filter((slug) => getMonetizationDecision({ slug }).indexable)
+		.map((slug) => ({
+			url: `${SITE_URL}/${slug}`,
+			lastModified: now,
+			changeFrequency: "weekly" as const,
+			priority: 0.85,
+		}));
 
 	// Keyword-permutation slugs (tool-extraslugs.json, ~9.2k URLs) are
 	// deliberately EXCLUDED from the sitemap:
