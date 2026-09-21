@@ -123,7 +123,8 @@ function getToolActionSubject(cleanName: string, category?: string): { action: s
   const lower = cleanName.toLowerCase();
   const cat = (category || "").toLowerCase();
 
-  if (cat === "extraction" || lower.includes("extractor")) return { action: "Extract & Clean Data", subject: "Instantly" };\n  if (cat === "pdf" || lower.includes("pdf")) {
+  if (cat === "extraction" || lower.includes("extractor")) return { action: "Extract & Clean Data", subject: "Instantly" };
+  if (cat === "pdf" || lower.includes("pdf")) {
     if (lower.includes("compress")) return { action: "Reduce File Size", subject: "Privately" };
     if (lower.includes("merge")) return { action: "Combine Documents", subject: "Locally" };
     if (lower.includes("split")) return { action: "Extract Pages", subject: "Instantly" };
