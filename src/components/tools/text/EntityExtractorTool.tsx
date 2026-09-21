@@ -40,16 +40,16 @@ export default function EntityExtractorTool({ mode }: { mode: Mode }) {
   const extract = () => {
     let result: Row[] = [];
     if (mode === "email") {
-      result = (input.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}/gi) || []).map((value) => ({ value: value.toLowerCase().replace(/[),.;:]+$/g, ""), detail: "@" + value.split("@")[1] }));
+      result = (input.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi) || []).map((value) => ({ value: value.toLowerCase().replace(/[),.;:]+$/g, ""), detail: "@" + value.split("@")[1] }));
     } else if (mode === "phone") {
-      result = (input.match(/(?:\\+?\\d[\\d .()\\-]{7,}\\d)/g) || []).map((value) => value.trim().replace(/[),.;:]+$/g, "")).filter((value) => value.replace(/\\D/g, "").length >= 8).map((value) => ({ value, detail: value.replace(/\\D/g, "").length + " digits" }));
+      result = (input.match(/(?:\+?\d[\d .()\-]{7,}\d)/g) || []).map((value) => value.trim().replace(/[),.;:]+$/g, "")).filter((value) => value.replace(/\D/g, "").length >= 8).map((value) => ({ value, detail: value.replace(/\D/g, "").length + " digits" }));
     } else if (mode === "ip") {
-      const v4 = input.match(/\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b/g) || [];
-      const v6 = input.match(/\\b(?:[a-f0-9]{1,4}:){2,7}[a-f0-9]{1,4}\\b/gi) || [];
+      const v4 = input.match(/\b(?:\d{1,3}\.){3}\d{1,3}\b/g) || [];
+      const v6 = input.match(/\b(?:[a-f0-9]{1,4}:){2,7}[a-f0-9]{1,4}\b/gi) || [];
       result = [...v4.map((value) => ({ value, detail: value.split(".").every((x) => Number(x) <= 255) ? "IPv4" : "IPv4-like" })), ...v6.map((value) => ({ value, detail: "IPv6" }))];
     } else {
-      const urls = input.match(/(?:https?:\\/\\/|www\\.)[^\\s<>"']+/gi) || [];
-      const emails = input.match(/[A-Z0-9._%+-]+@(?:[A-Z0-9-]+\\.)+[A-Z]{2,}/gi) || [];
+      const urls = input.match(/(?:https?:\/\/|www\.)[^\s<>"']+/gi) || [];
+      const emails = input.match(/[A-Z0-9._%+-]+@(?:[A-Z0-9-]+\.)+[A-Z]{2,}/gi) || [];
       for (const raw of urls) { try { const value = new URL(raw.startsWith("www.") ? "https://" + raw : raw).hostname.replace(/^www\\./, "").toLowerCase(); result.push({ value, detail: "URL hostname" }); } catch {} }
       for (const raw of emails) result.push({ value: raw.split("@").pop()!.toLowerCase(), detail: "email domain" });
     }
@@ -60,7 +60,7 @@ export default function EntityExtractorTool({ mode }: { mode: Mode }) {
   };
 
   const copy = async () => {
-    await navigator.clipboard.writeText(rows.map((r) => r.value).join("\\n"));
+    await navigator.clipboard.writeText(rows.map((r) => r.value).join("\n"));
     setCopied(true);
     toast.success("Copied");
     window.setTimeout(() => setCopied(false), 1500);
@@ -71,7 +71,7 @@ export default function EntityExtractorTool({ mode }: { mode: Mode }) {
 
   const exportRows = (kind: "txt" | "csv" | "json") => {
     if (!rows.length) return;
-    const content = kind === "txt" ? rows.map((r) => r.value).join("\\n") : kind === "json" ? JSON.stringify(rows, null, 2) : ["value,detail", ...rows.map((r) => "\"" + r.value.replace(/"/g, "\"\"") + "\",\"" + r.detail.replace(/"/g, "\"\"") + "\"")].join("\\n");
+    const content = kind === "txt" ? rows.map((r) => r.value).join("\n") : kind === "json" ? JSON.stringify(rows, null, 2) : ["value,detail", ...rows.map((r) => "\"" + r.value.replace(/"/g, "\"\"") + "\",\"" + r.detail.replace(/"/g, "\"\"") + "\"")].join("\n");
     const href = URL.createObjectURL(new Blob([content], { type: kind === "json" ? "application/json" : kind === "csv" ? "text/csv" : "text/plain" }));
     const a = document.createElement("a"); a.href = href; a.download = mode + "-results." + kind; a.click(); URL.revokeObjectURL(href);
   };
