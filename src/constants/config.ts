@@ -5,7 +5,7 @@ export const SITE_URL = "https://sopkit.space";
 export const SITE_DOMAIN = "sopkit.space";
 export const CONTACT_EMAIL = "shaswatraj3@gmail.com";
 export const COMPANY_OR_OWNER_NAME = "SopKit";
-export const LAST_UPDATED = "2026-09-20";
+export const LAST_UPDATED = "2026-09-21";
 
 const allTools = Object.values(toolsData.categories || {}).flatMap(
 	(category: any) => category?.tools || [],

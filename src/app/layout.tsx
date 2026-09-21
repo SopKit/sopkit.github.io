@@ -97,7 +97,7 @@ export const metadata: Metadata = {
 		description: "Free online tools for image, PDF, video, audio, SEO, and developer workflows. Fast browser-sandboxed utilities with transparent processing.",
 		url: `${SITE_URL}/`,
 		siteName: "SopKit",
-		images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: "SopKit — 600+ Free Online Tools" }],
+		images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: `SopKit — ${TOOL_COUNT_STRING} Free Online Tools` }],
 		locale: "en_US",
 		type: "website",
 	},
@@ -182,7 +182,7 @@ export default function RootLayout({
 				seo: "/seo-tools",
 				text: "/text-tools",
 				developer: "/developer-tools",
-				utilities: "/other-tools",
+				utilities: "/other-tools",\n\t\t\t\textraction: "/extraction-tools",
 				generators: "/generators",
 				calculators: "/calculators",
 			};

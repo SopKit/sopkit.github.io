@@ -343,7 +343,26 @@ const JWTDecoderTool = dynamic(() => import("@/components/tools/developer/JWTDec
 const CaseConverter = dynamic(() => import("@/components/tools/text/CaseConverter"), { ssr: false });
 const ApiKeyTester = dynamic(() => import("@/components/tools/developer/ApiKeyTester"), { ssr: false });
 
+const URLExtractorTool = dynamic(() => import("@/components/tools/text/URLExtractorTool"), { ssr: false });
+const EntityExtractorTool = dynamic(() => import("@/components/tools/text/EntityExtractorTool"), { ssr: false });
+const HtmlExtractorTool = dynamic(() => import("@/components/tools/text/HtmlExtractorTool"), { ssr: false });
+const JsonPathExtractorTool = dynamic(() => import("@/components/tools/developer/JsonPathExtractorTool"), { ssr: false });
+const RegexExtractorTool = dynamic(() => import("@/components/tools/developer/RegexExtractorTool"), { ssr: false });
+const CsvColumnExtractorTool = dynamic(() => import("@/components/tools/developer/CsvColumnExtractorTool"), { ssr: false });
+
 export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentType<any>; props: any }> = {
+    "url-extractor": { component: URLExtractorTool, props: {} },
+    "email-extractor": { component: EntityExtractorTool, props: { mode: "email" } },
+    "phone-number-extractor": { component: EntityExtractorTool, props: { mode: "phone" } },
+    "ip-address-extractor": { component: EntityExtractorTool, props: { mode: "ip" } },
+    "domain-extractor": { component: EntityExtractorTool, props: { mode: "domain" } },
+    "html-link-extractor": { component: HtmlExtractorTool, props: { mode: "link" } },
+    "html-image-extractor": { component: HtmlExtractorTool, props: { mode: "image" } },
+    "html-meta-extractor": { component: HtmlExtractorTool, props: { mode: "meta" } },
+    "json-path-extractor": { component: JsonPathExtractorTool, props: {} },
+    "regex-extractor": { component: RegexExtractorTool, props: {} },
+    "csv-column-extractor": { component: CsvColumnExtractorTool, props: {} },
+
     "domain-name-generator": { component: WebTools, props: { defaultTab: "domain" } },
     "website-cost-calculator": { component: WebTools, props: { defaultTab: "cost" } },
     "seo-title-meta-description-generator": { component: WebTools, props: { defaultTab: "seo" } },

@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "11.2",
-    "lastUpdated": "2026-08-26",
-    "totalTools": 626,
-    "totalCategories": 19
+    "lastUpdated": "2026-09-21",
+    "totalTools": 640,
+    "totalCategories": 20
   },
   "categories": {
     "generators": {
@@ -5912,6 +5912,113 @@
           "popular": false,
           "seoTitle": "Anonymization Report Generator — GDPR",
           "seoDescription": "Document anonymization methods and re-identification risk for audits. Compliance proof — free, no signup."
+        }
+      ]
+    },
+    "extraction": {
+      "name": "Extraction Tools",
+      "slug": "extraction-tools",
+      "icon": "Search",
+      "description": "Extract structured data from text, HTML, JSON, regex, and CSV",
+      "tools": [
+        {
+          "id": "url-extractor",
+          "name": "URL Extractor",
+          "description": "Extract URLs from plain text, Markdown, logs, source snippets, and copied content. Normalize links, validate them, remove duplicates and optionally strip tracking parameters locally in your browser.",
+          "route": "/url-extractor",
+          "popular": true,
+          "seoTitle": "URL Extractor — Extract & Clean Links Online",
+          "seoDescription": "Extract URLs from text, Markdown, logs and HTML snippets. Normalize, deduplicate, remove tracking parameters and export clean links free."
+        },
+        {
+          "id": "email-extractor",
+          "name": "Email Extractor",
+          "description": "Extract email addresses from pasted text, contact lists, HTML, Markdown, and documents. Normalize, deduplicate, group by domain, and export clean results locally.",
+          "route": "/email-extractor",
+          "popular": true,
+          "seoTitle": "Email Extractor — Find Email Addresses Online",
+          "seoDescription": "Extract email addresses from text and documents locally. Normalize, deduplicate, group by domain and export clean email lists free."
+        },
+        {
+          "id": "phone-number-extractor",
+          "name": "Phone Number Extractor",
+          "description": "Extract phone-number-like sequences from notes, logs, contact lists, and copied text. Preserve source formatting while reporting digit counts and exporting results.",
+          "route": "/phone-number-extractor",
+          "popular": false,
+          "seoTitle": "Phone Number Extractor — Find Numbers in Text",
+          "seoDescription": "Extract phone-number-like values from text, notes and contact lists. Keep formatting, deduplicate results and export them locally for free."
+        },
+        {
+          "id": "ip-address-extractor",
+          "name": "IP Address Extractor",
+          "description": "Extract IPv4 and IPv6 addresses from server logs, headers, diagnostics, and text. Classify matches and export a compact network inventory locally.",
+          "route": "/ip-address-extractor",
+          "popular": false,
+          "seoTitle": "IP Address Extractor — Extract IPv4 & IPv6",
+          "seoDescription": "Extract IPv4 and IPv6 addresses from logs and text. Classify matches, deduplicate results and export a clean IP inventory free."
+        },
+        {
+          "id": "domain-extractor",
+          "name": "Domain Extractor",
+          "description": "Extract hostnames from URLs and email addresses, remove common www prefixes, deduplicate domains, sort them, and export a clean domain inventory.",
+          "route": "/domain-extractor",
+          "popular": true,
+          "seoTitle": "Domain Extractor — Extract Domains from URLs",
+          "seoDescription": "Extract domains from URLs and email addresses. Normalize hostnames, remove www, deduplicate and export a clean domain list free."
+        },
+        {
+          "id": "html-link-extractor",
+          "name": "HTML Link Extractor",
+          "description": "Parse raw HTML and extract anchor URLs, visible text, rel attributes, target values, and optionally resolved relative links using a base URL.",
+          "route": "/html-link-extractor",
+          "popular": true,
+          "seoTitle": "HTML Link Extractor — Extract Links from HTML",
+          "seoDescription": "Extract href links, anchor text, rel and target values from HTML. Resolve relative URLs with a base URL and export results locally free."
+        },
+        {
+          "id": "html-image-extractor",
+          "name": "HTML Image Extractor",
+          "description": "Extract image URLs from HTML img tags, srcset, picture sources, Open Graph image tags, and Twitter image metadata for audits and research.",
+          "route": "/html-image-extractor",
+          "popular": true,
+          "seoTitle": "HTML Image Extractor — Extract Image URLs",
+          "seoDescription": "Extract image URLs from HTML, srcset, Open Graph and Twitter metadata. Deduplicate image sources and export them locally for free."
+        },
+        {
+          "id": "html-meta-extractor",
+          "name": "HTML Metadata Extractor",
+          "description": "Inspect HTML title, description, canonical, robots, Open Graph, Twitter cards, favicon, language, theme color, and heading content in a structured list.",
+          "route": "/html-meta-extractor",
+          "popular": true,
+          "seoTitle": "HTML Metadata Extractor — Inspect Page SEO Data",
+          "seoDescription": "Extract title, meta description, canonical, robots, Open Graph, Twitter and headings from HTML source for fast SEO analysis."
+        },
+        {
+          "id": "json-path-extractor",
+          "name": "JSONPath Extractor",
+          "description": "Query nested JSON with property selectors, array indexes, wildcards, recursive descent, unions, slices, and simple comparison filters. Copy matching values and paths.",
+          "route": "/json-path-extractor",
+          "popular": true,
+          "seoTitle": "JSONPath Extractor — Query & Extract JSON Data",
+          "seoDescription": "Query nested JSON with JSONPath selectors, arrays, wildcards, slices and filters. Extract matching values and paths free in your browser."
+        },
+        {
+          "id": "regex-extractor",
+          "name": "Regex Extractor",
+          "description": "Run custom regular expressions against text, inspect capture groups and character positions, use common extraction presets, and export structured matches.",
+          "route": "/regex-extractor",
+          "popular": true,
+          "seoTitle": "Regex Extractor — Extract Matches & Capture Groups",
+          "seoDescription": "Extract regex matches, capture groups and positions from text. Use email, URL, phone and IP presets and export structured results free."
+        },
+        {
+          "id": "csv-column-extractor",
+          "name": "CSV Column Extractor",
+          "description": "Load CSV locally, preview headers, choose only the columns you need, remove duplicate rows, sort records, and export clean CSV data.",
+          "route": "/csv-column-extractor",
+          "popular": false,
+          "seoTitle": "CSV Column Extractor — Select & Export Columns",
+          "seoDescription": "Extract selected CSV columns in your browser. Remove duplicates, sort rows and export a clean CSV without uploading your data."
         }
       ]
     }

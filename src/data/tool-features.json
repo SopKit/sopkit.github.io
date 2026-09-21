@@ -591,5 +591,71 @@
   "spam-score-checker": [],
   "consent-management-generator": [],
   "breach-notification-generator": [],
-  "data-anonymization-report-generator": []
+  "data-anonymization-report-generator": [],
+  "url-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ],
+  "email-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ],
+  "phone-number-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ],
+  "ip-address-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ],
+  "domain-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ],
+  "html-link-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ],
+  "html-image-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ],
+  "html-meta-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ],
+  "json-path-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ],
+  "regex-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ],
+  "csv-column-extractor": [
+    "Runs locally in the browser for this extraction workflow.",
+    "Deduplicate and sort results before export.",
+    "Copy values or export structured data.",
+    "Designed for developers, researchers, SEO audits, and data cleanup."
+  ]
 }
