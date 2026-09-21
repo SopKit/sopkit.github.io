@@ -182,7 +182,8 @@ export default function RootLayout({
 				seo: "/seo-tools",
 				text: "/text-tools",
 				developer: "/developer-tools",
-				utilities: "/other-tools",\n\t\t\t\textraction: "/extraction-tools",
+				utilities: "/other-tools",
+				extraction: "/extraction-tools",
 				generators: "/generators",
 				calculators: "/calculators",
 			};
