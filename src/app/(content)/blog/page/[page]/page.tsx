@@ -46,7 +46,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `SopKit Blog — Page ${meta.currentPage}`,
+      title: `SopKit Blog — Page ${currentPage}`,
       description:
         "Practical guides, tutorials, comparisons, and workflows for free online tools and everyday digital tasks.",
       images: ["/og-image.jpg"],
@@ -64,10 +64,10 @@ export default async function BlogPaginationPage({
     redirect("/blog/");
   }
 
-  const meta = getBlogArchiveMeta(parsedPage);
-  if (currentPage !== parsedPage) {
-    notFound();
-  }
+  const totalArticles = getSortedBlogs().length;
+  const totalPages = Math.max(1, Math.ceil(totalArticles / 12));
+  const currentPage = Math.min(Math.max(parsedPage, 1), totalPages);
+  if (currentPage !== parsedPage) notFound();
 
   return <BlogArchive currentPage={currentPage} />;
 }
