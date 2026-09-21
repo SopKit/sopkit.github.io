@@ -5924,11 +5924,11 @@
         {
           "id": "url-extractor",
           "name": "URL Extractor",
-          "description": "Extract URLs from plain text, Markdown, logs, source snippets, and copied content. Normalize links, validate them, remove duplicates and optionally strip tracking parameters locally in your browser.",
+          "description": "Extract URLs from plain text, Markdown, logs, source snippets, and copied content. Normalize links, validate them, remove duplicates, and export a clean list locally in your browser.",
           "route": "/url-extractor",
           "popular": true,
           "seoTitle": "URL Extractor — Extract & Clean Links Online",
-          "seoDescription": "Extract URLs from text, Markdown, logs and HTML snippets. Normalize, deduplicate, remove tracking parameters and export clean links free."
+          "seoDescription": "Extract URLs from text, Markdown, logs and HTML snippets. Normalize, validate and deduplicate links, then copy or export the clean list free."
         },
         {
           "id": "email-extractor",
