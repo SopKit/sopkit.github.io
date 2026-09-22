@@ -119,48 +119,26 @@ SopKit is a **free online tools** platform with **600+ browser-based utilities**
 - **Fast & Modern** — Built on Next.js 16 with optimized Core Web Vitals
 - **Mobile-Friendly** — Fully responsive design works on all devices
 
-## 🔧 Tools by Category
+## 🧰 Tool Categories
 
-### 🖼️ Image Tools
-[Free image tools online](https://sopkit.space/image-tools) for compression, resizing, conversion, background removal, and editing. Supports PNG, JPG, WebP, AVIF, GIF, and more.
+SopKit covers common workflows for creators, developers, students, and professionals. Browse a category or jump directly to a popular tool.
 
-**Popular:** [Image Compressor](https://sopkit.space/image-compressor) · [Image Converter](https://sopkit.space/image-converter) · [Image Resizer](https://sopkit.space/image-resizer) · [Background Remover](https://sopkit.space/background-remover) · [Image Cropper](https://sopkit.space/image-cropper) · [Favicon Generator](https://sopkit.space/favicon-generator)
+| Category | What you'll find | Popular tools |
+| :--- | :--- | :--- |
+| 🖼️ **[Image Tools](https://sopkit.space/image-tools)** | Compress, resize, convert, crop, remove backgrounds, and edit images. | [Image Compressor](https://sopkit.space/image-compressor) · [Image Converter](https://sopkit.space/image-converter) · [Image Resizer](https://sopkit.space/image-resizer) |
+| 📄 **[PDF Tools](https://sopkit.space/pdf-tools)** | Merge, split, compress, convert, and edit PDF documents. | [PDF Merger](https://sopkit.space/pdf-merger) · [PDF Splitter](https://sopkit.space/pdf-splitter) · [PDF Compressor](https://sopkit.space/pdf-compressor) |
+| 🎬 **[Video Tools](https://sopkit.space/video-tools)** | Convert, compress, and work with video files. | Browse [Video Tools](https://sopkit.space/video-tools) |
+| 🎵 **[Audio Tools](https://sopkit.space/audio-tools)** | Audio utilities, text-to-speech, and music-related tools. | [Text to Speech](https://sopkit.space/text-to-speech) · [Audio Tools](https://sopkit.space/audio-tools) |
+| 📝 **[Text Tools](https://sopkit.space/text-tools)** | Count, transform, compare, format, and analyze text. | Browse [Text Tools](https://sopkit.space/text-tools) |
+| 🔍 **[SEO Tools](https://sopkit.space/seo-tools)** | Metadata, sitemaps, keywords, backlinks, and SEO audits. | [Meta Tag Generator](https://sopkit.space/meta-tag-generator) · [Sitemap Generator](https://sopkit.space/sitemap-generator) · [SEO Audit](https://sopkit.space/seo-audit-tool) |
+| 💻 **[Developer Tools](https://sopkit.space/developer-tools)** | JSON, Base64, UUIDs, regex, hashing, formatting, and API utilities. | [JSON Formatter](https://sopkit.space/json-formatter) · [Base64](https://sopkit.space/base64-encode) · [UUID Generator](https://sopkit.space/uuid-generator) |
+| 📊 **[Calculators](https://sopkit.space/calculators)** | BMI, loans, mortgages, percentages, and student calculators. | Browse [Calculators](https://sopkit.space/calculators) |
+| 🎲 **[Generators](https://sopkit.space/generators)** | Passwords, QR codes, business names, and other generators. | Browse [Generators](https://sopkit.space/generators) |
+| 📱 **[Exam Tools](https://sopkit.space/exam-tools)** | Photo and signature preparation for SSC, UPSC, NEET, JEE, PAN, and forms. | Browse [Exam Tools](https://sopkit.space/exam-tools) |
+| 📹 **[Video Downloaders](https://sopkit.space/all-downloaders)** | Download utilities for YouTube, Instagram, TikTok, Facebook, Reddit, and more. | Browse [All Downloaders](https://sopkit.space/all-downloaders) |
 
-### 📄 PDF Tools
-[Free PDF tools online](https://sopkit.space/pdf-tools) for merging, splitting, compressing, converting, and editing PDF documents.
+> **Explore everything:** [Search all 600+ tools →](https://sopkit.space/search)
 
-**Popular:** [PDF Merger](https://sopkit.space/pdf-merger) · [PDF Splitter](https://sopkit.space/pdf-splitter) · [PDF Compressor](https://sopkit.space/pdf-compressor) · [PDF to Word](https://sopkit.space/pdf-to-word) · [Word to PDF](https://sopkit.space/word-to-pdf)
-
-### 🎬 Video Tools
-[Free video tools online](https://sopkit.space/video-tools) for converting, compressing, and editing videos.
-
-### 🎵 Audio Tools
-[Free audio tools online](https://sopkit.space/audio-tools) including [text to speech](https://sopkit.space/text-to-speech) converter and guitar tuner.
-
-### 📝 Text Tools
-[Free text tools online](https://sopkit.space/text-tools) for word counting, case conversion, text comparison, ASCII converters, and more.
-
-### 🔍 SEO Tools
-[Free SEO tools online](https://sopkit.space/seo-tools) for meta tag generation, sitemap creation, keyword research, backlink checking, and SEO auditing.
-
-**Popular:** [Meta Tag Generator](https://sopkit.space/meta-tag-generator) · [Sitemap Generator](https://sopkit.space/sitemap-generator) · [SEO Audit Tool](https://sopkit.space/seo-audit-tool) · [Keyword Research Tool](https://sopkit.space/keyword-research-tool) · [Backlink Checker](https://sopkit.space/backlink-checker)
-
-### 💻 Developer Tools
-[Free developer tools online](https://sopkit.space/developer-tools) for JSON formatting, Base64 encoding, regex testing, API key testing, code formatting, and cryptographic hashing.
-
-**Popular:** [JSON Formatter](https://sopkit.space/json-formatter) · [Base64 Encode/Decode](https://sopkit.space/base64-encode) · [UUID Generator](https://sopkit.space/uuid-generator) · [Hash Generator](https://sopkit.space/hash-generator) · [API Key Testers](https://sopkit.space/api-key-testers)
-
-### 📊 Calculators
-[Free calculators online](https://sopkit.space/calculators) including BMI, loan, mortgage, percentage, and student-specific calculators.
-
-### 🎲 Generators
-[Free generators online](https://sopkit.space/generators) for passwords, QR codes, AI content, business names, and more.
-
-### 📱 Exam Tools
-[Free exam tools](https://sopkit.space/exam-tools) for photo resizing (SSC, UPSC, NEET, JEE, PAN card), signature resizing, and form image preparation.
-
-### 📹 Video Downloaders
-[Free downloaders](https://sopkit.space/all-downloaders) for YouTube, Instagram, TikTok, Facebook, Twitter, Reddit, and 40+ platforms.
 
 ## 🚀 Features
 
