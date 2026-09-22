@@ -25,11 +25,8 @@ import { PillButton } from "@/components/ui/pill-button";
 import { Container } from "@/components/layout/Container";
 import { type SearchToolRecord } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
-import { searchTools, type SearchResult } from "@/features/search/engine";
 import { useUserToolbox } from "@/hooks/useUserToolbox";
 import { trackSearch, trackToolAction } from "@/lib/analytics";
-import { ProcessingBadge } from "@/components/shared/ProcessingBadge";
-import { resolveDataProcessing } from "@/features/tools/archetypes";
 
 const CYCLING_INTENTS = [
 	"compress an image to 50KB...",
@@ -42,6 +39,67 @@ const CYCLING_INTENTS = [
 	"count words and reading time...",
 ];
 
+type HeroSearchResult = {
+	tool: SearchToolRecord;
+	score: number;
+	explanation?: string;
+};
+
+const INTENT_TARGETS: Record<string, string[]> = {
+	"compress image": ["image-compressor", "compress-image-to-50kb", "bulk-image-compressor"],
+	"merge pdf": ["merge-pdf-online", "split-pdf"],
+	"format json": ["json-formatter", "json-validator"],
+	"remove bg": ["background-remover", "image-resizer"],
+	"calculate gpa": ["cgpa-calculator", "gpa-calculator"],
+	"generate qr": ["qr-code-generator", "barcode-generator"],
+	"word count": ["word-counter", "character-counter"],
+	"generate password": ["password-generator", "uuid-generator"],
+};
+
+function searchLocalTools(tools: SearchToolRecord[], query: string, limit = 6): HeroSearchResult[] {
+	const cleanQ = query.trim().toLowerCase();
+	if (!cleanQ) return [];
+
+	const intentKey = Object.keys(INTENT_TARGETS).find((key) => cleanQ.includes(key));
+	const intentTargets = intentKey ? INTENT_TARGETS[intentKey] : [];
+
+	return tools
+		.map((tool) => {
+			const name = tool.name.toLowerCase();
+			const id = tool.id.toLowerCase();
+			const description = (tool.description || "").toLowerCase();
+			let score = 0;
+
+			if (name === cleanQ || id === cleanQ) score += 100;
+			else if (name.startsWith(cleanQ)) score += 70;
+			else if (name.includes(cleanQ) || id.includes(cleanQ)) score += 45;
+
+			for (const token of cleanQ.split(/\s+/)) {
+				if (name.includes(token)) score += 15;
+				if (description.includes(token)) score += 3;
+			}
+
+			const intentIndex = intentTargets.indexOf(id);
+			if (intentIndex >= 0) score += 80 - intentIndex * 8;
+			if (tool.popular) score += 5;
+
+			return {
+				tool,
+				score,
+				explanation: intentIndex >= 0 ? `Best match for ${intentKey}` : undefined,
+			};
+		})
+		.filter((result) => result.score > 0)
+		.sort((a, b) => b.score - a.score)
+		.slice(0, limit);
+}
+
+function getProcessingLabel(tool: SearchToolRecord) {
+	return tool.executionType === "external" || tool.executionType === "server"
+		? "Cloud API"
+		: "Local Browser";
+}
+
 const QUICK_TASK_CHIPS = [
 	{ label: "Compress Image", href: "/image-compressor", icon: "🖼️" },
 	{ label: "Merge PDF", href: "/merge-pdf-online", icon: "📑" },
@@ -53,9 +111,8 @@ const QUICK_TASK_CHIPS = [
 	{ label: "Password Generator", href: "/password-generator", icon: "🔐" },
 ];
 
-export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
+export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 	const [query, setQuery] = React.useState("");
-	const [placeholderIndex, setPlaceholderIndex] = React.useState(0);
 	const [showSuggestions, setShowSuggestions] = React.useState(false);
 	const [selectedIndex, setSelectedIndex] = React.useState(-1);
 	const router = useRouter();
@@ -64,20 +121,11 @@ export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 
 	const { recents, favorites, isHydrated, recordRecent, recordSearch } = useUserToolbox();
 
-	// Cycle placeholder text every 3.2 seconds if not currently typing
-	React.useEffect(() => {
-		if (query) return;
-		const interval = setInterval(() => {
-			setPlaceholderIndex((prev) => (prev + 1) % CYCLING_INTENTS.length);
-		}, 3200);
-		return () => clearInterval(interval);
-	}, [query]);
-
 	// Live search results
-	const searchResults = React.useMemo<SearchResult[]>(() => {
-		if (!query.trim()) return [];
-		return searchTools(query, 6);
-	}, [query]);
+	const searchResults = React.useMemo(
+		() => searchLocalTools(tools, query, 6),
+		[tools, query],
+	);
 
 	const handleSearch = (e: React.FormEvent) => {
 		e.preventDefault();
@@ -184,7 +232,7 @@ export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 									aria-expanded={showSuggestions && searchResults.length > 0}
 									aria-controls="hero-search-listbox"
 									aria-label="What do you want to do?"
-									placeholder={`What do you want to do? (e.g. ${CYCLING_INTENTS[placeholderIndex]}`}
+									placeholder="What do you want to do? (e.g. compress an image to 50KB...)"
 									className="h-13 sm:h-14 pl-12 pr-28 sm:pr-32 bg-transparent border-none text-sm sm:text-base focus:outline-hidden placeholder:text-muted-foreground/60 w-full text-foreground font-medium"
 									value={query}
 									onChange={(e) => {
@@ -240,7 +288,7 @@ export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 												const tool = result.tool;
 												const isSelected = idx === selectedIndex;
 												const route = tool.slug ? `/${tool.slug}` : `/${tool.id}`;
-												const dataProcessing = resolveDataProcessing(tool);
+												const processingLabel = getProcessingLabel(tool);
 
 												return (
 													<div

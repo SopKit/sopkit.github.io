@@ -26,6 +26,9 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function LandingPage() {
 	const searchTools = getSearchToolRecords();
+	// The hero only needs a compact search index. The full registry remains available
+	// to the directory component, while the global command palette is loaded on demand.
+	const heroSearchTools = searchTools.filter((tool) => tool.popular).slice(0, 120);
 
 	return (
 		<main id="main-content" className="flex flex-col min-h-screen bg-background text-foreground">
@@ -33,7 +36,7 @@ export default async function LandingPage() {
 			<StructuredData isHome={true} />
 
 			{/* 1. Hero Section with Editorial Display & Fanned Interactive Cards */}
-			<HeroSection tools={searchTools} />
+			<HeroSection tools={heroSearchTools} />
 
 			{/* Ad Unit after Hero */}
 			<div className="py-4 max-w-4xl mx-auto w-full px-4">
@@ -41,18 +44,26 @@ export default async function LandingPage() {
 			</div>
 
 			{/* 2. Category Showcase: Visual Category Gateway */}
-			<CategoryShowcase />
+			<div className="[content-visibility:auto] [contain-intrinsic-size:1px_520px]">
+				<CategoryShowcase />
+			</div>
 
 			{/* 3. Live 600+ Tool Directory with Fast Search & Category Filter Tabs */}
-			<ToolDirectorySection tools={searchTools} />
+			<div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
+				<ToolDirectorySection tools={searchTools} />
+			</div>
 
 			{/* 4. Trust & Architecture Pillars (Browser-First, No Signup, Fast) */}
-			<TrustSection />
+			<div className="[content-visibility:auto] [contain-intrinsic-size:1px_560px]">
+				<TrustSection />
+			</div>
 
 			{/* 5. Webmaster Embed Feature Showcase */}
-			<Container size="xl" className="py-12">
-				<EmbedShowcase />
-			</Container>
+			<div className="[content-visibility:auto] [contain-intrinsic-size:1px_700px]">
+				<Container size="xl" className="py-12">
+					<EmbedShowcase />
+				</Container>
+			</div>
 
 			{/* In-Content Ad Placement */}
 			<div className="py-4 max-w-4xl mx-auto w-full px-4 [content-visibility:auto]">
