@@ -9,7 +9,7 @@ import { PillButton } from "@/components/ui/pill-button";
 import { Container } from "@/components/layout/Container";
 import { STATIC_ROUTES } from "@/lib/tools";
 import { GITHUB_REPO_URL } from "@/constants/config";
-import { openUnifiedSearch } from "@/components/shared/UnifiedSearchModal";
+import { openUnifiedSearch } from "@/components/shared/search-events";
 
 export function Header() {
 	const pathname = usePathname() || "";
