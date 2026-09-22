@@ -214,21 +214,21 @@ export default function ToolLayout({
 
 			<main id="main-content" className="container mx-auto px-4 pb-16 space-y-6">
 				{/* Concise, Task-First Tool Header */}
-				<header className="max-w-4xl mx-auto space-y-2.5 pt-1 text-center sm:text-left">
-					<div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
-						<h1 className="font-sans text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-foreground">
+				<header className="max-w-5xl mx-auto space-y-3 pt-1 text-left">
+					<div className="flex min-w-0 items-start justify-between gap-3">
+						<h1 className="min-w-0 font-sans text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-foreground leading-tight">
 							{enrichedTool.name}
 						</h1>
 					</div>
 
-					<p className="text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-2xl">
+					<p className="text-sm sm:text-[15px] text-muted-foreground leading-6 max-w-3xl">
 						{finalDescription}
 					</p>
 
 					{/* Factual Processing Model & Category Badges */}
 					{!isCompanyPage && (
-						<div className="flex flex-wrap items-center justify-center sm:justify-between gap-3 pt-1 border-b border-border/40 pb-3">
-							<div className="flex flex-wrap items-center gap-2">
+						<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-2 border-b border-border/40 pb-3">
+							<div className="flex min-w-0 flex-wrap items-center gap-2">
 								<ProcessingBadge
 									model={dataProcessing.type}
 									info={dataProcessing}
@@ -264,8 +264,8 @@ export default function ToolLayout({
 
 				{/* Primary Tool Workspace (Visually Dominant) */}
 				{!isHubPage && (
-					<section id="tool-workspace" className={`w-full ${workspaceClass} mx-auto transition-all scroll-mt-20`}>
-						<div className="rounded-2xl border border-border/70 bg-card/60 shadow-xs overflow-hidden p-4 sm:p-6 lg:p-8">
+					<section id="tool-workspace" aria-label={`${enrichedTool.name} workspace`} className={`w-full ${workspaceClass} mx-auto transition-all scroll-mt-24`}>
+						<div className="rounded-2xl border border-border/70 bg-card/60 shadow-xs overflow-hidden p-3 sm:p-5 lg:p-7">
 							{children}
 						</div>
 					</section>
