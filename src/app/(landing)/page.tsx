@@ -41,18 +41,26 @@ export default async function LandingPage() {
 			</div>
 
 			{/* 2. Category Showcase: Visual Category Gateway */}
-			<CategoryShowcase />
+			<div className="[content-visibility:auto] [contain-intrinsic-size:1px_520px]">
+				<CategoryShowcase />
+			</div>
 
 			{/* 3. Live 600+ Tool Directory with Fast Search & Category Filter Tabs */}
-			<ToolDirectorySection tools={searchTools} />
+			<div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
+				<ToolDirectorySection tools={searchTools} />
+			</div>
 
 			{/* 4. Trust & Architecture Pillars (Browser-First, No Signup, Fast) */}
-			<TrustSection />
+			<div className="[content-visibility:auto] [contain-intrinsic-size:1px_560px]">
+				<TrustSection />
+			</div>
 
 			{/* 5. Webmaster Embed Feature Showcase */}
-			<Container size="xl" className="py-12">
-				<EmbedShowcase />
-			</Container>
+			<div className="[content-visibility:auto] [contain-intrinsic-size:1px_700px]">
+				<Container size="xl" className="py-12">
+					<EmbedShowcase />
+				</Container>
+			</div>
 
 			{/* In-Content Ad Placement */}
 			<div className="py-4 max-w-4xl mx-auto w-full px-4 [content-visibility:auto]">
