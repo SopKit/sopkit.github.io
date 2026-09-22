@@ -3,11 +3,43 @@
  * @description Fast server/client search engine supporting exact match, intent synonyms, explanations, and category boosts.
  */
 
-import { ToolDefinition } from "../tools/types";
-import { getAllTools } from "../tools/registry";
 
 export interface SearchResult {
-  tool: ToolDefinition;
+  tool: ToolDefinimport toolsData from "@/constants/tools.json";
+import type { ToolDefinition } from "../tools/types";
+
+const CLIENT_SEARCH_TOOLS: ToolDefinition[] = Object.entries(toolsData.categories || {}).flatMap(
+  ([categorySlug, category]: [string, any]) =>
+    (category?.tools || []).map((tool: any) => {
+      const route = tool.route || tool.path || `/${tool.id}`;
+      const slug = route.replace(/^\//, "").replace(/\/$/, "");
+      return {
+        id: tool.id,
+        slug,
+        name: tool.name,
+        description: tool.description || "",
+        category: category.name || categorySlug,
+        categorySlug: category.slug || categorySlug,
+        route,
+        icon: tool.icon,
+        popular: Boolean(tool.popular),
+        featured: Boolean(tool.featured),
+        tags: tool.tags || [],
+        keywords: tool.keywords || [],
+        performance: {
+          runtimeMode: "client",
+          processing: "browser",
+          bundleClass: "light",
+          lazyLoad: false,
+          thirdPartyDependencies: [],
+        },
+        seoTitle: tool.seoTitle,
+        seoDescription: tool.seoDescription,
+      } satisfies ToolDefinition;
+    }),
+);
+
+ition;
   score: number;
   matchType: "exact" | "prefix" | "intent" | "tag" | "description";
   explanation?: string;
@@ -193,7 +225,7 @@ const TASK_INTENT_MAPPINGS: IntentMapping[] = [
 export function searchTools(query: string, limit: number = 20): SearchResult[] {
   if (!query || query.trim().length === 0) return [];
 
-  const allTools = getAllTools();
+  const allTools = CLIENT_SEARCH_TOOLS;
   const cleanQ = query.trim().toLowerCase();
   const queryTokens = cleanQ.split(/\s+/).filter((t) => t.length > 0);
 
