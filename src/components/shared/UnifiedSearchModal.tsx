@@ -31,13 +31,7 @@ import { resolveDataProcessing } from "@/features/tools/archetypes";
 import { ProcessingBadge } from "@/components/shared/ProcessingBadge";
 import { trackSearch, trackToolAction } from "@/lib/analytics";
 
-export const OPEN_SEARCH_EVENT = "sopkit:open-search";
-
-export function openUnifiedSearch() {
-	if (typeof window !== "undefined") {
-		window.dispatchEvent(new CustomEvent(OPEN_SEARCH_EVENT));
-	}
-}
+import { OPEN_SEARCH_EVENT } from "./search-events";
 
 const QUICK_TASK_SUGGESTIONS = [
 	{ label: "Compress Image", query: "compress image" },
@@ -50,8 +44,14 @@ const QUICK_TASK_SUGGESTIONS = [
 	{ label: "Password Generator", query: "generate password" },
 ];
 
-export function UnifiedSearchModal() {
-	const [isOpen, setIsOpen] = React.useState(false);
+export function UnifiedSearchModal({
+	initialOpen = false,
+	onOpenChange,
+}: {
+	initialOpen?: boolean;
+	onOpenChange?: (open: boolean) => void;
+}) {
+	const [isOpen, setIsOpen] = React.useState(initialOpen);
 	const [query, setQuery] = React.useState("");
 	const [selectedIndex, setSelectedIndex] = React.useState(0);
 	const router = useRouter();
@@ -168,7 +168,13 @@ export function UnifiedSearchModal() {
 	}, [selectedIndex]);
 
 	return (
-		<Dialog open={isOpen} onOpenChange={setIsOpen}>
+		<Dialog
+			open={isOpen}
+			onOpenChange={(open) => {
+				setIsOpen(open);
+				onOpenChange?.(open);
+			}}
+		>
 			<DialogContent
 				showCloseButton={false}
 				className="sm:max-w-2xl p-0 gap-0 overflow-hidden bg-card/95 backdrop-blur-2xl border-border/80 shadow-2xl rounded-2xl top-[12%] sm:top-[20%] translate-y-0"
