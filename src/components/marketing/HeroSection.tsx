@@ -131,7 +131,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 		e.preventDefault();
 		if (selectedIndex >= 0 && selectedIndex < searchResults.length) {
 			const targetTool = searchResults[selectedIndex].tool;
-			const route = targetTool.slug ? `/${targetTool.slug}` : `/${targetTool.id}`;
+			const route = targetTool.route || `/${targetTool.id}`;
 			recordRecent({
 				id: targetTool.id,
 				name: targetTool.name,
@@ -150,7 +150,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 			trackSearch(query, searchResults.length);
 			if (searchResults.length === 1) {
 				const single = searchResults[0].tool;
-				const route = single.slug ? `/${single.slug}` : `/${single.id}`;
+				const route = single.route || `/${single.id}`;
 				router.push(route);
 			} else {
 				router.push(`/search?q=${encodeURIComponent(query.trim())}`);
@@ -287,7 +287,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 											{searchResults.map((result, idx) => {
 												const tool = result.tool;
 												const isSelected = idx === selectedIndex;
-												const route = tool.slug ? `/${tool.slug}` : `/${tool.id}`;
+												const route = tool.route || `/${tool.id}`;
 												const processingLabel = getProcessingLabel(tool);
 
 												return (
@@ -334,11 +334,9 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 														</div>
 
 														<div className="flex items-center gap-2 shrink-0">
-															<ProcessingBadge
-																model={dataProcessing.type}
-																compact
-																interactive={false}
-															/>
+															<span className="text-[10px] font-mono text-muted-foreground bg-muted/70 px-1.5 py-0.5 rounded shrink-0">
+																{processingLabel}
+															</span>
 															<ArrowRight className="h-4 w-4 text-muted-foreground" />
 														</div>
 													</div>
