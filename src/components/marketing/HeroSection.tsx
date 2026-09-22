@@ -113,7 +113,6 @@ const QUICK_TASK_CHIPS = [
 
 export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 	const [query, setQuery] = React.useState("");
-	const [placeholderIndex, setPlaceholderIndex] = React.useState(0);
 	const [showSuggestions, setShowSuggestions] = React.useState(false);
 	const [selectedIndex, setSelectedIndex] = React.useState(-1);
 	const router = useRouter();
@@ -121,15 +120,6 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 	const dropdownRef = React.useRef<HTMLDivElement>(null);
 
 	const { recents, favorites, isHydrated, recordRecent, recordSearch } = useUserToolbox();
-
-	// Cycle placeholder text every 3.2 seconds if not currently typing
-	React.useEffect(() => {
-		if (query) return;
-		const interval = setInterval(() => {
-			setPlaceholderIndex((prev) => (prev + 1) % CYCLING_INTENTS.length);
-		}, 3200);
-		return () => clearInterval(interval);
-	}, [query]);
 
 	// Live search results
 	const searchResults = React.useMemo(
@@ -242,7 +232,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 									aria-expanded={showSuggestions && searchResults.length > 0}
 									aria-controls="hero-search-listbox"
 									aria-label="What do you want to do?"
-									placeholder={`What do you want to do? (e.g. ${CYCLING_INTENTS[placeholderIndex]}`}
+									placeholder="What do you want to do? (e.g. compress an image to 50KB...)"
 									className="h-13 sm:h-14 pl-12 pr-28 sm:pr-32 bg-transparent border-none text-sm sm:text-base focus:outline-hidden placeholder:text-muted-foreground/60 w-full text-foreground font-medium"
 									value={query}
 									onChange={(e) => {
