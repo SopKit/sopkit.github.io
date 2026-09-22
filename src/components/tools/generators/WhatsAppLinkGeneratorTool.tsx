@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
+import { loadQrCodeLibrary } from "@/lib/load-qrcode";
 import { Copy, MessageSquare, ExternalLink, Download, Check, Sparkles } from "lucide-react";
 
 export default function WhatsAppLinkGeneratorTool() {
@@ -37,9 +38,9 @@ export default function WhatsAppLinkGeneratorTool() {
     const generateQR = async () => {
       try {
         if (!(window as any).QRCode) {
-          void loadQrCodeLibrary().then(() => drawQR(canvas)).catch(() => console.error("Failed to load QR code library"));} else {
-          drawQR(canvas);
+          await loadQrCodeLibrary();
         }
+        drawQR(canvas);
       } catch (err) {
         console.error("QR Code generation error:", err);
       }
