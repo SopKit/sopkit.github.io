@@ -37,11 +37,7 @@ export default function WhatsAppLinkGeneratorTool() {
     const generateQR = async () => {
       try {
         if (!(window as any).QRCode) {
-          const script = document.createElement("script");
-          script.src = "https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js";
-          script.onload = () => drawQR(canvas);
-          document.body.appendChild(script);
-        } else {
+          void loadQrCodeLibrary().then(() => drawQR(canvas)).catch(() => console.error("Failed to load QR code library"));} else {
           drawQR(canvas);
         }
       } catch (err) {
