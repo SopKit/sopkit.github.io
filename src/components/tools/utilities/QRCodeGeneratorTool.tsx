@@ -40,6 +40,7 @@ import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import { Textarea } from "@/components/ui/textarea";
 import { SITE_URL } from "@/constants/config";
+import { loadQrCodeLibrary } from "@/lib/load-qrcode";
 
 export default function QRCodeGeneratorTool() {
 	const [qrType, setQrType] = useState("url");
@@ -158,30 +159,12 @@ export default function QRCodeGeneratorTool() {
 		}
 	}, [qrType, qrData, qrSize, foregroundColor, backgroundColor, errorCorrectionLevel, includeMargin, wifiSSID, wifiPassword, wifiSecurity, wifiHidden, contactName, contactPhone, contactEmail, contactOrg, contactUrl, emailTo, emailSubject, emailBody, smsNumber, smsMessage, locationLat, locationLng]);
 
-	// Load QRCode.js library from CDN
+	// Load once and reuse across QR tools; includes CDN fallbacks.
 	useEffect(() => {
-		if (typeof document === "undefined") return;
-		
-		const script = document.createElement("script");
-		script.src = "https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js";
-		script.async = true;
-		script.onload = () => {
-			setQrCodeLibLoaded(true);
-			// We don't call generateQRCode here directly to avoid hoisting issues, 
-			// the next useEffect will handle it when qrCodeLibLoaded changes
-		};
-		script.onerror = () => {
-			console.error("Failed to load QRCode library");
-			setQrCodeLibLoaded(false);
-		};
-		document.head.appendChild(script);
-
-		return () => {
-			if (document.head.contains(script)) {
-				document.head.removeChild(script);
-			}
-		};
-	}, []); // Empty dependency array for library load
+		void loadQrCodeLibrary()
+			.then(() => setQrCodeLibLoaded(true))
+			.catch(() => setQrCodeLibLoaded(false));
+	}, []);
 
 	// Generate QR code on mount and when data changes
 	useEffect(() => {
