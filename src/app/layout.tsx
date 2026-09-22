@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/shared/theme-provider";
-import { getAllTools, Tool } from "@/lib/tools";
 import { SITE_URL, TOOL_COUNT_STRING, GITHUB_REPO_URL } from "@/constants/config";
 import "./globals.css";
 import Script from "next/script";
@@ -24,7 +23,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import ConsentBanner from "@/components/privacy/ConsentBanner";
 import ConsentAwareThirdPartyScripts from "@/components/privacy/ConsentAwareThirdPartyScripts";
-import { UnifiedSearchModal } from "@/components/shared/UnifiedSearchModal";
+import { SearchModalHost } from "@/components/shared/SearchModalHost";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -164,37 +163,6 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	let tools: Tool[] = [];
-	try {
-		tools = getAllTools();
-	} catch (error) {
-		console.error("Failed to load tools registry:", error);
-	}
-	const categoriesMap = new Map();
-
-	for (const tool of tools) {
-		const catKey = tool.categoryKey || tool.category;
-		if (catKey && !categoriesMap.has(catKey)) {
-			const canonicalCategoryHubs: Record<string, string> = {
-				image: "/image-tools",
-				pdf: "/pdf-tools",
-				video: "/video-tools",
-				audio: "/audio-tools",
-				seo: "/seo-tools",
-				text: "/text-tools",
-				developer: "/developer-tools",
-				utilities: "/other-tools",
-				extraction: "/extraction-tools",
-				generators: "/generators",
-				calculators: "/calculators",
-			};
-			categoriesMap.set(catKey, {
-				label: tool.categoryName || catKey,
-				href: canonicalCategoryHubs[catKey] || "/search",
-			});
-		}
-	}
-	const categories = Array.from(categoriesMap.values());
 
 	return (
 		<html lang="en" suppressHydrationWarning className={`${inter.variable} ${newsreader.variable}`}>
@@ -327,7 +295,7 @@ gtag("consent", "default", {
 						{children}
 						<Footer />
 						<Toaster />
-						<UnifiedSearchModal />
+						<SearchModalHost />
 						<PWARegistration />
 						<OfflineIndicator />
 					<ConsentAwareThirdPartyScripts enableAds={process.env.NEXT_PUBLIC_ENABLE_ADS === "true"} />
