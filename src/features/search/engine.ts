@@ -4,8 +4,7 @@
  */
 
 
-export interface SearchResult {
-  tool: ToolDefinimport toolsData from "@/constants/tools.json";
+import toolsData from "@/constants/tools.json";
 import type { ToolDefinition } from "../tools/types";
 
 const CLIENT_SEARCH_TOOLS: ToolDefinition[] = Object.entries(toolsData.categories || {}).flatMap(
@@ -39,7 +38,8 @@ const CLIENT_SEARCH_TOOLS: ToolDefinition[] = Object.entries(toolsData.categorie
     }),
 );
 
-ition;
+export interface SearchResult {
+  tool: ToolDefinition;
   score: number;
   matchType: "exact" | "prefix" | "intent" | "tag" | "description";
   explanation?: string;
