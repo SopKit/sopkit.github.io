@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 import { QrCode, Download, Settings, Palette, Type, Image as ImageIcon, Loader2 } from "lucide-react";
 import { SITE_URL } from "@/constants/config";
+import { loadQrCodeLibrary } from "@/lib/load-qrcode";
 
 export default function QrGeneratorPremium({
     initialText = SITE_URL,
@@ -22,11 +23,12 @@ export default function QrGeneratorPremium({
     const [size, setSize] = useState(256);
     const [isGenerating, setIsGenerating] = useState(false);
     const [qrcodeReady, setQrcodeReady] = useState(false);
+    const [loadError, setLoadError] = useState("");
     const canvasRef = useRef<HTMLDivElement>(null);
 
     const generateQR = useCallback(async () => {
         if (!(window as any).QRCode) return;
-        
+        if (!text.trim()) return;
         setIsGenerating(true);
         try {
             const QRCode = (window as any).QRCode;
@@ -53,21 +55,21 @@ export default function QrGeneratorPremium({
         }
     }, [bgColor, fgColor, margin, size, text]);
 
-    useEffect(() => {
-        if (typeof window !== "undefined" && !(window as any).QRCode) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js";
-            script.onload = () => setQrcodeReady(true);
-            script.onerror = () => {
-                toast.error("Failed to load QR code library. Please refresh the page.");
-                setQrcodeReady(false);
-            };
-            document.head.appendChild(script);
-        } else {
-            // eslint-disable-next-line react-hooks/set-state-in-effect
+    const loadLibrary = useCallback(async () => {
+        setLoadError("");
+        try {
+            await loadQrCodeLibrary();
             setQrcodeReady(true);
+        } catch (error) {
+            console.error("Failed to load QR code library", error);
+            setQrcodeReady(false);
+            setLoadError("Could not load the QR engine. Check your connection or try again.");
         }
     }, []);
+
+    useEffect(() => {
+        void loadLibrary();
+    }, [loadLibrary]);
 
     useEffect(() => {
         if (qrcodeReady && text) {
@@ -76,15 +78,40 @@ export default function QrGeneratorPremium({
         }
     }, [generateQR, qrcodeReady, text]);
 
-    const downloadQR = (format: "png" | "svg") => {
+    const downloadQR = async (format: "png" | "svg") => {
         const canvas = canvasRef.current?.querySelector("canvas");
-        if (!canvas) return;
+        if (!canvas) {
+            toast.error("Generate a QR code first.");
+            return;
+        }
 
         const link = document.createElement("a");
         link.download = `qrcode-${Date.now()}.${format}`;
-        link.href = canvas.toDataURL(`image/${format === "png" ? "png" : "svg+xml"}`);
+
+        if (format === "png") {
+            link.href = canvas.toDataURL("image/png");
+        } else {
+            try {
+                const QRCode = await loadQrCodeLibrary();
+                const svg = await QRCode.toString(text, {
+                    type: "svg",
+                    width: size,
+                    margin,
+                    color: { dark: fgColor, light: bgColor },
+                });
+                link.href = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml;charset=utf-8" }));
+                link.click();
+                window.setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+                toast.success("Downloaded as SVG");
+                return;
+            } catch {
+                toast.error("SVG export failed. Try PNG instead.");
+                return;
+            }
+        }
+
         link.click();
-        toast.success(`Downloaded as ${format.toUpperCase()}`);
+        toast.success("Downloaded as PNG");
     };
 
     return (
@@ -196,7 +223,7 @@ export default function QrGeneratorPremium({
                             <Download className="w-4 h-4" /> PNG
                         </Button>
                         <Button
-                            onClick={() => downloadQR("png")} // Using PNG as proxy for this simple version
+                            onClick={() => void downloadQR("svg")}
                             disabled={isGenerating}
                             variant="outline"
                             className="flex-1 gap-2 border-primary/20 hover:bg-primary/5"
@@ -209,9 +236,16 @@ export default function QrGeneratorPremium({
 
             <div className="flex flex-col gap-4 items-center justify-center p-6 border rounded-2xl bg-card/20 border-dashed border-primary/20">
                 <div ref={canvasRef} className="relative transition-all duration-500 transform hover:scale-105">
-                    {!qrcodeReady && (
-                        <div className="w-48 h-48 bg-muted/50 rounded-lg flex items-center justify-center">
-                            <Loader2 className="w-8 h-8 animate-spin text-primary/40" />
+                    {!qrcodeReady && !loadError && (
+                        <div className="w-48 h-48 bg-muted/50 rounded-xl flex flex-col items-center justify-center gap-2">
+                            <Loader2 className="w-7 h-7 animate-spin text-primary/50" />
+                            <span className="text-xs text-muted-foreground">Loading QR engine…</span>
+                        </div>
+                    )}
+                    {loadError && (
+                        <div className="w-full max-w-xs rounded-xl border border-destructive/20 bg-destructive/5 p-4 text-center space-y-3">
+                            <p className="text-sm font-medium text-foreground">{loadError}</p>
+                            <Button size="sm" variant="outline" onClick={() => void loadLibrary()}>Retry</Button>
                         </div>
                     )}
                 </div>
