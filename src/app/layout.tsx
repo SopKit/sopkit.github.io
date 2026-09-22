@@ -4,7 +4,6 @@ import { ThemeProvider } from "@/components/shared/theme-provider";
 import { SITE_URL, TOOL_COUNT_STRING, GITHUB_REPO_URL } from "@/constants/config";
 import "./globals.css";
 import Script from "next/script";
-import { Inter, Newsreader } from "next/font/google";
 // NOTE: Do NOT use next/dynamic inside this Server Component.
 // In Next 16, next/dynamic within an RSC throws an uncaught
 // BAILOUT_TO_CLIENT_SIDE_RENDERING during prerender, which empties the
@@ -24,22 +23,6 @@ import { Footer } from "@/components/layout/Footer";
 import ConsentBanner from "@/components/privacy/ConsentBanner";
 import ConsentAwareThirdPartyScripts from "@/components/privacy/ConsentAwareThirdPartyScripts";
 import { SearchModalHost } from "@/components/shared/SearchModalHost";
-
-const inter = Inter({
-	subsets: ["latin"],
-	display: "swap",
-	preload: true,
-	variable: "--font-inter",
-	weight: ["400", "500", "600", "700", "800"],
-});
-
-const newsreader = Newsreader({
-	subsets: ["latin"],
-	display: "swap",
-	preload: true,
-	variable: "--font-editorial",
-	style: ["normal", "italic"],
-});
 
 export const viewport: Viewport = {
 	width: "device-width",
@@ -165,7 +148,7 @@ export default function RootLayout({
 }) {
 
 	return (
-		<html lang="en" suppressHydrationWarning className={`${inter.variable} ${newsreader.variable}`}>
+		<html lang="en" suppressHydrationWarning>
 			<head>
 				<script src="/coi-serviceworker.min.js" defer />
 
