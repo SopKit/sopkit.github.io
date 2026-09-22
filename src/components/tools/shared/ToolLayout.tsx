@@ -15,6 +15,8 @@ import { getSeoOpportunityByRoute } from "@/data/seo-opportunities";
 import { ToolToolbar } from "./ToolToolbar";
 import { EmbedWidgetGiver } from "./EmbedWidgetGiver";
 import { VisitorBadge } from "@/components/shared/VisitorBadge";
+import { ProcessingBadge } from "@/components/shared/ProcessingBadge";
+import { JumpToToolButton } from "./JumpToToolButton";
 import {
 	resolveToolArchetype,
 	getArchetypeWorkspaceClass,
@@ -210,7 +212,7 @@ export default function ToolLayout({
 				</Suspense>
 			</div>
 
-			<main className="container mx-auto px-4 pb-16 space-y-6">
+			<main id="main-content" className="container mx-auto px-4 pb-16 space-y-6">
 				{/* Concise, Task-First Tool Header */}
 				<header className="max-w-4xl mx-auto space-y-2.5 pt-1 text-center sm:text-left">
 					<div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
@@ -227,23 +229,29 @@ export default function ToolLayout({
 					{!isCompanyPage && (
 						<div className="flex flex-wrap items-center justify-center sm:justify-between gap-3 pt-1 border-b border-border/40 pb-3">
 							<div className="flex flex-wrap items-center gap-2">
-								<span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-muted/50 border border-border/60 text-[11px] font-mono font-medium text-foreground/80">
-									<span className={`h-1.5 w-1.5 rounded-full ${dataProcessing.type === "LOCAL" ? "bg-emerald-500" : dataProcessing.type === "NO_FILE_UPLOAD" ? "bg-blue-500" : "bg-purple-500"}`} />
-									{dataProcessing.badgeText}
-								</span>
-								<span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted/30 text-[11px] font-mono text-muted-foreground">
+								<ProcessingBadge
+									model={dataProcessing.type}
+									info={dataProcessing}
+									interactive={true}
+								/>
+								<span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted/40 text-[11px] font-mono text-muted-foreground border border-border/50">
 									100% Free
 								</span>
 								{enrichedTool.category && (
-									<span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted/30 text-[11px] font-mono text-muted-foreground capitalize">
-										{enrichedTool.category}
+									<span className="inline-flex items-center px-2 py-0.5 rounded-md bg-muted/40 text-[11px] font-mono text-muted-foreground capitalize border border-border/50">
+										{enrichedTool.category.replace("-tools", "")}
 									</span>
 								)}
 							</div>
 
 							{/* Secondary Toolbar Actions */}
 							{!isHubPage && (
-								<ToolToolbar toolId={tool.id} toolRoute={tool.route} toolName={tool.name} />
+								<ToolToolbar
+									toolId={tool.id}
+									toolRoute={tool.route}
+									toolName={tool.name}
+									category={enrichedTool.category}
+								/>
 							)}
 						</div>
 					)}
@@ -256,7 +264,7 @@ export default function ToolLayout({
 
 				{/* Primary Tool Workspace (Visually Dominant) */}
 				{!isHubPage && (
-					<section className={`w-full ${workspaceClass} mx-auto transition-all`}>
+					<section id="tool-workspace" className={`w-full ${workspaceClass} mx-auto transition-all scroll-mt-20`}>
 						<div className="rounded-2xl border border-border/70 bg-card/60 shadow-xs overflow-hidden p-4 sm:p-6 lg:p-8">
 							{children}
 						</div>
@@ -264,7 +272,7 @@ export default function ToolLayout({
 				)}
 
 				{isHubPage && (
-					<section className="w-full max-w-6xl mx-auto">
+					<section id="tool-workspace" className="w-full max-w-6xl mx-auto scroll-mt-20">
 						{children}
 					</section>
 				)}
@@ -272,6 +280,17 @@ export default function ToolLayout({
 				{/* Secondary Content & SEO Documentation (Subordinated to Tool) */}
 				{!isCompanyPage && (
 					<div className="w-full max-w-4xl mx-auto space-y-10 pt-6">
+						{/* Clean Workspace / Documentation Divider */}
+						<div className="flex items-center justify-between border-b border-border/60 pb-2 text-xs font-mono text-muted-foreground">
+							<span className="uppercase tracking-wider font-semibold">Technical Reference & FAQs</span>
+							<a
+								href="#tool-workspace"
+								className="text-primary hover:underline font-medium inline-flex items-center gap-1"
+							>
+								↑ Return to Workspace
+							</a>
+						</div>
+
 						<AdPlacement placement="after-tool" category={tool.category} slug={tool.id} />
 
 						{/* Editorial Documentation Layout */}
@@ -331,6 +350,7 @@ export default function ToolLayout({
 						</footer>
 					</div>
 				)}
+				<JumpToToolButton />
 			</main>
 		</div>
 	);

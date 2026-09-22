@@ -24,6 +24,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import ConsentBanner from "@/components/privacy/ConsentBanner";
 import ConsentAwareThirdPartyScripts from "@/components/privacy/ConsentAwareThirdPartyScripts";
+import { UnifiedSearchModal } from "@/components/shared/UnifiedSearchModal";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -314,12 +315,19 @@ gtag("consent", "default", {
 				</Script>
 							</head>
 			<body className={`font-sans antialiased min-h-screen bg-background text-foreground ${inter.className}`}>
+				<a
+					href="#main-content"
+					className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-lg focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-ring font-semibold text-sm transition-all"
+				>
+					Skip to main content
+				</a>
 				<ClientStackAuthProvider>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 						<Header />
 						{children}
 						<Footer />
 						<Toaster />
+						<UnifiedSearchModal />
 						<PWARegistration />
 						<OfflineIndicator />
 					<ConsentAwareThirdPartyScripts enableAds={process.env.NEXT_PUBLIC_ENABLE_ADS === "true"} />

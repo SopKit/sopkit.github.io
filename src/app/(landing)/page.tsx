@@ -28,7 +28,7 @@ export default async function LandingPage() {
 	const searchTools = getSearchToolRecords();
 
 	return (
-		<div className="flex flex-col min-h-screen bg-background text-foreground">
+		<main id="main-content" className="flex flex-col min-h-screen bg-background text-foreground">
 			{/* JSON-LD Structured Data */}
 			<StructuredData isHome={true} />
 
@@ -73,6 +73,6 @@ export default async function LandingPage() {
 			<div className="[content-visibility:auto]">
 				<FAQSection />
 			</div>
-		</div>
+		</main>
 	);
 }

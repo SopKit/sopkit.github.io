@@ -3,15 +3,16 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Search, Menu, X } from "lucide-react";
+import { Search, Menu, X, ArrowRight } from "lucide-react";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { PillButton } from "@/components/ui/pill-button";
 import { Container } from "@/components/layout/Container";
 import { STATIC_ROUTES } from "@/lib/tools";
 import { GITHUB_REPO_URL } from "@/constants/config";
+import { openUnifiedSearch } from "@/components/shared/UnifiedSearchModal";
 
 export function Header() {
-	const pathname = usePathname();
+	const pathname = usePathname() || "";
 	const [mobileOpen, setMobileOpen] = React.useState(false);
 	const [scrolled, setScrolled] = React.useState(false);
 
@@ -27,38 +28,61 @@ export function Header() {
 		return () => window.removeEventListener("scroll", onScroll);
 	}, []);
 
-	const handleSearchTrigger = () => {
-		const searchInput = document.querySelector<HTMLInputElement>("input[aria-label='Search all tools']");
-		if (searchInput) {
-			searchInput.focus();
-			searchInput.scrollIntoView({ behavior: "smooth", block: "center" });
-		} else {
-			window.location.href = "/search";
-		}
-	};
+	// Close mobile menu on Escape key
+	React.useEffect(() => {
+		const onKeyDown = (e: KeyboardEvent) => {
+			if (e.key === "Escape" && mobileOpen) {
+				setMobileOpen(false);
+			}
+		};
+		window.addEventListener("keydown", onKeyDown);
+		return () => window.removeEventListener("keydown", onKeyDown);
+	}, [mobileOpen]);
 
-	const navItems = [
-		{ label: "All Tools", href: STATIC_ROUTES.TOOLS },
-		{ label: "DevSpeed", href: "/dev-speed" },
-		{ label: "Canvas", href: "/architecture-canvas" },
-		{ label: "Categories", href: "/#categories" },
-		{ label: "Guides", href: STATIC_ROUTES.TOOL_GUIDES },
-		{ label: "Blog", href: STATIC_ROUTES.BLOG },
+	// Primary navigation items (clean, focused)
+	const primaryNavItems = [
+		{
+			label: "Tools",
+			href: STATIC_ROUTES.TOOLS,
+			isActive: (p: string) => p === "/tools" || p.startsWith("/tools/"),
+		},
+		{
+			label: "Categories",
+			href: "/#categories",
+			isActive: () => false,
+		},
+		{
+			label: "Guides",
+			href: STATIC_ROUTES.TOOL_GUIDES,
+			isActive: (p: string) => p.startsWith("/tool-guides"),
+		},
+		{
+			label: "Blog",
+			href: STATIC_ROUTES.BLOG,
+			isActive: (p: string) => p.startsWith("/blog"),
+		},
+	];
+
+	const secondaryNavItems = [
+		{ label: "DevSpeed Benchmarks", href: "/dev-speed" },
+		{ label: "Architecture Canvas", href: "/architecture-canvas" },
+		{ label: "NPM Packages", href: "/npm-packages" },
 	];
 
 	return (
 		<header
 			className={`sticky top-0 z-50 w-full transition-all duration-300 ${
 				scrolled
-					? "bg-background/85 backdrop-blur-xl border-b border-border/70 py-2.5 shadow-sm"
-					: "bg-transparent py-4"
+					? "bg-background/85 backdrop-blur-xl border-b border-border/70 py-2.5 shadow-xs"
+					: "bg-transparent py-3.5 sm:py-4"
 			}`}
 		>
 			<Container size="xl">
-				<div className="flex items-center justify-between gap-4">
+				<div className="flex items-center justify-between gap-3 sm:gap-4">
+					{/* Logo */}
 					<Link
 						href={STATIC_ROUTES.HOME}
-						className="flex items-center gap-2.5 group no-underline text-foreground"
+						className="flex items-center gap-2.5 group no-underline text-foreground shrink-0 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-primary rounded-lg"
 					>
 						<img
 							src="/logo.png"
@@ -74,15 +98,19 @@ export function Header() {
 						<span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-accent" />
 					</Link>
 
-					<nav className="hidden md:flex items-center gap-1 px-4 py-1.5 rounded-full bg-surface-muted/90 dark:bg-card/70 border border-border/80 shadow-sm backdrop-blur-md">
-						{navItems.map((item) => {
-							const isActive = pathname === item.href;
+					{/* Desktop Primary Navigation */}
+					<nav
+						aria-label="Primary Navigation"
+						className="hidden md:flex items-center gap-1 px-3.5 py-1.5 rounded-full bg-surface-muted/90 dark:bg-card/70 border border-border/80 shadow-xs backdrop-blur-md"
+					>
+						{primaryNavItems.map((item) => {
+							const active = item.isActive(pathname);
 							return (
 								<Link
 									key={item.label}
 									href={item.href}
 									className={`px-3.5 py-1 text-xs font-medium rounded-full transition-all duration-150 no-underline ${
-										isActive
+										active
 											? "bg-primary text-primary-foreground font-semibold shadow-xs"
 											: "text-muted-foreground hover:text-foreground hover:bg-background/80"
 									}`}
@@ -91,29 +119,32 @@ export function Header() {
 								</Link>
 							);
 						})}
-						<a
-							href={GITHUB_REPO_URL}
-							target="_blank"
-							rel="noopener noreferrer"
-							title="Contribute to SopKit on GitHub"
-							className="px-3.5 py-1 text-xs font-semibold rounded-full transition-all duration-150 no-underline text-muted-foreground hover:text-foreground hover:bg-background/80"
-						>
-							Contribute
-						</a>
 					</nav>
 
-					<div className="flex items-center gap-2.5">
+					{/* Right-side Controls */}
+					<div className="flex items-center gap-2 sm:gap-2.5">
+						{/* Desktop Search Trigger Button */}
 						<button
 							type="button"
-							onClick={handleSearchTrigger}
+							onClick={openUnifiedSearch}
 							className="hidden lg:inline-flex items-center gap-2 h-9 px-3.5 rounded-full bg-surface-muted/80 border border-border/70 hover:border-foreground/30 text-xs text-muted-foreground hover:text-foreground transition-all select-none cursor-pointer"
-							aria-label="Search tools"
+							aria-label="Search all tools (Press Command K)"
 						>
 							<Search className="h-3.5 w-3.5" />
 							<span>Search 600+ tools...</span>
 							<kbd className="inline-flex items-center px-1.5 py-0.5 rounded-md bg-background/80 border border-border/60 text-[10px] font-mono text-muted-foreground">
 								⌘K
 							</kbd>
+						</button>
+
+						{/* Mobile Search Button (Dedicated 44px+ touch target) */}
+						<button
+							type="button"
+							onClick={openUnifiedSearch}
+							className="lg:hidden flex items-center justify-center h-10 w-10 rounded-full hover:bg-muted text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+							aria-label="Search utilities"
+						>
+							<Search className="h-4.5 w-4.5" />
 						</button>
 
 						<ThemeToggle />
@@ -127,28 +158,58 @@ export function Header() {
 							Explore Tools
 						</PillButton>
 
+						{/* Mobile Menu Toggle Button */}
 						<button
 							type="button"
 							onClick={() => setMobileOpen(!mobileOpen)}
-							className="md:hidden p-2 rounded-full hover:bg-muted text-foreground transition-colors cursor-pointer"
-							aria-label="Toggle navigation menu"
+							className="md:hidden flex items-center justify-center h-10 w-10 rounded-full hover:bg-muted text-foreground transition-colors cursor-pointer"
+							aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+							aria-expanded={mobileOpen}
 						>
 							{mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
 						</button>
 					</div>
 				</div>
 
+				{/* Mobile Navigation Drawer */}
 				{mobileOpen && (
-					<div className="md:hidden mt-3 p-4 rounded-2xl bg-card border border-border shadow-xl space-y-3 animate-fade-in">
-						<div className="flex flex-col gap-1">
-							{navItems.map((item) => (
+					<div className="md:hidden mt-3 p-4 rounded-2xl bg-card border border-border shadow-xl space-y-4 animate-in fade-in-0 zoom-in-95">
+						<div className="space-y-1">
+							<p className="px-3 text-[11px] font-mono uppercase tracking-wider text-muted-foreground/70">
+								Navigation
+							</p>
+							{primaryNavItems.map((item) => {
+								const active = item.isActive(pathname);
+								return (
+									<Link
+										key={item.label}
+										href={item.href}
+										onClick={() => setMobileOpen(false)}
+										className={`flex items-center justify-between px-3 py-2.5 text-sm rounded-xl transition-colors no-underline ${
+											active
+												? "bg-primary/10 text-primary font-semibold"
+												: "text-foreground hover:bg-muted font-medium"
+										}`}
+									>
+										<span>{item.label}</span>
+										<ArrowRight className="h-4 w-4 opacity-50" />
+									</Link>
+								);
+							})}
+						</div>
+
+						<div className="pt-3 border-t border-border/70 space-y-1">
+							<p className="px-3 text-[11px] font-mono uppercase tracking-wider text-muted-foreground/70">
+								More Products
+							</p>
+							{secondaryNavItems.map((item) => (
 								<Link
 									key={item.label}
 									href={item.href}
 									onClick={() => setMobileOpen(false)}
-									className="px-3 py-2 text-sm font-medium rounded-xl text-foreground hover:bg-muted transition-colors no-underline"
+									className="flex items-center justify-between px-3 py-2 text-xs text-muted-foreground hover:text-foreground rounded-lg hover:bg-muted/50 transition-colors no-underline"
 								>
-									{item.label}
+									<span>{item.label}</span>
 								</Link>
 							))}
 							<a
@@ -156,11 +217,13 @@ export function Header() {
 								target="_blank"
 								rel="noopener noreferrer"
 								onClick={() => setMobileOpen(false)}
-								className="px-3 py-2 text-sm font-semibold rounded-xl text-foreground hover:bg-muted transition-colors no-underline"
+								className="flex items-center justify-between px-3 py-2 text-xs text-muted-foreground hover:text-foreground rounded-lg hover:bg-muted/50 transition-colors no-underline font-medium"
 							>
-								Contribute on GitHub
+								<span>GitHub Repository</span>
+								<ArrowRight className="h-3.5 w-3.5 opacity-50" />
 							</a>
 						</div>
+
 						<div className="pt-2 border-t border-border flex flex-col gap-2">
 							<PillButton
 								href={STATIC_ROUTES.TOOLS}
@@ -169,7 +232,7 @@ export function Header() {
 								className="w-full justify-between"
 								onClick={() => setMobileOpen(false)}
 							>
-								Explore All Tools
+								Explore All 600+ Tools
 							</PillButton>
 						</div>
 					</div>

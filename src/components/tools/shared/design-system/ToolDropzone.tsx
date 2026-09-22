@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Upload } from "lucide-react";
+import { Upload, ClipboardPaste } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { DS } from "./tokens";
 
@@ -21,12 +21,14 @@ interface ToolDropzoneProps {
 	/** Disable interaction (e.g. while processing). */
 	disabled?: boolean;
 	className?: string;
+	/** Enable global paste listener for files/images */
+	enablePaste?: boolean;
 }
 
 /**
  * The one canonical file-upload zone for all tools. Keyboard accessible
  * (Enter/Space opens the picker), supports drag-and-drop with a visible
- * active state, and announces itself to screen readers.
+ * active state, clipboard paste (Cmd+V), and announces itself to screen readers.
  */
 export function ToolDropzone({
 	title,
@@ -37,6 +39,7 @@ export function ToolDropzone({
 	icon,
 	disabled = false,
 	className,
+	enablePaste = true,
 }: ToolDropzoneProps) {
 	const inputRef = React.useRef<HTMLInputElement>(null);
 	const [dragging, setDragging] = React.useState(false);
@@ -51,6 +54,32 @@ export function ToolDropzone({
 			openPicker();
 		}
 	};
+
+	// Clipboard Paste Support (Cmd+V / Ctrl+V)
+	React.useEffect(() => {
+		if (!enablePaste || disabled) return;
+
+		const handlePaste = (e: ClipboardEvent) => {
+			const items = e.clipboardData?.items;
+			if (!items) return;
+
+			const pastedFiles: File[] = [];
+			for (let i = 0; i < items.length; i++) {
+				const item = items[i];
+				if (item.kind === "file") {
+					const file = item.getAsFile();
+					if (file) pastedFiles.push(file);
+				}
+			}
+
+			if (pastedFiles.length > 0) {
+				onFiles(multiple ? pastedFiles : pastedFiles.slice(0, 1));
+			}
+		};
+
+		window.addEventListener("paste", handlePaste);
+		return () => window.removeEventListener("paste", handlePaste);
+	}, [enablePaste, disabled, multiple, onFiles]);
 
 	return (
 		<div
@@ -94,13 +123,19 @@ export function ToolDropzone({
 				tabIndex={-1}
 			/>
 			<div className={DS.dropzone.iconChip}>
-				{icon ?? <Upload className="h-8 w-8" />}
+				{icon ?? <Upload className="h-7 w-7 text-foreground" />}
 			</div>
-			<div className="space-y-2">
+			<div className="space-y-1.5">
 				<p className={DS.dropzone.title}>{title}</p>
 				{subtitle ? (
 					<p className={DS.dropzone.subtitle}>{subtitle}</p>
 				) : null}
+				{enablePaste && !disabled && (
+					<p className="text-[11px] font-mono text-muted-foreground/70 inline-flex items-center gap-1 pt-1">
+						<ClipboardPaste className="h-3 w-3 inline" />
+						<span>or paste from clipboard (Ctrl / ⌘+V)</span>
+					</p>
+				)}
 			</div>
 		</div>
 	);

@@ -1,147 +1,130 @@
 "use client";
 
+/**
+ * @file src/components/marketing/HeroSection.tsx
+ * @description Redesigned intent-first Hero section for SopKit.
+ * Features action-oriented launcher, cycling task placeholders, quick-task chips,
+ * local-first workspace history, and clean trust capabilities.
+ */
+
 import * as React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Search, Sparkles, X, ArrowUpRight, Layers, FileText, Image as ImageIcon, Code2, Lock } from "lucide-react";
+import {
+	Search,
+	Sparkles,
+	X,
+	ArrowRight,
+	ShieldCheck,
+	Clock,
+	Star,
+	Cpu,
+	Zap,
+} from "lucide-react";
 import { PillButton } from "@/components/ui/pill-button";
 import { Container } from "@/components/layout/Container";
 import { type SearchToolRecord } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
+import { searchTools, type SearchResult } from "@/features/search/engine";
+import { useUserToolbox } from "@/hooks/useUserToolbox";
 import { trackSearch, trackToolAction } from "@/lib/analytics";
+import { ProcessingBadge } from "@/components/shared/ProcessingBadge";
+import { resolveDataProcessing } from "@/features/tools/archetypes";
 
-interface ShowcaseCard {
-	title: string;
-	tag: string;
-	badge: string;
-	metric: string;
-	href: string;
-	icon: React.ComponentType<{ className?: string }>;
-	rotation: string;
-	color: string;
-}
-
-const SHOWCASE_CARDS: ShowcaseCard[] = [
-	{
-		title: "Image Compressor",
-		tag: "Browser Canvas",
-		badge: "Adaptive",
-		metric: "Custom KB",
-		href: "/image-compressor",
-		icon: ImageIcon,
-		rotation: "-rotate-12 -translate-x-28 sm:-translate-x-32 translate-y-6",
-		color: "text-sky-600 dark:text-sky-400",
-	},
-	{
-		title: "PDF Merger",
-		tag: "Zero Uploads",
-		badge: "AES-256",
-		metric: "100% Client-Side",
-		href: "/merge-pdf-online",
-		icon: FileText,
-		rotation: "-rotate-4 -translate-x-10 sm:-translate-x-12 -translate-y-2",
-		color: "text-rose-600 dark:text-rose-400",
-	},
-	{
-		title: "JSON Formatter",
-		tag: "Developer",
-		badge: "Sub-ms",
-		metric: "Syntax Tree",
-		href: "/json-formatter",
-		icon: Code2,
-		rotation: "rotate-4 translate-x-10 sm:translate-x-12 translate-y-2",
-		color: "text-violet-600 dark:text-violet-400",
-	},
-	{
-		title: "Background Remover",
-		tag: "AI Canvas",
-		badge: "Local GPU",
-		metric: "Instant Crop",
-		href: "/background-remover",
-		icon: Layers,
-		rotation: "rotate-12 translate-x-28 sm:translate-x-32 translate-y-8",
-		color: "text-emerald-600 dark:text-emerald-400",
-	},
+const CYCLING_INTENTS = [
+	"compress an image to 50KB...",
+	"combine multiple PDFs...",
+	"format and inspect JSON...",
+	"remove image background...",
+	"calculate semester CGPA...",
+	"generate a secure password...",
+	"create a custom QR code...",
+	"count words and reading time...",
 ];
 
-const POPULAR_QUICK_LINKS = [
-	{ name: "PDF Merge", route: "/merge-pdf-online" },
-	{ name: "Image Compress", route: "/image-compressor" },
-	{ name: "JSON Format", route: "/json-formatter" },
-	{ name: "UUID Generator", route: "/uuid-generator" },
-	{ name: "Word Counter", route: "/word-counter" },
+const QUICK_TASK_CHIPS = [
+	{ label: "Compress Image", href: "/image-compressor", icon: "🖼️" },
+	{ label: "Merge PDF", href: "/merge-pdf-online", icon: "📑" },
+	{ label: "Format JSON", href: "/json-formatter", icon: "💻" },
+	{ label: "Remove Background", href: "/background-remover", icon: "✨" },
+	{ label: "Calculate CGPA", href: "/cgpa-calculator", icon: "🎓" },
+	{ label: "Generate QR", href: "/qr-code-generator", icon: "📱" },
+	{ label: "Word Counter", href: "/word-counter", icon: "📝" },
+	{ label: "Password Generator", href: "/password-generator", icon: "🔐" },
 ];
 
 export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 	const [query, setQuery] = React.useState("");
+	const [placeholderIndex, setPlaceholderIndex] = React.useState(0);
 	const [showSuggestions, setShowSuggestions] = React.useState(false);
 	const [selectedIndex, setSelectedIndex] = React.useState(-1);
 	const router = useRouter();
 	const inputRef = React.useRef<HTMLInputElement>(null);
 	const dropdownRef = React.useRef<HTMLDivElement>(null);
 
-	const allTools = React.useMemo(() => {
-		return tools || [];
-	}, [tools]);
+	const { recents, favorites, isHydrated, recordRecent, recordSearch } = useUserToolbox();
 
-	const filteredTools = React.useMemo(() => {
-		if (!query.trim()) return allTools.slice(0, 6);
-		const q = query.toLowerCase().trim();
-		return allTools
-			.filter(
-				(t) =>
-					(t?.name && t.name.toLowerCase().includes(q)) ||
-					(t?.description && t.description.toLowerCase().includes(q)) ||
-					(t?.id && t.id.toLowerCase().includes(q)) ||
-					(t?.category && t.category.toLowerCase().includes(q))
-			)
-			.slice(0, 6);
-	}, [query, allTools]);
+	// Cycle placeholder text every 3.2 seconds if not currently typing
+	React.useEffect(() => {
+		if (query) return;
+		const interval = setInterval(() => {
+			setPlaceholderIndex((prev) => (prev + 1) % CYCLING_INTENTS.length);
+		}, 3200);
+		return () => clearInterval(interval);
+	}, [query]);
+
+	// Live search results
+	const searchResults = React.useMemo<SearchResult[]>(() => {
+		if (!query.trim()) return [];
+		return searchTools(query, 6);
+	}, [query]);
 
 	const handleSearch = (e: React.FormEvent) => {
 		e.preventDefault();
-		if (selectedIndex >= 0 && selectedIndex < filteredTools.length) {
-			const targetTool = filteredTools[selectedIndex];
-			trackSearch(query, filteredTools.length);
+		if (selectedIndex >= 0 && selectedIndex < searchResults.length) {
+			const targetTool = searchResults[selectedIndex].tool;
+			const route = targetTool.slug ? `/${targetTool.slug}` : `/${targetTool.id}`;
+			recordRecent({
+				id: targetTool.id,
+				name: targetTool.name,
+				route,
+				category: targetTool.category,
+			});
+			trackSearch(query, searchResults.length);
 			trackToolAction(targetTool.id, "start");
-			router.push(targetTool.route);
+			router.push(route);
 			setShowSuggestions(false);
 			return;
 		}
+
 		if (query.trim()) {
-			trackSearch(query, filteredTools.length);
-			router.push(`/search?q=${encodeURIComponent(query.trim())}`);
+			recordSearch(query);
+			trackSearch(query, searchResults.length);
+			if (searchResults.length === 1) {
+				const single = searchResults[0].tool;
+				const route = single.slug ? `/${single.slug}` : `/${single.id}`;
+				router.push(route);
+			} else {
+				router.push(`/search?q=${encodeURIComponent(query.trim())}`);
+			}
 			setShowSuggestions(false);
 		}
 	};
 
 	const handleKeyDown = (e: React.KeyboardEvent) => {
-		if (!showSuggestions || filteredTools.length === 0) return;
+		if (!showSuggestions || searchResults.length === 0) return;
 		if (e.key === "ArrowDown") {
 			e.preventDefault();
-			setSelectedIndex((prev) => (prev < filteredTools.length - 1 ? prev + 1 : 0));
+			setSelectedIndex((prev) => (prev < searchResults.length - 1 ? prev + 1 : 0));
 		} else if (e.key === "ArrowUp") {
 			e.preventDefault();
-			setSelectedIndex((prev) => (prev > 0 ? prev - 1 : filteredTools.length - 1));
+			setSelectedIndex((prev) => (prev > 0 ? prev - 1 : searchResults.length - 1));
 		} else if (e.key === "Escape") {
 			setShowSuggestions(false);
 		}
 	};
 
-	// Global shortcut Cmd+K or Ctrl+K
-	React.useEffect(() => {
-		const handleGlobalKeyDown = (e: KeyboardEvent) => {
-			if ((e.metaKey || e.ctrlKey) && e.key === "k") {
-				e.preventDefault();
-				inputRef.current?.focus();
-				setShowSuggestions(true);
-			}
-		};
-		window.addEventListener("keydown", handleGlobalKeyDown);
-		return () => window.removeEventListener("keydown", handleGlobalKeyDown);
-	}, []);
-
-	// Click outside
+	// Click outside to close dropdown
 	React.useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
 			if (
@@ -158,48 +141,51 @@ export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 	}, []);
 
 	return (
-		<div className="relative pt-6 pb-20 sm:pb-28 overflow-hidden bg-gradient-to-b from-sky-500/10 via-background to-background dark:from-sky-950/20 dark:via-background dark:to-background">
+		<section className="relative pt-6 pb-12 sm:pb-16 overflow-hidden border-b border-border/40 bg-gradient-to-b from-surface-muted/30 via-background to-background">
 			<Container size="xl">
-				<div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center pt-8 sm:pt-14">
-					{/* Left: Editorial Headline & Search */}
-					<div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
-						{/* Trust Pill */}
-						<div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-muted border border-border text-foreground text-xs font-medium shadow-xs select-none">
-							<Lock className="h-3.5 w-3.5 text-accent" />
-							<span>100% In-Browser Sandbox</span>
-							<span className="text-muted-foreground/40">•</span>
-							<span className="text-muted-foreground">{SITE_CONFIG.toolCountString} Free Tools</span>
-						</div>
+				<div className="max-w-4xl mx-auto text-center space-y-8 pt-4 sm:pt-8">
+					{/* Trust & Capability Badge */}
+					<div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-muted/80 border border-border/80 text-foreground text-xs font-medium shadow-xs select-none">
+						<span className="flex h-2 w-2 relative">
+							<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+							<span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+						</span>
+						<span className="font-semibold">{SITE_CONFIG.toolCountString} Utilities</span>
+						<span className="text-muted-foreground/50">·</span>
+						<span className="text-muted-foreground">100% In-Browser Privacy</span>
+						<span className="text-muted-foreground/50">·</span>
+						<span className="text-muted-foreground">Free Forever</span>
+					</div>
 
-						{/* Editorial Serif Display Headline */}
-						<div className="space-y-4">
-							<h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-foreground leading-[1.08]">
-								Free online tools, <br />
-								<span className="italic">crafted for speed.</span>
-							</h1>
-							<p className="font-sans text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-								A comprehensive collection of zero-upload browser utilities. Convert, edit, compress, and calculate with 100% local privacy on your own hardware.
-							</p>
-						</div>
+					{/* Calm, Confident Headline */}
+					<div className="space-y-3 sm:space-y-4">
+						<h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-normal tracking-tight text-foreground leading-[1.12]">
+							Free tools for whatever you&apos;re <br className="hidden sm:inline" />
+							<span className="italic font-normal">trying to do.</span>
+						</h1>
+						<p className="font-sans text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+							Fast, zero-upload utilities running locally in your browser. Compress images, merge documents, convert code, and crunch numbers without sending your files anywhere.
+						</p>
+					</div>
 
-						{/* Search Input Box */}
+					{/* Interactive Intent Launcher */}
+					<div className="relative max-w-2xl mx-auto">
 						<form
 							onSubmit={handleSearch}
-							className="relative w-full max-w-xl mx-auto lg:mx-0 group z-30"
+							className="relative w-full group z-30"
 						>
-							<div className="relative flex items-center shadow-lg shadow-black/5 dark:shadow-black/20 border border-border hover:border-foreground/40 focus-within:border-primary focus-within:ring-4 focus-within:ring-primary/10 rounded-full bg-card backdrop-blur-xl transition-all duration-200">
-								<Search className="absolute left-4.5 h-4.5 w-4.5 text-muted-foreground group-focus-within:text-foreground transition-colors shrink-0" />
+							<div className="relative flex items-center shadow-lg shadow-black/5 dark:shadow-black/20 border border-border/90 hover:border-foreground/30 focus-within:border-primary focus-within:ring-4 focus-within:ring-primary/10 rounded-2xl bg-card/95 backdrop-blur-xl transition-all duration-200">
+								<Search className="absolute left-4.5 h-5 w-5 text-muted-foreground group-focus-within:text-foreground transition-colors shrink-0" />
 								<input
 									ref={inputRef}
 									type="text"
 									role="combobox"
 									aria-autocomplete="list"
-									aria-expanded={showSuggestions && filteredTools.length > 0}
+									aria-expanded={showSuggestions && searchResults.length > 0}
 									aria-controls="hero-search-listbox"
-									aria-activedescendant={selectedIndex >= 0 && selectedIndex < filteredTools.length ? `search-opt-${filteredTools[selectedIndex].id}` : undefined}
-									aria-label="Search all tools"
-									placeholder="Search by name, format, or task (e.g. PDF, WebP, JSON)..."
-									className="h-12 sm:h-13 pl-12 pr-28 bg-transparent border-none text-sm sm:text-base focus:outline-none placeholder:text-muted-foreground/50 w-full text-foreground font-medium"
+									aria-label="What do you want to do?"
+									placeholder={`What do you want to do? (e.g. ${CYCLING_INTENTS[placeholderIndex]}`}
+									className="h-13 sm:h-14 pl-12 pr-28 sm:pr-32 bg-transparent border-none text-sm sm:text-base focus:outline-hidden placeholder:text-muted-foreground/60 w-full text-foreground font-medium"
 									value={query}
 									onChange={(e) => {
 										setQuery(e.target.value);
@@ -211,7 +197,7 @@ export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 									autoComplete="off"
 								/>
 
-								<div className="absolute right-2 flex items-center gap-1.5">
+								<div className="absolute right-2.5 flex items-center gap-1.5">
 									{query && (
 										<button
 											type="button"
@@ -221,149 +207,177 @@ export function HeroSection({ tools }: { tools?: SearchToolRecord[] }) {
 												inputRef.current?.focus();
 											}}
 											className="p-1 text-muted-foreground hover:text-foreground rounded-full transition-colors cursor-pointer"
-											aria-label="Clear search"
+											aria-label="Clear search query"
 										>
 											<X className="h-4 w-4" />
 										</button>
 									)}
-									<kbd className="hidden sm:inline-flex items-center px-2 py-0.5 rounded-md bg-muted text-[10px] font-mono text-muted-foreground select-none">
+									<kbd className="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded-md bg-muted text-[10px] font-mono text-muted-foreground select-none">
 										⌘K
 									</kbd>
 									<PillButton type="submit" size="sm" withArrow>
-										Search
+										Launch
 									</PillButton>
 								</div>
 							</div>
 
-							{/* Autocomplete Dropdown */}
-							{showSuggestions && filteredTools.length > 0 && (
+							{/* Dropdown Live Results */}
+							{showSuggestions && query.trim().length > 0 && (
 								<div
 									ref={dropdownRef}
 									role="listbox"
 									id="hero-search-listbox"
-									aria-label="Tool search results"
-									className="absolute left-0 right-0 top-full mt-2 bg-card border border-border shadow-2xl z-50 max-h-72 overflow-y-auto rounded-2xl p-1.5 text-left divide-y divide-border/20 backdrop-blur-2xl"
+									aria-label="Matching tools"
+									className="absolute left-0 right-0 top-full mt-2 bg-card border border-border shadow-2xl z-50 max-h-80 overflow-y-auto rounded-2xl p-2 text-left space-y-1 backdrop-blur-2xl"
 								>
-									<div className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground/60 flex items-center justify-between" aria-hidden="true">
-										<span>{query.trim() ? "Matching Utilities" : "Quick Suggestions"}</span>
-										<span className="text-[9px] font-normal lowercase">↑↓ to navigate</span>
-									</div>
-									{filteredTools.map((tool, idx) => {
-										const isSelected = idx === selectedIndex;
-										return (
-											<div
-												key={tool.id}
-												id={`search-opt-${tool.id}`}
-												role="option"
-												aria-selected={isSelected}
-												tabIndex={-1}
-												onMouseDown={(e) => e.preventDefault()}
-												onClick={() => {
-													setQuery(tool.name);
-													setShowSuggestions(false);
-													router.push(tool.route);
-												}}
-												className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-colors cursor-pointer ${
-													isSelected ? "bg-primary/10 text-primary" : "hover:bg-muted/60"
-												}`}
-											>
-												<div className="flex items-center gap-3 min-w-0">
-													<Search className="h-3.5 w-3.5 text-muted-foreground shrink-0" />
-													<div className="min-w-0">
-														<p className="text-xs sm:text-sm font-semibold text-foreground truncate">{tool.name}</p>
-														{tool.description && (
-															<p className="text-[11px] text-muted-foreground truncate max-w-sm">{tool.description}</p>
-														)}
-													</div>
-												</div>
-												<span className="text-[9px] font-bold uppercase tracking-wider text-muted-foreground bg-surface-muted px-2 py-0.5 rounded-full shrink-0 ml-2">
-													{(tool.category || "").replace("-tools", "") || "utility"}
-												</span>
+									{searchResults.length > 0 ? (
+										<>
+											<div className="px-3 py-1.5 text-[10px] font-mono font-bold uppercase tracking-wider text-muted-foreground/60 flex items-center justify-between" aria-hidden="true">
+												<span>Matching Tools ({searchResults.length})</span>
+												<span className="text-[9px] font-normal lowercase">Use ↑↓ and Enter</span>
 											</div>
-										);
-									})}
+											{searchResults.map((result, idx) => {
+												const tool = result.tool;
+												const isSelected = idx === selectedIndex;
+												const route = tool.slug ? `/${tool.slug}` : `/${tool.id}`;
+												const dataProcessing = resolveDataProcessing(tool);
+
+												return (
+													<div
+														key={tool.id}
+														role="option"
+														aria-selected={isSelected}
+														onMouseDown={(e) => e.preventDefault()}
+														onClick={() => {
+															recordRecent({
+																id: tool.id,
+																name: tool.name,
+																route,
+																category: tool.category,
+															});
+															router.push(route);
+															setShowSuggestions(false);
+														}}
+														onMouseEnter={() => setSelectedIndex(idx)}
+														className={`flex items-center justify-between p-3 rounded-xl cursor-pointer transition-colors ${
+															isSelected ? "bg-primary/10 text-primary" : "hover:bg-muted/60"
+														}`}
+													>
+														<div className="min-w-0 pr-3">
+															<div className="flex items-center gap-2">
+																<p className="text-sm font-semibold text-foreground truncate">
+																	{tool.name}
+																</p>
+																{tool.category && (
+																	<span className="text-[10px] font-mono text-muted-foreground bg-muted/70 px-1.5 py-0.5 rounded shrink-0">
+																		{tool.category.replace("-tools", "")}
+																	</span>
+																)}
+															</div>
+															{result.explanation ? (
+																<p className="text-xs text-primary/80 font-medium truncate mt-0.5">
+																	✦ {result.explanation}
+																</p>
+															) : (
+																<p className="text-xs text-muted-foreground truncate mt-0.5">
+																	{tool.description}
+																</p>
+															)}
+														</div>
+
+														<div className="flex items-center gap-2 shrink-0">
+															<ProcessingBadge
+																model={dataProcessing.type}
+																compact
+																interactive={false}
+															/>
+															<ArrowRight className="h-4 w-4 text-muted-foreground" />
+														</div>
+													</div>
+												);
+											})}
+										</>
+									) : (
+										<div className="p-4 text-center text-xs text-muted-foreground">
+											No direct match found. Press Enter to search all 600+ tools for &ldquo;{query}&rdquo;.
+										</div>
+									)}
 								</div>
 							)}
 						</form>
 
-						{/* Quick Trend Chips */}
-						<div className="flex flex-wrap items-center justify-center lg:justify-start gap-1.5 pt-1">
-							<span className="text-xs text-muted-foreground flex items-center gap-1 mr-1">
-								<Sparkles className="h-3 w-3 text-accent" />
-								Popular:
+						{/* Quick Task Chips */}
+						<div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 pt-3">
+							<span className="text-xs text-muted-foreground font-medium flex items-center gap-1 mr-1">
+								<Sparkles className="h-3 w-3 text-primary" />
+								Common Tasks:
 							</span>
-							{POPULAR_QUICK_LINKS.map((item) => (
+							{QUICK_TASK_CHIPS.map((chip) => (
 								<Link
-									key={item.route}
-									href={item.route}
-									className="text-xs px-3 py-1 rounded-full bg-surface-muted hover:bg-primary hover:text-primary-foreground border border-border/80 hover:border-transparent text-muted-foreground transition-all duration-150 no-underline"
+									key={chip.href}
+									href={chip.href}
+									className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-surface-muted/90 hover:bg-primary hover:text-primary-foreground border border-border/80 hover:border-transparent text-foreground font-medium transition-all duration-150 no-underline shadow-2xs"
 								>
-									{item.name}
+									<span>{chip.icon}</span>
+									<span>{chip.label}</span>
 								</Link>
 							))}
 						</div>
 					</div>
 
-					{/* Right: Fanned / Tilted Showcase Cards (Inspired by Reference Image) */}
-					<div className="lg:col-span-5 relative flex items-center justify-center min-h-[380px] sm:min-h-[440px] select-none py-6">
-						<div className="relative w-full max-w-lg h-80 flex items-center justify-center">
-							{SHOWCASE_CARDS.map((card, idx) => {
-								const Icon = card.icon;
-								return (
+					{/* Personal Workspace Bar (Recents / Favorites / Curated) */}
+					{isHydrated && (recents.length > 0 || favorites.length > 0) ? (
+						<div className="pt-4 border-t border-border/50 text-left max-w-3xl mx-auto">
+							<div className="flex items-center justify-between mb-2.5 px-1">
+								<span className="text-xs font-semibold text-muted-foreground flex items-center gap-1.5 uppercase tracking-wider font-mono">
+									<Clock className="h-3.5 w-3.5" />
+									Your Recent Workspace
+								</span>
+								<Link
+									href="/tools"
+									className="text-xs text-primary hover:underline font-medium"
+								>
+									View All Tools →
+								</Link>
+							</div>
+
+							<div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+								{recents.slice(0, 4).map((item) => (
 									<Link
-										key={card.title}
-										href={card.href}
-										className={`group absolute w-56 sm:w-60 p-5 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/90 dark:border-stone-800 shadow-xl dark:shadow-2xl transition-all duration-300 hover:z-50 hover:scale-110 hover:rotate-0 hover:shadow-2xl cursor-pointer no-underline ${card.rotation}`}
-										style={{ zIndex: idx + 10 }}
+										key={item.id}
+										href={item.route}
+										className="p-3 rounded-xl bg-card border border-border/70 hover:border-primary/50 hover:shadow-xs transition-all no-underline group block"
 									>
-										{/* Card Header with Icon & Arrow Badge */}
-										<div className="flex items-center justify-between mb-4">
-											<div className={`w-10 h-10 rounded-xl bg-stone-100 dark:bg-stone-800 flex items-center justify-center ${card.color}`}>
-												<Icon className="h-5 w-5" />
-											</div>
-											<div className="w-7 h-7 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 flex items-center justify-center text-stone-500 dark:text-stone-400 group-hover:bg-stone-900 group-hover:text-white dark:group-hover:bg-stone-100 dark:group-hover:text-stone-900 transition-colors shadow-xs">
-												<ArrowUpRight className="h-3.5 w-3.5" />
-											</div>
-										</div>
-
-										{/* Card Body */}
-										<div className="space-y-1 mb-4">
-											<h3 className="font-sans text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-primary transition-colors">
-												{card.title}
-											</h3>
-											<p className="text-xs text-stone-500 dark:text-stone-400">
-												{card.tag}
-											</p>
-										</div>
-
-										{/* Card Footer Metric Pill */}
-										<div className="pt-3 border-t border-stone-200/80 dark:border-stone-800 flex items-center justify-between text-xs">
-											<span className="font-mono text-[11px] text-stone-500 dark:text-stone-400">
-												{card.badge}
-											</span>
-											<span className="font-bold text-stone-900 dark:text-stone-100">
-												{card.metric}
-											</span>
-										</div>
+										<p className="text-xs font-semibold text-foreground truncate group-hover:text-primary transition-colors">
+											{item.name}
+										</p>
+										<p className="text-[10px] text-muted-foreground font-mono mt-0.5">
+											{item.category || "utility"}
+										</p>
 									</Link>
-								);
-							})}
+								))}
+							</div>
 						</div>
-					</div>
+					) : (
+						<div className="pt-4 border-t border-border/50 text-center max-w-2xl mx-auto">
+							<div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted-foreground font-medium">
+								<span className="flex items-center gap-1.5">
+									<ShieldCheck className="h-3.5 w-3.5 text-emerald-500" />
+									Zero Uploads to External Servers
+								</span>
+								<span className="flex items-center gap-1.5">
+									<Zap className="h-3.5 w-3.5 text-amber-500" />
+									Sub-Millisecond WebAssembly
+								</span>
+								<span className="flex items-center gap-1.5">
+									<Cpu className="h-3.5 w-3.5 text-sky-500" />
+									Local Client Hardware Acceleration
+								</span>
+							</div>
+						</div>
+					)}
 				</div>
 			</Container>
-
-			{/* Organic Torn Paper Edge Transition (from Reference Image) */}
-			<div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none pointer-events-none">
-				<svg
-					aria-hidden="true"
-					className="relative block w-full h-8 sm:h-12 text-background fill-current"
-					viewBox="0 0 1200 120"
-					preserveAspectRatio="none"
-				>
-					<path d="M0,0 C150,90 350,-40 500,45 C650,110 900,10 1200,60 L1200,120 L0,120 Z" />
-				</svg>
-			</div>
-		</div>
+		</section>
 	);
 }

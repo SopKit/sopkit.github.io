@@ -20,6 +20,19 @@ describe("Search Engine", () => {
     expect(results.some((r) => r.tool.name.toLowerCase().includes("compress"))).toBe(true);
   });
 
+  it("finds tools by task intent and provides explanation", () => {
+    const results = searchTools("make photo smaller");
+    expect(results.length).toBeGreaterThan(0);
+    expect(results[0].matchType).toBe("intent");
+    expect(results[0].explanation).toBeDefined();
+    expect(results[0].tool.name.toLowerCase()).toContain("compress");
+
+    const pdfResults = searchTools("combine pdf");
+    expect(pdfResults.length).toBeGreaterThan(0);
+    expect(pdfResults[0].matchType).toBe("intent");
+    expect(pdfResults[0].tool.name.toLowerCase()).toContain("merge");
+  });
+
   it("verifies all getSearchToolRecords have non-empty string categories", async () => {
     const { getSearchToolRecords } = await import("../../src/lib/tools");
     const records = getSearchToolRecords();
