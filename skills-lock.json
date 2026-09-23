@@ -20,6 +20,50 @@
       "source": "resciencelab/opc-skills",
       "sourceType": "github",
       "computedHash": "56f90ba46b36563bb5461feb8462aed9283e74dfc4cdac2a98c42c4bc86a95be"
+    },
+    "competitive-landscape": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
+    },
+    "competitor-analysis": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
+    },
+    "deslop": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
+    },
+    "keyword-clustering": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
+    },
+    "keyword-research": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
+    },
+    "link-prospecting": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
+    },
+    "local-seo": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
+    },
+    "openseo-review-web-content": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
+    },
+    "seo-coach": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
+    },
+    "seo-project-setup": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
+    },
+    "seo-report": {
+      "source": "every-app/open-seo",
+      "sourceType": "github"
     }
   }
 }

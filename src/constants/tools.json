@@ -54,7 +54,7 @@
           "description": "Create compelling, aesthetic social media bios and profile elevator pitches tailored for Instagram, Twitter/X, TikTok, and LinkedIn.",
           "route": "/bio-generator",
           "popular": false,
-          "seoDescription": "Create aesthetic, catchy bios for Instagram, Twitter/X, TikTok and LinkedIn in seconds. Elevator pitches and profile ideas — free, no signup needed.",
+          "seoDescription": "Create aesthetic, catchy social media bios for Instagram, Twitter/X, TikTok, and LinkedIn in seconds. Elevator pitches and profile ideas free with zero signup.",
           "seoTitle": "Free Bio Generator — Aesthetic Social Media Bios"
         },
         {
@@ -63,8 +63,8 @@
           "description": "Generate creative and catchy business name ideas for your brand, startup, or company. Free online business name generator with AI-powered suggestions — all client-side, no signup required.",
           "route": "/business-name-generator",
           "popular": false,
-          "seoDescription": "Generate catchy business, brand and startup name ideas instantly with AI-powered suggestions. Free tool, private, no signup required.",
-          "seoTitle": "Business Name Generator — Brand & Startup Ideas"
+          "seoDescription": "Generate creative and brandable business name ideas for your startup, shop, or agency instantly. Free browser-based idea generator with zero signups needed.",
+          "seoTitle": "Free Business Name Generator Online — Catchy Brand Ideas"
         },
         {
           "id": "ai-poem-generator",
@@ -141,8 +141,8 @@
           "description": "Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.",
           "route": "/leave-application-generator",
           "popular": false,
-          "seoDescription": "Free Leave Application Generator online: draft formal leave requests for office, school, or college. Instant copy and PDF export, 100% private.",
-          "seoTitle": "Leave Application Generator — Office & School Letters"
+          "seoDescription": "Draft formal leave applications for office, university, or school instantly online. Customize dates, medical reasons, and export to PDF with complete privacy.",
+          "seoTitle": "Free Leave Application Generator — Office & School Drafts"
         },
         {
           "id": "resignation-letter-generator",
@@ -150,8 +150,8 @@
           "description": "Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.",
           "route": "/resignation-letter-generator",
           "popular": true,
-          "seoDescription": "Generate a professional resignation letter in seconds — formal, polite or short-notice templates. Copy, print or download free. No signup required.",
-          "seoTitle": "Resignation Letter Generator — Formal Templates Free"
+          "seoDescription": "Generate professional resignation letters in seconds with formal, polite, or short-notice templates. Copy, print, or export locally without signing up.",
+          "seoTitle": "Free Resignation Letter Generator Online — Formal Templates"
         },
         {
           "id": "bio-data-maker",
@@ -168,7 +168,7 @@
           "description": "Generate optimized Instagram bios with stylish fonts, emojis, and formatting. Free online Instagram bio generator for personal profiles, business accounts, and creators — 100% client-side, no signup.",
           "route": "/instagram-bio-generator",
           "popular": true,
-          "seoDescription": "Generate stylish Instagram bios with fonts, emojis and line breaks for personal, business and creator profiles. Copy in one tap — free, no signup.",
+          "seoDescription": "Generate stylish Instagram bios with fonts, emojis, and line breaks for personal, business, and creator profiles. Copy instantly with free private formatting.",
           "seoTitle": "Free Instagram Bio Generator — Create Stylish Bios Online"
         },
         {
@@ -177,8 +177,8 @@
           "description": "Generate scroll-stopping Instagram captions with hooks, CTAs and hashtag sets tailored to your topic. Customize and copy in one click — free.",
           "route": "/instagram-caption-generator",
           "popular": false,
-          "seoDescription": "Generate engaging Instagram captions with hooks and hashtag ideas tailored to your post. Customize, copy and publish faster — free, no signup needed.",
-          "seoTitle": "Instagram Caption Generator — Hooks & Hashtags"
+          "seoDescription": "Generate engaging Instagram captions with viral hooks and hashtag ideas tailored to your posts and reels. Copy and publish faster with free client-side AI copy.",
+          "seoTitle": "Free Instagram Caption Generator Online — Hooks & Hashtags"
         },
         {
           "id": "hashtag-generator",
@@ -186,8 +186,8 @@
           "description": "Generate reach-boosting hashtags for Instagram Reels, TikTok, YouTube and X. Mix niche and trending tags, copy the full set in one click — free.",
           "route": "/hashtag-generator",
           "popular": false,
-          "seoDescription": "Generate trending hashtags for Instagram, TikTok, YouTube and X. Niche plus broad tags to boost reach — copy the full set free, no signup.",
-          "seoTitle": "Hashtag Generator — Reach-Boosting Tags for Reels"
+          "seoDescription": "Generate trending hashtags for Instagram, TikTok, YouTube, and X. Discover niche and viral tags to maximize reach and engagement completely free online.",
+          "seoTitle": "Free Hashtag Generator Online — Reach-Boosting Tags"
         },
         {
           "id": "slogan-generator",
@@ -195,8 +195,8 @@
           "description": "Generate catchy slogans and taglines for your brand, startup, product or campaign. Browse ideas, refine and copy — free, no signup.",
           "route": "/slogan-generator",
           "popular": false,
-          "seoDescription": "Create memorable slogans and taglines for brands, startups, products and campaigns. Unlimited ideas to browse and refine — free, no signup.",
-          "seoTitle": "Slogan Generator — Catchy Taglines for Brands"
+          "seoDescription": "Create memorable slogans and advertising taglines for brands, startups, and campaigns. Browse and customize punchy marketing copy completely free online.",
+          "seoTitle": "Free Slogan Generator Online — Catchy Taglines for Brands"
         },
         {
           "id": "logo-idea-generator",
@@ -213,8 +213,8 @@
           "description": "Write a keyword-rich Google Business Profile description that ranks in local search. Service-focused copy within GBP limits — free, no signup.",
           "route": "/google-business-profile-description-generator",
           "popular": true,
-          "seoDescription": "Generate an SEO-ready Google Business Profile description with services and local keywords. Stand out on Maps and Search — free, no signup.",
-          "seoTitle": "Google Business Profile Description Generator"
+          "seoDescription": "Generate SEO-ready Google Business Profile descriptions with local keywords and services. Boost Google Maps rankings and local visibility 100% free online.",
+          "seoTitle": "Free GBP Description Generator Online — Optimize Local Maps"
         },
         {
           "id": "review-reply-generator",
@@ -222,8 +222,8 @@
           "description": "Reply to Google, Yelp and Trustpilot reviews like a pro — polite thanks for praise, calm recovery for complaints. Copy-ready drafts, free.",
           "route": "/review-reply-generator",
           "popular": true,
-          "seoDescription": "Generate professional replies to positive and negative reviews for Google, Yelp and more. Protect your rating and save time — free, no signup.",
-          "seoTitle": "Review Reply Generator — Respond to Google Reviews"
+          "seoDescription": "Generate professional replies to positive and negative customer reviews for Google, Yelp, and Trustpilot. Protect ratings and save time with private drafts.",
+          "seoTitle": "Free Review Reply Generator Online — Respond to Reviews"
         },
         {
           "id": "restaurant-menu-description-generator",
@@ -231,8 +231,8 @@
           "description": "Write mouth-watering menu descriptions for dishes, cafes and restaurants. Sensory words that sell specials, combos and chef signatures — free.",
           "route": "/restaurant-menu-description-generator",
           "popular": false,
-          "seoDescription": "Create appetizing descriptions for restaurant dishes, cafes and bakeries. Words that make customers order more — free generator, no signup.",
-          "seoTitle": "Menu Description Generator — Appetizing Dish Copy"
+          "seoDescription": "Create appetizing menu descriptions for restaurants, cafes, and bakeries. Use sensory words that drive orders with fast, 100% private browser generation.",
+          "seoTitle": "Free Menu Description Generator Online — Appetizing Copy"
         },
         {
           "id": "client-proposal-generator",
@@ -240,8 +240,8 @@
           "description": "Draft winning freelance proposals with scope, pricing, timeline and CTA sections. Customize for Upwork or direct clients — free, no signup.",
           "route": "/client-proposal-generator",
           "popular": true,
-          "seoDescription": "Generate persuasive client proposals with scope, deliverables, pricing and timelines. Win more freelance work — free, no signup required.",
-          "seoTitle": "Client Proposal Generator — Win Freelance Projects"
+          "seoDescription": "Generate persuasive client proposals with scope, deliverables, milestones, and pricing. Win freelance projects faster with free browser-based proposal copy.",
+          "seoTitle": "Free Client Proposal Generator Online — Win Freelance Work"
         },
         {
           "id": "payment-reminder-generator",
@@ -249,8 +249,8 @@
           "description": "Write firm-but-polite payment reminders and overdue invoice emails. Escalating tones from nudge to final notice — copy and send free.",
           "route": "/payment-reminder-generator",
           "popular": false,
-          "seoDescription": "Create polite payment reminder messages and overdue invoice emails, from gentle nudges to final notices. Get paid faster — free, no signup.",
-          "seoTitle": "Payment Reminder Generator — Polite Overdue Notices"
+          "seoDescription": "Create polite payment reminder messages and overdue invoice emails, from friendly nudges to firm final notices. Get paid faster with 100% free private copy.",
+          "seoTitle": "Free Payment Reminder Generator — Polite Overdue Notices"
         },
         {
           "id": "product-description-generator",
@@ -258,8 +258,8 @@
           "description": "Write benefit-driven product descriptions for Shopify, Amazon and Etsy with features, specs and SEO keywords. Copy-ready listings, free.",
           "route": "/product-description-generator",
           "popular": true,
-          "seoDescription": "Generate SEO-friendly product descriptions with benefits, features and specs for Shopify, Amazon and Etsy. Sell more — free, no signup.",
-          "seoTitle": "Product Description Generator — Listings That Sell"
+          "seoDescription": "Generate SEO-friendly product descriptions with benefits, features, and specs for Shopify, Amazon, and Etsy. Boost conversions with instant, free listing copy.",
+          "seoTitle": "Free Product Description Generator — High-Converting Copy"
         },
         {
           "id": "refund-policy-generator",
@@ -267,8 +267,8 @@
           "description": "Generate a clear refund and returns policy for your store — windows, conditions, exclusions and process steps. Store-ready text, free.",
           "route": "/refund-policy-generator",
           "popular": false,
-          "seoDescription": "Create a professional refund and return policy covering windows, conditions and procedures. Build buyer trust in minutes — free, no signup.",
-          "seoTitle": "Refund Policy Generator — Returns Policy Template"
+          "seoDescription": "Create professional refund and return policies covering eligibility windows, conditions, and processing steps. Protect your store and build buyer trust free.",
+          "seoTitle": "Free Refund Policy Generator Online — Return Templates"
         },
         {
           "id": "love-calculator",
@@ -1075,8 +1075,8 @@
           "description": "Generate short, human internship messages for LinkedIn, email, and founder outreach. Perfect for students and freshers.",
           "route": "/internship-message-generator",
           "popular": false,
-          "seoDescription": "Get short, human internship outreach messages for LinkedIn, email and founders. Personalized drafts students can send today — free.",
-          "seoTitle": "Internship Request Message — LinkedIn & Email"
+          "seoDescription": "Draft concise, personalized internship outreach messages for LinkedIn, email, and startup founders. Land interviews faster with free, customizable templates.",
+          "seoTitle": "Free Internship Message Generator — Cold Outreach Drafts"
         },
         {
           "id": "article-rewriter",
@@ -2435,8 +2435,8 @@
           "description": "Create viral YouTube titles with proven hooks, brackets and keywords. CTR-focused ideas in seconds — free, no signup.",
           "route": "/youtube-title-generator",
           "popular": false,
-          "seoDescription": "Generate click-worthy YouTube titles with hooks, numbers and curiosity gaps. Beat boring titles — free, no signup.",
-          "seoTitle": "YouTube Title Generator — Viral Ideas"
+          "seoDescription": "Generate click-worthy YouTube titles using proven hooks, emotional triggers, numbers, and curiosity gaps. Boost CTR and views with free browser-based copy.",
+          "seoTitle": "Free YouTube Title Generator Online — High-CTR Viral Hooks"
         },
         {
           "id": "youtube-description-generator",
@@ -2444,8 +2444,8 @@
           "description": "Generate search-optimized video descriptions with timestamps, hashtags and CTAs. Upload-ready text — free, no signup.",
           "route": "/youtube-description-generator",
           "popular": false,
-          "seoDescription": "Write SEO-rich YouTube descriptions with keywords, chapters and links sections. Rank higher — free, no signup.",
-          "seoTitle": "YouTube Description Generator — SEO Ready"
+          "seoDescription": "Generate search-optimized YouTube descriptions complete with timestamps, relevant keywords, social links, and CTAs. Rank higher on search completely free.",
+          "seoTitle": "Free YouTube Description Generator — Search-Optimized Copy"
         },
         {
           "id": "youtube-thumbnail-text-generator",
@@ -3852,8 +3852,8 @@
           "description": "Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal requirements.",
           "route": "/disclaimer-generator",
           "popular": false,
-          "seoDescription": "Create professional website disclaimers: affiliate, medical, financial and copyright. Copy-ready — free, no signup.",
-          "seoTitle": "Disclaimer Generator — Legal Text in Minutes"
+          "seoDescription": "Create professional website disclaimers for affiliate marketing, health advice, financial content, and copyright protection. Copy-ready and 100% free online.",
+          "seoTitle": "Free Disclaimer Generator Online — Legal Website Notices"
         },
         {
           "id": "discount-calculator",
@@ -4171,8 +4171,8 @@
           "description": "Generate a GDPR-friendly privacy policy for your site or app in minutes. Copy-ready — free.",
           "route": "/privacy-policy-generator",
           "popular": false,
-          "seoDescription": "Create a compliant privacy policy covering cookies, data and rights. Launch legally — free, no signup.",
-          "seoTitle": "Privacy Policy Generator — GDPR-Ready, Free"
+          "seoDescription": "Generate a comprehensive, compliant privacy policy covering cookies, user data, and GDPR/CCPA rights for websites and apps. Launch safely and 100% free online.",
+          "seoTitle": "Free Privacy Policy Generator Online — GDPR & CCPA Ready"
         },
         {
           "id": "probability-calculator",
