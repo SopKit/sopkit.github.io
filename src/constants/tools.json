@@ -98,16 +98,16 @@
           "name": "Font Generator",
           "route": "/font-generator",
           "description": "Transform plain text into stylish Unicode fonts, cursive scripts, and aesthetic typography for Instagram, Twitter, and Discord.",
-          "seoDescription": "Transform plain text into stylish Unicode fonts, cursive scripts and aesthetic typography for Instagram, Twitter and Discord. Copy-paste ready, free.",
-          "seoTitle": "Font Generator — Fancy Unicode Text for Instagram"
+          "seoDescription": "Convert plain text into aesthetic Unicode fonts and stylish calligraphy for Instagram bios and captions. Copy-paste fancy styles instantly with zero data uploads.",
+          "seoTitle": "Free Font Generator Online — Aesthetic Fancy Text"
         },
         {
           "id": "number-generator",
           "name": "Number Generator",
           "route": "/number-generator",
           "description": "Generate random numbers, lottery numbers, PIN codes, and custom number sequences instantly in your browser. Free and private number generator with multiple output formats.",
-          "seoDescription": "Generate random numbers, lottery picks, PIN codes and custom sequences instantly. Multiple output formats, 100% private — free, no signup required.",
-          "seoTitle": "Random Number Generator — Lottery, PIN & Dice"
+          "seoDescription": "Generate truly random numbers, lottery picks, PIN codes, and custom sequences instantly. Fast, customizable parameters with 100% private in-browser generation.",
+          "seoTitle": "Free Random Number Generator — Secure PINs & Picks"
         },
         {
           "id": "poetry-generator",
@@ -123,8 +123,8 @@
           "description": "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
           "route": "/rent-receipt-generator",
           "popular": true,
-          "seoDescription": "Free Rent Receipt Generator online: create HRA-compliant receipts with landlord PAN for Income Tax claims. Instant PDF export, 100% private & client-side.",
-          "seoTitle": "Rent Receipt Generator — HRA Receipts, Free PDF"
+          "seoDescription": "Generate HRA-compliant rent receipts with landlord PAN, revenue stamps, and rental breakdown for income tax claims. Download clean PDFs directly in your browser.",
+          "seoTitle": "Free Rent Receipt Generator — HRA Tax Exemption PDF"
         },
         {
           "id": "simple-invoice-generator",
@@ -132,8 +132,8 @@
           "description": "Create and print professional billing invoices online. Add custom line items, tax, discount details, and generate print-ready PDF layouts instantly.",
           "route": "/simple-invoice-generator",
           "popular": true,
-          "seoDescription": "Free Simple Invoice Generator online: create itemized client invoices with tax calculations and instant PDF printing. 100% private browser billing tool.",
-          "seoTitle": "Simple Invoice Generator — Create & Print PDF Bills"
+          "seoDescription": "Create clean, itemized invoices with customizable taxes, discounts, and currency symbols. Generate and print professional client bills with zero server storage.",
+          "seoTitle": "Free Invoice Generator Online — Custom PDF Invoices"
         },
         {
           "id": "leave-application-generator",
@@ -159,8 +159,8 @@
           "description": "Create beautiful marriage biodata sheets or professional resumes. Upload photos, input family or job details, and print a custom layout.",
           "route": "/bio-data-maker",
           "popular": true,
-          "seoDescription": "Create beautiful marriage biodata and resume formats with photos, family and job details. Print-ready layouts in minutes — free, private, no signup.",
-          "seoTitle": "Bio Data Maker — Create beautiful marriage biodata sheets"
+          "seoDescription": "Create elegant marriage biodata sheets and personal resumes with photos, family details, and career summaries. Print or save instant PDFs securely in browser.",
+          "seoTitle": "Free Marriage Biodata Maker — Professional PDF Formats"
         },
         {
           "id": "instagram-bio-generator",
@@ -204,8 +204,8 @@
           "description": "Brainstorm logo concepts with style directions, icon ideas, color moods and font pairings for your brand. Free creative brief in one click.",
           "route": "/logo-idea-generator",
           "popular": false,
-          "seoDescription": "Brainstorm logo ideas with styles, icon concepts, colors and font pairings for your brand. A free creative starting point — no signup needed.",
-          "seoTitle": "Logo Idea Generator — Brand Concepts & Styles"
+          "seoDescription": "Generate creative logo concepts, typography styles, icon ideas, and color palettes for startups and side projects. Explore branding concepts free in browser.",
+          "seoTitle": "Free Logo Idea Generator — Brand Concepts & Palettes"
         },
         {
           "id": "google-business-profile-description-generator",
@@ -285,8 +285,8 @@
           "description": "Generate beautiful color palettes with harmony rules. Explore complementary, analogous, triadic, and tetradic color schemes. Copy hex codes and export CSS variables.",
           "route": "/color-palette-generator",
           "popular": true,
-          "seoDescription": "Generate harmonious color palettes with complementary, analogous, triadic and tetradic rules. Copy HEX codes and export CSS variables — free.",
-          "seoTitle": "Color Palette Generator — Generate beautiful color palettes"
+          "seoDescription": "Create harmonious color palettes using complementary, triadic, and monochromatic rules. Copy HEX codes and export CSS tokens instantly with zero tracking.",
+          "seoTitle": "Free Color Palette Generator — HEX & CSS Themes"
         },
         {
           "id": "meme-generator",
@@ -303,8 +303,8 @@
           "description": "Get unlimited creative writing prompts and story ideas. Generate characters, settings, conflicts, and themes across multiple genres instantly.",
           "route": "/story-idea-generator",
           "popular": false,
-          "seoDescription": "Get unlimited story ideas with characters, settings, conflicts and twists across genres. Beat writer's block free — no signup required.",
-          "seoTitle": "Story Idea Generator — Writing Prompts & Plots"
+          "seoDescription": "Generate original story prompts, character conflicts, plot twists, and world-building ideas across multiple genres. Break writer's block free in your browser.",
+          "seoTitle": "Free Story Idea Generator — Creative Writing Prompts"
         },
         {
           "id": "pixel-art-maker",
@@ -321,8 +321,8 @@
           "description": "Generate unique identicon-style avatars from any seed text. Customize colors and export as PNG. Perfect for profiles, forums, and placeholders.",
           "route": "/avatar-generator",
           "popular": false,
-          "seoDescription": "Generate unique identicon avatars from any word or name with custom colors. Export PNGs for profiles, forums and placeholders — free.",
-          "seoTitle": "Avatar Generator — Generate unique identicon-style avatars"
+          "seoDescription": "Generate unique identicon avatars and geometric profile pictures from any username or seed string. Download lightweight SVG and PNG assets free in browser.",
+          "seoTitle": "Free Avatar Generator Online — Custom Identicon Icons"
         },
         {
           "id": "ascii-art-generator",
@@ -422,8 +422,8 @@
           "description": "Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image.",
           "route": "/favicon-generator-pro",
           "popular": true,
-          "seoDescription": "Create every favicon size and format (ICO, PNG, SVG, Apple touch) from one image. Complete web icon kit in seconds — free, no signup.",
-          "seoTitle": "Advanced Favicon Generator — All Sizes & Formats"
+          "seoDescription": "Generate full-resolution favicon packages including 16x16, 32x32, 180x180 Apple touch, and SVG icons from one image. Fast local generation with zero uploads.",
+          "seoTitle": "Free Favicon Generator Online — Multi-Size Icon Kit"
         },
         {
           "id": "image-metadata-remover",
@@ -521,8 +521,8 @@
           "description": "Generate favicons from text, images, or emojis for websites. Fast, 100% private client-side processing with zero file uploads and no registration required.",
           "route": "/favicon-generator",
           "popular": true,
-          "seoDescription": "Design favicons from text, emojis or images in seconds. Preview in browser tabs and export ICO plus PNG — free, no signup required.",
-          "seoTitle": "Favicon Generator — Text, Emoji & Image Icons"
+          "seoDescription": "Design website favicons from emojis, letters, or images with custom background colors. Preview in live browser tab frames and export instant ICO and PNG files.",
+          "seoTitle": "Free SVG & Image Favicon Maker — Quick Browser Icons"
         },
         {
           "id": "flip-image",
@@ -585,8 +585,8 @@
           "description": "Compile multiple images into an animated GIF client-side. Control delay/interval and image dimensions easily.",
           "route": "/gif-generator",
           "popular": true,
-          "seoDescription": "Turn multiple images into a smooth animated GIF. Control speed, size and looping, then export — free, private, no signup.",
-          "seoTitle": "GIF Maker — Turn Images into Animated GIFs"
+          "seoDescription": "Combine multiple image frames into smooth animated GIFs with customizable frame delays, looping, and dimensions. Render animations locally without server uploads.",
+          "seoTitle": "Free Animated GIF Maker — Combine Images in Browser"
         },
         {
           "id": "image-enlarger",
@@ -818,8 +818,8 @@
           "description": "Generate app icons and favicons for Android, iOS, and web applications. Fast, 100% private client-side processing with zero file uploads and no registration required.",
           "route": "/icon-generator",
           "popular": false,
-          "seoDescription": "Generate app icons and favicons for iOS, Android and web from one image. All required sizes exported — free, no signup.",
-          "seoTitle": "App Icon Generator — iOS, Android & Web"
+          "seoDescription": "Resize and export app icons for iOS, Android, macOS, and PWA manifests in all required asset dimensions. Batch process image assets locally in your browser.",
+          "seoTitle": "Free App Icon Generator — iOS & Android App Assets"
         },
         {
           "id": "image-editor",
@@ -1021,8 +1021,8 @@
           "description": "Add fun emojis to your text or convert words into emoji-rich messages for social media. Fast, 100% private client-side processing with zero file uploads and no registration required.",
           "route": "/emoji-text-generator",
           "popular": false,
-          "seoDescription": "Spice up messages with emojis between every word or translate words to emoji. Perfect for captions — free, no signup.",
-          "seoTitle": "Emoji Text Generator — Fun Emoji Messages"
+          "seoDescription": "Spice up social media messages with clapping hands, spaced emojis, and playful text transformations. Copy attention-grabbing captions free with zero signup.",
+          "seoTitle": "Free Emoji Text Generator — Fun Captions & Messages"
         },
         {
           "id": "random-word-generator",
@@ -1030,8 +1030,8 @@
           "description": "Generate random words instantly for creative writing, brainstorming, or vocabulary practice. Our free online tool offers customizable options for word type and quantity. Fun and fast.",
           "route": "/random-word-generator",
           "popular": false,
-          "seoDescription": "Generate random words by type and count for brainstorming, games and vocabulary practice. Unlimited ideas — free.",
-          "seoTitle": "Random Word Generator — Writing Prompts"
+          "seoDescription": "Generate randomized word lists filtered by parts of speech, word length, and syllable counts. Perfect for creative writing and brainstorming in your browser.",
+          "seoTitle": "Free Random Word Generator — Creative Vocab Prompts"
         },
         {
           "id": "resume-ats-score-checker",
@@ -1057,8 +1057,8 @@
           "description": "Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit.",
           "route": "/cover-letter-generator",
           "popular": true,
-          "seoDescription": "Generate tailored cover letters for internships, fresher and remote roles in seconds. Edit, copy or export — free, no signup.",
-          "seoTitle": "Cover Letter Generator — Internships & Jobs"
+          "seoDescription": "Draft compelling cover letters tailored to specific job titles, skills, and company culture. Customize and copy recruiter-ready drafts free without an account.",
+          "seoTitle": "Free Cover Letter Generator — Job Application Drafts"
         },
         {
           "id": "linkedin-headline-generator",
@@ -1066,8 +1066,8 @@
           "description": "Create professional LinkedIn headlines that stand out. Generate multiple variations for developers, students, freelancers, and marketers.",
           "route": "/linkedin-headline-generator",
           "popular": false,
-          "seoDescription": "Create keyword-rich LinkedIn headlines for developers, students, freelancers and marketers. Multiple variants — free, no signup.",
-          "seoTitle": "LinkedIn Headline Generator — Stand Out"
+          "seoDescription": "Create high-converting LinkedIn headlines that showcase your value proposition, skills, and target roles. Copy impact-driven profile bios free in your browser.",
+          "seoTitle": "Free LinkedIn Headline Generator — High-Impact Hooks"
         },
         {
           "id": "internship-message-generator",
@@ -1084,8 +1084,8 @@
           "description": "Paraphrase and rewrite articles instantly with our free online Article Rewriter. Improve readability, change tone, and create unique content variations for blogs and SEO. 100% free and secure.",
           "route": "/article-rewriter",
           "popular": false,
-          "seoDescription": "Rewrite and paraphrase articles with fresh wording while keeping meaning. Improve readability and beat duplication — free, no signup.",
-          "seoTitle": "Article Rewriter — Paraphrase Text Free"
+          "seoDescription": "Paraphrase sentences and rephrase articles with fresh phrasing while preserving original context and nuance. Polish writing cleanly with local browser processing.",
+          "seoTitle": "Free Article Rewriter Online — Clean Text Paraphraser"
         },
         {
           "id": "comma-separator",
@@ -1111,8 +1111,8 @@
           "description": "Generate custom Lorem Ipsum text for your designs. Fast, 100% private client-side processing with zero file uploads and no registration required.",
           "route": "/lorem-ipsum",
           "popular": false,
-          "seoDescription": "Generate custom Lorem Ipsum paragraphs, sentences and words for mockups. Set count and copy instantly — free, no signup.",
-          "seoTitle": "Lorem Ipsum Generator — Placeholder Text"
+          "seoDescription": "Generate customized Lorem Ipsum placeholder paragraphs, sentences, and lists for wireframes and design mockups. Copy clean typography copy free with one click.",
+          "seoTitle": "Free Lorem Ipsum Generator — Clean Placeholder Text"
         },
         {
           "id": "number-to-word-converter",
@@ -1167,8 +1167,8 @@
           "description": "Convert your text into trending hashtags for social media instantly. Our free tool helps you optimize posts for Instagram, TikTok, and Twitter with relevant, search-friendly tags.",
           "route": "/text-to-hashtags-converter",
           "popular": false,
-          "seoDescription": "Extract trending hashtags from any text for Instagram, TikTok and X. Relevant, search-friendly tags — free, no signup.",
-          "seoTitle": "Text to Hashtags — Caption Tag Finder"
+          "seoDescription": "Extract trending, high-relevance hashtags from captions, blog posts, and marketing copy for Instagram, TikTok, and X. Boost social reach free in your browser.",
+          "seoTitle": "Free Hashtag Generator Online — Trending Social Tags"
         },
         {
           "id": "text-to-slug-converter",
