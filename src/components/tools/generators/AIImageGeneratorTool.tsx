@@ -241,7 +241,7 @@ export default function AIImageGeneratorTool() {
 					text,
 					category: group.category,
 				})),
-			).slice(0, 6),
+			).slice(0, 4),
 		[],
 	);
 
@@ -477,8 +477,8 @@ export default function AIImageGeneratorTool() {
 				</div>
 
 				<TabsContent value="generator" className="m-0">
-					<div className="grid grid-cols-1 gap-5 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
-						<section className="rounded-2xl border border-border/60 bg-card/70 p-4 shadow-none sm:p-5">
+					<div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-[minmax(360px,0.8fr)_minmax(0,1.2fr)]">
+						<section className="rounded-2xl border border-border/60 bg-card/70 p-3.5 shadow-none sm:p-4">
 							<div className="space-y-5">
 								<div>
 									<div className="mb-2 flex items-center justify-between gap-3">
@@ -504,7 +504,7 @@ export default function AIImageGeneratorTool() {
 										value={prompt}
 										onChange={(event) => setPrompt(event.target.value)}
 										disabled={loading}
-										className="min-h-[180px] resize-none rounded-xl border-border/70 bg-background/50 px-4 py-3 text-[15px] leading-6 shadow-none focus-visible:ring-2"
+										className="min-h-[132px] resize-none rounded-xl border-border/70 bg-background/50 px-4 py-3 text-[15px] leading-6 shadow-none focus-visible:ring-2"
 									/>
 								</div>
 
@@ -518,7 +518,7 @@ export default function AIImageGeneratorTool() {
 										</div>
 										<Star className="h-4 w-4 text-muted-foreground" />
 									</div>
-									<div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+									<div className="grid grid-cols-2 gap-2 sm:grid-cols-2">
 										{quickPrompts.map((example) => (
 											<button
 												key={example.text}
@@ -678,7 +678,7 @@ export default function AIImageGeneratorTool() {
 									<Button
 										onClick={handleGenerate}
 										disabled={loading || !prompt.trim()}
-										className="h-12 w-full rounded-xl text-sm font-semibold shadow-sm"
+										className="h-11 w-full rounded-xl text-sm font-semibold shadow-sm sm:h-12"
 										size="lg"
 									>
 										{loading ? (
@@ -737,12 +737,12 @@ export default function AIImageGeneratorTool() {
 								)}
 							</div>
 
-							<div className="relative flex min-h-[360px] items-center justify-center overflow-hidden rounded-2xl bg-muted/25 p-2 sm:min-h-[500px]">
+							<div className="relative flex min-h-[300px] items-center justify-center overflow-hidden rounded-2xl bg-muted/25 p-2 sm:min-h-[360px] lg:min-h-[400px]">
 								{imageUrl ? (
 									<img
 										src={imageUrl}
 										alt={prompt ? "AI generated image: " + prompt : "AI generated image"}
-										className="max-h-[620px] w-full rounded-xl object-contain"
+										className="max-h-[520px] w-full rounded-xl object-contain"
 										loading="eager"
 									/>
 								) : loading ? (
@@ -876,7 +876,7 @@ export default function AIImageGeneratorTool() {
 						</div>
 
 						{history.length === 0 ? (
-							<div className="flex min-h-[280px] items-center justify-center rounded-2xl bg-muted/20 px-6 text-center">
+							<div className="flex min-h-[220px] items-center justify-center rounded-2xl bg-muted/20 px-6 text-center">
 								<div className="max-w-sm">
 									<History className="mx-auto mb-4 h-10 w-10 text-muted-foreground/60" />
 									<h3 className="text-base font-semibold">Nothing here yet</h3>
