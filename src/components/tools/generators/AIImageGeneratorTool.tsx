@@ -330,13 +330,12 @@ export default function AIImageGeneratorTool() {
 
 			url += "&nologo=true&model=flux&enhance=true";
 
-			const image = new Image();
-			image.src = url;
-
 			await new Promise<void>((resolve, reject) => {
+				const image = new Image();
 				image.onload = () => resolve();
 				image.onerror = () =>
 					reject(new Error("Image provider could not generate this image."));
+				image.src = url;
 			});
 
 			setImageUrl(url);
