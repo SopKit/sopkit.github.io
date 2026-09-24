@@ -188,6 +188,7 @@ export default function ToolLayout({
 	const resolvedArchetype = explicitArchetype || resolveToolArchetype(enrichedTool);
 	const workspaceClass = getArchetypeWorkspaceClass(resolvedArchetype);
 	const dataProcessing = resolveDataProcessing(enrichedTool);
+	const isDenseWorkspace = tool.id === "ai-image-generator";
 
 	const fallbackFaqs = enrichedTool.faqs?.length
 		? enrichedTool.faqs
@@ -265,7 +266,7 @@ export default function ToolLayout({
 				{/* Primary Tool Workspace (Visually Dominant) */}
 				{!isHubPage && (
 					<section id="tool-workspace" aria-label={`${enrichedTool.name} workspace`} className={`w-full ${workspaceClass} mx-auto transition-all scroll-mt-24`}>
-						<div className="rounded-2xl border border-border/70 bg-card/60 shadow-xs overflow-hidden p-3 sm:p-5 lg:p-7">
+						<div className={`rounded-2xl border border-border/70 bg-card/60 shadow-xs overflow-hidden ${isDenseWorkspace ? "p-2.5 sm:p-3 lg:p-4" : "p-3 sm:p-5 lg:p-7"}`}>
 							{children}
 						</div>
 					</section>
