@@ -1,17 +1,18 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
-import BioDataMaker from "@/components/tools/generators/BioDataMaker";
 import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Bio Data Maker",
-	description: "Privacy-friendly, 100% client-side bio data creation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Create elegant marriage biodata sheets and personal resumes with photos, family details, and career summaries. Print or save instant PDFs securely in browser.",
 	route: "/bio-data-maker",
 	category: "generators",
 });
 
-export default async function ToolPage() {
+export default function ToolPage() {
 	const tool = getToolByRoute("/bio-data-maker");
 
 	if (!tool) {
@@ -19,8 +20,29 @@ export default async function ToolPage() {
 	}
 
 	return (
-		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<BioDataMaker />
-		</ToolLayout>
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "SoftwareApplication",
+						name: tool.name,
+						description: tool.description,
+						url: `${SITE_URL}/bio-data-maker/`,
+						applicationCategory: "DesignApplication",
+						operatingSystem: "Any",
+						offers: {
+							"@type": "Offer",
+							price: "0",
+							priceCurrency: "USD"
+						}
+					})
+				}}
+			/>
+			<ToolLayout breadcrumbs={[]} tool={tool} showHireMe={true}>
+				<IntentToolDispatcher toolId={tool.id} />
+			</ToolLayout>
+		</>
 	);
 }

@@ -15,7 +15,9 @@ interface ToolModeTabsProps {
 	/** Currently selected value. */
 	value: string;
 	/** Called when the user picks a mode. */
-	onChange: (value: string) => void;
+	onChange?: (value: string) => void;
+	/** Alias for onChange for standard tab compatibility. */
+	onValueChange?: (value: string) => void;
 	/** Accessible label for the tablist (defaults to "Tool mode"). */
 	ariaLabel?: string;
 	className?: string;
@@ -30,9 +32,14 @@ export function ToolModeTabs({
 	tabs,
 	value,
 	onChange,
+	onValueChange,
 	ariaLabel = "Tool mode",
 	className,
 }: ToolModeTabsProps) {
+	const handleSelect = (val: string) => {
+		onChange?.(val);
+		onValueChange?.(val);
+	};
 	const selectedIndex = Math.max(
 		0,
 		tabs.findIndex((tab) => tab.value === value),
@@ -48,7 +55,7 @@ export function ToolModeTabs({
 		if (next === null) return;
 		event.preventDefault();
 		const wrapped = (next + tabs.length) % tabs.length;
-		onChange(tabs[wrapped].value);
+		handleSelect(tabs[wrapped].value);
 		buttonRefs.current[wrapped]?.focus();
 	};
 
@@ -71,7 +78,7 @@ export function ToolModeTabs({
 						role="tab"
 						aria-selected={selected}
 						tabIndex={selected ? 0 : -1}
-						onClick={() => onChange(tab.value)}
+						onClick={() => handleSelect(tab.value)}
 						onKeyDown={(event) => handleKeyDown(event, index)}
 						className={cn(
 							DS.tabs.button,

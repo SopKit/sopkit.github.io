@@ -1,12 +1,13 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
-import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators";
 import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Age Calculator",
-	description: "Private Age Calculator: privately calculate web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	description: "Find your exact age in years, months, days and hours. Next-birthday countdown too — free, no signup needed.",
 	route: "/age-calculator",
 	category: "utilities",
 });
@@ -19,8 +20,29 @@ export default async function ToolPage() {
 	}
 
 	return (
-		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<BuiltInCalculators kind="age-calculator" />
-		</ToolLayout>
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "SoftwareApplication",
+						name: tool.name,
+						description: tool.description,
+						url: `${SITE_URL}/age-calculator/`,
+						applicationCategory: "UtilitiesApplication",
+						operatingSystem: "Any",
+						offers: {
+							"@type": "Offer",
+							price: "0",
+							priceCurrency: "USD",
+						},
+					}),
+				}}
+			/>
+			<ToolLayout breadcrumbs={[]} tool={tool} showHireMe={true}>
+				<IntentToolDispatcher toolId={tool.id} />
+			</ToolLayout>
+		</>
 	);
 }

@@ -21,20 +21,32 @@ export function ToolFileBar({
 
 interface ToolSectionTitleProps {
 	icon?: React.ReactNode;
-	children: React.ReactNode;
+	title?: React.ReactNode;
+	subtitle?: React.ReactNode;
+	description?: React.ReactNode;
+	children?: React.ReactNode;
 	className?: string;
 }
 
 /** Small primary-colored section heading inside panels ("Resize Settings"). */
 export function ToolSectionTitle({
 	icon,
+	title,
+	subtitle,
+	description,
 	children,
 	className,
 }: ToolSectionTitleProps) {
+	const desc = description ?? subtitle;
 	return (
-		<div className={cn(DS.sectionTitle, className)}>
-			{icon}
-			<span>{children}</span>
+		<div className={cn("space-y-0.5", className)}>
+			<div className={DS.sectionTitle}>
+				{icon}
+				<span>{children ?? title}</span>
+			</div>
+			{desc && (
+				<p className="text-xs text-muted-foreground">{desc}</p>
+			)}
 		</div>
 	);
 }
