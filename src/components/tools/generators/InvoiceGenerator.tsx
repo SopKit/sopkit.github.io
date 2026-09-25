@@ -1,535 +1,711 @@
 "use client";
 
 import React, { useState, useMemo, useRef } from "react";
-import { FileText, Printer, Plus, Trash2, Shield, RefreshCw, Upload } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+	ToolShell,
+	ToolGrid,
+	ToolGridMain,
+	ToolGridSide,
+	ToolPanel,
+	ToolSectionTitle,
+	ToolField,
+} from "@/components/tools/shared/design-system";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
+import { Printer, Plus, Trash2, ShieldCheck, RotateCcw, Upload, Download, FileText, Check } from "lucide-react";
 
 interface InvoiceItem {
-    id: number;
-    description: string;
-    quantity: number | string;
-    rate: number | string;
-    taxRate: number | string;
+	id: number;
+	description: string;
+	quantity: number | string;
+	rate: number | string;
+	taxRate: number | string;
 }
 
+type CurrencyCode = "USD" | "EUR" | "GBP" | "INR" | "CAD" | "AUD" | "SGD" | "JPY";
+
+const CURRENCY_SYMBOLS: Record<CurrencyCode, string> = {
+	USD: "$",
+	EUR: "€",
+	GBP: "£",
+	INR: "₹",
+	CAD: "C$",
+	AUD: "A$",
+	SGD: "S$",
+	JPY: "¥",
+};
+
 export default function InvoiceGenerator() {
-    const [businessName, setBusinessName] = useState("Your Business Name");
-    const [businessAddress, setBusinessAddress] = useState("123 Business Road, Suite 100\nCity, State, ZIP");
-    const [businessEmail, setBusinessEmail] = useState("contact@business.com");
-    const [businessPhone, setBusinessPhone] = useState("+1 (555) 019-2834");
-    
-    const [clientName, setClientName] = useState("Client Company Name");
-    const [clientAddress, setClientAddress] = useState("456 Client Avenue\nCity, State, ZIP");
-    const [clientEmail, setClientEmail] = useState("billing@client.com");
-    
-    const [invoiceNumber, setInvoiceNumber] = useState("INV-2026-001");
-    const [invoiceDate, setInvoiceDate] = useState(new Date().toISOString().split('T')[0]);
-    const [dueDate, setDueDate] = useState(new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]);
-    
-    const [items, setItems] = useState<InvoiceItem[]>([
-        { id: 1, description: "Consulting Services", quantity: 10, rate: 150, taxRate: 18 },
-        { id: 2, description: "Web Development Support", quantity: 1, rate: 1200, taxRate: 18 }
-    ]);
-    
-    const [discount, setDiscount] = useState("100"); // Flat discount in currency
-    const [taxEnabled, setTaxEnabled] = useState(true);
-    const [currency, setCurrency] = useState("INR"); // INR, USD, EUR, etc.
-    const [notes, setNotes] = useState("Thank you for your business!");
-    const [bankDetails, setBankDetails] = useState("Bank Name: State Bank\nAccount: 1234567890\nIFSC: SBIN0001234");
-    
-    const logoInputRef = useRef<HTMLInputElement>(null);
-    const [logoUrl, setLogoUrl] = useState<string>("");
+	// Business Profile
+	const [businessName, setBusinessName] = useState("Acme Studio Design Inc.");
+	const [businessAddress, setBusinessAddress] = useState("100 Innovation Boulevard\nSan Francisco, CA 94107");
+	const [businessEmail, setBusinessEmail] = useState("billing@acmedesign.com");
+	const [businessPhone, setBusinessPhone] = useState("+1 (555) 349-2041");
+	const [taxId, setTaxId] = useState("US-EIN-94-1234567");
 
-    const currencySymbol = useMemo(() => {
-        switch(currency) {
-            case "USD": return "$";
-            case "EUR": return "€";
-            case "GBP": return "£";
-            default: return "₹";
-        }
-    }, [currency]);
+	// Client Info
+	const [clientName, setClientName] = useState("Global Retail Enterprises");
+	const [clientAddress, setClientAddress] = useState("452 Market Street, Floor 12\nNew York, NY 10001");
+	const [clientEmail, setClientEmail] = useState("accounts@globalretail.com");
 
-    const handleLogoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = (event) => {
-                if (event.target?.result) {
-                    setLogoUrl(event.target.result as string);
-                }
-            };
-            reader.readAsDataURL(file);
-        }
-    };
+	// Invoice Settings
+	const [invoiceNumber, setInvoiceNumber] = useState("INV-2026-0042");
+	const [invoiceDate, setInvoiceDate] = useState(() => new Date().toISOString().split("T")[0]);
+	const [dueDate, setDueDate] = useState(() => {
+		const d = new Date();
+		d.setDate(d.getDate() + 14);
+		return d.toISOString().split("T")[0];
+	});
+	const [currency, setCurrency] = useState<CurrencyCode>("USD");
+	const [taxEnabled, setTaxEnabled] = useState(true);
+	const [discount, setDiscount] = useState("50");
 
-    const removeLogo = () => {
-        setLogoUrl("");
-        if (logoInputRef.current) {
-            logoInputRef.current.value = "";
-        }
-    };
+	// Items
+	const [items, setItems] = useState<InvoiceItem[]>([
+		{ id: 1, description: "Brand Identity Design & Guidelines", quantity: 1, rate: 2500, taxRate: 10 },
+		{ id: 2, description: "Design System UI Kit (Figma)", quantity: 25, rate: 80, taxRate: 10 },
+		{ id: 3, description: "Mobile App Responsive UX Audit", quantity: 1, rate: 950, taxRate: 10 },
+	]);
 
-    const addItem = () => {
-        const newId = items.length > 0 ? Math.max(...items.map(item => item.id)) + 1 : 1;
-        setItems([...items, { id: newId, description: "New Item", quantity: 1, rate: 0, taxRate: 18 }]);
-    };
+	// Notes & Banking
+	const [paymentTerms, setPaymentTerms] = useState("Payment is due within 14 days of invoice date via ACH or wire transfer.");
+	const [bankDetails, setBankDetails] = useState("Bank: Silicon Valley Bank\nRouting / ABA: 121000358\nAccount No: 8847291039");
 
-    const removeItem = (id: number) => {
-        setItems(items.filter(item => item.id !== id));
-    };
+	// Logo
+	const logoInputRef = useRef<HTMLInputElement>(null);
+	const [logoUrl, setLogoUrl] = useState<string>("");
 
-    const updateItem = (id: number, field: keyof InvoiceItem, value: string | number) => {
-        setItems(items.map(item => {
-            if (item.id === id) {
-                return { ...item, [field]: value };
-            }
-            return item;
-        }));
-    };
+	const symbol = CURRENCY_SYMBOLS[currency] || "$";
 
-    const calculations = useMemo(() => {
-        let subtotal = 0;
-        let taxTotal = 0;
+	const handleLogoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+		const file = e.target.files?.[0];
+		if (file) {
+			if (file.size > 2 * 1024 * 1024) {
+				toast.error("Logo file must be under 2MB.");
+				return;
+			}
+			const reader = new FileReader();
+			reader.onload = (event) => {
+				if (event.target?.result) {
+					setLogoUrl(event.target.result as string);
+					toast.success("Logo uploaded successfully.");
+				}
+			};
+			reader.readAsDataURL(file);
+		}
+	};
 
-        items.forEach(item => {
-            const qty = typeof item.quantity === 'string' ? parseFloat(item.quantity) : item.quantity;
-            const rate = typeof item.rate === 'string' ? parseFloat(item.rate) : item.rate;
-            const itemTotal = (qty || 0) * (rate || 0);
-            subtotal += itemTotal;
+	const removeLogo = () => {
+		setLogoUrl("");
+		if (logoInputRef.current) {
+			logoInputRef.current.value = "";
+		}
+	};
 
-            if (taxEnabled) {
-                const taxRate = typeof item.taxRate === 'string' ? parseFloat(item.taxRate) : item.taxRate;
-                taxTotal += (itemTotal * (taxRate || 0)) / 100;
-            }
-        });
+	const addItem = () => {
+		const newId = items.length > 0 ? Math.max(...items.map((i) => i.id)) + 1 : 1;
+		setItems([...items, { id: newId, description: "New Service / Product Item", quantity: 1, rate: 100, taxRate: 10 }]);
+	};
 
-        const flatDiscount = parseFloat(discount) || 0;
-        const total = Math.max(0, subtotal + taxTotal - flatDiscount);
+	const removeItem = (id: number) => {
+		if (items.length <= 1) {
+			toast.error("Invoice must contain at least one line item.");
+			return;
+		}
+		setItems(items.filter((item) => item.id !== id));
+	};
 
-        return {
-            subtotal: subtotal.toFixed(2),
-            taxTotal: taxTotal.toFixed(2),
-            discount: flatDiscount.toFixed(2),
-            total: total.toFixed(2)
-        };
-    }, [items, discount, taxEnabled]);
+	const updateItem = (id: number, field: keyof InvoiceItem, value: string | number) => {
+		setItems(
+			items.map((item) => {
+				if (item.id === id) {
+					return { ...item, [field]: value };
+				}
+				return item;
+			})
+		);
+	};
 
-    const handlePrint = () => {
-        window.print();
-    };
+	const calculations = useMemo(() => {
+		let subtotal = 0;
+		let taxTotal = 0;
 
-    const resetInvoice = () => {
-        setItems([{ id: 1, description: "Consulting Services", quantity: 10, rate: 150, taxRate: 18 }]);
-        setDiscount("0");
-        setNotes("Thank you for your business!");
-        toast.success("Invoice builder reset.");
-    };
+		items.forEach((item) => {
+			const qty = typeof item.quantity === "string" ? parseFloat(item.quantity) || 0 : item.quantity;
+			const rate = typeof item.rate === "string" ? parseFloat(item.rate) || 0 : item.rate;
+			const itemTotal = qty * rate;
+			subtotal += itemTotal;
 
-    return (
-        <div className="space-y-6 max-w-6xl mx-auto font-sans">
-            {/* Top Command Bar */}
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-border/20 pb-4 no-print">
-                <div>
-                    <h2 className="text-xl font-bold flex items-center gap-2">
-                        <FileText className="h-5 w-5 text-emerald-500" />
-                        Professional Invoice Generator
-                    </h2>
-                    <p className="text-xs text-muted-foreground mt-1">
-                        Build invoice layouts dynamically, configure calculations, and print or save as PDF.
-                    </p>
-                </div>
-                <div className="flex gap-2">
-                    <Button variant="outline" size="sm" onClick={resetInvoice}>
-                        <RefreshCw className="h-4 w-4 mr-2" />
-                        Reset
-                    </Button>
-                    <Button variant="default" size="sm" onClick={handlePrint} className="bg-emerald-600 hover:bg-emerald-700 text-white">
-                        <Printer className="h-4 w-4 mr-2" />
-                        Print / Save as PDF
-                    </Button>
-                </div>
-            </div>
+			if (taxEnabled) {
+				const tax = typeof item.taxRate === "string" ? parseFloat(item.taxRate) || 0 : item.taxRate;
+				taxTotal += (itemTotal * tax) / 100;
+			}
+		});
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-                
-                {/* Editor Panel */}
-                <div className="lg:col-span-5 space-y-6 no-print">
-                    <Card className="border-border/30 bg-card/40 backdrop-blur-md">
-                        <CardContent className="p-6 space-y-4">
-                            <h3 className="text-sm font-semibold border-b border-border/20 pb-2 text-emerald-500">Business Details</h3>
-                            
-                            <div className="space-y-2">
-                                <Label htmlFor="biz-name">Business Name</Label>
-                                <Input id="biz-name" value={businessName} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBusinessName(e.target.value)} />
-                            </div>
+		const flatDiscount = parseFloat(discount) || 0;
+		const grandTotal = Math.max(0, subtotal + taxTotal - flatDiscount);
 
-                            <div className="grid grid-cols-2 gap-3">
-                                <div className="space-y-2">
-                                    <Label htmlFor="biz-email">Email</Label>
-                                    <Input id="biz-email" type="email" value={businessEmail} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBusinessEmail(e.target.value)} />
-                                </div>
-                                <div className="space-y-2">
-                                    <Label htmlFor="biz-phone">Phone</Label>
-                                    <Input id="biz-phone" value={businessPhone} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBusinessPhone(e.target.value)} />
-                                </div>
-                            </div>
+		return {
+			subtotal: subtotal.toFixed(2),
+			taxTotal: taxTotal.toFixed(2),
+			discount: flatDiscount.toFixed(2),
+			grandTotal: grandTotal.toFixed(2),
+		};
+	}, [items, discount, taxEnabled]);
 
-                            <div className="space-y-2">
-                                <Label htmlFor="biz-address">Address</Label>
-                                <textarea
-                                    id="biz-address"
-                                    className="w-full h-20 p-2.5 rounded-lg border border-border/40 bg-background/50 focus:outline-none focus:ring-1 focus:ring-emerald-500 text-sm"
-                                    value={businessAddress}
-                                    onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setBusinessAddress(e.target.value)}
-                                />
-                            </div>
+	const handlePrint = () => {
+		window.print();
+	};
 
-                            <div className="space-y-2">
-                                <Label>Business Logo</Label>
-                                <div className="flex items-center gap-3">
-                                    <input
-                                        ref={logoInputRef}
-                                        type="file"
-                                        accept="image/*"
-                                        className="hidden"
-                                        onChange={handleLogoUpload}
-                                    />
-                                    <Button variant="outline" size="sm" onClick={() => logoInputRef.current?.click()}>
-                                        <Upload className="h-4 w-4 mr-2" />
-                                        Upload Logo
-                                    </Button>
-                                    {logoUrl && (
-                                        <Button variant="ghost" size="sm" className="text-red-400" onClick={removeLogo}>
-                                            Remove
-                                        </Button>
-                                    )}
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
+	const handleReset = () => {
+		setItems([
+			{ id: 1, description: "Consulting & Strategy Sprint", quantity: 1, rate: 1500, taxRate: 10 },
+		]);
+		setDiscount("0");
+		setLogoUrl("");
+		toast.info("Invoice builder reset to defaults.");
+	};
 
-                    <Card className="border-border/30 bg-card/40 backdrop-blur-md">
-                        <CardContent className="p-6 space-y-4">
-                            <h3 className="text-sm font-semibold border-b border-border/20 pb-2 text-emerald-500">Client Details</h3>
-                            
-                            <div className="space-y-2">
-                                <Label htmlFor="client-name">Client Company / Name</Label>
-                                <Input id="client-name" value={clientName} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setClientName(e.target.value)} />
-                            </div>
+	const exportJsonTemplate = () => {
+		const state = {
+			businessName,
+			businessAddress,
+			businessEmail,
+			businessPhone,
+			taxId,
+			clientName,
+			clientAddress,
+			clientEmail,
+			invoiceNumber,
+			invoiceDate,
+			dueDate,
+			currency,
+			discount,
+			taxEnabled,
+			items,
+			paymentTerms,
+			bankDetails,
+		};
+		const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+		const url = URL.createObjectURL(blob);
+		const link = document.createElement("a");
+		link.href = url;
+		link.download = `${invoiceNumber.toLowerCase().replace(/[^a-z0-9]/g, "-")}-template.json`;
+		link.click();
+		URL.revokeObjectURL(url);
+		toast.success(`Exported ${link.download}`);
+	};
 
-                            <div className="space-y-2">
-                                <Label htmlFor="client-email">Client Email</Label>
-                                <Input id="client-email" type="email" value={clientEmail} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setClientEmail(e.target.value)} />
-                            </div>
+	return (
+		<ToolShell>
+			{/* Print stylesheet override */}
+			<style
+				dangerouslySetInnerHTML={{
+					__html: `
+						@media print {
+							body * {
+								visibility: hidden;
+							}
+							#invoice-paper-zone, #invoice-paper-zone * {
+								visibility: visible;
+							}
+							#invoice-paper-zone {
+								position: absolute;
+								left: 0;
+								top: 0;
+								width: 100%;
+								box-shadow: none !important;
+								border: none !important;
+								padding: 0 !important;
+							}
+							.no-print {
+								display: none !important;
+							}
+						}
+					`,
+				}}
+			/>
 
-                            <div className="space-y-2">
-                                <Label htmlFor="client-address">Address</Label>
-                                <textarea
-                                    id="client-address"
-                                    className="w-full h-20 p-2.5 rounded-lg border border-border/40 bg-background/50 focus:outline-none focus:ring-1 focus:ring-emerald-500 text-sm"
-                                    value={clientAddress}
-                                    onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setClientAddress(e.target.value)}
-                                />
-                            </div>
-                        </CardContent>
-                    </Card>
+			{/* Main Editor Header Bar */}
+			<div className="flex flex-wrap items-center justify-between gap-3 mb-6 no-print">
+				<div className="flex items-center gap-2">
+					<Button size="sm" onClick={handlePrint} className="gap-2 font-semibold shadow-sm">
+						<Printer className="h-4 w-4" /> Print / Save as PDF
+					</Button>
+					<Button variant="outline" size="sm" onClick={exportJsonTemplate} className="gap-1.5 text-xs">
+						<Download className="h-3.5 w-3.5" /> Save JSON Template
+					</Button>
+				</div>
+				<Button variant="ghost" size="sm" onClick={handleReset} className="gap-1 text-xs text-muted-foreground">
+					<RotateCcw className="h-3.5 w-3.5" /> Reset Form
+				</Button>
+			</div>
 
-                    <Card className="border-border/30 bg-card/40 backdrop-blur-md">
-                        <CardContent className="p-6 space-y-4">
-                            <h3 className="text-sm font-semibold border-b border-border/20 pb-2 text-emerald-500">Invoice Settings</h3>
-                            
-                            <div className="grid grid-cols-2 gap-3">
-                                <div className="space-y-2">
-                                    <Label htmlFor="inv-no">Invoice Number</Label>
-                                    <Input id="inv-no" value={invoiceNumber} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInvoiceNumber(e.target.value)} />
-                                </div>
-                                <div className="space-y-2">
-                                    <Label>Currency</Label>
-                                    <select
-                                        className="w-full p-2 rounded-lg border border-border/40 bg-background text-sm"
-                                        value={currency}
-                                        onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setCurrency(e.target.value)}
-                                    >
-                                        <option value="INR">INR (₹)</option>
-                                        <option value="USD">USD ($)</option>
-                                        <option value="EUR">EUR (€)</option>
-                                        <option value="GBP">GBP (£)</option>
-                                    </select>
-                                </div>
-                            </div>
+			<ToolGrid>
+				{/* Configuration Panel */}
+				<ToolGridMain>
+					{/* Business Details */}
+					<ToolPanel className="no-print">
+						<ToolSectionTitle
+							title="Issuer & Business Profile"
+							description="Your organization or freelance billing identity."
+						/>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+							<ToolField label="Business / Company Name">
+								<Input value={businessName} onChange={(e) => setBusinessName(e.target.value)} />
+							</ToolField>
+							<ToolField label="Tax ID / GSTIN / EIN">
+								<Input value={taxId} onChange={(e) => setTaxId(e.target.value)} placeholder="e.g. EIN or GSTIN" />
+							</ToolField>
+						</div>
 
-                            <div className="grid grid-cols-2 gap-3">
-                                <div className="space-y-2">
-                                    <Label htmlFor="inv-date">Invoice Date</Label>
-                                    <Input id="inv-date" type="date" value={invoiceDate} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInvoiceDate(e.target.value)} />
-                                </div>
-                                <div className="space-y-2">
-                                    <Label htmlFor="due-date">Due Date</Label>
-                                    <Input id="due-date" type="date" value={dueDate} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setDueDate(e.target.value)} />
-                                </div>
-                            </div>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+							<ToolField label="Email Address">
+								<Input type="email" value={businessEmail} onChange={(e) => setBusinessEmail(e.target.value)} />
+							</ToolField>
+							<ToolField label="Phone Number">
+								<Input value={businessPhone} onChange={(e) => setBusinessPhone(e.target.value)} />
+							</ToolField>
+						</div>
 
-                            <div className="grid grid-cols-2 gap-3">
-                                <div className="space-y-2">
-                                    <Label htmlFor="flat-discount">Discount ({currencySymbol})</Label>
-                                    <Input id="flat-discount" type="number" value={discount} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setDiscount(e.target.value)} />
-                                </div>
-                                <div className="space-y-2 flex items-center justify-between pt-6">
-                                    <Label htmlFor="tax-toggle" className="cursor-pointer">Enable Tax/GST</Label>
-                                    <input
-                                        id="tax-toggle"
-                                        type="checkbox"
-                                        checked={taxEnabled}
-                                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTaxEnabled(e.target.checked)}
-                                        className="h-4 w-4 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500"
-                                    />
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </div>
+						<div className="mt-4">
+							<ToolField label="Physical / Billing Address">
+								<Textarea
+									rows={2}
+									value={businessAddress}
+									onChange={(e) => setBusinessAddress(e.target.value)}
+									className="resize-y"
+								/>
+							</ToolField>
+						</div>
 
-                {/* Preview and Interactive Work Zone */}
-                <div className="lg:col-span-7 space-y-6">
-                    <Card className="border-border/30 bg-white text-black font-sans shadow-2xl relative min-h-[842px] overflow-hidden p-8 print-style-invoice">
-                        {/* Interactive items edit box overlaid for desktop visual workspace */}
-                        <div className="no-print mb-8 p-4 bg-secondary/10 border border-border/20 rounded-xl space-y-4">
-                            <div className="flex justify-between items-center border-b border-border/20 pb-2">
-                                <span className="font-semibold text-sm text-foreground">Invoice Items Builder</span>
-                                <Button size="sm" onClick={addItem} className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs">
-                                    <Plus className="h-3 w-3 mr-1" /> Add Line Item
-                                </Button>
-                            </div>
-                            
-                            <div className="space-y-3 max-h-60 overflow-y-auto pr-1">
-                                {items.map((item) => (
-                                    <div key={item.id} className="grid grid-cols-12 gap-2 items-center bg-background/50 p-2.5 rounded-lg border border-border/10">
-                                        <div className="col-span-5 space-y-1">
-                                            <Input
-                                                placeholder="Description"
-                                                value={item.description}
-                                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateItem(item.id, "description", e.target.value)}
-                                                className="h-8 text-xs text-foreground bg-background"
-                                            />
-                                        </div>
-                                        <div className="col-span-2">
-                                            <Input
-                                                type="number"
-                                                placeholder="Qty"
-                                                value={item.quantity}
-                                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateItem(item.id, "quantity", e.target.value)}
-                                                className="h-8 text-xs text-foreground bg-background"
-                                            />
-                                        </div>
-                                        <div className="col-span-2">
-                                            <Input
-                                                type="number"
-                                                placeholder="Rate"
-                                                value={item.rate}
-                                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateItem(item.id, "rate", e.target.value)}
-                                                className="h-8 text-xs text-foreground bg-background"
-                                            />
-                                        </div>
-                                        {taxEnabled && (
-                                            <div className="col-span-2">
-                                                <Input
-                                                    type="number"
-                                                    placeholder="GST %"
-                                                    value={item.taxRate}
-                                                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateItem(item.id, "taxRate", e.target.value)}
-                                                    className="h-8 text-xs text-foreground bg-background"
-                                                />
-                                            </div>
-                                        )}
-                                        <div className="col-span-1 flex justify-end">
-                                            <Button
-                                                variant="ghost"
-                                                size="sm"
-                                                className="h-8 w-8 text-red-500 hover:text-red-700 hover:bg-red-500/10 p-0"
-                                                onClick={() => removeItem(item.id)}
-                                            >
-                                                <Trash2 className="h-4 w-4" />
-                                            </Button>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+						<div className="mt-4 flex items-center gap-3">
+							<input
+								ref={logoInputRef}
+								type="file"
+								accept="image/*"
+								className="hidden"
+								onChange={handleLogoUpload}
+							/>
+							<Button variant="outline" size="sm" onClick={() => logoInputRef.current?.click()} className="gap-1.5 text-xs">
+								<Upload className="h-3.5 w-3.5" /> {logoUrl ? "Change Logo" : "Upload Business Logo"}
+							</Button>
+							{logoUrl && (
+								<Button variant="ghost" size="sm" onClick={removeLogo} className="text-xs text-destructive">
+									Remove Logo
+								</Button>
+							)}
+						</div>
+					</ToolPanel>
 
-                        {/* actual printable layout invoice */}
-                        <div className="space-y-6 text-xs text-slate-800 printable-invoice">
-                            {/* Invoice Header */}
-                            <div className="flex justify-between items-start border-b border-gray-200 pb-6">
-                                <div className="space-y-2">
-                                    {logoUrl ? (
-                                        <img src={logoUrl} alt="Logo" className="max-h-14 max-w-[150px] object-contain" />
-                                    ) : (
-                                        <div className="w-12 h-12 rounded bg-emerald-600 text-white font-bold text-lg flex items-center justify-center select-none no-print">
-                                            B
-                                        </div>
-                                    )}
-                                    <div className="font-bold text-lg text-slate-900">{businessName}</div>
-                                    <div className="whitespace-pre-line text-slate-500 leading-normal">{businessAddress}</div>
-                                    <div className="text-slate-500">{businessEmail} | {businessPhone}</div>
-                                </div>
+					{/* Client Details */}
+					<ToolPanel className="mt-6 no-print">
+						<ToolSectionTitle
+							title="Bill To (Client)"
+							description="Customer information and destination address."
+						/>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+							<ToolField label="Client Name / Organization">
+								<Input value={clientName} onChange={(e) => setClientName(e.target.value)} />
+							</ToolField>
+							<ToolField label="Client Email">
+								<Input type="email" value={clientEmail} onChange={(e) => setClientEmail(e.target.value)} />
+							</ToolField>
+						</div>
+						<div className="mt-4">
+							<ToolField label="Client Billing Address">
+								<Textarea
+									rows={2}
+									value={clientAddress}
+									onChange={(e) => setClientAddress(e.target.value)}
+									className="resize-y"
+								/>
+							</ToolField>
+						</div>
+					</ToolPanel>
 
-                                <div className="text-right space-y-1">
-                                    <div className="text-xl font-bold uppercase tracking-wider text-slate-900">INVOICE</div>
-                                    <div className="text-slate-500">Invoice #: <strong>{invoiceNumber}</strong></div>
-                                    <div className="text-slate-500">Date: <strong>{invoiceDate}</strong></div>
-                                    <div className="text-slate-500">Due Date: <strong>{dueDate}</strong></div>
-                                </div>
-                            </div>
+					{/* Invoice Meta & Line Items */}
+					<ToolPanel className="mt-6 no-print">
+						<ToolSectionTitle
+							title="Invoice Metadata & Currency"
+							description="Set document numbers, issue dates, and terms."
+						/>
+						<div className="grid grid-cols-1 sm:grid-cols-4 gap-4 mt-4">
+							<ToolField label="Invoice Number">
+								<Input value={invoiceNumber} onChange={(e) => setInvoiceNumber(e.target.value)} className="font-mono" />
+							</ToolField>
+							<ToolField label="Currency">
+								<Select value={currency} onValueChange={(val: CurrencyCode) => setCurrency(val)}>
+									<SelectTrigger>
+										<SelectValue placeholder="Currency" />
+									</SelectTrigger>
+									<SelectContent>
+										<SelectItem value="USD">$ USD (US Dollar)</SelectItem>
+										<SelectItem value="EUR">€ EUR (Euro)</SelectItem>
+										<SelectItem value="GBP">£ GBP (British Pound)</SelectItem>
+										<SelectItem value="INR">₹ INR (Indian Rupee)</SelectItem>
+										<SelectItem value="CAD">C$ CAD (Canadian Dollar)</SelectItem>
+										<SelectItem value="AUD">A$ AUD (Australian Dollar)</SelectItem>
+										<SelectItem value="SGD">S$ SGD (Singapore Dollar)</SelectItem>
+										<SelectItem value="JPY">¥ JPY (Japanese Yen)</SelectItem>
+									</SelectContent>
+								</Select>
+							</ToolField>
+							<ToolField label="Issue Date">
+								<Input type="date" value={invoiceDate} onChange={(e) => setInvoiceDate(e.target.value)} />
+							</ToolField>
+							<ToolField label="Payment Due Date">
+								<Input type="date" value={dueDate} onChange={(e) => setDueDate(e.target.value)} />
+							</ToolField>
+						</div>
 
-                            {/* Client & Billing Info */}
-                            <div className="grid grid-cols-2 gap-4 border-b border-gray-200 pb-6">
-                                <div className="space-y-1">
-                                    <div className="text-[10px] font-bold text-slate-400 uppercase">Billed To</div>
-                                    <div className="font-bold text-slate-900">{clientName}</div>
-                                    <div className="whitespace-pre-line text-slate-500 leading-normal">{clientAddress}</div>
-                                    <div className="text-slate-500">{clientEmail}</div>
-                                </div>
-                                <div className="space-y-1 text-right">
-                                    <div className="text-[10px] font-bold text-slate-400 uppercase">Payment Due</div>
-                                    <div className="text-lg font-bold text-emerald-600">{currencySymbol} {calculations.total}</div>
-                                </div>
-                            </div>
+						{/* Line Items Editor */}
+						<div className="mt-6 pt-5 border-t border-border">
+							<div className="flex items-center justify-between mb-3">
+								<h3 className="text-sm font-semibold text-foreground">Line Items</h3>
+								<Button size="sm" variant="outline" onClick={addItem} className="gap-1 text-xs font-semibold">
+									<Plus className="h-3.5 w-3.5" /> Add Line Item
+								</Button>
+							</div>
 
-                            {/* Line Items Table */}
-                            <table className="w-full text-left border-collapse">
-                                <thead>
-                                    <tr className="border-b border-slate-200 text-[10px] font-bold text-slate-400 uppercase tracking-wider bg-slate-50/50">
-                                        <th className="py-2.5 pl-2">Description</th>
-                                        <th className="py-2.5 text-right w-16">Qty</th>
-                                        <th className="py-2.5 text-right w-24">Rate</th>
-                                        {taxEnabled && <th className="py-2.5 text-right w-16">GST</th>}
-                                        <th className="py-2.5 text-right pr-2 w-28">Amount</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-slate-100">
-                                    {items.map((item) => {
-                                        const qty = parseFloat(String(item.quantity)) || 0;
-                                        const rate = parseFloat(String(item.rate)) || 0;
-                                        const amt = qty * rate;
-                                        return (
-                                            <tr key={item.id} className="text-slate-700">
-                                                <td className="py-3 pl-2 font-medium text-slate-900">{item.description}</td>
-                                                <td className="py-3 text-right">{qty}</td>
-                                                <td className="py-3 text-right">{currencySymbol} {rate.toFixed(2)}</td>
-                                                {taxEnabled && <td className="py-3 text-right">{item.taxRate}%</td>}
-                                                <td className="py-3 text-right pr-2 font-semibold text-slate-900">
-                                                    {currencySymbol} {amt.toFixed(2)}
-                                                </td>
-                                            </tr>
-                                        );
-                                    })}
-                                </tbody>
-                            </table>
+							<div className="space-y-3">
+								{items.map((item, idx) => {
+									const qty = typeof item.quantity === "string" ? parseFloat(item.quantity) || 0 : item.quantity;
+									const rate = typeof item.rate === "string" ? parseFloat(item.rate) || 0 : item.rate;
+									const total = qty * rate;
 
-                            {/* Calculations & Totals */}
-                            <div className="grid grid-cols-12 gap-4 pt-4 border-t border-slate-100">
-                                <div className="col-span-7 space-y-4">
-                                    {bankDetails && (
-                                        <div className="bg-slate-50 p-3 rounded space-y-1">
-                                            <div className="font-bold text-[9px] text-slate-400 uppercase tracking-wider">Payment Details</div>
-                                            <div className="whitespace-pre-line text-[10px] text-slate-600 font-mono leading-normal">{bankDetails}</div>
-                                        </div>
-                                    )}
-                                </div>
-                                <div className="col-span-5 space-y-2 text-right text-slate-600 font-medium">
-                                    <div className="flex justify-between">
-                                        <span>Subtotal:</span>
-                                        <span className="text-slate-900">{currencySymbol} {calculations.subtotal}</span>
-                                    </div>
-                                    {taxEnabled && (
-                                        <div className="flex justify-between">
-                                            <span>Tax Total:</span>
-                                            <span className="text-slate-900">{currencySymbol} {calculations.taxTotal}</span>
-                                        </div>
-                                    )}
-                                    {parseFloat(discount) > 0 && (
-                                        <div className="flex justify-between text-red-500">
-                                            <span>Discount:</span>
-                                            <span>-{currencySymbol} {calculations.discount}</span>
-                                        </div>
-                                    )}
-                                    <div className="flex justify-between border-t border-slate-200 pt-2 text-sm font-bold text-slate-900">
-                                        <span>Total:</span>
-                                        <span className="text-emerald-600">{currencySymbol} {calculations.total}</span>
-                                    </div>
-                                </div>
-                            </div>
+									return (
+										<div key={item.id} className="p-3 rounded-xl bg-muted/30 border border-border/50 grid grid-cols-12 gap-2 items-center">
+											<div className="col-span-12 sm:col-span-5">
+												<Input
+													value={item.description}
+													onChange={(e) => updateItem(item.id, "description", e.target.value)}
+													placeholder="Description"
+													className="text-xs"
+												/>
+											</div>
+											<div className="col-span-4 sm:col-span-2">
+												<Input
+													type="number"
+													value={item.quantity}
+													onChange={(e) => updateItem(item.id, "quantity", e.target.value)}
+													placeholder="Qty"
+													className="text-xs font-mono"
+												/>
+											</div>
+											<div className="col-span-4 sm:col-span-2">
+												<Input
+													type="number"
+													value={item.rate}
+													onChange={(e) => updateItem(item.id, "rate", e.target.value)}
+													placeholder="Rate"
+													className="text-xs font-mono"
+												/>
+											</div>
+											{taxEnabled && (
+												<div className="col-span-3 sm:col-span-1">
+													<Input
+														type="number"
+														value={item.taxRate}
+														onChange={(e) => updateItem(item.id, "taxRate", e.target.value)}
+														placeholder="Tax %"
+														className="text-xs font-mono"
+													/>
+												</div>
+											)}
+											<div className="col-span-9 sm:col-span-1 text-right text-xs font-mono font-bold">
+												{symbol}{total.toLocaleString(undefined, { minimumFractionDigits: 2 })}
+											</div>
+											<div className="col-span-3 sm:col-span-1 text-right">
+												<Button
+													variant="ghost"
+													size="sm"
+													onClick={() => removeItem(item.id)}
+													className="h-8 w-8 p-0 text-muted-foreground hover:text-destructive"
+												>
+													<Trash2 className="h-4 w-4" />
+												</Button>
+											</div>
+										</div>
+									);
+								})}
+							</div>
+						</div>
 
-                            {/* Terms / Notes */}
-                            <div className="border-t border-slate-200 pt-6 mt-6 grid grid-cols-12 gap-4 items-end">
-                                <div className="col-span-8 space-y-1.5">
-                                    <div className="font-bold text-[9px] text-slate-400 uppercase tracking-wider">Notes &amp; Terms</div>
-                                    <div className="text-slate-500 whitespace-pre-line leading-normal">{notes}</div>
-                                </div>
-                                <div className="col-span-4 flex flex-col items-end space-y-2">
-                                    <div className="h-12 w-28 border-b border-slate-300 flex items-end justify-center text-[10px] text-slate-400 italic">
-                                        Signature
-                                    </div>
-                                    <div className="text-[9px] text-slate-400 uppercase font-bold text-right tracking-wider">
-                                        Authorized Signatory
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						{/* Taxes & Discounts */}
+						<div className="mt-6 pt-5 border-t border-border grid grid-cols-1 sm:grid-cols-2 gap-4">
+							<div className="flex items-center justify-between p-3 rounded-xl bg-muted/40 border border-border/50">
+								<div className="space-y-0.5">
+									<Label htmlFor="tax-switch" className="text-sm font-semibold cursor-pointer">
+										Include Sales Tax / GST
+									</Label>
+									<p className="text-xs text-muted-foreground">Calculate tax per line item.</p>
+								</div>
+								<Switch id="tax-switch" checked={taxEnabled} onCheckedChange={setTaxEnabled} />
+							</div>
 
-                    </Card>
+							<ToolField label={`Flat Discount (${symbol})`}>
+								<Input
+									type="number"
+									value={discount}
+									onChange={(e) => setDiscount(e.target.value)}
+									className="font-mono"
+								/>
+							</ToolField>
+						</div>
 
-                    {/* Security Badge */}
-                    <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/10 flex items-start gap-3 no-print">
-                        <Shield className="h-5 w-5 text-emerald-500 mt-0.5 flex-shrink-0" />
-                        <div className="space-y-1 text-foreground">
-                            <h4 className="text-sm font-medium">100% Client-Side Invoice Engine</h4>
-                            <p className="text-xs text-muted-foreground">
-                                This tool runs fully locally in your web browser. No invoice details, company information, logo images, or financial calculations are uploaded or transmitted to any remote servers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+						{/* Payment Notes & Banking */}
+						<div className="mt-6 pt-5 border-t border-border grid grid-cols-1 sm:grid-cols-2 gap-4">
+							<ToolField label="Payment Terms & Notes">
+								<Textarea
+									rows={3}
+									value={paymentTerms}
+									onChange={(e) => setPaymentTerms(e.target.value)}
+									className="text-xs resize-y"
+								/>
+							</ToolField>
+							<ToolField label="Wire / Bank Transfer Coordinates">
+								<Textarea
+									rows={3}
+									value={bankDetails}
+									onChange={(e) => setBankDetails(e.target.value)}
+									className="text-xs font-mono resize-y"
+								/>
+							</ToolField>
+						</div>
+					</ToolPanel>
 
-            </div>
-            
-            {/* Custom Print CSS specifically scoped to invoice print-media */}
-            <style jsx global>{`
-                @media print {
-                    body {
-                        background: white !important;
-                        color: black !important;
-                    }
-                    .no-print, header, footer, nav, aside {
-                        display: none !important;
-                    }
-                    .print-style-invoice {
-                        border: none !important;
-                        box-shadow: none !important;
-                        padding: 0 !important;
-                        margin: 0 !important;
-                        width: 100% !important;
-                        min-height: auto !important;
-                        background: transparent !important;
-                        color: black !important;
-                    }
-                    .printable-invoice {
-                        font-family: Arial, Helvetica, sans-serif !important;
-                        color: #1e293b !important;
-                        font-size: 11px !important;
-                    }
-                    .printable-invoice .text-slate-900 {
-                        color: #0f172a !important;
-                    }
-                    .printable-invoice .text-slate-500 {
-                        color: #64748b !important;
-                    }
-                }
-            `}</style>
-        </div>
-    );
+					{/* Live Rendered Paper Invoice Sheet */}
+					<ToolPanel className="mt-8">
+						<div className="flex items-center justify-between mb-4 no-print">
+							<ToolSectionTitle
+								title="Print-Ready Preview"
+								description="High-resolution, vector-crisp bill layout rendered in real time."
+							/>
+							<Button size="sm" onClick={handlePrint} className="gap-1.5 font-semibold text-xs">
+								<Printer className="h-3.5 w-3.5" /> Print / Save PDF
+							</Button>
+						</div>
+
+						{/* Real Paper Document Container */}
+						<div
+							id="invoice-paper-zone"
+							className="p-8 sm:p-12 rounded-xl bg-white text-neutral-900 border-2 border-neutral-200 shadow-xl font-sans text-xs leading-relaxed"
+						>
+							{/* Invoice Top Header */}
+							<div className="flex flex-col sm:flex-row justify-between items-start gap-6 border-b-2 border-neutral-900 pb-8">
+								<div>
+									{logoUrl ? (
+										<img src={logoUrl} alt="Business Logo" className="h-16 w-auto object-contain mb-3" />
+									) : (
+										<div className="h-12 w-12 rounded-xl bg-neutral-900 text-white font-bold flex items-center justify-center text-xl mb-3">
+											{businessName.charAt(0) || "B"}
+										</div>
+									)}
+									<h2 className="text-xl font-bold text-neutral-950 uppercase tracking-tight">
+										{businessName || "Your Company Name"}
+									</h2>
+									<p className="whitespace-pre-line text-neutral-600 mt-1 text-[11px]">{businessAddress}</p>
+									<p className="text-neutral-600 text-[11px] mt-1">
+										{businessEmail} {businessPhone && `• ${businessPhone}`}
+									</p>
+									{taxId && <p className="font-mono text-neutral-700 text-[10px] mt-1">Tax ID: {taxId}</p>}
+								</div>
+
+								<div className="text-left sm:text-right space-y-1 sm:min-w-[200px]">
+									<h1 className="text-3xl font-extrabold uppercase tracking-widest text-neutral-950">
+										INVOICE
+									</h1>
+									<p className="font-mono font-bold text-sm text-neutral-900">#{invoiceNumber}</p>
+									<div className="pt-2 text-[11px] space-y-1">
+										<p className="text-neutral-500">
+											Invoice Date: <strong className="text-neutral-900 font-sans">{invoiceDate}</strong>
+										</p>
+										<p className="text-neutral-500">
+											Due Date: <strong className="text-neutral-900 font-sans">{dueDate}</strong>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							{/* Bill To Info */}
+							<div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+								<div>
+									<p className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 mb-1">
+										Billed To:
+									</p>
+									<h4 className="text-sm font-bold text-neutral-950">{clientName || "Client Name"}</h4>
+									<p className="whitespace-pre-line text-neutral-600 text-[11px] mt-1">{clientAddress}</p>
+									{clientEmail && <p className="text-neutral-600 text-[11px] mt-0.5">{clientEmail}</p>}
+								</div>
+							</div>
+
+							{/* Table of Items */}
+							<div className="border border-neutral-300 rounded-lg overflow-hidden my-6">
+								<table className="w-full text-left border-collapse">
+									<thead>
+										<tr className="bg-neutral-100 border-b border-neutral-300 text-neutral-700 text-[11px] font-bold uppercase tracking-wider">
+											<th className="py-2.5 px-4">Description</th>
+											<th className="py-2.5 px-4 text-center">Qty</th>
+											<th className="py-2.5 px-4 text-right">Unit Rate</th>
+											{taxEnabled && <th className="py-2.5 px-4 text-right">Tax</th>}
+											<th className="py-2.5 px-4 text-right">Amount</th>
+										</tr>
+									</thead>
+									<tbody className="divide-y divide-neutral-200">
+										{items.map((item) => {
+											const qty = typeof item.quantity === "string" ? parseFloat(item.quantity) || 0 : item.quantity;
+											const rate = typeof item.rate === "string" ? parseFloat(item.rate) || 0 : item.rate;
+											const total = qty * rate;
+
+											return (
+												<tr key={item.id} className="text-neutral-800 text-[11px]">
+													<td className="py-3 px-4 font-medium">{item.description}</td>
+													<td className="py-3 px-4 text-center font-mono">{qty}</td>
+													<td className="py-3 px-4 text-right font-mono">
+														{symbol}
+														{rate.toLocaleString(undefined, { minimumFractionDigits: 2 })}
+													</td>
+													{taxEnabled && (
+														<td className="py-3 px-4 text-right font-mono text-neutral-500">
+															{item.taxRate}%
+														</td>
+													)}
+													<td className="py-3 px-4 text-right font-mono font-bold text-neutral-950">
+														{symbol}
+														{total.toLocaleString(undefined, { minimumFractionDigits: 2 })}
+													</td>
+												</tr>
+											);
+										})}
+									</tbody>
+								</table>
+							</div>
+
+							{/* Summary Breakdown */}
+							<div className="flex flex-col sm:flex-row justify-between items-start gap-8 mt-6">
+								<div className="sm:max-w-xs space-y-3">
+									{paymentTerms && (
+										<div>
+											<p className="text-[10px] font-bold uppercase tracking-wider text-neutral-400">
+												Terms & Instructions:
+											</p>
+											<p className="text-[11px] text-neutral-600 mt-0.5">{paymentTerms}</p>
+										</div>
+									)}
+									{bankDetails && (
+										<div>
+											<p className="text-[10px] font-bold uppercase tracking-wider text-neutral-400">
+												Bank Transfer Details:
+											</p>
+											<p className="text-[10px] font-mono text-neutral-700 whitespace-pre-line mt-0.5">
+												{bankDetails}
+											</p>
+										</div>
+									)}
+								</div>
+
+								<div className="w-full sm:w-64 space-y-2 text-[11px]">
+									<div className="flex justify-between py-1 border-b border-neutral-200">
+										<span className="text-neutral-500">Subtotal</span>
+										<span className="font-mono font-semibold">
+											{symbol}
+											{parseFloat(calculations.subtotal).toLocaleString(undefined, {
+												minimumFractionDigits: 2,
+											})}
+										</span>
+									</div>
+									{taxEnabled && (
+										<div className="flex justify-between py-1 border-b border-neutral-200">
+											<span className="text-neutral-500">Estimated Tax</span>
+											<span className="font-mono font-semibold">
+												{symbol}
+												{parseFloat(calculations.taxTotal).toLocaleString(undefined, {
+													minimumFractionDigits: 2,
+												})}
+											</span>
+										</div>
+									)}
+									{parseFloat(calculations.discount) > 0 && (
+										<div className="flex justify-between py-1 border-b border-neutral-200 text-emerald-700">
+											<span>Discount</span>
+											<span className="font-mono font-semibold">
+												-{symbol}
+												{parseFloat(calculations.discount).toLocaleString(undefined, {
+													minimumFractionDigits: 2,
+												})}
+											</span>
+										</div>
+									)}
+									<div className="flex justify-between py-2.5 border-t-2 border-neutral-900 text-sm font-bold text-neutral-950">
+										<span>Total Due</span>
+										<span className="font-mono text-base">
+											{symbol}
+											{parseFloat(calculations.grandTotal).toLocaleString(undefined, {
+												minimumFractionDigits: 2,
+											})}
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</ToolPanel>
+				</ToolGridMain>
+
+				{/* Sidebar Metrics & Security */}
+				<ToolGridSide>
+					<ToolPanel className="no-print">
+						<ToolSectionTitle
+							title="Invoice Summary"
+							description="Quick financial overview of this draft."
+						/>
+						<div className="space-y-3 mt-4 text-sm">
+							<div className="flex justify-between py-2 border-b border-border/50">
+								<span className="text-muted-foreground">Line Items</span>
+								<span className="font-mono font-bold">{items.length}</span>
+							</div>
+							<div className="flex justify-between py-2 border-b border-border/50">
+								<span className="text-muted-foreground">Subtotal</span>
+								<span className="font-mono font-semibold">
+									{symbol}{parseFloat(calculations.subtotal).toLocaleString()}
+								</span>
+							</div>
+							<div className="flex justify-between py-2 border-b border-border/50">
+								<span className="text-muted-foreground">Tax Total</span>
+								<span className="font-mono font-semibold">
+									{symbol}{parseFloat(calculations.taxTotal).toLocaleString()}
+								</span>
+							</div>
+							<div className="flex justify-between py-2">
+								<span className="text-muted-foreground">Grand Total</span>
+								<span className="font-mono font-bold text-emerald-500 text-base">
+									{symbol}{parseFloat(calculations.grandTotal).toLocaleString()}
+								</span>
+							</div>
+						</div>
+					</ToolPanel>
+
+					<ToolPanel className="mt-6 no-print">
+						<div className="space-y-3 text-xs text-muted-foreground leading-relaxed">
+							<h3 className="font-semibold text-foreground text-sm flex items-center gap-1.5">
+								<ShieldCheck className="h-4 w-4 text-emerald-500" />
+								Zero Cloud Exposure
+							</h3>
+							<p>
+								Commercial SaaS billing platforms track your client revenue, customer identities, and payment banking details for cross-sell advertising and underwriting.
+							</p>
+							<p>
+								SopKit builds your invoices strictly inside your client browser. You can export a portable <code className="bg-muted px-1 py-0.5 rounded font-mono">.json</code> template directly to your disk for rapid re-use without ever trusting a third-party server.
+							</p>
+						</div>
+					</ToolPanel>
+				</ToolGridSide>
+			</ToolGrid>
+		</ToolShell>
+	);
 }

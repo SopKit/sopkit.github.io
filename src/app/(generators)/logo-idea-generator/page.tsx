@@ -7,12 +7,12 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Logo Idea Generator",
-	description: "Privacy-friendly, 100% client-side logo idea generation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Generate creative logo concepts, typography styles, icon ideas, and color palettes for startups and side projects. Explore branding concepts free in browser.",
 	route: "/logo-idea-generator",
 	category: "generators",
 });
 
-export default async function ToolPage() {
+export default function ToolPage() {
 	const tool = getToolByRoute("/logo-idea-generator");
 
 	if (!tool) {
@@ -30,7 +30,7 @@ export default async function ToolPage() {
 						name: tool.name,
 						description: tool.description,
 						url: `${SITE_URL}/logo-idea-generator/`,
-						applicationCategory: "UtilitiesApplication",
+						applicationCategory: "DesignApplication",
 						operatingSystem: "Any",
 						offers: {
 							"@type": "Offer",

@@ -1,593 +1,721 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import { Printer, Shield, RefreshCw, Upload, Trash2, Heart, Briefcase } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+	ToolShell,
+	ToolGrid,
+	ToolGridMain,
+	ToolGridSide,
+	ToolPanel,
+	ToolSectionTitle,
+	ToolField,
+} from "@/components/tools/shared/design-system";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
+import { Printer, Upload, Trash2, Heart, Briefcase, RotateCcw, Download, ShieldCheck } from "lucide-react";
+
+type BioMode = "marriage" | "job";
+type ThemeStyle = "royal" | "rose" | "classic";
 
 export default function BioDataMaker() {
-    const [mode, setMode] = useState<"marriage" | "job">("marriage");
-    
-    // Personal Details
-    const [fullName, setFullName] = useState("Rajesh Kumar");
-    const [dob, setDob] = useState("1996-08-15");
-    const [tob, setTob] = useState("08:45 AM");
-    const [pob, setPob] = useState("New Delhi, India");
-    const [height, setHeight] = useState("5 ft 8 in");
-    const [complexion, setComplexion] = useState("Fair");
-    const [education, setEducation] = useState("B.Tech in Computer Science");
-    const [occupation, setOccupation] = useState("Senior Software Engineer at MNC");
-    const [salary, setSalary] = useState("18 LPA");
+	const [mode, setMode] = useState<BioMode>("marriage");
+	const [theme, setTheme] = useState<ThemeStyle>("royal");
+	const [includeHeaderMotto, setIncludeHeaderMotto] = useState(true);
+	const [headerMotto, setHeaderMotto] = useState("|| Shree Ganeshay Namah ||");
 
-    // Horoscope (Marriage Mode)
-    const [rashi, setRashi] = useState("Leo (सिंह)");
-    const [nakshatra, setNakshatra] = useState("Purva Phalguni");
-    const [gotra, setGotra] = useState("Kashyap");
-    const [manglik, setManglik] = useState("No");
+	// Personal Details
+	const [fullName, setFullName] = useState("Rajesh Kumar Sharma");
+	const [dob, setDob] = useState("1996-08-15");
+	const [tob, setTob] = useState("08:45 AM");
+	const [pob, setPob] = useState("New Delhi, India");
+	const [height, setHeight] = useState("5 ft 9 in (175 cm)");
+	const [complexion, setComplexion] = useState("Fair");
+	const [motherTongue, setMotherTongue] = useState("Hindi");
+	const [bloodGroup, setBloodGroup] = useState("B+");
 
-    // Family Details (Marriage Mode)
-    const [fatherName, setFatherName] = useState("Mr. Ramesh Kumar");
-    const [fatherOcc, setFatherOcc] = useState("Government Employee (Retired)");
-    const [motherName, setMotherName] = useState("Mrs. Sunita Devi");
-    const [motherOcc, setMotherOcc] = useState("Homemaker");
-    const [siblings, setSiblings] = useState("1 Elder Brother (Married)");
+	// Horoscope (Marriage)
+	const [showAstro, setShowAstro] = useState(true);
+	const [rashi, setRashi] = useState("Leo (सिंह)");
+	const [nakshatra, setNakshatra] = useState("Purva Phalguni");
+	const [gotra, setGotra] = useState("Kashyap");
+	const [manglik, setManglik] = useState("No");
 
-    // Professional Details (Job Mode)
-    const [skills, setSkills] = useState("React.js, Next.js, Node.js, Tailwind CSS, TypeScript, Cloudflare Workers");
-    const [experience, setExperience] = useState("3+ Years of experience building premium client-side web applications.");
+	// Education & Career
+	const [education, setEducation] = useState("B.Tech in Computer Science (IIT Delhi)");
+	const [occupation, setOccupation] = useState("Senior Software Engineer at Google");
+	const [company, setCompany] = useState("Google India Pvt Ltd");
+	const [salary, setSalary] = useState("32 LPA");
 
-    // Contact details
-    const [contactNo, setContactNo] = useState("+91 98765 43210");
-    const [email, setEmail] = useState("rajesh@email.com");
-    const [address, setAddress] = useState("456, Vikas Marg, Preet Vihar, New Delhi - 110092");
+	// Family Background (Marriage)
+	const [fatherName, setFatherName] = useState("Mr. Ramesh Kumar Sharma");
+	const [fatherOcc, setFatherOcc] = useState("Gazetted Officer (Retired, CPWD)");
+	const [motherName, setMotherName] = useState("Mrs. Sunita Devi");
+	const [motherOcc, setMotherOcc] = useState("Homemaker");
+	const [siblings, setSiblings] = useState("1 Elder Brother (Married, Software Architect), 1 Younger Sister (Pursuing MBA)");
+	const [familyType, setFamilyType] = useState("Nuclear Family, Upper Middle Class");
+	const [nativePlace, setNativePlace] = useState("Jaipur, Rajasthan");
 
-    const photoInputRef = useRef<HTMLInputElement>(null);
-    const [photoUrl, setPhotoUrl] = useState("");
+	// Job Mode Fields
+	const [summary, setSummary] = useState("Results-driven Software Engineer with 5+ years of experience designing high-throughput distributed systems, modern React web applications, and resilient cloud architectures.");
+	const [skills, setSkills] = useState("TypeScript, React, Next.js, Node.js, Go, PostgreSQL, Redis, Docker, Kubernetes, AWS");
+	const [experience, setExperience] = useState("Senior Software Engineer at TechCorp (2022 - Present):\n• Led migration of legacy monolithic app to micro-frontends, cutting page load by 48%.\n• Mentored 6 junior engineers and authored core UI component library.\n\nFull-Stack Developer at InnoSoft (2019 - 2022):\n• Developed customer billing workflows serving 200,000 active monthly subscribers.");
 
-    const handlePhotoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (file) {
-            if (file.size > 2 * 1024 * 1024) {
-                toast.error("Please select an image smaller than 2MB.");
-                return;
-            }
-            const reader = new FileReader();
-            reader.onload = (event) => {
-                if (event.target?.result) {
-                    setPhotoUrl(event.target.result as string);
-                }
-            };
-            reader.readAsDataURL(file);
-        }
-    };
+	// Contact
+	const [contactPerson, setContactPerson] = useState("Mr. Ramesh Sharma (Father)");
+	const [phone, setPhone] = useState("+91 98765 43210");
+	const [email, setEmail] = useState("rajesh.sharma.contact@email.com");
+	const [address, setAddress] = useState("Sector 62, Noida, Uttar Pradesh - 201309");
 
-    const removePhoto = () => {
-        setPhotoUrl("");
-        if (photoInputRef.current) {
-            photoInputRef.current.value = "";
-        }
-    };
+	// Profile Photo
+	const photoInputRef = useRef<HTMLInputElement>(null);
+	const [photoUrl, setPhotoUrl] = useState<string>("");
 
-    const handlePrint = () => {
-        window.print();
-    };
+	const handlePhotoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+		const file = e.target.files?.[0];
+		if (file) {
+			if (file.size > 3 * 1024 * 1024) {
+				toast.error("Photo size should be under 3MB.");
+				return;
+			}
+			const reader = new FileReader();
+			reader.onload = (event) => {
+				if (event.target?.result) {
+					setPhotoUrl(event.target.result as string);
+					toast.success("Photo uploaded successfully.");
+				}
+			};
+			reader.readAsDataURL(file);
+		}
+	};
 
-    const resetFields = () => {
-        setFullName("Rajesh Kumar");
-        setDob("1996-08-15");
-        setTob("08:45 AM");
-        setPob("New Delhi, India");
-        setHeight("5 ft 8 in");
-        setComplexion("Fair");
-        setEducation("B.Tech in Computer Science");
-        setOccupation("Senior Software Engineer at MNC");
-        setSalary("18 LPA");
-        setRashi("Leo (सिंह)");
-        setNakshatra("Purva Phalguni");
-        setGotra("Kashyap");
-        setManglik("No");
-        setFatherName("Mr. Ramesh Kumar");
-        setFatherOcc("Government Employee (Retired)");
-        setMotherName("Mrs. Sunita Devi");
-        setMotherOcc("Homemaker");
-        setSiblings("1 Elder Brother (Married)");
-        setContactNo("+91 98765 43210");
-        setEmail("rajesh@email.com");
-        setAddress("456, Vikas Marg, Preet Vihar, New Delhi - 110092");
-        toast.success("Biodata form reset.");
-    };
+	const removePhoto = () => {
+		setPhotoUrl("");
+		if (photoInputRef.current) photoInputRef.current.value = "";
+	};
 
-    return (
-        <div className="space-y-6 max-w-6xl mx-auto font-sans">
-            {/* Top Action Command Bar */}
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-border/20 pb-4 no-print">
-                <div>
-                    <h2 className="text-xl font-bold flex items-center gap-2">
-                        {mode === "marriage" ? <Heart className="h-5 w-5 text-rose-500 animate-pulse" /> : <Briefcase className="h-5 w-5 text-indigo-500" />}
-                        Bio Data &amp; Resume Maker
-                    </h2>
-                    <p className="text-xs text-muted-foreground mt-1">
-                        Generate formatted marriage biodata sheets or professional resume layouts that are print-ready.
-                    </p>
-                </div>
-                <div className="flex items-center gap-2">
-                    <select
-                        className="p-2 rounded-lg border border-border/40 bg-background text-sm mr-2"
-                        value={mode}
-                        onChange={(e) => setMode(e.target.value as "marriage" | "job")}
-                    >
-                        <option value="marriage">Marriage Biodata</option>
-                        <option value="job">Professional Resume</option>
-                    </select>
-                    <Button variant="outline" size="sm" onClick={resetFields}>
-                        <RefreshCw className="h-4 w-4 mr-2" />
-                        Reset
-                    </Button>
-                    <Button variant="default" size="sm" onClick={handlePrint} className={mode === "marriage" ? "bg-rose-600 hover:bg-rose-700 text-white" : "bg-indigo-600 hover:bg-indigo-700 text-white"}>
-                        <Printer className="h-4 w-4 mr-2" />
-                        Print / Save PDF
-                    </Button>
-                </div>
-            </div>
+	const handlePrint = () => {
+		window.print();
+	};
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-                
-                {/* Form fields */}
-                <div className="lg:col-span-5 space-y-6 no-print">
-                    <Card className="border-border/30 bg-card/40 backdrop-blur-md">
-                        <CardContent className="p-6 space-y-4">
-                            <h3 className="text-sm font-semibold border-b border-border/20 pb-2 text-indigo-400">Personal Details</h3>
-                            
-                            <div className="space-y-2">
-                                <Label htmlFor="full-name">Full Name</Label>
-                                <Input id="full-name" value={fullName} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFullName(e.target.value)} />
-                            </div>
+	const handleReset = () => {
+		setFullName("Rajesh Kumar Sharma");
+		setDob("1996-08-15");
+		setTob("08:45 AM");
+		setPob("New Delhi, India");
+		setEducation("B.Tech in Computer Science");
+		setOccupation("Senior Software Engineer");
+		setPhotoUrl("");
+		toast.info("Form reset to template defaults.");
+	};
 
-                            <div className="grid grid-cols-2 gap-3">
-                                <div className="space-y-2">
-                                    <Label htmlFor="dob">Date of Birth</Label>
-                                    <Input id="dob" type="date" value={dob} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setDob(e.target.value)} />
-                                </div>
-                                <div className="space-y-2">
-                                    <Label htmlFor="height">Height</Label>
-                                    <Input id="height" value={height} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setHeight(e.target.value)} />
-                                </div>
-                            </div>
+	const exportJson = () => {
+		const data = {
+			mode,
+			theme,
+			fullName,
+			dob,
+			tob,
+			pob,
+			height,
+			complexion,
+			motherTongue,
+			bloodGroup,
+			showAstro,
+			rashi,
+			nakshatra,
+			gotra,
+			manglik,
+			education,
+			occupation,
+			company,
+			salary,
+			fatherName,
+			fatherOcc,
+			motherName,
+			motherOcc,
+			siblings,
+			familyType,
+			nativePlace,
+			summary,
+			skills,
+			experience,
+			contactPerson,
+			phone,
+			email,
+			address,
+		};
+		const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+		const url = URL.createObjectURL(blob);
+		const link = document.createElement("a");
+		link.href = url;
+		link.download = `biodata-${fullName.toLowerCase().replace(/[^a-z0-9]/g, "-")}.json`;
+		link.click();
+		URL.revokeObjectURL(url);
+		toast.success(`Saved backup ${link.download}`);
+	};
 
-                            <div className="grid grid-cols-2 gap-3">
-                                <div className="space-y-2">
-                                    <Label htmlFor="tob">Time of Birth (Optional)</Label>
-                                    <Input id="tob" value={tob} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTob(e.target.value)} />
-                                </div>
-                                <div className="space-y-2">
-                                    <Label htmlFor="pob">Place of Birth (Optional)</Label>
-                                    <Input id="pob" value={pob} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPob(e.target.value)} />
-                                </div>
-                            </div>
+	return (
+		<ToolShell>
+			{/* Print stylesheet override */}
+			<style
+				dangerouslySetInnerHTML={{
+					__html: `
+						@media print {
+							body * {
+								visibility: hidden;
+							}
+							#biodata-paper-zone, #biodata-paper-zone * {
+								visibility: visible;
+							}
+							#biodata-paper-zone {
+								position: absolute;
+								left: 0;
+								top: 0;
+								width: 100%;
+								box-shadow: none !important;
+								border: none !important;
+								padding: 0 !important;
+							}
+							.no-print {
+								display: none !important;
+							}
+						}
+					`,
+				}}
+			/>
 
-                            <div className="grid grid-cols-2 gap-3">
-                                <div className="space-y-2">
-                                    <Label htmlFor="complexion">Complexion (Optional)</Label>
-                                    <Input id="complexion" value={complexion} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setComplexion(e.target.value)} />
-                                </div>
-                                <div className="space-y-2">
-                                    <Label>Profile Image</Label>
-                                    <div className="flex items-center gap-2">
-                                        <input
-                                            ref={photoInputRef}
-                                            type="file"
-                                            accept="image/*"
-                                            className="hidden"
-                                            onChange={handlePhotoUpload}
-                                        />
-                                        <Button variant="outline" size="sm" className="w-full" onClick={() => photoInputRef.current?.click()}>
-                                            <Upload className="h-3 w-3 mr-2" /> Upload
-                                        </Button>
-                                        {photoUrl && (
-                                            <Button variant="ghost" size="sm" onClick={removePhoto}>
-                                                <Trash2 className="h-3.5 w-3.5 text-red-500" />
-                                            </Button>
-                                        )}
-                                    </div>
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
+			{/* Top Action Command Bar */}
+			<div className="flex flex-wrap items-center justify-between gap-3 mb-6 no-print">
+				<div className="flex items-center gap-2">
+					<Button
+						size="sm"
+						variant={mode === "marriage" ? "default" : "outline"}
+						onClick={() => setMode("marriage")}
+						className="rounded-full gap-1.5"
+					>
+						<Heart className="h-4 w-4 text-rose-500" /> Marriage Biodata
+					</Button>
+					<Button
+						size="sm"
+						variant={mode === "job" ? "default" : "outline"}
+						onClick={() => setMode("job")}
+						className="rounded-full gap-1.5"
+					>
+						<Briefcase className="h-4 w-4 text-indigo-500" /> Job / CV Resume
+					</Button>
+				</div>
 
-                    {mode === "marriage" && (
-                        <>
-                            <Card className="border-border/30 bg-card/40 backdrop-blur-md">
-                                <CardContent className="p-6 space-y-4">
-                                    <h3 className="text-sm font-semibold border-b border-border/20 pb-2 text-indigo-400">Astro &amp; Caste Details</h3>
-                                    
-                                    <div className="grid grid-cols-2 gap-3">
-                                        <div className="space-y-2">
-                                            <Label htmlFor="rashi">Rashi</Label>
-                                            <Input id="rashi" value={rashi} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setRashi(e.target.value)} />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="nakshatra">Nakshatra</Label>
-                                            <Input id="nakshatra" value={nakshatra} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setNakshatra(e.target.value)} />
-                                        </div>
-                                    </div>
+				<div className="flex items-center gap-2">
+					<Button size="sm" onClick={handlePrint} className="gap-2 font-semibold shadow-sm">
+						<Printer className="h-4 w-4" /> Print / Save as PDF
+					</Button>
+					<Button variant="outline" size="sm" onClick={exportJson} className="gap-1.5 text-xs">
+						<Download className="h-3.5 w-3.5" /> Save JSON Backup
+					</Button>
+					<Button variant="ghost" size="sm" onClick={handleReset} className="gap-1 text-xs text-muted-foreground">
+						<RotateCcw className="h-3.5 w-3.5" /> Reset
+					</Button>
+				</div>
+			</div>
 
-                                    <div className="grid grid-cols-2 gap-3">
-                                        <div className="space-y-2">
-                                            <Label htmlFor="gotra">Gotra</Label>
-                                            <Input id="gotra" value={gotra} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setGotra(e.target.value)} />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="manglik">Manglik?</Label>
-                                            <Input id="manglik" value={manglik} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setManglik(e.target.value)} />
-                                        </div>
-                                    </div>
-                                </CardContent>
-                            </Card>
+			<ToolGrid>
+				{/* Left Configuration Column */}
+				<ToolGridMain>
+					{/* Style & Theme Settings */}
+					<ToolPanel className="no-print">
+						<ToolSectionTitle
+							title="Format & Visual Theme"
+							description="Choose color palette and header styling."
+						/>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+							<ToolField label="Color Theme">
+								<Select value={theme} onValueChange={(val: ThemeStyle) => setTheme(val)}>
+									<SelectTrigger>
+										<SelectValue placeholder="Theme" />
+									</SelectTrigger>
+									<SelectContent>
+										<SelectItem value="royal">Royal Maroon & Gold (Traditional)</SelectItem>
+										<SelectItem value="rose">Soft Rose & Slate (Modern Elegant)</SelectItem>
+										<SelectItem value="classic">Classic Navy (Corporate / Minimalist)</SelectItem>
+									</SelectContent>
+								</Select>
+							</ToolField>
 
-                            <Card className="border-border/30 bg-card/40 backdrop-blur-md">
-                                <CardContent className="p-6 space-y-4">
-                                    <h3 className="text-sm font-semibold border-b border-border/20 pb-2 text-indigo-400">Career &amp; Income</h3>
-                                    
-                                    <div className="space-y-2">
-                                        <Label htmlFor="education">Education</Label>
-                                        <Input id="education" value={education} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEducation(e.target.value)} />
-                                    </div>
+							{mode === "marriage" && (
+								<ToolField label="Header Motto">
+									<Input value={headerMotto} onChange={(e) => setHeaderMotto(e.target.value)} />
+								</ToolField>
+							)}
+						</div>
+					</ToolPanel>
 
-                                    <div className="grid grid-cols-2 gap-3">
-                                        <div className="space-y-2">
-                                            <Label htmlFor="occupation">Occupation</Label>
-                                            <Input id="occupation" value={occupation} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setOccupation(e.target.value)} />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="salary">Annual Income</Label>
-                                            <Input id="salary" value={salary} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSalary(e.target.value)} />
-                                        </div>
-                                    </div>
-                                </CardContent>
-                            </Card>
+					{/* Personal Details */}
+					<ToolPanel className="mt-6 no-print">
+						<ToolSectionTitle
+							title="Personal Details"
+							description="Basic identity, physical attributes, and portrait photo."
+						/>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+							<ToolField label="Full Name">
+								<Input value={fullName} onChange={(e) => setFullName(e.target.value)} />
+							</ToolField>
+							<ToolField label="Date of Birth">
+								<Input type="date" value={dob} onChange={(e) => setDob(e.target.value)} />
+							</ToolField>
+						</div>
 
-                            <Card className="border-border/30 bg-card/40 backdrop-blur-md">
-                                <CardContent className="p-6 space-y-4">
-                                    <h3 className="text-sm font-semibold border-b border-border/20 pb-2 text-indigo-400">Family Background</h3>
-                                    
-                                    <div className="grid grid-cols-2 gap-3">
-                                        <div className="space-y-2">
-                                            <Label htmlFor="father-name">Father's Name</Label>
-                                            <Input id="father-name" value={fatherName} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFatherName(e.target.value)} />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="father-occ">Father's Occupation</Label>
-                                            <Input id="father-occ" value={fatherOcc} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFatherOcc(e.target.value)} />
-                                        </div>
-                                    </div>
+						<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+							<ToolField label="Time of Birth">
+								<Input value={tob} onChange={(e) => setTob(e.target.value)} placeholder="e.g. 08:45 AM" />
+							</ToolField>
+							<ToolField label="Place of Birth">
+								<Input value={pob} onChange={(e) => setPob(e.target.value)} placeholder="e.g. New Delhi" />
+							</ToolField>
+							<ToolField label="Height">
+								<Input value={height} onChange={(e) => setHeight(e.target.value)} placeholder="e.g. 5 ft 9 in" />
+							</ToolField>
+						</div>
 
-                                    <div className="grid grid-cols-2 gap-3">
-                                        <div className="space-y-2">
-                                            <Label htmlFor="mother-name">Mother's Name</Label>
-                                            <Input id="mother-name" value={motherName} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setMotherName(e.target.value)} />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="mother-occ">Mother's Occupation</Label>
-                                            <Input id="mother-occ" value={motherOcc} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setMotherOcc(e.target.value)} />
-                                        </div>
-                                    </div>
+						<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+							<ToolField label="Complexion">
+								<Input value={complexion} onChange={(e) => setComplexion(e.target.value)} placeholder="e.g. Fair / Wheatish" />
+							</ToolField>
+							<ToolField label="Mother Tongue">
+								<Input value={motherTongue} onChange={(e) => setMotherTongue(e.target.value)} placeholder="e.g. Hindi" />
+							</ToolField>
+							<ToolField label="Blood Group">
+								<Input value={bloodGroup} onChange={(e) => setBloodGroup(e.target.value)} placeholder="e.g. B+" />
+							</ToolField>
+						</div>
 
-                                    <div className="space-y-2">
-                                        <Label htmlFor="siblings">Siblings Details</Label>
-                                        <Input id="siblings" value={siblings} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSiblings(e.target.value)} />
-                                    </div>
-                                </CardContent>
-                            </Card>
-                        </>
-                    )}
+						<div className="mt-4 pt-4 border-t border-border flex items-center gap-3">
+							<input
+								ref={photoInputRef}
+								type="file"
+								accept="image/*"
+								className="hidden"
+								onChange={handlePhotoUpload}
+							/>
+							<Button variant="outline" size="sm" onClick={() => photoInputRef.current?.click()} className="gap-1.5 text-xs">
+								<Upload className="h-3.5 w-3.5" /> {photoUrl ? "Change Photograph" : "Upload Photograph"}
+							</Button>
+							{photoUrl && (
+								<Button variant="ghost" size="sm" onClick={removePhoto} className="text-xs text-destructive">
+									<Trash2 className="h-3.5 w-3.5 mr-1" /> Remove Photo
+								</Button>
+							)}
+						</div>
+					</ToolPanel>
 
-                    {mode === "job" && (
-                        <>
-                            <Card className="border-border/30 bg-card/40 backdrop-blur-md">
-                                <CardContent className="p-6 space-y-4">
-                                    <h3 className="text-sm font-semibold border-b border-border/20 pb-2 text-indigo-400">Professional Summary</h3>
-                                    
-                                    <div className="space-y-2">
-                                        <Label htmlFor="education-job">Education Details</Label>
-                                        <Input id="education-job" value={education} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEducation(e.target.value)} />
-                                    </div>
+					{/* Horoscope / Astro Details (Marriage Mode Only) */}
+					{mode === "marriage" && (
+						<ToolPanel className="mt-6 no-print">
+							<div className="flex items-center justify-between mb-4">
+								<ToolSectionTitle
+									title="Astrological & Horoscope Information"
+									description="Rashi, Nakshatra, Gotra, and Manglik details."
+								/>
+								<div className="flex items-center gap-2">
+									<Label htmlFor="astro-toggle" className="text-xs cursor-pointer">Include Horoscope</Label>
+									<Switch id="astro-toggle" checked={showAstro} onCheckedChange={setShowAstro} />
+								</div>
+							</div>
 
-                                    <div className="space-y-2">
-                                        <Label htmlFor="skills-input">Key Skills (Comma Separated)</Label>
-                                        <textarea
-                                            id="skills-input"
-                                            className="w-full h-20 p-2.5 rounded-lg border border-border/40 bg-background/50 focus:outline-none focus:ring-1 focus:ring-indigo-500 text-sm"
-                                            value={skills}
-                                            onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setSkills(e.target.value)}
-                                        />
-                                    </div>
+							{showAstro && (
+								<div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+									<ToolField label="Rashi (Moon Sign)">
+										<Input value={rashi} onChange={(e) => setRashi(e.target.value)} placeholder="e.g. Leo" />
+									</ToolField>
+									<ToolField label="Nakshatra">
+										<Input value={nakshatra} onChange={(e) => setNakshatra(e.target.value)} placeholder="e.g. Purva Phalguni" />
+									</ToolField>
+									<ToolField label="Gotra">
+										<Input value={gotra} onChange={(e) => setGotra(e.target.value)} placeholder="e.g. Kashyap" />
+									</ToolField>
+									<ToolField label="Manglik">
+										<Select value={manglik} onValueChange={setManglik}>
+											<SelectTrigger>
+												<SelectValue placeholder="Manglik" />
+											</SelectTrigger>
+											<SelectContent>
+												<SelectItem value="No">No (Non-Manglik)</SelectItem>
+												<SelectItem value="Yes">Yes (Manglik)</SelectItem>
+												<SelectItem value="Anshik">Anshik (Partial)</SelectItem>
+												<SelectItem value="Don't Know">Not Known</SelectItem>
+											</SelectContent>
+										</Select>
+									</ToolField>
+								</div>
+							)}
+						</ToolPanel>
+					)}
 
-                                    <div className="space-y-2">
-                                        <Label htmlFor="experience-input">Work Experience Summary</Label>
-                                        <textarea
-                                            id="experience-input"
-                                            className="w-full h-24 p-2.5 rounded-lg border border-border/40 bg-background/50 focus:outline-none focus:ring-1 focus:ring-indigo-500 text-sm"
-                                            value={experience}
-                                            onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setExperience(e.target.value)}
-                                        />
-                                    </div>
-                                </CardContent>
-                            </Card>
-                        </>
-                    )}
+					{/* Education & Professional Details */}
+					<ToolPanel className="mt-6 no-print">
+						<ToolSectionTitle
+							title="Education & Profession"
+							description="Academic achievements, company, and annual package."
+						/>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+							<ToolField label="Highest Education">
+								<Input value={education} onChange={(e) => setEducation(e.target.value)} />
+							</ToolField>
+							<ToolField label="Current Occupation / Designation">
+								<Input value={occupation} onChange={(e) => setOccupation(e.target.value)} />
+							</ToolField>
+						</div>
 
-                    <Card className="border-border/30 bg-card/40 backdrop-blur-md">
-                        <CardContent className="p-6 space-y-4">
-                            <h3 className="text-sm font-semibold border-b border-border/20 pb-2 text-indigo-400">Contact Details</h3>
-                            
-                            <div className="grid grid-cols-2 gap-3">
-                                <div className="space-y-2">
-                                    <Label htmlFor="contact-no">Phone Number</Label>
-                                    <Input id="contact-no" value={contactNo} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setContactNo(e.target.value)} />
-                                </div>
-                                <div className="space-y-2">
-                                    <Label htmlFor="email">Email Address</Label>
-                                    <Input id="email" type="email" value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} />
-                                </div>
-                            </div>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+							<ToolField label="Organization / Employer">
+								<Input value={company} onChange={(e) => setCompany(e.target.value)} />
+							</ToolField>
+							<ToolField label="Annual Income / Package">
+								<Input value={salary} onChange={(e) => setSalary(e.target.value)} placeholder="e.g. 18 LPA or $120,000" />
+							</ToolField>
+						</div>
+					</ToolPanel>
 
-                            <div className="space-y-2">
-                                <Label htmlFor="address">Address</Label>
-                                <textarea
-                                    id="address"
-                                    className="w-full h-20 p-2.5 rounded-lg border border-border/40 bg-background/50 focus:outline-none focus:ring-1 focus:ring-indigo-500 text-sm"
-                                    value={address}
-                                    onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setAddress(e.target.value)}
-                                />
-                            </div>
-                        </CardContent>
-                    </Card>
-                </div>
+					{/* Family Background (Marriage Mode Only) */}
+					{mode === "marriage" && (
+						<ToolPanel className="mt-6 no-print">
+							<ToolSectionTitle
+								title="Family Background"
+								description="Parents' details, siblings, and native origin."
+							/>
+							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+								<ToolField label="Father's Full Name">
+									<Input value={fatherName} onChange={(e) => setFatherName(e.target.value)} />
+								</ToolField>
+								<ToolField label="Father's Occupation">
+									<Input value={fatherOcc} onChange={(e) => setFatherOcc(e.target.value)} />
+								</ToolField>
+							</div>
 
-                {/* Preview and printable design sheet */}
-                <div className="lg:col-span-7">
-                    <Card className={`border-border/30 shadow-2xl relative min-h-[842px] p-12 overflow-hidden print-style-biodata ${mode === "marriage" ? "bg-amber-50 text-amber-950 border-4 border-amber-400" : "bg-white text-slate-800"}`}>
-                        {/* Elegant frame styling for marriage mode */}
-                        {mode === "marriage" && (
-                            <div className="absolute inset-4 border-2 border-amber-300 pointer-events-none rounded opacity-60 no-print-border" />
-                        )}
+							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+								<ToolField label="Mother's Full Name">
+									<Input value={motherName} onChange={(e) => setMotherName(e.target.value)} />
+								</ToolField>
+								<ToolField label="Mother's Occupation">
+									<Input value={motherOcc} onChange={(e) => setMotherOcc(e.target.value)} />
+								</ToolField>
+							</div>
 
-                        <div className="space-y-8 relative z-10 text-xs">
-                            {/* Header Section */}
-                            <div className="flex flex-col items-center justify-center text-center space-y-2 border-b pb-6 border-amber-200">
-                                {mode === "marriage" ? (
-                                    <>
-                                        <div className="text-rose-600 font-serif text-lg tracking-widest uppercase font-bold">|| श्री गणेशाय नमः ||</div>
-                                        <p className="text-2xl font-bold font-serif text-amber-900 tracking-wider">BIO DATA</p>
-                                    </>
-                                ) : (
-                                    <>
-                                        <p className="text-2xl font-bold tracking-wide text-slate-900 uppercase">{fullName}</p>
-                                        <p className="text-sm font-medium text-slate-500">{occupation}</p>
-                                    </>
-                                )}
-                            </div>
+							<div className="mt-4">
+								<ToolField label="Brothers & Sisters">
+									<Input value={siblings} onChange={(e) => setSiblings(e.target.value)} />
+								</ToolField>
+							</div>
 
-                            {/* Photo and Personal Info block */}
-                            <div className="grid grid-cols-12 gap-6 items-start">
-                                <div className="col-span-8 space-y-4">
-                                    <h3 className={`text-sm font-bold uppercase tracking-wider border-b pb-1 ${mode === "marriage" ? "text-amber-800 border-amber-200" : "text-indigo-600 border-slate-200"}`}>
-                                        Personal Profile
-                                    </h3>
-                                    
-                                    <table className="w-full text-left font-medium border-collapse">
-                                        <tbody className="divide-y divide-amber-100/50">
-                                            <tr>
-                                                <td className="py-2 font-bold w-36">Full Name:</td>
-                                                <td className="py-2">{fullName}</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="py-2 font-bold">Date of Birth:</td>
-                                                <td className="py-2">{new Date(dob).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</td>
-                                            </tr>
-                                            {mode === "marriage" && (
-                                                <>
-                                                    <tr>
-                                                        <td className="py-2 font-bold">Time of Birth:</td>
-                                                        <td className="py-2">{tob}</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="py-2 font-bold">Place of Birth:</td>
-                                                        <td className="py-2">{pob}</td>
-                                                    </tr>
-                                                </>
-                                            )}
-                                            <tr>
-                                                <td className="py-2 font-bold">Height:</td>
-                                                <td className="py-2">{height}</td>
-                                            </tr>
-                                            {complexion && (
-                                                <tr>
-                                                    <td className="py-2 font-bold">Complexion:</td>
-                                                    <td className="py-2">{complexion}</td>
-                                                </tr>
-                                            )}
-                                            <tr>
-                                                <td className="py-2 font-bold">Education:</td>
-                                                <td className="py-2">{education}</td>
-                                            </tr>
-                                            {mode === "marriage" ? (
-                                                <>
-                                                    <tr>
-                                                        <td className="py-2 font-bold">Profession:</td>
-                                                        <td className="py-2">{occupation}</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="py-2 font-bold">Income:</td>
-                                                        <td className="py-2">{salary}</td>
-                                                    </tr>
-                                                </>
-                                            ) : (
-                                                <tr>
-                                                    <td className="py-2 font-bold">Designation:</td>
-                                                    <td className="py-2">{occupation}</td>
-                                                </tr>
-                                            )}
-                                        </tbody>
-                                    </table>
-                                </div>
+							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+								<ToolField label="Family Type / Values">
+									<Input value={familyType} onChange={(e) => setFamilyType(e.target.value)} />
+								</ToolField>
+								<ToolField label="Native Place / Hometown">
+									<Input value={nativePlace} onChange={(e) => setNativePlace(e.target.value)} />
+								</ToolField>
+							</div>
+						</ToolPanel>
+					)}
 
-                                <div className="col-span-4 flex flex-col items-center">
-                                    {photoUrl ? (
-                                        <div className={`w-36 h-44 rounded-lg overflow-hidden border-2 shadow-md ${mode === "marriage" ? "border-amber-300" : "border-slate-300"}`}>
-                                            <img src={photoUrl} alt="Profile" className="w-full h-full object-cover" />
-                                        </div>
-                                    ) : (
-                                        <div className={`w-36 h-44 rounded-lg flex flex-col items-center justify-center text-center p-4 border-2 border-dashed ${mode === "marriage" ? "border-amber-300 bg-amber-100/40 text-amber-600" : "border-slate-300 bg-slate-50 text-slate-400"}`}>
-                                            <Upload className="h-6 w-6 mb-2 opacity-60" />
-                                            <span className="text-[10px]">Upload Photo</span>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
+					{/* Professional Details (Job Mode Only) */}
+					{mode === "job" && (
+						<ToolPanel className="mt-6 no-print">
+							<ToolSectionTitle
+								title="Professional Summary & Skills"
+								description="Core competencies and chronological experience."
+							/>
+							<div className="mt-4">
+								<ToolField label="Professional Summary">
+									<Textarea rows={3} value={summary} onChange={(e) => setSummary(e.target.value)} className="resize-y" />
+								</ToolField>
+							</div>
+							<div className="mt-4">
+								<ToolField label="Key Technical Skills">
+									<Input value={skills} onChange={(e) => setSkills(e.target.value)} />
+								</ToolField>
+							</div>
+							<div className="mt-4">
+								<ToolField label="Work Experience Highlights">
+									<Textarea rows={6} value={experience} onChange={(e) => setExperience(e.target.value)} className="resize-y" />
+								</ToolField>
+							</div>
+						</ToolPanel>
+					)}
 
-                            {/* Astro / Gotra details in Marriage Mode */}
-                            {mode === "marriage" && (
-                                <div className="space-y-3">
-                                    <h3 className="text-sm font-bold uppercase tracking-wider text-amber-800 border-b border-amber-200 pb-1">
-                                        Horoscope &amp; Astrological Details
-                                    </h3>
-                                    <table className="w-full text-left font-medium">
-                                        <tbody>
-                                            <tr>
-                                                <td className="py-1.5 font-bold w-36">Rashi:</td>
-                                                <td className="py-1.5">{rashi}</td>
-                                                <td className="py-1.5 font-bold w-28">Nakshatra:</td>
-                                                <td className="py-1.5">{nakshatra}</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="py-1.5 font-bold">Gotra:</td>
-                                                <td className="py-1.5">{gotra}</td>
-                                                <td className="py-1.5 font-bold">Manglik:</td>
-                                                <td className="py-1.5">{manglik}</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            )}
+					{/* Contact Details */}
+					<ToolPanel className="mt-6 no-print">
+						<ToolSectionTitle
+							title="Contact & Location Information"
+							description="Phone numbers, email address, and home residence."
+						/>
+						<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+							<ToolField label="Contact Person">
+								<Input value={contactPerson} onChange={(e) => setContactPerson(e.target.value)} />
+							</ToolField>
+							<ToolField label="Contact Number">
+								<Input value={phone} onChange={(e) => setPhone(e.target.value)} />
+							</ToolField>
+							<ToolField label="Email Address">
+								<Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+							</ToolField>
+						</div>
+						<div className="mt-4">
+							<ToolField label="Residential Address">
+								<Input value={address} onChange={(e) => setAddress(e.target.value)} />
+							</ToolField>
+						</div>
+					</ToolPanel>
 
-                            {/* Professional job details */}
-                            {mode === "job" && (
-                                <>
-                                    <div className="space-y-3">
-                                        <h3 className="text-sm font-bold uppercase tracking-wider text-indigo-600 border-b border-slate-200 pb-1">
-                                            Key Skills
-                                        </h3>
-                                        <p className="leading-relaxed text-slate-700">{skills}</p>
-                                    </div>
-                                    <div className="space-y-3">
-                                        <h3 className="text-sm font-bold uppercase tracking-wider text-indigo-600 border-b border-slate-200 pb-1">
-                                            Work Experience Summary
-                                        </h3>
-                                        <p className="leading-relaxed text-slate-700 whitespace-pre-wrap">{experience}</p>
-                                    </div>
-                                </>
-                            )}
+					{/* Live Rendered Document Sheet */}
+					<ToolPanel className="mt-8">
+						<div className="flex items-center justify-between mb-4 no-print">
+							<ToolSectionTitle
+								title="Document Preview"
+								description="Print-ready document formatted with classical typography."
+							/>
+							<Button size="sm" onClick={handlePrint} className="gap-1.5 font-semibold text-xs">
+								<Printer className="h-3.5 w-3.5" /> Print / Save as PDF
+							</Button>
+						</div>
 
-                            {/* Family details in Marriage Mode */}
-                            {mode === "marriage" && (
-                                <div className="space-y-3">
-                                    <h3 className="text-sm font-bold uppercase tracking-wider text-amber-800 border-b border-amber-200 pb-1">
-                                        Family Background
-                                    </h3>
-                                    <table className="w-full text-left font-medium">
-                                        <tbody>
-                                            <tr>
-                                                <td className="py-1.5 font-bold w-36">Father's Name:</td>
-                                                <td className="py-1.5">{fatherName}</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="py-1.5 font-bold">Father's Occupation:</td>
-                                                <td className="py-1.5">{fatherOcc}</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="py-1.5 font-bold">Mother's Name:</td>
-                                                <td className="py-1.5">{motherName}</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="py-1.5 font-bold">Mother's Occupation:</td>
-                                                <td className="py-1.5">{motherOcc}</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="py-1.5 font-bold">Siblings:</td>
-                                                <td className="py-1.5">{siblings}</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            )}
+						{/* Document Container */}
+						<div
+							id="biodata-paper-zone"
+							className={`p-8 sm:p-12 rounded-xl bg-white text-neutral-900 border-2 shadow-2xl font-serif text-xs leading-relaxed ${
+								theme === "royal"
+									? "border-amber-700/40"
+									: theme === "rose"
+									? "border-rose-300"
+									: "border-slate-300"
+							}`}
+						>
+							{/* Traditional Header Motto */}
+							{mode === "marriage" && includeHeaderMotto && (
+								<div className="text-center pb-2 mb-4 border-b border-neutral-200">
+									<p
+										className={`text-sm font-bold tracking-widest ${
+											theme === "royal"
+												? "text-amber-800"
+												: theme === "rose"
+												? "text-rose-700"
+												: "text-slate-700"
+										}`}
+									>
+										{headerMotto}
+									</p>
+								</div>
+							)}
 
-                            {/* Contact Details */}
-                            <div className="space-y-3">
-                                <h3 className={`text-sm font-bold uppercase tracking-wider border-b pb-1 ${mode === "marriage" ? "text-amber-800 border-amber-200" : "text-indigo-600 border-slate-200"}`}>
-                                    Contact &amp; Address Details
-                                </h3>
-                                <table className="w-full text-left font-medium">
-                                    <tbody>
-                                        <tr>
-                                            <td className="py-1.5 font-bold w-36">Contact Number:</td>
-                                            <td className="py-1.5 font-mono">{contactNo}</td>
-                                        </tr>
-                                        {email && (
-                                            <tr>
-                                                <td className="py-1.5 font-bold">Email Address:</td>
-                                                <td className="py-1.5">{email}</td>
-                                            </tr>
-                                        )}
-                                        <tr>
-                                            <td className="py-1.5 font-bold valign-top">Residential Address:</td>
-                                            <td className="py-1.5 whitespace-pre-line leading-relaxed">{address}</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </Card>
+							{/* Title and Photo Header */}
+							<div className="flex flex-col sm:flex-row justify-between items-start gap-6 pb-6 border-b-2 border-neutral-800">
+								<div>
+									<h1 className="text-2xl font-bold uppercase tracking-wide text-neutral-950">
+										{fullName || "[Full Name]"}
+									</h1>
+									<p className="text-sm font-sans text-neutral-700 font-medium mt-1">
+										{occupation} {company && `at ${company}`}
+									</p>
+									<p className="text-neutral-500 font-sans text-xs mt-0.5">
+										{dob} • {height} • {education}
+									</p>
+								</div>
 
-                    <div className="p-4 rounded-xl bg-indigo-500/5 border border-indigo-500/10 flex items-start gap-3 no-print mt-6 text-foreground">
-                        <Shield className="h-5 w-5 text-indigo-500 mt-0.5 flex-shrink-0" />
-                        <div className="space-y-1">
-                            <h4 className="text-sm font-medium">100% Client-Side Private Processing</h4>
-                            <p className="text-xs text-muted-foreground">
-                                All biodata configurations, astro details, family names, and profile photos stay secure. Photos are converted to local data URLs inside your browser and never leave your machine.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+								{photoUrl && (
+									<div className="shrink-0">
+										<img
+											src={photoUrl}
+											alt={fullName}
+											className="h-28 w-24 object-cover rounded-lg border-2 border-neutral-300 shadow-sm"
+										/>
+									</div>
+								)}
+							</div>
 
-            </div>
+							{/* Sections */}
+							<div className="space-y-6 mt-6">
+								{/* Personal Details Section */}
+								<div>
+									<h3
+										className={`text-xs font-bold uppercase tracking-wider border-b pb-1 mb-3 ${
+											theme === "royal"
+												? "text-amber-800 border-amber-300"
+												: theme === "rose"
+												? "text-rose-700 border-rose-200"
+												: "text-slate-800 border-slate-300"
+										}`}
+									>
+										Personal Information
+									</h3>
+									<div className="grid grid-cols-2 gap-x-6 gap-y-2 text-[11px]">
+										<div><strong className="text-neutral-600">Date of Birth:</strong> {dob}</div>
+										<div><strong className="text-neutral-600">Time of Birth:</strong> {tob || "N/A"}</div>
+										<div><strong className="text-neutral-600">Place of Birth:</strong> {pob || "N/A"}</div>
+										<div><strong className="text-neutral-600">Height:</strong> {height}</div>
+										<div><strong className="text-neutral-600">Complexion:</strong> {complexion}</div>
+										<div><strong className="text-neutral-600">Mother Tongue:</strong> {motherTongue}</div>
+										<div><strong className="text-neutral-600">Blood Group:</strong> {bloodGroup}</div>
+									</div>
+								</div>
 
-            <style jsx global>{`
-                @media print {
-                    body {
-                        background: white !important;
-                        color: black !important;
-                    }
-                    .no-print, header, footer, nav, aside {
-                        display: none !important;
-                    }
-                    .print-style-biodata {
-                        border: none !important;
-                        box-shadow: none !important;
-                        padding: 0 !important;
-                        margin: 0 !important;
-                        width: 100% !important;
-                        background: transparent !important;
-                        color: black !important;
-                    }
-                    .no-print-border {
-                        border: none !important;
-                    }
-                }
-            `}</style>
-        </div>
-    );
+								{/* Horoscope Details (Marriage) */}
+								{mode === "marriage" && showAstro && (
+									<div>
+										<h3
+											className={`text-xs font-bold uppercase tracking-wider border-b pb-1 mb-3 ${
+												theme === "royal"
+													? "text-amber-800 border-amber-300"
+													: theme === "rose"
+													? "text-rose-700 border-rose-200"
+													: "text-slate-800 border-slate-300"
+											}`}
+										>
+											Horoscope &amp; Astrological Details
+										</h3>
+										<div className="grid grid-cols-2 gap-x-6 gap-y-2 text-[11px]">
+											<div><strong className="text-neutral-600">Rashi (Sign):</strong> {rashi}</div>
+											<div><strong className="text-neutral-600">Nakshatra:</strong> {nakshatra}</div>
+											<div><strong className="text-neutral-600">Gotra:</strong> {gotra}</div>
+											<div><strong className="text-neutral-600">Manglik Status:</strong> {manglik}</div>
+										</div>
+									</div>
+								)}
+
+								{/* Education & Career */}
+								<div>
+									<h3
+										className={`text-xs font-bold uppercase tracking-wider border-b pb-1 mb-3 ${
+											theme === "royal"
+												? "text-amber-800 border-amber-300"
+												: theme === "rose"
+												? "text-rose-700 border-rose-200"
+												: "text-slate-800 border-slate-300"
+										}`}
+									>
+										Education &amp; Career
+									</h3>
+									<div className="grid grid-cols-2 gap-x-6 gap-y-2 text-[11px]">
+										<div><strong className="text-neutral-600">Highest Education:</strong> {education}</div>
+										<div><strong className="text-neutral-600">Occupation:</strong> {occupation}</div>
+										<div><strong className="text-neutral-600">Employer:</strong> {company || "N/A"}</div>
+										<div><strong className="text-neutral-600">Annual Income:</strong> {salary || "N/A"}</div>
+									</div>
+								</div>
+
+								{/* Family Details (Marriage) */}
+								{mode === "marriage" && (
+									<div>
+										<h3
+											className={`text-xs font-bold uppercase tracking-wider border-b pb-1 mb-3 ${
+												theme === "royal"
+													? "text-amber-800 border-amber-300"
+													: theme === "rose"
+													? "text-rose-700 border-rose-200"
+													: "text-slate-800 border-slate-300"
+											}`}
+										>
+											Family Background
+										</h3>
+										<div className="grid grid-cols-2 gap-x-6 gap-y-2 text-[11px]">
+											<div><strong className="text-neutral-600">Father's Name:</strong> {fatherName}</div>
+											<div><strong className="text-neutral-600">Father's Occupation:</strong> {fatherOcc}</div>
+											<div><strong className="text-neutral-600">Mother's Name:</strong> {motherName}</div>
+											<div><strong className="text-neutral-600">Mother's Occupation:</strong> {motherOcc}</div>
+											<div className="col-span-2"><strong className="text-neutral-600">Siblings:</strong> {siblings}</div>
+											<div><strong className="text-neutral-600">Family Type:</strong> {familyType}</div>
+											<div><strong className="text-neutral-600">Native Place:</strong> {nativePlace}</div>
+										</div>
+									</div>
+								)}
+
+								{/* Professional Summary & Skills (Job Mode) */}
+								{mode === "job" && (
+									<>
+										<div>
+											<h3 className="text-xs font-bold uppercase tracking-wider border-b border-slate-300 pb-1 mb-2 text-slate-800">
+												Professional Summary
+											</h3>
+											<p className="text-[11px] text-neutral-700 leading-relaxed">{summary}</p>
+										</div>
+										<div>
+											<h3 className="text-xs font-bold uppercase tracking-wider border-b border-slate-300 pb-1 mb-2 text-slate-800">
+												Technical Competencies
+											</h3>
+											<p className="text-[11px] text-neutral-700 font-mono">{skills}</p>
+										</div>
+										<div>
+											<h3 className="text-xs font-bold uppercase tracking-wider border-b border-slate-300 pb-1 mb-2 text-slate-800">
+												Experience Highlights
+											</h3>
+											<p className="text-[11px] text-neutral-700 whitespace-pre-line leading-relaxed">
+												{experience}
+											</p>
+										</div>
+									</>
+								)}
+
+								{/* Contact Information */}
+								<div>
+									<h3
+										className={`text-xs font-bold uppercase tracking-wider border-b pb-1 mb-3 ${
+											theme === "royal"
+												? "text-amber-800 border-amber-300"
+												: theme === "rose"
+												? "text-rose-700 border-rose-200"
+												: "text-slate-800 border-slate-300"
+										}`}
+									>
+										Contact Details
+									</h3>
+									<div className="grid grid-cols-2 gap-x-6 gap-y-2 text-[11px]">
+										<div><strong className="text-neutral-600">Contact Person:</strong> {contactPerson}</div>
+										<div><strong className="text-neutral-600">Phone Number:</strong> {phone}</div>
+										<div><strong className="text-neutral-600">Email:</strong> {email}</div>
+										<div><strong className="text-neutral-600">Address:</strong> {address}</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</ToolPanel>
+				</ToolGridMain>
+
+				{/* Sidebar Guides */}
+				<ToolGridSide>
+					<ToolPanel className="no-print">
+						<ToolSectionTitle
+							title="Biodata Features"
+							description="Instant, print-ready document options."
+						/>
+						<div className="space-y-3 mt-4 text-xs text-muted-foreground leading-relaxed">
+							<p>
+								<strong>Dual Profiles:</strong> Toggle between traditional Indian Matrimonial Biodata (with Rashi, Nakshatra, and Family pedigree) or standard Job Resume.
+							</p>
+							<p>
+								<strong>Vector A4 Printing:</strong> Formatted to fit comfortably onto one single A4 paper page with sharp serif typography and print CSS layout.
+							</p>
+						</div>
+					</ToolPanel>
+
+					<ToolPanel className="mt-6 no-print">
+						<div className="space-y-3 text-xs text-muted-foreground leading-relaxed">
+							<h3 className="font-semibold text-foreground text-sm flex items-center gap-1.5">
+								<ShieldCheck className="h-4 w-4 text-emerald-500" />
+								100% Client-Side Privacy
+							</h3>
+							<p>
+								Personal family details, photographs, salary records, and contact numbers should never be uploaded to matrimonial portals without your consent.
+							</p>
+							<p>
+								SopKit executes all image processing and PDF compilation directly in your browser. Nothing is stored in any cloud database.
+							</p>
+						</div>
+					</ToolPanel>
+				</ToolGridSide>
+			</ToolGrid>
+		</ToolShell>
+	);
 }

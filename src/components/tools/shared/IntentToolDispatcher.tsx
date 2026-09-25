@@ -7,6 +7,7 @@ const AIImageGeneratorTool = dynamic(() => import("@/components/tools/generators
 const AIMusicGeneratorTool = dynamic(() => import("@/components/tools/generators/AIMusicGeneratorTool"), { ssr: false });
 const AIVoiceGeneratorTool = dynamic(() => import("@/components/tools/generators/AIVoiceGeneratorTool"), { ssr: false });
 const AcademicGradesCalculator = dynamic(() => import("@/components/tools/calculators/AcademicGradesCalculator"), { ssr: false });
+const AgeCalculatorTool = dynamic(() => import("@/components/tools/calculators/AgeCalculatorTool"), { ssr: false });
 const AkillitvDownloader = dynamic(() => import("@/components/tools/downloaders/AkillitvDownloader"), { ssr: false });
 const AllDownloaders = dynamic(() => import("@/components/tools/downloaders/AllDownloaders"), { ssr: false });
 const AsciiArtGeneratorTool = dynamic(() => import("@/components/tools/generators/AsciiArtGeneratorTool"), { ssr: false });
@@ -455,7 +456,7 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "merge-pdf-online": { component: PDFMerger, props: {} },
     "75-attendance-calculator": { component: AttendanceCalculator, props: {} },
     "adsense-calculator": { component: BuiltInCalculators, props: {"kind": "adsense-calculator"} },
-    "age-calculator": { component: BuiltInCalculators, props: {"kind": "age-calculator"} },
+    "age-calculator": { component: AgeCalculatorTool, props: {} },
     "ai-image-generator": { component: AIImageGeneratorTool, props: {} },
     "ai-persona-prompt-generator": { component: AiPersonaPromptGenerator, props: {} },
     "ai-music-generator": { component: AIMusicGeneratorTool, props: {} },

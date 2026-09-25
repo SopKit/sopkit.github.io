@@ -1,17 +1,18 @@
+import { SITE_URL } from "@/constants/config";
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import { getToolByRoute } from "@/lib/tools";
-import RentReceiptGenerator from "@/components/tools/generators/RentReceiptGenerator";
 import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Rent Receipt Generator",
-	description: "Privacy-friendly, 100% client-side rent receipt generation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Generate HRA-compliant rent receipts with landlord PAN, revenue stamps, and rental breakdown for income tax claims. Download clean PDFs directly in your browser.",
 	route: "/rent-receipt-generator",
 	category: "generators",
 });
 
-export default async function ToolPage() {
+export default function ToolPage() {
 	const tool = getToolByRoute("/rent-receipt-generator");
 
 	if (!tool) {
@@ -19,8 +20,29 @@ export default async function ToolPage() {
 	}
 
 	return (
-		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<RentReceiptGenerator />
-		</ToolLayout>
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "SoftwareApplication",
+						name: tool.name,
+						description: tool.description,
+						url: `${SITE_URL}/rent-receipt-generator/`,
+						applicationCategory: "BusinessApplication",
+						operatingSystem: "Any",
+						offers: {
+							"@type": "Offer",
+							price: "0",
+							priceCurrency: "USD"
+						}
+					})
+				}}
+			/>
+			<ToolLayout breadcrumbs={[]} tool={tool} showHireMe={true}>
+				<IntentToolDispatcher toolId={tool.id} />
+			</ToolLayout>
+		</>
 	);
 }
