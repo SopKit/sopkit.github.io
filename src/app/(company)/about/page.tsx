@@ -48,7 +48,7 @@ export default async function AboutPage() {
 						name: "SopKit",
 						url: SITE_URL,
 						description: tool.description,
-						sameAs: ["https://github.com/SH20RAJ/SopKit"],
+						sameAs: [SITE_CONFIG.githubRepoUrl],
 					}),
 				}}
 			/>

@@ -63,7 +63,7 @@ export function Footer() {
 						</Link>
 						<p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
 							A curated collection of over {SITE_CONFIG.toolCountString} free web utilities.
-							Every tool clearly identifies where processing happens — prioritizing browser sandboxes and transparent execution.
+							Every tool clearly identifies where processing happens, prioritizing browser sandboxes and transparent execution.
 						</p>
 						<div className="pt-2 flex items-center gap-2 text-xs text-muted-foreground font-mono">
 							<span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />

@@ -57,7 +57,7 @@ export function EmbedShowcase() {
 						</h2>
 
 						<p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-							Seamlessly integrate any of SopKit&apos;s {SITE_CONFIG.toolCountString} utilities onto your blog, company documentation, or client portal. All sandboxes execute 100% locally in your visitor&apos;s browser — zero server costs for you.
+							Add any of SopKit&apos;s {SITE_CONFIG.toolCountString} utilities directly to your blog, documentation, or client portal. Sandboxed tools run in your visitor&apos;s browser, requiring zero server resources from your host.
 						</p>
 
 						{/* Feature Bullet Chips */}
