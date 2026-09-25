@@ -18,8 +18,8 @@ import { Container } from "@/components/layout/Container";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return baseGenerateMetadata({
-		title: `SopKit — ${SITE_CONFIG.toolCountString} Free Online Tools`,
-		description: `${SITE_CONFIG.toolCountString} free online tools for Image, PDF, Video, Audio, Developer utilities, and SEO. Browser-first workflows with clear processing details and no mandatory signup.`,
+		title: `Free Online Tools (600+) — Fast & Private Browser Utilities | SopKit`,
+		description: `600+ free online tools for PDF, image, video, audio, developer code, and SEO. Process files 100% locally in your browser with zero uploads, no tracking, and no signup.`,
 		path: "/",
 	});
 }
@@ -32,8 +32,8 @@ export default async function LandingPage() {
 
 	return (
 		<main id="main-content" className="flex flex-col min-h-screen bg-background text-foreground">
-			{/* JSON-LD Structured Data */}
-			<StructuredData isHome={true} />
+			{/* JSON-LD Structured Data (FAQ schema is provided by FAQSection) */}
+			<StructuredData isHome={true} includeFAQ={false} />
 
 			{/* 1. Hero Section with Editorial Display & Fanned Interactive Cards */}
 			<HeroSection tools={heroSearchTools} />

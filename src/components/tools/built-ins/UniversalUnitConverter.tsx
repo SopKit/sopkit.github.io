@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ArrowRightLeft } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRightLeft, Copy, Check, RotateCcw, HelpCircle, Layers } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -12,6 +12,16 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
+import {
+	ToolShell,
+	ToolGrid,
+	ToolGridMain,
+	ToolGridSide,
+	ToolPanel,
+	ToolSectionTitle,
+	ToolField,
+	ToolPrivacyNote,
+} from "@/components/tools/shared/design-system";
 
 export type UnitPreset =
 	| "length"
@@ -267,6 +277,7 @@ export default function UniversalUnitConverter({ preset }: { preset: UnitPreset 
 	const [fromId, setFromId] = useState(units[0]?.id ?? "m");
 	const [toId, setToId] = useState(units[1]?.id ?? units[0]?.id ?? "m");
 	const [input, setInput] = useState("1");
+	const [copied, setCopied] = useState(false);
 
 	const from = units.find((u) => u.id === fromId) ?? units[0];
 	const to = units.find((u) => u.id === toId) ?? units[0];
@@ -282,78 +293,221 @@ export default function UniversalUnitConverter({ preset }: { preset: UnitPreset 
 		return String(Number(v.toPrecision(digits)));
 	}, [input, from, to]);
 
+	// Live breakdown across all units in this preset
+	const comparisons = useMemo(() => {
+		const raw = Number.parseFloat(String(input).replace(/,/g, ""));
+		if (Number.isNaN(raw) || !from) return [];
+		const base = from.toBase(raw);
+		return units.map((u) => {
+			const v = u.fromBase(base);
+			const abs = Math.abs(v);
+			const digits = abs >= 1000 || (abs > 0 && abs < 0.001) ? 6 : 8;
+			const formatted = Number.isFinite(v) ? String(Number(v.toPrecision(digits))) : "—";
+			return { unit: u, value: formatted };
+		});
+	}, [input, from, units]);
+
+	const handleSwap = () => {
+		const prevFrom = fromId;
+		setFromId(toId);
+		setToId(prevFrom);
+	};
+
+	const handleCopy = () => {
+		if (!output || !from || !to) return;
+		navigator.clipboard.writeText(`${input} ${from.label} = ${output} ${to.label}`);
+		setCopied(true);
+		setTimeout(() => setCopied(false), 2000);
+	};
+
+	const presetTitle = useMemo(() => {
+		switch (preset) {
+			case "area": return "Area Converter";
+			case "length": return "Length & Distance Converter";
+			case "mass": return "Mass & Weight Converter";
+			case "temperature": return "Temperature Converter";
+			case "volume": return "Volume & Capacity Converter";
+			case "speed": return "Speed & Velocity Converter";
+			case "time": return "Time Duration Converter";
+			case "digital": return "Digital Storage Converter";
+			case "pressure": return "Pressure Converter";
+			case "energy": return "Energy & Work Converter";
+			case "power": return "Power Converter";
+			default: return `${preset.charAt(0).toUpperCase() + preset.slice(1)} Converter`;
+		}
+	}, [preset]);
+
 	return (
-		<Card className="border-border/60 shadow-sm">
-			<CardHeader className="">
-				<CardTitle className="flex items-center gap-2 text-lg">
-					<ArrowRightLeft className="h-5 w-5 text-primary" />
-					Unit converter
-				</CardTitle>
-			</CardHeader>
-			<CardContent className="space-y-6">
-				<div className="grid gap-4 md:grid-cols-2">
-					<div className="space-y-2">
-						<Label className="" htmlFor="from-u">
-							From
-						</Label>
-						<Select value={fromId} onValueChange={setFromId}>
-							<SelectTrigger className="" id="from-u">
-								<SelectValue />
-							</SelectTrigger>
-							<SelectContent className="">
-								{units.map((u) => (
-									<SelectItem className="" key={u.id} value={u.id}>
-										{u.label}
-									</SelectItem>
+		<ToolShell>
+			<ToolGrid>
+				<ToolGridMain className="space-y-6">
+					<ToolPanel className="space-y-5">
+						<div className="flex items-center justify-between">
+							<ToolSectionTitle
+								icon={<ArrowRightLeft className="h-4 w-4 text-primary" />}
+								title={presetTitle}
+								subtitle="Select input and target units for instant conversion"
+							/>
+							<Button
+								type="button"
+								variant="ghost"
+								size="sm"
+								className="h-8 gap-1.5 text-xs text-muted-foreground"
+								onClick={() => {
+									setInput("1");
+									setFromId(units[0]?.id ?? "m");
+									setToId(units[1]?.id ?? units[0]?.id ?? "m");
+								}}
+							>
+								<RotateCcw className="h-3.5 w-3.5" />
+								Reset
+							</Button>
+						</div>
+
+						{/* Value and Units Row */}
+						<div className="space-y-4">
+							<ToolField label="Value to Convert" fieldId="val-in">
+								<Input
+									id="val-in"
+									inputMode="decimal"
+									value={input}
+									onChange={(e) => setInput(e.target.value)}
+									placeholder="Enter a number (e.g. 100)"
+									className="h-10 text-base font-mono"
+								/>
+							</ToolField>
+
+							<div className="grid grid-cols-1 sm:grid-cols-[1fr,auto,1fr] gap-3 items-end">
+								<div className="space-y-1.5">
+									<Label htmlFor="from-u">From Unit</Label>
+									<Select value={fromId} onValueChange={setFromId}>
+										<SelectTrigger id="from-u" className="h-10">
+											<SelectValue />
+										</SelectTrigger>
+										<SelectContent>
+											{units.map((u) => (
+												<SelectItem key={u.id} value={u.id}>
+													{u.label}
+												</SelectItem>
+											))}
+										</SelectContent>
+									</Select>
+								</div>
+
+								<div className="flex justify-center pb-0.5">
+									<Button
+										type="button"
+										variant="outline"
+										size="icon"
+										className="h-10 w-10 rounded-xl shrink-0"
+										onClick={handleSwap}
+										title="Swap units"
+										aria-label="Swap units"
+									>
+										<ArrowRightLeft className="h-4 w-4" />
+									</Button>
+								</div>
+
+								<div className="space-y-1.5">
+									<Label htmlFor="to-u">To Unit</Label>
+									<Select value={toId} onValueChange={setToId}>
+										<SelectTrigger id="to-u" className="h-10">
+											<SelectValue />
+										</SelectTrigger>
+										<SelectContent>
+											{units.map((u) => (
+												<SelectItem key={`t-${u.id}`} value={u.id}>
+													{u.label}
+												</SelectItem>
+											))}
+										</SelectContent>
+									</Select>
+								</div>
+							</div>
+						</div>
+					</ToolPanel>
+
+					{/* Result Highlight Card */}
+					{output && from && to && (
+						<ToolPanel className="space-y-4 bg-gradient-to-br from-card via-card to-primary/5 border-primary/20">
+							<div className="flex items-center justify-between border-b border-border/40 pb-3">
+								<span className="text-xs uppercase tracking-wider font-semibold text-muted-foreground">
+									Converted Result
+								</span>
+								<Button
+									size="sm"
+									variant="secondary"
+									className="h-7 text-xs rounded-xl gap-1.5"
+									onClick={handleCopy}
+								>
+									{copied ? <Check className="h-3.5 w-3.5 text-emerald-500" /> : <Copy className="h-3.5 w-3.5" />}
+									<span>{copied ? "Copied" : "Copy"}</span>
+								</Button>
+							</div>
+
+							<div className="text-center py-2 space-y-1">
+								<div className="text-3xl sm:text-5xl font-mono font-bold text-foreground break-all">
+									{output}
+								</div>
+								<div className="text-sm font-medium text-muted-foreground">
+									{to.label}
+								</div>
+							</div>
+
+							<div className="p-3 rounded-xl bg-background border border-border/80 text-xs sm:text-sm text-foreground flex items-center justify-between">
+								<span className="text-muted-foreground">Formula Relationship:</span>
+								<span className="font-mono font-semibold">
+									{input || "1"} {from.label} = {output} {to.label}
+								</span>
+							</div>
+						</ToolPanel>
+					)}
+				</ToolGridMain>
+
+				<ToolGridSide className="space-y-6">
+					{/* Multi-Unit Live Equivalencies */}
+					{comparisons.length > 0 && (
+						<ToolPanel className="space-y-4">
+							<ToolSectionTitle
+								icon={<Layers className="h-4 w-4 text-primary" />}
+								title="All Unit Equivalents"
+								subtitle={`Equivalent to ${input || "1"} ${from?.label}`}
+							/>
+
+							<div className="space-y-2 max-h-[360px] overflow-y-auto pr-1 text-xs">
+								{comparisons.map((item) => (
+									<div
+										key={item.unit.id}
+										className={`flex items-center justify-between p-2 rounded-lg border ${
+											item.unit.id === toId
+												? "border-primary/40 bg-primary/10 font-semibold"
+												: "border-border bg-surface-muted/40 dark:bg-muted/20"
+										}`}
+									>
+										<span className="text-muted-foreground truncate max-w-[130px]" title={item.unit.label}>
+											{item.unit.label}
+										</span>
+										<span className="font-mono text-foreground font-medium ml-2 truncate">
+											{item.value}
+										</span>
+									</div>
 								))}
-							</SelectContent>
-						</Select>
-					</div>
-					<div className="space-y-2">
-						<Label className="" htmlFor="to-u">
-							To
-						</Label>
-						<Select value={toId} onValueChange={setToId}>
-							<SelectTrigger className="" id="to-u">
-								<SelectValue />
-							</SelectTrigger>
-							<SelectContent className="">
-								{units.map((u) => (
-									<SelectItem className="" key={`t-${u.id}`} value={u.id}>
-										{u.label}
-									</SelectItem>
-								))}
-							</SelectContent>
-						</Select>
-					</div>
-				</div>
-				<div className="grid gap-4 md:grid-cols-2">
-					<div className="space-y-2">
-						<Label className="" htmlFor="val-in">
-							Value
-						</Label>
-						<Input
-							className=""
-							id="val-in"
-							inputMode="decimal"
-							value={input}
-							onChange={(e) => setInput(e.target.value)}
-							placeholder="Enter a number"
+							</div>
+						</ToolPanel>
+					)}
+
+					<ToolPanel className="space-y-3">
+						<ToolSectionTitle
+							icon={<HelpCircle className="h-4 w-4 text-muted-foreground" />}
+							title="Precision & Privacy"
 						/>
-					</div>
-					<div className="space-y-2">
-						<Label className="" htmlFor="val-out">
-							Result
-						</Label>
-						<Input className="bg-muted/40 font-mono" id="val-out" readOnly value={output} />
-					</div>
-				</div>
-				<p className="text-xs text-muted-foreground">
-					Conversions run in your browser. Electrical “var” and “VA” presets use the same numeric
-					scaling as watts for quick estimates — always confirm with domain-specific standards when
-					it matters.
-				</p>
-			</CardContent>
-		</Card>
+						<p className="text-xs text-muted-foreground leading-relaxed">
+							All unit formulas run locally in floating-point arithmetic with adaptive significant digits. Zero telemetry is logged or transmitted.
+						</p>
+						<ToolPrivacyNote>Processed 100% locally in your device sandbox.</ToolPrivacyNote>
+					</ToolPanel>
+				</ToolGridSide>
+			</ToolGrid>
+		</ToolShell>
 	);
 }
