@@ -59,7 +59,7 @@ export default async function PrivacyPage() {
 							<div className="flex items-center gap-3 mb-6">
 								<Shield className="h-8 w-8 text-primary" />
 								<div>
-									<h1 className="text-2xl font-bold">Privacy Policy</h1>
+									<p className="text-2xl font-bold">Privacy Policy</p>
 									<p className="text-xs text-muted-foreground">Last updated: {SITE_CONFIG.lastUpdatedDate}</p>
 								</div>
 							</div>

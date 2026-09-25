@@ -13,31 +13,31 @@ interface TrustPillar {
 const TRUST_PILLARS: TrustPillar[] = [
   {
     icon: ShieldCheck,
-    title: "100% Client-Side Privacy",
-    tagline: "Your data stays on your machine",
+    title: "Local-First Sandbox",
+    tagline: "Files stay on your machine",
     description:
-      "Files, images, PDF documents, and text never leave your browser sandbox. Computations run locally via WebAssembly and Canvas APIs.",
+      "Image, PDF, code, and text utilities run directly in your browser with WebAssembly and Canvas APIs. Your files never touch our servers.",
   },
   {
     icon: Zap,
-    title: "Sub-Second Execution",
-    tagline: "Zero queue, zero latency",
+    title: "Hardware-Speed Processing",
+    tagline: "No upload queues or delays",
     description:
-      "Without round-trips to remote cloud queues, processing is bound only by your device's hardware. Instant conversions and edits.",
+      "Conversions run on your CPU and GPU instead of a shared server queue. Edits and downloads happen as fast as your device can compute.",
   },
   {
     icon: UserX,
-    title: "Zero Account Friction",
-    tagline: "No sign-up, no email capture",
+    title: "No Mandatory Accounts",
+    tagline: "Start working immediately",
     description:
-      "Every single utility is available immediately. No paywalls, no credit cards, no subscriptions, and no quota countdowns.",
+      "Open any utility and start working. We never require email registration, phone verification, or credit cards for core tools.",
   },
   {
     icon: Code2,
-    title: "Embed Anywhere",
-    tagline: "Clean, responsive iframe widgets",
+    title: "Embeddable Sandboxes",
+    tagline: "Clean iframe widgets",
     description:
-      "Integrate any SopKit tool into your blog, documentation, or internal intranet using our ad-free lightweight embed endpoint.",
+      "Drop any SopKit utility into your blog, documentation, or portal using our dedicated embed endpoint with zero server overhead.",
   },
 ];
 

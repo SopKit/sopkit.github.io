@@ -56,7 +56,7 @@ export function HomeSEOContent() {
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               SopKit brings together over {SITE_CONFIG.toolCountString} free browser utilities designed for
               developers, creators, students, and professionals. Unlike conventional web converters that upload
-              your private files to third-party cloud servers, SopKit utilizes modern WebAssembly, Canvas, and
+              your private files to third-party cloud servers, SopKit uses modern WebAssembly, Canvas, and
               Web Worker APIs to execute transformations directly on your device.
             </p>
 
@@ -84,13 +84,13 @@ export function HomeSEOContent() {
           <div className="lg:col-span-5 p-8 rounded-2xl bg-surface-muted/60 dark:bg-card/60 border border-border backdrop-blur-sm space-y-6">
             <div>
               <span className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
-                Capability Matrix
+                Tool Directory
               </span>
               <h3 className="text-xl font-serif font-bold text-foreground mt-1">
-                Technical Domain Coverage
+                Supported Workflows
               </h3>
               <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-                Comprehensive toolsets across core digital workflows.
+                Comprehensive toolsets across core digital tasks.
               </p>
             </div>
 
