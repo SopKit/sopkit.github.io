@@ -2334,43 +2334,32 @@ Car Loan Calculator is built for privacy-conscious users who need reliable resul
     seoDescription: `Private Car Loan Calculator: privately calculate numbers entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
   "case-converter": {
-    whatItIs: `Case Converter (Sentence, Upper, Lower) is a free online conversion tool that transforms text content from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
-
-## Why Choose Case Converter (Sentence, Upper, Lower)?
-
-Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your text content remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-Case Converter (Sentence, Upper, Lower) is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `Case Converter is a multi-format text transformation utility that instantly converts text between UPPERCASE, lowercase, Title Case, Sentence case, aLtErNaTiNg cAsE, and iNVERSE cASE. It streamlines document drafting, coding, headline formatting, and data cleansing by eliminating manual retyping. With live character, word, and line count statistics plus local storage persistence, your text remains safe across page reloads.`,
     features: [
-      `Convert text content entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Instant conversion between 6 distinct case modes: UPPERCASE, lowercase, Title Case, Sentence case, alternating, and inverse`,
+      `Automatic capitalization rules for sentence structures following punctuation (. ! ?)`,
+      `Title Case capitalization preserving word boundaries and whitespace`,
+      `Real-time text metrics: accurate character count, word count, and line count tracking`,
+      `Built-in local persistence so drafted text is retained during browser navigation`,
+      `100% in-browser transformation with zero server transmission, protecting confidential writing`,
     ],
     howToUse: {
-      name: `How to convert text content with Case Converter (Sentence, Upper, Lower)`,
+      name: `How to convert text case online`,
       steps: [
-        { name: `Prepare Your text conten`, text: `Navigate to /case-converter on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your text content. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your text content. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed text content directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Paste or Type Text`, text: `Enter your text, draft, or list into the input box or load the sample text.` },
+        { name: `Choose Desired Case`, text: `Select a case mode button (UPPERCASE, lowercase, Title Case, Sentence case, alternating, or inverse).` },
+        { name: `Review Live Output`, text: `Check the converted text and text statistics in the result panel.` },
+        { name: `Copy Transformed Text`, text: `Click Copy to transfer the transformed text to your clipboard.` },
       ],
     },
     faqs: [
-      { question: `What exactly does Case Converter (Sentence, Upper, Lower) do?`, answer: `Case Converter (Sentence, Upper, Lower) lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is Case Converter (Sentence, Upper, Lower) really free? Are there any hidden charges?`, answer: `Yes, Case Converter (Sentence, Upper, Lower) is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you convert text content using Case Converter (Sentence, Upper, Lower), your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use Case Converter (Sentence, Upper, Lower)?`, answer: `No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use Case Converter (Sentence, Upper, Lower) on mobile devices or tablets?`, answer: `Yes, Case Converter (Sentence, Upper, Lower) works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `How does Sentence Case handle multiple sentences?`, answer: `The converter identifies sentence boundaries denoted by periods, exclamation marks, and question marks, automatically capitalizing the first alphabetical letter of each subsequent sentence.` },
+      { question: `Does Title Case convert all words?`, answer: `Yes. It capitalizes the initial letter of each word separated by whitespace while setting subsequent letters to lowercase.` },
+      { question: `What does Inverse Case do?`, answer: `Inverse case flips each character's case individually: lowercase letters become uppercase and uppercase letters become lowercase.` },
+      { question: `What is Alternating Case used for?`, answer: `Alternating case (e.g., "aLtErNaTiNg") toggles uppercase and lowercase character by character, frequently used in social media, meme typography, and informal messaging.` },
+      { question: `Is my text uploaded or stored on any server?`, answer: `No. All text transformations and counts execute locally in your browser's JavaScript environment.` },
     ],
-    seoDescription: `Private Case Converter (Sentence, Upper, Lower): privately convert text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online case converter. Convert text to UPPERCASE, lowercase, Title Case, Sentence case, and alternating case instantly. 100% private in-browser tool.`,
   },
   "cgpa-calculator": {
     whatItIs: `CGPA Calculator is a precision online calculator that performs numbers computations instantly. Unlike spreadsheet software or mobile apps that require installation and updates, this calculator works in any browser with no setup. All calculations happen locally on your device, so your financial or personal data never reaches any server. It is built for students, professionals, and anyone who needs quick, accurate numbers calculations.
@@ -7523,43 +7512,32 @@ HTML Entity Encoder/Decoder is built for privacy-conscious users who need reliab
     seoDescription: `Private HTML Entity Encoder/Decoder: privately process code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
   "html-minifier": {
-    whatItIs: `HTML Minifier is a browser-based compression utility designed to reduce the file size of your code and data while preserving quality. It runs completely on your device — nothing is uploaded to any server. This makes it ideal for preparing code and data for websites, email attachments, document portals with strict upload limits, or simply saving storage space on your device. You can adjust compression levels to find the perfect balance between file size and visual fidelity.
-
-## Why Choose HTML Minifier?
-
-Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-HTML Minifier is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `HTML Minifier is a frontend performance utility that compresses HTML documents by stripping unnecessary comments, consolidating whitespace, and eliminating inter-tag spacing. By reducing the overall document size, minified HTML speeds up Time to First Byte (TTFB), lowers network payload weight, and improves Google Core Web Vitals scores without altering the rendered visual layout.`,
     features: [
-      `Compress code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Strips HTML comments (<!-- ... -->) automatically to remove non-essential developer notes`,
+      `Collapses redundant whitespace and line breaks across HTML elements`,
+      `Eliminates extraneous whitespace between adjacent tags for a compact markup footprint`,
+      `Real-time compression metrics displaying original byte size, minified size, and percentage reduction`,
+      `One-click clipboard copy and .html file export for seamless deployment into production`,
+      `100% client-side compression safe for private templates and proprietary source code`,
     ],
     howToUse: {
-      name: `How to compress code and data with HTML Minifier`,
+      name: `How to minify HTML code online`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /html-minifier on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Paste HTML Markup`, text: `Insert your raw or template HTML code into the input panel.` },
+        { name: `Automatic Compression`, text: `The tool instantly strips comments and compacts whitespace as you type.` },
+        { name: `Inspect Size Savings`, text: `Check the reduction summary showing byte savings and compression percentage.` },
+        { name: `Copy or Download`, text: `Copy the minified HTML string or download the compressed .html file.` },
       ],
     },
     faqs: [
-      { question: `What exactly does HTML Minifier do?`, answer: `HTML Minifier lets you compress code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is HTML Minifier really free? Are there any hidden charges?`, answer: `Yes, HTML Minifier is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you compress code and data using HTML Minifier, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use HTML Minifier?`, answer: `No account, signup, or email is required. Simply open the page and start compressing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use HTML Minifier on mobile devices or tablets?`, answer: `Yes, HTML Minifier works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Does HTML minification break inline scripts or styles?`, answer: `The minifier collapses whitespace safely while preserving the syntax of embedded <script> and <style> blocks.` },
+      { question: `Why is HTML minification important for SEO?`, answer: `Reducing HTML document size accelerates page loading times, directly benefiting Core Web Vitals (such as LCP) which search engines evaluate in rankings.` },
+      { question: `Can I unminify the HTML later?`, answer: `Yes. You can reformat the minified HTML markup using standard IDE formatters like Prettier or VS Code at any time.` },
+      { question: `Will minification remove conditional comments?`, answer: `Standard HTML comment blocks are stripped. If you require legacy conditional comments, verify them before deploying to production.` },
+      { question: `Is my HTML code uploaded to an external server?`, answer: `No. All parsing and regex transformations occur locally in your browser with zero network requests.` },
     ],
-    seoDescription: `Private HTML Minifier: privately compress code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online HTML minifier to compress markup, remove comments, and reduce file size for faster page speeds. 100% private and client-side.`,
   },
   "html-to-pdf": {
     whatItIs: `HTML to PDF Converter is a free online conversion tool that transforms PDF documents from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
@@ -9809,472 +9787,334 @@ JSON Editor is built for privacy-conscious users who need reliable results witho
     seoDescription: `Private JSON Editor: privately process code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
   "json-formatter": {
-    whatItIs: `JSON Formatter is a code and data formatting utility that beautifies, structures, and organizes your code and data for better readability and analysis. Unlike IDE plugins or desktop apps that require setup and configuration, this tool works instantly in your browser. All processing is local, making it safe for proprietary code, confidential data, and personal information.
-
-## Why Choose JSON Formatter?
-
-Format and beautify your JSON data instantly for better readability. Our free online tool validates your JSON structure and provides a clean, indented view of your code.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON Formatter is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON Formatter is an interactive developer utility that beautifies, indents, and structures raw JSON strings for API debugging, log analysis, and code reviews. Operating entirely within your browser, it transforms minified or unformatted JSON into cleanly formatted hierarchies with custom indentation options (2 spaces, 4 spaces, or tabs). The tool validates syntax in real time, pinpointing errors with exact line and character offsets, while generating key statistics such as depth, key count, and raw byte footprint.`,
     features: [
-      `Format code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Customizable indentation styles with support for 2-space, 4-space, or tab layouts`,
+      `Strict syntax validation displaying exact line and column numbers on parsing failures`,
+      `Real-time structural metrics including total object keys, nesting depth, and byte size`,
+      `Interactive tree search and filter to inspect deeply nested properties within large payloads`,
+      `One-click clipboard copy and formatted .json file download`,
+      `Pre-loaded sample datasets for testing both simple and complex nested schemas`,
     ],
     howToUse: {
-      name: `How to format code and data with JSON Formatter`,
+      name: `How to format and validate JSON online`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-formatter on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Enter JSON Data`, text: `Paste your raw JSON payload, API response, or configuration snippet into the editor.` },
+        { name: `Choose Indentation`, text: `Select your preferred indent level—2 spaces, 4 spaces, or tabs—to match your team's code conventions.` },
+        { name: `Inspect Structure and Errors`, text: `Review the formatted preview, syntax status badge, and structural statistics to ensure valid formatting.` },
+        { name: `Copy or Export`, text: `Click Copy to grab the formatted JSON or use the Download button to save the result as a .json file.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON Formatter do?`, answer: `JSON Formatter lets you format code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON Formatter really free? Are there any hidden charges?`, answer: `Yes, JSON Formatter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict formatters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you format code and data using JSON Formatter, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON Formatter?`, answer: `No account, signup, or email is required. Simply open the page and start formating your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON Formatter on mobile devices or tablets?`, answer: `Yes, JSON Formatter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Does this formatter alter numbers, booleans, or null values?`, answer: `No. The formatter strictly adheres to standard JSON specifications, preserving numeric precision, boolean literals, strings, and null values without modification.` },
+      { question: `How does the error highlighter identify syntax mistakes?`, answer: `When syntax is invalid, the parser catches the exact character offset and displays the corresponding line and column number where a missing quote, bracket, or comma occurred.` },
+      { question: `Can I format JSON with comments or trailing commas?`, answer: `Standard JSON (RFC 8259) prohibits comments and trailing commas. The validator flags them so you can clean up the payload before feeding it into strict JSON parsers.` },
+      { question: `Can I process large multi-megabyte JSON files?`, answer: `Yes. Since execution occurs in local browser memory without uploading over the network, multi-megabyte payloads are formatted quickly without bandwidth bottlenecks.` },
+      { question: `Is my confidential API data secure?`, answer: `Yes. All processing executes 100% client-side in your browser. Tokens, secrets, and private customer payloads are never transmitted to any external server.` },
     ],
-    seoDescription: `Private JSON Formatter: privately format code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online JSON formatter to beautify, indent, and validate JSON data instantly. Custom indentation, syntax error detection, and 100% private in-browser processing.`,
   },
   "json-minify": {
-    whatItIs: `JSON Minify is a browser-based compression utility designed to reduce the file size of your code and data while preserving quality. It runs completely on your device — nothing is uploaded to any server. This makes it ideal for preparing code and data for websites, email attachments, document portals with strict upload limits, or simply saving storage space on your device. You can adjust compression levels to find the perfect balance between file size and visual fidelity.
-
-## Why Choose JSON Minify?
-
-Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON Minify is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON Minify is a client-side payload compression tool that removes all non-essential whitespace, indentation spaces, newlines, and tabs from JSON documents. By compacting multi-line JSON structures into a single contiguous line, it significantly reduces file size and network transfer overhead for REST APIs, microservices, configuration files, and HTTP headers without altering the underlying data.`,
     features: [
-      `Compress code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Single-line compression that strips indentation, trailing spaces, and newlines`,
+      `Accurate file size reduction metrics showing original vs minified byte savings`,
+      `Strict RFC 8259 compliance preserving string literals, escaped characters, and Unicode`,
+      `Instant syntax validation preventing the compaction of malformed or corrupted JSON`,
+      `Direct clipboard copy and .json file download for rapid build and pipeline integration`,
     ],
     howToUse: {
-      name: `How to compress code and data with JSON Minify`,
+      name: `How to minify and compress JSON`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-minify on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Paste Formatted JSON`, text: `Insert your multi-line JSON payload or configuration object into the input editor.` },
+        { name: `Execute Minification`, text: `Click Minify or toggle the minification tab to collapse all structural whitespace into a single line.` },
+        { name: `Verify Byte Savings`, text: `Check the compression metrics to see the reduced byte footprint and character savings.` },
+        { name: `Copy Compact String`, text: `Copy the compacted JSON string for use in curl commands, environment variables, or API request bodies.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON Minify do?`, answer: `JSON Minify lets you compress code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON Minify really free? Are there any hidden charges?`, answer: `Yes, JSON Minify is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you compress code and data using JSON Minify, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON Minify?`, answer: `No account, signup, or email is required. Simply open the page and start compressing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON Minify on mobile devices or tablets?`, answer: `Yes, JSON Minify works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Does minification delete spaces inside string values?`, answer: `No. Spaces, tabs, and special characters inside quoted string values are strictly preserved. Only structural whitespace between tokens, keys, and values is removed.` },
+      { question: `Why should I minify JSON before network requests?`, answer: `Removing formatting whitespace can reduce payload size by 30% to 60%, speeding up HTTP transfer times and decreasing bandwidth usage across mobile and web connections.` },
+      { question: `Can I restore minified JSON back to a formatted state?`, answer: `Yes. Minification does not alter data semantics. You can paste the minified output into SopKit's JSON Formatter at any time to re-apply indentation.` },
+      { question: `Does the minifier support JSON5 or JSON with comments?`, answer: `This tool targets standard RFC 8259 JSON. If your file contains non-standard comments or trailing commas, remove them first so the standard parser can process it.` },
+      { question: `Are my JSON configurations uploaded to a server?`, answer: `No. Minification executes entirely inside your browser's JavaScript engine, ensuring complete privacy for proprietary schemas and API payloads.` },
     ],
-    seoDescription: `Private JSON Minify: privately compress code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online JSON minifier to compress JSON payloads, strip whitespace, and reduce file sizes for APIs and configs. 100% client-side, instant, and private.`,
   },
   "json-to-csv-converter": {
-    whatItIs: `JSON to CSV Converter is a free online conversion tool that transforms code and data from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
-
-## Why Choose JSON to CSV Converter?
-
-Convert JSON data to CSV format instantly. Our free online converter makes it easy to transform complex JSON structures into simple spreadsheet-ready tables.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON to CSV Converter is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON to CSV Converter is a data export utility that converts arrays of JSON objects into structured Comma-Separated Values (CSV). It inspects object properties to dynamically generate column headers and flattens data rows according to standard RFC 4180 rules, making it straightforward to export database exports, webhooks, and REST API responses directly into Microsoft Excel, Google Sheets, or data analytics pipelines.`,
     features: [
-      `Convert code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Automatic column header generation derived from JSON object keys`,
+      `Standard RFC 4180 CSV escaping for values containing commas, quotes, and newlines`,
+      `Supports both arrays of uniform records and single JSON objects`,
+      `Graceful serialization of nested arrays and sub-objects into stringified cell representations`,
+      `Instant client-side processing with zero file size limits or upload queues`,
     ],
     howToUse: {
-      name: `How to convert code and data with JSON to CSV Converter`,
+      name: `How to convert JSON to CSV online`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-to-csv-converter on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Provide JSON Array`, text: `Paste your JSON array of objects (for example, a list of users or transactions) into the input area.` },
+        { name: `Click Convert`, text: `Trigger the conversion to parse object properties and generate standard comma-separated rows.` },
+        { name: `Review Table Columns`, text: `Inspect the generated CSV output, verifying that column headers match your object keys.` },
+        { name: `Export Result`, text: `Copy the CSV text directly into your clipboard or save it for importing into Excel or Google Sheets.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON to CSV Converter do?`, answer: `JSON to CSV Converter lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON to CSV Converter really free? Are there any hidden charges?`, answer: `Yes, JSON to CSV Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you convert code and data using JSON to CSV Converter, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON to CSV Converter?`, answer: `No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON to CSV Converter on mobile devices or tablets?`, answer: `Yes, JSON to CSV Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `What structure does the JSON need to have?`, answer: `The input should ideally be an array of objects where each object represents a table row. If a single object is provided, it is converted into a single-row CSV table.` },
+      { question: `How are commas and quotes inside text values handled?`, answer: `Values containing commas, double quotes, or newlines are wrapped in double quotes, and internal quotes are properly escaped with double quotation marks per RFC 4180.` },
+      { question: `What happens to nested child objects?`, answer: `Nested objects and arrays are serialized into JSON string representations inside their respective table cell to prevent data loss.` },
+      { question: `Can the generated CSV be opened directly in Microsoft Excel?`, answer: `Yes. The generated text follows standard CSV format and can be saved as a .csv file or pasted into Excel and Google Sheets.` },
+      { question: `Does SopKit store or log my JSON records?`, answer: `No. All parsing and conversion happen locally in your web browser. No records, customer lists, or database rows are ever uploaded or saved.` },
     ],
-    seoDescription: `Private JSON to CSV Converter: privately convert code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Convert JSON to CSV online for free. Transform arrays of JSON objects into clean CSV tables for Excel and Google Sheets. 100% client-side and secure.`,
   },
   "json-to-json-schema": {
-    whatItIs: `JSON to JSON Schema is a versatile web tool that helps you work with code and data efficiently. Unlike online services that track your usage and collect data, this tool processes everything locally in your browser. It is designed to provide a fast, private, and straightforward solution for common code and data tasks without requiring signups, payments, or software installations.
-
-## Why Choose JSON to JSON Schema?
-
-Generate a JSON Schema from your JSON data automatically. Our free online tool helps you define validation rules and document your JSON structure for APIs.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON to JSON Schema is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON to JSON Schema Converter is an automated schema inference tool that inspects JSON documents and generates standardized JSON Schema specifications adhering to the Draft 2020-12 standard. By recursively analyzing primitive data types, nested object maps, array elements, and nullable fields, it outputs clean schema definitions with type annotations, structural property lists, and item specifications to accelerate API contract design and input validation.`,
     features: [
-      `Process code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Generates standard JSON Schema Draft 2020-12 specifications`,
+      `Recursive heuristic inference for nested objects, arrays, strings, numbers, booleans, and nulls`,
+      `Automatic properties dictionary construction for complex object graphs`,
+      `Uniform and heterogeneous array item schema detection`,
+      `Compatible with OpenAPI 3.x specifications, Ajv validators, and Zod type schemas`,
+      `Instant client-side inference with zero external network communication`,
     ],
     howToUse: {
-      name: `How to use code and data with JSON to JSON Schema`,
+      name: `How to generate a JSON Schema from JSON data`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-to-json-schema on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Input Sample Payload`, text: `Paste a representative JSON payload or API response into the editor.` },
+        { name: `Infer Schema`, text: `Click Infer to analyze the object graph, identifying types, keys, and array structures.` },
+        { name: `Review Generated Schema`, text: `Inspect the generated $schema, properties, and types in the output editor.` },
+        { name: `Copy or Integrate`, text: `Copy the schema to paste into your API documentation, Ajv validator, or contract test suite.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON to JSON Schema do?`, answer: `JSON to JSON Schema lets you process code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON to JSON Schema really free? Are there any hidden charges?`, answer: `Yes, JSON to JSON Schema is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you process code and data using JSON to JSON Schema, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON to JSON Schema?`, answer: `No account, signup, or email is required. Simply open the page and start processing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON to JSON Schema on mobile devices or tablets?`, answer: `Yes, JSON to JSON Schema works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Which JSON Schema draft version is generated?`, answer: `The generator outputs schemas conforming to JSON Schema Draft 2020-12 (https://json-schema.org/draft/2020-12/schema), the current modern standard for API and payload validation.` },
+      { question: `How are array elements evaluated during schema inference?`, answer: `The heuristic examines array items. When items share common object structures or types, it infers the representative schema for the items property.` },
+      { question: `Can I add required field constraints to the output?`, answer: `Yes. The generated schema provides the structural backbone with properties and types. You can easily append required arrays based on your API validation requirements.` },
+      { question: `Is the generated schema compatible with OpenAPI and Swagger?`, answer: `Yes. The property definitions and data types generated are directly compatible with OpenAPI 3.0 and 3.1 component schemas.` },
+      { question: `Does the schema inference send my JSON to a server?`, answer: `No. All analysis and AST construction occur locally in your browser, keeping proprietary API contracts and data schemas confidential.` },
     ],
-    seoDescription: `Private JSON to JSON Schema: privately process code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online JSON to JSON Schema converter. Infer Draft 2020-12 schemas from sample JSON payloads instantly in your browser with complete privacy.`,
   },
   "json-to-text-converter": {
-    whatItIs: `JSON to Text Converter is a free online conversion tool that transforms code and data from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
-
-## Why Choose JSON to Text Converter?
-
-Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw data.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON to Text Converter is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON to Text Converter transforms raw, stringified, or unformatted JSON documents into clean, human-readable text representations. It strips away escaping artifacts, normalizes two-space indentation, and formats key-value hierarchies, making structured data legible for documentation, log auditing, customer support tickets, and team presentations without requiring specialized viewer software.`,
     features: [
-      `Convert code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Converts stringified and minified JSON into clean, readable text layouts`,
+      `Client-side syntax validation that verifies structural integrity before rendering`,
+      `Normalizes escape characters and nested quotes for clear visual auditing`,
+      `Lightweight, low-latency processing designed for fast copy-pasting`,
+      `Zero server logging, keeping sensitive application logs and tokens secure`,
     ],
     howToUse: {
-      name: `How to convert code and data with JSON to Text Converter`,
+      name: `How to convert JSON to plain text`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-to-text-converter on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Enter JSON String`, text: `Paste your raw or stringified JSON payload into the input text area.` },
+        { name: `Convert to Text`, text: `Click Convert to parse the payload and render an organized, readable text output.` },
+        { name: `Inspect Readability`, text: `Verify that keys, nested arrays, and data values are cleanly organized.` },
+        { name: `Copy Text Output`, text: `Copy the formatted text to use in documentation, bug tickets, or chat discussions.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON to Text Converter do?`, answer: `JSON to Text Converter lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON to Text Converter really free? Are there any hidden charges?`, answer: `Yes, JSON to Text Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you convert code and data using JSON to Text Converter, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON to Text Converter?`, answer: `No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON to Text Converter on mobile devices or tablets?`, answer: `Yes, JSON to Text Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `How does JSON to Text differ from a code formatter?`, answer: `JSON to Text focuses on producing clean, unescaped text ideal for pasting into markdown documents, customer issue reports, and engineering tickets.` },
+      { question: `Can it process escaped JSON strings copied from server logs?`, answer: `Yes. Valid JSON strings containing escaped delimiters are unescaped and formatted into structured text.` },
+      { question: `What happens if the JSON input is malformed?`, answer: `The parser detects syntax errors and alerts you with a notification so you can correct missing braces or unquoted keys.` },
+      { question: `Are confidential logs or user records sent over the internet?`, answer: `No. All formatting runs client-side in your local browser runtime. No logs or private records leave your workstation.` },
+      { question: `Is there a limit on input text size?`, answer: `There are no arbitrary server file size limits. You can process payloads up to the memory limit of your local browser.` },
     ],
-    seoDescription: `Private JSON to Text Converter: privately convert code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Convert JSON to clean, human-readable text online. Format and unescape JSON payloads for logs, tickets, and docs. 100% client-side and free.`,
   },
   "json-to-tsv-converter": {
-    whatItIs: `JSON to TSV Converter is a free online conversion tool that transforms code and data from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
-
-## Why Choose JSON to TSV Converter?
-
-Convert JSON data to Tab-Separated Values (TSV) format instantly. Our free online converter helps you prepare data for Excel and other spreadsheet applications.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON to TSV Converter is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON to TSV Converter transforms arrays of JSON objects into Tab-Separated Values (TSV). Because tab characters avoid the comma collisions common in address fields, descriptions, and user input, TSV provides a robust format for pasting data directly into spreadsheet cells in Microsoft Excel, Google Sheets, LibreOffice Calc, or piping into command-line data processing tools like awk and cut.`,
     features: [
-      `Convert code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Converts arrays of JSON objects into clean, tab-delimited text records`,
+      `Automatic header row creation from object property keys`,
+      `Prevents delimiter collision errors common when using CSV with comma-heavy text`,
+      `Native copy-paste compatibility with Excel and Google Sheets grid cells`,
+      `Local client-side execution with instant conversion and zero file size restrictions`,
     ],
     howToUse: {
-      name: `How to convert code and data with JSON to TSV Converter`,
+      name: `How to convert JSON to TSV online`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-to-tsv-converter on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Paste JSON Array`, text: `Input an array of JSON objects (e.g., database exports or API results) into the input box.` },
+        { name: `Execute Conversion`, text: `Click Convert to parse the keys and format the values separated by tab characters.` },
+        { name: `Inspect Delimited Rows`, text: `Check the generated headers and tab-separated rows for correct column alignment.` },
+        { name: `Copy to Clipboard`, text: `Copy the TSV text and paste directly into Google Sheets, Excel, or a terminal pipeline.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON to TSV Converter do?`, answer: `JSON to TSV Converter lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON to TSV Converter really free? Are there any hidden charges?`, answer: `Yes, JSON to TSV Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you convert code and data using JSON to TSV Converter, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON to TSV Converter?`, answer: `No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON to TSV Converter on mobile devices or tablets?`, answer: `Yes, JSON to TSV Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Why use TSV instead of CSV for spreadsheet imports?`, answer: `TSV uses tab characters as delimiters. Since tabs rarely appear in text strings or descriptions, TSV avoids common column splitting errors caused by internal commas in CSV files.` },
+      { question: `Can I paste the TSV output directly into Google Sheets or Excel?`, answer: `Yes. Modern spreadsheet software natively parses tab characters on clipboard paste, automatically populating separate columns without needing an import wizard.` },
+      { question: `How are missing object properties handled across rows?`, answer: `If certain objects lack keys present in other objects, the converter leaves the corresponding tab-separated cell empty, preserving tabular alignment.` },
+      { question: `How are nested objects and arrays formatted in TSV?`, answer: `Nested structures are serialized into compact JSON strings within their respective tab column.` },
+      { question: `Is any data uploaded to an external server?`, answer: `No. The entire conversion process executes locally in your browser memory with zero network requests.` },
     ],
-    seoDescription: `Private JSON to TSV Converter: privately convert code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online JSON to TSV converter. Transform JSON object arrays into tab-separated values ready to paste into Excel and Google Sheets. 100% private.`,
   },
   "json-to-typescript": {
-    whatItIs: `JSON to TypeScript Interface is a free online conversion tool that transforms code and data from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
-
-## Why Choose JSON to TypeScript Interface?
-
-Convert JSON objects into clean TypeScript interfaces or type definitions automatically.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON to TypeScript Interface is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON to TypeScript Converter is a developer productivity utility that converts JSON payloads into strongly-typed TypeScript interfaces and type definitions. It recursively analyzes object hierarchies, array types, optional values, and primitive fields, generating clean PascalCase child interfaces that you can paste directly into frontend components, API clients, and backend models. With built-in local persistence, your input and custom root interface name are automatically saved across sessions.`,
     features: [
-      `Convert code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Configurable root interface name with automatic PascalCase normalization`,
+      `Recursive nested object parsing into clean, modular child interfaces`,
+      `Intelligent type inference for strings, numbers, booleans, arrays, and nullable fields`,
+      `Local persistence with auto-save to retain your inputs across browser refreshes`,
+      `One-click clipboard copy and .ts declaration file export`,
+      `Real-time JSON syntax validation with clear parsing error feedback`,
     ],
     howToUse: {
-      name: `How to convert code and data with JSON to TypeScript Interface`,
+      name: `How to convert JSON into TypeScript interfaces`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-to-typescript on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Enter JSON Payload`, text: `Paste your API response, mock data, or config object into the JSON input panel.` },
+        { name: `Set Root Type Name`, text: `Specify your preferred root interface name (such as UserProfile or ApiResponse).` },
+        { name: `Review Generated Types`, text: `Inspect the TypeScript code output showing structured interfaces and typed properties.` },
+        { name: `Copy or Download`, text: `Click Copy to copy interfaces to your clipboard or download the generated .ts file.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON to TypeScript Interface do?`, answer: `JSON to TypeScript Interface lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON to TypeScript Interface really free? Are there any hidden charges?`, answer: `Yes, JSON to TypeScript Interface is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you convert code and data using JSON to TypeScript Interface, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON to TypeScript Interface?`, answer: `No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON to TypeScript Interface on mobile devices or tablets?`, answer: `Yes, JSON to TypeScript Interface works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `How does the tool generate names for nested interfaces?`, answer: `The generator derives child interface names from parent property names, converting them into PascalCase to maintain clean, idiomatic TypeScript architecture.` },
+      { question: `How does it type arrays of objects?`, answer: `When an array contains objects, the converter creates an interface for the object structure and sets the property type to Array<Type> or Type[].` },
+      { question: `How are null or missing properties handled?`, answer: `Properties that evaluate to null or undefined in the sample data are typed defensively as unknown or nullable to maintain strict type safety.` },
+      { question: `Are interface definitions or type aliases generated?`, answer: `The tool generates standard TypeScript interface declarations, which support declaration merging and are standard in most TypeScript codebases.` },
+      { question: `Is my API payload kept private?`, answer: `Yes. Interface inference runs completely inside your browser's JavaScript engine. No payload tokens or customer data are ever transmitted externally.` },
     ],
-    seoDescription: `Private JSON to TypeScript Interface: privately convert code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online JSON to TypeScript converter. Generate clean TypeScript interfaces and types from JSON payloads instantly in your browser with 100% privacy.`,
   },
   "json-to-xml-converter": {
-    whatItIs: `JSON to XML Converter is a free online conversion tool that transforms code and data from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
-
-## Why Choose JSON to XML Converter?
-
-Convert JSON data to XML format instantly. Our free online tool handles nesting and attributes to ensure a clean transformation for legacy system compatibility.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON to XML Converter is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON to XML Converter is a client-side serialization tool that transforms JSON data structures into well-formed XML documents. It parses nested key-value objects, arrays, and primitive values, mapping them to structured XML elements with proper closing tags, attribute handling, and a standard XML version header for seamless integration with legacy enterprise systems, SOAP web services, and RSS feeds.`,
     features: [
-      `Convert code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Generates standard XML with <?xml version="1.0" encoding="UTF-8"?> header`,
+      `Transforms nested JSON objects into hierarchical XML tag structures`,
+      `Maps arrays into sequential child elements with standardized tag naming`,
+      `Generates self-closing tags for null, empty, or undefined properties`,
+      `Executes 100% in your browser with instant conversion and zero file size caps`,
     ],
     howToUse: {
-      name: `How to convert code and data with JSON to XML Converter`,
+      name: `How to convert JSON to XML online`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-to-xml-converter on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Paste JSON Object`, text: `Input your JSON object or payload into the input editor.` },
+        { name: `Click Convert`, text: `Trigger the converter to transform JSON properties into corresponding XML elements.` },
+        { name: `Inspect XML Tags`, text: `Review the generated XML hierarchy to verify element tags and closing structures.` },
+        { name: `Copy XML Document`, text: `Copy the formatted XML output for use in legacy SOAP endpoints, feeds, or XML configs.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON to XML Converter do?`, answer: `JSON to XML Converter lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON to XML Converter really free? Are there any hidden charges?`, answer: `Yes, JSON to XML Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you convert code and data using JSON to XML Converter, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON to XML Converter?`, answer: `No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON to XML Converter on mobile devices or tablets?`, answer: `Yes, JSON to XML Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Are XML tag naming rules enforced?`, answer: `Yes. XML element names cannot contain spaces or certain special characters. Ensure your JSON property keys use valid XML identifier characters.` },
+      { question: `How are JSON arrays converted to XML?`, answer: `Array items are rendered as sequential child tags labeled with consistent item identifiers to maintain structured document hierarchy.` },
+      { question: `Can the output be used with SOAP web services?`, answer: `Yes. The generated XML document is well-formed and can be embedded within SOAP envelopes or sent to XML-based APIs.` },
+      { question: `Can I convert large configuration files?`, answer: `Yes. Because conversion occurs in browser memory without network bottlenecks, large documents are processed rapidly.` },
+      { question: `Is any data uploaded to an external server?`, answer: `No. All JSON-to-XML conversion takes place client-side in your browser, maintaining full privacy for proprietary data.` },
     ],
-    seoDescription: `Private JSON to XML Converter: privately convert code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Convert JSON to XML online for free. Transform JSON objects and arrays into structured XML documents for APIs and enterprise systems. 100% private.`,
   },
   "json-to-yaml-converter": {
-    whatItIs: `JSON to YAML Converter is a free online conversion tool that transforms code and data from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
-
-## Why Choose JSON to YAML Converter?
-
-Convert JSON configurations to clean YAML structures instantly. Safe & secure.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON to YAML Converter is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON to YAML Converter is an interactive serialization tool that converts structured JSON data into clean, human-friendly YAML. By replacing braces, brackets, and quotes with indentation and hyphens, it streamlines the creation of configuration files for Kubernetes manifests, Docker Compose services, GitHub Actions workflows, and Helm charts. Built with the robust js-yaml engine, it includes automatic local storage to preserve your work.`,
     features: [
-      `Convert code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Converts JSON into clean 2-space indented YAML format`,
+      `Handles nested objects, arrays, multi-line strings, and scalar primitives`,
+      `Powered by client-side js-yaml parsing engine for standard YAML 1.2 output`,
+      `Local persistence with auto-save to retain your configurations across sessions`,
+      `One-click clipboard copy and .yaml configuration file export`,
     ],
     howToUse: {
-      name: `How to convert code and data with JSON to YAML Converter`,
+      name: `How to convert JSON to YAML online`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-to-yaml-converter on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Provide JSON Content`, text: `Paste your JSON configuration or API response into the input code editor.` },
+        { name: `Automatic Conversion`, text: `The converter automatically transforms the JSON into clean YAML as you type.` },
+        { name: `Review Indentation`, text: `Check the YAML output preview to verify indentation and list structures.` },
+        { name: `Copy or Download`, text: `Copy the YAML string or download it as a .yaml file ready for your DevOps workflow.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON to YAML Converter do?`, answer: `JSON to YAML Converter lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON to YAML Converter really free? Are there any hidden charges?`, answer: `Yes, JSON to YAML Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you convert code and data using JSON to YAML Converter, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON to YAML Converter?`, answer: `No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON to YAML Converter on mobile devices or tablets?`, answer: `Yes, JSON to YAML Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Why is YAML preferred over JSON for DevOps configurations?`, answer: `YAML is much more readable and concise than JSON because it eliminates commas, braces, and excessive quotes, making it the industry standard for Kubernetes, Docker, and CI/CD pipelines.` },
+      { question: `How are boolean and null values converted?`, answer: `Booleans and null values are mapped to standard YAML literals (true/false and null/~) adhering to the YAML 1.2 specification.` },
+      { question: `How does the tool handle long or multi-line strings?`, answer: `Multi-line strings are formatted cleanly with preserved line breaks, avoiding messy escape characters.` },
+      { question: `Can I convert YAML back into JSON?`, answer: `Yes. SopKit provides a companion YAML to JSON Converter that parses YAML back into indented JSON.` },
+      { question: `Does the converter send configuration data to any server?`, answer: `No. Conversion executes 100% in your browser using client-side JavaScript, ensuring Kubernetes secrets and credentials stay secure.` },
     ],
-    seoDescription: `Private JSON to YAML Converter: privately convert code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Convert JSON to YAML online for free. Transform JSON into clean, human-readable YAML for Kubernetes, Docker, and CI/CD configs. 100% private.`,
   },
   "json-validator": {
-    whatItIs: `JSON Validator is a quality assurance tool that checks, validates, and tests your code and data for correctness and compliance. It operates as a fully client-side sandbox — your code and data never leaves your browser. This makes it suitable for validating sensitive data, proprietary code, or confidential documents without exposing them to third-party servers.
-
-## Why Choose JSON Validator?
-
-Validate your JSON data for syntax errors and structural integrity instantly. Our free online tool helps you catch bugs and ensure your JSON is RFC-compliant.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON Validator is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON Validator is a client-side syntax verification and debugging tool that checks JSON code against ECMA-404 and RFC 8259 standards. When validating raw strings, configuration files, or API payloads, it catches syntax errors such as trailing commas, single quotes, unquoted keys, and missing delimiters, displaying exact line and character positions for rapid troubleshooting. Valid payloads are formatted with customizable indentation alongside payload metrics like object keys and nesting depth.`,
     features: [
-      `Validate code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Strict RFC 8259 compliance checking with instant pass/fail validation status`,
+      `Precise syntax error reporting highlighting exact line number and character offset`,
+      `Identifies common formatting defects including trailing commas and unescaped quotes`,
+      `Structural data metrics including total key count, nesting depth, and raw byte size`,
+      `Built-in formatter to beautify valid JSON with 2-space, 4-space, or tab layouts`,
+      `Completely local execution with zero network transmission, keeping tokens and configs secure`,
     ],
     howToUse: {
-      name: `How to validate code and data with JSON Validator`,
+      name: `How to validate JSON syntax online`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-validator on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Input JSON String`, text: `Paste your JSON text or payload into the code input editor.` },
+        { name: `Check Validation Status`, text: `Observe the live badge indicator showing whether the JSON is valid or contains syntax errors.` },
+        { name: `Locate Syntax Flaws`, text: `If invalid, read the error message indicating the exact line and character position of the failure.` },
+        { name: `Fix and Copy`, text: `Correct the highlighted syntax issue and copy the cleanly validated output to your clipboard.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON Validator do?`, answer: `JSON Validator lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON Validator really free? Are there any hidden charges?`, answer: `Yes, JSON Validator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you validate code and data using JSON Validator, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON Validator?`, answer: `No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON Validator on mobile devices or tablets?`, answer: `Yes, JSON Validator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `What are the most frequent JSON syntax errors?`, answer: `The most common syntax errors include trailing commas after the final object property or array element, using single quotes instead of double quotes, omitting quotes around object keys, and mismatched brackets.` },
+      { question: `Why does standard JSON disallow trailing commas?`, answer: `RFC 8259 strictly forbids trailing commas to maintain strict cross-platform compatibility across diverse programming languages and embedded parsers.` },
+      { question: `Can the validator handle large payloads?`, answer: `Yes. Running client-side within browser memory allows multi-megabyte JSON payloads to be parsed and verified in milliseconds.` },
+      { question: `Does this tool validate schema definitions?`, answer: `This tool checks syntactic validity. To infer or test against JSON Schema rules, use SopKit's JSON to JSON Schema converter.` },
+      { question: `Is my payload kept confidential?`, answer: `Yes. All parsing and validation execute entirely within your local browser runtime. Sensitive API keys and database records are never sent over the network.` },
     ],
-    seoDescription: `Private JSON Validator: privately validate code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online JSON validator to check JSON syntax against RFC 8259. Pinpoints syntax errors, line numbers, and malformed characters. 100% private.`,
   },
   "json-viewer": {
-    whatItIs: `JSON Viewer is an extraction and analysis tool that reads, parses, and displays information from your code and data. It runs entirely in your browser, so your files remain private. This tool is designed for professionals who need to inspect code and data data, extract hidden information, or analyze content without specialized software.
-
-## Why Choose JSON Viewer?
-
-Free json viewer tool to process your data instantly with privacy-friendly browser-based workflows.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JSON Viewer is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JSON Viewer is an interactive inspection and visualization tool that renders raw or minified JSON into a structured, color-coded hierarchy. Designed for developers, QA testers, and analysts inspecting API responses and application state, it provides searchable tree views, syntax highlighting across all data types, and structural statistics including depth and key counts—all without requiring browser extensions or desktop software.`,
     features: [
-      `Read and extract code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Color-coded syntax highlighting across strings, numbers, booleans, and nulls`,
+      `Interactive search and filter bar to locate specific keys and values within large trees`,
+      `Comprehensive structural metrics: total keys, maximum nesting depth, and character counts`,
+      `Dual-mode view: formatted code view and navigable tree hierarchy`,
+      `Quick sample presets to experiment with simple and complex nested payloads`,
+      `Instant client-side inspection with zero upload latency or external tracking`,
     ],
     howToUse: {
-      name: `How to read code and data with JSON Viewer`,
+      name: `How to inspect and view JSON online`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /json-viewer on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Paste JSON Payload`, text: `Input your minified or unformatted JSON string into the viewer panel.` },
+        { name: `Switch to Viewer Mode`, text: `Select the viewer tab to render the color-coded object hierarchy.` },
+        { name: `Search Properties`, text: `Type a keyword into the search bar to filter keys and values across deep nesting levels.` },
+        { name: `Inspect and Copy`, text: `Examine object details or copy formatted sections directly for debugging.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JSON Viewer do?`, answer: `JSON Viewer lets you read code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JSON Viewer really free? Are there any hidden charges?`, answer: `Yes, JSON Viewer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you read code and data using JSON Viewer, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JSON Viewer?`, answer: `No account, signup, or email is required. Simply open the page and start reading your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JSON Viewer on mobile devices or tablets?`, answer: `Yes, JSON Viewer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Can I search through deeply nested objects?`, answer: `Yes. The built-in search scans keys and values across all hierarchy levels to highlight matching properties.` },
+      { question: `Does the viewer automatically format single-line JSON?`, answer: `Yes. When minified or single-line JSON is pasted, the viewer parses the syntax and presents it with structured indentation.` },
+      { question: `What happens if the JSON input is invalid?`, answer: `The viewer displays an alert banner explaining the syntax error and character location so you can adjust the payload.` },
+      { question: `Can I use JSON Viewer on mobile devices?`, answer: `Yes. The responsive design adapts seamlessly to mobile screens and tablets for inspecting API payloads on the go.` },
+      { question: `Are my JSON objects uploaded to external servers?`, answer: `No. All parsing and rendering occur locally on your device, ensuring complete privacy for private credentials and tokens.` },
     ],
-    seoDescription: `Private JSON Viewer: privately extract code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online JSON viewer to inspect, navigate, and search complex JSON payloads. Color-coded syntax highlighting, tree navigation, and 100% private.`,
   },
   "jwt-decoder": {
-    whatItIs: `JWT Decoder & Debugger is a browser-based encoding and decoding utility for transforming code and data between different formats. It converts data without sending it to any server, ensuring complete privacy. This tool is ideal for developers working with encrypted data, students learning data representation, and professionals handling encoded information.
-
-## Why Choose JWT Decoder & Debugger?
-
-Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-JWT Decoder & Debugger is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `JWT Decoder & Debugger is a client-side token inspection utility that decodes JSON Web Tokens (RFC 7519) into readable components without transmitting tokens or private keys to external servers. It breaks down JWT strings into color-coded Header, Payload, and Signature segments, decodes Base64URL claims into structured JSON, translates UNIX timestamps (iat, exp, nbf) into human-readable local dates, and checks expiration status in real time.`,
     features: [
-      `Encode and decode code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Tripartite visual breakdown with color-coded Header (red/amber), Payload (purple), and Signature (blue)`,
+      `Automatic UNIX timestamp conversion for exp (expiration), iat (issued at), and nbf (not before) claims`,
+      `Real-time token expiration status indicator showing active vs expired states`,
+      `Supports standard signature algorithms including HS256, RS256, ES256, and EdDSA`,
+      `Pre-loaded sample tokens for testing HMAC, RSA, and expired token states`,
+      `Strictly client-side decoding using @sopkit/jwt with zero network transmission`,
     ],
     howToUse: {
-      name: `How to encode/decode code and data with JWT Decoder & Debugger`,
+      name: `How to decode and debug JSON Web Tokens`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /jwt-decoder on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Paste JWT String`, text: `Copy your encoded bearer token into the token input editor.` },
+        { name: `Inspect Decoded Claims`, text: `Examine the decoded Header and Payload sections displaying user IDs, scopes, roles, and issuer details.` },
+        { name: `Check Expiration Status`, text: `View the live expiration status badge and human-readable timestamp to confirm if the token is active.` },
+        { name: `Copy Claim JSON`, text: `Use the copy buttons to copy the raw header, payload, or complete formatted JSON claims into your clipboard.` },
       ],
     },
     faqs: [
-      { question: `What exactly does JWT Decoder & Debugger do?`, answer: `JWT Decoder & Debugger lets you encode/decode code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is JWT Decoder & Debugger really free? Are there any hidden charges?`, answer: `Yes, JWT Decoder & Debugger is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict codecs after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you encode/decode code and data using JWT Decoder & Debugger, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use JWT Decoder & Debugger?`, answer: `No account, signup, or email is required. Simply open the page and start encode/decodeing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use JWT Decoder & Debugger on mobile devices or tablets?`, answer: `Yes, JWT Decoder & Debugger works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Is it safe to inspect production JWTs with this tool?`, answer: `Yes. Unlike remote debuggers that send tokens across the network, SopKit decodes tokens 100% locally in your browser using @sopkit/jwt. Bearer tokens, private claims, and session data never leave your machine.` },
+      { question: `Does this tool verify token signatures?`, answer: `This tool is an inspector and decoder. Signature verification requires knowing the server's secret or public key; to prevent credential exposure, it does not prompt for private signing keys.` },
+      { question: `How are UNIX timestamps converted?`, answer: `Standard claims like exp and iat store seconds since epoch. The decoder automatically translates these numbers into formatted, local calendar date and time strings.` },
+      { question: `What do the three color-coded sections represent?`, answer: `A JWT consists of three Base64URL strings separated by dots: the Header (algorithm and token type in red/amber), the Payload (claims and subject data in purple), and the Signature (cryptographic verification data in blue).` },
+      { question: `Can this tool decode encrypted tokens (JWE)?`, answer: `This tool decodes standard JSON Web Signatures (JWS). Encrypted JSON Web Encryption (JWE) tokens use a 5-part structure and encrypt payload content, which requires a private decryption key.` },
     ],
-    seoDescription: `Private JWT Decoder & Debugger: privately process code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online JWT decoder and debugger. Inspect header, payload claims, and expiration timestamps locally in your browser. 100% client-side and secure.`,
   },
   "keyword-density-checker": {
     whatItIs: `Keyword Density Checker is a quality assurance tool that checks, validates, and tests your website data for correctness and compliance. It operates as a fully client-side sandbox — your website data never leaves your browser. This makes it suitable for validating sensitive data, proprietary code, or confidential documents without exposing them to third-party servers.
@@ -11250,43 +11090,32 @@ Margin Calculator is built for privacy-conscious users who need reliable results
     seoDescription: `Private Margin Calculator: privately calculate web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
   "markdown-to-html": {
-    whatItIs: `Markdown to HTML Converter is a free online conversion tool that transforms text content from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
-
-## Why Choose Markdown to HTML Converter?
-
-Convert Markdown text into clean HTML code for your website, blog, or email newsletters.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your text content remain on your device from start to finish. No server uploads. No AI training. No data collection.
-
-## Who Is It For?
-
-Markdown to HTML Converter is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+    whatItIs: `Markdown to HTML Converter is a real-time markdown editor and compiler that converts GitHub Flavored Markdown into semantic, sanitised HTML markup. Featuring side-by-side or tabbed live preview and raw code viewing, it translates headings (H1–H3), bold and italic styling, blockquotes, ordered/unordered lists, code snippets, and fenced code blocks into clean HTML elements ready for publishing on blogs, static site generators, and newsletters.`,
     features: [
-      `Convert text content entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Compiles standard Markdown into clean semantic HTML markup`,
+      `Live preview toggle allowing you to switch between rendered visual preview and raw HTML source`,
+      `Supports headings (H1-H3), bold/italic emphasis, blockquotes, bullet lists, and paragraphs`,
+      `Pre-styled code formatting for inline code and multi-line fenced code blocks`,
+      `Client-side HTML entity escaping to prevent accidental script execution or XSS vulnerabilities`,
+      `One-click HTML markup copy for instant pasting into CMS platforms and email templates`,
     ],
     howToUse: {
-      name: `How to convert text content with Markdown to HTML Converter`,
+      name: `How to convert Markdown to HTML online`,
       steps: [
-        { name: `Prepare Your text conten`, text: `Navigate to /markdown-to-html on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your text content. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your text content. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed text content directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Write or Paste Markdown`, text: `Enter your Markdown syntax in the left editor panel.` },
+        { name: `Switch Preview Modes`, text: `Toggle between Preview to view rendered typography and Raw HTML to view the generated markup.` },
+        { name: `Review Semantic Elements`, text: `Verify header tags, bullet points, and code block formatting.` },
+        { name: `Copy Generated HTML`, text: `Click the copy button to transfer the compiled HTML code to your clipboard.` },
       ],
     },
     faqs: [
-      { question: `What exactly does Markdown to HTML Converter do?`, answer: `Markdown to HTML Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is Markdown to HTML Converter really free? Are there any hidden charges?`, answer: `Yes, Markdown to HTML Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you convert text content using Markdown to HTML Converter, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use Markdown to HTML Converter?`, answer: `No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use Markdown to HTML Converter on mobile devices or tablets?`, answer: `Yes, Markdown to HTML Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Does the compiler handle code blocks and inline code?`, answer: `Yes. Fenced code blocks are converted into styled pre and code containers, and backtick enclosed phrases are converted into inline code tags.` },
+      { question: `Can I paste the generated HTML directly into WordPress or Ghost?`, answer: `Yes. The output is clean, standard HTML that can be pasted directly into code or custom HTML blocks in WordPress, Ghost, Substack, or static site generators.` },
+      { question: `Does this tool sanitize HTML input?`, answer: `Yes. The compiler escapes basic HTML characters (<, >, &) before applying markdown transformations to prevent unwanted script injection.` },
+      { question: `Does it support markdown tables or task lists?`, answer: `Basic inline elements, headings, lists, blockquotes, and code blocks are fully supported. For advanced GitHub Flavored Markdown tables, standard HTML table syntax can also be inserted.` },
+      { question: `Is my draft sent to any external server?`, answer: `No. All markdown parsing and HTML compilation occur locally in your browser. Drafts and personal articles remain strictly on your machine.` },
     ],
-    seoDescription: `Private Markdown to HTML Converter: privately convert text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Free online Markdown to HTML converter with live preview. Convert GitHub Markdown into clean, semantic HTML code instantly. 100% private.`,
   },
   "markdown-to-pdf": {
     whatItIs: `Markdown to PDF Converter is a free online conversion tool that transforms text content from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
@@ -17993,43 +17822,40 @@ Speed Converter is built for privacy-conscious users who need reliable results w
     seoDescription: `Private Speed Converter: privately convert web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
   "sql-formatter": {
-    whatItIs: `SQL Formatter & Beautifier is a code and data formatting utility that beautifies, structures, and organizes your code and data for better readability and analysis. Unlike IDE plugins or desktop apps that require setup and configuration, this tool works instantly in your browser. All processing is local, making it safe for proprietary code, confidential data, and personal information.
+    whatItIs: `SQL Formatter & Beautifier is a client-side query formatting tool that restructures dense or unorganized SQL statements into clean, readable code. It supports 11 SQL dialects—including MySQL, PostgreSQL, SQLite, T-SQL, MariaDB, Oracle PL/SQL, IBM DB2, Amazon Redshift, Spark SQL, and Google BigQuery—with configurable indentation and keyword casing.
 
-## Why Choose SQL Formatter & Beautifier?
+## Clean Queries for Code Reviews and Debugging
 
-Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
+Messy SQL statements extracted from application logs, ORM queries, or analytics dashboards are hard to audit and prone to syntax errors. This formatter breaks long statements across logical clauses (\`SELECT\`, \`FROM\`, \`WHERE\`, \`GROUP BY\`, \`ORDER BY\`), aligns joins, and standardizes indentation so you can quickly inspect conditions, subqueries, and table references.
 
-## Who Is It For?
+## Dialect Support and Local Privacy
 
-SQL Formatter & Beautifier is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+Different database engines enforce distinct syntax nuances, from backtick identifiers in MySQL to dollar-quoting and window functions in PostgreSQL and BigQuery. The formatter dynamically applies language-specific parsing rules to keep your queries syntactically valid. Everything executes locally in your browser using client-side JavaScript, ensuring confidential database schemas, internal table names, and query values are never sent over the network.`,
     features: [
-      `Format code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Format queries across 11 dialects: Standard SQL, MySQL, PostgreSQL, SQLite, MariaDB, T-SQL, PL/SQL, DB2, Redshift, Spark, and BigQuery`,
+      `Adjustable indentation with 2-space or 4-space tab formatting`,
+      `Keyword casing control: transform SQL keywords to uppercase, lowercase, or preserve original casing`,
+      `Instant syntax validation with inline error diagnostics for malformed statements`,
+      `One-click copy to clipboard and downloadable .sql query files`,
+      `Runs entirely client-side without sending queries or schema structures to external servers`,
     ],
     howToUse: {
-      name: `How to format code and data with SQL Formatter & Beautifier`,
+      name: `How to format and beautify SQL queries`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /sql-formatter on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Paste SQL Query`, text: `Enter or paste your raw or unformatted SQL query into the input editor on the left.` },
+        { name: `Select Database Dialect`, text: `Choose your database engine from the dialect dropdown (e.g., PostgreSQL, MySQL, SQLite, BigQuery, or T-SQL).` },
+        { name: `Configure Spacing and Case`, text: `Set your preferred indentation (2 or 4 spaces) and choose whether to force keywords to UPPERCASE, lowercase, or keep as typed.` },
+        { name: `Copy or Download`, text: `Review the formatted query in the preview panel, then copy the result directly to your clipboard or download it as a .sql file.` },
       ],
     },
     faqs: [
-      { question: `What exactly does SQL Formatter & Beautifier do?`, answer: `SQL Formatter & Beautifier lets you format code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is SQL Formatter & Beautifier really free? Are there any hidden charges?`, answer: `Yes, SQL Formatter & Beautifier is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict formatters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you format code and data using SQL Formatter & Beautifier, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use SQL Formatter & Beautifier?`, answer: `No account, signup, or email is required. Simply open the page and start formating your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use SQL Formatter & Beautifier on mobile devices or tablets?`, answer: `Yes, SQL Formatter & Beautifier works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Which SQL dialects are supported by this formatter?`, answer: `The formatter supports Standard SQL, MySQL, PostgreSQL, SQLite, MariaDB, Transact-SQL (T-SQL / Microsoft SQL Server), Oracle PL/SQL, IBM DB2, Amazon Redshift, Spark SQL, and Google BigQuery.` },
+      { question: `Does formatting change the logic or output of my database query?`, answer: `No. The formatter only adjusts whitespace, indentation, line breaks, and optionally keyword casing. It preserves table names, field aliases, string literals, and comment blocks without altering execution logic.` },
+      { question: `Are my database queries, table names, or credentials sent to a server?`, answer: `No. All query parsing and indentation are executed strictly inside your browser session using a client-side JavaScript formatting engine. No SQL text, table identifiers, or database parameters are ever transmitted to any remote server.` },
+      { question: `Can the formatter handle complex subqueries and nested joins?`, answer: `Yes. The formatting engine parses nested parentheses, subqueries, CTEs (Common Table Expressions using WITH clauses), and complex JOIN conditions, indenting each hierarchical block to enhance visual clarity.` },
+      { question: `What happens if my SQL query contains a syntax error?`, answer: `If the query contains unclosed quotes, unbalanced parentheses, or syntax invalid for the selected dialect, the tool displays an inline error message pointing out the syntax issue so you can resolve it before copying.` },
     ],
-    seoDescription: `Private SQL Formatter & Beautifier: privately format code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Format and beautify SQL queries online across PostgreSQL, MySQL, SQLite, T-SQL, and BigQuery. 100% client-side privacy with configurable spacing and casing.`,
   },
   "ssc-mts-photo-resizer": {
     whatItIs: `SSC MTS Photo Resizer is a free online conversion tool that transforms exam documents from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
@@ -19989,43 +19815,39 @@ URL Encode is built for privacy-conscious users who need reliable results withou
     seoDescription: `Private URL Encode: privately process web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
   "url-encoder-decoder": {
-    whatItIs: `URL Encoder Decoder is a browser-based encoding and decoding utility for transforming text content between different formats. It converts data without sending it to any server, ensuring complete privacy. This tool is ideal for developers working with encrypted data, students learning data representation, and professionals handling encoded information.
+    whatItIs: `URL Encoder Decoder is a lightweight browser utility for converting text and web addresses between raw UTF-8 characters and percent-encoded URI strings. It allows developers, digital marketers, and API testers to quickly encode reserved query parameters or decode URL-encoded links.
 
-## Why Choose URL Encoder Decoder?
+## Percent-Encoding for Web Standards and APIs
 
-Encode or decode your URLs and URL query parameters instantly. 100% private.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your text content remain on your device from start to finish. No server uploads. No AI training. No data collection.
+URLs only support a limited set of ASCII characters. Special characters such as spaces, ampersands, slashes, question marks, and non-ASCII Unicode glyphs must be percent-encoded (e.g., converting spaces to \`%20\` or \`+\`, and \`&\` to \`%26\`) to prevent query parameters from breaking web routers and HTTP requests. This tool leverages browser-native encoding standards to ensure full compliance with RFC 3986.
 
-## Who Is It For?
+## Private Client-Side Transformations
 
-URL Encoder Decoder is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+Whether you are debugging OAuth redirect URIs, inspecting tracking parameters in analytics URLs, or decoding access tokens contained inside query strings, data privacy is paramount. Because URL Encoder Decoder operates entirely within your browser, your links, tokens, and parameter values never touch an external server or logging system.`,
     features: [
-      `Encode and decode text content entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Two-way conversion: percent-encode raw text and decode percent-encoded URLs with one click`,
+      `RFC 3986 compliant encoding using browser-native URI components`,
+      `Handles complex query strings, Unicode characters, and nested URL parameters`,
+      `Real-time error notifications when decoding malformed or truncated percent-escape sequences`,
+      `Quick clear and one-click copy to clipboard with status confirmation`,
+      `100% client-side execution keeping confidential tokens and API endpoints private`,
     ],
     howToUse: {
-      name: `How to encode/decode text content with URL Encoder Decoder`,
+      name: `How to encode and decode URLs and parameters`,
       steps: [
-        { name: `Prepare Your text conten`, text: `Navigate to /url-encoder-decoder on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your text content. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your text content. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed text content directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Enter URL or Query String`, text: `Paste your web address, query parameter, or encoded text into the input field.` },
+        { name: `Choose Action`, text: `Click "URL Encode" to turn spaces and reserved characters into percent codes, or "URL Decode" to restore readable text.` },
+        { name: `Verify and Copy`, text: `Check the transformed string in the Result box and click "Copy Result" to copy it to your clipboard.` },
       ],
     },
     faqs: [
-      { question: `What exactly does URL Encoder Decoder do?`, answer: `URL Encoder Decoder lets you encode/decode text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is URL Encoder Decoder really free? Are there any hidden charges?`, answer: `Yes, URL Encoder Decoder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict codecs after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you encode/decode text content using URL Encoder Decoder, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use URL Encoder Decoder?`, answer: `No account, signup, or email is required. Simply open the page and start encode/decodeing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use URL Encoder Decoder on mobile devices or tablets?`, answer: `Yes, URL Encoder Decoder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `What is the difference between URL encoding and URL decoding?`, answer: `URL encoding (percent-encoding) replaces unsafe or reserved characters with a percent sign followed by their two-digit hexadecimal ASCII representation (e.g., space becomes %20). URL decoding reverses this process, converting hexadecimal escape codes back into human-readable characters.` },
+      { question: `Why do query parameters need to be encoded?`, answer: `Characters like '&', '=', '?', and '/' have structural meaning in HTTP URLs. If parameter values contain these characters without percent-encoding, web servers and routers misinterpret them as parameter delimiters, causing broken requests or application errors.` },
+      { question: `Does this tool use encodeURI or encodeURIComponent?`, answer: `This tool uses encodeURIComponent, which encodes all characters with special meaning in URI query components (including /, ?, #, &, and =). This ensures values intended for query strings can be safely passed without syntax collisions.` },
+      { question: `Are my URLs, query tokens, or API keys stored anywhere?`, answer: `No. All conversions happen entirely in your local browser runtime. No data is sent over the network, logged in server analytics, or saved to external databases.` },
+      { question: `What causes an 'Invalid URI characters' error during decoding?`, answer: `This error occurs if the input contains a percent sign '%' not followed by two valid hexadecimal digits, or if a multi-byte UTF-8 sequence is truncated midway through the encoded string.` },
     ],
-    seoDescription: `Private URL Encoder Decoder: privately process text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Encode and decode URLs and query parameters online with RFC 3986 compliance. Convert spaces to %20 and decode percent-encoded links securely in your browser.`,
   },
   "url-opener": {
     whatItIs: `URL Opener is a versatile web tool that helps you work with web data efficiently. Unlike online services that track your usage and collect data, this tool processes everything locally in your browser. It is designed to provide a fast, private, and straightforward solution for common web data tasks without requiring signups, payments, or software installations.
@@ -20184,43 +20006,40 @@ URL Shortener is built for privacy-conscious users who need reliable results wit
     seoDescription: `Private URL Shortener: privately process web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
   "user-agent-parser": {
-    whatItIs: `User Agent Parser is an extraction and analysis tool that reads, parses, and displays information from your code and data. It runs entirely in your browser, so your files remain private. This tool is designed for professionals who need to inspect code and data data, extract hidden information, or analyze content without specialized software.
+    whatItIs: `User Agent Parser is a client-side diagnostic utility that dissects browser User-Agent strings to identify browser engines, operating systems, version numbers, and device form factors. It automatically inspects your active session and also allows you to parse custom strings from server access logs.
 
-## Why Choose User Agent Parser?
+## Deciphering Complex HTTP User-Agent Headers
 
-Parse any User Agent string to detect Browser, OS, and Engine details instantly.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
+HTTP \`User-Agent\` headers frequently include legacy tokens (such as \`Mozilla/5.0\` or \`like Gecko\`) kept for historical compatibility across web standards. This parser cuts through the legacy noise, identifying the genuine browser (Chrome, Safari, Firefox, Edge, or Opera), rendering engine (WebKit/Blink, Gecko, Trident), and operating system (Windows, macOS, Linux, iOS, Android). It also flags automated crawlers and search engine bots.
 
-## Who Is It For?
+## Client Environment and Hardware Diagnostics
 
-User Agent Parser is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+Alongside the User-Agent breakdown, the tool reads system metrics exposed to the browser runtime—including display screen resolution, device pixel ratio, CPU logical cores, approximate device memory (RAM), language preferences, and cookie support. You can export the entire diagnostic profile as a structured JSON object with a single click.`,
     features: [
-      `Read and extract code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Instant User-Agent parsing: identifies browser, version, operating system, and rendering engine`,
+      `Device classification: distinguishes between desktop computers, mobile phones, tablets, and search engine crawler bots`,
+      `Client environment metrics: displays screen resolution, pixel ratio, CPU cores, RAM, and browser language`,
+      `Custom string analysis: paste User-Agent headers from web server logs or analytics reports`,
+      `Export full system specifications and parsed metadata as structured JSON`,
+      `100% client-side execution keeping your device identifiers and session details private`,
     ],
     howToUse: {
-      name: `How to read code and data with User Agent Parser`,
+      name: `How to parse User-Agent strings and view client specifications`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /user-agent-parser on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Inspect Current Browser`, text: `Open the tool to automatically view the parsed breakdown of your current browser, operating system, and hardware environment.` },
+        { name: `Enter Custom User-Agent (Optional)`, text: `To examine a string from access logs or another device, paste the raw User-Agent header into the input box.` },
+        { name: `Review Breakdown`, text: `Examine detected properties, including browser family, version, OS release, rendering engine, and device type.` },
+        { name: `Copy Structured JSON`, text: `Click "Copy Specs JSON" to copy the parsed attributes and client metrics to your clipboard for debugging or reporting.` },
       ],
     },
     faqs: [
-      { question: `What exactly does User Agent Parser do?`, answer: `User Agent Parser lets you read code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is User Agent Parser really free? Are there any hidden charges?`, answer: `Yes, User Agent Parser is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you read code and data using User Agent Parser, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use User Agent Parser?`, answer: `No account, signup, or email is required. Simply open the page and start reading your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use User Agent Parser on mobile devices or tablets?`, answer: `Yes, User Agent Parser works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `What information does a User-Agent string contain?`, answer: `A standard User-Agent header typically includes the browser name and version, the host operating system and architecture, the rendering engine, and compatibility strings retained for legacy web server compatibility.` },
+      { question: `Can this tool detect web scrapers and crawler bots?`, answer: `Yes. If a user-agent string matches patterns for known web spiders and search crawlers (such as Googlebot, Bingbot, or custom scraper agents), the tool flags the device category as Crawler Bot.` },
+      { question: `Why do modern browser User-Agent strings still say 'Mozilla/5.0' and 'like Gecko'?`, answer: `In the early days of the web, servers served different content depending on whether the browser was Netscape/Mozilla. Later browsers adopted 'Mozilla/5.0' and 'like Gecko' compatibility tokens to ensure legacy web servers would deliver modern HTML and CSS stylesheets.` },
+      { question: `Is my browser fingerprint or IP address sent to any server?`, answer: `No. All header parsing and hardware specification checks execute entirely in your local browser window. No diagnostic data, IP addresses, or device fingerprints are transmitted to SopKit servers.` },
+      { question: `Can I parse User-Agent strings from Nginx or Apache server logs?`, answer: `Yes. Simply copy the user-agent string from your server log entry and paste it into the input box to instantly identify the visitor's browser, OS version, and device type.` },
     ],
-    seoDescription: `Private User Agent Parser: privately extract code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Parse User-Agent strings online to detect browser, OS version, engine, and device type. Inspect hardware specs and export JSON securely in your browser.`,
   },
   "utm-builder": {
     whatItIs: `UTM Builder is a versatile web tool that helps you work with web data efficiently. Unlike online services that track your usage and collect data, this tool processes everything locally in your browser. It is designed to provide a fast, private, and straightforward solution for common web data tasks without requiring signups, payments, or software installations.
@@ -20262,43 +20081,39 @@ UTM Builder is built for privacy-conscious users who need reliable results witho
     seoDescription: `Private UTM Builder: privately process web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
   "uuid-generator": {
-    whatItIs: `UUID/GUID Generator is a creative online tool that helps you generate code and data instantly. Unlike SaaS platforms that require accounts, subscriptions, or data collection, this generator processes everything on your device. It is designed for content creators, marketers, students, and professionals who need quick, high-quality code and data without compromising their privacy or spending money on premium tools.
+    whatItIs: `UUID/GUID Generator is a client-side tool for generating cryptographically secure Version 4 Universally Unique Identifiers (UUIDs / GUIDs). Built on the browser-native Web Cryptography API, it produces random 128-bit identifiers compliant with RFC 4122.
 
-## Why Choose UUID/GUID Generator?
+## Cryptographically Secure Random Identifiers
 
-Generate unique UUID v4 and GUID strings instantly for your applications and databases.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
+Unlike pseudorandom generators that rely on timestamp seeds or simple PRNGs, this tool uses \`crypto.randomUUID()\` backed by your operating system's entropy pool. Every generated UUID v4 has 122 bits of cryptographically strong randomness, making the probability of generating a duplicate identifier practically zero (less than one in several quintillion).
 
-## Who Is It For?
+## Standard RFC 4122 v4 Format
 
-UUID/GUID Generator is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical format (e.g., \`xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx\`), where the 13th character indicates version 4 and the 17th character indicates variant 1. These identifiers are immediately ready to use as primary keys in PostgreSQL or MongoDB, distributed transaction tracking IDs, session tokens, or API test payloads.`,
     features: [
-      `Generate code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Generates standard RFC 4122 Version 4 UUIDs (GUIDs) with 122 bits of cryptographic entropy`,
+      `Uses browser-native Web Cryptography API (crypto.randomUUID) with fallback support`,
+      `Outputs canonical 36-character hexadecimal format with hyphens (8-4-4-4-12)`,
+      `Instant generation with one-click copy to clipboard and toast feedback`,
+      `Zero network requests: generated entirely in browser memory for complete privacy`,
+      `Ideal for database primary keys, distributed tracing, idempotency keys, and testing`,
     ],
     howToUse: {
-      name: `How to generate code and data with UUID/GUID Generator`,
+      name: `How to generate random UUID v4 identifiers`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /uuid-generator on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Generate Identifier`, text: `Click the "Generate UUID" button to produce a fresh, cryptographically secure RFC 4122 v4 UUID.` },
+        { name: `Inspect Output`, text: `Verify the generated 36-character UUID string in the output field.` },
+        { name: `Copy to Clipboard`, text: `Click "Copy" to immediately copy the generated UUID to your clipboard for your database, API, or codebase.` },
       ],
     },
     faqs: [
-      { question: `What exactly does UUID/GUID Generator do?`, answer: `UUID/GUID Generator lets you generate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is UUID/GUID Generator really free? Are there any hidden charges?`, answer: `Yes, UUID/GUID Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you generate code and data using UUID/GUID Generator, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use UUID/GUID Generator?`, answer: `No account, signup, or email is required. Simply open the page and start generateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use UUID/GUID Generator on mobile devices or tablets?`, answer: `Yes, UUID/GUID Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `What is a Version 4 UUID (GUID)?`, answer: `A Version 4 UUID (Universally Unique Identifier) is a 128-bit identifier generated using random or pseudo-random numbers in accordance with RFC 4122. In Microsoft ecosystems, it is commonly referred to as a GUID (Globally Unique Identifier).` },
+      { question: `How likely is a collision with a UUID v4?`, answer: `The collision probability is vanishingly small. Because UUID v4 contains 122 bits of random entropy, you would need to generate approximately 2.71 quintillion UUIDs before having a 50% chance of a single collision.` },
+      { question: `How are these UUIDs generated securely?`, answer: `The generator utilizes the browser's crypto.randomUUID() method, which draws cryptographically secure random values directly from the underlying operating system's entropy pool.` },
+      { question: `Are the generated UUIDs sent or logged on any server?`, answer: `No. UUID generation is executed entirely within your browser memory. SopKit never transmits, logs, or stores generated identifiers on remote servers.` },
+      { question: `Can I use these UUIDs as database primary keys?`, answer: `Yes. RFC 4122 v4 UUIDs are widely used as primary keys in databases like PostgreSQL (native UUID type), MySQL, SQL Server (UNIQUEIDENTIFIER), and NoSQL databases like MongoDB.` },
     ],
-    seoDescription: `Private UUID/GUID: privately generate code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Generate cryptographically secure RFC 4122 UUID v4 and GUID strings online. 100% client-side privacy using native Web Crypto for databases and APIs.`,
   },
   "video-converter": {
     whatItIs: `Video Converter is a free online conversion tool that transforms videos from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
@@ -21432,43 +21247,40 @@ XML to JSON Converter is built for privacy-conscious users who need reliable res
     seoDescription: `Private XML to JSON Converter: privately convert code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
   "yaml-to-json-converter": {
-    whatItIs: `YAML to JSON Converter is a free online conversion tool that transforms code and data from one format to another entirely within your browser. Unlike cloud-based converters that upload your files to remote servers, this tool processes everything locally using your device's processing power, ensuring your data never leaves your computer. Whether you need to change file formats for compatibility, reduce file sizes for email attachments, or prepare assets for different platforms, this converter handles the task instantly without compromising quality.
+    whatItIs: `YAML to JSON Converter is a client-side developer utility for converting YAML configuration files, Kubernetes manifests, and Docker Compose definitions into structured JSON. Powered by the js-yaml parsing engine, it processes your data in browser memory without sending configuration structures to external servers.
 
-## Why Choose YAML to JSON Converter?
+## YAML to JSON Interoperability
 
-Convert YAML configurations to clean JSON structures instantly. Safe & secure.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
+While YAML is popular for human-readable configurations (such as GitHub Actions workflows, OpenAPI specifications, and Helm values), most APIs, web applications, and database engines consume JSON. This tool parses YAML mappings, lists, scalar types, multi-line strings, and nested hierarchies into formatted 2-space indented JSON ready for API payloads or config ingestion.
 
-## Who Is It For?
+## Syntax Validation and Error Diagnostics
 
-YAML to JSON Converter is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+YAML relies heavily on strict indentation and syntax rules. When syntax errors occur—such as mismatched tabs, bad indentation, or unescaped colons—the converter alerts you immediately with exact error messages so you can fix issues before deploying configurations. Converted output can be copied directly or downloaded as a .json file.`,
     features: [
-      `Convert code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Client-side YAML parsing powered by js-yaml into clean 2-space indented JSON`,
+      `Supports complex YAML data structures: nested objects, arrays, anchors, and multi-line strings`,
+      `Real-time syntax validation with line-level error diagnostics for malformed YAML`,
+      `One-click clipboard copy and direct .json file download`,
+      `Preset template included for quick syntax reference and testing`,
+      `100% private in-browser conversion: your secrets, environment variables, and manifests never leave your machine`,
     ],
     howToUse: {
-      name: `How to convert code and data with YAML to JSON Converter`,
+      name: `How to convert YAML to JSON online`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /yaml-to-json-converter on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Input YAML Content`, text: `Paste your YAML configuration, Docker Compose file, or Kubernetes manifest into the editor on the left.` },
+        { name: `Inspect Real-Time Conversion`, text: `The tool automatically parses your YAML and renders the formatted JSON in the right-hand panel.` },
+        { name: `Check for Syntax Warnings`, text: `If your YAML contains indentation or syntax errors, check the error message below the editor to resolve the issue.` },
+        { name: `Copy or Download JSON`, text: `Click "Copy JSON" to copy the output to your clipboard, or click "Download JSON" to save the converted file to your device.` },
       ],
     },
     faqs: [
-      { question: `What exactly does YAML to JSON Converter do?`, answer: `YAML to JSON Converter lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is YAML to JSON Converter really free? Are there any hidden charges?`, answer: `Yes, YAML to JSON Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you convert code and data using YAML to JSON Converter, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use YAML to JSON Converter?`, answer: `No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use YAML to JSON Converter on mobile devices or tablets?`, answer: `Yes, YAML to JSON Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `Does this YAML to JSON converter support nested arrays and objects?`, answer: `Yes. The converter fully parses nested associative arrays (mappings), sequence lists, boolean flags, numbers, null values, and multi-line folded or literal strings.` },
+      { question: `How does the tool handle indentation errors in YAML?`, answer: `Because YAML relies strictly on spaces rather than tabs, formatting discrepancies will trigger an inline syntax error message pointing out the unexpected token or incorrect indentation level.` },
+      { question: `Are my configuration files, API tokens, or server secrets sent to a remote server?`, answer: `No. All parsing and conversion are handled entirely in your browser using client-side JavaScript. No configuration data or credentials ever leave your computer.` },
+      { question: `Can I convert Docker Compose and Kubernetes manifests?`, answer: `Yes. You can paste docker-compose.yml files, Kubernetes pod/service definitions, Helm values, and GitHub Actions workflow files to convert them to valid JSON.` },
+      { question: `What JSON formatting standard does the output follow?`, answer: `The output is standard RFC 8259 compliant JSON, formatted with clean 2-space indentation for optimal readability and developer review.` },
     ],
-    seoDescription: `Private YAML to JSON Converter: privately convert code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Convert YAML to JSON online with real-time syntax checking. Transform Kubernetes, Docker Compose, and CI/CD configs to JSON securely in your browser.`,
   },
   "youtube-channel-age-checker": {
     whatItIs: `YouTube Channel Age Checker is a creative online tool that helps you generate YouTube content instantly. Unlike SaaS platforms that require accounts, subscriptions, or data collection, this generator processes everything on your device. It is designed for content creators, marketers, students, and professionals who need quick, high-quality YouTube content without compromising their privacy or spending money on premium tools.
@@ -23822,43 +23634,50 @@ Few-Shot Prompt Formatter is built for privacy-conscious users who need reliable
     seoDescription: `Private Few-Shot Prompt Formatter: privately convert AI prompts entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
   },
   "ffmpeg-command-generator": {
-    whatItIs: `FFmpeg Command Generator is a browser-based compression utility designed to reduce the file size of your code and data while preserving quality. It runs completely on your device — nothing is uploaded to any server. This makes it ideal for preparing code and data for websites, email attachments, document portals with strict upload limits, or simply saving storage space on your device. You can adjust compression levels to find the perfect balance between file size and visual fidelity.
+    whatItIs: `FFmpeg Command Generator is an interactive developer tool that builds syntactically accurate FFmpeg terminal commands for common video and audio workflows. Instead of memorizing complex CLI flags, you can configure encoding parameters through an intuitive interface and generate ready-to-run terminal commands.
 
-## Why Choose FFmpeg Command Generator?
+## Nine Optimized Audio and Video Workflows
 
-Generate FFmpeg commands for video conversion, compression, trimming, GIF creation, audio extraction, and common encoding workflows with codec, bitrate, resolution, and filter controls.. What sets SopKit apart is our commitment to privacy-focused, 100% client-side processing. Every competing tool in the market uploads your files to their servers — iPullif, Smallpdf, iLovePDF, CloudConvert, and countless others store, process, and potentially mine your data for AI training or data selling. SopKit does none of this. Your code and data remain on your device from start to finish. No server uploads. No AI training. No data collection.
+FFmpeg is the industry standard for media processing, but its extensive flag library can be daunting. This generator supports nine dedicated workflows:
+- **Transcode & Convert:** Re-encode between H.264, HEVC (H.265), VP9, AV1, ProRes, or use stream copy (\`-c:v copy\`).
+- **Compress Video:** Dial in CRF quality levels (0–51) and CPU presets (\`ultrafast\` to \`veryslow\`) to balance compression speed with file size.
+- **Trim & Cut:** Fast input seeking (\`-ss\`) with duration (\`-t\`) for lossless cutting without re-encoding.
+- **Extract Audio:** Strip video streams (\`-vn\`) and encode to AAC, MP3, Opus, or copy raw audio tracks.
+- **High-Quality GIFs:** Two-pass GIF encoding using \`palettegen\` and \`paletteuse\` with Lanczos scaling to eliminate color banding.
+- **Resize & Scale:** Adjust output resolution maintaining proportional aspect ratios (\`scale=1280:-2\`).
+- **Mute Video:** Remove audio streams cleanly with \`-an\`.
+- **Frame Capture:** Extract a single still frame at a specific timestamp (\`-frames:v 1\`).
+- **Concatenate:** Merge multiple video files using the FFmpeg concat demuxer and a generated playlist file.
 
-## Who Is It For?
+## Interactive Parameter Breakdown
 
-FFmpeg Command Generator is built for privacy-conscious users who need reliable results without compromising their data. Whether you are a professional working with confidential documents, a student preparing academic submissions, or a casual user who simply values their privacy, this tool delivers the functionality you need without tracking, ads, data harvesting, or AI model training. It is also ideal for developers who need to process sensitive data without exposing it to third-party infrastructure.`,
+Every generated command includes an itemized breakdown explaining what each flag does—such as \`-crf\`, \`-preset\`, \`-vf\`, \`-c:a\`, and \`-safe 0\`. You learn the underlying mechanics of FFmpeg while getting reliable commands for your scripts, CI pipelines, and terminal workflows. Everything runs client-side in your browser without tracking or uploads.`,
     features: [
-      `Compress code and data entirely in your browser — zero data leaves your device`,
-      `No server uploads: your data is never stored, logged, or used for AI training`,
-      `100% client-side sandbox — works offline after the first page load`,
-      `No registration, no account creation, no email collection of any kind`,
-      `Unlimited usage with zero daily caps, rate limits, or premium paywalls`,
-      `Instant local execution — no network upload delays or server queues`,
-      `No watermarks, no ads, no promotional branding added to your output`,
-      `Free forever with no trials, no hidden charges, and no subscription upsells`,
+      `Generates commands for 9 workflows: Convert, Compress, Trim, Extract Audio, Make GIF, Resize, Mute, Frame Capture, and Concatenate`,
+      `Supports major video codecs (H.264, H.265/HEVC, VP9, AV1, ProRes) and audio formats (AAC, MP3, Opus, M4A)`,
+      `Precise CRF quality control (0–51) with encoding speed presets from ultrafast to veryslow`,
+      `Two-pass high-fidelity GIF creation using palettegen and paletteuse color quantization`,
+      `Flag breakdown table explaining the exact function of every parameter in the generated command`,
+      `100% private in-browser generator: zero terminal history or media filenames uploaded to servers`,
     ],
     howToUse: {
-      name: `How to compress code and data with FFmpeg Command Generator`,
+      name: `How to generate FFmpeg commands for media encoding`,
       steps: [
-        { name: `Prepare Your code and dat`, text: `Navigate to /ffmpeg-command-generator on SopKit. The tool loads entirely in your browser, so there is nothing to install or download before you begin.` },
-        { name: `Input Your Data`, text: `Use the interface provided on this page to input your code and data. Depending on the tool, this may involve typing, pasting text, selecting a file, or entering a URL. All processing is done locally.` },
-        { name: `Configure Settings`, text: `Adjust any available settings like output format, quality level, or specific options to customize the result to your needs. These adjustments also run client-side.` },
-        { name: `Execute and Preview`, text: `Click the action button to process your code and data. Results appear instantly since there is no network upload or server-side queue. Preview the output to verify it meets your requirements.` },
-        { name: `Save Your Result`, text: `Download the processed code and data directly to your device. Your original data is not stored anywhere — once you close the page, nothing remains. Repeat the process as many times as you need.` },
+        { name: `Select Workflow`, text: `Choose the operation you want to perform: Convert, Compress, Trim, Extract Audio, Make GIF, Resize, Mute, Frame Screenshot, or Concatenate.` },
+        { name: `Set File Names`, text: `Enter your input filename (e.g., input.mp4) or list of clips if you are merging files.` },
+        { name: `Configure Encoding Flags`, text: `Adjust codecs, CRF rate factors, speed presets, audio bitrates, or trim timestamps to suit your project requirements.` },
+        { name: `Review Flag Explanations`, text: `Check the command explanation table to understand the specific role of each FFmpeg argument.` },
+        { name: `Copy Command`, text: `Click the copy button and paste the generated command into your terminal or shell script.` },
       ],
     },
     faqs: [
-      { question: `What exactly does FFmpeg Command Generator do?`, answer: `FFmpeg Command Generator lets you compress code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant.` },
-      { question: `Is FFmpeg Command Generator really free? Are there any hidden charges?`, answer: `Yes, FFmpeg Command Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation.` },
-      { question: `How does SopKit protect my privacy when I use this tool?`, answer: `SopKit operates on a 100% client-side sandbox model. When you compress code and data using FFmpeg Command Generator, your data is processed locally in your browser's JavaScript engine. Nothing is uploaded to any server, logged, stored, cached, or transmitted over the network. This is fundamentally different from tools like iLovePDF, Smallpdf, or CloudConvert, which require uploading your files to their infrastructure where they can be accessed, analyzed, or breached.` },
-      { question: `Do I need to create an account or sign up to use FFmpeg Command Generator?`, answer: `No account, signup, or email is required. Simply open the page and start compressing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this.` },
-      { question: `Can I use FFmpeg Command Generator on mobile devices or tablets?`, answer: `Yes, FFmpeg Command Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load.` },
+      { question: `What is the CRF setting in FFmpeg, and what value should I use?`, answer: `CRF (Constant Rate Factor) controls video quality in x264 and x265 encoders. The scale ranges from 0 (lossless) to 51 (worst quality). For x264, a CRF between 18 and 23 provides visually lossless compression with sensible file sizes. Higher values (24-28) yield significantly smaller files suitable for web streaming.` },
+      { question: `Why does two-pass palettegen make animated GIFs look better?`, answer: `Standard GIF encoders use a generic 256-color palette that causes severe color banding and dithering artifacts. Two-pass GIF generation first analyzes the entire video clip to create a custom 256-color palette (palettegen), then maps pixels against this palette (paletteuse) for smooth gradients and crisp visuals.` },
+      { question: `What is the difference between re-encoding and stream copy (-c copy)?`, answer: `Stream copy (-c copy or -c:v copy) skips decoding and re-encoding entirely, packaging existing compressed frames into a new container. It runs almost instantaneously and preserves 100% original quality, but it cannot apply video filters like scaling or color adjustments.` },
+      { question: `Why use fast seeking with -ss before the -i input flag?`, answer: `Placing -ss before -i instructs FFmpeg to seek using keyframes (demuxer seeking) without decoding preceding frames, jumping directly to the timestamp in milliseconds. Placing -ss after -i decodes every frame up to the timestamp, which is significantly slower on large media files.` },
+      { question: `Does this tool upload or process my video files online?`, answer: `No. This tool generates shell commands only. Your video files remain on your local computer, and the commands are executed directly in your local terminal where FFmpeg is installed.` },
     ],
-    seoDescription: `Private FFmpeg Command: privately compress code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.`,
+    seoDescription: `Generate FFmpeg commands online for video compression, conversion, trimming, and two-pass GIFs. Includes interactive flag explanations and codec presets.`,
   },
   "image-prompt-extender": {
     whatItIs: `AI Image Prompt Extender is a versatile web tool that helps you work with AI prompts efficiently. Unlike online services that track your usage and collect data, this tool processes everything locally in your browser. It is designed to provide a fast, private, and straightforward solution for common AI prompts tasks without requiring signups, payments, or software installations.
