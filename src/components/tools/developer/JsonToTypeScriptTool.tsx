@@ -262,7 +262,7 @@ export default function JsonToTypeScriptTool() {
                   variant="outline"
                   size="sm"
                   onClick={copyToClipboard}
-                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-lg"
                 >
                   {copied ? (
                     <Check className="w-3 h-3 text-emerald-500" />
@@ -275,7 +275,7 @@ export default function JsonToTypeScriptTool() {
                   variant="outline"
                   size="sm"
                   onClick={downloadCode}
-                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-lg"
                 >
                   <Download className="w-3 h-3" /> Save .d.ts
                 </Button>

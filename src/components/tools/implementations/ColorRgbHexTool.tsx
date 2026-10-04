@@ -176,7 +176,7 @@ export default function ColorRgbHexTool({
               {hexVal}
             </span>
             <span
-              className={`text-xs font-mono font-medium px-2.5 py-1 rounded-md backdrop-blur-md ${
+              className={`text-xs font-mono font-medium px-2.5 py-1 rounded-lg backdrop-blur-md ${
                 isLight
                   ? "bg-black/10 text-slate-800"
                   : "bg-white/20 text-white"

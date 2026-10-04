@@ -499,7 +499,7 @@ export default function ImageCompressorTool() {
                         <div className="flex items-center gap-1 bg-muted/40 p-0.5 rounded-lg border border-border/60 text-xs">
                             <button
                                 onClick={() => setViewMode("side")}
-                                className={`px-2 py-0.5 rounded-md transition-all ${
+                                className={`px-2 py-0.5 rounded-lg transition-all ${
                                     viewMode === "side" ? "bg-background text-foreground shadow-xs font-medium" : "text-muted-foreground"
                                 }`}
                             >
@@ -507,7 +507,7 @@ export default function ImageCompressorTool() {
                             </button>
                             <button
                                 onClick={() => setViewMode("compressed")}
-                                className={`px-2 py-0.5 rounded-md transition-all ${
+                                className={`px-2 py-0.5 rounded-lg transition-all ${
                                     viewMode === "compressed" ? "bg-background text-foreground shadow-xs font-medium" : "text-muted-foreground"
                                 }`}
                             >

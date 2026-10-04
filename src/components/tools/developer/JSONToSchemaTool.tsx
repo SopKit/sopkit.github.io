@@ -162,7 +162,7 @@ export default function JSONToSchemaTool() {
               variant={draftVersion === "draft-07" ? "secondary" : "ghost"}
               size="sm"
               onClick={() => setDraftVersion("draft-07")}
-              className="h-7 text-xs font-semibold rounded-md"
+              className="h-7 text-xs font-semibold rounded-lg"
             >
               Draft-07
             </Button>
@@ -170,7 +170,7 @@ export default function JSONToSchemaTool() {
               variant={draftVersion === "draft-04" ? "secondary" : "ghost"}
               size="sm"
               onClick={() => setDraftVersion("draft-04")}
-              className="h-7 text-xs font-semibold rounded-md"
+              className="h-7 text-xs font-semibold rounded-lg"
             >
               Draft-04
             </Button>
@@ -253,7 +253,7 @@ export default function JSONToSchemaTool() {
                   variant="outline"
                   size="sm"
                   onClick={copyToClipboard}
-                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-lg"
                 >
                   {copied ? (
                     <Check className="w-3 h-3 text-emerald-500" />
@@ -266,7 +266,7 @@ export default function JSONToSchemaTool() {
                   variant="outline"
                   size="sm"
                   onClick={downloadSchema}
-                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-lg"
                 >
                   <Download className="w-3 h-3" /> Save Schema
                 </Button>

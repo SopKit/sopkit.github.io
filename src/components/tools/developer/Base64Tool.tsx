@@ -152,7 +152,7 @@ export default function Base64Tool({
             variant={mode === "encode" ? "secondary" : "ghost"}
             size="sm"
             onClick={() => handleModeChange("encode")}
-            className="h-7 text-xs font-semibold rounded-md"
+            className="h-7 text-xs font-semibold rounded-lg"
           >
             Encode Text
           </Button>
@@ -160,7 +160,7 @@ export default function Base64Tool({
             variant={mode === "decode" ? "secondary" : "ghost"}
             size="sm"
             onClick={() => handleModeChange("decode")}
-            className="h-7 text-xs font-semibold rounded-md"
+            className="h-7 text-xs font-semibold rounded-lg"
           >
             Decode Base64
           </Button>
@@ -168,7 +168,7 @@ export default function Base64Tool({
             variant={mode === "file-encode" ? "secondary" : "ghost"}
             size="sm"
             onClick={() => handleModeChange("file-encode")}
-            className="h-7 text-xs font-semibold rounded-md"
+            className="h-7 text-xs font-semibold rounded-lg"
           >
             Encode File
           </Button>
@@ -289,7 +289,7 @@ export default function Base64Tool({
                   variant="outline"
                   size="sm"
                   onClick={copyToClipboard}
-                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-lg"
                 >
                   {copied ? (
                     <Check className="w-3 h-3 text-emerald-500" />
@@ -302,7 +302,7 @@ export default function Base64Tool({
                   variant="outline"
                   size="sm"
                   onClick={downloadResult}
-                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-lg"
                 >
                   <Download className="w-3 h-3" /> Save
                 </Button>
