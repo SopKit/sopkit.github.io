@@ -156,7 +156,7 @@ export default function JSONMinifierTool() {
           </Button>
 
           {stats && stats.ratio > 0 && (
-            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-xs font-mono font-medium">
+            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-xs font-mono font-medium">
               <Zap className="w-3 h-3" /> Saved {stats.ratio}% (
               {formatFileSize(stats.original)} → {formatFileSize(stats.minified)})
             </span>
@@ -220,7 +220,7 @@ export default function JSONMinifierTool() {
                   variant="outline"
                   size="sm"
                   onClick={copyToClipboard}
-                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-lg"
                 >
                   {copied ? (
                     <Check className="w-3 h-3 text-emerald-500" />
@@ -233,7 +233,7 @@ export default function JSONMinifierTool() {
                   variant="outline"
                   size="sm"
                   onClick={downloadJSON}
-                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-lg"
                 >
                   <Download className="w-3 h-3" /> Save
                 </Button>

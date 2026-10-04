@@ -117,7 +117,7 @@ export default function HtmlEntityCodecTool() {
               variant={mode === "encode" ? "secondary" : "ghost"}
               size="sm"
               onClick={() => setMode("encode")}
-              className="h-7 text-xs font-semibold rounded-md"
+              className="h-7 text-xs font-semibold rounded-lg"
             >
               Encode Entities
             </Button>
@@ -125,7 +125,7 @@ export default function HtmlEntityCodecTool() {
               variant={mode === "decode" ? "secondary" : "ghost"}
               size="sm"
               onClick={() => setMode("decode")}
-              className="h-7 text-xs font-semibold rounded-md"
+              className="h-7 text-xs font-semibold rounded-lg"
             >
               Decode Entities
             </Button>
@@ -137,7 +137,7 @@ export default function HtmlEntityCodecTool() {
                 variant={entityType === "named" ? "secondary" : "ghost"}
                 size="sm"
                 onClick={() => setEntityType("named")}
-                className="h-7 text-xs font-semibold rounded-md"
+                className="h-7 text-xs font-semibold rounded-lg"
               >
                 Named (&amp;amp;)
               </Button>
@@ -145,7 +145,7 @@ export default function HtmlEntityCodecTool() {
                 variant={entityType === "numeric" ? "secondary" : "ghost"}
                 size="sm"
                 onClick={() => setEntityType("numeric")}
-                className="h-7 text-xs font-semibold rounded-md"
+                className="h-7 text-xs font-semibold rounded-lg"
               >
                 Numeric (&amp;#38;)
               </Button>
@@ -223,7 +223,7 @@ export default function HtmlEntityCodecTool() {
                   variant="outline"
                   size="sm"
                   onClick={copyToClipboard}
-                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-lg"
                 >
                   {copied ? (
                     <Check className="w-3 h-3 text-emerald-500" />
@@ -236,7 +236,7 @@ export default function HtmlEntityCodecTool() {
                   variant="outline"
                   size="sm"
                   onClick={downloadCode}
-                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-md"
+                  className="h-6 text-[10px] font-mono gap-1 px-2 rounded-lg"
                 >
                   <Download className="w-3 h-3" /> Save
                 </Button>

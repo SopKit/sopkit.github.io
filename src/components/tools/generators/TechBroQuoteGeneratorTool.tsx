@@ -174,7 +174,7 @@ export default function TechBroQuoteGeneratorTool() {
 					</div>
 
 					<div className="flex items-center gap-2">
-						<span className="px-2 py-0.5 rounded-md bg-zinc-800 text-[10px] font-mono text-emerald-400 border border-emerald-500/30">
+						<span className="px-2 py-0.5 rounded-lg bg-zinc-800 text-[10px] font-mono text-emerald-400 border border-emerald-500/30">
 							{selectedPersona.jargonRating}
 						</span>
 					</div>
@@ -196,19 +196,19 @@ export default function TechBroQuoteGeneratorTool() {
 						<div className="flex items-center gap-1 bg-zinc-900 p-0.5 rounded-lg border border-zinc-800 text-[11px]">
 							<button
 								onClick={() => setFormatMode("deck")}
-								className={`px-2 py-1 rounded-md transition-colors ${formatMode === "deck" ? "bg-zinc-800 text-zinc-100 font-bold" : "text-zinc-400 hover:text-zinc-200"}`}
+								className={`px-2 py-1 rounded-lg transition-colors ${formatMode === "deck" ? "bg-zinc-800 text-zinc-100 font-bold" : "text-zinc-400 hover:text-zinc-200"}`}
 							>
 								Deck
 							</button>
 							<button
 								onClick={() => setFormatMode("linkedin")}
-								className={`px-2 py-1 rounded-md transition-colors ${formatMode === "linkedin" ? "bg-zinc-800 text-zinc-100 font-bold" : "text-zinc-400 hover:text-zinc-200"}`}
+								className={`px-2 py-1 rounded-lg transition-colors ${formatMode === "linkedin" ? "bg-zinc-800 text-zinc-100 font-bold" : "text-zinc-400 hover:text-zinc-200"}`}
 							>
 								LinkedIn
 							</button>
 							<button
 								onClick={() => setFormatMode("tweet")}
-								className={`px-2 py-1 rounded-md transition-colors ${formatMode === "tweet" ? "bg-zinc-800 text-zinc-100 font-bold" : "text-zinc-400 hover:text-zinc-200"}`}
+								className={`px-2 py-1 rounded-lg transition-colors ${formatMode === "tweet" ? "bg-zinc-800 text-zinc-100 font-bold" : "text-zinc-400 hover:text-zinc-200"}`}
 							>
 								X Thread
 							</button>

@@ -98,7 +98,7 @@
           "name": "Font Generator",
           "route": "/font-generator",
           "description": "Transform plain text into stylish Unicode fonts, cursive scripts, and aesthetic typography for Instagram, Twitter, and Discord.",
-          "seoDescription": "Convert plain text into aesthetic Unicode fonts and stylish calligraphy for Instagram bios and captions. Copy-paste fancy styles instantly with zero data uploads.",
+          "seoDescription": "Convert plain text into aesthetic Unicode fonts and stylish calligraphy for Instagram bios and captions. Copy-paste fancy styles instantly.",
           "seoTitle": "Free Font Generator Online — Aesthetic Fancy Text"
         },
         {
@@ -123,7 +123,7 @@
           "description": "Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.",
           "route": "/rent-receipt-generator",
           "popular": true,
-          "seoDescription": "Generate HRA-compliant rent receipts with landlord PAN, revenue stamps, and rental breakdown for income tax claims. Download clean PDFs directly in your browser.",
+          "seoDescription": "Generate HRA-compliant rent receipts with landlord PAN, revenue stamps and rental breakdown for income tax claims. Download clean PDFs in your browser.",
           "seoTitle": "Free Rent Receipt Generator — HRA Tax Exemption PDF"
         },
         {
@@ -585,7 +585,7 @@
           "description": "Compile multiple images into an animated GIF client-side. Control delay/interval and image dimensions easily.",
           "route": "/gif-generator",
           "popular": true,
-          "seoDescription": "Combine multiple image frames into smooth animated GIFs with customizable frame delays, looping, and dimensions. Render animations locally without server uploads.",
+          "seoDescription": "Combine multiple image frames into smooth animated GIFs with customizable frame delays, looping and dimensions. Rendered locally, no server uploads.",
           "seoTitle": "Free Animated GIF Maker — Combine Images in Browser"
         },
         {
@@ -1084,7 +1084,7 @@
           "description": "Paraphrase and rewrite articles instantly with our free online Article Rewriter. Improve readability, change tone, and create unique content variations for blogs and SEO. 100% free and secure.",
           "route": "/article-rewriter",
           "popular": false,
-          "seoDescription": "Paraphrase sentences and rephrase articles with fresh phrasing while preserving original context and nuance. Polish writing cleanly with local browser processing.",
+          "seoDescription": "Paraphrase sentences and rephrase articles with fresh phrasing while preserving original context and nuance. Polish writing locally in your browser.",
           "seoTitle": "Free Article Rewriter Online — Clean Text Paraphraser"
         },
         {

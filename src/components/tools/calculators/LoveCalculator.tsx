@@ -605,7 +605,7 @@ export default function LoveCalculator() {
 								<div key={idx} className="p-3.5 rounded-xl bg-card/60 border border-border/60 space-y-2">
 									<div className="flex items-center justify-between text-xs font-semibold">
 										<span className="flex items-center gap-1.5 text-muted-foreground">
-											<span className={`p-1 rounded-md ${m.color}`}>
+											<span className={`p-1 rounded-lg ${m.color}`}>
 												<Icon className="w-3.5 h-3.5" />
 											</span>
 											{m.label}

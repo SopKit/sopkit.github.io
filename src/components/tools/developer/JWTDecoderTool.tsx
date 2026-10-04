@@ -309,7 +309,7 @@ export default function JWTDecoderTool() {
                   variant="ghost"
                   size="sm"
                   onClick={() => handleCopy(decodeResult.headerStr, "header")}
-                  className="h-6 text-[10px] px-2 rounded-md hover:bg-rose-500/10 text-muted-foreground hover:text-rose-400 font-mono gap-1"
+                  className="h-6 text-[10px] px-2 rounded-lg hover:bg-rose-500/10 text-muted-foreground hover:text-rose-400 font-mono gap-1"
                 >
                   {copiedFormat === "header" ? (
                     <Check className="w-3 h-3 text-emerald-500" />
@@ -346,7 +346,7 @@ export default function JWTDecoderTool() {
                   variant="ghost"
                   size="sm"
                   onClick={() => handleCopy(decodeResult.payloadStr, "payload")}
-                  className="h-6 text-[10px] px-2 rounded-md hover:bg-indigo-500/10 text-muted-foreground hover:text-indigo-400 font-mono gap-1"
+                  className="h-6 text-[10px] px-2 rounded-lg hover:bg-indigo-500/10 text-muted-foreground hover:text-indigo-400 font-mono gap-1"
                 >
                   {copiedFormat === "payload" ? (
                     <Check className="w-3 h-3 text-emerald-500" />
@@ -385,7 +385,7 @@ export default function JWTDecoderTool() {
                   onClick={() =>
                     handleCopy(decodeResult.signature, "signature")
                   }
-                  className="h-6 text-[10px] px-2 rounded-md hover:bg-emerald-500/10 text-muted-foreground hover:text-emerald-400 font-mono gap-1"
+                  className="h-6 text-[10px] px-2 rounded-lg hover:bg-emerald-500/10 text-muted-foreground hover:text-emerald-400 font-mono gap-1"
                 >
                   {copiedFormat === "signature" ? (
                     <Check className="w-3 h-3 text-emerald-500" />
