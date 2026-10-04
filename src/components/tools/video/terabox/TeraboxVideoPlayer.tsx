@@ -6,7 +6,6 @@ import {
 	InfoIcon,
 	PlayIcon,
 } from "lucide-react";
-import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -15,8 +14,27 @@ export default function TeraboxVideoPlayer({ videoData }) {
 	const hlsRef = useRef(null);
 	const [videoError, setVideoError] = useState(false);
 	const [showFallback, setShowFallback] = useState(false);
-	const [hlsLoaded, setHlsLoaded] = useState(false);
+	const [hlsModule, setHlsModule] = useState<any>(null);
 	const [isLoading, setIsLoading] = useState(true);
+
+	const isM3u8Stream = videoData?.stream_url?.includes(".m3u8");
+
+	// Load the bundled HLS.js engine on demand for M3U8 streams.
+	useEffect(() => {
+		if (!isM3u8Stream || hlsModule) return;
+		let cancelled = false;
+		void (async () => {
+			try {
+				const mod = await import("hls.js");
+				if (!cancelled) setHlsModule(mod);
+			} catch (error) {
+				console.error("Failed to load HLS.js", error);
+			}
+		})();
+		return () => {
+			cancelled = true;
+		};
+	}, [isM3u8Stream, hlsModule]);
 
 	useEffect(() => {
 		if (!videoData || !videoRef.current) return;
@@ -35,15 +53,12 @@ export default function TeraboxVideoPlayer({ videoData }) {
 		}
 
 		// Handle M3U8 streams with HLS.js
-		const win = typeof window !== "undefined" ? (window as any) : null;
+		const Hls = hlsModule?.default;
 		if (streamUrl?.includes(".m3u8")) {
-			if (
-				hlsLoaded &&
-				win?.Hls?.isSupported()
-			) {
+			if (Hls?.isSupported()) {
 				console.log("🎵 Loading M3U8 stream with HLS.js:", streamUrl);
 
-				const hls = new win.Hls({
+				const hls = new Hls({
 					enableWorker: true,
 					lowLatencyMode: false,
 					backBufferLength: 90,
@@ -54,12 +69,12 @@ export default function TeraboxVideoPlayer({ videoData }) {
 				hls.loadSource(streamUrl);
 				hls.attachMedia(video);
 
-				hls.on(win.Hls.Events.MANIFEST_PARSED, () => {
+				hls.on(Hls.Events.MANIFEST_PARSED, () => {
 					console.log("✅ HLS manifest parsed successfully");
 					setIsLoading(false);
 				});
 
-				hls.on(win.Hls.Events.ERROR, (event: any, data: any) => {
+				hls.on(Hls.Events.ERROR, (event: any, data: any) => {
 					console.error("❌ HLS error:", event, data);
 					if (data.fatal) {
 						setVideoError(true);
@@ -73,9 +88,9 @@ export default function TeraboxVideoPlayer({ videoData }) {
 				video.src = streamUrl;
 				setIsLoading(false);
 			} else {
-				console.warn("⚠️ HLS not supported, will try after loading script");
+				console.warn("⚠️ HLS engine not ready, waiting for bundled HLS.js");
 				// HLS.js not loaded yet, wait for it
-				if (!hlsLoaded) {
+				if (!hlsModule) {
 					return; // Wait for HLS.js to load
 				}
 				setVideoError(true);
@@ -96,7 +111,7 @@ export default function TeraboxVideoPlayer({ videoData }) {
 				hlsRef.current = null;
 			}
 		};
-	}, [videoData, hlsLoaded]);
+	}, [videoData, hlsModule]);
 
 	if (!videoData) return null;
 
@@ -127,22 +142,8 @@ export default function TeraboxVideoPlayer({ videoData }) {
 		window.open(segmentUrl, "_blank", "noopener,noreferrer");
 	};
 
-	const onHlsLoad = () => {
-		console.log("📦 HLS.js loaded successfully");
-		setHlsLoaded(true);
-	};
-
 	return (
 		<div className="space-y-4">
-			{/* Load HLS.js script if we have M3U8 */}
-			{isM3u8 && (
-				<Script
-					src="https://cdn.jsdelivr.net/npm/hls.js@latest"
-					onLoad={onHlsLoad}
-					strategy="lazyOnload"
-				/>
-			)}
-
 			{/* Primary Video Player */}
 			{!showFallback ? (
 				<div className="bg-gray-100 dark:bg-gray-800 p-4 ">
@@ -187,7 +188,7 @@ export default function TeraboxVideoPlayer({ videoData }) {
 									{videoData.total_segments
 										? ` with ${videoData.total_segments} segments`
 										: ""}
-									{hlsLoaded ? " (HLS.js enabled)" : " (Loading HLS.js...)"}
+									{hlsModule ? " (HLS.js enabled)" : " (Loading HLS.js...)"}
 								</span>
 							</div>
 						</div>

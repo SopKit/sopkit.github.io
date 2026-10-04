@@ -18,21 +18,14 @@ export default function PdfCompressor200kb() {
 
     useEffect(() => {
         const loadPdfLib = async () => {
-            if (window.PDFLib) {
-                setPdflib(window.PDFLib);
-                return;
+            try {
+                // Bundled with the app — no external CDN request.
+                const pdfLib = await import("pdf-lib");
+                setPdflib(pdfLib);
+            } catch (error) {
+                console.error("Failed to load pdf-lib", error);
+                toast.error("Failed to load the PDF engine. Please refresh and try again.");
             }
-
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-            script.async = true;
-            script.onload = () => {
-                setPdflib(window.PDFLib);
-            };
-            script.onerror = () => {
-                toast.error("Failed to load PDF processing library. Please check your internet connection.");
-            };
-            document.head.appendChild(script);
         };
         loadPdfLib();
     }, []);

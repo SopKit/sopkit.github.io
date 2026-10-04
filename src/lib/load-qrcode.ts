@@ -1,58 +1,58 @@
-let qrCodePromise: Promise<any> | null = null;
+/**
+ * @file src/lib/load-qrcode.ts
+ * @description Lazily loads the `qrcode` npm package (node-qrcode) for QR tools.
+ *
+ * The library is bundled by the app and imported on demand, so no external
+ * script is fetched at runtime. This keeps QR generation working under the
+ * strict `script-src 'self'` Content-Security-Policy, which blocks CDN <script>
+ * tags, and avoids a third-party network dependency entirely.
+ */
 
-const QR_CODE_SOURCES = [
-  "https://unpkg.com/qrcode@1.5.3/build/qrcode.min.js",
-  "https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js",
-  "https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.3/qrcode.min.js",
-] as const;
-
-declare global {
-  interface Window {
-    QRCode?: any;
-  }
+export interface QrCodeRenderOptions {
+	width?: number;
+	margin?: number;
+	color?: { dark?: string; light?: string };
+	errorCorrectionLevel?: "L" | "M" | "Q" | "H";
+	type?: "svg" | "utf8" | "terminal";
 }
 
-function loadScript(src: string): Promise<any> {
-  return new Promise((resolve, reject) => {
-    const existing = document.querySelector<HTMLScriptElement>(`script[data-sopkit-qrcode="${src}"]`);
-    if (existing) {
-      if (window.QRCode) { resolve(window.QRCode); return; }
-      existing.addEventListener("load", () => resolve(window.QRCode));
-      existing.addEventListener("error", () => reject(new Error(`Failed to load ${src}`)));
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = src;
-    script.async = true;
-    script.crossOrigin = "anonymous";
-    script.dataset.sopkitQrcode = src;
-    script.onload = () => {
-      if (window.QRCode) resolve(window.QRCode);
-      else reject(new Error("QRCode library loaded without exposing QRCode"));
-    };
-    script.onerror = () => reject(new Error(`Failed to load ${src}`));
-    document.head.appendChild(script);
-  });
+export interface QrCodeLibrary {
+	toCanvas(
+		canvas: HTMLCanvasElement,
+		text: string,
+		options?: QrCodeRenderOptions,
+	): Promise<HTMLCanvasElement>;
+	toCanvas(
+		canvas: HTMLCanvasElement,
+		text: string,
+		options: QrCodeRenderOptions | undefined,
+		callback: (error: Error | null | undefined) => void,
+	): void;
+	toString(text: string, options?: QrCodeRenderOptions): Promise<string>;
+	toDataURL(text: string, options?: QrCodeRenderOptions): Promise<string>;
 }
 
-export function loadQrCodeLibrary(): Promise<any> {
-  if (typeof window === "undefined") return Promise.reject(new Error("QR generation is only available in a browser"));
-  if (window.QRCode) return Promise.resolve(window.QRCode);
-  if (qrCodePromise) return qrCodePromise;
+let qrCodePromise: Promise<QrCodeLibrary> | null = null;
 
-  qrCodePromise = (async () => {
-    let lastError: unknown;
-    for (const source of QR_CODE_SOURCES) {
-      try {
-        const library = await Promise.race([
-          loadScript(source),
-          new Promise((_, reject) => window.setTimeout(() => reject(new Error("QR library request timed out")), 8000)),
-        ]);
-        return library;
-      } catch (error) { lastError = error; }
-    }
-    qrCodePromise = null;
-    throw lastError instanceof Error ? lastError : new Error("Unable to load the QR code generator");
-  })();
-  return qrCodePromise;
+/**
+ * Resolves the QR code library, importing it once and memoizing the result.
+ */
+export function loadQrCodeLibrary(): Promise<QrCodeLibrary> {
+	if (typeof window === "undefined") {
+		return Promise.reject(
+			new Error("QR generation is only available in a browser"),
+		);
+	}
+
+	if (!qrCodePromise) {
+		qrCodePromise = import("qrcode")
+			.then((mod) => (mod.default ?? mod) as unknown as QrCodeLibrary)
+			.catch((error) => {
+				// Allow a later retry if the chunk failed to load.
+				qrCodePromise = null;
+				throw error;
+			});
+	}
+
+	return qrCodePromise;
 }

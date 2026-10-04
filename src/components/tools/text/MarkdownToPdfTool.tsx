@@ -97,48 +97,45 @@ This is a clean, print-ready PDF document compiled directly from **Markdown** in
 
 	const html = useMemo(() => compileMarkdown(markdown), [markdown]);
 	const [isProcessing, setIsProcessing] = useState(false);
-	const [pdflib, setPdflib] = useState<any>(() =>
-		typeof window !== "undefined" ? ((window as any).PDFLib ?? null) : null,
-	);
+	const [pdflib, setPdflib] = useState<any>(null);
+	const [html2canvasLib, setHtml2canvasLib] = useState<any>(null);
 	const previewRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		// Load PDF-Lib from CDN
-		if (!window.PDFLib) {
-			const script = document.createElement("script");
-			script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-			script.async = true;
-			script.onload = () => setPdflib(window.PDFLib);
-			script.onerror = () => {
-				toast.error("Failed to load PDF library. Please refresh and check connection.");
-			};
-			document.head.appendChild(script);
-		}
-
-		// Load html2canvas from CDN
-		if (!window.html2canvas) {
-			const script = document.createElement("script");
-			script.src = "https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js";
-			script.async = true;
-			script.onerror = () => {
-				toast.error("Failed to load page rendering library. Please refresh.");
-			};
-			document.head.appendChild(script);
-		}
+		let cancelled = false;
+		// Both libraries are bundled with the app — no external CDN request.
+		void (async () => {
+			try {
+				const [pdfLib, html2canvasModule] = await Promise.all([
+					import("pdf-lib"),
+					import("html2canvas"),
+				]);
+				if (cancelled) return;
+				setPdflib(pdfLib);
+				// Wrap in an updater so React does not treat the function as a state updater.
+				setHtml2canvasLib(() => html2canvasModule.default ?? html2canvasModule);
+			} catch (error) {
+				console.error("Failed to load PDF export libraries", error);
+				toast.error("Failed to load the PDF engine. Please refresh and try again.");
+			}
+		})();
+		return () => {
+			cancelled = true;
+		};
 	}, []);
 
 
 
 
 	const handleDownloadPdf = async () => {
-		if (!pdflib || !window.html2canvas || !previewRef.current) {
+		if (!pdflib || !html2canvasLib || !previewRef.current) {
 			toast.error("Libraries are still loading. Please wait...");
 			return;
 		}
 
 		setIsProcessing(true);
 		try {
-			const canvas = await window.html2canvas(previewRef.current, {
+			const canvas = await html2canvasLib(previewRef.current, {
 				scale: 2,
 				useCORS: true,
 				logging: false,

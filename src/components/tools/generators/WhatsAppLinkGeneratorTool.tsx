@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -17,6 +17,7 @@ export default function WhatsAppLinkGeneratorTool() {
   const [link, setLink] = useState("");
   const [qrCodeLoaded, setQrCodeLoaded] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
+  const qrLibRef = useRef<any>(null);
 
   const generate = () => {
     const cleanPhone = phone.replace(/\D/g, "");
@@ -30,15 +31,29 @@ export default function WhatsAppLinkGeneratorTool() {
     toast.success("WhatsApp link generated!");
   };
 
+  const drawQR = useCallback((canvas: HTMLCanvasElement) => {
+    qrLibRef.current?.toCanvas(canvas, link, {
+      width: 200,
+      margin: 2,
+      color: {
+        dark: "#128C7E",
+        light: "#FFFFFF"
+      }
+    }, (err: Error | null | undefined) => {
+      if (err) console.error(err);
+      else setQrCodeLoaded(true);
+    });
+  }, [link]);
+
   useEffect(() => {
     if (!link) return;
     const canvas = document.getElementById("qr-canvas");
-    if (!canvas) return;
+    if (!(canvas instanceof HTMLCanvasElement)) return;
 
     const generateQR = async () => {
       try {
-        if (!(window as any).QRCode) {
-          await loadQrCodeLibrary();
+        if (!qrLibRef.current) {
+          qrLibRef.current = await loadQrCodeLibrary();
         }
         drawQR(canvas);
       } catch (err) {
@@ -47,21 +62,7 @@ export default function WhatsAppLinkGeneratorTool() {
     };
 
     generateQR();
-  }, [link]);
-
-  const drawQR = (canvas: any) => {
-    (window as any).QRCode.toCanvas(canvas, link, {
-      width: 200,
-      margin: 2,
-      color: {
-        dark: "#128C7E",
-        light: "#FFFFFF"
-      }
-    }, (err) => {
-      if (err) console.error(err);
-      else setQrCodeLoaded(true);
-    });
-  };
+  }, [link, drawQR]);
 
   const copyLink = () => {
     if (!link) return;
