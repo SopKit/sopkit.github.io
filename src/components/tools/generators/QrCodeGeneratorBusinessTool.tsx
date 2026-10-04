@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -14,16 +14,27 @@ export default function QrCodeGeneratorBusinessTool() {
   const [type, setType] = useState("website");
   const [data, setData] = useState("");
   const [qrLoaded, setQrLoaded] = useState(false);
+  const qrLibRef = useRef<any>(null);
+
+  const drawQR = useCallback((canvas: HTMLCanvasElement) => {
+    qrLibRef.current?.toCanvas(canvas, data, {
+      width: 220,
+      margin: 2
+    }, (err: Error | null | undefined) => {
+      if (err) console.error(err);
+      else setQrLoaded(true);
+    });
+  }, [data]);
 
   useEffect(() => {
     if (!data) return;
     const canvas = document.getElementById("biz-qr-canvas");
-    if (!canvas) return;
+    if (!(canvas instanceof HTMLCanvasElement)) return;
 
     const generateQR = async () => {
       try {
-        if (!(window as any).QRCode) {
-          await loadQrCodeLibrary();
+        if (!qrLibRef.current) {
+          qrLibRef.current = await loadQrCodeLibrary();
         }
         drawQR(canvas);
       } catch (err) {
@@ -31,17 +42,7 @@ export default function QrCodeGeneratorBusinessTool() {
       }
     };
     generateQR();
-  }, [data]);
-
-  const drawQR = (canvas: any) => {
-    (window as any).QRCode.toCanvas(canvas, data, {
-      width: 220,
-      margin: 2
-    }, (err) => {
-      if (err) console.error(err);
-      else setQrLoaded(true);
-    });
-  };
+  }, [data, drawQR]);
 
   const handleDownload = () => {
     const canvas = document.getElementById("biz-qr-canvas");

@@ -44,7 +44,10 @@ export default function PDFToWord() {
         setProgress(0);
         try {
             const pdfjsLib = await import("pdfjs-dist");
-            pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
+            pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
+                "pdfjs-dist/build/pdf.worker.min.mjs",
+                import.meta.url,
+            ).toString();
 
             const docx = await import("docx");
 

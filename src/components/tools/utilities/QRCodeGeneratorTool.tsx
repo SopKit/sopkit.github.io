@@ -1,7 +1,6 @@
 "use client";
 
 import {
-	ArrowLeftIcon,
 	CopyIcon,
 	DownloadIcon,
 	ImageIcon,
@@ -14,10 +13,7 @@ import {
 	UserIcon,
 	WifiIcon,
 } from "lucide-react";
-import Link from "next/link";
 import { useEffect, useRef, useState, useCallback } from "react";
-import { STATIC_ROUTES } from "@/lib/tools";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
 	Card,
@@ -53,6 +49,7 @@ export default function QRCodeGeneratorTool() {
 	const [qrCodeSvg, setQrCodeSvg] = useState("");
 	const qrContainerRef = useRef(null);
 	const canvasRef = useRef(null);
+	const qrLibRef = useRef<any>(null);
 	const [isGenerating, setIsGenerating] = useState(false);
 	const [qrCodeLibLoaded, setQrCodeLibLoaded] = useState(false);
 
@@ -84,8 +81,8 @@ export default function QRCodeGeneratorTool() {
 
 	// Enhanced QR Code generation function using QRCode.js library
 	const generateQRCode = useCallback(async () => {
-		const win = typeof window !== "undefined" ? (window as any) : null;
-		if (!win?.QRCode) {
+		const QRCode = qrLibRef.current;
+		if (!QRCode) {
 			return;
 		}
 
@@ -128,7 +125,7 @@ export default function QRCodeGeneratorTool() {
 			// Generate QR code using QRCode.js
 			const canvas = canvasRef.current;
 			if (canvas) {
-				await win.QRCode.toCanvas(canvas, dataToEncode, {
+				await QRCode.toCanvas(canvas, dataToEncode, {
 					width: qrSize[0],
 					margin: includeMargin ? 2 : 0,
 					color: {
@@ -140,7 +137,7 @@ export default function QRCodeGeneratorTool() {
 			}
 
 			// Generate SVG version
-			const svgString = await win.QRCode.toString(dataToEncode, {
+			const svgString = await QRCode.toString(dataToEncode, {
 				type: "svg",
 				width: qrSize[0],
 				margin: includeMargin ? 2 : 0,
@@ -159,10 +156,13 @@ export default function QRCodeGeneratorTool() {
 		}
 	}, [qrType, qrData, qrSize, foregroundColor, backgroundColor, errorCorrectionLevel, includeMargin, wifiSSID, wifiPassword, wifiSecurity, wifiHidden, contactName, contactPhone, contactEmail, contactOrg, contactUrl, emailTo, emailSubject, emailBody, smsNumber, smsMessage, locationLat, locationLng]);
 
-	// Load once and reuse across QR tools; includes CDN fallbacks.
+	// Load the bundled QR engine once and reuse it across renders.
 	useEffect(() => {
 		void loadQrCodeLibrary()
-			.then(() => setQrCodeLibLoaded(true))
+			.then((library) => {
+				qrLibRef.current = library;
+				setQrCodeLibLoaded(true);
+			})
 			.catch(() => setQrCodeLibLoaded(false));
 	}, []);
 
