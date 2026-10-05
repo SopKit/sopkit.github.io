@@ -96,12 +96,12 @@ function BreadcrumbsInner({
 
 			{/* Visible breadcrumbs */}
 			<nav
-				aria-label="Breadcrumb navigation"
+				aria-label="Breadcrumb"
 				className="flex items-center space-x-1 text-sm text-muted-foreground mb-6 bg-muted/30 px-4 py-2 "
 			>
-				<div className="flex items-center space-x-1 overflow-x-auto scrollbar-hide">
+				<ol className="flex items-center space-x-1 overflow-x-auto scrollbar-hide">
 					{breadcrumbs.map((crumb, index) => (
-						<div
+						<li
 							key={index}
 							className="flex items-center space-x-1 whitespace-nowrap"
 						>
@@ -132,9 +132,9 @@ function BreadcrumbsInner({
 									aria-hidden="true"
 								/>
 							)}
-						</div>
+						</li>
 					))}
-				</div>
+				</ol>
 			</nav>
 		</>
 	);

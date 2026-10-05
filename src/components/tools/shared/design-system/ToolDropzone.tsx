@@ -111,6 +111,8 @@ export function ToolDropzone({
 			<input
 				type="file"
 				ref={inputRef}
+				aria-label={`${title}${subtitle ? `. ${subtitle}` : ""}`}
+				title={`${title}${subtitle ? `. ${subtitle}` : ""}`}
 				onChange={(event) => {
 					const files = Array.from(event.target.files ?? []);
 					if (files.length > 0) onFiles(files);

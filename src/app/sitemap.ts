@@ -9,7 +9,6 @@ import { getMonetizationDecision } from "@/data/monetization";
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-	const allTools = getAllTools();
 	const siteUpdated = new Date(SITE_CONFIG.lastUpdatedDate);
 	const now = new Date();
 
@@ -82,8 +81,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/api-key-testers`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
 	];
 
-	// Use site deployment date for tool pages (staggered by popularity)
-	const toolPages: MetadataRoute.Sitemap = allTools
+	try {
+		const allTools = getAllTools();
+		// Use site deployment date for tool pages (staggered by popularity)
+		const toolPages: MetadataRoute.Sitemap = allTools
 		.filter((tool) => {
 			const route = String(tool.route || "");
 			if (!route.startsWith("/")) return false;
@@ -150,10 +151,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	// NOTE: extraSlugs permutation pages are intentionally not emitted here —
 	// see comment above.
 
-	try {
-		// Deduplicate by URL to avoid duplicate sitemap entries.
-		// NOTE: URLs are emitted WITH a trailing slash to stay consistent with the
-		// canonical URLs declared in page metadata (the dominant form across the site).
+		// Deduplicate and strictly normalize URLs to canonical form:
+		// root has trailing slash (https://sopkit.space/), subpaths do not (https://sopkit.space/slug)
 		const allPages = [
 			...staticPages,
 			...toolPages,
@@ -163,27 +162,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		];
 		const seen = new Set<string>();
 		return allPages
-			.filter((page) => {
-				if (seen.has(page.url)) return false;
-				seen.add(page.url);
-				return true;
-			})
 			.map((page) => {
-				let url = page.url;
-				if (!url.endsWith("/")) {
-					url += "/";
+				let url = page.url.trim();
+				try {
+					const parsed = new URL(url);
+					let pathname = parsed.pathname.replace(/\/+/g, "/");
+					if (pathname.length > 1 && pathname.endsWith("/")) {
+						pathname = pathname.slice(0, -1);
+					}
+					url = `${parsed.origin}${pathname}`;
+				} catch {
+					if (url.length > 1 && url.endsWith("/") && !url.endsWith("://")) {
+						url = url.slice(0, -1);
+					}
 				}
 				return {
 					...page,
 					url,
 				};
+			})
+			.filter((page) => {
+				if (seen.has(page.url)) return false;
+				seen.add(page.url);
+				return true;
 			});
 	} catch (error) {
 		console.error("Sitemap generation error:", error);
 		return staticPages.map((page) => {
-			let url = page.url;
-			if (!url.endsWith("/")) {
-				url += "/";
+			let url = page.url.trim();
+			try {
+				const parsed = new URL(url);
+				let pathname = parsed.pathname.replace(/\/+/g, "/");
+				if (pathname.length > 1 && pathname.endsWith("/")) {
+					pathname = pathname.slice(0, -1);
+				}
+				url = `${parsed.origin}${pathname}`;
+			} catch {
+				// fallback
 			}
 			return {
 				...page,

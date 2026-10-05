@@ -41,7 +41,7 @@ export function Footer() {
 	];
 
 	return (
-		<footer className="border-t border-border bg-surface-muted/50 dark:bg-card/30 pt-16 pb-12 text-foreground">
+		<footer className="border-t border-border bg-surface-muted/50 dark:bg-card/30 pt-16 pb-12 text-foreground" aria-label="Site footer">
 			<Container size="xl">
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 pb-12 border-b border-border/70">
 					{/* Brand & Mission Column */}
@@ -71,91 +71,94 @@ export function Footer() {
 						</div>
 					</div>
 
-					{/* Products Column */}
-					<div className="space-y-3">
-						<h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
-							Tool Suites
-						</h4>
-						<ul className="space-y-2 text-sm text-muted-foreground">
-							{productLinks.map((link) => (
-								<li key={link.name}>
-									<Link
-										href={link.href}
+					{/* Navigation Columns */}
+					<nav aria-label="Footer navigation" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:col-span-2 lg:col-span-4">
+						{/* Products Column */}
+						<div className="space-y-3">
+							<h3 className="text-xs font-bold uppercase tracking-wider text-foreground">
+								Tool Suites
+							</h3>
+							<ul className="space-y-2 text-sm text-muted-foreground">
+								{productLinks.map((link) => (
+									<li key={link.name}>
+										<Link
+											href={link.href}
+											className="hover:text-foreground transition-colors no-underline"
+										>
+											{link.name}
+										</Link>
+									</li>
+								))}
+							</ul>
+						</div>
+
+						{/* Platform Column */}
+						<div className="space-y-3">
+							<h3 className="text-xs font-bold uppercase tracking-wider text-foreground">
+								Platform
+							</h3>
+							<ul className="space-y-2 text-sm text-muted-foreground">
+								{platformLinks.map((link) => (
+									<li key={link.name}>
+										<Link
+											href={link.href}
+											className="hover:text-foreground transition-colors no-underline"
+										>
+											{link.name}
+										</Link>
+									</li>
+								))}
+							</ul>
+						</div>
+
+						{/* Open Source Column */}
+						<div className="space-y-3">
+							<h3 className="text-xs font-bold uppercase tracking-wider text-foreground">
+								Open Source
+							</h3>
+							<ul className="space-y-2 text-sm text-muted-foreground">
+								<li>
+									<a
+										href={SITE_CONFIG.githubRepoUrl}
+										target="_blank"
+										rel="noopener noreferrer"
 										className="hover:text-foreground transition-colors no-underline"
 									>
-										{link.name}
-									</Link>
+										Contribute on GitHub
+									</a>
 								</li>
-							))}
-						</ul>
-					</div>
-
-					{/* Platform Column */}
-					<div className="space-y-3">
-						<h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
-							Platform
-						</h4>
-						<ul className="space-y-2 text-sm text-muted-foreground">
-							{platformLinks.map((link) => (
-								<li key={link.name}>
-									<Link
-										href={link.href}
+								<li>
+									<a
+										href={SITE_CONFIG.githubOrgUrl}
+										target="_blank"
+										rel="noopener noreferrer"
 										className="hover:text-foreground transition-colors no-underline"
 									>
-										{link.name}
-									</Link>
+										SopKit GitHub Organization
+									</a>
 								</li>
-							))}
-						</ul>
-					</div>
+							</ul>
+						</div>
 
-					{/* Open Source Column */}
-					<div className="space-y-3">
-						<h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
-							Open Source
-						</h4>
-						<ul className="space-y-2 text-sm text-muted-foreground">
-							<li>
-								<a
-									href={SITE_CONFIG.githubRepoUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="hover:text-foreground transition-colors no-underline"
-								>
-									Contribute on GitHub
-								</a>
-							</li>
-							<li>
-								<a
-									href={SITE_CONFIG.githubOrgUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="hover:text-foreground transition-colors no-underline"
-								>
-									SopKit GitHub Organization
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					{/* Company / Legal Column */}
-					<div className="space-y-3">
-						<h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
-							Trust & Legal
-						</h4>
-						<ul className="space-y-2 text-sm text-muted-foreground">
-							{companyLinks.map((link) => (
-								<li key={link.name}>
-									<Link
-										href={link.href}
-										className="hover:text-foreground transition-colors no-underline"
-									>
-										{link.name}
-									</Link>
-								</li>
-							))}
-						</ul>
-					</div>
+						{/* Company / Legal Column */}
+						<div className="space-y-3">
+							<h3 className="text-xs font-bold uppercase tracking-wider text-foreground">
+								Trust & Legal
+							</h3>
+							<ul className="space-y-2 text-sm text-muted-foreground">
+								{companyLinks.map((link) => (
+									<li key={link.name}>
+										<Link
+											href={link.href}
+											className="hover:text-foreground transition-colors no-underline"
+										>
+											{link.name}
+										</Link>
+									</li>
+								))}
+							</ul>
+						</div>
+					</nav>
 				</div>
 
 				{/* Bottom Bar: Language, Visitors & Copyright */}

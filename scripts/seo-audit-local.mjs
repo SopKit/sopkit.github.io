@@ -219,9 +219,13 @@ async function main() {
 		log(`  ${colors.red}Failed: ${failedChecks}${colors.reset}`);
 		log(`  ${colors.yellow}Warnings: ${warnings}${colors.reset}`);
 	}
-	const reportPath = join(process.cwd(), "seo-audit-report.json");
-	writeFileSync(reportPath, JSON.stringify({ ...summary, results }, null, 2));
-	log(`\n  Report written to ${reportPath}`);
+	try {
+		const reportPath = process.env.REPORT_PATH || join(process.cwd(), "seo-audit-report.json");
+		writeFileSync(reportPath, JSON.stringify({ ...summary, results }, null, 2));
+		log(`\n  Report written to ${reportPath}`);
+	} catch (e) {
+		log(`\n  Notice: Report file not written to disk (${e.message})`);
+	}
 
 	if (failedChecks > 0) {
 		log("\n✗ Audit completed with failures", colors.red);

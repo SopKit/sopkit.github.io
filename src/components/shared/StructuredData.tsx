@@ -1,5 +1,6 @@
 import { getAllCategories, getAllTools, type Tool } from "@/lib/tools";
 import { LAST_UPDATED, SITE_URL } from "@/constants/config";
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 const allCategories = getAllCategories();
 const allTools = getAllTools();
@@ -47,16 +48,14 @@ export default function StructuredData({
 		const categoryDetails =
 			categoryLookup[tool.category] || categoryLookup[tool.categorySlug || ""] || null;
 		
-		const cleanRoute = tool.route.endsWith("/") ? tool.route : `${tool.route}/`;
-		const toolUrl = `${SITE_URL}${cleanRoute}`;
+		const toolUrl = buildCanonicalUrl(tool.route);
 		
 		const toolCategoryName =
 			categoryDetails?.name || tool.categoryName || "Utilities";
 		const toolCategorySlug = categoryDetails?.slug || tool.category || "utilities";
 		
 		const categoryHubRoute = getCategoryHubUrl(toolCategorySlug);
-		const cleanCategoryHubRoute = categoryHubRoute.endsWith("/") ? categoryHubRoute : `${categoryHubRoute}/`;
-		const toolCategoryUrl = `${SITE_URL}${cleanCategoryHubRoute}`;
+		const toolCategoryUrl = buildCanonicalUrl(categoryHubRoute);
 
 		const toolStructuredData: Record<string, any> = {
 			"@context": "https://schema.org",
@@ -69,7 +68,7 @@ export default function StructuredData({
 			url: toolUrl,
 			isAccessibleForFree: true,
 			inLanguage: "en",
-			screenshot: `${SITE_URL}/og-image.jpg`,
+			screenshot: `${SITE_URL}/og-image.png`,
 			dateModified: LAST_UPDATED,
 			offers: {
 				"@type": "Offer",
@@ -344,7 +343,7 @@ export default function StructuredData({
 					item: {
 						"@type": "CollectionPage",
 						name: category.name,
-						url: `${SITE_URL}${getCategoryHubUrl(category.slug)}`,
+						url: buildCanonicalUrl(getCategoryHubUrl(category.slug)),
 						description: category.description,
 					},
 				})),
