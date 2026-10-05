@@ -114,10 +114,16 @@ function normalizeUrl(rawUrl: string): string {
   if (!url.startsWith('http')) {
     url = `${BASE_URL}${url.startsWith('/') ? '' : '/'}${url}`;
   }
-  if (!url.endsWith('/')) {
-    url += '/';
+  try {
+    const u = new URL(url);
+    let pathname = u.pathname.replace(/\/+/g, '/');
+    if (pathname.length > 1 && pathname.endsWith('/')) {
+      pathname = pathname.slice(0, -1);
+    }
+    return `${u.origin}${pathname}`;
+  } catch {
+    return url;
   }
-  return url;
 }
 
 function registerUrl(rawUrl: string, priority = '0.80', changefreq = 'weekly', lastmod = LAST_MODIFIED) {

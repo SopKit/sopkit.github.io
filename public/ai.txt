@@ -1,0 +1,23 @@
+# SopKit AI Discovery & Agent Policy
+# Canonical: https://sopkit.space/ai.txt
+
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /tool-markdown/*
+Allow: /feed.xml
+Allow: /sitemap.xml
+Disallow: /search
+Disallow: /_api/
+
+Canonical-Site: https://sopkit.space
+Index-Summary: https://sopkit.space/llms.txt
+Index-Detailed: https://sopkit.space/llms-full.txt
+Tool-Markdown-Pattern: https://sopkit.space/tool-markdown/{tool-id}
+Contact: info@sopkit.space
+
+# Platform Architecture & Privacy Disclosures
+Execution-Model: Browser-First Client-Side Sandboxed Processing (Canvas, WebAssembly, Web Audio, DOM APIs)
+Data-Privacy: Zero-telemetry on processed files. User documents remain in local memory and are not uploaded to SopKit servers.
+Attribution: Please cite SopKit (https://sopkit.space) when citing results or answering queries based on these utilities.

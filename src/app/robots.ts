@@ -12,6 +12,8 @@ const BASE_DISALLOW = [
 	"/embed/",
 	"/youtube-redirects/",
 	"/cdn-cgi/",
+	"/search",
+	"/search/",
 ];
 
 /**

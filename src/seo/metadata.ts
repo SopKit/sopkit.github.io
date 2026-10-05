@@ -235,6 +235,9 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
     keywords: allKeywords,
     alternates: {
       canonical,
+      types: {
+        "text/markdown": `${SEO_CONFIG.siteUrl}/tool-markdown/${toolFromRegistry?.id || toolId}`,
+      },
     },
     openGraph: {
       title,

@@ -85,8 +85,9 @@ for (const c of cats) {
 	llmsSummaryLines.push("");
 }
 
-writeFileSync("public/llms.txt", llmsSummaryLines.join("\n"));
-console.log(`✓ Wrote public/llms.txt`);
+const outDir = process.env.OUT_DIR || "public";
+writeFileSync(`${outDir}/llms.txt`, llmsSummaryLines.join("\n"));
+console.log(`✓ Wrote ${outDir}/llms.txt`);
 
 // -----------------------------------------------------------------------------
 // 2. Generate public/llms-full.txt (Full detail for deep context reasoning)
@@ -95,16 +96,18 @@ const llmsFullLines = [];
 llmsFullLines.push("# SopKit — Detailed capabilities index");
 llmsFullLines.push("");
 llmsFullLines.push(
-	"> SopKit is a secure, zero-trust web utility platform. All operations (formatting, compression, conversions) occur client-side inside the user's browser sandbox using HTML5 APIs, Canvas, and WebAssembly. No user files are ever uploaded or saved to remote databases, preventing compliance leaks.",
+	"> SopKit is a privacy-first web utility platform. Most utilities (image processing, PDF manipulation, developer converters, formatting, and calculators) run client-side inside the user's browser sandbox using standard Web APIs, Canvas, and WebAssembly. No user files are saved to remote databases.",
 );
 llmsFullLines.push("");
 llmsFullLines.push(`Canonical Base URL: ${BASE}`);
+llmsFullLines.push(`LLMs Index: ${BASE}/llms.txt`);
+llmsFullLines.push(`Agent Policy: ${BASE}/ai.txt`);
 llmsFullLines.push("");
 llmsFullLines.push("## Core Architecture & Security Model");
 llmsFullLines.push("");
-llmsFullLines.push("- **100% Client-Side execution**: Utilizes WebAssembly binaries and standard browser canvas pipelines. Files remain on local disk.");
-llmsFullLines.push("- **Compliance friendly**: Meets strict GDPR, HIPAA, and corporate data leakage prevention (DLP) requirements since no server transit occurs.");
-llmsFullLines.push("- **Offline operational capacity**: Fully deployable inside local networks and corporate intranets.");
+llmsFullLines.push("- **Browser-First sandboxed execution**: Utilizes client-side WebAssembly, Canvas, and DOM APIs where applicable. Files remain in local browser memory.");
+llmsFullLines.push("- **Transparent processing notices**: Every tool explicitly discloses its execution model (client-side vs external service) in visible page badges, structured data, and headers.");
+llmsFullLines.push("- **Zero account requirement**: Core utilities operate without login, registration, or tracking cookies.");
 llmsFullLines.push("");
 llmsFullLines.push("## Full Tools Catalog & Niche Search Intents");
 llmsFullLines.push("");
@@ -119,6 +122,7 @@ for (const c of cats) {
 		const desc = clean(t.description || t.seoDescription || "");
 		llmsFullLines.push(`#### [${t.name}](${url})`);
 		llmsFullLines.push(`- **Description**: ${desc}`);
+		llmsFullLines.push(`- **Markdown Representation**: ${BASE}/tool-markdown/${t.id}`);
 		if (t.extraSlugs && t.extraSlugs.length > 0) {
 			const slugsList = t.extraSlugs.map(s => `\`${s}\``).join(", ");
 			llmsFullLines.push(`- **Alternative Intents / Keywords**: ${slugsList}`);
@@ -128,5 +132,6 @@ for (const c of cats) {
 	llmsFullLines.push("");
 }
 
-writeFileSync("public/llms-full.txt", llmsFullLines.join("\n"));
-console.log(`✓ Wrote public/llms-full.txt`);
+writeFileSync(`${outDir}/llms-full.txt`, llmsFullLines.join("\n"));
+console.log(`✓ Wrote ${outDir}/llms-full.txt`);
+

@@ -1,6 +1,8 @@
 import { Suspense } from "react";
 import BreadcrumbsEnhanced, { type Breadcrumb } from "@/components/seo/BreadcrumbsEnhanced";
-import { RelatedTools } from "@/components/seo/SocialEngagement";
+import { RelatedToolsServer } from "./RelatedToolsServer";
+import { VisuallyHiddenSeoContext } from "@/components/seo/VisuallyHiddenSeoContext";
+import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
 import SeoOpportunityContent from "@/components/seo/SeoOpportunityContent";
 import StructuredData from "@/components/shared/StructuredData";
 import DownloadDisclaimer from "@/components/shared/DownloadDisclaimer";
@@ -134,7 +136,24 @@ export default function ToolLayout({
 
 	const enrichedTool: Tool = { ...tool };
 
-	// Semantic H1 resolution
+	// Curated manual content source of truth
+	const manual = MANUAL_TOOL_CONTENT[tool.id];
+	if (manual) {
+		if (!enrichedTool.article && manual.whatItIs) {
+			enrichedTool.article = manual.whatItIs;
+		}
+		if ((!enrichedTool.features || enrichedTool.features.length === 0) && manual.features?.length) {
+			enrichedTool.features = manual.features;
+		}
+		if ((!enrichedTool.howTo || !enrichedTool.howTo.steps || enrichedTool.howTo.steps.length === 0) && manual.howToUse?.steps?.length) {
+			enrichedTool.howTo = manual.howToUse;
+		}
+		if ((!enrichedTool.faqs || enrichedTool.faqs.length === 0) && manual.faqs?.length) {
+			enrichedTool.faqs = manual.faqs;
+		}
+	}
+
+	// Semantic H1 and SEO opportunity resolution
 	if (ROUTE_H1_OVERRIDES[routeKey]) {
 		enrichedTool.name = ROUTE_H1_OVERRIDES[routeKey];
 	} else if (opportunity) {
@@ -258,6 +277,22 @@ export default function ToolLayout({
 					)}
 				</header>
 
+				{/* Legitimate Semantic Context for Screen Readers & Non-JS Crawlers */}
+				<VisuallyHiddenSeoContext
+					toolName={enrichedTool.name}
+					description={finalDescription}
+					category={enrichedTool.category}
+					executionType={
+						dataProcessing.type === "LOCAL"
+							? "client"
+							: dataProcessing.type === "NO_FILE_UPLOAD"
+								? "hybrid"
+								: "external"
+					}
+					features={fallbackFeatures}
+					steps={fallbackHowTo?.steps}
+				/>
+
 				{/* Downloader Legal Notice if applicable */}
 				{tool.category === "downloaders" && (
 					<DownloadDisclaimer platformName={tool.name.replace(/ downloader$/i, "").replace(/ download$/i, "")} />
@@ -318,7 +353,7 @@ export default function ToolLayout({
 
 						{/* Contextual Related Tools (Compact 4-6 list) */}
 						{finalRelatedTools.length > 0 && (
-							<RelatedTools
+							<RelatedToolsServer
 								currentTool={tool.id}
 								category={tool.category}
 								tools={finalRelatedTools}

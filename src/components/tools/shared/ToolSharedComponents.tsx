@@ -36,9 +36,9 @@ export const ToolFeatures = ({ features, toolName }: ToolFeaturesProps) => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 list-none p-0 m-0">
         {features.map((feature, idx) => (
-          <div
+          <li
             key={idx}
             className="flex items-start gap-3 p-3.5 rounded-xl border border-border/60 bg-muted/20 hover:bg-muted/40 transition-colors"
           >
@@ -48,9 +48,9 @@ export const ToolFeatures = ({ features, toolName }: ToolFeaturesProps) => {
             <span className="text-xs sm:text-sm text-foreground/90 leading-snug font-medium">
               {feature}
             </span>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };
@@ -79,9 +79,9 @@ export const ToolSteps = ({ steps, toolName }: ToolStepsProps) => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+      <ol className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 list-none p-0 m-0">
         {steps.map((step, idx) => (
-          <div
+          <li
             key={idx}
             className="flex flex-col gap-2 p-4 rounded-xl border border-border/60 bg-muted/15"
           >
@@ -96,9 +96,9 @@ export const ToolSteps = ({ steps, toolName }: ToolStepsProps) => {
             <p className="text-xs text-muted-foreground leading-relaxed">
               {step.text}
             </p>
-          </div>
+          </li>
         ))}
-      </div>
+      </ol>
     </section>
   );
 };
