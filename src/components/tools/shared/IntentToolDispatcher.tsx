@@ -221,6 +221,7 @@ const WordToNumberTool = dynamic(() => import("@/components/tools/text/WordToNum
 const WordToPDF = dynamic(() => import("@/components/tools/pdf/WordToPDF"), { ssr: false });
 const YouTubeChannelIDFinderTool = dynamic(() => import("@/components/tools/youtube/YouTubeChannelIDFinderTool"), { ssr: false });
 const YouTubeDownloader = dynamic(() => import("@/components/tools/downloaders/YouTubeDownloader"), { ssr: false });
+const DownloaderEngine = dynamic(() => import("@/components/tools/downloaders/DownloaderEngine"), { ssr: false });
 const YouTubeShortsDownloader = dynamic(() => import("@/components/tools/downloaders/YouTubeShortsDownloader"), { ssr: false });
 const YoutubeThumbnailDownloader = dynamic(() => import("@/components/tools/downloaders/YoutubeThumbnailDownloader"), { ssr: false });
 const MidjourneyPromptBuilder = dynamic(() => import("@/components/tools/ai/MidjourneyPromptBuilder"), { ssr: false });
@@ -849,20 +850,20 @@ export const INTENT_TOOL_REGISTRY: Record<string, { component: React.ComponentTy
     "youtube-channel-age-checker": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-channel-banner-downloader": { component: YouTubeDownloader, props: {} },
     "youtube-channel-finder": { component: YouTubeChannelIDFinderTool, props: {} },
-    "youtube-channel-id-extractor": { component: YouTubeDownloader, props: {} },
+    "youtube-channel-id-extractor": { component: DownloaderEngine, props: {} },
     "youtube-channel-logo-downloader": { component: YouTubeDownloader, props: {} },
     "youtube-channel-statistics": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-comment-picker": { component: YouTubeChannelIDFinderTool, props: {} },
-    "youtube-description-extractor": { component: YouTubeDownloader, props: {} },
+    "youtube-description-extractor": { component: DownloaderEngine, props: {} },
     "youtube-downloader": { component: YouTubeDownloader, props: {} },
-    "youtube-hashtag-extractor": { component: YouTubeDownloader, props: {} },
+    "youtube-hashtag-extractor": { component: DownloaderEngine, props: {} },
     "youtube-hashtag-generator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-region-restriction-checker": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-shorts-downloader": { component: YouTubeShortsDownloader, props: {} },
-    "youtube-tag-extractor": { component: YouTubeDownloader, props: {} },
+    "youtube-tag-extractor": { component: DownloaderEngine, props: {} },
     "youtube-tag-generator": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-thumbnail-downloader": { component: YoutubeThumbnailDownloader, props: {} },
-    "youtube-title-extractor": { component: YouTubeDownloader, props: {} },
+    "youtube-title-extractor": { component: DownloaderEngine, props: {} },
     "youtube-video-count-checker": { component: YouTubeChannelIDFinderTool, props: {} },
     "youtube-video-downloader": { component: YouTubeDownloader, props: {} },
     "youtube-video-statistics": { component: YouTubeChannelIDFinderTool, props: {} },

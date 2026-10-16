@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import WordCounterTool from "@/components/tools/text/WordCounterTool";
+import NumberToWordTool from "@/components/tools/text/NumberToWordTool";
 import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
@@ -20,7 +20,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<WordCounterTool />
+			<NumberToWordTool />
 		</ToolLayout>
 	);
 }
