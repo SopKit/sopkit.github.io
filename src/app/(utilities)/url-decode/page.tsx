@@ -20,7 +20,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<UrlCodecTool mode="decode" />
+			<UrlCodecTool mode="dec" />
 		</ToolLayout>
 	);
 }

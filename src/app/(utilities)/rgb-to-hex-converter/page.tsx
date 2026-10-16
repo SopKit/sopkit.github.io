@@ -20,7 +20,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<RgbHexConverter mode="rgb-hex" />
+			<RgbHexConverter mode="rgb2hex" />
 		</ToolLayout>
 	);
 }
