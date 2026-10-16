@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
+import VisualSitemapTool from "@/components/tools/seo/VisualSitemapTool";
 import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
@@ -20,7 +20,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<BuiltInSafeHttp toolId="visual-sitemap" />
+			<VisualSitemapTool />
 		</ToolLayout>
 	);
 }
