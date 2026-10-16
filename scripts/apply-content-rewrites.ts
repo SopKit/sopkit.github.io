@@ -3,20 +3,32 @@
  * @description Surgically replaces entries in src/data/generated-manual-content.ts
  * with rewritten content produced as JSON files by content rewrite batches.
  *
- * Input: JSON files under a rewrites directory (default ~/claude-seo/rewrites),
- * each shaped:
- *   { "<tool-id>": { "features": string[], "privacyFaq": { "question": string, "answer": string } } }
+ * Default mode (features + privacy FAQ):
+ *   Input: JSON files under a rewrites directory (default ~/claude-seo/rewrites),
+ *   each shaped:
+ *     { "<tool-id>": { "features": string[], "privacyFaq": { "question", "answer" } } }
+ *   For every id:
+ *     - features are replaced with the rewritten list
+ *     - the templated privacy FAQ (if present) is replaced with the unique one,
+ *       otherwise the unique FAQ is appended
+ *     - every other field (whatItIs, howToUse, other faqs, seoDescription) is preserved
  *
- * For every id found:
- *   - features are replaced with the rewritten list
- *   - the templated privacy FAQ (if present) is replaced with the unique one,
- *     otherwise the unique FAQ is appended
- *   - every other field (whatItIs, howToUse, other faqs, seoDescription) is preserved
+ * FAQ mode (--faq; template family replacement):
+ *   Input: JSON files under a directory (default ~/claude-seo/faqs), each shaped:
+ *     { "<tool-id>": { "faqs": [{ "question", "answer" }, ...], "removeQuestions"?: string[] } }
+ *   For every id:
+ *     - the four name-interpolated template questions (and any question listed in
+ *       removeQuestions) are removed
+ *     - the rewritten faqs are inserted where the first template question sat,
+ *       so the unique privacy FAQ and any hand-written FAQs keep their order
+ *     - features and all other fields are preserved
  *
  * The entry block boundaries are located with a string-aware brace scanner so
  * only replaced entries change in the generated content file.
  *
- * Usage: npx tsx scripts/apply-content-rewrites.ts [--dry-run]
+ * Usage:
+ *   npx tsx scripts/apply-content-rewrites.ts [--dry-run]
+ *   npx tsx scripts/apply-content-rewrites.ts --faq [--dry-run]
  */
 
 import fs from "node:fs";
@@ -25,18 +37,33 @@ import path from "node:path";
 import { MANUAL_TOOL_CONTENT } from "../src/data/generated-manual-content";
 
 const FILE = path.join(process.cwd(), "src/data/generated-manual-content.ts");
-const REWRITES_DIR =
-	process.env.REWRITES_DIR || path.join(os.homedir(), "claude-seo", "rewrites");
+const FAQ_MODE = process.argv.includes("--faq");
 const DRY_RUN = process.argv.includes("--dry-run");
+const REWRITES_DIR = FAQ_MODE
+	? process.env.FAQ_REWRITES_DIR || path.join(os.homedir(), "claude-seo", "faqs")
+	: process.env.REWRITES_DIR || path.join(os.homedir(), "claude-seo", "rewrites");
 
 const BOILERPLATE_QUESTIONS = [
 	"How does SopKit protect my privacy when I use this tool?",
 	"How does SopKit protect my privacy?",
 ];
 
+/** Name-interpolated FAQ templates that ship on ~520 tools. */
+export const TEMPLATE_FAQ_PATTERNS = [
+	/^What exactly does .+ do\?$/,
+	/^Is .+ really free\? Are there any hidden charges\?$/,
+	/^Do I need to create an account or sign up to use .+\?$/,
+	/^Can I use .+ on mobile devices or tablets\?$/,
+];
+
 interface Rewrite {
 	features: string[];
 	privacyFaq: { question: string; answer: string };
+}
+
+interface FaqRewrite {
+	faqs: { question: string; answer: string }[];
+	removeQuestions?: string[];
 }
 
 interface ManualEntry {
@@ -78,16 +105,19 @@ function findEntryEnd(src: string, startBrace: number): number {
 	throw new Error("Unterminated entry block while scanning.");
 }
 
-function loadRewrites(): Map<string, Rewrite> {
-	const updates = new Map<string, Rewrite>();
+function loadRewrites<T>(): Map<string, T> {
+	const updates = new Map<string, T>();
 	if (!fs.existsSync(REWRITES_DIR)) {
 		throw new Error(`Rewrites directory not found: ${REWRITES_DIR}`);
 	}
-	const files = fs.readdirSync(REWRITES_DIR).filter((f) => f.endsWith(".json"));
+	const files = fs
+		.readdirSync(REWRITES_DIR)
+		.filter((f) => f.endsWith(".json"))
+		.sort();
 	for (const file of files) {
 		const data = JSON.parse(
 			fs.readFileSync(path.join(REWRITES_DIR, file), "utf8"),
-		) as Record<string, Rewrite>;
+		) as Record<string, T>;
 		for (const [id, value] of Object.entries(data)) {
 			updates.set(id, value);
 		}
@@ -96,9 +126,36 @@ function loadRewrites(): Map<string, Rewrite> {
 	return updates;
 }
 
-function main() {
+/** Replace the `<id>` entry block in `source` with a serialized `newValue`. */
+function spliceEntry(
+	source: string,
+	id: string,
+	newValue: ManualEntry,
+): string | null {
+	const anchor = `\n  "${id}": {`;
+	const at = source.indexOf(anchor);
+	if (at === -1) return null;
+	const start = at + 1;
+	const braceIdx = at + anchor.length - 1;
+	const endBrace = findEntryEnd(source, braceIdx);
+
+	const body = JSON.stringify(newValue, null, 2)
+		.split("\n")
+		.map((line, idx) => (idx === 0 ? line : `  ${line}`))
+		.join("\n");
+	const block = `  "${id}": ${body},\n`;
+
+	let end = endBrace + 1;
+	if (source[end] === ",") end++;
+	if (source[end] === "\r") end++;
+	if (source[end] === "\n") end++;
+
+	return source.slice(0, start) + block + source.slice(end);
+}
+
+function applyContentRewrites(): void {
 	console.log("🔧 Applying content rewrites to generated-manual-content.ts\n");
-	const rewrites = loadRewrites();
+	const rewrites = loadRewrites<Rewrite>();
 	console.log(`Total rewrites loaded: ${rewrites.size}\n`);
 
 	let source = fs.readFileSync(FILE, "utf8");
@@ -136,29 +193,12 @@ function main() {
 			faqs,
 		};
 
-		// Locate the entry block in the source text.
-		const anchor = `\n  "${id}": {`;
-		const at = source.indexOf(anchor);
-		if (at === -1) {
+		const next = spliceEntry(source, id, newValue);
+		if (next === null) {
 			skipped.push(`${id} (anchor not found)`);
 			continue;
 		}
-		const start = at + 1;
-		const braceIdx = at + anchor.length - 1;
-		const endBrace = findEntryEnd(source, braceIdx);
-
-		const body = JSON.stringify(newValue, null, 2)
-			.split("\n")
-			.map((line, idx) => (idx === 0 ? line : `  ${line}`))
-			.join("\n");
-		const block = `  "${id}": ${body},\n`;
-
-		let end = endBrace + 1;
-		if (source[end] === ",") end++;
-		if (source[end] === "\r") end++;
-		if (source[end] === "\n") end++;
-
-		source = source.slice(0, start) + block + source.slice(end);
+		source = next;
 		applied++;
 	}
 
@@ -173,4 +213,83 @@ function main() {
 	}
 }
 
-main();
+function applyFaqRewrites(): void {
+	console.log("🔧 Applying FAQ family rewrites to generated-manual-content.ts\n");
+	const rewrites = loadRewrites<FaqRewrite>();
+	console.log(`Total FAQ rewrites loaded: ${rewrites.size}\n`);
+
+	const isTemplate = (question: string, extra: string[] | undefined): boolean =>
+		TEMPLATE_FAQ_PATTERNS.some((p) => p.test(question)) ||
+		(extra?.includes(question) ?? false);
+
+	let source = fs.readFileSync(FILE, "utf8");
+	let applied = 0;
+	const skipped: string[] = [];
+
+	for (const [id, rewrite] of rewrites) {
+		const old = MANUAL_TOOL_CONTENT[id] as ManualEntry | undefined;
+		if (!old) {
+			skipped.push(`${id} (unknown id)`);
+			continue;
+		}
+		if (
+			!Array.isArray(rewrite.faqs) ||
+			rewrite.faqs.length < 2 ||
+			rewrite.faqs.some((f) => !f?.question || !f?.answer)
+		) {
+			skipped.push(`${id} (invalid faqs)`);
+			continue;
+		}
+		if (
+			rewrite.faqs.some((f) =>
+				TEMPLATE_FAQ_PATTERNS.some((p) => p.test(f.question)),
+			)
+		) {
+			skipped.push(`${id} (new faq still matches template pattern)`);
+			continue;
+		}
+
+		const firstTemplateIdx = old.faqs.findIndex((q) =>
+			isTemplate(q.question, rewrite.removeQuestions),
+		);
+		if (firstTemplateIdx === -1 && rewrite.faqs.length === 0) {
+			skipped.push(`${id} (no template faq found)`);
+			continue;
+		}
+		const remaining = old.faqs.filter(
+			(q) => !isTemplate(q.question, rewrite.removeQuestions),
+		);
+		const insertAt =
+			firstTemplateIdx === -1
+				? remaining.length
+				: Math.min(firstTemplateIdx, remaining.length);
+		const faqs = [
+			...remaining.slice(0, insertAt),
+			...rewrite.faqs,
+			...remaining.slice(insertAt),
+		];
+
+		const newValue: ManualEntry = { ...old, faqs };
+
+		const next = spliceEntry(source, id, newValue);
+		if (next === null) {
+			skipped.push(`${id} (anchor not found)`);
+			continue;
+		}
+		source = next;
+		applied++;
+	}
+
+	if (!DRY_RUN) {
+		fs.writeFileSync(FILE, source);
+	}
+	console.log(
+		`${DRY_RUN ? "[dry-run] Would apply" : "Applied"} ${applied} FAQ rewrites.`,
+	);
+	if (skipped.length) {
+		console.log(`Skipped ${skipped.length}: ${skipped.join(", ")}`);
+	}
+}
+
+if (FAQ_MODE) applyFaqRewrites();
+else applyContentRewrites();
