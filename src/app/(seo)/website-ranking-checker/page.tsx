@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
+import WebsiteRankingCheckerTool from "@/components/tools/seo/WebsiteRankingCheckerTool";
 import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
@@ -20,7 +20,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<BuiltInSafeHttp toolId="website-ranking-checker" />
+			<WebsiteRankingCheckerTool />
 		</ToolLayout>
 	);
 }
