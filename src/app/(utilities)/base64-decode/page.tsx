@@ -20,7 +20,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<Base64Tool />
+			<Base64Tool initialMode="decode" />
 		</ToolLayout>
 	);
 }
