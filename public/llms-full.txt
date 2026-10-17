@@ -1235,7 +1235,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/attio-api-key-tester
 
 #### [Binary to ASCII Converter](https://sopkit.space/binary-to-ascii-converter)
-- **Description**: Transform binary code (0s and 1s) into readable ASCII text instantly. Our free online converter is fast, accurate, and works entirely in your browser. No signup required.
+- **Description**: Convert 8-bit binary groups into ASCII letters, digits and punctuation, handling spaced octets or a single unbroken bit run and letting you swap direction.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/binary-to-ascii-converter
 
 #### [Binary to Decimal Converter](https://sopkit.space/binary-to-decimal-converter)
@@ -1247,7 +1247,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/binary-to-octal-converter
 
 #### [Binary to Text Converter](https://sopkit.space/binary-to-text-converter)
-- **Description**: Decode binary strings into readable text instantly. Our free online tool is perfect for discovering hidden messages or debugging data streams. 100% free and secure.
+- **Description**: Recover readable text from raw binary bytes: paste 8-bit groups separated by spaces, commas or nothing at all and copy the decoded message.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/binary-to-text-converter
 
 #### [Brevo API Key Tester](https://sopkit.space/api-key-tester/brevo)
@@ -1299,11 +1299,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/decimal-to-hex-converter
 
 #### [Decimal to Octal Converter](https://sopkit.space/decimal-to-octal-converter)
-- **Description**: Convert decimal numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for computer science and technical tasks. No signup required.
+- **Description**: Convert base-10 integers into base-8 octal notation live, choose how the output is delimited, and flip the direction to turn octal back into decimal.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/decimal-to-octal-converter
 
 #### [Decimal to Text Converter](https://sopkit.space/decimal-to-text-converter)
-- **Description**: Convert decimal character codes back to readable text instantly. Our free online tool helps you decode numeric data streams and debug text processing tasks in your browser.
+- **Description**: Turn space-separated decimal code points back into letters and punctuation, recovering text from numeric dumps, packet captures and old exports.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/decimal-to-text-converter
 
 #### [DeepSeek API Key Tester](https://sopkit.space/api-key-tester/deepseek)
@@ -1343,7 +1343,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/hex-to-decimal-converter
 
 #### [HEX to Octal Converter](https://sopkit.space/hex-to-octal-converter)
-- **Description**: Convert hexadecimal values to octal format instantly. Our free online converter helps with computer science base transformations and data processing in your browser.
+- **Description**: Translate base-16 values such as FF, A0 or 7F into base-8 octal live, with delimiter options and a swap control for octal-to-hex work.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/hex-to-octal-converter
 
 #### [HEX to Text Converter](https://sopkit.space/hex-to-text-converter)
@@ -1427,7 +1427,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/json-validator
 
 #### [JSON Viewer](https://sopkit.space/json-viewer)
-- **Description**: Explore JSON in collapsible tree, graph and code views with search. Handles huge files — free, no signup.
+- **Description**: Paste JSON to validate it, reformat with your chosen indent, check size and structure stats, then copy or download the formatted or minified result.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/json-viewer
 
 #### [LeadGenius API Key Tester](https://sopkit.space/api-key-tester/leadgenius)
@@ -1471,7 +1471,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/octal-to-hex-converter
 
 #### [Octal to Text Converter](https://sopkit.space/octal-to-text-converter)
-- **Description**: Convert octal character codes back to readable text instantly. Our free online tool helps you decode data streams and debug text processing tasks in your browser.
+- **Description**: Decode octal byte values into readable characters: paste three-digit codes from manifests or escape sequences and read the plain text they spell.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/octal-to-text-converter
 
 #### [OpenAI API Key Tester](https://sopkit.space/api-key-tester/openai)
@@ -1598,11 +1598,11 @@ Agent Policy: https://sopkit.space/ai.txt
 ### Utility Tools Tools
 
 #### [AdSense Calculator](https://sopkit.space/adsense-calculator)
-- **Description**: Calculate estimated Google AdSense earnings based on page views, CTR, and RPM/CPC rates instantly in your browser.
+- **Description**: Model AdSense revenue from pageviews, ad slots per page, fill rate, CTR and CPC, with daily, monthly and yearly totals plus pageviews needed per goal.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/adsense-calculator
 
 #### [Age Calculator](https://sopkit.space/age-calculator)
-- **Description**: Calculate exact age in years, months and days from any birthdate. Birthday countdown included — free, no signup.
+- **Description**: Work out age in exact years, months and days as of any date, plus total days lived, the weekday you were born and a countdown to the next birthday.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/age-calculator
 
 #### [Angle Converter](https://sopkit.space/angle-converter)
@@ -1622,7 +1622,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/average-calculator
 
 #### [Base64 Decode](https://sopkit.space/base64-decode)
-- **Description**: Decode Base64 strings back to their original plain text instantly. Our privacy-first tool processes everything in your browser, ensuring your data never leaves your device.
+- **Description**: Paste a Base64 string and watch it turn back into readable text as you type, including accented and non-Latin characters, then copy or save the result.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/base64-decode
 
 #### [Base64 Encode](https://sopkit.space/base64-encode)
@@ -1694,15 +1694,15 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/domain-to-ip-converter
 
 #### [Each Converter](https://sopkit.space/each-converter)
-- **Description**: Convert 'each' pricing to bulk totals and unit costs. Compare pack deals instantly — free, no signup.
+- **Description**: Enter a px, rem or em value from a stylesheet and see its counterparts computed at a 16px root, with a swap control to flip the conversion direction.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/each-converter
 
 #### [Energy Converter](https://sopkit.space/energy-converter)
-- **Description**: Convert energy between joules, calories, kWh and BTU. Physics and bills alike — free, no signup.
+- **Description**: Enter an energy value in joules, kilojoules, calories, kilocalories, kWh or BTU and read all of the other units side by side in one view.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/energy-converter
 
 #### [Facebook ID Finder](https://sopkit.space/facebook-id-finder)
-- **Description**: Find the numeric ID of any Facebook profile, page or post from its URL. For developers — free, no signup.
+- **Description**: Fetch a Facebook profile, page or post link and inspect the resolved address, status code and a markup excerpt for numeric ID clues.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/facebook-id-finder
 
 #### [FAQ Schema Generator](https://sopkit.space/faq-schema-generator)
@@ -1710,11 +1710,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/faq-schema-generator
 
 #### [Frequency Converter](https://sopkit.space/frequency-converter)
-- **Description**: Convert frequency between Hz, kHz, MHz and GHz. Radio and audio math — free, no signup.
+- **Description**: Convert a frequency between Hz, kHz, MHz and RPM as you type, covering audio gear, radio bands and motor nameplate figures.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/frequency-converter
 
 #### [Get HTTP Headers](https://sopkit.space/get-http-headers)
-- **Description**: Inspect HTTP response headers of any URL: server, caching, security and redirects. Free, no signup.
+- **Description**: Point the tool at a public URL and read back its head markup: title tag, meta tags and linked scripts, retrieved through a safety-checked proxy.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/get-http-headers
 
 #### [GST Calculator](https://sopkit.space/gst-calculator)
@@ -1722,7 +1722,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/gst-calculator
 
 #### [HEX to RGB Converter](https://sopkit.space/hex-to-rgb-converter)
-- **Description**: Convert HEX colors to RGB values with live preview. Copy for CSS in one click — free, no signup.
+- **Description**: Convert a #RRGGBB colour into an rgb() triplet, watch the swatch update and copy the values into CSS, canvas calls or a design tool.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/hex-to-rgb-converter
 
 #### [Hosting Checker](https://sopkit.space/hosting-checker)
@@ -1750,7 +1750,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/internet-speed-test
 
 #### [IP Address Lookup](https://sopkit.space/ip-address-lookup)
-- **Description**: See your public IP, location, ISP and timezone instantly. Network details — free, no signup.
+- **Description**: Look up your public IP through an external geolocation service: city, region, ISP, ASN, timezone and map coordinates, with a button to open Maps.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ip-address-lookup
 
 #### [Length Converter](https://sopkit.space/length-converter)
@@ -1762,23 +1762,23 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/loan-calculator
 
 #### [Margin Calculator](https://sopkit.space/margin-calculator)
-- **Description**: Calculate profit margins, markups and breakeven points. Pricing clarity — free, no signup.
+- **Description**: Feed in cost and sell price to see the gross margin percentage, useful when quoting, listing or repricing a product or service.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/margin-calculator
 
 #### [MD5 Generator](https://sopkit.space/md5-generator)
-- **Description**: Generate MD5 hashes for passwords and file checksums. Instant digests — free, no signup.
+- **Description**: Hash pasted text or a text file with MD5 and see the matching SHA-1, SHA-256, SHA-512 and SHA-3 digests side by side on one screen.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/md5-generator
 
 #### [SHA256 Hash Generator](https://sopkit.space/sha256-hash-generator)
-- **Description**: Calculate secure SHA-256 and HMAC hashes in your browser. 100% client-side crypto — free forever.
+- **Description**: Compute a SHA-256 digest from pasted text or an uploaded text file, with SHA-1, SHA-512, SHA-3 and MD5 results shown alongside for comparison.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/sha256-hash-generator
 
 #### [Number to Roman Numerals](https://sopkit.space/number-to-roman-numerals)
-- **Description**: Convert numbers to Roman numerals (MMXXVI) and back. History homework — free, no signup.
+- **Description**: Enter a whole number and get the equivalent in Roman numerals, with a copy button for homework answers, inscriptions or chapter headings.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/number-to-roman-numerals
 
 #### [Pace Converter](https://sopkit.space/pace-converter)
-- **Description**: Convert running pace between min/km, min/mile and speed. Race planning — free, no signup.
+- **Description**: Translate a running pace such as 5:30 per kilometre into minutes per mile or seconds per metre, handy when a training plan uses different units.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pace-converter
 
 #### [Page Size Checker](https://sopkit.space/page-size-checker)
@@ -1786,7 +1786,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/page-size-checker
 
 #### [Parts Per Converter](https://sopkit.space/parts-per-converter)
-- **Description**: Convert ppm, ppb, percent and mg/L concentrations. Lab and pool math — free, no signup.
+- **Description**: Express a concentration as a ratio, percent, ppm or ppb and see the other three forms update together, for dilution and water testing.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/parts-per-converter
 
 #### [Secure Password Generator](https://sopkit.space/secure-password-generator)
@@ -1802,11 +1802,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/paypal-fee-calculator
 
 #### [Percentage Calculator](https://sopkit.space/percentage-calculator)
-- **Description**: Find percentages, increases, decreases and reverses in one box. Everyday math — free, no signup.
+- **Description**: Type a part and a whole to see what share the first is of the second, returned as a percentage to four decimal places for quick checks.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/percentage-calculator
 
 #### [Power Converter](https://sopkit.space/power-converter)
-- **Description**: Convert power between watts, kilowatts, horsepower and BTU/hr. Engine math — free, no signup.
+- **Description**: Translate watts, kilowatts and mechanical horsepower into one another live, so an engine spec and an appliance label can be compared directly.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/power-converter
 
 #### [Pressure Converter](https://sopkit.space/pressure-converter)
@@ -1818,15 +1818,15 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/privacy-policy-generator
 
 #### [Probability Calculator](https://sopkit.space/probability-calculator)
-- **Description**: Calculate odds for dice, cards, coins and events with steps. Stats clarity — free, no signup.
+- **Description**: Plug in a success chance, a number of trials and a target count to read the binomial chance of hitting that count exactly, in scientific notation.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/probability-calculator
 
 #### [QR Code Decoder](https://sopkit.space/qr-code-decoder)
-- **Description**: Read QR codes from uploaded images to reveal links and text. Instant decode — free, no signup.
+- **Description**: Load a PNG, JPG or WebP image containing a QR code and read the payload it holds, ready to copy, open or revisit from a short scan history.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/qr-code-decoder
 
 #### [QR Code Generator](https://sopkit.space/qr-code-generator)
-- **Description**: Make custom QR codes with colors, logos and frames for links, Wi-Fi and UPI. Free, no signup.
+- **Description**: Encode a link or text message as a QR code, adjust its size, quiet-zone margin and two colours, then export a PNG or SVG file for print.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/qr-code-generator
 
 #### [Random UUID Generator](https://sopkit.space/random-uuid-generator)
@@ -1834,7 +1834,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/random-uuid-generator
 
 #### [Reactive Energy Converter](https://sopkit.space/reactive-energy-converter)
-- **Description**: Convert reactive energy between kVArh, MVArh and more. Power systems math — free, no signup.
+- **Description**: Swap an energy reading between joules, kilojoules, calories, kilocalories, kilowatt-hours and BTU from a single input, with a full unit table.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/reactive-energy-converter
 
 #### [Reactive Power Converter](https://sopkit.space/reactive-power-converter)
@@ -1854,7 +1854,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/roman-numerals-to-number
 
 #### [Sales Tax Calculator](https://sopkit.space/sales-tax-calculator)
-- **Description**: Add US state sales tax to prices or back it out. Checkout math — free, no signup.
+- **Description**: Add sales tax to a net amount at any rate you enter, splitting out the tax and gross totals separately for invoices, quotes and pricing work.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/sales-tax-calculator
 
 #### [Screen Resolution Simulator](https://sopkit.space/screen-resolution-simulator)
@@ -1866,7 +1866,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/server-status-checker
 
 #### [Speed Converter](https://sopkit.space/speed-converter)
-- **Description**: Convert speed between km/h, mph, knots, m/s and Mach. Travel math — free, no signup.
+- **Description**: Move a speed figure between m/s, km/h, mph, knots and feet per second as you type, with the remaining units updating in the same panel.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/speed-converter
 
 #### [Temperature Converter](https://sopkit.space/temperature-converter)
@@ -1882,19 +1882,19 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/torque-converter
 
 #### [URL Decode](https://sopkit.space/url-decode)
-- **Description**: Fast and privacy-conscious URL Decode to decode web links and URI parameters directly in your browser with no server logging.
+- **Description**: Read percent-encoded links and query strings as plain text again: decoding happens live as you paste, with a one-click copy of the result.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/url-decode
 
 #### [URL Encode](https://sopkit.space/url-encode)
-- **Description**: Fast and privacy-conscious URL Encode to encode web links and URI parameters directly in your browser with no server logging.
+- **Description**: Escape spaces, accents, slashes and ampersands into percent-encoded form for query strings, emails and analytics tags, with instant output.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/url-encode
 
 #### [URL Opener](https://sopkit.space/url-opener)
-- **Description**: Fast and privacy-conscious URL Opener to opener web links and URI parameters directly in your browser with no server logging.
+- **Description**: Paste a link, review the parsed host, path and query, then launch it in a new tab from the same panel once you know exactly where it goes.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/url-opener
 
 #### [URL Parser](https://sopkit.space/url-parser)
-- **Description**: Fast and privacy-conscious URL Parser to parser web links and URI parameters directly in your browser with no server logging.
+- **Description**: Break an address into protocol, hostname, port, path, query string and fragment so you can see every part of a long link at a glance.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/url-parser
 
 #### [URL Rewriting Tool](https://sopkit.space/url-rewriting-tool)
@@ -1906,11 +1906,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/url-shortener
 
 #### [UTM Builder](https://sopkit.space/utm-builder)
-- **Description**: Easily build campaign URLs with UTM parameters for Google Analytics tracking. Free online UTM builder for marketing campaigns, social media, and email links — 100% private, no signup.
+- **Description**: Build a tracked campaign URL by filling the five utm_ fields: source, medium, campaign, term and content, then copy the finished link.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/utm-builder
 
 #### [Voltage Converter](https://sopkit.space/voltage-converter)
-- **Description**: Convert voltage between volts, millivolts and kilovolts. Circuit math — free, no signup.
+- **Description**: Type a voltage in V, mV or kV and read the matching values instantly, helpful for battery packs, sensor datasheets and circuit diagrams.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/voltage-converter
 
 #### [Volume Converter](https://sopkit.space/volume-converter)
@@ -1918,7 +1918,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/volume-converter
 
 #### [Volumetric Flow Rate Converter](https://sopkit.space/volumetric-flow-rate-converter)
-- **Description**: Convert flow rates: L/min, GPM, CFM and m³/h. Plumbing math — free, no signup.
+- **Description**: Enter a flow rate in m³/s, L/min or US gallons per minute and see the same quantity expressed in the other units of the preset as you type.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/volumetric-flow-rate-converter
 
 #### [Weight Converter](https://sopkit.space/weight-converter)
@@ -2001,11 +2001,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/seo-audit-tool
 
 #### [Backlink Checker](https://sopkit.space/backlink-checker)
-- **Description**: Analyze backlinks for any website with our free backlink checker. Discover referring domains, anchor texts, and link quality metrics instantly. No signup required, unlimited checks, SEO-grade data.
+- **Description**: Probe a target URL through a safety-checked fetch before a backlink audit: read the redirect chain, final address, status and page excerpt.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/backlink-checker
 
 #### [Bulk Keyword Rank Checker](https://sopkit.space/bulk-keyword-rank-checker)
-- **Description**: Check Google rankings for multiple keywords instantly with our free bulk keyword rank checker. Track keyword positions, monitor competitors, and get accurate SERP data. No signup required.
+- **Description**: Work through the URLs behind your keyword list: each safety-checked fetch reports the resolved address, status code and a text snippet.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/bulk-keyword-rank-checker
 
 #### [Google Cache Checker](https://sopkit.space/google-cache-checker)
@@ -2017,7 +2017,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/google-index-checker
 
 #### [Keyword Density Checker](https://sopkit.space/keyword-density-checker)
-- **Description**: Measure keyword frequency to dodge stuffing penalties. TF analysis — free, no signup.
+- **Description**: Enter a base keyword to see a sample table of related search terms, each row showing an illustrative search volume, CPC figure and difficulty label.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/keyword-density-checker
 
 #### [Keywords Suggestion Tool](https://sopkit.space/keywords-suggestion-tool)
@@ -2041,7 +2041,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/seotoolkit
 
 #### [Twitter Card Generator](https://sopkit.space/twitter-card-generator)
-- **Description**: Create Twitter summary cards with images for bigger, clickable tweets. Free, no signup.
+- **Description**: Generate the twitter:card meta block for a page: choose summary or summary_large_image, add title, description, image URL and a site handle.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/twitter-card-generator
 
 #### [Visual Sitemap Generator](https://sopkit.space/visual-sitemap)
@@ -2049,7 +2049,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/visual-sitemap
 
 #### [Website Ranking Checker](https://sopkit.space/website-ranking-checker)
-- **Description**: Track keyword positions across Google results daily. Ranking history — free, no signup.
+- **Description**: Run a domain and the panel explains why live Google positions require SERP data feeds, then points to free routes for checking your own rankings.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/website-ranking-checker
 
 #### [Sitemap Url Downloader](https://sopkit.space/sitemap-url-downloader)
@@ -2072,11 +2072,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ai-prompt-improver
 
 #### [AI Token Counter & Cost Calculator](https://sopkit.space/ai-token-counter)
-- **Description**: Estimate tokens and API costs for GPT-5, Claude, Gemini, and Llama before you hit send. Live estimates, model price table, and batch paste support that runs fully in your browser.
+- **Description**: Paste a prompt to estimate its token count and cost against a price table for GPT, Claude, Gemini and Llama models, including a batch tab for lists.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ai-token-counter
 
 #### [Prompt Template Generator](https://sopkit.space/prompt-template-generator)
-- **Description**: Build reusable AI prompt templates with {{variables}}, presets for writing, coding, and marketing, live preview, and copy-ready output. Private and free forever.
+- **Description**: Compose reusable AI prompt templates with {{variable}} placeholders: choose a preset, fill in your values and copy the rendered prompt for later.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/prompt-template-generator
 
 #### [Negative Prompt Generator](https://sopkit.space/negative-prompt-generator)
@@ -2115,19 +2115,19 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/new-tools
 
 #### [About](https://sopkit.space/about)
-- **Description**: Free About online. About allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
+- **Description**: Why SopKit exists, how a browser-first toolkit grew, the privacy principles behind it and the approach taken to keep every utility useful.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/about
 
 #### [Blog](https://sopkit.space/blog)
-- **Description**: Free Blog online. Blog allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
+- **Description**: Tool tutorials, comparisons, privacy notes and productivity walkthroughs from the SopKit team, listed with publish dates and reading times.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/blog
 
 #### [Contact](https://sopkit.space/contact)
-- **Description**: Free Contact online. Contact allows you to perform online tasks quickly and easily. 100% free, no signup required, and privacy-focused processing in your browser.
+- **Description**: Every way to reach the team: email support for tool requests and feedback, or the GitHub tracker for bug reports and code contributions.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/contact
 
 #### [Search All Tools](https://sopkit.space/search)
-- **Description**: Search and browse our collection of 600+ free online tools across 19 categories. Find the perfect browser-based utility for developers, designers, students, and everyday tasks — all 100% free and private.
+- **Description**: Start typing in one search box or filter by category to narrow the whole SopKit library down to the converter, calculator or checker you need.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/search
 
 #### [Fun Generators](https://sopkit.space/generators)
@@ -2142,7 +2142,7 @@ Agent Policy: https://sopkit.space/ai.txt
 ### Company Tools
 
 #### [Free Privacy Policy Online](https://sopkit.space/privacy)
-- **Description**: Read the SopKit Privacy Policy. We explain what data we collect, how we protect it, and how our privacy-first browser-based tools work. No signup required.
+- **Description**: The SopKit privacy policy in plain language: what is collected, which tools run locally, which call outside services, and the consent choices you keep.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/privacy
 
 #### [Free Terms of Use Online](https://sopkit.space/terms)
@@ -2185,7 +2185,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/how-to-format-json-properly
 
 #### [Best Free Converters in 2026 (File, Data, and Media)](https://sopkit.space/best-free-converters-in-2026)
-- **Description**: The best free converters in 2026 for JSON, CSV, XML, images, and documents. No signup required.
+- **Description**: A 2026 guide to the strongest no-cost converters for files, data and media, comparing JSON, CSV and XML swaps plus image and document conversion.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/best-free-converters-in-2026
 
 
@@ -2303,7 +2303,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/compound-interest-calculator
 
 #### [Mortgage Calculator](https://sopkit.space/mortgage-calculator)
-- **Description**: Estimate your monthly mortgage payment, total interest, and total cost from home price, down payment, rate, and term. Free, no signup.
+- **Description**: Estimate the monthly principal-and-interest payment for a home loan, then see the amount borrowed, total interest and total paid over the term.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/mortgage-calculator
 
 #### [Car Loan Calculator](https://sopkit.space/car-loan-calculator)
@@ -2319,11 +2319,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/savings-goal-calculator
 
 #### [Tip Calculator](https://sopkit.space/tip-calculator)
-- **Description**: Calculate the tip, total, and amount per person for any bill. Quick gratuity and bill-splitting calculator, free and no signup.
+- **Description**: Split a bill honestly: enter the amount, tip percentage and number of people to get the tip, grand total and each diner's share in one pass.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/tip-calculator
 
 #### [BMI Calculator](https://sopkit.space/bmi-calculator)
-- **Description**: Calculate your Body Mass Index from height and weight and see your BMI category. Free, private BMI calculator that runs in your browser.
+- **Description**: Turn weight in kilograms and height in centimetres into a BMI number and its weight category, with a reminder that the figure ignores body composition.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/bmi-calculator
 
 #### [Fuel Cost Calculator](https://sopkit.space/fuel-cost-calculator)
@@ -2406,7 +2406,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/upsc-photo-resizer
 
 #### [SSC Photo Resizer](https://sopkit.space/ssc-photo-resizer)
-- **Description**: Resize and compress SSC photos to 350x450 pixels and 20KB-50KB, plus resize signatures to 10KB-20KB. No signup required.
+- **Description**: Resize an SSC photo to 350x450 pixels inside the 20-50KB band, or switch to signature mode for 350x200 pixels at 10-20KB, then save the JPEG.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ssc-photo-resizer
 
 #### [Signature Resizer Under 20KB](https://sopkit.space/signature-resizer-under-20kb)
@@ -2414,7 +2414,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/signature-resizer-under-20kb
 
 #### [NEET Photo Resizer](https://sopkit.space/neet-photo-resizer)
-- **Description**: Resize and compress NEET application photos and signatures for online form uploads. Free, private, and no signup required.
+- **Description**: Fit a NEET photo to 480x640 pixels between 10KB and 200KB, or resize a signature to 350x150 pixels at 4-30KB, with a compliance check.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/neet-photo-resizer
 
 #### [JEE Photo Resizer](https://sopkit.space/jee-photo-resizer)
@@ -2430,7 +2430,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/railway-exam-photo-resizer
 
 #### [Bank Exam Photo Resizer](https://sopkit.space/ibps-photo-resizer)
-- **Description**: Resize and compress photos and signatures for IBPS, SBI, and other bank exam application forms. Free online photo resizer for government exams — all processing done locally in your browser.
+- **Description**: Tune width, height and the KB window for a bank-exam photo or signature, starting from 350x350 pixels and 20-300KB, then export the JPEG.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ibps-photo-resizer
 
 #### [PAN Card Photo Resizer](https://sopkit.space/pan-card-photo-resizer)
@@ -2473,7 +2473,7 @@ Agent Policy: https://sopkit.space/ai.txt
 ### Health & Fitness Tools
 
 #### [BMR Calculator (Basal Metabolic Rate)](https://sopkit.space/bmr-calculator)
-- **Description**: Calculate your Basal Metabolic Rate (BMR) to understand daily calorie needs for weight management. Free online BMR calculator using Mifflin-St Jeor equation — 100% private, no data storage.
+- **Description**: Compare two equations for basal metabolic rate: Mifflin-St Jeor and revised Harris-Benedict, each returning kcal/day from weight, height, age and sex.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/bmr-calculator
 
 #### [TDEE Calculator](https://sopkit.space/tdee-calculator)
@@ -2504,11 +2504,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/email-subject-line-tester
 
 #### [AI Text Detector](https://sopkit.space/ai-text-detector)
-- **Description**: Detect AI-generated text with a free browser-based analyzer. Check if content was written by ChatGPT, Claude, or other AI models — privately, no uploads.
+- **Description**: Paste at least a couple of sentences to get a rough AI-likelihood percentage, calculated from sentence rhythm, stock phrase spotting and word variety.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ai-text-detector
 
 #### [Email Validator](https://sopkit.space/email-validator)
-- **Description**: Validate email addresses for format, domain, and deliverability. Check if an email is valid, disposable, or from a free provider — privately in your browser.
+- **Description**: Run an address through three checks: syntax against a practical pattern, a list of known throwaway domains and a live MX lookup via Google's DNS resolver.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/email-validator
 
 #### [Spam Word Checker](https://sopkit.space/spam-word-checker)
@@ -2516,11 +2516,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/spam-word-checker
 
 #### [Phishing URL Checker](https://sopkit.space/phishing-url-checker)
-- **Description**: Check if a URL is safe or a phishing site. Analyze links for suspicious patterns, domain age, and known threats — privately in your browser.
+- **Description**: Check a suspicious link for brand lookalikes, raw IP hosts, punycode tricks, hyphen counts and risky TLDs, then read the risk score and flags.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/phishing-url-checker
 
 #### [Password Strength Checker](https://sopkit.space/password-strength-checker)
-- **Description**: Check password strength and get security recommendations. Analyze entropy, common patterns, and breach exposure — all locally in your browser.
+- **Description**: See how a password scores out of 100 on length, character variety and pattern checks, with pointed suggestions for the exact weaknesses found.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/password-strength-checker
 
 #### [Security Headers Checker](https://sopkit.space/security-headers-checker)
@@ -2552,7 +2552,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/email-header-analyzer
 
 #### [AI Image Detector](https://sopkit.space/ai-image-detector)
-- **Description**: Detect AI-generated images and deepfakes. Analyze image metadata and patterns to identify synthetic media — privately in your browser.
+- **Description**: Load a picture to get a rough synthetic-image score that considers file format, resolution, aspect ratio and file size relative to dimensions.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ai-image-detector
 
 #### [Data Breach Checker](https://sopkit.space/data-breach-checker)
@@ -2591,7 +2591,7 @@ Agent Policy: https://sopkit.space/ai.txt
 ### Extraction Tools Tools
 
 #### [URL Extractor](https://sopkit.space/url-extractor)
-- **Description**: Extract URLs from plain text, Markdown, logs, source snippets, and copied content. Normalize links, validate them, remove duplicates, and export a clean list locally in your browser.
+- **Description**: Harvest every link from pasted text, Markdown, HTML or logs, normalise bare domains, flag invalid entries, remove duplicates and export the list.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/url-extractor
 
 #### [Email Extractor](https://sopkit.space/email-extractor)
