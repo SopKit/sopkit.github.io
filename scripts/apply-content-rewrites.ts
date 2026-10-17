@@ -113,6 +113,7 @@ function loadRewrites<T>(): Map<string, T> {
 	const files = fs
 		.readdirSync(REWRITES_DIR)
 		.filter((f) => f.endsWith(".json"))
+		.filter((f) => (FAQ_MODE ? /^batch-\d+\.json$/.test(f) : true))
 		.sort();
 	for (const file of files) {
 		const data = JSON.parse(
