@@ -38,10 +38,13 @@ import { MANUAL_TOOL_CONTENT } from "../src/data/generated-manual-content";
 
 const FILE = path.join(process.cwd(), "src/data/generated-manual-content.ts");
 const FAQ_MODE = process.argv.includes("--faq");
+const WHATITIS_MODE = process.argv.includes("--whatitis");
 const DRY_RUN = process.argv.includes("--dry-run");
 const REWRITES_DIR = FAQ_MODE
 	? process.env.FAQ_REWRITES_DIR || path.join(os.homedir(), "claude-seo", "faqs")
-	: process.env.REWRITES_DIR || path.join(os.homedir(), "claude-seo", "rewrites");
+	: WHATITIS_MODE
+		? process.env.WHATITIS_REWRITES_DIR || path.join(os.homedir(), "claude-seo", "whatitis")
+		: process.env.REWRITES_DIR || path.join(os.homedir(), "claude-seo", "rewrites");
 
 const BOILERPLATE_QUESTIONS = [
 	"How does SopKit protect my privacy when I use this tool?",
@@ -113,7 +116,7 @@ function loadRewrites<T>(): Map<string, T> {
 	const files = fs
 		.readdirSync(REWRITES_DIR)
 		.filter((f) => f.endsWith(".json"))
-		.filter((f) => (FAQ_MODE ? /^batch-\d+\.json$/.test(f) : true))
+		.filter((f) => (FAQ_MODE || WHATITIS_MODE ? /^batch-\d+\.json$/.test(f) : true))
 		.sort();
 	for (const file of files) {
 		const data = JSON.parse(
@@ -302,5 +305,50 @@ function applyFaqRewrites(): void {
 	}
 }
 
+function applyWhatItisRewrites(): void {
+	console.log("🔧 Applying whatItIs article rewrites to generated-manual-content.ts\n");
+	const rewrites = loadRewrites<string | { whatItIs: string }>();
+	console.log(`Total whatItIs rewrites loaded: ${rewrites.size}\n`);
+
+	let source = fs.readFileSync(FILE, "utf8");
+	let applied = 0;
+	const skipped: string[] = [];
+
+	for (const [id, raw] of rewrites) {
+		const old = MANUAL_TOOL_CONTENT[id] as ManualEntry | undefined;
+		if (!old) {
+			skipped.push(`${id} (unknown id)`);
+			continue;
+		}
+		const value = typeof raw === "string" ? raw : raw?.whatItIs;
+		if (typeof value !== "string" || value.trim().length < 400) {
+			skipped.push(`${id} (invalid article)`);
+			continue;
+		}
+		if ((old.whatItIs || "").trim() === value.trim()) {
+			skipped.push(`${id} (already applied)`);
+			continue;
+		}
+		const next = spliceEntry(source, id, { ...old, whatItIs: value });
+		if (next === null) {
+			skipped.push(`${id} (anchor not found)`);
+			continue;
+		}
+		source = next;
+		applied++;
+	}
+
+	if (!DRY_RUN) {
+		fs.writeFileSync(FILE, source);
+	}
+	console.log(
+		`${DRY_RUN ? "[dry-run] Would apply" : "Applied"} ${applied} whatItIs rewrites.`,
+	);
+	if (skipped.length) {
+		console.log(`Skipped ${skipped.length}: ${skipped.join(", ")}`);
+	}
+}
+
 if (FAQ_MODE) applyFaqRewrites();
+else if (WHATITIS_MODE) applyWhatItisRewrites();
 else applyContentRewrites();
