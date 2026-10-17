@@ -862,20 +862,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does Angle Converter do?",
-        "answer": "Angle Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which angle units can the converter switch between?",
+        "answer": "Degrees, radians and gradians. One full turn is 360 degrees, 2 pi radians or 400 gradians, and you choose the source and target units from the two dropdowns."
       },
       {
-        "question": "Is Angle Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Angle Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do I need to press a button to run the conversion?",
+        "answer": "No. The converted result recalculates as you type, and the All Unit Equivalents panel lists the same angle in every supported unit at the same time."
       },
       {
-        "question": "Do I need to create an account or sign up to use Angle Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Angle Converter on mobile devices or tablets?",
-        "answer": "Yes, Angle Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the tool show how the conversion was done?",
+        "answer": "Yes — the result card pairs the figure with a formula line such as '1 Degree = 0.017453293 Radian', so the relationship between the two units is visible."
       },
       {
         "question": "Does the angle I type get sent anywhere for conversion?",
@@ -1039,20 +1035,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does Apparent Power Converter do?",
-        "answer": "Apparent Power Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which apparent power units are available?",
+        "answer": "Volt-amperes, the kilovolt-ampere scale where 1 unit equals 1000 VA, and mechanical horsepower, treated as roughly 745.7 VA."
       },
       {
-        "question": "Is Apparent Power Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Apparent Power Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the Copy button put on the clipboard?",
+        "answer": "A full expression with both unit labels — the value you entered, its unit, the converted figure and the target unit — ready to paste into notes."
       },
       {
-        "question": "Do I need to create an account or sign up to use Apparent Power Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Apparent Power Converter on mobile devices or tablets?",
-        "answer": "Yes, Apparent Power Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the side list under the result show?",
+        "answer": "It expresses the entered load in all three units at once, with every figure shown next to its unit label so you can compare scale quickly."
       },
       {
         "question": "Is my load figure logged when I convert it?",
@@ -1491,20 +1483,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Average Calculator do?",
-        "answer": "Average Calculator lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the calculator return the median, mode or range as well?",
+        "answer": "No. It specifically computes the arithmetic mean of the supplied numbers and shows it to six decimal places."
       },
       {
-        "question": "Is Average Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Average Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How should I separate the numbers in my list?",
+        "answer": "Commas, spaces and line breaks all work, alone or mixed, because the parser splits the input on any whitespace or comma."
       },
       {
-        "question": "Do I need to create an account or sign up to use Average Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Average Calculator on mobile devices or tablets?",
-        "answer": "Yes, Average Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if the list contains a stray word or header?",
+        "answer": "Non-numeric tokens are filtered out before the mean is calculated, so a stray word will not break the total or count toward the divisor."
       },
       {
         "question": "Are the numbers I paste into the average calculator retained?",
@@ -1727,20 +1715,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Base64 Decode do?",
-        "answer": "Base64 Decode lets you encode/decode web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens when the Base64 string is malformed?",
+        "answer": "A red Invalid Base64 Payload panel appears with the decoding error instead of failing silently, and the output area stays empty."
       },
       {
-        "question": "Is Base64 Decode really free? Are there any hidden charges?",
-        "answer": "Yes, Base64 Decode is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict codecs after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can it decode payloads that contain emoji or non-Latin characters?",
+        "answer": "Yes. The decoder wraps the atob call in a URI-style conversion so UTF-8 sequences come back as readable text rather than garbled characters."
       },
       {
-        "question": "Do I need to create an account or sign up to use Base64 Decode?",
-        "answer": "No account, signup, or email is required. Simply open the page and start encode/decodeing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Base64 Decode on mobile devices or tablets?",
-        "answer": "Yes, Base64 Decode works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where does the decoded text go?",
+        "answer": "It appears in the right-hand pane with Copy and Save controls; Save downloads the plain text as decoded-output.txt."
       },
       {
         "question": "Can someone else read the Base64 string I paste for decoding?",
@@ -1786,20 +1770,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Base64 Encode do?",
-        "answer": "Base64 Encode lets you encode/decode web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I encode a whole file instead of typing text?",
+        "answer": "Yes — switch to Encode File mode and drop in an image, PDF or other file; the panel reports its name and size before the Base64 payload appears."
       },
       {
-        "question": "Is Base64 Encode really free? Are there any hidden charges?",
-        "answer": "Yes, Base64 Encode is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict codecs after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Will my working text survive a page reload?",
+        "answer": "The input is auto-saved to local storage as you type, and the indicator shows when it has been stashed, so a refresh on the same device usually restores it."
       },
       {
-        "question": "Do I need to create an account or sign up to use Base64 Encode?",
-        "answer": "No account, signup, or email is required. Simply open the page and start encode/decodeing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Base64 Encode on mobile devices or tablets?",
-        "answer": "Yes, Base64 Encode works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does encoding handle accented letters and emoji correctly?",
+        "answer": "Yes. The encoder runs the text through a URI-style wrapper before converting it, so non-Latin characters produce valid Base64 instead of breaking."
       },
       {
         "question": "What happens to a file I drop into the encoder?",
@@ -3599,20 +3579,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Charge Converter do?",
-        "answer": "Charge Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the converter arrive at 1 mAh equalling 13.32 coulombs?",
+        "answer": "Milliamp-hours are treated as charge at a 3.7 V cell, so 1 mAh is 3.7 volts times 3.6 coulombs — the 13.32 factor the tool applies."
       },
       {
-        "question": "Is Charge Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Charge Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I convert a battery rated at a different cell voltage?",
+        "answer": "Only indirectly. The factor is fixed at 3.7 V, so a 3.6 V or 3.8 V cell rating needs its own adjustment first."
       },
       {
-        "question": "Do I need to create an account or sign up to use Charge Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Charge Converter on mobile devices or tablets?",
-        "answer": "Yes, Charge Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When is this converter useful for battery labels?",
+        "answer": "When you want to compare a battery's mAh label against a physics charge figure in coulombs, or the other way around, without doing the 3.7 V arithmetic."
       },
       {
         "question": "Is my battery capacity figure kept after conversion?",
@@ -4011,20 +3987,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Color Converter do?",
-        "answer": "Color Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What input format does the color converter accept?",
+        "answer": "A six-digit hex code such as #FF6432; the leading hash is optional, and anything that is not six hex digits is flagged as Invalid."
       },
       {
-        "question": "Is Color Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Color Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the converted value look like?",
+        "answer": "It is a CSS rgb() string like rgb(255, 100, 50), and the swatch beside it previews the color so you can check it before copying."
       },
       {
-        "question": "Do I need to create an account or sign up to use Color Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Color Converter on mobile devices or tablets?",
-        "answer": "Yes, Color Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I enter an HSL or CMYK value instead?",
+        "answer": "No. This page reads hex codes and returns RGB values only — HSL, CMYK and named colors are not parsed."
       },
       {
         "question": "Does the color value I test get stored on your servers?",
@@ -4599,20 +4571,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Confidence Interval Calculator do?",
-        "answer": "Confidence Interval Calculator lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I calculate a 90 or 99 percent interval instead of 95 percent?",
+        "answer": "Yes — edit the z field directly. 1.645 gives a 90 percent interval and 2.576 gives 99 percent; the tool does not choose z from a percentage."
       },
       {
-        "question": "Is Confidence Interval Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Confidence Interval Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why are the lower and upper bounds blank?",
+        "answer": "The bounds stay empty when the input is invalid, for example a sample size of one or a non-numeric value in any field."
       },
       {
-        "question": "Do I need to create an account or sign up to use Confidence Interval Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Confidence Interval Calculator on mobile devices or tablets?",
-        "answer": "Yes, Confidence Interval Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How many decimals do the confidence limits keep?",
+        "answer": "Both limits are shown to four decimal places, and the card title notes the result is a normal-approximation interval rather than an exact test."
       },
       {
         "question": "Do my study statistics leave this page?",
@@ -4717,20 +4685,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Convert SRT to VTT do?",
-        "answer": "Convert SRT to VTT lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the SRT to VTT conversion actually change?",
+        "answer": "It adds the WEBVTT header line that HTML5 players require and rewrites the commas in timestamp lines as periods; cue numbers and caption text pass through untouched."
       },
       {
-        "question": "Is Convert SRT to VTT really free? Are there any hidden charges?",
-        "answer": "Yes, Convert SRT to VTT is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the tool accept an .srt file, or only pasted text?",
+        "answer": "It works on pasted text. Open the subtitle file, copy its contents and paste them into the left editor; the VTT output appears beside it."
       },
       {
-        "question": "Do I need to create an account or sign up to use Convert SRT to VTT?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Convert SRT to VTT on mobile devices or tablets?",
-        "answer": "Yes, Convert SRT to VTT works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I edit the VTT output before saving it?",
+        "answer": "The output pane is read-only, so make corrections in the input pane — the VTT view updates live as you change the pasted SRT."
       },
       {
         "question": "Is the subtitle text I paste uploaded for conversion?",
@@ -4834,20 +4798,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Convert VTT to SRT do?",
-        "answer": "Convert VTT to SRT lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens to VTT cue settings like align or position?",
+        "answer": "They are dropped. The SRT line keeps only the start and end times, so trailing cue settings from the WebVTT source do not carry over."
       },
       {
-        "question": "Is Convert VTT to SRT really free? Are there any hidden charges?",
-        "answer": "Yes, Convert VTT to SRT is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are cue numbers assigned in the SRT output?",
+        "answer": "They are renumbered sequentially starting at 1 as each timestamp line is processed, and the WEBVTT header plus blank filler lines are removed."
       },
       {
-        "question": "Do I need to create an account or sign up to use Convert VTT to SRT?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Convert VTT to SRT on mobile devices or tablets?",
-        "answer": "Yes, Convert VTT to SRT works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which timestamp format does the converter expect?",
+        "answer": "Full HH:MM:SS.mmm timestamps. Cues written as MM:SS.mmm are passed through as plain text instead of being renumbered and restyled."
       },
       {
         "question": "Where does the VTT caption text go when I convert it?",
@@ -5070,20 +5030,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CPM Calculator do?",
-        "answer": "CPM Calculator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is the CPM figure calculated?",
+        "answer": "Campaign cost divided by impressions, multiplied by 1000, shown to four decimal places — the standard cost per thousand impressions."
       },
       {
-        "question": "Is CPM Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, CPM Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why is the result field blank when I enter zero impressions?",
+        "answer": "Zero or negative impression counts are rejected instead of dividing by zero, so the field stays empty rather than showing an error value."
       },
       {
-        "question": "Do I need to create an account or sign up to use CPM Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CPM Calculator on mobile devices or tablets?",
-        "answer": "Yes, CPM Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When is this calculator more useful than an ad platform's dashboard?",
+        "answer": "For sponsored posts, newsletters and direct deals where you know the total cost and reach but not the platform-reported CPM; both figures update live."
       },
       {
         "question": "Is my ad spend information sent anywhere?",
@@ -5129,20 +5085,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Credit Card Generator do?",
-        "answer": "Credit Card Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Are the generated numbers real credit cards?",
+        "answer": "No. They are random test numbers that follow the Visa prefix and pass the Luhn check, intended for software testing and form validation."
       },
       {
-        "question": "Is Credit Card Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Credit Card Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What makes a generated number pass validation?",
+        "answer": "The first digit is fixed at 4 and the final digit is computed so the whole 16-digit string satisfies the Luhn checksum."
       },
       {
-        "question": "Do I need to create an account or sign up to use Credit Card Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Credit Card Generator on mobile devices or tablets?",
-        "answer": "Yes, Credit Card Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does every press of the generate button produce a different number?",
+        "answer": "Yes. The middle digits are random, so each press replaces the previous sample with a fresh test number that can be copied."
       },
       {
         "question": "Does the generator touch my real card or bank account?",
@@ -5188,20 +5140,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Credit Card Validator do?",
-        "answer": "Credit Card Validator lets you validate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the validator check expiry dates, CVC codes or card brands?",
+        "answer": "No. It only runs the Luhn checksum over the digits you paste; expiry, security codes and issuer identification are not part of the test."
       },
       {
-        "question": "Is Credit Card Validator really free? Are there any hidden charges?",
-        "answer": "Yes, Credit Card Validator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does a number pasted with dashes come back Invalid?",
+        "answer": "Only spaces are stripped before the check runs, so hyphens reach the algorithm as characters; paste the number as digits or with spaces only."
       },
       {
-        "question": "Do I need to create an account or sign up to use Credit Card Validator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Credit Card Validator on mobile devices or tablets?",
-        "answer": "Yes, Credit Card Validator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How many digits must the card number have?",
+        "answer": "The routine runs the Luhn sum over whatever digits you supply rather than enforcing 15 or 16, so unusual test fixtures work too."
       },
       {
         "question": "Is the card number I check visible to anyone else?",
@@ -5775,20 +5723,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Currency Converter do?",
-        "answer": "Currency Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where do the exchange rates come from?",
+        "answer": "Rates are fetched from the Frankfurter API, which is built on European Central Bank reference data, each time you press Convert."
       },
       {
-        "question": "Is Currency Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Currency Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the converted amount update while I type a new value?",
+        "answer": "No. The fetch runs when you press Convert, so after editing the amount or the ISO codes, press it again to refresh the result."
       },
       {
-        "question": "Do I need to create an account or sign up to use Currency Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Currency Converter on mobile devices or tablets?",
-        "answer": "Yes, Currency Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if a currency pair has no rate available?",
+        "answer": "Currencies outside the ECB-based dataset return no rate, so the result field stays empty; the line under the button reports how many cross-rates loaded."
       },
       {
         "question": "Which service sees the currencies I convert?",
@@ -5834,20 +5778,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Current Converter do?",
-        "answer": "Current Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which current units does the converter support?",
+        "answer": "Amperes and milliamperes only — a two-unit picker aimed at fuses, charger labels and small electronics rather than microamps or kiloamps."
       },
       {
-        "question": "Is Current Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Current Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the swap button do?",
+        "answer": "It reverses the conversion direction while keeping the entered value, so a milliampere-to-ampere entry becomes the opposite without retyping."
       },
       {
-        "question": "Do I need to create an account or sign up to use Current Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Current Converter on mobile devices or tablets?",
-        "answer": "Yes, Current Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will the result show clutter like 0.500000?",
+        "answer": "No. Precision adapts to the value, so a clean conversion like 500 mA to 0.5 A displays short, while very large or small results keep six significant digits."
       },
       {
         "question": "Do the circuit values I type remain on the page?",
@@ -6578,20 +6518,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Digital Converter do?",
-        "answer": "Digital Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does 1 KB mean 1000 bytes or 1024 bytes here?",
+        "answer": "1024. The converter uses binary multiples throughout, so KB, MB and GB mean 1024, 1024 squared and 1024 cubed bytes."
       },
       {
-        "question": "Is Digital Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Digital Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "When would I convert bits instead of bytes?",
+        "answer": "Use bits for network and bandwidth figures and bytes for file sizes; the unit list includes both so you can move between the two conventions."
       },
       {
-        "question": "Do I need to create an account or sign up to use Digital Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Digital Converter on mobile devices or tablets?",
-        "answer": "Yes, Digital Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are very large storage values displayed?",
+        "answer": "Values keep six significant digits, so a gigabyte expressed in bits stays readable rather than showing a long unbroken run of digits."
       },
       {
         "question": "Does the file size I convert get collected?",
@@ -6637,20 +6573,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Disclaimer Generator do?",
-        "answer": "Disclaimer Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the generated disclaimer text cover?",
+        "answer": "It states that the site's information is provided for general informational purposes only and that no warranties of completeness, accuracy or availability are made."
       },
       {
-        "question": "Is Disclaimer Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Disclaimer Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I rely on this disclaimer as legal advice?",
+        "answer": "No. It is a generated template dated automatically when the card renders; treat it as a starting point and have a qualified professional review it before publishing."
       },
       {
-        "question": "Do I need to create an account or sign up to use Disclaimer Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Disclaimer Generator on mobile devices or tablets?",
-        "answer": "Yes, Disclaimer Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the text change when I edit the site name?",
+        "answer": "Yes. The disclaimer is computed from the current form values, so editing the site name re-renders the paragraph with the new name."
       },
       {
         "question": "Is the disclaimer text reviewed or stored by SopKit?",
@@ -6696,20 +6628,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Discount Calculator do?",
-        "answer": "Discount Calculator lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I stack two discounts, such as 20 percent plus 10 percent?",
+        "answer": "The tool takes one percentage at a time. For stacked offers, apply the first discount, then enter the reduced price and apply the second one to it."
       },
       {
-        "question": "Is Discount Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Discount Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What do the You save and You pay fields show?",
+        "answer": "You save is the money taken off and You pay is the final price, both rounded to two decimals as you edit the price or percentage."
       },
       {
-        "question": "Do I need to create an account or sign up to use Discount Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Discount Calculator on mobile devices or tablets?",
-        "answer": "Yes, Discount Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is sales tax included in the final price?",
+        "answer": "No. The calculation only subtracts the discount from the price you enter, so factor in tax or fees separately if your checkout adds them."
       },
       {
         "question": "Are the prices I test kept anywhere?",
@@ -6755,20 +6683,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does DNS Records Checker do?",
-        "answer": "DNS Records Checker lets you validate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which resolver answers the DNS queries?",
+        "answer": "Google's public DNS-over-HTTPS service at dns.google, so the lookup leaves your network and the queried domain is visible to that resolver."
       },
       {
-        "question": "Is DNS Records Checker really free? Are there any hidden charges?",
-        "answer": "Yes, DNS Records Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which record types can I look up?",
+        "answer": "A, AAAA, MX, TXT, CNAME and NS records, selected from the compact dropdown beside the domain field."
       },
       {
-        "question": "Do I need to create an account or sign up to use DNS Records Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use DNS Records Checker on mobile devices or tablets?",
-        "answer": "Yes, DNS Records Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does each answer card contain?",
+        "answer": "Every record shows its type, name, data value and TTL, which is enough to check email routing, verification strings or where a hostname points."
       },
       {
         "question": "Who processes the DNS query I run?",
@@ -6814,20 +6738,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Domain Age Checker do?",
-        "answer": "Domain Age Checker lets you validate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the tool actually probe on a domain?",
+        "answer": "It fetches the URL you enter through SopKit's server-side safe-fetch endpoint and walks the redirect chain, reporting each hop's status code and Location."
       },
       {
-        "question": "Is Domain Age Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Domain Age Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does it read WHOIS or registration dates?",
+        "answer": "No. The output is an HTTP reachability trace — status codes, redirect targets and a body excerpt — so registration, age and expiry dates are not part of the result."
       },
       {
-        "question": "Do I need to create an account or sign up to use Domain Age Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Domain Age Checker on mobile devices or tablets?",
-        "answer": "Yes, Domain Age Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why might the check fail even though the site is up?",
+        "answer": "Some hosts block automated requests; failing or slow fetches raise a toast, the output pane stays unchanged, and answers are best-effort."
       },
       {
         "question": "Does the URL I submit for a domain age check go through SopKit?",
@@ -6991,20 +6911,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Domain to IP Converter do?",
-        "answer": "Domain to IP Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which service resolves the hostname?",
+        "answer": "The A-record query goes to Google's DNS-over-HTTPS resolver at dns.google, and each returned IPv4 address is listed as a separate bullet."
       },
       {
-        "question": "Is Domain to IP Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Domain to IP Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why is the list empty for a domain I know exists?",
+        "answer": "The tool lists A records only, so a hostname with just AAAA/IPv6 records, or one that fails to resolve, comes back with an empty list rather than an error."
       },
       {
-        "question": "Do I need to create an account or sign up to use Domain to IP Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Domain to IP Converter on mobile devices or tablets?",
-        "answer": "Yes, Domain to IP Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I resolve several domains in one go?",
+        "answer": "No. It handles one hostname per run; the Resolve button is disabled while the query is in flight, then you can enter the next domain."
       },
       {
         "question": "Is the domain I resolve sent to a third party?",
@@ -7168,20 +7084,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Each Converter do?",
-        "answer": "Each Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What root font size does the px, rem and em conversion assume?",
+        "answer": "16 pixels, the common default. One rem equals 16 px here, so a 24 px design value reads back as 1.5 rem."
       },
       {
-        "question": "Is Each Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Each Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do rem and em convert differently on this page?",
+        "answer": "No. Both are pinned to the same 16 px root size, so the equivalents panel shows identical values for rem and em."
       },
       {
-        "question": "Do I need to create an account or sign up to use Each Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Each Converter on mobile devices or tablets?",
-        "answer": "Yes, Each Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When would this converter be useful?",
+        "answer": "When translating pixel mockups into responsive CSS units, sizing a design system, or checking what a rem or em value from a stylesheet means in pixels."
       },
       {
         "question": "Is the styling value I convert recorded?",
@@ -7643,20 +7555,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Energy Converter do?",
-        "answer": "Energy Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the calorie unit a physics calorie or a food calorie?",
+        "answer": "Both appear: calorie uses the thermochemical definition of 4.184 joules, while kilocalorie — the food-label unit — is 1000 of those, or 4184 joules."
       },
       {
-        "question": "Is Energy Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Energy Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I compare a kWh electricity figure with BTU heating ratings?",
+        "answer": "Both units are in the list — enter the kilowatt-hour value and read the BTU equivalent, or swap the direction for the reverse conversion."
       },
       {
-        "question": "Do I need to create an account or sign up to use Energy Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Energy Converter on mobile devices or tablets?",
-        "answer": "Yes, Energy Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the equivalents list show?",
+        "answer": "It shows the same energy in all six units at once, so joules, kilojoules, calories, kilocalories, kilowatt-hours and BTU are visible together."
       },
       {
         "question": "Do my energy figures go anywhere when I convert?",
@@ -7995,20 +7903,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Facebook ID Finder do?",
-        "answer": "Facebook ID Finder lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do I enter to look up a Facebook profile?",
+        "answer": "A profile or page URL. The tool fetches it through SopKit's server-side fetch endpoint and shows the redirect trail plus a snippet of the response."
       },
       {
-        "question": "Is Facebook ID Finder really free? Are there any hidden charges?",
-        "answer": "Yes, Facebook ID Finder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can it find a numeric Facebook ID from just a person's name?",
+        "answer": "No. A name alone is not enough — you need the profile or page URL, and the output is the HTTP response trace rather than a directory lookup."
       },
       {
-        "question": "Do I need to create an account or sign up to use Facebook ID Finder?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Facebook ID Finder on mobile devices or tablets?",
-        "answer": "Yes, Facebook ID Finder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why do results sometimes look incomplete?",
+        "answer": "Facebook frequently serves login walls or blocks automated requests, so the snippet can be partial or a toast error appears; answers are best-effort."
       },
       {
         "question": "Where does my Facebook URL get sent when I run a lookup?",
@@ -8282,20 +8186,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does FAQ Schema Generator do?",
-        "answer": "FAQ Schema Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What exactly does the generator output?",
+        "answer": "A complete script tag containing FAQPage JSON-LD, with each question as a Question and its answer as an acceptedAnswer, pretty-printed for pasting into a page."
       },
       {
-        "question": "Is FAQ Schema Generator really free? Are there any hidden charges?",
-        "answer": "Yes, FAQ Schema Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I edit a question after adding it to the list?",
+        "answer": "Not in place — remove the row and add the corrected pair again. The running list keeps longer sets manageable and every row can be deleted individually."
       },
       {
-        "question": "Do I need to create an account or sign up to use FAQ Schema Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use FAQ Schema Generator on mobile devices or tablets?",
-        "answer": "Yes, FAQ Schema Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the generated markup guarantee rich results in Google?",
+        "answer": "No. It produces valid FAQPage structure, but search engines still decide eligibility, and thin or duplicated question sets may be ignored."
       },
       {
         "question": "Are my FAQ entries uploaded to build the schema?",
@@ -9051,20 +8951,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Frequency Converter do?",
-        "answer": "Frequency Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the converter treat RPM compared with hertz?",
+        "answer": "RPM is revolutions per minute, so 1 hertz equals 60 RPM; motor speed figures and radio frequencies can sit in the same calculation."
       },
       {
-        "question": "Is Frequency Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Frequency Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which frequency units are available?",
+        "answer": "Hertz, kilohertz, megahertz and RPM, with the equivalents panel showing the entered value in all four after every keystroke."
       },
       {
-        "question": "Do I need to create an account or sign up to use Frequency Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Frequency Converter on mobile devices or tablets?",
-        "answer": "Yes, Frequency Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can it handle both very slow and very fast frequencies?",
+        "answer": "Yes — values are converted as plain numbers, so 0.5 Hz and 2.4 GHz both work, with large or tiny results keeping six significant digits."
       },
       {
         "question": "Is the frequency value I enter transmitted anywhere?",
@@ -9464,20 +9360,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Get HTTP Headers do?",
-        "answer": "Get HTTP Headers lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the GET snippet return for a page?",
+        "answer": "The HTML head section, extracted between the head tags and capped at 8000 characters, which makes meta tags and title lines easy to scan."
       },
       {
-        "question": "Is Get HTTP Headers really free? Are there any hidden charges?",
-        "answer": "Yes, Get HTTP Headers is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the HEAD chain show that the GET snippet does not?",
+        "answer": "The redirect path: each hop's URL, status code and Location target. GET follows those redirects and returns the final page head instead."
       },
       {
-        "question": "Do I need to create an account or sign up to use Get HTTP Headers?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Get HTTP Headers on mobile devices or tablets?",
-        "answer": "Yes, Get HTTP Headers works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Who performs the request?",
+        "answer": "SopKit's server-side fetch endpoint issues it, so the target site sees SopKit's infrastructure; bot-protected hosts may still refuse and trigger an error toast."
       },
       {
         "question": "Which server fetches the URL whose head section I request?",
@@ -9995,20 +9887,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does GST Calculator do?",
-        "answer": "GST Calculator lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the calculator work with GST-inclusive prices?",
+        "answer": "No. It expects the base amount before tax and adds the rate on top; for an inclusive price, divide by 1 plus the rate to back out the base first."
       },
       {
-        "question": "Is GST Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, GST Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which GST rates can I enter?",
+        "answer": "The rate field is free-form, so 5, 12, 18 and 28 percent slabs all work, as does any custom or decimal rate."
       },
       {
-        "question": "Do I need to create an account or sign up to use GST Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use GST Calculator on mobile devices or tablets?",
-        "answer": "Yes, GST Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are the base, tax and total rounded?",
+        "answer": "Each line is rounded to two decimal places, and the note below the fields reminds you to confirm rounding rules against real invoices."
       },
       {
         "question": "Are the amounts I type for GST used for anything else?",
@@ -10682,20 +10570,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Hosting Checker do?",
-        "answer": "Hosting Checker lets you validate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does a hosting check actually tell me?",
+        "answer": "Whether the host answers the URL you enter, which redirects it issues and what HTTP status comes back — not which company provides the hosting."
       },
       {
-        "question": "Is Hosting Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Hosting Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which server makes the request?",
+        "answer": "SopKit's own safe-fetch endpoint runs the HEAD chain or GET snippet, so the target host does not see the visitor's IP address."
       },
       {
-        "question": "Do I need to create an account or sign up to use Hosting Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Hosting Checker on mobile devices or tablets?",
-        "answer": "Yes, Hosting Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What appears in the output pane?",
+        "answer": "Structured JSON for each hop with its URL, status code and Location value; a GET snippet instead returns the final URL, status and body excerpt."
       },
       {
         "question": "Does the hosting check come from my computer or from SopKit?",
@@ -10741,20 +10625,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Htaccess Redirect Generator do?",
-        "answer": "Htaccess Redirect Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which redirect status codes can the generator produce?",
+        "answer": "301 for permanent moves, 302 for temporary ones and 307 for temporary redirects that must preserve the request method."
       },
       {
-        "question": "Is Htaccess Redirect Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Htaccess Redirect Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can it generate wildcard or regex redirects?",
+        "answer": "No. It builds a single Redirect directive for one exact source path per line, so pattern-based rules would need a hand-written RedirectMatch."
       },
       {
-        "question": "Do I need to create an account or sign up to use Htaccess Redirect Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Htaccess Redirect Generator on mobile devices or tablets?",
-        "answer": "Yes, Htaccess Redirect Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where does the generated rule belong?",
+        "answer": "In an Apache .htaccess file at the site root. The line only renders once both the source path and target URL fields contain text."
       },
       {
         "question": "Is the redirect rule I generate reviewed or saved?",
@@ -11179,20 +11059,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does HTTP Status Code Checker do?",
-        "answer": "HTTP Status Code Checker lets you validate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I read the HEAD chain output?",
+        "answer": "It lists every hop as JSON with its URL, HTTP status and Location, so a 301 to 302 to 200 chain is visible step by step."
       },
       {
-        "question": "Is HTTP Status Code Checker really free? Are there any hidden charges?",
-        "answer": "Yes, HTTP Status Code Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the GET snippet add?",
+        "answer": "It follows the redirects and reports the destination URL, its HTTP status and a truncated body, which helps confirm the landing page."
       },
       {
-        "question": "Do I need to create an account or sign up to use HTTP Status Code Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use HTTP Status Code Checker on mobile devices or tablets?",
-        "answer": "Yes, HTTP Status Code Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if I check a URL with query parameters?",
+        "answer": "Paste the full URL including the query string; the request runs through SopKit's fetch endpoint, and invalid or internal-network hosts are rejected before any request."
       },
       {
         "question": "Who performs the status check when I submit a URL?",
@@ -11650,20 +11526,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Illuminance Converter do?",
-        "answer": "Illuminance Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many lux is one foot-candle?",
+        "answer": "One foot-candle equals about 10.764 lux, the factor this converter applies in both directions."
       },
       {
-        "question": "Is Illuminance Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Illuminance Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "When would I convert between lux and foot-candles?",
+        "answer": "When comparing metric lighting plans with imperial specifications; photography exposure notes, studio layouts and office lighting checks often mix the two."
       },
       {
-        "question": "Do I need to create an account or sign up to use Illuminance Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Illuminance Converter on mobile devices or tablets?",
-        "answer": "Yes, Illuminance Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the equivalents panel show both lighting units?",
+        "answer": "Yes. The side panel keeps lux and foot-candle values visible together, and the swap button reverses the conversion without retyping."
       },
       {
         "question": "Are the lighting measurements I enter used elsewhere?",
@@ -12645,20 +12517,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does IndexNow Submitter do?",
-        "answer": "IndexNow Submitter lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens when I press the HEAD chain button?",
+        "answer": "SopKit's fetch endpoint requests the URL you entered and lists the redirect path with the status code and Location value for each hop."
       },
       {
-        "question": "Is IndexNow Submitter really free? Are there any hidden charges?",
-        "answer": "Yes, IndexNow Submitter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where does the request come from?",
+        "answer": "From SopKit's server-side fetch handler rather than the visitor's machine; only http(s) URLs on public hosts are accepted, and internal addresses are rejected."
       },
       {
-        "question": "Do I need to create an account or sign up to use IndexNow Submitter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use IndexNow Submitter on mobile devices or tablets?",
-        "answer": "Yes, IndexNow Submitter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do these buttons submit my URL to Bing or Yandex?",
+        "answer": "No — in the current build they run a live fetch check through SopKit's own endpoint and show the site's HTTP response; nothing is posted to a search-engine API from here."
       },
       {
         "question": "Which service receives the URL I type into the submitter?",
@@ -13297,20 +13165,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Internet Speed Test do?",
-        "answer": "Internet Speed Test lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the test transfer real data to measure my connection?",
+        "answer": "Not in the current version — the progress phases and the download, upload, ping and jitter figures are generated on the page, so treat the numbers as illustrative."
       },
       {
-        "question": "Is Internet Speed Test really free? Are there any hidden charges?",
-        "answer": "Yes, Internet Speed Test is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What do the Slow, Fair, Good and Excellent tags mean?",
+        "answer": "They grade the figures on a fixed scale: under 25 Mbps is Slow, 25 to 50 is Fair, 50 to 100 is Good, and 100 or above is Excellent."
       },
       {
-        "question": "Do I need to create an account or sign up to use Internet Speed Test?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Internet Speed Test on mobile devices or tablets?",
-        "answer": "Yes, Internet Speed Test works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What is the benchmark row under the results for?",
+        "answer": "It maps activities to bandwidth needs: 1 to 5 Mbps for browsing, 5 to 25 for HD video, 25 or more for 4K, and under 35 ms latency for cloud gaming."
       },
       {
         "question": "Does this speed test contact an external server to measure my connection?",
@@ -13474,20 +13338,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does IP Address Lookup do?",
-        "answer": "IP Address Lookup lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which service answers the lookup?",
+        "answer": "The page queries ipapi.co, which returns the public IP address and a geolocation record based on it; the request fires automatically when the page loads."
       },
       {
-        "question": "Is IP Address Lookup really free? Are there any hidden charges?",
-        "answer": "Yes, IP Address Lookup is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the location card include?",
+        "answer": "City, region, country, postal code, continent and coordinates, with an Open Maps button that jumps to the reported latitude and longitude."
       },
       {
-        "question": "Do I need to create an account or sign up to use IP Address Lookup?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use IP Address Lookup on mobile devices or tablets?",
-        "answer": "Yes, IP Address Lookup works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How accurate is the reported city?",
+        "answer": "IP geolocation is approximate and resolves from ISP routing, so VPNs, mobile carriers and shared connections can show a different city or region than where you are."
       },
       {
         "question": "Which service sees my IP when I open this page?",
@@ -15272,20 +15132,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Length Converter do?",
-        "answer": "Length Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which length units can I convert between?",
+        "answer": "Nine units across metric and imperial: nanometer, millimeter, centimeter, meter, kilometer, inch, foot, yard and mile, all in one dropdown pair."
       },
       {
-        "question": "Is Length Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Length Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I convert centimeters to inches?",
+        "answer": "Choose centimeter as the source and inch as the target; the equivalents panel also shows the same length in all nine units for cross-checking."
       },
       {
-        "question": "Do I need to create an account or sign up to use Length Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Length Converter on mobile devices or tablets?",
-        "answer": "Yes, Length Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does it handle very long or very short distances cleanly?",
+        "answer": "Yes — the nine units span nanometers to miles, and precision adapts so tiny fractions do not lose their value and large figures stay readable."
       },
       {
         "question": "What happens to the dimensions I convert?",
@@ -15567,20 +15423,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Loan Calculator do?",
-        "answer": "Loan Calculator lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the calculator show total interest or an amortization schedule?",
+        "answer": "No. It returns the monthly payment only, using the standard amortizing formula on the principal, APR and term you enter."
       },
       {
-        "question": "Is Loan Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Loan Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is the APR applied to the payment?",
+        "answer": "It is divided by 12 for a monthly rate and compounded across the term's months, so a 6.5 percent APR over 30 years uses 360 periods."
       },
       {
-        "question": "Do I need to create an account or sign up to use Loan Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Loan Calculator on mobile devices or tablets?",
-        "answer": "Yes, Loan Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if I enter a zero interest rate?",
+        "answer": "Zero-interest loans are handled by dividing the principal evenly across the months, so the payment field still returns a useful figure."
       },
       {
         "question": "Does my loan amount get sent to a bank or server?",
@@ -16161,20 +16013,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Margin Calculator do?",
-        "answer": "Margin Calculator lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the percentage a margin or a markup?",
+        "answer": "It is a gross margin: sell price minus cost, divided by the sell price. A 40 cost on a 100 price reads 60 percent, not the 150 percent markup."
       },
       {
-        "question": "Is Margin Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Margin Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why is the margin field blank or missing a number?",
+        "answer": "A sell price of zero returns an empty result instead of dividing by zero; enter a non-zero selling price to see the percentage."
       },
       {
-        "question": "Do I need to create an account or sign up to use Margin Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Margin Calculator on mobile devices or tablets?",
-        "answer": "Yes, Margin Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How is the result rounded?",
+        "answer": "The gross margin is fixed at two decimal places, which keeps comparisons tidy when pricing several products side by side."
       },
       {
         "question": "Are my cost and price figures recorded?",
@@ -16573,20 +16421,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does MD5 Generator do?",
-        "answer": "MD5 Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which hash algorithms does the generator compute?",
+        "answer": "Five at once: MD5, SHA-1, SHA-256, SHA-512 and SHA-3, each shown as a lowercase hexadecimal digest with its own copy button."
       },
       {
-        "question": "Is MD5 Generator really free? Are there any hidden charges?",
-        "answer": "Yes, MD5 Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I hash a file instead of typed text?",
+        "answer": "Yes. The file tab reads text files such as .txt, .json, .xml, .csv and .log up to 10 MB and hashes their contents as text."
       },
       {
-        "question": "Do I need to create an account or sign up to use MD5 Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use MD5 Generator on mobile devices or tablets?",
-        "answer": "Yes, MD5 Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the hash comparison case-sensitive?",
+        "answer": "No. Both strings are lowercased before comparing, so an uppercase and a lowercase digest of the same value count as a match."
       },
       {
         "question": "Is the text being hashed sent to a remote machine?",
@@ -17517,20 +17361,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Number to Roman Numerals do?",
-        "answer": "Number to Roman Numerals lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is the highest number the converter handles correctly?",
+        "answer": "Standard Roman numerals run from I to 3999 (MMMCMXCIX); beyond that the routine keeps adding M, producing a non-standard string rather than an error."
       },
       {
-        "question": "Is Number to Roman Numerals really free? Are there any hidden charges?",
-        "answer": "Yes, Number to Roman Numerals is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Are subtractive forms like IV, XC and CM generated automatically?",
+        "answer": "Yes. The value map includes 900, 400, 90, 40, 9 and 4, so subtractive pairs appear wherever they belong."
       },
       {
-        "question": "Do I need to create an account or sign up to use Number to Roman Numerals?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Number to Roman Numerals on mobile devices or tablets?",
-        "answer": "Yes, Number to Roman Numerals works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the numeral update as I type?",
+        "answer": "Yes. The result tracks the value field with no button press, and the copy button places the numerals on the clipboard."
       },
       {
         "question": "Is the number I convert shared with anyone?",
@@ -18147,20 +17987,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Other Tools do?",
-        "answer": "Other Tools lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the Other Tools page contain?",
+        "answer": "A browsable index of every utility-category tool on SopKit, each shown as a card with its name, description and a link to the tool itself."
       },
       {
-        "question": "Is Other Tools really free? Are there any hidden charges?",
-        "answer": "Yes, Other Tools is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I spot the most popular utilities?",
+        "answer": "Popular entries carry a small badge on their card, and the arrow icon on each card signals that the whole tile is a link."
       },
       {
-        "question": "Do I need to create an account or sign up to use Other Tools?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Other Tools on mobile devices or tablets?",
-        "answer": "Yes, Other Tools works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does this page run any conversions itself?",
+        "answer": "No. It is the directory page for the utilities group; each card opens the tool where the actual work happens."
       },
       {
         "question": "Does browsing the tool directory record what I click?",
@@ -18206,20 +18042,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Pace Converter do?",
-        "answer": "Pace Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How should I enter a pace like 5 minutes 30 seconds?",
+        "answer": "Use decimal minutes — 5.5, not 5:30. The field parses a plain number, so a colon entry would silently be read as 5."
       },
       {
-        "question": "Is Pace Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Pace Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which pace units does the converter support?",
+        "answer": "Seconds per meter, minutes per kilometer and minutes per mile, with all three kept visible in the equivalents panel."
       },
       {
-        "question": "Do I need to create an account or sign up to use Pace Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Pace Converter on mobile devices or tablets?",
-        "answer": "Yes, Pace Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I turn a metric training plan into minute-mile paces?",
+        "answer": "Yes. Enter the min/km pace, set the target to minutes per mile, and the answer appears immediately; the swap button reverses it in one click."
       },
       {
         "question": "Do my training paces get stored or shared?",
@@ -18265,20 +18097,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Page Size Checker do?",
-        "answer": "Page Size Checker lets you validate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is the page size figure measured?",
+        "answer": "The tool downloads the URL with a cap of 120,000 bytes, counts the bytes actually received in the response and reports that size."
       },
       {
-        "question": "Is Page Size Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Page Size Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the byte count include images, CSS and scripts?",
+        "answer": "No. It measures the HTML document response only, so the number is a lower bound compared with everything a full page load would fetch."
       },
       {
-        "question": "Do I need to create an account or sign up to use Page Size Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Page Size Checker on mobile devices or tablets?",
-        "answer": "Yes, Page Size Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the HEAD chain option do?",
+        "answer": "It runs a lightweight status check through the redirects without downloading the body — useful before running the heavier size fetch."
       },
       {
         "question": "Who fetches the page whose size I check?",
@@ -18442,20 +18270,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Parts Per Converter do?",
-        "answer": "Parts Per Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do ratio, percent, ppm and ppb relate to each other?",
+        "answer": "One percent is a ratio of 0.01 or 10,000 ppm, and 1 ppm equals 1000 ppb; the equivalents panel shows all four scales for the value you enter."
       },
       {
-        "question": "Is Parts Per Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Parts Per Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "When is parts-per notation better than a percentage?",
+        "answer": "For very small concentrations — water testing, dilution math and lab reporting use ppm and ppb where a percentage would be an unwieldy decimal."
       },
       {
-        "question": "Do I need to create an account or sign up to use Parts Per Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Parts Per Converter on mobile devices or tablets?",
-        "answer": "Yes, Parts Per Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are very small ppb values displayed?",
+        "answer": "Tiny figures keep six significant digits and can appear in exponent form, so a ppb-level concentration stays precise instead of losing its value."
       },
       {
         "question": "Does this ppm converter store the readings I enter?",
@@ -18619,20 +18443,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Password Generator do?",
-        "answer": "Password Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the generator produce its randomness?",
+        "answer": "It fills a typed array with window.crypto.getRandomValues and maps each value onto your selected character sets, so passwords come from the browser's secure random source rather than Math.random."
       },
       {
-        "question": "Is Password Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Password Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What makes the strength meter rate a password Weak versus Strong?",
+        "answer": "The score adds points for length and for each enabled character class, then labels the total Weak below 50 percent, Moderate from 50 and Strong from 80. Generate again until you get the rating you want."
       },
       {
-        "question": "Do I need to create an account or sign up to use Password Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Password Generator on mobile devices or tablets?",
-        "answer": "Yes, Password Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I generate a password that uses only symbols?",
+        "answer": "Yes, symbols-only works as long as the Symbols toggle stays on. Any mix of the four character sets is allowed, but enabling more sets and a longer length usually pushes the meter higher."
       },
       {
         "question": "Can anyone on the network see the password I generate?",
@@ -18796,20 +18616,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Paypal Fee Calculator do?",
-        "answer": "Paypal Fee Calculator lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is the net amount worked out after fees?",
+        "answer": "Net equals the gross amount minus the percent fee and the fixed fee: on $100 at 2.9 percent plus $0.30, you keep $96.80. The result is rounded to two decimal places."
       },
       {
-        "question": "Is Paypal Fee Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Paypal Fee Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which figure should I type into the gross amount field?",
+        "answer": "Enter the amount the buyer paid before any deduction. If you type a figure that has already had fees taken out, the tool subtracts fees again and the net shown comes out too low."
       },
       {
-        "question": "Do I need to create an account or sign up to use Paypal Fee Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Paypal Fee Calculator on mobile devices or tablets?",
-        "answer": "Yes, Paypal Fee Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "The default fee values do not match my account - can I change them?",
+        "answer": "Yes, both the percent and the fixed fee fields are editable. The 2.9 percent plus $0.30 defaults suit a common US-style rate, so replace them with the schedule your country and account tier actually use."
       },
       {
         "question": "Does the calculator connect to my PayPal account?",
@@ -19917,20 +19733,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Percentage Calculator do?",
-        "answer": "Percentage Calculator lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What calculation is this tool performing from the two fields?",
+        "answer": "It divides Part by Whole and multiplies by 100 to show what percentage the part is of the whole, then prints the answer with four decimal places and a percent sign."
       },
       {
-        "question": "Is Percentage Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Percentage Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does the result box stay empty when the whole is zero?",
+        "answer": "Division by zero is guarded, so a zero whole returns an empty result instead of an error or infinity. Enter a non-zero base to see the percentage."
       },
       {
-        "question": "Do I need to create an account or sign up to use Percentage Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Percentage Calculator on mobile devices or tablets?",
-        "answer": "Yes, Percentage Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can it handle percentage increases or decreases?",
+        "answer": "No - this version only answers the part-of-whole question. For an increase or decrease, compare the two figures here and apply the change ratio to your amount manually."
       },
       {
         "question": "Are the numbers behind my percentage calculation kept?",
@@ -21091,20 +20903,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Power Converter do?",
-        "answer": "Power Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which horsepower definition does the conversion use?",
+        "answer": "Mechanical horsepower of roughly 745.7 watts, the definition behind most engine and motor nameplate figures, rather than metric horsepower at about 735.5 watts."
       },
       {
-        "question": "Is Power Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Power Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I turn an engine's kilowatt rating into horsepower in one step?",
+        "answer": "Yes - choose kilowatts as the from unit and horsepower as the to unit. The swap button also flips a watts-to-horsepower check into the reverse direction with one click."
       },
       {
-        "question": "Do I need to create an account or sign up to use Power Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Power Converter on mobile devices or tablets?",
-        "answer": "Yes, Power Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will large kilowatt numbers be shown cleanly?",
+        "answer": "Values above 1,000 keep six significant digits instead of switching to scientific notation, so a big generator figure stays readable, and the equivalents panel lists watts, kilowatts and horsepower together."
       },
       {
         "question": "Do my engine or motor figures get sent anywhere?",
@@ -21150,20 +20958,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Pressure Converter do?",
-        "answer": "Pressure Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which pressure units can I convert between?",
+        "answer": "Six units: pascals, kilopascals, bar, PSI, atmospheres and millimeters of mercury. That covers tire pressures, weather readings and lab vacuum work."
       },
       {
-        "question": "Is Pressure Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Pressure Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is one atmosphere defined in the conversion table?",
+        "answer": "The standard atmosphere is fixed at 101,325 pascals, so PSI, bar and mmHg answers all trace back to that exact value."
       },
       {
-        "question": "Do I need to create an account or sign up to use Pressure Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Pressure Converter on mobile devices or tablets?",
-        "answer": "Yes, Pressure Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can it handle both tire pressures and small vacuum measurements?",
+        "answer": "Yes - PSI and bar suit tire gauges while mmHg and kilopascals cover vacuum readings, and adaptive precision keeps tiny mmHg values as legible as large kPa numbers."
       },
       {
         "question": "Is the pressure reading I enter logged?",
@@ -21268,20 +21072,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Privacy Policy Generator do?",
-        "answer": "Privacy Policy Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What sections does the generated draft contain?",
+        "answer": "The draft opens with an effective date and five numbered sections: information collected, how it is used, data security, cookies, and contact details."
       },
       {
-        "question": "Is Privacy Policy Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Privacy Policy Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What should I do about placeholders like [Your Site] or [Contact Email]?",
+        "answer": "They appear wherever a field was left empty. Fill in the site name and contact email before generating again, and edit the copied text if any placeholder remains."
       },
       {
-        "question": "Do I need to create an account or sign up to use Privacy Policy Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Privacy Policy Generator on mobile devices or tablets?",
-        "answer": "Yes, Privacy Policy Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the template cover GDPR or CCPA requirements specifically?",
+        "answer": "It is a generic starter policy rather than jurisdiction-specific wording, so treat it as a first draft, add the clauses your region and business require, and have it reviewed before publishing."
       },
       {
         "question": "Does the generator send my website details to a legal service?",
@@ -21327,20 +21127,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Probability Calculator do?",
-        "answer": "Probability Calculator lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which probability does this calculator compute?",
+        "answer": "It evaluates the binomial probability of exactly k successes in n trials when each trial succeeds with probability p - the classic coin, dice or quality-control setup."
       },
       {
-        "question": "Is Probability Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Probability Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why is the answer displayed in scientific notation?",
+        "answer": "Probabilities are formatted to four decimal places in exponent form, so very small chances stay compact and readable instead of showing a long run of zeros."
       },
       {
-        "question": "Do I need to create an account or sign up to use Probability Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Probability Calculator on mobile devices or tablets?",
-        "answer": "Yes, Probability Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does the result go blank for some k values?",
+        "answer": "k must be a whole number between 0 and the number of trials. Values outside that range leave the probability field blank rather than returning an error."
       },
       {
         "question": "Are my trial numbers or probabilities sent anywhere?",
@@ -21681,20 +21477,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does QR Code Decoder do?",
-        "answer": "QR Code Decoder lets you encode/decode web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which image formats can the decoder read?",
+        "answer": "Uploads accept PNG, JPG and WebP images, which are scanned by the jsQR library. The decoding runs on your device, and the image itself is never sent to a server."
       },
       {
-        "question": "Is QR Code Decoder really free? Are there any hidden charges?",
-        "answer": "Yes, QR Code Decoder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict codecs after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where does the scan history list live?",
+        "answer": "The last ten decoded payloads are saved in local storage on your device so you can revisit them, and the Clear History button removes the saved list."
       },
       {
-        "question": "Do I need to create an account or sign up to use QR Code Decoder?",
-        "answer": "No account, signup, or email is required. Simply open the page and start encode/decodeing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use QR Code Decoder on mobile devices or tablets?",
-        "answer": "Yes, QR Code Decoder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What kinds of payloads can a scanned code contain?",
+        "answer": "Anything the code stores: URLs, plain text, vCard details or Wi-Fi strings. The full payload is shown as-is, and http(s) results also get an Open icon that launches a new tab."
       },
       {
         "question": "Does the QR image I upload get sent to a server?",
@@ -21740,20 +21532,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does QR Code Generator do?",
-        "answer": "QR Code Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I export the finished code as a scalable file?",
+        "answer": "Yes, both PNG and SVG buttons are available. SVG stays crisp at any print size, while PNG suits quick digital use."
       },
       {
-        "question": "Is QR Code Generator really free? Are there any hidden charges?",
-        "answer": "Yes, QR Code Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What size and quiet zone settings should I pick?",
+        "answer": "Size runs from 128 to 1024 pixels in 64-pixel steps, and the quiet zone margin from 0 to 20 modules. Keep a margin of about four modules and strong dark-on-light contrast so scanners lock on easily."
       },
       {
-        "question": "Do I need to create an account or sign up to use QR Code Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use QR Code Generator on mobile devices or tablets?",
-        "answer": "Yes, QR Code Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I encode something other than a website link?",
+        "answer": "Yes - the content field accepts links, plain text, or vCard strings, so a code can point at contact details or a short note just as easily as a URL."
       },
       {
         "question": "Does the text I encode appear on SopKit's servers?",
@@ -21799,20 +21587,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does QR Code Generator for Business do?",
-        "answer": "QR Code Generator for Business lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What should I paste for the WhatsApp or Google review presets?",
+        "answer": "Paste the final destination link - a wa.me chat link or your Google review URL, for example. The code encodes exactly what you type; the purpose selector only labels the download."
       },
       {
-        "question": "Is QR Code Generator for Business really free? Are there any hidden charges?",
-        "answer": "Yes, QR Code Generator for Business is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is the business code exported?",
+        "answer": "Press Download PNG QR to save the canvas as a PNG named after the chosen purpose, for example business-qr-code-menu.png. The preview renders at 220 pixels with a compact quiet zone."
       },
       {
-        "question": "Do I need to create an account or sign up to use QR Code Generator for Business?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use QR Code Generator for Business on mobile devices or tablets?",
-        "answer": "Yes, QR Code Generator for Business works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do I need to press Generate after changing the link?",
+        "answer": "The preview re-renders automatically as soon as the details change, and the Generate button redraws on demand. Before anything is typed, a placeholder panel explains where the code will appear."
       },
       {
         "question": "Is the business URL I encode kept by SopKit?",
@@ -22034,20 +21818,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Random UUID Generator do?",
-        "answer": "Random UUID Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which UUID format does the button produce?",
+        "answer": "A version 4 UUID in canonical hyphenated form - 36 characters including hyphens, drawn from 122 random bits and shown in a read-only field."
       },
       {
-        "question": "Is Random UUID Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Random UUID Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is the output safe to use as a database key?",
+        "answer": "Yes. It uses the browser's crypto.randomUUID where available, falling back to a random pattern only on older browsers, so collisions are effectively not a concern for keys or test fixtures."
       },
       {
-        "question": "Do I need to create an account or sign up to use Random UUID Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Random UUID Generator on mobile devices or tablets?",
-        "answer": "Yes, Random UUID Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens to the previous UUID when I generate again?",
+        "answer": "Each press replaces the field with a brand-new identifier, and only the latest value stays on screen, so copy it before pressing Generate if you still need the previous one."
       },
       {
         "question": "Is the UUID I generate traceable back to me?",
@@ -22211,20 +21991,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Reactive Energy Converter do?",
-        "answer": "Reactive Energy Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which energy units are covered?",
+        "answer": "Six units: joules, kilojoules, calories, kilocalories, kilowatt-hours and BTU, spanning electrical and thermal energy figures."
       },
       {
-        "question": "Is Reactive Energy Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Reactive Energy Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I compare electrical kWh figures with thermal BTU values?",
+        "answer": "Yes. A kilowatt-hour is treated as 3.6 million joules in the base conversion, so the same six-unit set maps cleanly between electrical kWh and thermal BTU."
       },
       {
-        "question": "Do I need to create an account or sign up to use Reactive Energy Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Reactive Energy Converter on mobile devices or tablets?",
-        "answer": "Yes, Reactive Energy Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which BTU definition is used?",
+        "answer": "The ISO BTU of 1,055.056 joules. If your source uses a slightly different BTU convention, expect a small difference at high values."
       },
       {
         "question": "Do the meter values I convert leave my session?",
@@ -22270,20 +22046,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Reactive Power Converter do?",
-        "answer": "Reactive Power Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which units does the reactive power converter offer?",
+        "answer": "Three units: var, its kilowatt-scale multiple for larger grid and plant figures, and mechanical horsepower."
       },
       {
-        "question": "Is Reactive Power Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Reactive Power Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I flip a var-to-scale conversion around?",
+        "answer": "Use the swap button - it exchanges the from and to units instantly, so a var-to-scale entry becomes scale-to-var without retyping the value."
       },
       {
-        "question": "Do I need to create an account or sign up to use Reactive Power Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Reactive Power Converter on mobile devices or tablets?",
-        "answer": "Yes, Reactive Power Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why do results keep six significant digits?",
+        "answer": "The precision keeps grid and plant figures compact but faithful: a value like 110,000 var stays legible while small decimals still show enough digits to be useful."
       },
       {
         "question": "Is the load data I enter used elsewhere?",
@@ -22506,20 +22278,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Redirect Checker do?",
-        "answer": "Redirect Checker lets you validate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What appears in the redirect chain output?",
+        "answer": "The HEAD chain follows up to 12 hops and lists each URL with its status code and Location value as structured JSON, exposing the intermediate 301 and 302 responses."
       },
       {
-        "question": "Is Redirect Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Redirect Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the GET snippet differ from the HEAD chain?",
+        "answer": "The GET snippet requests the final destination and reports where the chain lands, the HTTP status there, and an excerpt of the page body, confirming the redirect really resolves."
       },
       {
-        "question": "Do I need to create an account or sign up to use Redirect Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Redirect Checker on mobile devices or tablets?",
-        "answer": "Yes, Redirect Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where does the redirect check send my URL?",
+        "answer": "The URL goes to SopKit's safety-checked fetch endpoint, and our server performs the request to the target. Internal-network and non-http(s) targets are refused, and bot-blocking sites can cut a chain short."
       },
       {
         "question": "Who walks the redirect chain when I trace a URL?",
@@ -23800,20 +23568,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Roman Numerals to Number do?",
-        "answer": "Roman Numerals to Number lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How are subtractive pairs like IV and CM evaluated?",
+        "answer": "When a smaller symbol precedes a larger one it is subtracted, so IV is 4, IX is 9 and CM is 900; the remaining letters are added normally."
       },
       {
-        "question": "Is Roman Numerals to Number really free? Are there any hidden charges?",
-        "answer": "Yes, Roman Numerals to Number is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do I need to type Roman numerals in capitals?",
+        "answer": "No - the input is uppercased before parsing, so xiv, XIV and Xiv all return 14."
       },
       {
-        "question": "Do I need to create an account or sign up to use Roman Numerals to Number?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Roman Numerals to Number on mobile devices or tablets?",
-        "answer": "Yes, Roman Numerals to Number works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if I type a letter that is not a Roman numeral?",
+        "answer": "Unknown characters contribute zero instead of breaking the calculation, so an accidental letter can quietly skew the total. Double-check unusual input against the value you expect."
       },
       {
         "question": "Does the numeral I enter get recorded?",
@@ -24094,20 +23858,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Sales Tax Calculator do?",
-        "answer": "Sales Tax Calculator lets you calculate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I work backwards from a tax-inclusive total?",
+        "answer": "Not directly - this calculator adds tax to a net amount. To reverse it, divide the total by 1 plus the rate as a decimal, then enter that result as the net amount."
       },
       {
-        "question": "Is Sales Tax Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Sales Tax Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can the rate field take a combined state and local rate?",
+        "answer": "Yes, any percentage is accepted, so add your state, county and city rates together and enter the total in the single rate field."
       },
       {
-        "question": "Do I need to create an account or sign up to use Sales Tax Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Sales Tax Calculator on mobile devices or tablets?",
-        "answer": "Yes, Sales Tax Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How is the sales tax rounded?",
+        "answer": "Both the tax and gross totals are rounded to two decimal places, keeping receipts and invoices consistent with typical checkout arithmetic."
       },
       {
         "question": "Is my pricing data sent to a tax service?",
@@ -24684,20 +24444,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Screen Resolution Simulator do?",
-        "answer": "Screen Resolution Simulator lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do the three lines on this card report?",
+        "answer": "The display width and height in CSS pixels, plus the device pixel ratio - three quick reference numbers for checking how a layout maps to the actual panel."
       },
       {
-        "question": "Is Screen Resolution Simulator really free? Are there any hidden charges?",
-        "answer": "Yes, Screen Resolution Simulator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does a pixel ratio of 2 mean?",
+        "answer": "It means each CSS pixel is backed by a 2x2 block of physical pixels, so images and canvas elements need twice the resolution to look sharp on that display."
       },
       {
-        "question": "Do I need to create an account or sign up to use Screen Resolution Simulator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Screen Resolution Simulator on mobile devices or tablets?",
-        "answer": "Yes, Screen Resolution Simulator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When do the values refresh?",
+        "answer": "They are read as soon as the page loads and re-read whenever a resize event fires, so docking, rotating or moving the window can update the numbers."
       },
       {
         "question": "Is my screen size shared with SopKit when I open this page?",
@@ -24743,20 +24499,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Secure Password Generator do?",
-        "answer": "Secure Password Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How long can the generated password be?",
+        "answer": "A slider sets the length anywhere from 4 to 128 characters; 16 is a sensible default for most accounts, with longer settings for anything sensitive."
       },
       {
-        "question": "Is Secure Password Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Secure Password Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I turn off every character set?",
+        "answer": "No - generation is blocked with a prompt asking you to keep at least one character class enabled, because the generator needs at least one alphabet to draw from."
       },
       {
-        "question": "Do I need to create an account or sign up to use Secure Password Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Secure Password Generator on mobile devices or tablets?",
-        "answer": "Yes, Secure Password Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the strength percentage change the password itself?",
+        "answer": "No - the meter only grades the result, scoring length and character variety. Press Generate again to reroll; green means Strong, amber Moderate and rose Weak."
       },
       {
         "question": "Is the password shown here recorded by SopKit?",
@@ -25097,20 +24849,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Server Status Checker do?",
-        "answer": "Server Status Checker lets you validate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens when I run a reachability check?",
+        "answer": "Your URL is submitted to SopKit's safety-checked fetch endpoint, and our server runs a HEAD chain plus an optional GET snippet against the target, so the request comes from our network rather than yours."
       },
       {
-        "question": "Is Server Status Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Server Status Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What do the status codes in the JSON output mean?",
+        "answer": "Each hop lists an HTTP status: 2xx means the server responded successfully, 3xx marks a redirect with its Location, and 4xx or 5xx indicate client or server errors."
       },
       {
-        "question": "Do I need to create an account or sign up to use Server Status Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Server Status Checker on mobile devices or tablets?",
-        "answer": "Yes, Server Status Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why do some sites show a timeout or refused connection?",
+        "answer": "Servers that block automated checks, drop HEAD requests, or time out surface as toast errors. Treat a miss as inconclusive rather than proof the site is down, and retry."
       },
       {
         "question": "From where does the server status check originate?",
@@ -26278,20 +26026,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Speed Converter do?",
-        "answer": "Speed Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which speed units does the converter support?",
+        "answer": "Five units - meters per second, kilometers per hour, miles per hour, knots, and feet per second - with all of them shown together for one entered value."
       },
       {
-        "question": "Is Speed Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Speed Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are knots defined in the math?",
+        "answer": "A knot is treated as one nautical mile per hour, the standard used in aviation and marine contexts, rather than a statute mile."
       },
       {
-        "question": "Do I need to create an account or sign up to use Speed Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Speed Converter on mobile devices or tablets?",
-        "answer": "Yes, Speed Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How exact is the miles-per-hour factor?",
+        "answer": "It uses the exact definition of 0.44704 meters per second per mile per hour, so mph answers stay precise, and results keep adaptive significant digits."
       },
       {
         "question": "Are my speed figures or routes stored?",
@@ -27079,20 +26823,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does Temperature Converter do?",
-        "answer": "Temperature Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which temperature scales can I pair?",
+        "answer": "Celsius, Fahrenheit and Kelvin are all available in the same picker pair, and the equivalents panel shows every scale for the value you enter."
       },
       {
-        "question": "Is Temperature Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Temperature Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do negative readings break the conversion?",
+        "answer": "No - sub-zero Celsius and negative Fahrenheit values are handled with the proper offsets, so winter temperatures and lab readings convert correctly."
       },
       {
-        "question": "Do I need to create an account or sign up to use Temperature Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Temperature Converter on mobile devices or tablets?",
-        "answer": "Yes, Temperature Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why can't temperature use one simple multiply factor?",
+        "answer": "Unlike plain unit converters, temperature scales have different zero points, so the tool adds or subtracts an offset and routes everything through Kelvin before converting."
       },
       {
         "question": "Does the temperature I enter leave the page?",
@@ -27138,20 +26878,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does Terms and Conditions Generator do?",
-        "answer": "Terms and Conditions Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which clauses does the generated document include?",
+        "answer": "Five numbered clauses after the effective date: acceptance of terms, use license, disclaimer, limitation of liability, and governing law."
       },
       {
-        "question": "Is Terms and Conditions Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Terms and Conditions Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Should I replace the governing law wording in the draft?",
+        "answer": "Yes. Insert your actual jurisdiction or country, adjust the clauses to fit your business, and have the final text reviewed - the draft is a starting template, not legal advice."
       },
       {
-        "question": "Do I need to create an account or sign up to use Terms and Conditions Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Terms and Conditions Generator on mobile devices or tablets?",
-        "answer": "Yes, Terms and Conditions Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What fills in if I skip the optional header fields?",
+        "answer": "A placeholder like [Your Site] stands in for a missing name, and the effective date is set to the day the page is viewed, so fill the fields before copying the text."
       },
       {
         "question": "Is my business name sent to a lawyer or service?",
@@ -27992,20 +27728,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Text Tools do?",
-        "answer": "Text Tools lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is this a single tool or a directory of utilities?",
+        "answer": "It is a hub page: a grid of cards for the text category's format, count and analyze utilities, each card linking to its own dedicated tool page."
       },
       {
-        "question": "Is Text Tools really free? Are there any hidden charges?",
-        "answer": "Yes, Text Tools is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do the tools run from the cards on this page?",
+        "answer": "No - the cards are navigation. Hovering reveals a Process Text affordance, and clicking opens that tool's page, where the actual work happens."
       },
       {
-        "question": "Do I need to create an account or sign up to use Text Tools?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Text Tools on mobile devices or tablets?",
-        "answer": "Yes, Text Tools works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are the text utilities organized on the hub?",
+        "answer": "Cards reflow from one to three columns across screen sizes, and a longer intro below the grid describes the full lineup for anyone comparing tools."
       },
       {
         "question": "Is anything about my visit logged when I browse the text tools hub?",
@@ -28346,20 +28078,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Time Converter do?",
-        "answer": "Time Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which duration units does the converter cover?",
+        "answer": "Nine units, from nanoseconds and microseconds through milliseconds, seconds, minutes, hours, days and weeks up to years, all shown together in the equivalents panel."
       },
       {
-        "question": "Is Time Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Time Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How long is a year in these conversions?",
+        "answer": "One year is defined as 365 days, or 31,536,000 seconds, so year figures are simple calendar-style estimates rather than astronomical values."
       },
       {
-        "question": "Do I need to create an account or sign up to use Time Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Time Converter on mobile devices or tablets?",
-        "answer": "Yes, Time Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I convert a millisecond measurement into hours in one step?",
+        "answer": "Yes - set milliseconds as the from unit and hours as the to unit. The equivalents panel then expresses the same duration in all nine units at once."
       },
       {
         "question": "Is the duration I convert stored anywhere?",
@@ -28464,20 +28192,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Torque Converter do?",
-        "answer": "Torque Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which torque units does it convert between?",
+        "answer": "Two: newton-meters and pound-feet, the common pair for wheel nut specs, bike bolts and engine figures."
       },
       {
-        "question": "Is Torque Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Torque Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What factor is used for pound-feet?",
+        "answer": "One pound-foot is about 1.3558 newton-meters. The result keeps six significant digits, so small bolt torques stay accurate."
       },
       {
-        "question": "Do I need to create an account or sign up to use Torque Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Torque Converter on mobile devices or tablets?",
-        "answer": "Yes, Torque Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "My spec sheet lists inch-pounds - does this handle that?",
+        "answer": "Not directly; only newton-meters and pound-feet are supported. Divide an inch-pound figure by 12 to get pound-feet first, then convert."
       },
       {
         "question": "Do the torque figures I enter get retained?",
@@ -29112,20 +28836,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does URL Decode do?",
-        "answer": "URL Decode lets you encode/decode web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What kind of encoded text does this decoder handle?",
+        "answer": "Percent-escaped strings such as %20 and %2F, typically found in query strings and URI fragments, are turned back into readable characters by decodeURIComponent."
       },
       {
-        "question": "Is URL Decode really free? Are there any hidden charges?",
-        "answer": "Yes, URL Decode is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict codecs after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why did I get an Error message instead of output?",
+        "answer": "A malformed percent sequence - like a lone percent sign or a truncated escape - cannot be decoded, so the tool reports an error instead of crashing the result pane."
       },
       {
-        "question": "Do I need to create an account or sign up to use URL Decode?",
-        "answer": "No account, signup, or email is required. Simply open the page and start encode/decodeing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use URL Decode on mobile devices or tablets?",
-        "answer": "Yes, URL Decode works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where do I go to encode text instead?",
+        "answer": "The companion URL Encode page performs the opposite direction; this page only decodes, and its output updates as you paste."
       },
       {
         "question": "Is the URL I decode visible to SopKit?",
@@ -29171,20 +28891,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does URL Encode do?",
-        "answer": "URL Encode lets you encode/decode web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Should I paste a full URL or just part of it?",
+        "answer": "Paste only the value or segment you need escaped. encodeURIComponent also encodes reserved characters such as colon, slash and question mark, so a whole URL would come back with its separators escaped too."
       },
       {
-        "question": "Is URL Encode really free? Are there any hidden charges?",
-        "answer": "Yes, URL Encode is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict codecs after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are spaces and non-Latin characters handled?",
+        "answer": "They become UTF-8 percent sequences - a space turns into %20 - so the encoded output is safe to drop into a query value."
       },
       {
-        "question": "Do I need to create an account or sign up to use URL Encode?",
-        "answer": "No account, signup, or email is required. Simply open the page and start encode/decodeing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use URL Encode on mobile devices or tablets?",
-        "answer": "Yes, URL Encode works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When does the copy button appear?",
+        "answer": "As soon as there is an encoded string in the read-only result pane; the output refreshes while you type, so you can paste, copy and move on."
       },
       {
         "question": "Does the text I encode get sent over the network?",
@@ -29285,20 +29001,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does URL Opener do?",
-        "answer": "URL Opener lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What can I check before opening a pasted link?",
+        "answer": "The parsed protocol, hostname, port, path, query string and hash are listed first, so you can confirm the destination before launching it in a new tab."
       },
       {
-        "question": "Is URL Opener really free? Are there any hidden charges?",
-        "answer": "Yes, URL Opener is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why is the Open URL button missing for my link?",
+        "answer": "The button appears only after the string parses as a valid URL. Broken or partial links leave the detail area empty rather than guessing at the missing parts."
       },
       {
-        "question": "Do I need to create an account or sign up to use URL Opener?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use URL Opener on mobile devices or tablets?",
-        "answer": "Yes, URL Opener works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does opening a link here bypass my browser's normal protection?",
+        "answer": "No - it parses the string and opens the parsed href in a new tab, so your browser's usual navigation and link warnings still apply."
       },
       {
         "question": "Is the link I open reported back to SopKit?",
@@ -29344,20 +29056,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does URL Parser do?",
-        "answer": "URL Parser lets you read web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How are default ports displayed in the breakdown?",
+        "answer": "If the URL includes an explicit port it is shown as written; when it relies on the scheme default, the Port line reads (default)."
       },
       {
-        "question": "Is URL Parser really free? Are there any hidden charges?",
-        "answer": "Yes, URL Parser is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I see the query string and hash separately?",
+        "answer": "Yes - the query output includes its leading question mark exactly as it appears, and the hash fragment is captured on its own line apart from the parameters."
       },
       {
-        "question": "Do I need to create an account or sign up to use URL Parser?",
-        "answer": "No account, signup, or email is required. Simply open the page and start reading your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use URL Parser on mobile devices or tablets?",
-        "answer": "Yes, URL Parser works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which URLs will produce output?",
+        "answer": "Any absolute URL the browser's URL constructor accepts, such as http, https or mailto addresses. Relative or incomplete strings show no details."
       },
       {
         "question": "Does the parser keep a copy of my URLs?",
@@ -29403,20 +29111,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does URL Rewriting do?",
-        "answer": "URL Rewriting lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does splitting a URL first help with rewriting rules?",
+        "answer": "Seeing protocol, host, port and path separately - plus the exact query string - makes it easier to write a precise match instead of guessing at path and query boundaries."
       },
       {
-        "question": "Is URL Rewriting really free? Are there any hidden charges?",
-        "answer": "Yes, URL Rewriting is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does this tool apply the rewrite on my server?",
+        "answer": "No. It only inspects the link and offers an Open URL check; you copy the parsed parts into whatever rule syntax your server, CDN or proxy uses."
       },
       {
-        "question": "Do I need to create an account or sign up to use URL Rewriting?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use URL Rewriting on mobile devices or tablets?",
-        "answer": "Yes, URL Rewriting works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What is the parsed href line for?",
+        "answer": "It shows the browser-resolved canonical form of the link, which is a useful reference when matching incoming request URLs in a rewrite rule."
       },
       {
         "question": "Is the URL I inspect for rewriting stored?",
@@ -29462,20 +29166,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does URL Shortener do?",
-        "answer": "URL Shortener lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Do the generated short links really resolve to my URL?",
+        "answer": "No - the shortening runs as a local demonstration: the code and 30t.me link are generated in the page with nothing registered on a shortening service, so treat them as previews rather than live redirects."
       },
       {
-        "question": "Is URL Shortener really free? Are there any hidden charges?",
-        "answer": "Yes, URL Shortener is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What do the click counts in the link list measure?",
+        "answer": "They are random sample numbers created with each entry, not tracked visits. The Analytics tab simply totals those values for the links currently in your list."
       },
       {
-        "question": "Do I need to create an account or sign up to use URL Shortener?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use URL Shortener on mobile devices or tablets?",
-        "answer": "Yes, URL Shortener works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What are the rules for a custom alias?",
+        "answer": "The alias field accepts up to 20 characters and is used verbatim as the short code; leave it empty and a random six-character code is generated instead."
       },
       {
         "question": "Do the short links I create survive after I close the page?",
@@ -29557,20 +29257,16 @@ Alongside the User-Agent breakdown, the tool reads system metrics exposed to the
     },
     "faqs": [
       {
-        "question": "What exactly does UTM Builder do?",
-        "answer": "UTM Builder lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens if I forget the https:// prefix?",
+        "answer": "It is added automatically when the URL validates, so typing example.com works. An address that still fails validation shows a Please enter a valid URL alert and no output."
       },
       {
-        "question": "Is UTM Builder really free? Are there any hidden charges?",
-        "answer": "Yes, UTM Builder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Will existing query parameters survive on the destination URL?",
+        "answer": "Yes - UTM parameters are added alongside whatever is already there. If a tag with the same name exists, the new value replaces the old one."
       },
       {
-        "question": "Do I need to create an account or sign up to use UTM Builder?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use UTM Builder on mobile devices or tablets?",
-        "answer": "Yes, UTM Builder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are utm_source, utm_medium and utm_campaign mandatory?",
+        "answer": "They carry required-style labels because GA4 naming conventions expect them, but only the destination URL is functionally needed - the builder adds just the fields you fill in."
       },
       {
         "question": "Where do my campaign links go when I build them?",
@@ -30005,20 +29701,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Voltage Converter do?",
-        "answer": "Voltage Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which voltage scales does the converter cover?",
+        "answer": "Volts, millivolts and kilovolts, which covers battery labels, sensor outputs and mains ratings in one picker pair."
       },
       {
-        "question": "Is Voltage Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Voltage Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can one tool handle both tiny sensor readings and high mains voltages?",
+        "answer": "Yes - adaptive formatting keeps 0.001 V and 110,000 V legible, and the equivalents panel shows the value on all three scales at once."
       },
       {
-        "question": "Do I need to create an account or sign up to use Voltage Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Voltage Converter on mobile devices or tablets?",
-        "answer": "Yes, Voltage Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are the conversions calculated behind the scenes?",
+        "answer": "Everything routes through a base unit with exact factors and floating-point arithmetic, so chained unit pairs stay consistent and results keep sensible significant digits."
       },
       {
         "question": "Do the voltage readings I convert get stored?",
@@ -30064,20 +29756,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Volume Converter do?",
-        "answer": "Volume Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which capacity units are available?",
+        "answer": "Six units: milliliters, liters, cubic meters, US gallons, cubic feet and US cups, with the imperial side using US definitions."
       },
       {
-        "question": "Is Volume Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Volume Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How precise is the US cup in the conversion?",
+        "answer": "One US cup equals about 236.6 milliliters, the standard US definition, which is handy for checking recipe amounts against metric measures."
       },
       {
-        "question": "Do I need to create an account or sign up to use Volume Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Volume Converter on mobile devices or tablets?",
-        "answer": "Yes, Volume Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I switch between liters and cubic meters for engineering work?",
+        "answer": "Yes - pick liters as the from unit and cubic meters as the to unit; the swap button reverses it and the sidebar keeps all six units visible."
       },
       {
         "question": "Is the capacity I convert sent anywhere?",
@@ -30123,20 +29811,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Volumetric Flow Rate Converter do?",
-        "answer": "Volumetric Flow Rate Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which flow units does the converter use?",
+        "answer": "Three units: cubic meters per second, liters per minute and US gallons per minute, with cubic meters per second as the base for the math."
       },
       {
-        "question": "Is Volumetric Flow Rate Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Volumetric Flow Rate Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I check a plumbing figure like 1 L/min in GPM?",
+        "answer": "Yes - enter the liters-per-minute value and switch the target to US gallons per minute; the equivalents panel also keeps all three flow units on screen at once."
       },
       {
-        "question": "Do I need to create an account or sign up to use Volumetric Flow Rate Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Volumetric Flow Rate Converter on mobile devices or tablets?",
-        "answer": "Yes, Volumetric Flow Rate Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does it handle both small dosing flows and large plant throughputs?",
+        "answer": "Yes. The same three-unit set covers trickle dosing rates and industrial throughput figures, with adaptive precision keeping both ends readable."
       },
       {
         "question": "Are my flow-rate figures kept on file?",
@@ -30475,20 +30159,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Weight Converter do?",
-        "answer": "Weight Converter lets you convert web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which weight and mass units are included?",
+        "answer": "Six units: milligrams, grams, kilograms, ounces, pounds and stone, covering everything from jewelry to body weight."
       },
       {
-        "question": "Is Weight Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Weight Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I express body weight in stone and pounds?",
+        "answer": "Yes - stone is one of the units, so a kilograms figure converts to stone in one step, and the equivalents list shows pounds alongside it."
       },
       {
-        "question": "Do I need to create an account or sign up to use Weight Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Weight Converter on mobile devices or tablets?",
-        "answer": "Yes, Weight Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How precise are grams-to-ounces figures?",
+        "answer": "Results keep six to eight significant digits, so small jewelry weights and large freight figures both stay clear without rounding surprises."
       },
       {
         "question": "Does the tool save the weights I convert?",
@@ -30534,20 +30214,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does What Is My Browser do?",
-        "answer": "What Is My Browser lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the page decide which browser I am using?",
+        "answer": "It reads the browser's user agent string and matches known markers for Edge, Chrome, Firefox, Safari and Opera."
       },
       {
-        "question": "Is What Is My Browser really free? Are there any hidden charges?",
-        "answer": "Yes, What Is My Browser is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does it show Unknown Browser?",
+        "answer": "If the user agent does not match any known pattern - some privacy-focused or unusual browsers mask it - detection falls back to the Unknown Browser label."
       },
       {
-        "question": "Do I need to create an account or sign up to use What Is My Browser?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use What Is My Browser on mobile devices or tablets?",
-        "answer": "Yes, What Is My Browser works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does it also report my browser version?",
+        "answer": "No, only the browser name appears as a headline. For the complete string, including version details, use the companion user agent tool."
       },
       {
         "question": "Does SopKit log which browser I am using?",
@@ -30593,20 +30269,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does What Is My IP Address do?",
-        "answer": "What Is My IP Address lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where does the displayed address come from?",
+        "answer": "On load, the page requests your public address from the ipify service over HTTPS and shows whatever it returns; that external request is what reveals your IP."
       },
       {
-        "question": "Is What Is My IP Address really free? Are there any hidden charges?",
-        "answer": "Yes, What Is My IP Address is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I use this to check whether a VPN is working?",
+        "answer": "Yes - if the address shown matches your VPN provider rather than your home connection, traffic is being routed through the tunnel. Reloading the page re-queries."
       },
       {
-        "question": "Do I need to create an account or sign up to use What Is My IP Address?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use What Is My IP Address on mobile devices or tablets?",
-        "answer": "Yes, What Is My IP Address works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why did I get Unable to fetch IP?",
+        "answer": "The request to the address service can be blocked by privacy extensions, offline networks or service hiccups; reload the page to retry."
       },
       {
         "question": "Who sees my IP address when I open this page?",
@@ -30652,20 +30324,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does What Is My Screen Resolution do?",
-        "answer": "What Is My Screen Resolution lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the readout show physical pixels or CSS pixels?",
+        "answer": "Width and height are CSS pixels reported by the operating system. Multiply by the pixel ratio for physical resolution - 1920 CSS pixels at ratio 2 equals a 3840-pixel panel."
       },
       {
-        "question": "Is What Is My Screen Resolution really free? Are there any hidden charges?",
-        "answer": "Yes, What Is My Screen Resolution is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is this the same as my browser window size?",
+        "answer": "No - it reports the display size, not the viewport. A browser window can be smaller than the screen, so window and display numbers often differ."
       },
       {
-        "question": "Do I need to create an account or sign up to use What Is My Screen Resolution?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use What Is My Screen Resolution on mobile devices or tablets?",
-        "answer": "Yes, What Is My Screen Resolution works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does my 1920-pixel laptop report a smaller width?",
+        "answer": "Display scaling. At 125 percent scaling the OS reports 1536 CSS pixels for a 1920-pixel panel, and the pixel ratio line accounts for the difference."
       },
       {
         "question": "Is my screen resolution reported to SopKit's servers?",
@@ -30711,20 +30379,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does What Is My User Agent do?",
-        "answer": "What Is My User Agent lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is actually inside a user agent string?",
+        "answer": "Identifiers for the browser, its engine and the operating system, exactly as the browser sends them - the page shows the raw value with no parsing."
       },
       {
-        "question": "Is What Is My User Agent really free? Are there any hidden charges?",
-        "answer": "Yes, What Is My User Agent is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where would I paste this string?",
+        "answer": "Support forms and bug reports commonly ask for it, because it helps reproduce device-specific issues. The selectable text makes copying it easy."
       },
       {
-        "question": "Do I need to create an account or sign up to use What Is My User Agent?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use What Is My User Agent on mobile devices or tablets?",
-        "answer": "Yes, What Is My User Agent works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I spoof or edit my user agent from this page?",
+        "answer": "No - the box is read-only and only displays what the browser reports. Changing the value requires your browser's own flags or an extension."
       },
       {
         "question": "Does viewing my user agent string expose it to anyone?",
@@ -30770,20 +30434,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does WhatsApp Link Generator do?",
-        "answer": "WhatsApp Link Generator lets you generate web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What should I enter in the country code and phone fields?",
+        "answer": "The dialing code without punctuation, such as 91, followed by the number; both fields strip non-digits automatically, so spaces and dashes are ignored."
       },
       {
-        "question": "Is WhatsApp Link Generator really free? Are there any hidden charges?",
-        "answer": "Yes, WhatsApp Link Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is a long message handled in the link?",
+        "answer": "The text is percent-encoded into the wa.me link's text parameter, so line breaks and special characters survive the trip into WhatsApp's composer."
       },
       {
-        "question": "Do I need to create an account or sign up to use WhatsApp Link Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use WhatsApp Link Generator on mobile devices or tablets?",
-        "answer": "Yes, WhatsApp Link Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I download the chat QR code for print?",
+        "answer": "Yes - once the link is generated, the green QR code renders on the canvas and Download QR Code saves it as whatsapp-qr-code.png."
       },
       {
         "question": "Does the phone number I enter get stored by SopKit?",
@@ -30829,20 +30489,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Whois Domain Lookup do?",
-        "answer": "Whois Domain Lookup lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does a lookup request actually do for a domain?",
+        "answer": "It runs a live HTTP probe: our server follows the domain's redirect chain, reports status codes, and fetches a page excerpt, best-effort where hosts block automated checks."
       },
       {
-        "question": "Is Whois Domain Lookup really free? Are there any hidden charges?",
-        "answer": "Yes, Whois Domain Lookup is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do I get registry or registrant details for the domain?",
+        "answer": "No - the result reflects live HTTP behavior rather than registry records, so ownership, expiry and registrar fields are not part of the output."
       },
       {
-        "question": "Do I need to create an account or sign up to use Whois Domain Lookup?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Whois Domain Lookup on mobile devices or tablets?",
-        "answer": "Yes, Whois Domain Lookup works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why might a lookup fail for a domain that I know is live?",
+        "answer": "Only public http(s) hosts are probed, and bot protection or timeouts can block the request; if the probe fails, treat the result as inconclusive."
       },
       {
         "question": "Does the domain I look up get recorded by SopKit?",
@@ -31124,20 +30780,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does WordPress Theme Detector do?",
-        "answer": "WordPress Theme Detector lets you process web data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your web data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the detector identify a site's theme?",
+        "answer": "It fetches the page from our server and shows the returned markup for inspection, rather than naming the theme automatically - look for wp-content/themes paths in the output."
       },
       {
-        "question": "Is WordPress Theme Detector really free? Are there any hidden charges?",
-        "answer": "Yes, WordPress Theme Detector is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why is only part of the page shown?",
+        "answer": "The GET snippet returns roughly the first 4,000 characters of the body. A HEAD chain runs first to verify the response and any redirects that shape the final page."
       },
       {
-        "question": "Do I need to create an account or sign up to use WordPress Theme Detector?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your web data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use WordPress Theme Detector on mobile devices or tablets?",
-        "answer": "Yes, WordPress Theme Detector works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does it only work on WordPress sites?",
+        "answer": "No - it works on any http(s) address. Non-WordPress pages simply will not contain theme paths, and bot-protected sites may return partial markup."
       },
       {
         "question": "Where does my site URL go during a theme lookup?",
