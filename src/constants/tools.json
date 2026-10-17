@@ -15,7 +15,7 @@
         {
           "id": "ai-image-generator",
           "name": "AI Image Generator",
-          "description": "Generate stunning AI images from text prompts instantly. Create photorealistic photos, digital art, anime, and illustrations for free. No signup required, unlimited generations, and 100% private browser-based processing.",
+          "description": "Describe a scene, choose a style, size and optional seed, and the Flux model behind Pollinations renders it, with results kept in a local history.",
           "route": "/ai-image-generator",
           "popular": true,
           "seoDescription": "Turn text prompts into stunning AI images free — photorealistic photos, anime, digital art and illustrations. Unlimited generations, private, no signup.",
@@ -24,7 +24,7 @@
         {
           "id": "ai-voice-generator",
           "name": "AI Voice Generator",
-          "description": "Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibility, and creative projects. No signup required.",
+          "description": "Send a line of text to the openai-audio model on Pollinations and get back a spoken clip you can replay, download or share by its link.",
           "route": "/ai-voice-generator",
           "popular": true,
           "seoDescription": "Convert text to natural AI voices free — lifelike voiceovers in multiple languages and accents. For videos, podcasts and accessibility. No signup needed.",
@@ -60,7 +60,7 @@
         {
           "id": "business-name-generator",
           "name": "Business Name Generator",
-          "description": "Generate creative and catchy business name ideas for your brand, startup, or company. Free online business name generator with AI-powered suggestions — all client-side, no signup required.",
+          "description": "Combine prefixes, suffixes and punchy word pairs into ten brandable name ideas per press, optionally anchored to your industry keyword.",
           "route": "/business-name-generator",
           "popular": false,
           "seoDescription": "Generate creative and brandable business name ideas for your startup, shop, or agency instantly. Free browser-based idea generator with zero signups needed.",
@@ -87,7 +87,7 @@
         {
           "id": "excuse-generator",
           "name": "Excuse Generator",
-          "description": "Generate creative, believable, and humorous excuses for work, school, social events, and meetings instantly in your browser.",
+          "description": "Fills polite bow-out templates with random pets, relatives, appliances and traffic mishaps, producing three ready-to-send excuses per press.",
           "route": "/excuse-generator",
           "popular": false,
           "seoDescription": "Generate creative, believable and funny excuses for work, school, meetings and social events in one click. Free excuse maker, no signup needed.",
@@ -105,7 +105,7 @@
           "id": "number-generator",
           "name": "Number Generator",
           "route": "/number-generator",
-          "description": "Generate random numbers, lottery numbers, PIN codes, and custom number sequences instantly in your browser. Free and private number generator with multiple output formats.",
+          "description": "Draw lottery numbers, PINs, dice rolls or custom ranges from either quick pseudo-random maths or the cryptographic Web Crypto source.",
           "seoDescription": "Generate truly random numbers, lottery picks, PIN codes, and custom sequences instantly. Fast, customizable parameters with 100% private in-browser generation.",
           "seoTitle": "Free Random Number Generator — Secure PINs & Picks"
         },
@@ -113,7 +113,7 @@
           "id": "poetry-generator",
           "name": "Poetry Generator",
           "route": "/poetry-generator",
-          "description": "Generate beautiful poems, haikus, sonnets, and rhymes instantly in your browser. Free online poetry generator for creative writing, learning, and inspiration — all client-side, no server needed.",
+          "description": "Slots nature, emotion and time-of-day words into three rhyming stanza patterns to sketch a short verse ready to copy and refine.",
           "seoDescription": "Write beautiful poems, haikus, sonnets and rhymes for creative writing, school and inspiration. Free poetry generator that runs privately — no signup.",
           "seoTitle": "Free Poetry Generator Online — Write Poems, Haikus & Rhymes"
         },
@@ -165,7 +165,7 @@
         {
           "id": "instagram-bio-generator",
           "name": "Instagram Bio Generator",
-          "description": "Generate optimized Instagram bios with stylish fonts, emojis, and formatting. Free online Instagram bio generator for personal profiles, business accounts, and creators — 100% client-side, no signup.",
+          "description": "Turns a keyword such as a niche, hobby or city into five bio formats with emojis, line breaks and call-to-action hooks, each copyable.",
           "route": "/instagram-bio-generator",
           "popular": true,
           "seoDescription": "Generate stylish Instagram bios with fonts, emojis, and line breaks for personal, business, and creator profiles. Copy instantly with free private formatting.",
@@ -192,7 +192,7 @@
         {
           "id": "slogan-generator",
           "name": "Slogan Generator",
-          "description": "Generate catchy slogans and taglines for your brand, startup, product or campaign. Browse ideas, refine and copy — free, no signup.",
+          "description": "Matches your brand name against eight familiar slogan patterns to produce taglines like Simply the Best or Built for Success.",
           "route": "/slogan-generator",
           "popular": false,
           "seoDescription": "Create memorable slogans and advertising taglines for brands, startups, and campaigns. Browse and customize punchy marketing copy completely free online.",
@@ -210,7 +210,7 @@
         {
           "id": "google-business-profile-description-generator",
           "name": "GBP Description Generator",
-          "description": "Write a keyword-rich Google Business Profile description that ranks in local search. Service-focused copy within GBP limits — free, no signup.",
+          "description": "Wraps a business name and service keywords into a single plain paragraph covering experience, reliability and a call to get in touch.",
           "route": "/google-business-profile-description-generator",
           "popular": true,
           "seoDescription": "Generate SEO-ready Google Business Profile descriptions with local keywords and services. Boost Google Maps rankings and local visibility 100% free online.",
@@ -237,7 +237,7 @@
         {
           "id": "client-proposal-generator",
           "name": "Client Proposal Generator",
-          "description": "Draft winning freelance proposals with scope, pricing, timeline and CTA sections. Customize for Upwork or direct clients — free, no signup.",
+          "description": "Builds a short markdown proposal with scope, deliverables, pricing and next steps already filled in around your project name.",
           "route": "/client-proposal-generator",
           "popular": true,
           "seoDescription": "Generate persuasive client proposals with scope, deliverables, milestones, and pricing. Win freelance projects faster with free browser-based proposal copy.",
@@ -327,7 +327,7 @@
         {
           "id": "ascii-art-generator",
           "name": "Ascii Art Generator",
-          "description": "Transform photos and images into creative text-based ASCII art in your browser. Adjust contrast and character width with instant local preview.",
+          "description": "Samples a photo's brightness and maps it to text characters, with width and contrast sliders plus copy and download for the finished art.",
           "route": "/ascii-art-generator",
           "popular": false,
           "seoDescription": "Turn uploaded images into custom ASCII text art with adjustable character width, contrast and inversion, then copy or download the result in one click.",
@@ -371,7 +371,7 @@
         {
           "id": "ico-to-png-converter",
           "name": "ICO to PNG Converter",
-          "description": "Convert ICO icon files to PNG images in any size. Extract crisp icons for favicons, apps and design work — free, private, no signup.",
+          "description": "Unpacks an ICO favicon or app icon into its individual sizes and saves the frame you choose as a PNG with transparency preserved.",
           "route": "/ico-to-png",
           "popular": false,
           "seoDescription": "Pull favicon and app icons out of .ico files and save each one as a clean PNG with transparency for design mockups, store listings or desktop use.",
@@ -380,7 +380,7 @@
         {
           "id": "jpg-to-png-converter",
           "name": "JPG to PNG Converter",
-          "description": "Convert JPG to PNG with transparency support. Maintain high image quality and convert formats instantly in your browser. Free, secure, and privacy-focused online tool.",
+          "description": "Re-saves a JPEG as a lossless PNG so further edits, layers and re-exports stop stacking fresh compression artifacts on every save.",
           "route": "/jpg-to-png",
           "popular": false,
           "title": "JPG to PNG Converter - Free Online Tool",
@@ -390,7 +390,7 @@
         {
           "id": "png-to-jpg-converter",
           "name": "PNG to JPG Converter",
-          "description": "Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser.",
+          "description": "Turns a PNG graphic into a lighter JPEG, with a quality slider so you decide how much detail the smaller file keeps.",
           "route": "/png-to-jpg",
           "popular": false,
           "title": "PNG to JPG Converter - Free Online Tool",
@@ -437,7 +437,7 @@
         {
           "id": "image-color-picker-pro",
           "name": "Pro Image Color Picker",
-          "description": "Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-level color picker. Free online color extraction tool that runs entirely in your browser — no uploads, instant results.",
+          "description": "Click any pixel for HEX, RGB, HSL and CMYK values, zoom in for precision and stack a swatch history while assembling a palette.",
           "route": "/image-color-picker",
           "popular": true,
           "seoDescription": "Click any pixel for HEX, RGB, HSL and CMYK values, zoom in for pixel-level precision and collect a running history of swatches as you build a palette.",
@@ -473,7 +473,7 @@
         {
           "id": "aadhaar-pan-photo-resizer",
           "name": "Aadhaar and PAN Card Photo Resizer",
-          "description": "Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online government exam forms. Free online photo resizer that processes everything in your browser with no uploads.",
+          "description": "Sizes Aadhaar and PAN uploads to portal rules: 213x213 photos kept under 50 KB, 400x200 signatures under 20 KB, or custom dimensions.",
           "route": "/aadhaar-pan-photo-resizer",
           "popular": false,
           "seoDescription": "Free Aadhaar & PAN Card Photo Resizer online: resize photos to 213x213 and signatures under 20KB for NSDL & UIDAI portals. 100% private browser processing.",
@@ -482,7 +482,7 @@
         {
           "id": "background-remover",
           "name": "Background Remover",
-          "description": "Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no signup needed.",
+          "description": "Cuts a subject away from a plain or solid backdrop and returns a transparent PNG cutout for listings, slide decks or headshots.",
           "route": "/background-remover",
           "popular": true,
           "seoDescription": "Clear solid or plain backdrops from product photos and portraits, leaving a transparent PNG cutout that suits listings, slide decks and headshots.",
@@ -491,7 +491,7 @@
         {
           "id": "base64-to-image-converter",
           "name": "Base64 to Image Converter",
-          "description": "Convert Base64 strings to images (PNG, JPG, WebP) instantly. Our privacy-first tool processes data locally in your browser, ensuring your images stay secure. Free and fast Base64 decoder.",
+          "description": "Paste a Base64 string or data URI and the decoded image appears for preview, ready to download in its detected PNG, JPG or WebP form.",
           "route": "/base64-to-image-converter",
           "popular": false,
           "seoDescription": "Paste a Base64 string or data URI and watch the decoded image appear, then download it as a PNG, JPG or WebP file once the preview looks correct.",
@@ -500,7 +500,7 @@
         {
           "id": "convert-to-ico",
           "name": "Convert to ICO",
-          "description": "Convert PNG and JPG images to ICO favicon files in multiple sizes. Crisp Windows icons for apps and sites — free, no signup.",
+          "description": "Shapes a PNG or JPG into an ICO file whose embedded sizes serve browser tabs, bookmarks and Windows folder shortcuts.",
           "route": "/convert-to-ico",
           "popular": false,
           "seoDescription": "Shape a PNG or JPG image into an ICO icon file so browser tabs, desktop folders and Windows shortcuts can display your own favicon or app symbol.",
@@ -527,7 +527,7 @@
         {
           "id": "flip-image",
           "name": "Flip Image",
-          "description": "Free flip image tool to flip photos and images horizontally or vertically. Process your data instantly with privacy-friendly browser-based image flipping — no uploads, no servers, no data collection.",
+          "description": "Mirrors a picture left to right or top to bottom to correct reversed selfies, match a layout or build symmetrical artwork.",
           "route": "/flip-image",
           "popular": false,
           "seoDescription": "Mirror a photo left to right or top to bottom in one pass, useful for fixing reversed selfies, matching a layout or building symmetrical artwork.",
@@ -555,7 +555,7 @@
         {
           "id": "image-cropper",
           "name": "Image Cropper",
-          "description": "Crop images to exact dimensions with drag-and-drop precision. Lock aspect ratios for social posts and prints — free, no signup.",
+          "description": "Trim a photo with pixel handles and locked aspect-ratio presets aimed at social posts, profile pictures or print sizes.",
           "route": "/image-cropper",
           "popular": false,
           "seoDescription": "Trim photos to the exact frame you want for social posts, profile pictures or prints, using pixel-precise handles and locked aspect ratio presets.",
@@ -591,7 +591,7 @@
         {
           "id": "image-enlarger",
           "name": "Image Enlarger",
-          "description": "Enlarge small images without heavy pixelation using smart upscaling. 2x and 4x options for prints and posters — free, no signup.",
+          "description": "Scale a small picture up by percentage or exact width and height, smoothing each redraw so prints and screens stay presentable.",
           "route": "/image-enlarger",
           "popular": false,
           "seoDescription": "Scale small images up to larger dimensions for printing or HD screens, choosing a 2x, 4x or fully custom size with smooth canvas resampling applied.",
@@ -618,7 +618,7 @@
         {
           "id": "jpg-converter",
           "name": "JPG Converter",
-          "description": "Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-focused and works entirely in your browser.",
+          "description": "Export almost any picture to JPEG and dial the quality setting until the file size and visible detail meet your target.",
           "route": "/jpg-converter",
           "popular": false,
           "seoDescription": "Export almost any picture to a compact JPEG at the quality level you choose, the image format every web form, printer and email client understands.",
@@ -627,7 +627,7 @@
         {
           "id": "jpg-to-bmp-converter",
           "name": "JPG to BMP Converter",
-          "description": "Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading files to any server.",
+          "description": "Unpack a JPEG into an uncompressed BMP bitmap for industrial software, embedded screens and tools that reject compressed images.",
           "route": "/jpg-to-bmp-converter",
           "popular": false,
           "seoDescription": "Unpack a JPG into a plain BMP bitmap for older industrial software, embedded displays and other tools that reject compressed image data entirely.",
@@ -645,7 +645,7 @@
         {
           "id": "jpg-to-ico-converter",
           "name": "JPG to ICO Converter",
-          "description": "Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signup required.",
+          "description": "Recast a JPEG photo as a favicon-ready ICO file, carrying the icon sizes that website tabs and desktop shortcuts expect.",
           "route": "/jpg-to-ico-converter",
           "popular": false,
           "seoDescription": "Recast a JPG photo as an ICO icon file so a website tab, bookmark or Windows desktop shortcut carries your chosen image instead of a generic default.",
@@ -771,7 +771,7 @@
         {
           "id": "png-to-gif-converter",
           "name": "PNG to GIF Converter",
-          "description": "Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file uploads.",
+          "description": "Re-saves a PNG as a flat single-frame GIF for platforms, email builders and upload forms that will not take a PNG directly.",
           "route": "/png-to-gif-converter",
           "popular": false,
           "seoDescription": "Re-save a PNG as a flat, single-frame GIF for platforms and email builders that happily accept GIF uploads but will not take direct PNG attachments.",
@@ -798,7 +798,7 @@
         {
           "id": "rotate-image",
           "name": "Rotate Image",
-          "description": "Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure. No signup needed.",
+          "description": "Turn a sideways phone photo or scanned page by 90 or 180 degrees clockwise or counter-clockwise, then save the straightened file.",
           "route": "/rotate-image",
           "popular": false,
           "seoDescription": "Rotate a photo 90 or 180 degrees clockwise or counterclockwise to fix sideways phone shots and scanned pages before you file, print or post them.",
@@ -807,7 +807,7 @@
         {
           "id": "image-tools",
           "name": "Free Image Tools Online",
-          "description": "Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.",
+          "description": "SopKit's image toolbox, grouped into compression, creative editing and format conversion so you can jump straight to the right utility.",
           "route": "/image-tools",
           "seoDescription": "Browse the whole picture toolbox: compression, format conversion, resizing, background cleanup, EXIF inspection, watermarking and other utilities.",
           "seoTitle": "Free Image Tools — Compress, Edit & Convert"
@@ -955,7 +955,7 @@
         {
           "id": "markdown-to-pdf",
           "name": "Markdown to PDF Converter",
-          "description": "Convert Markdown text into a clean, print-ready PDF document instantly in your browser. Free online Markdown to PDF converter with live preview — no signup required, all processing is local and private.",
+          "description": "Type or paste Markdown and watch a styled A4 preview form as you go, then download the finished document as a print-ready PDF file.",
           "route": "/markdown-to-pdf",
           "popular": true,
           "seoDescription": "Notes, a README or a short ebook compiled from Markdown into a styled A4 PDF, with the preview updating as you type and a download button for the result.",
@@ -964,7 +964,7 @@
         {
           "id": "url-encoder-decoder",
           "name": "URL Encoder Decoder",
-          "description": "Encode and decode URLs, query strings and URI parameters instantly in your browser. No server logging, fully private.",
+          "description": "Percent-encode a query string before it travels or decode a long redirect address until its parameters read clearly, one press per direction.",
           "route": "/url-encoder-decoder",
           "popular": true,
           "seoDescription": "Percent-encode a query string before it travels, or decode a long redirect address until the parameters become readable; one press swaps the two directions.",
@@ -1000,7 +1000,7 @@
         {
           "id": "word-frequency-counter",
           "name": "Word Frequency Counter",
-          "description": "Calculate word density, occurrences, and text analytics with our free online word frequency counter. Analyze any text for keyword frequency, word count, and content statistics — 100% private, no uploads.",
+          "description": "Ranks every term in a document by occurrences and shows each one's share of the total, exposing overworked words and keyword balance.",
           "route": "/word-frequency-counter",
           "popular": true,
           "seoDescription": "The most used terms in a document, ranked with occurrence counts and percentage density, so a writer can spot overworked words or check keyword balance.",
@@ -1081,7 +1081,7 @@
         {
           "id": "article-rewriter",
           "name": "Article Rewriter",
-          "description": "Paraphrase and rewrite articles instantly with our free online Article Rewriter. Improve readability, change tone, and create unique content variations for blogs and SEO. 100% free and secure.",
+          "description": "Refresh a draft by swapping tired, overused wording for livelier synonyms while keeping the original meaning and sentence flow intact.",
           "route": "/article-rewriter",
           "popular": false,
           "seoDescription": "Paraphrase sentences and rephrase articles with fresh phrasing while preserving original context and nuance. Polish writing cleanly with local browser processing.",
@@ -1146,7 +1146,7 @@
         {
           "id": "text-repeater",
           "name": "Text Repeater",
-          "description": "Repeat any text as many times as you need with our free online Text Repeater. Perfect for testing, social media, or fun content. Simple, fast, and works instantly in your browser.",
+          "description": "Repeat a phrase up to five thousand times and copy the enlarged block for load tests, filler copy or playful message walls.",
           "route": "/text-repeater",
           "popular": false,
           "seoDescription": "Set a phrase and a count, up to five thousand repeats, and get the enlarged block back immediately for load tests, filler text or playful message walls.",
@@ -1347,7 +1347,7 @@
         {
           "id": "pdf-watermark",
           "name": "PDF Watermark Creator",
-          "description": "Add text or image logos as watermarks to all pages of your PDF document securely in your browser.",
+          "description": "Stamp diagonal text or a PNG or JPG logo across every page of a PDF, tuning opacity, angle, colour and size until the mark sits right.",
           "route": "/pdf-watermark",
           "popular": true,
           "seoDescription": "Lay a diagonal text watermark or an image logo over every page of a PDF, tuning opacity, angle and size until the mark fits without hiding content.",
@@ -1356,7 +1356,7 @@
         {
           "id": "pdf-metadata-editor",
           "name": "PDF Metadata Editor",
-          "description": "Edit PDF document metadata including Title, Author, Subject, and Keywords directly in your browser. Free online PDF metadata editor with 100% client-side processing — no uploads, no data collection.",
+          "description": "Inspect and rewrite a PDF's title, author, subject and keyword properties so the document presents correctly in readers and results.",
           "route": "/pdf-metadata-editor",
           "popular": true,
           "seoDescription": "Inspect and rewrite the properties readers show for a PDF: title, author, subject and keyword fields can all be corrected so the document presents well.",
@@ -1392,7 +1392,7 @@
         {
           "id": "image-to-pdf",
           "name": "Image to PDF",
-          "description": "Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required.",
+          "description": "Combine JPG, PNG or WebP pictures into one PDF, choosing A4 or auto page size, orientation and margins for a tidy sheet.",
           "route": "/image-to-pdf",
           "popular": true,
           "seoDescription": "Bundle a batch of JPG, PNG or WebP pictures into one tidy PDF, adjusting page size, orientation and margins so photos and scans sit neatly on the sheet.",
@@ -1401,7 +1401,7 @@
         {
           "id": "pdf-editor",
           "name": "PDF Editor",
-          "description": "Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup.",
+          "description": "Place text annotations anywhere on a PDF's pages, colour and size them, then flatten the marks into a fresh copy you can save.",
           "route": "/pdf-editor",
           "popular": true,
           "seoDescription": "Layer text boxes onto the pages of a PDF: type annotations anywhere, pick a color and size, then flatten them into the document and save a new copy.",
@@ -1428,7 +1428,7 @@
         {
           "id": "pdf-to-word",
           "name": "PDF to Word",
-          "description": "Convert PDF files to editable Word documents (DOCX) directly in your browser. Free online PDF to Word converter with 100% client-side processing — no uploads, no AI training, no data storage.",
+          "description": "Pull the text layer from a PDF into an editable DOCX built page by page, so wording can be revised instead of retyped.",
           "route": "/pdf-to-word",
           "popular": true,
           "seoDescription": "Lift the text layer out of a PDF and reassemble it as an editable Word DOCX, so paragraphs, lists and headings can be revised instead of retyped.",
@@ -1437,7 +1437,7 @@
         {
           "id": "pdf-unlocker",
           "name": "PDF Unlocker",
-          "description": "Remove password protection from PDF files directly in your browser. Free online PDF password remover with 100% client-side processing — your files never leave your device, no uploads, no data storage.",
+          "description": "Enter the password you already know for a PDF and save an unprotected copy that can print, copy and edit freely again.",
           "route": "/pdf-unlocker",
           "popular": false,
           "seoDescription": "Know the password for a PDF you own? Enter it once to lift the protection and regain printing, copying and editing rights on a fresh unlocked copy.",
@@ -1446,7 +1446,7 @@
         {
           "id": "word-to-pdf",
           "name": "Word to PDF",
-          "description": "Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required.",
+          "description": "Parses a DOCX file page by page and renders it as a PDF, keeping headings and emphasis recognisable for printing or submission.",
           "route": "/word-to-pdf",
           "popular": true,
           "seoDescription": "Turn a DOCX file into a shareable PDF: it is parsed and rendered page by page, keeping headings and emphasis recognizable for printing or submission.",
@@ -1455,7 +1455,7 @@
         {
           "id": "pdf-grayscale",
           "name": "PDF Grayscale",
-          "description": "Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signup required.",
+          "description": "Strips colour from a PDF's pages, swapping it for grayscale tones to cut printing ink use and shrink image-heavy files.",
           "route": "/pdf-grayscale",
           "popular": false,
           "seoDescription": "Convert colorful pages to black and white: swap color for grayscale tones to cut ink costs before printing and shrink image-heavy files along the way.",
@@ -1473,7 +1473,7 @@
         {
           "id": "pdf-tools",
           "name": "PDF Tools",
-          "description": "Merge, split, compress, edit, and manipulate PDF documents online for free. All PDF processing happens 100% client-side in your browser — no file uploads, no data storage, no AI training.",
+          "description": "One index for SopKit's PDF suite: merge, split, rotate, compress, convert, watermark, renumber, protect and unlock documents.",
           "route": "/pdf-tools",
           "seoDescription": "Everything PDF, gathered in one index: merge, split, rotate, compress, convert, protect, unlock, watermark and renumber documents without switching apps.",
           "seoTitle": "Free PDF Tools Online — Merge, Split, Compress & Edit PDFs"
@@ -1497,7 +1497,7 @@
         {
           "id": "video-converter",
           "name": "Video Converter",
-          "description": "Convert video files between MP4, AVI, MKV, MOV, WebM, and more formats directly in your browser. Free online video converter with private client-side processing — no uploads, no server storage.",
+          "description": "Re-encode an MP4, MOV, AVI, MKV or WebM clip and save the result as WebM, MP4 or OGG, whatever codecs your device can render.",
           "route": "/video-converter",
           "popular": false,
           "seoDescription": "Feed the converter an MP4, MOV, AVI, MKV or WebM clip, choose WebM, MP4 or OGG as the output, and take away a freshly re-encoded copy ready to use.",
@@ -1515,7 +1515,7 @@
         {
           "id": "ai-video-summarizer",
           "name": "AI Video Summarizer",
-          "description": "Summarize video transcripts into key points and insights. Paste any transcript and get instant bullet-point summaries, paragraphs, or executive overviews. 100% free and private.",
+          "description": "Paste a transcript and sentence scoring extracts the most important lines as bullet points, a flowing paragraph or an executive overview.",
           "route": "/ai-video-summarizer",
           "popular": true,
           "seoDescription": "Paste a video transcript and pick bullet points, a flowing paragraph or an executive overview; the analyzer weighs each sentence and keeps the takeaways.",
@@ -1524,7 +1524,7 @@
         {
           "id": "akillitv-video-downloader",
           "name": "Akillitv Video Downloader",
-          "description": "Save AkilliTV videos for offline viewing in HD quality. Paste the link, pick a format and download — free, no signup.",
+          "description": "Submit an AkilliTV link to SopKit's resolver, compare the stream qualities it lists and save the episode or clip for later viewing.",
           "route": "/akillitv-video-downloader",
           "popular": false,
           "seoDescription": "An AkilliTV link goes in and the resolver lists the stream qualities it finds; pick one and the episode or clip is saved for viewing away from the site.",
@@ -1533,7 +1533,7 @@
         {
           "id": "all-downloaders",
           "name": "All Downloaders",
-          "description": "One downloader for 70+ sites — TikTok, Instagram, Facebook, Twitter and more. Paste any video link — free, no signup.",
+          "description": "One link field that recognises over seventy video sites, names the source, lists every video and audio rendition and saves your pick.",
           "route": "/all-downloaders",
           "popular": false,
           "seoDescription": "Drop in a link from any supported platform and the engine names the source, lists every video and audio rendition found, then saves the one you choose.",
@@ -1542,7 +1542,7 @@
         {
           "id": "bandcamp-video-downloader",
           "name": "Bandcamp Video Downloader",
-          "description": "Save Bandcamp tracks and albums you own for offline listening in high quality. Free audio downloads, no signup.",
+          "description": "Resolve a Bandcamp track or album link through the resolver and save the audio at the release's original encoding for later listening.",
           "route": "/bandcamp-video-downloader",
           "popular": false,
           "seoDescription": "Bandcamp tracks and albums you own can be pulled down as audio files, with the release's original encoding kept intact for listening wherever you are.",
@@ -1551,7 +1551,7 @@
         {
           "id": "bilibili-video-downloader",
           "name": "Bilibili Video Downloader",
-          "description": "Download Bilibili videos in HD without watermark for offline watching. Paste the link and save — free, no signup.",
+          "description": "Paste a Bilibili link and the resolver lists each available quality, so episodes, streams and dance clips can travel as files.",
           "route": "/bilibili-video-downloader",
           "popular": false,
           "seoDescription": "A Bilibili link opens into a menu of available qualities, letting anime episodes, gaming streams and dance clips travel with you as portable files.",
@@ -1560,7 +1560,7 @@
         {
           "id": "bitchute-video-downloader",
           "name": "Bitchute Video Downloader",
-          "description": "Save BitChute videos as MP4 for offline viewing. Direct links in multiple qualities — free, no signup.",
+          "description": "BitChute uploads come back from the resolver as MP4 files at the creator's resolution, playable in any standard media player.",
           "route": "/bitchute-video-downloader",
           "popular": false,
           "seoDescription": "BitChute uploads save as MP4 at whichever resolution the creator provided, and the finished file opens in any standard media player you already own.",
@@ -1569,7 +1569,7 @@
         {
           "id": "blogger-video-downloader",
           "name": "Blogger Video Downloader",
-          "description": "Download videos embedded in Blogger and Blogspot posts as MP4. One-click saves — free, private, no signup.",
+          "description": "Paste a Blogger or Blogspot post address and the embedded video arrives as MP4, archiving tutorials and family clips intact.",
           "route": "/blogger-video-downloader",
           "popular": false,
           "seoDescription": "Videos embedded in Blogger or Blogspot posts download as MP4 once the post address is pasted, letting tutorials and family clips be archived intact.",
@@ -1578,7 +1578,7 @@
         {
           "id": "blutv-video-downloader",
           "name": "Blutv Video Downloader",
-          "description": "Save BluTV shows and clips you have access to for offline viewing. Simple link-based downloads — free, no signup.",
+          "description": "BluTV episodes you can access resolve from a shared link into a list of qualities, ready to stockpile for trips and quiet evenings.",
           "route": "/blutv-video-downloader",
           "popular": false,
           "seoDescription": "BluTV episodes and clips you have access to resolve from a link into a download list, so shows can be stockpiled for trips and signal-free evenings.",
@@ -1587,7 +1587,7 @@
         {
           "id": "buzzfeed-video-downloader",
           "name": "Buzzfeed Video Downloader",
-          "description": "Download BuzzFeed videos, Tasty recipes and listicles for offline watching. Quick MP4 saves — free, no signup.",
+          "description": "Save BuzzFeed sketches, Tasty recipe demos and listicle segments as MP4 files for kitchen replays or rewatching a favourite bit.",
           "route": "/buzzfeed-video-downloader",
           "popular": false,
           "seoDescription": "BuzzFeed sketches, Tasty recipe demos and listicle segments save as MP4 files — a handy library for kitchen sessions or rewatching a favorite segment.",
@@ -1596,7 +1596,7 @@
         {
           "id": "capcut-video-downloader",
           "name": "Capcut Video Downloader",
-          "description": "Download CapCut template videos without watermark for re-editing. Clean exports for creators — free, no signup.",
+          "description": "Fetch a CapCut template video minus the app watermark, giving editors a clean master clip to drop into a fresh timeline.",
           "route": "/capcut-video-downloader",
           "popular": false,
           "seoDescription": "CapCut template videos come down without the app's watermark, giving editors a clean master clip they can drop into a fresh timeline and remix to their taste.",
@@ -1605,7 +1605,7 @@
         {
           "id": "chingari-video-downloader",
           "name": "Chingari Video Downloader",
-          "description": "Save Chingari short videos in HD for offline viewing. Indian short-video app downloads — free, no signup.",
+          "description": "Drop a Chingari share link into the field and take the short home in whatever resolution the resolver reports from the app.",
           "route": "/chingari-video-downloader",
           "popular": false,
           "seoDescription": "Copy a Chingari share link into the field and take the short home in whatever resolution the app serves, ideal for keeping up with regional creators.",
@@ -1614,7 +1614,7 @@
         {
           "id": "dailymotion-video-downloader",
           "name": "Dailymotion Video Downloader",
-          "description": "Download Dailymotion videos in HD and SD qualities. News, music and shows offline — free, no signup.",
+          "description": "A Dailymotion link comes back from the resolver as a list of resolutions, so you can pick a small SD file or the sharpest option.",
           "route": "/dailymotion-video-downloader",
           "popular": false,
           "seoDescription": "Dailymotion news, music and show links resolve into a list of resolutions; pick SD for a smaller file or the sharpest rendition the source carries.",
@@ -1623,7 +1623,7 @@
         {
           "id": "douyin-video-downloader",
           "name": "Douyin Video Downloader",
-          "description": "Save Douyin (Chinese TikTok) videos without watermark. Paste link, download HD — free, no signup.",
+          "description": "A Douyin share URL resolves into the clip at its original resolution, stripped of the watermark added when videos leave the app.",
           "route": "/douyin-video-downloader",
           "popular": false,
           "seoDescription": "A Douyin share URL returns the video in its original resolution, stripped of the watermark that normally travels with clips shared out of the app.",
@@ -1632,7 +1632,7 @@
         {
           "id": "downloaders",
           "name": "Downloaders",
-          "description": "Every downloader in one directory — video, audio, image and social savers for 70+ platforms. Free, no signup.",
+          "description": "The downloader collection in one place: choose a supported platform, paste a share link and save the quality that fits your device.",
           "route": "/downloaders",
           "popular": false,
           "seoDescription": "SopKit's downloader collection works from one link field: drop in a video address, review the qualities on offer and save the file that suits your device.",
@@ -1641,7 +1641,7 @@
         {
           "id": "espn-video-downloader",
           "name": "Espn Video Downloader",
-          "description": "Save ESPN highlights and clips for offline viewing. Sports moments in HD — free downloader, no signup.",
+          "description": "Fetch ESPN highlights and studio segments before they rotate out of the feed, with the resolver listing every quality it finds.",
           "route": "/espn-video-downloader",
           "popular": false,
           "seoDescription": "ESPN highlights and studio segments can be fetched before they rotate out of the feed, letting fans relive a big play without digging through the app.",
@@ -1650,7 +1650,7 @@
         {
           "id": "facebook-story-downloader",
           "name": "Facebook Story Downloader",
-          "description": "Save Facebook stories before they expire in 24 hours. Anonymous viewing downloads — free, no signup.",
+          "description": "Enter a Facebook username for an illustrative story viewer: sample cards carry timestamps, file sizes, durations and saved highlights.",
           "route": "/facebook-story-downloader",
           "popular": false,
           "seoDescription": "Facebook stories are captured as files before the twenty-four-hour expiry wipes them, preserving birthday messages, event recaps and candid moments.",
@@ -1659,7 +1659,7 @@
         {
           "id": "facebook-video-downloader",
           "name": "Facebook Video Downloader",
-          "description": "Download Facebook videos, reels and Watch shows in HD. Paste link, save MP4 — free, no signup.",
+          "description": "One input covers feed videos, reels and Watch episodes: paste the link, compare the qualities and keep the MP4 that suits you.",
           "route": "/facebook-video-downloader",
           "popular": false,
           "seoDescription": "Feed videos, reels and Watch episodes arrive through one input; paste the link, compare the quality options and keep the MP4 that fits your device.",
@@ -1668,7 +1668,7 @@
         {
           "id": "fb-video-saver",
           "name": "Facebook Video Saver",
-          "description": "Quick-save Facebook videos to your gallery in HD. Lightweight saver for daily clips — free, no signup.",
+          "description": "Send a Facebook clip, reel or live recording through the resolver and receive it back as an HD or SD file to keep.",
           "route": "/fb-video-saver",
           "popular": false,
           "seoDescription": "A lightweight companion for Facebook browsing: send over a clip, reel or live recording and receive it back as HD or SD depending on what the source offers.",
@@ -1677,7 +1677,7 @@
         {
           "id": "febspot-video-downloader",
           "name": "Febspot Video Downloader",
-          "description": "Download Febspot viral videos and trending clips in HD. Save and share offline — free, no signup.",
+          "description": "Febspot's trending uploads pass through the resolver and come back as MP4 at the best quality the post carries.",
           "route": "/febspot-video-downloader",
           "popular": false,
           "seoDescription": "Febspot's trending uploads convert to MP4 at the best quality the post carries, so viral clips remain watchable long after they leave the front page.",
@@ -1686,7 +1686,7 @@
         {
           "id": "flickr-video-downloader",
           "name": "Flickr Video Downloader",
-          "description": "Download Flickr photos and videos in original resolution. For photographers' portfolios — free, no signup.",
+          "description": "Paste a Flickr video page and the resolver returns the upload at its original quality, handy for keeping a portfolio backed up.",
           "route": "/flickr-video-downloader",
           "popular": false,
           "seoDescription": "Flickr photo and video pages offer their originals for download, letting photographers back up a portfolio or gather reference material at full size.",
@@ -1695,7 +1695,7 @@
         {
           "id": "ifunny-video-downloader",
           "name": "Ifunny Video Downloader",
-          "description": "Save iFunny memes, GIFs and funny videos to share anywhere. Meme vault in your pocket — free, no signup.",
+          "description": "Save iFunny memes, GIFs and short comedy clips at their original quality, building a stash that survives a deleted source post.",
           "route": "/ifunny-video-downloader",
           "popular": false,
           "seoDescription": "iFunny memes, GIFs and short comedy clips save at their original quality, assembling a stash that survives even when the source post gets deleted.",
@@ -1704,7 +1704,7 @@
         {
           "id": "ig-highlights-saver",
           "name": "Instagram Highlights Saver",
-          "description": "Save Instagram highlights and covers before profiles change. Archive stories permanently — free, no signup.",
+          "description": "Enter an Instagram username to preview the story viewer with per-story age, media type and size, plus highlight sets listed with covers and counts.",
           "route": "/ig-highlights-saver",
           "popular": false,
           "seoDescription": "Instagram highlights and their cover images are captured together, preserving the story sequence that profiles usually delete once a campaign ends.",
@@ -1713,7 +1713,7 @@
         {
           "id": "imdb-video-downloader",
           "name": "Imdb Video Downloader",
-          "description": "Download IMDb trailers and clips in HD for offline viewing. Movie previews anytime — free, no signup.",
+          "description": "Paste an IMDb trailer or featurette address; the link is fetched on the server and each rendition it returns is listed with a size for saving.",
           "route": "/imdb-video-downloader",
           "popular": false,
           "seoDescription": "IMDb trailers and featurette clips download in high quality, letting cinephiles study a preview or share it without waiting on the site's slow player.",
@@ -1722,7 +1722,7 @@
         {
           "id": "imgur-video-downloader",
           "name": "Imgur Video Downloader",
-          "description": "Download Imgur images, GIFs and albums in original quality. Backup viral posts — free, no signup.",
+          "description": "Paste an Imgur post, GIF or album link and every media item the fetch returns is listed as its own downloadable file.",
           "route": "/imgur-video-downloader",
           "popular": false,
           "seoDescription": "Imgur galleries, GIFs and videos download as a set; a single URL can return every item in an album at full resolution, ready for safekeeping on any device.",
@@ -1731,7 +1731,7 @@
         {
           "id": "insta-reels-saver",
           "name": "Insta Reels Saver",
-          "description": "Save Instagram Reels in HD without watermark. Trending audio kept intact — free, no signup.",
+          "description": "Give it an Instagram Reels link and the fetched video comes back as MP4 renditions in the qualities the post exposes, soundtrack included.",
           "route": "/insta-reels-saver",
           "popular": false,
           "seoDescription": "Reels arrive as HD files with the soundtrack untouched, since the saver preserves the original audio track instead of serving back a muted version.",
@@ -1749,7 +1749,7 @@
         {
           "id": "instagram-image-downloader",
           "name": "Instagram Image Downloader",
-          "description": "Save Instagram photos in full resolution, including carousels. Zoom and download — free, no signup.",
+          "description": "Look up an Instagram handle to preview its profile photo alongside account stats, with three size options listed for the image.",
           "route": "/instagram-image-downloader",
           "popular": false,
           "seoDescription": "Instagram photos come through at the resolution the platform stores, including every slide in a carousel, and each image is available to download on its own.",
@@ -1758,7 +1758,7 @@
         {
           "id": "instagram-reel-downloader",
           "name": "Instagram Reel Downloader",
-          "description": "Download Instagram Reels with audio in HD quality. No watermark, instant MP4 — free, no signup.",
+          "description": "Paste a Reels share link and the fetched MP4 arrives with its original soundtrack, ready to save at whichever quality is listed.",
           "route": "/instagram-reel-downloader",
           "popular": false,
           "seoDescription": "Give the reel downloader a share link and it returns a watermark-free MP4 with sound intact, ready to edit, repost or send on to friends and followers.",
@@ -1767,7 +1767,7 @@
         {
           "id": "instagram-story-downloader",
           "name": "Instagram Story Downloader",
-          "description": "Save Instagram stories anonymously before they vanish. HD story viewer downloads — free, no signup.",
+          "description": "Enter an account name to see a story viewer listing each clip with age, media type and size, along with the highlight sets below it.",
           "route": "/instagram-story-downloader",
           "popular": false,
           "seoDescription": "Stories are retrieved without leaving a viewer trace and arrive as HD clips that stay watchable after the twenty-four-hour window closes behind them.",
@@ -1776,7 +1776,7 @@
         {
           "id": "instagram-videos-downloader",
           "name": "Instagram Videos Downloader",
-          "description": "Download Instagram feed videos, lives and IGTV episodes in HD. Long videos too — free, no signup.",
+          "description": "Feed it Instagram feed video, live or IGTV links: the post is fetched, shown with its thumbnail, and every downloadable rendition is listed.",
           "route": "/instagram-videos-downloader",
           "popular": false,
           "seoDescription": "Long-form Instagram content — feed videos, lives and IGTV episodes — saves in HD, with no session limit on how many links you run through in one sitting.",
@@ -1785,7 +1785,7 @@
         {
           "id": "izlesene-video-downloader",
           "name": "Izlesene Video Downloader",
-          "description": "Download Izlesene Turkish videos in HD for offline viewing. Paste link and save — free, no signup.",
+          "description": "Paste an Izlesene show, series or clip address and the fetched page is turned into a quality list to pick from before saving.",
           "route": "/izlesene-video-downloader",
           "popular": false,
           "seoDescription": "Turkish video site Izlesene is covered by the same link resolver, saving shows, series and clips at the highest quality the page exposes for later viewing.",
@@ -1794,7 +1794,7 @@
         {
           "id": "kickstarter-video-downloader",
           "name": "Kickstarter Video Downloader",
-          "description": "Download Kickstarter campaign and pitch videos in HD. Save ideas worth backing — free, no signup.",
+          "description": "Paste a Kickstarter campaign or pitch video link and the fetched clip is offered at the renditions the campaign page exposes.",
           "route": "/kickstarter-video-downloader",
           "popular": false,
           "seoDescription": "Kickstarter pitch videos and campaign clips download in HD, useful for studying how successful projects frame their story or keeping a backed campaign.",
@@ -1803,7 +1803,7 @@
         {
           "id": "kwai-video-downloader",
           "name": "Kwai Video Downloader",
-          "description": "Download Kwai short videos and trending clips in HD. Quick saves for sharing — free, no signup.",
+          "description": "A Kwai short or trending post link is fetched and returned as downloadable files at the quality of the original upload.",
           "route": "/kwai-video-downloader",
           "popular": false,
           "seoDescription": "A shared Kwai URL is fetched and handed back as downloadable files in the original upload quality, covering both shorts and trending posts alike.",
@@ -1812,7 +1812,7 @@
         {
           "id": "likee-video-downloader",
           "name": "Likee Video Downloader",
-          "description": "Download Likee short videos in HD for offline viewing. Effects, music and vlogs saved — free, no signup.",
+          "description": "Paste a Likee video link to fetch it and choose from the listed renditions, with the clip's music and effects left intact.",
           "route": "/likee-video-downloader",
           "popular": false,
           "seoDescription": "Likee shorts keep their music, effects and visuals exactly as served, which makes them easy to rewatch or study for editing inspiration later on.",
@@ -1821,7 +1821,7 @@
         {
           "id": "linkedin-video-downloader",
           "name": "Linkedin Video Downloader",
-          "description": "Save LinkedIn learning clips and feed videos for offline viewing. Professional content — free, no signup.",
+          "description": "Paste a LinkedIn video post or course clip address and the fetched media is offered in the renditions LinkedIn publishes.",
           "route": "/linkedin-video-downloader",
           "popular": false,
           "seoDescription": "LinkedIn talks, course previews and feed videos come down for learning at your own pace — a commute, a flight or a quiet hour between meetings at work.",
@@ -1830,7 +1830,7 @@
         {
           "id": "m3u8-downloader",
           "name": "M3u8 Downloader",
-          "description": "Download M3U8 HLS streams and convert to MP4. Paste playlist URL, save video — free, no signup.",
+          "description": "Paste an HLS playlist address; the resolver reads the stream and lists each video and audio rendition it exposes for saving.",
           "route": "/m3u8-downloader",
           "popular": false,
           "seoDescription": "Paste an HLS playlist address and the page resolves the stream into its component renditions, offering each as a file you can save and replay later.",
@@ -1839,7 +1839,7 @@
         {
           "id": "mashable-video-downloader",
           "name": "Mashable Video Downloader",
-          "description": "Download Mashable tech and culture videos in HD. Stay updated offline — free, no signup.",
+          "description": "Paste a Mashable tech, science or entertainment clip link and the fetch returns the available qualities for saving.",
           "route": "/mashable-video-downloader",
           "popular": false,
           "seoDescription": "Mashable's tech, science and entertainment videos become portable files moments after submission, so a personal catch-up queue is always ready to play.",
@@ -1857,7 +1857,7 @@
         {
           "id": "mxtakatak-video-downloader",
           "name": "Mxtakatak Video Downloader",
-          "description": "Download MX TakaTak short videos in HD. Indian shorts saved offline — free, no signup.",
+          "description": "Handles MX TakaTak comedy sketches, dance clips and trending shorts: paste the link, let it fetch, then pick from the listed qualities.",
           "route": "/mxtakatak-video-downloader",
           "popular": false,
           "seoDescription": "MX TakaTak comedy sketches, dance clips and trending shorts download from a pasted link, preserving the quality of the original upload for later viewing.",
@@ -1866,7 +1866,7 @@
         {
           "id": "ninegag-video-downloader",
           "name": "Ninegag Video Downloader",
-          "description": "Download 9GAG funny videos and memes in original quality. Daily laughs offline — free, no signup.",
+          "description": "Paste a 9GAG post link that contains video and the fetched MP4 renditions are listed with their sizes for download.",
           "route": "/ninegag-video-downloader",
           "popular": false,
           "seoDescription": "9GAG posts carrying video resolve to MP4 downloads in their original quality, keeping the punchline safe from sudden deletions and feed refreshes.",
@@ -1884,7 +1884,7 @@
         {
           "id": "online-video-downloader",
           "name": "Online Video Downloader",
-          "description": "Paste any video link to download in HD — works with 70+ supported sites. Universal saver — free, no signup.",
+          "description": "Drop in a video page address from any platform the site covers; the server-side resolver lists every rendition it can find for saving.",
           "route": "/online-video-downloader",
           "popular": false,
           "seoDescription": "Unsure which saver fits a link? This page accepts addresses from more than seventy supported sites, shows the qualities on offer and saves your pick.",
@@ -1893,7 +1893,7 @@
         {
           "id": "periscope-video-downloader",
           "name": "Periscope Video Downloader",
-          "description": "Download Periscope live replays and broadcasts before they expire. Archive streams — free, no signup.",
+          "description": "Old Periscope replay URLs that still answer are fetched and saved as video files, a small rescue for the platform's streaming era.",
           "route": "/periscope-video-downloader",
           "popular": false,
           "seoDescription": "Replays that still answer at their old Periscope URLs can be captured as video files, a small rescue for broadcasts from the platform's streaming heyday.",
@@ -1902,7 +1902,7 @@
         {
           "id": "pinterest-clip-saver",
           "name": "Pinterest Clip Saver",
-          "description": "Save Pinterest video clips and Idea Pins in HD. Craft inspiration offline — free, no signup.",
+          "description": "Paste a Pinterest video pin or Idea Pin link and the fetched clip is listed with the qualities and sizes available for saving.",
           "route": "/pinterest-clip-saver",
           "popular": false,
           "seoDescription": "Pinterest clips and Idea Pins save in HD, letting crafters keep tutorials, recipes and DIY demonstrations at hand while their hands are busy with the project.",
@@ -1911,7 +1911,7 @@
         {
           "id": "pinterest-gif-downloader",
           "name": "Pinterest Gif Downloader",
-          "description": "Download Pinterest GIFs in original animated quality. Reaction library offline — free, no signup.",
+          "description": "An animated pin address is fetched and returned as a downloadable file with the motion intact, ready for a reaction folder.",
           "route": "/pinterest-gif-downloader",
           "popular": false,
           "seoDescription": "Animated GIFs from Pinterest download with motion intact and quality preserved, so reaction images and board favorites can be reused in chats and on boards.",
@@ -1920,7 +1920,7 @@
         {
           "id": "pinterest-image-downloader",
           "name": "Pinterest Image Downloader",
-          "description": "Download Pinterest images and infographics in full resolution. Mood boards offline — free, no signup.",
+          "description": "Paste a pin holding a photo, infographic or artwork and the fetched image is offered at the resolutions Pinterest serves.",
           "route": "/pinterest-image-downloader",
           "popular": false,
           "seoDescription": "Pins holding photos, infographics and artwork fetch at the resolution the platform serves, ideal for assembling mood boards and reference folders.",
@@ -1929,7 +1929,7 @@
         {
           "id": "pinterest-video-downloader",
           "name": "Pinterest Video Downloader",
-          "description": "Download Pinterest videos and Idea Pins in HD quality. Save tutorials and recipes — free, no signup.",
+          "description": "Recipe demos, craft tutorials and Idea Pin videos: paste the pin link, let the fetch run, then save whichever rendition is listed.",
           "route": "/pinterest-video-downloader",
           "popular": false,
           "seoDescription": "Recipe demos, craft tutorials and Idea Pin videos from Pinterest land as HD files, ready to replay while cooking, building, gardening or making at home.",
@@ -1938,7 +1938,7 @@
         {
           "id": "puhutv-video-downloader",
           "name": "Puhutv Video Downloader",
-          "description": "Save PuhuTV series, films and shows for offline watching. Turkish streaming downloads — free, no signup.",
+          "description": "Paste an episode link from the Turkish service puhutv and the fetched dizi, film or special is offered in the quality tiers listed.",
           "route": "/puhutv-video-downloader",
           "popular": false,
           "seoDescription": "PuhuTV dizis, films and specials save in high quality from their episode links, letting viewers catch up during travel or low-signal evenings on the road.",
@@ -1947,7 +1947,7 @@
         {
           "id": "reddit-downloader",
           "name": "Reddit Downloader",
-          "description": "Download Reddit videos, galleries and threads with media. Save discussions offline — free, no signup.",
+          "description": "Paste a Reddit post link to unpack its video, images, galleries and clips, each listed as a separate downloadable file.",
           "route": "/reddit-downloader",
           "popular": false,
           "seoDescription": "A Reddit post's media is unpacked on demand: videos, images, galleries and clips each arrive as separate files, sorted and ready to keep for good.",
@@ -1956,7 +1956,7 @@
         {
           "id": "reddit-media-saver",
           "name": "Reddit Media Saver",
-          "description": "Quick-save Reddit images, GIFs and videos to your device. Lightweight media saver — free, no signup.",
+          "description": "Point it at a Reddit post with media and the fetch separates the videos, galleries and GIFs it holds into individual items to save.",
           "route": "/reddit-media-saver",
           "popular": false,
           "seoDescription": "Point the saver at a Reddit media post and it pulls out videos with sound, image galleries and animated GIFs in a single pass, item by item, ready to save.",
@@ -1965,7 +1965,7 @@
         {
           "id": "reddit-video-downloader",
           "name": "Reddit Video Downloader",
-          "description": "Download Reddit videos with audio included (v.redd.it fix). HD MP4 saves — free, no signup.",
+          "description": "Built for v.redd.it posts: paste the thread link and the clip is assembled from its video and audio streams so it downloads with sound.",
           "route": "/reddit-video-downloader",
           "popular": false,
           "seoDescription": "Built around v.redd.it: Reddit clips are muxed from their separate video and audio streams, so downloads arrive with sound rather than awkward silence.",
@@ -1974,7 +1974,7 @@
         {
           "id": "rumble-video-downloader",
           "name": "Rumble Video Downloader",
-          "description": "Download Rumble videos and shows in HD. Independent creators offline — free, no signup.",
+          "description": "Paste a Rumble video, podcast episode or past stream link and the fetched media is offered in the source renditions listed.",
           "route": "/rumble-video-downloader",
           "popular": false,
           "seoDescription": "Rumble videos, podcast episodes and past live streams resolve to downloadable files at source quality, ready for catch-up viewing on your schedule.",
@@ -1983,7 +1983,7 @@
         {
           "id": "save-fb-stories-anonymous",
           "name": "Save Facebook Stories Anonymous",
-          "description": "View and save Facebook stories without the seen tag. Fully anonymous story saver — free, no signup.",
+          "description": "Enter a Facebook username to preview stories with their age and size, plus a highlights strip showing covers and item counts.",
           "route": "/save-fb-stories-anonymous",
           "popular": false,
           "seoDescription": "Watching Facebook stories through this page leaves no trace on the seen list, and every segment can be saved as a keepsake before it vanishes for good.",
@@ -1992,7 +1992,7 @@
         {
           "id": "save-ig-content",
           "name": "Save Instagram Content",
-          "description": "Save all Instagram content types — posts, reels, stories, highlights — in one place. Free, no signup.",
+          "description": "One field takes Instagram post, reel, story or highlight links; the page detects the content type and fetches the media behind it.",
           "route": "/save-ig-content",
           "popular": false,
           "seoDescription": "Posts, reels, stories and highlights from Instagram funnel through one field, the tool recognizing whichever kind of link you supply and fetching it.",
@@ -2001,7 +2001,7 @@
         {
           "id": "save-insta-pfp",
           "name": "Save Insta Profile Picture",
-          "description": "View and download Instagram profile pictures in full HD size. Zoom any DP — free, no signup.",
+          "description": "Enter a handle to preview the account's profile picture, post, follower and following counts, then pick one of three size options.",
           "route": "/save-insta-pfp",
           "popular": false,
           "seoDescription": "Look up any public Instagram account and grab its profile picture at full size, including the larger variant kept for high-density screens and tablets.",
@@ -2010,7 +2010,7 @@
         {
           "id": "save-instagram-clips",
           "name": "Save Instagram Clips",
-          "description": "Download Instagram video clips and reels in HD with audio. Short-form gold — free, no signup.",
+          "description": "Short Instagram video links are fetched and handed back as clips with sound, ready to save or repost from the results list.",
           "route": "/save-instagram-clips",
           "popular": false,
           "seoDescription": "Short Instagram videos land in crisp HD moments after a link is pasted, sound included, ready for viewing later or passing along to friends and family.",
@@ -2019,7 +2019,7 @@
         {
           "id": "save-reels-video",
           "name": "Save Reels Video",
-          "description": "Download Reels videos from Instagram and Facebook in HD. Trending sounds included — free, no signup.",
+          "description": "Paste an Instagram Reels address and the fetched clip keeps its original audio while offering the renditions listed for download.",
           "route": "/save-reels-video",
           "popular": false,
           "seoDescription": "Reels links from Instagram resolve to MP4 downloads with the original audio attached, keeping trending sounds in sync with the visuals throughout.",
@@ -2037,7 +2037,7 @@
         {
           "id": "save-tiktok-mp4",
           "name": "Save Tiktok MP4",
-          "description": "Save TikTok videos as clean MP4 files in HD. No watermark option included — free, no signup.",
+          "description": "TikTok links save as plain MP4 files, with quality tiers and an audio-only option for whenever you need just the sound.",
           "route": "/save-tiktok-mp4",
           "popular": false,
           "seoDescription": "TikTok videos save as plain MP4 files, with a clean variant for anyone who needs the footage without the app's watermark overlaid across the picture.",
@@ -2046,7 +2046,7 @@
         {
           "id": "save-twitter-videos",
           "name": "Save Twitter Videos",
-          "description": "Download Twitter/X videos and GIFs in HD quality. Save viral clips offline — free, no signup.",
+          "description": "X posts with video or GIF attachments are fetched and listed as downloadable files; clips inside threads and quotes work too.",
           "route": "/save-twitter-videos",
           "popular": false,
           "seoDescription": "X posts carrying video or GIF media convert to original-quality files, covering clips inside threads and quoted posts as well as standalone uploads.",
@@ -2055,7 +2055,7 @@
         {
           "id": "sharechat-video-downloader",
           "name": "Sharechat Video Downloader",
-          "description": "Download ShareChat videos, jokes and status clips in HD. Indian regional content — free, no signup.",
+          "description": "Paste a ShareChat sketch, shayari or status video link and the fetch returns the quality tiers available for saving.",
           "route": "/sharechat-video-downloader",
           "popular": false,
           "seoDescription": "ShareChat sketches, shayari posts and status videos save in high quality from a pasted link, keeping regional favorites within easy reach for later.",
@@ -2064,7 +2064,7 @@
         {
           "id": "snapchat-saver-online",
           "name": "Snapchat Saver Online",
-          "description": "Online Snapchat saver for stories, snaps and spotlight videos. Download in HD — free, no signup.",
+          "description": "Stories, spotlight entries and saved memories can be fetched from a Snapchat link on the page, each clip listed for saving.",
           "route": "/snapchat-saver-online",
           "popular": false,
           "seoDescription": "Stories, spotlight entries and saved memories are fetched from Snapchat links right on this page, with no extra app to install and nothing else to load.",
@@ -2073,7 +2073,7 @@
         {
           "id": "snapchat-video-downloader",
           "name": "Snapchat Video Downloader",
-          "description": "Download Snapchat videos and spotlight clips in HD quality. Quick saves — free, no signup.",
+          "description": "One box accepts Snapchat spotlight, story and chat clip links; the fetch returns each clip at the quality listed.",
           "route": "/snapchat-video-downloader",
           "popular": false,
           "seoDescription": "One quick input handles Snapchat spotlights, story segments and chat clips, saving each clip at HD quality straight to whichever device you are using.",
@@ -2082,7 +2082,7 @@
         {
           "id": "streamable-video-downloader",
           "name": "Streamable Video Downloader",
-          "description": "Download Streamable clips before links expire. Fast MP4 saves in HD — free, no signup.",
+          "description": "Paste a Streamable link before it expires and the fetched clip is turned into MP4 renditions you can save and replay later.",
           "route": "/streamable-video-downloader",
           "popular": false,
           "seoDescription": "Streamable links fade with time; before they do, the downloader resolves each clip into an MP4 you control, so short highlights stay playable long after.",
@@ -2091,7 +2091,7 @@
         {
           "id": "ted-video-downloader",
           "name": "Ted Video Downloader",
-          "description": "Download TED Talks and TEDx speeches for offline learning. Ideas worth saving — free, no signup.",
+          "description": "Talks, TEDx speeches and lesson videos: paste the page address and pick from the fetched renditions offered for download.",
           "route": "/ted-video-downloader",
           "popular": false,
           "seoDescription": "TED Talks, TEDx speeches and lesson videos download in HD, so thought-provoking lectures can be revisited on flights or turned into study material.",
@@ -2109,7 +2109,7 @@
         {
           "id": "threads-video-downloader",
           "name": "Threads Video Downloader",
-          "description": "Download Threads videos and carousels in HD. Meta's X rival, saved offline — free, no signup.",
+          "description": "Paste a Threads post link and each video or image item it carries is fetched and listed separately, with its own download option.",
           "route": "/threads-video-downloader",
           "popular": false,
           "seoDescription": "Threads posts with video or images unpack into their individual media items, each downloadable at the quality the platform stores them in for display.",
@@ -2118,7 +2118,7 @@
         {
           "id": "tiktok-downloader",
           "name": "Tiktok Downloader",
-          "description": "The classic TikTok saver: videos in HD with or without watermark. Sounds included — free, no signup.",
+          "description": "The general TikTok saver handles video links in several quality tiers and can also pull the soundtrack out as an audio-only file.",
           "route": "/tiktok-downloader",
           "popular": false,
           "seoDescription": "The general TikTok saver handles watermarked and clean saves alike, and can detach the soundtrack as an MP3 for use in other projects of your own.",
@@ -2127,7 +2127,7 @@
         {
           "id": "tiktok-saver-no-watermark",
           "name": "Tiktok Saver No Watermark",
-          "description": "Clean TikTok downloads with zero watermark or logo. Creator-ready reposts — free, no signup.",
+          "description": "Paste a TikTok link to get the clip back without the watermark or the bouncing handle burnt over the picture.",
           "route": "/tiktok-saver-no-watermark",
           "popular": false,
           "seoDescription": "Clean output is the whole point here: uploads are processed so the TikTok watermark and bouncing handle stay out of the resulting MP4 file entirely.",
@@ -2145,7 +2145,7 @@
         {
           "id": "tumblr-video-downloader",
           "name": "Tumblr Video Downloader",
-          "description": "Download Tumblr videos, GIFs and photosets in original quality. Fandom archives — free, no signup.",
+          "description": "Paste a Tumblr video post link and the fetched clip is offered at full resolution for archiving, with GIFs handled as well.",
           "route": "/tumblr-video-downloader",
           "popular": false,
           "seoDescription": "Tumblr video posts and GIFs retrieve at full resolution, letting fandom archivists preserve favorite scenes, edits and artwork before blogs change hands.",
@@ -2154,7 +2154,7 @@
         {
           "id": "twitch-video-downloader",
           "name": "Twitch Video Downloader",
-          "description": "Download Twitch clips, VODs and highlights in HD. Stream moments saved — free, no signup.",
+          "description": "Paste a Twitch clip, highlight or VOD address and the fetched stream is listed in the renditions Twitch stores for saving.",
           "route": "/twitch-video-downloader",
           "popular": false,
           "seoDescription": "Twitch clips, highlights and full VODs archive in HD before the platform's retention window removes older broadcasts from a channel's public listings.",
@@ -2163,7 +2163,7 @@
         {
           "id": "twitter-video-downloader",
           "name": "Twitter Video Downloader",
-          "description": "Download X/Twitter videos in HD with one paste. Spaces clips and lives too — free, no signup.",
+          "description": "X video, GIF and Spaces recording links are fetched and then offered in the qualities the platform returns for saving.",
           "route": "/twitter-video-downloader",
           "popular": false,
           "seoDescription": "Recordings from X — videos, GIFs, Spaces — save at original quality when a post link is dropped in, with no app needed to fetch them and nothing to install.",
@@ -2172,7 +2172,7 @@
         {
           "id": "universal-video-downloader",
           "name": "Universal Video Downloader",
-          "description": "One universal downloader for every supported site. If it plays, it saves — free, no signup.",
+          "description": "Give the resolver any supported video page address and it scans for media sources, returning each rendition it recognises as a download.",
           "route": "/universal-video-downloader",
           "popular": false,
           "seoDescription": "If a page plays video, this engine stands a good chance of recognizing it: it scans the address for media sources and hands them over as downloads.",
@@ -2181,7 +2181,7 @@
         {
           "id": "vimeo-video-downloader",
           "name": "Vimeo Video Downloader",
-          "description": "Download Vimeo videos in HD and 4K where available. Staff picks offline — free, no signup.",
+          "description": "Paste a Vimeo film, tutorial or staff pick link and the fetch lists the renditions the uploader enabled, HD and up where offered.",
           "route": "/vimeo-video-downloader",
           "popular": false,
           "seoDescription": "Vimeo films, tutorials and staff picks come down at the best quality the uploader enabled, including 4K renditions where the source supports them.",
@@ -2190,7 +2190,7 @@
         {
           "id": "vkontakte-video-downloader",
           "name": "Vkontakte Video Downloader",
-          "description": "Download VK videos, clips and shows in HD. Russian social content offline — free, no signup.",
+          "description": "VK video, clip and music video links are fetched, with the sharpest rendition the platform serves selected for you automatically.",
           "route": "/vkontakte-video-downloader",
           "popular": false,
           "seoDescription": "VK videos, clips and music videos download through a pasted link, with the sharpest rendition the platform serves selected for you automatically.",
@@ -2199,7 +2199,7 @@
         {
           "id": "terabox-downloader",
           "name": "Terabox Video Downloader",
-          "description": "Stream and download Terabox media files easily directly in your browser with no registration or software installation required.",
+          "description": "Paste a Terabox share link and the extracted file ID opens in an embedded player, with a new-tab option and copyable embed code.",
           "route": "/terabox-downloader",
           "popular": false,
           "seoDescription": "A Terabox share link opens in an embedded player, so files can be watched or downloaded without installing the desktop client the service expects.",
@@ -2432,7 +2432,7 @@
         {
           "id": "youtube-title-generator",
           "name": "YouTube Title Generator",
-          "description": "Create viral YouTube titles with proven hooks, brackets and keywords. CTR-focused ideas in seconds — free, no signup.",
+          "description": "Enter a topic to get six ready-made title patterns — how-to guides, 30-day experiments, mistake roundups — each copied in one click.",
           "route": "/youtube-title-generator",
           "popular": false,
           "seoDescription": "Generate click-worthy YouTube titles using proven hooks, emotional triggers, numbers, and curiosity gaps. Boost CTR and views with free browser-based copy.",
@@ -2441,7 +2441,7 @@
         {
           "id": "youtube-description-generator",
           "name": "YouTube Description Generator",
-          "description": "Generate search-optimized video descriptions with timestamps, hashtags and CTAs. Upload-ready text — free, no signup.",
+          "description": "Enter a topic to get a ready-to-paste description with an intro line, four timestamped chapters, a resources block and starter hashtags.",
           "route": "/youtube-description-generator",
           "popular": false,
           "seoDescription": "Generate search-optimized YouTube descriptions complete with timestamps, relevant keywords, social links, and CTAs. Rank higher on search completely free.",
@@ -2450,7 +2450,7 @@
         {
           "id": "youtube-thumbnail-text-generator",
           "name": "YouTube Thumbnail Text Generator",
-          "description": "Generate punchy thumbnail text ideas — short, emotional, readable at any size. Boost clicks — free, no signup.",
+          "description": "Produces six short, shouty caption options for thumbnails — DO THIS!, STOP!, 10X FASTER and similar — each copied with one click.",
           "route": "/youtube-thumbnail-text-generator",
           "popular": false,
           "seoDescription": "Brainstorm short, bold thumbnail captions of two to four words that stay readable in a small mobile preview and pull more clicks from passing viewers.",
@@ -2459,7 +2459,7 @@
         {
           "id": "youtube-thumbnail-downloader",
           "name": "Youtube Thumbnail Downloader",
-          "description": "Grab YouTube thumbnails in SD, HD, Full HD and max resolution. One paste, instant gallery — free, no signup.",
+          "description": "Paste a video URL or ID to get its cover image in every size YouTube publishes, from max resolution down to the default frame.",
           "route": "/youtube-thumbnail-downloader",
           "popular": false,
           "seoDescription": "Save a video's cover art at every size YouTube publishes, from the default frame up to maximum resolution, for moodboards, research or design work.",
@@ -2468,7 +2468,7 @@
         {
           "id": "youtube-video-downloader",
           "name": "Youtube Video Downloader",
-          "description": "Save YouTube videos in MP4 from 144p to 4K for offline watching. Fast quality picker — free, no signup needed.",
+          "description": "Supports YouTube videos and Shorts links: choose from quality tiers such as 360p, 720p, 1080p or 4K where offered, plus audio entries.",
           "route": "/youtube-video-downloader",
           "popular": false,
           "seoDescription": "Pick a quality tier from 144p up through the highest MP4 available and save a copy of the video for offline viewing or editing on your own schedule.",
@@ -2521,7 +2521,7 @@
         {
           "id": "text-to-speech",
           "name": "Text to Speech",
-          "description": "Convert text to natural sounding speech audio directly in your browser using Web Speech API. Free online text to speech converter with multiple voice options — no uploads needed.",
+          "description": "Choose a voice, set the speed and pitch sliders, then hear the passage read back with play, pause and resume controls.",
           "route": "/text-to-speech",
           "popular": true,
           "seoDescription": "Choose from the available voices, adjust pace and pitch, then have the passage read aloud with play, pause and resume controls for revision or accessibility.",
@@ -2547,7 +2547,7 @@
         {
           "id": "free-mp3-extractor",
           "name": "Free MP3 Extractor",
-          "description": "Extract MP3 audio from any video file in seconds. Video-to-audio rips in browser — free, no signup.",
+          "description": "Paste a TikTok link and the audio renditions it returns are listed with quality and size, ready to save as an MP3 track.",
           "route": "/free-mp3-extractor",
           "popular": false,
           "seoDescription": "Hand over a video link and take the soundtrack back: compare the quality tiers on offer, then save the audio as an MP3 file for editing or a ringtone.",
@@ -2565,7 +2565,7 @@
         {
           "id": "modify-mp3-file",
           "name": "Modify MP3 File",
-          "description": "Trim, cut and edit MP3 files right in your browser. Ringtone maker with fade effects — free, no signup.",
+          "description": "Paste a TikTok video link, pick an output bitrate from 128 up to 320kbps, and the fetched soundtrack comes back as an MP3.",
           "route": "/modify-mp3-file",
           "popular": false,
           "seoDescription": "Trim dead air from the start, cut a section out of the middle, apply fades and shape the perfect ringtone loop, then export a cleaned-up copy from the editor.",
@@ -2574,7 +2574,7 @@
         {
           "id": "mp3-from-tiktok",
           "name": "MP3 From Tiktok",
-          "description": "Convert TikTok videos to MP3 ringtones and sounds. Viral audios saved — free, no signup.",
+          "description": "Save a viral sound: paste the TikTok video link, review the extracted audio options, and download the track for a ringtone.",
           "route": "/mp3-from-tiktok",
           "popular": false,
           "seoDescription": "Save a viral sound as a file: paste the TikTok link, review the audio options it returns, and download the track for a ringtone or a keepsake collection.",
@@ -2583,7 +2583,7 @@
         {
           "id": "mp4-to-mp3",
           "name": "MP4 To MP3",
-          "description": "Convert MP4 videos to MP3 audio with quality picker. Extract soundtracks fast — free, no signup.",
+          "description": "Paste a TikTok video address, choose 192kbps for a balance of size and fidelity or 320kbps for more, then take the MP3.",
           "route": "/mp4-to-mp3",
           "popular": false,
           "seoDescription": "Pick the bitrate a recording deserves — 128kbps for spoken audio, up to 320kbps when fidelity matters — and turn an MP4's soundtrack into a standalone MP3.",
@@ -2619,7 +2619,7 @@
         {
           "id": "audio-joiner",
           "name": "Audio Joiner",
-          "description": "Join multiple audio files into a single track seamlessly. Combine MP3, WAV, OGG, and M4A files in any order. Free, private, and works entirely in your browser.",
+          "description": "Drop two or more audio files, put them in order with the arrow controls, and export the merged result as one WAV track.",
           "route": "/audio-joiner",
           "popular": true,
           "seoDescription": "Queue two or more recordings, arrange them with the arrow controls, and stitch the set into one continuous WAV file for rehearsals, lectures or playlists.",
@@ -2717,7 +2717,7 @@
         {
           "id": "json-to-yaml-converter",
           "name": "JSON to YAML Converter",
-          "description": "Convert JSON configurations to clean YAML structures instantly in your browser. Free, private, and 100% client-side JSON to YAML converter with zero file uploads needed.",
+          "description": "Turn a JSON document into two-space YAML for Kubernetes manifests or app config, then copy it out or save the result as output.yaml.",
           "route": "/json-to-yaml-converter",
           "popular": true,
           "seoDescription": "Re-express a JSON document as clean two-space YAML for Kubernetes manifests, workflow files, or app configuration people can actually skim in review.",
@@ -2726,7 +2726,7 @@
         {
           "id": "html-to-xml-entities",
           "name": "HTML to XML Entities Converter",
-          "description": "Convert HTML special characters into safe XML entities and decode entities back to HTML. Free online converter for web developers — 100% client-side processing, no uploads needed.",
+          "description": "Switch between escape and unescape to turn angle brackets, ampersands and quotes into XML entities, or entities back into markup.",
           "route": "/html-to-xml-entities",
           "popular": true,
           "seoDescription": "Escape angle brackets, ampersands, and quotes into XML-safe entity references, or reverse the process to turn entities back into editable markup.",
@@ -2789,7 +2789,7 @@
         {
           "id": "jwt-decoder",
           "name": "JWT Decoder & Debugger",
-          "description": "Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature.",
+          "description": "Paste a JWT to split it into header, payload and signature and read the exp claim, shown as expired or valid in seconds, minutes or hours.",
           "route": "/jwt-decoder",
           "popular": true,
           "seoDescription": "Divide a token into its header, payload, and signature, and check the exp claim to learn whether it lapsed minutes ago or still has plenty of life left.",

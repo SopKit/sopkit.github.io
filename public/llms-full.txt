@@ -17,11 +17,11 @@ Agent Policy: https://sopkit.space/ai.txt
 ### Fun Generators Tools
 
 #### [AI Image Generator](https://sopkit.space/ai-image-generator)
-- **Description**: Generate stunning AI images from text prompts instantly. Create photorealistic photos, digital art, anime, and illustrations for free. No signup required, unlimited generations, and 100% private browser-based processing.
+- **Description**: Describe a scene, choose a style, size and optional seed, and the Flux model behind Pollinations renders it, with results kept in a local history.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ai-image-generator
 
 #### [AI Voice Generator](https://sopkit.space/ai-voice-generator)
-- **Description**: Convert text to natural-sounding AI voices instantly. Our free text-to-speech tool offers multiple languages and accents for professional voiceovers, accessibility, and creative projects. No signup required.
+- **Description**: Send a line of text to the openai-audio model on Pollinations and get back a spoken clip you can replay, download or share by its link.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ai-voice-generator
 
 #### [AI Music Generator](https://sopkit.space/ai-music-generator)
@@ -37,7 +37,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/bio-generator
 
 #### [Business Name Generator](https://sopkit.space/business-name-generator)
-- **Description**: Generate creative and catchy business name ideas for your brand, startup, or company. Free online business name generator with AI-powered suggestions — all client-side, no signup required.
+- **Description**: Combine prefixes, suffixes and punchy word pairs into ten brandable name ideas per press, optionally anchored to your industry keyword.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/business-name-generator
 
 #### [AI Poem Generator](https://sopkit.space/ai-poem-generator)
@@ -49,7 +49,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/fake-chat-generator
 
 #### [Excuse Generator](https://sopkit.space/excuse-generator)
-- **Description**: Generate creative, believable, and humorous excuses for work, school, social events, and meetings instantly in your browser.
+- **Description**: Fills polite bow-out templates with random pets, relatives, appliances and traffic mishaps, producing three ready-to-send excuses per press.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/excuse-generator
 
 #### [Font Generator](https://sopkit.space/font-generator)
@@ -57,11 +57,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/font-generator
 
 #### [Number Generator](https://sopkit.space/number-generator)
-- **Description**: Generate random numbers, lottery numbers, PIN codes, and custom number sequences instantly in your browser. Free and private number generator with multiple output formats.
+- **Description**: Draw lottery numbers, PINs, dice rolls or custom ranges from either quick pseudo-random maths or the cryptographic Web Crypto source.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/number-generator
 
 #### [Poetry Generator](https://sopkit.space/poetry-generator)
-- **Description**: Generate beautiful poems, haikus, sonnets, and rhymes instantly in your browser. Free online poetry generator for creative writing, learning, and inspiration — all client-side, no server needed.
+- **Description**: Slots nature, emotion and time-of-day words into three rhyming stanza patterns to sketch a short verse ready to copy and refine.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/poetry-generator
 
 #### [Rent Receipt Generator](https://sopkit.space/rent-receipt-generator)
@@ -85,7 +85,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/bio-data-maker
 
 #### [Instagram Bio Generator](https://sopkit.space/instagram-bio-generator)
-- **Description**: Generate optimized Instagram bios with stylish fonts, emojis, and formatting. Free online Instagram bio generator for personal profiles, business accounts, and creators — 100% client-side, no signup.
+- **Description**: Turns a keyword such as a niche, hobby or city into five bio formats with emojis, line breaks and call-to-action hooks, each copyable.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/instagram-bio-generator
 
 #### [Instagram Caption Generator](https://sopkit.space/instagram-caption-generator)
@@ -97,7 +97,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/hashtag-generator
 
 #### [Slogan Generator](https://sopkit.space/slogan-generator)
-- **Description**: Generate catchy slogans and taglines for your brand, startup, product or campaign. Browse ideas, refine and copy — free, no signup.
+- **Description**: Matches your brand name against eight familiar slogan patterns to produce taglines like Simply the Best or Built for Success.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/slogan-generator
 
 #### [Logo Idea Generator](https://sopkit.space/logo-idea-generator)
@@ -105,7 +105,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/logo-idea-generator
 
 #### [GBP Description Generator](https://sopkit.space/google-business-profile-description-generator)
-- **Description**: Write a keyword-rich Google Business Profile description that ranks in local search. Service-focused copy within GBP limits — free, no signup.
+- **Description**: Wraps a business name and service keywords into a single plain paragraph covering experience, reliability and a call to get in touch.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/google-business-profile-description-generator
 
 #### [Review Reply Generator](https://sopkit.space/review-reply-generator)
@@ -117,7 +117,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/restaurant-menu-description-generator
 
 #### [Client Proposal Generator](https://sopkit.space/client-proposal-generator)
-- **Description**: Draft winning freelance proposals with scope, pricing, timeline and CTA sections. Customize for Upwork or direct clients — free, no signup.
+- **Description**: Builds a short markdown proposal with scope, deliverables, pricing and next steps already filled in around your project name.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/client-proposal-generator
 
 #### [Payment Reminder Generator](https://sopkit.space/payment-reminder-generator)
@@ -157,7 +157,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/avatar-generator
 
 #### [Ascii Art Generator](https://sopkit.space/ascii-art-generator)
-- **Description**: Transform photos and images into creative text-based ASCII art in your browser. Adjust contrast and character width with instant local preview.
+- **Description**: Samples a photo's brightness and maps it to text characters, with width and contrast sliders plus copy and download for the finished art.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ascii-art-generator
 
 
@@ -176,15 +176,15 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/webp-to-png-converter
 
 #### [ICO to PNG Converter](https://sopkit.space/ico-to-png)
-- **Description**: Convert ICO icon files to PNG images in any size. Extract crisp icons for favicons, apps and design work — free, private, no signup.
+- **Description**: Unpacks an ICO favicon or app icon into its individual sizes and saves the frame you choose as a PNG with transparency preserved.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ico-to-png-converter
 
 #### [JPG to PNG Converter](https://sopkit.space/jpg-to-png)
-- **Description**: Convert JPG to PNG with transparency support. Maintain high image quality and convert formats instantly in your browser. Free, secure, and privacy-focused online tool.
+- **Description**: Re-saves a JPEG as a lossless PNG so further edits, layers and re-exports stop stacking fresh compression artifacts on every save.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/jpg-to-png-converter
 
 #### [PNG to JPG Converter](https://sopkit.space/png-to-jpg)
-- **Description**: Convert PNG images to JPG format for smaller file sizes and better web compatibility. Our free online tool maintains high quality and works instantly in your browser.
+- **Description**: Turns a PNG graphic into a lighter JPEG, with a quality slider so you decide how much detail the smaller file keeps.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/png-to-jpg-converter
 
 #### [SVG to JPG Converter](https://sopkit.space/svg-to-jpg)
@@ -204,7 +204,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/image-metadata-remover
 
 #### [Pro Image Color Picker](https://sopkit.space/image-color-picker)
-- **Description**: Extract HEX, RGB, and HSL color codes from any image with our interactive pixel-level color picker. Free online color extraction tool that runs entirely in your browser — no uploads, instant results.
+- **Description**: Click any pixel for HEX, RGB, HSL and CMYK values, zoom in for precision and stack a swatch history while assembling a palette.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/image-color-picker-pro
 
 #### [Compress Image to Exact KB](https://sopkit.space/compress-image-to-exact-kb)
@@ -220,19 +220,19 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/passport-photo-maker-india
 
 #### [Aadhaar and PAN Card Photo Resizer](https://sopkit.space/aadhaar-pan-photo-resizer)
-- **Description**: Resize and compress photos and signatures for Aadhaar, PAN card, KYC, and online government exam forms. Free online photo resizer that processes everything in your browser with no uploads.
+- **Description**: Sizes Aadhaar and PAN uploads to portal rules: 213x213 photos kept under 50 KB, 400x200 signatures under 20 KB, or custom dimensions.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/aadhaar-pan-photo-resizer
 
 #### [Background Remover](https://sopkit.space/background-remover)
-- **Description**: Remove image backgrounds automatically with AI. Create transparent PNGs for product photos, headshots, or graphics instantly. 100% free, browser-based, and no signup needed.
+- **Description**: Cuts a subject away from a plain or solid backdrop and returns a transparent PNG cutout for listings, slide decks or headshots.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/background-remover
 
 #### [Base64 to Image Converter](https://sopkit.space/base64-to-image-converter)
-- **Description**: Convert Base64 strings to images (PNG, JPG, WebP) instantly. Our privacy-first tool processes data locally in your browser, ensuring your images stay secure. Free and fast Base64 decoder.
+- **Description**: Paste a Base64 string or data URI and the decoded image appears for preview, ready to download in its detected PNG, JPG or WebP form.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/base64-to-image-converter
 
 #### [Convert to ICO](https://sopkit.space/convert-to-ico)
-- **Description**: Convert PNG and JPG images to ICO favicon files in multiple sizes. Crisp Windows icons for apps and sites — free, no signup.
+- **Description**: Shapes a PNG or JPG into an ICO file whose embedded sizes serve browser tabs, bookmarks and Windows folder shortcuts.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/convert-to-ico
 
 #### [EXIF Reader](https://sopkit.space/exif-reader)
@@ -244,7 +244,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/favicon-generator
 
 #### [Flip Image](https://sopkit.space/flip-image)
-- **Description**: Free flip image tool to flip photos and images horizontally or vertically. Process your data instantly with privacy-friendly browser-based image flipping — no uploads, no servers, no data collection.
+- **Description**: Mirrors a picture left to right or top to bottom to correct reversed selfies, match a layout or build symmetrical artwork.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/flip-image
 
 #### [Image Compressor](https://sopkit.space/image-compressor)
@@ -256,7 +256,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/image-converter
 
 #### [Image Cropper](https://sopkit.space/image-cropper)
-- **Description**: Crop images to exact dimensions with drag-and-drop precision. Lock aspect ratios for social posts and prints — free, no signup.
+- **Description**: Trim a photo with pixel handles and locked aspect-ratio presets aimed at social posts, profile pictures or print sizes.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/image-cropper
 
 #### [Circular Image Crop](https://sopkit.space/circular-image-crop)
@@ -272,7 +272,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/gif-generator
 
 #### [Image Enlarger](https://sopkit.space/image-enlarger)
-- **Description**: Enlarge small images without heavy pixelation using smart upscaling. 2x and 4x options for prints and posters — free, no signup.
+- **Description**: Scale a small picture up by percentage or exact width and height, smoothing each redraw so prints and screens stay presentable.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/image-enlarger
 
 #### [Image Resizer](https://sopkit.space/image-resizer)
@@ -284,11 +284,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/image-to-base64
 
 #### [JPG Converter](https://sopkit.space/jpg-converter)
-- **Description**: Convert photos and images to JPG format instantly. Our free online JPG converter maintains high visual quality while optimizing file size for web use. Privacy-focused and works entirely in your browser.
+- **Description**: Export almost any picture to JPEG and dial the quality setting until the file size and visible detail meet your target.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/jpg-converter
 
 #### [JPG to BMP Converter](https://sopkit.space/jpg-to-bmp-converter)
-- **Description**: Convert JPG images to BMP (Bitmap) format for legacy system compatibility. Fast, free, and secure online converter that works in your browser without uploading files to any server.
+- **Description**: Unpack a JPEG into an uncompressed BMP bitmap for industrial software, embedded screens and tools that reject compressed images.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/jpg-to-bmp-converter
 
 #### [JPG to GIF Converter](https://sopkit.space/jpg-to-gif-converter)
@@ -296,7 +296,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/jpg-to-gif-converter
 
 #### [JPG to ICO Converter](https://sopkit.space/jpg-to-ico-converter)
-- **Description**: Convert JPG images to ICO favicon files for your website. Our free tool creates high-quality icons in multiple sizes for perfect browser compatibility. No signup required.
+- **Description**: Recast a JPEG photo as a favicon-ready ICO file, carrying the icon sizes that website tabs and desktop shortcuts expect.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/jpg-to-ico-converter
 
 #### [JPG to WebP Converter](https://sopkit.space/jpg-to-webp-converter)
@@ -317,7 +317,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/png-to-bmp-converter
 
 #### [PNG to GIF Converter](https://sopkit.space/png-to-gif-converter)
-- **Description**: Convert PNG photos to GIF format instantly. Perfect for web graphics and simple animations. Free, secure, and works entirely in your browser without file uploads.
+- **Description**: Re-saves a PNG as a flat single-frame GIF for platforms, email builders and upload forms that will not take a PNG directly.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/png-to-gif-converter
 
 #### [PNG to ICO Converter](https://sopkit.space/png-to-ico-converter)
@@ -329,11 +329,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/png-to-webp-converter
 
 #### [Rotate Image](https://sopkit.space/rotate-image)
-- **Description**: Rotate images clockwise, counter-clockwise, or flip them instantly. Our free online image rotator works in your browser, keeping your photos private and secure. No signup needed.
+- **Description**: Turn a sideways phone photo or scanned page by 90 or 180 degrees clockwise or counter-clockwise, then save the straightened file.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/rotate-image
 
 #### [Free Image Tools Online](https://sopkit.space/image-tools)
-- **Description**: Browse our collection of free online image tools. 100% free, no signup required, and privacy-focused.
+- **Description**: SopKit's image toolbox, grouped into compression, creative editing and format conversion so you can jump straight to the right utility.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/image-tools
 
 #### [Icon Generator](https://sopkit.space/icon-generator)
@@ -396,11 +396,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/markdown-to-html
 
 #### [Markdown to PDF Converter](https://sopkit.space/markdown-to-pdf)
-- **Description**: Convert Markdown text into a clean, print-ready PDF document instantly in your browser. Free online Markdown to PDF converter with live preview — no signup required, all processing is local and private.
+- **Description**: Type or paste Markdown and watch a styled A4 preview form as you go, then download the finished document as a print-ready PDF file.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/markdown-to-pdf
 
 #### [URL Encoder Decoder](https://sopkit.space/url-encoder-decoder)
-- **Description**: Encode and decode URLs, query strings and URI parameters instantly in your browser. No server logging, fully private.
+- **Description**: Percent-encode a query string before it travels or decode a long redirect address until its parameters read clearly, one press per direction.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/url-encoder-decoder
 
 #### [String Length Calculator](https://sopkit.space/string-length-calculator)
@@ -416,7 +416,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/slug-to-text-converter
 
 #### [Word Frequency Counter](https://sopkit.space/word-frequency-counter)
-- **Description**: Calculate word density, occurrences, and text analytics with our free online word frequency counter. Analyze any text for keyword frequency, word count, and content statistics — 100% private, no uploads.
+- **Description**: Ranks every term in a document by occurrences and shows each one's share of the total, exposing overworked words and keyword balance.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/word-frequency-counter
 
 #### [Case Converter (Sentence, Upper, Lower)](https://sopkit.space/case-converter)
@@ -452,7 +452,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/internship-message-generator
 
 #### [Article Rewriter](https://sopkit.space/article-rewriter)
-- **Description**: Paraphrase and rewrite articles instantly with our free online Article Rewriter. Improve readability, change tone, and create unique content variations for blogs and SEO. 100% free and secure.
+- **Description**: Refresh a draft by swapping tired, overused wording for livelier synonyms while keeping the original meaning and sentence flow intact.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/article-rewriter
 
 #### [Comma Separator](https://sopkit.space/comma-separator)
@@ -480,7 +480,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/text-compare
 
 #### [Text Repeater](https://sopkit.space/text-repeater)
-- **Description**: Repeat any text as many times as you need with our free online Text Repeater. Perfect for testing, social media, or fun content. Simple, fast, and works instantly in your browser.
+- **Description**: Repeat a phrase up to five thousand times and copy the enlarged block for load tests, filler copy or playful message walls.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/text-repeater
 
 #### [Text Sorter](https://sopkit.space/text-sorter)
@@ -567,11 +567,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-page-numbers
 
 #### [PDF Watermark Creator](https://sopkit.space/pdf-watermark)
-- **Description**: Add text or image logos as watermarks to all pages of your PDF document securely in your browser.
+- **Description**: Stamp diagonal text or a PNG or JPG logo across every page of a PDF, tuning opacity, angle, colour and size until the mark sits right.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-watermark
 
 #### [PDF Metadata Editor](https://sopkit.space/pdf-metadata-editor)
-- **Description**: Edit PDF document metadata including Title, Author, Subject, and Keywords directly in your browser. Free online PDF metadata editor with 100% client-side processing — no uploads, no data collection.
+- **Description**: Inspect and rewrite a PDF's title, author, subject and keyword properties so the document presents correctly in readers and results.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-metadata-editor
 
 #### [PDF Merger](https://sopkit.space/pdf-merger)
@@ -587,11 +587,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-rotation
 
 #### [Image to PDF](https://sopkit.space/image-to-pdf)
-- **Description**: Convert multiple images to a single PDF document 100% free. Supports JPG, PNG, WEBP and more. Privacy-first local processing with no signup required.
+- **Description**: Combine JPG, PNG or WebP pictures into one PDF, choosing A4 or auto page size, orientation and margins for a tidy sheet.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/image-to-pdf
 
 #### [PDF Editor](https://sopkit.space/pdf-editor)
-- **Description**: Professional PDF editor - edit text, add annotations, rotate, and delete pages online for free. Secure, 100% browser-based PDF editing with no signup.
+- **Description**: Place text annotations anywhere on a PDF's pages, colour and size them, then flatten the marks into a fresh copy you can save.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-editor
 
 #### [PDF Password Protect](https://sopkit.space/pdf-protect)
@@ -603,19 +603,19 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-to-image
 
 #### [PDF to Word](https://sopkit.space/pdf-to-word)
-- **Description**: Convert PDF files to editable Word documents (DOCX) directly in your browser. Free online PDF to Word converter with 100% client-side processing — no uploads, no AI training, no data storage.
+- **Description**: Pull the text layer from a PDF into an editable DOCX built page by page, so wording can be revised instead of retyped.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-to-word
 
 #### [PDF Unlocker](https://sopkit.space/pdf-unlocker)
-- **Description**: Remove password protection from PDF files directly in your browser. Free online PDF password remover with 100% client-side processing — your files never leave your device, no uploads, no data storage.
+- **Description**: Enter the password you already know for a PDF and save an unprotected copy that can print, copy and edit freely again.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-unlocker
 
 #### [Word to PDF](https://sopkit.space/word-to-pdf)
-- **Description**: Convert Word documents (.docx) to high-quality PDF files online for free. Privacy-first, browser-based conversion with no signup required.
+- **Description**: Parses a DOCX file page by page and renders it as a PDF, keeping headings and emphasis recognisable for printing or submission.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/word-to-pdf
 
 #### [PDF Grayscale](https://sopkit.space/pdf-grayscale)
-- **Description**: Convert color PDF documents to black and white (grayscale) online for free. Reduce file size and save ink with our secure, browser-based PDF converter. No signup required.
+- **Description**: Strips colour from a PDF's pages, swapping it for grayscale tones to cut printing ink use and shrink image-heavy files.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-grayscale
 
 #### [PDF Repair](https://sopkit.space/pdf-repair)
@@ -623,7 +623,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-repair
 
 #### [PDF Tools](https://sopkit.space/pdf-tools)
-- **Description**: Merge, split, compress, edit, and manipulate PDF documents online for free. All PDF processing happens 100% client-side in your browser — no file uploads, no data storage, no AI training.
+- **Description**: One index for SopKit's PDF suite: merge, split, rotate, compress, convert, watermark, renumber, protect and unlock documents.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pdf-tools
 
 
@@ -634,7 +634,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/video-tools
 
 #### [Video Converter](https://sopkit.space/video-converter)
-- **Description**: Convert video files between MP4, AVI, MKV, MOV, WebM, and more formats directly in your browser. Free online video converter with private client-side processing — no uploads, no server storage.
+- **Description**: Re-encode an MP4, MOV, AVI, MKV or WebM clip and save the result as WebM, MP4 or OGG, whatever codecs your device can render.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/video-converter
 
 #### [Video Editor](https://sopkit.space/video-editor)
@@ -642,103 +642,103 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/video-editor
 
 #### [AI Video Summarizer](https://sopkit.space/ai-video-summarizer)
-- **Description**: Summarize video transcripts into key points and insights. Paste any transcript and get instant bullet-point summaries, paragraphs, or executive overviews. 100% free and private.
+- **Description**: Paste a transcript and sentence scoring extracts the most important lines as bullet points, a flowing paragraph or an executive overview.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ai-video-summarizer
 
 #### [Akillitv Video Downloader](https://sopkit.space/akillitv-video-downloader)
-- **Description**: Save AkilliTV videos for offline viewing in HD quality. Paste the link, pick a format and download — free, no signup.
+- **Description**: Submit an AkilliTV link to SopKit's resolver, compare the stream qualities it lists and save the episode or clip for later viewing.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/akillitv-video-downloader
 
 #### [All Downloaders](https://sopkit.space/all-downloaders)
-- **Description**: One downloader for 70+ sites — TikTok, Instagram, Facebook, Twitter and more. Paste any video link — free, no signup.
+- **Description**: One link field that recognises over seventy video sites, names the source, lists every video and audio rendition and saves your pick.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/all-downloaders
 
 #### [Bandcamp Video Downloader](https://sopkit.space/bandcamp-video-downloader)
-- **Description**: Save Bandcamp tracks and albums you own for offline listening in high quality. Free audio downloads, no signup.
+- **Description**: Resolve a Bandcamp track or album link through the resolver and save the audio at the release's original encoding for later listening.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/bandcamp-video-downloader
 
 #### [Bilibili Video Downloader](https://sopkit.space/bilibili-video-downloader)
-- **Description**: Download Bilibili videos in HD without watermark for offline watching. Paste the link and save — free, no signup.
+- **Description**: Paste a Bilibili link and the resolver lists each available quality, so episodes, streams and dance clips can travel as files.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/bilibili-video-downloader
 
 #### [Bitchute Video Downloader](https://sopkit.space/bitchute-video-downloader)
-- **Description**: Save BitChute videos as MP4 for offline viewing. Direct links in multiple qualities — free, no signup.
+- **Description**: BitChute uploads come back from the resolver as MP4 files at the creator's resolution, playable in any standard media player.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/bitchute-video-downloader
 
 #### [Blogger Video Downloader](https://sopkit.space/blogger-video-downloader)
-- **Description**: Download videos embedded in Blogger and Blogspot posts as MP4. One-click saves — free, private, no signup.
+- **Description**: Paste a Blogger or Blogspot post address and the embedded video arrives as MP4, archiving tutorials and family clips intact.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/blogger-video-downloader
 
 #### [Blutv Video Downloader](https://sopkit.space/blutv-video-downloader)
-- **Description**: Save BluTV shows and clips you have access to for offline viewing. Simple link-based downloads — free, no signup.
+- **Description**: BluTV episodes you can access resolve from a shared link into a list of qualities, ready to stockpile for trips and quiet evenings.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/blutv-video-downloader
 
 #### [Buzzfeed Video Downloader](https://sopkit.space/buzzfeed-video-downloader)
-- **Description**: Download BuzzFeed videos, Tasty recipes and listicles for offline watching. Quick MP4 saves — free, no signup.
+- **Description**: Save BuzzFeed sketches, Tasty recipe demos and listicle segments as MP4 files for kitchen replays or rewatching a favourite bit.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/buzzfeed-video-downloader
 
 #### [Capcut Video Downloader](https://sopkit.space/capcut-video-downloader)
-- **Description**: Download CapCut template videos without watermark for re-editing. Clean exports for creators — free, no signup.
+- **Description**: Fetch a CapCut template video minus the app watermark, giving editors a clean master clip to drop into a fresh timeline.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/capcut-video-downloader
 
 #### [Chingari Video Downloader](https://sopkit.space/chingari-video-downloader)
-- **Description**: Save Chingari short videos in HD for offline viewing. Indian short-video app downloads — free, no signup.
+- **Description**: Drop a Chingari share link into the field and take the short home in whatever resolution the resolver reports from the app.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/chingari-video-downloader
 
 #### [Dailymotion Video Downloader](https://sopkit.space/dailymotion-video-downloader)
-- **Description**: Download Dailymotion videos in HD and SD qualities. News, music and shows offline — free, no signup.
+- **Description**: A Dailymotion link comes back from the resolver as a list of resolutions, so you can pick a small SD file or the sharpest option.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/dailymotion-video-downloader
 
 #### [Douyin Video Downloader](https://sopkit.space/douyin-video-downloader)
-- **Description**: Save Douyin (Chinese TikTok) videos without watermark. Paste link, download HD — free, no signup.
+- **Description**: A Douyin share URL resolves into the clip at its original resolution, stripped of the watermark added when videos leave the app.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/douyin-video-downloader
 
 #### [Downloaders](https://sopkit.space/downloaders)
-- **Description**: Every downloader in one directory — video, audio, image and social savers for 70+ platforms. Free, no signup.
+- **Description**: The downloader collection in one place: choose a supported platform, paste a share link and save the quality that fits your device.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/downloaders
 
 #### [Espn Video Downloader](https://sopkit.space/espn-video-downloader)
-- **Description**: Save ESPN highlights and clips for offline viewing. Sports moments in HD — free downloader, no signup.
+- **Description**: Fetch ESPN highlights and studio segments before they rotate out of the feed, with the resolver listing every quality it finds.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/espn-video-downloader
 
 #### [Facebook Story Downloader](https://sopkit.space/facebook-story-downloader)
-- **Description**: Save Facebook stories before they expire in 24 hours. Anonymous viewing downloads — free, no signup.
+- **Description**: Enter a Facebook username for an illustrative story viewer: sample cards carry timestamps, file sizes, durations and saved highlights.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/facebook-story-downloader
 
 #### [Facebook Video Downloader](https://sopkit.space/facebook-video-downloader)
-- **Description**: Download Facebook videos, reels and Watch shows in HD. Paste link, save MP4 — free, no signup.
+- **Description**: One input covers feed videos, reels and Watch episodes: paste the link, compare the qualities and keep the MP4 that suits you.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/facebook-video-downloader
 
 #### [Facebook Video Saver](https://sopkit.space/fb-video-saver)
-- **Description**: Quick-save Facebook videos to your gallery in HD. Lightweight saver for daily clips — free, no signup.
+- **Description**: Send a Facebook clip, reel or live recording through the resolver and receive it back as an HD or SD file to keep.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/fb-video-saver
 
 #### [Febspot Video Downloader](https://sopkit.space/febspot-video-downloader)
-- **Description**: Download Febspot viral videos and trending clips in HD. Save and share offline — free, no signup.
+- **Description**: Febspot's trending uploads pass through the resolver and come back as MP4 at the best quality the post carries.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/febspot-video-downloader
 
 #### [Flickr Video Downloader](https://sopkit.space/flickr-video-downloader)
-- **Description**: Download Flickr photos and videos in original resolution. For photographers' portfolios — free, no signup.
+- **Description**: Paste a Flickr video page and the resolver returns the upload at its original quality, handy for keeping a portfolio backed up.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/flickr-video-downloader
 
 #### [Ifunny Video Downloader](https://sopkit.space/ifunny-video-downloader)
-- **Description**: Save iFunny memes, GIFs and funny videos to share anywhere. Meme vault in your pocket — free, no signup.
+- **Description**: Save iFunny memes, GIFs and short comedy clips at their original quality, building a stash that survives a deleted source post.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ifunny-video-downloader
 
 #### [Instagram Highlights Saver](https://sopkit.space/ig-highlights-saver)
-- **Description**: Save Instagram highlights and covers before profiles change. Archive stories permanently — free, no signup.
+- **Description**: Enter an Instagram username to preview the story viewer with per-story age, media type and size, plus highlight sets listed with covers and counts.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ig-highlights-saver
 
 #### [Imdb Video Downloader](https://sopkit.space/imdb-video-downloader)
-- **Description**: Download IMDb trailers and clips in HD for offline viewing. Movie previews anytime — free, no signup.
+- **Description**: Paste an IMDb trailer or featurette address; the link is fetched on the server and each rendition it returns is listed with a size for saving.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/imdb-video-downloader
 
 #### [Imgur Video Downloader](https://sopkit.space/imgur-video-downloader)
-- **Description**: Download Imgur images, GIFs and albums in original quality. Backup viral posts — free, no signup.
+- **Description**: Paste an Imgur post, GIF or album link and every media item the fetch returns is listed as its own downloadable file.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/imgur-video-downloader
 
 #### [Insta Reels Saver](https://sopkit.space/insta-reels-saver)
-- **Description**: Save Instagram Reels in HD without watermark. Trending audio kept intact — free, no signup.
+- **Description**: Give it an Instagram Reels link and the fetched video comes back as MP4 renditions in the qualities the post exposes, soundtrack included.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/insta-reels-saver
 
 #### [Instagram Downloader](https://sopkit.space/instagram-downloader)
@@ -746,47 +746,47 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/instagram-downloader
 
 #### [Instagram Image Downloader](https://sopkit.space/instagram-image-downloader)
-- **Description**: Save Instagram photos in full resolution, including carousels. Zoom and download — free, no signup.
+- **Description**: Look up an Instagram handle to preview its profile photo alongside account stats, with three size options listed for the image.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/instagram-image-downloader
 
 #### [Instagram Reel Downloader](https://sopkit.space/instagram-reel-downloader)
-- **Description**: Download Instagram Reels with audio in HD quality. No watermark, instant MP4 — free, no signup.
+- **Description**: Paste a Reels share link and the fetched MP4 arrives with its original soundtrack, ready to save at whichever quality is listed.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/instagram-reel-downloader
 
 #### [Instagram Story Downloader](https://sopkit.space/instagram-story-downloader)
-- **Description**: Save Instagram stories anonymously before they vanish. HD story viewer downloads — free, no signup.
+- **Description**: Enter an account name to see a story viewer listing each clip with age, media type and size, along with the highlight sets below it.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/instagram-story-downloader
 
 #### [Instagram Videos Downloader](https://sopkit.space/instagram-videos-downloader)
-- **Description**: Download Instagram feed videos, lives and IGTV episodes in HD. Long videos too — free, no signup.
+- **Description**: Feed it Instagram feed video, live or IGTV links: the post is fetched, shown with its thumbnail, and every downloadable rendition is listed.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/instagram-videos-downloader
 
 #### [Izlesene Video Downloader](https://sopkit.space/izlesene-video-downloader)
-- **Description**: Download Izlesene Turkish videos in HD for offline viewing. Paste link and save — free, no signup.
+- **Description**: Paste an Izlesene show, series or clip address and the fetched page is turned into a quality list to pick from before saving.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/izlesene-video-downloader
 
 #### [Kickstarter Video Downloader](https://sopkit.space/kickstarter-video-downloader)
-- **Description**: Download Kickstarter campaign and pitch videos in HD. Save ideas worth backing — free, no signup.
+- **Description**: Paste a Kickstarter campaign or pitch video link and the fetched clip is offered at the renditions the campaign page exposes.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/kickstarter-video-downloader
 
 #### [Kwai Video Downloader](https://sopkit.space/kwai-video-downloader)
-- **Description**: Download Kwai short videos and trending clips in HD. Quick saves for sharing — free, no signup.
+- **Description**: A Kwai short or trending post link is fetched and returned as downloadable files at the quality of the original upload.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/kwai-video-downloader
 
 #### [Likee Video Downloader](https://sopkit.space/likee-video-downloader)
-- **Description**: Download Likee short videos in HD for offline viewing. Effects, music and vlogs saved — free, no signup.
+- **Description**: Paste a Likee video link to fetch it and choose from the listed renditions, with the clip's music and effects left intact.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/likee-video-downloader
 
 #### [Linkedin Video Downloader](https://sopkit.space/linkedin-video-downloader)
-- **Description**: Save LinkedIn learning clips and feed videos for offline viewing. Professional content — free, no signup.
+- **Description**: Paste a LinkedIn video post or course clip address and the fetched media is offered in the renditions LinkedIn publishes.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/linkedin-video-downloader
 
 #### [M3u8 Downloader](https://sopkit.space/m3u8-downloader)
-- **Description**: Download M3U8 HLS streams and convert to MP4. Paste playlist URL, save video — free, no signup.
+- **Description**: Paste an HLS playlist address; the resolver reads the stream and lists each video and audio rendition it exposes for saving.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/m3u8-downloader
 
 #### [Mashable Video Downloader](https://sopkit.space/mashable-video-downloader)
-- **Description**: Download Mashable tech and culture videos in HD. Stay updated offline — free, no signup.
+- **Description**: Paste a Mashable tech, science or entertainment clip link and the fetch returns the available qualities for saving.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/mashable-video-downloader
 
 #### [Mixcloud Video Downloader](https://sopkit.space/mixcloud-video-downloader)
@@ -794,11 +794,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/mixcloud-video-downloader
 
 #### [Mxtakatak Video Downloader](https://sopkit.space/mxtakatak-video-downloader)
-- **Description**: Download MX TakaTak short videos in HD. Indian shorts saved offline — free, no signup.
+- **Description**: Handles MX TakaTak comedy sketches, dance clips and trending shorts: paste the link, let it fetch, then pick from the listed qualities.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/mxtakatak-video-downloader
 
 #### [Ninegag Video Downloader](https://sopkit.space/ninegag-video-downloader)
-- **Description**: Download 9GAG funny videos and memes in original quality. Daily laughs offline — free, no signup.
+- **Description**: Paste a 9GAG post link that contains video and the fetched MP4 renditions are listed with their sizes for download.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ninegag-video-downloader
 
 #### [Odnoklassniki Video Downloader](https://sopkit.space/odnoklassniki-video-downloader)
@@ -806,67 +806,67 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/odnoklassniki-video-downloader
 
 #### [Online Video Downloader](https://sopkit.space/online-video-downloader)
-- **Description**: Paste any video link to download in HD — works with 70+ supported sites. Universal saver — free, no signup.
+- **Description**: Drop in a video page address from any platform the site covers; the server-side resolver lists every rendition it can find for saving.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/online-video-downloader
 
 #### [Periscope Video Downloader](https://sopkit.space/periscope-video-downloader)
-- **Description**: Download Periscope live replays and broadcasts before they expire. Archive streams — free, no signup.
+- **Description**: Old Periscope replay URLs that still answer are fetched and saved as video files, a small rescue for the platform's streaming era.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/periscope-video-downloader
 
 #### [Pinterest Clip Saver](https://sopkit.space/pinterest-clip-saver)
-- **Description**: Save Pinterest video clips and Idea Pins in HD. Craft inspiration offline — free, no signup.
+- **Description**: Paste a Pinterest video pin or Idea Pin link and the fetched clip is listed with the qualities and sizes available for saving.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pinterest-clip-saver
 
 #### [Pinterest Gif Downloader](https://sopkit.space/pinterest-gif-downloader)
-- **Description**: Download Pinterest GIFs in original animated quality. Reaction library offline — free, no signup.
+- **Description**: An animated pin address is fetched and returned as a downloadable file with the motion intact, ready for a reaction folder.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pinterest-gif-downloader
 
 #### [Pinterest Image Downloader](https://sopkit.space/pinterest-image-downloader)
-- **Description**: Download Pinterest images and infographics in full resolution. Mood boards offline — free, no signup.
+- **Description**: Paste a pin holding a photo, infographic or artwork and the fetched image is offered at the resolutions Pinterest serves.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pinterest-image-downloader
 
 #### [Pinterest Video Downloader](https://sopkit.space/pinterest-video-downloader)
-- **Description**: Download Pinterest videos and Idea Pins in HD quality. Save tutorials and recipes — free, no signup.
+- **Description**: Recipe demos, craft tutorials and Idea Pin videos: paste the pin link, let the fetch run, then save whichever rendition is listed.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/pinterest-video-downloader
 
 #### [Puhutv Video Downloader](https://sopkit.space/puhutv-video-downloader)
-- **Description**: Save PuhuTV series, films and shows for offline watching. Turkish streaming downloads — free, no signup.
+- **Description**: Paste an episode link from the Turkish service puhutv and the fetched dizi, film or special is offered in the quality tiers listed.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/puhutv-video-downloader
 
 #### [Reddit Downloader](https://sopkit.space/reddit-downloader)
-- **Description**: Download Reddit videos, galleries and threads with media. Save discussions offline — free, no signup.
+- **Description**: Paste a Reddit post link to unpack its video, images, galleries and clips, each listed as a separate downloadable file.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/reddit-downloader
 
 #### [Reddit Media Saver](https://sopkit.space/reddit-media-saver)
-- **Description**: Quick-save Reddit images, GIFs and videos to your device. Lightweight media saver — free, no signup.
+- **Description**: Point it at a Reddit post with media and the fetch separates the videos, galleries and GIFs it holds into individual items to save.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/reddit-media-saver
 
 #### [Reddit Video Downloader](https://sopkit.space/reddit-video-downloader)
-- **Description**: Download Reddit videos with audio included (v.redd.it fix). HD MP4 saves — free, no signup.
+- **Description**: Built for v.redd.it posts: paste the thread link and the clip is assembled from its video and audio streams so it downloads with sound.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/reddit-video-downloader
 
 #### [Rumble Video Downloader](https://sopkit.space/rumble-video-downloader)
-- **Description**: Download Rumble videos and shows in HD. Independent creators offline — free, no signup.
+- **Description**: Paste a Rumble video, podcast episode or past stream link and the fetched media is offered in the source renditions listed.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/rumble-video-downloader
 
 #### [Save Facebook Stories Anonymous](https://sopkit.space/save-fb-stories-anonymous)
-- **Description**: View and save Facebook stories without the seen tag. Fully anonymous story saver — free, no signup.
+- **Description**: Enter a Facebook username to preview stories with their age and size, plus a highlights strip showing covers and item counts.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/save-fb-stories-anonymous
 
 #### [Save Instagram Content](https://sopkit.space/save-ig-content)
-- **Description**: Save all Instagram content types — posts, reels, stories, highlights — in one place. Free, no signup.
+- **Description**: One field takes Instagram post, reel, story or highlight links; the page detects the content type and fetches the media behind it.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/save-ig-content
 
 #### [Save Insta Profile Picture](https://sopkit.space/save-insta-pfp)
-- **Description**: View and download Instagram profile pictures in full HD size. Zoom any DP — free, no signup.
+- **Description**: Enter a handle to preview the account's profile picture, post, follower and following counts, then pick one of three size options.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/save-insta-pfp
 
 #### [Save Instagram Clips](https://sopkit.space/save-instagram-clips)
-- **Description**: Download Instagram video clips and reels in HD with audio. Short-form gold — free, no signup.
+- **Description**: Short Instagram video links are fetched and handed back as clips with sound, ready to save or repost from the results list.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/save-instagram-clips
 
 #### [Save Reels Video](https://sopkit.space/save-reels-video)
-- **Description**: Download Reels videos from Instagram and Facebook in HD. Trending sounds included — free, no signup.
+- **Description**: Paste an Instagram Reels address and the fetched clip keeps its original audio while offering the renditions listed for download.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/save-reels-video
 
 #### [Save Snaps To Gallery](https://sopkit.space/save-snaps-to-gallery)
@@ -874,31 +874,31 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/save-snaps-to-gallery
 
 #### [Save Tiktok MP4](https://sopkit.space/save-tiktok-mp4)
-- **Description**: Save TikTok videos as clean MP4 files in HD. No watermark option included — free, no signup.
+- **Description**: TikTok links save as plain MP4 files, with quality tiers and an audio-only option for whenever you need just the sound.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/save-tiktok-mp4
 
 #### [Save Twitter Videos](https://sopkit.space/save-twitter-videos)
-- **Description**: Download Twitter/X videos and GIFs in HD quality. Save viral clips offline — free, no signup.
+- **Description**: X posts with video or GIF attachments are fetched and listed as downloadable files; clips inside threads and quotes work too.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/save-twitter-videos
 
 #### [Sharechat Video Downloader](https://sopkit.space/sharechat-video-downloader)
-- **Description**: Download ShareChat videos, jokes and status clips in HD. Indian regional content — free, no signup.
+- **Description**: Paste a ShareChat sketch, shayari or status video link and the fetch returns the quality tiers available for saving.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/sharechat-video-downloader
 
 #### [Snapchat Saver Online](https://sopkit.space/snapchat-saver-online)
-- **Description**: Online Snapchat saver for stories, snaps and spotlight videos. Download in HD — free, no signup.
+- **Description**: Stories, spotlight entries and saved memories can be fetched from a Snapchat link on the page, each clip listed for saving.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/snapchat-saver-online
 
 #### [Snapchat Video Downloader](https://sopkit.space/snapchat-video-downloader)
-- **Description**: Download Snapchat videos and spotlight clips in HD quality. Quick saves — free, no signup.
+- **Description**: One box accepts Snapchat spotlight, story and chat clip links; the fetch returns each clip at the quality listed.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/snapchat-video-downloader
 
 #### [Streamable Video Downloader](https://sopkit.space/streamable-video-downloader)
-- **Description**: Download Streamable clips before links expire. Fast MP4 saves in HD — free, no signup.
+- **Description**: Paste a Streamable link before it expires and the fetched clip is turned into MP4 renditions you can save and replay later.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/streamable-video-downloader
 
 #### [Ted Video Downloader](https://sopkit.space/ted-video-downloader)
-- **Description**: Download TED Talks and TEDx speeches for offline learning. Ideas worth saving — free, no signup.
+- **Description**: Talks, TEDx speeches and lesson videos: paste the page address and pick from the fetched renditions offered for download.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/ted-video-downloader
 
 #### [Telegram Video Downloader](https://sopkit.space/telegram-video-downloader)
@@ -906,15 +906,15 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/telegram-video-downloader
 
 #### [Threads Video Downloader](https://sopkit.space/threads-video-downloader)
-- **Description**: Download Threads videos and carousels in HD. Meta's X rival, saved offline — free, no signup.
+- **Description**: Paste a Threads post link and each video or image item it carries is fetched and listed separately, with its own download option.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/threads-video-downloader
 
 #### [Tiktok Downloader](https://sopkit.space/tiktok-downloader)
-- **Description**: The classic TikTok saver: videos in HD with or without watermark. Sounds included — free, no signup.
+- **Description**: The general TikTok saver handles video links in several quality tiers and can also pull the soundtrack out as an audio-only file.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/tiktok-downloader
 
 #### [Tiktok Saver No Watermark](https://sopkit.space/tiktok-saver-no-watermark)
-- **Description**: Clean TikTok downloads with zero watermark or logo. Creator-ready reposts — free, no signup.
+- **Description**: Paste a TikTok link to get the clip back without the watermark or the bouncing handle burnt over the picture.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/tiktok-saver-no-watermark
 
 #### [Tiktok Videos Downloader](https://sopkit.space/tiktok-videos-downloader)
@@ -922,31 +922,31 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/tiktok-videos-downloader
 
 #### [Tumblr Video Downloader](https://sopkit.space/tumblr-video-downloader)
-- **Description**: Download Tumblr videos, GIFs and photosets in original quality. Fandom archives — free, no signup.
+- **Description**: Paste a Tumblr video post link and the fetched clip is offered at full resolution for archiving, with GIFs handled as well.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/tumblr-video-downloader
 
 #### [Twitch Video Downloader](https://sopkit.space/twitch-video-downloader)
-- **Description**: Download Twitch clips, VODs and highlights in HD. Stream moments saved — free, no signup.
+- **Description**: Paste a Twitch clip, highlight or VOD address and the fetched stream is listed in the renditions Twitch stores for saving.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/twitch-video-downloader
 
 #### [Twitter Video Downloader](https://sopkit.space/twitter-video-downloader)
-- **Description**: Download X/Twitter videos in HD with one paste. Spaces clips and lives too — free, no signup.
+- **Description**: X video, GIF and Spaces recording links are fetched and then offered in the qualities the platform returns for saving.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/twitter-video-downloader
 
 #### [Universal Video Downloader](https://sopkit.space/universal-video-downloader)
-- **Description**: One universal downloader for every supported site. If it plays, it saves — free, no signup.
+- **Description**: Give the resolver any supported video page address and it scans for media sources, returning each rendition it recognises as a download.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/universal-video-downloader
 
 #### [Vimeo Video Downloader](https://sopkit.space/vimeo-video-downloader)
-- **Description**: Download Vimeo videos in HD and 4K where available. Staff picks offline — free, no signup.
+- **Description**: Paste a Vimeo film, tutorial or staff pick link and the fetch lists the renditions the uploader enabled, HD and up where offered.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/vimeo-video-downloader
 
 #### [Vkontakte Video Downloader](https://sopkit.space/vkontakte-video-downloader)
-- **Description**: Download VK videos, clips and shows in HD. Russian social content offline — free, no signup.
+- **Description**: VK video, clip and music video links are fetched, with the sharpest rendition the platform serves selected for you automatically.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/vkontakte-video-downloader
 
 #### [Terabox Video Downloader](https://sopkit.space/terabox-downloader)
-- **Description**: Stream and download Terabox media files easily directly in your browser with no registration or software installation required.
+- **Description**: Paste a Terabox share link and the extracted file ID opens in an embedded player, with a new-tab option and copyable embed code.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/terabox-downloader
 
 #### [Instagram Reels Downloader HD](https://sopkit.space/ig-reels-downloader-hd)
@@ -1049,23 +1049,23 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/youtube-views-ratio-calculator
 
 #### [YouTube Title Generator](https://sopkit.space/youtube-title-generator)
-- **Description**: Create viral YouTube titles with proven hooks, brackets and keywords. CTR-focused ideas in seconds — free, no signup.
+- **Description**: Enter a topic to get six ready-made title patterns — how-to guides, 30-day experiments, mistake roundups — each copied in one click.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/youtube-title-generator
 
 #### [YouTube Description Generator](https://sopkit.space/youtube-description-generator)
-- **Description**: Generate search-optimized video descriptions with timestamps, hashtags and CTAs. Upload-ready text — free, no signup.
+- **Description**: Enter a topic to get a ready-to-paste description with an intro line, four timestamped chapters, a resources block and starter hashtags.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/youtube-description-generator
 
 #### [YouTube Thumbnail Text Generator](https://sopkit.space/youtube-thumbnail-text-generator)
-- **Description**: Generate punchy thumbnail text ideas — short, emotional, readable at any size. Boost clicks — free, no signup.
+- **Description**: Produces six short, shouty caption options for thumbnails — DO THIS!, STOP!, 10X FASTER and similar — each copied with one click.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/youtube-thumbnail-text-generator
 
 #### [Youtube Thumbnail Downloader](https://sopkit.space/youtube-thumbnail-downloader)
-- **Description**: Grab YouTube thumbnails in SD, HD, Full HD and max resolution. One paste, instant gallery — free, no signup.
+- **Description**: Paste a video URL or ID to get its cover image in every size YouTube publishes, from max resolution down to the default frame.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/youtube-thumbnail-downloader
 
 #### [Youtube Video Downloader](https://sopkit.space/youtube-video-downloader)
-- **Description**: Save YouTube videos in MP4 from 144p to 4K for offline watching. Fast quality picker — free, no signup needed.
+- **Description**: Supports YouTube videos and Shorts links: choose from quality tiers such as 360p, 720p, 1080p or 4K where offered, plus audio entries.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/youtube-video-downloader
 
 #### [YouTube Video Downloader](https://sopkit.space/youtube-downloader)
@@ -1088,7 +1088,7 @@ Agent Policy: https://sopkit.space/ai.txt
 ### Audio Tools Tools
 
 #### [Text to Speech](https://sopkit.space/text-to-speech)
-- **Description**: Convert text to natural sounding speech audio directly in your browser using Web Speech API. Free online text to speech converter with multiple voice options — no uploads needed.
+- **Description**: Choose a voice, set the speed and pitch sliders, then hear the passage read back with play, pause and resume controls.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/text-to-speech
 
 #### [Audio Tools](https://sopkit.space/audio-tools)
@@ -1100,7 +1100,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/guitar-tuner
 
 #### [Free MP3 Extractor](https://sopkit.space/free-mp3-extractor)
-- **Description**: Extract MP3 audio from any video file in seconds. Video-to-audio rips in browser — free, no signup.
+- **Description**: Paste a TikTok link and the audio renditions it returns are listed with quality and size, ready to save as an MP3 track.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/free-mp3-extractor
 
 #### [Gaana Video Downloader](https://sopkit.space/gaana-video-downloader)
@@ -1108,15 +1108,15 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/gaana-video-downloader
 
 #### [Modify MP3 File](https://sopkit.space/modify-mp3-file)
-- **Description**: Trim, cut and edit MP3 files right in your browser. Ringtone maker with fade effects — free, no signup.
+- **Description**: Paste a TikTok video link, pick an output bitrate from 128 up to 320kbps, and the fetched soundtrack comes back as an MP3.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/modify-mp3-file
 
 #### [MP3 From Tiktok](https://sopkit.space/mp3-from-tiktok)
-- **Description**: Convert TikTok videos to MP3 ringtones and sounds. Viral audios saved — free, no signup.
+- **Description**: Save a viral sound: paste the TikTok video link, review the extracted audio options, and download the track for a ringtone.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/mp3-from-tiktok
 
 #### [MP4 To MP3](https://sopkit.space/mp4-to-mp3)
-- **Description**: Convert MP4 videos to MP3 audio with quality picker. Extract soundtracks fast — free, no signup.
+- **Description**: Paste a TikTok video address, choose 192kbps for a balance of size and fidelity or 320kbps for more, then take the MP3.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/mp4-to-mp3
 
 #### [Shrink MP3 Size](https://sopkit.space/shrink-mp3-size)
@@ -1132,7 +1132,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/audio-equalizer
 
 #### [Audio Joiner](https://sopkit.space/audio-joiner)
-- **Description**: Join multiple audio files into a single track seamlessly. Combine MP3, WAV, OGG, and M4A files in any order. Free, private, and works entirely in your browser.
+- **Description**: Drop two or more audio files, put them in order with the arrow controls, and export the merged result as one WAV track.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/audio-joiner
 
 
@@ -1175,11 +1175,11 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/yaml-to-json-converter
 
 #### [JSON to YAML Converter](https://sopkit.space/json-to-yaml-converter)
-- **Description**: Convert JSON configurations to clean YAML structures instantly in your browser. Free, private, and 100% client-side JSON to YAML converter with zero file uploads needed.
+- **Description**: Turn a JSON document into two-space YAML for Kubernetes manifests or app config, then copy it out or save the result as output.yaml.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/json-to-yaml-converter
 
 #### [HTML to XML Entities Converter](https://sopkit.space/html-to-xml-entities)
-- **Description**: Convert HTML special characters into safe XML entities and decode entities back to HTML. Free online converter for web developers — 100% client-side processing, no uploads needed.
+- **Description**: Switch between escape and unescape to turn angle brackets, ampersands and quotes into XML entities, or entities back into markup.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/html-to-xml-entities
 
 #### [CSS Border Radius Generator](https://sopkit.space/css-border-radius-generator)
@@ -1207,7 +1207,7 @@ Agent Policy: https://sopkit.space/ai.txt
 - **Markdown Representation**: https://sopkit.space/tool-markdown/binary-to-hex-converter
 
 #### [JWT Decoder & Debugger](https://sopkit.space/jwt-decoder)
-- **Description**: Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature.
+- **Description**: Paste a JWT to split it into header, payload and signature and read the exp claim, shown as expired or valid in seconds, minutes or hours.
 - **Markdown Representation**: https://sopkit.space/tool-markdown/jwt-decoder
 
 #### [API Key Tester Suite](https://sopkit.space/api-key-tester)
