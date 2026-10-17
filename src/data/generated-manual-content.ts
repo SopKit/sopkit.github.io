@@ -2009,7 +2009,7 @@ Together, the binary sequence "01001000 01100101 01101100 01101100 01101111" dec
       `Automatically strips 0b binary notation prefixes from input strings`,
       `Live character inspection table showing glyphs, decimal values, and hex equivalents`,
       `Bidirectional swap button to flip between binary decoding and ASCII encoding`,
-      `Client-side JavaScript execution ensuring complete confidentiality of your text`,
+      `Standard ASCII mapping covers letters, digits, punctuation and symbols`,
     ],
     howToUse: {
       name: `How to convert binary code to ASCII text`,
@@ -6286,7 +6286,7 @@ This tool accepts individual integers or entire batches of numbers separated by 
     features: [
       `Converts base-10 decimal integers to base-2 binary representations accurately`,
       `Supports batch conversion for space, comma, or newline-delimited integer lists`,
-      `Configurable output delimiters: space-separated, comma-separated, newlines, or continuous`,
+      `Pick how converted numbers are joined: space, comma, newline or no separator at all`,
       `Reciprocal Swap button to toggle directly to Binary to Decimal conversion mode`,
       `One-click clipboard copy and text file download for rapid data transfer`,
       `100% client-side computation running entirely in your browser with zero network transmission`,
@@ -10210,7 +10210,7 @@ This utility supports raw hex tokens, continuous byte strings, or inputs with le
     features: [
       `Converts base-16 hexadecimal values directly into 8-bit binary octets (base-2)`,
       `Automatic 0x prefix removal and case-insensitive hex parsing (uppercase and lowercase)`,
-      `Configurable output delimiters: space-separated, comma-separated, newlines, or continuous`,
+      `Delimiter control formats the binary output for scripts, registers or spreadsheets`,
       `Reciprocal Swap feature to toggle directly into Binary to Hex mode`,
       `Fast clipboard copy and plain text download for hardware testing and packet inspection`,
       `100% private in-browser computation with zero server uploads, data logging, or external requests`,
@@ -10286,7 +10286,7 @@ This utility executes these transformations instantaneously in your browser, sup
     features: [
       `Converts base-16 hexadecimal values directly to base-8 octal representations`,
       `Automatic stripping of 0x prefixes and support for both uppercase and lowercase hex`,
-      `Configurable output delimiters: space-separated, comma-separated, newlines, or continuous`,
+      `Switch the separator between blanks, commas, line breaks or continuous strings`,
       `Reciprocal Swap button to switch instantly between Hex to Octal and Octal to Hex modes`,
       `One-click clipboard copy and text export for shell scripts and system configuration`,
       `100% browser-based computation with zero external network requests or data collection`,
@@ -17678,7 +17678,7 @@ This tool supports individual numbers or lists separated by spaces, commas, or l
     features: [
       `Converts base-8 octal values directly into base-2 binary strings accurately`,
       `Direct 3-bit triplet mapping with support for multi-token batch conversion`,
-      `Configurable output delimiters: space-separated, comma-separated, newlines, or continuous`,
+      `Batch results join with spaces, commas, newlines or run together unbroken`,
       `Reciprocal Swap button to toggle immediately between Octal to Binary and Binary to Octal modes`,
       `One-click clipboard copy and text file download for shell scripts and hardware registers`,
       `100% private in-browser computation with zero remote server calls or telemetry`,
@@ -27422,7 +27422,7 @@ For example, typing the word "Hello" generates the decimal sequence 72 101 108 1
       `Live inspection table displaying glyphs, ASCII decimal, hex, and binary codes`,
       `Bidirectional swap button to flip back to ASCII to Text decoding`,
       `One-click clipboard copying and text file downloads for rapid workflow`,
-      `Client-side JavaScript execution ensuring complete confidentiality of your text`,
+      `Handles letters, digits, punctuation and whitespace in a single conversion pass`,
     ],
     howToUse: {
       name: `How to convert text to ASCII decimal codes`,
@@ -33570,7 +33570,7 @@ Generators are for designers, developers, content creators, writers, and anyone 
       `Avatar Generator with deterministic identicon-style avatars and customizable palettes`,
       `100% client-side processing with no server uploads for all generators`,
       `No registration, no accounts, no data collection`,
-      `Free forever with unlimited usage`,
+      `Category index links each generator so you can jump straight to the one you need`,
     ],
     howToUse: {
       name: "How to use SopKit Generators",
@@ -33605,7 +33605,7 @@ Developer Tools are for software engineers, web developers, DevOps professionals
       `Color converter (Hex, RGB, HSL, CMYK), Markdown preview, and more`,
       `100% client-side processing — your code never leaves your machine`,
       `No registration, no accounts, no API keys needed`,
-      `Free forever with unlimited usage`,
+      `Browse the full index or jump to a formatter, converter or tester directly`,
     ],
     howToUse: {
       name: "How to use Developer Tools",
@@ -33642,7 +33642,7 @@ Privacy Tools are for security-conscious individuals, IT professionals, complian
       `Data breach checker, email deliverability tester, and spam score analyzer`,
       `100% client-side processing — sensitive data never leaves your browser`,
       `No registration, no accounts, no tracking, no data collection`,
-      `Free forever with unlimited usage`,
+      `Every tool in the suite is indexed here for quick access`,
     ],
     howToUse: {
       name: "How to use Privacy Tools",
@@ -33736,7 +33736,7 @@ Software developers, engineers, DevOps professionals, and programming students w
       `Covers formatting, validation, conversion, testing, and debugging utilities`,
       `Focus on tools with zero server uploads for code security`,
       `Includes SopKit's developer tools — JSON formatter, regex tester, hash generator, and more`,
-      `Regularly updated with new tool recommendations`,
+      `Gives context on when each tool fits into a real workflow`,
     ],
     howToUse: {
       name: "How to use this guide",
@@ -33765,7 +33765,7 @@ Website owners, bloggers, digital marketers, SEO professionals, and small busine
     features: [
       `Curated list of free SEO tools for keyword research, site audits, and rank tracking`,
       `Covers on-page optimization, backlink analysis, and technical SEO`,
-      `Includes SopKit's free SEO utilities`,
+      `Explains what each tool is for before you invest time in it`,
       `Focus on tools that respect privacy and do not sell site data`,
       `Regularly updated for the latest search engine algorithms`,
     ],
@@ -33859,7 +33859,7 @@ Website owners, bloggers, small business owners, SEO beginners, and digital mark
       `Top 10 curated free SEO tools with detailed reviews`,
       `Covers keyword research, site audits, backlinks, and rank tracking`,
       `Step-by-step guidance for using each tool effectively`,
-      `Includes SopKit's free SEO utilities`,
+      `Each entry states who the tool suits, from solo blogs to agencies`,
       `Focus on actionable insights for real ranking improvements`,
     ],
     howToUse: {
@@ -33891,7 +33891,7 @@ Software developers, API integrators, DevOps engineers, and anyone who regularly
       `Covers formatting, validation, editing, conversion, minification, and comparison`,
       `All tools process JSON locally — no data uploads to servers`,
       `Includes SopKit's JSON formatter and validator`,
-      `Regularly updated with new tool recommendations`,
+      `Each listing notes the niche it fills among JSON workflows`,
     ],
     howToUse: {
       name: "How to use this guide",
@@ -35405,7 +35405,7 @@ Results can be deduplicated and sorted, and the filter field narrows the view wh
       `Shows a digit count per result so truncated numbers stand out`,
       `Deduplication and sorting keep working lists stable`,
       `Filter field for checking one format or area code at a time`,
-      `Clipboard copy, .txt download, and JSON export`,
+      `Copy the filtered list, download it as a .txt file, or export it as JSON`,
     ],
     howToUse: {
       name: `How to pull phone numbers out of pasted text`,
@@ -35439,7 +35439,7 @@ Typical uses: summarizing the addresses in an Nginx or edge-proxy excerpt, colle
       `Labels each result by address family for easy separation`,
       `Deduplication for high-traffic logs where the same address repeats constantly`,
       `Sort and filter controls for reviewing large result sets`,
-      `Clipboard copy, .txt download, and JSON export`,
+      `Export the labeled list via clipboard, a .txt download or JSON`,
       `No lookups or enrichment — matches come only from your input`,
     ],
     howToUse: {
@@ -35479,7 +35479,7 @@ Copy the list to the clipboard, download it as a text file, or export JSON for s
       `Normalizes output: lowercases entries and removes common www. prefixes`,
       `Deduplicates and optionally sorts for a clean, reviewable list`,
       `Keeps distinct subdomains so audits can tell blog.example.com from example.com`,
-      `Clipboard copy, .txt download, and JSON export`,
+      `Take the cleaned hostname list to your clipboard, a .txt file or JSON`,
     ],
     howToUse: {
       name: `How to extract domains from URLs and email addresses`,
