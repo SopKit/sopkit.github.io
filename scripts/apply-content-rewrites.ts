@@ -250,6 +250,16 @@ function applyFaqRewrites(): void {
 			continue;
 		}
 
+		// Idempotence guard: if every new question is already present, this
+		// entry was applied in an earlier run — never insert duplicates.
+		const alreadyApplied = rewrite.faqs.every((f) =>
+			old.faqs.some((q) => q.question === f.question),
+		);
+		if (alreadyApplied) {
+			skipped.push(`${id} (already applied)`);
+			continue;
+		}
+
 		const firstTemplateIdx = old.faqs.findIndex((q) =>
 			isTemplate(q.question, rewrite.removeQuestions),
 		);
