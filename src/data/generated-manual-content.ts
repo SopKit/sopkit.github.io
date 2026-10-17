@@ -685,20 +685,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does Akillitv Video Downloader do?",
-        "answer": "Akillitv Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the AkilliTV result panel show before I download?",
+        "answer": "The resolved card previews the video's thumbnail, title, duration and author, and every option row pairs a quality label with the reported file size."
       },
       {
-        "question": "Is Akillitv Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Akillitv Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Are separate audio files offered for AkilliTV videos?",
+        "answer": "Audio renditions show a music-note icon next to their Download button, and picking one opens that audio file in a new tab."
       },
       {
-        "question": "Do I need to create an account or sign up to use Akillitv Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Akillitv Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Akillitv Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What should I do when an AkilliTV link will not resolve?",
+        "answer": "The inline error returns a retry prompt; copy a fresh share link from the platform and paste it again, because expired or shortened links often stop resolving."
       },
       {
         "question": "Where does my AkilliTV link go when I press Download?",
@@ -744,20 +740,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does All Downloaders do?",
-        "answer": "All Downloaders lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which platforms does All Downloaders work with?",
+        "answer": "It accepts video links from any site the resolver recognises — paste the URL as-is and the tool reports the media it can find, without asking you to name the platform first."
       },
       {
-        "question": "Is All Downloaders really free? Are there any hidden charges?",
-        "answer": "Yes, All Downloaders is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if the resolver finds no media on a page?",
+        "answer": "You get an inline error instead of partial results; the resolver only returns renditions it can actually detect, so nothing is half-processed."
       },
       {
-        "question": "Do I need to create an account or sign up to use All Downloaders?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use All Downloaders on mobile devices or tablets?",
-        "answer": "Yes, All Downloaders works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where does the link I paste actually go?",
+        "answer": "SopKit forwards the URL through its proxy to an external resolver, which returns the available renditions; the media file then opens straight from the result row."
       },
       {
         "question": "Is my link tried against every platform when I paste it?",
@@ -803,20 +795,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does Amazon SES API Key Tester do?",
-        "answer": "Amazon SES API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the Amazon SES tester hit the SES send-email endpoint automatically?",
+        "answer": "No - SES is not one of the five hardwired presets. The page opens on the Custom Endpoint Address option, so you paste the exact SES API URL you want probed and pick GET or POST."
       },
       {
-        "question": "Is Amazon SES API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Amazon SES API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the diagnostic console show when an SES credential is rejected?",
+        "answer": "Everything other than HTTP 200 or 201 fails the check: the console prints the numeric status along with a trimmed excerpt of the server's reply, and reports timeouts or CORS blocks separately."
       },
       {
-        "question": "Do I need to create an account or sign up to use Amazon SES API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Amazon SES API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Amazon SES API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where does my AWS credential go when I run the connection diagnostic?",
+        "answer": "It is attached as an Authorization Bearer header and sent directly to the URL you entered, so the value does reach that Amazon endpoint. Use a scoped test credential and revoke anything long-lived."
       },
       {
         "question": "Is my Amazon SES key uploaded to SopKit during the test?",
@@ -917,20 +905,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does Anthropic Claude API Key Tester do?",
-        "answer": "Anthropic Claude API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Anthropic has no preset here, so what URL should I probe?",
+        "answer": "Any Anthropic REST URL that answers 200 or 201 for a valid key makes a good target; the tester adds the Bearer header for you, so you only supply the address and the key."
       },
       {
-        "question": "Is Anthropic Claude API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Anthropic Claude API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which HTTP methods can I use for the Anthropic probe?",
+        "answer": "The Method selector offers GET and POST. The key always travels in an Authorization Bearer header, and no request body is sent with either method."
       },
       {
-        "question": "Do I need to create an account or sign up to use Anthropic Claude API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Anthropic Claude API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Anthropic Claude API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does the console distinguish a blocked browser request from a bad key?",
+        "answer": "A rejected credential returns an HTTP status with a response snippet, while a cross-origin rejection is reported as a request failure with an explicit CORS hint - in that case the key may be perfectly fine."
       },
       {
         "question": "Where does my Anthropic key travel when I run a check here?",
@@ -976,20 +960,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does API Key Tester Suite do?",
-        "answer": "API Key Tester Suite lets you calculate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many provider validators does the suite page link to?",
+        "answer": "The hub grid lists 40 provider-specific key testers, from OpenAI and Gemini to SendGrid and ZoomInfo. Each card links to its own diagnostics page under /api-key-tester."
       },
       {
-        "question": "Is API Key Tester Suite really free? Are there any hidden charges?",
-        "answer": "Yes, API Key Tester Suite is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do all 40 provider pages behave the same way once opened?",
+        "answer": "No. Five providers have hardwired probes (OpenAI, Gemini, Stripe, Groq and DeepSeek); the rest open on Custom Endpoint Address so you supply the URL and method yourself."
       },
       {
-        "question": "Do I need to create an account or sign up to use API Key Tester Suite?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use API Key Tester Suite on mobile devices or tablets?",
-        "answer": "Yes, API Key Tester Suite works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I find the validator for a specific vendor like HubSpot or Twilio?",
+        "answer": "Scroll the three-column grid or hover a card to reveal its Launch Validator action. Each card pairs the validator name with a short description so you can pick by provider."
       },
       {
         "question": "Does the suite page itself ever see the API keys I enter in the individual testers?",
@@ -1176,48 +1156,67 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     "seoDescription": "Private Article Rewriter: privately process text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure."
   },
   "ascii-to-binary-converter": {
-    whatItIs: `ASCII to Binary Converter translates standard text characters into 8-bit binary code (octets). Every letter, digit, punctuation mark, and whitespace symbol in the standard ASCII character set corresponds to an integer between 0 and 127, which this tool represents as an 8-digit sequence of zeros and ones.
-
-## How ASCII Characters Map to Binary
-
-Computers store and process all text as binary voltages. Under the ASCII standard established in 1963, each character receives a fixed numerical code point. For example:
-- The uppercase letter 'A' corresponds to decimal 65. In base-2 binary notation, 65 is 01000001.
-- The lowercase letter 'a' corresponds to decimal 97, which translates to 01100001. The difference of 32 between uppercase and lowercase letters is represented by toggling the sixth bit (bit 5 in zero-indexed bit numbering).
-- The space character corresponds to decimal 32, represented in binary as 00100000.
-
-This converter processes your text on the fly. You can format the resulting binary stream with space delimiters between bytes, comma separators, newlines, or as a continuous bit string.
-
-## Common Use Cases
-
-- Computer science coursework covering data representation and machine architecture.
-- Inspecting payload byte structures in network protocols and serial communications.
-- Generating binary test fixtures and mock data for parser unit tests.
-- Visualizing how text strings are stored in computer memory registers.`,
-    features: [
-      `Converts any text string into 8-bit binary octets instantly as you type`,
-      `Supports space, comma, newline, or continuous delimiter formatting`,
-      `Live character breakdown table displaying decimal, hex, binary, and octal codes`,
-      `Bidirectional swap button to switch instantly between ASCII and binary decoding`,
-      `One-click copy to clipboard and text file download for generated byte sequences`,
-      `Runs entirely within browser memory with zero network requests or tracking`,
+    "whatItIs": "ASCII to Binary Converter translates standard text characters into 8-bit binary code (octets). Every letter, digit, punctuation mark, and whitespace symbol in the standard ASCII character set corresponds to an integer between 0 and 127, which this tool represents as an 8-digit sequence of zeros and ones.\n\n## How ASCII Characters Map to Binary\n\nComputers store and process all text as binary voltages. Under the ASCII standard established in 1963, each character receives a fixed numerical code point. For example:\n- The uppercase letter 'A' corresponds to decimal 65. In base-2 binary notation, 65 is 01000001.\n- The lowercase letter 'a' corresponds to decimal 97, which translates to 01100001. The difference of 32 between uppercase and lowercase letters is represented by toggling the sixth bit (bit 5 in zero-indexed bit numbering).\n- The space character corresponds to decimal 32, represented in binary as 00100000.\n\nThis converter processes your text on the fly. You can format the resulting binary stream with space delimiters between bytes, comma separators, newlines, or as a continuous bit string.\n\n## Common Use Cases\n\n- Computer science coursework covering data representation and machine architecture.\n- Inspecting payload byte structures in network protocols and serial communications.\n- Generating binary test fixtures and mock data for parser unit tests.\n- Visualizing how text strings are stored in computer memory registers.",
+    "features": [
+      "Converts any text string into 8-bit binary octets instantly as you type",
+      "Supports space, comma, newline, or continuous delimiter formatting",
+      "Live character breakdown table displaying decimal, hex, binary, and octal codes",
+      "Bidirectional swap button to switch instantly between ASCII and binary decoding",
+      "One-click copy to clipboard and text file download for generated byte sequences",
+      "Runs entirely within browser memory with zero network requests or tracking"
     ],
-    howToUse: {
-      name: `How to convert text to binary code`,
-      steps: [
-        { name: `Enter Plain Text`, text: `Type or paste your text characters into the input box on the left.` },
-        { name: `Choose Delimiter`, text: `Select your preferred output delimiter such as space, comma, newline, or continuous.` },
-        { name: `Review Binary Bytes`, text: `Inspect the generated 8-bit binary sequences in the output pane on the right.` },
-        { name: `Copy or Export`, text: `Click Copy to grab the binary stream or Download to save it as a text file.` },
-      ],
+    "howToUse": {
+      "name": "How to convert text to binary code",
+      "steps": [
+        {
+          "name": "Enter Plain Text",
+          "text": "Type or paste your text characters into the input box on the left."
+        },
+        {
+          "name": "Choose Delimiter",
+          "text": "Select your preferred output delimiter such as space, comma, newline, or continuous."
+        },
+        {
+          "name": "Review Binary Bytes",
+          "text": "Inspect the generated 8-bit binary sequences in the output pane on the right."
+        },
+        {
+          "name": "Copy or Export",
+          "text": "Click Copy to grab the binary stream or Download to save it as a text file."
+        }
+      ]
     },
-    faqs: [
-      { question: `Why does every ASCII character have an 8-bit binary code?`, answer: `Standard ASCII defines 128 characters requiring only 7 bits (2 to the 7th power equals 128). Because modern computer architectures organize memory into 8-bit bytes, an extra zero is placed at the most significant bit position to pad each character to a full byte.` },
-      { question: `What is the binary code for a space character?`, answer: `The ASCII space character has a decimal value of 32, which produces the 8-bit binary sequence 00100000.` },
-      { question: `How do uppercase and lowercase letters differ in binary?`, answer: `Uppercase letters (A through Z) span decimal values 65 through 90 (binary 01000001 to 01011010). Lowercase letters (a through z) span decimal values 97 through 122 (binary 01100001 to 01111010). In binary, uppercase and lowercase letters differ only by bit 5, where a 0 represents uppercase and a 1 represents lowercase.` },
-      { question: `Can this tool handle non-ASCII Unicode characters?`, answer: `Standard ASCII covers character codes 0 through 127. Characters outside this range (such as accented letters or emojis) are processed using their UTF-8 byte sequences.` },
-      { question: `Is my text private when using this converter?`, answer: `Yes. All character parsing and string conversions execute strictly in your browser using client-side JavaScript. No text is sent to an external server or saved in a remote database.` },
+    "faqs": [
+      {
+        "question": "Why does every ASCII character have an 8-bit binary code?",
+        "answer": "Standard ASCII defines 128 characters requiring only 7 bits (2 to the 7th power equals 128). Because modern computer architectures organize memory into 8-bit bytes, an extra zero is placed at the most significant bit position to pad each character to a full byte."
+      },
+      {
+        "question": "What is the binary code for a space character?",
+        "answer": "The ASCII space character has a decimal value of 32, which produces the 8-bit binary sequence 00100000."
+      },
+      {
+        "question": "How do uppercase and lowercase letters differ in binary?",
+        "answer": "Uppercase letters (A through Z) span decimal values 65 through 90 (binary 01000001 to 01011010). Lowercase letters (a through z) span decimal values 97 through 122 (binary 01100001 to 01111010). In binary, uppercase and lowercase letters differ only by bit 5, where a 0 represents uppercase and a 1 represents lowercase."
+      },
+      {
+        "question": "Can this tool handle non-ASCII Unicode characters?",
+        "answer": "Standard ASCII covers character codes 0 through 127. Characters outside this range (such as accented letters or emojis) are processed using their UTF-8 byte sequences."
+      },
+      {
+        "question": "Which delimiters can separate the binary bytes in the output?",
+        "answer": "The Output Delimiter control offers space, comma, newline or none; none produces one continuous bit string, while newline is handy for diffing against expected byte lines."
+      },
+      {
+        "question": "What does the character breakdown table show?",
+        "answer": "It lists the first 24 characters with their glyph, decimal code, hex value, 8-bit binary and octal form, updating as you type so you can spot-check individual mappings."
+      },
+      {
+        "question": "How do I turn a binary string back into readable text?",
+        "answer": "Use the Swap button: it flips the tool into Binary to ASCII mode and loads the current output as the new input, so a round trip takes one click."
+      }
     ],
-    seoDescription: `Convert text to 8-bit binary code instantly. Free browser-based ASCII to binary converter with delimiter formatting and character inspection. 100% private.`,
+    "seoDescription": "Convert text to 8-bit binary code instantly. Free browser-based ASCII to binary converter with delimiter formatting and character inspection. 100% private."
   },
   "ascii-to-text-converter": {
     whatItIs: `ASCII to Text Converter decodes decimal ASCII numerical values back into readable text characters. Programmers and students frequently encounter ASCII values printed as decimal lists in debug logs, memory inspection tools, or network packet dumps. This utility reconstructs the original words and sentences from those numeric sequences.
@@ -1365,20 +1364,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Attio API Key Tester do?",
-        "answer": "Attio API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is Attio's records endpoint hardwired into this tester?",
+        "answer": "No. Attio loads on the Custom Endpoint Address option, so you paste the exact records, objects or other API URL you want to check and choose GET or POST."
       },
       {
-        "question": "Is Attio API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Attio API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What appears in the console when an Attio call fails?",
+        "answer": "The HTTP status code plus up to 160 characters of Attio's response. A request that gets no reply within 8 seconds is aborted and reported as a timeout."
       },
       {
-        "question": "Do I need to create an account or sign up to use Attio API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Attio API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Attio API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I check a key that only has read permissions?",
+        "answer": "Yes, but the verdict depends on the URL you probe. A read-only key can still fail on an endpoint that requires write scope, so pick a URL that matches the permissions you expect."
       },
       {
         "question": "How is the Attio key I paste handled during a diagnostic run?",
@@ -1656,20 +1651,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Bandcamp Video Downloader do?",
-        "answer": "Bandcamp Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does Bandcamp Video Downloader handle audio releases as well as video?",
+        "answer": "Audio entries appear in the options list with a music-note glyph, so a track or a video rendition can be saved from the same result card."
       },
       {
-        "question": "Is Bandcamp Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Bandcamp Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What details come with a Bandcamp release before saving?",
+        "answer": "The result card pairs the release artwork with its title and artist, and each option row adds a quality label plus the reported file size."
       },
       {
-        "question": "Do I need to create an account or sign up to use Bandcamp Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Bandcamp Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Bandcamp Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does a Bandcamp link sometimes stop working?",
+        "answer": "The inline error notes that the link may need refreshing — artists can rename or pull releases, and stale page URLs stop resolving, so paste the current page address."
       },
       {
         "question": "Is anything about my Bandcamp link retained after the lookup?",
@@ -1883,20 +1874,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Base64 do?",
-        "answer": "Base64 lets you encode/decode code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which modes does the Base64 tool support?",
+        "answer": "Three: encode text to Base64, decode a Base64 string, and file mode, which converts an uploaded PNG, JPG, PDF, SVG, WebP or audio file into Base64 text."
       },
       {
-        "question": "Is Base64 really free? Are there any hidden charges?",
-        "answer": "Yes, Base64 is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict codecs after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if I paste a malformed Base64 string into decode mode?",
+        "answer": "Instead of a blank result you get an error banner naming the malformed payload, and the output box is cleared so nothing misleading is left behind."
       },
       {
-        "question": "Do I need to create an account or sign up to use Base64?",
-        "answer": "No account, signup, or email is required. Simply open the page and start encode/decodeing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Base64 on mobile devices or tablets?",
-        "answer": "Yes, Base64 works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the tool keep my text between visits?",
+        "answer": "Yes - mode and input are saved locally between visits, and the Clear action resets both the field and the stored value."
       },
       {
         "question": "Are the strings or files I encode with the Base64 tool sent anywhere?",
@@ -1942,20 +1929,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Bilibili Video Downloader do?",
-        "answer": "Bilibili Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Bilibili addresses does the downloader accept?",
+        "answer": "The URL guard accepts only bilibili.com and b23.tv links; anything else gets a specific validation message before a resolver request is made."
       },
       {
-        "question": "Is Bilibili Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Bilibili Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What do the download list rows represent for a Bilibili video?",
+        "answer": "Each row mirrors a resolution the resolver reported, so the list matches what the source actually offers rather than a fixed set of presets."
       },
       {
-        "question": "Do I need to create an account or sign up to use Bilibili Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Bilibili Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Bilibili Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How can I confirm a Bilibili link parsed correctly?",
+        "answer": "A success banner appears once the media list is ready, and the resolved card shows the cover, title, duration and uploader name."
       },
       {
         "question": "What happens to my Bilibili link after the download options appear?",
@@ -2352,20 +2335,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Bitchute Video Downloader do?",
-        "answer": "Bitchute Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does BitChute downloader save direct MP4 files?",
+        "answer": "It snags the MP4 variants behind a BitChute watch link, with multiple qualities listed and size estimates per file."
       },
       {
-        "question": "Is Bitchute Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Bitchute Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which channel posted the BitChute video I am saving?",
+        "answer": "The preview row shows the thumbnail, title, runtime and channel handle, so the source is identified before you commit to a download."
       },
       {
-        "question": "Do I need to create an account or sign up to use Bitchute Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Bitchute Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Bitchute Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if a BitChute lookup fails?",
+        "answer": "Retry guidance appears inline; removed or private videos cannot be resolved, so paste the watch link again from a fresh page."
       },
       {
         "question": "Does fetching a BitChute video happen locally?",
@@ -2411,20 +2390,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Blogger Video Downloader do?",
-        "answer": "Blogger Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Blogger pages can the resolver read?",
+        "answer": "It works from Blogger and Blogspot post URLs that contain an embedded video, extracting the video source from the post body."
       },
       {
-        "question": "Is Blogger Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Blogger Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why did my Blogger post fail to parse?",
+        "answer": "Inline notices explain common causes: the post may have no embedded video, the player may be one the resolver cannot read, or the URL may point at the blog home rather than a single post."
       },
       {
-        "question": "Do I need to create an account or sign up to use Blogger Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Blogger Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Blogger Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What accompanies a Blogger video in the results?",
+        "answer": "The result card shows the post thumbnail, title, length and uploader, followed by download options with quality and size for each variant."
       },
       {
         "question": "Can anyone else see which Blogger posts I process?",
@@ -2470,20 +2445,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Blutv Video Downloader do?",
-        "answer": "Blutv Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does bluTV downloader work with full episodes or only clips?",
+        "answer": "Episode and clip links from bluTV both resolve into download options, provided the page is publicly viewable."
       },
       {
-        "question": "Is Blutv Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Blutv Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Are MP3 versions offered for bluTV content?",
+        "answer": "Audio tracks surface as MP3-labelled rows when the source provides them; if a show has no separate audio stream, only video variants appear."
       },
       {
-        "question": "Do I need to create an account or sign up to use Blutv Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Blutv Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Blutv Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why would a bluTV lookup fail?",
+        "answer": "Subscription-gated episodes and region-locked titles cannot be read, so the tool returns a clear inline explanation instead of a list of renditions."
       },
       {
         "question": "Are bluTV links resolved on my device?",
@@ -2883,20 +2854,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Brevo API Key Tester do?",
-        "answer": "Brevo API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the Brevo tester automatically hit the send-email endpoint?",
+        "answer": "Brevo is not a preset: the page opens on Custom Endpoint Address, so you paste whichever Brevo API URL you want probed and run the diagnostic against it."
       },
       {
-        "question": "Is Brevo API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Brevo API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the tester authenticate the Brevo request?",
+        "answer": "The key you paste is sent as an Authorization Bearer header on the GET or POST probe - the tester does not add Brevo's api-key header style."
       },
       {
-        "question": "Do I need to create an account or sign up to use Brevo API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Brevo API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Brevo API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What counts as a passing result for a Brevo key?",
+        "answer": "Only an HTTP 200 or 201 response shows the green valid-key state; any other status prints the code and a short server message instead."
       },
       {
         "question": "Does calling SopKit's Brevo tester expose my API key to anyone else?",
@@ -3110,20 +3077,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Buzzfeed Video Downloader do?",
-        "answer": "Buzzfeed Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can Tasty recipe videos be saved with this tool?",
+        "answer": "It pulls MP4 variants from BuzzFeed video pages and Tasty posts alike, based on the link you paste."
       },
       {
-        "question": "Is Buzzfeed Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Buzzfeed Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What do the BuzzFeed quality choices include besides resolution?",
+        "answer": "Each quality choice lists its file size so you can trim storage use, and audio-only results show a music note on their row."
       },
       {
-        "question": "Do I need to create an account or sign up to use Buzzfeed Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Buzzfeed Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Buzzfeed Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does a BuzzFeed video sometimes fail to resolve?",
+        "answer": "If the page no longer hosts the clip, or the URL points at an article without video, an inline error appears and a direct video page link is the better retry."
       },
       {
         "question": "What does SopKit do with the BuzzFeed link I paste?",
@@ -3228,20 +3191,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Capcut Video Downloader do?",
-        "answer": "Capcut Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What can I do with a CapCut template file once it downloads?",
+        "answer": "The file opens in a new tab, ready to re-import into an editor so you can study or reuse the template's assets."
       },
       {
-        "question": "Is Capcut Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Capcut Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why do some CapCut template links come back with an error?",
+        "answer": "Failed lookups suggest copying a fresh share link; template links expire or get delisted, and a new share link from the app usually fixes it."
       },
       {
-        "question": "Do I need to create an account or sign up to use Capcut Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Capcut Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Capcut Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the CapCut preview credit the template's author?",
+        "answer": "The preview card shows the template thumbnail, title, runtime and author before you pick a rendition."
       },
       {
         "question": "Is the CapCut file fetched through SopKit's servers?",
@@ -3634,20 +3593,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Chingari Video Downloader do?",
-        "answer": "Chingari Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the Chingari preview show before I download?",
+        "answer": "The result card previews the clip's thumbnail, caption-style title and creator, with runtime and per-row file sizes for each variant."
       },
       {
-        "question": "Is Chingari Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Chingari Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I grab every video from a Chingari profile at once?",
+        "answer": "The tool resolves one link per request, so paste each video's share link individually to build up your collection."
       },
       {
-        "question": "Do I need to create an account or sign up to use Chingari Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Chingari Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Chingari Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does a Chingari link fail to resolve?",
+        "answer": "Removed clips, and links copied from the app's feed instead of a video's share option, typically fail; the inline error flags links that cannot be resolved."
       },
       {
         "question": "Does SopKit retain the Chingari links I check?",
@@ -3751,20 +3706,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Clearbit API Key Tester do?",
-        "answer": "Clearbit API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which URL should I probe to test a Clearbit key?",
+        "answer": "Clearbit is not hardwired, so the endpoint is up to you: the Custom Endpoint Address option is selected on load, along with GET or POST as the method."
       },
       {
-        "question": "Is Clearbit API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Clearbit API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "My Clearbit request fails instantly - could the key still be valid?",
+        "answer": "Yes. A blocked cross-origin request is reported with a CORS hint rather than an authorization failure, so check that branch of the console before assuming the credential is dead."
       },
       {
-        "question": "Do I need to create an account or sign up to use Clearbit API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Clearbit API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Clearbit API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How long is the timeout on a Clearbit diagnostic?",
+        "answer": "Eight seconds. If the endpoint has not answered by then the request is aborted and the console reports a timeout instead of leaving the panel hanging."
       },
       {
         "question": "What does the tool do with my Clearbit key when I press Run Connection Diagnostics?",
@@ -3869,20 +3820,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Code Formatter do?",
-        "answer": "Code Formatter lets you format code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which languages can the Code Formatter handle in one editor?",
+        "answer": "JSON, XML, SQL, HTML, CSS and JavaScript. JSON and XML are parsed and re-serialized, HTML, CSS and JS go through js-beautify, and SQL uses sql-formatter."
       },
       {
-        "question": "Is Code Formatter really free? Are there any hidden charges?",
-        "answer": "Yes, Code Formatter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict formatters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What indentation and SQL styling options are available?",
+        "answer": "Indent width can be 2, 4 or 8 spaces. In SQL mode you also choose from seven dialects, including MySQL, PostgreSQL and T-SQL, and render keywords upper, lower or preserved."
       },
       {
-        "question": "Do I need to create an account or sign up to use Code Formatter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start formating your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Code Formatter on mobile devices or tablets?",
-        "answer": "Yes, Code Formatter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the formatter do with an invalid JSON or XML document?",
+        "answer": "It shows the parse error instead of output - an XML parser error for malformed markup or the JSON message for bad syntax - so you can fix the input and watch the result appear."
       },
       {
         "question": "Where does my code go when I press Format?",
@@ -3928,20 +3875,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Cohere API Key Tester do?",
-        "answer": "Cohere API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Cohere endpoint does the page test by default?",
+        "answer": "None - Cohere has no preset. The provider dropdown starts on Custom Endpoint Address, and you enter the Cohere API URL you want the probe to hit."
       },
       {
-        "question": "Is Cohere API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Cohere API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the Cohere check need a model name or organization ID?",
+        "answer": "No extra fields. The tester only takes an API URL and the key; any Cohere-specific parameters belong in the URL itself, since there is no query or body editor."
       },
       {
-        "question": "Do I need to create an account or sign up to use Cohere API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Cohere API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Cohere API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the Cohere probe send a request body with POST?",
+        "answer": "No. A POST is sent without a body - the request carries only the Authorization Bearer header built from your key - so use an endpoint that tolerates an empty payload."
       },
       {
         "question": "Is my Cohere key kept anywhere after the check finishes?",
@@ -4912,20 +4855,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Coresignal API Key Tester do?",
-        "answer": "Coresignal API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I check a Coresignal key when the companies endpoint is not preset?",
+        "answer": "The tester opens in custom mode: enter the Coresignal API URL you use, paste the key into the masked field and run the diagnostic."
       },
       {
-        "question": "Is Coresignal API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Coresignal API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the green valid-key banner actually confirm?",
+        "answer": "That the URL you probed answered 200 or 201 with your key attached. It confirms authorization for that request, not that every Coresignal scope on the key works."
       },
       {
-        "question": "Do I need to create an account or sign up to use Coresignal API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Coresignal API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Coresignal API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How long does the Coresignal probe wait before giving up?",
+        "answer": "Eight seconds, after which the request is aborted and the console reports a connection timeout with no status code recorded."
       },
       {
         "question": "Where is my Coresignal key sent while the diagnostics run?",
@@ -5194,20 +5133,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Crontab Expression Generator do?",
-        "answer": "Crontab Expression Generator lets you generate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I translate an existing cron expression with this tool?",
+        "answer": "Paste any 5-part expression into the expression field - the minute, hour, day, month and weekday selectors sync to its values, and a plain-English translation appears below."
       },
       {
-        "question": "Is Crontab Expression Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Crontab Expression Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which presets does the generator offer?",
+        "answer": "Six: Every Minute, Every Hour, Every Midnight, Every Sunday at Midnight, First of Every Month, and Every Weekday at 9 AM. Clicking one loads it into the field."
       },
       {
-        "question": "Do I need to create an account or sign up to use Crontab Expression Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Crontab Expression Generator on mobile devices or tablets?",
-        "answer": "Yes, Crontab Expression Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the human-readable translation add beyond the raw expression?",
+        "answer": "It spells out each field in plain English - for example weekdays at 9 AM - which makes review faster than decoding the five star-and-number fields yourself."
       },
       {
         "question": "Is the cron schedule I build on this page recorded anywhere?",
@@ -5253,20 +5188,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Crunchbase API Key Tester do?",
-        "answer": "Crunchbase API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does Crunchbase get its organizations endpoint probed automatically?",
+        "answer": "No - the page starts on Custom Endpoint Address because Crunchbase is not preset. You decide which Crunchbase API URL the Bearer-authenticated GET or POST hits."
       },
       {
-        "question": "Is Crunchbase API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Crunchbase API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can a valid but rate-limited Crunchbase key still fail the check?",
+        "answer": "Yes: any status outside 200 or 201 shows as a failure, so an HTTP 429 or 403 is reported with its code and message even if the key itself is genuine."
       },
       {
-        "question": "Do I need to create an account or sign up to use Crunchbase API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Crunchbase API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Crunchbase API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How long before an unanswered Crunchbase request is abandoned?",
+        "answer": "Eight seconds. Requests that exceed it are aborted and reported as timeouts rather than being left to run."
       },
       {
         "question": "Does SopKit log the Crunchbase key I test on this page?",
@@ -5312,20 +5243,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CSS Beautifier do?",
-        "answer": "CSS Beautifier lets you format code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the CSS Beautifier decide where to break lines?",
+        "answer": "It is a heuristic reformatter: it inserts a break after each opening brace and semicolon and puts closing braces on their own line, then indents the declarations inside."
       },
       {
-        "question": "Is CSS Beautifier really free? Are there any hidden charges?",
-        "answer": "Yes, CSS Beautifier is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict formatters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is the formatted CSS produced as I type?",
+        "answer": "No - press Format to run it once. The read-only pane keeps that output static until you format again, which makes before-and-after comparison easier."
       },
       {
-        "question": "Do I need to create an account or sign up to use CSS Beautifier?",
-        "answer": "No account, signup, or email is required. Simply open the page and start formating your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CSS Beautifier on mobile devices or tablets?",
-        "answer": "Yes, CSS Beautifier works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Should I trust the beautifier's output in production?",
+        "answer": "The footer marks it as heuristic, so review the indented stylesheet and test it before dropping it into a production build."
       },
       {
         "question": "Does my stylesheet leave my machine when I beautify it?",
@@ -5371,20 +5298,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CSS Border Radius Generator do?",
-        "answer": "CSS Border Radius Generator lets you generate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I set each corner of the shape independently?",
+        "answer": "Yes - four sliders control top-left, top-right, bottom-right and bottom-left radii independently, and the live preview square reshapes as you drag."
       },
       {
-        "question": "Is CSS Border Radius Generator really free? Are there any hidden charges?",
-        "answer": "Yes, CSS Border Radius Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do the radius sliders work in pixels or percentages?",
+        "answer": "A unit toggle switches all four sliders between pixels (0-150) and percentages (0-100), so corners can scale with the element's box instead of using fixed lengths."
       },
       {
-        "question": "Do I need to create an account or sign up to use CSS Border Radius Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CSS Border Radius Generator on mobile devices or tablets?",
-        "answer": "Yes, CSS Border Radius Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What exactly does the generated CSS include?",
+        "answer": "A border-radius declaration with -webkit- and -moz- prefixed duplicates, plus a Tailwind arbitrary class like rounded-[16px_16px_16px_16px] for utility-based projects."
       },
       {
         "question": "Do the corner values I dial in get uploaded for processing?",
@@ -5430,20 +5353,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CSS Gradient Generator do?",
-        "answer": "CSS Gradient Generator lets you generate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which gradient types and angle control does the tool support?",
+        "answer": "Linear, radial and conic. An angle slider from 0 to 360 degrees appears for linear and conic gradients, and switching type keeps your color stops."
       },
       {
-        "question": "Is CSS Gradient Generator really free? Are there any hidden charges?",
-        "answer": "Yes, CSS Gradient Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How many color stops can a gradient have?",
+        "answer": "Between two and eight. Each stop pairs a color picker with a 0-100 percent position slider, and removing a stop is blocked below the two-stop minimum."
       },
       {
-        "question": "Do I need to create an account or sign up to use CSS Gradient Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CSS Gradient Generator on mobile devices or tablets?",
-        "answer": "Yes, CSS Gradient Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the generator export anything besides the background declaration?",
+        "answer": "Yes - alongside the background declaration it produces a Tailwind gradient class built from the from and to colours, so the same gradient works in utility markup."
       },
       {
         "question": "What happens to the colors I pick in the gradient builder?",
@@ -5488,20 +5407,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CSS Minifier do?",
-        "answer": "CSS Minifier lets you compress code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the CSS Minifier strip from a stylesheet?",
+        "answer": "Block and line comments are removed first, then runs of spaces, tabs and newlines collapse to a single space, and the final string is trimmed."
       },
       {
-        "question": "Is CSS Minifier really free? Are there any hidden charges?",
-        "answer": "Yes, CSS Minifier is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the minifier run automatically or on demand?",
+        "answer": "On demand. Nothing changes until you press Minify, and the compressed result lands in a read-only box for comparison against the original."
       },
       {
-        "question": "Do I need to create an account or sign up to use CSS Minifier?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CSS Minifier on mobile devices or tablets?",
-        "answer": "Yes, CSS Minifier works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does it optimize selectors or values while minifying?",
+        "answer": "No - selectors, values, at-rules and vendor prefixes are left as written. It removes comments and whitespace only, so expect byte savings rather than optimization."
       },
       {
         "question": "Can I minify a client stylesheet here without it being stored on your servers?",
@@ -5547,20 +5462,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CSS Shadow Generator do?",
-        "answer": "CSS Shadow Generator lets you generate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which values can I tune for a shadow?",
+        "answer": "Horizontal and vertical offset, blur radius and spread each get their own slider, while opacity from 0 to 100 percent renders as an rgba color with two decimals."
       },
       {
-        "question": "Is CSS Shadow Generator really free? Are there any hidden charges?",
-        "answer": "Yes, CSS Shadow Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I create an inner shadow for a pressed or neumorphic look?",
+        "answer": "Flip the inset switch and the effect becomes an inner shadow; the Neumorphic inset preset demonstrates one worked combination of the sliders."
       },
       {
-        "question": "Do I need to create an account or sign up to use CSS Shadow Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CSS Shadow Generator on mobile devices or tablets?",
-        "answer": "Yes, CSS Shadow Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What code does the shadow generator output?",
+        "answer": "A box-shadow declaration with your values plus a Tailwind arbitrary class of the shadow-[...] form, ready for CSS or utility-based markup."
       },
       {
         "question": "Are the shadow settings I tweak shared or tracked?",
@@ -5605,20 +5516,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CSV to JSON Converter do?",
-        "answer": "CSV to JSON Converter lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where do the JSON property names come from?",
+        "answer": "The first CSV row is treated as the header and supplies the property names; every following row becomes an object in the resulting JSON array."
       },
       {
-        "question": "Is CSV to JSON Converter really free? Are there any hidden charges?",
-        "answer": "Yes, CSV to JSON Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are values typed in the generated JSON?",
+        "answer": "Everything is emitted as a string, so leading zeros, phone numbers and long IDs survive intact instead of being converted to numbers."
       },
       {
-        "question": "Do I need to create an account or sign up to use CSV to JSON Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CSV to JSON Converter on mobile devices or tablets?",
-        "answer": "Yes, CSV to JSON Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will a CSV field containing a comma survive the conversion?",
+        "answer": "Quoted fields with commas are split correctly by the parser, so they stay one value; unquoted commas are treated as column separators."
       },
       {
         "question": "Is my CSV data, including customer rows, uploaded when converted?",
@@ -5833,20 +5740,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Dailymotion Video Downloader do?",
-        "answer": "Dailymotion Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Dailymotion link formats pass validation?",
+        "answer": "Full dailymotion.com page URLs and dai.ly short links are accepted; other domains are rejected with a specific validation message."
       },
       {
-        "question": "Is Dailymotion Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Dailymotion Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What quality range does Dailymotion expose to the resolver?",
+        "answer": "Quality options range from SD up to Full HD where the source offers them, and every rendition is listed as its own row."
       },
       {
-        "question": "Do I need to create an account or sign up to use Dailymotion Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Dailymotion Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Dailymotion Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is a separate audio track available for Dailymotion videos?",
+        "answer": "Audio streams appear as their own rows with a music-note button whenever the video has a distinct audio rendition."
       },
       {
         "question": "Where does the Dailymotion lookup run?",
@@ -5951,20 +5854,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Data Axle API Key Tester do?",
-        "answer": "Data Axle API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which endpoint does the Data Axle page probe by default?",
+        "answer": "Custom Endpoint Address - Data Axle has no hardwired preset, so you enter the exact API URL you want tested before running diagnostics."
       },
       {
-        "question": "Is Data Axle API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Data Axle API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens with a Data Axle key that has expired?",
+        "answer": "The endpoint typically answers 401 or 403, which lands in the failure card with the numeric status and a short server message - only 200 or 201 counts as valid."
       },
       {
-        "question": "Do I need to create an account or sign up to use Data Axle API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Data Axle API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Data Axle API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I run the Data Axle check as a POST?",
+        "answer": "Yes. The custom probe supports GET and POST; both send your key as an Authorization Bearer header, and neither sends a request body."
       },
       {
         "question": "After the Data Axle check, does anything about my key linger?",
@@ -6128,20 +6027,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Datanyze API Key Tester do?",
-        "answer": "Datanyze API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does Datanyze's companies endpoint run by default?",
+        "answer": "No. Datanyze is one of the custom-only providers: the dropdown starts on Custom Endpoint Address and the URL field is yours to fill."
       },
       {
-        "question": "Is Datanyze API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Datanyze API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is the Datanyze key transmitted?",
+        "answer": "As an Authorization Bearer header on a GET or POST request issued straight to the Datanyze URL you provided. SopKit servers are not involved."
       },
       {
-        "question": "Do I need to create an account or sign up to use Datanyze API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Datanyze API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Datanyze API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens when the Datanyze endpoint rejects a browser request?",
+        "answer": "The console separates failure types: an authorization rejection shows the status code and reply text, while a cross-origin block is called out with a CORS hint."
       },
       {
         "question": "What happens to the Datanyze key that passes through this page?",
@@ -6400,20 +6295,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does DeepSeek API Key Tester do?",
-        "answer": "DeepSeek API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which DeepSeek endpoint does the preset probe?",
+        "answer": "The DeepSeek preset sends a GET to https://api.deepseek.com/models with your key in an Authorization Bearer header, so no URL typing is needed."
       },
       {
-        "question": "Is DeepSeek API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, DeepSeek API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the DeepSeek test check balance or quota as well?",
+        "answer": "No - it verifies authorization against the models listing only. Billing state and per-model access limits are not part of the verdict."
       },
       {
-        "question": "Do I need to create an account or sign up to use DeepSeek API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use DeepSeek API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, DeepSeek API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How quickly can I check a DeepSeek key?",
+        "answer": "Paste the key and run the diagnostics: the preset is preloaded, a 200 or 201 response validates it, and a refusal shows DeepSeek's error text in a short excerpt."
       },
       {
         "question": "Is my DeepSeek key stored after the models check completes?",
@@ -6459,20 +6350,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Demandbase API Key Tester do?",
-        "answer": "Demandbase API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is Demandbase one of the preset providers?",
+        "answer": "No - it loads in custom mode, with the probe URL entirely under your control. Provide the Demandbase API route you want checked."
       },
       {
-        "question": "Is Demandbase API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Demandbase API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which method should I choose for a Demandbase check?",
+        "answer": "Whichever the resource expects: the selector covers GET and POST, and the Authorization Bearer header is added automatically either way."
       },
       {
-        "question": "Do I need to create an account or sign up to use Demandbase API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Demandbase API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Demandbase API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why might a Demandbase test never complete?",
+        "answer": "An endpoint that holds the connection open. Those requests are abandoned after 8 seconds and reported as timeouts rather than waiting indefinitely."
       },
       {
         "question": "Is the Demandbase key I paste visible to SopKit at any point?",
@@ -6966,20 +6853,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Douyin Video Downloader do?",
-        "answer": "Douyin Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Do Douyin share links work in this downloader?",
+        "answer": "The domain filter accepts only links containing douyin.com, so use the full share URL from the app instead of pasting text or a screenshot."
       },
       {
-        "question": "Is Douyin Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Douyin Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the result card show the Douyin post caption?",
+        "answer": "Yes, the preview shows the post cover, caption title, duration and author before you choose a rendition."
       },
       {
-        "question": "Do I need to create an account or sign up to use Douyin Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Douyin Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Douyin Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will a Douyin download keep the post's original resolution?",
+        "answer": "Quality rows mirror the renditions the resolver reports, so the best available file is whatever the post itself provides."
       },
       {
         "question": "Is my Douyin link stored after the options load?",
@@ -7025,20 +6908,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Downloaders do?",
-        "answer": "Downloaders lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is this page the hub for SopKit's whole downloader family?",
+        "answer": "Yes — it is the landing hub for the downloader family with the universal resolver wired in, and the platform-specific savers spin off from this same base flow."
       },
       {
-        "question": "Is Downloaders really free? Are there any hidden charges?",
-        "answer": "Yes, Downloaders is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which link should I paste into the downloader hub?",
+        "answer": "Any supported platform link works in the single input field; the resolver inspects it and returns the media it finds without a pre-selection step."
       },
       {
-        "question": "Do I need to create an account or sign up to use Downloaders?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Downloaders on mobile devices or tablets?",
-        "answer": "Yes, Downloaders works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When should I use a platform-specific saver instead of this hub?",
+        "answer": "The hub covers anything the resolver recognises; a dedicated saver adds that platform's own domain check, which is a safer fit when you know the source."
       },
       {
         "question": "Does this downloader directory track which platforms I use?",
@@ -7610,20 +7489,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Enrich API Key Tester do?",
-        "answer": "Enrich API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do I need before testing an Enrich key here?",
+        "answer": "Two things: the API URL to probe and the key itself. Enrich has no preset, so the custom endpoint selection is waiting when the page opens."
       },
       {
-        "question": "Is Enrich API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Enrich API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does a failed Enrich check show?",
+        "answer": "The failure panel quotes up to 160 characters of whatever the server returned, alongside the HTTP status code, so you can tell a bad key from a bad URL."
       },
       {
-        "question": "Do I need to create an account or sign up to use Enrich API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Enrich API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Enrich API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the Enrich tester call any SopKit server?",
+        "answer": "No - the request leaves your machine directly for the Enrich URL, SopKit is not in the path, and the key is held only on the page while you use it."
       },
       {
         "question": "How long does the Enrich key stay around after I test it?",
@@ -7728,20 +7603,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Espn Video Downloader do?",
-        "answer": "Espn Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What ESPN content can I save — full games or highlights?",
+        "answer": "It resolves ESPN video pages into a downloadable highlight list, so it is aimed at highlights and analysis segments rather than full live games."
       },
       {
-        "question": "Is Espn Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Espn Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the ESPN result credit the presenter of a clip?",
+        "answer": "The preview card shows the thumbnail, title, runtime and byline before you pick a quality."
       },
       {
-        "question": "Do I need to create an account or sign up to use Espn Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Espn Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Espn Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why did an ESPN highlight fail to resolve?",
+        "answer": "Event pages rotate or remove clip URLs after the event; the inline retry prompt appears, and a link taken from the video's own page usually works better."
       },
       {
         "question": "What happens to the ESPN link while the highlight resolves?",
@@ -7958,20 +7829,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Facebook Story Downloader do?",
-        "answer": "Facebook Story Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Do I paste a story link or type a Facebook username?",
+        "answer": "This tool takes a username rather than a URL; type the handle and press View Stories to load the account's active story preview, with the leading @ stripped automatically."
       },
       {
-        "question": "Is Facebook Story Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Facebook Story Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How recent are the stories shown for a profile?",
+        "answer": "Only currently active stories are listed, each with its posting age; expired stories drop off, while Highlight collections are listed separately."
       },
       {
-        "question": "Do I need to create an account or sign up to use Facebook Story Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Facebook Story Downloader on mobile devices or tablets?",
-        "answer": "Yes, Facebook Story Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the preview tell photos apart from video stories?",
+        "answer": "Each story entry carries its media type alongside the posting age, size and runtime, so image and video stories are distinguishable."
       },
       {
         "question": "Does typing a username send it to Facebook or to SopKit?",
@@ -8017,20 +7884,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Facebook Video Downloader do?",
-        "answer": "Facebook Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Facebook link formats does the validator accept?",
+        "answer": "facebook.com, fb.watch and fb.com URLs all pass, and a single field covers video posts, Reels and story links."
       },
       {
-        "question": "Is Facebook Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Facebook Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I copy the right link from the Facebook app?",
+        "answer": "Use the post's share menu and choose Copy Link; the guide under the tool walks through those steps if the share sheet hides the option."
       },
       {
-        "question": "Do I need to create an account or sign up to use Facebook Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Facebook Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Facebook Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "In what order are the Facebook quality options listed?",
+        "answer": "The highest reported resolution comes first, and each option lists its file size so oversized files are easy to skip."
       },
       {
         "question": "Is the Facebook video pulled through SopKit's servers?",
@@ -8359,20 +8222,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Facebook Video Saver do?",
-        "answer": "Facebook Video Saver lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is this saver different from the full Facebook video downloader?",
+        "answer": "It runs the same validator and resolver in a streamlined single-field layout, so it suits routine saves rather than extra browsing features."
       },
       {
-        "question": "Is Facebook Video Saver really free? Are there any hidden charges?",
-        "answer": "Yes, Facebook Video Saver is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the saver handle fb.watch short links?",
+        "answer": "Standard post links, fb.watch shorts and fb.com URLs are accepted by the same validator."
       },
       {
-        "question": "Do I need to create an account or sign up to use Facebook Video Saver?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Facebook Video Saver on mobile devices or tablets?",
-        "answer": "Yes, Facebook Video Saver works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if the Facebook video sits in a private group?",
+        "answer": "Private group content cannot be read by the resolver; only publicly visible posts return a preview and quality list."
       },
       {
         "question": "Do you keep a log of the Facebook links I save?",
@@ -8476,20 +8335,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Febspot Video Downloader do?",
-        "answer": "Febspot Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do the three steps of a Febspot download involve?",
+        "answer": "Paste the clip URL, review the media variants the resolver returns, then pick a quality to open the file in a separate tab."
       },
       {
-        "question": "Is Febspot Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Febspot Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the Febspot result show file sizes before I commit?",
+        "answer": "Quality entries show reported sizes for each variant, so you can choose a lightweight file for sharing."
       },
       {
-        "question": "Do I need to create an account or sign up to use Febspot Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Febspot Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Febspot Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does a Febspot clip return nothing?",
+        "answer": "Removed or renamed clips stop resolving; the inline error suggests checking the link, so copy it again from the live clip page."
       },
       {
         "question": "Where is my Febspot link processed when I hit Download?",
@@ -8535,20 +8390,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Flickr Video Downloader do?",
-        "answer": "Flickr Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I grab both photos and videos from a Flickr page?",
+        "answer": "The resolver accepts Flickr photo and video page URLs and returns media options, with original-resolution variants listed beside smaller renditions."
       },
       {
-        "question": "Is Flickr Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Flickr Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I know which Flickr rendition is the original?",
+        "answer": "Original-resolution options sit beside the reduced renditions when the page exposes them, and each row reports its size for comparison."
       },
       {
-        "question": "Do I need to create an account or sign up to use Flickr Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Flickr Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Flickr Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do the owner's privacy settings affect what resolves?",
+        "answer": "Yes — only publicly viewable Flickr items resolve; private and friends-only photos and videos stay out of the resolver's reach."
       },
       {
         "question": "Does SopKit store the Flickr page I look up?",
@@ -9006,20 +8857,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Freshdesk API Key Tester do?",
-        "answer": "Freshdesk API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I point the Freshdesk check at any API path?",
+        "answer": "Yes - the page defaults to the custom endpoint preset, so you can probe tickets, contacts or any other Freshdesk path you choose rather than a fixed URL."
       },
       {
-        "question": "Is Freshdesk API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Freshdesk API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is a 401 the only possible failure for a Freshdesk key?",
+        "answer": "No - any response other than 200 or 201 fails the check and prints the status. A 403, 429 or even a 500 from the endpoint all land in the failure card."
       },
       {
-        "question": "Do I need to create an account or sign up to use Freshdesk API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Freshdesk API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Freshdesk API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How long is the Freshdesk credential kept after I run a check?",
+        "answer": "It stays in the masked field's page state until the tab is reloaded or closed; it is never written to storage, so a refresh clears it."
       },
       {
         "question": "Does testing a Freshdesk key here leave anything behind on SopKit?",
@@ -9124,20 +8971,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does FullContact API Key Tester do?",
-        "answer": "FullContact API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which FullContact endpoint does the tester use if I do not specify one?",
+        "answer": "None - an empty URL cannot be probed, and the tool asks you to supply a valid test endpoint. FullContact opens in custom mode because it has no preset."
       },
       {
-        "question": "Is FullContact API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, FullContact API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the tester decide a FullContact key is authorized?",
+        "answer": "Purely by the HTTP reply: 200 or 201 marks the key valid and prints the code, while every other status is a failure with a response excerpt."
       },
       {
-        "question": "Do I need to create an account or sign up to use FullContact API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use FullContact API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, FullContact API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I test a FullContact key while batch jobs are queued?",
+        "answer": "Yes, but the probe is a single request to the endpoint you name. It does not inspect queue state, subscription tier or remaining credits."
       },
       {
         "question": "What is done with the FullContact key during the diagnostic call?",
@@ -9592,20 +9435,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Google Gemini API Key Tester do?",
-        "answer": "Google Gemini API Key Tester lets you calculate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the Gemini preset authenticate differently from the other presets?",
+        "answer": "Instead of an Authorization header, the key travels as a key= query parameter on Google's generativelanguage.googleapis.com v1beta models URL - the style Google's endpoints expect."
       },
       {
-        "question": "Is Google Gemini API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Google Gemini API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What exactly does the Gemini check confirm?",
+        "answer": "That Google's models listing answered 200 or 201 for your key. Access is decided by the HTTP status, and Google's error text appears as a short excerpt if it is denied."
       },
       {
-        "question": "Do I need to create an account or sign up to use Google Gemini API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Google Gemini API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Google Gemini API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the Gemini tester ask me to paste a project ID too?",
+        "answer": "No - one masked field takes the API key. The project association is carried by the key itself, and the probe URL is fixed by the preset."
       },
       {
         "question": "Where does my Gemini key go when this tester checks it?",
@@ -9828,20 +9667,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Groq API Key Tester do?",
-        "answer": "Groq API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Groq URL does the preset hit?",
+        "answer": "https://api.groq.com/openai/v1/models - Groq's OpenAI-compatible models listing - with your key sent as an Authorization Bearer header."
       },
       {
-        "question": "Is Groq API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Groq API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What makes the Groq probe different from the custom-endpoint flow?",
+        "answer": "The Groq preset needs no configuration: paste a key and run it. The console still sorts results into success, authorization failure, timeout and CORS trouble states."
       },
       {
-        "question": "Do I need to create an account or sign up to use Groq API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Groq API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Groq API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I use the Groq preset to test a key from another OpenAI-compatible provider?",
+        "answer": "The preset points specifically at api.groq.com, so no - switch the dropdown to Custom Endpoint Address for any other host."
       },
       {
         "question": "Does SopKit receive the Groq key I paste during a test?",
@@ -10334,20 +10169,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does HG Insights API Key Tester do?",
-        "answer": "HG Insights API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does HG Insights have a built-in endpoint in this tester?",
+        "answer": "No. There is no hardwired endpoint for HG Insights, so the custom option is preselected and you supply the exact API URL to check."
       },
       {
-        "question": "Is HG Insights API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, HG Insights API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How should I interpret a pass on an HG Insights URL I chose?",
+        "answer": "As authorization for that one request: HTTP 200 or 201 means the URL answered with your key attached. It does not audit every scope the credential may hold."
       },
       {
-        "question": "Do I need to create an account or sign up to use HG Insights API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use HG Insights API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, HG Insights API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if the HG Insights host never replies?",
+        "answer": "The request is cut off at the 8-second mark and the console reports a timeout, keeping the panel responsive instead of waiting on a dead host."
       },
       {
         "question": "Is my HG Insights key retained by SopKit after a verification run?",
@@ -10679,20 +10510,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does HTML Beautifier do?",
-        "answer": "HTML Beautifier lets you format code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the HTML Beautifier reformat nested markup?",
+        "answer": "It inserts line breaks between adjacent tags and puts a leading newline before opening tags, so nested elements end up one per line in the read-only output pane."
       },
       {
-        "question": "Is HTML Beautifier really free? Are there any hidden charges?",
-        "answer": "Yes, HTML Beautifier is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict formatters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can it handle a full HTML document with doctype and head?",
+        "answer": "Yes - fragments and complete documents are both accepted. Formatting runs on click and the result lands in the output pane for comparison with your original."
       },
       {
-        "question": "Do I need to create an account or sign up to use HTML Beautifier?",
-        "answer": "No account, signup, or email is required. Simply open the page and start formating your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use HTML Beautifier on mobile devices or tablets?",
-        "answer": "Yes, HTML Beautifier works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the beautified markup guaranteed valid?",
+        "answer": "No - the formatter is heuristic and only adjusts spacing. The card recommends checking its output before deploying the markup."
       },
       {
         "question": "Does the HTML I paste for formatting get saved or inspected?",
@@ -10737,20 +10564,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does HTML Decoder do?",
-        "answer": "HTML Decoder lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which kinds of HTML entities can the decoder resolve?",
+        "answer": "Named references such as &amp;, &lt; and &nbsp;, plus decimal and hexadecimal numeric references like &#39; and &#x27;, are all converted back to real characters."
       },
       {
-        "question": "Is HTML Decoder really free? Are there any hidden charges?",
-        "answer": "Yes, HTML Decoder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the decoder resolve entities under the hood?",
+        "answer": "The browser's own entity table: the input is rendered as text and the resulting value is read back, so standard named references resolve without a hardcoded list."
       },
       {
-        "question": "Do I need to create an account or sign up to use HTML Decoder?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use HTML Decoder on mobile devices or tablets?",
-        "answer": "Yes, HTML Decoder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When would I use the decoder instead of the entity encoder?",
+        "answer": "When you are staring at escaped markup - email templates, CMS exports or scraped snippets full of &amp; and &#39; - and you need the readable text back."
       },
       {
         "question": "Is it safe to decode entities from an internal email or CMS export here?",
@@ -10795,20 +10618,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does HTML Encoder do?",
-        "answer": "HTML Encoder lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which characters does the encoder escape?",
+        "answer": "Ampersands, angle brackets and double quotes become entities. Single quotes are deliberately left untouched so existing attribute style stays readable."
       },
       {
-        "question": "Is HTML Encoder really free? Are there any hidden charges?",
-        "answer": "Yes, HTML Encoder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the encoder convert non-ASCII letters or emoji too?",
+        "answer": "No - only the four reserved characters are transformed, so accented letters and emoji pass through unchanged."
       },
       {
-        "question": "Do I need to create an account or sign up to use HTML Encoder?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use HTML Encoder on mobile devices or tablets?",
-        "answer": "Yes, HTML Encoder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where would I use the encoded output?",
+        "answer": "For embedding raw text inside markup - code samples, comments or plain text - so characters that would be parsed as tags or quotes render literally instead."
       },
       {
         "question": "Where does the text I encode with this tool go?",
@@ -10854,20 +10673,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does HTML Entity Encoder/Decoder do?",
-        "answer": "HTML Entity Encoder/Decoder lets you encode/decode code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do named and numeric modes differ?",
+        "answer": "Named mode maps special characters to entities such as &amp;, &lt; and &#x2F;, while numeric mode emits decimal references like &#38;. Both encode and decode directions are supported."
       },
       {
-        "question": "Is HTML Entity Encoder/Decoder really free? Are there any hidden charges?",
-        "answer": "Yes, HTML Entity Encoder/Decoder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict codecs after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the conversion update while I type?",
+        "answer": "Yes - it re-runs on every keystroke and whenever you change the mode or entity type. You can copy the result or save it as encoded.html or decoded.html."
       },
       {
-        "question": "Do I need to create an account or sign up to use HTML Entity Encoder/Decoder?",
-        "answer": "No account, signup, or email is required. Simply open the page and start encode/decodeing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use HTML Entity Encoder/Decoder on mobile devices or tablets?",
-        "answer": "Yes, HTML Entity Encoder/Decoder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does the included sample demonstrate what encoding does?",
+        "answer": "It contains a script tag. Encoding it into entities shows how markup is neutralized instead of being interpreted when the text is placed into a page."
       },
       {
         "question": "Does encoding or decoding entities send my content anywhere?",
@@ -11000,20 +10815,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does HTML to XML Entities Converter do?",
-        "answer": "HTML to XML Entities Converter lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which characters does Escape mode convert?",
+        "answer": "The five XML-reserved characters: ampersand, the two angle brackets, and single and double quotes - each becomes &amp;, &lt;, &gt;, &apos; or &quot;."
       },
       {
-        "question": "Is HTML to XML Entities Converter really free? Are there any hidden charges?",
-        "answer": "Yes, HTML to XML Entities Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I reverse an escaped document?",
+        "answer": "Switch the Action dropdown to Unescape. The textarea re-processes immediately and &amp;, &lt;, &gt;, &quot; and &apos; are turned back into symbols."
       },
       {
-        "question": "Do I need to create an account or sign up to use HTML to XML Entities Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use HTML to XML Entities Converter on mobile devices or tablets?",
-        "answer": "Yes, HTML to XML Entities Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What can I download from this converter?",
+        "answer": "The escaped output as escaped_xml.txt or the unescaped result as unescaped_html.txt. Clear empties both the source textarea and the output panel."
       },
       {
         "question": "Are the XML snippets I escape processed on a server?",
@@ -11114,20 +10925,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does HubSpot API Key Tester do?",
-        "answer": "HubSpot API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I test a HubSpot private-app token with this page?",
+        "answer": "Yes, as long as the endpoint you choose accepts it - the value you paste is sent as an Authorization Bearer header, which matches how private-app tokens are used."
       },
       {
-        "question": "Is HubSpot API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, HubSpot API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which HubSpot route does the tester call if I leave the URL empty?",
+        "answer": "None - HubSpot is not preset, so the URL field must be filled. The page defaults to Custom Endpoint Address and stops with an error if the endpoint is missing."
       },
       {
-        "question": "Do I need to create an account or sign up to use HubSpot API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use HubSpot API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, HubSpot API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does the status line under the console stay red on some successful checks?",
+        "answer": "The status line highlights green only for HTTP 200, while the valid banner also accepts 201 - so a 201 check can succeed with the numeric code shown in the failure colour."
       },
       {
         "question": "What happens to my HubSpot key when I hit Run Connection Diagnostics?",
@@ -11408,20 +11215,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Ifunny Video Downloader do?",
-        "answer": "Ifunny Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does iFunny downloader handle GIFs as well as videos?",
+        "answer": "It grabs meme videos and GIFs from iFunny feature links, with video rows and audio rows listed together in one list."
       },
       {
-        "question": "Is Ifunny Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Ifunny Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What caption information comes with an iFunny save?",
+        "answer": "The results card shows the thumbnail, caption title, length and author before you tap a row."
       },
       {
-        "question": "Do I need to create an account or sign up to use Ifunny Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Ifunny Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Ifunny Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I save several iFunny memes in a single pass?",
+        "answer": "Each feature link resolves one media item, so repeat the paste-and-save step for every meme you want to keep."
       },
       {
         "question": "Can the iFunny lookup be traced back to me?",
@@ -11467,20 +11270,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Instagram Highlights Saver do?",
-        "answer": "Instagram Highlights Saver lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I save a whole Instagram Highlight collection at once?",
+        "answer": "The Highlights grid lists each collection's cover, name and item count; open the one you want and save its items from the list inside."
       },
       {
-        "question": "Is Instagram Highlights Saver really free? Are there any hidden charges?",
-        "answer": "Yes, Instagram Highlights Saver is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do Highlights disappear like stories do?",
+        "answer": "No — Highlights are saved collections on a profile, so they remain available beyond the 24-hour story window as long as the account keeps them."
       },
       {
-        "question": "Do I need to create an account or sign up to use Instagram Highlights Saver?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Instagram Highlights Saver on mobile devices or tablets?",
-        "answer": "Yes, Instagram Highlights Saver works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the saver list active stories alongside Highlights?",
+        "answer": "Both appear: active stories with their age in hours, and Highlight collections with covers and item counts."
       },
       {
         "question": "What happens to the Instagram handle I type?",
@@ -12340,20 +12139,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Imdb Video Downloader do?",
-        "answer": "Imdb Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What IMDb media can I save — full movies or trailers?",
+        "answer": "It resolves IMDb trailer and clip pages into renditions, so it is designed for trailers and promotional clips rather than full-length features."
       },
       {
-        "question": "Is Imdb Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Imdb Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the IMDb preview show the poster before I pick a quality?",
+        "answer": "The preview card carries the poster thumbnail, title, runtime and channel ahead of the quality picker."
       },
       {
-        "question": "Do I need to create an account or sign up to use Imdb Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Imdb Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Imdb Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why would an IMDb trailer fail to resolve?",
+        "answer": "Region-restricted trailers and clips replaced by newer uploads may not resolve; an inline error appears, and another clip page can be tried."
       },
       {
         "question": "Is anything recorded when I look up an IMDb trailer?",
@@ -12399,20 +12194,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Imgur Video Downloader do?",
-        "answer": "Imgur Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Imgur link types can I paste?",
+        "answer": "Only imgur.com and i.imgur.com addresses pass the domain check; both gallery posts and direct media pages resolve into downloadable variants."
       },
       {
-        "question": "Is Imgur Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Imgur Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does one Imgur post list several renditions?",
+        "answer": "Imgur exposes multiple file sizes for the same upload; each rendition appears with its reported size so you can pick the one that fits."
       },
       {
-        "question": "Do I need to create an account or sign up to use Imgur Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Imgur Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Imgur Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the Imgur card name the uploader?",
+        "answer": "The preview card shows the item thumbnail, title and uploader handle."
       },
       {
         "question": "Does an Imgur lookup pass through outside services?",
@@ -12631,20 +12422,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Insta Reels Saver do?",
-        "answer": "Insta Reels Saver lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the saver name the song used in an Instagram Reel?",
+        "answer": "A music credit line surfaces the Reel's soundtrack name, and audio tracks can be downloaded separately from the same card."
       },
       {
-        "question": "Is Insta Reels Saver really free? Are there any hidden charges?",
-        "answer": "Yes, Insta Reels Saver is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do /p/ post links work in the Reels saver?",
+        "answer": "The validator accepts instagram.com/reel and /p/ links, so a Reel-style post URL resolves from the same field."
       },
       {
-        "question": "Do I need to create an account or sign up to use Insta Reels Saver?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Insta Reels Saver on mobile devices or tablets?",
-        "answer": "Yes, Insta Reels Saver works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How much of the Reel caption is shown in the preview?",
+        "answer": "The caption excerpt is trimmed to two lines to keep the card tidy while still identifying the clip."
       },
       {
         "question": "Where does the Reel URL go when I press Download?",
@@ -12811,20 +12598,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Instagram Downloader do?",
-        "answer": "Instagram Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the tool tell me what kind of Instagram link I pasted?",
+        "answer": "The result card shows the thumbnail, title, duration and the detected content type, whether the link pointed at a feed video, a Reel or a story."
       },
       {
-        "question": "Is Instagram Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Instagram Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I paste a profile URL instead of a post link?",
+        "answer": "No — the domain check keeps non-Instagram URLs and profile pages away from the resolver; use a link that points at a specific video, Reel or story."
       },
       {
-        "question": "Do I need to create an account or sign up to use Instagram Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Instagram Downloader on mobile devices or tablets?",
-        "answer": "Yes, Instagram Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What do the quality rows include for an Instagram video?",
+        "answer": "Each row reports a file size and flags audio variants, so you can pick a rendition or pull the audio by itself."
       },
       {
         "question": "Does the Instagram link I paste leave SopKit's control?",
@@ -12870,20 +12653,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Instagram Image Downloader do?",
-        "answer": "Instagram Image Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Do I need a profile URL to fetch an Instagram picture?",
+        "answer": "No — enter the username with or without the @ symbol and press Get DP; the field strips the @ automatically before the panel loads."
       },
       {
-        "question": "Is Instagram Image Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Instagram Image Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which picture sizes does the download list offer?",
+        "answer": "Three avatar renditions are listed: full resolution, high and medium, with a full-size preview rendered before you choose."
       },
       {
-        "question": "Do I need to create an account or sign up to use Instagram Image Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Instagram Image Downloader on mobile devices or tablets?",
-        "answer": "Yes, Instagram Image Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if I submit the form with the field empty?",
+        "answer": "An inline message prompts for a handle instead of sending a request, so nothing loads until a username is entered."
       },
       {
         "question": "Is the username I enter checked against Instagram's servers?",
@@ -12929,20 +12708,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Instagram Reel Downloader do?",
-        "answer": "Instagram Reel Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What if I paste an Instagram video link that is not a Reel?",
+        "answer": "Non-Reel Instagram URLs fail validation before any request goes out; re-copy the link from the Reel itself so the path contains /reel or /p/."
       },
       {
-        "question": "Is Instagram Reel Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Instagram Reel Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What metadata does the Reel result card include?",
+        "answer": "It shows the creator handle, duration and music track line, plus a caption excerpt capped at two lines."
       },
       {
-        "question": "Do I need to create an account or sign up to use Instagram Reel Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Instagram Reel Downloader on mobile devices or tablets?",
-        "answer": "Yes, Instagram Reel Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can it download a Reel from a private creator?",
+        "answer": "Private or follower-only accounts cannot be read, so only publicly viewable Reels resolve into downloadable rows."
       },
       {
         "question": "Which part of the Reel lookup runs on SopKit's side?",
@@ -12988,20 +12763,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Instagram Story Downloader do?",
-        "answer": "Instagram Story Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I load an account's Instagram stories?",
+        "answer": "Type the username — a leading @ is stripped automatically — and the tool renders a snapshot of the account's active stories, with a spinner until results arrive."
       },
       {
-        "question": "Is Instagram Story Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Instagram Story Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens to stories that have already expired?",
+        "answer": "Expired stories no longer appear in the snapshot, but Highlight collections, with their covers, names and item counts, are listed separately because they persist."
       },
       {
-        "question": "Do I need to create an account or sign up to use Instagram Story Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Instagram Story Downloader on mobile devices or tablets?",
-        "answer": "Yes, Instagram Story Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What details accompany each story entry?",
+        "answer": "Every row lists posting age, file size and clip length, so you can pick the story you want before saving."
       },
       {
         "question": "Does entering a username notify anyone on Instagram?",
@@ -13047,20 +12818,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Instagram Videos Downloader do?",
-        "answer": "Instagram Videos Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can this downloader handle longer IGTV-style uploads?",
+        "answer": "It works with feed videos, Reels and story links, including longer IGTV-style uploads in addition to short clips."
       },
       {
-        "question": "Is Instagram Videos Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Instagram Videos Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the preview card identify about the link I pasted?",
+        "answer": "The preview lists the thumbnail, title, runtime and detected source type, and the quality rows show file sizes for each rendition."
       },
       {
-        "question": "Do I need to create an account or sign up to use Instagram Videos Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Instagram Videos Downloader on mobile devices or tablets?",
-        "answer": "Yes, Instagram Videos Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When does the link guard reject a URL?",
+        "answer": "The guard turns away non-Instagram domains before resolving; video, Reel and story links from instagram.com itself all pass."
       },
       {
         "question": "Is my Instagram link retained by SopKit after resolution?",
@@ -13106,20 +12873,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Intercom API Key Tester do?",
-        "answer": "Intercom API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where do I enter an Intercom access token and which endpoint do I name?",
+        "answer": "The token goes in the masked key field, and the endpoint is up to you - the page starts on the custom option because Intercom has no built-in preset here."
       },
       {
-        "question": "Is Intercom API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Intercom API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What separates a rejected Intercom token from an unreachable host?",
+        "answer": "The reply: a rejection returns an HTTP status with response text, while an unreachable or slow host ends in the timeout branch after 8 seconds."
       },
       {
-        "question": "Do I need to create an account or sign up to use Intercom API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Intercom API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Intercom API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the Intercom check let me add headers like Intercom-Version?",
+        "answer": "No custom headers can be added - the tester sends the Bearer header only, so a version-pinned route that requires extra headers may fail even with a good token."
       },
       {
         "question": "Where is the Intercom key sent when a diagnostic runs here?",
@@ -13393,20 +13156,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Izlesene Video Downloader do?",
-        "answer": "Izlesene Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Izlesene pages resolve into downloads?",
+        "answer": "Video page URLs from Izlesene resolve into downloadable variants, and the card shows the thumbnail, title, duration and channel info."
       },
       {
-        "question": "Is Izlesene Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Izlesene Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Are size estimates available before saving an Izlesene video?",
+        "answer": "Every quality option carries a size estimate from the resolver, so storage can be planned before committing."
       },
       {
-        "question": "Do I need to create an account or sign up to use Izlesene Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Izlesene Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Izlesene Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What causes an Izlesene resolution failure?",
+        "answer": "Removed clips and links copied from a signed-in private view fail; the inline error suggests pasting a fresh link from the public page."
       },
       {
         "question": "Do Izlesene lookups run through an outside service?",
@@ -13451,20 +13210,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JavaScript Beautifier do?",
-        "answer": "JavaScript Beautifier lets you format code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What transformation does the JS Beautifier apply?",
+        "answer": "It breaks minified code after semicolons and opening braces to stack statements vertically, and pushes closing braces onto their own lines so block boundaries are visible."
       },
       {
-        "question": "Is JavaScript Beautifier really free? Are there any hidden charges?",
-        "answer": "Yes, JavaScript Beautifier is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict formatters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does it use a JavaScript parser?",
+        "answer": "No - it is heuristic rather than AST-aware, and the card flags that. Verify the rewritten source before trusting it for anything beyond reading."
       },
       {
-        "question": "Do I need to create an account or sign up to use JavaScript Beautifier?",
-        "answer": "No account, signup, or email is required. Simply open the page and start formating your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JavaScript Beautifier on mobile devices or tablets?",
-        "answer": "Yes, JavaScript Beautifier works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I edit the formatted JavaScript in place?",
+        "answer": "The formatted source appears in a read-only box beside the untouched original. Keep editing in your own editor and re-run Format when you want a fresh rewrite."
       },
       {
         "question": "Is my minified script safe to paste into the beautifier?",
@@ -13509,20 +13264,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JavaScript DeObfuscator do?",
-        "answer": "JavaScript DeObfuscator lets you process code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the deobfuscator a full decompiler?",
+        "answer": "No - it is designed for quick triage of minified snippets. One Expand lines action inserts breaks at semicolons and braces so packed scripts become skimmable, not semantically restored."
       },
       {
-        "question": "Is JavaScript DeObfuscator really free? Are there any hidden charges?",
-        "answer": "Yes, JavaScript DeObfuscator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the output pane show after expanding?",
+        "answer": "The rewritten version, while your input stays exactly as pasted above it. The transform is heuristic, so review the expanded code before trusting it."
       },
       {
-        "question": "Do I need to create an account or sign up to use JavaScript DeObfuscator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JavaScript DeObfuscator on mobile devices or tablets?",
-        "answer": "Yes, JavaScript DeObfuscator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When should I reach for this instead of the JS Beautifier?",
+        "answer": "They share the same expansion engine. The deobfuscator page frames it for triaging suspicious packed code, while the beautifier is the general formatting entry point."
       },
       {
         "question": "Does the deobfuscator upload the script I want to expand?",
@@ -13567,20 +13318,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JavaScript Minifier do?",
-        "answer": "JavaScript Minifier lets you compress code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the JavaScript Minifier remove?",
+        "answer": "Block comments and line comments are stripped first, then all whitespace, tabs and line breaks collapse into single spaces before the string is trimmed."
       },
       {
-        "question": "Is JavaScript Minifier really free? Are there any hidden charges?",
-        "answer": "Yes, JavaScript Minifier is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does it rename variables or restructure code?",
+        "answer": "No - there is no identifier mangling or AST-aware rewriting. This is whitespace and comment removal only, so expect modest savings."
       },
       {
-        "question": "Do I need to create an account or sign up to use JavaScript Minifier?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JavaScript Minifier on mobile devices or tablets?",
-        "answer": "Yes, JavaScript Minifier works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What should I check before shipping the minified script?",
+        "answer": "Run your tests against the output. Comment stripping removes everything after // on a line, so strings containing URLs like https://... can be damaged."
       },
       {
         "question": "Will my proprietary JavaScript be visible to anyone when minified here?",
@@ -13626,8 +13373,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "Is JavaScript Notebook really free? Are there any hidden charges?",
-        "answer": "Yes, JavaScript Notebook is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium code playgrounds that restrict features or limit executions, SopKit provides unlimited access to all features at no cost."
+        "question": "How are cells executed and timed?",
+        "answer": "Each cell runs independently with its own execution counter and timing readout. Shift+Enter runs the current cell, and the notebook autosaves so a reload keeps your work."
+      },
+      {
+        "question": "Does top-level await work in a notebook cell?",
+        "answer": "Yes - every cell body is wrapped in an async function scope, so top-level async/await and Promises run without an enclosing IIFE."
+      },
+      {
+        "question": "Can I share or archive a notebook?",
+        "answer": "Export or import the notebook as JSON, or share it through a base64 URL hash link. The mock console also supports log, error, warn, info, table, dir and time/timeEnd."
       },
       {
         "question": "Does JavaScript Notebook send my code to a server?",
@@ -13696,20 +13451,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JavaScript Obfuscator do?",
-        "answer": "JavaScript Obfuscator lets you process code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How strong is the obfuscation this tool produces?",
+        "answer": "It is a light pass: comments and whitespace are collapsed first, then every character is escaped as a \\uXXXX sequence. It deters casual reading rather than resisting real analysis."
       },
       {
-        "question": "Is JavaScript Obfuscator really free? Are there any hidden charges?",
-        "answer": "Yes, JavaScript Obfuscator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What should I use for serious code protection?",
+        "answer": "A build-time obfuscator. This page is pitched as masking casual reading of snippets, not as a full parser or identifier mangler."
       },
       {
-        "question": "Do I need to create an account or sign up to use JavaScript Obfuscator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JavaScript Obfuscator on mobile devices or tablets?",
-        "answer": "Yes, JavaScript Obfuscator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the obfuscator keep my comments?",
+        "answer": "No - comments and original whitespace are collapsed before escaping, so nothing from the source is preserved beyond the escaped characters."
       },
       {
         "question": "Does obfuscating my script expose it to SopKit or third parties?",
@@ -14221,20 +13972,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JSON Editor do?",
-        "answer": "JSON Editor lets you process code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do the formatted and minified tabs contain?",
+        "answer": "Both come from the same validated input: the formatted tab re-serializes with your chosen indent width (1 to 8 spaces), and the minified tab strips the whitespace for transport."
       },
       {
-        "question": "Is JSON Editor really free? Are there any hidden charges?",
-        "answer": "Yes, JSON Editor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the structure panel tell me about my JSON?",
+        "answer": "It counts objects, arrays, strings, numbers, booleans and nulls and reports the maximum nesting depth, so you can gauge a payload's shape at a glance."
       },
       {
-        "question": "Do I need to create an account or sign up to use JSON Editor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JSON Editor on mobile devices or tablets?",
-        "answer": "Yes, JSON Editor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does the editor react to a JSON syntax error?",
+        "answer": "Validate & Format surfaces a specific error message instead of output, keeping the broken input in place so you can find the offending token."
       },
       {
         "question": "Is the JSON I paste into the editor validated remotely?",
@@ -14381,31 +14128,66 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     seoDescription: `Convert JSON to clean, human-readable text online. Format and unescape JSON payloads for logs, tickets, and docs. 100% client-side and free.`,
   },
   "json-to-tsv-converter": {
-    whatItIs: `JSON to TSV Converter transforms arrays of JSON objects into Tab-Separated Values (TSV). Because tab characters avoid the comma collisions common in address fields, descriptions, and user input, TSV provides a robust format for pasting data directly into spreadsheet cells in Microsoft Excel, Google Sheets, LibreOffice Calc, or piping into command-line data processing tools like awk and cut.`,
-    features: [
-      `Converts arrays of JSON objects into clean, tab-delimited text records`,
-      `Automatic header row creation from object property keys`,
-      `Prevents delimiter collision errors common when using CSV with comma-heavy text`,
-      `Native copy-paste compatibility with Excel and Google Sheets grid cells`,
-      `Local client-side execution with instant conversion and zero file size restrictions`,
+    "whatItIs": "JSON to TSV Converter transforms arrays of JSON objects into Tab-Separated Values (TSV). Because tab characters avoid the comma collisions common in address fields, descriptions, and user input, TSV provides a robust format for pasting data directly into spreadsheet cells in Microsoft Excel, Google Sheets, LibreOffice Calc, or piping into command-line data processing tools like awk and cut.",
+    "features": [
+      "Converts arrays of JSON objects into clean, tab-delimited text records",
+      "Automatic header row creation from object property keys",
+      "Prevents delimiter collision errors common when using CSV with comma-heavy text",
+      "Native copy-paste compatibility with Excel and Google Sheets grid cells",
+      "Local client-side execution with instant conversion and zero file size restrictions"
     ],
-    howToUse: {
-      name: `How to convert JSON to TSV online`,
-      steps: [
-        { name: `Paste JSON Array`, text: `Input an array of JSON objects (e.g., database exports or API results) into the input box.` },
-        { name: `Execute Conversion`, text: `Click Convert to parse the keys and format the values separated by tab characters.` },
-        { name: `Inspect Delimited Rows`, text: `Check the generated headers and tab-separated rows for correct column alignment.` },
-        { name: `Copy to Clipboard`, text: `Copy the TSV text and paste directly into Google Sheets, Excel, or a terminal pipeline.` },
-      ],
+    "howToUse": {
+      "name": "How to convert JSON to TSV online",
+      "steps": [
+        {
+          "name": "Paste JSON Array",
+          "text": "Input an array of JSON objects (e.g., database exports or API results) into the input box."
+        },
+        {
+          "name": "Execute Conversion",
+          "text": "Click Convert to parse the keys and format the values separated by tab characters."
+        },
+        {
+          "name": "Inspect Delimited Rows",
+          "text": "Check the generated headers and tab-separated rows for correct column alignment."
+        },
+        {
+          "name": "Copy to Clipboard",
+          "text": "Copy the TSV text and paste directly into Google Sheets, Excel, or a terminal pipeline."
+        }
+      ]
     },
-    faqs: [
-      { question: `Why use TSV instead of CSV for spreadsheet imports?`, answer: `TSV uses tab characters as delimiters. Since tabs rarely appear in text strings or descriptions, TSV avoids common column splitting errors caused by internal commas in CSV files.` },
-      { question: `Can I paste the TSV output directly into Google Sheets or Excel?`, answer: `Yes. Modern spreadsheet software natively parses tab characters on clipboard paste, automatically populating separate columns without needing an import wizard.` },
-      { question: `How are missing object properties handled across rows?`, answer: `If certain objects lack keys present in other objects, the converter leaves the corresponding tab-separated cell empty, preserving tabular alignment.` },
-      { question: `How are nested objects and arrays formatted in TSV?`, answer: `Nested structures are serialized into compact JSON strings within their respective tab column.` },
-      { question: `Is any data uploaded to an external server?`, answer: `No. The entire conversion process executes locally in your browser memory with zero network requests.` },
+    "faqs": [
+      {
+        "question": "Why use TSV instead of CSV for spreadsheet imports?",
+        "answer": "TSV uses tab characters as delimiters. Since tabs rarely appear in text strings or descriptions, TSV avoids common column splitting errors caused by internal commas in CSV files."
+      },
+      {
+        "question": "Can I paste the TSV output directly into Google Sheets or Excel?",
+        "answer": "Yes. Modern spreadsheet software natively parses tab characters on clipboard paste, automatically populating separate columns without needing an import wizard."
+      },
+      {
+        "question": "How are missing object properties handled across rows?",
+        "answer": "If certain objects lack keys present in other objects, the converter leaves the corresponding tab-separated cell empty, preserving tabular alignment."
+      },
+      {
+        "question": "How are nested objects and arrays formatted in TSV?",
+        "answer": "Nested structures are serialized into compact JSON strings within their respective tab column."
+      },
+      {
+        "question": "What happens to JSON keys that only appear in later objects?",
+        "answer": "They are ignored - the column set comes from the first object's keys, and every record is written against those columns only."
+      },
+      {
+        "question": "Why choose TSV over CSV for this conversion?",
+        "answer": "Tab characters avoid colliding with commas common in addresses, descriptions and user input, so the file pastes cleanly into Excel, Google Sheets or LibreOffice Calc."
+      },
+      {
+        "question": "What does the converter produce for a single object rather than an array?",
+        "answer": "It still writes a header row followed by one record; an array of objects simply produces one row per element."
+      }
     ],
-    seoDescription: `Free online JSON to TSV converter. Transform JSON object arrays into tab-separated values ready to paste into Excel and Google Sheets. 100% private.`,
+    "seoDescription": "Free online JSON to TSV converter. Transform JSON object arrays into tab-separated values ready to paste into Excel and Google Sheets. 100% private."
   },
   "json-to-typescript": {
     whatItIs: `JSON to TypeScript Converter is a developer productivity utility that converts JSON payloads into strongly-typed TypeScript interfaces and type definitions. It recursively analyzes object hierarchies, array types, optional values, and primitive fields, generating clean PascalCase child interfaces that you can paste directly into frontend components, API clients, and backend models. With built-in local persistence, your input and custom root interface name are automatically saved across sessions.`,
@@ -14436,31 +14218,66 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     seoDescription: `Free online JSON to TypeScript converter. Generate clean TypeScript interfaces and types from JSON payloads instantly in your browser with 100% privacy.`,
   },
   "json-to-xml-converter": {
-    whatItIs: `JSON to XML Converter is a client-side serialization tool that transforms JSON data structures into well-formed XML documents. It parses nested key-value objects, arrays, and primitive values, mapping them to structured XML elements with proper closing tags, attribute handling, and a standard XML version header for seamless integration with legacy enterprise systems, SOAP web services, and RSS feeds.`,
-    features: [
-      `Generates standard XML with <?xml version="1.0" encoding="UTF-8"?> header`,
-      `Transforms nested JSON objects into hierarchical XML tag structures`,
-      `Maps arrays into sequential child elements with standardized tag naming`,
-      `Generates self-closing tags for null, empty, or undefined properties`,
-      `Executes 100% in your browser with instant conversion and zero file size caps`,
+    "whatItIs": "JSON to XML Converter is a client-side serialization tool that transforms JSON data structures into well-formed XML documents. It parses nested key-value objects, arrays, and primitive values, mapping them to structured XML elements with proper closing tags, attribute handling, and a standard XML version header for seamless integration with legacy enterprise systems, SOAP web services, and RSS feeds.",
+    "features": [
+      "Generates standard XML with <?xml version=\"1.0\" encoding=\"UTF-8\"?> header",
+      "Transforms nested JSON objects into hierarchical XML tag structures",
+      "Maps arrays into sequential child elements with standardized tag naming",
+      "Generates self-closing tags for null, empty, or undefined properties",
+      "Executes 100% in your browser with instant conversion and zero file size caps"
     ],
-    howToUse: {
-      name: `How to convert JSON to XML online`,
-      steps: [
-        { name: `Paste JSON Object`, text: `Input your JSON object or payload into the input editor.` },
-        { name: `Click Convert`, text: `Trigger the converter to transform JSON properties into corresponding XML elements.` },
-        { name: `Inspect XML Tags`, text: `Review the generated XML hierarchy to verify element tags and closing structures.` },
-        { name: `Copy XML Document`, text: `Copy the formatted XML output for use in legacy SOAP endpoints, feeds, or XML configs.` },
-      ],
+    "howToUse": {
+      "name": "How to convert JSON to XML online",
+      "steps": [
+        {
+          "name": "Paste JSON Object",
+          "text": "Input your JSON object or payload into the input editor."
+        },
+        {
+          "name": "Click Convert",
+          "text": "Trigger the converter to transform JSON properties into corresponding XML elements."
+        },
+        {
+          "name": "Inspect XML Tags",
+          "text": "Review the generated XML hierarchy to verify element tags and closing structures."
+        },
+        {
+          "name": "Copy XML Document",
+          "text": "Copy the formatted XML output for use in legacy SOAP endpoints, feeds, or XML configs."
+        }
+      ]
     },
-    faqs: [
-      { question: `Are XML tag naming rules enforced?`, answer: `Yes. XML element names cannot contain spaces or certain special characters. Ensure your JSON property keys use valid XML identifier characters.` },
-      { question: `How are JSON arrays converted to XML?`, answer: `Array items are rendered as sequential child tags labeled with consistent item identifiers to maintain structured document hierarchy.` },
-      { question: `Can the output be used with SOAP web services?`, answer: `Yes. The generated XML document is well-formed and can be embedded within SOAP envelopes or sent to XML-based APIs.` },
-      { question: `Can I convert large configuration files?`, answer: `Yes. Because conversion occurs in browser memory without network bottlenecks, large documents are processed rapidly.` },
-      { question: `Is any data uploaded to an external server?`, answer: `No. All JSON-to-XML conversion takes place client-side in your browser, maintaining full privacy for proprietary data.` },
+    "faqs": [
+      {
+        "question": "Are XML tag naming rules enforced?",
+        "answer": "Yes. XML element names cannot contain spaces or certain special characters. Ensure your JSON property keys use valid XML identifier characters."
+      },
+      {
+        "question": "How are JSON arrays converted to XML?",
+        "answer": "Array items are rendered as sequential child tags labeled with consistent item identifiers to maintain structured document hierarchy."
+      },
+      {
+        "question": "Can the output be used with SOAP web services?",
+        "answer": "Yes. The generated XML document is well-formed and can be embedded within SOAP envelopes or sent to XML-based APIs."
+      },
+      {
+        "question": "Can I convert large configuration files?",
+        "answer": "Yes. Because conversion occurs in browser memory without network bottlenecks, large documents are processed rapidly."
+      },
+      {
+        "question": "How does the converter handle an array in the JSON?",
+        "answer": "Each array item becomes its own child element under the parent tag, so a list of items turns into repeated elements of the same name."
+      },
+      {
+        "question": "What does the generated XML document start with?",
+        "answer": "A standard <?xml version=\"1.0\" encoding=\"UTF-8\"?> header, followed by nested elements for each level of the JSON structure."
+      },
+      {
+        "question": "What root shape does the JSON need?",
+        "answer": "An object at the top level - its first key becomes the outer element. A bare string, number or array raises an error instead of producing output."
+      }
     ],
-    seoDescription: `Convert JSON to XML online for free. Transform JSON objects and arrays into structured XML documents for APIs and enterprise systems. 100% private.`,
+    "seoDescription": "Convert JSON to XML online for free. Transform JSON objects and arrays into structured XML documents for APIs and enterprise systems. 100% private."
   },
   "json-to-yaml-converter": {
     whatItIs: `JSON to YAML Converter is an interactive serialization tool that converts structured JSON data into clean, human-friendly YAML. By replacing braces, brackets, and quotes with indentation and hyphens, it streamlines the creation of configuration files for Kubernetes manifests, Docker Compose services, GitHub Actions workflows, and Helm charts. Built with the robust js-yaml engine, it includes automatic local storage to preserve your work.`,
@@ -14786,20 +14603,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Kickstarter Video Downloader do?",
-        "answer": "Kickstarter Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Kickstarter link do I paste — the campaign page or the video?",
+        "answer": "Paste the project page URL and the tool finds the pitch video behind the campaign page, then resolves its renditions."
       },
       {
-        "question": "Is Kickstarter Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Kickstarter Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What if a Kickstarter project has no pitch video?",
+        "answer": "Campaigns without a video yield an error banner noting the page contained no video; only projects with a pitch video resolve."
       },
       {
-        "question": "Do I need to create an account or sign up to use Kickstarter Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Kickstarter Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Kickstarter Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the result card identify the campaign creator?",
+        "answer": "The card shows the campaign thumbnail, title, runtime and creator before you choose a quality."
       },
       {
         "question": "What is sent to SopKit when I paste a Kickstarter campaign link?",
@@ -14904,20 +14717,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Kwai Video Downloader do?",
-        "answer": "Kwai Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I pick a smaller Kwai file to save storage?",
+        "answer": "Quality rows list sizes so a compact file can be chosen; the resolver returns whatever renditions the clip provides."
       },
       {
-        "question": "Is Kwai Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Kwai Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which metadata comes with a Kwai clip before saving?",
+        "answer": "The result card surfaces the thumbnail, caption title, duration and author."
       },
       {
-        "question": "Do I need to create an account or sign up to use Kwai Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Kwai Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Kwai Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do Kwai links copied from the app's share sheet work?",
+        "answer": "Yes — paste the clip link from Kwai's share option; profile or feed links contain no single clip and will not resolve."
       },
       {
         "question": "Does my Kwai link get saved anywhere when I use this?",
@@ -14963,20 +14772,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does LeadGenius API Key Tester do?",
-        "answer": "LeadGenius API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does LeadGenius differ from the preset providers here?",
+        "answer": "LeadGenius is not among the built-in presets, so diagnostics start in custom endpoint mode: you supply the API URL and the key, then run the check."
       },
       {
-        "question": "Is LeadGenius API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, LeadGenius API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which verbs can the LeadGenius probe use?",
+        "answer": "The GET and POST choices are both available. The key is attached as a Bearer token, and the response is judged solely on its HTTP status."
       },
       {
-        "question": "Do I need to create an account or sign up to use LeadGenius API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use LeadGenius API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, LeadGenius API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "My LeadGenius check fails with a CORS message - what does that mean?",
+        "answer": "It means the browser could not read the reply from that host. The server's cross-origin policy blocked it, so the failure may say nothing about whether your key is valid."
       },
       {
         "question": "Can SopKit's servers read the LeadGenius key I submit to this tester?",
@@ -15022,20 +14827,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Leadspace API Key Tester do?",
-        "answer": "Leadspace API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why does the Leadspace page open on Custom Endpoint Address?",
+        "answer": "Because Leadspace has no preset in this tester - the custom option is the default, and your only required inputs are the API URL and the masked key."
       },
       {
-        "question": "Is Leadspace API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Leadspace API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What constitutes a valid Leadspace credential here?",
+        "answer": "An HTTP 200 or 201 reply from the URL you probed with your key attached; refusals list the status code plus the server's reply."
       },
       {
-        "question": "Do I need to create an account or sign up to use Leadspace API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Leadspace API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Leadspace API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is there a way to stop a Leadspace check that is hanging?",
+        "answer": "You do not need to: requests that stall are terminated at 8 seconds and reported as timeouts, after which you can adjust the URL and try again."
       },
       {
         "question": "What becomes of the Leadspace key after I finish testing it?",
@@ -15187,20 +14988,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Likee Video Downloader do?",
-        "answer": "Likee Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "How are Likee audio entries shown in the options list?",
+        "answer": "Options separate audio entries from video renditions, and sizes sit beside each quality label for easy comparison."
       },
       {
-        "question": "Is Likee Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Likee Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do Likee profile URLs work here?",
+        "answer": "Missing or broken Likee links trigger an inline note; profile URLs are not post URLs, so copy the link from a specific Likee video instead."
       },
       {
-        "question": "Do I need to create an account or sign up to use Likee Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Likee Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Likee Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What metadata does a Likee preview include?",
+        "answer": "The preview card includes the thumbnail, title, runtime and creator name."
       },
       {
         "question": "Where is the Likee URL handled during the lookup?",
@@ -15364,20 +15161,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Linkedin Video Downloader do?",
-        "answer": "Linkedin Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which LinkedIn posts can the resolver read?",
+        "answer": "Links must be linkedin.com URLs; feed videos and learning-style clips resolve from the same single input."
       },
       {
-        "question": "Is Linkedin Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Linkedin Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I download a video from a LinkedIn group or a paid course?",
+        "answer": "Content behind sign-in walls — private groups and paid courses — cannot be read by the resolver; only publicly visible posts resolve."
       },
       {
-        "question": "Do I need to create an account or sign up to use Linkedin Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Linkedin Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Linkedin Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What information appears in the LinkedIn preview?",
+        "answer": "The clip's title, runtime and author line appear first, followed by quality options with size information per variant."
       },
       {
         "question": "Is my LinkedIn link exposed to third parties during resolution?",
@@ -15600,20 +15393,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Loops API Key Tester do?",
-        "answer": "Loops API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I verify a Loops key before wiring it into transactional email?",
+        "answer": "Yes - paste the key into the masked input, name the Loops API URL to probe, and run diagnostics. A 200 or 201 response counts as a valid key."
       },
       {
-        "question": "Is Loops API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Loops API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which HTTP method does the Loops probe use?",
+        "answer": "Your choice - GET and POST are both offered for the custom request, and either way the key travels in an Authorization Bearer header."
       },
       {
-        "question": "Do I need to create an account or sign up to use Loops API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Loops API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Loops API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the Loops check validate sending domains or templates?",
+        "answer": "No - it only reports the HTTP outcome of the URL you chose. Domain verification and template state live in Loops itself and are not inspected."
       },
       {
         "question": "Is the Loops API key I paste sent to SopKit's backend for testing?",
@@ -15777,20 +15566,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Lusha API Key Tester do?",
-        "answer": "Lusha API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What inputs does a Lusha key check need?",
+        "answer": "The Lusha API URL you want to probe and the key in the masked field. The page runs in custom endpoint mode, so there is no fixed target."
       },
       {
-        "question": "Is Lusha API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Lusha API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is a Lusha failure displayed?",
+        "answer": "The failure panel echoes the HTTP status and up to 160 characters of the server's reply, usually enough to distinguish an expired key from a wrong URL."
       },
       {
-        "question": "Do I need to create an account or sign up to use Lusha API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Lusha API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Lusha API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I POST to a Lusha endpoint from the tester?",
+        "answer": "Yes - switch the method selector to POST. The request still carries only the Bearer header and no body, so use an endpoint that tolerates an empty payload."
       },
       {
         "question": "How does SopKit handle the Lusha key I enter into the field?",
@@ -15836,20 +15621,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does M3u8 Downloader do?",
-        "answer": "M3u8 Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is an M3U8 link, and can any of them be processed?",
+        "answer": "An M3U8 file is an HTTP streaming playlist rather than a video file; paste the playlist URL and the resolver inspects it and reports the renditions it exposes."
       },
       {
-        "question": "Is M3u8 Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, M3u8 Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does a valid-looking M3U8 address return an error?",
+        "answer": "The inline error appears when a playlist cannot be parsed — usually because the URL points to a page rather than the .m3u8 file, or needs a session the resolver lacks."
       },
       {
-        "question": "Do I need to create an account or sign up to use M3u8 Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use M3u8 Downloader on mobile devices or tablets?",
-        "answer": "Yes, M3u8 Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What do the quality labels mean for an M3U8 stream?",
+        "answer": "Labels reflect the bitrate ladder reported by the resolver, and each download button opens a resolved stream file in a new tab."
       },
       {
         "question": "Does SopKit touch the streams I submit?",
@@ -15954,20 +15735,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Mailgun API Key Tester do?",
-        "answer": "Mailgun API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Mailgun's messages endpoint is not preloaded - so what do I probe?",
+        "answer": "Whatever Mailgun URL you want checked, since the page opens on the custom endpoint preset. A read-only listing route that a valid key can fetch is a good choice."
       },
       {
-        "question": "Is Mailgun API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Mailgun API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What result should I trust as proof the Mailgun key works?",
+        "answer": "Only an HTTP 200 or 201 from your chosen URL. Anything else prints the status and reply text, including rate-limit or permission errors on otherwise valid keys."
       },
       {
-        "question": "Do I need to create an account or sign up to use Mailgun API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Mailgun API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Mailgun API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the Mailgun tester expose the key to SopKit servers?",
+        "answer": "No - the diagnostic request goes from your machine straight to the Mailgun URL you entered, so the credential is disclosed only to that endpoint."
       },
       {
         "question": "Where does my Mailgun key go when I test it on this page?",
@@ -16303,20 +16080,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Mashable Video Downloader do?",
-        "answer": "Mashable Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why did a Mashable article return no video?",
+        "answer": "The inline error appears when a page yields no fetchable video — some posts embed players the resolver cannot read, so try a URL whose video plays directly."
       },
       {
-        "question": "Is Mashable Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Mashable Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I archive Mashable video segments for citation?",
+        "answer": "The tool locates the embedded clip behind an article or video URL and returns renditions, which suits archiving tech and culture segments you cite."
       },
       {
-        "question": "Do I need to create an account or sign up to use Mashable Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Mashable Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Mashable Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the Mashable result card display?",
+        "answer": "It renders the thumbnail, headline, runtime and byline before the download options appear."
       },
       {
         "question": "What does SopKit do with a Mashable URL I paste?",
@@ -16362,20 +16135,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Mattermark API Key Tester do?",
-        "answer": "Mattermark API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does Mattermark get a fixed probe URL on this page?",
+        "answer": "No fixed URL - the tester opens on Custom Endpoint Address because Mattermark is not preset, so the API URL and masked key are the only required inputs."
       },
       {
-        "question": "Is Mattermark API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Mattermark API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which methods can the Mattermark check use, and how is it authorized?",
+        "answer": "GET and POST are selectable for the custom request, and the credential is added as an Authorization Bearer header built from the key you paste."
       },
       {
-        "question": "Do I need to create an account or sign up to use Mattermark API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Mattermark API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Mattermark API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are timeouts and CORS blocks surfaced here?",
+        "answer": "Explicitly and separately: the console calls out an 8-second timeout when nothing replies, and flags CORS when the browser is blocked from reading a response."
       },
       {
         "question": "Does the Mattermark key I enter here get logged anywhere?",
@@ -16531,20 +16300,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Melissa API Key Tester do?",
-        "answer": "Melissa API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I test a Melissa data-quality key if no endpoint is preset?",
+        "answer": "Paste the exact Melissa API URL into the endpoint field, put the key in the masked input, and press Run Connection Diagnostics. GET and POST are both available."
       },
       {
-        "question": "Is Melissa API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Melissa API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the result card tell me about a Melissa key?",
+        "answer": "Whether the URL you probed returned 200 or 201 with the key attached. Any other outcome shows the status code plus response context instead."
       },
       {
-        "question": "Do I need to create an account or sign up to use Melissa API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Melissa API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Melissa API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I validate several Melissa keys in one pass?",
+        "answer": "One key per run - the tester holds a single credential field, so checking multiple Melissa keys means repeating the diagnostic for each."
       },
       {
         "question": "What happens to the Melissa key I test - is a copy kept?",
@@ -16767,20 +16532,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Mixcloud Video Downloader do?",
-        "answer": "Mixcloud Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Mixcloud is mainly audio — what does this downloader actually fetch?",
+        "answer": "It fetches the playable renditions from a Mixcloud show link, and audio results display a music-note icon on their download rows."
       },
       {
-        "question": "Is Mixcloud Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Mixcloud Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What metadata accompanies a Mixcloud show before saving?",
+        "answer": "The preview card shows the show artwork, title, runtime and artist, with sizes listed per variant."
       },
       {
-        "question": "Do I need to create an account or sign up to use Mixcloud Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Mixcloud Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Mixcloud Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I download a show that the DJ has kept private?",
+        "answer": "Only shows that are publicly playable resolve; private or unpublished uploads return an inline error because the resolver cannot reach them."
       },
       {
         "question": "Are Mixcloud links handled anywhere without my knowledge?",
@@ -17062,20 +16823,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Mxtakatak Video Downloader do?",
-        "answer": "Mxtakatak Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What content does MX TakaTak downloader target?",
+        "answer": "It focuses on short-form Indian video content, resolving MX TakaTak video links into download options."
       },
       {
-        "question": "Is Mxtakatak Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Mxtakatak Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the MX TakaTak card name the creator?",
+        "answer": "The preview card surfaces cover art, title, length and creator, with size estimates on each quality row."
       },
       {
-        "question": "Do I need to create an account or sign up to use Mxtakatak Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Mxtakatak Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Mxtakatak Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does an MX TakaTak link fail?",
+        "answer": "Stale or migrated links fail with a clear inline error, since the platform's videos have moved around; grab a fresh share link where the video still plays."
       },
       {
         "question": "Does SopKit keep my MX TakaTak links?",
@@ -17239,20 +16996,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Ninegag Video Downloader do?",
-        "answer": "Ninegag Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I download a 9GAG animation that is posted as a GIF?",
+        "answer": "The tool fetches the video or animation behind a 9GAG post URL; posts without downloadable media return an inline error."
       },
       {
-        "question": "Is Ninegag Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Ninegag Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the 9GAG result show file sizes per quality?",
+        "answer": "Quality options list each rendition with its file size, so you can pick a lighter download."
       },
       {
-        "question": "Do I need to create an account or sign up to use Ninegag Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Ninegag Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Ninegag Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I get the right link for a 9GAG meme?",
+        "answer": "Use the post's share option and copy the link; the result card then shows the thumbnail, caption, runtime and author."
       },
       {
         "question": "Is the 9GAG post I submit visible to anyone else?",
@@ -17498,47 +17251,63 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     "seoDescription": "Private Number to Words Converter: privately convert numbers entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure."
   },
   "octal-to-binary-converter": {
-    whatItIs: `Octal to Binary Converter transforms base-8 octal values into base-2 binary strings (0s and 1s). For example, octal 377 converts to binary 11111111, 252 converts to 10101010, and 77 converts to 00111111.
-
-Converting between octal and binary is one of the most direct translations in digital electronics and computer science. Because $8 = 2^3$, each octal digit corresponds to an exact 3-bit binary triplet. Hardware engineers, firmware developers, and students rely on octal notation to condense long binary bit patterns into readable numbers without the computational complexity of base-10 arithmetic.
-
-## Direct 3-Bit Triplet Mapping
-
-Every octal digit maps directly to a fixed 3-bit pattern:
-- 0 = 000, 1 = 001, 2 = 010, 3 = 011
-- 4 = 100, 5 = 101, 6 = 110, 7 = 111
-
-Because the mapping is strictly positional, converting octal 755 (standard Unix permission) gives:
-- 7 = 111 (read, write, execute)
-- 5 = 101 (read, execute)
-- 5 = 101 (read, execute)
-Resulting in the binary sequence 111101101.
-
-This tool supports individual numbers or lists separated by spaces, commas, or line breaks, providing configurable delimiters and real-time execution.`,
-    features: [
-      `Converts base-8 octal values directly into base-2 binary strings accurately`,
-      `Direct 3-bit triplet mapping with support for multi-token batch conversion`,
-      `Batch results join with spaces, commas, newlines or run together unbroken`,
-      `Reciprocal Swap button to toggle immediately between Octal to Binary and Binary to Octal modes`,
-      `One-click clipboard copy and text file download for shell scripts and hardware registers`,
-      `100% private in-browser computation with zero remote server calls or telemetry`,
+    "whatItIs": "Octal to Binary Converter transforms base-8 octal values into base-2 binary strings (0s and 1s). For example, octal 377 converts to binary 11111111, 252 converts to 10101010, and 77 converts to 00111111.\n\nConverting between octal and binary is one of the most direct translations in digital electronics and computer science. Because $8 = 2^3$, each octal digit corresponds to an exact 3-bit binary triplet. Hardware engineers, firmware developers, and students rely on octal notation to condense long binary bit patterns into readable numbers without the computational complexity of base-10 arithmetic.\n\n## Direct 3-Bit Triplet Mapping\n\nEvery octal digit maps directly to a fixed 3-bit pattern:\n- 0 = 000, 1 = 001, 2 = 010, 3 = 011\n- 4 = 100, 5 = 101, 6 = 110, 7 = 111\n\nBecause the mapping is strictly positional, converting octal 755 (standard Unix permission) gives:\n- 7 = 111 (read, write, execute)\n- 5 = 101 (read, execute)\n- 5 = 101 (read, execute)\nResulting in the binary sequence 111101101.\n\nThis tool supports individual numbers or lists separated by spaces, commas, or line breaks, providing configurable delimiters and real-time execution.",
+    "features": [
+      "Converts base-8 octal values directly into base-2 binary strings accurately",
+      "Direct 3-bit triplet mapping with support for multi-token batch conversion",
+      "Batch results join with spaces, commas, newlines or run together unbroken",
+      "Reciprocal Swap button to toggle immediately between Octal to Binary and Binary to Octal modes",
+      "One-click clipboard copy and text file download for shell scripts and hardware registers",
+      "100% private in-browser computation with zero remote server calls or telemetry"
     ],
-    howToUse: {
-      name: `How to convert octal values to binary code`,
-      steps: [
-        { name: `Enter Octal Numbers`, text: `Type or paste octal digits into the Octal Values textarea.` },
-        { name: `Select Output Delimiter`, text: `Choose spaces, commas, newlines, or none to format the binary output.` },
-        { name: `Copy or Download Binary`, text: `Click Copy to copy the binary string to your clipboard or Download to save as a text file.` },
-      ],
+    "howToUse": {
+      "name": "How to convert octal values to binary code",
+      "steps": [
+        {
+          "name": "Enter Octal Numbers",
+          "text": "Type or paste octal digits into the Octal Values textarea."
+        },
+        {
+          "name": "Select Output Delimiter",
+          "text": "Choose spaces, commas, newlines, or none to format the binary output."
+        },
+        {
+          "name": "Copy or Download Binary",
+          "text": "Click Copy to copy the binary string to your clipboard or Download to save as a text file."
+        }
+      ]
     },
-    faqs: [
-      { question: `How are octal digits converted to binary?`, answer: `Each octal digit (0 through 7) maps directly to a 3-bit binary triplet without requiring arithmetic division. For example, 7 is 111 and 3 is 011.` },
-      { question: `What digits are permitted in the input?`, answer: `Only octal digits 0 through 7 are valid. Digits 8 and 9 do not exist in the octal system.` },
-      { question: `Can I convert multiple octal numbers at once?`, answer: `Yes. Separate your octal numbers with spaces, commas, or line breaks. The tool processes each token and outputs formatted binary numbers.` },
-      { question: `How do I convert binary back to octal?`, answer: `Click the Swap button in the toolbar to switch to Binary to Octal mode.` },
-      { question: `Does the converter work without an internet connection?`, answer: `Yes. All conversion logic runs strictly inside your local browser JavaScript engine.` },
+    "faqs": [
+      {
+        "question": "How are octal digits converted to binary?",
+        "answer": "Each octal digit (0 through 7) maps directly to a 3-bit binary triplet without requiring arithmetic division. For example, 7 is 111 and 3 is 011."
+      },
+      {
+        "question": "What digits are permitted in the input?",
+        "answer": "Only octal digits 0 through 7 are valid. Digits 8 and 9 do not exist in the octal system."
+      },
+      {
+        "question": "How does the octal-to-binary mapping work per digit?",
+        "answer": "Each octal digit converts to a fixed 3-bit triplet - 7 is 111 and 5 is 101 - so octal 755 becomes 111101101 without a stop in decimal."
+      },
+      {
+        "question": "Can I convert several octal numbers in one pass?",
+        "answer": "Yes - paste them separated by spaces, commas or line breaks and the batch converts together, with output delimited by spaces, commas, newlines or nothing."
+      },
+      {
+        "question": "How do I get back from binary to octal?",
+        "answer": "Hit the Swap button: it switches the tool to Binary to Octal and loads the current output as the new input, so the round trip is one click."
+      },
+      {
+        "question": "How do I convert binary back to octal?",
+        "answer": "Click the Swap button in the toolbar to switch to Binary to Octal mode."
+      },
+      {
+        "question": "Does the converter work without an internet connection?",
+        "answer": "Yes. All conversion logic runs strictly inside your local browser JavaScript engine."
+      }
     ],
-    seoDescription: `Convert octal numbers (base-8) to binary code (base-2) online. Free client-side octal to binary converter with direct 3-bit mapping and custom delimiters.`,
+    "seoDescription": "Convert octal numbers (base-8) to binary code (base-2) online. Free client-side octal to binary converter with direct 3-bit mapping and custom delimiters."
   },
   "octal-to-decimal-converter": {
     whatItIs: `Octal to Decimal Converter converts base-8 octal numbers into base-10 decimal integers. For example, octal 377 converts to decimal 255, 200 becomes 128, 100 becomes 64, and 40 becomes 32.
@@ -17578,42 +17347,63 @@ The tool handles individual integers or batch sequences separated by spaces, com
     seoDescription: `Convert octal numbers (base-8) to decimal integers (base-10) online. Free client-side octal to decimal converter with batch processing and custom delimiters.`,
   },
   "octal-to-hex-converter": {
-    whatItIs: `Octal to HEX Converter converts base-8 octal numbers directly into base-16 hexadecimal notation. For example, octal 377 becomes hex FF, 240 becomes A0, 177 becomes 7F, and 73 becomes 3B.
-
-Converting between octal and hexadecimal is frequently necessary when interfacing modern 32-bit and 64-bit systems with legacy computing architectures, analyzing file format headers (like tar archive records), or converting Unix file permission masks into hexadecimal register values.
-
-## Translation via Binary Intermediate
-
-Because 8 ($2^3$) and 16 ($2^4$) are both powers of two, the most efficient method to translate octal to hex is via binary bits:
-1. Each octal digit converts to a 3-bit binary triplet (e.g., octal 377 becomes 011 111 111, or 11111111).
-2. The bit sequence is regrouped into 4-bit nibbles from right to left (1111 and 1111).
-3. Each 4-bit nibble converts to its hex character (1111 = F, 1111 = F, yielding FF).
-
-This tool computes these conversions instantaneously in your browser, with customizable output delimiters and one-click reversal.`,
-    features: [
-      `Converts base-8 octal values directly to base-16 hexadecimal notation`,
-      `Supports batch conversion for space-separated, comma-separated, or newline-delimited numbers`,
-      `Configurable output delimiters: space-separated, continuous string, comma-separated, or newlines`,
-      `Reciprocal Swap feature to toggle directly into Hex to Octal mode`,
-      `Instant clipboard copy and text export for shell scripts and firmware registers`,
-      `100% client-side privacy ensuring no data is ever transmitted across the network`,
+    "whatItIs": "Octal to HEX Converter converts base-8 octal numbers directly into base-16 hexadecimal notation. For example, octal 377 becomes hex FF, 240 becomes A0, 177 becomes 7F, and 73 becomes 3B.\n\nConverting between octal and hexadecimal is frequently necessary when interfacing modern 32-bit and 64-bit systems with legacy computing architectures, analyzing file format headers (like tar archive records), or converting Unix file permission masks into hexadecimal register values.\n\n## Translation via Binary Intermediate\n\nBecause 8 ($2^3$) and 16 ($2^4$) are both powers of two, the most efficient method to translate octal to hex is via binary bits:\n1. Each octal digit converts to a 3-bit binary triplet (e.g., octal 377 becomes 011 111 111, or 11111111).\n2. The bit sequence is regrouped into 4-bit nibbles from right to left (1111 and 1111).\n3. Each 4-bit nibble converts to its hex character (1111 = F, 1111 = F, yielding FF).\n\nThis tool computes these conversions instantaneously in your browser, with customizable output delimiters and one-click reversal.",
+    "features": [
+      "Converts base-8 octal values directly to base-16 hexadecimal notation",
+      "Supports batch conversion for space-separated, comma-separated, or newline-delimited numbers",
+      "Configurable output delimiters: space-separated, continuous string, comma-separated, or newlines",
+      "Reciprocal Swap feature to toggle directly into Hex to Octal mode",
+      "Instant clipboard copy and text export for shell scripts and firmware registers",
+      "100% client-side privacy ensuring no data is ever transmitted across the network"
     ],
-    howToUse: {
-      name: `How to convert octal numbers to hexadecimal values`,
-      steps: [
-        { name: `Enter Octal Numbers`, text: `Type or paste octal numbers into the Octal Values input area.` },
-        { name: `Select Output Delimiter`, text: `Choose spaces, commas, newlines, or none to format the output hex strings.` },
-        { name: `Copy Converted Hex`, text: `Click Copy to copy the hex values to your clipboard or Download to save them.` },
-      ],
+    "howToUse": {
+      "name": "How to convert octal numbers to hexadecimal values",
+      "steps": [
+        {
+          "name": "Enter Octal Numbers",
+          "text": "Type or paste octal numbers into the Octal Values input area."
+        },
+        {
+          "name": "Select Output Delimiter",
+          "text": "Choose spaces, commas, newlines, or none to format the output hex strings."
+        },
+        {
+          "name": "Copy Converted Hex",
+          "text": "Click Copy to copy the hex values to your clipboard or Download to save them."
+        }
+      ]
     },
-    faqs: [
-      { question: `How is octal converted to hexadecimal?`, answer: `Octal digits are converted to 3-bit binary triplets, which are then regrouped into 4-bit nibbles from right to left that map directly to hexadecimal digits 0 through F.` },
-      { question: `Can I convert multiple octal numbers at once?`, answer: `Yes. Separate your numbers with spaces, commas, or line breaks. The tool processes each token and outputs corresponding hex strings.` },
-      { question: `Does the output include '0x' prefixes?`, answer: `The tool outputs clean uppercase hex digits without 0x prefixes by default, allowing easy copy-pasting or custom formatting.` },
-      { question: `Can I convert hexadecimal values back to octal?`, answer: `Yes. Click the Swap button in the toolbar to switch to Hex to Octal mode.` },
-      { question: `Is any data stored on external servers?`, answer: `No. All calculations run strictly inside your local browser JavaScript engine.` },
+    "faqs": [
+      {
+        "question": "How is octal converted to hexadecimal?",
+        "answer": "Octal digits are converted to 3-bit binary triplets, which are then regrouped into 4-bit nibbles from right to left that map directly to hexadecimal digits 0 through F."
+      },
+      {
+        "question": "How is an octal number translated into hex under the hood?",
+        "answer": "Via binary: each octal digit becomes a 3-bit triplet, the bits regroup into 4-bit nibbles, and each nibble maps to a hex character - so octal 377 becomes FF."
+      },
+      {
+        "question": "Does the converter accept a list of octal values?",
+        "answer": "Yes - values separated by spaces, commas or line breaks are converted in one run, and the output delimiter can be spaces, commas, newlines or a continuous string."
+      },
+      {
+        "question": "How does this converter help with Unix permission masks?",
+        "answer": "Permission masks like 755 or 644 are converted to their hex equivalents for firmware registers, file-format headers or shell scripts that expect hexadecimal values."
+      },
+      {
+        "question": "Does the output include '0x' prefixes?",
+        "answer": "The tool outputs clean uppercase hex digits without 0x prefixes by default, allowing easy copy-pasting or custom formatting."
+      },
+      {
+        "question": "Can I convert hexadecimal values back to octal?",
+        "answer": "Yes. Click the Swap button in the toolbar to switch to Hex to Octal mode."
+      },
+      {
+        "question": "Is any data stored on external servers?",
+        "answer": "No. All calculations run strictly inside your local browser JavaScript engine."
+      }
     ],
-    seoDescription: `Convert octal numbers (base-8) to hexadecimal values (base-16) online. Free client-side octal to hex converter with batch processing and reciprocal conversion.`,
+    "seoDescription": "Convert octal numbers (base-8) to hexadecimal values (base-16) online. Free client-side octal to hex converter with batch processing and reciprocal conversion."
   },
   "octal-to-text-converter": {
     whatItIs: `Octal to Text Converter decodes base-8 octal byte values into readable plain text characters. For example, the octal byte sequence 123 157 160 113 151 164 decodes directly to "SopKit".
@@ -17692,20 +17482,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Odnoklassniki Video Downloader do?",
-        "answer": "Odnoklassniki Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it work with OK.ru links as well as odnoklassniki addresses?",
+        "answer": "OK.ru video links turn into downloadable renditions from the same input; paste the video page address rather than a profile URL."
       },
       {
-        "question": "Is Odnoklassniki Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Odnoklassniki Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Are size figures available for Odnoklassniki variants?",
+        "answer": "Quality rows report sizes for each variant the resolver exposes, so files can be compared before downloading."
       },
       {
-        "question": "Do I need to create an account or sign up to use Odnoklassniki Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Odnoklassniki Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Odnoklassniki Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why would a Russian-language show fail to resolve?",
+        "answer": "Videos with regional or account restrictions cannot be read; the inline error prompts a link check when resolution fails."
       },
       {
         "question": "Where does an OK.ru lookup actually execute?",
@@ -17751,20 +17537,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Online Video Downloader do?",
-        "answer": "Online Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Do I need to know which platform a link belongs to?",
+        "answer": "No hint is required — paste any video page URL and the resolver returns the renditions it can detect for that link."
       },
       {
-        "question": "Is Online Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Online Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which fields appear on the card before I choose a rendition?",
+        "answer": "The card previews the clip's title, runtime and author first, then quality rows include sizes and music-note icons for audio files."
       },
       {
-        "question": "Do I need to create an account or sign up to use Online Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Online Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Online Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is every URL accepted by the resolver?",
+        "answer": "When a URL cannot be processed, the inline error explains that the page has no readable media; unsupported sites and dead links fall into that group."
       },
       {
         "question": "Do I have to tell the tool which site my link is from?",
@@ -17928,20 +17710,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does OpenAI API Key Tester do?",
-        "answer": "OpenAI API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which OpenAI endpoint does the preset use?",
+        "answer": "https://api.openai.com/v1/models, hit with a GET and your key in an Authorization Bearer header. The preset loads by default, so a pasted key can be checked immediately."
       },
       {
-        "question": "Is OpenAI API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, OpenAI API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does a valid key check prove my quota or billing state?",
+        "answer": "No - a 200 or 201 from the models listing confirms authorization only. Credit balance, rate limits and organization permissions are not part of the verdict."
       },
       {
-        "question": "Do I need to create an account or sign up to use OpenAI API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use OpenAI API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, OpenAI API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "The key field shows an sk- placeholder - is that format required?",
+        "answer": "It is only a suggestion: any string can be submitted, and the endpoint's response decides validity, so older or differently formatted OpenAI keys can be tested too."
       },
       {
         "question": "What happens to the OpenAI key I paste into this tester?",
@@ -19674,20 +19452,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does People Data Labs API Key Tester do?",
-        "answer": "People Data Labs API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which PDL route should I point the tester at?",
+        "answer": "People Data Labs is custom-only here, so the choice is yours - any PDL API URL that should return 200 or 201 with a working key makes a good probe target."
       },
       {
-        "question": "Is People Data Labs API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, People Data Labs API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the PDL probe carry its credential?",
+        "answer": "The key becomes an Authorization Bearer header on a GET or POST request sent directly to the URL you supplied. There are no extra header fields to fill."
       },
       {
-        "question": "Do I need to create an account or sign up to use People Data Labs API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use People Data Labs API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, People Data Labs API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens to a PDL request that keeps the connection open?",
+        "answer": "It is abandoned after 8 seconds and flagged as a timeout, so an unresponsive PDL host cannot block the diagnostics panel."
       },
       {
         "question": "Is the People Data Labs key I paste ever stored by SopKit?",
@@ -19788,20 +19562,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Periscope Video Downloader do?",
-        "answer": "Periscope Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does Periscope downloader work with broadcast replays?",
+        "answer": "It fetches media from broadcast and replay URLs, including old replay links that are still reachable, which makes it useful for archiving past broadcasts."
       },
       {
-        "question": "Is Periscope Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Periscope Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What appears in the Periscope preview before downloading?",
+        "answer": "The card shows the thumbnail, title, duration and broadcaster, and each variant lists its quality label and reported size."
       },
       {
-        "question": "Do I need to create an account or sign up to use Periscope Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Periscope Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Periscope Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does a Periscope replay link return an error?",
+        "answer": "Replays expire and the service is retired, so links that no longer resolve trigger the inline error; a re-uploaded copy is the usual workaround."
       },
       {
         "question": "Is my Periscope link stored while the replay is fetched?",
@@ -20142,20 +19912,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Pinterest Clip Saver do?",
-        "answer": "Pinterest Clip Saver lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the clip saver handle Idea Pins?",
+        "answer": "It pulls video clips and Idea Pins into a downloadable list, and Idea Pin clips open in a new tab on download."
       },
       {
-        "question": "Is Pinterest Clip Saver really free? Are there any hidden charges?",
-        "answer": "Yes, Pinterest Clip Saver is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which Pinterest link formats are valid here?",
+        "answer": "pinterest.com and pin.it links are validated first; both full pin URLs and short links work."
       },
       {
-        "question": "Do I need to create an account or sign up to use Pinterest Clip Saver?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Pinterest Clip Saver on mobile devices or tablets?",
-        "answer": "Yes, Pinterest Clip Saver works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the board a pin came from shown anywhere?",
+        "answer": "The board name is displayed alongside the pin metadata, and the result card also lists the pin thumbnail, title, duration and description."
       },
       {
         "question": "Does the Pinterest lookup happen in my browser or on SopKit's servers?",
@@ -20201,20 +19967,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Pinterest Gif Downloader do?",
-        "answer": "Pinterest Gif Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I save an animated Pin that plays automatically?",
+        "answer": "Paste the Pin's URL and the tool fetches its animated media variants, with each animated rendition appearing alongside its reported size."
       },
       {
-        "question": "Is Pinterest Gif Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Pinterest Gif Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Will I see where the animated Pin was saved from?",
+        "answer": "Board attribution appears with the pin metadata, alongside the pin's image, title and description text."
       },
       {
-        "question": "Do I need to create an account or sign up to use Pinterest Gif Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Pinterest Gif Downloader on mobile devices or tablets?",
-        "answer": "Yes, Pinterest Gif Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why would an animated Pin fail to resolve?",
+        "answer": "Pins that no longer exist, or that point at external pages without media, trigger an inline error; re-copy the link from the pin page."
       },
       {
         "question": "Is the GIF I fetch routed through SopKit's infrastructure?",
@@ -20260,20 +20022,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Pinterest Image Downloader do?",
-        "answer": "Pinterest Image Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What image sizes are offered for a Pinterest pin?",
+        "answer": "Option rows report the size of each rendition attached to the pin, so you can pick the largest one that is listed."
       },
       {
-        "question": "Is Pinterest Image Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Pinterest Image Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do I get the pin's description text along with the image?",
+        "answer": "The preview card includes the pin image, title, description and board, keeping the context beside the file."
       },
       {
-        "question": "Do I need to create an account or sign up to use Pinterest Image Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Pinterest Image Downloader on mobile devices or tablets?",
-        "answer": "Yes, Pinterest Image Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will a pin.it short link work for images?",
+        "answer": "Validation limits input to pinterest.com and pin.it URLs, and the short form resolves the same way as a full pin address."
       },
       {
         "question": "What happens to pin links I paste into this tool?",
@@ -20319,20 +20077,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Pinterest Video Downloader do?",
-        "answer": "Pinterest Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Pinterest pins does this video downloader recognise?",
+        "answer": "Video pins and Idea Pins resolve into a size-labelled options list; ordinary image pins do not return video renditions."
       },
       {
-        "question": "Is Pinterest Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Pinterest Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does one pin show several files in the options list?",
+        "answer": "Options cover multiple renditions when the pin exposes them, so you can pick the quality that matches where you plan to repost."
       },
       {
-        "question": "Do I need to create an account or sign up to use Pinterest Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Pinterest Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Pinterest Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I use a pin.it link on a video pin?",
+        "answer": "Pin links from pinterest.com or pin.it are validated first, so either form works as long as it points at a video or Idea Pin."
       },
       {
         "question": "Does SopKit need my Pinterest login to fetch a video?",
@@ -20378,20 +20132,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Pipedrive API Key Tester do?",
-        "answer": "Pipedrive API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is Pipedrive among the preset providers?",
+        "answer": "No - the page opens on the custom endpoint option, so you enter the Pipedrive API URL you want hit and fill the masked token field."
       },
       {
-        "question": "Is Pipedrive API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Pipedrive API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which Pipedrive token formats can I paste?",
+        "answer": "The field is format-agnostic: whatever you paste is sent as a Bearer credential. Check that the endpoint you chose accepts that scheme, since some Pipedrive routes expect an api_token parameter."
       },
       {
-        "question": "Do I need to create an account or sign up to use Pipedrive API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Pipedrive API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Pipedrive API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does a timeout mean for a Pipedrive check?",
+        "answer": "That the endpoint did not answer within 8 seconds - it is not a verdict on the token, so retry the probe or verify the URL before concluding the token is invalid."
       },
       {
         "question": "Where does my Pipedrive token go during a diagnostic check?",
@@ -20437,20 +20187,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Pipl API Key Tester do?",
-        "answer": "Pipl API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the Pipl page probe a search endpoint by default?",
+        "answer": "No - Pipl loads in custom endpoint mode, waiting for the API URL you want tested. The key field stays masked while you type."
       },
       {
-        "question": "Is Pipl API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Pipl API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What do the console states look like during a Pipl check?",
+        "answer": "Idle before you run it, connecting while the request is in flight, then either a valid-key banner for 200 or 201 or a failure card with the server's answer."
       },
       {
-        "question": "Do I need to create an account or sign up to use Pipl API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Pipl API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Pipl API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is masking enough to protect a Pipl key during a check?",
+        "answer": "Masking hides it from onlookers, but the credential still travels to the Pipl endpoint you probe. Use a test key where possible and revoke anything long-lived."
       },
       {
         "question": "What happens to the Pipl key I paste in during a test?",
@@ -20844,20 +20590,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Postmark Server Token Tester do?",
-        "answer": "Postmark Server Token Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What can I test a Postmark server token against?",
+        "answer": "Any Postmark API URL you choose - the page starts on the custom endpoint option, since no Postmark route is hardwired - with GET or POST as the probe method."
       },
       {
-        "question": "Is Postmark Server Token Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Postmark Server Token Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does a failed Postmark check report?",
+        "answer": "The HTTP status code plus the server's response excerpt; refusals arrive with the code and a short explanation rather than a bare error."
       },
       {
-        "question": "Do I need to create an account or sign up to use Postmark Server Token Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Postmark Server Token Tester on mobile devices or tablets?",
-        "answer": "Yes, Postmark Server Token Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do I need the Postmark server ID as well as the token?",
+        "answer": "No separate field - if your endpoint requires a server ID, include it in the URL you paste. The tester sends only the token header."
       },
       {
         "question": "Does my Postmark server token pass through SopKit's infrastructure?",
@@ -21418,20 +21160,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Puhutv Video Downloader do?",
-        "answer": "Puhutv Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it work with puhutv series as well as films?",
+        "answer": "Series and film links from puhutv both resolve into download options, provided the episode page is publicly viewable."
       },
       {
-        "question": "Is Puhutv Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Puhutv Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the puhutv preview tell me?",
+        "answer": "The preview card shows the channel alongside the title and runtime, and quality rows display a size for each resolved variant."
       },
       {
-        "question": "Do I need to create an account or sign up to use Puhutv Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Puhutv Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Puhutv Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does a puhutv episode fail to resolve?",
+        "answer": "Subscription-gated or newly rotated episodes return an inline error; links that require a signed-in account cannot be read by the resolver."
       },
       {
         "question": "Are puhutv lookups performed locally on my device?",
@@ -21759,20 +21497,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Random Name Generator do?",
-        "answer": "Random Name Generator lets you generate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which name dictionaries and filters are available?",
+        "answer": "Western, Indian, East Asian and Hispanic name sets, with a gender filter for a random mix, male-only or female-only names."
       },
       {
-        "question": "Is Random Name Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Random Name Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How many profiles can I generate, and what metadata can be attached?",
+        "answer": "Between 1 and 100 per pass, with optional fields adding an age of 21 to 65, one of 15 occupations and a matching city."
       },
       {
-        "question": "Do I need to create an account or sign up to use Random Name Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Random Name Generator on mobile devices or tablets?",
-        "answer": "Yes, Random Name Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What export formats does the roster support?",
+        "answer": "JSON, CSV or plain text lines, each with copy and download actions. Re-Roll reshuffles the list without touching your region, gender or count settings."
       },
       {
         "question": "Does the generator save the mock profiles it creates?",
@@ -22101,20 +21835,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Reddit Downloader do?",
-        "answer": "Reddit Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it handle video embedded from other sites on Reddit?",
+        "answer": "The resolver handles both Reddit-hosted and embedded video posts, turning them into download options after a quick domain check."
       },
       {
-        "question": "Is Reddit Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Reddit Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is the Reddit author shown in the results?",
+        "answer": "The preview card lists the post thumbnail, title, duration and OP handle, with the author line rendered using the u/ prefix."
       },
       {
-        "question": "Do I need to create an account or sign up to use Reddit Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Reddit Downloader on mobile devices or tablets?",
-        "answer": "Yes, Reddit Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will a removed Reddit post still resolve?",
+        "answer": "Removed posts usually stop returning media; the quality list only appears for posts the resolver can still read."
       },
       {
         "question": "Does resolving a Reddit post expose my identity?",
@@ -22160,20 +21890,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Reddit Media Saver do?",
-        "answer": "Reddit Media Saver lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can the media saver grab images and GIFs, or video only?",
+        "answer": "It handles images, GIFs and video from one flow — paste any Reddit post link and the tool returns the media variants it finds."
       },
       {
-        "question": "Is Reddit Media Saver really free? Are there any hidden charges?",
-        "answer": "Yes, Reddit Media Saver is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does a Reddit post show no options?",
+        "answer": "An inline error appears when a post contains nothing fetchable; text-only posts and links out to external hosts are the usual causes."
       },
       {
-        "question": "Do I need to create an account or sign up to use Reddit Media Saver?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Reddit Media Saver on mobile devices or tablets?",
-        "answer": "Yes, Reddit Media Saver works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What identifies the post before I save anything?",
+        "answer": "The result panel shows the thumbnail, post title, runtime and OP username, with size labels on each row."
       },
       {
         "question": "Where is the Reddit link processed when I paste it?",
@@ -22219,20 +21945,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Reddit Video Downloader do?",
-        "answer": "Reddit Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why does audio sync matter for Reddit-hosted videos?",
+        "answer": "Reddit-hosted posts serve audio and video as separate tracks; this tool targets those posts where sound is often dropped by other savers."
       },
       {
-        "question": "Is Reddit Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Reddit Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which Reddit links does the validator accept?",
+        "answer": "reddit.com post URLs and redd.it share links both pass the domain check."
       },
       {
-        "question": "Do I need to create an account or sign up to use Reddit Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Reddit Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Reddit Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are Reddit renditions labelled with sizes?",
+        "answer": "The options list shows each rendition with a size estimate, and a download sends the clip to a new tab."
       },
       {
         "question": "Does the Reddit video pass through SopKit before reaching me?",
@@ -22749,20 +22471,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Resend API Key Tester do?",
-        "answer": "Resend API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the Resend tester check a specific Resend endpoint?",
+        "answer": "No - the probe URL is up to you. Resend loads with Custom Endpoint Address selected, so paste the route you want and run the diagnostic."
       },
       {
-        "question": "Is Resend API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Resend API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What makes a Resend key pass the diagnostic?",
+        "answer": "An HTTP 200 or 201 from the URL you supplied with your key attached; other responses include a status code and a snippet of the reply."
       },
       {
-        "question": "Do I need to create an account or sign up to use Resend API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Resend API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Resend API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Should I test a Resend key against a sending endpoint?",
+        "answer": "Prefer a read-only route: the probe has no payload editor, and a GET to a listing endpoint confirms authorization without touching email state."
       },
       {
         "question": "Can SopKit see the Resend key I type into this tester?",
@@ -23740,20 +23458,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Rumble Video Downloader do?",
-        "answer": "Rumble Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which resolutions can I get from a Rumble video?",
+        "answer": "Quality options span the resolutions Rumble exposes, so the ceiling depends on what the uploader provided."
       },
       {
-        "question": "Is Rumble Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Rumble Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the Rumble card identify the channel?",
+        "answer": "The result card pairs the channel with the title and runtime before you open a rendition."
       },
       {
-        "question": "Do I need to create an account or sign up to use Rumble Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Rumble Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Rumble Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are non-Rumble links rejected before any lookup?",
+        "answer": "Links are validated against rumble.com before the resolver runs; anything else is rejected with an inline message."
       },
       {
         "question": "Is the Rumble lookup anonymous?",
@@ -23913,20 +23627,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Save Facebook Stories Anonymous do?",
-        "answer": "Save Facebook Stories Anonymous lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Will the account owner know I viewed their Facebook story?",
+        "answer": "The preview is fetched without signing in to Facebook, so no viewer entry is recorded against your account; the success banner notes it rendered without a trace."
       },
       {
-        "question": "Is Save Facebook Stories Anonymous really free? Are there any hidden charges?",
-        "answer": "Yes, Save Facebook Stories Anonymous is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can the story preview load without a Facebook login?",
+        "answer": "No sign-in is part of the flow — you type the username, the leading @ is removed automatically, and the story preview loads from publicly visible content."
       },
       {
-        "question": "Do I need to create an account or sign up to use Save Facebook Stories Anonymous?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Save Facebook Stories Anonymous on mobile devices or tablets?",
-        "answer": "Yes, Save Facebook Stories Anonymous works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the story list include for each entry?",
+        "answer": "Entries show media type, posting age, size and clip duration, while the Highlights grid lists covers, names and item counts."
       },
       {
         "question": "Does the tool notify Facebook that I viewed a story?",
@@ -23972,20 +23682,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Save Instagram Content do?",
-        "answer": "Save Instagram Content lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can one page cover both Instagram story and Reel links?",
+        "answer": "Paste the story or Reel URL into the single input; the result card labels the detected content type so you can confirm what resolved."
       },
       {
-        "question": "Is Save Instagram Content really free? Are there any hidden charges?",
-        "answer": "Yes, Save Instagram Content is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can this page act as a general Instagram saver?",
+        "answer": "It accepts video, Reel and story URLs in one field, making it the general-purpose choice when you are not sure which specific saver a link belongs to."
       },
       {
-        "question": "Do I need to create an account or sign up to use Save Instagram Content?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Save Instagram Content on mobile devices or tablets?",
-        "answer": "Yes, Save Instagram Content works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens when a link cannot be processed?",
+        "answer": "An inline error suggests re-pasting; a fresh link copied from the Instagram share menu usually resolves on the next attempt."
       },
       {
         "question": "Can SopKit see which Instagram posts I save?",
@@ -24031,20 +23737,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Save Insta Profile Picture do?",
-        "answer": "Save Insta Profile Picture lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I download an Instagram profile picture at full resolution?",
+        "answer": "Enter the handle and press Get DP, then choose the Full Resolution row from the three avatar renditions listed."
       },
       {
-        "question": "Is Save Insta Profile Picture really free? Are there any hidden charges?",
-        "answer": "Yes, Save Insta Profile Picture is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is the picture previewed before I download it?",
+        "answer": "A full-size preview of the profile picture renders beneath the size options so you can confirm it is the right account."
       },
       {
-        "question": "Do I need to create an account or sign up to use Save Insta Profile Picture?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Save Insta Profile Picture on mobile devices or tablets?",
-        "answer": "Yes, Save Insta Profile Picture works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do the post and follower counts affect the fetch?",
+        "answer": "Those numbers appear on the profile panel for context only; the download list offers the same three avatar renditions regardless."
       },
       {
         "question": "Is the handle I type sent anywhere when I search?",
@@ -24090,20 +23792,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Save Instagram Clips do?",
-        "answer": "Save Instagram Clips lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does this saver accept Instagram story links?",
+        "answer": "Story links fail validation on this saver — it accepts only instagram.com/reel or /p/ paths, showing the validation message for anything else."
       },
       {
-        "question": "Is Save Instagram Clips really free? Are there any hidden charges?",
-        "answer": "Yes, Save Instagram Clips is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the result card include the music credit for a clip?",
+        "answer": "The card shows creator, runtime and the music line, and audio-only renditions are downloadable from the same list."
       },
       {
-        "question": "Do I need to create an account or sign up to use Save Instagram Clips?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Save Instagram Clips on mobile devices or tablets?",
-        "answer": "Yes, Save Instagram Clips works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the whole caption shown in the result?",
+        "answer": "The caption excerpt is trimmed in the preview so the card stays tidy; creator, runtime and the music line remain visible."
       },
       {
         "question": "What happens to a clip link after the download options appear?",
@@ -24149,20 +23847,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Save Reels Video do?",
-        "answer": "Save Reels Video lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I save the audio track of a Reel as its own file?",
+        "answer": "Audio tracks appear as their own downloadable rows, and quality options are labelled with reported file sizes."
       },
       {
-        "question": "Is Save Reels Video really free? Are there any hidden charges?",
-        "answer": "Yes, Save Reels Video is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What shows on the Reel preview before I save?",
+        "answer": "Cover art, title, duration, creator handle and the music credit are shown, followed by the quality rows."
       },
       {
-        "question": "Do I need to create an account or sign up to use Save Reels Video?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Save Reels Video on mobile devices or tablets?",
-        "answer": "Yes, Save Reels Video works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why would a Reel link return an error?",
+        "answer": "An inline error appears when the Reel cannot be resolved; follower-only or deleted Reels are the common cause."
       },
       {
         "question": "Does saving a Reel ping Instagram from my side?",
@@ -24208,20 +23902,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Save Snaps To Gallery do?",
-        "answer": "Save Snaps To Gallery lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Snapchat links does the saver validate?",
+        "answer": "snapchat.com and snap.com links pass validation; copy the share link from the snap itself, since the tool needs a URL rather than a username."
       },
       {
-        "question": "Is Save Snaps To Gallery really free? Are there any hidden charges?",
-        "answer": "Yes, Save Snaps To Gallery is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the media type field on the result mean?",
+        "answer": "The card shows title, duration, author, media type and thumbnail, so you can confirm what the link resolved to before saving."
       },
       {
-        "question": "Do I need to create an account or sign up to use Save Snaps To Gallery?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Save Snaps To Gallery on mobile devices or tablets?",
-        "answer": "Yes, Save Snaps To Gallery works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why would a snap link stop working?",
+        "answer": "Snaps expire quickly and chat snaps cannot be resolved from a public link; the inline error guides a link check when resolution fails."
       },
       {
         "question": "Is the Snapchat link I paste tied to my session beyond the lookup?",
@@ -24267,20 +23957,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Save Tiktok MP4 do?",
-        "answer": "Save Tiktok MP4 lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which TikTok links does the MP4 saver accept?",
+        "answer": "tiktok.com and vm.tiktok.com links pass validation; the short vm link from the app's share sheet works without expanding it first."
       },
       {
-        "question": "Is Save Tiktok MP4 really free? Are there any hidden charges?",
-        "answer": "Yes, Save Tiktok MP4 is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is the sound name shown for a TikTok post?",
+        "answer": "The result card shows the cover, title, runtime, creator and the soundtrack name with a music icon under the metadata."
       },
       {
-        "question": "Do I need to create an account or sign up to use Save Tiktok MP4?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Save Tiktok MP4 on mobile devices or tablets?",
-        "answer": "Yes, Save Tiktok MP4 works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What file does the MP4 saver hand over?",
+        "answer": "Once a video row is chosen, the file opens in a new browser tab as an MP4 ready to save to your device."
       },
       {
         "question": "Do you keep the TikTok links I paste into the saver?",
@@ -24326,20 +24012,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Save Twitter Videos do?",
-        "answer": "Save Twitter Videos lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it work with links from x.com as well as twitter.com?",
+        "answer": "twitter.com, x.com and t.co addresses are all validated, so links copied from either domain resolve the same way."
       },
       {
-        "question": "Is Save Twitter Videos really free? Are there any hidden charges?",
-        "answer": "Yes, Save Twitter Videos is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I paste a direct video URL instead of a tweet link?",
+        "answer": "The tool works for regular posts as well as direct video URLs, returning the renditions the resolver can extract."
       },
       {
-        "question": "Do I need to create an account or sign up to use Save Twitter Videos?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Save Twitter Videos on mobile devices or tablets?",
-        "answer": "Yes, Save Twitter Videos works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What if the tweet contains no video?",
+        "answer": "Posts with no downloadable video get an inline error; only posts with video or animated media return options."
       },
       {
         "question": "Does the tool call Twitter with my credentials?",
@@ -24613,20 +24295,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does SendGrid API Key Tester do?",
-        "answer": "SendGrid API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I check a SendGrid key when the mail send endpoint is not wired in?",
+        "answer": "Paste whichever SendGrid API URL you want probed - the tester loads on the custom endpoint preset - and supply the key in the masked field."
       },
       {
-        "question": "Is SendGrid API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, SendGrid API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which authorization scheme does the SendGrid probe use?",
+        "answer": "The generic Bearer scheme: the key is placed in an Authorization header, matching what SendGrid's v3 REST API expects."
       },
       {
-        "question": "Do I need to create an account or sign up to use SendGrid API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SendGrid API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, SendGrid API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens on a 401 from SendGrid?",
+        "answer": "It appears as an authorization failure in the console with the HTTP status and a trimmed response body. Only 200 or 201 flips the panel to the valid state."
       },
       {
         "question": "What does SopKit do with my SendGrid key after the test?",
@@ -25021,20 +24699,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Sharechat Video Downloader do?",
-        "answer": "Sharechat Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What kind of ShareChat content is supported?",
+        "answer": "It fetches the media behind a pasted ShareChat post link, aimed at Indian regional video and status clips, with thumbnail, title, runtime and creator in the result panel."
       },
       {
-        "question": "Is Sharechat Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Sharechat Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Are size estimates shown for ShareChat variants?",
+        "answer": "Quality rows carry size estimates for each variant, so a lighter file is easy to choose."
       },
       {
-        "question": "Do I need to create an account or sign up to use Sharechat Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Sharechat Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Sharechat Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I get a ShareChat link that resolves?",
+        "answer": "Use the post's share option to copy its link; feed or profile links will not resolve and show an error line."
       },
       {
         "question": "Where does my ShareChat link get resolved?",
@@ -25495,20 +25169,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does URL Slug Generator do?",
-        "answer": "URL Slug Generator lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I control the separators and casing of a slug?",
+        "answer": "A separator toggle switches between hyphen and underscore, and a capitalisation switch chooses lowercase output or preserves the source text's capitalisation."
       },
       {
-        "question": "Is URL Slug Generator really free? Are there any hidden charges?",
-        "answer": "Yes, URL Slug Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens to accented characters like cafe or naive?",
+        "answer": "Unicode normalization strips the diacritics, so accented words simplify to plain ASCII before the slug is assembled."
       },
       {
-        "question": "Do I need to create an account or sign up to use URL Slug Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use URL Slug Generator on mobile devices or tablets?",
-        "answer": "Yes, URL Slug Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the tool remember the slugs I have copied?",
+        "answer": "Yes - Copy Slug adds the result to a recent-slugs trail of the last five, so earlier results stay one click away."
       },
       {
         "question": "Is the headline or title I convert to a slug sent anywhere?",
@@ -25613,20 +25283,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Snapchat Saver do?",
-        "answer": "Snapchat Saver lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can the online saver handle Spotlight clips and stories?",
+        "answer": "Spotlights, stories and individual snap links flow through the same single input field."
       },
       {
-        "question": "Is Snapchat Saver really free? Are there any hidden charges?",
-        "answer": "Yes, Snapchat Saver is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the result card tell me about a snap before saving?",
+        "answer": "It renders the thumbnail, title, duration, author and media type, followed by every rendition the resolver returns."
       },
       {
-        "question": "Do I need to create an account or sign up to use Snapchat Saver?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Snapchat Saver on mobile devices or tablets?",
-        "answer": "Yes, Snapchat Saver works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are malformed Snapchat links caught before processing?",
+        "answer": "The field checks for snapchat.com and snap.com up front; unsupported or malformed links get an inline error instead of a request."
       },
       {
         "question": "Is the snap link handled on your platform or mine?",
@@ -25672,20 +25338,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Snapchat Video Downloader do?",
-        "answer": "Snapchat Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "How brief is the Snapchat download flow?",
+        "answer": "Paste the snap URL, pick a size-labelled quality from the preview, then open the file in a fresh tab to save it."
       },
       {
-        "question": "Is Snapchat Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Snapchat Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the preview identify the snap's author and type?",
+        "answer": "The panel lists title, duration, author, type and thumbnail before any download begins."
       },
       {
-        "question": "Do I need to create an account or sign up to use Snapchat Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Snapchat Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Snapchat Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does a Snapchat link sometimes not resolve?",
+        "answer": "When nothing resolves, the inline error asks you to verify the link; expired snaps and links tied to a signed-in story view are typical failures."
       },
       {
         "question": "What happens to my Snapchat URL once the list is generated?",
@@ -25731,20 +25393,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Snov.io API Key Tester do?",
-        "answer": "Snov.io API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Since Snov.io has no preset, what do I need to test a key?",
+        "answer": "An API URL to probe plus the key itself. Diagnostics start in custom endpoint mode, and the request is issued as GET or POST with a Bearer header."
       },
       {
-        "question": "Is Snov.io API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Snov.io API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if Snov.io returns a non-2xx status?",
+        "answer": "The console shows the HTTP status and up to 160 characters of the response, so a scope problem reads differently from an invalid key."
       },
       {
-        "question": "Do I need to create an account or sign up to use Snov.io API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Snov.io API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Snov.io API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What if the Snov.io host never answers?",
+        "answer": "The 8-second timeout ends the request with a clear explanation instead of leaving the diagnostics running indefinitely."
       },
       {
         "question": "Is my Snov.io key stored by SopKit when I run this checker?",
@@ -25967,20 +25625,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does SparkPost API Key Tester do?",
-        "answer": "SparkPost API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the tester hit SparkPost's transmissions endpoint automatically?",
+        "answer": "No - SparkPost is not one of the hardwired providers, so the page opens on the custom endpoint preset and you name the exact URL to probe."
       },
       {
-        "question": "Is SparkPost API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, SparkPost API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I pick the HTTP method for a SparkPost check?",
+        "answer": "Yes - GET or POST, with the key attached as a Bearer token. No request body is sent either way, so pick a route that works with an empty request."
       },
       {
-        "question": "Do I need to create an account or sign up to use SparkPost API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SparkPost API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, SparkPost API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What counts as a passing SparkPost result?",
+        "answer": "HTTP 200 or 201 from your chosen endpoint. Everything else is shown as a failure with the status code and a slice of the server's response."
       },
       {
         "question": "Where is the SparkPost key sent when I press the run button?",
@@ -26353,20 +26007,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does Streamable Video Downloader do?",
-        "answer": "Streamable Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why should I save a Streamable clip quickly?",
+        "answer": "Streamable links can expire, so the tool is aimed at grabbing the downloadable variants before the clip URL stops working."
       },
       {
-        "question": "Is Streamable Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Streamable Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What details identify a Streamable clip before download?",
+        "answer": "The result card shows the thumbnail, title, runtime and uploader, and the options list reports the size of each rendition."
       },
       {
-        "question": "Do I need to create an account or sign up to use Streamable Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Streamable Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Streamable Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens when a Streamable link is dead?",
+        "answer": "The inline error appears when the clip URL cannot be read; ask the sender for a fresh upload or re-copy the link."
       },
       {
         "question": "Does SopKit copy the Streamable clip onto its servers?",
@@ -26471,20 +26121,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does Stripe API Key Tester do?",
-        "answer": "Stripe API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Stripe endpoint and request does the preset run?",
+        "answer": "A read-only GET to https://api.stripe.com/v1/charges?limit=1, authorized with your secret key as a Bearer token - no charge is created by a listing call."
       },
       {
-        "question": "Is Stripe API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Stripe API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I test a restricted Stripe key?",
+        "answer": "Yes, but the verdict reflects the endpoint used: a restricted key without charge-read permission will fail the /v1/charges probe even though it is valid elsewhere."
       },
       {
-        "question": "Do I need to create an account or sign up to use Stripe API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Stripe API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Stripe API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does Stripe expect a secret key rather than a publishable key?",
+        "answer": "The probe hits an account-level REST endpoint with Bearer authorization, which is the scheme of Stripe secret keys. Publishable keys are not accepted for that call and will be refused."
       },
       {
         "question": "Is my Stripe secret key exposed by running this test?",
@@ -26705,20 +26351,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does Ted Video Downloader do?",
-        "answer": "Ted Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the downloader cover TEDx talks as well as TED?",
+        "answer": "Both TED and TEDx talk pages resolve into a rendition list, with the speaker identified on the preview card."
       },
       {
-        "question": "Is Ted Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Ted Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which qualities are offered for a TED talk?",
+        "answer": "Quality options show the sizes reported for each variant, so a smaller file can be chosen for study use."
       },
       {
-        "question": "Do I need to create an account or sign up to use Ted Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Ted Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Ted Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What if a TED talk link resolves to nothing?",
+        "answer": "Some talk pages embed players the resolver cannot read; the inline error appears, and the direct talk URL from the TED site usually works better."
       },
       {
         "question": "Where does a TED talk lookup happen?",
@@ -26764,20 +26406,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does Telegram Video Downloader do?",
-        "answer": "Telegram Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Telegram links can I paste?",
+        "answer": "Only t.me links pass validation; use the URL of a message that contains a video or media file rather than a channel or profile address."
       },
       {
-        "question": "Is Telegram Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Telegram Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can it read videos from private Telegram channels?",
+        "answer": "Content in private or invite-only channels is not reachable by the resolver; only publicly accessible t.me posts resolve."
       },
       {
-        "question": "Do I need to create an account or sign up to use Telegram Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Telegram Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Telegram Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What appears on the result card for a Telegram video?",
+        "answer": "The card shows the thumbnail, title, duration and channel author, with quality rows listing every rendition and a size estimate."
       },
       {
         "question": "Does SopKit join the Telegram channel to fetch media?",
@@ -27133,50 +26771,67 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     "seoDescription": "Private Text Sorter: privately process text content entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure."
   },
   "text-to-ascii-converter": {
-    whatItIs: `Text to ASCII Converter converts plain text characters into their corresponding decimal ASCII numerical values. Each character in the standard ASCII character set corresponds to an integer between 0 and 127, representing its entry point in the American Standard Code for Information Interchange table.
-
-## Converting Characters to Decimal Codes
-
-In ASCII encoding, every keypress produces a specific numeric code:
-- Uppercase letters 'A' through 'Z' span decimal values 65 through 90.
-- Lowercase letters 'a' through 'z' span decimal values 97 through 122.
-- Numerical digits '0' through '9' span decimal values 48 through 57.
-- Common punctuation marks have fixed codes, such as exclamation mark (33), question mark (63), and period (46).
-- The space character corresponds to decimal 32, while a line feed (newline) corresponds to decimal 10.
-
-For example, typing the word "Hello" generates the decimal sequence 72 101 108 108 111. You can format the resulting numeric list with spaces, commas, or line breaks to integrate directly with programming environments.
-
-## Common Developer Scenarios
-
-- Initializing character byte arrays in C, C++, Rust, or assembly language.
-- Verifying ASCII values when implementing hashing algorithms, checksums, or cipher routines.
-- Debugging communication protocols where payloads require numeric character encodings.
-- Preparing test vectors for parser validation and string processing routines.`,
-    features: [
-      `Converts text into decimal ASCII codes instantly as you type`,
-      `Supports custom delimiter formatting including space, comma, and newline`,
-      `Live inspection table displaying glyphs, ASCII decimal, hex, and binary codes`,
-      `Bidirectional swap button to flip back to ASCII to Text decoding`,
-      `One-click clipboard copying and text file downloads for rapid workflow`,
-      `Handles letters, digits, punctuation and whitespace in a single conversion pass`,
+    "whatItIs": "Text to ASCII Converter converts plain text characters into their corresponding decimal ASCII numerical values. Each character in the standard ASCII character set corresponds to an integer between 0 and 127, representing its entry point in the American Standard Code for Information Interchange table.\n\n## Converting Characters to Decimal Codes\n\nIn ASCII encoding, every keypress produces a specific numeric code:\n- Uppercase letters 'A' through 'Z' span decimal values 65 through 90.\n- Lowercase letters 'a' through 'z' span decimal values 97 through 122.\n- Numerical digits '0' through '9' span decimal values 48 through 57.\n- Common punctuation marks have fixed codes, such as exclamation mark (33), question mark (63), and period (46).\n- The space character corresponds to decimal 32, while a line feed (newline) corresponds to decimal 10.\n\nFor example, typing the word \"Hello\" generates the decimal sequence 72 101 108 108 111. You can format the resulting numeric list with spaces, commas, or line breaks to integrate directly with programming environments.\n\n## Common Developer Scenarios\n\n- Initializing character byte arrays in C, C++, Rust, or assembly language.\n- Verifying ASCII values when implementing hashing algorithms, checksums, or cipher routines.\n- Debugging communication protocols where payloads require numeric character encodings.\n- Preparing test vectors for parser validation and string processing routines.",
+    "features": [
+      "Converts text into decimal ASCII codes instantly as you type",
+      "Supports custom delimiter formatting including space, comma, and newline",
+      "Live inspection table displaying glyphs, ASCII decimal, hex, and binary codes",
+      "Bidirectional swap button to flip back to ASCII to Text decoding",
+      "One-click clipboard copying and text file downloads for rapid workflow",
+      "Handles letters, digits, punctuation and whitespace in a single conversion pass"
     ],
-    howToUse: {
-      name: `How to convert text to ASCII decimal codes`,
-      steps: [
-        { name: `Enter Plain Text`, text: `Type or paste your text characters into the left-hand input box.` },
-        { name: `Choose Delimiter`, text: `Select whether you want the decimal codes separated by spaces, commas, or line breaks.` },
-        { name: `Inspect Decimal Codes`, text: `Review the generated base-10 ASCII values in the right-hand output panel.` },
-        { name: `Copy or Export`, text: `Click Copy to grab the values or Download to export them to a file.` },
-      ],
+    "howToUse": {
+      "name": "How to convert text to ASCII decimal codes",
+      "steps": [
+        {
+          "name": "Enter Plain Text",
+          "text": "Type or paste your text characters into the left-hand input box."
+        },
+        {
+          "name": "Choose Delimiter",
+          "text": "Select whether you want the decimal codes separated by spaces, commas, or line breaks."
+        },
+        {
+          "name": "Inspect Decimal Codes",
+          "text": "Review the generated base-10 ASCII values in the right-hand output panel."
+        },
+        {
+          "name": "Copy or Export",
+          "text": "Click Copy to grab the values or Download to export them to a file."
+        }
+      ]
     },
-    faqs: [
-      { question: `What is the ASCII value of the space character?`, answer: `The space character corresponds to decimal value 32 in the ASCII character table.` },
-      { question: `Why do uppercase and lowercase letters have different ASCII codes?`, answer: `Uppercase letters (A through Z) occupy decimal values 65 through 90, while lowercase letters (a through z) occupy decimal values 97 through 122. The numerical difference between corresponding uppercase and lowercase letters is exactly 32.` },
-      { question: `How does the tool handle characters outside the standard ASCII range?`, answer: `Characters with codes 128 through 255 belong to extended ASCII. Characters beyond 255 (such as symbols or emojis) are resolved using their standard Unicode code points.` },
-      { question: `Can I convert ASCII numbers back into readable text?`, answer: `Yes. Click the Swap button at the top right to switch to the ASCII to Text converter.` },
-      { question: `Is my text private when using this converter?`, answer: `Yes. All character processing occurs locally inside your browser. No text is sent to an external server or logged.` },
+    "faqs": [
+      {
+        "question": "What is the ASCII value of the space character?",
+        "answer": "The space character corresponds to decimal value 32 in the ASCII character table."
+      },
+      {
+        "question": "Why do uppercase and lowercase letters have different ASCII codes?",
+        "answer": "Uppercase letters (A through Z) occupy decimal values 65 through 90, while lowercase letters (a through z) occupy decimal values 97 through 122. The numerical difference between corresponding uppercase and lowercase letters is exactly 32."
+      },
+      {
+        "question": "How does the tool handle characters outside the standard ASCII range?",
+        "answer": "Characters with codes 128 through 255 belong to extended ASCII. Characters beyond 255 (such as symbols or emojis) are resolved using their standard Unicode code points."
+      },
+      {
+        "question": "Can I convert ASCII numbers back into readable text?",
+        "answer": "Yes. Click the Swap button at the top right to switch to the ASCII to Text converter."
+      },
+      {
+        "question": "What output formats can the ASCII codes use?",
+        "answer": "The Output Delimiter control switches between spaces, commas, newlines and a continuous run of digits, which matters when piping codes into code or shell scripts."
+      },
+      {
+        "question": "How are ASCII values displayed for inspection?",
+        "answer": "A live table shows the first 24 characters with their glyph, decimal code, hex, 8-bit binary and octal values, updating as you type."
+      },
+      {
+        "question": "How do I decode a list of decimal codes back into text?",
+        "answer": "Click Swap to flip into ASCII to Text mode with the current output as input; the same delimiter options apply in the other direction."
+      }
     ],
-    seoDescription: `Convert text to ASCII decimal codes online. Free text to ASCII converter with customizable delimiters, character breakdown table, and instant copying.`,
+    "seoDescription": "Convert text to ASCII decimal codes online. Free text to ASCII converter with customizable delimiters, character breakdown table, and instant copying."
   },
   "text-to-binary-converter": {
     whatItIs: `Text to Binary Converter translates readable text into 8-bit binary code (bytes composed of 0s and 1s). It encodes each character into its standard ASCII or UTF-8 binary representation, showing how text is stored in digital computer memory and transmitted across network cables.
@@ -27783,20 +27438,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Threads Video Downloader do?",
-        "answer": "Threads Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Do carousel posts on Threads work here?",
+        "answer": "The resolver turns Threads video posts and carousels into downloadable rows, and the card shows the thumbnail, title, runtime and poster handle."
       },
       {
-        "question": "Is Threads Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Threads Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does a domain check run before any Threads request?",
+        "answer": "The URL must come from threads.net before any request goes out; other domains are turned away before the resolver runs."
       },
       {
-        "question": "Do I need to create an account or sign up to use Threads Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Threads Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Threads Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What if a Threads post has no video?",
+        "answer": "An inline error appears if the post contains no fetchable media; text-only posts are the usual reason."
       },
       {
         "question": "Is my Threads link exposed during extraction?",
@@ -27842,20 +27493,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Tiktok Downloader do?",
-        "answer": "Tiktok Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the TikTok preview include?",
+        "answer": "It surfaces the cover, title, duration, creator and sound name before any rendition is picked."
       },
       {
-        "question": "Is Tiktok Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Tiktok Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I save just the sound from a TikTok clip?",
+        "answer": "Audio variants appear as separate rows with a music-note icon, so the sound can be kept without the video."
       },
       {
-        "question": "Do I need to create an account or sign up to use Tiktok Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Tiktok Downloader on mobile devices or tablets?",
-        "answer": "Yes, Tiktok Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why would a TikTok link fail to resolve?",
+        "answer": "When resolution fails, an inline error asks for a fresh link; deleted posts and expired short links are common causes."
       },
       {
         "question": "Does the TikTok lookup go through SopKit's servers or mine?",
@@ -27901,20 +27548,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Tiktok Saver No Watermark do?",
-        "answer": "Tiktok Saver No Watermark lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the saved TikTok still carry the watermark?",
+        "answer": "The saver targets the watermark-free copy of the video that the resolver reports, so the clean source rendition is what opens."
       },
       {
-        "question": "Is Tiktok Saver No Watermark really free? Are there any hidden charges?",
-        "answer": "Yes, Tiktok Saver No Watermark is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do private or friends-only TikToks resolve?",
+        "answer": "Only public posts resolve; private and friends-only videos are not reachable, so the tool returns an error note instead."
       },
       {
-        "question": "Do I need to create an account or sign up to use Tiktok Saver No Watermark?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Tiktok Saver No Watermark on mobile devices or tablets?",
-        "answer": "Yes, Tiktok Saver No Watermark works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do the quality rows say how large each file is?",
+        "answer": "Quality rows display file sizes, with a music icon marking audio renditions, so you can judge before saving."
       },
       {
         "question": "Is the clean file fetched through a third-party conversion?",
@@ -27960,20 +27603,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Tiktok Videos Downloader do?",
-        "answer": "Tiktok Videos Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do the size labels on each rendition row tell me?",
+        "answer": "Every rendition the resolver finds gets its own size-labelled row, so the files can be compared before one is opened."
       },
       {
-        "question": "Is Tiktok Videos Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Tiktok Videos Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I download a whole TikTok profile in one request?",
+        "answer": "One post link resolves per request; paste each video's share link in turn to collect several clips."
       },
       {
-        "question": "Do I need to create an account or sign up to use Tiktok Videos Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Tiktok Videos Downloader on mobile devices or tablets?",
-        "answer": "Yes, Tiktok Videos Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the soundtrack easy to save separately?",
+        "answer": "Audio-only rows make soundtrack saving easy, and the result card shows the soundtrack name alongside the creator."
       },
       {
         "question": "What does SopKit do with TikTok URLs I submit?",
@@ -28246,20 +27885,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does TSV to JSON Converter do?",
-        "answer": "TSV to JSON Converter lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where do the JSON field names come from in a TSV file?",
+        "answer": "The first TSV line supplies the field names; every following line becomes a JSON record, split on tab characters."
       },
       {
-        "question": "Is TSV to JSON Converter really free? Are there any hidden charges?",
-        "answer": "Yes, TSV to JSON Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens to short rows with missing trailing cells?",
+        "answer": "Missing trailing cells become empty strings on the generated record rather than disappearing from the object, keeping records aligned with the headers."
       },
       {
-        "question": "Do I need to create an account or sign up to use TSV to JSON Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use TSV to JSON Converter on mobile devices or tablets?",
-        "answer": "Yes, TSV to JSON Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the conversion return for an empty input?",
+        "answer": "A bare [] array - the tool treats empty or whitespace-only input as an empty list and otherwise writes a two-space-indented JSON array."
       },
       {
         "question": "Where are my tab-separated records handled when I convert them?",
@@ -28305,20 +27940,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Tumblr Video Downloader do?",
-        "answer": "Tumblr Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Are GIF posts supported as well as videos?",
+        "answer": "It fetches video and GIF media from a pasted Tumblr post URL, with option rows reporting sizes for each variant."
       },
       {
-        "question": "Is Tumblr Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Tumblr Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which blog does a saved Tumblr post come from?",
+        "answer": "The result card shows the thumbnail, title, duration and blog name so the source is clear before saving."
       },
       {
-        "question": "Do I need to create an account or sign up to use Tumblr Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Tumblr Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Tumblr Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does a Tumblr post fail to resolve?",
+        "answer": "Posts with external embeds or deleted media return an inline error; try the post's permalink again from the live blog."
       },
       {
         "question": "Is a Tumblr link saved if I repeat the lookup?",
@@ -28364,20 +27995,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Twilio API Key Tester do?",
-        "answer": "Twilio API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the tester verify a Twilio Account SID and Auth Token pair?",
+        "answer": "One value per run: whatever you paste is sent in a Bearer header. If your endpoint expects HTTP Basic with a SID and token, that pairing is not assembled by the tester."
       },
       {
-        "question": "Is Twilio API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Twilio API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where should I point the Twilio probe?",
+        "answer": "You control the URL since the page defaults to the custom endpoint option. Pick a Twilio API route that answers 200 or 201 for a valid credential."
       },
       {
-        "question": "Do I need to create an account or sign up to use Twilio API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Twilio API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Twilio API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does a 200 or 201 from the Twilio probe actually prove?",
+        "answer": "That the endpoint answered with your value attached - it validates the credential for that request, not for every Twilio product or permission on the account."
       },
       {
         "question": "What happens to the Twilio credential I paste while testing?",
@@ -28423,20 +28050,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Twitch Video Downloader do?",
-        "answer": "Twitch Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I download a stream while it is still live?",
+        "answer": "The resolver works on clips and completed VODs; a live broadcast has no finished recording yet, so wait until the VOD is published."
       },
       {
-        "question": "Is Twitch Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Twitch Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which Twitch addresses are valid?",
+        "answer": "twitch.tv URLs and clips.twitch.tv links pass validation, and both clips and completed VODs resolve from the same field."
       },
       {
-        "question": "Do I need to create an account or sign up to use Twitch Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Twitch Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Twitch Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do subscriber-only VODs resolve?",
+        "answer": "No — subscriber-only and deleted VODs cannot be read, and URLs that are neither clips nor VODs return the inline error."
       },
       {
         "question": "Does the Twitch lookup require my Twitch login?",
@@ -28541,20 +28164,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Twitter Video Downloader do?",
-        "answer": "Twitter Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the downloader handle animated GIFs on X?",
+        "answer": "It covers both video posts and animated media within the same flow, so an animated file resolves like a regular video."
       },
       {
-        "question": "Is Twitter Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Twitter Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I save a video from a protected account?",
+        "answer": "Protected accounts' media is not publicly reachable, so only public tweets resolve."
       },
       {
-        "question": "Do I need to create an account or sign up to use Twitter Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Twitter Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Twitter Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What appears in the tweet result before I choose a quality?",
+        "answer": "The card shows the tweet thumbnail with title, runtime and handle, and quality rows give the size of each rendition the resolver extracts."
       },
       {
         "question": "Are the tweets I process linked back to me?",
@@ -28659,20 +28278,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Universal Video Downloader do?",
-        "answer": "Universal Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Do I need to select a platform before pasting a URL?",
+        "answer": "There is no platform picker — the resolver inspects the URL and returns every rendition it can find for that source."
       },
       {
-        "question": "Is Universal Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Universal Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "When should I use the universal tool instead of a platform saver?",
+        "answer": "Use it when a link comes from a site without a dedicated SopKit saver, or when you are unsure which saver fits; the resolver attempt is the same."
       },
       {
-        "question": "Do I need to create an account or sign up to use Universal Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Universal Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Universal Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where do downloads open for sources without a dedicated page?",
+        "answer": "Every download opens in a new tab regardless of the source site, and audio variants are marked with a music-note icon."
       },
       {
         "question": "How universal is the lookup — does it try every platform at once?",
@@ -29347,20 +28962,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Video Converter do?",
-        "answer": "Video Converter lets you convert videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which input formats can I convert?",
+        "answer": "Uploads accept MP4, WebM, OGG, MOV, AVI and MKV files up to 2GB; duration, resolution, size and container appear once the file loads."
       },
       {
-        "question": "Is Video Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Video Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What output formats are available?",
+        "answer": "Output targets are WebM (VP8), MP4 (H.264) or OGG (Theora); if the browser's recorder cannot produce one, it falls back to WebM."
       },
       {
-        "question": "Do I need to create an account or sign up to use Video Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Video Converter on mobile devices or tablets?",
-        "answer": "Yes, Video Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why is the converted file a different size from the original?",
+        "answer": "The re-encode runs through the browser's MediaRecorder at about 30fps and roughly 5Mbps, so output size follows that bitrate rather than the source file."
       },
       {
         "question": "Is my video uploaded anywhere when I convert it?",
@@ -29406,20 +29017,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Video Editor do?",
-        "answer": "Video Editor lets you process videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "What editing operations does the tool support?",
+        "answer": "Upload a video up to 2GB, then use trim mode for start and end sliders or crop mode to shave pixels off each edge; finished edits preview before saving."
       },
       {
-        "question": "Is Video Editor really free? Are there any hidden charges?",
-        "answer": "Yes, Video Editor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which quality preset should I choose for export?",
+        "answer": "Original, High, Medium and Low presets map to different bitrate targets, so pick the one that balances clarity against file size."
       },
       {
-        "question": "Do I need to create an account or sign up to use Video Editor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Video Editor on mobile devices or tablets?",
-        "answer": "Yes, Video Editor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What format is the edited video saved as?",
+        "answer": "The finished edit is encoded as WebM and previews in the player before you save it to your device."
       },
       {
         "question": "Do my clips leave my computer during editing?",
@@ -29465,20 +29072,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Video Tools do?",
-        "answer": "Video Tools lets you convert videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the Video Tools page process any files itself?",
+        "answer": "It is pure navigation — each card opens a dedicated utility page where the actual conversion or editing work runs."
       },
       {
-        "question": "Is Video Tools really free? Are there any hidden charges?",
-        "answer": "Yes, Video Tools is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I find a converter or editor from this directory?",
+        "answer": "Use the card grid or the category links; each card shows the tool name, its summary line and a Popular badge where one is set."
       },
       {
-        "question": "Do I need to create an account or sign up to use Video Tools?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Video Tools on mobile devices or tablets?",
-        "answer": "Yes, Video Tools works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do all tools listed here handle files the same way?",
+        "answer": "No — processing models vary from tool to tool, and each page documents its own inputs, outputs and where the work happens."
       },
       {
         "question": "Does browsing this video directory process any files?",
@@ -29524,20 +29127,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Vimeo Video Downloader do?",
-        "answer": "Vimeo Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Do larger Vimeo renditions keep their original resolution?",
+        "answer": "Larger renditions keep their original resolution where offered, and the picker spans whatever the resolver exposes."
       },
       {
-        "question": "Is Vimeo Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Vimeo Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I download a password-protected Vimeo video?",
+        "answer": "Password and privacy restrictions make the page unreadable to the resolver; only publicly viewable Vimeo links resolve."
       },
       {
-        "question": "Do I need to create an account or sign up to use Vimeo Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Vimeo Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Vimeo Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the Vimeo card identify before I download?",
+        "answer": "The result card lists the title, duration, uploader and a cover frame."
       },
       {
         "question": "Does the Vimeo fetch happen inside SopKit's network?",
@@ -29642,20 +29241,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Vkontakte Video Downloader do?",
-        "answer": "Vkontakte Video Downloader lets you download videos entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your videos never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it accept vk.com video links only?",
+        "answer": "Links must be vk.com addresses; anything else is rejected immediately with a validation message."
       },
       {
-        "question": "Is Vkontakte Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Vkontakte Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is shown for a VK video before saving?",
+        "answer": "Preview lines carry the title, runtime and the channel it came from, and quality rows list sizes for all renditions."
       },
       {
-        "question": "Do I need to create an account or sign up to use Vkontakte Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your videos immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Vkontakte Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Vkontakte Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can it handle long-form VK content?",
+        "answer": "It suits saving long-form Russian social video content, since larger renditions and longer runtimes are listed among the variants."
       },
       {
         "question": "Is the VK URL kept for future requests?",
@@ -30894,20 +30489,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does XML Formatter & Beautifier do?",
-        "answer": "XML Formatter & Beautifier lets you format code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do Beautify and Minify mode differ?",
+        "answer": "Beautify re-indents nested elements with the 2, 4 or 8 space width you choose, while Minify compresses the same document for transport or storage."
       },
       {
-        "question": "Is XML Formatter & Beautifier really free? Are there any hidden charges?",
-        "answer": "Yes, XML Formatter & Beautifier is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict formatters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if the XML is malformed?",
+        "answer": "Documents are validated first, so invalid XML shows a syntax error card instead of output. The two-book sample lets you see valid behavior immediately."
       },
       {
-        "question": "Do I need to create an account or sign up to use XML Formatter & Beautifier?",
-        "answer": "No account, signup, or email is required. Simply open the page and start formating your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use XML Formatter & Beautifier on mobile devices or tablets?",
-        "answer": "Yes, XML Formatter & Beautifier works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the formatter show how much space it saved?",
+        "answer": "Yes - stats cards compare the original bytes, the processed bytes and the savings ratio. You can then copy the result or download it as formatted.xml."
       },
       {
         "question": "Does the XML I validate get transmitted for parsing?",
@@ -30952,20 +30543,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does XML to JSON Converter do?",
-        "answer": "XML to JSON Converter lets you convert code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the converter decide between a string and an object for an XML element?",
+        "answer": "Text-only elements collapse into plain string values; elements with children become nested objects, and repeated siblings sharing a tag name are collected into an array."
       },
       {
-        "question": "Is XML to JSON Converter really free? Are there any hidden charges?",
-        "answer": "Yes, XML to JSON Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where does the root element name go in the JSON output?",
+        "answer": "It becomes the top-level key wrapping the document, and the result is pretty-printed with two-space indentation ready for an API client."
       },
       {
-        "question": "Do I need to create an account or sign up to use XML to JSON Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use XML to JSON Converter on mobile devices or tablets?",
-        "answer": "Yes, XML to JSON Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does invalid XML produce?",
+        "answer": "The browser DOMParser reports it as an error toast and no JSON output is produced, so fix the markup before converting."
       },
       {
         "question": "Is it okay to convert a client's XML feed with this tool?",
@@ -32640,20 +32227,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does Zendesk API Key Tester do?",
-        "answer": "Zendesk API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I check a Zendesk API token without a preset endpoint?",
+        "answer": "Yes - the page starts on Custom Endpoint Address, so paste the Zendesk API URL you want probed, put the token in the masked field and run diagnostics."
       },
       {
-        "question": "Is Zendesk API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Zendesk API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the Zendesk probe support POST as well as GET?",
+        "answer": "Both are available for the custom request, and the Bearer header is built from whatever you paste into the token field."
       },
       {
-        "question": "Do I need to create an account or sign up to use Zendesk API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Zendesk API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, Zendesk API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What should I look at if the Zendesk check reports a failure?",
+        "answer": "The failure card's status code and response slice: a 401 points at the token, while a 404 usually means the URL path is wrong."
       },
       {
         "question": "Does SopKit retain the Zendesk key that I test here?",
@@ -32699,20 +32282,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does ZoomInfo API Key Tester do?",
-        "answer": "ZoomInfo API Key Tester lets you validate code and data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your code and data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which ZoomInfo URL does the tester call?",
+        "answer": "None by default - ZoomInfo is custom-only here, so the API URL field is yours. Enter the resource you want checked and paste the key in the masked input."
       },
       {
-        "question": "Is ZoomInfo API Key Tester really free? Are there any hidden charges?",
-        "answer": "Yes, ZoomInfo API Key Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are CORS, timeout and invalid-key outcomes separated?",
+        "answer": "The console treats them as different cases: cross-origin blocking is flagged with a hint, slow requests end in a timeout, and a refused key arrives with its HTTP code."
       },
       {
-        "question": "Do I need to create an account or sign up to use ZoomInfo API Key Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your code and data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use ZoomInfo API Key Tester on mobile devices or tablets?",
-        "answer": "Yes, ZoomInfo API Key Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I test a ZoomInfo key for a specific API entitlement?",
+        "answer": "Indirectly - the verdict covers the URL you permit the probe to hit. Choose an endpoint that represents the entitlement you care about, since scopes are not inspected separately."
       },
       {
         "question": "Where does my ZoomInfo key go when I hit Run Connection Diagnostics?",
@@ -33374,35 +32953,50 @@ Students of all levels — high school, undergraduate, graduate, and lifelong le
     seoDescription: `Best free online tools for students in 2026 — writing, math, study, and citation tools that respect your privacy. 100% free with no data collection.`,
   },
   "tools-for-developers": {
-    whatItIs: `A curated guide to the best free online tools for developers in 2026. From code formatters and validators to API testers, regex builders, and performance analyzers — this collection highlights essential utilities that make development faster and easier without compromising code privacy.
-
-## Why This Guide Matters
-
-Developers handle sensitive code and data daily. Using online tools that upload code to external servers creates security risks. This guide focuses on developer tools that process everything locally, including SopKit's comprehensive developer toolset, ensuring your proprietary code never leaves your machine.
-
-## Who Is It For?
-
-Software developers, engineers, DevOps professionals, and programming students who need reliable development utilities that respect code privacy.`,
-    features: [
-      `Curated collection of developer tools that process code locally`,
-      `Covers formatting, validation, conversion, testing, and debugging utilities`,
-      `Focus on tools with zero server uploads for code security`,
-      `Includes SopKit's developer tools — JSON formatter, regex tester, hash generator, and more`,
-      `Gives context on when each tool fits into a real workflow`,
+    "whatItIs": "A curated guide to the best free online tools for developers in 2026. From code formatters and validators to API testers, regex builders, and performance analyzers — this collection highlights essential utilities that make development faster and easier without compromising code privacy.\n\n## Why This Guide Matters\n\nDevelopers handle sensitive code and data daily. Using online tools that upload code to external servers creates security risks. This guide focuses on developer tools that process everything locally, including SopKit's comprehensive developer toolset, ensuring your proprietary code never leaves your machine.\n\n## Who Is It For?\n\nSoftware developers, engineers, DevOps professionals, and programming students who need reliable development utilities that respect code privacy.",
+    "features": [
+      "Curated collection of developer tools that process code locally",
+      "Covers formatting, validation, conversion, testing, and debugging utilities",
+      "Focus on tools with zero server uploads for code security",
+      "Includes SopKit's developer tools — JSON formatter, regex tester, hash generator, and more",
+      "Gives context on when each tool fits into a real workflow"
     ],
-    howToUse: {
-      name: "How to use this guide",
-      steps: [
-        { name: "Browse developer tools", text: "Explore our curated collection of privacy-first developer utilities." },
-        { name: "Choose your tool", text: "Select the tool that matches your current task — formatting, validation, testing, or conversion." },
-        { name: "Work securely", text: "Use tools that process locally to keep your code and data confidential." },
-      ],
+    "howToUse": {
+      "name": "How to use this guide",
+      "steps": [
+        {
+          "name": "Browse developer tools",
+          "text": "Explore our curated collection of privacy-first developer utilities."
+        },
+        {
+          "name": "Choose your tool",
+          "text": "Select the tool that matches your current task — formatting, validation, testing, or conversion."
+        },
+        {
+          "name": "Work securely",
+          "text": "Use tools that process locally to keep your code and data confidential."
+        }
+      ]
     },
-    faqs: [
-      { question: `Are these tools safe for proprietary code?`, answer: `Yes, all recommended tools process code locally in your browser. Your proprietary code never leaves your machine.` },
-      { question: `Do I need to install anything?`, answer: `No, all tools in this guide work directly in your browser with no installation, plugins, or accounts required.` },
+    "faqs": [
+      {
+        "question": "Are these tools safe for proprietary code?",
+        "answer": "Yes, all recommended tools process code locally in your browser. Your proprietary code never leaves your machine."
+      },
+      {
+        "question": "What kind of developer tasks does this guide cover?",
+        "answer": "It groups daily-driver utilities into JSON work, encoding and token inspection, code formatters, generators, small utilities and text transforms, linking out to each tool it names."
+      },
+      {
+        "question": "Who is the guide written for?",
+        "answer": "Software developers, engineers, DevOps professionals and programming students - especially those who care where their code and tokens are processed."
+      },
+      {
+        "question": "Does the guide include SopKit's own tools alongside third-party picks?",
+        "answer": "It is a curated stack centered on SopKit's developer category - the JSON formatter, validator, diff checker, Base64 tool and more - rather than a vendor-neutral list."
+      }
     ],
-    seoDescription: `Best free online tools for developers — code formatters, validators, testers, and converters. 100% client-side processing for code privacy.`,
+    "seoDescription": "Best free online tools for developers — code formatters, validators, testers, and converters. 100% client-side processing for code privacy."
   },
   "seo-tools-free-online": {
     whatItIs: `A comprehensive guide to the best free SEO tools available online in 2026. From keyword research and rank tracking to site audits, backlink analysis, and content optimization — this collection highlights tools that help improve your search engine rankings without expensive subscriptions.
@@ -33529,35 +33123,50 @@ Website owners, bloggers, small business owners, SEO beginners, and digital mark
     seoDescription: `Top 10 free online SEO tools — keyword research, site audit, backlink analysis, and rank tracking. Professional SEO without expensive subscriptions.`,
   },
   "top-10-json-tools-online": {
-    whatItIs: `Discover the top 10 free online JSON tools for developers. From formatters and validators to editors, converters, minifiers, and diff checkers — this guide covers the best browser-based JSON utilities that process data locally for maximum security.
-
-## Why This Guide Matters
-
-JSON is the backbone of modern web APIs and data exchange. Having reliable tools to format, validate, and transform JSON data is essential for developers. This guide highlights tools that process JSON locally in your browser, ensuring sensitive API responses and configuration files never leave your machine.
-
-## Who Is It For?
-
-Software developers, API integrators, DevOps engineers, and anyone who regularly works with JSON data and needs reliable, private processing tools.`,
-    features: [
-      `Curated list of 10 best free JSON tools for developers`,
-      `Covers formatting, validation, editing, conversion, minification, and comparison`,
-      `All tools process JSON locally — no data uploads to servers`,
-      `Includes SopKit's JSON formatter and validator`,
-      `Each listing notes the niche it fills among JSON workflows`,
+    "whatItIs": "Discover the top 10 free online JSON tools for developers. From formatters and validators to editors, converters, minifiers, and diff checkers — this guide covers the best browser-based JSON utilities that process data locally for maximum security.\n\n## Why This Guide Matters\n\nJSON is the backbone of modern web APIs and data exchange. Having reliable tools to format, validate, and transform JSON data is essential for developers. This guide highlights tools that process JSON locally in your browser, ensuring sensitive API responses and configuration files never leave your machine.\n\n## Who Is It For?\n\nSoftware developers, API integrators, DevOps engineers, and anyone who regularly works with JSON data and needs reliable, private processing tools.",
+    "features": [
+      "Curated list of 10 best free JSON tools for developers",
+      "Covers formatting, validation, editing, conversion, minification, and comparison",
+      "All tools process JSON locally — no data uploads to servers",
+      "Includes SopKit's JSON formatter and validator",
+      "Each listing notes the niche it fills among JSON workflows"
     ],
-    howToUse: {
-      name: "How to use this guide",
-      steps: [
-        { name: "Browse JSON tools", text: "Explore the top 10 free JSON tools organized by function." },
-        { name: "Paste or load JSON", text: "Input your JSON data into any tool. All processing happens client-side." },
-        { name: "Get results", text: "View formatted, validated, or converted results instantly with no server round-trip." },
-      ],
+    "howToUse": {
+      "name": "How to use this guide",
+      "steps": [
+        {
+          "name": "Browse JSON tools",
+          "text": "Explore the top 10 free JSON tools organized by function."
+        },
+        {
+          "name": "Paste or load JSON",
+          "text": "Input your JSON data into any tool. All processing happens client-side."
+        },
+        {
+          "name": "Get results",
+          "text": "View formatted, validated, or converted results instantly with no server round-trip."
+        }
+      ]
     },
-    faqs: [
-      { question: `Are these JSON tools safe for sensitive data?`, answer: `Yes, all recommended tools process JSON locally in your browser. Your sensitive API responses and configuration data never leave your machine.` },
-      { question: `Do I need to install anything?`, answer: `No, all tools work directly in your browser with no installation, plugins, or accounts required.` },
+    "faqs": [
+      {
+        "question": "Are these JSON tools safe for sensitive data?",
+        "answer": "Yes, all recommended tools process JSON locally in your browser. Your sensitive API responses and configuration data never leave your machine."
+      },
+      {
+        "question": "Which tools make the top of this JSON shortlist?",
+        "answer": "The formatter takes first place, followed by the validator, viewer, editor, diff checker, minifier, CSV bridge, YAML converters, XML translator and schema and type generators."
+      },
+      {
+        "question": "Who should read this JSON tool list?",
+        "answer": "Developers, API integrators and DevOps engineers who work with JSON regularly and want reliable utilities - it reads as a ranked shortlist to hand a new teammate."
+      },
+      {
+        "question": "How does the guide frame picking between formatting and validating?",
+        "answer": "Validate first: a formatter given invalid input fails unhelpfully or mangles structure, so ten seconds of validation tells you whether you are formatting or debugging."
+      }
     ],
-    seoDescription: `Top 10 free online JSON tools for developers — formatter, validator, editor, converter, and minifier. Process JSON locally with zero data uploads.`,
+    "seoDescription": "Top 10 free online JSON tools for developers — formatter, validator, editor, converter, and minifier. Process JSON locally with zero data uploads."
   },
   "how-to-format-json-properly": {
     whatItIs: `A complete guide on how to format JSON properly. Learn JSON syntax rules, indentation best practices, common formatting mistakes to avoid, and how to use free online tools to validate and beautify your JSON data. Perfect for developers, API users, and data analysts.
@@ -34599,8 +34208,20 @@ Every generated command includes an itemized breakdown explaining what each flag
         "answer": "No, you can stream and download shared public links directly through the web interface."
       },
       {
-        "question": "Is this tool free?",
-        "answer": "Yes, Terabox Video Downloader is 100% free with no daily quotas or hidden charges."
+        "question": "What does Terabox Downloader do with a share link?",
+        "answer": "It extracts the share ID from /s/ links and surl= URLs, then embeds the video in a full-width player with autoplay and fullscreen support."
+      },
+      {
+        "question": "Can I watch a Terabox video before downloading anything?",
+        "answer": "Yes — pressing Watch opens the media in the built-in player, and streaming stays separate from the download action."
+      },
+      {
+        "question": "How do I embed or reshare a Terabox video?",
+        "answer": "The Embed Video dialog generates an iframe snippet that copies in one click, and the Share Link action copies the current URL to your clipboard."
+      },
+      {
+        "question": "Does Terabox Downloader cost anything to use?",
+        "answer": "There is no charge — the player, sample link, share and embed helpers are all included in the tool."
       },
       {
         "question": "Which service plays the Terabox video after I paste a link?",
@@ -34767,8 +34388,20 @@ Every generated command includes an itemized breakdown explaining what each flag
     },
     "faqs": [
       {
-        "question": "Is this tool free?",
-        "answer": "Yes, it is 100% free with no limits on downloads."
+        "question": "Which Facebook media does the clip downloader handle?",
+        "answer": "After a link check that only lets facebook.com, fb.watch and fb.com through, it handles short clips, full videos, Reels and story URLs."
+      },
+      {
+        "question": "Are Facebook clips saved as MP4 files?",
+        "answer": "The tool enables saving public Facebook videos and clips as MP4 with full audio clarity; download actions open the chosen clip in a new tab."
+      },
+      {
+        "question": "What if a Facebook clip will not resolve?",
+        "answer": "An inline error appears when a clip cannot be resolved; private posts and removed videos are the usual causes."
+      },
+      {
+        "question": "Does it cost anything to download a Facebook clip?",
+        "answer": "There is no cost — the link check, preview card and downloads are all available without payment."
       },
       {
         "question": "Where are downloaded videos saved?",
