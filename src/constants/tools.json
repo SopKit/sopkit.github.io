@@ -353,7 +353,7 @@
         {
           "id": "svg-to-png-converter",
           "name": "SVG to PNG Converter",
-          "description": "Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds.",
           "route": "/svg-to-png",
           "popular": true,
           "seoDescription": "Convert SVG vectors to high-quality PNGs with transparent backgrounds. Batch-friendly, private in-browser conversion — free, no signup needed.",
@@ -400,7 +400,7 @@
         {
           "id": "svg-to-jpg-converter",
           "name": "SVG to JPG Converter",
-          "description": "Convert SVG vector files into standard JPG images with custom background colors. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert SVG vector files into standard JPG images with custom background colors.",
           "route": "/svg-to-jpg",
           "popular": false,
           "seoDescription": "Rasterize SVG artwork into a JPG at the pixel size you need, on a background color you choose, since JPEG files cannot store transparency at all.",
@@ -428,7 +428,7 @@
         {
           "id": "image-metadata-remover",
           "name": "Image Metadata (EXIF) Remover",
-          "description": "Remove sensitive GPS, camera, and author metadata from your images before sharing online. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Remove sensitive GPS, camera, and author metadata from your images before sharing online.",
           "route": "/remove-image-metadata",
           "popular": false,
           "seoDescription": "Erase GPS coordinates, camera model, timestamps and owner tags from photos by redrawing the pixels on a clean canvas before you post, sell or send them.",
@@ -509,7 +509,7 @@
         {
           "id": "exif-reader",
           "name": "EXIF Reader",
-          "description": "Extract metadata and EXIF data from images including camera settings and GPS location. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Extract metadata and EXIF data from images including camera settings and GPS location.",
           "route": "/exif-reader",
           "popular": true,
           "seoDescription": "Inspect the hidden camera data inside any photo: maker, model, exposure time, ISO, focal length, capture date and the GPS coordinates that were recorded.",
@@ -518,7 +518,7 @@
         {
           "id": "favicon-generator",
           "name": "Favicon Generator",
-          "description": "Generate favicons from text, images, or emojis for websites. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Generate favicons from text, images, or emojis for websites.",
           "route": "/favicon-generator",
           "popular": true,
           "seoDescription": "Design website favicons from emojis, letters, or images with custom background colors. Preview in live browser tab frames and export instant ICO and PNG files.",
@@ -600,7 +600,7 @@
         {
           "id": "image-resizer",
           "name": "Image Resizer",
-          "description": "Resize images with custom dimensions and aspect ratios. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Resize images with custom dimensions and aspect ratios.",
           "route": "/image-resizer",
           "popular": false,
           "seoDescription": "Shrink or stretch images to exact pixel dimensions or a percentage of the original, with aspect-ratio lock and presets for major social platforms.",
@@ -753,7 +753,7 @@
         {
           "id": "photo-enhancer",
           "name": "Photo Enhancer",
-          "description": "Enhance photo quality with AI-powered image enhancement. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Enhance photo quality with AI-powered image enhancement.",
           "route": "/photo-enhancer",
           "popular": true,
           "seoDescription": "Lift a dull photo with brightness, contrast, saturation, blur and warmth controls, try the one-click auto fix, then compare the before and after.",
@@ -815,7 +815,7 @@
         {
           "id": "icon-generator",
           "name": "Icon Generator",
-          "description": "Generate app icons and favicons for Android, iOS, and web applications. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Generate app icons and favicons for Android, iOS, and web applications.",
           "route": "/icon-generator",
           "popular": false,
           "seoDescription": "Resize and export app icons for iOS, Android, macOS and PWA manifests in every required dimension, bundled into a zip ready for your next app project.",
@@ -824,7 +824,7 @@
         {
           "id": "image-editor",
           "name": "Image Editor",
-          "description": "Edit, crop, and enhance your photos online with our free image editing tools. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Edit, crop, and enhance your photos online with our free image editing tools.",
           "route": "/image-editor",
           "popular": false,
           "seoDescription": "Adjust an image's dimensions and export quality in a single uncluttered workspace, then download a web-ready file without installing desktop software.",
@@ -928,7 +928,7 @@
         {
           "id": "text-reverser",
           "name": "Text Reverser",
-          "description": "Flip your text backwards or reverse the order of words instantly for creative projects and coding. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Flip your text backwards or reverse the order of words instantly for creative projects and coding.",
           "route": "/text-reverser",
           "popular": false,
           "seoDescription": "Flip characters backwards, turn the words around while keeping each word intact, or invert a numbered list line by line, then chain passes by swapping.",
@@ -946,7 +946,7 @@
         {
           "id": "markdown-to-html",
           "name": "Markdown to HTML Converter",
-          "description": "Convert Markdown text into clean HTML code for your website, blog, or email newsletters. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert Markdown text into clean HTML code for your website, blog, or email newsletters.",
           "route": "/markdown-to-html",
           "popular": true,
           "seoDescription": "Write or paste Markdown and watch the rendered preview fill in beside the HTML source; one copy button hands over markup for a blog or newsletter template.",
@@ -973,7 +973,7 @@
         {
           "id": "string-length-calculator",
           "name": "String Length Calculator",
-          "description": "Get detailed string analytics including character, word, byte, and line counts instantly. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Get detailed string analytics including character, word, byte, and line counts instantly.",
           "route": "/string-length-calculator",
           "popular": true,
           "seoDescription": "Live counters for characters, words, bytes, lines, whitespace and paragraphs, handy whenever a form field or database column has a hard limit to respect.",
@@ -982,7 +982,7 @@
         {
           "id": "text-to-binary-hex-octal",
           "name": "Text to Binary/Hex/Octal Converter",
-          "description": "Convert plain text strings to binary, hex, and octal formats simultaneously. 100% local. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert plain text strings to binary, hex, and octal formats simultaneously. 100% local.",
           "route": "/text-to-binary-hex-octal",
           "popular": true,
           "seoDescription": "A single pass produces binary, hexadecimal and octal versions of one string side by side, each with a copy button for pasting into code or documentation.",
@@ -991,7 +991,7 @@
         {
           "id": "slug-to-text-converter",
           "name": "Slug to Text Converter",
-          "description": "Convert URL slugs with hyphens or underscores back into clean, readable text strings. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert URL slugs with hyphens or underscores back into clean, readable text strings.",
           "route": "/slug-to-text-converter",
           "popular": true,
           "seoDescription": "Undo a URL slug: hyphens and underscores become spaces and the segments are recased as a title, sentence or heading ready to reuse as a page name or label.",
@@ -1009,7 +1009,7 @@
         {
           "id": "case-converter",
           "name": "Case Converter (Sentence, Upper, Lower)",
-          "description": "Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly.",
           "route": "/case-converter",
           "popular": true,
           "seoDescription": "Six case styles share one editor: UPPERCASE, lowercase, Title Case, Sentence case, aLtErNaTiNg and iNvErSe, applied live and copied out in a click.",
@@ -1018,7 +1018,7 @@
         {
           "id": "emoji-text-generator",
           "name": "Emoji Text Generator",
-          "description": "Add fun emojis to your text or convert words into emoji-rich messages for social media. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Add fun emojis to your text or convert words into emoji-rich messages for social media.",
           "route": "/emoji-text-generator",
           "popular": false,
           "seoDescription": "Spice up social media messages with clapping hands, spaced emojis, and playful text transformations. Copy attention-grabbing captions free with zero signup.",
@@ -1108,7 +1108,7 @@
         {
           "id": "lorem-ipsum-generator",
           "name": "Lorem Ipsum Generator",
-          "description": "Generate custom Lorem Ipsum text for your designs. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Generate custom Lorem Ipsum text for your designs.",
           "route": "/lorem-ipsum",
           "popular": false,
           "seoDescription": "Generate customized Lorem Ipsum placeholder paragraphs, sentences, and lists for wireframes and design mockups. Copy clean typography copy free with one click.",
@@ -1302,7 +1302,7 @@
         {
           "id": "pdf-to-jpg-converter",
           "name": "PDF to JPG Converter",
-          "description": "Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file.",
           "route": "/pdf-to-jpg-converter",
           "popular": true,
           "seoDescription": "Save each page of a PDF as a crisp JPG image. Preview the file, then download every page individually or grab the complete set in one ZIP archive.",
@@ -1311,7 +1311,7 @@
         {
           "id": "merge-pdf-online",
           "name": "Merge PDF Online",
-          "description": "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly.",
           "route": "/merge-pdf-online",
           "popular": true,
           "seoDescription": "Stitch several PDFs into one continuous document: drop the files in, drag them into the order you want, and export a merged copy with bookmarks carried over.",
@@ -1320,7 +1320,7 @@
         {
           "id": "html-to-pdf",
           "name": "HTML to PDF Converter",
-          "description": "Convert HTML code or files to print-ready PDF documents client-side instantly. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert HTML code or files to print-ready PDF documents client-side instantly.",
           "route": "/html-to-pdf",
           "popular": true,
           "seoDescription": "Paste raw HTML into the editor, watch the live preview take shape, and generate a print-ready PDF that holds on to headings, styles and element layout.",
@@ -1329,7 +1329,7 @@
         {
           "id": "pdf-compressor",
           "name": "PDF Compressor",
-          "description": "Compress PDF documents to reduce file size while maintaining original print quality. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Compress PDF documents to reduce file size while maintaining original print quality.",
           "route": "/pdf-compressor",
           "popular": true,
           "seoDescription": "Trim bloated PDFs with adjustable quality and resolution presets that make files meaningfully smaller while keeping text and images presentable for sharing.",
@@ -1338,7 +1338,7 @@
         {
           "id": "pdf-page-numbers",
           "name": "PDF Page Numbers Adder",
-          "description": "Add page numbers to your PDF documents easily. Customize positioning, font size, and start index. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Add page numbers to your PDF documents easily. Customize positioning, font size, and start index.",
           "route": "/pdf-page-numbers",
           "popular": true,
           "seoDescription": "Stamp a clean numbering sequence onto any PDF: choose the corner, set font size and start value, and give every page a professional finishing touch.",
@@ -1347,7 +1347,7 @@
         {
           "id": "pdf-watermark",
           "name": "PDF Watermark Creator",
-          "description": "Add text or image logos as watermarks to all pages of your PDF document securely in your browser. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Add text or image logos as watermarks to all pages of your PDF document securely in your browser.",
           "route": "/pdf-watermark",
           "popular": true,
           "seoDescription": "Lay a diagonal text watermark or an image logo over every page of a PDF, tuning opacity, angle and size until the mark fits without hiding content.",
@@ -1365,7 +1365,7 @@
         {
           "id": "pdf-merger",
           "name": "PDF Merger",
-          "description": "Combine multiple PDF documents into a single file quickly. Reorder files and merge instantly. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Combine multiple PDF documents into a single file quickly. Reorder files and merge instantly.",
           "route": "/pdf-merger",
           "popular": true,
           "seoDescription": "Combine a stack of PDFs into a single file, arrange their running order, and produce one export that keeps the original page sequences and layout intact.",
@@ -1374,7 +1374,7 @@
         {
           "id": "pdf-splitter",
           "name": "PDF Splitter",
-          "description": "Split PDF documents by page ranges or extract individual pages into separate PDF files. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Split PDF documents by page ranges or extract individual pages into separate PDF files.",
           "route": "/pdf-splitter",
           "popular": true,
           "seoDescription": "Carve a large PDF into manageable pieces: extract a page range, split at even intervals, or break every single page out into its own separate file.",
@@ -1383,7 +1383,7 @@
         {
           "id": "pdf-rotation",
           "name": "PDF Rotation Tool",
-          "description": "Rotate single or all pages of a PDF document to landscape or portrait orientation instantly. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Rotate single or all pages of a PDF document to landscape or portrait orientation instantly.",
           "route": "/pdf-rotation",
           "popular": true,
           "seoDescription": "Deal with sideways scans and flipped pages by turning one sheet or the entire document to portrait or landscape, then download the straightened PDF.",
@@ -1419,7 +1419,7 @@
         {
           "id": "pdf-to-image",
           "name": "PDF to Image",
-          "description": "Convert PDF pages to high-quality JPG, PNG images. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert PDF pages to high-quality JPG, PNG images.",
           "route": "/pdf-to-image",
           "popular": true,
           "seoDescription": "Rasterize PDF pages into PNG, JPG or WebP at selectable resolution, from quick previews to high-detail renders, and collect the whole batch in one ZIP.",
@@ -1489,7 +1489,7 @@
         {
           "id": "video-tools",
           "name": "Video Tools",
-          "description": "Compress videos, convert formats, and create GIFs. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Compress videos, convert formats, and create GIFs.",
           "route": "/video-tools",
           "seoDescription": "SopKit's video shelf in one place: format converters, a trim-and-crop editor, transcript summaries and savers for popular platforms, each with its own guide.",
           "seoTitle": "Free Video Tools — Download, Convert & Edit"
@@ -1506,7 +1506,7 @@
         {
           "id": "video-editor",
           "name": "Video Editor",
-          "description": "Edit, cut, and merge video files online for free. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Edit, cut, and merge video files online for free.",
           "route": "/video-editor",
           "popular": false,
           "seoDescription": "Load a clip, mark trim in and out points, crop the frame and preview every change, then export a tidied cut as a brand-new file ready to share with friends.",
@@ -2530,7 +2530,7 @@
         {
           "id": "audio-tools",
           "name": "Audio Tools",
-          "description": "Compress and convert audio files between formats. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Compress and convert audio files between formats.",
           "route": "/audio-tools",
           "seoDescription": "The audio wing of SopKit gathered into one index: converters, compressors, a joiner, an equalizer, downloaders and tuning aids a click or two apart.",
           "seoTitle": "Free Audio Tools — Convert, Trim & Join"
@@ -2538,7 +2538,7 @@
         {
           "id": "guitar-tuner",
           "name": "Guitar Tuner",
-          "description": "Free online guitar tuner. Uses your microphone to tune your guitar accurately. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Free online guitar tuner. Uses your microphone to tune your guitar accurately.",
           "route": "/guitar-tuner",
           "popular": false,
           "seoTitle": "Free Guitar Tuner Online — Accurate & Fast",
@@ -2654,7 +2654,7 @@
         {
           "id": "uuid-generator",
           "name": "UUID/GUID Generator",
-          "description": "Generate unique UUID v4 and GUID strings instantly for your applications and databases. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Generate unique UUID v4 and GUID strings instantly for your applications and databases.",
           "route": "/uuid-generator",
           "popular": true,
           "seoDescription": "Click to generate a fresh version-4 UUID and copy the canonical hyphenated string straight into a database schema, migration file, or test fixture row.",
@@ -2663,7 +2663,7 @@
         {
           "id": "slug-generator",
           "name": "URL Slug Generator",
-          "description": "Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages.",
           "route": "/slug-generator",
           "popular": false,
           "seoDescription": "Paste a headline and shape a tidy URL path: pick hyphens or underscores, toggle the lowercase switch, and flip a finished slug back into words for editing.",
@@ -2672,7 +2672,7 @@
         {
           "id": "json-to-typescript",
           "name": "JSON to TypeScript Interface",
-          "description": "Convert JSON objects into clean TypeScript interfaces or type definitions automatically. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert JSON objects into clean TypeScript interfaces or type definitions automatically.",
           "route": "/json-to-typescript",
           "popular": true,
           "seoDescription": "Sample JSON goes in and exported TypeScript interfaces come out, with nested objects named for you and a downloadable .d.ts file for your project.",
@@ -2681,7 +2681,7 @@
         {
           "id": "sql-formatter",
           "name": "SQL Formatter & Beautifier",
-          "description": "Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more.",
           "route": "/sql-formatter",
           "popular": true,
           "seoDescription": "Give tangled SQL structure: choose your dialect, tab width, and upper or lower keyword case, so queries lifted from logs or legacy code read cleanly.",
@@ -2699,7 +2699,7 @@
         {
           "id": "user-agent-parser",
           "name": "User Agent Parser",
-          "description": "Parse any User Agent string to detect Browser, OS, and Engine details instantly. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Parse any User Agent string to detect Browser, OS, and Engine details instantly.",
           "route": "/user-agent-parser",
           "popular": true,
           "seoDescription": "Break any user-agent string into browser, operating system, rendering engine, and device class, a quick aid for support triage and analytics checks.",
@@ -2708,7 +2708,7 @@
         {
           "id": "yaml-to-json-converter",
           "name": "YAML to JSON Converter",
-          "description": "Convert YAML configurations to clean JSON structures instantly. Safe & secure. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Convert YAML configurations to clean JSON structures instantly. Safe & secure.",
           "route": "/yaml-to-json-converter",
           "popular": true,
           "seoDescription": "Convert YAML manifests and CI configuration into JSON, with parse errors surfaced when indentation or syntax goes wrong before a deployment pipeline runs.",
@@ -2735,7 +2735,7 @@
         {
           "id": "css-border-radius-generator",
           "name": "CSS Border Radius Generator",
-          "description": "Generate CSS border-radius rules interactively with live shape previews and webkit/moz prefixes. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Generate CSS border-radius rules interactively with live shape previews and webkit/moz prefixes.",
           "route": "/css-border-radius-generator",
           "popular": true,
           "seoDescription": "Adjust each corner independently in pixels or percent, apply a preset when you are in a hurry, and copy the finished rule with vendor prefixes included.",
@@ -2744,7 +2744,7 @@
         {
           "id": "crontab-generator",
           "name": "Crontab Expression Generator",
-          "description": "Easily create and validate cron job expressions with our interactive visual generator. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Easily create and validate cron job expressions with our interactive visual generator.",
           "route": "/crontab-generator",
           "popular": false,
           "seoDescription": "Assemble minute, hour, day, month, and weekday schedules from plain menus, read back the five-field expression, and paste it into a server crontab.",
@@ -2753,7 +2753,7 @@
         {
           "id": "xml-formatter",
           "name": "XML Formatter & Beautifier",
-          "description": "Clean and format messy XML data into a readable hierarchical structure. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Clean and format messy XML data into a readable hierarchical structure.",
           "route": "/xml-formatter",
           "popular": false,
           "seoDescription": "Beautify or minify an XML document at an adjustable indent, with invalid markup flagged and size savings shown before the file ships to a staging server.",
@@ -2762,7 +2762,7 @@
         {
           "id": "html-entity-encoder",
           "name": "HTML Entity Encoder/Decoder",
-          "description": "Encode or decode HTML entities to prevent XSS or display special characters safely. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Encode or decode HTML entities to prevent XSS or display special characters safely.",
           "route": "/html-entity-encoder",
           "popular": false,
           "seoDescription": "Switch between named and numeric entities to encode ampersands, quotes, slashes, and tags, or decode a string back into its original characters again.",
@@ -2771,7 +2771,7 @@
         {
           "id": "random-name-generator",
           "name": "Random Name Generator",
-          "description": "Generate random names for characters, personas, or test data with gender and niche options. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Generate random names for characters, personas, or test data with gender and niche options.",
           "route": "/random-name-generator",
           "popular": false,
           "seoDescription": "Fill test databases or character sheets with believable first-and-last names, drawing on several name origins, a gender filter, and a batch size you control.",
@@ -2789,7 +2789,7 @@
         {
           "id": "jwt-decoder",
           "name": "JWT Decoder & Debugger",
-          "description": "Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Decode JSON Web Tokens (JWT) locally in your browser to inspect header, payload, and signature.",
           "route": "/jwt-decoder",
           "popular": true,
           "seoDescription": "Divide a token into its header, payload, and signature, and check the exp claim to learn whether it lapsed minutes ago or still has plenty of life left.",
@@ -4004,7 +4004,7 @@
         {
           "id": "indexnow-submitter",
           "name": "IndexNow Submitter",
-          "description": "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol.",
           "route": "/indexnow",
           "popular": false,
           "seoDescription": "Check a URL's redirect chain and response status before pinging search engines, so your IndexNow submission points at a page that genuinely resolves.",
@@ -4474,7 +4474,7 @@
         {
           "id": "other-tools",
           "name": "Other Tools",
-          "description": "Free Other Tools online tool. Fast and secure. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Free Other Tools online tool. Fast and secure.",
           "route": "/other-tools",
           "popular": false,
           "seoDescription": "Browse every utility in one directory, converters, checkers, generators and network lookups, and jump straight to the exact utility you came here for.",
@@ -4483,7 +4483,7 @@
         {
           "id": "text-tools",
           "name": "Text Tools",
-          "description": "Format, convert, and manipulate text content. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Format, convert, and manipulate text content.",
           "route": "/text-tools",
           "seoDescription": "Find every text utility in one hub: counters, case changers, converters, generators and cleanup tools, grouped so the right one is only a click away.",
           "seoTitle": "Free Text Tools — Format & Analyze Text"
@@ -4526,7 +4526,7 @@
         {
           "id": "domain-name-generator",
           "name": "Domain Name Generator",
-          "description": "Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free.",
           "route": "/domain-name-generator",
           "popular": false,
           "seoDescription": "Feed in a keyword or niche and get a batch of short, brandable .com name ideas, pairing your word with endings like ly, hq, hub and flow, ready to shortlist.",
@@ -4535,7 +4535,7 @@
         {
           "id": "website-cost-calculator",
           "name": "Website Cost Calculator",
-          "description": "Estimate how much a website may cost based on pages, design quality, and features like ecommerce. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Estimate how much a website may cost based on pages, design quality, and features like ecommerce.",
           "route": "/website-cost-calculator",
           "popular": false,
           "seoDescription": "Dial in page count, design level and ecommerce features to see a rough development-cost range for the build before you approach a freelancer or agency.",
@@ -4544,7 +4544,7 @@
         {
           "id": "seo-title-meta-description-generator",
           "name": "SEO Title & Meta Description Generator",
-          "description": "Generate SEO-friendly page titles and meta descriptions for blogs, tools, and landing pages. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Generate SEO-friendly page titles and meta descriptions for blogs, tools, and landing pages.",
           "route": "/seo-title-meta-description-generator",
           "popular": true,
           "seoDescription": "Give it a page topic and it drafts a starter SEO title plus a meta description you can trim so both fit the lengths Google shows in its search results.",
@@ -4553,7 +4553,7 @@
         {
           "id": "robots-txt-sitemap-generator",
           "name": "Robots.txt and Sitemap Generator",
-          "description": "Generate robots.txt and sitemap.xml files for your website to improve crawling and indexing. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Generate robots.txt and sitemap.xml files for your website to improve crawling and indexing.",
           "route": "/robots-txt-sitemap-generator",
           "popular": false,
           "seoDescription": "List key URLs with crawl frequency and priority values to assemble a clean sitemap.xml, then upload it to your root and point robots.txt at the file.",
@@ -4836,7 +4836,7 @@
         {
           "id": "new-tools",
           "name": "Newly Added Tools",
-          "description": "Track newly added tools, release updates, and codebase expansion history of SopKit. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Track newly added tools, release updates, and codebase expansion history of SopKit.",
           "route": "/new-tools",
           "seoDescription": "Browse the freshest additions to the platform: a release feed of recently published utilities, what changed in each update, and new entries by category.",
           "seoTitle": "New Tools — Fresh Releases This Month"
@@ -4876,7 +4876,7 @@
         {
           "id": "generators",
           "name": "Fun Generators",
-          "description": "Create viral content with AI-powered fun generators. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Create viral content with AI-powered fun generators.",
           "route": "/generators",
           "seoDescription": "Quick creative output lives here: memes, name ideas, story sparks, color palettes and other light-hearted generators for when you just want to riff.",
           "seoTitle": "Fun Generators — Memes, Names & Ideas"
@@ -4884,7 +4884,7 @@
         {
           "id": "developer-tools",
           "name": "Developer Tools",
-          "description": "Format JSON, generate hashes, and developer utilities. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Format JSON, generate hashes, and developer utilities.",
           "route": "/developer-tools",
           "seoDescription": "Programming helpers collected in one place: formatters, hash generators, encoders, converters, validators and testers, sorted into an easy-to-scan index.",
           "seoTitle": "Developer Tools — JSON, CSS, Encoders & More"
@@ -4986,7 +4986,7 @@
         {
           "id": "best-free-converters-in-2026",
           "name": "Best Free Converters in 2026 (File, Data, and Media)",
-          "description": "The best free converters in 2026 for JSON, CSV, XML, images, and documents. No signup required. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "The best free converters in 2026 for JSON, CSV, XML, images, and documents. No signup required.",
           "route": "/best-free-converters-in-2026",
           "seoDescription": "This year's strongest no-cost converters for files, data and media: JSON, CSV and XML swaps, image format changes and document conversions, compared.",
           "seoTitle": "Best Free Converters in 2026 (File, Data, and Media)"
@@ -5027,7 +5027,7 @@
         {
           "id": "date-difference-calculator",
           "name": "Date Difference Calculator",
-          "description": "Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes.",
           "route": "/date-difference-calculator",
           "popular": true,
           "seoDescription": "Pick a start and end date to see the gap broken into years, months and days, plus the total in weeks, handy for notice periods, rent and deadlines.",
@@ -5063,7 +5063,7 @@
         {
           "id": "gratuity-calculator",
           "name": "Gratuity Calculator (India)",
-          "description": "Estimate your gratuity amount based on your last drawn salary and years of service in India. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Estimate your gratuity amount based on your last drawn salary and years of service in India.",
           "route": "/gratuity-calculator",
           "popular": false,
           "seoDescription": "Estimate the gratuity due on your last drawn basic salary and years of service, using the 15/26 or 15/30 formula plus the statutory payout cap in India.",
@@ -5108,7 +5108,7 @@
         {
           "id": "sip-calculator",
           "name": "SIP Calculator India",
-          "description": "Calculate estimated SIP returns and wealth growth for mutual fund investments online for free. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Calculate estimated SIP returns and wealth growth for mutual fund investments online for free.",
           "route": "/sip-calculator",
           "popular": true,
           "seoDescription": "Set a monthly contribution, an expected return and a time horizon to see the amount invested, estimated gains and the total value your SIP could build up.",
@@ -5117,7 +5117,7 @@
         {
           "id": "fd-calculator-india",
           "name": "FD Calculator India",
-          "description": "Calculate fixed deposit maturity amount and interest with quarterly compounding for Indian banks. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Calculate fixed deposit maturity amount and interest with quarterly compounding for Indian banks.",
           "route": "/fd-calculator-india",
           "popular": false,
           "seoDescription": "Compute what a bank fixed deposit matures to from principal, rate and tenure, with interest compounded quarterly and total earnings shown alongside.",
@@ -5181,7 +5181,7 @@
         {
           "id": "sgpa-calculator",
           "name": "SGPA Calculator",
-          "description": "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.",
           "route": "/sgpa-calculator",
           "popular": false,
           "title": "SGPA Calculator - Free Online Tool",
@@ -5191,7 +5191,7 @@
         {
           "id": "cgpa-calculator",
           "name": "CGPA Calculator",
-          "description": "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.",
           "route": "/cgpa-calculator",
           "popular": false,
           "title": "CGPA Calculator - Free Online Tool",
@@ -5221,7 +5221,7 @@
         {
           "id": "brick-calculator",
           "name": "Brick Calculator",
-          "description": "Calculate the total number of bricks, cement bags, and sand volume required for building a wall. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Calculate the total number of bricks, cement bags, and sand volume required for building a wall.",
           "route": "/brick-calculator",
           "popular": false,
           "title": "Brick Calculator - Free Online Tool",
@@ -5466,7 +5466,7 @@
         {
           "id": "upsc-photo-resizer-350x350",
           "name": "UPSC Photo Resizer 350x350",
-          "description": "Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms.",
           "route": "/upsc-photo-resizer-350x350",
           "popular": true,
           "seoDescription": "Lock a portrait to the 350x350 square UPSC asks for, trimming and compressing until the file lands inside the 20-300KB window for CSE or IFS registration.",
@@ -5543,7 +5543,7 @@
         {
           "id": "railway-exam-photo-resizer",
           "name": "Railway Exam Photo Resizer",
-          "description": "Resize photos and signatures for railway exam forms, including RRB and recruitment portal uploads. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Resize photos and signatures for railway exam forms, including RRB and recruitment portal uploads.",
           "route": "/railway-exam-photo-resizer",
           "popular": false,
           "title": "Railway Exam Photo Resizer - Free Online Tool",
@@ -5563,7 +5563,7 @@
         {
           "id": "pan-card-photo-resizer",
           "name": "PAN Card Photo Resizer",
-          "description": "Resize PAN card photos and signatures for online application forms with safe browser processing. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Resize PAN card photos and signatures for online application forms with safe browser processing.",
           "route": "/pan-card-photo-resizer",
           "popular": false,
           "title": "PAN Card Photo Resizer - Free Online Tool",
@@ -5683,7 +5683,7 @@
         {
           "id": "ideal-body-weight-calculator",
           "name": "Ideal Body Weight Calculator",
-          "description": "Determine your healthy weight range based on your height, age, and gender using standard formulas. Fast, 100% private client-side processing with zero file uploads and no registration required.",
+          "description": "Determine your healthy weight range based on your height, age, and gender using standard formulas.",
           "route": "/ideal-body-weight-calculator",
           "popular": false,
           "seoDescription": "See an ideal weight from the Devine formula beside your BMI category, a reference point for conversations rather than a single numeral verdict on health.",
