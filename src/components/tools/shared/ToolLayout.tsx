@@ -148,7 +148,9 @@ export default function ToolLayout({
 		if ((!enrichedTool.howTo || !enrichedTool.howTo.steps || enrichedTool.howTo.steps.length === 0) && manual.howToUse?.steps?.length) {
 			enrichedTool.howTo = manual.howToUse;
 		}
-		if ((!enrichedTool.faqs || enrichedTool.faqs.length === 0) && manual.faqs?.length) {
+		// Curated FAQ content is the source of truth: it is component-verified and
+		// replaces the older generated tool-faqs.json templates at render time.
+		if (manual.faqs?.length) {
 			enrichedTool.faqs = manual.faqs;
 		}
 	}
