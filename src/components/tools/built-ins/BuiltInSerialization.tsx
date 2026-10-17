@@ -25,9 +25,22 @@ function jsonToCsv(json: string): string {
 	return `${header}\n${body}`;
 }
 
-function jsonToTsv(json: string): string {
-	const csv = jsonToCsv(json);
-	return csv.replace(/,/g, "\t");
+export function jsonToTsv(json: string): string {
+	const parsed = JSON.parse(json) as unknown;
+	const rows = Array.isArray(parsed) ? parsed : [parsed];
+	if (!rows.length || typeof rows[0] !== "object" || rows[0] === null) {
+		throw new Error("JSON must be an object or array of objects");
+	}
+	const keys = Object.keys(rows[0] as object);
+	const cell = (v: unknown) => {
+		const s = v === null || v === undefined ? "" : typeof v === "object" ? JSON.stringify(v) : String(v);
+		return s.replace(/[\t\r\n]+/g, " ");
+	};
+	const header = keys.join("\t");
+	const body = rows
+		.map((row) => keys.map((k) => cell((row as Record<string, unknown>)[k])).join("\t"))
+		.join("\n");
+	return `${header}\n${body}`;
 }
 
 function jsonToText(json: string): string {
@@ -86,21 +99,29 @@ function xmlToJson(xml: string): string {
 	return JSON.stringify({ [root.nodeName]: nodeToObj(root) }, null, 2);
 }
 
-function jsonToXml(json: string): string {
+function escapeXmlText(s: string): string {
+	return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+export function jsonToXml(json: string): string {
 	const o = JSON.parse(json) as unknown;
 	function walk(tag: string, val: unknown, depth: number): string {
 		const pad = "  ".repeat(depth);
-		if (val === null || typeof val !== "object") return `${pad}<${tag}>${String(val)}</${tag}>\n`;
+		if (val === null || val === undefined || val === "") return `${pad}<${tag}/>\n`;
+		if (typeof val !== "object") return `${pad}<${tag}>${escapeXmlText(String(val))}</${tag}>\n`;
 		if (Array.isArray(val)) {
+			if (!val.length) return `${pad}<${tag}/>\n`;
 			return val.map((v) => walk(tag, v, depth)).join("");
 		}
 		return `${pad}<${tag}>\n${Object.entries(val as object)
 			.map(([k, v]) => walk(k, v, depth + 1))
 			.join("")}${pad}</${tag}>\n`;
 	}
-	if (typeof o !== "object" || o === null) throw new Error("Root must be object");
-	const [[k, v]] = Object.entries(o as object);
-	return `<?xml version="1.0" encoding="UTF-8"?>\n${walk(k, v, 0)}`;
+	if (typeof o !== "object" || o === null) throw new Error("Root must be an object");
+	const body = Object.entries(o as object)
+		.map(([k, v]) => walk(k, v, 0))
+		.join("");
+	return `<?xml version="1.0" encoding="UTF-8"?>\n${body}`;
 }
 
 export default function BuiltInSerialization({ toolId }: { toolId: string }) {
