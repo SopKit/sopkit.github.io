@@ -3688,7 +3688,7 @@
           "description": "Calculate exact age in years, months and days from any birthdate. Birthday countdown included — free, no signup.",
           "route": "/age-calculator",
           "popular": false,
-          "seoDescription": "Find your exact age in years, months, days and hours. Next-birthday countdown too — free, no signup needed.",
+          "seoDescription": "Turn a birthdate into exact years, months and days, plus weeks, hours and total days lived, the weekday you were born and a countdown to your next birthday.",
           "seoTitle": "Age Calculator — Years, Months & Days"
         },
         {
@@ -3697,7 +3697,7 @@
           "description": "Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and accurate.",
           "route": "/angle-converter",
           "popular": false,
-          "seoDescription": "Convert angles between degrees, radians, gradians and turns. For math and engineering — free, no signup needed.",
+          "seoDescription": "Move an angle between degrees, radians and gradians with a live equivalents panel, then copy the swapped result into geometry notes or CAD drawings.",
           "seoTitle": "Angle Converter — Degrees, Radians & More"
         },
         {
@@ -3706,7 +3706,7 @@
           "description": "Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.",
           "route": "/apparent-power-converter",
           "popular": false,
-          "seoDescription": "Convert apparent power between VA, kVA and MVA units. Electrical calculations simplified — free, no signup.",
+          "seoDescription": "Restate apparent power across volt-amperes, kilowatt-scale figures and mechanical horsepower, with the swapped pair and every equivalent shown at once.",
           "seoTitle": "Apparent Power Converter — VA, kVA & MVA"
         },
         {
@@ -3715,7 +3715,7 @@
           "description": "Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design projects.",
           "route": "/area-converter",
           "popular": false,
-          "seoDescription": "Convert land area between square meters, feet, acres, hectares and more. Instant results — free, no signup.",
+          "seoDescription": "Switch floor plans and land plots between square metres, square feet, acres and hectares, with all seven area units listed side by side as you type.",
           "seoTitle": "Area Converter — m², ft², Acres & More"
         },
         {
@@ -3724,7 +3724,7 @@
           "description": "Calculate the mean, median, mode, and range of any dataset instantly. Our free online Average Calculator helps you analyze statistics and numeric data in seconds.",
           "route": "/average-calculator",
           "popular": false,
-          "seoDescription": "Calculate mean, median, mode and range of any dataset. Stats homework solved — free, no signup required.",
+          "seoDescription": "Paste numbers separated by commas or spaces and read the mean to six decimal places, updating as you edit to check homework or spot-check a dataset.",
           "seoTitle": "Average Calculator — Mean, Median & Mode"
         },
         {
@@ -3734,7 +3734,7 @@
           "route": "/base64-decode",
           "popular": false,
           "title": "Base64 Decode - Free Online Tool",
-          "seoDescription": "Decode Base64 strings to readable text instantly. Fix encoded emails and tokens — free, no signup needed.",
+          "seoDescription": "Paste a Base64 string and read the original text back immediately, handy for inspecting encoded tokens, email bodies, API responses or inline data URIs.",
           "seoTitle": "Base64 Decode — Back to Plain Text"
         },
         {
@@ -3744,7 +3744,7 @@
           "route": "/base64-encode",
           "popular": false,
           "title": "Base64 Encode - Free Online Tool",
-          "seoDescription": "Encode any text to Base64 for APIs, emails and embeds. URL-safe option — free, no signup required.",
+          "seoDescription": "Turn text or a small file into Base64 for data URIs, API payloads and email-safe transfers, with the encoded output ready to copy in a single click.",
           "seoTitle": "Base64 Encode — Text to Base64, Free"
         },
         {
@@ -3753,7 +3753,7 @@
           "description": "Convert between coulombs, millicoulombs, and other electrical charge units instantly. Our free online tool provides quick and accurate physics base transformations.",
           "route": "/charge-converter",
           "popular": false,
-          "seoDescription": "Convert electric charge between coulombs, mAh and more units. Battery math made easy — free, no signup.",
+          "seoDescription": "Compare electric charge in coulombs and milliamp-hours, with the 3.7 V battery convention applied so capacity figures line up with circuit maths.",
           "seoTitle": "Electric Charge Converter — C & mAh"
         },
         {
@@ -3762,7 +3762,7 @@
           "description": "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision.",
           "route": "/color-converter",
           "popular": false,
-          "seoDescription": "Translate colors between HEX, RGB, HSL and CMYK with previews. Designers' essential — free, no signup.",
+          "seoDescription": "Read a HEX colour as its RGB numbers with a live swatch beside it, useful for matching a brand palette or pulling exact values out of a screenshot.",
           "seoTitle": "Color Converter — HEX, RGB, HSL & CMYK"
         },
         {
@@ -3771,7 +3771,7 @@
           "description": "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your research.",
           "route": "/confidence-interval-calculator",
           "popular": false,
-          "seoDescription": "Compute confidence intervals for means and proportions with steps. Stats made clear — free, no signup.",
+          "seoDescription": "Enter a sample mean, standard deviation, sample size and z value to get the lower and upper bounds of a normal-approximation confidence interval.",
           "seoTitle": "Confidence Interval Calculator — 95% CI"
         },
         {
@@ -3780,7 +3780,7 @@
           "description": "Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming platforms.",
           "route": "/convert-srt-to-vtt",
           "popular": false,
-          "seoDescription": "Convert SRT subtitle files to WebVTT for HTML5 video players. Keep timings exact — free, no signup needed.",
+          "seoDescription": "Paste SRT subtitle text and get clean WebVTT back, with comma timestamps rewritten as periods and the WEBVTT header added for HTML5 video players.",
           "seoTitle": "SRT to VTT Converter — Subtitles, Free"
         },
         {
@@ -3789,7 +3789,7 @@
           "description": "Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players.",
           "route": "/convert-vtt-to-srt",
           "popular": false,
-          "seoDescription": "Turn WebVTT subtitles back into SRT format for editors and players. Lossless conversion — free, no signup.",
+          "seoDescription": "Paste WebVTT caption text and get numbered SRT cues back, with dotted timestamps switched to commas for older editing tools and desktop video players.",
           "seoTitle": "VTT to SRT Converter — Subtitles, Free"
         },
         {
@@ -3798,7 +3798,7 @@
           "description": "Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach efficiency.",
           "route": "/cpm-calculator",
           "popular": false,
-          "seoDescription": "Calculate cost per thousand impressions for ad campaigns. Budget planning for marketers — free, no signup.",
+          "seoDescription": "Turn campaign cost and impression counts into a cost-per-thousand figure, so you can compare ad placements before reallocating your next media budget.",
           "seoTitle": "CPM Calculator — Ad Cost Per Mille"
         },
         {
@@ -3807,7 +3807,7 @@
           "description": "Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks without being real cards.",
           "route": "/credit-card-generator",
           "popular": false,
-          "seoDescription": "Generate valid-format test card numbers for development and QA. Luhn-passing dummies, never real — free.",
+          "seoDescription": "Create Visa-style 16-digit test numbers that pass the Luhn checksum, giving payment forms and checkout validation scripts realistic input for QA.",
           "seoTitle": "Test Credit Card Generator — Valid Luhn Numbers"
         },
         {
@@ -3816,7 +3816,7 @@
           "description": "Check if a credit card number is valid using the Luhn algorithm instantly. Our free online tool helps you verify card formats and identify card types for testing purposes.",
           "route": "/credit-card-validator",
           "popular": false,
-          "seoDescription": "Verify card number validity with Luhn checksum and brand detection. For forms testing — free, no signup.",
+          "seoDescription": "Check whether a card number passes the Luhn checksum, with spaces stripped automatically, before you reuse it in form validation or gateway tests.",
           "seoTitle": "Credit Card Validator — Luhn Check Online"
         },
         {
@@ -3825,7 +3825,7 @@
           "description": "Convert currencies with real-time exchange rates instantly. Our free online tool supports all major global currencies for travel, business, and financial planning.",
           "route": "/currency-converter",
           "popular": false,
-          "seoDescription": "Convert 150+ world currencies with live exchange rates. Travel and business essential — free, no signup.",
+          "seoDescription": "Pull live European Central Bank cross-rates for a pair of ISO currency codes and convert an amount, with the loaded rate count confirming the fetch.",
           "seoTitle": "Currency Converter — Live Exchange Rates"
         },
         {
@@ -3834,7 +3834,7 @@
           "description": "Convert between amperes, milliamperes, and other electrical current units instantly. Our free online tool is perfect for electronics and electrical engineering tasks.",
           "route": "/current-converter",
           "popular": false,
-          "seoDescription": "Convert current between amperes, milliamperes and more. Circuit math simplified — free, no signup needed.",
+          "seoDescription": "Swap amperes and milliamperes for circuits, fuses and component checks, with the converted figure rounded sensibly and ready to paste into your notes.",
           "seoTitle": "Electric Current Converter — A, mA & More"
         },
         {
@@ -3843,7 +3843,7 @@
           "description": "Convert between bytes, kilobytes, megabytes, and gigabytes instantly. Our free online tool helps you understand data storage and file sizes in seconds.",
           "route": "/digital-converter",
           "popular": false,
-          "seoDescription": "Convert bytes, KB, MB, GB and TB instantly. File sizes decoded for everyone — free, no signup.",
+          "seoDescription": "Convert between bits, bytes and 1024-based kilobytes, megabytes and gigabytes when sizing downloads or working out what a storage label really means.",
           "seoTitle": "Digital Storage Converter — Bytes to TB"
         },
         {
@@ -3862,7 +3862,7 @@
           "route": "/discount-calculator",
           "popular": false,
           "title": "Discount Calculator - Free Online Tool",
-          "seoDescription": "Find final prices, savings and discount percentages while shopping. Never overpay — free, no signup needed.",
+          "seoDescription": "See what a sale really saves: enter the original price and discount percentage to get the amount off and the final amount you will pay at checkout.",
           "seoTitle": "Discount Calculator — Sale Price & Savings"
         },
         {
@@ -3871,7 +3871,7 @@
           "description": "Retrieve all DNS records (A, MX, TXT, CNAME) for any domain instantly. Our free online tool helps you troubleshoot website hosting and email configuration issues.",
           "route": "/dns-records-checker",
           "popular": false,
-          "seoDescription": "Retrieve every DNS record for any domain: A, MX, TXT, NS, CNAME and more. Diagnose issues — free, no signup.",
+          "seoDescription": "Query A, AAAA, MX, TXT, CNAME and NS records for any domain through Google's public resolver, then read each answer with its record name and TTL.",
           "seoTitle": "DNS Lookup — A, MX, TXT & All Records"
         },
         {
@@ -3880,7 +3880,7 @@
           "description": "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis.",
           "route": "/domain-age-checker",
           "popular": false,
-          "seoDescription": "Find any domain's exact registration age. Vet expired domains and competitors — free, no signup needed.",
+          "seoDescription": "Vet an unfamiliar domain before buying it: fetch it live and see whether it answers, where its redirects point and which HTTP status code comes back.",
           "seoTitle": "Domain Age Checker — SEO & Trust Lookup"
         },
         {
@@ -3889,7 +3889,7 @@
           "description": "Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues.",
           "route": "/domain-to-ip-converter",
           "popular": false,
-          "seoDescription": "Resolve any domain to its hosting IP address instantly. Network recon made easy — free, no signup.",
+          "seoDescription": "Resolve a hostname to its IPv4 addresses through DNS over HTTPS, listing every A record a public resolver returns so you can copy the addresses out.",
           "seoTitle": "Domain to IP Lookup — Find Server IP"
         },
         {
@@ -3898,7 +3898,7 @@
           "description": "Convert 'each' pricing to bulk totals and unit costs. Compare pack deals instantly — free, no signup.",
           "route": "/each-converter",
           "popular": false,
-          "seoDescription": "Turn per-item prices into bulk totals and compare pack deals. Smart shopping math — free, no signup.",
+          "seoDescription": "Scale CSS values between pixels, rem and em at the standard 16px root size, with a swap control and a full equivalents panel for stylesheet maths.",
           "seoTitle": "Each Price Calculator — Unit Cost Compare"
         },
         {
@@ -3907,7 +3907,7 @@
           "description": "Convert energy between joules, calories, kWh and BTU. Physics and bills alike — free, no signup.",
           "route": "/energy-converter",
           "popular": false,
-          "seoDescription": "Switch energy units: joules, calories, kilowatt-hours, BTU and more. Instant answers — free, no signup.",
+          "seoDescription": "Compare energy figures across joules, kilojoules, calories, kilowatt-hours and BTU, covering physics homework, diet maths and household electricity bills.",
           "seoTitle": "Energy Converter — Joules, Calories & kWh"
         },
         {
@@ -3916,7 +3916,7 @@
           "description": "Find the numeric ID of any Facebook profile, page or post from its URL. For developers — free, no signup.",
           "route": "/facebook-id-finder",
           "popular": false,
-          "seoDescription": "Extract Facebook numeric IDs from profile, page and post URLs. API-ready results — free, no signup needed.",
+          "seoDescription": "Fetch a Facebook profile, page or post URL and read the final address plus a markup excerpt, so you can track down the numeric identifiers behind it.",
           "seoTitle": "Facebook ID Finder — Numeric ID Lookup"
         },
         {
@@ -3925,7 +3925,7 @@
           "description": "Generate valid FAQPage JSON-LD schema for rich Google results. Paste Q&As, copy code — free.",
           "route": "/faq-schema-generator",
           "popular": false,
-          "seoDescription": "Create Google-ready FAQ schema markup in seconds. Win rich snippets and more clicks — free, no signup.",
+          "seoDescription": "Build FAQPage JSON-LD by adding question and answer pairs, then copy the script tag straight into your page head to chase rich snippets in search.",
           "seoTitle": "FAQ Schema Generator — Rich Snippets Free"
         },
         {
@@ -3934,7 +3934,7 @@
           "description": "Convert frequency between Hz, kHz, MHz and GHz. Radio and audio math — free, no signup.",
           "route": "/frequency-converter",
           "popular": false,
-          "seoDescription": "Switch between hertz, kilohertz, megahertz and gigahertz instantly. Precise results — free, no signup.",
+          "seoDescription": "Switch between hertz, kilohertz, megahertz and RPM for audio gear, radio bands and motor specs, with every unit in the set converted as you type.",
           "seoTitle": "Frequency Converter — Hz, kHz, MHz, GHz"
         },
         {
@@ -3943,7 +3943,7 @@
           "description": "Inspect HTTP response headers of any URL: server, caching, security and redirects. Free, no signup.",
           "route": "/get-http-headers",
           "popular": false,
-          "seoDescription": "Reveal any site's HTTP headers — server, cache, security policies and cookies. Debug fast — free, no signup.",
+          "seoDescription": "Fetch a page and read its HTML head section, including the title tag, meta descriptions and linked scripts, without ever opening a developer console.",
           "seoTitle": "HTTP Headers Checker — Inspect Any URL"
         },
         {
@@ -3953,7 +3953,7 @@
           "route": "/gst-calculator",
           "popular": false,
           "title": "GST Calculator - Free Online Tool",
-          "seoDescription": "Calculate GST inclusive and exclusive prices for all Indian slabs. Invoicing made easy — free, no signup.",
+          "seoDescription": "Add GST to an invoice amount and split it into base, tax and total at any rate, covering the Indian slabs of 5, 12, 18 and 28 percent in one pass.",
           "seoTitle": "GST Calculator India — All Slabs, Free"
         },
         {
@@ -3962,7 +3962,7 @@
           "description": "Convert HEX colors to RGB values with live preview. Copy for CSS in one click — free, no signup.",
           "route": "/hex-to-rgb-converter",
           "popular": false,
-          "seoDescription": "Turn HEX codes into RGB triplets instantly with visual preview. Designers' staple — free, no signup.",
+          "seoDescription": "Turn a six-digit HEX colour into its RGB triplet with a preview swatch alongside, then copy the numbers into CSS, canvas code or an image editor.",
           "seoTitle": "HEX to RGB Converter — With Preview"
         },
         {
@@ -3971,7 +3971,7 @@
           "description": "Discover where any website is hosted: provider, IP and nameservers. Competitor intel — free.",
           "route": "/hosting-checker",
           "popular": false,
-          "seoDescription": "Find any site's hosting provider, server IP and DNS in seconds. Free lookup, no signup needed.",
+          "seoDescription": "Trace a site's URL through its redirect hops and status codes to see where the address actually lands before you change hosts, move servers or repoint DNS.",
           "seoTitle": "Hosting Checker — Find Any Site's Host"
         },
         {
@@ -3980,7 +3980,7 @@
           "description": "Generate Apache .htaccess 301 redirect rules without regex pain. HTTP to HTTPS too — free.",
           "route": "/htaccess-redirect-generator",
           "popular": false,
-          "seoDescription": "Create copy-paste .htaccess redirects: 301s, www and HTTPS rules. No regex needed — free, no signup.",
+          "seoDescription": "Build a single Redirect rule for an Apache .htaccess file: enter the source path and target, choose a 301, 302 or 307 status, and copy the finished line.",
           "seoTitle": ".htaccess Redirect Generator — 301s Made Easy"
         },
         {
@@ -3989,7 +3989,7 @@
           "description": "Look up any HTTP status code: 200, 301, 404, 500 and more explained plainly. Debug faster — free.",
           "route": "/http-status-code-checker",
           "popular": false,
-          "seoDescription": "Decode HTTP status codes from 100 to 599 with causes and fixes. Every code explained — free, no signup needed.",
+          "seoDescription": "Send a live request to any URL and see exactly which HTTP status code comes back, with the final address reported alongside for context and debugging.",
           "seoTitle": "HTTP Status Codes Explained — 200 to 599"
         },
         {
@@ -3998,7 +3998,7 @@
           "description": "Convert illuminance between lux, foot-candles and lumens. Lighting design math — free.",
           "route": "/illuminance-converter",
           "popular": false,
-          "seoDescription": "Switch light units: lux, foot-candles, lumens and more. For photographers and engineers — free, no signup.",
+          "seoDescription": "Compare lighting levels in lux and foot-candles for studio setups, plant shelves or workplace safety checks, with both values updating as you type.",
           "seoTitle": "Lux Converter — Illuminance Units, Free"
         },
         {
@@ -4007,7 +4007,7 @@
           "description": "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol. Fast, 100% private client-side processing with zero file uploads and no registration required.",
           "route": "/indexnow",
           "popular": false,
-          "seoDescription": "Ping Bing and Yandex to index new URLs in minutes, not weeks. Faster rankings — free, no signup needed.",
+          "seoDescription": "Check a URL's redirect chain and response status before pinging search engines, so your IndexNow submission points at a page that genuinely resolves.",
           "seoTitle": "IndexNow Submit — Instant Bing Indexing"
         },
         {
@@ -4016,7 +4016,7 @@
           "description": "Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.",
           "route": "/internet-speed-test",
           "popular": true,
-          "seoDescription": "Measure download, upload and ping in one click. Diagnose slow Wi-Fi instantly — free, no signup.",
+          "seoDescription": "Click through a sample connection check and watch the download, upload, ping and jitter panels fill in to see how a connection speed report is structured.",
           "seoTitle": "Internet Speed Test — Mbps in Seconds"
         },
         {
@@ -4025,7 +4025,7 @@
           "description": "See your public IP, location, ISP and timezone instantly. Network details — free, no signup.",
           "route": "/ip-address-lookup",
           "popular": false,
-          "seoDescription": "Look up any IP address: geolocation, ISP, ASN and timezone. Accurate and instant — free, no signup.",
+          "seoDescription": "See the public IP your connection presents to the web, along with the city, region, ISP, timezone and map coordinates a geolocation service links to it.",
           "seoTitle": "IP Lookup — Location, ISP & Details"
         },
         {
@@ -4034,7 +4034,7 @@
           "description": "Convert length between mm, cm, inches, feet, meters and miles. Everyday math — free.",
           "route": "/length-converter",
           "popular": false,
-          "seoDescription": "Switch length units instantly: metric, imperial and nautical. Rulers for everything — free, no signup.",
+          "seoDescription": "Convert distances from nanometres up to miles across nine metric and imperial units, with all equivalents recalculated in the side panel as you type.",
           "seoTitle": "Length Converter — Metric & Imperial"
         },
         {
@@ -4044,7 +4044,7 @@
           "route": "/loan-calculator",
           "popular": false,
           "title": "Loan Calculator - Free Online Tool",
-          "seoDescription": "Calculate EMIs, total interest and payoff timelines for any loan. Home, car, personal — free, no signup.",
+          "seoDescription": "Estimate the monthly payment on a mortgage or personal loan from principal, annual rate and term, then tweak the rate or term to retest the figure.",
           "seoTitle": "Loan EMI Calculator — Interest & Schedule"
         },
         {
@@ -4054,7 +4054,7 @@
           "route": "/margin-calculator",
           "popular": false,
           "title": "Margin Calculator - Free Online Tool",
-          "seoDescription": "Find margins, markups and discounts from cost and revenue. Seller math made easy — free, no signup.",
+          "seoDescription": "Turn a unit cost and selling price into a gross margin percentage, a quick sanity check on pricing before a product or service goes live for sale.",
           "seoTitle": "Profit Margin Calculator — Markup & Breakeven"
         },
         {
@@ -4063,7 +4063,7 @@
           "description": "Generate MD5 hashes for passwords and file checksums. Instant digests — free, no signup.",
           "route": "/md5-generator",
           "popular": false,
-          "seoDescription": "Hash any text with MD5 for checksums and legacy systems. One-click digests — free, no signup needed.",
+          "seoDescription": "Hash text or a file with MD5 for checksums and legacy systems, and see the matching SHA-1, SHA-256, SHA-512 and SHA-3 digests for the exact same input.",
           "seoTitle": "MD5 Hash Generator — Instant Digests"
         },
         {
@@ -4072,7 +4072,7 @@
           "description": "Calculate secure SHA-256 and HMAC hashes in your browser. 100% client-side crypto — free forever.",
           "route": "/sha256-hash-generator",
           "popular": true,
-          "seoDescription": "Generate SHA-256 cryptographic digests and HMACs online. Fast, browser-based, zero uploads.",
+          "seoDescription": "Compute SHA-256 digests for pasted text or an uploaded file, with SHA-1, SHA-512, SHA-3 and MD5 results shown together on the same screen for comparison.",
           "seoTitle": "SHA256 Hash Generator Online — Free & Secure"
         },
         {
@@ -4081,7 +4081,7 @@
           "description": "Convert numbers to Roman numerals (MMXXVI) and back. History homework — free, no signup.",
           "route": "/number-to-roman-numerals",
           "popular": false,
-          "seoDescription": "Turn any number into Roman numerals I through M instantly, plus reverse conversion. Free, no signup needed.",
+          "seoDescription": "Write any number in Roman numerals as you type, with the classic symbols recalculated instantly for homework, anniversary dates or engraved plaques.",
           "seoTitle": "Roman Numerals Converter — I, V, X, L, C, D, M"
         },
         {
@@ -4090,7 +4090,7 @@
           "description": "Convert running pace between min/km, min/mile and speed. Race planning — free, no signup.",
           "route": "/pace-converter",
           "popular": false,
-          "seoDescription": "Translate pace to speed and finish times for 5K to marathon. Runners' calculator — free, no signup.",
+          "seoDescription": "Convert your running pace between minutes per kilometre, minutes per mile and seconds per metre when planning training splits and race-day targets.",
           "seoTitle": "Running Pace Converter — min/km & min/mile"
         },
         {
@@ -4099,7 +4099,7 @@
           "description": "Check any page's total weight: HTML, CSS, JS and images broken down. Speed audit — free.",
           "route": "/page-size-checker",
           "popular": false,
-          "seoDescription": "Measure webpage size and resource breakdown to find bloat. Optimize loading — free, no signup needed.",
+          "seoDescription": "Pull a page through a capped fetch and see how many bytes of HTML arrive before truncation, a rough starting weight before you optimise larger assets.",
           "seoTitle": "Page Size Checker — Find What Slows You"
         },
         {
@@ -4108,7 +4108,7 @@
           "description": "Convert ppm, ppb, percent and mg/L concentrations. Lab and pool math — free, no signup.",
           "route": "/parts-per-converter",
           "popular": false,
-          "seoDescription": "Switch between ppm, ppb, ppt, percent and mg/L instantly. Chemistry simplified — free, no signup.",
+          "seoDescription": "Shift between ratio, percent, ppm and ppb for dilution, water-quality testing and lab notes, with all four values recalculated instantly as you type.",
           "seoTitle": "PPM Converter — ppm, ppb, Percent & mg/L"
         },
         {
@@ -4117,7 +4117,7 @@
           "description": "Create cryptographically secure, random passwords online. Customize length, character sets, and verify strength locally.",
           "route": "/secure-password-generator",
           "popular": true,
-          "seoDescription": "Create unbreakable passwords with custom length and symbols. Stored nowhere — free, no signup needed.",
+          "seoDescription": "Draw a password from any mix of upper and lower case letters, digits and symbols, at lengths from 4 to 128, with a strength bar scoring each result.",
           "seoTitle": "Strong Password Generator — Secure & Free"
         },
         {
@@ -4126,7 +4126,7 @@
           "description": "Generate cryptographically secure, random passwords with custom lengths, symbols, numbers, and uppercase characters locally on your device.",
           "route": "/password-generator",
           "popular": true,
-          "seoDescription": "Generate strong random passwords with letters, numbers and symbols. Passphrase option — free, no signup.",
+          "seoDescription": "Set the length, pick uppercase, lowercase, digits and symbols, and generate a random password with a live strength readout and one-click copy button.",
           "seoTitle": "Random Password Generator — Memorable & Strong"
         },
         {
@@ -4135,7 +4135,7 @@
           "description": "See exactly what PayPal takes from every sale, domestic and international. Price with fees in mind — free.",
           "route": "/paypal-fee-calculator",
           "popular": false,
-          "seoDescription": "Calculate PayPal fees and net payouts for goods, friends and micropayments. Know your take-home — free, no signup.",
+          "seoDescription": "Subtract a percentage fee and a fixed charge from a payment to see the net amount you keep, using your own figures for any payment processor's rates.",
           "seoTitle": "PayPal Fee Calculator — Net Payout, Free"
         },
         {
@@ -4144,7 +4144,7 @@
           "description": "Find percentages, increases, decreases and reverses in one box. Everyday math — free, no signup.",
           "route": "/percentage-calculator",
           "popular": false,
-          "seoDescription": "Solve any percentage problem: of-values, change, markup and reverse. Students' favorite — free, no signup.",
+          "seoDescription": "See what fraction one number is of another: type the part and the whole to get the percentage to four decimal places, ideal for quick homework checks.",
           "seoTitle": "Percentage Calculator — Increase, Decrease & Of"
         },
         {
@@ -4153,7 +4153,7 @@
           "description": "Convert power between watts, kilowatts, horsepower and BTU/hr. Engine math — free, no signup.",
           "route": "/power-converter",
           "popular": false,
-          "seoDescription": "Switch power units: W, kW, HP, BTU/hr and more instantly. Precise conversions — free, no signup.",
+          "seoDescription": "Compare power ratings in watts, kilowatts and mechanical horsepower for vehicle engines, appliance labels and quick data-sheet checks at a glance.",
           "seoTitle": "Power Converter — Watts, kW & Horsepower"
         },
         {
@@ -4162,7 +4162,7 @@
           "description": "Convert pressure between PSI, bar, kPa, atm and mmHg. Tire and lab math — free.",
           "route": "/pressure-converter",
           "popular": false,
-          "seoDescription": "Switch pressure units instantly: PSI, bar, pascal, atm and torr. Accurate results — free, no signup.",
+          "seoDescription": "Translate pressure readings across pascals, kilopascals, bar, PSI, atmospheres and mmHg for tyre pressure checks, weather data, plumbing jobs and lab work.",
           "seoTitle": "Pressure Converter — PSI, Bar & kPa"
         },
         {
@@ -4180,7 +4180,7 @@
           "description": "Calculate odds for dice, cards, coins and events with steps. Stats clarity — free, no signup.",
           "route": "/probability-calculator",
           "popular": false,
-          "seoDescription": "Solve probability: single events, combinations and streaks explained. Homework helper — free, no signup.",
+          "seoDescription": "Find the binomial probability of exactly k successes across n trials for a given success chance, with the resulting probability shown in scientific notation.",
           "seoTitle": "Probability Calculator — Odds & Dice, Free"
         },
         {
@@ -4189,7 +4189,7 @@
           "description": "Read QR codes from uploaded images to reveal links and text. Instant decode — free, no signup.",
           "route": "/qr-code-decoder",
           "popular": false,
-          "seoDescription": "Decode QR codes from screenshots and photos to expose hidden URLs safely. Free, no signup needed.",
+          "seoDescription": "Decode a QR code from a screenshot or photo: drop in an image and read the link or text it carries, so you can inspect the destination before visiting.",
           "seoTitle": "QR Code Decoder — Read from Images"
         },
         {
@@ -4198,7 +4198,7 @@
           "description": "Make custom QR codes with colors, logos and frames for links, Wi-Fi and UPI. Free, no signup.",
           "route": "/qr-code-generator",
           "popular": false,
-          "seoDescription": "Generate scannable QR codes for URLs, Wi-Fi, UPI and contacts. Styled and free — no signup needed.",
+          "seoDescription": "Make coloured QR codes for links, text or contact cards, preview each one live, and download the finished code as a PNG or SVG file for print or web use.",
           "seoTitle": "QR Code Generator — Custom & Free"
         },
         {
@@ -4207,7 +4207,7 @@
           "description": "Generate random UUIDs v4 in bulk for databases and testing. One click, a thousand IDs — free.",
           "route": "/random-uuid-generator",
           "popular": false,
-          "seoDescription": "Create bulk random UUID v4 identifiers for apps and databases. Copy all at once — free, no signup.",
+          "seoDescription": "Create a fresh random UUID v4 with each click, then copy the identifier straight into a database seed, test fixture, config file or API request body.",
           "seoTitle": "Random UUID Generator — Bulk v4 IDs"
         },
         {
@@ -4216,7 +4216,7 @@
           "description": "Convert reactive energy between kVArh, MVArh and more. Power systems math — free, no signup.",
           "route": "/reactive-energy-converter",
           "popular": false,
-          "seoDescription": "Switch reactive energy units for grid and billing calculations. Engineers' helper — free, no signup.",
+          "seoDescription": "Run utility-bill style energy maths: switch joules, kilocalories, kilowatt-hours and BTU when reconciling grid data, metering and consumption notes.",
           "seoTitle": "Reactive Energy Converter — kVArh Units"
         },
         {
@@ -4225,7 +4225,7 @@
           "description": "Convert reactive power between kVAr, MVAr and VAr. Electrical grids simplified — free.",
           "route": "/reactive-power-converter",
           "popular": false,
-          "seoDescription": "Switch kVAr, MVAr and VAr units for power-factor work. Instant answers — free, no signup needed.",
+          "seoDescription": "Restate reactive power in var alongside kilowatt-scale and mechanical horsepower equivalents for power-factor discussions and electrical load notes.",
           "seoTitle": "Reactive Power Converter — kVAr & MVAr"
         },
         {
@@ -4234,7 +4234,7 @@
           "description": "Trace any URL's full redirect chain: 301s, 302s and final landing page. SEO audits — free.",
           "route": "/redirect-checker",
           "popular": false,
-          "seoDescription": "Follow redirect hops to spot chains, loops and leaks. Fix link equity loss — free, no signup needed.",
+          "seoDescription": "Follow a URL through up to a dozen hops, listing each status code and Location target so redirect chains, loops and stray landings become obvious.",
           "seoTitle": "Redirect Checker — Trace 301 Chains"
         },
         {
@@ -4243,7 +4243,7 @@
           "description": "Convert RGB values to HEX codes with live color preview. One-click CSS copy — free.",
           "route": "/rgb-to-hex-converter",
           "popular": false,
-          "seoDescription": "Turn RGB triplets into HEX codes instantly. Preview swatches included — free, no signup needed.",
+          "seoDescription": "Type RGB values and get the matching HEX code with a colour preview, ready to copy into CSS rules, a design file, a theme editor or a canvas sketch.",
           "seoTitle": "RGB to HEX Converter — With Preview"
         },
         {
@@ -4252,7 +4252,7 @@
           "description": "Translate Roman numerals (XIV, MMXXVI) to regular numbers. Ancient math — free.",
           "route": "/roman-numerals-to-number",
           "popular": false,
-          "seoDescription": "Decode any Roman numeral to digits instantly, I through M and beyond. Free, no signup required.",
+          "seoDescription": "Read Roman numerals as ordinary digits: type or paste a value such as MMXXVI or XIV and watch the decimal number it represents appear instantly on screen.",
           "seoTitle": "Roman to Number Decoder — XIV to 14"
         },
         {
@@ -4261,7 +4261,7 @@
           "description": "Add US state sales tax to prices or back it out. Checkout math — free, no signup.",
           "route": "/sales-tax-calculator",
           "popular": false,
-          "seoDescription": "Calculate sales tax for any US state rate, inclusive or exclusive. Shop smart — free, no signup.",
+          "seoDescription": "Add sales tax to a net amount at any rate and see the tax and gross totals split out separately, handy for invoicing, quotes or product pricing work.",
           "seoTitle": "Sales Tax Calculator — US States, Free"
         },
         {
@@ -4270,7 +4270,7 @@
           "description": "Preview your site at phone, tablet, laptop and 4K sizes. Responsive testing — free.",
           "route": "/screen-resolution-simulator",
           "popular": false,
-          "seoDescription": "Simulate how websites look on mobile, tablet and desktop screens. Test layouts — free, no signup.",
+          "seoDescription": "Check the screen width, height and pixel ratio your device reports to a page, a useful first reference point before previewing responsive layouts.",
           "seoTitle": "Screen Size Simulator — Test Responsive"
         },
         {
@@ -4279,7 +4279,7 @@
           "description": "Check if any website or server is up, slow or down right now. Instant status — free.",
           "route": "/server-status-checker",
           "popular": false,
-          "seoDescription": "Monitor website uptime and response times in real time. Catch outages early — free, no signup.",
+          "seoDescription": "Probe a website and see whether it answers right now, with the final address and HTTP status code reported back in the panel once the check has completed.",
           "seoTitle": "Is It Down? — Website Status Checker"
         },
         {
@@ -4288,7 +4288,7 @@
           "description": "Convert speed between km/h, mph, knots, m/s and Mach. Travel math — free, no signup.",
           "route": "/speed-converter",
           "popular": false,
-          "seoDescription": "Switch speed units instantly: kph, mph, knots, meters per second. Precise — free, no signup.",
+          "seoDescription": "Convert speed values between metres per second, kilometres per hour, miles per hour, knots and feet per second for travel, aviation and engineering maths.",
           "seoTitle": "Speed Converter — km/h, mph & Knots"
         },
         {
@@ -4297,7 +4297,7 @@
           "description": "Convert Celsius, Fahrenheit and Kelvin with formula shown. Weather and lab — free.",
           "route": "/temperature-converter",
           "popular": false,
-          "seoDescription": "Switch °C, °F and K instantly with cooking and weather references. Free, no signup needed.",
+          "seoDescription": "Switch temperatures between Celsius, Fahrenheit and Kelvin as you type, with the arithmetic handled at full precision for weather checks or lab work.",
           "seoTitle": "Temperature Converter — °C, °F & K"
         },
         {
@@ -4306,7 +4306,7 @@
           "description": "Convert seconds to hours, days to weeks, and across timezones. Schedule math — free.",
           "route": "/time-converter",
           "popular": false,
-          "seoDescription": "Translate time units and world timezones in one box. Plan across zones — free, no signup needed.",
+          "seoDescription": "Turn durations into other units, from nanoseconds through to years, when checking timestamps, schedules, countdowns or quick physics and timing problems.",
           "seoTitle": "Time Converter — Units & Timezones"
         },
         {
@@ -4315,7 +4315,7 @@
           "description": "Convert torque between Nm, ft-lb, kg-m and more. Garage and engineering — free.",
           "route": "/torque-converter",
           "popular": false,
-          "seoDescription": "Switch Newton-meters, foot-pounds and kilogram-meters instantly. Precise specs — free, no signup.",
+          "seoDescription": "Switch torque figures between newton-metres and pound-feet when comparing wrench specs, motor ratings or the values printed in a workshop manual.",
           "seoTitle": "Torque Converter — Nm & ft-lb, Free"
         },
         {
@@ -4324,7 +4324,7 @@
           "description": "Fast and privacy-conscious URL Decode to decode web links and URI parameters directly in your browser with no server logging.",
           "route": "/url-decode",
           "popular": false,
-          "seoDescription": "Decode percent-encoded URLs back to readable links. Fix messy redirects — free, no signup needed.",
+          "seoDescription": "Read percent-encoded links as plain text, with decoding happening live as you paste, so you can see exactly what a redirect URL or API call really says.",
           "seoTitle": "URL Decoder — Decode Links Instantly"
         },
         {
@@ -4333,7 +4333,7 @@
           "description": "Fast and privacy-conscious URL Encode to encode web links and URI parameters directly in your browser with no server logging.",
           "route": "/url-encode",
           "popular": false,
-          "seoDescription": "Percent-encode URLs for safe sharing in emails and code. Handles Unicode — free, no signup required.",
+          "seoDescription": "Escape spaces, accents, ampersands and other symbols into percent-encoded form for links shared in emails, code, query strings and analytics tags.",
           "seoTitle": "URL Encoder — Encode Links Instantly"
         },
         {
@@ -4342,7 +4342,7 @@
           "description": "Fast and privacy-conscious URL Opener to opener web links and URI parameters directly in your browser with no server logging.",
           "route": "/url-opener",
           "popular": false,
-          "seoDescription": "Open dozens of URLs at once with one click. Research and SEO workflows — free, no signup needed.",
+          "seoDescription": "Paste a URL, check how it parses out, and open it in a new tab from a small inspector that shows the destination before your browser actually launches it.",
           "seoTitle": "Bulk URL Opener — Open Multiple Links"
         },
         {
@@ -4351,7 +4351,7 @@
           "description": "Fast and privacy-conscious URL Parser to parser web links and URI parameters directly in your browser with no server logging.",
           "route": "/url-parser",
           "popular": false,
-          "seoDescription": "Break any URL into protocol, domain, path and query parts. Debug links visually — free, no signup.",
+          "seoDescription": "Break even very long addresses into protocol, host, port, path, query and fragment parts, so you can see exactly what the link is really carrying.",
           "seoTitle": "URL Parser — Split Links into Parts"
         },
         {
@@ -4360,7 +4360,7 @@
           "description": "Generate clean rewrite rules for Apache and Nginx. Pretty URLs without pain — free.",
           "route": "/url-rewriting-tool",
           "popular": false,
-          "seoDescription": "Create .htaccess and Nginx rewrite rules for SEO-friendly URLs. Copy-paste ready — free, no signup.",
+          "seoDescription": "Study a URL's components before writing redirects: see the protocol, host, path and query in one place to plan your Apache or Nginx rewrite patterns.",
           "seoTitle": "URL Rewrite Generator — .htaccess & Nginx"
         },
         {
@@ -4369,7 +4369,7 @@
           "description": "Shorten long web URLs into compact, easily shareable links for social media, marketing campaigns, and messages with zero tracking.",
           "route": "/url-shortener",
           "popular": false,
-          "seoDescription": "Shorten long links into clean, shareable URLs with click tracking. Free shortener — no signup needed.",
+          "seoDescription": "Draft short links in a demo workbench: enter a URL, add a custom alias, process a batch, and preview every result with a QR code and visit count.",
           "seoTitle": "URL Shortener — Short Links, No Signup"
         },
         {
@@ -4378,7 +4378,7 @@
           "description": "Easily build campaign URLs with UTM parameters for Google Analytics tracking. Free online UTM builder for marketing campaigns, social media, and email links — 100% private, no signup.",
           "route": "/utm-builder",
           "popular": false,
-          "seoDescription": "Build tagged campaign URLs with source, medium and campaign fields. Analytics-ready links — free, no signup.",
+          "seoDescription": "Tag a campaign URL with source, medium, campaign, term and content parameters, then copy the tracked link out before you publish it anywhere online.",
           "seoTitle": "UTM Builder — Campaign URLs Made Easy"
         },
         {
@@ -4387,7 +4387,7 @@
           "description": "Convert voltage between volts, millivolts and kilovolts. Circuit math — free, no signup.",
           "route": "/voltage-converter",
           "popular": false,
-          "seoDescription": "Switch volts, millivolts and kilovolts instantly. Electronics essential — free, no signup needed.",
+          "seoDescription": "Move between volts, millivolts and kilovolts for wiring diagrams, battery packs, sensor outputs and electronics homework, updated live as you type.",
           "seoTitle": "Voltage Converter — V, mV & kV"
         },
         {
@@ -4396,7 +4396,7 @@
           "description": "Convert volume between liters, gallons, cups and mL. Cooking and lab — free.",
           "route": "/volume-converter",
           "popular": false,
-          "seoDescription": "Switch liters, gallons, cups, ounces and mL instantly. Recipes decoded — free, no signup.",
+          "seoDescription": "Convert cooking and lab volumes between millilitres, litres, US cups, US gallons, cubic feet and cubic metres, with all equivalents shown together.",
           "seoTitle": "Volume Converter — Liters, Gallons & Cups"
         },
         {
@@ -4405,7 +4405,7 @@
           "description": "Convert flow rates: L/min, GPM, CFM and m³/h. Plumbing math — free, no signup.",
           "route": "/volumetric-flow-rate-converter",
           "popular": false,
-          "seoDescription": "Switch L/min, GPM, CFM, m³/h and more flow units. Engineering helper — free, no signup.",
+          "seoDescription": "Compare flow rates across cubic metres per second, litres per minute and US gallons per minute for plumbing, pumps and industrial process sizing work.",
           "seoTitle": "Flow Rate Converter — L/min, GPM & CFM"
         },
         {
@@ -4414,7 +4414,7 @@
           "description": "Convert weight between kg, pounds, ounces and grams. Gym and shipping — free.",
           "route": "/weight-converter",
           "popular": false,
-          "seoDescription": "Switch kilograms, pounds, ounces and stones instantly. Everyday conversions — free, no signup.",
+          "seoDescription": "Switch weights between milligrams, grams, kilograms, ounces, pounds and stones for recipes, shipping labels, luggage limits and gym progression logs.",
           "seoTitle": "Weight Converter — kg, lbs & Ounces"
         },
         {
@@ -4423,7 +4423,7 @@
           "description": "Instantly see your browser name, version, OS and engine. Debug compat — free.",
           "route": "/what-is-my-browser",
           "popular": false,
-          "seoDescription": "Detect your browser, version, operating system and rendering engine in one click. Free, no signup.",
+          "seoDescription": "See which browser is rendering this page, Chrome, Firefox, Safari, Edge or Opera, identified straight from the user-agent string your visit sends.",
           "seoTitle": "What Browser Am I Using? — Instant Check"
         },
         {
@@ -4432,7 +4432,7 @@
           "description": "See your public IPv4/IPv6 address with location and ISP. One glance — free.",
           "route": "/what-is-my-ip-address",
           "popular": false,
-          "seoDescription": "Reveal your public IP address, location, ISP and timezone instantly. Free lookup, no signup.",
+          "seoDescription": "Read the public IP address your connection presents to the web, fetched live from an echo service so you can compare, whitelist or troubleshoot it.",
           "seoTitle": "What Is My IP? — Address & Location"
         },
         {
@@ -4441,7 +4441,7 @@
           "description": "See your screen resolution, viewport and pixel ratio live. Design reference — free.",
           "route": "/what-is-my-screen-resolution",
           "popular": false,
-          "seoDescription": "Detect screen size, viewport, DPR and color depth instantly. Responsive reference — free, no signup.",
+          "seoDescription": "Read your display's width, height and device pixel ratio exactly as the page sees them, then copy the figures into a bug report or a design spec.",
           "seoTitle": "Screen Resolution Checker — Size & DPR"
         },
         {
@@ -4450,7 +4450,7 @@
           "description": "View your full User-Agent string with parsed browser and OS. Copy ready — free.",
           "route": "/what-is-my-user-agent",
           "popular": false,
-          "seoDescription": "See and parse your browser's User-Agent: engine, OS and device decoded. Free, no signup.",
+          "seoDescription": "View the raw User-Agent string your browser sends with every request, ready to paste into a bug report, support ticket or browser compatibility test.",
           "seoTitle": "User Agent Checker — What's My UA?"
         },
         {
@@ -4459,7 +4459,7 @@
           "description": "Look up any domain's owner, registrar and expiry dates. Due diligence — free.",
           "route": "/whois-domain-lookup",
           "popular": false,
-          "seoDescription": "WHOIS lookup: registrant, creation and expiry dates for any domain. Research free, no signup.",
+          "seoDescription": "Run a quick first-pass check on a domain before registrar research: send a live request and read its status, redirect trail and a quick page excerpt.",
           "seoTitle": "WHOIS Lookup — Domain Owner & Expiry"
         },
         {
@@ -4468,7 +4468,7 @@
           "description": "Detect any site's WordPress theme and plugins in seconds. Spy ethically — free.",
           "route": "/wordpress-theme-detector",
           "popular": false,
-          "seoDescription": "Reveal which WordPress theme and plugins any site uses. Competitor research — free, no signup.",
+          "seoDescription": "Fetch a site's page and scan the returned markup excerpt for theme and plugin paths that you can spot by eye in the monospace output panel yourself.",
           "seoTitle": "WordPress Theme Detector — Free Lookup"
         },
         {
@@ -4477,7 +4477,7 @@
           "description": "Free Other Tools online tool. Fast and secure. Fast, 100% private client-side processing with zero file uploads and no registration required.",
           "route": "/other-tools",
           "popular": false,
-          "seoDescription": "Browse the full SopKit utilities collection: converters, checkers and generators. All free, no signup required.",
+          "seoDescription": "Browse every utility in one directory, converters, checkers, generators and network lookups, and jump straight to the exact utility you came here for.",
           "seoTitle": "More Free Tools — Utilities Collection"
         },
         {
@@ -4485,7 +4485,7 @@
           "name": "Text Tools",
           "description": "Format, convert, and manipulate text content. Fast, 100% private client-side processing with zero file uploads and no registration required.",
           "route": "/text-tools",
-          "seoDescription": "Every text utility in one hub: counters, converters, generators and checkers. Free, no signup required.",
+          "seoDescription": "Find every text utility in one hub: counters, case changers, converters, generators and cleanup tools, grouped so the right one is only a click away.",
           "seoTitle": "Free Text Tools — Format & Analyze Text"
         },
         {
@@ -4494,7 +4494,7 @@
           "description": "Generate high-converting, customized whatsapp link ideas, copy, and templates. Easily customize and copy results in one click.",
           "route": "/whatsapp-link-generator",
           "popular": true,
-          "seoDescription": "Create wa.me click-to-chat links with pre-filled messages. Boost customer chats — free, no signup needed.",
+          "seoDescription": "Build a wa.me click-to-chat link with a country code and a pre-filled message, then copy it or download a QR code for a shop counter, printed flyer or bio.",
           "seoTitle": "WhatsApp Link Generator — wa.me Links Free"
         },
         {
@@ -4503,7 +4503,7 @@
           "description": "Generate optimized qr code generator for business details. Instantly copy or share customized outputs.",
           "route": "/qr-code-generator-business",
           "popular": true,
-          "seoDescription": "Create branded QR codes for menus, payments, Wi-Fi and reviews. Logo and colors included — free, no signup.",
+          "seoDescription": "Generate QR codes for menus, WhatsApp chats, Google review pages and website links, each ready to download as a clean PNG file for print or signage.",
           "seoTitle": "QR Code Generator for Business — Free"
         },
         {
@@ -4512,7 +4512,7 @@
           "description": "Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability.",
           "route": "/terms-and-conditions-generator",
           "popular": true,
-          "seoDescription": "Generate a tailored Terms of Service for your website or app in minutes. Lawyer-reviewed templates — free, no signup.",
+          "seoDescription": "Draft a starter Terms and Conditions template around your site name and contact email, covering acceptance, licensing, disclaimers and liability.",
           "seoTitle": "Terms & Conditions Generator — Custom Policy"
         }
       ]
