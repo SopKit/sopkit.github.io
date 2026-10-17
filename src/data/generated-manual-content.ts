@@ -274,20 +274,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does AI Image Detector do?",
-        "answer": "AI Image Detector lets you process files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the score decide between likely AI and likely natural?",
+        "answer": "The heuristic starts at 50. A square aspect ratio or a PNG file adds points, a high-resolution image under 50 KB adds more, and files under 256 px lose ten points; 60 or above reads Likely AI-generated."
       },
       {
-        "question": "Is AI Image Detector really free? Are there any hidden charges?",
-        "answer": "Yes, AI Image Detector is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I trust the verdict on a re-saved or compressed image?",
+        "answer": "Treat it as a hint, not proof. The score reads format, dimensions and file size, so re-saving a real photo as PNG or stripping metadata can push it over the cutoff."
       },
       {
-        "question": "Do I need to create an account or sign up to use AI Image Detector?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use AI Image Detector on mobile devices or tablets?",
-        "answer": "Yes, AI Image Detector works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does it use a trained model to examine the pixels?",
+        "answer": "No. It checks metadata-style traits such as file format, dimensions and size rather than doing pixel forensics, so deepfakes and hand-edited photos are not distinguished from ordinary images."
       },
       {
         "question": "Does the image analysis leave my device?",
@@ -333,20 +329,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does AI Image Generator do?",
-        "answer": "AI Image Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which service renders the AI images after I submit a prompt?",
+        "answer": "Prompts are sent to Pollinations at image.pollinations.ai, which renders the picture and returns it to the page. No image model runs on SopKit's side."
       },
       {
-        "question": "Is AI Image Generator really free? Are there any hidden charges?",
-        "answer": "Yes, AI Image Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I reproduce the exact same AI image later?",
+        "answer": "Enter an optional seed to reproduce a specific look, or leave it empty for fresh variations. The last 50 generations stay available from History and Favorites."
       },
       {
-        "question": "Do I need to create an account or sign up to use AI Image Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use AI Image Generator on mobile devices or tablets?",
-        "answer": "Yes, AI Image Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What pixel sizes and styles can I generate?",
+        "answer": "Aspect presets cover square, landscape, portrait, widescreen, and ultra-wide, from 512 x 512 squares up to 2560 x 1080 canvases. Eight styles range from photorealistic to anime and cyberpunk."
       },
       {
         "question": "Where does my prompt travel when I click Generate?",
@@ -392,20 +384,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does AI Music Generator do?",
-        "answer": "AI Music Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which engine generates the songs for this tool?",
+        "answer": "Requests are processed through SopKit's server route by MiniMax Music 2.6 running on Cloudflare AI, which returns the finished track. No model runs on your device."
       },
       {
-        "question": "Is AI Music Generator really free? Are there any hidden charges?",
-        "answer": "Yes, AI Music Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I generate instrumental music without vocals?",
+        "answer": "Yes, switch Instrumental Mode for pure backing music, or keep vocals and write lyrics yourself. Insert tags like [Verse], [Chorus], and [Bridge] with one click."
       },
       {
-        "question": "Do I need to create an account or sign up to use AI Music Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use AI Music Generator on mobile devices or tablets?",
-        "answer": "Yes, AI Music Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What audio settings can I tweak on the rendered song?",
+        "answer": "Sample rate runs from 16 to 44.1 kHz, bitrate from 32 to 256 kbps, and downloads are MP3 or WAV. Favorites and the last 50 tracks stay reloadable from History."
       },
       {
         "question": "What happens to the style prompt and lyrics while a song is made?",
@@ -451,20 +439,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does AI Persona & System Prompt Generator do?",
-        "answer": "AI Persona & System Prompt Generator lets you generate AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which expert personas are built into this generator?",
+        "answer": "Five personas cover software architect, SEO copywriter, research analyst, marketer, and tutor, each with a matching system prompt structure."
       },
       {
-        "question": "Is AI Persona & System Prompt Generator really free? Are there any hidden charges?",
-        "answer": "Yes, AI Persona & System Prompt Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do the thinking and preamble toggles change the output?",
+        "answer": "The thinking toggle instructs the model to plan inside thinking tags before answering. Preamble suppression blocks openers and conversational sign-offs."
       },
       {
-        "question": "Do I need to create an account or sign up to use AI Persona & System Prompt Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use AI Persona & System Prompt Generator on mobile devices or tablets?",
-        "answer": "Yes, AI Persona & System Prompt Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I add project-specific details to a persona prompt?",
+        "answer": "Yes, the custom context textarea appends your specifics under a dedicated heading in the generated prompt. Tone and format block choices are applied at the same time."
       },
       {
         "question": "What happens to the project details I type into the custom context box?",
@@ -509,20 +493,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does AI Poem Generator do?",
-        "answer": "AI Poem Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the AI poem generator run a language model?",
+        "answer": "No, each press weaves a complete poem from handcrafted templates with shuffled poetic words. That is why reruns feel fresh but keep a consistent classic tone."
       },
       {
-        "question": "Is AI Poem Generator really free? Are there any hidden charges?",
-        "answer": "Yes, AI Poem Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What kind of imagery do the generated poems use?",
+        "answer": "Imagery leans on moonlight, rivers, twilight, and wildflowers. Rhyming lines shuffle through poetic nouns, adjectives, and emotions from built-in word banks."
       },
       {
-        "question": "Do I need to create an account or sign up to use AI Poem Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use AI Poem Generator on mobile devices or tablets?",
-        "answer": "Yes, AI Poem Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I copy a generated poem?",
+        "answer": "Click the displayed poem to copy the whole verse onto your clipboard. Copy All collects everything currently shown, and the reroll button refreshes on demand."
       },
       {
         "question": "Are the poems written on SopKit's servers?",
@@ -568,20 +548,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does AI Text Detector do?",
-        "answer": "AI Text Detector lets you process files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why does polished formal writing get flagged as likely AI?",
+        "answer": "Long averaged sentence length, longer words, low vocabulary variation and stock phrases such as leverage or robust all add points, so carefully edited formal prose can score high."
       },
       {
-        "question": "Is AI Text Detector really free? Are there any hidden charges?",
-        "answer": "Yes, AI Text Detector is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is the shortest text the analyzer accepts?",
+        "answer": "It needs at least 20 characters before the Analyze button unlocks. Very short samples give unreliable scores because the length and variation signals need enough words to measure."
       },
       {
-        "question": "Do I need to create an account or sign up to use AI Text Detector?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use AI Text Detector on mobile devices or tablets?",
-        "answer": "Yes, AI Text Detector works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What do the three verdict bands mean?",
+        "answer": "60 and up reads likely AI-generated, 35 to 59 reads uncertain, and below 35 reads likely human-written. The score is a phrase-and-pattern heuristic, not a measurement of authorship."
       },
       {
         "question": "What happens to the text I paste into the AI detector?",
@@ -626,20 +602,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does AI Voice Generator do?",
-        "answer": "AI Voice Generator lets you convert content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where does the text go when I generate a voice?",
+        "answer": "The text is sent to Pollinations' text-to-speech service using the openai-audio model and a preset voice named nova. The returned audio plays in the embedded player."
       },
       {
-        "question": "Is AI Voice Generator really free? Are there any hidden charges?",
-        "answer": "Yes, AI Voice Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which voice or language controls does this tool offer?",
+        "answer": "The flow uses a single preset voice with no tuning knobs. For voice, rate, pitch, and volume controls, use the separate Text to Speech tool instead."
       },
       {
-        "question": "Do I need to create an account or sign up to use AI Voice Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use AI Voice Generator on mobile devices or tablets?",
-        "answer": "Yes, AI Voice Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the Download button do on a finished clip?",
+        "answer": "It opens the generated audio URL in a new tab, where you can save the file. The copy action shares the same direct link."
       },
       {
         "question": "Is the sentence I convert to speech stored or reused anywhere?",
@@ -1133,20 +1105,16 @@ export const MANUAL_TOOL_CONTENT: Record<string, ManualToolContent> = {
     },
     "faqs": [
       {
-        "question": "What exactly does Article Rewriter do?",
-        "answer": "Article Rewriter lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the Article Rewriter paraphrase sentences or reorder content?",
+        "answer": "It rearranges existing lines rather than rewording them, so think of it as a reorganisation tool for blocks of draft copy."
       },
       {
-        "question": "Is Article Rewriter really free? Are there any hidden charges?",
-        "answer": "Yes, Article Rewriter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which sorting methods can I apply to article blocks?",
+        "answer": "Alphabetical, numerical, by length, natural order or random shuffle; a Reverse Order control flips the sequence when you need the opposite direction."
       },
       {
-        "question": "Do I need to create an account or sign up to use Article Rewriter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Article Rewriter on mobile devices or tablets?",
-        "answer": "Yes, Article Rewriter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can it clean up the draft while sorting?",
+        "answer": "Yes. Remove empty lines and duplicate rows can be applied in the same pass, and case-sensitive matching keeps capitalised headings separate."
       },
       {
         "question": "Does the draft I rearrange here get uploaded for processing?",
@@ -1419,20 +1387,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Audio Tools do?",
-        "answer": "Audio Tools lets you convert audio files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your audio files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the Audio Tools page itself a converter?",
+        "answer": "No, it is a category hub with a hero panel above a card grid. Each card carries the tool's name, a summary line, and a Popular badge where flagged."
       },
       {
-        "question": "Is Audio Tools really free? Are there any hidden charges?",
-        "answer": "Yes, Audio Tools is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which tools appear in the Audio Tools grid?",
+        "answer": "Every audio-category tool is listed, from in-page utilities like the guitar tuner to converters and downloaders such as MP4 to MP3. Clicking a card opens that tool's own route."
       },
       {
-        "question": "Do I need to create an account or sign up to use Audio Tools?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your audio files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Audio Tools on mobile devices or tablets?",
-        "answer": "Yes, Audio Tools works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Who is the Audio Tools collection aimed at?",
+        "answer": "Closing copy on the page names podcasters, musicians, and creators as typical users, and the card summaries say what each tool does before you open it."
       },
       {
         "question": "Does anything get converted while I browse this page?",
@@ -1533,20 +1497,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Background Remover do?",
-        "answer": "Background Remover lets you process images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How clean are the automatic cutouts on tricky edges like hair?",
+        "answer": "The cutout is fully automatic, so fine details such as loose hair or fur can keep a faint halo. The checkerboard canvas shows exactly where pixels became transparent so you can judge the result before saving."
       },
       {
-        "question": "Is Background Remover really free? Are there any hidden charges?",
-        "answer": "Yes, Background Remover is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I compare the source photo and the cutout before downloading?",
+        "answer": "Yes, the Show Original toggle flips the canvas between the source image and the transparent version without rerunning the cutout."
       },
       {
-        "question": "Do I need to create an account or sign up to use Background Remover?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Background Remover on mobile devices or tablets?",
-        "answer": "Yes, Background Remover works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens when I add several photos to the queue?",
+        "answer": "Batch several photos and the backgrounds are removed in sequence. Transparent results download as PNG files prefixed no-bg- so they stay sorted together."
       },
       {
         "question": "Is my subject photo sent to an AI service for background removal?",
@@ -1592,20 +1552,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Backlink Checker do?",
-        "answer": "Backlink Checker lets you validate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it actually list the sites linking to my page?",
+        "answer": "No. Despite the name, it probes your target URL and reports the final URL, HTTP status and an HTML sample; it does not consult a backlink index."
       },
       {
-        "question": "Is Backlink Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Backlink Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is the difference between the HEAD and GET probes?",
+        "answer": "HEAD maps the redirect chain without downloading page bodies, while GET returns a capped sample of the live HTML, roughly the first 4,000 characters."
       },
       {
-        "question": "Do I need to create an account or sign up to use Backlink Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Backlink Checker on mobile devices or tablets?",
-        "answer": "Yes, Backlink Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why did my check error instead of returning a status?",
+        "answer": "The request is best-effort: sites that block automated visits can refuse the probe, and you will see an error rather than an empty result."
       },
       {
         "question": "Does checking a link profile run on my computer or on your server?",
@@ -1815,20 +1771,16 @@ Together, they decode to "Hello". This tool accepts numeric tokens separated by 
     },
     "faqs": [
       {
-        "question": "What exactly does Base64 to Image Converter do?",
-        "answer": "Base64 to Image Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "What if my Base64 string is missing its data:image prefix?",
+        "answer": "The decoder falls back to PNG when a payload has no recognisable MIME prefix, and a validation pass confirms the string decodes before the preview appears."
       },
       {
-        "question": "Is Base64 to Image Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Base64 to Image Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I check that a pasted Base64 string produced the right picture?",
+        "answer": "A validation pass confirms the payload decodes, then a preview shows the recovered image so you can inspect it before committing to a download."
       },
       {
-        "question": "Do I need to create an account or sign up to use Base64 to Image Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Base64 to Image Converter on mobile devices or tablets?",
-        "answer": "Yes, Base64 to Image Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What file name and format does the decoded image get?",
+        "answer": "Saved files arrive as decoded_image_ followed by a timestamp, with the extension matching the image type the decoder detected."
       },
       {
         "question": "Is the Base64 text I paste uploaded for decoding?",
@@ -2500,20 +2452,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does BMI Calculator do?",
-        "answer": "BMI Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which units does the BMI calculator accept for weight and height?",
+        "answer": "Weight in kilograms and height in centimetres. There is no feet-and-pounds switch, so convert imperial measurements first if needed."
       },
       {
-        "question": "Is BMI Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, BMI Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where does the category label come from?",
+        "answer": "The BMI number is matched against standard cut-offs: below 18.5 underweight, 18.5 to 24.9 normal, 25 to 29.9 overweight, and 30 or above obese."
       },
       {
-        "question": "Do I need to create an account or sign up to use BMI Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use BMI Calculator on mobile devices or tablets?",
-        "answer": "Yes, BMI Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why might my BMI look off for someone who lifts weights?",
+        "answer": "BMI only compares weight to height, so dense muscle can push the reading into an overweight band. Treat it as a screening figure, not a body-composition test."
       },
       {
         "question": "Are my height and weight stored by SopKit?",
@@ -2559,20 +2507,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does BMI + Ideal Weight Calculator do?",
-        "answer": "BMI + Ideal Weight Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which formula does the ideal weight estimate use?",
+        "answer": "The Devine formula: 50 kg for the first five feet of height, plus 2.3 kg for every additional inch."
       },
       {
-        "question": "Is BMI + Ideal Weight Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, BMI + Ideal Weight Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is the ideal weight estimate different for men and women?",
+        "answer": "No gender input exists, so the tool always uses the male Devine baseline. Treat the figure as a rough reference point rather than a personal target."
       },
       {
-        "question": "Do I need to create an account or sign up to use BMI + Ideal Weight Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use BMI + Ideal Weight Calculator on mobile devices or tablets?",
-        "answer": "Yes, BMI + Ideal Weight Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do the BMI and ideal weight readings use the same inputs?",
+        "answer": "Yes. All readings come from the one weight and height pair you enter, so updating either field refreshes every output at once."
       },
       {
         "question": "Is my weight and height information saved anywhere?",
@@ -2618,20 +2562,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does BMR Calculator (Basal Metabolic Rate) do?",
-        "answer": "BMR Calculator (Basal Metabolic Rate) lets you calculate health metrics entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your health metrics never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which inputs do I need for a BMR estimate?",
+        "answer": "Gender, age, weight, and height are required, with metric or imperial units selectable. Pounds and inches entries are converted to kilograms and centimeters first."
       },
       {
-        "question": "Is BMR Calculator (Basal Metabolic Rate) really free? Are there any hidden charges?",
-        "answer": "Yes, BMR Calculator (Basal Metabolic Rate) is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which formulas does the BMR calculator show?",
+        "answer": "It returns Mifflin-St Jeor and revised Harris-Benedict estimates side by side in kcal per day. Recalculation happens on every keystroke once all fields hold positive numbers."
       },
       {
-        "question": "Do I need to create an account or sign up to use BMR Calculator (Basal Metabolic Rate)?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your health metrics immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use BMR Calculator (Basal Metabolic Rate) on mobile devices or tablets?",
-        "answer": "Yes, BMR Calculator (Basal Metabolic Rate) works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which population is a BMR estimate suited to?",
+        "answer": "The formulas are built around healthy adults and treat body composition indirectly; pregnancy, competitive athletes, and clinical conditions change real energy needs. Use the numbers as a baseline, not a prescription."
       },
       {
         "question": "What happens to the body metrics I enter into the BMR form?",
@@ -2677,20 +2617,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Body Fat Percentage Calculator do?",
-        "answer": "Body Fat Percentage Calculator lets you calculate health metrics entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your health metrics never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which measurements does the body fat calculator need?",
+        "answer": "Tape-measure inputs are neck, waist, and for women hip circumference, plus weight and height in metric or imperial units. The US Navy circumference formulas differ for men and women."
       },
       {
-        "question": "Is Body Fat Percentage Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Body Fat Percentage Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the output include besides the percentage?",
+        "answer": "You get body fat percentage, fat mass, and lean mass in your chosen unit. The category spans essential fat, athletes, fitness, average, and obese."
       },
       {
-        "question": "Do I need to create an account or sign up to use Body Fat Percentage Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your health metrics immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Body Fat Percentage Calculator on mobile devices or tablets?",
-        "answer": "Yes, Body Fat Percentage Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How accurate is the US Navy method compared to a scan?",
+        "answer": "It is a circumference-based estimate, not a scan, so treat the result as a trend line rather than a clinical measurement. Measure at the same spots each time for consistent comparisons."
       },
       {
         "question": "Are the circumference numbers sent to a formula server?",
@@ -2736,20 +2672,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Breach Notification Generator do?",
-        "answer": "Breach Notification Generator lets you generate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which audiences can I draft a breach notice for?",
+        "answer": "Three: a customer notice, a regulator filing framed for a supervisory authority, and an internal staff memo. The customer letter includes steps like a password reset and a phishing caution."
       },
       {
-        "question": "Is Breach Notification Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Breach Notification Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the generator know each state's exact notification deadline?",
+        "answer": "No. It produces a structured template from your incident details; you still confirm deadlines and wording for your jurisdiction, and the footer reminds you to have legal counsel review it before sending."
       },
       {
-        "question": "Do I need to create an account or sign up to use Breach Notification Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Breach Notification Generator on mobile devices or tablets?",
-        "answer": "Yes, Breach Notification Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What format is the finished notice in?",
+        "answer": "Markdown with a copy button, so it pastes cleanly into an email draft or a document and keeps its headings when converted."
       },
       {
         "question": "Is my breach scenario transmitted anywhere when I generate a notice?",
@@ -2795,20 +2727,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Break-Even Calculator do?",
-        "answer": "Break-Even Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why does break-even revenue not equal the units shown multiplied by price?",
+        "answer": "Units are rounded up to the next whole unit, while revenue is calculated at the exact fractional break-even point, so the two figures can differ slightly."
       },
       {
-        "question": "Is Break-Even Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Break-Even Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens when the selling price is below the variable cost?",
+        "answer": "Both outputs stay blank. Each sale would lose money, so no break-even point exists until the price exceeds the per-unit variable cost."
       },
       {
-        "question": "Do I need to create an account or sign up to use Break-Even Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Break-Even Calculator on mobile devices or tablets?",
-        "answer": "Yes, Break-Even Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How is contribution margin used in this calculator?",
+        "answer": "It is selling price minus variable cost per unit, and fixed costs are divided by it to get the number of units needed to break even."
       },
       {
         "question": "Are my business costs shared when planning break-even?",
@@ -2909,20 +2837,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Brick Calculator do?",
-        "answer": "Brick Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the brick count include mortar joints?",
+        "answer": "Yes. Each brick is measured with a half-inch mortar joint added to its dimensions, which is why the count is lower than a joint-free estimate."
       },
       {
-        "question": "Is Brick Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Brick Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How much mortar does the calculator assume for the wall?",
+        "answer": "Mortar is assumed to fill about 30% of the wall volume, mixed at 1:6 cement to sand, with 1.226 cubic feet per cement bag."
       },
       {
-        "question": "Do I need to create an account or sign up to use Brick Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Brick Calculator on mobile devices or tablets?",
-        "answer": "Yes, Brick Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I change the default brick size?",
+        "answer": "Yes. The 9 x 4.5 x 3 inch brick dimensions stay editable, and wall thickness switches between 4.5-inch half walls and 9-inch full walls."
       },
       {
         "question": "Do my wall measurements get uploaded for the estimate?",
@@ -2968,20 +2892,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Bulk Keyword Rank Checker do?",
-        "answer": "Bulk Keyword Rank Checker lets you validate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Will this show my Google positions for a list of keywords?",
+        "answer": "No. It probes a ranking page address and reports whether that page still resolves for crawlers, with the status code and an HTML sample, not search positions."
       },
       {
-        "question": "Is Bulk Keyword Rank Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Bulk Keyword Rank Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the GET probe return for a heavy page?",
+        "answer": "A shortened HTML sample from the same address with the response size capped, so you can inspect reachability without pulling the entire document."
       },
       {
-        "question": "Do I need to create an account or sign up to use Bulk Keyword Rank Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Bulk Keyword Rank Checker on mobile devices or tablets?",
-        "answer": "Yes, Bulk Keyword Rank Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What should I expect when a site blocks the request?",
+        "answer": "An error surfaces instead of a result when a site refuses automated requests; treat any response as a reachability signal only."
       },
       {
         "question": "Is my keyword list stored when I check ranks?",
@@ -3132,20 +3052,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Calorie Deficit Calculator do?",
-        "answer": "Calorie Deficit Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which activity level does this calorie deficit calculator assume?",
+        "answer": "A fixed light-activity multiplier of 1.375 is applied to your BMR. There is no activity selector, so more active lifestyles will have a higher true maintenance figure."
       },
       {
-        "question": "Is Calorie Deficit Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Calorie Deficit Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does the daily target never drop below 1,200 kcal?",
+        "answer": "A safety floor is applied, so the plan shows 1,200 kcal whenever a 500 kcal deficit from your maintenance level would go lower."
       },
       {
-        "question": "Do I need to create an account or sign up to use Calorie Deficit Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Calorie Deficit Calculator on mobile devices or tablets?",
-        "answer": "Yes, Calorie Deficit Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which BMR equation is used, and does gender matter?",
+        "answer": "The Mifflin-St Jeor equation runs with the male constant baked in, so the estimate skews slightly high for women."
       },
       {
         "question": "Are my body measurements kept when I plan a deficit?",
@@ -3246,20 +3162,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Car Loan Calculator do?",
-        "answer": "Car Loan Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the trade-in value affect my car loan payment?",
+        "answer": "Trade-in credit is subtracted from the price along with the down payment, reducing the amount financed before interest and the monthly instalment are worked out."
       },
       {
-        "question": "Is Car Loan Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Car Loan Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is included in the monthly payment this calculator shows?",
+        "answer": "Principal and interest only, based on the APR and term in months. Taxes, registration and insurance are not part of the instalment."
       },
       {
-        "question": "Do I need to create an account or sign up to use Car Loan Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Car Loan Calculator on mobile devices or tablets?",
-        "answer": "Yes, Car Loan Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I compare two dealer quotes with it?",
+        "answer": "Yes. Any of the five fields can be edited, and the financed amount, monthly payment and total interest update as you change numbers."
       },
       {
         "question": "Is my car price or trade-in value recorded?",
@@ -3363,20 +3275,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CGPA Calculator do?",
-        "answer": "CGPA Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the CGPA calculator average my semester SGPAs?",
+        "answer": "It takes the simple mean of the values you enter, with each semester weighted equally regardless of the credits it carried."
       },
       {
-        "question": "Is CGPA Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, CGPA Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What should I do with semesters that are still in progress?",
+        "answer": "Leave those rows blank. Empty rows are skipped, so an unfinished semester will not drag the cumulative average down."
       },
       {
-        "question": "Do I need to create an account or sign up to use CGPA Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CGPA Calculator on mobile devices or tablets?",
-        "answer": "Yes, CGPA Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I add more semesters than the default rows?",
+        "answer": "Yes. Add Semester grows the grid and each row has its own remove control, so the layout can match your degree length."
       },
       {
         "question": "Where are my semester SGPA values kept while I calculate?",
@@ -3421,20 +3329,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CGPA to Percentage Calculator do?",
-        "answer": "CGPA to Percentage Calculator lets you convert numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which conversion factors can I choose for CGPA to percentage?",
+        "answer": "Three presets are offered: the CBSE 9.5 multiplier, a direct 10x ratio and a 9.0 variant used by several universities."
       },
       {
-        "question": "Is CGPA to Percentage Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, CGPA to Percentage Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where can I check which formula produced my percentage?",
+        "answer": "The multiplication is shown under the result card, for example CGPA times factor, so you can verify the working before quoting the number."
       },
       {
-        "question": "Do I need to create an account or sign up to use CGPA to Percentage Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CGPA to Percentage Calculator on mobile devices or tablets?",
-        "answer": "Yes, CGPA to Percentage Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How precise is the percentage this converter returns?",
+        "answer": "It renders to one decimal place, for example 83.6%, and accepts CGPA values with two decimal places as input."
       },
       {
         "question": "Is my CGPA conversion visible to SopKit?",
@@ -3479,20 +3383,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CGPA to Percentage Calculator for Indian Universities do?",
-        "answer": "CGPA to Percentage Calculator for Indian Universities lets you convert numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Are Mumbai University, VTU or Anna University formulas built in?",
+        "answer": "Only the widely used 9.5x, 10x and 9.0x factors are offered. Individual universities publish their own formulas, so match the factor your marksheet rules specify."
       },
       {
-        "question": "Is CGPA to Percentage Calculator for Indian Universities really free? Are there any hidden charges?",
-        "answer": "Yes, CGPA to Percentage Calculator for Indian Universities is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "My university uses a custom multiplier. Can I still use this converter?",
+        "answer": "You can only pick from the three presets here. If your university uses a different factor, the result from this tool will not match its official conversion."
       },
       {
-        "question": "Do I need to create an account or sign up to use CGPA to Percentage Calculator for Indian Universities?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CGPA to Percentage Calculator for Indian Universities on mobile devices or tablets?",
-        "answer": "Yes, CGPA to Percentage Calculator for Indian Universities works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will this match the percentage printed on my official marksheet?",
+        "answer": "Not necessarily. Universities may cap or round the result differently, so use this figure for planning and rely on official documents where it matters."
       },
       {
         "question": "Who sees the CGPA I convert with this tool?",
@@ -3647,20 +3547,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Circular Image Crop do?",
-        "answer": "Circular Image Crop lets you edit images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I frame the subject inside the circular mask?",
+        "answer": "Drag the picture under the circular mask and use the zoom control, which spans 50 to 400 percent, to get a tight headshot. The mask itself stays fixed over the preview while you position the subject."
       },
       {
-        "question": "Is Circular Image Crop really free? Are there any hidden charges?",
-        "answer": "Yes, Circular Image Crop is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What exactly do I get in the downloaded file?",
+        "answer": "A square 400 by 400 PNG with a transparent background, named circular-profile-picture.png, ready for platforms that display avatars in a circle."
       },
       {
-        "question": "Do I need to create an account or sign up to use Circular Image Crop?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Circular Image Crop on mobile devices or tablets?",
-        "answer": "Yes, Circular Image Crop works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why is the output square when the visible shape is a circle?",
+        "answer": "The circle is a mask drawn over a square canvas, so the PNG keeps four transparent corners and reads as a circle anywhere the file is displayed."
       },
       {
         "question": "Is my portrait picture uploaded while I make a circular crop?",
@@ -3761,20 +3657,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Client Proposal Generator do?",
-        "answer": "Client Proposal Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which sections appear in a generated client proposal?",
+        "answer": "The draft includes scope, deliverables, pricing, and next-steps sections. The project or client name you type becomes the title and appears in the scope line."
       },
       {
-        "question": "Is Client Proposal Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Client Proposal Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What deliverables are listed by default in the proposal?",
+        "answer": "Deliverables start with a responsive layout, analytics setup, and three months of support. Copy the full draft and reshape it around your own engagement."
       },
       {
-        "question": "Do I need to create an account or sign up to use Client Proposal Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Client Proposal Generator on mobile devices or tablets?",
-        "answer": "Yes, Client Proposal Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the generator calculate my pricing automatically?",
+        "answer": "No, pricing is framed as a flat rate against agreed milestones with a sign-and-return close. Replace the sample figures with your own before sending."
       },
       {
         "question": "Is my client's name or project topic shared while drafting a proposal?",
@@ -3985,20 +3877,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Comma Separator do?",
-        "answer": "Comma Separator lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens to blank lines in the comma separator?",
+        "answer": "Every source line becomes one output item, so an empty line turns into an empty entry between commas. Delete blank rows first for a clean list."
       },
       {
-        "question": "Is Comma Separator really free? Are there any hidden charges?",
-        "answer": "Yes, Comma Separator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which separator does the comma separator use between items?",
+        "answer": "A comma followed by a single space, producing a list like apple, banana, cherry without any configuration."
       },
       {
-        "question": "Do I need to create an account or sign up to use Comma Separator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Comma Separator on mobile devices or tablets?",
-        "answer": "Yes, Comma Separator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I edit the generated list in the output box?",
+        "answer": "No, the result pane is read-only. Edit the source column on the left and the joined line updates automatically."
       },
       {
         "question": "Is the list I paste used for anything besides the comma join?",
@@ -4044,20 +3932,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Compound Interest Calculator do?",
-        "answer": "Compound Interest Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "When are regular contributions added in the compound interest calculator?",
+        "answer": "Contributions are treated as added at the end of each compounding period, and they earn interest in every later period."
       },
       {
-        "question": "Is Compound Interest Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Compound Interest Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the compounds-per-year field accept?",
+        "answer": "Any number, so 12 for monthly, 4 for quarterly, 1 for yearly or a custom frequency. The annual rate is divided by it to get the per-period rate."
       },
       {
-        "question": "Do I need to create an account or sign up to use Compound Interest Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Compound Interest Calculator on mobile devices or tablets?",
-        "answer": "Yes, Compound Interest Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How is the interest figure separated from my contributions?",
+        "answer": "The output shows future value, total contributed and interest earned as the difference between them, so the split is easy to read."
       },
       {
         "question": "Does the compound interest tool save my savings figures?",
@@ -4103,20 +3987,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Compress Image to 100KB do?",
-        "answer": "Compress Image to 100KB lets you compress images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "What size window does the 100 KB search sweep?",
+        "answer": "The quality search stretches from 10 KB up to 100 KB of file weight and runs twelve passes before settling on the best result inside that window."
       },
       {
-        "question": "Is Compress Image to 100KB really free? Are there any hidden charges?",
-        "answer": "Yes, Compress Image to 100KB is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which starting canvas does the 100 KB preset use?",
+        "answer": "It opens with a 600 by 600 pixel canvas sized for common 100 KB upload requirements, and the width and height inputs stay adjustable after the preset loads."
       },
       {
-        "question": "Do I need to create an account or sign up to use Compress Image to 100KB?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Compress Image to 100KB on mobile devices or tablets?",
-        "answer": "Yes, Compress Image to 100KB works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I confirm the compressed file meets a portal's limit?",
+        "answer": "Dimensions and file size display beside the output preview, and a green compliance badge confirms when the result satisfies the target rules."
       },
       {
         "question": "Is my photo sent to a compression server to reach 100 KB?",
@@ -4162,20 +4042,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Compress Image to 10KB do?",
-        "answer": "Compress Image to 10KB lets you compress images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which kinds of photos suit a 10 KB target?",
+        "answer": "The preset starts at 350 by 350 pixels with a search window from 2 KB to 10 KB, so it fits headshots and signature-style uploads rather than large photos."
       },
       {
-        "question": "Is Compress Image to 10KB really free? Are there any hidden charges?",
-        "answer": "Yes, Compress Image to 10KB is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I replace the preset sizes with my own numbers?",
+        "answer": "Yes, the manual width, height and KB fields override the preset whenever a form asks for slightly different limits, and the quality loop runs up to twelve passes to land inside the window."
       },
       {
-        "question": "Do I need to create an account or sign up to use Compress Image to 10KB?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Compress Image to 10KB on mobile devices or tablets?",
-        "answer": "Yes, Compress Image to 10KB works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What do the Hindi and English labels change?",
+        "answer": "The interface labels can run in English or Hindi to support form-filling workflows; the compression behaviour itself is identical in either language."
       },
       {
         "question": "Is my photograph transmitted while being compressed to 10 KB?",
@@ -4221,20 +4097,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Compress Image to 200KB do?",
-        "answer": "Compress Image to 200KB lets you compress images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How much visible detail survives a 200 KB compression?",
+        "answer": "The preset starts from an 800 by 800 pixel canvas and targets a 20 KB to 200 KB band, so richer images keep more detail than with the smaller targets."
       },
       {
-        "question": "Is Compress Image to 200KB really free? Are there any hidden charges?",
-        "answer": "Yes, Compress Image to 200KB is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I rerun the quality search after changing the settings?",
+        "answer": "Yes, the Reprocess control reruns the twelve-sweep quality search after you edit the canvas size or target values, and the best result downloads as a JPEG."
       },
       {
-        "question": "Do I need to create an account or sign up to use Compress Image to 200KB?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Compress Image to 200KB on mobile devices or tablets?",
-        "answer": "Yes, Compress Image to 200KB works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which settings feed the twelve quality sweeps?",
+        "answer": "Frame size, target range and the encoder settings are all swept twelve times to find the heaviest file that stays inside the band; edit any value and reprocess."
       },
       {
         "question": "How is my picture handled while it is squeezed under 200 KB?",
@@ -4279,20 +4151,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Compress Image to 20KB do?",
-        "answer": "Compress Image to 20KB lets you compress images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why does a photo soften at the 20 KB target?",
+        "answer": "Hitting 20 KB requires aggressive compression. The twelve-pass search keeps the sharpest result it can inside the 5 KB to 20 KB band, but fine textures will soften at this weight."
       },
       {
-        "question": "Is Compress Image to 20KB really free? Are there any hidden charges?",
-        "answer": "Yes, Compress Image to 20KB is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What frame does the 20 KB preset open with?",
+        "answer": "It opens with a 350 by 350 pixel frame sized for portal uploads, and clarity acts as the tie-breaker during the twelve encoding iterations."
       },
       {
-        "question": "Do I need to create an account or sign up to use Compress Image to 20KB?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Compress Image to 20KB on mobile devices or tablets?",
-        "answer": "Yes, Compress Image to 20KB works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the Reprocess button actually do?",
+        "answer": "After you change the frame or size settings, Reprocess re-runs the compression loop and refreshes the JPEG result available for download."
       },
       {
         "question": "Does hitting the 20 KB limit require uploading my picture?",
@@ -4337,20 +4205,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Compress Image to 30KB do?",
-        "answer": "Compress Image to 30KB lets you compress images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the 30 KB preset decide what passes?",
+        "answer": "The acceptable size window keeps output between 5 KB and 30 KB, and the twelve-pass quality sweep balances weight against visible detail."
       },
       {
-        "question": "Is Compress Image to 30KB really free? Are there any hidden charges?",
-        "answer": "Yes, Compress Image to 30KB is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I tune the minimum and maximum KB values myself?",
+        "answer": "Yes, the editable min and max KB values tune the search window, and the output preview reports dimensions and file size after each pass."
       },
       {
-        "question": "Do I need to create an account or sign up to use Compress Image to 30KB?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Compress Image to 30KB on mobile devices or tablets?",
-        "answer": "Yes, Compress Image to 30KB works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What frame size is locked in for the 30 KB band?",
+        "answer": "The preset locks the frame to 350 by 350 pixels, a common size for exam and form portals that cap uploads at 30 KB."
       },
       {
         "question": "Where is my image kept while this tool compresses it to 30 KB?",
@@ -4396,20 +4260,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Compress Image to Exact KB do?",
-        "answer": "Compress Image to Exact KB lets you compress images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does Target KB mode chase an exact file size?",
+        "answer": "It binary-searches the quality setting until the file lands near your limit, and a warning appears when the requested size cannot be reached within the quality bounds."
       },
       {
-        "question": "Is Compress Image to Exact KB really free? Are there any hidden charges?",
-        "answer": "Yes, Compress Image to Exact KB is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What separates Target KB mode from Visual Quality mode?",
+        "answer": "Target KB mode aims at a byte limit, while Visual Quality mode prioritises appearance and lets the file size fall where it may."
       },
       {
-        "question": "Do I need to create an account or sign up to use Compress Image to Exact KB?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Compress Image to Exact KB on mobile devices or tablets?",
-        "answer": "Yes, Compress Image to Exact KB works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I paste an image into the compressor from the clipboard?",
+        "answer": "Yes, Ctrl+V pastes an image from the clipboard to start compressing, and the KPI bar tracks original size, compressed size, saved percentage and dimensions."
       },
       {
         "question": "Where does the exact-KB compression math take place?",
@@ -4455,20 +4315,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Compress PDF to Exact KB do?",
-        "answer": "Compress PDF to Exact KB lets you compress PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I type a target size like 100 KB and have it hit it exactly?",
+        "answer": "There is no numeric target field. You pick Low, Recommended, Extreme or Custom quality settings, then check the result size and rerun with lower quality or resolution if you are still over."
       },
       {
-        "question": "Is Compress PDF to Exact KB really free? Are there any hidden charges?",
-        "answer": "Yes, Compress PDF to Exact KB is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why is my compressed PDF sometimes bigger than the original?",
+        "answer": "Each page is re-rendered as a JPEG, so an already-lean PDF can grow. Files that cannot shrink are labeled Already Optimized instead of showing a saving percentage."
       },
       {
-        "question": "Do I need to create an account or sign up to use Compress PDF to Exact KB?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Compress PDF to Exact KB on mobile devices or tablets?",
-        "answer": "Yes, Compress PDF to Exact KB works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What do the presets set under the hood?",
+        "answer": "Recommended applies 70 percent image quality with a 75 percent resolution scale, Extreme uses 40 percent at 50 percent scale, and Low keeps 85 percent quality at full resolution for print work."
       },
       {
         "question": "What happens to my PDF while it is being compressed?",
@@ -4569,20 +4425,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Consent Management Generator do?",
-        "answer": "Consent Management Generator lets you generate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the exported consent snippet include?",
+        "answer": "One self-contained HTML block with inline styles and a vanilla script: banner markup, category toggles for essential, analytics and marketing, an accept-all shortcut, and the save logic."
       },
       {
-        "question": "Is Consent Management Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Consent Management Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where does a visitor's consent choice get stored?",
+        "answer": "Accept and save actions write the visitor's choices to localStorage under the snippet's own key, so the banner can recognize a returning visitor."
       },
       {
-        "question": "Do I need to create an account or sign up to use Consent Management Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Consent Management Generator on mobile devices or tablets?",
-        "answer": "Yes, Consent Management Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which layouts and frameworks are supported?",
+        "answer": "Four layouts, a bottom bar, center modal, corner box or slide-in banner, and GDPR, CCPA or both can be noted in the output as the compliance framework."
       },
       {
         "question": "Does the generated consent banner call any external service?",
@@ -4682,20 +4534,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Convert to ICO do?",
-        "answer": "Convert to ICO lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which output formats does this conversion studio offer?",
+        "answer": "Four targets: PNG, JPEG, WebP and BMP, with JPEG shown at first launch for the fastest start."
       },
       {
-        "question": "Is Convert to ICO really free? Are there any hidden charges?",
-        "answer": "Yes, Convert to ICO is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens to converted files if I switch the output format?",
+        "answer": "Change the output menu mid-batch and completed items requeue automatically, so the whole set can be rerun under the new format."
       },
       {
-        "question": "Do I need to create an account or sign up to use Convert to ICO?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Convert to ICO on mobile devices or tablets?",
-        "answer": "Yes, Convert to ICO works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I queue a mixed set of image files?",
+        "answer": "Drag in a mixed set of images and clear them all with one button; the ZIP export is stamped with the current time for easy sorting."
       },
       {
         "question": "Does the image I convert get transmitted to a backend?",
@@ -4796,20 +4644,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Cookie Consent Generator do?",
-        "answer": "Cookie Consent Generator lets you generate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is this different from the Consent Management Generator?",
+        "answer": "This one builds a simpler dismissible banner with a learn-more link, three visual styles and six placements; the Consent Management Generator adds analytics and marketing category toggles."
       },
       {
-        "question": "Is Cookie Consent Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Cookie Consent Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens when a visitor clicks Decline?",
+        "answer": "Decline hides the banner for the rest of the visit without saving a preference, so the choice is not remembered and the bar can appear again on a later visit."
       },
       {
-        "question": "Do I need to create an account or sign up to use Cookie Consent Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Cookie Consent Generator on mobile devices or tablets?",
-        "answer": "Yes, Cookie Consent Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do I need to edit the snippet before publishing?",
+        "answer": "Yes, at minimum repoint the learn-more href at your own policy page. The snippet carries the banner markup, CSS and dismissal script, but loading your actual tracking scripts stays your decision."
       },
       {
         "question": "Where do visitor consent choices end up when they use the banner I generate?",
@@ -4910,20 +4754,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Cover Letter Generator do?",
-        "answer": "Cover Letter Generator lets you generate text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the cover letter written by AI or filled from a template?",
+        "answer": "It is a fixed professional template with your details slotted in. Review the wording and add your own specifics before sending."
       },
       {
-        "question": "Is Cover Letter Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Cover Letter Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which details does the cover letter generator ask for?",
+        "answer": "Your name, the target role, the company, key skills and years of experience; blank fields leave placeholder text for you to fill."
       },
       {
-        "question": "Do I need to create an account or sign up to use Cover Letter Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Cover Letter Generator on mobile devices or tablets?",
-        "answer": "Yes, Cover Letter Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does the generated letter address the reader?",
+        "answer": "It opens with a hiring-manager salutation that names the company, weaves your skills and experience into the body and signs off with your name."
       },
       {
         "question": "What happens to the personal details I type into the cover letter form?",
@@ -5571,20 +5411,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does CUET Photo Resizer do?",
-        "answer": "CUET Photo Resizer lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What pixel size and KB range does the CUET photo preset start with?",
+        "answer": "CUET mode opens on a 350 x 450 px photo with an accepted range of 10KB to 200KB. The signature tab switches to 350 x 150 px and 4KB to 30KB."
       },
       {
-        "question": "Is CUET Photo Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, CUET Photo Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if my CUET photo cannot be squeezed into the KB window?",
+        "answer": "A quality search runs first, and a size mismatch is flagged in red when the result cannot land inside both bounds. Lowering the pixel dimensions is the usual fix."
       },
       {
-        "question": "Do I need to create an account or sign up to use CUET Photo Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use CUET Photo Resizer on mobile devices or tablets?",
-        "answer": "Yes, CUET Photo Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the CUET resizer stretch the photo to fill 350 x 450?",
+        "answer": "No, source images are cropped to fill the ratio, trimming the longer edge from the center. Proportions stay intact instead of being stretched."
       },
       {
         "question": "Will my CUET photo or signature end up on a server?",
@@ -5795,20 +5631,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Data Anonymization Report Generator do?",
-        "answer": "Data Anonymization Report Generator lets you generate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it anonymize my dataset or just document the techniques?",
+        "answer": "It documents. You toggle the techniques you rely on, such as pseudonymization, generalization, masking or noise addition, and get a report; the data itself is never transformed here."
       },
       {
-        "question": "Is Data Anonymization Report Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Data Anonymization Report Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the inventory table in the report show?",
+        "answer": "It maps each chosen method onto customer, analytics and transaction rows, giving reviewers a per-dataset view of where each technique is claimed to apply."
       },
       {
-        "question": "Do I need to create an account or sign up to use Data Anonymization Report Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Data Anonymization Report Generator on mobile devices or tablets?",
-        "answer": "Yes, Data Anonymization Report Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the risk assessment section calculated from my inputs?",
+        "answer": "No. The re-identification risk, compliance checklist and review sections are fixed text framed around GDPR Article 25, so adapt them to your real processing before filing."
       },
       {
         "question": "Is this report a real compliance certification?",
@@ -5909,20 +5741,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Data Breach Checker do?",
-        "answer": "Data Breach Checker lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where does the breach data come from when I run a lookup?",
+        "answer": "Your email or phone number is sent to a public breach-lookup API, a community mirror of a known breach service. It is not a local check, so only submit addresses you are authorized to check."
       },
       {
-        "question": "Is Data Breach Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Data Breach Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "I saw matches named MockBreach and DataSimulation. Are those real?",
+        "answer": "No. When the lookup service is unreachable, the tool shows clearly labeled simulated sample results as a fallback. Rerun the check later before acting on anything you saw."
       },
       {
-        "question": "Do I need to create an account or sign up to use Data Breach Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Data Breach Checker on mobile devices or tablets?",
-        "answer": "Yes, Data Breach Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does it mean when no breaches are found?",
+        "answer": "The lookup service returned a not-found response for that address. It reflects only that one service's breach dataset, so a clean result is not a guarantee the address never leaked."
       },
       {
         "question": "Is the email or phone number I check sent anywhere?",
@@ -5968,20 +5796,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Data Retention Policy Generator do?",
-        "answer": "Data Retention Policy Generator lets you generate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the industry picker change the policy?",
+        "answer": "It swaps in industry-specific rows: choosing healthcare adds a ten-year health records line citing HIPAA, while other industries keep the standard account, transaction, communication, analytics and security schedule."
       },
       {
-        "question": "Is Data Retention Policy Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Data Retention Policy Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What sections does the finished policy contain?",
+        "answer": "Purpose and scope, a retention schedule table, a disposal section covering secure deletion, cross-cut shredding and backup destruction, and an annual review cycle."
       },
       {
-        "question": "Do I need to create an account or sign up to use Data Retention Policy Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Data Retention Policy Generator on mobile devices or tablets?",
-        "answer": "Yes, Data Retention Policy Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I publish the generated policy as-is?",
+        "answer": "Treat it as a draft. It closes by reminding you to involve legal counsel, because retention periods and lawful bases vary by jurisdiction and data type."
       },
       {
         "question": "Do the retention periods in this policy come from a legal database?",
@@ -6082,20 +5906,16 @@ The binary sequence decodes to "SopKit". The converter accommodates space-delimi
     },
     "faqs": [
       {
-        "question": "What exactly does Date Difference Calculator do?",
-        "answer": "Date Difference Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens if I select the dates in the wrong order?",
+        "answer": "They are swapped automatically and an amber notice explains that this happened, so the result is always a positive duration."
       },
       {
-        "question": "Is Date Difference Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Date Difference Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the calculator break the difference down?",
+        "answer": "It reports separate years, months and days tiles, plus total days, whole weeks with leftover days, and total hours and minutes."
       },
       {
-        "question": "Do I need to create an account or sign up to use Date Difference Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Date Difference Calculator on mobile devices or tablets?",
-        "answer": "Yes, Date Difference Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the total day count inclusive of both dates?",
+        "answer": "No. The tiles measure the span between the two dates, so picking the same date twice gives zero days."
       },
       {
         "question": "Can anyone see the dates I compare here?",
@@ -6680,20 +6500,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Domain Name Generator do?",
-        "answer": "Domain Name Generator lets you generate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it check whether the domains are available to register?",
+        "answer": "No. It generates name ideas by combining your keyword with suffixes like ly, ify, hq, base, hub and kit; availability and pricing need a registrar or WHOIS lookup."
       },
       {
-        "question": "Is Domain Name Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Domain Name Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How many suggestions do I get and in what pattern?",
+        "answer": "Eight .com ideas per keyword, each built from your word plus one of the tool's suffixes, with a copy icon on every result."
       },
       {
-        "question": "Do I need to create an account or sign up to use Domain Name Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Domain Name Generator on mobile devices or tablets?",
-        "answer": "Yes, Domain Name Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why do Cost Calc and SEO Tags tabs appear on this page?",
+        "answer": "The three utilities share one workspace. Switch tabs at any time to compare naming, development pricing and title suggestions from the same screen."
       },
       {
         "question": "Does the generator verify that a domain is available?",
@@ -6739,20 +6555,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Domain Reputation Checker do?",
-        "answer": "Domain Reputation Checker lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is actually checked to build the reputation score?",
+        "answer": "A DNS-over-HTTPS query to Google resolves A records and reads TXT records for SPF and site-verification entries as positive signals; non-resolving domains and frequently abused TLDs lose points."
       },
       {
-        "question": "Is Domain Reputation Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Domain Reputation Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does a Good score mean the website is safe to visit?",
+        "answer": "No. The score reflects DNS behavior and TLD heuristics, not malware scanning or live blocklists, so a well-configured domain can still host a scam."
       },
       {
-        "question": "Do I need to create an account or sign up to use Domain Reputation Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Domain Reputation Checker on mobile devices or tablets?",
-        "answer": "Yes, Domain Reputation Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why can a brand-new legitimate domain score poorly?",
+        "answer": "Fresh domains often lack SPF or verification TXT entries, and a flagged TLD costs points. Read the flag list, for example SPF record found or Suspicious TLD, rather than treating the label as a verdict."
       },
       {
         "question": "What network requests does a reputation check make?",
@@ -7018,20 +6830,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Email Deliverability Checker do?",
-        "answer": "Email Deliverability Checker lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why does it say DKIM is missing when my provider publishes a key?",
+        "answer": "The check reads root TXT records for a v=DKIM1 marker. Many providers publish keys under selector subdomains instead, which this lookup does not query, so a false missing is possible."
       },
       {
-        "question": "Is Email Deliverability Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Email Deliverability Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is the deliverability score weighted?",
+        "answer": "SPF is worth 35 points, DKIM 35 and DMARC 30. The total is labeled Good at 70 or more, Needs work from 35 to 69, and Poor below 35."
       },
       {
-        "question": "Do I need to create an account or sign up to use Email Deliverability Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Email Deliverability Checker on mobile devices or tablets?",
-        "answer": "Yes, Email Deliverability Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which service answers the DNS questions?",
+        "answer": "TXT lookups go to Google's public DNS-over-HTTPS endpoint, and the _dmarc subdomain is queried the same way for a policy record, so the domain name leaves your device."
       },
       {
         "question": "Are my mail domain's SPF, DKIM and DMARC records read from my machine or yours?",
@@ -7077,20 +6885,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Email Header Analyzer do?",
-        "answer": "Email Header Analyzer lets you process files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "What can the analyzer tell me about a message's route?",
+        "answer": "It counts Received: from lines to tally the relays and lists each relay hostname in order as a numbered path, which is how you spot unexpected hops or delays."
       },
       {
-        "question": "Is Email Header Analyzer really free? Are there any hidden charges?",
-        "answer": "Yes, Email Header Analyzer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does pasting raw headers send them anywhere?",
+        "answer": "No. Verdicts come from scanning the pasted text line by line inside the page; no API is called and the headers stay in memory."
       },
       {
-        "question": "Do I need to create an account or sign up to use Email Header Analyzer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Email Header Analyzer on mobile devices or tablets?",
-        "answer": "Yes, Email Header Analyzer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why do SPF, DKIM or DMARC show as Not found on a passed message?",
+        "answer": "The tool only prints what the header set contains. If your mail client did not keep the Authentication-Results header, the row falls back to Not found rather than a pass or fail."
       },
       {
         "question": "I pasted headers from a real message — where does that text go?",
@@ -7136,20 +6940,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Email Preview Generator do?",
-        "answer": "Email Preview Generator lets you generate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I preview an HTML email with buttons and images?",
+        "answer": "No. The body renders as plain text with line breaks preserved, not parsed HTML, so use it to check copy and subject framing rather than full template rendering."
       },
       {
-        "question": "Is Email Preview Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Email Preview Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if I leave the subject line blank?",
+        "answer": "The preview header shows (No subject), which is a quick way to see how the message reads if you forget to fill it in."
       },
       {
-        "question": "Do I need to create an account or sign up to use Email Preview Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Email Preview Generator on mobile devices or tablets?",
-        "answer": "Yes, Email Preview Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What do the desktop, mobile and dark toggles change?",
+        "answer": "They redraw the preview frame instantly: mobile narrows the body column to mimic a handset viewport, and dark mode restyles the frame around the same message."
       },
       {
         "question": "Does this preview match what Gmail or Outlook will display?",
@@ -7195,20 +6995,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Email Subject Line Tester do?",
-        "answer": "Email Subject Line Tester lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the score based on real open-rate data?",
+        "answer": "No. It is a checklist heuristic: character length, eight spam triggers, power words, an added point for a closing question mark, and penalties for all caps or stacked punctuation."
       },
       {
-        "question": "Is Email Subject Line Tester really free? Are there any hidden charges?",
-        "answer": "Yes, Email Subject Line Tester is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What length gets the best score?",
+        "answer": "Subjects between 30 and 60 characters receive full length credit, and the character count sits under the score so you can trim or extend precisely."
       },
       {
-        "question": "Do I need to create an account or sign up to use Email Subject Line Tester?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Email Subject Line Tester on mobile devices or tablets?",
-        "answer": "Yes, Email Subject Line Tester works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why did all caps and double exclamation marks lower my score?",
+        "answer": "Both are treated as spam-style formatting. All-caps text and stacked punctuation each draw penalties, alongside phrase triggers such as act now and click here."
       },
       {
         "question": "Is my subject line stored or compared against real inbox data?",
@@ -7254,20 +7050,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Email Validator do?",
-        "answer": "Email Validator lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does a Valid email result mean the specific mailbox exists?",
+        "answer": "No. It confirms the format, checks a disposable-domain list and looks up MX records; it never performs an SMTP probe, so a nonexistent mailbox at a valid domain still reads as valid."
       },
       {
-        "question": "Is Email Validator really free? Are there any hidden charges?",
-        "answer": "Yes, Email Validator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is the MX lookup actually confirming?",
+        "answer": "That the domain publishes mail exchanger records and can accept email. The lookup runs through Google's DNS-over-HTTPS, so the domain name is queried externally."
       },
       {
-        "question": "Do I need to create an account or sign up to use Email Validator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Email Validator on mobile devices or tablets?",
-        "answer": "Yes, Email Validator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does it decide an address is disposable?",
+        "answer": "By comparing the domain against a short built-in list including mailinator.com, guerrillamail.com and tempmail.com; newer or less common disposable services may not be recognized."
       },
       {
         "question": "Is the whole address transmitted during validation?",
@@ -7312,20 +7104,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does EMI Calculator for Loans do?",
-        "answer": "EMI Calculator for Loans lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the EMI calculator show total interest as well as the monthly instalment?",
+        "answer": "It focuses on the monthly instalment figure to two decimals. For an interest breakdown and total repayment, the car loan and mortgage calculators give a fuller picture."
       },
       {
-        "question": "Is EMI Calculator for Loans really free? Are there any hidden charges?",
-        "answer": "Yes, EMI Calculator for Loans is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if I enter a 0% annual interest rate?",
+        "answer": "The formula falls back to principal divided by the total number of months, giving a straight-line monthly payment with no interest."
       },
       {
-        "question": "Do I need to create an account or sign up to use EMI Calculator for Loans?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use EMI Calculator for Loans on mobile devices or tablets?",
-        "answer": "Yes, EMI Calculator for Loans works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which term unit does the EMI calculator expect?",
+        "answer": "Years, not months. The calculator multiplies by 12 internally to get the number of monthly instalments, and everything recalculates as you type."
       },
       {
         "question": "Are my loan figures visible to SopKit when I use this?",
@@ -7544,20 +7332,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does EPF Calculator (Employee Provident Fund) do?",
-        "answer": "EPF Calculator (Employee Provident Fund) lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why is the employer contribution only 3.67% of basic salary?",
+        "answer": "That is the share that reaches the EPF account; the rest of the employer's 12% provision goes to the EPS pension scheme, which this projection does not model."
       },
       {
-        "question": "Is EPF Calculator (Employee Provident Fund) really free? Are there any hidden charges?",
-        "answer": "Yes, EPF Calculator (Employee Provident Fund) is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the EPF calculator cap contributions at a salary ceiling?",
+        "answer": "No. The 12% and 3.67% rates apply to the full basic salary you enter, so the projection may run higher than payslips where a statutory cap applies."
       },
       {
-        "question": "Do I need to create an account or sign up to use EPF Calculator (Employee Provident Fund)?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use EPF Calculator (Employee Provident Fund) on mobile devices or tablets?",
-        "answer": "Yes, EPF Calculator (Employee Provident Fund) works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does the annual hike field affect the corpus?",
+        "answer": "Your basic salary is stepped up by the percentage you enter at the end of every year, so later contributions and their interest are larger."
       },
       {
         "question": "Is my EPF balance entered onto a server?",
@@ -7657,20 +7441,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Excuse Generator do?",
-        "answer": "Excuse Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many excuses does one click produce?",
+        "answer": "Three fresh excuses appear per click from a broad grab-bag of mishaps. Click an excuse to copy that line, or collect all three at once."
       },
       {
-        "question": "Is Excuse Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Excuse Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What kinds of situations do the excuse templates cover?",
+        "answer": "Templates cover pet chaos, appliance breakdowns, traffic jams, and family emergencies. The who, what, and where slots reshuffle with every generation."
       },
       {
-        "question": "Do I need to create an account or sign up to use Excuse Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Excuse Generator on mobile devices or tablets?",
-        "answer": "Yes, Excuse Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the excuse tone always serious?",
+        "answer": "No, the tone swings from plausibly mundane to deliberately silly. That range suits everything from polite declines to party prompts."
       },
       {
         "question": "Is my excuse list visible to anyone but me?",
@@ -7715,20 +7495,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does EXIF Reader do?",
-        "answer": "EXIF Reader lets you read images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which camera details appear at the top of the report?",
+        "answer": "Camera make and model surface first, followed by capture date and time pulled from the file's EXIF block."
       },
       {
-        "question": "Is EXIF Reader really free? Are there any hidden charges?",
-        "answer": "Yes, EXIF Reader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the reader show GPS coordinates when the photo has them?",
+        "answer": "Yes, a GPS section lists the coordinates together with N/E reference markers whenever the file carries location data."
       },
       {
-        "question": "Do I need to create an account or sign up to use EXIF Reader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start reading your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use EXIF Reader on mobile devices or tablets?",
-        "answer": "Yes, EXIF Reader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What is different about Full Tag Dump mode?",
+        "answer": "It lists every discovered tag with a running count, going beyond the summary fields such as exposure, aperture, ISO and focal length."
       },
       {
         "question": "Are the GPS coordinates in my photo transmitted when I read EXIF?",
@@ -7990,20 +7766,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Fancy Text Generator do?",
-        "answer": "Fancy Text Generator lets you generate text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Are the fancy fonts installed on my device, or are they special characters?",
+        "answer": "They are Unicode character sets, not fonts, so the styled text can be copied and pasted anywhere that accepts plain characters."
       },
       {
-        "question": "Is Fancy Text Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Fancy Text Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why do some letters in my styled text look unchanged?",
+        "answer": "Styles only cover letters that exist in their alphabet; numbers, symbols and unsupported scripts pass through as normal characters."
       },
       {
-        "question": "Do I need to create an account or sign up to use Fancy Text Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Fancy Text Generator on mobile devices or tablets?",
-        "answer": "Yes, Fancy Text Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do the nickname decorations work?",
+        "answer": "Seven decorative wraps, from ornamental brackets to stars and sparkles, are placed around your input, and each variant has its own copy control."
       },
       {
         "question": "Is the name I style with fancy fonts saved?",
@@ -8104,20 +7876,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Favicon Generator do?",
-        "answer": "Favicon Generator lets you generate images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I build a favicon without designing artwork first?",
+        "answer": "Yes, three creation modes cover a two-letter text mark, an emoji picked from the built-in chooser, or an image you upload."
       },
       {
-        "question": "Is Favicon Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Favicon Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the favicon package download contain?",
+        "answer": "The bundle holds 16, 32, 180, 192 and 512 pixel PNGs plus favicon.ico, a site manifest and a readme file."
       },
       {
-        "question": "Do I need to create an account or sign up to use Favicon Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Favicon Generator on mobile devices or tablets?",
-        "answer": "Yes, Favicon Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How can I preview the icon the way visitors will see it?",
+        "answer": "A browser-tab simulation shows the icon beside a sample page title, and the live preview updates as you adjust colors, corner rounding or glyph scale."
       },
       {
         "question": "Does the icon text or emoji I type get sent to SopKit?",
@@ -8163,20 +7931,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Advanced Favicon Generator do?",
-        "answer": "Advanced Favicon Generator lets you generate images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I choose exactly which icon sizes get built?",
+        "answer": "Yes, every size from 16 through 512 pixels has its own toggle, including a 48 pixel slot earmarked for Windows desktop shortcuts."
       },
       {
-        "question": "Is Advanced Favicon Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Advanced Favicon Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What extra files does the pro package include?",
+        "answer": "A site.webmanifest wired to the 192 and 512 icons, plus readme-html-tags.txt with the link tags ready for pasting into your HTML."
       },
       {
-        "question": "Do I need to create an account or sign up to use Advanced Favicon Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Advanced Favicon Generator on mobile devices or tablets?",
-        "answer": "Yes, Advanced Favicon Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How is the favicon set delivered?",
+        "answer": "Export bundles the whole set as favicons_package_TIMESTAMP.zip, and favicon.ico itself has its own toggle if you do not need it."
       },
       {
         "question": "Where is the favicon package assembled when I export it?",
@@ -8276,20 +8040,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does FD Calculator India do?",
-        "answer": "FD Calculator India lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How often does the FD calculator compound interest?",
+        "answer": "Quarterly, matching the common practice of Indian banks, so the annual rate is divided by four for each compounding period."
       },
       {
-        "question": "Is FD Calculator India really free? Are there any hidden charges?",
-        "answer": "Yes, FD Calculator India is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What do the three result rows show?",
+        "answer": "Maturity value, the interest earned and the original principal, with amounts formatted in the Indian rupee grouping style."
       },
       {
-        "question": "Do I need to create an account or sign up to use FD Calculator India?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use FD Calculator India on mobile devices or tablets?",
-        "answer": "Yes, FD Calculator India works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are the maturity figures exact to the rupee?",
+        "answer": "No, values are rounded for display. Treat the maturity figure as an estimate and confirm the exact amount with your bank."
       },
       {
         "question": "Can my fixed deposit principal be seen by anyone else?",
@@ -8444,20 +8204,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Flip Image do?",
-        "answer": "Flip Image lets you edit images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Should I resize using pixels or percentage mode?",
+        "answer": "Pixels suit when a platform demands exact dimensions, while percentage scales relative to the source image and is safer for quick proportional tweaks."
       },
       {
-        "question": "Is Flip Image really free? Are there any hidden charges?",
-        "answer": "Yes, Flip Image is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens when I unlock the aspect ratio?",
+        "answer": "The unlock icon frees width and height to move independently, so the resize can stretch a photo beyond its original proportions."
       },
       {
-        "question": "Do I need to create an account or sign up to use Flip Image?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Flip Image on mobile devices or tablets?",
-        "answer": "Yes, Flip Image works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does batch processing report progress?",
+        "answer": "Batch processing shows progress while each image is rewritten, and the quality control applies during the canvas re-encode of every file."
       },
       {
         "question": "Where does an image sit while this tool resizes it?",
@@ -8566,20 +8322,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Food Cost Calculator do?",
-        "answer": "Food Cost Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is the difference between the food cost percentage and the margin?",
+        "answer": "Food cost percentage divides ingredient cost by menu price, while the margin shows the profit share left after ingredients, so the two add up to 100."
       },
       {
-        "question": "Is Food Cost Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Food Cost Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why do all three results read zero?",
+        "answer": "Both the ingredient cost and the menu price must be above zero; a zero in either field sends the percentage, profit and margin readouts to zero."
       },
       {
-        "question": "Do I need to create an account or sign up to use Food Cost Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Food Cost Calculator on mobile devices or tablets?",
-        "answer": "Yes, Food Cost Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I use this tool for a whole menu rather than one dish?",
+        "answer": "It handles one dish at a time, so run each plate through and compare their food cost percentages against your target range."
       },
       {
         "question": "Does SopKit see my ingredient costs or menu prices?",
@@ -8625,20 +8377,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Form Image Size Checker do?",
-        "answer": "Form Image Size Checker lets you validate exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which exam rules does the Form Image Size Checker test against?",
+        "answer": "Rules cover UPSC, SSC, NEET, JEE, and CUET photo or signature expectations, plus a 200KB PDF rule and a 4 x 6 postcard rule. The guideline box lists widths, heights, ratios, and formats."
       },
       {
-        "question": "Is Form Image Size Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Form Image Size Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the checker resize or modify the files I upload?",
+        "answer": "No, uploads are measured without being altered. A pass or fail panel lists every broken rule next to the measured value."
       },
       {
-        "question": "Do I need to create an account or sign up to use Form Image Size Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Form Image Size Checker on mobile devices or tablets?",
-        "answer": "Yes, Form Image Size Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which file types can I run through the checker?",
+        "answer": "Uploads accept JPEG, PNG, or PDF. A metadata block repeats the file size, image dimensions when detectable, and the extension."
       },
       {
         "question": "Does checking a document here reveal its contents to anyone?",
@@ -8684,20 +8432,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Free MP3 Extractor do?",
-        "answer": "Free MP3 Extractor lets you download audio files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your audio files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which links does the Free MP3 Extractor accept?",
+        "answer": "It accepts TikTok video links, including the shortened vm.tiktok.com share form. Empty or non-TikTok links are rejected before any lookup runs."
       },
       {
-        "question": "Is Free MP3 Extractor really free? Are there any hidden charges?",
-        "answer": "Yes, Free MP3 Extractor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where is the TikTok link processed when I hit extract?",
+        "answer": "The link is sent to SopKit's resolver proxy, which returns the available media for that post. Result cards then show the cover, title, author, duration, and track name."
       },
       {
-        "question": "Do I need to create an account or sign up to use Free MP3 Extractor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your audio files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Free MP3 Extractor on mobile devices or tablets?",
-        "answer": "Yes, Free MP3 Extractor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Once a track is found, where does the Download button send me?",
+        "answer": "The chosen media URL opens in a new tab, so your browser handles the save. Audio-only entries are picked out of the returned media list when available."
       },
       {
         "question": "Where does my TikTok link go when I paste it?",
@@ -8743,20 +8487,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Freelance Rate Calculator do?",
-        "answer": "Freelance Rate Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which costs should go in the expenses field?",
+        "answer": "The field covers annual business expenses and taxes together. Both are added to your desired net income before the hourly rate is solved."
       },
       {
-        "question": "Is Freelance Rate Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Freelance Rate Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why do the results show zero dollars?",
+        "answer": "The calculator returns zero when the income goal or weekly billable hours are zero, or when vacation weeks reach 52, leaving no working weeks."
       },
       {
-        "question": "Do I need to create an account or sign up to use Freelance Rate Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Freelance Rate Calculator on mobile devices or tablets?",
-        "answer": "Yes, Freelance Rate Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How is the daily rate worked out?",
+        "answer": "It assumes a straight eight-hour working day, so the hourly rate is simply multiplied by eight."
       },
       {
         "question": "Is my income goal stored when I compute a rate?",
@@ -8912,20 +8652,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Fuel Cost Calculator do?",
-        "answer": "Fuel Cost Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the fuel cost calculator estimate litres needed?",
+        "answer": "Trip distance is divided by your vehicle's fuel economy in kilometres per litre, and that consumption is multiplied by the price per litre."
       },
       {
-        "question": "Is Fuel Cost Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Fuel Cost Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I use this for diesel or a different fuel price?",
+        "answer": "Yes, any per-litre price works; there is no fuel-type setting, so enter the pump price for whatever you use."
       },
       {
-        "question": "Do I need to create an account or sign up to use Fuel Cost Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Fuel Cost Calculator on mobile devices or tablets?",
-        "answer": "Yes, Fuel Cost Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the estimate account for traffic or driving conditions?",
+        "answer": "No. It uses the single economy figure you provide, so real-world consumption may vary with traffic, load and driving style."
       },
       {
         "question": "Do my trip distances and fuel prices get sent anywhere?",
@@ -9026,20 +8762,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Gaana Video Downloader do?",
-        "answer": "Gaana Video Downloader lets you download audio files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your audio files never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the Gaana downloader resolve a track link?",
+        "answer": "Paste a Gaana link and it resolves the media through SopKit's server proxy. The result panel reports title, author, duration, and a cover thumbnail."
       },
       {
-        "question": "Is Gaana Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Gaana Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What quality options appear for a Gaana track?",
+        "answer": "Every quality returned by the resolver is listed with an optional file size. Rows tagged as audio show a music-note icon and download as audio."
       },
       {
-        "question": "Do I need to create an account or sign up to use Gaana Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your audio files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Gaana Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Gaana Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is there guidance if I do not know how to copy a Gaana link?",
+        "answer": "Yes, a four-step guide covers finding, copying, pasting, and saving the link. The download action hands the media link to a new tab."
       },
       {
         "question": "Does the Gaana link need to be publicly accessible for the downloader to work?",
@@ -9085,20 +8817,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does GDPR Compliance Checker do?",
-        "answer": "GDPR Compliance Checker lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the checker crawl my website and find violations automatically?",
+        "answer": "No. It is a twelve-item self-assessment covering legal, cookies, transparency and data-rights topics; you confirm which practices are in place and the score is the checked share."
       },
       {
-        "question": "Is GDPR Compliance Checker really free? Are there any hidden charges?",
-        "answer": "Yes, GDPR Compliance Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does it ask for a URL if it doesn't visit my site?",
+        "answer": "The optional URL field only notes which site the self-assessment covers so the saved result is easy to identify later; no request is made to that address."
       },
       {
-        "question": "Do I need to create an account or sign up to use GDPR Compliance Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use GDPR Compliance Checker on mobile devices or tablets?",
-        "answer": "Yes, GDPR Compliance Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What do the verdict bands mean?",
+        "answer": "The percentage maps to good compliance, needs improvement or non-compliant, and a counter shows how many of the twelve items are still unchecked."
       },
       {
         "question": "Does entering a URL make the checker scan my website automatically?",
@@ -9144,20 +8872,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Gemini Watermark Remover do?",
-        "answer": "Gemini Watermark Remover lets you calculate images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I mask the Gemini badge on a generated image?",
+        "answer": "Highlight the badge with the adjustable 5 to 100 pixel brush or eraser, or use the Auto-Mask Logo preset that targets the bottom-right 15 by 12 percent corner area."
       },
       {
-        "question": "Is Gemini Watermark Remover really free? Are there any hidden charges?",
-        "answer": "Yes, Gemini Watermark Remover is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the Smart Crop option remove?",
+        "answer": "Smart Crop removes the bottom 8 percent strip where Gemini stamps its branding, an alternative to painting the mark out by hand."
       },
       {
-        "question": "Do I need to create an account or sign up to use Gemini Watermark Remover?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Gemini Watermark Remover on mobile devices or tablets?",
-        "answer": "Yes, Gemini Watermark Remover works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What are the size limits and output format for repairs?",
+        "answer": "The inpainting can run up to 60 passes, files are supported up to 20 MB, and the repaired picture saves as a PNG."
       },
       {
         "question": "Does the inpainting engine send my picture to a server?",
@@ -9258,20 +8982,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does GIF Generator do?",
-        "answer": "GIF Generator lets you generate images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many frames do I need to build an animation?",
+        "answer": "At least two frames go onto the timeline, and you can drag frames to reorder them or remove ones you do not need."
       },
       {
-        "question": "Is GIF Generator really free? Are there any hidden charges?",
-        "answer": "Yes, GIF Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I control how fast the animation plays?",
+        "answer": "Frame delay is tunable from 50 to 5,000 milliseconds, so the same frames can play as a flicker or a slow slideshow."
       },
       {
-        "question": "Do I need to create an account or sign up to use GIF Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use GIF Generator on mobile devices or tablets?",
-        "answer": "Yes, GIF Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What size and name does the finished GIF have?",
+        "answer": "The output canvas ranges from 100 to 1,000 pixels square, rendering splits work across two encoding workers, and the animation saves as animated-generator.gif."
       },
       {
         "question": "Is my GIF assembled on a server when I generate it?",
@@ -9317,20 +9037,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does GBP Description Generator do?",
-        "answer": "GBP Description Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What inputs does the GBP description generator need?",
+        "answer": "A short brand and city prompt is enough to draft a service-focused paragraph. A built-in example fills in when the field is blank so the format is visible first."
       },
       {
-        "question": "Is GBP Description Generator really free? Are there any hidden charges?",
-        "answer": "Yes, GBP Description Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What tone does the generated Google Business Profile copy use?",
+        "answer": "The copy leans on local expertise, reliable timing, and customer satisfaction phrasing. Rerun with a different trade or location for another draft in the same style."
       },
       {
-        "question": "Do I need to create an account or sign up to use GBP Description Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use GBP Description Generator on mobile devices or tablets?",
-        "answer": "Yes, GBP Description Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I move the description onto my Google Business Profile?",
+        "answer": "Copy the paragraph with the clipboard button and paste it into your profile description field. The output stays compact enough to paste in one go."
       },
       {
         "question": "Is the copy drafted here submitted to Google or kept anywhere?",
@@ -9376,20 +9092,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Google Cache Checker do?",
-        "answer": "Google Cache Checker lets you validate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does this show Google's cached copy of my page?",
+        "answer": "No. It confirms the page still answers crawlers with a redirect trace and fetches the live HTML head; nothing from a Google cache is read or displayed."
       },
       {
-        "question": "Is Google Cache Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Google Cache Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What can the HEAD and GET probes tell me?",
+        "answer": "The hop list reveals redirects that could hide content from bots, and the status code confirms reachability; the response snippet stops after the first few kilobytes."
       },
       {
-        "question": "Do I need to create an account or sign up to use Google Cache Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Google Cache Checker on mobile devices or tablets?",
-        "answer": "Yes, Google Cache Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why did I get an error instead of a result?",
+        "answer": "Blocked requests appear as an error rather than an empty result, which usually means the target server refuses automated visits or fails the safety checks."
       },
       {
         "question": "Does SopKit retain the page it fetches for this check?",
@@ -9490,20 +9202,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Google Index Checker do?",
-        "answer": "Google Index Checker lets you validate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can it tell me whether a page is in Google's index?",
+        "answer": "No. It probes the URL and reports whether it serves content to non-browser agents, including redirects and an HTML sample; indexing status itself comes from Search Console."
       },
       {
-        "question": "Is Google Index Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Google Index Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does a 200 status here actually prove?",
+        "answer": "Just that the address responded successfully to a server-side request. It is useful for spotting pages that look live but return errors or redirects to bots."
       },
       {
-        "question": "Do I need to create an account or sign up to use Google Index Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Google Index Checker on mobile devices or tablets?",
-        "answer": "Yes, Google Index Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why was my local or internal URL refused?",
+        "answer": "Internal network ranges are blocked before any request is made, so loopback and private addresses cannot be probed through this tool."
       },
       {
         "question": "Where does my URL go when I check if it is indexed?",
@@ -9549,20 +9257,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does GPA to 4.0 Scale Converter do?",
-        "answer": "GPA to 4.0 Scale Converter lets you convert numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens if I enter a CGPA above 10 or a percentage above 100?",
+        "answer": "Inputs are clamped: values above 10 on the CGPA scale and above 100 percent are treated as the maximum before the conversion runs."
       },
       {
-        "question": "Is GPA to 4.0 Scale Converter really free? Are there any hidden charges?",
-        "answer": "Yes, GPA to 4.0 Scale Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is the letter grade next to the GPA determined?",
+        "answer": "It comes from the same band table as the GPA, running A through F, for example 9.0 CGPA or 90% both land on a 4.0 with grade A."
       },
       {
-        "question": "Do I need to create an account or sign up to use GPA to 4.0 Scale Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use GPA to 4.0 Scale Converter on mobile devices or tablets?",
-        "answer": "Yes, GPA to 4.0 Scale Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will universities accept this conversion for admissions?",
+        "answer": "It is an estimate for planning. Universities and credential services apply their own mappings, so check each application's guidelines."
       },
       {
         "question": "Is my academic score stored when I convert it?",
@@ -9608,20 +9312,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Gratuity Calculator (India) do?",
-        "answer": "Gratuity Calculator (India) lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How are part-years of service treated in the gratuity formula?",
+        "answer": "With the Act switch on, service is rounded to the nearest completed year; switched off, only whole years count, matching the 15/26 and 15/30 formulas."
       },
       {
-        "question": "Is Gratuity Calculator (India) really free? Are there any hidden charges?",
-        "answer": "Yes, Gratuity Calculator (India) is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why was my gratuity amount capped?",
+        "answer": "The statutory ceiling of Rs 20,00,000 is applied when the formula produces more, and a notice shows the uncapped figure."
       },
       {
-        "question": "Do I need to create an account or sign up to use Gratuity Calculator (India)?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Gratuity Calculator (India) on mobile devices or tablets?",
-        "answer": "Yes, Gratuity Calculator (India) works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What salary figure should I enter for gratuity?",
+        "answer": "Your last drawn monthly basic salary plus dearness allowance. Other allowances and bonuses are not part of the gratuity calculation."
       },
       {
         "question": "Who can see my salary and service history here?",
@@ -9777,20 +9477,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does GST Calculator India do?",
-        "answer": "GST Calculator India lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does this GST calculator work on inclusive or exclusive amounts?",
+        "answer": "It expects an exclusive base amount and adds GST on top, listing base, tax and total so you can see the split."
       },
       {
-        "question": "Is GST Calculator India really free? Are there any hidden charges?",
-        "answer": "Yes, GST Calculator India is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I check the 5, 12, 18 and 28 percent slabs?",
+        "answer": "Yes. The rate box is editable, so any slab can be typed in and the three readouts refresh as you go; no convert button is needed."
       },
       {
-        "question": "Do I need to create an account or sign up to use GST Calculator India?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use GST Calculator India on mobile devices or tablets?",
-        "answer": "Yes, GST Calculator India works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does it split the tax into CGST and SGST?",
+        "answer": "No, it reports a single tax figure. For an intra-state invoice you would halve it into CGST and SGST, or use it whole as IGST."
       },
       {
         "question": "Is the amount I am calculating GST on recorded anywhere?",
@@ -9836,20 +9532,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Guitar Tuner do?",
-        "answer": "Guitar Tuner lets you edit audio files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your audio files never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the online guitar tuner listen to my instrument?",
+        "answer": "Microphone permission starts a live listening session you can stop anytime. Pitch detection uses autocorrelation over a 4096-sample analysis buffer."
       },
       {
-        "question": "Is Guitar Tuner really free? Are there any hidden charges?",
-        "answer": "Yes, Guitar Tuner is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which tunings can I select?",
+        "answer": "Presets cover standard EADGBE, drop D, and half-step-down tunings. A large note readout names the closest target string with its live frequency."
       },
       {
-        "question": "Do I need to create an account or sign up to use Guitar Tuner?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your audio files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Guitar Tuner on mobile devices or tablets?",
-        "answer": "Yes, Guitar Tuner works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I know when a string is in tune?",
+        "answer": "The cents meter spans -50 to +50 with green, yellow, and red zones, and an In Tune confirmation appears within five cents of the target."
       },
       {
         "question": "Does the tuner record or upload any audio from my microphone?",
@@ -9894,20 +9586,16 @@ The tool automatically accepts numbers separated by spaces, commas, or line brea
     },
     "faqs": [
       {
-        "question": "What exactly does Hashtag Generator do?",
-        "answer": "Hashtag Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many hashtags does one topic keyword produce?",
+        "answer": "One keyword turns into a ready-to-paste block of seven hashtags, with #trending and #explore closing out each set as broad reach tags."
       },
       {
-        "question": "Is Hashtag Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Hashtag Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Will unusual spacing or capitals break my hashtags?",
+        "answer": "Spaces are removed and letters are lowercased automatically, so every tag stays platform-safe. Add-on tags like tips, growth, and community extend the keyword."
       },
       {
-        "question": "Do I need to create an account or sign up to use Hashtag Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Hashtag Generator on mobile devices or tablets?",
-        "answer": "Yes, Hashtag Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I paste the hashtag set into a caption?",
+        "answer": "Copy the complete set in one click and paste it straight into a caption or comment. Trim any tags that do not fit the post."
       },
       {
         "question": "Is my keyword kept after I build a hashtag set?",
@@ -10224,20 +9912,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Hindi Typing do?",
-        "answer": "Hindi Typing lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I type Hindi with a normal keyboard using this tool?",
+        "answer": "Type words the way they sound in Roman letters, like namaste or dhanyawad, and they convert to Devanagari as you go."
       },
       {
-        "question": "Is Hindi Typing really free? Are there any hidden charges?",
-        "answer": "Yes, Hindi Typing is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What can I do when a transliteration comes out wrong?",
+        "answer": "Use the Quick Insert tray to add standalone characters, vowels and matras by clicking, or adjust the Roman spelling until the letter rules produce the right shape."
       },
       {
-        "question": "Do I need to create an account or sign up to use Hindi Typing?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Hindi Typing on mobile devices or tablets?",
-        "answer": "Yes, Hindi Typing works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I save or reuse what I type?",
+        "answer": "Yes, Copy Hindi Text grabs the Devanagari for pasting, and Download TXT saves it as a file; the Roman input stays visible alongside the output."
       },
       {
         "question": "Is each keystroke sent anywhere while I type in Hindi?",
@@ -10283,20 +9967,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Hinglish to Hindi Converter do?",
-        "answer": "Hinglish to Hindi Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does Hinglish to Hindi transliteration work here?",
+        "answer": "It applies common-word rules for frequent terms and letter-level mapping for everything else, then converts the whole passage when you press Convert."
       },
       {
-        "question": "Is Hinglish to Hindi Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Hinglish to Hindi Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Will names and rare words transliterate perfectly?",
+        "answer": "Not always. The rules are phonetic and context-free, so proper nouns and uncommon spellings may need a manual spelling tweak."
       },
       {
-        "question": "Do I need to create an account or sign up to use Hinglish to Hindi Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Hinglish to Hindi Converter on mobile devices or tablets?",
-        "answer": "Yes, Hinglish to Hindi Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are Kruti Dev and Unicode conversions in the same place?",
+        "answer": "Yes. The mode tabs switch between Hinglish, Kruti Dev to Unicode and Unicode to Kruti Dev directions from the one workspace."
       },
       {
         "question": "Where does my Hinglish text get transliterated?",
@@ -10342,20 +10022,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Home Loan Eligibility Calculator do?",
-        "answer": "Home Loan Eligibility Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "What income rule does the home loan eligibility calculator use?",
+        "answer": "It caps the new EMI at 50% of your net monthly salary, after subtracting existing EMI obligations from that headroom."
       },
       {
-        "question": "Is Home Loan Eligibility Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Home Loan Eligibility Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does a longer tenure raise my eligible loan amount?",
+        "answer": "Spreading repayment over more months lowers the monthly instalment for a given loan, so the same EMI headroom supports a larger amount."
       },
       {
-        "question": "Do I need to create an account or sign up to use Home Loan Eligibility Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Home Loan Eligibility Calculator on mobile devices or tablets?",
-        "answer": "Yes, Home Loan Eligibility Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do banks use the same eligibility rule?",
+        "answer": "This is a simplified model. Lenders also weigh credit score, age and employment type, so treat the figure as an upper estimate."
       },
       {
         "question": "Is my salary and EMI data kept by SopKit?",
@@ -10756,20 +10432,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does HTML to PDF Converter do?",
-        "answer": "HTML to PDF Converter lets you convert PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Will a long HTML page be split across several PDF pages?",
+        "answer": "No. The rendered content is captured once and wrapped in a single PDF page whose height follows the captured content, so pagination and page-break rules do not apply."
       },
       {
-        "question": "Is HTML to PDF Converter really free? Are there any hidden charges?",
-        "answer": "Yes, HTML to PDF Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How faithful is the output to my markup?",
+        "answer": "The capture renders your HTML in the preview pane at 1.8x and embeds the result as a JPEG, so what you see in the preview is what lands in the PDF."
       },
       {
-        "question": "Do I need to create an account or sign up to use HTML to PDF Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use HTML to PDF Converter on mobile devices or tablets?",
-        "answer": "Yes, HTML to PDF Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I get selectable text instead of an image-based PDF?",
+        "answer": "Not with this converter. Because the layout is embedded as a JPEG capture, the text is not selectable or searchable; keep the source HTML if you need accessible text."
       },
       {
         "question": "Is the HTML I write processed on a server?",
@@ -10980,20 +10652,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Bank Exam Photo Resizer do?",
-        "answer": "Bank Exam Photo Resizer lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why does the IBPS preset default to 350 x 350 px instead of my notification size?",
+        "answer": "IBPS is not in the built-in preset table, so the tool falls back to a square 350 x 350 px canvas with a 20KB to 300KB window. Override the width, height, and KB fields to match your official notification."
       },
       {
-        "question": "Is Bank Exam Photo Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, Bank Exam Photo Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do the photo and signature tabs really start with identical IBPS values?",
+        "answer": "Yes, both tabs begin from the same square fallback, including the 20KB to 300KB window. Adjust the signature tab separately if the notification asks for different dimensions."
       },
       {
-        "question": "Do I need to create an account or sign up to use Bank Exam Photo Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Bank Exam Photo Resizer on mobile devices or tablets?",
-        "answer": "Yes, Bank Exam Photo Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What crop does a square IBPS canvas apply to a portrait photo?",
+        "answer": "A square aspect-fill crop centers the portrait, trimming the sides rather than distorting the face. Generated files follow the ibps_photo_resized.jpg naming pattern."
       },
       {
         "question": "Do IBPS application images leave my machine during resizing?",
@@ -11038,20 +10706,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does ICO to PNG Converter do?",
-        "answer": "ICO to PNG Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I convert icons to a format other than PNG?",
+        "answer": "The target menu also offers JPEG, WebP and BMP, though PNG is pre-selected by default because it suits shareable icon graphics best."
       },
       {
-        "question": "Is ICO to PNG Converter really free? Are there any hidden charges?",
-        "answer": "Yes, ICO to PNG Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What dimensions does the exported PNG keep?",
+        "answer": "The icon keeps its native canvas unless you type replacement dimensions before converting."
       },
       {
-        "question": "Do I need to create an account or sign up to use ICO to PNG Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use ICO to PNG Converter on mobile devices or tablets?",
-        "answer": "Yes, ICO to PNG Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I convert several .ico files in one pass?",
+        "answer": "Multiple favicon .ico files queue up with pending and converted tags on each row; download each PNG separately or collect the whole set as a ZIP bundle."
       },
       {
         "question": "Where does my icon file sit while it is being converted?",
@@ -11097,20 +10761,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Icon Generator do?",
-        "answer": "Icon Generator lets you generate images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "What can I upload as the source for an icon set?",
+        "answer": "A PNG, JPG or SVG logo is converted into a set of five PNG sizes: 16, 32, 180, 192 and 512 pixels."
       },
       {
-        "question": "Is Icon Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Icon Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do the generated file names match platform conventions?",
+        "answer": "Tiles are named like apple-touch-icon and android-chrome so they slot straight into iOS and Android set-ups without renaming."
       },
       {
-        "question": "Do I need to create an account or sign up to use Icon Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Icon Generator on mobile devices or tablets?",
-        "answer": "Yes, Icon Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where does the rounded-corner styling apply?",
+        "answer": "The .ico file and the PNG tiles share one rounded-corner setting, and the webmanifest picks up your chosen background color as the theme color."
       },
       {
         "question": "Is my logo copied somewhere while app icons are generated?",
@@ -11156,20 +10816,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Ideal Body Weight Calculator do?",
-        "answer": "Ideal Body Weight Calculator lets you calculate health metrics entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your health metrics never leave your computer, there is no file size limit, and results are instant."
+        "question": "What inputs does the ideal body weight calculator take?",
+        "answer": "Only weight in kilograms and height in centimeters are needed, with no gender, age, or wrist measurement. BMI is derived as kilograms divided by height in meters squared."
       },
       {
-        "question": "Is Ideal Body Weight Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Ideal Body Weight Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which formula produces the ideal weight figure?",
+        "answer": "It uses the Devine formula: 50 kg plus 2.3 kg per inch over five feet. Outputs sit in read-only fields that refresh on every input change."
       },
       {
-        "question": "Do I need to create an account or sign up to use Ideal Body Weight Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your health metrics immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Ideal Body Weight Calculator on mobile devices or tablets?",
-        "answer": "Yes, Ideal Body Weight Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Who is the Devine ideal weight suited to?",
+        "answer": "It was built for medication dosing in adults and gives a single reference number, not a range. The tool also prints your BMI category from underweight through obese for context."
       },
       {
         "question": "Does the ideal weight figure adapt to my age or build?",
@@ -11379,20 +11035,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Pro Image Color Picker do?",
-        "answer": "Pro Image Color Picker lets you read images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I sample a colour from a busy part of a photo?",
+        "answer": "Move the magnifier loupe across the image for pixel-exact sampling, then click once to capture the colour."
       },
       {
-        "question": "Is Pro Image Color Picker really free? Are there any hidden charges?",
-        "answer": "Yes, Pro Image Color Picker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which colour formats can I copy from a sample?",
+        "answer": "Readouts cover HEX, RGB, HSL and CMYK, and a copy button next to every format drops the value straight onto the clipboard."
       },
       {
-        "question": "Do I need to create an account or sign up to use Pro Image Color Picker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start reading your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Pro Image Color Picker on mobile devices or tablets?",
-        "answer": "Yes, Pro Image Color Picker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I keep a strip of colours I have already sampled?",
+        "answer": "The last ten sampled colours stay in a swatch history strip so you can compare or revisit earlier picks while working."
       },
       {
         "question": "Is my image uploaded when I sample colors from it?",
@@ -11438,20 +11090,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image Compressor do?",
-        "answer": "Image Compressor lets you compress images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which formats can go in, and which can come out?",
+        "answer": "JPG, PNG and WebP files re-encode through a canvas, and you can choose WebP, JPEG or PNG output or keep the original format."
       },
       {
-        "question": "Is Image Compressor really free? Are there any hidden charges?",
-        "answer": "Yes, Image Compressor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I compare the original with the compressed result?",
+        "answer": "Side-by-side and compressed-only preview modes show the difference, and downloads append -compressed to the original filename."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image Compressor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image Compressor on mobile devices or tablets?",
-        "answer": "Yes, Image Compressor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I copy a compressed image instead of downloading it?",
+        "answer": "Yes, the compressed result can be copied straight to the clipboard as a PNG, handy for pasting into chat or design tools."
       },
       {
         "question": "Do files pile up on a server while I use this compressor?",
@@ -11496,20 +11144,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image Converter do?",
-        "answer": "Image Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which output formats can I choose from?",
+        "answer": "PNG is selected when the tool opens, and you can retarget to JPEG, WebP or BMP, with hints like Photo-Optimized and Modern Web beside the choices."
       },
       {
-        "question": "Is Image Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Image Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Will converting an image shrink its resolution?",
+        "answer": "Batch conversion keeps every file at its native resolution unless you fill the optional width and height fields to rescale during the rewrite."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image Converter on mobile devices or tablets?",
-        "answer": "Yes, Image Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I save an entire converted batch at once?",
+        "answer": "All converted images compile into a single ZIP archive when you want everything in one download."
       },
       {
         "question": "Where do my pictures go during an image format conversion?",
@@ -11554,20 +11198,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image Cropper do?",
-        "answer": "Image Cropper lets you edit images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I set exact output dimensions like 600 by 600 pixels?",
+        "answer": "Yes, enter exact width and height values for a uniform output size, or switch to percentage mode to scale relative to the source dimensions."
       },
       {
-        "question": "Is Image Cropper really free? Are there any hidden charges?",
-        "answer": "Yes, Image Cropper is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How large can each file in the queue be?",
+        "answer": "The queue handles images up to 50 megabytes per file, so large camera shots do not need pre-shrinking before resizing."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image Cropper?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image Cropper on mobile devices or tablets?",
-        "answer": "Yes, Image Cropper works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does resizing soften my photos?",
+        "answer": "High-quality canvas smoothing reduces blur when scaling, so moderate size changes stay crisp; extreme enlargements always soften fine detail."
       },
       {
         "question": "Is my image transferred anywhere when I process it with this tool?",
@@ -11612,20 +11252,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image DPI Converter do?",
-        "answer": "Image DPI Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which DPI options are available and who are they for?",
+        "answer": "DPI options include 150, 200, 300 and 600 with use-case labels, and the default view opens in inches at 300 DPI for print-ready output."
       },
       {
-        "question": "Is Image DPI Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Image DPI Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are physical sizes converted into pixels?",
+        "answer": "Switching to inches converts values into pixels via the chosen density, so a 2 inch print at 300 DPI lands at 600 pixels wide."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image DPI Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image DPI Converter on mobile devices or tablets?",
-        "answer": "Yes, Image DPI Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I cap the file weight while changing DPI?",
+        "answer": "An optional max KB guard keeps heavyweight prints within portal limits, and the output filename embeds the chosen size, unit and DPI settings."
       },
       {
         "question": "Is there an upload step when changing an image's DPI here?",
@@ -11670,20 +11306,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image Editor do?",
-        "answer": "Image Editor lets you edit images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do the width and height inputs behave in the canvas?",
+        "answer": "The canvas resizes through live width and height inputs; choose pixels for absolute sizes or percentage for relative scaling."
       },
       {
-        "question": "Is Image Editor really free? Are there any hidden charges?",
-        "answer": "Yes, Image Editor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the quality slider affect every output format?",
+        "answer": "No, it shapes lossy encodes such as JPEG; lossless outputs keep their pixels regardless of where the slider sits."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image Editor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image Editor on mobile devices or tablets?",
-        "answer": "Yes, Image Editor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I process several images in one run?",
+        "answer": "Add several files at once and process them in a single run, with each image passing through the same resize settings."
       },
       {
         "question": "Do my edits happen on my device or on a SopKit machine?",
@@ -11728,20 +11360,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image Enlarger do?",
-        "answer": "Image Enlarger lets you process images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the tool limit pixelation when enlarging a photo?",
+        "answer": "Upscaled canvases use high-smoothing interpolation to limit pixelation, though extreme enlargement can never invent detail that was not photographed."
       },
       {
-        "question": "Is Image Enlarger really free? Are there any hidden charges?",
-        "answer": "Yes, Image Enlarger is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I enlarge by a factor instead of typing pixel values?",
+        "answer": "Percentage mode multiplies the original dimensions by the factor you set, while the aspect lock controls how the enlargement stretches."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image Enlarger?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image Enlarger on mobile devices or tablets?",
-        "answer": "Yes, Image Enlarger works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the quality control do after the upscale pass?",
+        "answer": "It shapes the final encode after the image is upscaled, trading file weight against visible detail in the saved result."
       },
       {
         "question": "Does enlarging an image send it to a processing server?",
@@ -11786,20 +11414,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image Metadata (EXIF) Remover do?",
-        "answer": "Image Metadata (EXIF) Remover lets you process images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I see how much metadata a photo carries?",
+        "answer": "A badge reports how many metadata tags were found on the file as soon as you drop or browse to load it."
       },
       {
-        "question": "Is Image Metadata (EXIF) Remover really free? Are there any hidden charges?",
-        "answer": "Yes, Image Metadata (EXIF) Remover is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which details are stripped from the cleaned copy?",
+        "answer": "Re-encoding through a canvas strips GPS, camera, date and software tags from the duplicate."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image Metadata (EXIF) Remover?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image Metadata (EXIF) Remover on mobile devices or tablets?",
-        "answer": "Yes, Image Metadata (EXIF) Remover works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are cleaned images named?",
+        "answer": "Every cleaned file is saved with a sanitized_ name prefix, making it easy to tell the stripped copy apart from the original."
       },
       {
         "question": "Can SopKit see the GPS coordinates stored in my photo?",
@@ -11845,20 +11469,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image Resizer do?",
-        "answer": "Image Resizer lets you edit images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which social platform presets are built in?",
+        "answer": "Quick presets jump to Instagram, Facebook, Twitter, YouTube and LinkedIn sizes, or you can resize by exact pixels or percentage."
       },
       {
-        "question": "Is Image Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, Image Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How large can a file be for the resizer?",
+        "answer": "Files up to 50 MB pass through a high-quality smoothing canvas, and the quality slider governs the re-encode for lossy output formats."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image Resizer on mobile devices or tablets?",
-        "answer": "Yes, Image Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I download every resized image in one go?",
+        "answer": "Yes, the Download All button saves every completed resize in one burst once the batch has finished."
       },
       {
         "question": "Do my photos get processed on a remote machine when resizing?",
@@ -11903,20 +11523,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image to Base64 Converter do?",
-        "answer": "Image to Base64 Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which output shapes can I copy from an encoded image?",
+        "answer": "Four shapes: a full Data URI, the raw Base64 text, a ready-made HTML image tag and a CSS snippet, each with its own copy button."
       },
       {
-        "question": "Is Image to Base64 Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Image to Base64 Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the properties panel tell me about the file?",
+        "answer": "It lists the original size, the detected image format and the Base64 character count once an image is loaded."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image to Base64 Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image to Base64 Converter on mobile devices or tablets?",
-        "answer": "Yes, Image to Base64 Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which image files can I encode?",
+        "answer": "Any image file the browser can read works, from screenshots to photos, and the Base64 text appears as soon as the file is added."
       },
       {
         "question": "Does my photo leave my computer when it becomes Base64 text?",
@@ -11962,20 +11578,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image to PDF do?",
-        "answer": "Image to PDF lets you convert PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I mix JPG, PNG and WebP files in one document?",
+        "answer": "Yes. The queue accepts JPG, PNG, WebP, SVG, AVIF and BMP together, and formats beyond PNG and JPG are rasterized before embedding."
       },
       {
-        "question": "Is Image to PDF really free? Are there any hidden charges?",
-        "answer": "Yes, Image to PDF is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Should I use image-sized pages or A4?",
+        "answer": "Follow the image dimensions when the PDF is a gallery or single-image export; switch to A4 portrait or landscape with a chosen margin when the document will be printed."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image to PDF?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image to PDF on mobile devices or tablets?",
-        "answer": "Yes, Image to PDF works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I fix the page order after adding files?",
+        "answer": "Use the up and down arrows on each row to rearrange the queue before generating; every image is then scaled proportionally to fit its page without distortion."
       },
       {
         "question": "Are my photos transmitted to build the PDF?",
@@ -12021,20 +11633,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Free Image Tools do?",
-        "answer": "Free Image Tools lets you process images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is the image tools collection organised?",
+        "answer": "Three curated collections organise fifteen frequently used image utilities: Optimization & Compression, Creative Editing and Format Conversion."
       },
       {
-        "question": "Is Free Image Tools really free? Are there any hidden charges?",
-        "answer": "Yes, Free Image Tools is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do the collection cards run the tools inline?",
+        "answer": "No, every card links to a dedicated tool page with its own focused controls, and a long-form guide beneath the grid explains which tool suits which task."
       },
       {
-        "question": "Do I need to create an account or sign up to use Free Image Tools?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Free Image Tools on mobile devices or tablets?",
-        "answer": "Yes, Free Image Tools works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which utilities sit inside each collection?",
+        "answer": "Optimization leads with the compressor, resizer and WebP tools; Creative Editing gathers background removal, circular crop and watermarking; Format Conversion lines up JPG, SVG, ICO, GIF and WebP helpers."
       },
       {
         "question": "Does browsing or using this image collection upload my files?",
@@ -12080,20 +11688,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Image Watermark Adder do?",
-        "answer": "Image Watermark Adder lets you process images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I use a logo watermark instead of text?",
+        "answer": "Swap the text field for an uploaded logo image when branding calls for it, and set opacity from 10 to 100 percent for a subtle or bold mark."
       },
       {
-        "question": "Is Image Watermark Adder really free? Are there any hidden charges?",
-        "answer": "Yes, Image Watermark Adder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where can the watermark sit on the photo?",
+        "answer": "Place marks in any of five corner or centre spots, or switch to a tiled layout that repeats the watermark across the picture."
       },
       {
-        "question": "Do I need to create an account or sign up to use Image Watermark Adder?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Image Watermark Adder on mobile devices or tablets?",
-        "answer": "Yes, Image Watermark Adder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What size and format does the watermarked file export as?",
+        "answer": "A size control from 5 to 80 keeps the mark proportionate across images, and the watermarked picture exports as a PNG file."
       },
       {
         "question": "Does adding a watermark transmit my photo anywhere?",
@@ -12249,20 +11853,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Income Tax Calculator FY 2026-27 do?",
-        "answer": "Income Tax Calculator FY 2026-27 lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which deductions does the new regime side of the calculator apply?",
+        "answer": "Only the Rs 75,000 standard deduction; the 80C and 80D fields you enter are used on the old regime side of the comparison."
       },
       {
-        "question": "Is Income Tax Calculator FY 2026-27 really free? Are there any hidden charges?",
-        "answer": "Yes, Income Tax Calculator FY 2026-27 is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the income tax calculator include the Section 87A rebate?",
+        "answer": "Yes. Tax is zeroed when taxable income is up to Rs 7 lakh under the new regime, or up to Rs 5 lakh under the old regime, before cess."
       },
       {
-        "question": "Do I need to create an account or sign up to use Income Tax Calculator FY 2026-27?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Income Tax Calculator FY 2026-27 on mobile devices or tablets?",
-        "answer": "Yes, Income Tax Calculator FY 2026-27 works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is surcharge on very high incomes included?",
+        "answer": "No. The estimate covers slab tax plus 4% health and education cess, so incomes well above Rs 50 lakh may see a higher real liability."
       },
       {
         "question": "Is my income and deduction data safe to enter?",
@@ -12363,20 +11963,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Inflation Calculator do?",
-        "answer": "Inflation Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do the two inflation outputs each represent?",
+        "answer": "The nominal value is what you would need in future to buy what your amount buys today; buying power shows what today's amount would be worth later."
       },
       {
-        "question": "Is Inflation Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Inflation Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I enter a fractional number of years?",
+        "answer": "Yes. Decimal spans such as 7.5 years are accepted and the rate compounds over the full period."
       },
       {
-        "question": "Do I need to create an account or sign up to use Inflation Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Inflation Calculator on mobile devices or tablets?",
-        "answer": "Yes, Inflation Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the inflation calculator apply a different rate every year?",
+        "answer": "No, the rate you enter compounds year after year. Real inflation varies, so use an average figure you consider realistic."
       },
       {
         "question": "Can my savings figures be seen when I check inflation?",
@@ -12476,20 +12072,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Instagram Bio Generator do?",
-        "answer": "Instagram Bio Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many Instagram bios does one run produce?",
+        "answer": "Each run produces five bios at once, and every one folds your keyword into its lines. Copy a single bio with its row button, or regenerate for another five."
       },
       {
-        "question": "Is Instagram Bio Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Instagram Bio Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if I leave the keyword field empty?",
+        "answer": "An empty field falls back to Content Creator starters so results always appear. Layouts suit personal profiles, small-business accounts, and creator pages."
       },
       {
-        "question": "Do I need to create an account or sign up to use Instagram Bio Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Instagram Bio Generator on mobile devices or tablets?",
-        "answer": "Yes, Instagram Bio Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do the generated bios include emoji and calls to action?",
+        "answer": "Yes, the drafts mix emoji accents, short role statements, and placeholder calls like DM for collab. Edit them to match your actual offers before pasting."
       },
       {
         "question": "What happens to the keyword I type for my Instagram bio?",
@@ -12983,20 +12575,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Internship Application Message Generator do?",
-        "answer": "Internship Application Message Generator lets you generate text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What should I replace before sending the internship message?",
+        "answer": "Any bracketed placeholder, especially the prompt to mention a specific project or aspect of the company, which makes the note sound genuine."
       },
       {
-        "question": "Is Internship Application Message Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Internship Application Message Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which fields build the outreach message?",
+        "answer": "Your name, the internship role, the company or recruiter name, and your key skills; the draft closes with a polite ask for a quick chat."
       },
       {
-        "question": "Do I need to create an account or sign up to use Internship Application Message Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Internship Application Message Generator on mobile devices or tablets?",
-        "answer": "Yes, Internship Application Message Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I generate a different format from the same page?",
+        "answer": "Yes. Tabs switch to cover letter and LinkedIn headline templates that share the details you have already entered."
       },
       {
         "question": "Does SopKit send the internship message or notify anyone?",
@@ -13042,20 +12630,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Invoice Generator India with GST do?",
-        "answer": "Invoice Generator India with GST lets you generate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the flat discount applied before or after GST in the invoice totals?",
+        "answer": "Tax is calculated per line first, then the flat discount is subtracted from that taxed subtotal, so the discount comes off the final amount."
       },
       {
-        "question": "Is Invoice Generator India with GST really free? Are there any hidden charges?",
-        "answer": "Yes, Invoice Generator India with GST is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I save or print the finished invoice?",
+        "answer": "Use Print / Save as PDF at the top to print the invoice sheet or save it as a PDF through your print dialog."
       },
       {
-        "question": "Do I need to create an account or sign up to use Invoice Generator India with GST?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Invoice Generator India with GST on mobile devices or tablets?",
-        "answer": "Yes, Invoice Generator India with GST works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What is the Save JSON Template button for?",
+        "answer": "It downloads the current invoice fields, line items and settings as a JSON file so you can keep a reusable record of a recurring invoice."
       },
       {
         "question": "Do my client names and bank details go to SopKit's servers?",
@@ -13506,20 +13090,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JEE Photo Resizer do?",
-        "answer": "JEE Photo Resizer lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What dimensions and KB limits come preloaded for JEE applications?",
+        "answer": "Photo mode starts at 350 x 450 px inside a 10KB to 200KB window, and signature mode at 350 x 150 px with 4KB to 30KB. Any of those values can be edited before reprocessing."
       },
       {
-        "question": "Is JEE Photo Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, JEE Photo Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the JEE resizer choose the final JPEG quality?",
+        "answer": "Up to twelve quality passes move the JPEG quality until the file lands inside your KB window. The result card colors the achieved size against your configured bounds."
       },
       {
-        "question": "Do I need to create an account or sign up to use JEE Photo Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JEE Photo Resizer on mobile devices or tablets?",
-        "answer": "Yes, JEE Photo Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I switch the JEE resizer to Hindi labels?",
+        "answer": "Add the lang=hi query parameter to the page URL and the interface labels switch to Hindi."
       },
       {
         "question": "How is my JEE photo handled while the tool compresses it?",
@@ -13564,20 +13144,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JPG Converter do?",
-        "answer": "JPG Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "What file name do converted JPGs receive?",
+        "answer": "Finished files download as name_converted.jpg straight from the results row, and the format switcher reruns any completed items under a new setting."
       },
       {
-        "question": "Is JPG Converter really free? Are there any hidden charges?",
-        "answer": "Yes, JPG Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What quality setting does JPEG conversion start with?",
+        "answer": "Quality defaults to 90 and responds to the 20 to 100 slider for lossy formats."
       },
       {
-        "question": "Do I need to create an account or sign up to use JPG Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JPG Converter on mobile devices or tablets?",
-        "answer": "Yes, JPG Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does the batch report files that fail?",
+        "answer": "Rows report pending, converted or failed states, so one troublesome file does not hide the progress of the rest of the pile."
       },
       {
         "question": "Is my photo copied to SopKit while it converts to JPG?",
@@ -13622,20 +13198,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JPG to BMP Converter do?",
-        "answer": "JPG to BMP Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why does the quality slider stay idle for BMP output?",
+        "answer": "BMP is a zero-compression format, so the quality slider is skipped; it only applies when you pick a lossy target from the format menu."
       },
       {
-        "question": "Is JPG to BMP Converter really free? Are there any hidden charges?",
-        "answer": "Yes, JPG to BMP Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can the bitmap be resized during conversion?",
+        "answer": "Yes, set custom pixel dimensions if the bitmap needs exact measurements, and the batch engine applies them as it converts."
       },
       {
-        "question": "Do I need to create an account or sign up to use JPG to BMP Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JPG to BMP Converter on mobile devices or tablets?",
-        "answer": "Yes, JPG to BMP Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do batch downloads work for several JPGs?",
+        "answer": "Drop in several JPGs and press Convert All to work through them in order; individual downloads carry a _converted name while the ZIP packs the rest."
       },
       {
         "question": "Does my JPG photo go to a server for the bitmap conversion?",
@@ -13680,20 +13252,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JPG to GIF Converter do?",
-        "answer": "JPG to GIF Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which output formats does this converter's studio target?",
+        "answer": "PNG, JPEG, WebP and BMP are the targets; quality control appears for lossy formats and steps aside for lossless ones."
       },
       {
-        "question": "Is JPG to GIF Converter really free? Are there any hidden charges?",
-        "answer": "Yes, JPG to GIF Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I add a whole folder of JPEGs to convert?",
+        "answer": "Yes, add a folder of JPGs and the queue processes them one after another without further clicks."
       },
       {
-        "question": "Do I need to create an account or sign up to use JPG to GIF Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JPG to GIF Converter on mobile devices or tablets?",
-        "answer": "Yes, JPG to GIF Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I resize images during the same conversion pass?",
+        "answer": "Width and height fields can rescale images during the conversion, and every finished file can be packed into a dated ZIP with a single button."
       },
       {
         "question": "Where are my JPG files processed when I run them through this converter?",
@@ -13738,20 +13306,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JPG to ICO Converter do?",
-        "answer": "JPG to ICO Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do I see once my JPGs are queued?",
+        "answer": "Preview thumbnails and original sizes appear as soon as files are added, and the batch engine re-encodes each photo on its own canvas at full resolution."
       },
       {
-        "question": "Is JPG to ICO Converter really free? Are there any hidden charges?",
-        "answer": "Yes, JPG to ICO Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do the width and height overrides apply to every file?",
+        "answer": "Yes, the optional overrides apply to every image in the batch, so a uniform pixel size is easy to enforce across the run."
       },
       {
-        "question": "Do I need to create an account or sign up to use JPG to ICO Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JPG to ICO Converter on mobile devices or tablets?",
-        "answer": "Yes, JPG to ICO Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are batch results downloaded?",
+        "answer": "Download a single result from its row, or bundle the whole run into a ZIP archive once the conversions finish."
       },
       {
         "question": "Do my images get uploaded to SopKit when I create icons from them?",
@@ -13797,20 +13361,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JPG to PDF for Exam Forms do?",
-        "answer": "JPG to PDF for Exam Forms lets you convert exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I merge several scanned pages into a single PDF for an exam form?",
+        "answer": "Yes, multiple JPG and PNG scans stack into one ordered PDF document. Every page tile offers move-up, move-down, and delete controls plus a page number."
       },
       {
-        "question": "Is JPG to PDF for Exam Forms really free? Are there any hidden charges?",
-        "answer": "Yes, JPG to PDF for Exam Forms is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Should I pick auto page size or A4 when building the PDF?",
+        "answer": "Auto matches each page to its image dimensions, while A4 places content on 595 x 842 point pages. Margin settings offer none, small (20 points), or large (40 points)."
       },
       {
-        "question": "Do I need to create an account or sign up to use JPG to PDF for Exam Forms?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JPG to PDF for Exam Forms on mobile devices or tablets?",
-        "answer": "Yes, JPG to PDF for Exam Forms works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will my photos be cropped or stretched when they land on a PDF page?",
+        "answer": "No, images scale to fit and center on each page without cropping or stretching. The compiled PDF downloads as exam_documents with a timestamp in the filename."
       },
       {
         "question": "Are my scanned marksheets converted on a remote server?",
@@ -13855,20 +13415,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JPG to PNG Converter do?",
-        "answer": "JPG to PNG Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the quality slider matter when converting to PNG?",
+        "answer": "No, PNG is lossless and the re-encode happens without touching the quality slider."
       },
       {
-        "question": "Is JPG to PNG Converter really free? Are there any hidden charges?",
-        "answer": "Yes, JPG to PNG Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the queue handle a large stack of JPEGs?",
+        "answer": "The queue accepts a stack of JPEGs and converts them sequentially while a running progress bar tracks how much of the work is left."
       },
       {
-        "question": "Do I need to create an account or sign up to use JPG to PNG Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JPG to PNG Converter on mobile devices or tablets?",
-        "answer": "Yes, JPG to PNG Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are the finished PNG files named?",
+        "answer": "Finished files carry a _converted suffix plus the .png extension, and PNG (Lossless) shows as the starting target on the format menu."
       },
       {
         "question": "Will my JPEG be stored on SopKit's servers during conversion?",
@@ -13913,20 +13469,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does JPG to WebP Converter do?",
-        "answer": "JPG to WebP Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the quality slider do to the WebP encode?",
+        "answer": "The 20 to 100 slider tunes the lossy WebP encode; lower values shrink the file further at the cost of fine detail."
       },
       {
-        "question": "Is JPG to WebP Converter really free? Are there any hidden charges?",
-        "answer": "Yes, JPG to WebP Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens when one file fails mid-batch?",
+        "answer": "Failed items are flagged rather than breaking the rest of the batch, so the remaining conversions keep going."
       },
       {
-        "question": "Do I need to create an account or sign up to use JPG to WebP Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use JPG to WebP Converter on mobile devices or tablets?",
-        "answer": "Yes, JPG to WebP Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I download the converted run as one archive?",
+        "answer": "Finished conversions can be zipped with a timestamped archive name, or saved individually from each row."
       },
       {
         "question": "Are JPGs copied off my machine while making WebP versions?",
@@ -14427,20 +13979,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Keyword Density Checker do?",
-        "answer": "Keyword Density Checker lets you validate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it count keyword occurrences in the text I have written?",
+        "answer": "The panel takes a focus term and returns a results table seeded with closely related variants; it is a demonstration of the results layout rather than a live analysis of pasted copy."
       },
       {
-        "question": "Is Keyword Density Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Keyword Density Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where do the volume, CPC and difficulty numbers come from?",
+        "answer": "They come from the component's bundled sample rows, not a live keyword index, so treat every figure as illustrative until you confirm it in a real keyword platform."
       },
       {
-        "question": "Do I need to create an account or sign up to use Keyword Density Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Keyword Density Checker on mobile devices or tablets?",
-        "answer": "Yes, Keyword Density Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why are exactly five rows shown for my term?",
+        "answer": "Each run shows the exact seed plus four common variants, the free, best, online and how-to forms, with difficulty badges in green, yellow and red bands."
       },
       {
         "question": "Is my focus keyword transmitted anywhere?",
@@ -14486,20 +14034,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Advanced Keyword Research do?",
-        "answer": "Advanced Keyword Research lets you process website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the search volume in the table live data?",
+        "answer": "No. The table is populated from a bundled sample dataset, not a connected keyword index, so the volume, CPC and difficulty figures are illustrative placeholders."
       },
       {
-        "question": "Is Advanced Keyword Research really free? Are there any hidden charges?",
-        "answer": "Yes, Advanced Keyword Research is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What columns do the results include?",
+        "answer": "Search volume, CPC and difficulty for the seed phrase plus four related variants, with difficulty color-coded as Easy, Medium or Hard."
       },
       {
-        "question": "Do I need to create an account or sign up to use Advanced Keyword Research?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Advanced Keyword Research on mobile devices or tablets?",
-        "answer": "Yes, Advanced Keyword Research works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does the Search button stay locked for a moment?",
+        "answer": "A built-in delay runs while the sample rows are prepared, mimicking a network request; the button re-enables as soon as the table draws."
       },
       {
         "question": "Is my seed keyword sent to a search engine or data provider?",
@@ -14544,20 +14088,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Keywords Suggestion do?",
-        "answer": "Keywords Suggestion lets you process website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Are these suggestions pulled from Google Autocomplete?",
+        "answer": "No. The five rows are template combinations of your seed with free, best, online and how-to phrasing, drawn from bundled sample metrics rather than a live suggestion service."
       },
       {
-        "question": "Is Keywords Suggestion really free? Are there any hidden charges?",
-        "answer": "Yes, Keywords Suggestion is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why do different seeds produce the same pattern of suggestions?",
+        "answer": "The expansion structure is fixed; only your seed changes between runs, and the volume, CPC and difficulty columns come from the same sample dataset."
       },
       {
-        "question": "Do I need to create an account or sign up to use Keywords Suggestion?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Keywords Suggestion on mobile devices or tablets?",
-        "answer": "Yes, Keywords Suggestion works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I use the suggestions directly as content topics?",
+        "answer": "The word patterns are a reasonable starting point for topic phrasing, but verify demand with a live tool before building a content plan around them."
       },
       {
         "question": "Do the suggested keywords come from a real search volume index?",
@@ -14658,20 +14198,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Kruti Dev to Unicode Converter do?",
-        "answer": "Kruti Dev to Unicode Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Kruti Dev version does this converter target?",
+        "answer": "It maps the Kruti Dev 010 character layout into standard Unicode Devanagari, including numerals, common consonants and matras."
       },
       {
-        "question": "Is Kruti Dev to Unicode Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Kruti Dev to Unicode Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does the short i matra look out of place after converting?",
+        "answer": "The converter runs a post-processing pass that moves short and long i matras after the consonant, matching Devanagari display order rather than keyboard order."
       },
       {
-        "question": "Do I need to create an account or sign up to use Kruti Dev to Unicode Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Kruti Dev to Unicode Converter on mobile devices or tablets?",
-        "answer": "Yes, Kruti Dev to Unicode Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the conversion automatic as I paste?",
+        "answer": "No, press Convert to process the whole block; the copy control appears above the output once a conversion has run."
       },
       {
         "question": "Is the Kruti Dev text I paste converted remotely?",
@@ -15043,20 +14579,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Line Sorter do?",
-        "answer": "Line Sorter lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do alphabetical and natural sorting differ in the line sorter?",
+        "answer": "Alphabetical compares characters, so item10 can come before item2; natural sorting reads embedded numbers, putting item2 before item10."
       },
       {
-        "question": "Is Line Sorter really free? Are there any hidden charges?",
-        "answer": "Yes, Line Sorter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do the blank line and duplicate options run automatically?",
+        "answer": "They apply when you press Sort Lines, and removing duplicates keeps the first appearance of each entry."
       },
       {
-        "question": "Do I need to create an account or sign up to use Line Sorter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Line Sorter on mobile devices or tablets?",
-        "answer": "Yes, Line Sorter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What do the counters above the boxes show?",
+        "answer": "Input and output statistics displayed together, so you can see how much the sort, deduplication or trimming pass changed the list."
       },
       {
         "question": "Does sorting my list send it to a server?",
@@ -15102,20 +14634,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does LinkedIn Headline Generator do?",
-        "answer": "LinkedIn Headline Generator lets you generate text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many LinkedIn headline variations does the generator produce?",
+        "answer": "Four options at once, separated by dividers, so you can pick the strongest tone and copy it individually."
       },
       {
-        "question": "Is LinkedIn Headline Generator really free? Are there any hidden charges?",
-        "answer": "Yes, LinkedIn Headline Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How should I format the skills field?",
+        "answer": "Comma-separate them. Up to three skills are used, joined with pipe characters into a highlight list like React | Node.js | SQL."
       },
       {
-        "question": "Do I need to create an account or sign up to use LinkedIn Headline Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use LinkedIn Headline Generator on mobile devices or tablets?",
-        "answer": "Yes, LinkedIn Headline Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if I leave the company or experience blank?",
+        "answer": "The output falls back to clear placeholders such as Company or X years, which makes the gaps obvious before you publish the headline."
       },
       {
         "question": "Is my headline draft connected to my LinkedIn account?",
@@ -15271,20 +14799,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Logo Generator do?",
-        "answer": "Logo Generator lets you generate images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How much design choice do I get without uploading a logo?",
+        "answer": "Choose among 32 built-in icons and 7 bundled typefaces, then arrange them through five layout modes ranging from side-by-side to stacked."
       },
       {
-        "question": "Is Logo Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Logo Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which background styles can I apply to a logo?",
+        "answer": "Solid fills, gradients, grids, dots and stripes are available, and starter presets like Modern Minimal, Bold Badge and Soft Glass give a quick base."
       },
       {
-        "question": "Do I need to create an account or sign up to use Logo Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Logo Generator on mobile devices or tablets?",
-        "answer": "Yes, Logo Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What file formats can the finished logo export as?",
+        "answer": "Export the completed design as a PNG image or an SVG vector; brand name and tagline fields compose the lettering."
       },
       {
         "question": "Is my company name or logo design sent to a server?",
@@ -15448,20 +14972,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Lorem Ipsum Generator do?",
-        "answer": "Lorem Ipsum Generator lets you generate text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I generate a specific number of words instead of paragraphs?",
+        "answer": "Yes. Switch the output unit to words, and the count slider then scales up to 100 individual words."
       },
       {
-        "question": "Is Lorem Ipsum Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Lorem Ipsum Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the Start with Lorem ipsum checkbox do?",
+        "answer": "It controls whether the classic Lorem ipsum dolor sit amet opening leads the passage or the text begins with a random sentence."
       },
       {
-        "question": "Do I need to create an account or sign up to use Lorem Ipsum Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Lorem Ipsum Generator on mobile devices or tablets?",
-        "answer": "Yes, Lorem Ipsum Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will each generated passage be different?",
+        "answer": "Regenerate reshuffles the Latin word pool, so consecutive passages vary; the copy button grabs whichever version is showing."
       },
       {
         "question": "Is the placeholder text generated on a server?",
@@ -15507,20 +15027,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Love Calculator do?",
-        "answer": "Love Calculator lets you calculate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "The same two names always give the same score; how?",
+        "answer": "The score is a deterministic hash of the characters in both names, so a pairing always produces the same percentage. Four chemistry bars split it into romance, communication, loyalty, and humor."
       },
       {
-        "question": "Is Love Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Love Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why does the love calculator never show a score below 55%?",
+        "answer": "The formula maps every result into a 55% to 100% range, so verdicts stay playful. Labels run from Twin Flames and Power Couple to Sweet Harmony and Intriguing Alchemy."
       },
       {
-        "question": "Do I need to create an account or sign up to use Love Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Love Calculator on mobile devices or tablets?",
-        "answer": "Yes, Love Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I share a love score as an image?",
+        "answer": "Yes, a share card exports as a 1080 x 1920 story image or a 1080 x 1080 square PNG. Results also go to WhatsApp or X, or copy as text."
       },
       {
         "question": "What happens to the two names I try in the compatibility test?",
@@ -15676,20 +15192,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Macro Calculator do?",
-        "answer": "Macro Calculator lets you calculate health metrics entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your health metrics never leave your computer, there is no file size limit, and results are instant."
+        "question": "What drives the macro split: do I enter calories or foods?",
+        "answer": "A daily calorie target field drives every split calculation. There is no food database; the tool converts your target into grams of protein, carbs, and fat."
       },
       {
-        "question": "Is Macro Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Macro Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which macro strategies are available?",
+        "answer": "Four strategies: balanced 40/30/30, low carb 25/40/35, high protein 30/40/30, and keto 5/25/70. Outputs list grams and percentage labels for each."
       },
       {
-        "question": "Do I need to create an account or sign up to use Macro Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your health metrics immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Macro Calculator on mobile devices or tablets?",
-        "answer": "Yes, Macro Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are the gram totals calculated from calories?",
+        "answer": "Gram math uses 4 kcal for protein and carbs and 9 kcal for fat, with each macro's calorie contribution listed beneath its gram total. Copy summary formats the full split for a notes app or message."
       },
       {
         "question": "Where does the calorie target come from — does this tool calculate it?",
@@ -15904,20 +15416,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Markdown to PDF Converter do?",
-        "answer": "Markdown to PDF Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Markdown elements does the PDF renderer support?",
+        "answer": "Headings, bold and italic text, code blocks, blockquotes, lists and horizontal rules all render in the print preview before export."
       },
       {
-        "question": "Is Markdown to PDF Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Markdown to PDF Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the exported PDF paginate long documents?",
+        "answer": "The export produces a single-page PDF sized to the preview, so very long Markdown documents are better split into parts."
       },
       {
-        "question": "Do I need to create an account or sign up to use Markdown to PDF Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Markdown to PDF Converter on mobile devices or tablets?",
-        "answer": "Yes, Markdown to PDF Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I check the document before downloading?",
+        "answer": "Yes. The editor and print preview update together, and the clear button resets the workspace for a fresh document."
       },
       {
         "question": "Does my document leave the page while it becomes a PDF?",
@@ -15963,20 +15471,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Markdown to Text do?",
-        "answer": "Markdown to Text lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens to links and images when Markdown is converted to text?",
+        "answer": "Link markup collapses to its display text, while image syntax is removed entirely, leaving no stray brackets or URLs."
       },
       {
-        "question": "Is Markdown to Text really free? Are there any hidden charges?",
-        "answer": "Yes, Markdown to Text is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the stripping happen as I type?",
+        "answer": "Yes, the plain-text pane mirrors the editor, and a stats bar reports input characters, output words and the percentage of markup saved."
       },
       {
-        "question": "Do I need to create an account or sign up to use Markdown to Text?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Markdown to Text on mobile devices or tablets?",
-        "answer": "Yes, Markdown to Text works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can it clean up content pasted from an AI chat?",
+        "answer": "That is the common use case: code fences, blockquote markers, HTML tags and repeated blank lines are stripped, leaving readable plain prose."
       },
       {
         "question": "What happens to the Markdown I paste for stripping?",
@@ -16021,20 +15525,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Exam Marks Needed Calculator do?",
-        "answer": "Exam Marks Needed Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the marks-needed calculator weight internals against the final exam?",
+        "answer": "It adds your internals maximum and the exam maximum to get the total, then solves for the exam score that lifts the combined total to the target percentage."
       },
       {
-        "question": "Is Exam Marks Needed Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Exam Marks Needed Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What if I have already secured more than the target from internals alone?",
+        "answer": "The requirement floors at zero marks, and the percentage badge follows, because the target is already covered."
       },
       {
-        "question": "Do I need to create an account or sign up to use Exam Marks Needed Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Exam Marks Needed Calculator on mobile devices or tablets?",
-        "answer": "Yes, Exam Marks Needed Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why is the needed score rounded up?",
+        "answer": "Rounding up guarantees the target percentage is reached; rounding down could leave you a fraction short, so the display shows a whole number."
       },
       {
         "question": "Can my internal marks and target score be traced back to me?",
@@ -16355,20 +15855,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Merge PDF do?",
-        "answer": "Merge PDF lets you process PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I merge only certain pages from one of the files?",
+        "answer": "Yes. Each file has an optional page range that accepts patterns such as 1-3, 5, and only those pages are copied into the combined document."
       },
       {
-        "question": "Is Merge PDF really free? Are there any hidden charges?",
-        "answer": "Yes, Merge PDF is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if two ranges select the same page?",
+        "answer": "Duplicates are removed when the chosen pages are copied, so a page will not be repeated in the merged output because two ranges overlapped."
       },
       {
-        "question": "Do I need to create an account or sign up to use Merge PDF?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Merge PDF on mobile devices or tablets?",
-        "answer": "Yes, Merge PDF works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I change which file comes first?",
+        "answer": "Use the arrow controls to move files up or down the queue. Each row shows the file size and detected page count so you can confirm the order before merging."
       },
       {
         "question": "What happens to my documents when I press Merge PDFs?",
@@ -16414,20 +15910,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Meta Tag Generator do?",
-        "answer": "Meta Tag Generator lets you generate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the generated block include Open Graph tags by default?",
+        "answer": "No, the Open Graph block is optional. Enable it to add og:title, og:description, og:image and og:url on top of the title, description and keywords tags."
       },
       {
-        "question": "Is Meta Tag Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Meta Tag Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What shows up if I only fill in the title?",
+        "answer": "Blank fields are omitted from the output, so the markup assembles live from whatever is filled in, and the result area stays hidden until at least one field has content."
       },
       {
-        "question": "Do I need to create an account or sign up to use Meta Tag Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Meta Tag Generator on mobile devices or tablets?",
-        "answer": "Yes, Meta Tag Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where does the finished tag block go?",
+        "answer": "The copy button puts the complete block on your clipboard for pasting into your page's head section; it includes a title tag and a meta description tag."
       },
       {
         "question": "Does the generator fetch my page to test the tags?",
@@ -16473,20 +15965,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Midjourney Prompt Builder do?",
-        "answer": "Midjourney Prompt Builder lets you process AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the Midjourney prompt builder combine into one command?",
+        "answer": "A subject line merges with art style, lighting, and camera lens drop-downs into a single /imagine prompt. Excluded terms are appended as --no parameters."
       },
       {
-        "question": "Is Midjourney Prompt Builder really free? Are there any hidden charges?",
-        "answer": "Yes, Midjourney Prompt Builder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which Midjourney parameters can I add from the interface?",
+        "answer": "Aspect ratio flags cover 16:9, 1:1, 9:16, 4:5, 2:3, and 3:2, and the version selector writes v 6.0, 5.2, 5.1, or niji 5/6. Style raw and tile toggles add their flags."
       },
       {
-        "question": "Do I need to create an account or sign up to use Midjourney Prompt Builder?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Midjourney Prompt Builder on mobile devices or tablets?",
-        "answer": "Yes, Midjourney Prompt Builder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When do the stylize, chaos, and weird sliders affect the prompt?",
+        "answer": "They append their flags only when moved off the defaults, so untouched sliders leave the command clean. The compiled output is ready to paste into Midjourney."
       },
       {
         "question": "Does the Midjourney prompt I assemble get sent anywhere before I copy it?",
@@ -16587,20 +16075,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Modify MP3 File do?",
-        "answer": "Modify MP3 File lets you download audio files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your audio files never leave your computer, there is no file size limit, and results are instant."
+        "question": "What input does Modify MP3 File actually work from?",
+        "answer": "It starts from a TikTok video link rather than a local audio file, and the link is validated before any conversion attempt."
       },
       {
-        "question": "Is Modify MP3 File really free? Are there any hidden charges?",
-        "answer": "Yes, Modify MP3 File is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which output qualities can I choose?",
+        "answer": "The quality picker offers 128, 192, 256, and 320kbps targets, each with a one-line trade-off note such as smaller file or premium quality."
       },
       {
-        "question": "Do I need to create an account or sign up to use Modify MP3 File?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your audio files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Modify MP3 File on mobile devices or tablets?",
-        "answer": "Yes, Modify MP3 File works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What appears on the result panel after a successful run?",
+        "answer": "The panel shows title, author, duration, and the post's music credit. A details grid restates input, output, bitrate, and file size, and Download MP3 opens the audio URL in a new tab."
       },
       {
         "question": "Does this tool trim or split an MP3 file I upload?",
@@ -16646,20 +16130,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Mortgage Calculator do?",
-        "answer": "Mortgage Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the monthly mortgage figure include property tax and insurance?",
+        "answer": "No, it covers principal and interest only. Add property tax, homeowners insurance and HOA dues to get your full monthly housing cost."
       },
       {
-        "question": "Is Mortgage Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Mortgage Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is the total interest figure calculated?",
+        "answer": "The monthly payment is multiplied by the number of months in the term, and the loan amount is subtracted from that total."
       },
       {
-        "question": "Do I need to create an account or sign up to use Mortgage Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Mortgage Calculator on mobile devices or tablets?",
-        "answer": "Yes, Mortgage Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What scenario do the default numbers model?",
+        "answer": "A $300,000 home with 20% down at 6.5% over 30 years. Edit any field to test your own scenario."
       },
       {
         "question": "Can anyone see my home price and down payment?",
@@ -16705,20 +16185,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does MP3 From Tiktok do?",
-        "answer": "MP3 From Tiktok lets you download audio files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your audio files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which TikTok link formats does the MP3 extractor accept?",
+        "answer": "It supports full tiktok.com links and the shortened vm.tiktok.com share form. Failed lookups show a clear error so you can retry with another link."
       },
       {
-        "question": "Is MP3 From Tiktok really free? Are there any hidden charges?",
-        "answer": "Yes, MP3 From Tiktok is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are the returned MP3 options labeled?",
+        "answer": "Each option lists its quality label, file size, and a 128kbps MP3 tag. An Audio Only badge distinguishes the track from full-video media."
       },
       {
-        "question": "Do I need to create an account or sign up to use MP3 From Tiktok?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your audio files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use MP3 From Tiktok on mobile devices or tablets?",
-        "answer": "Yes, MP3 From Tiktok works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will I see the original sound credit before downloading?",
+        "answer": "Yes, the music credit from the post is displayed alongside the download choices, and every download opens in a new tab."
       },
       {
         "question": "Do downloaded sounds come through SopKit's servers?",
@@ -16764,20 +16240,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does MP4 To MP3 do?",
-        "answer": "MP4 To MP3 lets you download audio files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your audio files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does MP4 to MP3 convert local video files from my device?",
+        "answer": "No, it works from TikTok video links rather than local MP4 uploads. Conversion starts only after the pasted URL passes a tiktok.com check."
       },
       {
-        "question": "Is MP4 To MP3 really free? Are there any hidden charges?",
-        "answer": "Yes, MP4 To MP3 is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the result card show for a converted TikTok video?",
+        "answer": "It previews the source thumbnail with the track title and artist, plus a quality badge and download action. 128, 192, 256, or 320kbps tiers can be picked beforehand."
       },
       {
-        "question": "Do I need to create an account or sign up to use MP4 To MP3?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your audio files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use MP4 To MP3 on mobile devices or tablets?",
-        "answer": "Yes, MP4 To MP3 works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where does the audio file go when I press download?",
+        "answer": "Download MP3 opens the resolved audio file in a new tab, where your browser saves it. Link resolution itself runs through SopKit's server proxy before the file is fetched."
       },
       {
         "question": "Can I upload an MP4 file instead of pasting a link?",
@@ -16878,20 +16350,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does NEET Photo Resizer do?",
-        "answer": "NEET Photo Resizer lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What size does the NEET photo preset open with?",
+        "answer": "The photo canvas opens at 480 x 640 px with a 10KB to 200KB accepted range. The signature side uses 350 x 150 px and a tighter 4KB to 30KB window."
       },
       {
-        "question": "Is NEET Photo Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, NEET Photo Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I override the NEET dimensions when my notification differs?",
+        "answer": "Yes, both the pixel dimensions and the KB window stay editable, and the preset values refresh only when you switch photo or signature tabs. Reprocess applies your changes."
       },
       {
-        "question": "Do I need to create an account or sign up to use NEET Photo Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use NEET Photo Resizer on mobile devices or tablets?",
-        "answer": "Yes, NEET Photo Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the NEET tool warn me before I download a non-compliant file?",
+        "answer": "A live badge reports compliant or size mismatch against the current limits before download. The exported JPEG carries the exam name in the filename for easy sorting."
       },
       {
         "question": "Are NEET application photos stored after I compress them?",
@@ -16937,20 +16405,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does NEET Photo & Signature Resizer do?",
-        "answer": "NEET Photo & Signature Resizer lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Do the photo and signature tabs share one preset in this NEET tool?",
+        "answer": "No, photo mode opens on a 480 x 640 px portrait canvas and signature mode drops to 350 x 150 px with a 4KB to 30KB allowance. Switching tabs reloads the matching values."
       },
       {
-        "question": "Is NEET Photo & Signature Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, NEET Photo & Signature Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the preview panel report after compression?",
+        "answer": "It prints the produced pixel dimensions beside the achieved file size. If either is off, edit the KB floor or ceiling fields and reprocess."
       },
       {
-        "question": "Do I need to create an account or sign up to use NEET Photo & Signature Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use NEET Photo & Signature Resizer on mobile devices or tablets?",
-        "answer": "Yes, NEET Photo & Signature Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I clear an upload and start over in this NEET resizer?",
+        "answer": "The remove control clears the preview, output, and file details in one click. A fresh image can then be dropped straight into the zone."
       },
       {
         "question": "Is my NEET photo or signature transmitted when I compress it?",
@@ -17169,20 +16633,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Number to Word Converter do?",
-        "answer": "Number to Word Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is the largest number this word converter can spell?",
+        "answer": "Values up to 999,999,999 are supported; anything larger returns a number too large notice instead of words."
       },
       {
-        "question": "Is Number to Word Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Number to Word Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does it write out rupees and paise for cheques?",
+        "answer": "It spells the whole number you type only, without currency words, so add the rupee or paise wording yourself."
       },
       {
-        "question": "Do I need to create an account or sign up to use Number to Word Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Number to Word Converter on mobile devices or tablets?",
-        "answer": "Yes, Number to Word Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What appears while I type?",
+        "answer": "The spelled-out words update automatically under the input; non-numeric input is ignored and leaves the result blank."
       },
       {
         "question": "Where is my number turned into words?",
@@ -17228,20 +16688,16 @@ The hex string "48 65 6C 6C 6F" decodes directly to "Hello". This tool accepts h
     },
     "faqs": [
       {
-        "question": "What exactly does Number to Words Converter do?",
-        "answer": "Number to Words Converter lets you convert numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How are decimal values such as 12.7 handled by the number to words converter?",
+        "answer": "The input is parsed as an integer, so 12.7 is read as twelve and the decimal part is ignored. Convert paise or cents separately if needed."
       },
       {
-        "question": "Is Number to Words Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Number to Words Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does it use lakh and crore wording?",
+        "answer": "No. Words are generated with thousand and million grouping, so 150,000 reads as one hundred fifty thousand."
       },
       {
-        "question": "Do I need to create an account or sign up to use Number to Words Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Number to Words Converter on mobile devices or tablets?",
-        "answer": "Yes, Number to Words Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the converter output for negative numbers?",
+        "answer": "Negative values are prefixed with the word minus, for example -45 reads as minus forty five."
       },
       {
         "question": "Are the digits I type transmitted to a server to be spelled out?",
@@ -17592,20 +17048,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Open Graph Checker do?",
-        "answer": "Open Graph Checker lets you validate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What can this checker confirm about my og: tags?",
+        "answer": "Whether the URL resolves and returns HTML containing the Open Graph declarations. How a network actually renders the preview is decided by that platform, not by this check."
       },
       {
-        "question": "Is Open Graph Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Open Graph Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do the probes use my own connection or SopKit's server?",
+        "answer": "Both the HEAD chain and the text fetch pass through the same-origin safe-http route, a server-side fetch with host restrictions, so the page request does not come from your device."
       },
       {
-        "question": "Do I need to create an account or sign up to use Open Graph Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Open Graph Checker on mobile devices or tablets?",
-        "answer": "Yes, Open Graph Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How is the response presented?",
+        "answer": "The redirect chain shows whether the link resolves before sharing, and the text fetch returns the opening HTML where og: tags are declared, kept in a read-only output box."
       },
       {
         "question": "Is the social markup SopKit reads stored on your side?",
@@ -17651,20 +17103,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Open Graph Generator do?",
-        "answer": "Open Graph Generator lets you generate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which Open Graph tags does it output?",
+        "answer": "Five tags in one block: og:title, og:description, og:image, og:url and og:type, mapped from the four input fields plus the type selector."
       },
       {
-        "question": "Is Open Graph Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Open Graph Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What should I put in the Type field?",
+        "answer": "It defaults to website and accepts values like article, so use article for blog posts and website for general pages."
       },
       {
-        "question": "Do I need to create an account or sign up to use Open Graph Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Open Graph Generator on mobile devices or tablets?",
-        "answer": "Yes, Open Graph Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is there a generate button, or does it update as I type?",
+        "answer": "The snippet updates on every keystroke with no generate step, and the placeholder text in each field shows the expected value."
       },
       {
         "question": "Does the preview fetch the page the tags describe?",
@@ -17930,20 +17378,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Paint Calculator do?",
-        "answer": "Paint Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the paint calculator treat doors and windows?",
+        "answer": "Each door subtracts 21 square feet and each window 12 square feet from the wall area, based on the counts you provide."
       },
       {
-        "question": "Is Paint Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Paint Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What coverage assumption is used per litre?",
+        "answer": "One litre is assumed to cover about 90 square feet per coat, and the result multiplies that by the number of coats selected."
       },
       {
-        "question": "Do I need to create an account or sign up to use Paint Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Paint Calculator on mobile devices or tablets?",
-        "answer": "Yes, Paint Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the estimate include ceiling paint?",
+        "answer": "No. The estimate covers wall area only, worked out from the room perimeter times height, so buy a little extra for touch-ups."
       },
       {
         "question": "Who can see my room sizes and paint estimates?",
@@ -17989,20 +17433,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PAN Card Photo Resizer do?",
-        "answer": "PAN Card Photo Resizer lets you edit exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What are the PAN card photo and signature targets?",
+        "answer": "The photo tab targets 213 x 213 px with a file under 50KB, and the signature tab targets 400 x 200 px under a 20KB cap. The rules box lists the portal's stated DPI, centimeter, and format expectations."
       },
       {
-        "question": "Is PAN Card Photo Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, PAN Card Photo Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the PAN resizer leave headroom below the size limits?",
+        "answer": "Yes, the quality search stops a few KB short of the limit so the saved JPEG stays inside it. Mode tabs swap the canvas size, KB cap, and download suffix in one click."
       },
       {
-        "question": "Do I need to create an account or sign up to use PAN Card Photo Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PAN Card Photo Resizer on mobile devices or tablets?",
-        "answer": "Yes, PAN Card Photo Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What background goes behind the PAN photo crop?",
+        "answer": "A white background fill sits behind the center-cropped photo or signature scan. That suits the light background the PAN portal expects."
       },
       {
         "question": "Is it risky to load a PAN card photo or signature scan here?",
@@ -18103,20 +17543,20 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Passport Photo Maker India do?",
-        "answer": "Passport Photo Maker India lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which passport photo sizes can this tool produce for Indian forms?",
+        "answer": "Two size presets cover 3.5 x 4.5 cm at 350 x 450 px and 2 x 2 inches at 413 x 413 px. Each can be exported as a single photo or as a tiled sheet."
       },
       {
-        "question": "Is Passport Photo Maker India really free? Are there any hidden charges?",
-        "answer": "Yes, Passport Photo Maker India is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do the A4 and 4 x 6 print grids work?",
+        "answer": "Print layouts include a single photo, an A4 grid rendering at 1240 x 1754 px, or a 4 x 6 inch grid at 900 x 600 px. Print a sheet and cut the photos apart."
       },
       {
-        "question": "Do I need to create an account or sign up to use Passport Photo Maker India?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
+        "question": "Can I change the background color behind my passport photo?",
+        "answer": "Background replacement offers the original, solid white, light sky blue, or light grey. Drag to reposition, zoom from 20% to 500%, and rotate in 90-degree steps, or reset to start again."
       },
       {
-        "question": "Can I use Passport Photo Maker India on mobile devices or tablets?",
-        "answer": "Yes, Passport Photo Maker India works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I line my face up inside the photo frame?",
+        "answer": "An oval head-alignment guide overlays the crop area while you frame the portrait. Use it with the zoom and rotate controls so the head sits straight in the final print."
       },
       {
         "question": "Does the portrait I use for passport sheets get uploaded or printed remotely?",
@@ -18162,20 +17602,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Passport Photo Maker India do?",
-        "answer": "Passport Photo Maker India lets you generate images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which photo presets does the maker support?",
+        "answer": "Preset sizes cover the 3.5 by 4.5 cm and 2 by 2 inch photo standards, with zoom and 90 degree rotation helping frame the face inside a head-guide oval."
       },
       {
-        "question": "Is Passport Photo Maker India really free? Are there any hidden charges?",
-        "answer": "Yes, Passport Photo Maker India is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I meet a background colour requirement?",
+        "answer": "Backgrounds can stay original or switch to white, light sky blue or light grey to match common application rules."
       },
       {
-        "question": "Do I need to create an account or sign up to use Passport Photo Maker India?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Passport Photo Maker India on mobile devices or tablets?",
-        "answer": "Yes, Passport Photo Maker India works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I print a sheet of passport copies?",
+        "answer": "Printable sheets fit 35 copies on A4 or 8 copies on 4 by 6 inch paper, cut-line borders are drawn around each copy, and the single photo saves as a high-quality JPEG."
       },
       {
         "question": "Is my passport photo uploaded while it is being prepared?",
@@ -18276,20 +17712,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Password Strength Checker do?",
-        "answer": "Password Strength Checker lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the score check whether my password has appeared in a breach?",
+        "answer": "No. Scoring is pattern-based and happens locally; it uses length, character classes, common patterns like qwerty and repeats, but it does not query any leaked-password database."
       },
       {
-        "question": "Is Password Strength Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Password Strength Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why do 12 and 16 characters matter so much?",
+        "answer": "Extra length bonuses kick in at 12 and 16 characters on top of the mixed-case, digit and symbol scoring, because length is what makes brute-force guessing expensive."
       },
       {
-        "question": "Do I need to create an account or sign up to use Password Strength Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Password Strength Checker on mobile devices or tablets?",
-        "answer": "Yes, Password Strength Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why did a password containing a common word lose 30 points?",
+        "answer": "Fifteen common patterns such as qwerty and iloveyou subtract 30 points, and triple repeats like aaa cost 10 more, regardless of the other character classes present."
       },
       {
         "question": "I typed my real password — where did it go?",
@@ -18335,20 +17767,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Payment Reminder Generator do?",
-        "answer": "Payment Reminder Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is the difference between the two payment reminders?",
+        "answer": "One is a friendly nudge in a warm, supportive tone; the other is a firmer escalated notice that warns of terms interruption. Both carry your client name, invoice ID, and amount."
       },
       {
-        "question": "Is Payment Reminder Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Payment Reminder Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where do I paste the generated payment reminder?",
+        "answer": "Copy either message and drop it into email, chat, or a client portal. Rerun with updated details for each stage of your follow-up sequence."
       },
       {
-        "question": "Do I need to create an account or sign up to use Payment Reminder Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Payment Reminder Generator on mobile devices or tablets?",
-        "answer": "Yes, Payment Reminder Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What loads if I generate before filling in the fields?",
+        "answer": "Sample details fill in when the fields are empty so the pattern is clear. Replace them with your real invoice data before sending."
       },
       {
         "question": "Do the client and invoice details I enter for reminders get saved?",
@@ -18449,20 +17877,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Compressor do?",
-        "answer": "PDF Compressor lets you compress PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does compressing keep my text selectable and searchable?",
+        "answer": "No. Each page is rebuilt as a JPEG image, so text becomes part of the picture and can no longer be selected, searched or copied, though the layout stays visually the same."
       },
       {
-        "question": "Is PDF Compressor really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Compressor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which preset keeps the best print quality?",
+        "answer": "Low keeps 85 percent image quality at full resolution. Recommended drops to 70 percent at 75 percent scale, and Extreme trades far more quality for the smallest file."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Compressor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Compressor on mobile devices or tablets?",
-        "answer": "Yes, PDF Compressor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why did compression fail with a message about password protection?",
+        "answer": "Encrypted or restricted documents cannot be rendered for rebuilding. Remove the password with the PDF Unlocker first, then run the compressed copy through this tool."
       },
       {
         "question": "Can anyone at SopKit see the PDF I compress here?",
@@ -18508,20 +17932,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Compressor Under 200KB do?",
-        "answer": "PDF Compressor Under 200KB lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the PDF compressor get files under 200KB?",
+        "answer": "It re-saves the document with compressed object streams and clears title, author, subject, keywords, creator, and producer metadata. Page content survives because compression targets storage streams, not rendering."
       },
       {
-        "question": "Is PDF Compressor Under 200KB really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Compressor Under 200KB is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What if my PDF is still above 200KB after compression?",
+        "answer": "The limit badge stays red and the tool suggests converting pages to JPG and recompiling them through the photo compressor. The achieved size is always shown next to the target."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Compressor Under 200KB?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Compressor Under 200KB on mobile devices or tablets?",
-        "answer": "Yes, PDF Compressor Under 200KB works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I tell whether a PDF was already optimized?",
+        "answer": "Yes, already-optimized files produce a notice instead of a false reduction claim. Before and after KB figures appear side by side with the 200KB compliance state."
       },
       {
         "question": "Does compressing a PDF here upload its contents anywhere?",
@@ -18567,20 +17987,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Editor do?",
-        "answer": "PDF Editor lets you edit PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I change the original text that is already in my PDF?",
+        "answer": "No. The editor adds new text boxes and annotations on top of the page; the original wording, fonts and images stay untouched in the saved copy."
       },
       {
-        "question": "Is PDF Editor really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Editor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I fix a text box I placed in the wrong spot?",
+        "answer": "Double-click the existing annotation to retype its content, or remove it from the annotation list with the delete control and place a fresh box at the right spot."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Editor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Editor on mobile devices or tablets?",
-        "answer": "Yes, PDF Editor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What ink colors and font sizes can I annotate with?",
+        "answer": "Black, blue or red text at sizes from 10 px to 60 px. The annotation list tracks the page and size of each box, and Save writes everything into a file ending in _annotated.pdf."
       },
       {
         "question": "Do my annotations exist anywhere outside this browser tab?",
@@ -18626,20 +18042,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Grayscale do?",
-        "answer": "PDF Grayscale lets you convert PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is each pixel converted to gray?",
+        "answer": "With the standard luminance formula: 0.299 red plus 0.587 green plus 0.114 blue. Pages are rendered at 1.5x scale so small text stays legible in print."
       },
       {
-        "question": "Is PDF Grayscale really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Grayscale is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Will the grayscale file still have selectable text?",
+        "answer": "No. Pages are re-saved as JPEG images at 85 percent quality, so the text becomes part of the image, and the download is named grayscale-<original name>.pdf."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Grayscale?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Grayscale on mobile devices or tablets?",
-        "answer": "Yes, PDF Grayscale works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I convert only a few pages to grayscale?",
+        "answer": "The conversion runs across every page in the file. If you need only some pages changed, split or extract the pages first, convert them, then merge the result back."
       },
       {
         "question": "Does the grayscale pass upload my document?",
@@ -18685,20 +18097,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Merger do?",
-        "answer": "PDF Merger lets you process PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why is the Merge button greyed out after adding one file?",
+        "answer": "Merging stays disabled until two or more documents are in the queue, since a single file has nothing to join; add another PDF and the button becomes active."
       },
       {
-        "question": "Is PDF Merger really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Merger is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if my range includes a number past the end of a file?",
+        "answer": "Out-of-range page numbers are skipped rather than breaking the job, so the rest of your selection still merges; double-check the numbered queue afterward."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Merger?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Merger on mobile devices or tablets?",
-        "answer": "Yes, PDF Merger works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I drop a file from the merge without starting over?",
+        "answer": "Click the X on that row. The remaining files keep their order, and the queue stays numbered so you can confirm the final page sequence before exporting."
       },
       {
         "question": "Where do my PDFs go during the merge?",
@@ -18744,20 +18152,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Metadata Editor do?",
-        "answer": "PDF Metadata Editor lets you process PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which document fields can I change?",
+        "answer": "Title, Author, Subject, Keywords, Creator and Producer. Change any field and save it straight back into the document, and the file size in MB shows next to the loaded file name."
       },
       {
-        "question": "Is PDF Metadata Editor really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Metadata Editor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I clear identifying metadata entirely instead of overwriting it?",
+        "answer": "Use Strip All Tags: it empties every field to produce an anonymous copy. The saved file downloads with an _edited suffix and reloads in the panel."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Metadata Editor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Metadata Editor on mobile devices or tablets?",
-        "answer": "Yes, PDF Metadata Editor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How should I write the Keywords field?",
+        "answer": "As a comma-separated list, for example invoices, templates, accounting; that mirrors how most readers display document keywords."
       },
       {
         "question": "Do the metadata values I enter get logged somewhere?",
@@ -18803,20 +18207,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Page Numbers Adder do?",
-        "answer": "PDF Page Numbers Adder lets you process PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can numbering start at a value other than one?",
+        "answer": "Yes. The start value can be any number, which suits documents that continue from a previous file or skip a cover page."
       },
       {
-        "question": "Is PDF Page Numbers Adder really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Page Numbers Adder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I include the total page count in the stamp?",
+        "answer": "Use the placeholders in the format box: {page} for the current number and {total} for the document's page count, so you can emit Page 3 of 12 style stamps."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Page Numbers Adder?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Page Numbers Adder on mobile devices or tablets?",
-        "answer": "Yes, PDF Page Numbers Adder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which positions, colors and sizes are available?",
+        "answer": "Six placements cover the top and bottom of the page in three alignments each, with black, gray, blue, red or white ink at 6 pt to 28 pt in embedded Helvetica."
       },
       {
         "question": "Does numbering a PDF modify the file I started with?",
@@ -18862,20 +18262,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Password Protect do?",
-        "answer": "PDF Password Protect lets you process PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is the difference between the open password and the permission toggles?",
+        "answer": "The open password is required to view the file at all. The permission toggles separately control printing, copying, modifying and annotations, and a random owner password protects those flags."
       },
       {
-        "question": "Is PDF Password Protect really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Password Protect is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I allow printing but block copying or editing?",
+        "answer": "Yes, each permission is an independent toggle, so you can permit printing while denying copying, modifying and annotations in the same protected output."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Password Protect?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Password Protect on mobile devices or tablets?",
-        "answer": "Yes, PDF Password Protect works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if the file is already encrypted?",
+        "answer": "The tool reports that it may already be encrypted and suggests verifying the document is not password-protected, so unlock or decrypt it before applying new protection."
       },
       {
         "question": "Is the password I set transmitted or stored?",
@@ -18921,20 +18317,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Repair do?",
-        "answer": "PDF Repair lets you process PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can PDF Repair recover a file with badly damaged page content?",
+        "answer": "Rarely. The repair targets indexing and document structure rather than page content, so if a stream is too corrupted to recover, a failure message explains instead of producing a partial file."
       },
       {
-        "question": "Is PDF Repair really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Repair is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "It opened a file with damaged encryption. Will it open my locked PDFs?",
+        "answer": "The loader uses an ignore-encryption flag to read files whose encryption schema is damaged or incomplete. For documents locked on purpose, use the PDF Unlocker with the known password instead."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Repair?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Repair on mobile devices or tablets?",
-        "answer": "Yes, PDF Repair works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the Optimize Stream Formatting toggle change?",
+        "answer": "It controls whether the rebuilt document uses object streams. Leave it on for compact modern output, or turn it off if an older reader has trouble with object streams."
       },
       {
         "question": "What happens to the broken PDF I hand to the repair tool?",
@@ -18980,20 +18372,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Rotation do?",
-        "answer": "PDF Rotation lets you edit PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I rotate just one page that scanned upside down?",
+        "answer": "Yes. Quarter-turn buttons rotate the current page left or right, and the thumbnail shows the pending angle before you commit."
       },
       {
-        "question": "Is PDF Rotation really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Rotation is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does Rotate All do differently?",
+        "answer": "It applies a 90 degree clockwise or counter-clockwise turn to every page at once, which is the quick fix for a document scanned in the wrong orientation."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Rotation?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Rotation on mobile devices or tablets?",
-        "answer": "Yes, PDF Rotation works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does rotating pages re-render or reduce quality?",
+        "answer": "No. Save writes the rotation values back into the existing pages, so the content is not re-rendered, and the result downloads as <name>_rotated.pdf with refreshed previews."
       },
       {
         "question": "Does the rotation touch my original PDF file?",
@@ -19039,20 +18427,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Splitter do?",
-        "answer": "PDF Splitter lets you read PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is the difference between page ranges and equal parts mode?",
+        "answer": "Range mode cuts by patterns like 1-3, 8, 11-13 or extracts single pages, while equal parts mode caps each output at a chosen page count, ideal for splitting a long report into chunks."
       },
       {
-        "question": "Is PDF Splitter really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Splitter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if my range includes a page number that does not exist?",
+        "answer": "Pages outside the document are ignored during parsing; if that leaves nothing selected, the job stops with a No valid pages error rather than producing a broken file."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Splitter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start reading your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Splitter on mobile devices or tablets?",
-        "answer": "Yes, PDF Splitter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where are the split parts delivered?",
+        "answer": "Multi-file modes list every part with its own download link, and the source page count is validated as soon as the file loads so you can see what you are working with."
       },
       {
         "question": "Are the split parts stored on a SopKit server?",
@@ -19098,20 +18482,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF to Image do?",
-        "answer": "PDF to Image lets you convert PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I export only a few pages of a long PDF?",
+        "answer": "Yes. Every page starts ticked, so deselect the thumbnails you do not want, and Convert and Zip packages only the pages still selected."
       },
       {
-        "question": "Is PDF to Image really free? Are there any hidden charges?",
-        "answer": "Yes, PDF to Image is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What resolution should I choose for text-heavy pages?",
+        "answer": "The options are 150, 300 and 450 DPI. 300 DPI is the usual balance for readable text, and 450 DPI suits zooming into fine detail or very small print."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF to Image?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF to Image on mobile devices or tablets?",
-        "answer": "Yes, PDF to Image works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which output formats are supported?",
+        "answer": "PNG, standard JPG and optimized WebP. Pick PNG when you need transparency or lossless edges; WebP gives the smallest files for web use."
       },
       {
         "question": "Where are the page images encoded?",
@@ -19157,20 +18537,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF to JPG Converter do?",
-        "answer": "PDF to JPG Converter lets you convert PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "How are exported files named and bundled?",
+        "answer": "Each extracted file keeps its page number in the filename, and the ZIP archive is named after the source document with an _images suffix."
       },
       {
-        "question": "Is PDF to JPG Converter really free? Are there any hidden charges?",
-        "answer": "Yes, PDF to JPG Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "My JPEG pages look soft. What should I change?",
+        "answer": "Raise the resolution from 150 DPI to 300 or 450 DPI and re-export. The lowest setting is fine for on-screen thumbnails but can blur body text."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF to JPG Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF to JPG Converter on mobile devices or tablets?",
-        "answer": "Yes, PDF to JPG Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I export WebP or PNG instead of JPG?",
+        "answer": "Yes. Although the tool is named for JPG, the format menu offers PNG and WebP for the same page renders, so you can pick whichever suits the destination."
       },
       {
         "question": "Does the PDF leave my machine when it becomes JPG images?",
@@ -19216,20 +18592,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF to Word do?",
-        "answer": "PDF to Word lets you convert PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why is my Word file empty or missing most of the text?",
+        "answer": "The converter reads the PDF's text layer, so scanned or image-only pages come back empty. Those pages, along with rotated text boxes, are flagged as unsupported."
       },
       {
-        "question": "Is PDF to Word really free? Are there any hidden charges?",
-        "answer": "Yes, PDF to Word is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the conversion preserve my layout, images and tables?",
+        "answer": "It is text-first: each page becomes its own section of paragraphs built from the PDF text layer. Images and complex layout are not reproduced, so expect cleanup in Word."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF to Word?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF to Word on mobile devices or tablets?",
-        "answer": "Yes, PDF to Word works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the preview show before I download?",
+        "answer": "The opening 1,500 characters of recovered text, alongside a progress bar that follows extraction from page one; the download keeps your document name with a .docx extension."
       },
       {
         "question": "Is my PDF uploaded to convert it to Word?",
@@ -19275,20 +18647,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Tools do?",
-        "answer": "PDF Tools lets you compress PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is PDF Tools itself a converter, or a directory?",
+        "answer": "It is a hub page that routes you to every SopKit PDF utility, grouped into a Conversion Suite, Optimization and Editing shelves, and Structure and Security."
       },
       {
-        "question": "Is PDF Tools really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Tools is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which utility should I pick to remove a password?",
+        "answer": "PDF Unlocker sits under Structure and Security along with merge, split and rotate; compression, annotation, page numbers, watermarks and metadata editing live in the editing group."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Tools?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Tools on mobile devices or tablets?",
-        "answer": "Yes, PDF Tools works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I know what each card launches?",
+        "answer": "Every card carries a one-line summary and shows a Launch badge on hover, so you can scan the shelf and open the right tool without guessing."
       },
       {
         "question": "Why does this hub page not ask me to pick a file?",
@@ -19334,20 +18702,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Unlocker do?",
-        "answer": "PDF Unlocker lets you process PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can it open a PDF if I have forgotten the password?",
+        "answer": "No. The tool does not guess or crack keys; the correct document password is required, and an incorrect password fails with a clear message."
       },
       {
-        "question": "Is PDF Unlocker really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Unlocker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What gets removed from the unlocked copy?",
+        "answer": "The restriction flags that block copying, editing and similar actions once the password is entered, and the new file is offered as <name>_unlocked.pdf with a confirmation banner."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Unlocker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Unlocker on mobile devices or tablets?",
-        "answer": "Yes, PDF Unlocker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will the unlocked copy still be encrypted?",
+        "answer": "No. After the document loads with the correct password, the encryption flag is stripped and an unencrypted copy is saved, so anyone can open that new file."
       },
       {
         "question": "Is the password I type kept anywhere?",
@@ -19393,20 +18757,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PDF Watermark Creator do?",
-        "answer": "PDF Watermark Creator lets you generate PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I use a logo image instead of text?",
+        "answer": "Yes. Switch the watermark type to image and upload a PNG or JPG; text mode offers gray, black, red or blue ink and a size slider from 10 to 200."
       },
       {
-        "question": "Is PDF Watermark Creator really free? Are there any hidden charges?",
-        "answer": "Yes, PDF Watermark Creator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is the difference between centered and tiled?",
+        "answer": "Centered stamps one mark in the middle of each page, while the tiled grid repeats the mark across the page for stronger coverage against screenshots or forwarding."
       },
       {
-        "question": "Do I need to create an account or sign up to use PDF Watermark Creator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PDF Watermark Creator on mobile devices or tablets?",
-        "answer": "Yes, PDF Watermark Creator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I keep a watermark subtle but readable?",
+        "answer": "Start around 0.2 to 0.3 opacity with the 45 degree default rotation, then adjust: opacity runs from 0.05 to fully opaque and the rotation field takes any angle."
       },
       {
         "question": "Does the watermark image get uploaded to a SopKit server?",
@@ -19617,20 +18977,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Phishing URL Checker do?",
-        "answer": "Phishing URL Checker lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does a Looks safe verdict actually mean?",
+        "answer": "Only that none of the built-in signals matched. The risk score is built from local pattern checks, so an unreported phishing site can still pass until its patterns show up."
       },
       {
-        "question": "Is Phishing URL Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Phishing URL Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does it check domain age or any live threat feed?",
+        "answer": "No. There are no network calls: the check reads the URL text for raw IP hosts, @ symbols, extra hyphens, non-ASCII characters, brand-name mismatches and risky TLDs."
       },
       {
-        "question": "Do I need to create an account or sign up to use Phishing URL Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Phishing URL Checker on mobile devices or tablets?",
-        "answer": "Yes, Phishing URL Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which findings raise the risk score the most?",
+        "answer": "A high-value brand name like paypal or apple appearing in a hostname that is not the real domain adds 25 points; @ symbols add 20 and multiple protocols add 15."
       },
       {
         "question": "Does checking a suspicious link visit the page it points to?",
@@ -19676,20 +19032,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Photo Compressor Under 50KB do?",
-        "answer": "Photo Compressor Under 50KB lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I get an exam photo under 50KB without ruining the face detail?",
+        "answer": "Start with the recommended 800 px long edge, then step down to 600 px only if the JPEG still overshoots. Aspect ratio is preserved as the photo scales toward the cap."
       },
       {
-        "question": "Is Photo Compressor Under 50KB really free? Are there any hidden charges?",
-        "answer": "Yes, Photo Compressor Under 50KB is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I change the 50KB limit to a different target?",
+        "answer": "Yes, the Max KB Limit field is editable, and the output filename embeds the chosen value, such as photo_compressed_50kb.jpg."
       },
       {
-        "question": "Do I need to create an account or sign up to use Photo Compressor Under 50KB?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Photo Compressor Under 50KB on mobile devices or tablets?",
-        "answer": "Yes, Photo Compressor Under 50KB works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What is the difference between Resolution Resize and Original dimensions mode?",
+        "answer": "Resolution Resize caps the long edge at 1200, 800, or 600 px, while Original dimensions keeps full resolution and relies on JPEG quality alone to reach the limit."
       },
       {
         "question": "Can I compress a personal photo here without it being copied elsewhere?",
@@ -19735,20 +19087,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Photo Enhancer do?",
-        "answer": "Photo Enhancer lets you process images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which adjustments does the enhancer offer?",
+        "answer": "Brightness, contrast and saturation sliders stretch from 0 to 200, warmth shifts colour temperature from -100 to +100, and blur softens with a 0 to 10 pixel radius."
       },
       {
-        "question": "Is Photo Enhancer really free? Are there any hidden charges?",
-        "answer": "Yes, Photo Enhancer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is there a one-click way to improve a dull photo?",
+        "answer": "Auto Enhance applies a balanced preset in one click, and holding the compare control flashes back to the untouched original."
       },
       {
-        "question": "Do I need to create an account or sign up to use Photo Enhancer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Photo Enhancer on mobile devices or tablets?",
-        "answer": "Yes, Photo Enhancer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What quality do enhanced images export at?",
+        "answer": "Enhanced images export as JPEG at 0.9 quality, a good balance between file size and visible improvement."
       },
       {
         "question": "Do my photos get processed on a remote server during enhancement?",
@@ -19794,20 +19142,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Photo Name Date Editor do?",
-        "answer": "Photo Name Date Editor lets you process exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where does the name and date caption sit on the photo?",
+        "answer": "A white caption bar spans the photo bottom at 12 to 25 percent of its height, with a thin divider line above it. The output keeps the original image dimensions."
       },
       {
-        "question": "Is Photo Name Date Editor really free? Are there any hidden charges?",
-        "answer": "Yes, Photo Name Date Editor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is the date written in the caption?",
+        "answer": "The date is reformatted to DD/MM/YYYY and labelled DOB or DOP on the photo, covering either a date-of-birth or date-of-photo requirement."
       },
       {
-        "question": "Do I need to create an account or sign up to use Photo Name Date Editor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Photo Name Date Editor on mobile devices or tablets?",
-        "answer": "Yes, Photo Name Date Editor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I control the caption font size or letter case?",
+        "answer": "The font size slider ranges from 4 to 10 percent of the image height. The candidate name prints bold, centered, and uppercase unless you switch the uppercase toggle off."
       },
       {
         "question": "Is it safe to stamp a candidate's name and date on a photo here?",
@@ -19853,20 +19197,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PII Scrubber do?",
-        "answer": "PII Scrubber lets you process files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which identifiers can the scrubber redact, and what does it miss?",
+        "answer": "It matches six types by pattern: email, phone, SSN, IP address, 16-digit card numbers and ZIP codes. Names, addresses and other free-form personal details are not recognized."
       },
       {
-        "question": "Is PII Scrubber really free? Are there any hidden charges?",
-        "answer": "Yes, PII Scrubber is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I replace matches with my own label instead of [REDACTED]?",
+        "answer": "Yes. A custom replacement token field lets you choose the substitute, for example [EMAIL], [PHONE] or [CARD], before copying the scrubbed output."
       },
       {
-        "question": "Do I need to create an account or sign up to use PII Scrubber?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PII Scrubber on mobile devices or tablets?",
-        "answer": "Yes, PII Scrubber works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why was a phone number written as +1 (555) 123-4567 not redacted?",
+        "answer": "Phone matching expects 3-3-4 digit groups separated by dashes or dots, so other layouts can slip through. Check the detected-and-redacted list before sharing the text."
       },
       {
         "question": "What happens to the text after I scrub it?",
@@ -20241,20 +19581,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PNG to BMP Converter do?",
-        "answer": "PNG to BMP Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which format is active when I open the PNG converter?",
+        "answer": "PNG is still active as the default target; BMP (Raw Bitmap) is one of four formats on the output menu."
       },
       {
-        "question": "Is PNG to BMP Converter really free? Are there any hidden charges?",
-        "answer": "Yes, PNG to BMP Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I resize PNGs while converting them to bitmap?",
+        "answer": "Resize during conversion by filling the optional width and height fields, and the batch reports a status badge per file."
       },
       {
-        "question": "Do I need to create an account or sign up to use PNG to BMP Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PNG to BMP Converter on mobile devices or tablets?",
-        "answer": "Yes, PNG to BMP Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Do quality settings affect bitmap output?",
+        "answer": "Quality settings apply to lossy targets and are left untouched for bitmap work, which is lossless."
       },
       {
         "question": "Where does the pixel data live while my PNG is turned into a bitmap?",
@@ -20299,20 +19635,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PNG to GIF Converter do?",
-        "answer": "PNG to GIF Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which formats can the output menu produce?",
+        "answer": "Outputs run to PNG, JPEG, WebP or BMP, and the quality percentage is adjustable from 20 to 100 for lossy outputs."
       },
       {
-        "question": "Is PNG to GIF Converter really free? Are there any hidden charges?",
-        "answer": "Yes, PNG to GIF Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Will converting again redo files that are already finished?",
+        "answer": "No, the convert button processes only items that still need work, so completed rows are skipped on the next run."
       },
       {
-        "question": "Do I need to create an account or sign up to use PNG to GIF Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PNG to GIF Converter on mobile devices or tablets?",
-        "answer": "Yes, PNG to GIF Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I review results before downloading them?",
+        "answer": "Rows display a small preview beside each file's current status; click a row's download icon to save that file, or zip everything up."
       },
       {
         "question": "Is anything about my PNG collection shared with remote services?",
@@ -20357,20 +19689,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PNG to ICO Converter do?",
-        "answer": "PNG to ICO Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is pre-selected when the PNG converter loads?",
+        "answer": "PNG (Lossless) is already highlighted as the target, and the queue can hold several PNGs while you adjust the format settings."
       },
       {
-        "question": "Is PNG to ICO Converter really free? Are there any hidden charges?",
-        "answer": "Yes, PNG to ICO Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does transparency behave across different outputs?",
+        "answer": "Transparency stays intact for PNG output and is filled with white for JPEG output, which cannot store an alpha channel."
       },
       {
-        "question": "Do I need to create an account or sign up to use PNG to ICO Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PNG to ICO Converter on mobile devices or tablets?",
-        "answer": "Yes, PNG to ICO Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I clear files from the workspace?",
+        "answer": "One click clears the whole queue, or use the row X to remove single files as you go."
       },
       {
         "question": "Does making an icon from a PNG involve any file transfer?",
@@ -20415,20 +19743,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PNG to JPG Converter do?",
-        "answer": "PNG to JPG Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens to transparent areas during the PNG to JPEG swap?",
+        "answer": "Transparent pixels are flattened onto white so JPEG edges stay clean, since JPEG cannot store transparency."
       },
       {
-        "question": "Is PNG to JPG Converter really free? Are there any hidden charges?",
-        "answer": "Yes, PNG to JPG Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What quality do the JPEG copies default to?",
+        "answer": "PNG images swap for JPEG copies at a default quality of 90, shown live on the 20 to 100 slider."
       },
       {
-        "question": "Do I need to create an account or sign up to use PNG to JPG Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PNG to JPG Converter on mobile devices or tablets?",
-        "answer": "Yes, PNG to JPG Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I see the size savings for each converted file?",
+        "answer": "Original and converted byte sizes are shown side by side per file, and you can queue as many PNGs as you like in one pass."
       },
       {
         "question": "Do my transparent PNG files get uploaded while converting to JPG?",
@@ -20473,20 +19797,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does PNG to WebP Converter do?",
-        "answer": "PNG to WebP Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Will PNG transparency survive the WebP conversion?",
+        "answer": "Yes, transparency from the PNG survives into the WebP encode."
       },
       {
-        "question": "Is PNG to WebP Converter really free? Are there any hidden charges?",
-        "answer": "Yes, PNG to WebP Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the batch progress readout work?",
+        "answer": "Add a set of PNGs and watch the progress bar move through the queue; the size readout updates per file once its WebP is ready."
       },
       {
-        "question": "Do I need to create an account or sign up to use PNG to WebP Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use PNG to WebP Converter on mobile devices or tablets?",
-        "answer": "Yes, PNG to WebP Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What download options do I get after converting?",
+        "answer": "Download results right away or save a ZIP of the completed batch."
       },
       {
         "question": "Are my PNG graphics sent to a conversion server for WebP encoding?",
@@ -20531,20 +19851,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Poetry Generator do?",
-        "answer": "Poetry Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where do the verses come from: an AI model or a word bank?",
+        "answer": "Verses are assembled from fixed stanza templates with word banks of nature and emotion imagery, not an AI model. Themes run from gentle dawns and starlit skies to notes of hope and longing."
       },
       {
-        "question": "Is Poetry Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Poetry Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I copy a single stanza instead of the whole poem?",
+        "answer": "Yes, tap any verse to copy just that stanza onto your clipboard. Copy All grabs the entire piece when you want everything."
       },
       {
-        "question": "Do I need to create an account or sign up to use Poetry Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Poetry Generator on mobile devices or tablets?",
-        "answer": "Yes, Poetry Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What is the poetry generator useful for besides finished poems?",
+        "answer": "Treat it as a warm-up: reroll a few times during creative writing sessions or poetry practice and keep the lines that spark something."
       },
       {
         "question": "Does the poetry I generate get saved to an account or database?",
@@ -20755,20 +20071,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Privacy Policy Auditor do?",
-        "answer": "Privacy Policy Auditor lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does auto-detection decide which checkpoints are met?",
+        "answer": "It scans the pasted text for marker terms such as third party, retention and children, then ticks the matching boxes across twelve checkpoints. You can untick anything it gets wrong."
       },
       {
-        "question": "Is Privacy Policy Auditor really free? Are there any hidden charges?",
-        "answer": "Yes, Privacy Policy Auditor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why do some items stay unchecked after I run auto-detect?",
+        "answer": "Several checkpoints describe qualities keyword matching cannot judge, such as readable structure or genuine legal completeness, so those remain manual for you to confirm."
       },
       {
-        "question": "Do I need to create an account or sign up to use Privacy Policy Auditor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Privacy Policy Auditor on mobile devices or tablets?",
-        "answer": "Yes, Privacy Policy Auditor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What do the score and verdict bands represent?",
+        "answer": "The percentage is the share of the twelve items you confirmed, labeled comprehensive, needs improvement or incomplete, with a count of the items still remaining."
       },
       {
         "question": "Is my policy text compared against other companies' documents?",
@@ -20924,20 +20236,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Product Description Generator do?",
-        "answer": "Product Description Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many product descriptions come out of one run?",
+        "answer": "Two listing blurbs are written at once: an attention-grabbing hero version and a benefits-led one. Your product name slots straight into both drafts."
       },
       {
-        "question": "Is Product Description Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Product Description Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What angle does each product description take?",
+        "answer": "The first leans on premium materials and daily-versus-gifting appeal. The second stresses robust build quality and smart, space-saving layouts."
       },
       {
-        "question": "Do I need to create an account or sign up to use Product Description Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Product Description Generator on mobile devices or tablets?",
-        "answer": "Yes, Product Description Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What appears if I generate before typing a product name?",
+        "answer": "A default sample product loads so you can preview both styles first. Copy either draft with its own button, then trim it to your store's voice."
       },
       {
         "question": "What happens to the product name and notes I type here?",
@@ -20983,20 +20291,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Profit Margin Calculator do?",
-        "answer": "Profit Margin Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "What is the difference between the margin and markup percentages?",
+        "answer": "Margin divides profit by the selling price while markup divides the same profit by the cost, so markup is always the larger number."
       },
       {
-        "question": "Is Profit Margin Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Profit Margin Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can margin be negative with this calculator?",
+        "answer": "Yes. If the cost price exceeds the selling price, the profit, margin and markup all turn negative, flagging a loss per sale."
       },
       {
-        "question": "Do I need to create an account or sign up to use Profit Margin Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Profit Margin Calculator on mobile devices or tablets?",
-        "answer": "Yes, Profit Margin Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which figure should I use when pricing a product?",
+        "answer": "Margin shows the share of each sale you keep, while markup shows how much you add to cost. Pick based on whether your target is a revenue share or a cost uplift."
       },
       {
         "question": "Can my cost and pricing figures be seen?",
@@ -21042,20 +20346,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Property ROI Calculator do?",
-        "answer": "Property ROI Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why is appreciation left out of the property ROI figure?",
+        "answer": "The net return is deliberately based on rent minus expenses against price, because capital appreciation is unrealised until you actually sell."
       },
       {
-        "question": "Is Property ROI Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Property ROI Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is the difference between gross yield and net ROI?",
+        "answer": "Gross yield uses twelve months of rent against the purchase price, while net ROI subtracts annual expenses first, so it is always the more conservative number."
       },
       {
-        "question": "Do I need to create an account or sign up to use Property ROI Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Property ROI Calculator on mobile devices or tablets?",
-        "answer": "Yes, Property ROI Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What counts in the annual expenses field?",
+        "answer": "Combine everything you pay yearly such as maintenance, property tax, insurance and agency fees."
       },
       {
         "question": "Can my property price or rental income be traced?",
@@ -21101,20 +20401,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Protein Intake Calculator do?",
-        "answer": "Protein Intake Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do the two protein ranges shown mean?",
+        "answer": "The first spans 1.2 to 1.6 grams per kilogram for general fitness; the second spans 1.8 to 2.2 grams per kilogram for muscle-building goals."
       },
       {
-        "question": "Is Protein Intake Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Protein Intake Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the protein calculator factor in my activity level or diet?",
+        "answer": "No, body weight is the only input. Use the range that matches your training and adjust with a professional if you have medical needs."
       },
       {
-        "question": "Do I need to create an account or sign up to use Protein Intake Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Protein Intake Calculator on mobile devices or tablets?",
-        "answer": "Yes, Protein Intake Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Should I eat the higher end of the hypertrophy range?",
+        "answer": "The ranges are guides, not prescriptions. People new to training often get results at the lower end, while advanced trainees may target the upper end."
       },
       {
         "question": "Do you record my body weight for protein targets?",
@@ -21379,20 +20675,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does QR Code Reader do?",
-        "answer": "QR Code Reader lets you encode/decode content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can the QR reader scan a code with my phone camera?",
+        "answer": "No live camera scanning is built into this reader; decoding runs on uploaded images. Take a screenshot or photo of the QR code, then drop the PNG, JPG, or WebP file into the page."
       },
       {
-        "question": "Is QR Code Reader really free? Are there any hidden charges?",
-        "answer": "Yes, QR Code Reader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict codecs after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens once a QR code is decoded?",
+        "answer": "The decoded text appears in a large monospace readout that is easy to check and copy. Links get an open-in-new-tab button so you can jump straight to their destination."
       },
       {
-        "question": "Do I need to create an account or sign up to use QR Code Reader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start encode/decodeing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use QR Code Reader on mobile devices or tablets?",
-        "answer": "Yes, QR Code Reader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where is the QR scan history kept?",
+        "answer": "The ten most recent scans sit in a history sidebar and are saved locally in the browser, not on a server. A clear button empties the history whenever you want."
       },
       {
         "question": "What happens to the QR photo I scan?",
@@ -21438,20 +20730,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Railway Exam Photo Resizer do?",
-        "answer": "Railway Exam Photo Resizer lets you edit exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What KB ranges does the railway preset use for photo and signature?",
+        "answer": "The photo preset pairs 350 x 450 px with a 20KB to 50KB window, while the signature expects 350 x 150 px between 10KB and 20KB. Each tab shows its own guidance."
       },
       {
-        "question": "Is Railway Exam Photo Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, Railway Exam Photo Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "When does the green compliance badge appear on a railway upload?",
+        "answer": "Only when the output sits within both the minimum and maximum KB bounds for the active tab. If the file refuses to shrink below the maximum, the badge stays in the mismatch state."
       },
       {
-        "question": "Do I need to create an account or sign up to use Railway Exam Photo Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Railway Exam Photo Resizer on mobile devices or tablets?",
-        "answer": "Yes, Railway Exam Photo Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I adjust the railway dimensions if my recruitment notice differs?",
+        "answer": "Yes, each tab displays preset numbers that can be edited, and Reprocess reruns the quality search. The Remove button clears the upload and resets the output without a reload."
       },
       {
         "question": "Are railway exam photos and signatures safe to process here?",
@@ -21607,20 +20895,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Random Word Generator do?",
-        "answer": "Random Word Generator lets you generate text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I limit the random words to a part of speech?",
+        "answer": "Yes. Restrict the pool to nouns, verbs or adjectives, or draw from general vocabulary for a mixed batch."
       },
       {
-        "question": "Is Random Word Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Random Word Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How many words can I generate at once?",
+        "answer": "The slider covers 1 to 50 words per batch, and the regenerate control reshuffles the selection for a fresh set."
       },
       {
-        "question": "Do I need to create an account or sign up to use Random Word Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Random Word Generator on mobile devices or tablets?",
-        "answer": "Yes, Random Word Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "In what formats can I copy the batch?",
+        "answer": "Copy All produces a comma-separated string, while Download TXT writes each generated word on its own line."
       },
       {
         "question": "Are the words I generate linked to my session?",
@@ -21666,20 +20950,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Recurring Deposit (RD) Calculator do?",
-        "answer": "Recurring Deposit (RD) Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is RD interest calculated in this maturity estimate?",
+        "answer": "Instalments are compounded quarterly using the standard Indian bank recurring-deposit formula, and the result is rounded to the nearest rupee."
       },
       {
-        "question": "Is Recurring Deposit (RD) Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Recurring Deposit (RD) Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why is nothing displayed when I enter a zero rate?",
+        "answer": "The calculator requires a positive deposit, interest rate and tenure; a zero in any of them leaves the results empty rather than showing a figure."
       },
       {
-        "question": "Do I need to create an account or sign up to use Recurring Deposit (RD) Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Recurring Deposit (RD) Calculator on mobile devices or tablets?",
-        "answer": "Yes, Recurring Deposit (RD) Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the maturity value include taxes on the interest?",
+        "answer": "No, it is the pre-tax maturity figure. TDS on RD interest depends on your total interest income, so account for it separately."
       },
       {
         "question": "Does the RD calculator keep my deposit figures?",
@@ -22055,20 +21335,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Refund Policy Generator do?",
-        "answer": "Refund Policy Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does a generated refund policy actually cover?",
+        "answer": "It drafts a 30-day return window, condition requirements around original packaging and item state, the start-a-return step, who covers return shipping, and a damaged-item exception."
       },
       {
-        "question": "Is Refund Policy Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Refund Policy Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What do I need to fill in before generating the policy?",
+        "answer": "Your store name and support email are inserted at the top of the policy. Copy the draft and adapt the window, exclusions, and process to your own terms."
       },
       {
-        "question": "Do I need to create an account or sign up to use Refund Policy Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Refund Policy Generator on mobile devices or tablets?",
-        "answer": "Yes, Refund Policy Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I publish the generated refund policy directly?",
+        "answer": "Treat it as a starting point rather than legal advice: check that the window, exclusions, and shipping rules match your actual practice, and have it reviewed before publishing."
       },
       {
         "question": "Is the store name and support email I enter for the policy saved?",
@@ -22114,20 +21390,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Remove Duplicate Lines do?",
-        "answer": "Remove Duplicate Lines lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the duplicate remover keep the first occurrence of each line?",
+        "answer": "Yes, original order is preserved and the first time a line appears is the one that survives."
       },
       {
-        "question": "Is Remove Duplicate Lines really free? Are there any hidden charges?",
-        "answer": "Yes, Remove Duplicate Lines is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are two entries that differ only in spacing treated?",
+        "answer": "With Trim Whitespace enabled they count as the same entry. Turning Case Sensitive off also merges Apple and apple."
       },
       {
-        "question": "Do I need to create an account or sign up to use Remove Duplicate Lines?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Remove Duplicate Lines on mobile devices or tablets?",
-        "answer": "Yes, Remove Duplicate Lines works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I see what was removed?",
+        "answer": "The statistics strip reports total lines, unique lines, duplicates removed and the reduction percentage after you run the removal."
       },
       {
         "question": "Are the lists I paste stored after deduplication?",
@@ -22173,20 +21445,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Remove Line Breaks do?",
-        "answer": "Remove Line Breaks lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What character replaces the line breaks when they are removed?",
+        "answer": "Every newline and carriage return becomes a single space, so hard-wrapped paragraphs rejoin into one continuous block."
       },
       {
-        "question": "Is Remove Line Breaks really free? Are there any hidden charges?",
-        "answer": "Yes, Remove Line Breaks is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I join lines with commas instead of spaces?",
+        "answer": "No, this tool always uses a space. Use the comma separator tool when you need the flattened text as a comma list."
       },
       {
-        "question": "Do I need to create an account or sign up to use Remove Line Breaks?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Remove Line Breaks on mobile devices or tablets?",
-        "answer": "Yes, Remove Line Breaks works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does it also clean up doubled spaces?",
+        "answer": "Yes, runs of spaces and tabs are squeezed to one space and the result is trimmed at both ends."
       },
       {
         "question": "What happens to the text I paste into the line-break remover?",
@@ -22232,20 +21500,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Remove Pages from PDF do?",
-        "answer": "Remove Pages from PDF lets you process PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I accidentally delete every page?",
+        "answer": "No. A guard rail blocks the action when all pages are marked for removal, so at least one page always survives the pass."
       },
       {
-        "question": "Is Remove Pages from PDF really free? Are there any hidden charges?",
-        "answer": "Yes, Remove Pages from PDF is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I delete pages 3 and 7 from a long report?",
+        "answer": "Click the two thumbnails to flag them, confirm with the Delete 2 Pages button, and the previews reload automatically so you can verify the result immediately."
       },
       {
-        "question": "Do I need to create an account or sign up to use Remove Pages from PDF?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Remove Pages from PDF on mobile devices or tablets?",
-        "answer": "Yes, Remove Pages from PDF works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is there an undo after saving?",
+        "answer": "There is no in-app undo; the flagged indexes are removed in one pass and a modified copy is written, so keep the original file until you have verified the download."
       },
       {
         "question": "Are the deleted pages recoverable after I download the new file?",
@@ -22291,20 +21555,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Rent Affordability Calculator do?",
-        "answer": "Rent Affordability Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do the three rent budgets represent?",
+        "answer": "A conservative 25% of income guideline, a moderate 30% budget that subtracts your existing debts, and an aggressive 40% stretch ceiling."
       },
       {
-        "question": "Is Rent Affordability Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Rent Affordability Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are my current debt payments taken into account?",
+        "answer": "They are subtracted only from the moderate 30% budget; the 25% and 40% figures are plain income percentages."
       },
       {
-        "question": "Do I need to create an account or sign up to use Rent Affordability Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Rent Affordability Calculator on mobile devices or tablets?",
-        "answer": "Yes, Rent Affordability Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens when the income field is left blank?",
+        "answer": "All three budgets show $0.00, since the calculation needs a positive income figure before it can size any rent band."
       },
       {
         "question": "Who sees my income and debt figures here?",
@@ -22412,20 +21672,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Required Marks Calculator do?",
-        "answer": "Required Marks Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "I entered a target class percentage. What is the calculator solving for?",
+        "answer": "It finds the exam score that makes your internals plus final paper reach the target percentage of the combined maximum, and rounds up."
       },
       {
-        "question": "Is Required Marks Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Required Marks Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the badge under the result tell me?",
+        "answer": "It converts the required marks into the minimum percentage you need on the final paper, so you can judge how demanding the target is."
       },
       {
-        "question": "Do I need to create an account or sign up to use Required Marks Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Required Marks Calculator on mobile devices or tablets?",
-        "answer": "Yes, Required Marks Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which inputs are needed for the calculation?",
+        "answer": "Four: internals scored, internals maximum weight, final exam maximum marks, and your target class percentage."
       },
       {
         "question": "Is it safe to enter my internal marks here?",
@@ -22526,20 +21782,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Resignation Letter Generator do?",
-        "answer": "Resignation Letter Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which resignation letter styles can I choose from?",
+        "answer": "Three templates cover the standard formal route, a polite-and-grateful version, and a short-notice letter. The chosen template blends your reason and dates into complete paragraphs."
       },
       {
-        "question": "Is Resignation Letter Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Resignation Letter Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What details does the resignation letter require?",
+        "answer": "Personal, company, and manager sections capture contacts, notice period, and last working day. Exit details such as designation and notice period appear in the subject and closing lines."
       },
       {
-        "question": "Do I need to create an account or sign up to use Resignation Letter Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Resignation Letter Generator on mobile devices or tablets?",
-        "answer": "Yes, Resignation Letter Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I save or print the finished resignation letter?",
+        "answer": "Copy the letter as text, save it as a TXT file, or print it for a PDF record. Reset restores a pre-written sample so you can tweak instead of starting from scratch."
       },
       {
         "question": "Where is my resignation draft held while I edit it?",
@@ -22585,20 +21837,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Resize Image in CM, MM, Inches do?",
-        "answer": "Resize Image in CM, MM, Inches lets you process images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I switch units without re-entering every value?",
+        "answer": "Unit tabs swap the dimension inputs and reset them to standard defaults; centimetres, millimetres, inches and pixels share one workspace."
       },
       {
-        "question": "Is Resize Image in CM, MM, Inches really free? Are there any hidden charges?",
-        "answer": "Yes, Resize Image in CM, MM, Inches is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I meet a file-weight requirement as well as a size one?",
+        "answer": "A KB ceiling lets you match file-weight requirements alongside size, and a green size-compliant badge validates the finished dimensions."
       },
       {
-        "question": "Do I need to create an account or sign up to use Resize Image in CM, MM, Inches?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Resize Image in CM, MM, Inches on mobile devices or tablets?",
-        "answer": "Yes, Resize Image in CM, MM, Inches works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens when my image's ratio does not match the frame?",
+        "answer": "Aspect-fill cropping completes the chosen frame when proportions differ, and DPI choices of 150, 200, 300 or 600 align with print and exam portals."
       },
       {
         "question": "What happens to my photo while it is resized in mixed units?",
@@ -22644,20 +21892,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Resize Image in CM do?",
-        "answer": "Resize Image in CM lets you process images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which DPI does the centimetre conversion assume by default?",
+        "answer": "Pixel conversion relies on the selected DPI, defaulting to 300, which suits print-true scaling for photos and forms."
       },
       {
-        "question": "Is Resize Image in CM really free? Are there any hidden charges?",
-        "answer": "Yes, Resize Image in CM is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is there a starting preset for common form photos?",
+        "answer": "The default preset of 3.5 by 4.5 cm matches common photo and form sizes, so most uploads only need a quick adjust."
       },
       {
-        "question": "Do I need to create an account or sign up to use Resize Image in CM?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Resize Image in CM on mobile devices or tablets?",
-        "answer": "Yes, Resize Image in CM works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I cap the file weight while resizing in centimetres?",
+        "answer": "The maximum KB field can cap file weight during the conversion, and download names record the dimensions and DPI settings."
       },
       {
         "question": "Does resizing by centimetres require uploading my photo?",
@@ -22702,20 +21946,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Resize Image in MM do?",
-        "answer": "Resize Image in MM lets you process images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "When should I choose millimetres for a resize?",
+        "answer": "Millimetre units suit form specifications like 35 by 45 mm, common on exam and visa applications."
       },
       {
-        "question": "Is Resize Image in MM really free? Are there any hidden charges?",
-        "answer": "Yes, Resize Image in MM is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which DPI options pair with millimetre sizes?",
+        "answer": "The DPI selector spans 150, 200, 300 and 600; switching units resets the fields to sensible defaults for mm work."
       },
       {
-        "question": "Do I need to create an account or sign up to use Resize Image in MM?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Resize Image in MM on mobile devices or tablets?",
-        "answer": "Yes, Resize Image in MM works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I hit both a size and a weight limit?",
+        "answer": "An optional KB ceiling trims quality until the file fits, while aspect-fill mode crops edges to satisfy the exact ratio."
       },
       {
         "question": "Is my picture processed locally or on a server when resizing to millimetres?",
@@ -22760,20 +22000,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Resize Image in Pixels do?",
-        "answer": "Resize Image in Pixels lets you process images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why is the DPI selector disabled in pixels mode?",
+        "answer": "Pixels mode disables the DPI selector because screen sizes ignore print density; defaults land on 350 by 450 pixels when you switch to pixel units."
       },
       {
-        "question": "Is Resize Image in Pixels really free? Are there any hidden charges?",
-        "answer": "Yes, Resize Image in Pixels is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I know my output matches an upload requirement?",
+        "answer": "A live size-compliant badge shows when the output matches expectations while you adjust the exact pixel dimensions."
       },
       {
-        "question": "Do I need to create an account or sign up to use Resize Image in Pixels?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Resize Image in Pixels on mobile devices or tablets?",
-        "answer": "Yes, Resize Image in Pixels works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I keep a file light as well as correctly sized?",
+        "answer": "Enter a maximum KB to keep the file light as well as correctly sized; pixel dimensions suit web, social and portal uploads."
       },
       {
         "question": "Do my images travel to a server during pixel resizing?",
@@ -22819,20 +22055,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Menu Description Generator do?",
-        "answer": "Menu Description Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many menu descriptions does one dish get?",
+        "answer": "Three styled write-ups per dish: gourmet, comfort-food, and fresh/light angles. Your dish name slots into every description so the copy stays about your plate."
       },
       {
-        "question": "Is Menu Description Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Menu Description Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do the three menu description voices differ?",
+        "answer": "Gourmet copy talks searing technique, local herbs, and elegant plating; comfort copy sells rich broth and home-style warmth; the fresh take leans on crisp greens and house vinaigrette."
       },
       {
-        "question": "Do I need to create an account or sign up to use Menu Description Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Menu Description Generator on mobile devices or tablets?",
-        "answer": "Yes, Menu Description Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I use the same description on printed and online menus?",
+        "answer": "Yes, copy any version with its own button and paste it wherever the menu lives. Edit the wording to match your kitchen's actual ingredients before printing."
       },
       {
         "question": "Does the dish info I type for menu copy stay on my device?",
@@ -22878,20 +22110,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Resume ATS Score Checker do?",
-        "answer": "Resume ATS Score Checker lets you validate text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is the ATS score out of 100 actually calculated?",
+        "answer": "It combines resume length with keyword overlap against the optional job description, so the score is a heuristic rather than a true applicant-tracking-system parse."
       },
       {
-        "question": "Is Resume ATS Score Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Resume ATS Score Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I upload my resume as a PDF?",
+        "answer": "Not yet. Paste text or upload a .txt or .md file; the upload warns you when a PDF is chosen."
       },
       {
-        "question": "Do I need to create an account or sign up to use Resume ATS Score Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Resume ATS Score Checker on mobile devices or tablets?",
-        "answer": "Yes, Resume ATS Score Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does the checker suggest action verbs even for a strong resume?",
+        "answer": "Some findings, such as the action-verb tip, are fixed guidance shown after every analysis rather than a reading of your specific lines."
       },
       {
         "question": "Is my resume stored when I run the ATS check?",
@@ -22937,20 +22165,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Resume Keyword Matcher do?",
-        "answer": "Resume Keyword Matcher lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which words from the job description count as keywords to match?",
+        "answer": "Words longer than four characters are compared, case-insensitively, and up to five terms absent from your resume are listed."
       },
       {
-        "question": "Is Resume Keyword Matcher really free? Are there any hidden charges?",
-        "answer": "Yes, Resume Keyword Matcher is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can the matcher run without a job description?",
+        "answer": "Yes, it then scores general resume quality from length alone and skips the keyword comparison."
       },
       {
-        "question": "Do I need to create an account or sign up to use Resume Keyword Matcher?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Resume Keyword Matcher on mobile devices or tablets?",
-        "answer": "Yes, Resume Keyword Matcher works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Should I paste a resume in a specific format?",
+        "answer": "Plain text works best; paste from your document or upload a .txt or .md file, since PDF resumes cannot be read yet."
       },
       {
         "question": "Where does the resume-versus-job-description comparison happen?",
@@ -22995,20 +22219,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Review Reply Generator do?",
-        "answer": "Review Reply Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What are the two review replies generated for?",
+        "answer": "One is a warm thank-you for praise; the other is a calm service-recovery note that apologizes, takes complaints seriously, and asks the customer to reach out."
       },
       {
-        "question": "Is Review Reply Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Review Reply Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which review platforms do the reply templates suit?",
+        "answer": "The wording works for Google, Yelp, and Trustpilot review styles. Each reply has its own copy button for quick use."
       },
       {
-        "question": "Do I need to create an account or sign up to use Review Reply Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Review Reply Generator on mobile devices or tablets?",
-        "answer": "Yes, Review Reply Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do the replies change with the review text I enter?",
+        "answer": "The drafts are template-based, so tailor them after copying: add the customer's name and the specific issue mentioned in the review before posting."
       },
       {
         "question": "Do the review replies I copy out get stored or analyzed?",
@@ -23109,20 +22329,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Robots.txt and Sitemap Generator do?",
-        "answer": "Robots.txt and Sitemap Generator lets you generate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does the generator write my robots.txt too?",
+        "answer": "No; it produces sitemap.xml. The post-generation tips remind you to reference the sitemap in your robots.txt file yourself."
       },
       {
-        "question": "Is Robots.txt and Sitemap Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Robots.txt and Sitemap Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What gets stamped as the lastmod date?",
+        "answer": "Every entry gets today's date as its lastmod value when you generate, so regenerate after major changes or edit the XML if you need different dates."
       },
       {
-        "question": "Do I need to create an account or sign up to use Robots.txt and Sitemap Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Robots.txt and Sitemap Generator on mobile devices or tablets?",
-        "answer": "Yes, Robots.txt and Sitemap Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which changefreq and priority values are available?",
+        "answer": "Frequency covers always through yearly, and priority runs from 1.0 down to 0.1 with 1.0 marked Main, applied per URL node as you build the list."
       },
       {
         "question": "Does the tool contact my website while generating the sitemap?",
@@ -23168,20 +22384,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does ROI Calculator do?",
-        "answer": "ROI Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is the annualised ROI different from the total ROI?",
+        "answer": "Total ROI shows the whole gain as a percentage of what you invested; the annualised figure restates that growth as a per-year rate."
       },
       {
-        "question": "Is ROI Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, ROI Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if I leave the holding period at zero?",
+        "answer": "Total ROI and net gain still display, but the annualised reading stays blank because a per-year rate cannot be derived without a positive period."
       },
       {
-        "question": "Do I need to create an account or sign up to use ROI Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use ROI Calculator on mobile devices or tablets?",
-        "answer": "Yes, ROI Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can the ROI calculator show a loss?",
+        "answer": "Yes. When the final value is below the initial investment, the net gain and ROI turn negative, which is useful for comparing exit scenarios."
       },
       {
         "question": "Are my investment values shared when I compute ROI?",
@@ -23227,20 +22439,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Roman Numerals Converter do?",
-        "answer": "Roman Numerals Converter lets you convert numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which direction does this Roman numerals converter handle?",
+        "answer": "It reads Roman numerals and returns the decimal value as you type. For the reverse direction there is a separate number-to-Roman-numerals tool."
       },
       {
-        "question": "Is Roman Numerals Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Roman Numerals Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are subtractive pairs such as IV or XC scored?",
+        "answer": "A smaller letter before a larger one is subtracted, so IV is 4, IX is 9 and XC is 90."
       },
       {
-        "question": "Do I need to create an account or sign up to use Roman Numerals Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Roman Numerals Converter on mobile devices or tablets?",
-        "answer": "Yes, Roman Numerals Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if I paste a character that is not a Roman numeral?",
+        "answer": "Unrecognised characters count as zero and are effectively ignored, so a typo lowers the total rather than producing an error."
       },
       {
         "question": "Does the converter send my numbers or Roman strings anywhere?",
@@ -23340,20 +22548,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Rotate Image do?",
-        "answer": "Rotate Image lets you edit images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which quick presets are available in the workspace?",
+        "answer": "Quick presets dial in common Instagram and social media dimensions so you do not have to look up the numbers."
       },
       {
-        "question": "Is Rotate Image really free? Are there any hidden charges?",
-        "answer": "Yes, Rotate Image is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is the aspect ratio locked when I start scaling?",
+        "answer": "The original aspect ratio is locked by default, so scaling stays proportional; both pixel and percentage modes share the same workspace."
       },
       {
-        "question": "Do I need to create an account or sign up to use Rotate Image?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Rotate Image on mobile devices or tablets?",
-        "answer": "Yes, Rotate Image works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will upscaling make my photo look blurry?",
+        "answer": "A high-quality smoothing pass keeps scaled edges reasonably clean, but heavy enlargement still softens detail that was not in the source."
       },
       {
         "question": "Are my pictures uploaded while they are resized here?",
@@ -23399,20 +22603,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does RRB Group D Photo Resizer do?",
-        "answer": "RRB Group D Photo Resizer lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What size and KB window does the RRB Group D preset require?",
+        "answer": "Photos are preset to 350 x 450 px with a 20KB to 50KB allowance, and signatures to 350 x 150 px between 10KB and 20KB. Both are pre-configured to the official boundaries."
       },
       {
-        "question": "Is RRB Group D Photo Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, RRB Group D Photo Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if my Group D photo drops below the 20KB floor?",
+        "answer": "Results thinner than the floor are flagged and the JPEG quality is raised to compensate. Compression halves the quality range for up to twelve rounds per image."
       },
       {
-        "question": "Do I need to create an account or sign up to use RRB Group D Photo Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use RRB Group D Photo Resizer on mobile devices or tablets?",
-        "answer": "Yes, RRB Group D Photo Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does the Group D tool show whether both limits are satisfied?",
+        "answer": "A green or red status strip indicates whether both file-size bounds are met. A remove-image control sits over the preview when you want to clear the workspace."
       },
       {
         "question": "Is my Group D application photo processed without being shared?",
@@ -23513,20 +22713,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Salary Calculator India (CTC to In-Hand) do?",
-        "answer": "Salary Calculator India (CTC to In-Hand) lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where does the annual bonus go in the in-hand calculation?",
+        "answer": "The bonus is stripped out of CTC so base pay drives the deductions, and the take-home figure you see excludes it entirely."
       },
       {
-        "question": "Is Salary Calculator India (CTC to In-Hand) really free? Are there any hidden charges?",
-        "answer": "Yes, Salary Calculator India (CTC to In-Hand) is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are EPF and professional tax treated in the salary estimate?",
+        "answer": "EPF is 12% of base pay capped at Rs 1,800 per month, and professional tax is applied as Rs 2,500 per year before tax slabs."
       },
       {
-        "question": "Do I need to create an account or sign up to use Salary Calculator India (CTC to In-Hand)?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Salary Calculator India (CTC to In-Hand) on mobile devices or tablets?",
-        "answer": "Yes, Salary Calculator India (CTC to In-Hand) works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does this salary calculator apply the Section 87A rebate?",
+        "answer": "No, it uses simplified old-regime slabs only. For rebate-adjusted comparisons of both regimes, use the income tax calculator instead."
       },
       {
         "question": "Is my CTC or in-hand salary saved anywhere?",
@@ -24067,20 +23263,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Savings Goal Calculator do?",
-        "answer": "Savings Goal Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does my current savings balance earn interest before the monthly deposit is solved?",
+        "answer": "Yes. The balance compounds for the full period, and only the remaining shortfall is spread across the monthly deposits."
       },
       {
-        "question": "Is Savings Goal Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Savings Goal Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the already-reached message mean?",
+        "answer": "When your current savings would grow past the goal within the period, the tool reports 0.00 with a note instead of a negative deposit."
       },
       {
-        "question": "Do I need to create an account or sign up to use Savings Goal Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Savings Goal Calculator on mobile devices or tablets?",
-        "answer": "Yes, Savings Goal Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens with a 0% interest rate?",
+        "answer": "The shortfall is then split evenly across the months, since there are no earnings to account for."
       },
       {
         "question": "Does the savings goal tool keep my target amount?",
@@ -24236,20 +23428,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Security Headers Checker do?",
-        "answer": "Security Headers Checker lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which headers are graded and how many points is each worth?",
+        "answer": "Eight headers including HSTS, CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy and Cache-Control, each worth 12.5 points toward a 100-point score."
       },
       {
-        "question": "Is Security Headers Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Security Headers Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What counts as misconfigured rather than missing?",
+        "answer": "A header that is present but wrong, for example X-Frame-Options without DENY or SAMEORIGIN, or X-Content-Type-Options that does not say nosniff. Those are listed separately from missing ones."
       },
       {
-        "question": "Do I need to create an account or sign up to use Security Headers Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Security Headers Checker on mobile devices or tablets?",
-        "answer": "Yes, Security Headers Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why might the results differ from a curl check on my server?",
+        "answer": "The request is routed through a public CORS proxy, so the proxy's location, CDN behavior and bot policies can change what comes back. Treat a mismatch as a prompt to verify directly."
       },
       {
         "question": "Why does my header scan sometimes fail, and does it expose my URL?",
@@ -24350,20 +23538,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Complete SEO Audit do?",
-        "answer": "Complete SEO Audit lets you validate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does this audit actually check on my page?",
+        "answer": "How the address answers a server-side request: the redirect trace with status codes, the resolved final URL and a truncated slice of the returned HTML, not on-page scoring."
       },
       {
-        "question": "Is Complete SEO Audit really free? Are there any hidden charges?",
-        "answer": "Yes, Complete SEO Audit is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why can't I scan a local or staging address?",
+        "answer": "Safety checks reject loopback, RFC 1918 and link-local hosts before any request goes out, so internal addresses cannot be probed through the tool."
       },
       {
-        "question": "Do I need to create an account or sign up to use Complete SEO Audit?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Complete SEO Audit on mobile devices or tablets?",
-        "answer": "Yes, Complete SEO Audit works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the returned HTML the whole page?",
+        "answer": "The output is truncated to keep large pages quick to review; it is enough to confirm reachability and inspect the opening markup, not a full document copy."
       },
       {
         "question": "What does SopKit do with the addresses I audit?",
@@ -24409,20 +23593,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does SEO Title & Meta Description Generator do?",
-        "answer": "SEO Title & Meta Description Generator lets you generate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why does the generated title end with a site name?",
+        "answer": "It follows the pattern topic | Best Online Tool | SopKit. Swap the site name for your own brand before publishing the tag anywhere."
       },
       {
-        "question": "Is SEO Title & Meta Description Generator really free? Are there any hidden charges?",
-        "answer": "Yes, SEO Title & Meta Description Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What wording does the meta description use?",
+        "answer": "A fixed sentence template that references fast browser-based processing with your topic filled in, so treat it as a starting draft rather than a finished description."
       },
       {
-        "question": "Do I need to create an account or sign up to use SEO Title & Meta Description Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SEO Title & Meta Description Generator on mobile devices or tablets?",
-        "answer": "Yes, SEO Title & Meta Description Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I regenerate with a different topic?",
+        "answer": "Yes, change the topic and press Generate Tags as often as needed; results appear under SEO Title and Meta Description labels, and the other workspace tabs stay available."
       },
       {
         "question": "Does drafting tags here query an SEO API about my topic?",
@@ -24468,20 +23648,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does SEO Toolkit do?",
-        "answer": "SEO Toolkit lets you validate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Are the 27 checks run against the URL I enter?",
+        "answer": "No. The report is a demonstration dataset: the score is a fixed 78, statuses are randomized and cards show the literal value Sample Data, so do not act on the findings."
       },
       {
-        "question": "Is SEO Toolkit really free? Are there any hidden charges?",
-        "answer": "Yes, SEO Toolkit is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What kinds of checks does the grid list?",
+        "answer": "Twenty-seven items including title tags, meta descriptions, H1 structure, internal and external links, mobile responsiveness, SSL, robots.txt, sitemap detection and Core Web Vitals."
       },
       {
-        "question": "Do I need to create an account or sign up to use SEO Toolkit?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SEO Toolkit on mobile devices or tablets?",
-        "answer": "Yes, SEO Toolkit works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What should I use this toolkit for?",
+        "answer": "It previews the report layout the checks would feed; for real decisions, combine actual crawl data and Search Console rather than this sample scan."
       },
       {
         "question": "Is the audit score produced from a live crawl of my site?",
@@ -24582,20 +23758,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does SGPA Calculator do?",
-        "answer": "SGPA Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the SGPA calculator weight each course?",
+        "answer": "It divides total credit points by total credits, so a four-credit course counts twice as much as a two-credit course toward the semester average."
       },
       {
-        "question": "Is SGPA Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, SGPA Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which grade points can I select per course?",
+        "answer": "Credits run from 1 to 6, and grades map from O or A+ at 10 points down through A, B, C, D, E and P to F at zero."
       },
       {
-        "question": "Do I need to create an account or sign up to use SGPA Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SGPA Calculator on mobile devices or tablets?",
-        "answer": "Yes, SGPA Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I build my own course list?",
+        "answer": "Yes. Add Course appends rows, each row has a remove control, and a five-course sample is preloaded so the maths is visible immediately."
       },
       {
         "question": "Does the SGPA calculator record my courses and grades?",
@@ -24640,20 +23812,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does SGPA to CGPA Calculator do?",
-        "answer": "SGPA to CGPA Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the CGPA produced by SGPAs a weighted average?",
+        "answer": "No, it is the simple mean of the filled semester values; each semester counts equally regardless of credits earned."
       },
       {
-        "question": "Is SGPA to CGPA Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, SGPA to CGPA Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How should I treat a semester with no result yet?",
+        "answer": "Leave that row empty. Unfilled rows are ignored entirely, so your cumulative figure reflects only completed semesters."
       },
       {
-        "question": "Do I need to create an account or sign up to use SGPA to CGPA Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SGPA to CGPA Calculator on mobile devices or tablets?",
-        "answer": "Yes, SGPA to CGPA Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does this tool support a credit-weighted CGPA method?",
+        "answer": "Not currently; it averages SGPA values directly. If your university weights by credits, calculate separately with the credit totals."
       },
       {
         "question": "Are my semester SGPAs kept as I type them?",
@@ -24754,20 +23922,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Shrink MP3 Size do?",
-        "answer": "Shrink MP3 Size lets you compress audio files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your audio files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does choosing a lower bitrate actually shrink the file?",
+        "answer": "The quality cards describe the size trade-off rather than triggering a re-encode; the download is the audio stream resolved from the link. The result reports the resolved file size next to its bitrate badge."
       },
       {
-        "question": "Is Shrink MP3 Size really free? Are there any hidden charges?",
-        "answer": "Yes, Shrink MP3 Size is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What kind of link does Shrink MP3 Size accept?",
+        "answer": "It produces one MP3 from a TikTok link. Errors prompt you to re-check the link when a lookup fails."
       },
       {
-        "question": "Do I need to create an account or sign up to use Shrink MP3 Size?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your audio files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Shrink MP3 Size on mobile devices or tablets?",
-        "answer": "Yes, Shrink MP3 Size works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which bitrate options are listed first?",
+        "answer": "Lower bitrates such as 128kbps are on offer first for smaller output files. Each card notes the size trade-off, from standard to premium."
       },
       {
         "question": "Does the tool re-encode a file already on my phone to shrink it?",
@@ -24813,20 +23977,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Signature Resizer Under 20KB do?",
-        "answer": "Signature Resizer Under 20KB lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What dimensions does the signature resizer output by default?",
+        "answer": "It targets 350 x 150 px beneath a 20KB ceiling, and both values stay editable. Scanned JPEG, PNG, or WebP signature files are accepted on upload."
       },
       {
-        "question": "Is Signature Resizer Under 20KB really free? Are there any hidden charges?",
-        "answer": "Yes, Signature Resizer Under 20KB is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "My signature scan is faint; which cleanup controls should I use?",
+        "answer": "Contrast runs from 1x to 3x and brightness from 0.8x to 2x to clean up faint scans. Monochrome mode instead thresholds ink at a level you set between 50 and 200."
       },
       {
-        "question": "Do I need to create an account or sign up to use Signature Resizer Under 20KB?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Signature Resizer Under 20KB on mobile devices or tablets?",
-        "answer": "Yes, Signature Resizer Under 20KB works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Will the whole signature stay visible after fitting to the target?",
+        "answer": "Yes, a white canvas backing and letterbox fitting keep the full signature visible. Compression settles a few KB below the cap so the final JPEG stays inside it."
       },
       {
         "question": "Is a scanned signature sensitive if it is processed on a website?",
@@ -24934,20 +24094,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does SIP Calculator India do?",
-        "answer": "SIP Calculator India lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "What compounding assumption does the SIP calculator use?",
+        "answer": "Returns compound monthly, and deposits are treated as made at the start of each month, which is why the formula carries an extra growth factor."
       },
       {
-        "question": "Is SIP Calculator India really free? Are there any hidden charges?",
-        "answer": "Yes, SIP Calculator India is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are the three SIP outputs split?",
+        "answer": "Amount invested is your monthly instalment times the months, estimated returns are the growth on top, and total value is their sum."
       },
       {
-        "question": "Do I need to create an account or sign up to use SIP Calculator India?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SIP Calculator India on mobile devices or tablets?",
-        "answer": "Yes, SIP Calculator India works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are SIP returns guaranteed if I set the expected rate?",
+        "answer": "No. The rate is your own assumption for projection; actual mutual fund returns vary with markets, so treat the output as an illustration."
       },
       {
         "question": "Does the SIP calculator store my investment plan?",
@@ -24993,20 +24149,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Advanced Sitemap Generator do?",
-        "answer": "Advanced Sitemap Generator lets you generate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it crawl my website and build the sitemap automatically?",
+        "answer": "No. It probes the address you supply with a HEAD chain or GET snippet; to author a sitemap.xml file, use the robots.txt and sitemap generator instead."
       },
       {
-        "question": "Is Advanced Sitemap Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Advanced Sitemap Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How many redirects will the HEAD chain follow?",
+        "answer": "Up to twelve hops, logging the status of each one, so you can see whether the address resolves cleanly or bounces through redirects."
       },
       {
-        "question": "Do I need to create an account or sign up to use Advanced Sitemap Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Advanced Sitemap Generator on mobile devices or tablets?",
-        "answer": "Yes, Advanced Sitemap Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does GET snippet mode return for a live site?",
+        "answer": "A capped sample of the page text plus the final URL and HTTP status, held in a read-only panel; bot protection can change what comes back."
       },
       {
         "question": "Is the sitemap check performed from my own connection?",
@@ -25052,20 +24204,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Sitemap Url Downloader do?",
-        "answer": "Sitemap Url Downloader lets you download website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens if the sitemap URL cannot be fetched directly?",
+        "answer": "A direct fetch is tried first; if CORS blocks it, the request falls back to the universal proxy, and you can always paste the XML by hand if both routes fail."
       },
       {
-        "question": "Is Sitemap Url Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Sitemap Url Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "If I paste a sitemap index, what will I get?",
+        "answer": "Every <loc> entry is extracted, and in a sitemap index those point at sub-sitemaps, not pages. Run each sub-sitemap through the tool to reach the page URLs."
       },
       {
-        "question": "Do I need to create an account or sign up to use Sitemap Url Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Sitemap Url Downloader on mobile devices or tablets?",
-        "answer": "Yes, Sitemap Url Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I work with a long list of extracted URLs?",
+        "answer": "Use the filter field to narrow matches as you type, then copy the list or download it as sitemap-urls.txt with one URL per line."
       },
       {
         "question": "Is the sitemap fetched by my browser or through SopKit?",
@@ -25110,20 +24258,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Slogan Generator do?",
-        "answer": "Slogan Generator lets you generate content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many slogans come out of one brand name?",
+        "answer": "Eight slogan patterns build around the brand name immediately, spanning aspiration, growth, excellence, value, and choice. Each tagline has its own copy button."
       },
       {
-        "question": "Is Slogan Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Slogan Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What do the slogan angles sound like?",
+        "answer": "Examples run from Simply the Best to Redefining Excellence. Change the name and rerun to refresh all eight around the new brand."
       },
       {
-        "question": "Do I need to create an account or sign up to use Slogan Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Slogan Generator on mobile devices or tablets?",
-        "answer": "Yes, Slogan Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What shows up if I generate with an empty field?",
+        "answer": "A fallback sample name loads when the field is empty so the formats are easy to study first. Enter your own brand to replace it."
       },
       {
         "question": "Does the brand name I enter for slogans get tracked anywhere?",
@@ -25224,20 +24368,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Slug to Text Converter do?",
-        "answer": "Slug to Text Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the slug to text converter handle underscores and hyphens?",
+        "answer": "Both are replaced with normal word spacing, so a slug like my-seo-friendly-url-slug reads back as separate words."
       },
       {
-        "question": "Is Slug to Text Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Slug to Text Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which casing styles can I output?",
+        "answer": "Four: Title Case, Sentence case, UPPER CASE and lower case, switchable while the input stays in place."
       },
       {
-        "question": "Do I need to create an account or sign up to use Slug to Text Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Slug to Text Converter on mobile devices or tablets?",
-        "answer": "Yes, Slug to Text Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does it decode percent-encoded characters in slugs?",
+        "answer": "No, it simply replaces hyphens and underscores with spaces; encoded characters such as %20 are passed through unchanged."
       },
       {
         "question": "Is the slug I paste into the converter kept on record?",
@@ -25448,20 +24588,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Soundcloud Video Downloader do?",
-        "answer": "Soundcloud Video Downloader lets you download audio files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your audio files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which SoundCloud links can I paste into this downloader?",
+        "answer": "It accepts soundcloud.com track pages and snd.sc short links, validated before lookup. Non-SoundCloud URLs are rejected with an inline validation message."
       },
       {
-        "question": "Is Soundcloud Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Soundcloud Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What information appears for a resolved SoundCloud track?",
+        "answer": "Artist name, track title, duration, and artwork are displayed on success. Each returned quality is listed with its size and a one-click download button."
       },
       {
-        "question": "Do I need to create an account or sign up to use Soundcloud Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your audio files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Soundcloud Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Soundcloud Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does downloading a SoundCloud track work?",
+        "answer": "Each download button opens its resolved media link in a new tab. A step-by-step guide and FAQ block sit beneath the tool if you get stuck."
       },
       {
         "question": "What happens if my track is private on SoundCloud?",
@@ -25507,20 +24643,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Spam Score Checker do?",
-        "answer": "Spam Score Checker lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is the inbox-readiness score calculated?",
+        "answer": "Fifteen weighted triggers, from no cost at 5 points up to congratulations at 10, plus deductions for links, shorteners, all caps and doubled punctuation. The issues list explains every hit."
       },
       {
-        "question": "Is Spam Score Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Spam Score Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why do more than three links hurt my score?",
+        "answer": "The checker counts embedded links and flags anything beyond three as a risk, and link shorteners such as bit.ly are deducted on top of that."
       },
       {
-        "question": "Do I need to create an account or sign up to use Spam Score Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Spam Score Checker on mobile devices or tablets?",
-        "answer": "Yes, Spam Score Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does a good score guarantee my mail lands in the inbox?",
+        "answer": "No. It is a copy review, not an inbox placement test; mailbox providers weigh authentication, sender reputation and engagement, which this checker cannot see."
       },
       {
         "question": "Is my email draft uploaded to a spam filtering service?",
@@ -25566,20 +24698,16 @@ The tool accepts numbers delimited by spaces, commas, tabs, or line breaks, upda
     },
     "faqs": [
       {
-        "question": "What exactly does Spam Word Checker do?",
-        "answer": "Spam Word Checker lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is the spam risk band decided?",
+        "answer": "It is trigger density, not a raw count: found phrases are measured against your word count and capped at 100 percent, then labeled low, moderate or high."
       },
       {
-        "question": "Is Spam Word Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Spam Word Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is the difference between this and the Spam Score Checker?",
+        "answer": "This tool scans for 41 classic trigger phrases and reports density with red chips for each hit; the Spam Score Checker weights a full draft, counting links, shorteners and formatting too."
       },
       {
-        "question": "Do I need to create an account or sign up to use Spam Word Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Spam Word Checker on mobile devices or tablets?",
-        "answer": "Yes, Spam Word Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are these the exact words my email provider filters on?",
+        "answer": "They are classic spam phrases used for copy review, not any provider's live filter list. Passing means your copy avoids obvious trigger wording, not that it will dodge modern filtering."
       },
       {
         "question": "Which list of spam words does the score use?",
@@ -25771,20 +24899,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does SSC MTS Photo Resizer do?",
-        "answer": "SSC MTS Photo Resizer lets you convert exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What are the SSC MTS photo and signature requirements built into this tool?",
+        "answer": "Photos follow the 3.5 x 4.5 cm standard at 350 x 450 px and 20KB to 50KB, while signatures require 350 x 200 px and 10KB to 20KB."
       },
       {
-        "question": "Is SSC MTS Photo Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, SSC MTS Photo Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does compression start automatically when I add an image?",
+        "answer": "Yes, auto-processing starts as soon as an image enters the upload zone. The reprocess action reruns compression after tweaking width, height, or KB limits."
       },
       {
-        "question": "Do I need to create an account or sign up to use SSC MTS Photo Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SSC MTS Photo Resizer on mobile devices or tablets?",
-        "answer": "Yes, SSC MTS Photo Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the compliance badge compare on an SSC MTS upload?",
+        "answer": "It compares the output against the minimum and maximum size together, so a file that is too small fails as well as one that is too big. Hindi labels for fields and buttons can be turned on from the language toggle."
       },
       {
         "question": "What happens to the SSC MTS photo and signature I upload?",
@@ -25830,20 +24954,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does SSC Photo Resizer do?",
-        "answer": "SSC Photo Resizer lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which files does the SSC photo resizer accept and produce?",
+        "answer": "JPG, JPEG, and PNG files are accepted on upload and everything exports as JPEG. The download button stays disabled until a processed result exists."
       },
       {
-        "question": "Is SSC Photo Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, SSC Photo Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is the SSC signature preset inside this tool?",
+        "answer": "Signature mode expects 350 x 200 px and 10KB to 20KB, while photo mode outputs 350 x 450 px between 20KB and 50KB."
       },
       {
-        "question": "Do I need to create an account or sign up to use SSC Photo Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SSC Photo Resizer on mobile devices or tablets?",
-        "answer": "Yes, SSC Photo Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I apply custom values after my first attempt?",
+        "answer": "Edit the width, height, or KB fields and press Reprocess to rerun compression with the new targets. The dropzone accepts click or drag input for a replacement image."
       },
       {
         "question": "Does the SSC photo I upload pass through any external service?",
@@ -25889,20 +25009,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does SSC Photo and Signature Resizer do?",
-        "answer": "SSC Photo and Signature Resizer lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Do the SSC photo and signature outputs download with different names?",
+        "answer": "Yes, downloads are named ssc_photo_resized.jpg or ssc_signature_resized.jpg depending on the active tab, so both files are easy to match to a form."
       },
       {
-        "question": "Is SSC Photo and Signature Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, SSC Photo and Signature Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the crop prepare my photo for the SSC ratio?",
+        "answer": "A centered aspect-fill crop trims excess edges before the canvas is encoded to JPEG. Proportions stay intact rather than being stretched to fit."
       },
       {
-        "question": "Do I need to create an account or sign up to use SSC Photo and Signature Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SSC Photo and Signature Resizer on mobile devices or tablets?",
-        "answer": "Yes, SSC Photo and Signature Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How many quality passes does the SSC resizer use to hit the KB window?",
+        "answer": "Up to twelve binary-search quality passes move the JPEG quality into the 20KB to 50KB photo window or the 10KB to 20KB signature window. A compliance strip confirms both limits."
       },
       {
         "question": "Do my SSC photograph and signature scans get uploaded for processing?",
@@ -25948,20 +25064,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does SSL Certificate Checker do?",
-        "answer": "SSL Certificate Checker lets you validate files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Where do the certificate results come from?",
+        "answer": "A third-party certificate API performs the check, with SSL Labs used as a fallback when the first service fails, so the domain name is sent to those external services."
       },
       {
-        "question": "Is SSL Certificate Checker really free? Are there any hidden charges?",
-        "answer": "Yes, SSL Certificate Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does a red days-left number mean?",
+        "answer": "Fewer than 30 days remain before expiry, which is shown as a renewal warning. The panel lists validity, issuer, expiry date and the reported TLS protocol when available."
       },
       {
-        "question": "Do I need to create an account or sign up to use SSL Certificate Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SSL Certificate Checker on mobile devices or tablets?",
-        "answer": "Yes, SSL Certificate Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why can the issuer field look different after a fallback?",
+        "answer": "When SSL Labs answers instead of the primary API, some fields are less specific; the issuer slot may show the SSL Labs grade instead of a CA name, and expiry may point you to SSL Labs."
       },
       {
         "question": "Does this check open my site's certificate in my browser?",
@@ -26062,20 +25174,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does String Length Calculator do?",
-        "answer": "String Length Calculator lets you calculate text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why is the byte count larger than the character count for some text?",
+        "answer": "Bytes measure UTF-8 size, so non-English characters such as Devanagari take multiple bytes each while counting as one character."
       },
       {
-        "question": "Is String Length Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, String Length Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the calculator decide where paragraphs begin?",
+        "answer": "Blank lines separate paragraphs, so blocks of text with an empty line between them each count separately."
       },
       {
-        "question": "Do I need to create an account or sign up to use String Length Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use String Length Calculator on mobile devices or tablets?",
-        "answer": "Yes, String Length Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which metrics update while I type?",
+        "answer": "All six: characters, words, bytes, lines, whitespaces and paragraphs refresh on every keystroke."
       },
       {
         "question": "Is the text I measure ever sent to SopKit?",
@@ -26175,20 +25283,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does SVG to JPG Converter do?",
-        "answer": "SVG to JPG Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is a vector SVG rendered into a JPEG?",
+        "answer": "The SVG is flattened into a JPEG image, with transparency painted over with white before the JPEG encoding kicks in."
       },
       {
-        "question": "Is SVG to JPG Converter really free? Are there any hidden charges?",
-        "answer": "Yes, SVG to JPG Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What quality does the JPEG export start at?",
+        "answer": "The quality dial defaults to 90 and can be pulled down to 20 for smaller exports."
       },
       {
-        "question": "Do I need to create an account or sign up to use SVG to JPG Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SVG to JPG Converter on mobile devices or tablets?",
-        "answer": "Yes, SVG to JPG Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I convert several vectors at once?",
+        "answer": "Batch several vectors and package the JPEGs together in a ZIP; JPEG arrives pre-selected so the headline conversion works on the first click."
       },
       {
         "question": "What happens to my logo when I turn it into a JPG?",
@@ -26233,20 +25337,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does SVG to PNG Converter do?",
-        "answer": "SVG to PNG Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which format is pre-selected when the converter opens?",
+        "answer": "PNG (Lossless) is already selected, feeding SVG artwork into a canvas pipeline that outputs lossless PNG."
       },
       {
-        "question": "Is SVG to PNG Converter really free? Are there any hidden charges?",
-        "answer": "Yes, SVG to PNG Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What size will the exported PNG be?",
+        "answer": "The width and height boxes are optional and fall back to the image's natural size when left empty."
       },
       {
-        "question": "Do I need to create an account or sign up to use SVG to PNG Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use SVG to PNG Converter on mobile devices or tablets?",
-        "answer": "Yes, SVG to PNG Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I handle a batch of SVG files?",
+        "answer": "Dropped SVG files line up in a batch queue for one Convert All pass, and results download one by one or as a single zipped folder."
       },
       {
         "question": "Are my SVG files sent anywhere for rasterizing?",
@@ -26292,20 +25392,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does TDEE Calculator do?",
-        "answer": "TDEE Calculator lets you calculate health metrics entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your health metrics never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the TDEE calculator estimate my maintenance calories?",
+        "answer": "It computes a Mifflin-St Jeor BMR from gender, age, height, and weight, then multiplies it by your selected activity factor. Maintenance calories headline the results panel."
       },
       {
-        "question": "Is TDEE Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, TDEE Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What activity levels can I select?",
+        "answer": "Five multipliers range from sedentary 1.2 up to extremely active 1.9. The chosen factor scales the basal metabolic rate into an estimated daily burn."
       },
       {
-        "question": "Do I need to create an account or sign up to use TDEE Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your health metrics immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use TDEE Calculator on mobile devices or tablets?",
-        "answer": "Yes, TDEE Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the result include calories for losing or gaining weight?",
+        "answer": "Yes, results also show minus 250 and minus 500 kcal targets for loss and the matching additions for gain. Copy writes a maintenance, loss, and gain summary to the clipboard."
       },
       {
         "question": "Do you keep the weight and activity answers I enter?",
@@ -26571,20 +25667,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does Text Compare do?",
-        "answer": "Text Compare lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does Text Compare highlight changes between two versions?",
+        "answer": "It marks additions and deletions at character level, so punctuation and spacing edits are visible, not just whole-line changes."
       },
       {
-        "question": "Is Text Compare really free? Are there any hidden charges?",
-        "answer": "Yes, Text Compare is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is there a compare button to press?",
+        "answer": "No, the difference report recomputes the instant either side changes, so you can keep editing while watching the diff."
       },
       {
-        "question": "Do I need to create an account or sign up to use Text Compare?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Text Compare on mobile devices or tablets?",
-        "answer": "Yes, Text Compare works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What does the highlighted report beneath the two editors show?",
+        "answer": "It interleaves both versions into one stream: unchanged text in plain style, additions highlighted green and deletions red."
       },
       {
         "question": "Are the two texts I compare uploaded for diffing?",
@@ -26630,20 +25722,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does Text Repeater do?",
-        "answer": "Text Repeater lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I add a separator between repeated copies?",
+        "answer": "No, copies are joined directly with no separator. Include a space or newline in the input text itself if you need spacing."
       },
       {
-        "question": "Is Text Repeater really free? Are there any hidden charges?",
-        "answer": "Yes, Text Repeater is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is the maximum repeat count?",
+        "answer": "The repeat field clamps between 0 and 5,000, so oversized entries are capped rather than breaking the output."
       },
       {
-        "question": "Do I need to create an account or sign up to use Text Repeater?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Text Repeater on mobile devices or tablets?",
-        "answer": "Yes, Text Repeater works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the repeated text update as I change the count?",
+        "answer": "Yes, the read-only result pane refreshes live for both text and count changes, starting with Hello repeated three times."
       },
       {
         "question": "Is the repeated output saved anywhere?",
@@ -26689,20 +25777,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does Text Reverser do?",
-        "answer": "Text Reverser lets you edit text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What reversal modes does the Text Reverser offer?",
+        "answer": "Reverse every character for mirror text, or flip the order of whole words or lines while keeping each unit intact."
       },
       {
-        "question": "Is Text Reverser really free? Are there any hidden charges?",
-        "answer": "Yes, Text Reverser is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is the Swap button for?",
+        "answer": "It moves the reversed output back into the input field, so you can chain reversals or keep transforming the same block."
       },
       {
-        "question": "Do I need to create an account or sign up to use Text Reverser?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Text Reverser on mobile devices or tablets?",
-        "answer": "Yes, Text Reverser works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I know how much text was processed?",
+        "answer": "Live character and word counters sit under both the input box and the result, updating as the reversal changes."
       },
       {
         "question": "What happens to the text I paste into the reverser?",
@@ -26748,20 +25832,16 @@ Different database engines enforce distinct syntax nuances, from backtick identi
     },
     "faqs": [
       {
-        "question": "What exactly does Text Sorter do?",
-        "answer": "Text Sorter lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the Reverse Order button do after sorting?",
+        "answer": "It mirrors the current output without running the sort again, flipping an ascending list into a descending one with a click."
       },
       {
-        "question": "Is Text Sorter really free? Are there any hidden charges?",
-        "answer": "Yes, Text Sorter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does natural sorting handle items like item2 and item10?",
+        "answer": "It compares embedded numbers as numbers, so item2 ranks before item10 instead of following strict character order."
       },
       {
-        "question": "Do I need to create an account or sign up to use Text Sorter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Text Sorter on mobile devices or tablets?",
-        "answer": "Yes, Text Sorter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are list clean-ups part of the same sort pass?",
+        "answer": "Yes, the deduplicate and remove-empty-lines checkboxes apply while sorting, and counters show line, character and word totals before and after."
       },
       {
         "question": "Does my pasted list survive in SopKit after I sort it?",
@@ -27007,20 +26087,16 @@ The converter allows you to separate the resulting decimal values with spaces, c
     },
     "faqs": [
       {
-        "question": "What exactly does Text to Handwriting Converter do?",
-        "answer": "Text to Handwriting Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens if my text is longer than one page?",
+        "answer": "The canvas is a single 800 by 1000 pixel page, so lines that run past the bottom edge are not included in the exported image."
       },
       {
-        "question": "Is Text to Handwriting Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Text to Handwriting Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I save the handwritten page?",
+        "answer": "The download control exports the canvas as a PNG image, which you can print or place into a document."
       },
       {
-        "question": "Do I need to create an account or sign up to use Text to Handwriting Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Text to Handwriting Converter on mobile devices or tablets?",
-        "answer": "Yes, Text to Handwriting Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which handwriting styles and papers can I choose?",
+        "answer": "Three typefaces such as Caveat and Sacramento, three paper backgrounds including lined and grid, three ink colours, and sliders for size and spacing."
       },
       {
         "question": "Is the text I convert to handwriting uploaded to generate the image?",
@@ -27206,20 +26282,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Text to Slug Converter do?",
-        "answer": "Text to Slug Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which separator and case options does the slug converter offer?",
+        "answer": "Hyphens or underscores between words, with the slug either forced fully lowercase or preserving the capitalisation you typed."
       },
       {
-        "question": "Is Text to Slug Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Text to Slug Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does it remember the slugs I have generated?",
+        "answer": "Yes, a recent strip keeps the last five copied slugs so earlier ones can be reused without retyping the title."
       },
       {
-        "question": "Do I need to create an account or sign up to use Text to Slug Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Text to Slug Converter on mobile devices or tablets?",
-        "answer": "Yes, Text to Slug Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are spaces and punctuation in the title handled?",
+        "answer": "They collapse into the chosen separator and stray symbols are dropped, producing a clean URL-friendly string as you type."
       },
       {
         "question": "Does the title I convert into a slug get tracked?",
@@ -27265,20 +26337,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Text to Speech do?",
-        "answer": "Text to Speech lets you convert audio files entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your audio files never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which voices does the Text to Speech tool read with?",
+        "answer": "The voice picker groups every installed system voice by language, so availability depends on your operating system and browser. Rate, pitch, and volume sliders tune the delivery."
       },
       {
-        "question": "Is Text to Speech really free? Are there any hidden charges?",
-        "answer": "Yes, Text to Speech is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens when I press the Download button?",
+        "answer": "It replays the speech through the built-in speech synthesis engine with a note that direct file export is not implemented. For a downloadable audio URL, use the AI Voice Generator instead."
       },
       {
-        "question": "Do I need to create an account or sign up to use Text to Speech?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your audio files immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Text to Speech on mobile devices or tablets?",
-        "answer": "Yes, Text to Speech works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How much text can I convert at once?",
+        "answer": "The textarea accepts up to 5,000 characters with a live character counter. Play, pause, resume, and stop controls manage the utterance while it reads."
       },
       {
         "question": "Is my text read aloud by SopKit's servers or my own device?",
@@ -27324,20 +26392,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Text to Tags Converter do?",
-        "answer": "Text to Tags Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the tag extractor decide which keywords to suggest?",
+        "answer": "It ranks words by how often they appear, filters common stop words, and keeps terms at or above the minimum word length you set."
       },
       {
-        "question": "Is Text to Tags Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Text to Tags Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I remove a suggested tag before copying?",
+        "answer": "Yes, click any tag chip to toggle it out of the active selection; deselected tags are shown struck through and excluded from the outputs."
       },
       {
-        "question": "Do I need to create an account or sign up to use Text to Tags Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Text to Tags Converter on mobile devices or tablets?",
-        "answer": "Yes, Text to Tags Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does it extract multi-word phrases?",
+        "answer": "No, tagging works word by word, so every suggestion is a single term, and custom additions are single terms as well."
       },
       {
         "question": "Where does my pasted copy go when tags are extracted?",
@@ -27658,20 +26722,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Tile Calculator do?",
-        "answer": "Tile Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is the tile wastage margin handled?",
+        "answer": "Your chosen 5%, 10% or 15% margin is added to the raw tile count before rounding up, and a separate line shows how many tiles that margin contributed."
       },
       {
-        "question": "Is Tile Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Tile Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the tile calculator work for wall tiles too?",
+        "answer": "Yes, any rectangular surface works: enter the area dimensions and the size of one tile, both in feet."
       },
       {
-        "question": "Do I need to create an account or sign up to use Tile Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Tile Calculator on mobile devices or tablets?",
-        "answer": "Yes, Tile Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does the final count sometimes exceed area divided by tile size?",
+        "answer": "Because the count rounds up to a whole tile and the selected waste margin is included, so cut tiles and breakages are covered."
       },
       {
         "question": "Are my room dimensions or tile sizes stored anywhere?",
@@ -27772,20 +26832,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Tip Calculator do?",
-        "answer": "Tip Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the tip calculated before or after splitting the bill?",
+        "answer": "The tip is computed on the full bill first, then the total including tip is divided between diners, so each person pays an equal share."
       },
       {
-        "question": "Is Tip Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Tip Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if I set the split to zero or leave it blank?",
+        "answer": "The tip and total still display, but the per-person field stays empty because dividing among zero diners is meaningless."
       },
       {
-        "question": "Do I need to create an account or sign up to use Tip Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Tip Calculator on mobile devices or tablets?",
-        "answer": "Yes, Tip Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I use the tip calculator for a custom percentage?",
+        "answer": "Yes. Type any percentage into the tip field, and all three readouts update with each keystroke."
       },
       {
         "question": "Is my bill amount or tip percentage logged?",
@@ -28105,20 +27161,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Twitter Card Generator do?",
-        "answer": "Twitter Card Generator lets you generate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which card type should I choose?",
+        "answer": "The field starts at summary_large_image and accepts summary; the chosen value is written into the twitter:card tag, so pick the large card for visual posts and summary for compact ones."
       },
       {
-        "question": "Is Twitter Card Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Twitter Card Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Do I need to include the @ symbol in the username field?",
+        "answer": "No. The value is normalized so exactly one @ is written to the twitter:site tag whether or not you type it."
       },
       {
-        "question": "Do I need to create an account or sign up to use Twitter Card Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Twitter Card Generator on mobile devices or tablets?",
-        "answer": "Yes, Twitter Card Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which tags are left out when fields are empty?",
+        "answer": "The image and site tags are omitted when those fields stay empty; twitter:card, twitter:title and twitter:description are always emitted."
       },
       {
         "question": "Does creating a card test it in Twitter's preview tool?",
@@ -28219,20 +27271,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does Unicode to Kruti Dev Converter do?",
-        "answer": "Unicode to Kruti Dev Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Why would I convert Unicode Hindi back to Kruti Dev?",
+        "answer": "Older templates and forms that were built for the Kruti Dev font need text in that legacy layout rather than standard Unicode."
       },
       {
-        "question": "Is Unicode to Kruti Dev Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Unicode to Kruti Dev Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the output display correctly in a normal font?",
+        "answer": "No, Kruti Dev output is meant to be pasted into a field that uses the Kruti Dev 010 font; without it the characters look like Latin gibberish."
       },
       {
-        "question": "Do I need to create an account or sign up to use Unicode to Kruti Dev Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Unicode to Kruti Dev Converter on mobile devices or tablets?",
-        "answer": "Yes, Unicode to Kruti Dev Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Is the conversion reversible?",
+        "answer": "Yes, the Kruti Dev to Unicode tab performs the reverse direction, and you can copy the result from either pane."
       },
       {
         "question": "Does my Unicode text get stored when I convert it to Kruti Dev?",
@@ -28333,20 +27381,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does UPSC Photo Resizer do?",
-        "answer": "UPSC Photo Resizer lets you edit exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What target does the UPSC preset use for photos and signatures?",
+        "answer": "Both tabs inherit a 350 x 350 px square target with a compliant output window of 20KB to 300KB."
       },
       {
-        "question": "Is UPSC Photo Resizer really free? Are there any hidden charges?",
-        "answer": "Yes, UPSC Photo Resizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict editors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can the UPSC resizer raise a smaller JPEG to meet the 20KB floor?",
+        "answer": "Yes, the quality search raises a too-small JPEG and lowers one that overshoots the 300KB cap. Undersized or oversized results are flagged in red with a dimension hint."
       },
       {
-        "question": "Do I need to create an account or sign up to use UPSC Photo Resizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start editing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use UPSC Photo Resizer on mobile devices or tablets?",
-        "answer": "Yes, UPSC Photo Resizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I override the UPSC preset values?",
+        "answer": "Yes, width, height, minimum KB, and maximum KB are all editable, and Reprocess uses whatever numbers are showing. Switching mode reloads the exam preset values."
       },
       {
         "question": "What happens to the UPSC photo and signature I load into this tool?",
@@ -28392,20 +27436,16 @@ The tool provides full control over delimiters, including spaces, commas, newlin
     },
     "faqs": [
       {
-        "question": "What exactly does UPSC Photo Resizer 350x350 do?",
-        "answer": "UPSC Photo Resizer 350x350 lets you compress exam documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your exam documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "What exact pixel size does this version enforce for UPSC forms?",
+        "answer": "Both tabs open at an exact 350 x 350 px square preset for UPSC forms. Accepted file size runs from 20KB to a generous 300KB maximum."
       },
       {
-        "question": "Is UPSC Photo Resizer 350x350 really free? Are there any hidden charges?",
-        "answer": "Yes, UPSC Photo Resizer 350x350 is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict compressors after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens to off-square portraits in the square preset?",
+        "answer": "Aspect-fill cropping recenters them before the JPEG encode, so faces are not stretched. A live readout shows produced dimensions, achieved KB, and a rules-match badge."
       },
       {
-        "question": "Do I need to create an account or sign up to use UPSC Photo Resizer 350x350?",
-        "answer": "No account, signup, or email is required. Simply open the page and start compressing your exam documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use UPSC Photo Resizer 350x350 on mobile devices or tablets?",
-        "answer": "Yes, UPSC Photo Resizer 350x350 works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does UPSC allow a 300KB maximum for the square photo?",
+        "answer": "The UPSC form permits up to 300KB per image, so more detail survives than under the 50KB SSC-style caps. Staying above the 20KB floor also matters for validation."
       },
       {
         "question": "Can my UPSC photo leak while it is being resized to 350 x 350?",
@@ -29182,20 +28222,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Visual Sitemap Generator do?",
-        "answer": "Visual Sitemap Generator lets you generate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Does it crawl my website to build the tree?",
+        "answer": "No. It fetches your XML sitemap through a server route and groups the listed URLs by path segment, so pages missing from the sitemap will not appear in the tree."
       },
       {
-        "question": "Is Visual Sitemap Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Visual Sitemap Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I visualize a sitemap index file?",
+        "answer": "No. The parser looks for <url> entries with <loc> values, so a sitemap index returns a No URLs found error; point it at one of the sub-sitemaps instead."
       },
       {
-        "question": "Do I need to create an account or sign up to use Visual Sitemap Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Visual Sitemap Generator on mobile devices or tablets?",
-        "answer": "Yes, Visual Sitemap Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are folders and counts shown in the tree?",
+        "answer": "Path segments nest under their parent node, folders carry a count of children, and the header reports the total number of pages found in the sitemap."
       },
       {
         "question": "Who downloads the sitemap when I visualize it?",
@@ -29461,20 +28497,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Daily Water Intake Calculator do?",
-        "answer": "Daily Water Intake Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which formula drives the daily water target?",
+        "answer": "A baseline of 35 millilitres per kilogram of body weight, plus 350 millilitres for every 30 minutes of daily exercise."
       },
       {
-        "question": "Is Daily Water Intake Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Daily Water Intake Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Is the exercise addition rounded to whole half-hours?",
+        "answer": "No, it scales linearly: 45 minutes adds 525 ml, so partial half-hour blocks are counted pro rata."
       },
       {
-        "question": "Do I need to create an account or sign up to use Daily Water Intake Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Daily Water Intake Calculator on mobile devices or tablets?",
-        "answer": "Yes, Daily Water Intake Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why do the litre and ounce figures differ slightly in precision?",
+        "answer": "Litres are shown to two decimals while fluid ounces are rounded to a whole number, so the two panels can appear to disagree by a fraction."
       },
       {
         "question": "Does the water intake tool collect my body data?",
@@ -29519,20 +28551,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does WEBP to JPG Converter do?",
-        "answer": "WEBP to JPG Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "What happens to alpha transparency in the JPEG copy?",
+        "answer": "Any alpha channel is composited over white for the JPEG version, since JPEG cannot store transparency."
       },
       {
-        "question": "Is WEBP to JPG Converter really free? Are there any hidden charges?",
-        "answer": "Yes, WEBP to JPG Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What quality does the converter write JPEGs at?",
+        "answer": "The tool opens with JPEG quality parked at the 90 percent mark."
       },
       {
-        "question": "Do I need to create an account or sign up to use WEBP to JPG Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use WEBP to JPG Converter on mobile devices or tablets?",
-        "answer": "Yes, WEBP to JPG Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I see which WebP files converted successfully?",
+        "answer": "Status tags mark each queued WebP as pending, converted or failed, and results save individually or as a compiled ZIP archive."
       },
       {
         "question": "Is there a server round trip when WebP becomes JPEG?",
@@ -29577,20 +28605,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does WEBP to PNG Converter do?",
-        "answer": "WEBP to PNG Converter lets you convert images entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your images never leave your computer, there is no file size limit, and results are instant."
+        "question": "Is the PNG output lossless?",
+        "answer": "WebP photos are decoded and rebuilt as lossless PNG files, with the PNG target pre-selected to match the tool's single purpose."
       },
       {
-        "question": "Is WEBP to PNG Converter really free? Are there any hidden charges?",
-        "answer": "Yes, WEBP to PNG Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Will transparency be preserved when rewriting WebP as PNG?",
+        "answer": "Alpha transparency in the source is preserved through the rewrite."
       },
       {
-        "question": "Do I need to create an account or sign up to use WEBP to PNG Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your images immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use WEBP to PNG Converter on mobile devices or tablets?",
-        "answer": "Yes, WEBP to PNG Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I queue several WebP files at the same time?",
+        "answer": "Several WebP files can share one queue before the conversion run, and every finished file keeps its own download button beside the ZIP option."
       },
       {
         "question": "Does converting WebP to PNG require uploading my image?",
@@ -29636,20 +28660,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Website Cost Calculator do?",
-        "answer": "Website Cost Calculator lets you calculate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is the development estimate calculated?",
+        "answer": "It starts at $50 per page, adds a $500 ecommerce premium when that toggle is on, then applies a 1.5x multiplier for Premium design; the quote card shows the minimum and maximum range."
       },
       {
-        "question": "Is Website Cost Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Website Cost Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the figure include hosting and maintenance?",
+        "answer": "No. The fine print notes that hosting and maintenance are not included; the number covers design and development only."
       },
       {
-        "question": "Do I need to create an account or sign up to use Website Cost Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Website Cost Calculator on mobile devices or tablets?",
-        "answer": "Yes, Website Cost Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does the quote show a range instead of one price?",
+        "answer": "The maximum is roughly 1.3x the minimum, a spread that reflects scope uncertainty; you can toggle ecommerce and design quality to watch the range move."
       },
       {
         "question": "Is my project information saved when I estimate a cost?",
@@ -29695,20 +28715,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Website Ranking Checker do?",
-        "answer": "Website Ranking Checker lets you validate website data entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your website data never leave your computer, there is no file size limit, and results are instant."
+        "question": "Will it tell me where I rank for a keyword?",
+        "answer": "No. The Run button returns written guidance instead of positions: it explains that live rankings need a SERP API or tracking provider and points to Google Search Console for your own domain."
       },
       {
-        "question": "Is Website Ranking Checker really free? Are there any hidden charges?",
-        "answer": "Yes, Website Ranking Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the output box actually contain?",
+        "answer": "A short message in a monospace block that you can select or copy; it is advice about obtaining rank data, not a check of the URL you entered."
       },
       {
-        "question": "Do I need to create an account or sign up to use Website Ranking Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your website data immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Website Ranking Checker on mobile devices or tablets?",
-        "answer": "Yes, Website Ranking Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where should I look for my own rankings instead?",
+        "answer": "Google Search Console shows queries and positions for domains you own; for competitor or third-party ranking data, connect a rank-tracking provider or SERP API."
       },
       {
         "question": "Does this panel query Google for my keyword positions?",
@@ -30139,20 +29155,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Word Counter do?",
-        "answer": "Word Counter lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the word counter treat punctuation and spacing?",
+        "answer": "Any run of whitespace is a single word boundary, so punctuated words count once and multiple spaces do not inflate the total."
       },
       {
-        "question": "Is Word Counter really free? Are there any hidden charges?",
-        "answer": "Yes, Word Counter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does it count characters with or without spaces?",
+        "answer": "The character figure counts every character including spaces and line breaks, matching what most editors display."
       },
       {
-        "question": "Do I need to create an account or sign up to use Word Counter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Word Counter on mobile devices or tablets?",
-        "answer": "Yes, Word Counter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What appears before I start typing?",
+        "answer": "All three counters show zero, and the readout sits under the editor so figures stay visible while you work."
       },
       {
         "question": "Is my draft counted on SopKit's side?",
@@ -30198,20 +29210,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Word Frequency Counter do?",
-        "answer": "Word Frequency Counter lets you process text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is keyword density calculated in the frequency table?",
+        "answer": "Each word's percentage is its count divided by total words in the text, so densities across the table add up toward 100."
       },
       {
-        "question": "Is Word Frequency Counter really free? Are there any hidden charges?",
-        "answer": "Yes, Word Frequency Counter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why do capitalised and lowercase versions of a word count together?",
+        "answer": "Text is lowercased and punctuation is stripped before tallying, so Apple and apple rank as the same entry."
       },
       {
-        "question": "Do I need to create an account or sign up to use Word Frequency Counter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Word Frequency Counter on mobile devices or tablets?",
-        "answer": "Yes, Word Frequency Counter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How many words does the table show?",
+        "answer": "The top 50 by frequency, with the total word count displayed in the panel header above the table."
       },
       {
         "question": "Can anyone else see the text I analyze for word frequency?",
@@ -30257,20 +29265,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Word to Number Converter do?",
-        "answer": "Word to Number Converter lets you convert text content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your text content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I write numbers with hyphens like thirty-four?",
+        "answer": "Yes, hyphens are treated as spaces, so thirty-four and thirty four both parse as 34. Extra whitespace is collapsed automatically."
       },
       {
-        "question": "Is Word to Number Converter really free? Are there any hidden charges?",
-        "answer": "Yes, Word to Number Converter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens if the input contains a word it does not know?",
+        "answer": "The output goes blank rather than guessing, so check for stray words such as and, which is not part of the supported vocabulary."
       },
       {
-        "question": "Do I need to create an account or sign up to use Word to Number Converter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your text content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Word to Number Converter on mobile devices or tablets?",
-        "answer": "Yes, Word to Number Converter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which scales does the word to number converter understand?",
+        "answer": "Ones, tens, hundreds, thousands and millions within a single expression, for example one thousand two hundred thirty-four becomes 1234."
       },
       {
         "question": "Is the phrase I enter converted on a server?",
@@ -30316,20 +29320,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Word to PDF do?",
-        "answer": "Word to PDF lets you convert PDF documents entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your PDF documents never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can I convert an older .doc file?",
+        "answer": "No, only .docx is accepted; the upload rejects other extensions with a message asking for a valid .docx document file."
       },
       {
-        "question": "Is Word to PDF really free? Are there any hidden charges?",
-        "answer": "Yes, Word to PDF is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Will my multi-page document become a multi-page PDF?",
+        "answer": "The rendered layout is captured into a single PDF page sized to its content height, so very long documents produce one tall page rather than paginating at print size."
       },
       {
-        "question": "Do I need to create an account or sign up to use Word to PDF?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your PDF documents immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Word to PDF on mobile devices or tablets?",
-        "answer": "Yes, Word to PDF works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How are headings, lists and tables handled?",
+        "answer": "The DOCX is parsed into semantic HTML first, so the preview shows headings, lists and tables before the capture step turns that layout into the PDF."
       },
       {
         "question": "Is my Word document sent anywhere during conversion?",
@@ -30430,20 +29430,16 @@ Each generated string adheres to the standard 36-character 8-4-4-4-12 canonical 
     },
     "faqs": [
       {
-        "question": "What exactly does Working Days Calculator do?",
-        "answer": "Working Days Calculator lets you calculate numbers entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your numbers never leave your computer, there is no file size limit, and results are instant."
+        "question": "Are the start and end dates included in the working days count?",
+        "answer": "Yes, both endpoints are counted. The header shows total calendar days inclusive of the whole period."
       },
       {
-        "question": "Is Working Days Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, Working Days Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I account for public holidays?",
+        "answer": "Enter the number of holidays to deduct and the total falls by that many days; the calculator does not hold a holiday calendar, so count them yourself."
       },
       {
-        "question": "Do I need to create an account or sign up to use Working Days Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your numbers immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Working Days Calculator on mobile devices or tablets?",
-        "answer": "Yes, Working Days Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I count Saturdays as working days?",
+        "answer": "Yes. Saturdays and Sundays each have their own toggle, so six-day working weeks or Sunday-only closures can be modelled."
       },
       {
         "question": "Where do my working-day calculations actually run?",
@@ -30634,20 +29630,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Channel Age Checker do?",
-        "answer": "YouTube Channel Age Checker lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What comes back from a channel lookup?",
+        "answer": "The channel name, avatar art and about text appear next to the UC-prefixed ID, resolved from the handle, custom URL or video link you paste."
       },
       {
-        "question": "Is YouTube Channel Age Checker really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Channel Age Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does this lookup support a channel age check?",
+        "answer": "It returns the UC-prefixed ID that date queries are built around, along with the channel name and about text; the identifier is what age checks key on."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Channel Age Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Channel Age Checker on mobile devices or tablets?",
-        "answer": "Yes, YouTube Channel Age Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which YouTube address styles does the lookup accept?",
+        "answer": "It accepts /channel/, /user/, /c/ and @handle styles plus video links; the public page is fetched to extract the ID, so deleted or unavailable channels return an error."
       },
       {
         "question": "Are the channel links I paste stored anywhere?",
@@ -30693,20 +29685,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Channel Finder do?",
-        "answer": "YouTube Channel Finder lets you process YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What can I paste to find a creator's channel?",
+        "answer": "Paste a channel address or one of the creator's video links; a matching card shows the display name, picture and description snippet."
       },
       {
-        "question": "Is YouTube Channel Finder really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Channel Finder is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the finder understand older YouTube link formats?",
+        "answer": "Yes, it reads legacy /user/ and /c/ vanity links as well as modern @handles, and traces a video URL back to the channel that uploaded it."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Channel Finder?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Channel Finder on mobile devices or tablets?",
-        "answer": "Yes, YouTube Channel Finder works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens when a pasted link cannot be tied to a channel?",
+        "answer": "A readable error state explains the problem instead of failing silently, and a one-click copy hands over the resolved identifier when the lookup succeeds."
       },
       {
         "question": "What happens to the handles and URLs I search?",
@@ -30752,20 +29740,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Channel ID Extractor do?",
-        "answer": "YouTube Channel ID Extractor lets you read YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What fields show after I paste a video link?",
+        "answer": "The result card names the channel and prints the video title, thumbnail and runtime in seconds, while stream rows list every quality with a size badge."
       },
       {
-        "question": "Is YouTube Channel ID Extractor really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Channel ID Extractor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Where does the request go when I press the analyze action?",
+        "answer": "The link is sent through SopKit's server to a media resolver that reads the video's public data; no YouTube sign-in or account access is involved."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Channel ID Extractor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start reading your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Channel ID Extractor on mobile devices or tablets?",
-        "answer": "Yes, YouTube Channel ID Extractor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens with private, members-only or age-restricted videos?",
+        "answer": "The resolver only sees public media, so restricted videos return an error alert instead of a stream list."
       },
       {
         "question": "Where is my pasted video URL processed?",
@@ -30811,20 +29795,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Channel Statistics do?",
-        "answer": "YouTube Channel Statistics lets you process YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What public profile data does the lookup pull?",
+        "answer": "The channel card shows the avatar, display name and a description excerpt, assembled from the public profile in one pass."
       },
       {
-        "question": "Is YouTube Channel Statistics really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Channel Statistics is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I reuse the resolved identifier outside SopKit?",
+        "answer": "The resolved UC-prefixed ID can be copied for dashboards and API calls, and video links are traced back to the uploader automatically."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Channel Statistics?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Channel Statistics on mobile devices or tablets?",
-        "answer": "Yes, YouTube Channel Statistics works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How fresh is the information shown on the card?",
+        "answer": "The card reflects whatever the public channel page shows at the moment you run the lookup; no cached snapshot from an earlier date is used."
       },
       {
         "question": "Is profile data from the channels I check retained?",
@@ -30870,20 +29850,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Comment Picker do?",
-        "answer": "YouTube Comment Picker lets you process YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does pasting a video link actually return?",
+        "answer": "It traces the video to the channel that uploaded it, then presents the channel name, picture and description on a profile card."
       },
       {
-        "question": "Is YouTube Comment Picker really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Comment Picker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I copy the channel ID for the giveaway record?",
+        "answer": "Yes, the resolved channel ID can be copied straight from the card to keep the campaign record straight."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Comment Picker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Comment Picker on mobile devices or tablets?",
-        "answer": "Yes, YouTube Comment Picker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens when a pasted link is not a YouTube address?",
+        "answer": "Links that are not YouTube addresses are turned away with a clear message, while a loading spinner runs on the Find ID button until the lookup returns."
       },
       {
         "question": "Can anyone see which video or channel I looked up?",
@@ -30929,20 +29905,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Description Extractor do?",
-        "answer": "YouTube Description Extractor lets you read YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which video details does the extractor return?",
+        "answer": "A result card echoes the exact video title and the channel that published it, with runtime in seconds and the thumbnail for visual confirmation."
       },
       {
-        "question": "Is YouTube Description Extractor really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Description Extractor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the stream table let me save?",
+        "answer": "Each row is a downloadable stream with its quality and size; MP3 rows target audio-only picks, and saves use the video title as the output filename."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Description Extractor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start reading your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Description Extractor on mobile devices or tablets?",
-        "answer": "Yes, YouTube Description Extractor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why would a video come back with no data?",
+        "answer": "The link is read publicly through SopKit's server, so private, deleted or age-restricted videos are not visible to that fetcher and return an error instead of metadata."
       },
       {
         "question": "What does SopKit do with the video link I paste?",
@@ -30988,20 +29960,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Description Generator do?",
-        "answer": "YouTube Description Generator lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What structure does the generated description follow?",
+        "answer": "It builds an upload-ready description from your topic: an opening hook, a four-line timestamp block from 00:00 through 09:00, a resources section and closing hashtags."
       },
       {
-        "question": "Is YouTube Description Generator really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Description Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I edit the template before using it?",
+        "answer": "Yes, the timestamp block and resource placeholders are designed to be edited, and the copy button grabs the whole block with line breaks intact."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Description Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Description Generator on mobile devices or tablets?",
-        "answer": "Yes, YouTube Description Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which hashtags close the generated description?",
+        "answer": "It closes with #youtube, #tutorial and #growth, which you can swap for niche tags once the text is copied."
       },
       {
         "question": "Do my topic details get sent to a model or server?",
@@ -31047,20 +30015,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Embed Code Generator do?",
-        "answer": "YouTube Embed Code Generator lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Can an embedded video start at a specific moment?",
+        "answer": "Yes, the start time field seeks the embed to an exact second before you copy the code."
       },
       {
-        "question": "Is YouTube Embed Code Generator really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Embed Code Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which player options can I toggle for the embed?",
+        "answer": "Controls, looping, muted autoplay and nocookie hosting each have a switch, and the live iframe preview updates as you flip them."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Embed Code Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Embed Code Generator on mobile devices or tablets?",
-        "answer": "Yes, YouTube Embed Code Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What input can I paste into the generator?",
+        "answer": "A full watch link or the 11-character video ID; the read-only code box carries the iframe markup with allow and referrer attributes."
       },
       {
         "question": "Is my video choice or any embed setting recorded?",
@@ -31106,20 +30070,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Hashtag Extractor do?",
-        "answer": "YouTube Hashtag Extractor lets you read YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What context lines help with hashtag research?",
+        "answer": "Title, channel and duration give context lines for tag research, and a green banner confirms the platform detected for the link."
       },
       {
-        "question": "Is YouTube Hashtag Extractor really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Hashtag Extractor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which stream details are listed before saving?",
+        "answer": "The stream list shows each quality with a size badge, and audio-only streams are labelled MP3 in the chooser."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Hashtag Extractor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start reading your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Hashtag Extractor on mobile devices or tablets?",
-        "answer": "Yes, YouTube Hashtag Extractor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When does the extractor show an error alert?",
+        "answer": "An error alert appears when the link is empty or returns no media, which is common with private or removed videos."
       },
       {
         "question": "Is the video address I analyze kept in a history?",
@@ -31165,20 +30125,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Hashtag Generator do?",
-        "answer": "YouTube Hashtag Generator lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What raw material does the generator use for topic tags?",
+        "answer": "Paste a channel or video link and the channel name and description come back as raw material for topic tags."
       },
       {
-        "question": "Is YouTube Hashtag Generator really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Hashtag Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the link format affect the lookup?",
+        "answer": "It reads legacy vanity URLs and @handle formats with equal ease, and video URLs are matched to their uploader automatically."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Hashtag Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Hashtag Generator on mobile devices or tablets?",
-        "answer": "Yes, YouTube Hashtag Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I revisit the same source later?",
+        "answer": "The resolved channel ID makes it easy to revisit the same source, and each identifier you lift is confirmed with a copy control and toast."
       },
       {
         "question": "Does the channel lookup leave a trace on your servers?",
@@ -31224,20 +30180,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Money Calculator do?",
-        "answer": "YouTube Money Calculator lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which inputs drive the earnings estimate?",
+        "answer": "A daily views slider spans 100 to 1,000,000 in hundred-view steps, and the RPM slider tunes revenue per thousand views from $0.50 to $20.00."
       },
       {
-        "question": "Is YouTube Money Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Money Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How are the monthly projections calculated?",
+        "answer": "Outputs cover daily, monthly and yearly earnings, with monthly figures using a 30.4-day average for an even split."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Money Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Money Calculator on mobile devices or tablets?",
-        "answer": "Yes, YouTube Money Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are the estimated earnings figures guaranteed?",
+        "answer": "No, they are estimates; the disclaimer notes that results depend on niche, region and video length, and the copy button captures a plain-text summary for your notes."
       },
       {
         "question": "Are my view and RPM figures shared with anyone?",
@@ -31283,20 +30235,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Playlist Link Extractor do?",
-        "answer": "YouTube Playlist Link Extractor lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does each extracted playlist row include?",
+        "answer": "Every video appears with its position number, title, ID and publish date, and titles link out to the watch page in a new tab."
       },
       {
-        "question": "Is YouTube Playlist Link Extractor really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Playlist Link Extractor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I export the playlist listing to a spreadsheet?",
+        "answer": "A summary line reports the playlist ID and total video count, and the CSV download exports every row with quoted, spreadsheet-safe fields."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Playlist Link Extractor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Playlist Link Extractor on mobile devices or tablets?",
-        "answer": "Yes, YouTube Playlist Link Extractor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What can I paste to start an extraction?",
+        "answer": "Accepts a full playlist link or just the PL identifier; a clear message appears when the playlist is unavailable or the URL lacks a list parameter."
       },
       {
         "question": "Does the playlist link I paste get logged?",
@@ -31342,20 +30290,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Region Restriction Checker do?",
-        "answer": "YouTube Region Restriction Checker lets you validate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does pasting a video or channel link tell me?",
+        "answer": "The tool reads the public page behind the link and reports the profile it finds, laying out the channel name, artwork and description."
       },
       {
-        "question": "Is YouTube Region Restriction Checker really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Region Restriction Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I reuse the resolved channel ID in other checks?",
+        "answer": "The ID comes back in a monospace field with a copy button and success toast, ready to paste into other validation tools."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Region Restriction Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Region Restriction Checker on mobile devices or tablets?",
-        "answer": "Yes, YouTube Region Restriction Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens with an invalid address?",
+        "answer": "Invalid addresses produce a message that tells you what went wrong instead of a blank result."
       },
       {
         "question": "Is the video or channel link I check saved?",
@@ -31401,20 +30345,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Subscribe Link Generator do?",
-        "answer": "YouTube Subscribe Link Generator lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What kinds of addresses can become a subscribe link?",
+        "answer": "An @handle, a channel ID or a full channel URL all convert into a subscribe link ready for bios, cards or descriptions."
       },
       {
-        "question": "Is YouTube Subscribe Link Generator really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Subscribe Link Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the sub_confirmation parameter behave?",
+        "answer": "The generated link appends sub_confirmation=1, which triggers the confirmation prompt when viewers open it."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Subscribe Link Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Subscribe Link Generator on mobile devices or tablets?",
-        "answer": "Yes, YouTube Subscribe Link Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens to /c/, /user/ and /channel/ paths in my URL?",
+        "answer": "The generator strips those path styles and the @ prefix down to the handle, so the output stays clean and short."
       },
       {
         "question": "Where do the channel names I convert go?",
@@ -31460,20 +30400,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Tag Extractor do?",
-        "answer": "YouTube Tag Extractor lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What appears on the extractor's result card?",
+        "answer": "The card carries the title, channel name and duration in seconds, with a status banner naming the source platform once processing finishes."
       },
       {
-        "question": "Is YouTube Tag Extractor really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Tag Extractor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I tell which rows are audio-only?",
+        "answer": "Quality rows list stream sizes so you know what you are handling, and entries marked MP3 target the audio-only stream."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Tag Extractor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Tag Extractor on mobile devices or tablets?",
-        "answer": "Yes, YouTube Tag Extractor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why does a pasted link fail to process?",
+        "answer": "A destructive alert spells out why the link could not be processed; the fetcher reads public data only, so private videos cannot be pulled."
       },
       {
         "question": "Will the video I analyze appear in any SopKit list?",
@@ -31519,20 +30455,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Tag Generator do?",
-        "answer": "YouTube Tag Generator lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What seeds the suggested tag list?",
+        "answer": "Paste a channel link and the display name and description excerpt supply the seed words for the tag list."
       },
       {
-        "question": "Is YouTube Tag Generator really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Tag Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which link styles does the tag lookup accept?",
+        "answer": "It works whether the link is an @handle, /c/, /user/ or /channel/ address, and video URLs are matched to their uploader automatically."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Tag Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Tag Generator on mobile devices or tablets?",
-        "answer": "Yes, YouTube Tag Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How is the channel ID presented for copying?",
+        "answer": "Channel ID output is monospace and copy-ready, and the Find ID button reports its own progress while the page is fetched."
       },
       {
         "question": "Do you keep the channel URL I paste for keyword ideas?",
@@ -31578,20 +30510,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does Youtube Thumbnail Downloader do?",
-        "answer": "Youtube Thumbnail Downloader lets you download YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which thumbnail sizes can I pull from a video?",
+        "answer": "Four sizes from a watch, embed or youtu.be link: max-res 1080p/720p, SD 480p, HQ 360p and MQ 180p."
       },
       {
-        "question": "Is Youtube Thumbnail Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Youtube Thumbnail Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What if the max-resolution thumbnail does not exist?",
+        "answer": "Unavailable max-res files hide themselves instead of showing a broken card, so the smaller sizes still work."
       },
       {
-        "question": "Do I need to create an account or sign up to use Youtube Thumbnail Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Youtube Thumbnail Downloader on mobile devices or tablets?",
-        "answer": "Yes, Youtube Thumbnail Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How is a saved thumbnail named?",
+        "answer": "The download button saves as youtube-thumbnail-<video ID>.jpg, and each option renders its own preview before you commit."
       },
       {
         "question": "Does the thumbnail download route through SopKit's servers?",
@@ -31637,20 +30565,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Thumbnail Text Generator do?",
-        "answer": "YouTube Thumbnail Text Generator lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What kind of text does the generator produce?",
+        "answer": "Six short, glanceable phrases for thumbnail overlays, kept to one to three words so they hold up at small sizes."
       },
       {
-        "question": "Is YouTube Thumbnail Text Generator really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Thumbnail Text Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Why are the thumbnail phrases all in capitals?",
+        "answer": "Options stay in caps for contrast against busy artwork, and each phrase can be copied on its own from its row."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Thumbnail Text Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Thumbnail Text Generator on mobile devices or tablets?",
-        "answer": "Yes, YouTube Thumbnail Text Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What themes do the phrase options cover?",
+        "answer": "The set includes a stopping cue, an easy-way label and a ten-times-faster promise to cover common attention angles."
       },
       {
         "question": "Are the phrases I generate saved with my topic?",
@@ -31696,20 +30620,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Timestamp Link Generator do?",
-        "answer": "YouTube Timestamp Link Generator lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How are minutes and seconds combined into the link?",
+        "answer": "Total time is combined automatically from the minute and second fields, and the second field caps entries at 59 to keep values sensible."
       },
       {
-        "question": "Is YouTube Timestamp Link Generator really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Timestamp Link Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the tool modify my original video link?",
+        "answer": "Short youtu.be links are rebuilt with a t= parameter holding total seconds, while standard watch links keep their v= parameter and gain a t=...s suffix."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Timestamp Link Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Timestamp Link Generator on mobile devices or tablets?",
-        "answer": "Yes, YouTube Timestamp Link Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What do I need to paste to build a timestamp link?",
+        "answer": "A watch link or youtu.be address plus minutes and seconds; the copy button snares the finished link with a checkmark and toast."
       },
       {
         "question": "Is the video link I use to build timestamps stored?",
@@ -31755,20 +30675,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does Youtube Video Title Capitalizer do?",
-        "answer": "Youtube Video Title Capitalizer lets you process YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which capitalisation modes are available?",
+        "answer": "Four modes: AP title case, start case, all caps and lowercase."
       },
       {
-        "question": "Is Youtube Video Title Capitalizer really free? Are there any hidden charges?",
-        "answer": "Yes, Youtube Video Title Capitalizer is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does AP mode treat small words like and or the?",
+        "answer": "AP mode keeps small words like a, an, of and the lowercase mid-title, while first and last words always receive capitals in title case mode."
       },
       {
-        "question": "Do I need to create an account or sign up to use Youtube Video Title Capitalizer?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Youtube Video Title Capitalizer on mobile devices or tablets?",
-        "answer": "Yes, Youtube Video Title Capitalizer works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Where can I grab the transformed title from?",
+        "answer": "The result appears in a selectable monospace panel, and the copy action confirms with a toast and a brief checkmark; a clear button resets the input."
       },
       {
         "question": "Does my title text get uploaded anywhere?",
@@ -31814,20 +30730,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Title Extractor do?",
-        "answer": "YouTube Title Extractor lets you read YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What exactly comes back from a video link?",
+        "answer": "The result card reproduces the exact title YouTube serves for the video, with uploader name and duration confirming you pulled the right one."
       },
       {
-        "question": "Is YouTube Title Extractor really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Title Extractor is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What happens when a title is extremely long?",
+        "answer": "Long titles truncate in the card instead of breaking the layout, and saves carry the extracted title as the file name."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Title Extractor?",
-        "answer": "No account, signup, or email is required. Simply open the page and start reading your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Title Extractor on mobile devices or tablets?",
-        "answer": "Yes, YouTube Title Extractor works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Why do blank or broken links raise an alert?",
+        "answer": "A readable destructive alert explains the problem, because the fetcher needs a resolvable public video to read anything from."
       },
       {
         "question": "How long is my pasted link kept around?",
@@ -31873,20 +30785,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Title Generator do?",
-        "answer": "YouTube Title Generator lets you generate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What title angles does the generator produce?",
+        "answer": "Six ready-made angles appear at once, covering how-to guides, 30-day experiments, beginner blueprints and mistake lists."
       },
       {
-        "question": "Is YouTube Title Generator really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Title Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can I preview the formats before typing a topic?",
+        "answer": "Blank topics fall back to a demo keyword so you can preview the formats, and every option weaves your topic wording into the hook."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Title Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Title Generator on mobile devices or tablets?",
-        "answer": "Yes, YouTube Title Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I lift a single title idea?",
+        "answer": "The copy icon on each card lifts a single idea on its own, so you can mix and match hooks across the six options."
       },
       {
         "question": "What happens to the topic I type?",
@@ -31932,20 +30840,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Title Length Checker do?",
-        "answer": "YouTube Title Length Checker lets you validate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What character range does the checker consider ideal?",
+        "answer": "The 20 to 60 character range is flagged as the SEO-friendly sweet spot, while a live counter tracks your title against a 100-character field."
       },
       {
-        "question": "Is YouTube Title Length Checker really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Title Length Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How do I know when a title has become too long?",
+        "answer": "A status label marks perfect, short and overlong titles in color while the progress bar fills toward the 100-character ceiling."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Title Length Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Title Length Checker on mobile devices or tablets?",
-        "answer": "Yes, YouTube Title Length Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "When does the preview card show a line break?",
+        "answer": "The preview shows where the line breaks once a title passes 60 characters, and the copy button lifts the title with a checkmark confirmation."
       },
       {
         "question": "Is the title I type sent to any service?",
@@ -31991,20 +30895,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Video Count Checker do?",
-        "answer": "YouTube Video Count Checker lets you validate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the lookup resolve from a link?",
+        "answer": "Paste a channel link or a video link to locate the owner profile, with the channel name, avatar and description shown on a card."
       },
       {
-        "question": "Is YouTube Video Count Checker really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Video Count Checker is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How is the video count queried from the identifier?",
+        "answer": "The resolved UC-prefixed ID is the key upload listings are queried with; the lookup reads the public page, so no API key is required."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Video Count Checker?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Video Count Checker on mobile devices or tablets?",
-        "answer": "Yes, YouTube Video Count Checker works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which link forms does the checker support?",
+        "answer": "Handles, custom URLs, legacy usernames and direct channel links all work, and errors explain when a link cannot be matched to a channel."
       },
       {
         "question": "What happens to the channel URL I paste when checking totals?",
@@ -32050,20 +30950,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does Youtube Video Downloader do?",
-        "answer": "Youtube Video Downloader lets you download YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which YouTube URL types can I paste here?",
+        "answer": "It accepts standard watch links, youtu.be shares and Shorts URLs."
       },
       {
-        "question": "Is Youtube Video Downloader really free? Are there any hidden charges?",
-        "answer": "Yes, Youtube Video Downloader is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict downloaders after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What details show before I choose a stream?",
+        "answer": "The result card lays out thumbnail, title, runtime in seconds and channel, and every format in the stream list shows its quality label and file size."
       },
       {
-        "question": "Do I need to create an account or sign up to use Youtube Video Downloader?",
-        "answer": "No account, signup, or email is required. Simply open the page and start downloading your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Youtube Video Downloader on mobile devices or tablets?",
-        "answer": "Yes, Youtube Video Downloader works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens for private or age-restricted videos?",
+        "answer": "The downloader reads public streams only, so private, members-only or age-restricted videos fail with an error instead of offering a download list."
       },
       {
         "question": "Is a record kept of the videos I convert?",
@@ -32109,20 +31005,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Video Statistics do?",
-        "answer": "YouTube Video Statistics lets you validate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "How do I find the channel behind a video?",
+        "answer": "Drop in the video URL and the tool finds the channel it belongs to, showing the uploader's name, avatar and profile blurb."
       },
       {
-        "question": "Is YouTube Video Statistics really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Video Statistics is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict validators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What is the returned channel ID good for?",
+        "answer": "The ID comes back in a monospace field for metric lookups and can be copied with one click."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Video Statistics?",
-        "answer": "No account, signup, or email is required. Simply open the page and start validateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Video Statistics on mobile devices or tablets?",
-        "answer": "Yes, YouTube Video Statistics works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "What happens if I paste a non-YouTube link?",
+        "answer": "Non-YouTube links are turned away with a specific message, and a search icon turns into a spinner while the lookup is in flight."
       },
       {
         "question": "Are the video lookups I run tied to my identity?",
@@ -32168,20 +31060,16 @@ YAML relies heavily on strict indentation and syntax rules. When syntax errors o
     },
     "faqs": [
       {
-        "question": "What exactly does YouTube Views Ratio Calculator do?",
-        "answer": "YouTube Views Ratio Calculator lets you calculate YouTube content entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your YouTube content never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the calculator need to get started?",
+        "answer": "Begin by pasting the video link you are reviewing; the profile card then lays out the channel name, artwork and about excerpt."
       },
       {
-        "question": "Is YouTube Views Ratio Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, YouTube Views Ratio Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What context does the profile blurb provide?",
+        "answer": "The blurb offers context on the channel's niche and output, and the UC-prefixed identifier can be copied for use in analytics tools."
       },
       {
-        "question": "Do I need to create an account or sign up to use YouTube Views Ratio Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your YouTube content immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use YouTube Views Ratio Calculator on mobile devices or tablets?",
-        "answer": "Yes, YouTube Views Ratio Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the tool accept channel addresses as well as videos?",
+        "answer": "It handles direct channel addresses as well as watch links, and a loading state keeps the Find ID button honest during the request."
       },
       {
         "question": "Is the video link I use to identify the channel recorded?",
@@ -33528,20 +32416,16 @@ Anyone who needs to convert files between formats — designers, developers, stu
     },
     "faqs": [
       {
-        "question": "What exactly does AI Prompt Improver do?",
-        "answer": "AI Prompt Improver lets you process AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "How is an AI prompt scored by this tool?",
+        "answer": "It scores out of 100 across role, context, constraints, format, and examples, with each dimension worth 20 points and marked detected or missing."
       },
       {
-        "question": "Is AI Prompt Improver really free? Are there any hidden charges?",
-        "answer": "Yes, AI Prompt Improver is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the Improve Prompt action do to my draft?",
+        "answer": "It rebuilds detected parts into Task, Role, Context, Constraints, and Format sections, and turns constraint sentences into bullet items. Missing dimensions are filled with bracketed placeholder suggestions."
       },
       {
-        "question": "Do I need to create an account or sign up to use AI Prompt Improver?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use AI Prompt Improver on mobile devices or tablets?",
-        "answer": "Yes, AI Prompt Improver works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do the color codes on the prompt score work?",
+        "answer": "The total color-codes red, amber, or emerald around the 40 and 80 marks, so a weak draft is easy to spot. Each dimension badge shows which of the five parts was detected."
       },
       {
         "question": "Is my draft prompt uploaded anywhere when I click Analyze?",
@@ -33587,20 +32471,16 @@ Anyone who needs to convert files between formats — designers, developers, stu
     },
     "faqs": [
       {
-        "question": "What exactly does AI Token Counter & Cost Calculator do?",
-        "answer": "AI Token Counter & Cost Calculator lets you calculate AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the token counter estimate token counts?",
+        "answer": "The estimate averages ceil(characters divided by 4) with words times 1.33 and warns of a 10 to 20 percent deviation. It is a sizing aid, not an exact tokenizer."
       },
       {
-        "question": "Is AI Token Counter & Cost Calculator really free? Are there any hidden charges?",
-        "answer": "Yes, AI Token Counter & Cost Calculator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict calculators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which models and prices are in the cost table?",
+        "answer": "Six model cards cover GPT-5, GPT-4o mini, Claude Sonnet 4.5, Opus 4.1, Gemini 2.5 Flash, and Llama 4 Scout, priced per 1M tokens. Costs split into input, output, per-request, and per-1,000-request figures."
       },
       {
-        "question": "Do I need to create an account or sign up to use AI Token Counter & Cost Calculator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start calculateing your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use AI Token Counter & Cost Calculator on mobile devices or tablets?",
-        "answer": "Yes, AI Token Counter & Cost Calculator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I price a whole batch of prompts at once?",
+        "answer": "Yes, the batch tab prices one prompt per line and totals characters, tokens, and cost. Copy Estimate exports the model name and USD breakdown as a plain-text summary."
       },
       {
         "question": "Are the prompts and cost figures I test saved or shared?",
@@ -33646,20 +32526,16 @@ Anyone who needs to convert files between formats — designers, developers, stu
     },
     "faqs": [
       {
-        "question": "What exactly does Few-Shot Prompt Formatter do?",
-        "answer": "Few-Shot Prompt Formatter lets you convert AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "How many example pairs can I format into a few-shot prompt?",
+        "answer": "Up to twelve example pairs can be added and removed individually. Pairs left blank are trimmed from the preview automatically."
       },
       {
-        "question": "Is Few-Shot Prompt Formatter really free? Are there any hidden charges?",
-        "answer": "Yes, Few-Shot Prompt Formatter is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict converters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Which few-shot layouts can the formatter produce?",
+        "answer": "Numbered Turns labels each pair as Example N, Input, and Output. Alternatives include XML example tags, Chat JSON messages, and Markdown headings with horizontal rules."
       },
       {
-        "question": "Do I need to create an account or sign up to use Few-Shot Prompt Formatter?",
-        "answer": "No account, signup, or email is required. Simply open the page and start converting your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Few-Shot Prompt Formatter on mobile devices or tablets?",
-        "answer": "Yes, Few-Shot Prompt Formatter works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Which layout should I pick for chat models?",
+        "answer": "Chat JSON emits system, user, and assistant messages as a formatted array, which suits chat-style APIs. Numbered Turns and Markdown are easier to paste into plain chats."
       },
       {
         "question": "Are my few-shot examples or task instruction stored anywhere?",
@@ -33751,20 +32627,16 @@ Every generated command includes an itemized breakdown explaining what each flag
     },
     "faqs": [
       {
-        "question": "What exactly does AI Image Prompt Extender do?",
-        "answer": "AI Image Prompt Extender lets you process AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "What do the modifier chips add to an image prompt?",
+        "answer": "Chips are sorted into style, lighting, camera, mood, detail, and color families. Toggled choices merge with the base prompt into one comma-separated description."
       },
       {
-        "question": "Is AI Image Prompt Extender really free? Are there any hidden charges?",
-        "answer": "Yes, AI Image Prompt Extender is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does Midjourney mode change the extended prompt?",
+        "answer": "It appends --ar, an optional --v 7 flag, and a --stylize slider from 0 to 1000. Aspect shortcuts cover 16:9, 1:1, 9:16, 4:5, and 3:2."
       },
       {
-        "question": "Do I need to create an account or sign up to use AI Image Prompt Extender?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use AI Image Prompt Extender on mobile devices or tablets?",
-        "answer": "Yes, AI Image Prompt Extender works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I see which modifiers are active before copying?",
+        "answer": "Active modifiers stay listed under the output so unwanted terms can be removed first. The model switch shows tailored notes for Midjourney, Stable Diffusion, DALL-E, and Flux."
       },
       {
         "question": "Does my base image description travel anywhere while I add modifiers?",
@@ -33810,20 +32682,16 @@ Every generated command includes an itemized breakdown explaining what each flag
     },
     "faqs": [
       {
-        "question": "What exactly does LLM Output Cleaner do?",
-        "answer": "LLM Output Cleaner lets you read AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "What kinds of junk does the LLM output cleaner strip?",
+        "answer": "Eight switches cover code fences, chat prefixes, blank lines, outer quotes, bullets, and JSON cleanup. Chat prefix stripping targets labels like assistant, AI, bot, ChatGPT, Claude, GPT, and Copilot."
       },
       {
-        "question": "Is LLM Output Cleaner really free? Are there any hidden charges?",
-        "answer": "Yes, LLM Output Cleaner is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict readers after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Can the cleaner pull valid JSON out of a messy reply?",
+        "answer": "Extract JSON finds the first balanced object or array and pretty-prints it with a two-space indent. Fence removal can also keep only the first fenced block."
       },
       {
-        "question": "Do I need to create an account or sign up to use LLM Output Cleaner?",
-        "answer": "No account, signup, or email is required. Simply open the page and start reading your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use LLM Output Cleaner on mobile devices or tablets?",
-        "answer": "Yes, LLM Output Cleaner works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Does the cleaner show how much text and tokens were saved?",
+        "answer": "Before and after badges track character and estimated token counts while you paste. Asterisk, dot, and square bullet markers all normalize to plain hyphens."
       },
       {
         "question": "Is it safe to paste confidential model output into the cleaner?",
@@ -33869,20 +32737,16 @@ Every generated command includes an itemized breakdown explaining what each flag
     },
     "faqs": [
       {
-        "question": "What exactly does Negative Prompt Generator do?",
-        "answer": "Negative Prompt Generator lets you generate AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "How are negative prompt terms selected in this tool?",
+        "answer": "Term chips toggle in and out across quality, anatomy, text and watermarks, style contamination, and framing groups, with a banner counting the current selection."
       },
       {
-        "question": "Is Negative Prompt Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Negative Prompt Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "How does the negative prompt format differ for Midjourney and Flux?",
+        "answer": "Midjourney joins every selection behind a single --no parameter. Flux mode keeps only the first eight terms to avoid over-constraining natural language."
       },
       {
-        "question": "Do I need to create an account or sign up to use Negative Prompt Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Negative Prompt Generator on mobile devices or tablets?",
-        "answer": "Yes, Negative Prompt Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Are there starter presets for common photo types?",
+        "answer": "Portrait, landscape, and product photo presets load a tuned starter set in one click. Repeated picks collapse automatically before the list is copied."
       },
       {
         "question": "Can anyone see which negative terms I select while composing?",
@@ -33928,20 +32792,16 @@ Every generated command includes an itemized breakdown explaining what each flag
     },
     "faqs": [
       {
-        "question": "What exactly does Prompt A/B Comparator do?",
-        "answer": "Prompt A/B Comparator lets you process AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "What does the side-by-side prompt comparison show?",
+        "answer": "Two prompt boxes produce a word-level diff with green additions and struck-through removals. Panels compare words, characters, estimated tokens, and lines with signed deltas."
       },
       {
-        "question": "Is Prompt A/B Comparator really free? Are there any hidden charges?",
-        "answer": "Yes, Prompt A/B Comparator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "Does the comparator check whether a prompt is well structured?",
+        "answer": "Yes, a checklist marks whether each version carries role, context, constraints, format, and example cues. Token estimates assume one token per four characters for relative sizing."
       },
       {
-        "question": "Do I need to create an account or sign up to use Prompt A/B Comparator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Prompt A/B Comparator on mobile devices or tablets?",
-        "answer": "Yes, Prompt A/B Comparator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I export the difference between two prompts?",
+        "answer": "Copy Report exports added and removed segments as plain text with counts. A legend under the diff explains what the strikes and highlights mean."
       },
       {
         "question": "Does pasting two prompt versions expose either of them to the server?",
@@ -33987,20 +32847,16 @@ Every generated command includes an itemized breakdown explaining what each flag
     },
     "faqs": [
       {
-        "question": "What exactly does Prompt Template Generator do?",
-        "answer": "Prompt Template Generator lets you generate AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "How does the template generator detect variables?",
+        "answer": "It finds double-brace variable placeholders live and shows a count badge over the editor. The Fill Variables panel labels each one in title case and counts completed fields."
       },
       {
-        "question": "Is Prompt Template Generator really free? Are there any hidden charges?",
-        "answer": "Yes, Prompt Template Generator is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict generators after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What starter templates are included?",
+        "answer": "Six starters span blog outlines, code review, cold email, product copy, study explainers, and meeting summaries."
       },
       {
-        "question": "Do I need to create an account or sign up to use Prompt Template Generator?",
-        "answer": "No account, signup, or email is required. Simply open the page and start generateing your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Prompt Template Generator on mobile devices or tablets?",
-        "answer": "Yes, Prompt Template Generator works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How does the live preview handle unfilled variables?",
+        "answer": "The preview substitutes filled values and shows unfilled slots as bracketed names. Named templates can be saved, reopened, or deleted from a list that persists between sessions."
       },
       {
         "question": "Where do the templates I save with a name actually live?",
@@ -34046,20 +32902,16 @@ Every generated command includes an itemized breakdown explaining what each flag
     },
     "faqs": [
       {
-        "question": "What exactly does Text Chunk Splitter for RAG do?",
-        "answer": "Text Chunk Splitter for RAG lets you process AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "What units can the chunk splitter use for RAG pipelines?",
+        "answer": "Split by tokens estimated at characters divided by four, by words, or by characters. Chunk size and overlap fields warn when overlap climbs to the chunk size."
       },
       {
-        "question": "Is Text Chunk Splitter for RAG really free? Are there any hidden charges?",
-        "answer": "Yes, Text Chunk Splitter for RAG is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict utilitys after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does paragraph-aware mode do to my document?",
+        "answer": "It keeps blank-line paragraphs whole and hard-splits only oversized ones. Overlap tails are carried into the next chunk so boundary sentences stay connected."
       },
       {
-        "question": "Do I need to create an account or sign up to use Text Chunk Splitter for RAG?",
-        "answer": "No account, signup, or email is required. Simply open the page and start processing your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use Text Chunk Splitter for RAG on mobile devices or tablets?",
-        "answer": "Yes, Text Chunk Splitter for RAG works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "How do I export all the chunks?",
+        "answer": "Each chunk card lists its number, character count, and approximate token load. Copy All or export every chunk into text-chunks.txt with --- separators."
       },
       {
         "question": "Do the documents I split for embeddings leave this page?",
@@ -34105,20 +32957,16 @@ Every generated command includes an itemized breakdown explaining what each flag
     },
     "faqs": [
       {
-        "question": "What exactly does XML Prompt Formatter for Claude do?",
-        "answer": "XML Prompt Formatter for Claude lets you format AI prompts entirely within your browser. Unlike online services that upload your data to remote servers for processing, this tool performs all operations locally on your device. This means your AI prompts never leave your computer, there is no file size limit, and results are instant."
+        "question": "Which sections can the XML formatter wrap a Claude prompt in?",
+        "answer": "Five toggleable sections build context, instructions, examples, thinking, and output format tags. Composed blocks are syntax-highlighted so opening and closing tags stand apart."
       },
       {
-        "question": "Is XML Prompt Formatter for Claude really free? Are there any hidden charges?",
-        "answer": "Yes, XML Prompt Formatter for Claude is completely free with no hidden charges, premium tiers, or usage limits. Unlike freemium tools that restrict formatters after a trial period or limit file sizes for free users, SopKit provides unlimited access to all features at no cost. There are no ads disguised as features, no watermark upsells, and no forced account creation."
+        "question": "What does the thinking section add to the prompt?",
+        "answer": "It ships with starter text telling the model to reason inside thinking tags before answering. The section can be toggled off when you do not want visible planning."
       },
       {
-        "question": "Do I need to create an account or sign up to use XML Prompt Formatter for Claude?",
-        "answer": "No account, signup, or email is required. Simply open the page and start formating your AI prompts immediately. Most online tools require registration to collect your email, track your usage, and build a profile for marketing. SopKit does none of this."
-      },
-      {
-        "question": "Can I use XML Prompt Formatter for Claude on mobile devices or tablets?",
-        "answer": "Yes, XML Prompt Formatter for Claude works on any device with a modern web browser, including smartphones, tablets, and desktop computers. The interface is responsive and adapts to your screen size. Because processing happens locally, there is no need for a fast internet connection — the tool works even on slow networks or offline after the initial page load."
+        "question": "Can I parse a prompt I already wrote with XML tags?",
+        "answer": "Yes, the Parse Existing tab renders a pasted prompt's tag tree with nesting counts and up to eighty characters of each leaf's content. Parsing recurses five levels deep."
       },
       {
         "question": "Is the XML-tagged prompt I paste into the parser read by the backend?",
@@ -34490,8 +33338,16 @@ Every generated command includes an itemized breakdown explaining what each flag
         "answer": "The tool fetches the master 800x800 avatar image uploaded by the channel owner."
       },
       {
-        "question": "Is this tool free?",
-        "answer": "Yes, it is completely free with no usage limits."
+        "question": "What resolution does the channel logo come back at?",
+        "answer": "The tool retrieves the highest-resolution avatar the source exposes for the channel behind your link, aiming for the master image up to 800 by 800 pixels."
+      },
+      {
+        "question": "Which addresses can I paste for a logo lookup?",
+        "answer": "Paste a channel or video address into the single input field; the result panel shows the artwork, uploader and length details that come back."
+      },
+      {
+        "question": "What happens when a logo lookup fails?",
+        "answer": "Failed lookups produce plain-language guidance instead of a blank screen, and only data the source exposes publicly can be returned."
       },
       {
         "question": "Do you store the links I use to pull artwork?",
