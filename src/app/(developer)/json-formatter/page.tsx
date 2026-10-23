@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "JSON Formatter",
-	description: "Private JSON Formatter: privately format code and data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	description: "Format, validate and beautify JSON online for free: pretty-print minified JSON, adjust indentation and spot syntax errors instantly. Runs in your browser with no uploads and no signup.",
 	route: "/json-formatter",
 	category: "developer",
 });
