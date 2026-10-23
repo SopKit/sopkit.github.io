@@ -7,14 +7,14 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 
 export const metadata = {
 	title: "Free EMI Calculator for Loans Online - No Signup | SopKit",
-	description: "Compute rates, taxes, averages, and conversions with our free EMI Calculator for Loans online. Quick, accurate browser calculator with no registration.",
-	keywords: "emi calculator for loans, free online tool, no signup, emi calculator for loans online, calculators, SopKit",
+	description: "Enter your loan principal, interest rate and tenure to calculate the monthly EMI and see the total interest over the loan's life. Free, no signup.",
+	keywords: "emi calculator, emi calculator for loans, loan emi calculator, monthly loan payment calculator, SopKit",
 	alternates: {
 		canonical: `${SITE_URL}/emi-calculator`,
 	},
 	openGraph: {
 		title: "Free EMI Calculator for Loans Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free EMI Calculator for Loans online. Quick, accurate browser calculator with no registration.",
+		description: "Enter your loan principal, interest rate and tenure to calculate the monthly EMI and see the total interest over the loan's life. Free, no signup.",
 		url: `${SITE_URL}/emi-calculator`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -23,7 +23,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free EMI Calculator for Loans Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free EMI Calculator for Loans online. Quick, accurate browser calculator with no registration.",
+		description: "Enter your loan principal, interest rate and tenure to calculate the monthly EMI and see the total interest over the loan's life. Free, no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
