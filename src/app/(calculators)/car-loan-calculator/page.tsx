@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Car Loan Calculator",
-	description: "Privacy-friendly, 100% client-side car loan calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Calculate your car loan EMI online: enter the loan amount, interest rate and tenure to see your monthly EMI, total interest payable and total repayment instantly. Free, no signup.",
 	route: "/car-loan-calculator",
 	category: "calculators",
 });
