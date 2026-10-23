@@ -7,14 +7,14 @@ import FinanceCalculators from "@/components/tools/impl/FinanceCalculators";
 
 export const metadata = {
 	title: "Free SIP Calculator India Online - No Signup | SopKit",
-	description: "Compute rates, taxes, averages, and conversions with our free SIP Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
-	keywords: "sip calculator india, free online tool, no signup, sip calculator india online, calculators, SopKit",
+	description: "Calculate SIP returns in India: enter your monthly investment, expected annual return and years to see invested amount, estimated gains and maturity value. Free, no signup.",
+	keywords: "sip calculator, sip calculator india, mutual fund sip returns calculator, monthly investment calculator, sip maturity value, SopKit",
 	alternates: {
 		canonical: `${SITE_URL}/sip-calculator`,
 	},
 	openGraph: {
 		title: "Free SIP Calculator India Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free SIP Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
+		description: "Calculate SIP returns in India: enter your monthly investment, expected annual return and years to see invested amount, estimated gains and maturity value. Free, no signup.",
 		url: `${SITE_URL}/sip-calculator`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -23,7 +23,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free SIP Calculator India Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free SIP Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
+		description: "Calculate SIP returns in India: enter your monthly investment, expected annual return and years to see invested amount, estimated gains and maturity value. Free, no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
