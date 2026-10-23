@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Merge PDF Online",
-	description: "Private Merge PDF: privately process PDF documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	description: "Merge PDF files online for free: combine multiple PDFs into one file, arrange the page order and download the result instantly. Files are processed in your browser with no uploads and no signup.",
 	route: "/merge-pdf-online",
 	category: "pdf",
 });
