@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "BMI + Ideal Weight Calculator",
-	description: "Privacy-friendly, 100% client-side bmi + ideal weight calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your weight in kilograms and height in centimetres to get your BMI, its weight category, and an estimated ideal weight from the Devine formula, all on one screen. Free, no signup.",
 	route: "/bmi-ideal-weight-calculator",
 	category: "calculators",
 });
