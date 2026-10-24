@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Paint Calculator",
-	description: "Privacy-friendly, 100% client-side paint calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter a room's length, width and wall height, plus coats, doors and windows, to work out how much paint you need in litres and gallons before you buy.",
 	route: "/paint-calculator",
 	category: "calculators",
 });
