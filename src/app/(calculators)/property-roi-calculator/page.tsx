@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Property ROI Calculator",
-	description: "Privacy-friendly, 100% client-side property roi calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter the purchase price, monthly rental income and annual expenses to see gross rental yield and net annual ROI, excluding appreciation. Free, no signup.",
 	route: "/property-roi-calculator",
 	category: "calculators",
 });
