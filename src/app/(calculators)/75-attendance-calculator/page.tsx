@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "75% Attendance Calculator",
-	description: "Privacy-friendly, 100% client-side 75% attendance calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter classes attended, total classes held and target percentage to see your current attendance, how many classes you can safely miss, and how many to attend to hit it. Free, no signup.",
 	route: "/75-attendance-calculator",
 	category: "calculators",
 });
