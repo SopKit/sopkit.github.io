@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Brick Calculator",
-	description: "Privacy-friendly, 100% client-side brick calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your wall length, height and thickness plus your brick size to estimate how many bricks you need, the wall volume, and the mortar volume for the job. Free, no signup.",
 	route: "/brick-calculator",
 	category: "calculators",
 });
