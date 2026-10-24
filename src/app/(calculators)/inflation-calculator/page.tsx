@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Inflation Calculator",
-	description: "Privacy-friendly, 100% client-side inflation calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter an amount, an annual inflation rate and a number of years to see the future sum needed to keep pace and what today's money will be worth then.",
 	route: "/inflation-calculator",
 	category: "calculators",
 });
