@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Number to Words Converter",
-	description: "Privacy-friendly, 100% client-side number to words conversion. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Type any number to see it written out in English words using the Indian numbering system, ready to copy onto cheques, invoices and official documents.",
 	route: "/number-to-words-converter",
 	category: "calculators",
 });
