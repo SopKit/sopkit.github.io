@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Recurring Deposit (RD) Calculator",
-	description: "Privacy-friendly, 100% client-side recurring deposit (rd) calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your monthly deposit, interest rate and tenure to project your recurring deposit maturity value, total invested and interest earned, with a year-wise growth table.",
 	route: "/rd-calculator",
 	category: "calculators",
 });
