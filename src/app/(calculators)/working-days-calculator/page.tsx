@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Working Days Calculator",
-	description: "Privacy-friendly, 100% client-side working days calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Pick a start and end date, exclude Saturdays, Sundays and custom holidays, and get the net business days in the period plus a calendar-day breakdown.",
 	route: "/working-days-calculator",
 	category: "calculators",
 });
