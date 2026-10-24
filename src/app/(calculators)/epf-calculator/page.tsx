@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "EPF Calculator (Employee Provident Fund)",
-	description: "Privacy-friendly, 100% client-side epf calculator (employee provident fund). Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your monthly basic salary, current EPF balance, age, hikes and interest rate to project your provident fund corpus at retirement, with contributions and interest year by year.",
 	route: "/epf-calculator",
 	category: "calculators",
 });
