@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Fuel Cost Calculator",
-	description: "Privacy-friendly, 100% client-side fuel cost calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter trip distance, your vehicle's fuel economy and the fuel price per litre to see how many litres you'll need and the estimated total trip cost.",
 	route: "/fuel-cost-calculator",
 	category: "calculators",
 });
