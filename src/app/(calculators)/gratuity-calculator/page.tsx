@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Gratuity Calculator (India)",
-	description: "Privacy-friendly, 100% client-side gratuity calculator (india). Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your last drawn salary and years of service to estimate gratuity under the Payment of Gratuity Act, using the 15/26 formula, with the tax-exempt amount shown.",
 	route: "/gratuity-calculator",
 	category: "calculators",
 });
