@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "GPA to 4.0 Scale Converter",
-	description: "Privacy-friendly, 100% client-side gpa to 4.0 scale conversion. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Convert an Indian percentage or 10-point CGPA into its US 4.0 GPA equivalent, with the matching letter grade shown alongside, ready for study-abroad applications.",
 	route: "/gpa-to-4-scale-converter",
 	category: "calculators",
 });
