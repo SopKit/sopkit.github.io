@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Tip Calculator",
-	description: "Privacy-friendly, 100% client-side tip calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter the bill, a tip percentage and how many people are splitting to see the tip, the total bill and what each person pays. Free, no signup.",
 	route: "/tip-calculator",
 	category: "calculators",
 });
