@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Profit Margin Calculator",
-	description: "Privacy-friendly, 100% client-side profit margin calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter cost price and selling price to get gross profit, gross profit margin percentage and markup percentage for any product. Free, no signup.",
 	route: "/profit-margin-calculator",
 	category: "calculators",
 });
