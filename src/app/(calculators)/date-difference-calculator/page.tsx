@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Date Difference Calculator",
-	description: "Privacy-friendly, 100% client-side date difference calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Pick any two dates to see the gap in years, months and days, plus total days, weeks and hours between them, for age, tenure and deadline checks.",
 	route: "/date-difference-calculator",
 	category: "calculators",
 });
