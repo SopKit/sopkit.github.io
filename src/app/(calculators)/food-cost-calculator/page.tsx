@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Food Cost Calculator",
-	description: "Privacy-friendly, 100% client-side food cost calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter a dish's ingredient costs and menu price to see its food cost percentage, profit per plate and margin, so you can price menu items with confidence, free in your browser.",
 	route: "/food-cost-calculator",
 	category: "calculators",
 });
