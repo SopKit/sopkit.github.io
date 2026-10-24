@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Mortgage Calculator",
-	description: "Privacy-friendly, 100% client-side mortgage calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter the home price, down payment, interest rate and loan term to see your monthly principal-and-interest payment, plus total interest and total paid. Free, no signup.",
 	route: "/mortgage-calculator",
 	category: "calculators",
 });
