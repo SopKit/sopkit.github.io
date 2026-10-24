@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Compound Interest Calculator",
-	description: "Privacy-friendly, 100% client-side compound interest calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your starting amount, annual rate, time period and regular contributions to see the future value and total interest earned. Free compound interest calculator, no signup.",
 	route: "/compound-interest-calculator",
 	category: "calculators",
 });
