@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Calorie Deficit Calculator",
-	description: "Privacy-friendly, 100% client-side calorie deficit calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your weight, height and age to get your BMR, daily calorie burn (TDEE) and a safe daily calorie target for weight loss, floored at 1,200 kcal a day.",
 	route: "/calorie-deficit-calculator",
 	category: "calculators",
 });
