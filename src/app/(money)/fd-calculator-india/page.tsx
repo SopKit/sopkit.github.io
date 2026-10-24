@@ -7,14 +7,14 @@ import FinanceCalculators from "@/components/tools/impl/FinanceCalculators";
 
 export const metadata = {
 	title: "Free FD Calculator India Online - No Signup | SopKit",
-	description: "Compute rates, taxes, averages, and conversions with our free FD Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
-	keywords: "fd calculator india, free online tool, no signup, fd calculator india online, calculators, SopKit",
+	description: "Enter your fixed deposit amount, interest rate and tenure to see the maturity value and interest earned with quarterly compounding. Free FD calculator, no signup.",
+	keywords: "fd calculator india, fixed deposit calculator, fd maturity calculator, fd interest calculator, SopKit",
 	alternates: {
 		canonical: `${SITE_URL}/fd-calculator-india`,
 	},
 	openGraph: {
 		title: "Free FD Calculator India Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free FD Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
+		description: "Enter your fixed deposit amount, interest rate and tenure to see the maturity value and interest earned with quarterly compounding. Free FD calculator, no signup.",
 		url: `${SITE_URL}/fd-calculator-india`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -23,7 +23,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free FD Calculator India Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free FD Calculator India online. Quick, accurate browser calculator with no registration. Easy to use.",
+		description: "Enter your fixed deposit amount, interest rate and tenure to see the maturity value and interest earned with quarterly compounding. Free FD calculator, no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
