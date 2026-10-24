@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "ROI Calculator",
-	description: "Privacy-friendly, 100% client-side roi calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your initial investment, final value and holding period to see net gain, total ROI and annualized ROI for any investment. Free, no signup.",
 	route: "/roi-calculator",
 	category: "calculators",
 });
