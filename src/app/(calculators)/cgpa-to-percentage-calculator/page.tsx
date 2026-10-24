@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "CGPA to Percentage Calculator",
-	description: "Privacy-friendly, 100% client-side cgpa to percentage calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your CGPA and pick a conversion factor to get its equivalent percentage instantly, with the standard 9.5 factor as the default. Free, no signup, and nothing to install.",
 	route: "/cgpa-to-percentage-calculator",
 	category: "calculators",
 });
