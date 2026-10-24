@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Savings Goal Calculator",
-	description: "Privacy-friendly, 100% client-side savings goal calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your savings goal, current savings, annual interest rate and months to goal to find the monthly deposit needed to reach it. Free, no signup.",
 	route: "/savings-goal-calculator",
 	category: "calculators",
 });
