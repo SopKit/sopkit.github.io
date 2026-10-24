@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Break-Even Calculator",
-	description: "Privacy-friendly, 100% client-side break-even calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter fixed costs, variable cost per unit and selling price per unit to find how many units you must sell to break even and the revenue at that point.",
 	route: "/break-even-calculator",
 	category: "calculators",
 });
