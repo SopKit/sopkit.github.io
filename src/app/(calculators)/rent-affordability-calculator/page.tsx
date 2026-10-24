@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Rent Affordability Calculator",
-	description: "Privacy-friendly, 100% client-side rent affordability calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter monthly income and existing debts to see conservative, moderate and stretched rent budgets based on the 25%, 30% and 40% of income rules.",
 	route: "/rent-affordability-calculator",
 	category: "calculators",
 });
