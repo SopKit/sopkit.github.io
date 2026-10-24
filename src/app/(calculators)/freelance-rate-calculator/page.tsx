@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Freelance Rate Calculator",
-	description: "Privacy-friendly, 100% client-side freelance rate calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter an annual income goal, business expenses and billable hours to work out the hourly and daily freelance rate you need to charge. Free, no signup.",
 	route: "/freelance-rate-calculator",
 	category: "calculators",
 });
