@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "BMI Calculator",
-	description: "Privacy-friendly, 100% client-side bmi calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your weight and height to calculate your BMI instantly, with a category result from underweight to obese. Free BMI calculator that runs fully in your browser, no signup.",
 	route: "/bmi-calculator",
 	category: "calculators",
 });
