@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Home Loan Eligibility Calculator",
-	description: "Privacy-friendly, 100% client-side home loan eligibility calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter net monthly salary, existing EMIs, interest rate and tenure to estimate the home loan amount you qualify for, plus the maximum affordable monthly EMI.",
 	route: "/home-loan-eligibility-calculator",
 	category: "calculators",
 });
