@@ -7,14 +7,14 @@ import SimpleInvoiceGenerator from "@/components/tools/generators/InvoiceGenerat
 
 export const metadata = {
 	title: "Free Invoice Generator India with GST Online - No Signup | SopKit",
-	description: "Compute rates, taxes, averages, and conversions with our free Invoice Generator India with GST online. Quick, accurate browser calculator with no registration.",
-	keywords: "invoice generator india with gst, free online tool, no signup, invoice generator india with gst online, calculators, SopKit",
+	description: "Build a GST-ready invoice with line items, quantities, rates and per-item tax, plus your business details and GSTIN. Print or save it as a PDF. Free, no signup.",
+	keywords: "invoice generator india with gst, gst invoice maker, free invoice generator, gst billing, SopKit",
 	alternates: {
 		canonical: `${SITE_URL}/invoice-generator-india`,
 	},
 	openGraph: {
 		title: "Free Invoice Generator India with GST Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free Invoice Generator India with GST online. Quick, accurate browser calculator with no registration.",
+		description: "Build a GST-ready invoice with line items, quantities, rates and per-item tax, plus your business details and GSTIN. Print or save it as a PDF. Free, no signup.",
 		url: `${SITE_URL}/invoice-generator-india`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -23,7 +23,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free Invoice Generator India with GST Online - No Signup | SopKit",
-		description: "Compute rates, taxes, averages, and conversions with our free Invoice Generator India with GST online. Quick, accurate browser calculator with no registration.",
+		description: "Build a GST-ready invoice with line items, quantities, rates and per-item tax, plus your business details and GSTIN. Print or save it as a PDF. Free, no signup.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
