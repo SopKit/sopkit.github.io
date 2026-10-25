@@ -1,4 +1,3 @@
-import { SITE_URL } from "@/constants/config";
 import AllDownloaders from "@/components/tools/downloaders/AllDownloaders";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { generateToolMetadata } from "@/lib/seo";
@@ -70,22 +69,6 @@ export default async function ToolPage() {
 
 	return (
 		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "SoftwareApplication",
-						name: "All Downloaders",
-						description: "All Downloaders",
-						url: `${SITE_URL}/all-downloaders/`,
-						applicationCategory: "UtilitiesApplication",
-						operatingSystem: "Any",
-						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-					}),
-				}}
-			/>
-
 			<ToolLayout
 				tool={tool}
 				breadcrumbs={breadcrumbs}

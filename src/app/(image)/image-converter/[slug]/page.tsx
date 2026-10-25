@@ -259,22 +259,6 @@ export default async function ToolPage({ params }: any) {
 
 	return (
 		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "SoftwareApplication",
-						name: name,
-						description: `Free ${name} online tool. Fast and secure.`,
-						url: `https://sopkit.space/image-converter/${slug}/`,
-						applicationCategory: "UtilitiesApplication",
-						operatingSystem: "Any",
-						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-					}),
-				}}
-			/>
-
 			<ToolLayout
 				tool={tool}
 				breadcrumbs={breadcrumbs}

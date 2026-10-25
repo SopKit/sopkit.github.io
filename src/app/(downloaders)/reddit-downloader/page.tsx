@@ -1,4 +1,3 @@
-import { SITE_URL } from "@/constants/config";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import RedditDownloader from "@/components/tools/downloaders/RedditDownloader";
 import { generateToolMetadata } from "@/lib/seo";
@@ -50,23 +49,6 @@ Video URLs are processed temporarily for retrieval. We do not store or log downl
 
 	return (
 		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "SoftwareApplication",
-						name: "Reddit Video Downloader",
-						description:
-							"Download Reddit videos with audio in HD quality",
-						url: `${SITE_URL}/reddit-downloader/`,
-						applicationCategory: "UtilitiesApplication",
-						operatingSystem: "Any",
-						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-					}),
-				}}
-			/>
-
 			<ToolLayout breadcrumbs={[]} tool={tool}>
 				<RedditDownloader />
 			</ToolLayout>

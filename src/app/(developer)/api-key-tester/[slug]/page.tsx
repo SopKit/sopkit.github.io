@@ -43,22 +43,6 @@ export default async function ApiKeyTesterPage({ params }: any) {
 
 	return (
 		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "SoftwareApplication",
-						name: tool.name,
-						description: tool.description,
-						url: `https://sopkit.space/api-key-tester/${slug}/`,
-						applicationCategory: "UtilitiesApplication",
-						operatingSystem: "Any",
-						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-					}),
-				}}
-			/>
-
 			<ToolLayout
 				tool={tool}
 				breadcrumbs={breadcrumbs}

@@ -40,22 +40,6 @@ export default async function ToolPage() {
 
 	return (
 		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "SoftwareApplication",
-						name: tool.name,
-						description: tool.description,
-						url: `${SITE_URL}/top-10-json-tools-online/`,
-						applicationCategory: "UtilitiesApplication",
-						operatingSystem: "Any",
-						offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-					}),
-				}}
-			/>
-
 			<ToolLayout breadcrumbs={[]} tool={{ ...tool, category: "content" }}>
 				<div className="mx-auto max-w-3xl px-4 py-8">
 					<p className="leading-relaxed text-muted-foreground">
