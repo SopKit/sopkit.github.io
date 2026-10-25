@@ -5,16 +5,25 @@ import { SITE_CONFIG, SITE_URL } from "@/constants/config";
 import { seoOpportunities } from "@/data/seo-opportunities";
 import { intentData } from "@/lib/intent-data";
 import { getMonetizationDecision } from "@/data/monetization";
+import toolLastmodData from "@/data/tool-lastmod.json";
 
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
 	// lastModified must reflect the last known content change, never the build
 	// date: stamping every build's date on unchanged pages misleads crawlers
-	// about what actually changed. Per-tool dates do not exist in the registry
-	// yet, so every entry conservatively uses the last site-wide content
-	// update (SITE_CONFIG.lastUpdatedDate); blog posts use their article date.
+	// about what actually changed. Tool pages use their own per-tool date
+	// from src/data/tool-lastmod.json (the last commit touching that tool's
+	// page file; see scripts/generate-tool-lastmod.ts for the method and
+	// its limits — registry-only metadata edits do not move these dates).
+	// Static pages and hubs conservatively use the last site-wide content
+	// update (SITE_CONFIG.lastUpdatedDate); blog posts use their article
+	// date. A tool missing from the map falls back to the site-wide date
+	// rather than breaking the sitemap; the validator
+	// (scripts/validate-tool-lastmod.ts, run in prebuild) forbids that
+	// case from reaching a deploy.
 	const siteUpdated = new Date(SITE_CONFIG.lastUpdatedDate);
+	const toolLastmod = toolLastmodData.lastmod as Record<string, string>;
 
 	// Use actual blog dates where available, siteUpdated for static pages
 	const staticPages: MetadataRoute.Sitemap = [
@@ -99,7 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		})
 		.map((tool) => ({
 			url: `${SITE_URL}${tool.route}`,
-			lastModified: siteUpdated,
+			lastModified: toolLastmod[tool.route] ? new Date(toolLastmod[tool.route]) : siteUpdated,
 			changeFrequency: "weekly" as const,
 			priority: tool.popular ? 0.9 : 0.75,
 			_indexable: getMonetizationDecision({ slug: tool.id, category: tool.category }).indexable,

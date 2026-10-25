@@ -13,10 +13,17 @@ const publicDir = path.join(rootDir, 'public');
 
 const BASE_URL = 'https://sopkit.space';
 
-// lastmod must be the registry's last content update, not the build date:
-// stamping every build's date on unchanged URLs misleads crawlers. The
-// registry metadata carries that date; fall back to a fixed past date only
-// if the field is ever missing, never to today.
+// lastmod must be the last known content change, not the build date:
+// stamping every build's date on unchanged URLs misleads crawlers.
+// LAST_MODIFIED (the registry's last content update) is used ONLY for
+// static/hub pages. Tool pages use their per-tool date from
+// src/data/tool-lastmod.json (last commit touching the tool's page file;
+// see scripts/generate-tool-lastmod.ts). The map is required: if it cannot
+// be read, or a tool route is missing from it, this script fails loudly
+// rather than silently stamping the site-wide date on that tool — the
+// validator (scripts/validate-tool-lastmod.ts, run in prebuild before this
+// script) already enforces full coverage, so a failure here means the
+// checked-in map is damaged, not merely stale.
 const LAST_MODIFIED = (() => {
   try {
     const registry = JSON.parse(fs.readFileSync(toolsJsonPath, 'utf8'));
@@ -25,6 +32,16 @@ const LAST_MODIFIED = (() => {
     }
   } catch { /* fall through to the fixed fallback below */ }
   return '2026-09-21';
+})();
+
+const toolLastmod: Record<string, string> = (() => {
+  try {
+    const parsed = JSON.parse(fs.readFileSync(path.join(rootDir, 'src', 'data', 'tool-lastmod.json'), 'utf8'));
+    if (parsed && typeof parsed.lastmod === 'object' && parsed.lastmod !== null) {
+      return parsed.lastmod;
+    }
+  } catch { /* fall through to the throw below */ }
+  throw new Error('generate-sitemap: src/data/tool-lastmod.json is missing or invalid; run `bun run generate:tool-lastmod` and commit the result.');
 })();
 
 console.log('🚀 Generating unified static sitemap.xml and robots.txt...');
@@ -164,7 +181,11 @@ for (const tool of allTools) {
   if (tool.route.startsWith('/search')) continue;
   if (!getMonetizationDecision({ slug: tool.id, category: tool.category }).indexable) continue;
   const priority = tool.popular ? '0.90' : '0.75';
-  registerUrl(tool.route, priority, 'weekly');
+  const perToolLastmod = toolLastmod[tool.route];
+  if (!perToolLastmod) {
+    throw new Error(`generate-sitemap: no per-tool lastmod for ${tool.route}; run \`bun run generate:tool-lastmod\` and commit the result.`);
+  }
+  registerUrl(tool.route, priority, 'weekly', perToolLastmod);
 }
 
 // 3. Add blog archive pages and posts. Import the real article list: the old
