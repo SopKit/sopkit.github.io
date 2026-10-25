@@ -4,14 +4,14 @@ import { generateCollectionPageSchema } from "@/lib/seo";
 export const metadata = {
 	title: "Free AI Generator Tools Online - No Signup | SopKit",
 	description:
-		"Free AI generator tools: create images from text prompts, generate natural voiceovers with text-to-speech, produce QR codes with logos, and build secure passwords. Customizable output, no watermarks, instant download. No signup required.",
+		"Free AI generator tools: create images from text prompts, generate natural voiceovers with text-to-speech, produce QR codes with logos, and build passwords.",
 	keywords:
 		"ai generator tools, ai image generator, ai voice generator, free ai tools, content creation ai, text to speech free, text to image free, qr code generator free, password generator secure, lorem ipsum generator, free online generators, ai content generator",
 	openGraph: {
 		title: "Free AI Generator Tools Online - No Signup | SopKit",
 		description:
 			"Generate AI images, voiceovers, QR codes, and passwords for free. Customizable, no watermarks, instant download.",
-		url: `${SITE_URL}/generator-tools/`,
+		url: `${SITE_URL}/generators`,
 		siteName: "SopKit",
 		images: [
 			{

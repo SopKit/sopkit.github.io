@@ -4,14 +4,14 @@ import { generateCollectionPageSchema } from "@/lib/seo";
 export const metadata = {
 	title: "Free Audio Tools Online - No Signup | SopKit",
 	description:
-		"Free online audio tools including AI text-to-speech, audio format conversion, and audio compression. Generate natural voiceovers, convert between MP3/WAV/OGG, and optimize audio files instantly. No signup, 100% browser-based processing.",
+		"Free audio tools including AI text-to-speech, audio format conversion, and audio compression. Generate voiceovers and convert between MP3/WAV/OGG instantly.",
 	keywords:
 		"audio tools, text to speech, tts, ai voice generator, audio compressor, audio converter, mp3 converter, wav to mp3, free audio tools online, text to speech free, audio format converter, online audio processing",
 	openGraph: {
 		title: "Free Audio Tools Online - No Signup | SopKit",
 		description:
 			"Free AI text-to-speech, audio conversion, and compression tools. Generate voiceovers and process audio files instantly in your browser.",
-		url: `${SITE_URL}/audio-tools/`,
+		url: `${SITE_URL}/audio-tools`,
 		siteName: "SopKit",
 		images: [
 			{

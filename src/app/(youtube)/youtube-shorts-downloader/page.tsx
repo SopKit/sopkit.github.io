@@ -6,14 +6,14 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "Free YouTube Shorts Downloader Online - No Signup | SopKit",
-	description: "Download YouTube Shorts videos in high quality for offline viewing",
+	description: "Download YouTube Shorts videos in high quality for offline viewing. Free online tool, no signup required.",
 	keywords: "youtube shorts downloader, free online tool, no signup, youtube-shorts-downloader, free youtube-shorts-downloader, Youtube Shorts Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
 		canonical: `${SITE_URL}/youtube-shorts-downloader`,
 	},
 	openGraph: {
 		title: "Free YouTube Shorts Downloader Online - No Signup | SopKit",
-		description: "Download YouTube Shorts videos in high quality for offline viewing",
+		description: "Download YouTube Shorts videos in high quality for offline viewing. Free online tool, no signup required.",
 		url: `${SITE_URL}/youtube-shorts-downloader`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -22,7 +22,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Free YouTube Shorts Downloader Online - No Signup | SopKit",
-		description: "Download YouTube Shorts videos in high quality for offline viewing",
+		description: "Download YouTube Shorts videos in high quality for offline viewing. Free online tool, no signup required.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

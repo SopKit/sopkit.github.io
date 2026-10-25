@@ -6,15 +6,15 @@ import { Calendar, Info, Layers, Wrench } from "lucide-react";
 import { ToolTrust } from "@/components/tools/shared/ToolSharedComponents";
 
 export const metadata = {
-	title: "New Tools & Updates — Latest Free Online Tools Added | SopKit",
-	description: "Discover the newest free online tools added to SopKit's library. Track release updates, from embed widgets and API testers to calculators, YouTube utilities, and more. Browser-first where supported, with processing details shown on individual tool pages.",
+	title: "New Tools & Updates — Latest Free Tools | SopKit",
+	description: "Discover the newest free online tools added to SopKit's library. Track release updates, from embed widgets and API testers to calculators and YouTube utilities.",
 	keywords: "new online tools, free tools added, latest online utilities, new browser tools, sopkit updates, free online toolkit, newly added web tools",
 	alternates: {
 		canonical: `${SITE_URL}/new-tools`,
 	},
 	openGraph: {
-		title: "New Tools & Updates — Latest Free Online Tools Added | SopKit",
-		description: "Discover the newest free online tools added to SopKit's library. Track release updates — from embed widgets and API testers to calculators and YouTube utilities. Browser-first where supported, with processing details shown on individual tool pages.",
+		title: "New Tools & Updates — Latest Free Tools | SopKit",
+		description: "Discover the newest free online tools added to SopKit's library. Track release updates — from embed widgets and API testers to calculators, YouTube utilities.",
 		url: `${SITE_URL}/new-tools`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -22,8 +22,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "New Tools & Updates — Latest Free Online Tools Added | SopKit",
-		description: "Discover the newest free online tools added to SopKit's library. Track release updates — from embed widgets and API testers to calculators and YouTube utilities. 100% client-side, no data uploads.",
+		title: "New Tools & Updates — Latest Free Tools | SopKit",
+		description: "Discover the newest free online tools added to SopKit's library. Track release updates — from embed widgets and API testers to calculators, YouTube utilities.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

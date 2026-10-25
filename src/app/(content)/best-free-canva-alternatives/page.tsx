@@ -3,7 +3,7 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Best Free Canva Alternatives (2026) — Local, No-Account Design Utilities | SopKit",
+	title: "Best Free Canva Alternatives (2026) | SopKit",
 	description:
 		"Honest Canva alternatives for quick design jobs: favicons, logos, image resizing, background removal and palettes that run locally — no account, no watermark.",
 	keywords:
@@ -12,7 +12,7 @@ export const metadata = {
 		canonical: `${SITE_URL}/best-free-canva-alternatives`,
 	},
 	openGraph: {
-		title: "Best Free Canva Alternatives (2026) — Local, No-Account Design Utilities | SopKit",
+		title: "Best Free Canva Alternatives (2026) | SopKit",
 		description:
 			"Honest Canva alternatives for quick design jobs: favicons, logos, image resizing, background removal and palettes that run locally — no account, no watermark.",
 		url: `${SITE_URL}/best-free-canva-alternatives`,
@@ -22,7 +22,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Best Free Canva Alternatives (2026) — Local, No-Account Design Utilities | SopKit",
+		title: "Best Free Canva Alternatives (2026) | SopKit",
 		description:
 			"Honest Canva alternatives for quick design jobs: favicons, logos, image resizing, background removal and palettes that run locally — no account, no watermark.",
 		images: ["/og-image.jpg"],

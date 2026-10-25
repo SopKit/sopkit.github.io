@@ -4,14 +4,14 @@ import { generateCollectionPageSchema } from "@/lib/seo";
 export const metadata = {
 	title: "Free YouTube Tools Online - No Signup | SopKit",
 	description:
-		"Free YouTube tools for creators and viewers: download videos & Shorts in HD/4K, extract thumbnails, generate transcripts, create scripts with AI, and optimize tags for discoverability. No signup, no watermarks, 100% free.",
+		"Free YouTube tools: download videos & Shorts in HD/4K, extract thumbnails, generate transcripts, and create scripts with AI. No signup, no watermarks.",
 	keywords:
 		"youtube tools, youtube downloader, youtube shorts downloader, youtube thumbnail downloader, youtube transcript generator, youtube script generator, youtube tag generator, youtube video summarizer, ai youtube tools, content creator tools, youtube to mp3, youtube thumbnail grabber",
 	openGraph: {
 		title: "Free YouTube Tools Online - No Signup | SopKit",
 		description:
 			"Download YouTube videos & Shorts, extract thumbnails, generate transcripts and scripts — all free with no signup.",
-		url: `${SITE_URL}/youtube-tools/`,
+		url: `${SITE_URL}/youtube-tools`,
 		siteName: "SopKit",
 		images: [
 			{

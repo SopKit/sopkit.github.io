@@ -20,8 +20,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "SopKit Trust & Safety Center - 100% Client-Side Local Utilities",
-		description: "Verify how SopKit processes your PDFs, images, and developer data securely inside your browser. No files are uploaded, 100% local, sandboxed WebAssembly execution.",
+		title: "SopKit Trust & Safety Center - Local Utilities",
+		description: "Verify how SopKit processes your PDFs, images, and developer data inside your browser. No files are uploaded, 100% local, sandboxed WebAssembly execution.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -58,9 +58,9 @@ export default async function TrustCenterPage() {
 							<ShieldCheck className="h-4 w-4 text-emerald-500" />
 							<span>Processing Model Transparency</span>
 						</div>
-						<h1 className="text-4xl md:text-5xl font-black tracking-tight text-foreground">
+						<h2 className="text-4xl md:text-5xl font-black tracking-tight text-foreground">
 							SopKit Trust & <span className="text-primary">Safety Center</span>
-						</h1>
+						</h2>
 						<p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
 							We believe utility tools should explain their data flow clearly. This page describes the local processing model used by applicable tools and points you to the tool-specific notice for workflows that use external services.
 						</p>

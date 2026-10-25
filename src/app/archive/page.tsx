@@ -17,7 +17,7 @@ import toolsData from "@/constants/tools.json";
  * Metadata for the Archive page.
  */
 export const metadata = {
-	title: "Tools Archive | SopKit - Complete Directory of 90+ Online Tools",
+	title: "Tools Archive | SopKit",
 	description:
 		"Browse our complete directory of free online tools. From image editing and PDF management to SEO audit and developer utilities.",
 	keywords:
@@ -26,7 +26,7 @@ export const metadata = {
 		canonical: `${SITE_URL}/archive`,
 	},
 	openGraph: {
-		title: "Tools Archive | SopKit - Complete Directory of 90+ Online Tools",
+		title: "Tools Archive | SopKit",
 		description:
 			"Browse our complete directory of free online tools. From image editing and PDF management to SEO audit and developer utilities.",
 		url: `${SITE_URL}/archive`,
@@ -36,7 +36,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Tools Archive | SopKit - Complete Directory of 90+ Online Tools",
+		title: "Tools Archive | SopKit",
 		description:
 			"Browse our complete directory of free online tools. From image editing and PDF management to SEO audit and developer utilities.",
 		images: ["/og-image.jpg"],

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: "SopKit Resources — Developer Guides, APIs, and Documentation",
-		description: "Browse guides, tools libraries, and API specifications.",
+		description: "Access official guides, cheat sheets, API specifications, and community resources to maximize your developer productivity with SopKit.",
 		url: `${SITE_URL}/resources`,
 		images: [{ url: "/og-images/packages.png" }],
 	},

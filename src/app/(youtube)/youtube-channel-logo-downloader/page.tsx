@@ -5,14 +5,14 @@ import YouTubeDownloader from "@/components/tools/downloaders/YouTubeDownloader"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Channel Logo Downloader Online - No Signup | SopKit",
+	title: "YouTube Channel Logo Downloader — Free | SopKit",
 	description: "Download high-quality YouTube channel logos and profile pictures instantly. Perfect for brand audits and design research. Free, fast, and secure online...",
 	keywords: "youtube channel logo downloader, free online tool, no signup, youtube-channel-logo-downloader, free youtube-channel-logo-downloader, Youtube Channel Logo Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
 		canonical: `${SITE_URL}/youtube-channel-logo-downloader`,
 	},
 	openGraph: {
-		title: "Free YouTube Channel Logo Downloader Online - No Signup | SopKit",
+		title: "YouTube Channel Logo Downloader — Free | SopKit",
 		description: "Download high-quality YouTube channel logos and profile pictures instantly. Perfect for brand audits and design research. Free, fast, and secure online...",
 		url: `${SITE_URL}/youtube-channel-logo-downloader`,
 		siteName: "SopKit",
@@ -21,7 +21,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Channel Logo Downloader Online - No Signup | SopKit",
+		title: "YouTube Channel Logo Downloader — Free | SopKit",
 		description: "Download high-quality YouTube channel logos and profile pictures instantly. Perfect for brand audits and design research. Free, fast, and secure online...",
 		images: ["/og-image.jpg"],
 	},

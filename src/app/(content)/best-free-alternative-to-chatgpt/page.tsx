@@ -3,14 +3,14 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Best Free Alternative to ChatGPT for Daily Tasks Online | SopKit",
+	title: "Best Free ChatGPT Alternative for Daily Tasks | SopKit",
 	description: "Skip the chat window for mechanical daily tasks. Free browser tools for images, voice, text styling, passwords and more — no signup, nothing uploaded.",
 	keywords: "best free alternative to chatgpt for daily tasks, best free alternative to chatgpt for daily tasks guide, SopKit, best-free-alternative-to-chatgpt, best free alternative to chatgpt, free best-free-alternative-to-chatgpt, best free alternative to chatgpt online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
 		canonical: `${SITE_URL}/best-free-alternative-to-chatgpt`,
 	},
 	openGraph: {
-		title: "Best Free Alternative to ChatGPT for Daily Tasks Online | SopKit",
+		title: "Best Free ChatGPT Alternative for Daily Tasks | SopKit",
 		description: "Skip the chat window for mechanical daily tasks. Free browser tools for images, voice, text styling, passwords and more — no signup, nothing uploaded.",
 		url: `${SITE_URL}/best-free-alternative-to-chatgpt`,
 		siteName: "SopKit",
@@ -19,7 +19,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Best Free Alternative to ChatGPT for Daily Tasks Online | SopKit",
+		title: "Best Free ChatGPT Alternative for Daily Tasks | SopKit",
 		description: "Skip the chat window for mechanical daily tasks. Free browser tools for images, voice, text styling, passwords and more — no signup, nothing uploaded.",
 		images: ["/og-image.jpg"],
 	},

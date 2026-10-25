@@ -5,15 +5,15 @@ import YouTubeDownloader from "@/components/tools/downloaders/YouTubeDownloader"
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free YouTube Channel Banner Downloader Online - No Signup | SopKit",
-	description: "Download high-resolution YouTube channel banners and covers instantly. Our free tool helps you save channel branding for design reference or archiving...",
+	title: "YouTube Channel Banner Downloader — Free | SopKit",
+	description: "Download high-resolution YouTube channel banners and covers instantly. Our free tool helps you save channel branding for design reference or archiving.",
 	keywords: "youtube channel banner downloader, free online tool, no signup, youtube-channel-banner-downloader, free youtube-channel-banner-downloader, Youtube Channel Banner Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
 		canonical: `${SITE_URL}/youtube-channel-banner-downloader`,
 	},
 	openGraph: {
-		title: "Free YouTube Channel Banner Downloader Online - No Signup | SopKit",
-		description: "Download high-resolution YouTube channel banners and covers instantly. Our free tool helps you save channel branding for design reference or archiving...",
+		title: "YouTube Channel Banner Downloader — Free | SopKit",
+		description: "Download high-resolution YouTube channel banners and covers instantly. Our free tool helps you save channel branding for design reference or archiving.",
 		url: `${SITE_URL}/youtube-channel-banner-downloader`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -21,8 +21,8 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free YouTube Channel Banner Downloader Online - No Signup | SopKit",
-		description: "Download high-resolution YouTube channel banners and covers instantly. Our free tool helps you save channel branding for design reference or archiving...",
+		title: "YouTube Channel Banner Downloader — Free | SopKit",
+		description: "Download high-resolution YouTube channel banners and covers instantly. Our free tool helps you save channel branding for design reference or archiving.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

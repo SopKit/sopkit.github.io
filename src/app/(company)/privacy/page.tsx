@@ -6,14 +6,14 @@ import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
 	title: "Privacy Policy — Transparent Data Practices | SopKit",
-	description: "Learn how SopKit handles data: local browser sandbox execution for file utilities, external API disclosures for generative tools, and privacy-conscious analytics.",
+	description: "Learn how SopKit handles data: local browser sandbox execution for file utilities, external API disclosures for generative tools, and analytics.",
 	keywords: "privacy policy, SopKit privacy, data protection, browser tools privacy, local processing, client-side tools",
 	alternates: {
 		canonical: `${SITE_CONFIG.siteUrl}/privacy`,
 	},
 	openGraph: {
 		title: "Privacy Policy — Transparent Data Practices | SopKit",
-		description: "Learn how SopKit handles data: local browser sandbox execution for file utilities, external API disclosures for generative tools, and privacy-conscious analytics.",
+		description: "Learn how SopKit handles data: local browser sandbox execution for file utilities, external API disclosures for generative tools, and analytics.",
 		url: `${SITE_CONFIG.siteUrl}/privacy`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -22,7 +22,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Privacy Policy — Transparent Data Practices | SopKit",
-		description: "Learn how SopKit handles data: local browser sandbox execution for file utilities, external API disclosures for generative tools, and privacy-conscious analytics.",
+		description: "Learn how SopKit handles data: local browser sandbox execution for file utilities, external API disclosures for generative tools, and analytics.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

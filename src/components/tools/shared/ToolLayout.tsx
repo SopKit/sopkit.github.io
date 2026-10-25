@@ -63,6 +63,35 @@ function ToolArticle({
 	].join("\n");
 	const articleContent = content?.trim() || fallbackContent;
 	const lines = articleContent.replace(/\\n/g, "\n").trim().split("\n");
+	// Group consecutive "- " lines into a single <ul>: rendering <li> elements
+	// directly inside the <div> below produced invalid HTML (a list item with
+	// no list parent) on every page whose manual article contains bullets.
+	type ArticleBlock =
+		| { kind: "heading"; text: string; key: number }
+		| { kind: "list"; items: string[]; key: number }
+		| { kind: "paragraph"; text: string; key: number };
+	const blocks: ArticleBlock[] = [];
+	let pendingList: string[] = [];
+	const flushList = (key: number) => {
+		if (pendingList.length > 0) {
+			blocks.push({ kind: "list", items: pendingList, key });
+			pendingList = [];
+		}
+	};
+	lines.forEach((line, i) => {
+		if (line.startsWith("## ") || line.startsWith("### ")) {
+			flushList(i);
+			blocks.push({ kind: "heading", text: line.replace(/^#{2,3}\s+/, ""), key: i });
+		} else if (line.startsWith("- ")) {
+			pendingList.push(line.replace(/^- \s*/, ""));
+		} else if (line.trim() === "") {
+			flushList(i);
+		} else {
+			flushList(i);
+			blocks.push({ kind: "paragraph", text: line, key: i });
+		}
+	});
+	flushList(lines.length);
 	return (
 		<section className="scroll-mt-16 space-y-4 pt-6 border-t border-border/60" aria-label="About this tool">
 			<div className="flex flex-col gap-1">
@@ -74,29 +103,31 @@ function ToolArticle({
 				</p>
 			</div>
 			<div className="space-y-4 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-				{lines.map((line, i) => {
-					if (line.startsWith("## ") || line.startsWith("### ")) {
-						const headingText = line.replace(/^#{2,3}\s+/, "");
+				{blocks.map((block) => {
+					if (block.kind === "heading") {
 						return (
 							<h3
-								key={i}
+								key={block.key}
 								className="text-sm sm:text-base font-semibold text-foreground tracking-tight pt-2"
 							>
-								{headingText}
+								{block.text}
 							</h3>
 						);
 					}
-					if (line.startsWith("- ")) {
+					if (block.kind === "list") {
 						return (
-							<li key={i} className="ml-5 list-disc text-muted-foreground">
-								{line.replace(/^- \s*/, "")}
-							</li>
+							<ul key={block.key} className="ml-5 list-disc space-y-1 text-muted-foreground">
+								{block.items.map((item, j) => (
+									<li key={j} className="text-muted-foreground">
+										{item}
+									</li>
+								))}
+							</ul>
 						);
 					}
-					if (line.trim() === "") return null;
 					return (
-						<p key={i} className="whitespace-pre-line">
-							{line}
+						<p key={block.key} className="whitespace-pre-line">
+							{block.text}
 						</p>
 					);
 				})}

@@ -4,14 +4,14 @@ import { generateCollectionPageSchema } from "@/lib/seo";
 export const metadata = {
 	title: "Free PDF Tools Online - No Signup | SopKit",
 	description:
-		"Professional free PDF tools: merge, split, compress, convert to/from Word, protect with passwords, and unlock secured PDFs. Maintains original formatting, fonts, and hyperlinks. No signup, no watermarks, zero-storage security policy.",
+		"Professional free PDF tools: merge, split, compress, convert to/from Word, protect with passwords, and unlock secured PDFs. No signup, no watermarks.",
 	keywords:
 		"pdf tools, pdf merger, pdf splitter, pdf compressor, free pdf tools online, online pdf editor, convert pdf to word, word to pdf, image to pdf converter, secure pdf tools, pdf utilities, unlock pdf, protect pdf, compress pdf online free, pdf to image, pdf password remover",
 	openGraph: {
 		title: "Free PDF Tools Online - No Signup | SopKit",
 		description:
 			"Merge, split, compress, and convert PDFs for free. No signup, no watermarks, zero-storage security policy.",
-		url: `${SITE_URL}/pdf-tools/`,
+		url: `${SITE_URL}/pdf-tools`,
 		siteName: "SopKit",
 		images: [
 			{

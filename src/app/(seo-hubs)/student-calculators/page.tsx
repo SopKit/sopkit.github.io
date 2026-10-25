@@ -4,7 +4,7 @@ import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
-	title: "Student Calculators - Attendance, SGPA, CGPA and Marks | SopKit",
+	title: "Student Calculators — Attendance, SGPA & CGPA | SopKit",
 	description: "Free student calculators for 75% attendance, how many classes you can miss, SGPA, CGPA, CGPA to percentage, and required final marks.",
 	alternates: { canonical: `${SITE_URL}/student-calculators` },
 };

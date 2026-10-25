@@ -3,14 +3,14 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Top 10 JSON Tools Online for Faster Developer Workflows | SopKit",
+	title: "Top 10 JSON Tools for Faster Developer Workflows | SopKit",
 	description: "The 10 JSON tools worth bookmarking: formatter, validator, viewer, diff, minifier, and every converter from CSV to TypeScript. Free and browser-based.",
 	keywords: "top 10 json tools online for faster developer workflows, top 10 json tools online for faster developer workflows guide, SopKit, top-10-json-tools-online, top 10 json tools online, free top-10-json-tools-online, SopKit guide, online tool guide, free tool category, tool directory, tool overview",
 	alternates: {
 		canonical: `${SITE_URL}/top-10-json-tools-online`,
 	},
 	openGraph: {
-		title: "Top 10 JSON Tools Online for Faster Developer Workflows | SopKit",
+		title: "Top 10 JSON Tools for Faster Developer Workflows | SopKit",
 		description: "The 10 JSON tools worth bookmarking: formatter, validator, viewer, diff, minifier, and every converter from CSV to TypeScript. Free and browser-based.",
 		url: `${SITE_URL}/top-10-json-tools-online`,
 		siteName: "SopKit",
@@ -19,7 +19,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Top 10 JSON Tools Online for Faster Developer Workflows | SopKit",
+		title: "Top 10 JSON Tools for Faster Developer Workflows | SopKit",
 		description: "The 10 JSON tools worth bookmarking: formatter, validator, viewer, diff, minifier, and every converter from CSV to TypeScript. Free and browser-based.",
 		images: ["/og-image.jpg"],
 	},

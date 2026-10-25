@@ -4,14 +4,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
 	title: "Blog & Guides | SopKit",
 	description:
-		"Practical guides, step-by-step tutorials, and tool comparisons from SopKit. Learn how to compress images, merge PDFs, download videos, optimize SEO, and boost productivity with free online tools.",
+		"Practical guides, step-by-step tutorials, and tool comparisons from SopKit. Learn how to compress images, merge PDFs, download videos, and optimize SEO.",
 	keywords:
 		"SopKit blog, online tools guides, productivity tutorials, downloader guides, text tool tutorials, image compression guide, pdf merge tutorial, video download how to, seo tips, free tools blog",
 	openGraph: {
 		title: "Blog & Guides | SopKit",
 		description:
-			"Practical guides, tutorials, and tool comparisons for free online productivity tools.",
-		url: `${SITE_URL}/blog/`,
+			"Practical guides, tutorials, and tool comparisons for free online productivity tools. Compress images, merge PDFs, download videos, and optimize SEO.",
+		url: `${SITE_URL}/blog`,
 		siteName: "SopKit",
 		type: "website",
 	},
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Blog & Guides | SopKit",
 		description:
-			"Practical guides, tutorials, and tool comparisons for free online productivity tools.",
+			"Practical guides, tutorials, and tool comparisons for free online productivity tools. Compress images, merge PDFs, download videos, and optimize SEO.",
 	},
 };
 

@@ -4,7 +4,7 @@ import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
-	title: "Student Tools - Attendance, Grades and Study Utilities | SopKit",
+	title: "Student Tools — Attendance, Grades & Study Tools | SopKit",
 	description: "Free student tools for attendance planning, SGPA, CGPA, CGPA to percentage, required marks, and exam image uploads.",
 	alternates: { canonical: `${SITE_URL}/student-tools` },
 };

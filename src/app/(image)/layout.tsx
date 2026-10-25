@@ -4,14 +4,14 @@ import { generateCollectionPageSchema } from "@/lib/seo";
 export const metadata = {
 	title: "Free Image Tools Online - No Signup | SopKit",
 	description:
-		"Free online image tools: remove backgrounds with AI, compress and resize photos, convert between PNG/JPG/WEBP/SVG, enhance image quality, and generate logos. Batch processing supported. No signup, no watermarks, browser-based.",
+		"Free online image tools: remove backgrounds with AI, compress and resize photos, convert between PNG/JPG/WEBP/SVG, and enhance image quality.",
 	keywords:
 		"image tools, background remover, photo enhancer, image converter, image resizer, logo generator, free photo editor online, ai image tools, image compressor free, png to jpg converter, webp converter, batch image resize, remove background online free, image format converter",
 	openGraph: {
 		title: "Free Image Tools Online - No Signup | SopKit",
 		description:
 			"Remove backgrounds, compress, resize, and convert images with free AI-powered tools. Batch processing, no watermarks, no signup.",
-		url: `${SITE_URL}/image-tools/`,
+		url: `${SITE_URL}/image-tools`,
 		siteName: "SopKit",
 		images: [
 			{
@@ -27,7 +27,7 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "Image Tools - Free AI Photo Editing Suite",
 		description:
-			"Edit, convert, and enhance your photos with our free AI-powered tools.",
+			"Edit, convert, and enhance your photos with our free AI-powered tools. Remove backgrounds, compress, resize, and convert images instantly.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

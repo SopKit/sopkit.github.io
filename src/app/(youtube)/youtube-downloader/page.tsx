@@ -6,7 +6,7 @@ import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
 	title: "YouTube Video & Audio Downloader - Free Online | SopKit",
-	description: "Download YouTube videos and audio online for free. Save clips in MP4 or extract MP3, no signup or software. For personal use of content you own or that is openly licensed.",
+	description: "Download YouTube videos and audio online for free. Save clips in MP4 or extract MP3, no signup. For personal use of content you own or that is openly licensed.",
 	keywords: "youtube downloader, youtube video downloader, youtube to mp4, youtube to mp3, download youtube videos, free youtube downloader, SopKit, youtube-downloader, youtube downloader online, video downloader",
 	alternates: {
 		canonical: `${SITE_URL}/youtube-downloader`,

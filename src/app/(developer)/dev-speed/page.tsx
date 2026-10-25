@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "DevSpeed — Developer Code Typing Speed Test",
-    description: "Benchmark your coding speed with real code snippets in TypeScript, Rust, Python, Go, and SQL.",
+    description: "Benchmark your coding speed with real code snippets in TypeScript, Rust, Python, Go, and SQL. Measure WPM, CPM, accuracy, and bracket precision.",
     url: "https://sopkit.space/dev-speed",
     type: "website",
   },

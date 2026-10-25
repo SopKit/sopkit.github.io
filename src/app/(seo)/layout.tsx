@@ -6,14 +6,14 @@ import { generateCollectionPageSchema } from "@/lib/seo";
 export const metadata = {
 	title: "Free SEO Tools Online - No Signup | SopKit",
 	description:
-		"Boost your search rankings with 17+ free SEO tools — site audit, keyword research, backlink checker, meta tag generator, schema markup builder, robots.txt & sitemap generator. No signup, 100% browser-based analysis.",
+		"Boost your search rankings with 17+ SEO tools — site audit, keyword research, backlink checker, and meta tag generator. No signup, 100% browser-based analysis.",
 	keywords:
 		"seo tools, keyword research tool, backlink checker, seo audit tool, free seo software, google seo tools, website analyzer, meta tag generator, schema markup generator, robots.txt generator, sitemap generator, serp preview, seo score checker, on page seo checker, free online seo tools",
 	openGraph: {
 		title: "Free SEO Tools Online - No Signup | SopKit",
 		description:
 			"17+ free SEO tools for site audits, keyword research, schema markup, and meta tag optimization. No signup required.",
-		url: `${SITE_URL}/seo-tools/`,
+		url: `${SITE_URL}/seo-tools`,
 		siteName: "SopKit",
 		images: [
 			{

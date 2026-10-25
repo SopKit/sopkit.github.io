@@ -4,7 +4,7 @@ import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
-	title: "Business Tools - Free Online Utilities for Startups & Shops | SopKit",
+	title: "Business Tools — Utilities for Startups & Shops | SopKit",
 	description: "Free online business tools including invoice generators, rent receipt creators, leave applications, and GST calculators. Boost your business efficiency.",
 	alternates: { canonical: `${SITE_URL}/business-tools` },
 };

@@ -4,7 +4,7 @@ import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
-	title: "QR Tools - Restaurant Menu, Google Form, WiFi and UPI QR | SopKit",
+	title: "QR Tools — Menu, Form, WiFi and UPI QR Codes | SopKit",
 	description: "Create QR codes for restaurant menus, Google Forms, WiFi passwords, UPI payments, business cards, and small business workflows.",
 	alternates: { canonical: `${SITE_URL}/qr-tools` },
 };

@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Company | SopKit",
 		description:
-			"Learn about SopKit — our mission, contact details, privacy policy, and terms of service.",
-		url: `${SITE_URL}/about/`,
+			"Learn about SopKit — our mission to provide free browser-based tools, contact details, privacy policy, and terms of service.",
+		url: `${SITE_URL}/about`,
 		siteName: "SopKit",
 		type: "website",
 	},
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Company | SopKit",
 		description:
-			"Learn about SopKit — our mission, contact details, privacy policy, and terms of service.",
+			"Learn about SopKit — our mission to provide free browser-based tools, contact details, privacy policy, and terms of service.",
 	},
 };
 

@@ -4,7 +4,7 @@ import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
 
 export const metadata: Metadata = {
-	title: "Free Online Calculators - Math, Finance, Academic & Student Tools | SopKit",
+	title: "Free Calculators — Math, Finance & Student Tools | SopKit",
 	description: "Free online calculators for math, GPA, attendance, loan estimations, and business markup. Get instant calculations without signing up.",
 	alternates: { canonical: `${SITE_URL}/calculator-tools` },
 };

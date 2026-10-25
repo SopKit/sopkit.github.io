@@ -1,15 +1,15 @@
 import { SITE_URL } from "@/constants/config";
 export const metadata = {
-	title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
+	title: "Free Online Calculators — Finance & Math Tools | SopKit",
 	description:
-		"Free online calculators for finance, health, math, and daily life. BMI calculator, loan calculator, percentage calculator, and more. No signup, instant results, 100% free.",
+		"Free online calculators for finance, health, math, and daily life. BMI calculator, loan calculator, percentage calculator, and more. No signup, instant results.",
 	keywords:
 		"online calculators, bmi calculator, loan calculator, percentage calculator, math tools, free calculators, SopKit",
 	openGraph: {
-		title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
+		title: "Free Online Calculators — Finance & Math Tools | SopKit",
 		description:
 			"Free online calculators for finance, health, math, and daily life. BMI calculator, loan calculator, percentage calculator, and more. No signup, instant results.",
-		url: `${SITE_URL}/calculators/`,
+		url: `${SITE_URL}/calculators`,
 		siteName: "SopKit",
 		images: [
 			{
@@ -23,9 +23,9 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Online Calculators - Smart Financial & Math Tools | SopKit",
+		title: "Free Online Calculators — Finance & Math Tools | SopKit",
 		description:
-			"Free online calculators for finance, health, math, and daily life. No signup, instant results.",
+			"Free online calculators for finance, health, math, and daily life. BMI calculator, loan calculator, percentage calculator, and more. No signup, instant results.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

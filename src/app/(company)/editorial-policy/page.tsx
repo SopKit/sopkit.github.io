@@ -4,7 +4,7 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
   title: "Editorial Policy — How SopKit Creates and Maintains Content",
-  description: "Learn how SopKit creates, reviews, updates, and corrects tool documentation and technical guides.",
+  description: "Learn how SopKit creates, reviews, updates, and corrects tool documentation and technical guides for accuracy.",
   alternates: { canonical: `${SITE_URL}/editorial-policy` },
   robots: { index: true, follow: true },
 };

@@ -4,14 +4,14 @@ import { generateCollectionPageSchema } from "@/lib/seo";
 export const metadata = {
 	title: "Free Utility Tools Online - No Signup | SopKit",
 	description:
-		"Free online utility tools: internet speed test, URL shortener, password generator, QR code maker, color converter, unit converter, calculators, and 85+ more. Everything runs in your browser — no signup, no tracking, no limits.",
+		"Free online utility tools: internet speed test, URL shortener, password generator, and QR code maker. Everything runs in your browser — no signup, no tracking.",
 	keywords:
 		"utility tools, internet speed test, url shortener, password generator, qr code generator, color converter, unit converter, bmi calculator, percentage calculator, free online utilities, network tools, link management, online calculator, base converter, hex to rgb",
 	openGraph: {
 		title: "Free Utility Tools Online - No Signup | SopKit",
 		description:
 			"85+ free utility tools — speed test, password generator, QR codes, converters, and calculators. No signup required.",
-		url: `${SITE_URL}/other-tools/`,
+		url: `${SITE_URL}/other-tools`,
 		siteName: "SopKit",
 		images: [
 			{

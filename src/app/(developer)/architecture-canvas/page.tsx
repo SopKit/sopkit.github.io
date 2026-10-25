@@ -5,14 +5,14 @@ import Link from "next/link";
 import { ChevronRight, Layers, Cpu, Share2, Workflow } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Free Architecture Canvas Online — Interactive System Design Visualizer",
+  title: "Free Architecture Canvas — System Design Visualizer",
   description: "Design, simulate, and export modern cloud architectures and microservices. Drag-and-drop nodes, estimate end-to-end latency, and export to Mermaid diagrams.",
   alternates: {
     canonical: "https://sopkit.space/architecture-canvas",
   },
   openGraph: {
     title: "Architecture Canvas — Interactive System Design Tool",
-    description: "Visual cloud system design visualizer with real-time latency simulation and Mermaid.js export.",
+    description: "Visual cloud system design visualizer with real-time latency simulation and Mermaid.js export. Design and simulate modern cloud architectures in your browser.",
     url: "https://sopkit.space/architecture-canvas",
     type: "website",
   },

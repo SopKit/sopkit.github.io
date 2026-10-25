@@ -5,9 +5,10 @@
 	"type": "module",
 	"scripts": {
 		"dev": "next dev --turbopack",
-		"prebuild": "tsx scripts/validate-registry.ts && tsx scripts/validate-tool-lastmod.ts && tsx scripts/generate-sitemap.ts",
+		"prebuild": "tsx scripts/validate-registry.ts && tsx scripts/validate-tool-lastmod.ts && tsx scripts/validate-page-metadata.ts && tsx scripts/generate-sitemap.ts",
 		"validate:registry": "tsx scripts/validate-registry.ts",
 		"validate:tool-lastmod": "tsx scripts/validate-tool-lastmod.ts",
+		"validate:page-metadata": "tsx scripts/validate-page-metadata.ts",
 		"generate:tool-lastmod": "tsx scripts/generate-tool-lastmod.ts",
 		"validate:seo": "tsx scripts/validate-seo-architecture.ts",
 		"generate:sitemap": "tsx scripts/generate-sitemap.ts",

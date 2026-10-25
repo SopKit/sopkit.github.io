@@ -3,14 +3,14 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Best Free Converters in 2026 (File, Data, and Media) Online | SopKit",
+	title: "Best Free Converters in 2026 (File, Data, Media) | SopKit",
 	description: "The free converters worth using in 2026: images, documents, data formats, units, and subtitles. Browser-based, no uploads, no signup, no watermarks.",
 	keywords: "best free converters in 2026 (file, data, and media), and media) guide, SopKit, best-free-converters-in-2026, best free converters in 2026, free best-free-converters-in-2026, best free converters in 2026 online, SopKit guide, online tool guide, free tool category",
 	alternates: {
 		canonical: `${SITE_URL}/best-free-converters-in-2026`,
 	},
 	openGraph: {
-		title: "Best Free Converters in 2026 (File, Data, and Media) Online | SopKit",
+		title: "Best Free Converters in 2026 (File, Data, Media) | SopKit",
 		description: "The free converters worth using in 2026: images, documents, data formats, units, and subtitles. Browser-based, no uploads, no signup, no watermarks.",
 		url: `${SITE_URL}/best-free-converters-in-2026`,
 		siteName: "SopKit",
@@ -19,7 +19,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Best Free Converters in 2026 (File, Data, and Media) Online | SopKit",
+		title: "Best Free Converters in 2026 (File, Data, Media) | SopKit",
 		description: "The free converters worth using in 2026: images, documents, data formats, units, and subtitles. Browser-based, no uploads, no signup, no watermarks.",
 		images: ["/og-image.jpg"],
 	},

@@ -3,18 +3,18 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Best Free iLovePDF Alternatives (2026) — Private, Browser-Based PDF Tools | SopKit",
+	title: "Best Free iLovePDF Alternatives (2026) | SopKit",
 	description:
-		"Honest iLovePDF alternative comparison for 2026. Merge, split, compress, and convert PDFs without uploads — see where free client-side tools win and where they don't.",
+		"Honest iLovePDF alternatives for 2026: merge, split, compress, and convert PDFs without uploads — see where free client-side tools win and where they don't.",
 	keywords:
 		"best free ilovepdf alternatives, ilovepdf alternative free, smallpdf alternative, free pdf tools no upload, client-side pdf tools, sopkit pdf",
 	alternates: {
 		canonical: `${SITE_URL}/best-free-ilovepdf-alternatives`,
 	},
 	openGraph: {
-		title: "Best Free iLovePDF Alternatives (2026) — Private, Browser-Based PDF Tools | SopKit",
+		title: "Best Free iLovePDF Alternatives (2026) | SopKit",
 		description:
-			"Honest iLovePDF alternative comparison for 2026. Merge, split, compress, and convert PDFs without uploads — see where free client-side tools win and where they don't.",
+			"Honest iLovePDF alternatives for 2026: merge, split, compress, and convert PDFs without uploads — see where free client-side tools win and where they don't.",
 		url: `${SITE_URL}/best-free-ilovepdf-alternatives`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -22,9 +22,9 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Best Free iLovePDF Alternatives (2026) — Private, Browser-Based PDF Tools | SopKit",
+		title: "Best Free iLovePDF Alternatives (2026) | SopKit",
 		description:
-			"Honest iLovePDF alternative comparison for 2026. Merge, split, compress, and convert PDFs without uploads — see where free client-side tools win and where they don't.",
+			"Honest iLovePDF alternatives for 2026: merge, split, compress, and convert PDFs without uploads — see where free client-side tools win and where they don't.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },

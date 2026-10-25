@@ -3,7 +3,7 @@ import Link from "next/link";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export const metadata = {
-	title: "Best Free Adobe Acrobat Alternatives (2026) — No Install, No Subscription | SopKit",
+	title: "Best Free Adobe Acrobat Alternatives (2026) | SopKit",
 	description:
 		"Free browser-based Acrobat alternatives for 2026: edit, merge, split, compress, protect and convert PDFs without installing software or paying monthly.",
 	keywords:
@@ -12,7 +12,7 @@ export const metadata = {
 		canonical: `${SITE_URL}/best-free-adobe-acrobat-alternatives`,
 	},
 	openGraph: {
-		title: "Best Free Adobe Acrobat Alternatives (2026) — No Install, No Subscription | SopKit",
+		title: "Best Free Adobe Acrobat Alternatives (2026) | SopKit",
 		description:
 			"Free browser-based Acrobat alternatives for 2026: edit, merge, split, compress, protect and convert PDFs without installing software or paying monthly.",
 		url: `${SITE_URL}/best-free-adobe-acrobat-alternatives`,
@@ -22,7 +22,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Best Free Adobe Acrobat Alternatives (2026) — No Install, No Subscription | SopKit",
+		title: "Best Free Adobe Acrobat Alternatives (2026) | SopKit",
 		description:
 			"Free browser-based Acrobat alternatives for 2026: edit, merge, split, compress, protect and convert PDFs without installing software or paying monthly.",
 		images: ["/og-image.jpg"],
