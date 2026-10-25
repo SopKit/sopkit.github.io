@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Required Marks Calculator",
-	description: "Privacy-friendly, 100% client-side required marks calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your internal marks, exam weightage and target percentage to find exactly how many marks you need in your final exam to pass or reach your goal, free with no signup.",
 	route: "/required-marks-calculator",
 	category: "calculators",
 });
