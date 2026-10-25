@@ -3494,7 +3494,7 @@ export const blogs: BlogArticle[] = [
 	  "date": "2026-09-20",
 	  "readTimeMinutes": 9,
 	  "featuredToolRoutes": [
-	    "/base64-encoder-decoder"
+	    "/base64-tool"
 	  ],
 	  "intro": "Base64 is often described as encryption, but it is not encryption. It is an encoding scheme that represents binary data using a restricted set of characters so the result can be transported through systems designed for text. Understanding that distinction helps developers use Base64 correctly for payloads, tokens, embedded assets, and simple data transformations.",
 	  "sections": [
@@ -3505,7 +3505,7 @@ export const blogs: BlogArticle[] = [
 	        "Because Base64 is reversible without a secret key, it provides no confidentiality by itself. Anyone who can read the encoded text can decode it."
 	      ],
 	      "toolRoutes": [
-	        "/base64-encoder-decoder"
+	        "/base64-tool"
 	      ]
 	    },
 	    {
@@ -3522,7 +3522,7 @@ export const blogs: BlogArticle[] = [
 	        "It can also be useful for debugging when you need to inspect whether a payload contains a particular binary or textual value. Always keep the data's sensitivity in mind before putting it into external tooling."
 	      ],
 	      "toolRoutes": [
-	        "/base64-encoder-decoder"
+	        "/base64-tool"
 	      ]
 	    },
 	    {
@@ -4706,7 +4706,7 @@ export const blogs: BlogArticle[] = [
 	  "featuredToolRoutes": [
 	    "/json-formatter",
 	    "/url-encoder-decoder",
-	    "/base64-encoder-decoder"
+	    "/base64-tool"
 	  ],
 	  "intro": "API debugging often moves through several representations of the same data. A response may arrive as compact JSON, a parameter may be URL-encoded, and a binary value may appear as Base64. Each transformation solves a different problem. Knowing which layer you are looking at prevents a surprising number of debugging mistakes.",
 	  "sections": [
@@ -4744,7 +4744,7 @@ export const blogs: BlogArticle[] = [
 	        "When debugging Base64 values, compare the decoded bytes or text with the expected representation and document which character set the producer used for textual data."
 	      ],
 	      "toolRoutes": [
-	        "/base64-encoder-decoder"
+	        "/base64-tool"
 	      ]
 	    }
 	  ],

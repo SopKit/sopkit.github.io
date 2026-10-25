@@ -124,7 +124,7 @@
           "route": "/rent-receipt-generator",
           "popular": true,
           "seoDescription": "Create HRA-compliant rent receipts with landlord PAN, revenue stamp options and a monthly payment breakdown, ready to print as income tax proof.",
-          "seoTitle": "Free Rent Receipt Generator — HRA Tax Exemption PDF"
+          "seoTitle": "Free Rent Receipt Generator India — No Signup"
         },
         {
           "id": "simple-invoice-generator",
@@ -486,7 +486,7 @@
           "route": "/background-remover",
           "popular": true,
           "seoDescription": "Clear solid or plain backdrops from product photos and portraits, leaving a transparent PNG cutout that suits listings, slide decks and headshots.",
-          "seoTitle": "Background Remover — Transparent PNGs, Free"
+          "seoTitle": "Free Background Remover — No Upload"
         },
         {
           "id": "base64-to-image-converter",
@@ -541,7 +541,7 @@
           "popular": true,
           "title": "Image Compressor - Free Online Tool",
           "seoDescription": "Cut photo weight with a quality slider or a target-size search, handling JPG, PNG and WebP files singly or in a batch, then download the results.",
-          "seoTitle": "Image Compressor — Reduce JPG, PNG & WebP Size"
+          "seoTitle": "Free Image Compressor Online — No Upload"
         },
         {
           "id": "image-converter",
@@ -950,7 +950,7 @@
           "route": "/markdown-to-html",
           "popular": true,
           "seoDescription": "Write or paste Markdown and watch the rendered preview fill in beside the HTML source; one copy button hands over markup for a blog or newsletter template.",
-          "seoTitle": "Markdown to HTML Converter — Free & Instant"
+          "seoTitle": "Free Markdown to HTML Converter — No Signup"
         },
         {
           "id": "markdown-to-pdf",
@@ -968,7 +968,7 @@
           "route": "/url-encoder-decoder",
           "popular": true,
           "seoDescription": "Percent-encode a query string before it travels, or decode a long redirect address until the parameters become readable; one press swaps the two directions.",
-          "seoTitle": "URL Encoder Decoder — Encode & Decode Links"
+          "seoTitle": "Free URL Encoder Decoder Online — No Signup"
         },
         {
           "id": "string-length-calculator",
@@ -1141,7 +1141,7 @@
           "popular": false,
           "title": "Text Compare - Free Online Tool",
           "seoDescription": "Two versions of one paragraph land side by side, and every added, deleted or altered character is tinted on the spot, precise enough for code or contracts.",
-          "seoTitle": "Text Compare — Find Differences Online"
+          "seoTitle": "Free Text Compare Tool Online — No Upload"
         },
         {
           "id": "text-repeater",
@@ -1288,7 +1288,7 @@
           "route": "/compress-pdf-to-exact-kb",
           "popular": true,
           "seoDescription": "Aim for a precise size: this compressor squeezes a PDF toward a target in kilobytes, clearing strict upload limits on forms, portals and email attachments.",
-          "seoTitle": "Compress PDF to Exact KB — 100/200/500KB"
+          "seoTitle": "Compress PDF to Exact KB — No Upload"
         },
         {
           "id": "remove-pages-from-pdf",
@@ -1315,7 +1315,7 @@
           "route": "/merge-pdf-online",
           "popular": true,
           "seoDescription": "Stitch several PDFs into one continuous document: drop the files in, drag them into the order you want, and export a merged copy with bookmarks carried over.",
-          "seoTitle": "Merge PDF — Combine Files Free Online"
+          "seoTitle": "Merge PDF Without Upload — Free"
         },
         {
           "id": "html-to-pdf",
@@ -1396,7 +1396,7 @@
           "route": "/image-to-pdf",
           "popular": true,
           "seoDescription": "Bundle a batch of JPG, PNG or WebP pictures into one tidy PDF, adjusting page size, orientation and margins so photos and scans sit neatly on the sheet.",
-          "seoTitle": "JPG to PDF — Images to PDF Free"
+          "seoTitle": "Free JPG to PDF Converter — No Upload"
         },
         {
           "id": "pdf-editor",
@@ -1414,7 +1414,7 @@
           "route": "/pdf-protect",
           "popular": false,
           "seoDescription": "Encrypt a PDF behind a password you choose, keeping confidential contracts, payslips or drafts out of the wrong hands and ready for safe email or archive.",
-          "seoTitle": "Protect PDF with Password — Free"
+          "seoTitle": "Protect PDF with Password — No Upload"
         },
         {
           "id": "pdf-to-image",
@@ -1432,7 +1432,7 @@
           "route": "/pdf-to-word",
           "popular": true,
           "seoDescription": "Lift the text layer out of a PDF and reassemble it as an editable Word DOCX, so paragraphs, lists and headings can be revised instead of retyped.",
-          "seoTitle": "Free PDF to Word Converter Online — Convert PDF to DOCX"
+          "seoTitle": "Free PDF to Word Converter — No Upload"
         },
         {
           "id": "pdf-unlocker",
@@ -1450,7 +1450,7 @@
           "route": "/word-to-pdf",
           "popular": true,
           "seoDescription": "Turn a DOCX file into a shareable PDF: it is parsed and rendered page by page, keeping headings and emphasis recognizable for printing or submission.",
-          "seoTitle": "Word to PDF — DOCX to PDF Free"
+          "seoTitle": "Free Word to PDF Converter — No Upload"
         },
         {
           "id": "pdf-grayscale",
@@ -2658,7 +2658,7 @@
           "route": "/uuid-generator",
           "popular": true,
           "seoDescription": "Click to generate a fresh version-4 UUID and copy the canonical hyphenated string straight into a database schema, migration file, or test fixture row.",
-          "seoTitle": "UUID Generator — v4 & GUIDs, Bulk"
+          "seoTitle": "Free UUID Generator Online — No Signup"
         },
         {
           "id": "slug-generator",
@@ -2748,7 +2748,7 @@
           "route": "/crontab-generator",
           "popular": false,
           "seoDescription": "Assemble minute, hour, day, month, and weekday schedules from plain menus, read back the five-field expression, and paste it into a server crontab.",
-          "seoTitle": "Crontab Generator — Cron Expression Builder"
+          "seoTitle": "Free Crontab Generator Online — No Signup"
         },
         {
           "id": "xml-formatter",
@@ -2757,7 +2757,7 @@
           "route": "/xml-formatter",
           "popular": false,
           "seoDescription": "Beautify or minify an XML document at an adjustable indent, with invalid markup flagged and size savings shown before the file ships to a staging server.",
-          "seoTitle": "XML Formatter — Beautify & Validate"
+          "seoTitle": "Free XML Formatter Online — No Upload"
         },
         {
           "id": "html-entity-encoder",
@@ -2793,7 +2793,7 @@
           "route": "/jwt-decoder",
           "popular": true,
           "seoDescription": "Divide a token into its header, payload, and signature, and check the exp claim to learn whether it lapsed minutes ago or still has plenty of life left.",
-          "seoTitle": "JWT Decoder — Inspect Tokens Safely"
+          "seoTitle": "Free JWT Decoder Online — No Upload"
         },
         {
           "id": "api-key-tester",
@@ -3220,7 +3220,7 @@
           "popular": true,
           "title": "JSON Formatter - Free Online Tool",
           "seoDescription": "Pretty-print compressed JSON with a selectable indent width and optional key sorting, and preview a minified version alongside the formatted output.",
-          "seoTitle": "JSON Formatter — Beautify & Validate"
+          "seoTitle": "Free JSON Formatter Online — No Upload"
         },
         {
           "id": "json-minify",
@@ -3581,7 +3581,7 @@
           "route": "/base64-tool",
           "popular": false,
           "seoDescription": "Text or files convert to Base64 and back here, with unicode-safe handling, byte-size details for uploads, and buttons to copy or save the result.",
-          "seoTitle": "Base64 Encoder Decoder — Instant & Free"
+          "seoTitle": "Free Base64 Encoder Decoder — No Upload"
         },
         {
           "id": "css-gradient-generator",
@@ -3643,7 +3643,7 @@
           "description": "Compare two JSON objects side-by-side to highlight added, removed, and modified keys with precision. Format, validate, and debug JSON payloads entirely in browser memory.",
           "route": "/json-diff-checker",
           "popular": true,
-          "seoTitle": "JSON Diff Checker — Compare & Find Differences in JSON",
+          "seoTitle": "Free JSON Diff Checker Online — No Upload",
           "seoDescription": "Free online JSON Diff Checker. Compare two JSON payloads side-by-side, highlight differences, and validate structures with 100% client-side privacy."
         },
         {
@@ -5076,7 +5076,7 @@
           "route": "/epf-calculator",
           "popular": false,
           "seoDescription": "Project the retirement corpus your EPF can build from basic salary, age, annual increments and the interest rate, with contributions and interest broken out.",
-          "seoTitle": "EPF Calculator — PF Balance & Interest"
+          "seoTitle": "Free EPF Calculator India — No Signup"
         },
         {
           "id": "invoice-generator-india",
@@ -5130,7 +5130,7 @@
           "route": "/salary-calculator-india",
           "popular": true,
           "seoDescription": "See an annual CTC figure turned into an estimated monthly take-home after PF, professional tax and a simplified tax deduction, with bonus included.",
-          "seoTitle": "CTC to In-Hand Salary Calculator India"
+          "seoTitle": "Free Salary Calculator India — No Signup"
         },
         {
           "id": "cgpa-to-percentage-calculator-india",
@@ -5196,7 +5196,7 @@
           "popular": false,
           "title": "CGPA Calculator - Free Online Tool",
           "seoDescription": "Track your cumulative grade point average by logging an SGPA for every completed semester and watching the running mean shift as new results arrive.",
-          "seoTitle": "CGPA Calculator — Cumulative GPA, Free"
+          "seoTitle": "Free CGPA Calculator Online — No Signup"
         },
         {
           "id": "cgpa-to-percentage-calculator",
@@ -5273,7 +5273,7 @@
           "route": "/car-loan-calculator",
           "popular": false,
           "seoDescription": "Combine vehicle price, down payment, trade-in value, APR and term to see your monthly car payment, amount financed and the total interest you will pay.",
-          "seoTitle": "Car Loan Calculator — EMI & Interest"
+          "seoTitle": "Free Car Loan EMI Calculator India — No Signup"
         },
         {
           "id": "roi-calculator",
@@ -5372,7 +5372,7 @@
           "route": "/home-loan-eligibility-calculator",
           "popular": false,
           "seoDescription": "Find the home loan amount a bank might sanction from monthly salary, existing EMIs, tenure and rate, starting from its affordable monthly EMI cap.",
-          "seoTitle": "Home Loan Eligibility — How Much Loan?"
+          "seoTitle": "Free Home Loan Eligibility Calculator — No Signup"
         },
         {
           "id": "property-roi-calculator",
@@ -5435,7 +5435,7 @@
           "route": "/income-tax-calculator",
           "popular": true,
           "seoDescription": "Compare old versus new regime liability for FY 2026-27, weighing 80C, 80D and HRA deductions against the latest slabs, rebate and cess to see which wins.",
-          "seoTitle": "Income Tax Calculator FY 2026-27 — Old vs New"
+          "seoTitle": "Free Income Tax Calculator India — No Signup"
         },
         {
           "id": "freelance-hourly-rate-calculator",

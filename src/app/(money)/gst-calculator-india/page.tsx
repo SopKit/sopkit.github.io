@@ -6,14 +6,14 @@ import BuiltInCalculators from "@/components/tools/built-ins/BuiltInCalculators"
 
 
 export const metadata = {
-	title: "Free GST Calculator India Online - No Signup | SopKit",
+	title: "Free GST Calculator India — No Signup | SopKit",
 	description: "Enter the exclusive base amount and GST rate to get a full GST breakdown: tax amount and total including GST. Free GST calculator for India, no signup.",
 	keywords: "gst calculator india, gst calculator, gst rate calculator, gst inclusive exclusive calculator, SopKit",
 	alternates: {
 		canonical: `${SITE_URL}/gst-calculator-india`,
 	},
 	openGraph: {
-		title: "Free GST Calculator India Online - No Signup | SopKit",
+		title: "Free GST Calculator India — No Signup | SopKit",
 		description: "Enter the exclusive base amount and GST rate to get a full GST breakdown: tax amount and total including GST. Free GST calculator for India, no signup.",
 		url: `${SITE_URL}/gst-calculator-india`,
 		siteName: "SopKit",
@@ -22,7 +22,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free GST Calculator India Online - No Signup | SopKit",
+		title: "Free GST Calculator India — No Signup | SopKit",
 		description: "Enter the exclusive base amount and GST rate to get a full GST breakdown: tax amount and total including GST. Free GST calculator for India, no signup.",
 		images: ["/og-image.jpg"],
 	},

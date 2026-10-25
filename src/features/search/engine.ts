@@ -179,7 +179,7 @@ const TASK_INTENT_MAPPINGS: IntentMapping[] = [
       "decode base64",
       "convert to base64",
     ],
-    targetSlugs: ["base64-encoder-decoder", "image-to-base64"],
+    targetSlugs: ["base64-tool", "image-to-base64"],
     explanation: "Best match for Base64 encoding and decoding",
   },
   {

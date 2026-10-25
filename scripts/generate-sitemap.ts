@@ -14,7 +14,19 @@ const publicDir = path.join(rootDir, 'public');
 
 const BASE_URL = 'https://sopkit.space';
 
-const LAST_MODIFIED = new Date().toISOString().split('T')[0];
+// lastmod must be the registry's last content update, not the build date:
+// stamping every build's date on unchanged URLs misleads crawlers. The
+// registry metadata carries that date; fall back to a fixed past date only
+// if the field is ever missing, never to today.
+const LAST_MODIFIED = (() => {
+  try {
+    const registry = JSON.parse(fs.readFileSync(toolsJsonPath, 'utf8'));
+    if (typeof registry?.metadata?.lastUpdated === 'string' && registry.metadata.lastUpdated) {
+      return registry.metadata.lastUpdated;
+    }
+  } catch { /* fall through to the fixed fallback below */ }
+  return '2026-09-21';
+})();
 
 console.log('🚀 Generating unified static sitemap.xml and robots.txt...');
 

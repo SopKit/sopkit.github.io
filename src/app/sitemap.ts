@@ -9,12 +9,16 @@ import { getMonetizationDecision } from "@/data/monetization";
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
+	// lastModified must reflect the last known content change, never the build
+	// date: stamping every build's date on unchanged pages misleads crawlers
+	// about what actually changed. Per-tool dates do not exist in the registry
+	// yet, so every entry conservatively uses the last site-wide content
+	// update (SITE_CONFIG.lastUpdatedDate); blog posts use their article date.
 	const siteUpdated = new Date(SITE_CONFIG.lastUpdatedDate);
-	const now = new Date();
 
 	// Use actual blog dates where available, siteUpdated for static pages
 	const staticPages: MetadataRoute.Sitemap = [
-		{ url: `${SITE_URL}/`, lastModified: now, changeFrequency: "daily", priority: 1.0 },
+		{ url: `${SITE_URL}/`, lastModified: siteUpdated, changeFrequency: "daily", priority: 1.0 },
 		{ url: `${SITE_URL}/about`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/editorial-policy`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${SITE_URL}/contact`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
@@ -23,9 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/dmca`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.6 },
 		{ url: `${SITE_URL}/advertise`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/services`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.75 },
-		{ url: `${SITE_URL}/tools`, lastModified: now, changeFrequency: "daily", priority: 0.95 },
-		{ url: `${SITE_URL}/packages`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-		{ url: `${SITE_URL}/startup-directories`, lastModified: now, changeFrequency: "daily", priority: 0.85 },
+		{ url: `${SITE_URL}/tools`, lastModified: siteUpdated, changeFrequency: "daily", priority: 0.95 },
+		{ url: `${SITE_URL}/packages`, lastModified: siteUpdated, changeFrequency: "daily", priority: 0.9 },
+		{ url: `${SITE_URL}/startup-directories`, lastModified: siteUpdated, changeFrequency: "daily", priority: 0.85 },
 		// Category hub pages (priority 0.8-0.9)
 		{ url: `${SITE_URL}/image-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/exam-image-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.92 },
@@ -53,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/ai-writing-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/local-business-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		// Blog
-		{ url: `${SITE_URL}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+		{ url: `${SITE_URL}/blog`, lastModified: siteUpdated, changeFrequency: "daily", priority: 0.8 },
 		// Content hub / SEO landing pages
 		{ url: `${SITE_URL}/tool-guides`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.7 },
 		{ url: `${SITE_URL}/ai-tools-alternatives-free`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
@@ -65,25 +69,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/tools-for-developers`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{url: `${SITE_URL}/top-10-free-online-tools-for-seo`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{url: `${SITE_URL}/top-10-json-tools-online`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
-		{url: `${SITE_URL}/new-tools`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+		{url: `${SITE_URL}/new-tools`, lastModified: siteUpdated, changeFrequency: "daily", priority: 0.8 },
 		{ url: `${SITE_URL}/online-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/embed-tools`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/best-free-ilovepdf-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${SITE_URL}/best-free-adobe-acrobat-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${SITE_URL}/best-free-canva-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
-		{ url: `${SITE_URL}/dev-speed`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-		{ url: `${SITE_URL}/architecture-canvas`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+		{ url: `${SITE_URL}/dev-speed`, lastModified: siteUpdated, changeFrequency: "daily", priority: 0.9 },
+		{ url: `${SITE_URL}/architecture-canvas`, lastModified: siteUpdated, changeFrequency: "daily", priority: 0.9 },
 		{ url: `${SITE_URL}/pricing`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/resources`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/trust-center`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/hire`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
-		{ url: `${SITE_URL}/pro`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
+		{ url: `${SITE_URL}/pro`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
 		{ url: `${SITE_URL}/api-key-testers`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
 	];
 
 	try {
 		const allTools = getAllTools();
-		// Use site deployment date for tool pages (staggered by popularity)
+		// Tool pages share the last site-wide content update (see note above);
 		const toolPages: MetadataRoute.Sitemap = allTools
 		.filter((tool) => {
 			const route = String(tool.route || "");
@@ -94,7 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		})
 		.map((tool) => ({
 			url: `${SITE_URL}${tool.route}`,
-			lastModified: tool.popular ? now : siteUpdated,
+			lastModified: siteUpdated,
 			changeFrequency: "weekly" as const,
 			priority: tool.popular ? 0.9 : 0.75,
 			_indexable: getMonetizationDecision({ slug: tool.id, category: tool.category }).indexable,
@@ -108,7 +112,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ length: Math.max(0, blogTotalPages - 1) },
 		(_, index) => ({
 			url: `${SITE_URL}/blog/page/${index + 2}`,
-			lastModified: now,
+			lastModified: siteUpdated,
 			changeFrequency: "daily" as const,
 			priority: 0.75,
 		}),
@@ -126,7 +130,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
 	const seoOpportunityPages: MetadataRoute.Sitemap = seoOpportunities.map((opportunity) => ({
 		url: `${SITE_URL}${opportunity.route}`,
-		lastModified: now,
+		lastModified: siteUpdated,
 		changeFrequency: "weekly" as const,
 		priority: opportunity.priority === 1 ? 0.9 : opportunity.priority === 2 ? 0.86 : 0.84,
 	}));
@@ -135,7 +139,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		.filter((slug) => getMonetizationDecision({ slug }).indexable)
 		.map((slug) => ({
 			url: `${SITE_URL}/${slug}`,
-			lastModified: now,
+			lastModified: siteUpdated,
 			changeFrequency: "weekly" as const,
 			priority: 0.85,
 		}));
