@@ -4,7 +4,6 @@ import toolFeatures from "@/data/tool-features.json";
 import toolFaqs from "@/data/tool-faqs.json";
 import toolHowtos from "@/data/tool-howtos.json";
 import toolExtraslugs from "@/data/tool-extraslugs.json";
-import { getMonetizationDecision } from "@/data/monetization";
 
 const articlesMap = toolArticles as Record<string, string>;
 const featuresMap = toolFeatures as Record<string, string[]>;
@@ -135,7 +134,30 @@ export function getAllToolsByCategory(categorySlug: string): Tool[] {
 }
 
 export function getCategoryBySlug(slug: string): Category | undefined {
-	return getAllCategories().find((category) => category.slug === slug);
+	// 1. Exact slug match — this is what tool-guides/[slug] passes
+	// (generateStaticParams emits category.slug values), so it must win.
+	const exact = getAllCategories().find((category) => category.slug === slug);
+	if (exact) return exact;
+
+	// 2. tools.json key match. Hub pages historically pass the registry key
+	// (e.g. "utilities"), which differs from the slug ("utility-tools") for
+	// some categories. Object.values() loses the key, so match on entries.
+	const byKey = Object.entries(categories).find(([key]) => key === slug);
+	if (byKey) return byKey[1] as Category;
+
+	// 3. Slug with/without the "-tools" suffix normalised. Hub pages pass
+	// bare names ("audio", "seo", "video", "youtube", "developer",
+	// "extraction", "text") while the registry slug carries "-tools".
+	// Both the keys and the normalised slugs are unique in the registry,
+	// so this fallback cannot resolve to the wrong category; it only
+	// rescues lookups that previously returned undefined and rendered an
+	// empty hub grid. Unknown slugs still return undefined.
+	const normalised = slug.replace(/-tools$/, "");
+	return getAllCategories().find(
+		(category) =>
+			category.slug === `${normalised}-tools` ||
+			category.slug.replace(/-tools$/, "") === normalised,
+	);
 }
 
 /**
