@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Protein Intake Calculator",
-	description: "Privacy-friendly, 100% client-side protein intake calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your weight in kg and get a daily protein target range for an active lifestyle and for muscle building, calculated instantly in your browser, free with no signup.",
 	route: "/protein-intake-calculator",
 	category: "calculators",
 });
