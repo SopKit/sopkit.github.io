@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Daily Water Intake Calculator",
-	description: "Privacy-friendly, 100% client-side daily water intake calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your weight in kg and daily exercise minutes to get your recommended daily water intake in litres and fluid ounces, adjusted for exercise. Free, no signup.",
 	route: "/water-intake-calculator",
 	category: "calculators",
 });
