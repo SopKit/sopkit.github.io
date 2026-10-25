@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Tile Calculator",
-	description: "Privacy-friendly, 100% client-side tile calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your floor length and width, tile size and wastage allowance to work out the total area and how many tiles to buy. Free tile calculator, no signup.",
 	route: "/tile-calculator",
 	category: "calculators",
 });
