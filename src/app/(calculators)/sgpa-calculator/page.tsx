@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "SGPA Calculator",
-	description: "Privacy-friendly, 100% client-side sgpa calculation. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Enter your course credits and grade points to compute your Semester Grade Point Average instantly, with per-course entries, free in your browser and no signup needed.",
 	route: "/sgpa-calculator",
 	category: "calculators",
 });
