@@ -6,7 +6,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Image to PDF",
-	description: "Private Image to PDF: privately convert PDF documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	description: "Upload one or more images, arrange their order and set A4 orientation and margins to combine them into a single downloadable PDF. Free, no signup.",
 	route: "/image-to-pdf",
 	category: "pdf",
 });
