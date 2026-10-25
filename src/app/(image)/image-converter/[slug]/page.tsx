@@ -3,25 +3,27 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 
 export async function generateMetadata({ params }) {
 	const { slug } = await params;
-	const name = slug
-		.split("-")
-		.map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-		.join(" ");
+	const parts = slug.split("-to-");
+	const from = (parts[0] || "png").toUpperCase();
+	const to = (parts[1] || "jpeg").toUpperCase();
 
-	const title = `${name} — 100% Client-Side in Your Browser | No Upload, No AI Training | SopKit`;
-	const description = `Privacy-friendly, 100% client-side ${name}. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.`;
+	// Titles stay within the site's ≤60-char rule (the previous template ran
+	// to ~90 chars) and canonical/OG URLs use no trailing slash, matching
+	// the convention enforced by src/app/sitemap.ts and src/seo/canonical.ts.
+	const title = `${from} to ${to} Converter | SopKit`;
+	const description = `Convert ${from} images to ${to} free, right in your browser. No uploads, no signup — your files never leave your device.`;
 
 	return {
 		title,
 		description,
 		keywords: `private, client-side, no upload, no AI training, browser sandbox, secure, ${slug}, image, SopKit`,
 		alternates: {
-			canonical: `https://sopkit.space/image-converter/${slug}/`,
+			canonical: `https://sopkit.space/image-converter/${slug}`,
 		},
 		openGraph: {
 			title,
 			description,
-			url: `https://sopkit.space/image-converter/${slug}/`,
+			url: `https://sopkit.space/image-converter/${slug}`,
 			siteName: "SopKit",
 			images: [{ url: "/og-image.jpg" }],
 			type: "website",
@@ -52,7 +54,7 @@ export default async function ToolPage({ params }: any) {
 	const tool = {
 		id: slug,
 		name: name,
-		description: `Free ${name} online tool. Fast and secure.`,
+		description: `Convert ${conversion.from} images to ${conversion.to} free in your browser — no uploads, no signup.`,
 		route: `/image-converter/${slug}`,
 		extraSlugs: [],
 		popular: false,

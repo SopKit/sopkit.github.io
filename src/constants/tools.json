@@ -98,7 +98,7 @@
           "name": "Font Generator",
           "route": "/font-generator",
           "description": "Transform plain text into stylish Unicode fonts, cursive scripts, and aesthetic typography for Instagram, Twitter, and Discord.",
-          "seoDescription": "Convert plain text into aesthetic Unicode fonts and stylish calligraphy for Instagram bios and captions. Copy-paste fancy styles instantly with zero data uploads.",
+          "seoDescription": "Convert plain text into aesthetic Unicode fonts and calligraphy for Instagram bios and captions. Copy-paste fancy styles instantly with zero data uploads.",
           "seoTitle": "Free Font Generator Online — Aesthetic Fancy Text"
         },
         {
@@ -585,7 +585,7 @@
           "description": "Compile multiple images into an animated GIF client-side. Control delay/interval and image dimensions easily.",
           "route": "/gif-generator",
           "popular": true,
-          "seoDescription": "Combine multiple image frames into smooth animated GIFs with customizable frame delays, looping, and dimensions. Render animations locally without server uploads.",
+          "seoDescription": "Combine multiple image frames into animated GIFs with customizable frame delays, looping, and dimensions. Render animations locally without server uploads.",
           "seoTitle": "Free Animated GIF Maker — Combine Images in Browser"
         },
         {
@@ -1084,7 +1084,7 @@
           "description": "Refresh a draft by swapping tired, overused wording for livelier synonyms while keeping the original meaning and sentence flow intact.",
           "route": "/article-rewriter",
           "popular": false,
-          "seoDescription": "Paraphrase sentences and rephrase articles with fresh phrasing while preserving original context and nuance. Polish writing cleanly with local browser processing.",
+          "seoDescription": "Paraphrase sentences and rephrase articles with fresh phrasing while preserving original context and nuance. Polish writing with local browser processing.",
           "seoTitle": "Free Article Rewriter Online — Clean Text Paraphraser"
         },
         {
