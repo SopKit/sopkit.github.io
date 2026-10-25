@@ -7,7 +7,7 @@ import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
 	name: "Roman Numerals Converter",
-	description: "Privacy-friendly, 100% client-side roman numerals conversion. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Convert numbers to Roman numerals and back instantly, including large numbers and historical formats — type a value and get the conversion, free in your browser with no signup.",
 	route: "/roman-numerals-converter",
 	category: "calculators",
 });
