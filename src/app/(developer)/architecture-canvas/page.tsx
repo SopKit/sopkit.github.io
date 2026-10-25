@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Free Architecture Canvas Online — Interactive System Design Visualizer",
   description: "Design, simulate, and export modern cloud architectures and microservices. Drag-and-drop nodes, estimate end-to-end latency, and export to Mermaid diagrams.",
   alternates: {
-    canonical: "https://sopkit.space/architecture-canvas/",
+    canonical: "https://sopkit.space/architecture-canvas",
   },
   openGraph: {
     title: "Architecture Canvas — Interactive System Design Tool",
     description: "Visual cloud system design visualizer with real-time latency simulation and Mermaid.js export.",
-    url: "https://sopkit.space/architecture-canvas/",
+    url: "https://sopkit.space/architecture-canvas",
     type: "website",
   },
 };
@@ -31,7 +31,7 @@ export default function ArchitectureCanvasPage() {
       priceCurrency: "USD",
     },
     description: "Interactive browser-based system architecture diagrammer and flow simulator for engineering teams and architects.",
-    url: "https://sopkit.space/architecture-canvas/",
+    url: "https://sopkit.space/architecture-canvas",
   };
 
   return (

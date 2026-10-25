@@ -9,12 +9,12 @@ export const metadata = {
 	description: "Learn how SopKit handles data: local browser sandbox execution for file utilities, external API disclosures for generative tools, and privacy-conscious analytics.",
 	keywords: "privacy policy, SopKit privacy, data protection, browser tools privacy, local processing, client-side tools",
 	alternates: {
-		canonical: `${SITE_CONFIG.siteUrl}/privacy/`,
+		canonical: `${SITE_CONFIG.siteUrl}/privacy`,
 	},
 	openGraph: {
 		title: "Privacy Policy — Transparent Data Practices | SopKit",
 		description: "Learn how SopKit handles data: local browser sandbox execution for file utilities, external API disclosures for generative tools, and privacy-conscious analytics.",
-		url: `${SITE_CONFIG.siteUrl}/privacy/`,
+		url: `${SITE_CONFIG.siteUrl}/privacy`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -47,7 +47,7 @@ export default async function PrivacyPage() {
 						"@type": "WebPage",
 						name: "Privacy Policy",
 						description: tool.description,
-						url: `${SITE_URL}/privacy/`,
+						url: `${SITE_URL}/privacy`,
 						publisher: { "@type": "Organization", name: "SopKit" },
 					}),
 				}}

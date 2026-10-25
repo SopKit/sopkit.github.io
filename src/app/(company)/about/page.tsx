@@ -9,12 +9,12 @@ export const metadata = {
 	description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup for core utilities, with processing models clearly disclosed on individual tool pages.`,
 	keywords: "about SopKit, client-side tools, private online utility, no upload pdf editor, local image converter, browser sandbox tools, secure developer tools, open source browser utilities",
 	alternates: {
-		canonical: `${SITE_CONFIG.siteUrl}/about/`,
+		canonical: `${SITE_CONFIG.siteUrl}/about`,
 	},
 	openGraph: {
 		title: "About SopKit — Privacy-First Free Online Tools Platform",
 		description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup for core utilities, with local processing used where supported.`,
-		url: `${SITE_CONFIG.siteUrl}/about/`,
+		url: `${SITE_CONFIG.siteUrl}/about`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

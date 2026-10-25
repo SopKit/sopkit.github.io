@@ -8,7 +8,7 @@ export const metadata = {
 	title: "DMCA Copyright Policy - SopKit",
 	description: "SopKit DMCA copyright infringement notification policy. Learn how to report copyright violations and our takedown procedures.",
 	keywords: "dmca, copyright policy, takedown notice, copyright infringement, SopKit dmca, intellectual property, free dmca, dmca online, SopKit, free online tools, browser tools, no signup tools",
-	alternates: { canonical: `${SITE_CONFIG.siteUrl}/dmca/` },
+	alternates: { canonical: `${SITE_CONFIG.siteUrl}/dmca` },
 	openGraph: { title: "DMCA Copyright Policy - SopKit", description: "SopKit DMCA copyright infringement notification policy. Learn how to report copyright violations and our takedown procedures.", url: `${SITE_CONFIG.siteUrl}/dmca/`, siteName: "SopKit", images: [{ url: "/og-image.jpg" }], type: "website" },
 	twitter: { card: "summary_large_image", title: "DMCA Copyright Policy - SopKit", description: "SopKit DMCA copyright infringement notification policy.", images: ["/og-image.jpg"] },
 	robots: { index: true, follow: true },
@@ -33,7 +33,7 @@ export default async function DMCAPage() {
 						"@type": "WebPage",
 						name: "DMCA Copyright Policy",
 						description: tool.description,
-						url: `${SITE_URL}/dmca/`,
+						url: `${SITE_URL}/dmca`,
 						publisher: { "@type": "Organization", name: "SopKit" },
 					}),
 				}}

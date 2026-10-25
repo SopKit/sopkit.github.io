@@ -23,13 +23,13 @@ export const metadata = {
 	keywords:
 		"tools archive, online tools directory, free online tools, image editors, PDF converters, SEO tools, developer utilities, SopKit",
 	alternates: {
-		canonical: `${SITE_URL}/archive/`,
+		canonical: `${SITE_URL}/archive`,
 	},
 	openGraph: {
 		title: "Tools Archive | SopKit - Complete Directory of 90+ Online Tools",
 		description:
 			"Browse our complete directory of free online tools. From image editing and PDF management to SEO audit and developer utilities.",
-		url: `${SITE_URL}/archive/`,
+		url: `${SITE_URL}/archive`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

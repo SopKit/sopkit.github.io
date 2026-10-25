@@ -8,12 +8,12 @@ export const metadata = {
 	description: "Learn how SopKit distinguishes local browser processing from external-service workflows and how to verify the applicable data flow on each tool page.",
 	keywords: "trust center, privacy, local browser processing, data processing, security, SopKit tools",
 	alternates: {
-		canonical: `${SITE_URL}/trust-center/`,
+		canonical: `${SITE_URL}/trust-center`,
 	},
 	openGraph: {
 		title: "SopKit Trust & Safety Center — Processing & Privacy",
 		description: "Learn how SopKit distinguishes local browser processing from external-service workflows and how to verify the applicable data flow on each tool page.",
-		url: `${SITE_URL}/trust-center/`,
+		url: `${SITE_URL}/trust-center`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
@@ -45,7 +45,7 @@ export default async function TrustCenterPage() {
 						"@context": "https://schema.org",
 						"@type": "WebPage",
 						name: "SopKit Trust & Safety Center",
-						url: `${SITE_URL}/trust-center/`,
+						url: `${SITE_URL}/trust-center`,
 						description: tool.description,
 					}),
 				}}

@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: BlogArticlePageProps) {
 		};
 	}
 
-	const canonical = `${SITE_URL}/blog/${article.slug}/`;
+	const canonical = `${SITE_URL}/blog/${article.slug}`;
 	const seoTitle = formatSeoTitle(article.title);
 
 	return {

@@ -6,7 +6,7 @@ import { getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
 	title: "Local Business Tools - Free QR Codes, SEO & Invoicing | SopKit",
 	description: "Free online tools for local shops and restaurants. Generate restaurant QR menus, WiFi QR codes, customer invoices, and local business SEO tags.",
-	alternates: { canonical: `${SITE_URL}/local-business-tools/` },
+	alternates: { canonical: `${SITE_URL}/local-business-tools` },
 };
 
 export default function LocalBusinessToolsHub() {

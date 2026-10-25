@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const opportunity = getSeoOpportunityBySlug(slug);
 
     if (opportunity?.standalone) {
-        const canonicalUrl = `https://sopkit.space${opportunity.route}/`;
+        const canonicalUrl = `https://sopkit.space${opportunity.route}`;
 
         return {
             title: opportunity.title,
@@ -143,8 +143,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             // Canonicalization strategy:
             // If this slug is a synthetic permutation or alias, point canonical to parent canonical route
             // and set noindex, follow to consolidate PageRank and avoid doorway penalties.
-            const canonicalRoute = extraTool.route.endsWith("/") ? extraTool.route : `${extraTool.route}/`;
-            const canonicalUrl = isCanonicalTool ? `https://sopkit.space/${slug}/` : `https://sopkit.space${canonicalRoute}`;
+            const canonicalRoute = extraTool.route.endsWith("/") ? extraTool.route.slice(0, -1) : extraTool.route;
+            const canonicalUrl = isCanonicalTool ? `https://sopkit.space/${slug}` : `https://sopkit.space${canonicalRoute}`;
 
             return {
                 title,
@@ -177,7 +177,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const parentTool = getToolById(intent.parentToolId);
     if (!parentTool) return {};
 
-    const canonicalUrl = `https://sopkit.space/${slug}/`;
+    const canonicalUrl = `https://sopkit.space/${slug}`;
     const brandedTitle = `${intent.title} | SopKit`;
 
     return {

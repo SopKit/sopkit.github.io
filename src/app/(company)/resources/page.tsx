@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 	title: "SopKit Resources — Developer Guides, APIs, and Documentation",
 	description: "Access official guides, cheat sheets, API specifications, and community resources to maximize your developer productivity with SopKit.",
 	alternates: {
-		canonical: `${SITE_URL}/resources/`,
+		canonical: `${SITE_URL}/resources`,
 	},
 	openGraph: {
 		title: "SopKit Resources — Developer Guides, APIs, and Documentation",
 		description: "Browse guides, tools libraries, and API specifications.",
-		url: `${SITE_URL}/resources/`,
+		url: `${SITE_URL}/resources`,
 		images: [{ url: "/og-images/packages.png" }],
 	},
 };

@@ -8,12 +8,12 @@ export const metadata: Metadata = {
     "Practical guides, tutorials, comparisons, and workflows for free online tools, developer utilities, SEO, PDFs, images, and everyday productivity.",
   keywords:
     "SopKit blog, free online tools guides, SEO tutorials, developer guides, PDF tutorials, image optimization, JSON guides, productivity tools",
-  alternates: { canonical: `${SITE_URL}/blog/` },
+  alternates: { canonical: `${SITE_URL}/blog` },
   openGraph: {
     title: "SopKit Blog — Guides, Tutorials & Tool Tips",
     description:
       "Practical guides, tutorials, comparisons, and workflows for free online tools and everyday digital tasks.",
-    url: `${SITE_URL}/blog/`,
+    url: `${SITE_URL}/blog`,
     siteName: "SopKit",
     images: [{ url: "/og-image.jpg" }],
     type: "website",

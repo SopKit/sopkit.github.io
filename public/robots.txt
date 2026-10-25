@@ -7,6 +7,7 @@ Disallow: /private/
 Disallow: /handler/
 Disallow: /embed/
 Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
 Disallow: /search
 Disallow: /search/
 
@@ -17,7 +18,10 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /handler/
 Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
 Disallow: /search
+Disallow: /search/
 
 User-agent: Bingbot
 Allow: /
@@ -26,41 +30,191 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /handler/
 Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
 Disallow: /search
+Disallow: /search/
+
+User-agent: Yandex
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
+
+User-agent: Slurp
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 # AI Search & LLM Crawlers
 User-agent: GPTBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: Google-Extended
 Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Gemini
-Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: Bytespider
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: CCBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
+
+User-agent: Gemini
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: YouBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 Sitemap: https://sopkit.space/sitemap.xml
 Host: https://sopkit.space

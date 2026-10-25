@@ -26,8 +26,8 @@ export async function generateMetadata({
   const totalPages = Math.max(1, Math.ceil(totalArticles / 12));
   const currentPage = Math.min(Math.max(Number.isFinite(page) ? page : 1, 1), totalPages);
   const canonical = currentPage === 1
-    ? `${SITE_URL}/blog/`
-    : `${SITE_URL}/blog/page/${currentPage}/`;
+    ? `${SITE_URL}/blog`
+    : `${SITE_URL}/blog/page/${currentPage}`;
 
 
   return {

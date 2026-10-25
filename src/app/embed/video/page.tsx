@@ -27,7 +27,7 @@ export const metadata = {
 		title: "Free Video Player Online - No Signup | SopKit",
 		description:
 			"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
-		url: `${SITE_URL}/embed/video/`,
+		url: `${SITE_URL}/embed/video`,
 		siteName: "SopKit",
 		images: [
 			{
@@ -50,7 +50,7 @@ export const metadata = {
 	},
 
 	alternates: {
-		canonical: `${SITE_URL}/embed/video/`,
+		canonical: `${SITE_URL}/embed/video`,
 	},
 };
 
@@ -60,7 +60,7 @@ const jsonLd = {
 	name: "Video",
 	description:
 		"Professional video tool. Free online processing with high-quality results. No registration required, instant results.",
-	url: `${SITE_URL}/embed/video/`,
+	url: `${SITE_URL}/embed/video`,
 	applicationCategory: "UtilityApplication",
 	operatingSystem: "Any",
 	permissions: "browser",

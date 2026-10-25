@@ -46,7 +46,7 @@ export default async function ToolPage() {
 						"@type": "ContactPage",
 						name: "Contact SopKit",
 						description: tool.description,
-						url: `${SITE_URL}/contact/`,
+						url: `${SITE_URL}/contact`,
 						mainEntity: {
 							"@type": "ContactPoint",
 							email: SITE_CONFIG.contactEmail,

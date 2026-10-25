@@ -7,7 +7,6 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 
 const toolsJsonPath = path.join(rootDir, 'src', 'constants', 'tools.json');
-const blogDataPath = path.join(rootDir, 'src', 'constants', 'blog-data.ts');
 
 const publicDir = path.join(rootDir, 'public');
 
@@ -30,20 +29,20 @@ const LAST_MODIFIED = (() => {
 
 console.log('🚀 Generating unified static sitemap.xml and robots.txt...');
 
-// 1. Read tools
+// 1. Read tools. Each tool inherits its parent category slug (raw tools.json
+// entries carry no category field) — the same derivation getAllTools uses,
+// because the monetization decision below needs the real category.
 const toolsData = JSON.parse(fs.readFileSync(toolsJsonPath, 'utf8'));
-const allTools: Array<{ id: string; name: string; route: string; popular?: boolean }> = [];
+const allTools: Array<{ id: string; name: string; route: string; popular?: boolean; category: string }> = [];
 
-for (const category of Object.values(toolsData.categories || {}) as any[]) {
+for (const [catKey, category] of Object.entries(toolsData.categories || {}) as any[]) {
   if (category && Array.isArray(category.tools)) {
-    allTools.push(...category.tools);
+    const catSlug = category.slug || catKey;
+    for (const tool of category.tools) {
+      allTools.push({ ...tool, category: tool.category || catSlug });
+    }
   }
 }
-
-// 2. Read blogs (parse slugs from blog-data.ts)
-const blogFileContent = fs.readFileSync(blogDataPath, 'utf8');
-const blogSlugMatches = blogFileContent.match(/slug:\s*["']([^"']+)["']/g) || [];
-const blogSlugs = blogSlugMatches.map((m) => m.replace(/slug:\s*["']/, '').replace(/["']/, ''));
 
 // 3. Static Hub & Landing Pages
 const staticPages = [
@@ -53,24 +52,24 @@ const staticPages = [
   { path: '/architecture-canvas', priority: '0.90', changefreq: 'daily' },
   { path: '/image-tools', priority: '0.90', changefreq: 'weekly' },
   { path: '/pdf-tools', priority: '0.90', changefreq: 'weekly' },
-  { path: '/developer-tools', priority: '0.90', changefreq: 'weekly' },
+  { path: '/developer-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/video-tools', priority: '0.90', changefreq: 'weekly' },
   { path: '/audio-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/text-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/seo-tools', priority: '0.85', changefreq: 'weekly' },
-  { path: '/calculators', priority: '0.80', changefreq: 'weekly' },
+  { path: '/calculators', priority: '0.75', changefreq: 'weekly' },
   { path: '/calculator-tools', priority: '0.85', changefreq: 'weekly' },
   { path: '/converter-tools', priority: '0.85', changefreq: 'weekly' },
   { path: '/exam-tools', priority: '0.90', changefreq: 'weekly' },
-  { path: '/exam-image-tools', priority: '0.90', changefreq: 'weekly' },
-  { path: '/student-calculators', priority: '0.85', changefreq: 'weekly' },
-  { path: '/student-tools', priority: '0.85', changefreq: 'weekly' },
-  { path: '/small-business-tools', priority: '0.85', changefreq: 'weekly' },
+  { path: '/exam-image-tools', priority: '0.92', changefreq: 'weekly' },
+  { path: '/student-calculators', priority: '0.90', changefreq: 'weekly' },
+  { path: '/student-tools', priority: '0.84', changefreq: 'weekly' },
+  { path: '/small-business-tools', priority: '0.86', changefreq: 'weekly' },
   { path: '/local-business-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/business-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/finance-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/social-media-tools', priority: '0.80', changefreq: 'weekly' },
-  { path: '/qr-tools', priority: '0.85', changefreq: 'weekly' },
+  { path: '/qr-tools', priority: '0.88', changefreq: 'weekly' },
   { path: '/ai-tools', priority: '0.90', changefreq: 'weekly' },
   { path: '/ai-writing-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/api-key-tester', priority: '0.90', changefreq: 'weekly' },
@@ -150,26 +149,37 @@ for (const p of staticPages) {
   registerUrl(p.path, p.priority, p.changefreq);
 }
 
-// 2. Add tools
+// 2. Add tools. Inclusion uses the same monetization decision as the Next.js
+// route sitemap (src/app/sitemap.ts): generateToolMetadata emits noindex for
+// non-indexable tools, so those URLs must not appear in any sitemap. Do NOT
+// reintroduce a hand-rolled slug/category regex here — it drifted from the
+// decision function and listed 45 noindex tools (every youtube-* tool, saver
+// tools, credit-card-validator, ...). If the decision module cannot load,
+// this script must fail loudly rather than emit a wrong sitemap, so there
+// is deliberately no fallback here.
+const { getMonetizationDecision } = await import('../src/data/monetization');
 for (const tool of allTools) {
   if (!tool.route || !tool.route.startsWith('/')) continue;
-  const slug = tool.id || tool.route.replace(/^\//, '');
-  const category = (tool as any).category || '';
-  if (/downloader|media-saver|clip-saver|thumbnail-downloader|story-downloader|reel-downloader|api-key-tester|password|credential|token|secret-key|private-key|jwt|fake-chat-generator/i.test(slug)) continue;
-  if (/youtube/i.test(category)) continue;
   if (tool.route.includes('?')) continue;
   if (tool.route.startsWith('/search')) continue;
-  const priority = tool.popular ? '0.90' : '0.80';
+  if (!getMonetizationDecision({ slug: tool.id, category: tool.category }).indexable) continue;
+  const priority = tool.popular ? '0.90' : '0.75';
   registerUrl(tool.route, priority, 'weekly');
 }
 
-// 3. Add blog archive pages and posts
-const blogArchivePages = Math.max(1, Math.ceil(blogSlugs.length / 12));
+// 3. Add blog archive pages and posts. Import the real article list: the old
+// regex scrape of blog-data.ts only matched the unquoted-key entry style
+// (`slug: "..."`) and silently dropped the 67 JSON-style entries
+// (`"slug": "..."`), along with archive pages 4-9. Posts use their own
+// article date as lastmod, matching the route sitemap. No silent fallback:
+// a failed import must fail the script, not emit a partial sitemap.
+const { blogs } = await import('../src/constants/blog-data');
+const blogArchivePages = Math.max(1, Math.ceil(blogs.length / 12));
 for (let page = 2; page <= blogArchivePages; page++) {
   registerUrl(`/blog/page/${page}`, '0.75', 'daily');
 }
-for (const slug of blogSlugs) {
-  registerUrl(`/blog/${slug}`, '0.70', 'monthly');
+for (const article of blogs) {
+  registerUrl(`/blog/${article.slug}`, '0.70', 'monthly', article.date);
 }
 
 // 4. Add SEO opportunity pages
@@ -192,7 +202,8 @@ try {
   const { intentData } = await import('../src/lib/intent-data');
   if (intentData && typeof intentData === 'object') {
     for (const slug of Object.keys(intentData)) {
-      if (/downloader|media-saver|clip-saver|thumbnail-downloader|story-downloader|reel-downloader|api-key-tester|password|credential|token|secret-key|private-key|jwt|fake-chat-generator/i.test(slug)) continue;
+      // Same decision as the route sitemap (slug only, no category there).
+      if (!getMonetizationDecision({ slug }).indexable) continue;
       registerUrl(`/${slug}`, '0.85', 'weekly');
     }
   }
@@ -232,7 +243,13 @@ ${urlNodes.join('\n')}
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapXml, 'utf8');
 console.log(`✅ Generated unified public/sitemap.xml with ${entriesMap.size} URLs.`);
 
-// Generate public/robots.txt
+// Generate public/robots.txt. This template MUST mirror src/app/robots.ts
+// exactly (same agents, same order, same disallow list): the old template
+// drifted — it omitted /cdn-cgi/ from the * block, /youtube-redirects/
+// from the Googlebot/Bingbot blocks, gave every AI crawler an allow-all
+// block with no disallows, and dropped the Yandex/Slurp/DuckDuckBot/
+// Baiduspider blocks. Keep the two files in agreement; if robots.ts
+// policy changes, change this template in the same commit.
 const robotsTxt = `# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
@@ -242,6 +259,7 @@ Disallow: /private/
 Disallow: /handler/
 Disallow: /embed/
 Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
 Disallow: /search
 Disallow: /search/
 
@@ -252,7 +270,10 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /handler/
 Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
 Disallow: /search
+Disallow: /search/
 
 User-agent: Bingbot
 Allow: /
@@ -261,41 +282,191 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /handler/
 Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
 Disallow: /search
+Disallow: /search/
+
+User-agent: Yandex
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
+
+User-agent: Slurp
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 # AI Search & LLM Crawlers
 User-agent: GPTBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: Google-Extended
 Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Gemini
-Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: Bytespider
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: CCBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
+
+User-agent: Gemini
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 User-agent: YouBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /handler/
+Disallow: /embed/
+Disallow: /youtube-redirects/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 Sitemap: ${BASE_URL}/sitemap.xml
 Host: ${BASE_URL}

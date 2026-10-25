@@ -40,7 +40,7 @@
     <loc>https://sopkit.space/developer-tools</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://sopkit.space/video-tools</loc>
@@ -70,7 +70,7 @@
     <loc>https://sopkit.space/calculators</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/calculator-tools</loc>
@@ -94,25 +94,25 @@
     <loc>https://sopkit.space/exam-image-tools</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://sopkit.space/student-calculators</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://sopkit.space/student-tools</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.84</priority>
   </url>
   <url>
     <loc>https://sopkit.space/small-business-tools</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.86</priority>
   </url>
   <url>
     <loc>https://sopkit.space/local-business-tools</loc>
@@ -142,7 +142,7 @@
     <loc>https://sopkit.space/qr-tools</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.88</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ai-tools</loc>
@@ -400,49 +400,49 @@
     <loc>https://sopkit.space/qr-code-reader</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/bio-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/business-name-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ai-poem-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/excuse-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/font-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/number-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/poetry-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/rent-receipt-generator</loc>
@@ -460,7 +460,7 @@
     <loc>https://sopkit.space/leave-application-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/resignation-letter-generator</loc>
@@ -484,25 +484,25 @@
     <loc>https://sopkit.space/instagram-caption-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/hashtag-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/slogan-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/logo-idea-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/google-business-profile-description-generator</loc>
@@ -520,7 +520,7 @@
     <loc>https://sopkit.space/restaurant-menu-description-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/client-proposal-generator</loc>
@@ -532,7 +532,7 @@
     <loc>https://sopkit.space/payment-reminder-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/product-description-generator</loc>
@@ -544,7 +544,7 @@
     <loc>https://sopkit.space/refund-policy-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/love-calculator</loc>
@@ -568,25 +568,25 @@
     <loc>https://sopkit.space/story-idea-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/pixel-art-maker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/avatar-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ascii-art-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/gemini-watermark-remover</loc>
@@ -604,37 +604,37 @@
     <loc>https://sopkit.space/webp-to-png</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ico-to-png</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/jpg-to-png</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/png-to-jpg</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/svg-to-jpg</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/webp-to-jpg</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/favicon-generator-pro</loc>
@@ -646,7 +646,7 @@
     <loc>https://sopkit.space/remove-image-metadata</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/image-color-picker</loc>
@@ -664,7 +664,7 @@
     <loc>https://sopkit.space/resize-image-cm-mm-inch</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/passport-photo-maker-india</loc>
@@ -676,7 +676,7 @@
     <loc>https://sopkit.space/aadhaar-pan-photo-resizer</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/background-remover</loc>
@@ -688,13 +688,13 @@
     <loc>https://sopkit.space/base64-to-image-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/convert-to-ico</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/exif-reader</loc>
@@ -712,7 +712,7 @@
     <loc>https://sopkit.space/flip-image</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/image-compressor</loc>
@@ -730,7 +730,7 @@
     <loc>https://sopkit.space/image-cropper</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/circular-image-crop</loc>
@@ -754,49 +754,49 @@
     <loc>https://sopkit.space/image-enlarger</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/image-resizer</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/image-to-base64</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/jpg-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/jpg-to-bmp-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/jpg-to-gif-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/jpg-to-ico-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/jpg-to-webp-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/logo-generator</loc>
@@ -814,43 +814,43 @@
     <loc>https://sopkit.space/png-to-bmp-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/png-to-gif-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/png-to-ico-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/png-to-webp-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/rotate-image</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/icon-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/image-editor</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/compress-image-to-20kb</loc>
@@ -862,61 +862,61 @@
     <loc>https://sopkit.space/resize-image-in-cm</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/compress-image-to-10kb</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/compress-image-to-30kb</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/compress-image-to-100kb</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/compress-image-to-200kb</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/resize-image-in-mm</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/resize-image-in-pixels</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/image-dpi-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-reverser</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/remove-duplicate-lines</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/markdown-to-html</loc>
@@ -970,13 +970,13 @@
     <loc>https://sopkit.space/emoji-text-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/random-word-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/resume-ats-score-checker</loc>
@@ -988,7 +988,7 @@
     <loc>https://sopkit.space/resume-keyword-matcher</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/cover-letter-generator</loc>
@@ -1000,103 +1000,103 @@
     <loc>https://sopkit.space/linkedin-headline-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/internship-message-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/article-rewriter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/comma-separator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/line-sorter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/lorem-ipsum</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/number-to-word-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/remove-line-breaks</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-compare</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-repeater</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-sorter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-to-hashtags-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-to-slug-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-to-tags-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/word-counter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/word-to-number-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/markdown-to-text</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/kruti-dev-to-unicode</loc>
@@ -1108,13 +1108,13 @@
     <loc>https://sopkit.space/unicode-to-kruti-dev</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/hinglish-to-hindi</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/hindi-typing-tool</loc>
@@ -1144,7 +1144,7 @@
     <loc>https://sopkit.space/remove-pages-from-pdf</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/pdf-to-jpg-converter</loc>
@@ -1222,7 +1222,7 @@
     <loc>https://sopkit.space/pdf-protect</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/pdf-to-image</loc>
@@ -1240,7 +1240,7 @@
     <loc>https://sopkit.space/pdf-unlocker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/word-to-pdf</loc>
@@ -1252,259 +1252,13 @@
     <loc>https://sopkit.space/pdf-grayscale</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/pdf-repair</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/video-converter</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/video-editor</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/ai-video-summarizer</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/fb-video-saver</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/ig-highlights-saver</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/insta-reels-saver</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/save-fb-stories-anonymous</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/save-ig-content</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/save-insta-pfp</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/save-instagram-clips</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/save-reels-video</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/save-snaps-to-gallery</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/save-tiktok-mp4</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/save-twitter-videos</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/snapchat-saver-online</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/tiktok-saver-no-watermark</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-channel-age-checker</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-channel-finder</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-channel-id-extractor</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-playlist-link-extractor</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-channel-statistics</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-comment-picker</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-description-extractor</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-embed-code-generator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-hashtag-extractor</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-hashtag-generator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-money-calculator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-region-restriction-checker</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-subscribe-link-generator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-tag-extractor</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-tag-generator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-timestamp-link-generator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-title-extractor</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-title-length-checker</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-video-count-checker</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-video-statistics</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-title-capitalizer</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-views-ratio-calculator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-title-generator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-description-generator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/youtube-thumbnail-text-generator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-to-speech</loc>
@@ -1516,37 +1270,25 @@
     <loc>https://sopkit.space/guitar-tuner</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/free-mp3-extractor</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/modify-mp3-file</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/mp3-from-tiktok</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/mp4-to-mp3</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/shrink-mp3-size</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/audio-equalizer</loc>
@@ -1570,7 +1312,7 @@
     <loc>https://sopkit.space/slug-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/json-to-typescript</loc>
@@ -1624,181 +1366,181 @@
     <loc>https://sopkit.space/crontab-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/xml-formatter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/html-entity-encoder</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/random-name-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/binary-to-hex-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ascii-to-binary-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ascii-to-text-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/binary-to-ascii-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/binary-to-decimal-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/binary-to-octal-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/binary-to-text-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/css-beautifier</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/css-minifier</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/csv-to-json-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/decimal-to-binary-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/decimal-to-hex-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/decimal-to-octal-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/decimal-to-text-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/hex-to-binary-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/hex-to-decimal-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/hex-to-octal-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/hex-to-text-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/html-beautifier</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/html-decoder</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/html-encoder</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/javascript-beautifier</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/javascript-deobfuscator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/javascript-minifier</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/javascript-obfuscator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/json-editor</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/json-formatter</loc>
@@ -1810,139 +1552,139 @@
     <loc>https://sopkit.space/json-minify</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/json-to-csv-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/json-to-json-schema</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/json-to-text-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/json-to-tsv-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/json-to-xml-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/json-validator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/json-viewer</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/octal-to-binary-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/octal-to-decimal-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/octal-to-hex-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/octal-to-text-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-to-ascii-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-to-binary-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-to-decimal-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-to-hex-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-to-octal-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/tsv-to-json-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/xml-to-json-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/base64-tool</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/css-gradient-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/css-shadow-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/code-formatter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/javascript-notebook</loc>
@@ -1984,223 +1726,217 @@
     <loc>https://sopkit.space/adsense-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/age-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/angle-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/apparent-power-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/area-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/average-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/base64-decode</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/base64-encode</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/charge-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/color-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/confidence-interval-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/convert-srt-to-vtt</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/convert-vtt-to-srt</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/cpm-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/credit-card-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/credit-card-validator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/currency-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/current-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/digital-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/disclaimer-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/discount-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/dns-records-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/domain-age-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/domain-to-ip-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/each-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/energy-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/facebook-id-finder</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/faq-schema-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/frequency-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/get-http-headers</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/gst-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/hex-to-rgb-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/hosting-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/htaccess-redirect-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/http-status-code-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/illuminance-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/indexnow</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/internet-speed-test</loc>
@@ -2212,289 +1948,283 @@
     <loc>https://sopkit.space/ip-address-lookup</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/length-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/loan-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/margin-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/md5-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/sha256-hash-generator</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/number-to-roman-numerals</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/pace-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/page-size-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/parts-per-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/paypal-fee-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/percentage-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/power-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/pressure-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/privacy-policy-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/probability-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/qr-code-decoder</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/qr-code-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/random-uuid-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/reactive-energy-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/reactive-power-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/redirect-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/rgb-to-hex-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/roman-numerals-to-number</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/sales-tax-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/screen-resolution-simulator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/server-status-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/speed-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/temperature-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/time-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/torque-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/url-decode</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/url-encode</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/url-opener</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/url-parser</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/url-rewriting-tool</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/url-shortener</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/utm-builder</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/voltage-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/volume-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/volumetric-flow-rate-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/weight-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/what-is-my-browser</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/what-is-my-ip-address</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/what-is-my-screen-resolution</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/what-is-my-user-agent</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/whois-domain-lookup</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/wordpress-theme-detector</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/whatsapp-link-generator</loc>
@@ -2518,13 +2248,13 @@
     <loc>https://sopkit.space/domain-name-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/website-cost-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/seo-title-meta-description-generator</loc>
@@ -2536,7 +2266,7 @@
     <loc>https://sopkit.space/robots-txt-sitemap-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/keyword-research-tool</loc>
@@ -2572,43 +2302,43 @@
     <loc>https://sopkit.space/google-cache-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/google-index-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/keyword-density-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/keywords-suggestion-tool</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/meta-tag-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/open-graph-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/open-graph-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/seotoolkit</loc>
@@ -2620,7 +2350,7 @@
     <loc>https://sopkit.space/twitter-card-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/visual-sitemap</loc>
@@ -2632,19 +2362,19 @@
     <loc>https://sopkit.space/website-ranking-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/midjourney-prompt-builder</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ai-persona-prompt-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ai-prompt-improver</loc>
@@ -2656,61 +2386,61 @@
     <loc>https://sopkit.space/prompt-template-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/negative-prompt-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/image-prompt-extender</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/llm-output-cleaner</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/text-chunk-splitter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/few-shot-formatter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/prompt-a-b-comparator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/xml-prompt-formatter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/roman-numerals-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/number-to-words-converter</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/date-difference-calculator</loc>
@@ -2722,7 +2452,7 @@
     <loc>https://sopkit.space/working-days-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/gpa-to-4-scale-converter</loc>
@@ -2734,19 +2464,19 @@
     <loc>https://sopkit.space/rd-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/gratuity-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/epf-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/invoice-generator-india</loc>
@@ -2776,7 +2506,7 @@
     <loc>https://sopkit.space/fd-calculator-india</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/salary-calculator-india</loc>
@@ -2794,7 +2524,7 @@
     <loc>https://sopkit.space/sgpa-to-cgpa-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/attendance-shortage-calculator</loc>
@@ -2806,7 +2536,7 @@
     <loc>https://sopkit.space/marks-needed-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/75-attendance-calculator</loc>
@@ -2818,13 +2548,13 @@
     <loc>https://sopkit.space/sgpa-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/cgpa-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/cgpa-to-percentage-calculator</loc>
@@ -2836,91 +2566,91 @@
     <loc>https://sopkit.space/required-marks-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/brick-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/paint-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/tile-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/compound-interest-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/mortgage-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/car-loan-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/roi-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/savings-goal-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/tip-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/bmi-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/fuel-cost-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/inflation-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/break-even-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/food-cost-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/freelance-rate-calculator</loc>
@@ -2932,43 +2662,43 @@
     <loc>https://sopkit.space/rent-affordability-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/home-loan-eligibility-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/property-roi-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/calorie-deficit-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/protein-intake-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/bmi-ideal-weight-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/water-intake-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/profit-margin-calculator</loc>
@@ -3040,61 +2770,61 @@
     <loc>https://sopkit.space/cuet-photo-resizer</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/railway-exam-photo-resizer</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ibps-photo-resizer</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/pan-card-photo-resizer</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/passport-photo-maker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/photo-compressor-under-50kb</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/form-image-size-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/photo-name-date-editor</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/jpg-to-pdf-exam-forms</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/pdf-compressor-under-200kb</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ssc-mts-photo-resizer</loc>
@@ -3124,19 +2854,19 @@
     <loc>https://sopkit.space/macro-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ideal-body-weight-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/body-fat-calculator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/pii-scrubber</loc>
@@ -3166,61 +2896,61 @@
     <loc>https://sopkit.space/spam-word-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/phishing-url-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/security-headers-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ssl-certificate-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/domain-reputation-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/cookie-consent-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/gdpr-compliance-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/data-retention-policy-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/email-header-analyzer</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ai-image-detector</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/data-breach-checker</loc>
@@ -3232,43 +2962,43 @@
     <loc>https://sopkit.space/email-deliverability-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/privacy-policy-auditor</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/email-preview-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/spam-score-checker</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/consent-management-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/breach-notification-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/data-anonymization-report-generator</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/url-extractor</loc>
@@ -3286,13 +3016,13 @@
     <loc>https://sopkit.space/phone-number-extractor</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/ip-address-extractor</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/domain-extractor</loc>
@@ -3334,7 +3064,7 @@
     <loc>https://sopkit.space/csv-column-extractor</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/page/2</loc>
@@ -3349,200 +3079,638 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sopkit.space/blog/how-to-download-tiktok-videos-without-watermark</loc>
+    <loc>https://sopkit.space/blog/page/4</loc>
     <lastmod>2026-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/page/5</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/page/6</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/page/7</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/page/8</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/page/9</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/how-to-download-tiktok-videos-without-watermark</loc>
+    <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/how-to-download-instagram-reels</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/download-reddit-videos-with-sound</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/download-videos-from-any-website</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/is-downloading-videos-legal-copyright-guide</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/make-your-own-custom-terabox-telegram-bot</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/make-your-own-terabox-video-player</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/y2mate-youtube-to-mp3-converter</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/convert-youtube-videos-high-quality-320kbps-mp3</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/publer-reviews</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/best-free-youtube-to-mp3-converters-2025</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/extract-audio-from-video-methods</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/cancel-netflix-membership-guide</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/best-urdu-english-translators-2025</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/best-pdf-document-translators</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/best-paraphrasing-tools-rewrite-text</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/top-sentence-rewriters-review</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2025-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/hermes-agent-review-956k-stars-self-improving-ai-agent-april-2026-11le</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/how-to-run-gemma-4-locally-with-ollama-llamacpp-and-vllm-3n44</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/how-to-master-ai-image-generation-2026-guide</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/ultimate-guide-to-ai-generated-music-2026</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/pro-json-workflows-formatter-conversion-guide</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/2026-seo-audit-checklist-dominate-search</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/maximizing-pdf-productivity-top-workflows-2026</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/must-have-free-coding-tools-students-2026</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/how-to-use-ai-voice-generators-professional-voiceovers</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/complete-guide-to-image-conversion-webp-avif-2026</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/standardizing-engineering-workflows-precision-unit-converters</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/youtube-channel-growth-tag-title-generators-rank-1</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/shift-to-browser-based-privacy-local-tools-winning-2026</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/ssc-mts-photo-size-requirements</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/rrb-group-d-photo-size-guide</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/exam-photo-size-comparison-chart</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/stylish-names-for-bgmi-free-fire</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/ai-saree-photo-trend-explained</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/how-to-compress-image-without-losing-quality</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/how-to-compress-pdf-to-200kb</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/why-government-forms-reject-your-photo</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/json-formatter-vs-validator-difference</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/base64-encoding-explained</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/uuid-v4-vs-v7-comparison</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/new-vs-old-tax-regime-fy-2026-27</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/gst-calculator-how-to-calculate</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/cgpa-to-percentage-official-formula</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/attendance-shortage-calculator-guide</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/instagram-bio-fancy-fonts-guide</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/love-calculator-how-it-works</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/free-ai-prompts-linkedin-headshots</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/resume-ats-score-explained</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/7-resume-mistakes-ats-rejection</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/what-is-robots-txt-guide</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/core-web-vitals-explained-simply</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/devanagari-unicode-converter-guide</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/text-to-handwriting-converter-guide</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/560-free-tools-sopkit-directory</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/use-kimi-k3-for-free</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/how-to-resize-photo-for-ssc-exam</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/upsc-photo-signature-size-guide</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://sopkit.space/blog/passport-photo-size-guide-countries</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/compress-pdf-under-1mb</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/merge-multiple-pdf-files-into-one</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/format-json-online-developer-guide</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/compress-images-for-websites-without-quality-loss</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/remove-exif-metadata-from-photos-before-sharing</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/compress-pdf-under-100kb-for-online-forms</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/merge-scanned-documents-into-one-pdf</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/convert-images-to-pdf-for-forms-and-submissions</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/convert-pdf-pages-to-jpg-and-png</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/split-pdf-by-pages-and-page-ranges</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/compress-image-to-50kb-or-100kb</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/resize-image-in-cm-mm-inches-for-printing</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/webp-to-jpg-when-and-why-to-convert</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/jpg-to-png-for-transparent-graphics</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/create-favicon-files-for-a-modern-website</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/remove-exif-metadata-from-images-privacy-guide</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/json-formatter-vs-json-minifier</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/debug-invalid-json-api-response</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/xml-formatter-beautifier-developer-guide</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/url-encoding-decoding-explained</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/base64-encoding-decoding-developer-guide</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/sha256-hash-checksum-file-integrity-guide</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/write-seo-title-and-meta-description-that-match-intent</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/open-graph-images-and-social-preview-guide</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/robots-txt-and-xml-sitemap-basics</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/optimize-images-for-website-speed</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/markdown-to-pdf-for-notes-and-documentation</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/clean-duplicate-lines-from-text-data</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/resume-ats-score-and-keyword-matching-guide</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/pdf-workflow-for-student-assignments</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/clean-and-convert-documents-for-online-applications</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/privacy-first-online-file-workflows</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/reduce-pdf-file-size-for-email</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/image-file-formats-explained-for-beginners</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/pdf-compression-quality-vs-file-size</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/secure-document-sharing-checklist</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/online-image-compression-for-seo-and-performance</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/convert-and-compress-images-for-email</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/developer-workflow-json-url-base64</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/pdf-page-ordering-and-document-quality-checklist</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/blog/best-browser-tools-for-developers-daily-tasks</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>

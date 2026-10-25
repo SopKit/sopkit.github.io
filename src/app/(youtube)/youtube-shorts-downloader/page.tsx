@@ -9,12 +9,12 @@ export const metadata = {
 	description: "Download YouTube Shorts videos in high quality for offline viewing",
 	keywords: "youtube shorts downloader, free online tool, no signup, youtube-shorts-downloader, free youtube-shorts-downloader, Youtube Shorts Downloader online, YouTube tool, free YouTube utility, YouTube optimizer, video analytics, SopKit",
 	alternates: {
-		canonical: `${SITE_URL}/youtube-shorts-downloader/`,
+		canonical: `${SITE_URL}/youtube-shorts-downloader`,
 	},
 	openGraph: {
 		title: "Free YouTube Shorts Downloader Online - No Signup | SopKit",
 		description: "Download YouTube Shorts videos in high quality for offline viewing",
-		url: `${SITE_URL}/youtube-shorts-downloader/`,
+		url: `${SITE_URL}/youtube-shorts-downloader`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

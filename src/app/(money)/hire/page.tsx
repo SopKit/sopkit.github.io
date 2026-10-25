@@ -6,12 +6,12 @@ export const metadata = {
 	title: "Hire Online Free | SopKit",
 	description: "Free online Hire tool. Fast, secure, and privacy-focused browser utility. No signup, no uploads, 100% private browser-based tool.",
 	alternates: {
-		canonical: `${SITE_URL}/hire/`,
+		canonical: `${SITE_URL}/hire`,
 	},
 	openGraph: {
 		title: "Hire Online Free - No Signup | SopKit",
 		description: "Free online Hire tool. Fast, secure, and privacy-focused browser utility. No signup, no uploads, 100% private browser-based tool.",
-		url: `${SITE_URL}/hire/`,
+		url: `${SITE_URL}/hire`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",

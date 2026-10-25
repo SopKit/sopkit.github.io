@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Free DevSpeed Online — Developer Code Typing Speed Benchmark",
   description: "Test and benchmark your coding typing speed with real syntax in TypeScript, Python, Rust, Go, and SQL. Measure WPM, CPM, accuracy, and bracket precision.",
   alternates: {
-    canonical: "https://sopkit.space/dev-speed/",
+    canonical: "https://sopkit.space/dev-speed",
   },
   openGraph: {
     title: "DevSpeed — Developer Code Typing Speed Test",
     description: "Benchmark your coding speed with real code snippets in TypeScript, Rust, Python, Go, and SQL.",
-    url: "https://sopkit.space/dev-speed/",
+    url: "https://sopkit.space/dev-speed",
     type: "website",
   },
 };
@@ -31,7 +31,7 @@ export default function DevSpeedPage() {
       priceCurrency: "USD",
     },
     description: "Interactive typing speed test and symbol benchmark designed specifically for programmers across modern software engineering languages.",
-    url: "https://sopkit.space/dev-speed/",
+    url: "https://sopkit.space/dev-speed",
   };
 
   return (

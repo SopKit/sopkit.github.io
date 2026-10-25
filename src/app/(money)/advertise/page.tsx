@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
 	title: "Advertise on SopKit - Sponsor Tools and Categories",
 	description: "Sponsor a SopKit category, tool page, newsletter placement, or contextual sponsored slot for software, education, design, and developer audiences.",
-	alternates: { canonical: `${SITE_URL}/advertise/` },
+	alternates: { canonical: `${SITE_URL}/advertise` },
 };
 
 const placements = [

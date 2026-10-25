@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		// Category hub pages (priority 0.8-0.9)
 		{ url: `${SITE_URL}/image-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/exam-image-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.92 },
+		{ url: `${SITE_URL}/extraction-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/pdf-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/video-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/audio-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
