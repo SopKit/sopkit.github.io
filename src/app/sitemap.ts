@@ -26,6 +26,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	const toolLastmod = toolLastmodData.lastmod as Record<string, string>;
 
 	// Use actual blog dates where available, siteUpdated for static pages
+	// Static entries are the ONLY way a URL enters the sitemap without
+	// passing the monetization indexable filter (they are prepended and
+	// win the first-registration dedup below), so a static entry must
+	// never name a page that renders noindex or redirects. Deliberately
+	// EXCLUDED on those grounds (see scripts/validate-sitemap-indexable.ts,
+	// which enforces this in prebuild):
+	//   - /video-tools, /api-key-tester: hub pages whose generateToolMetadata
+	//     call renders robots noindex (risky video / credential categories).
+	//   - /api-key-testers, /pro, /hire: bare permanentRedirect pages
+	//     (308, no indexable content; /pro additionally carries noindex).
+	// The pages themselves stay live and internally linked; only their
+	// sitemap listings are removed. /youtube-tools is excluded the same
+	// way (literal noindex hub page).
 	const staticPages: MetadataRoute.Sitemap = [
 		{ url: `${SITE_URL}/`, lastModified: siteUpdated, changeFrequency: "daily", priority: 1.0 },
 		{ url: `${SITE_URL}/about`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
@@ -44,12 +57,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/exam-image-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.92 },
 		{ url: `${SITE_URL}/extraction-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/pdf-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
-		{ url: `${SITE_URL}/video-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/audio-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/text-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/seo-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
 		{ url: `${SITE_URL}/developer-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
-		{ url: `${SITE_URL}/api-key-tester`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/ai-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/qr-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.88 },
 		{ url: `${SITE_URL}/small-business-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.86 },
@@ -90,9 +101,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/pricing`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/resources`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/trust-center`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
-		{ url: `${SITE_URL}/hire`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
-		{ url: `${SITE_URL}/pro`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
-		{ url: `${SITE_URL}/api-key-testers`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
 	];
 
 	try {

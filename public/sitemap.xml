@@ -43,12 +43,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sopkit.space/video-tools</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
     <loc>https://sopkit.space/audio-tools</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -157,18 +151,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sopkit.space/api-key-tester</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/api-key-testers</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://sopkit.space/generators</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -205,12 +187,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sopkit.space/pro</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://sopkit.space/pricing</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -224,12 +200,6 @@
   </url>
   <url>
     <loc>https://sopkit.space/trust-center</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://sopkit.space/hire</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>

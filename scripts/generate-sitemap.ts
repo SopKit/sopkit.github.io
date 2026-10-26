@@ -62,6 +62,14 @@ for (const [catKey, category] of Object.entries(toolsData.categories || {}) as a
 }
 
 // 3. Static Hub & Landing Pages
+// Static entries bypass the monetization indexable filter below (they are
+// registered before tools and registerUrl keeps the first registration),
+// so a static entry must never name a noindex or redirect page.
+// Deliberately EXCLUDED: /video-tools and /api-key-tester (hub pages
+// whose generateToolMetadata call renders robots noindex), and
+// /api-key-testers, /pro, /hire (bare permanentRedirect pages, 308, no
+// indexable content). Enforced by scripts/validate-sitemap-indexable.ts.
+// The pages themselves stay live and internally linked.
 const staticPages = [
   { path: '/', priority: '1.0', changefreq: 'daily' },
   { path: '/tools', priority: '0.95', changefreq: 'daily' },
@@ -70,7 +78,6 @@ const staticPages = [
   { path: '/image-tools', priority: '0.90', changefreq: 'weekly' },
   { path: '/pdf-tools', priority: '0.90', changefreq: 'weekly' },
   { path: '/developer-tools', priority: '0.80', changefreq: 'weekly' },
-  { path: '/video-tools', priority: '0.90', changefreq: 'weekly' },
   { path: '/audio-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/text-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/seo-tools', priority: '0.85', changefreq: 'weekly' },
@@ -89,19 +96,15 @@ const staticPages = [
   { path: '/qr-tools', priority: '0.88', changefreq: 'weekly' },
   { path: '/ai-tools', priority: '0.90', changefreq: 'weekly' },
   { path: '/ai-writing-tools', priority: '0.80', changefreq: 'weekly' },
-  { path: '/api-key-tester', priority: '0.90', changefreq: 'weekly' },
-  { path: '/api-key-testers', priority: '0.85', changefreq: 'weekly' },
   { path: '/generators', priority: '0.80', changefreq: 'weekly' },
   { path: '/other-tools', priority: '0.75', changefreq: 'weekly' },
   { path: '/extraction-tools', priority: '0.90', changefreq: 'weekly' },
   { path: '/packages', priority: '0.90', changefreq: 'daily' },
   { path: '/startup-directories', priority: '0.85', changefreq: 'daily' },
   { path: '/new-tools', priority: '0.80', changefreq: 'daily' },
-  { path: '/pro', priority: '0.85', changefreq: 'weekly' },
   { path: '/pricing', priority: '0.70', changefreq: 'monthly' },
   { path: '/resources', priority: '0.70', changefreq: 'monthly' },
   { path: '/trust-center', priority: '0.70', changefreq: 'monthly' },
-  { path: '/hire', priority: '0.70', changefreq: 'monthly' },
   { path: '/blog', priority: '0.80', changefreq: 'daily' },
   { path: '/tool-guides', priority: '0.70', changefreq: 'weekly' },
   { path: '/about', priority: '0.70', changefreq: 'monthly' },

@@ -8,7 +8,7 @@
   <a href="https://github.com/SopKit/sopkit.github.io/stargazers"><img src="https://img.shields.io/github/stars/SopKit/sopkit.github.io?style=for-the-badge&color=ffd700" alt="GitHub stars" /></a>
   <a href="https://github.com/SopKit/sopkit.github.io/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-2ecc71?style=for-the-badge" alt="License" /></a>
   <a href="https://sopkit.space"><img src="https://img.shields.io/badge/Tools-640%2B%20Live-38bdf8?style=for-the-badge" alt="640+ Tools" /></a>
-  <a href="https://sopkit.space/sitemap.xml"><img src="https://img.shields.io/badge/Sitemap-755%20URLs%20(100%25%20OK)-22c55e?style=for-the-badge" alt="Sitemap Health" /></a>
+  <a href="https://sopkit.space/sitemap.xml"><img src="https://img.shields.io/badge/Sitemap-750%20URLs%20(100%25%20OK)-22c55e?style=for-the-badge" alt="Sitemap Health" /></a>
   <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16%20(App%20Router)-black?style=for-the-badge&logo=next.js" alt="Next.js 16" /></a>
   <a href="https://bun.sh/"><img src="https://img.shields.io/badge/Bun-Fast%20Runtime-FBF0DF?style=for-the-badge&logo=bun&logoColor=black" alt="Bun Runtime" /></a>
   <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind%20CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS v4" /></a>
