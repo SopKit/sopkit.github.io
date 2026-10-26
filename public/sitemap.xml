@@ -61,6 +61,18 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://sopkit.space/privacy-tools</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://sopkit.space/health</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://sopkit.space/calculators</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>

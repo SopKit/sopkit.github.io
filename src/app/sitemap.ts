@@ -60,6 +60,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/audio-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/text-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/seo-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
+		{ url: `${SITE_URL}/privacy-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
+		{ url: `${SITE_URL}/health`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/developer-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/ai-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/qr-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.88 },

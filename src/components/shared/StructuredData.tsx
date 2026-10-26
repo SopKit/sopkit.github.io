@@ -40,6 +40,12 @@ const CATEGORY_HUB_ROUTES: Record<string, string> = {
 	"other-tools": "/other-tools",
 	"exam-tools": "/exam-tools",
 	"extraction-tools": "/extraction-tools",
+	// The privacy-tools registry key and slug are both "privacy-tools",
+	// and its listing page is /privacy-tools.
+	"privacy-tools": "/privacy-tools",
+	// The health registry key and slug are both "health", and its
+	// listing page is /health.
+	"health": "/health",
 	// The guides registry key is "content" but its slug is "guides",
 	// and its listing page is /tool-guides.
 	"guides": "/tool-guides",
@@ -48,13 +54,13 @@ const CATEGORY_HUB_ROUTES: Record<string, string> = {
 // Registry category slugs with no hub page at all. getCategoryHubUrl
 // returns null for these instead of inventing a URL, and callers omit
 // the URL (a name-only breadcrumb/collection item) rather than linking
-// to a 404. company: 2 tools, no company hub page; health: 5 tools,
-// no health hub page; privacy-tools: 23 tools, no privacy hub page
-// (/privacy is the policy page, not a hub); blog: 0 tools.
+// to a 404. company: 2 entries, but they are the /privacy and /terms
+// policy pages, not tools, so no company hub is sensible; blog:
+// 0 tools. (/privacy is the policy page, not a hub, and the
+// privacy-tools hub now lives at /privacy-tools; the health hub now
+// lives at /health.)
 const NO_HUB_CATEGORY_SLUGS: ReadonlySet<string> = new Set([
 	"company",
-	"health",
-	"privacy-tools",
 	"blog",
 ]);
 

@@ -81,6 +81,8 @@ const staticPages = [
   { path: '/audio-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/text-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/seo-tools', priority: '0.85', changefreq: 'weekly' },
+  { path: '/privacy-tools', priority: '0.85', changefreq: 'weekly' },
+  { path: '/health', priority: '0.80', changefreq: 'weekly' },
   { path: '/calculators', priority: '0.75', changefreq: 'weekly' },
   { path: '/calculator-tools', priority: '0.85', changefreq: 'weekly' },
   { path: '/converter-tools', priority: '0.85', changefreq: 'weekly' },
