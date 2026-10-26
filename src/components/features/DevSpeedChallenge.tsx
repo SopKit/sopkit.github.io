@@ -365,7 +365,7 @@ export default function DevSpeedChallenge() {
             <div className="flex items-center gap-3">
               <PillButton
                 onClick={() => {
-                  const shareText = `🚀 I clocked ${netWPM} WPM with ${accuracy}% accuracy on SopKit DevSpeed typing benchmark! Can you beat my score? https://sopkit.space/dev-speed/`;
+                  const shareText = `🚀 I clocked ${netWPM} WPM with ${accuracy}% accuracy on SopKit DevSpeed typing benchmark! Can you beat my score? https://sopkit.space/dev-speed`;
                   if (navigator.clipboard) {
                     navigator.clipboard.writeText(shareText);
                     alert("Score summary copied to clipboard! Share it with your developer friends.");

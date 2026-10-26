@@ -148,7 +148,7 @@ export default function ProductivityRoastGeneratorTool() {
 	const handleCopy = async () => {
 		if (!roast) return;
 		try {
-			await navigator.clipboard.writeText(`🔥 Productivity Roast:\n\n"${roast}"\n\nGet roasted at https://sopkit.space/productivity-roast-generator/`);
+			await navigator.clipboard.writeText(`🔥 Productivity Roast:\n\n"${roast}"\n\nGet roasted on SopKit`);
 			setCopied(true);
 			setTimeout(() => setCopied(false), 2000);
 		} catch (e) {

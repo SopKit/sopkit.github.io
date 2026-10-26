@@ -17,6 +17,12 @@
 //     "student-calculators", invented slugs like
 //     "engineering-sgpa-calculator") is silently dropped by the related
 //     filter today, so it is a dead reference, not a link.
+//   - Every categoryHub breadcrumb URL must resolve to a real page:
+//     a page directory under src/app (route groups stripped, e.g.
+//     src/app/(seo-hubs)/exam-image-tools -> /exam-image-tools), a
+//     registry tool route, or a sibling opportunity route. The intent
+//     page renders it as a breadcrumb link, so a dead hub would be a
+//     link to a 404 on every page in that category.
 //   - No duplicate opportunity slugs, and every opportunity route must
 //     equal "/" + slug (the intent page and sitemap both assume this).
 //
@@ -32,7 +38,7 @@
 // Scope limits, stated plainly:
 //   - Only seo-opportunities.ts is checked here. Intent landers in
 //     src/lib/intent-data.ts use parentToolId, not these fields, and are
-//     not covered; categoryHub breadcrumb URLs are not validated either.
+//     not covered.
 //   - This script is intentionally import-free (fs + regex, mirroring
 //     validate-blog-tool-routes.ts): it checks the committed source text
 //     directly instead of depending on module resolution or tsconfig path
@@ -42,7 +48,8 @@
 //     parentToolSlug, then parentToolRoute, then a single-line
 //     relatedSlugs array, in that order — the shape all 148 entries use.
 //     The script fails if the entry and relatedSlugs counts disagree,
-//     rather than silently zipping mismatched lists.
+//     rather than silently zipping mismatched lists. categoryHub values
+//     are zipped to entries the same way, with the same guard.
 //
 // Run: bun run validate:seo-opportunities (also wired into `prebuild`,
 // after validate-comment-actions and before generate-sitemap).
@@ -130,6 +137,44 @@ for (const match of source.matchAll(relatedPattern)) {
 	);
 }
 
+// Page routes from src/app: a directory containing page.tsx is a page;
+// route-group segments "(...)" are not part of the URL, so they are
+// stripped (src/app/(seo-hubs)/exam-image-tools -> /exam-image-tools).
+// Dynamic segments are not static pages, so they contribute nothing
+// here; categoryHub values are static hub routes.
+const appDir = path.join(rootDir, "src", "app");
+const pageRoutes = new Set<string>();
+const collectPageRoutes = (
+	dir: string,
+	segments: string[],
+	inDynamic: boolean,
+): void => {
+	for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+		if (!entry.isDirectory()) continue;
+		if (entry.name.startsWith("(") && entry.name.endsWith(")")) {
+			collectPageRoutes(path.join(dir, entry.name), segments, inDynamic);
+		} else if (entry.name.startsWith("[") && entry.name.endsWith("]")) {
+			// Dynamic segment: nothing under it is a static route.
+			collectPageRoutes(path.join(dir, entry.name), segments, true);
+		} else {
+			collectPageRoutes(path.join(dir, entry.name), [
+				...segments,
+				entry.name,
+			], inDynamic);
+		}
+	}
+	if (!inDynamic && fs.existsSync(path.join(dir, "page.tsx"))) {
+		pageRoutes.add(`/${segments.join("/")}`);
+	}
+};
+collectPageRoutes(appDir, [], false);
+
+const categoryHubPattern = /categoryHub:\s*"([^"]+)"/g;
+const categoryHubs: string[] = [];
+for (const match of source.matchAll(categoryHubPattern)) {
+	categoryHubs.push(match[1]);
+}
+
 const violations: string[] = [];
 
 if (entries.length === 0) {
@@ -160,6 +205,28 @@ for (const match of source.matchAll(routePattern)) {
 		);
 	}
 }
+
+if (entries.length !== categoryHubs.length) {
+	violations.push(
+		`parsed ${entries.length} entries but ${categoryHubs.length} categoryHub values; refusing to zip mismatched lists`,
+	);
+}
+
+let categoryHubChecked = 0;
+entries.forEach((entry, index) => {
+	const hub = categoryHubs[index];
+	if (hub === undefined) return;
+	categoryHubChecked += 1;
+	const resolves =
+		pageRoutes.has(hub) ||
+		toolRoutes.has(hub) ||
+		opportunitySlugs.has(hub.slice(1));
+	if (!resolves) {
+		violations.push(
+			`opportunity ${entry.slug} has categoryHub ${hub}, which resolves to no page, tool route, or sibling opportunity`,
+		);
+	}
+});
 
 let relatedChecked = 0;
 entries.forEach((entry, index) => {
@@ -199,5 +266,5 @@ if (violations.length > 0) {
 }
 
 console.log(
-	`validate-seo-opportunities: OK (${entries.length} opportunities, ${toolById.size} registry tools, ${relatedChecked} relatedSlugs, 0 violations)`,
+	`validate-seo-opportunities: OK (${entries.length} opportunities, ${toolById.size} registry tools, ${relatedChecked} relatedSlugs, ${categoryHubChecked} categoryHubs, 0 violations)`,
 );

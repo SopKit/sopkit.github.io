@@ -15,20 +15,56 @@ const categoryLookup = Object.fromEntries(
 );
 
 const CATEGORY_HUB_ROUTES: Record<string, string> = {
-	image: "/image-tools",
-	pdf: "/pdf-tools",
-	video: "/video-tools",
-	audio: "/audio-tools",
-	seo: "/seo-tools",
-	text: "/text-tools",
-	developer: "/developer-tools",
-	utilities: "/other-tools",
-	generators: "/generators",
-	calculators: "/calculators",
+	// Keyed by registry category SLUG (category.slug), because that is
+	// what callers pass: categoryLookup is keyed by slug, and the tool
+	// branch below resolves toolCategorySlug from it. The previous map
+	// was keyed by bare names ("image", "pdf", ...), which never matched
+	// a slug like "image-tools", so getCategoryHubUrl fell through to
+	// `/${slug}-tools` and emitted dead JSON-LD category URLs such as
+	// /image-tools-tools on nearly every tool page. Only "generators"
+	// and "calculators" ever matched, because their slug equals the key.
+	"image-tools": "/image-tools",
+	"pdf-tools": "/pdf-tools",
+	"video-tools": "/video-tools",
+	"audio-tools": "/audio-tools",
+	"seo-tools": "/seo-tools",
+	"text-tools": "/text-tools",
+	"developer-tools": "/developer-tools",
+	// The utilities registry key is "utilities" but its slug is
+	// "utility-tools", and its hub page is /other-tools.
+	"utility-tools": "/other-tools",
+	"generators": "/generators",
+	"calculators": "/calculators",
+	"youtube-tools": "/youtube-tools",
+	"ai-tools": "/ai-tools",
+	"other-tools": "/other-tools",
+	"exam-tools": "/exam-tools",
+	"extraction-tools": "/extraction-tools",
+	// The guides registry key is "content" but its slug is "guides",
+	// and its listing page is /tool-guides.
+	"guides": "/tool-guides",
 };
 
-function getCategoryHubUrl(categorySlug: string): string {
-	return CATEGORY_HUB_ROUTES[categorySlug] || `/${categorySlug}-tools`;
+// Registry category slugs with no hub page at all. getCategoryHubUrl
+// returns null for these instead of inventing a URL, and callers omit
+// the URL (a name-only breadcrumb/collection item) rather than linking
+// to a 404. company: 2 tools, no company hub page; health: 5 tools,
+// no health hub page; privacy-tools: 23 tools, no privacy hub page
+// (/privacy is the policy page, not a hub); blog: 0 tools.
+const NO_HUB_CATEGORY_SLUGS: ReadonlySet<string> = new Set([
+	"company",
+	"health",
+	"privacy-tools",
+	"blog",
+]);
+
+function getCategoryHubUrl(categorySlug: string): string | null {
+	// Known hub-less categories return null explicitly; any other
+	// unmapped slug also returns null (never a guessed URL), and the
+	// validator fails on unmapped registry slugs that are not listed
+	// in NO_HUB_CATEGORY_SLUGS, so an unknown slug cannot slip in.
+	if (NO_HUB_CATEGORY_SLUGS.has(categorySlug)) return null;
+	return CATEGORY_HUB_ROUTES[categorySlug] ?? null;
 }
 
 interface StructuredDataProps {
@@ -55,7 +91,9 @@ export default function StructuredData({
 		const toolCategorySlug = categoryDetails?.slug || tool.category || "utilities";
 		
 		const categoryHubRoute = getCategoryHubUrl(toolCategorySlug);
-		const toolCategoryUrl = buildCanonicalUrl(categoryHubRoute);
+		const toolCategoryUrl = categoryHubRoute
+			? buildCanonicalUrl(categoryHubRoute)
+			: null;
 
 		const toolStructuredData: Record<string, any> = {
 			"@context": "https://schema.org",
@@ -145,7 +183,7 @@ export default function StructuredData({
 					name: tool.howTo.name || `How to use ${tool.name}`,
 					step: tool.howTo.steps
 					  ? tool.howTo.steps.map((step, index) => {
-					      const stepUrl = step.url ? (step.url.endsWith('/') ? step.url : `${step.url}/`) : undefined;
+					      const stepUrl = step.url ? step.url.replace(/\/+$/, "") : undefined;
 					      return {
 							"@type": "HowToStep",
 							position: index + 1,
@@ -200,7 +238,9 @@ export default function StructuredData({
 					"@type": "ListItem",
 					position: 2,
 					name: toolCategoryName,
-					item: toolCategoryUrl,
+					// No hub page for this category (see
+					// NO_HUB_CATEGORY_SLUGS): name only, never a dead link.
+					...(toolCategoryUrl ? { item: toolCategoryUrl } : {}),
 				},
 				{
 					"@type": "ListItem",
@@ -337,16 +377,24 @@ export default function StructuredData({
 			mainEntity: {
 				"@type": "ItemList",
 				numberOfItems: CATEGORY_COUNT,
-				itemListElement: allCategories.map((category, index) => ({
-					"@type": "ListItem",
-					position: index + 1,
-					item: {
-						"@type": "CollectionPage",
-						name: category.name,
-						url: buildCanonicalUrl(getCategoryHubUrl(category.slug)),
-						description: category.description,
-					},
-				})),
+				itemListElement: allCategories.map((category, index) => {
+					const hubRoute = getCategoryHubUrl(category.slug);
+					return {
+						"@type": "ListItem",
+						position: index + 1,
+						item: {
+							"@type": "CollectionPage",
+							name: category.name,
+							// No hub page for this category (see
+							// NO_HUB_CATEGORY_SLUGS): name only, never
+							// a dead link.
+							...(hubRoute
+								? { url: buildCanonicalUrl(hubRoute) }
+								: {}),
+							description: category.description,
+						},
+					};
+				}),
 			},
 		};
 

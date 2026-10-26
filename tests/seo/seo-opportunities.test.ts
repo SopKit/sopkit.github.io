@@ -1,4 +1,6 @@
 import { describe, it, expect } from "bun:test";
+import fs from "node:fs";
+import path from "node:path";
 import {
 	getSeoOpportunityBySlug,
 	seoOpportunities,
@@ -178,5 +180,58 @@ describe("relatedToolsForOpportunity renders real cards", () => {
 			const routes = related.map((tool) => tool.route);
 			expect(new Set(routes).size).toBe(routes.length);
 		}
+	});
+});
+
+const rootDir = path.resolve(import.meta.dir, "../..");
+
+describe("SEO opportunity categoryHub breadcrumb URLs resolve", () => {
+	it("every categoryHub resolves to a page, a tool route, or a sibling opportunity", () => {
+		// Page routes from src/app, route groups stripped, dynamic
+		// segments excluded (they are not static pages).
+		const pageRoutes = new Set<string>();
+		const walk = (
+			dir: string,
+			segments: string[],
+			inDynamic: boolean,
+		): void => {
+			for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+				if (!entry.isDirectory()) continue;
+				if (entry.name.startsWith("(") && entry.name.endsWith(")")) {
+					walk(path.join(dir, entry.name), segments, inDynamic);
+				} else if (
+					entry.name.startsWith("[") &&
+					entry.name.endsWith("]")
+				) {
+					walk(path.join(dir, entry.name), segments, true);
+				} else {
+					walk(
+						path.join(dir, entry.name),
+						[...segments, entry.name],
+						inDynamic,
+					);
+				}
+			}
+			if (
+				!inDynamic &&
+				fs.existsSync(path.join(dir, "page.tsx"))
+			) {
+				pageRoutes.add(`/${segments.join("/")}`);
+			}
+		};
+		walk(path.join(rootDir, "src", "app"), [], false);
+		let checked = 0;
+		for (const opportunity of seoOpportunities) {
+			checked += 1;
+			const resolves =
+				pageRoutes.has(opportunity.categoryHub) ||
+				toolRoutes.has(opportunity.categoryHub) ||
+				opportunitySlugs.has(opportunity.categoryHub.slice(1));
+			expect(
+				resolves,
+				`${opportunity.slug} -> ${opportunity.categoryHub}`,
+			).toBe(true);
+		}
+		expect(checked).toBeGreaterThan(100);
 	});
 });
