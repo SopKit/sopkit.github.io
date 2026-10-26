@@ -176,7 +176,7 @@ export default function PDFProtect() {
                                                     onChange={(e) => setPassword(e.target.value)}
                                                     className="pr-10 border-border/30 focus-visible:ring-primary/20 bg-background/50 h-10"
                                                 />
-                                                <button 
+                                                <button aria-label={showPassword ? "Hide password" : "Show password"}
                                                     type="button"
                                                     onClick={() => setShowPassword(!showPassword)}
                                                     className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-primary transition-colors"

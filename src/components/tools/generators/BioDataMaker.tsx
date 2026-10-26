@@ -514,9 +514,9 @@ export default function BioDataMaker() {
 							{/* Title and Photo Header */}
 							<div className="flex flex-col sm:flex-row justify-between items-start gap-6 pb-6 border-b-2 border-neutral-800">
 								<div>
-									<h1 className="text-2xl font-bold uppercase tracking-wide text-neutral-950">
+									<h2 className="text-2xl font-bold uppercase tracking-wide text-neutral-950">
 										{fullName || "[Full Name]"}
-									</h1>
+									</h2>
 									<p className="text-sm font-sans text-neutral-700 font-medium mt-1">
 										{occupation} {company && `at ${company}`}
 									</p>

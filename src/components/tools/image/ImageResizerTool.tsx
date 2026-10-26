@@ -381,7 +381,7 @@ export default function ImageResizerTool() {
 							<div className="space-y-3">
 								<div className="flex items-center justify-between">
 									<Label className="text-base font-medium">Dimensions</Label>
-									<Button
+									<Button aria-label={resizeOptions.maintainAspectRatio ? "Unlock aspect ratio" : "Lock aspect ratio"}
 										variant="ghost"
 										size="sm"
 										onClick={() =>
@@ -681,7 +681,7 @@ export default function ImageResizerTool() {
 												</Badge>
 
 												{fileData.status === "completed" && (
-													<Button
+													<Button aria-label="Download resized image"
 														variant="outline"
 														size="sm"
 														onClick={() => downloadFile(fileData)}

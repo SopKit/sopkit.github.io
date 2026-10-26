@@ -279,7 +279,7 @@ export default function ImageToPDF() {
                                     >
                                         {/* Action buttons */}
                                         <div className="absolute top-2 right-2 z-20 flex gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
-                                            <button
+                                            <button aria-label="Move image up"
                                                 type="button"
                                                 disabled={index === 0}
                                                 onClick={() => moveImage(index, 'up')}
@@ -287,7 +287,7 @@ export default function ImageToPDF() {
                                             >
                                                 <MoveUp className="w-3 h-3" />
                                             </button>
-                                            <button
+                                            <button aria-label="Move image down"
                                                 type="button"
                                                 disabled={index === images.length - 1}
                                                 onClick={() => moveImage(index, 'down')}
@@ -295,7 +295,7 @@ export default function ImageToPDF() {
                                             >
                                                 <MoveDown className="w-3 h-3" />
                                             </button>
-                                            <button
+                                            <button aria-label="Remove image"
                                                 type="button"
                                                 onClick={() => removeImage(img.id)}
                                                 className="w-5 h-5 rounded-full bg-destructive border border-destructive/20 text-white flex items-center justify-center hover:bg-destructive/90"

@@ -114,7 +114,7 @@ export default function NumberBaseConverter({
  value={outputValue}
  className="font-mono bg-muted"
  />
- <Button
+ <Button aria-label="Copy result"
  size="sm"
  variant="ghost"
  className="absolute right-1 top-1"

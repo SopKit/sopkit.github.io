@@ -304,7 +304,7 @@ export default function VideoConverterTool() {
 								<Film className="h-4 w-4 mr-2" />
 								{isConverting ? "Converting..." : "Convert Video"}
 							</Button>
-							<Button variant="outline" onClick={reset} disabled={isConverting}>
+							<Button aria-label="Reset" variant="outline" onClick={reset} disabled={isConverting}>
 								<RefreshCcw className="h-4 w-4" />
 							</Button>
 						</div>

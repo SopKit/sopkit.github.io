@@ -353,14 +353,14 @@ export default function VideoEditorTool() {
 							</div>
 
 							<div className="flex items-center gap-2 justify-center">
-								<Button
+								<Button aria-label="Skip back 5 seconds"
 									variant="outline"
 									size="icon"
 									onClick={() => skipFrames(-5)}
 								>
 									<SkipBack className="h-4 w-4" />
 								</Button>
-								<Button
+								<Button aria-label={isPlaying ? "Pause video" : "Play video"}
 									variant="outline"
 									size="lg"
 									onClick={togglePlay}
@@ -372,7 +372,7 @@ export default function VideoEditorTool() {
 										<Play className="h-5 w-5" />
 									)}
 								</Button>
-								<Button
+								<Button aria-label="Skip forward 5 seconds"
 									variant="outline"
 									size="icon"
 									onClick={() => skipFrames(5)}
@@ -556,7 +556,7 @@ export default function VideoEditorTool() {
 									<Scissors className="h-4 w-4 mr-2" />
 									{isProcessing ? "Processing..." : "Apply Edits"}
 								</Button>
-								<Button
+								<Button aria-label="Reset"
 									variant="outline"
 									onClick={reset}
 									disabled={isProcessing}

@@ -188,7 +188,7 @@ export default function JobMessageGenerator({ defaultTab = "cover-letter" }) {
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Result</CardTitle>
                 {generatedContent && (
-                  <Button variant="ghost" size="icon" onClick={copyToClipboard} className="h-8 w-8">
+                  <Button aria-label="Copy message" variant="ghost" size="icon" onClick={copyToClipboard} className="h-8 w-8">
                     {copied ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
                   </Button>
                 )}

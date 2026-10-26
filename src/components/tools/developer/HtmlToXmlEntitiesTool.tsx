@@ -162,7 +162,7 @@ export default function HtmlToXmlEntitiesTool() {
                             </Label>
                             {outputText && (
                                 <div className="flex gap-1.5">
-                                    <Button 
+                                    <Button aria-label="Copy converted text"
                                         variant="ghost" 
                                         size="sm" 
                                         onClick={copyToClipboard}
@@ -170,7 +170,7 @@ export default function HtmlToXmlEntitiesTool() {
                                     >
                                         {copiedFormat === "entities" ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3 text-primary" />}
                                     </Button>
-                                    <Button 
+                                    <Button aria-label="Download converted text"
                                         variant="ghost" 
                                         size="sm" 
                                         onClick={downloadCode}

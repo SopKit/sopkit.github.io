@@ -240,7 +240,7 @@ export default function AudioJoinerTool() {
 							<><Plus className="mr-2 h-4 w-4" /> Join Audio</>
 						)}
 					</Button>
-					<Button variant="outline" onClick={reset} disabled={isProcessing}>
+					<Button aria-label="Reset" variant="outline" onClick={reset} disabled={isProcessing}>
 						<RefreshCcw className="h-4 w-4" />
 					</Button>
 				</div>
@@ -280,13 +280,13 @@ export default function AudioJoinerTool() {
 											<p className="text-[10px] text-muted-foreground">{formatSize(item.size)}</p>
 										</div>
 										<div className="flex items-center gap-1">
-											<Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => moveFile(index, "up")} disabled={index === 0}>
+											<Button aria-label="Move audio file up" variant="ghost" size="icon" className="h-7 w-7" onClick={() => moveFile(index, "up")} disabled={index === 0}>
 												<ArrowUp className="h-3 w-3" />
 											</Button>
-											<Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => moveFile(index, "down")} disabled={index === audioFiles.length - 1}>
+											<Button aria-label="Move audio file down" variant="ghost" size="icon" className="h-7 w-7" onClick={() => moveFile(index, "down")} disabled={index === audioFiles.length - 1}>
 												<ArrowDown className="h-3 w-3" />
 											</Button>
-											<Button variant="ghost" size="icon" className="h-7 w-7 text-destructive hover:text-destructive" onClick={() => removeFile(item.id)}>
+											<Button aria-label="Remove audio file" variant="ghost" size="icon" className="h-7 w-7 text-destructive hover:text-destructive" onClick={() => removeFile(item.id)}>
 												<Trash2 className="h-3 w-3" />
 											</Button>
 										</div>

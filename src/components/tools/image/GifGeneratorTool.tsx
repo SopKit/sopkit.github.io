@@ -182,7 +182,7 @@ export default function GifGeneratorTool() {
 											<span className="truncate font-semibold">{frame.name}</span>
 										</div>
 										<div className="flex gap-1">
-											<Button 
+											<Button aria-label="Move frame up"
 												variant="ghost" 
 												size="icon" 
 												className="h-7 w-7"
@@ -191,7 +191,7 @@ export default function GifGeneratorTool() {
 											>
 												<ArrowUpIcon className="h-3.5 w-3.5" />
 											</Button>
-											<Button 
+											<Button aria-label="Move frame down"
 												variant="ghost" 
 												size="icon" 
 												className="h-7 w-7"
@@ -200,7 +200,7 @@ export default function GifGeneratorTool() {
 											>
 												<ArrowDownIcon className="h-3.5 w-3.5" />
 											</Button>
-											<Button 
+											<Button aria-label="Remove frame"
 												variant="ghost" 
 												size="icon" 
 												className="h-7 w-7 text-muted-foreground hover:text-destructive"

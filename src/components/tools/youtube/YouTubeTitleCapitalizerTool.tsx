@@ -107,7 +107,7 @@ export default function YouTubeTitleCapitalizerTool() {
 						</div>
 						<div className="p-4 bg-muted/40 border border-border/40 rounded-xl min-h-[50px] flex items-center justify-between gap-4 font-mono text-sm leading-relaxed whitespace-pre-wrap select-all">
 							<span className="text-foreground font-semibold">{getTransformed() || <span className="italic text-muted-foreground">Transformed output will appear here...</span>}</span>
-							<Button
+							<Button aria-label="Copy title"
 								size="icon"
 								variant="ghost"
 								disabled={!getTransformed()}

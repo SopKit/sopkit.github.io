@@ -264,7 +264,7 @@ export default function CrontabGeneratorTool() {
                                 onChange={(e) => handleExpressionChange(e.target.value)}
                                 className="h-10 font-mono text-base tracking-wider font-bold border-border/30 bg-background/50 flex-1"
                             />
-                            <Button 
+                            <Button aria-label="Copy cron expression"
                                 onClick={copyToClipboard}
                                 className="bg-primary hover:bg-primary/95 text-white h-10 px-4 font-bold rounded-lg"
                             >

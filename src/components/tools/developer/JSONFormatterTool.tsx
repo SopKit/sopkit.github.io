@@ -354,7 +354,7 @@ export default function JSONFormatterTool() {
                                 >
                                     <Copy className="w-3.5 h-3.5 mr-1" /> Copy Minified
                                 </Button>
-                                <Button 
+                                <Button aria-label="Download minified JSON"
                                     variant="outline"
                                     onClick={() => downloadJSON(minifiedJson, "minified.json")}
                                     className="border-border text-xs font-bold h-9"

@@ -201,7 +201,7 @@ export default function DataConverter({
 								Output {to}
 							</CardTitle>
 							<div className="flex gap-2">
-								<Button
+								<Button aria-label="Copy output"
 									size="sm"
 									variant="ghost"
 									onClick={copyToClipboard}
@@ -213,7 +213,7 @@ export default function DataConverter({
 										<Copy className="w-4 h-4" />
 									)}
 								</Button>
-								<Button
+								<Button aria-label="Download output"
 									size="sm"
 									variant="ghost"
 									onClick={downloadOutput}

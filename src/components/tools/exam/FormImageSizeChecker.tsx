@@ -315,7 +315,7 @@ export default function FormImageSizeChecker() {
                                                 className="max-h-[200px] mx-auto object-contain shadow-sm border border-border/20"
                                             />
                                         )}
-                                        <Button
+                                        <Button aria-label="Remove file"
                                             variant="destructive"
                                             size="icon"
                                             onClick={handleClear}

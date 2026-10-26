@@ -422,7 +422,7 @@ export default function InvoiceGenerator() {
 												{symbol}{total.toLocaleString(undefined, { minimumFractionDigits: 2 })}
 											</div>
 											<div className="col-span-3 sm:col-span-1 text-right">
-												<Button
+												<Button aria-label="Remove item"
 													variant="ghost"
 													size="sm"
 													onClick={() => removeItem(item.id)}
@@ -518,9 +518,9 @@ export default function InvoiceGenerator() {
 								</div>
 
 								<div className="text-left sm:text-right space-y-1 sm:min-w-[200px]">
-									<h1 className="text-3xl font-extrabold uppercase tracking-widest text-neutral-950">
+									<h2 className="text-3xl font-extrabold uppercase tracking-widest text-neutral-950">
 										INVOICE
-									</h1>
+									</h2>
 									<p className="font-mono font-bold text-sm text-neutral-900">#{invoiceNumber}</p>
 									<div className="pt-2 text-[11px] space-y-1">
 										<p className="text-neutral-500">

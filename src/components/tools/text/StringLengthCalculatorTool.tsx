@@ -90,7 +90,7 @@ export default function StringLengthCalculatorTool() {
 						<TypeIcon className="h-4 w-4" />
 						<span>Input Text</span>
 					</div>
-					<Button 
+					<Button aria-label="Clear input"
 						variant="ghost" 
 						size="icon" 
 						onClick={() => setInput("")}

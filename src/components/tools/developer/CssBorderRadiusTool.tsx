@@ -229,7 +229,7 @@ export default function CssBorderRadiusTool() {
                             <div className="space-y-1.5">
                                 <div className="flex justify-between items-center">
                                     <span className="text-[10px] text-muted-foreground uppercase font-bold">Raw CSS Code</span>
-                                    <Button 
+                                    <Button aria-label="Copy CSS code"
                                         variant="ghost" 
                                         size="sm" 
                                         onClick={() => copyToClipboard(cssCode, "css")}
@@ -248,7 +248,7 @@ export default function CssBorderRadiusTool() {
                             <div className="space-y-1.5">
                                 <div className="flex justify-between items-center">
                                     <span className="text-[10px] text-muted-foreground uppercase font-bold">Tailwind Arbitrary Class</span>
-                                    <Button 
+                                    <Button aria-label="Copy Tailwind class"
                                         variant="ghost" 
                                         size="sm" 
                                         onClick={() => copyToClipboard(tailwindSnippet, "tailwind")}

@@ -242,7 +242,7 @@ export default function XmlFormatterTool() {
                             </Label>
                             {xmlOutput && (
                                 <div className="flex gap-1.5">
-                                    <Button 
+                                    <Button aria-label="Copy formatted XML"
                                         variant="ghost" 
                                         size="sm" 
                                         onClick={copyToClipboard}
@@ -250,7 +250,7 @@ export default function XmlFormatterTool() {
                                     >
                                         {copiedFormat === "formatted" ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3 text-primary" />}
                                     </Button>
-                                    <Button 
+                                    <Button aria-label="Download formatted XML"
                                         variant="ghost" 
                                         size="sm" 
                                         onClick={downloadCode}

@@ -164,7 +164,7 @@ export default function PdfCompressor200kb() {
                                         <FileText className="h-12 w-12 text-primary" />
                                         <div className="text-sm font-semibold max-w-xs truncate text-center">{file.name}</div>
                                         <div className="text-xs text-muted-foreground">Original: {(originalSize / 1024).toFixed(1)} KB</div>
-                                        <Button
+                                        <Button aria-label="Remove file"
                                             variant="destructive"
                                             size="icon"
                                             onClick={handleClear}

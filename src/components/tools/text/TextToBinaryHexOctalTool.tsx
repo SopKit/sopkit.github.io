@@ -63,7 +63,7 @@ export default function TextToBinaryHexOctalTool() {
 						<CodeIcon className="h-4 w-4" />
 						<span>String Input</span>
 					</div>
-					<Button 
+					<Button aria-label="Clear input"
 						variant="ghost" 
 						size="icon" 
 						onClick={() => setInput("")}

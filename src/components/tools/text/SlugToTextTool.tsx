@@ -66,7 +66,7 @@ export default function SlugToTextTool() {
 							<TypeIcon className="h-4 w-4" />
 							<span>Slug Input</span>
 						</div>
-						<Button 
+						<Button aria-label="Clear input"
 							variant="ghost" 
 							size="icon" 
 							onClick={() => setInput("")}

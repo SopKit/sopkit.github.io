@@ -124,7 +124,7 @@ export default function FewShotFormatter() {
 							<div key={pair.id} className="p-3.5 rounded-xl border border-border/60 bg-muted/30 space-y-2.5">
 								<div className="flex items-center justify-between">
 									<span className="text-[11px] font-bold uppercase tracking-wide text-muted-foreground">Example {index + 1}</span>
-									<Button size="sm" variant="ghost" onClick={() => removePair(pair.id)} className="h-6 w-6 p-0 text-red-500 hover:text-red-600 hover:bg-red-500/10">
+									<Button aria-label="Remove example" size="sm" variant="ghost" onClick={() => removePair(pair.id)} className="h-6 w-6 p-0 text-red-500 hover:text-red-600 hover:bg-red-500/10">
 										<Trash2 className="h-3.5 w-3.5" />
 									</Button>
 								</div>

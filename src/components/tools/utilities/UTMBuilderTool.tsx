@@ -205,7 +205,7 @@ export default function UTMBuilderTool() {
 						<div className="p-4 bg-secondary break-all min-h-[3rem] flex items-center pr-12">
 							{generatedUrl || "Fill in the fields above to generate URL..."}
 						</div>
-						<Button
+						<Button aria-label="Copy generated URL"
 							size="icon"
 							className="absolute right-2 top-1/2 -translate-y-1/2"
 							onClick={copyToClipboard}

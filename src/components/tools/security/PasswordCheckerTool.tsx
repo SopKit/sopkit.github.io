@@ -257,7 +257,7 @@ export default function PasswordCheckerTool() {
 										placeholder="Enter your password..."
 										className="pr-10 input-cute"
 									/>
-									<Button
+									<Button aria-label={showPassword ? "Hide password" : "Show password"}
 										type="button"
 										variant="ghost"
 										size="sm"
@@ -357,7 +357,7 @@ export default function PasswordCheckerTool() {
 											<code className="text-lg font-mono break-all">
 												{password}
 											</code>
-											<Button
+											<Button aria-label="Copy password"
 												size="sm"
 												variant="outline"
 												onClick={() => navigator.clipboard.writeText(password)}

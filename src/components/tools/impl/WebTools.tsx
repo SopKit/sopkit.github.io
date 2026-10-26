@@ -102,7 +102,7 @@ export default function WebTools({ defaultTab = "domain" }) {
                   domains.map((d, i) => (
                     <div key={i} className="flex items-center justify-between p-4 rounded-xl border bg-card/50">
                       <span className="font-mono font-bold text-primary">{d}</span>
-                      <Button variant="ghost" size="icon" onClick={() => {
+                      <Button aria-label="Copy domain name" variant="ghost" size="icon" onClick={() => {
                         navigator.clipboard.writeText(d);
                         toast.success("Copied!");
                       }}>

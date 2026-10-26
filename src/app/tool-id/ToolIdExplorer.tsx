@@ -288,7 +288,7 @@ export default function ToolIdExplorer({ initialTools, categories }: ToolIdExplo
                                                     value={embedUrl}
                                                     className="font-mono text-xs h-9 rounded-xl bg-background/60"
                                                 />
-                                                <Button
+                                                <Button aria-label="Copy embed URL"
                                                     size="sm"
                                                     variant="outline"
                                                     onClick={() => copyToClipboard(embedUrl, "embed URL")}

@@ -130,7 +130,7 @@ export function MixedBrowserTools({ toolId }: { toolId: string }) {
 					</Button>
 					<div className="flex gap-2 items-center">
 						<code className="rounded border px-3 py-2 font-mono text-sm">{out}</code>
-						<Button
+						<Button aria-label="Copy output"
 							type="button"
 							size="sm"
 							variant="secondary"

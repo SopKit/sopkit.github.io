@@ -65,7 +65,7 @@ export default function YouTubeSubscribeLinkGeneratorTool() {
 							<span className="text-foreground font-semibold">
 								{generateLink() || <span className="italic text-muted-foreground">Input channel username to generate link...</span>}
 							</span>
-							<Button
+							<Button aria-label="Copy subscribe link"
 								size="icon"
 								variant="ghost"
 								disabled={!generateLink()}

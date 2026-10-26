@@ -84,7 +84,7 @@ const CodeBlock = ({ code, language = "html", className = "" }: CodeBlockProps) 
 				<span className="text-sm font-mono text-gray-300">
 					{language.toUpperCase()}
 				</span>
-				<Button
+				<Button aria-label="Copy code"
 					variant="ghost"
 					size="sm"
 					onClick={copyToClipboard}

@@ -74,7 +74,7 @@ export default function PaymentReminderGeneratorTool() {
                 <div className="whitespace-pre-line text-sm leading-relaxed font-sans">
                   {res.replace(/\\n/g, "\n")}
                 </div>
-                <Button
+                <Button aria-label="Copy payment reminder"
                   variant="ghost"
                   size="sm"
                   onClick={() => copyResult(res, index)}

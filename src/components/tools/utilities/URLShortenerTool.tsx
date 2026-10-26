@@ -344,7 +344,7 @@ export default function URLShortenerTool() {
 													<code className="bg-muted px-2 py-1 rounded text-sm flex-1 min-w-0 truncate">
 														{urlData.shortUrl}
 													</code>
-													<Button
+													<Button aria-label="Copy short link"
 														onClick={() =>
 															copyToClipboard(urlData.shortUrl, urlData.id)
 														}
@@ -370,7 +370,7 @@ export default function URLShortenerTool() {
 											</div>
 										</div>
 
-										<Button
+										<Button aria-label="Remove short link"
 											onClick={() => removeUrl(urlData.id)}
 											variant="outline"
 											size="sm"

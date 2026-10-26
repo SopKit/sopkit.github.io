@@ -190,7 +190,7 @@ export default function PDFGrayscale() {
                                         <p className="text-sm text-muted-foreground">{(file.size / 1024 / 1024).toFixed(2)} MB · Ready to process</p>
                                     </div>
                                 </div>
-                                <Button 
+                                <Button aria-label="Remove file"
                                     variant="ghost" 
                                     size="icon" 
                                     onClick={() => { setFile(null); setDownloadUrl(null); }}

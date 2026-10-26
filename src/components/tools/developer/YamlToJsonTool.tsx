@@ -156,7 +156,7 @@ author:
                         </Label>
                         {jsonOutput && (
                             <div className="flex gap-1.5">
-                                <Button 
+                                <Button aria-label="Copy JSON output"
                                     variant="ghost" 
                                     size="sm" 
                                     onClick={copyToClipboard}
@@ -164,7 +164,7 @@ author:
                                 >
                                     {copiedFormat === "json" ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3 text-primary" />}
                                 </Button>
-                                <Button 
+                                <Button aria-label="Download JSON output"
                                     variant="ghost" 
                                     size="sm" 
                                     onClick={downloadCode}

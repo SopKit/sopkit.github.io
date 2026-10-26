@@ -73,7 +73,7 @@ export default function YoutubeDescriptionGeneratorTool() {
                 <div className="whitespace-pre-line text-sm leading-relaxed font-sans">
                   {res.replace(/\\n/g, "\n")}
                 </div>
-                <Button
+                <Button aria-label="Copy video description"
                   variant="ghost"
                   size="sm"
                   onClick={() => copyResult(res, index)}

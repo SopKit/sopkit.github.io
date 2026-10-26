@@ -239,7 +239,7 @@ export default function SignatureResizer() {
                                             alt="Scanned preview"
                                             className="max-h-[160px] mx-auto object-contain shadow-sm border border-border/20 bg-white"
                                         />
-                                        <Button
+                                        <Button aria-label="Remove file"
                                             variant="destructive"
                                             size="icon"
                                             onClick={handleClear}

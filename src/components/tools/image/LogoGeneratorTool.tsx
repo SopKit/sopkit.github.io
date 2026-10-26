@@ -618,7 +618,7 @@ export default function LogoGeneratorTool() {
 						<TooltipProvider>
 							<Tooltip>
 								<TooltipTrigger asChild>
-									<Button variant="outline" size="icon" onClick={undo} disabled={!canUndo}>
+									<Button aria-label="Undo" variant="outline" size="icon" onClick={undo} disabled={!canUndo}>
 										<Undo2 className="w-4 h-4" />
 									</Button>
 								</TooltipTrigger>
@@ -626,7 +626,7 @@ export default function LogoGeneratorTool() {
 							</Tooltip>
 							<Tooltip>
 								<TooltipTrigger asChild>
-									<Button variant="outline" size="icon" onClick={redo} disabled={!canRedo}>
+									<Button aria-label="Redo" variant="outline" size="icon" onClick={redo} disabled={!canRedo}>
 										<RefreshCcw className="w-4 h-4" />
 									</Button>
 								</TooltipTrigger>
@@ -949,7 +949,7 @@ export default function LogoGeneratorTool() {
 									<Label>Save Current Preset</Label>
 									<div className="flex gap-2">
 										<Input value={presetName} onChange={(e) => setPresetName(e.target.value)} placeholder="Preset name" />
-										<Button onClick={savePreset} size="icon">
+										<Button aria-label="Save preset" onClick={savePreset} size="icon">
 											<Save className="w-4 h-4" />
 										</Button>
 									</div>

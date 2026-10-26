@@ -67,7 +67,7 @@ export default function YouTubeTitleLengthCheckerTool() {
 					<div className="pt-4 border-t border-border/40 space-y-3">
 						<div className="flex justify-between items-center">
 							<span className="text-sm font-semibold text-muted-foreground">Title Preview</span>
-							<Button size="icon" variant="ghost" onClick={handleCopy} className="h-8 w-8 text-muted-foreground hover:text-foreground">
+							<Button aria-label="Copy title" size="icon" variant="ghost" onClick={handleCopy} className="h-8 w-8 text-muted-foreground hover:text-foreground">
 								{copied ? <Check className="h-4 w-4 text-emerald-500" /> : <Copy className="h-4 w-4" />}
 							</Button>
 						</div>

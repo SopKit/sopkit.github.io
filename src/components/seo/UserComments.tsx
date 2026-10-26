@@ -135,7 +135,7 @@ function CommentItem({ comment, onReply, onLike, depth = 0 }: any) {
 							Share
 						</Button>
 
-						<Button
+						<Button aria-label="Report comment"
 							variant="ghost"
 							size="sm"
 							className="h-auto p-1 text-muted-foreground"

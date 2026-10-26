@@ -414,11 +414,11 @@ export default function BackgroundRemoverTool() {
 										</div>
 										<div className="flex items-center gap-2">
 											{file.status === "completed" && (
-												<Button onClick={() => downloadFile(file)} size="sm">
+												<Button aria-label="Download image" onClick={() => downloadFile(file)} size="sm">
 													<Download className="h-4 w-4" />
 												</Button>
 											)}
-											<Button
+											<Button aria-label="Remove image"
 												onClick={() => removeFile(file.id)}
 												variant="outline"
 												size="sm"

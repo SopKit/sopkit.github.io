@@ -433,7 +433,7 @@ Format as a clear persona prompt that someone can copy-paste into ChatGPT. Make 
 											>
 												Use This Persona
 											</Button>
-											<Button
+											<Button aria-label="Copy persona prompt"
 												onClick={() => copyToClipboard(preset.prompt)}
 												variant="outline"
 												size="sm"
@@ -465,7 +465,7 @@ Format as a clear persona prompt that someone can copy-paste into ChatGPT. Make 
 													<CardDescription>{item.timestamp}</CardDescription>
 												</div>
 												<div className="flex gap-2">
-													<Button
+													<Button aria-label="Copy persona prompt"
 														onClick={() => copyToClipboard(item.prompt)}
 														variant="outline"
 														size="sm"

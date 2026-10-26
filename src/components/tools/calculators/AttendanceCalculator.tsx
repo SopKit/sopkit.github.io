@@ -491,7 +491,7 @@ Calculated privately with SopKit (https://sopkit.space/attendance-shortage-calcu
 													>
 														{pct.toFixed(1)}%
 													</Badge>
-													<Button
+													<Button aria-label="Delete subject"
 														variant="ghost"
 														size="icon"
 														className="h-8 w-8 text-muted-foreground hover:text-rose-500"

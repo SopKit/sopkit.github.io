@@ -145,7 +145,7 @@ export default function CircularImageCropTool() {
 								/>
 							</Button>
 							{imageSrc && (
-								<Button 
+								<Button aria-label="Remove image"
 									variant="ghost" 
 									size="icon" 
 									onClick={() => {

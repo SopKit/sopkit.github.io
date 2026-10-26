@@ -206,7 +206,7 @@ export default function IpSubnetCalculator() {
 									<span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Network ID</span>
 									<div className="flex items-center justify-between font-mono font-bold text-foreground">
 										<span>{subnetData.networkAddress}</span>
-										<button type="button" onClick={() => handleCopy(subnetData.networkAddress!, "net")}>
+										<button aria-label="Copy network address" type="button" onClick={() => handleCopy(subnetData.networkAddress!, "net")}>
 											{copiedKey === "net" ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Copy className="w-3.5 h-3.5 text-muted-foreground/60 hover:text-foreground" />}
 										</button>
 									</div>
@@ -216,7 +216,7 @@ export default function IpSubnetCalculator() {
 									<span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Broadcast IP</span>
 									<div className="flex items-center justify-between font-mono font-bold text-foreground">
 										<span>{subnetData.broadcastAddress}</span>
-										<button type="button" onClick={() => handleCopy(subnetData.broadcastAddress!, "bcast")}>
+										<button aria-label="Copy broadcast address" type="button" onClick={() => handleCopy(subnetData.broadcastAddress!, "bcast")}>
 											{copiedKey === "bcast" ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Copy className="w-3.5 h-3.5 text-muted-foreground/60 hover:text-foreground" />}
 										</button>
 									</div>
@@ -233,7 +233,7 @@ export default function IpSubnetCalculator() {
 									<span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Subnet Mask</span>
 									<div className="flex items-center justify-between font-mono font-bold text-foreground">
 										<span>{subnetData.subnetMask}</span>
-										<button type="button" onClick={() => handleCopy(subnetData.subnetMask!, "mask")}>
+										<button aria-label="Copy subnet mask" type="button" onClick={() => handleCopy(subnetData.subnetMask!, "mask")}>
 											{copiedKey === "mask" ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Copy className="w-3.5 h-3.5 text-muted-foreground/60 hover:text-foreground" />}
 										</button>
 									</div>

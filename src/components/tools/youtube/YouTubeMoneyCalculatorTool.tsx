@@ -82,7 +82,7 @@ export default function YouTubeMoneyCalculatorTool() {
 				<Card className="border border-border/40 bg-card/60 backdrop-blur-sm shadow-xl p-6 flex flex-col justify-between">
 					<CardHeader className="p-0 pb-4 border-b border-border/20 flex flex-row items-center justify-between">
 						<CardTitle className="text-xl font-bold">Estimated Earnings</CardTitle>
-						<Button size="icon" variant="ghost" onClick={handleCopy} className="h-8 w-8 text-muted-foreground hover:text-foreground">
+						<Button aria-label="Copy earnings summary" size="icon" variant="ghost" onClick={handleCopy} className="h-8 w-8 text-muted-foreground hover:text-foreground">
 							{copied ? <Check className="h-4 w-4 text-emerald-500" /> : <Copy className="h-4 w-4" />}
 						</Button>
 					</CardHeader>

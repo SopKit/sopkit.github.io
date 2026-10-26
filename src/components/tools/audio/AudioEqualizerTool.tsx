@@ -272,7 +272,7 @@ export default function AudioEqualizerTool() {
 					>
 						{isProcessing ? "Processing..." : "Apply Equalizer"}
 					</Button>
-					<Button variant="outline" onClick={reset} disabled={isProcessing}>
+					<Button aria-label="Reset equalizer" variant="outline" onClick={reset} disabled={isProcessing}>
 						<RefreshCcw className="h-4 w-4" />
 					</Button>
 				</div>

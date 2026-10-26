@@ -291,7 +291,7 @@ export default function ImageColorPicker() {
                                     <Label className="text-[9px] font-bold text-muted-foreground uppercase">HEX Code</Label>
                                     <div className="relative">
                                         <Input readOnly value={pickedColor} className="font-mono text-xs h-9 bg-background/40 pr-10" />
-                                        <button 
+                                        <button aria-label="Copy HEX value"
                                             onClick={() => copyFormatText(pickedColor, "hex")}
                                             className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded"
                                         >
@@ -304,7 +304,7 @@ export default function ImageColorPicker() {
                                     <Label className="text-[9px] font-bold text-muted-foreground uppercase">RGB Value</Label>
                                     <div className="relative">
                                         <Input readOnly value={`rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`} className="font-mono text-xs h-9 bg-background/40 pr-10" />
-                                        <button 
+                                        <button aria-label="Copy RGB value"
                                             onClick={() => copyFormatText(`rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`, "rgb")}
                                             className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded"
                                         >
@@ -317,7 +317,7 @@ export default function ImageColorPicker() {
                                     <Label className="text-[9px] font-bold text-muted-foreground uppercase">HSL Format</Label>
                                     <div className="relative">
                                         <Input readOnly value={rgbToHsl(rgb.r, rgb.g, rgb.b)} className="font-mono text-xs h-9 bg-background/40 pr-10" />
-                                        <button 
+                                        <button aria-label="Copy HSL value"
                                             onClick={() => copyFormatText(rgbToHsl(rgb.r, rgb.g, rgb.b), "hsl")}
                                             className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded"
                                         >
@@ -330,7 +330,7 @@ export default function ImageColorPicker() {
                                     <Label className="text-[9px] font-bold text-muted-foreground uppercase">CMYK (Print)</Label>
                                     <div className="relative">
                                         <Input readOnly value={rgbToCmyk(rgb.r, rgb.g, rgb.b)} className="font-mono text-xs h-9 bg-background/40 pr-10" />
-                                        <button 
+                                        <button aria-label="Copy CMYK value"
                                             onClick={() => copyFormatText(rgbToCmyk(rgb.r, rgb.g, rgb.b), "cmyk")}
                                             className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded"
                                         >

@@ -75,7 +75,7 @@ export default function RestaurantMenuDescriptionGeneratorTool() {
                 <div className="whitespace-pre-line text-sm leading-relaxed font-sans">
                   {res.replace(/\\n/g, "\n")}
                 </div>
-                <Button
+                <Button aria-label="Copy menu description"
                   variant="ghost"
                   size="sm"
                   onClick={() => copyResult(res, index)}

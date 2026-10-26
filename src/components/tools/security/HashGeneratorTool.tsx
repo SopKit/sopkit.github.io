@@ -298,7 +298,7 @@ export default function HashGeneratorTool() {
 														{algorithm.description}
 													</p>
 												</div>
-												<Button
+												<Button aria-label="Copy hash"
 													size="sm"
 													variant="outline"
 													onClick={() => copyToClipboard(hash, algorithm.name)}

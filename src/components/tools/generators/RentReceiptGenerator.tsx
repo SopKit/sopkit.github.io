@@ -432,7 +432,7 @@ export default function RentReceiptGenerator() {
 										description={`Viewing receipt ${previewIndex + 1} of ${receiptsList.length}.`}
 									/>
 									<div className="flex items-center gap-1.5">
-										<Button
+										<Button aria-label="Show previous receipt"
 											variant="outline"
 											size="sm"
 											disabled={previewIndex === 0}
@@ -444,7 +444,7 @@ export default function RentReceiptGenerator() {
 										<span className="text-xs font-mono px-2">
 											{previewIndex + 1} / {receiptsList.length}
 										</span>
-										<Button
+										<Button aria-label="Show next receipt"
 											variant="outline"
 											size="sm"
 											disabled={previewIndex >= receiptsList.length - 1}

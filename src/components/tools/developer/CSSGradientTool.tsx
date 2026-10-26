@@ -213,7 +213,7 @@ export default function CSSGradientTool() {
                                                 className="flex-1 h-1.5 bg-muted rounded-lg appearance-none cursor-pointer accent-primary"
                                             />
                                             <span className="w-8 text-right font-mono text-[10px] text-muted-foreground">{stop.position}%</span>
-                                            <Button 
+                                            <Button aria-label="Remove gradient stop"
                                                 variant="ghost" 
                                                 size="icon" 
                                                 onClick={() => removeStop(i)}
@@ -239,7 +239,7 @@ export default function CSSGradientTool() {
                             <div className="space-y-1.5">
                                 <div className="flex justify-between items-center">
                                     <span className="text-[10px] text-muted-foreground uppercase font-bold">Raw CSS Code</span>
-                                    <Button 
+                                    <Button aria-label="Copy CSS code"
                                         variant="ghost" 
                                         size="sm" 
                                         onClick={() => copyToClipboard(cssCode, "css")}
@@ -258,7 +258,7 @@ export default function CSSGradientTool() {
                             <div className="space-y-1.5">
                                 <div className="flex justify-between items-center">
                                     <span className="text-[10px] text-muted-foreground uppercase font-bold">Tailwind Arbitrary Class</span>
-                                    <Button 
+                                    <Button aria-label="Copy Tailwind class"
                                         variant="ghost" 
                                         size="sm" 
                                         onClick={() => copyToClipboard(tailwindSnippet, "tailwind")}

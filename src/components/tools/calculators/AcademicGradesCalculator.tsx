@@ -225,7 +225,7 @@ export default function AcademicGradesCalculator({ defaultTab = "sgpa" }: Props)
                                                     </Select>
                                                 </div>
                                                 <div className="col-span-1 flex justify-end">
-                                                    <button onClick={() => removeSgpaCourse(c.id)} className="text-red-500 hover:text-red-400 p-1">
+                                                    <button aria-label="Remove course" onClick={() => removeSgpaCourse(c.id)} className="text-red-500 hover:text-red-400 p-1">
                                                         <RefreshCw className="h-4.5 w-4.5 rotate-45" />
                                                     </button>
                                                 </div>

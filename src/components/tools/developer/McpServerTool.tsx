@@ -363,7 +363,7 @@ if __name__ == "__main__":
                                             placeholder="Tool Name"
                                             className="h-7 text-[10px] border-border/20 font-bold"
                                         />
-                                        <Button 
+                                        <Button aria-label="Remove tool definition"
                                             variant="ghost" 
                                             size="icon" 
                                             onClick={() => removeToolDef(idx)}
@@ -410,7 +410,7 @@ if __name__ == "__main__":
                                 <Code className="w-3.5 h-3.5 text-primary" /> Generated Code
                             </h4>
                             <div className="flex gap-2">
-                                <Button 
+                                <Button aria-label="Copy server configuration"
                                     variant="ghost" 
                                     size="sm" 
                                     onClick={copyToClipboard}
@@ -418,7 +418,7 @@ if __name__ == "__main__":
                                 >
                                     {copiedFormat === "copied" ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3 text-primary" />}
                                 </Button>
-                                <Button 
+                                <Button aria-label="Download server configuration"
                                     variant="ghost" 
                                     size="sm" 
                                     onClick={downloadCode}

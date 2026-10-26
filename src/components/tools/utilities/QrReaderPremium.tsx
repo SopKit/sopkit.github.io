@@ -119,12 +119,12 @@ export default function QrReaderPremium() {
                             <div className="flex items-center justify-between">
                                 <Label className="text-xs font-bold uppercase tracking-widest text-primary">Scan Result</Label>
                                 <div className="flex gap-2">
-                                    <Button size="icon" variant="ghost" onClick={copyToClipboard} className="h-8 w-8">
+                                    <Button aria-label="Copy scan result" size="icon" variant="ghost" onClick={copyToClipboard} className="h-8 w-8">
                                         <Copy className="h-4 w-4" />
                                     </Button>
                                     {scannedResult.startsWith("http") && (
-                                        <Button size="icon" variant="ghost" asChild className="h-8 w-8">
-                                            <a href={scannedResult} target="_blank" rel="noreferrer">
+                                        <Button aria-label="Open scanned link" size="icon" variant="ghost" asChild className="h-8 w-8">
+                                            <a aria-label="Open scanned link" href={scannedResult} target="_blank" rel="noreferrer">
                                                 <ExternalLink className="h-4 w-4" />
                                             </a>
                                         </Button>

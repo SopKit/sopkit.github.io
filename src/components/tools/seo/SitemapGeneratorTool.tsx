@@ -140,7 +140,7 @@ export default function SitemapGeneratorTool() {
 									<div className="flex items-center justify-between">
 										<span className="text-[10px] uppercase font-black tracking-widest text-muted-foreground/60">Node {index + 1}</span>
 										{urls.length > 1 && (
-											<Button variant="ghost" size="icon" onClick={() => removeUrl(index)} className="rounded-xl hover:bg-destructive/10 hover:text-destructive transition-colors">
+											<Button aria-label="Remove URL" variant="ghost" size="icon" onClick={() => removeUrl(index)} className="rounded-xl hover:bg-destructive/10 hover:text-destructive transition-colors">
 												<XIcon className="h-4 w-4" />
 											</Button>
 										)}

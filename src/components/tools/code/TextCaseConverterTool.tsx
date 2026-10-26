@@ -434,7 +434,7 @@ export default function TextCaseConverterTool() {
 										{caseType.name}
 									</span>
 									<div className="flex gap-1">
-										<Button
+										<Button aria-label="Copy converted text"
 											onClick={() => handleCopy(results[caseType.key])}
 											variant="outline"
 											size="sm"
@@ -442,7 +442,7 @@ export default function TextCaseConverterTool() {
 										>
 											<Copy className="h-3 w-3" />
 										</Button>
-										<Button
+										<Button aria-label="Download converted text"
 											onClick={() =>
 												handleDownload(results[caseType.key], caseType.key)
 											}

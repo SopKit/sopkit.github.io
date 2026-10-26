@@ -189,7 +189,7 @@ export default function TeraboxVideoPlayer() {
 
 								{!isPlaying && (
 									<div className="absolute inset-0 flex items-center justify-center bg-black/50">
-										<Button
+										<Button aria-label="Play video"
 											onClick={handlePlay}
 											size="lg"
 											className="bg-muted/500 hover:bg-primary text-white "

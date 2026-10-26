@@ -214,7 +214,7 @@ export default function TikTokDownloaderTool() {
 									className="flex-1"
 									disabled={isProcessing}
 								/>
-								<Button
+								<Button aria-label="Copy video URL"
 									variant="outline"
 									onClick={() => copyToClipboard(tiktokUrl)}
 									disabled={!tiktokUrl.trim()}

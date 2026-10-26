@@ -305,7 +305,7 @@ export default function PDFEditor() {
                                     <span className="font-bold text-foreground truncate max-w-[200px]">{file.name}</span>
                                 </div>
                                 <div className="flex items-center gap-3">
-                                    <Button
+                                    <Button aria-label="Show previous page"
                                         variant="outline"
                                         size="icon"
                                         disabled={currentPage === 1}
@@ -317,7 +317,7 @@ export default function PDFEditor() {
                                     <span className="font-bold uppercase tracking-wider text-muted-foreground">
                                         Page {currentPage} of {totalPages}
                                     </span>
-                                    <Button
+                                    <Button aria-label="Show next page"
                                         variant="outline"
                                         size="icon"
                                         disabled={currentPage === totalPages}
@@ -442,7 +442,7 @@ export default function PDFEditor() {
                                                 <p className="font-bold truncate text-foreground leading-normal">{ann.text}</p>
                                                 <p className="text-[9px] text-muted-foreground font-semibold">Page {ann.page} — Size {ann.fontSize}px</p>
                                             </div>
-                                            <Button 
+                                            <Button aria-label="Delete annotation"
                                                 variant="ghost" 
                                                 size="icon" 
                                                 onClick={() => deleteAnnotation(ann.id)}

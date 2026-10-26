@@ -330,7 +330,7 @@ export default function VideoWatermarkRemoverTool() {
 								)}
 							</Button>
 
-							<Button
+							<Button aria-label="Reset"
 								variant="outline"
 								onClick={resetProcess}
 								disabled={isProcessing}

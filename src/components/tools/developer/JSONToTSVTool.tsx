@@ -256,7 +256,7 @@ export default function JSONToTSVTool() {
                             </Label>
                             {convertedOutput && (
                                 <div className="flex gap-1.5">
-                                    <Button 
+                                    <Button aria-label="Copy converted output"
                                         variant="ghost" 
                                         size="sm" 
                                         onClick={copyToClipboard}
@@ -264,7 +264,7 @@ export default function JSONToTSVTool() {
                                     >
                                         {copiedFormat === "converted" ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3 text-primary" />}
                                     </Button>
-                                    <Button 
+                                    <Button aria-label="Download converted output"
                                         variant="ghost" 
                                         size="sm" 
                                         onClick={downloadFile}

@@ -52,7 +52,7 @@ export default function UrlEncoderDecoderTool() {
 							<LinkIcon className="h-4 w-4" />
 							<span>Input Text / URL</span>
 						</div>
-						<Button 
+						<Button aria-label="Clear input"
 							variant="ghost" 
 							size="icon" 
 							onClick={() => setInput("")}

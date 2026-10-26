@@ -426,7 +426,7 @@ Make it feel genuine but entertaining!`;
 													<Shuffle className="w-4 h-4 mr-1.5" />
 													New
 												</Button>
-												<Button
+												<Button aria-label="Download comment"
 													onClick={downloadComment}
 													variant="ghost"
 													size="sm"
@@ -482,7 +482,7 @@ Make it feel genuine but entertaining!`;
 											>
 												Use This Style
 											</Button>
-											<Button
+											<Button aria-label="Copy comment"
 												onClick={() => copyToClipboard(preset.text)}
 												variant="outline"
 												size="sm"
@@ -519,7 +519,7 @@ Make it feel genuine but entertaining!`;
 													<CardDescription>{item.timestamp}</CardDescription>
 												</div>
 												<div className="flex gap-2">
-													<Button
+													<Button aria-label="Copy comment"
 														onClick={() => copyToClipboard(item.text)}
 														variant="outline"
 														size="sm"

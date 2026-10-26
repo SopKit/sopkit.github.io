@@ -74,7 +74,7 @@ export default function ReviewReplyGeneratorTool() {
                 <div className="whitespace-pre-line text-sm leading-relaxed font-sans">
                   {res.replace(/\\n/g, "\n")}
                 </div>
-                <Button
+                <Button aria-label="Copy review reply"
                   variant="ghost"
                   size="sm"
                   onClick={() => copyResult(res, index)}

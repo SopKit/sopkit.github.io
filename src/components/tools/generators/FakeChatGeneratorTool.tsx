@@ -269,7 +269,7 @@ export default function FakeChatGeneratorTool() {
 										</SelectItem>
 									</SelectContent>
 								</Select>
-								<Button onClick={addMessage} size="icon">
+								<Button aria-label="Add message" onClick={addMessage} size="icon">
 									<Plus className="h-4 w-4" />
 								</Button>
 							</div>
@@ -295,7 +295,7 @@ export default function FakeChatGeneratorTool() {
 											</div>
 											<p className="text-sm break-all">{msg.text}</p>
 										</div>
-										<Button
+										<Button aria-label="Delete message"
 											variant="ghost"
 											size="icon"
 											className="shrink-0 h-7 w-7"

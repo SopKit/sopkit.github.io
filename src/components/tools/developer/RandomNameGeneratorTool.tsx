@@ -266,7 +266,7 @@ export default function RandomNameGeneratorTool() {
                                     <option value="csv">CSV</option>
                                     <option value="text">PLAIN TEXT</option>
                                 </select>
-                                <Button 
+                                <Button aria-label="Copy names"
                                     variant="ghost" 
                                     size="sm" 
                                     onClick={copyToClipboard}
@@ -274,7 +274,7 @@ export default function RandomNameGeneratorTool() {
                                 >
                                     {copiedFormat === "copied" ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3 text-primary" />}
                                 </Button>
-                                <Button 
+                                <Button aria-label="Download names"
                                     variant="ghost" 
                                     size="sm" 
                                     onClick={downloadFile}

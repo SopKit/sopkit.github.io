@@ -200,7 +200,7 @@ export default function PhotoNameDateEditor() {
                                             alt="Uploaded preview"
                                             className="max-h-[220px] mx-auto object-contain shadow-sm border border-border/20"
                                         />
-                                        <Button
+                                        <Button aria-label="Remove file"
                                             variant="destructive"
                                             size="icon"
                                             onClick={handleClear}

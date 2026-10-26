@@ -195,7 +195,7 @@ export default function PhotoCompressor50kb() {
                                             alt="Preview"
                                             className="max-h-[300px] mx-auto object-contain shadow-sm border border-border/20"
                                         />
-                                        <Button
+                                        <Button aria-label="Remove file"
                                             variant="destructive"
                                             size="icon"
                                             onClick={handleClear}

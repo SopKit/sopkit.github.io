@@ -85,7 +85,7 @@ export default function PasswordGeneratorTool() {
 					<>
 						<div className="relative">
 							<Input readOnly value={password} className="font-mono text-sm pr-12 bg-muted/30" />
-							<Button variant="ghost" size="sm" className="absolute top-1 right-1 h-8"
+							<Button aria-label="Copy password" variant="ghost" size="sm" className="absolute top-1 right-1 h-8"
 								onClick={() => { navigator.clipboard.writeText(password); toast.success("Copied!"); }}>
 								<Copy className="h-3.5 w-3.5" />
 							</Button>

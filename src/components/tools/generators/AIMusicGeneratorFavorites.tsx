@@ -41,7 +41,7 @@ export default function AIMusicGeneratorFavorites({ favorites, removeFromFavorit
                     <MusicIcon className="h-4 w-4 text-muted-foreground" />
                     <p className="text-sm font-medium line-clamp-2">{item.prompt}</p>
                   </div>
-                  <Button
+                  <Button aria-label="Remove from favourites"
                     onClick={() => removeFromFavorites(item.id)}
                     size="sm"
                     variant="outline"

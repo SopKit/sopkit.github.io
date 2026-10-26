@@ -76,7 +76,7 @@ export default function TeraboxSharingTools({ shareUrl, videoData }) {
 									readOnly
 									className="font-mono text-xs"
 								/>
-								<Button
+								<Button aria-label="Copy share link"
 									variant="outline"
 									size="sm"
 									onClick={() => copyToClipboard(shareUrl, "Share link")}

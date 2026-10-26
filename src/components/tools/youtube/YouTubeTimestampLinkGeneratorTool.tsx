@@ -99,7 +99,7 @@ export default function YouTubeTimestampLinkGeneratorTool() {
 							<span className="text-foreground font-semibold">
 								{generateTimestampUrl() || <span className="italic text-muted-foreground">Input video URL and time parameter...</span>}
 							</span>
-							<Button
+							<Button aria-label="Copy timestamp link"
 								size="icon"
 								variant="ghost"
 								disabled={!generateTimestampUrl()}
