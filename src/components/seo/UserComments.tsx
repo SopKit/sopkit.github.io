@@ -1,8 +1,6 @@
 "use client";
 
 import {
-	ChevronDown,
-	Flag,
 	Heart,
 	MessageCircle,
 	MessageSquare,
@@ -24,6 +22,12 @@ function CommentItem({ comment, onReply, onLike, depth = 0 }: any) {
 	const [liked, setLiked] = useState(false);
 	const [showReplyForm, setShowReplyForm] = useState(false);
 	const [replyText, setReplyText] = useState("");
+	// "shared" = sent via the native share sheet, "copied" = page link
+	// copied to the clipboard because no share sheet was available.
+	// Either state only ever appears after the action really happened.
+	const [shareState, setShareState] = useState<"idle" | "shared" | "copied">(
+		"idle",
+	);
 
 	const formatTimeAgo = (timestamp: any) => {
 		const now = new Date();
@@ -45,6 +49,38 @@ function CommentItem({ comment, onReply, onLike, depth = 0 }: any) {
 			onReply(comment.id, replyText);
 			setReplyText("");
 			setShowReplyForm(false);
+		}
+	};
+
+	// Share this comment's page. Mirrors SocialShare: the native share
+	// sheet when the browser offers one (a cancelled sheet is not a
+	// failure and does not fall through to the clipboard), otherwise a
+	// clipboard copy of the page's own URL. No comment anchor is
+	// claimed: no `#comment-<id>` anchor exists on the page, so the
+	// shared URL is the page itself and the shared text is the
+	// comment's own content, truncated so a long comment does not
+	// overflow the share sheet.
+	const handleShare = async () => {
+		const url = window.location.href;
+		const text = String(comment.content ?? "").slice(0, 200);
+		if (navigator.share) {
+			try {
+				await navigator.share({ text, url });
+				setShareState("shared");
+				setTimeout(() => setShareState("idle"), 2000);
+			} catch (err) {
+				if ((err as Error).name !== "AbortError") {
+					console.error("Error sharing:", err);
+				}
+			}
+			return;
+		}
+		try {
+			await navigator.clipboard.writeText(url);
+			setShareState("copied");
+			setTimeout(() => setShareState("idle"), 2000);
+		} catch (err) {
+			console.error("Error copying link:", err);
 		}
 	};
 
@@ -116,31 +152,30 @@ function CommentItem({ comment, onReply, onLike, depth = 0 }: any) {
 							{comment.likes + (liked ? 1 : 0)}
 						</Button>
 
-						<Button
-							variant="ghost"
-							size="sm"
-							onClick={() => setShowReplyForm(!showReplyForm)}
-							className="h-auto p-1 text-muted-foreground"
-						>
-							<Reply className="h-4 w-4 mr-1" />
-							Reply
-						</Button>
+						{depth < 3 && (
+							<Button
+								variant="ghost"
+								size="sm"
+								onClick={() => setShowReplyForm(!showReplyForm)}
+								className="h-auto p-1 text-muted-foreground"
+							>
+								<Reply className="h-4 w-4 mr-1" />
+								Reply
+							</Button>
+						)}
 
 						<Button
 							variant="ghost"
 							size="sm"
+							onClick={handleShare}
 							className="h-auto p-1 text-muted-foreground"
 						>
 							<Share2 className="h-4 w-4 mr-1" />
-							Share
-						</Button>
-
-						<Button aria-label="Report comment"
-							variant="ghost"
-							size="sm"
-							className="h-auto p-1 text-muted-foreground"
-						>
-							<Flag className="h-4 w-4" />
+							{shareState === "copied"
+								? "Link copied"
+								: shareState === "shared"
+									? "Shared"
+									: "Share"}
 						</Button>
 					</div>
 
@@ -164,6 +199,25 @@ function CommentItem({ comment, onReply, onLike, depth = 0 }: any) {
 									Cancel
 								</Button>
 							</div>
+						</div>
+					)}
+
+					{/* Replies render here, nested, because a reply that
+						vanishes on submit is a lie: previously handleReply
+						only logged to the console and nothing ever
+						rendered. Depth is capped at 3 levels by hiding
+						the Reply button deeper (see above). */}
+					{(comment.replies ?? []).length > 0 && (
+						<div className="mt-2 space-y-2">
+							{(comment.replies ?? []).map((reply: any) => (
+								<CommentItem
+									key={reply.id}
+									comment={reply}
+									onReply={onReply}
+									onLike={onLike}
+									depth={depth + 1}
+								/>
+							))}
 						</div>
 					)}
 				</div>
@@ -193,7 +247,10 @@ export default function UserComments({
 				content: newComment,
 				timestamp: new Date().toISOString(),
 				likes: 0,
-				replies: 0,
+				// A list, not a count: replies render nested under their
+				// parent (see CommentItem), so a posted reply must be
+				// stored, not counted and discarded.
+				replies: [],
 				verified: false,
 				helpful: false,
 				toolRating: 5,
@@ -205,19 +262,46 @@ export default function UserComments({
 		}
 	};
 
+	// Walk the whole tree, not just the top level: replies are nested
+	// comments, and a like or reply aimed at a nested comment must
+	// reach it instead of silently doing nothing.
+	const updateCommentTree = (list: any[], commentId: any, update: any): any[] =>
+		list.map((comment: any) =>
+			comment.id === commentId
+				? update(comment)
+				: {
+						...comment,
+						replies: updateCommentTree(comment.replies ?? [], commentId, update),
+					},
+		);
+
 	const handleLike = (commentId: any, liked: any) => {
 		setComments(
-			comments.map((comment: any) =>
-				comment.id === commentId
-					? { ...comment, likes: comment.likes + (liked ? 1 : -1) }
-					: comment,
-			),
+			updateCommentTree(comments, commentId, (comment: any) => ({
+				...comment,
+				likes: comment.likes + (liked ? 1 : -1),
+			})),
 		);
 	};
 
 	const handleReply = (commentId: any, replyText: any) => {
-		// In a real app, this would create a new reply
-		console.log("Reply to", commentId, ":", replyText);
+		const reply = {
+			id: Date.now(),
+			author: "You",
+			avatar: "/avatars/default.jpg",
+			content: replyText,
+			timestamp: new Date().toISOString(),
+			likes: 0,
+			replies: [],
+			verified: false,
+			helpful: false,
+		};
+		setComments(
+			updateCommentTree(comments, commentId, (comment: any) => ({
+				...comment,
+				replies: [...(comment.replies ?? []), reply],
+			})),
+		);
 	};
 
 	const sortedComments = [...comments].sort((a: any, b: any) => {
@@ -244,9 +328,25 @@ export default function UserComments({
 		}
 	});
 
-	const _averageRating =
-		comments.reduce((sum, comment) => sum + (comment.toolRating || 0), 0) /
-		comments.filter((c) => c.toolRating).length;
+	// The average of comments that actually carry a rating — never a
+	// hardcoded number. When no comment is rated there is no average
+	// to show, and the header says so instead of inventing one (the
+	// previous code rendered a fixed four-point-eight rating over an
+	// empty list, while
+	// the schema layer deliberately emits no aggregateRating without
+	// genuine reviews). Only rated comments enter both the sum and
+	// the divisor; the old code summed all comments but divided by
+	// the rated count.
+	const ratedComments = comments.filter(
+		(c: any) => typeof c.toolRating === "number",
+	);
+	const averageRating =
+		ratedComments.length > 0
+			? ratedComments.reduce(
+					(sum: number, comment: any) => sum + comment.toolRating,
+					0,
+				) / ratedComments.length
+			: null;
 
 	return (
 		<section className="py-8">
@@ -264,7 +364,11 @@ export default function UserComments({
 								<div className="flex items-center gap-4 text-sm text-muted-foreground">
 									<div className="flex items-center gap-1">
 										<TrendingUp className="h-4 w-4" />
-										<span>4.8/5 avg rating</span>
+										<span>
+											{averageRating !== null
+												? `${averageRating.toFixed(1)}/5 avg rating`
+												: "No ratings yet"}
+										</span>
 									</div>
 									<div>
 										{comments.filter((c) => c.helpful).length} helpful reviews
@@ -304,6 +408,10 @@ export default function UserComments({
 												Cancel
 											</Button>
 										</div>
+										<p className="text-xs text-muted-foreground">
+											Comments you add here stay in this browser
+											session only — they are not saved or published.
+										</p>
 									</div>
 								)}
 							</div>
@@ -364,65 +472,9 @@ export default function UserComments({
 								</div>
 							)}
 						</div>
-
-						{/* Load More Button */}
-						{filteredComments.length > 0 &&
-							filteredComments.length < comments.length && (
-								<div className="text-center">
-									<Button variant="outline">
-										Load More Comments
-										<ChevronDown className="h-4 w-4 ml-2" />
-									</Button>
-								</div>
-							)}
 					</CardContent>
 				</Card>
 			</div>
 		</section>
-	);
-}
-
-// Lightweight comments widget for embedding
-export function CommentsWidget({ toolId, compact = false }) {
-	const recentComments = SAMPLE_COMMENTS.slice(0, compact ? 2 : 3);
-
-	return (
-		<Card>
-			<CardHeader className="pb-3">
-				<CardTitle className="text-lg">Recent Reviews</CardTitle>
-			</CardHeader>
-			<CardContent className="space-y-4">
-				{recentComments.map((comment) => (
-					<div key={comment.id} className="flex gap-3">
-						<Avatar className="h-8 w-8">
-							<AvatarFallback className="text-xs">
-								{comment.author
-									.split(" ")
-									.map((n) => n[0])
-									.join("")}
-							</AvatarFallback>
-						</Avatar>
-						<div className="flex-1">
-							<div className="flex items-center gap-2 mb-1">
-								<span className="font-medium text-sm">{comment.author}</span>
-								<div className="flex text-xs text-primary">
-									{Array.from(
-										{ length: comment.toolRating || 5 },
-										(_, _i) => "★",
-									)}
-								</div>
-							</div>
-							<p className="text-sm text-muted-foreground line-clamp-2">
-								{comment.content}
-							</p>
-						</div>
-					</div>
-				))}
-
-				<Button variant="outline" size="sm" className="w-full">
-					View All Reviews
-				</Button>
-			</CardContent>
-		</Card>
 	);
 }

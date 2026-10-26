@@ -19,4 +19,4 @@ export {
 	ToolFeatures,
 } from "./SocialEngagement";
 export { default as ToolSEOLayout } from "./ToolSEOLayout";
-export { CommentsWidget, default as UserComments } from "./UserComments";
+export { default as UserComments } from "./UserComments";
