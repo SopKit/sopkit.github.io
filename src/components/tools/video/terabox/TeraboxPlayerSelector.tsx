@@ -277,7 +277,7 @@ export default function TeraboxPlayerSelector({
 									<Button
 										variant="outline"
 										size="sm"
-										onClick={() => window.open(generatePreviewUrl(), "_blank")}
+										onClick={() => window.open(generatePreviewUrl(), "_blank", "noopener,noreferrer")}
 									>
 										<ExternalLinkIcon className="h-4 w-4 mr-2" />
 										Open Fullscreen Preview

@@ -83,7 +83,7 @@ export default function InstagramReelDownloader() {
 	};
 
 	const downloadContent = (quality) => {
-		window.open(quality.url, "_blank");
+		window.open(quality.url, "_blank", "noopener,noreferrer");
 	};
 
 	return (

@@ -314,7 +314,7 @@ export default TeraboxVideo;`;
 								<Button
 									variant="outline"
 									size="sm"
-									onClick={() => window.open(previewUrl, "_blank")}
+									onClick={() => window.open(previewUrl, "_blank", "noopener,noreferrer")}
 								>
 									<EyeIcon className="h-4 w-4 mr-2" />
 									Open Fullscreen Preview

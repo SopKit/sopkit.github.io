@@ -396,7 +396,7 @@ export default function URLShortenerTool() {
 
 									<div className="flex flex-wrap gap-2">
 										<Button
-											onClick={() => window.open(urlData.shortUrl, "_blank")}
+											onClick={() => window.open(urlData.shortUrl, "_blank", "noopener,noreferrer")}
 											size="sm"
 											variant="outline"
 										>

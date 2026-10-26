@@ -79,7 +79,7 @@ export default function TwitterDownloader() {
 	};
 
 	const downloadVideo = (quality) => {
-		window.open(quality.url, "_blank");
+		window.open(quality.url, "_blank", "noopener,noreferrer");
 	};
 
 	return (

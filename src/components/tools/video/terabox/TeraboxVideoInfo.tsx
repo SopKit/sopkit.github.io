@@ -182,7 +182,7 @@ export default function TeraboxVideoInfo({
 							<Button
 								variant="outline"
 								size="sm"
-								onClick={() => window.open(shareUrl, "_blank")}
+								onClick={() => window.open(shareUrl, "_blank", "noopener,noreferrer")}
 							>
 								<ShareIcon className="h-4 w-4 mr-2" />
 								Open Share Link

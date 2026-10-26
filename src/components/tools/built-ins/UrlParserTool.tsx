@@ -39,7 +39,7 @@ export default function UrlParserTool() {
             <p><strong>Path:</strong> {parsed.pathname}</p>
             <p><strong>Query:</strong> {parsed.search}</p>
             <p><strong>Hash:</strong> {parsed.hash}</p>
-            <Button variant="outline" size="sm" onClick={() => window.open(parsed.href, '_blank')}>Open URL</Button>
+            <Button variant="outline" size="sm" onClick={() => window.open(parsed.href, '_blank', 'noopener,noreferrer')}>Open URL</Button>
           </div>
         )}
       </CardContent>

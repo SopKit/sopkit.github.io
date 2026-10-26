@@ -87,7 +87,7 @@ export function SimpleTeraboxPlayer() {
 
 	const handleNewTab = () => {
 		if (!embedId) return;
-		window.open(`https://terabox.beer/watch/${embedId}`, "_blank");
+		window.open(`https://terabox.beer/watch/${embedId}`, "_blank", "noopener,noreferrer");
 	};
 
 	const getEmbedCode = () => {

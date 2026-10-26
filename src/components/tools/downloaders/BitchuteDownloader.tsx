@@ -30,7 +30,7 @@ export default function BitchuteDownloader() {
 		} catch (err) { setError("Failed to process the BitChute video. Please try again."); }
 		finally { setIsLoading(false); }
 	};
-	const downloadContent = (quality) => window.open(quality.url, "_blank");
+	const downloadContent = (quality) => window.open(quality.url, "_blank", "noopener,noreferrer");
 
 	return (
 		<div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

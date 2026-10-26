@@ -67,7 +67,7 @@ const SocialShareButtons = ({
 			setCopied(true);
 			setTimeout(() => setCopied(false), 2000);
 		} else {
-			window.open(shareUrls[platform], "_blank", "width=600,height=400");
+			window.open(shareUrls[platform], "_blank", "width=600,height=400,noopener,noreferrer");
 		}
 	};
 

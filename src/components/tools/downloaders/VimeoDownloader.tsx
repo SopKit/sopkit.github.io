@@ -93,7 +93,7 @@ export default function VimeoDownloader() {
 	};
 
 	const downloadContent = (quality) => {
-		window.open(quality.url, "_blank");
+		window.open(quality.url, "_blank", "noopener,noreferrer");
 	};
 
 	return (

@@ -90,7 +90,7 @@ export default function TeraboxSharingTools({ shareUrl, videoData }) {
 							<Button
 								variant="outline"
 								size="sm"
-								onClick={() => window.open(shareUrl, "_blank")}
+								onClick={() => window.open(shareUrl, "_blank", "noopener,noreferrer")}
 							>
 								<ExternalLinkIcon className="h-4 w-4 mr-2" />
 								Open Link

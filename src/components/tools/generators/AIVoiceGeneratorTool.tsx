@@ -79,7 +79,7 @@ export default function AIVoiceGeneratorTool() {
 								<Button
 									variant="outline"
 									size="sm"
-									onClick={() => window.open(audioUrl, "_blank")}
+									onClick={() => window.open(audioUrl, "_blank", "noopener,noreferrer")}
 								>
 									<DownloadIcon className="h-4 w-4 mr-1" /> Download
 								</Button>
