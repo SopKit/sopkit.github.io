@@ -1099,7 +1099,7 @@ export const blogs: BlogArticle[] = [
 		description: "Ensure accuracy in your engineering and scientific projects with precision unit conversion. A guide on standardizing units across global teams in 2026.",
 		date: "2026-05-09",
 		readTimeMinutes: 16,
-		featuredToolRoutes: ["/calculators"],
+		featuredToolRoutes: ["/length-converter"],
 		intro: "In engineering, a small conversion error can lead to catastrophic failures. As teams become more global, the need for standardized, precise unit conversion tools has never been greater. This guide explores the workflows that professional engineers use to maintain accuracy across different measurement systems.",
 		sections: [
 			{
@@ -1108,7 +1108,7 @@ export const blogs: BlogArticle[] = [
 					"Working between metric and imperial systems requires absolute precision. Using a verified Unit Converter is essential for ensuring that calculations remain consistent throughout the project lifecycle.",
 					"Our SopKit unit conversion engine is built on standard scientific constants, providing the reliability needed for professional technical work."
 				],
-				toolRoutes: ["/calculators"]
+				toolRoutes: ["/length-converter"]
 			},
 			{
 				heading: "Automating Unit Conversions in Data Sets",
@@ -1595,7 +1595,7 @@ export const blogs: BlogArticle[] = [
   "date": "2026-07-12",
   "readTimeMinutes": 6,
   "featuredToolRoutes": [
-    "/tax-calculator"
+    "/income-tax-calculator"
   ],
   "intro": "The New Tax Regime offers lower tax slabs and a standard deduction of ₹75,000, while the Old Regime allows deductions like 80C. We break down the tipping points for salary earners.",
   "sections": [
@@ -1606,7 +1606,7 @@ export const blogs: BlogArticle[] = [
         "Old Regime: Supports investments like 80C, 80D, and HRA exemptions, but features higher marginal tax rates."
       ],
       "toolRoutes": [
-        "/tax-calculator"
+        "/income-tax-calculator"
       ]
     }
   ],
@@ -1659,7 +1659,7 @@ export const blogs: BlogArticle[] = [
   "date": "2026-07-12",
   "readTimeMinutes": 5,
   "featuredToolRoutes": [
-    "/tools"
+    "/cgpa-to-percentage-calculator-india"
   ],
   "intro": "Converting CGPA to percentage is done by multiplying the CGPA score by a standard board coefficient (usually 9.5). We list the official formulas for major education boards.",
   "sections": [
@@ -1685,7 +1685,7 @@ export const blogs: BlogArticle[] = [
   "date": "2026-07-12",
   "readTimeMinutes": 4,
   "featuredToolRoutes": [
-    "/tools"
+    "/attendance-shortage-calculator"
   ],
   "intro": "An attendance shortage calculator evaluates skipped classes to ensure you stay above academic minimum requirements. Keep your college records safe from shortage limits.",
   "sections": [
@@ -1857,7 +1857,7 @@ export const blogs: BlogArticle[] = [
   "date": "2026-07-12",
   "readTimeMinutes": 5,
   "featuredToolRoutes": [
-    "/seo-tools"
+    "/robots-txt-sitemap-generator"
   ],
   "intro": "A robots.txt file instructs search engine crawler bots on which pages or directories of a site they should not visit. It is a critical file for crawler bandwidth management.",
   "sections": [
@@ -1869,7 +1869,7 @@ export const blogs: BlogArticle[] = [
         "Allow: Overrides disallow paths for specific subfolders."
       ],
       "toolRoutes": [
-        "/seo-tools"
+        "/robots-txt-sitemap-generator"
       ]
     }
   ],
@@ -1887,7 +1887,7 @@ export const blogs: BlogArticle[] = [
   "date": "2026-07-12",
   "readTimeMinutes": 5,
   "featuredToolRoutes": [
-    "/seo-tools"
+    "/seotoolkit"
   ],
   "intro": "Core Web Vitals are user-experience metrics Google uses to evaluate loading speed, layout stability, and responsiveness. Optimize your pages for Google search ranks.",
   "sections": [
@@ -1899,7 +1899,7 @@ export const blogs: BlogArticle[] = [
         "INP: Interaction to Next Paint measures page click responsiveness."
       ],
       "toolRoutes": [
-        "/seo-tools"
+        "/seotoolkit"
       ]
     }
   ],
@@ -1917,7 +1917,7 @@ export const blogs: BlogArticle[] = [
   "date": "2026-07-12",
   "readTimeMinutes": 5,
   "featuredToolRoutes": [
-    "/tools"
+    "/kruti-dev-to-unicode"
   ],
   "intro": "Devanagari Unicode converters translate legacy non-Unicode fonts into standard Unicode characters for web accessibility. This guide simplifies text conversion.",
   "sections": [
@@ -1972,9 +1972,6 @@ export const blogs: BlogArticle[] = [
   "description": "Browse the complete directory of 560+ free online tools on SopKit. Access PDF, image, video, text, and developer tools.",
   "date": "2026-07-12",
   "readTimeMinutes": 6,
-  "featuredToolRoutes": [
-    "/tools"
-  ],
   "intro": "SopKit offers 560+ free browser-based tools across dozens of technical categories with no account registrations needed. Browse the index to find what you need.",
   "sections": [
     {
@@ -1984,9 +1981,6 @@ export const blogs: BlogArticle[] = [
         "PDF Tools: Merge pages, split files, and edit documents.",
         "Developer Tools: Format JSON files, encode base64 text, and generate keys."
       ],
-      "toolRoutes": [
-        "/tools"
-      ]
     }
   ],
   "faqs": [
