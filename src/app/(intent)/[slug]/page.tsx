@@ -2,6 +2,10 @@ import { notFound, permanentRedirect } from "next/navigation";
 import { getIntentBySlug, intentData } from "@/lib/intent-data";
 import { getMonetizationDecision } from "@/data/monetization";
 import { getAllTools, getToolById, getToolByExtraSlug, getToolByRoute, type Tool } from "@/lib/tools";
+import {
+	categoryKeyForOpportunity,
+	relatedToolsForOpportunity,
+} from "@/lib/seo-opportunity-related";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import SeoOpportunityTool from "@/components/seo/SeoOpportunityTool";
@@ -10,14 +14,6 @@ import {
     seoOpportunities,
     type SeoOpportunity,
 } from "@/data/seo-opportunities";
-
-function categoryKeyForOpportunity(opportunity: SeoOpportunity) {
-    if (opportunity.category === "Exam Image Tools") return "exam-tools";
-    if (opportunity.category === "Student Calculators") return "calculators";
-    if (opportunity.category === "API Key Testers") return "developer";
-    if (opportunity.category === "SEO Tools") return "seo";
-    return "utilities";
-}
 
 function syntheticToolFromOpportunity(opportunity: SeoOpportunity): Tool {
     const parentTool = getToolById(opportunity.parentToolSlug);
@@ -52,18 +48,6 @@ ${opportunity.intent}
 This page uses the same core workflow as ${parentTool?.name || "the related SopKit utility"}, with settings and guidance focused on "${opportunity.keyword}".
 `,
     };
-}
-
-function relatedToolsForOpportunity(opportunity: SeoOpportunity) {
-    const tools = getAllTools();
-    const relatedRoutes = new Set([
-        opportunity.parentToolRoute,
-        ...opportunity.relatedSlugs.map((slug) => `/${slug}`),
-    ]);
-
-    return tools
-        .filter((tool) => relatedRoutes.has(tool.route) || opportunity.relatedSlugs.includes(tool.id))
-        .slice(0, 12);
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
