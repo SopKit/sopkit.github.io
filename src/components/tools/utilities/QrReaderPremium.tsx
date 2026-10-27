@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { isSafeExternalUrl } from "@/lib/safe-external-url";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -122,7 +123,7 @@ export default function QrReaderPremium() {
                                     <Button aria-label="Copy scan result" size="icon" variant="ghost" onClick={copyToClipboard} className="h-8 w-8">
                                         <Copy className="h-4 w-4" />
                                     </Button>
-                                    {scannedResult.startsWith("http") && (
+                                    {isSafeExternalUrl(scannedResult) && (
                                         <Button aria-label="Open scanned link" size="icon" variant="ghost" asChild className="h-8 w-8">
                                             <a aria-label="Open scanned link" href={scannedResult} target="_blank" rel="noreferrer">
                                                 <ExternalLink className="h-4 w-4" />

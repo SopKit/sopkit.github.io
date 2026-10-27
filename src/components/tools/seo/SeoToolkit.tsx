@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { safeExternalHref } from "@/lib/safe-external-url";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -198,6 +199,7 @@ export default function SeoToolkit() {
 	};
 
 	if (auditData) {
+		const safeAuditHref = safeExternalHref(auditData.url);
 		return (
 			<div className="container mx-auto px-4 py-12">
 				<Button
@@ -243,14 +245,20 @@ export default function SeoToolkit() {
 						</div>
 						<div className="flex-1 text-center md:text-left">
 							<h2 className="text-2xl font-bold mb-2">SEO Audit Complete</h2>
-							<a
-								href={auditData.url}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-sm text-muted-foreground hover:underline mb-4 block"
-							>
-								{auditData.url} ↗
-							</a>
+							{safeAuditHref ? (
+								<a
+									href={safeAuditHref}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-sm text-muted-foreground hover:underline mb-4 block"
+								>
+									{auditData.url} ↗
+								</a>
+							) : (
+								<span className="text-sm text-muted-foreground mb-4 block" title="This URL uses an unsupported scheme and is not linked">
+									{auditData.url}
+								</span>
+							)}
 							<p className="text-muted-foreground mb-4">
 								Your site has {auditData.issues.critical} critical issues that
 								need immediate attention.

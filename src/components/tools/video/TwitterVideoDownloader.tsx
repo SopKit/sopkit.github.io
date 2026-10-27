@@ -1,5 +1,6 @@
 import { Download, Loader2 } from "lucide-react";
 import { useState } from "react";
+import { safeExternalHref } from "@/lib/safe-external-url";
 import { Button } from "@/components/ui/button";
 import {
 	Card,
@@ -119,7 +120,7 @@ const TwitterVideoDownloader = () => {
 							<div className="mt-6">
 								<h3 className="text-lg font-medium mb-3">Download Options</h3>
 								<div className="space-y-2">
-									{downloadOptions.map((option, index) => (
+									{downloadOptions.map((option, index) => { const safeHref = safeExternalHref(option.url); return (
 										<div
 											key={index}
 											className="flex items-center justify-between p-3 border "
@@ -130,16 +131,22 @@ const TwitterVideoDownloader = () => {
 													({option.type})
 												</span>
 											</div>
-											<a
-												href={option.url}
-												target="_blank"
-												rel="noopener noreferrer"
-												className="text-blue-600 hover:underline"
-											>
-												Download
-											</a>
+											{safeHref ? (
+												<a
+													href={safeHref}
+													target="_blank"
+													rel="noopener noreferrer"
+													className="text-blue-600 hover:underline"
+												>
+													Download
+												</a>
+											) : (
+												<span className="text-sm text-muted-foreground" title="This download link uses an unsupported scheme and is not linked">
+													Unavailable
+												</span>
+											)}
 										</div>
-									))}
+									); })}
 								</div>
 							</div>
 						)}

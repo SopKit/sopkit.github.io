@@ -18,6 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
+import { safeExternalHref } from "@/lib/safe-external-url";
 
 export default function SitemapUrlDownloader() {
 	const [url, setUrl] = useState("");
@@ -306,14 +307,20 @@ export default function SitemapUrlDownloader() {
 
 							<div className="max-h-[350px] overflow-y-auto border border-border/40 rounded-xl bg-muted/5 custom-scrollbar p-3">
 								<ul className="space-y-2 font-mono text-xs text-muted-foreground">
-									{filteredUrls.map((u, i) => (
+									{filteredUrls.map((u, i) => { const safeHref = safeExternalHref(u); return (
 										<li key={i} className="flex items-center gap-2 p-2 hover:bg-muted/30 rounded-lg transition-colors border-b border-border/10 last:border-0 truncate">
 											<span className="text-muted-foreground/45 font-bold w-8 text-right select-none">{i + 1}.</span>
-											<a href={u} target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 hover:underline truncate">
-												{u}
-											</a>
+											{safeHref ? (
+												<a href={safeHref} target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 hover:underline truncate">
+													{u}
+												</a>
+											) : (
+												<span className="truncate" title="This URL uses an unsupported scheme and is not linked">
+													{u}
+												</span>
+											)}
 										</li>
-									))}
+									); })}
 									{filteredUrls.length === 0 && (
 										<li className="text-center p-8 text-muted-foreground italic">
 											No URLs match your search filter.
