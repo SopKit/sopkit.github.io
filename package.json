@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "next dev --turbopack",
-		"prebuild": "tsx scripts/validate-registry.ts && tsx scripts/validate-tool-lastmod.ts && tsx scripts/validate-page-metadata.ts && tsx scripts/validate-blog-tool-routes.ts && tsx scripts/validate-icon-button-labels.ts && tsx scripts/validate-comment-actions.ts && tsx scripts/validate-seo-opportunities.ts && tsx scripts/validate-site-urls.ts && tsx scripts/validate-window-opener.ts && tsx scripts/generate-sitemap.ts && tsx scripts/validate-sitemap-indexable.ts",
+		"prebuild": "tsx scripts/validate-registry.ts && tsx scripts/validate-tool-lastmod.ts && tsx scripts/validate-page-metadata.ts && tsx scripts/validate-blog-tool-routes.ts && tsx scripts/validate-icon-button-labels.ts && tsx scripts/validate-comment-actions.ts && tsx scripts/validate-seo-opportunities.ts && tsx scripts/validate-site-urls.ts && tsx scripts/validate-window-opener.ts && tsx scripts/validate-embed-safety.ts && tsx scripts/generate-sitemap.ts && tsx scripts/validate-sitemap-indexable.ts",
 		"validate:registry": "tsx scripts/validate-registry.ts",
 		"validate:tool-lastmod": "tsx scripts/validate-tool-lastmod.ts",
 		"validate:page-metadata": "tsx scripts/validate-page-metadata.ts",
@@ -17,7 +17,7 @@
 		"audit:sitemap": "tsx scripts/audit-sitemap-urls.ts",
 		"build": "next build && node scripts/generate-redirects.cjs && node scripts/generate-llms.mjs",
 		"test": "node scripts/test-packages.js",
-		"test:arch": "bun test ./tests/unit/registry.test.ts ./tests/unit/budget.test.ts ./tests/unit/search.test.ts ./tests/unit/analytics.test.ts ./tests/unit/compressor.test.ts ./tests/unit/category-hubs.test.ts ./tests/seo/metadata.test.ts ./tests/seo/schema.test.ts ./tests/seo/seo-discoverability.test.ts ./tests/seo/tool-lastmod.test.ts ./tests/seo/blog-tool-routes.test.ts ./tests/seo/sitemap-indexable.test.ts ./tests/seo/icon-button-labels.test.ts ./tests/seo/comment-actions.test.ts ./tests/seo/seo-opportunities.test.ts ./tests/seo/site-urls.test.ts ./tests/seo/window-opener.test.ts ./tests/seo/privacy-hub.test.ts ./tests/seo/health-hub.test.ts ./tests/security/file-validation.test.ts ./tests/security/headers.test.ts ./tests/security/ssrf.test.ts",
+		"test:arch": "bun test ./tests/unit/registry.test.ts ./tests/unit/budget.test.ts ./tests/unit/search.test.ts ./tests/unit/analytics.test.ts ./tests/unit/compressor.test.ts ./tests/unit/category-hubs.test.ts ./tests/seo/metadata.test.ts ./tests/seo/schema.test.ts ./tests/seo/seo-discoverability.test.ts ./tests/seo/tool-lastmod.test.ts ./tests/seo/blog-tool-routes.test.ts ./tests/seo/sitemap-indexable.test.ts ./tests/seo/icon-button-labels.test.ts ./tests/seo/comment-actions.test.ts ./tests/seo/seo-opportunities.test.ts ./tests/seo/site-urls.test.ts ./tests/seo/window-opener.test.ts ./tests/seo/embed-safety.test.ts ./tests/seo/privacy-hub.test.ts ./tests/seo/health-hub.test.ts ./tests/security/file-validation.test.ts ./tests/security/headers.test.ts ./tests/security/ssrf.test.ts",
 		"perf:audit": "tsx scripts/performance/lighthouse-all.ts",
 		"perf:discover": "tsx scripts/performance/discover-routes.ts",
 		"start": "next start",
@@ -42,7 +42,8 @@
 		"validate:comment-actions": "tsx scripts/validate-comment-actions.ts",
 		"validate:seo-opportunities": "tsx scripts/validate-seo-opportunities.ts",
 		"validate:site-urls": "tsx scripts/validate-site-urls.ts",
-		"validate:window-opener": "tsx scripts/validate-window-opener.ts"
+		"validate:window-opener": "tsx scripts/validate-window-opener.ts",
+		"validate:embed-safety": "tsx scripts/validate-embed-safety.ts"
 	},
 	"dependencies": {
 		"@hexclave/next": "1.0.51",

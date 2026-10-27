@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import { sanitizeEmbedCss } from "@/lib/embed-safety";
 
 export default function EmbedVideoPlayer() {
 	const searchParams = useSearchParams();
@@ -121,10 +122,20 @@ export default function EmbedVideoPlayer() {
 				</div>
 			)}
 
-			{/* Custom CSS injection */}
+			{/* Custom CSS injection: the value comes from the ?data=
+			    URL blob, so it MUST pass through sanitizeEmbedCss
+			    first. Raw custom CSS here used to be a reflected XSS:
+			    a </style> breakout in the string escapes the style
+			    element and lets a crafted link inject arbitrary
+			    markup into the sopkit.space origin. The sanitizer
+			    drops every "<" (so no tag can open), removes
+			    @import rules and url( references, and is the only
+			    value that may reach this innerHTML. See
+			    src/lib/embed-safety.ts and
+			    scripts/validate-embed-safety.ts. */}
 			{videoConfig.appearance?.customCSS && (
 				<style
-					dangerouslySetInnerHTML={{ __html: videoConfig.appearance.customCSS }}
+					dangerouslySetInnerHTML={{ __html: sanitizeEmbedCss(videoConfig.appearance.customCSS) }}
 				/>
 			)}
 		</div>
