@@ -19,7 +19,6 @@ export const YOUTUBE_HUB_GROUPS: YoutubeHubGroup[] = [
 		blurb: "Video, Shorts, thumbnail and channel-art downloads.",
 		toolIds: [
 			"youtube-downloader",
-			"youtube-video-downloader",
 			"youtube-shorts-downloader",
 			"youtube-thumbnail-downloader",
 			"youtube-channel-banner-downloader",

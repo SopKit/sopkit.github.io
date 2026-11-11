@@ -18,7 +18,6 @@ export default async function ToolPage() {
 		route: "/reddit-downloader",
 		extraSlugs: [
 			"reddit-hd-video-downloader",
-			"reddit-media-saver",
 		],
 		popular: true,
 		category: "downloaders",

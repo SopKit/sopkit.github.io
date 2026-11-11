@@ -44,7 +44,7 @@ sopkit`
 		npmLink: "https://www.npmjs.com/package/@sopkit/base64",
 		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/base64`,
 		installCmd: "npm install @sopkit/base64",
-		toolLink: "/base64-encode/",
+		toolLink: "/base64-tool/",
 		detailedDesc: "Standard JavaScript btoa and atob functions fail on multi-byte UTF-8 Unicode characters (like Emojis). @sopkit/base64 fixes this natively, providing complete encoding safety and additional URL-Safe encoders.",
 		rivals: {
 			title: "Rivals Comparison",

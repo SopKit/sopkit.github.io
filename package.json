@@ -15,6 +15,8 @@
 		"validate:seo": "tsx scripts/validate-seo-architecture.ts",
 		"generate:sitemap": "tsx scripts/generate-sitemap.ts",
 		"audit:sitemap": "tsx scripts/audit-sitemap-urls.ts",
+		"audit:blog": "tsx scripts/audit-blog-thinness.ts",
+		"audit:content": "tsx scripts/audit-content-uniqueness.ts",
 		"build": "next build && node scripts/generate-redirects.cjs && node scripts/generate-llms.mjs",
 		"test": "node scripts/test-packages.js",
 		"test:arch": "bun test ./tests/unit/registry.test.ts ./tests/unit/budget.test.ts ./tests/unit/search.test.ts ./tests/unit/analytics.test.ts ./tests/unit/compressor.test.ts ./tests/unit/category-hubs.test.ts ./tests/seo/metadata.test.ts ./tests/seo/schema.test.ts ./tests/seo/seo-discoverability.test.ts ./tests/seo/tool-lastmod.test.ts ./tests/seo/blog-tool-routes.test.ts ./tests/seo/sitemap-indexable.test.ts ./tests/seo/icon-button-labels.test.ts ./tests/seo/comment-actions.test.ts ./tests/seo/seo-opportunities.test.ts ./tests/seo/site-urls.test.ts ./tests/seo/window-opener.test.ts ./tests/seo/embed-safety.test.ts ./tests/seo/safe-external-links.test.ts ./tests/seo/privacy-hub.test.ts ./tests/seo/health-hub.test.ts ./tests/security/file-validation.test.ts ./tests/security/headers.test.ts ./tests/security/ssrf.test.ts",

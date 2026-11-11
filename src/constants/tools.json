@@ -2,7 +2,7 @@
   "metadata": {
     "version": "11.2",
     "lastUpdated": "2026-09-21",
-    "totalTools": 640,
+    "totalTools": 603,
     "totalCategories": 20
   },
   "categories": {
@@ -65,15 +65,6 @@
           "popular": false,
           "seoDescription": "Generate catchy business, brand and startup name ideas instantly with AI-powered suggestions. Free tool, private, no signup required.",
           "seoTitle": "Business Name Generator — Brand & Startup Ideas"
-        },
-        {
-          "id": "ai-poem-generator",
-          "name": "AI Poem Generator",
-          "description": "Generate expressive poems, haikus, rhyming verses, and sonnets across different moods and themes using intelligent text patterns.",
-          "route": "/ai-poem-generator",
-          "popular": false,
-          "seoDescription": "Write expressive poems, haikus, sonnets and rhyming verses for any mood or theme. Free AI poem generator for cards, gifts and classrooms — no signup.",
-          "seoTitle": "Poem Generator — Create beautiful poems, haikus, and rhymes"
         },
         {
           "id": "fake-chat-generator",
@@ -453,24 +444,6 @@
           "seoTitle": "Compress Image to Exact KB — 10/20/50/100KB"
         },
         {
-          "id": "resize-image-cm-mm-inch",
-          "name": "Resize Image in CM, MM, Inches",
-          "description": "Resize photos by centimeters, millimeters, inches, pixels, and DPI for official forms, printing, and documents.",
-          "route": "/resize-image-cm-mm-inch",
-          "popular": false,
-          "seoDescription": "Set photo dimensions in centimeters, millimeters or inches at 150-600 DPI and get the pixel size that print shops and official application forms expect.",
-          "seoTitle": "Resize Image in CM, MM & Inches — Free"
-        },
-        {
-          "id": "passport-photo-maker-india",
-          "name": "Passport Photo Maker India",
-          "description": "Create passport-size photos for Indian forms with crop, background, size, and print layout options online for free.",
-          "route": "/passport-photo-maker-india",
-          "popular": true,
-          "seoDescription": "Crop a portrait to the standard 3.5x4.5 cm or 2x2 inch size on a white or blue background, then export one photo or a full printable sheet of copies.",
-          "seoTitle": "Passport Photo Maker — 3.5x4.5cm, Free"
-        },
-        {
           "id": "aadhaar-pan-photo-resizer",
           "name": "Aadhaar and PAN Card Photo Resizer",
           "description": "Sizes Aadhaar and PAN uploads to portal rules: 213x213 photos kept under 50 KB, 400x200 signatures under 20 KB, or custom dimensions.",
@@ -813,15 +786,6 @@
           "seoTitle": "Free Image Tools — Compress, Edit & Convert"
         },
         {
-          "id": "icon-generator",
-          "name": "Icon Generator",
-          "description": "Generate app icons and favicons for Android, iOS, and web applications.",
-          "route": "/icon-generator",
-          "popular": false,
-          "seoDescription": "Resize and export app icons for iOS, Android, macOS and PWA manifests in every required dimension, bundled into a zip ready for your next app project.",
-          "seoTitle": "Free App Icon Generator — iOS & Android App Assets"
-        },
-        {
           "id": "image-editor",
           "name": "Image Editor",
           "description": "Edit, crop, and enhance your photos online with our free image editing tools.",
@@ -1151,15 +1115,6 @@
           "popular": false,
           "seoDescription": "Set a phrase and a count, up to five thousand repeats, and get the enlarged block back immediately for load tests, filler text or playful message walls.",
           "seoTitle": "Text Repeater — Repeat Text 10K Times"
-        },
-        {
-          "id": "text-sorter",
-          "name": "Text Sorter",
-          "description": "Organize your lists and text lines with our free online Text Sorter. Sort alphabetically, by length, or reverse order instantly. Privacy-focused tool for researchers and developers.",
-          "route": "/text-sorter",
-          "popular": false,
-          "seoDescription": "For tidying survey answers or inventories: sort lines into order and strip blanks or duplicates in one action, then take the cleaned list to the spreadsheet.",
-          "seoTitle": "Text Sorter — Sort Lines A–Z, Free"
         },
         {
           "id": "text-to-hashtags-converter",
@@ -1531,15 +1486,6 @@
           "seoTitle": "Akillitv Video Downloader — HD & Fast"
         },
         {
-          "id": "all-downloaders",
-          "name": "All Downloaders",
-          "description": "One link field that recognises over seventy video sites, names the source, lists every video and audio rendition and saves your pick.",
-          "route": "/all-downloaders",
-          "popular": false,
-          "seoDescription": "Drop in a link from any supported platform and the engine names the source, lists every video and audio rendition found, then saves the one you choose.",
-          "seoTitle": "All-in-One Video Downloader — 70+ Sites"
-        },
-        {
           "id": "bandcamp-video-downloader",
           "name": "Bandcamp Video Downloader",
           "description": "Resolve a Bandcamp track or album link through the resolver and save the audio at the release's original encoding for later listening.",
@@ -1630,13 +1576,13 @@
           "seoTitle": "Douyin Video Downloader — No Watermark"
         },
         {
-          "id": "downloaders",
-          "name": "Downloaders",
-          "description": "The downloader collection in one place: choose a supported platform, paste a share link and save the quality that fits your device.",
-          "route": "/downloaders",
+          "id": "all-downloaders",
+          "name": "All Downloaders",
+          "description": "One link field that recognises over seventy video sites, names the source, lists every video and audio rendition and saves your pick.",
+          "route": "/all-downloaders",
           "popular": false,
-          "seoDescription": "SopKit's downloader collection works from one link field: drop in a video address, review the qualities on offer and save the file that suits your device.",
-          "seoTitle": "Video & Media Downloaders — 70+ Sites"
+          "seoDescription": "Drop in a link from any supported platform and the engine names the source, lists every video and audio rendition found, then saves the one you choose.",
+          "seoTitle": "All-in-One Video Downloader — 70+ Sites"
         },
         {
           "id": "espn-video-downloader",
@@ -1666,15 +1612,6 @@
           "seoTitle": "Facebook Video Downloader — HD, Free"
         },
         {
-          "id": "fb-video-saver",
-          "name": "Facebook Video Saver",
-          "description": "Send a Facebook clip, reel or live recording through the resolver and receive it back as an HD or SD file to keep.",
-          "route": "/fb-video-saver",
-          "popular": false,
-          "seoDescription": "A lightweight companion for Facebook browsing: send over a clip, reel or live recording and receive it back as HD or SD depending on what the source offers.",
-          "seoTitle": "FB Video Saver — HD Downloads, Free"
-        },
-        {
           "id": "febspot-video-downloader",
           "name": "Febspot Video Downloader",
           "description": "Febspot's trending uploads pass through the resolver and come back as MP4 at the best quality the post carries.",
@@ -1702,15 +1639,6 @@
           "seoTitle": "iFunny Downloader — Memes & Videos"
         },
         {
-          "id": "ig-highlights-saver",
-          "name": "Instagram Highlights Saver",
-          "description": "Enter an Instagram username to preview the story viewer with per-story age, media type and size, plus highlight sets listed with covers and counts.",
-          "route": "/ig-highlights-saver",
-          "popular": false,
-          "seoDescription": "Instagram highlights and their cover images are captured together, preserving the story sequence that profiles usually delete once a campaign ends.",
-          "seoTitle": "IG Highlights Saver — Download Stories"
-        },
-        {
           "id": "imdb-video-downloader",
           "name": "Imdb Video Downloader",
           "description": "Paste an IMDb trailer or featurette address; the link is fetched on the server and each rendition it returns is listed with a size for saving.",
@@ -1729,15 +1657,6 @@
           "seoTitle": "Imgur Downloader — Images, GIFs & Albums"
         },
         {
-          "id": "insta-reels-saver",
-          "name": "Insta Reels Saver",
-          "description": "Give it an Instagram Reels link and the fetched video comes back as MP4 renditions in the qualities the post exposes, soundtrack included.",
-          "route": "/insta-reels-saver",
-          "popular": false,
-          "seoDescription": "Reels arrive as HD files with the soundtrack untouched, since the saver preserves the original audio track instead of serving back a muted version.",
-          "seoTitle": "Reels Saver — Download Instagram Reels HD"
-        },
-        {
           "id": "instagram-downloader",
           "name": "Instagram Downloader",
           "description": "All-in-one Instagram saver: reels, stories, photos, IGTV and highlights. One tool, everything — free.",
@@ -1748,12 +1667,12 @@
         },
         {
           "id": "instagram-image-downloader",
-          "name": "Instagram Image Downloader",
+          "name": "Instagram Profile Picture Downloader",
           "description": "Look up an Instagram handle to preview its profile photo alongside account stats, with three size options listed for the image.",
           "route": "/instagram-image-downloader",
           "popular": false,
-          "seoDescription": "Instagram photos come through at the resolution the platform stores, including every slide in a carousel, and each image is available to download on its own.",
-          "seoTitle": "Instagram Photo Downloader — HD Images"
+          "seoDescription": "Look up any public Instagram account and grab its profile picture at full size, including the larger variant kept for high-density screens and tablets.",
+          "seoTitle": "Instagram Profile Picture Downloader — Full Size"
         },
         {
           "id": "instagram-reel-downloader",
@@ -1772,15 +1691,6 @@
           "popular": false,
           "seoDescription": "Stories are retrieved without leaving a viewer trace and arrive as HD clips that stay watchable after the twenty-four-hour window closes behind them.",
           "seoTitle": "IG Story Downloader — Anonymous & HD"
-        },
-        {
-          "id": "instagram-videos-downloader",
-          "name": "Instagram Videos Downloader",
-          "description": "Feed it Instagram feed video, live or IGTV links: the post is fetched, shown with its thumbnail, and every downloadable rendition is listed.",
-          "route": "/instagram-videos-downloader",
-          "popular": false,
-          "seoDescription": "Long-form Instagram content — feed videos, lives and IGTV episodes — saves in HD, with no session limit on how many links you run through in one sitting.",
-          "seoTitle": "Instagram Video Downloader — HD, Free"
         },
         {
           "id": "izlesene-video-downloader",
@@ -1900,24 +1810,6 @@
           "seoTitle": "Periscope Downloader — Save Live Replays"
         },
         {
-          "id": "pinterest-clip-saver",
-          "name": "Pinterest Clip Saver",
-          "description": "Paste a Pinterest video pin or Idea Pin link and the fetched clip is listed with the qualities and sizes available for saving.",
-          "route": "/pinterest-clip-saver",
-          "popular": false,
-          "seoDescription": "Pinterest clips and Idea Pins save in HD, letting crafters keep tutorials, recipes and DIY demonstrations at hand while their hands are busy with the project.",
-          "seoTitle": "Pinterest Clip Saver — HD Downloads"
-        },
-        {
-          "id": "pinterest-gif-downloader",
-          "name": "Pinterest Gif Downloader",
-          "description": "An animated pin address is fetched and returned as a downloadable file with the motion intact, ready for a reaction folder.",
-          "route": "/pinterest-gif-downloader",
-          "popular": false,
-          "seoDescription": "Animated GIFs from Pinterest download with motion intact and quality preserved, so reaction images and board favorites can be reused in chats and on boards.",
-          "seoTitle": "Pinterest GIF Downloader — Full Quality"
-        },
-        {
           "id": "pinterest-image-downloader",
           "name": "Pinterest Image Downloader",
           "description": "Paste a pin holding a photo, infographic or artwork and the fetched image is offered at the resolutions Pinterest serves.",
@@ -1954,24 +1846,6 @@
           "seoTitle": "Reddit Downloader — Videos & Galleries"
         },
         {
-          "id": "reddit-media-saver",
-          "name": "Reddit Media Saver",
-          "description": "Point it at a Reddit post with media and the fetch separates the videos, galleries and GIFs it holds into individual items to save.",
-          "route": "/reddit-media-saver",
-          "popular": false,
-          "seoDescription": "Point the saver at a Reddit media post and it pulls out videos with sound, image galleries and animated GIFs in a single pass, item by item, ready to save.",
-          "seoTitle": "Reddit Media Saver — All Media Types"
-        },
-        {
-          "id": "reddit-video-downloader",
-          "name": "Reddit Video Downloader",
-          "description": "Built for v.redd.it posts: paste the thread link and the clip is assembled from its video and audio streams so it downloads with sound.",
-          "route": "/reddit-video-downloader",
-          "popular": false,
-          "seoDescription": "Built around v.redd.it: Reddit clips are muxed from their separate video and audio streams, so downloads arrive with sound rather than awkward silence.",
-          "seoTitle": "Reddit Video Downloader — With Audio"
-        },
-        {
           "id": "rumble-video-downloader",
           "name": "Rumble Video Downloader",
           "description": "Paste a Rumble video, podcast episode or past stream link and the fetched media is offered in the source renditions listed.",
@@ -1981,78 +1855,6 @@
           "seoTitle": "Rumble Video Downloader — HD Free"
         },
         {
-          "id": "save-fb-stories-anonymous",
-          "name": "Save Facebook Stories Anonymous",
-          "description": "Enter a Facebook username to preview stories with their age and size, plus a highlights strip showing covers and item counts.",
-          "route": "/save-fb-stories-anonymous",
-          "popular": false,
-          "seoDescription": "Watching Facebook stories through this page leaves no trace on the seen list, and every segment can be saved as a keepsake before it vanishes for good.",
-          "seoTitle": "Save FB Stories Anonymously — No Seen"
-        },
-        {
-          "id": "save-ig-content",
-          "name": "Save Instagram Content",
-          "description": "One field takes Instagram post, reel, story or highlight links; the page detects the content type and fetches the media behind it.",
-          "route": "/save-ig-content",
-          "popular": false,
-          "seoDescription": "Posts, reels, stories and highlights from Instagram funnel through one field, the tool recognizing whichever kind of link you supply and fetching it.",
-          "seoTitle": "Instagram Content Saver — All Types"
-        },
-        {
-          "id": "save-insta-pfp",
-          "name": "Save Insta Profile Picture",
-          "description": "Enter a handle to preview the account's profile picture, post, follower and following counts, then pick one of three size options.",
-          "route": "/save-insta-pfp",
-          "popular": false,
-          "seoDescription": "Look up any public Instagram account and grab its profile picture at full size, including the larger variant kept for high-density screens and tablets.",
-          "seoTitle": "Insta DP Saver — Full-Size Profile Pics"
-        },
-        {
-          "id": "save-instagram-clips",
-          "name": "Save Instagram Clips",
-          "description": "Short Instagram video links are fetched and handed back as clips with sound, ready to save or repost from the results list.",
-          "route": "/save-instagram-clips",
-          "popular": false,
-          "seoDescription": "Short Instagram videos land in crisp HD moments after a link is pasted, sound included, ready for viewing later or passing along to friends and family.",
-          "seoTitle": "Instagram Clip Saver — HD, Free"
-        },
-        {
-          "id": "save-reels-video",
-          "name": "Save Reels Video",
-          "description": "Paste an Instagram Reels address and the fetched clip keeps its original audio while offering the renditions listed for download.",
-          "route": "/save-reels-video",
-          "popular": false,
-          "seoDescription": "Reels links from Instagram resolve to MP4 downloads with the original audio attached, keeping trending sounds in sync with the visuals throughout.",
-          "seoTitle": "Reels Video Downloader — HD & Free"
-        },
-        {
-          "id": "save-snaps-to-gallery",
-          "name": "Save Snaps To Gallery",
-          "description": "Save Snapchat snaps and stories directly to your gallery. Keep memories before they disappear — free.",
-          "route": "/save-snaps-to-gallery",
-          "popular": false,
-          "seoDescription": "Snaps and story segments go straight into the phone's gallery as proper video files, so memories survive without screenshot gymnastics or shaky captures.",
-          "seoTitle": "Snapchat Saver — Snaps to Gallery"
-        },
-        {
-          "id": "save-tiktok-mp4",
-          "name": "Save Tiktok MP4",
-          "description": "TikTok links save as plain MP4 files, with quality tiers and an audio-only option for whenever you need just the sound.",
-          "route": "/save-tiktok-mp4",
-          "popular": false,
-          "seoDescription": "TikTok videos save as plain MP4 files, with a clean variant for anyone who needs the footage without the app's watermark overlaid across the picture.",
-          "seoTitle": "TikTok to MP4 — No Watermark, HD"
-        },
-        {
-          "id": "save-twitter-videos",
-          "name": "Save Twitter Videos",
-          "description": "X posts with video or GIF attachments are fetched and listed as downloadable files; clips inside threads and quotes work too.",
-          "route": "/save-twitter-videos",
-          "popular": false,
-          "seoDescription": "X posts carrying video or GIF media convert to original-quality files, covering clips inside threads and quoted posts as well as standalone uploads.",
-          "seoTitle": "Twitter Video Downloader — X Videos & GIFs"
-        },
-        {
           "id": "sharechat-video-downloader",
           "name": "Sharechat Video Downloader",
           "description": "Paste a ShareChat sketch, shayari or status video link and the fetch returns the quality tiers available for saving.",
@@ -2060,15 +1862,6 @@
           "popular": false,
           "seoDescription": "ShareChat sketches, shayari posts and status videos save in high quality from a pasted link, keeping regional favorites within easy reach for later.",
           "seoTitle": "ShareChat Downloader — Videos & Status"
-        },
-        {
-          "id": "snapchat-saver-online",
-          "name": "Snapchat Saver Online",
-          "description": "Stories, spotlight entries and saved memories can be fetched from a Snapchat link on the page, each clip listed for saving.",
-          "route": "/snapchat-saver-online",
-          "popular": false,
-          "seoDescription": "Stories, spotlight entries and saved memories are fetched from Snapchat links right on this page, with no extra app to install and nothing else to load.",
-          "seoTitle": "Snapchat Saver — Stories & Spotlight"
         },
         {
           "id": "snapchat-video-downloader",
@@ -2123,24 +1916,6 @@
           "popular": false,
           "seoDescription": "The general TikTok saver handles watermarked and clean saves alike, and can detach the soundtrack as an MP3 for use in other projects of your own.",
           "seoTitle": "TikTok Downloader — No Watermark, HD"
-        },
-        {
-          "id": "tiktok-saver-no-watermark",
-          "name": "Tiktok Saver No Watermark",
-          "description": "Paste a TikTok link to get the clip back without the watermark or the bouncing handle burnt over the picture.",
-          "route": "/tiktok-saver-no-watermark",
-          "popular": false,
-          "seoDescription": "Clean output is the whole point here: uploads are processed so the TikTok watermark and bouncing handle stay out of the resulting MP4 file entirely.",
-          "seoTitle": "TikTok No Watermark — Clean MP4"
-        },
-        {
-          "id": "tiktok-videos-downloader",
-          "name": "Tiktok Videos Downloader",
-          "description": "Bulk-download TikTok videos, slideshows and stories in HD. Whole profiles archived — free.",
-          "route": "/tiktok-videos-downloader",
-          "popular": false,
-          "seoDescription": "Volume is the idea here: run video links through one after another and assemble an archive of TikToks, slideshows and stories in consistently high quality.",
-          "seoTitle": "TikTok Videos Downloader — Batch HD"
         },
         {
           "id": "tumblr-video-downloader",
@@ -2204,24 +1979,6 @@
           "popular": false,
           "seoDescription": "A Terabox share link opens in an embedded player, so files can be watched or downloaded without installing the desktop client the service expects.",
           "seoTitle": "Free Terabox Video Downloader & Player Online"
-        },
-        {
-          "id": "ig-reels-downloader-hd",
-          "name": "Instagram Reels Downloader HD",
-          "description": "Download Instagram Reels videos in high definition directly to your device without logging in or installing third-party apps.",
-          "route": "/ig-reels-downloader-hd",
-          "popular": false,
-          "seoDescription": "High-definition Instagram Reels are the specialty: the largest MP4 a post offers comes back, without credentials or a third-party app entering the picture.",
-          "seoTitle": "Free Instagram Reels Downloader HD — Save IG Reels"
-        },
-        {
-          "id": "fb-clip-downloader",
-          "name": "Facebook Video & Clip Downloader",
-          "description": "Download public Facebook videos and short clips in MP4 format directly to your device for offline personal viewing.",
-          "route": "/fb-clip-downloader",
-          "popular": false,
-          "seoDescription": "Short Facebook clips and reels save as clean MP4s, with quality options laid out before the download so you know exactly what is coming down the line.",
-          "seoTitle": "Free Facebook Video & Clip Downloader Online"
         }
       ]
     },
@@ -2466,15 +2223,6 @@
           "seoTitle": "YouTube Thumbnail Downloader — HD & 4K"
         },
         {
-          "id": "youtube-video-downloader",
-          "name": "Youtube Video Downloader",
-          "description": "Supports YouTube videos and Shorts links: choose from quality tiers such as 360p, 720p, 1080p or 4K where offered, plus audio entries.",
-          "route": "/youtube-video-downloader",
-          "popular": false,
-          "seoDescription": "Pick a quality tier from 144p up through the highest MP4 available and save a copy of the video for offline viewing or editing on your own schedule.",
-          "seoTitle": "YouTube Video Downloader — 4K MP4, Free"
-        },
-        {
           "id": "youtube-downloader",
           "name": "YouTube Video Downloader",
           "description": "Download YouTube videos and audio online in high quality MP4 and MP3 formats for offline personal use with content you own.",
@@ -2545,15 +2293,6 @@
           "seoDescription": "Hold a phone or laptop near the instrument and pluck: the microphone hears each string and shows how far it sits from standard, drop D or half-step tuning."
         },
         {
-          "id": "free-mp3-extractor",
-          "name": "Free MP3 Extractor",
-          "description": "Paste a TikTok link and the audio renditions it returns are listed with quality and size, ready to save as an MP3 track.",
-          "route": "/free-mp3-extractor",
-          "popular": false,
-          "seoDescription": "Hand over a video link and take the soundtrack back: compare the quality tiers on offer, then save the audio as an MP3 file for editing or a ringtone.",
-          "seoTitle": "MP3 Extractor — Audio from Video, Free"
-        },
-        {
           "id": "gaana-video-downloader",
           "name": "Gaana Video Downloader",
           "description": "Download Gaana songs you love for offline listening in high quality. Bollywood and regional — free.",
@@ -2561,15 +2300,6 @@
           "popular": false,
           "seoDescription": "Paste a Gaana track link, let the page surface the stream behind it, and choose a quality before saving the song for later listening on any player.",
           "seoTitle": "Gaana Song Downloader — MP3, Free"
-        },
-        {
-          "id": "modify-mp3-file",
-          "name": "Modify MP3 File",
-          "description": "Paste a TikTok video link, pick an output bitrate from 128 up to 320kbps, and the fetched soundtrack comes back as an MP3.",
-          "route": "/modify-mp3-file",
-          "popular": false,
-          "seoDescription": "Trim dead air from the start, cut a section out of the middle, apply fades and shape the perfect ringtone loop, then export a cleaned-up copy from the editor.",
-          "seoTitle": "Edit MP3 Online — Trim, Cut & Join"
         },
         {
           "id": "mp3-from-tiktok",
@@ -2588,15 +2318,6 @@
           "popular": false,
           "seoDescription": "Pick the bitrate a recording deserves — 128kbps for spoken audio, up to 320kbps when fidelity matters — and turn an MP4's soundtrack into a standalone MP3.",
           "seoTitle": "MP4 to MP3 Converter — 320kbps, Free"
-        },
-        {
-          "id": "shrink-mp3-size",
-          "name": "Shrink MP3 Size",
-          "description": "Compress large MP3s to smaller sizes for sharing and uploads. Smart bitrate control — free.",
-          "route": "/shrink-mp3-size",
-          "popular": false,
-          "seoDescription": "Audio that has outgrown its limit gets a second, lighter life: lower the bitrate, watch the megabyte count fall, and keep a copy email or forms will accept.",
-          "seoTitle": "Compress MP3 — Reduce Size Online"
         },
         {
           "id": "soundcloud-video-downloader",
@@ -3738,16 +3459,6 @@
           "seoTitle": "Base64 Decode — Back to Plain Text"
         },
         {
-          "id": "base64-encode",
-          "name": "Base64 Encode",
-          "description": "Encode plain text into Base64 format instantly. Our free online tool is perfect for developers, data transmission, and secure character representation in web URLs.",
-          "route": "/base64-encode",
-          "popular": false,
-          "title": "Base64 Encode - Free Online Tool",
-          "seoDescription": "Turn text or a small file into Base64 for data URIs, API payloads and email-safe transfers, with the encoded output ready to copy in a single click.",
-          "seoTitle": "Base64 Encode — Text to Base64, Free"
-        },
-        {
           "id": "charge-converter",
           "name": "Charge Converter",
           "description": "Convert between coulombs, millicoulombs, and other electrical charge units instantly. Our free online tool provides quick and accurate physics base transformations.",
@@ -3951,7 +3662,7 @@
           "name": "GST Calculator",
           "description": "Add or remove 5%, 12%, 18% and 28% GST for Indian billing. Inclusive-exclusive math — free.",
           "route": "/gst-calculator",
-          "popular": false,
+          "popular": true,
           "title": "GST Calculator - Free Online Tool",
           "seoDescription": "Add GST to an invoice amount and split it into base, tax and total at any rate, covering the Indian slabs of 5, 12, 18 and 28 percent in one pass.",
           "seoTitle": "GST Calculator India — All Slabs, Free"
@@ -4182,15 +3893,6 @@
           "popular": false,
           "seoDescription": "Find the binomial probability of exactly k successes across n trials for a given success chance, with the resulting probability shown in scientific notation.",
           "seoTitle": "Probability Calculator — Odds & Dice, Free"
-        },
-        {
-          "id": "qr-code-decoder",
-          "name": "QR Code Decoder",
-          "description": "Load a PNG, JPG or WebP image containing a QR code and read the payload it holds, ready to copy, open or revisit from a short scan history.",
-          "route": "/qr-code-decoder",
-          "popular": false,
-          "seoDescription": "Decode a QR code from a screenshot or photo: drop in an image and read the link or text it carries, so you can inspect the destination before visiting.",
-          "seoTitle": "QR Code Decoder — Read from Images"
         },
         {
           "id": "qr-code-generator",
@@ -5088,15 +4790,6 @@
           "seoTitle": "GST Invoice Generator India — Free PDF"
         },
         {
-          "id": "gst-calculator-india",
-          "name": "GST Calculator India",
-          "description": "Calculate GST amount, inclusive/exclusive price, CGST, SGST, and IGST for Indian invoices instantly.",
-          "route": "/gst-calculator-india",
-          "popular": true,
-          "seoDescription": "Quickly add GST to a base amount at the rate your goods or services attract and read the tax component and gross total payable before raising the bill.",
-          "seoTitle": "GST Calculator — Inclusive & Exclusive"
-        },
-        {
           "id": "emi-calculator",
           "name": "EMI Calculator for Loans",
           "description": "Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans.",
@@ -5133,15 +4826,6 @@
           "seoTitle": "Free Salary Calculator India — No Signup"
         },
         {
-          "id": "cgpa-to-percentage-calculator-india",
-          "name": "CGPA to Percentage Calculator for Indian Universities",
-          "description": "Convert your CGPA into percentage using common Indian university formulas like CBSE 9.5x, VTU, Mumbai University, DU, AKTU, and Anna University.",
-          "route": "/cgpa-to-percentage-calculator-india",
-          "popular": true,
-          "seoDescription": "Indian placement and admission forms ask for percentage, not CGPA: pick the 9.5 multiplier, a 10x ratio or a custom factor to convert your score.",
-          "seoTitle": "CGPA to Percentage — CBSE, VTU, Mumbai Univ"
-        },
-        {
           "id": "sgpa-to-cgpa-calculator",
           "name": "SGPA to CGPA Calculator",
           "description": "Calculate your cumulative GPA (CGPA) from semester-wise SGPA values. Supports credit-weighted and simple average methods.",
@@ -5158,15 +4842,6 @@
           "popular": true,
           "seoDescription": "Fallen below the attendance bar? Enter classes held and attended to see exactly how many lectures in a row you must sit through to recover lost ground.",
           "seoTitle": "Attendance Shortage Calculator — Safe Bunks Left"
-        },
-        {
-          "id": "marks-needed-calculator",
-          "name": "Exam Marks Needed Calculator",
-          "description": "Find out exactly how many marks you need in your final exam to pass or reach your target grade based on internal scores.",
-          "route": "/marks-needed-calculator",
-          "popular": false,
-          "seoDescription": "Plug in internals already scored, their maximum weight, the final exam total and your target to learn the exact score the paper must hit to get there.",
-          "seoTitle": "Marks Needed Calculator — Pass Any Exam"
         },
         {
           "id": "75-attendance-calculator",
@@ -5205,8 +4880,8 @@
           "route": "/cgpa-to-percentage-calculator",
           "popular": true,
           "title": "CGPA to Percentage Calculator - Free Online Tool",
-          "seoDescription": "Multiply a CGPA by whichever factor your institution follows, 9.5, 10 or another value, and read off the equivalent percentage for forms and resumes.",
-          "seoTitle": "CGPA to Percentage Converter — ×9.5 & More"
+          "seoDescription": "Indian placement and admission forms ask for percentage, not CGPA: pick the 9.5 multiplier, a 10x ratio or a custom factor to convert your score.",
+          "seoTitle": "CGPA to Percentage — CBSE, VTU, Mumbai Univ"
         },
         {
           "id": "required-marks-calculator",
@@ -5346,15 +5021,6 @@
           "popular": false,
           "seoDescription": "Contrast a dish's ingredient cost with its menu price to see the food cost percentage, cash profit per plate and margin left once the plate is priced.",
           "seoTitle": "Food Cost Calculator — Menu Pricing"
-        },
-        {
-          "id": "freelance-rate-calculator",
-          "name": "Freelance Rate Calculator",
-          "description": "Calculate your freelance rate calculator instantly. Free browser-based calculator with detailed breakdowns.",
-          "route": "/freelance-rate-calculator",
-          "popular": true,
-          "seoDescription": "Derive an hourly and daily rate from your annual income goal, business expenses and the hours you can realistically invoice across a full working year.",
-          "seoTitle": "Freelance Rate Calculator — Price Projects"
         },
         {
           "id": "rent-affordability-calculator",
@@ -5575,7 +5241,7 @@
           "name": "Passport Photo Maker India",
           "description": "Create passport-style photos for Indian forms and documents with crop, resize, and compression controls.",
           "route": "/passport-photo-maker",
-          "popular": false,
+          "popular": true,
           "title": "Passport Photo Maker India - Free Online Tool",
           "seoDescription": "Frame a 3.5x4.5cm passport portrait over a white, blue or grey backdrop, straighten it with zoom and rotation, then export one image or a print-ready sheet.",
           "seoTitle": "Passport Photo Maker — 35x45mm, Free"

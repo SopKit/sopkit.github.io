@@ -1,6 +1,5 @@
 import { describe, expect, it } from "bun:test";
 import { buildCanonicalUrl } from "@/seo/canonical";
-import { VisuallyHiddenSeoContext } from "@/components/seo/VisuallyHiddenSeoContext";
 import { RelatedToolsServer } from "@/components/tools/shared/RelatedToolsServer";
 import { ToolSteps, ToolFeatures } from "@/components/tools/shared/ToolSharedComponents";
 import sitemap from "@/app/sitemap";
@@ -44,27 +43,6 @@ describe("SEO, Semantic HTML & Discoverability Platform Invariants", () => {
 		expect(defaultRule).toBeDefined();
 		const disallowList = Array.isArray(defaultRule?.disallow) ? defaultRule.disallow : [defaultRule?.disallow];
 		expect(disallowList).toContain("/search");
-	});
-
-	it("renders VisuallyHiddenSeoContext with sr-only semantic landmarks and truthful privacy notices", () => {
-		const html = ReactDOMServer.renderToStaticMarkup(
-			React.createElement(VisuallyHiddenSeoContext, {
-				toolName: "Image Compressor",
-				description: "Compress images locally in your browser.",
-				category: "image",
-				executionType: "client",
-				features: ["Preserve metadata", "Instant download"],
-				supportedFormats: ["JPG", "PNG", "WebP"],
-				steps: [{ name: "Select image", text: "Choose a file from disk." }],
-			})
-		);
-
-		expect(html).toContain('class="sr-only"');
-		expect(html).toContain("<h2>About Image Compressor</h2>");
-		expect(html).toContain("Local Browser Execution");
-		expect(html).toContain("JPG, PNG, WebP");
-		expect(html).not.toContain("display:none");
-		expect(html).not.toContain("visibility:hidden");
 	});
 
 	it("renders RelatedToolsServer with semantic section and links without client hydration requirement", () => {

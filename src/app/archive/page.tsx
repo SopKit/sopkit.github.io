@@ -104,25 +104,6 @@ export default function ArchivePage() {
 												{tool.description}
 											</p>
 
-											{/* Variants / Extra Slugs */}
-											{tool.extraSlugs && tool.extraSlugs.length > 0 && (
-												<div className="mt-4 pt-4 border-t border-border/50">
-													<p className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-3">
-														Keyword Variants
-													</p>
-													<div className="flex flex-wrap gap-2">
-														{tool.extraSlugs.map((slug: string) => (
-															<Link
-																key={slug}
-																href={`/${slug}`}
-																className="px-2 py-1 bg-secondary/50 hover:bg-primary/10 transition-all underline decoration-border/50 underline-offset-4"
-															>
-																{slug.split("-").join(" ")}
-															</Link>
-														))}
-													</div>
-												</div>
-											)}
 										</div>
 									))}
 								</div>

@@ -15,7 +15,7 @@ export default function QrToolsHub() {
 			title="QR Tools"
 			description="QR pages grouped by actual use case: menus, forms, WiFi, UPI payments, and business cards. Clean tools for small businesses and everyday sharing."
 			route="/qr-tools"
-			tools={getAllTools().filter(t => ["qr-code-generator","qr-code-generator-business","qr-code-reader","qr-code-decoder","barcode-generator","barcode-reader","whatsapp-link-generator"].includes(t.id))}
+			tools={getAllTools().filter(t => ["qr-code-generator","qr-code-generator-business","qr-code-reader","barcode-generator","barcode-reader","whatsapp-link-generator"].includes(t.id))}
 			guideTitle="QR Code Quality Checklist"
 			guidePoints={[
 				"Use a mobile-friendly destination page before printing any QR code.",

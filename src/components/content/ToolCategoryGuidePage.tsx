@@ -24,21 +24,21 @@ function getCategoryDescriptionJSX(slug: string, originalDesc: string) {
 	if (slug === "pdf") {
 		return (
 			<>
-				Manage documents directly in your browser with our <Link href="/merge-pdf-files-online/" className="text-primary hover:underline font-semibold">PDF Merger</Link>, <Link href="/compress-pdf-to-100kb/" className="text-primary hover:underline font-semibold">PDF Compressor</Link>, and <Link href="/pdf-to-jpg-converter-free/" className="text-primary hover:underline font-semibold">PDF to JPG Converter</Link>.
+				Manage documents directly in your browser with our <Link href="/merge-pdf-online/" className="text-primary hover:underline font-semibold">PDF Merger</Link>, <Link href="/pdf-compressor-under-200kb/" className="text-primary hover:underline font-semibold">PDF Compressor</Link>, and <Link href="/pdf-to-jpg-converter/" className="text-primary hover:underline font-semibold">PDF to JPG Converter</Link>.
 			</>
 		);
 	}
 	if (slug === "seo") {
 		return (
 			<>
-				Optimize your search visibility and indexation with our <Link href="/robots-txt-generator/" className="text-primary hover:underline font-semibold">Robots.txt Generator</Link>, <Link href="/sitemap-xml-generator/" className="text-primary hover:underline font-semibold">Sitemap XML Generator</Link>, and <Link href="/meta-tags-checker/" className="text-primary hover:underline font-semibold">Meta Tags Checker</Link>.
+				Optimize your search visibility and indexation with our <Link href="/robots-txt-sitemap-generator/" className="text-primary hover:underline font-semibold">Robots.txt Generator</Link>, <Link href="/sitemap-generator/" className="text-primary hover:underline font-semibold">Sitemap XML Generator</Link>, and <Link href="/meta-tag-generator/" className="text-primary hover:underline font-semibold">Meta Tags Checker</Link>.
 			</>
 		);
 	}
 	if (slug === "calculators") {
 		return (
 			<>
-				Perform math, school, and finance calculations using the <Link href="/gst-calculator/" className="text-primary hover:underline font-semibold">GST Calculator</Link>, <Link href="/grade-calculator/" className="text-primary hover:underline font-semibold">Grade Calculator</Link>, and <Link href="/weighted-gpa-calculator/" className="text-primary hover:underline font-semibold">Weighted GPA Calculator</Link>.
+				Perform math, school, and finance calculations using the <Link href="/gst-calculator/" className="text-primary hover:underline font-semibold">GST Calculator</Link>, <Link href="/sgpa-calculator/" className="text-primary hover:underline font-semibold">Grade Calculator</Link>, and <Link href="/cgpa-calculator/" className="text-primary hover:underline font-semibold">Weighted GPA Calculator</Link>.
 			</>
 		);
 	}
@@ -52,7 +52,7 @@ function getCategoryDescriptionJSX(slug: string, originalDesc: string) {
 	if (slug === "text") {
 		return (
 			<>
-				Analyze, edit, and clean word documents and scripts using the <Link href="/character-counter-online-free/" className="text-primary hover:underline font-semibold">Character Counter</Link>, <Link href="/remove-duplicate-lines-online/" className="text-primary hover:underline font-semibold">Duplicate Line Remover</Link>, and <Link href="/word-count-analyzer-online/" className="text-primary hover:underline font-semibold">Word Count Analyzer</Link>.
+				Analyze, edit, and clean word documents and scripts using the <Link href="/word-counter/" className="text-primary hover:underline font-semibold">Character Counter</Link>, <Link href="/remove-duplicate-lines/" className="text-primary hover:underline font-semibold">Duplicate Line Remover</Link>, and <Link href="/word-counter/" className="text-primary hover:underline font-semibold">Word Count Analyzer</Link>.
 			</>
 		);
 	}
@@ -129,15 +129,6 @@ export default function ToolCategoryGuidePage({ category, relatedCategories }: T
 								<p className="mt-3 text-sm text-muted-foreground line-clamp-3">
 									{tool.description}
 								</p>
-								{tool.extraSlugs?.length ? (
-									<div className="mt-4 flex flex-wrap gap-2">
-										{tool.extraSlugs.slice(0, 4).map((slug) => (
-											<span key={slug} className="rounded-full border border-border/50 px-2 py-1 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-											{slug.replace(/-/g, " ")}
-										</span>
-										))}
-									</div>
-								) : null}
 							</Link>
 						))}
 					</div>

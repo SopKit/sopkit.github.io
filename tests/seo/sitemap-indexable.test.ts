@@ -53,6 +53,10 @@ describe("Route sitemap lists only indexable URLs", () => {
       (entry) => entry.url.replace("https://sopkit.space", "") || "/",
     );
     expect(new Set(urls).size).toBe(urls.length);
-    expect(urls.length).toBeGreaterThan(700);
+    // The bulk guard used to sit at 700 while 133 standalone "SEO
+    // opportunity" doorway pages were listed. Those were retired (see
+    // src/seo/redirects/opportunities.json), which took the route sitemap
+    // to roughly 570 URLs; the floor only needs to catch an emptied map.
+    expect(urls.length).toBeGreaterThan(500);
   });
 });

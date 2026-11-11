@@ -3,13 +3,11 @@ import toolArticles from "@/data/tool-articles.json";
 import toolFeatures from "@/data/tool-features.json";
 import toolFaqs from "@/data/tool-faqs.json";
 import toolHowtos from "@/data/tool-howtos.json";
-import toolExtraslugs from "@/data/tool-extraslugs.json";
 
 const articlesMap = toolArticles as Record<string, string>;
 const featuresMap = toolFeatures as Record<string, string[]>;
 const faqsMap = toolFaqs as Record<string, { question: string; answer: string }[]>;
 const howtosMap = toolHowtos as Record<string, any>;
-const extraslugsMap = toolExtraslugs as Record<string, string[]>;
 
 export { STATIC_ROUTES } from "@/constants/routes";
 
@@ -25,6 +23,9 @@ export interface Tool {
 	category: string;
 	slug?: string;
 	path?: string;
+	// Kept only because several content pages still pass `extraSlugs: []`
+	// literals. Nothing reads it any more: the keyword-permutation alias
+	// pages that used to be generated from it were removed as doorway pages.
 	extraSlugs?: string[];
 	popular?: boolean;
 	seoTitle?: string;
@@ -78,7 +79,6 @@ function enrichTool(tool: Tool): Tool {
 		features: featuresMap[tool.id] || tool.features,
 		faqs: faqsMap[tool.id] || tool.faqs,
 		howTo: howtosMap[tool.id] || tool.howTo,
-		extraSlugs: extraslugsMap[tool.id] || tool.extraSlugs,
 	};
 }
 
@@ -118,10 +118,6 @@ export function getToolByRoute(route: string): Tool | undefined {
 
 export function getToolById(id: string): Tool | undefined {
 	return getAllTools().find((t) => t.id === id);
-}
-
-export function getToolByExtraSlug(slug: string): Tool | undefined {
-	return getAllTools().find((t) => t.extraSlugs?.includes(slug));
 }
 
 export function getAllCategories(): Category[] {

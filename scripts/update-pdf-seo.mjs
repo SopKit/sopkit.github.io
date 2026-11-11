@@ -18,22 +18,8 @@ const updatePdfTools = () => {
 			// Update seoDescription to focus on privacy-friendly, 100% client-side, fast, free forever
 			const baseName = tool.name;
 			tool.seoDescription = `Privacy-friendly, 100% client-side ${baseName} online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.`;
-			
-			// Build long-tail privacy-centric extra slugs
-			const baseSlug = tool.id;
-			const newSlugs = [
-				`${baseSlug}-no-upload`,
-				`privacy-friendly-${baseSlug}`,
-				`client-side-${baseSlug}-free`,
-				`local-${baseSlug}-offline`
-			];
-			
-			if (!tool.extraSlugs) {
-				tool.extraSlugs = [];
-			}
-			
-			// Deduplicate and merge
-			tool.extraSlugs = Array.from(new Set([...tool.extraSlugs, ...newSlugs]));
+			// Keyword-permutation extraSlugs are no longer generated here: the
+			// alias pages they fed were doorway pages and have been removed.
 			updatedCount++;
 		});
 	}

@@ -15,7 +15,7 @@ export default function StudentCalculatorsHub() {
 			title="Student Calculators"
 			description="Practical calculators for attendance shortage, grade planning, CGPA conversion, and final exam marks. Useful for college and engineering students."
 			route="/student-calculators"
-			tools={getAllTools().filter(t => ["gpa-to-4-scale-converter","cgpa-to-percentage-calculator","cgpa-calculator","sgpa-calculator","percentage-calculator","marks-needed-calculator","attendance-shortage-calculator","75-attendance-calculator"].includes(t.id))}
+			tools={getAllTools().filter(t => ["gpa-to-4-scale-converter","cgpa-to-percentage-calculator","cgpa-calculator","sgpa-calculator","percentage-calculator","required-marks-calculator","attendance-shortage-calculator","75-attendance-calculator"].includes(t.id))}
 			badge="Student Calculators"
 			guideTitle="How to Plan Your Semester"
 			guidePoints={[

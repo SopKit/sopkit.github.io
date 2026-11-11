@@ -69,7 +69,7 @@ export default async function ToolPage() {
 						and <Link href="/png-to-ico-converter" className="text-primary underline">PNG to ICO conversion</Link>{" "}
 						produce the exact formats browsers and Windows shortcuts expect.
 						For broader app-icon work, the{" "}
-						<Link href="/icon-generator" className="text-primary underline">icon generator</Link>{" "}
+						<Link href="/favicon-generator" className="text-primary underline">icon generator</Link>{" "}
 						outputs consistent sizes from one source image. Total time from
 						idea to shipped file: under a minute, with nothing uploaded.
 					</p>

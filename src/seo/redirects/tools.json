@@ -1,0 +1,187 @@
+[
+  {
+    "from": "/gst-calculator-india",
+    "to": "/gst-calculator",
+    "reason": "duplicate of /gst-calculator (same component)"
+  },
+  {
+    "from": "/cgpa-to-percentage-calculator-india",
+    "to": "/cgpa-to-percentage-calculator",
+    "reason": "duplicate of /cgpa-to-percentage-calculator (same component)"
+  },
+  {
+    "from": "/marks-needed-calculator",
+    "to": "/required-marks-calculator",
+    "reason": "duplicate of /required-marks-calculator (same component)"
+  },
+  {
+    "from": "/freelance-rate-calculator",
+    "to": "/freelance-hourly-rate-calculator",
+    "reason": "duplicate of /freelance-hourly-rate-calculator (same component)"
+  },
+  {
+    "from": "/passport-photo-maker-india",
+    "to": "/passport-photo-maker",
+    "reason": "duplicate of /passport-photo-maker (same component)"
+  },
+  {
+    "from": "/youtube-video-downloader",
+    "to": "/youtube-downloader",
+    "reason": "duplicate of /youtube-downloader (same component)"
+  },
+  {
+    "from": "/downloaders",
+    "to": "/all-downloaders",
+    "reason": "duplicate of /all-downloaders (same component)"
+  },
+  {
+    "from": "/save-fb-stories-anonymous",
+    "to": "/facebook-story-downloader",
+    "reason": "duplicate of /facebook-story-downloader (same component)"
+  },
+  {
+    "from": "/fb-video-saver",
+    "to": "/facebook-video-downloader",
+    "reason": "duplicate of /facebook-video-downloader (same component)"
+  },
+  {
+    "from": "/fb-clip-downloader",
+    "to": "/facebook-video-downloader",
+    "reason": "duplicate of /facebook-video-downloader (same component)"
+  },
+  {
+    "from": "/free-mp3-extractor",
+    "to": "/mp3-from-tiktok",
+    "reason": "duplicate of /mp3-from-tiktok (same component)"
+  },
+  {
+    "from": "/ig-highlights-saver",
+    "to": "/instagram-story-downloader",
+    "reason": "duplicate of /instagram-story-downloader (same component)"
+  },
+  {
+    "from": "/insta-reels-saver",
+    "to": "/instagram-reel-downloader",
+    "reason": "duplicate of /instagram-reel-downloader (same component)"
+  },
+  {
+    "from": "/save-instagram-clips",
+    "to": "/instagram-reel-downloader",
+    "reason": "duplicate of /instagram-reel-downloader (same component)"
+  },
+  {
+    "from": "/save-reels-video",
+    "to": "/instagram-reel-downloader",
+    "reason": "duplicate of /instagram-reel-downloader (same component)"
+  },
+  {
+    "from": "/ig-reels-downloader-hd",
+    "to": "/instagram-reel-downloader",
+    "reason": "duplicate of /instagram-reel-downloader (same component)"
+  },
+  {
+    "from": "/instagram-videos-downloader",
+    "to": "/instagram-downloader",
+    "reason": "duplicate of /instagram-downloader (same component)"
+  },
+  {
+    "from": "/save-ig-content",
+    "to": "/instagram-downloader",
+    "reason": "duplicate of /instagram-downloader (same component)"
+  },
+  {
+    "from": "/save-insta-pfp",
+    "to": "/instagram-image-downloader",
+    "reason": "duplicate of /instagram-image-downloader (same component)"
+  },
+  {
+    "from": "/modify-mp3-file",
+    "to": "/mp4-to-mp3",
+    "reason": "duplicate of /mp4-to-mp3 (same component)"
+  },
+  {
+    "from": "/shrink-mp3-size",
+    "to": "/mp4-to-mp3",
+    "reason": "duplicate of /mp4-to-mp3 (same component)"
+  },
+  {
+    "from": "/pinterest-clip-saver",
+    "to": "/pinterest-video-downloader",
+    "reason": "duplicate of /pinterest-video-downloader (same component)"
+  },
+  {
+    "from": "/pinterest-gif-downloader",
+    "to": "/pinterest-video-downloader",
+    "reason": "duplicate of /pinterest-video-downloader (same component)"
+  },
+  {
+    "from": "/reddit-media-saver",
+    "to": "/reddit-downloader",
+    "reason": "duplicate of /reddit-downloader (same component)"
+  },
+  {
+    "from": "/reddit-video-downloader",
+    "to": "/reddit-downloader",
+    "reason": "duplicate of /reddit-downloader (same component)"
+  },
+  {
+    "from": "/save-snaps-to-gallery",
+    "to": "/snapchat-video-downloader",
+    "reason": "duplicate of /snapchat-video-downloader (same component)"
+  },
+  {
+    "from": "/snapchat-saver-online",
+    "to": "/snapchat-video-downloader",
+    "reason": "duplicate of /snapchat-video-downloader (same component)"
+  },
+  {
+    "from": "/save-tiktok-mp4",
+    "to": "/tiktok-downloader",
+    "reason": "duplicate of /tiktok-downloader (same component)"
+  },
+  {
+    "from": "/tiktok-saver-no-watermark",
+    "to": "/tiktok-downloader",
+    "reason": "duplicate of /tiktok-downloader (same component)"
+  },
+  {
+    "from": "/tiktok-videos-downloader",
+    "to": "/tiktok-downloader",
+    "reason": "duplicate of /tiktok-downloader (same component)"
+  },
+  {
+    "from": "/save-twitter-videos",
+    "to": "/twitter-video-downloader",
+    "reason": "duplicate of /twitter-video-downloader (same component)"
+  },
+  {
+    "from": "/base64-encode",
+    "to": "/base64-tool",
+    "reason": "duplicate of /base64-tool (same component)"
+  },
+  {
+    "from": "/qr-code-decoder",
+    "to": "/qr-code-reader",
+    "reason": "duplicate of /qr-code-reader (same component)"
+  },
+  {
+    "from": "/icon-generator",
+    "to": "/favicon-generator",
+    "reason": "duplicate of /favicon-generator (same component)"
+  },
+  {
+    "from": "/resize-image-cm-mm-inch",
+    "to": "/resize-image-in-cm",
+    "reason": "duplicate of /resize-image-in-cm (same component)"
+  },
+  {
+    "from": "/text-sorter",
+    "to": "/line-sorter",
+    "reason": "duplicate of /line-sorter (same component)"
+  },
+  {
+    "from": "/ai-poem-generator",
+    "to": "/poetry-generator",
+    "reason": "duplicate of /poetry-generator (same component)"
+  }
+]

@@ -1,4 +1,4 @@
-import { getAllTools, getToolByExtraSlug, type Tool } from "@/lib/tools";
+import { getAllTools, type Tool } from "@/lib/tools";
 import {
 	getSeoOpportunityBySlug,
 	type SeoOpportunity,
@@ -26,15 +26,16 @@ export function categoryKeyForOpportunity(opportunity: SeoOpportunity) {
 //    the opportunity's parentToolRoute or one of its relatedSlugs turned
 //    into a route, or when its id is one of the relatedSlugs. This step
 //    is unchanged, in registry order, so no existing card moves or drops.
-// 2. ExtraSlug tools: a relatedSlug that is a tool's extraSlug (e.g.
-//    "passport-photo-resizer-india" for passport-photo-maker) previously
-//    matched nothing and was silently dropped. The tool card now appears.
-// 3. Sibling opportunity pages: a relatedSlug naming another opportunity
-//    (e.g. "claude-api-key-tester" from a validator page) previously
+// 2. Sibling opportunity pages: a relatedSlug naming another opportunity
+//    (e.g. "upsc-signature-resizer" from the SSC signature page) previously
 //    matched nothing and was silently dropped. It now appears as a card
 //    built from the sibling's own h1/intro/route — the same fields the
 //    synthetic page tool uses — so the card links to a real page with
 //    honest copy, not an invented tool.
+//
+// Tool extraSlugs are no longer a resolution step: the alias system they
+// belonged to was removed, so a relatedSlug must name a tool id, a tool
+// route, or a sibling opportunity slug.
 //
 // A relatedSlug that matches both a tool and an opportunity keeps the tool
 // card (dedup by id, then by route); a slug naming the page itself is
@@ -55,15 +56,6 @@ export function relatedToolsForOpportunity(
 	);
 	const seenIds = new Set(matched.map((tool) => tool.id));
 	const seenRoutes = new Set(matched.map((tool) => tool.route));
-
-	for (const slug of opportunity.relatedSlugs) {
-		const extraTool = getToolByExtraSlug(slug);
-		if (extraTool && !seenIds.has(extraTool.id)) {
-			matched.push(extraTool);
-			seenIds.add(extraTool.id);
-			seenRoutes.add(extraTool.route);
-		}
-	}
 
 	for (const slug of opportunity.relatedSlugs) {
 		if (slug === opportunity.slug) continue;

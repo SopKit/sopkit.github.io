@@ -30,9 +30,9 @@ assert(adPlacement.includes('RISKY_CATEGORIES'), 'AdPlacement contains risky cat
 const layout = fs.readFileSync(path.join(rootDir, 'src/app/layout.tsx'), 'utf8');
 assert(layout.includes('ca-pub-1828915420581549'), 'layout.tsx contains publisher ID');
 
-// 4. Check sitemap excludes extraSlugs
+// 4. Check sitemap no longer references the retired extraSlugs alias system
 const sitemap = fs.readFileSync(path.join(rootDir, 'src/app/sitemap.ts'), 'utf8');
-assert(sitemap.includes('extraSlugsSet.has'), 'Sitemap excludes extraSlugs');
+assert(!sitemap.includes('extraSlugs'), 'Sitemap has no extraSlugs references');
 
 // 5. Check next.config.mjs redirects
 const nextConfig = fs.readFileSync(path.join(rootDir, 'next.config.mjs'), 'utf8');

@@ -28,6 +28,14 @@
   Cross-Origin-Resource-Policy: cross-origin
 
 # ---------------------------------------------------------------------------
+# Markdown companions of tool pages: machine-readable, never indexed as a
+# duplicate of the canonical HTML page. The route is a static export, so the
+# header has to be set here rather than in the route handler.
+# ---------------------------------------------------------------------------
+/tool-markdown/*
+  X-Robots-Tag: noindex
+
+# ---------------------------------------------------------------------------
 # Next.js static assets (hashed filenames = immutable)
 # ---------------------------------------------------------------------------
 /_next/static/*

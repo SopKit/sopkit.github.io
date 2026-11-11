@@ -52,7 +52,7 @@ const EMBEDDABLE_TOOLS: EmbeddableTool[] = [
 	{ id: "rgb-to-hex-converter", name: "RGB to HEX Converter", description: "Translate RGB color values into HEX codes for CSS and design work." },
 	{ id: "color-converter", name: "Color Converter", description: "Transform color codes between HEX, RGB, HSL, and CMYK formats." },
 	{ id: "markdown-to-html", name: "Markdown to HTML Converter", description: "Turn Markdown into clean HTML markup for blogs, docs, and newsletters." },
-	{ id: "base64-encode", name: "Base64 Encode", description: "Encode plain text into Base64 strings for tokens, data URIs, and APIs." },
+	{ id: "base64-tool", name: "Base64 Encoder / Decoder", description: "Encode plain text into Base64 strings for tokens, data URIs, and APIs." },
 ];
 
 function buildSnippet(toolId: string, theme: string = "light"): string {

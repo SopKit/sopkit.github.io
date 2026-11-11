@@ -83,20 +83,6 @@
       "answer": "Yes. All name generation happens client-side. Your keywords and generated names are never saved or sent to any server."
     }
   ],
-  "ai-poem-generator": [
-    {
-      "question": "What customization options does AI Poem Generator offer?",
-      "answer": "AI Poem Generator provides flexible controls allowing you to customize output parameters, formatting options, and visual styles to fit your requirements."
-    },
-    {
-      "question": "Is AI Poem Generator private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Can I use the outputs from AI Poem Generator for commercial projects?",
-      "answer": "Yes. Any files, text, images, or documents generated with AI Poem Generator are yours to use freely for both personal and commercial projects without restrictions."
-    }
-  ],
   "fake-chat-generator": [
     {
       "question": "What customization options does Fake Chat Generator offer?",
@@ -587,34 +573,6 @@
       "answer": "Yes. Compress Image to Exact KB is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
-  "resize-image-cm-mm-inch": [
-    {
-      "question": "What is the primary use case for Resize Image in CM, MM, Inches?",
-      "answer": "Resize Image in CM, MM, Inches is designed to streamline resize photos by centimeters, millimeters, inches, pixels, and dpi for official forms, printing, and documents quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Are my files or images uploaded to a remote server?",
-      "answer": "No. All file processing for Resize Image in CM, MM, Inches takes place 100% locally in your web browser using HTML5 and JavaScript APIs. Your files never leave your computer."
-    },
-    {
-      "question": "Does Resize Image in CM, MM, Inches work on mobile devices?",
-      "answer": "Yes. Resize Image in CM, MM, Inches is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "passport-photo-maker-india": [
-    {
-      "question": "What is the primary use case for Passport Photo Maker India?",
-      "answer": "Passport Photo Maker India is designed to streamline create passport-size photos for indian forms with crop, background, size, and print layout options online for free quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Are my files or images uploaded to a remote server?",
-      "answer": "No. All file processing for Passport Photo Maker India takes place 100% locally in your web browser using HTML5 and JavaScript APIs. Your files never leave your computer."
-    },
-    {
-      "question": "Can I use the outputs from Passport Photo Maker India for commercial projects?",
-      "answer": "Yes. Any files, text, images, or documents generated with Passport Photo Maker India are yours to use freely for both personal and commercial projects without restrictions."
-    }
-  ],
   "aadhaar-pan-photo-resizer": [
     {
       "question": "What are the standard Aadhaar photo dimensions?",
@@ -1019,20 +977,6 @@
     {
       "question": "Does Free Image Tools work on mobile devices?",
       "answer": "Yes. Free Image Tools is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "icon-generator": [
-    {
-      "question": "What customization options does Icon Generator offer?",
-      "answer": "Icon Generator provides flexible controls allowing you to customize output parameters, formatting options, and visual styles to fit your requirements."
-    },
-    {
-      "question": "Are my files or images uploaded to a remote server?",
-      "answer": "No. All file processing for Icon Generator takes place 100% locally in your web browser using HTML5 and JavaScript APIs. Your files never leave your computer."
-    },
-    {
-      "question": "Can I use the outputs from Icon Generator for commercial projects?",
-      "answer": "Yes. Any files, text, images, or documents generated with Icon Generator are yours to use freely for both personal and commercial projects without restrictions."
     }
   ],
   "image-editor": [
@@ -1523,20 +1467,6 @@
     {
       "question": "Does Text Repeater work on mobile devices?",
       "answer": "Yes. Text Repeater is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "text-sorter": [
-    {
-      "question": "What is the primary use case for Text Sorter?",
-      "answer": "Text Sorter is designed to streamline organize your lists and text lines with our free online text sorter. sort alphabetically, by length, or reverse order instantly. privacy-focused tool for researchers and developers quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Text Sorter private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Text Sorter work on mobile devices?",
-      "answer": "Yes. Text Sorter is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "text-to-hashtags-converter": [
@@ -2225,20 +2155,6 @@
       "answer": "Yes. Douyin Video Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
-  "downloaders": [
-    {
-      "question": "What formats or qualities can I download using Downloaders?",
-      "answer": "Downloaders detects publicly accessible media streams and allows you to save high-quality files directly to your device."
-    },
-    {
-      "question": "Is Downloaders private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Downloaders work on mobile devices?",
-      "answer": "Yes. Downloaders is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
   "espn-video-downloader": [
     {
       "question": "What formats or qualities can I download using Espn Video Downloader?",
@@ -2279,20 +2195,6 @@
     {
       "question": "Does Facebook Video Downloader work on mobile devices?",
       "answer": "Yes. Facebook Video Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "fb-video-saver": [
-    {
-      "question": "What is the primary use case for Facebook Video Saver?",
-      "answer": "Facebook Video Saver is designed to streamline free, high-speed online downloader to save and download media content from platforms using the facebook video saver. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Facebook Video Saver private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Facebook Video Saver work on mobile devices?",
-      "answer": "Yes. Facebook Video Saver is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "febspot-video-downloader": [
@@ -2337,20 +2239,6 @@
       "answer": "Yes. Ifunny Video Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
-  "ig-highlights-saver": [
-    {
-      "question": "What is the primary use case for Instagram Highlights Saver?",
-      "answer": "Instagram Highlights Saver is designed to streamline free, high-speed online downloader to save and download media content from platforms using the instagram highlights saver. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Instagram Highlights Saver private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Instagram Highlights Saver work on mobile devices?",
-      "answer": "Yes. Instagram Highlights Saver is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
   "imdb-video-downloader": [
     {
       "question": "What formats or qualities can I download using Imdb Video Downloader?",
@@ -2377,20 +2265,6 @@
     {
       "question": "Does Imgur Video Downloader work on mobile devices?",
       "answer": "Yes. Imgur Video Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "insta-reels-saver": [
-    {
-      "question": "What is the primary use case for Insta Reels Saver?",
-      "answer": "Insta Reels Saver is designed to streamline free, high-speed online downloader to save and download media content from platforms using the insta reels saver. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Insta Reels Saver private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Insta Reels Saver work on mobile devices?",
-      "answer": "Yes. Insta Reels Saver is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "instagram-downloader": [
@@ -2447,20 +2321,6 @@
     {
       "question": "Does Instagram Story Downloader work on mobile devices?",
       "answer": "Yes. Instagram Story Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "instagram-videos-downloader": [
-    {
-      "question": "What formats or qualities can I download using Instagram Videos Downloader?",
-      "answer": "Instagram Videos Downloader detects publicly accessible media streams and allows you to save high-quality files directly to your device."
-    },
-    {
-      "question": "Is Instagram Videos Downloader private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Instagram Videos Downloader work on mobile devices?",
-      "answer": "Yes. Instagram Videos Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "izlesene-video-downloader": [
@@ -2645,34 +2505,6 @@
       "answer": "Yes. Periscope Video Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
-  "pinterest-clip-saver": [
-    {
-      "question": "What is the primary use case for Pinterest Clip Saver?",
-      "answer": "Pinterest Clip Saver is designed to streamline free, high-speed online downloader to save and download media content from platforms using the pinterest clip saver. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Pinterest Clip Saver private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Pinterest Clip Saver work on mobile devices?",
-      "answer": "Yes. Pinterest Clip Saver is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "pinterest-gif-downloader": [
-    {
-      "question": "What formats or qualities can I download using Pinterest Gif Downloader?",
-      "answer": "Pinterest Gif Downloader detects publicly accessible media streams and allows you to save high-quality files directly to your device."
-    },
-    {
-      "question": "Is Pinterest Gif Downloader private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Pinterest Gif Downloader work on mobile devices?",
-      "answer": "Yes. Pinterest Gif Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
   "pinterest-image-downloader": [
     {
       "question": "What formats or qualities can I download using Pinterest Image Downloader?",
@@ -2729,34 +2561,6 @@
       "answer": "Yes. Reddit Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
-  "reddit-media-saver": [
-    {
-      "question": "What is the primary use case for Reddit Media Saver?",
-      "answer": "Reddit Media Saver is designed to streamline free, high-speed online downloader to save and download media content from platforms using the reddit media saver. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Reddit Media Saver private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Reddit Media Saver work on mobile devices?",
-      "answer": "Yes. Reddit Media Saver is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "reddit-video-downloader": [
-    {
-      "question": "What formats or qualities can I download using Reddit Video Downloader?",
-      "answer": "Reddit Video Downloader detects publicly accessible media streams and allows you to save high-quality files directly to your device."
-    },
-    {
-      "question": "Is Reddit Video Downloader private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Reddit Video Downloader work on mobile devices?",
-      "answer": "Yes. Reddit Video Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
   "rumble-video-downloader": [
     {
       "question": "What formats or qualities can I download using Rumble Video Downloader?",
@@ -2771,118 +2575,6 @@
       "answer": "Yes. Rumble Video Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
-  "save-fb-stories-anonymous": [
-    {
-      "question": "What is the primary use case for Save Facebook Stories Anonymous?",
-      "answer": "Save Facebook Stories Anonymous is designed to streamline free, high-speed online downloader to save and download media content from platforms using the save facebook stories anonymous. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Save Facebook Stories Anonymous private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Save Facebook Stories Anonymous work on mobile devices?",
-      "answer": "Yes. Save Facebook Stories Anonymous is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "save-ig-content": [
-    {
-      "question": "What is the primary use case for Save Instagram Content?",
-      "answer": "Save Instagram Content is designed to streamline free, high-speed online downloader to save and download media content from platforms using the save instagram content. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Save Instagram Content private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Save Instagram Content work on mobile devices?",
-      "answer": "Yes. Save Instagram Content is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "save-insta-pfp": [
-    {
-      "question": "What is the primary use case for Save Insta Profile Picture?",
-      "answer": "Save Insta Profile Picture is designed to streamline free, high-speed online downloader to save and download media content from platforms using the save insta profile picture. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Save Insta Profile Picture private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Save Insta Profile Picture work on mobile devices?",
-      "answer": "Yes. Save Insta Profile Picture is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "save-instagram-clips": [
-    {
-      "question": "What is the primary use case for Save Instagram Clips?",
-      "answer": "Save Instagram Clips is designed to streamline free, high-speed online downloader to save and download media content from platforms using the save instagram clips. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Save Instagram Clips private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Save Instagram Clips work on mobile devices?",
-      "answer": "Yes. Save Instagram Clips is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "save-reels-video": [
-    {
-      "question": "What is the primary use case for Save Reels Video?",
-      "answer": "Save Reels Video is designed to streamline free, high-speed online downloader to save and download media content from platforms using the save reels video. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Save Reels Video private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Save Reels Video work on mobile devices?",
-      "answer": "Yes. Save Reels Video is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "save-snaps-to-gallery": [
-    {
-      "question": "How does the Save Snaps To Gallery process conversion?",
-      "answer": "The tool parses your Save Snaps input directly within your browser session and reconstructs it into Gallery format without altering the core content or data integrity."
-    },
-    {
-      "question": "Is Save Snaps To Gallery private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Save Snaps To Gallery work on mobile devices?",
-      "answer": "Yes. Save Snaps To Gallery is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "save-tiktok-mp4": [
-    {
-      "question": "What is the primary use case for Save Tiktok MP4?",
-      "answer": "Save Tiktok MP4 is designed to streamline free, high-speed online downloader to save and download media content from platforms using the save tiktok mp4. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Save Tiktok MP4 private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Save Tiktok MP4 work on mobile devices?",
-      "answer": "Yes. Save Tiktok MP4 is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "save-twitter-videos": [
-    {
-      "question": "What is the primary use case for Save Twitter Videos?",
-      "answer": "Save Twitter Videos is designed to streamline free, high-speed online downloader to save and download media content from platforms using the save twitter videos. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Save Twitter Videos private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Save Twitter Videos work on mobile devices?",
-      "answer": "Yes. Save Twitter Videos is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
   "sharechat-video-downloader": [
     {
       "question": "What formats or qualities can I download using Sharechat Video Downloader?",
@@ -2895,20 +2587,6 @@
     {
       "question": "Does Sharechat Video Downloader work on mobile devices?",
       "answer": "Yes. Sharechat Video Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "snapchat-saver-online": [
-    {
-      "question": "What is the primary use case for Snapchat Saver?",
-      "answer": "Snapchat Saver is designed to streamline free, high-speed online downloader to save and download media content from platforms using the snapchat saver online. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Snapchat Saver private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Snapchat Saver work on mobile devices?",
-      "answer": "Yes. Snapchat Saver is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "snapchat-video-downloader": [
@@ -2993,34 +2671,6 @@
     {
       "question": "Does Tiktok Downloader work on mobile devices?",
       "answer": "Yes. Tiktok Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "tiktok-saver-no-watermark": [
-    {
-      "question": "What is the primary use case for Tiktok Saver No Watermark?",
-      "answer": "Tiktok Saver No Watermark is designed to streamline free, high-speed online downloader to save and download media content from platforms using the tiktok saver no watermark. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Tiktok Saver No Watermark private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Tiktok Saver No Watermark work on mobile devices?",
-      "answer": "Yes. Tiktok Saver No Watermark is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "tiktok-videos-downloader": [
-    {
-      "question": "What formats or qualities can I download using Tiktok Videos Downloader?",
-      "answer": "Tiktok Videos Downloader detects publicly accessible media streams and allows you to save high-quality files directly to your device."
-    },
-    {
-      "question": "Is Tiktok Videos Downloader private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Tiktok Videos Downloader work on mobile devices?",
-      "answer": "Yes. Tiktok Videos Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "tumblr-video-downloader": [
@@ -3471,20 +3121,6 @@
       "answer": "Yes. Youtube Thumbnail Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
-  "youtube-video-downloader": [
-    {
-      "question": "What formats or qualities can I download using Youtube Video Downloader?",
-      "answer": "Youtube Video Downloader detects publicly accessible media streams and allows you to save high-quality files directly to your device."
-    },
-    {
-      "question": "Is Youtube Video Downloader private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Youtube Video Downloader work on mobile devices?",
-      "answer": "Yes. Youtube Video Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
   "text-to-speech": [
     {
       "question": "How does the text to speech tool work?",
@@ -3527,20 +3163,6 @@
       "answer": "Yes. Guitar Tuner is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
-  "free-mp3-extractor": [
-    {
-      "question": "What is the primary use case for Free MP3 Extractor?",
-      "answer": "Free MP3 Extractor is designed to streamline free, high-speed online downloader to save and download media content from platforms using the free mp3 extractor. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Free MP3 Extractor private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Free MP3 Extractor work on mobile devices?",
-      "answer": "Yes. Free MP3 Extractor is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
   "gaana-video-downloader": [
     {
       "question": "What formats or qualities can I download using Gaana Video Downloader?",
@@ -3553,20 +3175,6 @@
     {
       "question": "Does Gaana Video Downloader work on mobile devices?",
       "answer": "Yes. Gaana Video Downloader is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "modify-mp3-file": [
-    {
-      "question": "What is the primary use case for Modify MP3 File?",
-      "answer": "Modify MP3 File is designed to streamline free, high-speed online downloader to save and download media content from platforms using the modify mp3 file. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Modify MP3 File private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Modify MP3 File work on mobile devices?",
-      "answer": "Yes. Modify MP3 File is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "mp3-from-tiktok": [
@@ -3595,20 +3203,6 @@
     {
       "question": "Does MP4 To MP3 work on mobile devices?",
       "answer": "Yes. MP4 To MP3 is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "shrink-mp3-size": [
-    {
-      "question": "What is the primary use case for Shrink MP3 Size?",
-      "answer": "Shrink MP3 Size is designed to streamline free, high-speed online downloader to save and download media content from platforms using the shrink mp3 size. no registration, 100% secure client-side browser processing quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is Shrink MP3 Size private and secure to use?",
-      "answer": "Yes. SopKit operates on a client-side execution model. Your inputs remain strictly private inside your browser session with zero server uploads or tracking."
-    },
-    {
-      "question": "Does Shrink MP3 Size work on mobile devices?",
-      "answer": "Yes. Shrink MP3 Size is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "soundcloud-video-downloader": [
@@ -5207,20 +4801,6 @@
       "answer": "Yes. Base64 Decode is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
-  "base64-encode": [
-    {
-      "question": "What is the primary use case for Base64 Encode?",
-      "answer": "Base64 Encode is designed to streamline encode plain text into base64 format instantly. our free online tool is perfect for developers, data transmission, and secure character representation in web urls quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is it safe to process confidential code or data with Base64 Encode?",
-      "answer": "Yes. All parsing, encoding, and formatting occurs entirely client-side. No sensitive payloads, passwords, or code snippets are ever transmitted across the network."
-    },
-    {
-      "question": "Does Base64 Encode work on mobile devices?",
-      "answer": "Yes. Base64 Encode is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
   "charge-converter": [
     {
       "question": "How does the Charge Converter process conversion?",
@@ -5877,20 +5457,6 @@
     {
       "question": "Does Probability Calculator work on mobile devices?",
       "answer": "Yes. Probability Calculator is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "qr-code-decoder": [
-    {
-      "question": "What is the primary use case for QR Code Decoder?",
-      "answer": "QR Code Decoder is designed to streamline free qr code decoder tool to process your data instantly with privacy-friendly browser-based workflows quickly and efficiently inside your browser."
-    },
-    {
-      "question": "Is it safe to process confidential code or data with QR Code Decoder?",
-      "answer": "Yes. All parsing, encoding, and formatting occurs entirely client-side. No sensitive payloads, passwords, or code snippets are ever transmitted across the network."
-    },
-    {
-      "question": "Does QR Code Decoder work on mobile devices?",
-      "answer": "Yes. QR Code Decoder is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "qr-code-generator": [
@@ -7097,20 +6663,6 @@
       "answer": "Yes. Any files, text, images, or documents generated with Invoice Generator India with GST are yours to use freely for both personal and commercial projects without restrictions."
     }
   ],
-  "gst-calculator-india": [
-    {
-      "question": "How are calculations performed in GST Calculator India?",
-      "answer": "GST Calculator India calculates results dynamically based on standard mathematical and financial formulas as soon as you enter or adjust your values."
-    },
-    {
-      "question": "Is my numerical or personal data stored when using GST Calculator India?",
-      "answer": "No data is recorded, saved, or transmitted to any server. All calculations happen instantly within your device's browser memory."
-    },
-    {
-      "question": "Does GST Calculator India work on mobile devices?",
-      "answer": "Yes. GST Calculator India is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
   "emi-calculator": [
     {
       "question": "How are calculations performed in EMI Calculator for Loans?",
@@ -7167,20 +6719,6 @@
       "answer": "Yes. Salary Calculator India (CTC to In-Hand) is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
-  "cgpa-to-percentage-calculator-india": [
-    {
-      "question": "How does the CGPA to Percentage Calculator for Indian Universities process conversion?",
-      "answer": "The tool parses your CGPA input directly within your browser session and reconstructs it into Percentage Calculator for Indian Universities format without altering the core content or data integrity."
-    },
-    {
-      "question": "Is my numerical or personal data stored when using CGPA to Percentage Calculator for Indian Universities?",
-      "answer": "No data is recorded, saved, or transmitted to any server. All calculations happen instantly within your device's browser memory."
-    },
-    {
-      "question": "Does CGPA to Percentage Calculator for Indian Universities work on mobile devices?",
-      "answer": "Yes. CGPA to Percentage Calculator for Indian Universities is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
   "sgpa-to-cgpa-calculator": [
     {
       "question": "How does the SGPA to CGPA Calculator process conversion?",
@@ -7207,20 +6745,6 @@
     {
       "question": "Does Attendance Shortage Calculator work on mobile devices?",
       "answer": "Yes. Attendance Shortage Calculator is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "marks-needed-calculator": [
-    {
-      "question": "How are calculations performed in Exam Marks Needed Calculator?",
-      "answer": "Exam Marks Needed Calculator calculates results dynamically based on standard mathematical and financial formulas as soon as you enter or adjust your values."
-    },
-    {
-      "question": "Is my numerical or personal data stored when using Exam Marks Needed Calculator?",
-      "answer": "No data is recorded, saved, or transmitted to any server. All calculations happen instantly within your device's browser memory."
-    },
-    {
-      "question": "Does Exam Marks Needed Calculator work on mobile devices?",
-      "answer": "Yes. Exam Marks Needed Calculator is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "75-attendance-calculator": [
@@ -7487,20 +7011,6 @@
     {
       "question": "Does Food Cost Calculator work on mobile devices?",
       "answer": "Yes. Food Cost Calculator is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
-    }
-  ],
-  "freelance-rate-calculator": [
-    {
-      "question": "How are calculations performed in Freelance Rate Calculator?",
-      "answer": "Freelance Rate Calculator calculates results dynamically based on standard mathematical and financial formulas as soon as you enter or adjust your values."
-    },
-    {
-      "question": "Is my numerical or personal data stored when using Freelance Rate Calculator?",
-      "answer": "No data is recorded, saved, or transmitted to any server. All calculations happen instantly within your device's browser memory."
-    },
-    {
-      "question": "Does Freelance Rate Calculator work on mobile devices?",
-      "answer": "Yes. Freelance Rate Calculator is fully responsive and compatible with all modern desktop and mobile browsers, including Chrome, Safari, Firefox, and Edge."
     }
   ],
   "rent-affordability-calculator": [

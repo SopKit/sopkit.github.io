@@ -181,7 +181,6 @@ export default async function ToolPage({ params }: any) {
 				"pptx-to-pdf-converter",
 				"quicktime-to-mp4",
 				"readme-to-html",
-				"save-snaps-to-gallery",
 				"text-fo-base64",
 				"tiktok-aspect-ratio-converter",
 				"tiktok-mp3-converter",

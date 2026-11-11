@@ -1,0 +1,642 @@
+[
+	{
+		"from": "/compress-signature-to-10kb",
+		"to": "/signature-resizer-under-20kb",
+		"reason": "Numeric KB permutation of the signature resizer; same tool with a different target value."
+	},
+	{
+		"from": "/how-many-classes-can-i-miss",
+		"to": "/75-attendance-calculator",
+		"reason": "Attendance synonym page rendering the same calculator as the parent."
+	},
+	{
+		"from": "/openai-api-key-tester",
+		"to": "/api-key-tester/openai",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/claude-api-key-tester",
+		"to": "/api-key-tester/anthropic",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/gemini-api-key-tester",
+		"to": "/api-key-tester/google-gemini",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/groq-api-key-tester",
+		"to": "/api-key-tester/groq",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/deepseek-api-key-tester",
+		"to": "/api-key-tester/deepseek",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/resend-api-key-tester",
+		"to": "/api-key-tester/resend",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/sendgrid-api-key-tester",
+		"to": "/api-key-tester/sendgrid",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/stripe-api-key-tester",
+		"to": "/api-key-tester/stripe",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/twilio-api-key-tester",
+		"to": "/api-key-tester/twilio",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/qr-code-for-restaurant-menu",
+		"to": "/qr-code-generator",
+		"reason": "Generic URL QR payload with no distinct payload type; same as the parent generator."
+	},
+	{
+		"from": "/qr-code-for-google-form",
+		"to": "/qr-code-generator",
+		"reason": "Generic URL QR payload with no distinct payload type; same as the parent generator."
+	},
+	{
+		"from": "/open-graph-preview-checker",
+		"to": "/open-graph-checker",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/meta-description-length-checker",
+		"to": "/meta-tag-generator",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/compress-image-to-15kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-25kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-40kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-150kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-300kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-500kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-1mb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-2mb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-5mb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-signature-to-20kb",
+		"to": "/signature-resizer-under-20kb",
+		"reason": "Numeric KB permutation of the signature resizer; same tool with a different target value."
+	},
+	{
+		"from": "/compress-signature-to-50kb",
+		"to": "/signature-resizer-under-20kb",
+		"reason": "Numeric KB permutation of the signature resizer; same tool with a different target value."
+	},
+	{
+		"from": "/gpa-to-percentage-calculator",
+		"to": "/sgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/percentage-to-gpa-calculator",
+		"to": "/sgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/attendance-percentage-calculator",
+		"to": "/75-attendance-calculator",
+		"reason": "Attendance synonym page rendering the same calculator as the parent."
+	},
+	{
+		"from": "/bunk-calculator",
+		"to": "/75-attendance-calculator",
+		"reason": "Attendance synonym page rendering the same calculator as the parent."
+	},
+	{
+		"from": "/grade-calculator",
+		"to": "/sgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/final-grade-calculator",
+		"to": "/sgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/high-school-gpa-calculator",
+		"to": "/sgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/college-gpa-calculator",
+		"to": "/sgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/cumulative-gpa-calculator",
+		"to": "/sgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/openai-api-key-validator",
+		"to": "/api-key-tester/openai",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/claude-api-key-validator",
+		"to": "/api-key-tester/anthropic",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/gemini-api-key-validator",
+		"to": "/api-key-tester/google-gemini",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/cohere-api-key-tester",
+		"to": "/api-key-tester/cohere",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/stability-ai-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/huggingface-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/mailgun-api-key-tester",
+		"to": "/api-key-tester/mailgun",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/postmark-api-key-tester",
+		"to": "/api-key-tester/postmark",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/meta-tags-checker",
+		"to": "/meta-tag-generator",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/open-graph-validator",
+		"to": "/open-graph-checker",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/twitter-card-validator",
+		"to": "/open-graph-checker",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/robots-txt-validator",
+		"to": "/robots-txt-sitemap-generator",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/sitemap-validator",
+		"to": "/sitemap-generator",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/website-speed-checker",
+		"to": "/meta-tag-generator",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/keyword-density-analyzer",
+		"to": "/keyword-density-checker",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/compress-image-to-60kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-70kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-80kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-90kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-400kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-600kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-700kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-800kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-3mb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-4mb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-signature-to-15kb",
+		"to": "/signature-resizer-under-20kb",
+		"reason": "Numeric KB permutation of the signature resizer; same tool with a different target value."
+	},
+	{
+		"from": "/compress-signature-to-25kb",
+		"to": "/signature-resizer-under-20kb",
+		"reason": "Numeric KB permutation of the signature resizer; same tool with a different target value."
+	},
+	{
+		"from": "/compress-signature-to-30kb",
+		"to": "/signature-resizer-under-20kb",
+		"reason": "Numeric KB permutation of the signature resizer; same tool with a different target value."
+	},
+	{
+		"from": "/anthropic-api-key-tester",
+		"to": "/api-key-tester/anthropic",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/github-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/supabase-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/firebase-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/aws-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/pinecone-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/algolia-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/gpa-calculator-for-college",
+		"to": "/cgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/gpa-calculator-for-high-school",
+		"to": "/cgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/weighted-gpa-calculator",
+		"to": "/cgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/unweighted-gpa-calculator",
+		"to": "/cgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/semester-gpa-calculator",
+		"to": "/cgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/middle-school-gpa-calculator",
+		"to": "/cgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/can-i-bunk-today-calculator",
+		"to": "/cgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/grades-needed-for-an-a-calculator",
+		"to": "/cgpa-calculator",
+		"reason": "GPA/grade synonym page rendering the same academic grades calculator tab as the parent."
+	},
+	{
+		"from": "/robots-txt-generator",
+		"to": "/robots-txt-sitemap-generator",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/sitemap-xml-generator",
+		"to": "/sitemap-generator",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/visual-sitemap-generator",
+		"to": "/visual-sitemap",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/url-slug-generator",
+		"to": "/slug-generator",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+	},
+	{
+		"from": "/compress-pdf-to-100kb",
+		"to": "/pdf-compressor-under-200kb",
+		"reason": "Numeric KB/MB permutation of the PDF compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-pdf-to-150kb",
+		"to": "/pdf-compressor-under-200kb",
+		"reason": "Numeric KB/MB permutation of the PDF compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-pdf-to-300kb",
+		"to": "/pdf-compressor-under-200kb",
+		"reason": "Numeric KB/MB permutation of the PDF compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-pdf-to-500kb",
+		"to": "/pdf-compressor-under-200kb",
+		"reason": "Numeric KB/MB permutation of the PDF compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-pdf-to-1mb",
+		"to": "/pdf-compressor-under-200kb",
+		"reason": "Numeric KB/MB permutation of the PDF compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-pdf-to-2mb",
+		"to": "/pdf-compressor-under-200kb",
+		"reason": "Numeric KB/MB permutation of the PDF compressor; same tool with a different target value."
+	},
+	{
+		"from": "/pdf-to-jpg-converter-free",
+		"to": "/pdf-to-jpg-converter",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/pdf-to-png-converter-online",
+		"to": "/pdf-to-image",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/extract-images-from-pdf",
+		"to": "/pdf-to-image",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/pdf-password-remover-online",
+		"to": "/pdf-unlocker",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/unlock-secured-pdf-free",
+		"to": "/pdf-unlocker",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/add-password-to-pdf-online",
+		"to": "/pdf-protect",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/protect-pdf-file-free",
+		"to": "/pdf-protect",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/repair-damaged-pdf-online",
+		"to": "/pdf-repair",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/fix-corrupted-pdf-file",
+		"to": "/pdf-repair",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/remove-pages-from-pdf-online",
+		"to": "/remove-pages-from-pdf",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/delete-pdf-pages-free",
+		"to": "/remove-pages-from-pdf",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/merge-pdf-files-online",
+		"to": "/merge-pdf-online",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/combine-pdf-files-free",
+		"to": "/merge-pdf-online",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/convert-docx-to-pdf-online",
+		"to": "/word-to-pdf",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/word-to-pdf-converter-free",
+		"to": "/word-to-pdf",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/convert-jpg-to-pdf-online",
+		"to": "/image-to-pdf",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/convert-png-to-pdf-free",
+		"to": "/image-to-pdf",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/remove-duplicate-lines-online",
+		"to": "/remove-duplicate-lines",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/duplicate-line-remover-free",
+		"to": "/remove-duplicate-lines",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/character-counter-online-free",
+		"to": "/word-counter",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/word-count-analyzer-online",
+		"to": "/word-counter",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/sentence-counter-online",
+		"to": "/word-counter",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/lorem-ipsum-generator-paragraphs",
+		"to": "/lorem-ipsum",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/dummy-text-generator-online",
+		"to": "/lorem-ipsum",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/case-converter-upper-lower",
+		"to": "/case-converter",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/convert-text-to-lowercase",
+		"to": "/case-converter",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/convert-text-to-uppercase",
+		"to": "/case-converter",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+	},
+	{
+		"from": "/mailchimp-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/hubspot-api-key-tester",
+		"to": "/api-key-tester/hubspot",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/slack-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/notion-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/shopify-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/spotify-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/google-maps-api-key-tester",
+		"to": "/api-key-tester",
+		"reason": "Provider has no dedicated tester; the page rendered the generic tester with a label swap, so the suite hub is the honest target."
+	},
+	{
+		"from": "/intercom-api-key-tester",
+		"to": "/api-key-tester/intercom",
+		"reason": "Duplicate of the registry provider tester page; the opportunity page rendered the same generic tester with a label swap."
+	},
+	{
+		"from": "/compress-image-to-120kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-180kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-250kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-350kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	},
+	{
+		"from": "/compress-image-to-450kb",
+		"to": "/image-compressor",
+		"reason": "Numeric KB/MB permutation of the image compressor; same tool with a different target value."
+	}
+]

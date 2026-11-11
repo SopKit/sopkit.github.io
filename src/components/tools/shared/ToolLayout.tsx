@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import BreadcrumbsEnhanced, { type Breadcrumb } from "@/components/seo/BreadcrumbsEnhanced";
 import { RelatedToolsServer } from "./RelatedToolsServer";
-import { VisuallyHiddenSeoContext } from "@/components/seo/VisuallyHiddenSeoContext";
 import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
+import { isCuratedContent } from "@/data/content-curation";
 import SeoOpportunityContent from "@/components/seo/SeoOpportunityContent";
 import StructuredData from "@/components/shared/StructuredData";
 import DownloadDisclaimer from "@/components/shared/DownloadDisclaimer";
@@ -26,42 +26,17 @@ import {
 	type ToolArchetype,
 } from "@/features/tools/archetypes";
 
+// Renders a curated article only. There is deliberately no generated fallback:
+// a page without distinct prose renders no article section at all.
 function ToolArticle({
 	content,
 	title,
-	description,
-	processingType,
-	toolRoute,
 }: {
 	content?: string;
 	title?: string;
-	description: string;
-	processingType: "LOCAL" | "NO_FILE_UPLOAD" | "EXTERNAL";
-	toolRoute: string;
 }) {
-	const resolvedTitle = title || "this utility";
-	const processingText =
-		processingType === "LOCAL"
-			? "The core operation runs in your browser. Inputs required by the tool stay in the browser session rather than being uploaded to SopKit servers."
-			: processingType === "NO_FILE_UPLOAD"
-				? "The tool does not require a file upload to SopKit. Any external or network processing is described in the page before it is used."
-				: "This tool can use external or network services. Review the processing notice before entering sensitive information.";
-	const fallbackContent = [
-		resolvedTitle + " is a focused browser utility for " + description.replace(/\s+/g, " ").trim() + ".",
-		"",
-		"## What this tool is for",
-		"Use " + resolvedTitle + " when you need this task handled at " + toolRoute + ". The page is designed around a simple workflow: provide the required input, review the available controls, run the operation, and save or copy the result.",
-		"",
-		"## Processing and privacy",
-		processingText,
-		"",
-		"## Before you use it",
-		"Check the supported formats, limits, and output behavior shown on this page. For sensitive material, avoid entering information that the page says may be transmitted to an external provider.",
-		"",
-		"## Practical workflow",
-		"Open the tool, prepare the input, configure any available options, run the operation, and verify the result before saving or sharing it.",
-	].join("\n");
-	const articleContent = content?.trim() || fallbackContent;
+	const articleContent = content?.trim();
+	if (!articleContent) return null;
 	const lines = articleContent.replace(/\\n/g, "\n").trim().split("\n");
 	// Group consecutive "- " lines into a single <ul>: rendering <li> elements
 	// directly inside the <div> below produced invalid HTML (a list item with
@@ -165,25 +140,40 @@ export default function ToolLayout({
 	const opportunity = getSeoOpportunityByRoute(tool.route);
 	const routeKey = tool.route.endsWith("/") ? tool.route.slice(0, -1) : tool.route;
 
+	// Prose (article, features, steps, FAQs) is rendered only for pages whose
+	// content passed the uniqueness audit; see src/data/content-curation.ts.
+	// Standalone opportunity pages use their slug as the tool id, and an
+	// opportunity can also share a route with a registry tool, so both ids
+	// are checked.
+	const hasCuratedContent =
+		isCuratedContent(tool.id) || (opportunity ? isCuratedContent(opportunity.slug) : false);
+
 	const enrichedTool: Tool = { ...tool };
 
-	// Curated manual content source of truth
-	const manual = MANUAL_TOOL_CONTENT[tool.id];
-	if (manual) {
-		if (!enrichedTool.article && manual.whatItIs) {
-			enrichedTool.article = manual.whatItIs;
+	if (hasCuratedContent) {
+		// Curated manual content is the source of truth for prose.
+		const manual = MANUAL_TOOL_CONTENT[tool.id];
+		if (manual) {
+			if (!enrichedTool.article && manual.whatItIs) {
+				enrichedTool.article = manual.whatItIs;
+			}
+			if ((!enrichedTool.features || enrichedTool.features.length === 0) && manual.features?.length) {
+				enrichedTool.features = manual.features;
+			}
+			if ((!enrichedTool.howTo || !enrichedTool.howTo.steps || enrichedTool.howTo.steps.length === 0) && manual.howToUse?.steps?.length) {
+				enrichedTool.howTo = manual.howToUse;
+			}
+			if (manual.faqs?.length) {
+				enrichedTool.faqs = manual.faqs;
+			}
 		}
-		if ((!enrichedTool.features || enrichedTool.features.length === 0) && manual.features?.length) {
-			enrichedTool.features = manual.features;
-		}
-		if ((!enrichedTool.howTo || !enrichedTool.howTo.steps || enrichedTool.howTo.steps.length === 0) && manual.howToUse?.steps?.length) {
-			enrichedTool.howTo = manual.howToUse;
-		}
-		// Curated FAQ content is the source of truth: it is component-verified and
-		// replaces the older generated tool-faqs.json templates at render time.
-		if (manual.faqs?.length) {
-			enrichedTool.faqs = manual.faqs;
-		}
+	} else {
+		// Non-curated pages carry no prose at all, so neither the page body nor
+		// the structured data can fall back to templated text.
+		enrichedTool.article = undefined;
+		enrichedTool.features = undefined;
+		enrichedTool.howTo = undefined;
+		enrichedTool.faqs = undefined;
 	}
 
 	// Semantic H1 and SEO opportunity resolution
@@ -192,14 +182,16 @@ export default function ToolLayout({
 	} else if (opportunity) {
 		enrichedTool.name = opportunity.h1;
 		enrichedTool.description = opportunity.intro;
-		enrichedTool.faqs = opportunity.faqs;
-		enrichedTool.howTo = {
-			name: `How to use ${opportunity.h1}`,
-			steps: opportunity.steps.map((text, index) => ({
-				name: `Step ${index + 1}`,
-				text,
-			})),
-		};
+		if (hasCuratedContent) {
+			enrichedTool.faqs = opportunity.faqs;
+			enrichedTool.howTo = {
+				name: `How to use ${opportunity.h1}`,
+				steps: opportunity.steps.map((text, index) => ({
+					name: `Step ${index + 1}`,
+					text,
+				})),
+			};
+		}
 	}
 
 	const isCompanyPage = tool.category === "company";
@@ -214,42 +206,24 @@ export default function ToolLayout({
 
 	const finalDescription = String(enrichedTool.description || "").replace(/\\n/g, "\n").trim();
 
-	const fallbackFeatures = enrichedTool.features?.length
-		? enrichedTool.features
-		: [
-			"Task-focused workflow for " + enrichedTool.name,
-			"Browser-based interface with responsive controls",
-			"Clear result and export controls where the tool supports them",
-			"Core utilities are available without account registration",
-		];
-
-	const fallbackHowTo = enrichedTool.howTo?.steps?.length
-		? enrichedTool.howTo
-		: {
-			name: "How to use " + enrichedTool.name,
-			steps: [
-				{ name: "Open the tool", text: "Open " + enrichedTool.name + " and review the processing notice." },
-				{ name: "Provide the input", text: "Enter text, select a file, or provide the information requested by the tool." },
-				{ name: "Configure options", text: "Use the available controls to match the output you need." },
-				{ name: "Run and verify", text: "Start the operation and check the result before saving or sharing it." },
-			],
-		};
-
-
 	// Archetype and responsive width resolution
 	const resolvedArchetype = explicitArchetype || resolveToolArchetype(enrichedTool);
 	const workspaceClass = getArchetypeWorkspaceClass(resolvedArchetype);
 	const dataProcessing = resolveDataProcessing(enrichedTool);
 	const isDenseWorkspace = tool.id === "ai-image-generator";
 
-	const fallbackFaqs = enrichedTool.faqs?.length
-		? enrichedTool.faqs
-		: [
-			{ question: "What does " + enrichedTool.name + " do?", answer: finalDescription || "It provides a focused browser workflow for " + enrichedTool.name + "." },
-			{ question: "Do I need an account to use " + enrichedTool.name + "?", answer: "Core SopKit utilities do not require account registration unless a page explicitly says otherwise." },
-			{ question: "How is my data handled?", answer: dataProcessing.type === "LOCAL" ? "The core operation stays in your browser for this processing mode." : "Review the processing notice because this tool may use an external service." },
-			{ question: "Does " + enrichedTool.name + " work on mobile?", answer: "The interface is responsive and designed for modern mobile and desktop browsers, subject to the tool's browser requirements." },
-		];
+	const curatedArticle = hasCuratedContent ? enrichedTool.article : undefined;
+	const curatedFeatures = hasCuratedContent ? enrichedTool.features : undefined;
+	const curatedSteps = hasCuratedContent ? enrichedTool.howTo?.steps : undefined;
+	const curatedFaqs = hasCuratedContent ? enrichedTool.faqs : undefined;
+	const curatedOpportunity = hasCuratedContent ? opportunity : undefined;
+	const showsReference = Boolean(
+		curatedArticle?.trim() ||
+			curatedOpportunity ||
+			curatedFeatures?.length ||
+			curatedSteps?.length ||
+			curatedFaqs?.length,
+	);
 
 	return (
 		<div className="min-h-screen bg-background text-foreground relative">
@@ -310,22 +284,6 @@ export default function ToolLayout({
 					)}
 				</header>
 
-				{/* Legitimate Semantic Context for Screen Readers & Non-JS Crawlers */}
-				<VisuallyHiddenSeoContext
-					toolName={enrichedTool.name}
-					description={finalDescription}
-					category={enrichedTool.category}
-					executionType={
-						dataProcessing.type === "LOCAL"
-							? "client"
-							: dataProcessing.type === "NO_FILE_UPLOAD"
-								? "hybrid"
-								: "external"
-					}
-					features={fallbackFeatures}
-					steps={fallbackHowTo?.steps}
-				/>
-
 				{/* Downloader Legal Notice if applicable */}
 				{tool.category === "downloaders" && (
 					<DownloadDisclaimer platformName={tool.name.replace(/ downloader$/i, "").replace(/ download$/i, "")} />
@@ -349,40 +307,33 @@ export default function ToolLayout({
 				{/* Secondary Content & SEO Documentation (Subordinated to Tool) */}
 				{!isCompanyPage && (
 					<div className="w-full max-w-4xl mx-auto space-y-10 pt-6">
-						{/* Clean Workspace / Documentation Divider */}
-						<div className="flex items-center justify-between border-b border-border/60 pb-2 text-xs font-mono text-muted-foreground">
-							<span className="uppercase tracking-wider font-semibold">Technical Reference & FAQs</span>
-							<a
-								href="#tool-workspace"
-								className="text-primary hover:underline font-medium inline-flex items-center gap-1"
-							>
-								↑ Return to Workspace
-							</a>
-						</div>
+						{/* Workspace / documentation divider, only when curated prose follows */}
+						{showsReference && (
+							<div className="flex items-center justify-between border-b border-border/60 pb-2 text-xs font-mono text-muted-foreground">
+								<span className="uppercase tracking-wider font-semibold">Technical Reference & FAQs</span>
+								<a
+									href="#tool-workspace"
+									className="text-primary hover:underline font-medium inline-flex items-center gap-1"
+								>
+									↑ Return to Workspace
+								</a>
+							</div>
+						)}
 
 						<AdPlacement placement="after-tool" category={tool.category} slug={tool.id} />
 
-						{/* Editorial Documentation Layout */}
-						<ToolArticle
-							content={enrichedTool.article}
-							title={enrichedTool.name}
-							description={finalDescription}
-							processingType={dataProcessing.type === "LOCAL" ? "LOCAL" : dataProcessing.type === "NO_FILE_UPLOAD" ? "NO_FILE_UPLOAD" : "EXTERNAL"}
-							toolRoute={tool.route}
-						/>
+						{/* Curated editorial documentation; each component returns null when its input is empty */}
+						<ToolArticle content={curatedArticle} title={enrichedTool.name} />
 
-						{opportunity && (
-							<SeoOpportunityContent opportunity={opportunity} />
+						{curatedOpportunity && (
+							<SeoOpportunityContent opportunity={curatedOpportunity} />
 						)}
 
-						<ToolFeatures features={fallbackFeatures} toolName={enrichedTool.name} />
+						<ToolFeatures features={curatedFeatures} toolName={enrichedTool.name} />
 
-						<ToolSteps
-							steps={fallbackHowTo?.steps}
-							toolName={enrichedTool.name}
-						/>
+						<ToolSteps steps={curatedSteps} toolName={enrichedTool.name} />
 
-						<ToolFAQ faqs={enrichedTool.faqs} toolName={enrichedTool.name} />
+						<ToolFAQ faqs={curatedFaqs} toolName={enrichedTool.name} />
 
 						{/* Contextual Related Tools (Compact 4-6 list) */}
 						{finalRelatedTools.length > 0 && (

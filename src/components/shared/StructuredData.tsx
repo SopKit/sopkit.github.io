@@ -1,6 +1,7 @@
 import { getAllCategories, getAllTools, type Tool } from "@/lib/tools";
 import { LAST_UPDATED, SITE_URL } from "@/constants/config";
 import { buildCanonicalUrl } from "@/seo/canonical";
+import { isCuratedContent } from "@/data/content-curation";
 
 const allCategories = getAllCategories();
 const allTools = getAllTools();
@@ -101,6 +102,13 @@ export default function StructuredData({
 			? buildCanonicalUrl(categoryHubRoute)
 			: null;
 
+		// Only pages whose prose passed the uniqueness audit may carry a
+		// feature list or FAQ markup; everything else stays a plain
+		// SoftwareApplication plus breadcrumbs.
+		const hasCuratedContent = isCuratedContent(tool.id);
+		const curatedFeatures = hasCuratedContent && tool.features?.length ? tool.features : null;
+		const curatedFaqs = hasCuratedContent && tool.faqs?.length ? tool.faqs : null;
+
 		const toolStructuredData: Record<string, any> = {
 			"@context": "https://schema.org",
 			"@type": ["SoftwareApplication", "WebApplication"],
@@ -130,9 +138,7 @@ export default function StructuredData({
 				name: "SopKit",
 				url: `${SITE_URL}/`,
 			},
-			featureList: tool.features
-				? tool.features.join(", ")
-				: "Free online tool",
+			...(curatedFeatures ? { featureList: curatedFeatures.join(", ") } : {}),
 		};
 
 		// Add AggregateRating only if tool has genuine, validated reviews (never default missing to 5)
@@ -153,80 +159,21 @@ export default function StructuredData({
 			}
 		}
 
-		// Fallback to capability-aware default FAQs if tool has no FAQs defined
-		const faqsToUse = tool.faqs && tool.faqs.length > 0
-			? tool.faqs
-			: [
-					{
-						question: `Is the ${tool.name} free to use?`,
-						answer: `Yes, the ${tool.name} on SopKit is 100% free to use. There are no daily usage limits, and no registration or account creation is required.`
-					},
-					{
-						question: `Does this ${tool.name} store or upload my files?`,
-						answer: tool.executionType === "external"
-							? `No files are stored on our servers. Processing requests for ${tool.name} are handled via transparent external APIs (${tool.providerName || "external provider"}). Only explicit generation prompts or inputs are submitted to produce your result.`
-							: `No. All operations and file processing for the ${tool.name} are completed locally inside your web browser using JavaScript or WebAssembly. Your files are never uploaded to our servers, ensuring total privacy and security.`
-					}
-			  ];
-
-		const faqData = {
-			"@context": "https://schema.org",
-			"@type": "FAQPage",
-			mainEntity: faqsToUse.map((faq) => ({
-				"@type": "Question",
-				name: faq.question,
-				acceptedAnswer: {
-					"@type": "Answer",
-					text: faq.answer,
-				},
-			})),
-		};
-
-		const howToData = tool.howTo
+		// FAQPage markup is emitted only for curated FAQs. There is no templated
+		// fallback, and no HowTo or Article markup: HowTo rich results were
+		// retired by Google in 2023 and a tool page is not an Article.
+		const faqData = curatedFaqs
 			? {
 					"@context": "https://schema.org",
-					"@type": "HowTo",
-					name: tool.howTo.name || `How to use ${tool.name}`,
-					step: tool.howTo.steps
-					  ? tool.howTo.steps.map((step, index) => {
-					      const stepUrl = step.url ? step.url.replace(/\/+$/, "") : undefined;
-					      return {
-							"@type": "HowToStep",
-							position: index + 1,
-							name: step.name,
-							text: step.text,
-							...(stepUrl ? { url: stepUrl } : {})
-						  };
-						})
-					  : [],
-				}
-			: null;
-
-		const articleData = tool.article
-			? {
-					"@context": "https://schema.org",
-					"@type": "Article",
-					headline: tool.name,
-					description: tool.description,
-					author: {
-						"@type": "Organization",
-						name: "SopKit",
-						url: `${SITE_URL}/`,
-					},
-					publisher: {
-						"@type": "Organization",
-						name: "SopKit",
-						logo: {
-							"@type": "ImageObject",
-							url: `${SITE_URL}/favicon.ico`,
+					"@type": "FAQPage",
+					mainEntity: curatedFaqs.map((faq) => ({
+						"@type": "Question",
+						name: faq.question,
+						acceptedAnswer: {
+							"@type": "Answer",
+							text: faq.answer,
 						},
-					},
-					...(tool.datePublished ? { datePublished: tool.datePublished } : {}),
-					dateModified: LAST_UPDATED,
-					mainEntityOfPage: {
-						"@type": "WebPage",
-						"@id": toolUrl,
-					},
+					})),
 				}
 			: null;
 
@@ -276,22 +223,6 @@ export default function StructuredData({
 						type="application/ld+json"
 						dangerouslySetInnerHTML={{
 							__html: JSON.stringify(faqData).replace(/</g, "\\u003c"),
-						}}
-					/>
-				)}
-				{howToData && (
-					<script
-						type="application/ld+json"
-						dangerouslySetInnerHTML={{
-							__html: JSON.stringify(howToData).replace(/</g, "\\u003c"),
-						}}
-					/>
-				)}
-				{articleData && (
-					<script
-						type="application/ld+json"
-						dangerouslySetInnerHTML={{
-							__html: JSON.stringify(articleData).replace(/</g, "\\u003c"),
 						}}
 					/>
 				)}

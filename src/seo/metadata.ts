@@ -15,6 +15,7 @@ import { PageSeoInput, ToolMetadataInput, CategoryMetadataInput } from "./types"
 import { buildCanonicalUrl } from "./canonical";
 import toolsData from "@/constants/tools.json";
 import { getMonetizationDecision } from "@/data/monetization";
+import { isCuratedContent } from "@/data/content-curation";
 
 /**
  * High-resolution category OpenGraph previews
@@ -235,9 +236,15 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
     keywords: allKeywords,
     alternates: {
       canonical,
-      types: {
-        "text/markdown": `${SEO_CONFIG.siteUrl}/tool-markdown/${toolFromRegistry?.id || toolId}`,
-      },
+      // The markdown mirror is noindexed and only carries prose for curated
+      // tools, so only those pages advertise it as an alternate representation.
+      ...(isCuratedContent(toolFromRegistry?.id || toolId)
+        ? {
+            types: {
+              "text/markdown": `${SEO_CONFIG.siteUrl}/tool-markdown/${toolFromRegistry?.id || toolId}`,
+            },
+          }
+        : {}),
     },
     openGraph: {
       title,

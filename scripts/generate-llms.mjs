@@ -13,6 +13,12 @@ const json = JSON.parse(readFileSync("src/constants/tools.json", "utf8"));
 const categories = json.categories || {};
 const cats = Object.values(categories);
 
+// Only tools whose prose passed the uniqueness audit (bun run audit:content)
+// get a link to their markdown companion; everything else is listed with its
+// description alone so the index never repeats templated text.
+const uniqueness = JSON.parse(readFileSync("src/data/content-uniqueness.json", "utf8"));
+const curatedIds = new Set(uniqueness.curated || []);
+
 const clean = (s) =>
 	s
 		.replace(/\s+/g, " ")
@@ -122,10 +128,8 @@ for (const c of cats) {
 		const desc = clean(t.description || t.seoDescription || "");
 		llmsFullLines.push(`#### [${t.name}](${url})`);
 		llmsFullLines.push(`- **Description**: ${desc}`);
-		llmsFullLines.push(`- **Markdown Representation**: ${BASE}/tool-markdown/${t.id}`);
-		if (t.extraSlugs && t.extraSlugs.length > 0) {
-			const slugsList = t.extraSlugs.map(s => `\`${s}\``).join(", ");
-			llmsFullLines.push(`- **Alternative Intents / Keywords**: ${slugsList}`);
+		if (curatedIds.has(t.id)) {
+			llmsFullLines.push(`- **Markdown Representation**: ${BASE}/tool-markdown/${t.id}`);
 		}
 		llmsFullLines.push("");
 	}

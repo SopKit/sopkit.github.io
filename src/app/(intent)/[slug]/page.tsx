@@ -1,7 +1,7 @@
-import { notFound, permanentRedirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { getIntentBySlug, intentData } from "@/lib/intent-data";
 import { getMonetizationDecision } from "@/data/monetization";
-import { getAllTools, getToolById, getToolByExtraSlug, getToolByRoute, type Tool } from "@/lib/tools";
+import { getAllTools, getToolById, type Tool } from "@/lib/tools";
 import {
 	categoryKeyForOpportunity,
 	relatedToolsForOpportunity,
@@ -14,6 +14,15 @@ import {
     seoOpportunities,
     type SeoOpportunity,
 } from "@/data/seo-opportunities";
+
+// This route serves exactly two kinds of page:
+//   1. Standalone SEO opportunity pages from src/data/seo-opportunities.ts
+//      (each one carries a distinct tool preset and its own prose).
+//   2. The handful of intent landers in src/lib/intent-data.ts.
+// Any other slug is a 404. The keyword-permutation alias pages that used to
+// be generated here from tool extraSlugs were doorway pages and are gone;
+// retired opportunity slugs are 301-redirected to their parent tool by
+// src/seo/redirects/opportunities.json instead of being rendered.
 
 function syntheticToolFromOpportunity(opportunity: SeoOpportunity): Tool {
     const parentTool = getToolById(opportunity.parentToolSlug);
@@ -82,81 +91,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     }
 
     const intent = getIntentBySlug(slug);
-
-    if (!intent) {
-        const extraTool = getToolByExtraSlug(slug) || getToolById(slug) || getToolByRoute("/" + slug);
-        if (extraTool) {
-            const isCanonicalTool = extraTool.route === `/${slug}`;
-            const isNoUpload = slug.includes("no-upload") || slug.includes("offline") || slug.includes("local");
-            const isPrivacy = slug.includes("privacy") || slug.includes("secure") || slug.includes("safe") || slug.includes("no-data-selling");
-            const isFree = slug.includes("free") || slug.includes("no-signup") || slug.includes("no-registration");
-
-            let title = "";
-            let description = "";
-
-            if (isCanonicalTool) {
-                title = extraTool.seoTitle || `${extraTool.name} — Free Online Tool | SopKit`;
-                description = extraTool.seoDescription || extraTool.description;
-            } else if (isNoUpload) {
-                title = `Free ${extraTool.name} (No File Uploads) — Local Browser Tool`;
-                description = `Run ${extraTool.name} locally in your browser. 100% private, client-side processing with zero file uploads. Fast, secure, and free.`;
-            } else if (isPrivacy) {
-                title = `Secure ${extraTool.name} — Privacy-Friendly Client-Side App`;
-                description = `A secure, privacy-first alternative for ${extraTool.name}. Operates in a local browser sandbox with no server uploads and no data tracking.`;
-            } else if (isFree) {
-                title = `Free ${extraTool.name} Online — No Signup Required`;
-                description = `Access our 100% free ${extraTool.name} online with no usage limits and no registration. Secure client-side processing in your browser.`;
-            } else {
-                title = `Free ${extraTool.name} Online — ${extraTool.description.slice(0, 30)}`;
-                description = `Privacy-friendly, 100% client-side ${extraTool.name} online. Secure local browser processing with no file uploads and no data selling.`;
-            }
-
-            // Keep descriptions natural: append a CTA once if too short,
-            // otherwise trim at a word boundary (no repeated filler phrases).
-            const targetMin = 150;
-            const targetMax = 160;
-            if (description.length < targetMin) {
-                description = `${description} Try it now for free.`;
-            }
-            if (description.length > targetMax) {
-                const cut = description.slice(0, targetMax);
-                const lastSpace = cut.lastIndexOf(" ");
-                description = `${(lastSpace > targetMin ? cut.slice(0, lastSpace) : cut).replace(/[\s,—-]+$/, "")}`;
-            }
-
-            // Canonicalization strategy:
-            // If this slug is a synthetic permutation or alias, point canonical to parent canonical route
-            // and set noindex, follow to consolidate PageRank and avoid doorway penalties.
-            const canonicalRoute = extraTool.route.endsWith("/") ? extraTool.route.slice(0, -1) : extraTool.route;
-            const canonicalUrl = isCanonicalTool ? `https://sopkit.space/${slug}` : `https://sopkit.space${canonicalRoute}`;
-
-            return {
-                title,
-                description,
-                alternates: {
-                    canonical: canonicalUrl,
-                },
-                openGraph: {
-                    title,
-                    description,
-                    url: canonicalUrl,
-                    siteName: "SopKit",
-                    images: [{ url: "/og-image.jpg" }],
-                    type: "website",
-                },
-                twitter: {
-                    card: "summary_large_image",
-                    title,
-                    description,
-                    images: ["/og-image.jpg"],
-                },
-                robots: isCanonicalTool && getMonetizationDecision({ slug: extraTool.id, category: extraTool.category }).indexable
-                    ? { index: true, follow: true }
-                    : { index: false, follow: true },
-            };
-        }
-        return {};
-    }
+    if (!intent) return {};
 
     const parentTool = getToolById(intent.parentToolId);
     if (!parentTool) return {};
@@ -209,91 +144,7 @@ export default async function IntentPage({ params }: { params: Promise<{ slug: s
     }
 
     const intent = getIntentBySlug(slug);
-
-    // Serve long-tail extraSlugs as standalone landers or handle canonical tool fallback
     if (!intent) {
-        const extraTool = getToolByExtraSlug(slug) || getToolById(slug) || getToolByRoute("/" + slug);
-        if (extraTool) {
-            // If the user accessed via tool ID when the canonical route is different (e.g. /webp-to-jpg-converter -> /webp-to-jpg)
-            if (`/${slug}` !== extraTool.route && extraTool.id === slug) {
-                permanentRedirect(extraTool.route);
-            }
-
-            const isCanonicalTool = extraTool.route === `/${slug}`;
-            const isNoUpload = slug.includes("no-upload") || slug.includes("offline") || slug.includes("local");
-            const isPrivacy = slug.includes("privacy") || slug.includes("secure") || slug.includes("safe") || slug.includes("no-data-selling");
-            const isFree = slug.includes("free") || slug.includes("no-signup") || slug.includes("no-registration");
-
-            const tool = { ...extraTool };
-
-            if (isCanonicalTool) {
-                tool.name = extraTool.name;
-                tool.description = extraTool.description;
-                tool.article = extraTool.article || "";
-                tool.faqs = extraTool.faqs || [];
-            } else {
-                // 1. Customize name (H1)
-                let keywordHighlight = "";
-                if (isNoUpload) {
-                    keywordHighlight = " (No File Uploads)";
-                } else if (isPrivacy) {
-                    keywordHighlight = " (100% Secure & Private)";
-                } else if (isFree) {
-                    keywordHighlight = " (Free & No Signup)";
-                }
-                tool.name = `${extraTool.name}${keywordHighlight}`;
-
-                // 2. Customize description
-                tool.description = `A specialized, privacy-focused version of our ${extraTool.name} utility optimized for client-side security and local execution.`;
-
-                // 3. Customize Article
-                let extraArticle = "";
-                if (isNoUpload) {
-                    extraArticle = `
-\n### Why a "No Upload" ${extraTool.name} is Essential
-Many online converters require you to upload files to their servers, exposing your sensitive documents, financial statements, or personal images to data breach risks and employee access. This page provides a 100% client-side alternative. Your files never leave your device, meaning you get absolute security and zero network upload latency.
-`;
-                } else if (isPrivacy) {
-                    extraArticle = `
-\n### Absolute Privacy and Data Security
-With our privacy-friendly architecture, we guarantee that no data processed by this ${extraTool.name} is stored, tracked, or used to train artificial intelligence models. This local sandbox is built to meet corporate security guidelines and protect user confidentiality.
-`;
-                } else if (isFree) {
-                    extraArticle = `
-\n### 100% Free Without Limitations
-Unlike freemium services that restrict file sizes or impose hourly conversion limits, this ${extraTool.name} is free forever with no daily caps, no hidden fees, and no signups required. Access full processing capabilities instantly.
-`;
-                }
-                const baseArticle = extraTool.article || "";
-                tool.article = baseArticle + extraArticle;
-
-                // 4. Customize FAQs
-                const baseFaqs = extraTool.faqs || [];
-                const customFaqs = [
-                    {
-                        question: `Does this ${extraTool.name} page upload my files?`,
-                        answer: `No, this page runs entirely in your browser. All operations are performed client-side using JavaScript, ensuring your files never leave your device.`
-                    },
-                    {
-                        question: `Is there any fee or usage limit for this local tool?`,
-                        answer: `No, the tool is 100% free with no registration, no file size limits, and no daily usage caps.`
-                    }
-                ];
-                tool.faqs = [...customFaqs, ...baseFaqs.slice(0, 3)];
-            }
-
-            const breadcrumbs = [
-                { name: "Home", url: "/" },
-                { name: extraTool.name, url: extraTool.route },
-                { name: slug.replace(/-/g, " "), url: `/${slug}` }
-            ];
-
-            return (
-                <ToolLayout breadcrumbs={breadcrumbs} tool={tool}>
-                    <IntentToolDispatcher toolId={extraTool.id} />
-                </ToolLayout>
-            );
-        }
         notFound();
     }
 
@@ -331,9 +182,11 @@ export async function generateStaticParams() {
         canonicalSlugs.add(clean);
     });
 
-    // Curated SEO opportunities (only those without explicit dedicated pages)
+    // Standalone SEO opportunities (only those without explicit dedicated
+    // pages). Non-standalone entries exist to enrich a real tool page via
+    // ToolLayout and never get a route of their own here.
     seoOpportunities.forEach((opportunity) => {
-        if (opportunity.slug && !canonicalSlugs.has(opportunity.slug)) {
+        if (opportunity.standalone && opportunity.slug && !canonicalSlugs.has(opportunity.slug)) {
             slugs.add(opportunity.slug);
         }
     });

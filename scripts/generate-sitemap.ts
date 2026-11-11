@@ -213,7 +213,9 @@ try {
   const { seoOpportunities } = await import('../src/data/seo-opportunities');
   if (Array.isArray(seoOpportunities)) {
     for (const opp of seoOpportunities) {
-      if (opp.route) {
+      // Same rule as src/app/sitemap.ts: only standalone opportunities own
+      // a URL; the rest enrich a tool page that is already registered.
+      if (opp.standalone && opp.route) {
         const priority = opp.priority === 1 ? '0.90' : opp.priority === 2 ? '0.86' : '0.84';
         registerUrl(opp.route, priority, 'weekly');
       }

@@ -95,7 +95,7 @@ export default async function ToolPage() {
 						output exact, tested Unicode transformations. Same logic applies
 						to tags: the{" "}
 						<Link href="/hashtag-generator" className="text-primary underline">hashtag generator</Link>{" "}
-						and <Link href="/ai-poem-generator" className="text-primary underline">AI poem generator</Link>{" "}
+						and <Link href="/poetry-generator" className="text-primary underline">AI poem generator</Link>{" "}
 						handle their niches instantly, with zero chance of a lecture
 						about responsible hashtag use preceding your results.
 					</p>

@@ -12,8 +12,7 @@
 //     article line named the OpenAI tool for Claude/Gemini/Cohere/
 //     Stability/Hugging Face/Mailgun/Postmark pages.
 //   - Every relatedSlug must resolve to a registry tool id, a registry
-//     tool route, a tool extraSlug (src/data/tool-extraslugs.json), or a
-//     sibling opportunity slug. Anything else (hub names like
+//     tool route, or a sibling opportunity slug. Anything else (hub names like
 //     "student-calculators", invented slugs like
 //     "engineering-sgpa-calculator") is silently dropped by the related
 //     filter today, so it is a dead reference, not a link.
@@ -30,10 +29,9 @@
 // from getToolById(parentToolSlug) and its related cards from
 // parentToolRoute/relatedSlugs through a filter, so a bad reference fails
 // silently — a fallback sentence or a missing card, with no warning.
-// The sibling-opportunity and extraSlug allowances match what
+// The sibling-opportunity allowance matches what
 // relatedToolsForOpportunity (src/lib/seo-opportunity-related.ts) renders:
-// tool matches first, then extraSlug tools, then sibling opportunity
-// cards.
+// tool matches first, then sibling opportunity cards.
 //
 // Scope limits, stated plainly:
 //   - Only seo-opportunities.ts is checked here. Intent landers in
@@ -46,7 +44,7 @@
 //     the same invariants through the real modules.
 //   - Entry parsing assumes each object literal lists slug, then
 //     parentToolSlug, then parentToolRoute, then a single-line
-//     relatedSlugs array, in that order — the shape all 148 entries use.
+//     relatedSlugs array, in that order — the shape every entry uses.
 //     The script fails if the entry and relatedSlugs counts disagree,
 //     rather than silently zipping mismatched lists. categoryHub values
 //     are zipped to entries the same way, with the same guard.
@@ -62,12 +60,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, "..");
 const toolsJsonPath = path.join(rootDir, "src", "constants", "tools.json");
-const extraslugsJsonPath = path.join(
-	rootDir,
-	"src",
-	"data",
-	"tool-extraslugs.json",
-);
 const opportunitiesPath = path.join(
 	rootDir,
 	"src",
@@ -83,9 +75,6 @@ interface ToolItem {
 const toolsJson = JSON.parse(
 	fs.readFileSync(toolsJsonPath, "utf8"),
 ) as unknown;
-const extraslugsJson = JSON.parse(
-	fs.readFileSync(extraslugsJsonPath, "utf8"),
-) as Record<string, unknown>;
 
 const toolById = new Map<string, string>();
 const toolRoutes = new Set<string>();
@@ -104,15 +93,6 @@ const collectTools = (node: unknown): void => {
 	}
 };
 collectTools(toolsJson);
-
-const extraSlugs = new Set<string>();
-for (const value of Object.values(extraslugsJson)) {
-	if (Array.isArray(value)) {
-		for (const slug of value) {
-			if (typeof slug === "string") extraSlugs.add(slug);
-		}
-	}
-}
 
 const source = fs.readFileSync(opportunitiesPath, "utf8");
 
@@ -247,11 +227,10 @@ entries.forEach((entry, index) => {
 		const resolves =
 			toolById.has(slug) ||
 			toolRoutes.has(`/${slug}`) ||
-			extraSlugs.has(slug) ||
 			opportunitySlugs.has(slug);
 		if (!resolves) {
 			violations.push(
-				`opportunity ${entry.slug} has relatedSlug ${slug}, which resolves to no tool, extraSlug, or sibling opportunity`,
+				`opportunity ${entry.slug} has relatedSlug ${slug}, which resolves to no tool or sibling opportunity`,
 			);
 		}
 	}

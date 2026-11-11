@@ -1,9 +1,14 @@
 import { NextRequest } from "next/server";
 import { getAllTools, getRelatedTools } from "@/lib/tools";
 import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
+import { isCuratedContent } from "@/data/content-curation";
 import { SITE_CONFIG, SITE_URL } from "@/constants/config";
 import { buildCanonicalUrl } from "@/seo/canonical";
 
+// This route is part of the static export, so it cannot set response headers
+// at request time. The `X-Robots-Tag: noindex` for /tool-markdown/* lives in
+// public/_headers instead; the markdown is a machine-readable companion to the
+// HTML page, never an indexable duplicate of it.
 export const dynamic = "force-static";
 
 export async function generateStaticParams() {
@@ -19,7 +24,7 @@ export async function GET(
 	const slug = params.slug;
 
 	const allTools = getAllTools();
-	const tool = allTools.find((t) => t.id === slug || t.route === `/${slug}` || t.extraSlugs?.includes(slug));
+	const tool = allTools.find((t) => t.id === slug || t.route === `/${slug}`);
 
 	if (!tool) {
 		return new Response(`# Tool Not Found\n\nThe requested tool \`${slug}\` does not exist on SopKit.\n\nBrowse all tools at ${SITE_URL}/tools\n`, {
@@ -30,14 +35,8 @@ export async function GET(
 		});
 	}
 
-	const manual = MANUAL_TOOL_CONTENT[tool.id];
 	const canonical = buildCanonicalUrl(tool.route);
-	const whatItIs = manual?.whatItIs || tool.article || tool.description;
-	const features = manual?.features || tool.features || [];
-	const howTo = manual?.howToUse || tool.howTo;
-	const faqs = manual?.faqs || tool.faqs || [];
 	const related = getRelatedTools(tool, 6);
-
 	const isLocal = tool.executionType !== "external" && tool.id !== "ai-image-generator";
 
 	const lines: string[] = [];
@@ -51,51 +50,50 @@ export async function GET(
 	lines.push(`- **Access**: Free forever, no registration required`);
 	lines.push("");
 
-	lines.push("## About this Tool");
-	lines.push("");
-	lines.push(whatItIs);
-	lines.push("");
+	// Prose sections appear only for tools whose content passed the uniqueness
+	// audit. Every other tool gets the factual header plus related links.
+	if (isCuratedContent(tool.id)) {
+		const manual = MANUAL_TOOL_CONTENT[tool.id];
+		const whatItIs = manual?.whatItIs || tool.article;
+		const features = manual?.features || tool.features || [];
+		const howTo = manual?.howToUse || tool.howTo;
+		const faqs = manual?.faqs || tool.faqs || [];
 
-	if (features.length > 0) {
-		lines.push("## Key Features");
-		lines.push("");
-		features.forEach((feat) => {
-			lines.push(`- ${feat}`);
-		});
-		lines.push("");
-	}
-
-	if (howTo && howTo.steps && howTo.steps.length > 0) {
-		lines.push(`## ${howTo.name || `How to Use ${tool.name}`}`);
-		lines.push("");
-		howTo.steps.forEach((step, idx) => {
-			lines.push(`${idx + 1}. **${step.name}**: ${step.text}`);
-		});
-		lines.push("");
-	}
-
-	lines.push("## Privacy and Data Handling");
-	lines.push("");
-	if (isLocal) {
-		lines.push(
-			"All operations run locally in your browser using standard Web APIs, WebAssembly, or HTML5 Canvas. Your documents, images, and text inputs never leave your device and are not uploaded to SopKit servers."
-		);
-	} else {
-		lines.push(
-			"This tool interfaces with external APIs or streaming endpoints to perform its operation. Review the processing notice on the tool page before submitting confidential credentials."
-		);
-	}
-	lines.push("");
-
-	if (faqs.length > 0) {
-		lines.push("## Frequently Asked Questions");
-		lines.push("");
-		faqs.forEach((faq) => {
-			lines.push(`### ${faq.question}`);
+		if (whatItIs) {
+			lines.push("## About this Tool");
 			lines.push("");
-			lines.push(faq.answer);
+			lines.push(whatItIs);
 			lines.push("");
-		});
+		}
+
+		if (features.length > 0) {
+			lines.push("## Key Features");
+			lines.push("");
+			features.forEach((feat) => {
+				lines.push(`- ${feat}`);
+			});
+			lines.push("");
+		}
+
+		if (howTo && howTo.steps && howTo.steps.length > 0) {
+			lines.push(`## ${howTo.name || `How to Use ${tool.name}`}`);
+			lines.push("");
+			howTo.steps.forEach((step, idx) => {
+				lines.push(`${idx + 1}. **${step.name}**: ${step.text}`);
+			});
+			lines.push("");
+		}
+
+		if (faqs.length > 0) {
+			lines.push("## Frequently Asked Questions");
+			lines.push("");
+			faqs.forEach((faq) => {
+				lines.push(`### ${faq.question}`);
+				lines.push("");
+				lines.push(faq.answer);
+				lines.push("");
+			});
+		}
 	}
 
 	if (related.length > 0) {

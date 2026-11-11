@@ -20,15 +20,6 @@ for (const [catKey, category] of Object.entries(toolsData.categories)) {
       const existing = globalSeen.get(tool.id);
       console.log(`Global Merge duplicate tool: ${tool.id} (Categories: ${existing._category} & ${catKey})`);
 
-      // Merge extraSlugs
-      const combinedSlugs = new Set([
-        ...(existing.extraSlugs || []),
-        ...(tool.extraSlugs || [])
-      ]);
-      if (combinedSlugs.size > 0) {
-        existing.extraSlugs = Array.from(combinedSlugs);
-      }
-
       // Merge faqs
       const combinedFaqs = [
         ...(existing.faqs || []),

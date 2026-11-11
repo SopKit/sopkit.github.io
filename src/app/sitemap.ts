@@ -148,12 +148,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		})),
 	];
 
-	const seoOpportunityPages: MetadataRoute.Sitemap = seoOpportunities.map((opportunity) => ({
-		url: `${SITE_URL}${opportunity.route}`,
-		lastModified: siteUpdated,
-		changeFrequency: "weekly" as const,
-		priority: opportunity.priority === 1 ? 0.9 : opportunity.priority === 2 ? 0.86 : 0.84,
-	}));
+	// Only standalone opportunities have a page of their own at /<slug>.
+	// Non-standalone entries enrich a real tool page (already listed above
+	// via toolPages) and must not be emitted as separate URLs.
+	const seoOpportunityPages: MetadataRoute.Sitemap = seoOpportunities
+		.filter((opportunity) => opportunity.standalone)
+		.map((opportunity) => ({
+			url: `${SITE_URL}${opportunity.route}`,
+			lastModified: siteUpdated,
+			changeFrequency: "weekly" as const,
+			priority: opportunity.priority === 1 ? 0.9 : opportunity.priority === 2 ? 0.86 : 0.84,
+		}));
 
 	const intentPages: MetadataRoute.Sitemap = Object.keys(intentData)
 		.filter((slug) => getMonetizationDecision({ slug }).indexable)
@@ -163,17 +168,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: "weekly" as const,
 			priority: 0.85,
 		}));
-
-	// Keyword-permutation slugs (tool-extraslugs.json, ~9.2k URLs) are
-	// deliberately EXCLUDED from the sitemap:
-	//   - They are templated variants of parent tool pages (thin/duplicate
-	//     content at scale) and dilute crawl budget away from the ~800 pages
-	//     with unique value.
-	//   - The pages themselves remain reachable (200) via direct URL or
-	//     /archive, so existing equity is not lost.
-	//   - Re-include individual winners later based on GSC impression data.
-	// NOTE: extraSlugs permutation pages are intentionally not emitted here —
-	// see comment above.
 
 		// Deduplicate and strictly normalize URLs to canonical form:
 		// root has trailing slash (https://sopkit.space/), subpaths do not (https://sopkit.space/slug)

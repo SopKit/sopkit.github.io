@@ -5,11 +5,7 @@ import {
 	getSeoOpportunityBySlug,
 	seoOpportunities,
 } from "@/data/seo-opportunities";
-import {
-	getAllTools,
-	getToolByExtraSlug,
-	getToolById,
-} from "@/lib/tools";
+import { getAllTools, getToolById } from "@/lib/tools";
 import { relatedToolsForOpportunity } from "@/lib/seo-opportunity-related";
 
 // The intent page builds its "Parent tool" article line from
@@ -21,24 +17,37 @@ import { relatedToolsForOpportunity } from "@/lib/seo-opportunity-related";
 // slug can never again silently remove a card. The prebuild script
 // scripts/validate-seo-opportunities.ts enforces the same invariants on
 // the committed source text.
+//
+// The opportunity set was cut from 148 entries to the handful that carry a
+// distinct preset (see the header of src/data/seo-opportunities.ts). The
+// retired slugs live in src/seo/redirects/opportunities.json as 301s; the
+// last block below pins that no retired slug is still an opportunity and
+// that every redirect target is a real tool route.
+
+const rootDir = path.resolve(import.meta.dir, "../..");
 
 const tools = getAllTools();
 const toolById = new Map(tools.map((tool) => [tool.id, tool]));
 const toolRoutes = new Set(tools.map((tool) => tool.route));
 const opportunitySlugs = new Set(seoOpportunities.map((item) => item.slug));
 
+// Survivors after the doorway-page cleanup. Bump this deliberately when an
+// entry is added; it guards against the set silently shrinking to zero.
+const EXPECTED_MINIMUM_OPPORTUNITIES = 18;
+
 function resolvesRelated(slug: string): boolean {
 	return (
 		toolById.has(slug) ||
 		toolRoutes.has(`/${slug}`) ||
-		getToolByExtraSlug(slug) !== undefined ||
 		opportunitySlugs.has(slug)
 	);
 }
 
 describe("SEO opportunity references resolve to real pages", () => {
-	it("covers a non-trivial opportunity set (guard against a vacuous pass)", () => {
-		expect(seoOpportunities.length).toBeGreaterThan(100);
+	it("covers the full surviving opportunity set (guard against a vacuous pass)", () => {
+		expect(seoOpportunities.length).toBeGreaterThanOrEqual(
+			EXPECTED_MINIMUM_OPPORTUNITIES,
+		);
 	});
 
 	it("every parentToolSlug is a registry tool id and every parentToolRoute is that tool's route", () => {
@@ -49,7 +58,7 @@ describe("SEO opportunity references resolve to real pages", () => {
 		}
 	});
 
-	it("every relatedSlug resolves to a tool, an extraSlug, or a sibling opportunity", () => {
+	it("every relatedSlug resolves to a tool or a sibling opportunity", () => {
 		let checked = 0;
 		for (const opportunity of seoOpportunities) {
 			for (const slug of opportunity.relatedSlugs) {
@@ -59,7 +68,8 @@ describe("SEO opportunity references resolve to real pages", () => {
 				);
 			}
 		}
-		expect(checked).toBeGreaterThan(400);
+		// 18 entries with three to five related slugs each.
+		expect(checked).toBeGreaterThanOrEqual(80);
 	});
 
 	it("every opportunity route equals its slug route", () => {
@@ -68,99 +78,76 @@ describe("SEO opportunity references resolve to real pages", () => {
 		}
 	});
 
-	it("pins the repaired lorem-ipsum parents", () => {
-		for (const slug of [
-			"lorem-ipsum-generator-paragraphs",
-			"dummy-text-generator-online",
-		]) {
-			const opportunity = getSeoOpportunityBySlug(slug);
-			expect(opportunity?.parentToolSlug).toBe("lorem-ipsum-generator");
-			expect(opportunity?.parentToolRoute).toBe("/lorem-ipsum");
-			expect(getToolById("lorem-ipsum-generator")?.name).toBe(
-				"Lorem Ipsum Generator",
-			);
+	it("every standalone opportunity carries a preset that differs from the parent default", () => {
+		// A standalone page exists only to deliver a distinct preset. Each
+		// one must have a toolPreset, and no two standalone pages may share
+		// the same preset values, otherwise one of them is a doorway page.
+		const seen = new Set<string>();
+		for (const opportunity of seoOpportunities.filter((o) => o.standalone)) {
+			expect(opportunity.toolPreset, `${opportunity.slug} preset`).toBeDefined();
+			const key = JSON.stringify(opportunity.toolPreset);
+			expect(seen.has(key), `${opportunity.slug} duplicates another preset`).toBe(false);
+			seen.add(key);
 		}
 	});
 
-	it("pins the repaired api-key parents (no more copy-pasted OpenAI parent)", () => {
+	it("non-standalone entries all shadow a real registry tool route", () => {
+		// A non-standalone entry has no page of its own; it exists only to
+		// enrich the registry tool page at the same route via ToolLayout.
+		for (const opportunity of seoOpportunities.filter((o) => !o.standalone)) {
+			expect(toolRoutes.has(opportunity.route), opportunity.slug).toBe(true);
+		}
+	});
+
+	it("pins the surviving standalone preset pages and their parents", () => {
 		const expected: Record<string, [string, string]> = {
-			"openai-api-key-validator": [
-				"openai-api-key-tester",
-				"/api-key-tester/openai",
-			],
-			"claude-api-key-validator": [
-				"anthropic-api-key-tester",
-				"/api-key-tester/anthropic",
-			],
-			"gemini-api-key-validator": [
-				"google-gemini-api-key-tester",
-				"/api-key-tester/google-gemini",
-			],
-			"cohere-api-key-tester": [
-				"cohere-api-key-tester",
-				"/api-key-tester/cohere",
-			],
-			"stability-ai-api-key-tester": ["api-key-tester", "/api-key-tester"],
-			"huggingface-api-key-tester": ["api-key-tester", "/api-key-tester"],
-			"mailgun-api-key-tester": [
-				"mailgun-api-key-tester",
-				"/api-key-tester/mailgun",
-			],
-			"postmark-api-key-tester": [
-				"postmark-api-key-tester",
-				"/api-key-tester/postmark",
-			],
+			"compress-image-to-50kb": ["image-compressor", "/image-compressor"],
+			"ssc-signature-resizer": ["ssc-photo-resizer", "/ssc-photo-resizer"],
+			"upsc-signature-resizer": ["upsc-photo-resizer", "/upsc-photo-resizer"],
+			"qr-code-for-wifi": ["qr-code-generator", "/qr-code-generator"],
+			"qr-code-for-upi-payment": ["qr-code-generator", "/qr-code-generator"],
 		};
 		for (const [slug, [parentId, parentRoute]] of Object.entries(expected)) {
 			const opportunity = getSeoOpportunityBySlug(slug);
+			expect(opportunity?.standalone, slug).toBe(true);
 			expect(opportunity?.parentToolSlug).toBe(parentId);
 			expect(opportunity?.parentToolRoute).toBe(parentRoute);
 		}
-		// Stability AI and Hugging Face have no provider tool in the
-		// registry, so the generic suite is the honest parent — not an
-		// invented provider tool and not a renamed OpenAI tool.
-		expect(getToolById("stability-ai-api-key-tester")).toBeUndefined();
-		expect(getToolById("huggingface-api-key-tester")).toBeUndefined();
+		expect(seoOpportunities.filter((o) => o.standalone).length).toBe(
+			Object.keys(expected).length,
+		);
 	});
 });
 
 describe("relatedToolsForOpportunity renders real cards", () => {
-	it("includes the parent tool card for the repaired entries", () => {
-		for (const slug of [
-			"lorem-ipsum-generator-paragraphs",
-			"claude-api-key-validator",
-			"cohere-api-key-tester",
-			"mailgun-api-key-tester",
-		]) {
-			const opportunity = getSeoOpportunityBySlug(slug);
-			expect(opportunity).toBeDefined();
-			const related = relatedToolsForOpportunity(opportunity!);
+	it("includes the parent tool card for every standalone page", () => {
+		for (const opportunity of seoOpportunities.filter((o) => o.standalone)) {
+			const related = relatedToolsForOpportunity(opportunity);
 			expect(
-				related.some((tool) => tool.id === opportunity!.parentToolSlug),
+				related.some((tool) => tool.id === opportunity.parentToolSlug),
+				opportunity.slug,
 			).toBe(true);
 		}
 	});
 
-	it("renders sibling opportunity cards for validator pages instead of dropping them", () => {
-		const opportunity = getSeoOpportunityBySlug("claude-api-key-validator");
+	it("renders sibling opportunity cards instead of dropping them", () => {
+		const opportunity = getSeoOpportunityBySlug("ssc-signature-resizer");
 		const related = relatedToolsForOpportunity(opportunity!);
-		// claude/gemini tester slugs are sibling opportunities, not tools.
-		expect(related.some((tool) => tool.id === "claude-api-key-tester")).toBe(
-			true,
+		// upsc-signature-resizer is a sibling opportunity, not a registry tool.
+		const siblingCard = related.find(
+			(tool) => tool.id === "upsc-signature-resizer",
 		);
-		expect(related.some((tool) => tool.id === "gemini-api-key-tester")).toBe(
-			true,
-		);
-		const claudeCard = related.find(
-			(tool) => tool.id === "claude-api-key-tester",
-		);
-		expect(claudeCard?.route).toBe("/claude-api-key-tester");
-		expect(claudeCard?.name).toBe("Claude API Key Tester");
+		expect(siblingCard).toBeDefined();
+		expect(siblingCard?.route).toBe("/upsc-signature-resizer");
+		expect(siblingCard?.name).toBe("UPSC Signature Resizer");
 	});
 
-	it("renders the extraSlug tool card for passport-photo-resizer-india", () => {
+	it("renders the passport photo tool card where it is referenced", () => {
+		// This used to point at the alias slug "passport-photo-resizer-india",
+		// which resolved only through the removed extraSlug system. It now
+		// names the registry tool directly.
 		const pages = seoOpportunities.filter((item) =>
-			item.relatedSlugs.includes("passport-photo-resizer-india"),
+			item.relatedSlugs.includes("passport-photo-maker"),
 		);
 		expect(pages.length).toBeGreaterThan(0);
 		for (const opportunity of pages) {
@@ -182,8 +169,6 @@ describe("relatedToolsForOpportunity renders real cards", () => {
 		}
 	});
 });
-
-const rootDir = path.resolve(import.meta.dir, "../..");
 
 describe("SEO opportunity categoryHub breadcrumb URLs resolve", () => {
 	it("every categoryHub resolves to a page, a tool route, or a sibling opportunity", () => {
@@ -232,6 +217,53 @@ describe("SEO opportunity categoryHub breadcrumb URLs resolve", () => {
 				`${opportunity.slug} -> ${opportunity.categoryHub}`,
 			).toBe(true);
 		}
-		expect(checked).toBeGreaterThan(100);
+		expect(checked).toBeGreaterThanOrEqual(EXPECTED_MINIMUM_OPPORTUNITIES);
+	});
+});
+
+describe("Retired opportunity pages are redirected, not rendered", () => {
+	const manifest = JSON.parse(
+		fs.readFileSync(
+			path.join(rootDir, "src", "seo", "redirects", "opportunities.json"),
+			"utf8",
+		),
+	) as { from: string; to: string; reason: string }[];
+
+	it("covers the retired set (guard against an emptied manifest)", () => {
+		// 148 original entries minus 18 survivors minus the two retired
+		// entries whose slug is itself a registry tool route (no redirect
+		// needed there; the tool page answers).
+		expect(manifest.length).toBeGreaterThanOrEqual(128);
+	});
+
+	it("no redirect source is still an opportunity route, and every target is a registry tool route", () => {
+		const opportunityRoutes = new Set(seoOpportunities.map((o) => o.route));
+		for (const entry of manifest) {
+			expect(entry.from.startsWith("/"), entry.from).toBe(true);
+			expect(opportunityRoutes.has(entry.from), `${entry.from} still rendered`).toBe(false);
+			expect(toolRoutes.has(entry.to), `${entry.from} -> ${entry.to}`).toBe(true);
+			expect(entry.from).not.toBe(entry.to);
+			expect(entry.reason.length).toBeGreaterThan(0);
+		}
+	});
+
+	it("names the families the rulebook retired", () => {
+		const sources = new Set(manifest.map((entry) => entry.from));
+		for (const retired of [
+			"/compress-image-to-15kb",
+			"/compress-image-to-5mb",
+			"/compress-signature-to-10kb",
+			"/compress-pdf-to-100kb",
+			"/openai-api-key-validator",
+			"/huggingface-api-key-tester",
+			"/website-speed-checker",
+			"/weighted-gpa-calculator",
+			"/bunk-calculator",
+			"/qr-code-for-restaurant-menu",
+			"/lorem-ipsum-generator-paragraphs",
+			"/merge-pdf-files-online",
+		]) {
+			expect(sources.has(retired), retired).toBe(true);
+		}
 	});
 });

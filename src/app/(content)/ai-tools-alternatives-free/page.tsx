@@ -119,7 +119,7 @@ export default async function ToolPage() {
 					<ul className="mt-4 list-disc space-y-2 pl-6 text-muted-foreground">
 						<li>
 							Poems and creative sparks on demand with an{" "}
-							<Link href="/ai-poem-generator" className="text-primary underline">AI poem generator</Link>{" "}
+							<Link href="/poetry-generator" className="text-primary underline">AI poem generator</Link>{" "}
 							— handy for cards, captions, and classroom icebreakers.
 						</li>
 						<li>
