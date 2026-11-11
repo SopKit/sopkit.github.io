@@ -50,9 +50,11 @@ thinness, not templating.
 4. **Remove hidden text** (finding 4). `VisuallyHiddenSeoContext` deleted with its test.
 5. **Trim structured data** (finding 6). Tool pages emit `SoftwareApplication` and
    `BreadcrumbList`; `FAQPage` only for curated FAQs; `Article` and `HowTo` removed.
-6. **Noindex the markdown mirror** (finding 7). `public/_headers` sets
-   `X-Robots-Tag: noindex` on `/tool-markdown/*`; the mirror carries prose only for
-   curated tools.
+6. **Shrink the markdown mirror** (finding 7). Only curated tools are exported at
+   `/tool-markdown/<id>` (the ones whose HTML page advertises the markdown alternate);
+   every other slug is absent from the build. `public/_headers` also sets
+   `X-Robots-Tag: noindex` for Cloudflare-hosted previews, but production is GitHub
+   Pages, which ignores that file.
 7. **Merge duplicate tools** (finding 8) with 301s in `src/seo/redirects/tools.json`.
    37 routes retired in total: the five pairs above, /youtube-video-downloader, and 31
    downloader/alias slugs that rendered the identical component with no props (for
@@ -66,9 +68,11 @@ thinness, not templating.
    shrank from 9 to 6 pages; /blog/page/7-9 redirect to /blog.
 9. **Fix the 404 robots conflict** (finding 10).
 
-Redirects live in `src/seo/redirects/*.json` and are compiled into `public/_redirects`
-by `scripts/generate-redirects.cjs` (the site is a static export, so `next.config`
-redirects do not apply).
+Redirects live in `src/seo/redirects/*.json`. `scripts/generate-redirects.cjs` compiles
+them into `public/_redirects` (Cloudflare) and, after `next build`, into a static
+`out/<old-path>/index.html` per retired URL that meta-refreshes to the target with a
+canonical link (GitHub Pages, the production host, has no server-side redirects and the
+site is a static export, so `next.config` redirects do not apply either).
 
 ## Falsifiability and leading indicators
 

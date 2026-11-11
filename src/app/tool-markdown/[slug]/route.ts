@@ -5,15 +5,17 @@ import { isCuratedContent } from "@/data/content-curation";
 import { SITE_CONFIG, SITE_URL } from "@/constants/config";
 import { buildCanonicalUrl } from "@/seo/canonical";
 
-// This route is part of the static export, so it cannot set response headers
-// at request time. The `X-Robots-Tag: noindex` for /tool-markdown/* lives in
-// public/_headers instead; the markdown is a machine-readable companion to the
-// HTML page, never an indexable duplicate of it.
+// This route is part of the static export (served from GitHub Pages), so it
+// cannot set response headers and public/_headers is not honoured there. To
+// keep the markdown mirror from becoming an indexable duplicate of every tool
+// page, only curated tools (the ones whose HTML page advertises the markdown
+// alternate) are exported; every other slug is simply absent from the build.
 export const dynamic = "force-static";
 
 export async function generateStaticParams() {
-	const tools = getAllTools();
-	return tools.map((t) => ({ slug: t.id }));
+	return getAllTools()
+		.filter((t) => isCuratedContent(t.id))
+		.map((t) => ({ slug: t.id }));
 }
 
 export async function GET(

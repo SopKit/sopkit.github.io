@@ -75,10 +75,50 @@ function generateRedirects() {
 	fs.writeFileSync(publicRedirectsPath, content);
 	console.log(`Wrote ${count} redirects to public/_redirects`);
 
+	// The production site is served by GitHub Pages, which has no server-side
+	// redirect support and ignores _redirects. Each retired path therefore also
+	// gets a static HTML page in out/ that meta-refreshes to the target and
+	// declares the target as canonical; search engines treat an instant meta
+	// refresh as a permanent redirect. The _redirects copy is kept for
+	// Cloudflare-hosted previews, where it takes effect before the HTML is served.
 	if (fs.existsSync(outDir)) {
 		fs.writeFileSync(path.join(outDir, "_redirects"), content);
-		console.log("Copied _redirects into out/");
+		let htmlCount = 0;
+		for (const [from, to] of map) {
+			const targetPath = to === "/" ? "/" : `${to}/`;
+			const targetUrl = `https://sopkit.space${targetPath}`;
+			const folderPath = path.join(outDir, from);
+			fs.mkdirSync(folderPath, { recursive: true });
+			fs.writeFileSync(path.join(folderPath, "index.html"), buildRedirectHtml(targetUrl));
+			htmlCount += 1;
+		}
+		console.log(`Wrote ${htmlCount} static redirect pages into out/`);
 	}
+}
+
+function escapeHtml(value) {
+	return String(value).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+}
+
+function buildRedirectHtml(targetUrl) {
+	const safeUrl = escapeHtml(targetUrl);
+	return [
+		"<!DOCTYPE html>",
+		'<html lang="en">',
+		"<head>",
+		'<meta charset="utf-8">',
+		`<meta http-equiv="refresh" content="0; url=${safeUrl}">`,
+		`<link rel="canonical" href="${safeUrl}">`,
+		'<meta name="robots" content="noindex">',
+		"<title>Redirecting</title>",
+		`<script>window.location.replace(${JSON.stringify(targetUrl)});</script>`,
+		"</head>",
+		"<body>",
+		`<p>This page has moved to <a href="${safeUrl}">${safeUrl}</a>.</p>`,
+		"</body>",
+		"</html>",
+		"",
+	].join("\n");
 }
 
 generateRedirects();
