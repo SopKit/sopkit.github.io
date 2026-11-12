@@ -4,11 +4,11 @@ import { Search, Sparkles, X, Lock } from "lucide-react";
 import { useState, useRef, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
-import { getAllTools, type Tool } from "@/lib/tools";
+import type { SearchToolRecord } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
 
 const QUICK_TRENDING_TOOLS = [
-	{ name: "PDF Merge", route: "/merge-pdf-online" },
+	{ name: "PDF Merge", route: "/pdf-merger" },
 	{ name: "Image Compress", route: "/image-compressor" },
 	{ name: "JSON Format", route: "/json-formatter" },
 	{ name: "QR Generator", route: "/qr-code-generator" },
@@ -16,14 +16,22 @@ const QUICK_TRENDING_TOOLS = [
 	{ name: "Base64", route: "/base64-tool" },
 ];
 
+// Slim, serializable tool shape for the live suggestions. Hub pages (server
+// components) pass it in via getSearchToolRecords(); the hero itself never
+// imports the registry so it stays out of the shared client bundle.
+export type PremiumHeroTool = Pick<SearchToolRecord, "id" | "name" | "route"> &
+	Partial<Pick<SearchToolRecord, "description" | "category">>;
+
+const EMPTY_TOOLS: PremiumHeroTool[] = [];
+
 export function PremiumHero({
 	title = `Private, Fast & Local — ${SITE_CONFIG.toolCountString} Free Online Tools`,
 	subtitle = "Run 600+ utilities directly in your browser. No file uploads, no tracking, and no account required.",
-	tools,
+	tools = EMPTY_TOOLS,
 }: {
 	title?: string;
 	subtitle?: string;
-	tools?: Tool[];
+	tools?: PremiumHeroTool[];
 }) {
 	const [query, setQuery] = useState("");
 	const [showSuggestions, setShowSuggestions] = useState(false);
@@ -32,16 +40,7 @@ export function PremiumHero({
 	const inputRef = useRef<HTMLInputElement>(null);
 	const dropdownRef = useRef<HTMLDivElement>(null);
 
-	const allTools = useMemo(() => {
-		if (tools && Array.isArray(tools) && tools.length > 0) {
-			return tools;
-		}
-		try {
-			return getAllTools();
-		} catch {
-			return [] as Tool[];
-		}
-	}, [tools]);
+	const allTools = Array.isArray(tools) ? tools : EMPTY_TOOLS;
 
 	// Filtered live suggestions
 	const filteredTools = useMemo(() => {

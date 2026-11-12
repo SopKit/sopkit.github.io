@@ -1,11 +1,9 @@
-import { getAllCategories, getAllTools, type Tool } from "@/lib/tools";
+import { getAllCategories, type Tool } from "@/lib/tools";
 import { LAST_UPDATED, SITE_URL } from "@/constants/config";
 import { buildCanonicalUrl } from "@/seo/canonical";
 import { isCuratedContent } from "@/data/content-curation";
 
 const allCategories = getAllCategories();
-const allTools = getAllTools();
-const TOOL_COUNT = allTools.length;
 const CATEGORY_COUNT = allCategories.length;
 
 const categoryLookup = Object.fromEntries(
@@ -78,14 +76,12 @@ interface StructuredDataProps {
 	tool?: Tool;
 	includeFAQ?: boolean;
 	isHome?: boolean;
-	isArchive?: boolean;
 }
 
 export default function StructuredData({ 
 	tool, 
 	includeFAQ = true,
 	isHome = false,
-	isArchive = false,
 }: StructuredDataProps) {
 	if (tool) {
 		const categoryDetails =
@@ -239,7 +235,7 @@ export default function StructuredData({
 					"@type": "ListItem",
 					position: 1,
 					name: "Home",
-					item: SITE_URL,
+					item: `${SITE_URL}/`,
 				},
 			],
 		};
@@ -301,48 +297,6 @@ export default function StructuredData({
 					/>
 				)}
 			</>
-		);
-	}
-
-	if (isArchive) {
-		const toolsCollectionStructuredData = {
-			"@context": "https://schema.org",
-			"@type": "CollectionPage",
-			name: `Free Online Tools Collection - ${TOOL_COUNT}+ Professional Tools`,
-			description: `Comprehensive collection of ${TOOL_COUNT}+ free online tools for image processing, PDF editing, video conversion, text manipulation, SEO, and developer utilities.`,
-			url: SITE_URL,
-			mainEntity: {
-				"@type": "ItemList",
-				numberOfItems: CATEGORY_COUNT,
-				itemListElement: allCategories.map((category, index) => {
-					const hubRoute = getCategoryHubUrl(category.slug);
-					return {
-						"@type": "ListItem",
-						position: index + 1,
-						item: {
-							"@type": "CollectionPage",
-							name: category.name,
-							// No hub page for this category (see
-							// NO_HUB_CATEGORY_SLUGS): name only, never
-							// a dead link.
-							...(hubRoute
-								? { url: buildCanonicalUrl(hubRoute) }
-								: {}),
-							description: category.description,
-						},
-					};
-				}),
-			},
-		};
-
-		// WebSite is rendered globally in app/layout.tsx
-		return (
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(toolsCollectionStructuredData).replace(/</g, "\\u003c"),
-				}}
-			/>
 		);
 	}
 

@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 export const metadata: Metadata = {
 	title: "Embedded Video Player — SopKit",
 	description: "Embedded SopKit video player widget.",
-	robots: { index: false, follow: false },
+	robots: { index: false, follow: true },
 };
 
 export default function EmbedLayout({

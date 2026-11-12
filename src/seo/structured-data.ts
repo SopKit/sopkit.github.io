@@ -16,26 +16,21 @@ export function buildWebSiteSchema() {
       {
         "@type": "WebSite",
         "@id": `${SEO_CONFIG.siteUrl}/#website`,
-        "url": SEO_CONFIG.siteUrl,
+        "url": `${SEO_CONFIG.siteUrl}/`,
         "name": SEO_CONFIG.siteName,
         "description": SEO_CONFIG.defaultDescription,
         "publisher": {
           "@id": `${SEO_CONFIG.siteUrl}/#organization`,
         },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": `${SEO_CONFIG.siteUrl}/search?q={search_term_string}`,
-          },
-          "query-input": "required name=search_term_string",
-        },
+        // No SearchAction: /search is noindex and robots-disallowed, so a
+        // sitelinks search box would point crawlers at a page they may
+        // not crawl.
       },
       {
         "@type": "Organization",
         "@id": `${SEO_CONFIG.siteUrl}/#organization`,
         "name": SEO_CONFIG.organization.name,
-        "url": SEO_CONFIG.organization.url,
+        "url": `${SEO_CONFIG.organization.url}/`,
         "logo": {
           "@type": "ImageObject",
           "url": SEO_CONFIG.organization.logo,

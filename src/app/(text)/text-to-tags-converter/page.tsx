@@ -20,7 +20,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<TagsFromTextTool />
+			<TagsFromTextTool prefix="" />
 		</ToolLayout>
 	);
 }

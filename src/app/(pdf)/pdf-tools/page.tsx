@@ -1,10 +1,12 @@
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import PDFPillar from "@/components/pillars/PDFPillar";
 import { generateToolMetadata } from "@/lib/seo";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
+import CategoryToolGrid from "@/components/seo/CategoryToolGrid";
 
 export const metadata = generateToolMetadata({
 	name: "PDF Tools",
-	description: "Private PDF Tools: privately compress PDF documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	description: "Private PDF Tools: privately compress PDF documents entirely in your browser. 100% client-side sandbox — no server uploads, no AI training on your files. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
 	route: "/pdf-tools",
 	category: "pdf",
 });
@@ -30,7 +32,13 @@ Unlike competitors who gate productivity behind paywalls and account creation, S
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
+			<CollectionPageJsonLd groupKey="pdf" name="Free Online PDF Tools Collection" description="A complete suite of free online PDF tools to merge, split, compress, and convert PDF files securely." />
 			<PDFPillar />
+			<CategoryToolGrid
+				categorySlug="pdf"
+				heading="All PDF tools"
+				intro="Every PDF utility on SopKit: merge, split, compress, convert, protect, and unlock documents without uploading them."
+			/>
 		</ToolLayout>
 	);
 }

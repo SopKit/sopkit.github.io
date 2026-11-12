@@ -1,17 +1,14 @@
-import { SITE_URL } from "@/constants/config";
-import { generateCollectionPageSchema } from "@/lib/seo";
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 export const metadata = {
 	title: "Free PDF Tools Online - No Signup | SopKit",
 	description:
 		"Professional free PDF tools: merge, split, compress, convert to/from Word, protect with passwords, and unlock secured PDFs. No signup, no watermarks.",
-	keywords:
-		"pdf tools, pdf merger, pdf splitter, pdf compressor, free pdf tools online, online pdf editor, convert pdf to word, word to pdf, image to pdf converter, secure pdf tools, pdf utilities, unlock pdf, protect pdf, compress pdf online free, pdf to image, pdf password remover",
 	openGraph: {
 		title: "Free PDF Tools Online - No Signup | SopKit",
 		description:
 			"Merge, split, compress, and convert PDFs for free. No signup, no watermarks, zero-storage security policy.",
-		url: `${SITE_URL}/pdf-tools`,
+		url: buildCanonicalUrl("/pdf-tools"),
 		siteName: "SopKit",
 		images: [
 			{
@@ -25,6 +22,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "Free PDF Tools Online - No Signup | SopKit",
 		description:
 			"Merge, split, compress, and convert PDFs for free. No signup, no watermarks, zero-storage security policy.",
@@ -32,11 +30,6 @@ export const metadata = {
 	},
 	robots: { index: true, follow: true },
 };
-
-const collectionPageSchema = generateCollectionPageSchema('pdf', {
-	name: 'Free Online PDF Tools Collection',
-	description: 'A complete suite of free online PDF tools to merge, split, compress, and convert PDF files securely.'
-});
 
 export default function PDFToolsLayout({
 	children,
@@ -46,12 +39,6 @@ export default function PDFToolsLayout({
 	return (
 		<div className="min-h-screen flex flex-col bg-background selection:bg-primary/10">
 			<main className="flex-1">{children}</main>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(collectionPageSchema),
-				}}
-			/>
 		</div>
 	);
 }

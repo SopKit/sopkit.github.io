@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { STATIC_ROUTES } from "@/lib/tools";
+import { STATIC_ROUTES } from "@/constants/routes";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { GITHUB_REPO_URL } from "@/constants/config";
 

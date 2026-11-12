@@ -47,7 +47,7 @@ type HeroSearchResult = {
 
 const INTENT_TARGETS: Record<string, string[]> = {
 	"compress image": ["image-compressor", "compress-image-to-50kb", "bulk-image-compressor"],
-	"merge pdf": ["merge-pdf-online", "split-pdf"],
+	"merge pdf": ["pdf-merger", "split-pdf"],
 	"format json": ["json-formatter", "json-validator"],
 	"remove bg": ["background-remover", "image-resizer"],
 	"calculate gpa": ["cgpa-calculator", "gpa-calculator"],
@@ -102,7 +102,7 @@ function getProcessingLabel(tool: SearchToolRecord) {
 
 const QUICK_TASK_CHIPS = [
 	{ label: "Compress Image", href: "/image-compressor", icon: "🖼️" },
-	{ label: "Merge PDF", href: "/merge-pdf-online", icon: "📑" },
+	{ label: "Merge PDF", href: "/pdf-merger", icon: "📑" },
 	{ label: "Format JSON", href: "/json-formatter", icon: "💻" },
 	{ label: "Remove Background", href: "/background-remover", icon: "✨" },
 	{ label: "Calculate CGPA", href: "/cgpa-calculator", icon: "🎓" },
@@ -200,7 +200,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 						</span>
 						<span className="font-semibold">{SITE_CONFIG.toolCountString} Utilities</span>
 						<span className="text-muted-foreground/50">·</span>
-						<span className="text-muted-foreground">100% In-Browser Privacy</span>
+						<span className="text-muted-foreground">Browser-First Processing</span>
 						<span className="text-muted-foreground/50">·</span>
 						<span className="text-muted-foreground">Free Forever</span>
 					</div>
@@ -212,7 +212,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 							<span className="italic font-normal">trying to do.</span>
 						</h1>
 						<p className="font-sans text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-							Fast, zero-upload utilities running locally in your browser. Compress images, merge documents, convert code, and crunch numbers without sending your files anywhere.
+							Fast utilities that run in your browser. Compress images, merge documents, convert code, and crunch numbers without uploading your files to our servers.
 						</p>
 					</div>
 
@@ -409,7 +409,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 							<div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted-foreground font-medium">
 								<span className="flex items-center gap-1.5">
 									<ShieldCheck className="h-3.5 w-3.5 text-emerald-500" />
-									Zero Uploads to External Servers
+									Files Processed in Your Browser
 								</span>
 								<span className="flex items-center gap-1.5">
 									<Zap className="h-3.5 w-3.5 text-amber-500" />

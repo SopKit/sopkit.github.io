@@ -1,5 +1,6 @@
 "use client";
 
+import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container } from "@/components/layout/Container";
@@ -8,8 +9,30 @@ import { VisitorBadge } from "@/components/shared/VisitorBadge";
 import { STATIC_ROUTES } from "@/constants/routes";
 import { SITE_CONFIG } from "@/constants/config";
 
+// Mirrors the consent gate in ConsentAwareThirdPartyScripts: the visitor badge
+// is a third-party image request, so it renders only after analytics consent.
+function useAnalyticsConsent(): boolean {
+	const [granted, setGranted] = React.useState(false);
+
+	React.useEffect(() => {
+		const read = () => {
+			try {
+				setGranted(localStorage.getItem("sopkit_consent_analytics") === "granted");
+			} catch {
+				setGranted(false);
+			}
+		};
+		read();
+		window.addEventListener("sopkit-consent-updated", read);
+		return () => window.removeEventListener("sopkit-consent-updated", read);
+	}, []);
+
+	return granted;
+}
+
 export function Footer() {
 	const pathname = usePathname();
+	const analyticsConsent = useAnalyticsConsent();
 	if (pathname?.startsWith("/embed")) {
 		return null;
 	}
@@ -165,7 +188,7 @@ export function Footer() {
 				<div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
 					<p>© {new Date().getFullYear()} SopKit. All utilities are free to use without registration.</p>
 					<div className="flex items-center gap-4">
-						<VisitorBadge path="global" label="TOTAL VISITORS" />
+						{analyticsConsent ? <VisitorBadge path="global" label="TOTAL VISITORS" /> : null}
 						<button type="button" onClick={() => window.dispatchEvent(new CustomEvent("sopkit-open-consent"))} className="hover:text-foreground transition-colors">Privacy choices</button>
 						<LanguageSelector />
 					</div>

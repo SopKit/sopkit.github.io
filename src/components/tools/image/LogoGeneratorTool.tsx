@@ -1,6 +1,5 @@
 "use client";
 
-import html2canvas from "html2canvas";
 import {
 	Anchor,
 	Briefcase,
@@ -553,6 +552,7 @@ export default function LogoGeneratorTool() {
 				link.click();
 				URL.revokeObjectURL(url);
 			} else {
+				const { default: html2canvas } = await import("html2canvas");
 				const canvas = await html2canvas(logoRef.current, {
 					useCORS: true,
 					scale: 4,

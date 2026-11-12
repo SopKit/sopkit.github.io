@@ -95,7 +95,7 @@ export default async function PrivacyPage() {
 													Executed entirely on your local device via JavaScript, HTML5 Canvas, and WebAssembly.
 												</td>
 												<td className="border border-border p-2.5">
-													<strong>Zero server uploads:</strong> Your files, images, and text inputs never leave your computer or browser tab.
+													<strong>No server upload:</strong> These tools do not send your files, images, or text inputs to SopKit servers.
 												</td>
 											</tr>
 											<tr>
@@ -112,14 +112,14 @@ export default async function PrivacyPage() {
 											</tr>
 											<tr>
 												<td className="border border-border p-2.5 font-medium">
-													Network & Edge Proxies<br />
-													<span className="text-xs text-muted-foreground">(e.g., DNS, HTTP header checks)</span>
+													Third-Party Public Data<br />
+													<span className="text-xs text-muted-foreground">(e.g., YouTube thumbnail and link preview tools)</span>
 												</td>
 												<td className="border border-border p-2.5">
-													Network queries that require cross-origin fetches are processed through secure edge proxy endpoints.
+													A few tools fetch publicly available data from a third-party service directly from your browser (for example, YouTube thumbnails from img.youtube.com).
 												</td>
 												<td className="border border-border p-2.5">
-													Ephemeral processing only; tool payloads and target responses are not permanently logged or retained.
+													<strong>Direct fetch:</strong> The URL or ID you enter is sent to that third-party service, subject to its own privacy policy. SopKit has no server in that path and does not receive it.
 												</td>
 											</tr>
 										</tbody>
@@ -136,7 +136,11 @@ export default async function PrivacyPage() {
 									<li><strong>Google Analytics 4 (GA4):</strong> Loads only after you grant analytics consent. We record aggregate page views, performance metrics, and tool lifecycle events while stripping query parameters and sensitive values from URLs.</li>
 									<li><strong>Microsoft Clarity:</strong> Loads only after analytics consent and is used for usability diagnostics such as heatmaps and session replay.</li>
 									<li><strong>OneDollarStats:</strong> Loads only after analytics consent for lightweight visitor measurement.</li>
+									<li><strong>Stack Auth SDK:</strong> The optional sign-in feature loads the Stack Auth client library in your browser after the page renders. It may contact Stack Auth servers to check for an existing session. No account is required to use the tools.</li>
 								</ul>
+								<p className="text-sm leading-relaxed">
+									<strong>How consent works:</strong> Analytics and advertising scripts stay unloaded until you accept them in the consent banner or the Privacy choices control in the footer. Your choice is stored in your browser and can be changed or withdrawn at any time; withdrawing consent stops those scripts from loading on your next page view.
+								</p>
 							</section>
 
 							<section className="space-y-3">

@@ -1,17 +1,14 @@
-import { SITE_URL } from "@/constants/config";
-import { generateCollectionPageSchema } from "@/lib/seo";
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 export const metadata = {
 	title: "Free Developer Tools Online - No Signup | SopKit",
 	description:
 		"Free developer tools for JSON formatting, Base64 encoding, JWT decoding, and hash generation. Your code never leaves the browser.",
-	keywords:
-		"developer tools, json formatter, jwt decoder, base64 encoder, base64 decoder, hash generator, regex tester, css minifier, html validator, free developer utilities, online coding tools, debug jwt, validate json, url encoder, developer toolkit",
 	openGraph: {
 		title: "Free Developer Tools Online - No Signup | SopKit",
 		description:
 			"Essential developer tools for JSON, JWT, Base64, hashing, and more. Secure client-side processing with no signup.",
-		url: `${SITE_URL}/developer-tools`,
+		url: buildCanonicalUrl("/developer-tools"),
 		siteName: "SopKit",
 		images: [
 			{
@@ -25,6 +22,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "Free Developer Tools Online - No Signup | SopKit",
 		description:
 			"Essential developer tools for JSON, JWT, Base64, hashing, and more. Secure client-side processing with no signup.",
@@ -33,11 +31,6 @@ export const metadata = {
 	robots: { index: true, follow: true },
 };
 
-const collectionPageSchema = generateCollectionPageSchema('developer', {
-	name: 'Free Developer Tools Collection',
-	description: 'Essential suite of free online developer utilities for JSON, Base64, and JWT operations.'
-});
-
 export default function DeveloperToolsLayout({
 	children,
 }: {
@@ -45,12 +38,6 @@ export default function DeveloperToolsLayout({
 }) {
 	return (
 		<div className="min-h-screen flex flex-col bg-background selection:bg-primary/10">
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(collectionPageSchema),
-				}}
-			/>
 			<main className="flex-1">{children}</main>
 		</div>
 	);

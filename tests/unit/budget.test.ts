@@ -5,12 +5,35 @@ import { validatePerformancePolicy } from "../../src/performance/policy";
 describe("Performance Governance", () => {
   it("resolves route categories correctly", () => {
     expect(resolveRouteCategory("/")).toBe("marketing");
+    expect(resolveRouteCategory("/about")).toBe("marketing");
+    expect(resolveRouteCategory("/contact")).toBe("marketing");
+    expect(resolveRouteCategory("/pro")).toBe("marketing");
+    expect(resolveRouteCategory("/privacy")).toBe("content");
+    expect(resolveRouteCategory("/terms")).toBe("content");
+    expect(resolveRouteCategory("/dmca")).toBe("content");
     expect(resolveRouteCategory("/tools")).toBe("directory");
+    expect(resolveRouteCategory("/archive")).toBe("directory");
+    expect(resolveRouteCategory("/new-tools")).toBe("directory");
+    expect(resolveRouteCategory("/tool-guides")).toBe("directory");
+    expect(resolveRouteCategory("/packages")).toBe("directory");
+    expect(resolveRouteCategory("/search")).toBe("directory");
+    expect(resolveRouteCategory("/image-tools")).toBe("directory");
+    expect(resolveRouteCategory("/pdf-tools/")).toBe("directory");
+    expect(resolveRouteCategory("/calculators")).toBe("directory");
     expect(resolveRouteCategory("/blog/top-tools")).toBe("content");
-    expect(resolveRouteCategory("/docs/api")).toBe("documentation");
-    expect(resolveRouteCategory("/developers/sdk")).toBe("developer");
+    expect(resolveRouteCategory("/tool-guides/image-tools")).toBe("content");
     expect(resolveRouteCategory("/embed-tool")).toBe("utility");
+    expect(resolveRouteCategory("/embed")).toBe("utility");
     expect(resolveRouteCategory("/ai-image-generator")).toBe("tool");
+    expect(resolveRouteCategory("/json-formatter/?q=1")).toBe("tool");
+  });
+
+  it("has no dead route patterns", () => {
+    // These paths do not exist on the site; they must fall through to the
+    // default tool budget rather than a bespoke category.
+    for (const dead of ["/categories", "/explore", "/articles/x", "/guides/x", "/docs/api", "/developers/sdk", "/api-docs", "/widget"]) {
+      expect(resolveRouteCategory(dead)).toBe("tool");
+    }
   });
 
   it("assigns strict budgets to tool routes", () => {

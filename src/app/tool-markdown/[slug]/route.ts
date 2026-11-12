@@ -10,12 +10,19 @@ import { buildCanonicalUrl } from "@/seo/canonical";
 // keep the markdown mirror from becoming an indexable duplicate of every tool
 // page, only curated tools (the ones whose HTML page advertises the markdown
 // alternate) are exported; every other slug is simply absent from the build.
+//
+// The exported slug carries a `.md` extension: with `trailingSlash: true`
+// an extensionless slug is written as a bare file that GitHub Pages cannot
+// serve at `/tool-markdown/<id>/`, whereas `/tool-markdown/<id>.md` is a
+// real file served with a text/markdown content type.
 export const dynamic = "force-static";
+
+const MARKDOWN_EXTENSION = ".md";
 
 export async function generateStaticParams() {
 	return getAllTools()
 		.filter((t) => isCuratedContent(t.id))
-		.map((t) => ({ slug: t.id }));
+		.map((t) => ({ slug: `${t.id}${MARKDOWN_EXTENSION}` }));
 }
 
 export async function GET(
@@ -23,13 +30,15 @@ export async function GET(
 	props: { params: Promise<{ slug: string }> }
 ) {
 	const params = await props.params;
-	const slug = params.slug;
+	const slug = params.slug.endsWith(MARKDOWN_EXTENSION)
+		? params.slug.slice(0, -MARKDOWN_EXTENSION.length)
+		: params.slug;
 
 	const allTools = getAllTools();
 	const tool = allTools.find((t) => t.id === slug || t.route === `/${slug}`);
 
 	if (!tool) {
-		return new Response(`# Tool Not Found\n\nThe requested tool \`${slug}\` does not exist on SopKit.\n\nBrowse all tools at ${SITE_URL}/tools\n`, {
+		return new Response(`# Tool Not Found\n\nThe requested tool \`${slug}\` does not exist on SopKit.\n\nBrowse all tools at ${SITE_URL}/tools/\n`, {
 			status: 404,
 			headers: {
 				"Content-Type": "text/markdown; charset=utf-8",
@@ -102,7 +111,7 @@ export async function GET(
 		lines.push("## Related Tools");
 		lines.push("");
 		related.forEach((rel) => {
-			lines.push(`- [${rel.name}](${SITE_URL}${rel.route}) — ${rel.description}`);
+			lines.push(`- [${rel.name}](${buildCanonicalUrl(rel.route)}) — ${rel.description}`);
 		});
 		lines.push("");
 	}

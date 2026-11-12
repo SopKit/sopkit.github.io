@@ -20,7 +20,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<ImageConverterTool defaultOutputFormat="jpeg" />
+			<ImageConverterTool defaultOutputFormat="webp" />
 		</ToolLayout>
 	);
 }

@@ -1,17 +1,14 @@
-import { SITE_URL } from "@/constants/config";
-import { generateCollectionPageSchema } from "@/lib/seo";
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 export const metadata = {
 	title: "Free AI Generator Tools Online - No Signup | SopKit",
 	description:
 		"Free AI generator tools: create images from text prompts, generate natural voiceovers with text-to-speech, produce QR codes with logos, and build passwords.",
-	keywords:
-		"ai generator tools, ai image generator, ai voice generator, free ai tools, content creation ai, text to speech free, text to image free, qr code generator free, password generator secure, lorem ipsum generator, free online generators, ai content generator",
 	openGraph: {
 		title: "Free AI Generator Tools Online - No Signup | SopKit",
 		description:
 			"Generate AI images, voiceovers, QR codes, and passwords for free. Customizable, no watermarks, instant download.",
-		url: `${SITE_URL}/generators`,
+		url: buildCanonicalUrl("/generators"),
 		siteName: "SopKit",
 		images: [
 			{
@@ -25,6 +22,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "Free AI Generator Tools Online - No Signup | SopKit",
 		description:
 			"Generate AI images, voiceovers, QR codes, and passwords for free. Customizable, no watermarks, instant download.",
@@ -33,11 +31,6 @@ export const metadata = {
 	robots: { index: true, follow: true },
 };
 
-const collectionPageSchema = generateCollectionPageSchema('generators', {
-	name: 'AI Generator Tools Collection',
-	description: 'Suite of powerful free AI generator tools for images and voice.'
-});
-
 export default function GeneratorsLayout({
 	children,
 }: {
@@ -45,12 +38,6 @@ export default function GeneratorsLayout({
 }) {
 	return (
 		<div className="min-h-screen flex flex-col bg-background selection:bg-primary/10">
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(collectionPageSchema),
-				}}
-			/>
 			<main className="flex-1">{children}</main>
 		</div>
 	);

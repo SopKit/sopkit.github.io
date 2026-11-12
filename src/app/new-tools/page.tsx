@@ -1,4 +1,4 @@
-import { SITE_URL } from "@/constants/config";
+import { buildCanonicalUrl } from "@/seo/canonical";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -8,20 +8,20 @@ import { ToolTrust } from "@/components/tools/shared/ToolSharedComponents";
 export const metadata = {
 	title: "New Tools & Updates — Latest Free Tools | SopKit",
 	description: "Discover the newest free online tools added to SopKit's library. Track release updates, from embed widgets and API testers to calculators and YouTube utilities.",
-	keywords: "new online tools, free tools added, latest online utilities, new browser tools, sopkit updates, free online toolkit, newly added web tools",
 	alternates: {
-		canonical: `${SITE_URL}/new-tools`,
+		canonical: buildCanonicalUrl("/new-tools"),
 	},
 	openGraph: {
 		title: "New Tools & Updates — Latest Free Tools | SopKit",
 		description: "Discover the newest free online tools added to SopKit's library. Track release updates — from embed widgets and API testers to calculators, YouTube utilities.",
-		url: `${SITE_URL}/new-tools`,
+		url: buildCanonicalUrl("/new-tools"),
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "New Tools & Updates — Latest Free Tools | SopKit",
 		description: "Discover the newest free online tools added to SopKit's library. Track release updates — from embed widgets and API testers to calculators, YouTube utilities.",
 		images: ["/og-image.jpg"],

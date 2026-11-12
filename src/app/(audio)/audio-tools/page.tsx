@@ -1,14 +1,15 @@
-import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, getAllCategories, Tool, getSearchToolRecords } from "@/lib/tools";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Music, ArrowRight, Sparkles } from "lucide-react";
 import { generateToolMetadata } from "@/lib/seo";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
 
 export const metadata = generateToolMetadata({
 	name: "Audio Tools",
-	description: "Private Audio Tools: privately convert audio files entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	description: "Private Audio Tools: privately convert audio files entirely in your browser. 100% client-side sandbox — no server uploads, no AI training on your files. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
 	route: "/audio-tools",
 	category: "audio",
 });
@@ -22,8 +23,10 @@ export default function AudioHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
+			<CollectionPageJsonLd groupKey="audio" name="Online Audio Tools" description="Collection of free audio utilities including Text to Speech." />
 			<main>
-				<PremiumHero 
+				<PremiumHero
+					tools={getSearchToolRecords()}
 					title="Audio Utilities — Free Convert & Edit Tools"
 					subtitle="Convert, compress, and edit audio files 100% free in your browser. No signup, no uploads to servers — everything stays private."
 				/>

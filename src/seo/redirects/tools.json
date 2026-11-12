@@ -26,133 +26,133 @@
   },
   {
     "from": "/youtube-video-downloader",
-    "to": "/youtube-downloader",
-    "reason": "duplicate of /youtube-downloader (same component)"
+    "to": "/youtube-tools",
+    "reason": "duplicate of /youtube-downloader (same component); target later retired, now /youtube-tools"
   },
   {
     "from": "/downloaders",
-    "to": "/all-downloaders",
-    "reason": "duplicate of /all-downloaders (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /all-downloaders (same component); target later retired, now /video-tools"
   },
   {
     "from": "/save-fb-stories-anonymous",
-    "to": "/facebook-story-downloader",
-    "reason": "duplicate of /facebook-story-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /facebook-story-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/fb-video-saver",
-    "to": "/facebook-video-downloader",
-    "reason": "duplicate of /facebook-video-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /facebook-video-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/fb-clip-downloader",
-    "to": "/facebook-video-downloader",
-    "reason": "duplicate of /facebook-video-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /facebook-video-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/free-mp3-extractor",
-    "to": "/mp3-from-tiktok",
-    "reason": "duplicate of /mp3-from-tiktok (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /mp3-from-tiktok (same component); target later retired, now /video-tools"
   },
   {
     "from": "/ig-highlights-saver",
-    "to": "/instagram-story-downloader",
-    "reason": "duplicate of /instagram-story-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /instagram-story-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/insta-reels-saver",
-    "to": "/instagram-reel-downloader",
-    "reason": "duplicate of /instagram-reel-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /instagram-reel-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/save-instagram-clips",
-    "to": "/instagram-reel-downloader",
-    "reason": "duplicate of /instagram-reel-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /instagram-reel-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/save-reels-video",
-    "to": "/instagram-reel-downloader",
-    "reason": "duplicate of /instagram-reel-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /instagram-reel-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/ig-reels-downloader-hd",
-    "to": "/instagram-reel-downloader",
-    "reason": "duplicate of /instagram-reel-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /instagram-reel-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/instagram-videos-downloader",
-    "to": "/instagram-downloader",
-    "reason": "duplicate of /instagram-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /instagram-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/save-ig-content",
-    "to": "/instagram-downloader",
-    "reason": "duplicate of /instagram-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /instagram-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/save-insta-pfp",
-    "to": "/instagram-image-downloader",
-    "reason": "duplicate of /instagram-image-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /instagram-image-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/modify-mp3-file",
-    "to": "/mp4-to-mp3",
-    "reason": "duplicate of /mp4-to-mp3 (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /mp4-to-mp3 (same component); target later retired, now /video-tools"
   },
   {
     "from": "/shrink-mp3-size",
-    "to": "/mp4-to-mp3",
-    "reason": "duplicate of /mp4-to-mp3 (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /mp4-to-mp3 (same component); target later retired, now /video-tools"
   },
   {
     "from": "/pinterest-clip-saver",
-    "to": "/pinterest-video-downloader",
-    "reason": "duplicate of /pinterest-video-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /pinterest-video-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/pinterest-gif-downloader",
-    "to": "/pinterest-video-downloader",
-    "reason": "duplicate of /pinterest-video-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /pinterest-video-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/reddit-media-saver",
-    "to": "/reddit-downloader",
-    "reason": "duplicate of /reddit-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /reddit-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/reddit-video-downloader",
-    "to": "/reddit-downloader",
-    "reason": "duplicate of /reddit-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /reddit-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/save-snaps-to-gallery",
-    "to": "/snapchat-video-downloader",
-    "reason": "duplicate of /snapchat-video-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /snapchat-video-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/snapchat-saver-online",
-    "to": "/snapchat-video-downloader",
-    "reason": "duplicate of /snapchat-video-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /snapchat-video-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/save-tiktok-mp4",
-    "to": "/tiktok-downloader",
-    "reason": "duplicate of /tiktok-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /tiktok-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/tiktok-saver-no-watermark",
-    "to": "/tiktok-downloader",
-    "reason": "duplicate of /tiktok-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /tiktok-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/tiktok-videos-downloader",
-    "to": "/tiktok-downloader",
-    "reason": "duplicate of /tiktok-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /tiktok-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/save-twitter-videos",
-    "to": "/twitter-video-downloader",
-    "reason": "duplicate of /twitter-video-downloader (same component)"
+    "to": "/video-tools",
+    "reason": "duplicate of /twitter-video-downloader (same component); target later retired, now /video-tools"
   },
   {
     "from": "/base64-encode",
@@ -183,5 +183,715 @@
     "from": "/ai-poem-generator",
     "to": "/poetry-generator",
     "reason": "duplicate of /poetry-generator (same component)"
+  },
+  {
+    "from": "/ai-music-generator",
+    "to": "/ai-tools",
+    "reason": "retired: depended on /api/ai/music which the static export cannot serve"
+  },
+  {
+    "from": "/akillitv-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/all-downloaders",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/backlink-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/bandcamp-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/bilibili-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/bitchute-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/blogger-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/blutv-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/bulk-keyword-rank-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/buzzfeed-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/capcut-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/chingari-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/dailymotion-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/domain-age-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/douyin-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/espn-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/facebook-id-finder",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/facebook-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/febspot-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/flickr-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/gaana-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/get-http-headers",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/google-cache-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/google-index-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/hosting-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/http-status-code-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/ifunny-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/imdb-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/imgur-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/indexnow",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/instagram-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/instagram-reel-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/izlesene-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/kickstarter-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/kwai-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/likee-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/linkedin-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/m3u8-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/mashable-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/mixcloud-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/mp3-from-tiktok",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/mp4-to-mp3",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/mxtakatak-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/ninegag-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/odnoklassniki-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/online-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/open-graph-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/page-size-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/periscope-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/pinterest-image-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/pinterest-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/puhutv-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/reddit-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/redirect-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/rumble-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/seo-audit-tool",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/server-status-checker",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/sharechat-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/sitemap-generator",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/sitemap-url-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/snapchat-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/soundcloud-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/streamable-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/ted-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/telegram-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/threads-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/tiktok-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/tumblr-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/twitch-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/twitter-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/universal-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/vimeo-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/visual-sitemap",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/vkontakte-video-downloader",
+    "to": "/video-tools",
+    "reason": "retired: depended on /api/proxy/universal which the static export cannot serve"
+  },
+  {
+    "from": "/whois-domain-lookup",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/wordpress-theme-detector",
+    "to": "/seo-tools",
+    "reason": "retired: depended on /api/tools/safe-http which the static export cannot serve"
+  },
+  {
+    "from": "/youtube-channel-age-checker",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-channel-banner-downloader",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-channel-finder",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-channel-id-extractor",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-channel-logo-downloader",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-channel-statistics",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-comment-picker",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-description-extractor",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-downloader",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-hashtag-extractor",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-hashtag-generator",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-playlist-link-extractor",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-region-restriction-checker",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-shorts-downloader",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-tag-extractor",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-tag-generator",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-title-extractor",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-video-count-checker",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-video-statistics",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/youtube-views-ratio-calculator",
+    "to": "/youtube-tools",
+    "reason": "retired: depended on server-side YouTube API that the static export cannot run"
+  },
+  {
+    "from": "/facebook-story-downloader",
+    "to": "/video-tools",
+    "reason": "retired: component rendered placeholder data, never fetched real media"
+  },
+  {
+    "from": "/instagram-story-downloader",
+    "to": "/video-tools",
+    "reason": "retired: component rendered placeholder data, never fetched real media"
+  },
+  {
+    "from": "/instagram-image-downloader",
+    "to": "/video-tools",
+    "reason": "retired: component rendered placeholder data, never fetched real media"
+  },
+  {
+    "from": "/keywords-suggestion-tool",
+    "to": "/keyword-density-checker",
+    "reason": "retired: rendered hard-coded mock keyword data"
+  },
+  {
+    "from": "/keyword-research-tool",
+    "to": "/keyword-density-checker",
+    "reason": "retired: rendered hard-coded mock keyword data"
+  },
+  {
+    "from": "/article-rewriter",
+    "to": "/text-tools",
+    "reason": "retired: no working rewriter behind the page"
+  },
+  {
+    "from": "/url-rewriting-tool",
+    "to": "/htaccess-redirect-generator",
+    "reason": "folded into /htaccess-redirect-generator"
+  },
+  {
+    "from": "/image-cropper",
+    "to": "/circular-image-crop",
+    "reason": "folded into /circular-image-crop"
+  },
+  {
+    "from": "/flip-image",
+    "to": "/image-resizer",
+    "reason": "folded into /image-resizer"
+  },
+  {
+    "from": "/rotate-image",
+    "to": "/image-resizer",
+    "reason": "folded into /image-resizer"
+  },
+  {
+    "from": "/image-enlarger",
+    "to": "/image-resizer",
+    "reason": "folded into /image-resizer"
+  },
+  {
+    "from": "/image-editor",
+    "to": "/photo-enhancer",
+    "reason": "folded into /photo-enhancer"
+  },
+  {
+    "from": "/jpg-to-bmp-converter",
+    "to": "/image-converter",
+    "reason": "folded into /image-converter"
+  },
+  {
+    "from": "/png-to-bmp-converter",
+    "to": "/image-converter",
+    "reason": "folded into /image-converter"
+  },
+  {
+    "from": "/jpg-to-gif-converter",
+    "to": "/image-converter",
+    "reason": "folded into /image-converter"
+  },
+  {
+    "from": "/png-to-gif-converter",
+    "to": "/image-converter",
+    "reason": "folded into /image-converter"
+  },
+  {
+    "from": "/jpg-to-ico-converter",
+    "to": "/favicon-generator",
+    "reason": "folded into /favicon-generator"
+  },
+  {
+    "from": "/png-to-ico-converter",
+    "to": "/favicon-generator",
+    "reason": "folded into /favicon-generator"
+  },
+  {
+    "from": "/convert-to-ico",
+    "to": "/favicon-generator",
+    "reason": "folded into /favicon-generator"
+  },
+  {
+    "from": "/screen-resolution-simulator",
+    "to": "/what-is-my-screen-resolution",
+    "reason": "folded into /what-is-my-screen-resolution"
+  },
+  {
+    "from": "/reactive-energy-converter",
+    "to": "/energy-converter",
+    "reason": "folded into /energy-converter (same preset)"
+  },
+  {
+    "from": "/each-converter",
+    "to": "/length-converter",
+    "reason": "folded into /length-converter (nearest unit converter)"
+  },
+  {
+    "from": "/robots-txt-sitemap-generator",
+    "to": "/seo-tools",
+    "reason": "retired: no dedicated robots.txt generator route; nearest hub"
+  },
+  {
+    "from": "/compress-pdf-to-exact-kb",
+    "to": "/pdf-compressor",
+    "reason": "folded into /pdf-compressor"
+  },
+  {
+    "from": "/aadhaar-pan-photo-resizer",
+    "to": "/pan-card-photo-resizer",
+    "reason": "folded into /pan-card-photo-resizer"
+  },
+  {
+    "from": "/color-converter",
+    "to": "/hex-to-rgb-converter",
+    "reason": "folded into /hex-to-rgb-converter"
+  },
+  {
+    "from": "/json-validator",
+    "to": "/json-formatter",
+    "reason": "duplicate of /json-formatter"
+  },
+  {
+    "from": "/json-editor",
+    "to": "/json-formatter",
+    "reason": "duplicate of /json-formatter"
+  },
+  {
+    "from": "/json-viewer",
+    "to": "/json-formatter",
+    "reason": "duplicate of /json-formatter"
+  },
+  {
+    "from": "/attendance-shortage-calculator",
+    "to": "/75-attendance-calculator",
+    "reason": "duplicate of /75-attendance-calculator"
+  },
+  {
+    "from": "/bmi-ideal-weight-calculator",
+    "to": "/ideal-body-weight-calculator",
+    "reason": "duplicate of /ideal-body-weight-calculator"
+  },
+  {
+    "from": "/number-to-word-converter",
+    "to": "/number-to-words-converter",
+    "reason": "duplicate of /number-to-words-converter"
+  },
+  {
+    "from": "/secure-password-generator",
+    "to": "/password-generator",
+    "reason": "duplicate of /password-generator"
+  },
+  {
+    "from": "/text-to-slug-converter",
+    "to": "/slug-generator",
+    "reason": "duplicate of /slug-generator"
+  },
+  {
+    "from": "/random-uuid-generator",
+    "to": "/uuid-generator",
+    "reason": "duplicate of /uuid-generator"
+  },
+  {
+    "from": "/simple-invoice-generator",
+    "to": "/invoice-generator-india",
+    "reason": "duplicate of /invoice-generator-india"
+  },
+  {
+    "from": "/merge-pdf-online",
+    "to": "/pdf-merger",
+    "reason": "duplicate of /pdf-merger"
+  },
+  {
+    "from": "/pdf-to-image",
+    "to": "/pdf-to-jpg-converter",
+    "reason": "duplicate of /pdf-to-jpg-converter"
+  },
+  {
+    "from": "/roman-numerals-to-number",
+    "to": "/roman-numerals-converter",
+    "reason": "duplicate of /roman-numerals-converter"
+  },
+  {
+    "from": "/compress-image-to-exact-kb",
+    "to": "/image-compressor",
+    "reason": "duplicate of /image-compressor"
+  },
+  {
+    "from": "/small-business-tools",
+    "to": "/business-tools",
+    "reason": "hub overlap: folded into /business-tools"
+  },
+  {
+    "from": "/local-business-tools",
+    "to": "/business-tools",
+    "reason": "hub overlap: folded into /business-tools"
+  },
+  {
+    "from": "/calculator-tools",
+    "to": "/calculators",
+    "reason": "hub overlap: folded into /calculators"
+  },
+  {
+    "from": "/seo-tools-free-online",
+    "to": "/seo-tools",
+    "reason": "guide page described retired SEO checker tools; merged into the SEO hub"
+  },
+  {
+    "from": "/top-10-free-online-tools-for-seo",
+    "to": "/seo-tools",
+    "reason": "guide page described retired SEO checker tools; merged into the SEO hub"
   }
 ]

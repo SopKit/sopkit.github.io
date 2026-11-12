@@ -68,7 +68,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Run anything questionable through a{" "}
-						<Link href="/json-validator" className="text-primary underline">JSON validator</Link>{" "}
+						<Link href="/json-formatter" className="text-primary underline">JSON validator</Link>{" "}
 						before blaming your code. It pinpoints the exact line and character
 						where parsing fails, which turns a ten-minute hunt through nested
 						objects into a five-second fix — usually a trailing comma or a
@@ -80,7 +80,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Formatting helps; collapsing helps more. A{" "}
-						<Link href="/json-viewer" className="text-primary underline">JSON viewer</Link>{" "}
+						<Link href="/json-formatter" className="text-primary underline">JSON viewer</Link>{" "}
 						renders trees you can fold node by node, ideal for orienting
 						yourself in an unfamiliar API response before writing a single
 						line against it.
@@ -91,7 +91,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Sometimes you need to edit, not just read. A{" "}
-						<Link href="/json-editor" className="text-primary underline">JSON editor</Link>{" "}
+						<Link href="/json-formatter" className="text-primary underline">JSON editor</Link>{" "}
 						validates as you type, so a deleted brace announces itself
 						immediately instead of three saves later.
 					</p>

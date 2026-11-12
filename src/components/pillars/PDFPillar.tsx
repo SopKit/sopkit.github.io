@@ -25,7 +25,7 @@ const pdfTools = [
         description: "Transform your documents to and from PDF without losing formatting.",
         tools: [
             { name: "Image to PDF", icon: FileImage, href: "/image-to-pdf", desc: "Convert JPG, PNG, WEBP to PDF" },
-            { name: "PDF to Image", icon: FileImage, href: "/pdf-to-image", desc: "Extract pages as JPG or PNG" },
+            { name: "PDF to Image", icon: FileImage, href: "/pdf-to-jpg-converter", desc: "Extract pages as JPG or PNG" },
             { name: "Word to PDF", icon: FileText, href: "/word-to-pdf", desc: "High-quality DOCX conversion" },
             { name: "PDF to Word", icon: FileText, href: "/pdf-to-word", desc: "Edit PDFs in Microsoft Word" },
             { name: "HTML to PDF", icon: FileCode, href: "/html-to-pdf", desc: "Convert web snippets to PDF" },

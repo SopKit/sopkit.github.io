@@ -236,12 +236,15 @@ describe("Retired opportunity pages are redirected, not rendered", () => {
 		expect(manifest.length).toBeGreaterThanOrEqual(128);
 	});
 
-	it("no redirect source is still an opportunity route, and every target is a registry tool route", () => {
+	const HUB_TARGETS = new Set(["/seo-tools", "/video-tools", "/youtube-tools", "/image-tools", "/pdf-tools", "/text-tools", "/developer-tools", "/other-tools", "/calculators", "/generators"]);
+	it("no redirect source is still an opportunity route, and every target is a registry tool route or hub", () => {
 		const opportunityRoutes = new Set(seoOpportunities.map((o) => o.route));
 		for (const entry of manifest) {
 			expect(entry.from.startsWith("/"), entry.from).toBe(true);
 			expect(opportunityRoutes.has(entry.from), `${entry.from} still rendered`).toBe(false);
-			expect(toolRoutes.has(entry.to), `${entry.from} -> ${entry.to}`).toBe(true);
+			// A target is either a registry tool route or a category hub (used when
+			// the tool the page promised no longer exists at all).
+			expect(toolRoutes.has(entry.to) || HUB_TARGETS.has(entry.to), `${entry.from} -> ${entry.to}`).toBe(true);
 			expect(entry.from).not.toBe(entry.to);
 			expect(entry.reason.length).toBeGreaterThan(0);
 		}

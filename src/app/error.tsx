@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { STATIC_ROUTES } from "@/lib/tools";
+import { STATIC_ROUTES } from "@/constants/routes";
 
 interface ErrorProps {
   error: Error & { digest?: string };

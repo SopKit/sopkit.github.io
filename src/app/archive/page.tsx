@@ -1,4 +1,4 @@
-import { SITE_URL } from "@/constants/config";
+import { buildCanonicalUrl } from "@/seo/canonical";
 import {
 	CodeIcon,
 	DownloadIcon,
@@ -20,27 +20,29 @@ export const metadata = {
 	title: "Tools Archive | SopKit",
 	description:
 		"Browse our complete directory of free online tools. From image editing and PDF management to SEO audit and developer utilities.",
-	keywords:
-		"tools archive, online tools directory, free online tools, image editors, PDF converters, SEO tools, developer utilities, SopKit",
 	alternates: {
-		canonical: `${SITE_URL}/archive`,
+		canonical: buildCanonicalUrl("/archive"),
 	},
 	openGraph: {
 		title: "Tools Archive | SopKit",
 		description:
 			"Browse our complete directory of free online tools. From image editing and PDF management to SEO audit and developer utilities.",
-		url: `${SITE_URL}/archive`,
+		url: buildCanonicalUrl("/archive"),
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "Tools Archive | SopKit",
 		description:
 			"Browse our complete directory of free online tools. From image editing and PDF management to SEO audit and developer utilities.",
 		images: ["/og-image.jpg"],
 	},
+	// A flat dump of every tool duplicates /tools and the category hubs;
+	// keep it crawlable for link equity but out of the index.
+	robots: { index: false, follow: true },
 };
 
 const categoryIcons: Record<string, any> = {

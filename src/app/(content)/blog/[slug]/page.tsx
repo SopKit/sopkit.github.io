@@ -8,7 +8,8 @@ import AdPlacement from "@/components/ads/AdPlacement";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { Suspense } from "react";
 import { Calendar, Clock, ArrowLeft, ArrowRight, LayoutGrid } from "lucide-react";
-import { formatSeoTitle } from "@/seo/metadata";
+import { formatSeoTitle, formatSeoDescription } from "@/seo/metadata";
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 interface BlogArticlePageProps {
 	params: Promise<{ slug: string }>;
@@ -32,22 +33,17 @@ export async function generateMetadata({ params }: BlogArticlePageProps) {
 		};
 	}
 
-	const canonical = `${SITE_URL}/blog/${article.slug}`;
+	const canonical = buildCanonicalUrl(`/blog/${article.slug}`);
 	const seoTitle = formatSeoTitle(article.title);
+	const seoDescription = formatSeoDescription(article.description);
 
 	return {
 		title: seoTitle,
-		description: article.description,
-		keywords: [
-			article.slug.split("-").join(" "),
-			"free online tools",
-			"SopKit blog",
-			"how to guide",
-		].join(", "),
+		description: seoDescription,
 		alternates: { canonical },
 		openGraph: {
 			title: article.title,
-			description: article.description,
+			description: seoDescription,
 			url: canonical,
 			type: "article",
 			publishedTime: article.date,
@@ -56,8 +52,9 @@ export async function generateMetadata({ params }: BlogArticlePageProps) {
 		},
 		twitter: {
 			card: "summary_large_image",
+			site: "@sopkit",
 			title: article.title,
-			description: article.description,
+			description: seoDescription,
 			images: ["/og-image.jpg"],
 		},
 		robots: { index: true, follow: true },
@@ -87,18 +84,18 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 		author: {
 			"@type": "Organization",
 			name: "SopKit",
-			url: SITE_URL,
+			url: `${SITE_URL}/about/`,
 		},
 		publisher: {
 			"@type": "Organization",
 			name: "SopKit",
-			url: SITE_URL,
+			url: `${SITE_URL}/`,
 			logo: {
 				"@type": "ImageObject",
 				url: `${SITE_URL}/icons/icon-512x512.png`,
 			},
 		},
-		mainEntityOfPage: `${SITE_URL}/blog/${article.slug}/`,
+		mainEntityOfPage: buildCanonicalUrl(`/blog/${article.slug}`),
 		image: `${SITE_URL}/og-image.jpg`,
 	};
 
@@ -116,13 +113,13 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 				"@type": "ListItem",
 				position: 2,
 				name: "Blog",
-				item: `${SITE_URL}/blog/`,
+				item: buildCanonicalUrl("/blog"),
 			},
 			{
 				"@type": "ListItem",
 				position: 3,
 				name: article.title,
-				item: `${SITE_URL}/blog/${article.slug}/`,
+				item: buildCanonicalUrl(`/blog/${article.slug}`),
 			},
 		],
 	};

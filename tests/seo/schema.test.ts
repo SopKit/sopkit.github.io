@@ -12,13 +12,16 @@ describe("Schema.org JSON-LD Builders", () => {
     expect(schema["@context"]).toBe("https://schema.org");
     expect(Array.isArray(schema["@graph"])).toBe(true);
     expect(schema["@graph"][0]["@type"]).toBe("WebSite");
+    // /search is noindex and disallowed, so no sitelinks SearchAction.
+    expect(schema["@graph"][0]).not.toHaveProperty("potentialAction");
+    expect(schema["@graph"][0].url).toBe("https://sopkit.space/");
   });
 
   it("builds valid SoftwareApplication schema", () => {
     const schema = buildSoftwareAppSchema({
       name: "PDF Compressor",
       description: "Compress PDF files online securely in browser.",
-      url: "https://sopkit.space/pdf-compressor",
+      url: "https://sopkit.space/pdf-compressor/",
       applicationCategory: "UtilityApplication",
     });
 
@@ -29,9 +32,9 @@ describe("Schema.org JSON-LD Builders", () => {
 
   it("builds valid BreadcrumbList schema", () => {
     const schema = buildBreadcrumbSchema([
-      { name: "Home", item: "https://sopkit.space" },
-      { name: "Tools", item: "https://sopkit.space/tools" },
-      { name: "PDF Compressor", item: "https://sopkit.space/pdf-compressor" },
+      { name: "Home", item: "https://sopkit.space/" },
+      { name: "Tools", item: "https://sopkit.space/tools/" },
+      { name: "PDF Compressor", item: "https://sopkit.space/pdf-compressor/" },
     ]);
 
     expect(schema["@type"]).toBe("BreadcrumbList");

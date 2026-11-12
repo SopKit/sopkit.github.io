@@ -11,55 +11,33 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { getAllTools, getRouteById, STATIC_ROUTES } from "@/lib/tools";
+import { STATIC_ROUTES } from "@/constants/routes";
+
+export interface NotFoundSuggestedTool {
+	id: string;
+	name: string;
+	route: string;
+	description?: string;
+}
 
 // Client-side body of the 404 page. It lives outside src/app/not-found.tsx so
 // that file can stay a Server Component and export metadata; a "use client"
 // module cannot export metadata, and this view needs effects for the legacy
-// YouTube and embed URL rewrites below.
-export default function NotFoundView() {
+// YouTube and embed URL rewrites below. The suggested tools arrive as a
+// serializable prop from the server page so this client module never imports
+// the tool registry.
+export default function NotFoundView({
+	suggestedTools = [],
+}: {
+	suggestedTools?: NotFoundSuggestedTool[];
+}) {
 	const [isRedirecting, setIsRedirecting] = useState(true);
 
 	useEffect(() => {
 		if (typeof window !== "undefined") {
 			const pathname = window.location.pathname;
-			const search = window.location.search;
 
-			// 1. /shorts/:id -> /youtube-downloader/?url=https://www.youtube.com/shorts/:id
-			const shortsMatch = pathname.match(/^\/shorts\/([^/]+)\/?$/);
-			if (shortsMatch) {
-				const id = shortsMatch[1];
-				const youtubeUrl = `https://www.youtube.com/shorts/${id}`;
-				window.location.replace(`/youtube-downloader/?url=${encodeURIComponent(youtubeUrl)}`);
-				return;
-			}
-
-			// 2. /v/:id -> /youtube-downloader/?url=https://www.youtube.com/v/:id
-			const vMatch = pathname.match(/^\/v\/([^/]+)\/?$/);
-			if (vMatch) {
-				const id = vMatch[1];
-				const youtubeUrl = `https://www.youtube.com/v/${id}`;
-				window.location.replace(`/youtube-downloader/?url=${encodeURIComponent(youtubeUrl)}`);
-				return;
-			}
-
-			// 3. /embed-redirect/:id -> /youtube-downloader/?url=https://www.youtube.com/embed/:id
-			const embedMatch = pathname.match(/^\/embed-redirect\/([^/]+)\/?$/);
-			if (embedMatch) {
-				const id = embedMatch[1];
-				const youtubeUrl = `https://www.youtube.com/embed/${id}`;
-				window.location.replace(`/youtube-downloader/?url=${encodeURIComponent(youtubeUrl)}`);
-				return;
-			}
-
-			// 4. /watch -> /youtube-downloader/?url=https://www.youtube.com/watch...
-			if (pathname.startsWith("/watch")) {
-				const youtubeUrl = `https://www.youtube.com/watch${search}`;
-				window.location.replace(`/youtube-downloader/?url=${encodeURIComponent(youtubeUrl)}`);
-				return;
-			}
-
-			// 5. /embed/:player/:videoId -> /embed/?player=:player&id=:videoId
+			// 1. /embed/:player/:videoId -> /embed/?player=:player&id=:videoId
 			const playerEmbedMatch = pathname.match(/^\/embed\/([^/]+)\/([^/]+)\/?$/);
 			if (playerEmbedMatch) {
 				const player = playerEmbedMatch[1];
@@ -72,9 +50,7 @@ export default function NotFoundView() {
 		}
 	}, []);
 
-	const popularTools = getAllTools()
-		.filter((t) => t.popular)
-		.slice(0, 4);
+	const popularTools = suggestedTools.slice(0, 4);
 
 	if (isRedirecting) {
 		return (
@@ -112,7 +88,7 @@ export default function NotFoundView() {
 					</Button>
 
 					<Button asChild variant="outline" size="lg">
-						<Link href={getRouteById("search")}>
+						<Link href={STATIC_ROUTES.SEARCH}>
 							<SearchIcon className="w-4 h-4 mr-2" />
 							Search Tools
 						</Link>

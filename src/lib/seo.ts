@@ -64,7 +64,7 @@ export function generateWebAppSchema({
 		author: {
 			"@type": "Organization",
 			name: "SopKit",
-			url: SITE_URL,
+			url: `${SITE_URL}/`,
 		},
 	};
 }
@@ -195,7 +195,6 @@ const CATEGORY_HUB_URLS: Record<string, string> = {
 	extraction: `${SITE_URL}/extraction-tools`,
 	generators: `${SITE_URL}/generators`,
 	youtube: `${SITE_URL}/youtube-tools`,
-	downloaders: `${SITE_URL}/all-downloaders`,
 	calculators: `${SITE_URL}/calculators`,
 	"exam-tools": `${SITE_URL}/exam-tools`,
 };

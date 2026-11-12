@@ -8,13 +8,13 @@ Allow: /llms-full.txt
 Allow: /tool-markdown/*
 Allow: /feed.xml
 Allow: /sitemap.xml
-Disallow: /search
+Disallow: /search/
 Disallow: /_api/
 
 Canonical-Site: https://sopkit.space
 Index-Summary: https://sopkit.space/llms.txt
 Index-Detailed: https://sopkit.space/llms-full.txt
-Tool-Markdown-Pattern: https://sopkit.space/tool-markdown/{tool-id}
+Tool-Markdown-Pattern: https://sopkit.space/tool-markdown/{tool-id}.md
 Contact: info@sopkit.space
 
 # Platform Architecture & Privacy Disclosures

@@ -66,8 +66,8 @@
 	},
 	{
 		"from": "/open-graph-preview-checker",
-		"to": "/open-graph-checker",
-		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+		"to": "/seo-tools",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool.; target later retired, now /seo-tools"
 	},
 	{
 		"from": "/meta-description-length-checker",
@@ -221,23 +221,23 @@
 	},
 	{
 		"from": "/open-graph-validator",
-		"to": "/open-graph-checker",
-		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+		"to": "/seo-tools",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool.; target later retired, now /seo-tools"
 	},
 	{
 		"from": "/twitter-card-validator",
-		"to": "/open-graph-checker",
-		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+		"to": "/seo-tools",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool.; target later retired, now /seo-tools"
 	},
 	{
 		"from": "/robots-txt-validator",
-		"to": "/robots-txt-sitemap-generator",
-		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+		"to": "/seo-tools",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool.; target later retired, now /seo-tools"
 	},
 	{
 		"from": "/sitemap-validator",
-		"to": "/sitemap-generator",
-		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+		"to": "/seo-tools",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool.; target later retired, now /seo-tools"
 	},
 	{
 		"from": "/website-speed-checker",
@@ -391,18 +391,18 @@
 	},
 	{
 		"from": "/robots-txt-generator",
-		"to": "/robots-txt-sitemap-generator",
-		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+		"to": "/seo-tools",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool.; target later retired, now /seo-tools"
 	},
 	{
 		"from": "/sitemap-xml-generator",
-		"to": "/sitemap-generator",
-		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+		"to": "/seo-tools",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool.; target later retired, now /seo-tools"
 	},
 	{
 		"from": "/visual-sitemap-generator",
-		"to": "/visual-sitemap",
-		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool."
+		"to": "/seo-tools",
+		"reason": "SEO-check page rendered a meta-tag or Open Graph tool that did not match the URL promise; folded into the real tool.; target later retired, now /seo-tools"
 	},
 	{
 		"from": "/url-slug-generator",
@@ -446,13 +446,13 @@
 	},
 	{
 		"from": "/pdf-to-png-converter-online",
-		"to": "/pdf-to-image",
-		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+		"to": "/pdf-to-jpg-converter",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose.; target later retired, now /pdf-to-jpg-converter"
 	},
 	{
 		"from": "/extract-images-from-pdf",
-		"to": "/pdf-to-image",
-		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+		"to": "/pdf-to-jpg-converter",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose.; target later retired, now /pdf-to-jpg-converter"
 	},
 	{
 		"from": "/pdf-password-remover-online",
@@ -496,13 +496,13 @@
 	},
 	{
 		"from": "/merge-pdf-files-online",
-		"to": "/merge-pdf-online",
-		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+		"to": "/pdf-merger",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose.; target later retired, now /pdf-merger"
 	},
 	{
 		"from": "/combine-pdf-files-free",
-		"to": "/merge-pdf-online",
-		"reason": "Synonym / -online / -free twin of the parent tool with templated prose."
+		"to": "/pdf-merger",
+		"reason": "Synonym / -online / -free twin of the parent tool with templated prose.; target later retired, now /pdf-merger"
 	},
 	{
 		"from": "/convert-docx-to-pdf-online",

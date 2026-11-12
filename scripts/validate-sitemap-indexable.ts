@@ -203,7 +203,7 @@ const publicSitemap = path.join(rootDir, "public", "sitemap.xml");
 if (!fs.existsSync(publicSitemap)) fail(`public/sitemap.xml not found`);
 const xml = fs.readFileSync(publicSitemap, "utf8");
 for (const m of xml.matchAll(/<loc>https:\/\/sopkit\.space([^<]*)<\/loc>/g)) {
-  addListed(m[1] === "" ? "/" : m[1], "public/sitemap.xml");
+  addListed(m[1] === "" || m[1] === "/" ? "/" : m[1].replace(/\/$/, ""), "public/sitemap.xml");
 }
 
 const routeSitemap = path.join(rootDir, "src", "app", "sitemap.ts");

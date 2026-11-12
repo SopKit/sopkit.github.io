@@ -82,7 +82,7 @@ export default async function ToolPage() {
 						covered locally. The{" "}
 						<Link href="/pdf-merger" className="text-primary underline">PDF merger</Link>{" "}
 						combines documents in any order you arrange them, while{" "}
-						<Link href="/merge-pdf-online" className="text-primary underline">merge PDF online</Link>{" "}
+						<Link href="/pdf-merger" className="text-primary underline">merge PDF online</Link>{" "}
 						handles quick two-file jobs when you're in a hurry. On the
 						reverse side, the{" "}
 						<Link href="/pdf-splitter" className="text-primary underline">PDF splitter</Link>{" "}
@@ -104,7 +104,7 @@ export default async function ToolPage() {
 						<Link href="/pdf-compressor" className="text-primary underline">PDF compressor</Link>{" "}
 						reduces size with sensible defaults, and if a portal enforces a
 						specific ceiling, the{" "}
-						<Link href="/compress-pdf-to-exact-kb" className="text-primary underline">compress to exact KB tool</Link>{" "}
+						<Link href="/pdf-compressor" className="text-primary underline">compress to exact KB tool</Link>{" "}
 						targets a precise budget — useful for government forms that
 						reject anything over their stated limit. For exam applications
 						in particular, the{" "}
@@ -118,7 +118,7 @@ export default async function ToolPage() {
 						you get <Link href="/pdf-to-word" className="text-primary underline">PDF to Word</Link> for
 						editable text,{" "}
 						<Link href="/pdf-to-jpg-converter" className="text-primary underline">PDF to JPG</Link> and{" "}
-						<Link href="/pdf-to-image" className="text-primary underline">PDF to image</Link>{" "}
+						<Link href="/pdf-to-jpg-converter" className="text-primary underline">PDF to image</Link>{" "}
 						for visual exports, plus inbound conversion via{" "}
 						<Link href="/image-to-pdf" className="text-primary underline">image to PDF</Link>,{" "}
 						<Link href="/word-to-pdf" className="text-primary underline">Word to PDF</Link>, and{" "}

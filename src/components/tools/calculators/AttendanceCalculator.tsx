@@ -189,7 +189,7 @@ export default function AttendanceCalculator() {
 • Target Threshold: ${targetPct}%
 • Status: ${analysis.status === "safe" ? `Compliant — Can safely miss ${analysis.safeBunks} class(es)` : `Shortage — Need to attend ${analysis.classesNeeded} consecutive class(es)`}
 • Classes Missed So Far: ${analysis.missed}
-Calculated privately with SopKit (https://sopkit.space/attendance-shortage-calculator)`;
+Calculated privately with SopKit (https://sopkit.space/75-attendance-calculator/)`;
 
 		navigator.clipboard.writeText(text);
 		setCopied(true);

@@ -1,24 +1,26 @@
-import { SITE_URL } from "@/constants/config";
+import { buildCanonicalUrl } from "@/seo/canonical";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import ExamPillar from "@/components/pillars/ExamPillar";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
+import CategoryToolGrid from "@/components/seo/CategoryToolGrid";
 
 export const metadata = {
 	title: "Free Exam Image & Form Tools Online - No Signup | SopKit",
 	description: "Prepare photos, signatures, and PDFs for online UPSC, SSC, NEET, and JEE forms. Crop, resize, and compress to exact KB limits securely in your browser.",
-	keywords: "exam tools, upsc photo resizer, ssc photo resizer, neet photo resizer, jee photo resizer, signature resizer 20kb, photo compressor 50kb, exam form resizer, SopKit exam",
 	alternates: {
-		canonical: `${SITE_URL}/exam-tools`,
+		canonical: buildCanonicalUrl("/exam-tools"),
 	},
 	openGraph: {
 		title: "Free Exam Image & Form Tools Online - No Signup | SopKit",
 		description: "Prepare photos, signatures, and PDFs for online UPSC, SSC, NEET, and JEE forms. Crop, resize, and compress to exact KB limits securely in your browser.",
-		url: `${SITE_URL}/exam-tools`,
+		url: buildCanonicalUrl("/exam-tools"),
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "Free Exam Image & Form Tools Online - No Signup | SopKit",
 		description: "Prepare photos, signatures, and PDFs for online UPSC, SSC, NEET, and JEE forms. Crop, resize, and compress to exact KB limits securely in your browser.",
 		images: ["/og-image.jpg"],
@@ -50,7 +52,13 @@ We respect your privacy. No personal files are uploaded to our servers. All docu
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
+			<CollectionPageJsonLd groupKey="exam-tools" name="Exam Image & Form Tools" description="Free browser-based tools to crop, resize, and compress photos, signatures, and PDFs to official exam form limits." />
 			<ExamPillar />
+			<CategoryToolGrid
+				categorySlug="exam-tools"
+				heading="All exam tools"
+				intro="Every exam-form utility on SopKit: photo and signature resizers, KB-target compressors, and PDF preparers for UPSC, SSC, NEET, JEE, and more."
+			/>
 		</ToolLayout>
 	);
 }

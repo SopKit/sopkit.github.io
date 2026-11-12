@@ -37,7 +37,6 @@ const HUB_MAP = {
 	others: "/other-tools",
 	generators: "/generators",
 	youtube: "/youtube-tools",
-	downloaders: "/all-downloaders",
 	calculators: "/calculators",
 	"exam-tools": "/exam-tools",
 	health: "/calculators",
@@ -129,7 +128,7 @@ for (const c of cats) {
 		llmsFullLines.push(`#### [${t.name}](${url})`);
 		llmsFullLines.push(`- **Description**: ${desc}`);
 		if (curatedIds.has(t.id)) {
-			llmsFullLines.push(`- **Markdown Representation**: ${BASE}/tool-markdown/${t.id}`);
+			llmsFullLines.push(`- **Markdown Representation**: ${BASE}/tool-markdown/${t.id}.md`);
 		}
 		llmsFullLines.push("");
 	}

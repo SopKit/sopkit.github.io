@@ -1,4 +1,4 @@
-import { getAllToolsByCategory, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, Tool, getSearchToolRecords } from "@/lib/tools";
 import { PRIVACY_HUB_GROUPS } from "@/data/privacy-hub-groups";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
@@ -59,6 +59,7 @@ export default function PrivacyHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<PremiumHero
+				tools={getSearchToolRecords()}
 				title="Privacy & Security Tools — Free Checks & Generators"
 				subtitle="Browse 23 free privacy and security helpers for checks, email safety and compliance documents. Each tool page explains its own processing model."
 			/>

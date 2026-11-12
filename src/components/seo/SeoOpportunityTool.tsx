@@ -7,7 +7,6 @@ import ExamPhotoResizer from "@/components/tools/exam/ExamPhotoResizer";
 import AttendanceCalculator from "@/components/tools/calculators/AttendanceCalculator";
 import AcademicGradesCalculator from "@/components/tools/calculators/AcademicGradesCalculator";
 import QrGeneratorPremium from "@/components/tools/utilities/QrGeneratorPremium";
-import BuiltInSafeHttp from "@/components/tools/built-ins/BuiltInSafeHttp";
 import MetaTagGenerator from "@/components/tools/built-ins/MetaTagGenerator";
 import type { SeoOpportunity } from "@/data/seo-opportunities";
 
@@ -69,9 +68,6 @@ function SeoOpportunityToolInner({
 		return <QrGeneratorPremium initialText={preset.sample} />;
 	}
 
-	if (preset.type === "seo-check" && preset.mode === "open-graph") {
-		return <BuiltInSafeHttp toolId="open-graph-checker" />;
-	}
 
 	if (preset.type === "pdf-compress") {
 		return <PDFCompressor />;

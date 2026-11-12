@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import BlogArchive from "@/components/content/BlogArchive";
-import { SITE_URL } from "@/constants/config";
+import { buildCanonicalUrl } from "@/seo/canonical";
+import { formatSeoDescription } from "@/seo/metadata";
 import { getSortedBlogs } from "@/lib/blog";
 
 interface BlogPaginationPageProps {
@@ -25,20 +26,22 @@ export async function generateMetadata({
   const totalArticles = getSortedBlogs().length;
   const totalPages = Math.max(1, Math.ceil(totalArticles / 12));
   const currentPage = Math.min(Math.max(Number.isFinite(page) ? page : 1, 1), totalPages);
-  const canonical = currentPage === 1
-    ? `${SITE_URL}/blog`
-    : `${SITE_URL}/blog/page/${currentPage}`;
-
+  const canonical = buildCanonicalUrl(
+    currentPage === 1 ? "/blog" : `/blog/page/${currentPage}`,
+  );
+  // Each archive page needs its own description, or every page shares one
+  // duplicate snippet in search results.
+  const description = formatSeoDescription(
+    `Page ${currentPage} of ${totalPages}: practical guides, tutorials, comparisons, and workflows for free online tools and everyday digital tasks.`,
+  );
 
   return {
     title: `SopKit Blog — Page ${currentPage} of ${totalPages}`,
-    description:
-      "Practical guides, tutorials, comparisons, and workflows for free online tools and everyday digital tasks.",
+    description,
     alternates: { canonical },
     openGraph: {
-      title: `SopKit Blog — Page ${currentPage}`,
-      description:
-        "Practical guides, tutorials, comparisons, and workflows for free online tools and everyday digital tasks.",
+      title: `SopKit Blog — Page ${currentPage} of ${totalPages}`,
+      description,
       url: canonical,
       siteName: "SopKit",
       images: [{ url: "/og-image.jpg" }],
@@ -46,9 +49,9 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `SopKit Blog — Page ${currentPage}`,
-      description:
-        "Practical guides, tutorials, comparisons, and workflows for free online tools and everyday digital tasks.",
+      site: "@sopkit",
+      title: `SopKit Blog — Page ${currentPage} of ${totalPages}`,
+      description,
       images: ["/og-image.jpg"],
     },
     robots: { index: true, follow: true },

@@ -4,7 +4,7 @@
  * Follows all .agents architectural constraints:
  *   - Title pattern: `Free [Tool Name] Online — [Action] [Subject] | SopKit` (≤60 chars)
  *   - Meta description: 150-160 chars with primary keyword & client-side privacy
- *   - Canonical URLs normalized without trailing slashes or tracking parameters
+ *   - Canonical URLs normalized to the trailing-slash export form, without tracking parameters
  *   - Separate manual content source of truth via MANUAL_TOOL_CONTENT
  *   - High-fidelity OpenGraph, Twitter cards, Robots directives, and GEO optimization.
  */
@@ -38,6 +38,27 @@ export function resolveOgImage(category?: string, explicitImage?: string): strin
     return `${SEO_CONFIG.siteUrl}${CATEGORY_OG_IMAGES[category]}`;
   }
   return `${SEO_CONFIG.siteUrl}${SEO_CONFIG.defaultOgImage}`;
+}
+
+/**
+ * MIME type for an OpenGraph image, derived from its file extension.
+ * Falls back to PNG (the default OG image is /og-image.png).
+ */
+export function resolveOgImageType(imageUrl: string): string {
+  const extension = imageUrl.split(/[?#]/)[0].split(".").pop()?.toLowerCase();
+  switch (extension) {
+    case "jpg":
+    case "jpeg":
+      return "image/jpeg";
+    case "webp":
+      return "image/webp";
+    case "gif":
+      return "image/gif";
+    case "svg":
+      return "image/svg+xml";
+    default:
+      return "image/png";
+  }
 }
 
 // In-memory indexed registry for O(1) metadata lookups
@@ -85,30 +106,30 @@ export function formatSeoTitle(rawTitle: string): string {
 }
 
 /**
- * Format description strictly between 145 and 165 characters (ideal 150-160 chars)
+ * Format description strictly between 140 and 160 characters (ideal 150-160 chars)
  */
 export function formatSeoDescription(rawDesc: string, toolName?: string): string {
   let desc = rawDesc.trim().replace(/\s+/g, " ");
 
   // If already in optimal zone, return immediately
-  if (desc.length >= 140 && desc.length <= 165) {
+  if (desc.length >= 140 && desc.length <= 160) {
     return desc;
   }
 
   // If shorter than 140 chars, enrich with privacy and browser sandbox guarantee
   if (desc.length < 140) {
-    const privacyAdd = " Fast, browser-based processing on SopKit. Check the tool page for supported formats, processing details, and privacy information.";
-    if (desc.length + privacyAdd.length <= 165) {
+    const privacyAdd = " Fast, browser-based processing on SopKit. See the tool page for supported formats and privacy details.";
+    if (desc.length + privacyAdd.length <= 160) {
       return `${desc}${privacyAdd}`;
     }
     const shortAdd = " Fast, free & private on SopKit.";
-    if (desc.length + shortAdd.length <= 165) {
+    if (desc.length + shortAdd.length <= 160) {
       return `${desc}${shortAdd}`;
     }
   }
 
-  // If longer than 165 chars, truncate at word boundary near 155 chars
-  if (desc.length > 165) {
+  // If longer than 160 chars, truncate at word boundary near 155 chars
+  if (desc.length > 160) {
     const slice = desc.slice(0, 155);
     const lastSpace = slice.lastIndexOf(" ");
     return (lastSpace > 120 ? slice.slice(0, lastSpace) : slice) + "...";
@@ -160,7 +181,8 @@ function getToolActionSubject(cleanName: string, category?: string): { action: s
 
 /**
  * Generate best-in-class metadata for any tool page on SopKit.
- * Sourced directly from MANUAL_TOOL_CONTENT, tools.json, and privacy keywords.
+ * Title and description come from the tools.json registry (seoTitle, seoDescription),
+ * with the page props as a fallback.
  */
 export function constructToolMetadata(props: ToolMetadataInput): Metadata {
   const cleanRoute = props.route.startsWith("/") ? props.route : `/${props.route}`;
@@ -191,35 +213,12 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
   }
   const description = formatSeoDescription(baseDesc, cleanName);
 
-  // 3. Resolve Canonical URL (Strictly normalized, no trailing slash, https)
+  // 3. Resolve Canonical URL (strictly normalized, trailing-slash export form, https)
   const canonical = buildCanonicalUrl(cleanRoute);
 
-  // 4. Resolve Keywords (Tailored long-tail privacy queries)
+  // 4. Category (no `keywords` meta is emitted: Google ignores it and it
+  // reads as keyword stuffing to reviewers)
   const category = props.category || toolFromRegistry?.category || "utility";
-  const executionType = toolFromRegistry?.executionType || "client";
-  const privacyKeywords =
-    executionType === "external" || executionType === "server"
-      ? ["browser-based", "privacy-friendly"]
-      : ["client-side sandbox", "browser-based", "privacy-friendly", "no upload", "secure local"];
-  const defaultKeywords = [
-    cleanName,
-    `free ${cleanName.toLowerCase()} online`,
-    `${cleanName.toLowerCase()} tool`,
-    `${category} tools`,
-    ...privacyKeywords,
-    "free online",
-    "SopKit",
-  ];
-
-  if (category === "pdf" || cleanName.toLowerCase().includes("pdf")) {
-    defaultKeywords.push("pdf-lib", "local pdf editor", "secure pdf", "no server upload", "fast", "free forever");
-  } else if (category === "image" || cleanName.toLowerCase().includes("image")) {
-    defaultKeywords.push("html5 canvas", "in-browser image processor", "lossless", "high quality");
-  } else if (category === "developer") {
-    defaultKeywords.push("developer utility", "online formatter", "instant encoding", "web worker");
-  }
-
-  const allKeywords = [...new Set([...defaultKeywords, ...(props.keywords || [])])];
 
   // 5. Resolve OpenGraph Image
   const ogImageUrl = resolveOgImage(category, props.ogImage);
@@ -233,7 +232,6 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
   return {
     title,
     description,
-    keywords: allKeywords,
     alternates: {
       canonical,
       // The markdown mirror is noindexed and only carries prose for curated
@@ -241,7 +239,7 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
       ...(isCuratedContent(toolFromRegistry?.id || toolId)
         ? {
             types: {
-              "text/markdown": `${SEO_CONFIG.siteUrl}/tool-markdown/${toolFromRegistry?.id || toolId}`,
+              "text/markdown": `${SEO_CONFIG.siteUrl}/tool-markdown/${toolFromRegistry?.id || toolId}.md`,
             },
           }
         : {}),
@@ -259,7 +257,7 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
           width: 1200,
           height: 630,
           alt: `${cleanName} — Free Online Tool | SopKit`,
-          type: "image/png",
+          type: resolveOgImageType(ogImageUrl),
         },
       ],
     },
@@ -272,7 +270,7 @@ export function constructToolMetadata(props: ToolMetadataInput): Metadata {
       site: SEO_CONFIG.twitterHandle,
     },
     robots: (props.noindex || props.noIndex || !monetization.indexable)
-      ? { index: false, follow: false }
+      ? { index: false, follow: true }
       : {
           index: true,
           follow: true,
@@ -327,16 +325,6 @@ export function constructCategoryMetadata(input: CategoryMetadataInput): Metadat
   return {
     title,
     description,
-    keywords: [
-      cleanName,
-      `free ${cleanName.toLowerCase()}`,
-      "browser tools",
-      "online utilities",
-      "client-side",
-      "privacy-focused",
-      "SopKit",
-      ...(input.keywords || []),
-    ],
     alternates: {
       canonical,
     },
@@ -353,7 +341,7 @@ export function constructCategoryMetadata(input: CategoryMetadataInput): Metadat
           width: 1200,
           height: 630,
           alt: `${cleanName} on SopKit`,
-          type: "image/png",
+          type: resolveOgImageType(ogImageUrl),
         },
       ],
     },
@@ -363,9 +351,10 @@ export function constructCategoryMetadata(input: CategoryMetadataInput): Metadat
       description,
       images: [ogImageUrl],
       creator: SEO_CONFIG.twitterHandle,
+      site: SEO_CONFIG.twitterHandle,
     },
     robots: (input.noindex || input.noIndex)
-      ? { index: false, follow: false }
+      ? { index: false, follow: true }
       : {
           index: true,
           follow: true,
@@ -400,7 +389,6 @@ export function constructPageMetadata(input: PageSeoInput): Metadata {
   return {
     title,
     description,
-    keywords: input.keywords,
     alternates: {
       canonical,
     },
@@ -417,7 +405,7 @@ export function constructPageMetadata(input: PageSeoInput): Metadata {
           width: 1200,
           height: 630,
           alt: input.title,
-          type: "image/png",
+          type: resolveOgImageType(ogImageUrl),
         },
       ],
       ...(input.publishedTime ? { publishedTime: input.publishedTime } : {}),
@@ -429,10 +417,11 @@ export function constructPageMetadata(input: PageSeoInput): Metadata {
       title,
       description,
       creator: SEO_CONFIG.twitterHandle,
+      site: SEO_CONFIG.twitterHandle,
       images: [ogImageUrl],
     },
     robots: input.noindex
-      ? { index: false, follow: false }
+      ? { index: false, follow: true }
       : {
           index: true,
           follow: true,

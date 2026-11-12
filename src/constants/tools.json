@@ -2,7 +2,7 @@
   "metadata": {
     "version": "11.2",
     "lastUpdated": "2026-09-21",
-    "totalTools": 603,
+    "totalTools": 464,
     "totalCategories": 20
   },
   "categories": {
@@ -29,15 +29,6 @@
           "popular": true,
           "seoDescription": "Convert text to natural AI voices free — lifelike voiceovers in multiple languages and accents. For videos, podcasts and accessibility. No signup needed.",
           "seoTitle": "Free AI Voice Generator — Natural Text to Speech"
-        },
-        {
-          "id": "ai-music-generator",
-          "name": "AI Music Generator",
-          "description": "Generate full-length AI songs with vocals and instrumentation from text prompts using MiniMax Music 2.6 on Cloudflare AI. Royalty-free music generation with studio-grade quality. Free this week!",
-          "route": "/ai-music-generator",
-          "popular": true,
-          "seoDescription": "Generate full-length royalty-free songs with vocals and instruments from a text prompt. Studio-grade AI music maker, free to use, no signup required.",
-          "seoTitle": "Free AI Music Generator — Create Songs with Vocals"
         },
         {
           "id": "qr-code-reader",
@@ -116,15 +107,6 @@
           "popular": true,
           "seoDescription": "Create HRA-compliant rent receipts with landlord PAN, revenue stamp options and a monthly payment breakdown, ready to print as income tax proof.",
           "seoTitle": "Free Rent Receipt Generator India — No Signup"
-        },
-        {
-          "id": "simple-invoice-generator",
-          "name": "Simple Invoice Generator",
-          "description": "Create and print professional billing invoices online. Add custom line items, tax, discount details, and generate print-ready PDF layouts instantly.",
-          "route": "/simple-invoice-generator",
-          "popular": true,
-          "seoDescription": "Create clean, itemized invoices with customizable taxes, discounts, and currency symbols. Generate and print professional client bills with zero server storage.",
-          "seoTitle": "Free Invoice Generator Online — Custom PDF Invoices"
         },
         {
           "id": "leave-application-generator",
@@ -435,24 +417,6 @@
           "seoTitle": "Image Color Picker — HEX, RGB & HSL Codes"
         },
         {
-          "id": "compress-image-to-exact-kb",
-          "name": "Compress Image to Exact KB",
-          "description": "Compress JPG, PNG, or WebP images to exact KB sizes like 10KB, 20KB, 50KB, 100KB, and 200KB online for free.",
-          "route": "/compress-image-to-exact-kb",
-          "popular": true,
-          "seoDescription": "Dial in any target size such as 50KB, 100KB or 500KB and let the quality search settle on the best compression setting that still fits your upload limit.",
-          "seoTitle": "Compress Image to Exact KB — 10/20/50/100KB"
-        },
-        {
-          "id": "aadhaar-pan-photo-resizer",
-          "name": "Aadhaar and PAN Card Photo Resizer",
-          "description": "Sizes Aadhaar and PAN uploads to portal rules: 213x213 photos kept under 50 KB, 400x200 signatures under 20 KB, or custom dimensions.",
-          "route": "/aadhaar-pan-photo-resizer",
-          "popular": false,
-          "seoDescription": "Free Aadhaar & PAN Card Photo Resizer online: resize photos to 213x213 and signatures under 20KB for NSDL & UIDAI portals. 100% private browser processing.",
-          "seoTitle": "Aadhaar & PAN Photo Resizer — NSDL & UIDAI Sizes"
-        },
-        {
           "id": "background-remover",
           "name": "Background Remover",
           "description": "Cuts a subject away from a plain or solid backdrop and returns a transparent PNG cutout for listings, slide decks or headshots.",
@@ -469,15 +433,6 @@
           "popular": false,
           "seoDescription": "Paste a Base64 string or data URI and watch the decoded image appear, then download it as a PNG, JPG or WebP file once the preview looks correct.",
           "seoTitle": "Base64 to Image Converter — Decode to PNG/JPG"
-        },
-        {
-          "id": "convert-to-ico",
-          "name": "Convert to ICO",
-          "description": "Shapes a PNG or JPG into an ICO file whose embedded sizes serve browser tabs, bookmarks and Windows folder shortcuts.",
-          "route": "/convert-to-ico",
-          "popular": false,
-          "seoDescription": "Shape a PNG or JPG image into an ICO icon file so browser tabs, desktop folders and Windows shortcuts can display your own favicon or app symbol.",
-          "seoTitle": "Convert to ICO — Favicon Files from Images"
         },
         {
           "id": "exif-reader",
@@ -498,15 +453,6 @@
           "seoTitle": "Free SVG & Image Favicon Maker — Quick Browser Icons"
         },
         {
-          "id": "flip-image",
-          "name": "Flip Image",
-          "description": "Mirrors a picture left to right or top to bottom to correct reversed selfies, match a layout or build symmetrical artwork.",
-          "route": "/flip-image",
-          "popular": false,
-          "seoDescription": "Mirror a photo left to right or top to bottom in one pass, useful for fixing reversed selfies, matching a layout or building symmetrical artwork.",
-          "seoTitle": "Flip Image Online — Horizontal & Vertical Mirror"
-        },
-        {
           "id": "image-compressor",
           "name": "Image Compressor",
           "description": "Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing.",
@@ -524,15 +470,6 @@
           "popular": true,
           "seoDescription": "Move images between PNG, JPG, WebP and BMP in one workspace, with quality control, custom output dimensions and batch handling for day-to-day jobs.",
           "seoTitle": "Image Converter — PNG, JPG, WebP, SVG & More"
-        },
-        {
-          "id": "image-cropper",
-          "name": "Image Cropper",
-          "description": "Trim a photo with pixel handles and locked aspect-ratio presets aimed at social posts, profile pictures or print sizes.",
-          "route": "/image-cropper",
-          "popular": false,
-          "seoDescription": "Trim photos to the exact frame you want for social posts, profile pictures or prints, using pixel-precise handles and locked aspect ratio presets.",
-          "seoTitle": "Free Image Cropper — Crop Photos to Any Size"
         },
         {
           "id": "circular-image-crop",
@@ -562,15 +499,6 @@
           "seoTitle": "Free Animated GIF Maker — Combine Images in Browser"
         },
         {
-          "id": "image-enlarger",
-          "name": "Image Enlarger",
-          "description": "Scale a small picture up by percentage or exact width and height, smoothing each redraw so prints and screens stay presentable.",
-          "route": "/image-enlarger",
-          "popular": false,
-          "seoDescription": "Scale small images up to larger dimensions for printing or HD screens, choosing a 2x, 4x or fully custom size with smooth canvas resampling applied.",
-          "seoTitle": "Image Enlarger — Upscale Photos 2x & 4x"
-        },
-        {
           "id": "image-resizer",
           "name": "Image Resizer",
           "description": "Resize images with custom dimensions and aspect ratios.",
@@ -596,33 +524,6 @@
           "popular": false,
           "seoDescription": "Export almost any picture to a compact JPEG at the quality level you choose, the image format every web form, printer and email client understands.",
           "seoTitle": "JPG Converter — Photos to JPG, Optimized"
-        },
-        {
-          "id": "jpg-to-bmp-converter",
-          "name": "JPG to BMP Converter",
-          "description": "Unpack a JPEG into an uncompressed BMP bitmap for industrial software, embedded screens and tools that reject compressed images.",
-          "route": "/jpg-to-bmp-converter",
-          "popular": false,
-          "seoDescription": "Unpack a JPG into a plain BMP bitmap for older industrial software, embedded displays and other tools that reject compressed image data entirely.",
-          "seoTitle": "JPG to BMP Converter — Bitmap Format"
-        },
-        {
-          "id": "jpg-to-gif-converter",
-          "name": "JPG to GIF Converter",
-          "description": "Turn your JPG photos into GIF format instantly. Perfect for simple animations or platform-specific requirements. Free, secure, and privacy-friendly online image converter.",
-          "route": "/jpg-to-gif-converter",
-          "popular": false,
-          "seoDescription": "Convert a JPG still into a single-frame GIF for forums, email builders and platforms that list GIF among the image formats they accept for upload.",
-          "seoTitle": "JPG to GIF Converter — Photos to GIF"
-        },
-        {
-          "id": "jpg-to-ico-converter",
-          "name": "JPG to ICO Converter",
-          "description": "Recast a JPEG photo as a favicon-ready ICO file, carrying the icon sizes that website tabs and desktop shortcuts expect.",
-          "route": "/jpg-to-ico-converter",
-          "popular": false,
-          "seoDescription": "Recast a JPG photo as an ICO icon file so a website tab, bookmark or Windows desktop shortcut carries your chosen image instead of a generic default.",
-          "seoTitle": "JPG to ICO Converter — Favicon from Photo"
         },
         {
           "id": "jpg-to-webp-converter",
@@ -733,33 +634,6 @@
           "seoTitle": "AI Photo Enhancer — Improve Quality Free"
         },
         {
-          "id": "png-to-bmp-converter",
-          "name": "PNG to BMP Converter",
-          "description": "Convert PNG images to BMP format instantly. Our free online converter preserves original quality while ensuring compatibility with legacy software. Fast, secure, and privacy-focused.",
-          "route": "/png-to-bmp-converter",
-          "popular": false,
-          "seoDescription": "Re-encode PNG graphics as BMP files for older legacy Windows programs, kiosks and equipment interfaces that can only read uncompressed bitmap images.",
-          "seoTitle": "PNG to BMP Converter — Legacy Compatibility"
-        },
-        {
-          "id": "png-to-gif-converter",
-          "name": "PNG to GIF Converter",
-          "description": "Re-saves a PNG as a flat single-frame GIF for platforms, email builders and upload forms that will not take a PNG directly.",
-          "route": "/png-to-gif-converter",
-          "popular": false,
-          "seoDescription": "Re-save a PNG as a flat, single-frame GIF for platforms and email builders that happily accept GIF uploads but will not take direct PNG attachments.",
-          "seoTitle": "PNG to GIF Converter — Web Graphics & Animation"
-        },
-        {
-          "id": "png-to-ico-converter",
-          "name": "PNG to ICO Converter",
-          "description": "Generate high-quality ICO favicon files from PNG images. Our free tool supports multiple sizes for perfect website icon compatibility. Privacy-first browser-based conversion.",
-          "route": "/png-to-ico-converter",
-          "popular": false,
-          "seoDescription": "Package a PNG logo as an ICO file for browser tabs, bookmarks and Windows shortcuts, preserving all of the transparent areas of the original artwork.",
-          "seoTitle": "PNG to ICO Converter — Multi-Size Favicons"
-        },
-        {
           "id": "png-to-webp-converter",
           "name": "PNG to WebP Converter",
           "description": "Convert PNG to WebP to optimize your website speed. Significantly reduce file sizes while maintaining image transparency and quality. Free, fast, and secure online tool.",
@@ -769,30 +643,12 @@
           "seoTitle": "PNG to WebP Converter — Faster Websites"
         },
         {
-          "id": "rotate-image",
-          "name": "Rotate Image",
-          "description": "Turn a sideways phone photo or scanned page by 90 or 180 degrees clockwise or counter-clockwise, then save the straightened file.",
-          "route": "/rotate-image",
-          "popular": false,
-          "seoDescription": "Rotate a photo 90 or 180 degrees clockwise or counterclockwise to fix sideways phone shots and scanned pages before you file, print or post them.",
-          "seoTitle": "Rotate Image — 90°, 180° & Flip Online"
-        },
-        {
           "id": "image-tools",
           "name": "Free Image Tools Online",
           "description": "SopKit's image toolbox, grouped into compression, creative editing and format conversion so you can jump straight to the right utility.",
           "route": "/image-tools",
           "seoDescription": "Browse the whole picture toolbox: compression, format conversion, resizing, background cleanup, EXIF inspection, watermarking and other utilities.",
           "seoTitle": "Free Image Tools — Compress, Edit & Convert"
-        },
-        {
-          "id": "image-editor",
-          "name": "Image Editor",
-          "description": "Edit, crop, and enhance your photos online with our free image editing tools.",
-          "route": "/image-editor",
-          "popular": false,
-          "seoDescription": "Adjust an image's dimensions and export quality in a single uncluttered workspace, then download a web-ready file without installing desktop software.",
-          "seoTitle": "Free Online Photo Editor — Crop & Enhance"
         },
         {
           "id": "compress-image-to-20kb",
@@ -1043,15 +899,6 @@
           "seoTitle": "Internship Request Message — LinkedIn & Email"
         },
         {
-          "id": "article-rewriter",
-          "name": "Article Rewriter",
-          "description": "Refresh a draft by swapping tired, overused wording for livelier synonyms while keeping the original meaning and sentence flow intact.",
-          "route": "/article-rewriter",
-          "popular": false,
-          "seoDescription": "Paraphrase sentences and rephrase articles with fresh phrasing while preserving original context and nuance. Polish writing with local browser processing.",
-          "seoTitle": "Free Article Rewriter Online — Clean Text Paraphraser"
-        },
-        {
           "id": "comma-separator",
           "name": "Comma Separator",
           "description": "Convert lists, columns, or text into comma-separated values (CSV) instantly. Our free online Comma Separator is perfect for data cleaning and formatting tasks. Privacy-focused browser tool.",
@@ -1077,15 +924,6 @@
           "popular": false,
           "seoDescription": "Generate customized Lorem Ipsum placeholder paragraphs, sentences, and lists for wireframes and design mockups. Copy clean typography copy free with one click.",
           "seoTitle": "Free Lorem Ipsum Generator — Clean Placeholder Text"
-        },
-        {
-          "id": "number-to-word-converter",
-          "name": "Number to Word Converter",
-          "description": "Convert numbers to words instantly with our free online converter. Perfect for writing checks, legal documents, or educational purposes. Supports multiple formats and large numbers.",
-          "route": "/number-to-word-converter",
-          "popular": false,
-          "seoDescription": "Write a cheque or fill a legal template confidently: type a figure and read back the English wording, including millions, with negatives prefixed by minus.",
-          "seoTitle": "Number to Words — Checks & Legal Docs"
         },
         {
           "id": "remove-line-breaks",
@@ -1124,16 +962,6 @@
           "popular": false,
           "seoDescription": "Pull high-relevance hashtags out of captions, blog posts or marketing copy for Instagram, TikTok, YouTube and X, grouped and ready to paste in one click.",
           "seoTitle": "Free Hashtag Generator Online — Trending Social Tags"
-        },
-        {
-          "id": "text-to-slug-converter",
-          "name": "Text to Slug Converter",
-          "description": "Transform any text or title into a URL-friendly slug instantly. Perfect for SEO-friendly web development, blog posts, and clean link structures. Free and fast online tool.",
-          "route": "/text-to-slug-converter",
-          "popular": false,
-          "title": "Text to Slug Converter - Free Online Tool",
-          "seoDescription": "Choose a separator such as hyphen, underscore, dot or slash, and a headline becomes a tidy lowercase slug, with an option to keep the original capitalisation.",
-          "seoTitle": "Slug Generator — SEO URLs from Titles"
         },
         {
           "id": "text-to-tags-converter",
@@ -1237,15 +1065,6 @@
       "description": "Merge, split, compress, and manipulate PDF documents",
       "tools": [
         {
-          "id": "compress-pdf-to-exact-kb",
-          "name": "Compress PDF to Exact KB",
-          "description": "Compress PDF files to exact sizes like 100KB, 200KB, 500KB, or custom KB for forms and uploads online.",
-          "route": "/compress-pdf-to-exact-kb",
-          "popular": true,
-          "seoDescription": "Aim for a precise size: this compressor squeezes a PDF toward a target in kilobytes, clearing strict upload limits on forms, portals and email attachments.",
-          "seoTitle": "Compress PDF to Exact KB — No Upload"
-        },
-        {
           "id": "remove-pages-from-pdf",
           "name": "Remove Pages from PDF",
           "description": "Delete unwanted pages from a PDF file online. Select pages, remove them, and download a clean PDF for free.",
@@ -1262,15 +1081,6 @@
           "popular": true,
           "seoDescription": "Save each page of a PDF as a crisp JPG image. Preview the file, then download every page individually or grab the complete set in one ZIP archive.",
           "seoTitle": "PDF to JPG — Convert Pages to Images"
-        },
-        {
-          "id": "merge-pdf-online",
-          "name": "Merge PDF Online",
-          "description": "Combine multiple PDF files into one document. Reorder files and download a merged PDF instantly.",
-          "route": "/merge-pdf-online",
-          "popular": true,
-          "seoDescription": "Stitch several PDFs into one continuous document: drop the files in, drag them into the order you want, and export a merged copy with bookmarks carried over.",
-          "seoTitle": "Merge PDF Without Upload — Free"
         },
         {
           "id": "html-to-pdf",
@@ -1372,15 +1182,6 @@
           "seoTitle": "Protect PDF with Password — No Upload"
         },
         {
-          "id": "pdf-to-image",
-          "name": "PDF to Image",
-          "description": "Convert PDF pages to high-quality JPG, PNG images.",
-          "route": "/pdf-to-image",
-          "popular": true,
-          "seoDescription": "Rasterize PDF pages into PNG, JPG or WebP at selectable resolution, from quick previews to high-detail renders, and collect the whole batch in one ZIP.",
-          "seoTitle": "PDF to Image — Pages to PNG/JPG"
-        },
-        {
           "id": "pdf-to-word",
           "name": "PDF to Word",
           "description": "Pull the text layer from a PDF into an editable DOCX built page by page, so wording can be revised instead of retyped.",
@@ -1477,501 +1278,6 @@
           "seoTitle": "AI Video Summarizer — Key Points in Seconds"
         },
         {
-          "id": "akillitv-video-downloader",
-          "name": "Akillitv Video Downloader",
-          "description": "Submit an AkilliTV link to SopKit's resolver, compare the stream qualities it lists and save the episode or clip for later viewing.",
-          "route": "/akillitv-video-downloader",
-          "popular": false,
-          "seoDescription": "An AkilliTV link goes in and the resolver lists the stream qualities it finds; pick one and the episode or clip is saved for viewing away from the site.",
-          "seoTitle": "Akillitv Video Downloader — HD & Fast"
-        },
-        {
-          "id": "bandcamp-video-downloader",
-          "name": "Bandcamp Video Downloader",
-          "description": "Resolve a Bandcamp track or album link through the resolver and save the audio at the release's original encoding for later listening.",
-          "route": "/bandcamp-video-downloader",
-          "popular": false,
-          "seoDescription": "Bandcamp tracks and albums you own can be pulled down as audio files, with the release's original encoding kept intact for listening wherever you are.",
-          "seoTitle": "Bandcamp Downloader — Tracks & Albums"
-        },
-        {
-          "id": "bilibili-video-downloader",
-          "name": "Bilibili Video Downloader",
-          "description": "Paste a Bilibili link and the resolver lists each available quality, so episodes, streams and dance clips can travel as files.",
-          "route": "/bilibili-video-downloader",
-          "popular": false,
-          "seoDescription": "A Bilibili link opens into a menu of available qualities, letting anime episodes, gaming streams and dance clips travel with you as portable files.",
-          "seoTitle": "Bilibili Video Downloader — HD, No Watermark"
-        },
-        {
-          "id": "bitchute-video-downloader",
-          "name": "Bitchute Video Downloader",
-          "description": "BitChute uploads come back from the resolver as MP4 files at the creator's resolution, playable in any standard media player.",
-          "route": "/bitchute-video-downloader",
-          "popular": false,
-          "seoDescription": "BitChute uploads save as MP4 at whichever resolution the creator provided, and the finished file opens in any standard media player you already own.",
-          "seoTitle": "BitChute Video Downloader — MP4, Free"
-        },
-        {
-          "id": "blogger-video-downloader",
-          "name": "Blogger Video Downloader",
-          "description": "Paste a Blogger or Blogspot post address and the embedded video arrives as MP4, archiving tutorials and family clips intact.",
-          "route": "/blogger-video-downloader",
-          "popular": false,
-          "seoDescription": "Videos embedded in Blogger or Blogspot posts download as MP4 once the post address is pasted, letting tutorials and family clips be archived intact.",
-          "seoTitle": "Blogger Video Downloader — Save Clips Free"
-        },
-        {
-          "id": "blutv-video-downloader",
-          "name": "Blutv Video Downloader",
-          "description": "BluTV episodes you can access resolve from a shared link into a list of qualities, ready to stockpile for trips and quiet evenings.",
-          "route": "/blutv-video-downloader",
-          "popular": false,
-          "seoDescription": "BluTV episodes and clips you have access to resolve from a link into a download list, so shows can be stockpiled for trips and signal-free evenings.",
-          "seoTitle": "BluTV Downloader — Save Videos Free"
-        },
-        {
-          "id": "buzzfeed-video-downloader",
-          "name": "Buzzfeed Video Downloader",
-          "description": "Save BuzzFeed sketches, Tasty recipe demos and listicle segments as MP4 files for kitchen replays or rewatching a favourite bit.",
-          "route": "/buzzfeed-video-downloader",
-          "popular": false,
-          "seoDescription": "BuzzFeed sketches, Tasty recipe demos and listicle segments save as MP4 files — a handy library for kitchen sessions or rewatching a favorite segment.",
-          "seoTitle": "BuzzFeed Video Downloader — Free & Fast"
-        },
-        {
-          "id": "capcut-video-downloader",
-          "name": "Capcut Video Downloader",
-          "description": "Fetch a CapCut template video minus the app watermark, giving editors a clean master clip to drop into a fresh timeline.",
-          "route": "/capcut-video-downloader",
-          "popular": false,
-          "seoDescription": "CapCut template videos come down without the app's watermark, giving editors a clean master clip they can drop into a fresh timeline and remix to their taste.",
-          "seoTitle": "CapCut Downloader — No Watermark, Free"
-        },
-        {
-          "id": "chingari-video-downloader",
-          "name": "Chingari Video Downloader",
-          "description": "Drop a Chingari share link into the field and take the short home in whatever resolution the resolver reports from the app.",
-          "route": "/chingari-video-downloader",
-          "popular": false,
-          "seoDescription": "Copy a Chingari share link into the field and take the short home in whatever resolution the app serves, ideal for keeping up with regional creators.",
-          "seoTitle": "Chingari Video Downloader — HD Shorts"
-        },
-        {
-          "id": "dailymotion-video-downloader",
-          "name": "Dailymotion Video Downloader",
-          "description": "A Dailymotion link comes back from the resolver as a list of resolutions, so you can pick a small SD file or the sharpest option.",
-          "route": "/dailymotion-video-downloader",
-          "popular": false,
-          "seoDescription": "Dailymotion news, music and show links resolve into a list of resolutions; pick SD for a smaller file or the sharpest rendition the source carries.",
-          "seoTitle": "Dailymotion Downloader — HD & SD, Free"
-        },
-        {
-          "id": "douyin-video-downloader",
-          "name": "Douyin Video Downloader",
-          "description": "A Douyin share URL resolves into the clip at its original resolution, stripped of the watermark added when videos leave the app.",
-          "route": "/douyin-video-downloader",
-          "popular": false,
-          "seoDescription": "A Douyin share URL returns the video in its original resolution, stripped of the watermark that normally travels with clips shared out of the app.",
-          "seoTitle": "Douyin Video Downloader — No Watermark"
-        },
-        {
-          "id": "all-downloaders",
-          "name": "All Downloaders",
-          "description": "One link field that recognises over seventy video sites, names the source, lists every video and audio rendition and saves your pick.",
-          "route": "/all-downloaders",
-          "popular": false,
-          "seoDescription": "Drop in a link from any supported platform and the engine names the source, lists every video and audio rendition found, then saves the one you choose.",
-          "seoTitle": "All-in-One Video Downloader — 70+ Sites"
-        },
-        {
-          "id": "espn-video-downloader",
-          "name": "Espn Video Downloader",
-          "description": "Fetch ESPN highlights and studio segments before they rotate out of the feed, with the resolver listing every quality it finds.",
-          "route": "/espn-video-downloader",
-          "popular": false,
-          "seoDescription": "ESPN highlights and studio segments can be fetched before they rotate out of the feed, letting fans relive a big play without digging through the app.",
-          "seoTitle": "ESPN Video Downloader — Highlights in HD"
-        },
-        {
-          "id": "facebook-story-downloader",
-          "name": "Facebook Story Downloader",
-          "description": "Enter a Facebook username for an illustrative story viewer: sample cards carry timestamps, file sizes, durations and saved highlights.",
-          "route": "/facebook-story-downloader",
-          "popular": false,
-          "seoDescription": "Facebook stories are captured as files before the twenty-four-hour expiry wipes them, preserving birthday messages, event recaps and candid moments.",
-          "seoTitle": "Facebook Story Downloader — Save Anonymously"
-        },
-        {
-          "id": "facebook-video-downloader",
-          "name": "Facebook Video Downloader",
-          "description": "One input covers feed videos, reels and Watch episodes: paste the link, compare the qualities and keep the MP4 that suits you.",
-          "route": "/facebook-video-downloader",
-          "popular": false,
-          "seoDescription": "Feed videos, reels and Watch episodes arrive through one input; paste the link, compare the quality options and keep the MP4 that fits your device.",
-          "seoTitle": "Facebook Video Downloader — HD, Free"
-        },
-        {
-          "id": "febspot-video-downloader",
-          "name": "Febspot Video Downloader",
-          "description": "Febspot's trending uploads pass through the resolver and come back as MP4 at the best quality the post carries.",
-          "route": "/febspot-video-downloader",
-          "popular": false,
-          "seoDescription": "Febspot's trending uploads convert to MP4 at the best quality the post carries, so viral clips remain watchable long after they leave the front page.",
-          "seoTitle": "Febspot Video Downloader — Viral Clips"
-        },
-        {
-          "id": "flickr-video-downloader",
-          "name": "Flickr Video Downloader",
-          "description": "Paste a Flickr video page and the resolver returns the upload at its original quality, handy for keeping a portfolio backed up.",
-          "route": "/flickr-video-downloader",
-          "popular": false,
-          "seoDescription": "Flickr photo and video pages offer their originals for download, letting photographers back up a portfolio or gather reference material at full size.",
-          "seoTitle": "Flickr Downloader — Original Quality"
-        },
-        {
-          "id": "ifunny-video-downloader",
-          "name": "Ifunny Video Downloader",
-          "description": "Save iFunny memes, GIFs and short comedy clips at their original quality, building a stash that survives a deleted source post.",
-          "route": "/ifunny-video-downloader",
-          "popular": false,
-          "seoDescription": "iFunny memes, GIFs and short comedy clips save at their original quality, assembling a stash that survives even when the source post gets deleted.",
-          "seoTitle": "iFunny Downloader — Memes & Videos"
-        },
-        {
-          "id": "imdb-video-downloader",
-          "name": "Imdb Video Downloader",
-          "description": "Paste an IMDb trailer or featurette address; the link is fetched on the server and each rendition it returns is listed with a size for saving.",
-          "route": "/imdb-video-downloader",
-          "popular": false,
-          "seoDescription": "IMDb trailers and featurette clips download in high quality, letting cinephiles study a preview or share it without waiting on the site's slow player.",
-          "seoTitle": "IMDb Trailer Downloader — HD Clips"
-        },
-        {
-          "id": "imgur-video-downloader",
-          "name": "Imgur Video Downloader",
-          "description": "Paste an Imgur post, GIF or album link and every media item the fetch returns is listed as its own downloadable file.",
-          "route": "/imgur-video-downloader",
-          "popular": false,
-          "seoDescription": "Imgur galleries, GIFs and videos download as a set; a single URL can return every item in an album at full resolution, ready for safekeeping on any device.",
-          "seoTitle": "Imgur Downloader — Images, GIFs & Albums"
-        },
-        {
-          "id": "instagram-downloader",
-          "name": "Instagram Downloader",
-          "description": "All-in-one Instagram saver: reels, stories, photos, IGTV and highlights. One tool, everything — free.",
-          "route": "/instagram-downloader",
-          "popular": false,
-          "seoDescription": "The all-purpose Instagram entry handles posts, reels, stories, IGTV and highlights through one link field, adapting to whatever the URL points at.",
-          "seoTitle": "Instagram Downloader — Reels, Stories & Photos"
-        },
-        {
-          "id": "instagram-image-downloader",
-          "name": "Instagram Profile Picture Downloader",
-          "description": "Look up an Instagram handle to preview its profile photo alongside account stats, with three size options listed for the image.",
-          "route": "/instagram-image-downloader",
-          "popular": false,
-          "seoDescription": "Look up any public Instagram account and grab its profile picture at full size, including the larger variant kept for high-density screens and tablets.",
-          "seoTitle": "Instagram Profile Picture Downloader — Full Size"
-        },
-        {
-          "id": "instagram-reel-downloader",
-          "name": "Instagram Reel Downloader",
-          "description": "Paste a Reels share link and the fetched MP4 arrives with its original soundtrack, ready to save at whichever quality is listed.",
-          "route": "/instagram-reel-downloader",
-          "popular": false,
-          "seoDescription": "Give the reel downloader a share link and it returns a watermark-free MP4 with sound intact, ready to edit, repost or send on to friends and followers.",
-          "seoTitle": "Instagram Reel Downloader — HD MP4, Free"
-        },
-        {
-          "id": "instagram-story-downloader",
-          "name": "Instagram Story Downloader",
-          "description": "Enter an account name to see a story viewer listing each clip with age, media type and size, along with the highlight sets below it.",
-          "route": "/instagram-story-downloader",
-          "popular": false,
-          "seoDescription": "Stories are retrieved without leaving a viewer trace and arrive as HD clips that stay watchable after the twenty-four-hour window closes behind them.",
-          "seoTitle": "IG Story Downloader — Anonymous & HD"
-        },
-        {
-          "id": "izlesene-video-downloader",
-          "name": "Izlesene Video Downloader",
-          "description": "Paste an Izlesene show, series or clip address and the fetched page is turned into a quality list to pick from before saving.",
-          "route": "/izlesene-video-downloader",
-          "popular": false,
-          "seoDescription": "Turkish video site Izlesene is covered by the same link resolver, saving shows, series and clips at the highest quality the page exposes for later viewing.",
-          "seoTitle": "Izlesene Video Downloader — HD Free"
-        },
-        {
-          "id": "kickstarter-video-downloader",
-          "name": "Kickstarter Video Downloader",
-          "description": "Paste a Kickstarter campaign or pitch video link and the fetched clip is offered at the renditions the campaign page exposes.",
-          "route": "/kickstarter-video-downloader",
-          "popular": false,
-          "seoDescription": "Kickstarter pitch videos and campaign clips download in HD, useful for studying how successful projects frame their story or keeping a backed campaign.",
-          "seoTitle": "Kickstarter Video Downloader — Free"
-        },
-        {
-          "id": "kwai-video-downloader",
-          "name": "Kwai Video Downloader",
-          "description": "A Kwai short or trending post link is fetched and returned as downloadable files at the quality of the original upload.",
-          "route": "/kwai-video-downloader",
-          "popular": false,
-          "seoDescription": "A shared Kwai URL is fetched and handed back as downloadable files in the original upload quality, covering both shorts and trending posts alike.",
-          "seoTitle": "Kwai Video Downloader — HD Shorts"
-        },
-        {
-          "id": "likee-video-downloader",
-          "name": "Likee Video Downloader",
-          "description": "Paste a Likee video link to fetch it and choose from the listed renditions, with the clip's music and effects left intact.",
-          "route": "/likee-video-downloader",
-          "popular": false,
-          "seoDescription": "Likee shorts keep their music, effects and visuals exactly as served, which makes them easy to rewatch or study for editing inspiration later on.",
-          "seoTitle": "Likee Video Downloader — HD Shorts"
-        },
-        {
-          "id": "linkedin-video-downloader",
-          "name": "Linkedin Video Downloader",
-          "description": "Paste a LinkedIn video post or course clip address and the fetched media is offered in the renditions LinkedIn publishes.",
-          "route": "/linkedin-video-downloader",
-          "popular": false,
-          "seoDescription": "LinkedIn talks, course previews and feed videos come down for learning at your own pace — a commute, a flight or a quiet hour between meetings at work.",
-          "seoTitle": "LinkedIn Video Downloader — Learn Offline"
-        },
-        {
-          "id": "m3u8-downloader",
-          "name": "M3u8 Downloader",
-          "description": "Paste an HLS playlist address; the resolver reads the stream and lists each video and audio rendition it exposes for saving.",
-          "route": "/m3u8-downloader",
-          "popular": false,
-          "seoDescription": "Paste an HLS playlist address and the page resolves the stream into its component renditions, offering each as a file you can save and replay later.",
-          "seoTitle": "M3U8 Downloader — HLS to MP4, Free"
-        },
-        {
-          "id": "mashable-video-downloader",
-          "name": "Mashable Video Downloader",
-          "description": "Paste a Mashable tech, science or entertainment clip link and the fetch returns the available qualities for saving.",
-          "route": "/mashable-video-downloader",
-          "popular": false,
-          "seoDescription": "Mashable's tech, science and entertainment videos become portable files moments after submission, so a personal catch-up queue is always ready to play.",
-          "seoTitle": "Mashable Video Downloader — HD Free"
-        },
-        {
-          "id": "mixcloud-video-downloader",
-          "name": "Mixcloud Video Downloader",
-          "description": "Download Mixcloud DJ mixes and radio shows you follow for offline listening. Long sets saved — free.",
-          "route": "/mixcloud-video-downloader",
-          "popular": false,
-          "seoDescription": "Mixcloud sets, radio shows and podcast episodes are captured as audio files, making long DJ mixes and interview marathons easy to carry around anywhere.",
-          "seoTitle": "Mixcloud Downloader — DJ Mixes & Shows"
-        },
-        {
-          "id": "mxtakatak-video-downloader",
-          "name": "Mxtakatak Video Downloader",
-          "description": "Handles MX TakaTak comedy sketches, dance clips and trending shorts: paste the link, let it fetch, then pick from the listed qualities.",
-          "route": "/mxtakatak-video-downloader",
-          "popular": false,
-          "seoDescription": "MX TakaTak comedy sketches, dance clips and trending shorts download from a pasted link, preserving the quality of the original upload for later viewing.",
-          "seoTitle": "MX TakaTak Downloader — HD Shorts"
-        },
-        {
-          "id": "ninegag-video-downloader",
-          "name": "Ninegag Video Downloader",
-          "description": "Paste a 9GAG post link that contains video and the fetched MP4 renditions are listed with their sizes for download.",
-          "route": "/ninegag-video-downloader",
-          "popular": false,
-          "seoDescription": "9GAG posts carrying video resolve to MP4 downloads in their original quality, keeping the punchline safe from sudden deletions and feed refreshes.",
-          "seoTitle": "9GAG Video Downloader — Funny Clips"
-        },
-        {
-          "id": "odnoklassniki-video-downloader",
-          "name": "Odnoklassniki Video Downloader",
-          "description": "Download OK.ru (Odnoklassniki) videos and shows in HD. Russian social videos offline — free.",
-          "route": "/odnoklassniki-video-downloader",
-          "popular": false,
-          "seoDescription": "OK.ru videos, series and clips come down in high quality once an Odnoklassniki URL is pasted, covering everything from short posts to full episodes.",
-          "seoTitle": "OK.ru Video Downloader — HD, Free"
-        },
-        {
-          "id": "online-video-downloader",
-          "name": "Online Video Downloader",
-          "description": "Drop in a video page address from any platform the site covers; the server-side resolver lists every rendition it can find for saving.",
-          "route": "/online-video-downloader",
-          "popular": false,
-          "seoDescription": "Unsure which saver fits a link? This page accepts addresses from more than seventy supported sites, shows the qualities on offer and saves your pick.",
-          "seoTitle": "Online Video Downloader — Any Site, HD"
-        },
-        {
-          "id": "periscope-video-downloader",
-          "name": "Periscope Video Downloader",
-          "description": "Old Periscope replay URLs that still answer are fetched and saved as video files, a small rescue for the platform's streaming era.",
-          "route": "/periscope-video-downloader",
-          "popular": false,
-          "seoDescription": "Replays that still answer at their old Periscope URLs can be captured as video files, a small rescue for broadcasts from the platform's streaming heyday.",
-          "seoTitle": "Periscope Downloader — Save Live Replays"
-        },
-        {
-          "id": "pinterest-image-downloader",
-          "name": "Pinterest Image Downloader",
-          "description": "Paste a pin holding a photo, infographic or artwork and the fetched image is offered at the resolutions Pinterest serves.",
-          "route": "/pinterest-image-downloader",
-          "popular": false,
-          "seoDescription": "Pins holding photos, infographics and artwork fetch at the resolution the platform serves, ideal for assembling mood boards and reference folders.",
-          "seoTitle": "Pinterest Image Downloader — Full Resolution"
-        },
-        {
-          "id": "pinterest-video-downloader",
-          "name": "Pinterest Video Downloader",
-          "description": "Recipe demos, craft tutorials and Idea Pin videos: paste the pin link, let the fetch run, then save whichever rendition is listed.",
-          "route": "/pinterest-video-downloader",
-          "popular": false,
-          "seoDescription": "Recipe demos, craft tutorials and Idea Pin videos from Pinterest land as HD files, ready to replay while cooking, building, gardening or making at home.",
-          "seoTitle": "Pinterest Video Downloader — HD, Free"
-        },
-        {
-          "id": "puhutv-video-downloader",
-          "name": "Puhutv Video Downloader",
-          "description": "Paste an episode link from the Turkish service puhutv and the fetched dizi, film or special is offered in the quality tiers listed.",
-          "route": "/puhutv-video-downloader",
-          "popular": false,
-          "seoDescription": "PuhuTV dizis, films and specials save in high quality from their episode links, letting viewers catch up during travel or low-signal evenings on the road.",
-          "seoTitle": "PuhuTV Downloader — Series & Shows"
-        },
-        {
-          "id": "reddit-downloader",
-          "name": "Reddit Downloader",
-          "description": "Paste a Reddit post link to unpack its video, images, galleries and clips, each listed as a separate downloadable file.",
-          "route": "/reddit-downloader",
-          "popular": false,
-          "seoDescription": "A Reddit post's media is unpacked on demand: videos, images, galleries and clips each arrive as separate files, sorted and ready to keep for good.",
-          "seoTitle": "Reddit Downloader — Videos & Galleries"
-        },
-        {
-          "id": "rumble-video-downloader",
-          "name": "Rumble Video Downloader",
-          "description": "Paste a Rumble video, podcast episode or past stream link and the fetched media is offered in the source renditions listed.",
-          "route": "/rumble-video-downloader",
-          "popular": false,
-          "seoDescription": "Rumble videos, podcast episodes and past live streams resolve to downloadable files at source quality, ready for catch-up viewing on your schedule.",
-          "seoTitle": "Rumble Video Downloader — HD Free"
-        },
-        {
-          "id": "sharechat-video-downloader",
-          "name": "Sharechat Video Downloader",
-          "description": "Paste a ShareChat sketch, shayari or status video link and the fetch returns the quality tiers available for saving.",
-          "route": "/sharechat-video-downloader",
-          "popular": false,
-          "seoDescription": "ShareChat sketches, shayari posts and status videos save in high quality from a pasted link, keeping regional favorites within easy reach for later.",
-          "seoTitle": "ShareChat Downloader — Videos & Status"
-        },
-        {
-          "id": "snapchat-video-downloader",
-          "name": "Snapchat Video Downloader",
-          "description": "One box accepts Snapchat spotlight, story and chat clip links; the fetch returns each clip at the quality listed.",
-          "route": "/snapchat-video-downloader",
-          "popular": false,
-          "seoDescription": "One quick input handles Snapchat spotlights, story segments and chat clips, saving each clip at HD quality straight to whichever device you are using.",
-          "seoTitle": "Snapchat Video Downloader — HD Free"
-        },
-        {
-          "id": "streamable-video-downloader",
-          "name": "Streamable Video Downloader",
-          "description": "Paste a Streamable link before it expires and the fetched clip is turned into MP4 renditions you can save and replay later.",
-          "route": "/streamable-video-downloader",
-          "popular": false,
-          "seoDescription": "Streamable links fade with time; before they do, the downloader resolves each clip into an MP4 you control, so short highlights stay playable long after.",
-          "seoTitle": "Streamable Downloader — Save Clips Fast"
-        },
-        {
-          "id": "ted-video-downloader",
-          "name": "Ted Video Downloader",
-          "description": "Talks, TEDx speeches and lesson videos: paste the page address and pick from the fetched renditions offered for download.",
-          "route": "/ted-video-downloader",
-          "popular": false,
-          "seoDescription": "TED Talks, TEDx speeches and lesson videos download in HD, so thought-provoking lectures can be revisited on flights or turned into study material.",
-          "seoTitle": "TED Talk Downloader — Learn Offline"
-        },
-        {
-          "id": "telegram-video-downloader",
-          "name": "Telegram Video Downloader",
-          "description": "Download Telegram videos, files and channel media in original quality. Cloud content saved — free.",
-          "route": "/telegram-video-downloader",
-          "popular": false,
-          "seoDescription": "Files and videos shared through Telegram channels and chats are retrieved at full quality, without the re-compression that messaging apps typically apply.",
-          "seoTitle": "Telegram Video Downloader — Full Quality"
-        },
-        {
-          "id": "threads-video-downloader",
-          "name": "Threads Video Downloader",
-          "description": "Paste a Threads post link and each video or image item it carries is fetched and listed separately, with its own download option.",
-          "route": "/threads-video-downloader",
-          "popular": false,
-          "seoDescription": "Threads posts with video or images unpack into their individual media items, each downloadable at the quality the platform stores them in for display.",
-          "seoTitle": "Threads Downloader — Videos & Photos"
-        },
-        {
-          "id": "tiktok-downloader",
-          "name": "Tiktok Downloader",
-          "description": "The general TikTok saver handles video links in several quality tiers and can also pull the soundtrack out as an audio-only file.",
-          "route": "/tiktok-downloader",
-          "popular": false,
-          "seoDescription": "The general TikTok saver handles watermarked and clean saves alike, and can detach the soundtrack as an MP3 for use in other projects of your own.",
-          "seoTitle": "TikTok Downloader — No Watermark, HD"
-        },
-        {
-          "id": "tumblr-video-downloader",
-          "name": "Tumblr Video Downloader",
-          "description": "Paste a Tumblr video post link and the fetched clip is offered at full resolution for archiving, with GIFs handled as well.",
-          "route": "/tumblr-video-downloader",
-          "popular": false,
-          "seoDescription": "Tumblr video posts and GIFs retrieve at full resolution, letting fandom archivists preserve favorite scenes, edits and artwork before blogs change hands.",
-          "seoTitle": "Tumblr Downloader — Videos & GIFs"
-        },
-        {
-          "id": "twitch-video-downloader",
-          "name": "Twitch Video Downloader",
-          "description": "Paste a Twitch clip, highlight or VOD address and the fetched stream is listed in the renditions Twitch stores for saving.",
-          "route": "/twitch-video-downloader",
-          "popular": false,
-          "seoDescription": "Twitch clips, highlights and full VODs archive in HD before the platform's retention window removes older broadcasts from a channel's public listings.",
-          "seoTitle": "Twitch Downloader — Clips & VODs"
-        },
-        {
-          "id": "twitter-video-downloader",
-          "name": "Twitter Video Downloader",
-          "description": "X video, GIF and Spaces recording links are fetched and then offered in the qualities the platform returns for saving.",
-          "route": "/twitter-video-downloader",
-          "popular": false,
-          "seoDescription": "Recordings from X — videos, GIFs, Spaces — save at original quality when a post link is dropped in, with no app needed to fetch them and nothing to install.",
-          "seoTitle": "X Video Downloader — Twitter HD, Free"
-        },
-        {
-          "id": "universal-video-downloader",
-          "name": "Universal Video Downloader",
-          "description": "Give the resolver any supported video page address and it scans for media sources, returning each rendition it recognises as a download.",
-          "route": "/universal-video-downloader",
-          "popular": false,
-          "seoDescription": "If a page plays video, this engine stands a good chance of recognizing it: it scans the address for media sources and hands them over as downloads.",
-          "seoTitle": "Universal Video Downloader — Any Site"
-        },
-        {
-          "id": "vimeo-video-downloader",
-          "name": "Vimeo Video Downloader",
-          "description": "Paste a Vimeo film, tutorial or staff pick link and the fetch lists the renditions the uploader enabled, HD and up where offered.",
-          "route": "/vimeo-video-downloader",
-          "popular": false,
-          "seoDescription": "Vimeo films, tutorials and staff picks come down at the best quality the uploader enabled, including 4K renditions where the source supports them.",
-          "seoTitle": "Vimeo Downloader — HD & 4K"
-        },
-        {
-          "id": "vkontakte-video-downloader",
-          "name": "Vkontakte Video Downloader",
-          "description": "VK video, clip and music video links are fetched, with the sharpest rendition the platform serves selected for you automatically.",
-          "route": "/vkontakte-video-downloader",
-          "popular": false,
-          "seoDescription": "VK videos, clips and music videos download through a pasted link, with the sharpest rendition the platform serves selected for you automatically.",
-          "seoTitle": "VK Downloader — Videos & Clips HD"
-        },
-        {
           "id": "terabox-downloader",
           "name": "Terabox Video Downloader",
           "description": "Paste a Terabox share link and the extracted file ID opens in an embedded player, with a new-tab option and copyable embed code.",
@@ -1989,69 +1295,6 @@
       "description": "Download, optimize, and create content for YouTube",
       "tools": [
         {
-          "id": "youtube-channel-age-checker",
-          "name": "YouTube Channel Age Checker",
-          "description": "Find the exact creation date of any YouTube channel with our free online Age Checker. Perfect for creator research, account verification, and competitive analysis. Fast and private.",
-          "route": "/youtube-channel-age-checker",
-          "popular": false,
-          "seoDescription": "Look up when a channel was created to see how long a creator has actually been posting and whether an account is as established as its branding claims.",
-          "seoTitle": "YouTube Channel Age Checker — Creation Date"
-        },
-        {
-          "id": "youtube-channel-finder",
-          "name": "YouTube Channel Finder",
-          "description": "Discover YouTube channels by keyword, category, or topic instantly. Our free online Channel Finder helps you research competitors and find inspiration for your next video project.",
-          "route": "/youtube-channel-finder",
-          "popular": false,
-          "seoDescription": "Search by keyword, niche or category to surface YouTube channels worth following, collaborating with or benchmarking against in your own content.",
-          "seoTitle": "YouTube Channel Finder — Search by Keyword"
-        },
-        {
-          "id": "youtube-channel-id-extractor",
-          "name": "YouTube Channel ID Extractor",
-          "description": "Extract the unique Channel ID from any YouTube URL instantly. Perfect for developer API calls, marketing automation, and third-party tool integrations. Free and fast online tool.",
-          "route": "/youtube-channel-id-extractor",
-          "popular": false,
-          "seoDescription": "Extract the UC-style channel identifier from any YouTube link so it can be dropped into APIs, monetization forms and third-party analytics dashboards.",
-          "seoTitle": "YouTube Channel ID Finder — From Any URL"
-        },
-        {
-          "id": "youtube-playlist-link-extractor",
-          "name": "YouTube Playlist Link Extractor",
-          "description": "Extract all video URLs, IDs, titles, and publish dates from any public YouTube playlist. Free online playlist extractor for creators, marketers, and researchers.",
-          "route": "/youtube-playlist-link-extractor",
-          "popular": false,
-          "seoDescription": "Harvest every video link from a public playlist, along with IDs, titles and publish dates, into a list you can copy for research, notes or archiving.",
-          "seoTitle": "Playlist Link Extractor — All Video URLs"
-        },
-        {
-          "id": "youtube-channel-statistics",
-          "name": "YouTube Channel Statistics",
-          "description": "Get detailed insights and statistics for any YouTube channel instantly. View subscriber counts, video totals, and engagement metrics with our free online analytics tool.",
-          "route": "/youtube-channel-statistics",
-          "popular": false,
-          "seoDescription": "Read a channel's subscriber count, total views, upload tally and engagement figures in one place to size up its overall reach and how actively it posts.",
-          "seoTitle": "YouTube Channel Stats — Subs & Analytics"
-        },
-        {
-          "id": "youtube-comment-picker",
-          "name": "YouTube Comment Picker",
-          "description": "Pick a random winner from your YouTube video comments instantly. Our free online Comment Picker is perfect for giveaways, contests, and audience engagement. Fast and fair.",
-          "route": "/youtube-comment-picker",
-          "popular": false,
-          "seoDescription": "Run a giveaway or contest fairly by drawing a random winner from the comment section of any YouTube video and showing the proof to your audience.",
-          "seoTitle": "YouTube Comment Picker — Giveaway Winner"
-        },
-        {
-          "id": "youtube-description-extractor",
-          "name": "YouTube Description Extractor",
-          "description": "Extract the full description from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool.",
-          "route": "/youtube-description-extractor",
-          "popular": false,
-          "seoDescription": "Copy the full description of any public video, links and hashtags included, to study how other creators structure their SEO and affiliate sections.",
-          "seoTitle": "YouTube Description Extractor — Copy Any"
-        },
-        {
           "id": "youtube-embed-code-generator",
           "name": "YouTube Embed Code Generator",
           "description": "Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and privacy settings for your website.",
@@ -2059,24 +1302,6 @@
           "popular": false,
           "seoDescription": "Build an iframe snippet for any video with start time, autoplay, looping, hidden controls and privacy-enhanced mode, then paste it into your page.",
           "seoTitle": "YouTube Embed Generator — Responsive Code"
-        },
-        {
-          "id": "youtube-hashtag-extractor",
-          "name": "YouTube Hashtag Extractor",
-          "description": "Extract all hashtags from any YouTube video instantly. Our free online tool helps you analyze competitor tagging strategies and optimize your own video SEO for better reach.",
-          "route": "/youtube-hashtag-extractor",
-          "popular": false,
-          "seoDescription": "Collect every hashtag used across a video's title and description to compare tagging tactics and find the ones worth reusing on your own uploads.",
-          "seoTitle": "YouTube Hashtag Extractor — Spy on Tags"
-        },
-        {
-          "id": "youtube-hashtag-generator",
-          "name": "YouTube Hashtag Generator",
-          "description": "Generate viral hashtags for your YouTube videos instantly. Our free online tool suggests relevant, search-friendly tags to help you reach more viewers and boost engagement.",
-          "route": "/youtube-hashtag-generator",
-          "popular": false,
-          "seoDescription": "Draft a set of hashtags around your video's topic, mixing broad discovery tags with tighter niche ones, then take the best fit before publishing.",
-          "seoTitle": "YouTube Hashtag Generator — Viral Tags"
         },
         {
           "id": "youtube-money-calculator",
@@ -2088,15 +1313,6 @@
           "seoTitle": "YouTube Money Calculator — Earnings Estimate"
         },
         {
-          "id": "youtube-region-restriction-checker",
-          "name": "YouTube Region Restriction Checker",
-          "description": "Check if a YouTube video is blocked or restricted in specific countries instantly. Our free online tool helps you verify global availability for your content. Fast and accurate.",
-          "route": "/youtube-region-restriction-checker",
-          "popular": false,
-          "seoDescription": "See which countries can play a video and where it is blocked or age-gated, which is useful before launching a campaign aimed at one specific market.",
-          "seoTitle": "YouTube Region Check — Blocked Countries"
-        },
-        {
           "id": "youtube-subscribe-link-generator",
           "name": "YouTube Subscribe Link Generator",
           "description": "Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for social media and bios.",
@@ -2104,24 +1320,6 @@
           "popular": false,
           "seoDescription": "Create a sub_confirmation link that opens your channel with the subscribe prompt already showing, ready for bios, pinned posts and email footers.",
           "seoTitle": "YouTube Subscribe Link Generator — 1-Click"
-        },
-        {
-          "id": "youtube-tag-extractor",
-          "name": "YouTube Tag Extractor",
-          "description": "Extract hidden tags from any YouTube video instantly. Our free online tool helps you discover the keywords used by top-performing creators to boost your own video SEO.",
-          "route": "/youtube-tag-extractor",
-          "popular": false,
-          "seoDescription": "Surface the keyword tags hidden in a video's page source to learn how leading creators label their uploads and which phrases they keep repeating.",
-          "seoTitle": "YouTube Tag Extractor — Hidden Keywords"
-        },
-        {
-          "id": "youtube-tag-generator",
-          "name": "YouTube Tag Generator",
-          "description": "Generate SEO-friendly tags for your YouTube videos instantly. Our free online tool suggests relevant keywords based on your video topic to help you rank higher in search results.",
-          "route": "/youtube-tag-generator",
-          "popular": false,
-          "seoDescription": "Assemble a tag list around your video's topic that fills the 500-character box with relevant search phrases rather than a scatter of random words.",
-          "seoTitle": "YouTube Tag Generator — SEO Video Tags"
         },
         {
           "id": "youtube-timestamp-link-generator",
@@ -2133,15 +1331,6 @@
           "seoTitle": "YouTube Timestamp Link — Share Moments"
         },
         {
-          "id": "youtube-title-extractor",
-          "name": "YouTube Title Extractor",
-          "description": "Extract the exact title from any YouTube video instantly. Perfect for competitor research, SEO analysis, and content archiving. Free and secure online tool.",
-          "route": "/youtube-title-extractor",
-          "popular": false,
-          "seoDescription": "Grab the exact wording of any video title for swipe files, spreadsheets and A/B notes, with the punctuation and capitalization kept as published.",
-          "seoTitle": "YouTube Title Extractor — Copy Any Title"
-        },
-        {
           "id": "youtube-title-length-checker",
           "name": "YouTube Title Length Checker",
           "description": "Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is visible in search results.",
@@ -2151,24 +1340,6 @@
           "seoTitle": "YouTube Title Length Checker — No Cutoff"
         },
         {
-          "id": "youtube-video-count-checker",
-          "name": "YouTube Video Count Checker",
-          "description": "Get the exact video count for any YouTube channel instantly. Our free online checker provides up-to-date information for competitive research and channel auditing.",
-          "route": "/youtube-video-count-checker",
-          "popular": false,
-          "seoDescription": "Learn how many uploads a channel has published, a quick signal of output and consistency when comparing rival creators or vetting a niche's pace.",
-          "seoTitle": "YouTube Video Count Checker — Channel Totals"
-        },
-        {
-          "id": "youtube-video-statistics",
-          "name": "YouTube Video Statistics",
-          "description": "Get detailed metrics and statistics for any YouTube video instantly. Analyze view counts, likes, and engagement rates with our free online video audit tool.",
-          "route": "/youtube-video-statistics",
-          "popular": false,
-          "seoDescription": "Study one video's views, likes, comments and engagement rate together to judge whether its performance beat or trailed the channel's own average.",
-          "seoTitle": "YouTube Video Stats — Views & Engagement"
-        },
-        {
           "id": "youtube-title-capitalizer",
           "name": "Youtube Video Title Capitalizer",
           "description": "Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles stand out.",
@@ -2176,15 +1347,6 @@
           "popular": false,
           "seoDescription": "Reformat a video title into proper title case, sentence case, uppercase or lowercase, tidying rushed typing before the title goes live on your channel.",
           "seoTitle": "YouTube Title Capitalizer — Proper Case"
-        },
-        {
-          "id": "youtube-views-ratio-calculator",
-          "name": "YouTube Views Ratio Calculator",
-          "description": "Calculate the view-to-engagement ratio for any YouTube video instantly. Our free online tool helps you understand audience interaction and video performance beyond just views.",
-          "route": "/youtube-views-ratio-calculator",
-          "popular": false,
-          "seoDescription": "Work out likes-to-views and comments-to-views ratios from any video's raw numbers to compare how engaged the audiences really are across two uploads.",
-          "seoTitle": "YouTube Engagement Calculator — Like Ratio"
         },
         {
           "id": "youtube-title-generator",
@@ -2221,42 +1383,6 @@
           "popular": false,
           "seoDescription": "Save a video's cover art at every size YouTube publishes, from the default frame up to maximum resolution, for moodboards, research or design work.",
           "seoTitle": "YouTube Thumbnail Downloader — HD & 4K"
-        },
-        {
-          "id": "youtube-downloader",
-          "name": "YouTube Video Downloader",
-          "description": "Download YouTube videos and audio online in high quality MP4 and MP3 formats for offline personal use with content you own.",
-          "route": "/youtube-downloader",
-          "popular": false,
-          "seoDescription": "Save YouTube clips as MP4 or extract the soundtrack as MP3, picking from the quality options the resolver returns for the link before you download.",
-          "seoTitle": "Free YouTube Video & Audio Downloader Online"
-        },
-        {
-          "id": "youtube-shorts-downloader",
-          "name": "YouTube Shorts Downloader",
-          "description": "Save YouTube Shorts videos in HD MP4 format for offline viewing without watermarks or account registration.",
-          "route": "/youtube-shorts-downloader",
-          "popular": false,
-          "seoDescription": "Download YouTube Shorts clips in high-definition MP4 format without watermarks. Free online tool, instant local processing, no signup required.",
-          "seoTitle": "Free YouTube Shorts Downloader — HD MP4 Videos"
-        },
-        {
-          "id": "youtube-channel-banner-downloader",
-          "name": "YouTube Channel Banner Downloader",
-          "description": "Extract and download high-resolution channel banner art and channel headers from any public YouTube channel.",
-          "route": "/youtube-channel-banner-downloader",
-          "popular": false,
-          "seoDescription": "Fetch the full-width banner artwork from a channel page in its highest stored resolution for moodboards, redesign concepts, mockups or archive copies.",
-          "seoTitle": "Free YouTube Channel Banner Downloader — HD Headers"
-        },
-        {
-          "id": "youtube-channel-logo-downloader",
-          "name": "YouTube Channel Logo Downloader",
-          "description": "Download full-size profile pictures, avatar logos, and channel icons from any public YouTube channel in original resolution.",
-          "route": "/youtube-channel-logo-downloader",
-          "popular": false,
-          "seoDescription": "Download a channel's avatar or profile picture at the largest size available, handy for press pages, creator directories, sponsor decks and credit lines.",
-          "seoTitle": "Free YouTube Channel Logo & Avatar Downloader"
         }
       ]
     },
@@ -2291,42 +1417,6 @@
           "popular": false,
           "seoTitle": "Free Guitar Tuner Online — Accurate & Fast",
           "seoDescription": "Hold a phone or laptop near the instrument and pluck: the microphone hears each string and shows how far it sits from standard, drop D or half-step tuning."
-        },
-        {
-          "id": "gaana-video-downloader",
-          "name": "Gaana Video Downloader",
-          "description": "Download Gaana songs you love for offline listening in high quality. Bollywood and regional — free.",
-          "route": "/gaana-video-downloader",
-          "popular": false,
-          "seoDescription": "Paste a Gaana track link, let the page surface the stream behind it, and choose a quality before saving the song for later listening on any player.",
-          "seoTitle": "Gaana Song Downloader — MP3, Free"
-        },
-        {
-          "id": "mp3-from-tiktok",
-          "name": "MP3 From Tiktok",
-          "description": "Save a viral sound: paste the TikTok video link, review the extracted audio options, and download the track for a ringtone.",
-          "route": "/mp3-from-tiktok",
-          "popular": false,
-          "seoDescription": "Save a viral sound as a file: paste the TikTok link, review the audio options it returns, and download the track for a ringtone or a keepsake collection.",
-          "seoTitle": "TikTok to MP3 — Sounds & Ringtones"
-        },
-        {
-          "id": "mp4-to-mp3",
-          "name": "MP4 To MP3",
-          "description": "Paste a TikTok video address, choose 192kbps for a balance of size and fidelity or 320kbps for more, then take the MP3.",
-          "route": "/mp4-to-mp3",
-          "popular": false,
-          "seoDescription": "Pick the bitrate a recording deserves — 128kbps for spoken audio, up to 320kbps when fidelity matters — and turn an MP4's soundtrack into a standalone MP3.",
-          "seoTitle": "MP4 to MP3 Converter — 320kbps, Free"
-        },
-        {
-          "id": "soundcloud-video-downloader",
-          "name": "Soundcloud Video Downloader",
-          "description": "Download SoundCloud tracks and mixes you follow for offline listening. High quality — free.",
-          "route": "/soundcloud-video-downloader",
-          "popular": false,
-          "seoDescription": "Lift independent tracks, DJ mixes and podcasts off SoundCloud by pasting the page link, checking the streams offered, and downloading the one you want.",
-          "seoTitle": "SoundCloud Downloader — Tracks & Mixes"
         },
         {
           "id": "audio-equalizer",
@@ -2924,16 +2014,6 @@
           "seoTitle": "JavaScript Obfuscator — Protect Source"
         },
         {
-          "id": "json-editor",
-          "name": "JSON Editor",
-          "description": "Edit, modify, and manage JSON data with our free online JSON Editor. Features syntax highlighting, tree view, and validation to help you structure your data perfectly.",
-          "route": "/json-editor",
-          "popular": false,
-          "title": "JSON Editor - Free Online Tool",
-          "seoDescription": "Edit a JSON payload in place while mistakes are flagged with line and column, then copy the cleaned-up, properly indented result straight back out.",
-          "seoTitle": "JSON Editor — Edit & Fix with Tree View"
-        },
-        {
           "id": "json-formatter",
           "name": "JSON Formatter",
           "description": "Format and beautify your JSON data instantly for better readability. Our free online tool validates your JSON structure and provides a clean, indented view of your code.",
@@ -2996,25 +2076,6 @@
           "popular": false,
           "seoDescription": "Recast a JSON object as well-formed XML, with the first key becoming the root element and a proper XML declaration heading the finished XML output.",
           "seoTitle": "JSON to XML Converter — APIs & SOAP"
-        },
-        {
-          "id": "json-validator",
-          "name": "JSON Validator",
-          "description": "Validate your JSON data for syntax errors and structural integrity instantly. Our free online tool helps you catch bugs and ensure your JSON is RFC-compliant.",
-          "route": "/json-validator",
-          "popular": false,
-          "title": "JSON Validator - Free Online Tool",
-          "seoDescription": "Drop a payload in and learn exactly where it breaks: parse errors cite the line and column, so a stray comma or missing brace gets found and fixed fast.",
-          "seoTitle": "JSON Validator — Syntax Errors Fixed"
-        },
-        {
-          "id": "json-viewer",
-          "name": "JSON Viewer",
-          "description": "Paste JSON to validate it, reformat with your chosen indent, check size and structure stats, then copy or download the formatted or minified result.",
-          "route": "/json-viewer",
-          "popular": false,
-          "seoDescription": "Navigate a dense JSON response in a tidy indented layout, sort the keys alphabetically to hunt for a specific field, and snag a minified copy too.",
-          "seoTitle": "JSON Viewer — Tree, Graph & Format"
         },
         {
           "id": "leadgenius-api-key-tester",
@@ -3468,15 +2529,6 @@
           "seoTitle": "Electric Charge Converter — C & mAh"
         },
         {
-          "id": "color-converter",
-          "name": "Color Converter",
-          "description": "Transform color codes between HEX, RGB, HSL, and CMYK formats instantly. Our free online tool helps designers and developers manage color schemes with precision.",
-          "route": "/color-converter",
-          "popular": false,
-          "seoDescription": "Read a HEX colour as its RGB numbers with a live swatch beside it, useful for matching a brand palette or pulling exact values out of a screenshot.",
-          "seoTitle": "Color Converter — HEX, RGB, HSL & CMYK"
-        },
-        {
           "id": "confidence-interval-calculator",
           "name": "Confidence Interval Calculator",
           "description": "Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your research.",
@@ -3586,15 +2638,6 @@
           "seoTitle": "DNS Lookup — A, MX, TXT & All Records"
         },
         {
-          "id": "domain-age-checker",
-          "name": "Domain Age Checker",
-          "description": "Find the exact age of any domain name instantly. Our free online tool helps with SEO research, domain appraisal, and competitive analysis.",
-          "route": "/domain-age-checker",
-          "popular": false,
-          "seoDescription": "Vet an unfamiliar domain before buying it: fetch it live and see whether it answers, where its redirects point and which HTTP status code comes back.",
-          "seoTitle": "Domain Age Checker — SEO & Trust Lookup"
-        },
-        {
           "id": "domain-to-ip-converter",
           "name": "Domain to IP Converter",
           "description": "Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues.",
@@ -3604,15 +2647,6 @@
           "seoTitle": "Domain to IP Lookup — Find Server IP"
         },
         {
-          "id": "each-converter",
-          "name": "Each Converter",
-          "description": "Enter a px, rem or em value from a stylesheet and see its counterparts computed at a 16px root, with a swap control to flip the conversion direction.",
-          "route": "/each-converter",
-          "popular": false,
-          "seoDescription": "Scale CSS values between pixels, rem and em at the standard 16px root size, with a swap control and a full equivalents panel for stylesheet maths.",
-          "seoTitle": "Each Price Calculator — Unit Cost Compare"
-        },
-        {
           "id": "energy-converter",
           "name": "Energy Converter",
           "description": "Enter an energy value in joules, kilojoules, calories, kilocalories, kWh or BTU and read all of the other units side by side in one view.",
@@ -3620,15 +2654,6 @@
           "popular": false,
           "seoDescription": "Compare energy figures across joules, kilojoules, calories, kilowatt-hours and BTU, covering physics homework, diet maths and household electricity bills.",
           "seoTitle": "Energy Converter — Joules, Calories & kWh"
-        },
-        {
-          "id": "facebook-id-finder",
-          "name": "Facebook ID Finder",
-          "description": "Fetch a Facebook profile, page or post link and inspect the resolved address, status code and a markup excerpt for numeric ID clues.",
-          "route": "/facebook-id-finder",
-          "popular": false,
-          "seoDescription": "Fetch a Facebook profile, page or post URL and read the final address plus a markup excerpt, so you can track down the numeric identifiers behind it.",
-          "seoTitle": "Facebook ID Finder — Numeric ID Lookup"
         },
         {
           "id": "faq-schema-generator",
@@ -3647,15 +2672,6 @@
           "popular": false,
           "seoDescription": "Switch between hertz, kilohertz, megahertz and RPM for audio gear, radio bands and motor specs, with every unit in the set converted as you type.",
           "seoTitle": "Frequency Converter — Hz, kHz, MHz, GHz"
-        },
-        {
-          "id": "get-http-headers",
-          "name": "Get HTTP Headers",
-          "description": "Point the tool at a public URL and read back its head markup: title tag, meta tags and linked scripts, retrieved through a safety-checked proxy.",
-          "route": "/get-http-headers",
-          "popular": false,
-          "seoDescription": "Fetch a page and read its HTML head section, including the title tag, meta descriptions and linked scripts, without ever opening a developer console.",
-          "seoTitle": "HTTP Headers Checker — Inspect Any URL"
         },
         {
           "id": "gst-calculator",
@@ -3677,15 +2693,6 @@
           "seoTitle": "HEX to RGB Converter — With Preview"
         },
         {
-          "id": "hosting-checker",
-          "name": "Hosting Checker",
-          "description": "Discover where any website is hosted: provider, IP and nameservers. Competitor intel — free.",
-          "route": "/hosting-checker",
-          "popular": false,
-          "seoDescription": "Trace a site's URL through its redirect hops and status codes to see where the address actually lands before you change hosts, move servers or repoint DNS.",
-          "seoTitle": "Hosting Checker — Find Any Site's Host"
-        },
-        {
           "id": "htaccess-redirect-generator",
           "name": "Htaccess Redirect Generator",
           "description": "Generate Apache .htaccess 301 redirect rules without regex pain. HTTP to HTTPS too — free.",
@@ -3695,15 +2702,6 @@
           "seoTitle": ".htaccess Redirect Generator — 301s Made Easy"
         },
         {
-          "id": "http-status-code-checker",
-          "name": "HTTP Status Code Checker",
-          "description": "Look up any HTTP status code: 200, 301, 404, 500 and more explained plainly. Debug faster — free.",
-          "route": "/http-status-code-checker",
-          "popular": false,
-          "seoDescription": "Send a live request to any URL and see exactly which HTTP status code comes back, with the final address reported alongside for context and debugging.",
-          "seoTitle": "HTTP Status Codes Explained — 200 to 599"
-        },
-        {
           "id": "illuminance-converter",
           "name": "Illuminance Converter",
           "description": "Convert illuminance between lux, foot-candles and lumens. Lighting design math — free.",
@@ -3711,15 +2709,6 @@
           "popular": false,
           "seoDescription": "Compare lighting levels in lux and foot-candles for studio setups, plant shelves or workplace safety checks, with both values updating as you type.",
           "seoTitle": "Lux Converter — Illuminance Units, Free"
-        },
-        {
-          "id": "indexnow-submitter",
-          "name": "IndexNow Submitter",
-          "description": "Submit URLs to Bing, Yandex, and other search engines instantly using the IndexNow protocol.",
-          "route": "/indexnow",
-          "popular": false,
-          "seoDescription": "Check a URL's redirect chain and response status before pinging search engines, so your IndexNow submission points at a page that genuinely resolves.",
-          "seoTitle": "IndexNow Submit — Instant Bing Indexing"
         },
         {
           "id": "internet-speed-test",
@@ -3805,15 +2794,6 @@
           "seoTitle": "Running Pace Converter — min/km & min/mile"
         },
         {
-          "id": "page-size-checker",
-          "name": "Page Size Checker",
-          "description": "Check any page's total weight: HTML, CSS, JS and images broken down. Speed audit — free.",
-          "route": "/page-size-checker",
-          "popular": false,
-          "seoDescription": "Pull a page through a capped fetch and see how many bytes of HTML arrive before truncation, a rough starting weight before you optimise larger assets.",
-          "seoTitle": "Page Size Checker — Find What Slows You"
-        },
-        {
           "id": "parts-per-converter",
           "name": "Parts Per Converter",
           "description": "Express a concentration as a ratio, percent, ppm or ppb and see the other three forms update together, for dilution and water testing.",
@@ -3821,15 +2801,6 @@
           "popular": false,
           "seoDescription": "Shift between ratio, percent, ppm and ppb for dilution, water-quality testing and lab notes, with all four values recalculated instantly as you type.",
           "seoTitle": "PPM Converter — ppm, ppb, Percent & mg/L"
-        },
-        {
-          "id": "secure-password-generator",
-          "name": "Secure Password Generator",
-          "description": "Create cryptographically secure, random passwords online. Customize length, character sets, and verify strength locally.",
-          "route": "/secure-password-generator",
-          "popular": true,
-          "seoDescription": "Draw a password from any mix of upper and lower case letters, digits and symbols, at lengths from 4 to 128, with a strength bar scoring each result.",
-          "seoTitle": "Strong Password Generator — Secure & Free"
         },
         {
           "id": "password-generator",
@@ -3904,24 +2875,6 @@
           "seoTitle": "QR Code Generator — Custom & Free"
         },
         {
-          "id": "random-uuid-generator",
-          "name": "Random UUID Generator",
-          "description": "Generate random UUIDs v4 in bulk for databases and testing. One click, a thousand IDs — free.",
-          "route": "/random-uuid-generator",
-          "popular": false,
-          "seoDescription": "Create a fresh random UUID v4 with each click, then copy the identifier straight into a database seed, test fixture, config file or API request body.",
-          "seoTitle": "Random UUID Generator — Bulk v4 IDs"
-        },
-        {
-          "id": "reactive-energy-converter",
-          "name": "Reactive Energy Converter",
-          "description": "Swap an energy reading between joules, kilojoules, calories, kilocalories, kilowatt-hours and BTU from a single input, with a full unit table.",
-          "route": "/reactive-energy-converter",
-          "popular": false,
-          "seoDescription": "Run utility-bill style energy maths: switch joules, kilocalories, kilowatt-hours and BTU when reconciling grid data, metering and consumption notes.",
-          "seoTitle": "Reactive Energy Converter — kVArh Units"
-        },
-        {
           "id": "reactive-power-converter",
           "name": "Reactive Power Converter",
           "description": "Convert reactive power between kVAr, MVAr and VAr. Electrical grids simplified — free.",
@@ -3929,15 +2882,6 @@
           "popular": false,
           "seoDescription": "Restate reactive power in var alongside kilowatt-scale and mechanical horsepower equivalents for power-factor discussions and electrical load notes.",
           "seoTitle": "Reactive Power Converter — kVAr & MVAr"
-        },
-        {
-          "id": "redirect-checker",
-          "name": "Redirect Checker",
-          "description": "Trace any URL's full redirect chain: 301s, 302s and final landing page. SEO audits — free.",
-          "route": "/redirect-checker",
-          "popular": false,
-          "seoDescription": "Follow a URL through up to a dozen hops, listing each status code and Location target so redirect chains, loops and stray landings become obvious.",
-          "seoTitle": "Redirect Checker — Trace 301 Chains"
         },
         {
           "id": "rgb-to-hex-converter",
@@ -3949,15 +2893,6 @@
           "seoTitle": "RGB to HEX Converter — With Preview"
         },
         {
-          "id": "roman-numerals-to-number",
-          "name": "Roman Numerals to Number",
-          "description": "Translate Roman numerals (XIV, MMXXVI) to regular numbers. Ancient math — free.",
-          "route": "/roman-numerals-to-number",
-          "popular": false,
-          "seoDescription": "Read Roman numerals as ordinary digits: type or paste a value such as MMXXVI or XIV and watch the decimal number it represents appear instantly on screen.",
-          "seoTitle": "Roman to Number Decoder — XIV to 14"
-        },
-        {
           "id": "sales-tax-calculator",
           "name": "Sales Tax Calculator",
           "description": "Add sales tax to a net amount at any rate you enter, splitting out the tax and gross totals separately for invoices, quotes and pricing work.",
@@ -3965,24 +2900,6 @@
           "popular": false,
           "seoDescription": "Add sales tax to a net amount at any rate and see the tax and gross totals split out separately, handy for invoicing, quotes or product pricing work.",
           "seoTitle": "Sales Tax Calculator — US States, Free"
-        },
-        {
-          "id": "screen-resolution-simulator",
-          "name": "Screen Resolution Simulator",
-          "description": "Preview your site at phone, tablet, laptop and 4K sizes. Responsive testing — free.",
-          "route": "/screen-resolution-simulator",
-          "popular": false,
-          "seoDescription": "Check the screen width, height and pixel ratio your device reports to a page, a useful first reference point before previewing responsive layouts.",
-          "seoTitle": "Screen Size Simulator — Test Responsive"
-        },
-        {
-          "id": "server-status-checker",
-          "name": "Server Status Checker",
-          "description": "Check if any website or server is up, slow or down right now. Instant status — free.",
-          "route": "/server-status-checker",
-          "popular": false,
-          "seoDescription": "Probe a website and see whether it answers right now, with the final address and HTTP status code reported back in the panel once the check has completed.",
-          "seoTitle": "Is It Down? — Website Status Checker"
         },
         {
           "id": "speed-converter",
@@ -4055,15 +2972,6 @@
           "popular": false,
           "seoDescription": "Break even very long addresses into protocol, host, port, path, query and fragment parts, so you can see exactly what the link is really carrying.",
           "seoTitle": "URL Parser — Split Links into Parts"
-        },
-        {
-          "id": "url-rewriting-tool",
-          "name": "URL Rewriting Tool",
-          "description": "Generate clean rewrite rules for Apache and Nginx. Pretty URLs without pain — free.",
-          "route": "/url-rewriting-tool",
-          "popular": false,
-          "seoDescription": "Study a URL's components before writing redirects: see the protocol, host, path and query in one place to plan your Apache or Nginx rewrite patterns.",
-          "seoTitle": "URL Rewrite Generator — .htaccess & Nginx"
         },
         {
           "id": "url-shortener",
@@ -4156,24 +3064,6 @@
           "seoTitle": "User Agent Checker — What's My UA?"
         },
         {
-          "id": "whois-domain-lookup",
-          "name": "Whois Domain Lookup",
-          "description": "Look up any domain's owner, registrar and expiry dates. Due diligence — free.",
-          "route": "/whois-domain-lookup",
-          "popular": false,
-          "seoDescription": "Run a quick first-pass check on a domain before registrar research: send a live request and read its status, redirect trail and a quick page excerpt.",
-          "seoTitle": "WHOIS Lookup — Domain Owner & Expiry"
-        },
-        {
-          "id": "wordpress-theme-detector",
-          "name": "WordPress Theme Detector",
-          "description": "Detect any site's WordPress theme and plugins in seconds. Spy ethically — free.",
-          "route": "/wordpress-theme-detector",
-          "popular": false,
-          "seoDescription": "Fetch a site's page and scan the returned markup excerpt for theme and plugin paths that you can spot by eye in the monospace output panel yourself.",
-          "seoTitle": "WordPress Theme Detector — Free Lookup"
-        },
-        {
           "id": "other-tools",
           "name": "Other Tools",
           "description": "Free Other Tools online tool. Fast and secure.",
@@ -4253,78 +3143,6 @@
           "seoTitle": "SEO Title Generator — Meta Titles That Rank"
         },
         {
-          "id": "robots-txt-sitemap-generator",
-          "name": "Robots.txt and Sitemap Generator",
-          "description": "Generate robots.txt and sitemap.xml files for your website to improve crawling and indexing.",
-          "route": "/robots-txt-sitemap-generator",
-          "popular": false,
-          "seoDescription": "List key URLs with crawl frequency and priority values to assemble a clean sitemap.xml, then upload it to your root and point robots.txt at the file.",
-          "seoTitle": "Robots.txt Generator — Crawl Rules, Free"
-        },
-        {
-          "id": "keyword-research-tool",
-          "name": "Advanced Keyword Research",
-          "description": "Comprehensive keyword research tool with search volume, difficulty, CPC data, and keyword suggestions. Find profitable keywords for SEO.",
-          "route": "/keyword-research-tool",
-          "popular": true,
-          "seoDescription": "Turn one seed keyword into a table of related terms with volume, CPC and difficulty columns, so you can shortlist which topics are worth chasing next.",
-          "seoTitle": "Keyword Research Tool — Volume & Difficulty"
-        },
-        {
-          "id": "sitemap-generator",
-          "name": "Advanced Sitemap Generator",
-          "description": "Generate XML sitemaps for any website URL. Crawl websites and create comprehensive sitemaps with proper formatting and metadata.",
-          "route": "/sitemap-generator",
-          "popular": true,
-          "seoDescription": "Inspect a live URL's status code, redirect path and outgoing links first, so anything you later list in an XML sitemap is reachable when crawlers visit it.",
-          "seoTitle": "XML Sitemap Generator — Crawl Any Site"
-        },
-        {
-          "id": "seo-audit-tool",
-          "name": "Complete SEO Audit Tool",
-          "description": "Comprehensive SEO audit tool that analyzes technical SEO, on-page optimization, content quality, and provides actionable recommendations.",
-          "route": "/seo-audit-tool",
-          "popular": true,
-          "seoDescription": "Point it at any URL and read the live HTTP status, headers and HTML head, the opening diagnostics for broken pages, bad redirects and missing title tags.",
-          "seoTitle": "Free SEO Audit — 100+ Checks Instantly"
-        },
-        {
-          "id": "backlink-checker",
-          "name": "Backlink Checker",
-          "description": "Probe a target URL through a safety-checked fetch before a backlink audit: read the redirect chain, final address, status and page excerpt.",
-          "route": "/backlink-checker",
-          "popular": true,
-          "seoDescription": "Before digging into a site's backlink profile, pull the target URL from its live server to confirm it loads with a clean status and no unexpected redirects.",
-          "seoTitle": "Backlink Checker — Who Links to You?"
-        },
-        {
-          "id": "bulk-keyword-rank-checker",
-          "name": "Bulk Keyword Rank Checker",
-          "description": "Work through the URLs behind your keyword list: each safety-checked fetch reports the resolved address, status code and a text snippet.",
-          "route": "/bulk-keyword-rank-checker",
-          "popular": true,
-          "seoDescription": "Check the pages behind your tracked keywords one URL at a time: pull status codes, redirects and snippets so you know each target stays crawlable.",
-          "seoTitle": "Bulk Rank Checker — Track 100s of Keywords"
-        },
-        {
-          "id": "google-cache-checker",
-          "name": "Google Cache Checker",
-          "description": "See Google's cached snapshot of any page to verify indexing. Freshness check — free.",
-          "route": "/google-cache-checker",
-          "popular": false,
-          "seoDescription": "Pull a page's live response through a server-side fetch and inspect its status, redirects and head tags to judge how fresh or stale the copy has become.",
-          "seoTitle": "Google Cache Checker — Last Crawl Date"
-        },
-        {
-          "id": "google-index-checker",
-          "name": "Google Index Checker",
-          "description": "Check if any URL is indexed in Google right now. site: lookups made easy — free.",
-          "route": "/google-index-checker",
-          "popular": false,
-          "seoDescription": "Fetch any URL to see its response code, redirect chain and head markup, the crawl signals that come before Google decides whether to index the page.",
-          "seoTitle": "Google Index Checker — Is My Page Indexed?"
-        },
-        {
           "id": "keyword-density-checker",
           "name": "Keyword Density Checker",
           "description": "Enter a base keyword to see a sample table of related search terms, each row showing an illustrative search volume, CPC figure and difficulty label.",
@@ -4334,15 +3152,6 @@
           "seoTitle": "Keyword Density Checker — Avoid Stuffing"
         },
         {
-          "id": "keywords-suggestion-tool",
-          "name": "Keywords Suggestion Tool",
-          "description": "Get long-tail keyword ideas from seed terms with questions and modifiers. Free research.",
-          "route": "/keywords-suggestion-tool",
-          "popular": false,
-          "seoDescription": "Kick off from a seed phrase and gather the related variations people search, from best and online versions to how-to phrasings for your content calendar.",
-          "seoTitle": "Keyword Ideas Generator — Long-Tail, Free"
-        },
-        {
           "id": "meta-tag-generator",
           "name": "Meta Tag Generator",
           "description": "Generate complete meta tag sets: title, description, OG, Twitter and robots. Copy all — free.",
@@ -4350,15 +3159,6 @@
           "popular": false,
           "seoDescription": "Fill in title, description and keywords, add Open Graph fields if the page needs them, then copy the finished meta markup straight into your HTML head.",
           "seoTitle": "Meta Tags Generator — SEO + Social, Free"
-        },
-        {
-          "id": "open-graph-checker",
-          "name": "Open Graph Checker",
-          "description": "Preview how links look on Facebook, LinkedIn and Slack. Fix broken cards — free.",
-          "route": "/open-graph-checker",
-          "popular": false,
-          "seoDescription": "Run a link through the fetcher and check the title, description and social tags in its HTML head that decide how it previews when someone shares the URL.",
-          "seoTitle": "Open Graph Checker — Preview Social Cards"
         },
         {
           "id": "open-graph-generator",
@@ -4388,15 +3188,6 @@
           "seoTitle": "Twitter Card Generator — Large Image Cards"
         },
         {
-          "id": "visual-sitemap",
-          "name": "Visual Sitemap Generator",
-          "description": "Visualize your website's sitemap structure instantly. Enter your XML sitemap URL to generate a dynamic tree view of your site hierarchy.",
-          "route": "/visual-sitemap",
-          "popular": true,
-          "seoDescription": "Map a site's URL structure from its sitemap.xml: every address becomes a node in a tree, so lopsided sections and deeply nested paths stand out quickly.",
-          "seoTitle": "Visual Sitemap — See Site Structure"
-        },
-        {
           "id": "website-ranking-checker",
           "name": "Website Ranking Checker",
           "description": "Run a domain and the panel explains why live Google positions require SERP data feeds, then points to free routes for checking your own rankings.",
@@ -4404,14 +3195,6 @@
           "popular": false,
           "seoDescription": "Learn why live Google positions need SERP data feeds, and where to check your own site's rankings at no cost before paying for a tracking subscription.",
           "seoTitle": "Rank Checker — Google Positions, Free"
-        },
-        {
-          "id": "sitemap-url-downloader",
-          "name": "Sitemap Url Downloader",
-          "description": "Extract every URL from any XML sitemap for audits and migrations. Bulk export — free.",
-          "route": "/sitemap-url-downloader",
-          "seoDescription": "Extract every loc entry from a sitemap.xml, by fetching the address or pasting the XML, then search, copy or save the deduplicated list as plain text.",
-          "seoTitle": "Sitemap URL Extractor — Bulk Download"
         }
       ]
     },
@@ -4638,14 +3421,6 @@
           "seoTitle": "Free Developer Stack — Tools for Developers"
         },
         {
-          "id": "seo-tools-free-online",
-          "name": "SEO Tools Free Online - Ranked Picks (2026)",
-          "description": "Use free online SEO tools for audits, keyword planning, metadata generation, and indexing checks. Built for creators, agencies, and developers.",
-          "route": "/seo-tools-free-online",
-          "seoDescription": "Curated picks from the free SEO landscape: run site audits, plan keywords, generate metadata and check indexing without a heavyweight subscription.",
-          "seoTitle": "Free SEO Tools — Ranked Picks (2026)"
-        },
-        {
           "id": "ai-tools-alternatives-free",
           "name": "AI Tools Alternatives Free - Practical Picks",
           "description": "Explore free AI tool alternatives for writing, image creation, voice generation, and content ideation without subscriptions.",
@@ -4660,14 +3435,6 @@
           "route": "/best-free-alternative-to-chatgpt",
           "seoDescription": "Build a no-cost workflow around a ChatGPT alternative: dedicated helpers for drafting, metadata, images and voice cover everyday tasks without a subscription.",
           "seoTitle": "Best Free Alternative to ChatGPT for Daily Tasks"
-        },
-        {
-          "id": "top-10-free-online-tools-for-seo",
-          "name": "Top 10 Free Online Tools for SEO (2026)",
-          "description": "Top 10 free SEO tools for keyword research, audits, metadata, indexing checks, and sitemaps. Ranked for speed and daily SEO workflows.",
-          "route": "/top-10-free-online-tools-for-seo",
-          "seoDescription": "Ten ranked free SEO utilities, from keyword research and site audits to sitemap and robots.txt generators, each with notes on when to reach for it.",
-          "seoTitle": "Top 10 Free SEO Tools (2026)"
         },
         {
           "id": "top-10-json-tools-online",
@@ -4833,15 +3600,6 @@
           "popular": false,
           "seoDescription": "Merge semester SGPAs into one cumulative CGPA for the degree, using a simple average of every term you enter, and extend it as fresh results land.",
           "seoTitle": "SGPA to CGPA Calculator — Weighted & Simple"
-        },
-        {
-          "id": "attendance-shortage-calculator",
-          "name": "Attendance Shortage Calculator",
-          "description": "Calculate how many classes you need to attend to reach 75% attendance or how many classes you can safely miss.",
-          "route": "/attendance-shortage-calculator",
-          "popular": true,
-          "seoDescription": "Fallen below the attendance bar? Enter classes held and attended to see exactly how many lectures in a row you must sit through to recover lost ground.",
-          "seoTitle": "Attendance Shortage Calculator — Safe Bunks Left"
         },
         {
           "id": "75-attendance-calculator",
@@ -5066,15 +3824,6 @@
           "popular": false,
           "seoDescription": "Work out daily protein targets from your body weight: a lower gram range for an active lifestyle, a higher range for muscle building and recovery.",
           "seoTitle": "Protein Calculator — Daily Needs by Goal"
-        },
-        {
-          "id": "bmi-ideal-weight-calculator",
-          "name": "BMI + Ideal Weight Calculator",
-          "description": "Calculate your bmi + ideal weight calculator instantly. Free browser-based calculator with detailed breakdowns.",
-          "route": "/bmi-ideal-weight-calculator",
-          "popular": false,
-          "seoDescription": "Read your BMI and weight category next to an estimated ideal weight for your height, calculated with the Devine formula, presented on a single screen.",
-          "seoTitle": "Ideal Weight Calculator — BMI Healthy Range"
         },
         {
           "id": "water-intake-calculator",

@@ -86,7 +86,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 description: opportunity.metaDescription,
                 images: ["/og-image.jpg"],
             },
-            robots: getMonetizationDecision({ slug }).indexable ? { index: true, follow: true } : { index: false, follow: false },
+            robots: getMonetizationDecision({ slug }).indexable ? { index: true, follow: true } : { index: false, follow: true },
         };
     }
 
@@ -120,7 +120,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             description: intent.description,
             images: ["/og-image.jpg"],
         },
-        robots: getMonetizationDecision({ slug }).indexable ? { index: true, follow: true } : { index: false, follow: false },
+        robots: getMonetizationDecision({ slug }).indexable ? { index: true, follow: true } : { index: false, follow: true },
     };
 }
 

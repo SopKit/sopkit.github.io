@@ -1,4 +1,4 @@
-import { getAllToolsByCategory, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, Tool, getSearchToolRecords } from "@/lib/tools";
 import { HEALTH_HUB_GROUPS } from "@/data/health-hub-groups";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
@@ -58,6 +58,7 @@ export default function HealthHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<PremiumHero
+				tools={getSearchToolRecords()}
 				title="Health & Fitness Calculators — Free Estimates"
 				subtitle="Browse 5 free health calculators for metabolic rate, calorie needs, macros, ideal weight and body fat. Each tool page explains its own inputs and limits."
 			/>

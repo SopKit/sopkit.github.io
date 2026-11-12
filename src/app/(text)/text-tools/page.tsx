@@ -1,14 +1,15 @@
-import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, getAllCategories, Tool, getSearchToolRecords } from "@/lib/tools";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Type, ArrowRight } from "lucide-react";
 import { generateToolMetadata } from "@/lib/seo";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
 
 export const metadata = generateToolMetadata({
 	name: "Text Tools",
-	description: "Private Text Tools: privately convert web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	description: "Private Text Tools: privately convert web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training on your files. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
 	route: "/text-tools",
 	category: "utilities",
 });
@@ -22,8 +23,10 @@ export default function TextHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
+			<CollectionPageJsonLd groupKey="text" name="Text Tools" description="A collection of free online text utilities for sorting, cleaning, and formatting content." />
 			<main>
-				<PremiumHero 
+				<PremiumHero
+					tools={getSearchToolRecords()}
 					title="Text Utilities — Free Format, Count & Analyze"
 					subtitle="Fast and secure text transformation tools. Format, clean, and analyze your content instantly with our professional suite."
 				/>

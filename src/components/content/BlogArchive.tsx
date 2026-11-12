@@ -34,7 +34,6 @@ export default function BlogArchive({ currentPage }: { currentPage: number }) {
 	const featuredGuides = [
 		{ slug: "best-free-tools-for-students", label: "Students Guide" },
 		{ slug: "tools-for-developers", label: "Developer Guide" },
-		{ slug: "seo-tools-free-online", label: "SEO Guide" },
 		{ slug: "ai-tools-alternatives-free", label: "AI Alternatives" },
 	];
 

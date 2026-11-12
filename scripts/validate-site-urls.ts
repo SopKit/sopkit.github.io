@@ -1,17 +1,19 @@
 // Validates that every site URL the site itself hardcodes resolves to a
-// real page and follows the site's slash-free canonical story, and fails
-// loudly (non-zero exit) when any does not:
+// real page and follows the site's trailing-slash canonical story, and
+// fails loudly (non-zero exit) when any does not:
 //
-//   - Every literal `https://sopkit.space/<path>` in src must be
-//     slash-free (except the root `/`) and must resolve to a static
-//     page directory under src/app (route groups stripped), a registry
-//     tool route, a sibling opportunity route, a file under public/, or
-//     a documented non-page identifier (see NON_PAGE_IDENTIFIERS).
-//     Hardcoded URLs bypass buildCanonicalUrl, so a trailing slash or a
-//     dead route in share/copy text ships silently — the DevSpeed
-//     share text shipped `https://sopkit.space/dev-speed/` (real page,
-//     wrong form vs its own canonical) and the roast tool's copy text
-//     shipped a route that exists nowhere at all.
+//   - Every literal `https://sopkit.space/<path>` in src must end with
+//     "/" when it names a page (the site exports with trailingSlash:
+//     true, so `https://sopkit.space/<slug>` 301s on GitHub Pages; only
+//     the root `/`, files under public/ such as /og-image.jpg, and
+//     documented non-page identifiers stay slashless) and must resolve
+//     to a static page directory under src/app (route groups stripped),
+//     a registry tool route, a sibling opportunity route, a file under
+//     public/, or a documented non-page identifier (see
+//     NON_PAGE_IDENTIFIERS). Hardcoded URLs bypass buildCanonicalUrl, so
+//     a wrong slash form or a dead route in share/copy text ships
+//     silently — the roast tool's copy text shipped a route that exists
+//     nowhere at all.
 //   - Every value in StructuredData's CATEGORY_HUB_ROUTES map must
 //     resolve to a page directory: those values become JSON-LD
 //     breadcrumb/category URLs on every tool page. And every registry
@@ -68,7 +70,7 @@ export interface SiteUrlResult {
 const NON_PAGE_IDENTIFIERS = new Map<string, string>([
 	[
 		"/bot",
-		"bot User-Agent identifier in src/app/_api/visual-sitemap/route.ts, not a link",
+		"historic bot User-Agent identifier, not a link",
 	],
 ]);
 
@@ -187,12 +189,14 @@ export function findSiteUrlIssues(root: string): SiteUrlResult {
 					continue; // root URL, allowed with its slash
 				}
 				checked += 1;
-				if (raw.endsWith("/")) {
+				const route = raw.endsWith("/") ? raw.slice(0, -1) : raw;
+				const isPageUrl =
+					!publicFiles.has(route) && !NON_PAGE_IDENTIFIERS.has(route);
+				if (isPageUrl && !raw.endsWith("/")) {
 					violations.push(
-						`${relative} hardcodes trailing-slash site URL https://sopkit.space${raw}; canonical SopKit URLs carry no trailing slash`,
+						`${relative} hardcodes slashless site URL https://sopkit.space${raw}; canonical SopKit page URLs end with a trailing slash (trailingSlash: true export)`,
 					);
 				}
-				const route = raw.endsWith("/") ? raw.slice(0, -1) : raw;
 				if (!resolves(route)) {
 					violations.push(
 						`${relative} hardcodes site URL https://sopkit.space${raw}, which resolves to no page, tool route, opportunity route, or public file`,

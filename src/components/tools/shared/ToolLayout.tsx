@@ -5,7 +5,6 @@ import { MANUAL_TOOL_CONTENT } from "@/data/generated-manual-content";
 import { isCuratedContent } from "@/data/content-curation";
 import SeoOpportunityContent from "@/components/seo/SeoOpportunityContent";
 import StructuredData from "@/components/shared/StructuredData";
-import DownloadDisclaimer from "@/components/shared/DownloadDisclaimer";
 import { ToolFAQ, ToolFeatures, ToolSteps } from "./ToolSharedComponents";
 import { getRelatedTools, type Tool } from "@/lib/tools";
 import { Github } from "lucide-react";
@@ -126,7 +125,6 @@ const ROUTE_H1_OVERRIDES: Record<string, string> = {
 	"/seo-tools": "Free SEO Tools — Audit, Analyze & Optimize Your Website",
 	"/pdf-tools": "Free PDF Tools — Merge, Split, Compress & Edit",
 	"/ai-image-generator": "Free AI Image Generator — Create Art from Text Prompts",
-	"/calculator-tools": "Free Online Calculators — Math, Finance, Academic & Business",
 };
 
 export default function ToolLayout({
@@ -283,11 +281,6 @@ export default function ToolLayout({
 						</div>
 					)}
 				</header>
-
-				{/* Downloader Legal Notice if applicable */}
-				{tool.category === "downloaders" && (
-					<DownloadDisclaimer platformName={tool.name.replace(/ downloader$/i, "").replace(/ download$/i, "")} />
-				)}
 
 				{/* Primary Tool Workspace (Visually Dominant) */}
 				{!isHubPage && (

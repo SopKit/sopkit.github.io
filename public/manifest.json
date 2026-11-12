@@ -89,22 +89,22 @@
 	"shortcuts": [
 		{
 			"name": "PDF Suite",
-			"url": "/pdf-tools",
+			"url": "/pdf-tools/",
 			"description": "Merge, split, and compress PDFs locally"
 		},
 		{
 			"name": "Image Converter",
-			"url": "/image-tools",
+			"url": "/image-tools/",
 			"description": "Convert and optimize images client-side"
 		},
 		{
 			"name": "Developer Utilities",
-			"url": "/developer-tools",
+			"url": "/developer-tools/",
 			"description": "JSON Formatter, Base64, and Regex testers"
 		},
 		{
 			"name": "Browse All 600+ Tools",
-			"url": "/tools",
+			"url": "/tools/",
 			"description": "Search the complete SopKit directory"
 		}
 	]

@@ -7,7 +7,7 @@ import { Search, Menu, X, ArrowRight } from "lucide-react";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { PillButton } from "@/components/ui/pill-button";
 import { Container } from "@/components/layout/Container";
-import { STATIC_ROUTES } from "@/lib/tools";
+import { STATIC_ROUTES } from "@/constants/routes";
 import { GITHUB_REPO_URL } from "@/constants/config";
 import { openUnifiedSearch } from "@/components/shared/search-events";
 

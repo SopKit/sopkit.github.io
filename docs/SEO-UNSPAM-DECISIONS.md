@@ -93,3 +93,90 @@ site is a static export, so `next.config` redirects do not apply either).
 - The `/archive` directory page and category hubs.
 - AI crawler allowances in robots.
 - Ad slots (`SHOW_SCRIPTLY_ADS` stays false).
+
+---
+
+# Phase 2 (2026-11-12): broken tools, bait routes, trust copy, technical SEO, bundle
+
+Four read-only scans (bait routes, trust and E-E-A-T, technical SEO, performance and
+hygiene) ran against the phase 1 tree. Totals after phase 2: registry 603 to 464 tools,
+blog 62 to 49 posts, sitemap 569 to 494 URLs, redirect rules 208 to 364.
+
+## Findings (measured)
+
+| # | Signal | Evidence | Policy or effect |
+|---|--------|----------|------------------|
+| 11 | 98 tool routes depend on `/api/*` or `"use server"` actions that cannot exist on a static export: every downloader, the 18 `BuiltInSafeHttp` SEO checkers, the YouTube stats and extractor tools, `/ai-music-generator`, `/visual-sitemap`. Live checks: `/api/proxy/universal`, `/api/tools/*`, `/api/search` return 404 and the backend worker is a hello-world page | `src/app/_api` is a private folder; route-level grep of fetch targets | Every one of those pages shows an error for every input: deceptive/thin pages |
+| 12 | 42 bait or duplicate routes: pages whose tool does not do what the URL says (`/article-rewriter` rendered a line sorter, `/flip-image` a resizer, `/jpg-to-ico-converter` saved a PNG with an `.ico` name, `/keyword-research-tool` showed hard-coded mock volumes), prop mistakes (`/poetry-generator` rendered the bio generator, `/jpg-to-webp-converter` output JPEG), and 13 duplicate pairs rendering one component under two URLs | bait-route scan of 563 `ToolLayout` routes | Doorway/duplicate pages, misleading content |
+| 13 | Site-wide copy claimed "no tracking", "100% client-side", "zero data collection" while GA4, Clarity, OneDollarStats, AdSense and the Stack auth SDK load (after consent) and some tools call third parties | trust scan | Misleading claims (trust, not a ranking policy) |
+| 14 | Canonical, sitemap, IndexNow and JSON-LD disagreed on trailing slashes: `buildCanonicalUrl` stripped the slash, Next re-added it in HTML, so every sitemap URL 301ed to the page in the JSON-LD | technical scan against Next 16.3 source | Wasted crawl, split signals |
+| 15 | A `CollectionPage` JSON-LD for the hub was emitted on 498 non-hub tool pages via 13 route-group layouts; WebSite/Organization JSON-LD rendered client-side only via `next/script`; `keywords` meta on every page; SearchAction targeting a robots-blocked `/search` | technical scan | Structured data mismatch |
+| 16 | Shared client chunk carried `tools.json` plus four content JSONs (about 930 KB raw) through `Header` and `config.ts`; `ClientStackAuthProvider` remounted the whole app after hydration; a COOP/COEP service worker reloaded every first visit | performance scan | LCP/TBT on every page |
+| 17 | 13 blog posts were either downloader promotion, unrelated product reviews, or the thinner twin of another post | content scan | Thin and duplicative content |
+
+## Decisions
+
+10. **Retire every server-dependent tool route** (finding 11) with a 301 to its hub:
+    downloaders and `/terabox`-style players except the embed player to `/video-tools`,
+    YouTube tools to `/youtube-tools`, SEO checkers to `/seo-tools`. Kept because they run
+    in the browser: `/youtube-thumbnail-downloader` (img.youtube.com), `/terabox-downloader`
+    (iframe embed). Components, `src/app/_api`, the `"use server"` action files and
+    `src/lib/ai-services` are deleted, not disabled. Reconnecting a real backend later is a
+    new feature, not a revert.
+11. **Fix or retire bait routes** (finding 12). Prop fixes: poetry/business-name/excuse
+    generators, jpg/png-to-webp, text-to-tags, `/keyword-density-checker` now computes
+    density locally, EMI card retitled. Retired with 301 to the nearest real tool: image
+    crop/flip/rotate/enlarge/editor, bmp/gif/ico "converters", keyword research tools,
+    screen-resolution simulator, reactive-energy and "each" converters, exact-KB PDF
+    compressor, aadhaar/PAN resizer, colour converter, URL rewriting tool, article
+    rewriter. Duplicate pairs keep one URL (`/json-formatter`, `/75-attendance-calculator`,
+    `/ideal-body-weight-calculator`, `/number-to-words-converter`, `/password-generator`,
+    `/slug-generator`, `/uuid-generator`, `/invoice-generator-india`, `/pdf-merger`,
+    `/pdf-to-jpg-converter`, `/roman-numerals-converter`, `/image-compressor`). Hub overlaps
+    `/small-business-tools`, `/local-business-tools` to `/business-tools` and
+    `/calculator-tools` to `/calculators`. The two SEO guide pages that only described the
+    retired checkers (`/seo-tools-free-online`, `/top-10-free-online-tools-for-seo`) go
+    to `/seo-tools`.
+12. **Accurate privacy copy** (finding 13). Privacy policy lists GA4, Clarity,
+    OneDollarStats, AdSense, Stack Auth and how consent works; terms and DMCA no longer
+    describe downloader proxies; hub, landing, tool-shell and curated-prose claims say
+    "most tools run in your browser; tools that use an external service say so". The
+    visitor badge loads only after analytics consent. Not changed, needs the operator:
+    legal entity name, address, governing law, DMCA agent details.
+13. **One URL form** (finding 14). `buildCanonicalUrl` emits the trailing-slash form for
+    pages and the bare form for files; sitemap, feed, JSON-LD, manifest and IndexNow
+    submissions all go through it; tests and `validate-site-urls` enforce it. The
+    markdown mirror moved to `/tool-markdown/<id>.md` so the static host serves it.
+14. **Structured data cleanup** (finding 15). CollectionPage only on hub pages; WebSite
+    and Organization as plain static `<script type="application/ld+json">`; no
+    SearchAction, no `keywords` meta; noindex pages are `follow: true`; `/embed/` no
+    longer robots-blocked (noindex does the job); `/archive` and `/tool-id` noindex.
+15. **Bundle and runtime** (finding 16). Tool counts are generated at build time
+    (`scripts/generate-tool-stats.mjs` to `src/constants/tool-stats.ts`), no client
+    component imports `@/lib/tools` runtime values (guarded by
+    `tests/unit/client-bundle-guard.test.ts`), the auth provider keeps a stable element
+    type, the COI service worker is gone, `html2canvas` loads on demand, dead content JSONs
+    and one-off scripts are deleted, and `getRelatedTools` rotates by category index so
+    hub-less tools get inbound links. Image, PDF and exam hubs list every tool in their
+    category.
+16. **Blog consolidation** (finding 17). 13 posts retired with 301s to the surviving
+    twin, the promoted tool, or `/blog`; descriptions and titles fixed; year stamps
+    removed from titles. Dates left untouched (unknown real dates).
+
+## Falsifiability (phase 2)
+
+- If decision 10 was wrong, Search Console will show the retired downloader URLs
+  losing impressions without `/video-tools` gaining any within 6 weeks. The fix is a real
+  backend, not restoring the pages.
+- If decision 13 was wrong, the "Page with redirect" count in Search Console will not
+  fall after the next full crawl.
+- Leading indicators: "Soft 404" count (should fall as broken tools disappear), "Page with
+  redirect" (should fall), CrUX mobile LCP on tool pages (should improve after decision 15).
+
+## Not changed (deliberately)
+
+- The ~260 `page.tsx` metadata literals that still read "100% client-side sandbox" are
+  dead text: `constructToolMetadata` always prefers the registry `seoDescription`.
+- `/terabox-downloader` keeps its URL although it is a player; its copy says so.
+- The `*-api-key-tester` tools post the key to the vendor from the browser; their
+  "client-side" wording is literally true and was left.

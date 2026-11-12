@@ -65,7 +65,7 @@ export default async function ToolPage() {
 						forward planning — it can show how many consecutive classes you can
 						safely skip, or how many you must attend in a row to climb back
 						above the line. If you're already cutting it close, the{" "}
-						<Link href="/attendance-shortage-calculator" className="text-primary underline">
+						<Link href="/75-attendance-calculator" className="text-primary underline">
 							attendance shortage calculator
 						</Link>{" "}
 						breaks down precisely how much ground you need to make up.

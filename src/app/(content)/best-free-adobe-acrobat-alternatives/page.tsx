@@ -77,7 +77,7 @@ export default async function ToolPage() {
 						inserting content from other documents. Combine it with the{" "}
 						<Link href="/pdf-splitter" className="text-primary underline">splitter</Link>{" "}
 						when one source file must become several deliverables, and{" "}
-						<Link href="/merge-pdf-online" className="text-primary underline">online merging</Link>{" "}
+						<Link href="/pdf-merger" className="text-primary underline">online merging</Link>{" "}
 						for the reverse. Fixing orientation after a misfeed scan takes
 						seconds with{" "}
 						<Link href="/pdf-rotation" className="text-primary underline">PDF rotation</Link>, and{" "}

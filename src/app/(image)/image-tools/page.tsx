@@ -1,10 +1,12 @@
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import ImagePillar from "@/components/pillars/ImagePillar";
 import { generateToolMetadata } from "@/lib/seo";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
+import CategoryToolGrid from "@/components/seo/CategoryToolGrid";
 
 export const metadata = generateToolMetadata({
 	name: "Free Image Tools Online",
-	description: "Private Free Image Tools: privately process images entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	description: "Private Free Image Tools: privately process images entirely in your browser. 100% client-side sandbox — no server uploads, no AI training on your files. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
 	route: "/image-tools",
 	category: "image",
 });
@@ -33,7 +35,13 @@ Unlike other online editors, we process your images on your own hardware. Your p
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
+			<CollectionPageJsonLd groupKey="image" name="Online Image Tools" description="Comprehensive suite of free image editing and generation tools." />
 			<ImagePillar />
+			<CategoryToolGrid
+				categorySlug="image"
+				heading="All image tools"
+				intro="Every image utility on SopKit, processed in your browser: compressors, converters, resizers, croppers, and AI helpers."
+			/>
 		</ToolLayout>
 	);
 }

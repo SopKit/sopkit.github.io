@@ -171,7 +171,7 @@ export default function AgeCalculatorTool() {
 • Day of Birth: ${ageStats.dayBorn}
 • Zodiac: ${ageStats.western.sign} ${ageStats.western.symbol} (${ageStats.western.element})
 • Next Birthday: In ${ageStats.daysToNextBday} days (${ageStats.nextBdayDayOfWeek})
-Calculated privately with SopKit (https://sopkit.space/age-calculator)`;
+Calculated privately with SopKit (https://sopkit.space/age-calculator/)`;
 
 		navigator.clipboard.writeText(text);
 		setCopied(true);

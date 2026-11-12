@@ -1,4 +1,4 @@
-import toolsData from "@/constants/tools.json";
+import { TOOL_COUNT, CATEGORY_COUNT, POPULAR_TOOL_COUNT } from "./tool-stats";
 
 export const SITE_NAME = "SopKit";
 export const SITE_URL = "https://sopkit.space";
@@ -7,15 +7,10 @@ export const CONTACT_EMAIL = "shaswatraj3@gmail.com";
 export const COMPANY_OR_OWNER_NAME = "SopKit";
 export const LAST_UPDATED = "2026-09-21";
 
-const allTools = Object.values(toolsData.categories || {}).flatMap(
-	(category: any) => category?.tools || [],
-);
-
-export const TOOL_COUNT = allTools.length;
+// Counts are generated at build time by scripts/generate-tool-stats.mjs so
+// this module (imported by many client components) never pulls tools.json.
+export { TOOL_COUNT, CATEGORY_COUNT, POPULAR_TOOL_COUNT };
 export const TOOL_COUNT_STRING = `${Math.floor(TOOL_COUNT / 5) * 5}+`;
-
-export const CATEGORY_COUNT = Object.keys(toolsData.categories || {}).length;
-export const POPULAR_TOOL_COUNT = allTools.filter((tool: any) => tool?.popular).length;
 
 export const SHOW_SCRIPTLY_ADS = false;
 export const GITHUB_REPO_URL = "https://github.com/SopKit/sopkit.github.io";

@@ -10,7 +10,7 @@ export function HomeSEOContent() {
       icon: ShieldCheck,
       title: "Local-First Sandbox Processing",
       description:
-        "Media, documents, and code are processed entirely inside your local browser thread using WebAssembly and Canvas APIs. Sensitive personal files and credentials never leave your machine.",
+        "For local-processing tools, media, documents, and code are handled inside your browser using WebAssembly and Canvas APIs, so the files are not uploaded to our servers. Tools that use an external service say so on their page.",
     },
     {
       icon: Cpu,
@@ -107,7 +107,7 @@ export function HomeSEOContent() {
               <p className="font-mono text-[11px] text-foreground mb-1 font-semibold">
                 Open Web Standards
               </p>
-              Built entirely on open web primitives. No telemetry on file contents, no server logs of private inputs, and no intrusive tracking cookies.
+              Built on open web primitives. We do not collect the contents of files you process; site analytics and ads load only after you give consent, and you can change that choice at any time.
             </div>
           </div>
         </div>

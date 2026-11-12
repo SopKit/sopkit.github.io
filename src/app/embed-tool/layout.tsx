@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
 	title: "Embedded Tool — SopKit",
 	description: "Embedded SopKit tool widget.",
-	robots: { index: false, follow: false },
+	robots: { index: false, follow: true },
 };
 
 export default function EmbedToolLayout({

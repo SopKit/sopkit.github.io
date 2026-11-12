@@ -16,7 +16,7 @@ const TRUST_PILLARS: TrustPillar[] = [
     title: "Local-First Sandbox",
     tagline: "Files stay on your machine",
     description:
-      "Image, PDF, code, and text utilities run directly in your browser with WebAssembly and Canvas APIs. Your files never touch our servers.",
+      "Image, PDF, code, and text utilities run directly in your browser with WebAssembly and Canvas APIs. For these local tools, your files are not uploaded to our servers.",
   },
   {
     icon: Zap,
@@ -54,7 +54,7 @@ export function TrustSection() {
           </h2>
           <p className="mt-4 text-base sm:text-lg text-stone-600 dark:text-stone-300 leading-relaxed">
             Most online utilities upload your private files to remote servers, force account creation,
-            or impose hidden fees. SopKit takes the opposite path: running entirely inside your browser.
+            or impose hidden fees. SopKit takes the opposite path: most tools run inside your browser, and each page states its processing model.
           </p>
         </div>
 

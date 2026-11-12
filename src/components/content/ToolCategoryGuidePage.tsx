@@ -10,7 +10,7 @@ function getCategoryDescriptionJSX(slug: string, originalDesc: string) {
 	if (slug === "generators") {
 		return (
 			<>
-				Create viral content with AI-powered fun generators like our popular <Link href="/ai-image-generator/" className="text-primary hover:underline font-semibold">AI Image Generator</Link>, <Link href="/qr-code-generator/" className="text-primary hover:underline font-semibold">QR Code Generator</Link>, and <Link href="/secure-password-generator/" className="text-primary hover:underline font-semibold">Secure Password Generator</Link>.
+				Create viral content with AI-powered fun generators like our popular <Link href="/ai-image-generator/" className="text-primary hover:underline font-semibold">AI Image Generator</Link>, <Link href="/qr-code-generator/" className="text-primary hover:underline font-semibold">QR Code Generator</Link>, and <Link href="/password-generator/" className="text-primary hover:underline font-semibold">Secure Password Generator</Link>.
 			</>
 		);
 	}
@@ -24,14 +24,14 @@ function getCategoryDescriptionJSX(slug: string, originalDesc: string) {
 	if (slug === "pdf") {
 		return (
 			<>
-				Manage documents directly in your browser with our <Link href="/merge-pdf-online/" className="text-primary hover:underline font-semibold">PDF Merger</Link>, <Link href="/pdf-compressor-under-200kb/" className="text-primary hover:underline font-semibold">PDF Compressor</Link>, and <Link href="/pdf-to-jpg-converter/" className="text-primary hover:underline font-semibold">PDF to JPG Converter</Link>.
+				Manage documents directly in your browser with our <Link href="/pdf-merger/" className="text-primary hover:underline font-semibold">PDF Merger</Link>, <Link href="/pdf-compressor-under-200kb/" className="text-primary hover:underline font-semibold">PDF Compressor</Link>, and <Link href="/pdf-to-jpg-converter/" className="text-primary hover:underline font-semibold">PDF to JPG Converter</Link>.
 			</>
 		);
 	}
 	if (slug === "seo") {
 		return (
 			<>
-				Optimize your search visibility and indexation with our <Link href="/robots-txt-sitemap-generator/" className="text-primary hover:underline font-semibold">Robots.txt Generator</Link>, <Link href="/sitemap-generator/" className="text-primary hover:underline font-semibold">Sitemap XML Generator</Link>, and <Link href="/meta-tag-generator/" className="text-primary hover:underline font-semibold">Meta Tags Checker</Link>.
+				Optimize your search visibility with our <Link href="/meta-tag-generator/" className="text-primary hover:underline font-semibold">Meta Tag Generator</Link>, <Link href="/open-graph-generator/" className="text-primary hover:underline font-semibold">Open Graph Generator</Link>, and <Link href="/keyword-density-checker/" className="text-primary hover:underline font-semibold">Keyword Density Checker</Link>.
 			</>
 		);
 	}

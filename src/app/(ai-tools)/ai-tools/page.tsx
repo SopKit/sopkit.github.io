@@ -1,5 +1,5 @@
 import { SITE_URL } from "@/constants/config";
-import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, getAllCategories, Tool, getSearchToolRecords } from "@/lib/tools";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
@@ -40,7 +40,8 @@ export default function AiToolsHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<main>
-				<PremiumHero 
+				<PremiumHero
+					tools={getSearchToolRecords()}
 					title="AI Prompt Engineering Suite — Free Builders"
 					subtitle="Interactive prompt builders and system instructions generators. Elevate your creative output on Midjourney, ChatGPT, Claude, and Gemini with optimized structures."
 				/>

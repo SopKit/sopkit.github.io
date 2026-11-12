@@ -90,7 +90,7 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Pass one: validate before touching anything. Paste your payload
 						into the{" "}
-						<Link href="/json-validator" className="text-primary underline">JSON validator</Link>{" "}
+						<Link href="/json-formatter" className="text-primary underline">JSON validator</Link>{" "}
 						and read the error position it reports — most validators point at
 						the exact character that broke parsing. Fixing an invalid file by
 						reformatting it just rearranges the wreckage; formatting only
@@ -118,7 +118,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						A formatted wall of nested arrays is still hard to reason about. A{" "}
-						<Link href="/json-viewer" className="text-primary underline">JSON viewer</Link>{" "}
+						<Link href="/json-formatter" className="text-primary underline">JSON viewer</Link>{" "}
 						lets you collapse branches and inspect nodes interactively, which
 						is far quicker than scrolling. When two versions of a config
 						disagree and CI is red, a{" "}

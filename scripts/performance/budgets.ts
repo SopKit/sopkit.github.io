@@ -24,7 +24,7 @@ export function getRepresentativeRouteMatrix() {
     { name: "PDF Category Hub", path: "/pdf-tools", category: "tool" },
     { name: "Lightweight Tool (JSON Formatter)", path: "/json-formatter", category: "tool" },
     { name: "Medium Tool (Image Compressor)", path: "/image-compressor", category: "tool" },
-    { name: "Heavy Tool (Merge PDF)", path: "/merge-pdf-online", category: "tool" },
+    { name: "Heavy Tool (Merge PDF)", path: "/pdf-merger", category: "tool" },
     { name: "Search Hub", path: "/search", category: "directory" },
     { name: "Embed Route", path: "/embed-tool", category: "utility" },
   ];

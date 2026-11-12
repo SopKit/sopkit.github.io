@@ -6,6 +6,7 @@ import { seoOpportunities } from "@/data/seo-opportunities";
 import { intentData } from "@/lib/intent-data";
 import { getMonetizationDecision } from "@/data/monetization";
 import toolLastmodData from "@/data/tool-lastmod.json";
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 export const dynamic = 'force-static';
 
@@ -65,7 +66,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/developer-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/ai-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.9 },
 		{ url: `${SITE_URL}/qr-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.88 },
-		{ url: `${SITE_URL}/small-business-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.86 },
 		{ url: `${SITE_URL}/other-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.75 },
 		{ url: `${SITE_URL}/generators`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/calculators`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.75 },
@@ -75,10 +75,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/business-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/social-media-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/finance-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
-		{ url: `${SITE_URL}/calculator-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
 		{ url: `${SITE_URL}/converter-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.85 },
 		{ url: `${SITE_URL}/ai-writing-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
-		{ url: `${SITE_URL}/local-business-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		// Blog
 		{ url: `${SITE_URL}/blog`, lastModified: siteUpdated, changeFrequency: "daily", priority: 0.8 },
 		// Content hub / SEO landing pages
@@ -88,9 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/best-free-converters-in-2026`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${SITE_URL}/best-free-tools-for-students`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${SITE_URL}/how-to-format-json-properly`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
-		{ url: `${SITE_URL}/seo-tools-free-online`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${SITE_URL}/tools-for-developers`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
-		{url: `${SITE_URL}/top-10-free-online-tools-for-seo`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{url: `${SITE_URL}/top-10-json-tools-online`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{url: `${SITE_URL}/new-tools`, lastModified: siteUpdated, changeFrequency: "daily", priority: 0.8 },
 		{ url: `${SITE_URL}/online-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
@@ -169,8 +165,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 0.85,
 		}));
 
-		// Deduplicate and strictly normalize URLs to canonical form:
-		// root has trailing slash (https://sopkit.space/), subpaths do not (https://sopkit.space/slug)
+		// Deduplicate and normalize every URL through buildCanonicalUrl so the
+		// sitemap lists exactly the form the rendered <link rel="canonical">
+		// carries (trailing slash on page paths, because the site exports
+		// with trailingSlash: true; root stays https://sopkit.space/). A
+		// slashless sitemap URL would 301 on GitHub Pages. Static entries
+		// above stay as literal `${SITE_URL}/path` templates so
+		// scripts/validate-sitemap-indexable.ts can still read them.
 		const allPages = [
 			...staticPages,
 			...toolPages,
@@ -180,25 +181,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		];
 		const seen = new Set<string>();
 		return allPages
-			.map((page) => {
-				let url = page.url.trim();
-				try {
-					const parsed = new URL(url);
-					let pathname = parsed.pathname.replace(/\/+/g, "/");
-					if (pathname.length > 1 && pathname.endsWith("/")) {
-						pathname = pathname.slice(0, -1);
-					}
-					url = `${parsed.origin}${pathname}`;
-				} catch {
-					if (url.length > 1 && url.endsWith("/") && !url.endsWith("://")) {
-						url = url.slice(0, -1);
-					}
-				}
-				return {
-					...page,
-					url,
-				};
-			})
+			.map((page) => ({ ...page, url: buildCanonicalUrl(page.url.trim()) }))
 			.filter((page) => {
 				if (seen.has(page.url)) return false;
 				seen.add(page.url);
@@ -206,22 +189,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			});
 	} catch (error) {
 		console.error("Sitemap generation error:", error);
-		return staticPages.map((page) => {
-			let url = page.url.trim();
-			try {
-				const parsed = new URL(url);
-				let pathname = parsed.pathname.replace(/\/+/g, "/");
-				if (pathname.length > 1 && pathname.endsWith("/")) {
-					pathname = pathname.slice(0, -1);
-				}
-				url = `${parsed.origin}${pathname}`;
-			} catch {
-				// fallback
-			}
-			return {
-				...page,
-				url,
-			};
-		});
+		return staticPages.map((page) => ({
+			...page,
+			url: buildCanonicalUrl(page.url.trim()),
+		}));
 	}
 }

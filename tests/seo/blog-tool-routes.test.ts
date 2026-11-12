@@ -69,8 +69,14 @@ describe("Blog article tool routes resolve to real tools", () => {
   });
 });
 
+const HUB_ROUTES = new Set([
+  "/seo-tools", "/video-tools", "/youtube-tools", "/ai-tools", "/image-tools",
+  "/pdf-tools", "/text-tools", "/developer-tools", "/other-tools", "/audio-tools",
+  "/generators", "/calculators", "/business-tools", "/exam-tools",
+]);
+
 describe("Retired thin blog posts", () => {
-  it("stay out of the blog list and redirect to a real tool route or the blog index", () => {
+  it("stay out of the blog list and redirect to a real tool route, a live post, a hub, or the blog index", () => {
     const liveSlugs = new Set(blogs.map((article) => article.slug));
     const stillPublished: string[] = [];
     const badTargets: string[] = [];
@@ -83,7 +89,11 @@ describe("Retired thin blog posts", () => {
         stillPublished.push(slug);
       }
       const targetIsBlogIndex = redirect.to === "/blog";
-      if (!targetIsBlogIndex && !getToolByRoute(redirect.to)) {
+      const targetIsLivePost =
+        redirect.to.startsWith("/blog/") &&
+        liveSlugs.has(redirect.to.replace(/^\/blog\//, "").replace(/\/$/, ""));
+      const targetIsHub = HUB_ROUTES.has(redirect.to);
+      if (!targetIsBlogIndex && !targetIsLivePost && !targetIsHub && !getToolByRoute(redirect.to)) {
         badTargets.push(`${redirect.from} -> ${redirect.to}`);
       }
     }

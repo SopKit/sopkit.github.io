@@ -5,8 +5,15 @@
  * Features safe batching, robust try/catch error boundaries, and non-crashing network handling.
  *
  * Usage:
- *   node submit-urls.mjs
+ *   node submit-urls.mjs          # only URLs changed in the last 2 days (per tool-lastmod.json)
+ *   node submit-urls.mjs --all    # every sitemap URL (full resubmission)
  *   INDEXNOW_KEY=xxx BING_API_KEY=xxx node submit-urls.mjs
+ *
+ * Daily full resubmission of ~600 unchanged URLs wastes IndexNow/Bing quota
+ * and signals nothing. When src/data/tool-lastmod.json exists, the default
+ * run keeps only URLs whose lastmod falls within RECENT_WINDOW_DAYS; URLs
+ * with no lastmod entry (static pages, blog) are kept, because their change
+ * date is unknown. Pass --all to resubmit everything.
  */
 
 import { readFileSync, existsSync } from "node:fs";
@@ -23,6 +30,47 @@ const BING_API_KEY = process.env.BING_API_KEY || "";
 // Limits: IndexNow max is 10,000 URLs; Bing Webmaster SubmitUrlbatch max is 500 URLs
 const INDEXNOW_BATCH_SIZE = 10000;
 const BING_BATCH_SIZE = 500;
+
+const RECENT_WINDOW_DAYS = 2;
+const SUBMIT_ALL = process.argv.includes("--all");
+
+/**
+ * Loads the per-tool lastmod map (route -> ISO date). Returns null when the
+ * file is absent, in which case every URL is submitted.
+ */
+function loadToolLastmod() {
+	const lastmodPath = path.join(__dirname, "src", "data", "tool-lastmod.json");
+	if (!existsSync(lastmodPath)) return null;
+	try {
+		const parsed = JSON.parse(readFileSync(lastmodPath, "utf8"));
+		return parsed && typeof parsed.lastmod === "object" && parsed.lastmod !== null ? parsed.lastmod : null;
+	} catch (err) {
+		console.warn(`⚠️ Error reading tool-lastmod.json: ${err.message}`);
+		return null;
+	}
+}
+
+/**
+ * Keeps URLs changed within RECENT_WINDOW_DAYS. URLs without a lastmod
+ * entry are kept (unknown change date). Routes are compared slash-free,
+ * because the lastmod map is keyed by the registry route.
+ */
+function filterRecentUrls(urls, lastmodByRoute) {
+	const cutoff = Date.now() - RECENT_WINDOW_DAYS * 24 * 60 * 60 * 1000;
+	return urls.filter((u) => {
+		let route;
+		try {
+			route = new URL(u).pathname;
+		} catch {
+			return true;
+		}
+		const key = route.length > 1 && route.endsWith("/") ? route.slice(0, -1) : route;
+		const lastmod = lastmodByRoute[key];
+		if (!lastmod) return true;
+		const changed = Date.parse(lastmod);
+		return Number.isNaN(changed) ? true : changed >= cutoff;
+	});
+}
 
 /**
  * Safely extracts all canonical URLs from public/sitemap.xml
@@ -55,15 +103,15 @@ function loadUrlsFromSitemap() {
 function loadFallbackUrls() {
 	const urls = [
 		`${SITE_URL}/`,
-		`${SITE_URL}/tools`,
-		`${SITE_URL}/image-tools`,
-		`${SITE_URL}/pdf-tools`,
-		`${SITE_URL}/developer-tools`,
-		`${SITE_URL}/video-tools`,
-		`${SITE_URL}/audio-tools`,
-		`${SITE_URL}/text-tools`,
-		`${SITE_URL}/seo-tools`,
-		`${SITE_URL}/calculators`,
+		`${SITE_URL}/tools/`,
+		`${SITE_URL}/image-tools/`,
+		`${SITE_URL}/pdf-tools/`,
+		`${SITE_URL}/developer-tools/`,
+		`${SITE_URL}/video-tools/`,
+		`${SITE_URL}/audio-tools/`,
+		`${SITE_URL}/text-tools/`,
+		`${SITE_URL}/seo-tools/`,
+		`${SITE_URL}/calculators/`,
 	];
 
 	try {
@@ -74,7 +122,7 @@ function loadFallbackUrls() {
 				for (const tool of category.tools || []) {
 					if (tool.route) {
 						const clean = tool.route.startsWith("/") ? tool.route : `/${tool.route}`;
-						urls.push(`${SITE_URL}${clean}`);
+						urls.push(`${SITE_URL}${clean.endsWith("/") ? clean : `${clean}/`}`);
 					}
 				}
 			}
@@ -257,12 +305,24 @@ async function main() {
 		),
 	);
 
-	console.log(`📦 Loaded ${uniqueUrls.length} unique pages ready for instant indexing.`);
+	console.log(`📦 Loaded ${uniqueUrls.length} unique pages from the sitemap.`);
+
+	const lastmodByRoute = SUBMIT_ALL ? null : loadToolLastmod();
+	const urlsToSubmit = lastmodByRoute ? filterRecentUrls(uniqueUrls, lastmodByRoute) : uniqueUrls;
+	if (lastmodByRoute) {
+		console.log(`🗓️  Submitting ${urlsToSubmit.length} URLs changed in the last ${RECENT_WINDOW_DAYS} days (pass --all to resubmit everything).`);
+	} else {
+		console.log(`📣 Submitting all ${urlsToSubmit.length} URLs${SUBMIT_ALL ? " (--all)" : " (no tool-lastmod.json found)"}.`);
+	}
+	if (urlsToSubmit.length === 0) {
+		console.log("ℹ️  Nothing changed recently; no submission sent.");
+		return;
+	}
 
 	// 1. Submit to IndexNow
 	const indexNowBatches = [];
-	for (let i = 0; i < uniqueUrls.length; i += INDEXNOW_BATCH_SIZE) {
-		indexNowBatches.push(uniqueUrls.slice(i, i + INDEXNOW_BATCH_SIZE));
+	for (let i = 0; i < urlsToSubmit.length; i += INDEXNOW_BATCH_SIZE) {
+		indexNowBatches.push(urlsToSubmit.slice(i, i + INDEXNOW_BATCH_SIZE));
 	}
 
 	for (let i = 0; i < indexNowBatches.length; i++) {
@@ -270,7 +330,7 @@ async function main() {
 	}
 
 	// 2. Submit to Bing Webmaster API
-	await submitBingWebmasterApi(uniqueUrls);
+	await submitBingWebmasterApi(urlsToSubmit);
 
 	console.log("\n=======================================================");
 	console.log("✅ Search Engine Indexing broadcast completed successfully!");

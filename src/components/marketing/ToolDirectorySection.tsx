@@ -136,7 +136,7 @@ export function ToolDirectorySection({ tools }: ToolDirectorySectionProps) {
 						Explore All <span className="italic">Utilities</span>
 					</h2>
 					<p className="font-sans text-sm sm:text-base text-muted-foreground leading-relaxed">
-						Filter from over {tools.length} browser-based tools. Instant execution, zero server uploads, completely free.
+						Filter from over {tools.length} browser-based tools. Instant execution, browser-first processing, completely free.
 					</p>
 				</div>
 

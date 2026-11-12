@@ -1,17 +1,14 @@
-import { SITE_URL } from "@/constants/config";
-import { generateCollectionPageSchema } from "@/lib/seo";
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 export const metadata = {
 	title: "Free Utility Tools Online - No Signup | SopKit",
 	description:
-		"Free online utility tools: internet speed test, URL shortener, password generator, and QR code maker. Everything runs in your browser — no signup, no tracking.",
-	keywords:
-		"utility tools, internet speed test, url shortener, password generator, qr code generator, color converter, unit converter, bmi calculator, percentage calculator, free online utilities, network tools, link management, online calculator, base converter, hex to rgb",
+		"Free online utility tools: internet speed test, URL shortener, password generator, and QR code maker. Everything runs in your browser with no signup.",
 	openGraph: {
 		title: "Free Utility Tools Online - No Signup | SopKit",
 		description:
 			"85+ free utility tools — speed test, password generator, QR codes, converters, and calculators. No signup required.",
-		url: `${SITE_URL}/other-tools`,
+		url: buildCanonicalUrl("/other-tools"),
 		siteName: "SopKit",
 		images: [
 			{
@@ -25,6 +22,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "Free Utility Tools Online - No Signup | SopKit",
 		description:
 			"85+ free utility tools — speed test, password generator, QR codes, converters, and calculators. No signup required.",
@@ -33,11 +31,6 @@ export const metadata = {
 	robots: { index: true, follow: true },
 };
 
-const collectionPageSchema = generateCollectionPageSchema('utilities', {
-	name: 'Free Utility Tools Collection',
-	description: 'A collection of essential online utilities to boost your productivity.'
-});
-
 export default function UtilityToolsLayout({
 	children,
 }: {
@@ -45,12 +38,6 @@ export default function UtilityToolsLayout({
 }) {
 	return (
 		<div className="min-h-screen flex flex-col bg-background selection:bg-primary/10">
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(collectionPageSchema),
-				}}
-			/>
 			<main className="flex-1">{children}</main>
 		</div>
 	);

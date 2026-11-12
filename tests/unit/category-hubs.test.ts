@@ -45,16 +45,16 @@ describe("Category hub lookup", () => {
 	it("returns every hub page's tools (no empty hub grids)", () => {
 		const expected: Record<string, number> = {
 			"ai-tools": 12,
-			audio: 9,
-			calculators: 44,
-			developer: 114,
+			audio: 5,
+			calculators: 42,
+			developer: 111,
 			extraction: 11,
-			generators: 35,
-			seo: 21,
-			text: 37,
-			utilities: 91,
-			video: 60,
-			youtube: 30,
+			generators: 33,
+			seo: 9,
+			text: 34,
+			utilities: 72,
+			video: 5,
+			youtube: 10,
 		};
 		for (const [arg, count] of Object.entries(expected)) {
 			const tools = getAllToolsByCategory(arg);

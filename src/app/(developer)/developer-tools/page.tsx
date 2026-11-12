@@ -1,14 +1,15 @@
-import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, getAllCategories, Tool, getSearchToolRecords } from "@/lib/tools";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Terminal, ArrowRight } from "lucide-react";
 import { generateToolMetadata } from "@/lib/seo";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
 
 export const metadata = generateToolMetadata({
 	name: "Developer Tools",
-	description: "Privacy-friendly, 100% client-side Developer Tools online. Run secure local processing in your browser with zero file uploads and no data selling. Fast, safe, and free forever.",
+	description: "Privacy-friendly, 100% client-side Developer Tools online. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
 	route: "/developer-tools",
 	category: "others",
 });
@@ -22,8 +23,10 @@ export default function DeveloperHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
+			<CollectionPageJsonLd groupKey="developer" name="Free Developer Tools Collection" description="Essential suite of free online developer utilities for JSON, Base64, and JWT operations." />
 			<main>
-				<PremiumHero 
+				<PremiumHero
+					tools={getSearchToolRecords()}
 					title="Developer Utilities — Free JSON, Code & API Tools"
 					subtitle="Professional-grade tools for modern workflows. Fast, private, and 100% browser-based processing for all your coding needs."
 				/>

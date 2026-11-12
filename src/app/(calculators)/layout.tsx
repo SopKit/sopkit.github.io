@@ -1,15 +1,13 @@
-import { SITE_URL } from "@/constants/config";
+import { buildCanonicalUrl } from "@/seo/canonical";
 export const metadata = {
 	title: "Free Online Calculators — Finance & Math Tools | SopKit",
 	description:
 		"Free online calculators for finance, health, math, and daily life. BMI calculator, loan calculator, percentage calculator, and more. No signup, instant results.",
-	keywords:
-		"online calculators, bmi calculator, loan calculator, percentage calculator, math tools, free calculators, SopKit",
 	openGraph: {
 		title: "Free Online Calculators — Finance & Math Tools | SopKit",
 		description:
 			"Free online calculators for finance, health, math, and daily life. BMI calculator, loan calculator, percentage calculator, and more. No signup, instant results.",
-		url: `${SITE_URL}/calculators`,
+		url: buildCanonicalUrl("/calculators"),
 		siteName: "SopKit",
 		images: [
 			{
@@ -23,58 +21,13 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "Free Online Calculators — Finance & Math Tools | SopKit",
 		description:
 			"Free online calculators for finance, health, math, and daily life. BMI calculator, loan calculator, percentage calculator, and more. No signup, instant results.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
-};
-
-const jsonLdSchemas = {
-	collectionPage: {
-		"@context": "https://schema.org",
-		"@type": "CollectionPage",
-		name: "Free Online Calculators Collection",
-		description:
-			"A comprehensive collection of free online calculators for finance, health, math, and everyday needs.",
-		url: `${SITE_URL}/calculators/`,
-		mainEntity: {
-			"@type": "ItemList",
-			itemListElement: [
-				{
-					"@type": "ListItem",
-					position: 1,
-					url: `${SITE_URL}/percentage-calculator/`,
-					name: "Percentage Calculator",
-				},
-				{
-					"@type": "ListItem",
-					position: 2,
-					url: `${SITE_URL}/loan-calculator/`,
-					name: "Loan Calculator",
-				},
-				{
-					"@type": "ListItem",
-					position: 3,
-					url: `${SITE_URL}/age-calculator/`,
-					name: "Age Calculator",
-				},
-				{
-					"@type": "ListItem",
-					position: 4,
-					url: `${SITE_URL}/discount-calculator/`,
-					name: "Discount Calculator",
-				},
-				{
-					"@type": "ListItem",
-					position: 5,
-					url: `${SITE_URL}/sales-tax-calculator/`,
-					name: "Sales Tax Calculator",
-				},
-			],
-		},
-	},
 };
 
 export default function CalculatorsLayout({
@@ -84,12 +37,6 @@ export default function CalculatorsLayout({
 }) {
 	return (
 		<div className="min-h-screen flex flex-col bg-background selection:bg-primary/10">
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(jsonLdSchemas.collectionPage),
-				}}
-			/>
 			<main className="flex-1">{children}</main>
 		</div>
 	);

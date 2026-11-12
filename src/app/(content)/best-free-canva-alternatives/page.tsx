@@ -65,8 +65,8 @@ export default async function ToolPage() {
 						A favicon needs to exist, not to be beautiful. The{" "}
 						<Link href="/favicon-generator" className="text-primary underline">favicon generator</Link>{" "}
 						turns text or an image into a working set of icon sizes, while{" "}
-						<Link href="/convert-to-ico" className="text-primary underline">ICO conversion</Link>{" "}
-						and <Link href="/png-to-ico-converter" className="text-primary underline">PNG to ICO conversion</Link>{" "}
+						<Link href="/favicon-generator" className="text-primary underline">ICO conversion</Link>{" "}
+						and <Link href="/favicon-generator" className="text-primary underline">PNG to ICO conversion</Link>{" "}
 						produce the exact formats browsers and Windows shortcuts expect.
 						For broader app-icon work, the{" "}
 						<Link href="/favicon-generator" className="text-primary underline">icon generator</Link>{" "}
@@ -120,7 +120,7 @@ export default async function ToolPage() {
 							Square avatars via{" "}
 							<Link href="/circular-image-crop" className="text-primary underline">circular cropping</Link>{" "}
 							and framing control with the{" "}
-							<Link href="/image-cropper" className="text-primary underline">image cropper</Link>.
+							<Link href="/circular-image-crop" className="text-primary underline">image cropper</Link>.
 						</li>
 					</ul>
 

@@ -223,7 +223,7 @@ function LoanCalc() {
 	return (
 		<Card className="">
 			<CardHeader className="">
-				<CardTitle className="text-lg">Mortgage payment (monthly)</CardTitle>
+				<CardTitle className="text-lg">Monthly payment (EMI)</CardTitle>
 			</CardHeader>
 			<CardContent className="grid gap-4 md:grid-cols-3">
 				<Field id="prin" label="Principal" value={p} onChange={setP} />

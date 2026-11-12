@@ -9,27 +9,42 @@ import { MOBILE_CATEGORY_BUDGETS, DESKTOP_CATEGORY_BUDGETS } from "./budget";
 /**
  * Determines the category of a given route path
  */
+const MARKETING_ROUTES = new Set(["/", "", "/about", "/contact", "/pro"]);
+const LEGAL_CONTENT_ROUTES = new Set(["/privacy", "/terms", "/dmca", "/editorial-policy"]);
+const DIRECTORY_ROUTES = new Set(["/tools", "/archive", "/new-tools", "/tool-guides", "/packages", "/search"]);
+
 export function resolveRouteCategory(pathname: string): RouteCategory {
-  if (pathname === "/" || pathname === "") {
+  const route = normalizeRoute(pathname);
+
+  if (MARKETING_ROUTES.has(route)) {
     return "marketing";
   }
-  if (pathname === "/tools" || pathname === "/categories" || pathname === "/explore") {
-    return "directory";
-  }
-  if (pathname.startsWith("/blog") || pathname.startsWith("/articles") || pathname.startsWith("/guides")) {
+  if (LEGAL_CONTENT_ROUTES.has(route)) {
     return "content";
   }
-  if (pathname.startsWith("/docs")) {
-    return "documentation";
+  // Long-form content lives under /blog/* and /tool-guides/<slug>; checked
+  // before the hub suffix so "/blog/top-tools" is content, not a hub.
+  if (route.startsWith("/blog") || route.startsWith("/tool-guides/")) {
+    return "content";
   }
-  if (pathname.startsWith("/developers") || pathname.startsWith("/api-docs")) {
-    return "developer";
+  // Hubs: /tools, /archive, /new-tools, /tool-guides, /packages, /search and
+  // every category hub (/image-tools, /pdf-tools, ..., /calculators).
+  if (DIRECTORY_ROUTES.has(route) || route.endsWith("-tools") || route === "/calculators") {
+    return "directory";
   }
-  if (pathname.startsWith("/embed") || pathname.startsWith("/widget")) {
+  if (route.startsWith("/embed")) {
     return "utility";
   }
-  // Default for tool pages and category routes
+  // Default for tool pages
   return "tool";
+}
+
+function normalizeRoute(pathname: string): string {
+  const withoutQuery = pathname.split(/[?#]/)[0] || "";
+  if (withoutQuery.length > 1 && withoutQuery.endsWith("/")) {
+    return withoutQuery.slice(0, -1);
+  }
+  return withoutQuery;
 }
 
 /**

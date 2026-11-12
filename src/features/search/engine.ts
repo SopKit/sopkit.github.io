@@ -76,7 +76,7 @@ const TASK_INTENT_MAPPINGS: IntentMapping[] = [
       "stitch pdf",
       "merge pdf",
     ],
-    targetSlugs: ["merge-pdf-online", "split-pdf"],
+    targetSlugs: ["pdf-merger", "split-pdf"],
     explanation: "Best match for combining multiple PDF documents",
   },
   {
@@ -207,7 +207,7 @@ const TASK_INTENT_MAPPINGS: IntentMapping[] = [
       "separate pdf",
       "extract pdf pages",
     ],
-    targetSlugs: ["split-pdf", "merge-pdf-online"],
+    targetSlugs: ["split-pdf", "pdf-merger"],
     explanation: "Best match for separating PDF pages into independent files",
   },
   {

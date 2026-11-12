@@ -22,7 +22,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "About SopKit — Privacy-First Free Online Tools Platform",
-		description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup, no uploads, 100% client-side processing.`,
+		description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup for core utilities, with processing models clearly disclosed on individual tool pages.`,
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -32,7 +32,7 @@ export default async function AboutPage() {
 	const tool = {
 		id: "about",
 		name: "About SopKit",
-		description: `SopKit is a privacy-focused, browser-first utility platform. We offer ${SITE_CONFIG.toolCountString} free tools for PDF, image, text, and code—processed entirely inside your browser sandbox.`,
+		description: `SopKit is a privacy-focused, browser-first utility platform. We offer ${SITE_CONFIG.toolCountString} free tools for PDF, image, text, and code—most of them processed inside your browser, with exceptions disclosed on the tool page.`,
 		route: "/about",
 		category: "company",
 	};
@@ -112,7 +112,7 @@ export default async function AboutPage() {
 										<Code className="h-5 w-5 text-primary shrink-0 mt-0.5" />
 										<div>
 											<h3 className="font-bold text-sm text-foreground">Open-Source Transparency</h3>
-											<p className="text-xs text-muted-foreground mt-1">Every utility is open source and verifiable. Anyone can inspect our network requests tab to verify that no files are being sent.</p>
+											<p className="text-xs text-muted-foreground mt-1">Every utility is open source and verifiable. Anyone can open the browser network tab to see exactly what a tool sends.</p>
 										</div>
 									</div>
 									<div className="flex gap-3 p-5 border border-border/30 bg-muted/10 rounded-2xl">
@@ -130,7 +130,7 @@ export default async function AboutPage() {
 									<Globe className="h-5 w-5 text-primary" /> Custom Embed Widgets
 								</h2>
 								<p className="text-sm leading-relaxed text-muted-foreground">
-									Every tool on our platform can be embedded directly onto other websites using standard iframe codes. Because they run entirely on the client, they do not require API configuration and are fully free to distribute.
+									Every tool on our platform can be embedded directly onto other websites using standard iframe codes. Because most of them run in the visitor's browser, they do not require API configuration and are fully free to distribute.
 								</p>
 							</section>
 

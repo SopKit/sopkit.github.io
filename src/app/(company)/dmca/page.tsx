@@ -58,10 +58,10 @@ export default async function DMCAPage() {
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">2. Safe Harbor Statement</h2>
 								<p className="text-sm leading-relaxed">
-									SopKit operates as a provider of online tools and does not host, store, or distribute copyrighted media files. Our downloader tools act as intermediaries that process publicly available URLs at the direction of users. We do not maintain a library of copyrighted content and do not encourage or facilitate copyright infringement.
+									SopKit operates as a provider of online tools and does not host, store, or distribute copyrighted media files. We do not maintain a library of copyrighted content and do not encourage or facilitate copyright infringement.
 								</p>
 								<p className="text-sm leading-relaxed">
-									Many of our tools process files entirely in the user&apos;s browser, meaning SopKit never has access to or stores the processed content. For tools that use server-side processing, content is processed ephemerally and is not retained after the operation completes.
+									Many of our tools process files entirely in the user&apos;s browser, meaning SopKit never has access to or stores the processed content. For tools that use an external service, the data you enter is sent to that service only for the requested operation and is not retained by SopKit.
 								</p>
 							</section>
 
@@ -113,18 +113,18 @@ export default async function DMCAPage() {
 							</section>
 
 							<section className="space-y-3">
-								<h2 className="text-lg font-semibold">7. User Responsibility for Downloader Tools</h2>
+								<h2 className="text-lg font-semibold">7. User Responsibility</h2>
 								<p className="text-sm leading-relaxed">
-									SopKit provides downloader and extraction tools for legitimate purposes only. Users are solely responsible for ensuring they have the legal right to download, save, or extract any content. You may only use our downloader tools to:
+									Users are solely responsible for the files, text, and URLs they process with SopKit tools and for ensuring they have the legal right to use that content. You may only process:
 								</p>
 								<ul className="list-disc list-inside text-sm space-y-1 ml-4">
-									<li>Download content you own or created</li>
-									<li>Download content that is openly licensed (Creative Commons, public domain)</li>
-									<li>Download content with explicit permission from the copyright holder</li>
-									<li>Download content for personal, non-commercial, fair-use purposes as permitted by applicable law</li>
+									<li>Content you own or created</li>
+									<li>Content that is openly licensed (Creative Commons, public domain)</li>
+									<li>Content you have explicit permission from the rights holder to use</li>
+									<li>Content used in a way permitted by applicable law, such as fair use</li>
 								</ul>
 								<p className="text-sm leading-relaxed">
-									SopKit does not host copyrighted media and is not responsible for how users utilize downloader tools. Copyright holders may contact us to request URL blocking for specific content.
+									SopKit does not host user content and is not responsible for how users utilize its tools.
 								</p>
 							</section>
 

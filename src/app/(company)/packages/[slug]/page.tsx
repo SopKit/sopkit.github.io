@@ -159,7 +159,7 @@ console.log(res.line, res.column); // prints line/col offsets`
 		npmLink: "https://www.npmjs.com/package/@sopkit/color",
 		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/color`,
 		installCmd: "npm install @sopkit/color",
-		toolLink: "/color-converter/",
+		toolLink: "/hex-to-rgb-converter/",
 		detailedDesc: "A lightweight color math engine. Ideal for dynamic themes, UI dashboards, canvas rendering, and color palette creation.",
 		rivals: {
 			title: "Rivals Comparison",

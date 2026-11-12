@@ -72,7 +72,7 @@ export function CategoryShowcase() {
 							Find Your Perfect <span className="italic">Utility</span>
 						</h2>
 						<p className="font-sans text-sm sm:text-base text-muted-foreground leading-relaxed">
-							Explore specialized suites designed for specific workflows. Every tool runs 100% locally in your browser sandbox.
+							Explore specialized suites designed for specific workflows. Most tools run in your browser, and every tool page states its processing model.
 						</p>
 					</div>
 

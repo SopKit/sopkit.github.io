@@ -1,4 +1,4 @@
-import { getAllToolsByCategory, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, Tool, getSearchToolRecords } from "@/lib/tools";
 import { YOUTUBE_HUB_GROUPS } from "@/data/youtube-hub-groups";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Youtube, ArrowRight } from "lucide-react";
 import { SITE_URL } from "@/constants/config";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
 
 // Literal metadata (online-tools precedent), not the shared tool-metadata
 // generator: the generated fallback title for a non-registry route
@@ -58,7 +59,9 @@ export default function YouTubeHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
+			<CollectionPageJsonLd groupKey="youtube" name="YouTube Creator Tools" description="Suite of free tools for YouTube content creation and downloading." />
 			<PremiumHero
+				tools={getSearchToolRecords()}
 				title="YouTube Tools — Free Creator Utilities"
 				subtitle="Browse 31 free YouTube helpers for downloads, channel research, titles, tags and links. Each tool page explains its own processing model."
 			/>

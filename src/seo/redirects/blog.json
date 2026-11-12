@@ -6,7 +6,7 @@
   },
   {
     "from": "/blog/attendance-shortage-calculator-guide",
-    "to": "/attendance-shortage-calculator",
+    "to": "/75-attendance-calculator",
     "reason": "thin post (72 words) retired"
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "from": "/blog/what-is-robots-txt-guide",
-    "to": "/robots-txt-sitemap-generator",
+    "to": "/seo-tools",
     "reason": "thin post (84 words) retired"
   },
   {
@@ -111,8 +111,8 @@
   },
   {
     "from": "/blog/best-free-youtube-to-mp3-converters-2025",
-    "to": "/youtube-downloader",
-    "reason": "thin post (141 words) retired"
+    "to": "/blog",
+    "reason": "thin post (141 words) retired; downloader target removed"
   },
   {
     "from": "/blog/top-sentence-rewriters-review",
@@ -136,8 +136,8 @@
   },
   {
     "from": "/blog/y2mate-youtube-to-mp3-converter",
-    "to": "/youtube-downloader",
-    "reason": "thin post (155 words) retired"
+    "to": "/blog",
+    "reason": "thin post (155 words) retired; downloader target removed"
   },
   {
     "from": "/blog/best-urdu-english-translators-2025",
@@ -161,8 +161,8 @@
   },
   {
     "from": "/blog/how-to-download-instagram-reels",
-    "to": "/instagram-downloader",
-    "reason": "thin post (169 words) retired"
+    "to": "/blog",
+    "reason": "thin post (169 words) retired; downloader target removed"
   },
   {
     "from": "/blog/make-your-own-terabox-video-player",
@@ -171,18 +171,18 @@
   },
   {
     "from": "/blog/convert-youtube-videos-high-quality-320kbps-mp3",
-    "to": "/youtube-downloader",
-    "reason": "thin post (171 words) retired"
+    "to": "/blog",
+    "reason": "thin post (171 words) retired; downloader target removed"
   },
   {
     "from": "/blog/extract-audio-from-video-methods",
-    "to": "/universal-video-downloader",
-    "reason": "thin post (172 words) retired"
+    "to": "/blog",
+    "reason": "thin post (172 words) retired; downloader target removed"
   },
   {
     "from": "/blog/download-reddit-videos-with-sound",
-    "to": "/reddit-downloader",
-    "reason": "thin post (174 words) retired"
+    "to": "/blog",
+    "reason": "thin post (174 words) retired; downloader target removed"
   },
   {
     "from": "/blog/make-your-own-custom-terabox-telegram-bot",
@@ -190,18 +190,88 @@
     "reason": "thin post (177 words) retired"
   },
   {
+    "from": "/blog/how-to-download-tiktok-videos-without-watermark",
+    "to": "/blog",
+    "reason": "downloader post retired; tool removed"
+  },
+  {
+    "from": "/blog/download-videos-from-any-website",
+    "to": "/blog",
+    "reason": "downloader post retired; tool removed"
+  },
+  {
+    "from": "/blog/is-downloading-videos-legal-copyright-guide",
+    "to": "/blog",
+    "reason": "downloader post retired; tool removed"
+  },
+  {
+    "from": "/blog/hermes-agent-review-956k-stars-self-improving-ai-agent-april-2026-11le",
+    "to": "/blog",
+    "reason": "product review unrelated to site tools"
+  },
+  {
+    "from": "/blog/use-kimi-k3-for-free",
+    "to": "/blog",
+    "reason": "product review unrelated to site tools"
+  },
+  {
+    "from": "/blog/ultimate-guide-to-ai-generated-music-2026",
+    "to": "/blog",
+    "reason": "promoted tool removed (ai-music-generator)"
+  },
+  {
+    "from": "/blog/shift-to-browser-based-privacy-local-tools-winning-2026",
+    "to": "/blog/privacy-first-online-file-workflows",
+    "reason": "thin rewrite (234 words) of longer post"
+  },
+  {
+    "from": "/blog/pro-json-workflows-formatter-conversion-guide",
+    "to": "/blog/format-json-online-developer-guide",
+    "reason": "thin rewrite (217 words) of longer post"
+  },
+  {
+    "from": "/blog/remove-exif-metadata-from-photos-before-sharing",
+    "to": "/blog/remove-exif-metadata-from-images-privacy-guide",
+    "reason": "thin rewrite (277 words) of longer post"
+  },
+  {
+    "from": "/blog/merge-multiple-pdf-files-into-one",
+    "to": "/blog/merge-scanned-documents-into-one-pdf",
+    "reason": "thin rewrite (222 words) of longer post"
+  },
+  {
+    "from": "/blog/compress-images-for-websites-without-quality-loss",
+    "to": "/blog/optimize-images-for-website-speed",
+    "reason": "thin rewrite (253 words) of longer post"
+  },
+  {
+    "from": "/blog/complete-guide-to-image-conversion-webp-avif-2026",
+    "to": "/blog/image-file-formats-explained-for-beginners",
+    "reason": "thin rewrite (234 words) of longer post"
+  },
+  {
+    "from": "/blog/must-have-free-coding-tools-students-2026",
+    "to": "/blog/best-browser-tools-for-developers-daily-tasks",
+    "reason": "thin rewrite (188 words) of longer post"
+  },
+  {
+    "from": "/blog/page/6",
+    "to": "/blog",
+    "reason": "49 posts / 12 per page = 5 pages"
+  },
+  {
     "from": "/blog/page/7",
     "to": "/blog",
-    "reason": "blog archive shrank from 9 to 6 pages after retiring thin posts"
+    "reason": "blog archive shrank from 9 to 5 pages after retiring thin and duplicate posts"
   },
   {
     "from": "/blog/page/8",
     "to": "/blog",
-    "reason": "blog archive shrank from 9 to 6 pages after retiring thin posts"
+    "reason": "blog archive shrank from 9 to 5 pages after retiring thin and duplicate posts"
   },
   {
     "from": "/blog/page/9",
     "to": "/blog",
-    "reason": "blog archive shrank from 9 to 6 pages after retiring thin posts"
+    "reason": "blog archive shrank from 9 to 5 pages after retiring thin and duplicate posts"
   }
 ]

@@ -19,9 +19,9 @@ export interface ResourceHint {
 export function getPageResourceHints(pathname: string): ResourceHint[] {
   const hints: ResourceHint[] = [];
 
-  // Font domain preconnect ONLY if fonts are externally hosted (we prefer self-hosted next/font)
-  // For SopKit, Geist font is loaded via 'next/font/google' which handles internal optimization.
-  
+  // No font preconnect: SopKit uses a system font stack (--font-sans /
+  // --font-serif / --font-mono in globals.css), so no font files are fetched.
+
   // CDN domain preconnect for external assets only if on specific media-heavy routes
   if (pathname.startsWith("/tools/image-") || pathname.startsWith("/tools/video-")) {
     hints.push({

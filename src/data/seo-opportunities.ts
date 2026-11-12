@@ -464,7 +464,7 @@ export const seoOpportunities: SeoOpportunity[] = [
 			{ question: "How does it compute classes I can still miss?", answer: "It finds the largest number of additional absences for which (attended) / (total + absences) stays at or above the target." },
 			{ question: "How does it compute classes I must attend?", answer: "It finds the smallest number of consecutive attended classes for which (attended + n) / (total + n) reaches the target." },
 		],
-		relatedSlugs: ["attendance-shortage-calculator", "sgpa-calculator", "cgpa-calculator", "required-marks-calculator", "cgpa-to-percentage-calculator"],
+		relatedSlugs: ["75-attendance-calculator", "sgpa-calculator", "cgpa-calculator", "required-marks-calculator", "cgpa-to-percentage-calculator"],
 		recommendedCTA: "Save ad-free calculator presets with SopKit Pro.",
 		canonicalStrategy: "Registry tool page; this entry only supplies the on-page guidance.",
 		toolPreset: { type: "attendance" },

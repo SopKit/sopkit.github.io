@@ -19,7 +19,7 @@ import { Container } from "@/components/layout/Container";
 export async function generateMetadata(): Promise<Metadata> {
 	return baseGenerateMetadata({
 		title: `Free Online Tools (600+) — Fast & Private Browser Utilities | SopKit`,
-		description: `600+ free online tools for PDF, image, video, audio, developer code, and SEO. Process files 100% locally in your browser with zero uploads, no tracking, and no signup.`,
+		description: `600+ free online tools for PDF, image, audio, developer code, and SEO. Most tools process files in your browser without uploading them. No signup required.`,
 		path: "/",
 	});
 }

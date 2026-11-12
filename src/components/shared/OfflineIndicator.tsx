@@ -38,7 +38,7 @@ export function OfflineIndicator() {
 		>
 			<WifiOff className="w-4 h-4 text-amber-200 animate-pulse" />
 			<div className="text-xs font-medium tracking-tight">
-				<span className="font-semibold">Offline Mode Active</span> — Tools run 100% locally in your browser
+				<span className="font-semibold">You are offline</span> — browser-based tools keep working; tools that need a network service will not
 			</div>
 		</aside>
 	);

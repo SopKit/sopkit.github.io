@@ -2,21 +2,8 @@ import type { MonetizationSafety } from "./seo-opportunities";
 
 export const monetizationRules = {
 	riskySlugs: [
-		"youtube-downloader",
-		"youtube-shorts-downloader",
-		"tiktok-downloader",
-		"instagram-downloader",
-		"instagram-reel-downloader",
 		"instagram-reels-downloader",
-		"facebook-video-downloader",
-		"facebook-story-downloader",
-		"mp4-to-mp3",
-		"online-video-downloader",
-		"universal-video-downloader",
-		"mp3-from-tiktok",
 		"video-downloader",
-		"reddit-downloader",
-		"twitter-video-downloader",
 		// Credential & sensitive security tools: protect from ad scripts and session replay
 		"password-generator",
 		"api-key-tester",

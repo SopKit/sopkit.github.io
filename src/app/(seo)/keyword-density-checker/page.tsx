@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { getToolByRoute } from "@/lib/tools";
-import KeywordTool from "@/components/tools/seo/KeywordTool";
+import SeoToolsSuite from "@/components/tools/implementations/SeoToolsSuite";
 import { generateToolMetadata } from "@/lib/seo";
 
 export const metadata = generateToolMetadata({
@@ -20,7 +20,7 @@ export default async function ToolPage() {
 
 	return (
 		<ToolLayout breadcrumbs={[]} tool={tool}>
-			<KeywordTool />
+			<SeoToolsSuite toolId="keyword-density-checker" />
 		</ToolLayout>
 	);
 }

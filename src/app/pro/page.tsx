@@ -1,4 +1,4 @@
-import { SITE_URL } from "@/constants/config";
+import { buildCanonicalUrl } from "@/seo/canonical";
 import type { Metadata } from "next";
 import { permanentRedirect } from "next/navigation";
 
@@ -7,7 +7,7 @@ import { permanentRedirect } from "next/navigation";
 export const metadata: Metadata = {
 	title: "SopKit Pro — Now 100% Free",
 	description: "SopKit has retired the paid Pro tier. All tools are now 100% free with no signup required — browse the full free tools directory.",
-	alternates: { canonical: `${SITE_URL}/tools` },
+	alternates: { canonical: buildCanonicalUrl("/tools") },
 	robots: { index: false, follow: true },
 };
 

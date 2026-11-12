@@ -118,7 +118,7 @@ const ALL_PACKAGES: PackageItem[] = [
 		githubLink: `${GITHUB_REPO_URL}/tree/main/packages/password`,
 		packageBase: "@sopkit/password",
 		badge: "Crypto & Auth",
-		toolLink: "/secure-password-generator",
+		toolLink: "/password-generator",
 		version: "1.0.0",
 		bundleSize: "1.8 KB",
 	},

@@ -1,13 +1,4 @@
 import toolsData from "@/constants/tools.json";
-import toolArticles from "@/data/tool-articles.json";
-import toolFeatures from "@/data/tool-features.json";
-import toolFaqs from "@/data/tool-faqs.json";
-import toolHowtos from "@/data/tool-howtos.json";
-
-const articlesMap = toolArticles as Record<string, string>;
-const featuresMap = toolFeatures as Record<string, string[]>;
-const faqsMap = toolFaqs as Record<string, { question: string; answer: string }[]>;
-const howtosMap = toolHowtos as Record<string, any>;
 
 export { STATIC_ROUTES } from "@/constants/routes";
 
@@ -23,10 +14,6 @@ export interface Tool {
 	category: string;
 	slug?: string;
 	path?: string;
-	// Kept only because several content pages still pass `extraSlugs: []`
-	// literals. Nothing reads it any more: the keyword-permutation alias
-	// pages that used to be generated from it were removed as doorway pages.
-	extraSlugs?: string[];
 	popular?: boolean;
 	seoTitle?: string;
 	seoDescription?: string;
@@ -37,6 +24,9 @@ export interface Tool {
 	providerName?: string;
 	dataTransmissionNotice?: string;
 	isCredentialSensitive?: boolean;
+	// Prose fields stay optional: curated prose comes from MANUAL_TOOL_CONTENT
+	// (src/data/generated-manual-content.ts) at render time, gated by the
+	// content-uniqueness audit. The registry itself carries none of it.
 	features?: string[];
 	howTo?: {
 		name?: string;
@@ -71,19 +61,11 @@ export interface Category {
 
 export const categories = toolsData.categories as unknown as Record<string, Category>;
 
-function enrichTool(tool: Tool): Tool {
-	if (!tool) return tool;
-	return {
-		...tool,
-		article: articlesMap[tool.id] || tool.article,
-		features: featuresMap[tool.id] || tool.features,
-		faqs: faqsMap[tool.id] || tool.faqs,
-		howTo: howtosMap[tool.id] || tool.howTo,
-	};
-}
+let cachedAllTools: Tool[] | null = null;
 
 export function getAllTools(): Tool[] {
-	const rawTools = Object.entries(categories).flatMap(([catKey, cat]) => {
+	if (cachedAllTools) return cachedAllTools;
+	cachedAllTools = Object.entries(categories).flatMap(([catKey, cat]) => {
 		const catSlug = cat?.slug || catKey;
 		const catName = cat?.name || catKey;
 		return (cat?.tools || []).map((t) => ({
@@ -94,7 +76,7 @@ export function getAllTools(): Tool[] {
 			categoryKey: t.categoryKey || catKey,
 		}));
 	});
-	return rawTools.map(enrichTool);
+	return cachedAllTools;
 }
 
 export function getSearchToolRecords(): SearchToolRecord[] {
@@ -165,47 +147,38 @@ export function getRouteById(id: string): string {
 	return tool ? tool.route : "/";
 }
 
-let cachedAllTools: Tool[] | null = null;
+const RELATED_INTENTS = ["converter", "downloader", "generator", "tester", "validator", "compressor", "calculator"];
 
+function hasIntent(tool: Tool, intent: string): boolean {
+	return tool.id.toLowerCase().includes(intent) || tool.name.toLowerCase().includes(intent);
+}
+
+/**
+ * Related tools for a tool page. Same-category tools come first, rotated so
+ * the list starts at the tool's own neighbours (by index within the category)
+ * instead of always the first N tools of that category; the rotation is
+ * deterministic, so static export output is stable. Popular tools from other
+ * categories fill the remainder.
+ */
 export function getRelatedTools(tool: Tool, limit: number = 10): Tool[] {
 	if (!tool) return [];
-	
-	if (!cachedAllTools) {
-		cachedAllTools = getAllTools();
-	}
-	
-	// Fast filter to same category or popular tools first
-	const sameCategory = cachedAllTools.filter(t => t.category === tool.category && t.id !== tool.id);
-	const popularOthers = cachedAllTools.filter(t => t.category !== tool.category && t.popular && t.id !== tool.id);
-	
-	const pool = [...sameCategory, ...popularOthers];
-	
-	// Define clusters based on common intent keywords
-	const intents = ["converter", "downloader", "generator", "tester", "validator", "compressor", "calculator"];
-	const toolIntent = intents.find(intent => 
-		tool.id.toLowerCase().includes(intent) || 
-		tool.name.toLowerCase().includes(intent)
-	);
 
-	return pool
-		.sort((a, b) => {
-			// 1. Same category is highest priority
-			if (a.category === tool.category && b.category !== tool.category) return -1;
-			if (b.category === tool.category && a.category !== tool.category) return 1;
+	const allTools = getAllTools();
+	const sameCategory = allTools.filter((t) => t.category === tool.category);
+	const selfIndex = Math.max(0, sameCategory.findIndex((t) => t.id === tool.id));
+	const neighbours = [
+		...sameCategory.slice(selfIndex + 1),
+		...sameCategory.slice(0, selfIndex),
+	].filter((t) => t.id !== tool.id);
 
-			// 2. Same intent is second priority
-			if (toolIntent) {
-				const aHasIntent = a.id.toLowerCase().includes(toolIntent) || a.name.toLowerCase().includes(toolIntent);
-				const bHasIntent = b.id.toLowerCase().includes(toolIntent) || b.name.toLowerCase().includes(toolIntent);
-				if (aHasIntent && !bHasIntent) return -1;
-				if (bHasIntent && !aHasIntent) return 1;
-			}
+	const toolIntent = RELATED_INTENTS.find((intent) => hasIntent(tool, intent));
+	const byIntent = (list: Tool[]): Tool[] => {
+		if (!toolIntent) return list;
+		// Stable partition: same-intent neighbours first, order otherwise kept.
+		return [...list.filter((t) => hasIntent(t, toolIntent)), ...list.filter((t) => !hasIntent(t, toolIntent))];
+	};
 
-			// 3. Popular tools are third priority
-			if (a.popular && !b.popular) return -1;
-			if (b.popular && !a.popular) return 1;
+	const popularOthers = allTools.filter((t) => t.category !== tool.category && t.popular && t.id !== tool.id);
 
-			return 0;
-		})
-		.slice(0, limit);
+	return [...byIntent(neighbours), ...byIntent(popularOthers)].slice(0, limit);
 }

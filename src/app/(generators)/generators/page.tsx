@@ -1,14 +1,15 @@
-import { getAllToolsByCategory, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, Tool, getSearchToolRecords } from "@/lib/tools";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { generateToolMetadata } from "@/lib/seo";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
 
 export const metadata = generateToolMetadata({
 	name: "Fun Generators",
-	description: "Privacy-friendly, 100% client-side fun generators. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Privacy-friendly, 100% client-side fun generators. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
 	route: "/generators",
 	category: "others",
 });
@@ -18,8 +19,10 @@ export default function GeneratorsHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
+			<CollectionPageJsonLd groupKey="generators" name="AI Generator Tools Collection" description="Suite of powerful free AI generator tools for images and voice." />
 			<main>
-				<PremiumHero 
+				<PremiumHero
+					tools={getSearchToolRecords()}
 					title="AI & Fun Generators — Free Creative Tools"
 					subtitle="Generate anything from stunning AI art to professional social bios instantly. Free, fast, and no registration required."
 				/>

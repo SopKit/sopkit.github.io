@@ -4,7 +4,7 @@ import { ChevronRight, Home, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
-import { SITE_URL } from "@/constants/config";
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 export interface Breadcrumb {
 	name: string;
@@ -28,7 +28,7 @@ const generateBreadcrumbSchema = (breadcrumbs: Breadcrumb[]) => {
 			"@type": "ListItem",
 			position: index + 1,
 			name: crumb.name,
-			item: `${SITE_URL}${crumb.url}`,
+			item: buildCanonicalUrl(crumb.url),
 		})),
 	};
 };

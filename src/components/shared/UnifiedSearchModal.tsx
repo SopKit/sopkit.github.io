@@ -416,7 +416,7 @@ export function UnifiedSearchModal({
 								<div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 px-1">
 									{[
 										{ name: "Image Compressor", route: "/image-compressor", cat: "image" },
-										{ name: "Merge PDF Online", route: "/merge-pdf-online", cat: "pdf" },
+										{ name: "PDF Merger", route: "/pdf-merger", cat: "pdf" },
 										{ name: "JSON Formatter", route: "/json-formatter", cat: "developer" },
 										{ name: "Background Remover", route: "/background-remover", cat: "image" },
 										{ name: "CGPA Calculator", route: "/cgpa-calculator", cat: "calculators" },

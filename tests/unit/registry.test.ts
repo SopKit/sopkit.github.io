@@ -5,7 +5,7 @@ import { getRelatedTools } from "../../src/features/tools/relationships";
 describe("Tool Registry Platform", () => {
   it("loads all tools from tools.json", () => {
     const tools = getAllTools();
-    expect(tools.length).toBeGreaterThanOrEqual(600);
+    expect(tools.length).toBeGreaterThanOrEqual(450);
   });
 
   it("loads all categories", () => {

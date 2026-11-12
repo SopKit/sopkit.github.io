@@ -1,14 +1,15 @@
-import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, getAllCategories, Tool, getSearchToolRecords } from "@/lib/tools";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, ArrowRight } from "lucide-react";
 import { generateToolMetadata } from "@/lib/seo";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
 
 export const metadata = generateToolMetadata({
 	name: "SEO Tools",
-	description: "Privacy-friendly, 100% client-side SEO Tools. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Privacy-friendly, 100% client-side SEO Tools. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
 	route: "/seo-tools",
 	category: "seo",
 });
@@ -22,8 +23,10 @@ export default function SEOHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
+			<CollectionPageJsonLd groupKey="seo" name="Free SEO Tools Collection" description="A complete suite of free SEO tools for keyword research, backlink analysis, and website auditing." />
 			<main>
-				<PremiumHero 
+				<PremiumHero
+					tools={getSearchToolRecords()}
 					title="SEO Utilities — Free Audit & Optimization Tools"
 					subtitle="Boost your search visibility with our professional SEO toolkit. Fast, data-driven, and 100% free online optimization tools."
 				/>
@@ -65,7 +68,7 @@ export default function SEOHub() {
 								From checking meta tags and Open Graph previews to generating sitemaps and auditing technical SEO, our suite covers the essential on-page optimization tasks that drive organic traffic. Use the backlink checker to monitor your link profile, the keyword research tool to discover ranking opportunities, and the Google cache checker to verify indexing status.
 							</p>
 							<p className="text-sm text-muted-foreground leading-relaxed">
-								All tools are free to use with no registration, no usage limits, and no data collection. Perfect for SEO professionals, bloggers, small business owners, and anyone looking to improve their search visibility without compromising their privacy.
+								All tools are free to use with no registration, no usage limits, and no account. Perfect for SEO professionals, bloggers, small business owners, and anyone looking to improve their search visibility without compromising their privacy.
 							</p>
 						</div>
 					</section>

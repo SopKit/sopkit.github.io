@@ -1,14 +1,15 @@
-import { getAllToolsByCategory, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, Tool, getSearchToolRecords } from "@/lib/tools";
 import { generateToolMetadata } from "@/lib/seo";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calculator, ArrowRight } from "lucide-react";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
 
 export const metadata = generateToolMetadata({
 	name: "Calculators",
-	description: "Privacy-friendly, 100% client-side calculators. Run secure local processing in your browser with zero file uploads and no data selling. No AI training on your data. Fast, safe, and free forever.",
+	description: "Privacy-friendly, 100% client-side calculators. Run secure local processing in your browser with zero file uploads. Fast, safe, and free forever.",
 	route: "/calculators",
 	category: "calculators",
 });
@@ -18,8 +19,10 @@ export default function CalculatorsHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
+			<CollectionPageJsonLd groupKey="calculators" name="Free Online Calculators Collection" description="A comprehensive collection of free online calculators for finance, health, math, and everyday needs." />
 			<main>
-				<PremiumHero 
+				<PremiumHero
+					tools={getSearchToolRecords()}
 					title="Smart Calculators — Free Finance, Health & Math"
 					subtitle="Accurate and easy-to-use calculators for every need. From finance to health, get the answers you need in seconds."
 				/>

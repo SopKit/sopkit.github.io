@@ -36,7 +36,7 @@ describe("Search Engine", () => {
   it("verifies all getSearchToolRecords have non-empty string categories", async () => {
     const { getSearchToolRecords } = await import("../../src/lib/tools");
     const records = getSearchToolRecords();
-    expect(records.length).toBeGreaterThan(500);
+    expect(records.length).toBeGreaterThan(400);
     for (const record of records) {
       expect(typeof record.category).toBe("string");
       expect(record.category.length).toBeGreaterThan(0);

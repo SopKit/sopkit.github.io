@@ -1,4 +1,4 @@
-import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, getAllCategories, Tool, getSearchToolRecords } from "@/lib/tools";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Film, ArrowRight, Sparkles } from "lucide-react";
 import { generateToolMetadata } from "@/lib/seo";
 import { getMonetizationDecision } from "@/data/monetization";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
 
 export const metadata = generateToolMetadata({
 	name: "Video Tools",
@@ -20,8 +21,9 @@ export default function VideoToolsHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
+			<CollectionPageJsonLd groupKey="video" name="Online Video Tools" description="Collection of free video utilities including Terabox downloader and player." />
 			<main>
-				<PremiumHero title="Video Tools — Convert & Edit" subtitle="Convert and edit supported video files with browser-based utilities. Review each tool's processing model before using it." />
+				<PremiumHero tools={getSearchToolRecords()} title="Video Tools — Convert & Edit" subtitle="Convert and edit supported video files with browser-based utilities. Review each tool's processing model before using it." />
 				<div className="container mx-auto px-4 py-16 max-w-7xl relative">
 					<GridPattern className="opacity-20" />
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">

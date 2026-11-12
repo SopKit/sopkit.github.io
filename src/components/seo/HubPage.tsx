@@ -69,7 +69,7 @@ export default function HubPage({
 						{description}
 					</p>
 					<p className="text-sm text-muted-foreground">
-						All tools run 100% client-side in your browser. No uploads, no signup, no data selling.
+						Most tools process your files in your browser; tools that use an external service say so on their page. No signup, no data selling.
 					</p>
 				</section>
 

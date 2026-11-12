@@ -1,4 +1,5 @@
 import { SITE_URL } from "@/constants/config";
+import { buildCanonicalUrl } from "@/seo/canonical";
 import React from "react";
 import { Metadata } from "next";
 import { getSearchToolRecords, getAllCategories } from "@/lib/tools";
@@ -6,13 +7,14 @@ import { generateMetadata as baseGenerateMetadata } from "@/lib/seo";
 import { SITE_CONFIG } from "@/constants/config";
 import { Container } from "@/components/layout/Container";
 import ToolIdExplorer, { ToolSummary } from "./ToolIdExplorer";
-import Script from "next/script";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return baseGenerateMetadata({
 		title: "Tool IDs & Embed Directory — SopKit Developer Reference",
 		description: `Lookup tool IDs, copy customizable iframe embed codes, and integrate ${SITE_CONFIG.toolCountString} free client-side utilities directly into your website or web app.`,
 		path: "/tool-id",
+		// Developer reference that mirrors the registry; crawlable, not indexed.
+		noIndex: true,
 	});
 }
 
@@ -43,7 +45,7 @@ export default async function ToolIdPage() {
 			{
 				"@type": "WebPage",
 				"@id": `${SITE_URL}/tool-id/#webpage`,
-				"url": `${SITE_URL}/tool-id`,
+				"url": buildCanonicalUrl("/tool-id"),
 				"name": "Tool IDs & Embed Directory — SopKit Developer Reference",
 				"description": `Developer directory to lookup tool IDs, generate iframe embed codes, and integrate ${SITE_CONFIG.toolCountString} free tools into your site.`,
 				"breadcrumb": {
@@ -53,13 +55,13 @@ export default async function ToolIdPage() {
 							"@type": "ListItem",
 							"position": 1,
 							"name": "Home",
-							"item": SITE_URL
+							"item": `${SITE_URL}/`
 						},
 						{
 							"@type": "ListItem",
 							"position": 2,
 							"name": "Tool ID Directory",
-							"item": `${SITE_URL}/tool-id`
+							"item": buildCanonicalUrl("/tool-id")
 						}
 					]
 				}
@@ -79,11 +81,9 @@ export default async function ToolIdPage() {
 
 	return (
 		<div className="bg-background min-h-screen relative text-foreground">
-			<Script
-				id="tool-id-schema"
+			<script
 				type="application/ld+json"
-				strategy="afterInteractive"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\u003c") }}
 			/>
 
 			<Container size="xl" className="py-10 sm:py-14">

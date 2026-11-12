@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import NotFoundView from "@/components/shared/NotFoundView";
+import NotFoundView, { type NotFoundSuggestedTool } from "@/components/shared/NotFoundView";
+import { getSearchToolRecords } from "@/lib/tools";
 
 // Next.js renders its own `<meta name="robots" content="noindex">` on the
 // /404 route (NonIndex in app-render). The root layout also declares
@@ -15,5 +16,11 @@ export const metadata: Metadata = {
 };
 
 export default function NotFoundPage() {
-	return <NotFoundView />;
+	// Resolved on the server so the client view ships no registry JSON.
+	const suggestedTools: NotFoundSuggestedTool[] = getSearchToolRecords()
+		.filter((tool) => tool.popular)
+		.slice(0, 4)
+		.map(({ id, name, route, description }) => ({ id, name, route, description }));
+
+	return <NotFoundView suggestedTools={suggestedTools} />;
 }

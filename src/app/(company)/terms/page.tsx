@@ -6,14 +6,14 @@ import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
 	title: "Terms of Use — Fair & Simple Rules | SopKit",
-	description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
+	description: "Simple terms for using SopKit's free tools: what's allowed, your responsibility for content you process, and liability. Plain English.",
 	keywords: "terms of use, SopKit terms, terms of service, free online tools terms, terms, free terms, terms online, SopKit, free online tools, browser tools, no signup tools, privacy tools",
 	alternates: {
 		canonical: `${SITE_CONFIG.siteUrl}/terms`,
 	},
 	openGraph: {
 		title: "Terms of Use — Fair & Simple Rules | SopKit",
-		description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
+		description: "Simple terms for using SopKit's free tools: what's allowed, your responsibility for content you process, and liability. Plain English.",
 		url: `${SITE_CONFIG.siteUrl}/terms`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -22,7 +22,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Terms of Use — Fair & Simple Rules | SopKit",
-		description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
+		description: "Simple terms for using SopKit's free tools: what's allowed, your responsibility for content you process, and liability. Plain English.",
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -32,7 +32,7 @@ export default async function TermsPage() {
 	const tool = {
 		id: "terms",
 		name: "Terms of Use",
-		description: "Simple terms for using SopKit's free tools: what's allowed, download rules and liability. Plain English.",
+		description: "Simple terms for using SopKit's free tools: what's allowed, your responsibility for content you process, and liability. Plain English.",
 		route: "/terms",
 		category: "company",
 	};
@@ -72,7 +72,7 @@ export default async function TermsPage() {
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">2. Description of Service</h2>
 								<p className="text-sm leading-relaxed">
-									SopKit provides free, browser-based utility tools for file conversion, image processing, text manipulation, SEO analysis, media downloading, and more. Processing primarily happens locally in your browser, though some features (such as downloaders or API tests) utilize our edge network for proxying.
+									SopKit provides free, browser-based utility tools for file conversion, image processing, text manipulation, developer utilities, calculators, and more. Most processing happens in your browser. Some tools send the data you enter to a third-party service (for example, AI generators or API testers) and say so on their page.
 								</p>
 							</section>
 
@@ -80,7 +80,7 @@ export default async function TermsPage() {
 								<h2 className="text-lg font-semibold">3. Use of the Service and Lawful Use</h2>
 								<p className="text-sm leading-relaxed">You agree to use the Service only for lawful purposes. You must adhere to the following rules:</p>
 								<ul className="list-disc list-inside text-sm space-y-1 ml-4">
-									<li><strong>Downloaders & Extractors:</strong> You may only download, unlock, or extract content/documents that you own or have explicit permission to modify. Do not use the Service to infringe on copyright or intellectual property rights.</li>
+									<li><strong>Content You Process:</strong> You are responsible for the files, text, and URLs you process with the Service. Only process content you own or have the right to use, and do not use the Service to infringe copyright or other intellectual property rights.</li>
 									<li><strong>API & Network Tools:</strong> Do not use API testers to distribute malicious payloads, launch denial-of-service attacks, or scan networks you do not own. Do not paste production root credentials into testing interfaces.</li>
 									<li><strong>AI & Generated Content:</strong> Do not use our generators to produce harmful, defamatory, or explicit content.</li>
 									<li>Do not attempt to gain unauthorized access to any part of the Service or abuse the Service with automated scripts.</li>
@@ -118,7 +118,7 @@ export default async function TermsPage() {
 							<section className="space-y-3">
 								<h2 className="text-lg font-semibold">7. Limitation of Liability</h2>
 								<p className="text-sm leading-relaxed">
-									In no event shall SopKit be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Service. We have no access to your files and cannot be responsible for data loss, corruption, or legal repercussions of your downloaded media.
+									In no event shall SopKit be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Service. For browser-based tools we have no access to your files and cannot be responsible for data loss, corruption, or the consequences of how you use the output.
 								</p>
 							</section>
 

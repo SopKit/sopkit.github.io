@@ -1,10 +1,9 @@
 {
-	"generated": "2026-11-11T16:26:02.724Z",
+	"generated": "2026-11-12T03:21:52.638Z",
 	"threshold": 0.4,
 	"minWords": 120,
 	"curated": [
 		"75-attendance-calculator",
-		"aadhaar-pan-photo-resizer",
 		"about",
 		"adsense-calculator",
 		"age-calculator",
@@ -15,7 +14,6 @@
 		"ascii-art-generator",
 		"ascii-to-binary-converter",
 		"ascii-to-text-converter",
-		"attendance-shortage-calculator",
 		"audio-equalizer",
 		"audio-joiner",
 		"avatar-generator",
@@ -76,8 +74,6 @@
 		"json-to-typescript",
 		"json-to-xml-converter",
 		"json-to-yaml-converter",
-		"json-validator",
-		"json-viewer",
 		"jwt-decoder",
 		"leave-application-generator",
 		"logo-idea-generator",
@@ -99,9 +95,7 @@
 		"rent-receipt-generator",
 		"rgb-to-hex-converter",
 		"search",
-		"seo-tools-free-online",
 		"sha256-hash-generator",
-		"simple-invoice-generator",
 		"sql-formatter",
 		"ssc-signature-resizer",
 		"story-idea-generator",
@@ -115,27 +109,18 @@
 		"text-to-hex-converter",
 		"text-to-octal-converter",
 		"tools-for-developers",
-		"top-10-free-online-tools-for-seo",
 		"top-10-json-tools-online",
 		"upsc-signature-resizer",
 		"url-encoder-decoder",
 		"url-extractor",
 		"user-agent-parser",
 		"uuid-generator",
-		"yaml-to-json-converter",
-		"youtube-channel-banner-downloader",
-		"youtube-channel-logo-downloader",
-		"youtube-downloader",
-		"youtube-shorts-downloader"
+		"yaml-to-json-converter"
 	],
 	"stats": {
 		"75-attendance-calculator": {
 			"words": 743,
-			"shared": 0.01
-		},
-		"aadhaar-pan-photo-resizer": {
-			"words": 550,
-			"shared": 0.004
+			"shared": 0.003
 		},
 		"adsense-calculator": {
 			"words": 471,
@@ -153,10 +138,6 @@
 			"words": 622,
 			"shared": 0.554
 		},
-		"ai-music-generator": {
-			"words": 634,
-			"shared": 0.537
-		},
 		"ai-persona-prompt-generator": {
 			"words": 604,
 			"shared": 0.586
@@ -168,14 +149,6 @@
 		"ai-voice-generator": {
 			"words": 617,
 			"shared": 0.58
-		},
-		"akillitv-video-downloader": {
-			"words": 603,
-			"shared": 0.626
-		},
-		"all-downloaders": {
-			"words": 595,
-			"shared": 0.623
 		},
 		"amazon-ses-api-key-tester": {
 			"words": 648,
@@ -201,21 +174,13 @@
 			"words": 576,
 			"shared": 0.005
 		},
-		"article-rewriter": {
-			"words": 588,
-			"shared": 0.581
-		},
 		"ascii-to-binary-converter": {
-			"words": 634,
-			"shared": 0.089
+			"words": 632,
+			"shared": 0.09
 		},
 		"ascii-to-text-converter": {
 			"words": 444,
 			"shared": 0.055
-		},
-		"attendance-shortage-calculator": {
-			"words": 637,
-			"shared": 0.01
 		},
 		"attio-api-key-tester": {
 			"words": 622,
@@ -233,29 +198,17 @@
 			"words": 577,
 			"shared": 0.583
 		},
-		"backlink-checker": {
-			"words": 590,
-			"shared": 0.59
-		},
-		"bandcamp-video-downloader": {
-			"words": 603,
-			"shared": 0.621
-		},
 		"base64-decode": {
 			"words": 584,
-			"shared": 0.581
+			"shared": 0.58
 		},
 		"base64-to-image-converter": {
 			"words": 597,
-			"shared": 0.619
+			"shared": 0.615
 		},
 		"base64-tool": {
 			"words": 618,
 			"shared": 0.55
-		},
-		"bilibili-video-downloader": {
-			"words": 576,
-			"shared": 0.634
 		},
 		"binary-to-ascii-converter": {
 			"words": 522,
@@ -279,31 +232,15 @@
 		},
 		"bio-data-maker": {
 			"words": 740,
-			"shared": 0.016
+			"shared": 0.005
 		},
 		"bio-generator": {
 			"words": 403,
 			"shared": 0.003
 		},
-		"bitchute-video-downloader": {
-			"words": 563,
-			"shared": 0.661
-		},
-		"blogger-video-downloader": {
-			"words": 581,
-			"shared": 0.643
-		},
-		"blutv-video-downloader": {
-			"words": 560,
-			"shared": 0.671
-		},
 		"bmi-calculator": {
 			"words": 569,
-			"shared": 0.619
-		},
-		"bmi-ideal-weight-calculator": {
-			"words": 570,
-			"shared": 0.626
+			"shared": 0.615
 		},
 		"bmr-calculator": {
 			"words": 612,
@@ -329,25 +266,13 @@
 			"words": 575,
 			"shared": 0.6
 		},
-		"bulk-keyword-rank-checker": {
-			"words": 592,
-			"shared": 0.575
-		},
 		"business-name-generator": {
 			"words": 422,
 			"shared": 0.007
 		},
-		"buzzfeed-video-downloader": {
-			"words": 579,
-			"shared": 0.648
-		},
 		"calorie-deficit-calculator": {
 			"words": 567,
 			"shared": 0.621
-		},
-		"capcut-video-downloader": {
-			"words": 584,
-			"shared": 0.647
 		},
 		"car-loan-calculator": {
 			"words": 574,
@@ -369,10 +294,6 @@
 			"words": 611,
 			"shared": 0.607
 		},
-		"chingari-video-downloader": {
-			"words": 576,
-			"shared": 0.66
-		},
 		"circular-image-crop": {
 			"words": 567,
 			"shared": 0.576
@@ -393,10 +314,6 @@
 			"words": 613,
 			"shared": 0.61
 		},
-		"color-converter": {
-			"words": 610,
-			"shared": 0.617
-		},
 		"comma-separator": {
 			"words": 616,
 			"shared": 0.593
@@ -411,7 +328,7 @@
 		},
 		"compress-image-to-10kb": {
 			"words": 609,
-			"shared": 0.631
+			"shared": 0.63
 		},
 		"compress-image-to-200kb": {
 			"words": 607,
@@ -425,14 +342,6 @@
 			"words": 587,
 			"shared": 0.663
 		},
-		"compress-image-to-exact-kb": {
-			"words": 609,
-			"shared": 0.616
-		},
-		"compress-pdf-to-exact-kb": {
-			"words": 648,
-			"shared": 0.579
-		},
 		"confidence-interval-calculator": {
 			"words": 597,
 			"shared": 0.6
@@ -444,10 +353,6 @@
 		"convert-srt-to-vtt": {
 			"words": 614,
 			"shared": 0.603
-		},
-		"convert-to-ico": {
-			"words": 577,
-			"shared": 0.665
 		},
 		"convert-vtt-to-srt": {
 			"words": 614,
@@ -475,7 +380,7 @@
 		},
 		"credit-card-validator": {
 			"words": 588,
-			"shared": 0.592
+			"shared": 0.59
 		},
 		"crontab-generator": {
 			"words": 603,
@@ -491,7 +396,7 @@
 		},
 		"css-border-radius-generator": {
 			"words": 590,
-			"shared": 0.606
+			"shared": 0.604
 		},
 		"css-gradient-generator": {
 			"words": 608,
@@ -521,10 +426,6 @@
 			"words": 585,
 			"shared": 0.636
 		},
-		"dailymotion-video-downloader": {
-			"words": 562,
-			"shared": 0.665
-		},
 		"data-anonymization-report-generator": {
 			"words": 593,
 			"shared": 0.581
@@ -535,7 +436,7 @@
 		},
 		"data-breach-checker": {
 			"words": 627,
-			"shared": 0.539
+			"shared": 0.537
 		},
 		"data-retention-policy-generator": {
 			"words": 600,
@@ -554,12 +455,12 @@
 			"shared": 0.12
 		},
 		"decimal-to-hex-converter": {
-			"words": 441,
-			"shared": 0.085
+			"words": 439,
+			"shared": 0.092
 		},
 		"decimal-to-octal-converter": {
 			"words": 429,
-			"shared": 0.156
+			"shared": 0.154
 		},
 		"decimal-to-text-converter": {
 			"words": 445,
@@ -583,15 +484,11 @@
 		},
 		"discount-calculator": {
 			"words": 603,
-			"shared": 0.594
+			"shared": 0.59
 		},
 		"dns-records-checker": {
 			"words": 577,
 			"shared": 0.598
-		},
-		"domain-age-checker": {
-			"words": 600,
-			"shared": 0.595
 		},
 		"domain-name-generator": {
 			"words": 592,
@@ -599,19 +496,11 @@
 		},
 		"domain-reputation-checker": {
 			"words": 601,
-			"shared": 0.57
+			"shared": 0.569
 		},
 		"domain-to-ip-converter": {
 			"words": 613,
-			"shared": 0.602
-		},
-		"douyin-video-downloader": {
-			"words": 562,
-			"shared": 0.665
-		},
-		"each-converter": {
-			"words": 603,
-			"shared": 0.622
+			"shared": 0.6
 		},
 		"email-deliverability-checker": {
 			"words": 606,
@@ -643,19 +532,15 @@
 		},
 		"energy-converter": {
 			"words": 594,
-			"shared": 0.643
+			"shared": 0.637
 		},
 		"enrich-api-key-tester": {
 			"words": 618,
-			"shared": 0.579
+			"shared": 0.577
 		},
 		"epf-calculator": {
 			"words": 602,
 			"shared": 0.572
-		},
-		"espn-video-downloader": {
-			"words": 574,
-			"shared": 0.665
 		},
 		"excuse-generator": {
 			"words": 541,
@@ -664,18 +549,6 @@
 		"exif-reader": {
 			"words": 542,
 			"shared": 0.609
-		},
-		"facebook-id-finder": {
-			"words": 596,
-			"shared": 0.601
-		},
-		"facebook-story-downloader": {
-			"words": 590,
-			"shared": 0.627
-		},
-		"facebook-video-downloader": {
-			"words": 574,
-			"shared": 0.663
 		},
 		"fake-chat-generator": {
 			"words": 415,
@@ -687,7 +560,7 @@
 		},
 		"faq-schema-generator": {
 			"words": 584,
-			"shared": 0.61
+			"shared": 0.606
 		},
 		"favicon-generator": {
 			"words": 561,
@@ -695,23 +568,11 @@
 		},
 		"favicon-generator-pro": {
 			"words": 558,
-			"shared": 0.617
+			"shared": 0.611
 		},
 		"fd-calculator-india": {
 			"words": 543,
 			"shared": 0.643
-		},
-		"febspot-video-downloader": {
-			"words": 571,
-			"shared": 0.65
-		},
-		"flickr-video-downloader": {
-			"words": 566,
-			"shared": 0.661
-		},
-		"flip-image": {
-			"words": 531,
-			"shared": 0.637
 		},
 		"font-generator": {
 			"words": 698,
@@ -719,11 +580,11 @@
 		},
 		"food-cost-calculator": {
 			"words": 575,
-			"shared": 0.63
+			"shared": 0.629
 		},
 		"form-image-size-checker": {
 			"words": 606,
-			"shared": 0.559
+			"shared": 0.555
 		},
 		"frequency-converter": {
 			"words": 579,
@@ -741,10 +602,6 @@
 			"words": 610,
 			"shared": 0.605
 		},
-		"gaana-video-downloader": {
-			"words": 620,
-			"shared": 0.626
-		},
 		"gdpr-compliance-checker": {
 			"words": 596,
 			"shared": 0.558
@@ -752,10 +609,6 @@
 		"gemini-watermark-remover": {
 			"words": 605,
 			"shared": 0.555
-		},
-		"get-http-headers": {
-			"words": 578,
-			"shared": 0.64
 		},
 		"gif-generator": {
 			"words": 564,
@@ -765,17 +618,9 @@
 			"words": 607,
 			"shared": 0.597
 		},
-		"google-cache-checker": {
-			"words": 575,
-			"shared": 0.624
-		},
 		"google-gemini-api-key-tester": {
 			"words": 621,
-			"shared": 0.589
-		},
-		"google-index-checker": {
-			"words": 576,
-			"shared": 0.616
+			"shared": 0.587
 		},
 		"gpa-to-4-scale-converter": {
 			"words": 610,
@@ -791,7 +636,7 @@
 		},
 		"gst-calculator": {
 			"words": 589,
-			"shared": 0.631
+			"shared": 0.63
 		},
 		"guitar-tuner": {
 			"words": 565,
@@ -799,7 +644,7 @@
 		},
 		"hashtag-generator": {
 			"words": 563,
-			"shared": 0.631
+			"shared": 0.628
 		},
 		"hex-to-binary-converter": {
 			"words": 446,
@@ -810,12 +655,12 @@
 			"shared": 0.14
 		},
 		"hex-to-octal-converter": {
-			"words": 409,
-			"shared": 0.094
+			"words": 408,
+			"shared": 0.102
 		},
 		"hex-to-rgb-converter": {
 			"words": 477,
-			"shared": 0.026
+			"shared": 0.015
 		},
 		"hex-to-text-converter": {
 			"words": 454,
@@ -837,10 +682,6 @@
 			"words": 563,
 			"shared": 0.624
 		},
-		"hosting-checker": {
-			"words": 572,
-			"shared": 0.631
-		},
 		"htaccess-redirect-generator": {
 			"words": 564,
 			"shared": 0.635
@@ -859,11 +700,11 @@
 		},
 		"html-entity-encoder": {
 			"words": 594,
-			"shared": 0.572
+			"shared": 0.571
 		},
 		"html-minifier": {
 			"words": 299,
-			"shared": 0.014
+			"shared": 0.01
 		},
 		"html-to-pdf": {
 			"words": 623,
@@ -872,10 +713,6 @@
 		"html-to-xml-entities": {
 			"words": 606,
 			"shared": 0.628
-		},
-		"http-status-code-checker": {
-			"words": 592,
-			"shared": 0.618
 		},
 		"hubspot-api-key-tester": {
 			"words": 630,
@@ -891,11 +728,7 @@
 		},
 		"ideal-body-weight-calculator": {
 			"words": 616,
-			"shared": 0.595
-		},
-		"ifunny-video-downloader": {
-			"words": 570,
-			"shared": 0.67
+			"shared": 0.592
 		},
 		"illuminance-converter": {
 			"words": 564,
@@ -903,39 +736,27 @@
 		},
 		"image-color-picker-pro": {
 			"words": 551,
-			"shared": 0.605
+			"shared": 0.603
 		},
 		"image-compressor": {
 			"words": 576,
-			"shared": 0.623
+			"shared": 0.62
 		},
 		"image-converter": {
 			"words": 585,
-			"shared": 0.638
-		},
-		"image-cropper": {
-			"words": 533,
-			"shared": 0.637
+			"shared": 0.634
 		},
 		"image-dpi-converter": {
 			"words": 878,
 			"shared": 0.427
 		},
-		"image-editor": {
-			"words": 529,
-			"shared": 0.625
-		},
-		"image-enlarger": {
-			"words": 541,
-			"shared": 0.652
-		},
 		"image-metadata-remover": {
 			"words": 544,
-			"shared": 0.646
+			"shared": 0.644
 		},
 		"image-resizer": {
 			"words": 537,
-			"shared": 0.63
+			"shared": 0.628
 		},
 		"image-to-base64": {
 			"words": 581,
@@ -953,21 +774,9 @@
 			"words": 584,
 			"shared": 0.6
 		},
-		"imdb-video-downloader": {
-			"words": 574,
-			"shared": 0.658
-		},
-		"imgur-video-downloader": {
-			"words": 554,
-			"shared": 0.668
-		},
 		"income-tax-calculator": {
 			"words": 606,
 			"shared": 0.565
-		},
-		"indexnow-submitter": {
-			"words": 597,
-			"shared": 0.601
 		},
 		"inflation-calculator": {
 			"words": 565,
@@ -975,27 +784,11 @@
 		},
 		"instagram-bio-generator": {
 			"words": 579,
-			"shared": 0.621
+			"shared": 0.619
 		},
 		"instagram-caption-generator": {
-			"words": 697,
+			"words": 693,
 			"shared": 0
-		},
-		"instagram-downloader": {
-			"words": 584,
-			"shared": 0.658
-		},
-		"instagram-image-downloader": {
-			"words": 576,
-			"shared": 0.646
-		},
-		"instagram-reel-downloader": {
-			"words": 571,
-			"shared": 0.651
-		},
-		"instagram-story-downloader": {
-			"words": 576,
-			"shared": 0.65
 		},
 		"intercom-api-key-tester": {
 			"words": 607,
@@ -1015,11 +808,7 @@
 		},
 		"ip-address-lookup": {
 			"words": 571,
-			"shared": 0.624
-		},
-		"izlesene-video-downloader": {
-			"words": 562,
-			"shared": 0.681
+			"shared": 0.618
 		},
 		"javascript-beautifier": {
 			"words": 590,
@@ -1031,11 +820,11 @@
 		},
 		"javascript-minifier": {
 			"words": 605,
-			"shared": 0.627
+			"shared": 0.625
 		},
 		"javascript-notebook": {
-			"words": 1109,
-			"shared": 0.035
+			"words": 1106,
+			"shared": 0.029
 		},
 		"javascript-obfuscator": {
 			"words": 590,
@@ -1049,21 +838,9 @@
 			"words": 579,
 			"shared": 0.635
 		},
-		"jpg-to-bmp-converter": {
-			"words": 596,
-			"shared": 0.63
-		},
-		"jpg-to-gif-converter": {
-			"words": 592,
-			"shared": 0.647
-		},
-		"jpg-to-ico-converter": {
-			"words": 600,
-			"shared": 0.64
-		},
 		"jpg-to-pdf-exam-forms": {
 			"words": 641,
-			"shared": 0.599
+			"shared": 0.597
 		},
 		"jpg-to-png-converter": {
 			"words": 579,
@@ -1072,10 +849,6 @@
 		"jpg-to-webp-converter": {
 			"words": 571,
 			"shared": 0.662
-		},
-		"json-editor": {
-			"words": 622,
-			"shared": 0.566
 		},
 		"json-formatter": {
 			"words": 373,
@@ -1095,7 +868,7 @@
 		},
 		"json-to-text-converter": {
 			"words": 293,
-			"shared": 0.01
+			"shared": 0.003
 		},
 		"json-to-tsv-converter": {
 			"words": 393,
@@ -1113,14 +886,6 @@
 			"words": 303,
 			"shared": 0.02
 		},
-		"json-validator": {
-			"words": 347,
-			"shared": 0.003
-		},
-		"json-viewer": {
-			"words": 310,
-			"shared": 0.01
-		},
 		"jwt-decoder": {
 			"words": 383,
 			"shared": 0
@@ -1129,25 +894,9 @@
 			"words": 585,
 			"shared": 0.602
 		},
-		"keyword-research-tool": {
-			"words": 575,
-			"shared": 0.6
-		},
-		"keywords-suggestion-tool": {
-			"words": 569,
-			"shared": 0.617
-		},
-		"kickstarter-video-downloader": {
-			"words": 575,
-			"shared": 0.648
-		},
 		"kruti-dev-to-unicode": {
 			"words": 593,
 			"shared": 0.629
-		},
-		"kwai-video-downloader": {
-			"words": 568,
-			"shared": 0.671
 		},
 		"leadgenius-api-key-tester": {
 			"words": 601,
@@ -1165,21 +914,13 @@
 			"words": 588,
 			"shared": 0.642
 		},
-		"likee-video-downloader": {
-			"words": 559,
-			"shared": 0.664
-		},
 		"line-sorter": {
 			"words": 572,
 			"shared": 0.596
 		},
 		"linkedin-headline-generator": {
 			"words": 578,
-			"shared": 0.6
-		},
-		"linkedin-video-downloader": {
-			"words": 564,
-			"shared": 0.661
+			"shared": 0.599
 		},
 		"loan-calculator": {
 			"words": 576,
@@ -1209,10 +950,6 @@
 			"words": 610,
 			"shared": 0.616
 		},
-		"m3u8-downloader": {
-			"words": 594,
-			"shared": 0.632
-		},
 		"macro-calculator": {
 			"words": 613,
 			"shared": 0.593
@@ -1237,10 +974,6 @@
 			"words": 605,
 			"shared": 0.611
 		},
-		"mashable-video-downloader": {
-			"words": 572,
-			"shared": 0.651
-		},
 		"mattermark-api-key-tester": {
 			"words": 593,
 			"shared": 0.614
@@ -1257,37 +990,17 @@
 			"words": 599,
 			"shared": 0.608
 		},
-		"merge-pdf-online": {
-			"words": 596,
-			"shared": 0.58
-		},
 		"meta-tag-generator": {
 			"words": 582,
-			"shared": 0.62
+			"shared": 0.617
 		},
 		"midjourney-prompt-builder": {
 			"words": 628,
 			"shared": 0.557
 		},
-		"mixcloud-video-downloader": {
-			"words": 574,
-			"shared": 0.659
-		},
 		"mortgage-calculator": {
 			"words": 564,
 			"shared": 0.625
-		},
-		"mp3-from-tiktok": {
-			"words": 604,
-			"shared": 0.621
-		},
-		"mp4-to-mp3": {
-			"words": 621,
-			"shared": 0.595
-		},
-		"mxtakatak-video-downloader": {
-			"words": 555,
-			"shared": 0.678
 		},
 		"neet-photo-resizer": {
 			"words": 901,
@@ -1297,10 +1010,6 @@
 			"words": 636,
 			"shared": 0.606
 		},
-		"ninegag-video-downloader": {
-			"words": 571,
-			"shared": 0.664
-		},
 		"number-generator": {
 			"words": 736,
 			"shared": 0
@@ -1309,13 +1018,9 @@
 			"words": 568,
 			"shared": 0.629
 		},
-		"number-to-word-converter": {
-			"words": 591,
-			"shared": 0.628
-		},
 		"number-to-words-converter": {
 			"words": 591,
-			"shared": 0.622
+			"shared": 0.617
 		},
 		"octal-to-binary-converter": {
 			"words": 516,
@@ -1333,21 +1038,9 @@
 			"words": 416,
 			"shared": 0.132
 		},
-		"odnoklassniki-video-downloader": {
-			"words": 563,
-			"shared": 0.688
-		},
-		"online-video-downloader": {
-			"words": 588,
-			"shared": 0.666
-		},
-		"open-graph-checker": {
-			"words": 583,
-			"shared": 0.609
-		},
 		"open-graph-generator": {
 			"words": 564,
-			"shared": 0.637
+			"shared": 0.634
 		},
 		"openai-api-key-tester": {
 			"words": 612,
@@ -1355,15 +1048,11 @@
 		},
 		"other-tools": {
 			"words": 561,
-			"shared": 0.617
+			"shared": 0.615
 		},
 		"pace-converter": {
 			"words": 592,
 			"shared": 0.64
-		},
-		"page-size-checker": {
-			"words": 576,
-			"shared": 0.62
 		},
 		"paint-calculator": {
 			"words": 564,
@@ -1383,7 +1072,7 @@
 		},
 		"password-generator": {
 			"words": 596,
-			"shared": 0.587
+			"shared": 0.584
 		},
 		"password-strength-checker": {
 			"words": 604,
@@ -1399,7 +1088,7 @@
 		},
 		"pdf-compressor": {
 			"words": 608,
-			"shared": 0.605
+			"shared": 0.597
 		},
 		"pdf-compressor-under-200kb": {
 			"words": 618,
@@ -1407,7 +1096,7 @@
 		},
 		"pdf-editor": {
 			"words": 591,
-			"shared": 0.566
+			"shared": 0.564
 		},
 		"pdf-grayscale": {
 			"words": 609,
@@ -1441,17 +1130,13 @@
 			"words": 598,
 			"shared": 0.559
 		},
-		"pdf-to-image": {
-			"words": 593,
-			"shared": 0.627
-		},
 		"pdf-to-jpg-converter": {
 			"words": 616,
-			"shared": 0.616
+			"shared": 0.615
 		},
 		"pdf-to-word": {
 			"words": 603,
-			"shared": 0.615
+			"shared": 0.61
 		},
 		"pdf-tools": {
 			"words": 597,
@@ -1459,7 +1144,7 @@
 		},
 		"pdf-unlocker": {
 			"words": 552,
-			"shared": 0.622
+			"shared": 0.62
 		},
 		"pdf-watermark": {
 			"words": 597,
@@ -1472,10 +1157,6 @@
 		"percentage-calculator": {
 			"words": 588,
 			"shared": 0.625
-		},
-		"periscope-video-downloader": {
-			"words": 570,
-			"shared": 0.657
 		},
 		"phishing-url-checker": {
 			"words": 606,
@@ -1495,15 +1176,7 @@
 		},
 		"pii-scrubber": {
 			"words": 595,
-			"shared": 0.565
-		},
-		"pinterest-image-downloader": {
-			"words": 570,
-			"shared": 0.674
-		},
-		"pinterest-video-downloader": {
-			"words": 580,
-			"shared": 0.667
+			"shared": 0.563
 		},
 		"pipedrive-api-key-tester": {
 			"words": 606,
@@ -1513,21 +1186,9 @@
 			"words": 599,
 			"shared": 0.593
 		},
-		"png-to-bmp-converter": {
-			"words": 581,
-			"shared": 0.651
-		},
-		"png-to-gif-converter": {
-			"words": 577,
-			"shared": 0.661
-		},
-		"png-to-ico-converter": {
-			"words": 580,
-			"shared": 0.646
-		},
 		"png-to-jpg-converter": {
 			"words": 594,
-			"shared": 0.641
+			"shared": 0.64
 		},
 		"png-to-webp-converter": {
 			"words": 567,
@@ -1577,13 +1238,9 @@
 			"words": 562,
 			"shared": 0.646
 		},
-		"puhutv-video-downloader": {
-			"words": 567,
-			"shared": 0.677
-		},
 		"qr-code-generator": {
 			"words": 593,
-			"shared": 0.621
+			"shared": 0.618
 		},
 		"qr-code-generator-business": {
 			"words": 606,
@@ -1601,10 +1258,6 @@
 			"words": 596,
 			"shared": 0.602
 		},
-		"random-uuid-generator": {
-			"words": 590,
-			"shared": 0.603
-		},
 		"random-word-generator": {
 			"words": 577,
 			"shared": 0.598
@@ -1613,21 +1266,9 @@
 			"words": 571,
 			"shared": 0.606
 		},
-		"reactive-energy-converter": {
-			"words": 581,
-			"shared": 0.663
-		},
 		"reactive-power-converter": {
 			"words": 574,
-			"shared": 0.671
-		},
-		"reddit-downloader": {
-			"words": 565,
-			"shared": 0.656
-		},
-		"redirect-checker": {
-			"words": 594,
-			"shared": 0.606
+			"shared": 0.668
 		},
 		"refund-policy-generator": {
 			"words": 592,
@@ -1643,23 +1284,23 @@
 		},
 		"remove-pages-from-pdf": {
 			"words": 608,
-			"shared": 0.573
+			"shared": 0.571
 		},
 		"rent-affordability-calculator": {
 			"words": 546,
-			"shared": 0.656
+			"shared": 0.654
 		},
 		"rent-receipt-generator": {
 			"words": 816,
-			"shared": 0.005
+			"shared": 0.002
 		},
 		"required-marks-calculator": {
 			"words": 816,
-			"shared": 0.424
+			"shared": 0.423
 		},
 		"resend-api-key-tester": {
 			"words": 586,
-			"shared": 0.617
+			"shared": 0.611
 		},
 		"resignation-letter-generator": {
 			"words": 608,
@@ -1667,7 +1308,7 @@
 		},
 		"resize-image-in-cm": {
 			"words": 840,
-			"shared": 0.446
+			"shared": 0.445
 		},
 		"resize-image-in-mm": {
 			"words": 803,
@@ -1695,11 +1336,7 @@
 		},
 		"rgb-to-hex-converter": {
 			"words": 507,
-			"shared": 0.018
-		},
-		"robots-txt-sitemap-generator": {
-			"words": 577,
-			"shared": 0.598
+			"shared": 0.016
 		},
 		"roi-calculator": {
 			"words": 568,
@@ -1707,23 +1344,11 @@
 		},
 		"roman-numerals-converter": {
 			"words": 598,
-			"shared": 0.621
-		},
-		"roman-numerals-to-number": {
-			"words": 575,
-			"shared": 0.631
-		},
-		"rotate-image": {
-			"words": 534,
-			"shared": 0.614
+			"shared": 0.607
 		},
 		"rrb-group-d-photo-resizer": {
 			"words": 650,
 			"shared": 0.591
-		},
-		"rumble-video-downloader": {
-			"words": 546,
-			"shared": 0.694
 		},
 		"salary-calculator-india": {
 			"words": 581,
@@ -1737,25 +1362,13 @@
 			"words": 563,
 			"shared": 0.613
 		},
-		"screen-resolution-simulator": {
-			"words": 586,
-			"shared": 0.611
-		},
-		"secure-password-generator": {
-			"words": 579,
-			"shared": 0.599
-		},
 		"security-headers-checker": {
 			"words": 592,
-			"shared": 0.572
+			"shared": 0.568
 		},
 		"sendgrid-api-key-tester": {
 			"words": 589,
 			"shared": 0.614
-		},
-		"seo-audit-tool": {
-			"words": 580,
-			"shared": 0.588
 		},
 		"seo-title-meta-description-generator": {
 			"words": 591,
@@ -1765,10 +1378,6 @@
 			"words": 581,
 			"shared": 0.587
 		},
-		"server-status-checker": {
-			"words": 601,
-			"shared": 0.596
-		},
 		"sgpa-calculator": {
 			"words": 789,
 			"shared": 0.446
@@ -1777,29 +1386,13 @@
 			"words": 549,
 			"shared": 0.638
 		},
-		"sharechat-video-downloader": {
-			"words": 567,
-			"shared": 0.67
-		},
 		"signature-resizer-under-20kb": {
 			"words": 637,
-			"shared": 0.602
-		},
-		"simple-invoice-generator": {
-			"words": 718,
-			"shared": 0.02
+			"shared": 0.6
 		},
 		"sip-calculator": {
 			"words": 558,
 			"shared": 0.626
-		},
-		"sitemap-generator": {
-			"words": 584,
-			"shared": 0.607
-		},
-		"sitemap-url-downloader": {
-			"words": 606,
-			"shared": 0.572
 		},
 		"slogan-generator": {
 			"words": 571,
@@ -1813,17 +1406,9 @@
 			"words": 586,
 			"shared": 0.63
 		},
-		"snapchat-video-downloader": {
-			"words": 571,
-			"shared": 0.658
-		},
 		"snov-io-api-key-tester": {
 			"words": 586,
 			"shared": 0.627
-		},
-		"soundcloud-video-downloader": {
-			"words": 605,
-			"shared": 0.637
 		},
 		"spam-score-checker": {
 			"words": 595,
@@ -1843,7 +1428,7 @@
 		},
 		"sql-formatter": {
 			"words": 528,
-			"shared": 0.017
+			"shared": 0.015
 		},
 		"ssc-mts-photo-resizer": {
 			"words": 651,
@@ -1861,10 +1446,6 @@
 			"words": 612,
 			"shared": 0.549
 		},
-		"streamable-video-downloader": {
-			"words": 564,
-			"shared": 0.682
-		},
 		"string-length-calculator": {
 			"words": 565,
 			"shared": 0.605
@@ -1875,23 +1456,15 @@
 		},
 		"svg-to-jpg-converter": {
 			"words": 576,
-			"shared": 0.658
+			"shared": 0.655
 		},
 		"svg-to-png-converter": {
 			"words": 576,
-			"shared": 0.668
+			"shared": 0.664
 		},
 		"tdee-calculator": {
 			"words": 598,
 			"shared": 0.593
-		},
-		"ted-video-downloader": {
-			"words": 572,
-			"shared": 0.663
-		},
-		"telegram-video-downloader": {
-			"words": 571,
-			"shared": 0.67
 		},
 		"temperature-converter": {
 			"words": 576,
@@ -1943,15 +1516,11 @@
 		},
 		"text-to-octal-converter": {
 			"words": 487,
-			"shared": 0.083
-		},
-		"text-to-slug-converter": {
-			"words": 601,
-			"shared": 0.612
+			"shared": 0.081
 		},
 		"text-to-speech": {
 			"words": 625,
-			"shared": 0.599
+			"shared": 0.597
 		},
 		"text-to-tags-converter": {
 			"words": 630,
@@ -1961,17 +1530,9 @@
 			"words": 600,
 			"shared": 0.617
 		},
-		"threads-video-downloader": {
-			"words": 565,
-			"shared": 0.686
-		},
-		"tiktok-downloader": {
-			"words": 566,
-			"shared": 0.684
-		},
 		"tile-calculator": {
 			"words": 572,
-			"shared": 0.608
+			"shared": 0.607
 		},
 		"time-converter": {
 			"words": 585,
@@ -1989,33 +1550,17 @@
 			"words": 608,
 			"shared": 0.633
 		},
-		"tumblr-video-downloader": {
-			"words": 576,
-			"shared": 0.69
-		},
 		"twilio-api-key-tester": {
 			"words": 616,
 			"shared": 0.598
 		},
-		"twitch-video-downloader": {
-			"words": 564,
-			"shared": 0.673
-		},
 		"twitter-card-generator": {
 			"words": 566,
-			"shared": 0.636
-		},
-		"twitter-video-downloader": {
-			"words": 565,
-			"shared": 0.672
+			"shared": 0.634
 		},
 		"unicode-to-kruti-dev": {
 			"words": 611,
 			"shared": 0.603
-		},
-		"universal-video-downloader": {
-			"words": 597,
-			"shared": 0.647
 		},
 		"upsc-photo-resizer": {
 			"words": 864,
@@ -2027,11 +1572,11 @@
 		},
 		"url-decode": {
 			"words": 565,
-			"shared": 0.622
+			"shared": 0.62
 		},
 		"url-encode": {
 			"words": 567,
-			"shared": 0.61
+			"shared": 0.607
 		},
 		"url-encoder-decoder": {
 			"words": 539,
@@ -2045,10 +1590,6 @@
 			"words": 571,
 			"shared": 0.582
 		},
-		"url-rewriting-tool": {
-			"words": 589,
-			"shared": 0.603
-		},
 		"url-shortener": {
 			"words": 595,
 			"shared": 0.577
@@ -2059,7 +1600,7 @@
 		},
 		"utm-builder": {
 			"words": 583,
-			"shared": 0.6
+			"shared": 0.598
 		},
 		"uuid-generator": {
 			"words": 436,
@@ -2077,21 +1618,9 @@
 			"words": 594,
 			"shared": 0.617
 		},
-		"vimeo-video-downloader": {
-			"words": 553,
-			"shared": 0.68
-		},
-		"visual-sitemap": {
-			"words": 596,
-			"shared": 0.592
-		},
-		"vkontakte-video-downloader": {
-			"words": 552,
-			"shared": 0.669
-		},
 		"voltage-converter": {
 			"words": 577,
-			"shared": 0.656
+			"shared": 0.653
 		},
 		"volume-converter": {
 			"words": 578,
@@ -2103,7 +1632,7 @@
 		},
 		"water-intake-calculator": {
 			"words": 559,
-			"shared": 0.643
+			"shared": 0.641
 		},
 		"webp-to-jpg-converter": {
 			"words": 570,
@@ -2131,7 +1660,7 @@
 		},
 		"what-is-my-ip-address": {
 			"words": 581,
-			"shared": 0.623
+			"shared": 0.621
 		},
 		"what-is-my-screen-resolution": {
 			"words": 590,
@@ -2145,13 +1674,9 @@
 			"words": 578,
 			"shared": 0.618
 		},
-		"whois-domain-lookup": {
-			"words": 598,
-			"shared": 0.609
-		},
 		"word-counter": {
 			"words": 561,
-			"shared": 0.621
+			"shared": 0.619
 		},
 		"word-frequency-counter": {
 			"words": 570,
@@ -2159,15 +1684,11 @@
 		},
 		"word-to-number-converter": {
 			"words": 603,
-			"shared": 0.614
+			"shared": 0.612
 		},
 		"word-to-pdf": {
 			"words": 598,
 			"shared": 0.631
-		},
-		"wordpress-theme-detector": {
-			"words": 580,
-			"shared": 0.629
 		},
 		"working-days-calculator": {
 			"words": 569,
@@ -2185,73 +1706,25 @@
 			"words": 467,
 			"shared": 0.004
 		},
-		"youtube-channel-age-checker": {
-			"words": 614,
-			"shared": 0.566
-		},
-		"youtube-channel-finder": {
-			"words": 608,
-			"shared": 0.592
-		},
-		"youtube-channel-id-extractor": {
-			"words": 601,
-			"shared": 0.58
-		},
-		"youtube-channel-statistics": {
-			"words": 584,
-			"shared": 0.607
-		},
-		"youtube-comment-picker": {
-			"words": 599,
-			"shared": 0.601
-		},
-		"youtube-description-extractor": {
-			"words": 588,
-			"shared": 0.611
-		},
 		"youtube-description-generator": {
 			"words": 571,
-			"shared": 0.634
+			"shared": 0.632
 		},
 		"youtube-embed-code-generator": {
 			"words": 587,
 			"shared": 0.611
 		},
-		"youtube-hashtag-extractor": {
-			"words": 574,
-			"shared": 0.635
-		},
-		"youtube-hashtag-generator": {
-			"words": 592,
-			"shared": 0.627
-		},
 		"youtube-money-calculator": {
 			"words": 571,
 			"shared": 0.617
 		},
-		"youtube-playlist-link-extractor": {
-			"words": 598,
-			"shared": 0.605
-		},
-		"youtube-region-restriction-checker": {
-			"words": 593,
-			"shared": 0.619
-		},
 		"youtube-subscribe-link-generator": {
 			"words": 586,
-			"shared": 0.601
-		},
-		"youtube-tag-extractor": {
-			"words": 583,
-			"shared": 0.62
-		},
-		"youtube-tag-generator": {
-			"words": 582,
-			"shared": 0.645
+			"shared": 0.599
 		},
 		"youtube-thumbnail-downloader": {
 			"words": 575,
-			"shared": 0.637
+			"shared": 0.511
 		},
 		"youtube-thumbnail-text-generator": {
 			"words": 570,
@@ -2259,15 +1732,11 @@
 		},
 		"youtube-timestamp-link-generator": {
 			"words": 604,
-			"shared": 0.621
+			"shared": 0.612
 		},
 		"youtube-title-capitalizer": {
 			"words": 581,
-			"shared": 0.611
-		},
-		"youtube-title-extractor": {
-			"words": 569,
-			"shared": 0.655
+			"shared": 0.586
 		},
 		"youtube-title-generator": {
 			"words": 574,
@@ -2275,19 +1744,7 @@
 		},
 		"youtube-title-length-checker": {
 			"words": 594,
-			"shared": 0.606
-		},
-		"youtube-video-count-checker": {
-			"words": 592,
-			"shared": 0.611
-		},
-		"youtube-video-statistics": {
-			"words": 584,
-			"shared": 0.634
-		},
-		"youtube-views-ratio-calculator": {
-			"words": 595,
-			"shared": 0.608
+			"shared": 0.578
 		},
 		"zendesk-api-key-tester": {
 			"words": 592,
@@ -2299,14 +1756,14 @@
 		},
 		"color-palette-generator": {
 			"words": 435,
-			"shared": 0.047
+			"shared": 0.044
 		},
 		"meme-generator": {
 			"words": 370,
 			"shared": 0.033
 		},
 		"story-idea-generator": {
-			"words": 419,
+			"words": 415,
 			"shared": 0.029
 		},
 		"pixel-art-maker": {
@@ -2319,19 +1776,19 @@
 		},
 		"ai-video-summarizer": {
 			"words": 318,
-			"shared": 0.026
+			"shared": 0.01
 		},
 		"audio-equalizer": {
 			"words": 289,
 			"shared": 0.067
 		},
 		"audio-joiner": {
-			"words": 300,
+			"words": 298,
 			"shared": 0.065
 		},
 		"about": {
 			"words": 340,
-			"shared": 0.03
+			"shared": 0.027
 		},
 		"blog": {
 			"words": 214,
@@ -2342,56 +1799,48 @@
 			"shared": 0.005
 		},
 		"search": {
-			"words": 230,
+			"words": 235,
 			"shared": 0.013
 		},
 		"terms": {
 			"words": 266,
-			"shared": 0.019
+			"shared": 0.023
 		},
 		"generators": {
-			"words": 308,
-			"shared": 0.036
+			"words": 318,
+			"shared": 0.022
 		},
 		"developer-tools": {
-			"words": 330,
-			"shared": 0.083
+			"words": 360,
+			"shared": 0.048
 		},
 		"privacy": {
 			"words": 386,
-			"shared": 0.063
+			"shared": 0.034
 		},
 		"new-tools": {
-			"words": 268,
-			"shared": 0.023
+			"words": 272,
+			"shared": 0.004
 		},
 		"best-free-tools-for-students": {
-			"words": 261,
-			"shared": 0.02
+			"words": 267,
+			"shared": 0.011
 		},
 		"tools-for-developers": {
 			"words": 326,
-			"shared": 0.034
-		},
-		"seo-tools-free-online": {
-			"words": 272,
-			"shared": 0.049
+			"shared": 0.031
 		},
 		"ai-tools-alternatives-free": {
 			"words": 253,
-			"shared": 0.004
+			"shared": 0
 		},
 		"best-free-alternative-to-chatgpt": {
 			"words": 251,
 			"shared": 0.008
 		},
-		"top-10-free-online-tools-for-seo": {
-			"words": 272,
-			"shared": 0.03
-		},
 		"top-10-json-tools-online": {
 			"words": 332,
-			"shared": 0.021
+			"shared": 0.018
 		},
 		"how-to-format-json-properly": {
 			"words": 293,
@@ -2399,7 +1848,7 @@
 		},
 		"best-free-converters-in-2026": {
 			"words": 295,
-			"shared": 0.028
+			"shared": 0.017
 		},
 		"css-glassmorphism-generator": {
 			"words": 491,
@@ -2411,7 +1860,7 @@
 		},
 		"json-diff-checker": {
 			"words": 411,
-			"shared": 0.01
+			"shared": 0.007
 		},
 		"ip-subnet-calculator": {
 			"words": 513,
@@ -2419,7 +1868,7 @@
 		},
 		"freelance-hourly-rate-calculator": {
 			"words": 551,
-			"shared": 0.002
+			"shared": 0
 		},
 		"ai-prompt-improver": {
 			"words": 623,
@@ -2434,7 +1883,7 @@
 			"shared": 0.589
 		},
 		"ffmpeg-command-generator": {
-			"words": 702,
+			"words": 700,
 			"shared": 0
 		},
 		"image-prompt-extender": {
@@ -2472,22 +1921,6 @@
 		"terabox-downloader": {
 			"words": 308,
 			"shared": 0
-		},
-		"youtube-downloader": {
-			"words": 195,
-			"shared": 0
-		},
-		"youtube-shorts-downloader": {
-			"words": 195,
-			"shared": 0
-		},
-		"youtube-channel-banner-downloader": {
-			"words": 194,
-			"shared": 0.021
-		},
-		"youtube-channel-logo-downloader": {
-			"words": 266,
-			"shared": 0.004
 		},
 		"dev-speed": {
 			"words": 346,
@@ -2543,7 +1976,7 @@
 		},
 		"compress-image-to-50kb": {
 			"words": 362,
-			"shared": 0.059
+			"shared": 0.056
 		},
 		"ssc-signature-resizer": {
 			"words": 319,

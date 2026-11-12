@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { STATIC_ROUTES } from "@/lib/tools";
+import { STATIC_ROUTES } from "@/constants/routes";
 
 export default function GlobalError() {
 	return (

@@ -29,6 +29,24 @@ export const viewport: Viewport = {
 	initialScale: 1,
 	maximumScale: 5,
 };
+const WEBSITE_JSON_LD = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	name: "SopKit",
+	url: `${SITE_URL}/`,
+	description: `${TOOL_COUNT_STRING} free online tools for image, PDF, video, audio, SEO, and developer workflows. Fast browser-sandboxed utilities with transparent data processing.`,
+};
+
+const ORGANIZATION_JSON_LD = {
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	name: "SopKit",
+	url: `${SITE_URL}/`,
+	logo: `${SITE_URL}/logo.png`,
+	sameAs: [GITHUB_REPO_URL],
+	description: `Privacy-first free online toolkit with ${TOOL_COUNT_STRING} browser-based tools.`,
+};
+
 const DEFAULT_DESCRIPTION = `Professional online toolkit with ${TOOL_COUNT_STRING} free tools for image compression, PDF editing, video conversion, SEO analysis, developer utilities, text processing, and more. No registration required. Privacy-focused, fast, and secure browser-based processing.`;
 
 const siteVerification = {
@@ -70,7 +88,6 @@ export const metadata: Metadata = {
 	},
 	metadataBase: new URL(SITE_URL),
 	alternates: {
-		canonical: `${SITE_URL}/`,
 		types: {
 			"application/rss+xml": [{ url: "/feed.xml", title: "SopKit RSS Feed" }],
 		},
@@ -150,14 +167,8 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head>
-				<script src="/coi-serviceworker.min.js" defer />
-
-				{/* Preconnect only to the most critical third-party origin */}
-				<link
-					rel="preconnect"
-					href="https://www.googletagmanager.com"
-					crossOrigin="anonymous"
-				/>
+				{/* gtag loads lazyOnload without CORS, so a preconnect is never reused; dns-prefetch only. */}
+				<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 				<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
 				<link rel="dns-prefetch" href="https://www.clarity.ms" />
 
@@ -204,53 +215,20 @@ gtag("consent", "default", {
 					href="/llms.txt"
 				/>
 
-				{/* Alternate */}
-				<link
-					rel="alternate"
-					type="application/rss+xml"
-					title="SopKit RSS Feed"
-					href="/feed.xml"
-				/>
+				{/* RSS alternate is emitted by metadata.alternates.types above. */}
 
-			{/* Global JSON-LD Structured Data: WebSite + Organization */}
-			<Script
-				id="jsonld-website"
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "WebSite",
-						name: "SopKit",
-						url: `${SITE_URL}/`,
-						description: `${TOOL_COUNT_STRING} free online tools for image, PDF, video, audio, SEO, and developer workflows. Fast browser-sandboxed utilities with transparent data processing.`,
-						potentialAction: {
-							"@type": "SearchAction",
-							target: {
-								"@type": "EntryPoint",
-								urlTemplate: `${SITE_URL}/search?q={search_term_string}`,
-							},
-							"query-input": "required name=search_term_string",
-						},
-					}),
-				}}
-			/>
-			<Script
-				id="jsonld-organization"
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "Organization",
-						name: "SopKit",
-						url: `${SITE_URL}/`,
-						logo: `${SITE_URL}/logo.png`,
-						sameAs: [
-							GITHUB_REPO_URL,
-						],
-						description: `Privacy-first free online toolkit with ${TOOL_COUNT_STRING} browser-based tools.`,
-					}),
-				}}
-			/>
+				{/* Global JSON-LD (WebSite + Organization) as plain script tags so it
+				    lands in the static HTML; next/script only injects client-side.
+				    No SearchAction: /search is robots-blocked and Google retired the
+				    sitelinks search box. */}
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_JSON_LD) }}
+				/>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_JSON_LD) }}
+				/>
 
 				<Script
 					src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}

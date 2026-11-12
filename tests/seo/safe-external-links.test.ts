@@ -31,11 +31,7 @@ function readSource(relative: string): string {
 }
 
 const LIB_REL = "src/lib/safe-external-url.ts";
-const SITEMAP_REL =
-	"src/components/tools/downloaders/SitemapUrlDownloader.tsx";
 const AUDIT_REL = "src/components/tools/seo/SeoToolkit.tsx";
-const TWITTER_REL =
-	"src/components/tools/video/TwitterVideoDownloader.tsx";
 const QR_REL = "src/components/tools/utilities/QrReaderPremium.tsx";
 
 describe("isSafeExternalUrl", () => {
@@ -109,21 +105,15 @@ describe("safeExternalHref", () => {
 describe("safe-external-links validator", () => {
 	it("passes on the real tree", () => {
 		const result = findSafeExternalLinkIssues(rootDir);
-		expect(result.checkedFiles).toBe(5);
+		expect(result.checkedFiles).toBe(3);
 		expect(result.violations).toEqual([]);
 	});
 
-	it("pins the four call sites in the real sources", () => {
-		expect(readSource(SITEMAP_REL)).toContain("safeExternalHref(u)");
-		expect(readSource(SITEMAP_REL)).not.toContain("href={u}");
+	it("pins the two call sites in the real sources", () => {
 		expect(readSource(AUDIT_REL)).toContain(
 			"safeExternalHref(auditData.url)",
 		);
 		expect(readSource(AUDIT_REL)).not.toContain("href={auditData.url}");
-		expect(readSource(TWITTER_REL)).toContain(
-			"safeExternalHref(option.url)",
-		);
-		expect(readSource(TWITTER_REL)).not.toContain("href={option.url}");
 		expect(readSource(QR_REL)).toContain("isSafeExternalUrl(scannedResult)");
 		expect(readSource(QR_REL)).not.toContain(
 			'scannedResult.startsWith("http")',
@@ -132,25 +122,15 @@ describe("safe-external-links validator", () => {
 
 	it("fails on pre-fix sources", () => {
 		const libSource = readSource(LIB_REL);
-		const preFixSitemap = `<a href={u} target="_blank">{u}</a>`;
 		const preFixAudit = `<a href={auditData.url}>{auditData.url}</a>`;
-		const preFixTwitter = `<a href={option.url}>Download</a>`;
 		const preFixQr = `{scannedResult.startsWith("http") && (<a href={scannedResult}>Open</a>)}`;
 		const violations = checkSafeExternalLinkSources(
 			libSource,
-			preFixSitemap,
 			preFixAudit,
-			preFixTwitter,
 			preFixQr,
 		);
 		expect(
-			violations.some((v) => v.includes("raw href={u}")),
-		).toBe(true);
-		expect(
 			violations.some((v) => v.includes("raw href={auditData.url}")),
-		).toBe(true);
-		expect(
-			violations.some((v) => v.includes("raw href={option.url}")),
 		).toBe(true);
 		expect(
 			violations.some((v) => v.includes('startsWith("http")')),

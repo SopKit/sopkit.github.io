@@ -28,9 +28,9 @@ function readSource(relative: string): string {
 describe("window.open callers sever the opener", () => {
 	it("the validator finds no violations, over a non-trivial set", () => {
 		const result = findWindowOpenerIssues(rootDir);
-		// Guards against a vacuous pass: the tree carries 82
-		// window.open calls and 39 target="_blank" anchors.
-		expect(result.checkedCalls).toBeGreaterThanOrEqual(80);
+		// Guards against a vacuous pass: after the downloader removal the
+		// tree carries 16 window.open calls and 36 target="_blank" anchors.
+		expect(result.checkedCalls).toBeGreaterThanOrEqual(15);
 		expect(result.checkedAnchors).toBeGreaterThanOrEqual(30);
 		expect(result.violations).toEqual([]);
 	}, 30000);
@@ -98,12 +98,4 @@ describe("window.open callers sever the opener", () => {
 		);
 	});
 
-	it("a repaired downloader opens its media URL without an opener", () => {
-		const source = readSource(
-			"src/components/tools/downloaders/YouTubeDownloader.tsx",
-		);
-		expect(source).toContain(
-			`window.open(quality.url, "_blank", "noopener,noreferrer")`,
-		);
-	});
 });

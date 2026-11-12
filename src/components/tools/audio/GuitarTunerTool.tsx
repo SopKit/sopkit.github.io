@@ -21,7 +21,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import SocialShareButtons from "@/components/shared/SocialShareButtons";
-import { getRouteById } from "@/lib/tools";
 
 const TUNINGS = {
 	standard: {
@@ -224,7 +223,7 @@ export default function GuitarTunerTool() {
 		<div className="container mx-auto px-4 py-8">
 			<div className="mb-8">
 				<Link
-					href={getRouteById("audio-tools")}
+					href="/audio-tools"
 					className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-4"
 				>
 					<ArrowLeftIcon className="mr-2 h-4 w-4" />

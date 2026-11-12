@@ -5,6 +5,11 @@ on:
     # Runs daily at 03:00 UTC (08:30 AM IST)
     - cron: '0 3 * * *'
   workflow_dispatch:
+    inputs:
+      submit_all:
+        description: "Resubmit every sitemap URL instead of only those changed in the last 2 days"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -26,7 +31,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Broadcast URLs to IndexNow & Bing Search Console
-        run: node submit-urls.mjs
+        run: node submit-urls.mjs ${{ inputs.submit_all == true && '--all' || '' }}
         env:
           SITE_URL: "https://sopkit.space"
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}

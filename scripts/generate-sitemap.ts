@@ -44,7 +44,7 @@ const toolLastmod: Record<string, string> = (() => {
   throw new Error('generate-sitemap: src/data/tool-lastmod.json is missing or invalid; run `bun run generate:tool-lastmod` and commit the result.');
 })();
 
-console.log('🚀 Generating unified static sitemap.xml and robots.txt...');
+console.log('🚀 Generating unified static sitemap.xml...');
 
 // 1. Read tools. Each tool inherits its parent category slug (raw tools.json
 // entries carry no category field) — the same derivation getAllTools uses,
@@ -84,14 +84,11 @@ const staticPages = [
   { path: '/privacy-tools', priority: '0.85', changefreq: 'weekly' },
   { path: '/health', priority: '0.80', changefreq: 'weekly' },
   { path: '/calculators', priority: '0.75', changefreq: 'weekly' },
-  { path: '/calculator-tools', priority: '0.85', changefreq: 'weekly' },
   { path: '/converter-tools', priority: '0.85', changefreq: 'weekly' },
   { path: '/exam-tools', priority: '0.90', changefreq: 'weekly' },
   { path: '/exam-image-tools', priority: '0.92', changefreq: 'weekly' },
   { path: '/student-calculators', priority: '0.90', changefreq: 'weekly' },
   { path: '/student-tools', priority: '0.84', changefreq: 'weekly' },
-  { path: '/small-business-tools', priority: '0.86', changefreq: 'weekly' },
-  { path: '/local-business-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/business-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/finance-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/social-media-tools', priority: '0.80', changefreq: 'weekly' },
@@ -123,9 +120,7 @@ const staticPages = [
   { path: '/best-free-converters-in-2026', priority: '0.65', changefreq: 'monthly' },
   { path: '/best-free-tools-for-students', priority: '0.65', changefreq: 'monthly' },
   { path: '/how-to-format-json-properly', priority: '0.65', changefreq: 'monthly' },
-  { path: '/seo-tools-free-online', priority: '0.65', changefreq: 'monthly' },
   { path: '/tools-for-developers', priority: '0.65', changefreq: 'monthly' },
-  { path: '/top-10-free-online-tools-for-seo', priority: '0.65', changefreq: 'monthly' },
   { path: '/top-10-json-tools-online', priority: '0.65', changefreq: 'monthly' },
   { path: '/ai-tools-alternatives-free', priority: '0.65', changefreq: 'monthly' },
   { path: '/best-free-ilovepdf-alternatives', priority: '0.65', changefreq: 'monthly' },
@@ -142,6 +137,10 @@ interface SitemapEntry {
 
 const entriesMap = new Map<string, SitemapEntry>();
 
+// Mirrors buildCanonicalUrl (src/seo/canonical.ts): the site exports with
+// trailingSlash: true, so page URLs end with "/" (root stays "/") and only
+// file-like paths (an extension on the last segment) stay slashless. A
+// slashless page URL in the sitemap would 301 on GitHub Pages.
 function normalizeUrl(rawUrl: string): string {
   let url = rawUrl.trim();
   if (!url.startsWith('http')) {
@@ -149,10 +148,13 @@ function normalizeUrl(rawUrl: string): string {
   }
   try {
     const u = new URL(url);
-    let pathname = u.pathname.replace(/\/+/g, '/');
-    if (pathname.length > 1 && pathname.endsWith('/')) {
-      pathname = pathname.slice(0, -1);
-    }
+    const collapsed = u.pathname.replace(/\/+/g, '/');
+    const stripped = collapsed.length > 1 && collapsed.endsWith('/')
+      ? collapsed.slice(0, -1)
+      : collapsed;
+    const lastSegment = stripped.split('/').pop() ?? '';
+    const isFile = /\.[a-z0-9]{1,8}$/i.test(lastSegment);
+    const pathname = stripped === '/' || isFile ? stripped : `${stripped}/`;
     return `${u.origin}${pathname}`;
   } catch {
     return url;
@@ -271,234 +273,7 @@ ${urlNodes.join('\n')}
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapXml, 'utf8');
 console.log(`✅ Generated unified public/sitemap.xml with ${entriesMap.size} URLs.`);
 
-// Generate public/robots.txt. This template MUST mirror src/app/robots.ts
-// exactly (same agents, same order, same disallow list): the old template
-// drifted — it omitted /cdn-cgi/ from the * block, /youtube-redirects/
-// from the Googlebot/Bingbot blocks, gave every AI crawler an allow-all
-// block with no disallows, and dropped the Yandex/Slurp/DuckDuckBot/
-// Baiduspider blocks. Keep the two files in agreement; if robots.ts
-// policy changes, change this template in the same commit.
-const robotsTxt = `# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: Googlebot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: Bingbot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: Yandex
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: Slurp
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: DuckDuckBot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: Baiduspider
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-# AI Search & LLM Crawlers
-User-agent: GPTBot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: OAI-SearchBot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: ChatGPT-User
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: ClaudeBot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: PerplexityBot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: Google-Extended
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: Bytespider
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: CCBot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: anthropic-ai
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: Gemini
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-User-agent: YouBot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /handler/
-Disallow: /embed/
-Disallow: /youtube-redirects/
-Disallow: /cdn-cgi/
-Disallow: /search
-Disallow: /search/
-
-Sitemap: ${BASE_URL}/sitemap.xml
-Host: ${BASE_URL}
-`;
-
-fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt, 'utf8');
-console.log('✅ Generated public/robots.txt.');
+// robots.txt is NOT generated here: on the static export the app route
+// src/app/robots.ts wins over public/robots.txt (the public copy was never
+// deployed and drifted from the route). src/app/robots.ts is the single
+// source of truth for the crawl policy.

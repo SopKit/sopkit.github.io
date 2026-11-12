@@ -60,7 +60,7 @@ export default async function ToolPage() {
 						<Link href="/json-formatter" className="text-primary underline">JSON formatter</Link>{" "}
 						is the anchor — paste minified API responses, get readable
 						structure. Around it: the{" "}
-						<Link href="/json-validator" className="text-primary underline">JSON validator</Link>{" "}
+						<Link href="/json-formatter" className="text-primary underline">JSON validator</Link>{" "}
 						for pinpointing syntax errors, the{" "}
 						<Link href="/json-diff-checker" className="text-primary underline">diff checker</Link>{" "}
 						for comparing staging against production payloads, and the{" "}
@@ -127,7 +127,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Color math appears in every design handoff; the{" "}
-						<Link href="/color-converter" className="text-primary underline">color converter</Link>{" "}
+						<Link href="/hex-to-rgb-converter" className="text-primary underline">color converter</Link>{" "}
 						translates between HEX, RGB, and HSL without opening an editor.
 						When bundling assets for production, the{" "}
 						<Link href="/html-minifier" className="text-primary underline">HTML minifier</Link>{" "}
@@ -143,7 +143,7 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Naming things generates constant micro-jobs. Turning a feature
 						title into a URL-safe route takes one trip through the{" "}
-						<Link href="/text-to-slug-converter" className="text-primary underline">slug converter</Link>,
+						<Link href="/slug-generator" className="text-primary underline">slug converter</Link>,
 						constant-case refactors go faster with the{" "}
 						<Link href="/case-converter" className="text-primary underline">case converter</Link>, and
 						when documentation needs embedding code samples safely, the{" "}

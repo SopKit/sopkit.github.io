@@ -1,17 +1,14 @@
-import { SITE_URL } from "@/constants/config";
-import { generateCollectionPageSchema } from "@/lib/seo";
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 export const metadata = {
 	title: "Free YouTube Tools Online - No Signup | SopKit",
 	description:
 		"Free YouTube tools: download videos and Shorts, check channel stats, and generate titles, tags and descriptions. No signup required.",
-	keywords:
-		"youtube tools, youtube downloader, youtube shorts downloader, youtube thumbnail downloader, youtube tag generator, youtube video summarizer, ai youtube tools, content creator tools, youtube to mp3, youtube thumbnail grabber",
 	openGraph: {
 		title: "Free YouTube Tools Online - No Signup | SopKit",
 		description:
 			"Download YouTube videos and Shorts, check channel stats, and generate titles, tags and descriptions — free, no signup.",
-		url: `${SITE_URL}/youtube-tools`,
+		url: buildCanonicalUrl("/youtube-tools"),
 		siteName: "SopKit",
 		images: [
 			{
@@ -25,6 +22,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "Free YouTube Tools Online - No Signup | SopKit",
 		description:
 			"Download YouTube videos and Shorts, check channel stats, and generate titles, tags and descriptions — free, no signup.",
@@ -33,11 +31,6 @@ export const metadata = {
 	robots: { index: true, follow: true },
 };
 
-const collectionPageSchema = generateCollectionPageSchema('youtube', {
-	name: 'YouTube Creator Tools',
-	description: 'Suite of free tools for YouTube content creation and downloading.'
-});
-
 export default function YouTubeLayout({
 	children,
 }: {
@@ -45,12 +38,6 @@ export default function YouTubeLayout({
 }) {
 	return (
 		<div className="min-h-screen flex flex-col bg-background selection:bg-primary/10">
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(collectionPageSchema),
-				}}
-			/>
 			<main className="flex-1">{children}</main>
 		</div>
 	);

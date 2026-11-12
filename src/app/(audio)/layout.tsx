@@ -1,17 +1,14 @@
-import { SITE_URL } from "@/constants/config";
-import { generateCollectionPageSchema } from "@/lib/seo";
+import { buildCanonicalUrl } from "@/seo/canonical";
 
 export const metadata = {
 	title: "Free Audio Tools Online - No Signup | SopKit",
 	description:
 		"Free audio tools including AI text-to-speech, audio format conversion, and audio compression. Generate voiceovers and convert between MP3/WAV/OGG instantly.",
-	keywords:
-		"audio tools, text to speech, tts, ai voice generator, audio compressor, audio converter, mp3 converter, wav to mp3, free audio tools online, text to speech free, audio format converter, online audio processing",
 	openGraph: {
 		title: "Free Audio Tools Online - No Signup | SopKit",
 		description:
 			"Free AI text-to-speech, audio conversion, and compression tools. Generate voiceovers and process audio files instantly in your browser.",
-		url: `${SITE_URL}/audio-tools`,
+		url: buildCanonicalUrl("/audio-tools"),
 		siteName: "SopKit",
 		images: [
 			{
@@ -25,6 +22,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "Free Audio Tools Online - No Signup | SopKit",
 		description:
 			"Free AI text-to-speech, audio conversion, and compression tools. Generate voiceovers and process audio files instantly in your browser.",
@@ -33,11 +31,6 @@ export const metadata = {
 	robots: { index: true, follow: true },
 };
 
-const collectionPageSchema = generateCollectionPageSchema('audio', {
-	name: 'Online Audio Tools',
-	description: 'Collection of free audio utilities including Text to Speech.'
-});
-
 export default function AudioToolsLayout({
 	children,
 }: {
@@ -45,12 +38,6 @@ export default function AudioToolsLayout({
 }) {
 	return (
 		<div className="min-h-screen flex flex-col bg-background selection:bg-primary/10">
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(collectionPageSchema),
-				}}
-			/>
 			<main className="flex-1">{children}</main>
 		</div>
 	);

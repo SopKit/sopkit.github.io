@@ -40,20 +40,14 @@ export interface SafeExternalLinksResult {
 }
 
 const LIB_REL = "src/lib/safe-external-url.ts";
-const SITEMAP_REL =
-	"src/components/tools/downloaders/SitemapUrlDownloader.tsx";
 const AUDIT_REL = "src/components/tools/seo/SeoToolkit.tsx";
-const TWITTER_REL =
-	"src/components/tools/video/TwitterVideoDownloader.tsx";
 const QR_REL = "src/components/tools/utilities/QrReaderPremium.tsx";
 
-/** Check the five source texts; exported for the bun test's synthetic
+/** Check the three source texts; exported for the bun test's synthetic
  * cases. Each argument is the full file text. */
 export function checkSafeExternalLinkSources(
 	libSource: string,
-	sitemapSource: string,
 	auditSource: string,
-	twitterSource: string,
 	qrSource: string,
 ): string[] {
 	const violations: string[] = [];
@@ -75,19 +69,6 @@ export function checkSafeExternalLinkSources(
 		violations.push(`${LIB_REL} does not allowlist the https: protocol`);
 	}
 
-	// --- SitemapUrlDownloader: extracted <loc> values must pass through
-	// --- safeExternalHref, and no raw href={u} may remain.
-	if (!/safeExternalHref\(u\)/.test(sitemapSource)) {
-		violations.push(
-			`${SITEMAP_REL} does not pass extracted URLs through safeExternalHref`,
-		);
-	}
-	if (/href=\{u\}/.test(sitemapSource)) {
-		violations.push(
-			`${SITEMAP_REL} still renders a raw href={u} anchor`,
-		);
-	}
-
 	// --- SeoToolkit: the audited URL must pass through safeExternalHref,
 	// --- and no raw href={auditData.url} may remain.
 	if (!/safeExternalHref\(auditData\.url\)/.test(auditSource)) {
@@ -98,19 +79,6 @@ export function checkSafeExternalLinkSources(
 	if (/href=\{auditData\.url\}/.test(auditSource)) {
 		violations.push(
 			`${AUDIT_REL} still renders a raw href={auditData.url} anchor`,
-		);
-	}
-
-	// --- TwitterVideoDownloader: third-party download hrefs must pass
-	// --- through safeExternalHref, and no raw href={option.url} may remain.
-	if (!/safeExternalHref\(option\.url\)/.test(twitterSource)) {
-		violations.push(
-			`${TWITTER_REL} does not pass download URLs through safeExternalHref`,
-		);
-	}
-	if (/href=\{option\.url\}/.test(twitterSource)) {
-		violations.push(
-			`${TWITTER_REL} still renders a raw href={option.url} anchor`,
 		);
 	}
 
@@ -134,23 +102,13 @@ export function findSafeExternalLinkIssues(
 	root: string,
 ): SafeExternalLinksResult {
 	const libSource = fs.readFileSync(path.join(root, LIB_REL), "utf8");
-	const sitemapSource = fs.readFileSync(
-		path.join(root, SITEMAP_REL),
-		"utf8",
-	);
 	const auditSource = fs.readFileSync(path.join(root, AUDIT_REL), "utf8");
-	const twitterSource = fs.readFileSync(
-		path.join(root, TWITTER_REL),
-		"utf8",
-	);
 	const qrSource = fs.readFileSync(path.join(root, QR_REL), "utf8");
 	return {
-		checkedFiles: 5,
+		checkedFiles: 3,
 		violations: checkSafeExternalLinkSources(
 			libSource,
-			sitemapSource,
 			auditSource,
-			twitterSource,
 			qrSource,
 		),
 	};

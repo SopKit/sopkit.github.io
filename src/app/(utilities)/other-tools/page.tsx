@@ -1,14 +1,15 @@
-import { getAllToolsByCategory, getAllCategories, Tool } from "@/lib/tools";
+import { getAllToolsByCategory, getAllCategories, Tool, getSearchToolRecords } from "@/lib/tools";
 import { PremiumHero } from "@/components/marketing/PremiumHero";
 import { GridPattern } from "@/components/shared/GridPattern";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Wrench, ArrowRight, Sparkles } from "lucide-react";
 import { generateToolMetadata } from "@/lib/seo";
+import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
 
 export const metadata = generateToolMetadata({
 	name: "Other Tools",
-	description: "Private Other Tools: privately process web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training, no data collection. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
+	description: "Private Other Tools: privately process web data entirely in your browser. 100% client-side sandbox — no server uploads, no AI training on your files. Unlike tools that sell your data, SopKit processes everything locally. Free, instant, and secure.",
 	route: "/other-tools",
 	category: "utilities",
 });
@@ -19,8 +20,9 @@ export default function OtherToolsHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
+			<CollectionPageJsonLd groupKey="utilities" name="Free Utility Tools Collection" description="A collection of essential online utilities to boost your productivity." />
 			<main>
-				<PremiumHero title="Utility Tools — Free QR, IP & Everyday Helpers" subtitle="IP lookup, speed test, QR codes, notes, URL tools, and more — all free, fast, and no signup required." />
+				<PremiumHero tools={getSearchToolRecords()} title="Utility Tools — Free QR, IP & Everyday Helpers" subtitle="IP lookup, speed test, QR codes, notes, URL tools, and more — all free, fast, and no signup required." />
 				<div className="container mx-auto px-4 py-16 max-w-7xl relative">
 					<GridPattern className="opacity-20" />
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">

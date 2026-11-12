@@ -3,7 +3,6 @@
 import { ArrowLeftIcon, ClockIcon, SearchIcon, SmileIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { getRouteById } from "@/lib/tools";
 import SocialShareButtons from "@/components/shared/SocialShareButtons";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";

@@ -14,9 +14,13 @@ import { getMonetizationDecision } from "@/data/monetization";
 // scripts/validate-sitemap-indexable.ts enforces the same invariant on
 // the committed public sitemap and on both static lists.
 
-const ROUTE_SITEMAP_URLS = new Set(
-  sitemap().map((entry) => entry.url.replace("https://sopkit.space", "") || "/"),
-);
+// Sitemap URLs carry the export's trailing slash; registry routes do not.
+const toRoute = (url: string): string => {
+  const path = url.replace("https://sopkit.space", "") || "/";
+  return path.length > 1 && path.endsWith("/") ? path.slice(0, -1) : path;
+};
+
+const ROUTE_SITEMAP_URLS = new Set(sitemap().map((entry) => toRoute(entry.url)));
 
 describe("Route sitemap lists only indexable URLs", () => {
   it("contains no route whose monetization decision is non-indexable", () => {
@@ -49,14 +53,14 @@ describe("Route sitemap lists only indexable URLs", () => {
   });
 
   it("has no duplicate URLs and still lists the bulk of the site", () => {
-    const urls = sitemap().map(
-      (entry) => entry.url.replace("https://sopkit.space", "") || "/",
-    );
+    const urls = sitemap().map((entry) => toRoute(entry.url));
     expect(new Set(urls).size).toBe(urls.length);
     // The bulk guard used to sit at 700 while 133 standalone "SEO
     // opportunity" doorway pages were listed. Those were retired (see
     // src/seo/redirects/opportunities.json), which took the route sitemap
-    // to roughly 570 URLs; the floor only needs to catch an emptied map.
-    expect(urls.length).toBeGreaterThan(500);
+    // to roughly 570 URLs, and the Nov 2026 de-spam pass (~120 thin tool
+    // routes removed) to under 500; the floor only needs to catch an
+    // emptied map.
+    expect(urls.length).toBeGreaterThan(400);
   });
 });

@@ -1,34 +1,27 @@
-import { SITE_URL } from "@/constants/config";
+import { buildCanonicalUrl } from "@/seo/canonical";
 import type { Metadata } from "next";
-import { generateCollectionPageSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
 	title: "Text Tools - Free Online Text Utilities | SopKit",
 	description:
 		"Free online text tools: word counter, case converter, line sorter, find & replace with regex, duplicate remover, and text reverser. No signup required.",
-	keywords:
-		"text tools, line sorter, case converter, word counter, text reverser, markdown to text, free online text utilities, text case changer, remove duplicate lines, find and replace online, text formatter, character counter, reading time calculator, uppercase converter, lowercase converter",
 	openGraph: {
 		title: "Text Tools - Free Online Text Utilities | SopKit",
 		description:
 			"Count words, convert case, sort lines, and clean text instantly with free browser-based tools. No signup required.",
-		url: `${SITE_URL}/text-tools`,
+		url: buildCanonicalUrl("/text-tools"),
 		siteName: "SopKit",
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@sopkit",
 		title: "Text Tools - Free Online Text Utilities",
 		description:
 			"Sort, clean, and transform text instantly with free browser-based tools. Count words, convert case, sort lines, and remove duplicates.",
 	},
 	robots: { index: true, follow: true },
 };
-
-const collectionPageSchema = generateCollectionPageSchema('text', {
-	name: 'Text Tools',
-	description: 'A collection of free online text utilities for sorting, cleaning, and formatting content.'
-});
 
 export default function TextGroupLayout({
 	children,
@@ -37,10 +30,6 @@ export default function TextGroupLayout({
 }) {
 	return (
 		<div className="min-h-screen flex flex-col bg-background selection:bg-primary/10">
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageSchema) }}
-			/>
 			<main className="flex-1">{children}</main>
 		</div>
 	);
