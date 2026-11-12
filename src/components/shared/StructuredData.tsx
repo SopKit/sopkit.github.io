@@ -52,12 +52,13 @@ const CATEGORY_HUB_ROUTES: Record<string, string> = {
 
 // Registry category slugs with no hub page at all. getCategoryHubUrl
 // returns null for these instead of inventing a URL, and callers omit
-// the URL (a name-only breadcrumb/collection item) rather than linking
-// to a 404. company: 2 entries, but they are the /privacy and /terms
-// policy pages, not tools, so no company hub is sensible; blog:
-// 0 tools. (/privacy is the policy page, not a hub, and the
-// privacy-tools hub now lives at /privacy-tools; the health hub now
-// lives at /health.)
+// the category from the breadcrumb structured data entirely rather
+// than emitting a name-only ListItem (Google flags a missing `item`
+// as a critical Search Console error) or linking to a 404. company:
+// 2 entries, but they are the /privacy and /terms policy pages, not
+// tools, so no company hub is sensible; blog: 0 tools. (/privacy is
+// the policy page, not a hub, and the privacy-tools hub now lives at
+// /privacy-tools; the health hub now lives at /health.)
 const NO_HUB_CATEGORY_SLUGS: ReadonlySet<string> = new Set([
 	"company",
 	"blog",
@@ -173,31 +174,29 @@ export default function StructuredData({
 				}
 			: null;
 
+		// Google requires `item` on every BreadcrumbList ListItem — a
+		// name-only element is a critical Search Console error
+		// ("Missing field 'item'"). Categories with no hub page (see
+		// NO_HUB_CATEGORY_SLUGS) are omitted from the structured data
+		// entirely rather than emitted without a URL; the visible
+		// breadcrumb is unaffected.
+		const breadcrumbItems = [
+			{ name: "Home", item: `${SITE_URL}/` },
+			...(toolCategoryUrl
+				? [{ name: toolCategoryName, item: toolCategoryUrl }]
+				: []),
+			{ name: tool.name, item: toolUrl },
+		];
+
 		const breadcrumbStructuredData = {
 			"@context": "https://schema.org",
 			"@type": "BreadcrumbList",
-			itemListElement: [
-				{
-					"@type": "ListItem",
-					position: 1,
-					name: "Home",
-					item: `${SITE_URL}/`,
-				},
-				{
-					"@type": "ListItem",
-					position: 2,
-					name: toolCategoryName,
-					// No hub page for this category (see
-					// NO_HUB_CATEGORY_SLUGS): name only, never a dead link.
-					...(toolCategoryUrl ? { item: toolCategoryUrl } : {}),
-				},
-				{
-					"@type": "ListItem",
-					position: 3,
-					name: tool.name,
-					item: toolUrl,
-				},
-			],
+			itemListElement: breadcrumbItems.map((crumb, index) => ({
+				"@type": "ListItem",
+				position: index + 1,
+				name: crumb.name,
+				item: crumb.item,
+			})),
 		};
 
 		return (
